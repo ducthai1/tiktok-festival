@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Điều khiển Live Games</title>
+  <link rel="stylesheet" href="/static/admin/admin.css">
+  <script type="module" src="/static/admin/admin-main.js"></script>
+</head>
+<body>
+  <header class="top">
+    <h1>🎮 Điều khiển Live Games</h1>
+    <span id="server-dot" class="dot off" title="Kết nối tới server"></span>
+  </header>
+
+  <section id="login" class="card" hidden>
+    <h2>Nhập token điều khiển</h2>
+    <p class="muted">Token nằm trong cửa sổ đang chạy server (dòng "Trang điều khiển") hoặc file <code>data/admin-token</code>.</p>
+    <form id="login-form" class="row">
+      <input id="login-token" type="password" autocomplete="off" placeholder="token" required>
+      <button type="submit">Mở khoá</button>
+    </form>
+  </section>
+
+  <main id="app" hidden>
+    <section class="card">
+      <h2>1 · Kết nối TikTok LIVE</h2>
+      <form id="connect-form" class="row wrap">
+        <select id="provider">
+          <option value="tiktok">TikTok trực tiếp (không cần đăng nhập)</option>
+          <option value="tikfinity">Qua app TikFinity trên máy này</option>
+        </select>
+        <input id="username" placeholder="@tên_tiktok hoặc link live" maxlength="100" autocomplete="off">
+        <button type="submit">Kết nối</button>
+        <button type="button" id="disconnect" class="ghost">Ngắt</button>
+      </form>
+      <p id="live-status" class="status idle">Chưa kết nối</p>
+    </section>
+
+    <section class="card">
+      <h2>2 · Game đang phát</h2>
+      <div id="game-buttons" class="games"></div>
+      <div id="game-commands" class="row wrap"></div>
+    </section>
+
+    <section class="card split">
+      <div>
+        <h2>3 · Màn hình OBS</h2>
+        <ol class="muted small">
+          <li>OBS → thêm <b>Browser Source</b> (Nguồn trình duyệt).</li>
+          <li>URL: <code id="stage-url"></code> <button type="button" id="copy-stage" class="tiny">Chép</button></li>
+          <li>Rộng <b>1080</b> × Cao <b>1920</b>; bật “Control audio via OBS” để thu âm thanh game.</li>
+        </ol>
+      </div>
+      <iframe id="preview" title="Xem trước màn hình OBS" src="/stage?preview=1"></iframe>
+    </section>
+
+    <section class="card">
+      <h2>4 · Thử trước khi live <span class="muted small">(tự khoá khi đang live thật)</span></h2>
+      <div class="row wrap">
+        <label>Khách thử số <input id="test-viewer" type="number" min="1" max="50" value="1"></label>
+        <button type="button" data-test="like">❤ Thả tim</button>
+        <button type="button" data-test="follow">➕ Follow</button>
+        <button type="button" data-test="share">↗ Share</button>
+        <button type="button" id="test-crowd" class="ghost">👥 Thêm 8 khách</button>
+      </div>
+      <div class="row wrap" id="test-chats"></div>
+      <form id="test-chat-form" class="row">
+        <input id="test-comment" maxlength="200" placeholder="Bình luận thử…">
+        <button type="submit">Gửi bình luận</button>
+      </form>
+      <div class="row wrap" id="test-gifts"></div>
+      <p id="test-note" class="muted small"></p>
+    </section>
+
+    <section class="card">
+      <h2>5 · Màn hình</h2>
+      <div class="row wrap">
+        <label class="toggle"><input type="checkbox" id="set-sound"> Âm thanh hiệu ứng</label>
+        <label class="toggle"><input type="checkbox" id="set-tts"> Đọc lời cầu / quẻ (giọng máy)</label>
+        <label class="toggle"><input type="checkbox" id="set-legend"> Hiện bảng quà</label>
+        <label>Âm lượng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
+      </div>
+    </section>
+
+    <section class="card split">
+      <div>
+        <h2>Bảng xếp hạng phiên <button type="button" id="reset-session" class="tiny ghost">Xoá</button></h2>
+        <ol id="leaderboard" class="board"></ol>
+        <p id="totals" class="muted small"></p>
+      </div>
+      <div>
+        <h2>Nhật ký sự kiện</h2>
+        <ul id="log" class="log"></ul>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast" hidden></div>
+</body>
+</html>

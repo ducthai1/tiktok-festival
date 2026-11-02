@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Stage</title>
+  <link rel="stylesheet" href="/static/stage/stage.css">
+  <script type="module" src="/static/stage/stage-main.js"></script>
+</head>
+<body>
+  <div id="viewport">
+    <div id="stage">
+      <canvas id="scene"></canvas>
+      <div id="labels"></div>
+      <div id="hud">
+        <header id="topbar">
+          <div id="title"></div>
+          <div id="stats"></div>
+        </header>
+        <div id="game-hud"></div>
+        <aside id="board"></aside>
+        <div id="toasts"></div>
+        <div id="legend"></div>
+        <div id="hint"></div>
+        <div id="banner"></div>
+        <section id="fortune" hidden>
+          <div class="fortune-rank"></div>
+          <h2 class="fortune-title"></h2>
+          <div class="fortune-who"></div>
+          <div class="fortune-poem"></div>
+          <p class="fortune-meaning"></p>
+        </section>
+        <div id="test-badge" hidden>CHẾ ĐỘ THỬ · không phải người xem thật</div>
+        <div id="offline" hidden>Đang chờ server…</div>
+      </div>
+      <div id="fade"></div>
+    </div>
+  </div>
+</body>
+</html>
