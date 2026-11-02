@@ -60,6 +60,9 @@ test('HTTP and WebSocket refuse foreign hosts/origins; stage is read-only; admin
   assert.equal((await get(port, '/static/../package.json')).status, 404);
   assert.equal((await get(port, '/static/%2e%2e/src/app.js')).status, 404);
   assert.equal((await get(port, '/vendor/three-addons/../../package.json')).status, 404);
+  const sprites = await get(port, '/static/assets/temple/sprites.json'); // chùa đọc danh sách tranh trước khi dựng cảnh
+  assert.equal(sprites.status, 200);
+  assert.match(sprites.headers['content-type'], /^application\/json/);
   const addon = await get(port, '/vendor/three-addons/postprocessing/UnrealBloomPass.js');
   assert.equal(addon.status, 200);
   assert.doesNotMatch(addon.body, /from\s+'three'/);

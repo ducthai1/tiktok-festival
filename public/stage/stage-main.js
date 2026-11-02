@@ -8,7 +8,9 @@ import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-
 const SCENES = {
   bar: () => import('./scenes/bar-scene.js').then((m) => m.createBarScene),
   swim: () => import('./scenes/swim-scene.js').then((m) => m.createSwimScene),
-  temple: () => import('./scenes/temple-scene.js').then((m) => m.createTempleScene)
+  // chùa dùng tranh + sprite vẽ tay: tải xong hết hình rồi mới dựng cảnh
+  temple: () => Promise.all([import('./scenes/temple-scene.js'), import('./scenes/temple-art.js').then((m) => m.preloadTempleArt())])
+    .then(([m]) => m.createTempleScene)
 };
 
 const stageEl = document.getElementById('stage');
@@ -64,6 +66,7 @@ async function switchScene(id) {
   if (current) await wait(400);
   current?.dispose();
   current = factory({ hud, labels, audio, pipeline });
+  pipeline.setToneMapping(current.toneMapping);
   currentId = id;
   stageEl.classList.remove('theme-bar', 'theme-swim', 'theme-temple');
   stageEl.classList.add(`theme-${id}`);
@@ -134,7 +137,7 @@ function loop(now) {
   last = Math.max(last, now);
   if (!current) return;
   try {
-    current.frame(dt, now / 1000);
+    current.frame(dt, last / 1000); // đồng hồ cảnh chỉ tiến (kể cả khi trình kiểm thử đã tua trước bằng step)
     pipeline.render(current.scene, current.camera);
     labels.render(current.camera);
   } catch (error) {

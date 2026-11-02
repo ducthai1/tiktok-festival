@@ -5,7 +5,8 @@
 // → đại lễ / đại lễ Kim Liên (xem temple-grand-ceremony.js).
 import * as THREE from '/vendor/three/three.module.js';
 import { createGrandCeremony } from './temple-grand-ceremony.js';
-import { createAltarTable, createLampRow, fortuneTube, fruitTray, incenseBundle, lampProp, lotusFlower } from './temple-props.js';
+import { createAltarTable, createLampRow, fortuneTube, fruitTray, incenseBundle, lampProp, lotus, lotusFlower } from './temple-props.js';
+import { URN } from './temple-painted-hall.js';
 
 const PI = Math.PI;
 const world = new THREE.Vector3();
@@ -32,14 +33,14 @@ export function createTempleRituals(ctx) {
     particles.burst({ position: world, count: 1, colors: ['#9a9a9a', '#cfcfcf'], speed: 0.25, spread: 0, gravity: 0.5, life: 2.2, size: 0.22, damping: 0.99 });
   }
 
-  // Đi vòng qua lư hương (ở giữa) để tới trước bàn thờ.
+  // Đi vòng qua lư hương (ở giữa) để tới trước bàn thờ (mép bàn thờ trong tranh ở độ sâu ~11,7 m).
   function toAltar() {
-    const x = (Math.random() < 0.5 ? -1 : 1) * (1.1 + Math.random() * 0.6);
-    return [{ walk: new THREE.Vector3(x, 0, -1.3) }, { walk: new THREE.Vector3(x, 0, -3.45), facing: PI }];
+    const x = (Math.random() < 0.5 ? -1 : 1) * (0.55 + Math.random() * 0.35);
+    return [{ walk: new THREE.Vector3(x, 0, -9.7) }, { walk: new THREE.Vector3(x, 0, -10.95), facing: PI }];
   }
 
   const OFFERINGS = {
-    lotus: { make: () => lotusFlower(hall.lotus), name: 'dâng hoa sen', icon: '🪷', points: 10,
+    lotus: { make: () => lotusFlower(lotus), name: 'dâng hoa sen', icon: '🪷', points: 10,
       effect: () => { audio.play('chime'); helpers.petals(90); } },
     lamp: { make: () => lampProp(), name: 'thắp đèn lưu ly', icon: '🏮', points: 50,
       effect: () => { audio.play('smallBell'); audio.play('chime'); lamps.light(clock); } },
@@ -50,12 +51,13 @@ export function createTempleRituals(ctx) {
   return {
     incense(fx) {
       hud.toast(`🔥 ${fx.nickname} thắp ${fx.sticks} nén hương`);
-      // đứng chếch một bên lư, mặt quay vào lư: camera thấy nghiêng người, rõ tay nâng hương và vái
+      // đứng ngang hàng lư, một bên, mặt quay vào lư: camera thấy nghiêng người, rõ tay nâng hương và vái
       const side = Math.random() < 0.5 ? -1 : 1;
-      const facing = Math.atan2(-side * 1.05, -0.35);
+      const facing = Math.atan2(-side, -0.12);
       crowd.perform(fx.userId, [
         holdProp(() => incenseBundle()),
-        { walk: new THREE.Vector3(side * 1.05, 0, -2.35), facing },
+        { walk: new THREE.Vector3(side * 0.6, 0, -9.8) },
+        { walk: new THREE.Vector3(side * 0.62, 0, -(URN.depth - 0.15)), facing },
         { run: (e) => { e.prop.userData.light(); audio.play('chime'); } },
         { pose: 'prayHigh', seconds: 1.1, facing, onTick: smokeFromTips },
         { pose: 'bowStand', seconds: 4.2, facing, onTick: smokeFromTips }, // vái 3 vái
@@ -69,7 +71,7 @@ export function createTempleRituals(ctx) {
         { run: (e) => { e.model.hand.getWorldPosition(world); helpers.releaseLantern(fx, world.clone()); } },
         { pose: 'bow', seconds: 3.2, facing: PI },
         merit(10)
-      ], { fallback: () => helpers.releaseLantern(fx, new THREE.Vector3(0, 1.8, 3)) });
+      ], { fallback: () => helpers.releaseLantern(fx, new THREE.Vector3(0, 1.2, -6)) });
     },
     fortune(fx) {
       const reveal = () => {
@@ -84,7 +86,7 @@ export function createTempleRituals(ctx) {
         } },
         { run: (e) => {
           e.prop.getWorldPosition(world);
-          particles.burst({ position: world.clone().setY(world.y + 0.4), count: 40, colors: ['#ffd36b', '#ffffff'], speed: 2.5, gravity: -3, life: 1, size: 0.18 });
+          particles.burst({ position: world.clone().setY(world.y + 0.25), count: 40, colors: ['#ffd36b', '#ffffff'], speed: 1.2, gravity: -1.5, life: 1, size: 0.06 });
           dropProp(e);
           reveal();
         } },
@@ -96,7 +98,7 @@ export function createTempleRituals(ctx) {
         grand.start(fx.offering, fx);
         crowd.perform(fx.userId, [
           holdProp(() => incenseBundle()),
-          { walk: new THREE.Vector3(0, 0, -1.55), facing: PI },
+          { walk: new THREE.Vector3(0, 0, -9.9), facing: PI },
           { run: (e) => e.prop.userData.light() },
           { pose: 'bowStand', seconds: 6.6, facing: PI, onTick: smokeFromTips },
           { run: (e) => { dropProp(e); helpers.addIncense(9); } },

@@ -3,6 +3,9 @@
 // chánh điện và camera chầm chậm tiến vào.
 import * as THREE from '/vendor/three/three.module.js';
 import { disposeObject } from './person-model.js';
+import { glowSprite } from './temple-painted-hall.js';
+import { lotus } from './temple-props.js';
+import { floorPoint } from './temple-view.js';
 
 const GOLD_PETALS = ['#ffd36b', '#ffe9a8', '#ff9ec4', '#fff1c9'];
 
@@ -15,8 +18,8 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
   const later = (seconds, fn) => timeline.push({ at: clock + seconds, fn });
 
   function petalRain(count) {
-    particles.burst({ position: new THREE.Vector3(0, 11, 1), box: new THREE.Vector3(13, 1, 11), count, colors: GOLD_PETALS,
-      speed: 0.6, spread: 1, gravity: -0.8, life: 8, size: 0.24, damping: 0.995 });
+    particles.burst({ position: new THREE.Vector3(0, 3.6, -7.2), box: new THREE.Vector3(5.2, 1.8, 7), count, colors: GOLD_PETALS,
+      speed: 0.25, spread: 1, gravity: -0.25, life: 9, size: 0.08, damping: 0.985 });
   }
 
   function threeBows() {
@@ -24,7 +27,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
     [0, 2.2, 4.4].forEach((s, i) => later(s, () => {
       audio.play(i === 2 ? 'gong' : 'bell');
       helpers.swingBell();
-      particles.burst({ position: new THREE.Vector3(0, 6.4, -7.4), count: 120, colors: ['#ffd36b', '#fff1c9'], speed: 6, spread: 1, gravity: 0, life: 1.6, size: 0.26 });
+      particles.burst({ position: hall.haloCenter, count: 120, colors: ['#ffd36b', '#fff1c9'], speed: 2.4, spread: 1, gravity: 0, life: 1.6, size: 0.1 });
     }));
   }
 
@@ -33,11 +36,16 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
       scene.remove(bigLotus);
       disposeObject(bigLotus);
     }
-    bigLotus = hall.lotus(4.2);
-    bigLotus.traverse((node) => {
-      if (node.isMesh) node.material = new THREE.MeshStandardMaterial({ color: '#ffd36b', emissive: '#ffb020', emissiveIntensity: 1.1, metalness: 0.6, roughness: 0.3, transparent: true });
+    // sen vàng nở giữa lối thảm đỏ trước bàn thờ, toả quầng sáng dưới chân
+    const flower = lotus(0.5);
+    flower.traverse((node) => {
+      if (node.isMesh) node.material = new THREE.MeshStandardMaterial({ color: '#ffd36b', emissive: '#c07a10', emissiveIntensity: 0.55, metalness: 0.55, roughness: 0.32, transparent: true });
     });
-    bigLotus.position.set(0, 1.6, -7.2);
+    bigLotus = new THREE.Group();
+    const glow = glowSprite(2.2, 0.7);
+    glow.position.y = 0.35;
+    bigLotus.add(flower, glow);
+    bigLotus.position.copy(floorPoint(0.5, 0.705));
     bigLotus.scale.setScalar(0.01);
     bigLotus.userData.born = clock;
     scene.add(bigLotus);
@@ -45,11 +53,11 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
 
   function releaseSkyLanterns(count) {
     for (let i = 0; i < count; i += 1) {
-      const lantern = hall.lotus(0.22);
-      const glow = new THREE.Mesh(new THREE.SphereGeometry(0.1, 8, 6), new THREE.MeshBasicMaterial({ color: '#ffd27a', toneMapped: false }));
-      glow.position.y = 0.16;
+      const lantern = lotus(0.15);
+      const glow = new THREE.Mesh(new THREE.SphereGeometry(0.065, 8, 6), new THREE.MeshBasicMaterial({ color: '#ffd27a' }));
+      glow.position.y = 0.11;
       lantern.add(glow);
-      lantern.position.set((Math.random() - 0.5) * 11, 0.3, -3 + Math.random() * 10);
+      lantern.position.set((Math.random() - 0.5) * 4.4, 0.2, -4.5 - Math.random() * 6);
       scene.add(lantern);
       lanterns.push({ lantern, born: clock + i * 0.12, drift: (Math.random() - 0.5) * 0.8 });
     }
@@ -88,7 +96,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
         bigLotus.scale.setScalar(Math.max(0.01, grow * grow * (3 - 2 * grow)));
         bigLotus.rotation.y += dt * 0.25;
         const fade = age > 22 ? Math.max(0, 1 - (age - 22) / 3) : 1;
-        bigLotus.traverse((node) => { if (node.isMesh) node.material.opacity = fade; });
+        bigLotus.traverse((node) => { if (node.material) node.material.opacity = fade * (node.isSprite ? 0.7 : 1); });
         if (age > 25) {
           scene.remove(bigLotus);
           disposeObject(bigLotus);
@@ -99,7 +107,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
         const l = lanterns[i];
         const age = t - l.born;
         if (age < 0) continue;
-        l.lantern.position.y += dt * 0.75;
+        l.lantern.position.y += dt * 0.42;
         l.lantern.position.x += Math.sin(age * 1.3) * dt * l.drift;
         if (age > 13) {
           scene.remove(l.lantern);

@@ -121,7 +121,7 @@ export function disposeObject(object) {
     node.geometry?.dispose();
     const materials = Array.isArray(node.material) ? node.material : node.material ? [node.material] : [];
     for (const m of materials) {
-      m.map?.dispose();
+      if (!m.map?.userData.shared) m.map?.dispose(); // ảnh dùng chung (sprite chùa) giữ lại
       m.dispose();
     }
   });

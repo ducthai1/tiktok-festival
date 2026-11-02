@@ -35,6 +35,10 @@ export function createRenderPipeline(canvas) {
   return {
     renderer,
     resize,
+    /** Mặc định ACES cho cảnh 3D; cảnh dùng tranh vẽ (chùa) tắt để giữ đúng màu tranh. */
+    setToneMapping(mode = THREE.ACESFilmicToneMapping) {
+      renderer.toneMapping = mode;
+    },
     setBloom({ strength = 0.7, radius = 0.55, threshold = 0.82 } = {}) {
       bloom.strength = strength;
       bloom.radius = radius;

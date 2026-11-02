@@ -6,7 +6,7 @@ Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm m�
 |---|---|---|
 | 🍸 **Quán Bar** | Bình luận để vào quán (6 ghế quầy + 16 ô sàn nhảy). Gõ `nhảy` để quẩy, `cụng ly` để nâng ly. Thả tim và bình luận làm đầy **độ quẩy**; đầy thì cả quán mở tiệc. | Quầy rượu, biển neon, sàn LED, quả cầu disco, bartender, pháo hoa |
 | 🏊 **Đua Bơi Vượt Rào** | Cả phòng hợp sức đẩy vận động viên bơi 1000 m qua 4 bức tường. Thả tim gọi vịt phao, gõ `cố lên`, follow/share gọi ván lướt, quà gọi thuyền, cá heo, cá mập, cá voi, tàu ngầm. Thắng đủ 7 vòng là **VÔ ĐỊCH**. | Biển hoàng hôn, dây phao, tường gạch có thanh máu, trợ thủ bơi vào đẩy |
-| 🪷 **Chùa Online** | Thả tim gõ mõ, follow/share thỉnh chuông, gõ `thắp hương`, `cầu …` (thả hoa đăng mang lời cầu) hoặc `xin xăm` (gieo quẻ). Quà để dâng hoa sen, đèn lưu ly hoặc làm đại lễ. 6 người nhiều điểm nhất quỳ hàng đầu. | Chánh điện cột son, đèn lồng, đài sen có hào quang, lư hương, chuông, mõ, tờ giải quẻ |
+| 🪷 **Chùa Online** | Thả tim gõ mõ, follow/share thỉnh chuông, gõ `thắp hương`, `cầu …` (thả hoa đăng mang lời cầu) hoặc `xin xăm` (gieo quẻ). Quà để dâng hoa sen, đèn lưu ly hoặc làm đại lễ. 6 người nhiều điểm nhất quỳ hàng đầu. | Tranh chánh điện vẽ tay; Phật tử vẽ tay quỳ trên bồ đoàn, đi lên lư hương, dâng lễ; sư gõ mõ, sư thỉnh chuông; tờ giải quẻ |
 
 ## Hiệu ứng theo chức năng — quà càng lớn màn càng hoành tráng
 
@@ -109,9 +109,13 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 | `TIKFINITY_WS_URL` | `ws://127.0.0.1:21213/` | Chỉ nhận địa chỉ trên chính máy này |
 | `START_GAME` | `bar` | `bar` / `swim` / `temple` |
 
-## Ảnh bàn thờ riêng (Chùa Online)
+## Tranh và nhân vật của Chùa Online
 
-Mặc định bàn thờ là một đài sen 3D phát hào quang. Muốn dùng ảnh riêng thì đặt file **bạn có quyền sử dụng** vào `public/assets/temple/altar.png` (nên là PNG nền trong suốt), rồi tải lại màn hình OBS.
+Chùa dùng **tranh vẽ** thay cho khối 3D: nền chánh điện + Phật tử (nam/nữ, 11–12 tư thế) + 2 vị sư, đều là ảnh chủ dự án tạo bằng Gemini, nằm trong `public/assets/temple/` (WebP, ~1,1 MB) kèm `sprites.json` (cỡ thật bằng mét, mốc chân, đỉnh đầu của từng khung).
+
+- Camera được khớp phối cảnh của tranh (chân trời 56,3% từ trên, camera cao 0,93 m — `public/stage/scenes/temple-view.js`). Người ở gần camera được thu nhỏ bớt để hàng trước không che bàn thờ.
+- Mỗi tư thế là một khung vẽ: đứng/đi/quỳ/vái/lạy/dâng lễ nhìn từ sau lưng; đứng/đi/cầm hương/vái hương nhìn nghiêng (lật ảnh khi đi sang trái). Đi thì đổi khung chân theo quãng đường nên chân không trượt.
+- Đổi tranh: tạo ảnh mới (nền hồng tím `#FF00FF` cho nhân vật), đặt vào `art-inbox/chua/raw/` (thư mục này không lên git), rồi chạy 3 script trong `scripts/temple-art/` (tách nền → làm sạch nền chánh điện → xuất WebP + `sprites.json`). Đổi bố cục tranh nền thì phải đo lại chân trời và độ sâu trong `temple-view.js`.
 
 ## Đã sửa gì so với code tham khảo
 

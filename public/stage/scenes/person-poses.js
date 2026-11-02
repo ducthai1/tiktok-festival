@@ -124,6 +124,7 @@ const BLEND_SECONDS = 0.8;
  * (bắt đầu từ đúng dáng đang có), nên quỳ xuống / ngồi xuống / đứng dậy là một động tác liền mạch.
  */
 export function animatePerson(p, pose, t, dt, seated = false, cycleT = t) {
+  if (p.animate) return p.animate(pose, t, dt, seated, cycleT); // nhân vật vẽ tay (sprite) tự chọn khung
   const key = `${pose}|${seated}`;
   if (p.poseKey !== key) {
     p.poseKey = key;

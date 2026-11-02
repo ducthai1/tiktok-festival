@@ -96,3 +96,7 @@
 .theme-temple .label .tag { background: rgba(60, 16, 6, 0.85); border-color: rgba(255, 211, 107, 0.55); }
 .theme-swim .label .tag { background: rgba(3, 42, 74, 0.78); border-color: rgba(189, 244, 255, 0.6); }
 .theme-bar .label .tag { background: rgba(26, 8, 40, 0.78); border-color: rgba(255, 122, 196, 0.6); }
+
+/* Chùa: tranh nền có hàng người quỳ ở nửa dưới → bảng xếp hạng lên góc phải phía trên (che cột + đèn lồng) */
+.theme-temple #board { bottom: auto; top: 236px; width: 360px; padding: 14px 18px; }
+.theme-temple #board li { font-size: 22px; }
