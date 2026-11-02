@@ -16,6 +16,7 @@ export function formatNumber(n) {
 
 export function createHud() {
   const toastRoot = $('toasts');
+  const combos = new Map(); // key → { node, text, total, timer }
   let bannerTimer = 0;
   let lastBoardKey = '';
   let boardScores = new Map();
@@ -53,14 +54,57 @@ export function createHud() {
       const root = $('hint');
       root.replaceChildren(...parts.map((p) => (p.startsWith('*') ? el('b', '', p.slice(1, -1)) : document.createTextNode(p))));
     },
+    // items: [[khoá, chữ]]; khoá là chuỗi ('❤', 'Follow') hoặc danh sách quà [{image, emoji, name}] → hiện ảnh quà
     setLegend(items, visible) {
       const root = $('legend');
       root.classList.toggle('off', !visible);
       root.replaceChildren(...items.map(([key, value]) => {
         const item = el('div', 'item');
-        item.append(el('em', '', key), document.createTextNode(value));
+        const em = el('em', Array.isArray(key) ? 'gifts' : '');
+        if (Array.isArray(key)) {
+          for (const g of key) {
+            if (g.image) {
+              const img = document.createElement('img');
+              img.src = g.image;
+              img.alt = g.name;
+              img.referrerPolicy = 'no-referrer';
+              em.append(img);
+            } else em.append(el('span', '', g.emoji || '🎁'));
+          }
+        } else em.textContent = key;
+        item.append(em, document.createTextNode(value));
         return item;
       }));
+    },
+    /**
+     * Thông báo cộng dồn: cùng key (vd cùng người + cùng quà) thì sửa dòng đang hiện (×1 → ×2 → ×3) và
+     * nảy nhẹ, thay vì thêm dòng mới mỗi lần. render(total) trả chữ cho tổng hiện tại.
+     */
+    comboToast(key, add, render, { gold = false, image = '', ms = 4200 } = {}) {
+      let combo = combos.get(key);
+      if (combo && combo.node.isConnected && !combo.node.classList.contains('out')) {
+        combo.total += add;
+        combo.text.textContent = render(combo.total);
+        combo.node.classList.remove('bump');
+        void combo.node.offsetWidth; // chạy lại hiệu ứng nảy
+        combo.node.classList.add('bump');
+        clearTimeout(combo.timer);
+      } else {
+        const node = el('div', `toast${gold ? ' gold' : ''}`);
+        if (image) node.append(avatarNode(image));
+        const text = document.createTextNode(render(add));
+        node.append(text);
+        toastRoot.prepend(node);
+        while (toastRoot.children.length > 4) toastRoot.lastChild.remove();
+        combo = { node, text, total: add };
+        combos.set(key, combo);
+      }
+      const { node } = combo;
+      combo.timer = setTimeout(() => {
+        node.classList.add('out');
+        setTimeout(() => node.remove(), 400);
+        if (combos.get(key) === combo) combos.delete(key);
+      }, ms);
     },
     toast(text, { gold = false, image = '', ms = 4200 } = {}) {
       const node = el('div', `toast${gold ? ' gold' : ''}`);
@@ -139,6 +183,8 @@ export function createHud() {
     clearGame() {
       this.gameRoot.replaceChildren();
       toastRoot.replaceChildren();
+      for (const c of combos.values()) clearTimeout(c.timer);
+      combos.clear();
       $('banner').classList.remove('show');
       this.hideFortune();
       $('welcome').hidden = true;

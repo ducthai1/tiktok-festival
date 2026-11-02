@@ -43,3 +43,23 @@ export function normalizeConnectorEvent(type, data = {}) {
   }
   return base; // member, follow, share
 }
+
+/**
+ * Danh mục quà của phòng (connection.availableGifts, lấy lúc kết nối) → [{id, name, coins, image}].
+ * Giá là diamondCount của chính TikTok nên đúng theo vùng/thời điểm; ảnh chỉ nhận từ CDN TikTok.
+ */
+export function normalizeGiftCatalog(raw) {
+  const list = Array.isArray(raw) ? raw : raw?.gifts || raw?.data?.gifts || raw?.giftList || [];
+  if (!Array.isArray(list)) return [];
+  const seen = new Set();
+  const out = [];
+  for (const g of list.slice(0, 2000)) {
+    const coins = Number(g?.diamond_count ?? g?.diamondCount) || 0;
+    const name = firstText(g?.name, g?.giftName);
+    if (!coins || !name || seen.has(name)) continue;
+    seen.add(name);
+    out.push({ id: firstText(g.id, g.giftId), name: name.slice(0, 40), coins,
+      image: firstImageUrl(g.image, g.icon, g.giftImage, g.image?.url_list?.[0], g.icon?.url_list?.[0]) });
+  }
+  return out;
+}

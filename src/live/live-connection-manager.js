@@ -13,7 +13,7 @@ export function parseTikTokUsername(input) {
   return USERNAME_RE.test(text) ? text : '';
 }
 
-export function createLiveConnectionManager({ providerFactories, onEvent, onStatus, timers = globalThis }) {
+export function createLiveConnectionManager({ providerFactories, onEvent, onStatus, onCatalog = () => {}, timers = globalThis }) {
   const isDuplicate = createEventDeduper();
   const streaks = createGiftStreakTracker();
   let status = { state: 'idle', provider: '', username: '', message: 'Chưa kết nối' };
@@ -69,6 +69,7 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
     const instance = factory({
       username: status.username,
       emit: (raw) => myAttempt === attempt && ingest(raw),
+      onCatalog: (list) => myAttempt === attempt && onCatalog(list), // danh mục quà thật của phòng
       onDisconnected: (reason) => {
         if (myAttempt === attempt && provider === instance) scheduleRetry(myAttempt, reason);
       },

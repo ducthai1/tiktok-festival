@@ -12,7 +12,7 @@ import { lotus } from './temple-props.js';
 import { createTempleRituals } from './temple-rituals.js';
 import { createTempleCamera, setZoom } from './temple-view.js';
 import { createBellAndMo } from './temple-bell-and-mo.js';
-import { giftLegend } from './temple-wishes.js';
+import { giftLabels } from './temple-wishes.js';
 
 // Hàng quỳ (độ sâu tính từ camera) — hàng đầu là 6 người nhiều điểm nhất, chừa lối giữa theo thảm đỏ.
 const ROWS = [
@@ -44,7 +44,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   let bowAll = { pose: 'bow', start: 0, until: 0 };
 
   hud.setTitle('🪷 CHÙA ONLINE');
-  hud.setHint(['Gõ ', '*thắp hương*', '\nGõ ', '*cầu …*', ' điều bạn mong\nGõ ', '*xin xăm*', ' rút quẻ']);
+  hud.setHint(['Gõ ', '*cầu …*', ' điều bạn mong\nTặng quà để ', '*thắp hương*', ', ', '*xin xăm*', '…']);
 
   // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
@@ -116,7 +116,8 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     scene,
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
-    legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông'], ...giftLegend()],
+    legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông']],
+    giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “thắp hương” để dâng hương', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
     update(snapshot) {
@@ -149,6 +150,9 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         helpers.swingBell();
         helpers.bowAll('bow', 3.4);
         hud.toast(`🔔 ${fx.nickname} thỉnh chuông — cả chánh điện cùng vái`);
+      } else if (fx.kind === 'hint') labels.bubble(fx.userId, fx.text, 3800);
+      else if (fx.kind === 'giftNote') {
+        hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — 🎋 ${fx.note}`, { image: fx.giftPicture });
       } else if (fx.kind === 'incense') rituals.incense(fx);
       else if (fx.kind === 'prayer') rituals.prayer(fx);
       else if (fx.kind === 'fortune') rituals.fortune(fx);

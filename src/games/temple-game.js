@@ -3,6 +3,7 @@
 // quà = một lời cầu (bình an, sức khỏe, tài lộc, điều ước lớn, vạn sự như ý). 6 người nhiều "tâm thành" nhất quỳ hàng đầu.
 import { containsPhrase, createCooldown, isCleanForDisplay, startsWithPhrase } from './text-match.js';
 import { drawFortune } from './temple-fortunes.js';
+import { giftTier } from '../../public/shared/gift-tiers.js';
 
 export const TEMPLE_SLOTS = 30; // 6 đệm VIP + 24 chỗ quỳ
 const VIP_SLOTS = 6;
@@ -15,22 +16,23 @@ const FORTUNE_WORDS = ['xin xam', 'gieo que', 'rut que', 'xin que', 'xin 1 que',
 const PRAYER_START = ['cau', 'nguyen', 'chuc', 'xin cho'];
 const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
 
-// 5 bậc lễ theo giá trị quà — quà càng lớn nghi lễ càng trang trọng:
-// hoa (cầu bình an) → đèn (cầu sức khỏe) → mâm ngũ quả (cầu tài lộc) → điều ước lớn → vạn sự như ý.
-export function offeringForDiamonds(diamonds) {
-  if (diamonds >= 500) return 'grand';
-  if (diamonds >= 100) return 'ceremony';
-  if (diamonds >= 30) return 'fruit';
-  if (diamonds >= 5) return 'lamp';
-  return 'lotus';
-}
+// 6 bậc theo giá MỘT món quà (public/shared/gift-tiers.js). Nghi thức dài (thắp hương, xin xăm) chỉ mở
+// bằng quà — gõ chữ không mở được, nên đông người gõ cùng lúc cũng không làm loạn màn hình:
+// Hoa hồng: thắp hương → Rosa/Donut: xin xăm → Tay tim/Corgi: thắp đèn cầu sức khỏe
+// → Ngân hà/Pháo hoa: mâm ngũ quả cầu tài lộc → Siêu xe: điều ước lớn → Tên lửa/Sư tử/Vũ trụ: vạn sự như ý.
+const OFFERING_BY_TIER = ['incense', 'fortune', 'lamp', 'fruit', 'ceremony', 'grand'];
+const HINTS = {
+  incense: 'Tặng 🌹 Hoa hồng để lên thắp hương nhé',
+  fortune: 'Tặng 🍩 Bánh donut (quà từ 10 xu) để xin xăm nhé'
+};
+export const offeringForGift = (coinsEach) => OFFERING_BY_TIER[giftTier(coinsEach) - 1];
 
 export function createTempleGame({ random = Math.random } = {}) {
   const devotees = new Map();
   const merit = new Map(); // điểm tâm thành của phiên, giữ cả khi người đó đã rời chánh điện
-  const incenseCooldown = createCooldown(20000);
+  const hintCooldown = createCooldown(30000);
   const prayerCooldown = createCooldown(30000);
-  const fortuneCooldown = createCooldown(120000);
+  let lastPrayerAt = -Infinity; // cả chánh điện: tối đa 1 hoa đăng / 5 giây
   const totals = { merit: 0, incense: 0, mo: 0, bell: 0 };
   const fortuneQueue = [];
   let currentFortune = null;
@@ -82,21 +84,16 @@ export function createTempleGame({ random = Math.random } = {}) {
 
   function onChat(event, now, fx) {
     const { user, comment } = event;
-    if (containsPhrase(comment, FORTUNE_WORDS)) {
-      if (!fortuneCooldown(user.id, now) || fortuneQueue.length >= FORTUNE_QUEUE_MAX) return;
-      fortuneQueue.push({ userId: user.id, nickname: user.nickname, avatar: user.avatar, ...drawFortune(random) });
-      addMerit(user, 10);
-      return;
-    }
-    if (containsPhrase(comment, INCENSE_WORDS)) {
-      if (!incenseCooldown(user.id, now)) return;
-      totals.incense += 3;
-      addMerit(user, 15);
-      fx.push({ kind: 'incense', userId: user.id, nickname: user.nickname, sticks: 3 });
+    // gõ "xin xăm"/"thắp hương": chỉ nhắc người đó tặng quà (mỗi người tối đa 1 lần nhắc / 30 giây)
+    const asked = containsPhrase(comment, FORTUNE_WORDS) ? 'fortune' : containsPhrase(comment, INCENSE_WORDS) ? 'incense' : '';
+    if (asked) {
+      if (hintCooldown(user.id, now)) fx.push({ kind: 'hint', userId: user.id, text: HINTS[asked] });
       return;
     }
     const isPrayer = startsWithPhrase(comment, PRAYER_START) || containsPhrase(comment, PRAYER_WORDS);
-    if (isPrayer && isCleanForDisplay(comment) && prayerCooldown(user.id, now)) {
+    // xét giới hạn chung TRƯỚC (không tốn lượt của người gõ khi chánh điện đang bận)
+    if (isPrayer && now - lastPrayerAt >= 5000 && isCleanForDisplay(comment) && prayerCooldown(user.id, now)) {
+      lastPrayerAt = now;
       addMerit(user, 10);
       fx.push({ kind: 'prayer', userId: user.id, nickname: user.nickname, text: comment.slice(0, 80) });
     }
@@ -121,11 +118,22 @@ export function createTempleGame({ random = Math.random } = {}) {
         addMerit(event.user, 10);
         fx.push({ kind: 'bell', userId: event.user.id, nickname: event.user.nickname });
       } else if (event.type === 'gift') {
-        const offering = offeringForDiamonds(event.gift.diamonds);
-        addMerit(event.user, event.gift.diamonds * 10);
-        if (offering !== 'lotus') totals.bell += 1;
-        fx.push({ kind: 'offering', offering, userId: event.user.id, nickname: event.user.nickname,
-          giftName: event.gift.name, count: event.gift.count });
+        const { user, gift } = event;
+        const offering = offeringForGift(gift.diamondsEach);
+        const base = { userId: user.id, nickname: user.nickname, giftName: gift.name, giftPicture: gift.pictureUrl, count: gift.count };
+        addMerit(user, gift.diamonds * 10);
+        if (offering === 'incense') {
+          const sticks = Math.min(9, 3 * gift.count);
+          totals.incense += sticks;
+          fx.push({ kind: 'incense', ...base, sticks });
+        } else if (offering === 'fortune') {
+          // mỗi lượt tặng một quẻ; hàng chờ đầy thì quà vẫn được tính tâm thành, chỉ không thêm quẻ
+          if (fortuneQueue.length < FORTUNE_QUEUE_MAX) fortuneQueue.push({ userId: user.id, nickname: user.nickname, avatar: user.avatar, ...drawFortune(random) });
+          fx.push({ kind: 'giftNote', ...base, note: 'xin một quẻ xăm' });
+        } else {
+          totals.bell += 1;
+          fx.push({ kind: 'offering', offering, ...base, tier: giftTier(gift.diamondsEach) });
+        }
       } else if (event.type === 'chat') onChat(event, now, fx);
       return fx;
     },

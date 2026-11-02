@@ -78,7 +78,8 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       crowd.sync(state.patrons, new Set(snapshot.viewers?.pending || []));
       syncDrinks(state.patrons);
     },
-    legend: [['1💎', ' Bia'], ['5💎', ' Cocktail'], ['30💎', ' Champagne'], ['100💎', ' Tháp ly'], ['500💎', ' Mở tiệc']],
+    legend: [],
+    giftLabels: { 1: 'Bia', 2: 'Cocktail', 3: 'Champagne', 4: 'Tháp ly', 5: 'Mở tiệc', 6: 'Đại tiệc pháo hoa' },
     probe: (id) => crowd.probe(id),
     onFx(fx) {
       if (fx.kind === 'welcome') {
@@ -92,7 +93,8 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       } else if (fx.kind === 'bubble') labels.bubble(fx.userId, fx.text);
       else if (fx.kind === 'toast') hud.toast(fx.text);
       else if (fx.kind === 'drink') {
-        hud.toast(`${DRINK_ICONS[fx.drink]} ${fx.nickname} gọi ${DRINK_NAMES[fx.drink]} (${fx.giftName} ×${fx.count})`, { gold: fx.diamonds >= 30 });
+        hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${DRINK_ICONS[fx.drink]} ${fx.nickname} tặng ${fx.giftName} ×${n} → ${DRINK_NAMES[fx.drink]}`,
+          { gold: (fx.tier || 1) >= 3, image: fx.giftPicture });
         serving.serve(fx);
         if (fx.drink === 'tower') hud.banner('🍾 THÁP CHAMPAGNE 🍾', `${fx.nickname} mời cả quán`, 3500);
       } else if (fx.kind === 'party') {

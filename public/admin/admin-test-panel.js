@@ -1,7 +1,7 @@
 // Mục "Thử trước khi live": bình luận/tim/follow/quà/người vào phòng giả mang tên "Khách thử N".
 // Server tự từ chối khi đang kết nối live thật.
+import { SAMPLE_GIFTS } from '/static/shared/gift-tiers.js';
 const TEST_CHATS = { bar: ['chào cả quán', 'nhảy', 'cụng ly'], swim: ['cố lên', 'bơi đi'], temple: ['thắp hương', 'cầu cho gia đình bình an', 'xin xăm'] };
-const GIFT_TIERS = [1, 5, 10, 30, 99, 199, 500];
 
 function chip(text, onClick) {
   const b = document.createElement('button');
@@ -24,7 +24,9 @@ export function setupTestPanel({ $, run, socket, toast }) {
     toast(`Đã cho ${count} khách thử vào phòng`);
   }
 
-  $('test-gifts').replaceChildren(...GIFT_TIERS.map((d) => chip(`🎁 ${d}💎`, () => send({ kind: 'gift', diamonds: d }))));
+  // quà TikTok thật hay gặp, giá phổ biến (xu) — hiệu ứng theo giá MỘT món, giống lúc live thật
+  $('test-gifts').replaceChildren(...SAMPLE_GIFTS.map((g) => chip(`${g.emoji} ${g.name} · ${g.coins.toLocaleString('vi-VN')} xu`,
+    () => send({ kind: 'gift', giftId: g.id }))));
   for (const b of document.querySelectorAll('[data-test]')) b.addEventListener('click', () => send({ kind: b.dataset.test, likes: 10 }));
   $('test-arrive-1').addEventListener('click', () => send({ kind: 'member' }));
   $('test-arrive-5').addEventListener('click', () => arrive(5));

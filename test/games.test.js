@@ -1,8 +1,9 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { createBarClubGame, BAR_SEATS, VIBE_GOAL, drinkForDiamonds } from '../src/games/bar-club-game.js';
+import { createBarClubGame, BAR_SEATS, VIBE_GOAL, drinkForGift } from '../src/games/bar-club-game.js';
 import { createSwimPushGame, GOAL_METERS, WIN_TARGET, helperForGift } from '../src/games/swim-push-game.js';
-import { createTempleGame, offeringForDiamonds, TEMPLE_SLOTS } from '../src/games/temple-game.js';
+import { createTempleGame, offeringForGift, TEMPLE_SLOTS } from '../src/games/temple-game.js';
+import { giftTier, tierRepresentatives, SAMPLE_GIFTS } from '../public/shared/gift-tiers.js';
 import { createGameHub } from '../src/games/game-hub.js';
 import { FORTUNES } from '../src/games/temple-fortunes.js';
 
@@ -26,7 +27,8 @@ test('bar: chat joins, seats are unique, full bar evicts the idlest non-VIP', ()
 });
 
 test('bar: drinks by gift value, dance command, vibe fills into a party', () => {
-  assert.deepEqual([1, 5, 30, 100, 500].map(drinkForDiamonds), ['beer', 'cocktail', 'champagne', 'tower', 'party']);
+  // Hoa hồng, Bánh donut, Corgi, Dải ngân hà, Siêu xe, Sư tử
+  assert.deepEqual([1, 30, 299, 1000, 7000, 29999].map(drinkForGift), ['beer', 'cocktail', 'champagne', 'tower', 'party', 'party']);
   const bar = createBarClubGame();
   bar.handleEvent(chat(1, 'Nhảy đi mọi người'), 0);
   assert.equal(bar.snapshot(100).patrons[0].dancing, true);
@@ -89,25 +91,35 @@ test('swim: likes send ducks, cheering has a cooldown, flippers speed up', () =>
   assert.equal(Math.round((swim.snapshot(1000).position - before) * 10) / 10, 3.6);
 });
 
-test('temple: likes strike the wooden fish, chat rituals, fortune queue with cooldown', () => {
+test('temple: likes strike the wooden fish; incense / fortune only by gift, chat just gets a hint', () => {
   const temple = createTempleGame({ random: () => 0 });
   assert.deepEqual(kinds(temple.handleEvent(like(1, 7), 0)), ['join', 'mo']);
   assert.equal(temple.snapshot(0).totals.mo, 7);
-  assert.ok(kinds(temple.handleEvent(chat(1, 'Thắp hương cầu an'), 1)).includes('incense'));
-  assert.ok(kinds(temple.handleEvent(chat(2, 'cầu cho gia đình bình an'), 1)).includes('prayer'));
-  assert.ok(!kinds(temple.handleEvent(chat(3, 'cầu đm'), 1)).includes('prayer'));
+  // gõ chữ không mở nghi thức (chống nhiều người spam), chỉ nhắc tặng quà — mỗi người 1 lần / 30 giây
+  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'Thắp hương cầu an'), 1)), ['hint']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'thắp hương'), 2)), []);
   temple.handleEvent(chat(4, 'xin xăm'), 2);
-  temple.handleEvent(chat(4, 'xin xăm'), 3); // trong thời gian chờ: không vào hàng
-  assert.equal(temple.snapshot(3).fortuneQueue, 1);
-  const shown = temple.tick(4).find((f) => f.kind === 'fortune');
+  assert.equal(temple.snapshot(3).fortuneQueue, 0);
+  // Hoa hồng ×5 → thắp hương (tối đa 9 nén); Bánh donut → một quẻ
+  const incense = temple.handleEvent(gift(1, 1, 5), 3).find((f) => f.kind === 'incense');
+  assert.equal(incense.sticks, 9);
+  assert.equal(incense.count, 5);
+  temple.handleEvent(gift(4, 30), 4);
+  assert.equal(temple.snapshot(4).fortuneQueue, 1);
+  const shown = temple.tick(5).find((f) => f.kind === 'fortune');
   assert.equal(shown.number, 1);
   assert.equal(shown.poem.length, 4);
   assert.ok(FORTUNES.every((f) => f.poem.length === 4 && f.meaning && f.rank));
+  // lời cầu bằng chữ vẫn có, nhưng cả chánh điện tối đa 1 hoa đăng / 5 giây
+  assert.ok(kinds(temple.handleEvent(chat(2, 'cầu cho gia đình bình an'), 10)).includes('prayer'));
+  assert.ok(!kinds(temple.handleEvent(chat(5, 'cầu thi đậu'), 11)).includes('prayer'));
+  assert.ok(kinds(temple.handleEvent(chat(5, 'cầu thi đậu'), 5100)).includes('prayer'));
+  assert.ok(!kinds(temple.handleEvent(chat(3, 'cầu đm'), 20000)).includes('prayer'));
 });
 
-test('temple: offerings get grander with the gift value (5 tiers)', () => {
-  assert.deepEqual([1, 5, 30, 100, 500].map(offeringForDiamonds), ['lotus', 'lamp', 'fruit', 'ceremony', 'grand']);
-  assert.deepEqual([4, 29, 99, 499].map(offeringForDiamonds), ['lotus', 'lamp', 'fruit', 'ceremony']);
+test('temple: gift tiers map to rituals (6 tiers by the price of ONE gift)', () => {
+  assert.deepEqual([1, 30, 299, 1000, 7000, 29999].map(offeringForGift), ['incense', 'fortune', 'lamp', 'fruit', 'ceremony', 'grand']);
+  assert.deepEqual([9, 98, 498, 4999, 19999].map(offeringForGift), ['incense', 'fortune', 'lamp', 'fruit', 'ceremony']);
 });
 
 test('temple: top merit kneels in front, full hall evicts non-VIP', () => {
@@ -137,4 +149,23 @@ test('hub: only the active game gets events; switching keeps the other game stat
   hub.handleEvent({ ...chat(2, 'x'), simulated: true }, 5);
   assert.equal(hub.snapshot(6).testMode, true);
   assert.equal(hub.snapshot(30000).testMode, false);
+});
+
+test('bậc quà theo giá MỘT món: 30 Hoa hồng vẫn là quà nhỏ, 1 Sư tử là bậc cao nhất', () => {
+  assert.deepEqual([1, 5, 9, 10, 98, 99, 498, 499, 4999, 5000, 19999, 20000, 44999].map(giftTier), [1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]);
+  const temple = createTempleGame({ random: () => 0.5 });
+  const roses = temple.handleEvent(gift(1, 1, 30), 0).find((f) => f.kind === 'incense');
+  const lion = temple.handleEvent(gift(2, 29999, 1), 10).find((f) => f.kind === 'offering');
+  assert.equal(roses.sticks, 9); // 30 Hoa hồng vẫn chỉ là thắp hương (cộng dồn nén)
+  assert.equal(roses.count, 30);
+  assert.equal(lion.offering, 'grand');
+  assert.equal(lion.tier, 6);
+});
+
+test('quà đại diện mỗi bậc: lấy món rẻ nhất trong bậc, đủ 6 bậc với quà mẫu', () => {
+  const reps = tierRepresentatives(SAMPLE_GIFTS, 2);
+  assert.equal(reps.length, 6);
+  assert.equal(reps[0].gifts[0].name, 'Hoa hồng');
+  assert.ok(reps.every((r) => r.gifts.length > 0));
+  assert.ok(reps[5].gifts.every((g) => g.coins >= 20000));
 });

@@ -105,3 +105,16 @@ test('chat filters: diacritic-aware profanity, URLs, whole-word commands', () =>
   assert.ok(containsPhrase('Cụng ly nào!!', ['cung ly']));
   assert.equal(containsPhrase('gogo', ['go']), false);
 });
+
+test('danh mục quà của phòng: đọc tên + giá thật + ảnh, bỏ món thiếu tên/giá và món trùng', async () => {
+  const { normalizeGiftCatalog } = await import('../src/live/normalize-tiktok-connector.js');
+  const list = normalizeGiftCatalog({ gifts: [
+    { id: 5655, name: 'Rose', diamond_count: 1, image: { url_list: ['https://p16-webcast.tiktokcdn.com/rose.png'] } },
+    { id: 6369, name: 'Lion', diamond_count: 29999, image: { url_list: ['https://p16-webcast.tiktokcdn.com/lion.png'] } },
+    { id: 1, name: '', diamond_count: 5 },
+    { id: 2, name: 'Free', diamond_count: 0 },
+    { id: 5655, name: 'Rose', diamond_count: 1 }
+  ] });
+  assert.deepEqual(list.map((g) => [g.name, g.coins]), [['Rose', 1], ['Lion', 29999]]);
+  assert.equal(list[1].image, 'https://p16-webcast.tiktokcdn.com/lion.png');
+});

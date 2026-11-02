@@ -134,8 +134,9 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
   return {
     scene,
     camera,
-    legend: [['❤', ' Vịt phao +3m'], ['1💎', ' Chân vịt ×1.8'], ['5💎', ' Ván lướt +25'], ['10💎', ' Thuyền +50'],
-      ['30💎', ' Cá heo +90'], ['99💎', ' Cá mập +150'], ['199💎', ' Cá voi +350'], ['499💎', ' Tàu ngầm +600']],
+    legend: [['❤', ' Vịt phao +3m']],
+    // bậc quà (public/shared/gift-tiers.js) → trợ thủ; màn hình ghép ảnh quà thật của phòng vào trước mỗi dòng
+    giftLabels: { 1: 'Chân vịt · Ván lướt', 2: 'Thuyền · Cá heo', 3: 'Cá mập +150', 4: 'Cá voi +350', 5: 'Tàu ngầm +600', 6: 'Tàu ngầm ×3' },
     update(snapshot) {
       state = snapshot.state;
       if (state.position < shownPos - 50) {
@@ -166,7 +167,11 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
         }
         for (let i = 0; i < fx.shownUnits; i += 1) setTimeout(() => spawnHelper(fx, i), i * 160);
         labels.float(new THREE.Vector3((Math.random() - 0.5) * 2.4, 1.6 + Math.random() * 0.8, -1), `+${formatNumber(fx.push)} m`, { className: 'push' });
-        if (fx.push >= 90) hud.toast(`${fx.nickname} gọi ${fx.label}${fx.units > 1 ? ` ×${fx.units}` : ''} (+${formatNumber(fx.push)} m)`, { gold: fx.push >= 150, image: fx.avatar });
+        if (fx.push >= 90) {
+          const perUnit = fx.push / Math.max(1, fx.units);
+          hud.comboToast(`${fx.userId}|${fx.label}`, fx.units, (n) => `${fx.nickname} gọi ${fx.label} ×${n} (+${formatNumber(perUnit * n)} m)`,
+            { gold: fx.push >= 150, image: fx.avatar });
+        }
       } else if (fx.kind === 'wallBreak') {
         hud.banner('💥 PHÁ TƯỜNG!', `Mốc ${fx.at} m`, 1800);
       } else if (fx.kind === 'finish' || fx.kind === 'champion') {

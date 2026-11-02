@@ -17,7 +17,9 @@ const newcomer = () => {
 
 const by = (i) => ({ viewer: castId(i), name: CAST[i % CAST.length] });
 const chat = (comment, i = 0) => ({ kind: 'chat', comment, ...by(i) });
-const gift = (diamonds, i = 0, count = 1) => ({ kind: 'gift', diamonds, count, ...by(i) });
+// quà theo id quà mẫu (public/shared/gift-tiers.js): rose, finger-heart, rosa, doughnut, hand-hearts, corgi,
+// galaxy, fireworks, sports-car, rocket, lion, universe
+const gift = (giftId, i = 0, count = 1) => ({ kind: 'gift', giftId, count, ...by(i) });
 const like = (i = 0) => ({ kind: 'like', likes: 15, ...by(i) });
 const social = (kind, i = 0) => ({ kind, ...by(i) });
 
@@ -39,37 +41,37 @@ export const EFFECTS = {
     ['❤ Thả tim', () => like(3)],
     ['➕ Follow', () => social('follow', 4)],
     ['↗ Share', () => social('share', 5)],
-    ['🍺 Bia 1💎', () => gift(1, 0)],
-    ['🍸 Cocktail 5💎', () => gift(5, 1)],
-    ['🥂 Champagne 30💎', () => gift(30, 2)],
-    ['🍾 Tháp ly 199💎', () => gift(199, 3)],
-    ['🎉 Mở tiệc 500💎', () => gift(500, 4)]
+    ['🌹 Hoa hồng → Bia', () => gift('rose', 0)],
+    ['🍩 Bánh donut → Cocktail', () => gift('doughnut', 1)],
+    ['🐶 Corgi → Champagne', () => gift('corgi', 2)],
+    ['🌌 Dải ngân hà → Tháp ly', () => gift('galaxy', 3)],
+    ['🏎️ Siêu xe → Mở tiệc', () => gift('sports-car', 4)],
+    ['🦁 Sư tử → Đại tiệc', () => ({ ...gift('lion', 5), wait: 9000 })]
   ],
   swim: [
     ['💬 “cố lên”', () => chat('cố lên', 0)],
     ['❤ Thả tim → vịt phao', () => like(1)],
     ['➕ Follow → ván lướt', () => social('follow', 2)],
-    ['🦶 Chân vịt 1💎', () => gift(1, 3)],
-    ['🏄 Ván lướt 5💎', () => gift(5, 4)],
-    ['⛵ Thuyền 10💎', () => gift(10, 5)],
-    ['🐬 Cá heo 30💎', () => gift(30, 0)],
-    ['🦈 Cá mập 99💎', () => gift(99, 1)],
-    ['🐋 Cá voi 199💎', () => gift(199, 2)],
-    ['🚢 Tàu ngầm 500💎', () => gift(500, 3)],
-    ['🏁 Về đích ngay', () => gift(500, 4, 3)]
+    ['🌹 Hoa hồng → Chân vịt', () => gift('rose', 3)],
+    ['🫰 Bắn tim → Ván lướt', () => gift('finger-heart', 4)],
+    ['💐 Rosa → Thuyền', () => gift('rosa', 5)],
+    ['🍩 Bánh donut → Cá heo', () => gift('doughnut', 0)],
+    ['🐶 Corgi → Cá mập', () => gift('corgi', 1)],
+    ['🌌 Dải ngân hà → Cá voi', () => gift('galaxy', 2)],
+    ['🏎️ Siêu xe → Tàu ngầm', () => gift('sports-car', 3)],
+    ['🦁 Sư tử → Về đích ngay', () => gift('lion', 4)]
   ],
   temple: [
-    ['🔥 “thắp hương”', () => ({ ...chat('thắp hương', 0), wait: 9000 })],
     ['🪷 “cầu …” thả hoa đăng', () => chat('cầu cho gia đình bình an mạnh khoẻ', 1)],
-    ['💘 “cầu hết ế”', () => chat('cầu năm nay hết ế', 2)],
-    ['🎋 “xin xăm”', () => ({ ...chat('xin xăm', 3), wait: 9000 })],
+    ['💬 Gõ “xin xăm” (chỉ được nhắc tặng quà)', () => chat('xin xăm', 2)],
     ['❤ Thả tim → gõ mõ', () => like(4)],
     ['🔔 Follow → thỉnh chuông', () => social('follow', 5)],
-    ['🪷 Cầu bình an 1💎', () => ({ ...gift(1, 0), wait: 7000 })],
-    ['🏮 Cầu sức khỏe 10💎', () => ({ ...gift(10, 1), wait: 7000 })],
-    ['🍊 Cầu tài lộc 30💎', () => ({ ...gift(30, 2), wait: 7000 })],
-    ['💘 Điều ước lớn 199💎', () => ({ ...gift(199, 3), wait: 9000 })],
-    ['✨ Vạn sự như ý 500💎', () => ({ ...gift(500, 4), wait: 14000 })]
+    ['🌹 Hoa hồng ×3 → Thắp hương', () => ({ ...gift('rose', 0, 3), wait: 9000 })],
+    ['🍩 Bánh donut → Xin xăm', () => ({ ...gift('doughnut', 3), wait: 10000 })],
+    ['🐶 Corgi → Cầu sức khỏe', () => ({ ...gift('corgi', 1), wait: 7000 })],
+    ['🌌 Dải ngân hà → Cầu tài lộc', () => ({ ...gift('galaxy', 2), wait: 7000 })],
+    ['🏎️ Siêu xe → Điều ước lớn', () => ({ ...gift('sports-car', 4), wait: 10000 })],
+    ['🦁 Sư tử → Vạn sự như ý', () => ({ ...gift('lion', 5), wait: 18000 })]
   ]
 };
 

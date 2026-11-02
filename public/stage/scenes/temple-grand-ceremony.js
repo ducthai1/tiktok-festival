@@ -66,21 +66,24 @@ export function createGrandCeremony({ scene, hall, particles, soft, audio, hud, 
   }
 
   return {
-    /** level: 'ceremony' | 'grand' */
+    /** level: 'ceremony' (Siêu xe…) | 'grand' (Tên lửa, Sư tử, Vũ trụ — món lớn nhất) */
     start(level, fx) {
       const grand = level === 'grand';
+      const legend = grand;
       threeBows();
-      helpers.boostHalo(grand ? 10 : 7);
-      petalRain(grand ? 260 : 170);
+      if (legend) later(6.6, threeBows); // món quà lớn nhất: lạy thêm một tuần chuông nữa
+      helpers.boostHalo(legend ? 15 : grand ? 10 : 7);
+      petalRain(legend ? 300 : grand ? 260 : 170);
       const wish = bigWish(level);
-      hud.banner(`${wish.icon} ${wish.title} ${wish.icon}`, `${fx.nickname} · ${fx.giftName} ×${fx.count}`, grand ? 7000 : 5000);
+      hud.banner(`${wish.icon} ${wish.title} ${wish.icon}`, `${fx.nickname} · ${fx.giftName} ×${fx.count}`, legend ? 10000 : grand ? 7000 : 5000);
       audio.speak(`${fx.nickname} cầu ${wish.spoken}`);
       if (grand) {
         audio.play('gong');
         bloomGiantLotus();
-        later(1.5, () => releaseSkyLanterns(18));
+        later(1.5, () => releaseSkyLanterns(legend ? 28 : 18));
         later(5, () => petalRain(170));
-        push = { start: clock, until: clock + 12 };
+        if (legend) later(9, () => petalRain(200));
+        push = { start: clock, until: clock + (legend ? 16 : 12) };
       }
     },
     // Camera tiến vào rồi lùi ra êm khi có quà lớn nhất (0 = vị trí thường).

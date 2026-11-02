@@ -20,6 +20,17 @@ const hud = createHud();
 const labels = createLabelLayer(document.getElementById('labels'));
 const audio = createStageAudio();
 let settings = { legend: true };
+// quà đại diện từng bậc (server gửi: quà thật của phòng khi đang live, quà mẫu khi chưa)
+let giftTiers = [];
+// Bảng chú thích = dòng thường của cảnh (tim, follow…) + mỗi bậc quà: ảnh 2 món quà thật + điều nó làm
+function legendFor(scene) {
+  if (!scene) return [];
+  const rows = [...(scene.legend || [])];
+  if (scene.giftLabels) {
+    for (const { tier, gifts } of giftTiers) if (gifts.length && scene.giftLabels[tier]) rows.push([gifts, ` ${scene.giftLabels[tier]}`]);
+  }
+  return rows;
+}
 // Khung xem trước trong trang điều khiển: tắt tiếng để không đọc/kêu trùng với nguồn OBS.
 const isPreview = new URLSearchParams(location.search).has('preview');
 let previewSound = false; // trang điều khiển bật "Nghe ở khung xem trước"
@@ -71,7 +82,7 @@ async function switchScene(id) {
   stageEl.classList.remove('theme-bar', 'theme-swim', 'theme-temple');
   stageEl.classList.add(`theme-${id}`);
   audio.setTheme(id);
-  hud.setLegend(current.legend || [], settings.legend !== false);
+  hud.setLegend(legendFor(current), settings.legend !== false);
   if (latest?.game === id) current.update(latest);
   fadeEl.classList.remove('on');
 }
@@ -110,10 +121,11 @@ connectLiveSocket({
   onOpen: () => hud.setOffline(false),
   onClose: () => hud.setOffline(true),
   onMessage(message) {
-    if (message.t === 'hello' || message.t === 'settings') {
+    if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
+      if (message.giftTiers || message.tiers) giftTiers = message.giftTiers || message.tiers;
       applyAudio();
-      if (current) hud.setLegend(current.legend || [], settings.legend !== false);
+      if (current) hud.setLegend(legendFor(current), settings.legend !== false);
     } else if (message.t === 'state') onState(message);
     else if (message.t === 'fx' && message.game === currentId && current) {
       for (const fx of message.list) {

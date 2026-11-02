@@ -10,17 +10,16 @@ Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm m�
 
 ## Hiệu ứng theo chức năng — quà càng lớn màn càng hoành tráng
 
-| Bậc quà | 🍸 Quán Bar | 🏊 Đua bơi | 🪷 Chùa |
+| Bậc quà (giá một món) | 🍸 Quán Bar | 🏊 Đua bơi | 🪷 Chùa |
 |---|---|---|---|
-| 1💎 | Bia: bartender rót, cốc bay tới tay khách, khách nâng ly | Chân vịt: bơi nhanh ×1,8 | Cầu bình an: người tặng đi lên bàn thờ, nâng hoa quá đầu, hoa bay đặt lên bàn thờ |
-| 5💎 | Cocktail: lắc bình mạnh, rót dòng màu | Ván lướt nảy trên sóng | Cầu sức khỏe: thắp đèn, cả dãy đèn trên bàn thờ lần lượt sáng |
-| 10💎 | | Thuyền rẽ sóng để vệt bọt | |
-| 30💎 | Champagne: bật nút, bọt vàng phun, đèn rọi khách | Cá heo nhảy vòng cung | Cầu tài lộc: dâng mâm ngũ quả, chuông ngân, mưa cánh hoa |
-| 99💎 | | Cá mập lộ vây rồi lao lên | |
-| 100–199💎 | Tháp champagne: xếp từng ly, rót tràn, cả quán nâng ly | Cá voi phóng vọt khỏi mặt nước, camera rung | Điều ước lớn: băng rôn + giọng đọc lời cầu của người tặng (hết ế, tiền vào như nước, thăng chức…), cả chánh điện lạy 3 lạy theo 3 hồi chuông |
-| 500💎 | Mở tiệc: pháo giấy, laser, đèn chớp nhẹ, pháo hoa | Tàu ngầm trồi lên kèm còi | Vạn sự như ý: sen vàng nở giữa lối, hoa đăng bay khắp chánh điện, camera tiến vào |
+| 1 · Hoa hồng… | Bia: bartender rót, cốc bay tới tay khách, khách nâng ly | Chân vịt bơi nhanh ×1,8 / Ván lướt nảy trên sóng | Thắp hương: người tặng lên bên lư, nâng hương, vái 3 vái, cắm hương |
+| 2 · Bánh donut… | Cocktail: lắc bình mạnh, rót dòng màu | Thuyền rẽ sóng / Cá heo nhảy vòng cung | Xin xăm: lắc ống xăm tới khi que văng ra, mở tờ quẻ |
+| 3 · Corgi… | Champagne: bật nút, bọt vàng phun, đèn rọi khách | Cá mập lộ vây rồi lao lên | Cầu sức khỏe: thắp đèn, cả dãy đèn bàn thờ lần lượt sáng |
+| 4 · Dải ngân hà… | Tháp champagne: xếp từng ly, rót tràn, cả quán nâng ly | Cá voi phóng vọt khỏi mặt nước, camera rung | Cầu tài lộc: dâng mâm ngũ quả, chuông ngân, mưa cánh hoa |
+| 5 · Siêu xe… | Mở tiệc: pháo giấy, laser, đèn chớp nhẹ, pháo hoa | Tàu ngầm trồi lên kèm còi | Điều ước lớn: băng rôn + giọng đọc lời cầu của người tặng, cả chánh điện lạy 3 lạy theo 3 hồi chuông |
+| 6 · Sư tử, Tên lửa, Vũ trụ | Đại tiệc: pháo hoa gấp đôi | Tàu ngầm đẩy 3 lần | Vạn sự như ý: sen vàng nở giữa lối, hoa đăng bay khắp chánh điện, lạy 2 tuần chuông, camera tiến vào |
 
-**Bình luận ở chùa** đều là nghi thức có đầu có cuối:
+**Nghi thức ở chùa** đều có đầu có cuối (thắp hương và xin xăm mở bằng quà, xem mục Quà TikTok thật):
 - *Thắp hương*: người đó đứng dậy, cầm 3 nén hương tới bên lư, thắp, nâng lên trán, vái 3 vái, cắm hương rồi về chỗ quỳ.
 - *Cầu …*: chắp tay, thả hoa đăng mang lời cầu từ tay.
 - *Xin xăm*: lắc ống xăm tới khi que xăm văng ra thì tờ quẻ mới mở.
@@ -110,6 +109,23 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 | `EULER_API_KEY` | trống | Khoá Euler Stream nếu bị giới hạn lượt kết nối |
 | `TIKFINITY_WS_URL` | `ws://127.0.0.1:21213/` | Chỉ nhận địa chỉ trên chính máy này |
 | `START_GAME` | `bar` | `bar` / `swim` / `temple` |
+
+## Quà TikTok thật → hiệu ứng
+
+Hiệu ứng chọn theo **giá của MỘT món quà** (xu TikTok gửi kèm sự kiện), không theo tổng: 1 Sư tử khác hẳn 30.000 Hoa hồng; số lượng (combo) chỉ làm hiệu ứng dày hơn và được cộng dồn trên cùng một dòng thông báo (×1 → ×2 → ×3) nếu cùng người, cùng quà. Bậc (`public/shared/gift-tiers.js`):
+
+| Bậc | Giá một món | Ví dụ quà | 🍸 Bar | 🏊 Bơi | 🪷 Chùa |
+|---|---|---|---|---|---|
+| 1 | 1–9 xu | Hoa hồng, TikTok, GG, Bắn tim | Bia | Chân vịt / Ván lướt | Thắp hương |
+| 2 | 10–98 | Rosa, Nước hoa, Bánh donut | Cocktail | Thuyền / Cá heo | Xin xăm |
+| 3 | 99–498 | Mũ, Tay tim, Pháo giấy, Corgi | Champagne | Cá mập | Cầu sức khỏe |
+| 4 | 499–4.999 | Thiên nga, Dải ngân hà, Pháo hoa | Tháp ly | Cá voi | Cầu tài lộc |
+| 5 | 5.000–19.999 | Siêu xe, Liên hành tinh | Mở tiệc | Tàu ngầm | Điều ước lớn |
+| 6 | ≥ 20.000 | Tên lửa, Sư tử, Vũ trụ | Đại tiệc pháo hoa | Tàu ngầm ×3 | Vạn sự như ý |
+
+Khi nối live (nguồn tiktok-live-connector), server đọc **danh mục quà của chính phòng đó** (tên, giá, ảnh) và bảng "Cách tham gia" hiện ảnh quà thật cho từng bậc; giá theo vùng hay quà mới vẫn vào đúng bậc vì dùng giá thật. Chưa nối live thì dùng quà mẫu (giá phổ biến, có thể lệch theo vùng).
+
+Ở chùa, nghi thức dài (thắp hương, xin xăm) chỉ mở bằng quà; gõ chữ "thắp hương"/"xin xăm" chỉ hiện bong bóng nhắc tặng quà (mỗi người 1 lần / 30 giây). Lời cầu bằng chữ (`cầu …`) vẫn có nhưng cả chánh điện tối đa 1 hoa đăng / 5 giây.
 
 ## Bố cục màn hình theo giao diện TikTok LIVE
 

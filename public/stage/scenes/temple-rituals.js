@@ -51,7 +51,8 @@ export function createTempleRituals(ctx) {
 
   return {
     incense(fx) {
-      hud.toast(`🔥 ${fx.nickname} thắp ${fx.sticks} nén hương`);
+      hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — 🔥 lên thắp hương`, { image: fx.giftPicture });
+      if (crowd.busy(fx.userId)) return void helpers.addIncense(fx.sticks); // đang thắp dở: cắm thêm hương, không diễn lại
       // đứng ngang hàng lư, một bên, mặt quay vào lư: camera thấy nghiêng người, rõ tay nâng hương và vái
       const side = Math.random() < 0.5 ? -1 : 1;
       const facing = Math.atan2(-side, -0.12);
@@ -103,14 +104,17 @@ export function createTempleRituals(ctx) {
           { run: (e) => e.prop.userData.light() },
           { pose: 'bowStand', seconds: 6.6, facing: PI, onTick: smokeFromTips },
           { run: (e) => { dropProp(e); helpers.addIncense(9); } },
-          merit(fx.offering === 'grand' ? 5000 : 1000)
+          merit(fx.offering === 'ceremony' ? 5000 : 30000)
         ]);
         return;
       }
       const kind = OFFERINGS[fx.offering] ? fx.offering : 'lotus';
       const o = OFFERINGS[kind];
       const tier = TIERS[kind];
-      hud.toast(`${tier.icon} ${fx.nickname} ${tier.verb} cầu ${smallWish(kind)} (${fx.giftName} ×${fx.count})`, { gold: kind !== 'lotus' });
+      const wish = smallWish(kind);
+      hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — ${tier.verb} cầu ${wish}`,
+        { gold: kind !== 'lotus', image: fx.giftPicture });
+      if (crowd.busy(fx.userId)) return void o.effect(); // đang dâng lễ dở: tặng thêm chỉ cộng dồn, không đi lại từ đầu
       crowd.perform(fx.userId, [
         holdProp(o.make),
         ...toAltar(),

@@ -6,11 +6,12 @@ import { createAdminCommandHandler } from './admin-command-handler.js';
 import { loadOrCreateAdminToken } from './admin-token-store.js';
 import { DATA_DIR, PUBLIC_DIR, ROOT_DIR } from './config.js';
 import { createGameHub } from './games/game-hub.js';
-import { isAllowedHost, securityHeaders } from './http/security.js';
+import { isAllowedHost, safeImageUrl, securityHeaders } from './http/security.js';
 import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
+import { SAMPLE_GIFTS, tierRepresentatives } from '../public/shared/gift-tiers.js';
 
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6,
@@ -33,6 +34,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });
   let port = config.port;
   let lastStateText = '';
+  let giftTiers = tierRepresentatives(SAMPLE_GIFTS, 3); // quà đại diện từng bậc; nối live thì thay bằng quà thật của phòng
 
   const updateSettings = (patch) => {
     Object.assign(settings, patch);
@@ -70,6 +72,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onStatus(status) {
       sockets.broadcast({ t: 'live', status });
+    },
+    onCatalog(list) {
+      giftTiers = tierRepresentatives(list.map((g) => ({ ...g, image: safeImageUrl(g.image) })), 3);
+      sockets.broadcast({ t: 'gifts', tiers: giftTiers });
     }
   });
 
@@ -80,7 +86,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     adminToken,
     onAdminMessage: handleAdmin,
     onClientReady(ws) {
-      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status() });
+      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts: SAMPLE_GIFTS });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
     }

@@ -1,6 +1,7 @@
 // QUÁN BAR — người xem bình luận/tặng quà là có chỗ trong quán (6 ghế quầy + 16 ô sàn nhảy).
 // Quà = gọi đồ uống, thả tim + bình luận làm đầy "độ quẩy"; đầy thì cả quán mở tiệc.
 import { containsPhrase, createCooldown, isCleanForDisplay } from './text-match.js';
+import { giftTier } from '../../public/shared/gift-tiers.js';
 
 export const BAR_SEATS = 22; // ghế 0–5 là quầy, 6–21 là sàn nhảy
 const IDLE_LEAVE_MS = 6 * 60 * 1000;
@@ -13,13 +14,10 @@ export const VIBE_GOAL = 1000;
 const DANCE_WORDS = ['nhay', 'dance', 'quay', 'quay len', 'bung', 'phe'];
 const CHEERS_WORDS = ['cung ly', 'nang ly', 'cheers', 'zo', 'dzo', 'yo', 'mot hai ba zo', 'tram phan tram'];
 
-export function drinkForDiamonds(diamonds) {
-  if (diamonds >= 500) return 'party';
-  if (diamonds >= 100) return 'tower';
-  if (diamonds >= 30) return 'champagne';
-  if (diamonds >= 5) return 'cocktail';
-  return 'beer';
-}
+// Đồ uống theo bậc của MỘT món quà (xem public/shared/gift-tiers.js): Hoa hồng → bia … Siêu xe → mở tiệc;
+// Tên lửa / Sư tử / Vũ trụ (bậc 6) → mở tiệc lớn (pháo hoa gấp đôi).
+const DRINK_BY_TIER = ['beer', 'cocktail', 'champagne', 'tower', 'party', 'party'];
+export const drinkForGift = (coinsEach) => DRINK_BY_TIER[giftTier(coinsEach) - 1];
 
 export function createBarClubGame({ random = Math.random } = {}) {
   const patrons = new Map();
@@ -86,16 +84,18 @@ export function createBarClubGame({ random = Math.random } = {}) {
     const { gift, user } = event;
     spenders.set(user.id, (spenders.get(user.id) || 0) + gift.diamonds);
     const patron = ensurePatron(user, now, fx, { canEvict: true });
-    const drink = drinkForDiamonds(gift.diamonds);
+    const tier = giftTier(gift.diamondsEach);
+    const drink = drinkForGift(gift.diamondsEach);
     if (patron) {
       patron.drink = drink === 'party' || drink === 'tower' ? 'champagne' : drink;
       patron.drinkUntil = now + DRINK_MS;
       patron.cheersUntil = now + CHEERS_MS;
     }
-    fx.push({ kind: 'drink', userId: user.id, nickname: user.nickname, drink, giftName: gift.name, count: gift.count, diamonds: gift.diamonds });
+    fx.push({ kind: 'drink', userId: user.id, nickname: user.nickname, drink, giftName: gift.name, giftPicture: gift.pictureUrl,
+      count: gift.count, diamonds: gift.diamonds, tier });
     if (drink === 'tower' || drink === 'party') {
       for (const p of patrons.values()) p.cheersUntil = now + CHEERS_MS;
-      fx.push({ kind: 'fireworks', power: drink === 'party' ? 3 : 1 });
+      fx.push({ kind: 'fireworks', power: tier >= 6 ? 6 : drink === 'party' ? 3 : 1 });
     }
     if (drink === 'party') startParty(now, fx);
     else addVibe(gift.diamonds * 10, now, fx);

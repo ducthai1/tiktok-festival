@@ -4,12 +4,12 @@
 // Không bao giờ hỏi/lưu sessionid, cookie hay mật khẩu TikTok của streamer.
 import { TikTokLiveConnection } from 'tiktok-live-connector';
 import WebSocket from 'ws';
-import { normalizeConnectorEvent } from './normalize-tiktok-connector.js';
+import { normalizeConnectorEvent, normalizeGiftCatalog } from './normalize-tiktok-connector.js';
 import { normalizeTikFinityMessage } from './normalize-tikfinity.js';
 
 const CONNECTOR_EVENTS = ['chat', 'gift', 'like', 'member', 'follow', 'share', 'roomUser'];
 
-export function createTikTokConnectorProvider({ username, apiKey, emit, onDisconnected, onEnded }) {
+export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalog = () => {}, onDisconnected, onEnded }) {
   let connection = null;
   return {
     async start() {
@@ -26,6 +26,13 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onDiscon
       connection.on('streamEnd', () => onEnded());
       connection.on('disconnected', () => onDisconnected('mất kết nối'));
       const state = await connection.connect();
+      // enableExtendedGiftInfo đã tải danh mục quà của phòng lúc kết nối: tên + giá thật + ảnh
+      try {
+        const catalog = normalizeGiftCatalog(connection.availableGifts);
+        if (catalog.length) onCatalog(catalog);
+      } catch (error) {
+        console.warn('[tiktok] không đọc được danh mục quà:', error?.message || error);
+      }
       return { roomId: String(state?.roomId || '') };
     },
     async stop() {

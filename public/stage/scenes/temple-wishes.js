@@ -25,7 +25,9 @@ export const TIERS = {
     wishes: [
       ['✨', 'VẠN SỰ NHƯ Ý', 'vạn sự như ý'],
       ['🧧', 'PHÚ QUÝ ĐẦY NHÀ', 'phú quý đầy nhà'],
-      ['🌟', 'TIỀN TÀI ĐẦY TÚI', 'tiền tài đầy túi, tình duyên như ý, sức khỏe dồi dào']
+      ['🌟', 'TIỀN TÀI ĐẦY TÚI', 'tiền tài đầy túi, tình duyên như ý, sức khỏe dồi dào'],
+      ['👑', 'ƯỚC GÌ ĐƯỢC NẤY', 'ước gì được nấy'],
+      ['💎', 'ĐẠI CÁT ĐẠI LỢI', 'đại cát đại lợi, tiền tài như nước']
     ]
   }
 };
@@ -39,8 +41,6 @@ export function bigWish(tier) {
   return { icon, title, spoken };
 }
 
-/** Chú thích quà cho bảng "Cách tham gia". */
-export const giftLegend = () => [
-  ['1💎', ` ${TIERS.lotus.legend}`], ['5💎', ` ${TIERS.lamp.legend}`], ['30💎', ` ${TIERS.fruit.legend}`],
-  ['100💎', ` ${TIERS.ceremony.legend}`], ['500💎', ` ${TIERS.grand.legend}`]
-];
+/** Nhãn từng bậc quà (1..6) cho bảng "Cách tham gia" — màn hình ghép ảnh quà thật vào trước. */
+export const giftLabels = () => ({ 1: 'Thắp hương', 2: 'Xin xăm', 3: TIERS.lamp.legend, 4: TIERS.fruit.legend,
+  5: TIERS.ceremony.legend, 6: TIERS.grand.legend });

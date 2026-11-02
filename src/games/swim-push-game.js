@@ -3,6 +3,7 @@
 // (vịt phao, ván lướt, thuyền, cá heo, cá mập, cá voi, tàu ngầm) để đẩy/phá tường.
 // Thắng đủ WIN_TARGET vòng là VÔ ĐỊCH. Thiết kế số liệu riêng, không lấy từ bản tham khảo.
 import { containsPhrase, createCooldown } from './text-match.js';
+import { giftTier } from '../../public/shared/gift-tiers.js';
 
 export const GOAL_METERS = 1000;
 export const WIN_TARGET = 7;
@@ -20,8 +21,8 @@ const WALLS = [
 
 // Trợ thủ theo giá MỘT món quà (kim cương/món); push = mét khi đường trống, = sát thương khi gặp tường.
 export const HELPERS = [
-  { min: 499, helper: 'submarine', label: 'Tàu ngầm', push: 600 },
-  { min: 199, helper: 'whale', label: 'Cá voi', push: 350 },
+  { min: 5000, helper: 'submarine', label: 'Tàu ngầm', push: 600 },
+  { min: 499, helper: 'whale', label: 'Cá voi', push: 350 },
   { min: 99, helper: 'shark', label: 'Cá mập', push: 150 },
   { min: 30, helper: 'dolphin', label: 'Cá heo', push: 90 },
   { min: 10, helper: 'boat', label: 'Thuyền', push: 50 },
@@ -113,7 +114,9 @@ export function createSwimPushGame() {
       if (celebrateUntil || paused) return fx;
       const { user } = event;
       if (event.type === 'gift') {
-        sendHelper(user, helperForGift(event.gift.diamondsEach || 1), event.gift.count, fx, now);
+        // Tên lửa / Sư tử / Vũ trụ (bậc 6): tàu ngầm đẩy 3 lần mỗi món
+        const boost = giftTier(event.gift.diamondsEach) >= 6 ? 3 : 1;
+        sendHelper(user, helperForGift(event.gift.diamondsEach || 1), event.gift.count * boost, fx, now);
       } else if (event.type === 'like') {
         sendHelper(user, DUCK, Math.min(3, Math.ceil(event.likeCount / 5)), fx, now);
       } else if (event.type === 'follow' || event.type === 'share') {
