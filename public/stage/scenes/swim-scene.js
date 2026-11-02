@@ -100,7 +100,7 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
     walls.delete(at);
   }
 
-  function spawnHelper(fx, index) {
+  function spawnHelper(fx, index, labelEach = false) {
     const group = buildHelper(fx.helper);
     const side = index % 2 ? 1 : -1;
     const length = HELPER_LENGTH[fx.helper] || 2;
@@ -109,11 +109,16 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
     scene.add(group);
     const id = `helper-${clock.toFixed(3)}-${index}-${Math.random().toString(36).slice(2, 6)}`;
     helpers.push({ id, group, side, born: clock, length, pushed: false, fx });
-    if (index === 0) labels.sync(id, { anchor: group, nickname: `${fx.nickname} · ${fx.label}`, avatar: fx.avatar, small: true, offsetY: fx.helper === 'whale' ? 3 : 1.6 });
+    if (index === 0 || labelEach) labels.sync(id, { anchor: group, nickname: `${fx.nickname} · ${fx.label}`, avatar: fx.avatar, small: true, offsetY: fx.helper === 'whale' ? 3 : 1.6 });
   }
 
   function onPush(h) {
     h.pushed = true;
+    if (!h.fx.push) {
+      audio.play('pop'); // vịt chào người mới: không đẩy, chỉ té nước vui
+      particles.burst({ position: h.group.position.clone().setY(0.3), count: 20, colors: ['#ffffff', '#bff3ff'], speed: 3, gravity: -9, life: 0.8, size: 0.18 });
+      return;
+    }
     surge = Math.min(1.2, surge + 0.35 + Math.min(0.8, h.fx.push / 400));
     audio.play(h.fx.push >= 150 ? 'splash' : 'whoosh');
     particles.burst({ position: new THREE.Vector3(0, 0.3, 0.6), count: 50 + Math.min(150, h.fx.push), colors: ['#ffffff', '#bff3ff'], speed: 5, spread: 0, gravity: -9, life: 1, size: 0.22 });
@@ -136,7 +141,15 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
       hud.setStats([`🏆 ${state.wins} / ${state.winTarget}`, `💎 ${formatNumber(snapshot.totals.diamonds)}`]);
       hud.setBoard('ĐỒNG ĐỘI', state.contributors.map((c) => ({ ...c, score: `${formatNumber(c.meters)} m` })));
     },
+    welcome: { line: 'vừa vào đường đua! Thả tim để gọi vịt phao 🦆', speech: (n) => `Chào mừng ${n} đến đường đua!` },
     onFx(fx) {
+      if (fx.kind === 'welcome') {
+        // Mỗi người mới một chú vịt phao mang tên mình bơi ra chào (không tính vào quãng đường).
+        const people = fx.mode === 'group' ? fx.people : [fx];
+        people.forEach((person, i) => setTimeout(() => spawnHelper({ helper: 'duck', label: 'vừa vào 👋', push: 0,
+          nickname: person.nickname, avatar: person.avatar }, i, true), i * 150));
+        return;
+      }
       if (fx.kind === 'helper') {
         if (fx.helper === 'flipper') {
           audio.play('chime');

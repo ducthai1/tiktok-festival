@@ -12,7 +12,9 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 
-const DEFAULT_SETTINGS = { activeGame: '', provider: 'tiktok', username: '', tts: false, legend: true, sound: true, volume: 0.6 };
+const DEFAULT_SETTINGS = {
+  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6, welcomeTextAbove: 1000
+};
 
 function loadSettings(dataDir) {
   try {
@@ -27,7 +29,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   fs.mkdirSync(dataDir, { recursive: true });
   const adminToken = loadOrCreateAdminToken(dataDir);
   const settings = loadSettings(dataDir);
-  const hub = createGameHub({ startGame: settings.activeGame || config.startGame });
+  const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });
   let port = config.port;
   let lastStateText = '';
 
@@ -36,7 +38,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     fs.writeFileSync(path.join(dataDir, 'settings.json'), JSON.stringify(settings, null, 2));
     sockets.broadcast({ t: 'settings', settings: publicSettings() });
   };
-  const publicSettings = () => ({ tts: settings.tts, legend: settings.legend, sound: settings.sound, volume: settings.volume });
+  const publicSettings = () => ({
+    tts: settings.tts, ttsWelcome: settings.ttsWelcome, legend: settings.legend, sound: settings.sound, volume: settings.volume,
+    welcomeTextAbove: settings.welcomeTextAbove
+  });
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
   };
@@ -55,6 +60,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onEvent(event) {
       emitFx(hub.activeId(), hub.handleEvent(event));
+      if (event.type === 'viewers') return;
       const text = event.type === 'chat' ? event.comment : event.type === 'gift'
         ? `${event.gift.name} ×${event.gift.count} (${event.gift.diamonds}💎)` : event.type === 'like' ? `${event.likeCount} tim` : '';
       sockets.broadcast({ t: 'log', event: { type: event.type, nickname: event.user.nickname, text, simulated: event.simulated } },

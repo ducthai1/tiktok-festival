@@ -7,7 +7,7 @@ import WebSocket from 'ws';
 import { normalizeConnectorEvent } from './normalize-tiktok-connector.js';
 import { normalizeTikFinityMessage } from './normalize-tikfinity.js';
 
-const CONNECTOR_EVENTS = ['chat', 'gift', 'like', 'member', 'follow', 'share'];
+const CONNECTOR_EVENTS = ['chat', 'gift', 'like', 'member', 'follow', 'share', 'roomUser'];
 
 export function createTikTokConnectorProvider({ username, apiKey, emit, onDisconnected, onEnded }) {
   let connection = null;

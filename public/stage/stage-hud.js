@@ -86,6 +86,36 @@ export function createHud() {
       clearTimeout(root.timer);
       root.timer = setTimeout(() => { root.hidden = true; }, f.durationMs || 10000);
     },
+    // Thẻ chào một người (mode full) hoặc cả đoàn (mode group). Thẻ mới thay thẻ cũ.
+    welcome(fx, line) {
+      const root = $('welcome');
+      const group = fx.mode === 'group';
+      const people = group ? fx.people : [fx];
+      root.className = group ? 'group' : '';
+      const shown = people.slice(0, group ? 18 : 1);
+      const avatars = shown.map((p) => avatarNode(p.avatar));
+      if (people.length > shown.length) avatars.push(el('div', 'ava more', `+${people.length - shown.length}`));
+      root.querySelector('.welcome-avatars').replaceChildren(...avatars);
+      root.querySelector('.kicker').textContent = group ? `🎉 CHÀO MỪNG ${people.length} BẠN MỚI` : '👋 CHÀO MỪNG';
+      root.querySelector('.name').textContent = group ? people.map((p) => p.nickname).join(' · ') : fx.nickname;
+      root.querySelector('.line').textContent = line || 'vừa vào phòng!';
+      root.hidden = false;
+      void root.offsetWidth; // chạy lại hiệu ứng xuất hiện cho thẻ kế tiếp
+      root.classList.add('show');
+      clearTimeout(root.timer);
+      root.timer = setTimeout(() => {
+        root.classList.replace('show', 'hide');
+        root.timer = setTimeout(() => { root.hidden = true; }, 320);
+      }, Math.max(1200, (fx.durationMs || 2600) - 300));
+    },
+    // Phòng quá đông: mỗi người mới một dòng chữ nhỏ bên phải.
+    welcomeLine(nickname) {
+      const root = $('welcome-ticker');
+      const line = el('div', 'ticker-line', `👋 ${nickname} vừa vào`);
+      root.prepend(line);
+      while (root.children.length > 5) root.lastChild.remove();
+      setTimeout(() => line.remove(), 4500);
+    },
     hideFortune() {
       $('fortune').hidden = true;
     },
@@ -100,6 +130,8 @@ export function createHud() {
       toastRoot.replaceChildren();
       $('banner').classList.remove('show');
       this.hideFortune();
+      $('welcome').hidden = true;
+      $('welcome-ticker').replaceChildren();
       lastBoardKey = '';
     }
   };

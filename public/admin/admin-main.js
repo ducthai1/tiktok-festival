@@ -1,5 +1,6 @@
 // Trang điều khiển: đăng nhập bằng token, kết nối live, đổi game, thử, cài đặt màn hình.
 import { connectLiveSocket } from '/static/shared/live-socket-client.js';
+import { setupTestPanel } from './admin-test-panel.js';
 
 const $ = (id) => document.getElementById(id);
 const GAME_ICONS = { bar: '🍸', swim: '🏊', temple: '🪷' };
@@ -8,8 +9,6 @@ const GAME_COMMANDS = {
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
   temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']]
 };
-const TEST_CHATS = { bar: ['chào cả quán', 'nhảy', 'cụng ly'], swim: ['cố lên', 'bơi đi'], temple: ['thắp hương', 'cầu cho gia đình bình an', 'xin xăm'] };
-const GIFT_TIERS = [1, 5, 10, 30, 99, 199, 500];
 
 let token = '';
 let authed = false;
@@ -98,14 +97,7 @@ function renderCommands() {
     b.addEventListener('click', () => run({ t: 'command', game: activeGame, name }));
     return b;
   }));
-  $('test-chats').replaceChildren(...(TEST_CHATS[activeGame] || []).map((text) => {
-    const b = document.createElement('button');
-    b.type = 'button';
-    b.className = 'chip';
-    b.textContent = `💬 ${text}`;
-    b.addEventListener('click', () => sendTest({ kind: 'chat', comment: text }));
-    return b;
-  }));
+  testPanel.renderChats(activeGame);
 }
 
 function renderState(m) {
@@ -119,6 +111,9 @@ function renderState(m) {
     li.textContent = `${r.nickname} — ${r.diamonds}💎 · ${r.likes}❤`;
     return li;
   }));
+  const v = m.viewers || {};
+  $('viewers-status').textContent = `👀 ${v.count || 0} người xem · đang chờ chào: ${v.waiting || 0} · `
+    + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
   const t = m.totals;
   $('totals').textContent = `Phiên này: ${t.viewers} người · ${t.diamonds}💎 · ${t.likes}❤ · ${t.chats} bình luận · ${t.follows} follow · ${t.shares} share`;
 }
@@ -130,7 +125,7 @@ function renderLive(status) {
   el.className = `status ${status.state}`;
   el.textContent = status.message;
   const locked = liveState === 'connected';
-  for (const b of document.querySelectorAll('[data-test], #test-crowd, #test-chats button, #test-gifts button, #test-chat-form button')) b.disabled = locked;
+  for (const b of document.querySelectorAll('[data-test], [id^="test-"] button, #test-crowd, [id^="test-arrive"]')) b.disabled = locked;
   $('test-note').textContent = locked ? 'Đang live thật: nút thử bị khoá để không lẫn tương tác giả vào buổi live.' : 'Sự kiện thử hiện nhãn “CHẾ ĐỘ THỬ” trên màn hình.';
 }
 
@@ -140,6 +135,8 @@ function applySettings(s) {
   $('set-tts').checked = s.tts === true;
   $('set-legend').checked = s.legend !== false;
   $('set-volume').value = String(s.volume ?? 0.6);
+  $('set-ttsWelcome').checked = s.ttsWelcome === true;
+  if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
 }
 
 function appendLog(e) {
@@ -152,35 +149,20 @@ function appendLog(e) {
   while ($('log').children.length > 80) $('log').lastChild.remove();
 }
 
-const viewer = () => Number($('test-viewer').value) || 1;
-const sendTest = (payload) => run({ t: 'test', viewer: viewer(), ...payload }, 'Đã gửi thử');
-
-$('test-gifts').replaceChildren(...GIFT_TIERS.map((d) => {
-  const b = document.createElement('button');
-  b.type = 'button';
-  b.className = 'chip';
-  b.textContent = `🎁 ${d}💎`;
-  b.addEventListener('click', () => sendTest({ kind: 'gift', diamonds: d }));
-  return b;
-}));
-for (const b of document.querySelectorAll('[data-test]')) b.addEventListener('click', () => sendTest({ kind: b.dataset.test, likes: 10 }));
-$('test-crowd').addEventListener('click', async () => {
-  for (let i = 0; i < 8; i += 1) await socket.request({ t: 'test', kind: 'chat', viewer: 10 + Math.floor(Math.random() * 40), comment: 'xin chào' });
-  toast('Đã thêm khách thử');
-});
-$('test-chat-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  if ($('test-comment').value.trim()) sendTest({ kind: 'chat', comment: $('test-comment').value });
-});
+const testPanel = setupTestPanel({ $, run, socket, toast });
 $('connect-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'connect', provider: $('provider').value, username: $('username').value });
 });
 $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
 $('reset-session').addEventListener('click', () => run({ t: 'resetSession' }));
-for (const key of ['sound', 'tts', 'legend']) {
+for (const key of ['sound', 'tts', 'ttsWelcome', 'legend']) {
   $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: e.target.checked }, 'Đã lưu'));
 }
+$('welcome-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
+});
 $('set-volume').addEventListener('change', (e) => run({ t: 'settings', volume: Number(e.target.value) }, 'Đã lưu'));
 $('login-form').addEventListener('submit', (e) => {
   e.preventDefault();

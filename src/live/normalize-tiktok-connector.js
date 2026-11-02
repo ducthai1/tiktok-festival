@@ -19,9 +19,11 @@ function messageId(data = {}) {
 }
 
 export function normalizeConnectorEvent(type, data = {}) {
+  if (type === 'roomUser') return { type: 'viewers', viewerCount: Number(data.viewerCount ?? data.total) };
   const base = { type, id: messageId(data), user: normalizeConnectorUser(data) };
   if (type === 'chat') return { ...base, comment: firstText(data.comment) };
   if (type === 'like') return { ...base, likeCount: Number(data.likeCount) || 1 };
+  if (type === 'member' && data.memberCount !== undefined) return { ...base, viewerCount: Number(data.memberCount) };
   if (type === 'gift') {
     const details = data.giftDetails || data.extendedGiftInfo || {};
     const giftType = Number(details.giftType ?? data.giftType) || 0;

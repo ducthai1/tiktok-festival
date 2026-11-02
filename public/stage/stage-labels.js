@@ -64,6 +64,14 @@ export function createLabelLayer(root) {
       labels.get(id)?.el.remove();
       labels.delete(id);
     },
+    // Làm nổi nhãn một lúc (vd người vừa được chào).
+    flash(id, className, ms) {
+      const label = labels.get(id);
+      if (!label) return;
+      label.el.classList.add(className);
+      clearTimeout(label.flashTimer);
+      label.flashTimer = setTimeout(() => label.el.classList.remove(className), ms);
+    },
     keepOnly(ids) {
       for (const id of [...labels.keys()]) if (!ids.has(id)) this.remove(id);
     },
@@ -93,7 +101,7 @@ export function createLabelLayer(root) {
           label.bubble = null;
         }
         const p = project(label.anchor, label.offsetY, camera);
-        label.el.style.display = p.visible ? '' : 'none';
+        label.el.style.display = p.visible && shown(label.anchor) ? '' : 'none';
         label.el.style.transform = `translate(${p.x}px, ${p.y}px) translate(-50%, -100%)`;
       }
       for (const f of floaters) {
@@ -115,6 +123,12 @@ export function createLabelLayer(root) {
       floaters.clear();
     }
   };
+}
+
+// Nhân vật đang ẩn (vd còn đứng ngoài cửa chờ được chào) thì nhãn cũng ẩn.
+function shown(object) {
+  for (let node = object; node; node = node.parent) if (!node.visible) return false;
+  return true;
 }
 
 function projectPoint(point, camera) {

@@ -39,10 +39,13 @@ export function createBarClubGame({ random = Math.random } = {}) {
     return free.length ? free[Math.floor(random() * free.length)] : -1;
   }
 
-  // Hết chỗ: mời khách ngồi im lâu nhất (không phải top 3 tặng quà) nhường chỗ.
-  function evictIdlest(fx) {
+  // Hết chỗ: mời người CHỈ VÀO XEM ra trước, rồi mới tới khách ngồi im lâu nhất (top 3 tặng quà luôn giữ chỗ).
+  // onlyLurkers: người mới vào phòng chỉ được thế chỗ người cũng mới vào, không đẩy người đang tương tác.
+  function evictIdlest(fx, onlyLurkers = false) {
     const vip = vipIds();
-    const candidates = [...patrons.values()].filter((p) => !vip.has(p.id)).sort((a, b) => a.lastActive - b.lastActive);
+    const candidates = [...patrons.values()]
+      .filter((p) => !vip.has(p.id) && (!onlyLurkers || !p.engaged))
+      .sort((a, b) => Number(a.engaged) - Number(b.engaged) || a.lastActive - b.lastActive);
     const out = candidates[0];
     if (!out) return -1;
     patrons.delete(out.id);
@@ -50,19 +53,20 @@ export function createBarClubGame({ random = Math.random } = {}) {
     return out.seat;
   }
 
-  function ensurePatron(user, now, fx, { canEvict }) {
+  function ensurePatron(user, now, fx, { canEvict, engaged = true }) {
     let patron = patrons.get(user.id);
     if (!patron) {
       let seat = freeSeat();
-      if (seat < 0 && canEvict) seat = evictIdlest(fx);
+      if (seat < 0 && canEvict) seat = evictIdlest(fx, canEvict === 'lurkers');
       if (seat < 0) return null;
-      patron = { id: user.id, seat, joinedAt: now, drink: '', drinkUntil: 0, danceUntil: 0, cheersUntil: 0 };
+      patron = { id: user.id, seat, joinedAt: now, engaged: false, drink: '', drinkUntil: 0, danceUntil: 0, cheersUntil: 0 };
       patrons.set(user.id, patron);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
     }
     patron.nickname = user.nickname;
     patron.avatar = user.avatar;
     patron.lastActive = now;
+    patron.engaged = patron.engaged || engaged;
     return patron;
   }
 
@@ -111,10 +115,11 @@ export function createBarClubGame({ random = Math.random } = {}) {
     title: 'Quán Bar',
     handleEvent(event, now = Date.now()) {
       const fx = [];
-      if (event.type === 'gift') onGift(event, now, fx);
+      if (event.type === 'member') ensurePatron(event.user, now, fx, { canEvict: 'lurkers', engaged: false });
+      else if (event.type === 'gift') onGift(event, now, fx);
       else if (event.type === 'chat') onChat(event, now, fx);
       else if (event.type === 'like') {
-        ensurePatron(event.user, now, fx, { canEvict: false });
+        ensurePatron(event.user, now, fx, { canEvict: 'lurkers' });
         addVibe(Math.min(event.likeCount, 30), now, fx);
       } else if (event.type === 'follow' || event.type === 'share') {
         const patron = ensurePatron(event.user, now, fx, { canEvict: true });

@@ -7,7 +7,7 @@ const GAME_COMMANDS = {
   swim: ['pause', 'resume', 'resetRound', 'resetWins'],
   temple: ['resetMerit', 'clear']
 };
-const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share']);
+const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState }) {
   let testSeq = 0;
@@ -47,8 +47,12 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     settings(msg) {
       const patch = {};
-      for (const key of ['tts', 'legend', 'sound']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
+      for (const key of ['tts', 'ttsWelcome', 'legend', 'sound']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
       if (Number.isFinite(msg.volume)) patch.volume = Math.max(0, Math.min(1, msg.volume));
+      if (Number.isFinite(msg.welcomeTextAbove)) {
+        patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));
+        hub.setWelcomeThreshold(patch.welcomeTextAbove);
+      }
       updateSettings(patch);
       return { message: 'Đã lưu' };
     },

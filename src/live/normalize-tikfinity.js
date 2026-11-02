@@ -7,7 +7,8 @@ import { firstImageUrl, firstText } from './live-event-schema.js';
 const TYPE_ALIASES = {
   chat: 'chat', comment: 'chat', message: 'chat',
   member: 'member', join: 'member', viewerjoin: 'member',
-  gift: 'gift', like: 'like', follow: 'follow', share: 'share'
+  gift: 'gift', like: 'like', follow: 'follow', share: 'share',
+  roomuser: 'viewers', viewercount: 'viewers'
 };
 
 function typeOf(raw = {}) {
@@ -34,9 +35,11 @@ function normalizeOne(raw) {
   const data = raw.data && typeof raw.data === 'object' && !Array.isArray(raw.data) ? raw.data : raw;
   const type = TYPE_ALIASES[typeOf(raw) || typeOf(data)];
   if (!type) return null;
+  if (type === 'viewers') return { type, viewerCount: Number(data.viewerCount ?? data.count ?? data.total) };
   const base = { type, id: firstText(raw.msgId, data.msgId, data.eventId, raw.eventId), user: userOf(data) };
   if (type === 'chat') return { ...base, comment: firstText(data.comment, data.message, data.text) };
   if (type === 'like') return { ...base, likeCount: Number(data.likeCount ?? data.count) || 1 };
+  if (type === 'member' && data.memberCount !== undefined) return { ...base, viewerCount: Number(data.memberCount) };
   if (type !== 'gift') return base;
   const gift = data.gift || data.giftDetails || data.extendedGiftInfo || {};
   const giftType = Number(data.giftType ?? gift.giftType) || 0;

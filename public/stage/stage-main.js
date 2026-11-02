@@ -48,6 +48,22 @@ async function switchScene(id) {
   fadeEl.classList.remove('on');
 }
 
+// Chào người mới: thẻ tên chung cho mọi game + hiệu ứng 3D riêng của từng cảnh.
+function onWelcome(fx) {
+  const w = current?.welcome || {};
+  if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);
+  hud.welcome(fx, w.line);
+  audio.play('welcome');
+  if (fx.mode === 'group') {
+    const names = fx.people.slice(0, 3).map((p) => p.nickname).join(', ');
+    const more = fx.people.length > 3 ? ` và ${fx.people.length - 3} bạn nữa` : '';
+    audio.speak(`Chào mừng ${names}${more}`, 'welcome');
+  } else {
+    audio.speak(w.speech ? w.speech(fx.nickname) : `Chào mừng ${fx.nickname}`, 'welcome');
+  }
+  return current?.onFx(fx);
+}
+
 function onState(message) {
   latest = message;
   hud.setTestMode(Boolean(message.testMode));
@@ -74,7 +90,8 @@ connectLiveSocket({
     else if (message.t === 'fx' && message.game === currentId && current) {
       for (const fx of message.list) {
         try {
-          current.onFx(fx);
+          if (fx.kind === 'welcome') onWelcome(fx);
+          else current.onFx(fx);
         } catch (error) {
           console.error('[stage] lỗi hiệu ứng:', fx.kind, error);
         }
@@ -115,6 +132,9 @@ window.__stage = {
   },
   // Chỉ để chụp ảnh kiểm tra: phát hiệu ứng ngay trên màn hình này, không qua server.
   inject(list) {
-    for (const fx of list) current?.onFx(fx);
+    for (const fx of list) {
+      if (fx.kind === 'welcome') onWelcome(fx);
+      else current?.onFx(fx);
+    }
   }
 };

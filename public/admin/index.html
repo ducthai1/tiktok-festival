@@ -58,11 +58,20 @@
     <section class="card">
       <h2>4 · Thử trước khi live <span class="muted small">(tự khoá khi đang live thật)</span></h2>
       <div class="row wrap">
-        <label>Khách thử số <input id="test-viewer" type="number" min="1" max="50" value="1"></label>
+        <label>Khách thử số <input id="test-viewer" type="number" min="1" max="99999" value="1"></label>
         <button type="button" data-test="like">❤ Thả tim</button>
         <button type="button" data-test="follow">➕ Follow</button>
         <button type="button" data-test="share">↗ Share</button>
-        <button type="button" id="test-crowd" class="ghost">👥 Thêm 8 khách</button>
+        <button type="button" id="test-crowd" class="ghost">💬 8 khách bình luận</button>
+      </div>
+      <div class="row wrap">
+        <button type="button" id="test-arrive-1">👋 Vào phòng</button>
+        <button type="button" id="test-arrive-5" class="ghost">👋 5 người vào</button>
+        <button type="button" id="test-arrive-25" class="ghost">🚶 25 người vào (chào cả đoàn)</button>
+        <form id="test-viewers-form" class="row">
+          <label>Số người xem <input id="test-viewers" type="number" min="0" max="1000000" value="1500"></label>
+          <button type="submit" class="ghost">Đặt (thử)</button>
+        </form>
       </div>
       <div class="row wrap" id="test-chats"></div>
       <form id="test-chat-form" class="row">
@@ -78,9 +87,16 @@
       <div class="row wrap">
         <label class="toggle"><input type="checkbox" id="set-sound"> Âm thanh hiệu ứng</label>
         <label class="toggle"><input type="checkbox" id="set-tts"> Đọc lời cầu / quẻ (giọng máy)</label>
+        <label class="toggle"><input type="checkbox" id="set-ttsWelcome"> Đọc tên người mới vào</label>
         <label class="toggle"><input type="checkbox" id="set-legend"> Hiện bảng quà</label>
         <label>Âm lượng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
       </div>
+      <form id="welcome-form" class="row wrap">
+        <label>Chào từng người bằng thẻ tên + nhân vật; phòng trên
+          <input id="set-welcome-above" type="number" min="0" max="1000000" step="100"> người xem thì chỉ hiện dòng chữ</label>
+        <button type="submit" class="ghost">Lưu</button>
+      </form>
+      <p id="viewers-status" class="muted small"></p>
     </section>
 
     <section class="card split">

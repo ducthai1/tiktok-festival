@@ -4,14 +4,16 @@ import { createBarClubGame } from './bar-club-game.js';
 import { createSessionLeaderboard } from './session-leaderboard.js';
 import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
+import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 
-export function createGameHub({ startGame = 'bar', random = Math.random } = {}) {
+export function createGameHub({ startGame = 'bar', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE } = {}) {
   const games = new Map([
     ['bar', createBarClubGame({ random })],
     ['swim', createSwimPushGame()],
     ['temple', createTempleGame({ random })]
   ]);
   const board = createSessionLeaderboard();
+  const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });
   let activeId = games.has(startGame) ? startGame : 'bar';
   let lastSimulatedAt = 0;
 
@@ -26,8 +28,17 @@ export function createGameHub({ startGame = 'bar', random = Math.random } = {}) 
     },
     handleEvent(event, now = Date.now()) {
       if (event.simulated) lastSimulatedAt = now;
+      if (event.type === 'viewers') {
+        welcome.setViewerCount(event.viewerCount);
+        return [];
+      }
+      if (event.viewerCount) welcome.setViewerCount(event.viewerCount);
       board.record(event, now);
-      return active().handleEvent(event, now);
+      const fx = active().handleEvent(event, now);
+      return [...fx, ...welcome.notice(event.user, now)];
+    },
+    setWelcomeThreshold(n) {
+      welcome.setThreshold(n);
     },
     // Mọi game đều chạy tick (để khách hết hạn tự rời, vòng bơi tự kết thúc) nhưng chỉ
     // hiệu ứng của game đang chọn được gửi lên màn hình.
@@ -37,7 +48,7 @@ export function createGameHub({ startGame = 'bar', random = Math.random } = {}) 
         const out = game.tick(now);
         if (game.id === activeId) fx = out;
       }
-      return fx;
+      return [...fx, ...welcome.tick(now)];
     },
     command(gameId, name, now = Date.now()) {
       const game = games.get(gameId);
@@ -47,6 +58,7 @@ export function createGameHub({ startGame = 'bar', random = Math.random } = {}) 
     },
     resetSession() {
       board.reset();
+      welcome.reset();
     },
     snapshot(now = Date.now()) {
       return {
@@ -54,6 +66,7 @@ export function createGameHub({ startGame = 'bar', random = Math.random } = {}) 
         state: active().snapshot(now),
         top: board.top(5),
         totals: board.totals(),
+        viewers: { count: welcome.viewerCount(), textAbove: welcome.threshold(), waiting: welcome.backlog(), pending: welcome.pendingIds() },
         // Màn hình phải hiện nhãn "CHẾ ĐỘ THỬ" khi vừa có sự kiện giả lập.
         testMode: now - lastSimulatedAt < 20000
       };

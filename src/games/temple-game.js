@@ -41,23 +41,28 @@ export function createTempleGame({ random = Math.random } = {}) {
     totals.merit += points;
   }
 
-  function ensureDevotee(user, now, fx) {
+  // engaged=false: người chỉ mới vào phòng — được vào chánh điện nếu còn chỗ, hoặc thế chỗ
+  // người cũng chỉ mới vào; không bao giờ đẩy người đang tương tác ra.
+  function ensureDevotee(user, now, fx, { engaged = true } = {}) {
     let devotee = devotees.get(user.id);
     if (!devotee) {
       if (devotees.size >= TEMPLE_SLOTS) {
         const ranked = rankedDevotees();
-        const out = ranked.slice(VIP_SLOTS).sort((a, b) => a.lastActive - b.lastActive)[0];
+        const out = ranked.slice(VIP_SLOTS)
+          .filter((d) => engaged || !d.engaged)
+          .sort((a, b) => Number(a.engaged) - Number(b.engaged) || a.lastActive - b.lastActive)[0];
         if (!out) return null;
         devotees.delete(out.id);
         fx.push({ kind: 'leave', userId: out.id });
       }
-      devotee = { id: user.id, joinOrder: joinSeq += 1 };
+      devotee = { id: user.id, joinOrder: joinSeq += 1, engaged: false };
       devotees.set(user.id, devotee);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
     }
     devotee.nickname = user.nickname;
     devotee.avatar = user.avatar;
     devotee.lastActive = now;
+    devotee.engaged = devotee.engaged || engaged;
     return devotee;
   }
 
@@ -98,7 +103,10 @@ export function createTempleGame({ random = Math.random } = {}) {
     title: 'Chùa Online',
     handleEvent(event, now = Date.now()) {
       const fx = [];
-      if (event.type === 'member') return fx;
+      if (event.type === 'member') {
+        ensureDevotee(event.user, now, fx, { engaged: false });
+        return fx;
+      }
       ensureDevotee(event.user, now, fx);
       if (event.type === 'like') {
         totals.mo += event.likeCount;

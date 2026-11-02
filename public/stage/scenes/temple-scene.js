@@ -3,6 +3,7 @@
 import * as THREE from '/vendor/three/three.module.js';
 import { formatNumber } from '../stage-hud.js';
 import { createParticleSystem } from './particle-effects.js';
+import { createCrowd, ENTRANCE_SPREAD, gridSpot } from './crowd-characters.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 import { buildTempleHall } from './temple-hall.js';
 
@@ -34,7 +35,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     scene.add(cushion, trim);
   }
 
-  const devotees = new Map();
+  const bowUntil = new Map();
   const lanterns = [];
   let state = null;
   let clock = 0;
@@ -47,29 +48,26 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   hud.setTitle('🪷 CHÙA ONLINE');
   hud.setHint(['Thả tim = ', '*gõ mõ*', ' · gõ ', '*thắp hương*', ' · ', '*cầu ...*', ' thả hoa đăng · ', '*xin xăm*', ' gieo quẻ']);
 
-  function sync(list) {
-    const ids = new Set(list.map((d) => d.id));
-    for (const [id, d] of devotees) if (!ids.has(id) && !d.leaving) d.leaving = clock;
-    for (const info of list) {
-      let d = devotees.get(info.id);
-      if (!d) {
-        d = { model: buildPerson({ id: info.id, robe: ROBE }), bowUntil: 0 };
-        d.model.root.rotation.y = Math.PI;
-        d.model.root.position.copy(slotPosition(info.slot)).setZ(9);
-        scene.add(d.model.root);
-        devotees.set(info.id, d);
-      }
-      d.info = info;
-      d.target = slotPosition(info.slot);
-      // Nhãn so le cao/thấp để hàng ngồi sát nhau không đè chữ lên nhau.
-      labels.sync(info.id, { anchor: d.model.head, nickname: info.nickname, avatar: info.avatar, vip: info.vip, small: true,
-        offsetY: info.slot % 2 ? 1.15 : 0.45 });
-    }
-  }
+  // Phật tử vào từ cổng (phía người xem), đi dọc thảm đỏ lên chỗ quỳ, mặt hướng về bàn thờ.
+  const crowd = createCrowd({
+    scene,
+    labels,
+    build: (id) => buildPerson({ id, robe: ROBE }),
+    place: (info) => slotPosition(info.slot),
+    entrance: (i, count) => ENTRANCE_SPREAD(new THREE.Vector3(0, 0, 10.5), i, count),
+    visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, count > 1 ? 0.9 : 1.6), i, count, { maxCols: 4, dx: 0.75, dz: 0.8 }),
+    pose: (model, info, t, walking) => {
+      posePerson(model, walking ? 'walk' : t < Math.max(bowUntil.get(info.id) || 0, bowAllUntil) ? 'bow' : 'kneel', t);
+    },
+    // Nhãn so le cao/thấp để hàng ngồi sát nhau không đè chữ lên nhau.
+    labelFor: (info) => ({ vip: info.vip, small: true, offsetY: info.slot % 2 ? 1.15 : 0.45 }),
+    facing: Math.PI,
+    speed: 2.6
+  });
 
   function bowOne(userId, seconds) {
-    const d = devotees.get(userId);
-    if (d) d.bowUntil = clock + seconds;
+    bowUntil.set(userId, clock + seconds);
+    if (bowUntil.size > 500) bowUntil.delete(bowUntil.keys().next().value);
   }
 
   function petalRain(count) {
@@ -96,7 +94,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   }
 
   function releaseLantern(fx) {
-    const d = devotees.get(fx.userId);
+    const d = crowd.get(fx.userId);
     const lantern = hall.lotus(0.28);
     const glow = new THREE.Mesh(new THREE.SphereGeometry(0.12, 10, 8), new THREE.MeshBasicMaterial({ color: '#ffd27a', toneMapped: false }));
     glow.position.y = 0.2;
@@ -117,10 +115,21 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       const t = state.totals;
       hud.setStats([`✨ ${formatNumber(t.merit)} công đức`, `🔥 ${formatNumber(t.incense)} nén hương · 🪵 ${formatNumber(t.mo)} mõ`]);
       hud.setBoard('TẤM LÒNG THÀNH', state.board.map((b) => ({ ...b, score: formatNumber(b.points) })));
-      sync(state.devotees);
+      crowd.sync(state.devotees, new Set(snapshot.viewers?.pending || []));
     },
+    welcome: { line: 'đã vào chánh điện 🙏 Gõ “thắp hương” để dâng hương', speech: (n) => `A Di Đà Phật, chào mừng ${n} đến chánh điện` },
     onFx(fx) {
-      if (fx.kind === 'mo') {
+      if (fx.kind === 'welcome') {
+        const people = fx.mode === 'group' ? fx.people : [fx];
+        for (const entry of crowd.welcome(people)) {
+          labels.flash(entry.id, 'welcomed', fx.durationMs || 2600);
+          bowOne(entry.id, 3); // tới chỗ thì vái chào
+        }
+        // cột hào quang ở cổng + cánh sen nhẹ
+        particles.burst({ position: new THREE.Vector3(0, 0.5, 9.8), box: new THREE.Vector3(2.4, 0.4, 1.4), count: 90 + people.length * 20,
+          colors: ['#ffd36b', '#fff1c9'], speed: 0.8, spread: 0, gravity: 2.2, life: 2.4, size: 0.24 });
+        if (fx.mode === 'group') petalRain(160);
+      } else if (fx.kind === 'mo') {
         moAt = clock;
         if (clock - lastMoSound > 0.15) {
           audio.play('mo');
@@ -189,21 +198,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       if (hall.sticks.children.length && Math.random() < dt * 10) {
         particles.burst({ position: new THREE.Vector3((Math.random() - 0.5) * 0.6, 2.5, -2.7), count: 1, colors: ['#8a8a8a', '#bdbdbd'], speed: 0.3, spread: 0, gravity: 0.6, life: 3.5, size: 0.35, damping: 0.99 });
       }
-      for (const [id, d] of devotees) {
-        if (d.leaving) {
-          d.model.root.scale.multiplyScalar(0.9);
-          if (t - d.leaving > 0.6) {
-            scene.remove(d.model.root);
-            disposeObject(d.model.root);
-            devotees.delete(id);
-            labels.remove(id);
-          }
-          continue;
-        }
-        d.model.root.position.lerp(d.target, Math.min(1, dt * 2.5));
-        const walking = d.model.root.position.distanceTo(d.target) > 0.3;
-        posePerson(d.model, walking ? 'idle' : t < Math.max(d.bowUntil, bowAllUntil) ? 'bow' : 'kneel', t);
-      }
+      crowd.frame(dt, t);
       for (let i = lanterns.length - 1; i >= 0; i -= 1) {
         const l = lanterns[i];
         const age = t - l.born;
@@ -219,6 +214,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       particles.update(dt);
     },
     dispose() {
+      crowd.clear();
       particles.dispose();
       disposeObject(scene);
       hud.clearGame();

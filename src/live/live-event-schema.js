@@ -2,10 +2,15 @@
 // đều phải đi qua đây trước khi tới game, nên game không bao giờ thấy dữ liệu thô.
 import { cleanText, clampInt, safeImageUrl } from '../http/security.js';
 
-export const LIVE_EVENT_TYPES = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member']);
+export const LIVE_EVENT_TYPES = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 
 export function sanitizeLiveEvent(input) {
   if (!input || typeof input !== 'object' || !LIVE_EVENT_TYPES.has(input.type)) return null;
+  // Số người đang xem phòng (không gắn với người xem nào) — dùng để đổi kiểu chào mừng.
+  if (input.type === 'viewers') {
+    const viewerCount = clampInt(input.viewerCount, 0, 100000000, -1);
+    return viewerCount < 0 ? null : { type: 'viewers', id: '', at: Date.now(), simulated: input.simulated === true, viewerCount };
+  }
   const user = input.user && typeof input.user === 'object' ? input.user : {};
   const uniqueId = cleanText(user.uniqueId, 64);
   const userId = cleanText(user.id, 128) || uniqueId;
@@ -27,6 +32,7 @@ export function sanitizeLiveEvent(input) {
     if (!event.comment) return null;
   }
   if (event.type === 'like') event.likeCount = clampInt(input.likeCount, 1, 1000, 1);
+  if (event.type === 'member' && input.viewerCount !== undefined) event.viewerCount = clampInt(input.viewerCount, 0, 100000000, 0);
   if (event.type === 'gift') {
     const gift = input.gift && typeof input.gift === 'object' ? input.gift : {};
     const count = clampInt(gift.count, 0, 100000, 0);

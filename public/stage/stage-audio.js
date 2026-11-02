@@ -5,6 +5,7 @@ export function createStageAudio() {
   let enabled = true;
   let volume = 0.6;
   let ttsOn = false;
+  let ttsWelcome = false;
   const speakQueue = [];
 
   function audio() {
@@ -58,7 +59,8 @@ export function createStageAudio() {
     boom: () => { noise({ decay: 1.2, gain: 0.45, freq: 180 }); tone({ freq: 60, decay: 0.8, gain: 0.3, slide: 0.6 }); },
     mo: () => { tone({ freq: 820, type: 'sine', decay: 0.09, gain: 0.5, slide: 0.7 }); noise({ decay: 0.05, gain: 0.25, freq: 2400 }); },
     bell: () => [196, 392.5, 588, 1176].forEach((f, i) => tone({ freq: f, decay: 4 - i * 0.6, gain: 0.32 / (i + 1), attack: 0.004 })),
-    chime: () => [1318, 1568, 1976].forEach((f, i) => tone({ freq: f, decay: 1.2, gain: 0.12, delay: i * 0.09 }))
+    chime: () => [1318, 1568, 1976].forEach((f, i) => tone({ freq: f, decay: 1.2, gain: 0.12, delay: i * 0.09 })),
+    welcome: () => [784, 988, 1175, 1568].forEach((f, i) => tone({ freq: f, type: 'triangle', decay: 0.7, gain: 0.16, delay: i * 0.08 }))
   };
 
   function speakNext() {
@@ -82,8 +84,10 @@ export function createStageAudio() {
         // trình duyệt chặn âm thanh khi chưa có thao tác — bỏ qua
       }
     },
-    speak(text) {
-      if (!ttsOn || !('speechSynthesis' in window) || speakQueue.length > 4) return;
+    // channel 'welcome' = đọc tên người mới vào (công tắc riêng); còn lại = lời cầu/quẻ.
+    speak(text, channel = 'story') {
+      const allowed = channel === 'welcome' ? ttsWelcome : ttsOn;
+      if (!allowed || !('speechSynthesis' in window) || speakQueue.length > 4) return;
       speakQueue.push(String(text).slice(0, 220));
       speakNext();
     },
@@ -91,7 +95,8 @@ export function createStageAudio() {
       enabled = settings.sound !== false;
       volume = Number.isFinite(settings.volume) ? settings.volume : 0.6;
       ttsOn = settings.tts === true;
-      if (!ttsOn && 'speechSynthesis' in window) {
+      ttsWelcome = settings.ttsWelcome === true;
+      if (!ttsOn && !ttsWelcome && 'speechSynthesis' in window) {
         speakQueue.length = 0;
         speechSynthesis.cancel();
       }

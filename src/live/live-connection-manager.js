@@ -29,7 +29,8 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
 
   function ingest(raw, { simulated = false } = {}) {
     if (!raw || (raw.id && isDuplicate(`${raw.type}:${raw.id}`))) return null;
-    const event = { type: raw.type, id: raw.id, user: raw.user, comment: raw.comment, likeCount: raw.likeCount, simulated };
+    const event = { type: raw.type, id: raw.id, user: raw.user, comment: raw.comment, likeCount: raw.likeCount,
+      viewerCount: raw.viewerCount, simulated };
     if (raw.type === 'gift') {
       const g = raw.giftRaw || {};
       const count = streaks.delta({ userId: raw.user?.id, giftId: g.id, groupId: g.groupId,

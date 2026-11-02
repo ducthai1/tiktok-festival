@@ -3,6 +3,7 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { animateBarRoom, buildBarRoom, FLOOR_POSITIONS, STOOL_POSITIONS } from './bar-room.js';
 import { createParticleSystem } from './particle-effects.js';
+import { createCrowd, ENTRANCE_SPREAD, gridSpot } from './crowd-characters.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 
 const DRINK_NAMES = { beer: 'Bia', cocktail: 'Cocktail', champagne: 'Champagne', tower: 'Tháp champagne', party: 'MỞ TIỆC' };
@@ -37,7 +38,11 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
   camera.lookAt(0, 2.5, -0.4);
   const room = buildBarRoom(scene);
   const particles = createParticleSystem(scene, 5000);
-  const patrons = new Map();
+  const welcomeSpot = new THREE.SpotLight('#ffd36b', 0, 16, 0.32, 0.45, 1.2);
+  scene.add(welcomeSpot, welcomeSpot.target);
+  let spotFollow = null;
+  let spotUntil = 0;
+  let clock = 0;
   let state = null;
   let party = false;
   let tower = null;
@@ -47,33 +52,31 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
   hud.setHint(['Bình luận để ', '*vào quán*', ' · gõ ', '*nhảy*', ' để quẩy · ', '*cụng ly*', ' để nâng ly']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
 
-  function seatPosition(seat) {
-    return seat < 6 ? STOOL_POSITIONS[seat] : FLOOR_POSITIONS[seat - 6];
-  }
+  // Khách vào từ phía người xem (mép dưới màn hình) rồi đi tới ghế/ô sàn của mình.
+  const crowd = createCrowd({
+    scene,
+    labels,
+    build: (id) => buildPerson({ id }),
+    place: (info) => (info.seat < 6 ? STOOL_POSITIONS[info.seat] : FLOOR_POSITIONS[info.seat - 6]),
+    entrance: (i, count) => ENTRANCE_SPREAD(new THREE.Vector3(0, 0, 9.5), i, count),
+    // khách ghé đứng giữa sàn nhảy, 8 người một hàng (đoàn tới 40 người vẫn nằm trong khung hình)
+    visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, count > 1 ? 0.6 : 3.2), i, count, { maxCols: 8, dx: 0.72, dz: 0.75 }),
+    pose: (model, info, t, walking) => {
+      const seated = !walking && info.seat !== undefined && info.seat < 6;
+      const visiting = info.seat === undefined;
+      posePerson(model, walking ? 'walk' : info.dancing ? 'dance' : info.cheers || visiting ? 'cheers' : 'idle', t, seated);
+    },
+    labelFor: (info) => ({ vip: info.vip, small: info.seat >= 6, offsetY: 0.55 }),
+    speed: 3.2
+  });
 
-  function syncPatrons(list) {
-    const ids = new Set(list.map((p) => p.id));
-    for (const [id, p] of patrons) {
-      if (!ids.has(id) && !p.leaving) p.leaving = performance.now();
-    }
+  function syncDrinks(list) {
     for (const info of list) {
-      let p = patrons.get(info.id);
-      if (!p) {
-        p = { model: buildPerson({ id: info.id }), drinkKind: '', target: seatPosition(info.seat) };
-        p.model.root.position.copy(p.target);
-        p.model.root.scale.setScalar(0.01);
-        scene.add(p.model.root);
-        patrons.set(info.id, p);
-        particles.burst({ position: seatPosition(info.seat).clone().setY(1.5), count: 40, colors: ['#ff4fa3', '#ffd36b', '#36d6ff'], speed: 3, gravity: -3, life: 1 });
-      }
-      p.info = info;
-      p.target = seatPosition(info.seat);
-      if (p.drinkKind !== info.drink) {
-        p.model.hand.clear();
-        if (info.drink) p.model.hand.add(drinkMesh(info.drink));
-        p.drinkKind = info.drink;
-      }
-      labels.sync(info.id, { anchor: p.model.head, nickname: info.nickname, avatar: info.avatar, vip: info.vip, small: info.seat >= 6, offsetY: 0.55 });
+      const entry = crowd.get(info.id);
+      if (!entry || entry.drinkKind === info.drink) continue;
+      entry.model.hand.clear();
+      if (info.drink) entry.model.hand.add(drinkMesh(info.drink));
+      entry.drinkKind = info.drink;
     }
   }
 
@@ -91,12 +94,13 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       }
     }
     scene.add(tower);
-    tower.userData.until = performance.now() + 20000;
+    tower.userData.until = clock + 20;
   }
 
   return {
     scene,
     camera,
+    welcome: { line: 'đã tới quán! Gõ “nhảy” để quẩy cùng mọi người 🍸', speech: (n) => `Chào mừng ${n} đến quán bar!` },
     update(snapshot) {
       state = snapshot.state;
       party = state.partyMs > 0;
@@ -104,13 +108,21 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       meter.update(party ? 1 : state.vibe / state.vibeGoal, party ? `TIỆC! ${Math.ceil(state.partyMs / 1000)}s` : `${formatNumber(state.vibe)} / ${formatNumber(state.vibeGoal)}`);
       hud.setStats([`👥 ${state.patrons.length} khách`, `💎 ${formatNumber(snapshot.totals.diamonds)}`]);
       hud.setBoard('TOP DÂN CHƠI', snapshot.top.map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
-      syncPatrons(state.patrons);
+      crowd.sync(state.patrons, new Set(snapshot.viewers?.pending || []));
+      syncDrinks(state.patrons);
     },
     legend: [['1💎', ' Bia'], ['5💎', ' Cocktail'], ['30💎', ' Champagne'], ['100💎', ' Tháp ly'], ['500💎', ' Mở tiệc']],
     onFx(fx) {
-      const p = patrons.get(fx.userId);
-      if (fx.kind === 'bubble') labels.bubble(fx.userId, fx.text);
-      else if (fx.kind === 'join') audio.play('pop');
+      const p = crowd.get(fx.userId);
+      if (fx.kind === 'welcome') {
+        const people = fx.mode === 'group' ? fx.people : [fx];
+        const entries = crowd.welcome(people);
+        for (const entry of entries) labels.flash(entry.id, 'welcomed', fx.durationMs || 2600);
+        spotFollow = entries.length === 1 ? entries[0] : null;
+        spotUntil = clock + (fx.durationMs || 2600) / 1000 + 1;
+        particles.burst({ position: new THREE.Vector3(0, 3.5, 7), box: new THREE.Vector3(5, 1, 2), count: 60 + entries.length * 25,
+          colors: ['#ffd36b', '#ff4fa3', '#36d6ff', '#ffffff'], speed: 3, gravity: -3, life: 1.6, size: 0.22 });
+      } else if (fx.kind === 'bubble') labels.bubble(fx.userId, fx.text);
       else if (fx.kind === 'toast') hud.toast(fx.text);
       else if (fx.kind === 'drink') {
         audio.play('clink');
@@ -129,29 +141,22 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       }
     },
     frame(dt, t) {
+      clock = t;
       animateBarRoom(room, t, party);
       if (party && Math.random() < dt * 6) {
         particles.burst({ position: new THREE.Vector3(3.4, 7.2, 0.5), count: 6, colors: ['#ffffff', '#cfe0ff'], speed: 8, spread: 1, gravity: -1, life: 1.2, size: 0.18 });
       }
-      const now = performance.now();
-      for (const [id, p] of patrons) {
-        const { root } = p.model;
-        if (p.leaving) {
-          root.scale.multiplyScalar(0.86);
-          if (now - p.leaving > 600) {
-            scene.remove(root);
-            disposeObject(root);
-            patrons.delete(id);
-            labels.remove(id);
-          }
-          continue;
-        }
-        root.position.lerp(p.target, Math.min(1, dt * 4));
-        root.scale.setScalar(Math.min(1, root.scale.x + dt * 3));
-        const pose = p.info.dancing ? 'dance' : p.info.cheers ? 'cheers' : 'idle';
-        posePerson(p.model, pose, t, p.info.seat < 6);
+      crowd.frame(dt, t);
+      // Đèn vàng rọi theo người đang được chào; chào cả đoàn thì rọi rộng vào cửa.
+      const spotOn = t < spotUntil;
+      welcomeSpot.intensity += ((spotOn ? (spotFollow ? 45 : 30) : 0) - welcomeSpot.intensity) * Math.min(1, dt * 5);
+      if (spotOn) {
+        const at = spotFollow ? spotFollow.model.root.position : new THREE.Vector3(0, 0, 5.6);
+        welcomeSpot.target.position.lerp(at, Math.min(1, dt * 8));
+        welcomeSpot.position.set(welcomeSpot.target.position.x, 9, welcomeSpot.target.position.z + 2);
+        welcomeSpot.angle = spotFollow ? 0.22 : 0.42;
       }
-      if (tower && now > tower.userData.until) {
+      if (tower && t > tower.userData.until) {
         scene.remove(tower);
         disposeObject(tower);
         tower = null;
@@ -160,6 +165,7 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       particles.update(dt);
     },
     dispose() {
+      crowd.clear();
       particles.dispose();
       disposeObject(scene);
       hud.clearGame();

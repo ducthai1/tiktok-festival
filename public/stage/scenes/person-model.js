@@ -102,7 +102,7 @@ const lerp = (a, b, k) => a + (b - a) * k;
 
 /**
  * Đặt tư thế theo thời gian t (giây).
- * pose: idle | dance | cheers | kneel | bow | swim; seated=true thì ngồi (ghế quầy) với idle/cheers.
+ * pose: idle | walk | dance | cheers | kneel | bow | swim; seated=true thì ngồi (ghế quầy) với idle/cheers.
  */
 export function posePerson(p, pose, t, seated = false) {
   const s = t * 1 + p.phase;
@@ -129,6 +129,14 @@ export function posePerson(p, pose, t, seated = false) {
   if (pose === 'cheers') {
     p.armR.rotation.set(-2.1 + Math.sin(s * 9) * 0.12, 0, -0.25);
     p.torso.rotation.z = Math.sin(s * 3) * 0.06;
+  }
+  if (pose === 'walk') {
+    const step = t * 7 + p.phase;
+    p.hips.position.y = 0.9 + Math.abs(Math.sin(step)) * 0.06;
+    p.legL.rotation.x = Math.sin(step) * 0.6;
+    p.legR.rotation.x = -Math.sin(step) * 0.6;
+    p.armL.rotation.x = -Math.sin(step) * 0.5;
+    p.armR.rotation.x = Math.sin(step) * 0.5;
   }
   if (pose === 'dance') {
     const beat = s * 2.3 * Math.PI;
@@ -165,6 +173,30 @@ export function posePerson(p, pose, t, seated = false) {
     p.head.rotation.x = -0.9;
     p.head.rotation.y = Math.sin(stroke) * 0.5;
   }
+}
+
+const towards = new THREE.Vector3();
+
+/**
+ * Bước đều về đích (speed đơn vị/giây), quay mặt theo hướng đi; tới nơi thì xoay về facing.
+ * Trả true khi còn đang đi (để chọn tư thế 'walk').
+ */
+export function walkTowards(root, target, dt, { speed = 3, facing = 0 } = {}) {
+  towards.subVectors(target, root.position);
+  towards.y = 0;
+  const dist = towards.length();
+  const walking = dist > 0.05;
+  if (walking) {
+    root.position.addScaledVector(towards.normalize(), Math.min(dist, speed * dt));
+    const heading = Math.atan2(towards.x, towards.z);
+    root.rotation.y += Math.atan2(Math.sin(heading - root.rotation.y), Math.cos(heading - root.rotation.y)) * Math.min(1, dt * 10);
+  } else {
+    root.position.x = target.x;
+    root.position.z = target.z;
+    root.rotation.y += Math.atan2(Math.sin(facing - root.rotation.y), Math.cos(facing - root.rotation.y)) * Math.min(1, dt * 6);
+  }
+  root.position.y = target.y;
+  return walking;
 }
 
 export function disposeObject(object) {
