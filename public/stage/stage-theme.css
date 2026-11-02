@@ -18,16 +18,17 @@
 }
 
 /* Khung dùng chung: nền theo chủ đề + viền + quầng sáng */
-#title, .chip, #board, #hint, .meter, #legend .item, .toast {
+#title, .chip, #board, #howto, .meter, .toast {
   background: var(--panel); border: 2px solid var(--line); box-shadow: var(--glow); backdrop-filter: blur(12px);
 }
 #title { font-family: var(--title-font); color: var(--gold); text-shadow: 0 0 18px rgba(255, 200, 90, 0.55), 0 2px 0 rgba(0, 0, 0, 0.4); }
 #title, #board h3, #welcome .name, #banner { letter-spacing: 0.5px; }
+#howto::before { font-family: var(--title-font); color: transparent; background: var(--title-fill); -webkit-background-clip: text; background-clip: text; }
 #board h3 { font-family: var(--title-font); font-size: 30px; color: transparent; background: var(--title-fill); -webkit-background-clip: text; background-clip: text; }
 #board li { padding: 4px 6px; border-radius: 12px; transition: background 400ms; }
 #board li.bump { animation: row-bump 900ms ease-out; }
 @keyframes row-bump { 0% { background: rgba(255, 224, 138, 0.45); transform: scale(1.04); } 100% { background: transparent; transform: none; } }
-.theme-temple #board, .theme-temple #hint, .theme-temple .toast { border-width: 3px; border-style: double; }
+.theme-temple #board, .theme-temple #howto, .theme-temple .toast { border-width: 3px; border-style: double; }
 .theme-temple #board::before, .theme-temple #board::after {
   content: "❁"; position: absolute; top: -18px; color: var(--gold); font-size: 30px; text-shadow: 0 0 10px rgba(255, 200, 80, 0.8);
 }
@@ -38,8 +39,8 @@
 .toast { color: #fff; animation: toast-in 620ms cubic-bezier(0.2, 1.3, 0.35, 1) both; }
 .toast.gold { border-color: var(--gold); background: linear-gradient(90deg, rgba(150, 95, 10, 0.92), rgba(70, 30, 0, 0.9)); }
 .toast.out { animation: toast-out 380ms ease-in forwards; }
-@keyframes toast-in { from { opacity: 0; transform: translateX(-70px) scale(0.9); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
-@keyframes toast-out { to { opacity: 0; transform: translateX(-30px) scale(0.96); filter: blur(4px); } }
+@keyframes toast-in { from { opacity: 0; transform: translateX(70px) scale(0.9); filter: blur(6px); } to { opacity: 1; transform: none; filter: none; } }
+@keyframes toast-out { to { opacity: 0; transform: translateX(30px) scale(0.96); filter: blur(4px); } }
 
 /* Thẻ chào mừng: viền sáng chạy vòng, hiện đàn hồi, các phần lần lượt xuất hiện */
 #welcome { background: var(--panel); border: 0; box-shadow: var(--glow), 0 26px 60px rgba(0, 0, 0, 0.55); isolation: isolate; }
@@ -76,6 +77,11 @@
 #banner { font-family: var(--title-font); color: transparent; background: var(--title-fill); -webkit-background-clip: text; background-clip: text;
   filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.7)); transition: opacity 360ms, transform 600ms cubic-bezier(0.16, 1, 0.3, 1); }
 #banner small { font-family: var(--font); color: #fff; -webkit-text-fill-color: #fff; }
+/* chữ vàng trên tượng đang rực sáng: viền nâu sẫm + bóng tối để vẫn đọc được */
+.theme-temple #banner { -webkit-text-stroke: 2px rgba(70, 20, 4, 0.92); filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 22px rgba(40, 10, 0, 0.85)); }
+.theme-temple #banner small { -webkit-text-stroke: 0; }
+.theme-temple #banner::before { content: ""; position: absolute; left: 4%; right: 4%; top: -10px; height: 96px; z-index: -1; border-radius: 20px;
+  background: linear-gradient(90deg, transparent, rgba(58, 14, 4, 0.85) 16%, rgba(58, 14, 4, 0.85) 84%, transparent); }
 
 /* Tờ quẻ (chùa): giấy dó có trục gỗ trên dưới, mở cuộn từ trên xuống, triện son đỏ ở góc */
 #fortune { font-family: var(--font); border: 0; border-radius: 6px; padding: 54px 52px 46px;
@@ -96,7 +102,3 @@
 .theme-temple .label .tag { background: rgba(60, 16, 6, 0.85); border-color: rgba(255, 211, 107, 0.55); }
 .theme-swim .label .tag { background: rgba(3, 42, 74, 0.78); border-color: rgba(189, 244, 255, 0.6); }
 .theme-bar .label .tag { background: rgba(26, 8, 40, 0.78); border-color: rgba(255, 122, 196, 0.6); }
-
-/* Chùa: tranh nền có hàng người quỳ ở nửa dưới → bảng xếp hạng lên góc phải phía trên (che cột + đèn lồng) */
-.theme-temple #board { bottom: auto; top: 236px; width: 360px; padding: 14px 18px; }
-.theme-temple #board li { font-size: 22px; }

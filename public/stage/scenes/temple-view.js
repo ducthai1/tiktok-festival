@@ -22,7 +22,7 @@ export function createTempleCamera() {
   return camera;
 }
 
-/** Phóng to đều cả tranh lẫn cảnh 3D (đại lễ Kim Liên) — đổi góc nhìn chứ không dời camera. */
+/** Phóng to đều cả tranh lẫn cảnh 3D (điều ước lớn nhất) — đổi góc nhìn chứ không dời camera. */
 export function setZoom(camera, zoom) {
   camera.zoom = zoom;
   camera.updateProjectionMatrix();

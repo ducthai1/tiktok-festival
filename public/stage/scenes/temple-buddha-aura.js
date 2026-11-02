@@ -62,7 +62,7 @@ export function createBuddhaAura(scene, aura) {
   scene.add(mesh);
   const [cx, cy] = aura.center;
   return {
-    /** Tâm vầng hào quang sau đầu tượng (toạ độ 3D) — nơi hạt sáng của đại lễ toả ra. */
+    /** Tâm vầng hào quang sau đầu tượng (toạ độ 3D) — nơi hạt sáng của quà lớn toả ra. */
     center: screenPoint(x0 + cx * (x1 - x0), y0 + (1 - cy) * (y1 - y0), DEPTH),
     /** Điểm ngẫu nhiên quanh thân tượng (cho bụi vàng bay lên). */
     randomPoint: () => screenPoint(0.5 + (Math.random() - 0.5) * 0.36, 0.2 + Math.random() * 0.2, DEPTH - 0.4),

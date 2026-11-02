@@ -1,6 +1,6 @@
 // CHÙA ONLINE — người xem tương tác là có một Phật tử quỳ trong chánh điện.
 // Thả tim = gõ mõ, follow/share = thỉnh chuông, bình luận "thắp hương" / "cầu ..." / "xin xăm",
-// quà = dâng hoa sen / đèn / đại lễ. 6 người nhiều "tâm thành" nhất quỳ hàng đầu.
+// quà = một lời cầu (bình an, sức khỏe, tài lộc, điều ước lớn, vạn sự như ý). 6 người nhiều "tâm thành" nhất quỳ hàng đầu.
 import { containsPhrase, createCooldown, isCleanForDisplay, startsWithPhrase } from './text-match.js';
 import { drawFortune } from './temple-fortunes.js';
 
@@ -16,7 +16,7 @@ const PRAYER_START = ['cau', 'nguyen', 'chuc', 'xin cho'];
 const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
 
 // 5 bậc lễ theo giá trị quà — quà càng lớn nghi lễ càng trang trọng:
-// dâng hoa sen → thắp đèn lưu ly → dâng mâm ngũ quả → đại lễ cầu an → đại lễ Kim Liên.
+// hoa (cầu bình an) → đèn (cầu sức khỏe) → mâm ngũ quả (cầu tài lộc) → điều ước lớn → vạn sự như ý.
 export function offeringForDiamonds(diamonds) {
   if (diamonds >= 500) return 'grand';
   if (diamonds >= 100) return 'ceremony';

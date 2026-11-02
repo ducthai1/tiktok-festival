@@ -1,12 +1,13 @@
 // Nghi thức từng người ở chùa — mỗi chức năng một màn riêng, có đầu có cuối:
 // thắp hương: đứng dậy, cầm 3 nén hương ra trước lư, thắp, nâng lên trán, vái 3 vái, cắm hương rồi về chỗ.
 // cầu nguyện: chắp tay rồi thả hoa đăng từ tay. Xin xăm: lắc ống xăm tới khi 1 que văng ra rồi mới mở quẻ.
-// Dâng lễ theo bậc quà: hoa sen → đèn lưu ly (cả dãy đèn bàn thờ sáng) → mâm ngũ quả (thỉnh chuông)
-// → đại lễ / đại lễ Kim Liên (xem temple-grand-ceremony.js).
+// Quà = lời cầu của người tặng (temple-wishes.js): hoa → đèn (cả dãy đèn bàn thờ sáng) → mâm ngũ quả
+// (thỉnh chuông) → điều ước lớn / vạn sự như ý (xem temple-grand-ceremony.js).
 import * as THREE from '/vendor/three/three.module.js';
 import { createGrandCeremony } from './temple-grand-ceremony.js';
 import { createAltarTable, createLampRow, fortuneTube, fruitTray, incenseBundle, lampProp, lotus, lotusFlower } from './temple-props.js';
 import { URN } from './temple-painted-hall.js';
+import { smallWish, TIERS } from './temple-wishes.js';
 
 const PI = Math.PI;
 const world = new THREE.Vector3();
@@ -40,12 +41,12 @@ export function createTempleRituals(ctx) {
   }
 
   const OFFERINGS = {
-    lotus: { make: () => lotusFlower(lotus), name: 'dâng hoa sen', icon: '🪷', points: 10,
+    lotus: { make: () => lotusFlower(lotus), points: 10,
       effect: () => { audio.play('chime'); helpers.petals(90); } },
-    lamp: { make: () => lampProp(), name: 'thắp đèn lưu ly', icon: '🏮', points: 50,
+    lamp: { make: () => lampProp(), points: 50,
       effect: () => { audio.play('smallBell'); audio.play('chime'); lamps.light(clock); } },
-    fruit: { make: () => fruitTray(), name: 'dâng mâm ngũ quả', icon: '🍊', points: 300,
-      effect: () => { audio.play('bell'); helpers.swingBell(); helpers.petals(240); helpers.boostHalo(3); } }
+    fruit: { make: () => fruitTray(), points: 300,
+      effect: () => { helpers.swingBell(); helpers.petals(240); helpers.boostHalo(3); } }
   };
 
   return {
@@ -106,8 +107,10 @@ export function createTempleRituals(ctx) {
         ]);
         return;
       }
-      const o = OFFERINGS[fx.offering] || OFFERINGS.lotus;
-      hud.toast(`${o.icon} ${fx.nickname} ${o.name} (${fx.giftName} ×${fx.count})`, { gold: fx.offering !== 'lotus' });
+      const kind = OFFERINGS[fx.offering] ? fx.offering : 'lotus';
+      const o = OFFERINGS[kind];
+      const tier = TIERS[kind];
+      hud.toast(`${tier.icon} ${fx.nickname} ${tier.verb} cầu ${smallWish(kind)} (${fx.giftName} ×${fx.count})`, { gold: kind !== 'lotus' });
       crowd.perform(fx.userId, [
         holdProp(o.make),
         ...toAltar(),

@@ -1,4 +1,4 @@
-// Tải sẵn tranh nền + sprite Phật tử/sư của Chùa (public/assets/temple, mô tả trong sprites.json)
+// Tải sẵn tranh nền + sprite Phật tử + chuông/mõ của Chùa (public/assets/temple, mô tả trong sprites.json)
 // TRƯỚC khi dựng cảnh, để người đầu tiên bước vào đã có hình. Ảnh nào lỗi thì thay bằng ảnh trong
 // suốt 1×1: cảnh vẫn chạy, chỉ thiếu hình đó (có ghi lỗi ra console).
 import * as THREE from '/vendor/three/three.module.js';
@@ -24,7 +24,7 @@ function loadTexture(loader, file, colorSpace = THREE.SRGBColorSpace) {
   });
 }
 
-/** @returns {Promise<object>} { devotee: {nam:{tên:{w,h,ax,head,texture}}, nu:{…}}, monk:{…}, backdrop } */
+/** @returns {Promise<object>} { devotee: {nam:{tên:{w,h,ax,head,texture}}, nu:{…}}, props:{mo, chuong}, aura, backdrop } */
 export function preloadTempleArt() {
   if (art) return Promise.resolve(art);
   if (pending) return pending;
@@ -37,8 +37,8 @@ export function preloadTempleArt() {
         jobs.push(loadTexture(loader, `devotee/${gender}/${name}.webp`).then((texture) => { frame.texture = texture; }));
       }
     }
-    for (const [name, frame] of Object.entries(manifest.monk)) {
-      jobs.push(loadTexture(loader, `monk/${name}.webp`).then((texture) => { frame.texture = texture; }));
+    for (const prop of Object.values(manifest.props)) {
+      jobs.push(loadTexture(loader, prop.file).then((texture) => { prop.texture = texture; }));
     }
     jobs.push(loadTexture(loader, manifest.backdrop.file).then((texture) => { manifest.backdrop.texture = texture; }));
     jobs.push(loadTexture(loader, manifest.aura.file, THREE.NoColorSpace).then((texture) => { manifest.aura.texture = texture; }));

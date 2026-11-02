@@ -1,4 +1,4 @@
-// Đạo cụ nghi lễ chùa: nén hương, hoa sen, đèn lưu ly, mâm ngũ quả, ống xăm + chỗ bày lễ trên bàn thờ
+// Đạo cụ chùa: nén hương, hoa sen, đèn, mâm ngũ quả, ống xăm + chỗ bày lễ trên bàn thờ
 // (toạ độ bàn thờ lấy theo tranh nền, xem temple-view.js).
 import * as THREE from '/vendor/three/three.module.js';
 import { disposeObject } from './person-model.js';
@@ -7,7 +7,7 @@ import { screenPoint } from './temple-view.js';
 
 const std = (color, extra = {}) => new THREE.MeshStandardMaterial({ color, roughness: 0.5, ...extra });
 
-/** Hoa sen 3D (hoa đăng, hoa dâng, sen vàng Kim Liên). */
+/** Hoa sen 3D (hoa đăng, hoa dâng, sen vàng của điều ước lớn nhất). */
 export function lotus(scale = 1) {
   const g = new THREE.Group();
   const rings = [[8, 0.55, 0.35, '#ff9ec4'], [10, 0.85, 0.75, '#ffc2d9'], [12, 1.15, 1.1, '#ffe0ea']];
@@ -94,8 +94,9 @@ export function fortuneTube(holdAngle = -1.25) {
   return held(g, holdAngle);
 }
 
-// Đồ lễ đặt lên mặt bàn thờ vẽ trong tranh, hai bên lư hương: bay từ tay người dâng tới chỗ trống, giữ tối đa 8 món.
-const TABLE_X = [0.405, 0.6, 0.355, 0.645, 0.315, 0.685, 0.27, 0.73];
+// Đồ lễ đặt lên mặt bàn thờ vẽ trong tranh, hai bên lư hương (đầu trái bàn đã có mõ): bay từ tay người
+// dâng tới chỗ trống, giữ tối đa 6 món.
+const TABLE_X = [0.6, 0.405, 0.645, 0.69, 0.375, 0.735];
 export function createAltarTable(scene) {
   const placed = [];
   const flights = [];
@@ -128,7 +129,7 @@ export function createAltarTable(scene) {
   };
 }
 
-// Dãy 9 đèn lưu ly trên bậc trên của bàn thờ (tranh), hiện lên và sáng lần lượt khi có người dâng đèn.
+// Dãy 9 ngọn đèn trên bậc trên của bàn thờ (tranh), hiện lên và sáng lần lượt khi có người thắp đèn.
 export function createLampRow(scene) {
   const lamps = [];
   for (let i = 0; i < 9; i += 1) {

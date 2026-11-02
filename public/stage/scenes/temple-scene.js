@@ -7,11 +7,12 @@ import { createCrowd, gridSpot, sideDoorSpot } from './crowd-characters.js';
 import { createParticleSystem } from './particle-effects.js';
 import { animatePerson, disposeObject } from './person-model.js';
 import { buildDevotee } from './temple-devotee-sprite.js';
-import { createTempleMonks } from './temple-monks.js';
 import { addCushion, animatePaintedHall, buildPaintedHall } from './temple-painted-hall.js';
 import { lotus } from './temple-props.js';
 import { createTempleRituals } from './temple-rituals.js';
 import { createTempleCamera, setZoom } from './temple-view.js';
+import { createBellAndMo } from './temple-bell-and-mo.js';
+import { giftLegend } from './temple-wishes.js';
 
 // Hàng quỳ (độ sâu tính từ camera) — hàng đầu là 6 người nhiều điểm nhất, chừa lối giữa theo thảm đỏ.
 const ROWS = [
@@ -29,13 +30,12 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   const camera = createTempleCamera();
   const hall = buildPaintedHall(scene, camera);
   const particles = createParticleSystem(scene, 7000);
-  const monks = createTempleMonks(scene);
+  const fixtures = createBellAndMo(scene);
   pipeline.setBloom({ strength: 0.42, radius: 0.5, threshold: 0.86 });
   const seats = SLOTS.map((p, i) => ({ x: p.x, z: p.z, top: addCushion(scene, p, i < 6) }));
 
   const bowUntil = new Map();
   const lanterns = [];
-  const waves = [];
   let clock = 0;
   let lastMoSound = 0;
   let lastMoFloat = 0;
@@ -43,7 +43,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   let bowAll = { pose: 'bow', start: 0, until: 0 };
 
   hud.setTitle('🪷 CHÙA ONLINE');
-  hud.setHint(['Thả tim = ', '*gõ mõ*', ' · gõ ', '*thắp hương*', ' · ', '*cầu ...*', ' thả hoa đăng · ', '*xin xăm*', ' gieo quẻ']);
+  hud.setHint(['Gõ ', '*thắp hương*', '\nGõ ', '*cầu …*', ' điều bạn mong\nGõ ', '*xin xăm*', ' rút quẻ']);
 
   // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
@@ -56,7 +56,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, -8.3), i, count, { maxCols: 3, dx: 0.4, dz: 0.6 }),
     pose: (model, info, t, walking, dt) => {
       model.seat = seats[info.slot] || null;
-      model.labelLift = info.slot % 2 ? 0.42 : 0.1;
+      model.labelLift = info.slot < 6 ? 0.03 : info.slot % 2 ? 0.32 : 0.06; // hàng đầu: nhãn sát đầu để không che mõ/đồ lễ trên bàn thờ
       if (walking) return animatePerson(model, 'walk', t, dt);
       if (t < bowAll.until) return animatePerson(model, bowAll.pose, t, dt, false, t - bowAll.start); // cả chánh điện lạy cùng nhịp
       return animatePerson(model, t < (bowUntil.get(info.id) || 0) ? 'bow' : 'kneel', t, dt);
@@ -71,8 +71,8 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   const helpers = {
     bowAll: (pose, seconds) => { bowAll = { pose, start: clock, until: clock + seconds }; },
     boostHalo: (seconds) => { haloUntil = Math.max(haloUntil, clock + seconds); },
-    // Sư thỉnh chuông ở góc phải; lúc gỗ chạm chuông thì vòng sóng âm vàng lan ra (bellWave).
-    swingBell: () => monks.ringBell(),
+    // Chuông treo bên phải chánh điện: lắc, ngân, loé sáng (bellHit) — quà lớn đánh nhiều hồi.
+    swingBell: () => fixtures.ringBell(),
     petals: (count) => particles.burst({ position: new THREE.Vector3(0, 3.4, -7.2), box: new THREE.Vector3(5, 1.6, 6.5), count, colors: PETALS,
       speed: 0.25, spread: 1, gravity: -0.25, life: 8, size: 0.085, damping: 0.985 }),
     addIncense(n) {
@@ -104,21 +104,20 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   };
   const rituals = createTempleRituals({ scene, crowd, hall, particles, labels, audio, hud, helpers });
 
-  function bellWave() {
+  // lúc chuông bị đánh: tiếng chuông, hạt sáng vàng toả ra từ thân chuông, tượng Phật rực lên một nhịp
+  function bellHit() {
     audio.play('bell');
-    const ring = new THREE.Mesh(new THREE.TorusGeometry(0.3, 0.012, 8, 48), new THREE.MeshBasicMaterial({ color: '#ffd36b', transparent: true, depthWrite: false }));
-    ring.position.copy(monks.bellCenter());
-    scene.add(ring);
-    waves.push({ born: clock, mesh: ring });
+    particles.burst({ position: fixtures.bellCenter(), count: 46, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.9, spread: 1, gravity: -0.15, life: 1.6, size: 0.09, damping: 0.97 });
+    helpers.boostHalo(1.6);
   }
 
   return {
     scene,
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
-    legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông'], ['1💎', ' Hoa sen'], ['5💎', ' Đèn lưu ly'], ['30💎', ' Mâm ngũ quả'], ['100💎', ' Đại lễ'], ['500💎', ' Kim Liên']],
-    welcome: { line: 'đã vào chánh điện 🙏 Gõ “thắp hương” để dâng hương', speech: (n) => `A Di Đà Phật, chào mừng ${n} đến chánh điện` },
-    probe: (id) => (id === '__monks' ? monks.state() : crowd.probe(id)),
+    legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông'], ...giftLegend()],
+    welcome: { line: 'đã vào chánh điện 🙏 Gõ “thắp hương” để dâng hương', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
+    probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
     update(snapshot) {
       const { state } = snapshot;
       const t = state.totals;
@@ -137,10 +136,10 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
           colors: ['#ffd36b', '#fff1c9'], speed: 0.35, spread: 0, gravity: 0.6, life: 2.4, size: 0.07 });
         if (fx.mode === 'group') helpers.petals(160);
       } else if (fx.kind === 'mo') {
-        monks.strikeMo();
+        fixtures.strikeMo();
         if (clock - lastMoSound > 0.15) { audio.play('mo'); lastMoSound = clock; }
         if (clock - lastMoFloat > 0.6) {
-          labels.float(monks.moCenter(), `+${fx.count} ✨`, { ms: 1400, rise: 70 });
+          labels.float(fixtures.moTop(), `+${fx.count} ✨`, { ms: 1400, rise: 70 });
           lastMoFloat = clock;
         }
         if (!crowd.busy(fx.userId)) bowOne(fx.userId, 1.7);
@@ -156,7 +155,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     frame(dt, t) {
       clock = t;
       animatePaintedHall(hall, t, { haloBoost: t < haloUntil });
-      monks.frame(t, dt, bellWave);
+      fixtures.frame(t, bellHit);
       setZoom(camera, 1 + rituals.cameraPush() * 0.09);
       if (Math.random() < dt * 6) { // hạt sáng vàng bay lên quanh tượng Phật
         particles.burst({ position: hall.aura.randomPoint(), count: 1, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.12, spread: 1, gravity: 0.12, life: 3.2, size: 0.11, damping: 0.99 });
@@ -167,13 +166,6 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       if (hall.sticks.children.length && Math.random() < dt * 9) {
         particles.burst({ position: hall.urnTop.clone().add(new THREE.Vector3((Math.random() - 0.5) * 0.2, 0.45, 0)), count: 1, colors: ['#8a8a8a', '#bdbdbd'],
           speed: 0.12, spread: 0, gravity: 0.15, life: 3.5, size: 0.14, damping: 0.99 });
-      }
-      for (let i = waves.length - 1; i >= 0; i -= 1) {
-        const w = waves[i];
-        const age = t - w.born;
-        w.mesh.scale.setScalar(1 + age * 4.5);
-        w.mesh.material.opacity = Math.max(0, 1 - age / 1.3) * 0.85;
-        if (age > 1.3) disposeObject(waves.splice(i, 1)[0].mesh.removeFromParent());
       }
       crowd.frame(dt, t);
       rituals.frame(t, dt);

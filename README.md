@@ -6,26 +6,28 @@ Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm m�
 |---|---|---|
 | 🍸 **Quán Bar** | Bình luận để vào quán (6 ghế quầy + 16 ô sàn nhảy). Gõ `nhảy` để quẩy, `cụng ly` để nâng ly. Thả tim và bình luận làm đầy **độ quẩy**; đầy thì cả quán mở tiệc. | Quầy rượu, biển neon, sàn LED, quả cầu disco, bartender, pháo hoa |
 | 🏊 **Đua Bơi Vượt Rào** | Cả phòng hợp sức đẩy vận động viên bơi 1000 m qua 4 bức tường. Thả tim gọi vịt phao, gõ `cố lên`, follow/share gọi ván lướt, quà gọi thuyền, cá heo, cá mập, cá voi, tàu ngầm. Thắng đủ 7 vòng là **VÔ ĐỊCH**. | Biển hoàng hôn, dây phao, tường gạch có thanh máu, trợ thủ bơi vào đẩy |
-| 🪷 **Chùa Online** | Thả tim gõ mõ, follow/share thỉnh chuông, gõ `thắp hương`, `cầu …` (thả hoa đăng mang lời cầu) hoặc `xin xăm` (gieo quẻ). Quà để dâng hoa sen, đèn lưu ly hoặc làm đại lễ. 6 người nhiều điểm nhất quỳ hàng đầu. | Tranh chánh điện vẽ tay; Phật tử vẽ tay quỳ trên bồ đoàn, đi lên lư hương, dâng lễ; sư gõ mõ, sư thỉnh chuông; tờ giải quẻ |
+| 🪷 **Chùa Online** | Thả tim gõ mõ, follow/share thỉnh chuông, gõ `thắp hương`, `cầu …` (thả hoa đăng mang lời cầu) hoặc `xin xăm` (gieo quẻ). Mỗi mức quà là một **lời cầu đời thường** của người tặng (bình an, sức khỏe, tài lộc, hết ế, tiền vào như nước…). 6 người nhiều điểm nhất quỳ hàng đầu. | Tranh chánh điện vẽ tay, tượng toả hào quang; Phật tử vẽ tay quỳ trên bồ đoàn, đi lên lư hương, dâng lễ; chuông đồng treo, mõ trên bàn thờ; tờ giải quẻ |
 
 ## Hiệu ứng theo chức năng — quà càng lớn màn càng hoành tráng
 
 | Bậc quà | 🍸 Quán Bar | 🏊 Đua bơi | 🪷 Chùa |
 |---|---|---|---|
-| 1💎 | Bia: bartender rót, cốc bay tới tay khách, khách nâng ly | Chân vịt: bơi nhanh ×1,8 | Dâng hoa sen: người dâng đi lên bàn thờ, nâng hoa quá đầu, hoa bay đặt lên bàn thờ |
-| 5💎 | Cocktail: lắc bình mạnh, rót dòng màu | Ván lướt nảy trên sóng | Đèn lưu ly: cả dãy đèn trên bàn thờ lần lượt sáng |
+| 1💎 | Bia: bartender rót, cốc bay tới tay khách, khách nâng ly | Chân vịt: bơi nhanh ×1,8 | Cầu bình an: người tặng đi lên bàn thờ, nâng hoa quá đầu, hoa bay đặt lên bàn thờ |
+| 5💎 | Cocktail: lắc bình mạnh, rót dòng màu | Ván lướt nảy trên sóng | Cầu sức khỏe: thắp đèn, cả dãy đèn trên bàn thờ lần lượt sáng |
 | 10💎 | | Thuyền rẽ sóng để vệt bọt | |
-| 30💎 | Champagne: bật nút, bọt vàng phun, đèn rọi khách | Cá heo nhảy vòng cung | Mâm ngũ quả: dâng mâm, thỉnh chuông, mưa cánh sen |
+| 30💎 | Champagne: bật nút, bọt vàng phun, đèn rọi khách | Cá heo nhảy vòng cung | Cầu tài lộc: dâng mâm ngũ quả, chuông ngân, mưa cánh hoa |
 | 99💎 | | Cá mập lộ vây rồi lao lên | |
-| 100–199💎 | Tháp champagne: xếp từng ly, rót tràn, cả quán nâng ly | Cá voi phóng vọt khỏi mặt nước, camera rung | Đại lễ cầu an: cả chánh điện lạy 3 lạy theo 3 hồi chuông |
-| 500💎 | Mở tiệc: pháo giấy, laser, đèn chớp nhẹ, pháo hoa | Tàu ngầm trồi lên kèm còi | Đại lễ Kim Liên: sen vàng khổng lồ nở, hoa đăng bay khắp chánh điện, camera tiến vào |
+| 100–199💎 | Tháp champagne: xếp từng ly, rót tràn, cả quán nâng ly | Cá voi phóng vọt khỏi mặt nước, camera rung | Điều ước lớn: băng rôn + giọng đọc lời cầu của người tặng (hết ế, tiền vào như nước, thăng chức…), cả chánh điện lạy 3 lạy theo 3 hồi chuông |
+| 500💎 | Mở tiệc: pháo giấy, laser, đèn chớp nhẹ, pháo hoa | Tàu ngầm trồi lên kèm còi | Vạn sự như ý: sen vàng nở giữa lối, hoa đăng bay khắp chánh điện, camera tiến vào |
 
 **Bình luận ở chùa** đều là nghi thức có đầu có cuối:
 - *Thắp hương*: người đó đứng dậy, cầm 3 nén hương tới bên lư, thắp, nâng lên trán, vái 3 vái, cắm hương rồi về chỗ quỳ.
 - *Cầu …*: chắp tay, thả hoa đăng mang lời cầu từ tay.
 - *Xin xăm*: lắc ống xăm tới khi que xăm văng ra thì tờ quẻ mới mở.
 
-Thả tim là gõ mõ, follow/share là thỉnh chuông kèm vòng sóng âm và cả chánh điện cùng vái.
+Thả tim là gõ mõ (dùi gõ xuống mõ trên bàn thờ), follow/share là thỉnh chuông: chuông đồng treo bên phải lắc, ngân, loé sáng, tượng rực lên và cả chánh điện cùng vái.
+
+Tên các mức quà cố ý là lời cầu đời thường, không dùng tên nghi lễ hay danh xưng của tôn giáo nào (`public/stage/scenes/temple-wishes.js`).
 
 Nhân vật đi chậm dần khi tới chỗ và quỳ/ngồi xuống thành một động tác liền, không giật.
 
@@ -35,7 +37,7 @@ Nhân vật đi chậm dần khi tới chỗ và quỳ/ngồi xuống thành m�
   - Bar: nhạc house.
   - Đua bơi: sóng biển, marimba.
   - Chùa: tiếng ngân trầm, mõ tụng kinh, chuông nhỏ.
-- Hiệu ứng mô phỏng đúng vật: chuông đồng nhiều bội âm, mõ gỗ, ly thuỷ tinh, nút sâm panh, cồng đại lễ.
+- Hiệu ứng mô phỏng đúng vật: chuông đồng nhiều bội âm, mõ gỗ, ly thuỷ tinh, nút sâm panh, cồng khi có quà lớn.
 - Bật/tắt nhạc nền và chỉnh âm lượng riêng trong mục **Màn hình**.
 - Khung xem trước trong trang điều khiển mặc định im lặng để không kêu trùng với OBS; bật **🔊 Nghe ở khung xem trước** nếu muốn nghe ngay tại đó.
 - Mở `/stage` trong tab trình duyệt thường thì bấm vào màn hình một lần (trình duyệt chặn tiếng tới lần bấm đầu); OBS không cần.
@@ -88,7 +90,7 @@ Trên trang điều khiển, nhập `@tên_tiktok` (hoặc dán link live) rồi
 
 Trên trang điều khiển, chọn game, rồi dùng mục **⚡ Demo nhanh**:
 - **👋 Ít người vào** (3 người, chào riêng từng người), **🚶 Đông người vào** (35 người, chào cả đoàn), **📢 Phòng trên 1000 người** (chỉ hiện dòng chữ).
-- Mỗi hiệu ứng theo bình luận, tim, follow và quà của game đó có một nút riêng, ví dụ Bar: "nhảy", "cụng ly", bia → mở tiệc; Đua bơi: "cố lên", vịt phao → tàu ngầm, về đích; Chùa: "thắp hương", "cầu …", "xin xăm", gõ mõ, thỉnh chuông, đại lễ.
+- Mỗi hiệu ứng theo bình luận, tim, follow và quà của game đó có một nút riêng, ví dụ Bar: "nhảy", "cụng ly", bia → mở tiệc; Đua bơi: "cố lên", vịt phao → tàu ngầm, về đích; Chùa: "thắp hương", "cầu …", "xin xăm", gõ mõ, thỉnh chuông, điều ước lớn, vạn sự như ý.
 - **▶ Chạy toàn bộ hiệu ứng** phát lần lượt mọi hiệu ứng của game đang chọn.
 
 Xem lớn bằng cách mở `/stage` trong tab mới, bấm vào màn hình một lần để bật âm thanh (OBS không cần bấm).
@@ -109,13 +111,17 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 | `TIKFINITY_WS_URL` | `ws://127.0.0.1:21213/` | Chỉ nhận địa chỉ trên chính máy này |
 | `START_GAME` | `bar` | `bar` / `swim` / `temple` |
 
+## Bố cục màn hình theo giao diện TikTok LIVE
+
+Trên điện thoại người xem, TikTok phủ lên khung 1080×1920: thanh chủ phòng + người xem (0–230 px), thông báo quà bên trái (~900–1150 px), bình luận (~1150–1700 px, 70% bên trái), ô chat + nút quà (1720 px trở xuống), tim bay dọc mép phải. Vì vậy mọi chữ và bảng của game nằm trong dải 232–1150 px: tiêu đề + chỉ số ngay dưới thanh TikTok, **Cách tham gia** (lệnh gõ + bậc quà) bên trái và **bảng xếp hạng** bên phải ở giữa màn, thẻ chào và băng rôn ở giữa, thông báo của game bên phải. Phần dưới chỉ để cảnh.
+
 ## Tranh và nhân vật của Chùa Online
 
-Chùa dùng **tranh vẽ** thay cho khối 3D: nền chánh điện + Phật tử (nam/nữ, 11–12 tư thế) + 2 vị sư, đều là ảnh chủ dự án tạo bằng Gemini, nằm trong `public/assets/temple/` (WebP, ~1,1 MB) kèm `sprites.json` (cỡ thật bằng mét, mốc chân, đỉnh đầu của từng khung).
+Chùa dùng **tranh vẽ** thay cho khối 3D: nền chánh điện + Phật tử (nam/nữ, 11–12 tư thế) + chuông, mõ (tách từ ảnh sư), đều là ảnh chủ dự án tạo bằng Gemini, nằm trong `public/assets/temple/` (WebP, ~1,1 MB) kèm `sprites.json` (cỡ thật bằng mét, mốc chân, đỉnh đầu của từng khung).
 
 - Camera được khớp phối cảnh của tranh (chân trời 56,3% từ trên, camera cao 0,93 m — `public/stage/scenes/temple-view.js`). Người ở gần camera được thu nhỏ bớt để hàng trước không che bàn thờ.
 - Mỗi tư thế là một khung vẽ: đứng/đi/quỳ/vái/lạy/dâng lễ nhìn từ sau lưng; đứng/đi/cầm hương/vái hương nhìn nghiêng (lật ảnh khi đi sang trái). Đi thì đổi khung chân theo quãng đường nên chân không trượt.
-- Đổi tranh: tạo ảnh mới (nền hồng tím `#FF00FF` cho nhân vật), đặt vào `art-inbox/chua/raw/` (thư mục này không lên git), rồi chạy 3 script trong `scripts/temple-art/` (tách nền → làm sạch nền chánh điện → xuất WebP + `sprites.json`). Đổi bố cục tranh nền thì phải đo lại chân trời và độ sâu trong `temple-view.js`.
+- Đổi tranh: tạo ảnh mới (nền hồng tím `#FF00FF` cho nhân vật), đặt vào `art-inbox/chua/raw/` (thư mục này không lên git), rồi chạy các script trong `scripts/temple-art/` theo thứ tự: `key_sprites` → `backdrop_clean` → `export_temple_sprites` → `buddha_glow_layer` (dáng tượng cho hào quang) → `temple_props_crop` (chuông, mõ). Đổi bố cục tranh nền thì phải đo lại chân trời và độ sâu trong `temple-view.js`.
 
 ## Đã sửa gì so với code tham khảo
 

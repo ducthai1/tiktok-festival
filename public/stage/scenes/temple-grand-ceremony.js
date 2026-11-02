@@ -1,11 +1,13 @@
-// Đại lễ (quà lớn): cả chánh điện lạy 3 lạy theo 3 hồi chuông, mưa cánh sen vàng, hào quang rực.
-// Đại lễ Kim Liên (quà lớn nhất): thêm đài sen vàng khổng lồ nở sau bàn thờ, đèn hoa đăng bay khắp
-// chánh điện và camera chầm chậm tiến vào.
+// Điều ước lớn (quà lớn): băng rôn lời cầu của người tặng (hết ế, tiền vào như nước…), cả chánh điện
+// lạy 3 lạy theo 3 hồi chuông, mưa cánh hoa vàng, hào quang rực.
+// Vạn sự như ý (quà lớn nhất): thêm sen vàng nở giữa lối thảm đỏ, đèn hoa đăng bay khắp chánh điện
+// và camera chầm chậm tiến vào.
 import * as THREE from '/vendor/three/three.module.js';
 import { disposeObject } from './person-model.js';
 import { glowSprite } from './temple-painted-hall.js';
 import { lotus } from './temple-props.js';
 import { floorPoint } from './temple-view.js';
+import { bigWish } from './temple-wishes.js';
 
 const GOLD_PETALS = ['#ffd36b', '#ffe9a8', '#ff9ec4', '#fff1c9'];
 
@@ -25,7 +27,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
   function threeBows() {
     helpers.bowAll('prostrate', 6.6);
     [0, 2.2, 4.4].forEach((s, i) => later(s, () => {
-      audio.play(i === 2 ? 'gong' : 'bell');
+      if (i === 2) audio.play('gong'); // tiếng chuông phát lúc chuông bị đánh (temple-scene)
       helpers.swingBell();
       particles.burst({ position: hall.haloCenter, count: 120, colors: ['#ffd36b', '#fff1c9'], speed: 2.4, spread: 1, gravity: 0, life: 1.6, size: 0.1 });
     }));
@@ -70,7 +72,9 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
       threeBows();
       helpers.boostHalo(grand ? 14 : 8);
       petalRain(grand ? 700 : 420);
-      hud.banner(grand ? '🪷 ĐẠI LỄ KIM LIÊN 🪷' : '🙏 ĐẠI LỄ CẦU AN 🙏', `${fx.nickname} · ${fx.giftName} ×${fx.count}`, grand ? 7000 : 5000);
+      const wish = bigWish(level);
+      hud.banner(`${wish.icon} ${wish.title} ${wish.icon}`, `${fx.nickname} · ${fx.giftName} ×${fx.count}`, grand ? 7000 : 5000);
+      audio.speak(`${fx.nickname} cầu ${wish.spoken}`);
       if (grand) {
         audio.play('gong');
         bloomGiantLotus();
@@ -79,7 +83,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
         push = { start: clock, until: clock + 12 };
       }
     },
-    // Camera tiến vào rồi lùi ra êm trong đại lễ Kim Liên (0 = vị trí thường).
+    // Camera tiến vào rồi lùi ra êm khi có quà lớn nhất (0 = vị trí thường).
     cameraPush() {
       if (clock > push.until) return 0;
       const u = (clock - push.start) / (push.until - push.start);

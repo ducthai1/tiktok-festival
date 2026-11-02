@@ -27,11 +27,13 @@ test('mỗi bộ Phật tử có đủ khung cho mọi tư thế, file tồn t�
   }
 });
 
-test('sư gõ mõ / thỉnh chuông đủ hai khung, nền chánh điện đúng khổ 9:16', () => {
-  for (const name of ['go-mo-1', 'go-mo-2', 'thinh-chuong-1', 'thinh-chuong-2']) {
-    assert.ok(manifest.monk[name], name);
-    assert.ok(fs.existsSync(path.join(root, 'monk', `${name}.webp`)), name);
+test('chuông + mõ (tách từ tranh sư) có file, nền chánh điện đúng khổ 9:16', () => {
+  for (const name of ['mo', 'chuong']) {
+    const prop = manifest.props[name];
+    assert.ok(prop && fs.existsSync(path.join(root, prop.file)), name);
+    assert.ok(prop.px[0] > 50 && prop.px[1] > 50, name);
   }
+  assert.ok(!manifest.monk, 'ảnh sư không còn vẽ trong game');
   assert.ok(fs.existsSync(path.join(root, manifest.backdrop.file)));
   // lớp hào quang của tượng: file có thật, vùng phủ nằm trong khung hình, tâm nằm trong vùng phủ
   assert.ok(fs.existsSync(path.join(root, manifest.aura.file)));
