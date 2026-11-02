@@ -142,11 +142,23 @@ connectLiveSocket({
 
 let last = performance.now();
 let frameErrors = 0;
+// ?fps=1: góc màn hiện số khung hình/giây thật của trang (đo máy phát / OBS có vẽ kịp không)
+const fpsMeter = new URLSearchParams(location.search).has('fps') ? Object.assign(document.createElement('div'), {
+  style: 'position:fixed;left:8px;bottom:8px;z-index:99;padding:6px 10px;background:#000c;color:#7f7;font:700 28px monospace;border-radius:8px'
+}) : null;
+if (fpsMeter) document.body.append(fpsMeter);
+let fpsFrames = 0;
+let fpsSince = performance.now();
 function loop(now) {
   requestAnimationFrame(loop); // đặt khung sau TRƯỚC: lỗi một khung không được làm đứng hình cả buổi live
   // dt không bao giờ âm/quá lớn: tab bị ẩn rồi hiện lại, hay đồng hồ lệch, nhân vật cũng không bị kéo lùi/nhảy cóc.
   const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
   last = Math.max(last, now);
+  if (fpsMeter && (fpsFrames += 1) && now - fpsSince >= 1000) {
+    fpsMeter.textContent = `${Math.round((fpsFrames * 1000) / (now - fpsSince))} fps`;
+    fpsFrames = 0;
+    fpsSince = now;
+  }
   if (!current) return;
   try {
     current.frame(dt, last / 1000); // đồng hồ cảnh chỉ tiến (kể cả khi trình kiểm thử đã tua trước bằng step)
