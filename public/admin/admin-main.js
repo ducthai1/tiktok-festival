@@ -1,5 +1,6 @@
 // Trang điều khiển: đăng nhập bằng token, kết nối live, đổi game, thử, cài đặt màn hình.
 import { connectLiveSocket } from '/static/shared/live-socket-client.js';
+import { createDemoRunner, renderDemoButtons } from './admin-demo-scenarios.js';
 import { setupTestPanel } from './admin-test-panel.js';
 
 const $ = (id) => document.getElementById(id);
@@ -98,6 +99,7 @@ function renderCommands() {
     return b;
   }));
   testPanel.renderChats(activeGame);
+  renderDemoButtons({ arrivalsRoot: $('demo-arrivals'), effectsRoot: $('demo-effects'), game: activeGame, runner: demo });
 }
 
 function renderState(m) {
@@ -125,7 +127,7 @@ function renderLive(status) {
   el.className = `status ${status.state}`;
   el.textContent = status.message;
   const locked = liveState === 'connected';
-  for (const b of document.querySelectorAll('[data-test], [id^="test-"] button, #test-crowd, [id^="test-arrive"]')) b.disabled = locked;
+  for (const b of document.querySelectorAll('[data-test], [id^="test-"] button, #test-crowd, [id^="test-arrive"], #demo button')) b.disabled = locked;
   $('test-note').textContent = locked ? 'Đang live thật: nút thử bị khoá để không lẫn tương tác giả vào buổi live.' : 'Sự kiện thử hiện nhãn “CHẾ ĐỘ THỬ” trên màn hình.';
 }
 
@@ -150,6 +152,7 @@ function appendLog(e) {
 }
 
 const testPanel = setupTestPanel({ $, run, socket, toast });
+const demo = createDemoRunner({ socket, toast, setStatus: (text) => { $('demo-status').textContent = text; } });
 $('connect-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'connect', provider: $('provider').value, username: $('username').value });

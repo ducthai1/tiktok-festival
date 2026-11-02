@@ -35,6 +35,10 @@ button.ghost { background: transparent; border: 1px solid var(--line); }
 button.tiny { padding: 3px 9px; font-size: 12px; }
 button:disabled { opacity: 0.4; cursor: not-allowed; }
 button.chip { background: #241d35; border: 1px solid var(--line); font-weight: 600; }
+button.big { padding: 10px 18px; font-size: 16px; }
+h3 { margin: 14px 0 0; font-weight: 600; }
+a { color: var(--gold); }
+#demo-status:empty { display: none; }
 .games { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .games button { padding: 18px 10px; font-size: 18px; background: #241d35; border: 2px solid var(--line); }
 .games button.active { border-color: var(--gold); background: linear-gradient(135deg, #5a2a6b, #3a1d4f); box-shadow: 0 0 0 3px rgba(255, 211, 107, 0.25); }
@@ -45,7 +49,7 @@ button.chip { background: #241d35; border: 1px solid var(--line); font-weight: 6
 .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--ok); }
 .dot.off { background: var(--bad); }
 .toggle { display: flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 10px; }
-#preview { width: 270px; height: 480px; border: 1px solid var(--line); border-radius: 12px; background: #000; }
+#preview { width: 360px; height: 640px; border: 1px solid var(--line); border-radius: 12px; background: #000; }
 .board { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
 .log { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow: auto; font-size: 13px; display: grid; gap: 3px; }
 .log li { padding: 4px 8px; border-radius: 8px; background: #0b0912; overflow-wrap: anywhere; }

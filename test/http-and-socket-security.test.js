@@ -90,6 +90,14 @@ test('HTTP and WebSocket refuse foreign hosts/origins; stage is read-only; admin
   assert.equal(fx.game, 'temple');
   await waitFor(stage.inbox, (m) => m.t === 'state' && m.testMode === true);
 
+  // Kịch bản demo "đông người vào": vài chục sự kiện liền nhau không được làm trang điều khiển bị ngắt.
+  for (let i = 0; i < 60; i += 1) admin.ws.send(JSON.stringify({ t: 'test', id: 100 + i, kind: 'member', viewer: 500 + i, name: `Khách ${i}` }));
+  await waitFor(admin.inbox, (m) => m.t === 'reply' && m.id === 159 && m.ok);
+  // …nhưng màn hình chưa đăng nhập gửi dồn dập thì vẫn bị ngắt.
+  const flood = await openSocket(port);
+  for (let i = 0; i < 40; i += 1) flood.ws.send(JSON.stringify({ t: 'ping' }));
+  await new Promise((resolve) => flood.ws.once('close', resolve));
+
   admin.ws.send(JSON.stringify({ t: 'connect', id: 3, username: '@streamer_vn', provider: 'tiktok' }));
   await waitFor(admin.inbox, (m) => m.t === 'reply' && m.id === 3 && m.ok);
   admin.ws.send(JSON.stringify({ t: 'test', id: 4, kind: 'chat', comment: 'hi' }));

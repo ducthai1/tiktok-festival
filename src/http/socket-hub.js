@@ -29,11 +29,14 @@ export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage,
     ws.role = 'stage';
     ws.alive = true;
     ws.authFailures = 0;
-    const allow = createRateLimiter(30, 5000);
+    // Màn hình chưa đăng nhập: 30 tin/5 giây là thừa. Trang điều khiển đã có token được nới hơn
+    // vì kịch bản demo "đông người vào" gửi vài chục sự kiện thử liền nhau.
+    const allowGuest = createRateLimiter(30, 5000);
+    const allowAdmin = createRateLimiter(400, 5000);
     ws.on('pong', () => { ws.alive = true; });
     ws.on('error', () => {});
     ws.on('message', (raw, isBinary) => {
-      if (isBinary || !allow()) return ws.close(1008, 'Quá nhiều tin nhắn');
+      if (isBinary || !(ws.role === 'admin' ? allowAdmin() : allowGuest())) return ws.close(1008, 'Quá nhiều tin nhắn');
       let message;
       try {
         message = JSON.parse(raw.toString());

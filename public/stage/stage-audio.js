@@ -77,6 +77,15 @@ export function createStageAudio() {
   }
 
   return {
+    // Trình duyệt thường chặn âm thanh tới khi người dùng bấm vào trang; OBS thì không chặn.
+    unlock() {
+      try {
+        audio();
+        if ('speechSynthesis' in window) speechSynthesis.speak(new SpeechSynthesisUtterance(''));
+      } catch {
+        // không có WebAudio — bỏ qua
+      }
+    },
     play(name) {
       try {
         sounds[name]?.();

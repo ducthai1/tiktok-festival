@@ -113,9 +113,12 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
   };
 }
 
-// Cửa vào: 1 người thì đi chính giữa; cả đoàn thì 6 người một hàng, các hàng nối đuôi phía sau.
-export function ENTRANCE_SPREAD(base, index, count = 6) {
-  return gridSpot(base, index, count, { maxCols: 6, dx: 0.75, dz: 0.8 });
+// Cửa hông hai bên (ngoài khung hình) cho cả đoàn: chẵn bên trái, lẻ bên phải, xếp hàng chờ ra ngoài.
+// Đi vào từ sát camera thì nhân vật phóng to che kín màn hình khi đoàn đông.
+export function sideDoorSpot(index, { x, z, dz = 0.9, depth = 6 }) {
+  const side = index % 2 ? 1 : -1;
+  const k = Math.floor(index / 2);
+  return new THREE.Vector3(side * (x + Math.floor(k / depth) * 0.9), 0, z + (k % depth) * dz);
 }
 
 // Xếp người theo lưới căn giữa quanh base: hàng đầu ở base.z, các hàng sau lùi thêm dz.

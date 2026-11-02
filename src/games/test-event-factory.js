@@ -12,11 +12,12 @@ const SAMPLE_GIFTS = {
 
 export const TEST_GIFT_TIERS = Object.keys(SAMPLE_GIFTS).map(Number);
 
-export function buildTestEvent({ kind, viewer = 1, comment = '', diamonds = 1, count = 1, likes = 5, viewerCount = 0 }, seq) {
+export function buildTestEvent({ kind, viewer = 1, name = '', comment = '', diamonds = 1, count = 1, likes = 5, viewerCount = 0 }, seq) {
   // Giả lập số người xem để thử chế độ "phòng đông chỉ hiện chữ".
   if (kind === 'viewers') return { type: 'viewers', viewerCount: Math.max(0, Math.min(1000000, Number(viewerCount) || 0)) };
   const n = Math.max(1, Math.min(99999, Math.floor(Number(viewer)) || 1));
-  const user = { id: `test-${n}`, uniqueId: `khach_thu_${n}`, nickname: `Khách thử ${n}`, avatar: '' };
+  // name: tên giả cho kịch bản demo (chỉ chạy được khi KHÔNG live, màn hình có nhãn CHẾ ĐỘ THỬ)
+  const user = { id: `test-${n}`, uniqueId: `khach_thu_${n}`, nickname: String(name || '').slice(0, 40) || `Khách thử ${n}`, avatar: '' };
   const base = { type: kind, id: `test-${seq}`, user };
   if (kind === 'chat') return { ...base, comment: String(comment).slice(0, 200) || 'xin chào' };
   if (kind === 'like') return { ...base, likeCount: Math.max(1, Math.min(50, Number(likes) || 5)) };

@@ -43,6 +43,14 @@
       <div id="game-commands" class="row wrap"></div>
     </section>
 
+    <section class="card" id="demo">
+      <h2>⚡ Demo nhanh <span class="muted small">— bấm để xem ngay trên màn hình (chỉ khi chưa live)</span></h2>
+      <div class="row wrap" id="demo-arrivals"></div>
+      <h3 class="small muted">Hiệu ứng theo bình luận / tim / follow / quà của game đang chọn</h3>
+      <div class="row wrap" id="demo-effects"></div>
+      <p id="demo-status" class="status idle"></p>
+    </section>
+
     <section class="card split">
       <div>
         <h2>3 · Màn hình OBS</h2>
@@ -51,6 +59,7 @@
           <li>URL: <code id="stage-url"></code> <button type="button" id="copy-stage" class="tiny">Chép</button></li>
           <li>Rộng <b>1080</b> × Cao <b>1920</b>; bật “Control audio via OBS” để thu âm thanh game.</li>
         </ol>
+        <p><a id="open-stage" href="/stage" target="_blank" rel="noopener">↗ Mở màn hình lớn trong tab mới</a> <span class="muted small">(bấm vào màn hình một lần để bật âm thanh)</span></p>
       </div>
       <iframe id="preview" title="Xem trước màn hình OBS" src="/stage?preview=1"></iframe>
     </section>

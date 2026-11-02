@@ -25,6 +25,18 @@ let currentId = '';
 let switching = null;
 let latest = null;
 
+// Mở /stage trong tab thường (không phải OBS, không phải khung xem trước): nhắc bấm để bật tiếng.
+if (!isPreview && !window.obsstudio && !navigator.userActivation?.hasBeenActive) {
+  const hint = document.getElementById('sound-hint');
+  hint.hidden = false;
+  const unlock = () => {
+    audio.unlock();
+    hint.hidden = true;
+  };
+  window.addEventListener('pointerdown', unlock, { once: true });
+  window.addEventListener('keydown', unlock, { once: true });
+}
+
 function fit() {
   const scale = Math.min(window.innerWidth / STAGE_WIDTH, window.innerHeight / STAGE_HEIGHT);
   stageEl.style.transform = `translate(-50%, -50%) scale(${scale})`;

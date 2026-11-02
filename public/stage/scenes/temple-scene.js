@@ -3,7 +3,7 @@
 import * as THREE from '/vendor/three/three.module.js';
 import { formatNumber } from '../stage-hud.js';
 import { createParticleSystem } from './particle-effects.js';
-import { createCrowd, ENTRANCE_SPREAD, gridSpot } from './crowd-characters.js';
+import { createCrowd, gridSpot, sideDoorSpot } from './crowd-characters.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 import { buildTempleHall } from './temple-hall.js';
 
@@ -48,13 +48,14 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   hud.setTitle('🪷 CHÙA ONLINE');
   hud.setHint(['Thả tim = ', '*gõ mõ*', ' · gõ ', '*thắp hương*', ' · ', '*cầu ...*', ' thả hoa đăng · ', '*xin xăm*', ' gieo quẻ']);
 
-  // Phật tử vào từ cổng (phía người xem), đi dọc thảm đỏ lên chỗ quỳ, mặt hướng về bàn thờ.
+  // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
     scene,
     labels,
     build: (id) => buildPerson({ id, robe: ROBE }),
     place: (info) => slotPosition(info.slot),
-    entrance: (i, count) => ENTRANCE_SPREAD(new THREE.Vector3(0, 0, 10.5), i, count),
+    // 1 người: đi từ cổng dọc thảm đỏ; cả đoàn: vào từ hai cửa hông để không che màn hình
+    entrance: (i, count) => (count <= 1 ? new THREE.Vector3(0, 0, 9.5) : sideDoorSpot(i, { x: 6.8, z: 0.5, dz: 1 })),
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, count > 1 ? 0.9 : 1.6), i, count, { maxCols: 4, dx: 0.75, dz: 0.8 }),
     pose: (model, info, t, walking) => {
       posePerson(model, walking ? 'walk' : t < Math.max(bowUntil.get(info.id) || 0, bowAllUntil) ? 'bow' : 'kneel', t);

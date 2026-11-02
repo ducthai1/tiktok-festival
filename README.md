@@ -52,6 +52,15 @@ Trên trang điều khiển, nhập `@tên_tiktok` (hoặc dán link live) rồi
 - **TikTok trực tiếp** (mặc định): thư viện `tiktok-live-connector` đọc phòng live công khai, **không cần đăng nhập, cookie hay mật khẩu**. Bản miễn phí của dịch vụ ký Euler Stream có giới hạn số lần kết nối; nếu bị giới hạn thì đặt `EULER_API_KEY`.
 - **TikFinity**: mở app TikFinity Desktop trên cùng máy, chọn nguồn "Qua app TikFinity".
 
+### Demo nhanh — xem trước để chọn
+
+Trên trang điều khiển, chọn game, rồi dùng mục **⚡ Demo nhanh**:
+- **👋 Ít người vào** (3 người, chào riêng từng người), **🚶 Đông người vào** (35 người, chào cả đoàn), **📢 Phòng trên 1000 người** (chỉ hiện dòng chữ).
+- Mỗi hiệu ứng theo bình luận, tim, follow và quà của game đó có một nút riêng, ví dụ Bar: "nhảy", "cụng ly", bia → mở tiệc; Đua bơi: "cố lên", vịt phao → tàu ngầm, về đích; Chùa: "thắp hương", "cầu …", "xin xăm", gõ mõ, thỉnh chuông, đại lễ.
+- **▶ Chạy toàn bộ hiệu ứng** phát lần lượt mọi hiệu ứng của game đang chọn.
+
+Xem lớn bằng cách mở `/stage` trong tab mới, bấm vào màn hình một lần để bật âm thanh (OBS không cần bấm).
+
 ### Thử trước khi live
 
 Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và người vào phòng giả mang tên "Khách thử N". Có nút "25 người vào" để xem chào cả đoàn, và ô đặt số người xem giả để xem kiểu chỉ hiện chữ. Màn hình sẽ hiện nhãn vàng **CHẾ ĐỘ THỬ**. Khi đang kết nối live thật, các nút này **tự khoá**, để không ai lỡ phát tương tác bịa ra cho người xem thật.

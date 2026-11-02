@@ -3,7 +3,7 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { animateBarRoom, buildBarRoom, FLOOR_POSITIONS, STOOL_POSITIONS } from './bar-room.js';
 import { createParticleSystem } from './particle-effects.js';
-import { createCrowd, ENTRANCE_SPREAD, gridSpot } from './crowd-characters.js';
+import { createCrowd, gridSpot, sideDoorSpot } from './crowd-characters.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 
 const DRINK_NAMES = { beer: 'Bia', cocktail: 'Cocktail', champagne: 'Champagne', tower: 'Tháp champagne', party: 'MỞ TIỆC' };
@@ -52,13 +52,14 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
   hud.setHint(['Bình luận để ', '*vào quán*', ' · gõ ', '*nhảy*', ' để quẩy · ', '*cụng ly*', ' để nâng ly']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
 
-  // Khách vào từ phía người xem (mép dưới màn hình) rồi đi tới ghế/ô sàn của mình.
+  // Khách vào từ cửa hông rồi đi tới ghế/ô sàn của mình.
   const crowd = createCrowd({
     scene,
     labels,
     build: (id) => buildPerson({ id }),
     place: (info) => (info.seat < 6 ? STOOL_POSITIONS[info.seat] : FLOOR_POSITIONS[info.seat - 6]),
-    entrance: (i, count) => ENTRANCE_SPREAD(new THREE.Vector3(0, 0, 9.5), i, count),
+    // vào từ cửa hông hai bên quán (1 người thì cửa trái)
+    entrance: (i) => sideDoorSpot(i, { x: 5.4, z: -1.0 }),
     // khách ghé đứng giữa sàn nhảy, 8 người một hàng (đoàn tới 40 người vẫn nằm trong khung hình)
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, count > 1 ? 0.6 : 3.2), i, count, { maxCols: 8, dx: 0.72, dz: 0.75 }),
     pose: (model, info, t, walking) => {
