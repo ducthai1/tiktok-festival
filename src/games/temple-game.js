@@ -31,8 +31,9 @@ export function createTempleGame({ random = Math.random } = {}) {
   const devotees = new Map();
   const merit = new Map(); // điểm tâm thành của phiên, giữ cả khi người đó đã rời chánh điện
   const hintCooldown = createCooldown(30000);
-  const prayerCooldown = createCooldown(30000);
-  let lastPrayerAt = -Infinity; // cả chánh điện: tối đa 1 hoa đăng / 5 giây
+  const sayCooldown = createCooldown(4000); // bình luận: mỗi người tối đa 1 bong bóng / 4 giây
+  const wishes = new Map(); // lời cầu gần nhất của từng người: tặng quà (từ bậc 3) thì thả hoa đăng mang lời này
+  const WISH_KEEP_MS = 5 * 60 * 1000;
   const totals = { merit: 0, incense: 0, mo: 0, bell: 0 };
   const fortuneQueue = [];
   let currentFortune = null;
@@ -90,13 +91,20 @@ export function createTempleGame({ random = Math.random } = {}) {
       if (hintCooldown(user.id, now)) fx.push({ kind: 'hint', userId: user.id, text: HINTS[asked] });
       return;
     }
+    // Bình luận chỉ có phản hồi đơn giản: chữ hiện thành bong bóng trên đầu người đó (lời cầu có 🙏).
+    // Hiệu ứng đẹp (hoa đăng mang lời cầu bay lên + đọc thành tiếng) để dành cho lúc họ tặng quà.
+    if (!isCleanForDisplay(comment) || !sayCooldown(user.id, now)) return;
     const isPrayer = startsWithPhrase(comment, PRAYER_START) || containsPhrase(comment, PRAYER_WORDS);
-    // xét giới hạn chung TRƯỚC (không tốn lượt của người gõ khi chánh điện đang bận)
-    if (isPrayer && now - lastPrayerAt >= 5000 && isCleanForDisplay(comment) && prayerCooldown(user.id, now)) {
-      lastPrayerAt = now;
-      addMerit(user, 10);
-      fx.push({ kind: 'prayer', userId: user.id, nickname: user.nickname, text: comment.slice(0, 80) });
-    }
+    if (isPrayer) wishes.set(user.id, { text: comment.slice(0, 80), at: now });
+    addMerit(user, isPrayer ? 3 : 1);
+    fx.push({ kind: 'say', userId: user.id, text: comment.slice(0, 60), prayer: isPrayer });
+  }
+
+  /** Lời cầu còn mới của người tặng (dùng một lần). */
+  function takeWish(userId, now) {
+    const wish = wishes.get(userId);
+    wishes.delete(userId);
+    return wish && now - wish.at < WISH_KEEP_MS ? wish.text : '';
   }
 
   return {
@@ -132,7 +140,7 @@ export function createTempleGame({ random = Math.random } = {}) {
           fx.push({ kind: 'giftNote', ...base, note: 'xin một quẻ xăm' });
         } else {
           totals.bell += 1;
-          fx.push({ kind: 'offering', offering, ...base, tier: giftTier(gift.diamondsEach) });
+          fx.push({ kind: 'offering', offering, ...base, tier: giftTier(gift.diamondsEach), wish: takeWish(user.id, now) });
         }
       } else if (event.type === 'chat') onChat(event, now, fx);
       return fx;

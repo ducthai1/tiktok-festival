@@ -44,7 +44,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   let bowAll = { pose: 'bow', start: 0, until: 0 };
 
   hud.setTitle('🪷 CHÙA ONLINE');
-  hud.setHint(['Gõ ', '*cầu …*', ' điều bạn mong\nTặng quà để ', '*thắp hương*', ', ', '*xin xăm*', '…']);
+  hud.setHint(['Gõ ', '*cầu …*', ' rồi tặng quà\nđể lời cầu bay lên hoa đăng\nQuà mở ', '*thắp hương*', ', ', '*xin xăm*', '…']);
 
   // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
@@ -100,7 +100,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       lanterns.push({ lantern, born: clock, drift: (Math.random() - 0.5) * 0.3 });
       labels.float(lantern, `🪷 ${fx.nickname}: ${fx.text}`, { ms: 6500, rise: 30, className: 'prayer' });
       audio.play('chime');
-      audio.speak(`${fx.nickname} nguyện cầu: ${fx.text}`);
+      if (!fx.silent) audio.speak(`${fx.nickname}: ${fx.text}`);
     }
   };
   const rituals = createTempleRituals({ scene, crowd, hall, particles, soft, labels, audio, hud, helpers });
@@ -118,7 +118,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
     legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông']],
     giftLabels: giftLabels(),
-    welcome: { line: 'đã vào chánh điện 🙏 Gõ “thắp hương” để dâng hương', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
+    welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
     update(snapshot) {
       const { state } = snapshot;
@@ -154,7 +154,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       else if (fx.kind === 'giftNote') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — 🎋 ${fx.note}`, { image: fx.giftPicture });
       } else if (fx.kind === 'incense') rituals.incense(fx);
-      else if (fx.kind === 'prayer') rituals.prayer(fx);
+      else if (fx.kind === 'say') labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500); // bình luận: chỉ bong bóng chữ
       else if (fx.kind === 'fortune') rituals.fortune(fx);
       else if (fx.kind === 'offering') rituals.offering(fx);
     },

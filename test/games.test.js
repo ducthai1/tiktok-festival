@@ -110,11 +110,15 @@ test('temple: likes strike the wooden fish; incense / fortune only by gift, chat
   assert.equal(shown.number, 1);
   assert.equal(shown.poem.length, 4);
   assert.ok(FORTUNES.every((f) => f.poem.length === 4 && f.meaning && f.rank));
-  // lời cầu bằng chữ vẫn có, nhưng cả chánh điện tối đa 1 hoa đăng / 5 giây
-  assert.ok(kinds(temple.handleEvent(chat(2, 'cầu cho gia đình bình an'), 10)).includes('prayer'));
-  assert.ok(!kinds(temple.handleEvent(chat(5, 'cầu thi đậu'), 11)).includes('prayer'));
-  assert.ok(kinds(temple.handleEvent(chat(5, 'cầu thi đậu'), 5100)).includes('prayer'));
-  assert.ok(!kinds(temple.handleEvent(chat(3, 'cầu đm'), 20000)).includes('prayer'));
+  // bình luận chỉ thành bong bóng chữ (lời cầu có đánh dấu); chữ bậy không hiện
+  const say = temple.handleEvent(chat(2, 'cầu cho gia đình bình an'), 10).find((f) => f.kind === 'say');
+  assert.equal(say.prayer, true);
+  assert.equal(kinds(temple.handleEvent(chat(2, 'chào cả nhà'), 11)).includes('say'), false); // mỗi người 1 bong bóng / 4 giây
+  assert.equal(kinds(temple.handleEvent(chat(3, 'cầu đm'), 20)).includes('say'), false);
+  // tặng quà từ bậc 3 (Corgi) thì hoa đăng mang đúng lời cầu đó, dùng một lần
+  const lamp = temple.handleEvent(gift(2, 299), 30).find((f) => f.kind === 'offering');
+  assert.equal(lamp.wish, 'cầu cho gia đình bình an');
+  assert.equal(temple.handleEvent(gift(2, 299), 40).find((f) => f.kind === 'offering').wish, '');
 });
 
 test('temple: gift tiers map to rituals (6 tiers by the price of ONE gift)', () => {
@@ -129,7 +133,7 @@ test('temple: top merit kneels in front, full hall evicts non-VIP', () => {
   const snap = temple.snapshot(100);
   assert.equal(snap.devotees[0].id, 'u29');
   assert.equal(snap.devotees[0].vip, true);
-  assert.equal(snap.board[0].points, 1000);
+  assert.equal(snap.board[0].points, 1001); // 1 bình luận (+1) + quà 100 xu (+1000)
   const fx = temple.handleEvent(chat(500, 'chào'), 200);
   assert.equal(fx[0].kind, 'leave');
   assert.notEqual(fx[0].userId, 'u29');

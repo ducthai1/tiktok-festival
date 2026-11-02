@@ -40,6 +40,14 @@ export function createTempleRituals(ctx) {
     return [{ walk: new THREE.Vector3(x, 0, -9.7) }, { walk: new THREE.Vector3(x, 0, -10.95), facing: PI }];
   }
 
+  // Lời cầu người đó đã gõ (server gửi kèm quà): thả hoa đăng mang lời cầu từ tay họ + đọc thành tiếng.
+  function wishLantern(fx, entry) {
+    if (!fx.wish) return;
+    if (entry) entry.model.hand.getWorldPosition(world);
+    else world.set(0, 1.2, -9);
+    helpers.releaseLantern({ nickname: fx.nickname, text: fx.wish }, world.clone());
+  }
+
   const OFFERINGS = {
     lotus: { make: () => lotusFlower(lotus), points: 10,
       effect: () => { audio.play('chime'); helpers.petals(60); } },
@@ -66,14 +74,6 @@ export function createTempleRituals(ctx) {
         { run: (e) => { dropProp(e); helpers.addIncense(fx.sticks); } },
         merit(15)
       ], { fallback: () => helpers.addIncense(fx.sticks) });
-    },
-    prayer(fx) {
-      crowd.perform(fx.userId, [
-        { pose: 'pray', seconds: 1.3, facing: PI },
-        { run: (e) => { e.model.hand.getWorldPosition(world); helpers.releaseLantern(fx, world.clone()); } },
-        { pose: 'bow', seconds: 3.2, facing: PI },
-        merit(10)
-      ], { fallback: () => helpers.releaseLantern(fx, new THREE.Vector3(0, 1.2, -6)) });
     },
     fortune(fx) {
       const reveal = () => {
@@ -114,15 +114,15 @@ export function createTempleRituals(ctx) {
       const wish = smallWish(kind);
       hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — ${tier.verb} cầu ${wish}`,
         { gold: kind !== 'lotus', image: fx.giftPicture });
-      if (crowd.busy(fx.userId)) return void o.effect(); // đang dâng lễ dở: tặng thêm chỉ cộng dồn, không đi lại từ đầu
+      if (crowd.busy(fx.userId)) return void (o.effect(), wishLantern(fx)); // đang dâng lễ dở: chỉ cộng dồn, không đi lại từ đầu
       crowd.perform(fx.userId, [
         holdProp(o.make),
         ...toAltar(),
         { pose: 'offer', seconds: 1.3, facing: PI },
-        { run: (e) => { altar.place(e.prop, clock); e.prop = null; o.effect(); } },
+        { run: (e) => { altar.place(e.prop, clock); e.prop = null; o.effect(); wishLantern(fx, e); } },
         { pose: 'bowStand', seconds: 2.8, facing: PI },
         merit(o.points)
-      ], { fallback: o.effect });
+      ], { fallback: () => { o.effect(); wishLantern(fx); } });
     },
     cameraPush: () => grand.cameraPush(),
     frame(t, dt) {

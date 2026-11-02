@@ -21,7 +21,7 @@ Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm m�
 
 **Nghi thức ở chùa** đều có đầu có cuối (thắp hương và xin xăm mở bằng quà, xem mục Quà TikTok thật):
 - *Thắp hương*: người đó đứng dậy, cầm 3 nén hương tới bên lư, thắp, nâng lên trán, vái 3 vái, cắm hương rồi về chỗ quỳ.
-- *Cầu …*: chắp tay, thả hoa đăng mang lời cầu từ tay.
+- *Cầu …*: bình luận hiện thành bong bóng 🙏; tặng quà sau đó thì hoa đăng mang lời cầu bay lên từ tay người tặng.
 - *Xin xăm*: lắc ống xăm tới khi que xăm văng ra thì tờ quẻ mới mở.
 
 Thả tim là gõ mõ (dùi gõ xuống mõ trên bàn thờ), follow/share là thỉnh chuông: chuông đồng treo bên phải lắc, ngân, loé sáng, tượng rực lên và cả chánh điện cùng vái.
@@ -125,7 +125,7 @@ Hiệu ứng chọn theo **giá của MỘT món quà** (xu TikTok gửi kèm s�
 
 Khi nối live (nguồn tiktok-live-connector), server đọc **danh mục quà của chính phòng đó** (tên, giá, ảnh) và bảng "Cách tham gia" hiện ảnh quà thật cho từng bậc; giá theo vùng hay quà mới vẫn vào đúng bậc vì dùng giá thật. Chưa nối live thì dùng quà mẫu (giá phổ biến, có thể lệch theo vùng).
 
-Ở chùa, nghi thức dài (thắp hương, xin xăm) chỉ mở bằng quà; gõ chữ "thắp hương"/"xin xăm" chỉ hiện bong bóng nhắc tặng quà (mỗi người 1 lần / 30 giây). Lời cầu bằng chữ (`cầu …`) vẫn có nhưng cả chánh điện tối đa 1 hoa đăng / 5 giây.
+**Bình luận chỉ có phản hồi đơn giản, hiệu ứng đẹp để dành cho quà:** ở chùa, bình luận hiện thành bong bóng chữ trên đầu người đó (lời `cầu …` có 🙏, mỗi người 1 bong bóng / 4 giây); gõ "thắp hương"/"xin xăm" chỉ hiện bong bóng nhắc tặng quà. Lời cầu được nhớ 5 phút: khi chính người đó tặng quà từ bậc 3 (Tay tim, Corgi…) trở lên, hoa đăng mang đúng lời cầu đó bay lên và được đọc thành tiếng. Ở bar, bình luận chỉ đổi dáng (nhảy, nâng ly); ở bơi, "cố lên" gọi một vịt phao.
 
 ## Bố cục màn hình theo giao diện TikTok LIVE
 

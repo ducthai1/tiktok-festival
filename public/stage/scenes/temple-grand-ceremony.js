@@ -76,7 +76,9 @@ export function createGrandCeremony({ scene, hall, particles, soft, audio, hud, 
       petalRain(legend ? 300 : grand ? 260 : 170);
       const wish = bigWish(level);
       hud.banner(`${wish.icon} ${wish.title} ${wish.icon}`, `${fx.nickname} · ${fx.giftName} ×${fx.count}`, legend ? 10000 : grand ? 7000 : 5000);
-      audio.speak(`${fx.nickname} cầu ${wish.spoken}`);
+      // người tặng đã gõ lời cầu riêng thì đọc đúng lời của họ, kèm hoa đăng mang lời đó
+      audio.speak(fx.wish ? `${fx.nickname} ${fx.wish}` : `${fx.nickname} cầu ${wish.spoken}`);
+      if (fx.wish) helpers.releaseLantern({ nickname: fx.nickname, text: fx.wish, silent: true }, new THREE.Vector3(0, 1.4, -9.5));
       if (grand) {
         audio.play('gong');
         bloomGiantLotus();
