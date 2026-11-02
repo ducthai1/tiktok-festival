@@ -29,9 +29,10 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   const scene = new THREE.Scene();
   const camera = createTempleCamera();
   const hall = buildPaintedHall(scene, camera);
-  const particles = createParticleSystem(scene, 7000);
+  const particles = createParticleSystem(scene, 5000); // tia sáng, bụi vàng (cộng sáng)
+  const soft = createParticleSystem(scene, 3000, { blending: THREE.NormalBlending }); // cánh hoa, khói hương: không cộng thành mảng chói
   const fixtures = createBellAndMo(scene);
-  pipeline.setBloom({ strength: 0.42, radius: 0.5, threshold: 0.86 });
+  pipeline.setBloom({ strength: 0.3, radius: 0.45, threshold: 0.9 });
   const seats = SLOTS.map((p, i) => ({ x: p.x, z: p.z, top: addCushion(scene, p, i < 6) }));
 
   const bowUntil = new Map();
@@ -73,8 +74,8 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     boostHalo: (seconds) => { haloUntil = Math.max(haloUntil, clock + seconds); },
     // Chuông treo bên phải chánh điện: lắc, ngân, loé sáng (bellHit) — quà lớn đánh nhiều hồi.
     swingBell: () => fixtures.ringBell(),
-    petals: (count) => particles.burst({ position: new THREE.Vector3(0, 3.4, -7.2), box: new THREE.Vector3(5, 1.6, 6.5), count, colors: PETALS,
-      speed: 0.25, spread: 1, gravity: -0.25, life: 8, size: 0.085, damping: 0.985 }),
+    petals: (count) => soft.burst({ position: new THREE.Vector3(0, 3.4, -7.2), box: new THREE.Vector3(5, 1.6, 6.5), count: Math.min(count, 140), colors: PETALS,
+      speed: 0.25, spread: 1, gravity: -0.25, life: 8, size: 0.07, damping: 0.985 }),
     addIncense(n) {
       for (let i = 0; i < n; i += 1) {
         const stick = new THREE.Group();
@@ -87,7 +88,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         hall.sticks.add(stick);
       }
       while (hall.sticks.children.length > 27) disposeObject(hall.sticks.children[0].removeFromParent());
-      particles.burst({ position: hall.urnTop.clone().setY(hall.urnTop.y + 0.25), count: 40, colors: ['#ffb347', '#ffd36b'], speed: 0.7, gravity: 0.4, life: 1.2, size: 0.07 });
+      particles.burst({ position: hall.urnTop.clone().setY(hall.urnTop.y + 0.25), count: 24, colors: ['#ffb347', '#ffd36b'], speed: 0.7, gravity: 0.4, life: 1.2, size: 0.06 });
     },
     releaseLantern(fx, from) {
       const lantern = lotus(0.16);
@@ -102,12 +103,12 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       audio.speak(`${fx.nickname} nguyện cầu: ${fx.text}`);
     }
   };
-  const rituals = createTempleRituals({ scene, crowd, hall, particles, labels, audio, hud, helpers });
+  const rituals = createTempleRituals({ scene, crowd, hall, particles, soft, labels, audio, hud, helpers });
 
   // lúc chuông bị đánh: tiếng chuông, hạt sáng vàng toả ra từ thân chuông, tượng Phật rực lên một nhịp
   function bellHit() {
     audio.play('bell');
-    particles.burst({ position: fixtures.bellCenter(), count: 46, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.9, spread: 1, gravity: -0.15, life: 1.6, size: 0.09, damping: 0.97 });
+    particles.burst({ position: fixtures.bellCenter(), count: 24, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.9, spread: 1, gravity: -0.15, life: 1.6, size: 0.09, damping: 0.97 });
     helpers.boostHalo(1.6);
   }
 
@@ -132,9 +133,10 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
           labels.flash(entry.id, 'welcomed', fx.durationMs || 2600);
           bowOne(entry.id, 3.4); // tới chỗ thì vái chào
         }
-        particles.burst({ position: new THREE.Vector3(0, 0.25, -2.6), box: new THREE.Vector3(1.2, 0.3, 0.8), count: 70 + people.length * 15,
-          colors: ['#ffd36b', '#fff1c9'], speed: 0.35, spread: 0, gravity: 0.6, life: 2.4, size: 0.07 });
-        if (fx.mode === 'group') helpers.petals(160);
+        // cả đoàn vào cùng lúc: lượng hạt có trần, không chồng sáng thành mảng trắng
+        particles.burst({ position: new THREE.Vector3(0, 0.25, -2.6), box: new THREE.Vector3(1.2, 0.3, 0.8), count: Math.min(110, 45 + people.length * 4),
+          colors: ['#ffd36b', '#fff1c9'], speed: 0.35, spread: 0, gravity: 0.6, life: 2.2, size: 0.055 });
+        if (fx.mode === 'group') helpers.petals(90);
       } else if (fx.kind === 'mo') {
         fixtures.strikeMo();
         if (clock - lastMoSound > 0.15) { audio.play('mo'); lastMoSound = clock; }
@@ -157,14 +159,14 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       animatePaintedHall(hall, t, { haloBoost: t < haloUntil });
       fixtures.frame(t, bellHit);
       setZoom(camera, 1 + rituals.cameraPush() * 0.09);
-      if (Math.random() < dt * 6) { // hạt sáng vàng bay lên quanh tượng Phật
-        particles.burst({ position: hall.aura.randomPoint(), count: 1, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.12, spread: 1, gravity: 0.12, life: 3.2, size: 0.11, damping: 0.99 });
+      if (Math.random() < dt * 4) { // hạt sáng vàng bay lên quanh tượng Phật
+        particles.burst({ position: hall.aura.randomPoint(), count: 1, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.12, spread: 1, gravity: 0.12, life: 3.2, size: 0.08, damping: 0.99 });
       }
       if (Math.random() < dt * 2.5) { // bụi vàng lơ lửng trong ánh nến
         particles.burst({ position: new THREE.Vector3(0, 2.4, -8), box: new THREE.Vector3(5, 3.5, 7), count: 1, colors: ['#ffd36b'], speed: 0.08, gravity: 0.02, life: 5, size: 0.035 });
       }
       if (hall.sticks.children.length && Math.random() < dt * 9) {
-        particles.burst({ position: hall.urnTop.clone().add(new THREE.Vector3((Math.random() - 0.5) * 0.2, 0.45, 0)), count: 1, colors: ['#8a8a8a', '#bdbdbd'],
+        soft.burst({ position: hall.urnTop.clone().add(new THREE.Vector3((Math.random() - 0.5) * 0.2, 0.45, 0)), count: 1, colors: ['#8a8a8a', '#bdbdbd'],
           speed: 0.12, spread: 0, gravity: 0.15, life: 3.5, size: 0.14, damping: 0.99 });
       }
       crowd.frame(dt, t);
@@ -178,10 +180,12 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         if (age > 7) disposeObject(lanterns.splice(i, 1)[0].lantern.removeFromParent());
       }
       particles.update(dt);
+      soft.update(dt);
     },
     dispose() {
       crowd.clear();
       particles.dispose();
+      soft.dispose();
       disposeObject(scene);
       hud.clearGame();
       labels.clear();

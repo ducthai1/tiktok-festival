@@ -8,8 +8,8 @@ import { templeArt } from './temple-art.js';
 import { glowSprite } from './temple-painted-hall.js';
 import { screenPoint } from './temple-view.js';
 
-const BELL = { x: 0.84, top: 0.368, depth: 10.5, height: 1.45 }; // móc treo ở (x, top) trên khung hình
-const MO = { x: 0.315, table: 0.522, depth: 12.3, width: 0.74 }; // mõ ngồi trên bậc trên của bàn thờ (cạnh nến trái), cao hơn nhãn tên hàng quỳ
+const BELL = { x: 0.85, top: 0.375, depth: 10.5, height: 1.6 }; // móc treo ở (x, top) trên khung hình
+const MO = { x: 0.29, table: 0.522, depth: 12.3, width: 0.95 }; // mõ ngồi trên bậc trên của bàn thờ (cạnh nến trái), cao hơn nhãn tên hàng quỳ
 const SWING = 0.17; // biên độ lắc (rad) khi bị đánh
 
 function spriteMesh(prop, width, height, anchorX, anchorY) {

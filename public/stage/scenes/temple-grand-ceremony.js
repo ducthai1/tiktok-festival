@@ -11,7 +11,7 @@ import { bigWish } from './temple-wishes.js';
 
 const GOLD_PETALS = ['#ffd36b', '#ffe9a8', '#ff9ec4', '#fff1c9'];
 
-export function createGrandCeremony({ scene, hall, particles, audio, hud, helpers }) {
+export function createGrandCeremony({ scene, hall, particles, soft, audio, hud, helpers }) {
   let clock = 0;
   const timeline = [];
   const lanterns = [];
@@ -20,8 +20,8 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
   const later = (seconds, fn) => timeline.push({ at: clock + seconds, fn });
 
   function petalRain(count) {
-    particles.burst({ position: new THREE.Vector3(0, 3.6, -7.2), box: new THREE.Vector3(5.2, 1.8, 7), count, colors: GOLD_PETALS,
-      speed: 0.25, spread: 1, gravity: -0.25, life: 9, size: 0.08, damping: 0.985 });
+    soft.burst({ position: new THREE.Vector3(0, 3.6, -7.2), box: new THREE.Vector3(5.2, 1.8, 7), count, colors: GOLD_PETALS,
+      speed: 0.25, spread: 1, gravity: -0.25, life: 9, size: 0.065, damping: 0.985 });
   }
 
   function threeBows() {
@@ -29,7 +29,7 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
     [0, 2.2, 4.4].forEach((s, i) => later(s, () => {
       if (i === 2) audio.play('gong'); // tiếng chuông phát lúc chuông bị đánh (temple-scene)
       helpers.swingBell();
-      particles.burst({ position: hall.haloCenter, count: 120, colors: ['#ffd36b', '#fff1c9'], speed: 2.4, spread: 1, gravity: 0, life: 1.6, size: 0.1 });
+      particles.burst({ position: hall.haloCenter, count: 40, colors: ['#ffd36b', '#fff1c9'], speed: 1.8, spread: 1, gravity: 0, life: 1.5, size: 0.075 });
     }));
   }
 
@@ -70,16 +70,16 @@ export function createGrandCeremony({ scene, hall, particles, audio, hud, helper
     start(level, fx) {
       const grand = level === 'grand';
       threeBows();
-      helpers.boostHalo(grand ? 14 : 8);
-      petalRain(grand ? 700 : 420);
+      helpers.boostHalo(grand ? 10 : 7);
+      petalRain(grand ? 260 : 170);
       const wish = bigWish(level);
       hud.banner(`${wish.icon} ${wish.title} ${wish.icon}`, `${fx.nickname} · ${fx.giftName} ×${fx.count}`, grand ? 7000 : 5000);
       audio.speak(`${fx.nickname} cầu ${wish.spoken}`);
       if (grand) {
         audio.play('gong');
         bloomGiantLotus();
-        later(1.5, () => releaseSkyLanterns(36));
-        later(5, () => petalRain(500));
+        later(1.5, () => releaseSkyLanterns(18));
+        later(5, () => petalRain(170));
         push = { start: clock, until: clock + 12 };
       }
     },

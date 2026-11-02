@@ -30,7 +30,7 @@ const FRAGMENT = `
     float wave = fract(uTime * 0.25);
     float ring = smoothstep(0.025, 0.0, abs(r - (0.12 + wave * 0.45))) * (1.0 - wave) * outside;
     vec2 e = smoothstep(vec2(0.0), vec2(0.1), vUv) * smoothstep(vec2(1.0), vec2(0.9), vUv); // mép vùng cắt mờ dần
-    float k = (1.0 + uBoost * 1.1) * e.x * e.y;
+    float k = (1.0 + uBoost * 0.6) * e.x * e.y; // rực lên vừa phải: chồng nhiều quà không thành mảng trắng
     vec3 gold = vec3(1.0, 0.8, 0.45);
     float glow = d.r * (0.26 + 0.16 * breath + 0.06 * shimmer) + d.g * (0.09 + 0.05 * breath);
     // trên thân tượng chỉ ửng rất nhẹ, giữ rõ mặt và nếp áo; sáng dồn ra mép và nền phía sau

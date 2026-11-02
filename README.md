@@ -113,7 +113,9 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 
 ## Bố cục màn hình theo giao diện TikTok LIVE
 
-Trên điện thoại người xem, TikTok phủ lên khung 1080×1920: thanh chủ phòng + người xem (0–230 px), thông báo quà bên trái (~900–1150 px), bình luận (~1150–1700 px, 70% bên trái), ô chat + nút quà (1720 px trở xuống), tim bay dọc mép phải. Vì vậy mọi chữ và bảng của game nằm trong dải 232–1150 px: tiêu đề + chỉ số ngay dưới thanh TikTok, **Cách tham gia** (lệnh gõ + bậc quà) bên trái và **bảng xếp hạng** bên phải ở giữa màn, thẻ chào và băng rôn ở giữa, thông báo của game bên phải. Phần dưới chỉ để cảnh.
+Trên điện thoại người xem, TikTok phủ lên khung 1080×1920: thanh chủ phòng + người xem (0–230 px), thông báo quà bên trái (~900–1150 px), bình luận (~1150–1700 px, 70% bên trái), ô chat + nút quà (1720 px trở xuống), tim bay dọc mép phải. Vì vậy mọi chữ và bảng của game nằm trong dải 232–1150 px: tiêu đề + chỉ số ngay dưới thanh TikTok, **Cách tham gia** (lệnh gõ + bậc quà) bên trái và **bảng xếp hạng** bên phải ở giữa màn; thẻ chào người mới phủ tạm lên đúng chỗ bảng Cách tham gia rồi rút đi; băng rôn quà lớn có dải nền đậm, chữ màu đặc; thông báo của game bên phải. Phần dưới chỉ để cảnh.
+
+Hiệu ứng hạt có trần số lượng; cánh hoa và khói hương không cộng sáng, nên đông người vào hay nhiều quà lớn liền nhau cũng không bị chói trắng.
 
 ## Tranh và nhân vật của Chùa Online
 

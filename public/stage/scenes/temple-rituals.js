@@ -13,7 +13,7 @@ const PI = Math.PI;
 const world = new THREE.Vector3();
 
 export function createTempleRituals(ctx) {
-  const { scene, crowd, hall, particles, labels, audio, hud, helpers } = ctx;
+  const { scene, crowd, hall, particles, soft, labels, audio, hud, helpers } = ctx;
   const altar = createAltarTable(scene);
   const lamps = createLampRow(scene);
   const grand = createGrandCeremony(ctx);
@@ -31,7 +31,7 @@ export function createTempleRituals(ctx) {
   function smokeFromTips(e) {
     if (!e.prop?.userData.tips || Math.random() > 0.5) return;
     e.prop.userData.tips[Math.floor(Math.random() * 3)].getWorldPosition(world);
-    particles.burst({ position: world, count: 1, colors: ['#9a9a9a', '#cfcfcf'], speed: 0.25, spread: 0, gravity: 0.5, life: 2.2, size: 0.22, damping: 0.99 });
+    soft.burst({ position: world, count: 1, colors: ['#9a9a9a', '#cfcfcf'], speed: 0.25, spread: 0, gravity: 0.5, life: 2.2, size: 0.16, damping: 0.99 });
   }
 
   // Đi vòng qua lư hương (ở giữa) để tới trước bàn thờ (mép bàn thờ trong tranh ở độ sâu ~11,7 m).
@@ -42,11 +42,11 @@ export function createTempleRituals(ctx) {
 
   const OFFERINGS = {
     lotus: { make: () => lotusFlower(lotus), points: 10,
-      effect: () => { audio.play('chime'); helpers.petals(90); } },
+      effect: () => { audio.play('chime'); helpers.petals(60); } },
     lamp: { make: () => lampProp(), points: 50,
       effect: () => { audio.play('smallBell'); audio.play('chime'); lamps.light(clock); } },
     fruit: { make: () => fruitTray(), points: 300,
-      effect: () => { helpers.swingBell(); helpers.petals(240); helpers.boostHalo(3); } }
+      effect: () => { helpers.swingBell(); helpers.petals(120); helpers.boostHalo(3); } }
   };
 
   return {
@@ -87,7 +87,7 @@ export function createTempleRituals(ctx) {
         } },
         { run: (e) => {
           e.prop.getWorldPosition(world);
-          particles.burst({ position: world.clone().setY(world.y + 0.25), count: 40, colors: ['#ffd36b', '#ffffff'], speed: 1.2, gravity: -1.5, life: 1, size: 0.06 });
+          particles.burst({ position: world.clone().setY(world.y + 0.25), count: 24, colors: ['#ffd36b', '#ffffff'], speed: 1.2, gravity: -1.5, life: 1, size: 0.06 });
           dropProp(e);
           reveal();
         } },

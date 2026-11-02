@@ -24,7 +24,13 @@ const FRAGMENT = `
     gl_FragColor = vec4(vColor, vAlpha * smoothstep(0.5, 0.1, d));
   }`;
 
-export function createParticleSystem(scene, max = 4000) {
+/**
+ * @param {THREE.Scene} scene
+ * @param {number} max số hạt tối đa
+ * @param {{blending?: THREE.Blending}} [opts] mặc định cộng sáng (lửa, tia, bụi vàng); cánh hoa dùng
+ *   NormalBlending để nhiều cánh chồng nhau không cộng thành mảng trắng chói.
+ */
+export function createParticleSystem(scene, max = 4000, { blending = THREE.AdditiveBlending } = {}) {
   const geometry = new THREE.BufferGeometry();
   const position = new Float32Array(max * 3);
   const color = new Float32Array(max * 3);
@@ -35,7 +41,7 @@ export function createParticleSystem(scene, max = 4000) {
   geometry.setAttribute('size', new THREE.BufferAttribute(size, 1).setUsage(THREE.DynamicDrawUsage));
   geometry.setAttribute('alpha', new THREE.BufferAttribute(alpha, 1).setUsage(THREE.DynamicDrawUsage));
   const material = new THREE.ShaderMaterial({
-    vertexShader: VERTEX, fragmentShader: FRAGMENT, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending
+    vertexShader: VERTEX, fragmentShader: FRAGMENT, transparent: true, depthWrite: false, blending
   });
   const points = new THREE.Points(geometry, material);
   points.frustumCulled = false;
