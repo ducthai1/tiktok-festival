@@ -5,6 +5,8 @@ import { createParticleSystem } from './particle-effects.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 import { buildHelper, HELPER_LENGTH } from './swim-helper-models.js';
 import { HELPER_LIFE, moveHelper, PUSH_FEEL } from './swim-helper-motion.js';
+
+const STAY_CLOSE = new Set(['whale', 'submarine', 'shark', 'dolphin']);
 import { animateSwimWorld, buildSwimWorld, buildWall, METER_TO_UNIT } from './swim-world.js';
 
 const WALL_GAP = 2.3; // tường dừng ngay trước đầu người bơi
@@ -213,10 +215,11 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
         const k = Math.min(1, age / APPROACH_S);
         const ease = 1 - (1 - k) ** 3;
         // Bơi từ ngoài làn vào sát bên người bơi, rồi cùng lao lên phía trước và lặn xuống.
-        const sideX = 1.5 + h.length * 0.12;
+        const sideX = h.fx.helper === 'whale' || h.fx.helper === 'submarine' ? 1.35 : 1.5 + h.length * 0.12; // thân to: kéo vào giữa khỏi bị cắt mép
         const forward = Math.max(0, age - APPROACH_S);
         h.group.position.x = h.side * THREE.MathUtils.lerp(7, sideX, ease);
-        h.group.position.z = THREE.MathUtils.lerp(-1, 0.6, ease) - forward * forward * 6;
+        // trợ thủ lớn ở lại cạnh người bơi để màn phóng lên / trồi lên diễn ngay trước mắt
+        h.group.position.z = THREE.MathUtils.lerp(-1, 0.6, ease) - forward * forward * (STAY_CLOSE.has(h.fx.helper) ? 0.9 : 6);
         moveHelper(h, age, ease, forward, particles);
         if (!h.pushed && k >= 1) onPush(h);
         if (age > (HELPER_LIFE[h.fx.helper] || LIFE_S)) {
