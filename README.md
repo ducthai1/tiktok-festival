@@ -138,7 +138,7 @@ Hiệu ứng hạt có trần số lượng; cánh hoa và khói hương không 
 Chùa dùng **tranh vẽ** thay cho khối 3D: nền chánh điện + Phật tử (nam/nữ, 11–12 tư thế) + chuông, mõ (tách từ ảnh sư), đều là ảnh chủ dự án tạo bằng Gemini, nằm trong `public/assets/temple/` (WebP, ~1,1 MB) kèm `sprites.json` (cỡ thật bằng mét, mốc chân, đỉnh đầu của từng khung).
 
 - Camera được khớp phối cảnh của tranh (chân trời 56,3% từ trên, camera cao 0,93 m — `public/stage/scenes/temple-view.js`). Người ở gần camera được thu nhỏ bớt để hàng trước không che bàn thờ.
-- Mỗi tư thế là một khung vẽ: đứng/đi/quỳ/vái/lạy/dâng lễ nhìn từ sau lưng; đứng/đi/cầm hương/vái hương nhìn nghiêng (lật ảnh khi đi sang trái). Đi thì đổi khung chân theo quãng đường nên chân không trượt.
+- Hoạt hình kiểu 2D: mỗi động tác là một chuỗi khung vẽ đổi dứt khoát (không hoà mờ, không lắc lư). Đi bộ 4 nhịp mỗi chu kỳ (bước – giữa bước – bước chân kia – giữa bước) đổi theo quãng đường nên chân không trượt; vái quỳ: quỳ → tay lên trán → cúi; lạy: thêm khung rạp sát đất; đứng ↔ quỳ chen khung một gối chạm đất. Các khung giữa (giữa bước, cúi nửa chừng, quỳ xuống…) vẽ thêm bằng Gemini từ chính ảnh nhân vật gốc (ảnh thô ở `art-inbox/chua/gen/`).
 - Đổi tranh: tạo ảnh mới (nền hồng tím `#FF00FF` cho nhân vật), đặt vào `art-inbox/chua/raw/` (thư mục này không lên git), rồi chạy các script trong `scripts/temple-art/` theo thứ tự: `key_sprites` → `backdrop_clean` → `export_temple_sprites` → `buddha_glow_layer` (dáng tượng cho hào quang) → `temple_props_crop` (chuông, mõ). Đổi bố cục tranh nền thì phải đo lại chân trời và độ sâu trong `temple-view.js`.
 
 ## Đã sửa gì so với code tham khảo

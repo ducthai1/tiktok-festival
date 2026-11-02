@@ -11,12 +11,22 @@ import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
-import { SAMPLE_GIFTS, tierRepresentatives } from '../public/shared/gift-tiers.js';
+import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
 
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000
 };
+
+function loadGiftCatalog(file) {
+  try {
+    const saved = JSON.parse(fs.readFileSync(file, 'utf8'));
+    return Array.isArray(saved.gifts) ? saved.gifts.filter((g) => g && g.name && g.coins > 0)
+      .map((g) => ({ id: String(g.id || ''), name: String(g.name).slice(0, 40), coins: Number(g.coins), image: safeImageUrl(g.image) })) : [];
+  } catch {
+    return [];
+  }
+}
 
 function loadSettings(dataDir) {
   try {
@@ -34,7 +44,14 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });
   let port = config.port;
   let lastStateText = '';
-  let giftTiers = tierRepresentatives(SAMPLE_GIFTS, 3); // quà đại diện từng bậc; nối live thì thay bằng quà thật của phòng
+  // Danh mục quà THẬT của TikTok (tên, giá, ảnh chính thức) lưu lại từ lần nối live gần nhất, để lúc chạy thử
+  // chưa live bảng chú thích vẫn hiện đúng ảnh quà người xem nhìn thấy.
+  const catalogFile = path.join(dataDir, 'gift-catalog.json');
+  let giftCatalog = loadGiftCatalog(catalogFile);
+  let sampleGifts = withCatalogImages(SAMPLE_GIFTS, giftCatalog);
+  // quà thật đã gom (có ảnh) + quà mẫu cho những bậc chưa gom được, để bảng chú thích luôn đủ 6 bậc
+  const legendSource = () => [...giftCatalog, ...sampleGifts.filter((s) => !giftCatalog.some((g) => g.name === (s.realName || s.name)))];
+  let giftTiers = tierRepresentatives(legendSource(), 3);
 
   const updateSettings = (patch) => {
     Object.assign(settings, patch);
@@ -57,6 +74,23 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     }
   };
 
+  // Gộp quà thật (danh mục của phòng, hoặc từng quà nhận được) vào danh mục đã lưu; báo màn hình + trang điều khiển.
+  function mergeCatalog(list) {
+    const fresh = list.map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: safeImageUrl(g.image) }));
+    // gộp với danh mục đã có (quà mới thêm vào, quà cũ cập nhật ảnh/giá)
+    const byName = new Map(giftCatalog.map((g) => [g.name, g]));
+    for (const g of fresh) byName.set(g.name, { ...byName.get(g.name), ...g, image: g.image || byName.get(g.name)?.image || '' });
+    giftCatalog = [...byName.values()];
+    sampleGifts = withCatalogImages(SAMPLE_GIFTS, giftCatalog);
+    giftTiers = tierRepresentatives(legendSource(), 3);
+    try {
+      fs.writeFileSync(catalogFile, JSON.stringify({ savedAt: new Date().toISOString(), gifts: giftCatalog }));
+    } catch (error) {
+      console.warn('[app] không lưu được danh mục quà:', error.message);
+    }
+    sockets.broadcast({ t: 'gifts', tiers: giftTiers, sampleGifts });
+  }
+
   const live = createLiveConnectionManager({
     providerFactories: providerFactories || {
       tiktok: (opts) => createTikTokConnectorProvider({ ...opts, apiKey: config.eulerApiKey }),
@@ -64,6 +98,13 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onEvent(event) {
       emitFx(hub.activeId(), hub.handleEvent(event));
+      // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
+      if (event.type === 'gift' && !event.simulated && event.gift.diamondsEach > 0) {
+        const known = giftCatalog.find((g) => g.name === event.gift.name);
+        if (!known || (!known.image && event.gift.pictureUrl)) {
+          mergeCatalog([{ id: event.gift.id, name: event.gift.name, coins: event.gift.diamondsEach, image: event.gift.pictureUrl }]);
+        }
+      }
       if (event.type === 'viewers') return;
       const text = event.type === 'chat' ? event.comment : event.type === 'gift'
         ? `${event.gift.name} ×${event.gift.count} (${event.gift.diamonds}💎)` : event.type === 'like' ? `${event.likeCount} tim` : '';
@@ -73,20 +114,17 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     onStatus(status) {
       sockets.broadcast({ t: 'live', status });
     },
-    onCatalog(list) {
-      giftTiers = tierRepresentatives(list.map((g) => ({ ...g, image: safeImageUrl(g.image) })), 3);
-      sockets.broadcast({ t: 'gifts', tiers: giftTiers });
-    }
+    onCatalog: (list) => mergeCatalog(list)
   });
 
-  const handleAdmin = createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState });
+  const handleAdmin = createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts });
   const sockets = createSocketHub({
     getPort: () => port,
     allowLan: config.allowLan,
     adminToken,
     onAdminMessage: handleAdmin,
     onClientReady(ws) {
-      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts: SAMPLE_GIFTS });
+      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
     }

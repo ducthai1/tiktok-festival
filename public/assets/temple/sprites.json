@@ -22,6 +22,13 @@
     "head": 1.6039,
     "family": "back"
    },
+   "di-sau-giua": {
+    "w": 0.6914,
+    "h": 1.6226,
+    "ax": 0.5062,
+    "head": 1.6102,
+    "family": "back"
+   },
    "dang-le-sau": {
     "w": 1.0594,
     "h": 1.7524,
@@ -41,6 +48,20 @@
     "h": 1.1305,
     "ax": 0.4986,
     "head": 1.1242,
+    "family": "kneel"
+   },
+   "quy-cui": {
+    "w": 0.7108,
+    "h": 1.1179,
+    "ax": 0.4991,
+    "head": 1.0272,
+    "family": "kneel"
+   },
+   "quy-xuong": {
+    "w": 0.637,
+    "h": 1.12,
+    "ax": 0.5229,
+    "head": 1.1116,
     "family": "kneel"
    },
    "lay-sau": {
@@ -71,6 +92,13 @@
     "head": 1.6022,
     "family": "side"
    },
+   "di-nghieng-giua": {
+    "w": 0.7738,
+    "h": 1.5733,
+    "ax": 0.5931,
+    "head": 1.5637,
+    "family": "side"
+   },
    "cam-huong-nghieng": {
     "w": 0.5362,
     "h": 1.6857,
@@ -83,6 +111,13 @@
     "h": 1.6504,
     "ax": 0.3701,
     "head": 1.4962,
+    "family": "side"
+   },
+   "vai-huong-giua": {
+    "w": 0.7513,
+    "h": 1.6825,
+    "ax": 0.4105,
+    "head": 1.5251,
     "family": "side"
    }
   },
@@ -108,6 +143,13 @@
     "head": 1.5468,
     "family": "back"
    },
+   "di-sau-giua": {
+    "w": 0.5699,
+    "h": 1.5378,
+    "ax": 0.5216,
+    "head": 1.5287,
+    "family": "back"
+   },
    "dang-le-sau": {
     "w": 1.0614,
     "h": 1.5921,
@@ -128,6 +170,27 @@
     "ax": 0.518,
     "head": 1.0539,
     "family": "kneel"
+   },
+   "quy-cui": {
+    "w": 0.5607,
+    "h": 1.058,
+    "ax": 0.5177,
+    "head": 0.9925,
+    "family": "kneel"
+   },
+   "quy-xuong": {
+    "w": 0.5467,
+    "h": 1.2,
+    "ax": 0.8765,
+    "head": 1.1907,
+    "family": "half-kneel"
+   },
+   "lay-sau": {
+    "w": 0.8634,
+    "h": 0.88,
+    "ax": 0.514,
+    "head": 0.8738,
+    "family": "prostrate"
    },
    "dung-nghieng": {
     "w": 0.4334,
@@ -150,6 +213,13 @@
     "head": 1.5559,
     "family": "side"
    },
+   "di-nghieng-dat": {
+    "w": 0.7253,
+    "h": 1.5619,
+    "ax": 0.5664,
+    "head": 1.5529,
+    "family": "side"
+   },
    "cam-huong-nghieng": {
     "w": 0.4996,
     "h": 1.6492,
@@ -162,6 +232,13 @@
     "h": 1.5258,
     "ax": 0.3409,
     "head": 1.5198,
+    "family": "side"
+   },
+   "vai-huong-giua": {
+    "w": 0.5838,
+    "h": 1.6432,
+    "ax": 0.5045,
+    "head": 1.5469,
     "family": "side"
    }
   }

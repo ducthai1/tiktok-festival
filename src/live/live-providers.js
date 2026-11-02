@@ -16,7 +16,9 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
       connection = new TikTokLiveConnection(username, {
         signApiKey: apiKey,
         processInitialData: false, // bỏ chat cũ trước lúc kết nối, tránh tính lại
-        enableExtendedGiftInfo: true
+        // KHÔNG tải danh mục quà lúc kết nối: dịch vụ ký Euler bắt gói Business cho việc này và làm hỏng
+        // cả lệnh kết nối (đo 03/11). Mỗi sự kiện quà đã kèm tên + giá + ảnh; danh mục gom dần từ đó.
+        enableExtendedGiftInfo: false
       });
       // EventEmitter coi 'error' không có người nghe là lỗi chết; giữ server sống.
       connection.on('error', (error) => console.warn('[tiktok] lỗi kết nối:', error?.message || error));
@@ -26,13 +28,11 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
       connection.on('streamEnd', () => onEnded());
       connection.on('disconnected', () => onDisconnected('mất kết nối'));
       const state = await connection.connect();
-      // enableExtendedGiftInfo đã tải danh mục quà của phòng lúc kết nối: tên + giá thật + ảnh
-      try {
-        const catalog = normalizeGiftCatalog(connection.availableGifts);
+      // thử lấy cả danh mục quà của phòng (cần khoá Euler gói cao); không được thì thôi, không ảnh hưởng kết nối
+      connection.fetchAvailableGifts().then((raw) => {
+        const catalog = normalizeGiftCatalog(raw);
         if (catalog.length) onCatalog(catalog);
-      } catch (error) {
-        console.warn('[tiktok] không đọc được danh mục quà:', error?.message || error);
-      }
+      }).catch((error) => console.warn('[tiktok] chưa lấy được danh mục quà (sẽ gom dần từ quà nhận được):', error?.message || error));
       return { roomId: String(state?.roomId || '') };
     },
     async stop() {

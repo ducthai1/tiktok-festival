@@ -22,19 +22,31 @@ export function giftTier(coinsEach) {
 // Quà mẫu cho chế độ thử và bảng chú thích khi chưa nối live (giá phổ biến; có thể lệch theo vùng —
 // khi live thật, màn hình dùng danh mục quà của chính phòng đó, có ảnh thật).
 export const SAMPLE_GIFTS = [
-  { id: 'rose', name: 'Hoa hồng', emoji: '🌹', coins: 1 },
-  { id: 'finger-heart', name: 'Bắn tim', emoji: '🫰', coins: 5 },
-  { id: 'rosa', name: 'Rosa', emoji: '💐', coins: 10 },
-  { id: 'doughnut', name: 'Bánh donut', emoji: '🍩', coins: 30 },
-  { id: 'hand-hearts', name: 'Tay tim', emoji: '🫶', coins: 100 },
-  { id: 'corgi', name: 'Corgi', emoji: '🐶', coins: 299 },
-  { id: 'galaxy', name: 'Dải ngân hà', emoji: '🌌', coins: 1000 },
-  { id: 'fireworks', name: 'Pháo hoa', emoji: '🎆', coins: 1088 },
-  { id: 'sports-car', name: 'Siêu xe', emoji: '🏎️', coins: 7000 },
-  { id: 'rocket', name: 'Tên lửa', emoji: '🚀', coins: 20000 },
-  { id: 'lion', name: 'Sư tử', emoji: '🦁', coins: 29999 },
-  { id: 'universe', name: 'Vũ trụ', emoji: '🪐', coins: 44999 }
+  { id: 'rose', name: 'Hoa hồng', en: 'Rose', emoji: '🌹', coins: 1 },
+  { id: 'finger-heart', name: 'Bắn tim', en: 'Finger Heart', emoji: '🫰', coins: 5 },
+  { id: 'rosa', name: 'Rosa', en: 'Rosa', emoji: '💐', coins: 10 },
+  { id: 'doughnut', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 30 },
+  { id: 'hand-hearts', name: 'Tay tim', en: 'Hand Hearts', emoji: '🫶', coins: 100 },
+  { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299 },
+  { id: 'galaxy', name: 'Dải ngân hà', en: 'Galaxy', emoji: '🌌', coins: 1000 },
+  { id: 'fireworks', name: 'Pháo hoa', en: 'Fireworks', emoji: '🎆', coins: 1088 },
+  { id: 'sports-car', name: 'Siêu xe', en: 'Sports Car', emoji: '🏎️', coins: 7000 },
+  { id: 'rocket', name: 'Tên lửa', en: 'Rocket', emoji: '🚀', coins: 20000 },
+  { id: 'lion', name: 'Sư tử', en: 'Lion', emoji: '🦁', coins: 29999 },
+  { id: 'universe', name: 'Vũ trụ', en: 'TikTok Universe', emoji: '🪐', coins: 44999 }
 ];
+
+/**
+ * Gắn ảnh/giá/tên thật từ danh mục quà TikTok (đã lưu lúc nối live) vào quà mẫu, để chạy thử cũng
+ * hiện đúng ảnh quà người xem nhìn thấy. Khớp theo tên tiếng Anh hoặc tên Việt.
+ */
+export function withCatalogImages(samples, catalog) {
+  const byName = new Map((catalog || []).map((g) => [String(g.name).toLowerCase(), g]));
+  return samples.map((s) => {
+    const real = byName.get(s.en.toLowerCase()) || byName.get(s.name.toLowerCase());
+    return real ? { ...s, image: real.image || '', coins: real.coins || s.coins, realName: real.name } : s;
+  });
+}
 
 // Biểu tượng dự phòng khi quà không có ảnh (tên tiếng Anh/Việt thường gặp → emoji)
 const EMOJI = [[/rose|hồng/i, '🌹'], [/heart|tim/i, '💖'], [/donut|doughnut/i, '🍩'], [/corgi|dog|chó/i, '🐶'], [/galaxy|ngân hà/i, '🌌'],
@@ -54,7 +66,8 @@ export function tierRepresentatives(catalog, perTier = 2) {
   const list = (catalog && catalog.length ? catalog : SAMPLE_GIFTS).filter((g) => g && g.coins > 0);
   return TIER_MIN.map((_, i) => {
     const tier = i + 1;
-    const gifts = list.filter((g) => giftTier(g.coins) === tier).sort((a, b) => a.coins - b.coins).slice(0, perTier)
+    // ưu tiên quà có ảnh thật của TikTok, rồi tới quà rẻ nhất (hay được tặng nhất)
+    const gifts = list.filter((g) => giftTier(g.coins) === tier).sort((a, b) => Boolean(b.image) - Boolean(a.image) || a.coins - b.coins).slice(0, perTier)
       .map((g) => ({ name: g.name, coins: g.coins, image: g.image || '', emoji: g.emoji || giftEmoji(g.name) }));
     return { tier, gifts };
   });

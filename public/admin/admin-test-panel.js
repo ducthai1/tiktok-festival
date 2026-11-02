@@ -24,9 +24,23 @@ export function setupTestPanel({ $, run, socket, toast }) {
     toast(`Đã cho ${count} khách thử vào phòng`);
   }
 
-  // quà TikTok thật hay gặp, giá phổ biến (xu) — hiệu ứng theo giá MỘT món, giống lúc live thật
-  $('test-gifts').replaceChildren(...SAMPLE_GIFTS.map((g) => chip(`${g.emoji} ${g.name} · ${g.coins.toLocaleString('vi-VN')} xu`,
-    () => send({ kind: 'gift', giftId: g.id }))));
+  // quà TikTok thật hay gặp (hiệu ứng theo giá MỘT món, giống lúc live thật). Server gửi kèm ảnh chính thức
+  // của TikTok nếu đã từng nối live (danh mục quà của phòng được lưu lại); chưa có thì tạm dùng emoji.
+  function setGifts(gifts) {
+    $('test-gifts').replaceChildren(...(gifts || SAMPLE_GIFTS).map((g) => {
+      const b = chip(` ${g.name} · ${g.coins.toLocaleString('vi-VN')} xu`, () => send({ kind: 'gift', giftId: g.id }));
+      if (g.image) {
+        const img = document.createElement('img');
+        img.src = g.image;
+        img.alt = '';
+        img.referrerPolicy = 'no-referrer';
+        img.className = 'gift-img';
+        b.prepend(img);
+      } else b.prepend(g.emoji);
+      return b;
+    }));
+  }
+  setGifts(SAMPLE_GIFTS);
   for (const b of document.querySelectorAll('[data-test]')) b.addEventListener('click', () => send({ kind: b.dataset.test, likes: 10 }));
   $('test-arrive-1').addEventListener('click', () => send({ kind: 'member' }));
   $('test-arrive-5').addEventListener('click', () => arrive(5));
@@ -42,6 +56,7 @@ export function setupTestPanel({ $, run, socket, toast }) {
   });
 
   return {
+    setGifts,
     renderChats(game) {
       $('test-chats').replaceChildren(...(TEST_CHATS[game] || []).map((text) => chip(`💬 ${text}`, () => send({ kind: 'chat', comment: text }))));
     }

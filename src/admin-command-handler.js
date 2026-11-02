@@ -9,7 +9,7 @@ const GAME_COMMANDS = {
 };
 const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 
-export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState }) {
+export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined }) {
   let testSeq = 0;
 
   const handlers = {
@@ -40,7 +40,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       // Không cho bơm sự kiện giả vào buổi live thật: người xem sẽ thấy tương tác bịa.
       if (live.isLive()) throw new Error('Đang live thật — tắt kết nối trước khi chạy thử');
       if (!TEST_KINDS.has(msg.kind)) throw new Error('Loại thử không hợp lệ');
-      const raw = buildTestEvent(msg, (testSeq += 1));
+      const raw = buildTestEvent(msg, (testSeq += 1), getSampleGifts());
       const event = raw && live.ingest(raw, { simulated: true });
       if (!event) throw new Error('Sự kiện thử không hợp lệ');
       return { message: `Đã gửi ${msg.kind}` };

@@ -59,6 +59,9 @@ const socket = connectLiveSocket({
       renderGames(m.games);
       applySettings(m.settings);
       renderLive(m.live);
+      testPanel.setGifts(m.sampleGifts);
+    } else if (m.t === 'gifts') {
+      if (m.sampleGifts) testPanel.setGifts(m.sampleGifts);
     } else if (m.t === 'adminInfo') {
       $('provider').value = m.provider;
       if (m.username && !$('username').value) $('username').value = m.username;

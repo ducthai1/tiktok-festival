@@ -16,27 +16,35 @@ out = Path(out_root)
 DEVOTEES = {
     "nam": {
         "families": {
-            "back": (["dung-sau", "di-sau-1", "di-sau-2"], ("dung-sau", 1.66, "box")),
+            "back": (["dung-sau", "di-sau-1", "di-sau-2", "di-sau-giua"], ("dung-sau", 1.66, "box")),
             "arms": (["dang-le-sau"], ("dang-le-sau", 1.66, "head")),
-            "kneel": (["quy-sau", "vai-quy-sau"], ("quy-sau", 1.12, "box")),
+            "kneel": (["quy-sau", "vai-quy-sau", "quy-cui", "quy-xuong"], ("quy-sau", 1.12, "box")),
             "prostrate": (["lay-sau"], ("lay-sau", 0.96, "box")),
-            "side": (["dung-nghieng", "di-nghieng-1", "di-nghieng-2", "cam-huong-nghieng", "vai-huong-nghieng"], ("dung-nghieng", 1.66, "box")),
+            "side": (["dung-nghieng", "di-nghieng-1", "di-nghieng-2", "di-nghieng-giua", "cam-huong-nghieng", "vai-huong-nghieng", "vai-huong-giua"], ("dung-nghieng", 1.66, "box")),
         },
         "src": {"dung-sau": "link1-01", "di-sau-1": "link1-03", "di-sau-2": "link1-04", "quy-sau": "link1-05", "vai-quy-sau": "link1-06",
                 "lay-sau": "link1-07", "dang-le-sau": "link1-08", "dung-nghieng": "link1-09", "di-nghieng-1": "link1-10",
-                "di-nghieng-2": "link1-11", "cam-huong-nghieng": "link1-12", "vai-huong-nghieng": "link1-13"},
+                "di-nghieng-2": "link1-11", "cam-huong-nghieng": "link1-12", "vai-huong-nghieng": "link1-13",
+                # khung vẽ thêm bằng Gemini (cùng khung hình với ảnh mẫu ⇒ cùng tỉ lệ với họ của ảnh mẫu)
+                "di-sau-giua": "nam-di-sau-giua", "di-nghieng-giua": "nam-di-nghieng-giua", "quy-cui": "nam-quy-cui",
+                "quy-xuong": "nam-quy-xuong-2", "vai-huong-giua": "nam-vai-huong-giua"},
     },
     "nu": {
         "families": {
-            "back": (["dung-sau", "di-sau-1", "di-sau-2"], ("dung-sau", 1.58, "box")),
+            "back": (["dung-sau", "di-sau-1", "di-sau-2", "di-sau-giua"], ("dung-sau", 1.58, "box")),
             "arms": (["dang-le-sau"], ("dang-le-sau", 1.58, "head")),
-            "kneel": (["quy-sau", "vai-quy-sau"], ("quy-sau", 1.06, "box")),
-            "side": (["dung-nghieng", "di-nghieng-1", "di-nghieng-2", "cam-huong-nghieng", "vai-huong-nghieng"], ("dung-nghieng", 1.58, "box")),
+            "kneel": (["quy-sau", "vai-quy-sau", "quy-cui"], ("quy-sau", 1.06, "box")),
+            # Gemini vẽ người kín khung (không giữ tỉ lệ ảnh mẫu) ⇒ đặt chiều cao thật riêng cho từng khung này
+            "half-kneel": (["quy-xuong"], ("quy-xuong", 1.2, "box")),
+            "prostrate": (["lay-sau"], ("lay-sau", 0.88, "box")),
+            "side": (["dung-nghieng", "di-nghieng-1", "di-nghieng-2", "di-nghieng-dat", "cam-huong-nghieng", "vai-huong-nghieng", "vai-huong-giua"], ("dung-nghieng", 1.58, "box")),
         },
-        # ảnh lạy của nữ (link1-18) vẽ nhìn từ phía trước nên không dùng; game thay bằng vái quỳ cúi sâu
+        # ảnh lạy của nữ link1-18 vẽ nhìn từ phía trước nên không dùng; đã vẽ lại bằng Gemini (nu-lay-sau)
         "src": {"dung-sau": "link1-02", "di-sau-1": "link1-14", "di-sau-2": "link1-15", "quy-sau": "link1-16", "vai-quy-sau": "link1-17",
                 "dang-le-sau": "link1-19", "dung-nghieng": "link1-20", "di-nghieng-1": "link1-23", "di-nghieng-2": "link1-21",
-                "cam-huong-nghieng": "link1-24", "vai-huong-nghieng": "link1-25"},
+                "cam-huong-nghieng": "link1-24", "vai-huong-nghieng": "link1-25",
+                "di-sau-giua": "nu-di-sau-giua", "quy-cui": "nu-quy-cui", "lay-sau": "nu-lay-sau", "quy-xuong": "nu-quy-xuong",
+                "vai-huong-giua": "nu-vai-huong-giua", "di-nghieng-dat": "nu-di-nghieng-dat"},
     },
 }
 # Ảnh sư (link2-*) không xuất ở đây: temple_props_crop.py tách riêng quả chuông và cái mõ.
@@ -68,6 +76,9 @@ for gender, spec in DEVOTEES.items():
         ppm = span / meters
         for name in names:
             src = spec["src"][name]
+            if not (Path(keyed) / f"{src}.png").exists():
+                print("bỏ qua (chưa có ảnh):", gender, name)
+                continue
             im = Image.open(Path(keyed) / f"{src}.png")
             alpha = np.asarray(im)[..., 3]
             w, h = im.size
@@ -79,6 +90,13 @@ for gender, spec in DEVOTEES.items():
 bg = Image.open(backdrop).convert("RGB")
 total += save_webp(bg, out / "chua-nen.webp")
 manifest["backdrop"] = {"file": "chua-nen.webp", "w": bg.width, "h": bg.height}
-(out / "sprites.json").write_text(json.dumps(manifest, indent=1, ensure_ascii=False))
+# giữ các mục do script khác thêm (hào quang tượng, chuông/mõ) khi xuất lại bộ người
+old_path = out / "sprites.json"
+if old_path.exists():
+    old = json.loads(old_path.read_text())
+    for key in ("aura", "props"):
+        if key in old:
+            manifest[key] = old[key]
+old_path.write_text(json.dumps(manifest, indent=1, ensure_ascii=False))
 print(json.dumps(manifest, ensure_ascii=False)[:1500])
 print("tổng dung lượng", round(total / 1024), "KB")

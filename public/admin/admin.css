@@ -63,3 +63,4 @@ a { color: var(--gold); }
   #preview { width: 100%; height: auto; aspect-ratio: 9 / 16; }
   .games button { font-size: 15px; padding: 14px 6px; }
 }
+button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; margin-right: 4px; }
