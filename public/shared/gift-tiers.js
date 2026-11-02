@@ -19,21 +19,23 @@ export function giftTier(coinsEach) {
   return tier;
 }
 
-// Quà mẫu cho chế độ thử và bảng chú thích khi chưa nối live (giá phổ biến; có thể lệch theo vùng —
-// khi live thật, màn hình dùng danh mục quà của chính phòng đó, có ảnh thật).
+// Quà mẫu cho chế độ thử và bảng chú thích (giá phổ biến; có thể lệch theo vùng). Ảnh là ảnh CHÍNH THỨC
+// của TikTok trên máy chủ ảnh của TikTok (tiktokcdn.com) — người xem nhận ra đúng món để tặng. Nối live thì
+// quà nhận được (tên, giá, ảnh thật của phòng) được gom thêm vào danh mục.
+const CDN = 'https://p16-webcast.tiktokcdn.com/img/';
 export const SAMPLE_GIFTS = [
-  { id: 'rose', name: 'Hoa hồng', en: 'Rose', emoji: '🌹', coins: 1 },
-  { id: 'finger-heart', name: 'Bắn tim', en: 'Finger Heart', emoji: '🫰', coins: 5 },
-  { id: 'rosa', name: 'Rosa', en: 'Rosa', emoji: '💐', coins: 10 },
-  { id: 'doughnut', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 30 },
-  { id: 'hand-hearts', name: 'Tay tim', en: 'Hand Hearts', emoji: '🫶', coins: 100 },
-  { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299 },
-  { id: 'galaxy', name: 'Dải ngân hà', en: 'Galaxy', emoji: '🌌', coins: 1000 },
-  { id: 'fireworks', name: 'Pháo hoa', en: 'Fireworks', emoji: '🎆', coins: 1088 },
-  { id: 'sports-car', name: 'Siêu xe', en: 'Sports Car', emoji: '🏎️', coins: 7000 },
-  { id: 'rocket', name: 'Tên lửa', en: 'Rocket', emoji: '🚀', coins: 20000 },
-  { id: 'lion', name: 'Sư tử', en: 'Lion', emoji: '🦁', coins: 29999 },
-  { id: 'universe', name: 'Vũ trụ', en: 'TikTok Universe', emoji: '🪐', coins: 44999 }
+  { id: 'rose', name: 'Hoa hồng', en: 'Rose', emoji: '🌹', coins: 1, image: `${CDN}maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp` },
+  { id: 'finger-heart', name: 'Bắn tim', en: 'Finger Heart', emoji: '🫰', coins: 5, image: `${CDN}maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.webp` },
+  { id: 'rosa', name: 'Rosa', en: 'Rosa', emoji: '💐', coins: 10, image: `${CDN}maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp` },
+  { id: 'doughnut', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 30, image: `${CDN}maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp` },
+  { id: 'cap', name: 'Mũ lưỡi trai', en: 'Cap', emoji: '🧢', coins: 99, image: `${CDN}maliva/webcast-va/6c2ab2da19249ea570a2ece5e3377f04~tplv-obj.webp` },
+  { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299, image: `${CDN}maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp` },
+  { id: 'galaxy', name: 'Dải ngân hà', en: 'Galaxy', emoji: '🌌', coins: 1000, image: `${CDN}maliva/webcast-va/resource/79a02148079526539f7599150da9fd28.png~tplv-obj.webp` },
+  { id: 'fireworks', name: 'Pháo hoa', en: 'Fireworks', emoji: '🎆', coins: 1088, image: `${CDN}maliva/webcast-va/9494c8a0bc5c03521ef65368e59cc2b8~tplv-obj.webp` },
+  { id: 'sports-car', name: 'Siêu xe', en: 'Sports Car', emoji: '🏎️', coins: 7000, image: `${CDN}maliva/webcast-va/resource/201304005bf8f86b533b97ffa88f1abe.png~tplv-obj.webp` },
+  { id: 'interstellar', name: 'Liên hành tinh', en: 'Interstellar', emoji: '🚀', coins: 10000, image: `${CDN}maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp` },
+  { id: 'lion', name: 'Sư tử', en: 'Lion', emoji: '🦁', coins: 29999, image: `${CDN}maliva/webcast-va/4fb89af2082a290b37d704e20f4fe729~tplv-obj.webp` },
+  { id: 'universe', name: 'Vũ trụ TikTok', en: 'TikTok Universe', emoji: '🪐', coins: 44999, image: `${CDN}maliva/webcast-va/8f471afbcebfda3841a6cc515e381f58~tplv-obj.webp` }
 ];
 
 /**
@@ -44,7 +46,7 @@ export function withCatalogImages(samples, catalog) {
   const byName = new Map((catalog || []).map((g) => [String(g.name).toLowerCase(), g]));
   return samples.map((s) => {
     const real = byName.get(s.en.toLowerCase()) || byName.get(s.name.toLowerCase());
-    return real ? { ...s, image: real.image || '', coins: real.coins || s.coins, realName: real.name } : s;
+    return real ? { ...s, image: real.image || s.image, coins: real.coins || s.coins, realName: real.name } : s;
   });
 }
 

@@ -17,8 +17,8 @@ const newcomer = () => {
 
 const by = (i) => ({ viewer: castId(i), name: CAST[i % CAST.length] });
 const chat = (comment, i = 0) => ({ kind: 'chat', comment, ...by(i) });
-// quà theo id quà mẫu (public/shared/gift-tiers.js): rose, finger-heart, rosa, doughnut, hand-hearts, corgi,
-// galaxy, fireworks, sports-car, rocket, lion, universe
+// quà theo id quà mẫu (public/shared/gift-tiers.js): rose, finger-heart, rosa, doughnut, cap, corgi,
+// galaxy, fireworks, sports-car, interstellar, lion, universe
 const gift = (giftId, i = 0, count = 1) => ({ kind: 'gift', giftId, count, ...by(i) });
 const like = (i = 0) => ({ kind: 'like', likes: 15, ...by(i) });
 const social = (kind, i = 0) => ({ kind, ...by(i) });

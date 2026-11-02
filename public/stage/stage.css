@@ -74,8 +74,8 @@ body { font-family: var(--font); color: var(--ink); }
 #legend.off, #legend:empty { display: none; }
 #legend .item { display: flex; align-items: center; gap: 8px; padding: 3px 10px; border-radius: 10px; background: rgba(255, 255, 255, 0.07); font-size: 21px; font-weight: 700; }
 #legend .item em { font-style: normal; color: var(--gold); }
-#legend .item em.gifts { display: inline-flex; gap: 2px; min-width: 58px; font-size: 22px; }
-#legend .item em.gifts img { width: 28px; height: 28px; object-fit: contain; }
+#legend .item em.gifts { display: inline-flex; gap: 2px; min-width: 70px; font-size: 22px; }
+#legend .item em.gifts img { width: 34px; height: 34px; object-fit: contain; }
 
 #banner { position: absolute; left: 20px; right: 20px; top: 560px; text-align: center; font-size: 64px; line-height: 1.1; font-weight: 900; color: #fff; opacity: 0; text-shadow: 0 0 30px rgba(255, 200, 80, 0.9), 0 6px 20px #000; transform: scale(0.7); transition: opacity 260ms, transform 260ms; }
 #banner.show { opacity: 1; transform: scale(1); }
