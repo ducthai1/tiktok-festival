@@ -8,6 +8,38 @@ Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm m�
 | 🏊 **Đua Bơi Vượt Rào** | Cả phòng hợp sức đẩy vận động viên bơi 1000 m qua 4 bức tường. Thả tim gọi vịt phao, gõ `cố lên`, follow/share gọi ván lướt, quà gọi thuyền, cá heo, cá mập, cá voi, tàu ngầm. Thắng đủ 7 vòng là **VÔ ĐỊCH**. | Biển hoàng hôn, dây phao, tường gạch có thanh máu, trợ thủ bơi vào đẩy |
 | 🪷 **Chùa Online** | Thả tim gõ mõ, follow/share thỉnh chuông, gõ `thắp hương`, `cầu …` (thả hoa đăng mang lời cầu) hoặc `xin xăm` (gieo quẻ). Quà để dâng hoa sen, đèn lưu ly hoặc làm đại lễ. 6 người nhiều điểm nhất quỳ hàng đầu. | Chánh điện cột son, đèn lồng, đài sen có hào quang, lư hương, chuông, mõ, tờ giải quẻ |
 
+## Hiệu ứng theo chức năng — quà càng lớn màn càng hoành tráng
+
+| Bậc quà | 🍸 Quán Bar | 🏊 Đua bơi | 🪷 Chùa |
+|---|---|---|---|
+| 1💎 | Bia: bartender rót, cốc bay tới tay khách, khách nâng ly | Chân vịt: bơi nhanh ×1,8 | Dâng hoa sen: người dâng đi lên bàn thờ, nâng hoa quá đầu, hoa bay đặt lên bàn thờ |
+| 5💎 | Cocktail: lắc bình mạnh, rót dòng màu | Ván lướt nảy trên sóng | Đèn lưu ly: cả dãy đèn trên bàn thờ lần lượt sáng |
+| 10💎 | | Thuyền rẽ sóng để vệt bọt | |
+| 30💎 | Champagne: bật nút, bọt vàng phun, đèn rọi khách | Cá heo nhảy vòng cung | Mâm ngũ quả: dâng mâm, thỉnh chuông, mưa cánh sen |
+| 99💎 | | Cá mập lộ vây rồi lao lên | |
+| 100–199💎 | Tháp champagne: xếp từng ly, rót tràn, cả quán nâng ly | Cá voi phóng vọt khỏi mặt nước, camera rung | Đại lễ cầu an: cả chánh điện lạy 3 lạy theo 3 hồi chuông |
+| 500💎 | Mở tiệc: pháo giấy, laser, đèn chớp nhẹ, pháo hoa | Tàu ngầm trồi lên kèm còi | Đại lễ Kim Liên: sen vàng khổng lồ nở, hoa đăng bay khắp chánh điện, camera tiến vào |
+
+**Bình luận ở chùa** đều là nghi thức có đầu có cuối:
+- *Thắp hương*: người đó đứng dậy, cầm 3 nén hương tới bên lư, thắp, nâng lên trán, vái 3 vái, cắm hương rồi về chỗ quỳ.
+- *Cầu …*: chắp tay, thả hoa đăng mang lời cầu từ tay.
+- *Xin xăm*: lắc ống xăm tới khi que xăm văng ra thì tờ quẻ mới mở.
+
+Thả tim là gõ mõ, follow/share là thỉnh chuông kèm vòng sóng âm và cả chánh điện cùng vái.
+
+Nhân vật đi chậm dần khi tới chỗ và quỳ/ngồi xuống thành một động tác liền, không giật.
+
+## Âm thanh
+
+- Hiệu ứng và nhạc nền đều tự tổng hợp, không dùng nhạc có bản quyền.
+  - Bar: nhạc house.
+  - Đua bơi: sóng biển, marimba.
+  - Chùa: tiếng ngân trầm, mõ tụng kinh, chuông nhỏ.
+- Hiệu ứng mô phỏng đúng vật: chuông đồng nhiều bội âm, mõ gỗ, ly thuỷ tinh, nút sâm panh, cồng đại lễ.
+- Bật/tắt nhạc nền và chỉnh âm lượng riêng trong mục **Màn hình**.
+- Khung xem trước trong trang điều khiển mặc định im lặng để không kêu trùng với OBS; bật **🔊 Nghe ở khung xem trước** nếu muốn nghe ngay tại đó.
+- Mở `/stage` trong tab trình duyệt thường thì bấm vào màn hình một lần (trình duyệt chặn tiếng tới lần bấm đầu); OBS không cần.
+
 ## Chào mừng người mới vào phòng
 
 Ở cả 3 game, **mỗi người vào phòng đều được gọi tên**. Người đã ở sẵn trong phòng từ trước khi kết nối thì được chào lúc họ tương tác lần đầu. Người quay lại sau 10 phút được chào lại.
@@ -108,7 +140,7 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 ## Kiểm tra
 
 ```bash
-npm run gate    # kiểm cú pháp toàn bộ .js + 28 bài test (logic 3 game, chào người mới, bảo mật HTTP/WebSocket)
+npm run gate    # kiểm cú pháp toàn bộ .js + 29 bài test (logic 3 game, chào người mới, bảo mật HTTP/WebSocket)
 ```
 
 ## Giấy phép

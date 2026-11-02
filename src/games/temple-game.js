@@ -15,9 +15,13 @@ const FORTUNE_WORDS = ['xin xam', 'gieo que', 'rut que', 'xin que', 'xin 1 que',
 const PRAYER_START = ['cau', 'nguyen', 'chuc', 'xin cho'];
 const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
 
+// 5 bậc lễ theo giá trị quà — quà càng lớn nghi lễ càng trang trọng:
+// dâng hoa sen → thắp đèn lưu ly → dâng mâm ngũ quả → đại lễ cầu an → đại lễ Kim Liên.
 export function offeringForDiamonds(diamonds) {
+  if (diamonds >= 500) return 'grand';
   if (diamonds >= 100) return 'ceremony';
-  if (diamonds >= 5) return 'lantern';
+  if (diamonds >= 30) return 'fruit';
+  if (diamonds >= 5) return 'lamp';
   return 'lotus';
 }
 

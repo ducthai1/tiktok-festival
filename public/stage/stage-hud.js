@@ -18,6 +18,7 @@ export function createHud() {
   const toastRoot = $('toasts');
   let bannerTimer = 0;
   let lastBoardKey = '';
+  let boardScores = new Map();
 
   return {
     el,
@@ -41,8 +42,10 @@ export function createHud() {
       rows.forEach((row, i) => {
         const li = el('li');
         li.append(el('span', 'rank', String(i + 1)), avatarNode(row.avatar), el('span', 'name', row.nickname), el('span', 'score', row.score));
+        if (boardScores.has(row.id) && boardScores.get(row.id) !== row.score) li.classList.add('bump'); // điểm vừa tăng: loé sáng
         list.append(li);
       });
+      boardScores = new Map(rows.map((row) => [row.id, row.score]));
       root.replaceChildren(el('h3', '', heading), list);
     },
     setHint(parts) {
@@ -65,7 +68,10 @@ export function createHud() {
       node.append(document.createTextNode(text));
       toastRoot.prepend(node);
       while (toastRoot.children.length > 4) toastRoot.lastChild.remove();
-      setTimeout(() => node.remove(), ms);
+      setTimeout(() => {
+        node.classList.add('out'); // mờ dần rồi mới gỡ, không biến mất đột ngột
+        setTimeout(() => node.remove(), 400);
+      }, ms);
     },
     banner(text, sub = '', ms = 3200) {
       const root = $('banner');
@@ -92,8 +98,13 @@ export function createHud() {
       const group = fx.mode === 'group';
       const people = group ? fx.people : [fx];
       root.className = group ? 'group' : '';
+      root.getAnimations?.().forEach((a) => a.cancel());
       const shown = people.slice(0, group ? 18 : 1);
-      const avatars = shown.map((p) => avatarNode(p.avatar));
+      const avatars = shown.map((p, i) => {
+        const node = avatarNode(p.avatar);
+        node.style.setProperty('--i', String(i)); // xuất hiện lần lượt
+        return node;
+      });
       if (people.length > shown.length) avatars.push(el('div', 'ava more', `+${people.length - shown.length}`));
       root.querySelector('.welcome-avatars').replaceChildren(...avatars);
       root.querySelector('.kicker').textContent = group ? `🎉 CHÀO MỪNG ${people.length} BẠN MỚI` : '👋 CHÀO MỪNG';

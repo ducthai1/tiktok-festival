@@ -3,33 +3,12 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { animateBarRoom, buildBarRoom, FLOOR_POSITIONS, STOOL_POSITIONS } from './bar-room.js';
 import { createParticleSystem } from './particle-effects.js';
+import { createBarServing, drinkMesh } from './bar-serving.js';
 import { createCrowd, gridSpot, sideDoorSpot } from './crowd-characters.js';
-import { buildPerson, disposeObject, posePerson } from './person-model.js';
+import { animatePerson, buildPerson, disposeObject } from './person-model.js';
 
 const DRINK_NAMES = { beer: 'Bia', cocktail: 'Cocktail', champagne: 'Champagne', tower: 'Tháp champagne', party: 'MỞ TIỆC' };
-
-function drinkMesh(kind) {
-  const group = new THREE.Group();
-  const glass = new THREE.MeshStandardMaterial({ color: '#ffffff', transparent: true, opacity: 0.35, roughness: 0.05 });
-  if (kind === 'beer') {
-    group.add(new THREE.Mesh(new THREE.CylinderGeometry(0.11, 0.1, 0.28, 12), new THREE.MeshStandardMaterial({ color: '#f2a516', emissive: '#7a4a00', emissiveIntensity: 0.4 })));
-    const foam = new THREE.Mesh(new THREE.CylinderGeometry(0.115, 0.115, 0.06, 12), new THREE.MeshStandardMaterial({ color: '#fffaf0' }));
-    foam.position.y = 0.16;
-    group.add(foam);
-  } else {
-    const color = kind === 'cocktail' ? '#ff4fa3' : '#ffd36b';
-    const cup = new THREE.Mesh(new THREE.ConeGeometry(0.15, 0.22, 16, 1, true), glass);
-    cup.rotation.x = Math.PI;
-    cup.position.y = 0.2;
-    const liquid = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.16, 16), new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 1.2 }));
-    liquid.rotation.x = Math.PI;
-    liquid.position.y = 0.22;
-    const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.2, 6), glass);
-    group.add(cup, liquid, stem);
-  }
-  group.rotation.x = Math.PI; // tay đang buông xuống: lật ly cho thẳng khi giơ lên
-  return group;
-}
+const DRINK_ICONS = { beer: '🍺', cocktail: '🍸', champagne: '🥂', tower: '🍾', party: '🎉' };
 
 export function createBarScene({ hud, labels, audio, pipeline }) {
   const scene = new THREE.Scene();
@@ -45,7 +24,6 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
   let clock = 0;
   let state = null;
   let party = false;
-  let tower = null;
   pipeline.setBloom({ strength: 0.6, radius: 0.5, threshold: 0.78 });
 
   hud.setTitle('🍸 QUÁN BAR LIVE');
@@ -62,40 +40,28 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
     entrance: (i) => sideDoorSpot(i, { x: 5.4, z: -1.0 }),
     // khách ghé đứng giữa sàn nhảy, 8 người một hàng (đoàn tới 40 người vẫn nằm trong khung hình)
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, count > 1 ? 0.6 : 3.2), i, count, { maxCols: 8, dx: 0.72, dz: 0.75 }),
-    pose: (model, info, t, walking) => {
+    pose: (model, info, t, walking, dt) => {
       const seated = !walking && info.seat !== undefined && info.seat < 6;
       const visiting = info.seat === undefined;
-      posePerson(model, walking ? 'walk' : info.dancing ? 'dance' : info.cheers || visiting ? 'cheers' : 'idle', t, seated);
+      animatePerson(model, walking ? 'walk' : info.dancing ? 'dance' : info.cheers || visiting ? 'cheers' : 'idle', t, dt, seated);
     },
     labelFor: (info) => ({ vip: info.vip, small: info.seat >= 6, offsetY: 0.55 }),
     speed: 3.2
   });
 
+  const serving = createBarServing({ scene, room, crowd, particles, audio, focus: (entry, seconds) => {
+    spotFollow = entry;
+    spotUntil = clock + seconds;
+  } });
+
   function syncDrinks(list) {
     for (const info of list) {
       const entry = crowd.get(info.id);
-      if (!entry || entry.drinkKind === info.drink) continue;
+      if (!entry || entry.drinkKind === info.drink || serving.isDelivering(info.id)) continue; // ly đang bay tới thì chờ
       entry.model.hand.clear();
       if (info.drink) entry.model.hand.add(drinkMesh(info.drink));
       entry.drinkKind = info.drink;
     }
-  }
-
-  function showTower() {
-    if (tower) scene.remove(tower);
-    tower = new THREE.Group();
-    const gold = new THREE.MeshStandardMaterial({ color: '#ffd36b', emissive: '#ffb300', emissiveIntensity: 1.4, transparent: true, opacity: 0.85 });
-    for (let level = 0; level < 4; level += 1) {
-      const n = 4 - level;
-      for (let i = 0; i < n; i += 1) {
-        const g = new THREE.Mesh(new THREE.ConeGeometry(0.16, 0.24, 14, 1, true), gold);
-        g.rotation.x = Math.PI;
-        g.position.set((i - (n - 1) / 2) * 0.34, 1.35 + level * 0.3, -3.3);
-        tower.add(g);
-      }
-    }
-    scene.add(tower);
-    tower.userData.until = clock + 20;
   }
 
   return {
@@ -113,8 +79,8 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       syncDrinks(state.patrons);
     },
     legend: [['1💎', ' Bia'], ['5💎', ' Cocktail'], ['30💎', ' Champagne'], ['100💎', ' Tháp ly'], ['500💎', ' Mở tiệc']],
+    probe: (id) => crowd.probe(id),
     onFx(fx) {
-      const p = crowd.get(fx.userId);
       if (fx.kind === 'welcome') {
         const people = fx.mode === 'group' ? fx.people : [fx];
         const entries = crowd.welcome(people);
@@ -126,13 +92,14 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       } else if (fx.kind === 'bubble') labels.bubble(fx.userId, fx.text);
       else if (fx.kind === 'toast') hud.toast(fx.text);
       else if (fx.kind === 'drink') {
-        audio.play('clink');
-        hud.toast(`${fx.nickname} gọi ${DRINK_NAMES[fx.drink]} (${fx.giftName} ×${fx.count})`, { gold: fx.diamonds >= 30 });
-        if (p) particles.burst({ position: p.model.root.position.clone().setY(2.6), count: 30 + Math.min(120, fx.diamonds), colors: ['#ffd36b', '#ffffff'], speed: 4, gravity: -4 });
-        if (fx.drink === 'tower' || fx.drink === 'party') showTower();
+        hud.toast(`${DRINK_ICONS[fx.drink]} ${fx.nickname} gọi ${DRINK_NAMES[fx.drink]} (${fx.giftName} ×${fx.count})`, { gold: fx.diamonds >= 30 });
+        serving.serve(fx);
+        if (fx.drink === 'tower') hud.banner('🍾 THÁP CHAMPAGNE 🍾', `${fx.nickname} mời cả quán`, 3500);
       } else if (fx.kind === 'party') {
         audio.play('fanfare');
         hud.banner('🎉 MỞ TIỆC! 🎉', 'Cả quán cùng quẩy');
+        [-1, 1].forEach((side) => particles.burst({ position: new THREE.Vector3(side * 5.5, 0.5, 4), count: 500,
+          colors: ['#ff4fa3', '#ffd36b', '#36d6ff', '#7dff8a', '#ffffff'], speed: 12, spread: 0.15, gravity: -6, life: 3, size: 0.2 }));
       } else if (fx.kind === 'fireworks') {
         audio.play('boom');
         for (let i = 0; i < 2 + fx.power * 2; i += 1) {
@@ -157,12 +124,7 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
         welcomeSpot.position.set(welcomeSpot.target.position.x, 9, welcomeSpot.target.position.z + 2);
         welcomeSpot.angle = spotFollow ? 0.22 : 0.42;
       }
-      if (tower && t > tower.userData.until) {
-        scene.remove(tower);
-        disposeObject(tower);
-        tower = null;
-      }
-      if (tower) particles.burst({ position: new THREE.Vector3(0, 2.6, -3.3), count: 1, colors: ['#ffe08a'], speed: 1.5, gravity: 0.5, life: 1.2, size: 0.12 });
+      serving.frame(t, dt, party);
       particles.update(dt);
     },
     dispose() {

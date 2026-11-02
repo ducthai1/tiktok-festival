@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import { createBarClubGame, BAR_SEATS, VIBE_GOAL, drinkForDiamonds } from '../src/games/bar-club-game.js';
 import { createSwimPushGame, GOAL_METERS, WIN_TARGET, helperForGift } from '../src/games/swim-push-game.js';
-import { createTempleGame, TEMPLE_SLOTS } from '../src/games/temple-game.js';
+import { createTempleGame, offeringForDiamonds, TEMPLE_SLOTS } from '../src/games/temple-game.js';
 import { createGameHub } from '../src/games/game-hub.js';
 import { FORTUNES } from '../src/games/temple-fortunes.js';
 
@@ -103,6 +103,11 @@ test('temple: likes strike the wooden fish, chat rituals, fortune queue with coo
   assert.equal(shown.number, 1);
   assert.equal(shown.poem.length, 4);
   assert.ok(FORTUNES.every((f) => f.poem.length === 4 && f.meaning && f.rank));
+});
+
+test('temple: offerings get grander with the gift value (5 tiers)', () => {
+  assert.deepEqual([1, 5, 30, 100, 500].map(offeringForDiamonds), ['lotus', 'lamp', 'fruit', 'ceremony', 'grand']);
+  assert.deepEqual([4, 29, 99, 499].map(offeringForDiamonds), ['lotus', 'lamp', 'fruit', 'ceremony']);
 });
 
 test('temple: top merit kneels in front, full hall evicts non-VIP', () => {

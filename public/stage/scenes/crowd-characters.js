@@ -4,7 +4,9 @@
 // - Được chào mà không còn chỗ (quán/chánh điện đầy người đang tương tác): vẫn có một nhân vật
 //   "khách ghé" mang tên họ bước vào chào rồi rời đi.
 import * as THREE from '/vendor/three/three.module.js';
-import { disposeObject, walkTowards } from './person-model.js';
+import { animatePerson, disposeObject, walkTowards } from './person-model.js';
+
+const hold = new THREE.Vector3();
 
 const REVEAL_FALLBACK_S = 45; // hàng chờ bị xoá giữa chừng thì cũng không giữ ai ngoài cửa mãi
 
@@ -16,11 +18,12 @@ const REVEAL_FALLBACK_S = 45; // hàng chờ bị xoá giữa chừng thì cũng
  * @param {(info:object)=>THREE.Vector3} o.place  chỗ đứng/ngồi của người có chỗ
  * @param {(index:number, count:number)=>THREE.Vector3} o.entrance  cửa vào (index/count để đoàn đi so le)
  * @param {(index:number, count:number)=>THREE.Vector3} o.visitSpot  chỗ "khách ghé" đứng chào khi hết chỗ
- * @param {(model, info, t:number, walking:boolean)=>void} o.pose
+ * @param {(model, info, t:number, walking:boolean, dt:number)=>void} o.pose
  * @param {(info:object)=>object} o.labelFor   tuỳ chọn nhãn (vip, small, offsetY…)
  */
 export function createCrowd({ scene, labels, build, place, entrance, visitSpot, pose, labelFor, facing = 0, speed = 3 }) {
   const members = new Map();
+  const deferred = new Map(); // nghi thức chờ nhân vật vào xong (người mới vừa vào đã thắp hương ngay)
   let clock = 0;
 
   function add(id, info, { hidden, transient = false, index = 0 }) {
@@ -31,6 +34,34 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
     const entry = { id, model, info, hidden, transient, born: clock, index };
     members.set(id, entry);
     return entry;
+  }
+
+  // Kịch bản diễn của một nhân vật: [{walk: Vector3, facing}, {pose, seconds, facing, onTick}, {run: fn}].
+  // Diễn xong thì tự đi về chỗ của mình và quay lại tư thế thường.
+  function runScript(entry, dt, t) {
+    const step = entry.script[0];
+    const { root } = entry.model;
+    const next = () => {
+      entry.script.shift();
+      entry.stepStart = t;
+    };
+    if (step.run) {
+      step.run(entry);
+      return next();
+    }
+    if (step.walk) {
+      const walking = walkTowards(root, step.walk, dt, { speed: step.speed || speed * 0.8, facing: step.facing ?? facing });
+      animatePerson(entry.model, walking ? 'walk' : step.pose || 'idle', t, dt);
+      if (!walking && Math.abs(Math.sin((root.rotation.y - (step.facing ?? facing)) / 2)) < 0.05) next();
+      return undefined;
+    }
+    hold.copy(root.position);
+    walkTowards(root, hold, dt, { facing: step.facing ?? root.rotation.y });
+    const elapsed = t - entry.stepStart;
+    animatePerson(entry.model, step.pose, t, dt, false, elapsed);
+    step.onTick?.(entry, elapsed, dt);
+    if (elapsed >= step.seconds) next();
+    return undefined;
   }
 
   function remove(id) {
@@ -44,6 +75,23 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
 
   return {
     get: (id) => members.get(id),
+    /**
+     * Cho một người diễn một chuỗi động tác. Nhân vật chưa có / còn đứng ngoài cửa thì chờ tối đa
+     * waitSeconds rồi mới diễn; quá hạn thì gọi fallback (chỉ hiện kết quả, không có người diễn).
+     */
+    perform(id, steps, { fallback, waitSeconds = 15 } = {}) {
+      const entry = members.get(id);
+      if (entry && !entry.hidden && !entry.leaving) {
+        entry.script = steps.slice();
+        entry.stepStart = clock;
+        return;
+      }
+      const previous = deferred.get(id);
+      if (previous) previous.fallback?.();
+      deferred.set(id, { steps, fallback, deadline: clock + waitSeconds });
+    },
+    busy: (id) => Boolean(members.get(id)?.script?.length),
+    all: () => [...members.values()],
     /** list: người có chỗ theo server; pending: Set id đang chờ được chào. */
     sync(list, pending) {
       const ids = new Set(list.map((info) => info.id));
@@ -85,6 +133,17 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
     },
     frame(dt, t) {
       clock = t;
+      for (const [id, job] of deferred) {
+        const entry = members.get(id);
+        if (entry && !entry.hidden && !entry.leaving) {
+          deferred.delete(id);
+          entry.script = job.steps.slice();
+          entry.stepStart = t;
+        } else if (t > job.deadline) {
+          deferred.delete(id);
+          job.fallback?.();
+        }
+      }
       for (const [id, entry] of members) {
         const { root } = entry.model;
         if (entry.hidden) {
@@ -92,6 +151,10 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
             entry.hidden = false;
             root.visible = true;
           }
+          continue;
+        }
+        if (entry.script?.length) {
+          runScript(entry, dt, t);
           continue;
         }
         if (entry.transient && t > entry.until && !entry.leaving) entry.leaving = t;
@@ -102,8 +165,15 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
         }
         root.scale.setScalar(Math.min(1, root.scale.x + dt * 3));
         const walking = walkTowards(root, entry.target, dt, { speed, facing });
-        pose(entry.model, entry.info, t, walking);
+        pose(entry.model, entry.info, t, walking, dt);
       }
+    },
+    // Cho trình duyệt tự động đo độ mượt: vị trí + độ cao hông của một nhân vật.
+    probe(id) {
+      const e = members.get(id);
+      if (!e) return null;
+      const { root, hips } = e.model;
+      return { x: root.position.x, y: root.position.y, z: root.position.z, hipsY: hips.position.y, rotY: root.rotation.y, hidden: e.hidden };
     },
     /** Nhãn của nhân vật ẩn (còn ngoài cửa) không được hiện. */
     isHidden: (id) => Boolean(members.get(id)?.hidden),

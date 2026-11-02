@@ -60,8 +60,9 @@
           <li>Rộng <b>1080</b> × Cao <b>1920</b>; bật “Control audio via OBS” để thu âm thanh game.</li>
         </ol>
         <p><a id="open-stage" href="/stage" target="_blank" rel="noopener">↗ Mở màn hình lớn trong tab mới</a> <span class="muted small">(bấm vào màn hình một lần để bật âm thanh)</span></p>
+        <label class="toggle"><input type="checkbox" id="preview-sound"> 🔊 Nghe ở khung xem trước <span class="muted small">(tắt khi đã gắn OBS để khỏi kêu trùng)</span></label>
       </div>
-      <iframe id="preview" title="Xem trước màn hình OBS" src="/stage?preview=1"></iframe>
+      <iframe id="preview" title="Xem trước màn hình OBS" src="/stage?preview=1" allow="autoplay"></iframe>
     </section>
 
     <section class="card">
@@ -95,10 +96,12 @@
       <h2>5 · Màn hình</h2>
       <div class="row wrap">
         <label class="toggle"><input type="checkbox" id="set-sound"> Âm thanh hiệu ứng</label>
+        <label class="toggle"><input type="checkbox" id="set-music"> Nhạc nền</label>
         <label class="toggle"><input type="checkbox" id="set-tts"> Đọc lời cầu / quẻ (giọng máy)</label>
         <label class="toggle"><input type="checkbox" id="set-ttsWelcome"> Đọc tên người mới vào</label>
         <label class="toggle"><input type="checkbox" id="set-legend"> Hiện bảng quà</label>
-        <label>Âm lượng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
+        <label>Âm lượng hiệu ứng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
+        <label>Âm lượng nhạc <input type="range" id="set-musicVolume" min="0" max="1" step="0.05"></label>
       </div>
       <form id="welcome-form" class="row wrap">
         <label>Chào từng người bằng thẻ tên + nhân vật; phòng trên

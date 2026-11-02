@@ -20,6 +20,16 @@ const audio = createStageAudio();
 let settings = { legend: true };
 // Khung xem trước trong trang điều khiển: tắt tiếng để không đọc/kêu trùng với nguồn OBS.
 const isPreview = new URLSearchParams(location.search).has('preview');
+let previewSound = false; // trang điều khiển bật "Nghe ở khung xem trước"
+const applyAudio = () => audio.configure(isPreview && !previewSound ? { ...settings, sound: false, tts: false, ttsWelcome: false } : settings);
+if (isPreview) {
+  window.addEventListener('message', (event) => {
+    if (event.origin !== location.origin || event.data?.t !== 'previewSound') return;
+    previewSound = event.data.on === true;
+    if (previewSound) audio.unlock();
+    applyAudio();
+  });
+}
 let current = null;
 let currentId = '';
 let switching = null;
@@ -55,6 +65,9 @@ async function switchScene(id) {
   current?.dispose();
   current = factory({ hud, labels, audio, pipeline });
   currentId = id;
+  stageEl.classList.remove('theme-bar', 'theme-swim', 'theme-temple');
+  stageEl.classList.add(`theme-${id}`);
+  audio.setTheme(id);
   hud.setLegend(current.legend || [], settings.legend !== false);
   if (latest?.game === id) current.update(latest);
   fadeEl.classList.remove('on');
@@ -96,7 +109,7 @@ connectLiveSocket({
   onMessage(message) {
     if (message.t === 'hello' || message.t === 'settings') {
       settings = message.settings || settings;
-      audio.configure(isPreview ? { ...settings, sound: false, tts: false } : settings);
+      applyAudio();
       if (current) hud.setLegend(current.legend || [], settings.legend !== false);
     } else if (message.t === 'state') onState(message);
     else if (message.t === 'fx' && message.game === currentId && current) {
@@ -116,8 +129,9 @@ let last = performance.now();
 let frameErrors = 0;
 function loop(now) {
   requestAnimationFrame(loop); // đặt khung sau TRƯỚC: lỗi một khung không được làm đứng hình cả buổi live
-  const dt = Math.min(0.05, (now - last) / 1000);
-  last = now;
+  // dt không bao giờ âm/quá lớn: tab bị ẩn rồi hiện lại, hay đồng hồ lệch, nhân vật cũng không bị kéo lùi/nhảy cóc.
+  const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
+  last = Math.max(last, now);
   if (!current) return;
   try {
     current.frame(dt, now / 1000);
@@ -142,6 +156,10 @@ window.__stage = {
     }
     return currentId;
   },
+  probe: (id) => current?.probe?.(id) || null,
+  audioState: () => audio.state(),
+  audioLevel: () => audio.level(),
+  playSound: (name) => audio.play(name),
   // Chỉ để chụp ảnh kiểm tra: phát hiệu ứng ngay trên màn hình này, không qua server.
   inject(list) {
     for (const fx of list) {

@@ -47,8 +47,8 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     settings(msg) {
       const patch = {};
-      for (const key of ['tts', 'ttsWelcome', 'legend', 'sound']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
-      if (Number.isFinite(msg.volume)) patch.volume = Math.max(0, Math.min(1, msg.volume));
+      for (const key of ['tts', 'ttsWelcome', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
+      for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) patch[key] = Math.max(0, Math.min(1, msg[key]));
       if (Number.isFinite(msg.welcomeTextAbove)) {
         patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));
         hub.setWelcomeThreshold(patch.welcomeTextAbove);

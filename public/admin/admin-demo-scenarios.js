@@ -59,15 +59,17 @@ export const EFFECTS = {
     ['🏁 Về đích ngay', () => gift(500, 4, 3)]
   ],
   temple: [
-    ['🔥 “thắp hương”', () => chat('thắp hương', 0)],
+    ['🔥 “thắp hương”', () => ({ ...chat('thắp hương', 0), wait: 9000 })],
     ['🪷 “cầu …” thả hoa đăng', () => chat('cầu cho gia đình bình an mạnh khoẻ', 1)],
     ['🙏 “nam mô a di đà phật”', () => chat('nam mô a di đà phật', 2)],
-    ['🎋 “xin xăm”', () => ({ ...chat('xin xăm', 3), wait: 6000 })],
+    ['🎋 “xin xăm”', () => ({ ...chat('xin xăm', 3), wait: 9000 })],
     ['❤ Thả tim → gõ mõ', () => like(4)],
     ['🔔 Follow → thỉnh chuông', () => social('follow', 5)],
-    ['🪷 Dâng sen 1💎', () => gift(1, 0)],
-    ['🏮 Đèn lưu ly 30💎', () => gift(30, 1)],
-    ['✨ Đại lễ 199💎', () => gift(199, 2)]
+    ['🪷 Dâng hoa sen 1💎', () => ({ ...gift(1, 0), wait: 7000 })],
+    ['🏮 Đèn lưu ly 10💎', () => ({ ...gift(10, 1), wait: 7000 })],
+    ['🍊 Mâm ngũ quả 30💎', () => ({ ...gift(30, 2), wait: 7000 })],
+    ['🙏 Đại lễ cầu an 199💎', () => ({ ...gift(199, 3), wait: 9000 })],
+    ['🪷 Đại lễ Kim Liên 500💎', () => ({ ...gift(500, 4), wait: 14000 })]
   ]
 };
 
@@ -102,7 +104,8 @@ export function createDemoRunner({ socket, toast, setStatus }) {
     // Chạy hết: vài người vào → từng hiệu ứng của game, cách nhau đủ lâu để xem rõ.
     runAll(game) {
       const effects = EFFECTS[game] || [];
-      const steps = [...ARRIVALS[0][1](), ...effects.map(([, make]) => ({ wait: 3200, ...make() }))];
+      // mỗi hiệu ứng có thời lượng riêng (wait trong make) để màn trước diễn xong mới tới màn sau
+      const steps = [...ARRIVALS[0][1](), ...effects.map(([, make]) => ({ wait: 3600, ...make() }))];
       return run(`Toàn bộ hiệu ứng (${effects.length})`, steps);
     }
   };

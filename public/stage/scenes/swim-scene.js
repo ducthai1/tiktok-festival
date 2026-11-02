@@ -4,6 +4,7 @@ import { createMeter, formatNumber } from '../stage-hud.js';
 import { createParticleSystem } from './particle-effects.js';
 import { buildPerson, disposeObject, posePerson } from './person-model.js';
 import { buildHelper, HELPER_LENGTH } from './swim-helper-models.js';
+import { HELPER_LIFE, moveHelper, PUSH_FEEL } from './swim-helper-motion.js';
 import { animateSwimWorld, buildSwimWorld, buildWall, METER_TO_UNIT } from './swim-world.js';
 
 const WALL_GAP = 2.3; // tường dừng ngay trước đầu người bơi
@@ -114,15 +115,19 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
 
   function onPush(h) {
     h.pushed = true;
+    const feel = PUSH_FEEL[h.fx.helper] || PUSH_FEEL.duck;
+    audio.play(feel.sound);
+    if (feel.chirp) [2400, 3000, 2600].forEach((f, i) => setTimeout(() => audio.play('chirp'), i * 90));
+    shake = Math.max(shake, feel.shake);
     if (!h.fx.push) {
-      audio.play('pop'); // vịt chào người mới: không đẩy, chỉ té nước vui
       particles.burst({ position: h.group.position.clone().setY(0.3), count: 20, colors: ['#ffffff', '#bff3ff'], speed: 3, gravity: -9, life: 0.8, size: 0.18 });
       return;
     }
     surge = Math.min(1.2, surge + 0.35 + Math.min(0.8, h.fx.push / 400));
-    audio.play(h.fx.push >= 150 ? 'splash' : 'whoosh');
-    particles.burst({ position: new THREE.Vector3(0, 0.3, 0.6), count: 50 + Math.min(150, h.fx.push), colors: ['#ffffff', '#bff3ff'], speed: 5, spread: 0, gravity: -9, life: 1, size: 0.22 });
+    particles.burst({ position: new THREE.Vector3(h.group.position.x * 0.5, 0.3, 0.6), count: feel.splash, colors: ['#ffffff', '#bff3ff'],
+      speed: 4 + feel.shake * 8, spread: 0, gravity: -9, life: 1.1, size: 0.22 });
   }
+
 
   return {
     scene,
@@ -212,10 +217,9 @@ export function createSwimScene({ hud, labels, audio, pipeline }) {
         const forward = Math.max(0, age - APPROACH_S);
         h.group.position.x = h.side * THREE.MathUtils.lerp(7, sideX, ease);
         h.group.position.z = THREE.MathUtils.lerp(-1, 0.6, ease) - forward * forward * 6;
-        h.group.position.y = Math.sin(age * 6) * 0.08 - Math.max(0, age - 1.5) * 1.8;
-        h.group.rotation.y = (1 - ease) * h.side * -0.9;
+        moveHelper(h, age, ease, forward, particles);
         if (!h.pushed && k >= 1) onPush(h);
-        if (age > LIFE_S) {
+        if (age > (HELPER_LIFE[h.fx.helper] || LIFE_S)) {
           scene.remove(h.group);
           disposeObject(h.group);
           labels.remove(h.id);

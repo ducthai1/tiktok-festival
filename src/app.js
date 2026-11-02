@@ -13,7 +13,8 @@ import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 
 const DEFAULT_SETTINGS = {
-  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6, welcomeTextAbove: 1000
+  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6,
+  music: true, musicVolume: 0.35, welcomeTextAbove: 1000
 };
 
 function loadSettings(dataDir) {
@@ -40,6 +41,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   };
   const publicSettings = () => ({
     tts: settings.tts, ttsWelcome: settings.ttsWelcome, legend: settings.legend, sound: settings.sound, volume: settings.volume,
+    music: settings.music, musicVolume: settings.musicVolume,
     welcomeTextAbove: settings.welcomeTextAbove
   });
   const emitFx = (game, list) => {

@@ -137,6 +137,8 @@ function applySettings(s) {
   $('set-tts').checked = s.tts === true;
   $('set-legend').checked = s.legend !== false;
   $('set-volume').value = String(s.volume ?? 0.6);
+  $('set-music').checked = s.music !== false;
+  $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
 }
@@ -159,14 +161,25 @@ $('connect-form').addEventListener('submit', (e) => {
 });
 $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
 $('reset-session').addEventListener('click', () => run({ t: 'resetSession' }));
-for (const key of ['sound', 'tts', 'ttsWelcome', 'legend']) {
+for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'legend']) {
   $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: e.target.checked }, 'Đã lưu'));
 }
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
 });
-$('set-volume').addEventListener('change', (e) => run({ t: 'settings', volume: Number(e.target.value) }, 'Đã lưu'));
+for (const key of ['volume', 'musicVolume']) {
+  $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: Number(e.target.value) }, 'Đã lưu'));
+}
+// Nghe ở khung xem trước: nhớ theo trình duyệt này, báo cho khung qua postMessage (cùng nguồn).
+const previewSoundOn = () => { try { return localStorage.getItem('previewSound') === '1'; } catch { return false; } };
+const sendPreviewSound = () => $('preview').contentWindow?.postMessage({ t: 'previewSound', on: $('preview-sound').checked }, location.origin);
+$('preview-sound').checked = previewSoundOn();
+$('preview-sound').addEventListener('change', () => {
+  try { localStorage.setItem('previewSound', $('preview-sound').checked ? '1' : '0'); } catch { /* bỏ qua */ }
+  sendPreviewSound();
+});
+$('preview').addEventListener('load', () => setTimeout(sendPreviewSound, 300));
 $('login-form').addEventListener('submit', (e) => {
   e.preventDefault();
   token = $('login-token').value.trim();

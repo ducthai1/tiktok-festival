@@ -36,6 +36,10 @@ SOFTWARE.
 - `newakungchgamer-maker/SwimLive` (phần mềm đóng, có khoá bản quyền) — chỉ đọc file cấu hình để hiểu kiểu chơi "hợp sức đẩy vượt tường". Số liệu, mô hình và mã ở đây là tự làm.
 - `zane-tv/tiktok-live-temple-rpc` (không có giấy phép) — chỉ đọc README để hiểu các nghi thức tương tác. Không dùng mã, hình Phật hay quẻ xăm của repo đó; 16 quẻ trong `src/games/temple-fortunes.js` là tự soạn.
 
+## Font
+
+`public/fonts/`: Be Vietnam Pro và Playfair Display — SIL Open Font License 1.1 (Google Fonts), được phép nhúng và phân phối lại.
+
 ## Thư viện npm
 
 - `three` (MIT), `ws` (MIT).

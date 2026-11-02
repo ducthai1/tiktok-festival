@@ -1,74 +1,57 @@
-// Âm thanh tự tổng hợp bằng WebAudio (không cần file nhạc có bản quyền) + giọng đọc
-// của trình duyệt (speechSynthesis) cho lời khấn/quẻ — không chạy chương trình ngoài nào.
+// Âm thanh tự tổng hợp bằng WebAudio (không dùng file nhạc có bản quyền): hiệu ứng + nhạc nền theo game,
+// cộng giọng đọc của trình duyệt (speechSynthesis) cho lời khấn/quẻ/chào. Không chạy chương trình ngoài.
+import { createMusic } from './stage-music.js';
+import { createSynth } from './stage-sfx.js';
+
 export function createStageAudio() {
   let ctx = null;
-  let enabled = true;
-  let volume = 0.6;
-  let ttsOn = false;
-  let ttsWelcome = false;
+  let master = null;
+  let sfxBus = null;
+  let musicBus = null;
+  let analyser = null;
+  let synth = null;
+  let music = null;
+  let theme = '';
+  const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false };
   const speakQueue = [];
 
   function audio() {
-    if (!ctx) ctx = new AudioContext();
-    if (ctx.state === 'suspended') ctx.resume().catch(() => {});
+    if (!ctx) {
+      ctx = new AudioContext();
+      const limiter = ctx.createDynamicsCompressor();
+      limiter.threshold.value = -10;
+      limiter.ratio.value = 6;
+      master = ctx.createGain();
+      sfxBus = ctx.createGain();
+      musicBus = ctx.createGain();
+      analyser = ctx.createAnalyser();
+      analyser.fftSize = 1024;
+      sfxBus.connect(master);
+      musicBus.connect(master);
+      master.connect(limiter).connect(analyser).connect(ctx.destination);
+      synth = createSynth(ctx, sfxBus);
+      music = createMusic(ctx, musicBus);
+      applyLevels();
+    }
+    if (ctx.state === 'suspended') ctx.resume().then(applyLevels).catch(() => {});
     return ctx;
   }
 
-  function tone({ freq, type = 'sine', attack = 0.005, decay = 0.4, gain = 0.3, slide = 0, delay = 0 }) {
-    if (!enabled) return;
-    const a = audio();
-    const t = a.currentTime + delay;
-    const osc = a.createOscillator();
-    const amp = a.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(freq, t);
-    if (slide) osc.frequency.exponentialRampToValueAtTime(Math.max(20, freq * slide), t + decay);
-    amp.gain.setValueAtTime(0.0001, t);
-    amp.gain.exponentialRampToValueAtTime(gain * volume, t + attack);
-    amp.gain.exponentialRampToValueAtTime(0.0001, t + attack + decay);
-    osc.connect(amp).connect(a.destination);
-    osc.start(t);
-    osc.stop(t + attack + decay + 0.05);
+  function applyLevels() {
+    if (!ctx) return;
+    const t = ctx.currentTime;
+    sfxBus.gain.setTargetAtTime(opts.sound ? opts.volume : 0, t, 0.05);
+    musicBus.gain.setTargetAtTime(opts.sound && opts.music ? opts.musicVolume : 0, t, 0.3);
+    if (theme && opts.sound && opts.music && ctx.state === 'running') music.start(theme);
+    else music.stop();
   }
-
-  function noise({ decay = 0.3, gain = 0.2, freq = 1200, delay = 0 }) {
-    if (!enabled) return;
-    const a = audio();
-    const t = a.currentTime + delay;
-    const buffer = a.createBuffer(1, Math.ceil(a.sampleRate * decay), a.sampleRate);
-    const data = buffer.getChannelData(0);
-    for (let i = 0; i < data.length; i += 1) data[i] = (Math.random() * 2 - 1) * (1 - i / data.length) ** 2;
-    const src = a.createBufferSource();
-    const filter = a.createBiquadFilter();
-    const amp = a.createGain();
-    src.buffer = buffer;
-    filter.type = 'bandpass';
-    filter.frequency.value = freq;
-    amp.gain.value = gain * volume;
-    src.connect(filter).connect(amp).connect(a.destination);
-    src.start(t);
-  }
-
-  const sounds = {
-    pop: () => tone({ freq: 620, type: 'triangle', decay: 0.12, gain: 0.25, slide: 1.6 }),
-    clink: () => { tone({ freq: 2600, decay: 0.5, gain: 0.12 }); tone({ freq: 3900, decay: 0.35, gain: 0.08, delay: 0.03 }); },
-    whoosh: () => noise({ decay: 0.45, gain: 0.25, freq: 900 }),
-    splash: () => noise({ decay: 0.6, gain: 0.35, freq: 500 }),
-    crash: () => { noise({ decay: 0.9, gain: 0.5, freq: 260 }); tone({ freq: 90, type: 'sawtooth', decay: 0.5, gain: 0.2, slide: 0.5 }); },
-    fanfare: () => [523, 659, 784, 1047].forEach((f, i) => tone({ freq: f, type: 'triangle', decay: 0.5, gain: 0.22, delay: i * 0.12 })),
-    boom: () => { noise({ decay: 1.2, gain: 0.45, freq: 180 }); tone({ freq: 60, decay: 0.8, gain: 0.3, slide: 0.6 }); },
-    mo: () => { tone({ freq: 820, type: 'sine', decay: 0.09, gain: 0.5, slide: 0.7 }); noise({ decay: 0.05, gain: 0.25, freq: 2400 }); },
-    bell: () => [196, 392.5, 588, 1176].forEach((f, i) => tone({ freq: f, decay: 4 - i * 0.6, gain: 0.32 / (i + 1), attack: 0.004 })),
-    chime: () => [1318, 1568, 1976].forEach((f, i) => tone({ freq: f, decay: 1.2, gain: 0.12, delay: i * 0.09 })),
-    welcome: () => [784, 988, 1175, 1568].forEach((f, i) => tone({ freq: f, type: 'triangle', decay: 0.7, gain: 0.16, delay: i * 0.08 }))
-  };
 
   function speakNext() {
-    if (!ttsOn || speechSynthesis.speaking || !speakQueue.length) return;
+    if (speechSynthesis.speaking || !speakQueue.length) return;
     const u = new SpeechSynthesisUtterance(speakQueue.shift());
     u.lang = 'vi-VN';
     u.rate = 0.95;
-    u.volume = volume;
+    u.volume = Math.min(1, opts.volume + 0.2);
     const vi = speechSynthesis.getVoices().find((v) => v.lang?.toLowerCase().startsWith('vi'));
     if (vi) u.voice = vi;
     u.onend = speakNext;
@@ -81,34 +64,54 @@ export function createStageAudio() {
     unlock() {
       try {
         audio();
+        ctx.resume().then(applyLevels).catch(() => {});
         if ('speechSynthesis' in window) speechSynthesis.speak(new SpeechSynthesisUtterance(''));
       } catch {
         // không có WebAudio — bỏ qua
       }
     },
-    play(name) {
+    play(name, options) {
+      if (!opts.sound) return;
       try {
-        sounds[name]?.();
+        audio();
+        synth.play(name, options);
       } catch {
-        // trình duyệt chặn âm thanh khi chưa có thao tác — bỏ qua
+        // âm thanh bị chặn khi chưa có thao tác — bỏ qua
       }
     },
-    // channel 'welcome' = đọc tên người mới vào (công tắc riêng); còn lại = lời cầu/quẻ.
+    // Nhạc nền theo game (bar / swim / temple); đổi game là đổi nhạc.
+    setTheme(name) {
+      theme = name;
+      if (ctx) applyLevels();
+    },
     speak(text, channel = 'story') {
-      const allowed = channel === 'welcome' ? ttsWelcome : ttsOn;
+      const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
       if (!allowed || !('speechSynthesis' in window) || speakQueue.length > 4) return;
       speakQueue.push(String(text).slice(0, 220));
       speakNext();
     },
     configure(settings) {
-      enabled = settings.sound !== false;
-      volume = Number.isFinite(settings.volume) ? settings.volume : 0.6;
-      ttsOn = settings.tts === true;
-      ttsWelcome = settings.ttsWelcome === true;
-      if (!ttsOn && !ttsWelcome && 'speechSynthesis' in window) {
+      Object.assign(opts, {
+        sound: settings.sound !== false,
+        volume: Number.isFinite(settings.volume) ? settings.volume : 0.6,
+        music: settings.music !== false,
+        musicVolume: Number.isFinite(settings.musicVolume) ? settings.musicVolume : 0.35,
+        tts: settings.tts === true,
+        ttsWelcome: settings.ttsWelcome === true
+      });
+      if (!opts.tts && !opts.ttsWelcome && 'speechSynthesis' in window) {
         speakQueue.length = 0;
         speechSynthesis.cancel();
       }
-    }
+      applyLevels();
+    },
+    // Đo mức âm thật đang phát ra (0..1) — để kiểm tra "có tiếng" bằng máy, không phải đoán.
+    level() {
+      if (!analyser) return 0;
+      const data = new Float32Array(analyser.fftSize);
+      analyser.getFloatTimeDomainData(data);
+      return Math.sqrt(data.reduce((sum, v) => sum + v * v, 0) / data.length);
+    },
+    state: () => (ctx ? ctx.state : 'none')
   };
 }

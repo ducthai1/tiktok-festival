@@ -119,5 +119,5 @@ body { font-family: var(--font); color: var(--ink); }
 @keyframes slide-in-right { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 .label.welcomed .tag { border-color: var(--gold); background: linear-gradient(90deg, rgba(150, 90, 0, 0.92), rgba(70, 30, 0, 0.92)); box-shadow: 0 0 26px rgba(255, 211, 107, 0.95); color: #fff3c4; }
 .label.welcomed { z-index: 5; }
-#sound-hint { position: absolute; top: 120px; left: 50%; transform: translateX(-50%); padding: 10px 22px; border-radius: 999px; border: 2px solid var(--gold); background: rgba(10, 6, 18, 0.85); color: #fff3c4; font: 700 24px var(--font); pointer-events: auto; cursor: pointer; }
+#sound-hint { position: absolute; top: 2px; left: 50%; transform: translateX(-50%); padding: 10px 22px; border-radius: 999px; border: 2px solid var(--gold); background: rgba(10, 6, 18, 0.85); color: #fff3c4; font: 700 20px var(--font); padding: 4px 16px; pointer-events: auto; cursor: pointer; }
 #sound-hint[hidden] { display: none; }

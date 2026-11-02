@@ -27,7 +27,7 @@ function lotus(scale = 1) {
   const g = new THREE.Group();
   const rings = [[8, 0.55, 0.35, '#ff9ec4'], [10, 0.85, 0.75, '#ffc2d9'], [12, 1.15, 1.1, '#ffe0ea']];
   rings.forEach(([count, radius, tilt, color], ri) => {
-    const material = std(color, { emissive: '#ff6fa5', emissiveIntensity: 0.25 - ri * 0.05, roughness: 0.4 });
+    const material = std(color, { emissive: '#ff6fa5', emissiveIntensity: 0.12 - ri * 0.03, roughness: 0.45 });
     for (let i = 0; i < count; i += 1) {
       const petal = new THREE.Mesh(new THREE.SphereGeometry(0.5, 16, 10), material);
       const angle = (i / count) * Math.PI * 2 + ri * 0.3;
@@ -51,7 +51,7 @@ export function buildTempleHall(scene) {
   key.castShadow = true;
   key.shadow.mapSize.set(1024, 1024);
   scene.add(key);
-  const altarLight = new THREE.PointLight('#ffc070', 60, 16, 1.6);
+  const altarLight = new THREE.PointLight('#ffc070', 32, 16, 1.6);
   altarLight.position.set(0, 6, -3);
   scene.add(altarLight);
 
@@ -202,4 +202,22 @@ export function buildTempleHall(scene) {
   scene.add(mo);
 
   return { halo, orb, lanterns, candles, sticks, bellPivot, bellFrame, mo, moBody, malletPivot, lotus };
+}
+
+// Chuyển động thường trực của chánh điện: hào quang, nến lung linh, đèn lồng đung đưa, chuông lắc, dùi gõ mõ.
+export function animateTempleHall(hall, t, { bellAt, moAt, haloBoost }) {
+  hall.halo.material.uniforms.uTime.value = t;
+  hall.halo.material.uniforms.uPower.value = haloBoost ? 1.25 : 0.8 + Math.sin(t * 0.8) * 0.06;
+  hall.orb.material.emissiveIntensity = 0.9 + Math.sin(t * 1.3) * 0.15;
+  hall.lanterns.forEach((l, i) => { l.rotation.z = Math.sin(t * 0.7 + i) * 0.04; });
+  hall.candles.forEach((c, i) => {
+    const f = 1 + Math.sin(t * 17 + i * 3) * 0.08 + Math.sin(t * 7.3 + i) * 0.05;
+    c.flame.scale.set(f, 1.8 * f, f);
+    c.light.intensity = 6 * f;
+  });
+  const bellAge = t - bellAt;
+  hall.bellPivot.rotation.z = bellAge < 5 ? Math.sin(bellAge * 6) * 0.38 * Math.exp(-bellAge * 0.75) : 0;
+  const moAge = t - moAt;
+  hall.malletPivot.rotation.z = moAge < 0.18 ? Math.sin((moAge / 0.18) * Math.PI) * 0.7 : 0;
+  hall.moBody.scale.set(1.15 * (1 + Math.max(0, 0.06 - moAge * 0.3)), 0.85, 1);
 }
