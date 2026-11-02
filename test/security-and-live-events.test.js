@@ -118,3 +118,18 @@ test('danh mục quà của phòng: đọc tên + giá thật + ảnh, bỏ món
   assert.deepEqual(list.map((g) => [g.name, g.coins]), [['Rose', 1], ['Lion', 29999]]);
   assert.equal(list[1].image, 'https://p16-webcast.tiktokcdn.com/lion.png');
 });
+
+test('sự kiện bản giao thức mới (v3, cùng dạng payload phòng live thật): bình luận, tim, quà combo', () => {
+  // dữ liệu giả, cùng DẠNG với payload thật (không dùng tên/mã người xem thật)
+  const user = { id: '1000000000000000001', nickname: 'Người xem A🩵', displayId: 'nguoi_xem_a', avatarThumb: { urlList: ['https://p16-common-sign.tiktokcdn.com/a.webp'] } };
+  const chat = normalizeConnectorEvent('chat', { common: { msgId: '1' }, user, content: 'cầu cả nhà bình an' });
+  assert.equal(chat.comment, 'cầu cả nhà bình an');
+  assert.equal(chat.user.nickname, 'Người xem A🩵');
+  assert.equal(chat.user.uniqueId, 'nguoi_xem_a');
+  assert.equal(normalizeConnectorEvent('like', { common: { msgId: '2' }, user, count: 15, total: '300' }).likeCount, 15);
+  const gift = normalizeConnectorEvent('gift', { common: { msgId: '3' }, user, giftId: '5655', repeatCount: 3, repeatEnd: 0, groupId: 'g1',
+    gift: { id: '5655', name: 'Rose', diamondCount: 1, type: 1, combo: true, image: { urlList: ['https://p16-webcast.tiktokcdn.com/rose.webp'] } } });
+  assert.deepEqual([gift.giftRaw.name, gift.giftRaw.diamondsEach, gift.giftRaw.repeatCount, gift.giftRaw.streakable, gift.giftRaw.repeatEnd],
+    ['Rose', 1, 3, true, false]);
+  assert.equal(gift.giftRaw.pictureUrl, 'https://p16-webcast.tiktokcdn.com/rose.webp');
+});

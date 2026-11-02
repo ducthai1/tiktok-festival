@@ -18,25 +18,28 @@ function messageId(data = {}) {
   return firstText(data.common?.msgId, data.event?.msgId, data.msgId);
 }
 
+// Đọc được cả hai dạng payload: bản giao thức mới (tiktok-live-proto v3, đo 03/11 trên phòng live thật:
+// bình luận ở `content`, số tim ở `count`, quà ở `gift` {name, diamondCount, image, type}) lẫn bản cũ
+// (`comment`, `likeCount`, `giftDetails`/`extendedGiftInfo`).
 export function normalizeConnectorEvent(type, data = {}) {
   if (type === 'roomUser') return { type: 'viewers', viewerCount: Number(data.viewerCount ?? data.total) };
   const base = { type, id: messageId(data), user: normalizeConnectorUser(data) };
-  if (type === 'chat') return { ...base, comment: firstText(data.comment) };
-  if (type === 'like') return { ...base, likeCount: Number(data.likeCount) || 1 };
+  if (type === 'chat') return { ...base, comment: firstText(data.content, data.comment) };
+  if (type === 'like') return { ...base, likeCount: Number(data.count ?? data.likeCount) || 1 };
   if (type === 'member' && data.memberCount !== undefined) return { ...base, viewerCount: Number(data.memberCount) };
   if (type === 'gift') {
-    const details = data.giftDetails || data.extendedGiftInfo || {};
-    const giftType = Number(details.giftType ?? data.giftType) || 0;
+    const details = data.gift || data.giftDetails || data.extendedGiftInfo || {};
+    const giftType = Number(details.type ?? details.giftType ?? data.giftType) || 0;
     return {
       ...base,
       giftRaw: {
         id: firstText(data.giftId, details.id),
-        name: firstText(details.giftName, details.name, data.giftName),
-        pictureUrl: firstImageUrl(details.giftImage, details.image, details.icon),
+        name: firstText(details.name, details.giftName, data.giftName),
+        pictureUrl: firstImageUrl(details.image, details.icon, details.giftImage),
         diamondsEach: Number(details.diamondCount ?? data.diamondCount) || 0,
         repeatCount: Number(data.repeatCount) || 1,
         repeatEnd: Boolean(data.repeatEnd),
-        streakable: giftType === 1,
+        streakable: giftType === 1 || details.combo === true, // quà combo: TikTok gửi nhiều lần, lần cuối repeatEnd
         groupId: firstText(data.groupId)
       }
     };
