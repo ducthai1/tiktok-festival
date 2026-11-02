@@ -192,5 +192,18 @@
   "file": "chua-nen.webp",
   "w": 1080,
   "h": 1920
+ },
+ "aura": {
+  "file": "phat-hao-quang.png",
+  "rect": [
+   0.2,
+   0.12,
+   0.8,
+   0.47
+  ],
+  "center": [
+   0.497,
+   0.58
+  ]
  }
 }

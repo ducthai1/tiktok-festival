@@ -1,29 +1,13 @@
 // Chánh điện = tranh vẽ (public/assets/temple/chua-nen.webp) + vài lớp 3D đặt khớp lên tranh:
-// hào quang rực lên khi có lễ lớn, lửa nến lung linh, chân hương cắm trên lư, bồ đoàn dưới gối,
+// tượng Phật toả hào quang (temple-buddha-aura.js), lửa nến lung linh, chân hương cắm trên lư, bồ đoàn dưới gối,
 // đèn và ánh sáng cho đồ lễ 3D. Toạ độ lấy theo vị trí trên tranh (tỉ lệ khung) + độ sâu.
 import * as THREE from '/vendor/three/three.module.js';
 import { templeArt } from './temple-art.js';
+import { createBuddhaAura } from './temple-buddha-aura.js';
 import { attachBackdrop, depthScale, halfWidthAt, screenPoint } from './temple-view.js';
-
-const HALO_FRAGMENT = `
-  uniform float uTime;
-  uniform float uPower;
-  varying vec2 vUv;
-  void main() {
-    vec2 p = vUv - 0.5;
-    float r = length(p) * 2.0;
-    float a = atan(p.y, p.x);
-    float rays = 0.5 + 0.5 * sin(a * 28.0 + uTime * 0.6);
-    float glow = smoothstep(1.0, 0.25, r) * smoothstep(0.0, 0.35, r);
-    float ring = smoothstep(0.05, 0.0, abs(r - 0.5)) * 0.8;
-    vec3 gold = vec3(1.0, 0.8, 0.42);
-    float v = (glow * 0.32 + rays * smoothstep(1.0, 0.45, r) * smoothstep(0.3, 0.5, r) * 0.3 + ring * 0.4) * uPower;
-    gl_FragColor = vec4(gold * v, v);
-  }`;
 
 // Vị trí các nguồn sáng vẽ trong tranh (tỉ lệ khung) và độ sâu ước lượng
 const FLAMES = [[0.369, 0.474, 12.6, 0.05], [0.629, 0.474, 12.6, 0.05], [0.255, 0.539, 11.7, 0.09], [0.745, 0.539, 11.7, 0.09]];
-const HALO = { x: 0.5, y: 0.262, depth: 13.6, size: 0.62 };
 export const URN = { x: 0.5, rimY: 0.548, depth: 11.6 }; // miệng lư hương
 
 let glowTexture = null;
@@ -65,22 +49,7 @@ export function buildPaintedHall(scene, camera) {
   altarLight.position.copy(screenPoint(0.5, 0.5, 10.8));
   scene.add(altarLight);
 
-  // hào quang phủ lên hào quang vẽ sẵn: bình thường chỉ "thở" rất nhẹ, có lễ lớn thì rực lên
-  const haloCenter = screenPoint(HALO.x, HALO.y, HALO.depth);
-  const haloSize = halfWidthAt(HALO.depth) * 2 * HALO.size;
-  const halo = new THREE.Mesh(new THREE.PlaneGeometry(haloSize, haloSize), new THREE.ShaderMaterial({
-    fragmentShader: HALO_FRAGMENT,
-    vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
-    uniforms: { uTime: { value: 0 }, uPower: { value: 0 } },
-    transparent: true, depthWrite: false, depthTest: false, blending: THREE.AdditiveBlending
-  }));
-  halo.position.copy(haloCenter);
-  halo.renderOrder = -5;
-  scene.add(halo);
-  const breath = glowSprite(haloSize * 0.8, 0.1);
-  breath.position.copy(haloCenter);
-  breath.renderOrder = -5;
-  scene.add(breath);
+  const aura = createBuddhaAura(scene, art.aura);
 
   const flames = FLAMES.map(([x, y, depth, size], i) => {
     const s = glowSprite(halfWidthAt(depth) * 2 * size, 0.55);
@@ -97,7 +66,7 @@ export function buildPaintedHall(scene, camera) {
   sticks.scale.setScalar(0.42);
   scene.add(sticks);
 
-  return { halo, breath, flames, sticks, haloCenter, urnTop: sticks.position.clone() };
+  return { aura, flames, sticks, haloCenter: aura.center, urnTop: sticks.position.clone() };
 }
 
 /** Bồ đoàn đỏ (VIP: viền vàng) dưới chỗ quỳ; trả về độ cao mặt đệm để sprite quỳ lên trên. */
@@ -120,12 +89,9 @@ export function addCushion(scene, position, vip) {
   return 0.1 * s;
 }
 
-// Chuyển động thường trực: hào quang thở / rực khi có lễ lớn, lửa nến lung linh.
+// Chuyển động thường trực: tượng toả hào quang (rực hơn khi có lễ lớn), lửa nến lung linh.
 export function animatePaintedHall(hall, t, { haloBoost }) {
-  const u = hall.halo.material.uniforms;
-  u.uTime.value = t;
-  u.uPower.value += ((haloBoost ? 0.75 : 0) - u.uPower.value) * 0.04;
-  hall.breath.material.opacity = 0.08 + Math.sin(t * 0.8) * 0.03 + u.uPower.value * 0.25;
+  hall.aura.update(t, haloBoost);
   for (const f of hall.flames) {
     const k = 1 + Math.sin(t * 13 + f.userData.i * 2.3) * 0.07 + Math.sin(t * 5.1 + f.userData.i) * 0.05;
     f.scale.setScalar(f.userData.base * k);

@@ -158,6 +158,9 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       animatePaintedHall(hall, t, { haloBoost: t < haloUntil });
       monks.frame(t, dt, bellWave);
       setZoom(camera, 1 + rituals.cameraPush() * 0.09);
+      if (Math.random() < dt * 6) { // hạt sáng vàng bay lên quanh tượng Phật
+        particles.burst({ position: hall.aura.randomPoint(), count: 1, colors: ['#ffe9a8', '#ffd36b', '#fff6d8'], speed: 0.12, spread: 1, gravity: 0.12, life: 3.2, size: 0.11, damping: 0.99 });
+      }
       if (Math.random() < dt * 2.5) { // bụi vàng lơ lửng trong ánh nến
         particles.burst({ position: new THREE.Vector3(0, 2.4, -8), box: new THREE.Vector3(5, 3.5, 7), count: 1, colors: ['#ffd36b'], speed: 0.08, gravity: 0.02, life: 5, size: 0.035 });
       }

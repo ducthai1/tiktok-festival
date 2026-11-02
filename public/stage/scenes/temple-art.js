@@ -7,10 +7,10 @@ const BASE = '/static/assets/temple/';
 let art = null;
 let pending = null;
 
-function loadTexture(loader, file) {
+function loadTexture(loader, file, colorSpace = THREE.SRGBColorSpace) {
   return new Promise((resolve) => {
     loader.load(BASE + file, (texture) => {
-      texture.colorSpace = THREE.SRGBColorSpace;
+      texture.colorSpace = colorSpace; // ảnh dữ liệu (lớp hào quang) đọc nguyên giá trị, không đổi màu
       texture.anisotropy = 4;
       texture.userData.shared = true; // dùng chung cho mọi nhân vật / mọi lần vào cảnh
       resolve(texture);
@@ -41,6 +41,7 @@ export function preloadTempleArt() {
       jobs.push(loadTexture(loader, `monk/${name}.webp`).then((texture) => { frame.texture = texture; }));
     }
     jobs.push(loadTexture(loader, manifest.backdrop.file).then((texture) => { manifest.backdrop.texture = texture; }));
+    jobs.push(loadTexture(loader, manifest.aura.file, THREE.NoColorSpace).then((texture) => { manifest.aura.texture = texture; }));
     await Promise.all(jobs);
     art = manifest;
     return art;

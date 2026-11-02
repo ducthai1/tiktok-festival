@@ -33,5 +33,10 @@ test('sư gõ mõ / thỉnh chuông đủ hai khung, nền chánh điện đúng
     assert.ok(fs.existsSync(path.join(root, 'monk', `${name}.webp`)), name);
   }
   assert.ok(fs.existsSync(path.join(root, manifest.backdrop.file)));
+  // lớp hào quang của tượng: file có thật, vùng phủ nằm trong khung hình, tâm nằm trong vùng phủ
+  assert.ok(fs.existsSync(path.join(root, manifest.aura.file)));
+  const [x0, y0, x1, y1] = manifest.aura.rect;
+  assert.ok(x0 >= 0 && y0 >= 0 && x1 <= 1 && y1 <= 1 && x0 < x1 && y0 < y1);
+  assert.ok(manifest.aura.center.every((v) => v > 0 && v < 1));
   assert.equal(manifest.backdrop.w * 16, manifest.backdrop.h * 9);
 });
