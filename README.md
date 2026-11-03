@@ -78,6 +78,24 @@ Cửa sổ server in ra 2 link:
 
 Trên TikTok LIVE Studio thì dùng OBS Virtual Camera, hoặc dùng stream key từ OBS.
 
+### Máy yếu (Mac 8 GB, điện thoại): `?lite=1`
+
+Mở `http://127.0.0.1:3939/stage?lite=1`: vẽ 720×1280 rồi phóng lên khung, bỏ khử răng cưa, bóng đổ mềm,
+hậu kỳ phát sáng và kính mờ của bảng, tối đa 30 khung/giây (TikTok LIVE chỉ phát 30). Đèn neon quán bar bớt
+rực; chùa gần như không khác. Thêm `&fps=1` để góc màn hiện số khung/giây thật.
+
+Đo một khung trên máy dev (`__stage.step(1)` + chờ GPU vẽ xong, 1080×1920):
+
+| Cảnh | Card GTX 1650: đầy đủ → nhẹ | Vẽ bằng CPU (gần máy yếu): đầy đủ → nhẹ |
+|---|---|---|
+| Quán bar | 4,7 → 2,3 ms | 324 → 73 ms |
+| Đua bơi | 2,5 → 0,65 ms | 205 → 23 ms |
+| Chùa | 2,8 → 0,9 ms | 201 → 24 ms |
+
+Màn 60 Hz còn được vẽ một nửa số khung. Máy yếu thì đừng đi vòng OBS → LIVE Studio: cho LIVE Studio
+lấy thẳng `/stage?lite=1` (nguồn Link) hoặc quay cửa sổ trình duyệt, và để tab trang điều khiển ở sau
+(khung xem trước trong đó cũng là một màn 3D đang vẽ).
+
 ### Kết nối phòng live
 
 Trên trang điều khiển, nhập `@tên_tiktok` (hoặc dán link live) rồi bấm **Kết nối**. Có 2 cách nhận sự kiện:

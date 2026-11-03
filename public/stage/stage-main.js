@@ -4,6 +4,7 @@ import { createStageAudio } from './stage-audio.js';
 import { createHud } from './stage-hud.js';
 import { createLabelLayer } from './stage-labels.js';
 import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
+import { createFrameLimiter, stageQuality } from './stage-quality.js';
 
 const SCENES = {
   bar: () => import('./scenes/bar-scene.js').then((m) => m.createBarScene),
@@ -15,7 +16,11 @@ const SCENES = {
 
 const stageEl = document.getElementById('stage');
 const fadeEl = document.getElementById('fade');
-const pipeline = createRenderPipeline(document.getElementById('scene'));
+// ?lite=1: máy yếu (Mac 8 GB, điện thoại) — xem stage-quality.js
+const quality = stageQuality(location.search);
+if (!quality.glass) document.documentElement.classList.add('lite');
+const shouldDraw = createFrameLimiter(quality.maxFps);
+const pipeline = createRenderPipeline(document.getElementById('scene'), quality);
 const hud = createHud();
 const labels = createLabelLayer(document.getElementById('labels'));
 const audio = createStageAudio();
@@ -151,6 +156,7 @@ let fpsFrames = 0;
 let fpsSince = performance.now();
 function loop(now) {
   requestAnimationFrame(loop); // đặt khung sau TRƯỚC: lỗi một khung không được làm đứng hình cả buổi live
+  if (!shouldDraw(now)) return; // chế độ nhẹ: bỏ khung thừa trên màn 60/120 Hz
   // dt không bao giờ âm/quá lớn: tab bị ẩn rồi hiện lại, hay đồng hồ lệch, nhân vật cũng không bị kéo lùi/nhảy cóc.
   const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
   last = Math.max(last, now);

@@ -101,3 +101,11 @@
 .theme-temple .label .tag { background: rgba(60, 16, 6, 0.85); border-color: rgba(255, 211, 107, 0.55); }
 .theme-swim .label .tag { background: rgba(3, 42, 74, 0.78); border-color: rgba(189, 244, 255, 0.6); }
 .theme-bar .label .tag { background: rgba(26, 8, 40, 0.78); border-color: rgba(255, 122, 196, 0.6); }
+
+/* Chế độ nhẹ (?lite=1): bỏ kính mờ — trình duyệt phải làm mờ lại phần cảnh 3D phía sau MỖI khung.
+   Không còn kính thì chữ bảng Cách tham gia lộ qua thẻ chào (nền thẻ chỉ đục 62%): ẩn bảng khi thẻ đang
+   hiện, thẻ bắt đầu lui (.hide) thì bảng hiện lại phía sau như bản đầy đủ. */
+html.lite #title, html.lite .chip, html.lite #board, html.lite #howto, html.lite .meter, html.lite .toast, html.lite #welcome { backdrop-filter: none; }
+html.lite #welcome.show ~ #howto { visibility: hidden; }
+/* bar/bơi: nền thẻ trong 62% → thay lớp "tối đi 55%" của kính bằng một lớp phủ tối tĩnh (chùa đã đục sẵn) */
+html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(--glow), 0 26px 60px rgba(0, 0, 0, 0.55), inset 0 0 0 2000px rgba(4, 3, 10, 0.55); }
