@@ -216,3 +216,7 @@ body { font-family: var(--font); color: var(--ink); }
 #topbar { left: 72px; right: 72px; }
 #howto, #welcome, #toasts { left: 72px; }
 #board { right: 72px; }
+/* lùi vào ~1/4 bề ngang cột chùa (cột ~85px): mép ngoài ở 94px */
+#topbar { left: 94px; right: 94px; }
+#howto, #welcome, #toasts { left: 94px; }
+#board { right: 94px; }

@@ -67,7 +67,7 @@ const overlapArea = (a, b) => Math.max(0, Math.min(a.right, b.right) - Math.max(
 // Vùng nhãn tên không được đè (px của khung 1080×1920): bảng "Cách tham gia" bên trái (HUD nằm trên lớp
 // nhãn nên nhãn chui xuống dưới là mất tên) và cụm chuông + mõ bên phải (temple-bell-and-mo.js).
 const LABEL_KEEP_OUT = [
-  { left: 72, right: 342, top: 225, bottom: 820 }, // bảng Cách tham gia (top 234) + thông báo quà bám ngay dưới
+  { left: 94, right: 364, top: 225, bottom: 820 }, // bảng Cách tham gia (top 234) + thông báo quà bám ngay dưới
   { left: 700, right: 980, top: 665, bottom: 1010 }
 ];
 
