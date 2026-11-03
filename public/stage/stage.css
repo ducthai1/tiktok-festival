@@ -184,3 +184,7 @@ body { font-family: var(--font); color: var(--ink); }
 #legend .item { padding: 4px 9px; }
 #board { padding: 12px 14px; }
 #board ol { gap: 7px; }
+/* dòng quà có khoảng kc dài hơn: bảng rộng thêm chút (vẫn ngoài thân tượng ~x 400) + chữ dòng quà nhỏ lại để không tràn viền */
+#howto, #welcome { width: 266px; }
+#legend .item { overflow: hidden; }
+#legend .item:has(em.gifts) { font-size: 15px; gap: 5px; padding: 4px 7px; }
