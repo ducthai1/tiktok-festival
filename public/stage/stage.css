@@ -212,3 +212,7 @@ body { font-family: var(--font); color: var(--ink); }
 #howto.gifts-page #hint { display: block; }
 #hint { transition: opacity 450ms ease; }
 #hint.swap { opacity: 0; }
+/* Trên điện thoại thật vẫn thấy trọn cột chùa hai bên: mép ngoài hai bảng (và tiêu đề/chip) ra tới giữa cột chùa */
+#topbar { left: 72px; right: 72px; }
+#howto, #welcome, #toasts { left: 72px; }
+#board { right: 72px; }
