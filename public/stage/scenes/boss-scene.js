@@ -10,24 +10,24 @@ export function createBossScene({ hud, labels, audio, pipeline }) {
   scene.background = new THREE.Color('#08060e');
 
   const camera = new THREE.PerspectiveCamera(54, 1080 / 1920, 0.1, 100);
-  camera.position.set(0, 3.6, 9.6);
-  camera.lookAt(0, 3.3, 0);
+  camera.position.set(0, 4.2, 11.8);
+  camera.lookAt(0, 3.2, 0);
 
   // Ánh sáng điện ảnh (Cinematic Lighting)
-  const ambient = new THREE.AmbientLight('#181428', 1.4);
+  const ambient = new THREE.AmbientLight('#242038', 1.6);
   scene.add(ambient);
 
-  const dirLight = new THREE.DirectionalLight('#ff7733', 2.8);
-  dirLight.position.set(5, 10, 6);
+  const dirLight = new THREE.DirectionalLight('#ffffff', 2.4);
+  dirLight.position.set(5, 12, 7);
   scene.add(dirLight);
 
-  const rimLight = new THREE.DirectionalLight('#4477ff', 3.2);
-  rimLight.position.set(-5, 6, -6);
+  const rimLight = new THREE.DirectionalLight('#4488ff', 3.6);
+  rimLight.position.set(-6, 7, -6);
   scene.add(rimLight);
 
   // Đèn dung nham từ tâm
-  const lavaLight = new THREE.PointLight('#ff3300', 4.0, 12);
-  lavaLight.position.set(0, 3.4, 1.2);
+  const lavaLight = new THREE.PointLight('#ff4400', 1.8, 14);
+  lavaLight.position.set(0, 3.2, 1.2);
   scene.add(lavaLight);
 
   // Đấu trường đá cổ đại (Arena Floor)
@@ -57,7 +57,7 @@ export function createBossScene({ hud, labels, audio, pipeline }) {
 
   // Hệ hạt tia lửa & dung nham bay lên
   const particles = createParticleSystem(scene, 4000);
-  pipeline.setBloom({ strength: 0.65, radius: 0.5, threshold: 0.72 });
+  pipeline.setBloom({ strength: 0.42, radius: 0.4, threshold: 0.82 });
 
   // Mô hình Boss Titan
   const boss = buildBossTitan();
@@ -124,6 +124,10 @@ export function createBossScene({ hud, labels, audio, pipeline }) {
       if (state.contributors) {
         hud.setBoard('🏆 TOP DŨNG SĨ', state.contributors);
       }
+    },
+
+    onFx(fx) {
+      this.onEvent(fx);
     },
 
     onEvent(fx) {
@@ -209,7 +213,7 @@ export function createBossScene({ hud, labels, audio, pipeline }) {
       }
     },
 
-    render(dt) {
+    frame(dt, time) {
       clock += dt;
 
       // Cập nhật hoạt ảnh 3D của Boss

@@ -2,21 +2,22 @@
 // Nhẹ tuyệt đối, không tốn VRAM tải file ngoài, có sẵn khớp xương và hiệu ứng chấn động khi nhận đòn.
 import * as THREE from '/vendor/three/three.module.js';
 
-const rockMat = (color = '#1c1c24', extra = {}) =>
+const rockMat = (color = '#2e3042', extra = {}) =>
   new THREE.MeshStandardMaterial({
     color,
-    roughness: 0.85,
-    metalness: 0.25,
+    roughness: 0.72,
+    metalness: 0.32,
+    flatShading: true,
     ...extra
   });
 
-const lavaMat = (color = '#ff3300', intensity = 2.0) =>
+const lavaMat = (color = '#ff3b00', intensity = 2.2) =>
   new THREE.MeshStandardMaterial({
     color,
     emissive: color,
     emissiveIntensity: intensity,
-    roughness: 0.2,
-    metalness: 0.5
+    roughness: 0.25,
+    metalness: 0.4
   });
 
 function mesh(geometry, material, pos = [0, 0, 0], rot = [0, 0, 0], scale = [1, 1, 1]) {

@@ -15,7 +15,7 @@ export function loadConfig(env = process.env) {
   const allowLan = env.ALLOW_LAN === '1';
   const provider = String(env.LIVE_PROVIDER || 'tiktok').toLowerCase();
   if (!['tiktok', 'tikfinity'].includes(provider)) throw new Error('LIVE_PROVIDER chỉ nhận "tiktok" hoặc "tikfinity"');
-  const startGame = GAME_IDS.includes(env.START_GAME) ? env.START_GAME : 'bar';
+  const startGame = GAME_IDS.includes(env.START_GAME) ? env.START_GAME : 'boss';
   return {
     port,
     // ALLOW_LAN=1 để điều khiển từ điện thoại cùng wifi; trang admin vẫn cần token.

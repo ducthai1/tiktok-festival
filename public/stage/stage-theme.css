@@ -39,6 +39,10 @@
 }
 .theme-temple #board::before { left: 14px; }
 .theme-temple #board::after { right: 14px; }
+.theme-boss .meter-boss-hp { top: 215px; }
+.theme-boss .meter-boss-rage { top: 320px; }
+.theme-boss #game-hud:not(:empty) ~ #howto,
+.theme-boss #game-hud:not(:empty) ~ #board { top: 435px; }
 .theme-boss .meter-boss-hp .fill { background: linear-gradient(90deg, #ff0055, #ff4400 65%, #ffd700); box-shadow: 0 0 16px rgba(255, 68, 0, 0.85); }
 .theme-boss .meter-boss-rage .fill { background: linear-gradient(90deg, #ff8800, #ffff00); box-shadow: 0 0 16px rgba(255, 255, 0, 0.85); }
 
