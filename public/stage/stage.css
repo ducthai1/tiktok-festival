@@ -171,3 +171,16 @@ body { font-family: var(--font); color: var(--ink); }
 #hint { font-size: 18px; white-space: nowrap; }
 #legend .item { font-size: 16px; white-space: nowrap; }
 #board h3 { font-size: 16px; letter-spacing: 0; white-space: nowrap; }
+
+/* Dời cả cụm thông tin lên cao (trên điện thoại thật phần trên còn trống) và cho thoáng hơn, để tượng Phật lộ rõ */
+#topbar { top: 180px; }
+#howto, #welcome { top: 252px; }
+#board { top: 290px; }
+.meter { top: 252px; }
+#test-badge { top: 300px; }
+#game-hud:not(:empty) ~ #board, #game-hud:not(:empty) ~ #howto, #game-hud:not(:empty) ~ #test-badge, #game-hud:not(:empty) ~ #welcome { top: 370px; }
+#howto { padding: 12px 14px; gap: 9px; }
+#legend .page { gap: 7px; }
+#legend .item { padding: 4px 9px; }
+#board { padding: 12px 14px; }
+#board ol { gap: 7px; }
