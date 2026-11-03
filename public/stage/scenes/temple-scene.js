@@ -13,7 +13,7 @@ import { createTempleRituals } from './temple-rituals.js';
 import { createTempleCamera, setZoom } from './temple-view.js';
 import { createBellAndMo } from './temple-bell-and-mo.js';
 import { giftLabels } from './temple-wishes.js';
-import { TEMPLE_SEATS, VIP_SEATS } from '/static/shared/temple-seats.js';
+import { LABEL_KEEP_OUT, TEMPLE_SEATS, VIP_SEATS } from '/static/shared/temple-seats.js';
 
 // Chỗ quỳ: tính sẵn ở /static/shared/temple-seats.js để người + nhãn tên luôn trong vùng điện thoại thấy được
 // (6 chỗ đầu sát bàn thờ là của 6 người nhiều tâm thành nhất), chừa lối giữa theo thảm đỏ.
@@ -39,6 +39,8 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   let haloUntil = 0;
   let bowAll = { pose: 'bow', start: 0, until: 0 };
 
+  // tên người quỳ hiện ĐỦ: nhãn chạm nhau thì tự nhích lên/xuống, không đè bảng Cách tham gia hay chuông + mõ
+  labels.setDeclutter('crowd', { top: 860, bottom: 1520, keepOut: LABEL_KEEP_OUT, gap: 3 });
   hud.setTitle('🪷 CHÙA ONLINE');
   hud.setHint(['Gõ ', '*cầu …*', ' rồi tặng quà\nđể lời cầu bay lên hoa đăng\nQuà mở ', '*thắp hương*', ', ', '*xin xăm*', '…']);
 
@@ -59,7 +61,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       return animatePerson(model, t < (bowUntil.get(info.id) || 0) ? 'bow' : 'kneel', t, dt);
     },
     // Nhãn so le cao/thấp để hàng quỳ sát nhau không đè chữ lên nhau.
-    labelFor: (info) => ({ vip: info.vip, small: true }),
+    labelFor: (info) => ({ vip: info.vip, small: true, group: 'crowd' }),
     // Người rời chánh điện (lâu không tương tác / nhường chỗ khi đầy) đứng dậy đi ra cửa hông phía mình.
     exit: (entry) => new THREE.Vector3(Math.sign(entry.model.root.position.x || 1) * EXIT_X, 0, entry.model.root.position.z),
     facing: Math.PI,
