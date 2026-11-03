@@ -170,6 +170,7 @@ Agent chạy giúp user mà không muốn chương trình chết theo phiên age
 
 URL: `http://127.0.0.1:3939/admin#token=<nội dung data/admin-token>` (không dán token ra ngoài).
 - Chọn game (Chùa / Bar / Bơi), Kết nối / Ngắt tên TikTok, bật tắt âm thanh, nhạc, giọng đọc, bảng chú thích.
+- **🎁 Tặng quà cho người đang có mặt**: chọn quà rồi bấm "Tặng" cạnh tên — game chạy hiệu ứng quà đó cho người ấy (họ không phải tặng), dùng được khi đang live. Lệnh server `grant` (`src/admin-command-handler.js`).
 - "Thử trước khi live": bơm sự kiện giả (tim, bình luận, quà…) — **tự bị khoá khi đang nối live thật**.
 - Dòng lệnh tương đương: `node scripts/admin-command.mjs status|connect <tên>|disconnect|switch <temple|bar|swim>|test <chat|like|gift|follow|member> [nội dung]`.
 
