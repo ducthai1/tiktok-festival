@@ -5,6 +5,7 @@ import * as THREE from '/vendor/three/three.module.js';
 import { templeArt } from './temple-art.js';
 import { createBuddhaAura } from './temple-buddha-aura.js';
 import { attachBackdrop, depthScale, halfWidthAt, screenPoint } from './temple-view.js';
+import { CROWD_SCALE } from '/static/shared/temple-seats.js';
 
 // Vị trí các nguồn sáng vẽ trong tranh (tỉ lệ khung) và độ sâu ước lượng
 const FLAMES = [[0.369, 0.474, 12.6, 0.05], [0.629, 0.474, 12.6, 0.05], [0.255, 0.539, 11.7, 0.09], [0.745, 0.539, 11.7, 0.09]];
@@ -71,7 +72,7 @@ export function buildPaintedHall(scene, camera) {
 
 /** Bồ đoàn đỏ (VIP: viền vàng) dưới chỗ quỳ; trả về độ cao mặt đệm để sprite quỳ lên trên. */
 export function addCushion(scene, position, vip) {
-  const s = depthScale(-position.z);
+  const s = depthScale(-position.z) * CROWD_SCALE; // đệm co cùng cỡ người quỳ
   const g = new THREE.Group();
   const pad = new THREE.Mesh(new THREE.SphereGeometry(0.5, 28, 14), new THREE.MeshStandardMaterial({ color: vip ? '#a3201a' : '#7d1a12', roughness: 0.78 }));
   pad.scale.set(0.72, 0.13, 0.52);

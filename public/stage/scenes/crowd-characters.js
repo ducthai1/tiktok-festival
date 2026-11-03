@@ -9,6 +9,7 @@ import { animatePerson, disposeObject, walkTowards } from './person-model.js';
 const hold = new THREE.Vector3();
 
 const REVEAL_FALLBACK_S = 45; // hàng chờ bị xoá giữa chừng thì cũng không giữ ai ngoài cửa mãi
+const EXIT_TIMEOUT_S = 12; // người đi ra mà kẹt (vd đang ngoài khung) thì tối đa chừng này giây
 
 /**
  * @param {object} o
@@ -20,8 +21,9 @@ const REVEAL_FALLBACK_S = 45; // hàng chờ bị xoá giữa chừng thì cũng
  * @param {(index:number, count:number)=>THREE.Vector3} o.visitSpot  chỗ "khách ghé" đứng chào khi hết chỗ
  * @param {(model, info, t:number, walking:boolean, dt:number)=>void} o.pose
  * @param {(info:object)=>object} o.labelFor   tuỳ chọn nhãn (vip, small, offsetY…)
+ * @param {(entry:object)=>THREE.Vector3} [o.exit]  có thì người rời đi bước ra chỗ này rồi mới biến mất
  */
-export function createCrowd({ scene, labels, build, place, entrance, visitSpot, pose, labelFor, facing = 0, speed = 3 }) {
+export function createCrowd({ scene, labels, build, place, entrance, visitSpot, pose, labelFor, exit, facing = 0, speed = 3 }) {
   const members = new Map();
   const deferred = new Map(); // nghi thức chờ nhân vật vào xong (người mới vừa vào đã thắp hương ngay)
   let clock = 0;
@@ -100,6 +102,10 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
       }
       list.forEach((info, i) => {
         let entry = members.get(info.id);
+        if (entry?.leaving && !entry.transient) {
+          entry.leaving = 0; // đang đi ra mà được chỗ lại: quay về chỗ
+          entry.exitTo = null;
+        }
         if (entry?.transient) {
           entry.transient = false; // khách ghé vừa có chỗ thật: giữ nguyên nhân vật
           entry.leaving = 0;
@@ -159,8 +165,16 @@ export function createCrowd({ scene, labels, build, place, entrance, visitSpot, 
         }
         if (entry.transient && t > entry.until && !entry.leaving) entry.leaving = t;
         if (entry.leaving) {
-          root.scale.multiplyScalar(0.9);
-          if (t - entry.leaving > 0.6) remove(id);
+          if (exit) {
+            // đứng dậy đi ra cửa hông; tới nơi (ngoài khung hình) hoặc quá lâu thì mới xoá
+            entry.exitTo ||= exit(entry);
+            const walking = walkTowards(root, entry.exitTo, dt, { speed: speed * 0.8, facing });
+            pose(entry.model, entry.info, t, walking, dt);
+            if (!walking || t - entry.leaving > EXIT_TIMEOUT_S) remove(id);
+          } else {
+            root.scale.multiplyScalar(0.9);
+            if (t - entry.leaving > 0.6) remove(id);
+          }
           continue;
         }
         root.scale.setScalar(Math.min(1, root.scale.x + dt * 3));

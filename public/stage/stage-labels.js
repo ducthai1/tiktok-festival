@@ -5,6 +5,9 @@ import * as THREE from '/vendor/three/three.module.js';
 import { STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
 
 const tmp = new THREE.Vector3();
+// Lề hai bên mà TikTok trên điện thoại màn dài cắt mất (khớp --safe-x của stage.css): nhãn của người đang
+// trong khung hình được đẩy vào trong lề này; người đã ra khỏi khung (đi ra cửa hông) thì ẩn nhãn.
+const SAFE_X = 116;
 
 export function avatarNode(url) {
   if (url) {
@@ -45,7 +48,10 @@ export function createLabelLayer(root) {
     }
     label.anchor = anchor;
     label.offsetY = offsetY;
-    if (label.name.textContent !== nickname) label.name.textContent = nickname;
+    if (label.name.textContent !== nickname) {
+      label.name.textContent = nickname;
+      label.width = 0; // đo lại bề ngang ở lần vẽ tới
+    }
     label.el.classList.toggle('vip', vip);
     label.el.classList.toggle('small', small);
     if (className && !label.el.classList.contains(className)) label.el.classList.add(className);
@@ -84,6 +90,7 @@ export function createLabelLayer(root) {
       label.bubble.textContent = text;
       label.el.prepend(label.bubble);
       label.bubbleUntil = performance.now() + ms;
+      label.width = 0;
     },
     // Chữ bay lên rồi mờ dần (lời khấn, "+80 m"...), bám một điểm 3D.
     float(anchor, text, { ms = 2600, rise = 140, className = '' } = {}) {
@@ -99,10 +106,16 @@ export function createLabelLayer(root) {
         if (label.bubble && now > label.bubbleUntil) {
           label.bubble.remove();
           label.bubble = null;
+          label.width = 0;
         }
         const p = project(label.anchor, label.offsetY, camera);
-        label.el.style.display = p.visible && shown(label.anchor) ? '' : 'none';
-        label.el.style.transform = `translate(${p.x}px, ${p.y}px) translate(-50%, -100%)`;
+        const inFrame = p.x >= 0 && p.x <= STAGE_WIDTH;
+        label.el.style.display = p.visible && inFrame && shown(label.anchor) ? '' : 'none';
+        if (label.el.style.display === 'none') continue;
+        label.width ||= label.el.offsetWidth; // đo một lần mỗi khi chữ đổi
+        const half = Math.min(label.width / 2, STAGE_WIDTH / 2 - SAFE_X);
+        const x = Math.max(SAFE_X + half, Math.min(STAGE_WIDTH - SAFE_X - half, p.x));
+        label.el.style.transform = `translate(${x}px, ${p.y}px) translate(-50%, -100%)`;
       }
       for (const f of floaters) {
         const k = (now - f.born) / f.ms;

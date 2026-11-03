@@ -99,6 +99,9 @@
 
 /* Nhãn tên trên đầu nhân vật theo chủ đề */
 .theme-temple .label .tag { background: rgba(60, 16, 6, 0.85); border-color: rgba(255, 211, 107, 0.55); }
+/* chùa: hai bên thảm đỏ chỉ ~200px mỗi bên nên nhãn người quỳ gọn lại (khớp LABEL_WIDTH của temple-seats.js), tên dài thì … */
+.theme-temple .label.small .tag { max-width: 150px; font-size: 17px; gap: 5px; padding: 2px 9px 2px 2px; }
+.theme-temple .label.small img, .theme-temple .label.small .ava { width: 24px; height: 24px; }
 .theme-swim .label .tag { background: rgba(3, 42, 74, 0.78); border-color: rgba(189, 244, 255, 0.6); }
 .theme-bar .label .tag { background: rgba(26, 8, 40, 0.78); border-color: rgba(255, 122, 196, 0.6); }
 

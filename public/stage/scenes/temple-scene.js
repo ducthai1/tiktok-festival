@@ -13,16 +13,12 @@ import { createTempleRituals } from './temple-rituals.js';
 import { createTempleCamera, setZoom } from './temple-view.js';
 import { createBellAndMo } from './temple-bell-and-mo.js';
 import { giftLabels } from './temple-wishes.js';
+import { TEMPLE_SEATS, VIP_SEATS } from '/static/shared/temple-seats.js';
 
-// Hàng quỳ (độ sâu tính từ camera) — hàng đầu là 6 người nhiều điểm nhất, chừa lối giữa theo thảm đỏ.
-const ROWS = [
-  { depth: 9.0, xs: [0.85, 1.45, 2.05] },
-  { depth: 7.5, xs: [0.8, 1.3, 1.8] },
-  { depth: 6.2, xs: [0.77, 1.22, 1.67] },
-  { depth: 5.2, xs: [0.75, 1.16, 1.57] },
-  { depth: 4.4, xs: [0.73, 1.11, 1.49] }
-];
-const SLOTS = ROWS.flatMap(({ depth, xs }) => [...xs].reverse().map((x) => -x).concat(xs).map((x) => new THREE.Vector3(x, 0, -depth)));
+// Chỗ quỳ: tính sẵn ở /static/shared/temple-seats.js để người + nhãn tên luôn trong vùng điện thoại thấy được
+// (6 chỗ đầu sát bàn thờ là của 6 người nhiều tâm thành nhất), chừa lối giữa theo thảm đỏ.
+const SLOTS = TEMPLE_SEATS.map((seat) => new THREE.Vector3(seat.x, 0, seat.z));
+const EXIT_X = 3.6; // m: cửa hông hai bên, ngoài khung hình ở mọi độ sâu có chỗ quỳ
 const PETALS = ['#c2416f', '#d9668f', '#e0a840', '#b85a7a'];
 
 export function createTempleScene({ hud, labels, audio, pipeline }) {
@@ -33,7 +29,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   const soft = createParticleSystem(scene, 3000, { blending: THREE.NormalBlending }); // cánh hoa, khói hương: không cộng thành mảng chói
   const fixtures = createBellAndMo(scene);
   pipeline.setBloom({ strength: 0.3, radius: 0.45, threshold: 0.9 });
-  const seats = SLOTS.map((p, i) => ({ x: p.x, z: p.z, top: addCushion(scene, p, i < 6) }));
+  const seats = SLOTS.map((p, i) => ({ x: p.x, z: p.z, top: addCushion(scene, p, i < VIP_SEATS) }));
 
   const bowUntil = new Map();
   const lanterns = [];
@@ -57,13 +53,15 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, -8.3), i, count, { maxCols: 3, dx: 0.4, dz: 0.6 }),
     pose: (model, info, t, walking, dt) => {
       model.seat = seats[info.slot] || null;
-      model.labelLift = info.slot < 6 ? 0.03 : info.slot % 2 ? 0.32 : 0.06; // hàng đầu: nhãn sát đầu để không che mõ/đồ lễ trên bàn thờ
+      model.labelLift = TEMPLE_SEATS[info.slot]?.lift ?? 0.06; // độ cao nhãn đã chọn sẵn để tên không đè nhau
       if (walking) return animatePerson(model, 'walk', t, dt);
       if (t < bowAll.until) return animatePerson(model, bowAll.pose, t, dt, false, t - bowAll.start); // cả chánh điện lạy cùng nhịp
       return animatePerson(model, t < (bowUntil.get(info.id) || 0) ? 'bow' : 'kneel', t, dt);
     },
     // Nhãn so le cao/thấp để hàng quỳ sát nhau không đè chữ lên nhau.
     labelFor: (info) => ({ vip: info.vip, small: true }),
+    // Người rời chánh điện (lâu không tương tác / nhường chỗ khi đầy) đứng dậy đi ra cửa hông phía mình.
+    exit: (entry) => new THREE.Vector3(Math.sign(entry.model.root.position.x || 1) * EXIT_X, 0, entry.model.root.position.z),
     facing: Math.PI,
     speed: 2 // m/s; nghi thức đi 80% tốc độ này
   });

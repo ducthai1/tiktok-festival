@@ -151,6 +151,10 @@ Trên điện thoại người xem, TikTok phủ lên khung 1080×1920: thanh ch
 
 Điện thoại màn dài (19,5:9, 20:9) xem video 9:16 thì TikTok phóng cho đầy chiều cao nên **cắt mất ~97–108 px mỗi bên** của khung 1080. Mọi chữ/bảng đặt cách mép `--safe-x` = 116 px (`public/stage/stage.css`); chuông + mõ của chùa nằm ở cột phải (mép phải chuông < 972 px), mõ trên đầu phải bàn thờ — đầu trái bị thông báo quà của TikTok che.
 
+Chỗ quỳ của chùa (`public/shared/temple-seats.js`, dùng chung cho server và màn hình) được **tính bằng đúng phép chiếu của camera** (`public/shared/temple-camera.js`): mỗi chỗ phải giữ người + nhãn tên trong lề an toàn, đầu người ngồi trước lộ ít nhất một nửa, nhãn tên chồng nhau ≤ 35%, không đè bảng Cách tham gia hay cụm chuông + mõ, không quỳ lên thảm đỏ. Hai bên thảm mỗi bên chỉ còn ~200 px nên người quỳ nhỏ hơn cỡ thật 15% và nhãn ở chùa gọn lại (≤ 150 px, tên dài thì …). Kết quả 31 chỗ đều lộ (bố trí cũ 30 chỗ nhưng 14 chỗ rơi ra ngoài phần điện thoại thấy). `test/temple-seats.test.js` kiểm các luật này.
+
+TikTok không báo ai rời phòng: người chỉ vào xem mà 5 phút không tương tác (người đã gõ mõ / bình luận / tặng quà: 10 phút), hoặc phải nhường chỗ khi chánh điện đầy, thì **đứng dậy đi ra cửa hông** rồi mới biến mất.
+
 Hiệu ứng hạt có trần số lượng; cánh hoa và khói hương không cộng sáng, nên đông người vào hay nhiều quà lớn liền nhau cũng không bị chói trắng.
 
 ## Tranh và nhân vật của Chùa Online

@@ -6,6 +6,7 @@ import * as THREE from '/vendor/three/three.module.js';
 import { hashOf } from './person-model.js';
 import { templeArt } from './temple-art.js';
 import { depthScale } from './temple-view.js';
+import { CROWD_SCALE } from '/static/shared/temple-seats.js';
 
 const STRIDE = 0.38; // mét mỗi bước: đổi khung chân theo quãng đã đi nên chân không trượt
 const TINT = new THREE.Color('#e3c8ae'); // ánh nến ấm, hơi tối vì người quay lưng về phía camera
@@ -115,7 +116,7 @@ export function buildDevotee({ id, gender }) {
       if (Number.isNaN(last.x)) last.copy(world);
       travelled += Math.hypot(world.x - last.x, world.z - last.z);
       last.copy(world);
-      const scale = depthScale(-world.z) * personal;
+      const scale = depthScale(-world.z) * personal * CROWD_SCALE; // nhỏ hơn cỡ thật để 32 người đều lộ (temple-seats.js)
       body.scale.setScalar(scale);
       body.rotation.y = -root.rotation.y; // tấm hình luôn quay về camera dù người quay hướng nào
 

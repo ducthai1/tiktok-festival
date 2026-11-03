@@ -4,10 +4,14 @@
 import { containsPhrase, createCooldown, isCleanForDisplay, startsWithPhrase } from './text-match.js';
 import { drawFortune } from './temple-fortunes.js';
 import { giftTier } from '../../public/shared/gift-tiers.js';
+import { TEMPLE_SEAT_COUNT, VIP_SEATS } from '../../public/shared/temple-seats.js';
 
-export const TEMPLE_SLOTS = 30; // 6 đệm VIP + 24 chỗ quỳ
-const VIP_SLOTS = 6;
-const IDLE_LEAVE_MS = 10 * 60 * 1000;
+// Số chỗ quỳ lấy từ bố trí chung với màn hình (mọi chỗ đều lộ người + tên trên điện thoại).
+export const TEMPLE_SLOTS = TEMPLE_SEAT_COUNT;
+const VIP_SLOTS = VIP_SEATS;
+// TikTok không báo ai rời phòng: lâu không tương tác thì coi như đã về, đứng dậy đi ra cho người khác vào.
+// Người chỉ vào xem đi sớm hơn người đã gõ mõ / bình luận / tặng quà.
+const IDLE_LEAVE_MS = { engaged: 10 * 60 * 1000, watcher: 5 * 60 * 1000 };
 const FORTUNE_SHOW_MS = 10000;
 const FORTUNE_QUEUE_MAX = 5;
 
@@ -148,7 +152,7 @@ export function createTempleGame({ random = Math.random } = {}) {
     tick(now = Date.now()) {
       const fx = [];
       for (const d of devotees.values()) {
-        if (now - d.lastActive > IDLE_LEAVE_MS) {
+        if (now - d.lastActive > (d.engaged ? IDLE_LEAVE_MS.engaged : IDLE_LEAVE_MS.watcher)) {
           devotees.delete(d.id);
           fx.push({ kind: 'leave', userId: d.id });
         }
