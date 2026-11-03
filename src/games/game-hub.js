@@ -1,16 +1,18 @@
-// Giữ cả 3 game sống cùng lúc; chỉ game ĐANG CHỌN nhận sự kiện live và lên màn hình.
+// Giữ các game sống cùng lúc; chỉ game ĐANG CHỌN nhận sự kiện live và lên màn hình.
 // Đổi game giữa buổi live không làm mất trạng thái game kia (quay lại vẫn còn nguyên).
 import { createBarClubGame } from './bar-club-game.js';
+import { createBossRaidGame } from './boss-raid-game.js';
 import { createSessionLeaderboard } from './session-leaderboard.js';
 import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
 import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 
-export function createGameHub({ startGame = 'bar', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE } = {}) {
+export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE } = {}) {
   const games = new Map([
+    ['boss', createBossRaidGame({ random })],
+    ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
-    ['swim', createSwimPushGame()],
-    ['temple', createTempleGame({ random })]
+    ['swim', createSwimPushGame()]
   ]);
   const board = createSessionLeaderboard();
   const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });

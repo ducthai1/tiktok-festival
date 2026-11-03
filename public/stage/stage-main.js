@@ -8,6 +8,7 @@ import { createFrameLimiter, stageQuality } from './stage-quality.js';
 import { tierRangeLabel } from '/static/shared/gift-tiers.js';
 
 const SCENES = {
+  boss: () => import('./scenes/boss-scene.js').then((m) => m.createBossScene),
   bar: () => import('./scenes/bar-scene.js').then((m) => m.createBarScene),
   swim: () => import('./scenes/swim-scene.js').then((m) => m.createSwimScene),
   // chùa dùng tranh + sprite vẽ tay: tải xong hết hình rồi mới dựng cảnh
@@ -86,7 +87,7 @@ async function switchScene(id) {
   current = factory({ hud, labels, audio, pipeline });
   pipeline.setToneMapping(current.toneMapping);
   currentId = id;
-  stageEl.classList.remove('theme-bar', 'theme-swim', 'theme-temple');
+  stageEl.classList.remove('theme-boss', 'theme-bar', 'theme-swim', 'theme-temple');
   stageEl.classList.add(`theme-${id}`);
   audio.setTheme(id);
   hud.setLegend(legendFor(current), settings.legend !== false);
