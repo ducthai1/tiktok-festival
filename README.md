@@ -56,6 +56,10 @@ Nhân vật đi chậm dần khi tới chỗ và quỳ/ngồi xuống thành m�
 - Quán hoặc chánh điện hết chỗ: người mới chỉ thế chỗ người cũng chỉ vào xem, không bao giờ đẩy người đang bình luận hay tặng quà ra. Hết chỗ hẳn thì vẫn có một nhân vật mang tên họ bước vào chào rồi rời đi.
 - Công tắc **"Đọc tên người mới vào"** (giọng máy, mặc định tắt) nằm trong mục **Màn hình**.
 
+## Setup + vận hành live trên máy Linux (cho agent)
+
+Đọc **[docs/huong-dan-live-tiktok-tren-linux.md](docs/huong-dan-live-tiktok-tren-linux.md)**: cài từ đầu, quy trình mỗi buổi live, lệnh điều khiển (`scripts/admin-command.mjs`, `scripts/obs-ws.mjs`), luật an toàn (không chạy trình duyệt dùng card đồ hoạ khi đang live), bố cục màn hình, sự cố thường gặp.
+
 ## Chạy
 
 Cần **Node.js 20 trở lên**.
