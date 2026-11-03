@@ -95,12 +95,18 @@ async function switchScene(id) {
   fadeEl.classList.remove('on');
 }
 
+const WELCOME_SOUND_GAP_MS = 6000;
+let lastWelcomeSound = -Infinity;
 // Chào người mới: thẻ tên chung cho mọi game + hiệu ứng 3D riêng của từng cảnh.
 function onWelcome(fx) {
   const w = current?.welcome || {};
   if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);
   hud.welcome(fx, w.line);
-  audio.play('welcome');
+  // người vào dồn dập: tối đa 1 tiếng chào mỗi 6 giây
+  if (performance.now() - lastWelcomeSound > WELCOME_SOUND_GAP_MS) {
+    lastWelcomeSound = performance.now();
+    audio.play('welcome');
+  }
   if (fx.mode === 'group') {
     const names = fx.people.slice(0, 3).map((p) => p.nickname).join(', ');
     const more = fx.people.length > 3 ? ` và ${fx.people.length - 3} bạn nữa` : '';

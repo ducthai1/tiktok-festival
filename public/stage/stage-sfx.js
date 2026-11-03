@@ -80,9 +80,10 @@ export function createSynth(ctx, out) {
     smallBell: () => bell(880, { gain: 0.12, length: 2.2 }),
     gong: () => { bell(98, { gain: 0.38, length: 8 }); noise({ decay: 2.5, gain: 0.06, type: 'lowpass', freq: 400 }); },
     chime: () => [1318, 1568, 1976, 2637].forEach((f, i) => tone(f, { decay: 1.4, gain: 0.08, delay: i * 0.09 })),
+    // người vào phòng: rất nhỏ (~1/5 bản cũ) vì người ra vào liên tục — kêu to dễ nhức đầu (user chốt 03/11)
     welcome: () => {
-      [784, 988, 1175, 1568].forEach((f, i) => tone(f, { type: 'triangle', decay: 0.8, gain: 0.13, delay: i * 0.08 }));
-      [2349, 3136].forEach((f, i) => tone(f, { decay: 1.2, gain: 0.04, delay: 0.32 + i * 0.05 }));
+      [784, 988, 1175, 1568].forEach((f, i) => tone(f, { type: 'triangle', decay: 0.7, gain: 0.026, delay: i * 0.08 }));
+      [2349, 3136].forEach((f, i) => tone(f, { decay: 0.9, gain: 0.008, delay: 0.32 + i * 0.05 }));
     },
     // nút sâm panh bật + bọt xèo
     cork: () => { tone(900, { decay: 0.08, gain: 0.35, slide: 0.4 }); noise({ decay: 0.06, gain: 0.3, freq: 1800 }); noise({ decay: 1.4, gain: 0.08, type: 'highpass', freq: 5000, delay: 0.08 }); },
