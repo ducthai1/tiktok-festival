@@ -42,7 +42,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   // tên người quỳ hiện ĐỦ: nhãn chạm nhau thì tự nhích lên/xuống, không đè bảng Cách tham gia hay chuông + mõ
   labels.setDeclutter('crowd', { top: 860, bottom: 1520, keepOut: LABEL_KEEP_OUT, gap: 3 });
   hud.setTitle('🪷 CHÙA ONLINE');
-  hud.setHint(['*MIỄN PHÍ*', ' — gõ bình luận ↓']);
+  hud.setHint(['*MIỄN PHÍ*', ' — bình luận ↓']);
 
   // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
