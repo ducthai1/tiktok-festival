@@ -14,8 +14,12 @@ export function formatNumber(n) {
   return new Intl.NumberFormat('vi-VN').format(Math.round(n || 0));
 }
 
-const LEGEND_PAGE_MS = 7000; // bảng Cách tham gia lật trang mỗi 7 giây
+// Bảng Cách tham gia: trang MIỄN PHÍ hiện 9 giây, trang QUÀ 12,5 giây (nhiều dòng hơn, cần đọc lâu hơn)
+const FREE_PAGE_MS = 9000;
+const GIFT_PAGE_MS = 12500;
+const HINT_FADE_MS = 450;
 let legendTimer = 0;
+let freeHint = null;
 
 export function createHud() {
   const toastRoot = $('toasts');
@@ -56,6 +60,7 @@ export function createHud() {
       // parts: mảng chuỗi; chuỗi bọc trong *...* được tô vàng
       const root = $('hint');
       root.replaceChildren(...parts.map((p) => (p.startsWith('*') ? el('b', '', p.slice(1, -1)) : document.createTextNode(p))));
+      freeHint = [...root.childNodes].map((n) => n.cloneNode(true)); // tiêu đề trang MIỄN PHÍ (trang QUÀ tạm đổi chữ)
     },
     // items: [[khoá, chữ]]; khoá là chuỗi ('❤', 'Follow') hoặc danh sách quà [{image, emoji, name}] → hiện ảnh quà
     setLegend(items, visible) {
@@ -78,17 +83,28 @@ export function createHud() {
         item.append(em, document.createTextNode(value));
         return item;
       };
-      // Bảng gọn để không che tượng Phật: 2 trang tự lật — MIỄN PHÍ (bình luận, tim, follow) và QUÀ (dòng 🎁 + các bậc quà)
-      const isGift = ([key]) => Array.isArray(key) || String(key).startsWith('🎁');
-      const pages = [items.filter((it) => !isGift(it)), items.filter(isGift)].filter((p) => p.length);
-      clearInterval(legendTimer);
+      // Bảng gọn để không che tượng Phật: 2 trang tự lật — MIỄN PHÍ (bình luận, tim, follow) và QUÀ (các bậc quà).
+      // Dòng "🎁 Quà …" không thành một hàng mà làm dòng tiêu đề nhỏ (#hint) của trang QUÀ: hai trang cùng có
+      // tiêu đề nên bảng không co giãn khi lật; chuyển trang bằng mờ dần (CSS transition), không bật/tắt đột ngột.
+      const isGiftHeader = ([key]) => !Array.isArray(key) && String(key).startsWith('🎁');
+      const giftHeader = items.find(isGiftHeader);
+      const pages = [items.filter((it) => !Array.isArray(it[0]) && !isGiftHeader(it)), items.filter(([key]) => Array.isArray(key))].filter((p) => p.length);
+      clearTimeout(legendTimer);
       root.replaceChildren(...pages.map((p, i) => {
         const page = el('div', `page${i === 0 ? ' on' : ''}`);
         page.append(...p.map(row));
         return page;
       }));
       const howto = $('howto');
-      howto.classList.remove('gifts-page');
+      const hint = $('hint');
+      if (freeHint) hint.replaceChildren(...freeHint.map((n) => n.cloneNode(true))); // về trang đầu: trả tiêu đề MIỄN PHÍ
+      const swapHint = (nodes) => {
+        hint.classList.add('swap');
+        setTimeout(() => {
+          hint.replaceChildren(...nodes);
+          hint.classList.remove('swap');
+        }, HINT_FADE_MS);
+      };
       // thông báo quà bám sát ngay dưới đáy bảng Cách tham gia (bảng giữ chiều cao của trang dài nhất nên không nhảy)
       const placeToasts = () => {
         if (howto.offsetHeight) toastRoot.style.top = `${howto.offsetTop + howto.offsetHeight + 8}px`;
@@ -97,11 +113,14 @@ export function createHud() {
       document.fonts?.ready.then(placeToasts);
       if (pages.length > 1) {
         let at = 0;
-        legendTimer = setInterval(() => {
+        const flip = () => {
           at = (at + 1) % pages.length;
           [...root.children].forEach((page, i) => page.classList.toggle('on', i === at));
-          howto.classList.toggle('gifts-page', at === pages.length - 1);
-        }, LEGEND_PAGE_MS);
+          const giftPage = at === pages.length - 1;
+          swapHint(giftPage && giftHeader ? [el('b', '', giftHeader[0]), document.createTextNode(giftHeader[1])] : (freeHint || []).map((n) => n.cloneNode(true)));
+          legendTimer = setTimeout(flip, giftPage ? GIFT_PAGE_MS : FREE_PAGE_MS);
+        };
+        legendTimer = setTimeout(flip, FREE_PAGE_MS);
       }
     },
     /**

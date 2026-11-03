@@ -205,3 +205,10 @@ body { font-family: var(--font); color: var(--ink); }
 #legend .page { align-content: start; }
 #board h3 { font-size: 15px; }
 #stage #board h3 { font-size: 16px; letter-spacing: 0; } /* stage-theme.css (nạp sau) đặt 24px — tăng độ ưu tiên để thắng */
+/* Lật trang mượt: 2 trang chồng nhau, trang mới hiện dần trong khi trang cũ mờ dần (không bật/tắt đột ngột) */
+#legend .page, #legend .page:not(.on) { display: grid; animation: none; }
+#legend .page { opacity: 1; transform: none; visibility: visible; transition: opacity 900ms ease, transform 900ms ease, visibility 0s linear 0s; }
+#legend .page:not(.on) { opacity: 0; transform: translateY(8px); visibility: hidden; transition: opacity 900ms ease, transform 900ms ease, visibility 0s linear 900ms; }
+#howto.gifts-page #hint { display: block; }
+#hint { transition: opacity 450ms ease; }
+#hint.swap { opacity: 0; }
