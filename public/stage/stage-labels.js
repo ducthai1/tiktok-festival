@@ -207,7 +207,9 @@ export function createLabelLayer(root) {
         }
         const p = f.anchor.isVector3 ? projectPoint(f.anchor, camera) : project(f.anchor, 0, camera);
         f.el.style.opacity = String(k < 0.8 ? 1 : (1 - k) * 5);
-        f.el.style.transform = `translate(${p.x}px, ${p.y - k * f.rise}px) translate(-50%, -100%)`;
+        const half = Math.min((f.width ||= f.el.offsetWidth) / 2, STAGE_WIDTH / 2 - SAFE_X); // chữ bay cũng không lọt ra lề điện thoại cắt
+        const fx = Math.max(SAFE_X + half, Math.min(STAGE_WIDTH - SAFE_X - half, p.x));
+        f.el.style.transform = `translate(${fx}px, ${p.y - k * f.rise}px) translate(-50%, -100%)`;
       }
     },
     clear() {

@@ -70,12 +70,13 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
 
   const bowOne = (userId, seconds) => bowUntil.set(userId, clock + seconds);
   const headAt = new THREE.Vector3();
-  function prayerLight(userId) {
+  function prayerLight(userId, text) {
     const entry = crowd.get(userId);
-    if (!entry || entry.hidden) return;
-    entry.model.head.getWorldPosition(headAt);
-    particles.burst({ position: headAt.clone(), count: 14, colors: ['#fff6d8', '#ffe9a8', '#ffd36b'], speed: 0.18, spread: 0.6,
-      gravity: 0.35, life: 2.6, size: 0.07, damping: 0.985 });
+    const from = entry && !entry.hidden ? entry.model.head : hall.urnTop; // người chưa vào chỗ: bay lên từ lư hương
+    if (from.isVector3) headAt.copy(from); else from.getWorldPosition(headAt);
+    labels.float(from, `🙏 ${text}`, { ms: 3600, rise: 260, className: 'prayer' });
+    particles.burst({ position: headAt.clone(), count: 36, colors: ['#fff6d8', '#ffe9a8', '#ffd36b'], speed: 0.35, spread: 0.8,
+      gravity: 0.6, life: 3, size: 0.14, damping: 0.985 });
   }
   const helpers = {
     bowAll: (pose, seconds) => { bowAll = { pose, start: clock, until: clock + seconds }; },
@@ -125,7 +126,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
     // dòng miễn phí đặt trên, rồi tới các bậc quà (stage-main ghép thêm ảnh quà thật)
-    legend: [['❤ · gõ mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
+    legend: [['❤ · gõ mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu bình an', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
     giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
@@ -165,7 +166,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       } else if (fx.kind === 'incense') rituals.incense(fx);
       else if (fx.kind === 'say') {
         labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500);
-        if (fx.prayer) prayerLight(fx.userId); // lời cầu (miễn phí): đốm sáng vàng bay lên từ người cầu
+        if (fx.prayer) prayerLight(fx.userId, fx.text); // lời cầu (miễn phí): chữ 🙏 + vầng sáng bay lên từ người cầu
       } else if (fx.kind === 'bow') {
         if (!crowd.busy(fx.userId)) bowOne(fx.userId, 3.4); // "a di đà phật" (miễn phí): vái Phật trên đệm
       }
