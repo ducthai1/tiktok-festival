@@ -2,6 +2,7 @@
 import { connectLiveSocket } from '/static/shared/live-socket-client.js';
 import { createDemoRunner, renderDemoButtons } from './admin-demo-scenarios.js';
 import { setupTestPanel } from './admin-test-panel.js';
+import { SAMPLE_GIFTS, giftTier } from '/static/shared/gift-tiers.js';
 
 const $ = (id) => document.getElementById(id);
 const GAME_ICONS = { bar: '🍸', swim: '🏊', temple: '🪷' };
@@ -105,7 +106,32 @@ function renderCommands() {
   renderDemoButtons({ arrivalsRoot: $('demo-arrivals'), effectsRoot: $('demo-effects'), game: activeGame, runner: demo });
 }
 
+// Danh sách người đang có mặt + nút "Tặng": chỉ vẽ lại khi danh sách đổi, để chọn quà không bị reset.
+let grantKey = '';
+$('grant-gift').replaceChildren(...SAMPLE_GIFTS.map((g) => new Option(`${g.emoji} ${g.name} · ${g.coins} xu · bậc ${giftTier(g.coins)}`, g.id)));
+function renderGrantList(state) {
+  const people = (state && Array.isArray(state.devotees) ? state.devotees
+    : Object.values(state || {}).find((v) => Array.isArray(v) && v.length && v.every((p) => p && p.id && p.nickname))) || [];
+  const key = people.map((p) => `${p.id}:${p.nickname}`).join('|');
+  if (key === grantKey) return;
+  grantKey = key;
+  const rows = people.map((p) => {
+    const li = document.createElement('li');
+    const name = document.createElement('span');
+    name.textContent = p.nickname;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'tiny';
+    button.textContent = 'Tặng';
+    button.addEventListener('click', () => run({ t: 'grant', userId: p.id, giftId: $('grant-gift').value }));
+    li.append(name, button);
+    return li;
+  });
+  $('grant-list').replaceChildren(...(rows.length ? rows : [Object.assign(document.createElement('li'), { textContent: 'Chưa có ai trong game' })]));
+}
+
 function renderState(m) {
+  renderGrantList(m.state);
   if (m.game !== activeGame) {
     activeGame = m.game;
     for (const b of $('game-buttons').children) b.classList.toggle('active', b.dataset.game === activeGame);

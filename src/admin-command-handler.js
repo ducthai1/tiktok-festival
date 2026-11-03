@@ -9,6 +9,14 @@ const GAME_COMMANDS = {
 };
 const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 
+/** Danh sách người đang có mặt trong game (chùa: devotees; game khác: mảng đầu tiên có id + nickname). */
+export function presentPeople(state) {
+  if (!state || typeof state !== 'object') return [];
+  const list = Array.isArray(state.devotees) ? state.devotees
+    : Object.values(state).find((v) => Array.isArray(v) && v.length && v.every((p) => p && p.id && p.nickname)) || [];
+  return list.filter((p) => p && p.id && p.nickname);
+}
+
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined }) {
   let testSeq = 0;
 
@@ -35,6 +43,22 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       emitFx(game, hub.command(game, msg.name));
       pushState(true);
       return { message: 'OK' };
+    },
+    // Chủ phòng chỉ định một người ĐANG CÓ MẶT trong game nhận hiệu ứng của một món quà (người đó không phải
+    // tặng). Tên/avatar lấy từ trạng thái game (không tin dữ liệu trang gửi lên); chạy như quà thật, kể cả khi live.
+    grant(msg) {
+      const person = presentPeople(hub.snapshot().state).find((p) => p.id === String(msg.userId || ''));
+      if (!person) throw new Error('Người này không còn trong game');
+      const gift = (getSampleGifts() || []).find((g) => g.id === String(msg.giftId || ''));
+      if (!gift) throw new Error('Quà không hợp lệ');
+      const raw = {
+        type: 'gift', id: `grant-${(testSeq += 1)}-${Date.now()}`,
+        user: { id: person.id, uniqueId: person.id, nickname: person.nickname, avatar: person.avatar || '' },
+        giftRaw: { id: gift.id, name: gift.name, pictureUrl: gift.image || '', diamondsEach: gift.coins, repeatCount: 1, repeatEnd: true, streakable: false }
+      };
+      if (!live.ingest(raw, { simulated: false })) throw new Error('Không tạo được hiệu ứng');
+      pushState(true);
+      return { message: `Đã tặng ${gift.name} cho ${person.nickname}` };
     },
     test(msg) {
       // Không cho bơm sự kiện giả vào buổi live thật: người xem sẽ thấy tương tác bịa.

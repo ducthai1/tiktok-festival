@@ -64,3 +64,8 @@ a { color: var(--gold); }
   .games button { font-size: 15px; padding: 14px 6px; }
 }
 button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; margin-right: 4px; }
+
+/* Tặng quà cho người đang có mặt */
+.grant-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; max-height: 320px; overflow: auto; }
+.grant-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.06); }
+.grant-list li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
