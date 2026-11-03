@@ -192,3 +192,16 @@ body { font-family: var(--font); color: var(--ink); }
 #toasts { left: var(--safe-x); right: auto; top: 668px; width: 266px; align-items: stretch; gap: 6px; }
 .toast { gap: 7px; padding: 6px 10px; border-radius: 14px; font-size: 15px; line-height: 1.25; }
 .toast img { width: 26px; height: 26px; border-radius: 6px; flex: none; }
+/* Cụm thông tin gọn + sát nhau: tiêu đề nhỏ lại, bảng dịch lên, bảng Cách tham gia giữ chiều cao trang dài nhất
+   (2 trang chồng cùng một ô lưới, trang ẩn chỉ "vô hình") để thông báo quà bám ngay dưới không bị nhảy */
+#title { font-size: 24px; padding: 6px 14px; border-radius: 14px; letter-spacing: 0.5px; }
+.chip { font-size: 18px; padding: 4px 12px; }
+#stats { gap: 5px; }
+#howto, #welcome { top: 234px; }
+#board { top: 262px; }
+#game-hud:not(:empty) ~ #board, #game-hud:not(:empty) ~ #howto, #game-hud:not(:empty) ~ #test-badge, #game-hud:not(:empty) ~ #welcome { top: 340px; }
+#legend .page { grid-area: 1 / 1; }
+#legend .page:not(.on) { display: grid; visibility: hidden; }
+#legend .page { align-content: start; }
+#board h3 { font-size: 15px; }
+#stage #board h3 { font-size: 16px; letter-spacing: 0; } /* stage-theme.css (nạp sau) đặt 24px — tăng độ ưu tiên để thắng */

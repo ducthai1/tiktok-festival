@@ -89,6 +89,12 @@ export function createHud() {
       }));
       const howto = $('howto');
       howto.classList.remove('gifts-page');
+      // thông báo quà bám sát ngay dưới đáy bảng Cách tham gia (bảng giữ chiều cao của trang dài nhất nên không nhảy)
+      const placeToasts = () => {
+        if (howto.offsetHeight) toastRoot.style.top = `${howto.offsetTop + howto.offsetHeight + 8}px`;
+      };
+      requestAnimationFrame(placeToasts);
+      document.fonts?.ready.then(placeToasts);
       if (pages.length > 1) {
         let at = 0;
         legendTimer = setInterval(() => {
