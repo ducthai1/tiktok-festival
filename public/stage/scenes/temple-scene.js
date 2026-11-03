@@ -165,8 +165,9 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — 🎋 ${fx.note}`, { image: fx.giftPicture });
       } else if (fx.kind === 'incense') rituals.incense(fx);
       else if (fx.kind === 'say') {
-        labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500);
-        if (fx.prayer) prayerLight(fx.userId, fx.text); // lời cầu (miễn phí): chữ 🙏 + vầng sáng bay lên từ người cầu
+        // lời cầu (miễn phí): CHỈ chữ 🙏 + vầng sáng bay lên từ người cầu — không treo bong bóng trên đầu (user chốt 03/11)
+        if (fx.prayer) prayerLight(fx.userId, fx.text);
+        else labels.bubble(fx.userId, fx.text, 4500);
       } else if (fx.kind === 'bow') {
         // "a di đà phật" (miễn phí): ra giữa thảm trước bàn thờ quỳ vái cho mọi người thấy, xong tự về chỗ
         if (!crowd.busy(fx.userId)) {
