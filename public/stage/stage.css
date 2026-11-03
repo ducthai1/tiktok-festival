@@ -155,7 +155,7 @@ body { font-family: var(--font); color: var(--ink); }
 #legend .page:not(.on) { display: none; }
 @keyframes legend-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 #legend .item { font-size: 18px; padding: 3px 8px; gap: 6px; }
-#legend .item em.gifts { min-width: 58px; font-size: 19px; }
+#legend .item em.gifts { min-width: 30px; font-size: 19px; }
 #legend .item em.gifts img { width: 28px; height: 28px; }
 #board { padding: 10px 12px; }
 #board h3 { font-size: 20px; margin-bottom: 6px; letter-spacing: 1px; }

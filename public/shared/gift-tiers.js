@@ -11,6 +11,14 @@
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
 
+/** Khoảng giá (kc) của một bậc, viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
+export function tierRangeLabel(tier) {
+  const fmt = (n) => (n >= 1000 ? `${String(Math.floor(n / 100) / 10).replace('.', ',')}K` : String(n)); // làm tròn XUỐNG: 4.999 → 4,9K
+  const min = TIER_MIN[tier - 1];
+  const next = TIER_MIN[tier];
+  return next ? `${fmt(min)}–${fmt(next - 1)}` : `${fmt(min)}+`;
+}
+
 /** Bậc 1..6 theo giá một món (xu / diamondCount của TikTok). */
 export function giftTier(coinsEach) {
   const coins = Math.max(1, Number(coinsEach) || 1);

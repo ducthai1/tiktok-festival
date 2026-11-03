@@ -5,6 +5,7 @@ import { createHud } from './stage-hud.js';
 import { createLabelLayer } from './stage-labels.js';
 import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
 import { createFrameLimiter, stageQuality } from './stage-quality.js';
+import { tierRangeLabel } from '/static/shared/gift-tiers.js';
 
 const SCENES = {
   bar: () => import('./scenes/bar-scene.js').then((m) => m.createBarScene),
@@ -32,7 +33,8 @@ function legendFor(scene) {
   if (!scene) return [];
   const rows = [...(scene.legend || [])];
   if (scene.giftLabels) {
-    for (const { tier, gifts } of giftTiers) if (gifts.length && scene.giftLabels[tier]) rows.push([gifts, ` ${scene.giftLabels[tier]}`]);
+    // mỗi bậc: 1 icon quà làm mẫu + khoảng kc — món nào trong khoảng đó cũng ra cùng hiệu ứng
+    for (const { tier, gifts } of giftTiers) if (gifts.length && scene.giftLabels[tier]) rows.push([gifts.slice(0, 1), ` ${tierRangeLabel(tier)} · ${scene.giftLabels[tier]}`]);
   }
   return rows;
 }
