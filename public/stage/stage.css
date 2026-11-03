@@ -188,3 +188,7 @@ body { font-family: var(--font); color: var(--ink); }
 #howto, #welcome { width: 266px; }
 #legend .item { overflow: hidden; }
 #legend .item:has(em.gifts) { font-size: 15px; gap: 5px; padding: 4px 7px; }
+/* Thông báo quà: gọn, ở cột trái ngay dưới bảng Cách tham gia — không che lư hương / lối giữa nơi nhân vật vái, thắp hương */
+#toasts { left: var(--safe-x); right: auto; top: 668px; width: 266px; align-items: stretch; gap: 6px; }
+.toast { gap: 7px; padding: 6px 10px; border-radius: 14px; font-size: 15px; line-height: 1.25; }
+.toast img { width: 26px; height: 26px; border-radius: 6px; flex: none; }
