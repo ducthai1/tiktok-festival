@@ -21,13 +21,15 @@ const hit = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom &
  * chữ không nhảy qua lại.
  */
 const SHIFT_X = [0, -45, 45, -90, 90, -135, 135];
-function layoutGroup(items, { top, bottom, keepOut = [], gap = 3 }) {
+function layoutGroup(items, { top, bottom, keepOut = [], gap = 3, maxSteps = MAX_STEPS, shiftX = SHIFT_X }) {
   const placed = [];
   for (const it of items) {
     const step = it.h + gap;
-    const tries = [[it.label.dx || 0, it.label.dy || 0]];
-    for (let k = 0; k <= MAX_STEPS; k += 1) {
-      for (const dy of k ? [-k * step, k * step] : [0]) for (const dx of SHIFT_X) tries.push([dx, dy]);
+    const prev = [it.label.dx || 0, it.label.dy || 0];
+    const prevOk = Math.abs(prev[1]) <= maxSteps * step + 1 && Math.abs(prev[0]) <= Math.max(...shiftX.map(Math.abs)) + 1;
+    const tries = [prevOk ? prev : [0, 0]]; // giữ chỗ cũ (đỡ nhảy chữ) nếu vẫn trong giới hạn nhích
+    for (let k = 0; k <= maxSteps; k += 1) {
+      for (const dy of k ? [-k * step, k * step] : [0]) for (const dx of shiftX) tries.push([dx, dy]);
     }
     tries.sort((a, b) => (a === tries[0] ? -1 : b === tries[0] ? 1 : Math.abs(a[1]) + Math.abs(a[0]) * 0.8 - Math.abs(b[1]) - Math.abs(b[0]) * 0.8));
     const boxAt = ([dx, dy]) => {

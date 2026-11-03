@@ -40,7 +40,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   let bowAll = { pose: 'bow', start: 0, until: 0 };
 
   // tên người quỳ hiện ĐỦ: nhãn chạm nhau thì tự nhích lên/xuống, không đè bảng Cách tham gia hay chuông + mõ
-  labels.setDeclutter('crowd', { top: 860, bottom: 1520, keepOut: LABEL_KEEP_OUT, gap: 3 });
+  labels.setDeclutter('crowd', { top: 860, bottom: 1520, keepOut: LABEL_KEEP_OUT, gap: 2, maxSteps: 1, shiftX: [0, -24, 24] }); // chỉ nhích ≤ 1 nấc
   hud.setTitle('🪷 CHÙA ONLINE');
   hud.setHint(['*MIỄN PHÍ*', ' — bình luận ↓']);
 
@@ -55,7 +55,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     visitSpot: (i, count) => gridSpot(new THREE.Vector3(0, 0, -8.3), i, count, { maxCols: 3, dx: 0.4, dz: 0.6 }),
     pose: (model, info, t, walking, dt) => {
       model.seat = seats[info.slot] || null;
-      model.labelLift = TEMPLE_SEATS[info.slot]?.lift ?? 0.06; // độ cao nhãn đã chọn sẵn để tên không đè nhau
+      model.labelLift = 0.08; // tên luôn sát đỉnh đầu người đó (user chốt 03/11: không treo tên xa người)
       if (walking) return animatePerson(model, 'walk', t, dt);
       if (t < bowAll.until) return animatePerson(model, bowAll.pose, t, dt, false, t - bowAll.start); // cả chánh điện lạy cùng nhịp
       return animatePerson(model, t < (bowUntil.get(info.id) || 0) ? 'bow' : 'kneel', t, dt);
@@ -168,7 +168,13 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500);
         if (fx.prayer) prayerLight(fx.userId, fx.text); // lời cầu (miễn phí): chữ 🙏 + vầng sáng bay lên từ người cầu
       } else if (fx.kind === 'bow') {
-        if (!crowd.busy(fx.userId)) bowOne(fx.userId, 3.4); // "a di đà phật" (miễn phí): vái Phật trên đệm
+        // "a di đà phật" (miễn phí): ra giữa thảm trước bàn thờ quỳ vái cho mọi người thấy, xong tự về chỗ
+        if (!crowd.busy(fx.userId)) {
+          crowd.perform(fx.userId, [
+            { walk: new THREE.Vector3((Math.random() - 0.5) * 0.7, 0, -9.9), facing: Math.PI },
+            { pose: 'bowStand', seconds: 3.6, facing: Math.PI }
+          ], { waitSeconds: 8 });
+        }
       }
       else if (fx.kind === 'fortune') rituals.fortune(fx);
       else if (fx.kind === 'offering') rituals.offering(fx);
