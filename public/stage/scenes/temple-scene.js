@@ -125,7 +125,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
     // dòng miễn phí đặt trên, rồi tới các bậc quà (stage-main ghép thêm ảnh quà thật)
-    legend: [['❤ · mõ', ' Gõ mõ'], ['lạy', ' Lạy Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
+    legend: [['❤ · mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
     giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
@@ -167,7 +167,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
         labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500);
         if (fx.prayer) prayerLight(fx.userId); // lời cầu (miễn phí): đốm sáng vàng bay lên từ người cầu
       } else if (fx.kind === 'bow') {
-        if (!crowd.busy(fx.userId)) bowOne(fx.userId, 3.4); // "lạy" (miễn phí): lạy Phật trên đệm
+        if (!crowd.busy(fx.userId)) bowOne(fx.userId, 3.4); // "a di đà phật" (miễn phí): vái Phật trên đệm
       }
       else if (fx.kind === 'fortune') rituals.fortune(fx);
       else if (fx.kind === 'offering') rituals.offering(fx);

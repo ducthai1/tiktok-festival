@@ -16,11 +16,15 @@ test('commenting "mõ" strikes the wooden fish for free, once per few seconds pe
   assert.ok(!kinds(temple.handleEvent(chat(2, 'mở thêm game đi'), 5000)).includes('mo'));
 });
 
-test('commenting "lạy" makes that viewer bow to the Buddha and still shows the words', () => {
+test('commenting "a di đà phật" (any spelling) makes that viewer bow to the Buddha and shows the words', () => {
   const temple = createTempleGame();
-  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'Lạy Phật'), 0)), ['bow', 'say']);
-  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'vái 3 vái'), 2000)), []); // trong 6 giây: không lạy lại, bong bóng cũng chờ
-  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'vái 3 vái'), 6500)), ['bow', 'say']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'A Di Đà Phật 🙏'), 0)), ['bow', 'say']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'adidaphat'), 2000)), []); // trong 6 giây: không vái lại, bong bóng cũng chờ
+  assert.deepEqual(kinds(temple.handleEvent(chat(1, 'adidaphat'), 6500)), ['bow', 'say']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(2, 'nam mô a di da phat'), 0)), ['bow', 'say']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(3, 'vái 3 vái'), 0)), ['bow', 'say']);
+  // chữ "lạy" (có nghĩa lóng xấu) không còn là lệnh
+  assert.ok(!kinds(temple.handleEvent(chat(4, 'lạy hồn'), 0)).includes('bow'));
 });
 
 test('a prayer comment is free and shows with a praying hand', () => {

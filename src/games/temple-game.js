@@ -19,9 +19,11 @@ const INCENSE_WORDS = ['thap huong', 'dang huong', 'thap nhang', 'thap 3 nen huo
 const FORTUNE_WORDS = ['xin xam', 'gieo que', 'rut que', 'xin que', 'xin 1 que', 'xin mot que'];
 const PRAYER_START = ['cau', 'nguyen', 'chuc', 'xin cho'];
 // Bình luận MIỄN PHÍ có hiệu ứng (ghi trên bảng Cách tham gia): người xem không tặng quà vẫn được góp mặt.
-const BOW_START = ['lay', 'vai', 'nam mo', 'a di da phat']; // "lạy", "vái", "lạy Phật"… → lạy Phật trên đệm
+// "a di đà phật" / "adidaphat" / "nam mô…" / "vái" → người đó vái Phật trên đệm. KHÔNG dùng chữ "lạy" (tiếng lóng xấu).
+const BOW_START = ['vai', 'nam mo'];
+const BOW_WORDS = ['a di da phat', 'adidaphat', 'adida phat', 'adi da phat', 'a di daphat'];
 const MO_EXACT = ['mo', 'go mo', 'go mo di']; // cả câu chỉ là "mõ" / "gõ mõ" → gõ một tiếng mõ
-const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
+const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'adidaphat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
 
 // 6 bậc theo giá MỘT món quà (public/shared/gift-tiers.js). Nghi thức dài (thắp hương, xin xăm) chỉ mở
 // bằng quà — gõ chữ không mở được, nên đông người gõ cùng lúc cũng không làm loạn màn hình:
@@ -39,7 +41,7 @@ export function createTempleGame({ random = Math.random } = {}) {
   const merit = new Map(); // điểm tâm thành của phiên, giữ cả khi người đó đã rời chánh điện
   const hintCooldown = createCooldown(30000);
   const sayCooldown = createCooldown(4000); // bình luận: mỗi người tối đa 1 bong bóng / 4 giây
-  const bowCooldown = createCooldown(6000); // "lạy": mỗi người tối đa 1 lần / 6 giây (chống spam)
+  const bowCooldown = createCooldown(6000); // "a di đà phật": mỗi người vái tối đa 1 lần / 6 giây (chống spam)
   const moCooldown = createCooldown(2500); // "mõ": mỗi người tối đa 1 tiếng / 2,5 giây
   const wishes = new Map(); // lời cầu gần nhất của từng người: tặng quà (từ bậc 3) thì thả hoa đăng mang lời này
   const WISH_KEEP_MS = 5 * 60 * 1000;
@@ -108,8 +110,8 @@ export function createTempleGame({ random = Math.random } = {}) {
       fx.push({ kind: 'mo', userId: user.id, count: 1 });
       return;
     }
-    // "lạy" / "vái": người đó lạy Phật trên đệm (miễn phí), chữ vẫn hiện thành bong bóng
-    if (startsWithPhrase(comment, BOW_START) && bowCooldown(user.id, now)) {
+    // "a di đà phật" / "vái": người đó vái Phật trên đệm (miễn phí), chữ vẫn hiện thành bong bóng
+    if ((startsWithPhrase(comment, BOW_START) || containsPhrase(comment, BOW_WORDS)) && bowCooldown(user.id, now)) {
       addMerit(user, 2);
       fx.push({ kind: 'bow', userId: user.id });
     }
