@@ -181,7 +181,7 @@ Miễn phí (ghi trên bảng "Cách tham gia" đầu màn):
 | Người xem làm | Hiệu ứng |
 |---|---|
 | Thả tim ❤ hoặc bình luận `mõ` / `gõ mõ` | gõ mõ (+công đức); bình luận mỗi người tối đa 1 lần / 2,5 giây |
-| Bình luận `a di đà phật` / `adidaphat` / `nam mô…` / `vái…` | người đó vái Phật trên đệm (mỗi người 1 lần / 6 giây). **Không dùng chữ "lạy"** (nghĩa lóng xấu) |
+| Bình luận `a di đà phật` / `adidaphat` / `nam mô…` / `vái…` | người đó ra giữa thảm trước bàn thờ quỳ vái rồi về chỗ (mỗi người 1 lần / 6 giây). **Không dùng chữ "lạy"** (nghĩa lóng xấu) |
 | Bình luận `cầu …` (cầu bình an, sức khỏe…) | bong bóng 🙏 + đốm sáng bay lên; lời cầu được nhớ 5 phút, tặng quà từ bậc 3 thì thành hoa đăng |
 | Follow / chia sẻ | thỉnh chuông, cả chánh điện cùng vái |
 | Bình luận khác | bong bóng chữ trên đầu người đó (lọc chữ tục, link, số điện thoại) |
@@ -215,7 +215,7 @@ TikTok trên điện thoại phủ lên khung 1080×1920 (đã đo):
 - Chỗ ngồi (`public/shared/temple-seats.js`) tính bằng phép chiếu camera (`public/shared/temple-camera.js`);
   vùng cấm nhãn: bảng Cách tham gia (trái) và cụm chuông + mõ (phải) — đổi vị trí chuông/mõ/bảng thì sửa `LABEL_KEEP_OUT`.
   `test/temple-seats.test.js` kiểm các luật này; chạy `npm run gate`.
-- Tên người xem hiện ĐỦ; chạm nhau thì tự dời (lên/xuống/ngang) + vạch nối về người đó (`layoutGroup` trong `stage-labels.js`).
+- Tên người xem hiện ĐỦ và **luôn sát đỉnh đầu** (user chốt): chạm nhau chỉ nhích tối đa 1 nấc (`maxSteps: 1` ở `temple-scene.js`, `layoutGroup` trong `stage-labels.js`).
 - Máy yếu (Mac 8 GB, điện thoại): `/stage?lite=1` (720×1280, 30 fps, bỏ hiệu ứng nặng).
 
 ## 8. Bản đồ code
