@@ -125,14 +125,14 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
     // dòng miễn phí đặt trên, rồi tới các bậc quà (stage-main ghép thêm ảnh quà thật)
-    legend: [['❤ · mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
+    legend: [['❤ · gõ mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
     giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
     update(snapshot) {
       const { state } = snapshot;
       const t = state.totals;
-      hud.setStats([`✨ ${formatNumber(t.merit)} công đức`, `🔥 ${formatNumber(t.incense)} nén hương · 🪵 ${formatNumber(t.mo)} mõ`]);
+      hud.setStats([`✨ ${formatNumber(t.merit)} công đức`, `🔥 ${formatNumber(t.incense)} nén hương · 🪵 ${formatNumber(t.mo)} tiếng mõ`]);
       hud.setBoard('TẤM LÒNG THÀNH', state.board.map((b) => ({ ...b, score: formatNumber(b.points) })));
       crowd.sync(state.devotees, new Set(snapshot.viewers?.pending || []));
     },

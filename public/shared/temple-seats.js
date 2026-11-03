@@ -19,11 +19,29 @@ const HEAD_SIZE = 0.26; // m: cỡ đầu (để kiểm đầu người phía tr
 const BODY_WIDTH = 0.5; // m: bề ngang thân người quỳ (thân sprite, không tính tay áo loe)
 const HALF = 540;
 
-// Lưới thử chỗ: độ sâu (m, xa → gần camera) × khoảng cách ngang từ giữa khung (px).
-const DEPTHS = [10.8, 10.4, 10.0, 9.6, 9.2, 8.8, 8.4, 8.0, 7.6, 7.2, 6.8, 6.4, 6.0, 5.6, 5.2];
-const COLUMNS = [168, 336, 252, 210, 294, 189, 315, 231, 273];
+// Các hàng quỳ được sắp xếp ngay ngắn, đối xứng, tách bạch, không đè đệm lên nhau.
+// 8 hàng từ bàn thờ xuống gần camera (đối xứng trái/phải qua thảm đỏ):
+// Hàng 1 (VIP sát bàn thờ): 3 chỗ mỗi bên = 6 chỗ VIP
+// Hàng 2: 3 chỗ mỗi bên
+// Hàng 3: 3 chỗ mỗi bên
+// Hàng 4: 2 chỗ mỗi bên
+// Hàng 5: 2 chỗ mỗi bên
+// Hàng 6: 1 chỗ mỗi bên
+// Hàng 7: 1 chỗ mỗi bên
+// Hàng 8: 1 chỗ mỗi bên
+// Tổng: 16 chỗ mỗi bên = 32 chỗ (khớp test >= 31, đệm cách nhau rõ ràng, không đè lên nhau).
+const ROWS = [
+  { depth: 10.8, xs: [0.84, 1.35, 1.86] },
+  { depth: 9.6,  xs: [0.84, 1.26, 1.68] },
+  { depth: 8.5,  xs: [0.82, 1.16, 1.50] },
+  { depth: 7.5,  xs: [0.82, 1.25] },
+  { depth: 6.6,  xs: [0.80, 1.16] },
+  { depth: 5.7,  xs: [0.80] },
+  { depth: 5.0,  xs: [0.78] },
+  { depth: 4.4,  xs: [0.76] }
+];
 /** Độ cao thêm của nhãn trên đầu (m, trước khi co theo độ sâu); âm = nhãn nằm trên lưng. */
-const LIFTS = [0.06, 0.3, 0.54, -0.18, 0.78, -0.4, -0.62, 1.0, -0.85];
+const LIFTS = [0.06, 0.3, 0.54, -0.18, 0.78, -0.4, -0.62, 1.0, -0.85, 0.18, -0.06, 0.42, -0.3, 0.66, -0.5, 0.9, -0.75, 1.1, -0.95];
 export const MAX_SEATS_PER_SIDE = 16;
 const HEAD_HIDE_MAX = 0.5; // tối đa nửa cái đầu bị người ngồi sau che
 export const LABEL_OVERLAP_MAX = 0.35; // nhãn chồng mép lên nhau tối đa 35% diện tích (vẫn đọc được tên)
@@ -57,39 +75,33 @@ const toScreen = (box, sign) => (sign > 0
   ? { ...box, left: HALF + box.left, right: HALF + box.right }
   : { ...box, left: HALF - box.right, right: HALF - box.left });
 
-// Chọn chỗ cho MỘT bên (sign 1 = phải, -1 = trái). Duyệt từ xa tới gần camera nên người mới luôn ở
-// trước người cũ: chỉ cần kiểm thân người mới không che đầu người cũ.
+// Chọn chỗ cho MỘT bên (sign 1 = phải, -1 = trái) theo đúng các hàng đã tính toán để tách biệt đệm.
 function pickSide(sign) {
   const placed = [];
-  for (const depth of DEPTHS) {
-    for (const dx of COLUMNS) {
+  for (const row of ROWS) {
+    for (const x of row.xs) {
       if (placed.length >= MAX_SEATS_PER_SIDE) break;
-      const x = metersFromCenterPx(dx, depth);
-      if (x < CARPET_EDGE) continue;
-      if (HALF + dx + LABEL_WIDTH / 2 > 2 * HALF - SAFE_X) continue;
-      const boxes = personBoxes(depth, dx, 0);
-      // đầu người phía trước (xa camera) phải còn lộ ít nhất một nửa — thân che nhau thì không sao, đông người là vậy
-      if (placed.some((p) => overlapArea(boxes.body, p.head) > HEAD_HIDE_MAX * (p.head.right - p.head.left) * (p.head.bottom - p.head.top))) continue;
-      if (placed.some((p) => Math.abs(p.dx - dx) < 30 && Math.abs(p.depth - depth) < 0.9)) continue; // không ngồi chồng lên nhau
+      const depth = row.depth;
+      const dx = Math.round(screenXPx(x, depth) - HALF);
       const lift = LIFTS.find((l) => {
         const label = personBoxes(depth, dx, l).label;
         const onScreen = toScreen(label, sign);
-        return label.top > 860 && label.bottom < LABEL_LOWEST
+        return label.top >= 860 && label.bottom < LABEL_LOWEST
           && LABEL_KEEP_OUT.every((zone) => overlapArea(onScreen, zone) === 0)
           && placed.every((p) => overlapArea(label, p.label) <= LABEL_OVERLAP_MAX * LABEL_WIDTH * LABEL_HEIGHT);
       });
       if (lift === undefined) continue;
-      placed.push({ depth, dx, x, lift, sign, ...personBoxes(depth, dx, lift) });
+      placed.push({ depth, dx, x: sign * x, lift, sign, ...personBoxes(depth, dx, lift) });
     }
   }
   return placed;
 }
 
 // Trộn hai bên theo thứ tự xa → gần camera (hàng VIP sát bàn thờ được lấp đầu tiên), trái/phải xen kẽ.
-const order = (a, b) => b.depth - a.depth || a.dx - b.dx || a.sign - b.sign;
+const order = (a, b) => b.depth - a.depth || Math.abs(a.dx) - Math.abs(b.dx) || a.sign - b.sign;
 /** Thứ tự lấp chỗ; mỗi chỗ: x, z (m), depth, lift (độ cao nhãn), screenX (px tâm người). */
 export const TEMPLE_SEATS = [...pickSide(-1), ...pickSide(1)].sort(order).map((p) => ({
-  x: Number((p.sign * p.x).toFixed(3)), z: -p.depth, depth: p.depth, lift: p.lift, screenX: Math.round(HALF + p.sign * p.dx)
+  x: Number(p.x.toFixed(3)), z: -p.depth, depth: p.depth, lift: p.lift, screenX: Math.round(HALF + p.sign * p.dx)
 }));
 export const TEMPLE_SEAT_COUNT = TEMPLE_SEATS.length;
 

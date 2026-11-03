@@ -22,7 +22,11 @@ const PRAYER_START = ['cau', 'nguyen', 'chuc', 'xin cho'];
 // "a di đà phật" / "adidaphat" / "nam mô…" / "vái" → người đó vái Phật trên đệm. KHÔNG dùng chữ "lạy" (tiếng lóng xấu).
 const BOW_START = ['vai', 'nam mo'];
 const BOW_WORDS = ['a di da phat', 'adidaphat', 'adida phat', 'adi da phat', 'a di daphat'];
-const MO_EXACT = ['mo', 'go mo', 'go mo di']; // cả câu chỉ là "mõ" / "gõ mõ" → gõ một tiếng mõ
+const MO_EXACT = [
+  'mo', 'go mo', 'go mo di', 'xin go mo', 'go mo a', 'thay go mo',
+  'cho con go mo', 'con xin go mo', 'xin thay go mo', 'go mo cau an',
+  'tieng mo', 'mo mo', 'xin go mo a', 'xin tieng mo'
+]; // cả câu là "mõ" / "gõ mõ" / các câu gõ mõ lễ phép → gõ một tiếng mõ
 const PRAYER_WORDS = ['binh an', 'nam mo', 'a di da phat', 'adidaphat', 'suc khoe', 'may man', 'an lanh', 'thuan loi'];
 
 // 6 bậc theo giá MỘT món quà (public/shared/gift-tiers.js). Nghi thức dài (thắp hương, xin xăm) chỉ mở
@@ -102,8 +106,15 @@ export function createTempleGame({ random = Math.random } = {}) {
       if (hintCooldown(user.id, now)) fx.push({ kind: 'hint', userId: user.id, text: HINTS[asked] });
       return;
     }
-    // "mõ" / "gõ mõ": gõ một tiếng mõ miễn phí (như thả tim)
-    if (MO_EXACT.includes(foldText(comment))) {
+    // "mõ" / "gõ mõ" / bình luận gõ mõ lễ phép: gõ một tiếng mõ miễn phí (như thả tim)
+    const folded = foldText(comment);
+    const isMo = MO_EXACT.includes(folded)
+      || folded === 'mo'
+      || folded === 'mo mo'
+      || folded.startsWith('go mo')
+      || folded.endsWith('go mo')
+      || (folded.includes('go mo') && !folded.includes('mo them') && !folded.includes('mo game'));
+    if (isMo) {
       if (!moCooldown(user.id, now)) return;
       totals.mo += 1;
       addMerit(user, 1);

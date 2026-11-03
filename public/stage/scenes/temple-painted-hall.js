@@ -75,19 +75,19 @@ export function addCushion(scene, position, vip) {
   const s = depthScale(-position.z) * CROWD_SCALE; // đệm co cùng cỡ người quỳ
   const g = new THREE.Group();
   const pad = new THREE.Mesh(new THREE.SphereGeometry(0.5, 28, 14), new THREE.MeshStandardMaterial({ color: vip ? '#a3201a' : '#7d1a12', roughness: 0.78 }));
-  pad.scale.set(0.72, 0.13, 0.52);
+  pad.scale.set(0.38, 0.12, 0.30);
   pad.position.y = 0.06;
   g.add(pad);
   const trim = new THREE.Mesh(new THREE.TorusGeometry(0.5, 0.022, 8, 40), new THREE.MeshStandardMaterial(
     vip ? { color: '#e3b04b', metalness: 0.75, roughness: 0.3, emissive: '#5a3a08', emissiveIntensity: 0.4 } : { color: '#4a0e08', roughness: 0.8 }));
   trim.rotation.x = Math.PI / 2;
-  trim.scale.set(0.72, 0.52, 1);
+  trim.scale.set(0.38, 0.30, 1);
   trim.position.y = 0.07;
   g.add(trim);
   g.position.copy(position);
   g.scale.setScalar(s);
   scene.add(g);
-  return 0.1 * s;
+  return 0.09 * s;
 }
 
 // Chuyển động thường trực: tượng toả hào quang (rực hơn khi có lễ lớn), lửa nến lung linh.

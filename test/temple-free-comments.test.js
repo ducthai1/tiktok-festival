@@ -12,6 +12,10 @@ test('commenting "mõ" strikes the wooden fish for free, once per few seconds pe
   assert.deepEqual(kinds(temple.handleEvent(chat(1, 'Gõ mõ'), 1000)), []); // chống spam
   assert.deepEqual(kinds(temple.handleEvent(chat(1, 'gõ mõ'), 3000)), ['mo']);
   assert.equal(temple.snapshot().totals.mo, 2);
+  // bình luận gõ mõ lễ phép cũng gõ được mõ
+  assert.deepEqual(kinds(temple.handleEvent(chat(3, 'xin gõ mõ'), 6000)), ['mo']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(4, 'gõ mõ ạ'), 7000)), ['mo']);
+  assert.deepEqual(kinds(temple.handleEvent(chat(5, 'thầy gõ mõ'), 8000)), ['mo']);
   // chữ khác có "mở"/"mơ" trong câu không bị coi là gõ mõ
   assert.ok(!kinds(temple.handleEvent(chat(2, 'mở thêm game đi'), 5000)).includes('mo'));
 });
