@@ -126,7 +126,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
     // dòng miễn phí đặt trên, rồi tới các bậc quà (stage-main ghép thêm ảnh quà thật)
-    legend: [['❤ · gõ mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu bình an', ' Ước bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
+    legend: [['❤ · gõ mõ', ' Gõ mõ'], ['a di đà phật', ' Vái Phật'], ['cầu bình an', ' Ước bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn ↓']],
     giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),

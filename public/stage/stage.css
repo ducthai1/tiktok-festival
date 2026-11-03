@@ -143,3 +143,31 @@ body { font-family: var(--font); color: var(--ink); }
 .label.welcomed { z-index: 5; }
 #sound-hint { position: absolute; top: 2px; left: 50%; transform: translateX(-50%); padding: 10px 22px; border-radius: 999px; border: 2px solid var(--gold); background: rgba(10, 6, 18, 0.85); color: #fff3c4; font: 700 20px var(--font); padding: 4px 16px; pointer-events: auto; cursor: pointer; }
 #sound-hint[hidden] { display: none; }
+
+/* Hai bảng gọn lại để không che tượng Phật (tượng ~x 380–700): rộng 252px, chữ nhỏ hơn; bảng Cách tham gia
+   lật 2 trang (MIỄN PHÍ / QUÀ — stage-hud.js setLegend) nên chỉ cao khoảng một nửa. */
+#howto, #board, #welcome { width: 252px; }
+#howto { padding: 10px 12px; gap: 7px; }
+#howto::before { font-size: 19px; letter-spacing: 1px; }
+#hint { font-size: 20px; line-height: 1.3; }
+#howto.gifts-page #hint { display: none; }
+#legend .page { display: grid; gap: 5px; animation: legend-in 420ms ease-out; }
+#legend .page:not(.on) { display: none; }
+@keyframes legend-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+#legend .item { font-size: 18px; padding: 3px 8px; gap: 6px; }
+#legend .item em.gifts { min-width: 58px; font-size: 19px; }
+#legend .item em.gifts img { width: 28px; height: 28px; }
+#board { padding: 10px 12px; }
+#board h3 { font-size: 20px; margin-bottom: 6px; letter-spacing: 1px; }
+#board ol { gap: 5px; }
+#board li { grid-template-columns: 24px 26px 1fr auto; gap: 6px; font-size: 18px; }
+#board li .rank { width: 24px; height: 24px; font-size: 16px; }
+#board li img, #board li .ava { width: 26px; height: 26px; }
+#welcome { min-height: 300px; padding: 16px 12px; gap: 10px; }
+#welcome .welcome-avatars img, #welcome .welcome-avatars .ava { width: 96px; height: 96px; }
+#welcome .name { font-size: 34px; }
+#welcome .kicker { font-size: 17px; letter-spacing: 3px; }
+/* bảng 252px: mỗi dòng vừa một hàng */
+#hint { font-size: 18px; white-space: nowrap; }
+#legend .item { font-size: 16px; white-space: nowrap; }
+#board h3 { font-size: 16px; letter-spacing: 0; white-space: nowrap; }

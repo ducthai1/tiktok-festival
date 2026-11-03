@@ -14,6 +14,9 @@ export function formatNumber(n) {
   return new Intl.NumberFormat('vi-VN').format(Math.round(n || 0));
 }
 
+const LEGEND_PAGE_MS = 7000; // bảng Cách tham gia lật trang mỗi 7 giây
+let legendTimer = 0;
+
 export function createHud() {
   const toastRoot = $('toasts');
   const combos = new Map(); // key → { node, text, total, timer }
@@ -58,7 +61,7 @@ export function createHud() {
     setLegend(items, visible) {
       const root = $('legend');
       root.classList.toggle('off', !visible);
-      root.replaceChildren(...items.map(([key, value]) => {
+      const row = ([key, value]) => {
         const item = el('div', 'item');
         const em = el('em', Array.isArray(key) ? 'gifts' : '');
         if (Array.isArray(key)) {
@@ -74,7 +77,26 @@ export function createHud() {
         } else em.textContent = key;
         item.append(em, document.createTextNode(value));
         return item;
+      };
+      // Bảng gọn để không che tượng Phật: 2 trang tự lật — MIỄN PHÍ (bình luận, tim, follow) và QUÀ (dòng 🎁 + các bậc quà)
+      const isGift = ([key]) => Array.isArray(key) || String(key).startsWith('🎁');
+      const pages = [items.filter((it) => !isGift(it)), items.filter(isGift)].filter((p) => p.length);
+      clearInterval(legendTimer);
+      root.replaceChildren(...pages.map((p, i) => {
+        const page = el('div', `page${i === 0 ? ' on' : ''}`);
+        page.append(...p.map(row));
+        return page;
       }));
+      const howto = $('howto');
+      howto.classList.remove('gifts-page');
+      if (pages.length > 1) {
+        let at = 0;
+        legendTimer = setInterval(() => {
+          at = (at + 1) % pages.length;
+          [...root.children].forEach((page, i) => page.classList.toggle('on', i === at));
+          howto.classList.toggle('gifts-page', at === pages.length - 1);
+        }, LEGEND_PAGE_MS);
+      }
     },
     /**
      * Thông báo cộng dồn: cùng key (vd cùng người + cùng quà) thì sửa dòng đang hiện (×1 → ×2 → ×3) và
