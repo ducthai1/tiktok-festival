@@ -1,6 +1,7 @@
-// Chuông đồng treo bên phải chánh điện + mõ gỗ đặt ở đầu trái bàn thờ (ảnh tách từ tranh sư thỉnh
-// chuông / gõ mõ). Cả hai nằm trong dải giữa màn hình — phía trên hàng người quỳ, dưới thanh tiêu đề của
-// TikTok — nên không bị bình luận hay nút bấm che.
+// Chuông đồng treo bên phải chánh điện, mõ gỗ đặt ở đầu phải bàn thờ ngay dưới chuông (ảnh tách từ tranh sư thỉnh
+// chuông / gõ mõ). Cả hai ở cột bên PHẢI: trên điện thoại, TikTok cho quà bay vào ở nửa trái (y ~900–1150)
+// và bình luận ở 70% trái (y ~1150–1700), còn hai mép bị cắt ~108px mỗi bên (màn 20:9) — mõ ở đầu trái
+// bàn thờ như trước bị quà che mất.
 // - Thỉnh chuông: chuông lắc như con lắc thật (tắt dần), ánh vàng loé ra từ thân chuông, hạt sáng bắn ra.
 // - Gõ mõ: dùi gõ xuống, mõ nảy nhẹ, loé sáng nhỏ.
 import * as THREE from '/vendor/three/three.module.js';
@@ -8,8 +9,8 @@ import { templeArt } from './temple-art.js';
 import { glowSprite } from './temple-painted-hall.js';
 import { screenPoint } from './temple-view.js';
 
-const BELL = { x: 0.85, top: 0.375, depth: 10.5, height: 1.6 }; // móc treo ở (x, top) trên khung hình
-const MO = { x: 0.29, table: 0.522, depth: 12.3, width: 0.95 }; // mõ ngồi trên bậc trên của bàn thờ (cạnh nến trái), cao hơn nhãn tên hàng quỳ
+const BELL = { x: 0.83, top: 0.36, depth: 10.5, height: 1.3 }; // móc treo ở (x, top); mép phải chuông < 972px (vùng điện thoại không cắt)
+const MO = { x: 0.74, table: 0.522, depth: 12.3, width: 0.9 }; // mõ trên bậc trên bàn thờ, đầu phải (cạnh bình sen), ngay dưới chuông — cao hơn hàng người quỳ
 const SWING = 0.17; // biên độ lắc (rad) khi bị đánh
 
 function spriteMesh(prop, width, height, anchorX, anchorY) {

@@ -7,6 +7,9 @@
   --panel-line: rgba(255, 211, 107, 0.35);
   --accent: #ff4fa3;
   --font: "Segoe UI", "Be Vietnam Pro", "Noto Sans", system-ui, sans-serif;
+  /* Lề an toàn hai bên: TikTok phóng video 9:16 cho đầy chiều cao điện thoại màn dài nên cắt mất
+     ~97px (19,5:9) đến ~108px (20:9) mỗi bên của khung 1080. Mọi chữ/bảng đặt từ đây vào trong. */
+  --safe-x: 116px;
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
@@ -37,14 +40,14 @@ body { font-family: var(--font); color: var(--ink); }
    ⇒ mọi chữ/bảng của game nằm trong dải 232–1150px; phần dưới chỉ để cảnh (nhân vật, sàn). */
 
 /* Thanh trên: ngay dưới thanh tiêu đề của TikTok */
-#topbar { position: absolute; top: 232px; left: 28px; right: 28px; display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+#topbar { position: absolute; top: 232px; left: var(--safe-x); right: var(--safe-x); display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
 #title { padding: 10px 22px; border-radius: 20px; background: var(--panel); border: 2px solid var(--panel-line); font-size: 34px; font-weight: 900; letter-spacing: 1px; color: var(--gold); text-shadow: 0 0 20px rgba(255, 190, 60, 0.6); backdrop-filter: blur(6px); }
 #stats { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
 .chip { padding: 8px 18px; border-radius: 999px; background: var(--panel); border: 2px solid var(--panel-line); font-size: 25px; font-weight: 800; white-space: nowrap; }
 
 /* Hai bảng hai bên, giữa màn (như game chùa mẫu): trái "Cách tham gia", phải bảng xếp hạng.
    Game có thanh tiến trình (bar, bơi) thì hai bảng lùi xuống dưới thanh đó. */
-#board { position: absolute; right: 28px; top: 352px; width: 340px; padding: 14px 16px; border-radius: 26px; background: var(--panel); border: 2px solid var(--panel-line); backdrop-filter: blur(6px); }
+#board { position: absolute; right: var(--safe-x); top: 352px; width: 340px; padding: 14px 16px; border-radius: 26px; background: var(--panel); border: 2px solid var(--panel-line); backdrop-filter: blur(6px); }
 #board:empty { display: none; }
 #board h3 { margin: 0 0 10px; font-size: 24px; color: var(--gold); text-align: center; letter-spacing: 2px; }
 #board ol { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
@@ -59,13 +62,13 @@ body { font-family: var(--font); color: var(--ink); }
 
 /* Thông báo, gợi ý, chú thích quà */
 /* thông báo của game: bên PHẢI, dưới bảng — bên trái là chỗ TikTok hiện thông báo quà */
-#toasts { position: absolute; right: 28px; top: 1040px; width: 560px; align-items: flex-end; display: flex; flex-direction: column; gap: 12px; }
+#toasts { position: absolute; right: var(--safe-x); top: 1040px; width: 560px; align-items: flex-end; display: flex; flex-direction: column; gap: 12px; }
 .toast { display: flex; align-items: center; gap: 12px; padding: 12px 20px; border-radius: 20px; background: linear-gradient(90deg, rgba(255, 79, 163, 0.9), rgba(122, 92, 255, 0.85)); font-size: 27px; font-weight: 800; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); animation: slide-in 300ms ease-out; }
 .toast.gold { background: linear-gradient(90deg, rgba(200, 144, 42, 0.95), rgba(120, 60, 0, 0.9)); }
 .toast img { width: 44px; height: 44px; border-radius: 10px; }
 @keyframes slide-in { from { transform: translateX(-60px); opacity: 0; } to { transform: none; opacity: 1; } }
 /* "Cách tham gia": lệnh gõ + chú thích quà gộp một bảng bên trái (đáy màn bị bình luận TikTok che) */
-#howto { position: absolute; left: 28px; top: 352px; width: 340px; padding: 14px 16px; border-radius: 22px; background: var(--panel); border: 2px solid var(--panel-line); display: flex; flex-direction: column; gap: 10px; backdrop-filter: blur(6px); }
+#howto { position: absolute; left: var(--safe-x); top: 352px; width: 340px; padding: 14px 16px; border-radius: 22px; background: var(--panel); border: 2px solid var(--panel-line); display: flex; flex-direction: column; gap: 10px; backdrop-filter: blur(6px); }
 #howto::before { content: "CÁCH THAM GIA"; font-size: 22px; font-weight: 900; letter-spacing: 2px; text-align: center; color: var(--gold); }
 #game-hud:not(:empty) ~ #board, #game-hud:not(:empty) ~ #howto, #game-hud:not(:empty) ~ #test-badge { top: 470px; }
 #hint { font-size: 23px; font-weight: 700; line-height: 1.4; white-space: pre-line; }
@@ -77,7 +80,7 @@ body { font-family: var(--font); color: var(--ink); }
 #legend .item em.gifts { display: inline-flex; gap: 2px; min-width: 70px; font-size: 22px; }
 #legend .item em.gifts img { width: 34px; height: 34px; object-fit: contain; }
 
-#banner { position: absolute; left: 20px; right: 20px; top: 560px; text-align: center; font-size: 64px; line-height: 1.1; font-weight: 900; color: #fff; opacity: 0; text-shadow: 0 0 30px rgba(255, 200, 80, 0.9), 0 6px 20px #000; transform: scale(0.7); transition: opacity 260ms, transform 260ms; }
+#banner { position: absolute; left: var(--safe-x); right: var(--safe-x); top: 560px; text-align: center; font-size: 64px; line-height: 1.1; font-weight: 900; color: #fff; opacity: 0; text-shadow: 0 0 30px rgba(255, 200, 80, 0.9), 0 6px 20px #000; transform: scale(0.7); transition: opacity 260ms, transform 260ms; }
 #banner.show { opacity: 1; transform: scale(1); }
 #banner small { display: block; font-size: 42px; margin-top: 10px; color: var(--gold); }
 
@@ -85,7 +88,7 @@ body { font-family: var(--font); color: var(--ink); }
 #offline { position: absolute; bottom: 50%; left: 50%; transform: translateX(-50%); padding: 14px 28px; border-radius: 16px; background: rgba(0, 0, 0, 0.7); font-size: 28px; }
 
 /* Thanh tiến trình dùng chung (độ quẩy, quãng đường) */
-.meter { position: absolute; left: 28px; right: 28px; top: 350px; padding: 16px 22px; border-radius: 24px; background: var(--panel); border: 2px solid var(--panel-line); }
+.meter { position: absolute; left: var(--safe-x); right: var(--safe-x); top: 350px; padding: 16px 22px; border-radius: 24px; background: var(--panel); border: 2px solid var(--panel-line); }
 .meter .row { display: flex; justify-content: space-between; font-size: 28px; font-weight: 800; margin-bottom: 10px; }
 .meter .bar { position: relative; height: 26px; border-radius: 13px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
 .meter .fill { position: absolute; inset: 0 auto 0 0; width: 0; border-radius: 13px; background: linear-gradient(90deg, #ff4fa3, #ffd36b); transition: width 300ms ease; }
@@ -95,7 +98,7 @@ body { font-family: var(--font); color: var(--ink); }
 @keyframes rainbow { to { background-position: 200% 0; } }
 
 /* Tờ giải quẻ (chùa) */
-#fortune { position: absolute; left: 90px; right: 90px; top: 340px; padding: 40px 46px; border-radius: 24px; color: #4a1d06; text-align: center; background: linear-gradient(180deg, #fff6dc, #f3dca8); border: 6px double #b0461c; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 200, 90, 0.5); animation: unfold 600ms ease-out; }
+#fortune { position: absolute; left: var(--safe-x); right: var(--safe-x); top: 340px; padding: 40px 46px; border-radius: 24px; color: #4a1d06; text-align: center; background: linear-gradient(180deg, #fff6dc, #f3dca8); border: 6px double #b0461c; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 200, 90, 0.5); animation: unfold 600ms ease-out; }
 @keyframes unfold { from { transform: scaleY(0.1); opacity: 0; } to { transform: none; opacity: 1; } }
 #fortune .fortune-rank { display: inline-block; padding: 6px 22px; border-radius: 999px; background: #b0461c; color: #ffe8b0; font-size: 28px; font-weight: 900; letter-spacing: 2px; }
 #fortune h2 { margin: 18px 0 6px; font-size: 52px; font-family: Georgia, "Times New Roman", serif; }
@@ -110,7 +113,7 @@ body { font-family: var(--font); color: var(--ink); }
 /* Chào mừng người mới: thẻ lớn cho từng người / cả đoàn, dòng chữ khi phòng quá đông */
 /* thẻ chào: phủ tạm lên bảng "Cách tham gia" (cùng chỗ, cùng cỡ) để dải giữa màn — nơi có chuông, mõ,
    băng rôn — không bao giờ bị che; chào xong thẻ rút đi, bảng hiện lại */
-#welcome { position: absolute; z-index: 2; left: 28px; top: 352px; width: 340px; min-height: 430px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 22px 18px; text-align: center; border-radius: 30px; background: linear-gradient(160deg, rgba(58, 18, 92, 0.94), rgba(150, 38, 96, 0.92)); border: 3px solid var(--gold); box-shadow: 0 0 60px rgba(255, 200, 80, 0.55), 0 24px 60px rgba(0, 0, 0, 0.5); overflow: hidden; }
+#welcome { position: absolute; z-index: 2; left: var(--safe-x); top: 352px; width: 340px; min-height: 430px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 22px 18px; text-align: center; border-radius: 30px; background: linear-gradient(160deg, rgba(58, 18, 92, 0.94), rgba(150, 38, 96, 0.92)); border: 3px solid var(--gold); box-shadow: 0 0 60px rgba(255, 200, 80, 0.55), 0 24px 60px rgba(0, 0, 0, 0.5); overflow: hidden; }
 #game-hud:not(:empty) ~ #welcome { top: 470px; }
 #welcome[hidden] { display: none; }
 #welcome.show { animation: welcome-in 560ms cubic-bezier(0.2, 1.4, 0.4, 1) both; }

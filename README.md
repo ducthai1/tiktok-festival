@@ -149,6 +149,8 @@ Khi nối live (nguồn tiktok-live-connector), server đọc **danh mục quà 
 
 Trên điện thoại người xem, TikTok phủ lên khung 1080×1920: thanh chủ phòng + người xem (0–230 px), thông báo quà bên trái (~900–1150 px), bình luận (~1150–1700 px, 70% bên trái), ô chat + nút quà (1720 px trở xuống), tim bay dọc mép phải. Vì vậy mọi chữ và bảng của game nằm trong dải 232–1150 px: tiêu đề + chỉ số ngay dưới thanh TikTok, **Cách tham gia** (lệnh gõ + bậc quà) bên trái và **bảng xếp hạng** bên phải ở giữa màn; thẻ chào người mới phủ tạm lên đúng chỗ bảng Cách tham gia rồi rút đi; băng rôn quà lớn có dải nền đậm, chữ màu đặc; thông báo của game bên phải. Phần dưới chỉ để cảnh.
 
+Điện thoại màn dài (19,5:9, 20:9) xem video 9:16 thì TikTok phóng cho đầy chiều cao nên **cắt mất ~97–108 px mỗi bên** của khung 1080. Mọi chữ/bảng đặt cách mép `--safe-x` = 116 px (`public/stage/stage.css`); chuông + mõ của chùa nằm ở cột phải (mép phải chuông < 972 px), mõ trên đầu phải bàn thờ — đầu trái bị thông báo quà của TikTok che.
+
 Hiệu ứng hạt có trần số lượng; cánh hoa và khói hương không cộng sáng, nên đông người vào hay nhiều quà lớn liền nhau cũng không bị chói trắng.
 
 ## Tranh và nhân vật của Chùa Online
