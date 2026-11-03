@@ -9,8 +9,8 @@ import { templeArt } from './temple-art.js';
 import { glowSprite } from './temple-painted-hall.js';
 import { screenPoint } from './temple-view.js';
 
-const BELL = { x: 0.83, top: 0.36, depth: 10.5, height: 1.3 }; // móc treo ở (x, top); mép phải chuông < 972px (vùng điện thoại không cắt)
-const MO = { x: 0.74, table: 0.522, depth: 12.3, width: 0.9 }; // mõ trên bậc trên bàn thờ, đầu phải (cạnh bình sen), ngay dưới chuông — cao hơn hàng người quỳ
+const BELL = { x: 0.82, top: 0.35, depth: 10.5, height: 1.1 }; // móc treo ở (x, top); mép phải chuông < 972px, đáy chuông cao hơn đỉnh mõ
+const MO = { x: 0.715, table: 0.522, depth: 12.3, width: 0.9 }; // mõ trên bậc trên bàn thờ, đầu phải (cạnh bình sen), dưới-trái chuông — không bị chuông che
 const SWING = 0.17; // biên độ lắc (rad) khi bị đánh
 
 function spriteMesh(prop, width, height, anchorX, anchorY) {

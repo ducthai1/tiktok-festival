@@ -50,7 +50,7 @@ const overlapArea = (a, b) => Math.max(0, Math.min(a.right, b.right) - Math.max(
 // nhãn nên nhãn chui xuống dưới là mất tên) và cụm chuông + mõ bên phải (temple-bell-and-mo.js).
 const LABEL_KEEP_OUT = [
   { left: 116, right: 460, top: 340, bottom: 948 },
-  { left: 735, right: 980, top: 690, bottom: 1010 }
+  { left: 700, right: 980, top: 665, bottom: 1010 }
 ];
 
 const toScreen = (box, sign) => (sign > 0

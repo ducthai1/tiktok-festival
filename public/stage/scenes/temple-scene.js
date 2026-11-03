@@ -42,7 +42,7 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   // tên người quỳ hiện ĐỦ: nhãn chạm nhau thì tự nhích lên/xuống, không đè bảng Cách tham gia hay chuông + mõ
   labels.setDeclutter('crowd', { top: 860, bottom: 1520, keepOut: LABEL_KEEP_OUT, gap: 3 });
   hud.setTitle('🪷 CHÙA ONLINE');
-  hud.setHint(['Gõ ', '*cầu …*', ' rồi tặng quà\nđể lời cầu bay lên hoa đăng\nQuà mở ', '*thắp hương*', ', ', '*xin xăm*', '…']);
+  hud.setHint(['*MIỄN PHÍ*', ' — gõ bình luận ↓']);
 
   // Phật tử vào chánh điện rồi đi lên chỗ quỳ, mặt hướng về bàn thờ.
   const crowd = createCrowd({
@@ -69,6 +69,14 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
   });
 
   const bowOne = (userId, seconds) => bowUntil.set(userId, clock + seconds);
+  const headAt = new THREE.Vector3();
+  function prayerLight(userId) {
+    const entry = crowd.get(userId);
+    if (!entry || entry.hidden) return;
+    entry.model.head.getWorldPosition(headAt);
+    particles.burst({ position: headAt.clone(), count: 14, colors: ['#fff6d8', '#ffe9a8', '#ffd36b'], speed: 0.18, spread: 0.6,
+      gravity: 0.35, life: 2.6, size: 0.07, damping: 0.985 });
+  }
   const helpers = {
     bowAll: (pose, seconds) => { bowAll = { pose, start: clock, until: clock + seconds }; },
     boostHalo: (seconds) => { haloUntil = Math.max(haloUntil, clock + seconds); },
@@ -116,7 +124,8 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
     scene,
     camera,
     toneMapping: THREE.NoToneMapping, // tranh vẽ đã có màu chuẩn: không nắn lại màu
-    legend: [['❤', ' Gõ mõ'], ['Follow', ' Thỉnh chuông']],
+    // dòng miễn phí đặt trên, rồi tới các bậc quà (stage-main ghép thêm ảnh quà thật)
+    legend: [['❤ · mõ', ' Gõ mõ'], ['lạy', ' Lạy Phật'], ['cầu …', ' Lời cầu bay lên'], ['Follow', ' Thỉnh chuông'], ['🎁 Quà', ' mở lễ lớn hơn ↓']],
     giftLabels: giftLabels(),
     welcome: { line: 'đã vào chánh điện 🙏 Gõ “cầu …” điều bạn mong', speech: (n) => `Chào mừng ${n} đến chánh điện, chúc bạn một ngày bình an` },
     probe: (id) => (id === '__fixtures' ? fixtures.state() : crowd.probe(id)),
@@ -154,7 +163,12 @@ export function createTempleScene({ hud, labels, audio, pipeline }) {
       else if (fx.kind === 'giftNote') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `${fx.nickname} tặng ${fx.giftName} ×${n} — 🎋 ${fx.note}`, { image: fx.giftPicture });
       } else if (fx.kind === 'incense') rituals.incense(fx);
-      else if (fx.kind === 'say') labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500); // bình luận: chỉ bong bóng chữ
+      else if (fx.kind === 'say') {
+        labels.bubble(fx.userId, fx.prayer ? `🙏 ${fx.text}` : fx.text, 4500);
+        if (fx.prayer) prayerLight(fx.userId); // lời cầu (miễn phí): đốm sáng vàng bay lên từ người cầu
+      } else if (fx.kind === 'bow') {
+        if (!crowd.busy(fx.userId)) bowOne(fx.userId, 3.4); // "lạy" (miễn phí): lạy Phật trên đệm
+      }
       else if (fx.kind === 'fortune') rituals.fortune(fx);
       else if (fx.kind === 'offering') rituals.offering(fx);
     },
