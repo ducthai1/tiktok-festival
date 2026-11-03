@@ -126,17 +126,22 @@ test('temple: gift tiers map to rituals (6 tiers by the price of ONE gift)', () 
   assert.deepEqual([9, 98, 498, 4999, 19999].map(offeringForGift), ['incense', 'fortune', 'lamp', 'fruit', 'ceremony']);
 });
 
-test('temple: top merit kneels in front, full hall evicts non-VIP', () => {
+test('temple: seats stay put, newcomers take free seats, full hall evicts non-VIP', () => {
   const temple = createTempleGame();
   for (let i = 0; i < TEMPLE_SLOTS; i += 1) temple.handleEvent(chat(i, 'chào'), i);
+  const seatOf = (snap, id) => snap.devotees.find((d) => d.id === id).slot;
+  assert.equal(seatOf(temple.snapshot(50), 'u29'), 29);
   temple.handleEvent(gift(29, 100), 100);
   const snap = temple.snapshot(100);
-  assert.equal(snap.devotees[0].id, 'u29');
-  assert.equal(snap.devotees[0].vip, true);
+  assert.equal(seatOf(snap, 'u29'), 29); // nhiều tâm thành: nhãn VIP, nhưng KHÔNG đổi chỗ
+  assert.equal(snap.devotees.find((d) => d.id === 'u29').vip, true);
   assert.equal(snap.board[0].points, 1001); // 1 bình luận (+1) + quà 100 xu (+1000)
   const fx = temple.handleEvent(chat(500, 'chào'), 200);
   assert.equal(fx[0].kind, 'leave');
   assert.notEqual(fx[0].userId, 'u29');
+  const after = temple.snapshot(200);
+  assert.equal(seatOf(after, 'u500'), seatOf(snap, fx[0].userId)); // người mới ngồi đúng chỗ vừa trống
+  for (const d of snap.devotees) if (d.id !== fx[0].userId) assert.equal(seatOf(after, d.id), d.slot); // ai cũng giữ chỗ
 });
 
 test('hub: only the active game gets events; switching keeps the other game state', () => {

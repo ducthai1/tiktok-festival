@@ -68,6 +68,7 @@ export function createTempleGame({ random = Math.random } = {}) {
   function ensureDevotee(user, now, fx, { engaged = true } = {}) {
     let devotee = devotees.get(user.id);
     if (!devotee) {
+      let seat = freeSeat();
       if (devotees.size >= TEMPLE_SLOTS) {
         const ranked = rankedDevotees();
         const out = ranked.slice(VIP_SLOTS)
@@ -76,8 +77,10 @@ export function createTempleGame({ random = Math.random } = {}) {
         if (!out) return null;
         devotees.delete(out.id);
         fx.push({ kind: 'leave', userId: out.id });
+        seat = out.seat; // người mới vào đúng chỗ vừa trống
       }
-      devotee = { id: user.id, joinOrder: joinSeq += 1, engaged: false };
+      // Chỗ ngồi CỐ ĐỊNH theo người: người mới tự đi tới chỗ trống gần bàn thờ nhất, người đang ngồi không bị dời
+      devotee = { id: user.id, joinOrder: joinSeq += 1, engaged: false, seat };
       devotees.set(user.id, devotee);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
     }
@@ -88,7 +91,13 @@ export function createTempleGame({ random = Math.random } = {}) {
     return devotee;
   }
 
-  // Hàng đầu: 6 người nhiều điểm nhất (có điểm > 0); sau đó theo thứ tự vào chùa.
+  function freeSeat() {
+    const taken = new Set([...devotees.values()].map((d) => d.seat));
+    for (let i = 0; i < TEMPLE_SLOTS; i += 1) if (!taken.has(i)) return i;
+    return TEMPLE_SLOTS - 1;
+  }
+
+  // Thứ hạng: 6 người nhiều điểm nhất (có điểm > 0) là VIP (nhãn vàng, không bị mời ra khi đầy); sau đó theo thứ tự vào chùa.
   function rankedDevotees() {
     const list = [...devotees.values()];
     const vip = list.filter((d) => (merit.get(d.id)?.points || 0) > 0)
@@ -215,10 +224,12 @@ export function createTempleGame({ random = Math.random } = {}) {
       const board = [...merit.values()].sort((a, b) => b.points - a.points).slice(0, 5);
       return {
         totals: { ...totals },
-        devotees: rankedDevotees().map((d, slot) => ({
-          id: d.id, nickname: d.nickname, avatar: d.avatar, slot, vip: slot < VIP_SLOTS && (merit.get(d.id)?.points || 0) > 0,
-          points: merit.get(d.id)?.points || 0
-        })),
+        devotees: (() => {
+          const vipIds = new Set(rankedDevotees().slice(0, VIP_SLOTS).filter((d) => (merit.get(d.id)?.points || 0) > 0).map((d) => d.id));
+          return [...devotees.values()].sort((a, b) => a.seat - b.seat).map((d) => ({
+            id: d.id, nickname: d.nickname, avatar: d.avatar, slot: d.seat, vip: vipIds.has(d.id), points: merit.get(d.id)?.points || 0
+          }));
+        })(),
         board: board.map(({ id, nickname, avatar, points }) => ({ id, nickname, avatar, points })),
         fortune: currentFortune ? { userId: currentFortune.userId, msLeft: Math.max(0, currentFortune.until - now) } : null,
         fortuneQueue: fortuneQueue.length
