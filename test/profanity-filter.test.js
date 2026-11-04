@@ -38,3 +38,17 @@ test('names are tidied so the voice says them clearly, with a pause after the na
     'Đại gia Be Na! Cảm ơn bạn đã tặng Sư tử! Đại nhạc hội bắt đầu! Cả sàn cháy hết mình nào!');
   assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Cảm ơn Lan Anh, đã follow sàn nhảy! Mời bạn lên sân khấu!');
 });
+
+test('every paid gift is thanked once per combo, each line in one of the three voices at random', async () => {
+  const { pickVoice, TTS_VOICES } = await import('../public/shared/tts-voices.js');
+  const { createGiftVoice } = await import('../public/stage/scenes/dance-voice-lines.js');
+  assert.deepEqual(new Set(Array.from({ length: 60 }, (_, i) => pickVoice('random', () => (i % 3) / 3 + 0.01))), new Set(TTS_VOICES));
+  assert.equal(pickVoice('Adam bựa'), 'Ngọc Huyền');
+  assert.equal(pickVoice('Trúc Ly'), 'Trúc Ly');
+  const said = [];
+  const voice = createGiftVoice((line) => said.push(line), { settleMs: 30 });
+  for (let i = 0; i < 4; i += 1) voice.add({ userId: 'u1', nickname: 'Lan Anh', giftName: 'Hoa hồng', count: i === 0 ? 1 : 3, tier: 1 });
+  voice.add({ userId: 'u2', nickname: 'Minh', giftName: 'Corgi', count: 1, tier: 3 });
+  await new Promise((r) => setTimeout(r, 80));
+  assert.deepEqual(said.sort(), ['Cảm ơn Lan Anh, đã tặng 10 Hoa hồng!', 'Cảm ơn Minh, đã tặng Corgi!']);
+});

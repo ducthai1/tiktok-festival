@@ -147,7 +147,7 @@ export function createStageAudio() {
         musicVolume: Number.isFinite(settings.musicVolume) ? settings.musicVolume : 0.35,
         tts: settings.tts === true,
         ttsWelcome: settings.ttsWelcome === true,
-        ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'Ngọc Huyền'
+        ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'random'
       });
       if (!opts.tts && !opts.ttsWelcome) speech.clear();
       applyLevels();

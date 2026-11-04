@@ -8,7 +8,7 @@ import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
-import { thankLine } from './dance-voice-lines.js';
+import { createGiftVoice, thankLine } from './dance-voice-lines.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -55,9 +55,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const bigGift = createGiftAnnouncer(hud, {
     onShow(fx) {
       sounds.announce();
-      audio.speak(thankLine(fx), 'story');
+      if (fx.kind === 'follow') audio.speak(thankLine(fx), 'story'); // quà được đọc riêng (giftVoice, gộp combo)
     }
   });
+  const giftVoice = createGiftVoice((line) => audio.speak(line, 'story')); // mọi quà tốn kim cương đều được cảm ơn
   // có video DJ: chiếu trên màn LED lớn sau sân khấu
   const djPanel = createDjPanel(hud, { onVideo: (video) => room.setScreenVideo(video) });
   let lastBeat = 0;
@@ -226,6 +227,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture, title: fx.nickname });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
         sounds.gift(fx.tier);
+        giftVoice.add(fx);
         bigGift.show(fx);
         markRecent(fx.userId);
         if (fx.tier === 1) glance(fx.userId);
@@ -271,6 +273,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       if (Math.floor(t * 4) !== Math.floor((t - dt) * 4)) refreshLabels(); // 4 lần/giây: camera zoom tới ai là tên hiện ngay
     },
     dispose() {
+      giftVoice.clear();
       crowd.dispose();
       djPanel.dispose();
       bigGift.dispose();

@@ -1,5 +1,5 @@
-// Câu giọng đọc cảm ơn ở Sàn Nhảy — quà càng to câu càng "VIP" (chỉ đọc từ quà 99 💎 trở lên + follow, quà nhỏ không đọc
-// để khỏi ồn). Sau TÊN có dấu phẩy ("Cảm ơn Bé Na, đã tặng…") để giọng đọc ngắt một nhịp — tên không trôi tuột giữa câu
+// Câu giọng đọc cảm ơn ở Sàn Nhảy — MỌI quà tốn kim cương đều được cảm ơn (quà combo gộp thành một câu), quà càng to câu
+// càng "VIP". Sau TÊN có dấu phẩy ("Cảm ơn Bé Na, đã tặng…") để giọng đọc ngắt một nhịp — tên không trôi tuột giữa câu
 // (user không muốn kiểu gọi "… ơi"). Tên qua speakableName (chuẩn hoá để đọc rõ; có từ bẩn thì không đọc tên).
 import { speakableGift, speakableName } from '../../shared/spoken-name.js';
 
@@ -12,4 +12,28 @@ export function thankLine(fx) {
   if (fx.tier >= 5) return `${name ? `Siêu sao ${name}! Cảm ơn bạn` : 'Cảm ơn siêu sao'} đã tặng ${gift}! Cả sàn quẩy lên nào!`;
   if (fx.tier >= 4) return `Quá đỉnh! ${thanks} đã tặng ${gift}! Mời VIP lên sân khấu!`;
   return `${thanks} đã tặng ${gift}!`;
+}
+
+// Quà combo: TikTok gửi nhiều lượt (×1, ×2, ×3…) — gộp theo người + món, đọc MỘT câu với tổng số khi người tặng ngừng bấm
+// ~1,2 giây ("Cảm ơn Lan Anh, đã tặng 10 Hoa hồng!") thay vì đọc 10 lần.
+export function createGiftVoice(say, { settleMs = 1200 } = {}) {
+  const pending = new Map();
+  return {
+    add(fx) {
+      const key = `${fx.userId}|${fx.giftName}`;
+      const item = pending.get(key) || { fx: { ...fx, count: 0, tier: 1 }, timer: 0 };
+      item.fx.count += fx.count || 1;
+      item.fx.tier = Math.max(item.fx.tier, fx.tier || 1);
+      clearTimeout(item.timer);
+      item.timer = setTimeout(() => {
+        pending.delete(key);
+        say(thankLine(item.fx));
+      }, settleMs);
+      pending.set(key, item);
+    },
+    clear() {
+      for (const item of pending.values()) clearTimeout(item.timer);
+      pending.clear();
+    }
+  };
 }

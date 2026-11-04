@@ -1,7 +1,7 @@
 // Xử lý lệnh từ trang điều khiển (đã qua kiểm token ở socket-hub). Mọi tham số được
 // kiểm lại ở đây; lệnh sai trả lỗi chứ không làm sập server.
 import { buildTestEvent } from './games/test-event-factory.js';
-import { TTS_VOICES } from './tts/tts-bridge.js';
+import { isVoiceSetting } from '../public/shared/tts-voices.js';
 
 const GAME_COMMANDS = {
   boss: ['resetBoss', 'killBoss', 'frenzy'],
@@ -75,7 +75,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     settings(msg) {
       const patch = {};
       for (const key of ['tts', 'ttsWelcome', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
-      if (TTS_VOICES.includes(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice;
+      if (isVoiceSetting(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice; // tên giọng hoặc "random"
       for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) patch[key] = Math.max(0, Math.min(1, msg[key]));
       if (Number.isFinite(msg.welcomeTextAbove)) {
         patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));

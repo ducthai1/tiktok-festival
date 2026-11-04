@@ -1,6 +1,8 @@
 // Giọng đọc trên màn hình: hỏi máy chủ /api/tts (VieNeu-TTS chạy ngay trên máy) → phát qua WebAudio nên OBS thu được,
 // nhạc nền nhỏ lại trong lúc đọc. Máy chủ chưa có giọng đọc (503) → thử giọng có sẵn của trình duyệt (Windows có giọng
 // Việt; OBS trên Linux thì không có giọng nào). Đọc lần lượt, hàng chờ tối đa 5 câu (quà dồn không đọc trễ cả phút).
+import { pickVoice } from '../shared/tts-voices.js';
+
 const QUEUE_MAX = 5;
 
 export function createSpeech({ context, output, duck, options }) {
@@ -8,7 +10,8 @@ export function createSpeech({ context, output, duck, options }) {
   let busy = false;
 
   async function viaServer(text) {
-    const { voice, gain } = options();
+    const { gain } = options();
+    const voice = pickVoice(options().voice); // "random" → mỗi câu một giọng
     const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(voice)}`);
     if (!res.ok) return false;
     const ctx = context();

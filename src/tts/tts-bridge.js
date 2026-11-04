@@ -11,8 +11,10 @@ import { fileURLToPath } from 'node:url';
 import { createRateLimiter, securityHeaders } from '../http/security.js';
 import { isCleanForDisplay } from '../../public/shared/profanity-filter.js';
 
-// giọng VieNeu dùng cho live (bỏ "Adam bựa" theo ý user); giọng đầu là mặc định
-export const TTS_VOICES = ['Ngọc Huyền', 'Trúc Ly', 'Hải Đăng'];
+// giọng VieNeu dùng cho live (bỏ "Adam bựa" theo ý user) — danh sách chung với màn hình
+import { TTS_VOICES } from '../../public/shared/tts-voices.js';
+
+export { TTS_VOICES };
 export const DEFAULT_TTS_PYTHON = path.join(os.homedir(), '.local/share/tiktok-live-games/tts-env/bin/python');
 const SCRIPT = fileURLToPath(new URL('../../tools/tts/vieneu-tts-server.py', import.meta.url));
 const MAX_CHARS = 200;

@@ -11,6 +11,7 @@ import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
+import { isVoiceSetting } from '../public/shared/tts-voices.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
 
@@ -33,7 +34,7 @@ function loadSettings(dataDir) {
   try {
     const saved = JSON.parse(fs.readFileSync(path.join(dataDir, 'settings.json'), 'utf8'));
     const settings = { ...DEFAULT_SETTINGS, ...(saved && typeof saved === 'object' ? saved : {}) };
-    if (!TTS_VOICES.includes(settings.ttsVoice)) settings.ttsVoice = TTS_VOICES[0]; // giọng đã bỏ / gõ sai → giọng mặc định
+    if (!isVoiceSetting(settings.ttsVoice)) settings.ttsVoice = TTS_VOICES[0]; // giọng đã bỏ / gõ sai → giọng mặc định
     return settings;
   } catch {
     return { ...DEFAULT_SETTINGS };

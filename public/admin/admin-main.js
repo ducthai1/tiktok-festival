@@ -1,5 +1,6 @@
 // Trang điều khiển: đăng nhập bằng token, kết nối live, đổi game, thử, cài đặt màn hình.
 import { connectLiveSocket } from '/static/shared/live-socket-client.js';
+import { pickVoice } from '/static/shared/tts-voices.js';
 import { createDemoRunner, renderDemoButtons } from './admin-demo-scenarios.js';
 import { setupTestPanel } from './admin-test-panel.js';
 import { SAMPLE_GIFTS, giftTier } from '/static/shared/gift-tiers.js';
@@ -204,8 +205,10 @@ $('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoic
 // Nghe thử giọng ngay trên trang này (máy chủ đọc bằng VieNeu; lần đầu mỗi câu mất 1–3 giây)
 $('tts-preview').addEventListener('click', async () => {
   const text = 'Quá đỉnh! Cảm ơn Minh Tuấn, đã tặng 5 Hoa hồng! Mời VIP lên sân khấu!';
-  const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent($('set-ttsVoice').value)}`).catch(() => null);
+  const voice = pickVoice($('set-ttsVoice').value);
+  const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(voice)}`).catch(() => null);
   if (!res?.ok) return toast(res ? await res.text() : 'Không kết nối được máy chủ', true);
+  toast(`🔊 ${voice}`);
   new Audio(URL.createObjectURL(await res.blob())).play().catch(() => toast('Trình duyệt chặn phát tiếng — bấm lại'));
 });
 for (const key of ['volume', 'musicVolume']) {
