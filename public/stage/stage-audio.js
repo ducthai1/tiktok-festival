@@ -27,8 +27,12 @@ export function createStageAudio() {
     if (!ctx) {
       ctx = new AudioContext();
       const limiter = ctx.createDynamicsCompressor();
-      limiter.threshold.value = -10;
-      limiter.ratio.value = 6;
+      // chặn đỉnh: kèn + hò reo + giọng đọc vang cùng lúc từng chạm 0 dB (rè trên luồng live) — bắt tiếng đột ngột ngay
+      limiter.threshold.value = -9;
+      limiter.knee.value = 0;
+      limiter.ratio.value = 20;
+      limiter.attack.value = 0.001;
+      limiter.release.value = 0.2;
       master = ctx.createGain();
       sfxBus = ctx.createGain();
       musicBus = ctx.createGain();
@@ -86,7 +90,7 @@ export function createStageAudio() {
   }
 
   const speech = createSpeech({ context: audio, output: () => master, duck,
-    options: () => ({ voice: opts.ttsVoice, gain: Math.min(1, opts.volume + 0.3) }) });
+    options: () => ({ voice: opts.ttsVoice, gain: Math.min(0.9, opts.volume + 0.2) }) });
 
   return {
     // Trình duyệt thường chặn âm thanh tới khi người dùng bấm vào trang; OBS thì không chặn.
