@@ -14,3 +14,4 @@ public/assets/dance/dj/
 
 # nhạc nền Sàn Nhảy (file lớn, tải lại theo public/assets/dance/music/NGUON-NHAC.txt)
 public/assets/dance/music/*.mp3
+public/assets/dance/sfx/*.mp3
