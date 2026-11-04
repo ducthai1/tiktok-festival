@@ -14,6 +14,9 @@ const SHOT_BARS = [8, 7, 6, 5.5, 5.5, 5.5, 2.5, 6];
 // lúc không theo ai: camera trượt như trên ray — lọc mũ HAI tầng (đích → điểm trượt → camera) nên đổi góc thì tăng tốc từ từ,
 // hãm từ từ, không vọt ngay khung đầu. Hệ số nhỏ = chậm hơn.
 const GLIDE_K = 1.1;
+// góc đổi theo ĐỒNG HỒ RIÊNG của camera (1 ô nhịp = nhịp chuẩn 124 BPM), KHÔNG theo nhịp bài đang phát: nhịp bài về 0 khi
+// đổi bài (camera đứng im cả phút chờ "đuổi kịp") và nhảy vọt khi chen nhạc quà lớn (cắt liền mấy góc)
+const SEC_PER_BAR = (4 * 60) / 124;
 
 export function createCameraDirector(camera) {
   const look = new THREE.Vector3(0, 1.2, -1);
@@ -24,7 +27,7 @@ export function createCameraDirector(camera) {
   const glideLook = new THREE.Vector3();
   let shot = 0;
   let cycle = 0;
-  let shotStartBeat = 0;
+  let shotStart = null; // giây (đồng hồ cảnh) lúc bắt đầu góc hiện tại
   let focus = null; // { get: () => Vector3 | null, until, startedAt, mode: 'solo'|'glance'|'reveal'|'chase' }
   let wasFocusing = false;
 
@@ -98,7 +101,7 @@ export function createCameraDirector(camera) {
     release() {
       focus = null;
     },
-    update(dt, now, beat, crowd, podium) {
+    update(dt, now, _beat, crowd, podium) {
       let fov = 50;
       const at = focus && now < focus.until ? focus.get() : null;
       if (at) {
@@ -133,19 +136,17 @@ export function createCameraDirector(camera) {
           fov = 40;
         }
       } else {
-        if (wasFocusing) {
-          shot = 0;
-          shotStartBeat = beat;
+        if (wasFocusing || shotStart === null || now < shotStart) {
+          if (wasFocusing) shot = 0;
+          shotStart = now;
           wasFocusing = false;
         }
-        let shotBeats = SHOT_BARS[shot] * 4;
-        while (beat - shotStartBeat >= shotBeats) {
-          shotStartBeat += shotBeats;
+        if (now - shotStart >= SHOT_BARS[shot] * SEC_PER_BAR) { // mỗi lần chỉ sang MỘT góc — không bao giờ cắt liền nhiều góc
+          shotStart = now;
           shot = (shot + 1) % SHOT_BARS.length;
           if (shot === 0) cycle += 1;
-          shotBeats = SHOT_BARS[shot] * 4;
         }
-        fov = directorShot(THREE.MathUtils.clamp((beat - shotStartBeat) / shotBeats, 0, 1), crowd, podium);
+        fov = directorShot(THREE.MathUtils.clamp((now - shotStart) / (SHOT_BARS[shot] * SEC_PER_BAR), 0, 1), crowd, podium);
       }
       // ghé cận lướt vào chậm hơn (đỡ giật mắt); solo / xe bay cần bám nhanh nên giữ 3,6
       const blend = 1 - Math.exp(-(at ? (focus.mode === 'glance' ? 2.2 : 3.6) : GLIDE_K) * dt);
