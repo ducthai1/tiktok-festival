@@ -171,10 +171,16 @@ test('bậc quà theo giá MỘT món: 30 Hoa hồng vẫn là quà nhỏ, 1 Sư
   assert.equal(lion.tier, 6);
 });
 
-test('quà đại diện mỗi bậc: lấy món rẻ nhất trong bậc, đủ 6 bậc với quà mẫu', () => {
+test('quà đại diện mỗi bậc: Hoa hồng cho bậc 1, các bậc khác là món dễ nhận ra giá gần mốc trên', () => {
   const reps = tierRepresentatives(SAMPLE_GIFTS, 2);
   assert.equal(reps.length, 6);
-  assert.equal(reps[0].gifts[0].name, 'Hoa hồng');
+  assert.deepEqual(reps.map((r) => r.gifts[0].name), ['Hoa hồng', 'Bánh donut', 'Corgi', 'Máy bay riêng', 'Chim ưng', 'Sư tử']);
+  // danh mục thật của phòng (tên tiếng Việt, không có tên tiếng Anh) vẫn nhận ra món chọn sẵn
+  const real = [{ name: 'Máy bay riêng', coins: 4888, image: 'https://p16-webcast.tiktokcdn.com/img/x.webp' },
+    { name: 'Quà lạ', coins: 4999, image: 'https://p16-webcast.tiktokcdn.com/img/y.webp' }];
+  assert.equal(tierRepresentatives(real, 1)[3].gifts[0].name, 'Máy bay riêng');
+  // giá vùng khác đẩy món chọn sẵn sang bậc khác → bậc đó dùng món giá gần mốc trên
+  assert.equal(tierRepresentatives([{ name: 'Private Jet', coins: 6000 }, { name: 'Swan', coins: 699 }, { name: 'Train', coins: 899 }], 1)[3].gifts[0].name, 'Train');
   assert.ok(reps.every((r) => r.gifts.length > 0));
   assert.ok(reps[5].gifts.every((g) => g.coins >= 20000));
   // ảnh quà mẫu là ảnh chính thức trên máy chủ ảnh TikTok (được phép trong CSP img-src)

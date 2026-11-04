@@ -5,8 +5,8 @@
 //   1   (1–9 xu)        Hoa hồng, TikTok, GG, Kem, Bắn tim
 //   2   (10–98)         Rosa, Nước hoa, Bánh donut
 //   3   (99–498)        Mũ, Tay tim, Pháo giấy, Kính râm, Corgi
-//   4   (499–4.999)     Súng tiền, Thiên nga, Dải ngân hà, Pháo hoa, Mô tô
-//   5   (5.000–19.999)  Drama Queen, Siêu xe, Liên hành tinh
+//   4   (499–4.999)     Súng tiền, Thiên nga, Dải ngân hà, Pháo hoa, Mô tô, Máy bay riêng
+//   5   (5.000–19.999)  Drama Queen, Siêu xe, Liên hành tinh, Chim ưng
 //   6   (≥ 20.000)      Tên lửa, Sư tử, Vũ trụ TikTok
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
@@ -40,8 +40,10 @@ export const SAMPLE_GIFTS = [
   { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299, image: `${CDN}maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp` },
   { id: 'galaxy', name: 'Dải ngân hà', en: 'Galaxy', emoji: '🌌', coins: 1000, image: `${CDN}maliva/webcast-va/resource/79a02148079526539f7599150da9fd28.png~tplv-obj.webp` },
   { id: 'fireworks', name: 'Pháo hoa', en: 'Fireworks', emoji: '🎆', coins: 1088, image: `${CDN}maliva/webcast-va/9494c8a0bc5c03521ef65368e59cc2b8~tplv-obj.webp` },
+  { id: 'private-jet', name: 'Máy bay riêng', en: 'Private Jet', emoji: '✈️', coins: 4888, image: `${CDN}alisg/webcast-sg/airplane_icon_gold.png~tplv-obj.webp` },
   { id: 'sports-car', name: 'Siêu xe', en: 'Sports Car', emoji: '🏎️', coins: 7000, image: `${CDN}maliva/webcast-va/resource/201304005bf8f86b533b97ffa88f1abe.png~tplv-obj.webp` },
   { id: 'interstellar', name: 'Liên hành tinh', en: 'Interstellar', emoji: '🚀', coins: 10000, image: `${CDN}maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp` },
+  { id: 'falcon', name: 'Chim ưng', en: 'Falcon', emoji: '🦅', coins: 10999, image: `${CDN}maliva/webcast-va/6026505eea9b9bce071dd699253abf6a~tplv-obj.webp` },
   { id: 'lion', name: 'Sư tử', en: 'Lion', emoji: '🦁', coins: 29999, image: `${CDN}maliva/webcast-va/4fb89af2082a290b37d704e20f4fe729~tplv-obj.webp` },
   { id: 'universe', name: 'Vũ trụ TikTok', en: 'TikTok Universe', emoji: '🪐', coins: 44999, image: `${CDN}maliva/webcast-va/8f471afbcebfda3841a6cc515e381f58~tplv-obj.webp` }
 ];
@@ -67,8 +69,22 @@ export function giftEmoji(name) {
   return hit ? hit[1] : '🎁';
 }
 
+// Món làm ICON cho từng bậc trên bảng "Cách tham gia": giá GẦN MỐC TRÊN của bậc (tặng món này là chắc vào bậc đó)
+// + hình dễ nhận ra ở cỡ nhỏ + quà cố định lâu năm của TikTok (bảng quà VN có, không phải quà sự kiện/vùng khác).
+// Bậc 1 giữ Hoa hồng (1 xu) — món tiêu biểu nhất của phiên tặng quà. Bậc 6 không có mốc trên → Sư tử, hình rõ nhất.
+// Tinh vân Rosa (15.000) gần mốc bậc 5 hơn nhưng nhỏ lại trông như bông hồng bậc 1 → dùng Chim ưng.
+const LEGEND_PICK = { 1: 'Rose', 2: 'Doughnut', 3: 'Corgi', 4: 'Private Jet', 5: 'Falcon', 6: 'Lion' };
+const PICK_BY_EN = new Map(SAMPLE_GIFTS.map((g) => [g.en.toLowerCase(), g]));
+const isPick = (g, tier) => {
+  const pick = PICK_BY_EN.get(String(LEGEND_PICK[tier]).toLowerCase());
+  if (!pick) return false;
+  const names = [g.en, g.name, g.realName].filter(Boolean).map((n) => String(n).toLowerCase());
+  return names.includes(pick.en.toLowerCase()) || names.includes(pick.name.toLowerCase());
+};
+
 /**
- * 2 quà đại diện cho mỗi bậc (rẻ nhất trong bậc = hay được tặng nhất).
+ * Quà đại diện cho mỗi bậc: món chọn sẵn (LEGEND_PICK) đứng đầu — nếu giá thật của phòng vẫn nằm trong bậc đó —
+ * rồi tới các món giá gần mốc trên của bậc.
  * @param {{name:string, coins:number, image?:string}[]} catalog danh mục quà của phòng (hoặc SAMPLE_GIFTS)
  * @returns {{tier:number, gifts:{name:string, coins:number, image?:string, emoji:string}[]}[]}
  */
@@ -76,8 +92,9 @@ export function tierRepresentatives(catalog, perTier = 2) {
   const list = (catalog && catalog.length ? catalog : SAMPLE_GIFTS).filter((g) => g && g.coins > 0);
   return TIER_MIN.map((_, i) => {
     const tier = i + 1;
-    // ưu tiên quà có ảnh thật của TikTok, rồi tới quà rẻ nhất (hay được tặng nhất)
-    const gifts = list.filter((g) => giftTier(g.coins) === tier).sort((a, b) => Boolean(b.image) - Boolean(a.image) || a.coins - b.coins).slice(0, perTier)
+    // món chọn sẵn → có ảnh thật của TikTok → giá cao trong bậc (gần mốc trên)
+    const gifts = list.filter((g) => giftTier(g.coins) === tier)
+      .sort((a, b) => isPick(b, tier) - isPick(a, tier) || Boolean(b.image) - Boolean(a.image) || b.coins - a.coins).slice(0, perTier)
       .map((g) => ({ name: g.name, coins: g.coins, image: g.image || '', emoji: g.emoji || giftEmoji(g.name) }));
     return { tier, gifts };
   });
