@@ -64,6 +64,10 @@ let currentId = '';
 let switching = null;
 let latest = null;
 
+// OBS không chặn tự phát: mở âm thanh ngay khi trang tải để nhạc nền chạy từ đầu. Trước đây chỉ mở khi có tiếng động
+// đầu tiên (người vào, quà…) — sàn chưa có sự kiện thật (chỉ người nhảy ảo) thì im lặng mãi.
+if (window.obsstudio) audio.unlock();
+
 // Mở /stage trong tab thường (không phải OBS, không phải khung xem trước): nhắc bấm để bật tiếng.
 if (!isPreview && !window.obsstudio && !navigator.userActivation?.hasBeenActive) {
   const hint = document.getElementById('sound-hint');
