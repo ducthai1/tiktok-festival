@@ -22,6 +22,9 @@ const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đ�
 const FACE_EMOJI = { happy: '😊', grin: '😁', wink: '😉', cool: '😎', love: '😍', laugh: '😂', surprise: '😮', tongue: '😜',
   sing: '🎤', cry: '😭', angry: '😡', sleepy: '😴', star: '🤩', shy: '☺️', party: '🥳', kiss: '😘' };
 const MAX_LABELS = 18;
+const ALL_LABELS_UNDER = 40; // ≤ 40 người: ai cũng có tên + avatar
+const ZOOM_LABEL_PX = 210; // ai hiện cao hơn chừng này px (camera zoom gần) thì có tên bản to
+const LABELS_CAP = 60; // tối đa nhãn cùng lúc (nhẹ trang, khỏi chồng chéo)
 const GLANCE_GAP_S = 6;
 
 // sheets: mô tả ảnh ghép nhân vật (public/assets/dance/sheets.json), tải trước khi dựng cảnh
@@ -76,11 +79,36 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     director.focus(() => posOf(id), seconds, 'glance', clock);
   }
 
+  // chiều cao (px trên khung 1920) của một nhân vật đang thấy trên màn; 0 nếu ngoài khung
+  const headV = new THREE.Vector3();
+  const footV = new THREE.Vector3();
+  function screenHeightPx(e) {
+    if (!e || e.leaving) return 0;
+    headV.copy(e.anchor.position).project(camera);
+    footV.copy(e.pos).project(camera);
+    if (headV.z > 1 || Math.abs(headV.x) > 1 || headV.y > 1 || footV.y < -1.1) return 0;
+    return (headV.y - footV.y) * 960;
+  }
+
   function refreshLabels() {
     const now = performance.now();
     for (const [id, until] of recent) if (now > until || !byId.has(id)) recent.delete(id);
     const ids = new Set([...recent.keys()].slice(-MAX_LABELS));
     for (const d of state.dancers) if (d.rank || d.giant || d.id === solo?.id) ids.add(d.id);
+    // ít người: ai cũng có tên + avatar; đông: thêm những ai đang hiện TO trên màn (camera zoom gần) — nhãn bản to
+    const zoomed = new Set();
+    const sized = [];
+    for (const d of state.dancers) {
+      const px = screenHeightPx(crowd.get(d.id));
+      if (px > ZOOM_LABEL_PX) sized.push([px, d.id]);
+    }
+    sized.sort((a, b) => b[0] - a[0]);
+    for (const [, id] of sized) {
+      if (ids.size >= LABELS_CAP) break;
+      ids.add(id);
+      zoomed.add(id); // camera đang zoom gần người này → nhãn bản to
+    }
+    if (state.dancers.length <= ALL_LABELS_UNDER) for (const d of state.dancers) ids.add(d.id);
     for (const id of ids) {
       const d = byId.get(id);
       const e = crowd.get(id);
@@ -88,7 +116,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       const title = d.rank ? RANK_TITLES[d.rank - 1] : d.id === solo?.id ? 'SIÊU SAO' : d.giant ? 'VIP' : '';
       const titleClass = d.rank ? `rank-${d.rank}` : title ? 'star' : '';
       labels.sync(id, { anchor: e.anchor, nickname: d.rank ? `${MEDALS[d.rank - 1]} ${d.nickname}` : d.nickname, avatar: d.avatar || '',
-        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id, group: 'dance', title, titleClass });
+        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id && !zoomed.has(id), group: 'dance', title, titleClass });
     }
     labels.keepOnly(ids);
   }
@@ -230,7 +258,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       if (heli.visible) heli.position.set(-10 + k * 20, 6.4 + Math.sin(k * Math.PI * 3) * 0.3, 0.5);
       show.update(dt, t);
       director.update(dt, t, beat, crowd.bounds(), PODIUM[0]);
-      if (Math.floor(t * 2) !== Math.floor((t - dt) * 2)) refreshLabels();
+      if (Math.floor(t * 4) !== Math.floor((t - dt) * 4)) refreshLabels(); // 4 lần/giây: camera zoom tới ai là tên hiện ngay
     },
     dispose() {
       crowd.dispose();

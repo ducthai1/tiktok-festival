@@ -152,16 +152,14 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .label .title-plate.star { background-image: url('/static/assets/dance/banners/title-neon.webp'); }
 
 /* Sàn nhảy kiểu "bar online": cột lệnh bên phải */
-.cmd-pills { position: absolute; right: 100px; top: 1250px; display: grid; gap: 6px; justify-items: end; z-index: 5; pointer-events: none; }
-.cmd-head { padding: 3px 12px; border-radius: 8px; background: rgba(125, 255, 138, 0.92); color: #052e12; font: 900 16px var(--font); letter-spacing: 0.5px; }
-.cmd-pill { display: flex; align-items: center; gap: 6px; padding: 5px 12px 5px 8px; border-radius: 999px; background: rgba(8, 5, 22, 0.86);
-  border: 1.5px solid rgba(160, 200, 255, 0.5); color: #fff; font: 800 18px var(--font); text-shadow: 0 1px 2px #000; }
-.cmd-icon { font-size: 18px; }
-.cmd-verb { color: #c9d4ff; font-size: 16px; }
-.cmd-verb:empty { display: none; }
-.cmd-word { padding: 1px 9px; border-radius: 7px; background: #ffd21f; color: #1b1300; font-weight: 900; text-shadow: none; }
-.cmd-arrow { color: #7dff8a; font-weight: 900; }
-.cmd-label { color: #fff; }
+.cmd-table { position: absolute; right: 94px; top: 1240px; width: 318px; padding: 8px 10px 10px; border-radius: 16px; z-index: 5; pointer-events: none;
+  background: rgba(8, 5, 22, 0.86); border: 1.5px solid rgba(160, 200, 255, 0.5); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45); }
+.cmd-title { margin: 0 0 6px; text-align: center; font: 900 17px var(--font); color: #7dff8a; letter-spacing: 1px; }
+.cmd-grid { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 10px; align-items: center; }
+.cmd-th { font: 900 14px var(--font); color: #9fb3ff; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid rgba(160, 200, 255, 0.35); padding-bottom: 3px; }
+.cmd-key { justify-self: start; padding: 1px 8px; border-radius: 6px; background: #ffd21f; color: #1b1300; font: 900 16px var(--font); white-space: nowrap; }
+.cmd-key.act { background: #ff7ac4; color: #2b0018; }
+.cmd-val { font: 800 16px var(--font); color: #fff; line-height: 1.2; overflow-wrap: anywhere; text-shadow: 0 1px 2px #000; }
 
 /* Sàn nhảy — bố cục không đè nhau: thanh Độ Quẩy (252–359) → dưới đó 3 cột:
    trái = Cách tham gia (+ thông báo quà ngay dưới), giữa = thanh phím solo + banner, phải = Top + thẻ chào gọn.
@@ -198,3 +196,8 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 #legend .item .txt .fx { font-size: 15px; font-weight: 700; color: #fff; }
 #stage.theme-dance #legend .item { white-space: normal; overflow: visible; align-items: center; padding: 5px 8px; }
 #stage.theme-dance #legend .item em.gifts img { width: 34px; height: 34px; }
+
+/* Sàn nhảy: tên + avatar trên đầu — bản nhỏ cho đám đông, bản to cho người đang được camera zoom gần / Top / solo */
+.theme-dance .label .tag { background: rgba(16, 6, 36, 0.82); border-color: rgba(196, 161, 255, 0.65); font-size: 22px; }
+.theme-dance .label.small .tag { font-size: 15px; gap: 4px; padding: 2px 8px 2px 2px; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
+.theme-dance .label.small img, .theme-dance .label.small .ava { width: 22px; height: 22px; }

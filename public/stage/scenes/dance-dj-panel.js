@@ -25,14 +25,15 @@ export function createDjPanel(hud, { onVideo }) {
     onVideo(video);
   }, { once: true });
 
-  const pills = hud.el('div', 'cmd-pills');
-  pills.append(hud.el('div', 'cmd-head', 'MIỄN PHÍ · bình luận là được'));
+  // bảng 2 cột "Gõ | Được" (chữ "Gõ" chỉ ở đầu cột, không lặp mỗi dòng); bề ngang cố định, chữ tự xuống dòng — không tràn khung
+  const table = hud.el('div', 'cmd-table');
+  table.append(hud.el('div', 'cmd-title', '🆓 MIỄN PHÍ'));
+  const grid = hud.el('div', 'cmd-grid');
+  grid.append(hud.el('div', 'cmd-th', '💬 Gõ'), hud.el('div', 'cmd-th', 'Được'));
   for (const [icon, word, label, kind] of COMMANDS) {
-    const pill = hud.el('div', 'cmd-pill');
-    pill.append(hud.el('span', 'cmd-icon', icon), hud.el('span', 'cmd-verb', kind === 'act' ? '' : 'Gõ'), hud.el('span', 'cmd-word', word),
-      hud.el('span', 'cmd-arrow', '→'), hud.el('span', 'cmd-label', label));
-    pills.append(pill);
+    grid.append(hud.el('div', `cmd-key${kind === 'act' ? ' act' : ''}`, kind === 'act' ? `${icon} ${word}` : word), hud.el('div', 'cmd-val', label));
   }
-  hud.gameRoot.append(pills);
+  table.append(grid);
+  hud.gameRoot.append(table);
   return { video, dispose: () => { video.pause(); video.removeAttribute('src'); } };
 }
