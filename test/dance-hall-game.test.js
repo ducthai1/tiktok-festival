@@ -49,13 +49,13 @@ test('free comments: "quẩy" dances hard, "chào" waves, "đổi đồ" changes
   assert.equal(faceForComment('ok'), '');
 });
 
-test('"nhảy" jumps once, "đi vòng" walks a loop, "to lên"/"nhỏ lại" resize within limits, 1k hearts puts you on camera', () => {
+test('"nhảy" jumps once, "đi vòng" is no longer free, "to lên"/"nhỏ lại" resize within limits, 1k hearts puts you on camera', () => {
   const game = createDanceHallGame({ random: () => 0.5 });
   game.handleEvent(chat(1, 'nhảy 1 cái'), 0);
   assert.equal(dancer(game, 'u1').move, 'jump');
   assert.equal(dancer(game, 'u1', 2000).move, '');
   game.handleEvent(chat(2, 'đi vòng'), 0);
-  assert.equal(dancer(game, 'u2', 5000).move, 'walk');
+  assert.equal(dancer(game, 'u2', 5000).move, ''); // bay vòng giờ là quà 99–199 💎
   for (let i = 0; i < 6; i += 1) game.handleEvent(chat(3, 'to lên'), i * 4000);
   assert.equal(dancer(game, 'u3', 30000).size, 1.6);
   for (let i = 0; i < 9; i += 1) game.handleEvent(chat(3, 'nhỏ lại'), 40000 + i * 4000);
@@ -84,7 +84,7 @@ test('a rose gives an aura but no solo; bigger gifts get a solo on stage, best g
   assert.ok(!kinds(fx).includes('solo'));
   assert.equal(dancer(game, 'u1').aura, true);
   assert.equal(game.snapshot().solo, null);
-  const first = game.handleEvent(gift(2, 99), 0);
+  const first = game.handleEvent(gift(2, 299), 0); // 99–199 là xe bay → solo bậc 3 lấy món 299
   assert.ok(kinds(first).includes('solo'));
   game.handleEvent(gift(3, 10), 100); // bậc 2 vào hàng chờ
   game.handleEvent(gift(4, 500), 200); // bậc 4 chen lên trước bậc 2
@@ -177,7 +177,7 @@ test('a first follow gets the full package: big card, a stage solo, neon fan win
   assert.equal(dancer(game, 'u7', 10 * 60000 + 1).fan, false);
   // quà bậc 2+ vẫn diễn trước người follow đang chờ
   const busy = createDanceHallGame();
-  busy.handleEvent(gift(1, 100), 0);
+  busy.handleEvent(gift(1, 299), 0);
   busy.handleEvent({ type: 'follow', user: user(2) }, 10);
   busy.handleEvent(gift(3, 20), 20);
   const order = [];
@@ -228,4 +228,20 @@ test('without a seed count the floor starts empty', () => {
   const game = createDanceHallGame();
   game.tick(0);
   assert.equal(game.snapshot(0).dancers.length, 0);
+});
+
+test('a 99–199 diamond gift flies the giver around on a winged car; 200+ keeps the stage solo and fireworks', () => {
+  const game = createDanceHallGame();
+  for (const [n, kc] of [[1, 99], [2, 199]]) {
+    const fx = game.handleEvent(gift(n, kc), 0);
+    assert.equal(fx.find((f) => f.kind === 'gift').ride, true);
+    assert.ok(!kinds(fx).includes('fireworks'));
+    assert.ok(!fx.some((f) => f.kind === 'solo' && f.userId === `u${n}`));
+    assert.equal(dancer(game, `u${n}`, 1000).move, 'ride');
+    assert.notEqual(dancer(game, `u${n}`, 15000).move, 'ride'); // hạ cánh (199 💎 còn làm đầy thanh quẩy → DROP)
+  }
+  const big = game.handleEvent(gift(3, 299), 20000);
+  assert.equal(big.find((f) => f.kind === 'gift').ride, false);
+  assert.ok(kinds(big).includes('fireworks'));
+  assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
 });

@@ -1,0 +1,6 @@
+Xe bay (quà 99–199 💎): mẫu xe + ảnh khói + tiếng động cơ từ Kenney "Starter Kit Racing"
+(https://github.com/KenneyNL/Starter-Kit-Racing) — "Assets included in this package (2D sprites, 3D models and sound effects)
+are CC0 licensed" (dùng tự do, không cần ghi nguồn). Tải 04/11/2026: models/vehicle-truck-{red,purple,yellow,green}.glb,
+models/Textures/colormap.png, sprites/smoke.png, audio/engine.ogg (→ public/assets/dance/sfx/car-engine.mp3).
+GLB đã kiểm cấu trúc (magic glTF v2, độ dài khớp, không link ngoài ngoài Textures/colormap.png); PNG + tiếng giải mã/mã hoá lại
+trong sandbox. Cánh trên xe dùng ảnh cánh có sẵn (public/assets/dance/banners/wings-neon.webp).

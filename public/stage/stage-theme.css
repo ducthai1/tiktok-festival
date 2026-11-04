@@ -213,13 +213,14 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 #stage.theme-dance #legend .item .txt b { font-size: 16px; }
 /* câu hiệu ứng luôn một dòng (dance-scene.js giữ câu ngắn); "…" chỉ là lưới an toàn, không để rớt chữ xuống dòng */
 #stage.theme-dance #legend .item .txt .fx { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* vạch màu theo bậc quà (thứ tự dòng = bậc 1 → 6): nhìn là biết bậc nào "to" hơn */
+/* vạch màu theo bậc quà (thứ tự dòng: 1–9, 10–98, 99–199 xe bay, 200–498, 499+, 5K+, 20K+): nhìn là biết bậc nào "to" hơn */
 #stage.theme-dance #legend .item:nth-child(1) { --tier: #5fd8ff; }
 #stage.theme-dance #legend .item:nth-child(2) { --tier: #7dffb0; }
-#stage.theme-dance #legend .item:nth-child(3) { --tier: #b98cff; }
-#stage.theme-dance #legend .item:nth-child(4) { --tier: #ffb347; }
-#stage.theme-dance #legend .item:nth-child(5) { --tier: #ff5fc8; }
-#stage.theme-dance #legend .item:nth-child(6) { --tier: #ffe27a; }
+#stage.theme-dance #legend .item:nth-child(3) { --tier: #36d6ff; }
+#stage.theme-dance #legend .item:nth-child(4) { --tier: #b98cff; }
+#stage.theme-dance #legend .item:nth-child(5) { --tier: #ffb347; }
+#stage.theme-dance #legend .item:nth-child(6) { --tier: #ff5fc8; }
+#stage.theme-dance #legend .item:nth-child(7) { --tier: #ffe27a; }
 
 /* Sàn nhảy: tên + avatar trên đầu — bản nhỏ cho đám đông, bản to cho người đang được camera zoom gần / Top / solo */
 .theme-dance .label .tag { background: rgba(16, 6, 36, 0.82); border-color: rgba(196, 161, 255, 0.65); font-size: 22px; }

@@ -34,15 +34,14 @@ export function createSeedCrowd({ random = Math.random, target = 0 } = {}) {
       const pool = free.length ? free : SEED_NAMES;
       return { id: `${SEED_PREFIX}${serial}`, nickname: pool[Math.floor(random() * pool.length)], avatar: '' };
     },
-    /** Thỉnh thoảng cho một người ảo quẩy / nhảy / đi vòng / vẫy / đổi biểu cảm (giờ hết hạn như lệnh của người thật). */
+    /** Thỉnh thoảng cho một người ảo quẩy / nhảy / vẫy / đổi biểu cảm (giờ hết hạn như lệnh của người thật). */
     act(seeds, now, ms) {
       if (!seeds.length || now < nextActAt) return;
       nextActAt = now + ACT_GAP_MS[0] + random() * (ACT_GAP_MS[1] - ACT_GAP_MS[0]);
       const d = seeds[Math.floor(random() * seeds.length)];
       const roll = random();
-      if (roll < 0.35) d.hypeUntil = now + ms.hype;
-      else if (roll < 0.55) d.jumpUntil = now + ms.jump;
-      else if (roll < 0.65) d.walkUntil = now + ms.walk;
+      if (roll < 0.4) d.hypeUntil = now + ms.hype; // không "đi vòng": màn bay vòng giờ là quà 99–199 💎
+      else if (roll < 0.62) d.jumpUntil = now + ms.jump;
       else if (roll < 0.75) d.waveUntil = now + ms.wave;
       else {
         d.face = SEED_FACES[Math.floor(random() * SEED_FACES.length)];

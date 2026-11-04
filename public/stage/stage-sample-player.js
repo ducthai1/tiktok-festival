@@ -33,8 +33,12 @@ export function createSamplePlayer(ctx, out) {
       }
     },
     has: (name) => files.has(name),
-    /** Phát `name` sau `delay` giây, âm lượng `gain`. false = game này không có file đó. */
-    play(name, { gain = 1, delay = 0 } = {}) {
+    /**
+     * Phát `name` sau `delay` giây, âm lượng `gain`. false = game này không có file đó.
+     * loop + duration: phát lặp trong `duration` giây rồi nhỏ dần tắt; rates: [[giây, tốc độ], …] đổi tốc độ (= cao độ)
+     * theo thời gian — tiếng động cơ rồ lên / hạ xuống.
+     */
+    play(name, { gain = 1, delay = 0, loop = false, duration = 0, rates = null } = {}) {
       const url = files.get(name);
       if (!url) return false;
       const at = ctx.currentTime + delay;
@@ -45,7 +49,18 @@ export function createSamplePlayer(ctx, out) {
         const level = ctx.createGain();
         level.gain.value = gain;
         src.connect(level).connect(out);
-        src.start(Math.max(ctx.currentTime, at));
+        const start = Math.max(ctx.currentTime, at);
+        src.loop = loop;
+        if (rates?.length) {
+          src.playbackRate.setValueAtTime(rates[0][1], start);
+          for (const [sec, rate] of rates.slice(1)) src.playbackRate.linearRampToValueAtTime(rate, start + sec);
+        }
+        src.start(start);
+        if (duration) {
+          level.gain.setValueAtTime(gain, start + Math.max(0, duration - 0.9));
+          level.gain.linearRampToValueAtTime(0, start + duration);
+          src.stop(start + duration + 0.05);
+        }
       });
       return true;
     }

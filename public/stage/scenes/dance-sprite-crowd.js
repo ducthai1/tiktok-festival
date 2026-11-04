@@ -2,15 +2,15 @@
 // Trạng thái hình: crowd (nhảy tại ô) · xung (bản nhảy bung — khi camera cận / Top 3 / khổng lồ) · spot (solo).
 // Người mới rơi từ trên xuống đúng ô; người đi bay vút lên; đổi chỗ xa thì nhảy vòng cung qua đầu đám đông.
 import * as THREE from '/vendor/three/three.module.js';
-import { DJ_SPOT, FRONT_Z, GIANT_SPOTS, PODIUM, SLOT_DZ, DANCE_ROWS, SOLO_SPOT, spreadSlotPosition } from '/static/shared/dance-floor-layout.js';
+import { DJ_SPOT, GIANT_SPOTS, PODIUM, SOLO_SPOT, spreadSlotPosition } from '/static/shared/dance-floor-layout.js';
 import { buildPool, characterForSlot, DJ_CHARACTER, sheetFor } from './dance-roster.js';
 import { createWingsMesh } from './dance-wings.js';
 import { createSheetMaterial, hashText, spriteGeometry } from './dance-sprite-material.js';
+import { ridePose } from './dance-car-path.js';
 
 const BASE = '/static/assets/dance/';
 const HEIGHT_M = 1.05; // cao của một người ở cỡ 1 (mét) — sticker nhỏ, đứng kín sàn
-const FLOOR_MID_Z = FRONT_Z - ((DANCE_ROWS - 1) * SLOT_DZ) / 2;
-const WALK_S = 9; // "đi vòng": một vòng elip quanh sàn trong 9 giây
+const RIDE_SCALE = 0.95; // ngồi trong khoang xe bay (thân xe che phần dưới)
 const JUMP_S = 1.3;
 const RANK_COLORS = ['#ffd21f', '#e5e7eb', '#f59e0b'];
 const HIDDEN = new THREE.Matrix4().makeScale(0, 0, 0);
@@ -56,7 +56,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   const WING_CAP = { basic: capacity, star: 40 };
   const wingCap = (kind) => WING_CAP[kind] || 4;
   const wingMeshes = Object.fromEntries(Object.entries(WING_FILES).map(([k, f]) => [k, createWingsMesh(scene, wingCap(k), f)]));
-  const wingKind = (e, ctx) => (e.info.rank ? `top${e.info.rank}` : e.id === ctx.soloId || e.info.giant || e.info.fan ? 'star' : e.info.wings ? 'basic' : '');
+  const wingKind = (e, ctx) => (e.ride && !e.ride.done ? '' : e.info.rank ? `top${e.info.rank}` : e.id === ctx.soloId || e.info.giant || e.info.fan ? 'star' : e.info.wings ? 'basic' : '');
 
   function meshFor(key) {
     let mesh = meshes.get(key);
@@ -86,16 +86,19 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
 
   function placeFor(info, ctx, e) {
     if (info.dj) return { ...DJ_SPOT, scale: 1.4, vis: 'xung' };
+    if (e?.rideStart !== undefined) { // quà 99–199 💎: ngồi trên xe bay một vòng quanh sàn (dance-car-path.js) — hơn cả bục Top
+      const seconds = ctx.now - e.rideStart;
+      const home = e.rideHome; // cất cánh + hạ cánh đúng chỗ đang đứng (ô sàn hoặc bục Top)
+      const pose = ridePose(seconds, home);
+      e.ride = { seconds, home, done: pose.done };
+      if (!pose.done) return { x: pose.x, y: pose.seatY, z: pose.z, scale: (info.size || 1) * RIDE_SCALE, vis: 'xung', riding: true };
+    }
     if (info.id === ctx.soloId) return { ...SOLO_SPOT, scale: 2.1, vis: 'spot' };
     const giant = ctx.giants.indexOf(info.id);
     if (giant >= 0) return { x: GIANT_SPOTS[giant].x, y: 0, z: GIANT_SPOTS[giant].z, scale: 3, vis: 'xung' };
     if (info.rank >= 1 && info.rank <= 3) return { ...PODIUM[info.rank - 1], scale: PODIUM[info.rank - 1].scale * 1.15, vis: 'xung' };
     const p = spreadSlotPosition(info.slot, ctx.floorCount || 0); // ít người thì dàn đều cả sàn
     const scale = (info.aura ? 1.12 : 1) * (info.size || 1);
-    if (e?.walkStart !== undefined) { // đi một vòng elip quanh sàn, bắt đầu từ phía ô của mình
-      const a = Math.atan2(p.z - FLOOR_MID_Z, p.x) + ((ctx.now - e.walkStart) / WALK_S) * Math.PI * 2;
-      return { x: Math.cos(a) * 4.6, y: 0, z: FLOOR_MID_Z + Math.sin(a) * 5.2, scale, vis: 'crowd' };
-    }
     return { x: p.x, y: (info.level || 0) * 0.4, z: p.z, scale, vis: info.id === ctx.closeId ? 'xung' : 'crowd' };
   }
 
@@ -127,9 +130,19 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
           entities.set(info.id, e);
           flyTo(e, tmp.set(target.x, target.y, target.z), 0.9, 0.2); // rơi từ trên xuống ô của mình
         }
-        if (info.move === 'walk' && e.info.move !== 'walk') e.walkStart = ctx.now;
-        if (info.move !== 'walk') delete e.walkStart;
-        if (info.move === 'jump' && e.info.move !== 'jump') e.jumpStart = ctx.now;
+        // so với động tác LẦN TRƯỚC của chính nhân vật (người mới vào sàn mà tặng xe bay ngay thì cũng phải cất cánh)
+        const was = e.prevMove ?? '';
+        if (info.move === 'ride' && was !== 'ride') {
+          e.rideStart = ctx.now;
+          const base = e.flight ? e.flight.to : e.pos; // đang rơi xuống sàn → cất cánh từ chỗ sắp đáp
+          e.rideHome = { x: base.x, y: base.y, z: base.z };
+        }
+        if (info.move !== 'ride') {
+          delete e.rideStart;
+          delete e.ride;
+        }
+        if (info.move === 'jump' && was !== 'jump') e.jumpStart = ctx.now;
+        e.prevMove = info.move;
         e.info = info;
         e.character = info.dj ? DJ_CHARACTER : characterForSlot(pool, info.slot, info.look);
       }
@@ -159,7 +172,8 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
               continue;
             }
           }
-        } else if (!e.leaving) {
+        } else if (target.riding) e.pos.copy(tmp); // ngồi trên xe: bám đúng ghế, không trễ
+        else if (!e.leaving) {
           const far = e.pos.distanceTo(tmp);
           if (far > 1.6) flyTo(e, tmp, 0.8 + far * 0.05, 1.8 + far * 0.12);
           else e.pos.lerp(tmp, Math.min(1, dt * 5));
@@ -172,15 +186,15 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         if (!groups.has(key)) groups.set(key, []);
         const hero = target.vis !== 'crowd';
         const jt = e.jumpStart !== undefined ? (ctx.now - e.jumpStart) / JUMP_S : 1;
-        const hop = e.flight ? 0 : jt < 1 ? Math.sin(Math.PI * jt) * 0.9 * e.scale // "nhảy 1 cái"
+        const hop = e.flight || target.riding ? 0 : jt < 1 ? Math.sin(Math.PI * jt) * 0.9 * e.scale // "nhảy 1 cái"
           : e.info.move === 'hype' ? Math.abs(Math.sin(beat * Math.PI)) * 0.3 * e.scale
-            : e.info.move === 'walk' ? Math.abs(Math.sin(beat * Math.PI * 2)) * 0.08 : 0;
+            : 0;
         groups.get(key).push({ e, hero, hop });
         e.anchor.position.set(e.pos.x, e.pos.y + hop + HEIGHT_M * e.scale * 1.02, e.pos.z);
         e.anchor.updateMatrixWorld();
         const soloing = e.id === ctx.soloId;
         const ring = e.info.rank ? RANK_COLORS[e.info.rank - 1] : e.info.aura || soloing ? (Math.floor(beat) % 2 ? '#ff4fa3' : '#36d6ff') : '';
-        if (ring && !e.flight) {
+        if (ring && !e.flight && !target.riding) { // đang bay trên xe thì không có vòng hào quang lơ lửng
           const s = e.scale * (1 + 0.15 * Math.abs(Math.sin(beat * Math.PI)));
           aura.setMatrixAt(e.index, matrix.compose(tmp.set(e.pos.x, e.pos.y + 0.03, e.pos.z), NO_TURN, scaleV.setScalar(s)));
           aura.setColorAt(e.index, color.set(ring));

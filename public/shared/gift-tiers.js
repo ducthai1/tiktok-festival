@@ -37,6 +37,7 @@ export const SAMPLE_GIFTS = [
   { id: 'rosa', name: 'Rosa', en: 'Rosa', emoji: '💐', coins: 10, image: `${CDN}maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp` },
   { id: 'doughnut', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 30, image: `${CDN}maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp` },
   { id: 'cap', name: 'Mũ lưỡi trai', en: 'Cap', emoji: '🧢', coins: 99, image: `${CDN}maliva/webcast-va/6c2ab2da19249ea570a2ece5e3377f04~tplv-obj.webp` },
+  { id: 'sunglasses', name: 'Kính râm', en: 'Sunglasses', emoji: '🕶️', coins: 199, image: `${CDN}alisg/webcast-sg/08af67ab13a8053269bf539fd27f3873.png~tplv-obj.webp` },
   { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299, image: `${CDN}maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp` },
   { id: 'galaxy', name: 'Dải ngân hà', en: 'Galaxy', emoji: '🌌', coins: 1000, image: `${CDN}maliva/webcast-va/resource/79a02148079526539f7599150da9fd28.png~tplv-obj.webp` },
   { id: 'fireworks', name: 'Pháo hoa', en: 'Fireworks', emoji: '🎆', coins: 1088, image: `${CDN}maliva/webcast-va/9494c8a0bc5c03521ef65368e59cc2b8~tplv-obj.webp` },

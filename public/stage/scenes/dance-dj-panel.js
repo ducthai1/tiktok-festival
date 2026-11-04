@@ -7,7 +7,6 @@ const DJ_VIDEO = '/static/assets/dance/dj/dj.mp4';
 // Vào live là tự có nhân vật trên sàn (sự kiện vào phòng) — không cần dòng nào cho việc đó (user bỏ dòng "Vào live").
 const COMMANDS = [
   ['💬', 'đổi nv', 'Đổi nhân vật'],
-  ['💬', 'đi vòng', 'Đi 1 vòng sàn'],
   ['💬', 'nhảy', 'Nhảy lên 1 cái'],
   ['💬', 'to lên', 'Nhân vật to ra'],
   ['💬', 'nhỏ lại', 'Nhân vật nhỏ lại'],

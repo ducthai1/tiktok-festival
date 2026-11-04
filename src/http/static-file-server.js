@@ -16,6 +16,7 @@ const TYPES = {
   '.woff2': 'font/woff2',
   '.mp4': 'video/mp4', // video DJ của sàn nhảy (public/assets/dance/dj/)
   '.mp3': 'audio/mpeg', // nhạc nền sàn nhảy (public/assets/dance/music/)
+  '.glb': 'model/gltf-binary', // mẫu 3D xe bay (public/assets/dance/car/, Kenney CC0)
   '.webm': 'video/webm',
   '.ico': 'image/x-icon'
 };
@@ -47,7 +48,8 @@ export function createStaticFileServer({ publicDir, rootDir }) {
     if (PAGES[urlPath]) return { file: path.join(publicDir, PAGES[urlPath]) };
     const three = urlPath.match(/^\/vendor\/three\/(three\.module\.js|three\.core\.js)$/);
     if (three) return { file: path.join(threeBuild, three[1]) };
-    const addon = urlPath.match(/^\/vendor\/three-addons\/((?:postprocessing|shaders)\/[A-Za-z0-9]+\.js)$/);
+    // phần mở rộng three.js được phép: hậu kỳ, shader, bộ đọc mẫu GLTF (xe bay) + tiện ích hình học nó cần
+    const addon = urlPath.match(/^\/vendor\/three-addons\/((?:postprocessing|shaders|loaders|utils)\/[A-Za-z0-9]+\.js)$/);
     if (addon) return { file: path.join(threeAddons, addon[1]), addon: true };
     if (urlPath.startsWith('/static/')) {
       const file = resolveInside(publicDir, urlPath.slice('/static/'.length));

@@ -11,6 +11,8 @@ import { createDanceSounds } from './dance-sound-cues.js';
 import { createComboFilter, thankLine } from './dance-voice-lines.js';
 import { createGiftStage } from './dance-gift-stage.js';
 import { createTierBanner } from './dance-tier-banner.js';
+import { createFlyingCars } from './dance-flying-car.js';
+import { RIDE_S } from './dance-car-path.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -41,6 +43,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const room = buildDanceHall(scene);
   const decor = buildHallDecor(scene);
   const crowd = createSpriteCrowd(scene, { sheets, capacity: DANCE_SLOTS + 8 });
+  const cars = createFlyingCars(scene); // quà 99–199 💎: xe bay mọc cánh chở người tặng một vòng quanh sàn
+  const flying = new Set(); // ai đang bay (để biết lúc vừa cất cánh)
   // trực thăng chở VIP bay ngang hội trường khi có quà lớn
   const heli = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.TextureLoader().load('/static/assets/dance/heli.webp', (t) => { t.colorSpace = THREE.SRGBColorSpace; }), transparent: true }));
   heli.scale.set(4.2, 2, 1);
@@ -145,6 +149,23 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     refreshLabels();
   }
 
+  // xe bay: cập nhật xe theo người đang bay; xe vừa cất cánh → nổ máy + camera rượt theo (trừ khi quà lớn đang độc chiếm
+  // sân khấu: xe vẫn bay nhưng không giành tiếng / camera)
+  function updateRides(dt, t) {
+    const riders = crowd.list().filter((e) => e.ride && !e.ride.done).map((e) => ({ id: e.id, seconds: e.ride.seconds, home: e.ride.home }));
+    cars.update(dt, t, riders, camera);
+    const now = new Set(riders.map((r) => r.id));
+    for (const r of riders) {
+      if (flying.has(r.id) || r.seconds > 1.5) continue;
+      if (!stage.busy()) {
+        sounds.ride(RIDE_S);
+        if (!solo) director.focus(() => cars.positionOf(r.id), 7, 'chase', clock);
+      }
+    }
+    flying.clear();
+    for (const id of now) flying.add(id);
+  }
+
   function startSolo(info) {
     const d = byId.get(info.id);
     solo = { id: info.id, tier: info.tier, startedAt: clock };
@@ -182,6 +203,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     giftRows: true,
     giftLabels: { 1: '🦋 Có cánh + lên hình', 2: '🎈 Bay cao + solo ngắn', 3: '🎤 Solo + pháo hoa',
       4: '👑 Khổng lồ VIP 🚁', 5: '🎆 Pháo hoa + DROP', 6: '🌌 Đại nhạc hội' },
+    // bậc 3 (99–498) chia đôi: 99–199 xe bay chạy vòng (icon Kính râm 199), 200–498 solo sân khấu + pháo hoa (icon Corgi)
+    giftSplit: { 3: [{ range: '99–199', label: '🚗 Xe bay chạy vòng', giftEn: 'Sunglasses' }, { range: '200–498', label: '🎤 Solo + pháo hoa' }] },
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));
@@ -252,7 +275,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         const big = fx.diamonds >= BIG_GIFT_KC;
         if (combo.isRepeat(fx) || (!big && stage.busy())) openBatch(SKIP); // lượt combo / quà nhỏ chen giữa quà lớn: chỉ thông báo
         else {
-          const m = { userId: fx.userId, line: thankLine(fx), effects: [() => { sounds.gift(fx.tier); bigGift.show(fx); }] };
+          const cue = fx.ride ? () => sounds.rideCheer() : () => sounds.gift(fx.tier); // xe bay: kèn tiệc + hò reo (động cơ riêng)
+          const m = { userId: fx.userId, line: thankLine(fx), effects: [() => { cue(); bigGift.show(fx); }] };
           openBatch(big ? stage.big({ ...m, holdMs: BIG_HOLD_MS[Math.min(6, fx.tier)] || 6000 }) : stage.now(m));
           if (!big && fx.tier === 1) glance(fx.userId);
         }
@@ -284,6 +308,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       dim += ((solo ? 1 : 0) - dim) * Math.min(1, dt * 3);
       const c = ctx();
       crowd.frame(dt, beat, c);
+      updateRides(dt, t);
       const soloEntity = solo ? crowd.get(solo.id) : null;
       const dropping = state.dropMs > 0;
       room.update(t, beat, {
@@ -308,6 +333,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       combo.clear();
       tierBanner.dispose();
       crowd.dispose();
+      cars.dispose();
       djPanel.dispose();
       bigGift.dispose();
       show.dispose();

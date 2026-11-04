@@ -57,6 +57,15 @@ export function createDanceSounds(audio) {
       cue(power >= 3 ? [['fireworks-whistle', 0, 0.9], ['fireworks-multi', 0.8, 0.9]] : [['fireworks', 0, 0.8]]);
     },
     heli: () => audio.play('heli', { gain: 0.8 }),
+    // xe bay: động cơ rồ lên lúc cất cánh, đều máy khi bay vòng, hạ ga lúc đáp (rùm rùm)
+    ride(seconds) {
+      audio.play('car-engine', { gain: 0.95, loop: true, duration: seconds,
+        rates: [[0, 0.6], [1.6, 1.35], [3, 1.05], [seconds - 2.2, 1.12], [seconds - 0.4, 0.7]] });
+    },
+    rideCheer: () => {
+      audio.play('party-trumpet', { gain: 0.9 });
+      audio.play('cheer-small', { gain: 0.8, delay: 0.15 });
+    },
     look: () => audio.play('magic', { gain: 0.7 })
   };
 }

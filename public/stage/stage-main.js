@@ -5,7 +5,7 @@ import { createHud } from './stage-hud.js';
 import { createLabelLayer } from './stage-labels.js';
 import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
 import { createFrameLimiter, stageQuality } from './stage-quality.js';
-import { tierRangeLabel } from '/static/shared/gift-tiers.js';
+import { SAMPLE_GIFTS, tierRangeLabel } from '/static/shared/gift-tiers.js';
 import { speakableName } from '/static/shared/spoken-name.js';
 
 const SCENES = {
@@ -40,6 +40,14 @@ function legendFor(scene) {
   if (scene.giftLabels) {
     // mỗi bậc: 1 icon quà làm mẫu + khoảng kc — món nào trong khoảng đó cũng ra cùng hiệu ứng
     for (const { tier, gifts } of giftTiers) {
+      // một bậc chia nhỏ theo khoảng giá (vd Sàn Nhảy: 99–199 xe bay / 200–498 solo) — icon riêng từng khoảng nếu có
+      if (scene.giftSplit?.[tier] && gifts.length) {
+        for (const part of scene.giftSplit[tier]) {
+          const pick = part.giftEn && SAMPLE_GIFTS.find((g) => g.en === part.giftEn);
+          rows.push([pick ? [pick] : gifts.slice(0, 1), `${part.range} 💎\n${part.label}`]);
+        }
+        continue;
+      }
       const label = scene.giftLabels[tier];
       if (!gifts.length || !label) continue;
       // cảnh muốn hai dòng (khoảng 💎 / hiệu ứng nhận được) thì khai giftRows: true — icon kim cương thay chữ "kc" cho dễ hiểu

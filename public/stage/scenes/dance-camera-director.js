@@ -19,7 +19,7 @@ export function createCameraDirector(camera) {
   let shot = 0;
   let cycle = 0;
   let shotStartBeat = 0;
-  let focus = null; // { get: () => Vector3 | null, until, startedAt, mode: 'solo'|'glance'|'reveal' }
+  let focus = null; // { get: () => Vector3 | null, until, startedAt, mode: 'solo'|'glance'|'reveal'|'chase' }
   let wasFocusing = false;
 
   function directorShot(progress, crowd, podium) {
@@ -103,6 +103,16 @@ export function createCameraDirector(camera) {
           wantPos.lerpVectors(target.set(at.x, at.y + 2.6, at.z + 6.2), new THREE.Vector3(at.x * 0.15, 10.5, crowd.max.z + 11), k);
           wantLook.lerpVectors(target.set(at.x, at.y + 1.1, at.z), new THREE.Vector3(at.x * 0.25, 2.2, -3), k);
           fov = THREE.MathUtils.lerp(34, 54, k);
+        } else if (focus.mode === 'chase') {
+          // quay xe bay kiểu truyền hình trực tiếp: camera đứng phía khán giả (trượt ngang nhẹ theo xe), ống kính xoay theo xe
+          // và tự zoom theo khoảng cách → xe luôn vừa khung, không bao giờ sát xe / lọt vào khói, nền luôn là sân khấu
+          wantPos.set(at.x * 0.45, Math.max(at.y + 2.2, 4.2), 11);
+          // nhìn CAO hơn xe ~2,4 m + lệch phải 1 m → xe nằm ở nửa dưới khung, lệch trái (~78 % từ trên, ~30 % từ trái):
+          // vùng chỉ có sàn nhảy, dưới thẻ quà lớn + bên trái bảng lệnh — không bị bảng / khung chữ / thẻ quà giữa màn che
+          wantLook.copy(at).setY(at.y + 2.4);
+          wantLook.x += 1.0;
+          const dist = wantPos.distanceTo(at);
+          fov = THREE.MathUtils.clamp(THREE.MathUtils.radToDeg(2 * Math.atan(4.2 / dist)), 24, 55);
         } else if (focus.mode === 'solo') {
           // vòng quanh người đang solo như quay MV: góc lượn qua lại ±35°, thỉnh thoảng hạ thấp
           const orbit = Math.sin(elapsed * 0.45) * 0.6;
