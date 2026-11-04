@@ -10,6 +10,7 @@ const MOMENTS = ['shout', 'drop', 'shout', 'stutter', 'shout', 'horn'];
 const PUMP_DEPTH = 0.26; // mỗi phách nhạc hụt xuống 74 % rồi dâng lại
 const LOOKAHEAD_S = 0.45;
 const BASS_DB = 5;
+const TRIM = 0.5;
 
 /** Phách đầu câu nhạc 16 ô kế tiếp (bỏ câu đầu bài — đoạn vào bài để nhạc tự chạy). */
 export function nextPhraseBeat(beat) {
@@ -20,15 +21,24 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   const bass = ctx.createBiquadFilter();
   bass.type = 'lowshelf';
   bass.frequency.value = 110;
-  bass.gain.value = 0;
+  bass.gain.value = BASS_DB;
   const glue = ctx.createDynamicsCompressor(); // nén nhẹ: bass dày mà không vỡ, nhạc đều tay
   glue.threshold.value = -20;
   glue.knee.value = 6;
   glue.ratio.value = 3;
   glue.attack.value = 0.01;
   glue.release.value = 0.12;
+  // bộ nén của trình duyệt TỰ BÙ âm lượng (đo OBS: nhạc -19 → -12 dB, to hơn cả giọng cảm ơn) → hạ lại 6 dB,
+  // còn to hơn bản gốc ~1,5 dB cho bass đập
+  const trim = ctx.createGain();
+  trim.gain.value = TRIM;
   const pump = ctx.createGain();
-  input.connect(bass).connect(glue).connect(pump).connect(output);
+  // Sàn Nhảy đi đường DJ; game khác (chùa / bơi / bar) đi thẳng, không qua nén
+  const wetPath = ctx.createGain();
+  const dryPath = ctx.createGain();
+  wetPath.gain.value = 0;
+  input.connect(bass).connect(glue).connect(trim).connect(pump).connect(wetPath).connect(output);
+  input.connect(dryPath).connect(output);
 
   // giọng MC: khô + vang lặp (delay có hồi tiếp, cắt trầm) như câu hô của DJ
   const voice = ctx.createGain();
@@ -105,9 +115,10 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   let boosted = false;
   function tick() {
     const now = ctx.currentTime;
-    if (active() !== boosted) { // chỉ Sàn Nhảy mới dày bass; nhạc chùa / bơi giữ nguyên
+    if (active() !== boosted) { // chỉ Sàn Nhảy đi đường DJ; nhạc chùa / bơi / bar giữ nguyên
       boosted = active();
-      bass.gain.setTargetAtTime(boosted ? BASS_DB : 0, now, 0.3);
+      wetPath.gain.setTargetAtTime(boosted ? 1 : 0, now, 0.2);
+      dryPath.gain.setTargetAtTime(boosted ? 0 : 1, now, 0.2);
     }
     const g = boosted ? groove() : null;
     if (!g || !Number.isFinite(g.beat) || !g.bpm) {
