@@ -141,6 +141,8 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .au-key.hit { background: linear-gradient(180deg, #ff7ac4, #b07cff); color: #fff; transform: scale(1.12); box-shadow: 0 0 16px #ff4fa3; }
 .au-grade { min-height: 46px; font: 900 40px var(--font); letter-spacing: 2px; color: #ffe08a; text-shadow: 0 0 14px #ff4fa3, 0 3px 0 #7a1a5a; opacity: 0; transform: scale(0.6); transition: opacity 0.15s, transform 0.2s cubic-bezier(.2, 1.6, .4, 1); }
 .au-grade.show { opacity: 1; transform: scale(1); }
+/* display:grid/flex của tác giả đè thuộc tính hidden của trình duyệt → thanh phím trống luôn hiện; ẩn hẳn khi không ai solo */
+.au-bar[hidden], .big-gift[hidden] { display: none; }
 
 /* Danh hiệu trên đầu (Top 1-2-3, người solo, VIP): ẢNH khung danh hiệu (public/assets/dance/banners) + chữ đè giữa khung */
 .label .title-plate { margin: 0 auto 2px; width: 220px; height: 74px; display: grid; place-items: center; padding: 0 40px 4px;
