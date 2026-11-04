@@ -1,7 +1,7 @@
 GIỌNG ĐỌC TIẾNG VIỆT (VieNeu-TTS) — cài một lần
 
 Vì sao cần: OBS trên Linux không có giọng tiếng Việt nào, nên server game tự đọc bằng VieNeu-TTS (Apache-2.0, chạy ngay
-trên máy bằng CPU, không cần mạng / tài khoản) — cùng bản 3.8.3 và cùng 4 giọng (Ngọc Huyền, Trúc Ly, Hải Đăng, Adam bựa)
+trên máy bằng CPU, không cần mạng / tài khoản) — cùng bản 3.8.3 và 3 giọng (Ngọc Huyền, Trúc Ly, Hải Đăng)
 mà tool aff (~/FileMySelf/Affiliate/affiliate-tool) đang dùng. Model (~500 MB) đã có sẵn trong ~/.cache/huggingface do
 tool aff tải từ trước, nên không phải tải lại.
 

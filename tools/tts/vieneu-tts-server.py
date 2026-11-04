@@ -13,7 +13,7 @@ import numpy as np
 import soundfile as sf
 from vieneu import Vieneu
 
-VOICES = ['Ngọc Huyền', 'Trúc Ly', 'Hải Đăng', 'Adam bựa']
+VOICES = ['Ngọc Huyền', 'Trúc Ly', 'Hải Đăng']
 MAX_CHARS = 220
 MAX_BODY = 4096
 

@@ -32,7 +32,9 @@ function loadGiftCatalog(file) {
 function loadSettings(dataDir) {
   try {
     const saved = JSON.parse(fs.readFileSync(path.join(dataDir, 'settings.json'), 'utf8'));
-    return { ...DEFAULT_SETTINGS, ...(saved && typeof saved === 'object' ? saved : {}) };
+    const settings = { ...DEFAULT_SETTINGS, ...(saved && typeof saved === 'object' ? saved : {}) };
+    if (!TTS_VOICES.includes(settings.ttsVoice)) settings.ttsVoice = TTS_VOICES[0]; // giọng đã bỏ / gõ sai → giọng mặc định
+    return settings;
   } catch {
     return { ...DEFAULT_SETTINGS };
   }
