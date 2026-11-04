@@ -32,4 +32,4 @@ export const PODIUM = [
   { x: 2.4, y: 1.3, z: -8.9, scale: 1.3 }
 ];
 export const GIANT_SPOTS = [{ x: -5.6, z: -7.6 }, { x: 5.6, z: -7.6 }];
-export const DJ_SPOT = { x: 4.3, y: STAGE_TOP_Y, z: -10.2 };
+export const DJ_SPOT = { x: 5, y: STAGE_TOP_Y, z: -10.2 };

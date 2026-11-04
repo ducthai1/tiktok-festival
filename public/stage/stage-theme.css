@@ -141,3 +141,17 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .au-key.hit { background: linear-gradient(180deg, #ff7ac4, #b07cff); color: #fff; transform: scale(1.12); box-shadow: 0 0 16px #ff4fa3; }
 .au-grade { min-height: 46px; font: 900 40px var(--font); letter-spacing: 2px; color: #ffe08a; text-shadow: 0 0 14px #ff4fa3, 0 3px 0 #7a1a5a; opacity: 0; transform: scale(0.6); transition: opacity 0.15s, transform 0.2s cubic-bezier(.2, 1.6, .4, 1); }
 .au-grade.show { opacity: 1; transform: scale(1); }
+
+/* Danh hiệu trên đầu (Top 1-2-3, người solo, VIP): bảng chữ khung kim loại + cánh neon hai bên */
+.label .title-plate { position: relative; margin: 0 auto 4px; width: max-content; padding: 4px 18px; border-radius: 10px; font: 900 18px var(--font);
+  letter-spacing: 1px; color: #fff4c2; text-shadow: 0 0 8px #ff9d00, 0 2px 0 #4a2600; background: linear-gradient(180deg, #7a3cff, #3b0c7a 55%, #22053f);
+  border: 2px solid #f3cf6b; box-shadow: 0 0 0 2px #5a2e00, 0 0 18px rgba(255, 196, 64, 0.75), inset 0 0 10px rgba(255, 220, 120, 0.5); }
+.label .title-plate::before, .label .title-plate::after { content: ''; position: absolute; top: 50%; width: 46px; height: 30px; transform: translateY(-50%);
+  background: url('/static/assets/dance/prop-neon-wings-blue.webp') no-repeat; background-size: 200% 100%; filter: drop-shadow(0 0 6px #36d6ff); }
+.label .title-plate::before { right: 100%; background-position: left center; }
+.label .title-plate::after { left: 100%; background-position: right center; }
+.label .title-plate.rank-1 { font-size: 22px; background: linear-gradient(180deg, #ffe58a, #c98a12 55%, #6b3f00); color: #fff; text-shadow: 0 0 10px #ff5e00, 0 2px 0 #5a2300; border-color: #fff1b8; }
+.label .title-plate.rank-1::before, .label .title-plate.rank-1::after { background-image: url('/static/assets/dance/prop-neon-wings-pink.webp'); filter: drop-shadow(0 0 8px #ff4fa3); }
+.label .title-plate.rank-2 { background: linear-gradient(180deg, #f4f7ff, #9aa8c4 55%, #4b5670); color: #1d2433; text-shadow: 0 0 6px #fff; border-color: #ffffff; }
+.label .title-plate.rank-3 { background: linear-gradient(180deg, #ffc08a, #b4581c 55%, #5a2408); border-color: #ffd7a8; }
+.label .title-plate.star { background: linear-gradient(180deg, #ff6fd0, #a1157a 55%, #4a0638); border-color: #ffd1f1; }

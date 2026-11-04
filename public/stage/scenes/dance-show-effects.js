@@ -54,7 +54,7 @@ export function createShowEffects(scene) {
         spot.position.set(spot.target.position.x, 9, spot.target.position.z + 2.5);
         pool.position.set(spot.target.position.x, spot.target.position.y + 0.02, spot.target.position.z);
       }
-      pool.material.opacity += ((spotOn ? 0.32 : 0) - pool.material.opacity) * Math.min(1, dt * 4);
+      pool.material.opacity += ((spotOn ? 0.16 : 0) - pool.material.opacity) * Math.min(1, dt * 4);
       if (now < fountainUntil) {
         for (const x of FOUNTAIN_X) {
           particles.burst({ position: new THREE.Vector3(x, STAGE_TOP_Y + 0.05, STAGE_FRONT_Z + 0.2), count: 5, colors: ['#ffffff', '#fff3c4', '#ffd36b'],

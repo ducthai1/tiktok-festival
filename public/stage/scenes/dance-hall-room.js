@@ -1,7 +1,18 @@
 // Hội trường sàn nhảy: sàn LED đổi màu theo phách, sân khấu + bục Top 1-2-3, màn LED lớn chạy chữ và cột sóng nhạc,
 // giàn đèn moving-head quét chùm sáng, laser khi DROP, quả cầu disco. Mọi thứ dựng bằng code, không tải file ngoài.
 import * as THREE from '/vendor/three/three.module.js';
-import { DANCE_SLOTS, DJ_SPOT, PODIUM, SLOT_DX, SLOT_DZ, slotPosition, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
+import { DJ_SPOT, PODIUM, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
+
+// sàn LED phủ kín hội trường: ô to, màu tươi (như các phòng "virtual club")
+const TILE = 1.24;
+const TILE_COLS = 12;
+const TILE_ROWS = 16;
+const TILES = TILE_COLS * TILE_ROWS;
+const tileAt = (i) => {
+  const col = i % TILE_COLS;
+  const row = Math.floor(i / TILE_COLS);
+  return { col, row, x: (col - (TILE_COLS - 1) / 2) * TILE, z: 12.1 - row * TILE };
+};
 
 const NEON = ['#ff4fa3', '#36d6ff', '#ffd21f', '#7dff8a', '#b07cff', '#ff7a2f'];
 const BEAM_X = [-5, -3, -1, 1, 3, 5];
@@ -64,10 +75,10 @@ export function buildDanceHall(scene) {
   group.add(floor);
 
   // sàn LED: một ô sáng dưới mỗi chỗ đứng
-  const tiles = new THREE.InstancedMesh(new THREE.BoxGeometry(SLOT_DX - 0.06, 0.04, SLOT_DZ - 0.06), new THREE.MeshBasicMaterial({ color: '#fff' }), DANCE_SLOTS);
+  const tiles = new THREE.InstancedMesh(new THREE.BoxGeometry(TILE - 0.08, 0.04, TILE - 0.08), new THREE.MeshBasicMaterial({ color: '#fff' }), TILES);
   const m = new THREE.Matrix4();
-  for (let i = 0; i < DANCE_SLOTS; i += 1) {
-    const p = slotPosition(i);
+  for (let i = 0; i < TILES; i += 1) {
+    const p = tileAt(i);
     tiles.setMatrixAt(i, m.makeTranslation(p.x, 0.02, p.z));
     tiles.setColorAt(i, new THREE.Color('#000'));
   }
@@ -141,9 +152,6 @@ export function buildDanceHall(scene) {
   boothStrip.position.set(DJ_SPOT.x, STAGE_TOP_Y + 0.6, DJ_SPOT.z + 1.16);
   group.add(booth, boothStrip);
 
-  const ball = new THREE.Mesh(new THREE.IcosahedronGeometry(0.62, 2), new THREE.MeshStandardMaterial({ color: '#ddd', metalness: 1, roughness: 0.15, flatShading: true, emissive: '#333' }));
-  ball.position.set(0, 7.3, 1.5);
-  group.add(ball);
 
   // ánh sáng: nền tối, đèn màu trên đám đông nhấp theo phách, đèn rọi solo
   const hemi = new THREE.HemisphereLight('#8ea0ff', '#2a0f2a', 0.9);
@@ -166,17 +174,18 @@ export function buildDanceHall(scene) {
       const bar = Math.floor(beat / 8);
       const pattern = state.drop ? 4 : bar % 4;
       const hit = Math.pow(1 - (beat % 1), 3);
-      const level = (state.drop ? 0.95 : 0.55) * (1 - state.dim * 0.65);
-      for (let i = 0; i < DANCE_SLOTS; i += 1) {
-        const p = slotPosition(i);
+      // giữ dưới ngưỡng bloom (0.9) để sàn tươi mà không loá trắng cả khung
+      const level = (state.drop ? 0.8 : 0.62) * (1 - state.dim * 0.6);
+      for (let i = 0; i < TILES; i += 1) {
+        const p = tileAt(i);
         let v;
         if (pattern === 0) v = (p.row + p.col + Math.floor(beat)) % 2 ? 0.25 : 1; // bàn cờ đổi mỗi phách
         else if (pattern === 1) v = 0.5 + 0.5 * Math.sin(Math.hypot(p.x, p.z - 0.5) * 1.6 - beat * Math.PI); // sóng tròn từ giữa
-        else if (pattern === 2) v = Math.max(0.15, 1 - Math.abs(((beat * 2) % 12) - p.row) * 0.45); // chạy theo hàng
-        else if (pattern === 3) v = 0.6 + 0.4 * hit;
-        else v = (i * 7 + Math.floor(beat * 4)) % 5 === 0 ? 1.4 : 0.35; // DROP: nhấp nháy loạn
+        else if (pattern === 2) v = Math.max(0.3, 1 - Math.abs(((beat * 2) % TILE_ROWS) - p.row) * 0.4); // chạy theo hàng
+        else if (pattern === 3) v = 0.7 + 0.3 * hit;
+        else v = (i * 7 + Math.floor(beat * 4)) % 5 === 0 ? 1.3 : 0.5; // DROP: nhấp nháy loạn
         const hue = pattern === 3 ? (p.col * 0.08 + beat * 0.05) % 1 : ((bar * 0.17 + p.row * 0.02) % 1);
-        tiles.setColorAt(i, color.setHSL(hue, 0.95, 0.5).multiplyScalar(v * level));
+        tiles.setColorAt(i, color.setHSL(hue, 0.95, 0.5).multiplyScalar(Math.min(1.1, Math.max(0.35, v)) * level));
       }
       tiles.instanceColor.needsUpdate = true;
       edge.material.color.setHSL((beat * 0.03) % 1, 1, 0.55);
@@ -195,7 +204,6 @@ export function buildDanceHall(scene) {
         beam.rotation.y = (i < 5 ? 1 : -1) * (0.35 + 0.12 * (i % 5)) + Math.sin(t * 1.4 + i) * 0.35;
         beam.rotation.x = -0.05 - Math.abs(Math.sin(t * 0.9 + i * 0.5)) * 0.18;
       });
-      ball.rotation.y = t * 0.6;
       for (let i = 0; i < 24; i += 1) bulbs.setColorAt(i, color.setHSL(((i + Math.floor(beat * 2)) % 6) / 6, 1, (i + Math.floor(beat * 2)) % 3 ? 0.35 : 0.7));
       bulbs.instanceColor.needsUpdate = true;
       boothStrip.material.color.setHSL((beat * 0.05) % 1, 1, 0.5 + 0.2 * hit);
@@ -204,6 +212,7 @@ export function buildDanceHall(scene) {
         light.color.set(NEON[(i * 2 + bar) % NEON.length]);
       });
       hemi.intensity = 0.9 * (1 - state.dim * 0.6);
+      screen.material.color.setScalar(0.74 * (1 - state.dim * 0.45)); // màn LED tối bớt khi có solo để người solo nổi lên
       key.intensity = 1.3 * (1 - state.dim * 0.55);
       // màn LED vẽ lại ~15 lần/giây là đủ mượt
       if (Math.floor(t * 15) !== lastPaint) {

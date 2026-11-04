@@ -52,7 +52,15 @@ export function createSheetMaterial(texture, meta) {
         vUv = vec2(px.x / sheet.x, 1.0 - px.y / sheet.y);
         vLight = aLight;
         vec3 right = normalize(vec3(viewMatrix[0][0], 0.0, viewMatrix[2][0]));
-        vec3 world = center + right * position.x * aspect * h + vec3(0.0, position.y * h, 0.0);
+        vec2 p = vec2(position.x * aspect, position.y);
+        if (frames < 1.5) { // sticker tĩnh: nhún (bẹt-dãn) + lắc qua lại theo phách
+          float b = abs(sin((beat + aPhase) * 3.14159));
+          float sway = sin((beat + aPhase) * 1.5708) * 0.16;
+          p *= vec2(1.0 + 0.07 * b, 1.0 - 0.07 * b);
+          p = vec2(p.x * cos(sway) - p.y * sin(sway), p.x * sin(sway) + p.y * cos(sway));
+          p.y += b * 0.12;
+        }
+        vec3 world = center + right * p.x * h + vec3(0.0, p.y * h, 0.0);
         gl_Position = projectionMatrix * viewMatrix * vec4(world, 1.0);
       }`,
     fragmentShader: `

@@ -7,3 +7,5 @@ Camera đạo diễn (dance-camera-director.js) chuyển thể từ ClubCameraCo
 - meme-*: 44 GIF sticker meme (đầu nấm, mèo, gấu…) theo danh sách TikTokBridge/assets/gifs/sources.json của cherry9001/tiktok-live-bar
   (tải từ repo đó hoặc ảnh gốc Weibo, đã đối chiếu SHA-256 trong sources.json). Nền đặc ở mép được tách thành trong suốt.
   Bỏ meme-mushroom_dance_63 (chữ in kiểu thương hiệu game). Bản cherry-* trùng với meme-* đã gỡ.
+- ob-*, prop-*: từ methanol-dev/online-bar (MIT, public/assets/characters + props). SVG đã kiểm không có script/tham chiếu ngoài,
+  vẽ ra PNG bằng Chrome (chế độ ảnh), rồi giải mã + lưu lại bằng Pillow trong sandbox. Bỏ luffy_chibi (nhân vật có bản quyền) và 8 icon vuông có nền.

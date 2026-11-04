@@ -76,7 +76,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   scene.add(aura);
 
   function placeFor(info, ctx, e) {
-    if (info.dj) return { ...DJ_SPOT, scale: 1.8, vis: 'xung' };
+    if (info.dj) return { ...DJ_SPOT, scale: 1.4, vis: 'xung' };
     if (info.id === ctx.soloId) return { ...SOLO_SPOT, scale: 2.1, vis: 'spot' };
     const giant = ctx.giants.indexOf(info.id);
     if (giant >= 0) return { x: GIANT_SPOTS[giant].x, y: 0, z: GIANT_SPOTS[giant].z, scale: 3, vis: 'xung' };
@@ -204,7 +204,8 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
           const h = HEIGHT_M * e.scale * (sheets[key].kind === 'spot' ? 1.25 : 1);
           mesh.setMatrixAt(i, matrix.compose(tmp.set(e.pos.x, e.pos.y + hop, e.pos.z), NO_TURN, scaleV.setScalar(h)));
           phase.setX(i, e.phase);
-          light.setX(i, hero ? 1 : 0.92 * (1 - 0.55 * ctx.dim));
+          // sticker meme phần lớn màu trắng: giữ dưới ngưỡng bloom (0.9) kẻo người đứng gần camera loá trắng cả màn
+          light.setX(i, hero ? 0.86 : 0.82 * (1 - 0.55 * ctx.dim));
         }
         mesh.count = n;
         mesh.instanceMatrix.needsUpdate = true;

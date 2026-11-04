@@ -68,7 +68,8 @@ export function createLabelLayer(root) {
   let lastLayout = 0;
   let lastCount = -1;
 
-  function sync(id, { anchor, nickname, avatar = '', vip = false, small = false, offsetY = 0, className = '', group = '' }) {
+  // title: danh hiệu trên đầu (bảng chữ khung vàng, vd "BÁ CHỦ SÀN"); titleClass: kiểu khung theo hạng
+  function sync(id, { anchor, nickname, avatar = '', vip = false, small = false, offsetY = 0, className = '', group = '', title = '', titleClass = '' }) {
     let label = labels.get(id);
     if (!label) {
       const el = document.createElement('div');
@@ -96,6 +97,18 @@ export function createLabelLayer(root) {
     if (label.name.textContent !== nickname) {
       label.name.textContent = nickname;
       label.width = 0; // đo lại bề ngang ở lần vẽ tới
+    }
+    if (title || label.titleEl) {
+      if (!label.titleEl) {
+        label.titleEl = document.createElement('div');
+        label.el.prepend(label.titleEl);
+      }
+      label.titleEl.hidden = !title;
+      label.titleEl.className = `title-plate ${titleClass}`;
+      if (label.titleEl.textContent !== title) {
+        label.titleEl.textContent = title;
+        label.width = 0;
+      }
     }
     label.el.classList.toggle('vip', vip);
     label.el.classList.toggle('small', small);

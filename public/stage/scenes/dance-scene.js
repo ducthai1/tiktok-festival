@@ -5,6 +5,7 @@ import { DANCE_SLOTS, PODIUM } from '/static/shared/dance-floor-layout.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
+import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
 import { createSpriteCrowd } from './dance-sprite-crowd.js';
@@ -12,6 +13,7 @@ import { BPM } from './dance-sprite-material.js';
 import { disposeObject } from './person-model.js';
 
 const MEDALS = ['🥇', '🥈', '🥉'];
+const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
 const TIER_TITLES = { 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
 const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đứng bàn mix trên sân khấu (không phải người xem)
@@ -25,6 +27,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(52, 1080 / 1920, 0.1, 90);
   const room = buildDanceHall(scene);
+  const decor = buildHallDecor(scene);
   const crowd = createSpriteCrowd(scene, { sheets, capacity: DANCE_SLOTS + 8 });
   // trực thăng chở VIP bay ngang hội trường khi có quà lớn
   const heli = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.TextureLoader().load('/static/assets/dance/heli.webp', (t) => { t.colorSpace = THREE.SRGBColorSpace; }), transparent: true }));
@@ -72,8 +75,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       const d = byId.get(id);
       const e = crowd.get(id);
       if (!d || !e) continue;
+      const title = d.rank ? RANK_TITLES[d.rank - 1] : d.id === solo?.id ? 'SIÊU SAO' : d.giant ? 'VIP' : '';
+      const titleClass = d.rank ? `rank-${d.rank}` : title ? 'star' : '';
       labels.sync(id, { anchor: e.anchor, nickname: d.rank ? `${MEDALS[d.rank - 1]} ${d.nickname}` : d.nickname, avatar: d.avatar || '',
-        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id, group: 'dance' });
+        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id, group: 'dance', title, titleClass });
     }
     labels.keepOnly(ids);
   }
@@ -202,6 +207,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         screenTitle: solo ? (TIER_TITLES[solo.tier] || 'SOLO') : dropping ? 'DROP!!!' : 'SÀN NHẢY LIVE',
         screenSub: solo ? (byId.get(solo.id)?.nickname || '') : dropping ? 'CẢ SÀN CÙNG QUẨY' : `${state.dancers.length} người đang quẩy`
       });
+      const top1 = state.dancers.find((d) => d.rank === 1);
+      decor.update(t, beat, { top1Head: top1 ? crowd.get(top1.id)?.anchor.position : null, dim });
       show.spotlight(soloEntity ? soloEntity.pos : null);
       const k = (t - heliFrom) / 5;
       heli.visible = k >= 0 && k <= 1;
