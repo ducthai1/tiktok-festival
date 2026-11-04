@@ -152,7 +152,7 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .label .title-plate.star { background-image: url('/static/assets/dance/banners/title-neon.webp'); }
 
 /* Sàn nhảy kiểu "bar online": cột lệnh bên phải */
-.cmd-pills { position: absolute; right: 110px; top: 1120px; display: grid; gap: 7px; justify-items: end; z-index: 5; pointer-events: none; }
+.cmd-pills { position: absolute; right: 110px; top: 1300px; display: grid; gap: 7px; justify-items: end; z-index: 5; pointer-events: none; }
 .cmd-pill { display: flex; align-items: center; gap: 8px; padding: 4px 12px 4px 6px; border-radius: 999px; background: rgba(12, 8, 30, 0.62);
   border: 1px solid rgba(160, 200, 255, 0.35); backdrop-filter: blur(4px); color: #fff; font: 800 17px var(--font); }
 .cmd-icon { font-size: 20px; }
@@ -174,7 +174,7 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 #stage.theme-dance #banner small { font-size: 22px; }
 
 /* Thông báo QUÀ LỚN giữa màn (dance-gift-announcer.js): khung danh hiệu thật làm nền, nằm giữa các cột và cột lệnh */
-.big-gift { position: absolute; left: 50%; top: 860px; width: 860px; height: 250px; transform: translateX(-50%) scale(0.6); opacity: 0;
+.big-gift { position: absolute; left: 50%; top: 1020px; width: 860px; height: 250px; transform: translateX(-50%) scale(0.6); opacity: 0;
   display: flex; align-items: center; justify-content: center; gap: 18px; padding: 0 150px 10px; background: center / contain no-repeat;
   z-index: 7; pointer-events: none; transition: opacity 0.35s, transform 0.45s cubic-bezier(.2, 1.5, .4, 1); filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.7)); }
 .big-gift.show { opacity: 1; transform: translateX(-50%) scale(1); }
@@ -186,3 +186,10 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .big-gift-kc { font: 900 22px var(--font); color: #9be8ff; text-shadow: 0 2px 4px #000; }
 .big-gift.tier-5, .big-gift.tier-6 { height: 280px; width: 900px; }
 .big-gift.tier-6 .big-gift-name { font-size: 40px; color: #ffe27a; }
+
+/* Bảng quà 2 dòng (Sàn Nhảy): ảnh quà | khoảng kc (đậm) / hiệu ứng người tặng nhận được — chữ tự xuống dòng, không bị cắt */
+#legend .item .txt { display: grid; gap: 1px; min-width: 0; white-space: normal; line-height: 1.2; }
+#legend .item .txt b { font-size: 15px; color: var(--gold); }
+#legend .item .txt .fx { font-size: 15px; font-weight: 700; color: #fff; }
+#stage.theme-dance #legend .item { white-space: normal; overflow: visible; align-items: center; padding: 5px 8px; }
+#stage.theme-dance #legend .item em.gifts img { width: 34px; height: 34px; }

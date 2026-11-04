@@ -80,7 +80,13 @@ export function createHud() {
             } else em.append(el('span', '', g.emoji || '🎁'));
           }
         } else em.textContent = key;
-        item.append(em, document.createTextNode(value));
+        // "dòng 1\ndòng 2": hai dòng rõ ràng (vd khoảng kc in đậm + hiệu ứng nhận được), chữ tự xuống dòng không bị cắt
+        const lines = String(value).split('\n');
+        if (lines.length > 1) {
+          const box = el('span', 'txt');
+          box.append(el('b', '', lines[0].trim()), el('span', 'fx', lines.slice(1).join(' ').trim()));
+          item.append(em, box);
+        } else item.append(em, document.createTextNode(value));
         return item;
       };
       // Bảng gọn để không che tượng Phật: 2 trang tự lật — MIỄN PHÍ (bình luận, tim, follow) và QUÀ (các bậc quà).

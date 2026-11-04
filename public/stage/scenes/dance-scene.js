@@ -43,7 +43,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   pipeline.setBloom({ strength: 0.38, radius: 0.45, threshold: 0.9 }); // phát sáng nhẹ: bar cần đèn nhưng xem lâu không đau mắt
 
   hud.setTitle('🪩 SÀN NHẢY LIVE');
-  hud.setHint(['Chat ', '*1*', ' vào BAR · ', '*1k tim*', ' có cánh']);
+  hud.setHint(['🎁 ', '*Tặng quà*', ' → nhận ngay:']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
   const bigGift = createGiftAnnouncer(hud, {
@@ -127,7 +127,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n} đến sàn nhảy!` },
     // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số kc
     legend: [['🎁 Quà', ' theo số kc ↓']],
-    giftLabels: { 1: 'Cánh xanh + camera', 2: 'Bay lên + solo', 3: 'Solo + pháo hoa', 4: 'Khổng lồ VIP', 5: 'Pháo hoa + DROP', 6: 'Đại nhạc hội' },
+    // người TẶNG nhận được gì (ghi rõ, nhìn một lần là hiểu); bảng hiện 2 dòng: khoảng kc / hiệu ứng
+    giftRows: true,
+    giftLabels: { 1: '🦋 Có cánh + lên camera', 2: '🎈 Bay lên cao + solo ngắn', 3: '🎤 Solo sân khấu + pháo hoa',
+      4: '👑 Hoá khổng lồ VIP + trực thăng', 5: '🎆 Pháo hoa lớn + DROP cả sàn', 6: '🌌 Đại nhạc hội: laser + pháo hoa' },
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));

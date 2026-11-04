@@ -38,7 +38,12 @@ function legendFor(scene) {
   const rows = [...(scene.legend || [])];
   if (scene.giftLabels) {
     // mỗi bậc: 1 icon quà làm mẫu + khoảng kc — món nào trong khoảng đó cũng ra cùng hiệu ứng
-    for (const { tier, gifts } of giftTiers) if (gifts.length && scene.giftLabels[tier]) rows.push([gifts.slice(0, 1), ` ${tierRangeLabel(tier)} · ${scene.giftLabels[tier]}`]);
+    for (const { tier, gifts } of giftTiers) {
+      const label = scene.giftLabels[tier];
+      if (!gifts.length || !label) continue;
+      // cảnh muốn hai dòng (khoảng kc / hiệu ứng nhận được) thì khai giftRows: true
+      rows.push([gifts.slice(0, 1), scene.giftRows ? `${tierRangeLabel(tier)} kc\n${label}` : ` ${tierRangeLabel(tier)} · ${label}`]);
+    }
   }
   return rows;
 }
