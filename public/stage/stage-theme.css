@@ -168,6 +168,10 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
    trái = Cách tham gia, giữa = thanh phím solo → thông báo → banner, phải = Top + thẻ chào gọn.
    Tên/tin nhắn người xem đã hiện trên đầu nhân vật nên thẻ chào chỉ cần gọn. */
 #stage.theme-dance #hud > #howto, #stage.theme-dance #hud > #board { top: 372px; }
+/* cột phải lật trang MIỄN PHÍ ↔ TOP DÂN QUẨY (dance-dj-panel.js bật #hud.rc-top): bảng đang ẩn mờ dần rồi mới tắt hẳn */
+#stage.theme-dance .cmd-table, #stage.theme-dance #hud > #board { transition: opacity 700ms ease, visibility 0s linear 0s; }
+#stage.theme-dance #hud.rc-top .cmd-table, #stage.theme-dance #hud:not(.rc-top) > #board {
+  opacity: 0; visibility: hidden; transition: opacity 700ms ease, visibility 0s linear 700ms; }
 #stage.theme-dance #hud > #welcome { left: auto; right: 94px; top: 650px; width: 252px; min-height: 0; max-height: 330px;
   gap: 8px; padding: 12px 12px 14px; border-radius: 22px; border-width: 2px; }
 #stage.theme-dance #welcome .welcome-avatars img, #stage.theme-dance #welcome .welcome-avatars .ava { width: 64px; height: 64px; border-width: 3px; }

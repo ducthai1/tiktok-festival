@@ -2,6 +2,7 @@
 // (vùng bình luận TikTok nằm bên trái nên cột phải luôn đọc được).
 // Video DJ: public/assets/dance/dj/dj.mp4 (không có file thì màn LED chạy chữ + cột sóng nhạc như cũ).
 const DJ_VIDEO = '/static/assets/dance/dj/dj.mp4';
+const FLIP_MS = 8000;
 
 // [biểu tượng, cách làm (gõ gì / làm gì), được gì] — đọc thành "Gõ [đổi nv] → Đổi nhân vật".
 // Vào live là tự có nhân vật trên sàn (sự kiện vào phòng) — không cần dòng nào cho việc đó (user bỏ dòng "Vào live").
@@ -35,5 +36,22 @@ export function createDjPanel(hud, { onVideo }) {
   }
   table.append(grid);
   hud.gameRoot.append(table);
-  return { video, dispose: () => { video.pause(); video.removeAttribute('src'); } };
+  // cột phải chỉ đủ chỗ MỘT bảng (nửa dưới màn bị bình luận / gợi ý tặng quà TikTok che) → LẬT TRANG mỗi 8 s giữa
+  // MIỄN PHÍ và TOP DÂN QUẨY (user chọn). Bảng Top còn trống thì chỉ hiện MIỄN PHÍ. Mờ dần bằng CSS (#hud.rc-top).
+  const hudRoot = hud.gameRoot.parentElement;
+  const board = document.getElementById('board');
+  let showTop = false;
+  const flip = setInterval(() => {
+    showTop = !showTop && Boolean(board?.childElementCount);
+    hudRoot.classList.toggle('rc-top', showTop);
+  }, FLIP_MS);
+  return {
+    video,
+    dispose: () => {
+      clearInterval(flip);
+      hudRoot.classList.remove('rc-top');
+      video.pause();
+      video.removeAttribute('src');
+    }
+  };
 }
