@@ -175,6 +175,8 @@ export function createTrackPlayer(ctx, out) {
       return true;
     },
     specialKind: () => special?.kind || '',
+    /** Phách + nhịp/phút của bài THƯỜNG đang phát (null khi đang nhạc quà lớn / dừng) — lớp DJ bám theo. */
+    groove: () => (special || !main.track || main.audio.paused ? null : { beat: beatOf(main), bpm: main.track.bpm }),
     playing: () => (special ? !extra.audio.paused : Boolean(main.track) && !main.audio.paused),
     beat() {
       if (special && extra.track && !extra.audio.paused) return beatOf(extra);

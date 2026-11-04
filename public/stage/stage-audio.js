@@ -6,6 +6,7 @@ import { createSamplePlayer } from './stage-sample-player.js';
 import { createSpeech } from './stage-speech.js';
 import { isCleanForDisplay } from '../shared/profanity-filter.js';
 import { createSynth } from './stage-sfx.js';
+import { createDjHype } from './stage-dj-hype.js';
 
 export function createStageAudio() {
   let ctx = null;
@@ -40,12 +41,16 @@ export function createStageAudio() {
       ducks.music.node = ctx.createGain();
       ducks.sfx.node = ctx.createGain();
       sfxBus.connect(ducks.sfx.node).connect(master);
-      musicBus.connect(ducks.music.node).connect(master);
+      ducks.music.node.connect(master);
       master.connect(limiter).connect(analyser).connect(ctx.destination);
       synth = createSynth(ctx, sfxBus);
       music = createMusic(ctx, musicBus);
       tracks = createTrackPlayer(ctx, musicBus);
       samples = createSamplePlayer(ctx, sfxBus);
+      // nhạc nền đi qua lớp DJ (bass dày, bơm theo phách, câu hô / nổ / giật mỗi 16 ô nhịp) rồi mới tới nút hạ nhạc
+      createDjHype(ctx, { input: musicBus, output: ducks.music.node, voiceOut: master, play: playCue, duck,
+        quietUntil: () => Math.max(ducks.music.until, ducks.sfx.until), groove: () => tracks.groove(),
+        shoutsOn: () => opts.sound && opts.tts, active: () => theme === 'dance' });
       if (theme) samples.setTheme(theme);
       applyLevels();
     }
@@ -77,6 +82,18 @@ export function createStageAudio() {
     });
   }
 
+  function playCue(name, options = {}) {
+    if (!opts.sound) return;
+    try {
+      audio();
+      if (samples.play(name, options)) return;
+      if (options.delay) setTimeout(() => synth.play(name), options.delay * 1000);
+      else synth.play(name);
+    } catch {
+      // âm thanh bị chặn khi chưa có thao tác — bỏ qua
+    }
+  }
+
   /** Hạ nhạc nền còn `level` (0..1) trong `seconds` giây rồi trả lại — để tiếng kèn / giọng đọc nổi lên. */
   function duck(level = 0.35, seconds = 3, bus = 'music') {
     const d = ducks[bus];
@@ -104,17 +121,7 @@ export function createStageAudio() {
         // không có WebAudio — bỏ qua
       }
     },
-    play(name, options = {}) {
-      if (!opts.sound) return;
-      try {
-        audio();
-        if (samples.play(name, options)) return;
-        if (options.delay) setTimeout(() => synth.play(name), options.delay * 1000);
-        else synth.play(name);
-      } catch {
-        // âm thanh bị chặn khi chưa có thao tác — bỏ qua
-      }
-    },
+    play: playCue,
     duck,
     /** Nhạc riêng cho khoảnh khắc lớn (vip / star / festival / drop) trong `ms` — false nếu không có / nhạc đang tắt. */
     special(kind, ms) {
