@@ -89,6 +89,21 @@ export function buildHallDecor(scene) {
   spots.position.copy(ballPos);
   group.add(ball, rays, spots);
 
+  // hai tấm LED chấm hai bên màn chính (chấm sáng chạy sóng + cột nhạc)
+  const dots = document.createElement('canvas');
+  dots.width = 48;
+  dots.height = 80;
+  const dg = dots.getContext('2d');
+  const dotsTex = new THREE.CanvasTexture(dots);
+  dotsTex.magFilter = THREE.NearestFilter;
+  dotsTex.colorSpace = THREE.SRGBColorSpace;
+  for (const side of [-1, 1]) {
+    const panel = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 4.4), new THREE.MeshBasicMaterial({ map: dotsTex, toneMapped: false }));
+    panel.position.set(side * 5.9, STAGE_TOP_Y + 2.6, STAGE_FRONT_Z - 4.6);
+    group.add(panel);
+  }
+  let lastDots = -1;
+
   // bảng "DJ STAGE" khung vàng cạnh bàn DJ
   const djPlate = new THREE.Sprite(new THREE.SpriteMaterial({ map: textTexture('DJ STAGE', { w: 640, h: 170, frame: '#e6c26a', color: '#ffe7a3', glow: '#ffb000', font: '900 86px "Be Vietnam Pro", sans-serif' }), toneMapped: false }));
   djPlate.scale.set(2.4, 0.64, 1);
@@ -132,6 +147,21 @@ export function buildHallDecor(scene) {
         halo.rotation.z = t * (i % 2 ? -1.2 : 1.2);
         halo.position.y = PODIUM[i].y + 0.15 + Math.abs(Math.sin(t * 2 + i)) * 0.25;
       });
+      if (Math.floor(t * 15) !== lastDots) {
+        lastDots = Math.floor(t * 15);
+        dg.fillStyle = '#05040a';
+        dg.fillRect(0, 0, 48, 80);
+        for (let y = 0; y < 20; y += 1) {
+          for (let x = 0; x < 12; x += 1) {
+            const eq = 20 - y < 6 + 12 * Math.abs(Math.sin(beat * Math.PI * 0.5 + x * 0.7));
+            const wave = Math.sin(x * 0.6 + y * 0.35 - t * 4) > 0.55;
+            const v = eq ? 1 : wave ? 0.45 : 0.08;
+            dg.fillStyle = eq ? `hsla(${(200 + y * 6 + beat * 20) % 360},100%,${40 + v * 40}%,1)` : `rgba(255,255,255,${v})`;
+            dg.fillRect(x * 4 + 1, y * 4 + 1, 2, 2);
+          }
+        }
+        dotsTex.needsUpdate = true;
+      }
       crown.visible = Boolean(top1Head);
       if (top1Head) crown.position.set(top1Head.x, top1Head.y + 0.35 + Math.sin(t * 2.4) * 0.08, top1Head.z);
     }

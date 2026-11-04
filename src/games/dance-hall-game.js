@@ -228,7 +228,10 @@ export function createDanceHallGame({ random = Math.random } = {}) {
         if (d) {
           const before = Math.floor(d.likes / LIKES_FOR_CAMERA);
           d.likes += event.likeCount;
-          if (Math.floor(d.likes / LIKES_FOR_CAMERA) > before) fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, likes: d.likes });
+          if (Math.floor(d.likes / LIKES_FOR_CAMERA) > before) {
+            d.wingsUntil = Math.max(d.wingsUntil, now) + WINGS_MS; // "1k tym có cánh"
+            fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, likes: d.likes });
+          }
         }
         addHype(Math.min(event.likeCount, 30), now, fx);
       } else if (event.type === 'follow' || event.type === 'share') {

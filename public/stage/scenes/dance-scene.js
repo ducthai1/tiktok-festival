@@ -5,6 +5,7 @@ import { DANCE_SLOTS, PODIUM } from '/static/shared/dance-floor-layout.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
+import { createDjPanel, DJ_PANEL_RATIO } from './dance-dj-panel.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -41,9 +42,16 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   pipeline.setBloom({ strength: 0.55, radius: 0.5, threshold: 0.9 }); // ngưỡng cao: viền trắng của sticker không bị loá
 
   hud.setTitle('🪩 SÀN NHẢY LIVE');
-  hud.setHint(['Chat ', '*1*', ' để vào sàn · ', '*1k tim*', ' có cảnh']);
+  hud.setHint(['Chat ', '*1*', ' vào BAR · ', '*1k tim*', ' có cánh']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
+  // có video DJ: khung trên chiếu video, màn LED trong hội trường chiếu cùng video, cảnh 3D dồn xuống phần dưới
+  const djPanel = createDjPanel(hud, {
+    onVideo(video) {
+      room.setScreenVideo(video);
+      camera.setViewOffset(1080, 1920, 0, -Math.round(1920 * DJ_PANEL_RATIO * 0.4), 1080, 1920);
+    }
+  });
   let lastBeat = 0;
   labels.setDeclutter('dance', { top: 260, bottom: 1700, gap: 2, maxSteps: 2, shiftX: [0, -28, 28] });
 
@@ -115,8 +123,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     scene,
     camera,
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n} đến sàn nhảy!` },
-    legend: [['1', ' Vào sàn'], ['đổi nv', ' Đổi nhân vật'], ['đi vòng', ' Đi 1 vòng sàn'], ['nhảy', ' Nhảy 1 cái'],
-      ['to lên · nhỏ lại', ' Đổi cỡ'], ['quẩy', ' Quẩy bung'], ['1k ❤', ' Lên camera'], ['🎁 Quà', ' theo số kc ↓']],
+    // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số kc
+    legend: [['🎁 Quà', ' theo số kc ↓']],
     giftLabels: { 1: 'Cánh xanh + camera', 2: 'Bay lên + solo', 3: 'Solo + pháo hoa', 4: 'Khổng lồ VIP', 5: 'Pháo hoa + DROP', 6: 'Đại nhạc hội' },
     update(snapshot) {
       state = snapshot.state;
@@ -214,11 +222,13 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       heli.visible = k >= 0 && k <= 1;
       if (heli.visible) heli.position.set(-10 + k * 20, 6.4 + Math.sin(k * Math.PI * 3) * 0.3, 0.5);
       show.update(dt, t);
+      djPanel.draw();
       director.update(dt, t, beat, crowd.bounds(), PODIUM[0]);
       if (Math.floor(t * 2) !== Math.floor((t - dt) * 2)) refreshLabels();
     },
     dispose() {
       crowd.dispose();
+      djPanel.dispose();
       show.dispose();
       disposeObject(scene);
       hud.clearGame();

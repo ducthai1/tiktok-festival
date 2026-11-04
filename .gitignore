@@ -8,3 +8,6 @@ data/*
 # ảnh thô tải về để xử lý + asset có giấy phép không cho phát hành công khai (Mixamo): chỉ để trên máy
 art-inbox/
 public/assets-local/
+
+# video DJ của chủ kênh cho Sàn Nhảy (file lớn, không đưa lên git)
+public/assets/dance/dj/

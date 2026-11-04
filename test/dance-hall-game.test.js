@@ -63,6 +63,7 @@ test('"nhảy" jumps once, "đi vòng" walks a loop, "to lên"/"nhỏ lại" res
   let fx = [];
   for (let i = 0; i < 40; i += 1) fx = fx.concat(game.handleEvent({ type: 'like', user: user(4), likeCount: 30 }, i * 100));
   assert.equal(fx.filter((f) => f.kind === 'camera').length, 1);
+  assert.equal(dancer(game, 'u4', 4000).wings, true); // 1k tim có cánh
   game.handleEvent(gift(5, 1), 0);
   assert.equal(dancer(game, 'u5').wings, true);
 });

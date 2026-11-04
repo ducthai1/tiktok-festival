@@ -6,12 +6,12 @@ import { DJ_SPOT, PODIUM, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/danc
 // sàn LED phủ kín hội trường: ô to, màu tươi (như các phòng "virtual club")
 const TILE = 1.24;
 const TILE_COLS = 12;
-const TILE_ROWS = 16;
+const TILE_ROWS = 20;
 const TILES = TILE_COLS * TILE_ROWS;
 const tileAt = (i) => {
   const col = i % TILE_COLS;
   const row = Math.floor(i / TILE_COLS);
-  return { col, row, x: (col - (TILE_COLS - 1) / 2) * TILE, z: 12.1 - row * TILE };
+  return { col, row, x: (col - (TILE_COLS - 1) / 2) * TILE, z: 17.1 - row * TILE };
 };
 
 const NEON = ['#ff4fa3', '#36d6ff', '#ffd21f', '#7dff8a', '#b07cff', '#ff7a2f'];
@@ -70,7 +70,7 @@ export function buildDanceHall(scene) {
   scene.background = new THREE.Color('#05030c');
   scene.fog = new THREE.Fog('#05030c', 22, 48);
 
-  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshStandardMaterial({ color: '#0d0a18', roughness: 0.32, metalness: 0.3 }));
+  const floor = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshStandardMaterial({ color: '#1a1030', roughness: 0.32, metalness: 0.3 }));
   floor.rotation.x = -Math.PI / 2;
   group.add(floor);
 
@@ -103,8 +103,8 @@ export function buildDanceHall(scene) {
 
   // màn LED lớn sau sân khấu
   const painter = screenPainter();
-  const screen = new THREE.Mesh(new THREE.PlaneGeometry(13, 8.1), new THREE.MeshBasicMaterial({ map: painter.texture, color: '#bdbdbd', toneMapped: false }));
-  screen.position.set(0, STAGE_TOP_Y + 4.3, STAGE_FRONT_Z - 4.7);
+  const screen = new THREE.Mesh(new THREE.PlaneGeometry(9, 6), new THREE.MeshBasicMaterial({ map: painter.texture, color: '#bdbdbd', toneMapped: false }));
+  screen.position.set(0, STAGE_TOP_Y + 3.6, STAGE_FRONT_Z - 4.7);
   group.add(screen);
 
   // giàn đèn + chùm moving-head (hình nón cộng sáng, đầu nón ở giàn)
@@ -167,8 +167,20 @@ export function buildDanceHall(scene) {
 
   const color = new THREE.Color();
   let lastPaint = -1;
+  let videoOn = false;
   return {
     group,
+    /** Màn LED sau sân khấu chiếu video DJ (cùng video ở khung trên màn hình). */
+    setScreenVideo(video) {
+      const map = new THREE.VideoTexture(video);
+      map.colorSpace = THREE.SRGBColorSpace;
+      // cắt giữa cho đầy màn 9×6 (video dọc hay ngang đều không bị méo)
+      const va = (video.videoWidth || 16) / (video.videoHeight || 9);
+      if (va > 1.5) { map.repeat.set(1.5 / va, 1); map.offset.set((1 - 1.5 / va) / 2, 0); } else { map.repeat.set(1, va / 1.5); map.offset.set(0, (1 - va / 1.5) / 2); }
+      screen.material.map = map;
+      screen.material.needsUpdate = true;
+      videoOn = true;
+    },
     /** state: { drop, dim (0..1, tối sàn khi có solo), screenTitle, screenSub, lasers } */
     update(t, beat, state) {
       const bar = Math.floor(beat / 8);
@@ -215,7 +227,7 @@ export function buildDanceHall(scene) {
       screen.material.color.setScalar(0.74 * (1 - state.dim * 0.45)); // màn LED tối bớt khi có solo để người solo nổi lên
       key.intensity = 1.3 * (1 - state.dim * 0.55);
       // màn LED vẽ lại ~15 lần/giây là đủ mượt
-      if (Math.floor(t * 15) !== lastPaint) {
+      if (!videoOn && Math.floor(t * 15) !== lastPaint) {
         lastPaint = Math.floor(t * 15);
         painter.paint(beat, { title: state.screenTitle, sub: state.screenSub, hue: (bar * 47) % 360 });
       }
