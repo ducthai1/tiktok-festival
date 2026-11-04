@@ -3,6 +3,7 @@
 // cột sáng theo hạng, vòng hào quang xoay, số hạng phát sáng, vương miện lơ lửng trên đầu Top 1.
 import * as THREE from '/vendor/three/three.module.js';
 import { DJ_SPOT, PODIUM, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
+import { buildDiscoBall } from './dance-disco-ball.js';
 
 const NEON = ['#36d6ff', '#ff4fa3', '#ffd21f', '#b07cff', '#7dff8a'];
 const RANK = ['#ffd21f', '#dfe7f5', '#ff9a3c'];
@@ -61,33 +62,8 @@ export function buildHallDecor(scene) {
     group.add(rail);
   }
 
-  // quả cầu disco lớn: tia sáng toả xuống + đốm phản chiếu quay khắp phòng
-  const ballPos = new THREE.Vector3(0, 8.3, 0.5);
-  const ball = new THREE.Mesh(new THREE.IcosahedronGeometry(0.95, 3), new THREE.MeshStandardMaterial({ color: '#e8e8f0', metalness: 1, roughness: 0.12, flatShading: true, emissive: '#555566' }));
-  ball.position.copy(ballPos);
-  const rays = new THREE.Group();
-  rays.position.copy(ballPos);
-  for (let i = 0; i < 12; i += 1) {
-    // tia ngắn (4,5 m): camera solo đứng thấp không bao giờ lọt vào trong nón (lọt vào là cả màn bị phủ trắng)
-    const ray = new THREE.Mesh(new THREE.ConeGeometry(0.3, 4.5, 10, 1, true).translate(0, -2.25, 0), additive(NEON[i % NEON.length], 0.09));
-    ray.rotation.set(0.55 + (i % 3) * 0.22, 0, 0);
-    const holder = new THREE.Object3D();
-    holder.rotation.y = (i / 12) * Math.PI * 2;
-    holder.add(ray);
-    rays.add(holder);
-  }
-  const spotsGeo = new THREE.BufferGeometry();
-  const pts = [];
-  for (let i = 0; i < 260; i += 1) {
-    const u = Math.random() * 2 - 1;
-    const a = Math.random() * Math.PI * 2;
-    const r = 10 + Math.random() * 3;
-    pts.push(Math.sqrt(1 - u * u) * Math.cos(a) * r, -Math.abs(u) * r * 0.8, Math.sqrt(1 - u * u) * Math.sin(a) * r);
-  }
-  spotsGeo.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-  const spots = new THREE.Points(spotsGeo, new THREE.PointsMaterial({ color: '#ffffff', size: 0.16, transparent: true, opacity: 0.8, blending: THREE.AdditiveBlending, depthWrite: false }));
-  spots.position.copy(ballPos);
-  group.add(ball, rays, spots);
+  // quả cầu disco gương thật (dance-disco-ball.js)
+  const disco = buildDiscoBall(scene, new THREE.Vector3(0, 8.1, 0.5));
 
   // hai tấm LED chấm hai bên màn chính (chấm sáng chạy sóng + cột nhạc)
   const dots = document.createElement('canvas');
@@ -138,10 +114,7 @@ export function buildHallDecor(scene) {
     update(t, beat, { top1Head, dim }) {
       const hit = Math.pow(1 - (beat % 1), 3);
       bars.forEach((bar, i) => bar.material.color.set(NEON[(i + Math.floor(beat / 2)) % NEON.length]).multiplyScalar(0.55 + 0.45 * (i % 2 ? hit : 1 - hit)));
-      ball.rotation.y = t * 0.5;
-      rays.rotation.y = t * 0.5;
-      spots.rotation.y = t * 0.5;
-      for (const holder of rays.children) holder.children[0].material.opacity = 0.05 + 0.06 * hit * (1 - dim * 0.6);
+      disco.update(t, beat, dim);
       podiums.forEach(({ pillar, halo }, i) => {
         pillar.material.opacity = (0.05 + 0.05 * Math.abs(Math.sin(t * 1.4 + i))) * (i === 0 ? 1.4 : 1);
         halo.rotation.z = t * (i % 2 ? -1.2 : 1.2);

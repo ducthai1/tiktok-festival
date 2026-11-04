@@ -43,10 +43,10 @@ export function createCameraDirector(camera) {
         wantLook.set(sweep * 0.8, 1.0, front - 1.5);
         fov = 46;
         break;
-      case 2: // lia hàng giữa theo chiều ngược lại
-        wantPos.set(mirrored * 0.5, 6.2, front + 6.8);
-        wantLook.set(mirrored * 0.8, 0.9, middle);
-        fov = 47;
+      case 2: // từ giữa đám đông ngước lên quả cầu disco + tia sáng toả xuống
+        wantPos.set(mirrored * 0.35, 3.4, front + 3.6);
+        wantLook.set(0, 6.4, 0.5);
+        fov = THREE.MathUtils.lerp(54, 50, t);
         break;
       case 3: // nhìn qua đầu đám đông về phía sân khấu + màn LED
         wantPos.set(sweep * 0.4, 7.4, front + 5.5);

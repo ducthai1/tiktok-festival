@@ -2,6 +2,7 @@
 // giàn đèn moving-head quét chùm sáng, laser khi DROP, quả cầu disco. Mọi thứ dựng bằng code, không tải file ngoài.
 import * as THREE from '/vendor/three/three.module.js';
 import { DJ_SPOT, PODIUM, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
+import { beamCone, createBeamMaterial, syncBeamOrigin } from './dance-volumetric-beam.js';
 
 // sàn LED phủ kín hội trường: ô to, màu tươi (như các phòng "virtual club")
 const TILE = 1.24;
@@ -16,18 +17,6 @@ const tileAt = (i) => {
 
 const NEON = ['#ff4fa3', '#36d6ff', '#ffd21f', '#7dff8a', '#b07cff', '#ff7a2f'];
 const BEAM_X = [-5, -3, -1, 1, 3, 5];
-
-function beamMaterial() {
-  return new THREE.ShaderMaterial({
-    uniforms: { color: { value: new THREE.Color('#fff') }, strength: { value: 0.5 } },
-    transparent: true,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-    side: THREE.DoubleSide,
-    vertexShader: 'varying float vY; void main(){ vY = uv.y; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
-    fragmentShader: 'uniform vec3 color; uniform float strength; varying float vY; void main(){ gl_FragColor = vec4(color * strength * pow(vY, 1.6), 1.0); }'
-  });
-}
 
 function screenPainter() {
   const canvas = document.createElement('canvas');
@@ -118,14 +107,14 @@ export function buildDanceHall(scene) {
   truss.position.set(0, 8.2, 0.5);
   group.add(truss);
   const beams = BEAM_X.map((x, i) => {
-    const mat = beamMaterial();
-    const cone = new THREE.Mesh(new THREE.ConeGeometry(1.25, 10, 24, 1, true), mat);
-    cone.geometry.translate(0, -5, 0); // đỉnh nón ở gốc → xoay quanh đầu đèn
+    // chùm sáng thể tích (shader đèn rọi drei): mép mờ, nhạt dần theo khoảng cách như ánh sáng xuyên khói
+    const mat = createBeamMaterial({ attenuation: 11, anglePower: 5 });
+    const cone = beamCone(11, 1.3, mat);
     const pivot = new THREE.Object3D();
     pivot.position.set(x, 8.1, 0.5);
     pivot.add(cone);
     group.add(pivot);
-    return { pivot, mat, i };
+    return { pivot, mat, cone, i };
   });
 
   // laser: chùm tia mảnh từ hai mép sân khấu, chỉ bật khi DROP / solo lớn
@@ -214,8 +203,9 @@ export function buildDanceHall(scene) {
         const swing = state.drop ? 2.2 : 1;
         b.pivot.rotation.z = Math.sin(t * 0.6 * swing + b.i * 0.9) * 0.55;
         b.pivot.rotation.x = 0.35 + Math.sin(t * 0.45 * swing + b.i * 1.7) * 0.4;
-        b.mat.uniforms.color.value.set(NEON[(b.i + bar) % NEON.length]);
-        b.mat.uniforms.strength.value = (0.16 + 0.22 * hit) * (state.drop ? 1.6 : 1) * (1 - state.dim * 0.7);
+        b.mat.uniforms.lightColor.value.set(NEON[(b.i + bar) % NEON.length]);
+        b.mat.uniforms.opacity.value = (0.45 + 0.5 * hit) * (state.drop ? 1.4 : 1) * (1 - state.dim * 0.7);
+        syncBeamOrigin(b.cone);
       }
       lasers.forEach((beam, i) => {
         const on = state.lasers ? 0.85 : 0;
