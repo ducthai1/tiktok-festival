@@ -33,10 +33,10 @@ export function createCameraDirector(camera) {
     const camFront = front + 9;
     let fov = 50;
     switch (shot) {
-      case 0: // toàn cảnh từ trên cao: thấy kín sàn cả trăm người + sân khấu + màn LED
-        wantPos.lerpVectors(target.set(0, 14.5, camFront + 4.5), wantPos.set(0, 13, camFront + 3.2), t);
-        wantLook.set(0, 0.2, middle - 1.2);
-        fov = THREE.MathUtils.lerp(56, 52, t);
+      case 0: // toàn cảnh: sàn kín người ở nửa dưới, sân khấu + màn LED chiếu DJ ở giữa khung (không bị HUD phía trên che)
+        wantPos.lerpVectors(target.set(0, 9.4, camFront + 4.6), wantPos.set(0, 8.6, camFront + 3.6), t);
+        wantLook.set(0, 3.9, middle - 5);
+        fov = THREE.MathUtils.lerp(58, 54, t);
         break;
       case 1: // lia ngang hàng đầu
         wantPos.set(sweep * 0.5, 4.6, front + 6.2);
@@ -48,10 +48,10 @@ export function createCameraDirector(camera) {
         wantLook.set(mirrored * 0.8, 0.9, middle);
         fov = 47;
         break;
-      case 3: // nhìn cao xuống các hàng cuối
-        wantPos.set(sweep * 0.4, 9.2, front + 5.5);
-        wantLook.set(sweep * 0.7, 0.6, back + 0.4);
-        fov = 48;
+      case 3: // nhìn qua đầu đám đông về phía sân khấu + màn LED
+        wantPos.set(sweep * 0.4, 7.4, front + 5.5);
+        wantLook.set(sweep * 0.5, 2.4, back - 2.5);
+        fov = 52;
         break;
       case 4: // trượt ngang trước bục Top 1-2-3 trên sân khấu
         wantPos.lerpVectors(target.set(-side * 2.2, 4.4, podium.z + 7.5), wantPos.set(side * 2.2, 4.0, podium.z + 6.6), t);

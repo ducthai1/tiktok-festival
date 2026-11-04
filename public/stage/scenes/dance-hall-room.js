@@ -103,8 +103,14 @@ export function buildDanceHall(scene) {
 
   // màn LED lớn sau sân khấu
   const painter = screenPainter();
-  const screen = new THREE.Mesh(new THREE.PlaneGeometry(9, 6), new THREE.MeshBasicMaterial({ map: painter.texture, color: '#bdbdbd', toneMapped: false }));
-  screen.position.set(0, STAGE_TOP_Y + 3.6, STAGE_FRONT_Z - 4.7);
+  // màn LED lớn 16:9 sau sân khấu (chiếu video DJ nếu có)
+  const SCREEN_W = 12.4;
+  const SCREEN_H = 7;
+  const screen = new THREE.Mesh(new THREE.PlaneGeometry(SCREEN_W, SCREEN_H), new THREE.MeshBasicMaterial({ map: painter.texture, color: '#bdbdbd', toneMapped: false }));
+  screen.position.set(0, STAGE_TOP_Y + 3.9, STAGE_FRONT_Z - 4.7);
+  const frame = new THREE.Mesh(new THREE.PlaneGeometry(SCREEN_W + 0.5, SCREEN_H + 0.5), new THREE.MeshBasicMaterial({ color: '#1a1030' }));
+  frame.position.set(0, STAGE_TOP_Y + 3.9, STAGE_FRONT_Z - 4.72);
+  group.add(frame);
   group.add(screen);
 
   // giàn đèn + chùm moving-head (hình nón cộng sáng, đầu nón ở giàn)
@@ -174,9 +180,10 @@ export function buildDanceHall(scene) {
     setScreenVideo(video) {
       const map = new THREE.VideoTexture(video);
       map.colorSpace = THREE.SRGBColorSpace;
-      // cắt giữa cho đầy màn 9×6 (video dọc hay ngang đều không bị méo)
+      // cắt giữa cho đầy màn (video dọc hay ngang đều không bị méo)
+      const sa = SCREEN_W / SCREEN_H;
       const va = (video.videoWidth || 16) / (video.videoHeight || 9);
-      if (va > 1.5) { map.repeat.set(1.5 / va, 1); map.offset.set((1 - 1.5 / va) / 2, 0); } else { map.repeat.set(1, va / 1.5); map.offset.set(0, (1 - va / 1.5) / 2); }
+      if (va > sa) { map.repeat.set(sa / va, 1); map.offset.set((1 - sa / va) / 2, 0); } else { map.repeat.set(1, va / sa); map.offset.set(0, (1 - va / sa) / 2); }
       screen.material.map = map;
       screen.material.needsUpdate = true;
       videoOn = true;
@@ -224,7 +231,7 @@ export function buildDanceHall(scene) {
         light.color.set(NEON[(i * 2 + bar) % NEON.length]);
       });
       hemi.intensity = 0.9 * (1 - state.dim * 0.6);
-      screen.material.color.setScalar(0.74 * (1 - state.dim * 0.45)); // màn LED tối bớt khi có solo để người solo nổi lên
+      screen.material.color.setScalar((videoOn ? 0.86 : 0.74) * (1 - state.dim * 0.45)); // màn LED tối bớt khi có solo để người solo nổi lên
       key.intensity = 1.3 * (1 - state.dim * 0.55);
       // màn LED vẽ lại ~15 lần/giây là đủ mượt
       if (!videoOn && Math.floor(t * 15) !== lastPaint) {

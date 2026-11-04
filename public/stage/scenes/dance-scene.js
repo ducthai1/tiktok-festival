@@ -5,7 +5,7 @@ import { DANCE_SLOTS, PODIUM } from '/static/shared/dance-floor-layout.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
-import { createDjPanel, DJ_PANEL_RATIO } from './dance-dj-panel.js';
+import { createDjPanel } from './dance-dj-panel.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -45,13 +45,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   hud.setHint(['Chat ', '*1*', ' vào BAR · ', '*1k tim*', ' có cánh']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
-  // có video DJ: khung trên chiếu video, màn LED trong hội trường chiếu cùng video, cảnh 3D dồn xuống phần dưới
-  const djPanel = createDjPanel(hud, {
-    onVideo(video) {
-      room.setScreenVideo(video);
-      camera.setViewOffset(1080, 1920, 0, -Math.round(1920 * DJ_PANEL_RATIO * 0.4), 1080, 1920);
-    }
-  });
+  // có video DJ: chiếu trên màn LED lớn sau sân khấu
+  const djPanel = createDjPanel(hud, { onVideo: (video) => room.setScreenVideo(video) });
   let lastBeat = 0;
   labels.setDeclutter('dance', { top: 260, bottom: 1700, gap: 2, maxSteps: 2, shiftX: [0, -28, 28] });
 
@@ -222,7 +217,6 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       heli.visible = k >= 0 && k <= 1;
       if (heli.visible) heli.position.set(-10 + k * 20, 6.4 + Math.sin(k * Math.PI * 3) * 0.3, 0.5);
       show.update(dt, t);
-      djPanel.draw();
       director.update(dt, t, beat, crowd.bounds(), PODIUM[0]);
       if (Math.floor(t * 2) !== Math.floor((t - dt) * 2)) refreshLabels();
     },

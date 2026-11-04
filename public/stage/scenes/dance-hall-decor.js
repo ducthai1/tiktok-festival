@@ -98,8 +98,8 @@ export function buildHallDecor(scene) {
   dotsTex.magFilter = THREE.NearestFilter;
   dotsTex.colorSpace = THREE.SRGBColorSpace;
   for (const side of [-1, 1]) {
-    const panel = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 4.4), new THREE.MeshBasicMaterial({ map: dotsTex, toneMapped: false }));
-    panel.position.set(side * 5.9, STAGE_TOP_Y + 2.6, STAGE_FRONT_Z - 4.6);
+    const panel = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 4.4), new THREE.MeshBasicMaterial({ map: dotsTex, toneMapped: false }));
+    panel.position.set(side * 7.4, STAGE_TOP_Y + 2.6, STAGE_FRONT_Z - 4.4);
     group.add(panel);
   }
   let lastDots = -1;
