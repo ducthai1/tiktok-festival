@@ -14,6 +14,16 @@ export function formatNumber(n) {
   return new Intl.NumberFormat('vi-VN').format(Math.round(n || 0));
 }
 
+// Thông báo có tiêu đề (tên người: 1 dòng, dài thì "…") + dòng việc bên dưới; không có tiêu đề thì là một dòng chữ như cũ.
+function toastContent(node, title, textNode) {
+  if (!title) return node.append(textNode);
+  const line = el('span', 'toast-text');
+  line.append(textNode);
+  const body = el('div', 'toast-body');
+  body.append(el('b', 'toast-name', title), line);
+  node.append(body);
+}
+
 // Bảng Cách tham gia: trang MIỄN PHÍ hiện 9 giây, trang QUÀ 12,5 giây (nhiều dòng hơn, cần đọc lâu hơn)
 const FREE_PAGE_MS = 9000;
 const GIFT_PAGE_MS = 12500;
@@ -133,7 +143,7 @@ export function createHud() {
      * Thông báo cộng dồn: cùng key (vd cùng người + cùng quà) thì sửa dòng đang hiện (×1 → ×2 → ×3) và
      * nảy nhẹ, thay vì thêm dòng mới mỗi lần. render(total) trả chữ cho tổng hiện tại.
      */
-    comboToast(key, add, render, { gold = false, image = '', ms = 4200 } = {}) {
+    comboToast(key, add, render, { gold = false, image = '', ms = 4200, title = '' } = {}) {
       let combo = combos.get(key);
       if (combo && combo.node.isConnected && !combo.node.classList.contains('out')) {
         combo.total += add;
@@ -146,7 +156,7 @@ export function createHud() {
         const node = el('div', `toast${gold ? ' gold' : ''}`);
         if (image) node.append(avatarNode(image));
         const text = document.createTextNode(render(add));
-        node.append(text);
+        toastContent(node, title, text);
         toastRoot.prepend(node);
         while (toastRoot.children.length > 4) toastRoot.lastChild.remove();
         combo = { node, text, total: add };
@@ -159,10 +169,10 @@ export function createHud() {
         if (combos.get(key) === combo) combos.delete(key);
       }, ms);
     },
-    toast(text, { gold = false, image = '', ms = 4200 } = {}) {
+    toast(text, { gold = false, image = '', ms = 4200, title = '' } = {}) {
       const node = el('div', `toast${gold ? ' gold' : ''}`);
       if (image) node.append(avatarNode(image));
-      node.append(document.createTextNode(text));
+      toastContent(node, title, document.createTextNode(text));
       toastRoot.prepend(node);
       while (toastRoot.children.length > 4) toastRoot.lastChild.remove();
       setTimeout(() => {

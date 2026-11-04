@@ -162,7 +162,7 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .cmd-val { font: 800 16px var(--font); color: #fff; line-height: 1.2; overflow-wrap: anywhere; text-shadow: 0 1px 2px #000; }
 
 /* Sàn nhảy — bố cục không đè nhau: thanh Độ Quẩy (252–359) → dưới đó 3 cột:
-   trái = Cách tham gia (+ thông báo quà ngay dưới), giữa = thanh phím solo + banner, phải = Top + thẻ chào gọn.
+   trái = Cách tham gia, giữa = thanh phím solo → thông báo → banner, phải = Top + thẻ chào gọn.
    Tên/tin nhắn người xem đã hiện trên đầu nhân vật nên thẻ chào chỉ cần gọn. */
 #stage.theme-dance #hud > #howto, #stage.theme-dance #hud > #board { top: 372px; }
 #stage.theme-dance #hud > #welcome { left: auto; right: 94px; top: 640px; width: 252px; min-height: 0; max-height: 330px;
@@ -173,7 +173,15 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 #stage.theme-dance #welcome .line { font-size: 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 #stage.theme-dance #hud > #test-badge { top: 96px; }
 #stage.theme-dance .au-bar { top: 380px; }
-#stage.theme-dance #banner { left: 370px; right: 370px; top: 556px; font-size: 40px; }
+/* Thông báo (quà, follow, tim): cột giữa, ngay dưới thanh phím audition + chữ PERFECT (thanh hết ở ~534), chữ to dễ đọc.
+   Chỗ cố định dù thanh phím đang ẩn — không nhảy lên xuống. top !important: stage-hud.js đặt top inline để bám dưới bảng
+   Cách tham gia (bố cục chung các game khác). Tối đa 3 thông báo, mỗi cái: tên 1 dòng + việc ≤ 2 dòng → không chạm banner (850). */
+#stage.theme-dance #toasts { left: 368px; right: 368px; width: auto; top: 548px !important; align-items: stretch; gap: 8px; }
+#stage.theme-dance .toast { gap: 10px; padding: 8px 14px; border-radius: 18px; font-size: 21px; line-height: 1.22; }
+#stage.theme-dance .toast img { width: 46px; height: 46px; border-radius: 12px; }
+#stage.theme-dance .toast-name { font-size: 24px; font-weight: 900; color: #ffe27a; text-shadow: 0 2px 3px rgba(0, 0, 0, 0.6); }
+#stage.theme-dance #toasts .toast:nth-child(n+4) { display: none; }
+#stage.theme-dance #banner { left: 370px; right: 370px; top: 850px; font-size: 40px; }
 #stage.theme-dance #banner small { font-size: 22px; }
 
 /* Thông báo QUÀ LỚN giữa màn (dance-gift-announcer.js): khung danh hiệu thật làm nền, nằm giữa các cột và cột lệnh */

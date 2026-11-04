@@ -200,9 +200,9 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       } else if (fx.kind === 'bubble') {
         markRecent(fx.userId);
         labels.bubble(fx.userId, fx.text);
-      } else if (fx.kind === 'toast') hud.toast(fx.text);
+      } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar });
       else if (fx.kind === 'camera' && e) {
-        if (!fx.reason) hud.toast(`📸 ${fx.nickname} đủ ${formatNumber(fx.likes)} tim — có cánh + lên hình!`, { gold: true });
+        if (!fx.reason) hud.toast(`❤ ${formatNumber(fx.likes)} tim → có cánh 📸`, { gold: true, title: fx.nickname });
         markRecent(fx.userId);
         lastGlance = -Infinity; // 1k tim / follow / share luôn được lên hình
         glance(fx.userId, fx.reason ? 3 : 4);
@@ -213,7 +213,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         markRecent(fx.userId);
       } else if (fx.kind === 'hearts' && e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), fx.count);
       else if (fx.kind === 'gift') {
-        hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 ${fx.nickname} tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture });
+        hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture, title: fx.nickname });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
         if (fx.tier < 3) audio.play('pop');
         bigGift.show(fx);

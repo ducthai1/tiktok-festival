@@ -240,7 +240,9 @@ export function createDanceHallGame({ random = Math.random } = {}) {
           d.waveUntil = now + WAVE_MS;
           fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, reason: event.type }); // follow / share = được lên camera
         }
-        fx.push({ kind: 'toast', text: `${event.user.nickname} vừa ${event.type === 'follow' ? 'follow' : 'chia sẻ'} sàn nhảy — lên camera! 📸` });
+        // tên tách riêng: màn hiện tên 1 dòng (dài thì "…") + dòng việc bên dưới, không bị tên dài đẩy thành 3–4 dòng
+        fx.push({ kind: 'toast', nickname: event.user.nickname, avatar: event.user.avatar,
+          text: `${event.type === 'follow' ? '➕ follow' : '↗ chia sẻ live'} → lên hình 📸` });
         addHype(event.type === 'follow' ? 20 : 30, now, fx);
       }
       advanceSolo(now, fx);

@@ -106,6 +106,27 @@ test('the biggest gifts launch fireworks and drop the beat, and top gifters keep
   assert.equal(dancer(game, 'u1').rank, 1);
 });
 
+test('entering the live puts the viewer on the floor without typing anything', () => {
+  const game = createDanceHallGame();
+  const fx = game.handleEvent({ type: 'member', user: { ...user(1), avatar: 'https://example.test/a.webp' } }, 0);
+  assert.ok(fx.some((f) => f.kind === 'join' && f.userId === 'u1'));
+  const d = dancer(game, 'u1');
+  assert.equal(d.nickname, 'Người 1');
+  assert.equal(d.avatar, 'https://example.test/a.webp');
+  assert.ok(d.slot >= 0);
+  // sàn đầy người đã tham gia: người chỉ vào xem không đẩy ai ra; còn người im lặng thì nhường chỗ cho người mới
+  const full = createDanceHallGame();
+  for (let i = 1; i <= DANCE_SLOTS; i += 1) full.handleEvent(chat(i, 'hello'), i);
+  full.handleEvent({ type: 'member', user: user(9001) }, 9000);
+  assert.equal(dancer(full, 'u9001'), undefined);
+  const mixed = createDanceHallGame();
+  mixed.handleEvent({ type: 'member', user: user(1) }, 0);
+  for (let i = 2; i <= DANCE_SLOTS; i += 1) mixed.handleEvent(chat(i, 'hello'), i);
+  mixed.handleEvent({ type: 'member', user: user(9001) }, 9000);
+  assert.ok(dancer(mixed, 'u9001'));
+  assert.equal(dancer(mixed, 'u1'), undefined);
+});
+
 test('watchers leave after 5 quiet minutes, people who took part after 10', () => {
   const game = createDanceHallGame();
   game.handleEvent({ type: 'member', user: user(1) }, 0);
