@@ -14,7 +14,7 @@ export function createSpeech({ context, output, duck, options }) {
 
   async function fetchClip(text) {
     try {
-      const voice = pickVoice(options().voice); // "random" → mỗi câu một giọng
+      const voice = pickVoice(options().voice, text); // "random" → mỗi câu một giọng (theo nội dung, khớp câu tạo sẵn)
       const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(voice)}`);
       if (!res.ok) return null;
       return await context().decodeAudioData(await res.arrayBuffer());

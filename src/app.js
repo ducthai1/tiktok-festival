@@ -11,7 +11,8 @@ import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
-import { isVoiceSetting } from '../public/shared/tts-voices.js';
+import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
+import { thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
 
@@ -95,6 +96,18 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     sockets.broadcast({ t: 'gifts', tiers: giftTiers, sampleGifts });
   }
 
+  // Người xem vừa xuất hiện (vào phòng / bình luận / tim…) ở Sàn Nhảy → tạo sẵn câu "Cảm ơn <tên>, đã follow!" bằng đúng
+  // giọng màn hình sẽ dùng → lúc họ follow, giọng đọc phát ngay cùng hiệu ứng thay vì trễ 3–4 giây chờ tạo giọng.
+  const followPrepared = new Set();
+  function prefetchFollowThanks(event) {
+    const user = event.user;
+    if (!settings.tts || hub.activeId() !== 'dance' || !user?.id || event.type === 'follow' || followPrepared.has(user.id)) return;
+    followPrepared.add(user.id);
+    if (followPrepared.size > 3000) followPrepared.delete(followPrepared.values().next().value);
+    const text = thankLine({ kind: 'follow', nickname: user.nickname });
+    tts.prefetch(text, pickVoice(settings.ttsVoice, text));
+  }
+
   const live = createLiveConnectionManager({
     providerFactories: providerFactories || {
       tiktok: (opts) => createTikTokConnectorProvider({ ...opts, apiKey: config.eulerApiKey }),
@@ -102,6 +115,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onEvent(event) {
       emitFx(hub.activeId(), hub.handleEvent(event));
+      prefetchFollowThanks(event);
       // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
       if (event.type === 'gift' && !event.simulated && event.gift.diamondsEach > 0) {
         const known = giftCatalog.find((g) => g.name === event.gift.name);

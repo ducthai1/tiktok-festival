@@ -6,7 +6,7 @@ import { speakableGift, speakableName } from '../../shared/spoken-name.js';
 export function thankLine(fx) {
   const name = speakableName(fx.nickname, '');
   const thanks = name ? `Cảm ơn ${name},` : 'Cảm ơn bạn';
-  if (fx.kind === 'follow') return `${thanks} đã follow sàn nhảy! Mời bạn lên sân khấu!`;
+  if (fx.kind === 'follow') return `${thanks} đã follow! Mời bạn lên sân khấu!`; // ngắn → tạo giọng nhanh; thường đã tạo sẵn
   const gift = `${fx.count > 1 ? `${fx.count} ` : ''}${speakableGift(fx.giftName)}`;
   if (fx.tier >= 6) return `${name ? `Đại gia ${name}! Cảm ơn bạn` : 'Cảm ơn đại gia'} đã tặng ${gift}! Đại nhạc hội bắt đầu! Cả sàn cháy hết mình nào!`;
   if (fx.tier >= 5) return `${name ? `Siêu sao ${name}! Cảm ơn bạn` : 'Cảm ơn siêu sao'} đã tặng ${gift}! Cả sàn quẩy lên nào!`;

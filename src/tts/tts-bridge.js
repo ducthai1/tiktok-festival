@@ -31,6 +31,9 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   let shared = false; // đang dùng chung giọng đọc của một server game khác trên máy (cùng cổng)
   let probing = false;
   let queue = Promise.resolve(); // một câu một lúc (CPU)
+  let foreground = 0; // câu màn hình đang chờ đọc
+  const background = []; // câu TẠO SẴN (cảm ơn follow của người vừa vào) — chỉ chạy lúc rảnh, giữ 6 câu mới nhất
+  let backgroundBusy = false;
 
   async function healthy() {
     try {
@@ -95,8 +98,18 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
     return Buffer.from(await res.arrayBuffer());
   }
 
+  function pumpBackground() {
+    if (!ready || foreground || backgroundBusy || !background.length) return;
+    const [text, voice] = background.pop(); // người mới nhất trước
+    backgroundBusy = true;
+    speak(text, voice, true).finally(() => {
+      backgroundBusy = false;
+      pumpBackground();
+    });
+  }
+
   /** Buffer wav của câu `text` bằng giọng `voice` (đệm đĩa), null nếu chưa có giọng đọc / câu lỗi. */
-  function speak(text, voice) {
+  function speak(text, voice, isBackground = false) {
     const key = crypto.createHash('sha1').update(`${CACHE_VERSION}|${voice}|${text}`).digest('hex');
     if (pending.has(key)) return pending.get(key);
     const file = path.join(cacheDir, `${key}.wav`);
@@ -104,7 +117,13 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
       const cached = await fs.promises.readFile(file).catch(() => null);
       if (cached) return cached;
       if (!ready) return null;
-      const run = queue.then(() => synthesize(text, voice));
+      if (!isBackground) foreground += 1;
+      const run = queue.then(() => synthesize(text, voice)).finally(() => {
+        if (!isBackground) {
+          foreground -= 1;
+          setTimeout(pumpBackground, 50);
+        }
+      });
       queue = run.catch(() => {});
       const wav = await run;
       await fs.promises.mkdir(cacheDir, { recursive: true });
@@ -147,6 +166,16 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   }
 
   return {
+    /** Tạo sẵn câu (vd cảm ơn follow của người vừa vào) lúc rảnh → khi cần thì đọc ngay, không chờ 3–4 giây. */
+    prefetch(text, voice) {
+      if (!ready || !text || text.length > MAX_CHARS || !isCleanForDisplay(text)) return;
+      const key = crypto.createHash('sha1').update(`${CACHE_VERSION}|${voice}|${text}`).digest('hex');
+      fs.promises.access(path.join(cacheDir, `${key}.wav`)).catch(() => {
+        background.push([text, voice]);
+        if (background.length > 6) background.shift();
+        pumpBackground();
+      });
+    },
     /** Bật giọng đọc; chưa cài môi trường thì lần hỏi đọc sau cài xong sẽ tự bật. */
     start() {
       autoStart = true;

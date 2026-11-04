@@ -53,3 +53,28 @@ test('a second game server reuses the voice already running instead of starting 
   bridge.stop();
   voice.close();
 });
+
+test('a follow thank-you made ahead of time is served at once, without asking the voice again', async () => {
+  const http = await import('node:http');
+  let speaks = 0;
+  const voice = http.createServer((req, res) => {
+    if (req.url === '/health') return res.end(JSON.stringify({ ok: true }));
+    speaks += 1;
+    req.resume();
+    req.on('end', () => setTimeout(() => { res.writeHead(200, { 'Content-Type': 'audio/wav' }); res.end(Buffer.from('RIFF-made-ahead')); }, 30));
+  });
+  await new Promise((resolve) => voice.listen(0, '127.0.0.1', resolve));
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-'));
+  const bridge = createTtsBridge({ dataDir, python: process.execPath, port: voice.address().port });
+  bridge.start();
+  for (let i = 0; i < 20 && !bridge.status().ready; i += 1) await new Promise((r) => setTimeout(r, 25));
+  const line = 'Cảm ơn Lan Anh, đã follow! Mời bạn lên sân khấu!';
+  bridge.prefetch(line, 'Trúc Ly');
+  await new Promise((r) => setTimeout(r, 200));
+  assert.equal(speaks, 1);
+  const res = await call(bridge, `text=${encodeURIComponent(line)}&voice=${encodeURIComponent('Trúc Ly')}`);
+  assert.equal(res.code, 200);
+  assert.equal(speaks, 1); // lấy từ đệm, không tạo lại
+  bridge.stop();
+  voice.close();
+});

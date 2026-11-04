@@ -36,13 +36,14 @@ test('names are tidied so the voice says them clearly, with a pause after the na
   assert.equal(thankLine({ nickname: 'Minh Tuấn 2k5', giftName: 'Hoa hồng', count: 5, tier: 3 }), 'Cảm ơn Minh Tuấn, đã tặng 5 Hoa hồng!');
   assert.equal(thankLine({ nickname: 'BeNa', giftName: 'Sư tử', count: 1, tier: 6 }),
     'Đại gia Be Na! Cảm ơn bạn đã tặng Sư tử! Đại nhạc hội bắt đầu! Cả sàn cháy hết mình nào!');
-  assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Cảm ơn Lan Anh, đã follow sàn nhảy! Mời bạn lên sân khấu!');
+  assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Cảm ơn Lan Anh, đã follow! Mời bạn lên sân khấu!');
 });
 
 test('each line uses one of the three voices at random, and a combo makes one moment', async () => {
   const { pickVoice, TTS_VOICES } = await import('../public/shared/tts-voices.js');
   const { createComboFilter } = await import('../public/stage/scenes/dance-voice-lines.js');
-  assert.deepEqual(new Set(Array.from({ length: 60 }, (_, i) => pickVoice('random', () => (i % 3) / 3 + 0.01))), new Set(TTS_VOICES));
+  assert.deepEqual(new Set(Array.from({ length: 60 }, (_, i) => pickVoice('random', `Cảm ơn khách ${i}, đã follow!`))), new Set(TTS_VOICES));
+  assert.equal(pickVoice('random', 'cùng một câu'), pickVoice('random', 'cùng một câu')); // cùng câu → cùng giọng (khớp câu tạo sẵn)
   assert.equal(pickVoice('Adam bựa'), 'Ngọc Huyền');
   assert.equal(pickVoice('Trúc Ly'), 'Trúc Ly');
   // combo: chỉ lượt đầu thành khoảnh khắc; lượt sau của cùng người + cùng món chỉ cộng số trên thông báo

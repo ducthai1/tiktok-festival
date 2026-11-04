@@ -205,7 +205,7 @@ $('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoic
 // Nghe thử giọng ngay trên trang này (máy chủ đọc bằng VieNeu; lần đầu mỗi câu mất 1–3 giây)
 $('tts-preview').addEventListener('click', async () => {
   const text = 'Quá đỉnh! Cảm ơn Minh Tuấn, đã tặng 5 Hoa hồng! Mời VIP lên sân khấu!';
-  const voice = pickVoice($('set-ttsVoice').value);
+  const voice = pickVoice($('set-ttsVoice').value, String(Math.random())); // nghe thử: mỗi lần bấm một giọng
   const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(voice)}`).catch(() => null);
   if (!res?.ok) return toast(res ? await res.text() : 'Không kết nối được máy chủ', true);
   toast(`🔊 ${voice}`);
