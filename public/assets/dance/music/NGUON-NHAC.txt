@@ -1,0 +1,4 @@
+11 bài house/EDM từ Mixkit (https://mixkit.co/free-stock-music/, Mixkit License — miễn phí kể cả thương mại, không cần ghi nguồn).
+Danh sách gợi ý theo audio/MUSIC.md của repo acccaccc248-crypto/bar-live. BPM + nhịp đầu đo lại (tracks.json),
+mã hoá lại 128 kbps, cân âm lượng -15 LUFS, cắt ≤ 3 phút bằng ffmpeg trong sandbox. Thêm bài: chép mp3 + thêm dòng vào tracks.json.
+KHÔNG dùng nhạc có bản quyền (remix TikTok, Vinahouse…): TikTok tắt tiếng / phạt buổi live.

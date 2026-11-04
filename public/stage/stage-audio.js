@@ -1,6 +1,7 @@
 // Âm thanh tự tổng hợp bằng WebAudio (không dùng file nhạc có bản quyền): hiệu ứng + nhạc nền theo game,
 // cộng giọng đọc của trình duyệt (speechSynthesis) cho lời khấn/quẻ/chào. Không chạy chương trình ngoài.
 import { createMusic } from './stage-music.js';
+import { createTrackPlayer } from './stage-track-player.js';
 import { createSynth } from './stage-sfx.js';
 
 export function createStageAudio() {
@@ -11,6 +12,7 @@ export function createStageAudio() {
   let analyser = null;
   let synth = null;
   let music = null;
+  let tracks = null; // nhạc file (Sàn Nhảy); không có thì dùng nhạc tổng hợp
   let theme = '';
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false };
   const speakQueue = [];
@@ -31,6 +33,7 @@ export function createStageAudio() {
       master.connect(limiter).connect(analyser).connect(ctx.destination);
       synth = createSynth(ctx, sfxBus);
       music = createMusic(ctx, musicBus);
+      tracks = createTrackPlayer(ctx, musicBus);
       applyLevels();
     }
     if (ctx.state === 'suspended') ctx.resume().then(applyLevels).catch(() => {});
@@ -42,8 +45,23 @@ export function createStageAudio() {
     const t = ctx.currentTime;
     sfxBus.gain.setTargetAtTime(opts.sound ? opts.volume : 0, t, 0.05);
     musicBus.gain.setTargetAtTime(opts.sound && opts.music ? opts.musicVolume : 0, t, 0.3);
-    if (theme && opts.sound && opts.music && ctx.state === 'running') music.start(theme);
-    else music.stop();
+    const wanted = () => theme && opts.sound && opts.music && ctx.state === 'running';
+    if (!wanted()) {
+      music.stop();
+      tracks.stop();
+      return;
+    }
+    const name = theme;
+    tracks.available(name).then((has) => {
+      if (!wanted() || theme !== name) return;
+      if (has) {
+        music.stop();
+        tracks.start(name);
+      } else {
+        tracks.stop();
+        music.start(name);
+      }
+    });
   }
 
   function speakNext() {
@@ -86,7 +104,8 @@ export function createStageAudio() {
     },
     // Phách của nhạc nền đang phát (null khi tắt tiếng / chưa có nhạc) — cảnh tự đếm nhịp riêng khi null.
     beat() {
-      return music && ctx?.state === 'running' ? music.beat() : null;
+      if (!music || ctx?.state !== 'running') return null;
+      return tracks.playing() ? tracks.beat() : music.beat();
     },
     speak(text, channel = 'story') {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;

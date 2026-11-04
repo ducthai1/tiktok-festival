@@ -6,6 +6,7 @@ import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
+import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -39,12 +40,18 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const show = createShowEffects(scene);
   const director = createCameraDirector(camera);
   director.snap(crowd.bounds(), PODIUM[0]);
-  pipeline.setBloom({ strength: 0.55, radius: 0.5, threshold: 0.9 }); // ngưỡng cao: viền trắng của sticker không bị loá
+  pipeline.setBloom({ strength: 0.38, radius: 0.45, threshold: 0.9 }); // phát sáng nhẹ: bar cần đèn nhưng xem lâu không đau mắt
 
   hud.setTitle('🪩 SÀN NHẢY LIVE');
   hud.setHint(['Chat ', '*1*', ' vào BAR · ', '*1k tim*', ' có cánh']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
+  const bigGift = createGiftAnnouncer(hud, {
+    onShow(fx) {
+      audio.play(fx.tier >= 5 ? 'fanfare' : 'coin');
+      audio.speak(`Cảm ơn ${fx.nickname} đã tặng ${fx.giftName}`, 'story');
+    }
+  });
   // có video DJ: chiếu trên màn LED lớn sau sân khấu
   const djPanel = createDjPanel(hud, { onVideo: (video) => room.setScreenVideo(video) });
   let lastBeat = 0;
@@ -176,7 +183,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       else if (fx.kind === 'gift') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 ${fx.nickname} tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
-        audio.play(fx.tier >= 3 ? 'coin' : 'pop');
+        if (fx.tier < 3) audio.play('pop');
+        bigGift.show(fx);
         markRecent(fx.userId);
         if (fx.tier === 1) glance(fx.userId);
       } else if (fx.kind === 'fountains') {
@@ -223,6 +231,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     dispose() {
       crowd.dispose();
       djPanel.dispose();
+      bigGift.dispose();
       show.dispose();
       disposeObject(scene);
       hud.clearGame();

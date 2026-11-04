@@ -183,7 +183,7 @@ export function buildDanceHall(scene) {
       const pattern = state.drop ? 4 : bar % 4;
       const hit = Math.pow(1 - (beat % 1), 3);
       // giữ dưới ngưỡng bloom (0.9) để sàn tươi mà không loá trắng cả khung
-      const level = (state.drop ? 0.8 : 0.62) * (1 - state.dim * 0.6);
+      const level = (state.drop ? 0.6 : 0.45) * (1 - state.dim * 0.6); // dịu mắt: xem lâu không chói
       for (let i = 0; i < TILES; i += 1) {
         const p = tileAt(i);
         let v;
@@ -191,7 +191,7 @@ export function buildDanceHall(scene) {
         else if (pattern === 1) v = 0.5 + 0.5 * Math.sin(Math.hypot(p.x, p.z - 0.5) * 1.6 - beat * Math.PI); // sóng tròn từ giữa
         else if (pattern === 2) v = Math.max(0.3, 1 - Math.abs(((beat * 2) % TILE_ROWS) - p.row) * 0.4); // chạy theo hàng
         else if (pattern === 3) v = 0.7 + 0.3 * hit;
-        else v = (i * 7 + Math.floor(beat * 4)) % 5 === 0 ? 1.3 : 0.5; // DROP: nhấp nháy loạn
+        else v = (i * 7 + Math.floor(beat)) % 5 === 0 ? 1 : 0.6; // DROP: đổi ô mỗi phách (không nhấp nháy nhanh — hại mắt người nhạy sáng)
         const hue = pattern === 3 ? (p.col * 0.08 + beat * 0.05) % 1 : ((bar * 0.17 + p.row * 0.02) % 1);
         tiles.setColorAt(i, color.setHSL(hue, 0.95, 0.5).multiplyScalar(Math.min(1.1, Math.max(0.35, v)) * level));
       }
@@ -204,11 +204,11 @@ export function buildDanceHall(scene) {
         b.pivot.rotation.z = Math.sin(t * 0.6 * swing + b.i * 0.9) * 0.55;
         b.pivot.rotation.x = 0.35 + Math.sin(t * 0.45 * swing + b.i * 1.7) * 0.4;
         b.mat.uniforms.lightColor.value.set(NEON[(b.i + bar) % NEON.length]);
-        b.mat.uniforms.opacity.value = (0.45 + 0.5 * hit) * (state.drop ? 1.4 : 1) * (1 - state.dim * 0.7);
+        b.mat.uniforms.opacity.value = (0.22 + 0.16 * hit) * (state.drop ? 1.15 : 1) * (1 - state.dim * 0.7);
         syncBeamOrigin(b.cone);
       }
       lasers.forEach((beam, i) => {
-        const on = state.lasers ? 0.85 : 0;
+        const on = state.lasers ? 0.45 : 0;
         beam.material.opacity += (on - beam.material.opacity) * 0.15;
         beam.rotation.y = (i < 5 ? 1 : -1) * (0.35 + 0.12 * (i % 5)) + Math.sin(t * 1.4 + i) * 0.35;
         beam.rotation.x = -0.05 - Math.abs(Math.sin(t * 0.9 + i * 0.5)) * 0.18;
@@ -217,7 +217,7 @@ export function buildDanceHall(scene) {
       bulbs.instanceColor.needsUpdate = true;
       boothStrip.material.color.setHSL((beat * 0.05) % 1, 1, 0.5 + 0.2 * hit);
       washes.forEach((light, i) => {
-        light.intensity = (14 + 26 * hit) * (state.drop ? 1.6 : 1) * (1 - state.dim * 0.75);
+        light.intensity = (11 + 10 * hit) * (state.drop ? 1.25 : 1) * (1 - state.dim * 0.75);
         light.color.set(NEON[(i * 2 + bar) % NEON.length]);
       });
       hemi.intensity = 0.9 * (1 - state.dim * 0.6);

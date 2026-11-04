@@ -11,3 +11,6 @@ public/assets-local/
 
 # video DJ của chủ kênh cho Sàn Nhảy (file lớn, không đưa lên git)
 public/assets/dance/dj/
+
+# nhạc nền Sàn Nhảy (file lớn, tải lại theo public/assets/dance/music/NGUON-NHAC.txt)
+public/assets/dance/music/*.mp3

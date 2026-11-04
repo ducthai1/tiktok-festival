@@ -105,9 +105,9 @@ export function buildDiscoBall(scene, position, radius = 0.95) {
       const hit = Math.pow(1 - (beat % 1), 3);
       for (const cone of beams) {
         syncBeamOrigin(cone);
-        cone.material.uniforms.opacity.value = (0.35 + 0.35 * hit) * (1 - dim * 0.6);
+        cone.material.uniforms.opacity.value = (0.18 + 0.12 * hit) * (1 - dim * 0.6);
       }
-      spots.material.opacity = 0.5 + 0.3 * hit;
+      spots.material.opacity = 0.35 + 0.15 * hit;
     }
   };
 }

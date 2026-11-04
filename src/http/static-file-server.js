@@ -15,6 +15,7 @@ const TYPES = {
   '.svg': 'image/svg+xml',
   '.woff2': 'font/woff2',
   '.mp4': 'video/mp4', // video DJ của sàn nhảy (public/assets/dance/dj/)
+  '.mp3': 'audio/mpeg', // nhạc nền sàn nhảy (public/assets/dance/music/)
   '.webm': 'video/webm',
   '.ico': 'image/x-icon'
 };

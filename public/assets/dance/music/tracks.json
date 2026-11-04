@@ -1,0 +1,57 @@
+{
+ "dance-zero": {
+  "file": "dance-zero.mp3",
+  "bpm": 124.5,
+  "firstBeat": 0.405
+ },
+ "expressive-courage": {
+  "file": "expressive-courage.mp3",
+  "bpm": 127.5,
+  "firstBeat": 0.186
+ },
+ "golden-storm": {
+  "file": "golden-storm.mp3",
+  "bpm": 127.5,
+  "firstBeat": 0.302
+ },
+ "house-fest": {
+  "file": "house-fest.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.358
+ },
+ "house-vibez": {
+  "file": "house-vibez.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.148
+ },
+ "infected-mushroom-vibes": {
+  "file": "infected-mushroom-vibes.mp3",
+  "bpm": 143.5,
+  "firstBeat": 0.242
+ },
+ "infected-vibes": {
+  "file": "infected-vibes.mp3",
+  "bpm": 139.5,
+  "firstBeat": 0.176
+ },
+ "lets-move": {
+  "file": "lets-move.mp3",
+  "bpm": 120.0,
+  "firstBeat": 0.023
+ },
+ "positive-energy": {
+  "file": "positive-energy.mp3",
+  "bpm": 136.0,
+  "firstBeat": 0.128
+ },
+ "take-this-higher": {
+  "file": "take-this-higher.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.358
+ },
+ "techno-fest-vibes": {
+  "file": "techno-fest-vibes.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.218
+ }
+}

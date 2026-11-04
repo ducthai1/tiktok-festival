@@ -172,3 +172,17 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 #stage.theme-dance .au-bar { top: 380px; }
 #stage.theme-dance #banner { left: 370px; right: 370px; top: 556px; font-size: 40px; }
 #stage.theme-dance #banner small { font-size: 22px; }
+
+/* Thông báo QUÀ LỚN giữa màn (dance-gift-announcer.js): khung danh hiệu thật làm nền, nằm giữa các cột và cột lệnh */
+.big-gift { position: absolute; left: 50%; top: 860px; width: 860px; height: 250px; transform: translateX(-50%) scale(0.6); opacity: 0;
+  display: flex; align-items: center; justify-content: center; gap: 18px; padding: 0 150px 10px; background: center / contain no-repeat;
+  z-index: 7; pointer-events: none; transition: opacity 0.35s, transform 0.45s cubic-bezier(.2, 1.5, .4, 1); filter: drop-shadow(0 0 24px rgba(0, 0, 0, 0.7)); }
+.big-gift.show { opacity: 1; transform: translateX(-50%) scale(1); }
+.big-gift img { width: 104px; height: 104px; object-fit: contain; flex: none; filter: drop-shadow(0 0 14px rgba(255, 230, 150, 0.9)); animation: big-gift-bob 0.9s ease-in-out infinite; }
+@keyframes big-gift-bob { 50% { transform: translateY(-8px) rotate(-4deg); } }
+.big-gift-text { display: grid; gap: 2px; text-align: left; min-width: 0; }
+.big-gift-name { font: 900 34px var(--font); color: #fff3c4; text-shadow: 0 0 10px #ff8a00, 0 3px 0 #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 430px; }
+.big-gift-what { font: 800 24px var(--font); color: #fff; text-shadow: 0 2px 4px #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 430px; }
+.big-gift-kc { font: 900 22px var(--font); color: #9be8ff; text-shadow: 0 2px 4px #000; }
+.big-gift.tier-5, .big-gift.tier-6 { height: 280px; width: 900px; }
+.big-gift.tier-6 .big-gift-name { font-size: 40px; color: #ffe27a; }

@@ -113,7 +113,7 @@ export function buildHallDecor(scene) {
     /** top1: vị trí đỉnh đầu Top 1 (Vector3) hoặc null */
     update(t, beat, { top1Head, dim }) {
       const hit = Math.pow(1 - (beat % 1), 3);
-      bars.forEach((bar, i) => bar.material.color.set(NEON[(i + Math.floor(beat / 2)) % NEON.length]).multiplyScalar(0.55 + 0.45 * (i % 2 ? hit : 1 - hit)));
+      bars.forEach((bar, i) => bar.material.color.set(NEON[(i + Math.floor(beat / 2)) % NEON.length]).multiplyScalar(0.4 + 0.25 * (i % 2 ? hit : 1 - hit)));
       disco.update(t, beat, dim);
       podiums.forEach(({ pillar, halo }, i) => {
         pillar.material.opacity = (0.05 + 0.05 * Math.abs(Math.sin(t * 1.4 + i))) * (i === 0 ? 1.4 : 1);
