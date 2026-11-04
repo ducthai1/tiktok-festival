@@ -1,9 +1,4 @@
 {
- "dance-zero": {
-  "file": "dance-zero.mp3",
-  "bpm": 124.5,
-  "firstBeat": 0.405
- },
  "expressive-courage": {
   "file": "expressive-courage.mp3",
   "bpm": 127.5,
@@ -14,11 +9,6 @@
   "file": "house-fest.mp3",
   "bpm": 123.0,
   "firstBeat": 0.358
- },
- "house-vibez": {
-  "file": "house-vibez.mp3",
-  "bpm": 123.0,
-  "firstBeat": 0.148
  },
  "infected-mushroom-vibes": {
   "file": "infected-mushroom-vibes.mp3",
@@ -40,12 +30,6 @@
   "file": "positive-energy.mp3",
   "bpm": 136.0,
   "firstBeat": 0.128
- },
- "take-this-higher": {
-  "file": "take-this-higher.mp3",
-  "bpm": 123.0,
-  "firstBeat": 0.358,
-  "start": 8.651
  },
  "techno-fest-vibes": {
   "file": "techno-fest-vibes.mp3",
@@ -93,32 +77,12 @@
   "hot": 56.0,
   "start": 14.0
  },
- "hiding-under": {
-  "file": "hiding-under.mp3",
-  "bpm": 129.0,
-  "firstBeat": 0.069,
-  "hot": 59.139
- },
  "house-vibes": {
   "file": "house-vibes.mp3",
   "bpm": 120.0,
   "firstBeat": 0.116,
   "hot": 24.116,
   "start": 13.616
- },
- "karma": {
-  "file": "karma.mp3",
-  "bpm": 129.0,
-  "firstBeat": 0.302,
-  "hot": 96.116,
-  "start": 11.0
- },
- "lust": {
-  "file": "lust.mp3",
-  "bpm": 124.5,
-  "firstBeat": 0.405,
-  "hot": 92.935,
-  "start": 12.935
  },
  "machine-drum-vibes": {
   "file": "machine-drum-vibes.mp3",
@@ -146,13 +110,6 @@
   "firstBeat": 0.021,
   "hot": 47.164,
   "special": "star"
- },
- "the-clique": {
-  "file": "the-clique.mp3",
-  "bpm": 115.0,
-  "firstBeat": 0.0,
-  "hot": 51.13,
-  "start": 11.478
  },
  "trance-party": {
   "file": "trance-party.mp3",
@@ -219,18 +176,5 @@
   "bpm": 123.0,
   "firstBeat": 0.079,
   "hot": 15.201
- },
- "anthem-01": {
-  "file": "anthem-01.mp3",
-  "bpm": 129.5,
-  "firstBeat": 0.286,
-  "hot": 131.869
- },
- "shoot-the-devil-tonight": {
-  "file": "shoot-the-devil-tonight.mp3",
-  "bpm": 120.0,
-  "firstBeat": 0.0,
-  "hot": 83.0,
-  "start": 6.0
  }
 }

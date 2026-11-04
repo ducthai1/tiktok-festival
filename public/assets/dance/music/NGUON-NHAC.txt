@@ -14,6 +14,9 @@ Nights With Ga, Goa Trance Mantra, Rising Forest, House 02, Anthem #01, Shoot th
 (i-do, what-about-action, golden-storm, india, super-strong, oh-lord, trap-electro-vibes, house-classic, drum-and-bass-vibes,
 sweatin-it — file vẫn để trong thư mục, chỉ xoá dòng khỏi tracks.json). Bài có dạo đầu nhẹ ≥ 8 s có `start` = vào trước
 đoạn sung 1 ô nhịp.
+04/11/2026 22:00 user vẫn chê chưa sung → bỏ thêm 9 bài điểm đo < 0,6 (anthem-01, shoot-the-devil-tonight, take-this-higher,
+dance-zero, the-clique, hiding-under, house-vibez, lust, karma) — còn 25 bài xoay vòng. Mỗi lần đổi bài, màn game ghi
+"[nhạc] đang phát <file>" vào log OBS (~/.var/app/com.obsproject.Studio/config/obs-studio/logs) để tra bài user chê.
 Thêm bài: chép mp3 + thêm dòng vào tracks.json (có thể đo bằng công cụ music-prep2.py).
 KHÔNG dùng nhạc có bản quyền (remix TikTok, Vinahouse, nonstop DJ…): TikTok tắt tiếng / phạt buổi live.
 Các file nhạc remix trong repo Yuh266/bar-tiktok và "NST nhạc hot TikTok" của bar-live là bản tải lậu → không lấy.

@@ -83,6 +83,8 @@ export function createTrackPlayer(ctx, out) {
     release(mainSrc);
     mainSrc = src;
     main.track = track;
+    // OBS chỉ chép LỖI của trang vào log của nó ⇒ ghi tên bài bằng console.error để tra "bài vừa phát là bài nào"
+    console.error(`[nhạc] đang phát ${track.url.split('/').pop()}`);
     main.audio.src = seekSrc(src, track.start);
     if (special) return;
     main.audio.play().catch(() => {});
