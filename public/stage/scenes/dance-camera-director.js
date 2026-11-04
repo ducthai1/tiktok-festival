@@ -141,7 +141,8 @@ export function createCameraDirector(camera) {
         }
         fov = directorShot(THREE.MathUtils.clamp((beat - shotStartBeat) / shotBeats, 0, 1), crowd, podium);
       }
-      const blend = 1 - Math.exp(-(at ? 3.6 : 2.0) * dt);
+      // ghé cận lướt vào chậm hơn (đỡ giật mắt); solo / xe bay cần bám nhanh nên giữ 3,6
+      const blend = 1 - Math.exp(-(at ? (focus.mode === 'glance' ? 2.2 : 3.6) : 2.0) * dt);
       camera.position.lerp(wantPos, blend);
       look.lerp(wantLook, blend);
       camera.lookAt(look);

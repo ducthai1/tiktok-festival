@@ -34,7 +34,9 @@ const MAX_LABELS = 18;
 const ALL_LABELS_UNDER = 40; // ≤ 40 người: ai cũng có tên + avatar
 const ZOOM_LABEL_PX = 210; // ai hiện cao hơn chừng này px (camera zoom gần) thì có tên bản to
 const LABELS_CAP = 60; // tối đa nhãn cùng lúc (nhẹ trang, khỏi chồng chéo)
-const GLANCE_GAP_S = 6;
+// ghé cận thưa thôi: zoom vào–ra liên tục gây chóng mặt. 1k tim / share được lên hình nhưng cũng cách nhau tối thiểu 8 s
+const GLANCE_GAP_S = 15;
+const SHOUTOUT_GAP_S = 8;
 
 // sheets: mô tả ảnh ghép nhân vật (public/assets/dance/sheets.json), tải trước khi dựng cảnh
 export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
@@ -258,7 +260,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       if (fx.kind === 'welcome') {
         const people = fx.mode === 'group' ? fx.people : [fx];
         for (const p of people) if (p.userId || p.id) markRecent(p.userId || p.id);
-        if (people.length === 1) glance(people[0].userId || people[0].id, 2.2);
+        // người vào live KHÔNG kéo camera (live đông người vào liên tục → zoom vào ra không ngớt); thẻ chào + tên đã đủ
       } else if (fx.kind === 'bubble') {
         markRecent(fx.userId);
         labels.bubble(fx.userId, fx.text);
@@ -277,7 +279,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       else if (fx.kind === 'camera' && e) {
         if (!fx.reason) hud.toast(`❤ ${formatNumber(fx.likes)} tim → có cánh 📸`, { gold: true, title: fx.nickname });
         markRecent(fx.userId);
-        lastGlance = -Infinity; // 1k tim / follow / share luôn được lên hình
+        if (clock - lastGlance >= SHOUTOUT_GAP_S) lastGlance = -Infinity; // 1k tim / share được lên hình, nhưng không dồn dập
         glance(fx.userId, fx.reason ? 3 : 4);
       }
       else if (fx.kind === 'look' && e) {
