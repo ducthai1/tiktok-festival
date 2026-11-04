@@ -40,18 +40,20 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   input.connect(bass).connect(glue).connect(trim).connect(pump).connect(wetPath).connect(output);
   input.connect(dryPath).connect(output);
 
-  // giọng MC: khô + vang lặp (delay có hồi tiếp, cắt trầm) như câu hô của DJ
+  // giọng MC: chủ yếu giọng khô, chỉ một tiếng vọng ngắn và nhỏ (user 05/11: "đừng vọng quá" — bản vang lặp 0,33 bị chê)
   const voice = ctx.createGain();
   const echo = ctx.createDelay(1);
-  echo.delayTime.value = 0.27;
+  echo.delayTime.value = 0.18;
   const feedback = ctx.createGain();
-  feedback.gain.value = 0.33;
+  feedback.gain.value = 0.1;
   const wet = ctx.createBiquadFilter();
   wet.type = 'highpass';
-  wet.frequency.value = 650;
+  wet.frequency.value = 900;
+  const wetLevel = ctx.createGain();
+  wetLevel.gain.value = 0.25;
   voice.connect(voiceOut);
   voice.connect(echo).connect(wet).connect(feedback).connect(echo);
-  wet.connect(voiceOut);
+  wet.connect(wetLevel).connect(voiceOut);
 
   const shouts = new Map(); // câu → AudioBuffer (tải dần, máy chủ tạo + giữ sẵn)
   let warmIndex = 0;
