@@ -17,7 +17,8 @@ export function createGiftStage({ speak, maxWaitMs = 5000 } = {}) {
       console.error('[gift-stage]', error);
     }
   };
-  const moment = (o = {}) => ({ userId: o.userId ?? null, line: o.line || '', effects: [...(o.effects || [])], holdMs: o.holdMs || 0, started: false });
+  const moment = (o = {}) => ({ userId: o.userId ?? null, line: o.line || '', effects: [...(o.effects || [])], holdMs: o.holdMs || 0, started: false,
+    fallback: o.fallback || '', waitMs: o.waitMs || 0 });
 
   // giọng bắt đầu đọc (hoặc hết giờ chờ) → chạy hết hiệu ứng của khoảnh khắc
   function perform(m, onBegin) {
@@ -32,7 +33,7 @@ export function createGiftStage({ speak, maxWaitMs = 5000 } = {}) {
       onBegin?.();
     };
     timer = setTimeout(begin, maxWaitMs);
-    if (m.line) speak(m.line, begin);
+    if (m.line) speak(m.line, begin, m); // m.fallback / m.waitMs: câu dự phòng khi câu chính chưa kịp có giọng
     else begin();
   }
 

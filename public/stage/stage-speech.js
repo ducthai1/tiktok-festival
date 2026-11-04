@@ -7,6 +7,7 @@
 import { pickVoice } from '../shared/tts-voices.js';
 
 const QUEUE_MAX = 5;
+const LATE = Symbol('late');
 
 export function createSpeech({ context, output, duck, options }) {
   const queue = [];
@@ -58,7 +59,8 @@ export function createSpeech({ context, output, duck, options }) {
     if (busy || !queue.length) return;
     busy = true;
     const item = queue.shift();
-    const buffer = await item.clip;
+    let buffer = await item.clip;
+    if (buffer === LATE) buffer = await fetchClip(item.fallback); // câu có tên chưa kịp có → câu dự phòng (đã tạo sẵn)
     item.onStart?.();
     try {
       if (buffer) await playClip(buffer);
@@ -71,13 +73,16 @@ export function createSpeech({ context, output, duck, options }) {
   }
 
   return {
-    say(text, { onStart } = {}) {
+    /** fallback + waitMs: câu `text` chưa có giọng sau waitMs thì đọc câu `fallback` (đã tạo sẵn) cho kịp hiệu ứng. */
+    say(text, { onStart, fallback = '', waitMs = 0 } = {}) {
       if (queue.length >= QUEUE_MAX) {
         onStart?.();
         return;
       }
       const clean = String(text).slice(0, 200);
-      queue.push({ text: clean, onStart, clip: fetchClip(clean) });
+      let clip = fetchClip(clean);
+      if (fallback) clip = Promise.race([clip, new Promise((r) => setTimeout(() => r(LATE), waitMs))]);
+      queue.push({ text: clean, onStart, clip, fallback });
       next();
     },
     clear() {

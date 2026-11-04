@@ -12,7 +12,7 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
-import { thankLine } from '../public/stage/scenes/dance-voice-lines.js';
+import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
 
@@ -152,6 +152,12 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const tts = createTtsBridge({ dataDir });
   // giọng đọc chỉ bật ở server thật (main.js) — test không nạp model ~580 MB
   if (voice && tts.start()) console.log('[tts] đang nạp giọng đọc VieNeu…');
+  // giọng sẵn sàng → tạo sẵn câu follow dự phòng cho cả 3 giọng (khán giả mới tinh follow ngay vẫn có giọng tức thì)
+  const warmFollow = voice ? setInterval(() => {
+    if (!tts.status().ready) return;
+    clearInterval(warmFollow);
+    for (const v of TTS_VOICES) tts.prefetch(FOLLOW_FALLBACK_LINE, v);
+  }, 2000) : null;
   const server = http.createServer(async (req, res) => {
     const reject = (code, text) => {
       res.writeHead(code, { 'Content-Type': 'text/plain; charset=utf-8', ...securityHeaders(port) });
@@ -205,6 +211,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     live,
     async close() {
       clearInterval(timer);
+      clearInterval(warmFollow);
       tts.stop();
       await live.disconnect();
       sockets.close();

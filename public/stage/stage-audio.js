@@ -135,14 +135,14 @@ export function createStageAudio() {
       return tracks.playing() ? tracks.beat() : music.beat();
     },
     /** onStart: gọi lúc giọng BẮT ĐẦU đọc — hoặc ngay nếu không đọc (tắt giọng / câu bẩn) — để hiệu ứng chạy làm nền. */
-    speak(text, channel = 'story', { onStart } = {}) {
+    speak(text, channel = 'story', { onStart, fallback, waitMs } = {}) {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
       // câu còn sót từ tục tĩu / link / số điện thoại thì không đọc
       if (!allowed || !opts.sound || !isCleanForDisplay(text)) {
         onStart?.();
         return;
       }
-      speech.say(text, { onStart });
+      speech.say(text, { onStart, fallback, waitMs });
     },
     configure(settings) {
       Object.assign(opts, {

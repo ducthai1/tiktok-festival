@@ -3,6 +3,10 @@
 // (user không muốn kiểu gọi "… ơi"). Tên qua speakableName (chuẩn hoá để đọc rõ; có từ bẩn thì không đọc tên).
 import { speakableGift, speakableName } from '../../shared/spoken-name.js';
 
+// Câu dự phòng khi câu có tên chưa kịp có (khán giả mới tinh follow ngay): máy chủ tạo sẵn từ lúc khởi động → đọc tức thì.
+export const FOLLOW_FALLBACK_LINE = 'Cảm ơn bạn đã follow! Mời bạn lên sân khấu!';
+export const FOLLOW_WAIT_MS = 600; // câu có tên tạo sẵn có trong ~0,1–0,2 s; quá 0,6 s là chưa tạo sẵn → đọc câu dự phòng
+
 export function thankLine(fx) {
   const name = speakableName(fx.nickname, '');
   const thanks = name ? `Cảm ơn ${name},` : 'Cảm ơn bạn';

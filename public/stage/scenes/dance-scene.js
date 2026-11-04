@@ -8,7 +8,7 @@ import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
-import { createComboFilter, thankLine } from './dance-voice-lines.js';
+import { createComboFilter, FOLLOW_FALLBACK_LINE, FOLLOW_WAIT_MS, thankLine } from './dance-voice-lines.js';
 import { createGiftStage } from './dance-gift-stage.js';
 import { createTierBanner } from './dance-tier-banner.js';
 import { createFlyingCars } from './dance-flying-car.js';
@@ -64,7 +64,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const bigGift = createGiftAnnouncer(hud, { onShow: () => sounds.announce() });
   // câu cảm ơn đi trước, hiệu ứng làm nền: tiếng / thẻ quà lớn / pháo hoa / DROP / nhạc VIP chờ giọng bắt đầu đọc (tối đa 5 s)
   // câu cảm ơn đi trước, hiệu ứng làm nền; quà ≥ 200 💎 độc chiếm sân khấu (quà nhỏ chen giữa chỉ hiện thông báo)
-  const stage = createGiftStage({ speak: (line, onStart) => audio.speak(line, 'story', { onStart }) });
+  const stage = createGiftStage({ speak: (line, onStart, m) => audio.speak(line, 'story', { onStart, fallback: m?.fallback, waitMs: m?.waitMs }) });
   const combo = createComboFilter();
   const SKIP = { skip: true };
   let batch = null; // khoảnh khắc đang gom hiệu ứng đi kèm của CÙNG gói sự kiện (pháo hoa / trực thăng / DROP ngay sau quà)
@@ -86,6 +86,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   let byId = new Map();
   let clock = 0;
   let solo = null; // { id, tier, startedAt }
+  let pendingSolo = ''; // solo server đã bắt đầu, đang chờ giọng cảm ơn của người đó đọc rồi mới lên sân khấu
   let dim = 0;
   let lastGlance = -Infinity;
   const recent = new Map(); // id → hết hạn hiện tên (người vừa bình luận / tặng / được chào)
@@ -166,16 +167,30 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     for (const id of now) flying.add(id);
   }
 
-  function startSolo(info) {
-    const d = byId.get(info.id);
-    solo = { id: info.id, tier: info.tier, startedAt: clock };
-    director.focus(() => posOf(info.id), info.msLeft / 1000, 'solo', clock);
-    auBar.start(d?.nickname || '', lastBeat, info.id);
+  // Solo do server bắt đầu → CHỜ giọng cảm ơn của chính người đó (follow / quà) bắt đầu đọc rồi mới lên sân khấu: nhân vật
+  // bay lên, camera, thanh phím, khung chữ, tiếng — tất cả cùng lúc với giọng. Hết giờ solo vẫn theo đồng hồ server.
+  function queueSolo(info) {
+    if (solo) { // server chuyển thẳng sang người khác: khép màn người cũ, không giữ camera chờ giọng người mới
+      solo = null;
+      director.release();
+      auBar.stop();
+    }
+    pendingSolo = info.id;
     const endsAt = performance.now() + info.msLeft;
     stage.run(() => {
-      tierBanner.show(info.tier, d?.nickname || '', { avatarUrl: d?.avatar || '', ms: 3400 });
-      sounds.solo(info.tier, Math.max(1000, endsAt - performance.now()));
+      if (pendingSolo !== info.id || state.solo?.id !== info.id) return; // solo đã hết / đổi người trong lúc chờ
+      pendingSolo = '';
+      startSolo(info, Math.max(1000, endsAt - performance.now()));
     }, info.id);
+  }
+
+  function startSolo(info, msLeft) {
+    const d = byId.get(info.id);
+    solo = { id: info.id, tier: info.tier, startedAt: clock };
+    director.focus(() => posOf(info.id), msLeft / 1000, 'solo', clock);
+    auBar.start(d?.nickname || '', lastBeat, info.id);
+    tierBanner.show(info.tier, d?.nickname || '', { avatarUrl: d?.avatar || '', ms: 3400 });
+    sounds.solo(info.tier, msLeft);
     markRecent(info.id);
   }
 
@@ -209,9 +224,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));
       crowd.sync([...state.dancers, DJ_INFO], ctx());
-      if (state.solo && state.solo.id !== solo?.id) startSolo(state.solo);
-      else if (!state.solo && solo) {
+      if (state.solo && state.solo.id !== solo?.id && state.solo.id !== pendingSolo) queueSolo(state.solo);
+      else if (!state.solo && (solo || pendingSolo)) {
         solo = null;
+        pendingSolo = '';
         director.release();
         auBar.stop();
       }
@@ -253,7 +269,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
           sounds.follow();
           if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
         }];
-        const m = { userId: fx.userId, line: thankLine(fx), effects };
+        // follow phải gần như tức thì: câu có tên thường đã tạo sẵn; chưa có thì sau 0,6 s đọc câu dự phòng (tạo sẵn từ đầu)
+        const m = { userId: fx.userId, line: thankLine(fx), effects, fallback: FOLLOW_FALLBACK_LINE, waitMs: FOLLOW_WAIT_MS };
         openBatch(stage.busy() ? stage.big(m) : stage.now(m)); // quà lớn đang diễn → follow xếp hàng sau, không chen ngang
         markRecent(fx.userId);
       }
