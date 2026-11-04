@@ -8,6 +8,7 @@ import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
+import { thankLine } from './dance-voice-lines.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -53,9 +54,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const sounds = createDanceSounds(audio);
   const bigGift = createGiftAnnouncer(hud, {
     onShow(fx) {
-      const follow = fx.kind === 'follow';
       sounds.announce();
-      audio.speak(follow ? `Cảm ơn ${fx.nickname} đã follow sàn nhảy` : `Cảm ơn ${fx.nickname} đã tặng ${fx.giftName}`, 'story');
+      audio.speak(thankLine(fx), 'story');
     }
   });
   // có video DJ: chiếu trên màn LED lớn sau sân khấu

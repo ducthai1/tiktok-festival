@@ -1,8 +1,10 @@
 // Âm thanh tự tổng hợp bằng WebAudio (không dùng file nhạc có bản quyền): hiệu ứng + nhạc nền theo game,
-// cộng giọng đọc của trình duyệt (speechSynthesis) cho lời khấn/quẻ/chào. Không chạy chương trình ngoài.
+// cộng giọng đọc (stage-speech.js: VieNeu-TTS của máy chủ, dự phòng giọng trình duyệt) cho lời cảm ơn/khấn/quẻ/chào.
 import { createMusic } from './stage-music.js';
 import { createTrackPlayer } from './stage-track-player.js';
 import { createSamplePlayer } from './stage-sample-player.js';
+import { createSpeech } from './stage-speech.js';
+import { isCleanForDisplay } from '../shared/profanity-filter.js';
 import { createSynth } from './stage-sfx.js';
 
 export function createStageAudio() {
@@ -19,8 +21,7 @@ export function createStageAudio() {
   let duckLevel = 1;
   let duckUntil = 0;
   let theme = '';
-  const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false };
-  const speakQueue = [];
+  const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền' };
 
   function audio() {
     if (!ctx) {
@@ -72,18 +73,20 @@ export function createStageAudio() {
     });
   }
 
-  function speakNext() {
-    if (speechSynthesis.speaking || !speakQueue.length) return;
-    const u = new SpeechSynthesisUtterance(speakQueue.shift());
-    u.lang = 'vi-VN';
-    u.rate = 0.95;
-    u.volume = Math.min(1, opts.volume + 0.2);
-    const vi = speechSynthesis.getVoices().find((v) => v.lang?.toLowerCase().startsWith('vi'));
-    if (vi) u.voice = vi;
-    u.onend = speakNext;
-    u.onerror = speakNext;
-    speechSynthesis.speak(u);
+  /** Hạ nhạc nền còn `level` (0..1) trong `seconds` giây rồi trả lại — để tiếng kèn / giọng đọc nổi lên. */
+  function duck(level = 0.35, seconds = 3) {
+    if (!duckGain) return;
+    const t = ctx.currentTime;
+    // hai lần hạ chồng nhau (tiếng quà rồi thẻ quà): giữ mức NHỎ hơn tới lúc kết thúc MUỘN hơn
+    duckLevel = t < duckUntil ? Math.min(level, duckLevel) : level;
+    duckUntil = Math.max(duckUntil, t + seconds);
+    duckGain.gain.cancelScheduledValues(t);
+    duckGain.gain.setTargetAtTime(duckLevel, t, 0.08);
+    duckGain.gain.setTargetAtTime(1, duckUntil, 0.4);
   }
+
+  const speech = createSpeech({ context: audio, output: () => master, duck,
+    options: () => ({ voice: opts.ttsVoice, gain: Math.min(1, opts.volume + 0.3) }) });
 
   return {
     // Trình duyệt thường chặn âm thanh tới khi người dùng bấm vào trang; OBS thì không chặn.
@@ -107,17 +110,7 @@ export function createStageAudio() {
         // âm thanh bị chặn khi chưa có thao tác — bỏ qua
       }
     },
-    /** Hạ nhạc nền còn `level` (0..1) trong `seconds` giây rồi trả lại — để tiếng kèn / giọng đọc nổi lên. */
-    duck(level = 0.35, seconds = 3) {
-      if (!duckGain) return;
-      const t = ctx.currentTime;
-      // hai lần hạ chồng nhau (tiếng quà rồi thẻ quà): giữ mức NHỎ hơn tới lúc kết thúc MUỘN hơn
-      duckLevel = t < duckUntil ? Math.min(level, duckLevel) : level;
-      duckUntil = Math.max(duckUntil, t + seconds);
-      duckGain.gain.cancelScheduledValues(t);
-      duckGain.gain.setTargetAtTime(duckLevel, t, 0.08);
-      duckGain.gain.setTargetAtTime(1, duckUntil, 0.4);
-    },
+    duck,
     /** Nhạc riêng cho khoảnh khắc lớn (vip / star / festival / drop) trong `ms` — false nếu không có / nhạc đang tắt. */
     special(kind, ms) {
       if (!tracks || !opts.sound || !opts.music || ctx?.state !== 'running') return false;
@@ -138,9 +131,9 @@ export function createStageAudio() {
     },
     speak(text, channel = 'story') {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
-      if (!allowed || !('speechSynthesis' in window) || speakQueue.length > 4) return;
-      speakQueue.push(String(text).slice(0, 220));
-      speakNext();
+      if (!allowed || !opts.sound) return;
+      if (!isCleanForDisplay(text)) return; // câu còn sót từ tục tĩu / link / số điện thoại thì không đọc
+      speech.say(text);
     },
     configure(settings) {
       Object.assign(opts, {
@@ -149,12 +142,10 @@ export function createStageAudio() {
         music: settings.music !== false,
         musicVolume: Number.isFinite(settings.musicVolume) ? settings.musicVolume : 0.35,
         tts: settings.tts === true,
-        ttsWelcome: settings.ttsWelcome === true
+        ttsWelcome: settings.ttsWelcome === true,
+        ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'Ngọc Huyền'
       });
-      if (!opts.tts && !opts.ttsWelcome && 'speechSynthesis' in window) {
-        speakQueue.length = 0;
-        speechSynthesis.cancel();
-      }
+      if (!opts.tts && !opts.ttsWelcome) speech.clear();
       applyLevels();
     },
     // Đo mức âm thật đang phát ra (0..1) — để kiểm tra "có tiếng" bằng máy, không phải đoán.

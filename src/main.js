@@ -3,7 +3,7 @@ import { startApp } from './app.js';
 import { loadConfig } from './config.js';
 
 const config = loadConfig();
-const app = await startApp(config).catch((error) => {
+const app = await startApp(config, { voice: true }).catch((error) => {
   if (error?.code === 'EADDRINUSE') {
     console.error(`Cổng ${config.port} đang bị chương trình khác dùng. Đặt PORT=khác rồi chạy lại.`);
   } else {

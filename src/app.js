@@ -10,11 +10,12 @@ import { isAllowedHost, safeImageUrl, securityHeaders } from './http/security.js
 import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
+import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
 
 const DEFAULT_SETTINGS = {
-  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, legend: true, sound: true, volume: 0.6,
+  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000
 };
 
@@ -37,7 +38,7 @@ function loadSettings(dataDir) {
   }
 }
 
-export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100 } = {}) {
+export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false } = {}) {
   fs.mkdirSync(dataDir, { recursive: true });
   const adminToken = loadOrCreateAdminToken(dataDir);
   const settings = loadSettings(dataDir);
@@ -59,7 +60,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     sockets.broadcast({ t: 'settings', settings: publicSettings() });
   };
   const publicSettings = () => ({
-    tts: settings.tts, ttsWelcome: settings.ttsWelcome, legend: settings.legend, sound: settings.sound, volume: settings.volume,
+    tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, legend: settings.legend, sound: settings.sound, volume: settings.volume,
     music: settings.music, musicVolume: settings.musicVolume,
     welcomeTextAbove: settings.welcomeTextAbove
   });
@@ -131,6 +132,9 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
 
   const serveStatic = createStaticFileServer({ publicDir: PUBLIC_DIR, rootDir: ROOT_DIR });
+  const tts = createTtsBridge({ dataDir });
+  // giọng đọc chỉ bật ở server thật (main.js) — test không nạp model ~580 MB
+  if (voice && tts.start()) console.log('[tts] đang nạp giọng đọc VieNeu…');
   const server = http.createServer(async (req, res) => {
     const reject = (code, text) => {
       res.writeHead(code, { 'Content-Type': 'text/plain; charset=utf-8', ...securityHeaders(port) });
@@ -143,6 +147,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       res.writeHead(302, { Location: '/admin', ...securityHeaders(port) });
       return res.end();
     }
+    if (urlPath === '/api/tts') return tts.handle(req, res, port);
     if (urlPath === '/api/health') {
       res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', ...securityHeaders(port) });
       return res.end(JSON.stringify({ ok: true, game: hub.activeId(), live: live.status().state }));
@@ -183,6 +188,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     live,
     async close() {
       clearInterval(timer);
+      tts.stop();
       await live.disconnect();
       sockets.close();
       await new Promise((resolve) => server.close(resolve));

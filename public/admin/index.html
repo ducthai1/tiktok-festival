@@ -105,9 +105,13 @@
       <div class="row wrap">
         <label class="toggle"><input type="checkbox" id="set-sound"> Âm thanh hiệu ứng</label>
         <label class="toggle"><input type="checkbox" id="set-music"> Nhạc nền</label>
-        <label class="toggle"><input type="checkbox" id="set-tts"> Đọc lời cầu / quẻ (giọng máy)</label>
+        <label class="toggle"><input type="checkbox" id="set-tts"> 🗣 Đọc cảm ơn quà / follow (chùa: lời cầu, quẻ)</label>
         <label class="toggle"><input type="checkbox" id="set-ttsWelcome"> Đọc tên người mới vào</label>
         <label class="toggle"><input type="checkbox" id="set-legend"> Hiện bảng quà</label>
+        <label>Giọng đọc <select id="set-ttsVoice">
+          <option>Ngọc Huyền</option><option>Trúc Ly</option><option>Hải Đăng</option><option>Adam bựa</option>
+        </select></label>
+        <button type="button" id="tts-preview" class="secondary">▶ Nghe thử giọng</button>
         <label>Âm lượng hiệu ứng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
         <label>Âm lượng nhạc <input type="range" id="set-musicVolume" min="0" max="1" step="0.05"></label>
       </div>

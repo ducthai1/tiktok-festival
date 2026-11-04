@@ -6,6 +6,7 @@ import { createLabelLayer } from './stage-labels.js';
 import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
 import { createFrameLimiter, stageQuality } from './stage-quality.js';
 import { tierRangeLabel } from '/static/shared/gift-tiers.js';
+import { speakableName } from '/static/shared/profanity-filter.js';
 
 const SCENES = {
   boss: () => import('./scenes/boss-scene.js').then((m) => m.createBossScene),
@@ -120,11 +121,12 @@ function onWelcome(fx) {
     audio.play('welcome');
   }
   if (fx.mode === 'group') {
-    const names = fx.people.slice(0, 3).map((p) => p.nickname).join(', ');
+    const names = fx.people.slice(0, 3).map((p) => speakableName(p.nickname)).join(', '); // tên bẩn / emoji → "bạn"
     const more = fx.people.length > 3 ? ` và ${fx.people.length - 3} bạn nữa` : '';
     audio.speak(`Chào mừng ${names}${more}`, 'welcome');
   } else {
-    audio.speak(w.speech ? w.speech(fx.nickname) : `Chào mừng ${fx.nickname}`, 'welcome');
+    const name = speakableName(fx.nickname);
+    audio.speak(w.speech ? w.speech(name) : `Chào mừng ${name}`, 'welcome');
   }
   return current?.onFx(fx);
 }

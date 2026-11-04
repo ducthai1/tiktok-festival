@@ -171,6 +171,7 @@ function applySettings(s) {
   $('set-music').checked = s.music !== false;
   $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
+  if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
 }
 
@@ -198,6 +199,14 @@ for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'legend']) {
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
+});
+$('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoice: e.target.value }, 'Đã đổi giọng đọc'));
+// Nghe thử giọng ngay trên trang này (máy chủ đọc bằng VieNeu; lần đầu mỗi câu mất 1–3 giây)
+$('tts-preview').addEventListener('click', async () => {
+  const text = 'Quá đỉnh! Bé Na vừa tặng 5 Hoa hồng! Mời VIP lên sân khấu!';
+  const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent($('set-ttsVoice').value)}`).catch(() => null);
+  if (!res?.ok) return toast(res?.status === 503 ? 'Chưa cài giọng đọc VieNeu (xem tools/tts/CAI-DAT.txt)' : 'Không đọc được câu thử');
+  new Audio(URL.createObjectURL(await res.blob())).play().catch(() => toast('Trình duyệt chặn phát tiếng — bấm lại'));
 });
 for (const key of ['volume', 'musicVolume']) {
   $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: Number(e.target.value) }, 'Đã lưu'));
