@@ -8,6 +8,12 @@ Bài có "special" KHÔNG phát xoay vòng, chỉ vang lên ở khoảnh khắc 
   star     = Techno Fest Feel (Alejandro Magaña) — Siêu sao, quà 5K–19,9K 💎
   vip      = Summer Dream (Eugenio Mininni) — solo VIP, quà 499–4,9K 💎
   drop     = Gear (Andrew Ev) — DROP cả sàn
+04/11/2026 tối (user chê nhạc chưa sung): đo độ sung cả 80 bài (độ đập của dải trầm < 120 Hz, độ đậm bass, tỉ lệ thời gian
+ở mức to nhất) → thêm 12 bài Mixkit sung nhất: Minimal Techno 01/02, Swish Swed, Techno Fights, Dub Techno Groove, Hey,
+Nights With Ga, Goa Trance Mantra, Rising Forest, House 02, Anthem #01, Shoot the Devil Tonight; bỏ khỏi vòng phát 10 bài nhẹ
+(i-do, what-about-action, golden-storm, india, super-strong, oh-lord, trap-electro-vibes, house-classic, drum-and-bass-vibes,
+sweatin-it — file vẫn để trong thư mục, chỉ xoá dòng khỏi tracks.json). Bài có dạo đầu nhẹ ≥ 8 s có `start` = vào trước
+đoạn sung 1 ô nhịp.
 Thêm bài: chép mp3 + thêm dòng vào tracks.json (có thể đo bằng công cụ music-prep2.py).
 KHÔNG dùng nhạc có bản quyền (remix TikTok, Vinahouse, nonstop DJ…): TikTok tắt tiếng / phạt buổi live.
 Các file nhạc remix trong repo Yuh266/bar-tiktok và "NST nhạc hot TikTok" của bar-live là bản tải lậu → không lấy.

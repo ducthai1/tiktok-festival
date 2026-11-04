@@ -7,12 +7,8 @@
  "expressive-courage": {
   "file": "expressive-courage.mp3",
   "bpm": 127.5,
-  "firstBeat": 0.186
- },
- "golden-storm": {
-  "file": "golden-storm.mp3",
-  "bpm": 127.5,
-  "firstBeat": 0.302
+  "firstBeat": 0.186,
+  "start": 12.892
  },
  "house-fest": {
   "file": "house-fest.mp3",
@@ -37,7 +33,8 @@
  "lets-move": {
   "file": "lets-move.mp3",
   "bpm": 120.0,
-  "firstBeat": 0.023
+  "firstBeat": 0.023,
+  "start": 13.523
  },
  "positive-energy": {
   "file": "positive-energy.mp3",
@@ -47,7 +44,8 @@
  "take-this-higher": {
   "file": "take-this-higher.mp3",
   "bpm": 123.0,
-  "firstBeat": 0.358
+  "firstBeat": 0.358,
+  "start": 8.651
  },
  "techno-fest-vibes": {
   "file": "techno-fest-vibes.mp3",
@@ -67,23 +65,19 @@
   "hot": 65.022,
   "special": "festival"
  },
- "drum-and-bass-vibes": {
-  "file": "drum-and-bass-vibes.mp3",
-  "bpm": 117.5,
-  "firstBeat": 0.294,
-  "hot": 59.017
- },
  "feast-from-the-east": {
   "file": "feast-from-the-east.mp3",
   "bpm": 123.0,
   "firstBeat": 0.032,
-  "hot": 69.788
+  "hot": 69.788,
+  "start": 21.983
  },
  "friday-routine": {
   "file": "friday-routine.mp3",
   "bpm": 124.5,
   "firstBeat": 0.132,
-  "hot": 69.048
+  "hot": 69.048,
+  "start": 20.855
  },
  "gear": {
   "file": "gear.mp3",
@@ -96,7 +90,8 @@
   "file": "hard-techno.mp3",
   "bpm": 120.0,
   "firstBeat": 0.0,
-  "hot": 56.0
+  "hot": 56.0,
+  "start": 14.0
  },
  "hiding-under": {
   "file": "hiding-under.mp3",
@@ -104,53 +99,33 @@
   "firstBeat": 0.069,
   "hot": 59.139
  },
- "house-classic": {
-  "file": "house-classic.mp3",
-  "bpm": 115.0,
-  "firstBeat": 0.024,
-  "hot": 40.198
- },
  "house-vibes": {
   "file": "house-vibes.mp3",
   "bpm": 120.0,
   "firstBeat": 0.116,
-  "hot": 24.116
- },
- "i-do": {
-  "file": "i-do.mp3",
-  "bpm": 129.0,
-  "firstBeat": 0.302,
-  "hot": 57.976
- },
- "india": {
-  "file": "india.mp3",
-  "bpm": 129.0,
-  "firstBeat": 0.302,
-  "hot": 30.069
+  "hot": 24.116,
+  "start": 13.616
  },
  "karma": {
   "file": "karma.mp3",
   "bpm": 129.0,
   "firstBeat": 0.302,
-  "hot": 96.116
+  "hot": 96.116,
+  "start": 11.0
  },
  "lust": {
   "file": "lust.mp3",
   "bpm": 124.5,
   "firstBeat": 0.405,
-  "hot": 92.935
+  "hot": 92.935,
+  "start": 12.935
  },
  "machine-drum-vibes": {
   "file": "machine-drum-vibes.mp3",
   "bpm": 145.5,
   "firstBeat": 0.101,
-  "hot": 64.019
- },
- "oh-lord": {
-  "file": "oh-lord.mp3",
-  "bpm": 113.5,
-  "firstBeat": 0.187,
-  "hot": 101.156
+  "hot": 64.019,
+  "start": 34.328
  },
  "rising-sun": {
   "file": "rising-sun.mp3",
@@ -165,18 +140,6 @@
   "hot": 38.046,
   "special": "vip"
  },
- "super-strong": {
-  "file": "super-strong.mp3",
-  "bpm": 120.0,
-  "firstBeat": 0.0,
-  "hot": 76.0
- },
- "sweatin-it": {
-  "file": "sweatin-it.mp3",
-  "bpm": 110.0,
-  "firstBeat": 0.097,
-  "hot": 59.006
- },
  "techno-fest-feel": {
   "file": "techno-fest-feel.mp3",
   "bpm": 126.0,
@@ -188,7 +151,8 @@
   "file": "the-clique.mp3",
   "bpm": 115.0,
   "firstBeat": 0.0,
-  "hot": 51.13
+  "hot": 51.13,
+  "start": 11.478
  },
  "trance-party": {
   "file": "trance-party.mp3",
@@ -196,16 +160,77 @@
   "firstBeat": 0.384,
   "hot": 58.178
  },
- "trap-electro-vibes": {
-  "file": "trap-electro-vibes.mp3",
-  "bpm": 112.0,
-  "firstBeat": 0.429,
-  "hot": 12.75
+ "minimal-techno-02": {
+  "file": "minimal-techno-02.mp3",
+  "bpm": 129.0,
+  "firstBeat": 0.209,
+  "hot": 29.976
  },
- "what-about-action": {
-  "file": "what-about-action.mp3",
-  "bpm": 121.5,
-  "firstBeat": 0.424,
-  "hot": 76.967
+ "swish-swed": {
+  "file": "swish-swed.mp3",
+  "bpm": 120.0,
+  "firstBeat": 0.023,
+  "hot": 48.023
+ },
+ "techno-fights": {
+  "file": "techno-fights.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.032,
+  "hot": 36.13
+ },
+ "dub-techno-groove": {
+  "file": "dub-techno-groove.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.079,
+  "hot": 31.786
+ },
+ "minimal-techno-01": {
+  "file": "minimal-techno-01.mp3",
+  "bpm": 129.0,
+  "firstBeat": 0.256,
+  "hot": 15.14
+ },
+ "hey": {
+  "file": "hey.mp3",
+  "bpm": 139.5,
+  "firstBeat": 0.281,
+  "hot": 72.969
+ },
+ "nights-with-ga": {
+  "file": "nights-with-ga.mp3",
+  "bpm": 120.0,
+  "firstBeat": 0.116,
+  "hot": 56.116
+ },
+ "goa-trance-mantra": {
+  "file": "goa-trance-mantra.mp3",
+  "bpm": 138.0,
+  "firstBeat": 0.134,
+  "hot": 57.96
+ },
+ "rising-forest": {
+  "file": "rising-forest.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.381,
+  "hot": 53.064
+ },
+ "house-02": {
+  "file": "house-02.mp3",
+  "bpm": 123.0,
+  "firstBeat": 0.079,
+  "hot": 15.201
+ },
+ "anthem-01": {
+  "file": "anthem-01.mp3",
+  "bpm": 129.5,
+  "firstBeat": 0.286,
+  "hot": 131.869
+ },
+ "shoot-the-devil-tonight": {
+  "file": "shoot-the-devil-tonight.mp3",
+  "bpm": 120.0,
+  "firstBeat": 0.0,
+  "hot": 83.0,
+  "start": 6.0
  }
 }

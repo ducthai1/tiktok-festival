@@ -1,5 +1,5 @@
 // Nhạc nền bằng FILE (bài house/EDM Mixkit, giấy phép dùng tự do) cho từng game — hiện dùng cho Sàn Nhảy.
-// Danh sách ở /static/assets/dance/music/tracks.json: { tên: { file, bpm, firstBeat, hot, special? } }. Không có file thì
+// Danh sách ở /static/assets/dance/music/tracks.json: { tên: { file, bpm, firstBeat, hot, start?, special? } }. Không có file thì
 // available()=false và game dùng nhạc tổng hợp như cũ. Phát qua musicBus nên âm lượng/tắt nhạc ở trang điều khiển vẫn áp dụng.
 // - Bài thường: trộn ngẫu nhiên, hết vòng mới lặp lại.
 // - Bài "special" (vip / star / festival / drop) KHÔNG phát xoay vòng — chỉ vang lên lúc quà lớn / DROP: chuyển mượt
@@ -7,6 +7,23 @@
 // beat() theo đúng bài đang nghe (BPM + nhịp đầu đo sẵn) để nhân vật + đèn nhảy khớp nhạc.
 const PLAYLISTS = { dance: '/static/assets/dance/music/' };
 const FADE_S = 0.6;
+
+/** Địa chỉ phát từ giây `seconds` (bài thường: `start` bỏ đoạn dạo đầu nhẹ; bài đặc biệt: `hot` đoạn sung nhất). */
+export const seekSrc = (url, seconds) => (seconds > 0 ? `${url}#t=${seconds}` : url);
+
+// Máy chủ game không trả từng khúc file (Range) ⇒ Chrome/OBS bỏ qua `#t=` của địa chỉ thường và phát từ 0:00.
+// Tải cả file về thành blob (localhost, 2–7 MB) thì tua được. Lỗi tải ⇒ phát thẳng địa chỉ gốc (từ đầu bài, vẫn có nhạc).
+async function blobSrc(url) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return url;
+    return URL.createObjectURL(await res.blob());
+  } catch {
+    return url;
+  }
+}
+const release = (src) => { if (src?.startsWith('blob:')) URL.revokeObjectURL(src); };
+
 // lượt đặc biệt cao hơn được chen ngang lượt thấp hơn đang phát (quà to cắt nhạc của DROP, không có chiều ngược lại)
 const RANK = { drop: 1, vip: 2, star: 3, festival: 4 };
 
@@ -26,7 +43,15 @@ export function createTrackPlayer(ctx, out) {
   extra.audio.loop = true; // lượt đặc biệt dài hơn phần còn lại của bài thì vòng lại, không im giữa chừng
   let theme = '';
   let order = [];
-  let special = null; // { kind, until, timer }
+  let special = null; // { kind, timer, serial }
+  let mainSrc = ''; // blob của bài thường đang phát (thả ra khi đổi bài)
+  let mainSerial = 0; // lượt nạp bài thường mới nhất — lượt cũ tải xong muộn thì bỏ
+  let specialSerial = 0;
+  const specialSrc = new Map(); // url → Promise<blob> — bài đặc biệt tải sẵn 1 lần, giữ suốt buổi
+  const warmSpecial = (url) => {
+    if (!specialSrc.has(url)) specialSrc.set(url, blobSrc(url));
+    return specialSrc.get(url);
+  };
 
   async function load(name) {
     if (lists.has(name)) return lists.get(name);
@@ -35,23 +60,36 @@ export function createTrackPlayer(ctx, out) {
     try {
       const base = PLAYLISTS[name];
       const meta = await (await fetch(`${base}tracks.json`)).json();
-      const all = Object.values(meta).map((t) => ({ url: `${base}${t.file}`, bpm: t.bpm, firstBeat: t.firstBeat || 0, hot: t.hot || 0, special: t.special || '' }));
+      const all = Object.values(meta).map((t) => ({ url: `${base}${t.file}`, bpm: t.bpm, firstBeat: t.firstBeat || 0, hot: t.hot || 0,
+        start: t.start || 0, special: t.special || '' }));
       const special = {};
       for (const t of all) if (t.special) (special[t.special] ||= []).push(t);
       lists.set(name, { normal: all.filter((t) => !t.special), special });
+      for (const t of all) if (t.special) void warmSpecial(t.url); // quà lớn tới là nhạc vào ngay
     } catch {
       lists.set(name, empty);
     }
     return lists.get(name);
   }
 
-  function next() {
+  async function next() {
     const list = lists.get(theme)?.normal || [];
     if (!list.length) return;
     if (!order.length) order = list.map((_, i) => i).sort(() => Math.random() - 0.5); // trộn bài, hết lượt mới lặp lại
-    main.track = list[order.shift()];
-    main.audio.src = main.track.url;
-    if (!special) main.audio.play().catch(() => {});
+    const track = list[order.shift()];
+    const mine = ++mainSerial;
+    const src = track.start > 0 ? await blobSrc(track.url) : track.url;
+    if (mine !== mainSerial || !theme) return release(src); // đã dừng / đã đổi bài trong lúc tải
+    release(mainSrc);
+    mainSrc = src;
+    main.track = track;
+    main.audio.src = seekSrc(src, track.start);
+    if (special) return;
+    main.audio.play().catch(() => {});
+    // vào bài mới (nhất là vào giữa bài) thì mở tiếng nhanh, không bật "bụp"
+    main.gain.gain.cancelScheduledValues(ctx.currentTime);
+    main.gain.gain.setValueAtTime(0, ctx.currentTime);
+    main.gain.gain.linearRampToValueAtTime(1, ctx.currentTime + 0.25);
   }
   main.audio.addEventListener('ended', next);
   main.audio.addEventListener('error', () => setTimeout(next, 1000));
@@ -85,10 +123,11 @@ export function createTrackPlayer(ctx, out) {
       theme = name;
       order = [];
       main.gain.gain.value = 1;
-      next();
+      void next();
     },
     stop() {
       theme = '';
+      mainSerial += 1;
       main.track = null;
       if (special) clearTimeout(special.timer);
       special = null;
@@ -112,10 +151,15 @@ export function createTrackPlayer(ctx, out) {
         if (RANK[special.kind] > RANK[kind]) return false;
         clearTimeout(special.timer);
       }
-      extra.track = pool[Math.floor(Math.random() * pool.length)];
-      extra.audio.src = `${extra.track.url}#t=${extra.track.hot}`;
-      extra.audio.play().catch(() => {});
-      special = { kind, timer: setTimeout(endSpecial, ms) };
+      const track = pool[Math.floor(Math.random() * pool.length)];
+      const mine = ++specialSerial;
+      special = { kind, timer: setTimeout(endSpecial, ms), serial: mine };
+      void warmSpecial(track.url).then((src) => {
+        if (special?.serial !== mine) return; // lượt này đã hết / bị lượt khác chen trước khi tải xong
+        extra.track = track;
+        extra.audio.src = seekSrc(src, track.hot);
+        extra.audio.play().catch(() => {});
+      });
       fade(extra.gain, 1);
       fade(main.gain, 0);
       setTimeout(() => { if (special) main.audio.pause(); }, FADE_S * 1000 + 50); // bài thường dừng tại chỗ, lát quay lại nghe tiếp
