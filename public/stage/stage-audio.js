@@ -17,9 +17,8 @@ export function createStageAudio() {
   let music = null;
   let tracks = null; // nhạc file (Sàn Nhảy); không có thì dùng nhạc tổng hợp
   let samples = null; // tiếng hiệu ứng thu sẵn (Sàn Nhảy); thiếu file thì dùng tiếng tổng hợp
-  let duckGain = null; // hạ nhỏ nhạc nền tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt
-  let duckLevel = 1;
-  let duckUntil = 0;
+  // hạ nhỏ tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt: nhạc nền + tiếng hiệu ứng, mỗi đường một nút
+  const ducks = { music: { node: null, level: 1, until: 0 }, sfx: { node: null, level: 1, until: 0 } };
   let theme = '';
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền' };
 
@@ -38,9 +37,10 @@ export function createStageAudio() {
       musicBus = ctx.createGain();
       analyser = ctx.createAnalyser();
       analyser.fftSize = 1024;
-      duckGain = ctx.createGain();
-      sfxBus.connect(master);
-      musicBus.connect(duckGain).connect(master);
+      ducks.music.node = ctx.createGain();
+      ducks.sfx.node = ctx.createGain();
+      sfxBus.connect(ducks.sfx.node).connect(master);
+      musicBus.connect(ducks.music.node).connect(master);
       master.connect(limiter).connect(analyser).connect(ctx.destination);
       synth = createSynth(ctx, sfxBus);
       music = createMusic(ctx, musicBus);
@@ -78,19 +78,20 @@ export function createStageAudio() {
   }
 
   /** Hạ nhạc nền còn `level` (0..1) trong `seconds` giây rồi trả lại — để tiếng kèn / giọng đọc nổi lên. */
-  function duck(level = 0.35, seconds = 3) {
-    if (!duckGain) return;
+  function duck(level = 0.35, seconds = 3, bus = 'music') {
+    const d = ducks[bus];
+    if (!d?.node) return;
     const t = ctx.currentTime;
     // hai lần hạ chồng nhau (tiếng quà rồi thẻ quà): giữ mức NHỎ hơn tới lúc kết thúc MUỘN hơn
-    duckLevel = t < duckUntil ? Math.min(level, duckLevel) : level;
-    duckUntil = Math.max(duckUntil, t + seconds);
-    duckGain.gain.cancelScheduledValues(t);
-    duckGain.gain.setTargetAtTime(duckLevel, t, 0.08);
-    duckGain.gain.setTargetAtTime(1, duckUntil, 0.4);
+    d.level = t < d.until ? Math.min(level, d.level) : level;
+    d.until = Math.max(d.until, t + seconds);
+    d.node.gain.cancelScheduledValues(t);
+    d.node.gain.setTargetAtTime(d.level, t, 0.08);
+    d.node.gain.setTargetAtTime(1, d.until, 0.4);
   }
 
   const speech = createSpeech({ context: audio, output: () => master, duck,
-    options: () => ({ voice: opts.ttsVoice, gain: Math.min(0.9, opts.volume + 0.2) }) });
+    options: () => ({ voice: opts.ttsVoice, gain: Math.min(1, opts.volume + 0.3) }) });
 
   return {
     // Trình duyệt thường chặn âm thanh tới khi người dùng bấm vào trang; OBS thì không chặn.

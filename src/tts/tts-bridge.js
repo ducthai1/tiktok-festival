@@ -19,6 +19,7 @@ export const DEFAULT_TTS_PYTHON = path.join(os.homedir(), '.local/share/tiktok-l
 const SCRIPT = fileURLToPath(new URL('../../tools/tts/vieneu-tts-server.py', import.meta.url));
 const MAX_CHARS = 200;
 const CACHE_FILES = 400;
+const CACHE_VERSION = 'v3'; // v3: giọng đã nén + cân âm lượng (-14 dB) — file đệm cũ (nhỏ hơn) không dùng lại
 
 export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DEFAULT_TTS_PYTHON, port = 3945 } = {}) {
   const cacheDir = path.join(dataDir, 'tts-cache');
@@ -96,7 +97,7 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
 
   /** Buffer wav của câu `text` bằng giọng `voice` (đệm đĩa), null nếu chưa có giọng đọc / câu lỗi. */
   function speak(text, voice) {
-    const key = crypto.createHash('sha1').update(`${voice}|${text}`).digest('hex');
+    const key = crypto.createHash('sha1').update(`${CACHE_VERSION}|${voice}|${text}`).digest('hex');
     if (pending.has(key)) return pending.get(key);
     const file = path.join(cacheDir, `${key}.wav`);
     const job = (async () => {

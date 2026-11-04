@@ -23,7 +23,7 @@ test('/api/tts refuses dirty or overlong lines and answers 503 until the voice i
   assert.equal((await call(bridge, `text=${encodeURIComponent('Cảm ơn Bé Na đã tặng 5 Hoa hồng!')}&voice=x`)).code, 503);
   // câu đã đọc trước đó (đệm đĩa) vẫn phát được dù giọng đọc chưa chạy
   const wav = Buffer.from('RIFF....WAVEfmt ');
-  const key = (await import('node:crypto')).createHash('sha1').update('Ngọc Huyền|Xin chào').digest('hex');
+  const key = (await import('node:crypto')).createHash('sha1').update('v3|Ngọc Huyền|Xin chào').digest('hex');
   fs.mkdirSync(path.join(dataDir, 'tts-cache'));
   fs.writeFileSync(path.join(dataDir, 'tts-cache', `${key}.wav`), wav);
   const hit = await call(bridge, `text=${encodeURIComponent('Xin chào')}&voice=${encodeURIComponent('Ngọc Huyền')}`);

@@ -23,7 +23,9 @@ export function createSpeech({ context, output, duck, options }) {
       level.gain.value = gain;
       source.connect(level).connect(output());
       source.onended = resolve;
-      duck(0.3, buffer.duration + 0.3);
+      // giọng phải nổi hẳn lên: nhạc nền lặng xuống 20 %, tiếng hò reo / kèn còn một nửa trong lúc đọc
+      duck(0.2, buffer.duration + 0.3);
+      duck(0.5, buffer.duration + 0.3, 'sfx');
       source.start();
     });
     return true;
