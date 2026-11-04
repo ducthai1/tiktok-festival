@@ -16,7 +16,7 @@ import { disposeObject } from './person-model.js';
 
 const MEDALS = ['🥇', '🥈', '🥉'];
 const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
-const TIER_TITLES = { 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
+const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
 const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đứng bàn mix trên sân khấu (không phải người xem)
 const FACE_EMOJI = { happy: '😊', grin: '😁', wink: '😉', cool: '😎', love: '😍', laugh: '😂', surprise: '😮', tongue: '😜',
@@ -51,8 +51,9 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const auBar = createAuditionBar(hud);
   const bigGift = createGiftAnnouncer(hud, {
     onShow(fx) {
-      audio.play(fx.tier >= 5 ? 'fanfare' : 'coin');
-      audio.speak(`Cảm ơn ${fx.nickname} đã tặng ${fx.giftName}`, 'story');
+      const follow = fx.kind === 'follow';
+      audio.play(follow || fx.tier >= 5 ? 'fanfare' : 'coin');
+      audio.speak(follow ? `Cảm ơn ${fx.nickname} đã follow sàn nhảy` : `Cảm ơn ${fx.nickname} đã tặng ${fx.giftName}`, 'story');
     }
   });
   // có video DJ: chiếu trên màn LED lớn sau sân khấu
@@ -94,7 +95,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     const now = performance.now();
     for (const [id, until] of recent) if (now > until || !byId.has(id)) recent.delete(id);
     const ids = new Set([...recent.keys()].slice(-MAX_LABELS));
-    for (const d of state.dancers) if (d.rank || d.giant || d.id === solo?.id) ids.add(d.id);
+    for (const d of state.dancers) if (d.rank || d.giant || d.fan || d.id === solo?.id) ids.add(d.id); // fan mới: tên luôn hiện 10 phút
     // ít người: ai cũng có tên + avatar; đông: thêm những ai đang hiện TO trên màn (camera zoom gần) — nhãn bản to
     const zoomed = new Set();
     const sized = [];
@@ -113,10 +114,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       const d = byId.get(id);
       const e = crowd.get(id);
       if (!d || !e) continue;
-      const title = d.rank ? RANK_TITLES[d.rank - 1] : d.id === solo?.id ? 'SIÊU SAO' : d.giant ? 'VIP' : '';
+      const title = d.rank ? RANK_TITLES[d.rank - 1] : d.id === solo?.id ? 'SIÊU SAO' : d.giant ? 'VIP' : d.fan ? 'FAN CỨNG' : '';
       const titleClass = d.rank ? `rank-${d.rank}` : title ? 'star' : '';
       labels.sync(id, { anchor: e.anchor, nickname: d.rank ? `${MEDALS[d.rank - 1]} ${d.nickname}` : d.nickname, avatar: d.avatar || '',
-        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id && !zoomed.has(id), group: 'dance', title, titleClass });
+        vip: Boolean(d.rank || d.giant || d.fan || d.id === solo?.id), small: !d.rank && !d.fan && d.id !== solo?.id && !zoomed.has(id), group: 'dance', title, titleClass });
     }
     labels.keepOnly(ids);
   }
@@ -154,12 +155,13 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     scene,
     camera,
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n} đến sàn nhảy!` },
-    // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số kc
-    legend: [['🎁 Quà', ' theo số kc ↓']],
-    // người TẶNG nhận được gì (ghi rõ, nhìn một lần là hiểu); bảng hiện 2 dòng: khoảng kc / hiệu ứng
+    // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số 💎
+    legend: [['🎁 Quà', ' theo số 💎 ↓']],
+    // người TẶNG nhận được gì; bảng 2 dòng: khoảng 💎 / hiệu ứng. Mỗi câu hiệu ứng phải vừa MỘT dòng của cột trái
+    // (~20 ký tự) — dài hơn là rớt chữ xuống dòng, khó đọc
     giftRows: true,
-    giftLabels: { 1: '🦋 Có cánh + lên camera', 2: '🎈 Bay lên cao + solo ngắn', 3: '🎤 Solo sân khấu + pháo hoa',
-      4: '👑 Hoá khổng lồ VIP + trực thăng', 5: '🎆 Pháo hoa lớn + DROP cả sàn', 6: '🌌 Đại nhạc hội: laser + pháo hoa' },
+    giftLabels: { 1: '🦋 Có cánh + lên hình', 2: '🎈 Bay cao + solo ngắn', 3: '🎤 Solo + pháo hoa',
+      4: '👑 Khổng lồ VIP 🚁', 5: '🎆 Pháo hoa + DROP', 6: '🌌 Đại nhạc hội' },
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));
@@ -200,7 +202,12 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       } else if (fx.kind === 'bubble') {
         markRecent(fx.userId);
         labels.bubble(fx.userId, fx.text);
-      } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar });
+      } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar, gold: fx.gold });
+      else if (fx.kind === 'follow') {
+        bigGift.follow(fx);
+        if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
+        markRecent(fx.userId);
+      }
       else if (fx.kind === 'camera' && e) {
         if (!fx.reason) hud.toast(`❤ ${formatNumber(fx.likes)} tim → có cánh 📸`, { gold: true, title: fx.nickname });
         markRecent(fx.userId);

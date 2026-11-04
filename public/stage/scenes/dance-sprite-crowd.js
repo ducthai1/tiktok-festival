@@ -52,8 +52,11 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   const pool = buildPool(sheets);
   // cánh theo hạng: Top 1 tím hoàng gia, Top 2 băng, Top 3 lửa, người solo/khổng lồ neon, người có cánh (1k tim, quà) năng lượng
   const WING_FILES = { top1: 'player-wings.webp', top2: 'wings-ice.webp', top3: 'wings-fire.webp', star: 'wings-neon.webp', basic: 'energy-wings-v2.webp' };
-  const wingMeshes = Object.fromEntries(Object.entries(WING_FILES).map(([k, f]) => [k, createWingsMesh(scene, k === 'basic' ? capacity : 4, f)]));
-  const wingKind = (e, ctx) => (e.info.rank ? `top${e.info.rank}` : e.id === ctx.soloId || e.info.giant ? 'star' : e.info.wings ? 'basic' : '');
+  // cánh neon: người đang solo, khổng lồ VIP và fan mới follow (10 phút) — nhiều người cùng lúc nên sức chứa lớn hơn cánh Top
+  const WING_CAP = { basic: capacity, star: 40 };
+  const wingCap = (kind) => WING_CAP[kind] || 4;
+  const wingMeshes = Object.fromEntries(Object.entries(WING_FILES).map(([k, f]) => [k, createWingsMesh(scene, wingCap(k), f)]));
+  const wingKind = (e, ctx) => (e.info.rank ? `top${e.info.rank}` : e.id === ctx.soloId || e.info.giant || e.info.fan ? 'star' : e.info.wings ? 'basic' : '');
 
   function meshFor(key) {
     let mesh = meshes.get(key);
@@ -189,7 +192,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         for (const { e, hop } of list) {
           const kind = wingKind(e, ctx);
           const mesh = wingMeshes[kind];
-          if (!mesh || e.flight || used[kind] >= (kind === 'basic' ? capacity : 4)) continue;
+          if (!mesh || e.flight || used[kind] >= wingCap(kind)) continue;
           const h = HEIGHT_M * e.scale;
           tmp.set(e.pos.x, e.pos.y + hop + h * 0.62, e.pos.z).addScaledVector(scaleV.subVectors(tmp, ctx.camPos).setY(0).normalize(), 0.12);
           mesh.setMatrixAt(used[kind], matrix.compose(tmp, NO_TURN, scaleV.setScalar(h * (kind === 'basic' ? 1.6 : 2))));

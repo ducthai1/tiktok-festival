@@ -13,8 +13,9 @@ const COMMANDS = [
   ['💬', 'nhỏ lại', 'Nhân vật nhỏ lại'],
   ['💬', 'quẩy', 'Quẩy bung 8 giây'],
   ['👋', 'Vào live', 'Tự lên sàn, khỏi gõ', 'act'],
-  ['❤', '1.000 tim', 'Có cánh + lên camera', 'act'],
-  ['➕', 'Follow', 'Lên camera + vẫy tay', 'act']
+  ['❤', '1.000 tim', 'Có cánh + lên hình', 'act'],
+  ['➕', 'Follow', 'Solo sân khấu + cánh', 'act'],
+  ['↗', 'Share', 'Lên camera + vẫy tay', 'act']
 ];
 
 export function createDjPanel(hud, { onVideo }) {

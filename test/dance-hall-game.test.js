@@ -164,11 +164,31 @@ test('a handful of dancers spread over the whole floor instead of huddling in th
   assert.deepEqual(full[0], slotPosition(order[0])); // sàn đầy thì về đúng lưới gốc
 });
 
-test('a new follower or a share gets the camera on them', () => {
+test('a first follow gets the full package: big card, a stage solo, neon fan wings — shares get the camera', () => {
   const game = createDanceHallGame();
   const fx = game.handleEvent({ type: 'follow', user: user(7) }, 0);
-  const cam = fx.find((f) => f.kind === 'camera');
-  assert.equal(cam.userId, 'u7');
-  assert.equal(cam.reason, 'follow');
-  assert.ok(game.handleEvent({ type: 'share', user: user(8) }, 0).some((f) => f.kind === 'camera' && f.userId === 'u8'));
+  assert.ok(fx.some((f) => f.kind === 'follow' && f.userId === 'u7'));
+  assert.ok(kinds(fx).includes('fireworks'));
+  assert.ok(fx.some((f) => f.kind === 'solo' && f.userId === 'u7'));
+  const fan = dancer(game, 'u7');
+  assert.equal(fan.fan, true);
+  assert.equal(fan.wings, true);
+  assert.equal(fan.aura, true);
+  assert.equal(dancer(game, 'u7', 10 * 60000 + 1).fan, false);
+  // quà bậc 2+ vẫn diễn trước người follow đang chờ
+  const busy = createDanceHallGame();
+  busy.handleEvent(gift(1, 100), 0);
+  busy.handleEvent({ type: 'follow', user: user(2) }, 10);
+  busy.handleEvent(gift(3, 20), 20);
+  const order = [];
+  for (let t = 0; t < 60000; t += 500) for (const f of busy.tick(t)) if (f.kind === 'solo') order.push(f.userId);
+  assert.deepEqual(order, ['u3', 'u2']);
+  // follow lại (bỏ follow rồi follow) chỉ được lên camera, không solo/thẻ lần nữa
+  const again = game.handleEvent({ type: 'follow', user: user(7) }, 30000);
+  assert.ok(again.some((f) => f.kind === 'camera' && f.reason === 'follow'));
+  assert.ok(!again.some((f) => f.kind === 'follow' || (f.kind === 'solo' && f.userId === 'u7')));
+  // share: lên camera mỗi lần, không giới hạn
+  for (let i = 0; i < 5; i += 1) {
+    assert.ok(game.handleEvent({ type: 'share', user: user(8) }, 40000 + i).some((f) => f.kind === 'camera' && f.userId === 'u8'));
+  }
 });

@@ -1,6 +1,7 @@
 // SÀN NHẢY — hội trường quẩy: ai bình luận / thả tim / tặng quà là có một nhân vật chibi trên sàn (tối đa DANCE_SLOTS).
 // Miễn phí: "quẩy" nhảy bung, "nhảy" nhảy 1 cái, "đi vòng" đi một vòng sàn, "to lên"/"nhỏ lại" đổi cỡ, "chào" vẫy tay,
-// "đổi nv" đổi nhân vật, emoji đổi biểu cảm; mỗi 1.000 tim của một người = được lên camera;
+// "đổi nv" đổi nhân vật, emoji đổi biểu cảm; mỗi 1.000 tim của một người = được lên camera; share = lên camera;
+// follow (lần đầu) = thẻ lớn + solo sân khấu + cánh neon + danh hiệu FAN CỨNG;
 // tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → SOLO giữa sân khấu
 // (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
@@ -17,6 +18,10 @@ export const HYPE_GOAL = 1500;
 const SOLO_QUEUE_MAX = 8;
 const LEVEL_MS = 90 * 1000;
 const GIANT_MS = 2 * 60 * 1000;
+const FAN_MS = 10 * 60 * 1000;
+const FOLLOW_SOLO_MS = 6000;
+// Solo của người vừa follow vào hàng chờ ở "bậc 1" (quà bậc 1 không có solo): quà từ bậc 2 trở lên luôn diễn trước.
+const FOLLOW_SOLO_TIER = 1;
 
 const HYPE_WORDS = ['quay', 'quay len', 'quay di', 'dance', 'bung', 'phe', 'chay', 'nhun'];
 const JUMP_WORDS = ['nhay', 'nhay di', 'nhay 1 cai', 'nhay mot cai', 'jump'];
@@ -65,6 +70,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
   let dropUntil = 0;
   let solo = null; // { id, tier, startedAt, until }
   let queue = []; // [{ id, tier, ms }]
+  const followed = new Set(); // ai đã nhận gói follow trong phiên
 
   function ranks() {
     const top = [...spenders.entries()].filter(([id]) => dancers.has(id)).sort((a, b) => b[1] - a[1]).slice(0, 3);
@@ -103,7 +109,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       if (slot < 0 && canEvict) slot = evictIdlest(now, fx, canEvict === 'lurkers');
       if (slot < 0) return null;
       d = { id: user.id, slot, look: 0, engaged: false, // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look joinedAt: now, hypeUntil: 0, waveUntil: 0,
-        jumpUntil: 0, walkUntil: 0, size: 1, likes: 0, wingsUntil: 0,
+        jumpUntil: 0, walkUntil: 0, size: 1, likes: 0, wingsUntil: 0, fanUntil: 0,
         face: '', faceUntil: 0, auraUntil: 0, level: 0, levelUntil: 0, giantUntil: 0 };
       dancers.set(user.id, d);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
@@ -186,6 +192,40 @@ export function createDanceHallGame({ random = Math.random } = {}) {
     else addHype(gift.diamonds * 10, now, fx);
   }
 
+  // Share (và follow lại lần nữa): lên camera + vẫy tay + thông báo. Không giới hạn số lần.
+  function cameraShoutout(event, now, fx) {
+    const d = ensureDancer(event.user, now, fx, { canEvict: true });
+    if (d) {
+      d.waveUntil = now + WAVE_MS;
+      fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, reason: event.type });
+    }
+    // tên tách riêng: màn hiện tên 1 dòng (dài thì "…") + dòng việc bên dưới, không bị tên dài đẩy thành 3–4 dòng
+    fx.push({ kind: 'toast', nickname: event.user.nickname, avatar: event.user.avatar,
+      text: `${event.type === 'follow' ? '➕ follow' : '↗ chia sẻ live'} → lên hình 📸` });
+    addHype(event.type === 'follow' ? 20 : 30, now, fx);
+  }
+
+  // Follow quý hơn share: lần follow đầu trong phiên được cả gói — thẻ lớn giữa màn + giọng đọc cảm ơn, pháo hoa,
+  // SOLO sân khấu 6 giây, cánh neon + hào quang + danh hiệu FAN CỨNG trên đầu 10 phút. Bỏ follow rồi follow lại thì
+  // chỉ được như share (lên camera), để một người không chiếm sân khấu mãi bằng cách follow đi follow lại.
+  function onFollow(event, now, fx) {
+    if (followed.has(event.user.id)) return cameraShoutout(event, now, fx);
+    const d = ensureDancer(event.user, now, fx, { canEvict: true });
+    if (!d) return cameraShoutout(event, now, fx);
+    followed.add(d.id);
+    d.fanUntil = now + FAN_MS;
+    d.wingsUntil = Math.max(d.wingsUntil, now) + WINGS_MS;
+    d.auraUntil = Math.max(d.auraUntil, now) + 120000;
+    d.waveUntil = now + WAVE_MS;
+    d.face = 'love';
+    d.faceUntil = now + FACE_MS;
+    fx.push({ kind: 'follow', userId: d.id, nickname: d.nickname, avatar: d.avatar || '' });
+    fx.push({ kind: 'toast', nickname: d.nickname, avatar: d.avatar, text: '💖 follow → solo sân khấu 🎤', gold: true });
+    fx.push({ kind: 'fireworks', power: 1 });
+    enqueueSolo(d.id, FOLLOW_SOLO_TIER, FOLLOW_SOLO_MS, now);
+    addHype(50, now, fx);
+  }
+
   function onChat(event, now, fx) {
     const d = ensureDancer(event.user, now, fx, { canEvict: true });
     if (!d) return;
@@ -234,17 +274,8 @@ export function createDanceHallGame({ random = Math.random } = {}) {
           }
         }
         addHype(Math.min(event.likeCount, 30), now, fx);
-      } else if (event.type === 'follow' || event.type === 'share') {
-        const d = ensureDancer(event.user, now, fx, { canEvict: true });
-        if (d) {
-          d.waveUntil = now + WAVE_MS;
-          fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, reason: event.type }); // follow / share = được lên camera
-        }
-        // tên tách riêng: màn hiện tên 1 dòng (dài thì "…") + dòng việc bên dưới, không bị tên dài đẩy thành 3–4 dòng
-        fx.push({ kind: 'toast', nickname: event.user.nickname, avatar: event.user.avatar,
-          text: `${event.type === 'follow' ? '➕ follow' : '↗ chia sẻ live'} → lên hình 📸` });
-        addHype(event.type === 'follow' ? 20 : 30, now, fx);
-      }
+      } else if (event.type === 'follow') onFollow(event, now, fx);
+      else if (event.type === 'share') cameraShoutout(event, now, fx);
       advanceSolo(now, fx);
       return fx;
     },
@@ -289,7 +320,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
           id: d.id, nickname: d.nickname, avatar: d.avatar, slot: d.slot, look: d.look, rank: rank.get(d.id) || 0,
           level: d.level, aura: now < d.auraUntil, giant: now < d.giantUntil,
           move: now < d.walkUntil ? 'walk' : now < d.jumpUntil ? 'jump' : dropping || now < d.hypeUntil ? 'hype' : now < d.waveUntil ? 'wave' : '',
-          size: d.size, wings: now < d.wingsUntil,
+          size: d.size, wings: now < d.wingsUntil, fan: now < d.fanUntil,
           face: now < d.faceUntil ? d.face : ''
         }))
       };

@@ -41,8 +41,8 @@ function legendFor(scene) {
     for (const { tier, gifts } of giftTiers) {
       const label = scene.giftLabels[tier];
       if (!gifts.length || !label) continue;
-      // cảnh muốn hai dòng (khoảng kc / hiệu ứng nhận được) thì khai giftRows: true
-      rows.push([gifts.slice(0, 1), scene.giftRows ? `${tierRangeLabel(tier)} kc\n${label}` : ` ${tierRangeLabel(tier)} · ${label}`]);
+      // cảnh muốn hai dòng (khoảng 💎 / hiệu ứng nhận được) thì khai giftRows: true — icon kim cương thay chữ "kc" cho dễ hiểu
+      rows.push([gifts.slice(0, 1), scene.giftRows ? `${tierRangeLabel(tier)} 💎\n${label}` : ` ${tierRangeLabel(tier)} · ${label}`]);
     }
   }
   return rows;

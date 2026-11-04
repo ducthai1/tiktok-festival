@@ -196,14 +196,28 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .big-gift-what { font: 800 24px var(--font); color: #fff; text-shadow: 0 2px 4px #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 430px; }
 .big-gift-kc { font: 900 22px var(--font); color: #9be8ff; text-shadow: 0 2px 4px #000; }
 .big-gift.tier-5, .big-gift.tier-6 { height: 280px; width: 900px; }
+/* thẻ follow mới: avatar tròn viền hồng (không có avatar thì trái tim) */
+.big-gift img.avatar { border-radius: 50%; object-fit: cover; border: 4px solid #ff7ac4; box-shadow: 0 0 18px #ff4fa3; animation: none; }
+.big-gift-heart { font-size: 84px; line-height: 1; flex: none; animation: big-gift-bob 0.9s ease-in-out infinite; }
+.big-gift.follow .big-gift-kc { color: #ffd0ec; }
 .big-gift.tier-6 .big-gift-name { font-size: 40px; color: #ffe27a; }
 
 /* Bảng quà 2 dòng (Sàn Nhảy): ảnh quà | khoảng kc (đậm) / hiệu ứng người tặng nhận được — chữ tự xuống dòng, không bị cắt */
 #legend .item .txt { display: grid; gap: 1px; min-width: 0; white-space: normal; line-height: 1.2; }
 #legend .item .txt b { font-size: 15px; color: var(--gold); }
 #legend .item .txt .fx { font-size: 15px; font-weight: 700; color: #fff; }
-#stage.theme-dance #legend .item { white-space: normal; overflow: visible; align-items: center; padding: 5px 8px; }
+#stage.theme-dance #legend .item { white-space: normal; overflow: visible; align-items: center; padding: 5px 8px 5px 6px; border-left: 4px solid var(--tier); }
 #stage.theme-dance #legend .item em.gifts img { width: 34px; height: 34px; }
+#stage.theme-dance #legend .item .txt b { font-size: 16px; }
+/* câu hiệu ứng luôn một dòng (dance-scene.js giữ câu ngắn); "…" chỉ là lưới an toàn, không để rớt chữ xuống dòng */
+#stage.theme-dance #legend .item .txt .fx { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* vạch màu theo bậc quà (thứ tự dòng = bậc 1 → 6): nhìn là biết bậc nào "to" hơn */
+#stage.theme-dance #legend .item:nth-child(1) { --tier: #5fd8ff; }
+#stage.theme-dance #legend .item:nth-child(2) { --tier: #7dffb0; }
+#stage.theme-dance #legend .item:nth-child(3) { --tier: #b98cff; }
+#stage.theme-dance #legend .item:nth-child(4) { --tier: #ffb347; }
+#stage.theme-dance #legend .item:nth-child(5) { --tier: #ff5fc8; }
+#stage.theme-dance #legend .item:nth-child(6) { --tier: #ffe27a; }
 
 /* Sàn nhảy: tên + avatar trên đầu — bản nhỏ cho đám đông, bản to cho người đang được camera zoom gần / Top / solo */
 .theme-dance .label .tag { background: rgba(16, 6, 36, 0.82); border-color: rgba(196, 161, 255, 0.65); font-size: 22px; }
