@@ -213,6 +213,7 @@ window.__stage = {
     return currentId;
   },
   probe: (id) => current?.probe?.(id) || null,
+  cameraShot: () => current?.cameraShot?.() ?? -1,
   audioState: () => audio.state(),
   audioLevel: () => audio.level(),
   musicSpecial: () => audio.specialKind(),

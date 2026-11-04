@@ -1,13 +1,15 @@
 // Camera "đạo diễn" của sàn nhảy cho khung dọc 9:16.
-// - Bình thường: chuỗi 8 góc quay theo ô nhịp (toàn cảnh → lia hàng đầu → lia hàng giữa → nhìn cao hàng cuối →
-//   bục Top 3 → dolly một bên → hạ thấp nhìn màn LED → kết ở nửa đối diện), mỗi góc chuyển mượt, không giật.
+// - Bình thường: vòng 8 góc như MV — TOÀN CẢNH RỘNG (thấy hết sân khấu + màn LED + cả sàn) → lượn cinematic vòng cung hạ
+//   xuống → lướt bục Top 1-2-3 → lướt hàng đầu → lướt các hàng giữa → nhìn qua các hàng sau về sân khấu → quả cầu disco
+//   (ngắn) → lia một bên sàn → lại toàn cảnh. Mỗi góc chuyển mượt, không giật.
 // - Có quà: tiến sát người được chọn (solo thì vòng quanh chậm như quay MV), quà lớn thì cận rồi kéo ra toàn cảnh.
 // Nhịp chuyển góc, cách làm mượt (hệ số mũ) và kịch bản "cận → kéo ra toàn cảnh" chuyển thể từ ClubCameraController.cs
 // của dự án tiktok-live-bar — MIT License, Copyright (c) 2025 ÔNG CHÚ MMO (https://ongchummo.com).
 import * as THREE from '/vendor/three/three.module.js';
 
 const smooth = (v) => v * v * (3 - 2 * v);
-const SHOT_BARS = [3.5, 3.5, 3.5, 3.5, 3.5, 4, 4.5, 3.5];
+// độ dài từng góc (ô nhịp): toàn cảnh, lượn cinematic, Top 3, hàng đầu, hàng giữa, hàng sau, cầu disco (ngắn), lia một bên
+const SHOT_BARS = [4.5, 4, 3.5, 3, 3, 3, 2, 3.5];
 
 export function createCameraDirector(camera) {
   const look = new THREE.Vector3(0, 1.2, -1);
@@ -33,45 +35,48 @@ export function createCameraDirector(camera) {
     const camFront = front + 9;
     let fov = 50;
     switch (shot) {
-      case 0: // toàn cảnh: sàn kín người ở nửa dưới, sân khấu + màn LED chiếu DJ ở giữa khung (không bị HUD phía trên che)
-        wantPos.lerpVectors(target.set(0, 9.4, camFront + 4.6), wantPos.set(0, 8.6, camFront + 3.6), t);
-        wantLook.set(0, 3.9, middle - 5);
-        fov = THREE.MathUtils.lerp(58, 54, t);
+      case 0: // TOÀN CẢNH RỘNG: lùi xa + cao, thấy trọn sân khấu, màn LED, bục Top và cả sàn; đẩy vào chậm
+        wantPos.lerpVectors(target.set(0, 11.6, camFront + 8.8), wantPos.set(0, 10.6, camFront + 7.2), t);
+        wantLook.set(0, 3.2, middle - 4.2);
+        fov = THREE.MathUtils.lerp(62, 57, t);
         break;
-      case 1: // lia ngang hàng đầu
-        wantPos.set(sweep * 0.5, 4.6, front + 6.2);
+      case 1: { // lượn cinematic: vòng cung từ trên cao một bên, hạ thấp sang bên kia; ánh nhìn trượt từ sàn về sân khấu
+        const angle = THREE.MathUtils.lerp(-0.85, 0.55, t) * side;
+        const radius = THREE.MathUtils.lerp(12.5, 8.5, t);
+        wantPos.set(Math.sin(angle) * radius, THREE.MathUtils.lerp(8.6, 3.6, t), middle + Math.cos(angle) * radius);
+        wantLook.lerpVectors(target.set(0, 1.2, middle), new THREE.Vector3(0, 2.6, podium.z), t);
+        fov = THREE.MathUtils.lerp(52, 44, t);
+        break;
+      }
+      case 2: // lướt ngang trước bục Top 1-2-3 trên sân khấu
+        wantPos.lerpVectors(target.set(-side * 2.4, 4.4, podium.z + 7.6), wantPos.set(side * 2.4, 3.9, podium.z + 6.4), t);
+        wantLook.set(0, podium.y + 0.9, podium.z);
+        fov = THREE.MathUtils.lerp(44, 40, t);
+        break;
+      case 3: // lướt hàng đầu
+        wantPos.set(sweep * 0.5, 4.4, front + 6);
         wantLook.set(sweep * 0.8, 1.0, front - 1.5);
+        fov = 45;
+        break;
+      case 4: // lướt các hàng giữa từ trên chéo xuống (hàng sau không bị sticker hàng trước che)
+        wantPos.set(mirrored * 0.6, 6.2, middle + 5.2);
+        wantLook.set(mirrored * 0.75, 0.9, middle - 0.8);
         fov = 46;
         break;
-      case 2: // từ giữa đám đông ngước lên quả cầu disco + tia sáng toả xuống
-        wantPos.set(mirrored * 0.35, 3.4, front + 3.6);
-        wantLook.set(0, 6.4, 0.5);
-        fov = THREE.MathUtils.lerp(54, 50, t);
-        break;
-      case 3: // nhìn qua đầu đám đông về phía sân khấu + màn LED
+      case 5: // nhìn qua đầu các hàng sau về phía sân khấu + màn LED
         wantPos.set(sweep * 0.4, 7.4, front + 5.5);
         wantLook.set(sweep * 0.5, 2.4, back - 2.5);
         fov = 52;
         break;
-      case 4: // trượt ngang trước bục Top 1-2-3 trên sân khấu
-        wantPos.lerpVectors(target.set(-side * 2.2, 4.4, podium.z + 7.5), wantPos.set(side * 2.2, 4.0, podium.z + 6.6), t);
-        wantLook.set(0, podium.y + 0.9, podium.z);
-        fov = THREE.MathUtils.lerp(44, 40, t);
+      case 6: // từ giữa đám đông ngước lên quả cầu disco + tia sáng toả xuống (góc ngắn)
+        wantPos.set(mirrored * 0.35, 3.4, front + 3.6);
+        wantLook.set(0, 6.4, 0.5);
+        fov = THREE.MathUtils.lerp(54, 50, t);
         break;
-      case 5: // dolly một bên, không băng qua cả sàn
+      default: // lia một bên sàn, không băng qua cả sàn
         wantPos.lerpVectors(target.set(cx + side * (half + 2), 5.6, front + 7.5), wantPos.set(cx + side * (half * 0.5 + 1.4), 6.2, front + 8.6), t);
         wantLook.set(cx + side * THREE.MathUtils.lerp(half * 0.25, -half * 0.1, t), 1.0, middle);
         fov = THREE.MathUtils.lerp(48, 45, t);
-        break;
-      case 6: // hạ thấp sau đám đông, ngước nhìn màn LED + sân khấu
-        wantPos.lerpVectors(target.set(cx, 5.2, camFront), wantPos.set(cx + side * 1.2, 3.4, camFront - 2.5), t);
-        wantLook.lerpVectors(target.set(cx, 1.4, middle), new THREE.Vector3(cx - side * 0.4, 3.2, podium.z - 1.5), t);
-        fov = THREE.MathUtils.lerp(48, 50, t);
-        break;
-      default: // kết ở nửa đối diện cho công bằng hai bên
-        wantPos.lerpVectors(target.set(cx - side * (half + 1), 5.2, front + 7), wantPos.set(cx - side * 1.6, 4.8, front + 6.2), t);
-        wantLook.set(cx - side * Math.max(1.2, half * 0.42), 1.1, middle + 0.3);
-        fov = THREE.MathUtils.lerp(47, 43, t);
     }
     return fov;
   }
@@ -82,6 +87,7 @@ export function createCameraDirector(camera) {
       focus = { get, until: now + seconds, startedAt: now, mode };
     },
     isFocusing: (now) => Boolean(focus && now < focus.until),
+    shotIndex: () => shot, // để kiểm tra (chụp từng góc)
     focusMode: (now) => (focus && now < focus.until ? focus.mode : ''),
     release() {
       focus = null;

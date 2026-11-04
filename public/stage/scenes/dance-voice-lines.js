@@ -14,26 +14,19 @@ export function thankLine(fx) {
   return `${thanks} đã tặng ${gift}!`;
 }
 
-// Quà combo: TikTok gửi nhiều lượt (×1, ×2, ×3…) — đọc MỘT câu ngay ở lượt đầu (bắt đầu tạo giọng liền, không chờ gộp —
-// câu cảm ơn phải tới cùng lúc với hiệu ứng), các lượt sau của cùng người + cùng món trong `repeatMs` thì không đọc lại.
-// onStart(fx): gọi lúc giọng bắt đầu đọc (hoặc ngay khi lượt đó không đọc) — nơi gọi dùng để mở cổng hiệu ứng.
-export function createGiftVoice(say, { repeatMs = 8000 } = {}) {
-  const lastSaid = new Map(); // khoá → thời điểm đọc
+// Quà combo: TikTok gửi nhiều lượt (×1, ×2, ×3…) — chỉ lượt ĐẦU thành khoảnh khắc (đọc cảm ơn + hiệu ứng); các lượt sau
+// của cùng người + cùng món trong `repeatMs` chỉ cộng số trên thông báo.
+export function createComboFilter({ repeatMs = 8000 } = {}) {
+  const last = new Map(); // khoá → thời điểm lượt gần nhất
   return {
-    add(fx, onStart) {
+    isRepeat(fx) {
       const key = `${fx.userId}|${fx.giftName}`;
       const now = performance.now();
-      if (now - (lastSaid.get(key) ?? -Infinity) < repeatMs) {
-        lastSaid.set(key, now);
-        onStart?.();
-        return;
-      }
-      lastSaid.set(key, now);
-      if (lastSaid.size > 500) lastSaid.delete(lastSaid.keys().next().value);
-      say(thankLine(fx), onStart);
+      const repeat = now - (last.get(key) ?? -Infinity) < repeatMs;
+      last.set(key, now);
+      if (last.size > 500) last.delete(last.keys().next().value);
+      return repeat;
     },
-    clear() {
-      lastSaid.clear();
-    }
+    clear: () => last.clear()
   };
 }

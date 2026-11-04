@@ -39,18 +39,15 @@ test('names are tidied so the voice says them clearly, with a pause after the na
   assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Cảm ơn Lan Anh, đã follow sàn nhảy! Mời bạn lên sân khấu!');
 });
 
-test('every paid gift is thanked once per combo, each line in one of the three voices at random', async () => {
+test('each line uses one of the three voices at random, and a combo makes one moment', async () => {
   const { pickVoice, TTS_VOICES } = await import('../public/shared/tts-voices.js');
-  const { createGiftVoice } = await import('../public/stage/scenes/dance-voice-lines.js');
+  const { createComboFilter } = await import('../public/stage/scenes/dance-voice-lines.js');
   assert.deepEqual(new Set(Array.from({ length: 60 }, (_, i) => pickVoice('random', () => (i % 3) / 3 + 0.01))), new Set(TTS_VOICES));
   assert.equal(pickVoice('Adam bựa'), 'Ngọc Huyền');
   assert.equal(pickVoice('Trúc Ly'), 'Trúc Ly');
-  // đọc NGAY ở lượt đầu của combo (không chờ gộp), các lượt sau cùng người + cùng món thì không đọc lại nhưng vẫn mở cổng hiệu ứng
-  const said = [];
-  let started = 0;
-  const voice = createGiftVoice((line, onStart) => { said.push(line); onStart(); }, { repeatMs: 1000 });
-  for (let i = 0; i < 4; i += 1) voice.add({ userId: 'u1', nickname: 'Lan Anh', giftName: 'Hoa hồng', count: i === 0 ? 5 : 1, tier: 1 }, () => { started += 1; });
-  voice.add({ userId: 'u2', nickname: 'Minh', giftName: 'Corgi', count: 1, tier: 3 }, () => { started += 1; });
-  assert.deepEqual(said, ['Cảm ơn Lan Anh, đã tặng 5 Hoa hồng!', 'Cảm ơn Minh, đã tặng Corgi!']);
-  assert.equal(started, 5);
+  // combo: chỉ lượt đầu thành khoảnh khắc; lượt sau của cùng người + cùng món chỉ cộng số trên thông báo
+  const combo = createComboFilter({ repeatMs: 1000 });
+  const fx = (u, g) => ({ userId: u, giftName: g });
+  assert.deepEqual([combo.isRepeat(fx('u1', 'Hoa hồng')), combo.isRepeat(fx('u1', 'Hoa hồng')), combo.isRepeat(fx('u2', 'Hoa hồng')),
+    combo.isRepeat(fx('u1', 'Corgi'))], [false, true, false, false]);
 });

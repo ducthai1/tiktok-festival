@@ -4,7 +4,7 @@
 const DJ_VIDEO = '/static/assets/dance/dj/dj.mp4';
 
 // [biểu tượng, cách làm (gõ gì / làm gì), được gì] — đọc thành "Gõ [đổi nv] → Đổi nhân vật".
-// Vào live là tự có nhân vật trên sàn (sự kiện vào phòng), nên không có dòng "gõ 1".
+// Vào live là tự có nhân vật trên sàn (sự kiện vào phòng) — không cần dòng nào cho việc đó (user bỏ dòng "Vào live").
 const COMMANDS = [
   ['💬', 'đổi nv', 'Đổi nhân vật'],
   ['💬', 'đi vòng', 'Đi 1 vòng sàn'],
@@ -12,7 +12,6 @@ const COMMANDS = [
   ['💬', 'to lên', 'Nhân vật to ra'],
   ['💬', 'nhỏ lại', 'Nhân vật nhỏ lại'],
   ['💬', 'quẩy', 'Quẩy bung 8 giây'],
-  ['👋', 'Vào live', 'Tự lên sàn, khỏi gõ', 'act'],
   ['❤', '1.000 tim', 'Có cánh + lên hình', 'act'],
   ['➕', 'Follow', 'Solo sân khấu + cánh', 'act'],
   ['↗', 'Share', 'Lên camera + vẫy tay', 'act']

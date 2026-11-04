@@ -8,8 +8,8 @@ import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
-import { createGiftVoice, thankLine } from './dance-voice-lines.js';
-import { createMomentGate } from './dance-moment-gate.js';
+import { createComboFilter, thankLine } from './dance-voice-lines.js';
+import { createGiftStage } from './dance-gift-stage.js';
 import { createTierBanner } from './dance-tier-banner.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
@@ -20,6 +20,9 @@ import { disposeObject } from './person-model.js';
 
 const MEDALS = ['🥇', '🥈', '🥉'];
 const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
+// quà từ 200 💎 (một lượt) là "quà lớn": độc chiếm sân khấu — giữ bao lâu (ms, tính từ lúc giọng cảm ơn bắt đầu) theo bậc
+const BIG_GIFT_KC = 200;
+const BIG_HOLD_MS = { 3: 6000, 4: 9000, 5: 12000, 6: 20000 };
 const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
 const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đứng bàn mix trên sân khấu (không phải người xem)
@@ -56,9 +59,20 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const sounds = createDanceSounds(audio);
   const bigGift = createGiftAnnouncer(hud, { onShow: () => sounds.announce() });
   // câu cảm ơn đi trước, hiệu ứng làm nền: tiếng / thẻ quà lớn / pháo hoa / DROP / nhạc VIP chờ giọng bắt đầu đọc (tối đa 5 s)
-  const moment = createMomentGate();
+  // câu cảm ơn đi trước, hiệu ứng làm nền; quà ≥ 200 💎 độc chiếm sân khấu (quà nhỏ chen giữa chỉ hiện thông báo)
+  const stage = createGiftStage({ speak: (line, onStart) => audio.speak(line, 'story', { onStart }) });
+  const combo = createComboFilter();
+  const SKIP = { skip: true };
+  let batch = null; // khoảnh khắc đang gom hiệu ứng đi kèm của CÙNG gói sự kiện (pháo hoa / trực thăng / DROP ngay sau quà)
+  const openBatch = (m) => {
+    batch = m;
+    queueMicrotask(() => { if (batch === m) batch = null; });
+  };
+  const companion = (fn) => {
+    if (!batch) stage.run(fn); // DROP do thanh Độ Quẩy…: sân khấu bận thì xếp hàng
+    else if (batch !== SKIP) stage.attach(batch, fn);
+  };
   const tierBanner = createTierBanner(hud); // khung chữ SOLO / VIP / SIÊU SAO / ĐẠI NHẠC HỘI / DROP — xịn dần theo cấp
-  const giftVoice = createGiftVoice((line, onStart) => audio.speak(line, 'story', { onStart })); // mọi quà tốn kim cương
   // có video DJ: chiếu trên màn LED lớn sau sân khấu
   const djPanel = createDjPanel(hud, { onVideo: (video) => room.setScreenVideo(video) });
   let lastBeat = 0;
@@ -137,10 +151,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     director.focus(() => posOf(info.id), info.msLeft / 1000, 'solo', clock);
     auBar.start(d?.nickname || '', lastBeat, info.id);
     const endsAt = performance.now() + info.msLeft;
-    moment.run(() => {
+    stage.run(() => {
       tierBanner.show(info.tier, d?.nickname || '', { avatarUrl: d?.avatar || '', ms: 3400 });
       sounds.solo(info.tier, Math.max(1000, endsAt - performance.now()));
-    });
+    }, info.id);
     markRecent(info.id);
   }
 
@@ -193,6 +207,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       }
       refreshLabels();
     },
+    cameraShot: () => director.shotIndex(), // để kiểm tra: góc camera đang quay
     probe: (id) => {
       const e = crowd.get(id);
       if (!e) return null;
@@ -210,13 +225,13 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         labels.bubble(fx.userId, fx.text);
       } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar, gold: fx.gold });
       else if (fx.kind === 'follow') {
-        const release = moment.hold();
-        audio.speak(thankLine(fx), 'story', { onStart: release });
-        moment.run(() => {
+        const effects = [() => {
           bigGift.follow(fx);
           sounds.follow();
           if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
-        });
+        }];
+        const m = { userId: fx.userId, line: thankLine(fx), effects };
+        openBatch(stage.busy() ? stage.big(m) : stage.now(m)); // quà lớn đang diễn → follow xếp hàng sau, không chen ngang
         markRecent(fx.userId);
       }
       else if (fx.kind === 'camera' && e) {
@@ -233,27 +248,28 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       else if (fx.kind === 'gift') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture, title: fx.nickname });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
-        giftVoice.add(fx, moment.hold());
-        moment.run(() => {
-          sounds.gift(fx.tier);
-          bigGift.show(fx);
-        });
         markRecent(fx.userId);
-        if (fx.tier === 1) glance(fx.userId);
+        const big = fx.diamonds >= BIG_GIFT_KC;
+        if (combo.isRepeat(fx) || (!big && stage.busy())) openBatch(SKIP); // lượt combo / quà nhỏ chen giữa quà lớn: chỉ thông báo
+        else {
+          const m = { userId: fx.userId, line: thankLine(fx), effects: [() => { sounds.gift(fx.tier); bigGift.show(fx); }] };
+          openBatch(big ? stage.big({ ...m, holdMs: BIG_HOLD_MS[Math.min(6, fx.tier)] || 6000 }) : stage.now(m));
+          if (!big && fx.tier === 1) glance(fx.userId);
+        }
       } else if (fx.kind === 'fountains') {
-        moment.run(() => {
+        companion(() => {
           show.fountains(clock, 7);
           heliFrom = clock;
           sounds.heli();
         });
       } else if (fx.kind === 'fireworks') {
-        moment.run(() => {
+        companion(() => {
           show.fireworks(fx.power);
           sounds.fireworks(fx.power);
           if (!solo) director.focus(() => new THREE.Vector3(0, 0.9, -7.2), 5, 'reveal', clock);
         });
       } else if (fx.kind === 'drop') {
-        moment.run(() => {
+        companion(() => {
           tierBanner.show('drop', '💥 Cả sàn cùng quẩy 💥', { ms: 3200 });
           sounds.drop(fx.durationMs);
           show.confetti(clock, fx.durationMs / 1000);
@@ -288,8 +304,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       if (Math.floor(t * 4) !== Math.floor((t - dt) * 4)) refreshLabels(); // 4 lần/giây: camera zoom tới ai là tên hiện ngay
     },
     dispose() {
-      giftVoice.clear();
-      moment.clear();
+      stage.clear();
+      combo.clear();
       tierBanner.dispose();
       crowd.dispose();
       djPanel.dispose();
