@@ -162,7 +162,7 @@ export function buildHallDecor(scene) {
         }
         dotsTex.needsUpdate = true;
       }
-      crown.visible = Boolean(top1Head);
+      crown.visible = false; // khung danh hiệu hoàng gia của Top 1 đã có vương miện — không chồng thêm
       if (top1Head) crown.position.set(top1Head.x, top1Head.y + 0.35 + Math.sin(t * 2.4) * 0.08, top1Head.z);
     }
   };

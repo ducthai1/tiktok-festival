@@ -9,3 +9,5 @@ Camera đạo diễn (dance-camera-director.js) chuyển thể từ ClubCameraCo
   Bỏ meme-mushroom_dance_63 (chữ in kiểu thương hiệu game). Bản cherry-* trùng với meme-* đã gỡ.
 - ob-*, prop-*: từ methanol-dev/online-bar (MIT, public/assets/characters + props). SVG đã kiểm không có script/tham chiếu ngoài,
   vẽ ra PNG bằng Chrome (chế độ ảnh), rồi giải mã + lưu lại bằng Pillow trong sandbox. Bỏ luffy_chibi (nhân vật có bản quyền) và 8 icon vuông có nền.
+- banners/*: khung danh hiệu + cánh của cherry9001/tiktok-live-bar (UnityProject/Assets/Resources/Banners, MIT; README của họ ghi là ảnh tự tạo),
+  giải mã + lưu lại bằng Pillow trong sandbox, thu về ≤640px.

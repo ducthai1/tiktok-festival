@@ -1,51 +1,16 @@
-// "Huy hiệu + cánh": đôi cánh xanh phát sáng vẫy theo nhịp trên lưng người có quà (giống trend "đi bar online").
-// Vẽ bằng canvas, cộng sáng (additive) nên không đè bẩn lên mặt sticker; luôn quay về camera như sticker.
+// "Huy hiệu + cánh": đôi cánh sau lưng vẫy theo nhịp (ảnh cánh lửa/băng/neon/tím/năng lượng ở public/assets/dance/banners).
+// Mỗi loại cánh một InstancedMesh; luôn quay về camera như sticker, đặt lùi sau lưng nhân vật.
 import * as THREE from '/vendor/three/three.module.js';
 
-function wingsTexture() {
-  const canvas = document.createElement('canvas');
-  canvas.width = 256;
-  canvas.height = 128;
-  const g = canvas.getContext('2d');
-  for (const side of [-1, 1]) {
-    g.save();
-    g.translate(128, 64);
-    g.scale(side, 1);
-    const grad = g.createRadialGradient(30, -10, 4, 50, -6, 80);
-    grad.addColorStop(0, 'rgba(120,215,255,1)');
-    grad.addColorStop(0.4, 'rgba(30,140,255,0.95)');
-    grad.addColorStop(1, 'rgba(20,60,255,0)');
-    g.fillStyle = grad;
-    g.beginPath(); // cánh trên
-    g.moveTo(6, 0);
-    g.bezierCurveTo(30, -70, 120, -66, 118, -24);
-    g.bezierCurveTo(112, 4, 50, 8, 6, 0);
-    g.fill();
-    g.beginPath(); // cánh dưới
-    g.moveTo(6, 4);
-    g.bezierCurveTo(40, 10, 96, 30, 82, 56);
-    g.bezierCurveTo(60, 70, 20, 40, 6, 4);
-    g.fill();
-    g.strokeStyle = 'rgba(140,230,255,0.9)';
-    g.lineWidth = 3;
-    g.beginPath();
-    g.moveTo(10, -2); g.bezierCurveTo(40, -40, 90, -50, 110, -28);
-    g.stroke();
-    g.restore();
-  }
-  const texture = new THREE.CanvasTexture(canvas);
+export function createWingsMesh(scene, capacity, file, aspect = 0.46) {
+  const texture = new THREE.TextureLoader().load(`/static/assets/dance/banners/${file}`);
   texture.colorSpace = THREE.SRGBColorSpace;
-  return texture;
-}
-
-export function createWingsMesh(scene, capacity) {
-  const geometry = new THREE.PlaneGeometry(1, 0.5);
+  const geometry = new THREE.PlaneGeometry(1, aspect);
   geometry.setAttribute('aPhase', new THREE.InstancedBufferAttribute(new Float32Array(capacity), 1).setUsage(THREE.DynamicDrawUsage));
   const material = new THREE.ShaderMaterial({
-    uniforms: { map: { value: wingsTexture() }, beat: { value: 0 } },
+    uniforms: { map: { value: texture }, beat: { value: 0 } },
     transparent: true,
     depthWrite: false,
-    blending: THREE.AdditiveBlending,
     vertexShader: `
       attribute float aPhase;
       uniform float beat;
@@ -64,7 +29,8 @@ export function createWingsMesh(scene, capacity) {
       varying vec2 vUv;
       void main() {
         vec4 c = texture2D(map, vUv);
-        gl_FragColor = vec4(c.rgb * c.a * 0.6, 1.0); // nhạt bớt để cộng sáng không bệt thành trắng
+        if (c.a < 0.04) discard;
+        gl_FragColor = vec4(c.rgb * 0.85, c.a); // dưới ngưỡng bloom: cánh rõ nét, không loá
         #include <colorspace_fragment>
       }`
   });

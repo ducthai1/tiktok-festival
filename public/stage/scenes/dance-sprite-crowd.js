@@ -47,7 +47,10 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   }
   // ảnh nhảy tại chỗ của mọi nhân vật tải sẵn; bản xung/spot tải khi cần lần đầu
   for (const c of [...ROSTER, DJ_CHARACTER]) if (sheets[c.crowd]) texture(c.crowd);
-  const wings = createWingsMesh(scene, capacity);
+  // cánh theo hạng: Top 1 tím hoàng gia, Top 2 băng, Top 3 lửa, người solo/khổng lồ neon, người có cánh (1k tim, quà) năng lượng
+  const WING_FILES = { top1: 'player-wings.webp', top2: 'wings-ice.webp', top3: 'wings-fire.webp', star: 'wings-neon.webp', basic: 'energy-wings-v2.webp' };
+  const wingMeshes = Object.fromEntries(Object.entries(WING_FILES).map(([k, f]) => [k, createWingsMesh(scene, k === 'basic' ? capacity : 4, f)]));
+  const wingKind = (e, ctx) => (e.info.rank ? `top${e.info.rank}` : e.id === ctx.soloId || e.info.giant ? 'star' : e.info.wings ? 'basic' : '');
 
   function meshFor(key) {
     let mesh = meshes.get(key);
@@ -176,23 +179,26 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
           aura.setColorAt(e.index, color.set(ring));
         } else aura.setMatrixAt(e.index, HIDDEN);
       }
-      // cánh xanh: sau lưng, ngang vai, lùi xa camera một chút
-      let w = 0;
-      const wingPhase = wings.geometry.getAttribute('aPhase');
+      // cánh sau lưng, ngang vai, lùi xa camera một chút
+      const used = Object.fromEntries(Object.keys(wingMeshes).map((k) => [k, 0]));
       for (const list of groups.values()) {
         for (const { e, hop } of list) {
-          if (!e.info.wings || e.flight || w >= capacity) continue;
+          const kind = wingKind(e, ctx);
+          const mesh = wingMeshes[kind];
+          if (!mesh || e.flight || used[kind] >= (kind === 'basic' ? capacity : 4)) continue;
           const h = HEIGHT_M * e.scale;
           tmp.set(e.pos.x, e.pos.y + hop + h * 0.62, e.pos.z).addScaledVector(scaleV.subVectors(tmp, ctx.camPos).setY(0).normalize(), 0.12);
-          wings.setMatrixAt(w, matrix.compose(tmp, NO_TURN, scaleV.setScalar(h * 1.5)));
-          wingPhase.setX(w, e.phase * 0.25);
-          w += 1;
+          mesh.setMatrixAt(used[kind], matrix.compose(tmp, NO_TURN, scaleV.setScalar(h * (kind === 'basic' ? 1.6 : 2))));
+          mesh.geometry.getAttribute('aPhase').setX(used[kind], e.phase * 0.25);
+          used[kind] += 1;
         }
       }
-      wings.count = w;
-      wings.instanceMatrix.needsUpdate = true;
-      wingPhase.needsUpdate = true;
-      wings.material.uniforms.beat.value = beat;
+      for (const [kind, mesh] of Object.entries(wingMeshes)) {
+        mesh.count = used[kind];
+        mesh.instanceMatrix.needsUpdate = true;
+        mesh.geometry.getAttribute('aPhase').needsUpdate = true;
+        mesh.material.uniforms.beat.value = beat;
+      }
       for (const [key, mesh] of meshes) if (!groups.has(key)) mesh.count = 0;
       for (const [key, list] of groups) {
         const mesh = meshFor(key);
@@ -224,7 +230,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
       return box;
     },
     dispose() {
-      for (const mesh of [...meshes.values(), aura, wings]) {
+      for (const mesh of [...meshes.values(), aura, ...Object.values(wingMeshes)]) {
         scene.remove(mesh);
         mesh.geometry.dispose();
         mesh.material.dispose();
