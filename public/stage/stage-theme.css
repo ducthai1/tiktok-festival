@@ -153,21 +153,22 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .label .title-plate.rank-3 { background-image: url('/static/assets/dance/banners/title-fire.webp'); color: #fff1c9; }
 .label .title-plate.star { background-image: url('/static/assets/dance/banners/title-neon.webp'); }
 
-/* Sàn nhảy kiểu "bar online": cột lệnh bên phải */
-.cmd-table { position: absolute; right: 94px; top: 1240px; width: 318px; padding: 8px 10px 10px; border-radius: 16px; z-index: 5; pointer-events: none;
+/* Sàn nhảy kiểu "bar online": cột lệnh bên phải, NGANG HÀNG bảng Cách tham gia (đối xứng 94–360 ↔ 720–986).
+   Không đặt nửa dưới màn: trên điện thoại TikTok phủ bình luận + gợi ý tặng quà lên vùng đó. */
+.cmd-table { position: absolute; right: 94px; top: 372px; width: 270px; padding: 8px 8px 10px; border-radius: 16px; z-index: 5; pointer-events: none;
   background: rgba(8, 5, 22, 0.86); border: 1.5px solid rgba(160, 200, 255, 0.5); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45); }
 .cmd-title { margin: 0 0 6px; text-align: center; font: 900 17px var(--font); color: #7dff8a; letter-spacing: 1px; }
-.cmd-grid { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 10px; align-items: center; }
+.cmd-grid { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 5px 8px; align-items: center; }
 .cmd-th { font: 900 14px var(--font); color: #9fb3ff; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid rgba(160, 200, 255, 0.35); padding-bottom: 3px; }
-.cmd-key { justify-self: start; padding: 1px 8px; border-radius: 6px; background: #ffd21f; color: #1b1300; font: 900 16px var(--font); white-space: nowrap; }
+.cmd-key { justify-self: start; padding: 1px 6px; border-radius: 6px; background: #ffd21f; color: #1b1300; font: 900 14px var(--font); white-space: nowrap; }
 .cmd-key.act { background: #ff7ac4; color: #2b0018; }
-.cmd-val { font: 800 16px var(--font); color: #fff; line-height: 1.2; overflow-wrap: anywhere; text-shadow: 0 1px 2px #000; }
+.cmd-val { font: 800 14px var(--font); color: #fff; line-height: 1.2; white-space: nowrap; text-shadow: 0 1px 2px #000; }
 
 /* Sàn nhảy — bố cục không đè nhau: thanh Độ Quẩy (252–359) → dưới đó 3 cột:
    trái = Cách tham gia, giữa = thanh phím solo → thông báo → banner, phải = Top + thẻ chào gọn.
    Tên/tin nhắn người xem đã hiện trên đầu nhân vật nên thẻ chào chỉ cần gọn. */
 #stage.theme-dance #hud > #howto, #stage.theme-dance #hud > #board { top: 372px; }
-#stage.theme-dance #hud > #welcome { left: auto; right: 94px; top: 640px; width: 252px; min-height: 0; max-height: 330px;
+#stage.theme-dance #hud > #welcome { left: auto; right: 94px; top: 650px; width: 252px; min-height: 0; max-height: 330px;
   gap: 8px; padding: 12px 12px 14px; border-radius: 22px; border-width: 2px; }
 #stage.theme-dance #welcome .welcome-avatars img, #stage.theme-dance #welcome .welcome-avatars .ava { width: 64px; height: 64px; border-width: 3px; }
 #stage.theme-dance #welcome .kicker { font-size: 15px; }
