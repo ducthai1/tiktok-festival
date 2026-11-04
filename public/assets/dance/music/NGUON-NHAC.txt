@@ -20,6 +20,8 @@ dance-zero, the-clique, hiding-under, house-vibez, lust, karma) — còn 25 bài
 04/11/2026 22:06 user nghe hard-techno (120 BPM) vẫn chê "không sung" → chỉ giữ bài NHANH ≥ 136 BPM (gần nhịp Vinahouse
 ~140): infected-vibes (mở màn), infected-mushroom-vibes, machine-drum-vibes, rising-sun, hey, goa-trance-mantra,
 positive-energy, trance-party — 8 bài, vòng ~13 phút. Bài house/techno 120–129 BPM đã bỏ khỏi tracks.json (file còn).
+04/11/2026 22:08 user nghe Infected Vibes (bài mở màn, phát lại mỗi lần tải lại màn) → tưởng "vẫn bài cũ", chê không sung
+→ bỏ infected-vibes, bỏ luôn bài mở màn cố định (tải lại màn là bốc ngẫu nhiên). Còn 7 bài.
 Thêm bài: chép mp3 + thêm dòng vào tracks.json (có thể đo bằng công cụ music-prep2.py).
 KHÔNG dùng nhạc có bản quyền (remix TikTok, Vinahouse, nonstop DJ…): TikTok tắt tiếng / phạt buổi live.
 Các file nhạc remix trong repo Yuh266/bar-tiktok và "NST nhạc hot TikTok" của bar-live là bản tải lậu → không lấy.

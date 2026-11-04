@@ -4,12 +4,6 @@
   "bpm": 143.5,
   "firstBeat": 0.242
  },
- "infected-vibes": {
-  "file": "infected-vibes.mp3",
-  "bpm": 139.5,
-  "firstBeat": 0.176,
-  "opener": true
- },
  "positive-energy": {
   "file": "positive-energy.mp3",
   "bpm": 136.0,
