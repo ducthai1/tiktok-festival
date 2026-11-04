@@ -1,0 +1,6 @@
+Nhân vật sticker của Sàn Nhảy (đã giải mã + ghép lại thành ảnh WebP mới, bỏ metadata):
+- nv01…nv15, kiem-tien, phuong-hoang, heli: lấy từ repo haituank1/LiveGames (Games/san-nhay/img),
+  https://github.com/haituank1/LiveGames — repo không ghi giấy phép; dùng cho live cá nhân theo yêu cầu chủ kênh.
+- cherry-*: lấy từ repo cherry9001/tiktok-live-bar (UnityProject/Assets/Resources/Characters, MIT cho phần code;
+  ảnh gốc là sticker meme sưu tầm, xem TikTokBridge/assets/gifs/sources.json của repo đó). Đã bỏ 1 sticker có chữ tục.
+Camera đạo diễn (dance-camera-director.js) chuyển thể từ ClubCameraController.cs của cherry9001/tiktok-live-bar (MIT).

@@ -5,6 +5,7 @@ import { buildTestEvent } from './games/test-event-factory.js';
 const GAME_COMMANDS = {
   boss: ['resetBoss', 'killBoss', 'frenzy'],
   bar: ['party', 'clear'],
+  dance: ['drop', 'clear'],
   swim: ['pause', 'resume', 'resetRound', 'resetWins'],
   temple: ['resetMerit', 'clear']
 };

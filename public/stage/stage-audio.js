@@ -84,6 +84,10 @@ export function createStageAudio() {
       theme = name;
       if (ctx) applyLevels();
     },
+    // Phách của nhạc nền đang phát (null khi tắt tiếng / chưa có nhạc) — cảnh tự đếm nhịp riêng khi null.
+    beat() {
+      return music && ctx?.state === 'running' ? music.beat() : null;
+    },
     speak(text, channel = 'story') {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
       if (!allowed || !('speechSynthesis' in window) || speakQueue.length > 4) return;

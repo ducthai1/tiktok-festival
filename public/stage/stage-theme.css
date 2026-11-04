@@ -11,6 +11,14 @@
   --panel: rgba(22, 8, 34, 0.62); --line: rgba(255, 79, 163, 0.75); --line-2: #36d6ff; --accent: #ff7ac4; --gold: #ffe08a;
   --glow: 0 0 22px rgba(255, 79, 163, 0.55), 0 0 44px rgba(54, 214, 255, 0.25); --title-fill: linear-gradient(90deg, #ffe4f3, #ff7ac4 50%, #7fe8ff);
 }
+#stage.theme-dance {
+  --panel: rgba(16, 6, 36, 0.66); --line: rgba(176, 124, 255, 0.85); --line-2: #36d6ff; --accent: #c4a1ff; --gold: #ffe08a;
+  --glow: 0 0 22px rgba(176, 124, 255, 0.6), 0 0 44px rgba(54, 214, 255, 0.3); --title-fill: linear-gradient(90deg, #ffffff, #c4a1ff 45%, #36d6ff 75%, #ff7ac4);
+}
+#stage.theme-dance {
+  --panel: rgba(16, 6, 36, 0.66); --line: rgba(176, 124, 255, 0.85); --line-2: #36d6ff; --accent: #c4a1ff; --gold: #ffe08a;
+  --glow: 0 0 22px rgba(176, 124, 255, 0.6), 0 0 44px rgba(54, 214, 255, 0.3); --title-fill: linear-gradient(90deg, #ffffff, #c4a1ff 45%, #36d6ff 75%, #ff7ac4);
+}
 #stage.theme-swim {
   --panel: rgba(3, 42, 74, 0.58); --line: rgba(150, 232, 255, 0.85); --line-2: #ffe066; --accent: #6ee7ff; --gold: #ffe066;
   --glow: 0 0 20px rgba(110, 231, 255, 0.45); --title-fill: linear-gradient(90deg, #ffffff, #bdf4ff 50%, #ffe066);
@@ -84,6 +92,8 @@
 #welcome .kicker { color: var(--gold); }
 .theme-temple #welcome .welcome-avatars img, .theme-temple #welcome .welcome-avatars .ava { border-color: #ffd36b; box-shadow: 0 0 0 4px rgba(120, 40, 10, 0.9), 0 0 30px rgba(255, 200, 80, 0.8); }
 .theme-bar #welcome .welcome-avatars img, .theme-bar #welcome .welcome-avatars .ava { border-color: #ff7ac4; box-shadow: 0 0 26px rgba(255, 79, 163, 0.85); }
+.theme-dance #welcome .welcome-avatars img, .theme-dance #welcome .welcome-avatars .ava { border-color: #c4a1ff; box-shadow: 0 0 26px rgba(176, 124, 255, 0.85); }
+.theme-dance #welcome .welcome-avatars img, .theme-dance #welcome .welcome-avatars .ava { border-color: #c4a1ff; box-shadow: 0 0 26px rgba(176, 124, 255, 0.85); }
 .theme-swim #welcome .welcome-avatars img, .theme-swim #welcome .welcome-avatars .ava { border-color: #bdf4ff; box-shadow: 0 0 26px rgba(110, 231, 255, 0.85); }
 
 /* Băng rôn quà lớn: chữ màu đặc trên dải nền đậm có viền (không tô gradient: chìm trên nền rực sáng) */
@@ -122,3 +132,12 @@ html.lite #title, html.lite .chip, html.lite #board, html.lite #howto, html.lite
 html.lite #welcome.show ~ #howto { visibility: hidden; }
 /* bar/bơi: nền thẻ trong 62% → thay lớp "tối đi 55%" của kính bằng một lớp phủ tối tĩnh (chùa đã đục sẵn) */
 html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(--glow), 0 26px 60px rgba(0, 0, 0, 0.55), inset 0 0 0 2000px rgba(4, 3, 10, 0.55); }
+
+/* Sàn nhảy: thanh phím kiểu game nhảy khi có người solo (giữa, dưới thanh tiêu đề — tránh vùng bình luận TikTok) */
+.au-bar { position: absolute; left: 50%; top: 340px; transform: translateX(-50%); display: grid; justify-items: center; gap: 6px; z-index: 6; pointer-events: none; }
+.au-name { padding: 3px 14px; border-radius: 999px; background: rgba(16, 6, 36, 0.8); border: 2px solid #c4a1ff; color: #fff; font: 800 20px var(--font); max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.au-keys { display: flex; gap: 8px; padding: 8px 12px; border-radius: 16px; background: rgba(10, 4, 26, 0.72); border: 2px solid rgba(54, 214, 255, 0.7); box-shadow: 0 0 22px rgba(54, 214, 255, 0.45); }
+.au-key { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 10px; background: rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.55); font: 900 30px var(--font); transition: transform 0.12s, background 0.12s, color 0.12s; }
+.au-key.hit { background: linear-gradient(180deg, #ff7ac4, #b07cff); color: #fff; transform: scale(1.12); box-shadow: 0 0 16px #ff4fa3; }
+.au-grade { min-height: 46px; font: 900 40px var(--font); letter-spacing: 2px; color: #ffe08a; text-shadow: 0 0 14px #ff4fa3, 0 3px 0 #7a1a5a; opacity: 0; transform: scale(0.6); transition: opacity 0.15s, transform 0.2s cubic-bezier(.2, 1.6, .4, 1); }
+.au-grade.show { opacity: 1; transform: scale(1); }

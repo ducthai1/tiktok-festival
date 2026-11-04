@@ -1,7 +1,7 @@
 // Mục "Thử trước khi live": bình luận/tim/follow/quà/người vào phòng giả mang tên "Khách thử N".
 // Server tự từ chối khi đang kết nối live thật.
 import { SAMPLE_GIFTS } from '/static/shared/gift-tiers.js';
-const TEST_CHATS = { boss: ['chem', 'ban', 'diet boss'], bar: ['chào cả quán', 'nhảy', 'cụng ly'], swim: ['cố lên', 'bơi đi'], temple: ['thắp hương', 'cầu cho gia đình bình an', 'xin xăm'] };
+const TEST_CHATS = { boss: ['chem', 'ban', 'diet boss'], bar: ['chào cả quán', 'nhảy', 'cụng ly'], dance: ['quẩy lên', 'đổi đồ', 'haha 😂', 'chào cả nhà'], swim: ['cố lên', 'bơi đi'], temple: ['thắp hương', 'cầu cho gia đình bình an', 'xin xăm'] };
 
 function chip(text, onClick) {
   const b = document.createElement('button');

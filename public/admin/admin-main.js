@@ -5,10 +5,11 @@ import { setupTestPanel } from './admin-test-panel.js';
 import { SAMPLE_GIFTS, giftTier } from '/static/shared/gift-tiers.js';
 
 const $ = (id) => document.getElementById(id);
-const GAME_ICONS = { boss: '⚔️', temple: '🪷', bar: '🍸', swim: '🏊' };
+const GAME_ICONS = { boss: '⚔️', temple: '🪷', bar: '🍸', dance: '🪩', swim: '🏊' };
 const GAME_COMMANDS = {
   boss: [['frenzy', '⚡ Cuồng nộ ngay'], ['killBoss', '💥 Kết liễu Boss'], ['resetBoss', '↺ Reset Boss Cấp 1']],
   bar: [['party', '🎉 Mở tiệc ngay'], ['clear', '🚪 Mời hết khách ra']],
+  dance: [['drop', '💥 DROP ngay'], ['clear', '🚪 Mời hết ra']],
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
   temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']]
 };

@@ -10,6 +10,9 @@ import { tierRangeLabel } from '/static/shared/gift-tiers.js';
 const SCENES = {
   boss: () => import('./scenes/boss-scene.js').then((m) => m.createBossScene),
   bar: () => import('./scenes/bar-scene.js').then((m) => m.createBarScene),
+  // sàn nhảy: tải mô tả ảnh nhân vật sticker trước rồi mới dựng cảnh
+  dance: () => Promise.all([import('./scenes/dance-scene.js'), import('./scenes/dance-sprite-crowd.js').then((m) => m.loadDanceSheets())])
+    .then(([m, sheets]) => (ctx) => m.createDanceScene({ ...ctx, sheets })),
   swim: () => import('./scenes/swim-scene.js').then((m) => m.createSwimScene),
   // chùa dùng tranh + sprite vẽ tay: tải xong hết hình rồi mới dựng cảnh
   temple: () => Promise.all([import('./scenes/temple-scene.js'), import('./scenes/temple-art.js').then((m) => m.preloadTempleArt())])
@@ -87,7 +90,7 @@ async function switchScene(id) {
   current = factory({ hud, labels, audio, pipeline });
   pipeline.setToneMapping(current.toneMapping);
   currentId = id;
-  stageEl.classList.remove('theme-boss', 'theme-bar', 'theme-swim', 'theme-temple');
+  stageEl.classList.remove('theme-boss', 'theme-bar', 'theme-dance', 'theme-swim', 'theme-temple');
   stageEl.classList.add(`theme-${id}`);
   audio.setTheme(id);
   hud.setLegend(legendFor(current), settings.legend !== false);

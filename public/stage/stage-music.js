@@ -5,6 +5,9 @@ import { createSynth } from './stage-sfx.js';
 const BAR_ROOTS = [55, 43.65, 65.41, 49];
 const BAR_CHORDS = [[220, 261.6, 329.6], [174.6, 220, 261.6], [261.6, 329.6, 392], [196, 246.9, 293.7]];
 const PENTA = [523, 587, 659, 784, 880, 1047, 880, 784];
+const DANCE_ROOTS = [55, 65.41, 49, 58.27];
+const DANCE_CHORDS = [[440, 523.3, 659.3], [523.3, 659.3, 784], [392, 493.9, 587.3], [466.2, 587.3, 698.5]];
+const DANCE_ARP = [880, 1046.5, 1318.5, 1046.5, 1568, 1318.5, 1046.5, 784];
 
 export function createMusic(ctx, out) {
   const s = createSynth(ctx, out);
@@ -12,6 +15,7 @@ export function createMusic(ctx, out) {
   let timer = null;
   let step = 0;
   let nextTime = 0;
+  let startedAt = 0;
   let drones = [];
   const at = (time) => Math.max(0, time - ctx.currentTime);
 
@@ -30,6 +34,23 @@ export function createMusic(ctx, out) {
           s.tone(BAR_ROOTS[bar] * (k === 6 || k === 14 ? 2 : 1), { type: 'sawtooth', decay: 0.2, gain: 0.16, lowpass: 420, delay: d });
         }
         if (k === 2 || k === 10) BAR_CHORDS[bar].forEach((f) => s.tone(f, { type: 'triangle', decay: 0.3, gain: 0.045, lowpass: 1800, delay: d }));
+      }
+    },
+    // Sàn nhảy: EDM 128 BPM — trống bốn phách, hi-hat lệch phách, bass nảy, hợp âm stab; cứ 8 ô nhịp có một đoạn dồn.
+    dance: {
+      bpm: 128,
+      play(i, time) {
+        const d = at(time);
+        const k = i % 16;
+        const bar = Math.floor(i / 16) % 8;
+        const build = bar === 7;
+        if (k % 4 === 0 && !(build && k >= 8)) s.tone(160, { decay: 0.3, gain: 0.75, slide: 0.25, delay: d });
+        if (k % 4 === 2) s.noise({ decay: 0.09, gain: 0.14, type: 'highpass', freq: 8000, delay: d });
+        if (k === 4 || k === 12) s.noise({ decay: 0.16, gain: 0.2, freq: 1800, q: 0.9, delay: d });
+        if (build && k % 2 === 0) s.noise({ decay: 0.05, gain: 0.04 + k * 0.008, freq: 2200 + k * 300, q: 1.2, delay: d });
+        if (k % 4 === 2) s.tone(DANCE_ROOTS[Math.floor(bar / 2) % 4], { type: 'sawtooth', decay: 0.17, gain: 0.2, lowpass: 520, delay: d });
+        if ([0, 3, 6, 10].includes(k) && !build) DANCE_CHORDS[Math.floor(bar / 2) % 4].forEach((f) => s.tone(f, { type: 'square', decay: 0.12, gain: 0.03, lowpass: 2400, delay: d }));
+        if (k % 2 === 1 && bar % 2 === 1) s.tone(DANCE_ARP[(i >> 1) % DANCE_ARP.length], { type: 'triangle', decay: 0.12, gain: 0.035, delay: d });
       }
     },
     swim: {
@@ -88,8 +109,14 @@ export function createMusic(ctx, out) {
       theme = name;
       step = 0;
       nextTime = ctx.currentTime + 0.08;
+      startedAt = nextTime;
       drones = THEMES[name].drone ? THEMES[name].drone() : [];
       timer = setInterval(schedule, 25);
+    },
+    // Phách hiện tại của nhạc đang chơi (để nhân vật nhảy khớp nhịp); null khi không có nhạc.
+    beat() {
+      const t = THEMES[theme];
+      return t ? ((ctx.currentTime - startedAt) * t.bpm) / 60 : null;
     },
     stop() {
       clearInterval(timer);

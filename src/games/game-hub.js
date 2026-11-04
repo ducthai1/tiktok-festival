@@ -2,6 +2,7 @@
 // Đổi game giữa buổi live không làm mất trạng thái game kia (quay lại vẫn còn nguyên).
 import { createBarClubGame } from './bar-club-game.js';
 import { createBossRaidGame } from './boss-raid-game.js';
+import { createDanceHallGame } from './dance-hall-game.js';
 import { createSessionLeaderboard } from './session-leaderboard.js';
 import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
@@ -12,6 +13,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
+    ['dance', createDanceHallGame({ random })],
     ['swim', createSwimPushGame()]
   ]);
   const board = createSessionLeaderboard();

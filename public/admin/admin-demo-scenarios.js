@@ -48,6 +48,20 @@ export const EFFECTS = {
     ['🏎️ Siêu xe → Mở tiệc', () => gift('sports-car', 4)],
     ['🦁 Sư tử → Đại tiệc', () => ({ ...gift('lion', 5), wait: 9000 })]
   ],
+  dance: [
+    ['💬 “quẩy lên”', () => chat('quẩy lên mọi người ơi 🔥', 0)],
+    ['👋 “chào cả nhà”', () => chat('chào cả nhà', 1)],
+    ['😂 Đổi mặt', () => chat('haha 😂', 2)],
+    ['👕 “đổi đồ”', () => chat('đổi đồ', 3)],
+    ['❤ Thả tim', () => like(4)],
+    ['➕ Follow', () => social('follow', 5)],
+    ['🌹 Hoa hồng → Hào quang', () => gift('rose', 0)],
+    ['🍩 Bánh donut → Bay + solo ngắn', () => gift('doughnut', 1)],
+    ['🐶 Corgi → Solo sân khấu', () => ({ ...gift('corgi', 2), wait: 6000 })],
+    ['🌌 Dải ngân hà → Khổng lồ VIP', () => ({ ...gift('galaxy', 3), wait: 8000 })],
+    ['🏎️ Siêu xe → Pháo hoa + DROP', () => ({ ...gift('sports-car', 4), wait: 9000 })],
+    ['🦁 Sư tử → Đại nhạc hội', () => ({ ...gift('lion', 5), wait: 12000 })]
+  ],
   swim: [
     ['💬 “cố lên”', () => chat('cố lên', 0)],
     ['❤ Thả tim → vịt phao', () => like(1)],

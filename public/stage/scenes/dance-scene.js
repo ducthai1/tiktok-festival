@@ -1,0 +1,212 @@
+// Cảnh SÀN NHẢY: hội trường cả trăm nhân vật chibi nhảy theo nhạc, camera đạo diễn tự lượn kiểu MV;
+// quà = solo giữa sân khấu (sàn tối, đèn rọi, camera vòng quanh), Top 1-2-3 đứng bục, khổng lồ VIP hai bên.
+import * as THREE from '/vendor/three/three.module.js';
+import { DANCE_SLOTS, PODIUM } from '/static/shared/dance-floor-layout.js';
+import { createMeter, formatNumber } from '../stage-hud.js';
+import { createAuditionBar } from './dance-audition-bar.js';
+import { createCameraDirector } from './dance-camera-director.js';
+import { buildDanceHall } from './dance-hall-room.js';
+import { createShowEffects } from './dance-show-effects.js';
+import { createSpriteCrowd } from './dance-sprite-crowd.js';
+import { BPM } from './dance-sprite-material.js';
+import { disposeObject } from './person-model.js';
+
+const MEDALS = ['🥇', '🥈', '🥉'];
+const TIER_TITLES = { 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
+const RECENT_MS = 12000;
+const FACE_EMOJI = { happy: '😊', grin: '😁', wink: '😉', cool: '😎', love: '😍', laugh: '😂', surprise: '😮', tongue: '😜',
+  sing: '🎤', cry: '😭', angry: '😡', sleepy: '😴', star: '🤩', shy: '☺️', party: '🥳', kiss: '😘' };
+const MAX_LABELS = 14;
+const GLANCE_GAP_S = 6;
+
+// sheets: mô tả ảnh ghép nhân vật (public/assets/dance/sheets.json), tải trước khi dựng cảnh
+export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(52, 1080 / 1920, 0.1, 90);
+  const room = buildDanceHall(scene);
+  const crowd = createSpriteCrowd(scene, { sheets, capacity: DANCE_SLOTS + 8 });
+  // trực thăng chở VIP bay ngang hội trường khi có quà lớn
+  const heli = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.TextureLoader().load('/static/assets/dance/heli.webp', (t) => { t.colorSpace = THREE.SRGBColorSpace; }), transparent: true }));
+  heli.scale.set(4.2, 2, 1);
+  heli.visible = false;
+  scene.add(heli);
+  let heliFrom = -Infinity;
+  const show = createShowEffects(scene);
+  const director = createCameraDirector(camera);
+  director.snap(crowd.bounds(), PODIUM[0]);
+  pipeline.setBloom({ strength: 0.55, radius: 0.5, threshold: 0.9 }); // ngưỡng cao: viền trắng của sticker không bị loá
+
+  hud.setTitle('🪩 SÀN NHẢY LIVE');
+  hud.setHint(['*MIỄN PHÍ*', ' — bình luận ↓']);
+  const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
+  const auBar = createAuditionBar(hud);
+  let lastBeat = 0;
+  labels.setDeclutter('dance', { top: 260, bottom: 1700, gap: 2, maxSteps: 2, shiftX: [0, -28, 28] });
+
+  let state = { dancers: [], solo: null, hype: 0, hypeGoal: 1, dropMs: 0 };
+  let byId = new Map();
+  let clock = 0;
+  let solo = null; // { id, tier, startedAt }
+  let dim = 0;
+  let lastGlance = -Infinity;
+  const recent = new Map(); // id → hết hạn hiện tên (người vừa bình luận / tặng / được chào)
+  const faces = new Map(); // id → nét mặt đang chọn (để thả emoji khi người xem vừa đổi)
+  let closeId = ''; // người đang được camera ghé cận (dùng bản nhảy bung)
+
+  const posOf = (id) => crowd.get(id)?.pos || null;
+
+  function glance(id, seconds = 2.4) {
+    if (director.isFocusing(clock) || clock - lastGlance < GLANCE_GAP_S) return;
+    lastGlance = clock;
+    closeId = id;
+    director.focus(() => posOf(id), seconds, 'glance', clock);
+  }
+
+  function refreshLabels() {
+    const now = performance.now();
+    for (const [id, until] of recent) if (now > until || !byId.has(id)) recent.delete(id);
+    const ids = new Set([...recent.keys()].slice(-MAX_LABELS));
+    for (const d of state.dancers) if (d.rank || d.giant || d.id === solo?.id) ids.add(d.id);
+    for (const id of ids) {
+      const d = byId.get(id);
+      const e = crowd.get(id);
+      if (!d || !e) continue;
+      labels.sync(id, { anchor: e.anchor, nickname: d.rank ? `${MEDALS[d.rank - 1]} ${d.nickname}` : d.nickname, avatar: d.avatar || '',
+        vip: Boolean(d.rank || d.giant || d.id === solo?.id), small: !d.rank && d.id !== solo?.id, group: 'dance' });
+    }
+    labels.keepOnly(ids);
+  }
+
+  function markRecent(id) {
+    recent.delete(id);
+    recent.set(id, performance.now() + RECENT_MS);
+    refreshLabels();
+  }
+
+  function startSolo(info) {
+    const d = byId.get(info.id);
+    solo = { id: info.id, tier: info.tier, startedAt: clock };
+    director.focus(() => posOf(info.id), info.msLeft / 1000, 'solo', clock);
+    hud.banner(TIER_TITLES[info.tier] || 'SOLO', d?.nickname || '', 3200);
+    auBar.start(d?.nickname || '', lastBeat, info.id);
+    audio.play(info.tier >= 3 ? 'fanfare' : 'whoosh');
+    markRecent(info.id);
+  }
+
+  function ctx() {
+    return {
+      soloId: solo?.id || '',
+      closeId: director.focusMode(clock) === 'glance' ? closeId : '',
+      dim,
+      giants: state.dancers.filter((d) => d.giant && d.id !== solo?.id).slice(-2).map((d) => d.id),
+      cheering: Boolean(solo && clock - solo.startedAt < 3)
+    };
+  }
+
+  return {
+    scene,
+    camera,
+    welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n} đến sàn nhảy!` },
+    legend: [['bình luận', ' Vào sàn nhảy'], ['quẩy · nhảy', ' Nhảy bung'], ['chào', ' Vẫy tay'], ['đổi đồ', ' Đổi trang phục'],
+      ['😂 😎 😍', ' Đổi nét mặt'], ['❤ thả tim', ' Đầy thanh → DROP'], ['🎁 Quà', ' theo số kc ↓']],
+    giftLabels: { 1: 'Hào quang', 2: 'Bay lên + solo', 3: 'Solo sân khấu', 4: 'Khổng lồ VIP', 5: 'Pháo hoa + DROP', 6: 'Đại nhạc hội' },
+    update(snapshot) {
+      state = snapshot.state;
+      byId = new Map(state.dancers.map((d) => [d.id, d]));
+      crowd.sync(state.dancers, ctx());
+      if (state.solo && state.solo.id !== solo?.id) startSolo(state.solo);
+      else if (!state.solo && solo) {
+        solo = null;
+        director.release();
+        auBar.stop();
+      }
+      const dropping = state.dropMs > 0;
+      meter.root.classList.toggle('party', dropping);
+      meter.update(dropping ? 1 : state.hype / state.hypeGoal,
+        dropping ? `DROP! ${Math.ceil(state.dropMs / 1000)}s` : `${formatNumber(state.hype)} / ${formatNumber(state.hypeGoal)}`);
+      hud.setStats([`👥 ${state.dancers.length} người quẩy`, `💎 ${formatNumber(snapshot.totals.diamonds)}`]);
+      hud.setBoard('TOP DÂN QUẨY', snapshot.top.map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
+      for (const d of state.dancers) {
+        if (d.face && faces.get(d.id) !== d.face) {
+          const e = crowd.get(d.id);
+          if (e) labels.float(e.anchor, FACE_EMOJI[d.face] || '✨', { ms: 2200, rise: 120, className: 'dance-emote' });
+        }
+        faces.set(d.id, d.face);
+      }
+      refreshLabels();
+    },
+    probe: (id) => {
+      const e = crowd.get(id);
+      if (!e) return null;
+      const p = e.anchor.getWorldPosition(new THREE.Vector3()).project(camera);
+      return { x: (p.x * 0.5 + 0.5) * 1080, y: (-p.y * 0.5 + 0.5) * 1920, solo: e.id === solo?.id };
+    },
+    onFx(fx) {
+      const e = fx.userId ? crowd.get(fx.userId) : null;
+      if (fx.kind === 'welcome') {
+        const people = fx.mode === 'group' ? fx.people : [fx];
+        for (const p of people) if (p.userId || p.id) markRecent(p.userId || p.id);
+        if (people.length === 1) glance(people[0].userId || people[0].id, 2.2);
+      } else if (fx.kind === 'bubble') {
+        markRecent(fx.userId);
+        labels.bubble(fx.userId, fx.text);
+      } else if (fx.kind === 'toast') hud.toast(fx.text);
+      else if (fx.kind === 'look' && e) {
+        show.sparkle(e.pos.clone().setY(e.pos.y + 0.8));
+        audio.play('magic');
+        markRecent(fx.userId);
+      } else if (fx.kind === 'hearts' && e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), fx.count);
+      else if (fx.kind === 'gift') {
+        hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 ${fx.nickname} tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture });
+        if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
+        audio.play(fx.tier >= 3 ? 'coin' : 'pop');
+        markRecent(fx.userId);
+        if (fx.tier === 1) glance(fx.userId);
+      } else if (fx.kind === 'fountains') {
+        show.fountains(clock, 7);
+        heliFrom = clock;
+        audio.play('whoosh');
+      } else if (fx.kind === 'fireworks') {
+        show.fireworks(fx.power);
+        audio.play('boom');
+        if (!solo) director.focus(() => new THREE.Vector3(0, 0.9, -7.2), 5, 'reveal', clock);
+      } else if (fx.kind === 'drop') {
+        hud.banner('💥 DROP! 💥', 'Cả sàn cùng quẩy', 3000);
+        audio.play('crash');
+        show.confetti(clock, fx.durationMs / 1000);
+      }
+    },
+    frame(dt, t) {
+      clock = t;
+      const beat = audio.beat?.() ?? (t * BPM) / 60;
+      lastBeat = beat;
+      auBar.update(beat);
+      dim += ((solo ? 1 : 0) - dim) * Math.min(1, dt * 3);
+      const c = ctx();
+      crowd.frame(dt, beat, c);
+      const soloEntity = solo ? crowd.get(solo.id) : null;
+      const dropping = state.dropMs > 0;
+      room.update(t, beat, {
+        drop: dropping,
+        dim,
+        lasers: dropping || (solo && solo.tier >= 4),
+        screenTitle: solo ? (TIER_TITLES[solo.tier] || 'SOLO') : dropping ? 'DROP!!!' : 'SÀN NHẢY LIVE',
+        screenSub: solo ? (byId.get(solo.id)?.nickname || '') : dropping ? 'CẢ SÀN CÙNG QUẨY' : `${state.dancers.length} người đang quẩy`
+      });
+      show.spotlight(soloEntity ? soloEntity.pos : null);
+      const k = (t - heliFrom) / 5;
+      heli.visible = k >= 0 && k <= 1;
+      if (heli.visible) heli.position.set(-10 + k * 20, 6.4 + Math.sin(k * Math.PI * 3) * 0.3, 0.5);
+      show.update(dt, t);
+      director.update(dt, t, beat, crowd.bounds(), PODIUM[0]);
+      if (Math.floor(t * 2) !== Math.floor((t - dt) * 2)) refreshLabels();
+    },
+    dispose() {
+      crowd.dispose();
+      show.dispose();
+      disposeObject(scene);
+      hud.clearGame();
+      labels.clear();
+    }
+  };
+}
