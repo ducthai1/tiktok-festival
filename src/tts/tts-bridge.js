@@ -27,7 +27,7 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   let queue = Promise.resolve(); // một câu một lúc (CPU)
 
   function start() {
-    if (child || stopped || !fs.existsSync(python)) return false;
+    if (child || stopped || restarts >= 5 || !fs.existsSync(python)) return false; // hỏng 5 lần liền thì thôi, không nạp lại mãi
     child = spawn(python, ['-I', SCRIPT, String(port)], { stdio: ['ignore', 'pipe', 'pipe'] });
     child.stdout.on('data', (chunk) => {
       if (!ready && String(chunk).includes('ready')) {
@@ -89,6 +89,7 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   }
 
   const limit = createRateLimiter(60, 60000);
+  let autoStart = false;
   /** GET /api/tts?text=&voice= — chỉ chạy sau kiểm tra Host của server chính (chỉ máy này). */
   async function handle(req, res, serverPort) {
     const url = new URL(req.url, 'http://local');
@@ -102,6 +103,7 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
     // lớp chặn cuối: dù màn hình đã lọc, câu có từ tục tĩu / miệt thị / link / số điện thoại thì máy chủ không đọc
     if (!isCleanForDisplay(text)) return fail(400, 'Câu có từ ngữ không phù hợp');
     if (!limit()) return fail(429, 'Đọc dồn quá nhanh');
+    if (autoStart) start(); // vừa cài môi trường xong (server đang chạy) → bật luôn, không phải khởi động lại server
     const wav = await speak(text, voice);
     if (!wav) return fail(503, 'Chưa có giọng đọc');
     res.writeHead(200, { 'Content-Type': 'audio/wav', 'Cache-Control': 'no-store', ...securityHeaders(serverPort) });
@@ -109,7 +111,11 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   }
 
   return {
-    start,
+    /** Bật giọng đọc; chưa cài môi trường thì lần hỏi đọc sau cài xong sẽ tự bật. */
+    start() {
+      autoStart = true;
+      return start();
+    },
     handle,
     speak,
     status: () => ({ installed: fs.existsSync(python), ready }),
