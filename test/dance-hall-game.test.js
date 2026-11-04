@@ -131,3 +131,14 @@ test('neighbouring dancers never share a character and the floor is mostly Chine
   }
   assert.ok(ids.filter((id) => !id.startsWith('nv')).length / DANCE_SLOTS > 0.7);
 });
+
+test('a handful of dancers spread over the whole floor instead of huddling in the middle', async () => {
+  const { spreadSlotPosition, DANCE_FILL_ORDER: order } = await import('../public/shared/dance-floor-layout.js');
+  const xs = order.slice(0, 10).map((slot) => spreadSlotPosition(slot, 10));
+  const width = Math.max(...xs.map((p) => p.x)) - Math.min(...xs.map((p) => p.x));
+  const depth = Math.max(...xs.map((p) => p.z)) - Math.min(...xs.map((p) => p.z));
+  assert.ok(width > 5, `10 người chỉ trải ${width.toFixed(1)} m ngang`);
+  assert.ok(depth > 5, `10 người chỉ trải ${depth.toFixed(1)} m sâu`);
+  const full = order.map((slot) => spreadSlotPosition(slot, DANCE_SLOTS));
+  assert.deepEqual(full[0], slotPosition(order[0])); // sàn đầy thì về đúng lưới gốc
+});

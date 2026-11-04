@@ -2,7 +2,7 @@
 // Trạng thái hình: crowd (nhảy tại ô) · xung (bản nhảy bung — khi camera cận / Top 3 / khổng lồ) · spot (solo).
 // Người mới rơi từ trên xuống đúng ô; người đi bay vút lên; đổi chỗ xa thì nhảy vòng cung qua đầu đám đông.
 import * as THREE from '/vendor/three/three.module.js';
-import { DJ_SPOT, FRONT_Z, GIANT_SPOTS, PODIUM, SLOT_DZ, DANCE_ROWS, SOLO_SPOT, slotPosition } from '/static/shared/dance-floor-layout.js';
+import { DJ_SPOT, FRONT_Z, GIANT_SPOTS, PODIUM, SLOT_DZ, DANCE_ROWS, SOLO_SPOT, spreadSlotPosition } from '/static/shared/dance-floor-layout.js';
 import { buildPool, characterForSlot, DJ_CHARACTER, sheetFor } from './dance-roster.js';
 import { createWingsMesh } from './dance-wings.js';
 import { createSheetMaterial, hashText, spriteGeometry } from './dance-sprite-material.js';
@@ -87,7 +87,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
     const giant = ctx.giants.indexOf(info.id);
     if (giant >= 0) return { x: GIANT_SPOTS[giant].x, y: 0, z: GIANT_SPOTS[giant].z, scale: 3, vis: 'xung' };
     if (info.rank >= 1 && info.rank <= 3) return { ...PODIUM[info.rank - 1], scale: PODIUM[info.rank - 1].scale * 1.15, vis: 'xung' };
-    const p = slotPosition(info.slot);
+    const p = spreadSlotPosition(info.slot, ctx.floorCount || 0); // ít người thì dàn đều cả sàn
     const scale = (info.aura ? 1.12 : 1) * (info.size || 1);
     if (e?.walkStart !== undefined) { // đi một vòng elip quanh sàn, bắt đầu từ phía ô của mình
       const a = Math.atan2(p.z - FLOOR_MID_Z, p.x) + ((ctx.now - e.walkStart) / WALK_S) * Math.PI * 2;

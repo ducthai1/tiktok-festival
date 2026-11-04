@@ -117,7 +117,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       giants: state.dancers.filter((d) => d.giant && d.id !== solo?.id).slice(-2).map((d) => d.id),
       cheering: Boolean(solo && clock - solo.startedAt < 3),
       now: clock,
-      camPos: camera.position
+      camPos: camera.position,
+      floorCount: state.dancers.length
     };
   }
 
