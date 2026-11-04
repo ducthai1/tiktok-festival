@@ -156,7 +156,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   return {
     scene,
     camera,
-    welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `${n} ơi! Chào mừng bạn đến sàn nhảy!` },
+    welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n}, đến sàn nhảy!` },
     // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số 💎
     legend: [['🎁 Quà', ' theo số 💎 ↓']],
     // người TẶNG nhận được gì; bảng 2 dòng: khoảng 💎 / hiệu ứng. Mỗi câu hiệu ứng phải vừa MỘT dòng của cột trái

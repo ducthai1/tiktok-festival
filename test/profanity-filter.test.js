@@ -27,14 +27,14 @@ test('the voice never says a dirty name, and skips emoji / non-Latin letters', (
   assert.ok(isCleanText(thankLine({ kind: 'follow', nickname: 'fuuuck' })));
 });
 
-test('names are tidied so the voice says them clearly, and called out first', () => {
+test('names are tidied so the voice says them clearly, with a pause after the name', () => {
   const cases = { 'Bé Na cute phô mai que 🧀': 'Bé Na cute', BeNaCute: 'Be Na Cute', 'NGUYEN VAN A': 'Nguyen Van A',
     'Minh Tuấn 2k5': 'Minh Tuấn', 'xX_Huyền_Xx': 'Huyền', Naaaaa: 'Na', 'Tuấn2005': 'Tuấn', 'Lan.Anh.Official': 'Lan Anh',
     2005: '2005', TV: 'TV', 'Ngọc Bích': 'Ngọc Bích' };
   for (const [raw, said] of Object.entries(cases)) assert.equal(speakableName(raw), said, raw);
   assert.equal(speakableGift('TikTok Universe'), 'TikTok Universe');
-  assert.equal(thankLine({ nickname: 'Minh Tuấn 2k5', giftName: 'Hoa hồng', count: 5, tier: 3 }), 'Minh Tuấn ơi! Cảm ơn bạn đã tặng 5 Hoa hồng!');
+  assert.equal(thankLine({ nickname: 'Minh Tuấn 2k5', giftName: 'Hoa hồng', count: 5, tier: 3 }), 'Cảm ơn Minh Tuấn, đã tặng 5 Hoa hồng!');
   assert.equal(thankLine({ nickname: 'BeNa', giftName: 'Sư tử', count: 1, tier: 6 }),
     'Đại gia Be Na! Cảm ơn bạn đã tặng Sư tử! Đại nhạc hội bắt đầu! Cả sàn cháy hết mình nào!');
-  assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Lan Anh ơi! Cảm ơn bạn đã follow sàn nhảy! Mời bạn lên sân khấu!');
+  assert.equal(thankLine({ kind: 'follow', nickname: 'Lan Anh' }), 'Cảm ơn Lan Anh, đã follow sàn nhảy! Mời bạn lên sân khấu!');
 });
