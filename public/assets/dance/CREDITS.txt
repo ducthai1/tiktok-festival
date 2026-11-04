@@ -11,3 +11,5 @@ Camera đạo diễn (dance-camera-director.js) chuyển thể từ ClubCameraCo
   vẽ ra PNG bằng Chrome (chế độ ảnh), rồi giải mã + lưu lại bằng Pillow trong sandbox. Bỏ luffy_chibi (nhân vật có bản quyền) và 8 icon vuông có nền.
 - banners/*: khung danh hiệu + cánh của cherry9001/tiktok-live-bar (UnityProject/Assets/Resources/Banners, MIT; README của họ ghi là ảnh tự tạo),
   giải mã + lưu lại bằng Pillow trong sandbox, thu về ≤640px.
+- bqb-panda-*, bqb-huaji-*: meme gấu trúc 金馆长熊猫 và 滑稽大佬 từ zhaoolee/ChineseBQB (kho meme cộng đồng). Giữ cả chữ chọc ghẹo;
+  chỉ bỏ 11 ảnh có chữ chửi tục nặng / ám chỉ tình dục (TikTok quét chữ trên màn live). Giải mã + tách nền trong sandbox.

@@ -102,7 +102,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       let slot = freeSlot();
       if (slot < 0 && canEvict) slot = evictIdlest(now, fx, canEvict === 'lurkers');
       if (slot < 0) return null;
-      d = { id: user.id, slot, look: Math.floor(random() * 1000), engaged: false, joinedAt: now, hypeUntil: 0, waveUntil: 0,
+      d = { id: user.id, slot, look: 0, engaged: false, // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look joinedAt: now, hypeUntil: 0, waveUntil: 0,
         jumpUntil: 0, walkUntil: 0, size: 1, likes: 0, wingsUntil: 0,
         face: '', faceUntil: 0, auraUntil: 0, level: 0, levelUntil: 0, giantUntil: 0 };
       dancers.set(user.id, d);

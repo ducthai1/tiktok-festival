@@ -115,3 +115,19 @@ test('watchers leave after 5 quiet minutes, people who took part after 10', () =
   assert.deepEqual(leftAt(9.9), []);
   assert.deepEqual(leftAt(10.1), ['u2']);
 });
+
+test('neighbouring dancers never share a character and the floor is mostly Chinese meme stickers', async () => {
+  const fs = await import('node:fs');
+  const { buildPool, characterForSlot } = await import('../public/stage/scenes/dance-roster.js');
+  const sheets = JSON.parse(fs.readFileSync(new URL('../public/assets/dance/sheets.json', import.meta.url), 'utf8'));
+  const pool = buildPool(sheets);
+  const ids = Array.from({ length: DANCE_SLOTS }, (_, s) => characterForSlot(pool, s, 0).id);
+  for (let s = 0; s < DANCE_SLOTS; s += 1) {
+    const p = slotPosition(s);
+    for (let t = s + 1; t < DANCE_SLOTS; t += 1) {
+      const q = slotPosition(t);
+      if (Math.abs(p.x - q.x) < 0.9 && Math.abs(p.z - q.z) < 0.7) assert.notEqual(ids[s], ids[t], `ô ${s} và ${t} trùng nhân vật`);
+    }
+  }
+  assert.ok(ids.filter((id) => !id.startsWith('nv')).length / DANCE_SLOTS > 0.7);
+});

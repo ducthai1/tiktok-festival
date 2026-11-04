@@ -3,7 +3,7 @@
 // Người mới rơi từ trên xuống đúng ô; người đi bay vút lên; đổi chỗ xa thì nhảy vòng cung qua đầu đám đông.
 import * as THREE from '/vendor/three/three.module.js';
 import { DJ_SPOT, FRONT_Z, GIANT_SPOTS, PODIUM, SLOT_DZ, DANCE_ROWS, SOLO_SPOT, slotPosition } from '/static/shared/dance-floor-layout.js';
-import { characterFor, DJ_CHARACTER, ROSTER, sheetFor } from './dance-roster.js';
+import { buildPool, characterForSlot, DJ_CHARACTER, sheetFor } from './dance-roster.js';
 import { createWingsMesh } from './dance-wings.js';
 import { createSheetMaterial, hashText, spriteGeometry } from './dance-sprite-material.js';
 
@@ -41,12 +41,15 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
       textures.set(key, t);
       t.texture = loader.load(`${BASE}${sheets[key].file}`, () => { t.ready = true; });
       t.texture.colorSpace = THREE.SRGBColorSpace;
-      t.texture.anisotropy = 4;
+      if (sheets[key].kind === 'crowd') { // vài trăm ảnh đám đông: bỏ mipmap cho nhẹ bộ nhớ card đồ hoạ (sticker nhỏ trên màn)
+        t.texture.generateMipmaps = false;
+        t.texture.minFilter = THREE.LinearFilter;
+      } else t.texture.anisotropy = 4;
     }
     return t;
   }
-  // ảnh nhảy tại chỗ của mọi nhân vật tải sẵn; bản xung/spot tải khi cần lần đầu
-  for (const c of [...ROSTER, DJ_CHARACTER]) if (sheets[c.crowd]) texture(c.crowd);
+  // ảnh chỉ tải khi có người dùng tới (kho vài trăm nhân vật — tải sẵn hết thì nặng card đồ hoạ)
+  const pool = buildPool(sheets);
   // cánh theo hạng: Top 1 tím hoàng gia, Top 2 băng, Top 3 lửa, người solo/khổng lồ neon, người có cánh (1k tim, quà) năng lượng
   const WING_FILES = { top1: 'player-wings.webp', top2: 'wings-ice.webp', top3: 'wings-fire.webp', star: 'wings-neon.webp', basic: 'energy-wings-v2.webp' };
   const wingMeshes = Object.fromEntries(Object.entries(WING_FILES).map(([k, f]) => [k, createWingsMesh(scene, k === 'basic' ? capacity : 4, f)]));
@@ -125,7 +128,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         if (info.move !== 'walk') delete e.walkStart;
         if (info.move === 'jump' && e.info.move !== 'jump') e.jumpStart = ctx.now;
         e.info = info;
-        e.character = info.dj ? DJ_CHARACTER : characterFor(info.id, info.look);
+        e.character = info.dj ? DJ_CHARACTER : characterForSlot(pool, info.slot, info.look);
       }
       for (const e of entities.values()) {
         if (!seen.has(e.id) && !e.leaving) {
@@ -162,6 +165,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         // chọn tấm ảnh: bản cao cấp chưa tải xong thì tạm dùng bản nhảy tại chỗ
         let key = sheetFor(e.character, target.vis);
         if (!sheets[key] || !texture(key).ready) key = e.character.crowd;
+        if (!sheets[key] || !texture(key).ready) continue; // ảnh đang tải: khung sau mới hiện
         if (!groups.has(key)) groups.set(key, []);
         const hero = target.vis !== 'crowd';
         const jt = e.jumpStart !== undefined ? (ctx.now - e.jumpStart) / JUMP_S : 1;
