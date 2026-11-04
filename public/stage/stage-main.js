@@ -213,6 +213,7 @@ window.__stage = {
   probe: (id) => current?.probe?.(id) || null,
   audioState: () => audio.state(),
   audioLevel: () => audio.level(),
+  musicSpecial: () => audio.specialKind(),
   playSound: (name) => audio.play(name),
   // Chỉ để chụp ảnh kiểm tra: phát hiệu ứng ngay trên màn hình này, không qua server.
   inject(list) {

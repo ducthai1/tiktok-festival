@@ -93,7 +93,10 @@ export function createSynth(ctx, out) {
     rattle: () => { for (let i = 0; i < 3; i += 1) noise({ decay: 0.025, gain: 0.18, freq: 2200 + Math.random() * 1800, q: 6, delay: i * 0.035 }); },
     horn: () => { tone(98, { type: 'sawtooth', attack: 0.08, decay: 1.2, gain: 0.22, lowpass: 600 }); tone(147, { type: 'sawtooth', attack: 0.08, decay: 1.2, gain: 0.12, lowpass: 600 }); },
     chirp: () => tone(2600 + Math.random() * 600, { decay: 0.08, gain: 0.08, slide: 1.4 }),
-    coin: () => { tone(1568, { type: 'square', decay: 0.08, gain: 0.05 }); tone(2093, { type: 'square', decay: 0.25, gain: 0.05, delay: 0.07 }); }
+    coin: () => { tone(1568, { type: 'square', decay: 0.08, gain: 0.05 }); tone(2093, { type: 'square', decay: 0.25, gain: 0.05, delay: 0.07 }); },
+    // kèn hơi kiểu DJ (công thức của repo barlive): ba sóng răng cưa 415/466/554 Hz chồng nhau, bóp 2 phát ngắn + 1 phát dài
+    airhorn: () => [0, 0.17, 0.34].forEach((delay, i) => [415, 466, 554].forEach((f) => tone(f, { type: 'sawtooth', attack: 0.01,
+      decay: i === 2 ? 0.9 : 0.14, gain: 0.06, delay, lowpass: 2800 })))
   };
 
   return {

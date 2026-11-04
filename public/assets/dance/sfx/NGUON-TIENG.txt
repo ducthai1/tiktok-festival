@@ -1,0 +1,9 @@
+26 tiếng hiệu ứng thu sẵn từ Mixkit (https://mixkit.co/free-sound-effects/, Mixkit Sound Effects Free License — miễn phí
+kể cả thương mại). Tải 04/11/2026, mã hoá lại trong sandbox: bỏ khoảng lặng đầu, giới hạn ≤ 8 giây, fade cuối, -14 LUFS.
+File mp3 KHÔNG đưa lên git (giấy phép không cho phát tán lại file gốc) — sfx.json là danh sách tên → file.
+Mã Mixkit: coin 1992 · win-swoosh 2017 · cheer-small 975 · horns-fanfare 722 · cheer-big 462 · heli 2704 · siren-win 1929 ·
+impact-big 788 · riser-long 645 · riser-short 790 · impact-epic 2908 · fireworks 524 · crowd-roar 363 · trumpets 2285 ·
+trumpet-fanfare 2293 · jackpot 1991 · crowd-joy 3022 · fireworks-multi 1689 · fireworks-whistle 3105 · party-trumpet 977 ·
+magic 2350 · scratch 703 · countdown 921 · drumroll 566 · cheer-party 974 · achievement 2068
+(link tải: https://assets.mixkit.co/active_storage/sfx/<mã>/<mã>-preview.mp3).
+Kèn airhorn kiểu DJ là tiếng tổng hợp (stage-sfx.js, công thức của repo barlive) — Mixkit không có.

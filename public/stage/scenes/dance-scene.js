@@ -7,6 +7,7 @@ import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
+import { createDanceSounds } from './dance-sound-cues.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -49,10 +50,11 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   hud.setHint(['🎁 ', '*Tặng quà*', ' → nhận ngay:']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
+  const sounds = createDanceSounds(audio);
   const bigGift = createGiftAnnouncer(hud, {
     onShow(fx) {
       const follow = fx.kind === 'follow';
-      audio.play(follow || fx.tier >= 5 ? 'fanfare' : 'coin');
+      sounds.announce();
       audio.speak(follow ? `Cảm ơn ${fx.nickname} đã follow sàn nhảy` : `Cảm ơn ${fx.nickname} đã tặng ${fx.giftName}`, 'story');
     }
   });
@@ -134,7 +136,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     director.focus(() => posOf(info.id), info.msLeft / 1000, 'solo', clock);
     hud.banner(TIER_TITLES[info.tier] || 'SOLO', d?.nickname || '', 3200);
     auBar.start(d?.nickname || '', lastBeat, info.id);
-    audio.play(info.tier >= 3 ? 'fanfare' : 'whoosh');
+    sounds.solo(info.tier, info.msLeft);
     markRecent(info.id);
   }
 
@@ -205,6 +207,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar, gold: fx.gold });
       else if (fx.kind === 'follow') {
         bigGift.follow(fx);
+        sounds.follow();
         if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
         markRecent(fx.userId);
       }
@@ -216,27 +219,27 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       }
       else if (fx.kind === 'look' && e) {
         show.sparkle(e.pos.clone().setY(e.pos.y + 0.8));
-        audio.play('magic');
+        sounds.look();
         markRecent(fx.userId);
       } else if (fx.kind === 'hearts' && e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), fx.count);
       else if (fx.kind === 'gift') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture, title: fx.nickname });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
-        if (fx.tier < 3) audio.play('pop');
+        sounds.gift(fx.tier);
         bigGift.show(fx);
         markRecent(fx.userId);
         if (fx.tier === 1) glance(fx.userId);
       } else if (fx.kind === 'fountains') {
         show.fountains(clock, 7);
         heliFrom = clock;
-        audio.play('whoosh');
+        sounds.heli();
       } else if (fx.kind === 'fireworks') {
         show.fireworks(fx.power);
-        audio.play('boom');
+        sounds.fireworks(fx.power);
         if (!solo) director.focus(() => new THREE.Vector3(0, 0.9, -7.2), 5, 'reveal', clock);
       } else if (fx.kind === 'drop') {
         hud.banner('💥 DROP! 💥', 'Cả sàn cùng quẩy', 3000);
-        audio.play('crash');
+        sounds.drop(fx.durationMs);
         show.confetti(clock, fx.durationMs / 1000);
       }
     },

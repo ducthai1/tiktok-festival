@@ -2,6 +2,7 @@
 // cộng giọng đọc của trình duyệt (speechSynthesis) cho lời khấn/quẻ/chào. Không chạy chương trình ngoài.
 import { createMusic } from './stage-music.js';
 import { createTrackPlayer } from './stage-track-player.js';
+import { createSamplePlayer } from './stage-sample-player.js';
 import { createSynth } from './stage-sfx.js';
 
 export function createStageAudio() {
@@ -13,6 +14,10 @@ export function createStageAudio() {
   let synth = null;
   let music = null;
   let tracks = null; // nhạc file (Sàn Nhảy); không có thì dùng nhạc tổng hợp
+  let samples = null; // tiếng hiệu ứng thu sẵn (Sàn Nhảy); thiếu file thì dùng tiếng tổng hợp
+  let duckGain = null; // hạ nhỏ nhạc nền tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt
+  let duckLevel = 1;
+  let duckUntil = 0;
   let theme = '';
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false };
   const speakQueue = [];
@@ -28,12 +33,15 @@ export function createStageAudio() {
       musicBus = ctx.createGain();
       analyser = ctx.createAnalyser();
       analyser.fftSize = 1024;
+      duckGain = ctx.createGain();
       sfxBus.connect(master);
-      musicBus.connect(master);
+      musicBus.connect(duckGain).connect(master);
       master.connect(limiter).connect(analyser).connect(ctx.destination);
       synth = createSynth(ctx, sfxBus);
       music = createMusic(ctx, musicBus);
       tracks = createTrackPlayer(ctx, musicBus);
+      samples = createSamplePlayer(ctx, sfxBus);
+      if (theme) samples.setTheme(theme);
       applyLevels();
     }
     if (ctx.state === 'suspended') ctx.resume().then(applyLevels).catch(() => {});
@@ -88,19 +96,40 @@ export function createStageAudio() {
         // không có WebAudio — bỏ qua
       }
     },
-    play(name, options) {
+    play(name, options = {}) {
       if (!opts.sound) return;
       try {
         audio();
-        synth.play(name, options);
+        if (samples.play(name, options)) return;
+        if (options.delay) setTimeout(() => synth.play(name), options.delay * 1000);
+        else synth.play(name);
       } catch {
         // âm thanh bị chặn khi chưa có thao tác — bỏ qua
       }
     },
+    /** Hạ nhạc nền còn `level` (0..1) trong `seconds` giây rồi trả lại — để tiếng kèn / giọng đọc nổi lên. */
+    duck(level = 0.35, seconds = 3) {
+      if (!duckGain) return;
+      const t = ctx.currentTime;
+      // hai lần hạ chồng nhau (tiếng quà rồi thẻ quà): giữ mức NHỎ hơn tới lúc kết thúc MUỘN hơn
+      duckLevel = t < duckUntil ? Math.min(level, duckLevel) : level;
+      duckUntil = Math.max(duckUntil, t + seconds);
+      duckGain.gain.cancelScheduledValues(t);
+      duckGain.gain.setTargetAtTime(duckLevel, t, 0.08);
+      duckGain.gain.setTargetAtTime(1, duckUntil, 0.4);
+    },
+    /** Nhạc riêng cho khoảnh khắc lớn (vip / star / festival / drop) trong `ms` — false nếu không có / nhạc đang tắt. */
+    special(kind, ms) {
+      if (!tracks || !opts.sound || !opts.music || ctx?.state !== 'running') return false;
+      return tracks.special(kind, ms);
+    },
     // Nhạc nền theo game (bar / swim / temple); đổi game là đổi nhạc.
     setTheme(name) {
       theme = name;
-      if (ctx) applyLevels();
+      if (ctx) {
+        samples.setTheme(name);
+        applyLevels();
+      }
     },
     // Phách của nhạc nền đang phát (null khi tắt tiếng / chưa có nhạc) — cảnh tự đếm nhịp riêng khi null.
     beat() {
@@ -135,6 +164,7 @@ export function createStageAudio() {
       analyser.getFloatTimeDomainData(data);
       return Math.sqrt(data.reduce((sum, v) => sum + v * v, 0) / data.length);
     },
-    state: () => (ctx ? ctx.state : 'none')
+    state: () => (ctx ? ctx.state : 'none'),
+    specialKind: () => tracks?.specialKind() || ''
   };
 }
