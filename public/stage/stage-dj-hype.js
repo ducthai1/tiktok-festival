@@ -11,6 +11,7 @@ const PUMP_DEPTH = 0.26; // mỗi phách nhạc hụt xuống 74 % rồi dâng l
 const LOOKAHEAD_S = 0.45;
 const BASS_DB = 5;
 const TRIM = 0.5;
+const SHOUT_RATE = 1.15; // nhanh + cao hơn giọng đọc thường → nghe hăng như MC
 
 /** Phách đầu câu nhạc 16 ô kế tiếp (bỏ câu đầu bài — đoạn vào bài để nhạc tự chạy). */
 export function nextPhraseBeat(beat) {
@@ -41,7 +42,23 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   input.connect(dryPath).connect(output);
 
   // giọng MC: chủ yếu giọng khô, chỉ một tiếng vọng ngắn và nhỏ (user 05/11: "đừng vọng quá" — bản vang lặp 0,33 bị chê)
+  // tông cổ vũ mạnh + cao (user 05/11): nâng cao độ (phát nhanh hơn ~2,5 nửa cung), đẩy dải 3 kHz cho giọng sắc và
+  // nén mạnh cho chắc tiếng; giới hạn đỉnh ở master vẫn chặn vỡ tiếng
   const voice = ctx.createGain();
+  const presence = ctx.createBiquadFilter();
+  presence.type = 'peaking';
+  presence.frequency.value = 3000;
+  presence.Q.value = 0.9;
+  presence.gain.value = 5;
+  const punch = ctx.createDynamicsCompressor();
+  punch.threshold.value = -26;
+  punch.knee.value = 4;
+  punch.ratio.value = 4;
+  punch.attack.value = 0.003;
+  punch.release.value = 0.1;
+  const shoutOut = ctx.createGain();
+  shoutOut.gain.value = 0.6; // bộ nén tự bù âm lượng (~+8 dB) → hạ lại, câu hô chỉ to hơn giọng cảm ơn vài dB
+  presence.connect(punch).connect(shoutOut).connect(voiceOut);
   const echo = ctx.createDelay(1);
   echo.delayTime.value = 0.18;
   const feedback = ctx.createGain();
@@ -51,7 +68,7 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   wet.frequency.value = 900;
   const wetLevel = ctx.createGain();
   wetLevel.gain.value = 0.25;
-  voice.connect(voiceOut);
+  voice.connect(presence);
   voice.connect(echo).connect(wet).connect(feedback).connect(echo);
   wet.connect(wetLevel).connect(voiceOut);
 
@@ -79,10 +96,11 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
     const buffer = ready[Math.floor(Math.random() * ready.length)];
     const src = ctx.createBufferSource();
     src.buffer = buffer;
+    src.playbackRate.value = SHOUT_RATE;
     src.connect(voice);
     src.start(at);
     const wait = Math.max(0, at - ctx.currentTime);
-    setTimeout(() => duck(0.55, buffer.duration + 0.4), wait * 1000); // nhạc lùi nhẹ cho câu hô nổi lên
+    setTimeout(() => duck(0.45, buffer.duration / SHOUT_RATE + 0.4), wait * 1000); // nhạc lùi cho câu hô nổi hẳn lên
     return true;
   }
 
