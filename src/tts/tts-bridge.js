@@ -105,7 +105,8 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
     if (!limit()) return fail(429, 'Đọc dồn quá nhanh');
     if (autoStart) start(); // vừa cài môi trường xong (server đang chạy) → bật luôn, không phải khởi động lại server
     const wav = await speak(text, voice);
-    if (!wav) return fail(503, 'Chưa có giọng đọc');
+    if (!wav) return fail(503, !fs.existsSync(python) ? 'Chưa cài giọng đọc VieNeu — chạy: bash tools/tts/install-voice.sh'
+      : ready ? 'Câu này đọc lỗi' : 'Đang nạp giọng đọc (~20 giây) — bấm lại sau');
     res.writeHead(200, { 'Content-Type': 'audio/wav', 'Cache-Control': 'no-store', ...securityHeaders(serverPort) });
     res.end(req.method === 'HEAD' ? undefined : wav);
   }

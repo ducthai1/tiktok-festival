@@ -205,7 +205,7 @@ $('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoic
 $('tts-preview').addEventListener('click', async () => {
   const text = 'Quá đỉnh! Bé Na vừa tặng 5 Hoa hồng! Mời VIP lên sân khấu!';
   const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent($('set-ttsVoice').value)}`).catch(() => null);
-  if (!res?.ok) return toast(res?.status === 503 ? 'Chưa cài giọng đọc VieNeu (xem tools/tts/CAI-DAT.txt)' : 'Không đọc được câu thử');
+  if (!res?.ok) return toast(res ? await res.text() : 'Không kết nối được máy chủ', true);
   new Audio(URL.createObjectURL(await res.blob())).play().catch(() => toast('Trình duyệt chặn phát tiếng — bấm lại'));
 });
 for (const key of ['volume', 'musicVolume']) {
