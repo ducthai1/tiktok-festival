@@ -14,6 +14,8 @@ const SHOT_BARS = [8, 7, 6, 5.5, 5.5, 5.5, 2.5, 6];
 // lúc không theo ai: camera trượt như trên ray — lọc mũ HAI tầng (đích → điểm trượt → camera) nên đổi góc thì tăng tốc từ từ,
 // hãm từ từ, không vọt ngay khung đầu. Hệ số nhỏ = chậm hơn.
 const GLIDE_K = 1.1;
+// ghé thăm một người (gõ lệnh miễn phí / 1k tim / share): cũng trượt HAI tầng như trên — vào từ từ, ra từ từ, không vọt
+const GLANCE_K = 1.1;
 // góc đổi theo ĐỒNG HỒ RIÊNG của camera (1 ô nhịp = nhịp chuẩn 124 BPM), KHÔNG theo nhịp bài đang phát: nhịp bài về 0 khi
 // đổi bài (camera đứng im cả phút chờ "đuổi kịp") và nhảy vọt khi chen nhạc quà lớn (cắt liền mấy góc)
 const SEC_PER_BAR = (4 * 60) / 124;
@@ -130,10 +132,11 @@ export function createCameraDirector(camera) {
           wantLook.set(at.x, at.y + 2.0, at.z); // nhìn cao hơn đầu một chút: người solo nằm giữa-dưới, không đụng bảng phía trên
           fov = 40;
         } else {
-          // ghé nhìn từ trên cao chéo xuống: người ở hàng sau không bị sticker hàng trước che
-          wantPos.set(at.x * 0.9, at.y + 3.8, at.z + 3.6);
-          wantLook.set(at.x, at.y + 0.7, at.z);
-          fov = 40;
+          // ghé nhìn từ trên cao chéo xuống: người ở hàng sau không bị sticker hàng trước che; đứng hơi xa (khung vừa,
+          // thấy cả người xung quanh) để quãng camera phải đi ngắn hơn, đỡ chóng mặt
+          wantPos.set(at.x * 0.85, at.y + 3.6, at.z + 4.6);
+          wantLook.set(at.x, at.y + 0.9, at.z);
+          fov = 42;
         }
       } else {
         if (wasFocusing || shotStart === null || now < shotStart) {
@@ -148,9 +151,10 @@ export function createCameraDirector(camera) {
         }
         fov = directorShot(THREE.MathUtils.clamp((now - shotStart) / (SHOT_BARS[shot] * SEC_PER_BAR), 0, 1), crowd, podium);
       }
-      // ghé cận lướt vào chậm hơn (đỡ giật mắt); solo / xe bay cần bám nhanh nên giữ 3,6
-      const blend = 1 - Math.exp(-(at ? (focus.mode === 'glance' ? 2.2 : 3.6) : GLIDE_K) * dt);
-      if (at) {
+      // toàn cảnh + ghé thăm: trượt hai tầng (tăng tốc / hãm từ từ); solo / xe bay / cận rồi kéo ra cần bám nhanh nên 3,6
+      const gentle = !at || focus.mode === 'glance';
+      const blend = 1 - Math.exp(-(at ? (gentle ? GLANCE_K : 3.6) : GLIDE_K) * dt);
+      if (!gentle) {
         camera.position.lerp(wantPos, blend);
         look.lerp(wantLook, blend);
         glidePos.copy(camera.position); // hết theo người → trượt tiếp từ chỗ đang đứng, không giật

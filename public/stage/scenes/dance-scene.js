@@ -5,6 +5,7 @@ import { DANCE_SLOTS, PODIUM } from '/static/shared/dance-floor-layout.js';
 import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
+import { createFreeCommandWatch } from './dance-free-command-watch.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
@@ -97,7 +98,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
 
   const posOf = (id) => crowd.get(id)?.pos || null;
 
-  function glance(id, seconds = 2.4) {
+  const freeCommands = createFreeCommandWatch(); // người thật gõ lệnh miễn phí → camera ghé thăm (cách nhau ≥ GLANCE_GAP_S)
+
+  // ghé thăm 7 s: camera trượt vào ~3,5 s, đứng xem người đó nhảy bung, rồi trượt về toàn cảnh
+  function glance(id, seconds = 7) {
     if (director.isFocusing(clock) || clock - lastGlance < GLANCE_GAP_S) return;
     lastGlance = clock;
     closeId = id;
@@ -234,6 +238,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         auBar.stop();
       }
       const dropping = state.dropMs > 0;
+      for (const d of state.dancers) if (freeCommands.used(d, dropping)) glance(d.id);
+      freeCommands.keepOnly(byId);
       meter.root.classList.toggle('party', dropping);
       meter.update(dropping ? 1 : state.hype / state.hypeGoal,
         dropping ? `DROP! ${Math.ceil(state.dropMs / 1000)}s` : `${formatNumber(state.hype)} / ${formatNumber(state.hypeGoal)}`);
@@ -280,7 +286,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         if (!fx.reason) hud.toast(`❤ ${formatNumber(fx.likes)} tim → có cánh 📸`, { gold: true, title: fx.nickname });
         markRecent(fx.userId);
         if (clock - lastGlance >= SHOUTOUT_GAP_S) lastGlance = -Infinity; // 1k tim / share được lên hình, nhưng không dồn dập
-        glance(fx.userId, fx.reason ? 3 : 4);
+        glance(fx.userId);
       }
       else if (fx.kind === 'look' && e) {
         show.sparkle(e.pos.clone().setY(e.pos.y + 0.8));
