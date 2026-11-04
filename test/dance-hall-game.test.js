@@ -245,3 +245,19 @@ test('a 99–199 diamond gift flies the giver around on a winged car; 200+ keeps
   assert.ok(kinds(big).includes('fireworks'));
   assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
 });
+
+test('the default seed crowd fills the floor with distinct names that keep moving', async () => {
+  const { SEED_TARGET } = await import('../src/games/dance-seed-crowd.js');
+  const game = createDanceHallGame({ seedCount: SEED_TARGET });
+  game.tick(0);
+  const seeds = () => game.snapshot(0).dancers.filter((d) => d.id.startsWith('seed:'));
+  assert.equal(seeds().length, SEED_TARGET);
+  assert.equal(new Set(seeds().map((d) => d.nickname)).size, SEED_TARGET, 'không ai trùng tên');
+  // mỗi lượt cứ 10 người ảo thì một người làm động tác: 30 người → ~3 người/lượt, sau 60 s hầu hết đã nhúc nhích
+  const moved = new Set();
+  for (let t = 1000; t <= 60000; t += 500) {
+    game.tick(t);
+    for (const d of game.snapshot(t).dancers) if (d.move || d.face) moved.add(d.id);
+  }
+  assert.ok(moved.size >= SEED_TARGET * 0.6, `chỉ ${moved.size}/${SEED_TARGET} người ảo nhúc nhích trong 60 s`);
+});
