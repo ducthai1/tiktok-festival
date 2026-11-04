@@ -18,7 +18,8 @@
  "infected-vibes": {
   "file": "infected-vibes.mp3",
   "bpm": 139.5,
-  "firstBeat": 0.176
+  "firstBeat": 0.176,
+  "opener": true
  },
  "lets-move": {
   "file": "lets-move.mp3",

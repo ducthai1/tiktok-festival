@@ -24,6 +24,13 @@ async function blobSrc(url) {
 }
 const release = (src) => { if (src?.startsWith('blob:')) URL.revokeObjectURL(src); };
 
+/** Thứ tự phát lúc mở cảnh: bài `opener` (bài sung nhất, chọn tay) lên đầu cho live vào là quẩy ngay, còn lại trộn ngẫu nhiên. */
+export function playOrder(list, random = Math.random) {
+  const order = list.map((_, i) => i).sort(() => random() - 0.5);
+  const first = list.findIndex((t) => t.opener);
+  return first < 0 ? order : [first, ...order.filter((i) => i !== first)];
+}
+
 // lượt đặc biệt cao hơn được chen ngang lượt thấp hơn đang phát (quà to cắt nhạc của DROP, không có chiều ngược lại)
 const RANK = { drop: 1, vip: 2, star: 3, festival: 4 };
 
@@ -61,7 +68,7 @@ export function createTrackPlayer(ctx, out) {
       const base = PLAYLISTS[name];
       const meta = await (await fetch(`${base}tracks.json`)).json();
       const all = Object.values(meta).map((t) => ({ url: `${base}${t.file}`, bpm: t.bpm, firstBeat: t.firstBeat || 0, hot: t.hot || 0,
-        start: t.start || 0, special: t.special || '' }));
+        start: t.start || 0, opener: Boolean(t.opener), special: t.special || '' }));
       const special = {};
       for (const t of all) if (t.special) (special[t.special] ||= []).push(t);
       lists.set(name, { normal: all.filter((t) => !t.special), special });
@@ -123,7 +130,7 @@ export function createTrackPlayer(ctx, out) {
     start(name) {
       if (theme === name && (special || !main.audio.paused)) return; // đang phát nhạc VIP thì giữ nguyên bài thường đang dở
       theme = name;
-      order = [];
+      order = playOrder(lists.get(name)?.normal || []);
       main.gain.gain.value = 1;
       void next();
     },

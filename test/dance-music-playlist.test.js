@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import test from 'node:test';
-import { seekSrc } from '../public/stage/stage-track-player.js';
+import { playOrder, seekSrc } from '../public/stage/stage-track-player.js';
 
 const tracks = JSON.parse(fs.readFileSync(new URL('../public/assets/dance/music/tracks.json', import.meta.url), 'utf8'));
 const SPECIAL_KINDS = ['drop', 'vip', 'star', 'festival'];
@@ -34,4 +34,16 @@ test('a track plays from its measured offset, or from the top when it has none',
   assert.equal(seekSrc('blob:http://x/1', 12.5), 'blob:http://x/1#t=12.5');
   assert.equal(seekSrc('/m/a.mp3', 0), '/m/a.mp3');
   assert.equal(seekSrc('/m/a.mp3', undefined), '/m/a.mp3');
+});
+
+test('the hand-picked opener plays first, then every other track once in shuffled order', () => {
+  const list = [{ url: 'a' }, { url: 'b' }, { url: 'c', opener: true }, { url: 'd' }];
+  for (let seed = 0; seed < 20; seed += 1) {
+    let x = seed + 1;
+    const order = playOrder(list, () => ((x = (x * 9301 + 49297) % 233280) / 233280));
+    assert.equal(order[0], 2);
+    assert.deepEqual([...order].sort(), [0, 1, 2, 3]);
+  }
+  assert.deepEqual([...playOrder([{ url: 'a' }, { url: 'b' }])].sort(), [0, 1]);
+  assert.equal(Object.values(tracks).filter((t) => t.opener && !t.special).length, 1, 'đúng một bài mở màn');
 });
