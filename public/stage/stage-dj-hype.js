@@ -57,7 +57,7 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   punch.attack.value = 0.003;
   punch.release.value = 0.1;
   const shoutOut = ctx.createGain();
-  shoutOut.gain.value = 0.6; // bộ nén tự bù âm lượng (~+8 dB) → hạ lại, câu hô chỉ to hơn giọng cảm ơn vài dB
+  shoutOut.gain.value = 0.9; // đo OBS ở 0,6: câu hô chỉ ngang giọng cảm ơn (-15 dB) → nâng ~3,5 dB cho nổi hẳn trên nhạc
   presence.connect(punch).connect(shoutOut).connect(voiceOut);
   const echo = ctx.createDelay(1);
   echo.delayTime.value = 0.18;
