@@ -105,9 +105,10 @@ export function createCameraDirector(camera) {
           wantLook.set(at.x, at.y + 2.0, at.z); // nhìn cao hơn đầu một chút: người solo nằm giữa-dưới, không đụng bảng phía trên
           fov = 40;
         } else {
-          wantPos.set(at.x * 0.9, at.y + 2.2, at.z + 4.8);
-          wantLook.set(at.x, at.y + 0.8, at.z);
-          fov = 36;
+          // ghé nhìn từ trên cao chéo xuống: người ở hàng sau không bị sticker hàng trước che
+          wantPos.set(at.x * 0.9, at.y + 3.8, at.z + 3.6);
+          wantLook.set(at.x, at.y + 0.7, at.z);
+          fov = 40;
         }
       } else {
         if (wasFocusing) {

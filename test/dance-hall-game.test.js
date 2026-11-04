@@ -142,3 +142,12 @@ test('a handful of dancers spread over the whole floor instead of huddling in th
   const full = order.map((slot) => spreadSlotPosition(slot, DANCE_SLOTS));
   assert.deepEqual(full[0], slotPosition(order[0])); // sàn đầy thì về đúng lưới gốc
 });
+
+test('a new follower or a share gets the camera on them', () => {
+  const game = createDanceHallGame();
+  const fx = game.handleEvent({ type: 'follow', user: user(7) }, 0);
+  const cam = fx.find((f) => f.kind === 'camera');
+  assert.equal(cam.userId, 'u7');
+  assert.equal(cam.reason, 'follow');
+  assert.ok(game.handleEvent({ type: 'share', user: user(8) }, 0).some((f) => f.kind === 'camera' && f.userId === 'u8'));
+});

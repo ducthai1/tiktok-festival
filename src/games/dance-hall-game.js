@@ -236,8 +236,11 @@ export function createDanceHallGame({ random = Math.random } = {}) {
         addHype(Math.min(event.likeCount, 30), now, fx);
       } else if (event.type === 'follow' || event.type === 'share') {
         const d = ensureDancer(event.user, now, fx, { canEvict: true });
-        if (d) d.waveUntil = now + WAVE_MS;
-        fx.push({ kind: 'toast', text: `${event.user.nickname} vừa ${event.type === 'follow' ? 'theo dõi' : 'chia sẻ'} sàn nhảy` });
+        if (d) {
+          d.waveUntil = now + WAVE_MS;
+          fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, reason: event.type }); // follow / share = được lên camera
+        }
+        fx.push({ kind: 'toast', text: `${event.user.nickname} vừa ${event.type === 'follow' ? 'follow' : 'chia sẻ'} sàn nhảy — lên camera! 📸` });
         addHype(event.type === 'follow' ? 20 : 30, now, fx);
       }
       advanceSolo(now, fx);

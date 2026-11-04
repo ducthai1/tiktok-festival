@@ -174,10 +174,10 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         labels.bubble(fx.userId, fx.text);
       } else if (fx.kind === 'toast') hud.toast(fx.text);
       else if (fx.kind === 'camera' && e) {
-        hud.toast(`📸 ${fx.nickname} đủ ${formatNumber(fx.likes)} tim — lên hình!`, { gold: true });
+        if (!fx.reason) hud.toast(`📸 ${fx.nickname} đủ ${formatNumber(fx.likes)} tim — có cánh + lên hình!`, { gold: true });
         markRecent(fx.userId);
-        lastGlance = -Infinity; // 1k tim luôn được lên hình
-        glance(fx.userId, 4);
+        lastGlance = -Infinity; // 1k tim / follow / share luôn được lên hình
+        glance(fx.userId, fx.reason ? 3 : 4);
       }
       else if (fx.kind === 'look' && e) {
         show.sparkle(e.pos.clone().setY(e.pos.y + 0.8));

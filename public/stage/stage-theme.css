@@ -152,11 +152,16 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .label .title-plate.star { background-image: url('/static/assets/dance/banners/title-neon.webp'); }
 
 /* Sàn nhảy kiểu "bar online": cột lệnh bên phải */
-.cmd-pills { position: absolute; right: 110px; top: 1300px; display: grid; gap: 7px; justify-items: end; z-index: 5; pointer-events: none; }
-.cmd-pill { display: flex; align-items: center; gap: 8px; padding: 4px 12px 4px 6px; border-radius: 999px; background: rgba(12, 8, 30, 0.62);
-  border: 1px solid rgba(160, 200, 255, 0.35); backdrop-filter: blur(4px); color: #fff; font: 800 17px var(--font); }
-.cmd-icon { font-size: 20px; }
-.cmd-word { padding: 1px 8px; border-radius: 6px; background: rgba(255, 79, 163, 0.85); font-size: 15px; }
+.cmd-pills { position: absolute; right: 100px; top: 1250px; display: grid; gap: 6px; justify-items: end; z-index: 5; pointer-events: none; }
+.cmd-head { padding: 3px 12px; border-radius: 8px; background: rgba(125, 255, 138, 0.92); color: #052e12; font: 900 16px var(--font); letter-spacing: 0.5px; }
+.cmd-pill { display: flex; align-items: center; gap: 6px; padding: 5px 12px 5px 8px; border-radius: 999px; background: rgba(8, 5, 22, 0.86);
+  border: 1.5px solid rgba(160, 200, 255, 0.5); color: #fff; font: 800 18px var(--font); text-shadow: 0 1px 2px #000; }
+.cmd-icon { font-size: 18px; }
+.cmd-verb { color: #c9d4ff; font-size: 16px; }
+.cmd-verb:empty { display: none; }
+.cmd-word { padding: 1px 9px; border-radius: 7px; background: #ffd21f; color: #1b1300; font-weight: 900; text-shadow: none; }
+.cmd-arrow { color: #7dff8a; font-weight: 900; }
+.cmd-label { color: #fff; }
 
 /* Sàn nhảy — bố cục không đè nhau: thanh Độ Quẩy (252–359) → dưới đó 3 cột:
    trái = Cách tham gia (+ thông báo quà ngay dưới), giữa = thanh phím solo + banner, phải = Top + thẻ chào gọn.
