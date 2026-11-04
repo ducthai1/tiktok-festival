@@ -72,13 +72,3 @@ export function isCleanForDisplay(text) {
   if (!text || URL_OR_PHONE.test(text)) return false;
   return isCleanText(text);
 }
-
-/**
- * Tên để GIỌNG ĐỌC đọc: bỏ emoji / ký hiệu / chữ không phải Latin (giọng Việt đọc vấp), tối đa 24 ký tự.
- * Tên có từ bẩn (kể cả viết lách) → đọc `fallback` ("bạn") thay vì đọc tên.
- */
-export function speakableName(name, fallback = 'bạn') {
-  if (!isCleanForDisplay(name)) return fallback;
-  const clean = String(name).normalize('NFC').replace(/[^\p{Script=Latin}\p{M}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
-  return clean.slice(0, 24).trim() || fallback;
-}

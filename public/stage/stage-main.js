@@ -6,7 +6,7 @@ import { createLabelLayer } from './stage-labels.js';
 import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-pipeline.js';
 import { createFrameLimiter, stageQuality } from './stage-quality.js';
 import { tierRangeLabel } from '/static/shared/gift-tiers.js';
-import { speakableName } from '/static/shared/profanity-filter.js';
+import { speakableName } from '/static/shared/spoken-name.js';
 
 const SCENES = {
   boss: () => import('./scenes/boss-scene.js').then((m) => m.createBossScene),
