@@ -9,6 +9,8 @@ import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
 import { createGiftVoice, thankLine } from './dance-voice-lines.js';
+import { createMomentGate } from './dance-moment-gate.js';
+import { createTierBanner } from './dance-tier-banner.js';
 import { buildHallDecor } from './dance-hall-decor.js';
 import { buildDanceHall } from './dance-hall-room.js';
 import { createShowEffects } from './dance-show-effects.js';
@@ -52,13 +54,11 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
   const sounds = createDanceSounds(audio);
-  const bigGift = createGiftAnnouncer(hud, {
-    onShow(fx) {
-      sounds.announce();
-      if (fx.kind === 'follow') audio.speak(thankLine(fx), 'story'); // quà được đọc riêng (giftVoice, gộp combo)
-    }
-  });
-  const giftVoice = createGiftVoice((line) => audio.speak(line, 'story')); // mọi quà tốn kim cương đều được cảm ơn
+  const bigGift = createGiftAnnouncer(hud, { onShow: () => sounds.announce() });
+  // câu cảm ơn đi trước, hiệu ứng làm nền: tiếng / thẻ quà lớn / pháo hoa / DROP / nhạc VIP chờ giọng bắt đầu đọc (tối đa 5 s)
+  const moment = createMomentGate();
+  const tierBanner = createTierBanner(hud); // khung chữ SOLO / VIP / SIÊU SAO / ĐẠI NHẠC HỘI / DROP — xịn dần theo cấp
+  const giftVoice = createGiftVoice((line, onStart) => audio.speak(line, 'story', { onStart })); // mọi quà tốn kim cương
   // có video DJ: chiếu trên màn LED lớn sau sân khấu
   const djPanel = createDjPanel(hud, { onVideo: (video) => room.setScreenVideo(video) });
   let lastBeat = 0;
@@ -135,9 +135,12 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     const d = byId.get(info.id);
     solo = { id: info.id, tier: info.tier, startedAt: clock };
     director.focus(() => posOf(info.id), info.msLeft / 1000, 'solo', clock);
-    hud.banner(TIER_TITLES[info.tier] || 'SOLO', d?.nickname || '', 3200);
     auBar.start(d?.nickname || '', lastBeat, info.id);
-    sounds.solo(info.tier, info.msLeft);
+    const endsAt = performance.now() + info.msLeft;
+    moment.run(() => {
+      tierBanner.show(info.tier, d?.nickname || '', { avatarUrl: d?.avatar || '', ms: 3400 });
+      sounds.solo(info.tier, Math.max(1000, endsAt - performance.now()));
+    });
     markRecent(info.id);
   }
 
@@ -207,9 +210,13 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         labels.bubble(fx.userId, fx.text);
       } else if (fx.kind === 'toast') hud.toast(fx.text, { title: fx.nickname, image: fx.avatar, gold: fx.gold });
       else if (fx.kind === 'follow') {
-        bigGift.follow(fx);
-        sounds.follow();
-        if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
+        const release = moment.hold();
+        audio.speak(thankLine(fx), 'story', { onStart: release });
+        moment.run(() => {
+          bigGift.follow(fx);
+          sounds.follow();
+          if (e) show.hearts(e.pos.clone().setY(e.pos.y + 1.6 * e.scale), 15);
+        });
         markRecent(fx.userId);
       }
       else if (fx.kind === 'camera' && e) {
@@ -226,23 +233,31 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       else if (fx.kind === 'gift') {
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🪩 tặng ${fx.giftName} ×${n}`, { gold: fx.tier >= 3, image: fx.giftPicture, title: fx.nickname });
         if (e) show.sparkle(e.pos.clone().setY(e.pos.y + 0.9), fx.tier >= 3);
-        sounds.gift(fx.tier);
-        giftVoice.add(fx);
-        bigGift.show(fx);
+        giftVoice.add(fx, moment.hold());
+        moment.run(() => {
+          sounds.gift(fx.tier);
+          bigGift.show(fx);
+        });
         markRecent(fx.userId);
         if (fx.tier === 1) glance(fx.userId);
       } else if (fx.kind === 'fountains') {
-        show.fountains(clock, 7);
-        heliFrom = clock;
-        sounds.heli();
+        moment.run(() => {
+          show.fountains(clock, 7);
+          heliFrom = clock;
+          sounds.heli();
+        });
       } else if (fx.kind === 'fireworks') {
-        show.fireworks(fx.power);
-        sounds.fireworks(fx.power);
-        if (!solo) director.focus(() => new THREE.Vector3(0, 0.9, -7.2), 5, 'reveal', clock);
+        moment.run(() => {
+          show.fireworks(fx.power);
+          sounds.fireworks(fx.power);
+          if (!solo) director.focus(() => new THREE.Vector3(0, 0.9, -7.2), 5, 'reveal', clock);
+        });
       } else if (fx.kind === 'drop') {
-        hud.banner('💥 DROP! 💥', 'Cả sàn cùng quẩy', 3000);
-        sounds.drop(fx.durationMs);
-        show.confetti(clock, fx.durationMs / 1000);
+        moment.run(() => {
+          tierBanner.show('drop', '💥 Cả sàn cùng quẩy 💥', { ms: 3200 });
+          sounds.drop(fx.durationMs);
+          show.confetti(clock, fx.durationMs / 1000);
+        });
       }
     },
     frame(dt, t) {
@@ -274,6 +289,8 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     },
     dispose() {
       giftVoice.clear();
+      moment.clear();
+      tierBanner.dispose();
       crowd.dispose();
       djPanel.dispose();
       bigGift.dispose();

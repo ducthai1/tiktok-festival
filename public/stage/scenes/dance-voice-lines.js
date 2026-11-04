@@ -14,26 +14,26 @@ export function thankLine(fx) {
   return `${thanks} đã tặng ${gift}!`;
 }
 
-// Quà combo: TikTok gửi nhiều lượt (×1, ×2, ×3…) — gộp theo người + món, đọc MỘT câu với tổng số khi người tặng ngừng bấm
-// ~1,2 giây ("Cảm ơn Lan Anh, đã tặng 10 Hoa hồng!") thay vì đọc 10 lần.
-export function createGiftVoice(say, { settleMs = 1200 } = {}) {
-  const pending = new Map();
+// Quà combo: TikTok gửi nhiều lượt (×1, ×2, ×3…) — đọc MỘT câu ngay ở lượt đầu (bắt đầu tạo giọng liền, không chờ gộp —
+// câu cảm ơn phải tới cùng lúc với hiệu ứng), các lượt sau của cùng người + cùng món trong `repeatMs` thì không đọc lại.
+// onStart(fx): gọi lúc giọng bắt đầu đọc (hoặc ngay khi lượt đó không đọc) — nơi gọi dùng để mở cổng hiệu ứng.
+export function createGiftVoice(say, { repeatMs = 8000 } = {}) {
+  const lastSaid = new Map(); // khoá → thời điểm đọc
   return {
-    add(fx) {
+    add(fx, onStart) {
       const key = `${fx.userId}|${fx.giftName}`;
-      const item = pending.get(key) || { fx: { ...fx, count: 0, tier: 1 }, timer: 0 };
-      item.fx.count += fx.count || 1;
-      item.fx.tier = Math.max(item.fx.tier, fx.tier || 1);
-      clearTimeout(item.timer);
-      item.timer = setTimeout(() => {
-        pending.delete(key);
-        say(thankLine(item.fx));
-      }, settleMs);
-      pending.set(key, item);
+      const now = performance.now();
+      if (now - (lastSaid.get(key) ?? -Infinity) < repeatMs) {
+        lastSaid.set(key, now);
+        onStart?.();
+        return;
+      }
+      lastSaid.set(key, now);
+      if (lastSaid.size > 500) lastSaid.delete(lastSaid.keys().next().value);
+      say(thankLine(fx), onStart);
     },
     clear() {
-      for (const item of pending.values()) clearTimeout(item.timer);
-      pending.clear();
+      lastSaid.clear();
     }
   };
 }

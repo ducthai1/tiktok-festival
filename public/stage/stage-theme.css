@@ -225,3 +225,63 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 .theme-dance .label .tag { background: rgba(16, 6, 36, 0.82); border-color: rgba(196, 161, 255, 0.65); font-size: 22px; }
 .theme-dance .label.small .tag { font-size: 15px; gap: 4px; padding: 2px 8px 2px 2px; max-width: 190px; overflow: hidden; text-overflow: ellipsis; }
 .theme-dance .label.small img, .theme-dance .label.small .ava { width: 22px; height: 22px; }
+
+/* Khung chữ lớn theo CẤP (dance-tier-banner.js): ảnh khung danh hiệu thật, càng cấp cao càng nhiều hiệu ứng.
+   Nằm giữa cột thông báo (548–792) và thẻ quà lớn (1020+) — không đè nhau. */
+.tier-banner { position: absolute; left: 50%; top: 816px; width: 600px; height: 200px; transform: translateX(-50%); z-index: 7; pointer-events: none;
+  --glow: #7a5cff; --pad-x: 150px; --pad-top: 0px; }
+.tier-banner.tb-1 { --glow: #8b6bff; }
+.tier-banner.tb-2 { --glow: #6fd6ff; --pad-x: 148px; }
+.tier-banner.tb-3 { --glow: #ff4fd8; --pad-x: 152px; }
+.tier-banner.tb-4, .tier-banner.tb-drop { --glow: #ff7a1a; --pad-x: 172px; --pad-top: 26px; }
+.tier-banner.tb-5 { --glow: #ffd34d; --pad-x: 168px; --pad-top: 44px; }
+.tier-banner.tb-6 { --glow: #ffe27a; --pad-x: 168px; --pad-top: 44px; transform: translateX(-50%) scale(1.1); }
+.tb-frame { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: var(--pad-top) var(--pad-x) 0;
+  background: center / contain no-repeat; opacity: 0; transform: scale(0.85); transition: opacity 0.4s, transform 0.4s;
+  filter: drop-shadow(0 0 16px var(--glow)) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6)); }
+.tier-banner.show .tb-frame { opacity: 1; transform: none; animation: tb-pop 620ms cubic-bezier(0.2, 1.6, 0.4, 1) both; }
+@keyframes tb-pop { 0% { transform: scale(0.25); opacity: 0; } 60% { transform: scale(1.1); opacity: 1; } 100% { transform: scale(1); } }
+.tb-text { display: grid; justify-items: center; gap: 0; width: 100%; min-width: 0; text-align: center; }
+.tb-title { max-width: 100%; overflow: hidden; white-space: nowrap; font: 900 42px var(--title-font); letter-spacing: 1px; line-height: 1.12;
+  background: linear-gradient(180deg, #ffffff 0%, #fff3b0 35%, #ffc93c 65%, #ff8a1a 100%); -webkit-background-clip: text; background-clip: text;
+  color: transparent; -webkit-text-fill-color: transparent; filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.75)) drop-shadow(0 0 10px var(--glow)); }
+.tier-banner.tb-2 .tb-title { background-image: linear-gradient(180deg, #ffffff 0%, #d9f6ff 45%, #7fd8ff 100%); }
+.tier-banner.tb-1 .tb-title, .tier-banner.tb-3 .tb-title { background-image: linear-gradient(180deg, #ffffff 0%, #ffd1f4 45%, #ff6ad5 100%); }
+.tb-sub { max-width: 100%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font: 800 22px var(--font); color: #fff;
+  text-shadow: 0 2px 4px #000, 0 0 10px var(--glow); }
+/* follow: bảng tên cyber có vòng tròn bên trái → avatar người follow trong vòng */
+.tier-banner.tb-1 .tb-frame { padding: 0 44px 0 168px; }
+.tb-avatar { position: absolute; left: 26px; top: 52px; width: 96px; height: 96px; border-radius: 50%; overflow: hidden; background: #2a1d48;
+  display: grid; place-items: center; }
+.tb-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.tb-avatar::before { content: attr(data-empty); font-size: 52px; grid-area: 1 / 1; }
+.tb-avatar[hidden], .tb-avatar img[hidden] { display: none; }
+/* cấp 3+: vệt sáng lướt qua lòng khung */
+.tier-banner.tb-3 .tb-frame::after, .tier-banner.tb-4 .tb-frame::after, .tier-banner.tb-5 .tb-frame::after,
+.tier-banner.tb-6 .tb-frame::after, .tier-banner.tb-drop .tb-frame::after {
+  content: ""; position: absolute; inset: 30% 24% 24%; border-radius: 16px; mix-blend-mode: screen;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.6) 50%, transparent 65%) 0 0 / 260% 100% no-repeat;
+  animation: tb-shine 1.7s ease-in-out 0.5s infinite; }
+@keyframes tb-shine { from { background-position: 130% 0; } to { background-position: -130% 0; } }
+/* cấp 4 + DROP: lửa chập chờn (khung loé sáng theo nhịp nhanh) */
+.tier-banner.tb-4.show .tb-frame, .tier-banner.tb-drop.show .tb-frame {
+  animation: tb-pop 620ms cubic-bezier(0.2, 1.6, 0.4, 1) both, tb-flicker 0.32s ease-in-out 0.62s infinite alternate; }
+@keyframes tb-flicker { from { filter: drop-shadow(0 0 12px var(--glow)) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6)) brightness(1); }
+  to { filter: drop-shadow(0 0 30px var(--glow)) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.6)) brightness(1.18); } }
+/* DROP: rung mạnh + chớp trắng lúc xuất hiện */
+.tier-banner.tb-drop.show .tb-frame {
+  animation: tb-pop 520ms cubic-bezier(0.2, 1.6, 0.4, 1) both, tb-shake 0.45s ease-in-out 0.5s 3, tb-flicker 0.32s ease-in-out 1.9s infinite alternate; }
+@keyframes tb-shake { 0%, 100% { transform: translate(0, 0) rotate(0); } 20% { transform: translate(-9px, 3px) rotate(-2deg); filter: brightness(1.8); }
+  40% { transform: translate(8px, -4px) rotate(2deg); } 60% { transform: translate(-6px, 2px) rotate(-1deg); } 80% { transform: translate(5px, -2px) rotate(1deg); } }
+/* cấp 5–6: tia sáng xoay sau lưng khung (dẹt theo chiều dọc để không lấn cột thông báo phía trên) */
+.tb-rays { position: absolute; left: 50%; top: 50%; width: 1100px; height: 1100px; margin: -550px 0 0 -550px; opacity: 0; transition: opacity 0.5s;
+  background: repeating-conic-gradient(from 0deg, rgba(255, 220, 110, 0.42) 0deg 7deg, transparent 7deg 20deg);
+  -webkit-mask-image: radial-gradient(circle, #000 12%, transparent 55%); mask-image: radial-gradient(circle, #000 12%, transparent 55%);
+  animation: tb-spin 10s linear infinite; }
+.tier-banner.show.tb-5 .tb-rays, .tier-banner.show.tb-6 .tb-rays { opacity: 1; }
+@keyframes tb-spin { from { transform: scaleY(0.36) rotate(0deg); } to { transform: scaleY(0.36) rotate(360deg); } }
+/* cấp 6: tia sáng cầu vồng đổi màu liên tục */
+.tier-banner.tb-6 .tb-rays { background: repeating-conic-gradient(from 0deg, rgba(255, 90, 200, 0.5) 0deg 6deg, transparent 6deg 12deg,
+  rgba(90, 200, 255, 0.5) 12deg 18deg, transparent 18deg 24deg, rgba(255, 220, 90, 0.5) 24deg 30deg, transparent 30deg 36deg);
+  animation: tb-spin 7s linear infinite, tb-hue 2.5s linear infinite; }
+@keyframes tb-hue { to { filter: hue-rotate(360deg); } }

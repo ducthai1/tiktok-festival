@@ -134,11 +134,15 @@ export function createStageAudio() {
       if (!music || ctx?.state !== 'running') return null;
       return tracks.playing() ? tracks.beat() : music.beat();
     },
-    speak(text, channel = 'story') {
+    /** onStart: gọi lúc giọng BẮT ĐẦU đọc — hoặc ngay nếu không đọc (tắt giọng / câu bẩn) — để hiệu ứng chạy làm nền. */
+    speak(text, channel = 'story', { onStart } = {}) {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
-      if (!allowed || !opts.sound) return;
-      if (!isCleanForDisplay(text)) return; // câu còn sót từ tục tĩu / link / số điện thoại thì không đọc
-      speech.say(text);
+      // câu còn sót từ tục tĩu / link / số điện thoại thì không đọc
+      if (!allowed || !opts.sound || !isCleanForDisplay(text)) {
+        onStart?.();
+        return;
+      }
+      speech.say(text, { onStart });
     },
     configure(settings) {
       Object.assign(opts, {
