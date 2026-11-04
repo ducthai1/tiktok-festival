@@ -7,6 +7,9 @@
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { giftTier } from '../../public/shared/gift-tiers.js';
 import { DANCE_FILL_ORDER, DANCE_SLOTS } from '../../public/shared/dance-floor-layout.js';
+import { createSeedCrowd } from './dance-seed-crowd.js';
+
+const FILL_RANK = new Map(DANCE_FILL_ORDER.map((slot, i) => [slot, i])); // chỗ càng đầu danh sách càng đẹp (gần camera, giữa sàn)
 
 const WATCHER_LEAVE_MS = 5 * 60 * 1000;
 const ENGAGED_LEAVE_MS = 10 * 60 * 1000;
@@ -60,8 +63,9 @@ export function faceForComment(text) {
 // Bậc quà → thời gian solo (ms). Bậc 1 không solo (chỉ hào quang + nhảy bung).
 const SOLO_MS_BY_TIER = [0, 5000, 9000, 12000, 15000, 20000];
 
-export function createDanceHallGame({ random = Math.random } = {}) {
+export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}) {
   const dancers = new Map();
+  const seedCrowd = createSeedCrowd({ random, target: seedCount });
   const spenders = new Map(); // kc theo người trong phiên → Top 1-2-3 lên bục
   const chatHypeCooldown = createCooldown(5000);
   const heartsCooldown = createCooldown(2500);
@@ -102,13 +106,43 @@ export function createDanceHallGame({ random = Math.random } = {}) {
     return out.slot;
   }
 
-  function ensureDancer(user, now, fx, { canEvict, engaged = true }) {
+  const seedsOnFloor = () => [...dancers.values()].filter((d) => d.seed);
+
+  // Người thật vào mà đang dư người ảo: người ảo ở chỗ đẹp nhất bay ra, người thật vào đúng chỗ đó.
+  function takeSeedSpot(fx) {
+    const seeds = seedsOnFloor();
+    if (seeds.length <= seedCrowd.want(dancers.size - seeds.length + 1)) return -1;
+    const out = seeds.sort((a, b) => FILL_RANK.get(a.slot) - FILL_RANK.get(b.slot))[0];
+    dancers.delete(out.id);
+    fx.push({ kind: 'leave', userId: out.id });
+    return out.slot;
+  }
+
+  // Giữ số người ảo = mục tiêu − số người thật: thiếu thì thêm (sàn trống), dư thì mời bớt.
+  function syncSeeds(now, fx) {
+    const seeds = seedsOnFloor();
+    const want = seedCrowd.want(dancers.size - seeds.length);
+    for (const d of seeds.slice(want)) {
+      dancers.delete(d.id);
+      fx.push({ kind: 'leave', userId: d.id });
+    }
+    const names = new Set(seeds.slice(0, want).map((d) => d.nickname));
+    for (let n = seeds.length; n < want; n += 1) {
+      const seed = seedCrowd.next(names);
+      names.add(seed.nickname);
+      const d = ensureDancer(seed, now, fx, { canEvict: false, engaged: false, seed: true });
+      if (!d) break;
+    }
+  }
+
+  function ensureDancer(user, now, fx, { canEvict, engaged = true, seed = false }) {
     let d = dancers.get(user.id);
     if (!d) {
-      let slot = freeSlot();
+      let slot = seed ? -1 : takeSeedSpot(fx);
+      if (slot < 0) slot = freeSlot();
       if (slot < 0 && canEvict) slot = evictIdlest(now, fx, canEvict === 'lurkers');
       if (slot < 0) return null;
-      d = { id: user.id, slot, look: 0, engaged: false, // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look joinedAt: now, hypeUntil: 0, waveUntil: 0,
+      d = { id: user.id, slot, look: 0, engaged: false, seed, // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look joinedAt: now, hypeUntil: 0, waveUntil: 0,
         jumpUntil: 0, walkUntil: 0, size: 1, likes: 0, wingsUntil: 0, fanUntil: 0,
         face: '', faceUntil: 0, auraUntil: 0, level: 0, levelUntil: 0, giantUntil: 0 };
       dancers.set(user.id, d);
@@ -283,6 +317,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       const fx = [];
       const keep = protectedIds(now);
       for (const d of dancers.values()) {
+        if (d.seed) continue; // người ảo chỉ rời khi có người thật thay (syncSeeds)
         const limit = d.engaged ? ENGAGED_LEAVE_MS : WATCHER_LEAVE_MS;
         if (now - d.lastActive > limit && !keep.has(d.id)) {
           dancers.delete(d.id);
@@ -291,12 +326,18 @@ export function createDanceHallGame({ random = Math.random } = {}) {
         }
         if (d.level && now > d.levelUntil) d.level = 0;
       }
+      syncSeeds(now, fx);
+      seedCrowd.act(seedsOnFloor(), now, { hype: HYPE_MS, jump: JUMP_MS, walk: WALK_MS, wave: WAVE_MS, face: FACE_MS });
       advanceSolo(now, fx);
       return fx;
     },
     command(name, now = Date.now()) {
       const fx = [];
       if (name === 'drop') startDrop(now, fx);
+      else if (name === 'seeds') {
+        seedCrowd.toggle();
+        syncSeeds(now, fx);
+      }
       else if (name === 'clear') {
         for (const id of dancers.keys()) fx.push({ kind: 'leave', userId: id });
         dancers.clear();

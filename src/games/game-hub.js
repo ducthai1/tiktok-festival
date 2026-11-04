@@ -3,6 +3,7 @@
 import { createBarClubGame } from './bar-club-game.js';
 import { createBossRaidGame } from './boss-raid-game.js';
 import { createDanceHallGame } from './dance-hall-game.js';
+import { SEED_TARGET } from './dance-seed-crowd.js';
 import { createSessionLeaderboard } from './session-leaderboard.js';
 import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
@@ -13,7 +14,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
-    ['dance', createDanceHallGame({ random })],
+    ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
     ['swim', createSwimPushGame()]
   ]);
   const board = createSessionLeaderboard();

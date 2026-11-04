@@ -192,3 +192,40 @@ test('a first follow gets the full package: big card, a stage solo, neon fan win
     assert.ok(game.handleEvent({ type: 'share', user: user(8) }, 40000 + i).some((f) => f.kind === 'camera' && f.userId === 'u8'));
   }
 });
+
+test('an empty floor gets a few made-up dancers, and real viewers take their spots one by one', () => {
+  const game = createDanceHallGame({ seedCount: 10 });
+  game.tick(0);
+  const seeds = () => game.snapshot(0).dancers.filter((d) => d.id.startsWith('seed:'));
+  assert.equal(seeds().length, 10);
+  assert.equal(new Set(seeds().map((d) => d.nickname)).size, 10);
+  const best = seeds().sort((a, b) => DANCE_FILL_ORDER.indexOf(a.slot) - DANCE_FILL_ORDER.indexOf(b.slot))[0].slot;
+  // người thật vào: thay đúng chỗ đẹp nhất của một người ảo
+  const fx = game.handleEvent({ type: 'member', user: user(1) }, 100);
+  assert.equal(fx.filter((f) => f.kind === 'leave' && f.userId.startsWith('seed:')).length, 1);
+  assert.equal(dancer(game, 'u1').slot, best);
+  assert.equal(seeds().length, 9);
+  for (let i = 2; i <= 12; i += 1) game.handleEvent(chat(i, 'hello'), 200 + i);
+  game.tick(1000);
+  assert.equal(seeds().length, 0);
+  // người ảo không tự rời sau 5 phút im lặng; người thật rời hết thì người ảo quay lại
+  const quiet = createDanceHallGame({ seedCount: 4 });
+  quiet.tick(0);
+  quiet.tick(30 * 60000);
+  assert.equal(quiet.snapshot(30 * 60000).dancers.length, 4);
+  game.command('clear', 2000);
+  game.tick(2100);
+  assert.equal(seeds().length, 10);
+  // người ảo không vào Top, không solo; tắt được từ trang điều khiển
+  assert.ok(seeds().every((d) => d.rank === 0));
+  game.command('seeds', 3000);
+  assert.equal(seeds().length, 0);
+  game.tick(3100);
+  assert.equal(seeds().length, 0);
+});
+
+test('without a seed count the floor starts empty', () => {
+  const game = createDanceHallGame();
+  game.tick(0);
+  assert.equal(game.snapshot(0).dancers.length, 0);
+});

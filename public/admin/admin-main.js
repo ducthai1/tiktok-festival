@@ -9,7 +9,7 @@ const GAME_ICONS = { boss: '⚔️', temple: '🪷', bar: '🍸', dance: '🪩',
 const GAME_COMMANDS = {
   boss: [['frenzy', '⚡ Cuồng nộ ngay'], ['killBoss', '💥 Kết liễu Boss'], ['resetBoss', '↺ Reset Boss Cấp 1']],
   bar: [['party', '🎉 Mở tiệc ngay'], ['clear', '🚪 Mời hết khách ra']],
-  dance: [['drop', '💥 DROP ngay'], ['clear', '🚪 Mời hết ra']],
+  dance: [['drop', '💥 DROP ngay'], ['clear', '🚪 Mời hết ra'], ['seeds', '🎭 Bật/tắt người nhảy ảo']],
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
   temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']]
 };
