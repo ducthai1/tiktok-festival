@@ -1,7 +1,7 @@
 // Hội trường sàn nhảy: sàn LED đổi màu theo phách, sân khấu + bục Top 1-2-3, màn LED lớn chạy chữ và cột sóng nhạc,
 // giàn đèn moving-head quét chùm sáng, laser khi DROP, quả cầu disco. Mọi thứ dựng bằng code, không tải file ngoài.
 import * as THREE from '/vendor/three/three.module.js';
-import { DANCE_SLOTS, PODIUM, slotPosition, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
+import { DANCE_SLOTS, DJ_SPOT, PODIUM, SLOT_DX, SLOT_DZ, slotPosition, STAGE_FRONT_Z, STAGE_TOP_Y } from '/static/shared/dance-floor-layout.js';
 
 const NEON = ['#ff4fa3', '#36d6ff', '#ffd21f', '#7dff8a', '#b07cff', '#ff7a2f'];
 const BEAM_X = [-5, -3, -1, 1, 3, 5];
@@ -64,7 +64,7 @@ export function buildDanceHall(scene) {
   group.add(floor);
 
   // sàn LED: một ô sáng dưới mỗi chỗ đứng
-  const tiles = new THREE.InstancedMesh(new THREE.BoxGeometry(0.74, 0.04, 0.78), new THREE.MeshBasicMaterial({ color: '#fff' }), DANCE_SLOTS);
+  const tiles = new THREE.InstancedMesh(new THREE.BoxGeometry(SLOT_DX - 0.06, 0.04, SLOT_DZ - 0.06), new THREE.MeshBasicMaterial({ color: '#fff' }), DANCE_SLOTS);
   const m = new THREE.Matrix4();
   for (let i = 0; i < DANCE_SLOTS; i += 1) {
     const p = slotPosition(i);
@@ -122,6 +122,25 @@ export function buildDanceHall(scene) {
     lasers.push(beam);
   }
 
+  // giàn đèn tròn treo trên sân khấu (như các phòng "đi bar online") + bóng đèn nhấp nháy quanh vòng
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(3.6, 0.12, 8, 64), new THREE.MeshStandardMaterial({ color: '#3a3a48', metalness: 0.9, roughness: 0.3 }));
+  ring.rotation.x = Math.PI / 2;
+  ring.position.set(0, 7.4, STAGE_FRONT_Z - 1.6);
+  group.add(ring);
+  const bulbs = new THREE.InstancedMesh(new THREE.SphereGeometry(0.11, 8, 6), new THREE.MeshBasicMaterial({ color: '#fff' }), 24);
+  for (let i = 0; i < 24; i += 1) {
+    const a = (i / 24) * Math.PI * 2;
+    bulbs.setMatrixAt(i, m.makeTranslation(Math.cos(a) * 3.6, 7.25, STAGE_FRONT_Z - 1.6 + Math.sin(a) * 3.6));
+    bulbs.setColorAt(i, new THREE.Color('#fff'));
+  }
+  group.add(bulbs);
+  // bàn DJ (DJ sticker đứng sau bàn)
+  const booth = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.85, 0.8), new THREE.MeshStandardMaterial({ color: '#1b1b26', metalness: 0.5, roughness: 0.4, emissive: '#2a0f40' }));
+  booth.position.set(DJ_SPOT.x, STAGE_TOP_Y + 0.42, DJ_SPOT.z + 0.75);
+  const boothStrip = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.06, 0.02), new THREE.MeshBasicMaterial({ color: '#36d6ff' }));
+  boothStrip.position.set(DJ_SPOT.x, STAGE_TOP_Y + 0.6, DJ_SPOT.z + 1.16);
+  group.add(booth, boothStrip);
+
   const ball = new THREE.Mesh(new THREE.IcosahedronGeometry(0.62, 2), new THREE.MeshStandardMaterial({ color: '#ddd', metalness: 1, roughness: 0.15, flatShading: true, emissive: '#333' }));
   ball.position.set(0, 7.3, 1.5);
   group.add(ball);
@@ -177,6 +196,9 @@ export function buildDanceHall(scene) {
         beam.rotation.x = -0.05 - Math.abs(Math.sin(t * 0.9 + i * 0.5)) * 0.18;
       });
       ball.rotation.y = t * 0.6;
+      for (let i = 0; i < 24; i += 1) bulbs.setColorAt(i, color.setHSL(((i + Math.floor(beat * 2)) % 6) / 6, 1, (i + Math.floor(beat * 2)) % 3 ? 0.35 : 0.7));
+      bulbs.instanceColor.needsUpdate = true;
+      boothStrip.material.color.setHSL((beat * 0.05) % 1, 1, 0.5 + 0.2 * hit);
       washes.forEach((light, i) => {
         light.intensity = (14 + 26 * hit) * (state.drop ? 1.6 : 1) * (1 - state.dim * 0.75);
         light.color.set(NEON[(i * 2 + bar) % NEON.length]);

@@ -33,9 +33,9 @@ export function createCameraDirector(camera) {
     const camFront = front + 9;
     let fov = 50;
     switch (shot) {
-      case 0: // toàn cảnh: thấy hết đám đông + sân khấu + màn LED
-        wantPos.lerpVectors(target.set(0, 11.5, camFront + 3.5), wantPos.set(0, 10.4, camFront + 2.4), t);
-        wantLook.set(0, 0.6, middle - 1.6);
+      case 0: // toàn cảnh từ trên cao: thấy kín sàn cả trăm người + sân khấu + màn LED
+        wantPos.lerpVectors(target.set(0, 14.5, camFront + 4.5), wantPos.set(0, 13, camFront + 3.2), t);
+        wantLook.set(0, 0.2, middle - 1.2);
         fov = THREE.MathUtils.lerp(56, 52, t);
         break;
       case 1: // lia ngang hàng đầu

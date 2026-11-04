@@ -3,6 +3,11 @@
 // weight = độ hay gặp; người xem cố định một nhân vật, gõ "đổi đồ" thì đổi sang nhân vật khác.
 import { hashText } from './dance-sprite-material.js';
 
+const MEME_KEYS = ['hanhan_video_dance', ...[1, 2, 3, 5, 6, 8, 9, 12, 13, 14, 15, 16, 17, 18, 19, 42, 46, 48, 50, 53, 55, 57, 58, 59, 60, 61, 62, 65, 67, 68]
+  .map((n) => `mushroom_dance_${String(n).padStart(2, '0')}`), ...[2, 5, 6, 7, 8, 9, 10, 14, 16, 18, 19, 20, 21].map((n) => `mushroom_magic_${String(n).padStart(2, '0')}`)]
+  .map((k) => `meme-${k}`);
+export const DJ_CHARACTER = { id: 'dj', name: 'DJ', weight: 0, crowd: 'nv03-dj-scratch', xung: 'nv03-dj-scratch' };
+
 const trio = (crowd, base) => ({ crowd, xung: `${base}-xung-dai`, spot: `${base}-spotlight-dai` });
 
 export const ROSTER = [
@@ -22,9 +27,9 @@ export const ROSTER = [
   { id: 'nv13', name: 'Đại Ca', weight: 8, ...trio('nv13-dai-ca-ba-dao', 'nv13-dai-ca') },
   { id: 'nv14', name: 'Siêu Hài', weight: 10, ...trio('nv14-sieu-hai-nhay-ga', 'nv14-sieu-hai') },
   { id: 'nv15', name: 'Nữ Vương', weight: 8, ...trio('nv15-nu-vuong-quat-lanh', 'nv15-nu-vuong') },
-  // sticker meme "đầu nấm" (bỏ 1 con có chữ tục)
-  ...['a', 'b', 'c', 'e', 'g', 'h', 'hanhan_video_dance', 'j', 'k', 'mushroom_dance_01', 'mushroom_dance_15', 'mushroom_magic_02']
-    .map((k) => ({ id: `meme-${k}`, name: 'Meme', weight: 3, crowd: `cherry-${k}` }))
+  // sticker meme "đầu nấm", mèo, gấu… (bựa bựa, chiếm phần lớn sàn như trend "đi bar online")
+  ...['a', 'b', 'c', 'e', 'g', 'h', 'j', 'k'].map((k) => ({ id: `meme-c-${k}`, name: 'Meme', weight: 5, crowd: `cherry-${k}` })),
+  ...MEME_KEYS.map((k) => ({ id: k, name: 'Meme', weight: 5, crowd: k }))
 ];
 
 const TOTAL = ROSTER.reduce((sum, c) => sum + c.weight, 0);

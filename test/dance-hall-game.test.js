@@ -49,6 +49,24 @@ test('free comments: "quẩy" dances hard, "chào" waves, "đổi đồ" changes
   assert.equal(faceForComment('ok'), '');
 });
 
+test('"nhảy" jumps once, "đi vòng" walks a loop, "to lên"/"nhỏ lại" resize within limits, 1k hearts puts you on camera', () => {
+  const game = createDanceHallGame({ random: () => 0.5 });
+  game.handleEvent(chat(1, 'nhảy 1 cái'), 0);
+  assert.equal(dancer(game, 'u1').move, 'jump');
+  assert.equal(dancer(game, 'u1', 2000).move, '');
+  game.handleEvent(chat(2, 'đi vòng'), 0);
+  assert.equal(dancer(game, 'u2', 5000).move, 'walk');
+  for (let i = 0; i < 6; i += 1) game.handleEvent(chat(3, 'to lên'), i * 4000);
+  assert.equal(dancer(game, 'u3', 30000).size, 1.6);
+  for (let i = 0; i < 9; i += 1) game.handleEvent(chat(3, 'nhỏ lại'), 40000 + i * 4000);
+  assert.equal(dancer(game, 'u3', 90000).size, 0.6);
+  let fx = [];
+  for (let i = 0; i < 40; i += 1) fx = fx.concat(game.handleEvent({ type: 'like', user: user(4), likeCount: 30 }, i * 100));
+  assert.equal(fx.filter((f) => f.kind === 'camera').length, 1);
+  game.handleEvent(gift(5, 1), 0);
+  assert.equal(dancer(game, 'u5').wings, true);
+});
+
 test('likes fill the hype meter and a full meter drops the beat for everyone', () => {
   const game = createDanceHallGame();
   let fx = [];

@@ -4,3 +4,6 @@ Nhân vật sticker của Sàn Nhảy (đã giải mã + ghép lại thành ản
 - cherry-*: lấy từ repo cherry9001/tiktok-live-bar (UnityProject/Assets/Resources/Characters, MIT cho phần code;
   ảnh gốc là sticker meme sưu tầm, xem TikTokBridge/assets/gifs/sources.json của repo đó). Đã bỏ 1 sticker có chữ tục.
 Camera đạo diễn (dance-camera-director.js) chuyển thể từ ClubCameraController.cs của cherry9001/tiktok-live-bar (MIT).
+- meme-*: 44 GIF sticker meme (đầu nấm, mèo, gấu…) theo danh sách TikTokBridge/assets/gifs/sources.json của cherry9001/tiktok-live-bar
+  (tải từ repo đó hoặc ảnh gốc Weibo, đã đối chiếu SHA-256 trong sources.json). Nền đặc ở mép được tách thành trong suốt.
+  Bỏ meme-mushroom_dance_63 (chữ in kiểu thương hiệu game). Bản cherry-* trùng với meme-* đã gỡ.

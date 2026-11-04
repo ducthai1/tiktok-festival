@@ -1,11 +1,11 @@
 // Bố cục SÀN NHẢY dùng chung cho server (số chỗ) và màn hình (vị trí 3D, mét).
 // Camera nhìn về phía -z; hàng 0 là hàng sát camera. Hàng lẻ lệch nửa ô cho đám đông trông tự nhiên.
-export const DANCE_COLS = 10; // khung dọc 9:16 hẹp ngang nên đám đông xếp sâu hơn rộng
-export const DANCE_ROWS = 12;
-export const DANCE_SLOTS = DANCE_COLS * DANCE_ROWS; // 120 người cùng nhảy
-export const SLOT_DX = 0.8;
-export const SLOT_DZ = 0.84;
-export const FRONT_Z = 3.4;
+export const DANCE_COLS = 16; // sàn to kiểu "đi bar online": cả trăm sticker nhỏ đứng kín sàn
+export const DANCE_ROWS = 18;
+export const DANCE_SLOTS = DANCE_COLS * DANCE_ROWS; // 288 người cùng nhảy
+export const SLOT_DX = 0.62;
+export const SLOT_DZ = 0.6;
+export const FRONT_Z = 4.4;
 
 /** Tâm ô `slot` trên sàn (x, z). */
 export function slotPosition(slot) {
@@ -31,4 +31,5 @@ export const PODIUM = [
   { x: -2.4, y: 1.5, z: -8.9, scale: 1.4 },
   { x: 2.4, y: 1.3, z: -8.9, scale: 1.3 }
 ];
-export const GIANT_SPOTS = [{ x: -4.2, z: -8.2 }, { x: 4.2, z: -8.2 }];
+export const GIANT_SPOTS = [{ x: -5.6, z: -7.6 }, { x: 5.6, z: -7.6 }];
+export const DJ_SPOT = { x: 4.3, y: STAGE_TOP_Y, z: -10.2 };

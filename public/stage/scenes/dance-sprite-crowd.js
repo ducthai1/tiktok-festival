@@ -2,12 +2,16 @@
 // Trạng thái hình: crowd (nhảy tại ô) · xung (bản nhảy bung — khi camera cận / Top 3 / khổng lồ) · spot (solo).
 // Người mới rơi từ trên xuống đúng ô; người đi bay vút lên; đổi chỗ xa thì nhảy vòng cung qua đầu đám đông.
 import * as THREE from '/vendor/three/three.module.js';
-import { GIANT_SPOTS, PODIUM, SOLO_SPOT, slotPosition } from '/static/shared/dance-floor-layout.js';
-import { characterFor, ROSTER, sheetFor } from './dance-roster.js';
+import { DJ_SPOT, FRONT_Z, GIANT_SPOTS, PODIUM, SLOT_DZ, DANCE_ROWS, SOLO_SPOT, slotPosition } from '/static/shared/dance-floor-layout.js';
+import { characterFor, DJ_CHARACTER, ROSTER, sheetFor } from './dance-roster.js';
+import { createWingsMesh } from './dance-wings.js';
 import { createSheetMaterial, hashText, spriteGeometry } from './dance-sprite-material.js';
 
 const BASE = '/static/assets/dance/';
-const HEIGHT_M = 1.3; // cao của một người ở cỡ 1 (mét)
+const HEIGHT_M = 1.05; // cao của một người ở cỡ 1 (mét) — sticker nhỏ, đứng kín sàn
+const FLOOR_MID_Z = FRONT_Z - ((DANCE_ROWS - 1) * SLOT_DZ) / 2;
+const WALK_S = 9; // "đi vòng": một vòng elip quanh sàn trong 9 giây
+const JUMP_S = 1.3;
 const RANK_COLORS = ['#ffd21f', '#e5e7eb', '#f59e0b'];
 const HIDDEN = new THREE.Matrix4().makeScale(0, 0, 0);
 const NO_TURN = new THREE.Quaternion();
@@ -42,7 +46,8 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
     return t;
   }
   // ảnh nhảy tại chỗ của mọi nhân vật tải sẵn; bản xung/spot tải khi cần lần đầu
-  for (const c of ROSTER) if (sheets[c.crowd]) texture(c.crowd);
+  for (const c of [...ROSTER, DJ_CHARACTER]) if (sheets[c.crowd]) texture(c.crowd);
+  const wings = createWingsMesh(scene, capacity);
 
   function meshFor(key) {
     let mesh = meshes.get(key);
@@ -70,13 +75,19 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   aura.setColorAt(0, color.set('#fff'));
   scene.add(aura);
 
-  function placeFor(info, ctx) {
-    if (info.id === ctx.soloId) return { ...SOLO_SPOT, scale: 1.7, vis: 'spot' };
+  function placeFor(info, ctx, e) {
+    if (info.dj) return { ...DJ_SPOT, scale: 1.8, vis: 'xung' };
+    if (info.id === ctx.soloId) return { ...SOLO_SPOT, scale: 2.1, vis: 'spot' };
     const giant = ctx.giants.indexOf(info.id);
     if (giant >= 0) return { x: GIANT_SPOTS[giant].x, y: 0, z: GIANT_SPOTS[giant].z, scale: 3, vis: 'xung' };
     if (info.rank >= 1 && info.rank <= 3) return { ...PODIUM[info.rank - 1], scale: PODIUM[info.rank - 1].scale * 1.15, vis: 'xung' };
     const p = slotPosition(info.slot);
-    return { x: p.x, y: (info.level || 0) * 0.4, z: p.z, scale: info.aura ? 1.12 : 1, vis: info.id === ctx.closeId ? 'xung' : 'crowd' };
+    const scale = (info.aura ? 1.12 : 1) * (info.size || 1);
+    if (e?.walkStart !== undefined) { // đi một vòng elip quanh sàn, bắt đầu từ phía ô của mình
+      const a = Math.atan2(p.z - FLOOR_MID_Z, p.x) + ((ctx.now - e.walkStart) / WALK_S) * Math.PI * 2;
+      return { x: Math.cos(a) * 4.6, y: 0, z: FLOOR_MID_Z + Math.sin(a) * 5.2, scale, vis: 'crowd' };
+    }
+    return { x: p.x, y: (info.level || 0) * 0.4, z: p.z, scale, vis: info.id === ctx.closeId ? 'xung' : 'crowd' };
   }
 
   function flyTo(e, to, duration, height) {
@@ -96,13 +107,22 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
           const index = freeIndices.pop();
           highWater = Math.max(highWater, index + 1);
           const target = placeFor(info, ctx);
+          if (info.dj) {
+            e = { id: info.id, index, info, pos: new THREE.Vector3(target.x, target.y, target.z), scale: target.scale, anchor: new THREE.Object3D(), phase: 0, leaving: false };
+            entities.set(info.id, e);
+            e.character = DJ_CHARACTER;
+            continue;
+          }
           e = { id: info.id, index, info, pos: new THREE.Vector3(target.x, target.y + 7, target.z), scale: target.scale,
             anchor: new THREE.Object3D(), phase: hashText(info.id) % 4, leaving: false };
           entities.set(info.id, e);
           flyTo(e, tmp.set(target.x, target.y, target.z), 0.9, 0.2); // rơi từ trên xuống ô của mình
         }
+        if (info.move === 'walk' && e.info.move !== 'walk') e.walkStart = ctx.now;
+        if (info.move !== 'walk') delete e.walkStart;
+        if (info.move === 'jump' && e.info.move !== 'jump') e.jumpStart = ctx.now;
         e.info = info;
-        e.character = characterFor(info.id, info.look);
+        e.character = info.dj ? DJ_CHARACTER : characterFor(info.id, info.look);
       }
       for (const e of entities.values()) {
         if (!seen.has(e.id) && !e.leaving) {
@@ -114,7 +134,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
     frame(dt, beat, ctx) {
       const groups = new Map();
       for (const e of [...entities.values()]) {
-        const target = placeFor(e.info, ctx);
+        const target = placeFor(e.info, ctx, e);
         tmp.set(target.x, target.y, target.z);
         if (e.flight) {
           const f = e.flight;
@@ -141,7 +161,10 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         if (!sheets[key] || !texture(key).ready) key = e.character.crowd;
         if (!groups.has(key)) groups.set(key, []);
         const hero = target.vis !== 'crowd';
-        const hop = e.info.move === 'hype' && !e.flight ? Math.abs(Math.sin(beat * Math.PI)) * 0.3 * e.scale : 0;
+        const jt = e.jumpStart !== undefined ? (ctx.now - e.jumpStart) / JUMP_S : 1;
+        const hop = e.flight ? 0 : jt < 1 ? Math.sin(Math.PI * jt) * 0.9 * e.scale // "nhảy 1 cái"
+          : e.info.move === 'hype' ? Math.abs(Math.sin(beat * Math.PI)) * 0.3 * e.scale
+            : e.info.move === 'walk' ? Math.abs(Math.sin(beat * Math.PI * 2)) * 0.08 : 0;
         groups.get(key).push({ e, hero, hop });
         e.anchor.position.set(e.pos.x, e.pos.y + hop + HEIGHT_M * e.scale * 1.02, e.pos.z);
         e.anchor.updateMatrixWorld();
@@ -153,6 +176,23 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
           aura.setColorAt(e.index, color.set(ring));
         } else aura.setMatrixAt(e.index, HIDDEN);
       }
+      // cánh xanh: sau lưng, ngang vai, lùi xa camera một chút
+      let w = 0;
+      const wingPhase = wings.geometry.getAttribute('aPhase');
+      for (const list of groups.values()) {
+        for (const { e, hop } of list) {
+          if (!e.info.wings || e.flight || w >= capacity) continue;
+          const h = HEIGHT_M * e.scale;
+          tmp.set(e.pos.x, e.pos.y + hop + h * 0.62, e.pos.z).addScaledVector(scaleV.subVectors(tmp, ctx.camPos).setY(0).normalize(), 0.12);
+          wings.setMatrixAt(w, matrix.compose(tmp, NO_TURN, scaleV.setScalar(h * 1.5)));
+          wingPhase.setX(w, e.phase * 0.25);
+          w += 1;
+        }
+      }
+      wings.count = w;
+      wings.instanceMatrix.needsUpdate = true;
+      wingPhase.needsUpdate = true;
+      wings.material.uniforms.beat.value = beat;
       for (const [key, mesh] of meshes) if (!groups.has(key)) mesh.count = 0;
       for (const [key, list] of groups) {
         const mesh = meshFor(key);
@@ -178,12 +218,12 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
     },
     bounds() {
       const box = new THREE.Box3();
-      for (const e of entities.values()) if (!e.leaving && !e.info.rank && !e.flight) box.expandByPoint(e.pos);
+      for (const e of entities.values()) if (!e.leaving && !e.info.rank && !e.info.dj && !e.flight) box.expandByPoint(e.pos);
       if (box.isEmpty()) box.set(new THREE.Vector3(-2.5, 0, -1), new THREE.Vector3(2.5, 0, 3.4));
       return box;
     },
     dispose() {
-      for (const mesh of [...meshes.values(), aura]) {
+      for (const mesh of [...meshes.values(), aura, wings]) {
         scene.remove(mesh);
         mesh.geometry.dispose();
         mesh.material.dispose();

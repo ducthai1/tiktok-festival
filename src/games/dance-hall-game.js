@@ -1,6 +1,7 @@
 // SÀN NHẢY — hội trường quẩy: ai bình luận / thả tim / tặng quà là có một nhân vật chibi trên sàn (tối đa DANCE_SLOTS).
-// Miễn phí: "quẩy" nhảy bung, "chào" vẫy tay, "đổi đồ" đổi trang phục, emoji/chữ cảm xúc đổi nét mặt,
-// tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà: hào quang → bay lên → SOLO giữa sân khấu
+// Miễn phí: "quẩy" nhảy bung, "nhảy" nhảy 1 cái, "đi vòng" đi một vòng sàn, "to lên"/"nhỏ lại" đổi cỡ, "chào" vẫy tay,
+// "đổi nv" đổi nhân vật, emoji đổi biểu cảm; mỗi 1.000 tim của một người = được lên camera;
+// tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → SOLO giữa sân khấu
 // (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { giftTier } from '../../public/shared/gift-tiers.js';
@@ -17,7 +18,15 @@ const SOLO_QUEUE_MAX = 8;
 const LEVEL_MS = 90 * 1000;
 const GIANT_MS = 2 * 60 * 1000;
 
-const HYPE_WORDS = ['quay', 'quay len', 'quay di', 'nhay', 'nhay di', 'dance', 'bung', 'phe', 'chay', 'len', 'nhun'];
+const HYPE_WORDS = ['quay', 'quay len', 'quay di', 'dance', 'bung', 'phe', 'chay', 'nhun'];
+const JUMP_WORDS = ['nhay', 'nhay di', 'nhay 1 cai', 'nhay mot cai', 'jump'];
+const WALK_WORDS = ['di vong', 'di 1 vong', 'di mot vong', 'dao', 'di dao'];
+const GROW_WORDS = ['to len', 'to ra', 'lon len'];
+const SHRINK_WORDS = ['nho lai', 'nho di', 'be lai'];
+const JUMP_MS = 1300;
+const WALK_MS = 9000;
+const WINGS_MS = 10 * 60 * 1000;
+export const LIKES_FOR_CAMERA = 1000;
 const WAVE_WORDS = ['chao', 'hello', 'hi', 'xin chao', 'chao ca nha', 'alo'];
 const LOOK_WORDS = ['doi do', 'doi nv', 'doi nhan vat', 'thay do', 'doi skin', 'doi mau', 'doi style'];
 // Cảm xúc: emoji so trên chữ gốc, chữ so sau khi bỏ dấu (theo từ nguyên vẹn).
@@ -94,6 +103,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       if (slot < 0 && canEvict) slot = evictIdlest(now, fx, canEvict === 'lurkers');
       if (slot < 0) return null;
       d = { id: user.id, slot, look: Math.floor(random() * 1000), engaged: false, joinedAt: now, hypeUntil: 0, waveUntil: 0,
+        jumpUntil: 0, walkUntil: 0, size: 1, likes: 0, wingsUntil: 0,
         face: '', faceUntil: 0, auraUntil: 0, level: 0, levelUntil: 0, giantUntil: 0 };
       dancers.set(user.id, d);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
@@ -158,6 +168,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       count: gift.count, diamonds: gift.diamonds, tier });
     if (!d) return;
     d.auraUntil = Math.max(d.auraUntil, now) + Math.min(120000, 20000 * tier);
+    d.wingsUntil = Math.max(d.wingsUntil, now) + WINGS_MS; // huy hiệu + cánh
     d.hypeUntil = now + HYPE_MS;
     d.face = tier >= 3 ? 'star' : 'party';
     d.faceUntil = now + FACE_MS;
@@ -169,7 +180,7 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       d.giantUntil = now + GIANT_MS;
       fx.push({ kind: 'fountains', userId: d.id });
     }
-    if (tier >= 5) fx.push({ kind: 'fireworks', power: tier >= 6 ? 6 : 3 });
+    if (tier >= 3) fx.push({ kind: 'fireworks', power: [1, 2, 3, 6][tier - 3] });
     if (tier >= 2) enqueueSolo(d.id, tier, SOLO_MS_BY_TIER[tier - 1] * (1 + Math.min(gift.count - 1, 4) * 0.15), now);
     if (tier >= 5) startDrop(now, fx);
     else addHype(gift.diamonds * 10, now, fx);
@@ -179,13 +190,19 @@ export function createDanceHallGame({ random = Math.random } = {}) {
     const d = ensureDancer(event.user, now, fx, { canEvict: true });
     if (!d) return;
     const text = event.comment;
-    const command = containsPhrase(text, LOOK_WORDS) ? 'look' : containsPhrase(text, HYPE_WORDS) ? 'hype'
-      : containsPhrase(text, WAVE_WORDS) ? 'wave' : '';
+    const command = containsPhrase(text, LOOK_WORDS) ? 'look' : containsPhrase(text, WALK_WORDS) ? 'walk'
+      : containsPhrase(text, GROW_WORDS) ? 'grow' : containsPhrase(text, SHRINK_WORDS) ? 'shrink'
+        : containsPhrase(text, JUMP_WORDS) ? 'jump' : containsPhrase(text, HYPE_WORDS) ? 'hype'
+          : containsPhrase(text, WAVE_WORDS) ? 'wave' : '';
     if (command && commandCooldown(d.id, now)) {
       if (command === 'look') {
         d.look += 1 + Math.floor(random() * 7);
         fx.push({ kind: 'look', userId: d.id });
       } else if (command === 'hype') d.hypeUntil = now + HYPE_MS;
+      else if (command === 'jump') d.jumpUntil = now + JUMP_MS;
+      else if (command === 'walk') d.walkUntil = now + WALK_MS;
+      else if (command === 'grow') d.size = Math.min(1.6, Math.round((d.size + 0.2) * 10) / 10);
+      else if (command === 'shrink') d.size = Math.max(0.6, Math.round((d.size - 0.2) * 10) / 10);
       else d.waveUntil = now + WAVE_MS;
     }
     const face = faceForComment(text);
@@ -208,6 +225,11 @@ export function createDanceHallGame({ random = Math.random } = {}) {
       else if (event.type === 'like') {
         const d = ensureDancer(event.user, now, fx, { canEvict: 'lurkers' });
         if (d && heartsCooldown(d.id, now)) fx.push({ kind: 'hearts', userId: d.id, count: Math.min(event.likeCount, 15) });
+        if (d) {
+          const before = Math.floor(d.likes / LIKES_FOR_CAMERA);
+          d.likes += event.likeCount;
+          if (Math.floor(d.likes / LIKES_FOR_CAMERA) > before) fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, likes: d.likes });
+        }
         addHype(Math.min(event.likeCount, 30), now, fx);
       } else if (event.type === 'follow' || event.type === 'share') {
         const d = ensureDancer(event.user, now, fx, { canEvict: true });
@@ -258,7 +280,8 @@ export function createDanceHallGame({ random = Math.random } = {}) {
         dancers: [...dancers.values()].sort((a, b) => a.slot - b.slot).map((d) => ({
           id: d.id, nickname: d.nickname, avatar: d.avatar, slot: d.slot, look: d.look, rank: rank.get(d.id) || 0,
           level: d.level, aura: now < d.auraUntil, giant: now < d.giantUntil,
-          move: dropping || now < d.hypeUntil ? 'hype' : now < d.waveUntil ? 'wave' : '',
+          move: now < d.walkUntil ? 'walk' : now < d.jumpUntil ? 'jump' : dropping || now < d.hypeUntil ? 'hype' : now < d.waveUntil ? 'wave' : '',
+          size: d.size, wings: now < d.wingsUntil,
           face: now < d.faceUntil ? d.face : ''
         }))
       };

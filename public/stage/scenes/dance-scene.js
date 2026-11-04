@@ -14,9 +14,10 @@ import { disposeObject } from './person-model.js';
 const MEDALS = ['🥇', '🥈', '🥉'];
 const TIER_TITLES = { 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
+const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đứng bàn mix trên sân khấu (không phải người xem)
 const FACE_EMOJI = { happy: '😊', grin: '😁', wink: '😉', cool: '😎', love: '😍', laugh: '😂', surprise: '😮', tongue: '😜',
   sing: '🎤', cry: '😭', angry: '😡', sleepy: '😴', star: '🤩', shy: '☺️', party: '🥳', kiss: '😘' };
-const MAX_LABELS = 14;
+const MAX_LABELS = 18;
 const GLANCE_GAP_S = 6;
 
 // sheets: mô tả ảnh ghép nhân vật (public/assets/dance/sheets.json), tải trước khi dựng cảnh
@@ -37,7 +38,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   pipeline.setBloom({ strength: 0.55, radius: 0.5, threshold: 0.9 }); // ngưỡng cao: viền trắng của sticker không bị loá
 
   hud.setTitle('🪩 SÀN NHẢY LIVE');
-  hud.setHint(['*MIỄN PHÍ*', ' — bình luận ↓']);
+  hud.setHint(['Chat ', '*1*', ' để vào sàn · ', '*1k tim*', ' có cảnh']);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
   let lastBeat = 0;
@@ -99,7 +100,9 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       closeId: director.focusMode(clock) === 'glance' ? closeId : '',
       dim,
       giants: state.dancers.filter((d) => d.giant && d.id !== solo?.id).slice(-2).map((d) => d.id),
-      cheering: Boolean(solo && clock - solo.startedAt < 3)
+      cheering: Boolean(solo && clock - solo.startedAt < 3),
+      now: clock,
+      camPos: camera.position
     };
   }
 
@@ -107,13 +110,13 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     scene,
     camera,
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n} đến sàn nhảy!` },
-    legend: [['bình luận', ' Vào sàn nhảy'], ['quẩy · nhảy', ' Nhảy bung'], ['chào', ' Vẫy tay'], ['đổi đồ', ' Đổi trang phục'],
-      ['😂 😎 😍', ' Đổi nét mặt'], ['❤ thả tim', ' Đầy thanh → DROP'], ['🎁 Quà', ' theo số kc ↓']],
-    giftLabels: { 1: 'Hào quang', 2: 'Bay lên + solo', 3: 'Solo sân khấu', 4: 'Khổng lồ VIP', 5: 'Pháo hoa + DROP', 6: 'Đại nhạc hội' },
+    legend: [['1', ' Vào sàn'], ['đổi nv', ' Đổi nhân vật'], ['đi vòng', ' Đi 1 vòng sàn'], ['nhảy', ' Nhảy 1 cái'],
+      ['to lên · nhỏ lại', ' Đổi cỡ'], ['quẩy', ' Quẩy bung'], ['1k ❤', ' Lên camera'], ['🎁 Quà', ' theo số kc ↓']],
+    giftLabels: { 1: 'Cánh xanh + camera', 2: 'Bay lên + solo', 3: 'Solo + pháo hoa', 4: 'Khổng lồ VIP', 5: 'Pháo hoa + DROP', 6: 'Đại nhạc hội' },
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));
-      crowd.sync(state.dancers, ctx());
+      crowd.sync([...state.dancers, DJ_INFO], ctx());
       if (state.solo && state.solo.id !== solo?.id) startSolo(state.solo);
       else if (!state.solo && solo) {
         solo = null;
@@ -151,6 +154,12 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         markRecent(fx.userId);
         labels.bubble(fx.userId, fx.text);
       } else if (fx.kind === 'toast') hud.toast(fx.text);
+      else if (fx.kind === 'camera' && e) {
+        hud.toast(`📸 ${fx.nickname} đủ ${formatNumber(fx.likes)} tim — lên hình!`, { gold: true });
+        markRecent(fx.userId);
+        lastGlance = -Infinity; // 1k tim luôn được lên hình
+        glance(fx.userId, 4);
+      }
       else if (fx.kind === 'look' && e) {
         show.sparkle(e.pos.clone().setY(e.pos.y + 0.8));
         audio.play('magic');
