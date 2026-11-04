@@ -93,7 +93,7 @@ export function createCameraDirector(camera) {
   }
 
   return {
-    /** Theo một người: mode 'solo' (vòng quanh chậm), 'glance' (ghé nhìn), 'reveal' (cận rồi kéo ra toàn cảnh). */
+    /** Theo một người: mode 'solo' (vòng quanh chậm), 'glance' (ghé nhìn), 'arrive' (khu vực người mới rơi xuống), 'reveal' (cận rồi kéo ra toàn cảnh). */
     focus(get, seconds, mode, now) {
       focus = { get, until: now + seconds, startedAt: now, mode };
     },
@@ -131,6 +131,11 @@ export function createCameraDirector(camera) {
           wantPos.set(at.x + Math.sin(orbit) * dist, at.y + 1.8 + Math.sin(elapsed * 0.3) * 0.4, at.z + Math.cos(orbit) * dist);
           wantLook.set(at.x, at.y + 2.0, at.z); // nhìn cao hơn đầu một chút: người solo nằm giữa-dưới, không đụng bảng phía trên
           fov = 40;
+        } else if (focus.mode === 'arrive') {
+          // người mới vào: khung RỘNG cả khu vực ô của họ (không cận), đủ cao để thấy nhân vật rơi từ trên xuống
+          wantPos.set(at.x * 0.7, at.y + 5.2, at.z + 7.4);
+          wantLook.set(at.x, at.y + 1.4, at.z - 0.5);
+          fov = 48;
         } else {
           // ghé nhìn từ trên cao chéo xuống: người ở hàng sau không bị sticker hàng trước che; đứng hơi xa (khung vừa,
           // thấy cả người xung quanh) để quãng camera phải đi ngắn hơn, đỡ chóng mặt
@@ -152,7 +157,7 @@ export function createCameraDirector(camera) {
         fov = directorShot(THREE.MathUtils.clamp((now - shotStart) / (SHOT_BARS[shot] * SEC_PER_BAR), 0, 1), crowd, podium);
       }
       // toàn cảnh + ghé thăm: trượt hai tầng (tăng tốc / hãm từ từ); solo / xe bay / cận rồi kéo ra cần bám nhanh nên 3,6
-      const gentle = !at || focus.mode === 'glance';
+      const gentle = !at || focus.mode === 'glance' || focus.mode === 'arrive';
       const blend = 1 - Math.exp(-(at ? (gentle ? GLANCE_K : 3.6) : GLIDE_K) * dt);
       if (!gentle) {
         camera.position.lerp(wantPos, blend);

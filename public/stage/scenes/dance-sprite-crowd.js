@@ -109,6 +109,20 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
   return {
     get: (id) => entities.get(id),
     list: () => [...entities.values()],
+    /** Chỗ nhân vật sẽ đứng (đang rơi xuống thì là ô sắp đáp). */
+    landingOf(id) {
+      const e = entities.get(id);
+      return e ? (e.flight && !e.leaving ? e.flight.to : e.pos).clone() : null;
+    },
+    /** Người mới vào: treo cao ngoài khung `seconds` giây (chờ camera tới), rồi rơi thẳng xuống ô của mình. */
+    holdDrop(id, seconds) {
+      const f = entities.get(id)?.flight;
+      if (!f || entities.get(id).leaving || f.t > 0) return false;
+      f.from.set(f.to.x, f.to.y + 14, f.to.z);
+      entities.get(id).pos.copy(f.from);
+      Object.assign(f, { delay: seconds, duration: 1.1, height: 0 });
+      return true;
+    },
     sync(dancers, ctx) {
       const seen = new Set();
       for (const info of dancers) {
@@ -160,7 +174,8 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
         tmp.set(target.x, target.y, target.z);
         if (e.flight) {
           const f = e.flight;
-          f.t = Math.min(1, f.t + dt / f.duration);
+          if (f.delay > 0) f.delay -= dt; // đang treo chờ camera
+          else f.t = Math.min(1, f.t + dt / f.duration);
           e.pos.lerpVectors(f.from, f.to, f.t * f.t * (3 - 2 * f.t));
           e.pos.y += Math.sin(Math.PI * f.t) * f.height;
           if (f.t >= 1) {

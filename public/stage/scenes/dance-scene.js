@@ -6,6 +6,7 @@ import { createMeter, formatNumber } from '../stage-hud.js';
 import { createAuditionBar } from './dance-audition-bar.js';
 import { createCameraDirector } from './dance-camera-director.js';
 import { createFreeCommandWatch } from './dance-free-command-watch.js';
+import { createNewcomerWatch } from './dance-newcomer-watch.js';
 import { createDjPanel } from './dance-dj-panel.js';
 import { createGiftAnnouncer } from './dance-gift-announcer.js';
 import { createDanceSounds } from './dance-sound-cues.js';
@@ -38,6 +39,10 @@ const LABELS_CAP = 60; // tối đa nhãn cùng lúc (nhẹ trang, khỏi chồn
 // ghé cận thưa thôi: zoom vào–ra liên tục gây chóng mặt. 1k tim / share được lên hình nhưng cũng cách nhau tối thiểu 8 s
 const GLANCE_GAP_S = 15;
 const SHOUTOUT_GAP_S = 8;
+// người mới vào: camera trượt (chậm) tới KHU VỰC ô của họ, nhân vật treo ngoài khung tới khi camera gần tới rồi mới rơi xuống
+const ARRIVE_S = 7;
+const ARRIVE_HOLD_S = 2.6;
+const ARRIVE_GAP_S = 10; // vào dồn dập thì chỉ người đầu được camera đón, người sau vẫn rơi xuống ô như thường
 
 // sheets: mô tả ảnh ghép nhân vật (public/assets/dance/sheets.json), tải trước khi dựng cảnh
 export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
@@ -98,6 +103,17 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
 
   const posOf = (id) => crowd.get(id)?.pos || null;
 
+  const newcomers = createNewcomerWatch();
+  const landings = []; // { spot, at } — lóe sáng lúc người mới chạm sàn
+  function arrival(id) {
+    if (director.isFocusing(clock) || clock - lastGlance < ARRIVE_GAP_S) return;
+    const spot = crowd.landingOf(id);
+    if (!spot || !crowd.holdDrop(id, ARRIVE_HOLD_S)) return;
+    lastGlance = clock;
+    closeId = id; // chạm sàn là nhảy bung
+    director.focus(() => spot, ARRIVE_S, 'arrive', clock);
+    landings.push({ spot, at: clock + ARRIVE_HOLD_S + 1.1 });
+  }
   const freeCommands = createFreeCommandWatch(); // người thật gõ lệnh miễn phí → camera ghé thăm (cách nhau ≥ GLANCE_GAP_S)
 
   // ghé thăm 7 s: camera trượt vào ~3,5 s, đứng xem người đó nhảy bung, rồi trượt về toàn cảnh
@@ -203,7 +219,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   function ctx() {
     return {
       soloId: solo?.id || '',
-      closeId: director.focusMode(clock) === 'glance' ? closeId : '',
+      closeId: ['glance', 'arrive'].includes(director.focusMode(clock)) ? closeId : '',
       dim,
       giants: state.dancers.filter((d) => d.giant && d.id !== solo?.id).slice(-2).map((d) => d.id),
       cheering: Boolean(solo && clock - solo.startedAt < 3),
@@ -229,7 +245,9 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));
+      const fresh = newcomers.fresh(state.dancers);
       crowd.sync([...state.dancers, DJ_INFO], ctx());
+      for (const id of fresh) arrival(id);
       if (state.solo && state.solo.id !== solo?.id && state.solo.id !== pendingSolo) queueSolo(state.solo);
       else if (!state.solo && (solo || pendingSolo)) {
         solo = null;
@@ -266,7 +284,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       if (fx.kind === 'welcome') {
         const people = fx.mode === 'group' ? fx.people : [fx];
         for (const p of people) if (p.userId || p.id) markRecent(p.userId || p.id);
-        // người vào live KHÔNG kéo camera (live đông người vào liên tục → zoom vào ra không ngớt); thẻ chào + tên đã đủ
+        // camera đón người mới nằm ở arrival() (theo ảnh chụp sàn, khung rộng, cách nhau ≥ ARRIVE_GAP_S) — thẻ chào không kéo camera
       } else if (fx.kind === 'bubble') {
         markRecent(fx.userId);
         labels.bubble(fx.userId, fx.text);
@@ -333,6 +351,11 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       dim += ((solo ? 1 : 0) - dim) * Math.min(1, dt * 3);
       const c = ctx();
       crowd.frame(dt, beat, c);
+      for (let i = landings.length - 1; i >= 0; i -= 1) {
+        if (clock < landings[i].at) continue;
+        show.sparkle(landings[i].spot.clone().setY(landings[i].spot.y + 0.6), true);
+        landings.splice(i, 1);
+      }
       updateRides(dt, t);
       const soloEntity = solo ? crowd.get(solo.id) : null;
       const dropping = state.dropMs > 0;
