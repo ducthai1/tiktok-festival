@@ -31,3 +31,25 @@ test('/api/tts refuses dirty or overlong lines and answers 503 until the voice i
   assert.equal(hit.headers['Content-Type'], 'audio/wav');
   assert.deepEqual(hit.body, wav);
 });
+
+test('a second game server reuses the voice already running instead of starting another one', async () => {
+  const http = await import('node:http');
+  const wav = Buffer.from('RIFF-fake-voice');
+  const voice = http.createServer((req, res) => {
+    if (req.url === '/health') return res.end(JSON.stringify({ ok: true }));
+    req.resume();
+    req.on('end', () => { res.writeHead(200, { 'Content-Type': 'audio/wav' }); res.end(wav); });
+  });
+  await new Promise((resolve) => voice.listen(0, '127.0.0.1', resolve));
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-'));
+  // "python" chỉ cần tồn tại; vì cổng đã có giọng đọc chạy sẵn nên bridge không được tự bật tiến trình nào
+  const bridge = createTtsBridge({ dataDir, python: process.execPath, port: voice.address().port });
+  assert.equal(bridge.start(), true);
+  for (let i = 0; i < 20 && !bridge.status().ready; i += 1) await new Promise((r) => setTimeout(r, 25));
+  assert.equal(bridge.status().ready, true);
+  const res = await call(bridge, `text=${encodeURIComponent('Cảm ơn Bé Na, đã tặng 5 Hoa hồng!')}`);
+  assert.equal(res.code, 200);
+  assert.deepEqual(res.body, wav);
+  bridge.stop();
+  voice.close();
+});

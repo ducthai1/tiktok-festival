@@ -24,10 +24,37 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
   let ready = false;
   let stopped = false;
   let restarts = 0;
+  let shared = false; // đang dùng chung giọng đọc của một server game khác trên máy (cùng cổng)
+  let probing = false;
   let queue = Promise.resolve(); // một câu một lúc (CPU)
 
+  async function healthy() {
+    try {
+      const res = await fetch(`http://127.0.0.1:${port}/health`, { signal: AbortSignal.timeout(800) });
+      return res.ok && (await res.json()).ok === true;
+    } catch {
+      return false;
+    }
+  }
+
+  // Đã có giọng đọc chạy sẵn ở cổng này (server game khác, vd server thử) → dùng chung, không bật bản thứ hai
+  // (trùng cổng sẽ hỏng, và tốn thêm ~1,3 GB RAM). Không có thì tự bật.
   function start() {
-    if (child || stopped || restarts >= 5 || !fs.existsSync(python)) return false; // hỏng 5 lần liền thì thôi, không nạp lại mãi
+    if (ready || child || stopped || probing || restarts >= 5 || !fs.existsSync(python)) return false; // hỏng 5 lần liền thì thôi
+    probing = true;
+    healthy().then((up) => {
+      probing = false;
+      if (stopped) return;
+      if (up) {
+        shared = true;
+        ready = true;
+        console.log(`[tts] dùng chung giọng đọc VieNeu đang chạy ở cổng ${port}`);
+      } else spawnDaemon();
+    });
+    return true;
+  }
+
+  function spawnDaemon() {
     child = spawn(python, ['-I', SCRIPT, String(port)], { stdio: ['ignore', 'pipe', 'pipe'] });
     child.stdout.on('data', (chunk) => {
       if (!ready && String(chunk).includes('ready')) {
@@ -43,7 +70,7 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
       ready = false;
       if (stopped) return;
       console.warn(`[tts] VieNeu tắt (mã ${code}) ${lastError.trim().split('\n').pop() || ''}`);
-      if (restarts < 5) setTimeout(start, 3000 * (restarts += 1));
+      if (restarts < 5) setTimeout(start, 3000 * (restarts += 1)); // start() dò lại: có bản chung thì dùng, không thì bật lại
     });
     return true;
   }
@@ -82,6 +109,10 @@ export function createTtsBridge({ dataDir, python = process.env.TTS_PYTHON || DE
       return wav;
     })().catch((error) => {
       console.warn('[tts]', error.message);
+      if (shared) { // server giữ giọng đọc chung vừa tắt → lần sau tự bật bản riêng
+        shared = false;
+        ready = false;
+      }
       return null;
     }).finally(() => pending.delete(key));
     pending.set(key, job);
