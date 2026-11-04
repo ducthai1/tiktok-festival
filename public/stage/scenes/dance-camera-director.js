@@ -9,13 +9,19 @@ import * as THREE from '/vendor/three/three.module.js';
 
 const smooth = (v) => v * v * (3 - 2 * v);
 // độ dài từng góc (ô nhịp): toàn cảnh, lượn cinematic, Top 3, hàng đầu, hàng giữa, hàng sau, cầu disco (ngắn), lia một bên
-const SHOT_BARS = [4.5, 4, 3.5, 3, 3, 3, 2, 3.5];
+// — dài gần gấp đôi bản đầu: lướt chậm, xem live lâu không chóng mặt
+const SHOT_BARS = [8, 7, 6, 5.5, 5.5, 5.5, 2.5, 6];
+// lúc không theo ai: camera trượt như trên ray — lọc mũ HAI tầng (đích → điểm trượt → camera) nên đổi góc thì tăng tốc từ từ,
+// hãm từ từ, không vọt ngay khung đầu. Hệ số nhỏ = chậm hơn.
+const GLIDE_K = 1.1;
 
 export function createCameraDirector(camera) {
   const look = new THREE.Vector3(0, 1.2, -1);
   const wantPos = new THREE.Vector3();
   const wantLook = new THREE.Vector3();
   const target = new THREE.Vector3();
+  const glidePos = new THREE.Vector3();
+  const glideLook = new THREE.Vector3();
   let shot = 0;
   let cycle = 0;
   let shotStartBeat = 0;
@@ -142,9 +148,18 @@ export function createCameraDirector(camera) {
         fov = directorShot(THREE.MathUtils.clamp((beat - shotStartBeat) / shotBeats, 0, 1), crowd, podium);
       }
       // ghé cận lướt vào chậm hơn (đỡ giật mắt); solo / xe bay cần bám nhanh nên giữ 3,6
-      const blend = 1 - Math.exp(-(at ? (focus.mode === 'glance' ? 2.2 : 3.6) : 2.0) * dt);
-      camera.position.lerp(wantPos, blend);
-      look.lerp(wantLook, blend);
+      const blend = 1 - Math.exp(-(at ? (focus.mode === 'glance' ? 2.2 : 3.6) : GLIDE_K) * dt);
+      if (at) {
+        camera.position.lerp(wantPos, blend);
+        look.lerp(wantLook, blend);
+        glidePos.copy(camera.position); // hết theo người → trượt tiếp từ chỗ đang đứng, không giật
+        glideLook.copy(look);
+      } else {
+        glidePos.lerp(wantPos, blend);
+        glideLook.lerp(wantLook, blend);
+        camera.position.lerp(glidePos, blend);
+        look.lerp(glideLook, blend);
+      }
       camera.lookAt(look);
       camera.fov += (fov - camera.fov) * blend;
       camera.updateProjectionMatrix();
@@ -155,6 +170,8 @@ export function createCameraDirector(camera) {
       directorShot(0, crowd, podium);
       camera.position.copy(wantPos);
       look.copy(wantLook);
+      glidePos.copy(wantPos);
+      glideLook.copy(wantLook);
       camera.lookAt(look);
     }
   };
