@@ -294,3 +294,9 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
 
 /* Sàn Nhảy: bảng quà chỉ là danh sách món → hiệu ứng, KHÔNG tiêu đề "CÁCH THAM GIA" (user 05/11, sau khi TikTok hạn chế live) */
 #stage.theme-dance #howto::before { content: none; display: none; }
+
+/* câu hướng dẫn "Gõ đổi nv để đổi nhân vật của bạn" ở đáy màn (giống live game mẫu), trên ô nhập bình luận của TikTok */
+.cmd-hint { position: absolute; left: 50%; bottom: 300px; transform: translateX(-50%); padding: 8px 22px; border-radius: 999px;
+  background: rgba(8, 5, 22, 0.78); border: 1.5px solid rgba(160, 200, 255, 0.5); font: 800 26px var(--font); color: #fff;
+  white-space: nowrap; text-shadow: 0 1px 2px #000; pointer-events: none; z-index: 5; }
+.cmd-hint b { padding: 0 8px; border-radius: 8px; background: #ffd21f; color: #1b1300; text-shadow: none; }

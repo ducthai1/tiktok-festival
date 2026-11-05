@@ -35,7 +35,10 @@ export function createDjPanel(hud, { onVideo }) {
     grid.append(hud.el('div', `cmd-key${kind === 'act' ? ' act' : ''}`, kind === 'act' ? `${icon} ${word}` : word), hud.el('div', 'cmd-val', label));
   }
   table.append(grid);
-  hud.gameRoot.append(table);
+  // câu hướng dẫn nguyên câu ở đáy màn, kiểu live game mẫu (Migo Live: "Gõ "nam" hoặc "nữ" để đổi nhân vật của bạn")
+  const hint = hud.el('div', 'cmd-hint');
+  hint.append('Gõ ', hud.el('b', '', 'đổi nv'), ' để đổi nhân vật của bạn');
+  hud.gameRoot.append(table, hint);
   // cột phải chỉ đủ chỗ MỘT bảng (nửa dưới màn bị bình luận / gợi ý tặng quà TikTok che) → LẬT TRANG mỗi 8 s giữa
   // MIỄN PHÍ và TOP DÂN QUẨY (user chọn). Bảng Top còn trống thì chỉ hiện MIỄN PHÍ. Mờ dần bằng CSS (#hud.rc-top).
   const hudRoot = hud.gameRoot.parentElement;
