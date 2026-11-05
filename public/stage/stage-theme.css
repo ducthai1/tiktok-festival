@@ -291,3 +291,6 @@ html.lite .theme-bar #welcome, html.lite .theme-swim #welcome { box-shadow: var(
   rgba(90, 200, 255, 0.5) 12deg 18deg, transparent 18deg 24deg, rgba(255, 220, 90, 0.5) 24deg 30deg, transparent 30deg 36deg);
   animation: tb-spin 7s linear infinite, tb-hue 2.5s linear infinite; }
 @keyframes tb-hue { to { filter: hue-rotate(360deg); } }
+
+/* Sàn Nhảy: bảng quà chỉ là danh sách món → hiệu ứng, KHÔNG tiêu đề "CÁCH THAM GIA" (user 05/11, sau khi TikTok hạn chế live) */
+#stage.theme-dance #howto::before { content: none; display: none; }

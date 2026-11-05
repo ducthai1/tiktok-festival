@@ -12,7 +12,9 @@ const COMMANDS = [
   ['💬', 'to lên', 'Nhân vật to ra'],
   ['💬', 'nhỏ lại', 'Nhân vật nhỏ lại'],
   ['💬', 'quẩy', 'Quẩy bung 8 giây'],
-  ['❤', '1.000 tim', 'Có cánh + lên hình', 'act'],
+  ['💬', 'bay lên', 'Bay lên cao 1 phút'],
+  ['❤', '500 tim', 'Có cánh + lên hình', 'act'],
+  ['❤', '3.000 tim', 'Xe bay chạy vòng', 'act'],
   ['➕', 'Follow', 'Solo sân khấu + cánh', 'act'],
   ['↗', 'Share', 'Lên camera + vẫy tay', 'act']
 ];
@@ -26,11 +28,9 @@ export function createDjPanel(hud, { onVideo }) {
     onVideo(video);
   }, { once: true });
 
-  // bảng 2 cột "Gõ | Được" (chữ "Gõ" chỉ ở đầu cột, không lặp mỗi dòng); bề ngang cố định, chữ tự xuống dòng — không tràn khung
+  // chỉ liệt kê "gõ / làm gì → được gì", không tiêu đề bảng, không dòng đầu cột (user 05/11: "tự hiểu"); bề ngang cố định
   const table = hud.el('div', 'cmd-table');
-  table.append(hud.el('div', 'cmd-title', '🆓 MIỄN PHÍ'));
   const grid = hud.el('div', 'cmd-grid');
-  grid.append(hud.el('div', 'cmd-th', '💬 Gõ'), hud.el('div', 'cmd-th', 'Được'));
   for (const [icon, word, label, kind] of COMMANDS) {
     grid.append(hud.el('div', `cmd-key${kind === 'act' ? ' act' : ''}`, kind === 'act' ? `${icon} ${word}` : word), hud.el('div', 'cmd-val', label));
   }

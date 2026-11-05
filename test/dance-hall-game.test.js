@@ -49,21 +49,21 @@ test('free comments: "quẩy" dances hard, "chào" waves, "đổi đồ" changes
   assert.equal(faceForComment('ok'), '');
 });
 
-test('"nhảy" jumps once, "đi vòng" is no longer free, "to lên"/"nhỏ lại" resize within limits, 1k hearts puts you on camera', () => {
+test('"nhảy" jumps once, "đi vòng" is no longer free, "to lên"/"nhỏ lại" resize within limits, every 500 hearts puts you on camera', () => {
   const game = createDanceHallGame({ random: () => 0.5 });
   game.handleEvent(chat(1, 'nhảy 1 cái'), 0);
   assert.equal(dancer(game, 'u1').move, 'jump');
   assert.equal(dancer(game, 'u1', 2000).move, '');
   game.handleEvent(chat(2, 'đi vòng'), 0);
-  assert.equal(dancer(game, 'u2', 5000).move, ''); // bay vòng giờ là quà 99–199 💎
+  assert.equal(dancer(game, 'u2', 5000).move, ''); // bay vòng là quà 30–98 💎 hoặc 3.000 tim
   for (let i = 0; i < 6; i += 1) game.handleEvent(chat(3, 'to lên'), i * 4000);
   assert.equal(dancer(game, 'u3', 30000).size, 1.6);
   for (let i = 0; i < 9; i += 1) game.handleEvent(chat(3, 'nhỏ lại'), 40000 + i * 4000);
   assert.equal(dancer(game, 'u3', 90000).size, 0.6);
   let fx = [];
   for (let i = 0; i < 40; i += 1) fx = fx.concat(game.handleEvent({ type: 'like', user: user(4), likeCount: 30 }, i * 100));
-  assert.equal(fx.filter((f) => f.kind === 'camera').length, 1);
-  assert.equal(dancer(game, 'u4', 4000).wings, true); // 1k tim có cánh
+  assert.equal(fx.filter((f) => f.kind === 'camera').length, 2); // 1.200 tim: mốc 500 và 1.000
+  assert.equal(dancer(game, 'u4', 4000).wings, true); // 500 tim có cánh
   game.handleEvent(gift(5, 1), 0);
   assert.equal(dancer(game, 'u5').wings, true);
 });
@@ -84,7 +84,7 @@ test('a rose gives an aura but no solo; bigger gifts get a solo on stage, best g
   assert.ok(!kinds(fx).includes('solo'));
   assert.equal(dancer(game, 'u1').aura, true);
   assert.equal(game.snapshot().solo, null);
-  const first = game.handleEvent(gift(2, 299), 0); // 99–199 là xe bay → solo bậc 3 lấy món 299
+  const first = game.handleEvent(gift(2, 150), 0); // 30–98 là xe bay → solo bậc 3 lấy món 150
   assert.ok(kinds(first).includes('solo'));
   game.handleEvent(gift(3, 10), 100); // bậc 2 vào hàng chờ
   game.handleEvent(gift(4, 500), 200); // bậc 4 chen lên trước bậc 2
@@ -230,17 +230,17 @@ test('without a seed count the floor starts empty', () => {
   assert.equal(game.snapshot(0).dancers.length, 0);
 });
 
-test('a 99–199 diamond gift flies the giver around on a winged car; 200+ keeps the stage solo and fireworks', () => {
+test('a 30–98 diamond gift flies the giver around on a winged car; 99+ keeps the stage solo and fireworks', () => {
   const game = createDanceHallGame();
-  for (const [n, kc] of [[1, 99], [2, 199]]) {
+  for (const [n, kc] of [[1, 30], [2, 98]]) {
     const fx = game.handleEvent(gift(n, kc), 0);
     assert.equal(fx.find((f) => f.kind === 'gift').ride, true);
     assert.ok(!kinds(fx).includes('fireworks'));
     assert.ok(!fx.some((f) => f.kind === 'solo' && f.userId === `u${n}`));
     assert.equal(dancer(game, `u${n}`, 1000).move, 'ride');
-    assert.notEqual(dancer(game, `u${n}`, 15000).move, 'ride'); // hạ cánh (199 💎 còn làm đầy thanh quẩy → DROP)
+    assert.notEqual(dancer(game, `u${n}`, 15000).move, 'ride'); // hạ cánh
   }
-  const big = game.handleEvent(gift(3, 299), 20000);
+  const big = game.handleEvent(gift(3, 99), 20000);
   assert.equal(big.find((f) => f.kind === 'gift').ride, false);
   assert.ok(kinds(big).includes('fireworks'));
   assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
@@ -265,4 +265,26 @@ test('a 30-strong seed crowd has distinct names that keep moving', () => {
 test('seed dancers are off by default', async () => {
   const { SEED_TARGET } = await import('../src/games/dance-seed-crowd.js');
   assert.equal(SEED_TARGET, 0);
+});
+
+test('free extras: "bay lên" lifts you one floor (max 2), "bây giờ" does not, and every 3,000 hearts is a free flying-car ride', () => {
+  const game = createDanceHallGame({ random: () => 0.5 });
+  game.handleEvent(chat(1, 'bây giờ mấy giờ rồi'), 0);
+  assert.equal(dancer(game, 'u1').level, 0);
+  game.handleEvent(chat(1, 'bay lên nào'), 4000);
+  assert.equal(dancer(game, 'u1', 4000).level, 1);
+  game.handleEvent(chat(1, 'bay cao'), 8000);
+  game.handleEvent(chat(1, 'bay lên'), 12000);
+  assert.equal(dancer(game, 'u1', 12000).level, 2, 'miễn phí tối đa tầng 2');
+  let fx = [];
+  for (let i = 0; i < 100; i += 1) fx = fx.concat(game.handleEvent({ type: 'like', user: user(2), likeCount: 30 }, i * 100));
+  assert.ok(fx.some((f) => f.kind === 'toast' && /3\.000 tim → xe bay/.test(f.text)));
+  assert.equal(dancer(game, 'u2', 10000).move, 'ride');
+});
+
+test('dance gift thresholds are lower than the other games', async () => {
+  const { DANCE_TIER_MIN, giftTierIn, giftTier } = await import('../public/shared/gift-tiers.js');
+  assert.deepEqual([1, 4, 5, 29, 30, 198, 199, 999, 1000, 4999, 5000].map((c) => giftTierIn(c, DANCE_TIER_MIN)),
+    [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6]);
+  assert.deepEqual([1, 10, 99, 499].map(giftTier), [1, 2, 3, 4], 'game khác giữ mốc cũ, .map(giftTier) vẫn đúng');
 });

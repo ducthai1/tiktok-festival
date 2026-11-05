@@ -1,7 +1,7 @@
 // Sân khấu "khoảnh khắc quà" của Sàn Nhảy:
 // - Câu cảm ơn đi TRƯỚC, hiệu ứng làm NỀN: hiệu ứng của một khoảnh khắc chạy đúng lúc giọng bắt đầu đọc (chờ tối đa
 //   maxWaitMs — giọng chậm / lỗi / đang tắt thì hiệu ứng vẫn chạy, không bao giờ treo).
-// - Quà LỚN (≥ 200 💎) ĐỘC CHIẾM sân khấu: xếp hàng, diễn LẦN LƯỢT; mỗi khoảnh khắc giữ sân khấu `holdMs` kể từ lúc giọng
+// - Quà LỚN (≥ 99 💎, BIG_GIFT_KC) ĐỘC CHIẾM sân khấu: xếp hàng, diễn LẦN LƯỢT; mỗi khoảnh khắc giữ sân khấu `holdMs` kể từ lúc giọng
 //   bắt đầu đọc rồi mới tới khoảnh khắc kế. Trong lúc đó (đang diễn hoặc đang chờ) quà nhỏ chỉ hiện thông báo — không đọc,
 //   không tiếng, không chen ngang làm loãng màn bùng nổ của quà tốn tiền. Follow / DROP / solo của người khác thì xếp hàng sau.
 // - Sân khấu rảnh: quà nhỏ / follow diễn ngay (giọng trước, hiệu ứng sau) và không giữ sân khấu.

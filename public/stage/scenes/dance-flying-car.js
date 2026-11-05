@@ -1,4 +1,4 @@
-// XE BAY mọc cánh chở người tặng quà 99–199 💎 bay một vòng quanh sàn (đường bay: dance-car-path.js):
+// XE BAY mọc cánh chở người tặng quà 30–98 💎 bay một vòng quanh sàn (đường bay: dance-car-path.js):
 // - mẫu xe 3D Kenney "Starter Kit Racing" (CC0, public/assets/dance/car) — 4 màu xoay vòng, bánh xe quay;
 // - đôi cánh neon thật (banners/wings-neon.webp) sau lưng xe, luôn quay về camera, vỗ theo nhịp;
 // - vòng sáng neon dưới gầm; vệt KHÓI CẦU VỒNG (ảnh khói Kenney) phả ra từ đuôi xe, nở to rồi tan dần.

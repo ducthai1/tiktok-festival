@@ -86,7 +86,7 @@ export function createSpriteCrowd(scene, { sheets, capacity }) {
 
   function placeFor(info, ctx, e) {
     if (info.dj) return { ...DJ_SPOT, scale: 1.4, vis: 'xung' };
-    if (e?.rideStart !== undefined) { // quà 99–199 💎: ngồi trên xe bay một vòng quanh sàn (dance-car-path.js) — hơn cả bục Top
+    if (e?.rideStart !== undefined) { // quà 30–98 💎 / 3.000 tim: ngồi trên xe bay một vòng quanh sàn (dance-car-path.js) — hơn cả bục Top
       const seconds = ctx.now - e.rideStart;
       const home = e.rideHome; // cất cánh + hạ cánh đúng chỗ đang đứng (ô sàn hoặc bục Top)
       const pose = ridePose(seconds, home);

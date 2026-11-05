@@ -37,6 +37,14 @@ let giftTiers = [];
 function legendFor(scene) {
   if (!scene) return [];
   const rows = [...(scene.legend || [])];
+  // danh sách viết sẵn (Sàn Nhảy): mỗi dòng chỉ ảnh món quà + hiệu ứng, không giá
+  if (scene.giftList) {
+    for (const [en, label] of scene.giftList) {
+      const pick = SAMPLE_GIFTS.find((g) => g.en === en);
+      if (pick) rows.push([[pick], ` ${label}`]);
+    }
+    return rows;
+  }
   if (scene.giftLabels) {
     // mỗi bậc: 1 icon quà làm mẫu + khoảng kc — món nào trong khoảng đó cũng ra cùng hiệu ứng
     for (const { tier, gifts } of giftTiers) {

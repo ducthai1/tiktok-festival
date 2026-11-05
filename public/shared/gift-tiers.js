@@ -10,20 +10,36 @@
 //   6   (≥ 20.000)      Tên lửa, Sư tử, Vũ trụ TikTok
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
+// Sàn Nhảy hạ mốc (user chốt 05/11: "giảm mốc quà lớn lại"): Bắn tim đã có solo ngắn, Donut đã bay xe, Kính râm đã khổng lồ,
+// Dải ngân hà đã DROP, từ 5K là đại nhạc hội. Các game khác giữ TIER_MIN.
+//   1 (1–4) Hoa hồng · 2 (5–29) Bắn tim, Rosa · 3 (30–198) Donut, Mũ · 4 (199–999) Kính râm, Corgi, Súng tiền
+//   5 (1K–4,9K) Dải ngân hà, Pháo hoa, Máy bay riêng · 6 (5K+) Drama Queen, Siêu xe, Sư tử
+export const DANCE_TIER_MIN = [1, 5, 30, 199, 1000, 5000];
 
-/** Khoảng giá (kc) của một bậc, viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
+/** Khoảng giá (kc) của một bậc (theo bảng mốc `mins`), viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
 export function tierRangeLabel(tier) {
+  return tierRangeLabelIn(tier, TIER_MIN);
+}
+
+/** Như tierRangeLabel nhưng theo bảng mốc riêng (vd DANCE_TIER_MIN). Tách hàm riêng: giftTier/tierRangeLabel hay được
+ *  truyền thẳng vào .map() — tham số thứ hai sẽ thành CHỈ SỐ mảng nếu để tham số tuỳ chọn. */
+export function tierRangeLabelIn(tier, mins) {
   const fmt = (n) => (n >= 1000 ? `${String(Math.floor(n / 100) / 10).replace('.', ',')}K` : String(n)); // làm tròn XUỐNG: 4.999 → 4,9K
-  const min = TIER_MIN[tier - 1];
-  const next = TIER_MIN[tier];
+  const min = mins[tier - 1];
+  const next = mins[tier];
   return next ? `${fmt(min)}–${fmt(next - 1)}` : `${fmt(min)}+`;
 }
 
-/** Bậc 1..6 theo giá một món (xu / diamondCount của TikTok). */
+/** Bậc 1..6 theo giá một món (xu / diamondCount của TikTok), theo bảng mốc `mins` (mặc định của các game). */
 export function giftTier(coinsEach) {
+  return giftTierIn(coinsEach, TIER_MIN);
+}
+
+/** Bậc theo bảng mốc riêng (vd Sàn Nhảy: DANCE_TIER_MIN). */
+export function giftTierIn(coinsEach, mins) {
   const coins = Math.max(1, Number(coinsEach) || 1);
   let tier = 1;
-  TIER_MIN.forEach((min, i) => { if (coins >= min) tier = i + 1; });
+  mins.forEach((min, i) => { if (coins >= min) tier = i + 1; });
   return tier;
 }
 

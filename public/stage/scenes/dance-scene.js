@@ -25,7 +25,7 @@ import { disposeObject } from './person-model.js';
 const MEDALS = ['🥇', '🥈', '🥉'];
 const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
 // quà từ 200 💎 (một lượt) là "quà lớn": độc chiếm sân khấu — giữ bao lâu (ms, tính từ lúc giọng cảm ơn bắt đầu) theo bậc
-const BIG_GIFT_KC = 200;
+const BIG_GIFT_KC = 99; // từ Mũ (99 💎) là quà lớn: thẻ giữa màn + độc chiếm sân khấu (mốc Sàn Nhảy hạ 05/11)
 const BIG_HOLD_MS = { 3: 6000, 4: 9000, 5: 12000, 6: 20000 };
 const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
@@ -65,7 +65,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
   pipeline.setBloom({ strength: 0.38, radius: 0.45, threshold: 0.9 }); // phát sáng nhẹ: bar cần đèn nhưng xem lâu không đau mắt
 
   hud.setTitle('🪩 SÀN NHẢY LIVE');
-  hud.setHint(['🎁 ', '*Tặng quà*', ' → nhận ngay:']);
+  hud.setHint([]);
   const meter = createMeter(hud, { label: '🔥 ĐỘ QUẨY' });
   const auBar = createAuditionBar(hud);
   const sounds = createDanceSounds(audio);
@@ -233,15 +233,20 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     scene,
     camera,
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n}, đến sàn nhảy!` },
-    // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js); bảng trái chỉ còn bậc quà theo số 💎
-    legend: [['🎁 Quà', ' theo số 💎 ↓']],
-    // người TẶNG nhận được gì; bảng 2 dòng: khoảng 💎 / hiệu ứng. Mỗi câu hiệu ứng phải vừa MỘT dòng của cột trái
-    // (~20 ký tự) — dài hơn là rớt chữ xuống dòng, khó đọc
-    giftRows: true,
-    giftLabels: { 1: '🦋 Có cánh + lên hình', 2: '🎈 Bay cao + solo ngắn', 3: '🎤 Solo + pháo hoa',
-      4: '👑 Khổng lồ VIP 🚁', 5: '🎆 Pháo hoa + DROP', 6: '🌌 Đại nhạc hội' },
-    // bậc 3 (99–498) chia đôi: 99–199 xe bay chạy vòng (icon Kính râm 199), 200–498 solo sân khấu + pháo hoa (icon Corgi)
-    giftSplit: { 3: [{ range: '99–199', label: '🚗 Xe bay chạy vòng', giftEn: 'Sunglasses' }, { range: '200–498', label: '🎤 Solo + pháo hoa' }] },
+    // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js). Bảng trái chỉ LIỆT KÊ ảnh món → hiệu ứng, như các live game khác
+    // (user 05/11 gửi mẫu Migo Live): không tiêu đề, không giá 💎, không câu mời "Tặng quà → nhận ngay" — TikTok hạn chế
+    // live vì "chèo kéo quà máy móc". Món nào cùng khoảng giá (DANCE_TIER_MIN) cũng ra cùng hiệu ứng.
+    // [quà mẫu (tên tiếng Anh trong SAMPLE_GIFTS), hiệu ứng ≤ ~20 ký tự]
+    legend: [],
+    giftList: [
+      ['Rose', '🦋 Có cánh + lên hình'],
+      ['Finger Heart', '🎈 Bay cao + solo ngắn'],
+      ['Doughnut', '🚗 Xe bay chạy vòng'],
+      ['Cap', '🎤 Solo + pháo hoa'],
+      ['Sunglasses', '👑 Khổng lồ VIP'],
+      ['Galaxy', '🎆 Pháo hoa + DROP'],
+      ['Sports Car', '🌌 Đại nhạc hội']
+    ],
     update(snapshot) {
       state = snapshot.state;
       byId = new Map(state.dancers.map((d) => [d.id, d]));

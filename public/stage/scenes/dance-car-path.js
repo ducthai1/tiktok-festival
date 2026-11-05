@@ -1,4 +1,4 @@
-// Đường bay của XE BAY (quà 99–199 💎) — hàm thuần, dùng chung cho chiếc xe và nhân vật ngồi trên xe (luôn khớp nhau):
+// Đường bay của XE BAY (quà 30–98 💎) — hàm thuần, dùng chung cho chiếc xe và nhân vật ngồi trên xe (luôn khớp nhau):
 // cất cánh từ ô của người tặng → bay MỘT VÒNG elip quanh sàn + trước sân khấu (cao ~3 m, trên đầu đám đông, nhấp nhô,
 // nghiêng mình theo khúc cua) → hạ cánh về đúng ô cũ. Vòng elip nằm trong tường hai bên (±8,2 m), không chạm bục Top /
 // người khổng lồ / quả cầu disco.

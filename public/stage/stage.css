@@ -79,7 +79,7 @@ body { font-family: var(--font); color: var(--ink); }
 #hint { font-size: 23px; font-weight: 700; line-height: 1.4; white-space: pre-line; }
 #hint b { color: var(--gold); }
 #legend { display: grid; grid-template-columns: 1fr; gap: 5px; }
-#legend.off, #legend:empty, #howto.off { display: none; }
+#legend.off, #legend:empty, #howto.off, #hint:empty { display: none; }
 #legend .item { display: flex; align-items: center; gap: 8px; padding: 3px 10px; border-radius: 10px; background: rgba(255, 255, 255, 0.07); font-size: 21px; font-weight: 700; }
 #legend .item em { font-style: normal; color: var(--gold); }
 #legend .item em.gifts { display: inline-flex; gap: 2px; min-width: 70px; font-size: 22px; }
