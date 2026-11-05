@@ -76,6 +76,8 @@ export function createHud() {
     setLegend(items, visible) {
       const root = $('legend');
       root.classList.toggle('off', !visible);
+      // tắt bảng = tắt cả khung "Cách tham gia" (tiêu đề + dòng "Tặng quà → nhận ngay"), không để lại khung rỗng
+      $('howto')?.classList.toggle('off', !visible);
       const row = ([key, value]) => {
         const item = el('div', 'item');
         const em = el('em', Array.isArray(key) ? 'gifts' : '');
