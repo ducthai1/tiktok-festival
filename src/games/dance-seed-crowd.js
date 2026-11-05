@@ -3,7 +3,8 @@
 // không bình luận, không tặng quà, không vào Top, không solo. Có người thật vào thì bớt dần: số người ảo luôn là
 // SEED_TARGET − số người thật trên sàn (người thật vào là thay đúng chỗ của một người ảo; người thật rời thì người ảo quay lại).
 
-export const SEED_TARGET = 30; // sàn đông ngay từ đầu buổi (user chốt 04/11: 10 thì trông vắng)
+// TẮT (user chốt 05/11): TikTok hạn chế live vì "thiếu tương tác" — sàn đầy người ảo mà chat vắng. Bật lại = đặt số > 0.
+export const SEED_TARGET = 0;
 export const SEED_PREFIX = 'seed:';
 export const isSeedId = (id) => String(id).startsWith(SEED_PREFIX);
 

@@ -246,8 +246,8 @@ test('a 99–199 diamond gift flies the giver around on a winged car; 200+ keeps
   assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
 });
 
-test('the default seed crowd fills the floor with distinct names that keep moving', async () => {
-  const { SEED_TARGET } = await import('../src/games/dance-seed-crowd.js');
+test('a 30-strong seed crowd has distinct names that keep moving', () => {
+  const SEED_TARGET = 30;
   const game = createDanceHallGame({ seedCount: SEED_TARGET });
   game.tick(0);
   const seeds = () => game.snapshot(0).dancers.filter((d) => d.id.startsWith('seed:'));
@@ -260,4 +260,9 @@ test('the default seed crowd fills the floor with distinct names that keep movin
     for (const d of game.snapshot(t).dancers) if (d.move || d.face) moved.add(d.id);
   }
   assert.ok(moved.size >= SEED_TARGET * 0.6, `chỉ ${moved.size}/${SEED_TARGET} người ảo nhúc nhích trong 60 s`);
+});
+
+test('seed dancers are off by default', async () => {
+  const { SEED_TARGET } = await import('../src/games/dance-seed-crowd.js');
+  assert.equal(SEED_TARGET, 0);
 });

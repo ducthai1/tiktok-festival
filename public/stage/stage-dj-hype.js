@@ -1,24 +1,21 @@
 // Lớp "DJ" phủ lên nhạc nền file (Sàn Nhảy) cho giống live bar: bass dày + nhạc "bơm" theo từng phách (kiểu sidechain),
-// và cứ 16 ô nhịp có một khoảnh khắc xoay vòng: giọng MC cổ động (VieNeu, có vang) · vút lên rồi nổ + hò reo · giật cắt
-// nhạc + cào đĩa · kèn hơi. Chỉ dùng tiếng tự tổng hợp / Mixkit / VieNeu có sẵn — không dùng nhạc có bản quyền.
+// và cứ 16 ô nhịp có một khoảnh khắc xoay vòng: vút lên rồi nổ + hò reo · giật cắt nhạc + cào đĩa · kèn hơi.
+// Chỉ dùng tiếng tự tổng hợp / Mixkit có sẵn — không dùng nhạc có bản quyền.
+// KHÔNG có giọng MC tự hô (user bỏ 05/11: TikTok hạn chế live vì "máy móc, tự động, thiếu tương tác").
 // Khoảnh khắc bị bỏ qua khi đang có giọng cảm ơn / hiệu ứng quà (nhạc đang bị hạ) hoặc đang phát nhạc riêng của quà lớn.
-export const SHOUTS = ['Quẩy lên nào!', 'Cả sàn giơ tay lên!', 'Lên lên lên!', 'Bass đâu rồi!', 'Anh em đâu rồi!',
-  'Không say không về!', 'Nhảy hết mình đi!', 'Sàn nhảy cháy lên nào!'];
-const MC_VOICE = 'Hải Đăng';
 const PHRASE_BEATS = 64; // 16 ô nhịp
-const MOMENTS = ['shout', 'drop', 'shout', 'stutter', 'shout', 'horn'];
+const MOMENTS = ['drop', 'stutter', 'horn'];
 const PUMP_DEPTH = 0.26; // mỗi phách nhạc hụt xuống 74 % rồi dâng lại
 const LOOKAHEAD_S = 0.45;
 const BASS_DB = 5;
 const TRIM = 0.5;
-const SHOUT_RATE = 1.15; // nhanh + cao hơn giọng đọc thường → nghe hăng như MC
 
 /** Phách đầu câu nhạc 16 ô kế tiếp (bỏ câu đầu bài — đoạn vào bài để nhạc tự chạy). */
 export function nextPhraseBeat(beat) {
   return Math.max(PHRASE_BEATS, Math.ceil((beat + 1e-6) / PHRASE_BEATS) * PHRASE_BEATS);
 }
 
-export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUntil, groove, shoutsOn, active }) {
+export function createDjHype(ctx, { input, output, play, quietUntil, groove, active }) {
   const bass = ctx.createBiquadFilter();
   bass.type = 'lowshelf';
   bass.frequency.value = 110;
@@ -29,8 +26,7 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   glue.ratio.value = 3;
   glue.attack.value = 0.01;
   glue.release.value = 0.12;
-  // bộ nén của trình duyệt TỰ BÙ âm lượng (đo OBS: nhạc -19 → -12 dB, to hơn cả giọng cảm ơn) → hạ lại 6 dB,
-  // còn to hơn bản gốc ~1,5 dB cho bass đập
+  // bộ nén của trình duyệt TỰ BÙ âm lượng (đo OBS: nhạc -19 → -12 dB, to hơn cả giọng cảm ơn) → hạ lại 6 dB
   const trim = ctx.createGain();
   trim.gain.value = TRIM;
   const pump = ctx.createGain();
@@ -41,68 +37,10 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   input.connect(bass).connect(glue).connect(trim).connect(pump).connect(wetPath).connect(output);
   input.connect(dryPath).connect(output);
 
-  // giọng MC: chủ yếu giọng khô, chỉ một tiếng vọng ngắn và nhỏ (user 05/11: "đừng vọng quá" — bản vang lặp 0,33 bị chê)
-  // tông cổ vũ mạnh + cao (user 05/11): nâng cao độ (phát nhanh hơn ~2,5 nửa cung), đẩy dải 3 kHz cho giọng sắc và
-  // nén mạnh cho chắc tiếng; giới hạn đỉnh ở master vẫn chặn vỡ tiếng
-  const voice = ctx.createGain();
-  const presence = ctx.createBiquadFilter();
-  presence.type = 'peaking';
-  presence.frequency.value = 3000;
-  presence.Q.value = 0.9;
-  presence.gain.value = 5;
-  const punch = ctx.createDynamicsCompressor();
-  punch.threshold.value = -26;
-  punch.knee.value = 4;
-  punch.ratio.value = 4;
-  punch.attack.value = 0.003;
-  punch.release.value = 0.1;
-  const shoutOut = ctx.createGain();
-  shoutOut.gain.value = 0.9; // đo OBS ở 0,6: câu hô chỉ ngang giọng cảm ơn (-15 dB) → nâng ~3,5 dB cho nổi hẳn trên nhạc
-  presence.connect(punch).connect(shoutOut).connect(voiceOut);
-  const echo = ctx.createDelay(1);
-  echo.delayTime.value = 0.18;
-  const feedback = ctx.createGain();
-  feedback.gain.value = 0.1;
-  const wet = ctx.createBiquadFilter();
-  wet.type = 'highpass';
-  wet.frequency.value = 900;
-  const wetLevel = ctx.createGain();
-  wetLevel.gain.value = 0.25;
-  voice.connect(presence);
-  voice.connect(echo).connect(wet).connect(feedback).connect(echo);
-  wet.connect(wetLevel).connect(voiceOut);
-
-  const shouts = new Map(); // câu → AudioBuffer (tải dần, máy chủ tạo + giữ sẵn)
-  let warmIndex = 0;
   let scheduledUntil = 0; // giờ (ctx) của phách cuối đã đặt lịch "bơm"
   let plannedPhrase = ''; // câu nhạc đã đặt khoảnh khắc (bpm:phách)
   let lastBeat = 0;
   let moment = 0;
-
-  async function warmNextShout() {
-    if (warmIndex >= SHOUTS.length || !shoutsOn()) return;
-    const text = SHOUTS[warmIndex++];
-    try {
-      const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(MC_VOICE)}`);
-      if (res.ok) shouts.set(text, await ctx.decodeAudioData(await res.arrayBuffer()));
-    } catch {
-      // chưa có giọng — lần sau thử câu khác
-    }
-  }
-
-  function shoutAt(at) {
-    const ready = [...shouts.values()];
-    if (!ready.length || !shoutsOn()) return false;
-    const buffer = ready[Math.floor(Math.random() * ready.length)];
-    const src = ctx.createBufferSource();
-    src.buffer = buffer;
-    src.playbackRate.value = SHOUT_RATE;
-    src.connect(voice);
-    src.start(at);
-    const wait = Math.max(0, at - ctx.currentTime);
-    setTimeout(() => duck(0.45, buffer.duration / SHOUT_RATE + 0.4), wait * 1000); // nhạc lùi cho câu hô nổi hẳn lên
-    return true;
-  }
 
   function stutterAt(downbeat, spb) {
     const q = spb / 4; // 4 nhát cắt trong phách cuối trước câu mới
@@ -116,11 +54,9 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
 
   function planMoment(downbeat, spb) {
     if (quietUntil() > ctx.currentTime || downbeat - ctx.currentTime < 0.05) return;
-    let kind = MOMENTS[moment++ % MOMENTS.length];
-    if (kind === 'shout' && !shouts.size) kind = 'drop'; // câu hô chưa tải xong
+    const kind = MOMENTS[moment++ % MOMENTS.length];
     console.error(`[dj] ${kind}`); // OBS chỉ chép lỗi của trang vào log → tra được khoảnh khắc nào đã vang
     const lead = downbeat - ctx.currentTime;
-    if (kind === 'shout' && shoutAt(downbeat)) return;
     if (kind === 'stutter') return stutterAt(downbeat, spb);
     if (kind === 'horn') {
       play('airhorn', { delay: lead });
@@ -168,6 +104,4 @@ export function createDjHype(ctx, { input, output, voiceOut, play, duck, quietUn
   }
 
   setInterval(tick, 150);
-  setInterval(() => void warmNextShout(), 6000); // tải dần từng câu hô, không dồn máy chủ giọng đọc
-  void warmNextShout();
 }

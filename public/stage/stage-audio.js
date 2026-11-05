@@ -47,10 +47,10 @@ export function createStageAudio() {
       music = createMusic(ctx, musicBus);
       tracks = createTrackPlayer(ctx, musicBus);
       samples = createSamplePlayer(ctx, sfxBus);
-      // nhạc nền đi qua lớp DJ (bass dày, bơm theo phách, câu hô / nổ / giật mỗi 16 ô nhịp) rồi mới tới nút hạ nhạc
-      createDjHype(ctx, { input: musicBus, output: ducks.music.node, voiceOut: master, play: playCue, duck,
+      // nhạc nền đi qua lớp DJ (bass dày, bơm theo phách, nổ / giật / kèn mỗi 16 ô nhịp) rồi mới tới nút hạ nhạc
+      createDjHype(ctx, { input: musicBus, output: ducks.music.node, play: playCue,
         quietUntil: () => Math.max(ducks.music.until, ducks.sfx.until), groove: () => tracks.groove(),
-        shoutsOn: () => opts.sound && opts.tts, active: () => theme === 'dance' });
+        active: () => theme === 'dance' });
       if (theme) samples.setTheme(theme);
       applyLevels();
     }
