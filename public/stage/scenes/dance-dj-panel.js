@@ -9,11 +9,11 @@ const FLIP_MS = 8000;
 const COMMANDS = [
   ['💬', 'đổi nv', 'Đổi nhân vật'],
   ['💬', 'nhảy', 'Nhảy lên 1 cái'],
-  ['💬', 'to lên', 'Nhân vật to ra'],
-  ['💬', 'nhỏ lại', 'Nhân vật nhỏ lại'],
+  ['💬', 'to lên / nhỏ lại', 'Đổi cỡ nhân vật'],
   ['💬', 'quẩy', 'Quẩy bung 8 giây'],
   ['💬', 'bay lên', 'Bay lên cao 1 phút'],
   ['❤', '500 tim', 'Có cánh + lên hình', 'act'],
+  ['❤', '1.000 tim', 'Pháo hoa', 'act'],
   ['❤', '3.000 tim', 'Xe bay chạy vòng', 'act'],
   ['➕', 'Follow', 'Solo sân khấu + cánh', 'act'],
   ['↗', 'Share', 'Lên camera + vẫy tay', 'act']

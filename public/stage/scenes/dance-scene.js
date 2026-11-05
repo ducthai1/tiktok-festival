@@ -25,7 +25,7 @@ import { disposeObject } from './person-model.js';
 const MEDALS = ['🥇', '🥈', '🥉'];
 const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
 // quà từ 200 💎 (một lượt) là "quà lớn": độc chiếm sân khấu — giữ bao lâu (ms, tính từ lúc giọng cảm ơn bắt đầu) theo bậc
-const BIG_GIFT_KC = 99; // từ Mũ (99 💎) là quà lớn: thẻ giữa màn + độc chiếm sân khấu (mốc Sàn Nhảy hạ 05/11)
+const BIG_GIFT_KC = 200; // từ 200 💎 (khoảng solo) là quà lớn: thẻ giữa màn + độc chiếm sân khấu
 const BIG_HOLD_MS = { 3: 6000, 4: 9000, 5: 12000, 6: 20000 };
 const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
@@ -234,18 +234,14 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     camera,
     welcome: { line: 'đã vào sàn! Gõ “quẩy” để nhảy bung 🪩', speech: (n) => `Chào mừng ${n}, đến sàn nhảy!` },
     // lệnh miễn phí nằm ở cột phải (dance-dj-panel.js). Bảng trái chỉ LIỆT KÊ ảnh món → hiệu ứng, như các live game khác
-    // (user 05/11 gửi mẫu Migo Live): không tiêu đề, không giá 💎, không câu mời "Tặng quà → nhận ngay" — TikTok hạn chế
-    // live vì "chèo kéo quà máy móc". Món nào cùng khoảng giá (DANCE_TIER_MIN) cũng ra cùng hiệu ứng.
-    // [quà mẫu (tên tiếng Anh trong SAMPLE_GIFTS), hiệu ứng ≤ ~20 ký tự]
+    // (user 05/11 gửi mẫu Migo Live): không tiêu đề, không câu mời "Tặng quà → nhận ngay" — TikTok hạn chế
+    // live vì "chèo kéo quà máy móc". 3 khoảng rộng (user 05/11: "1–200 thì được gì"); món nào trong khoảng cũng như nhau.
+    // [quà mẫu (tên tiếng Anh trong SAMPLE_GIFTS), khoảng 💎 (khớp DANCE_TIER_MIN), hiệu ứng ≤ ~20 ký tự]
     legend: [],
     giftList: [
-      ['Rose', '🦋 Có cánh + lên hình'],
-      ['Finger Heart', '🎈 Bay cao + solo ngắn'],
-      ['Doughnut', '🚗 Xe bay chạy vòng'],
-      ['Cap', '🎤 Solo + pháo hoa'],
-      ['Sunglasses', '👑 Khổng lồ VIP'],
-      ['Galaxy', '🎆 Pháo hoa + DROP'],
-      ['Sports Car', '🌌 Đại nhạc hội']
+      ['Rose', '1–199', '🚗 Xe bay + có cánh'],
+      ['Corgi', '200–999', '🎤 Solo + khổng lồ'],
+      ['Galaxy', '1.000+', '💥 DROP + pháo hoa']
     ],
     update(snapshot) {
       state = snapshot.state;
@@ -326,7 +322,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
           const cue = fx.ride ? () => sounds.rideCheer() : () => sounds.gift(fx.tier); // xe bay: kèn tiệc + hò reo (động cơ riêng)
           const m = { userId: fx.userId, line: thankLine(fx), effects: [() => { cue(); bigGift.show(fx); }] };
           openBatch(big ? stage.big({ ...m, holdMs: BIG_HOLD_MS[Math.min(6, fx.tier)] || 6000 }) : stage.now(m));
-          if (!big && fx.tier === 1) glance(fx.userId);
+          if (!big && fx.tier === 1 && !fx.ride) glance(fx.userId); // xe bay đã có camera bám theo xe
         }
       } else if (fx.kind === 'fountains') {
         companion(() => {

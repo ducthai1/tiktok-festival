@@ -1,10 +1,10 @@
 // SÀN NHẢY — hội trường quẩy: ai bình luận / thả tim / tặng quà là có một nhân vật chibi trên sàn (tối đa DANCE_SLOTS).
 // Miễn phí: "quẩy" nhảy bung, "nhảy" nhảy 1 cái, "to lên"/"nhỏ lại" đổi cỡ, "chào" vẫy tay, "bay lên" bay cao,
-// "đổi nv" đổi nhân vật, emoji đổi biểu cảm; mỗi 500 tim của một người = có cánh + lên camera, mỗi 3.000 tim = xe bay
-// một vòng; share = lên camera;
+// "đổi nv" đổi nhân vật, emoji đổi biểu cảm; mỗi 500 tim của một người = có cánh + lên camera (mỗi 1.000 tim thêm pháo
+// hoa), mỗi 3.000 tim = xe bay một vòng; share = lên camera;
 // follow (lần đầu) = thẻ lớn + solo sân khấu + cánh neon + danh hiệu FAN CỨNG;
 // tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → XE BAY
-// (30–98 💎) → SOLO giữa sân khấu (mốc quà Sàn Nhảy: DANCE_TIER_MIN)
+// (1–199 💎) → SOLO giữa sân khấu + khổng lồ (200–999) → DROP (1.000+) (mốc quà Sàn Nhảy: DANCE_TIER_MIN)
 // (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { DANCE_TIER_MIN, giftTierIn } from '../../public/shared/gift-tiers.js';
@@ -33,14 +33,15 @@ const JUMP_WORDS = ['nhay', 'nhay di', 'nhay 1 cai', 'nhay mot cai', 'jump'];
 const GROW_WORDS = ['to len', 'to ra', 'lon len'];
 const SHRINK_WORDS = ['nho lai', 'nho di', 'be lai'];
 const JUMP_MS = 1300;
-// Quà 30–98 💎 (nửa dưới bậc 3 của Sàn Nhảy): XE BAY mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu.
-// Từ 99 💎 trở lên giữ solo sân khấu + pháo hoa.
-export const RIDE_MIN_KC = 30;
-export const RIDE_MAX_KC = 98;
+// Quà 1–199 💎 (cả khoảng đầu của Sàn Nhảy): XE BAY mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu.
+// Từ 200 💎 trở lên: solo sân khấu + khổng lồ + pháo hoa.
+export const RIDE_MIN_KC = 1;
+export const RIDE_MAX_KC = 199;
 const RIDE_MS = 14500; // màn hình bay 14 s (cất cánh → một vòng → hạ cánh), dư nửa giây
 const WINGS_MS = 10 * 60 * 1000;
 export const LIKES_FOR_CAMERA = 500; // miễn phí: cánh + lên camera (user 05/11 chuyển bớt về free, trước là 1.000)
 export const LIKES_FOR_RIDE = 3000; // miễn phí: xe bay một vòng
+export const LIKES_FOR_FIREWORKS = 1000; // miễn phí: pháo hoa
 const FLY_WORDS = ['bay len', 'bay cao']; // "bay" trơn trùng "bây giờ" / "bảy" sau khi bỏ dấu → chỉ nhận cụm 2 chữ
 const FREE_FLY_MS = 60 * 1000;
 const WAVE_WORDS = ['chao', 'hello', 'hi', 'xin chao', 'chao ca nha', 'alo'];
@@ -222,7 +223,7 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
     d.face = tier >= 3 ? 'star' : 'party';
     d.faceUntil = now + FACE_MS;
     if (ride) {
-      d.rideUntil = now + RIDE_MS; // xe bay thay cho solo + pháo hoa
+      if (now >= d.rideUntil) d.rideUntil = now + RIDE_MS; // đang bay thì bay nốt vòng cũ (kéo dài làm lệch đường bay)
       addHype(gift.diamonds * 10, now, fx);
       return;
     }
@@ -327,6 +328,7 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
           } else if (crossed(LIKES_FOR_CAMERA)) {
             d.wingsUntil = Math.max(d.wingsUntil, now) + WINGS_MS; // "tym có cánh"
             fx.push({ kind: 'camera', userId: d.id, nickname: d.nickname, likes: d.likes });
+            if (crossed(LIKES_FOR_FIREWORKS)) fx.push({ kind: 'fireworks', power: 1 });
           }
         }
         addHype(Math.min(event.likeCount, 30), now, fx);

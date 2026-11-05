@@ -10,11 +10,10 @@
 //   6   (≥ 20.000)      Tên lửa, Sư tử, Vũ trụ TikTok
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
-// Sàn Nhảy hạ mốc (user chốt 05/11: "giảm mốc quà lớn lại"): Bắn tim đã có solo ngắn, Donut đã bay xe, Kính râm đã khổng lồ,
-// Dải ngân hà đã DROP, từ 5K là đại nhạc hội. Các game khác giữ TIER_MIN.
-//   1 (1–4) Hoa hồng · 2 (5–29) Bắn tim, Rosa · 3 (30–198) Donut, Mũ · 4 (199–999) Kính râm, Corgi, Súng tiền
-//   5 (1K–4,9K) Dải ngân hà, Pháo hoa, Máy bay riêng · 6 (5K+) Drama Queen, Siêu xe, Sư tử
-export const DANCE_TIER_MIN = [1, 5, 30, 199, 1000, 5000];
+// Sàn Nhảy chỉ 3 khoảng rộng (user chốt 05/11: "1–200 thì được gì"): 1–199 → bậc 1 (xe bay + cánh), 200–999 → bậc 4
+// (solo + khổng lồ + pháo hoa), 1.000+ → bậc 5 (DROP; từ 5.000 thêm đại nhạc hội = bậc 6). Mốc lặp lại (200, 200, 200)
+// = bỏ qua bậc 2–3. Các game khác giữ TIER_MIN.
+export const DANCE_TIER_MIN = [1, 200, 200, 200, 1000, 5000];
 
 /** Khoảng giá (kc) của một bậc (theo bảng mốc `mins`), viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
 export function tierRangeLabel(tier) {

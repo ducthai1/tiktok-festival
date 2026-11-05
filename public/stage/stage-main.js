@@ -37,11 +37,11 @@ let giftTiers = [];
 function legendFor(scene) {
   if (!scene) return [];
   const rows = [...(scene.legend || [])];
-  // danh sách viết sẵn (Sàn Nhảy): mỗi dòng chỉ ảnh món quà + hiệu ứng, không giá
+  // danh sách viết sẵn (Sàn Nhảy): mỗi dòng ảnh món quà + khoảng 💎 / hiệu ứng (2 dòng chữ)
   if (scene.giftList) {
-    for (const [en, label] of scene.giftList) {
+    for (const [en, range, label] of scene.giftList) {
       const pick = SAMPLE_GIFTS.find((g) => g.en === en);
-      if (pick) rows.push([[pick], ` ${label}`]);
+      if (pick) rows.push([[pick], `${range} 💎\n${label}`]);
     }
     return rows;
   }
