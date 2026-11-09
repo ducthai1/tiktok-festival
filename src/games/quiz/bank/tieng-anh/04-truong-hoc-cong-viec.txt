@@ -1,0 +1,155 @@
+# Tiếng Anh · Trường học, công việc
+MATH | Môn toán tiếng Anh là gì? | 1 | MATHS, MATHEMATICS
+ENGLISH | Môn tiếng Anh, gọi bằng tiếng Anh là gì? | 1
+HISTORY | Môn lịch sử tiếng Anh là gì? | 1
+SCIENCE | Môn khoa học tiếng Anh là gì? | 1
+MUSIC | Môn âm nhạc tiếng Anh là gì? | 1
+ART | Môn mỹ thuật tiếng Anh là gì? | 1 | ARTS, FINE ART, FINE ARTS
+GEOGRAPHY | Môn địa lý tiếng Anh là gì? | 2
+PHYSICS | Môn vật lý tiếng Anh là gì? | 2
+CHEMISTRY | Môn hoá học tiếng Anh là gì? | 2
+BIOLOGY | Môn sinh học tiếng Anh là gì? | 2
+LITERATURE | Môn văn học tiếng Anh là gì? | 2
+PE | Môn thể dục tiếng Anh là gì? | 2 | PHYSICAL EDUCATION, GYM
+SUBJECT | Môn học (toán, văn, sử…) tiếng Anh là gì? | 2 | SUBJECTS
+INFORMATICS | Môn tin học tiếng Anh là gì? | 3 | IT, ICT, COMPUTER SCIENCE, COMPUTING
+HOMEWORK | Bài tập về nhà tiếng Anh là gì? | 1
+LESSON | Bài học, tiết học tiếng Anh là gì? | 1 | CLASS, PERIOD
+TEST | Bài kiểm tra (15 phút, 1 tiết) tiếng Anh là gì? | 1 | QUIZ
+QUESTION | Câu hỏi tiếng Anh là gì? | 1
+ANSWER | Câu trả lời tiếng Anh là gì? | 1 | REPLY
+STUDY | Học bài tiếng Anh là gì? | 1 | LEARN
+TEACH | Dạy học (dạy bài cho học sinh) tiếng Anh là gì? | 1
+LIBRARY | Thư viện tiếng Anh là gì? | 1
+PAGE | Trang sách tiếng Anh là gì? | 1 | PAGES
+LATE | Đến muộn, đi trễ giờ tiếng Anh là gì? | 1
+UNIVERSITY | Trường đại học tiếng Anh là gì? | 1 | COLLEGE, UNI
+EXAM | Kỳ thi (thi học kỳ, thi đại học) tiếng Anh là gì? | 2 | EXAMINATION, TEST
+SCORE | Điểm số (điểm bài thi) tiếng Anh là gì? | 2 | SCORES, GRADE, GRADES, MARK, MARKS
+CLASSMATE | Bạn cùng lớp tiếng Anh là gì? | 2 | CLASSMATES
+DICTIONARY | Quyển từ điển tiếng Anh là gì? | 2
+UNIFORM | Bộ đồng phục tiếng Anh là gì? | 2
+BREAK | Giờ ra chơi tiếng Anh là gì? | 2 | BREAK TIME, RECESS, PLAYTIME
+CHALK | Viên phấn viết bảng tiếng Anh là gì? | 2
+CALCULATOR | Máy tính bỏ túi (bấm phép tính) tiếng Anh là gì? | 2
+PASS | Thi đỗ, thi đậu tiếng Anh là gì? | 2 | PASSED
+FAIL | Thi trượt, thi rớt tiếng Anh là gì? | 2 | FAILED
+MISTAKE | Lỗi sai (làm bài bị sai) tiếng Anh là gì? | 2 | MISTAKES, ERROR
+PRINCIPAL | Thầy, cô hiệu trưởng tiếng Anh là gì? | 3 | HEADMASTER, HEADMISTRESS, HEAD TEACHER
+SEMESTER | Học kỳ tiếng Anh là gì? | 3 | TERM
+KINDERGARTEN | Trường mẫu giáo tiếng Anh là gì? | 3 | PRESCHOOL, NURSERY, NURSERY SCHOOL
+TIMETABLE | Thời khoá biểu tiếng Anh là gì? | 3 | SCHEDULE, CLASS SCHEDULE
+GRADUATE | Tốt nghiệp (ra trường) tiếng Anh là gì? | 3 | GRADUATION
+SCHOLARSHIP | Học bổng tiếng Anh là gì? | 3
+ESSAY | Bài luận, bài văn tiếng Anh là gì? | 3 | COMPOSITION
+DOCTOR | Bác sĩ tiếng Anh là gì? | 1
+NURSE | Y tá tiếng Anh là gì? | 1
+FARMER | Nông dân tiếng Anh là gì? | 1
+POLICE | Chú cảnh sát tiếng Anh là gì? | 1 | POLICEMAN, POLICEWOMAN, POLICE OFFICER, OFFICER, COP
+DRIVER | Tài xế, bác tài tiếng Anh là gì? | 1
+SINGER | Ca sĩ tiếng Anh là gì? | 1
+WORKER | Công nhân tiếng Anh là gì? | 1 | FACTORY WORKER
+DANCER | Vũ công (người nhảy múa) tiếng Anh là gì? | 1
+JOB | Nghề nghiệp, công việc tiếng Anh là gì? | 1 | WORK, CAREER, OCCUPATION, PROFESSION
+CHEF | Đầu bếp tiếng Anh là gì? | 2 | COOK
+ACTOR | Diễn viên tiếng Anh là gì? | 2 | ACTRESS
+ENGINEER | Kỹ sư tiếng Anh là gì? | 2
+LAWYER | Luật sư tiếng Anh là gì? | 2 | ATTORNEY
+PILOT | Phi công tiếng Anh là gì? | 2
+DENTIST | Nha sĩ tiếng Anh là gì? | 2
+FIREFIGHTER | Lính cứu hoả tiếng Anh là gì? | 2 | FIREMAN
+ARTIST | Hoạ sĩ tiếng Anh là gì? | 2 | PAINTER
+WRITER | Nhà văn tiếng Anh là gì? | 2 | AUTHOR, NOVELIST
+WAITER | Người phục vụ bàn (bồi bàn) tiếng Anh là gì? | 2 | WAITRESS, SERVER
+POSTMAN | Người đưa thư tiếng Anh là gì? | 2 | MAILMAN, POSTWOMAN, MAIL CARRIER, POSTAL WORKER
+SCIENTIST | Nhà khoa học tiếng Anh là gì? | 2
+JOURNALIST | Nhà báo tiếng Anh là gì? | 3 | REPORTER
+ARCHITECT | Kiến trúc sư tiếng Anh là gì? | 3
+MECHANIC | Thợ sửa xe (thợ máy) tiếng Anh là gì? | 3
+ACCOUNTANT | Kế toán (người làm kế toán) tiếng Anh là gì? | 3
+CASHIER | Nhân viên thu ngân tiếng Anh là gì? | 3
+PROGRAMMER | Lập trình viên tiếng Anh là gì? | 3 | DEVELOPER, CODER, SOFTWARE ENGINEER
+PHOTOGRAPHER | Thợ chụp ảnh, nhiếp ảnh gia tiếng Anh là gì? | 3
+HAIRDRESSER | Thợ cắt tóc tiếng Anh là gì? | 3 | BARBER, HAIRSTYLIST
+OFFICE | Văn phòng tiếng Anh là gì? | 1
+BOSS | Sếp tiếng Anh là gì? | 1
+WORK | Làm việc (đi làm) tiếng Anh là gì? | 1
+BUSY | Bận rộn tiếng Anh là gì? | 1
+COMPANY | Công ty tiếng Anh là gì? | 1 | FIRM, CORPORATION, BUSINESS
+TEAM | Đội, nhóm (làm việc nhóm) tiếng Anh là gì? | 1 | GROUP
+MANAGER | Người quản lý (trưởng phòng) tiếng Anh là gì? | 2
+MEETING | Cuộc họp tiếng Anh là gì? | 2
+SALARY | Tiền lương tiếng Anh là gì? | 2 | WAGE, WAGES, PAY
+EMPLOYEE | Nhân viên (người làm công) tiếng Anh là gì? | 2 | STAFF
+CUSTOMER | Khách hàng tiếng Anh là gì? | 2 | CLIENT
+PRINTER | Máy in tiếng Anh là gì? | 2
+REPORT | Bản báo cáo tiếng Anh là gì? | 2
+BONUS | Tiền thưởng tiếng Anh là gì? | 2
+CV | Bản lý lịch xin việc tiếng Anh là gì? | 2 | RESUME, CURRICULUM VITAE
+INTERVIEW | Buổi phỏng vấn tiếng Anh là gì? | 2
+COLLEAGUE | Đồng nghiệp tiếng Anh là gì? | 3 | COWORKER
+DEADLINE | Hạn chót (hạn nộp việc) tiếng Anh là gì? | 3
+OVERTIME | Làm thêm giờ, tăng ca tiếng Anh là gì? | 3 | OT
+CONTRACT | Bản hợp đồng tiếng Anh là gì? | 3
+PROMOTION | Sự thăng chức tiếng Anh là gì? | 3
+RETIRE | Nghỉ hưu tiếng Anh là gì? | 3 | RETIRED, RETIREMENT
+COMPUTER | Máy vi tính tiếng Anh là gì? | 1 | PC
+LAPTOP | Máy tính xách tay tiếng Anh là gì? | 1 | NOTEBOOK
+MESSAGE | Tin nhắn tiếng Anh là gì? | 1 | MESSAGES, TEXT, TEXT MESSAGE, SMS
+CAMERA | Máy ảnh tiếng Anh là gì? | 1
+CALL | Gọi điện thoại tiếng Anh là gì? | 1 | PHONE, RING, PHONE CALL
+WEBSITE | Trang web tiếng Anh là gì? | 1 | WEB PAGE, SITE
+EMAIL | Thư điện tử tiếng Anh là gì? | 1 | MAIL
+KEYBOARD | Bàn phím tiếng Anh là gì? | 2
+SCREEN | Màn hình tiếng Anh là gì? | 2 | MONITOR, DISPLAY
+PASSWORD | Mật khẩu tiếng Anh là gì? | 2 | PASSCODE
+CHARGER | Cục sạc điện thoại tiếng Anh là gì? | 2
+BATTERY | Cục pin tiếng Anh là gì? | 2 | BATTERIES
+HEADPHONES | Tai nghe tiếng Anh là gì? | 2 | HEADPHONE, EARPHONES, EARPHONE, EARBUDS, HEADSET
+DOWNLOAD | Tải xuống (tải về máy) tiếng Anh là gì? | 2
+SEARCH | Tìm kiếm (trên mạng) tiếng Anh là gì? | 2
+CLICK | Nhấp chuột, bấm chuột tiếng Anh là gì? | 2
+ACCOUNT | Tài khoản (đăng nhập, ngân hàng) tiếng Anh là gì? | 2
+APP | Ứng dụng trên điện thoại tiếng Anh là gì? | 2 | APPS, APPLICATION
+TABLET | Máy tính bảng tiếng Anh là gì? | 2
+DELETE | Xoá (xoá tin nhắn, xoá ảnh) tiếng Anh là gì? | 2 | REMOVE, ERASE
+COMMENT | Bình luận tiếng Anh là gì? | 2 | COMMENTS
+SHARE | Chia sẻ (bài đăng, video) tiếng Anh là gì? | 2
+TECHNOLOGY | Công nghệ tiếng Anh là gì? | 2 | TECH
+FOLLOW | Theo dõi (một tài khoản) tiếng Anh là gì? | 2
+SOFTWARE | Phần mềm tiếng Anh là gì? | 3
+UPLOAD | Tải lên tiếng Anh là gì? | 3
+LOG IN | Đăng nhập tiếng Anh là gì? | 3 | LOGIN, SIGN IN, LOG ON
+SCREENSHOT | Ảnh chụp màn hình tiếng Anh là gì? | 3
+NOTIFICATION | Thông báo (hiện trên điện thoại) tiếng Anh là gì? | 3 | NOTIFICATIONS, ALERT
+MONEY | Tiền tiếng Anh là gì? | 1 | CASH
+PRICE | Giá tiền tiếng Anh là gì? | 1 | COST
+CHEAP | Rẻ tiếng Anh là gì? | 1 | INEXPENSIVE
+BANK | Ngân hàng tiếng Anh là gì? | 1
+BUY | Mua tiếng Anh là gì? | 1 | PURCHASE
+SELL | Bán tiếng Anh là gì? | 1
+PAY | Trả tiền, thanh toán tiếng Anh là gì? | 1 | PAYMENT
+SHOP | Cửa hàng tiếng Anh là gì? | 1 | STORE
+MARKET | Cái chợ (đi chợ) tiếng Anh là gì? | 1
+RICH | Giàu tiếng Anh là gì? | 1 | WEALTHY
+POOR | Nghèo tiếng Anh là gì? | 1
+FREE | Miễn phí (không mất tiền) tiếng Anh là gì? | 1
+SHOPPING | Đi mua sắm tiếng Anh là gì? | 1 | GO SHOPPING
+SUPERMARKET | Siêu thị tiếng Anh là gì? | 1
+EXPENSIVE | Đắt (giá cao) tiếng Anh là gì? | 2 | COSTLY, PRICEY
+BILL | Hoá đơn tiếng Anh là gì? | 2 | INVOICE, CHECK, RECEIPT
+CASH | Tiền mặt tiếng Anh là gì? | 2
+DISCOUNT | Giảm giá (khuyến mãi) tiếng Anh là gì? | 2 | SALE
+WALLET | Cái ví tiền tiếng Anh là gì? | 2 | PURSE
+COIN | Đồng xu tiếng Anh là gì? | 2 | COINS
+BORROW | Mượn, vay (tiền) tiếng Anh là gì? | 2
+SPEND | Tiêu tiền (xài tiền) tiếng Anh là gì? | 2
+TAX | Thuế tiếng Anh là gì? | 2 | TAXES
+DELIVERY | Giao hàng tiếng Anh là gì? | 2 | SHIPPING
+PIGGY BANK | Con heo đất (ống tiết kiệm) tiếng Anh là gì? | 2 | MONEY BOX
+CHANGE | Tiền thối, tiền thừa trả lại tiếng Anh là gì? | 3
+DEBT | Món nợ tiếng Anh là gì? | 3 | DEBTS
+CREDIT CARD | Thẻ tín dụng tiếng Anh là gì? | 3
+BARGAIN | Mặc cả, trả giá tiếng Anh là gì? | 3 | HAGGLE
+REFUND | Hoàn tiền (trả lại tiền) tiếng Anh là gì? | 3
+SAVINGS | Tiền tiết kiệm tiếng Anh là gì? | 3 | SAVING

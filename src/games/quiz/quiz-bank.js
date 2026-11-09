@@ -83,9 +83,21 @@ export function loadClassroomQuestions() {
   return lopHocFiles().filter((f) => f.file !== ENGLISH_FILE && f.file !== EMOJI_FILE).flatMap((f) => parseTextBank(f.text, f.file));
 }
 
+/**
+ * Từ vựng tiếng Anh: 176 từ cơ bản (Lớp Học Chữ) + ~1.000 từ tự soạn theo chủ đề trong bank/tieng-anh/ (A1–B1).
+ * Một đáp án có thể có hai câu khác nghĩa (BREAK: giờ ra chơi / làm vỡ) — chỉ bỏ câu trùng cả đáp án lẫn đề.
+ */
 export function loadEnglishQuestions() {
   const file = lopHocFiles().find((f) => f.file === ENGLISH_FILE);
-  return parseTextBank(file.text, 'Tiếng Anh').map((q) => ({ ...q, category: 'Tiếng Anh' }));
+  const basic = parseTextBank(file.text).map((q) => ({ ...q, category: 'Tiếng Anh · Cơ bản' }));
+  const topics = readTxtDir('tieng-anh').flatMap((f) => parseTextBank(f.text, 'Tiếng Anh'));
+  const seen = new Set();
+  return [...basic, ...topics].filter((q) => {
+    const key = `${foldText(q.answer)}|${foldText(q.prompt)}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 /** Đuổi hình bắt chữ: chuỗi emoji ghép chữ (Lớp Học Chữ) + kho emoji phim/bài hát/thành ngữ (Emoji Quiz). */

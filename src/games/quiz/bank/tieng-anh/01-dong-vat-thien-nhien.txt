@@ -1,0 +1,156 @@
+# Tiếng Anh · Động vật, thiên nhiên
+WOLF | Con sói tiếng Anh là gì? | 1
+FOX | Con cáo tiếng Anh là gì? | 1
+DEER | Con nai tiếng Anh là gì? | 1
+REINDEER | Con tuần lộc (kéo xe ông già Noel) tiếng Anh là gì? | 2
+CAMEL | Con lạc đà tiếng Anh là gì? | 2
+DONKEY | Con lừa tiếng Anh là gì? | 1
+BUFFALO | Con trâu tiếng Anh là gì? | 2 | WATER BUFFALO
+SQUIRREL | Con sóc tiếng Anh là gì? | 2
+HEDGEHOG | Con nhím tiếng Anh là gì? | 3 | PORCUPINE
+BAT | Con dơi tiếng Anh là gì? | 1
+PANDA | Con gấu trúc tiếng Anh là gì? | 1 | GIANT PANDA
+KOALA | Con gấu túi tiếng Anh là gì? | 1 | KOALA BEAR
+POLAR BEAR | Gấu trắng Bắc Cực tiếng Anh là gì? | 2
+GORILLA | Con khỉ đột tiếng Anh là gì? | 2
+CHIMPANZEE | Con tinh tinh tiếng Anh là gì? | 3 | CHIMP
+RHINOCEROS | Con tê giác tiếng Anh là gì? | 3 | RHINO
+HIPPO | Con hà mã tiếng Anh là gì? | 2 | HIPPOPOTAMUS
+ANIMAL | Động vật (con vật nói chung) tiếng Anh là gì? | 1 | ANIMALS
+PET | Thú cưng tiếng Anh là gì? | 1 | PETS
+DINOSAUR | Con khủng long tiếng Anh là gì? | 1 | DINOSAURS, DINO
+CROCODILE | Con cá sấu tiếng Anh là gì? | 1 | ALLIGATOR, CROC
+LIZARD | Con thằn lằn tiếng Anh là gì? | 2 | GECKO
+INSECT | Côn trùng tiếng Anh là gì? | 2 | INSECTS, BUG, BUGS
+MOSQUITO | Con muỗi tiếng Anh là gì? | 2 | MOSQUITOES, MOSQUITOS
+HOUSEFLY | Con ruồi tiếng Anh là gì? | 2 | FLY, FLIES, HOUSEFLIES
+DRAGONFLY | Con chuồn chuồn tiếng Anh là gì? | 3
+LADYBUG | Con bọ rùa tiếng Anh là gì? | 3 | LADYBIRD, LADY BEETLE
+COCKROACH | Con gián tiếng Anh là gì? | 3 | ROACH
+GRASSHOPPER | Con châu chấu tiếng Anh là gì? | 3 | LOCUST
+CATERPILLAR | Con sâu bướm tiếng Anh là gì? | 3
+FIREFLY | Con đom đóm tiếng Anh là gì? | 3 | LIGHTNING BUG
+SNAIL | Con ốc sên tiếng Anh là gì? | 2
+WORM | Con giun đất tiếng Anh là gì? | 2 | EARTHWORM
+PARROT | Con vẹt tiếng Anh là gì? | 1
+EAGLE | Chim đại bàng tiếng Anh là gì? | 1
+PEACOCK | Con chim công tiếng Anh là gì? | 2 | PEAFOWL, PEAHEN
+SWAN | Con thiên nga tiếng Anh là gì? | 2
+CROW | Con quạ tiếng Anh là gì? | 2 | RAVEN
+PIGEON | Chim bồ câu tiếng Anh là gì? | 2 | DOVE
+SPARROW | Chim sẻ tiếng Anh là gì? | 3
+GOOSE | Con ngỗng tiếng Anh là gì? | 2 | GEESE
+STORK | Con cò tiếng Anh là gì? | 3 | EGRET, HERON
+OSTRICH | Con đà điểu tiếng Anh là gì? | 3
+TURKEY | Con gà tây tiếng Anh là gì? | 2
+NEST | Tổ chim tiếng Anh là gì? | 2 | NESTS, BIRD NEST, BIRDS NEST
+WING | Đôi cánh (của chim) tiếng Anh là gì? | 2 | WINGS
+TAIL | Cái đuôi (của con vật) tiếng Anh là gì? | 2 | TAILS
+WHALE | Con cá voi tiếng Anh là gì? | 1
+OCTOPUS | Con bạch tuộc tiếng Anh là gì? | 2
+JELLYFISH | Con sứa tiếng Anh là gì? | 2
+STARFISH | Con sao biển tiếng Anh là gì? | 2 | SEA STAR
+SEAHORSE | Con cá ngựa tiếng Anh là gì? | 2
+SEAL | Con hải cẩu tiếng Anh là gì? | 2
+CORAL | San hô tiếng Anh là gì? | 3 | CORALS, CORAL REEF
+SEASHELL | Vỏ sò, vỏ ốc biển tiếng Anh là gì? | 2 | SHELL, SHELLS, SEASHELLS
+GOLDFISH | Con cá vàng tiếng Anh là gì? | 1
+PLANT | Thực vật (cây cỏ nói chung) tiếng Anh là gì? | 1 | PLANTS
+LEAF | Chiếc lá tiếng Anh là gì? | 1 | LEAVES
+GRASS | Cỏ (bãi cỏ) tiếng Anh là gì? | 1 | LAWN
+ROOT | Rễ cây tiếng Anh là gì? | 2 | ROOTS
+BRANCH | Cành cây tiếng Anh là gì? | 2 | BRANCHES, TWIG, TWIGS
+SEED | Hạt giống tiếng Anh là gì? | 2 | SEEDS
+ROSE | Hoa hồng tiếng Anh là gì? | 1 | ROSES
+LOTUS | Hoa sen tiếng Anh là gì? | 2 | LOTUS FLOWER
+SUNFLOWER | Hoa hướng dương tiếng Anh là gì? | 1 | SUNFLOWERS
+LILY | Hoa ly (hoa loa kèn) tiếng Anh là gì? | 2 | LILIES
+ORCHID | Hoa lan (hoa phong lan) tiếng Anh là gì? | 3 | ORCHIDS
+CHERRY BLOSSOM | Hoa anh đào tiếng Anh là gì? | 3 | SAKURA, CHERRY BLOSSOMS
+CACTUS | Cây xương rồng tiếng Anh là gì? | 2 | CACTI, CACTUSES
+BAMBOO | Cây tre tiếng Anh là gì? | 2
+PINE | Cây thông tiếng Anh là gì? | 2 | PINE TREE, FIR, FIR TREE
+BANYAN | Cây đa tiếng Anh là gì? | 3 | BANYAN TREE
+BUSH | Bụi cây tiếng Anh là gì? | 2 | BUSHES, SHRUB, SHRUBS
+FOREST | Khu rừng tiếng Anh là gì? | 1 | WOODS, WOODLAND
+JUNGLE | Rừng rậm nhiệt đới tiếng Anh là gì? | 1 | RAINFOREST
+RICE FIELD | Ruộng lúa tiếng Anh là gì? | 3 | PADDY, PADDY FIELD, RICE PADDY
+FIELD | Cánh đồng tiếng Anh là gì? | 2 | FIELDS
+WEATHER | Thời tiết tiếng Anh là gì? | 1
+SUNNY | Trời nắng (tính từ) tiếng Anh là gì? | 1
+RAINY | Trời mưa (tính từ) tiếng Anh là gì? | 1
+CLOUDY | Trời nhiều mây (tính từ) tiếng Anh là gì? | 1
+WINDY | Trời nhiều gió (tính từ) tiếng Anh là gì? | 1
+SNOWY | Trời có tuyết (tính từ) tiếng Anh là gì? | 2
+FOGGY | Trời có sương mù (tính từ) tiếng Anh là gì? | 2 | MISTY
+STORMY | Trời giông bão (tính từ) tiếng Anh là gì? | 2
+WARM | Ấm áp (tính từ) tiếng Anh là gì? | 1
+COOL | Trời mát mẻ (tính từ) tiếng Anh là gì? | 1
+DRY | Khô ráo, hanh khô (tính từ) tiếng Anh là gì? | 1
+WET | Ướt (tính từ) tiếng Anh là gì? | 1
+HUMID | Trời nồm ẩm, oi ẩm (tính từ) tiếng Anh là gì? | 3 | MUGGY, DAMP
+FREEZING | Lạnh cóng, rét buốt (tính từ) tiếng Anh là gì? | 2 | ICY, FREEZING COLD
+STORM | Cơn bão tiếng Anh là gì? | 1 | TYPHOON, HURRICANE, CYCLONE
+THUNDER | Tiếng sấm tiếng Anh là gì? | 2
+LIGHTNING | Tia chớp, tia sét tiếng Anh là gì? | 3 | LIGHTNING BOLT, THUNDERBOLT
+FOG | Sương mù tiếng Anh là gì? | 2 | MIST
+ICE | Băng (nước đá) tiếng Anh là gì? | 1
+HAIL | Mưa đá tiếng Anh là gì? | 3 | HAILSTONE, HAILSTONES
+DRIZZLE | Mưa phùn tiếng Anh là gì? | 3
+TORNADO | Lốc xoáy, vòi rồng tiếng Anh là gì? | 2 | TWISTER, WHIRLWIND
+FLOOD | Lũ lụt tiếng Anh là gì? | 2 | FLOODS, FLOODING
+DROUGHT | Hạn hán tiếng Anh là gì? | 3
+TEMPERATURE | Nhiệt độ tiếng Anh là gì? | 2
+SUNSHINE | Ánh nắng mặt trời tiếng Anh là gì? | 1 | SUNLIGHT
+SUNRISE | Bình minh (lúc mặt trời mọc) tiếng Anh là gì? | 2 | DAWN, DAYBREAK
+SUNSET | Hoàng hôn (lúc mặt trời lặn) tiếng Anh là gì? | 2 | SUNDOWN, DUSK
+RAINDROP | Giọt mưa tiếng Anh là gì? | 2 | RAINDROPS
+SNOWFLAKE | Bông tuyết tiếng Anh là gì? | 2 | SNOWFLAKES
+SNOWMAN | Người tuyết tiếng Anh là gì? | 1 | SNOWMEN
+FORECAST | Dự báo thời tiết tiếng Anh là gì? | 3 | WEATHER FORECAST
+CLIMATE | Khí hậu tiếng Anh là gì? | 3
+SPRING | Mùa xuân tiếng Anh là gì? | 1 | SPRINGTIME
+SUMMER | Mùa hè tiếng Anh là gì? | 1 | SUMMERTIME
+AUTUMN | Mùa thu tiếng Anh là gì? | 1 | FALL
+WINTER | Mùa đông tiếng Anh là gì? | 1 | WINTERTIME
+SEASON | Mùa (xuân, hạ, thu, đông) tiếng Anh là gì? | 1 | SEASONS
+RAINY SEASON | Mùa mưa tiếng Anh là gì? | 2 | WET SEASON, MONSOON SEASON, MONSOON
+DRY SEASON | Mùa khô tiếng Anh là gì? | 2
+NATURE | Thiên nhiên tiếng Anh là gì? | 1
+LAKE | Cái hồ (hồ nước) tiếng Anh là gì? | 1
+POND | Cái ao tiếng Anh là gì? | 2
+ISLAND | Hòn đảo tiếng Anh là gì? | 1 | ISLE
+BEACH | Bãi biển tiếng Anh là gì? | 1
+COAST | Bờ biển tiếng Anh là gì? | 2 | SHORE, SEASHORE, COASTLINE, SEASIDE
+BAY | Vịnh (như vịnh Hạ Long) tiếng Anh là gì? | 2 | GULF
+DESERT | Sa mạc tiếng Anh là gì? | 2
+VOLCANO | Núi lửa tiếng Anh là gì? | 2 | VOLCANOES
+HILL | Ngọn đồi tiếng Anh là gì? | 1 | HILLS
+VALLEY | Thung lũng tiếng Anh là gì? | 2
+WATERFALL | Thác nước tiếng Anh là gì? | 2 | FALLS
+STREAM | Dòng suối tiếng Anh là gì? | 2 | CREEK, BROOK
+ROCK | Hòn đá, tảng đá tiếng Anh là gì? | 1 | STONE, ROCKS, STONES
+SAND | Cát tiếng Anh là gì? | 1
+SOIL | Đất trồng cây tiếng Anh là gì? | 2 | DIRT, EARTH
+MUD | Bùn tiếng Anh là gì? | 2
+EARTH | Trái Đất tiếng Anh là gì? | 1 | THE EARTH, PLANET EARTH
+WAVE | Sóng biển (con sóng) tiếng Anh là gì? | 1 | WAVES
+AIR | Không khí tiếng Anh là gì? | 1
+FIRE | Lửa (ngọn lửa) tiếng Anh là gì? | 1 | FLAME, FLAMES
+PEAK | Đỉnh núi tiếng Anh là gì? | 3 | SUMMIT, MOUNTAIN TOP
+ICEBERG | Tảng băng trôi tiếng Anh là gì? | 2
+EARTHQUAKE | Động đất tiếng Anh là gì? | 2 | QUAKE
+TSUNAMI | Sóng thần tiếng Anh là gì? | 2 | TIDAL WAVE
+LANDSLIDE | Sạt lở đất tiếng Anh là gì? | 3 | MUDSLIDE, LANDSLIP
+ENVIRONMENT | Môi trường tiếng Anh là gì? | 2
+POLLUTION | Sự ô nhiễm tiếng Anh là gì? | 2
+RECYCLE | Tái chế tiếng Anh là gì? | 2 | RECYCLING
+TRASH | Rác thải tiếng Anh là gì? | 2 | GARBAGE, RUBBISH, WASTE, LITTER
+PLASTIC | Nhựa (chất liệu nhựa) tiếng Anh là gì? | 2 | PLASTICS
+CLIMATE CHANGE | Biến đổi khí hậu tiếng Anh là gì? | 3
+GLOBAL WARMING | Sự nóng lên toàn cầu tiếng Anh là gì? | 3
+SMOKE | Khói tiếng Anh là gì? | 2
+SOLAR ENERGY | Năng lượng mặt trời tiếng Anh là gì? | 3 | SOLAR POWER
+PROTECT | Bảo vệ (môi trường) tiếng Anh là gì? | 2 | PRESERVE, CONSERVE, SAVE
+EXTINCT | Tuyệt chủng tiếng Anh là gì? | 3 | EXTINCTION
+WILDFIRE | Cháy rừng tiếng Anh là gì? | 3 | FOREST FIRE, BUSHFIRE

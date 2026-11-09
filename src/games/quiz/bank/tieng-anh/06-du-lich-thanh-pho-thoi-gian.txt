@@ -1,0 +1,160 @@
+# Tiếng Anh · Du lịch, thời gian
+AIRPORT | Sân bay tiếng Anh là gì? | 1
+HOTEL | Khách sạn tiếng Anh là gì? | 1
+PARK | Công viên tiếng Anh là gì? | 1
+ZOO | Sở thú tiếng Anh là gì? | 1
+CITY | Thành phố tiếng Anh là gì? | 1
+STREET | Đường phố tiếng Anh là gì? | 1 | ROAD
+CAFE | Quán cà phê tiếng Anh là gì? | 1 | COFFEE SHOP, COFFEE HOUSE
+NIGHT MARKET | Chợ đêm tiếng Anh là gì? | 2
+MUSEUM | Bảo tàng tiếng Anh là gì? | 2
+CINEMA | Rạp chiếu phim tiếng Anh là gì? | 2 | MOVIE THEATER, MOVIE THEATRE, THEATER, THEATRE, MOVIES
+RESTAURANT | Nhà hàng tiếng Anh là gì? | 2
+BRIDGE | Cây cầu tiếng Anh là gì? | 2
+POST OFFICE | Bưu điện tiếng Anh là gì? | 2
+BUS STOP | Trạm xe buýt tiếng Anh là gì? | 2 | BUS STATION
+TRAIN STATION | Ga tàu hoả tiếng Anh là gì? | 2 | RAILWAY STATION, RAIL STATION, STATION
+MALL | Trung tâm thương mại tiếng Anh là gì? | 2 | SHOPPING MALL, SHOPPING CENTER, SHOPPING CENTRE
+STADIUM | Sân vận động tiếng Anh là gì? | 2
+CHURCH | Nhà thờ tiếng Anh là gì? | 2 | CATHEDRAL
+GAS STATION | Cây xăng tiếng Anh là gì? | 3 | PETROL STATION, FILLING STATION, SERVICE STATION
+PAGODA | Ngôi chùa tiếng Anh là gì? | 3 | TEMPLE
+CROSSROADS | Ngã tư tiếng Anh là gì? | 3 | CROSSROAD, INTERSECTION, JUNCTION
+SIDEWALK | Vỉa hè tiếng Anh là gì? | 3 | PAVEMENT, FOOTPATH
+AMUSEMENT PARK | Công viên giải trí (khu vui chơi) tiếng Anh là gì? | 3 | THEME PARK, FUNFAIR
+MOTORBIKE | Xe máy tiếng Anh là gì? | 1 | MOTORCYCLE, SCOOTER
+TAXI | Xe taxi tiếng Anh là gì? | 1 | CAB, TAXICAB
+SHIP | Tàu thuỷ (tàu lớn đi biển) tiếng Anh là gì? | 1 | BOAT, VESSEL
+DRIVE | Lái xe ô tô tiếng Anh là gì? | 1
+RIDE | Cưỡi, đi (cưỡi ngựa, đi xe đạp) tiếng Anh là gì? | 1
+SUBWAY | Tàu điện ngầm tiếng Anh là gì? | 2 | UNDERGROUND, METRO, TUBE
+TRAFFIC LIGHT | Đèn giao thông tiếng Anh là gì? | 2 | TRAFFIC LIGHTS, STOPLIGHT, TRAFFIC SIGNAL
+TRUCK | Xe tải tiếng Anh là gì? | 2 | LORRY
+HELMET | Mũ bảo hiểm (đội khi đi xe máy) tiếng Anh là gì? | 2 | CRASH HELMET
+PASSENGER | Hành khách tiếng Anh là gì? | 2
+HELICOPTER | Máy bay trực thăng tiếng Anh là gì? | 3 | CHOPPER
+TRAFFIC JAM | Kẹt xe, tắc đường tiếng Anh là gì? | 3 | TRAFFIC CONGESTION, GRIDLOCK
+SEAT BELT | Dây an toàn (trên ô tô) tiếng Anh là gì? | 3 | SEATBELT, SAFETY BELT
+CYCLO | Xích lô tiếng Anh là gì? | 3 | PEDICAB, RICKSHAW, CYCLE RICKSHAW, TRISHAW
+HIGHWAY | Đường cao tốc tiếng Anh là gì? | 3 | EXPRESSWAY, FREEWAY, MOTORWAY
+TICKET | Tấm vé tiếng Anh là gì? | 1 | TICKETS
+MAP | Bản đồ tiếng Anh là gì? | 1
+TRAVEL | Đi du lịch tiếng Anh là gì? | 1 | TRAVELING, TRAVELLING
+PHOTO | Bức ảnh chụp tiếng Anh là gì? | 1 | PICTURE, PHOTOGRAPH, PIC
+PASSPORT | Hộ chiếu tiếng Anh là gì? | 2
+LUGGAGE | Hành lý tiếng Anh là gì? | 2 | BAGGAGE
+SUITCASE | Cái va li tiếng Anh là gì? | 2
+TOURIST | Khách du lịch tiếng Anh là gì? | 2 | TRAVELER, TRAVELLER, VISITOR
+TRIP | Chuyến đi tiếng Anh là gì? | 2 | JOURNEY, TOUR
+HOLIDAY | Kỳ nghỉ (đi nghỉ lễ, nghỉ phép) tiếng Anh là gì? | 2 | VACATION, HOLIDAYS
+FLIGHT | Chuyến bay tiếng Anh là gì? | 2
+SELFIE | Ảnh tự sướng tiếng Anh là gì? | 2
+CAMPING | Đi cắm trại tiếng Anh là gì? | 2 | CAMP, GO CAMPING
+SOUVENIR | Quà lưu niệm tiếng Anh là gì? | 3 | SOUVENIRS
+TOUR GUIDE | Hướng dẫn viên du lịch tiếng Anh là gì? | 3 | GUIDE
+BOARDING PASS | Thẻ lên máy bay tiếng Anh là gì? | 3
+SIGHTSEEING | Đi tham quan, ngắm cảnh tiếng Anh là gì? | 3
+RECEPTION | Quầy lễ tân (khách sạn) tiếng Anh là gì? | 3 | FRONT DESK, RECEPTION DESK
+ABROAD | Ở nước ngoài (đi nước ngoài) tiếng Anh là gì? | 3 | OVERSEAS
+LEFT | Bên trái tiếng Anh là gì? | 1
+RIGHT | Bên phải tiếng Anh là gì? | 1
+UP | Lên (đi lên, nhìn lên) tiếng Anh là gì? | 1 | UPWARD, UPWARDS
+DOWN | Xuống (đi xuống, ngồi xuống) tiếng Anh là gì? | 1 | DOWNWARD, DOWNWARDS
+ON | Ở trên (quyển sách ở trên bàn) tiếng Anh là gì? | 1
+UNDER | Ở dưới (con mèo nằm dưới gầm bàn) tiếng Anh là gì? | 1 | BELOW, BENEATH, UNDERNEATH
+IN | Ở trong (con cá ở trong bể) tiếng Anh là gì? | 1 | INSIDE
+HERE | Ở đây tiếng Anh là gì? | 1
+THERE | Ở đó, ở kia tiếng Anh là gì? | 1 | OVER THERE
+WHERE | Ở đâu (từ để hỏi đường) tiếng Anh là gì? | 1
+OUTSIDE | Bên ngoài tiếng Anh là gì? | 2 | OUT
+IN FRONT | Phía trước, đằng trước tiếng Anh là gì? | 2 | IN FRONT OF, FRONT, AHEAD
+BEHIND | Phía sau, đằng sau tiếng Anh là gì? | 2 | AT THE BACK, BACK
+BETWEEN | Ở giữa hai vật (giữa A và B) tiếng Anh là gì? | 2
+NEXT TO | Bên cạnh, sát bên tiếng Anh là gì? | 2 | BESIDE, BY
+NORTH | Hướng Bắc tiếng Anh là gì? | 2
+SOUTH | Hướng Nam tiếng Anh là gì? | 2
+EAST | Hướng Đông tiếng Anh là gì? | 2
+WEST | Hướng Tây tiếng Anh là gì? | 2
+STRAIGHT | Đi thẳng (khi chỉ đường) tiếng Anh là gì? | 2 | GO STRAIGHT, STRAIGHT ON, STRAIGHT AHEAD
+TURN | Rẽ, quẹo (rẽ trái, rẽ phải) tiếng Anh là gì? | 2
+EXIT | Lối ra tiếng Anh là gì? | 2 | WAY OUT
+ENTRANCE | Lối vào tiếng Anh là gì? | 3 | WAY IN
+OPPOSITE | Đối diện (bên kia đường) tiếng Anh là gì? | 3 | ACROSS FROM, ACROSS
+TUESDAY | Thứ Ba tiếng Anh là gì? | 1
+WEDNESDAY | Thứ Tư tiếng Anh là gì? | 2
+THURSDAY | Thứ Năm tiếng Anh là gì? | 2
+FRIDAY | Thứ Sáu tiếng Anh là gì? | 1
+SATURDAY | Thứ Bảy tiếng Anh là gì? | 1
+JANUARY | Tháng Một (tháng 1) tiếng Anh là gì? | 1
+FEBRUARY | Tháng Hai (tháng 2) tiếng Anh là gì? | 2
+MARCH | Tháng Ba (tháng 3) tiếng Anh là gì? | 1
+APRIL | Tháng Tư (tháng 4) tiếng Anh là gì? | 1
+MAY | Tháng Năm (tháng 5) tiếng Anh là gì? | 1
+JUNE | Tháng Sáu (tháng 6) tiếng Anh là gì? | 1
+JULY | Tháng Bảy (tháng 7) tiếng Anh là gì? | 1
+AUGUST | Tháng Tám (tháng 8) tiếng Anh là gì? | 2
+SEPTEMBER | Tháng Chín (tháng 9) tiếng Anh là gì? | 2
+OCTOBER | Tháng Mười (tháng 10) tiếng Anh là gì? | 2
+NOVEMBER | Tháng Mười Một (tháng 11) tiếng Anh là gì? | 2
+DECEMBER | Tháng Mười Hai (tháng 12) tiếng Anh là gì? | 2
+TIME | Thời gian tiếng Anh là gì? | 1
+HOUR | Giờ (một tiếng đồng hồ) tiếng Anh là gì? | 1 | HOURS
+MINUTE | Phút tiếng Anh là gì? | 1 | MINUTES
+SECOND | Giây (đơn vị thời gian) tiếng Anh là gì? | 2 | SECONDS
+DAY | Ngày (một ngày có 24 giờ) tiếng Anh là gì? | 1 | DAYS
+WEEK | Tuần (7 ngày) tiếng Anh là gì? | 1 | WEEKS
+MONTH | Tháng tiếng Anh là gì? | 1 | MONTHS
+YEAR | Năm (365 ngày) tiếng Anh là gì? | 1 | YEARS
+YESTERDAY | Hôm qua tiếng Anh là gì? | 1
+TOMORROW | Ngày mai tiếng Anh là gì? | 1
+AFTERNOON | Buổi chiều tiếng Anh là gì? | 1
+EVENING | Buổi tối tiếng Anh là gì? | 1
+NOW | Bây giờ tiếng Anh là gì? | 1 | RIGHT NOW
+WEEKEND | Cuối tuần tiếng Anh là gì? | 2
+NOON | Buổi trưa (12 giờ trưa) tiếng Anh là gì? | 2 | MIDDAY
+MIDNIGHT | Nửa đêm (12 giờ đêm) tiếng Anh là gì? | 2
+TONIGHT | Tối nay tiếng Anh là gì? | 2
+CALENDAR | Cuốn lịch, tờ lịch tiếng Anh là gì? | 2
+FUTURE | Tương lai tiếng Anh là gì? | 2
+CENTURY | Thế kỷ (100 năm) tiếng Anh là gì? | 3
+DECADE | Thập kỷ (10 năm) tiếng Anh là gì? | 3
+LUNAR CALENDAR | Âm lịch tiếng Anh là gì? | 3 | LUNAR
+FOOTBALL | Bóng đá tiếng Anh là gì? | 1 | SOCCER
+MOVIE | Bộ phim tiếng Anh là gì? | 1 | FILM, MOVIES, FILMS
+SONG | Bài hát tiếng Anh là gì? | 1 | SONGS
+GAME | Trò chơi tiếng Anh là gì? | 1 | GAMES
+SPORT | Thể thao tiếng Anh là gì? | 1 | SPORTS
+BADMINTON | Cầu lông tiếng Anh là gì? | 2
+BASKETBALL | Bóng rổ tiếng Anh là gì? | 2
+VOLLEYBALL | Bóng chuyền tiếng Anh là gì? | 2
+TENNIS | Quần vợt tiếng Anh là gì? | 2
+CHESS | Cờ vua tiếng Anh là gì? | 2
+FISHING | Câu cá tiếng Anh là gì? | 2 | FISH, GO FISHING
+HOBBY | Sở thích tiếng Anh là gì? | 2 | HOBBIES
+CONCERT | Buổi hoà nhạc, đêm nhạc tiếng Anh là gì? | 2
+CARTOON | Phim hoạt hình tiếng Anh là gì? | 2 | CARTOONS, ANIMATION, ANIMATED FILM, ANIMATED MOVIE
+PLAYER | Cầu thủ, người chơi tiếng Anh là gì? | 2
+MATCH | Trận đấu tiếng Anh là gì? | 2 | GAME
+PICNIC | Buổi dã ngoại tiếng Anh là gì? | 2
+TABLE TENNIS | Bóng bàn tiếng Anh là gì? | 3 | PING PONG
+MARTIAL ARTS | Võ thuật tiếng Anh là gì? | 3 | MARTIAL ART
+REFEREE | Trọng tài tiếng Anh là gì? | 3 | UMPIRE
+CHAMPION | Nhà vô địch tiếng Anh là gì? | 3
+MEDAL | Huy chương tiếng Anh là gì? | 3 | MEDALS
+GARDENING | Làm vườn (sở thích) tiếng Anh là gì? | 3
+LUNAR NEW YEAR | Tết Nguyên Đán tiếng Anh là gì? | 2 | TET HOLIDAY, SPRING FESTIVAL
+NEW YEAR | Năm mới tiếng Anh là gì? | 1 | HAPPY NEW YEAR
+CHRISTMAS | Lễ Giáng sinh tiếng Anh là gì? | 1 | XMAS, NOEL, CHRISTMAS DAY
+GIFT | Món quà tiếng Anh là gì? | 1 | PRESENT, GIFTS, PRESENTS
+PARTY | Bữa tiệc tiếng Anh là gì? | 1
+FESTIVAL | Lễ hội tiếng Anh là gì? | 2
+LANTERN | Đèn lồng tiếng Anh là gì? | 2 | LANTERNS
+FIREWORKS | Pháo hoa tiếng Anh là gì? | 2 | FIREWORK
+SANTA CLAUS | Ông già Noel tiếng Anh là gì? | 2 | SANTA, FATHER CHRISTMAS
+CHRISTMAS TREE | Cây thông Noel tiếng Anh là gì? | 2 | XMAS TREE
+MOONCAKE | Bánh Trung thu tiếng Anh là gì? | 2 | MOON CAKE, MOONCAKES
+WISH | Lời chúc, điều ước tiếng Anh là gì? | 2 | WISHES, BEST WISHES, GREETING, GREETINGS
+MID-AUTUMN | Tết Trung thu tiếng Anh là gì? | 3 | MID-AUTUMN FESTIVAL, MOON FESTIVAL
+LUCKY MONEY | Tiền lì xì ngày Tết tiếng Anh là gì? | 3 | RED ENVELOPE, RED ENVELOPES, RED PACKET
+LION DANCE | Múa lân tiếng Anh là gì? | 3 | LION DANCING
+CELEBRATE | Ăn mừng, tổ chức mừng tiếng Anh là gì? | 3 | CELEBRATION

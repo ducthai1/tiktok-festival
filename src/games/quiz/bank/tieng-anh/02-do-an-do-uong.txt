@@ -1,0 +1,156 @@
+# Tiếng Anh · Đồ ăn, đồ uống
+FRUIT | Trái cây, hoa quả tiếng Anh là gì? | 1 | FRUITS
+STRAWBERRY | Quả dâu tây tiếng Anh là gì? | 1 | STRAWBERRIES
+PINEAPPLE | Quả dứa (trái thơm) tiếng Anh là gì? | 1 | PINEAPPLES
+COCONUT | Quả dừa tiếng Anh là gì? | 1 | COCONUTS
+PEAR | Quả lê tiếng Anh là gì? | 1 | PEARS
+PEACH | Quả đào tiếng Anh là gì? | 1 | PEACHES
+CHERRY | Quả anh đào tiếng Anh là gì? | 2 | CHERRIES
+PAPAYA | Quả đu đủ tiếng Anh là gì? | 2 | PAPAYAS, PAWPAW
+AVOCADO | Quả bơ (trái cây) tiếng Anh là gì? | 2 | AVOCADOS
+DRAGON FRUIT | Quả thanh long tiếng Anh là gì? | 2 | PITAYA, PITAHAYA
+LIME | Quả chanh xanh (chanh ta) tiếng Anh là gì? | 2 | LIMES
+GUAVA | Quả ổi tiếng Anh là gì? | 3 | GUAVAS
+DURIAN | Quả sầu riêng tiếng Anh là gì? | 3 | DURIANS
+LYCHEE | Quả vải (vải thiều) tiếng Anh là gì? | 3 | LITCHI, LICHEE, LYCHEES
+LONGAN | Quả nhãn tiếng Anh là gì? | 3 | LONGANS
+RAMBUTAN | Quả chôm chôm tiếng Anh là gì? | 3 | RAMBUTANS
+MANGOSTEEN | Quả măng cụt tiếng Anh là gì? | 3 | MANGOSTEENS
+JACKFRUIT | Quả mít tiếng Anh là gì? | 3
+POMELO | Quả bưởi tiếng Anh là gì? | 3 | GRAPEFRUIT, POMELOS
+STAR FRUIT | Quả khế tiếng Anh là gì? | 3 | CARAMBOLA
+PASSION FRUIT | Quả chanh leo (chanh dây) tiếng Anh là gì? | 3
+VEGETABLE | Rau củ, rau xanh tiếng Anh là gì? | 1 | VEGETABLES, VEGGIE, VEGGIES, VEG
+POTATO | Củ khoai tây tiếng Anh là gì? | 1 | POTATOES
+CARROT | Củ cà rốt tiếng Anh là gì? | 1 | CARROTS
+TOMATO | Quả cà chua tiếng Anh là gì? | 1 | TOMATOES
+CORN | Ngô (bắp) tiếng Anh là gì? | 1 | MAIZE, SWEETCORN
+ONION | Củ hành tây tiếng Anh là gì? | 1 | ONIONS
+BEAN | Hạt đậu (như đậu đen, đậu đỏ) tiếng Anh là gì? | 1 | BEANS
+SWEET POTATO | Củ khoai lang tiếng Anh là gì? | 2 | SWEET POTATOES
+GARLIC | Củ tỏi tiếng Anh là gì? | 2
+CABBAGE | Bắp cải tiếng Anh là gì? | 2 | CABBAGES
+CUCUMBER | Quả dưa chuột (dưa leo) tiếng Anh là gì? | 2 | CUCUMBERS
+PUMPKIN | Quả bí đỏ (bí ngô) tiếng Anh là gì? | 2 | PUMPKINS
+MUSHROOM | Nấm (để nấu ăn) tiếng Anh là gì? | 2 | MUSHROOMS
+CHILI | Quả ớt tiếng Anh là gì? | 2 | CHILLI, CHILE, CHILIES, CHILLIES, CHILI PEPPER, CHILLI PEPPER, HOT PEPPER
+LETTUCE | Rau xà lách tiếng Anh là gì? | 2
+BROCCOLI | Súp lơ xanh (bông cải xanh) tiếng Anh là gì? | 2
+EGGPLANT | Quả cà tím tiếng Anh là gì? | 2 | AUBERGINE, EGGPLANTS, AUBERGINES
+PEANUT | Hạt lạc (đậu phộng) tiếng Anh là gì? | 2 | PEANUTS, GROUNDNUT, GROUNDNUTS
+GINGER | Củ gừng tiếng Anh là gì? | 2
+SPRING ONION | Hành lá tiếng Anh là gì? | 3 | SPRING ONIONS, GREEN ONION, GREEN ONIONS, SCALLION, SCALLIONS
+LEMONGRASS | Cây sả (gia vị thơm) tiếng Anh là gì? | 3
+CORIANDER | Rau mùi (ngò rí) tiếng Anh là gì? | 3 | CILANTRO
+WATER SPINACH | Rau muống tiếng Anh là gì? | 3 | MORNING GLORY, KANGKONG
+BITTER MELON | Mướp đắng (khổ qua) tiếng Anh là gì? | 3 | BITTER GOURD
+BAMBOO SHOOT | Măng (búp tre non để nấu) tiếng Anh là gì? | 3 | BAMBOO SHOOTS
+BEAN SPROUTS | Giá đỗ (giá sống ăn kèm phở) tiếng Anh là gì? | 3 | BEAN SPROUT
+MEAT | Thịt (nói chung) tiếng Anh là gì? | 1
+BEEF | Thịt bò tiếng Anh là gì? | 1
+PORK | Thịt lợn (thịt heo) tiếng Anh là gì? | 1
+SAUSAGE | Xúc xích tiếng Anh là gì? | 1 | SAUSAGES
+BACON | Thịt ba chỉ xông khói tiếng Anh là gì? | 2
+STEAK | Món bò bít tết tiếng Anh là gì? | 2 | BEEFSTEAK, STEAKS
+FRIED CHICKEN | Gà rán tiếng Anh là gì? | 2
+SEAFOOD | Hải sản (tôm, cua, cá…) tiếng Anh là gì? | 2
+SHRIMP | Con tôm (hải sản) tiếng Anh là gì? | 2 | PRAWN, SHRIMPS, PRAWNS
+SQUID | Con mực (hải sản) tiếng Anh là gì? | 2 | CALAMARI, CUTTLEFISH, SQUIDS
+OYSTER | Con hàu (hải sản) tiếng Anh là gì? | 3 | OYSTERS
+LOBSTER | Con tôm hùm tiếng Anh là gì? | 3 | LOBSTERS
+TOFU | Đậu phụ (đậu hũ) tiếng Anh là gì? | 2 | BEAN CURD
+FOOD | Đồ ăn, thức ăn tiếng Anh là gì? | 1
+SOUP | Món canh, món súp tiếng Anh là gì? | 1 | SOUPS
+SALAD | Món rau trộn kiểu Tây tiếng Anh là gì? | 1 | SALADS
+SANDWICH | Bánh mì kẹp (lát bánh mì vuông) tiếng Anh là gì? | 1 | SANDWICHES
+CHEESE | Phô mai tiếng Anh là gì? | 1
+BUTTER | Bơ (để phết bánh mì) tiếng Anh là gì? | 1
+YOGURT | Sữa chua tiếng Anh là gì? | 1 | YOGHURT, YOGHOURT, YOGURTS
+CHOCOLATE | Sô-cô-la tiếng Anh là gì? | 1 | CHOCOLATES
+HONEY | Mật ong tiếng Anh là gì? | 1
+COOKIE | Bánh quy tiếng Anh là gì? | 1 | COOKIES, BISCUIT, BISCUITS
+FRENCH FRIES | Khoai tây chiên (cắt que) tiếng Anh là gì? | 1 | FRIES, CHIPS, FRENCH FRY
+SPRING ROLL | Nem rán (chả giò) tiếng Anh là gì? | 2 | SPRING ROLLS, EGG ROLL, EGG ROLLS
+FRIED EGG | Trứng ốp la tiếng Anh là gì? | 2 | FRIED EGGS, SUNNY SIDE UP
+FRIED RICE | Cơm chiên (cơm rang) tiếng Anh là gì? | 2
+HOT POT | Món lẩu tiếng Anh là gì? | 2 | STEAMBOAT
+DOUGHNUT | Bánh vòng chiên (có lỗ ở giữa) tiếng Anh là gì? | 2 | DONUT, DOUGHNUTS, DONUTS
+POPCORN | Bỏng ngô (bắp rang bơ) tiếng Anh là gì? | 2
+JAM | Mứt (phết lên bánh mì) tiếng Anh là gì? | 2 | JELLY, JAMS
+DESSERT | Món tráng miệng tiếng Anh là gì? | 2 | DESSERTS, PUDDING
+SNACK | Đồ ăn vặt tiếng Anh là gì? | 2 | SNACKS
+INSTANT NOODLES | Mì gói (mì tôm) tiếng Anh là gì? | 2 | INSTANT NOODLE, RAMEN, INSTANT RAMEN
+FAST FOOD | Đồ ăn nhanh tiếng Anh là gì? | 2
+PORRIDGE | Cháo (cháo gà, cháo trắng) tiếng Anh là gì? | 3 | CONGEE, RICE PORRIDGE
+STICKY RICE | Xôi, gạo nếp tiếng Anh là gì? | 3 | GLUTINOUS RICE
+BROKEN RICE | Cơm tấm tiếng Anh là gì? | 3
+DUMPLING | Bánh sủi cảo (há cảo) tiếng Anh là gì? | 3 | DUMPLINGS
+OMELETTE | Trứng tráng (đánh tan rồi chiên) tiếng Anh là gì? | 3 | OMELET, OMELETTES, OMELETS
+COFFEE | Cà phê tiếng Anh là gì? | 1
+BEER | Bia (đồ uống) tiếng Anh là gì? | 1 | BEERS
+GREEN TEA | Trà xanh tiếng Anh là gì? | 1
+LEMONADE | Nước chanh (đồ uống) tiếng Anh là gì? | 1 | LIMEADE, LEMON JUICE, LIME JUICE
+MILK TEA | Trà sữa tiếng Anh là gì? | 2 | BUBBLE TEA, BOBA TEA, BOBA, PEARL MILK TEA
+SMOOTHIE | Sinh tố (trái cây xay) tiếng Anh là gì? | 2 | SMOOTHIES
+SODA | Nước ngọt có ga tiếng Anh là gì? | 2 | SOFT DRINK, SOFT DRINKS, FIZZY DRINK, POP, SODA POP
+WINE | Rượu vang tiếng Anh là gì? | 2 | WINES
+SOY MILK | Sữa đậu nành tiếng Anh là gì? | 2 | SOYA MILK, SOYBEAN MILK
+ICED COFFEE | Cà phê đá tiếng Anh là gì? | 2 | ICE COFFEE
+SALT | Muối ăn tiếng Anh là gì? | 1
+SUGAR | Đường (để pha nước, làm bánh) tiếng Anh là gì? | 1
+PEPPER | Hạt tiêu (hồ tiêu) tiếng Anh là gì? | 2 | BLACK PEPPER, PEPPERCORN, PEPPERCORNS
+FISH SAUCE | Nước mắm tiếng Anh là gì? | 2
+SOY SAUCE | Nước tương (xì dầu) tiếng Anh là gì? | 2 | SOYA SAUCE, SOY
+OIL | Dầu ăn tiếng Anh là gì? | 2 | COOKING OIL, VEGETABLE OIL
+KETCHUP | Tương cà (sốt cà chua) tiếng Anh là gì? | 2 | TOMATO SAUCE, TOMATO KETCHUP, CATSUP
+SPICE | Gia vị (nói chung) tiếng Anh là gì? | 2 | SPICES, SEASONING, SEASONINGS, CONDIMENT, CONDIMENTS
+FLOUR | Bột mì tiếng Anh là gì? | 2 | WHEAT FLOUR
+VINEGAR | Giấm (gia vị chua) tiếng Anh là gì? | 3
+CINNAMON | Quế (gia vị thơm làm bánh) tiếng Anh là gì? | 3
+SWEET | Ngọt (vị) tiếng Anh là gì? | 1
+SOUR | Chua (vị) tiếng Anh là gì? | 2
+SALTY | Mặn (vị) tiếng Anh là gì? | 2
+BITTER | Đắng (vị) tiếng Anh là gì? | 2
+SPICY | Cay (vị) tiếng Anh là gì? | 2 | HOT
+DELICIOUS | Ngon (món ăn ngon) tiếng Anh là gì? | 1 | TASTY, YUMMY
+FRESH | Tươi (rau tươi, cá tươi) tiếng Anh là gì? | 2
+HUNGRY | Đói bụng tiếng Anh là gì? | 1 | STARVING
+THIRSTY | Khát nước tiếng Anh là gì? | 1
+RAW | Sống (chưa nấu chín) tiếng Anh là gì? | 3 | UNCOOKED
+RIPE | Chín (trái cây đã chín) tiếng Anh là gì? | 3
+CRISPY | Giòn (như gà rán giòn) tiếng Anh là gì? | 3 | CRISP, CRUNCHY
+TASTE | Nếm thử (món ăn) tiếng Anh là gì? | 2
+CUT | Cắt (bằng dao) tiếng Anh là gì? | 1
+FRY | Chiên, rán (động từ) tiếng Anh là gì? | 2 | DEEP FRY
+BOIL | Luộc, đun sôi (động từ) tiếng Anh là gì? | 2
+GRILL | Nướng (trên vỉ, than hoa) tiếng Anh là gì? | 2 | BARBECUE, BBQ, BROIL
+BAKE | Nướng (bánh trong lò) tiếng Anh là gì? | 2
+STEAM | Hấp (nấu bằng hơi nước) tiếng Anh là gì? | 2
+CHOP | Chặt, băm nhỏ (thịt, rau) tiếng Anh là gì? | 2 | MINCE, DICE
+SLICE | Thái lát mỏng (động từ) tiếng Anh là gì? | 2
+PEEL | Gọt vỏ, bóc vỏ tiếng Anh là gì? | 2
+MIX | Trộn (các nguyên liệu) tiếng Anh là gì? | 2
+STIR-FRY | Xào (động từ) tiếng Anh là gì? | 3 | SAUTE
+ROAST | Quay (như vịt quay, heo quay) tiếng Anh là gì? | 3 | ROASTED
+RECIPE | Công thức nấu ăn tiếng Anh là gì? | 3 | RECIPES
+KNIFE | Con dao tiếng Anh là gì? | 1 | KNIVES
+SPOON | Cái thìa (cái muỗng) tiếng Anh là gì? | 1 | SPOONS
+FORK | Cái nĩa (dĩa xiên thức ăn) tiếng Anh là gì? | 1 | FORKS
+BOWL | Cái bát (chén ăn cơm) tiếng Anh là gì? | 1 | BOWLS
+PLATE | Cái đĩa đựng thức ăn tiếng Anh là gì? | 1 | PLATES, DISH
+CUP | Cái tách (uống trà, cà phê) tiếng Anh là gì? | 1 | CUPS, MUG, TEACUP
+GLASS | Cái ly (cốc thủy tinh) tiếng Anh là gì? | 1
+BOTTLE | Cái chai tiếng Anh là gì? | 1 | BOTTLES
+CHOPSTICKS | Đôi đũa (để ăn cơm) tiếng Anh là gì? | 2 | CHOPSTICK
+PAN | Cái chảo (để chiên, xào) tiếng Anh là gì? | 2 | FRYING PAN, FRYPAN, SKILLET, WOK
+POT | Cái nồi (để nấu canh) tiếng Anh là gì? | 2 | SAUCEPAN, COOKING POT, POTS
+RICE COOKER | Nồi cơm điện tiếng Anh là gì? | 2
+NAPKIN | Khăn ăn, giấy ăn (lau miệng) tiếng Anh là gì? | 2 | NAPKINS, SERVIETTE, TISSUE, TISSUES, PAPER NAPKIN
+STRAW | Ống hút (uống nước) tiếng Anh là gì? | 2 | STRAWS, DRINKING STRAW
+CUTTING BOARD | Cái thớt tiếng Anh là gì? | 3 | CHOPPING BOARD
+TOOTHPICK | Cây tăm (xỉa răng sau bữa ăn) tiếng Anh là gì? | 3 | TOOTHPICKS
+BREAKFAST | Bữa sáng tiếng Anh là gì? | 1
+LUNCH | Bữa trưa tiếng Anh là gì? | 1
+DINNER | Bữa tối tiếng Anh là gì? | 1 | SUPPER
+MEAL | Bữa ăn tiếng Anh là gì? | 1 | MEALS
+MENU | Thực đơn tiếng Anh là gì? | 1 | MENUS

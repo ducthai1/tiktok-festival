@@ -1,0 +1,150 @@
+# Tiếng Anh · Động từ, tính từ
+OPEN | Mở (động từ, vd mở cửa) tiếng Anh là gì? | 1
+CLOSE | Đóng (động từ, vd đóng cửa) tiếng Anh là gì? | 1 | SHUT
+GIVE | Cho, đưa (động từ, vd đưa tôi cây bút) tiếng Anh là gì? | 1 | HAND, PASS
+TAKE | Lấy (động từ, vd lấy cái cặp) tiếng Anh là gì? | 1 | GET, GRAB, FETCH, PICK UP
+HELP | Giúp đỡ (động từ) tiếng Anh là gì? | 1 | ASSIST, AID, SUPPORT
+LEARN | Học (động từ, vd học tiếng Anh) tiếng Anh là gì? | 1 | STUDY
+LISTEN | Nghe (động từ, vd nghe nhạc) tiếng Anh là gì? | 1 | HEAR, LISTEN TO
+SPEAK | Nói (động từ) tiếng Anh là gì? | 1 | SAY, TALK, TELL
+THINK | Nghĩ, suy nghĩ (động từ) tiếng Anh là gì? | 1
+KNOW | Biết (động từ, vd tôi biết rồi) tiếng Anh là gì? | 1
+WAIT | Chờ, đợi (động từ) tiếng Anh là gì? | 1 | AWAIT, WAIT FOR
+FIND | Tìm thấy (động từ, vd tìm thấy chìa khóa) tiếng Anh là gì? | 1
+WIN | Thắng (động từ, vd thắng trận đấu) tiếng Anh là gì? | 1 | BEAT, DEFEAT
+START | Bắt đầu (động từ) tiếng Anh là gì? | 1 | BEGIN
+COME | Đến, tới (động từ, vd đến nhà tôi chơi) tiếng Anh là gì? | 1 | ARRIVE
+GO | Đi (động từ, vd đi học, đi chợ) tiếng Anh là gì? | 1
+SIT | Ngồi (động từ) tiếng Anh là gì? | 1 | SIT DOWN
+STAND | Đứng (động từ) tiếng Anh là gì? | 1 | STAND UP
+SEE | Nhìn thấy (động từ, vd thấy con mèo) tiếng Anh là gì? | 1 | SPOT, NOTICE
+WATCH | Xem (động từ, vd xem ti vi) tiếng Anh là gì? | 1
+ASK | Hỏi (động từ) tiếng Anh là gì? | 1
+PUT | Đặt, để (động từ, vd để sách lên bàn) tiếng Anh là gì? | 1 | PLACE, SET, LAY
+WANT | Muốn (động từ) tiếng Anh là gì? | 1 | WOULD LIKE
+LIVE | Sống (động từ, vd sống ở Hà Nội) tiếng Anh là gì? | 1 | RESIDE
+USE | Dùng, sử dụng (động từ) tiếng Anh là gì? | 1
+TELL | Kể (động từ, vd kể chuyện) tiếng Anh là gì? | 1
+STOP | Dừng lại (động từ) tiếng Anh là gì? | 1 | HALT
+LOOK | Nhìn (động từ, vd nhìn lên bảng) tiếng Anh là gì? | 1 | LOOK AT
+DO | Làm (động từ, vd làm bài tập về nhà) tiếng Anh là gì? | 1
+HAVE | Có (động từ, vd tôi có một con mèo) tiếng Anh là gì? | 1 | OWN, POSSESS, HAVE GOT
+TALK | Trò chuyện (động từ) tiếng Anh là gì? | 2 | CHAT, SPEAK
+FINISH | Kết thúc, làm xong (động từ) tiếng Anh là gì? | 1 | END, COMPLETE
+WAKE UP | Thức dậy (động từ) tiếng Anh là gì? | 2 | WAKE, GET UP
+FORGET | Quên (động từ) tiếng Anh là gì? | 2
+REMEMBER | Ghi nhớ (động từ, vd nhớ số điện thoại) tiếng Anh là gì? | 2 | RECALL, MEMORIZE, MEMORISE
+SHOUT | Hét lên (động từ) tiếng Anh là gì? | 2 | YELL, SCREAM
+LOSE | Thua, làm mất (động từ, vd thua trận) tiếng Anh là gì? | 2
+SEND | Gửi (động từ, vd gửi thư) tiếng Anh là gì? | 2 | MAIL, POST
+RECEIVE | Nhận (động từ, vd nhận quà) tiếng Anh là gì? | 2 | GET, ACCEPT
+LEAVE | Rời đi (động từ, vd rời khỏi nhà) tiếng Anh là gì? | 2 | DEPART, EXIT
+HIDE | Trốn, nấp (động từ, vd chơi trốn tìm) tiếng Anh là gì? | 2
+MEET | Gặp (động từ, vd gặp bạn) tiếng Anh là gì? | 2 | SEE
+NEED | Cần (động từ) tiếng Anh là gì? | 2 | REQUIRE
+MAKE | Làm ra, tạo ra (động từ, vd làm con diều) tiếng Anh là gì? | 2 | CREATE, BUILD
+HEAR | Nghe thấy (động từ, vd nghe thấy tiếng gõ) tiếng Anh là gì? | 2
+BUILD | Xây (động từ, vd xây nhà) tiếng Anh là gì? | 2 | CONSTRUCT
+BREAK | Làm vỡ (động từ, vd làm vỡ cái ly) tiếng Anh là gì? | 2 | SMASH, CRACK, SHATTER
+FIX | Sửa chữa (động từ, vd sửa xe) tiếng Anh là gì? | 2 | REPAIR, MEND
+CHANGE | Thay đổi (động từ) tiếng Anh là gì? | 2 | ALTER, MODIFY
+TRY | Cố gắng, thử (động từ) tiếng Anh là gì? | 2 | ATTEMPT
+PUSH | Đẩy (động từ, vd đẩy cửa) tiếng Anh là gì? | 2
+PULL | Kéo (động từ, vd kéo cửa) tiếng Anh là gì? | 2 | DRAG
+CARRY | Xách, mang vác (động từ, vd xách túi) tiếng Anh là gì? | 2
+BRING | Mang đến (động từ, vd mang sách đến lớp) tiếng Anh là gì? | 2
+THROW | Ném (động từ, vd ném bóng) tiếng Anh là gì? | 2 | TOSS
+CATCH | Bắt (động từ, vd bắt bóng) tiếng Anh là gì? | 2
+CLIMB | Leo, trèo (động từ, vd leo cây) tiếng Anh là gì? | 2
+KEEP | Giữ (động từ, vd giữ bí mật) tiếng Anh là gì? | 2
+INVITE | Mời (động từ, vd mời bạn dự tiệc) tiếng Anh là gì? | 2
+UNDERSTAND | Hiểu (động từ) tiếng Anh là gì? | 2 | COMPREHEND
+CHOOSE | Chọn, lựa chọn (động từ) tiếng Anh là gì? | 2 | PICK, SELECT
+AGREE | Đồng ý (động từ) tiếng Anh là gì? | 2 | CONSENT
+RETURN | Trở về, quay lại (động từ) tiếng Anh là gì? | 2 | COME BACK, GO BACK, GET BACK
+TURN ON | Bật (động từ, vd bật đèn) tiếng Anh là gì? | 2 | SWITCH ON
+TURN OFF | Tắt (động từ, vd tắt đèn) tiếng Anh là gì? | 2 | SWITCH OFF, SHUT OFF
+HOLD | Cầm, nắm (động từ, vd cầm tay) tiếng Anh là gì? | 2 | GRIP, GRASP
+GUESS | Đoán (động từ, vd đoán đáp án) tiếng Anh là gì? | 2
+COUNT | Đếm (động từ, vd đếm từ 1 đến 10) tiếng Anh là gì? | 2
+JOIN | Tham gia (động từ, vd tham gia trò chơi) tiếng Anh là gì? | 2 | TAKE PART, PARTICIPATE
+REPEAT | Lặp lại, nhắc lại (động từ) tiếng Anh là gì? | 2
+BECOME | Trở thành (động từ) tiếng Anh là gì? | 2
+TOUCH | Chạm, sờ (động từ, vd chạm vào màn hình) tiếng Anh là gì? | 2
+BELIEVE | Tin, tin tưởng (động từ) tiếng Anh là gì? | 2 | TRUST
+DROP | Đánh rơi (động từ, vd đánh rơi điện thoại) tiếng Anh là gì? | 3
+LEND | Cho mượn (động từ) tiếng Anh là gì? | 3 | LOAN
+IMAGINE | Tưởng tượng (động từ) tiếng Anh là gì? | 3
+SAVE | Tiết kiệm, để dành (động từ) tiếng Anh là gì? | 3
+EXPLAIN | Giải thích (động từ) tiếng Anh là gì? | 3
+DECIDE | Quyết định (động từ) tiếng Anh là gì? | 3
+REFUSE | Từ chối (động từ) tiếng Anh là gì? | 3 | DECLINE, REJECT, TURN DOWN
+ALLOW | Cho phép (động từ) tiếng Anh là gì? | 3 | LET, PERMIT
+ENTER | Đi vào (động từ, vd đi vào phòng) tiếng Anh là gì? | 3 | GO IN, COME IN, GET IN
+CONTINUE | Tiếp tục (động từ) tiếng Anh là gì? | 3 | GO ON, CARRY ON, KEEP ON, KEEP GOING, PROCEED
+PREPARE | Chuẩn bị (động từ) tiếng Anh là gì? | 3 | GET READY
+ESCAPE | Trốn thoát (động từ) tiếng Anh là gì? | 3 | FLEE, RUN AWAY, GET AWAY
+SPELL | Đánh vần (động từ) tiếng Anh là gì? | 3
+TRANSLATE | Dịch (động từ, vd dịch sang tiếng Việt) tiếng Anh là gì? | 3
+HAPPEN | Xảy ra (động từ) tiếng Anh là gì? | 3 | OCCUR
+ARGUE | Cãi nhau (động từ) tiếng Anh là gì? | 3 | QUARREL, FIGHT
+PROMISE | Hứa (động từ) tiếng Anh là gì? | 3
+NEW | Mới (tính từ) tiếng Anh là gì? | 1
+OLD | Cũ (tính từ, vd quần áo cũ) tiếng Anh là gì? | 1 | USED
+LONG | Dài (tính từ, vd con đường dài) tiếng Anh là gì? | 1
+SHORT | Ngắn (tính từ, vd sợi dây ngắn) tiếng Anh là gì? | 1
+FAST | Nhanh (tính từ) tiếng Anh là gì? | 1 | QUICK, RAPID, SPEEDY
+SLOW | Chậm (tính từ) tiếng Anh là gì? | 1
+EASY | Dễ (tính từ) tiếng Anh là gì? | 1 | SIMPLE
+DIFFICULT | Khó (tính từ) tiếng Anh là gì? | 1 | HARD, TOUGH
+CLEAN | Sạch (tính từ) tiếng Anh là gì? | 1
+DIRTY | Bẩn, dơ (tính từ) tiếng Anh là gì? | 1 | FILTHY
+GOOD | Tốt (tính từ) tiếng Anh là gì? | 1 | NICE, FINE
+BAD | Tệ, dở (tính từ, vd bộ phim dở) tiếng Anh là gì? | 1 | TERRIBLE, AWFUL
+FULL | Đầy (tính từ, vd ly nước đầy) tiếng Anh là gì? | 1
+CORRECT | Đúng (tính từ, vd câu trả lời đúng) tiếng Anh là gì? | 1 | RIGHT, TRUE
+WRONG | Sai (tính từ, vd câu trả lời sai) tiếng Anh là gì? | 1 | INCORRECT, FALSE
+DARK | Tối (tính từ, vd căn phòng tối) tiếng Anh là gì? | 1
+READY | Sẵn sàng (tính từ) tiếng Anh là gì? | 1 | PREPARED
+NEXT | Tiếp theo (tính từ, vd tuần tiếp theo) tiếng Anh là gì? | 1 | FOLLOWING
+EMPTY | Rỗng, trống (tính từ, vd hộp rỗng) tiếng Anh là gì? | 2 | VACANT
+HEAVY | Nặng (tính từ) tiếng Anh là gì? | 2
+LIGHT | Nhẹ (tính từ, vd cái túi nhẹ) tiếng Anh là gì? | 2
+NOISY | Ồn ào (tính từ) tiếng Anh là gì? | 2 | LOUD
+QUIET | Yên tĩnh (tính từ) tiếng Anh là gì? | 2 | SILENT, CALM, PEACEFUL
+SAFE | An toàn (tính từ) tiếng Anh là gì? | 2 | SECURE
+DANGEROUS | Nguy hiểm (tính từ) tiếng Anh là gì? | 2 | UNSAFE, HAZARDOUS
+WIDE | Rộng (tính từ, vd con đường rộng) tiếng Anh là gì? | 2 | BROAD
+NARROW | Hẹp (tính từ, vd con hẻm hẹp) tiếng Anh là gì? | 2
+DEEP | Sâu (tính từ, vd hồ nước sâu) tiếng Anh là gì? | 2
+SAME | Giống nhau, như nhau (tính từ) tiếng Anh là gì? | 2 | ALIKE, SIMILAR, IDENTICAL
+DIFFERENT | Khác nhau (tính từ) tiếng Anh là gì? | 2
+IMPORTANT | Quan trọng (tính từ) tiếng Anh là gì? | 2
+USEFUL | Có ích, hữu ích (tính từ) tiếng Anh là gì? | 2 | HELPFUL
+FAMOUS | Nổi tiếng (tính từ) tiếng Anh là gì? | 2 | WELL KNOWN
+NORMAL | Bình thường (tính từ) tiếng Anh là gì? | 2 | ORDINARY, USUAL, REGULAR
+STRANGE | Kỳ lạ (tính từ) tiếng Anh là gì? | 2 | WEIRD, ODD, UNUSUAL, BIZARRE
+THICK | Dày (tính từ, vd quyển sách dày) tiếng Anh là gì? | 2
+SPECIAL | Đặc biệt (tính từ) tiếng Anh là gì? | 2
+BRIGHT | Sáng sủa (tính từ, vd căn phòng sáng) tiếng Anh là gì? | 2 | LIGHT
+HARD | Cứng (tính từ, vd hòn đá cứng) tiếng Anh là gì? | 2 | SOLID, FIRM
+SOFT | Mềm (tính từ, vd cái gối mềm) tiếng Anh là gì? | 2
+BROKEN | Hỏng, vỡ (tính từ, vd điện thoại hỏng) tiếng Anh là gì? | 2 | DAMAGED
+CROWDED | Đông đúc (tính từ, vd chợ đông) tiếng Anh là gì? | 2 | PACKED, BUSY
+SIMPLE | Đơn giản (tính từ) tiếng Anh là gì? | 2 | EASY, BASIC, PLAIN
+REAL | Thật, không giả (tính từ, vd tiền thật) tiếng Anh là gì? | 2 | GENUINE, AUTHENTIC
+FAKE | Giả (tính từ, vd tiền giả) tiếng Anh là gì? | 2 | COUNTERFEIT
+SHALLOW | Nông, cạn (tính từ, vd hồ nước nông) tiếng Anh là gì? | 3
+POSSIBLE | Có thể, khả thi (tính từ) tiếng Anh là gì? | 3 | FEASIBLE
+IMPOSSIBLE | Không thể, bất khả thi (tính từ) tiếng Anh là gì? | 3
+NECESSARY | Cần thiết (tính từ) tiếng Anh là gì? | 3 | ESSENTIAL, NEEDED
+USELESS | Vô dụng (tính từ, vd món đồ vô dụng) tiếng Anh là gì? | 3
+PUBLIC | Công cộng (tính từ, vd xe buýt công cộng) tiếng Anh là gì? | 3
+PRIVATE | Riêng (tính từ, vd phòng riêng) tiếng Anh là gì? | 3 | PERSONAL, OWN
+COMPLICATED | Phức tạp (tính từ) tiếng Anh là gì? | 3 | COMPLEX
+COMFORTABLE | Êm, thoải mái (tính từ, vd ghế êm) tiếng Anh là gì? | 3 | COMFY, COZY, COSY
+AVAILABLE | Có sẵn, còn hàng (tính từ) tiếng Anh là gì? | 3
+RARE | Hiếm (tính từ) tiếng Anh là gì? | 3 | UNCOMMON, SCARCE
+SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) tiếng Anh là gì? | 3
+ROUGH | Thô ráp, sần sùi (tính từ) tiếng Anh là gì? | 3 | COARSE
+SECRET | Bí mật (tính từ, vd lối đi bí mật) tiếng Anh là gì? | 3 | HIDDEN

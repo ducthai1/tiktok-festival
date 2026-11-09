@@ -1,0 +1,155 @@
+# Tiếng Anh · Cơ thể, cảm xúc
+NECK | Cái cổ tiếng Anh là gì? | 1
+SHOULDER | Bờ vai tiếng Anh là gì? | 1 | SHOULDERS
+LEG | Cái chân (không phải bàn chân) tiếng Anh là gì? | 1 | LEGS
+KNEE | Đầu gối tiếng Anh là gì? | 2 | KNEES
+ELBOW | Khuỷu tay tiếng Anh là gì? | 2 | ELBOWS
+WRIST | Cổ tay tiếng Anh là gì? | 3 | WRISTS
+ANKLE | Mắt cá chân tiếng Anh là gì? | 3 | ANKLES
+TOE | Ngón chân tiếng Anh là gì? | 2 | TOES
+THUMB | Ngón tay cái tiếng Anh là gì? | 2 | THUMBS
+NAIL | Móng tay tiếng Anh là gì? | 2 | NAILS, FINGERNAIL, FINGERNAILS
+BACK | Cái lưng tiếng Anh là gì? | 1
+STOMACH | Cái bụng tiếng Anh là gì? | 1 | BELLY, TUMMY, ABDOMEN
+LIP | Đôi môi tiếng Anh là gì? | 2 | LIPS
+TONGUE | Cái lưỡi tiếng Anh là gì? | 2
+CHEEK | Gò má tiếng Anh là gì? | 2 | CHEEKS
+CHIN | Cái cằm tiếng Anh là gì? | 2
+FOREHEAD | Cái trán tiếng Anh là gì? | 3
+EYEBROW | Lông mày tiếng Anh là gì? | 3 | EYEBROWS, BROW, BROWS
+BEARD | Bộ râu (mọc ở cằm) tiếng Anh là gì? | 2
+MUSTACHE | Ria mép tiếng Anh là gì? | 2 | MOUSTACHE
+SKIN | Làn da tiếng Anh là gì? | 2
+BONE | Khúc xương tiếng Anh là gì? | 2 | BONES
+HEART | Trái tim tiếng Anh là gì? | 1
+BRAIN | Bộ não tiếng Anh là gì? | 2
+BLOOD | Máu tiếng Anh là gì? | 2
+BODY | Cơ thể tiếng Anh là gì? | 1
+BELLY BUTTON | Cái rốn tiếng Anh là gì? | 3 | NAVEL, BELLYBUTTON
+DIMPLE | Lúm đồng tiền (trên má) tiếng Anh là gì? | 3 | DIMPLES
+SICK | Bị ốm, bị bệnh tiếng Anh là gì? | 1 | ILL
+FEVER | Bị sốt tiếng Anh là gì? | 2
+HEADACHE | Đau đầu (bệnh) tiếng Anh là gì? | 1
+TOOTHACHE | Đau răng tiếng Anh là gì? | 1
+STOMACHACHE | Đau bụng tiếng Anh là gì? | 2 | STOMACH ACHE, BELLYACHE, TUMMY ACHE
+SORE THROAT | Đau họng, viêm họng tiếng Anh là gì? | 2
+COUGH | Bị ho tiếng Anh là gì? | 2
+FLU | Bệnh cúm tiếng Anh là gì? | 2 | INFLUENZA
+RUNNY NOSE | Sổ mũi tiếng Anh là gì? | 3
+SNEEZE | Hắt hơi, hắt xì tiếng Anh là gì? | 2
+DIZZY | Chóng mặt tiếng Anh là gì? | 3
+MEDICINE | Thuốc (chữa bệnh) tiếng Anh là gì? | 1 | MEDICATION, DRUG
+PILL | Viên thuốc tiếng Anh là gì? | 2 | PILLS, TABLET, TABLETS, CAPSULE
+HOSPITAL | Bệnh viện tiếng Anh là gì? | 1
+CLINIC | Phòng khám tiếng Anh là gì? | 2
+PHARMACY | Hiệu thuốc, nhà thuốc tiếng Anh là gì? | 2 | DRUGSTORE, CHEMIST
+PATIENT | Bệnh nhân tiếng Anh là gì? | 2
+AMBULANCE | Xe cứu thương tiếng Anh là gì? | 2
+INJECTION | Mũi tiêm tiếng Anh là gì? | 3 | SHOT, JAB
+VACCINE | Vắc-xin tiếng Anh là gì? | 2 | VACCINES, VACCINATION
+THERMOMETER | Nhiệt kế (đo thân nhiệt) tiếng Anh là gì? | 3
+ALLERGY | Dị ứng tiếng Anh là gì? | 3 | ALLERGIC, ALLERGIES
+HEALTHY | Khỏe mạnh tiếng Anh là gì? | 1 | FIT, WELL
+EXERCISE | Tập thể dục tiếng Anh là gì? | 1 | WORK OUT, WORKOUT
+SLEEPY | Buồn ngủ tiếng Anh là gì? | 1 | DROWSY
+TIRED | Mệt mỏi tiếng Anh là gì? | 1 | EXHAUSTED, WEARY
+STRONG | Khỏe, mạnh (về sức lực) tiếng Anh là gì? | 1
+WEAK | Yếu ớt (về sức lực) tiếng Anh là gì? | 2 | FEEBLE
+STRESSED | Căng thẳng, áp lực (tâm lý) tiếng Anh là gì? | 2 | STRESS, TENSE, STRESSED OUT
+SCAR | Vết sẹo tiếng Anh là gì? | 3
+ANGRY | Tức giận tiếng Anh là gì? | 1 | MAD, FURIOUS
+SCARED | Sợ hãi tiếng Anh là gì? | 1 | AFRAID, FRIGHTENED, TERRIFIED
+BORED | Chán (vì không có gì làm) tiếng Anh là gì? | 1
+WORRIED | Lo lắng tiếng Anh là gì? | 2 | ANXIOUS, CONCERNED
+NERVOUS | Hồi hộp, run (trước khi thi) tiếng Anh là gì? | 2 | ANXIOUS
+PROUD | Tự hào tiếng Anh là gì? | 2
+SURPRISED | Ngạc nhiên tiếng Anh là gì? | 2 | AMAZED, ASTONISHED
+SHOCKED | Bị sốc tiếng Anh là gì? | 2
+EXCITED | Háo hức, phấn khích tiếng Anh là gì? | 2 | THRILLED
+LONELY | Cô đơn tiếng Anh là gì? | 2
+JEALOUS | Ghen tị, ghen tuông tiếng Anh là gì? | 2 | ENVIOUS
+EMBARRASSED | Ngượng ngùng, quê độ tiếng Anh là gì? | 3 | ASHAMED
+CONFUSED | Bối rối, không hiểu gì tiếng Anh là gì? | 2 | PUZZLED
+CALM | Bình tĩnh tiếng Anh là gì? | 2
+RELAXED | Thư giãn, thoải mái tiếng Anh là gì? | 2 | RELAX
+GRATEFUL | Biết ơn tiếng Anh là gì? | 3 | THANKFUL
+HOPE | Hy vọng tiếng Anh là gì? | 2
+DISAPPOINTED | Thất vọng tiếng Anh là gì? | 3
+HOMESICK | Nhớ nhà tiếng Anh là gì? | 3
+MISS | Nhớ (người ở xa) tiếng Anh là gì? | 2
+HATE | Ghét tiếng Anh là gì? | 1 | DISLIKE
+LIKE | Thích (cái gì đó) tiếng Anh là gì? | 1 | ENJOY
+LAUGH | Cười lớn (thành tiếng) tiếng Anh là gì? | 1
+KIND | Tốt bụng tiếng Anh là gì? | 1 | NICE, KIND-HEARTED, KINDHEARTED
+LAZY | Lười biếng tiếng Anh là gì? | 1
+SHY | Nhút nhát, rụt rè tiếng Anh là gì? | 2 | TIMID
+FUNNY | Hài hước, vui tính tiếng Anh là gì? | 1 | HUMOROUS
+SMART | Thông minh tiếng Anh là gì? | 1 | CLEVER, INTELLIGENT, BRIGHT
+HONEST | Trung thực tiếng Anh là gì? | 2
+BRAVE | Dũng cảm tiếng Anh là gì? | 2 | COURAGEOUS, BOLD
+FRIENDLY | Thân thiện tiếng Anh là gì? | 1
+POLITE | Lịch sự, lễ phép tiếng Anh là gì? | 2 | COURTEOUS
+RUDE | Thô lỗ, hỗn láo tiếng Anh là gì? | 2 | IMPOLITE
+HARD-WORKING | Chăm chỉ tiếng Anh là gì? | 2 | HARDWORKING, DILIGENT, INDUSTRIOUS
+GENEROUS | Hào phóng, rộng rãi tiếng Anh là gì? | 3
+SELFISH | Ích kỷ tiếng Anh là gì? | 3
+STINGY | Keo kiệt, bủn xỉn tiếng Anh là gì? | 3 | MEAN, MISERLY, CHEAP, TIGHT
+SILLY | Ngốc nghếch tiếng Anh là gì? | 2 | FOOLISH, STUPID
+CLUMSY | Vụng về, hậu đậu tiếng Anh là gì? | 3
+CAREFUL | Cẩn thận tiếng Anh là gì? | 2
+CONFIDENT | Tự tin tiếng Anh là gì? | 2
+TALKATIVE | Nói nhiều, lắm lời tiếng Anh là gì? | 3 | CHATTY
+NAUGHTY | Nghịch ngợm (trẻ con) tiếng Anh là gì? | 2 | MISCHIEVOUS
+CURIOUS | Tò mò tiếng Anh là gì? | 2 | NOSY, NOSEY, INQUISITIVE
+STUBBORN | Bướng bỉnh, cứng đầu tiếng Anh là gì? | 3 | OBSTINATE, HEADSTRONG
+ACTIVE | Năng động tiếng Anh là gì? | 2 | ENERGETIC, DYNAMIC
+OPTIMISTIC | Lạc quan tiếng Anh là gì? | 3 | POSITIVE
+ROMANTIC | Lãng mạn tiếng Anh là gì? | 2
+TALL | Cao (dáng người) tiếng Anh là gì? | 1
+SHORT | Thấp, lùn (dáng người) tiếng Anh là gì? | 1
+FAT | Béo, mập tiếng Anh là gì? | 1 | OVERWEIGHT, CHUBBY, PLUMP
+THIN | Gầy, ốm (dáng người) tiếng Anh là gì? | 1 | SKINNY, SLIM, SLENDER
+CURLY HAIR | Tóc xoăn, tóc quăn tiếng Anh là gì? | 2 | CURLY
+STRAIGHT HAIR | Tóc thẳng tiếng Anh là gì? | 2 | STRAIGHT
+BALD | Hói đầu tiếng Anh là gì? | 2
+BLOND | Tóc vàng hoe tiếng Anh là gì? | 2 | BLONDE, BLOND HAIR, BLONDE HAIR, FAIR HAIR
+HANDSOME | Đẹp trai tiếng Anh là gì? | 1 | GOOD-LOOKING
+CUTE | Dễ thương tiếng Anh là gì? | 1 | ADORABLE
+UGLY | Xấu xí tiếng Anh là gì? | 1
+YOUNG | Trẻ (tuổi) tiếng Anh là gì? | 1
+PALE | Xanh xao, nhợt nhạt tiếng Anh là gì? | 3
+FRECKLES | Tàn nhang tiếng Anh là gì? | 3 | FRECKLE
+MOLE | Nốt ruồi tiếng Anh là gì? | 3 | MOLES
+WRINKLE | Nếp nhăn tiếng Anh là gì? | 3 | WRINKLES
+WEIGHT | Cân nặng tiếng Anh là gì? | 2
+HUSBAND | Người chồng tiếng Anh là gì? | 1
+WIFE | Người vợ tiếng Anh là gì? | 1
+SON | Con trai (của bố mẹ) tiếng Anh là gì? | 1
+DAUGHTER | Con gái (của bố mẹ) tiếng Anh là gì? | 1
+UNCLE | Chú, bác trai, cậu tiếng Anh là gì? | 1
+AUNT | Cô, dì, bác gái tiếng Anh là gì? | 2 | AUNTIE, AUNTY
+COUSIN | Anh chị em họ tiếng Anh là gì? | 2 | COUSINS
+NEPHEW | Cháu trai (con của anh chị em) tiếng Anh là gì? | 3
+NIECE | Cháu gái (con của anh chị em) tiếng Anh là gì? | 3
+GRANDCHILD | Cháu (con của con mình) tiếng Anh là gì? | 2 | GRANDCHILDREN, GRANDSON, GRANDDAUGHTER, GRANDKID, GRANDKIDS
+PARENTS | Bố mẹ (cả hai người) tiếng Anh là gì? | 1 | PARENT
+TWINS | Anh chị em sinh đôi tiếng Anh là gì? | 2 | TWIN
+NEIGHBOR | Hàng xóm tiếng Anh là gì? | 2 | NEIGHBOUR, NEIGHBORS, NEIGHBOURS
+GUEST | Khách (đến nhà chơi) tiếng Anh là gì? | 2 | GUESTS, VISITOR, VISITORS
+STRANGER | Người lạ tiếng Anh là gì? | 2
+BOYFRIEND | Bạn trai (người yêu) tiếng Anh là gì? | 1
+GIRLFRIEND | Bạn gái (người yêu) tiếng Anh là gì? | 1
+BEST FRIEND | Bạn thân tiếng Anh là gì? | 2 | BESTIE, BFF, CLOSE FRIEND
+CHILD | Đứa trẻ tiếng Anh là gì? | 1 | KID, CHILDREN, KIDS
+BOY | Cậu bé tiếng Anh là gì? | 1
+GIRL | Cô bé tiếng Anh là gì? | 1
+MAN | Người đàn ông tiếng Anh là gì? | 1 | MEN, GUY
+WOMAN | Người phụ nữ tiếng Anh là gì? | 1 | WOMEN, LADY
+ADULT | Người lớn tiếng Anh là gì? | 2 | ADULTS, GROWN-UP, GROWNUP
+BRIDE | Cô dâu tiếng Anh là gì? | 3
+GROOM | Chú rể tiếng Anh là gì? | 3 | BRIDEGROOM
+SINGLE | Độc thân tiếng Anh là gì? | 2
+WEDDING | Đám cưới tiếng Anh là gì? | 1
+KISS | Hôn, thơm (má) tiếng Anh là gì? | 1
+HUG | Ôm (ai đó) tiếng Anh là gì? | 1 | CUDDLE, EMBRACE
+CRUSH | Người mình thầm thích tiếng Anh là gì? | 2

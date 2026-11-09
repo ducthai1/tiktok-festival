@@ -29,6 +29,9 @@ test('quiz banks: every question is answerable and A/B/C/D options are distinct'
   const text = [...loadClassroomQuestions(), ...loadEnglishQuestions(), ...loadEmojiQuestions(), ...loadFlagQuestions()];
   assert.ok(text.length > 3000);
   for (const q of text) assert.ok(q.answer && q.accept.length && q.accept.every(Boolean), JSON.stringify(q));
+  const english = loadEnglishQuestions();
+  assert.ok(english.length > 1200, `tiếng Anh chỉ có ${english.length} câu`);
+  for (const q of english) assert.ok(q.category.startsWith('Tiếng Anh · ') && /^[A-Z][A-Z -]*$/.test(q.answer), JSON.stringify(q));
   const choice = loadChoiceQuestions();
   assert.ok(choice.length > 4000);
   for (const q of choice) assert.equal(new Set([q.right, ...q.wrong]).size, 4, q.prompt);

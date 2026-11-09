@@ -1,0 +1,151 @@
+# Tiếng Anh · Nhà cửa, quần áo
+KITCHEN | Nhà bếp tiếng Anh là gì? | 1
+BEDROOM | Phòng ngủ tiếng Anh là gì? | 1
+BATHROOM | Phòng tắm tiếng Anh là gì? | 1
+LIVING ROOM | Phòng khách tiếng Anh là gì? | 1 | SITTING ROOM, LOUNGE
+DINING ROOM | Phòng ăn tiếng Anh là gì? | 1
+TOILET | Nhà vệ sinh tiếng Anh là gì? | 1 | RESTROOM, WC, LAVATORY, LOO, BATHROOM, WASHROOM
+ROOM | Căn phòng tiếng Anh là gì? | 1
+FLOOR | Sàn nhà tiếng Anh là gì? | 1
+WALL | Bức tường tiếng Anh là gì? | 1
+GARDEN | Khu vườn tiếng Anh là gì? | 1 | YARD, BACKYARD
+APARTMENT | Căn hộ chung cư tiếng Anh là gì? | 1 | FLAT, CONDO, CONDOMINIUM
+STAIRS | Cầu thang tiếng Anh là gì? | 1 | STAIRCASE, STAIRWAY, STAIR, STEPS
+KEY | Chìa khoá tiếng Anh là gì? | 1 | KEYS
+BALCONY | Ban công tiếng Anh là gì? | 2
+GARAGE | Nhà để xe ô tô (ga-ra) tiếng Anh là gì? | 2
+ROOF | Mái nhà tiếng Anh là gì? | 2
+GATE | Cái cổng (nhà) tiếng Anh là gì? | 2
+FENCE | Hàng rào tiếng Anh là gì? | 2
+ELEVATOR | Thang máy tiếng Anh là gì? | 2 | LIFT
+LOCK | Ổ khoá tiếng Anh là gì? | 2 | PADLOCK
+DOORBELL | Chuông cửa tiếng Anh là gì? | 2 | BELL
+CEILING | Trần nhà tiếng Anh là gì? | 3
+ATTIC | Gác mái (tầng sát mái nhà) tiếng Anh là gì? | 3 | LOFT, GARRET
+BASEMENT | Tầng hầm tiếng Anh là gì? | 3 | CELLAR
+CORRIDOR | Hành lang tiếng Anh là gì? | 3 | HALLWAY, HALL, PASSAGE
+SOFA | Ghế sô-pha tiếng Anh là gì? | 1 | COUCH, SETTEE
+MIRROR | Cái gương tiếng Anh là gì? | 1
+PILLOW | Cái gối (để ngủ) tiếng Anh là gì? | 1
+BLANKET | Cái chăn (cái mền) tiếng Anh là gì? | 1 | QUILT, DUVET, COMFORTER
+BOOKSHELF | Giá sách (kệ sách) tiếng Anh là gì? | 2 | BOOKCASE, BOOKSHELVES
+SHELF | Cái kệ (gắn tường để đồ) tiếng Anh là gì? | 2 | SHELVES
+WARDROBE | Tủ quần áo tiếng Anh là gì? | 2 | CLOSET
+DRAWER | Ngăn kéo (bàn, tủ) tiếng Anh là gì? | 2 | DRAWERS
+CARPET | Tấm thảm trải sàn tiếng Anh là gì? | 2 | RUG
+STOOL | Ghế đẩu (ghế không tựa lưng) tiếng Anh là gì? | 2
+HANGER | Móc treo quần áo tiếng Anh là gì? | 2 | COAT HANGER, CLOTHES HANGER, HANGERS
+VASE | Lọ hoa (bình cắm hoa) tiếng Anh là gì? | 2 | FLOWER VASE
+CURTAIN | Rèm cửa tiếng Anh là gì? | 2 | CURTAINS, DRAPES
+MATTRESS | Tấm nệm (đệm giường) tiếng Anh là gì? | 3
+BED SHEET | Ga trải giường tiếng Anh là gì? | 3 | SHEET, SHEETS, BED SHEETS
+MOSQUITO NET | Cái màn (mùng) chống muỗi tiếng Anh là gì? | 3
+HAMMOCK | Cái võng tiếng Anh là gì? | 3
+ARMCHAIR | Ghế bành (có tay vịn) tiếng Anh là gì? | 3
+BUNK BED | Giường tầng tiếng Anh là gì? | 3 | BUNK BEDS, BUNK
+FAN | Cái quạt điện tiếng Anh là gì? | 1 | ELECTRIC FAN
+FRIDGE | Tủ lạnh tiếng Anh là gì? | 2 | REFRIGERATOR
+AIR CONDITIONER | Máy điều hoà (máy lạnh) tiếng Anh là gì? | 2 | AIR CONDITIONING, AIR CON, AIRCON, AC
+WASHING MACHINE | Máy giặt tiếng Anh là gì? | 2 | WASHER
+HAIR DRYER | Máy sấy tóc tiếng Anh là gì? | 2 | HAIR DRIER, BLOW DRYER
+IRON | Bàn là (bàn ủi) tiếng Anh là gì? | 2
+LIGHT BULB | Bóng đèn (điện) tiếng Anh là gì? | 2 | BULB
+FLASHLIGHT | Đèn pin tiếng Anh là gì? | 2 | TORCH
+VACUUM CLEANER | Máy hút bụi tiếng Anh là gì? | 3 | VACUUM, HOOVER
+WATER HEATER | Bình nóng lạnh tiếng Anh là gì? | 3
+SWITCH | Công tắc điện tiếng Anh là gì? | 3 | LIGHT SWITCH
+SOCKET | Ổ cắm điện tiếng Anh là gì? | 3 | OUTLET, POWER OUTLET, POWER SOCKET, WALL SOCKET, POWER POINT
+TOWEL | Khăn tắm tiếng Anh là gì? | 1
+SOAP | Xà phòng (xà bông) tiếng Anh là gì? | 1
+TOOTHBRUSH | Bàn chải đánh răng tiếng Anh là gì? | 1
+TOOTHPASTE | Kem đánh răng tiếng Anh là gì? | 1
+COMB | Cái lược tiếng Anh là gì? | 1 | HAIRBRUSH
+SHOWER | Vòi hoa sen (để tắm) tiếng Anh là gì? | 1
+BOX | Cái hộp tiếng Anh là gì? | 1
+UMBRELLA | Cái ô (cái dù) tiếng Anh là gì? | 1
+SHAMPOO | Dầu gội đầu tiếng Anh là gì? | 2
+BATHTUB | Bồn tắm tiếng Anh là gì? | 2 | TUB, BATH
+WASHBASIN | Bồn rửa mặt (lavabo) tiếng Anh là gì? | 2 | SINK, BASIN, BATHROOM SINK
+TAP | Vòi nước tiếng Anh là gì? | 2 | FAUCET, WATER TAP
+BUCKET | Cái xô (đựng nước) tiếng Anh là gì? | 2 | PAIL
+TOILET PAPER | Giấy vệ sinh tiếng Anh là gì? | 2 | TOILET ROLL, TOILET TISSUE
+PERFUME | Nước hoa tiếng Anh là gì? | 2 | FRAGRANCE, COLOGNE, SCENT
+LIPSTICK | Son môi tiếng Anh là gì? | 2
+LIGHTER | Cái bật lửa tiếng Anh là gì? | 2
+LADDER | Cái thang (bắc để trèo) tiếng Anh là gì? | 2
+RAZOR | Dao cạo râu tiếng Anh là gì? | 3 | SHAVER
+WASH | Giặt (quần áo) tiếng Anh là gì? | 1 | LAUNDER
+TIDY UP | Dọn dẹp, thu dọn (nhà cửa) tiếng Anh là gì? | 2 | TIDY, CLEAN UP, CLEAN
+HOUSEWORK | Việc nhà tiếng Anh là gì? | 2 | CHORES, CHORE, HOUSEHOLD CHORES, HOUSEKEEPING
+SWEEP | Quét (nhà, sân) tiếng Anh là gì? | 2
+FOLD | Gấp (quần áo, chăn) tiếng Anh là gì? | 2
+BROOM | Cái chổi tiếng Anh là gì? | 2
+MOP | Cây lau nhà tiếng Anh là gì? | 2
+TRASH CAN | Thùng rác tiếng Anh là gì? | 2 | BIN, DUSTBIN, RUBBISH BIN, GARBAGE CAN, GARBAGE BIN, TRASH BIN, WASTE BIN, WASTEBASKET
+RUBBISH | Rác (rác thải) tiếng Anh là gì? | 2 | TRASH, GARBAGE, WASTE, LITTER
+DUSTPAN | Cái hốt rác (ki hốt rác) tiếng Anh là gì? | 3
+CLOTHESPIN | Cái kẹp phơi quần áo tiếng Anh là gì? | 3 | CLOTHES PEG, PEG
+WASHING POWDER | Bột giặt tiếng Anh là gì? | 3 | DETERGENT, LAUNDRY DETERGENT, LAUNDRY POWDER, SOAP POWDER
+CLOTHES | Quần áo tiếng Anh là gì? | 1 | CLOTHING
+SHIRT | Áo sơ mi tiếng Anh là gì? | 1
+T-SHIRT | Áo phông (áo thun) tiếng Anh là gì? | 1 | TEE, TEE SHIRT
+SHORTS | Quần đùi (quần soóc) tiếng Anh là gì? | 1
+JEANS | Quần bò (quần jeans) tiếng Anh là gì? | 1 | DENIM, DENIMS, BLUE JEANS
+SKIRT | Chân váy tiếng Anh là gì? | 1
+DRESS | Váy liền (cái đầm) tiếng Anh là gì? | 1
+JACKET | Áo khoác tiếng Anh là gì? | 1 | COAT
+COAT | Áo khoác dài (áo măng tô) tiếng Anh là gì? | 1 | OVERCOAT, TRENCH COAT
+SOCKS | Đôi tất (đôi vớ) tiếng Anh là gì? | 1 | SOCK
+HAT | Cái mũ (cái nón) tiếng Anh là gì? | 1 | CAP
+CAP | Mũ lưỡi trai tiếng Anh là gì? | 1 | BASEBALL CAP
+TROUSERS | Cái quần dài tiếng Anh là gì? | 2 | PANTS
+RAINCOAT | Áo mưa tiếng Anh là gì? | 2 | PONCHO
+SWEATER | Áo len tiếng Anh là gì? | 1 | JUMPER, PULLOVER, CARDIGAN
+HOODIE | Áo nỉ có mũ trùm đầu tiếng Anh là gì? | 2 | HOODY, HOODED SWEATSHIRT
+PAJAMAS | Bộ đồ ngủ tiếng Anh là gì? | 2 | PYJAMAS, PJS, NIGHTWEAR, SLEEPWEAR, NIGHTCLOTHES
+SUIT | Bộ com-lê (bộ vest) tiếng Anh là gì? | 2
+TIE | Cái cà vạt tiếng Anh là gì? | 2 | NECKTIE
+UNDERWEAR | Đồ lót tiếng Anh là gì? | 2 | UNDERCLOTHES
+SCARF | Khăn quàng cổ tiếng Anh là gì? | 2 | SCARVES
+GLOVES | Đôi găng tay tiếng Anh là gì? | 2 | GLOVE, MITTENS, MITTEN
+SWIMSUIT | Đồ bơi (áo tắm) tiếng Anh là gì? | 2 | SWIMWEAR, BATHING SUIT, SWIMMING SUIT, SWIMMING COSTUME
+BELT | Thắt lưng (dây nịt) tiếng Anh là gì? | 2
+POCKET | Cái túi (trên áo, quần) tiếng Anh là gì? | 2
+BUTTON | Cúc áo (nút áo) tiếng Anh là gì? | 2
+FASHION | Thời trang tiếng Anh là gì? | 2
+CONICAL HAT | Nón lá tiếng Anh là gì? | 3 | LEAF HAT, PALM LEAF HAT
+ZIPPER | Khoá kéo (dây kéo) tiếng Anh là gì? | 3 | ZIP
+SLEEVE | Tay áo tiếng Anh là gì? | 3 | SLEEVES
+TANK TOP | Áo ba lỗ tiếng Anh là gì? | 3 | SINGLET, VEST, UNDERSHIRT
+SHOES | Đôi giày tiếng Anh là gì? | 1 | SHOE
+BOOTS | Đôi bốt (giày cao cổ) tiếng Anh là gì? | 1 | BOOT
+SANDALS | Dép quai hậu (xăng-đan) tiếng Anh là gì? | 2 | SANDAL
+SLIPPERS | Dép lê (dép đi trong nhà) tiếng Anh là gì? | 2 | SLIPPER
+FLIP-FLOPS | Dép tông (dép xỏ ngón) tiếng Anh là gì? | 2 | FLIP-FLOP
+SNEAKERS | Giày thể thao tiếng Anh là gì? | 2 | SNEAKER, TRAINERS, TRAINER, RUNNING SHOES, SPORTS SHOES, SPORT SHOES
+HIGH HEELS | Giày cao gót tiếng Anh là gì? | 2 | HEELS, HIGH HEEL
+SHOELACE | Dây giày tiếng Anh là gì? | 3 | SHOELACES, LACE, LACES, SHOESTRING, SHOESTRINGS
+GLASSES | Cái kính đeo mắt tiếng Anh là gì? | 1 | EYEGLASSES, SPECTACLES, SPECS
+WRISTWATCH | Đồng hồ đeo tay tiếng Anh là gì? | 1 | WATCH
+BAG | Cái túi xách tiếng Anh là gì? | 1 | HANDBAG, PURSE
+RING | Chiếc nhẫn (đeo tay) tiếng Anh là gì? | 1
+SUNGLASSES | Kính râm (kính mát) tiếng Anh là gì? | 2 | SHADES
+NECKLACE | Dây chuyền (vòng cổ) tiếng Anh là gì? | 2
+EARRINGS | Bông tai (khuyên tai) tiếng Anh là gì? | 2 | EARRING
+BRACELET | Vòng tay (lắc tay) tiếng Anh là gì? | 2 | BANGLE
+JEWELRY | Đồ trang sức tiếng Anh là gì? | 3 | JEWELLERY, JEWELS
+HAIRPIN | Cái kẹp tóc tiếng Anh là gì? | 3 | HAIR CLIP, BARRETTE, BOBBY PIN, HAIR SLIDE
+WOOD | Gỗ tiếng Anh là gì? | 1 | TIMBER
+GOLD | Vàng (kim loại quý) tiếng Anh là gì? | 1
+METAL | Kim loại tiếng Anh là gì? | 2
+SILVER | Bạc (kim loại quý) tiếng Anh là gì? | 2
+COTTON | Vải bông (sợi bông) tiếng Anh là gì? | 2
+SILK | Lụa tiếng Anh là gì? | 2
+LEATHER | Da thuộc (làm giày, túi) tiếng Anh là gì? | 2
+WOOL | Len (lông cừu) tiếng Anh là gì? | 2
+BRICK | Viên gạch tiếng Anh là gì? | 2 | BRICKS
+FABRIC | Vải (để may quần áo) tiếng Anh là gì? | 3 | CLOTH, TEXTILE
+RUBBER | Cao su tiếng Anh là gì? | 3
+STEEL | Thép tiếng Anh là gì? | 3
+CERAMIC | Gốm sứ tiếng Anh là gì? | 3 | CERAMICS, PORCELAIN, POTTERY, CHINA
+ALUMINUM | Nhôm tiếng Anh là gì? | 3 | ALUMINIUM

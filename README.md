@@ -38,7 +38,7 @@ Cùng một bộ máy (`src/games/quiz/quiz-game.js`) + một cảnh (`public/st
 |---|---|---|
 | 📚 Lớp Học Chữ | đáp án (không dấu cũng được) | ~2.200 câu, 32 chủ đề |
 | 🏆 Đố Vui A/B/C/D | A, B, C hoặc D (chỉ tính lần chọn đầu) | ~5.100 câu, 4 bậc khó |
-| 🔤 Từ Vựng Tiếng Anh | từ tiếng Anh đúng nghĩa | 176 từ |
+| 🔤 Từ Vựng Tiếng Anh | từ tiếng Anh đúng nghĩa | ~1.250 từ, 8 chủ đề, A1–B1 (`bank/tieng-anh/`: mỗi chủ đề một file, thêm dòng là có câu mới) |
 | 🧩 Đuổi Hình Bắt Chữ | cụm từ theo chuỗi emoji | ~1.100 câu |
 | 🚩 Đoán Quốc Kỳ | tên nước (Việt hoặc Anh) | 143 nước |
 | ➗ Toán Nhanh | kết quả | tự sinh, khó dần |

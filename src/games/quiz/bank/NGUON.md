@@ -11,7 +11,7 @@ Mọi dữ liệu trong thư mục này lấy từ dự án mã nguồn mở gi�
 | `wordle-words.json` (từ 5 chữ cái; đáp án = từ gốc bậc A1–A2) | Wordle Tiếng Anh | https://github.com/Maximax67/Words-CEFR-Dataset | MIT |
 | `flags.json` + `public/assets/flags/*.svg` | Đoán Quốc Kỳ | https://github.com/lipis/flag-icons (tên nước tiếng Việt: dữ liệu ICU của Node + tên quen gọi) | MIT |
 
-Câu Toán Nhanh do game tự sinh (`quiz-bank.js`).
+Câu Toán Nhanh do game tự sinh (`quiz-bank.js`). Từ vựng tiếng Anh theo chủ đề (`tieng-anh/*.txt`, ~1.080 câu A1–B1) là tự soạn cho dự án này, không lấy từ nguồn ngoài.
 
 ## Giấy phép: workaipvlinh-byte/lop-hoc-chu
 
