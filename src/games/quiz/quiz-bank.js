@@ -156,8 +156,9 @@ export function makeMathQuestion(level, random = Math.random) {
   } else {
     const a = int(12, 39);
     const b = int(3, 9);
-    const c = int(2, 9);
-    const d = int(2, 9);
+    // c × d ≤ 25 < a × b (≥ 36): kết quả luôn dương — người xem không gõ được số âm (dấu "-" bị bỏ khi so đáp án)
+    const c = int(2, 5);
+    const d = int(2, 5);
     [text, answer] = random() < 0.5 ? [`${a} × ${b}`, a * b] : [`${a} × ${b} − ${c} × ${d}`, a * b - c * d];
   }
   const speech = `${text.replace(/[+−×÷]/g, (op) => SPOKEN_OP[op])} bằng mấy?`;

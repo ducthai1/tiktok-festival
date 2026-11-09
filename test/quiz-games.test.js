@@ -39,7 +39,7 @@ test('quiz banks: every question is answerable and A/B/C/D options are distinct'
   const { answers, allowed } = loadWordleWords();
   assert.ok(answers.length > 300 && answers.every((w) => /^[a-z]{5}$/.test(w) && allowed.has(w)));
   for (let level = 1; level <= 4; level += 1) {
-    for (let i = 0; i < 50; i += 1) {
+    for (let i = 0; i < 2000; i += 1) {
       const q = makeMathQuestion(level);
       assert.ok(Number(q.answer) >= 0 && Number.isInteger(Number(q.answer)), q.prompt);
     }
