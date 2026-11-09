@@ -17,7 +17,10 @@ const SCENES = {
   swim: () => import('./scenes/swim-scene.js').then((m) => m.createSwimScene),
   // chùa dùng tranh + sprite vẽ tay: tải xong hết hình rồi mới dựng cảnh
   temple: () => Promise.all([import('./scenes/temple-scene.js'), import('./scenes/temple-art.js').then((m) => m.preloadTempleArt())])
-    .then(([m]) => m.createTempleScene)
+    .then(([m]) => m.createTempleScene),
+  // 7 tab đố vui dùng chung một cảnh, khác màu + cách hiện đề
+  ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id,
+    () => import('./scenes/quiz-scene.js').then((m) => (ctx) => m.createQuizScene({ ...ctx, id }))]))
 };
 
 const stageEl = document.getElementById('stage');
@@ -116,8 +119,9 @@ async function switchScene(id) {
   current = factory({ hud, labels, audio, pipeline });
   pipeline.setToneMapping(current.toneMapping);
   currentId = id;
-  stageEl.classList.remove('theme-boss', 'theme-bar', 'theme-dance', 'theme-swim', 'theme-temple');
+  for (const c of [...stageEl.classList]) if (c.startsWith('theme-')) stageEl.classList.remove(c);
   stageEl.classList.add(`theme-${id}`);
+  if (current.themeClass) stageEl.classList.add(current.themeClass);
   audio.setTheme(id);
   hud.setLegend(legendFor(current), settings.legend !== false);
   if (latest?.game === id) current.update(latest);

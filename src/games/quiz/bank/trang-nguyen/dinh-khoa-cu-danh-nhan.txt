@@ -1,0 +1,318 @@
+# Thi Đình: khoa cử, Văn Miếu - Quốc Tử Giám, trạng nguyên, danh nhân, sách sử, luật cổ, lịch sử sâu
+[dinh]
+# --- Khoa cử ---
+Khoa thi Nho học đầu tiên ở nước ta được mở vào năm nào? | 1075 | 1070 | 1076 | 1010
+Ai đỗ đầu khoa thi Nho học đầu tiên năm 1075? | Lê Văn Thịnh | Mạc Hiển Tích | Tô Hiến Thành | Lý Đạo Thành
+Khoa thi năm 1075 được mở dưới triều vua nào? | Lý Nhân Tông | Lý Thánh Tông | Lý Thái Tông | Lý Anh Tông
+Khoa thi đầu tiên năm 1075 có tên gọi là gì? | Minh kinh bác học | Hoành từ | Tam giáo | Đông các
+Khoa thi Hội cuối cùng của khoa cử Việt Nam diễn ra năm nào? | 1919 | 1915 | 1905 | 1925
+Khoa thi Hương cuối cùng ở Bắc Kỳ năm 1915 mở tại trường thi nào? | Nam Định | Hà Nội | Bắc Ninh | Thanh Hóa
+Khoa thi Hương cuối cùng ở Trung Kỳ diễn ra năm nào? | 1918 | 1915 | 1919 | 1909
+Danh hiệu tam khôi được đặt ra lần đầu ở khoa thi năm nào? | 1247 | 1232 | 1256 | 1304
+Trong tam khôi, ai xếp thứ hai, chỉ sau trạng nguyên? | Bảng nhãn | Thám hoa | Hoàng giáp | Hội nguyên
+Tam khôi thuộc hạng nào trong bảng tiến sĩ? | Đệ nhất giáp | Đệ nhị giáp | Đệ tam giáp | Phó bảng
+Người đỗ đệ nhị giáp tiến sĩ thường được gọi là gì? | Hoàng giáp | Thám hoa | Phó bảng | Đồng tiến sĩ
+Người đỗ đệ tam giáp tiến sĩ có danh hiệu là gì? | Đồng tiến sĩ xuất thân | Tiến sĩ cập đệ | Hoàng giáp | Phó bảng
+Người đỗ đầu kỳ thi Hội gọi là gì? | Hội nguyên | Giải nguyên | Đình nguyên | Á nguyên
+Thời Nguyễn, người đỗ đầu kỳ thi Đình được gọi là gì? | Đình nguyên | Hội nguyên | Giải nguyên | Á nguyên
+Người đỗ đầu cả ba kỳ thi Hương, Hội, Đình gọi là gì? | Tam nguyên | Tam khôi | Tam giáp | Tam trường
+Người đỗ thứ hai kỳ thi Hương ngày xưa gọi là gì? | Á nguyên | Bảng nhãn | Hội nguyên | Thám hoa
+Thời Minh Mạng, học vị hương cống được đổi tên thành gì? | Cử nhân | Tú tài | Tiến sĩ | Giám sinh
+Dân gian ngày xưa gọi người đỗ tiến sĩ là ông gì? | Ông Nghè | Ông Cử | Ông Tú | Ông Đồ
+Thời Nguyễn, người thi Hội đủ điểm nhưng chưa tới tiến sĩ được đỗ học vị gì? | Phó bảng | Á nguyên | Hoàng giáp | Cử nhân
+Kỳ thi Đình ngày xưa do ai trực tiếp ra đề? | Nhà vua | Quan chủ khảo | Tể tướng | Tế tửu
+Bài thi Đình ngày xưa viết theo thể văn nào? | Văn sách | Thơ phú | Kinh nghĩa | Chiếu biểu
+Bộ nào trong Lục bộ thời xưa coi việc thi cử? | Bộ Lễ | Bộ Lại | Bộ Hộ | Bộ Công
+Từ thời Lê Thánh Tông, theo lệ thi Hội mấy năm tổ chức một lần? | 3 năm | 2 năm | 4 năm | 5 năm
+Thời Nguyễn, theo lệ thi Hương mở vào năm có chi nào? | Tý | Sửu | Thìn | Mùi
+Lệ tránh để người thân của quan trường không thi cùng trường gọi là gì? | Hồi tị | Phạm húy | Trường quy | Khảo hạch
+Viết phạm vào tên vua, tên chúa trong bài thi là mắc lỗi gì? | Phạm húy | Hồi tị | Lạc vận | Thất niêm
+Nhà Nguyễn không lấy danh hiệu nào sau đây trong thi Đình? | Trạng nguyên | Thám hoa | Hoàng giáp | Phó bảng
+Trạng nguyên cuối cùng trong lịch sử khoa cử Việt Nam là ai? | Trịnh Tuệ | Lê Quý Đôn | Nguyễn Bỉnh Khiêm | Lương Thế Vinh
+Khoa thi Hội đầu tiên của triều Nguyễn mở năm nào? | 1822 | 1807 | 1802 | 1829
+Khoa thi Hương đầu tiên của triều Nguyễn mở dưới triều vua nào? | Gia Long | Minh Mạng | Thiệu Trị | Tự Đức
+Thời Trần, trại trạng nguyên dành cho người đỗ đầu ở vùng nào? | Thanh Hóa, Nghệ An | Kinh Bắc, Sơn Nam | Thuận Hóa, Quảng Nam | Lạng Sơn, Cao Bằng
+Khoa thi Thái học sinh đầu tiên của nhà Trần năm 1232 do vua nào mở? | Trần Thái Tông | Trần Thánh Tông | Trần Nhân Tông | Trần Anh Tông
+Học vị "Thái học sinh" thời Trần tương đương với học vị nào về sau? | Tiến sĩ | Cử nhân | Tú tài | Giám sinh
+"Vinh quy bái tổ" là việc người thi đỗ làm gì? | Về quê lạy tổ tiên | Lên kinh dự thi | Đến nhậm chức quan | Tạ ơn thầy học
+Tiệc mừng người đỗ đạt mở mời cả làng ngày xưa gọi là gì? | Khao vọng | Hương ẩm | Xướng danh | Tế xuân
+Sĩ tử đi thi Hương ngày xưa phải tự mang theo thứ gì để ngồi làm bài? | Lều chõng | Bàn ghế | Võng gai | Giường tre
+Lễ đọc to tên người thi đỗ ở trường thi gọi là lễ gì? | Lễ xướng danh | Lễ vinh quy | Lễ khao vọng | Lễ yết bảng
+Bài thơ "Vịnh khoa thi Hương" tả cảnh trường thi Nam Định là của ai? | Tú Xương | Nguyễn Khuyến | Nguyễn Công Trứ | Tản Đà
+Tú Xương đi thi nhiều lần nhưng chỉ đỗ học vị gì? | Tú tài | Cử nhân | Phó bảng | Giám sinh
+Năm 1247, ai đỗ trạng nguyên khi mới 13 tuổi? | Nguyễn Hiền | Mạc Đĩnh Chi | Lê Văn Hưu | Đặng Ma La
+Sử gia nào đỗ bảng nhãn cùng khoa năm 1247 với Nguyễn Hiền? | Lê Văn Hưu | Ngô Sĩ Liên | Phan Phu Tiên | Lê Tắc
+Quan chấm bài ở vòng đầu tiên tại trường thi xưa gọi là gì? | Sơ khảo | Phúc khảo | Giám sát | Đề điệu
+Kỳ thi sát hạch ở địa phương để chọn người được thi Hương gọi là gì? | Khảo hạch | Đình thí | Hội thí | Phúc hạch
+Khoa thi mở thêm ngoài lệ nhân dịp vui của triều đình gọi là gì? | Ân khoa | Chính khoa | Võ khoa | Hoành từ khoa
+Chức quan đứng đầu Quốc Tử Giám ngày xưa gọi là gì? | Tế tửu | Tư nghiệp | Thái phó | Học chính
+Kỳ thi Hội ngày xưa được tổ chức ở đâu? | Ở kinh đô | Ở các trấn | Ở phủ huyện | Ở làng xã
+Bia đá ở Văn Miếu Hà Nội khắc tên những người đỗ học vị nào? | Tiến sĩ | Cử nhân | Tú tài | Giám sinh
+"Văn phòng tứ bảo" của nhà nho gồm bút, mực, giấy và vật gì? | Nghiên | Thước | Ấn | Đèn
+Khoa thi Hội năm 1901, ai đỗ phó bảng cùng khoa với cụ Nguyễn Sinh Sắc? | Phan Châu Trinh | Phan Bội Châu | Huỳnh Thúc Kháng | Trần Quý Cáp
+Phan Bội Châu đỗ giải nguyên trường thi Nghệ An năm nào? | 1900 | 1901 | 1904 | 1897
+Ai được gọi là "Tam nguyên Yên Đổ"? | Nguyễn Khuyến | Trần Bích San | Vũ Phạm Hàm | Tú Xương
+Ai được gọi là "Tam nguyên Vị Xuyên"? | Trần Bích San | Nguyễn Khuyến | Vũ Phạm Hàm | Nguyễn Văn Siêu
+Nguyễn Khuyến đỗ Hội nguyên và Đình nguyên năm nào? | 1871 | 1864 | 1884 | 1858
+Tên khai sinh của nhà thơ Nguyễn Khuyến là gì? | Nguyễn Thắng | Nguyễn Thiện | Nguyễn Tường | Nguyễn Văn Bình
+Nguyễn Đình Chiểu đỗ tú tài năm 1843 tại trường thi nào? | Gia Định | Thừa Thiên | Nghệ An | Bình Định
+Ai là người Nam Kỳ đầu tiên đỗ tiến sĩ? | Phan Thanh Giản | Trương Vĩnh Ký | Trịnh Hoài Đức | Bùi Hữu Nghĩa
+Nguyễn Công Trứ đỗ giải nguyên thi Hương năm nào? | 1819 | 1802 | 1825 | 1831
+Câu "Văn như Siêu, Quát vô tiền Hán" ca ngợi Nguyễn Văn Siêu và ai? | Cao Bá Quát | Nguyễn Công Trứ | Phan Huy Chú | Nguyễn Khuyến
+Câu "Thi đáo Tùng, Tuy thất thịnh Đường" ca ngợi Tùng Thiện Vương và ai? | Tuy Lý Vương | Tự Đức | Nguyễn Văn Siêu | Cao Bá Quát
+Nguyễn Văn Siêu đỗ học vị gì năm 1838? | Phó bảng | Tiến sĩ | Thám hoa | Cử nhân
+Cao Bá Quát đỗ học vị cao nhất là gì? | Cử nhân | Tiến sĩ | Phó bảng | Hoàng giáp
+Năm 1783, Nguyễn Du thi Hương và đỗ học vị gì? | Tam trường | Giải nguyên | Tiến sĩ | Hoàng giáp
+Lãnh tụ khởi nghĩa Hương Khê từng đỗ Đình nguyên năm 1877 là ai? | Phan Đình Phùng | Phan Bội Châu | Nguyễn Xuân Ôn | Đinh Công Tráng
+Ai đỗ trạng nguyên khoa thi năm 1442 thời Lê Thái Tông? | Nguyễn Trực | Lương Thế Vinh | Nguyễn Hiền | Vũ Kiệt
+Lương Thế Vinh đỗ trạng nguyên năm nào? | 1463 | 1442 | 1475 | 1499
+Dân gian gọi trạng nguyên Lương Thế Vinh là gì? | Trạng Lường | Trạng Trình | Trạng Bùng | Trạng Me
+Sách toán học nổi tiếng gắn với tên Lương Thế Vinh là sách nào? | Đại thành toán pháp | Lập thành toán pháp | Cửu chương toán | Ý Trai toán pháp
+Nguyễn Bỉnh Khiêm đỗ trạng nguyên năm 1535 dưới triều nào? | Nhà Mạc | Nhà Lê sơ | Nhà Lê trung hưng | Nhà Hồ
+Thầy dạy Nguyễn Bỉnh Khiêm là bảng nhãn nào? | Lương Đắc Bằng | Lương Thế Vinh | Thân Nhân Trung | Đỗ Nhuận
+Phùng Khắc Khoan được gọi là Trạng Bùng nhưng thật ra đỗ học vị gì? | Hoàng giáp | Trạng nguyên | Bảng nhãn | Cử nhân
+Mạc Đĩnh Chi đỗ trạng nguyên năm nào? | 1304 | 1247 | 1374 | 1256
+Bài phú nổi tiếng nào là của Mạc Đĩnh Chi? | Ngọc tỉnh liên phú | Bạch Đằng giang phú | Chí Linh sơn phú | Tịch cư ninh thể phú
+Lê Quý Đôn đỗ bảng nhãn năm nào? | 1752 | 1743 | 1736 | 1779
+Nguyễn Trãi đỗ Thái học sinh năm nào? | 1400 | 1407 | 1428 | 1385
+Mạc Đăng Dung, người lập ra nhà Mạc, từng đỗ gì? | Đô lực sĩ | Trạng nguyên | Thám hoa | Hoàng giáp
+Vở tuồng "Kim Thạch kỳ duyên" là của ai? | Bùi Hữu Nghĩa | Đào Tấn | Nguyễn Đình Chiểu | Phan Văn Trị
+# --- Văn Miếu - Quốc Tử Giám ---
+Quốc Tử Giám ở Thăng Long được lập năm nào? | 1076 | 1070 | 1075 | 1086
+Văn Miếu ở Thăng Long được dựng năm nào? | 1070 | 1076 | 1010 | 1054
+Điện Đại Thành trong Văn Miếu thờ ai? | Khổng Tử | Chu Văn An | Lão Tử | Lý Thánh Tông
+Ai cho dựng những tấm bia tiến sĩ đầu tiên ở Văn Miếu năm 1484? | Lê Thánh Tông | Lê Thái Tông | Lê Nhân Tông | Lê Hiển Tông
+Văn Miếu Hà Nội còn lưu giữ bao nhiêu tấm bia tiến sĩ? | 82 | 72 | 92 | 112
+Bia tiến sĩ ở Văn Miếu Hà Nội được đặt trên lưng con vật nào? | Rùa đá | Voi đá | Ngựa đá | Lân đá
+Bia tiến sĩ cuối cùng ở Văn Miếu Hà Nội ghi danh khoa thi năm nào? | 1779 | 1787 | 1736 | 1802
+Khoa thi được ghi trên tấm bia tiến sĩ sớm nhất ở Văn Miếu là năm nào? | 1442 | 1484 | 1463 | 1428
+Năm 2010, UNESCO công nhận 82 bia tiến sĩ Văn Miếu là loại di sản gì? | Di sản tư liệu | Di sản vật thể | Di sản phi vật thể | Di sản thiên nhiên
+Ai cho xây Khuê Văn Các ở Văn Miếu năm 1805? | Nguyễn Văn Thành | Nguyễn Văn Siêu | Lê Văn Duyệt | Nguyễn Công Trứ
+Chữ "Khuê" trong tên Khuê Văn Các là tên của gì? | Một vì sao | Một loài hoa | Một dòng sông | Một ngọn núi
+Khuê Văn Các có bao nhiêu cửa sổ hình tròn? | 4 | 2 | 6 | 8
+Các tấm bia tiến sĩ được đặt hai bên công trình nào trong Văn Miếu? | Giếng Thiên Quang | Khuê Văn Các | Điện Đại Thành | Nhà Thái Học
+Hai chữ "Thiên Quang" trong tên giếng ở Văn Miếu nghĩa là gì? | Ánh sáng bầu trời | Nước trong lành | Rồng bay lên | Ngọc quý trời ban
+Cổng chính đi vào Văn Miếu Hà Nội tên là gì? | Văn Miếu Môn | Đại Trung Môn | Đại Thành Môn | Ngọ Môn
+Hồ phía trước Văn Miếu, giữa hồ có gò Kim Châu, tên là gì? | Hồ Văn | Hồ Hoàn Kiếm | Hồ Thủ Lệ | Hồ Bảy Mẫu
+Câu "Hiền tài là nguyên khí của quốc gia" trên bia Văn Miếu do ai soạn? | Thân Nhân Trung | Ngô Sĩ Liên | Lê Thánh Tông | Đỗ Nhuận
+Văn miếu nào được coi là văn miếu đầu tiên ở Nam Bộ? | Văn Miếu Trấn Biên | Văn Miếu Vĩnh Long | Văn Miếu Huế | Văn Miếu Mao Điền
+Văn Miếu Huế được xây dưới triều vua nào? | Gia Long | Minh Mạng | Thiệu Trị | Tự Đức
+Bia tiến sĩ triều Nguyễn được dựng ở đâu? | Văn Miếu Huế | Văn Miếu Hà Nội | Ngọ Môn Huế | Văn Miếu Trấn Biên
+"Tứ phối" thờ ở Văn Miếu gồm Nhan Uyên, Tăng Sâm, Tử Tư và ai? | Mạnh Tử | Tuân Tử | Mặc Tử | Hàn Phi Tử
+Nhà giáo Việt Nam nào được thờ ở Văn Miếu Hà Nội? | Chu Văn An | Nguyễn Bỉnh Khiêm | Lê Quý Đôn | Lương Thế Vinh
+Khu di tích Văn Miếu - Quốc Tử Giám chia làm mấy lớp không gian? | 5 | 3 | 4 | 7
+Công trình nào trong Văn Miếu nằm trên nền Quốc Tử Giám xưa? | Nhà Thái Học | Khuê Văn Các | Điện Đại Thành | Đại Trung Môn
+Văn Miếu Mao Điền là văn miếu của trấn nào ngày xưa? | Hải Dương | Kinh Bắc | Sơn Nam | Sơn Tây
+# --- Danh nhân ---
+Chu Văn An dâng "Thất trảm sớ" lên vua nào? | Trần Dụ Tông | Trần Minh Tông | Trần Nghệ Tông | Trần Anh Tông
+Chu Văn An từng giữ chức gì ở Quốc Tử Giám? | Tư nghiệp | Tế tửu | Thái sư | Thượng thư
+Chu Văn An về ở ẩn trên ngọn núi nào? | Núi Phượng Hoàng | Núi Yên Tử | Núi Ba Vì | Núi Ngự Bình
+Sách của Chu Văn An tóm lược ý nghĩa Tứ thư tên là gì? | Tứ thư thuyết ước | Ngũ kinh đại toàn | Kiến văn tiểu lục | Vân đài loại ngữ
+Bài phú "Chí Linh sơn phú" là của ai? | Nguyễn Trãi | Trương Hán Siêu | Mạc Đĩnh Chi | Nguyễn Bỉnh Khiêm
+Ông ngoại của Nguyễn Trãi là ai? | Trần Nguyên Đán | Trần Quang Khải | Trần Khát Chân | Trần Thủ Độ
+Tác phẩm địa lý nổi tiếng của Nguyễn Trãi là gì? | Dư địa chí | Phủ biên tạp lục | Ô châu cận lục | Hoàng Việt địa dư chí
+Tập thư từ Nguyễn Trãi viết thay Lê Lợi gửi tướng Minh tên là gì? | Quân trung từ mệnh tập | Ức Trai thi tập | Hổ trướng khu cơ | Chí Linh sơn phú
+Tập thơ chữ Nôm của Nguyễn Trãi tên là gì? | Quốc âm thi tập | Ức Trai thi tập | Bạch Vân am thi tập | Thanh Hiên thi tập
+Năm 1442, Nguyễn Trãi bị khép tội trong vụ án nào? | Lệ Chi Viên | Dâm Đàm | Đông Quan | Lam Kinh
+Vua nào minh oan cho Nguyễn Trãi năm 1464? | Lê Thánh Tông | Lê Nhân Tông | Lê Thái Tông | Lê Nghi Dân
+Năm 1980, UNESCO kỷ niệm bao nhiêu năm ngày sinh của Nguyễn Trãi? | 600 năm | 500 năm | 550 năm | 650 năm
+"Bình Ngô đại cáo" được công bố vào năm nào? | 1428 | 1427 | 1418 | 1442
+Nguyễn Trãi dâng Lê Lợi bản kế sách đánh giặc Minh tên là gì? | Bình Ngô sách | Thất trảm sớ | Vạn ngôn thư | Trần tình biểu
+Nguyễn Bỉnh Khiêm lấy tên hiệu là gì? | Bạch Vân cư sĩ | Ức Trai | Quế Đường | Lãn Ông
+Danh xưng "Tuyết Giang phu tử" là để tôn kính ai? | Nguyễn Bỉnh Khiêm | Chu Văn An | Nguyễn Thiếp | Võ Trường Toản
+Bài thơ "Nhàn" có câu "Ta dại, ta tìm nơi vắng vẻ" là của ai? | Nguyễn Bỉnh Khiêm | Nguyễn Trãi | Nguyễn Khuyến | Nguyễn Công Trứ
+Quán do Nguyễn Bỉnh Khiêm dựng ở quê nhà tên là gì? | Quán Trung Tân | Quán Thê Húc | Quán Thiên Quang | Quán Ngọc Sơn
+Theo giai thoại, câu "Hoành Sơn nhất đái, vạn đại dung thân" Nguyễn Bỉnh Khiêm nói cho ai? | Nguyễn Hoàng | Trịnh Kiểm | Mạc Đăng Dung | Nguyễn Kim
+Học trò nào của Nguyễn Bỉnh Khiêm là tác giả "Truyền kỳ mạn lục"? | Nguyễn Dữ | Phùng Khắc Khoan | Lương Hữu Khánh | Nguyễn Quyện
+Bộ sách được coi như bách khoa thư của Lê Quý Đôn tên là gì? | Vân đài loại ngữ | Lịch triều hiến chương | Vũ trung tùy bút | Lĩnh Nam chích quái
+Sách "Phủ biên tạp lục" của Lê Quý Đôn ghi chép về vùng đất nào? | Thuận Hóa, Quảng Nam | Kinh Bắc, Sơn Tây | Hưng Hóa, Tuyên Quang | Thanh Hóa, Nghệ An
+Lê Quý Đôn có tên hiệu là gì? | Quế Đường | Ức Trai | Bạch Vân | Hy Văn
+Bộ sử theo lối kỷ truyện do Lê Quý Đôn soạn tên là gì? | Đại Việt thông sử | Đại Việt sử ký | Việt sử lược | An Nam chí lược
+Lê Quý Đôn ghi chép chuyến đi sứ nhà Thanh trong sách nào? | Bắc sứ thông lục | Bắc hành tạp lục | Thượng kinh ký sự | Nam Ông mộng lục
+Tên thật của danh y Hải Thượng Lãn Ông là gì? | Lê Hữu Trác | Nguyễn Bá Tĩnh | Lê Quý Đôn | Lê Văn Hưu
+Hai chữ "Lãn Ông" trong tên hiệu Hải Thượng Lãn Ông nghĩa là gì? | Ông già lười | Ông già hiền | Ông thầy thuốc | Ông già câu cá
+Bộ sách y học đồ sộ của Hải Thượng Lãn Ông có tên là gì? | Y tông tâm lĩnh | Nam dược thần hiệu | Hồng Nghĩa giác tư | Vạn bệnh hồi xuân
+Hải Thượng Lãn Ông viết "Thượng kinh ký sự" sau khi lên kinh chữa bệnh cho ai? | Thế tử Trịnh Cán | Chúa Trịnh Doanh | Vua Lê Hiển Tông | Chúa Trịnh Tùng
+Hải Thượng Lãn Ông sống và làm thuốc phần lớn cuộc đời ở đâu? | Hương Sơn | Thăng Long | Phú Xuân | Gia Định
+Danh y thời Trần nổi tiếng với chủ trương "Nam dược trị Nam nhân" là ai? | Tuệ Tĩnh | Lãn Ông | Phạm Công Bân | Nguyễn Đại Năng
+Tên chữ Hán gốc của Truyện Kiều là gì? | Đoạn trường tân thanh | Kim Vân Kiều truyện | Thanh Hiên thi tập | Bắc hành tạp lục
+Nguyễn Du có tên tự là gì? | Tố Như | Ức Trai | Quế Đường | Hy Văn
+Truyện Kiều được Nguyễn Du dựa theo tác phẩm của ai ở Trung Quốc? | Thanh Tâm Tài Nhân | La Quán Trung | Thi Nại Am | Tào Tuyết Cần
+Truyện Kiều có tổng cộng bao nhiêu câu thơ? | 3254 | 3245 | 3524 | 2354
+"Văn tế thập loại chúng sinh" của Nguyễn Du còn có tên gọi khác là gì? | Văn chiêu hồn | Văn tế cá sấu | Văn tế nghĩa sĩ | Văn tế sống
+Tập thơ chữ Hán Nguyễn Du viết trong chuyến đi sứ Trung Quốc tên là gì? | Bắc hành tạp lục | Nam trung tạp ngâm | Thanh Hiên thi tập | Bắc sứ thông lục
+Năm 2015, UNESCO vinh danh Nguyễn Du nhân kỷ niệm bao nhiêu năm ngày sinh? | 250 năm | 200 năm | 300 năm | 150 năm
+Ai được nhà thơ Xuân Diệu gọi là "Bà chúa thơ Nôm"? | Hồ Xuân Hương | Đoàn Thị Điểm | Bà Huyện Thanh Quan | Ngọc Hân công chúa
+Tên thật của Bà Huyện Thanh Quan là gì? | Nguyễn Thị Hinh | Nguyễn Thị Lộ | Đoàn Thị Điểm | Lê Ngọc Hân
+"Truyền kỳ tân phả" là tác phẩm của nữ sĩ nào? | Đoàn Thị Điểm | Hồ Xuân Hương | Bà Huyện Thanh Quan | Ngọc Hân công chúa
+Bài "Ai tư vãn" khóc vua Quang Trung là của ai? | Ngọc Hân công chúa | Đoàn Thị Điểm | Hồ Xuân Hương | Bà Huyện Thanh Quan
+Công chúa Lê Ngọc Hân là con gái của vua nào? | Lê Hiển Tông | Lê Chiêu Thống | Lê Thần Tông | Lê Dụ Tông
+"Văn tế nghĩa sĩ Cần Giuộc" là tác phẩm của ai? | Nguyễn Đình Chiểu | Phan Văn Trị | Bùi Hữu Nghĩa | Nguyễn Thông
+Tác phẩm về nghề thuốc "Ngư Tiều y thuật vấn đáp" là của ai? | Nguyễn Đình Chiểu | Hải Thượng Lãn Ông | Tuệ Tĩnh | Lê Quý Đôn
+Nguyễn Công Trứ chỉ huy khẩn hoang, lập nên huyện nào? | Tiền Hải | Hải Hậu | Giao Thủy | Nga Sơn
+"Hy Văn" là biệt hiệu của nhà thơ nào? | Nguyễn Công Trứ | Cao Bá Quát | Nguyễn Khuyến | Tú Xương
+Cao Bá Quát tham gia lãnh đạo cuộc khởi nghĩa nào? | Mỹ Lương | Hương Khê | Ba Đình | Bãi Sậy
+"Chu Thần" là tên hiệu của ai? | Cao Bá Quát | Nguyễn Văn Siêu | Nguyễn Công Trứ | Tùng Thiện Vương
+Nguyễn Văn Siêu có tên hiệu là gì? | Phương Đình | Hy Văn | Quế Đường | Ức Trai
+Tháp Bút bên hồ Hoàn Kiếm do ai cho dựng? | Nguyễn Văn Siêu | Cao Bá Quát | Nguyễn Văn Thành | Lê Văn Duyệt
+Ba chữ "Tả thanh thiên" trên Tháp Bút có nghĩa là gì? | Viết lên trời xanh | Vẽ bầu trời trong | Trời xanh soi bóng | Chim bay trời xanh
+Vì sao Đào Duy Từ không được đi thi ở Đàng Ngoài? | Là con nhà hát xướng | Vì đã quá tuổi thi | Vì mắc tội phạm húy | Vì nhà quá nghèo
+Bộ binh thư nổi tiếng của Đào Duy Từ tên là gì? | Hổ trướng khu cơ | Binh thư yếu lược | Võ kinh tổng yếu | Trận đồ bát quái
+Lũy Thầy ở đất Quảng Bình được đặt tên theo ai? | Đào Duy Từ | Nguyễn Cư Trinh | Nguyễn Hoàng | Lương Văn Chánh
+Trong "Hịch tướng sĩ", Trần Hưng Đạo khuyên tướng sĩ học tập sách gì? | Binh thư yếu lược | Hổ trướng khu cơ | Tôn Tử binh pháp | Võ kinh thất thư
+Lời dặn "khoan thư sức dân để làm kế sâu rễ bền gốc" là của ai? | Trần Hưng Đạo | Trần Thủ Độ | Lý Thường Kiệt | Nguyễn Trãi
+Trong Hội Tao Đàn, vua Lê Thánh Tông giữ danh hiệu gì? | Tao đàn nguyên súy | Tao đàn chủ soái | Tao đàn tổng quản | Tao đàn thượng thủ
+Hai phó nguyên súy Hội Tao Đàn là Thân Nhân Trung và ai? | Đỗ Nhuận | Ngô Sĩ Liên | Lương Thế Vinh | Lương Đắc Bằng
+Tập thơ "Quỳnh uyển cửu ca" là của vị vua nào? | Lê Thánh Tông | Trần Nhân Tông | Tự Đức | Minh Mạng
+Tập thơ vịnh sử "Việt sử tổng vịnh" là của vị vua nào? | Tự Đức | Minh Mạng | Thiệu Trị | Lê Thánh Tông
+"La Sơn phu tử" là danh xưng tôn kính dành cho ai? | Nguyễn Thiếp | Nguyễn Công Trứ | Nguyễn Du | Phan Huy Chú
+Vua Quang Trung lập Viện Sùng chính và giao cho ai đứng đầu? | Nguyễn Thiếp | Ngô Thì Nhậm | Phan Huy Ích | Trần Văn Kỷ
+"Hoàng Lê nhất thống chí" là tác phẩm của nhóm tác giả nào? | Ngô gia văn phái | Hội Tao Đàn | Chiêu Anh Các | Gia Định tam gia
+Tao đàn Chiêu Anh Các ở Hà Tiên do ai sáng lập? | Mạc Thiên Tích | Mạc Cửu | Trịnh Hoài Đức | Nguyễn Cư Trinh
+"Gia Định tam gia" gồm Trịnh Hoài Đức, Ngô Nhân Tịnh và ai? | Lê Quang Định | Phan Thanh Giản | Nguyễn Đình Chiểu | Võ Trường Toản
+Thầy học của Trịnh Hoài Đức, Lê Quang Định, Ngô Nhân Tịnh là ai? | Võ Trường Toản | Chu Văn An | Nguyễn Thiếp | Đặng Đức Siêu
+"Vũ trung tùy bút" là tác phẩm của ai? | Phạm Đình Hổ | Nguyễn Án | Lê Hữu Trác | Lê Quý Đôn
+Phạm Đình Hổ cùng Nguyễn Án viết chung tác phẩm nào? | Tang thương ngẫu lục | Kiến văn tiểu lục | Công dư tiệp ký | Thượng kinh ký sự
+Nguyên tác "Chinh phụ ngâm khúc" bằng chữ Hán là của ai? | Đặng Trần Côn | Đoàn Thị Điểm | Phan Huy Ích | Nguyễn Gia Thiều
+Bản dịch Nôm "Chinh phụ ngâm" được viết theo thể thơ nào? | Song thất lục bát | Lục bát | Thất ngôn bát cú | Hát nói
+"Cung oán ngâm khúc" là tác phẩm của ai? | Nguyễn Gia Thiều | Đặng Trần Côn | Nguyễn Huy Tự | Phạm Thái
+Truyện thơ Nôm "Hoa tiên" là của ai? | Nguyễn Huy Tự | Nguyễn Gia Thiều | Phạm Thái | Đặng Trần Côn
+"Sơ kính tân trang" là truyện thơ Nôm của ai? | Phạm Thái | Nguyễn Huy Tự | Nguyễn Gia Thiều | Phạm Đình Hổ
+Ai làm văn tế đuổi cá sấu bằng chữ Nôm năm 1282 và được vua ban họ Hàn? | Nguyễn Thuyên | Nguyễn Sĩ Cố | Chu Văn An | Trương Hán Siêu
+Bài "Bạch Đằng giang phú" là của ai? | Trương Hán Siêu | Mạc Đĩnh Chi | Nguyễn Trãi | Phạm Sư Mạnh
+Bài thơ "Thuật hoài" (Tỏ lòng) là của danh tướng nào? | Phạm Ngũ Lão | Trần Quang Khải | Đặng Dung | Trần Khánh Dư
+Bài thơ "Cảm hoài" là của danh tướng nhà Hậu Trần nào? | Đặng Dung | Đặng Tất | Nguyễn Cảnh Dị | Nguyễn Biểu
+Bài thơ "Tụng giá hoàn kinh sư" (Phò giá về kinh) là của ai? | Trần Quang Khải | Trần Nhân Tông | Phạm Ngũ Lão | Trần Hưng Đạo
+Bài văn Lý Thường Kiệt công bố khi đem quân đánh Tống năm 1075 tên là gì? | Phạt Tống lộ bố văn | Hịch tướng sĩ | Bình Ngô đại cáo | Thất trảm sớ
+Nguyễn Trường Tộ nổi tiếng với việc gửi triều đình những văn bản gì? | Các bản điều trần | Các bài hịch | Các bộ sử | Các tập thơ Nôm
+Phong trào đưa thanh niên sang Nhật học do Phan Bội Châu khởi xướng tên gì? | Đông Du | Duy Tân | Cần Vương | Đông Kinh nghĩa thục
+Trường Đông Kinh nghĩa thục được mở ở Hà Nội năm nào? | 1907 | 1905 | 1908 | 1911
+Tờ báo "Tiếng Dân" ở Huế do ai sáng lập? | Huỳnh Thúc Kháng | Phan Bội Châu | Ngô Đức Kế | Phan Châu Trinh
+Phan Châu Trinh viết "Thất điều trần" kể bảy tội của vua nào? | Khải Định | Thành Thái | Duy Tân | Bảo Đại
+Khởi nghĩa Bãi Sậy do ai lãnh đạo? | Nguyễn Thiện Thuật | Phan Đình Phùng | Đinh Công Tráng | Tống Duy Tân
+Bộ từ điển "Đại Nam quốc âm tự vị" do ai soạn? | Huỳnh Tịnh Của | Trương Vĩnh Ký | Nguyễn Văn Vĩnh | Phạm Quỳnh
+Từ điển Việt - Bồ - La của Alexandre de Rhodes được in năm nào? | 1651 | 1624 | 1698 | 1615
+Tờ báo chữ quốc ngữ đầu tiên ở nước ta tên là gì? | Gia Định báo | Nông cổ mín đàm | Lục tỉnh tân văn | Đông Dương tạp chí
+Chùm ba bài thơ Thu điếu, Thu ẩm, Thu vịnh là của ai? | Nguyễn Khuyến | Tú Xương | Tản Đà | Nguyễn Công Trứ
+Nữ sĩ nào có tên hiệu là Hồng Hà nữ sĩ? | Đoàn Thị Điểm | Hồ Xuân Hương | Bà Huyện Thanh Quan | Ngọc Hân công chúa
+# --- Sách sử, luật cổ, chữ Hán - Nôm ---
+Lê Văn Hưu hoàn thành bộ "Đại Việt sử ký" vào năm nào? | 1272 | 1247 | 1293 | 1479
+Bộ "Đại Việt sử ký toàn thư" do ai biên soạn thời Lê Thánh Tông? | Ngô Sĩ Liên | Lê Văn Hưu | Phan Phu Tiên | Lê Quý Đôn
+Bản khắc in Đại Việt sử ký toàn thư năm 1697 thường được gọi là bản gì? | Bản Chính Hòa | Bản Hồng Đức | Bản Cảnh Hưng | Bản Quang Thuận
+Năm 1455, sử gia nào soạn tiếp bộ sử nối theo Lê Văn Hưu? | Phan Phu Tiên | Ngô Sĩ Liên | Vũ Quỳnh | Lê Tung
+Bộ "Khâm định Việt sử thông giám cương mục" soạn dưới triều vua nào? | Tự Đức | Minh Mạng | Gia Long | Thiệu Trị
+Bộ sử biên niên "Đại Nam thực lục" do cơ quan nào biên soạn? | Quốc sử quán | Hàn lâm viện | Quốc Tử Giám | Bộ Lễ
+"Đại Nam nhất thống chí" thuộc loại sách gì? | Địa chí | Gia phả | Binh thư | Y thư
+"Lịch triều hiến chương loại chí" là tác phẩm của ai? | Phan Huy Chú | Lê Quý Đôn | Phan Huy Ích | Ngô Thì Sĩ
+"Lịch triều hiến chương loại chí" được chia làm mấy chí? | 10 | 8 | 12 | 6
+Sách "An Nam chí lược" là của ai? | Lê Tắc | Lê Văn Hưu | Lý Tế Xuyên | Hồ Nguyên Trừng
+"Việt điện u linh tập" là tác phẩm của ai? | Lý Tế Xuyên | Lê Tắc | Vũ Quỳnh | Trần Thế Pháp
+"Nam Ông mộng lục" là tác phẩm của ai? | Hồ Nguyên Trừng | Hồ Quý Ly | Lê Tắc | Nguyễn Phi Khanh
+Hồ Nguyên Trừng nổi tiếng với việc chế tạo loại vũ khí nào? | Súng thần cơ | Nỏ liên châu | Máy bắn đá | Hỏa hổ
+"Gia Định thành thông chí" là của ai? | Trịnh Hoài Đức | Lê Quang Định | Phan Thanh Giản | Nguyễn Văn Thành
+Sách "Ô châu cận lục" chép về vùng Thuận Quảng thời Mạc là của ai? | Dương Văn An | Lê Quý Đôn | Nguyễn Trãi | Phan Huy Chú
+"Lĩnh Nam chích quái" là sách sưu tập loại gì? | Truyện dân gian | Thơ Đường luật | Luật lệ triều đình | Phép chữa bệnh
+"Đại Nam quốc sử diễn ca" do Lê Ngô Cát soạn, ai là người sửa lại? | Phạm Đình Toái | Phạm Đình Hổ | Phan Huy Chú | Trương Vĩnh Ký
+Diễn ca lịch sử bằng chữ Nôm "Thiên Nam ngữ lục" viết theo thể thơ nào? | Lục bát | Song thất lục bát | Thất ngôn tứ tuyệt | Hát nói
+Bộ bản đồ đất nước vẽ dưới thời Lê Thánh Tông gọi là gì? | Hồng Đức bản đồ | Đại Nam toàn đồ | An Nam hình thắng đồ | Thiên Nam lộ đồ
+Bộ luật thành văn đầu tiên của nước ta, bộ Hình thư, ra đời dưới triều vua nào? | Lý Thái Tông | Lý Thái Tổ | Lý Thánh Tông | Lý Nhân Tông
+"Quốc triều hình luật" thời Lê còn được gọi là luật gì? | Luật Hồng Đức | Luật Gia Long | Luật Quang Thuận | Luật Thiệu Bình
+"Quốc triều hình luật" thời Lê sơ có bao nhiêu điều? | 722 | 398 | 572 | 622
+"Hoàng Việt luật lệ" của triều Nguyễn còn được gọi là luật gì? | Luật Gia Long | Luật Hồng Đức | Luật Minh Mạng | Luật Tự Đức
+"Hoàng Việt luật lệ" phỏng theo chủ yếu bộ luật của triều nào ở Trung Quốc? | Nhà Thanh | Nhà Minh | Nhà Đường | Nhà Tống
+Chữ Nôm được người Việt tạo ra dựa trên chữ viết nào? | Chữ Hán | Chữ Phạn | Chữ Chăm | Chữ Latinh
+Vua nào cho dùng chữ Nôm trong chiếu chỉ của triều đình? | Quang Trung | Lê Thánh Tông | Gia Long | Minh Mạng
+Sách vỡ lòng chữ Hán mỗi câu ba chữ tên là gì? | Tam tự kinh | Minh tâm bảo giám | Ấu học ngũ ngôn | Thiên tự văn
+Bộ "Tứ thư" gồm Luận ngữ, Mạnh Tử, Đại học và sách nào? | Trung dung | Kinh Thi | Kinh Dịch | Kinh Lễ
+Sách nào sau đây thuộc bộ "Ngũ kinh"? | Kinh Xuân Thu | Luận ngữ | Đại học | Trung dung
+Câu "Tiên học lễ, hậu học văn" nghĩa là gì? | Học lễ trước, chữ sau | Học chữ trước, lễ sau | Học đi đôi với hành | Học thầy rồi học bạn
+Câu "Nhất tự vi sư, bán tự vi sư" khuyên người học điều gì? | Kính trọng người thầy | Chăm đọc sách mỗi ngày | Học ít hiểu nhiều | Viết chữ cho đẹp
+Tương truyền bài thơ "Nam quốc sơn hà" vang lên bên phòng tuyến sông nào? | Sông Như Nguyệt | Sông Bạch Đằng | Sông Hát | Sông Tô Lịch
+Mộc bản triều Nguyễn được UNESCO công nhận di sản tư liệu thế giới năm nào? | 2009 | 2010 | 2014 | 2005
+Nhã nhạc cung đình Huế được UNESCO ghi danh năm nào? | 2003 | 1993 | 2005 | 2009
+Quần thể di tích Cố đô Huế được UNESCO công nhận năm nào? | 1993 | 1999 | 2003 | 1987
+Khu trung tâm Hoàng thành Thăng Long được UNESCO công nhận năm nào? | 2010 | 2011 | 2003 | 2014
+Thành nhà Hồ được UNESCO công nhận di sản thế giới năm nào? | 2011 | 2010 | 2014 | 2003
+Ca trù được UNESCO ghi danh là di sản cần bảo vệ khẩn cấp năm nào? | 2009 | 2003 | 2011 | 2017
+# --- Lịch sử ---
+Ai giành quyền tự chủ cho người Việt vào năm 905? | Khúc Thừa Dụ | Dương Đình Nghệ | Ngô Quyền | Khúc Hạo
+Kiều Công Tiễn giết Dương Đình Nghệ rồi cầu cứu quân nào? | Quân Nam Hán | Quân Tống | Quân Ngô | Quân Đường
+Ngô Quyền đánh tan quân Nam Hán trên sông Bạch Đằng năm nào? | 938 | 939 | 981 | 1288
+Sau khi xưng vương, Ngô Quyền đóng đô ở đâu? | Cổ Loa | Hoa Lư | Mê Linh | Đại La
+Đinh Bộ Lĩnh đặt quốc hiệu nước ta là gì? | Đại Cồ Việt | Đại Việt | Vạn Xuân | Đại Ngu
+Quốc hiệu Đại Ngu là của triều đại nào? | Nhà Hồ | Nhà Trần | Nhà Mạc | Nhà Tây Sơn
+Quốc hiệu Vạn Xuân do ai đặt? | Lý Bí | Triệu Quang Phục | Mai Thúc Loan | Phùng Hưng
+Mai Thúc Loan được nhân dân tôn xưng là gì? | Mai Hắc Đế | Bố Cái Đại Vương | Dạ Trạch Vương | Lý Nam Đế
+"Bố Cái Đại Vương" là tôn hiệu dành cho ai? | Phùng Hưng | Mai Thúc Loan | Triệu Quang Phục | Khúc Thừa Dụ
+Hai Bà Trưng sau khi khởi nghĩa thắng lợi đóng đô ở đâu? | Mê Linh | Cổ Loa | Luy Lâu | Hoa Lư
+Khởi nghĩa Bà Triệu năm 248 chống lại quân xâm lược nào? | Quân Ngô | Quân Hán | Quân Lương | Quân Tùy
+Vua Lý Thánh Tông đặt quốc hiệu Đại Việt vào năm nào? | 1054 | 1010 | 1042 | 1070
+Thăng Long được đổi tên thành Hà Nội vào năm nào? | 1831 | 1802 | 1805 | 1873
+Quốc hiệu Việt Nam chính thức có từ năm nào dưới triều Gia Long? | 1804 | 1802 | 1820 | 1838
+Vua Minh Mạng đổi quốc hiệu nước ta thành gì? | Đại Nam | Đại Việt | Việt Nam | Nam Việt
+Sau khi lên ngôi năm 1428, Lê Lợi đổi tên Thăng Long thành gì? | Đông Kinh | Đông Đô | Tây Kinh | Bắc Thành
+Thành nhà Hồ xưa còn được gọi là gì? | Tây Đô | Đông Đô | Đông Kinh | Trung Đô
+Thành nào của nhà Tống bị Lý Thường Kiệt hạ sau hơn 40 ngày vây năm 1076? | Ung Châu | Khâm Châu | Liêm Châu | Quảng Châu
+Nguyên phi Ỷ Lan là mẹ của vua nào? | Lý Nhân Tông | Lý Thánh Tông | Lý Thần Tông | Lý Anh Tông
+Lý Chiêu Hoàng nhường ngôi cho ai? | Trần Cảnh | Trần Thủ Độ | Trần Liễu | Trần Thừa
+Khi ốm nặng, Tô Hiến Thành tiến cử ai thay mình? | Trần Trung Tá | Vũ Tán Đường | Đỗ Anh Vũ | Lý Đạo Thành
+Ai nói "Đầu thần chưa rơi xuống đất, xin bệ hạ đừng lo"? | Trần Thủ Độ | Trần Hưng Đạo | Trần Quang Khải | Trần Bình Trọng
+Ai nói "Ta thà làm quỷ nước Nam, chứ không thèm làm vương đất Bắc"? | Trần Bình Trọng | Trần Quốc Toản | Trần Khánh Dư | Phạm Ngũ Lão
+Hội nghị Diên Hồng năm 1284, nhà Trần mời những ai đến bàn việc nước? | Các bô lão | Các vương hầu | Các sĩ tử | Các sứ thần
+Tướng Nguyên nào tử trận ở trận Tây Kết năm 1285? | Toa Đô | Ô Mã Nhi | Thoát Hoan | Phàn Tiếp
+Trong trận Bạch Đằng năm 1288, tướng Nguyên nào bị bắt sống? | Ô Mã Nhi | Toa Đô | Thoát Hoan | Lý Hằng
+Ai chỉ huy trận Vân Đồn năm 1288 phá đoàn thuyền lương quân Nguyên? | Trần Khánh Dư | Trần Quang Khải | Trần Nhật Duật | Phạm Ngũ Lão
+Đổi lại đám cưới công chúa Huyền Trân, nhà Trần nhận được vùng đất nào? | Châu Ô, châu Lý | Châu Hoan, châu Ái | Châu Ung, châu Khâm | Châu Lạng, châu Phong
+Vua nào sáng lập Thiền phái Trúc Lâm Yên Tử? | Trần Nhân Tông | Trần Thái Tông | Trần Thánh Tông | Trần Anh Tông
+Tiền giấy lần đầu được phát hành ở nước ta dưới thời ai? | Hồ Quý Ly | Lê Thánh Tông | Trần Nhân Tông | Quang Trung
+Vua Trùng Quang Đế nhà Hậu Trần có tên là gì? | Trần Quý Khoáng | Trần Ngỗi | Trần Cảo | Trần Nhật Duật
+Hội thề Lũng Nhai của Lê Lợi và các tướng diễn ra năm nào? | 1416 | 1418 | 1424 | 1407
+Ai mặc áo vua, liều mình cứu Lê Lợi thoát vòng vây quân Minh? | Lê Lai | Nguyễn Chích | Đinh Lễ | Lê Sát
+Ai đề xuất kế "lấy Nghệ An làm chỗ đứng chân" cho nghĩa quân Lam Sơn? | Nguyễn Chích | Nguyễn Trãi | Lê Lai | Trần Nguyên Hãn
+Tướng Minh bị giết ở ải Chi Lăng năm 1427 là ai? | Liễu Thăng | Vương Thông | Trương Phụ | Mộc Thạnh
+Vua Lê Thánh Tông chia cả nước thành bao nhiêu đạo thừa tuyên? | 13 | 9 | 15 | 24
+Nguyễn Hoàng vào trấn thủ đất Thuận Hóa năm nào? | 1558 | 1527 | 1600 | 1627
+Thời Trịnh - Nguyễn phân tranh, dòng sông nào làm ranh giới hai miền? | Sông Gianh | Sông Bến Hải | Sông Lam | Sông Mã
+Năm 1698, ai được chúa Nguyễn cử vào kinh lược, lập phủ Gia Định? | Nguyễn Hữu Cảnh | Mạc Cửu | Nguyễn Cư Trinh | Lê Văn Duyệt
+Ai có công khai phá vùng đất Hà Tiên rồi quy phục chúa Nguyễn? | Mạc Cửu | Mạc Thiên Tích | Nguyễn Hữu Cảnh | Trần Thượng Xuyên
+Kênh Vĩnh Tế được đặt theo tên vợ của ai? | Thoại Ngọc Hầu | Lê Văn Duyệt | Nguyễn Hữu Cảnh | Trịnh Hoài Đức
+Nguyễn Nhạc lên ngôi hoàng đế, đóng đô ở thành nào? | Thành Hoàng Đế | Thành Phú Xuân | Thành Gia Định | Thành Diên Khánh
+Trận Rạch Gầm - Xoài Mút năm 1785 quân Tây Sơn đánh tan quân nào? | Quân Xiêm | Quân Thanh | Quân Minh | Quân Chân Lạp
+Năm 1788, Nguyễn Huệ lên ngôi hoàng đế ở đâu? | Núi Bân | Núi Ngự Bình | Núi Tam Điệp | Núi Đọ
+Tổng đốc Lưỡng Quảng chỉ huy quân Thanh sang nước ta năm 1788 là ai? | Tôn Sĩ Nghị | Sầm Nghi Đống | Hứa Thế Hanh | Liễu Thăng
+Tướng Thanh nào bỏ mạng ở gò Đống Đa năm 1789? | Sầm Nghi Đống | Tôn Sĩ Nghị | Hứa Thế Hanh | Ô Đại Kinh
+Ai đề xuất lui quân về giữ phòng tuyến Tam Điệp - Biện Sơn năm 1788? | Ngô Thì Nhậm | Phan Huy Ích | Nguyễn Thiếp | Trần Quang Diệu
+Bài "Chiếu cầu hiền" của vua Quang Trung do ai soạn thay? | Ngô Thì Nhậm | Nguyễn Thiếp | Phan Huy Ích | Trần Văn Kỷ
+Kinh đô mới vua Quang Trung định xây ở Nghệ An gọi là gì? | Phượng Hoàng trung đô | Tây Đô | Đông Kinh | Thiên Trường
+Năm 1858, liên quân Pháp và nước nào nổ súng tấn công Đà Nẵng? | Tây Ban Nha | Anh | Bồ Đào Nha | Hà Lan
+Hiệp ước năm 1862, triều Nguyễn cắt cho Pháp mấy tỉnh miền Đông Nam Kỳ? | 3 | 2 | 4 | 6
+Ai chỉ huy đốt tàu Hy Vọng của Pháp trên sông Nhật Tảo năm 1861? | Nguyễn Trung Trực | Trương Định | Nguyễn Hữu Huân | Võ Duy Dương
+Ai tử thủ thành Hà Nội khi Pháp đánh lần thứ nhất năm 1873? | Nguyễn Tri Phương | Hoàng Diệu | Tôn Thất Thuyết | Phan Thanh Giản
+Tổng đốc Hà Nội nào hy sinh khi thành mất năm 1882? | Hoàng Diệu | Nguyễn Tri Phương | Tôn Thất Thuyết | Phan Thanh Giản
+Chiếu Cần Vương được ban ra vào năm nào? | 1885 | 1884 | 1888 | 1896
+Vua Hàm Nghi bị thực dân Pháp đưa đi đày ở đâu? | An-giê-ri | Đảo Réunion | Ma-đa-ga-xca | Xê-nê-gan
+Vua Duy Tân bị thực dân Pháp đày ra hòn đảo nào? | Đảo Réunion | Đảo Côn Lôn | Đảo Madagascar | Đảo Corse
+Cùng Phạm Bành lãnh đạo khởi nghĩa Ba Đình là ai? | Đinh Công Tráng | Tống Duy Tân | Cầm Bá Thước | Hà Văn Mao
+# --- Bổ sung ---
+Trần Quốc Toản bóp nát quả cam vì không được dự hội nghị nào? | Hội nghị Bình Than | Hội nghị Diên Hồng | Hội thề Lũng Nhai | Hội thề Đông Quan
+Tổng binh nhà Minh phải ra hội thề Đông Quan năm 1427 là ai? | Vương Thông | Liễu Thăng | Mộc Thạnh | Trương Phụ
+Trước niên hiệu Hồng Đức, vua Lê Thánh Tông dùng niên hiệu nào? | Quang Thuận | Thiệu Bình | Thái Hòa | Cảnh Hưng
+Lê Lợi lên ngôi năm 1428 đặt niên hiệu là gì? | Thuận Thiên | Thiệu Bình | Quang Thuận | Hồng Đức
+Bài thơ chữ Hán "Côn Sơn ca" là của ai? | Nguyễn Trãi | Nguyễn Bỉnh Khiêm | Chu Văn An | Trần Nhân Tông
+Năm 981, Lê Hoàn đánh tan quân xâm lược nào? | Quân Tống | Quân Nam Hán | Quân Nguyên | Quân Minh
+Lý Công Uẩn quê ở châu nào? | Cổ Pháp | Hoa Lư | Đường Lâm | Thiên Trường
+Vùng đất nào là quê của cả Phùng Hưng và Ngô Quyền? | Đường Lâm | Cổ Pháp | Mê Linh | Thiên Trường
+Phủ Thiên Trường là quê hương của triều đại nào? | Nhà Trần | Nhà Lý | Nhà Lê | Nhà Hồ
+Khu di tích Lam Kinh là nơi đặt lăng mộ các vua triều nào? | Nhà Lê sơ | Nhà Trần | Nhà Mạc | Nhà Nguyễn
+Tướng nhà Tống chỉ huy quân xâm lược, thua ở sông Như Nguyệt năm 1077 là ai? | Quách Quỳ | Hầu Nhân Bảo | Liễu Thăng | Thoát Hoan
+Quân sĩ nhà Trần thích lên cánh tay hai chữ gì để tỏ quyết tâm đánh giặc? | Sát Thát | Phá Nguyên | Diệt Nguyên | Đả Thát
+Hội Tao Đàn được vua Lê Thánh Tông lập vào năm nào? | 1495 | 1471 | 1484 | 1463
+Đồng tiền đầu tiên của nước ta mang tên gì? | Thái Bình hưng bảo | Thiên Phúc trấn bảo | Thuận Thiên đại bảo | Quang Trung thông bảo
+Thám hoa nào được tôn là ông tổ nghề khắc ván in? | Lương Như Hộc | Lương Thế Vinh | Nguyễn Trực | Lương Đắc Bằng
+Năm 1867, Kinh lược đại thần nào để mất ba tỉnh miền Tây Nam Kỳ vào tay Pháp? | Phan Thanh Giản | Nguyễn Tri Phương | Hoàng Diệu | Trương Định
+Cuộc phản công quân Pháp ở kinh thành Huế năm 1885 do ai chỉ huy? | Tôn Thất Thuyết | Phan Đình Phùng | Hoàng Diệu | Nguyễn Tri Phương
+Nhà Minh đem quân xâm lược nước ta năm 1406 lấy cớ gì? | Phù Trần diệt Hồ | Phù Lê diệt Mạc | Phò Lý diệt Trần | Bình Chiêm định Nam
+Quang Trung đại phá quân Thanh vào dịp Tết năm âm lịch nào? | Kỷ Dậu | Mậu Thân | Canh Tuất | Đinh Mùi
+Sử gia Ngô Sĩ Liên đỗ tiến sĩ khoa thi năm nào? | 1442 | 1463 | 1475 | 1484
+Cầu Thê Húc ở hồ Hoàn Kiếm dẫn vào đền nào? | Đền Ngọc Sơn | Đền Quán Thánh | Đền Bạch Mã | Đền Voi Phục
+Theo cách giải thích phổ biến, niên hiệu Gia Long ghép tên hai vùng nào? | Gia Định, Thăng Long | Gia Lâm, Long Biên | Gia Viễn, Long Hồ | Gia Lai, Long Xuyên

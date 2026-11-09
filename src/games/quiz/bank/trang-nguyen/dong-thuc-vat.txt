@@ -1,0 +1,384 @@
+# Chủ đề: động vật, thực vật, nấm, hệ sinh thái, rừng, biển, bảo tồn thiên nhiên
+# Không có câu về cơ thể người. Không hỏi số lượng cá thể còn lại, không dùng kỷ lục còn tranh cãi.
+# Mỗi dòng: câu hỏi | ĐÁP ÁN ĐÚNG | sai | sai | sai
+
+[de]
+Con vật nào được gọi là "chúa sơn lâm"? | Con hổ | Con sư tử | Con báo | Con gấu
+Loài thú nào có bờm, được gọi là "vua của muông thú"? | Sư tử | Con hổ | Báo đốm | Linh cẩu
+Cá thở bằng cơ quan nào? | Mang | Phổi | Da | Khí quản
+Loài thú nào trên cạn có chiếc vòi dài? | Con voi | Con tê giác | Con hà mã | Con lợn rừng
+Loài thú nào có sừng mọc trên mũi? | Tê giác | Hươu sao | Trâu rừng | Linh dương
+Ong mật lấy gì từ hoa để làm mật? | Mật hoa | Nhựa cây | Nước mưa | Lá non
+Nòng nọc lớn lên sẽ thành con gì? | Con ếch | Con cá | Con rắn | Con thằn lằn
+Sâu bướm hóa nhộng rồi thành con gì? | Con bướm | Con ong | Chuồn chuồn | Ve sầu
+Con vật nào có túi trước bụng để nuôi con? | Chuột túi | Gấu trúc | Con khỉ | Con sóc
+Loài vật nào được gọi là "con tàu sa mạc"? | Lạc đà | Con ngựa | Con lừa | Con voi
+Con nhện có mấy chân? | 8 | 6 | 10 | 4
+Côn trùng trưởng thành có mấy chân? | 6 | 8 | 4 | 10
+Khi quang hợp, cây xanh hút vào khí gì? | Khí cacbonic | Khí oxi | Khí nitơ | Khí hiđrô
+Khi quang hợp, cây xanh nhả ra khí gì? | Khí oxi | Khí cacbonic | Khí nitơ | Khí mêtan
+Bộ phận nào hút nước và muối khoáng cho cây? | Rễ | Lá | Hoa | Quả
+Hoa sen thường nở rộ vào mùa nào? | Mùa hè | Mùa xuân | Mùa thu | Mùa đông
+Con vật nào mang vỏ trên lưng, bò chậm, để lại vệt nhờn? | Ốc sên | Con cua | Con rùa | Con sâu
+"Gần bùn mà chẳng hôi tanh mùi bùn" là câu ca dao nói về hoa gì? | Hoa sen | Hoa súng | Hoa huệ | Hoa lan
+Loài nào sau đây thuộc lớp chim? | Đà điểu | Con dơi | Cá chuồn | Sóc bay
+Dơi thuộc lớp động vật nào? | Lớp thú | Lớp chim | Lớp bò sát | Lớp côn trùng
+Con gì được nuôi để lấy tơ dệt lụa? | Con tằm | Con nhện | Con ong | Con sâu đo
+Tằm chủ yếu ăn lá cây gì? | Lá dâu | Lá chè | Lá sen | Lá chuối
+Con vật nào lột da khi lớn lên? | Con rắn | Con mèo | Con gà | Cá chép
+Rắn, thằn lằn, cá sấu cùng thuộc lớp nào? | Bò sát | Lưỡng cư | Lớp cá | Lớp thú
+Ếch, nhái, cóc thuộc lớp động vật nào? | Lưỡng cư | Bò sát | Lớp cá | Lớp chim
+Cá heo thở bằng gì? | Phổi | Mang | Da | Vây
+Con vật nào nổi tiếng biết đổi màu da? | Tắc kè hoa | Thạch sùng | Cá sấu | Con rùa
+Gấu trúc lớn chủ yếu ăn gì? | Tre trúc | Cá suối | Mật ong | Thịt thỏ
+Loài thú cổ dài nào sống ở đồng cỏ châu Phi? | Hươu cao cổ | Ngựa vằn | Linh dương | Trâu rừng
+Con vật nào có bộ lông sọc đen trắng, sống ở châu Phi? | Ngựa vằn | Hươu cao cổ | Linh dương | Sư tử
+Trong đàn ong mật, con ong chuyên đẻ trứng gọi là gì? | Ong chúa | Ong thợ | Ong đực | Ong non
+Quả do bộ phận nào của cây phát triển thành? | Hoa | Lá | Rễ | Thân
+Hạt thường nằm trong bộ phận nào của cây? | Quả | Rễ | Lá | Thân
+Bộ phận nào nâng đỡ cây và dẫn nước lên lá? | Thân | Rễ | Hoa | Quả
+Cây xương rồng thường mọc ở nơi nào? | Nơi khô hạn | Đầm lầy | Rừng ngập mặn | Đáy hồ
+Tục ngữ "Con ... là đầu cơ nghiệp" nói về con gì? | Trâu | Bò | Ngựa | Lợn
+Loài chim nào có thể bắt chước tiếng người? | Con vẹt | Con cò | Chim sẻ | Con cú
+Loài chim nào kiếm ăn về đêm, có đôi mắt to tròn? | Cú mèo | Chim sẻ | Chim én | Bồ câu
+Loài chim nào thường được dùng làm biểu tượng hòa bình? | Bồ câu | Đại bàng | Con quạ | Con vẹt
+Trong thơ ca, loài chim nào bay về báo hiệu mùa xuân? | Chim én | Chim cú | Con cò | Con quạ
+Cá mập thuộc nhóm động vật nào? | Lớp cá | Lớp thú | Bò sát | Lưỡng cư
+Con vật nào có 8 xúc tu, biết phun mực? | Bạch tuộc | Con sứa | Sao biển | Hải sâm
+Phần lớn sao biển có mấy cánh? | 5 | 4 | 6 | 8
+Con vật nào nổi tiếng bò ngang? | Con cua | Con tôm | Con ốc | Con hến
+Cây gì thân rỗng, có đốt, gắn với hình ảnh làng quê Việt Nam? | Cây tre | Cây đa | Cây bàng | Cây gạo
+Loài hoa nào nổi tiếng luôn hướng về phía mặt trời? | Hướng dương | Hoa hồng | Hoa cúc | Hoa sen
+Bộ phận nào của cây làm nhiệm vụ quang hợp là chính? | Lá | Rễ | Hoa | Quả
+Loại nấm nào mỏng, màu đen, trông như cái tai? | Mộc nhĩ | Nấm rơm | Nấm hương | Nấm kim châm
+Chim cánh cụt hoàng đế sống ở châu lục nào? | Châu Nam Cực | Châu Á | Châu Âu | Bắc Mỹ
+Bộ lông gấu Bắc Cực nhìn có màu gì? | Trắng | Nâu | Đen | Xám
+Bến Tre nổi tiếng là xứ sở của loại cây nào? | Cây dừa | Cây cau | Cây thốt nốt | Cây chà là
+Loại quả nào có gai, mùi nồng, được gọi là "vua các loại trái cây"? | Sầu riêng | Mít | Chôm chôm | Măng cụt
+Con gì phát sáng nhấp nháy vào ban đêm? | Đom đóm | Ve sầu | Con dế | Châu chấu
+Con gì kêu râm ran suốt mùa hè? | Ve sầu | Đom đóm | Bọ ngựa | Chuồn chuồn
+Hổ thuộc họ động vật nào? | Họ mèo | Họ chó | Họ gấu | Họ chồn
+Loài nào sau đây là động vật ăn cỏ? | Con hươu | Con hổ | Chó sói | Con báo
+Hoa phượng đỏ rực nở vào mùa nào? | Mùa hè | Mùa xuân | Mùa thu | Mùa đông
+Thành phố nào được mệnh danh là "thành phố ngàn hoa"? | Đà Lạt | Sa Pa | Huế | Hà Nội
+Loài vật nào sau đây đẻ trứng? | Con vịt | Con mèo | Con chó | Con thỏ
+Loài nào sau đây đẻ con và nuôi con bằng sữa? | Con thỏ | Con gà | Con rắn | Cá chép
+Loài vật có mai cứng nào thường là biểu tượng của sự trường thọ? | Con rùa | Con cua | Con ốc | Con trai
+Theo truyện cổ, Mai An Tiêm trồng loại quả nào trên đảo hoang? | Dưa hấu | Dưa lê | Bí đỏ | Quả dừa
+Loài vật nào giúp đất tơi xốp nhờ đào hang trong đất? | Giun đất | Sâu róm | Ốc sên | Châu chấu
+Cây xanh cần yếu tố nào để quang hợp? | Ánh sáng | Bóng tối | Gió lạnh | Sương mù
+Loài động vật lớn nhất đang sống trên Trái Đất là loài nào? | Cá voi xanh | Voi châu Phi | Cá mập voi | Hươu cao cổ
+Loài thú nào chạy nhanh nhất trên cạn? | Báo gêpa | Sư tử | Ngựa | Linh dương đầu bò
+Theo truyền thuyết, cá gì vượt vũ môn hóa rồng? | Cá chép | Cá trắm | Cá rô | Cá quả
+Cây lương thực chính của người Việt là cây gì? | Cây lúa | Cây ngô | Lúa mì | Củ sắn
+Côn trùng nào có cánh cứng màu đỏ chấm đen? | Bọ rùa | Bọ ngựa | Cánh cam | Đom đóm
+Con vật nào có bộ lông gai nhọn để tự vệ? | Con nhím | Con sóc | Con chồn | Con thỏ
+Con vật nào có thể tự rụng đuôi để thoát thân? | Thằn lằn | Con rắn | Con rùa | Con ếch
+Con vật nào giăng tơ làm lưới để bắt mồi? | Con nhện | Con tằm | Con kiến | Con ong
+Loài hoa nào thân có gai, hay được tặng người yêu? | Hoa hồng | Hoa cúc | Hoa sen | Hoa huệ
+Con chim nào xòe đuôi rực rỡ như chiếc quạt? | Con công | Con vẹt | Con cò | Con sáo
+Rừng thường được ví là gì của Trái Đất? | Lá phổi xanh | Trái tim | Bộ não | Mạch máu
+Loài nào thân trong suốt như thạch, chạm vào có thể bị đốt? | Con sứa | Con mực | Sao biển | Hải sâm
+Ếch bắt mồi chủ yếu bằng bộ phận nào? | Lưỡi | Chân trước | Răng | Đuôi
+Bướm và ong đậu lên hoa giúp cây làm việc gì? | Thụ phấn | Nảy mầm | Rụng lá | Ra rễ
+Loài cây lá kim nào mọc nhiều trên các đồi ở Đà Lạt? | Cây thông | Cây bàng | Cây phượng | Cây xà cừ
+Ở xứ lạnh, lá cây chuyển vàng đỏ rồi rụng vào mùa nào? | Mùa thu | Mùa hè | Mùa xuân | Mùa mưa
+Chim gõ kiến dùng mỏ gõ vào đâu để tìm sâu? | Thân cây | Mặt đất | Mặt nước | Hòn đá
+Rêu thường mọc ở nơi như thế nào? | Ẩm ướt | Khô hạn | Băng tuyết | Cát nóng
+Thức ăn chủ yếu của thỏ là gì? | Cỏ và rau | Thịt sống | Cá nhỏ | Côn trùng
+Tục ngữ "... tha lâu cũng đầy tổ" nói về con gì? | Con kiến | Con ong | Con chim | Con chuột
+Loài chim chân dài nào hay lội ruộng bắt tép, xuất hiện nhiều trong ca dao? | Con cò | Con quạ | Chim sẻ | Chim én
+Con vật nào có mỏ dẹt, chân có màng, hay bơi dưới ao? | Con vịt | Con gà | Con công | Bồ câu
+Cá dùng bộ phận nào để bơi và giữ thăng bằng? | Vây | Mang | Râu | Mắt
+Loài thú nào hay được thuần hóa để cưỡi và kéo xe? | Con ngựa | Con hươu | Con hổ | Con nai
+Hạt gặp đủ nước, không khí, nhiệt độ thích hợp sẽ làm gì? | Nảy mầm | Ra hoa | Kết quả | Rụng lá
+Rừng ngập mặn thường mọc ở đâu? | Ven biển | Đỉnh núi | Sa mạc | Cao nguyên
+Nhiều loài chim bay đến nơi khác theo mùa, gọi là hiện tượng gì? | Di cư | Ngủ đông | Lột xác | Thay lông
+Loài gấu ở xứ lạnh thường làm gì suốt mùa đông? | Ngủ đông | Di cư | Lột da | Thay sừng
+Đâu là loài cá nước ngọt? | Cá chép | Cá thu | Cá ngừ | Cá mập
+Cây gì có lá to, quả mọc thành nải? | Cây chuối | Cây mít | Cây xoài | Cây ổi
+Lạc đà có loại một bướu và loại mấy bướu? | 2 | 3 | 4 | 5
+Hươu sao đực có gì mọc trên đầu? | Gạc | Bờm | Mào | Vòi
+Loài vật nào được nuôi nhiều để lấy lông làm len? | Con cừu | Con dê | Con bò | Con lợn
+Con gì sống ở ao hồ, có hai mảnh vỏ, có thể cho ngọc? | Con trai | Con ốc | Con cua | Con tôm
+Bánh chưng truyền thống miền Bắc được gói bằng lá gì? | Lá dong | Lá sen | Lá bàng | Lá mít
+Người xưa ăn trầu cùng với quả gì? | Quả cau | Quả dừa | Quả mít | Quả na
+Lá của cây gì được pha nước uống phổ biến ở nước ta? | Cây chè | Cây dâu | Cây ổi | Cây bàng
+Con vật nào có mũi thính, hay được huấn luyện để đánh hơi? | Con chó | Con mèo | Con lợn | Con ngựa
+Loài chim nào có túi lớn dưới mỏ để đựng cá? | Bồ nông | Con cò | Con vạc | Chim bói cá
+Loài chim nào hay bay lượn trên biển, gắn với hình ảnh tàu thuyền? | Hải âu | Chim sẻ | Chim cú | Gõ kiến
+Loài gặm nhấm nào có đuôi xù, sống trên cây, thích ăn hạt? | Con sóc | Con chuột | Con nhím | Con thỏ
+Con vật nào sống trong hang dưới đất, mắt rất kém, chuyên đào đất? | Chuột chũi | Con sóc | Con thỏ | Con chồn
+Côn trùng nào có hai chân trước như lưỡi hái để bắt mồi? | Bọ ngựa | Châu chấu | Cánh cam | Con dế
+Con chuồn chuồn có mấy cánh? | 4 | 2 | 6 | 8
+Con gà thuộc lớp động vật nào? | Lớp chim | Lớp thú | Bò sát | Lưỡng cư
+Trâu con được gọi là gì? | Con nghé | Con bê | Con cún | Lợn sữa
+Loài thú nào mõm to, ngâm mình cả ngày dưới sông ở châu Phi? | Hà mã | Tê giác | Con voi | Trâu rừng
+Lốp xe, găng tay thường làm từ mủ của cây gì? | Cây cao su | Cây thông | Cây tre | Cây dừa
+Loài chim săn mồi nào có móng vuốt sắc, làm tổ trên vách núi cao? | Đại bàng | Bồ câu | Chim sẻ | Con cò
+Cây nào sau đây là cây thân leo? | Cây mướp | Cây bàng | Cây mít | Cây xoài
+Củ cà rốt ta ăn là bộ phận nào của cây? | Rễ | Thân | Lá | Quả
+Phần ta ăn của cây bắp cải chủ yếu là gì? | Lá | Rễ | Hoa | Quả
+Trong chuỗi "cỏ, châu chấu, ếch, rắn", con nào ăn châu chấu? | Con ếch | Con rắn | Diều hâu | Con thỏ
+Phá rừng bừa bãi dễ gây ra hậu quả gì? | Lũ lụt, xói mòn | Mưa thuận gió hòa | Đất màu mỡ hơn | Không khí sạch hơn
+Việc làm nào giúp bảo vệ rừng? | Trồng cây gây rừng | Đốt rừng làm rẫy | Săn bắt thú rừng | Chặt gỗ trái phép
+Mâm ngũ quả miền Nam "cầu vừa đủ xài", chữ "cầu" là quả gì? | Mãng cầu | Quả sung | Quả cau | Quả cà
+Loài côn trùng nào hay đục ăn gỗ, làm tổ thành gò? | Con mối | Con kiến | Con gián | Con dế
+Ngày xưa, người ta hay dùng loài chim nào để đưa thư? | Bồ câu | Chim sáo | Chim yến | Hải âu
+Loài thú biển nào rất thông minh, hay nhảy vọt lên khỏi mặt nước? | Cá heo | Cá mập | Cá ngừ | Cá đuối
+Con cóc khác con ếch ở điểm nào dễ thấy? | Da sần sùi | Có đuôi dài | Có vảy cứng | Có lông
+Mâm ngũ quả miền Bắc hay có loại quả to, nhiều múi, vỏ xanh nào? | Quả bưởi | Quả ổi | Quả xoài | Quả mít
+
+[vua]
+Lạc đà dự trữ chủ yếu chất gì trong bướu? | Mỡ | Nước | Sữa | Máu
+Lá của cây xương rồng đã biến thành gì? | Gai | Tua cuốn | Vảy | Rễ phụ
+Cây nào nổi tiếng ở rừng ngập mặn ven biển nước ta? | Cây đước | Cây thông | Cây sồi | Cây bạch dương
+Hoa sữa thường nở thơm nồng vào mùa nào ở Hà Nội? | Mùa thu | Mùa hè | Mùa xuân | Mùa đông
+Loài cây nào có hoa tím nở vào đầu hè, trồng nhiều trên phố Hà Nội? | Bằng lăng | Phượng vĩ | Hoa sữa | Hoa gạo
+San hô là động vật hay thực vật? | Động vật | Thực vật | Nấm | Tảo biển
+Loài cá nào phồng tròn khi gặp nguy, nội tạng chứa chất độc? | Cá nóc | Cá đuối | Cá chình | Cá mú
+Ruồi nhà có mấy cánh? | 2 | 4 | 6 | 8
+Trâu, bò ợ thức ăn lên nhai lần nữa nên được gọi là động vật gì? | Nhai lại | Ăn tạp | Gặm nhấm | Ăn sâu bọ
+Trứng gà được ấp khoảng bao nhiêu ngày thì nở? | 21 ngày | 15 ngày | 30 ngày | 40 ngày
+Lăng quăng (bọ gậy) là ấu trùng của con gì? | Con muỗi | Con ruồi | Chuồn chuồn | Con gián
+Gấu túi koala ở Úc chủ yếu ăn lá cây gì? | Cây bạch đàn | Cây tre | Cây dâu | Cây chuối
+Loài cá nào bơi ngược dòng về nơi mình sinh ra để đẻ trứng? | Cá hồi | Cá chép | Cá rô | Cá trê
+Bò sát có thân nhiệt thay đổi theo môi trường nên gọi là động vật gì? | Biến nhiệt | Hằng nhiệt | Máu nóng | Lưỡng nhiệt
+Loài nào hay chui vào vỏ ốc rỗng của loài khác để sống? | Ốc mượn hồn | Cua đồng | Tôm hùm | Con ghẹ
+Rắn thè lưỡi liên tục để làm gì? | Nhận biết mùi | Làm mát cơ thể | Dọa kẻ thù | Uống nước
+Khỉ, vượn, đười ươi thuộc bộ thú nào? | Linh trưởng | Gặm nhấm | Ăn thịt | Guốc chẵn
+Chuột, sóc thuộc bộ thú nào? | Gặm nhấm | Linh trưởng | Ăn sâu bọ | Guốc lẻ
+Loài cây nào bắt côn trùng bằng chiếc "bình" chứa dịch tiêu hóa? | Cây nắp ấm | Xương rồng | Lô hội | Dương xỉ
+Loài hoa nào thường nở về đêm và tàn rất nhanh? | Hoa quỳnh | Hoa sen | Hoa hồng | Hoa đào
+Rùa biển bò lên đâu để đẻ trứng? | Bãi cát | Rạn san hô | Cửa sông | Vách đá
+Rùa biển hay nuốt nhầm túi nilon vì tưởng đó là gì? | Con sứa | Rong biển | Con tôm | Trứng cá
+Con moóc có cặp ngà dài sống ở vùng nào? | Bắc Cực | Nam Cực | Xích đạo | Sa mạc
+Loài cá nào có con đực mang trứng trong túi bụng đến khi nở? | Cá ngựa | Cá chép | Cá hồi | Cá vàng
+Nấm sinh sản chủ yếu bằng gì? | Bào tử | Hạt | Hoa | Củ
+Nấm khác cây xanh ở điểm nào? | Không có diệp lục | Không có tế bào | Không cần nước | Không sinh sản
+Cây mọc vươn về phía có ánh sáng, gọi là tính gì? | Hướng sáng | Hướng đất | Hướng nước | Hướng hóa
+Bộ phận nào của hoa phát triển thành quả? | Bầu nhụy | Nhị hoa | Cánh hoa | Đài hoa
+Cây thoát hơi nước chủ yếu qua bộ phận nào? | Lá | Rễ | Hoa | Quả
+Sao la, loài thú quý hiếm, sống ở dãy núi nào? | Trường Sơn | Hoàng Liên Sơn | Tam Đảo | Con Voi
+Loài thú nào được mệnh danh là "kỳ lân châu Á"? | Sao la | Bò tót | Sơn dương | Mang lớn
+Voọc mông trắng nổi tiếng ở khu bảo tồn đất ngập nước nào? | Vân Long | Tràm Chim | Xuân Thủy | Láng Sen
+Vườn quốc gia đầu tiên của Việt Nam là vườn nào? | Cúc Phương | Cát Tiên | Ba Vì | Bạch Mã
+Vườn quốc gia Tràm Chim nổi tiếng với loài chim quý nào? | Sếu đầu đỏ | Cò trắng | Hồng hạc | Thiên nga
+Rừng U Minh nổi tiếng với kiểu rừng gì? | Rừng tràm | Rừng thông | Rừng tre | Rừng lim
+Rạn san hô Great Barrier nằm ngoài khơi nước nào? | Úc | Indonesia | Philippines | Niu Di-lân
+Rừng mưa nhiệt đới Amazon nằm chủ yếu ở châu lục nào? | Nam Mỹ | Châu Phi | Châu Á | Bắc Mỹ
+Loài chim nào đẻ trứng vào tổ chim khác để nhờ ấp hộ? | Tu hú | Chim sẻ | Chim sâu | Chích chòe
+Loài chim nào có thể bay lùi, vỗ cánh nhanh đến mức kêu vo vo? | Chim ruồi | Chim sẻ | Chim én | Chim sâu
+Chim cánh cụt dùng đôi cánh chủ yếu để làm gì? | Bơi lặn | Bay lượn | Đào hang | Ấp trứng
+Ngoài phổi, ếch còn hô hấp qua bộ phận nào? | Da | Mang | Vảy | Lông
+Nòng nọc thở bằng gì? | Mang | Phổi | Lỗ mũi | Vây
+Loài kiến giao tiếp với nhau chủ yếu bằng gì? | Mùi hóa chất | Tiếng kêu | Ánh sáng | Màu sắc
+Ong mật báo cho nhau chỗ có nhiều hoa bằng cách nào? | Điệu nhảy | Tiếng kêu | Phát sáng | Đổi màu
+Tôm, cua thuộc lớp động vật nào? | Giáp xác | Côn trùng | Thân mềm | Hình nhện
+Giun đất hô hấp qua bộ phận nào? | Da | Mang | Phổi | Miệng
+Đười ươi hoang dã chỉ sống ở châu lục nào? | Châu Á | Châu Phi | Nam Mỹ | Châu Úc
+Loài chim nào có chiếc mỏ to như sừng, còn gọi là chim phượng hoàng đất? | Hồng hoàng | Đại bàng | Bồ nông | Chim công
+Loài chim không biết bay nào là biểu tượng của Niu Di-lân? | Chim kiwi | Đà điểu | Chim công | Chim cánh cụt
+Loài thú nào có vảy sừng, cuộn tròn khi gặp nguy, chuyên ăn kiến mối? | Tê tê | Con nhím | Chuột chũi | Con cầy
+Quang hợp diễn ra ở bào quan nào của tế bào lá? | Lục lạp | Ty thể | Nhân | Không bào
+Chất hữu cơ mà lá cây chế tạo ra khi quang hợp chủ yếu là gì? | Tinh bột | Chất đạm | Chất béo | Muối khoáng
+Rừng mưa nhiệt đới có khí hậu như thế nào? | Nóng ẩm, mưa nhiều | Lạnh và khô | Nóng và khô | Lạnh và ẩm
+Hệ sinh thái nào được ví là "rừng mưa nhiệt đới của đại dương"? | Rạn san hô | Rừng tảo bẹ | Đồng cỏ biển | Rừng ngập mặn
+Trong hệ sinh thái, sinh vật phân giải xác chết chủ yếu là gì? | Vi khuẩn và nấm | Cây xanh | Động vật ăn cỏ | Thú ăn thịt
+Trong chuỗi thức ăn, cây xanh đóng vai trò gì? | Sinh vật sản xuất | Sinh vật tiêu thụ | Sinh vật phân giải | Kẻ săn mồi
+Ngày Môi trường thế giới là ngày nào? | 5 tháng 6 | 22 tháng 4 | 21 tháng 3 | 1 tháng 6
+Chiến dịch Giờ Trái Đất kêu gọi mọi người làm gì? | Tắt đèn một giờ | Trồng một cây | Đi bộ một giờ | Nhặt rác ven biển
+Sách Đỏ Việt Nam ghi tên những loài như thế nào? | Loài quý hiếm | Loài ngoại lai | Loài gây hại | Loài vật nuôi
+Loài ốc ngoại lai nào gây hại lúa nặng nề ở nước ta? | Ốc bươu vàng | Ốc nhồi | Ốc sên | Ốc hương
+Cây nào cụp lá lại khi bị chạm vào? | Cây xấu hổ | Cây bàng | Cây phượng | Cây keo
+Cá chuồn có khả năng đặc biệt gì? | Lướt bay trên mặt nước | Leo lên cây | Đổi màu da | Phát sáng
+Rắn hổ mang khi bị đe dọa thường làm gì? | Bạnh cổ, dựng đầu | Cuộn tròn giả chết | Rụng đuôi | Phun mực
+Loài rắn lớn nào giết mồi bằng cách quấn siết chứ không dùng nọc? | Con trăn | Hổ mang | Rắn lục | Cạp nong
+Ấu trùng ve sầu sống nhiều năm ở đâu? | Dưới lòng đất | Trong nước | Trên lá cây | Trong tổ chim
+Ở loài muỗi, con nào hút máu để lấy chất nuôi trứng? | Muỗi cái | Muỗi đực | Muỗi non | Muỗi già
+Thức ăn chủ yếu của chuồn chuồn là gì? | Côn trùng nhỏ | Mật hoa | Lá cây | Hạt cỏ
+Bọ rùa được xem là có ích cho nhà nông vì nó ăn gì? | Rệp hại cây | Lá lúa | Hạt giống | Rễ cây
+Con tằm nhả tơ để làm gì? | Làm kén | Bắt mồi | Làm tổ đẻ | Leo cây
+Dơi và cá heo định vị con mồi chủ yếu nhờ gì? | Sóng siêu âm | Ánh sáng | Từ trường | Mùi hương
+Tim cá có mấy ngăn? | 2 | 3 | 4 | 1
+Răng cửa của thỏ có đặc điểm gì? | Mọc dài liên tục | Rụng hằng năm | Không có men | Mọc rất muộn
+Con vật nào là biểu tượng của Quỹ Quốc tế Bảo vệ Thiên nhiên WWF? | Gấu trúc | Hổ | Voi | Cá voi
+Loài cá voi xanh khổng lồ chủ yếu ăn gì? | Giáp xác nhỏ | Cá mập | Hải cẩu | Mực khổng lồ
+Sao biển bị đứt một cánh thì sao? | Có thể mọc lại | Chết ngay | Không bơi được | Mất khả năng ăn
+Con cua có tổng cộng bao nhiêu chân, kể cả đôi càng? | 10 | 8 | 6 | 12
+Tổ yến được chim yến làm chủ yếu từ gì? | Nước bọt | Rơm khô | Bùn đất | Lông vũ
+Nốt sần ở rễ cây họ đậu giúp cây có thêm chất gì? | Đạm | Lân | Kali | Sắt
+Loại quả nào có "hạt" li ti nằm bên ngoài lớp thịt quả? | Dâu tây | Thanh long | Kiwi | Quả na
+Cây gì ra hoa trên mặt đất nhưng quả lại phát triển dưới đất? | Cây lạc | Khoai lang | Cà rốt | Củ cải
+Sô-cô-la được làm từ hạt của cây gì? | Ca cao | Cà phê | Hạt điều | Mắc ca
+Phong lan thường sống bám vào đâu? | Thân cây khác | Đáy ao | Bãi cát | Vách hang tối
+Cuống lá bèo tây phình to, xốp giúp cây làm gì? | Nổi trên mặt nước | Hút nhiều muối | Bắt côn trùng | Chống rét
+Cây lúa có loại rễ gì? | Rễ chùm | Rễ cọc | Rễ củ | Rễ móc
+Nhìn mặt cắt thân cây gỗ, đếm gì để đoán tuổi cây? | Vòng gỗ | Số cành | Số lá | Số rễ
+Hạt bồ công anh phát tán chủ yếu nhờ gì? | Gió | Nước | Động vật | Tự bật ra
+Phong Nha - Kẻ Bàng nổi tiếng với hệ sinh thái trên địa hình gì? | Núi đá vôi | Đầm lầy | Cồn cát | Băng tuyết
+Loài thú biển nào ở Côn Đảo còn được gọi là "nàng tiên cá"? | Bò biển | Hải cẩu | Cá heo | Sư tử biển
+Loài "đặc hữu" là loài như thế nào? | Chỉ có ở một vùng | Sống khắp nơi | Mới du nhập về | Đã tuyệt chủng
+Quần đảo nào gắn với chuyến khảo sát giúp Darwin hình thành thuyết tiến hóa? | Galapagos | Ha-oai | Ca-na-ri | Ma-đa-ga-xca
+Loài vượn cáo hoang dã chỉ sống ở đâu? | Ma-đa-ga-xca | Úc | Ấn Độ | Bra-xin
+Cá hề sống cộng sinh với loài nào? | Hải quỳ | Sao biển | Hải sâm | Bọt biển
+Nấm mốc phát triển mạnh nhất trong điều kiện nào? | Ẩm ướt, ấm áp | Khô ráo | Lạnh giá | Nắng gắt
+Nấm lấy chất dinh dưỡng bằng cách nào? | Hút chất hữu cơ có sẵn | Tự quang hợp | Bắt côn trùng | Hút khí oxi
+Trong chuỗi thức ăn, động vật ăn cỏ là sinh vật tiêu thụ bậc mấy? | Bậc 1 | Bậc 2 | Bậc 3 | Bậc 4
+Rừng chưa hề bị con người tác động gọi là rừng gì? | Rừng nguyên sinh | Rừng thứ sinh | Rừng trồng | Rừng phòng hộ
+Rừng đầu nguồn có tác dụng lớn nhất là gì? | Giữ nước, chống lũ | Cho nhiều gỗ quý | Làm đất mặn hơn | Thu hút du lịch
+Loài voi nào có đôi tai to hơn hẳn? | Voi châu Phi | Voi châu Á | Voi Ấn Độ | Voi Sri Lanka
+Loài chim nào chuyên ăn xác động vật chết? | Kền kền | Đại bàng | Chim ưng | Diều hâu
+Loài cá nào hay nhảy trên bãi bùn rừng ngập mặn khi nước rút? | Cá thòi lòi | Cá chép | Cá rô phi | Cá lóc
+Mỗi ô trong tổ ong mật có hình gì? | Lục giác | Tam giác | Hình vuông | Ngũ giác
+Ong chúa được nuôi bằng thức ăn đặc biệt gì? | Sữa ong chúa | Phấn hoa | Mật ong | Sáp ong
+Cơ thể côn trùng chia làm mấy phần? | 3 | 2 | 4 | 5
+Nước mắm Phú Quốc nổi tiếng được làm chủ yếu từ cá gì? | Cá cơm | Cá thu | Cá ngừ | Cá nục
+Loài chim nào được gọi là "chim thợ may" vì biết khâu lá làm tổ? | Chích bông | Chim sẻ | Chim sáo | Chim cu
+Chim bói cá bắt mồi bằng cách nào? | Lao xuống nước | Đào đất | Rình trên cành cao | Bơi lặn dưới đáy
+Loài thú nào hoạt động về đêm, treo ngược mình khi ngủ? | Con dơi | Con cú | Con sóc | Con khỉ
+Cây hướng dương ngoài làm cảnh còn được trồng để lấy gì? | Hạt ép dầu | Gỗ | Sợi dệt | Nhựa
+Cây cao su được trồng nhiều ở vùng nào nước ta? | Đông Nam Bộ | Đồng bằng sông Hồng | Tây Bắc | Bắc Trung Bộ
+Loài cây nào cho quả có vỏ cứng, bên trong có nước và cùi trắng? | Cây dừa | Cây cau | Cây mít | Cây sầu riêng
+Chim hồng hạc có bộ lông màu hồng là nhờ đâu? | Thức ăn của nó | Ánh nắng mặt trời | Nước mặn | Bẩm sinh từ trứng
+Loài chim nào hót rất hay, thường được nuôi trong lồng ở Việt Nam? | Họa mi | Quạ đen | Kền kền | Cò trắng
+Loài thú nào săn mồi theo đàn, được xem là tổ tiên của chó nhà? | Chó sói | Linh cẩu | Con cáo | Chó rừng
+Quả gì vỏ đỏ có tai xanh, ruột trắng hoặc đỏ, lấm tấm hạt đen? | Thanh long | Vải thiều | Chôm chôm | Quả lựu
+Rong biển thực chất thuộc nhóm sinh vật nào? | Tảo | Rêu | Nấm | Dương xỉ
+Cây tầm gửi thường mọc ở đâu? | Trên cây khác | Dưới nước | Trên đá | Trên cát
+Loài vật nào được ví như "kỹ sư", xây đập chắn sông bằng cành cây? | Hải ly | Rái cá | Chuột đồng | Con chồn
+Loài thú nào sống ven sông, bơi lặn bắt cá rất giỏi, có tên trong Sách Đỏ Việt Nam? | Rái cá | Hải ly | Con cầy | Con chồn
+Khi miền Bắc vào đông, nhiều loài chim di cư bay về phương nào? | Phương Nam | Phương Bắc | Phương Đông | Phương Tây
+Những rễ buông từ cành cây đa xuống đất gọi là rễ gì? | Rễ phụ | Rễ cọc | Rễ củ | Rễ giác mút
+Loài thú nào ở Bắc Cực có bộ lông chuyển sang trắng vào mùa đông? | Cáo Bắc Cực | Gấu Bắc Cực | Chó sói | Hải cẩu
+Bộ phận chứa hạt của hoa sen gọi là gì? | Gương sen | Ngó sen | Tim sen | Lá sen
+Cá voi hít thở qua bộ phận nào? | Lỗ thở trên đầu | Mang hai bên | Lỗ ở đuôi | Da lưng
+Loài cây nào hay được trồng thành rừng chắn cát ven biển miền Trung? | Cây phi lao | Cây bàng | Cây lim | Cây chè
+Loại quả nào được gọi là "nữ hoàng trái cây", vỏ tím, múi trắng? | Măng cụt | Chôm chôm | Vú sữa | Sầu riêng
+
+[kho]
+Củ khoai tây là bộ phận nào của cây? | Thân | Rễ | Lá | Quả
+Củ gừng là bộ phận nào của cây? | Thân rễ | Rễ củ | Quả | Lá biến dạng
+Cây lúa thuộc nhóm cây gì theo số lá mầm? | Một lá mầm | Hai lá mầm | Ba lá mầm | Không có lá mầm
+Lỗ khí khổng của lá cây hai lá mầm tập trung nhiều ở đâu? | Mặt dưới lá | Mặt trên lá | Cuống lá | Gân lá
+Nước được vận chuyển từ rễ lên lá qua loại mạch nào? | Mạch gỗ | Mạch rây | Mạch nhựa | Mạch sữa
+Hoa thụ phấn nhờ gió như hoa ngô thường có đặc điểm gì? | Hạt phấn nhiều, nhẹ | Cánh to, sặc sỡ | Mật ngọt, thơm | Nở về đêm
+Tên khoa học của sao la gắn với địa danh nào của Việt Nam? | Nghệ Tĩnh | Quảng Nam | Thừa Thiên | Kon Tum
+Sao la thuộc họ động vật nào? | Họ trâu bò | Họ hươu nai | Họ ngựa | Họ lợn
+Voọc đầu vàng là loài đặc hữu của hòn đảo nào? | Đảo Cát Bà | Phú Quốc | Côn Đảo | Cô Tô
+Voọc mũi hếch, loài đặc hữu Việt Nam, sống ở vùng nào? | Miền núi phía Bắc | Tây Nguyên | Nam Bộ | Duyên hải miền Trung
+Trung tâm cứu hộ linh trưởng nguy cấp nổi tiếng nằm ở vườn quốc gia nào? | Cúc Phương | Cát Tiên | Ba Bể | Yok Đôn
+Khu dự trữ sinh quyển thế giới đầu tiên của Việt Nam là nơi nào? | Cần Giờ | Cát Bà | Cù Lao Chàm | Mũi Cà Mau
+Khu Ramsar đầu tiên của Việt Nam là nơi nào? | Xuân Thủy | Tràm Chim | Bàu Sấu | U Minh Thượng
+Công ước Ramsar bảo vệ loại hệ sinh thái nào? | Đất ngập nước | Rừng mưa | Sa mạc | Núi cao
+Công ước CITES kiểm soát hoạt động nào? | Buôn bán loài hoang dã | Khai thác dầu mỏ | Đánh bắt cá voi | Thử vũ khí hạt nhân
+Danh lục Đỏ thế giới về các loài bị đe dọa do tổ chức nào lập ra? | IUCN | WWF | UNESCO | FAO
+Chim dodo đã tuyệt chủng từng sống trên hòn đảo nào? | Mô-ri-xơ | Ma-đa-ga-xca | Ha-oai | Galapagos
+Loài chim nào được ngư dân thuần hóa để lặn bắt cá? | Chim cốc | Bồ nông | Hải âu | Chim bói cá
+Cá voi sát thủ (cá kình) thực chất thuộc họ nào? | Họ cá heo | Họ cá mập | Họ cá voi xanh | Họ hải cẩu
+Tim cá sấu có mấy ngăn? | 4 | 3 | 2 | 5
+Hươu cao cổ có bao nhiêu đốt sống cổ? | 7 | 9 | 12 | 14
+Loài cá nào có thể phóng ra dòng điện mạnh để săn mồi? | Cá chình điện | Cá trê | Cá lóc | Cá nóc
+Máu của bạch tuộc có màu gì? | Xanh lam | Đỏ tươi | Vàng nhạt | Trắng đục
+Cú mèo có thể xoay đầu khoảng bao nhiêu độ? | 270 độ | 180 độ | 90 độ | 360 độ
+Bên dưới lớp lông, da gấu Bắc Cực có màu gì? | Đen | Trắng | Hồng | Nâu
+Ngựa và tê giác cùng thuộc bộ thú nào? | Guốc lẻ | Guốc chẵn | Ăn thịt | Có vòi
+Chuột chù thuộc bộ thú nào? | Ăn sâu bọ | Gặm nhấm | Linh trưởng | Ăn thịt
+Bọ cạp thuộc lớp động vật nào? | Hình nhện | Côn trùng | Giáp xác | Nhiều chân
+Tôm, cua, nhện, côn trùng cùng thuộc ngành động vật nào? | Chân khớp | Thân mềm | Giun đốt | Da gai
+Sứa, hải quỳ, san hô thuộc ngành nào? | Ruột khoang | Thân mềm | Da gai | Giun dẹp
+Sao biển, nhím biển, hải sâm thuộc ngành nào? | Da gai | Ruột khoang | Thân mềm | Chân khớp
+Cá cóc Tam Đảo thực chất thuộc lớp nào? | Lưỡng cư | Lớp cá | Bò sát | Lớp thú
+Ở rùa biển, yếu tố nào quyết định trứng nở ra con đực hay con cái? | Nhiệt độ cát | Độ mặn nước | Ánh trăng | Kích cỡ trứng
+Gà lôi lam mào trắng là loài chim đặc hữu của nước nào? | Việt Nam | Lào | Thái Lan | Campuchia
+Loài báo nào có những đốm lớn như đám mây trên bộ lông? | Báo gấm | Báo hoa mai | Báo gêpa | Báo tuyết
+Báo đen ở châu Á thực chất là biến thể màu của loài nào? | Báo hoa mai | Báo gấm | Báo gêpa | Báo tuyết
+Sừng tê giác được cấu tạo chủ yếu từ chất gì? | Chất sừng | Mô xương | Ngà răng | Sụn
+Ngà voi thực chất là loại răng nào? | Răng cửa | Răng nanh | Răng hàm | Răng khôn
+Hổ hoang dã ở Việt Nam thuộc phân loài nào? | Hổ Đông Dương | Hổ Bengal | Hổ Siberia | Hổ Sumatra
+Bàu Sấu ở vườn quốc gia Cát Tiên là nơi thả lại loài cá sấu nào? | Cá sấu Xiêm | Cá sấu nước mặn | Cá sấu Mỹ | Cá sấu sông Nin
+Bò biển (dugong) chủ yếu ăn gì? | Cỏ biển | Cá nhỏ | Sứa | San hô
+Khu bảo tồn biển đầu tiên của Việt Nam ở đâu? | Hòn Mun | Cù Lao Chàm | Côn Đảo | Phú Quốc
+Hiện tượng san hô bị "tẩy trắng" chủ yếu do đâu? | Nước biển ấm lên | Nước quá lạnh | Thiếu cát | Nhiều cá
+Địa y là sự cộng sinh giữa nấm với sinh vật nào? | Tảo | Rêu | Vi rút | Dương xỉ
+Đông trùng hạ thảo là loài nấm ký sinh trên gì? | Ấu trùng sâu bướm | Rễ cây thông | Xác cá | Lá tre
+Theo phân loại sinh học, nấm thuộc giới nào? | Giới Nấm | Giới Thực vật | Giới Động vật | Giới Khởi sinh
+Phần cây nấm ta thường hái ăn được gọi là gì? | Quả thể | Sợi nấm | Bào tử | Rễ nấm
+Nhiều loài tre sau khi ra hoa đồng loạt thường thế nào? | Chết cả bụi | Ra quả ngọt | Mọc nhanh hơn | Rụng hết lá
+Cây tre thuộc họ thực vật nào? | Họ lúa | Họ cau | Họ đậu | Họ cúc
+Bông hoa hướng dương thực chất là gì? | Cụm nhiều hoa nhỏ | Một hoa đơn | Một quả | Một chiếc lá
+Quả dứa thuộc loại quả gì? | Quả phức | Quả đơn | Quả hạch | Quả mọng
+Cây đước ở rừng ngập mặn có loại rễ đặc biệt nào? | Rễ chống | Rễ củ | Rễ móc | Rễ giác mút
+Rễ cây bần, cây mắm mọc ngược lên khỏi bùn để làm gì? | Lấy khí để thở | Hút nước | Bám đất | Dự trữ chất
+Loài cây nào sống ký sinh, thân vàng như sợi, không có lá xanh? | Tơ hồng | Tầm gửi | Phong lan | Bèo tây
+Cây nào sau đây không có hoa? | Dương xỉ | Cây lúa | Cây ngô | Cỏ may
+Cây thông thuộc nhóm thực vật nào? | Hạt trần | Hạt kín | Dương xỉ | Rêu
+Rêu bám vào đất bằng gì vì chưa có rễ thật? | Rễ giả | Rễ chùm | Rễ cọc | Rễ củ
+Ở cây điều, phần mọng nước to gọi là "trái điều" thực chất là gì? | Cuống hoa phình to | Quả thật | Hạt | Lá biến dạng
+Quang hợp biến năng lượng ánh sáng thành dạng năng lượng nào? | Hóa năng | Nhiệt năng | Cơ năng | Điện năng
+Lá cây có màu xanh lục vì diệp lục làm gì với ánh sáng xanh lục? | Phản xạ lại | Hấp thụ hết | Biến thành nhiệt | Hút vào rễ
+Cây xanh hô hấp vào thời gian nào? | Cả ngày lẫn đêm | Chỉ ban ngày | Chỉ ban đêm | Chỉ lúc nắng
+Rễ cây hút nước chủ yếu qua bộ phận nào? | Lông hút | Chóp rễ | Vỏ rễ | Mạch rây
+Thân cây gỗ to ra nhờ đâu? | Tầng phát sinh | Mô phân sinh ngọn | Lông hút | Chóp rễ
+Cây bí ngô có hoa đực và hoa cái riêng, gọi là hoa gì? | Hoa đơn tính | Hoa lưỡng tính | Hoa vô tính | Hoa kép
+Ở hạt đỗ đen, chất dinh dưỡng dự trữ nằm ở đâu? | Hai lá mầm | Phôi nhũ | Vỏ hạt | Rễ mầm
+Quả ké đầu ngựa có gai móc để phát tán nhờ gì? | Động vật | Gió | Nước | Tự nổ
+Nhiều chuỗi thức ăn có mắt xích chung tạo thành gì? | Lưới thức ăn | Tháp sinh thái | Quần thể | Quần xã
+Tập hợp các cá thể cùng loài sống trong một khu vực gọi là gì? | Quần thể | Quần xã | Hệ sinh thái | Sinh quyển
+Ao hồ dư phân bón khiến tảo phát triển ồ ạt, gọi là hiện tượng gì? | Phú dưỡng | Sa mạc hóa | Axit hóa | Nhiễm mặn
+Vườn quốc gia ở nước ta thuộc loại rừng nào theo mục đích sử dụng? | Rừng đặc dụng | Rừng phòng hộ | Rừng sản xuất | Rừng nguyên sinh
+Ở vùng đài nguyên lạnh giá, thực vật chủ yếu là gì? | Rêu và địa y | Cây gỗ lớn | Xương rồng | Tre nứa
+Rừng lá kim taiga phân bố chủ yếu ở vùng nào? | Ôn đới lạnh | Xích đạo | Nhiệt đới | Sa mạc
+Cá rô phi có nguồn gốc từ châu lục nào? | Châu Phi | Châu Á | Nam Mỹ | Châu Âu
+Câu "Tháng chín đôi mươi, tháng mười mồng năm" nói về mùa của con gì? | Con rươi | Con cáy | Con còng | Con ốc
+Loài ong nào thường chết sau khi đốt vì ngòi có gai ngược? | Ong mật | Ong vò vẽ | Ong bắp cày | Ong đất
+Bướm nếm vị thức ăn bằng bộ phận nào? | Chân | Râu | Cánh | Mắt
+Châu chấu hô hấp nhờ hệ thống gì? | Ống khí | Mang | Phổi | Da
+Loài nào phát triển qua biến thái không hoàn toàn, không có giai đoạn nhộng? | Châu chấu | Con bướm | Con ruồi | Bọ rùa
+Lạc đà không bướu (lama) có nguồn gốc ở dãy núi nào? | An-đét | Hi-ma-lay-a | An-pơ | Rốc-ki
+Cây trầu không leo bám nhờ loại rễ nào? | Rễ móc | Rễ chống | Rễ thở | Rễ giác mút
+Cây cau, cây dừa có dạng thân gì? | Thân cột | Thân gỗ | Thân leo | Thân bò
+Loài cá nào sống ở sông nhưng bơi ra biển để đẻ trứng? | Cá chình | Cá hồi | Cá chép | Cá trắm
+Bộ xương cá mập được cấu tạo chủ yếu từ gì? | Sụn | Xương cứng | Chất sừng | Đá vôi
+Điểm dễ thấy để phân biệt sư tử biển với hải cẩu là gì? | Có vành tai ngoài | Có vây lưng | Có mang | Đẻ trứng
+Mỗi bàn chân đà điểu có mấy ngón? | 2 | 3 | 4 | 5
+Loài nào sau đây KHÔNG sống hoang dã ở Bắc Cực? | Chim cánh cụt | Gấu trắng | Con moóc | Cáo tuyết
+Lạc đà hai bướu sống chủ yếu ở sa mạc nào? | Gô-bi | Xa-ha-ra | A-ra-bi-a | Ca-la-ha-ri
+Trong chuỗi thức ăn, năng lượng truyền lên bậc trên chỉ còn khoảng bao nhiêu? | 10 phần trăm | 50 phần trăm | 90 phần trăm | 30 phần trăm
+Bò tót có đặc điểm gì dễ nhận ra ở bốn chân? | Trắng như đi tất | Có sọc vằn | Có móng vuốt | Có màng bơi
+Vượn khác khỉ ở điểm dễ thấy nào? | Không có đuôi | Có túi má | Đi bằng bốn chân | Lông màu đỏ
+Loài linh trưởng nào ở Việt Nam có tuyến nọc độc ở khuỷu tay? | Cu li | Voọc | Vượn | Khỉ mặt đỏ
+Rắn hổ mang chúa chủ yếu ăn gì? | Rắn khác | Chuột | Ếch | Chim
+Ếch đồng thụ tinh theo hình thức nào? | Thụ tinh ngoài | Thụ tinh trong | Trinh sản | Nảy chồi
+Thủy tức thường sinh sản vô tính bằng cách nào? | Mọc chồi | Phân đôi | Bào tử | Trinh sản
+Giun đất là loài động vật có giới tính thế nào? | Lưỡng tính | Đơn tính | Vô tính | Đổi giới tính
+Cơ thể nhện chia làm mấy phần? | 2 | 3 | 4 | 1
+Loài ong nhỏ nào được dùng để diệt trứng sâu đục thân lúa? | Ong mắt đỏ | Ong mật | Ong vò vẽ | Ong bắp cày
+Nhà vườn miền Tây nuôi loài kiến nào trên cây cam để diệt sâu? | Kiến vàng | Kiến lửa | Kiến đen | Kiến ba khoang
+Chim sáo đậu lưng trâu bắt ve, rận là kiểu quan hệ gì? | Hợp tác | Ký sinh | Cạnh tranh | Ức chế cảm nhiễm
+Cá ép bám vào cá mập để đi xa là ví dụ của quan hệ nào? | Hội sinh | Ký sinh | Cộng sinh | Cạnh tranh
+Bộ "tứ thiết" gỗ quý gồm đinh, lim, sến và loại gỗ nào? | Táu | Trắc | Gụ | Mun
+Cây thanh long thuộc họ thực vật nào? | Họ xương rồng | Họ cau | Họ cam | Họ bầu bí
+Cây khoai tây cùng họ với cây nào? | Cây cà chua | Khoai lang | Khoai môn | Cây sắn
+Hương vani được lấy từ quả của loài cây nào? | Một loài lan | Cây quế | Cây hồi | Cây sả
+Gia vị quế được lấy từ bộ phận nào của cây quế? | Vỏ thân | Rễ | Hoa | Hạt
+Đinh hương là bộ phận nào của cây được phơi khô? | Nụ hoa | Hạt | Vỏ cây | Rễ
+Cây mắc ca có nguồn gốc từ nước nào? | Úc | Bra-xin | Ấn Độ | Mê-hi-cô
+Cây cao su có nguồn gốc từ vùng nào? | Rừng Amazon | Đông Nam Á | Tây Phi | Ấn Độ
+Cây cà phê có nguồn gốc từ châu lục nào? | Châu Phi | Nam Mỹ | Châu Á | Châu Âu
+Cây ngô có nguồn gốc từ châu lục nào? | Châu Mỹ | Châu Phi | Châu Á | Châu Âu
+Chim bồ câu mớm cho con thứ "sữa" tiết ra từ đâu? | Diều | Mỏ | Mề | Tuyến lông
+Mực ống có tất cả bao nhiêu tay và xúc tu? | 10 | 8 | 6 | 12
+Con sam biển có họ hàng gần với nhóm nào? | Hình nhện | Giáp xác | Thân mềm | Lớp cá
+Loài thú trên cạn nào là họ hàng gần nhất của cá voi? | Hà mã | Voi | Tê giác | Lợn rừng
+Gấu trúc lớn thuộc họ nào? | Họ gấu | Họ gấu mèo | Họ chồn | Họ mèo
+Nhóm thú duy nhất có thể bay thật sự bằng cách vỗ cánh là nhóm nào? | Dơi | Sóc bay | Chồn bay | Cầy bay
+Ở cây dương xỉ, túi bào tử thường nằm ở đâu? | Mặt dưới lá | Trong rễ | Trên ngọn | Trong hoa
+Nhân tố nào sau đây là nhân tố sinh thái vô sinh? | Nhiệt độ | Con người | Vi khuẩn | Cây cỏ
+Cây nào sau đây là cây ưa bóng? | Cây lá lốt | Cây lúa | Cây ngô | Cây phi lao
+Nuôi loài quý hiếm ở vườn thú, trung tâm cứu hộ là hình thức bảo tồn gì? | Bảo tồn chuyển chỗ | Bảo tồn tại chỗ | Bảo tồn cảnh quan | Bảo tồn văn hóa
+Cây mướp, cây bầu leo lên giàn nhờ bộ phận nào? | Tua cuốn | Rễ móc | Gai móc | Thân quấn
+Bèo hoa dâu được thả ruộng lúa làm phân xanh vì giàu chất gì? | Đạm | Lân | Kali | Vôi
+Loài bướm nào nổi tiếng di cư hàng nghìn cây số từ Bắc Mỹ đến Mê-hi-cô? | Bướm vua | Bướm phượng | Bướm đêm | Bướm cải
+Bọt biển (hải miên) thuộc giới sinh vật nào? | Giới Động vật | Giới Thực vật | Giới Nấm | Giới Khởi sinh
+Cây lúa chủ yếu thụ phấn theo cách nào? | Tự thụ phấn | Nhờ côn trùng | Nhờ chim | Nhờ nước

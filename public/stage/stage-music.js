@@ -104,8 +104,9 @@ export function createMusic(ctx, out) {
 
   return {
     start(name) {
-      if (theme === name || !THEMES[name]) return;
-      this.stop();
+      if (theme === name) return;
+      this.stop(); // game không có nhạc tổng hợp (đố vui) → tắt nhạc của game trước
+      if (!THEMES[name]) return;
       theme = name;
       step = 0;
       nextTime = ctx.currentTime + 0.08;

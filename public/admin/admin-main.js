@@ -6,13 +6,15 @@ import { setupTestPanel } from './admin-test-panel.js';
 import { SAMPLE_GIFTS, giftTier } from '/static/shared/gift-tiers.js';
 
 const $ = (id) => document.getElementById(id);
-const GAME_ICONS = { boss: '⚔️', temple: '🪷', bar: '🍸', dance: '🪩', swim: '🏊' };
+const GAME_ICONS = { boss: '⚔️', temple: '🪷', bar: '🍸', dance: '🪩', swim: '🏊', lophoc: '📚', dovui: '🏆', english: '🔤', emoji: '🧩', flag: '🚩', math: '➗', wordle: '🟩' };
+const QUIZ_COMMANDS = [['next', '⏭ Câu tiếp / lật đáp án'], ['hint', '💡 Gợi ý'], ['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetScores', '🏆 Xoá bảng điểm']];
 const GAME_COMMANDS = {
   boss: [['frenzy', '⚡ Cuồng nộ ngay'], ['killBoss', '💥 Kết liễu Boss'], ['resetBoss', '↺ Reset Boss Cấp 1']],
   bar: [['party', '🎉 Mở tiệc ngay'], ['clear', '🚪 Mời hết khách ra']],
   dance: [['drop', '💥 DROP ngay'], ['clear', '🚪 Mời hết ra'], ['seeds', '🎭 Bật/tắt người nhảy ảo']],
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
-  temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']]
+  temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']],
+  ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS]))
 };
 
 let token = '';

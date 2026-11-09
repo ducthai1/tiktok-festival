@@ -7,7 +7,7 @@ export const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)
 export const DATA_DIR = path.join(ROOT_DIR, 'data');
 export const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
 
-export const GAME_IDS = ['boss', 'temple', 'bar', 'swim'];
+export const GAME_IDS = ['boss', 'temple', 'bar', 'dance', 'swim', 'lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'];
 
 export function loadConfig(env = process.env) {
   const port = Number(env.PORT || 3939);

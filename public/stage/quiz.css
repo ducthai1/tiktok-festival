@@ -1,0 +1,79 @@
+/* Bảng câu hỏi của các tab đố vui (quiz-scene.js). Khung 1080×1920: bảng ở giữa trên, bảng điểm + cách chơi bên dưới. */
+#stage.theme-quiz #hud > #board, #stage.theme-quiz #hud > #howto, #stage.theme-quiz #hud > #welcome { top: 1110px; width: 412px; }
+#stage.theme-quiz #hud > #welcome { min-height: 380px; }
+#stage.theme-quiz #hud > #test-badge { top: 1850px; }
+#stage.theme-quiz #toasts { top: 1520px; }
+#stage.theme-quiz #hint { white-space: normal !important; overflow-wrap: anywhere; }
+#stage.theme-quiz #legend .item { white-space: normal !important; }
+
+.quiz-card {
+  position: absolute; left: var(--safe-x); right: var(--safe-x); top: 330px; min-height: 700px; max-height: 760px;
+  padding: 22px 26px 18px; border-radius: 30px; background: rgba(8, 10, 22, 0.78); border: 3px solid var(--quiz);
+  box-shadow: 0 0 40px color-mix(in srgb, var(--quiz) 45%, transparent), inset 0 0 60px rgba(0, 0, 0, 0.4);
+  display: flex; flex-direction: column; gap: 14px; overflow: hidden; backdrop-filter: blur(6px);
+}
+html.lite .quiz-card { backdrop-filter: none; background: rgba(8, 10, 22, 0.92); }
+.quiz-head { display: flex; align-items: center; gap: 14px; font-weight: 900; }
+.quiz-cat { padding: 6px 16px; border-radius: 999px; background: color-mix(in srgb, var(--quiz) 22%, transparent); color: var(--quiz);
+  font-size: 26px; letter-spacing: 1px; max-width: 560px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.quiz-no { flex: 1; font-size: 24px; color: #ffb3b3; }
+.quiz-clock { font-size: 46px; color: var(--ink); min-width: 90px; text-align: right; font-variant-numeric: tabular-nums; }
+.quiz-card.urgent .quiz-clock { color: #ff5d5d; animation: quiz-pulse 0.5s ease-in-out infinite alternate; }
+@keyframes quiz-pulse { to { transform: scale(1.18); } }
+.quiz-timer { height: 14px; border-radius: 999px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
+.quiz-timer .fill { height: 100%; width: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--quiz), #ffffff); transition: width 120ms linear; }
+.quiz-card.urgent .quiz-timer .fill { background: linear-gradient(90deg, #ff3355, #ffb000); }
+
+.quiz-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center; }
+.quiz-prompt { font-size: 50px; font-weight: 900; line-height: 1.22; text-shadow: 0 3px 12px rgba(0, 0, 0, 0.6); }
+.quiz-prompt.small { font-size: 40px; }
+.quiz-emoji { font-size: 150px; line-height: 1.1; letter-spacing: 8px; font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif; }
+.quiz-flag { width: 520px; height: 390px; object-fit: cover; border-radius: 18px; border: 4px solid rgba(255, 255, 255, 0.85); box-shadow: 0 16px 50px rgba(0, 0, 0, 0.6); }
+.quiz-math { font-size: 130px; font-weight: 900; color: var(--quiz); font-variant-numeric: tabular-nums; text-shadow: 0 0 30px color-mix(in srgb, var(--quiz) 60%, transparent); }
+.quiz-mask { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 820px; }
+.quiz-mask .tile { width: 62px; height: 76px; border-radius: 12px; display: grid; place-items: center; font-size: 46px; font-weight: 900;
+  background: rgba(255, 255, 255, 0.1); border: 3px solid rgba(255, 255, 255, 0.35); }
+.quiz-mask .tile.open { background: var(--quiz); color: #10131c; border-color: #ffffff; }
+.quiz-mask .gap { width: 26px; }
+
+.quiz-opts { width: 100%; display: grid; gap: 14px; }
+.quiz-opt { position: relative; display: grid; grid-template-columns: 70px 1fr auto; align-items: center; gap: 16px; padding: 14px 20px;
+  border-radius: 20px; background: rgba(255, 255, 255, 0.08); border: 3px solid rgba(255, 255, 255, 0.25); overflow: hidden; text-align: left; }
+.quiz-opt .bar { position: absolute; left: 0; top: 0; bottom: 0; background: color-mix(in srgb, var(--quiz) 30%, transparent); transition: width 300ms ease; }
+.quiz-opt > :not(.bar) { position: relative; }
+.quiz-opt .letter { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; font-size: 38px; background: var(--quiz); color: #0a1020; }
+.quiz-opt .text { font-size: 38px; font-weight: 800; }
+.quiz-opt .pct { font-size: 32px; font-weight: 900; color: var(--quiz); }
+.quiz-opt.removed { opacity: 0.3; text-decoration: line-through; }
+.quiz-opt.right { border-color: #4dff88; background: rgba(40, 200, 100, 0.35); box-shadow: 0 0 30px rgba(77, 255, 136, 0.6); }
+.quiz-opt.wrong { opacity: 0.45; }
+.quiz-voters { font-size: 26px; font-weight: 800; color: rgba(255, 255, 255, 0.75); }
+
+.quiz-answer:empty { display: none; }
+.quiz-answer { align-self: center; padding: 10px 28px; border-radius: 18px; background: linear-gradient(135deg, #ffe08a, #c8902a); color: #2b1800;
+  font-size: 44px; font-weight: 900; text-align: center; animation: quiz-pop 0.4s ease-out; }
+@keyframes quiz-pop { from { transform: scale(0.6); opacity: 0; } }
+.quiz-winners { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; min-height: 56px; }
+.quiz-winners .none { font-size: 26px; font-weight: 700; color: rgba(255, 255, 255, 0.7); align-self: center; }
+.quiz-winners .w { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; border-radius: 999px; background: rgba(255, 255, 255, 0.12);
+  font-size: 24px; max-width: 260px; animation: quiz-pop 0.35s ease-out; }
+.quiz-winners .w b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.quiz-winners .w em { font-style: normal; color: var(--quiz); font-weight: 900; }
+.quiz-winners .w1 { background: linear-gradient(135deg, rgba(255, 224, 138, 0.45), rgba(200, 144, 42, 0.45)); }
+.quiz-winners img, .quiz-winners .ava { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+
+/* Wordle */
+.wordle-known, .wordle-row { display: flex; gap: 8px; align-items: center; justify-content: center; }
+.wordle-known .tile { width: 74px; height: 74px; font-size: 44px; }
+.wordle-grid { display: flex; flex-direction: column; gap: 6px; }
+.wordle-row .tile, .wordle-known .tile { width: 54px; height: 54px; border-radius: 8px; display: grid; place-items: center; font-size: 32px; font-weight: 900;
+  background: rgba(255, 255, 255, 0.08); border: 2px solid rgba(255, 255, 255, 0.3); }
+.wordle-known .tile { width: 70px; height: 70px; font-size: 42px; }
+.wordle-row .who { width: 200px; margin-left: 10px; font-size: 22px; font-weight: 700; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; opacity: 0.8; }
+.tile.g, .key.g { background: #538d4e !important; border-color: #6aaa64 !important; color: #fff; }
+.tile.y, .key.y { background: #b59f3b !important; border-color: #c9b458 !important; color: #fff; }
+.tile.x, .key.x { background: #3a3a3c !important; border-color: #3a3a3c !important; color: #bbb; }
+.wordle-empty { font-size: 28px; opacity: 0.75; }
+.wordle-kb { display: flex; flex-direction: column; gap: 6px; }
+.kb-row { display: flex; gap: 5px; justify-content: center; }
+.key { width: 52px; height: 52px; border-radius: 8px; display: grid; place-items: center; font-size: 24px; font-weight: 900; background: rgba(255, 255, 255, 0.18); }

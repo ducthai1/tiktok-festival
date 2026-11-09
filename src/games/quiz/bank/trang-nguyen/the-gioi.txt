@@ -1,0 +1,382 @@
+# Chủ đề: Thế giới (thủ đô, địa lý, kỳ quan, lịch sử, quốc kỳ, tiền tệ, ngôn ngữ, tổ chức quốc tế)
+
+[de]
+Thủ đô của Pháp là thành phố nào? | Paris | Lyon | Marseille | Nice
+Thủ đô của Nhật Bản là thành phố nào? | Tokyo | Osaka | Kyoto | Yokohama
+Thủ đô của Trung Quốc là thành phố nào? | Bắc Kinh | Thượng Hải | Quảng Châu | Thâm Quyến
+Thủ đô của nước Anh là thành phố nào? | Luân Đôn | Manchester | Liverpool | Birmingham
+Thủ đô của Nga là thành phố nào? | Mát-xcơ-va | Xanh Pê-téc-bua | Kazan | Vla-đi-vô-xtốc
+Thủ đô của Ý là thành phố nào? | Rô-ma | Milan | Venice | Napoli
+Thủ đô của Đức là thành phố nào? | Berlin | Munich | Hamburg | Frankfurt
+Thủ đô của Tây Ban Nha là thành phố nào? | Madrid | Barcelona | Sevilla | Valencia
+Thủ đô của Lào là thành phố nào? | Viêng Chăn | Luông Pha Băng | Pắc Xế | Xa-va-na-khét
+Thủ đô của Campuchia là thành phố nào? | Phnôm Pênh | Xiêm Riệp | Bát-tam-bang | Kampot
+Thủ đô của Thái Lan là thành phố nào? | Băng Cốc | Chiềng Mai | Pattaya | Phuket
+Thủ đô của Ấn Độ là thành phố nào? | New Delhi | Mumbai | Kolkata | Chennai
+Thủ đô của nước Mỹ là thành phố nào? | Washington D.C. | New York | Los Angeles | Chicago
+Thủ đô của Triều Tiên là thành phố nào? | Bình Nhưỡng | Kaesong | Hamhung | Wonsan
+Thủ đô của Hy Lạp là thành phố nào? | Athens | Sparta | Thessaloniki | Corinth
+Thủ đô của Bồ Đào Nha là thành phố nào? | Lisbon | Porto | Braga | Coimbra
+Thủ đô của Argentina là thành phố nào? | Buenos Aires | Córdoba | Rosario | Mendoza
+Thủ đô của Mexico là thành phố nào? | Thành phố Mexico | Cancún | Guadalajara | Monterrey
+Thủ đô của Cuba là thành phố nào? | La Habana | Santiago de Cuba | Varadero | Camagüey
+Châu lục nào rộng lớn nhất thế giới? | Châu Á | Châu Phi | Châu Mỹ | Châu Âu
+Ai Cập nằm chủ yếu ở châu lục nào? | Châu Phi | Châu Á | Châu Âu | Châu Đại Dương
+Nước Brazil nằm ở khu vực nào? | Nam Mỹ | Bắc Mỹ | Tây Âu | Bắc Phi
+Châu lục nào gần như bị băng phủ kín quanh năm? | Châu Nam Cực | Châu Âu | Châu Đại Dương | Châu Á
+Nước nào có hình dáng giống chiếc ủng trên bản đồ? | Ý | Hy Lạp | Tây Ban Nha | Bồ Đào Nha
+Núi Phú Sĩ là ngọn núi nổi tiếng của nước nào? | Nhật Bản | Trung Quốc | Hàn Quốc | Nepal
+Đỉnh núi cao nhất thế giới là đỉnh nào? | Everest | K2 | Kilimanjaro | Phú Sĩ
+Sa mạc Sahara nằm ở châu lục nào? | Châu Phi | Châu Á | Châu Mỹ | Châu Đại Dương
+Đại dương nào nhỏ nhất thế giới? | Bắc Băng Dương | Ấn Độ Dương | Đại Tây Dương | Thái Bình Dương
+Đơn vị tiền tệ của Nhật Bản là gì? | Yên | Won | Nhân dân tệ | Rupee
+Đơn vị tiền tệ của nước Mỹ là gì? | Đô la | Bảng | Euro | Yên
+Đồng tiền chung của nhiều nước châu Âu tên là gì? | Euro | Bảng Anh | Rúp | Đô la
+Đơn vị tiền tệ của nước Anh là gì? | Bảng Anh | Euro | Đô la | Frăng
+Đơn vị tiền tệ của Hàn Quốc là gì? | Won | Yên | Baht | Kíp
+Đơn vị tiền tệ của Trung Quốc là gì? | Nhân dân tệ | Yên | Won | Ringgit
+Đơn vị tiền tệ của Nga là gì? | Rúp | Zloty | Euro | Kíp
+Đơn vị tiền tệ của Lào là gì? | Kíp | Riel | Baht | Kyat
+Đơn vị tiền tệ của Ấn Độ là gì? | Rupee | Taka | Baht | Ringgit
+Đơn vị tiền tệ của Campuchia là gì? | Riel | Kíp | Baht | Kyat
+Người Brazil chủ yếu nói tiếng gì? | Tiếng Bồ Đào Nha | Tiếng Tây Ban Nha | Tiếng Anh | Tiếng Pháp
+Người Mexico chủ yếu nói tiếng gì? | Tiếng Tây Ban Nha | Tiếng Bồ Đào Nha | Tiếng Anh | Tiếng Pháp
+Quốc kỳ Nhật Bản là nền trắng với hình tròn màu gì ở giữa? | Đỏ | Xanh dương | Vàng | Đen
+Quốc kỳ nước nào có hình chiếc lá phong đỏ? | Canada | Mỹ | Úc | Thụy Điển
+Quốc kỳ Thụy Sĩ có chữ thập trắng trên nền màu gì? | Đỏ | Xanh dương | Xanh lá | Đen
+Quốc kỳ Trung Quốc có bao nhiêu ngôi sao vàng? | 5 | 1 | 3 | 4
+Quốc kỳ Pháp gồm ba màu xanh dương, trắng và màu gì? | Đỏ | Vàng | Đen | Xanh lá
+Quốc kỳ Đức gồm ba màu đen, đỏ và màu gì? | Vàng | Trắng | Xanh dương | Cam
+Lá cờ Olympic có bao nhiêu vòng tròn? | 5 | 4 | 6 | 7
+Trụ sở chính của Liên Hợp Quốc đặt ở thành phố nào? | New York | Genève | Paris | Luân Đôn
+Thành phố Istanbul thuộc nước nào? | Thổ Nhĩ Kỳ | Hy Lạp | Ai Cập | Iran
+Năm 1492, nhà hàng hải nào vượt Đại Tây Dương đến châu Mỹ? | Christopher Columbus | Vasco da Gama | Magellan | James Cook
+Chiến tranh thế giới thứ hai kết thúc năm nào? | 1945 | 1944 | 1946 | 1918
+Chiến tranh thế giới thứ nhất nổ ra năm nào? | 1914 | 1918 | 1939 | 1905
+"Pharaoh" là danh hiệu của vua nước nào thời cổ đại? | Ai Cập | Hy Lạp | Ba Tư | La Mã
+Người Ai Cập cổ đại xây kim tự tháp chủ yếu để làm gì? | Lăng mộ cho vua | Đền thờ thần | Kho chứa lương | Đài thiên văn
+Ai là người đầu tiên đặt chân lên Mặt Trăng? | Neil Armstrong | Yuri Gagarin | John Glenn | Alan Shepard
+Lãnh tụ Ấn Độ nổi tiếng với đấu tranh bất bạo động là ai? | Mahatma Gandhi | Jawaharlal Nehru | Subhas Chandra Bose | Rabindranath Tagore
+Napoléon Bonaparte là hoàng đế của nước nào? | Pháp | Anh | Đức | Ý
+Nước nào có diện tích lớn nhất thế giới? | Nga | Canada | Trung Quốc | Mỹ
+Quốc gia nhỏ nhất thế giới là nước nào? | Vatican | Monaco | San Marino | Liechtenstein
+Nước Mỹ có bao nhiêu bang? | 50 | 48 | 51 | 52
+Nước nào được gọi là "xứ sở mặt trời mọc"? | Nhật Bản | Hàn Quốc | Trung Quốc | Thái Lan
+Nước nào được gọi là "đất nước triệu voi"? | Lào | Thái Lan | Campuchia | Myanmar
+Nước nào nổi tiếng với cối xay gió và hoa tulip? | Hà Lan | Đan Mạch | Bỉ | Thụy Sĩ
+Nước nào được gọi là "xứ sở kim chi"? | Hàn Quốc | Nhật Bản | Trung Quốc | Mông Cổ
+Nước nào được gọi là "xứ sở sương mù"? | Anh | Pháp | Na Uy | Ireland
+Nước nào được gọi là "xứ sở bạch dương"? | Nga | Canada | Phần Lan | Ba Lan
+Nước nào được gọi là "đảo quốc sư tử"? | Singapore | Sri Lanka | Malaysia | Brunei
+Nước nào ở Đông Nam Á được gọi là "đất nước vạn đảo"? | Indonesia | Thái Lan | Malaysia | Myanmar
+Chuột túi là con vật biểu tượng của nước nào? | Úc | New Zealand | Nam Phi | Brazil
+Gấu trúc là loài vật quý gắn liền với nước nào? | Trung Quốc | Nhật Bản | Ấn Độ | Nepal
+Biển nào ngăn cách châu Âu với châu Phi? | Địa Trung Hải | Biển Đỏ | Biển Đen | Biển Bắc
+Đại dương nào nằm giữa châu Âu và châu Mỹ? | Đại Tây Dương | Thái Bình Dương | Ấn Độ Dương | Bắc Băng Dương
+Quốc gia nào chiếm trọn cả một lục địa? | Úc | New Zealand | Nhật Bản | Indonesia
+Thành phố nào được mệnh danh là "kinh đô ánh sáng"? | Paris | Luân Đôn | Rô-ma | Vienna
+Tượng Nhân sư khổng lồ nằm ở nước nào? | Ai Cập | Hy Lạp | Iraq | Libya
+Sông Hằng chảy chủ yếu qua nước nào? | Ấn Độ | Trung Quốc | Thái Lan | Myanmar
+Sông Nin là dòng sông gắn liền với nền văn minh nước nào? | Ai Cập | Ấn Độ | Hy Lạp | Iraq
+Sông Amazon chảy chủ yếu qua nước nào? | Brazil | Mexico | Argentina | Chile
+Sông Mississippi là con sông lớn của nước nào? | Mỹ | Canada | Mexico | Brazil
+Hoàng đế đầu tiên thống nhất Trung Quốc là ai? | Tần Thủy Hoàng | Hán Cao Tổ | Đường Thái Tông | Hán Vũ Đế
+Người Argentina chủ yếu nói tiếng gì? | Tiếng Tây Ban Nha | Tiếng Bồ Đào Nha | Tiếng Ý | Tiếng Anh
+Sa mạc Gobi nằm ở châu lục nào? | Châu Á | Châu Phi | Châu Mỹ | Châu Âu
+Ba nước Đông Dương thuộc Pháp xưa gồm Việt Nam, Lào và nước nào? | Campuchia | Thái Lan | Myanmar | Malaysia
+Thành phố nào của Nhật Bản bị ném bom nguyên tử đầu tiên năm 1945? | Hiroshima | Nagasaki | Tokyo | Osaka
+Cách mạng Tháng Mười Nga diễn ra năm nào? | 1917 | 1905 | 1918 | 1914
+Trong Thế chiến thứ hai, Hitler đứng đầu nước nào? | Đức | Ý | Hungary | Nhật Bản
+Kênh đào Suez nằm ở nước nào? | Ai Cập | Panama | Thổ Nhĩ Kỳ | Hy Lạp
+Kênh đào Panama nối Thái Bình Dương với đại dương nào? | Đại Tây Dương | Ấn Độ Dương | Bắc Băng Dương | Nam Đại Dương
+Đỉnh Everest thuộc dãy núi nào? | Himalaya | Andes | An-pơ | Ural
+Dãy núi An-pơ nằm ở châu lục nào? | Châu Âu | Châu Á | Châu Mỹ | Châu Phi
+Thác Niagara nằm giữa nước Mỹ và nước nào? | Canada | Mexico | Cuba | Brazil
+Quần đảo Hawaii là một bang của nước nào? | Mỹ | Nhật Bản | Úc | Canada
+Nước nào nằm ngay phía bắc Việt Nam? | Trung Quốc | Lào | Campuchia | Thái Lan
+Mông Cổ nằm kẹp giữa Trung Quốc và nước nào? | Nga | Kazakhstan | Hàn Quốc | Nhật Bản
+Trong các nước sau, nước nào không giáp biển? | Lào | Campuchia | Thái Lan | Myanmar
+Cung điện Buckingham là nơi ở của hoàng gia nước nào? | Anh | Pháp | Tây Ban Nha | Hà Lan
+Nhà Trắng là nơi làm việc của tổng thống nước nào? | Mỹ | Pháp | Nga | Brazil
+Hẻm núi Grand Canyon nằm ở nước nào? | Mỹ | Canada | Mexico | Peru
+Đảo Bali nổi tiếng thuộc nước nào? | Indonesia | Thái Lan | Philippines | Malaysia
+Biển nào mặn đến mức người xuống tắm nổi lềnh bềnh? | Biển Chết | Biển Đỏ | Biển Đen | Biển Bắc
+Thành phố Toronto thuộc nước nào? | Canada | Mỹ | Úc | Anh
+Nước nào nổi tiếng với đồng hồ, sô-cô-la và núi An-pơ? | Thụy Sĩ | Bỉ | Hà Lan | Đan Mạch
+Khổng Tử là nhà tư tưởng nổi tiếng của nước nào? | Trung Quốc | Nhật Bản | Ấn Độ | Hàn Quốc
+Chiến tranh lạnh là cuộc đối đầu giữa Mỹ và nước nào? | Liên Xô | Trung Quốc | Đức | Nhật Bản
+Giấy, la bàn và thuốc súng là phát minh thời xưa của nước nào? | Trung Quốc | Ấn Độ | Ai Cập | Hy Lạp
+Thần Zeus và nữ thần Athena thuộc thần thoại nước nào? | Hy Lạp | Ai Cập | Ấn Độ | Bắc Âu
+Ai là tổng thống đầu tiên của nước Mỹ? | George Washington | Abraham Lincoln | Thomas Jefferson | John Adams
+Samurai là tầng lớp võ sĩ của nước nào? | Nhật Bản | Trung Quốc | Hàn Quốc | Mông Cổ
+Người Viking thời trung cổ đến từ vùng nào? | Bắc Âu | Nam Âu | Trung Đông | Bắc Phi
+Đơn vị tiền tệ của Úc là gì? | Đô la | Bảng | Euro | Rupee
+
+Bán đảo Triều Tiên nằm ở khu vực nào của châu Á? | Đông Á | Nam Á | Tây Á | Trung Á
+Thái Bình Dương nằm giữa châu Á và châu lục nào? | Châu Mỹ | Châu Phi | Châu Âu | Châu Đại Dương
+Quốc kỳ Indonesia gồm hai màu nào? | Đỏ và trắng | Đỏ và vàng | Xanh và trắng | Đen và đỏ
+Lá cờ Liên Hợp Quốc có nền màu gì? | Xanh da trời | Trắng | Đỏ | Xanh lá
+Tổ chức Y tế Thế giới (WHO) lo về lĩnh vực nào? | Sức khỏe | Lương thực | Giáo dục | Thương mại
+Quỹ Nhi đồng Liên Hợp Quốc (UNICEF) chăm lo cho ai? | Trẻ em | Người già | Phụ nữ | Nông dân
+Đế quốc La Mã cổ đại khởi nguồn từ bán đảo nào? | Bán đảo Ý | Bán đảo Iberia | Bán đảo Balkan | Bán đảo Ả Rập
+Vua nước Nga thời phong kiến được gọi là gì? | Sa hoàng | Pharaoh | Thiên hoàng | Khả hãn
+Vua Nhật Bản được gọi là gì? | Thiên hoàng | Sa hoàng | Pharaoh | Khả hãn
+Người Ai Cập cổ đại làm giấy viết từ loại cây gì? | Cây cói | Cây tre | Cây cọ | Cây dâu
+Hai thành phố Sydney và Melbourne thuộc nước nào? | Úc | New Zealand | Canada | Nam Phi
+Thành phố Rio de Janeiro thuộc nước nào? | Brazil | Argentina | Mexico | Bồ Đào Nha
+Thành phố Barcelona thuộc nước nào? | Tây Ban Nha | Ý | Bồ Đào Nha | Pháp
+
+[vua]
+Thủ đô của Áo là thành phố nào? | Vienna | Salzburg | Graz | Innsbruck
+Thủ đô của Ba Lan là thành phố nào? | Vác-sa-va | Kraków | Gdańsk | Wrocław
+Thủ đô của Mông Cổ là thành phố nào? | Ulan Bato | Darkhan | Erdenet | Karakorum
+Thủ đô của Peru là thành phố nào? | Lima | Cusco | Arequipa | Trujillo
+Thủ đô của Ireland là thành phố nào? | Dublin | Belfast | Cork | Galway
+Thủ đô của Iraq là thành phố nào? | Baghdad | Basra | Mosul | Erbil
+Thủ đô của Iran là thành phố nào? | Tehran | Isfahan | Shiraz | Tabriz
+Thủ đô của Thụy Điển là thành phố nào? | Stockholm | Gothenburg | Malmö | Uppsala
+Thủ đô của Na Uy là thành phố nào? | Oslo | Bergen | Trondheim | Stavanger
+Thủ đô của Đan Mạch là thành phố nào? | Copenhagen | Aarhus | Odense | Aalborg
+Thủ đô của Phần Lan là thành phố nào? | Helsinki | Turku | Tampere | Oulu
+Thủ đô của Bỉ là thành phố nào? | Brussels | Antwerp | Ghent | Bruges
+Thủ đô của Hungary là thành phố nào? | Budapest | Debrecen | Szeged | Pécs
+Thủ đô của Cộng hòa Séc là thành phố nào? | Praha | Brno | Ostrava | Plzeň
+Thủ đô của Chile là thành phố nào? | Santiago | Valparaíso | Concepción | Antofagasta
+Thủ đô của Colombia là thành phố nào? | Bogotá | Medellín | Cali | Cartagena
+Thủ đô của Kenya là thành phố nào? | Nairobi | Mombasa | Kisumu | Nakuru
+Thủ đô của Ả Rập Xê Út là thành phố nào? | Riyadh | Jeddah | Mecca | Medina
+Thủ đô của Nepal là thành phố nào? | Kathmandu | Pokhara | Lumbini | Biratnagar
+Thủ đô của Bangladesh là thành phố nào? | Dhaka | Chittagong | Khulna | Sylhet
+Thủ đô của Các Tiểu vương quốc Ả Rập Thống nhất là thành phố nào? | Abu Dhabi | Dubai | Sharjah | Doha
+Thủ đô của Venezuela là thành phố nào? | Caracas | Maracaibo | Valencia | Bogotá
+Thủ đô của Romania là thành phố nào? | Bucharest | Cluj | Timișoara | Sofia
+Đảo nào lớn nhất thế giới? | Greenland | Borneo | Madagascar | New Guinea
+Đỉnh núi cao nhất châu Phi là đỉnh nào? | Kilimanjaro | Núi Kenya | Toubkal | Ras Dashen
+Dãy núi dài nhất thế giới trên đất liền là dãy nào? | Andes | Rocky | Himalaya | Ural
+Dãy núi nào được xem là ranh giới tự nhiên giữa châu Âu và châu Á? | Ural | An-pơ | Carpat | Himalaya
+Eo biển nào ngăn cách nước Anh với nước Pháp? | Măng-sơ | Gibraltar | Bosphorus | Malacca
+Sông Seine chảy qua thủ đô nào? | Paris | Berlin | Vienna | Brussels
+Sông nào dài nhất châu Á? | Trường Giang | Hoàng Hà | Mê Kông | Sông Hằng
+Đảo Madagascar nằm ở đại dương nào? | Ấn Độ Dương | Đại Tây Dương | Thái Bình Dương | Bắc Băng Dương
+Đảo Sicily thuộc nước nào? | Ý | Hy Lạp | Tây Ban Nha | Malta
+Đảo Tasmania thuộc nước nào? | Úc | New Zealand | Indonesia | Papua New Guinea
+Hồ Baikal nằm ở nước nào? | Nga | Mông Cổ | Kazakhstan | Trung Quốc
+Năm 1867, nước Mỹ mua vùng Alaska từ nước nào? | Nga | Anh | Canada | Pháp
+Đền Parthenon nằm ở thành phố nào? | Athens | Rô-ma | Sparta | Istanbul
+Bức tranh Mona Lisa được trưng bày ở bảo tàng nào? | Louvre | Bảo tàng Anh | Prado | Uffizi
+Tòa nhà Burj Khalifa nằm ở thành phố nào? | Dubai | Riyadh | Doha | Kuwait
+Kỳ quan cổ đại nào duy nhất còn tồn tại đến nay? | Kim tự tháp Giza | Vườn treo Babylon | Hải đăng Alexandria | Tượng thần Zeus
+Cách mạng Pháp bùng nổ năm nào? | 1789 | 1776 | 1799 | 1848
+Tuyên ngôn Độc lập của Mỹ được thông qua năm nào? | 1776 | 1789 | 1783 | 1812
+Năm 1939, Đức tấn công nước nào mở đầu Thế chiến thứ hai ở châu Âu? | Ba Lan | Pháp | Liên Xô | Tiệp Khắc
+Năm 1941, Nhật Bản bất ngờ tấn công Trân Châu Cảng của nước nào? | Mỹ | Anh | Úc | Hà Lan
+Bức tường Berlin sụp đổ năm nào? | 1989 | 1991 | 1985 | 1990
+Liên Xô tan rã vào năm nào? | 1991 | 1989 | 1993 | 1985
+Ai lãnh đạo Cách mạng Tháng Mười Nga? | Lê-nin | Xta-lin | Trốt-xki | Plê-kha-nốp
+Tổng thống Mỹ nào ra Tuyên ngôn giải phóng nô lệ? | Abraham Lincoln | George Washington | Thomas Jefferson | Ulysses Grant
+Ai đọc bài diễn văn "Tôi có một giấc mơ" năm 1963? | Martin Luther King | Malcolm X | Nelson Mandela | John F. Kennedy
+Nelson Mandela là tổng thống da màu đầu tiên của nước nào? | Nam Phi | Kenya | Zimbabwe | Nigeria
+Tổng thống Mỹ nào bị ám sát năm 1963 ở Dallas? | John F. Kennedy | Abraham Lincoln | Franklin Roosevelt | Richard Nixon
+Nhà lãnh đạo La Mã nào bị ám sát năm 44 trước Công nguyên? | Julius Caesar | Augustus | Nero | Marcus Aurelius
+Thành Cát Tư Hãn là người sáng lập đế quốc nào? | Mông Cổ | Ottoman | Ba Tư | Byzantine
+Hốt Tất Liệt lập ra triều đại nào ở Trung Quốc? | Nhà Nguyên | Nhà Minh | Nhà Thanh | Nhà Tống
+Triều đại phong kiến cuối cùng của Trung Quốc là triều nào? | Nhà Thanh | Nhà Minh | Nhà Nguyên | Nhà Tống
+Trận Stalingrad trong Thế chiến thứ hai là cuộc chiến giữa Liên Xô và nước nào? | Đức | Ý | Nhật Bản | Phần Lan
+Cách mạng công nghiệp diễn ra đầu tiên ở nước nào? | Anh | Pháp | Đức | Mỹ
+Chiến tranh Trăm Năm thời trung cổ là cuộc chiến giữa Anh và nước nào? | Pháp | Tây Ban Nha | Hà Lan | Đức
+Nữ anh hùng Jeanne d'Arc là người nước nào? | Pháp | Anh | Bỉ | Tây Ban Nha
+Chữ hình nêm là chữ viết của nền văn minh cổ nào? | Lưỡng Hà | Ai Cập | Hy Lạp | Ấn Độ
+Ai lãnh đạo cuộc khởi nghĩa nô lệ nổi tiếng ở La Mã cổ đại? | Spartacus | Hannibal | Attila | Brutus
+Cuộc Minh Trị Duy tân diễn ra ở nước nào? | Nhật Bản | Trung Quốc | Triều Tiên | Thái Lan
+Ấn Độ giành độc lập khỏi Anh vào năm nào? | 1947 | 1945 | 1950 | 1957
+Cuộc khủng hoảng tên lửa năm 1962 xoay quanh hòn đảo nào? | Cuba | Puerto Rico | Jamaica | Haiti
+Tàu Titanic chìm vào năm nào? | 1912 | 1905 | 1915 | 1920
+Ai là người đầu tiên bay vào vũ trụ? | Yuri Gagarin | Neil Armstrong | Gherman Titov | John Glenn
+Phong trào Văn hóa Phục hưng bắt đầu ở nước nào? | Ý | Pháp | Anh | Hà Lan
+Nữ hoàng Victoria là nữ hoàng của nước nào? | Anh | Tây Ban Nha | Hà Lan | Đan Mạch
+Nữ hoàng cuối cùng của Ai Cập cổ đại là ai? | Cleopatra | Nefertiti | Hatshepsut | Nefertari
+Trong Thế chiến thứ hai, phe Trục gồm Đức, Ý và nước nào? | Nhật Bản | Liên Xô | Anh | Pháp
+Tổ chức nào ra đời sau Thế chiến thứ nhất, là tiền thân của Liên Hợp Quốc? | Hội Quốc Liên | Quốc tế Cộng sản | Liên minh châu Âu | NATO
+Liên Hợp Quốc được thành lập năm nào? | 1945 | 1919 | 1949 | 1950
+Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập năm nào? | 1967 | 1975 | 1957 | 1984
+Việt Nam gia nhập ASEAN vào năm nào? | 1995 | 1991 | 1997 | 2000
+Trụ sở Tổ chức Y tế Thế giới (WHO) đặt ở thành phố nào? | Genève | New York | Paris | Vienna
+Trụ sở chính của khối NATO đặt ở thành phố nào? | Brussels | Washington D.C. | Luân Đôn | Berlin
+Biểu tượng Liên Hợp Quốc có bản đồ thế giới bao quanh bởi cành cây gì? | Ô liu | Nguyệt quế | Tùng | Sồi
+Đơn vị tiền tệ của Malaysia là gì? | Ringgit | Rupiah | Peso | Baht
+Đơn vị tiền tệ của Indonesia là gì? | Rupiah | Ringgit | Peso | Riel
+Đơn vị tiền tệ của Philippines là gì? | Peso | Rupiah | Ringgit | Baht
+Đơn vị tiền tệ của Thụy Sĩ là gì? | Franc | Euro | Bảng | Krona
+Đơn vị tiền tệ của Myanmar là gì? | Kyat | Kíp | Riel | Taka
+Đơn vị tiền tệ của Mexico là gì? | Peso | Real | Đô la | Bolívar
+Đơn vị tiền tệ của Singapore là gì? | Đô la | Ringgit | Rupiah | Baht
+Ngôn ngữ chính thức của Ai Cập là tiếng gì? | Tiếng Ả Rập | Tiếng Ba Tư | Tiếng Thổ Nhĩ Kỳ | Tiếng Pháp
+Người Áo chủ yếu nói tiếng gì? | Tiếng Đức | Tiếng Hungary | Tiếng Ý | Tiếng Séc
+Ngoài tiếng Anh, tiếng nào là ngôn ngữ chính thức của Canada? | Tiếng Pháp | Tiếng Tây Ban Nha | Tiếng Đức | Tiếng Ý
+Người La Mã cổ đại chủ yếu nói tiếng gì? | Tiếng La-tinh | Tiếng Hy Lạp | Tiếng Ả Rập | Tiếng Ba Tư
+Quốc kỳ Hàn Quốc có vòng tròn âm dương mang hai màu nào? | Đỏ và xanh dương | Đỏ và vàng | Đen và trắng | Xanh lá và vàng
+Quốc kỳ Lào có hình tròn màu gì ở giữa nền xanh? | Trắng | Vàng | Đỏ | Xanh lá
+Quốc kỳ nước nào có hình một ngôi đền cổ ở giữa? | Campuchia | Lào | Thái Lan | Myanmar
+Quốc kỳ Brazil nền xanh lá có hình thoi màu gì? | Vàng | Trắng | Đỏ | Xanh dương
+Quốc kỳ Ý có ba sọc dọc xanh lá, trắng và màu gì? | Đỏ | Cam | Vàng | Xanh dương
+Quốc kỳ nước nào không có hình chữ nhật mà gồm hai hình tam giác chồng lên nhau? | Nepal | Bhutan | Sri Lanka | Bangladesh
+Quốc kỳ Mỹ có bao nhiêu sọc đỏ và trắng? | 13 | 50 | 12 | 15
+Trên quốc kỳ Anh, các chữ thập đỏ và trắng nằm trên nền màu gì? | Xanh dương | Đỏ | Trắng | Xanh lá
+Thành phố Rô-ma được mệnh danh là gì? | Thành phố vĩnh hằng | Kinh đô ánh sáng | Thành phố sương mù | Thành phố không ngủ
+Vua Lu-i 16 mất ngai vàng trong cuộc cách mạng nào? | Cách mạng Pháp | Cách mạng Anh | Cách mạng Nga | Cách mạng Mỹ
+Kinh tuyến gốc đi qua đài thiên văn Greenwich ở nước nào? | Anh | Pháp | Mỹ | Đức
+Nước nào được gọi là "xứ sở hoa hồng"? | Bulgaria | Hà Lan | Pháp | Ba Lan
+Quốc đảo nào ở Bắc Đại Tây Dương nổi tiếng với núi lửa và suối nước nóng phun? | Iceland | Ireland | Na Uy | Malta
+Đế chế Inca từng hùng mạnh ở châu lục nào? | Nam Mỹ | Bắc Mỹ | Châu Phi | Châu Á
+Kim tự tháp của người Maya ở Chichen Itza thuộc nước nào? | Mexico | Peru | Colombia | Chile
+Nhà thám hiểm Vasco da Gama tìm ra đường biển từ châu Âu sang nước nào? | Ấn Độ | Trung Quốc | Nhật Bản | Indonesia
+Tổng thống Mỹ nào lãnh đạo nước Mỹ phần lớn thời gian Thế chiến thứ hai? | Franklin Roosevelt | Harry Truman | Woodrow Wilson | Herbert Hoover
+Đảo Phục Sinh với những tượng đá Moai khổng lồ thuộc nước nào? | Chile | Peru | New Zealand | Ecuador
+Biển Đỏ ngăn cách châu Phi với bán đảo nào? | Ả Rập | Ấn Độ | Đông Dương | Balkan
+Hai miền nước Đức thống nhất vào năm nào? | 1990 | 1989 | 1991 | 1985
+Đền thờ Abu Simbel và thung lũng các vị vua nằm ở nước nào? | Ai Cập | Sudan | Jordan | Iraq
+Thủ đô của Jordan là thành phố nào? | Amman | Aqaba | Irbid | Zarqa
+Thủ đô của Syria là thành phố nào? | Damascus | Aleppo | Homs | Latakia
+Thủ đô của Qatar là thành phố nào? | Doha | Manama | Muscat | Kuwait
+
+Đảo lớn nhất của Nhật Bản là đảo nào? | Honshu | Hokkaido | Kyushu | Shikoku
+Mũi Hảo Vọng là mũi đất nổi tiếng ở phía nam châu lục nào? | Châu Phi | Nam Mỹ | Châu Úc | Châu Á
+Thành bang Hy Lạp cổ nào nổi tiếng với những chiến binh dũng mãnh? | Sparta | Athens | Corinth | Thebes
+Bỉ, Thụy Sĩ và Canada đều có ngôn ngữ chính thức nào? | Tiếng Pháp | Tiếng Đức | Tiếng Ý | Tiếng Hà Lan
+Biển nào nằm ở phía bắc Thổ Nhĩ Kỳ? | Biển Đen | Biển Đỏ | Biển Caspi | Biển Bắc
+Thủ đô của Bulgaria là thành phố nào? | Sofia | Plovdiv | Varna | Burgas
+Anh trao trả Hồng Kông cho Trung Quốc vào năm nào? | 1997 | 1999 | 1990 | 1984
+Hệ thống Ngũ Đại Hồ nằm ở khu vực nào? | Bắc Mỹ | Châu Phi | Nam Mỹ | Bắc Âu
+Đảo quốc Sri Lanka nằm ở phía nam nước nào? | Ấn Độ | Thái Lan | Myanmar | Indonesia
+Trước Tokyo, kinh đô lâu đời của Nhật Bản là thành phố nào? | Kyoto | Osaka | Nagoya | Sapporo
+Thời chia cắt, thủ đô của Tây Đức là thành phố nào? | Bonn | Frankfurt | Munich | Hamburg
+Trước Naypyidaw, thủ đô của Myanmar là thành phố nào? | Yangon | Mandalay | Bagan | Mawlamyine
+Đơn vị tiền tệ của Pakistan là gì? | Rupee | Taka | Dinar | Rial
+Ngoài tiếng Anh, ngôn ngữ chính thức của Philippines là gì? | Tiếng Filipino | Tiếng Mã Lai | Tiếng Tây Ban Nha | Tiếng Indonesia
+
+[kho]
+Thủ đô của Brunei là thành phố nào? | Bandar Seri Begawan | Kota Kinabalu | Kuching | Miri
+Thủ đô của Đông Timor là thành phố nào? | Dili | Baucau | Kupang | Maliana
+Thủ đô của Ethiopia là thành phố nào? | Addis Ababa | Gondar | Dire Dawa | Bahir Dar
+Thủ đô của Ecuador là thành phố nào? | Quito | Guayaquil | Cuenca | Manta
+Thủ đô của Uruguay là thành phố nào? | Montevideo | Punta del Este | Salto | Asunción
+Thủ đô của Bhutan là thành phố nào? | Thimphu | Paro | Punakha | Gangtok
+Thủ đô của Iceland là thành phố nào? | Reykjavík | Akureyri | Nuuk | Tórshavn
+Thủ đô của Croatia là thành phố nào? | Zagreb | Split | Dubrovnik | Ljubljana
+Thủ đô của Lebanon là thành phố nào? | Beirut | Tripoli | Sidon | Byblos
+Thủ đô của Slovakia là thành phố nào? | Bratislava | Košice | Ljubljana | Brno
+Thủ đô của Madagascar là thành phố nào? | Antananarivo | Toamasina | Mahajanga | Toliara
+Eo biển nào nối Biển Đen với biển Marmara? | Bosphorus | Dardanelles | Kerch | Gibraltar
+Eo biển Hormuz nối vịnh Ba Tư với vùng biển nào? | Vịnh Oman | Vịnh Aden | Vịnh Bengal | Vịnh Aqaba
+Eo biển Magellan nằm ở cực nam của khu vực nào? | Nam Mỹ | Châu Phi | Châu Úc | Bắc Mỹ
+Eo biển nào ngăn cách lục địa Úc với đảo Tasmania? | Eo biển Bass | Eo biển Torres | Eo biển Cook | Eo biển Bering
+Eo biển nào chia cắt hai đảo chính của New Zealand? | Eo biển Cook | Eo biển Bass | Eo biển Torres | Eo biển Foveaux
+Hồ nào rộng nhất châu Phi? | Hồ Victoria | Hồ Tanganyika | Hồ Malawi | Hồ Chad
+Vùng nước kín lớn nhất thế giới, tuy gọi là biển nhưng thực chất là hồ? | Biển Caspi | Biển Chết | Biển Aral | Biển Đen
+Thác Iguazu nằm trên biên giới giữa Argentina và nước nào? | Brazil | Chile | Uruguay | Paraguay
+Đỉnh núi cao thứ hai thế giới là đỉnh nào? | K2 | Kangchenjunga | Lhotse | Makalu
+Sông Rhine đổ ra biển nào? | Biển Bắc | Biển Baltic | Địa Trung Hải | Biển Đen
+Con sông nào ở châu Phi chảy cắt qua đường xích đạo hai lần? | Congo | Nin | Niger | Zambezi
+Sông Nin Xanh bắt nguồn từ hồ nào? | Hồ Tana | Hồ Victoria | Hồ Tanganyika | Hồ Chad
+Đập Tam Hiệp của Trung Quốc được xây trên sông nào? | Trường Giang | Hoàng Hà | Châu Giang | Hắc Long Giang
+Dãy núi Atlas nằm ở khu vực nào? | Bắc Phi | Nam Mỹ | Trung Á | Bắc Âu
+Dãy núi Pyrenees là ranh giới giữa Pháp và nước nào? | Tây Ban Nha | Ý | Thụy Sĩ | Đức
+Bán đảo Iberia chủ yếu gồm Tây Ban Nha và nước nào? | Bồ Đào Nha | Pháp | Ý | Morocco
+Tượng thần Mặt Trời Colossus, một kỳ quan cổ đại, đứng trên đảo nào? | Rhodes | Crete | Sicily | Síp
+Lăng mộ Mausolus, một kỳ quan cổ đại, nằm trên đất nước nào ngày nay? | Thổ Nhĩ Kỳ | Hy Lạp | Ai Cập | Iran
+Tượng thần Zeus, một kỳ quan cổ đại, được đặt ở thánh địa nào? | Olympia | Delphi | Athens | Sparta
+Tháp Eiffel được khánh thành vào năm nào? | 1889 | 1900 | 1789 | 1875
+Tượng Nữ thần Tự do là món quà của nước nào tặng nước Mỹ? | Pháp | Anh | Tây Ban Nha | Hà Lan
+Thành cổ Petra tạc vào vách đá đỏ nằm ở nước nào? | Jordan | Ai Cập | Syria | Lebanon
+Đền Angkor Wat được xây dưới triều vua nào? | Suryavarman II | Jayavarman VII | Jayavarman II | Indravarman I
+Phần lớn Vạn Lý Trường Thành còn lại ngày nay được xây thời nhà nào? | Nhà Minh | Nhà Tần | Nhà Hán | Nhà Thanh
+Kim tự tháp lớn nhất ở Giza được xây cho pharaoh nào? | Khufu | Khafre | Menkaure | Tutankhamun
+Nhà khảo cổ nào tìm ra lăng mộ vua Tutankhamun năm 1922? | Howard Carter | Champollion | Schliemann | Flinders Petrie
+Hòa ước Versailles năm 1919 được ký sau cuộc chiến nào? | Thế chiến thứ nhất | Thế chiến thứ hai | Chiến tranh Pháp - Phổ | Chiến tranh Crimea
+Kênh đào Suez được khánh thành vào năm nào? | 1869 | 1914 | 1889 | 1856
+Ai là hoàng đế đầu tiên của đế quốc La Mã? | Augustus | Julius Caesar | Nero | Caligula
+Vua Louis XIV của Pháp được mệnh danh là gì? | Vua Mặt Trời | Vua Sư Tử | Vua Hiền | Vua Thép
+Ai được mệnh danh là "Thủ tướng sắt" của nước Đức? | Otto von Bismarck | Konrad Adenauer | Helmut Kohl | Wilhelm II
+Sau trận Hastings năm 1066, người Norman chinh phục nước nào? | Anh | Pháp | Ireland | Đan Mạch
+Tướng nào của Carthage dẫn voi chiến vượt dãy An-pơ đánh La Mã? | Hannibal | Spartacus | Attila | Xerxes
+Ai là thầy dạy của Alexander Đại đế? | Aristotle | Plato | Socrates | Pythagoras
+Ai lãnh đạo phong trào Nước Pháp Tự do chống phát xít Đức? | Charles de Gaulle | Philippe Pétain | Léon Blum | Georges Clemenceau
+Napoléon bị lưu đày và qua đời trên hòn đảo nào? | Saint Helena | Elba | Corse | Malta
+Ai là Thủ tướng Anh trong phần lớn thời gian Thế chiến thứ hai? | Winston Churchill | Neville Chamberlain | Clement Attlee | Lloyd George
+Ngày 6 tháng 6 năm 1944, quân Đồng Minh đổ bộ lên vùng nào của Pháp? | Normandie | Provence | Bretagne | Alsace
+Năm 1871, nước Đức được thống nhất dưới sự dẫn dắt của vương quốc nào? | Phổ | Bavaria | Áo | Saxony
+Chiến tranh thuốc phiện lần thứ nhất là cuộc chiến giữa nhà Thanh và nước nào? | Anh | Pháp | Nhật Bản | Nga
+Sa hoàng nào cho xây dựng thành phố Xanh Pê-téc-bua? | Pyotr Đại đế | Ivan Bạo chúa | Nicholas II | Alexander I
+Đoàn thám hiểm đầu tiên đi vòng quanh Trái Đất do ai chỉ huy lúc xuất phát? | Magellan | Columbus | Vasco da Gama | James Cook
+Nội chiến Mỹ kết thúc vào năm nào? | 1865 | 1861 | 1776 | 1898
+Kế hoạch Marshall sau Thế chiến thứ hai chủ yếu viện trợ cho khu vực nào? | Tây Âu | Đông Âu | Đông Nam Á | Mỹ La-tinh
+Đại Hiến chương Magna Carta năm 1215 ra đời ở nước nào? | Anh | Pháp | Đức | Tây Ban Nha
+Công xã Pa-ri ra đời vào năm nào? | 1871 | 1848 | 1789 | 1917
+Nữ thủ tướng đầu tiên trên thế giới, năm 1960, là người nước nào? | Sri Lanka | Ấn Độ | Israel | Anh
+Khối Hiệp ước Vác-sa-va do nước nào đứng đầu? | Liên Xô | Ba Lan | Đông Đức | Tiệp Khắc
+Liên Xô chính thức được thành lập vào năm nào? | 1922 | 1917 | 1924 | 1918
+Nước Cộng hòa Nhân dân Trung Hoa ra đời năm nào? | 1949 | 1945 | 1911 | 1954
+Chiến tranh Triều Tiên tạm dừng bằng hiệp định đình chiến năm nào? | 1953 | 1950 | 1954 | 1945
+Ai là người sáng lập nước Cộng hòa Thổ Nhĩ Kỳ? | Kemal Atatürk | Suleiman | Mehmed II | Enver Pasha
+Năm 1588, hạm đội Armada bị nước Anh đánh bại là của nước nào? | Tây Ban Nha | Bồ Đào Nha | Hà Lan | Pháp
+Bộ luật Hammurabi ra đời ở vương quốc cổ nào? | Babylon | Assyria | Ba Tư | Ai Cập
+Con đường tơ lụa được khai mở dưới triều đại nào của Trung Quốc? | Nhà Hán | Nhà Đường | Nhà Tần | Nhà Tống
+Dòng họ nào lập ra Mạc phủ Edo ở Nhật Bản? | Tokugawa | Ashikaga | Minamoto | Oda
+Đơn vị tiền tệ của Brazil là gì? | Real | Peso | Escudo | Sol
+Đơn vị tiền tệ của Nam Phi là gì? | Rand | Đô la | Shilling | Naira
+Đơn vị tiền tệ của Ba Lan là gì? | Zloty | Euro | Forint | Koruna
+Đơn vị tiền tệ của Thụy Điển là gì? | Krona | Euro | Franc | Zloty
+Đơn vị tiền tệ của Thổ Nhĩ Kỳ là gì? | Lira | Dinar | Rial | Euro
+Đơn vị tiền tệ của Ả Rập Xê Út là gì? | Riyal | Dinar | Dirham | Lira
+Đơn vị tiền tệ của Ai Cập là gì? | Bảng | Dinar | Dirham | Rial
+Trước khi dùng đồng Euro, nước Đức dùng đồng tiền gì? | Mark | Franc | Lira | Peseta
+Trước khi dùng đồng Euro, Tây Ban Nha dùng đồng tiền gì? | Peseta | Escudo | Lira | Franc
+Tiền giấy và tiền xu Euro được đưa vào lưu thông năm nào? | 2002 | 1999 | 1995 | 2004
+Ngôn ngữ chính thức của Iran là tiếng gì? | Tiếng Ba Tư | Tiếng Ả Rập | Tiếng Thổ Nhĩ Kỳ | Tiếng Urdu
+Ngôn ngữ quốc gia của Pakistan là tiếng gì? | Tiếng Urdu | Tiếng Hindi | Tiếng Ba Tư | Tiếng Bengal
+Nước nào ở châu Phi dùng tiếng Bồ Đào Nha làm ngôn ngữ chính thức? | Angola | Kenya | Ethiopia | Nigeria
+Thụy Sĩ có bao nhiêu ngôn ngữ quốc gia? | 4 | 2 | 3 | 5
+Tiếng nào không phải ngôn ngữ chính thức của Liên Hợp Quốc? | Tiếng Đức | Tiếng Ả Rập | Tiếng Nga | Tiếng Tây Ban Nha
+Quốc gia nào ở vùng biển Caribe dùng tiếng Pháp làm ngôn ngữ chính thức? | Haiti | Jamaica | Cuba | Dominica
+Nước nào ở Nam Mỹ dùng tiếng Hà Lan làm ngôn ngữ chính thức? | Suriname | Guyana | Venezuela | Ecuador
+Tiếng Swahili được nói phổ biến ở vùng nào? | Đông Phi | Tây Phi | Bắc Phi | Nam Á
+Quốc kỳ nền đỏ có trăng lưỡi liềm và ngôi sao màu trắng là của nước nào? | Thổ Nhĩ Kỳ | Tunisia | Algeria | Pakistan
+Quốc kỳ ba sọc dọc xanh lá, trắng, cam (từ cán cờ ra) là của nước nào? | Ireland | Ý | Ấn Độ | Bờ Biển Ngà
+Ở giữa quốc kỳ Ấn Độ có hình gì? | Bánh xe | Hoa sen | Mặt trời | Ngôi sao
+Quốc kỳ Thái Lan gồm ba màu nào? | Đỏ, trắng, xanh dương | Đỏ, trắng, xanh lá | Đỏ, vàng, xanh dương | Vàng, trắng, đỏ
+Quốc kỳ ba sọc ngang trắng, xanh dương, đỏ từ trên xuống là của nước nào? | Nga | Hà Lan | Pháp | Serbia
+Quốc kỳ nền xanh lá có hình tròn màu đỏ là của nước nào? | Bangladesh | Pakistan | Nhật Bản | Lào
+Quốc kỳ Úc và New Zealand đều có hình chòm sao nào? | Nam Thập Tự | Bắc Đẩu | Lạp Hộ | Thiên Hậu
+Quốc kỳ có 9 sọc ngang xanh trắng và chữ thập trắng ở góc là của nước nào? | Hy Lạp | Uruguay | Phần Lan | Argentina
+Quốc kỳ nước nào có chữ thập vàng trên nền xanh dương? | Thụy Điển | Na Uy | Phần Lan | Đan Mạch
+Quốc kỳ Singapore có trăng lưỡi liềm và bao nhiêu ngôi sao? | 5 | 3 | 4 | 6
+Trên quốc kỳ Mexico, con đại bàng đang ngậm con vật gì? | Con rắn | Con cá | Con chuột | Con thằn lằn
+Quốc kỳ nước nào có hình cây tuyết tùng xanh ở giữa? | Lebanon | Canada | Syria | Síp
+Quốc kỳ ba sọc dọc đen, vàng, đỏ là của nước nào? | Bỉ | Đức | Romania | Uganda
+Trụ sở của UNESCO đặt ở thành phố nào? | Paris | Genève | New York | Rô-ma
+Hội Chữ thập đỏ quốc tế được thành lập ở thành phố nào? | Genève | Paris | Luân Đôn | Vienna
+Trụ sở Ủy ban Olympic quốc tế đặt ở thành phố nào? | Lausanne | Zurich | Athens | Paris
+Trụ sở của tổ chức OPEC đặt ở thành phố nào? | Vienna | Riyadh | Baghdad | Genève
+Tòa án Công lý Quốc tế đặt trụ sở ở thành phố nào? | La Hay | Genève | New York | Brussels
+Hiến chương Liên Hợp Quốc được ký năm 1945 tại thành phố nào? | San Francisco | New York | Washington D.C. | Luân Đôn
+Khối NATO được thành lập vào năm nào? | 1949 | 1945 | 1955 | 1957
+Liên minh châu Âu ra đời theo hiệp ước ký ở thành phố nào? | Maastricht | Rô-ma | Lisbon | Paris
+Việt Nam trở thành thành viên APEC vào năm nào? | 1998 | 1995 | 2006 | 2007
+Việt Nam trở thành thành viên Liên Hợp Quốc vào năm nào? | 1977 | 1975 | 1986 | 1995
+Việt Nam chính thức gia nhập Tổ chức Thương mại Thế giới năm nào? | 2007 | 2006 | 2000 | 1995
+Trụ sở Ngân hàng Thế giới đặt ở thành phố nào? | Washington D.C. | New York | Genève | Luân Đôn
+Ban Thư ký ASEAN đặt trụ sở ở thành phố nào? | Jakarta | Băng Cốc | Kuala Lumpur | Manila
+Thế vận hội Olympic hiện đại đầu tiên năm 1896 tổ chức ở đâu? | Athens | Paris | Luân Đôn | Rô-ma
+Ngày Liên Hợp Quốc hằng năm là ngày nào? | 24 tháng 10 | 10 tháng 12 | 1 tháng 5 | 26 tháng 6
+Giải Nobel Hòa bình được trao tại thành phố nào? | Oslo | Stockholm | Genève | Copenhagen
+Thủ đô của Tunisia là thành phố nào? | Tunis | Sfax | Sousse | Kairouan
+Thủ đô của Ghana là thành phố nào? | Accra | Kumasi | Tamale | Takoradi
+Thủ đô của Serbia là thành phố nào? | Belgrade | Novi Sad | Niš | Sarajevo
+Thủ đô của Uzbekistan là thành phố nào? | Tashkent | Samarkand | Bukhara | Almaty
+Eo biển Torres ngăn cách lục địa Úc với đảo nào? | New Guinea | Tasmania | Timor | Java
+Sông Ấn (Indus) chảy chủ yếu qua nước nào? | Pakistan | Ấn Độ | Afghanistan | Nepal
+Núi Elbrus thuộc dãy núi nào? | Kavkaz | Ural | An-pơ | Carpat
+Sa mạc Namib ở châu Phi nằm ven đại dương nào? | Đại Tây Dương | Ấn Độ Dương | Thái Bình Dương | Nam Đại Dương
+Sông Niagara nối hồ Erie với hồ nào? | Ontario | Michigan | Huron | Superior
+Cung điện Alhambra nổi tiếng nằm ở thành phố nào? | Granada | Sevilla | Córdoba | Toledo
+Bảo tàng Hermitage nổi tiếng nằm ở thành phố nào? | Xanh Pê-téc-bua | Mát-xcơ-va | Vác-sa-va | Praha

@@ -1,0 +1,383 @@
+# Địa lý Việt Nam: tự nhiên, danh thắng, vườn quốc gia, thành phố, cửa khẩu, cảng biển, đặc sản vùng miền.
+# Không hỏi "thuộc tỉnh nào", không hỏi số liệu thay đổi.
+
+[de]
+Vịnh nào ở Việt Nam được UNESCO công nhận là di sản thiên nhiên thế giới? | Vịnh Hạ Long | Vịnh Cam Ranh | Vịnh Vân Phong | Vịnh Xuân Đài
+Con sông nào chảy qua Hà Nội, nước có màu đỏ nâu vì phù sa? | Sông Hồng | Sông Đà | Sông Lô | Sông Cầu
+Thành phố Huế nằm ở miền nào của nước ta? | Miền Trung | Miền Bắc | Miền Nam | Tây Nguyên
+Cầu Rồng nổi tiếng nằm ở thành phố nào? | Đà Nẵng | Quy Nhơn | Nha Trang | Hải Phòng
+Hòn đảo lớn nhất Việt Nam là đảo nào? | Phú Quốc | Côn Sơn | Cát Bà | Lý Sơn
+Bản đồ Việt Nam có hình dáng giống chữ cái nào? | Chữ S | Chữ C | Chữ L | Chữ V
+Việt Nam nằm ở khu vực nào của châu Á? | Đông Nam Á | Nam Á | Đông Á | Trung Á
+Khí hậu Việt Nam thuộc kiểu khí hậu nào? | Nhiệt đới gió mùa | Ôn đới lục địa | Hoang mạc khô | Cận cực
+Hai đồng bằng lớn nhất nước ta là đồng bằng sông Hồng và đồng bằng sông nào? | Sông Cửu Long | Sông Mã | Sông Cả | Sông Thu Bồn
+Mùa đông lạnh rõ rệt thường thấy ở miền nào nước ta? | Miền Bắc | Miền Nam | Nam Trung Bộ | Tây Nam Bộ
+Miền Nam nước ta có hai mùa rõ rệt là mùa mưa và mùa gì? | Mùa khô | Mùa đông | Mùa lũ | Mùa gió
+Sa Pa nổi tiếng với cảnh quan nào? | Ruộng bậc thang | Đồi cát trắng | Rừng ngập mặn | Đầm phá ven biển
+Mũi Cà Mau nằm ở điểm cực nào của nước ta? | Cực Nam | Cực Bắc | Cực Đông | Cực Tây
+Cột cờ Lũng Cú nằm gần điểm cực nào của nước ta? | Cực Bắc | Cực Nam | Cực Tây | Cực Đông
+Hồ nước tự nhiên rộng nhất trong nội thành Hà Nội là hồ nào? | Hồ Tây | Hồ Gươm | Hồ Thủ Lệ | Hồ Bảy Mẫu
+Thành phố Hồ Chí Minh còn được người dân quen gọi là gì? | Sài Gòn | Chợ Lớn | Gia Định | Thủ Đức
+Phong Nha - Kẻ Bàng nổi tiếng nhất với cảnh quan gì? | Hang động | Đồi cát | Ruộng muối | Ruộng bậc thang
+Mũi Né nổi tiếng với cảnh quan nào? | Đồi cát | Hang động | Rừng thông | Ruộng bậc thang
+Dòng sông nào chảy qua trung tâm thành phố Đà Nẵng? | Sông Hàn | Sông Hương | Sông Lam | Sông Gianh
+Bến Ninh Kiều nổi tiếng nằm ở thành phố nào? | Cần Thơ | Long Xuyên | Mỹ Tho | Rạch Giá
+Ngọn núi nào được mệnh danh là "nóc nhà Đông Dương"? | Phan Xi Păng | Ngọc Linh | Bạch Mã | Bà Đen
+Biển Đông là một phần của đại dương nào? | Thái Bình Dương | Ấn Độ Dương | Đại Tây Dương | Bắc Băng Dương
+Tây Nguyên nổi tiếng với loại đất nào? | Đất đỏ ba dan | Đất phù sa | Đất cát biển | Đất phèn
+Vùng nào được mệnh danh là vựa lúa lớn nhất cả nước? | Miền Tây Nam Bộ | Đồng bằng sông Hồng | Tây Nguyên | Bắc Trung Bộ
+Sông Mê Kông khi chảy vào Việt Nam được gọi là sông gì? | Sông Cửu Long | Sông Hồng | Sông Đà | Sông Đồng Nai
+Tên "Cửu Long" gắn với hình ảnh bao nhiêu con rồng? | 9 | 7 | 5 | 12
+Hai quần đảo xa bờ của Việt Nam trên Biển Đông là Hoàng Sa và quần đảo nào? | Trường Sa | Côn Đảo | Nam Du | Thổ Chu
+Hà Nội nằm trên đồng bằng của con sông nào? | Sông Hồng | Sông Cửu Long | Sông Mã | Sông Cả
+Đèo Ngang nổi tiếng qua bài thơ của nữ sĩ nào? | Bà Huyện Thanh Quan | Hồ Xuân Hương | Đoàn Thị Điểm | Sương Nguyệt Anh
+Ở miền Bắc, loại gió nào gây ra thời tiết lạnh vào mùa đông? | Gió mùa Đông Bắc | Gió Lào | Gió mùa Tây Nam | Gió biển
+Gió tây khô nóng thổi vào miền Trung mùa hè thường được gọi là gì? | Gió Lào | Gió bấc | Gió nồm | Gió chướng
+Mùa mưa bão ở miền Trung thường rơi vào khoảng thời gian nào? | Thu đông | Đầu xuân | Đầu hè | Cuối xuân
+Huế là kinh đô của triều đại phong kiến cuối cùng nào ở nước ta? | Nhà Nguyễn | Nhà Lý | Nhà Trần | Nhà Lê
+Vịnh Hạ Long nổi tiếng với hàng nghìn hòn gì? | Đảo đá vôi | Đảo san hô | Đảo núi lửa | Cồn cát
+Hồ Xuân Hương nằm ở trung tâm thành phố nào? | Đà Lạt | Huế | Nha Trang | Buôn Ma Thuột
+Thác Bản Giốc nằm trên biên giới Việt Nam với nước nào? | Trung Quốc | Lào | Cam-pu-chia | Thái Lan
+Cây nào đặc trưng cho rừng ngập mặn ở Cà Mau? | Cây đước | Cây thông | Cây chè | Cây cao su
+Ngũ Hành Sơn ở Đà Nẵng gồm bao nhiêu ngọn núi? | 5 | 3 | 7 | 9
+Cửa khẩu Hữu Nghị nằm trên biên giới với nước nào? | Trung Quốc | Lào | Cam-pu-chia | Thái Lan
+Việt Nam có đường biên giới trên đất liền với bao nhiêu nước? | 3 | 2 | 4 | 5
+Sông Tiền và sông Hậu là hai nhánh của sông nào? | Sông Mê Kông | Sông Đồng Nai | Sông Vàm Cỏ | Sông Sài Gòn
+Sông Hồng bắt nguồn từ nước nào? | Trung Quốc | Lào | Mi-an-ma | Cam-pu-chia
+Dãy Hoàng Liên Sơn nằm ở vùng núi nào nước ta? | Tây Bắc | Đông Bắc | Tây Nguyên | Bắc Trung Bộ
+Để chống lũ, người dân đồng bằng sông Hồng đắp gì dọc hai bờ sông? | Hệ thống đê | Kênh đào | Giếng khoan | Ruộng bậc thang
+Sông nước miền Tây nổi bật với mạng lưới gì dày đặc? | Kênh rạch | Đường sắt | Đồi núi | Hồ thủy điện
+Làng hoa đào Nhật Tân nổi tiếng nằm ở thành phố nào? | Hà Nội | Hải Phòng | Huế | Đà Lạt
+Đà Lạt nổi tiếng với những rừng cây gì? | Thông | Đước | Tràm | Dừa
+Khí hậu Đà Lạt mát mẻ quanh năm chủ yếu là nhờ đâu? | Nằm trên cao | Gần biển | Nhiều sông hồ | Gần xích đạo
+Nơi nào ở Việt Nam đôi khi có tuyết rơi vào mùa đông? | Sa Pa | Đà Lạt | Vũng Tàu | Cần Thơ
+Tháp Bà Ponagar nổi tiếng nằm ở thành phố biển nào? | Nha Trang | Quy Nhơn | Phan Thiết | Hạ Long
+Bãi biển Sầm Sơn nổi tiếng nằm ở vùng nào? | Bắc Trung Bộ | Nam Trung Bộ | Đông Nam Bộ | Đông Bắc
+Ở động Phong Nha, du khách thường vào thăm hang bằng phương tiện gì? | Thuyền | Cáp treo | Xe điện | Ngựa
+Cánh đồng Mường Thanh ở Tây Bắc gắn với chiến thắng lịch sử nào? | Điện Biên Phủ | Bạch Đằng | Chi Lăng | Đống Đa
+Loại cây nào được trồng nhiều ở Đà Lạt, hay dùng để nấu trà? | Atisô | Vải thiều | Thanh long | Sầu riêng
+Theo truyền thuyết, núi Ba Vì gắn với vị thần nào? | Sơn Tinh | Thủy Tinh | Thánh Gióng | Chử Đồng Tử
+Vùng trung du miền núi Bắc Bộ nổi tiếng trồng loại cây nào? | Chè | Cao su | Dừa | Hồ tiêu
+Xâm nhập mặn mùa khô thường gây khó khăn nhất cho vùng nào? | Miền Tây Nam Bộ | Tây Bắc | Tây Nguyên | Đông Bắc
+Hiện tượng "mưa ngâu" tháng Bảy âm lịch gắn với truyền thuyết nào? | Ngưu Lang Chức Nữ | Sơn Tinh Thủy Tinh | Tấm Cám | Chử Đồng Tử
+Bãi biển Mỹ Khê nổi tiếng nằm ở thành phố nào? | Đà Nẵng | Nha Trang | Quy Nhơn | Vũng Tàu
+Bãi Trước, Bãi Sau là hai bãi biển nổi tiếng ở đâu? | Vũng Tàu | Nha Trang | Hạ Long | Sầm Sơn
+Phan Xi Păng nằm trên dãy núi nào? | Hoàng Liên Sơn | Trường Sơn | Tam Điệp | Con Voi
+Chợ Bến Thành nổi tiếng nằm ở thành phố nào? | Thành phố Hồ Chí Minh | Hà Nội | Đà Nẵng | Cần Thơ
+Phố cổ Hà Nội thường được gọi là khu bao nhiêu phố phường? | 36 | 72 | 24 | 48
+Cây cầu sắt cổ do Pháp xây ở Hà Nội, bắc qua sông Hồng, là cầu nào? | Cầu Long Biên | Cầu Chương Dương | Cầu Nhật Tân | Cầu Thanh Trì
+Cầu Rồng ở Đà Nẵng nổi tiếng vì biết phun gì vào tối cuối tuần? | Lửa và nước | Khói màu | Pháo hoa | Bong bóng
+Dạng địa hình nào chiếm phần lớn lãnh thổ nước ta? | Đồi núi | Đồng bằng | Sa mạc | Đầm lầy
+Dãy núi nào chạy dọc miền Trung, dài nhất nước ta? | Trường Sơn | Hoàng Liên Sơn | Con Voi | Bạch Mã
+Đô thị cổ Hội An được UNESCO công nhận là di sản gì? | Di sản văn hóa | Di sản thiên nhiên | Công viên địa chất | Khu dự trữ sinh quyển
+Thung lũng Tình Yêu nổi tiếng nằm ở thành phố nào? | Đà Lạt | Sa Pa | Nha Trang | Huế
+Ruộng bậc thang Mù Cang Chải nằm ở vùng nào nước ta? | Tây Bắc | Tây Nguyên | Nam Bộ | Đông Nam Bộ
+Con đèo nào nối Huế với Đà Nẵng? | Đèo Hải Vân | Đèo Ngang | Đèo Cả | Đèo Prenn
+Vịnh Hạ Long là một phần của vịnh lớn nào? | Vịnh Bắc Bộ | Vịnh Thái Lan | Vịnh Bengal | Vịnh Cam Ranh
+Ở miền Tây sông nước, phương tiện đi lại truyền thống phổ biến là gì? | Xuồng ghe | Xe trâu | Xe ngựa | Xe đạp
+Thời tiết nồm ẩm làm nhà cửa miền Bắc "đổ mồ hôi" thường vào mùa nào? | Mùa xuân | Mùa hè | Mùa thu | Đầu mùa đông
+Câu ca ngợi tài nguyên đất nước: "Rừng vàng, biển ..." - từ còn thiếu là gì? | bạc | xanh | ngọc | rộng
+Thành phố Đà Lạt nằm ở vùng nào nước ta? | Tây Nguyên | Tây Bắc | Đông Nam Bộ | Đồng bằng sông Hồng
+Khí hậu miền Bắc nước ta thường được nói là có mấy mùa? | 4 mùa | 2 mùa | 3 mùa | 1 mùa
+Cầu Trường Tiền là biểu tượng của thành phố nào? | Huế | Hà Nội | Đà Nẵng | Hội An
+Lào nằm ở phía nào của Việt Nam? | Phía tây | Phía bắc | Phía đông | Phía nam
+Trung Quốc nằm ở phía nào của Việt Nam? | Phía bắc | Phía tây | Phía nam | Phía đông
+Nghề làm muối thường phát triển ở vùng nào? | Ven biển | Núi cao | Cao nguyên | Thung lũng
+Lăng Chủ tịch Hồ Chí Minh nằm trên quảng trường nào? | Ba Đình | Cách Mạng Tháng Tám | Đông Kinh Nghĩa Thục | Lam Sơn
+Dinh Độc Lập nổi tiếng nằm ở thành phố nào? | Thành phố Hồ Chí Minh | Hà Nội | Huế | Đà Lạt
+Vịnh Hạ Long nằm ở vùng nào nước ta? | Đông Bắc | Tây Bắc | Bắc Trung Bộ | Nam Trung Bộ
+Cao nguyên đá nổi tiếng ở vùng cực Bắc nước ta là cao nguyên nào? | Đồng Văn | Lâm Viên | Mộc Châu | Di Linh
+"Miệt vườn" là cách gọi quen thuộc vùng cây trái của miền nào? | Miền Tây Nam Bộ | Tây Bắc | Tây Nguyên | Bắc Trung Bộ
+Tuyến đường sắt nối Hà Nội với Thành phố Hồ Chí Minh mang tên gì? | Thống Nhất | Hòa Bình | Độc Lập | Đoàn Kết
+Thành phố nào được gọi là "thủ đô nghìn năm văn hiến"? | Hà Nội | Huế | Nam Định | Ninh Bình
+Thành phố nào xưa được mệnh danh là "Hòn ngọc Viễn Đông"? | Sài Gòn | Hà Nội | Đà Nẵng | Hải Phòng
+Ở miền Bắc, tháng nào trong năm thường lạnh nhất? | Tháng 1 | Tháng 4 | Tháng 7 | Tháng 10
+Con sông nào chảy qua Thành phố Hồ Chí Minh? | Sông Sài Gòn | Sông Hương | Sông Hàn | Sông Lam
+Hồ Tây ở Hà Nội nổi tiếng với loài hoa nào nở vào mùa hè? | Hoa sen | Hoa đào | Hoa mai | Hoa ban
+Nước ta có gió mùa mùa đông và gió mùa mùa nào? | Mùa hạ | Mùa xuân | Mùa thu | Mùa mưa phùn
+Thủ đô Hà Nội nằm ở miền nào của đất nước? | Miền Bắc | Miền Trung | Miền Nam | Tây Nguyên
+Mùa hè ở miền Bắc nước ta thường có kiểu thời tiết nào? | Nóng và mưa nhiều | Lạnh và khô | Có tuyết rơi | Mát và ít mưa
+Ở miền Trung, mưa lớn và lũ lụt cuối năm thường do hiện tượng nào gây ra? | Bão và áp thấp | Động đất | Sóng thần | Núi lửa
+"Đồng Đăng có phố Kỳ Lừa, có nàng Tô Thị, có chùa ..." - từ còn thiếu là gì? | Tam Thanh | Một Cột | Hương | Thiên Mụ
+"Nhịp chày Yên Thái, mặt gương ..." - từ còn thiếu là gì? | Tây Hồ | Hồ Gươm | Ba Đình | Trúc Bạch
+"Rủ nhau xem cảnh Kiếm Hồ, xem cầu Thê Húc, xem chùa ..." - từ còn thiếu là gì? | Ngọc Sơn | Một Cột | Trấn Quốc | Quán Sứ
+"Nhà Bè nước chảy chia hai, ai về ... Đồng Nai thì về" - từ còn thiếu là gì? | Gia Định | Sài Gòn | Biên Hòa | Mỹ Tho
+"Tháp Mười đẹp nhất bông ..." - từ còn thiếu là gì? | sen | súng | lúa | tràm
+Thuyền thúng tròn đan bằng tre thường thấy nhiều ở vùng nào? | Ven biển miền Trung | Tây Bắc | Tây Nguyên | Đông Bắc
+Lượng mưa trung bình năm ở nước ta nhìn chung thế nào? | Nhiều | Rất ít | Gần như không mưa | Chỉ mưa mùa đông
+Bờ biển dài với nhiều bãi tắm đẹp giúp nước ta phát triển ngành nào? | Du lịch biển | Khai thác than | Trồng chè | Chăn nuôi bò sữa
+Ở miền Tây, khu chợ họp ngay trên sông bằng ghe xuồng gọi là gì? | Chợ nổi | Chợ phiên | Chợ tình | Chợ đêm
+Ở vùng núi phía Bắc, chợ họp vào ngày nhất định trong tuần gọi là gì? | Chợ phiên | Chợ nổi | Chợ đêm | Chợ đầu mối
+Tên "Thăng Long" của Hà Nội xưa có nghĩa là gì? | Rồng bay lên | Rồng nằm ngủ | Rồng hạ xuống | Phượng bay lên
+Ở vùng biển, nước dâng lên rút xuống hằng ngày gọi là hiện tượng gì? | Thủy triều | Sóng thần | Hải lưu | Lũ quét
+Lãnh thổ nước ta hẹp ngang nhất ở miền nào? | Miền Trung | Miền Bắc | Miền Nam | Tây Nguyên
+Đảo Phú Quốc nằm ở vùng biển phía nào của nước ta? | Tây Nam | Đông Bắc | Đông | Bắc
+Nghề quen thuộc của cư dân làng chài ven biển là gì? | Đánh bắt cá | Trồng chè | Khai thác than | Chăn nuôi bò
+Cây cầu bằng một thân tre hay thân cau bắc qua kênh rạch miền Tây gọi là gì? | Cầu khỉ | Cầu treo | Cầu phao | Cầu vồng
+Càng lên cao trên núi, nhiệt độ không khí thường thế nào? | Càng giảm | Càng tăng | Không đổi | Tăng rồi giảm
+Trái cây nào của miền Tây được gọi là "vua của các loại trái cây"? | Sầu riêng | Măng cụt | Chôm chôm | Vú sữa
+Đảo Phú Quốc được mệnh danh là gì? | Đảo Ngọc | Đảo Vàng | Đảo Hoa | Đảo Kim Cương
+Hải Phòng là thành phố cảng quan trọng của miền nào? | Miền Bắc | Miền Trung | Miền Nam | Tây Nguyên
+Dãy Trường Sơn chạy dọc biên giới nước ta với nước nào? | Lào | Trung Quốc | Thái Lan | Mi-an-ma
+Đồng bằng sông Cửu Long được bồi đắp chủ yếu bởi phù sa của sông nào? | Sông Mê Kông | Sông Hồng | Sông Đồng Nai | Sông Mã
+Nhìn chung khí hậu miền Nam nước ta như thế nào? | Nóng quanh năm | Lạnh quanh năm | Có tuyết mùa đông | Bốn mùa rõ rệt
+Vườn quốc gia được lập ra chủ yếu để làm gì? | Bảo tồn thiên nhiên | Trồng lúa | Xây nhà máy | Khai thác gỗ
+Rừng ngập mặn ven biển có tác dụng gì với bờ biển? | Chắn sóng giữ đất | Làm nước biển mặn hơn | Kéo bão vào bờ | Tạo đồi cát
+Ruộng bậc thang thường được người dân làm ở đâu? | Sườn đồi núi | Bãi biển | Đảo san hô | Cồn cát
+Sông Hồng đổ ra biển ở vịnh nào? | Vịnh Bắc Bộ | Vịnh Thái Lan | Vịnh Cam Ranh | Vịnh Vân Phong
+Sông Mê Kông đổ ra vùng biển nào? | Biển Đông | Vịnh Thái Lan | Ấn Độ Dương | Biển Java
+Đất phù sa ở các đồng bằng nước ta thích hợp nhất để trồng cây gì? | Lúa nước | Cà phê | Chè | Thông
+
+[vua]
+Hưng Yên nổi tiếng với đặc sản quả gì? | Nhãn lồng | Vải thiều | Xoài cát | Mận hậu
+Quần thể danh thắng Tràng An gắn với vùng đất cố đô nào? | Hoa Lư | Huế | Thăng Long | Phong Châu
+Hồ Ba Bể nằm ở vùng núi nào nước ta? | Đông Bắc | Tây Bắc | Tây Nguyên | Nam Trung Bộ
+Nhà máy thủy điện Hòa Bình được xây trên sông nào? | Sông Đà | Sông Hồng | Sông Lô | Sông Chảy
+Biển Hồ (hồ T'nưng) ở Tây Nguyên nằm gần thành phố nào? | Pleiku | Buôn Ma Thuột | Kon Tum | Đà Lạt
+Vịnh Lan Hạ nằm cạnh hòn đảo nào? | Cát Bà | Cô Tô | Quan Lạn | Bạch Long Vĩ
+Đảo Lý Sơn nổi tiếng với đặc sản gì? | Tỏi | Hồ tiêu | Chè | Yến sào
+Mùa lũ ở miền Tây Nam Bộ thường được người dân gọi là mùa gì? | Mùa nước nổi | Mùa nước ròng | Mùa gió chướng | Mùa nồm
+Rừng U Minh nổi tiếng với loại cây nào? | Cây tràm | Cây thông | Cây sao | Cây cọ
+Đà Lạt nằm trên cao nguyên nào? | Lâm Viên | Di Linh | Pleiku | Mơ Nông
+Ngọn núi nào gắn với truyền thuyết tình yêu chàng K'Lang và nàng H'Biang? | Lang Biang | Bà Đen | Bà Nà | Chư Yang Sin
+Ngọn núi nào được mệnh danh là "nóc nhà Nam Bộ"? | Núi Bà Đen | Núi Sam | Núi Cấm | Núi Chứa Chan
+Cầu Vàng với đôi bàn tay khổng lồ nâng đỡ nằm trên núi nào? | Bà Nà | Sơn Trà | Ngũ Hành Sơn | Bạch Mã
+Vùng trũng rộng lớn nào ở miền Tây có vườn quốc gia Tràm Chim? | Đồng Tháp Mười | Tứ giác Long Xuyên | Bán đảo Cà Mau | Vùng Bảy Núi
+Cửa khẩu Mộc Bài nằm trên biên giới với nước nào? | Cam-pu-chia | Lào | Trung Quốc | Thái Lan
+Cửa khẩu Lao Bảo nằm trên biên giới với nước nào? | Lào | Cam-pu-chia | Trung Quốc | Thái Lan
+Việt Nam có đường biên giới đất liền dài nhất với nước nào? | Lào | Trung Quốc | Cam-pu-chia | Thái Lan
+Cảng container Cát Lái nằm ở thành phố nào? | Thành phố Hồ Chí Minh | Hải Phòng | Đà Nẵng | Quy Nhơn
+Vịnh nào ở Nam Trung Bộ nổi tiếng là cảng nước sâu tự nhiên bậc nhất? | Vịnh Cam Ranh | Vịnh Xuân Đài | Vịnh Vũng Rô | Vịnh Quy Nhơn
+Thành phố Vinh nằm bên bờ dòng sông nào? | Sông Lam | Sông Mã | Sông Gianh | Sông Hương
+Thành phố Cần Thơ nằm bên bờ sông nào? | Sông Hậu | Sông Tiền | Sông Vàm Cỏ | Sông Cái Lớn
+Thành phố nào được gọi là "thành phố ngã ba sông"? | Việt Trì | Hòa Bình | Tuyên Quang | Yên Bái
+Hồ Núi Cốc gắn với truyền thuyết tình yêu của chàng Cốc và nàng nào? | Nàng Công | Nàng Tô Thị | Nàng Mị Nương | Nàng Ngọc Hoa
+Hồ Tuyền Lâm nằm ở thành phố nào? | Đà Lạt | Huế | Pleiku | Nha Trang
+Từ đèo Mã Pí Lèng có thể ngắm nhìn dòng sông nào? | Sông Nho Quế | Sông Gâm | Sông Lô | Sông Chảy
+Đèo Khau Phạ nổi tiếng gắn với vùng ruộng bậc thang nào? | Mù Cang Chải | Hoàng Su Phì | Y Tý | Bắc Sơn
+Dãy núi nào được coi là ranh giới khí hậu giữa miền Bắc và miền Nam? | Dãy Bạch Mã | Dãy Hoành Sơn | Dãy Tam Điệp | Dãy Con Voi
+Các dãy núi vùng Đông Bắc nước ta chủ yếu có dạng gì? | Cánh cung | Hình nón | Vòng tròn | Bậc thang
+Các dãy núi vùng Tây Bắc chạy theo hướng nào? | Tây bắc - đông nam | Đông - tây | Bắc - nam | Đông bắc - tây nam
+Đồng bằng sông Hồng được bồi đắp bởi sông Hồng và sông nào? | Sông Thái Bình | Sông Mã | Sông Cả | Sông Đồng Nai
+Tây Nguyên có dạng địa hình đặc trưng nào? | Cao nguyên xếp tầng | Đồng bằng châu thổ | Đồi cát ven biển | Núi đá vôi ven biển
+Cao nguyên đá Đồng Văn nổi tiếng với loài hoa nào nở vào cuối thu? | Tam giác mạch | Hoa ban | Hoa mận | Dã quỳ
+Hoa dã quỳ nở vàng rực mỗi cuối năm là hình ảnh đặc trưng của vùng nào? | Tây Nguyên | Đồng Tháp Mười | Bắc Trung Bộ | Ven biển Nam Bộ
+Phong Nha - Kẻ Bàng được UNESCO công nhận là di sản gì? | Di sản thiên nhiên | Di sản văn hóa | Di sản hỗn hợp | Di sản phi vật thể
+Quần thể danh thắng Tràng An được UNESCO công nhận là di sản loại nào? | Di sản hỗn hợp | Di sản thiên nhiên | Di sản văn hóa | Di sản tư liệu
+Ở Tam Cốc, du khách đi thuyền xuyên qua bao nhiêu hang? | 3 | 2 | 5 | 7
+Đến chùa Hương, du khách đi đò trên dòng suối nào? | Suối Yến | Suối Tiên | Suối Mơ | Suối Vàng
+Vườn quốc gia Cát Tiên nằm chủ yếu ở vùng nào? | Đông Nam Bộ | Tây Bắc | Bắc Trung Bộ | Đông Bắc
+Vườn quốc gia Côn Đảo nổi tiếng bảo tồn loài nào? | Rùa biển | Sếu đầu đỏ | Voọc mũi hếch | Bò tót
+Buôn Đôn ở Tây Nguyên nổi tiếng với nghề truyền thống nào? | Thuần dưỡng voi | Dệt lụa | Làm gốm | Đánh cá biển
+Thành phố nào được mệnh danh là "thành phố hoa phượng đỏ"? | Hải Phòng | Huế | Đà Nẵng | Nam Định
+Cầu nào ở Đà Nẵng có thể quay để tàu thuyền qua lại? | Cầu sông Hàn | Cầu Rồng | Cầu Trần Thị Lý | Cầu Thuận Phước
+Ga cuối phía Nam của tuyến đường sắt Thống Nhất là ga nào? | Ga Sài Gòn | Ga Biên Hòa | Ga Dĩ An | Ga Mỹ Tho
+Thành phố nào nổi tiếng với nghề dệt, được gọi là "thành phố dệt"? | Nam Định | Thái Bình | Bắc Ninh | Hưng Yên
+Theo truyền thuyết, Thánh Gióng bay về trời từ đỉnh núi nào? | Núi Sóc | Núi Ba Vì | Núi Tam Đảo | Núi Yên Tử
+Cù Lao Chàm được UNESCO công nhận là gì? | Khu dự trữ sinh quyển | Di sản thiên nhiên | Công viên địa chất | Di sản văn hóa
+Hang động nổi tiếng nào nằm trên vịnh Hạ Long? | Hang Sửng Sốt | Động Phong Nha | Hang Sơn Đoòng | Động Tam Thanh
+Hòn Trống Mái (Gà Chọi) là hình ảnh nổi tiếng của vịnh nào? | Vịnh Hạ Long | Vịnh Nha Trang | Vịnh Cam Ranh | Vịnh Xuân Đài
+Gành Đá Đĩa ở Nam Trung Bộ nổi tiếng với gì? | Cột đá ba dan | Đồi cát đỏ | Ruộng muối | Rừng thông
+Mũi Đôi trên bán đảo Hòn Gốm là điểm cực nào trên đất liền nước ta? | Cực Đông | Cực Tây | Cực Nam | Cực Bắc
+Biển nước ta có hai vịnh lớn là vịnh Bắc Bộ và vịnh nào? | Vịnh Thái Lan | Vịnh Hạ Long | Vịnh Bengal | Vịnh Cam Ranh
+Đường bờ biển nước ta dài khoảng bao nhiêu ki-lô-mét? | 3.260 km | 2.360 km | 4.620 km | 1.650 km
+Việt Nam nằm hoàn toàn trong vùng nào của Trái Đất? | Vùng nội chí tuyến | Vùng ôn đới | Vùng cận cực | Vùng hàn đới
+Sương muối mùa đông thường xuất hiện ở vùng nào nước ta? | Vùng núi phía Bắc | Đồng bằng Nam Bộ | Ven biển miền Trung | Đảo Phú Quốc
+Mỏ dầu Bạch Hổ nằm ngoài khơi thành phố biển nào? | Vũng Tàu | Nha Trang | Quy Nhơn | Hạ Long
+Vùng duy nhất của nước ta không giáp biển là vùng nào? | Tây Nguyên | Đông Nam Bộ | Bắc Trung Bộ | Đồng bằng sông Hồng
+Suối Lê-nin và núi Các Mác nằm ở khu di tích nào? | Pác Bó | Tân Trào | Định Hóa | Điện Biên Phủ
+Ngọn núi cao nhất Tây Nguyên là núi nào? | Ngọc Linh | Chư Yang Sin | Lang Biang | Chư Mom Ray
+Đỉnh Phan Xi Păng cao khoảng bao nhiêu? | Hơn 3.100 m | Hơn 2.500 m | Hơn 4.000 m | Hơn 1.900 m
+Núi Sam, nơi có miếu Bà Chúa Xứ, nằm gần thành phố nào? | Châu Đốc | Long Xuyên | Rạch Giá | Hà Tiên
+Vùng Bảy Núi (Thất Sơn) nằm ở miền nào? | Tây Nam Bộ | Tây Bắc | Tây Nguyên | Bắc Trung Bộ
+Cầu Bãi Cháy là cây cầu dây văng nổi tiếng ở thành phố nào? | Hạ Long | Hải Phòng | Móng Cái | Uông Bí
+Cầu Thăng Long ở Hà Nội có mấy tầng? | 2 tầng | 1 tầng | 3 tầng | 4 tầng
+Bên hồ Tây có ngôi chùa cổ nổi tiếng nào? | Chùa Trấn Quốc | Chùa Một Cột | Chùa Thiên Mụ | Chùa Hương
+Thành phố nào được mệnh danh là "Tây Đô"? | Cần Thơ | Long Xuyên | Mỹ Tho | Cà Mau
+Sông Đuống là nhánh tách ra từ sông nào? | Sông Hồng | Sông Thái Bình | Sông Cầu | Sông Đà
+Vịnh Lăng Cô nằm ngay dưới chân con đèo nào? | Đèo Hải Vân | Đèo Ngang | Đèo Cả | Đèo Prenn
+Sông ngòi miền Trung thường có đặc điểm gì? | Ngắn và dốc | Dài và êm | Rộng và sâu | Ít nước quanh năm
+Sông ngòi nước ta chủ yếu chảy theo hai hướng chính là tây bắc - đông nam và hướng nào? | Vòng cung | Bắc - nam | Đông - tây | Đông bắc - tây nam
+Hòn Chồng là thắng cảnh nổi tiếng ở thành phố biển nào? | Nha Trang | Quy Nhơn | Vũng Tàu | Phan Thiết
+Ghềnh Ráng và bãi Quy Hòa là thắng cảnh của thành phố biển nào? | Quy Nhơn | Nha Trang | Tuy Hòa | Phan Thiết
+Bãi biển Cửa Lò nằm gần thành phố nào? | Vinh | Thanh Hóa | Đồng Hới | Hà Tĩnh
+Bờ biển nước ta kéo dài từ Móng Cái ở phía bắc đến đâu ở phía nam? | Hà Tiên | Cà Mau | Vũng Tàu | Rạch Giá
+Cam Vinh nổi tiếng là đặc sản của vùng nào? | Bắc Trung Bộ | Tây Nguyên | Đông Nam Bộ | Tây Bắc
+Xoài cát Hòa Lộc là đặc sản của miền nào? | Miền Tây Nam Bộ | Tây Bắc | Tây Nguyên | Bắc Trung Bộ
+Loại sâm quý mang tên ngọn núi cao ở Tây Nguyên là gì? | Sâm Ngọc Linh | Sâm Bà Đen | Sâm Lang Biang | Sâm Chư Yang Sin
+Đảo Phú Quốc nổi tiếng với loại gia vị nào? | Hồ tiêu | Quế | Hồi | Gừng
+Phú Xuân là tên cũ của thành phố nào? | Huế | Hà Nội | Đà Nẵng | Quy Nhơn
+Đảo Lý Sơn được hình thành từ đâu? | Núi lửa | San hô | Đá vôi | Cát bồi
+Đồng bằng ven biển miền Trung có đặc điểm gì? | Nhỏ hẹp | Rộng lớn | Không có sông | Toàn đất ba dan
+Sông Hương bắt nguồn từ dãy núi nào? | Trường Sơn | Hoàng Liên Sơn | Tam Điệp | Con Voi
+Tên gọi "Hà Nội" có nghĩa là gì? | Bên trong sông | Bên ngoài núi | Giữa hai hồ | Phía tây sông
+Mùa mưa ở Nam Bộ thường bắt đầu vào khoảng tháng mấy? | Tháng 5 | Tháng 1 | Tháng 9 | Tháng 12
+Đèo Prenn là con đèo dẫn vào thành phố nào? | Đà Lạt | Bảo Lộc | Buôn Ma Thuột | Pleiku
+Bảo Lộc ở Tây Nguyên nổi tiếng với đặc sản nào? | Trà | Vải thiều | Nước mắm | Cam
+Bãi biển Cửa Đại nằm gần phố cổ nào? | Hội An | Phố Hiến | Hà Tiên | Đồng Văn
+Sông Vàm Cỏ gồm sông Vàm Cỏ Đông và nhánh nào? | Vàm Cỏ Tây | Vàm Cỏ Nam | Vàm Cỏ Bắc | Vàm Cỏ Thượng
+Sông Hồng ngày xưa còn được gọi là sông gì? | Nhị Hà | Lô Giang | Đà Giang | Mã Giang
+Bán đảo Cà Mau có mấy mặt giáp biển? | 3 | 1 | 2 | 4
+Làng hoa Sa Đéc nổi tiếng nằm ở miền nào? | Tây Nam Bộ | Tây Bắc | Tây Nguyên | Đông Bắc
+Bãi biển Trà Cổ nổi tiếng nằm gần cửa khẩu nào? | Móng Cái | Hữu Nghị | Lào Cai | Tây Trang
+Bản Cát Cát nổi tiếng nằm gần khu du lịch nào? | Sa Pa | Mộc Châu | Mai Châu | Đồng Văn
+Dinh thự họ Vương nổi tiếng nằm trên cao nguyên nào? | Đồng Văn | Mộc Châu | Lâm Viên | Di Linh
+Cầu Thê Húc ở hồ Hoàn Kiếm được sơn màu gì? | Màu đỏ | Màu vàng | Màu xanh | Màu trắng
+Làng chài nổi được nhiều du khách ghé thăm trên vịnh Hạ Long là làng nào? | Cửa Vạn | Vạn Giã | Cửa Lò | Tam Giang
+Thành phố Hạ Long trước đây có tên gọi quen thuộc là gì? | Hòn Gai | Cẩm Phả | Uông Bí | Móng Cái
+Biên Hòa nằm bên bờ sông nào? | Sông Đồng Nai | Sông Sài Gòn | Sông Bé | Sông Vàm Cỏ
+Mỹ Tho nằm bên bờ sông nào? | Sông Tiền | Sông Hậu | Sông Vàm Cỏ | Sông Sài Gòn
+"Thứ nhất Kinh Kỳ, thứ nhì ..." - từ còn thiếu là gì? | Phố Hiến | Hội An | Vân Đồn | Thanh Hà
+Nhiệt độ trung bình năm của nước ta nhìn chung ở mức nào? | Trên 20 độ C | Dưới 10 độ C | Trên 35 độ C | Dưới 0 độ C
+
+Dòng sông nào chảy qua trung tâm Lạng Sơn? | Sông Kỳ Cùng | Sông Bằng | Sông Thương | Sông Lục Nam
+Thác nước nào nằm ngay trong lòng thành phố Đà Lạt? | Thác Cam Ly | Thác Pongour | Thác Dambri | Thác Bản Giốc
+Núi Tản Viên là tên gọi khác của núi nào? | Núi Ba Vì | Núi Tam Đảo | Núi Yên Tử | Núi Sóc
+Tên núi Tam Đảo có nguồn gốc từ hình ảnh gì? | Ba đỉnh như ba hòn đảo | Ba ngôi chùa cổ | Ba con suối lớn | Ba hồ nước
+Quần đảo Cô Tô nằm trong vịnh nào? | Vịnh Bắc Bộ | Vịnh Thái Lan | Vịnh Cam Ranh | Vịnh Vân Phong
+Quần đảo Nam Du nằm trong vịnh nào? | Vịnh Thái Lan | Vịnh Bắc Bộ | Vịnh Hạ Long | Vịnh Xuân Đài
+Hòn Khoai nằm ngoài khơi mũi đất nào? | Mũi Cà Mau | Mũi Né | Mũi Đôi | Mũi Kê Gà
+Đảo Hòn Tre với khu vui chơi lớn nằm trong vịnh nào? | Vịnh Nha Trang | Vịnh Hạ Long | Vịnh Lan Hạ | Vịnh Thái Lan
+Bãi Sao, Bãi Dài là những bãi biển nổi tiếng trên đảo nào? | Phú Quốc | Côn Đảo | Cát Bà | Lý Sơn
+Đèo Mã Pí Lèng nằm trên con đường nổi tiếng nào? | Đường Hạnh Phúc | Đường Trường Sơn | Đường số 9 | Đường Thống Nhất
+Đèo Pha Đin nằm trên đường lên vùng lòng chảo nào? | Điện Biên | Mường Lò | Mộc Châu | Bắc Hà
+Bắc Hà ở vùng núi phía Bắc nổi tiếng với loại mận gì? | Mận tam hoa | Mận An Phước | Mận cơm | Mận đỏ
+Cây điều lấy hạt được trồng nhiều ở vùng nào? | Đông Nam Bộ | Tây Bắc | Đông Bắc | Đồng bằng sông Hồng
+Rừng tràm Trà Sư nổi tiếng nằm ở miền nào? | Tây Nam Bộ | Tây Bắc | Tây Nguyên | Đông Bắc
+Đồi chè Cầu Đất nổi tiếng nằm ở thành phố nào? | Đà Lạt | Sa Pa | Mộc Châu | Thái Nguyên
+Đảo Phú Quý nằm ngoài khơi thành phố biển nào? | Phan Thiết | Vũng Tàu | Nha Trang | Quy Nhơn
+Đảo Cồn Cỏ nằm ngoài khơi vùng nào? | Bắc Trung Bộ | Nam Trung Bộ | Đông Bắc | Đông Nam Bộ
+Ngọn tháp cổ nằm giữa hồ Hoàn Kiếm là tháp nào? | Tháp Rùa | Tháp Bút | Tháp Bà | Tháp Chàm
+Đảo Ti Tốp trên vịnh Hạ Long mang tên một nhà du hành vũ trụ nước nào? | Liên Xô | Mỹ | Pháp | Trung Quốc
+Người Pháp xây dựng Đà Lạt ban đầu chủ yếu để làm gì? | Nơi nghỉ dưỡng | Cảng biển | Khu mỏ than | Đồn điền cao su
+Cửa khẩu Hữu Nghị xưa có tên gọi là gì? | Ải Nam Quan | Ải Chi Lăng | Ải Vân | Ải Lao Bảo
+Cáp treo vượt biển Hòn Thơm nằm ở vùng đảo nào? | Phú Quốc | Côn Đảo | Cát Bà | Lý Sơn
+Bãi biển Non Nước nằm dưới chân cụm núi nào? | Ngũ Hành Sơn | Sơn Trà | Bà Nà | Hải Vân
+Thác Bản Giốc nằm ở vùng núi nào nước ta? | Đông Bắc | Tây Bắc | Tây Nguyên | Bắc Trung Bộ
+Đầm Ô Loan nổi tiếng nằm gần thành phố biển nào? | Tuy Hòa | Quy Nhơn | Nha Trang | Phan Thiết
+
+[kho]
+Thác Bản Giốc nằm trên dòng sông nào? | Sông Quây Sơn | Sông Bằng | Sông Gâm | Sông Kỳ Cùng
+Vùng ven biển nào khô hạn nhất nước ta? | Cực Nam Trung Bộ | Bắc Trung Bộ | Đông Bắc | Tây Nam Bộ
+"Nóc nhà miền Tây" là ngọn núi nào? | Núi Cấm | Núi Sam | Núi Bà Đen | Núi Ba Thê
+Cảng nước sâu Lạch Huyện nằm ở thành phố nào? | Hải Phòng | Hạ Long | Đà Nẵng | Quy Nhơn
+Nhà máy lọc dầu đầu tiên của Việt Nam nằm ở khu kinh tế nào? | Dung Quất | Nghi Sơn | Vũng Áng | Chu Lai
+Dòng sông chảy qua thành cổ Quảng Trị là sông nào? | Sông Thạch Hãn | Sông Bến Hải | Sông Hiếu | Sông Gianh
+Thành phố Đồng Hới nằm bên bờ sông nào? | Sông Nhật Lệ | Sông Gianh | Sông Thạch Hãn | Sông Son
+Sông Lam còn có tên gọi khác là gì? | Sông Cả | Sông Chu | Sông Gianh | Sông Đáy
+Sông Đà Rằng là tên gọi đoạn hạ lưu của sông nào? | Sông Ba | Sông Côn | Sông Cái | Sông Trà Khúc
+Thành phố Quảng Ngãi nằm bên bờ sông nào? | Sông Trà Khúc | Sông Vệ | Sông Thu Bồn | Sông Côn
+Hồ Trị An được xây trên sông nào? | Sông Đồng Nai | Sông Bé | Sông Sài Gòn | Sông Vàm Cỏ
+Hồ Dầu Tiếng được xây trên sông nào? | Sông Sài Gòn | Sông Đồng Nai | Sông Bé | Sông Vàm Cỏ
+Hồ Thác Bà được xây trên sông nào? | Sông Chảy | Sông Lô | Sông Gâm | Sông Đà
+Thác nào được mệnh danh là "Nam thiên đệ nhất thác"? | Pongour | Datanla | Prenn | Cam Ly
+Thác Dray Nur nằm trên dòng sông nào? | Sông Sêrêpôk | Sông Đắk Bla | Sông Ba | Sông Đồng Nai
+Đèo Ô Quy Hồ vượt qua dãy núi nào? | Hoàng Liên Sơn | Trường Sơn | Con Voi | Pu Đen Đinh
+"Tứ đại đỉnh đèo" miền Bắc gồm Mã Pí Lèng, Pha Đin, Ô Quy Hồ và đèo nào? | Khau Phạ | Lũng Lô | Đèo Gió | Đá Trắng
+Đèo Ngang vượt qua dãy núi nào? | Hoành Sơn | Bạch Mã | Tam Điệp | Hoàng Liên Sơn
+Bốn cánh cung vùng Đông Bắc gồm Sông Gâm, Ngân Sơn, Bắc Sơn và cánh cung nào? | Đông Triều | Tam Điệp | Hoành Sơn | Pu Sam Sao
+Loại đất nào chiếm phần lớn ở vùng đồi núi nước ta? | Đất feralit | Đất phù sa | Đất cát biển | Đất phèn
+Ngoài Đồng Văn, công viên địa chất toàn cầu nào được UNESCO công nhận năm 2018? | Non nước Cao Bằng | Đắk Nông | Lạng Sơn | Lý Sơn
+Công viên địa chất Đắk Nông nổi tiếng với hệ thống hang động gì? | Hang núi lửa | Hang đá vôi | Hang băng | Hang san hô
+Câu "Nhất Thanh, nhì Lò, tam Than, tứ Tấc" nói về gì ở Tây Bắc? | Những cánh đồng lớn | Những ngọn núi cao | Những dòng sông | Những con đèo
+Gió chướng là loại gió thường thổi ở vùng nào? | Nam Bộ | Tây Bắc | Bắc Trung Bộ | Tây Nguyên
+Vùng nào có trữ lượng bô-xít lớn nhất nước ta? | Tây Nguyên | Đông Bắc | Tây Bắc | Bắc Trung Bộ
+Cửa khẩu Móng Cái nằm bên bờ con sông biên giới nào? | Sông Ka Long | Sông Kỳ Cùng | Sông Bằng | Sông Gâm
+Cửa khẩu Tây Trang nằm trên biên giới với nước nào? | Lào | Trung Quốc | Cam-pu-chia | Thái Lan
+Cửa khẩu Bờ Y nằm gần ngã ba biên giới của Việt Nam với hai nước nào? | Lào và Cam-pu-chia | Lào và Trung Quốc | Lào và Thái Lan | Thái Lan và Mi-an-ma
+Hòn đảo xa bờ nhất trong vịnh Bắc Bộ là đảo nào? | Bạch Long Vĩ | Cô Tô | Cát Bà | Cồn Cỏ
+Đảo lớn nhất trong quần đảo Côn Đảo là đảo nào? | Côn Sơn | Hòn Bà | Bảy Cạnh | Hòn Cau
+Ngọn núi lớn nhất trong Ngũ Hành Sơn là núi nào? | Thủy Sơn | Kim Sơn | Hỏa Sơn | Thổ Sơn
+Ngọn núi được ví như bức bình phong che chắn kinh thành Huế là núi nào? | Núi Ngự Bình | Núi Bạch Mã | Núi Thúy Vân | Núi Kim Phụng
+Núi Bài Thơ, nơi có khắc thơ của vua Lê Thánh Tông, nằm bên vịnh nào? | Vịnh Hạ Long | Vịnh Lan Hạ | Vịnh Bái Tử Long | Vịnh Nha Trang
+Khu dự trữ sinh quyển thế giới đầu tiên của Việt Nam là ở đâu? | Cần Giờ | Cát Tiên | Cù Lao Chàm | Mũi Cà Mau
+Khu Ramsar đầu tiên của Việt Nam là vườn quốc gia nào? | Xuân Thủy | Tràm Chim | Ba Bể | U Minh Thượng
+Cửa Ba Lạt là cửa biển chính của sông nào? | Sông Hồng | Sông Thái Bình | Sông Đáy | Sông Mã
+Vườn quốc gia Cúc Phương nổi tiếng với cây cổ thụ nghìn năm tuổi nào? | Cây chò | Cây đa | Cây gạo | Cây lim
+Bác sĩ người Pháp nào có công khám phá cao nguyên Lâm Viên? | Yersin | Pasteur | Calmette | Doumer
+Thời Pháp thuộc, Tourane là tên gọi của thành phố nào? | Đà Nẵng | Hải Phòng | Nha Trang | Quy Nhơn
+Cầu Long Biên thời Pháp thuộc mang tên gì? | Cầu Paul Doumer | Cầu Tràng Tiền | Cầu Hiền Lương | Cầu Mống
+Cầu Nhật Tân bắc qua sông Hồng có bao nhiêu trụ tháp? | 5 | 3 | 7 | 4
+Cầu Mỹ Thuận bắc qua sông nào? | Sông Tiền | Sông Hậu | Sông Vàm Cỏ | Sông Cổ Chiên
+Cảng Hoàng Diệu, cảng lâu đời ở Hải Phòng, nằm bên bờ sông nào? | Sông Cấm | Sông Lạch Tray | Sông Đuống | Sông Văn Úc
+Hệ đầm phá ven biển rộng lớn ở Huế có tên là gì? | Tam Giang - Cầu Hai | Đầm Thị Nại | Đầm Ô Loan | Đầm Trà Ổ
+Đầm Thị Nại nằm cạnh thành phố biển nào? | Quy Nhơn | Tuy Hòa | Nha Trang | Quảng Ngãi
+Năm 2023, di sản vịnh Hạ Long được mở rộng thêm quần đảo nào? | Cát Bà | Cô Tô | Long Châu | Bạch Long Vĩ
+Phong Nha - Kẻ Bàng được UNESCO công nhận lần đầu năm nào? | 2003 | 1999 | 2005 | 2010
+Năm 2000, vịnh Hạ Long được UNESCO công nhận lần hai về giá trị gì? | Địa chất, địa mạo | Đa dạng sinh học | Văn hóa | Khảo cổ học
+Động nào được mệnh danh là "Nam thiên đệ nhất động"? | Động Hương Tích | Bích Động | Động Tam Thanh | Động Thiên Cung
+Khu bảo tồn biển đầu tiên của Việt Nam là Hòn Mun ở vịnh nào? | Vịnh Nha Trang | Vịnh Hạ Long | Vịnh Vân Phong | Vịnh Cam Ranh
+Loài voọc đặc hữu nổi tiếng trên đảo Cát Bà là loài nào? | Voọc đầu vàng | Voọc mũi hếch | Voọc chà vá | Voọc mông trắng
+Con đèo nối Đà Lạt xuống Phan Rang, còn gọi là đèo Sông Pha, là đèo nào? | Đèo Ngoạn Mục | Đèo Prenn | Đèo Bảo Lộc | Đèo Mimosa
+Tháp Chàm Po Klong Garai nằm ở thành phố nào? | Phan Rang | Nha Trang | Quy Nhơn | Phan Thiết
+Cột cờ Lũng Cú được dựng trên đỉnh núi nào? | Núi Rồng | Núi Phượng | Núi Đôi | Núi Cấm
+Đỉnh núi cao nhất vùng núi Đông Bắc là đỉnh nào? | Tây Côn Lĩnh | Mẫu Sơn | Pu Ta Leng | Phia Oắc
+Dãy núi nào nằm giữa sông Hồng và sông Đà? | Hoàng Liên Sơn | Con Voi | Pu Sam Sao | Pu Đen Đinh
+Sông Thao là tên gọi một đoạn của sông nào? | Sông Hồng | Sông Đà | Sông Lô | Sông Chảy
+Hồ Tây ở Hà Nội ngày xưa còn có tên là gì? | Lãng Bạc | Lục Thủy | Tả Vọng | Thiền Quang
+Gió Lào khô nóng ở Bắc Trung Bộ hình thành khi gió vượt qua dãy núi nào? | Trường Sơn | Hoàng Liên Sơn | Bạch Mã | Tam Điệp
+Kênh Vĩnh Tế nối Châu Đốc với vùng đất nào? | Hà Tiên | Rạch Giá | Long Xuyên | Cà Mau
+Kênh Vĩnh Tế được đặt theo tên vợ của vị quan nào? | Thoại Ngọc Hầu | Nguyễn Hữu Cảnh | Lê Văn Duyệt | Nguyễn Tri Phương
+Sông Hương đổ ra biển qua cửa biển nào? | Cửa Thuận An | Cửa Tùng | Cửa Việt | Cửa Đại
+Sông Hàm Luông là một nhánh của sông nào? | Sông Tiền | Sông Hậu | Sông Vàm Cỏ | Sông Sài Gòn
+Cửa nào sau đây là cửa biển của sông Hậu? | Cửa Định An | Cửa Tiểu | Cửa Đại | Cửa Hàm Luông
+Sông Đồng Nai bắt nguồn từ cao nguyên nào? | Lâm Viên | Di Linh | Mơ Nông | Pleiku
+Sông Sêrêpôk từ Tây Nguyên chảy sang nước nào? | Cam-pu-chia | Lào | Thái Lan | Trung Quốc
+Sông Đà bắt nguồn từ nước nào? | Trung Quốc | Lào | Mi-an-ma | Thái Lan
+Sông Mã chảy qua lãnh thổ nước nào rồi mới về lại Việt Nam? | Lào | Trung Quốc | Cam-pu-chia | Thái Lan
+Khu bảo tồn Vân Long nổi tiếng với loài linh trưởng nào? | Voọc mông trắng | Voọc đầu vàng | Voọc chà vá | Voọc mũi hếch
+Voọc mũi hếch là loài đặc hữu sống ở vùng núi nào nước ta? | Đông Bắc | Tây Nguyên | Nam Bộ | Nam Trung Bộ
+Vườn quốc gia Núi Chúa nổi tiếng với kiểu rừng gì? | Rừng khô hạn | Rừng ngập mặn | Rừng tràm | Rừng thông
+Hang Sơn Đoòng được một người dân địa phương tìm ra cửa hang. Người đó là ai? | Hồ Khanh | Hồ Xuân | Hồ Quang | Hồ Nam
+Động nào ở Phong Nha - Kẻ Bàng được mệnh danh "hoàng cung trong lòng đất"? | Động Thiên Đường | Động Phong Nha | Hang Én | Động Tiên Sơn
+Hang nào ở vịnh Hạ Long gắn với truyền thuyết cất giấu cọc gỗ đánh giặc? | Hang Đầu Gỗ | Hang Sửng Sốt | Hang Luồn | Động Thiên Cung
+Tên "Hạ Long" có nghĩa là gì? | Rồng đáp xuống | Rồng bay lên | Rồng vẫy đuôi | Rồng ngủ say
+Bán đảo Phương Mai che chắn cho thành phố biển nào? | Quy Nhơn | Nha Trang | Tuy Hòa | Phan Thiết
+Hải đăng Kê Gà nổi tiếng nằm gần thành phố biển nào? | Phan Thiết | Vũng Tàu | Phan Rang | Nha Trang
+Thành phố Buôn Ma Thuột nằm trên cao nguyên nào? | Đắk Lắk | Lâm Viên | Di Linh | Kon Plông
+Gió mùa Đông Bắc hoạt động ở miền Bắc khoảng từ tháng 11 đến tháng mấy? | Tháng 4 | Tháng 1 | Tháng 7 | Tháng 9
+Đợt "rét nàng Bân" thường xảy ra vào tháng mấy âm lịch? | Tháng Ba | Tháng Chạp | Tháng Năm | Tháng Tám
+Lũ tiểu mãn ở miền Trung thường xảy ra vào khoảng tháng nào? | Tháng 5, tháng 6 | Tháng 10, tháng 11 | Tháng 1, tháng 2 | Tháng 8, tháng 9
+Loại đất chiếm diện tích lớn nhất ở đồng bằng sông Cửu Long là đất gì? | Đất phèn | Đất ba dan | Đất feralit | Đất xám
+Cảng Cái Mép nằm bên bờ sông nào? | Sông Thị Vải | Sông Sài Gòn | Sông Đồng Nai | Sông Dinh
+Cảng Tiên Sa nằm ở thành phố nào? | Đà Nẵng | Quy Nhơn | Hải Phòng | Nha Trang
+Cảng nước sâu Chân Mây nằm gần thị trấn biển nào? | Lăng Cô | Thuận An | Cửa Lò | Sầm Sơn
+Cửa khẩu Lào Cai đối diện với thị trấn nào của Trung Quốc? | Hà Khẩu | Bằng Tường | Đông Hưng | Mông Tự
+Cầu Hàm Rồng bắc qua sông nào? | Sông Mã | Sông Chu | Sông Lam | Sông Yên
+Con đường ngăn cách hồ Tây với hồ Trúc Bạch là đường nào? | Đường Thanh Niên | Đường Hoàng Hoa Thám | Đường Âu Cơ | Đường Lạc Long Quân
+Sông nào chảy qua trung tâm Cao Bằng? | Sông Bằng | Sông Gâm | Sông Kỳ Cùng | Sông Quây Sơn
+Dòng sông nào chảy qua trung tâm Tuyên Quang? | Sông Lô | Sông Gâm | Sông Chảy | Sông Đà
+Dòng sông nào chảy qua trung tâm Thái Nguyên? | Sông Cầu | Sông Công | Sông Thương | Sông Lục Nam
+Việt Nam nằm ở múi giờ thứ mấy? | Múi giờ thứ 7 | Múi giờ thứ 8 | Múi giờ thứ 6 | Múi giờ thứ 9
+Than ở vùng mỏ Quảng Ninh chủ yếu là loại than gì? | Than antraxit | Than nâu | Than bùn | Than mỡ
+Than bùn có trữ lượng lớn ở vùng rừng nào? | U Minh | Cát Tiên | Cúc Phương | Bạch Mã
+Thác Dambri nằm gần thành phố nào? | Bảo Lộc | Đà Lạt | Buôn Ma Thuột | Pleiku
+Thác Bạc nổi tiếng gần Sa Pa nằm bên con đèo nào? | Đèo Ô Quy Hồ | Đèo Khau Phạ | Đèo Pha Đin | Đèo Mã Pí Lèng
+Thủy điện Yaly được xây trên sông nào? | Sông Sê San | Sông Sêrêpôk | Sông Ba | Sông Đồng Nai
+Hồ thủy điện Thác Mơ được xây trên sông nào? | Sông Bé | Sông Đồng Nai | Sông Sài Gòn | Sông La Ngà
+Sông nào chảy qua hồ Ba Bể và tạo nên động Puông? | Sông Năng | Sông Gâm | Sông Cầu | Sông Bằng
+Thương cảng cổ Vân Đồn được lập dưới triều đại nào? | Nhà Lý | Nhà Trần | Nhà Lê | Nhà Nguyễn
+Thời xưa, thương nhân phương Tây gọi phố cổ Hội An là gì? | Faifo | Tourane | Kẻ Chợ | Bassac
+"Hà Tiên thập cảnh" là chùm thơ vịnh cảnh của ai? | Mạc Thiên Tích | Mạc Cửu | Nguyễn Cư Trinh | Trịnh Hoài Đức
+Cây hồi, loại gia vị nổi tiếng, được trồng nhiều ở vùng nào? | Đông Bắc | Tây Nguyên | Nam Bộ | Nam Trung Bộ
+Núi Bà Đen nổi tiếng với loại trái cây đặc sản nào? | Mãng cầu | Sầu riêng | Măng cụt | Chôm chôm
+Loại bưởi nổi tiếng gắn với vùng Huế là bưởi gì? | Thanh trà | Năm Roi | Da xanh | Phúc Trạch
+Đèo Lò Xo nổi tiếng nằm trên tuyến đường nào? | Đường Hồ Chí Minh | Quốc lộ 1 | Quốc lộ 6 | Quốc lộ 4D
+Đèo Cù Mông nằm trên quốc lộ 1 giữa Quy Nhơn và thành phố nào? | Tuy Hòa | Nha Trang | Quảng Ngãi | Pleiku
+Đèo Mang Yang nằm trên con đường nối Pleiku với thành phố biển nào? | Quy Nhơn | Đà Nẵng | Tuy Hòa | Quảng Ngãi
+Đèo Ba Dội còn có tên gọi khác là đèo gì? | Đèo Tam Điệp | Đèo Ngang | Đèo Cả | Đèo Hải Vân
+Đồi cát trắng nổi tiếng bên hồ nước ngọt gần Mũi Né có tên là gì? | Bàu Trắng | Nam Cương | Quang Phú | Phương Mai
+Quần đảo An Thới nằm ở phía nào của đảo Phú Quốc? | Phía nam | Phía bắc | Phía đông | Phía tây
+Côn Đảo xưa còn có tên gọi là gì? | Côn Lôn | Cù Lao Chàm | Hòn Khoai | Phú Quý
+Cù Lao Chàm nằm ngoài khơi cửa biển nào? | Cửa Đại | Cửa Việt | Cửa Tùng | Cửa Thuận An
+Đảo Lý Sơn xưa còn có tên gọi là gì? | Cù Lao Ré | Cù Lao Xanh | Cù Lao Câu | Cù Lao Dung
+Đảo nào gắn với lễ Khao lề thế lính Hoàng Sa? | Lý Sơn | Cô Tô | Cát Bà | Phú Quý
+Sông Thái Bình được hợp thành từ sông Cầu, sông Thương và sông nào? | Sông Lục Nam | Sông Đáy | Sông Kinh Thầy | Sông Công
+Theo các nhà địa chất, hồ Tây vốn là một khúc cũ của sông nào? | Sông Hồng | Sông Tô Lịch | Sông Đuống | Sông Nhuệ
+Biển Hồ (T'nưng) ở Pleiku được hình thành từ đâu? | Miệng núi lửa | Đập thủy điện | Sông cổ | Đầm phá
+Sông Chu là phụ lưu của sông nào? | Sông Mã | Sông Cả | Sông Hồng | Sông Gianh
+Sông Gâm là phụ lưu của sông nào? | Sông Lô | Sông Đà | Sông Chảy | Sông Cầu
+Vịnh nào ở Nam Trung Bộ là bến đón tàu không số thời chống Mỹ? | Vũng Rô | Cam Ranh | Xuân Đài | Vân Phong
+Cánh đồng Mường Lò rộng lớn ở Tây Bắc gắn với vùng đất nào? | Nghĩa Lộ | Mường Lay | Mộc Châu | Tuần Giáo
+Dòng sông nào chảy qua lòng chảo Điện Biên? | Sông Nậm Rốm | Sông Nậm Mu | Sông Đà | Sông Mã
+Bãi đá cổ có hình khắc nổi tiếng ở Sa Pa nằm trong thung lũng nào? | Mường Hoa | Mường Thanh | Mai Châu | Bắc Sơn

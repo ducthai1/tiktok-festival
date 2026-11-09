@@ -1,0 +1,317 @@
+# Đố mẹo: lừa logic, tình huống, bẫy thời gian, quan hệ gia đình, xếp hàng, toán mẹo
+[meo]
+# --- Lừa logic số lượng, toán mẹo ---
+Có 3 quả táo, bạn lấy đi 2 quả. Vậy bạn đang có mấy quả táo? | 2 quả | 1 quả | 3 quả | 5 quả
+Đàn cừu có 17 con, chết hết chỉ trừ 9 con. Đàn còn lại mấy con? | 9 con | 8 con | 17 con | 0 con
+Mua 2 chục trứng, vỡ hết chỉ trừ 5 quả. Còn mấy quả nguyên? | 5 quả | 15 quả | 20 quả | 25 quả
+Cưa khúc gỗ thành 5 đoạn, mỗi nhát cưa mất 1 phút. Cưa xong mất mấy phút? | 4 phút | 5 phút | 6 phút | 10 phút
+Trồng 10 cây thẳng hàng, hai cây liền nhau cách 2 mét. Cây đầu cách cây cuối bao xa? | 18 mét | 20 mét | 22 mét | 10 mét
+Mỗi tầng nhà cao 3 mét. Từ sàn tầng 1 lên sàn tầng 3 cao bao nhiêu mét? | 6 mét | 9 mét | 3 mét | 12 mét
+Leo từ tầng 1 lên tầng 4 mất 30 giây. Cùng tốc độ, lên tới tầng 7 mất bao lâu? | 60 giây | 70 giây | 50 giây | 45 giây
+Giếng sâu 10 mét, ốc sên ngày leo 3 mét, đêm tụt 2 mét. Mấy ngày ốc lên tới miệng giếng? | 8 ngày | 10 ngày | 7 ngày | 9 ngày
+Bèo mỗi ngày tăng gấp đôi, 30 ngày phủ kín ao. Ngày thứ mấy bèo phủ được nửa ao? | Ngày thứ 29 | Ngày thứ 15 | Ngày thứ 20 | Ngày thứ 28
+Bác sĩ đưa 3 viên thuốc, dặn cứ 30 phút uống 1 viên. Uống hết 3 viên mất bao lâu? | 60 phút | 90 phút | 30 phút | 120 phút
+5 cái máy làm 5 sản phẩm hết 5 phút. 100 cái máy làm 100 sản phẩm mất bao lâu? | 5 phút | 100 phút | 20 phút | 1 phút
+Phơi 1 cái áo ngoài nắng mất 2 giờ thì khô. Phơi 5 cái áo cùng lúc mất bao lâu? | 2 giờ | 10 giờ | 5 giờ | 1 giờ
+Nhân tất cả các số từ 0 đến 9 với nhau, kết quả bằng bao nhiêu? | 0 | 362880 | 45 | 9
+Viết các số từ 1 đến 100, phải viết bao nhiêu chữ số 9? | 20 | 10 | 11 | 19
+Viên gạch nặng 1 ký cộng thêm nửa viên gạch. Cả viên gạch nặng bao nhiêu? | 2 ký | 1 ký rưỡi | 1 ký | 3 ký
+Gậy và bóng giá 110 nghìn, gậy đắt hơn bóng 100 nghìn. Quả bóng giá bao nhiêu? | 5 nghìn | 10 nghìn | 15 nghìn | 1 nghìn
+Một ký sắt và một ký bông, cái nào nặng hơn? | Nặng bằng nhau | Sắt nặng hơn | Bông nặng hơn | Không so được
+5 người gặp nhau, mỗi người bắt tay mỗi người khác đúng 1 lần. Có mấy cái bắt tay? | 10 | 25 | 20 | 5
+Đồng hồ điểm 6 tiếng chuông mất 5 giây. Cùng nhịp đó, điểm 12 tiếng mất mấy giây? | 11 giây | 10 giây | 12 giây | 13 giây
+Thuyền neo, thang dây có 5 bậc trên mặt nước. Nước dâng 1 mét thì còn mấy bậc trên mặt nước? | 5 bậc | 0 bậc | 2 bậc | 3 bậc
+Trồng cây quanh hồ tròn dài 100 mét, cứ 10 mét một cây. Cần tất cả mấy cây? | 10 cây | 11 cây | 9 cây | 12 cây
+Cầu dài 100 mét, cứ 10 mét có 1 cột đèn, hai đầu cầu đều có. Cầu có mấy cột đèn? | 11 cột | 10 cột | 9 cột | 12 cột
+Mỗi bàn tay có 5 ngón. 10 bàn tay có tất cả bao nhiêu ngón? | 50 ngón | 100 ngón | 20 ngón | 10 ngón
+Gấp đôi một tờ giấy 3 lần liên tiếp thì được mấy lớp giấy? | 8 lớp | 6 lớp | 3 lớp | 9 lớp
+Giỏ có 5 quả cam, chia 5 bạn mỗi bạn 1 quả mà giỏ vẫn còn 1 quả. Làm thế nào? | Bạn cuối lấy cả giỏ | Một bạn nhịn | Bổ đôi một quả | Mua thêm một quả
+Nửa tá cộng với nửa chục là bao nhiêu? | 11 | 12 | 10 | 6
+Có 9 viên bi giống hệt, 1 viên nặng hơn. Dùng cân đĩa, ít nhất mấy lần cân chắc tìm ra? | 2 lần | 3 lần | 4 lần | 1 lần
+Ngăn kéo tối có tất đen và tất trắng. Lấy ít nhất mấy chiếc thì chắc có 2 chiếc cùng màu? | 3 chiếc | 2 chiếc | 4 chiếc | 5 chiếc
+Hộp có 5 bi đỏ, 5 bi xanh. Nhắm mắt lấy ít nhất mấy viên thì chắc có 2 viên đỏ? | 7 viên | 2 viên | 3 viên | 6 viên
+Hộp có 5 đôi găng tay giống hệt bị trộn lẫn. Lấy ít nhất mấy chiếc thì chắc đeo được 1 đôi? | 6 chiếc | 2 chiếc | 3 chiếc | 5 chiếc
+Nhóm có 13 người. Chắc chắn có ít nhất 2 người sinh cùng gì? | Cùng tháng | Cùng ngày | Cùng tuần | Cùng giờ
+Hai người chơi cờ, mỗi người thắng 3 ván, không ván nào hòa. Vì sao? | Không đấu với nhau | Chơi đúng 6 ván | Có người ăn gian | Trọng tài tính nhầm
+Hai tờ tiền cộng lại 15 nghìn, một tờ không phải tờ 5 nghìn. Đó là hai tờ gì? | 10 nghìn và 5 nghìn | 12 nghìn và 3 nghìn | 14 nghìn và 1 nghìn | 7 nghìn và 8 nghìn
+Viết số 86 lên giấy rồi xoay ngược đầu tờ giấy, bạn đọc được số mấy? | 98 | 89 | 68 | 86
+Lấy 100 chia cho 0,5 thì được bao nhiêu? | 200 | 50 | 100 | 150
+Sợi dây cháy hết trong 60 phút. Châm lửa cả hai đầu cùng lúc thì bao lâu cháy hết? | 30 phút | 60 phút | 120 phút | 15 phút
+Một người đi bộ 1 cây số hết 10 phút. Hai người đi cùng nhau quãng đó hết bao lâu? | 10 phút | 5 phút | 20 phút | 15 phút
+Một ca sĩ hát xong bài hát mất 4 phút. Dàn hợp xướng 40 người hát bài đó mất bao lâu? | 4 phút | 160 phút | 10 phút | 1 phút
+Một vòi chảy đầy bể mất 2 giờ. Mở hai vòi y hệt cùng lúc thì bao lâu đầy bể? | 1 giờ | 4 giờ | 2 giờ | 3 giờ
+Luộc 1 quả trứng mất 10 phút. Luộc 5 quả trứng cùng một nồi mất bao lâu? | 10 phút | 50 phút | 2 phút | 30 phút
+3 con mèo bắt 3 con chuột hết 3 phút. 1 con mèo bắt 1 con chuột mất bao lâu? | 3 phút | 1 phút | 9 phút | 6 phút
+Một cái hố rộng đúng 1 mét khối thì bên trong có bao nhiêu đất? | Không có chút đất nào | 1 mét khối | Nửa mét khối | 2 mét khối
+Bể có 10 con cá, 3 con chết nổi lên mặt nước. Trong bể còn bao nhiêu con cá? | 10 con | 7 con | 3 con | 13 con
+Hai chị em có số kẹo bằng nhau. Chị cho em 2 cái. Em có nhiều hơn chị mấy cái? | 4 cái | 2 cái | 1 cái | 3 cái
+Đổi 1 tờ 100 nghìn lấy 10 tờ 10 nghìn. Bạn giàu thêm bao nhiêu? | Không thêm đồng nào | 90 nghìn | 10 nghìn | 900 nghìn
+Con gà nặng 2 ký khi đứng hai chân. Khi đứng một chân, nó nặng bao nhiêu? | 2 ký | 1 ký | 4 ký | 3 ký
+Nhỏ 1 giọt nước vào 1 giọt nước khác, được mấy giọt nước? | 1 giọt | 2 giọt | 3 giọt | Nửa giọt
+Tuổi bố và con cộng lại là 36, bố hơn con 30 tuổi. Con mấy tuổi? | 3 tuổi | 6 tuổi | 4 tuổi | 5 tuổi
+Viết các số từ 1 đến 20 thì phải viết tất cả bao nhiêu chữ số? | 31 | 20 | 29 | 40
+Sách đánh số từ trang 1 đến trang 100, in hai mặt. Sách có bao nhiêu tờ giấy? | 50 tờ | 100 tờ | 25 tờ | 200 tờ
+Sách in hai mặt, xé tờ có trang 7 thì trang nào mất theo? | Trang 8 | Trang 6 | Trang 9 | Trang 14
+Số lớn nhất có ba chữ số khác nhau là số nào? | 987 | 999 | 789 | 998
+Số nhỏ nhất có ba chữ số khác nhau là số nào? | 102 | 100 | 123 | 101
+Một hình vuông chia thành 4 ô vuông nhỏ bằng nhau. Đếm được tất cả mấy hình vuông? | 5 | 4 | 6 | 8
+Từ một đỉnh tam giác kẻ 1 đoạn thẳng xuống cạnh đối diện. Đếm được mấy tam giác? | 3 | 2 | 4 | 1
+Hộp hình lập phương không có nắp thì có mấy mặt? | 5 mặt | 6 mặt | 4 mặt | 7 mặt
+Trên con xúc xắc thường, mặt đối diện mặt 6 chấm có mấy chấm? | 1 chấm | 5 chấm | 3 chấm | 2 chấm
+Một nửa của một nửa của 100 là bao nhiêu? | 25 | 50 | 75 | 10
+Bốn đội bóng, mỗi đội đá với mỗi đội khác đúng 1 trận. Có tất cả mấy trận? | 6 trận | 4 trận | 8 trận | 12 trận
+4 người bạn, mỗi người gửi 1 tấm thiệp cho từng người còn lại. Có tất cả mấy tấm thiệp? | 12 tấm | 6 tấm | 8 tấm | 16 tấm
+Giải đấu loại trực tiếp có 16 đội. Phải đá bao nhiêu trận mới có nhà vô địch? | 15 trận | 16 trận | 8 trận | 31 trận
+Bạn đọc sách từ trang 5 đến hết trang 10. Bạn đã đọc mấy trang? | 6 trang | 5 trang | 4 trang | 10 trang
+Hai số tự nhiên liền nhau cộng lại bằng 21. Số lớn hơn là số mấy? | 11 | 10 | 12 | 21
+Dãy số 2, 4, 8, 16... Số tiếp theo là số mấy? | 32 | 18 | 24 | 20
+Dãy số 1, 1, 2, 3, 5, 8... Số tiếp theo là số mấy? | 13 | 11 | 10 | 16
+Dãy số 1, 4, 9, 16... Số tiếp theo là số mấy? | 25 | 20 | 23 | 32
+Dãy số 1, 3, 6, 10... Số tiếp theo là số mấy? | 15 | 14 | 13 | 16
+Dãy số 1, 2, 4, 7, 11... Số tiếp theo là số mấy? | 16 | 15 | 14 | 22
+Dãy số 2, 3, 5, 7, 11... Số tiếp theo là số mấy? | 13 | 12 | 15 | 17
+Dãy số 1, 8, 27... Số tiếp theo là số mấy? | 64 | 36 | 54 | 81
+Dãy số 5, 10, 20, 40... Số tiếp theo là số mấy? | 80 | 50 | 60 | 45
+Ba hộp lớn, mỗi hộp có 3 hộp nhỏ, mỗi hộp nhỏ có 3 viên kẹo. Có tất cả mấy viên kẹo? | 27 viên | 9 viên | 39 viên | 12 viên
+Một tá có 12 cái. Hai tá trừ đi 1 chục thì còn mấy cái? | 14 cái | 12 cái | 10 cái | 22 cái
+Lấy 30 chia đôi rồi cộng thêm 10 thì được bao nhiêu? | 25 | 70 | 20 | 40
+Số nào khác 0 mà cộng với chính nó hay nhân với chính nó đều ra cùng kết quả? | 2 | 1 | 4 | 3
+Số nào chia cho bất kỳ số nào khác 0 cũng ra kết quả bằng 0? | 0 | 1 | 10 | 100
+Bạn có 3 cái kẹo, mẹ cho thêm gấp đôi số kẹo bạn đang có. Giờ bạn có mấy cái? | 9 cái | 6 cái | 5 cái | 12 cái
+Có 3 con gà và 2 con chó. Có tất cả bao nhiêu cái chân? | 14 chân | 10 chân | 20 chân | 12 chân
+Bắt đầu từ số 1, gấp đôi liên tục. Lần gấp thứ mấy thì vượt quá 1000? | Lần thứ 10 | Lần thứ 100 | Lần thứ 500 | Lần thứ 20
+Tôi nghĩ một số, nhân 2 rồi cộng 4 thì được 10. Số đó là số mấy? | 3 | 7 | 5 | 6
+Một nghìn nghìn là bao nhiêu? | Một triệu | Mười nghìn | Một trăm nghìn | Một tỷ
+Một trăm chục là bao nhiêu? | Một nghìn | Một trăm | Một trăm mười | Mười nghìn
+Viết số một tỷ bằng chữ số thì có mấy chữ số 0? | 9 chữ số 0 | 6 chữ số 0 | 12 chữ số 0 | 10 chữ số 0
+Nửa giờ có bao nhiêu giây? | 1800 giây | 30 giây | 3000 giây | 300 giây
+Một phần tư giờ là bao nhiêu phút? | 15 phút | 25 phút | 4 phút | 40 phút
+Hai thập kỷ rưỡi là bao nhiêu năm? | 25 năm | 250 năm | 20 năm | 15 năm
+Một sợi dây dài 10 mét, gập đôi lại thì dài bao nhiêu? | 5 mét | 20 mét | 10 mét | 2 mét
+Cắt tờ giấy hình chữ nhật theo một đường chéo thì được hai hình gì? | Hai tam giác | Hai hình vuông | Hai hình thang | Hai hình chữ nhật
+Ô tô 4 bánh chạy được 100 cây số. Mỗi bánh xe đã lăn được bao xa? | 100 cây số | 25 cây số | 400 cây số | 50 cây số
+1000 cộng 40, cộng 1000, cộng 30, cộng 1000, cộng 20, cộng 1000, cộng 10. Được bao nhiêu? | 4100 | 5000 | 4000 | 4010
+Món hàng giảm giá một nửa, rồi lại giảm tiếp một nửa. Giờ món hàng giá bao nhiêu? | Một phần tư giá gốc | Miễn phí | Nửa giá gốc | Ba phần tư giá gốc
+Món hàng tăng giá 10 phần trăm rồi giảm 10 phần trăm. So với lúc đầu thì sao? | Rẻ hơn một chút | Bằng giá cũ | Đắt hơn một chút | Rẻ hơn 10 phần trăm
+Cửa hàng bán mua 2 tặng 1. Muốn có 6 cái bánh thì phải mua mấy cái? | 4 cái | 3 cái | 5 cái | 6 cái
+Cứ 3 vỏ chai đổi được 1 chai mới. Có 9 vỏ chai thì uống thêm được nhiều nhất mấy chai? | 4 chai | 3 chai | 5 chai | 9 chai
+An nợ Bình 10 nghìn, Bình nợ Cúc 10 nghìn, Cúc nợ An 10 nghìn. Bù trừ xong thì sao? | Không ai nợ ai | An nợ Cúc | Cúc nợ Bình | Bình nợ An
+Đưa 50 nghìn mua món 35 nghìn, người bán thối nhầm 25 nghìn. Bạn được thừa bao nhiêu? | 10 nghìn | 25 nghìn | 15 nghìn | 35 nghìn
+Lớp 20 bạn, 12 bạn thích toán, 10 bạn thích văn, ai cũng thích ít nhất 1 môn. Mấy bạn thích cả hai? | 2 bạn | 0 bạn | 22 bạn | 8 bạn
+Có 3 con mèo mẹ, mỗi con có 3 con mèo con. Có tất cả mấy con mèo? | 12 con | 9 con | 6 con | 3 con
+Tổng tuổi tôi và em gái là 10. 5 năm nữa tổng tuổi hai chị em là bao nhiêu? | 20 | 15 | 25 | 10
+Nam có 20 viên bi, cho Bình một nửa. Bình trả lại Nam một nửa số vừa nhận. Nam có mấy viên? | 15 viên | 10 viên | 5 viên | 20 viên
+Tòa nhà mỗi tầng có 20 bậc thang. Từ tầng 10 đi bộ xuống tầng 1 phải đi bao nhiêu bậc? | 180 bậc | 200 bậc | 220 bậc | 160 bậc
+Bạn bốc số thứ tự 15, quầy đang gọi số 10. Phía trước bạn còn mấy người chờ? | 4 người | 5 người | 6 người | 3 người
+Bàn tay xòe 5 ngón thì có mấy khe hở giữa các ngón? | 4 khe | 5 khe | 6 khe | 10 khe
+Đoàn tàu có 8 toa nối liền nhau. Có mấy chỗ nối giữa các toa? | 7 chỗ | 8 chỗ | 9 chỗ | 6 chỗ
+Mỗi người có 2 bố mẹ và 4 ông bà. Mỗi người có mấy cụ, tức bố mẹ của ông bà? | 8 cụ | 6 cụ | 4 cụ | 16 cụ
+# --- Bẫy thời gian, lịch, đồng hồ ---
+Một năm có bao nhiêu tháng có ngày 28? | 12 tháng | 1 tháng | 2 tháng | 4 tháng
+Hôm qua của ngày mai là ngày nào? | Hôm nay | Hôm qua | Ngày mai | Ngày kia
+Ngày kia của hôm qua là ngày nào? | Ngày mai | Hôm nay | Ngày kia | Hôm qua
+Nếu hôm kia là Chủ nhật thì ngày mai là thứ mấy? | Thứ tư | Thứ ba | Thứ hai | Thứ năm
+Nếu 3 ngày trước là thứ sáu thì 3 ngày nữa là thứ mấy? | Thứ năm | Thứ tư | Thứ hai | Thứ sáu
+Nếu hôm nay là thứ năm thì hôm kia của ngày kia là thứ mấy? | Thứ năm | Thứ bảy | Thứ ba | Chủ nhật
+Hôm nay là thứ hai. Đúng 2 tuần nữa là thứ mấy? | Thứ hai | Thứ tư | Thứ ba | Chủ nhật
+Hôm nay là thứ tư. 15 ngày nữa là thứ mấy? | Thứ năm | Thứ tư | Thứ sáu | Thứ hai
+Chủ nhật tuần này là ngày 10. Chủ nhật tuần sau là ngày mấy? | Ngày 17 | Ngày 11 | Ngày 14 | Ngày 20
+Ngày 1 tháng 1 là thứ hai thì ngày 1 tháng 2 năm đó là thứ mấy? | Thứ năm | Thứ hai | Thứ tư | Thứ sáu
+Hôm nay không phải thứ bảy, cũng không phải Chủ nhật, mà ngày mai là cuối tuần. Hôm nay thứ mấy? | Thứ sáu | Thứ năm | Thứ hai | Thứ tư
+Hôm nay là ngày 31. Ngày mai chắc chắn là ngày mấy? | Ngày 1 | Ngày 32 | Ngày 30 | Ngày 2
+Lúc 3 giờ 15 phút, kim giờ đang chỉ ở đâu? | Giữa số 3 và số 4 | Đúng số 3 | Đúng số 4 | Giữa số 2 và số 3
+Trong một ngày đêm, kim giờ quay được mấy vòng? | 2 vòng | 1 vòng | 24 vòng | 12 vòng
+Từ 1 giờ đến 2 giờ, kim giờ quay được bao nhiêu độ? | 30 độ | 360 độ | 60 độ | 15 độ
+Kim đồng hồ quay từ số 12 đến số 3 thì tạo được góc bao nhiêu độ? | 90 độ | 30 độ | 45 độ | 180 độ
+Lúc đúng 6 giờ, kim giờ và kim phút tạo thành góc gì? | Góc bẹt | Góc vuông | Góc nhọn | Góc tù
+Trên mặt đồng hồ, số nào nằm đối diện với số 2? | Số 8 | Số 10 | Số 6 | Số 4
+Người sinh ngày 29 tháng 2 thường mấy năm mới có đúng ngày sinh nhật? | 4 năm | 1 năm | 2 năm | 10 năm
+Một năm thường có 365 ngày thì có nhiều nhất bao nhiêu ngày Chủ nhật? | 53 ngày | 52 ngày | 54 ngày | 50 ngày
+Một tháng có nhiều nhất bao nhiêu ngày thứ hai? | 5 ngày | 4 ngày | 6 ngày | 3 ngày
+Tháng 2 của năm không nhuận có đúng bao nhiêu tuần? | 4 tuần | 3 tuần | 5 tuần | 4 tuần rưỡi
+Đồng hồ kim đã chết máy, mỗi ngày nó chỉ đúng giờ mấy lần? | 2 lần | 0 lần | 1 lần | 24 lần
+Đồng hồ chạy nhanh 5 phút đang chỉ 9 giờ. Giờ đúng là mấy giờ? | 8 giờ 55 | 9 giờ 5 phút | 9 giờ | 8 giờ 50
+12 giờ trưa nay, cộng thêm 13 tiếng nữa là mấy giờ? | 1 giờ sáng | 1 giờ chiều | 11 giờ đêm | 12 giờ đêm
+Đi ngủ lúc 10 giờ tối, thức dậy lúc 6 giờ sáng. Bạn ngủ được mấy tiếng? | 8 tiếng | 4 tiếng | 16 tiếng | 6 tiếng
+Xe khởi hành lúc 23 giờ, chạy đúng 3 tiếng. Xe tới nơi lúc mấy giờ? | 2 giờ sáng | 1 giờ sáng | 3 giờ sáng | 20 giờ
+Hẹn nhau lúc 8 giờ, bạn đến sớm 10 phút. Bạn đến lúc mấy giờ? | 7 giờ 50 | 8 giờ 10 | 8 giờ | 7 giờ 40
+Cuộc họp bắt đầu lúc 9 giờ, kéo dài 90 phút. Mấy giờ thì họp xong? | 10 giờ 30 | 10 giờ | 10 giờ 50 | 11 giờ 30
+Từ 7 giờ sáng đến 7 giờ tối là bao nhiêu tiếng? | 12 tiếng | 24 tiếng | 14 tiếng | 10 tiếng
+Thế kỷ 21 bắt đầu từ năm nào? | Năm 2001 | Năm 2000 | Năm 2100 | Năm 2010
+Năm 1999 thuộc thế kỷ thứ mấy? | Thế kỷ 20 | Thế kỷ 19 | Thế kỷ 21 | Thế kỷ 18
+Một thế kỷ có bao nhiêu thập kỷ? | 10 thập kỷ | 100 thập kỷ | 12 thập kỷ | 1000 thập kỷ
+Bây giờ là 12 giờ đêm. Đúng 72 giờ sau, trời có nắng không? | Không, vì là ban đêm | Có nắng to | Có nắng nhẹ | Tùy thời tiết
+Nhìn đồng hồ treo tường qua gương thấy kim chỉ đúng 3 giờ. Giờ thật là mấy giờ? | 9 giờ | 3 giờ | 6 giờ | 12 giờ
+Đi du lịch từ ngày 1 đến hết ngày 10 trong tháng. Chuyến đi kéo dài mấy ngày? | 10 ngày | 9 ngày | 11 ngày | 8 ngày
+Ngày 30 tháng 2 rơi vào thứ mấy trong tuần? | Không có ngày đó | Thứ hai | Chủ nhật | Thứ bảy
+Trong một năm, hai tháng liền nhau nào đều có 31 ngày? | Tháng 7 và tháng 8 | Tháng 6 và tháng 7 | Tháng 3 và tháng 4 | Tháng 10 và tháng 11
+Bạn sinh tháng 10 năm 2010. Đến tháng 5 năm 2025, bạn bao nhiêu tuổi tròn? | 14 tuổi | 15 tuổi | 16 tuổi | 13 tuổi
+Hai năm trước tôi 10 tuổi. Hai năm nữa tôi bao nhiêu tuổi? | 14 tuổi | 12 tuổi | 10 tuổi | 16 tuổi
+Ăn trưa lúc 11 giờ 45, ăn hết 30 phút. Mấy giờ thì ăn xong? | 12 giờ 15 | 11 giờ 15 | 12 giờ 30 | 12 giờ
+# --- Quan hệ gia đình, tuổi tác ---
+Bố của An có ba người con: Tý, Sửu và ai? | An | Dần | Mão | Thìn
+Người ấy là con của bố mẹ tôi nhưng không phải anh chị em của tôi. Đó là ai? | Chính tôi | Em họ tôi | Con nuôi | Anh rể tôi
+Nhà có 4 chị em gái, cô nào cũng có 1 anh trai. Nhà đó có mấy người con? | 5 người | 8 người | 4 người | 9 người
+Khi tôi 6 tuổi, em gái bằng nửa tuổi tôi. Giờ tôi 70 tuổi, em gái tôi bao nhiêu tuổi? | 67 tuổi | 35 tuổi | 64 tuổi | 73 tuổi
+Hai người bố và hai người con đi câu, mỗi người được 1 con, cả nhóm được 3 con. Nhóm có mấy người? | 3 người | 4 người | 2 người | 5 người
+Con của chú tôi gọi bố tôi là gì? | Bác | Chú | Cậu | Dượng
+Tôi là đàn ông. Ông nội của con trai tôi là ai? | Bố tôi | Chính tôi | Ông nội tôi | Anh trai tôi
+Anh Nam không có anh em. Chỉ vào ảnh, anh nói: Bố người này là con trai bố tôi. Ảnh là ai? | Con trai anh Nam | Chính anh Nam | Bố anh Nam | Cháu anh Nam
+Con gái của bà ngoại tôi, mà không phải chị em của mẹ tôi. Đó là ai? | Mẹ tôi | Dì tôi | Bà nội tôi | Chị gái tôi
+Ông Hai là bố vợ của anh Ba. Vợ anh Ba là gì của ông Hai? | Con gái | Con dâu | Cháu gái | Em gái
+Nhà có ông nội, bố và hai anh em trai. Trong nhà có mấy người đang làm bố? | 2 người | 1 người | 3 người | 4 người
+Chồng của chị gái mình thì mình gọi là gì? | Anh rể | Em rể | Anh họ | Dượng
+Vợ của em trai mình thì mình gọi là gì? | Em dâu | Chị dâu | Em rể | Em họ
+Cháu nội là con của ai? | Con trai mình | Con gái mình | Em trai mình | Anh trai mình
+Tôi là cháu nội của ông Tư. Bố tôi là gì của ông Tư? | Con trai | Con rể | Em trai | Cháu trai
+Tôi là cháu ngoại của bà Năm. Mẹ tôi là gì của bà Năm? | Con gái | Con dâu | Em gái | Cháu gái
+Hai anh em ruột cùng mẹ, sinh cùng ngày cùng năm nhưng không phải sinh đôi. Vì sao? | Họ là sinh ba | Một người là con nuôi | Khác bố | Ghi nhầm giấy tờ
+Bác sĩ nhìn cậu bé bị thương nói: Đây là con tôi. Bố cậu đang ở nhà. Bác sĩ là ai? | Mẹ cậu bé | Chú cậu bé | Ông nội cậu bé | Anh trai cậu bé
+Bác sĩ Hà có một em trai, nhưng người em trai ấy không có anh trai nào. Vì sao? | Bác sĩ Hà là chị gái | Em là con nuôi | Hai người khác bố | Bác sĩ nói dối
+Con của em gái mẹ tôi gọi tôi bằng anh. Người đó là gì của tôi? | Em họ | Em ruột | Cháu | Anh họ
+Bà nội của em gái tôi là gì của tôi? | Bà nội tôi | Bà ngoại tôi | Cô tôi | Mẹ tôi
+Mẹ 30 tuổi, con 5 tuổi. 10 năm nữa mẹ hơn con bao nhiêu tuổi? | 25 tuổi | 35 tuổi | 15 tuổi | 20 tuổi
+Người đàn ông có được cưới em gái của người vợ góa của mình không? | Không, ông đã mất | Có, luật cho phép | Có, nếu vợ đồng ý | Không, vì là họ hàng
+Bạn có 1 anh trai, 1 chị gái và 1 em gái. Bố mẹ bạn có mấy người con? | 4 người | 3 người | 5 người | 2 người
+Mẹ chồng chị Lan chỉ có một con trai. Người con trai ấy là ai? | Chồng chị Lan | Anh trai chị Lan | Bố chị Lan | Con chị Lan
+Lan là con của người đó, nhưng người đó không phải bố Lan. Người đó là ai? | Mẹ Lan | Ông nội Lan | Chú Lan | Bà nội Lan
+Anh rể là chồng chị gái tôi. Mẹ của anh rể là gì của chị gái tôi? | Mẹ chồng | Mẹ ruột | Mẹ vợ | Bà nội
+Bố vợ của bố tôi là ai của tôi? | Ông ngoại | Ông nội | Bác | Cụ
+Mẹ chồng của mẹ tôi là ai của tôi? | Bà nội | Bà ngoại | Cô | Dì
+Mai là con gái duy nhất của bố mẹ. Mai có mấy chị em gái ruột? | Không có ai | 1 người | 2 người | Chưa biết được
+Ông bà có 3 con trai, mỗi người lấy vợ và có 1 con. Cả nhà ăn cơm đủ mặt thì có mấy người? | 11 người | 9 người | 8 người | 12 người
+Ông nội hơn bố 30 tuổi, bố hơn tôi 30 tuổi. Ông nội hơn tôi bao nhiêu tuổi? | 60 tuổi | 30 tuổi | 90 tuổi | 45 tuổi
+Hai anh em sinh đôi, anh vừa tròn 12 tuổi. Lúc đó em bao nhiêu tuổi? | 12 tuổi | 11 tuổi | 10 tuổi | 13 tuổi
+Bố của anh trai tôi là ai của tôi? | Bố tôi | Chú tôi | Ông tôi | Bác tôi
+Bố tôi là con một. Tôi có mấy chú bác ruột bên nội? | Không có ai | 1 người | 2 người | Chưa biết được
+Bà Tư chỉ có một con gái, và là bà ngoại của Hùng. Mẹ Hùng là ai? | Con gái bà Tư | Con dâu bà Tư | Em gái bà Tư | Cháu gái bà Tư
+Bố mẹ tôi có 3 con gái, còn tôi là con trai duy nhất. Tôi có mấy chị em gái? | 3 người | 2 người | 4 người | Không có ai
+Ba năm nữa tuổi tôi gấp đôi tuổi tôi 3 năm trước. Tôi bao nhiêu tuổi? | 9 tuổi | 6 tuổi | 12 tuổi | 3 tuổi
+Bạn là con cả trong nhà, dưới bạn có 2 em. Bạn có mấy anh chị ruột? | Không có ai | 2 người | 1 người | 3 người
+Ông ngoại là bố của ai trong nhà tôi? | Mẹ tôi | Bố tôi | Cô tôi | Chú tôi
+Cô là em gái của bố tôi. Con của cô là gì của tôi? | Anh chị em họ | Cháu | Em ruột | Chú bác
+# --- Thứ tự, xếp hàng, đua ---
+Đang chạy đua, bạn vượt qua người đang đứng thứ hai. Giờ bạn đứng thứ mấy? | Thứ hai | Thứ nhất | Thứ ba | Đứng cuối
+Lan đứng thứ 5 từ đầu hàng và cũng thứ 5 từ cuối hàng. Hàng có mấy người? | 9 người | 10 người | 11 người | 8 người
+Hàng có 10 người, An đứng thứ 3 từ đầu. Tính từ cuối, An đứng thứ mấy? | Thứ tám | Thứ bảy | Thứ chín | Thứ ba
+Bình đứng thứ 2, Cúc đứng sau Bình, giữa hai bạn có 3 người. Cúc đứng thứ mấy? | Thứ sáu | Thứ năm | Thứ bảy | Thứ tư
+Hai con vịt đi trước một con, hai con đi sau một con, một con đi giữa hai con. Ít nhất có mấy con? | 3 con | 5 con | 4 con | 6 con
+Hàng có 5 người, Mai đứng thứ 5 tính từ cuối. Tính từ đầu, Mai đứng thứ mấy? | Thứ nhất | Thứ năm | Thứ tư | Thứ hai
+Lan cao hơn Mai, Hoa thấp hơn Mai. Ai cao nhất? | Lan | Mai | Hoa | Không biết được
+An chạy nhanh hơn Bình, Cường chậm hơn Bình, Dũng nhanh hơn An. Ai về cuối? | Cường | Bình | An | Dũng
+Đang đứng thứ 4, bạn vượt 2 người rồi bị 1 người vượt lại. Giờ bạn đứng thứ mấy? | Thứ ba | Thứ hai | Thứ năm | Thứ tư
+Xếp hàng mua vé, trước bạn có 4 người, sau bạn có 3 người. Hàng có mấy người? | 8 người | 7 người | 9 người | 6 người
+6 người ngồi quanh bàn tròn, đánh số 1 đến 6 theo vòng. Ai ngồi đối diện người số 1? | Người số 4 | Người số 3 | Người số 5 | Người số 6
+Hà về trước Lan, Lan về trước Hoa, Mai về sau Hoa. Ai về thứ ba? | Hoa | Lan | Mai | Hà
+Hàng dọc có 9 người. Người đứng chính giữa là người thứ mấy? | Thứ năm | Thứ tư | Thứ sáu | Thứ ba
+Nam nặng hơn Hải nhưng nhẹ hơn Tú. Ai nặng nhất? | Tú | Nam | Hải | Không biết được
+Cuộc đua có 5 người, bạn về đích ngay sau người về nhì. Bạn nhận huy chương gì? | Huy chương đồng | Huy chương bạc | Huy chương vàng | Không có huy chương
+Năm người xếp hàng, Tú đứng ngay trước người cuối cùng. Tú đứng thứ mấy? | Thứ tư | Thứ năm | Thứ ba | Thứ hai
+Ba bạn xếp hàng dọc: An đứng sau Bình, Bình đứng sau Cúc. Ai đứng đầu hàng? | Cúc | An | Bình | Không biết được
+Trên kệ có 5 cuốn sách xếp thành hàng, cuốn màu đỏ nằm chính giữa. Bên trái nó có mấy cuốn? | 2 cuốn | 3 cuốn | 1 cuốn | 5 cuốn
+Bảy bạn đứng thành vòng tròn. Mỗi bạn có mấy bạn đứng sát ngay cạnh mình? | 2 bạn | 6 bạn | 1 bạn | 3 bạn
+Ba bạn Lan, Mai, Hoa về nhất, nhì, ba. Mai không về nhì, cũng không về ba. Ai về nhất? | Mai | Lan | Hoa | Không biết được
+Ba bạn Lan, Mai, Hoa về nhất, nhì, ba. Lan về thứ ba, Hoa không về nhất. Ai về nhì? | Hoa | Mai | Lan | Không biết được
+Đội có 11 cầu thủ cao khác nhau, Nam cao thứ 4 trong đội. Có mấy người thấp hơn Nam? | 7 người | 4 người | 6 người | 3 người
+Tuấn vượt 3 người rồi bị 2 người vượt lại, cuối cùng về thứ 4. Lúc đầu Tuấn đứng thứ mấy? | Thứ năm | Thứ ba | Thứ tư | Thứ sáu
+Ba bạn ngồi ghế dài: Lan ở bên trái Mai, Hoa ở bên phải Mai. Ai ngồi giữa? | Mai | Lan | Hoa | Không biết được
+Bốn bạn An, Bình, Cúc, Dũng ngồi bàn vuông, mỗi cạnh một người. An đối diện Bình. Dũng đối diện ai? | Cúc | An | Bình | Không biết được
+Hàng 3 người: bố đứng trước con, mẹ đứng sau con. Ai đứng giữa? | Người con | Người bố | Người mẹ | Không biết được
+Tý về đích sau Sửu nhưng trước Dần, còn Mão về trước Sửu. Ai về nhất? | Mão | Sửu | Tý | Dần
+Trên kệ, cuốn Toán ở trên cuốn Văn, cuốn Sử ở dưới cuốn Văn. Cuốn nào nằm giữa? | Cuốn Văn | Cuốn Toán | Cuốn Sử | Không biết được
+Đoàn 10 người đi hàng một, người thứ 4 quay xuống đứng cuối hàng. Giờ người đó đứng thứ mấy? | Thứ mười | Thứ tư | Thứ chín | Thứ mười một
+Bạn đứng thứ 3 trong hàng, 2 người phía trước bỏ đi. Giờ bạn đứng thứ mấy? | Thứ nhất | Thứ ba | Thứ hai | Thứ năm
+Năm bạn xếp hàng từ thấp đến cao. Bạn cao nhất đứng thứ mấy tính từ đầu? | Thứ năm | Thứ nhất | Thứ ba | Thứ tư
+Rạp có 10 hàng ghế, bạn ngồi hàng thứ 3 tính từ hàng đầu. Phía sau bạn có mấy hàng? | 7 hàng | 8 hàng | 6 hàng | 3 hàng
+Thang máy đi từ tầng 2 lên tầng 8 thì đi ngang qua mấy tầng ở giữa? | 5 tầng | 6 tầng | 4 tầng | 7 tầng
+An ở trên Bình 2 tầng, Bình ở dưới Cúc 5 tầng. Cúc ở trên An mấy tầng? | 3 tầng | 7 tầng | 2 tầng | 5 tầng
+Đếm lùi từ 100, số thứ 10 bạn đọc lên là số mấy? | 91 | 90 | 10 | 92
+Cầu thang có 15 bậc, bạn đứng ở bậc chính giữa. Phía trên bạn còn mấy bậc? | 7 bậc | 8 bậc | 6 bậc | 15 bậc
+Từ số 10 đến số 20, tính cả hai số, có tất cả bao nhiêu số? | 11 số | 10 số | 9 số | 20 số
+# --- Tình huống, nhanh trí, lừa logic ---
+Gà trống đẻ một quả trứng trên nóc nhà, quả trứng lăn về phía nào? | Gà trống không đẻ | Phía bên trái | Phía bên phải | Lăn theo chiều gió
+Tàu điện chạy về hướng nam, gió thổi về hướng bắc. Khói tàu bay về hướng nào? | Tàu điện không có khói | Hướng bắc | Hướng nam | Bay thẳng lên trời
+Phòng tối có đèn dầu, nến và bếp củi, bạn chỉ có 1 que diêm. Bạn thắp cái gì đầu tiên? | Que diêm | Đèn dầu | Cây nến | Bếp củi
+Ông Ba đi dưới mưa, không ô, không mũ, không áo mưa mà tóc không ướt. Vì sao? | Ông bị hói đầu | Mưa quá nhỏ | Ông đi rất nhanh | Tóc ông chống nước
+Máy bay rơi đúng đường biên giới hai nước. Những người sống sót được chôn ở đâu? | Không chôn ai cả | Ở nước thứ nhất | Ở nước thứ hai | Ngay trên biên giới
+Ông đọc sách trong phòng tối om, không có chút ánh sáng nào. Vì sao ông đọc được? | Ông đọc chữ nổi | Ông đeo kính lão | Ông dùng điện thoại | Ông có mắt cú mèo
+Xe tải kẹt dưới gầm cầu vì cao hơn đúng 1 phân. Cách nhanh nhất để đưa xe ra? | Xả bớt hơi lốp | Cưa nóc thùng xe | Đục gầm cầu | Dỡ bớt hàng xuống
+Ông Tư đi ngược chiều trên đường một chiều, cảnh sát thấy mà không phạt. Vì sao? | Ông đi bộ | Ông là cảnh sát | Đường rất vắng | Ông có giấy phép
+Làm sao để bạn đứng sau bố, đồng thời bố cũng đứng sau bạn? | Quay lưng vào nhau | Đứng đối mặt nhau | Đứng ngang hàng | Bố cõng bạn
+Bỏ đồng xu vào chai rồi đậy nút. Lấy xu ra mà không rút nút, không đập chai? | Ấn nút vào trong chai | Dốc ngược chai | Lắc thật mạnh | Hơ chai cho nóng
+Đặt cây bút ở đâu trên sàn nhà thì không ai nhảy qua được? | Sát chân tường | Giữa phòng | Ngay cửa ra vào | Trên tấm thảm
+Ném quả bóng sao cho nó tự quay về tay mà không chạm vào vật gì? | Ném thẳng lên trời | Ném thật mạnh | Ném thật xa | Ném xoáy
+Cục nước đá nổi trong cốc nước tan hết. Mực nước trong cốc thay đổi thế nào? | Giữ nguyên | Dâng lên | Hạ xuống | Tràn ra ngoài
+Trên Mặt Trăng, thả búa và lông chim cùng lúc. Cái nào chạm đất trước? | Chạm cùng lúc | Cái búa | Lông chim | Không cái nào rơi
+Một người đi vào khu rừng. Đi được nhiều nhất bao xa thì bắt đầu là đi ra? | Nửa khu rừng | Hết khu rừng | Một phần ba rừng | Tùy rừng to nhỏ
+Tất cả mèo đều có đuôi. Con Mướp có đuôi. Vậy Mướp chắc chắn là mèo? | Chưa chắc | Chắc chắn là mèo | Chắc chắn không | Mướp là chó
+Mọi học sinh lớp 5A đều biết bơi. Lan không biết bơi. Điều nào chắc chắn đúng? | Lan không học 5A | Lan học lớp 5A | Lan học lớp 5B | Lan sợ nước
+Nếu trời mưa thì sân ướt. Sáng nay sân ướt. Kết luận được gì? | Chưa chắc đã mưa | Chắc chắn có mưa | Chắc chắn không mưa | Trời đang nắng
+Không con chim cánh cụt nào biết bay. Con Pi biết bay. Vậy Pi chắc chắn thế nào? | Không là chim cánh cụt | Là chim cánh cụt | Là đại bàng | Là chim bồ câu
+Mọi số chia hết cho 4 đều chia hết cho 2. Số 10 chia hết cho 2. Vậy 10 có chia hết cho 4? | Không | Có | Chưa biết được | Chỉ đôi khi
+An nói: Tôi lớn tuổi hơn Bình. Biết An luôn nói thật. Ai nhỏ tuổi hơn? | Bình | An | Bằng tuổi | Không biết được
+Hai hộp, một hộp kẹo, một hộp bánh, nhưng hai nhãn đều dán sai. Hộp dán nhãn kẹo chứa gì? | Bánh | Kẹo | Không có gì | Cả kẹo lẫn bánh
+Túi chỉ có bi đỏ và bi xanh. Lấy ra 2 viên đều đỏ. Viên lấy tiếp theo màu gì? | Chưa biết được | Chắc chắn đỏ | Chắc chắn xanh | Màu trắng
+Tung đồng xu cân đối 5 lần đều ra mặt ngửa. Lần thứ 6, khả năng ra ngửa là bao nhiêu? | Vẫn là một nửa | Rất cao | Rất thấp | Chắc chắn ngửa
+Gieo một con xúc xắc thường, khả năng ra mặt 7 chấm là bao nhiêu? | Không thể xảy ra | Một phần sáu | Một phần bảy | Một nửa
+Đặt đồng xu lên bàn, mặt sấp ở trên. Lật đúng 3 lần thì mặt nào ở trên? | Mặt ngửa | Mặt sấp | Tùy may rủi | Cả hai mặt
+Bạn quay mặt về hướng đông rồi quay đằng sau. Tay phải bạn chỉ hướng nào? | Hướng bắc | Hướng nam | Hướng đông | Hướng tây
+Đi về hướng bắc, rẽ phải ba lần liên tiếp. Giờ bạn đi về hướng nào? | Hướng tây | Hướng bắc | Hướng đông | Hướng nam
+Đứng ngay tại Bắc Cực, nhìn hướng nào cũng là hướng gì? | Hướng nam | Hướng bắc | Hướng đông | Hướng tây
+Trên la bàn, hướng ngược với hướng đông bắc là hướng nào? | Tây nam | Đông nam | Tây bắc | Chính nam
+Chở sói, dê và bắp cải qua sông, thuyền chỉ chở thêm 1 thứ. Chuyến đầu phải chở gì? | Con dê | Con sói | Bắp cải | Không chở gì
+Hai người đứng trên cùng một tờ báo mà không chạm được vào nhau. Làm thế nào? | Đặt báo dưới khe cửa | Đứng quay lưng nhau | Đứng hai mép báo | Nhắm mắt lại
+Trong cuộc thi đi xe đạp chậm, người thế nào thì thắng? | Về đích sau cùng | Về đích đầu tiên | Đạp nhanh nhất | Đạp nhiều vòng nhất
+Trong cờ vua, quân nào không bao giờ bị ăn mất khỏi bàn cờ? | Quân vua | Quân hậu | Quân xe | Quân mã
+Con gì sáng đi bốn chân, trưa đi hai chân, chiều tối đi ba chân? | Con người | Con khỉ | Con gấu | Con gà
+Ông Năm ngày nào cũng cạo râu hàng chục lần mà vẫn để râu dài. Vì sao? | Ông là thợ cạo râu | Râu mọc rất nhanh | Dao cạo bị cùn | Ông cạo không kỹ
+Cây ổi nhà bà có 10 quả xoài, bà hái đi 3 quả. Trên cây còn mấy quả xoài? | Không có quả nào | 7 quả | 10 quả | 3 quả
+Con ngựa bạch của nhà vua có màu gì? | Màu trắng | Màu đen | Màu nâu | Màu vàng
+Tàu từ Hà Nội và tàu từ Sài Gòn chạy ngược chiều. Khi gặp nhau, tàu nào gần Hà Nội hơn? | Cách Hà Nội như nhau | Tàu từ Hà Nội | Tàu từ Sài Gòn | Tùy tốc độ tàu
+Hai xe cách nhau 100 cây số, chạy ngược chiều nhau, mỗi xe 50 cây số một giờ. Bao lâu thì gặp? | 1 giờ | 2 giờ | 30 phút | 4 giờ
+Trước khi trận bóng đá bắt đầu, có thể đoán chắc tỷ số là gì? | Hai đội đều 0 bàn | Đội nhà dẫn 1 bàn | Hai đội 1 đều | Đội khách dẫn 1 bàn
+Con vật nào sau đây không phải là côn trùng? | Con nhện | Con kiến | Con ong | Con muỗi
+Con vật nào sau đây không phải là cá? | Cá voi | Cá chép | Cá mập | Cá ngựa
+Con vật nào sau đây không phải là chim? | Con dơi | Chim cánh cụt | Đà điểu | Con gà
+Nước đang sôi 100 độ ở đồng bằng, đun thêm 10 phút thì nhiệt độ nước là bao nhiêu? | Vẫn 100 độ | 110 độ | 120 độ | 150 độ
+Trời nắng, lúc nào trong ngày bóng của bạn ngắn nhất? | Giữa trưa | Sáng sớm | Chiều tà | Lúc 9 giờ sáng
+Mặt trời ở ngay sau lưng bạn thì bóng của bạn nằm ở đâu? | Trước mặt bạn | Sau lưng bạn | Bên trái bạn | Bên phải bạn
+Thổi bóng bay bằng hơi từ miệng rồi buộc lại, thả ra thì bóng sẽ thế nào? | Rơi từ từ xuống | Bay vút lên trời | Lơ lửng một chỗ | Bay lên rồi rơi
+Có hai đồng hồ: một cái chết máy, một cái mỗi ngày chậm 1 phút. Cái nào chỉ đúng giờ nhiều lần hơn? | Cái chết máy | Cái chậm 1 phút | Đúng như nhau | Không cái nào đúng
+Cái gì cứ tăng lên mỗi năm mà không bao giờ giảm? | Tuổi tác | Chiều cao | Cân nặng | Tóc
+Thứ gì sẽ bị phá vỡ ngay khi bạn gọi tên nó? | Sự im lặng | Cái gương | Quả trứng | Lời hứa
+Bốn người đứng dưới một cái ô nhỏ mà không ai bị ướt. Vì sao? | Trời không mưa | Họ đứng sát nhau | Mưa rất nhỏ | Ô có nhiều nan
+Vì sao nắp hố ga ngoài đường thường làm hình tròn? | Để không rơi xuống hố | Để trông đẹp hơn | Để đúc rẻ hơn | Để dễ sơn hơn
+Mặt Trăng sáng vào ban đêm là nhờ đâu? | Phản chiếu Mặt Trời | Tự phát ra ánh sáng | Phản chiếu ánh đèn | Nhờ các vì sao
+Vì sao ta thường thấy tia chớp trước rồi mới nghe tiếng sấm? | Ánh sáng nhanh hơn | Chớp có trước sấm | Tai chậm hơn mắt | Sấm ở xa hơn chớp
+Thả một quả bóng bàn và một quả bóng đá đã bơm căng vào nước. Quả nào nổi? | Cả hai đều nổi | Chỉ bóng bàn | Chỉ bóng đá | Không quả nào
+# --- Toán mẹo thêm ---
+Tháng có 5 ngày Chủ nhật thì tháng đó có ít nhất bao nhiêu ngày? | 29 ngày | 28 ngày | 30 ngày | 31 ngày
+Tháng 2 năm nhuận có 5 ngày thứ bảy. Ngày 1 tháng 2 năm đó là thứ mấy? | Thứ bảy | Chủ nhật | Thứ sáu | Thứ hai
+Ngày 3 trong tháng là thứ hai. Ngày 24 cùng tháng là thứ mấy? | Thứ hai | Thứ ba | Chủ nhật | Thứ tư
+Ngày 10 trong tháng là thứ sáu. Ngày 1 tháng đó là thứ mấy? | Thứ tư | Thứ năm | Thứ hai | Thứ sáu
+Ngày thứ 100 của một năm không nhuận rơi vào tháng mấy? | Tháng 4 | Tháng 3 | Tháng 5 | Tháng 2
+Năm nhuận, ngày 1 tháng 3 là ngày thứ bao nhiêu trong năm? | Ngày thứ 61 | Ngày thứ 60 | Ngày thứ 59 | Ngày thứ 62
+Lịch bóc mỗi ngày một tờ. Lịch của năm nhuận có bao nhiêu tờ? | 366 tờ | 365 tờ | 367 tờ | 360 tờ
+3 con gà đẻ 3 quả trứng trong 3 ngày. 6 con gà đẻ bao nhiêu quả trong 6 ngày? | 12 quả | 6 quả | 36 quả | 18 quả
+Mỗi chuyến xe chở được 30 người. Cần chở 100 người thì phải đi ít nhất mấy chuyến? | 4 chuyến | 3 chuyến | 5 chuyến | 10 chuyến
+Thuyền chở tối đa 4 người kể cả người lái. Đưa 9 khách sang sông cần mấy chuyến sang? | 3 chuyến | 2 chuyến | 4 chuyến | 9 chuyến
+Mỗi bước chân bạn dài 50 phân. Đi 10 mét thì cần mấy bước? | 20 bước | 5 bước | 50 bước | 500 bước
+Một ký có 10 lạng. Một ký rưỡi là bao nhiêu lạng? | 15 lạng | 1 lạng rưỡi | 6 lạng | 150 lạng
+Chia 9 cái kẹo cho hai bạn, bạn thứ nhất hơn bạn thứ hai 1 cái. Bạn thứ nhất được mấy cái? | 5 cái | 4 cái | 6 cái | 8 cái
+Hai số có tổng bằng 10 và hiệu cũng bằng 10. Hai số đó là gì? | 10 và 0 | 5 và 5 | 20 và 10 | 15 và 5
+Hai số nhân với nhau ra 0, cộng với nhau ra 5. Hai số đó là gì? | 0 và 5 | 1 và 4 | 2 và 3 | 5 và 5
+Cắt bánh tròn bằng 3 nhát thẳng đều đi qua tâm thì được mấy miếng? | 6 miếng | 3 miếng | 8 miếng | 4 miếng
+Cắt bánh vuông bằng 2 nhát dao thẳng thì được nhiều nhất mấy miếng? | 4 miếng | 3 miếng | 2 miếng | 5 miếng
+Cắt một nhát vào chiếc vòng chun tròn thì được mấy đoạn? | 1 đoạn | 2 đoạn | 0 đoạn | 3 đoạn
+Gấp đôi tờ giấy, khoét 1 lỗ không chạm nếp gấp. Mở tờ giấy ra thì có mấy lỗ? | 2 lỗ | 1 lỗ | 4 lỗ | 3 lỗ
+Thùng đầy nước nặng 10 ký, nửa thùng nước nặng 6 ký. Thùng rỗng nặng bao nhiêu? | 2 ký | 4 ký | 5 ký | 1 ký
+Chai dầu cả vỏ nặng 1 ký, vỏ nhẹ hơn dầu 800 gam. Vỏ chai nặng bao nhiêu? | 100 gam | 200 gam | 800 gam | 900 gam
+Thước dài 30 phân. Đo cái bàn dài 1 mét 20 thì đặt thước mấy lần? | 4 lần | 3 lần | 5 lần | 120 lần
+Bể bơi dài 50 mét. Bơi đi rồi bơi về một lượt thì được bao nhiêu mét? | 100 mét | 50 mét | 25 mét | 200 mét
+Phép chia có số chia là 5 thì số dư lớn nhất có thể là bao nhiêu? | 4 | 5 | 1 | 0
+Bánh xe có 1 chấm sơn đỏ. Xe lăn đúng 1 vòng bánh thì chấm đỏ chạm đất mấy lần? | 1 lần | 2 lần | 0 lần | 4 lần
+Bác nông dân có 10 con gà, bán đi 2 con, gà mái đẻ thêm 3 quả trứng. Bác còn mấy con gà? | 8 con | 11 con | 10 con | 13 con
+Gạo đủ cho 10 người ăn 6 ngày. Nếu có 20 người thì ăn được mấy ngày? | 3 ngày | 12 ngày | 6 ngày | 2 ngày
+Một quả dưa nặng bằng 3 quả cam, một quả cam nặng bằng 2 quả chanh. Quả dưa nặng bằng mấy quả chanh? | 6 quả | 5 quả | 3 quả | 2 quả
+Một người có 10 ngón tay. Không tính hai ngón cái thì còn mấy ngón? | 8 ngón | 9 ngón | 4 ngón | 10 ngón

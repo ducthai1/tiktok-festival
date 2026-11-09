@@ -8,6 +8,7 @@ import { createSessionLeaderboard } from './session-leaderboard.js';
 import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
 import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
+import { createQuizGames } from './quiz/quiz-games.js';
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE } = {}) {
   const games = new Map([
@@ -15,7 +16,8 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
     ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
-    ['swim', createSwimPushGame()]
+    ['swim', createSwimPushGame()],
+    ...createQuizGames({ random }).map((g) => [g.id, g])
   ]);
   const board = createSessionLeaderboard();
   const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });
@@ -50,7 +52,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     tick(now = Date.now()) {
       let fx = [];
       for (const game of games.values()) {
-        const out = game.tick(now);
+        const out = game.tick(now, game.id === activeId);
         if (game.id === activeId) fx = out;
       }
       return [...fx, ...welcome.tick(now)];

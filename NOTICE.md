@@ -31,6 +31,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+## Kho câu hỏi 7 tab đố vui — MIT
+
+Dữ liệu (không phải mã) lấy từ `workaipvlinh-byte/lop-hoc-chu`, `workaipvlinh-byte/ai-la-trang-nguyen`, `sonlamdev/emoji-quiz-tiktok-live`,
+`Maximax67/Words-CEFR-Dataset` và `lipis/flag-icons` (cờ SVG). Danh sách file + toàn văn giấy phép: `src/games/quiz/bank/NGUON.md`.
+Bộ máy đố vui (`src/games/quiz/`, `public/stage/scenes/quiz-scene.js`) là tự viết.
+
 ## Chỉ tham khảo luật chơi, không dùng mã/hình
 
 - `newakungchgamer-maker/SwimLive` (phần mềm đóng, có khoá bản quyền) — chỉ đọc file cấu hình để hiểu kiểu chơi "hợp sức đẩy vượt tường". Số liệu, mô hình và mã ở đây là tự làm.

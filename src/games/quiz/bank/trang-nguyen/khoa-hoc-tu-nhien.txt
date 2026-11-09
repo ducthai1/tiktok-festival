@@ -1,0 +1,382 @@
+# Chủ đề: Khoa học tự nhiên (vật lý, hoá học, thiên văn, khoa học Trái Đất)
+# Không gồm: cơ thể người, sức khỏe, động thực vật, nhà khoa học và phát minh.
+# Mỗi dòng: câu hỏi | ĐÁP ÁN ĐÚNG | sai | sai | sai
+
+[de]
+Dưới áp suất thường, nước sôi ở bao nhiêu độ C? | 100 độ C | 90 độ C | 80 độ C | 120 độ C
+Nước nguyên chất bắt đầu đóng băng ở bao nhiêu độ C? | 0 độ C | 4 độ C | 10 độ C | 32 độ C
+Hành tinh nào ở gần Mặt Trời nhất? | Sao Thủy | Sao Kim | Trái Đất | Sao Hỏa
+Hành tinh nào lớn nhất trong hệ Mặt Trời? | Sao Mộc | Sao Thổ | Sao Hải Vương | Sao Thiên Vương
+Hành tinh nào nổi tiếng với hệ vành đai sáng rực bao quanh? | Sao Thổ | Sao Mộc | Sao Hỏa | Sao Kim
+Tính từ Mặt Trời, Trái Đất là hành tinh thứ mấy? | Thứ ba | Thứ hai | Thứ tư | Thứ năm
+Mặt Trăng là gì của Trái Đất? | Vệ tinh tự nhiên | Hành tinh anh em | Ngôi sao gần nhất | Một sao chổi
+Trái Đất tự quay một vòng quanh trục hết khoảng bao lâu? | Một ngày đêm | Một tuần | Một tháng | Một năm
+Trái Đất quay một vòng quanh Mặt Trời hết khoảng bao lâu? | Một năm | Một tháng | Một ngày | Mười năm
+Mặt Trời mọc ở hướng nào? | Hướng đông | Hướng tây | Hướng nam | Hướng bắc
+Úp cốc thủy tinh lên ngọn nến đang cháy, nến tắt dần vì sao? | Hết khí oxy | Hết sáp nến | Cốc quá lạnh | Thiếu ánh sáng
+Nước được tạo nên từ hai nguyên tố nào? | Hydro và oxy | Cacbon và oxy | Nitơ và oxy | Hydro và nitơ
+Khí nào chiếm nhiều nhất trong không khí? | Nitơ | Oxy | Cacbonic | Hydro
+Cường độ dòng điện được đo bằng đơn vị nào? | Ampe | Vôn | Oát | Jun
+Hiệu điện thế được đo bằng đơn vị nào? | Vôn | Ampe | Oát | Niutơn
+Đơn vị đo khối lượng trong hệ đo lường quốc tế là gì? | Ki-lô-gam | Mét | Giây | Lít
+Đơn vị đo độ dài trong hệ đo lường quốc tế là gì? | Mét | Gam | Giây | Ampe
+Một ki-lô-mét bằng bao nhiêu mét? | 1000 mét | 100 mét | 10 mét | 10 000 mét
+Âm thanh không thể truyền qua môi trường nào? | Chân không | Nước | Không khí | Thép
+Trời giông, ta thấy chớp trước rồi mới nghe sấm là vì sao? | Ánh sáng nhanh hơn | Âm thanh nhanh hơn | Chớp có trước sấm | Tai nghe chậm hơn
+Nam châm hút được vật làm bằng chất nào? | Sắt | Đồng | Nhôm | Vàng
+Cầu vồng thường xuất hiện khi nào? | Nắng sau cơn mưa | Lúc nửa đêm | Trời nhiều sương mù | Khi tuyết rơi
+Theo cách gọi quen thuộc, cầu vồng có mấy màu? | 7 màu | 5 màu | 6 màu | 9 màu
+Lõi dây điện trong nhà thường làm bằng kim loại nào? | Đồng | Sắt | Chì | Kẽm
+Vỏ bọc dây điện thường làm bằng gì để cách điện? | Nhựa | Đồng | Nhôm | Sắt
+Nước có thể tồn tại ở mấy thể thường gặp? | 3 thể | 2 thể | 4 thể | 5 thể
+Nước đá chuyển thành nước lỏng gọi là sự gì? | Sự nóng chảy | Sự đông đặc | Sự bay hơi | Sự ngưng tụ
+Hơi nước gặp lạnh đọng thành giọt nước gọi là sự gì? | Sự ngưng tụ | Sự bay hơi | Sự nóng chảy | Sự đông đặc
+Ngôi sao nào ở gần Trái Đất nhất? | Mặt Trời | Sao Bắc Cực | Sao Thiên Lang | Sao Chức Nữ
+Hiện tượng ngày và đêm trên Trái Đất là do đâu? | Trái Đất tự quay | Mặt Trăng che sáng | Mây che Mặt Trời | Mặt Trời tắt sáng
+Hành tinh nào là nơi duy nhất đã biết có sự sống? | Trái Đất | Sao Hỏa | Sao Kim | Sao Mộc
+Hành tinh nào được gọi là "hành tinh đỏ"? | Sao Hỏa | Sao Kim | Sao Mộc | Sao Thủy
+Hệ Mặt Trời có bao nhiêu hành tinh? | 8 | 9 | 7 | 10
+Lực hút của Trái Đất lên mọi vật gọi là gì? | Trọng lực | Lực ma sát | Lực đàn hồi | Lực từ
+Quả bóng lăn trên sân cỏ chậm dần rồi dừng lại là do lực nào? | Lực ma sát | Trọng lực | Lực đàn hồi | Lực từ
+Đơn vị nào dùng để đo diện tích? | Mét vuông | Mét khối | Mét | Lít
+Dụng cụ nào dùng để đo khối lượng? | Cái cân | Thước dây | Nhiệt kế | Bình chia độ
+Bình chia độ dùng để đo gì? | Thể tích chất lỏng | Khối lượng | Nhiệt độ | Chiều dài
+Kim nam châm của la bàn luôn chỉ theo hướng nào? | Bắc nam | Đông tây | Đông nam | Tây bắc
+Ký hiệu hoá học của sắt là gì? | Fe | Si | Ag | Zn
+Ký hiệu hoá học của oxy là chữ gì? | O | H | C | N
+Gió được tạo ra do sự chuyển động của gì? | Không khí | Nước biển | Đất đá | Ánh sáng
+Mây trên trời được tạo thành chủ yếu từ gì? | Hạt nước li ti | Khói bụi | Khí oxy | Khí cacbonic
+Chất nóng chảy phun ra từ miệng núi lửa gọi là gì? | Dung nham | Thạch anh | Than đá | Đá vôi
+Khi bị đun nóng, hầu hết các chất sẽ thế nào? | Nở ra | Co lại | Biến mất | Không đổi
+Chất nào sau đây là kim loại? | Nhôm | Lưu huỳnh | Than chì | Phốt pho
+Trong không khí đồng nhất, ánh sáng truyền theo đường gì? | Đường thẳng | Đường cong | Đường gấp khúc | Đường tròn
+Mặt Trời thuộc loại thiên thể nào? | Một ngôi sao | Một hành tinh | Một vệ tinh | Một sao chổi
+Công suất điện được đo bằng đơn vị nào? | Oát | Vôn | Ampe | Ôm
+Vì sao cán xoong nồi thường làm bằng nhựa hoặc gỗ? | Dẫn nhiệt kém | Dẫn nhiệt tốt | Nặng hơn sắt | Dẫn điện tốt
+Thả một viên nước đá vào cốc nước, viên đá sẽ thế nào? | Nổi lên | Chìm xuống đáy | Lơ lửng giữa cốc | Tan ngay tức khắc
+Cột thu lôi trên các tòa nhà cao dùng để làm gì? | Chống sét | Thu sóng tivi | Đo sức gió | Chống bão
+Trăng tròn thường rơi vào khoảng ngày nào âm lịch? | Ngày rằm | Mùng một | Mùng mười | Hai mươi lăm
+Mặt Trăng quay một vòng quanh Trái Đất hết khoảng bao lâu? | Khoảng một tháng | Khoảng một tuần | Khoảng một năm | Khoảng một ngày
+Mặt Trăng che khuất Mặt Trời gọi là hiện tượng gì? | Nhật thực | Nguyệt thực | Sao băng | Cực quang
+Nói to trong hang động rồi nghe lại tiếng mình, đó là hiện tượng gì? | Tiếng vang | Siêu âm | Hạ âm | Cộng hưởng
+Nhà máy thủy điện tạo ra điện nhờ sức của gì? | Dòng nước | Sức gió | Ánh nắng | Than đá
+Tấm pin mặt trời biến năng lượng gì thành điện? | Ánh sáng | Sức gió | Dòng nước | Than đá
+Vật nào sau đây là nguồn sáng? | Ngọn nến đang cháy | Mặt Trăng | Tấm gương | Bức tường trắng
+Trời nắng gắt, mặc áo màu nào sẽ đỡ nóng nhất? | Màu trắng | Màu đen | Màu nâu | Màu xanh đậm
+Đưa hai cực cùng tên của hai nam châm lại gần nhau thì chúng thế nào? | Đẩy nhau | Hút nhau | Dính chặt | Không có gì
+Một thanh nam châm có mấy cực từ? | 2 cực | 1 cực | 3 cực | 4 cực
+Lò xo bị nén hoặc bị kéo dãn sẽ sinh ra lực gì? | Lực đàn hồi | Lực ma sát | Trọng lực | Lực từ
+Muốn tính vận tốc, ta lấy quãng đường chia cho gì? | Thời gian | Khối lượng | Lực kéo | Diện tích
+Một giờ có bao nhiêu giây? | 3600 giây | 360 giây | 6000 giây | 1200 giây
+Một lít bằng bao nhiêu mi-li-lít? | 1000 | 100 | 10 | 10 000
+Một tấn bằng bao nhiêu ki-lô-gam? | 1000 | 100 | 500 | 10 000
+Một ki-lô-gam bằng bao nhiêu gam? | 1000 gam | 100 gam | 10 gam | 10 000 gam
+Năm nhuận dương lịch có bao nhiêu ngày? | 366 ngày | 365 ngày | 364 ngày | 367 ngày
+Vào lúc nào trong ngày, bóng nắng của cột cờ ngắn nhất? | Buổi trưa | Sáng sớm | Chiều tà | Lúc hoàng hôn
+Nguồn năng lượng nào sau đây là năng lượng tái tạo? | Gió | Than đá | Dầu mỏ | Khí đốt
+Làm muối từ nước biển, người ta dựa vào hiện tượng gì? | Sự bay hơi | Sự ngưng tụ | Sự đông đặc | Sự nóng chảy
+Lớp không khí bao quanh Trái Đất gọi là gì? | Khí quyển | Thủy quyển | Thạch quyển | Sinh quyển
+Tuyết rơi thực chất là gì? | Tinh thể nước đá | Hạt muối trắng | Bụi trắng | Hạt cát mịn
+Trái Đất có hình dạng gì? | Hình cầu | Hình đĩa | Hình trụ | Hình hộp
+Muốn bóng đèn sáng, mạch điện phải thế nào? | Mạch kín | Mạch hở | Thiếu dây nối | Không có pin
+Cục pin có hai cực gọi là gì? | Cực dương và cực âm | Cực bắc và cực nam | Cực trên và cực dưới | Cực nóng và cực lạnh
+Vật nào sau đây dẫn điện? | Chiếc thìa sắt | Thước nhựa | Cục tẩy | Cốc thủy tinh
+Ở nhiệt độ phòng, chất nào sau đây ở thể khí? | Oxy | Sắt | Muối ăn | Đường
+Chất nào sau đây không tan trong nước? | Cát | Đường | Muối ăn | Bột ngọt
+Đổ dầu ăn vào cốc nước, dầu sẽ thế nào? | Nổi lên trên | Chìm xuống đáy | Tan hết vào nước | Đông cứng lại
+Muốn tách cát ra khỏi nước, cách đơn giản nhất là gì? | Lọc qua giấy lọc | Khuấy thật đều | Thêm muối vào | Để vào tủ lạnh
+Vật nào cho ánh sáng truyền qua gần như hoàn toàn? | Tấm kính trong | Tấm gỗ | Tờ bìa cứng | Tấm sắt
+Âm thanh do đâu mà có? | Vật dao động | Ánh sáng | Từ trường | Nhiệt độ
+Càng đứng xa nguồn âm, ta nghe âm thanh thế nào? | Càng nhỏ | Càng to | Không đổi | Càng chói tai
+Trái Đất có bao nhiêu vệ tinh tự nhiên? | 1 | 2 | 0 | 3
+Thiết bị nào dùng để bật, tắt bóng đèn? | Công tắc | Cầu chì | Ổ cắm | Phích cắm
+Châu lục nào lạnh nhất trên Trái Đất? | Châu Nam Cực | Châu Âu | Châu Á | Châu Mỹ
+Sa mạc là vùng có khí hậu thế nào? | Rất khô hạn | Mưa quanh năm | Lạnh và ẩm | Tuyết phủ dày
+Hiện tượng nước biển dâng lên rồi rút xuống hằng ngày gọi là gì? | Thủy triều | Sóng thần | Hải lưu | Lũ lụt
+Xoa hai bàn tay vào nhau thấy ấm lên là nhờ đâu? | Ma sát sinh nhiệt | Lực từ | Ánh nắng | Dòng điện
+Vật nào sau đây nổi được trên mặt nước? | Miếng xốp | Hòn bi sắt | Viên đá cuội | Chiếc đinh
+Đơn vị đo thời gian trong hệ đo lường quốc tế là gì? | Giây | Phút | Giờ | Ngày
+Một mét bằng bao nhiêu xăng-ti-mét? | 100 | 10 | 1000 | 50
+Vì sao không được chạm vào ổ điện khi tay đang ướt? | Nước dẫn điện | Ổ điện bị gỉ | Tay bị trơn | Nước làm hỏng ổ
+Bàn là, ấm điện biến điện năng chủ yếu thành gì? | Nhiệt năng | Quang năng | Cơ năng | Hoá năng
+Quạt điện biến điện năng chủ yếu thành dạng nào? | Cơ năng | Nhiệt năng | Quang năng | Hoá năng
+Kính lúp dùng để làm gì? | Phóng to vật nhỏ | Nhìn vật ở xa | Soi vật trong tối | Đo kích thước
+Dụng cụ nào dùng để quan sát các vì sao và hành tinh? | Kính thiên văn | Kính lúp | Kính hiển vi | Kính râm
+Mở chai nước ngọt có ga, bọt khí sủi lên là khí gì? | Khí cacbonic | Khí oxy | Khí nitơ | Khí hydro
+Phần lớn bề mặt Trái Đất được bao phủ bởi gì? | Nước | Đất liền | Băng tuyết | Sa mạc
+Thước dây, thước mét dùng để đo đại lượng nào? | Độ dài | Khối lượng | Nhiệt độ | Thời gian
+Miền Bắc nước ta có mấy mùa trong năm? | 4 mùa | 2 mùa | 3 mùa | 5 mùa
+Miền Nam nước ta có hai mùa rõ rệt nào? | Mùa mưa và mùa khô | Mùa xuân và mùa thu | Mùa hè và mùa đông | Mùa nóng và mùa rét
+Một cơn bão thường mang theo những gì? | Gió mạnh, mưa lớn | Tuyết rơi dày | Nắng nóng khô | Sương mù dày
+Khi có giông sét, không nên trú ở đâu? | Dưới cây cao giữa đồng | Trong nhà kiên cố | Trong hầm trú ẩn | Trong tòa nhà lớn
+Nước bốc hơi, tạo mây rồi rơi xuống thành mưa gọi là gì? | Vòng tuần hoàn nước | Hiệu ứng nhà kính | Thủy triều | Gió mùa
+Chiếu đèn pin vào gương, ánh sáng bị làm sao? | Phản xạ lại | Hấp thụ hết | Xuyên qua gương | Biến mất
+Chất nào sau đây dễ bắt lửa nhất? | Xăng | Nước | Cát | Đá cuội
+Vào mùa đông ở miền Bắc, ngày và đêm thế nào? | Ngày ngắn hơn đêm | Ngày dài hơn đêm | Ngày đêm bằng nhau | Không có đêm
+Vùng nào trên Trái Đất nhận nhiều ánh nắng Mặt Trời nhất? | Vùng xích đạo | Vùng cực | Vùng ôn đới | Vùng cận cực
+Chất nào sau đây ở thể lỏng? | Dầu ăn | Viên đá cuội | Hơi nước | Muối ăn
+Thiên thể nào có cái đuôi sáng dài khi bay gần Mặt Trời? | Sao chổi | Sao băng | Tiểu hành tinh | Vệ tinh
+Đinh sắt để nơi ẩm ướt lâu ngày thường bị làm sao? | Bị gỉ | Bị tan chảy | Hoá thành đồng | Bị nhiễm từ
+Nguồn sáng nào sau đây là nhân tạo? | Bóng đèn điện | Mặt Trời | Tia chớp | Ánh sao
+So với Trái Đất, Mặt Trăng có kích thước thế nào? | Nhỏ hơn | Lớn hơn | Bằng nhau | Lớn gấp đôi
+Tốc độ xe máy thường được đo bằng đơn vị nào? | Ki-lô-mét/giờ | Mét khối | Ki-lô-gam | Lít/giờ
+Gió xoáy cực mạnh có hình cái phễu nối mây với mặt đất gọi là gì? | Vòi rồng | Gió mùa | Sóng thần | Mưa đá
+Bỏ đường vào nước nóng hay nước lạnh thì đường tan nhanh hơn? | Nước nóng | Nước lạnh | Như nhau | Nước đá
+Muốn nước đá lâu tan, nên đựng trong thùng làm bằng gì? | Thùng xốp | Thùng sắt | Thùng nhôm | Thùng đồng
+Mây đen dày đặc kéo đến thường báo hiệu điều gì? | Sắp có mưa | Sắp có nắng | Sắp có tuyết | Sắp động đất
+Một ki-lô-gam bông và một ki-lô-gam sắt, cái nào nặng hơn? | Bằng nhau | Sắt nặng hơn | Bông nặng hơn | Tùy nơi cân
+Trái Đất chuyển động quay quanh thiên thể nào? | Mặt Trời | Mặt Trăng | Sao Mộc | Sao Bắc Cực
+Mưa to kéo dài nhiều ngày dễ gây ra thiên tai gì? | Lũ lụt | Hạn hán | Sương muối | Nắng nóng
+Tia sáng chói kèm tiếng nổ lớn trong cơn giông gọi là gì? | Sét | Cực quang | Sao băng | Cầu vồng
+
+[vua]
+Muối ăn có tên hoá học là gì? | Natri clorua | Canxi cacbonat | Kali nitrat | Natri hiđroxit
+Độ mạnh của động đất thường được đo theo thang nào? | Thang Richter | Thang Beaufort | Thang Celsius | Thang Kelvin
+Sóng thần thường xảy ra sau hiện tượng gì? | Động đất dưới biển | Gió mùa thổi mạnh | Mưa lớn kéo dài | Nước triều cường
+Thủy triều trên Trái Đất chủ yếu do lực hút của thiên thể nào? | Mặt Trăng | Sao Hỏa | Sao Kim | Sao Mộc
+Vì sao giữa các thanh ray tàu hoả có để khe hở nhỏ? | Tránh giãn nở vì nhiệt | Tiết kiệm sắt thép | Cho nước mưa thoát | Để dễ tháo lắp
+Ảnh của một vật qua gương phẳng có kích thước thế nào? | Bằng vật | Lớn hơn vật | Nhỏ hơn vật | Gấp đôi vật
+Hệ Mặt Trời của chúng ta nằm trong thiên hà nào? | Ngân Hà | Tiên Nữ | Tam Giác | Xoáy Nước
+Ở Bắc bán cầu, ngày có thời gian ban ngày dài nhất năm gọi là gì? | Hạ chí | Đông chí | Xuân phân | Thu phân
+Lượng điện tiêu thụ trong hóa đơn tiền điện tính bằng đơn vị nào? | Ki-lô-oát giờ | Vôn | Ampe | Ôm
+Điện lưới sinh hoạt ở Việt Nam có hiệu điện thế khoảng bao nhiêu? | 220 vôn | 110 vôn | 12 vôn | 380 vôn
+Pin tiểu cung cấp loại dòng điện nào? | Dòng một chiều | Dòng xoay chiều | Dòng ba pha | Dòng cao tần
+Công thức hoá học của khí cacbonic là gì? | CO2 | CO | O2 | H2O
+Thành phần chính của đá vôi là chất gì? | Canxi cacbonat | Natri clorua | Sắt oxit | Nhôm oxit
+Giấm ăn có vị chua là do chứa axit gì? | Axit axetic | Axit sunfuric | Axit nitric | Axit clohiđric
+Nhỏ dung dịch axit lên giấy quỳ tím, giấy chuyển sang màu gì? | Màu đỏ | Màu xanh | Màu vàng | Màu đen
+Kim cương được tạo thành từ nguyên tố nào? | Cacbon | Silic | Canxi | Nhôm
+Ruột bút chì được làm chủ yếu từ chất gì? | Than chì | Kim loại chì | Than củi | Than đá
+Khí nào nhẹ nhất trong các khí? | Hydro | Heli | Oxy | Nitơ
+Dây điện cao thế trên các cột điện thường làm chủ yếu bằng kim loại nào? | Nhôm | Vàng | Bạc | Chì
+Tầng ô-dôn bảo vệ Trái Đất khỏi điều gì? | Tia cực tím | Thiên thạch | Gió bão | Mưa axit
+Hiệu ứng nhà kính tăng mạnh chủ yếu do khí nào tăng lên? | Khí cacbonic | Khí oxy | Khí nitơ | Khí heli
+Hành tinh nào ở xa Mặt Trời nhất trong hệ Mặt Trời? | Sao Hải Vương | Sao Thiên Vương | Sao Thổ | Sao Mộc
+Sao băng thực chất là gì? | Thiên thạch bốc cháy | Ngôi sao rơi xuống | Vệ tinh bị hỏng | Tia chớp từ xa
+Ánh sáng Mặt Trời đến được Trái Đất mất khoảng bao lâu? | Khoảng 8 phút | Khoảng 8 giây | Khoảng 8 giờ | Khoảng 1 ngày
+Trong chân không, ánh sáng đi được khoảng bao xa mỗi giây? | 300 nghìn km | 30 nghìn km | 3 triệu km | 300 km
+Âm thanh truyền nhanh nhất trong môi trường nào? | Chất rắn | Chất lỏng | Chất khí | Chân không
+Tần số của âm được đo bằng đơn vị nào? | Héc | Đề-xi-ben | Oát | Jun
+Độ to của âm thanh thường được đo bằng đơn vị nào? | Đề-xi-ben | Héc | Vôn | Niutơn
+Lên dây đàn càng căng thì âm phát ra thế nào? | Càng cao, càng bổng | Càng trầm | Càng nhỏ | Không thay đổi
+Lực được đo bằng đơn vị nào? | Niutơn | Jun | Oát | Paxcan
+Năng lượng và công được đo bằng đơn vị nào? | Jun | Niutơn | Vôn | Ampe
+Điện trở được đo bằng đơn vị nào? | Ôm | Vôn | Ampe | Oát
+Dụng cụ nào dùng để đo cường độ dòng điện? | Ampe kế | Vôn kế | Lực kế | Nhiệt kế
+Dụng cụ nào dùng để đo lực? | Lực kế | Ampe kế | Nhiệt kế | Ẩm kế
+Khí áp kế dùng để đo gì? | Áp suất không khí | Độ ẩm không khí | Tốc độ gió | Lượng mưa
+Con tàu bằng thép rất nặng mà vẫn nổi được là nhờ lực nào? | Lực đẩy Ác-si-mét | Lực ma sát | Lực từ | Lực đàn hồi
+Xe buýt phanh gấp, hành khách ngả người về phía trước là do đâu? | Quán tính | Trọng lực | Lực đàn hồi | Lực từ
+Hai vật nhiễm điện cùng dấu đặt gần nhau sẽ thế nào? | Đẩy nhau | Hút nhau | Dính vào nhau | Không tác dụng
+Cọ thước nhựa vào tóc khô rồi đưa gần giấy vụn, giấy bị hút là do đâu? | Thước nhiễm điện | Thước nhiễm từ | Lực hút chân không | Giấy bị ẩm
+Trong nguyên tử, hạt nào mang điện tích âm? | Electron | Proton | Nơtron | Hạt nhân
+Nguyên tố nào đứng đầu tiên trong bảng tuần hoàn? | Hydro | Heli | Oxy | Liti
+Mặt Trời được cấu tạo chủ yếu từ khí gì? | Hydro | Oxy | Nitơ | Cacbonic
+Kính lúp là loại thấu kính gì? | Thấu kính hội tụ | Thấu kính phân kì | Gương cầu lõm | Gương phẳng
+Gương chiếu hậu xe máy là loại gương gì để nhìn được rộng? | Gương cầu lồi | Gương cầu lõm | Gương phẳng | Thấu kính hội tụ
+Chiếc đũa cắm trong cốc nước trông như bị gãy là do hiện tượng gì? | Khúc xạ ánh sáng | Phản xạ ánh sáng | Nhật thực | Tán xạ ánh sáng
+Khi đun nồi nước, nhiệt truyền đi trong nước chủ yếu bằng cách nào? | Đối lưu | Bức xạ | Dẫn nhiệt | Ma sát
+Nước đang sôi, nếu vẫn tiếp tục đun thì nhiệt độ nước thế nào? | Giữ nguyên | Tăng mãi | Giảm dần | Tăng gấp đôi
+Giấy bạc dùng để nướng thức ăn thực chất làm bằng kim loại gì? | Nhôm | Bạc | Đồng | Kẽm
+Điện gió biến năng lượng gió thành điện nhờ thiết bị nào? | Tua-bin gió | Tấm pin mặt trời | Lò hơi | Ắc quy
+Hiện tượng nào sau đây là hiện tượng hoá học? | Sắt bị gỉ | Nước đá tan | Cồn bay hơi | Muối tan trong nước
+Than đá, dầu mỏ, khí đốt được gọi chung là gì? | Nhiên liệu hoá thạch | Năng lượng tái tạo | Kim loại quý | Khoáng chất nhẹ
+Thạch nhũ trong các hang động hình thành từ loại đá nào? | Đá vôi | Đá granit | Đá bazan | Đá phiến
+Đất đỏ ba-dan ở Tây Nguyên có nguồn gốc từ đâu? | Dung nham núi lửa | Phù sa sông | Đá vôi | Cát biển
+Lớp ngoài cùng của Trái Đất gọi là gì? | Lớp vỏ | Lớp manti | Lõi ngoài | Lõi trong
+"Vành đai lửa" với rất nhiều núi lửa bao quanh đại dương nào? | Thái Bình Dương | Đại Tây Dương | Ấn Độ Dương | Bắc Băng Dương
+Mùa đông, loại gió nào mang không khí lạnh về miền Bắc nước ta? | Gió mùa đông bắc | Gió tây nam | Gió Lào | Gió đông nam
+Gió Lào thổi vào miền Trung có đặc điểm gì? | Khô và nóng | Lạnh và ẩm | Mát và mưa | Lạnh và khô
+Bão nhiệt đới thường hình thành ở đâu? | Trên biển ấm | Trên sa mạc | Trên núi cao | Ở vùng cực
+Càng lên cao, áp suất khí quyển thay đổi thế nào? | Càng giảm | Càng tăng | Không đổi | Tăng gấp đôi
+Lượng mưa thường được đo bằng đơn vị nào? | Milimét | Lít | Ki-lô-gam | Độ C
+Cực quang thường xuất hiện ở vùng nào trên Trái Đất? | Gần hai cực | Xích đạo | Sa mạc | Vùng nhiệt đới
+Sao Hôm và sao Mai thực ra là cùng một hành tinh nào? | Sao Kim | Sao Hỏa | Sao Mộc | Sao Thủy
+Hành tinh nào nhỏ nhất trong hệ Mặt Trời? | Sao Thủy | Sao Hỏa | Sao Kim | Trái Đất
+Hành tinh nào sau đây là hành tinh đất đá? | Sao Hỏa | Sao Mộc | Sao Thổ | Sao Hải Vương
+"Năm ánh sáng" là đơn vị dùng để đo đại lượng gì? | Khoảng cách | Thời gian | Tốc độ | Độ sáng
+Vùng có lực hút mạnh đến mức ánh sáng cũng không thoát ra được gọi là gì? | Hố đen | Sao lùn trắng | Tinh vân | Sao chổi
+Người ta dùng phèn chua để làm gì với nước đục? | Làm trong nước | Làm mặn nước | Đun sôi nước | Tạo màu nước
+Khí nào thường được dùng để khử trùng nước máy? | Clo | Oxy | Nitơ | Heli
+Heli, neon, argon thuộc nhóm khí nào? | Khí hiếm | Khí độc | Khí đốt | Khí nhà kính
+Đun đường quá lửa sẽ cháy đen, phần đen đó chủ yếu là gì? | Cacbon | Sắt | Muối | Lưu huỳnh
+Lưu huỳnh ở dạng bột thường có màu gì? | Màu vàng | Màu đen | Màu trắng | Màu xanh lam
+Bình chữa cháy khí cacbonic dập lửa chủ yếu nhờ điều gì? | Ngăn oxy đến đám cháy | Làm ướt đám cháy | Thổi bay ngọn lửa | Tạo bọt xà phòng
+Ta hút được nước qua ống hút là nhờ đâu? | Áp suất khí quyển | Lực đàn hồi | Lực từ | Lực ma sát
+Dao được mài sắc thì cắt dễ hơn vì sao? | Tăng áp suất | Tăng khối lượng | Giảm trọng lượng | Tăng lực đàn hồi
+Thợ lặn càng xuống sâu thì áp suất nước thế nào? | Càng tăng | Càng giảm | Không đổi | Bằng không
+Khinh khí cầu đốt lửa bay lên được là nhờ đâu? | Khí nóng nhẹ hơn | Cánh quạt đẩy | Lực từ Trái Đất | Gió nâng lên
+Vật ở càng cao so với mặt đất thì dạng năng lượng nào càng lớn? | Thế năng | Động năng | Nhiệt năng | Quang năng
+"Năng lượng không tự sinh ra cũng không tự mất đi" là định luật nào? | Bảo toàn năng lượng | Vạn vật hấp dẫn | Định luật Ôm | Định luật Húc
+Lực nào giữ các hành tinh chuyển động quanh Mặt Trời? | Lực hấp dẫn | Lực từ | Lực ma sát | Lực đàn hồi
+Cầu chì trong mạch điện có tác dụng gì? | Ngắt khi quá tải | Tăng điện áp | Tiết kiệm điện | Đổi chiều dòng điện
+Chất bán dẫn phổ biến nhất để làm chip điện tử là gì? | Silic | Đồng | Nhôm | Sắt
+Hai bóng đèn mắc nối tiếp, một bóng bị cháy thì bóng kia thế nào? | Tắt theo | Sáng hơn | Sáng như cũ | Nhấp nháy
+Sóng radio và sóng wifi thuộc loại sóng gì? | Sóng điện từ | Sóng âm | Sóng siêu âm | Sóng nước
+Trời nắng gắt, thấy như có vũng nước trên đường nhựa ở xa, đó là hiện tượng gì? | Ảo ảnh | Cực quang | Cầu vồng | Nhật thực
+Ban ngày ta không nhìn thấy các vì sao chủ yếu vì sao? | Trời quá sáng | Sao đã tắt | Sao lặn hết | Mây che kín
+Các hố tròn trên bề mặt Mặt Trăng chủ yếu do đâu tạo ra? | Thiên thạch va vào | Mưa bào mòn | Gió thổi | Con người đào
+Khoáng vật tự nhiên nào cứng nhất? | Kim cương | Thạch anh | Hồng ngọc | Ngọc bích
+Lũ quét thường xảy ra ở vùng nào? | Miền núi dốc | Đồng bằng ven biển | Cao nguyên phẳng | Hải đảo
+Hơi nước ngưng tụ thành hạt nhỏ lơ lửng sát mặt đất gọi là gì? | Sương mù | Mưa đá | Tuyết | Mây ti
+Mưa phùn ở miền Bắc nước ta thường có vào thời gian nào? | Cuối đông đầu xuân | Giữa mùa hè | Đầu mùa thu | Cuối mùa thu
+Ở nước ta, áp thấp nhiệt đới mạnh lên, gió từ cấp 8 trở lên gọi là gì? | Bão | Lốc xoáy | Vòi rồng | Gió mùa
+Máy ghi lại các rung động của động đất gọi là gì? | Địa chấn kế | Phong kế | Áp kế | Ẩm kế
+Đèn LED tiết kiệm điện hơn đèn sợi đốt chủ yếu vì sao? | Ít tỏa nhiệt hơn | Sáng yếu hơn | Nhỏ gọn hơn | Dùng dây mảnh
+Bút thử điện sẽ sáng khi chạm vào dây nào? | Dây nóng | Dây nguội | Dây tiếp đất | Dây cáp mạng
+Ban đêm ở sa mạc, nhiệt độ thường thế nào? | Xuống rất thấp | Vẫn rất nóng | Nóng hơn ban ngày | Không thay đổi
+Chai thủy tinh đựng đầy nước để trong ngăn đá dễ bị vỡ vì sao? | Nước đá nở ra | Nước đá co lại | Thủy tinh co lại | Nước bốc hơi
+Lốp xe bơm thật căng để ngoài nắng gắt dễ nổ là vì sao? | Khí trong lốp nở ra | Cao su bị tan | Khí bị co lại | Lốp nhẹ đi
+Tính từ Mặt Trời, hành tinh thứ hai là hành tinh nào? | Sao Kim | Sao Thủy | Sao Hỏa | Sao Mộc
+Kim la bàn chỉ được hướng bắc nam là nhờ điều gì? | Trái Đất có từ trường | Trái Đất tự quay | Gió thổi theo hướng | Ánh sáng Mặt Trời
+Một héc-ta bằng bao nhiêu mét vuông? | 10 000 | 1000 | 100 | 100 000
+Năm nhuận dương lịch thường cứ bao nhiêu năm lại có một lần? | 4 năm | 2 năm | 3 năm | 5 năm
+Một mét khối bằng bao nhiêu lít? | 1000 lít | 100 lít | 10 lít | 10 000 lít
+Ký hiệu hoá học của vàng là gì? | Au | Ag | Al | Fe
+Mặc nhiều lớp áo mỏng thường ấm hơn một áo dày là nhờ đâu? | Không khí giữa các lớp | Áo mỏng nặng hơn | Vải mỏng tự sinh nhiệt | Áo mỏng dẫn nhiệt tốt
+Mặt Trời mọc ở đông, lặn ở tây vì Trái Đất tự quay theo hướng nào? | Từ tây sang đông | Từ đông sang tây | Từ bắc xuống nam | Từ nam lên bắc
+Đường đi của Trái Đất quanh Mặt Trời gọi là gì? | Quỹ đạo | Kinh tuyến | Vĩ tuyến | Xích đạo
+Chất nào sau đây là hợp chất, không phải đơn chất? | Nước | Oxy | Sắt | Vàng
+Khí có mùi trứng thối là khí gì? | Hydro sunfua | Amoniac | Clo | Metan
+Mùi khai đặc trưng thường do khí nào gây ra? | Amoniac | Metan | Oxy | Heli
+Pin và ắc quy tích trữ năng lượng dưới dạng nào? | Hoá năng | Cơ năng | Quang năng | Nhiệt năng
+Tàu thuyền đo độ sâu đáy biển bằng cách phát ra loại sóng nào? | Sóng siêu âm | Sóng hạ âm | Tia X | Tia hồng ngoại
+Thiên thể nào chiếm gần hết khối lượng của cả hệ Mặt Trời? | Mặt Trời | Sao Mộc | Sao Thổ | Trái Đất
+Sao chổi được cấu tạo chủ yếu từ gì? | Băng và bụi | Sắt và niken | Lửa cháy | Khí oxy
+Bếp từ chỉ đun được nồi có đáy làm bằng vật liệu nào? | Vật liệu nhiễm từ | Nhôm nguyên chất | Thủy tinh | Đất nung
+Vì sao không nên cho bát kim loại vào lò vi sóng? | Dễ gây tia lửa điện | Bát bị tan chảy | Thức ăn bị mặn | Lò bị đóng băng
+Cốc thủy tinh dày dễ nứt khi rót nước sôi vào là do đâu? | Giãn nở không đều | Nước quá nặng | Thủy tinh bị tan | Nước bị đông lại
+Cái kéo, cái búa nhổ đinh là ứng dụng của máy cơ đơn giản nào? | Đòn bẩy | Ròng rọc | Mặt phẳng nghiêng | Bánh răng
+Lối dốc cho xe lăn thay cho bậc thang là ứng dụng của máy cơ đơn giản nào? | Mặt phẳng nghiêng | Đòn bẩy | Ròng rọc | Bánh răng
+Băng ở hai cực tan nhiều sẽ gây ra hậu quả gì? | Mực nước biển dâng | Biển cạn dần | Động đất | Núi lửa phun
+Các đồ điện trong nhà thường được mắc theo kiểu nào? | Mắc song song | Mắc nối tiếp | Mắc vòng tròn | Mắc chéo nhau
+Dây nối đất ở vỏ máy giặt, tủ lạnh dùng để làm gì? | Chống điện giật | Tiết kiệm điện | Tăng công suất | Chống sét đánh
+Năng lượng lấy từ sức nóng trong lòng đất gọi là gì? | Địa nhiệt | Thủy điện | Phong điện | Quang điện
+Nam châm điện gồm cuộn dây quấn quanh một lõi bằng gì? | Sắt non | Đồng | Nhôm | Gỗ
+Nơi dung nham phun trào ra trên đỉnh núi lửa gọi là gì? | Miệng núi lửa | Sườn núi lửa | Chân núi lửa | Lò mắc-ma
+
+[kho]
+Bình gas nấu bếp chứa khí hoá lỏng gồm chủ yếu những khí nào? | Propan và butan | Metan và hydro | Oxy và nitơ | Clo và heli
+Thành phần chính của khí bi-ô-ga từ hầm ủ phân là khí gì? | Metan | Propan | Hydro | Amoniac
+Đèn ống quảng cáo phát ánh sáng đỏ cam truyền thống chứa khí gì? | Neon | Argon | Heli | Clo
+Mây, mưa, giông bão chủ yếu xảy ra ở tầng nào của khí quyển? | Tầng đối lưu | Tầng bình lưu | Tầng giữa | Tầng nhiệt
+Lớp ô-dôn tập trung chủ yếu ở tầng nào của khí quyển? | Tầng bình lưu | Tầng đối lưu | Tầng giữa | Tầng nhiệt
+Nguyên nhân chính sinh ra các mùa trong năm là gì? | Trục Trái Đất nghiêng | Khoảng cách thay đổi | Mặt Trăng che khuất | Gió mùa thay hướng
+Đuôi sao chổi luôn hướng về phía nào? | Ngược phía Mặt Trời | Về phía Mặt Trời | Về phía Trái Đất | Về phía Sao Mộc
+Bầu khí quyển mỏng của Sao Hỏa chủ yếu là khí gì? | Khí cacbonic | Khí nitơ | Khí oxy | Khí heli
+Hành tinh nào có nhiệt độ bề mặt nóng nhất hệ Mặt Trời? | Sao Kim | Sao Thủy | Sao Hỏa | Sao Mộc
+Năm 2006, Sao Diêm Vương bị xếp lại thành loại thiên thể gì? | Hành tinh lùn | Sao chổi | Vệ tinh | Sao lùn trắng
+Theo các nhà thiên văn, cuối đời Mặt Trời sẽ trở thành loại sao nào? | Sao lùn trắng | Hố đen | Sao nơtron | Sao xanh lam
+Vụ nổ cực sáng của một ngôi sao lớn vào cuối đời gọi là gì? | Siêu tân tinh | Sao băng | Tinh vân | Sao chổi
+Khi nguyệt thực toàn phần, Mặt Trăng thường có màu gì? | Đỏ sẫm | Xanh lam | Trắng sáng | Vàng chanh
+Ngày hạ chí, Mặt Trời chiếu thẳng góc xuống đường nào? | Chí tuyến Bắc | Xích đạo | Chí tuyến Nam | Vòng cực Bắc
+Âm có tần số trên 20 000 héc, tai người không nghe được, gọi là gì? | Siêu âm | Hạ âm | Tạp âm | Tiếng vang
+Biên độ dao động của nguồn âm càng lớn thì âm phát ra thế nào? | Càng to | Càng cao | Càng trầm | Càng nhỏ
+Áp suất được đo bằng đơn vị nào trong hệ đo lường quốc tế? | Paxcan | Niutơn | Jun | Héc
+Dụng cụ dùng để đo tốc độ gió gọi là gì? | Phong kế | Ẩm kế | Áp kế | Vũ kế
+Ròng rọc cố định giúp ta điều gì khi kéo vật lên cao? | Đổi hướng lực kéo | Giảm một nửa lực | Giảm trọng lượng vật | Tăng tốc độ kéo
+Theo định luật Ôm, cường độ dòng điện tỉ lệ thuận với đại lượng nào? | Hiệu điện thế | Điện trở | Công suất | Thời gian
+Súng giật lùi khi bắn là minh họa rõ cho định luật nào? | Định luật 3 Niu-tơn | Định luật 1 Niu-tơn | Định luật Ôm | Định luật Húc
+Dòng điện trong dây kim loại là dòng chuyển dời có hướng của hạt nào? | Electron tự do | Proton | Nơtron | Ion dương
+Số hiệu nguyên tử của một nguyên tố bằng số hạt nào trong hạt nhân? | Proton | Nơtron | Electron | Phôtôn
+Theo quy ước, bề mặt Trái Đất được chia thành bao nhiêu múi giờ chính? | 24 | 12 | 36 | 48
+Kim loại nào có nhiều nhất trong vỏ Trái Đất? | Nhôm | Sắt | Đồng | Canxi
+Mặt Trời tỏa năng lượng nhờ loại phản ứng nào? | Phản ứng nhiệt hạch | Phản ứng phân hạch | Phản ứng cháy | Phản ứng trung hòa
+Nhà máy điện hạt nhân tạo năng lượng nhờ phản ứng nào? | Phản ứng phân hạch | Phản ứng nhiệt hạch | Phản ứng cháy | Phản ứng trung hòa
+Chóa đèn pin dùng loại gương nào để tạo chùm sáng chiếu xa? | Gương cầu lõm | Gương cầu lồi | Gương phẳng | Kính lúp
+Chiếu ánh sáng trắng qua lăng kính, màu nào bị lệch nhiều nhất? | Màu tím | Màu đỏ | Màu vàng | Màu lục
+Cầu vồng được tạo ra nhờ hiện tượng nào của ánh sáng? | Tán sắc ánh sáng | Nhiễu xạ ánh sáng | Giao thoa ánh sáng | Phân cực ánh sáng
+Ba màu cơ bản của ánh sáng để tạo ra mọi màu trên màn hình là gì? | Đỏ, lục, lam | Đỏ, vàng, lam | Đỏ, vàng, tím | Cam, lục, tím
+Điều khiển từ xa của tivi thường dùng loại tia nào? | Tia hồng ngoại | Tia cực tím | Tia X | Tia gamma
+Nhiệt từ Mặt Trời truyền tới Trái Đất bằng cách nào? | Bức xạ nhiệt | Dẫn nhiệt | Đối lưu | Ma sát
+Phích nước giữ nóng lâu nhờ giữa hai lớp thủy tinh là gì? | Chân không | Không khí | Nước | Bông
+Máy cơ đơn giản cho ta lợi bao nhiêu lần về lực thì thiệt bấy nhiêu lần về gì? | Đường đi | Khối lượng | Nhiệt độ | Áp suất
+0 độ C bằng bao nhiêu độ F? | 32 độ F | 0 độ F | 100 độ F | 212 độ F
+Đun nước trên đỉnh núi cao, nước sẽ sôi ở nhiệt độ thế nào? | Dưới 100 độ C | Trên 100 độ C | Đúng 100 độ C | Không sôi được
+Nồi áp suất nấu chín nhanh vì nước bên trong thế nào? | Sôi ở nhiệt độ cao hơn | Sôi ở nhiệt độ thấp | Không cần sôi | Bốc hơi nhanh hơn
+Kim loại nào dẫn điện tốt nhất? | Bạc | Đồng | Vàng | Nhôm
+Dây tóc bóng đèn sợi đốt thường làm bằng kim loại nào? | Vonfram | Đồng | Nhôm | Thiếc
+Đồng thau là hợp kim của đồng với kim loại nào? | Kẽm | Thiếc | Nhôm | Chì
+Đuyra, hợp kim nhẹ làm thân máy bay, có thành phần chính là kim loại nào? | Nhôm | Sắt | Kẽm | Chì
+Ký hiệu hoá học Na là của nguyên tố nào? | Natri | Nitơ | Neon | Niken
+Ký hiệu hoá học của bạc là gì? | Ag | Au | Pb | Sn
+Ký hiệu hoá học K là của nguyên tố nào? | Kali | Canxi | Kẽm | Cacbon
+Hg là ký hiệu hoá học của nguyên tố nào? | Thủy ngân | Heli | Hydro | Bạc
+Thổi khí nào vào nước vôi trong sẽ làm nước vẩn đục? | Khí cacbonic | Khí oxy | Khí nitơ | Khí hydro
+Vôi sống có tên hoá học là gì? | Canxi oxit | Canxi cacbonat | Canxi clorua | Natri oxit
+Đưa que đóm còn tàn đỏ vào lọ khí nào thì que đóm bùng cháy? | Khí oxy | Khí nitơ | Khí cacbonic | Khí heli
+Phản ứng giữa axit và bazơ tạo ra muối và nước gọi là phản ứng gì? | Phản ứng trung hòa | Phản ứng thế | Phản ứng cháy | Phản ứng phân hủy
+Đá granit thuộc loại đá nào? | Đá mắc-ma | Đá trầm tích | Đá biến chất | Đá vôi
+Đá cẩm thạch hình thành do loại đá nào bị biến chất? | Đá vôi | Đá granit | Đá bazan | Sa thạch
+Lớp nào bên trong Trái Đất ở trạng thái lỏng? | Lõi ngoài | Lõi trong | Lớp vỏ | Thạch quyển
+Phần lớn các trận động đất mạnh xảy ra ở đâu? | Ranh giới mảng | Giữa lục địa | Giữa sa mạc | Đồng bằng
+Ở Bắc bán cầu, gió trong cơn bão xoáy theo chiều nào? | Ngược kim đồng hồ | Thuận kim đồng hồ | Thổi thẳng một hướng | Lúc xuôi lúc ngược
+Vùng mắt bão thường có thời tiết thế nào? | Tương đối yên lặng | Gió mạnh nhất | Mưa to nhất | Có tuyết rơi
+Trong tầng đối lưu, cứ lên cao 100 mét thì nhiệt độ giảm khoảng bao nhiêu? | 0,6 độ C | 6 độ C | 1,6 độ C | 10 độ C
+Cực quang sinh ra do các hạt mang điện từ đâu va vào khí quyển? | Gió Mặt Trời | Mặt Trăng | Núi lửa | Sao chổi
+Nguyệt thực chỉ có thể xảy ra vào đêm có trăng gì? | Trăng tròn | Trăng non | Trăng khuyết | Trăng lưỡi liềm
+Lực hấp dẫn trên Mặt Trăng bằng khoảng bao nhiêu so với Trái Đất? | Một phần sáu | Một phần hai | Một phần mười | Một phần ba
+Vệ tinh tự nhiên lớn nhất hệ Mặt Trời quay quanh hành tinh nào? | Sao Mộc | Sao Thổ | Trái Đất | Sao Hải Vương
+Dung dịch có độ pH nhỏ hơn 7 mang tính chất gì? | Tính axit | Tính bazơ | Trung tính | Tính kiềm mạnh
+Một đơn vị thiên văn là khoảng cách trung bình giữa hai thiên thể nào? | Trái Đất và Mặt Trời | Trái Đất và Mặt Trăng | Mặt Trời và Sao Mộc | Sao Hỏa và Mặt Trời
+Khoảng cách trung bình từ Trái Đất đến Mặt Trăng là khoảng bao nhiêu? | 384 nghìn km | 38 nghìn km | 3,8 triệu km | 150 triệu km
+Ngôi sao có màu nào thường có nhiệt độ bề mặt cao nhất? | Xanh lam | Đỏ | Vàng | Cam
+Trạng thái vật chất bị ion hóa có trong tia sét và Mặt Trời gọi là gì? | Plasma | Thể keo | Thể lỏng | Thể rắn
+Thiên hà Ngân Hà có hình dạng gì? | Xoắn ốc | Hình cầu | Hình elip | Hình vành khăn
+Trong nước, âm thanh truyền với tốc độ khoảng bao nhiêu? | 1500 mét/giây | 340 mét/giây | 150 mét/giây | 15 000 mét/giây
+Người ta thường dựa vào chòm sao nào để tìm sao Bắc Cực? | Gấu Lớn | Lạp Hộ | Song Tử | Sư Tử
+Sao Bắc Cực thuộc chòm sao nào? | Gấu Nhỏ | Gấu Lớn | Thiên Hậu | Lạp Hộ
+Nước cứng là nước chứa nhiều ion của những kim loại nào? | Canxi và magie | Natri và kali | Sắt và đồng | Nhôm và kẽm
+Than hoạt tính trong máy lọc nước có tác dụng chính là gì? | Hấp phụ chất bẩn | Diệt vi khuẩn | Thêm khoáng chất | Làm mềm nước
+Ắc quy chì trên ô tô, xe máy dùng dung dịch axit nào? | Axit sunfuric | Axit clohiđric | Axit nitric | Axit axetic
+Khi pha loãng axit sunfuric đặc, phải làm thế nào cho an toàn? | Rót axit vào nước | Rót nước vào axit | Đun nóng trước | Đổ thật nhanh
+Kim loại nào mềm, cắt được bằng dao và phản ứng mạnh với nước? | Natri | Sắt | Đồng | Nhôm
+Khí oxy chiếm khoảng bao nhiêu phần thể tích không khí? | Một phần năm | Một nửa | Ba phần tư | Một phần mười
+Mỗi phân tử ô-dôn gồm mấy nguyên tử oxy? | 3 | 2 | 4 | 1
+Ngoài sắt, kim loại nào sau đây cũng bị nam châm hút? | Niken | Đồng | Nhôm | Kẽm
+Ban ngày ở vùng ven biển, gió thường thổi theo hướng nào? | Từ biển vào đất liền | Từ đất liền ra biển | Dọc theo bờ biển | Từ trên cao xuống
+Nước nguyên chất có khối lượng riêng lớn nhất ở nhiệt độ nào? | 4 độ C | 0 độ C | 100 độ C | 20 độ C
+Áp suất khí quyển ở mặt nước biển bằng khoảng bao nhiêu milimét thủy ngân? | 760 | 670 | 1000 | 76
+Khối lượng riêng của nước nguyên chất xấp xỉ bao nhiêu? | 1000 kg/mét khối | 100 kg/mét khối | 10 kg/mét khối | 1 kg/mét khối
+Con lắc đơn sẽ dao động chậm hơn khi ta làm gì? | Tăng chiều dài dây | Tăng khối lượng quả | Giảm chiều dài dây | Giảm khối lượng quả
+Trong chân không, thả cùng lúc hòn bi và chiếc lông vũ thì thế nào? | Chạm đất cùng lúc | Hòn bi chạm trước | Lông vũ chạm trước | Lông vũ lơ lửng
+Gia tốc rơi tự do gần mặt đất xấp xỉ bao nhiêu mét trên giây bình phương? | 9,8 | 1,6 | 3,7 | 19,6
+Nhà du hành lên Mặt Trăng, đại lượng nào của họ không thay đổi? | Khối lượng | Trọng lượng | Sức nặng | Lực hút lên người
+Nhỏ giấm lên bột đá vôi thấy sủi bọt, khí thoát ra là khí gì? | Khí cacbonic | Khí oxy | Khí hydro | Khí clo
+Vòi ấm nước làm cao ngang miệng ấm dựa trên nguyên lý nào? | Bình thông nhau | Lực đẩy Ác-si-mét | Định luật Ôm | Định luật Húc
+Kích thủy lực nâng được ô tô nặng dựa trên nguyên lý nào? | Nguyên lý Pa-xcan | Lực đẩy Ác-si-mét | Định luật Ôm | Định luật Húc
+Tàu ngầm lặn xuống hoặc nổi lên bằng cách nào? | Bơm, xả nước khoang | Thay đổi tốc độ | Bật tắt động cơ | Dùng nam châm lớn
+Rắc muối lên mặt đường đóng băng giúp băng tan vì muối làm gì? | Hạ điểm đông đặc | Tăng nhiệt độ | Hút ánh nắng | Tạo ra lửa
+Vì sao không dùng nước để dập đám cháy xăng dầu? | Xăng dầu nổi trên nước | Nước làm xăng nổ | Nước bốc cháy | Nước quá nặng
+Đồ bạc bị xỉn đen thường do phản ứng với hợp chất của nguyên tố nào? | Lưu huỳnh | Nitơ | Heli | Natri
+Đồ đồng để lâu ngoài trời thường phủ một lớp gỉ màu gì? | Xanh lục | Đỏ tươi | Trắng | Vàng
+Mưa axit chủ yếu do khí thải nào gây ra? | Lưu huỳnh đioxit | Khí heli | Khí metan | Khí oxy
+Hóa thạch thường được tìm thấy trong loại đá nào? | Đá trầm tích | Đá mắc-ma | Đá biến chất | Đá bazan
+Mưa đá thường rơi từ loại mây nào? | Mây vũ tích | Mây ti | Mây tầng | Mây trung tích
+El Nino là hiện tượng nước biển ấm lên bất thường ở đại dương nào? | Thái Bình Dương | Đại Tây Dương | Ấn Độ Dương | Bắc Băng Dương
+Tại điểm cực Bắc, một đêm dài liên tục có thể kéo dài khoảng bao lâu? | Khoảng 6 tháng | Khoảng 1 tháng | Khoảng 1 năm | Khoảng 3 ngày
+Muốn nam châm điện mạnh hơn, ta có thể làm gì? | Tăng số vòng dây | Giảm dòng điện | Bỏ lõi sắt | Thay lõi bằng gỗ
+Ngâm đinh sắt sạch vào dung dịch đồng sunfat, hiện tượng gì xảy ra? | Đồng đỏ bám lên đinh | Đinh tan hết ngay | Sinh ra khí oxy | Dung dịch hóa đỏ
+Máy biến áp chỉ hoạt động được với loại dòng điện nào? | Dòng xoay chiều | Dòng một chiều | Dòng từ pin | Dòng tĩnh điện
+Hai dây cùng chất, cùng tiết diện, dây càng dài thì điện trở thế nào? | Càng lớn | Càng nhỏ | Không đổi | Bằng không
+Sóng âm truyền trong không khí là loại sóng gì? | Sóng dọc | Sóng ngang | Sóng điện từ | Sóng ánh sáng
+Ở cầu vồng thông thường, màu nằm ở vòng ngoài cùng là màu gì? | Màu đỏ | Màu tím | Màu vàng | Màu lam
+Cáp quang truyền tín hiệu ánh sáng đi xa dựa trên hiện tượng nào? | Phản xạ toàn phần | Khúc xạ ánh sáng | Tán sắc ánh sáng | Nhiễu xạ ánh sáng
+Theo sách giáo khoa, phần nào của ngọn lửa nến nóng nhất? | Phần ngoài cùng | Phần lõi sát bấc | Phần đáy ngọn lửa | Phần giữa
+Pháo hoa có màu vàng rực thường nhờ muối của kim loại nào? | Natri | Đồng | Kali | Magie
+Trái Đất ở gần Mặt Trời nhất vào khoảng tháng nào? | Tháng 1 | Tháng 7 | Tháng 6 | Tháng 4
+Gió luôn thổi từ vùng khí áp nào sang vùng khí áp nào? | Từ cao sang thấp | Từ thấp sang cao | Từ bắc xuống nam | Từ tây sang đông
+Nhiệt độ của tia sét so với bề mặt Mặt Trời thế nào? | Nóng hơn nhiều lần | Lạnh hơn nhiều lần | Bằng nhau | Chỉ bằng một nửa
+Hai hành tinh nào không có vệ tinh tự nhiên nào? | Sao Thủy và Sao Kim | Sao Hỏa và Sao Kim | Sao Thủy và Sao Hỏa | Trái Đất và Sao Kim
+Loại đá nào có thể nổi trên mặt nước? | Đá bọt | Đá granit | Đá vôi | Đá cẩm thạch
+Đứng trên Mặt Trăng vào ban ngày, bầu trời có màu gì? | Màu đen | Màu xanh lam | Màu cam | Màu trắng
+Hành tinh nào có độ dài một ngày gần bằng Trái Đất nhất? | Sao Hỏa | Sao Kim | Sao Mộc | Sao Thủy
+Các ngôi sao trông như nhấp nháy là do đâu? | Khí quyển xáo động | Sao tự tắt bật | Sao quay rất nhanh | Mắt ta chớp
+Ngoài Mặt Trời, ngôi sao sáng nhất bầu trời đêm là sao nào? | Thiên Lang | Bắc Cực | Chức Nữ | Ngưu Lang
+Mặt Trăng tròn rồi khuyết theo từng ngày là do đâu? | Vị trí so với Mặt Trời | Trái Đất che bóng | Mây che khuất | Mặt Trăng co lại
+Khi ngắm cầu vồng, Mặt Trời thường ở vị trí nào so với ta? | Sau lưng ta | Trước mặt ta | Trên đỉnh đầu | Dưới đường chân trời
+Băng phiến để trong tủ quần áo nhỏ dần rồi hết là do hiện tượng gì? | Thăng hoa | Nóng chảy | Ngưng tụ | Đông đặc
+Thấy chớp, khoảng 3 giây sau mới nghe sấm, tia sét cách ta khoảng bao xa? | Khoảng 1 km | Khoảng 3 km | Khoảng 100 m | Khoảng 10 km
+Hạt nhân nguyên tử gồm proton và loại hạt nào? | Nơtron | Electron | Phôtôn | Ion
+Định luật Húc mô tả liên hệ giữa độ biến dạng và lực nào? | Lực đàn hồi | Lực ma sát | Lực hấp dẫn | Lực từ
+Kim loại nào sau đây không tác dụng với axit clohiđric loãng? | Đồng | Sắt | Kẽm | Nhôm

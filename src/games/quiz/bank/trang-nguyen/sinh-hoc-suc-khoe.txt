@@ -1,0 +1,376 @@
+# Sinh học và sức khoẻ: cơ thể người, dinh dưỡng, sơ cứu, vi sinh vật, tế bào, di truyền, bệnh phổ biến
+[de]
+Cơ quan nào bơm máu đi khắp cơ thể? | Tim | Phổi | Gan | Dạ dày
+Cơ quan chính giúp con người hô hấp là gì? | Phổi | Tim | Thận | Dạ dày
+Mắt là cơ quan của giác quan nào? | Thị giác | Thính giác | Khứu giác | Xúc giác
+Tai là cơ quan của giác quan nào? | Thính giác | Thị giác | Vị giác | Khứu giác
+Mũi giúp ta nhận biết điều gì? | Mùi | Âm thanh | Màu sắc | Độ cứng
+Lưỡi giúp ta cảm nhận điều gì của món ăn? | Vị | Màu | Tiếng | Hình dạng
+Da là cơ quan của giác quan nào? | Xúc giác | Vị giác | Thị giác | Thính giác
+Cơ quan nào điều khiển suy nghĩ và mọi hoạt động của cơ thể? | Não | Tim | Gan | Phổi
+Hộp sọ có nhiệm vụ bảo vệ cơ quan nào? | Não | Tim | Phổi | Gan
+Lồng ngực bảo vệ chủ yếu những cơ quan nào? | Tim và phổi | Não và tủy sống | Ruột và bàng quang | Mắt và tai
+Sau khi nuốt, thức ăn đi qua ống nào để xuống dạ dày? | Thực quản | Khí quản | Niệu quản | Ống mật
+Không khí hít vào đi xuống phổi qua ống nào? | Khí quản | Thực quản | Niệu quản | Ống mật
+Cơ quan nào lọc máu và tạo ra nước tiểu? | Thận | Gan | Phổi | Tim
+Nhiệt độ bình thường của cơ thể người vào khoảng bao nhiêu? | 37 độ C | 33 độ C | 40 độ C | 42 độ C
+Thiếu vitamin A lâu ngày dễ bị bệnh gì ở mắt? | Quáng gà | Đau mắt đỏ | Lẹo mắt | Lác mắt
+Cam, chanh, bưởi là nguồn giàu vitamin nào? | Vitamin C | Vitamin A | Vitamin D | Vitamin K
+Sữa giúp xương chắc khoẻ vì giàu chất khoáng nào? | Canxi | Sắt | Iốt | Kẽm
+Thiếu chất sắt dễ dẫn đến tình trạng gì? | Thiếu máu | Bướu cổ | Còi xương | Quáng gà
+Dùng muối iốt giúp phòng bệnh nào? | Bướu cổ | Thiếu máu | Còi xương | Sâu răng
+Trẻ em thiếu vitamin D dễ mắc bệnh gì? | Còi xương | Bướu cổ | Quáng gà | Đau mắt đỏ
+Rửa tay đúng cách cần nước sạch và thứ gì? | Xà phòng | Muối ăn | Giấm | Nước hoa
+Bệnh nào do muỗi vằn truyền? | Sốt xuất huyết | Lao phổi | Thủy đậu | Quai bị
+Ngủ màn giúp phòng các bệnh do con gì truyền? | Muỗi | Ruồi | Chuột | Gián
+Bệnh cúm do loại tác nhân nào gây ra? | Virus | Vi khuẩn | Nấm | Giun sán
+Khi bị bỏng nhẹ, việc nên làm đầu tiên là gì? | Xả dưới nước mát | Bôi kem đánh răng | Bôi nước mắm | Rắc muối lên
+Ở Việt Nam, gọi cấp cứu y tế thì bấm số nào? | 115 | 113 | 114 | 116
+Máu được tim đẩy đi trong những ống nào? | Mạch máu | Dây thần kinh | Khí quản | Ống tiêu hoá
+Tế bào máu nào làm nhiệm vụ chở oxy? | Hồng cầu | Bạch cầu | Tiểu cầu | Tế bào da
+Tế bào máu nào giúp cơ thể chống lại vi trùng? | Bạch cầu | Hồng cầu | Tiểu cầu | Tế bào mỡ
+Khi hít vào, cơ thể lấy khí nào để duy trì sự sống? | Oxy | Cacbonic | Nitơ | Hiđrô
+Những chiếc răng phía trước dùng để cắn đứt thức ăn gọi là gì? | Răng cửa | Răng hàm | Răng khôn | Răng tiền hàm
+Răng hàm có tác dụng chính là gì? | Nghiền nhỏ thức ăn | Cắn đứt thức ăn | Giữ lưỡi | Giúp huýt sáo
+Răng sữa sẽ được thay bằng răng gì? | Răng vĩnh viễn | Răng giả | Răng khôn | Răng sứ
+Nên đánh răng ít nhất mấy lần mỗi ngày? | 2 lần | 1 lần | 5 lần | 7 lần
+Người bị cận thị nhìn không rõ vật ở đâu? | Ở xa | Ở gần | Ở bên trái | Ở bên phải
+Tiêm vắc xin giúp cơ thể có được điều gì? | Miễn dịch với bệnh | Chiều cao tăng vọt | Hết đau đầu | Giảm cân nhanh
+Ngồi học sai tư thế lâu ngày dễ bị cong vẹo bộ phận nào? | Cột sống | Xương đùi | Xương sọ | Xương ngón tay
+Thức ăn được nhai nghiền nhỏ đầu tiên ở đâu? | Khoang miệng | Dạ dày | Ruột non | Thực quản
+Sau khi nuốt, thức ăn được chứa và nhào trộn ở cơ quan nào? | Dạ dày | Gan | Thận | Phổi
+Ruột non nối tiếp ngay sau cơ quan nào? | Dạ dày | Thực quản | Ruột già | Gan
+Đoạn dài nhất của ống tiêu hoá là đoạn nào? | Ruột non | Ruột già | Dạ dày | Thực quản
+Tim nằm trong khoang nào của cơ thể? | Lồng ngực | Khoang bụng | Hộp sọ | Khoang chậu
+Đơn vị cơ bản cấu tạo nên mọi cơ thể sống là gì? | Tế bào | Mô | Cơ quan | Hệ cơ quan
+Muốn nhìn rõ vi khuẩn phải dùng dụng cụ nào? | Kính hiển vi | Kính lúp | Kính thiên văn | Ống nhòm
+Cơ thể thiếu nước nghiêm trọng gọi là tình trạng gì? | Mất nước | Thiếu máu | Béo phì | Dị ứng
+Ăn nhiều kẹo ngọt mà không chải răng dễ bị gì? | Sâu răng | Cận thị | Còi xương | Bướu cổ
+Gạo, ngô, khoai giàu nhóm chất nào? | Tinh bột | Chất đạm | Chất béo | Chất khoáng
+Thịt, cá, trứng, đậu phụ giàu nhóm chất nào? | Chất đạm | Tinh bột | Chất xơ | Đường
+Dầu ăn, mỡ lợn, bơ thuộc nhóm chất nào? | Chất béo | Chất đạm | Tinh bột | Chất xơ
+Rau xanh giàu chất gì giúp ruột hoạt động tốt, dễ đi ngoài? | Chất xơ | Chất béo | Chất đạm | Tinh bột
+Quả nào giàu chất tạo vitamin A, thường dùng nấu xôi đỏ ngày Tết? | Quả gấc | Quả chanh | Quả chuối | Quả dừa
+Bệnh tay chân miệng hay gặp nhất ở lứa tuổi nào? | Trẻ dưới 5 tuổi | Thanh niên | Trung niên | Người cao tuổi
+Cơ quan nào hình hạt đậu, mỗi người có hai quả? | Thận | Tim | Gan | Dạ dày
+Con người có mấy lá phổi? | 2 | 1 | 3 | 4
+Đứt tay chảy máu nhẹ, nên làm gì trước tiên? | Ép gạc sạch cầm máu | Rắc thuốc lào | Bôi vôi | Để máu tự chảy
+Dụng cụ nào dùng để đo nhiệt độ cơ thể? | Nhiệt kế | Huyết áp kế | Ống nghe | Cân sức khoẻ
+Bác sĩ dùng dụng cụ nào để nghe tim phổi? | Ống nghe | Nhiệt kế | Kính hiển vi | Búa phản xạ
+Khi chạy nhanh, tim đập thế nào so với lúc nghỉ? | Nhanh hơn | Chậm hơn | Ngừng lại | Không đổi
+Mồ hôi được tiết ra ngoài qua cơ quan nào? | Da | Phổi | Gan | Dạ dày
+Đổ mồ hôi giúp cơ thể làm gì? | Hạ nhiệt độ | Tiêu hoá thức ăn | Tạo máu | Tăng cân
+Khi trời lạnh, cơ thể run lên để làm gì? | Sinh nhiệt sưởi ấm | Hạ nhiệt độ | Tiêu hoá nhanh | Giảm cân
+Người bị bệnh tiểu đường có lượng chất gì trong máu cao? | Đường | Muối | Sắt | Canxi
+Người mắc bệnh tiểu đường cần hạn chế ăn gì? | Đồ ngọt | Rau xanh | Nước lọc | Cá
+Hút thuốc lá làm tăng mạnh nguy cơ ung thư ở cơ quan nào? | Phổi | Da | Xương | Mắt
+Thuốc lá chứa chất gây nghiện nào? | Nicotin | Cafein | Vitamin | Insulin
+Uống nhiều rượu lâu ngày dễ gây xơ hoá cơ quan nào? | Gan | Phổi | Tim | Mắt
+Nghe tiếng ồn quá lớn lâu ngày có hại cho cơ quan nào? | Tai | Mắt | Mũi | Lưỡi
+Thấy người bị điện giật, việc đầu tiên cần làm là gì? | Ngắt nguồn điện | Kéo tay nạn nhân | Tạt nước vào | Xoa dầu gió
+Nước tiểu được chứa ở đâu trước khi thải ra ngoài? | Bàng quang | Thận | Ruột già | Túi mật
+Cơ thể cử động được nhờ xương phối hợp với bộ phận nào? | Cơ | Mỡ | Tóc | Móng
+Lông mũi có tác dụng gì? | Cản bụi bẩn | Giúp ngửi mùi | Giữ thăng bằng | Giúp nói to
+Ăn quá mặn lâu ngày dễ gây bệnh gì? | Tăng huyết áp | Thiếu máu | Còi xương | Quáng gà
+Trong 6 tháng đầu đời, trẻ nên được nuôi hoàn toàn bằng gì? | Sữa mẹ | Nước cháo | Sữa đặc | Nước cơm
+Bệnh giun đũa lây chủ yếu qua đường nào? | Ăn uống | Hít thở | Muỗi đốt | Qua da
+Chỗ mềm trên đỉnh đầu trẻ sơ sinh gọi là gì? | Thóp | Xoáy | Gáy | Thái dương
+Xương bánh chè nằm ở đâu? | Đầu gối | Khuỷu tay | Vai | Cổ chân
+Khuỷu tay là khớp nối cánh tay với phần nào? | Cẳng tay | Bàn tay | Vai | Ngón tay
+Xương nào tạo nên khung vùng hông, nâng đỡ phần bụng dưới? | Xương chậu | Xương sườn | Xương đòn | Xương sọ
+Ngón nào trên bàn tay chỉ có hai đốt? | Ngón cái | Ngón trỏ | Ngón giữa | Ngón út
+Tim của một người to cỡ chừng nào? | Nắm tay người đó | Quả bưởi | Hạt đậu | Quả dưa hấu
+Hệ nhóm máu ABO có mấy nhóm máu chính? | 4 | 2 | 3 | 6
+Dấu vân tay của mỗi người có đặc điểm gì? | Không ai giống ai | Giống hệt bố | Giống hệt mẹ | Đổi mỗi năm
+Năng lượng trong thức ăn thường được đo bằng đơn vị nào? | Calo | Mét | Lít | Vôn
+Hen phế quản là bệnh của hệ cơ quan nào? | Hô hấp | Tiêu hoá | Bài tiết | Vận động
+Hệ cơ quan gồm thận, niệu quản, bàng quang gọi là gì? | Hệ bài tiết | Hệ tiêu hoá | Hệ tuần hoàn | Hệ hô hấp
+Hệ cơ quan gồm tim và các mạch máu gọi là gì? | Hệ tuần hoàn | Hệ hô hấp | Hệ thần kinh | Hệ bài tiết
+Bộ xương và hệ cơ cùng tạo nên hệ cơ quan nào? | Hệ vận động | Hệ tiêu hoá | Hệ nội tiết | Hệ hô hấp
+Bắt mạch ở cổ tay là để biết nhịp đập của cơ quan nào? | Tim | Phổi | Gan | Thận
+Bác sĩ thường dùng cách nào để xem thai nhi trong bụng mẹ? | Siêu âm | Chụp X-quang | Nội soi | Bắt mạch
+Thai nhi lớn lên trong cơ quan nào của người mẹ? | Tử cung | Dạ dày | Buồng trứng | Bàng quang
+Thuốc paracetamol thường được dùng để làm gì? | Hạ sốt, giảm đau | Diệt vi khuẩn | Bổ sung sắt | Chống say xe
+"Ăn chín uống sôi" giúp phòng các bệnh đường nào? | Tiêu hoá | Hô hấp | Tuần hoàn | Thần kinh
+Đeo khẩu trang giúp phòng bệnh lây qua đường nào? | Hô hấp | Tiêu hoá | Đường máu | Qua da
+Bị chó, mèo cắn cần đi tiêm phòng bệnh gì? | Bệnh dại | Bệnh lao | Thủy đậu | Bệnh sởi
+Người trưởng thành nên ngủ khoảng mấy tiếng mỗi đêm? | 7 đến 9 tiếng | 3 đến 4 tiếng | 12 đến 14 tiếng | 1 đến 2 tiếng
+Chảy máu cam là chảy máu ở đâu? | Mũi | Tai | Miệng | Mắt
+Ăn nhiều đồ chiên rán, ít vận động dễ dẫn đến tình trạng gì? | Béo phì | Còi xương | Bướu cổ | Quáng gà
+Chữ nổi Braille được làm ra cho người nào? | Người khiếm thị | Người khiếm thính | Người cao tuổi | Trẻ sơ sinh
+Ngôn ngữ ký hiệu chủ yếu dành cho người nào? | Người khiếm thính | Người khiếm thị | Người cao tuổi | Trẻ sơ sinh
+Theo cách nói quen thuộc, con người có mấy giác quan? | 5 | 3 | 4 | 7
+Chớp mắt giúp ích gì cho mắt? | Giữ ẩm cho mắt | Nhìn xa hơn | Đổi màu mắt | Nghe rõ hơn
+Bụi bay vào mắt, việc KHÔNG nên làm là gì? | Dụi mắt thật mạnh | Rửa bằng nước sạch | Chớp mắt nhẹ | Nhỏ nước muối sinh lý
+Bộ phận nào ngăn mồ hôi trên trán chảy xuống mắt? | Lông mày | Lông mi | Mí mắt | Lòng trắng
+Ngộ độc thực phẩm thường có triệu chứng nào? | Nôn và tiêu chảy | Ho và sổ mũi | Ngứa mắt | Đau răng
+Bánh mì bị mốc xanh thì nên làm gì? | Bỏ đi | Cắt chỗ mốc ăn tiếp | Hấp lại rồi ăn | Phơi nắng rồi ăn
+Cồn 70 độ trong tủ thuốc gia đình dùng để làm gì? | Sát khuẩn | Uống bổ | Hạ sốt | Nhỏ mắt
+Rửa vết xước nhỏ trên da nên dùng gì? | Nước muối sinh lý | Nước mắm | Dầu ăn | Nước ngọt có ga
+Răng nanh có tác dụng chính là gì? | Xé thức ăn | Nghiền thức ăn | Giữ nước bọt | Tạo tiếng nói
+Thực phẩm nào sau đây giàu chất sắt nhất? | Thịt bò | Cơm trắng | Dưa chuột | Nước lọc
+Thực phẩm nào sau đây giàu iốt tự nhiên? | Cá biển | Gạo tẻ | Đường kính | Dầu ăn
+Nhiệt kế thường được kẹp ở đâu để đo nhiệt độ cơ thể? | Nách | Khuỷu tay | Đầu gối | Cổ chân
+Bị đau răng nên đến gặp bác sĩ chuyên khoa nào? | Nha khoa | Nhãn khoa | Nhi khoa | Sản khoa
+Chuyên khoa chữa bệnh cho trẻ em gọi là gì? | Nhi khoa | Nha khoa | Nhãn khoa | Da liễu
+Bác sĩ nhãn khoa chuyên chữa bệnh về bộ phận nào? | Mắt | Răng | Tai | Da
+Nghi bị gãy xương, bác sĩ thường cho chụp gì để xem chỗ gãy? | X-quang | Điện tim | Siêu âm tim | Xét nghiệm máu
+Bệnh nào gây hắt hơi, sổ mũi, hay gặp khi trời trở lạnh? | Cảm lạnh | Sâu răng | Còi xương | Đau ruột thừa
+Người bị viễn thị nhìn không rõ vật ở đâu? | Ở gần | Ở xa | Ở trên cao | Ở dưới thấp
+Người bị hạ đường huyết, choáng váng, nên được cho uống gì ngay? | Nước đường | Nước lọc | Nước chè đặc | Nước muối
+Tắm rửa sạch sẽ thường xuyên giúp phòng nhóm bệnh nào? | Bệnh ngoài da | Cận thị | Bướu cổ | Sâu răng
+Đi ngoài trời nắng gắt lâu, không đội mũ dễ bị gì? | Say nắng | Sâu răng | Cận thị | Bướu cổ
+Ruồi đậu vào thức ăn dễ làm lây bệnh gì? | Tiêu chảy | Cận thị | Còi xương | Bướu cổ
+Sốt cao, ra nhiều mồ hôi thì cơ thể cần được bù thêm gì? | Nước | Mỡ | Đường | Muối iốt
+Khi đo huyết áp, băng quấn thường được quấn ở đâu? | Cánh tay | Cổ | Bụng | Đùi
+Lớp vảy trắng do da đầu bong ra gọi là gì? | Gàu | Chấy | Mụn | Rôm
+Rôm sảy ở trẻ em hay gặp nhất vào mùa nào? | Mùa hè | Mùa đông | Mùa xuân | Mùa thu
+[vua]
+Máu có màu đỏ nhờ chất nào chứa sắt trong hồng cầu? | Huyết sắc tố | Diệp lục | Melanin | Keratin
+Thức ăn được tiêu hoá và hấp thụ nhiều nhất ở đâu? | Ruột non | Dạ dày | Ruột già | Thực quản
+Trẻ em có tổng cộng bao nhiêu chiếc răng sữa? | 20 | 24 | 28 | 16
+Bộ xương người trưởng thành có bao nhiêu chiếc xương? | 206 | 106 | 306 | 256
+Khi bị chảy máu cam, nên để đầu ở tư thế nào? | Hơi cúi về trước | Ngửa ra sau | Nằm ngửa | Nghiêng hẳn sang bên
+Bệnh sốt rét lây sang người qua vết đốt của loài nào? | Muỗi Anopheles | Muỗi vằn | Ruồi nhà | Bọ chét
+Bệnh sốt rét do loại tác nhân nào gây ra? | Kí sinh trùng | Virus | Vi khuẩn | Nấm
+Bệnh lao do loại tác nhân nào gây ra? | Vi khuẩn | Virus | Nấm | Kí sinh trùng
+Thuốc kháng sinh KHÔNG diệt được tác nhân nào? | Virus | Vi khuẩn lao | Vi khuẩn tả | Tụ cầu khuẩn
+Dùng kháng sinh bừa bãi dễ gây ra hậu quả gì? | Vi khuẩn kháng thuốc | Virus biến mất | Tăng miễn dịch | Hết dị ứng
+Người bị cận thị phải đeo kính loại gì? | Thấu kính phân kì | Thấu kính hội tụ | Kính phẳng | Kính màu
+Cơ quan nào tiết ra dịch mật? | Gan | Tuỵ | Thận | Lách
+Dịch mật giúp tiêu hoá chủ yếu chất nào? | Chất béo | Tinh bột | Chất đạm | Chất xơ
+Cơ quan tiền đình giúp giữ thăng bằng nằm ở đâu? | Tai trong | Hốc mắt | Gan bàn chân | Khoang mũi
+Nhịp tim lúc nghỉ của người lớn khỏe mạnh khoảng bao nhiêu lần mỗi phút? | 60 đến 100 lần | 20 đến 40 lần | 150 đến 200 lần | 200 đến 250 lần
+Người bị ngất xỉu nên được đặt nằm và kê cao bộ phận nào? | Hai chân | Đầu | Hai tay | Bụng
+Người được cứu khỏi đuối nước đã ngừng thở thì cần làm gì ngay? | Hồi sinh tim phổi | Dốc ngược lắc nước | Cho uống nước ấm | Xoa dầu gió
+Khi ép tim ngoài lồng ngực cho người lớn, cần ấn vào vị trí nào? | Giữa ngực | Bụng trên rốn | Ngực bên trái | Cổ
+Bị đinh gỉ đâm sâu, cần tiêm phòng bệnh gì? | Uốn ván | Bệnh dại | Viêm gan B | Bại liệt
+Bệnh AIDS do virus nào gây ra? | HIV | Virus viêm gan B | Virus cúm | Virus dại
+HIV KHÔNG lây qua con đường nào? | Bắt tay, ôm | Truyền máu | Dùng chung kim tiêm | Từ mẹ sang con
+Bệnh lao phổi lây chủ yếu qua đường nào? | Hô hấp | Tiêu hoá | Muỗi đốt | Qua da
+Nếu không có khăn giấy, nên che miệng khi hắt hơi bằng gì? | Khuỷu tay áo | Lòng bàn tay | Mu bàn tay | Đầu ngón tay
+Ruột thừa nằm ở vùng bụng nào? | Dưới bên phải | Dưới bên trái | Trên bên trái | Trên bên phải
+Ánh sáng đi vào trong mắt qua lỗ nhỏ nào? | Con ngươi | Lòng trắng | Lông mi | Tuyến lệ
+Màu mắt đen, nâu hay xanh do bộ phận nào quyết định? | Mống mắt | Con ngươi | Lòng trắng | Thể thủy tinh
+Insulin được tiết ra từ cơ quan nào? | Tuỵ | Gan | Thận | Dạ dày
+Tế bào cơ thể người bình thường có bao nhiêu nhiễm sắc thể? | 46 | 23 | 44 | 48
+Cặp nhiễm sắc thể giới tính ở nữ là gì? | XX | XY | XO | YY
+Con trai nhận nhiễm sắc thể Y từ ai? | Bố | Mẹ | Bà ngoại | Bà nội
+Gen là một đoạn của phân tử nào? | ADN | Prôtêin | Lipit | Glucôzơ
+Bào quan nào được gọi là "nhà máy năng lượng" của tế bào? | Ti thể | Lục lạp | Ribôxôm | Bộ máy Gôngi
+Trong tế bào người, phần lớn ADN nằm ở đâu? | Nhân tế bào | Màng tế bào | Tế bào chất | Ribôxôm
+Phân tử ADN có cấu trúc dạng gì? | Xoắn kép | Xoắn đơn | Hình cầu | Hình sao
+Quá trình phân bào tạo ra giao tử gọi là gì? | Giảm phân | Nguyên phân | Trực phân | Thụ tinh
+Nhóm máu nào có thể nhận máu của cả bốn nhóm trong hệ ABO? | Nhóm AB | Nhóm O | Nhóm A | Nhóm B
+Hồng cầu người có hình dạng gì? | Đĩa lõm hai mặt | Hình cầu | Hình sao | Hình que
+Người trưởng thành có khoảng bao nhiêu lít máu? | Khoảng 5 lít | Khoảng 2 lít | Khoảng 10 lít | Khoảng 15 lít
+Vòng tuần hoàn nhỏ đưa máu từ tim đến đâu? | Phổi | Não | Gan | Thận
+Động mạch lớn nhất cơ thể người là động mạch nào? | Động mạch chủ | Động mạch phổi | Động mạch cảnh | Động mạch vành
+Mạch máu đưa máu từ tim đi khắp cơ thể gọi là gì? | Động mạch | Tĩnh mạch | Mao mạch | Mạch bạch huyết
+Mạch máu nhỏ nhất, nơi trao đổi chất với tế bào, gọi là gì? | Mao mạch | Động mạch | Tĩnh mạch | Mạch bạch huyết
+Huyết áp được đo bằng đơn vị nào? | Milimét thủy ngân | Độ C | Kilôgam | Calo
+Hệ thần kinh trung ương gồm não và bộ phận nào? | Tủy sống | Dây thần kinh | Hạch thần kinh | Tim
+Đơn vị cấu tạo nên hệ thần kinh là gì? | Nơron | Hồng cầu | Tế bào gan | Tế bào cơ
+Phần não lớn nhất ở người là phần nào? | Đại não | Tiểu não | Hành não | Não trung gian
+Bộ phận nào của mắt hoạt động như một thấu kính hội tụ? | Thể thủy tinh | Mống mắt | Màng cứng | Lông mi
+Dạ dày tiết ra loại axit nào? | Axit clohiđric | Axit sunfuric | Axit axetic | Axit nitric
+Tuyến lớn nhất trong cơ thể người là tuyến nào? | Gan | Tuỵ | Tuyến giáp | Tuyến yên
+Trao đổi khí ở phổi diễn ra tại đâu? | Phế nang | Khí quản | Phế quản | Thanh quản
+Dây thanh âm tạo ra tiếng nói nằm ở đâu? | Thanh quản | Khí quản | Thực quản | Phế quản
+Cơ nào ngăn cách khoang ngực với khoang bụng? | Cơ hoành | Cơ liên sườn | Cơ bụng | Cơ tim
+Ruột già hấp thụ lại chủ yếu chất gì? | Nước | Chất đạm | Chất béo | Tinh bột
+Chất đạm qua tiêu hoá được biến đổi thành chất gì? | Axit amin | Glucôzơ | Axit béo | Glixêrin
+Vitamin nào giúp máu đông bình thường? | Vitamin K | Vitamin A | Vitamin C | Vitamin B1
+Iốt cần cho hoạt động của tuyến nào? | Tuyến giáp | Tuyến yên | Tuyến tuỵ | Tuyến nước bọt
+Tiêu chảy mất nước, nên cho người bệnh uống gì? | Dung dịch Oresol | Nước ngọt có ga | Nước đá lạnh | Sữa đặc
+Làm bánh mì nở xốp người ta dùng loại vi sinh vật nào? | Nấm men | Nấm mốc | Vi khuẩn lactic | Tảo lục
+Sữa chua được làm nhờ loại vi khuẩn nào? | Vi khuẩn lactic | Vi khuẩn lao | Vi khuẩn tả | Vi khuẩn uốn ván
+Virus chỉ nhân lên được ở đâu? | Trong tế bào sống | Trong nước | Trong đất | Trong không khí
+Vi khuẩn HP thường gây bệnh ở cơ quan nào? | Dạ dày | Phổi | Da | Thận
+Bệnh sởi có biểu hiện điển hình nào trên da? | Phát ban đỏ | Vàng da | Bong vảy | Thâm tím
+Bệnh nào gây nổi mụn nước khắp người, hay gặp ở trẻ em? | Thủy đậu | Sởi | Quai bị | Ho gà
+Bệnh quai bị thường gây sưng ở vùng nào? | Mang tai | Đầu gối | Bụng | Mắt cá chân
+Hắc lào là bệnh ngoài da do tác nhân nào gây ra? | Nấm | Virus | Vi khuẩn | Kí sinh trùng
+Bị bong gân cổ chân, lúc mới bị nên làm gì? | Chườm lạnh | Chườm nóng | Bôi rượu gừng | Đắp muối rang
+Nghi bị gãy xương tay, sơ cứu đúng là gì? | Cố định bằng nẹp | Nắn lại ngay | Xoa bóp mạnh | Kéo thẳng tay ra
+Đốt than sưởi trong phòng kín dễ gây ngộ độc khí gì? | Cacbon monoxit | Oxy | Nitơ | Heli
+Người bất tỉnh nhưng còn thở nên được đặt ở tư thế nào? | Nằm nghiêng an toàn | Nằm sấp | Ngồi dựa tường | Đứng dậy đi lại
+Chất cứng nhất trong cơ thể người là gì? | Men răng | Xương đùi | Móng tay | Sụn
+Kem đánh răng thường chứa chất nào giúp chống sâu răng? | Flo | Iốt | Sắt | Đồng
+Sắc tố quyết định màu da người là gì? | Melanin | Huyết sắc tố | Keratin | Diệp lục
+Lớp ngoài cùng của da gọi là gì? | Biểu bì | Lớp bì | Lớp mỡ dưới da | Lớp cơ
+Tia nào trong ánh nắng gây cháy nắng da? | Tia cực tím | Tia hồng ngoại | Tia X | Tia gamma
+Chất nào sau đây không cung cấp năng lượng cho cơ thể? | Vitamin | Tinh bột | Chất béo | Chất đạm
+Bệnh gút liên quan đến chất nào tăng cao trong máu? | Axit uric | Đường | Muối | Canxi
+Đột quỵ xảy ra khi mạch máu ở cơ quan nào bị tắc hoặc vỡ? | Não | Phổi | Gan | Thận
+Người suy thận nặng phải chạy thận nhân tạo để làm gì? | Lọc máu | Tạo máu | Tiêu hoá | Thở
+Điện tâm đồ ghi lại hoạt động của cơ quan nào? | Tim | Não | Phổi | Dạ dày
+Vàng da, vàng mắt thường là dấu hiệu bệnh ở cơ quan nào? | Gan | Phổi | Tim | Thận
+Bộ phận nào nối cơ với xương? | Gân | Dây chằng | Sụn | Tủy xương
+Người già thiếu canxi dễ mắc bệnh gì về xương? | Loãng xương | Còi xương | Gai cột sống | Thoái hoá khớp
+Ống dẫn nước tiểu từ thận xuống bàng quang gọi là gì? | Niệu quản | Niệu đạo | Thực quản | Khí quản
+Chương trình tiêm vắc xin miễn phí cho trẻ em Việt Nam gọi là gì? | Tiêm chủng mở rộng | Tiêm chủng toàn dân | Vắc xin học đường | Phòng dịch quốc gia
+Nước tiểu vàng sậm thường báo hiệu cơ thể đang thiếu gì? | Nước | Đường | Đạm | Sắt
+Nước muối sinh lý có nồng độ muối là bao nhiêu? | 0,9 phần trăm | 9 phần trăm | 0,09 phần trăm | 3 phần trăm
+Ăn tiết canh lợn sống có nguy cơ nhiễm vi khuẩn nào? | Liên cầu lợn | Vi khuẩn lao | Vi khuẩn HP | Vi khuẩn lactic
+Bệnh thủy đậu dân gian còn gọi là bệnh gì? | Trái rạ | Ban đỏ | Sài đẹn | Quai bị
+Chỉ số dùng cân nặng và chiều cao để đánh giá gầy hay béo là gì? | Chỉ số BMI | Chỉ số IQ | Chỉ số UV | Chỉ số AQI
+Bàn chải đánh răng nên được thay sau khoảng bao lâu? | 3 tháng | 2 năm | 1 tuần | 5 năm
+Sâu răng xảy ra do vi khuẩn tạo ra chất gì làm mòn men răng? | Axit | Muối | Kiềm | Mỡ
+Gan nằm chủ yếu ở phía nào của ổ bụng? | Phía trên bên phải | Phía trên bên trái | Phía dưới bên trái | Quanh rốn
+Một thai kỳ bình thường kéo dài khoảng bao nhiêu tuần? | 40 tuần | 30 tuần | 50 tuần | 20 tuần
+Thai nhi nhận chất dinh dưỡng từ mẹ qua bộ phận nào? | Nhau thai | Buồng trứng | Ống dẫn trứng | Bàng quang
+Trẻ sơ sinh có số xương thế nào so với người lớn? | Nhiều hơn | Ít hơn | Bằng nhau | Chỉ bằng một nửa
+Tủy đỏ trong xương có chức năng gì? | Tạo tế bào máu | Dự trữ mỡ | Nối các xương | Tiết dịch mật
+Bệnh tả gây ra triệu chứng nổi bật nào? | Tiêu chảy cấp | Ho ra máu | Phát ban | Sưng mang tai
+Nhóm máu Rh âm tính ở người Việt Nam có đặc điểm gì? | Rất hiếm | Rất phổ biến | Chỉ có ở nam | Chỉ có ở trẻ em
+Lúc nghỉ, người lớn thở khoảng bao nhiêu lần mỗi phút? | 12 đến 20 lần | 40 đến 50 lần | 2 đến 4 lần | 80 đến 100 lần
+Trẻ sinh đôi cùng trứng luôn có đặc điểm nào? | Cùng giới tính | Khác nhóm máu | Khác giới tính | Khác bộ gen
+Vi khuẩn thuộc nhóm sinh vật có cấu tạo tế bào nào? | Nhân sơ | Nhân thực | Không có tế bào | Đa nhân
+Đau mắt đỏ là tình trạng viêm ở bộ phận nào? | Kết mạc | Võng mạc | Thể thủy tinh | Tuyến lệ
+Khi ra chỗ sáng chói, con ngươi của mắt thay đổi thế nào? | Co nhỏ lại | Giãn to ra | Không đổi | Đổi màu
+Tai người nghe được âm có tần số trong khoảng nào? | 20 đến 20.000 Hz | 2 đến 2.000 Hz | 200 đến 200.000 Hz | 5 đến 500 Hz
+Cà phê chứa chất kích thích nào? | Cafein | Nicotin | Capsaicin | Morphin
+Tủy sống được bảo vệ bên trong bộ phận nào? | Cột sống | Hộp sọ | Lồng ngực | Xương chậu
+Vắc xin BCG tiêm cho trẻ sơ sinh để phòng bệnh gì? | Lao | Sởi | Bại liệt | Ho gà
+Sơ cứu người lớn bị hóc dị vật, người cứu ép mạnh vào vùng nào? | Bụng trên rốn | Lưng dưới | Cổ họng | Đỉnh đầu
+Mũi vắc xin nào trẻ sơ sinh được tiêm trong 24 giờ đầu sau sinh? | Viêm gan B | Sởi | Thủy đậu | Bệnh dại
+Xương quai xanh còn có tên gọi khác là gì? | Xương đòn | Xương bả vai | Xương ức | Xương sườn
+Mạch máu đưa máu từ các cơ quan trở về tim gọi là gì? | Tĩnh mạch | Động mạch | Mao mạch | Động mạch chủ
+Amiđan nằm ở đâu trong cơ thể? | Hai bên họng | Trong mũi | Dưới lưỡi | Trong tai
+Phần lớn cơ thể người được cấu tạo từ chất nào? | Nước | Mỡ | Đạm | Khoáng chất
+Ăn thịt lợn tái, chưa chín kỹ có nguy cơ nhiễm loại kí sinh trùng nào? | Sán dây lợn | Giun kim | Giun móc | Sán lá gan nhỏ
+Theo tháp dinh dưỡng, nhóm nào nên ăn ít nhất? | Đường và muối | Rau xanh | Ngũ cốc | Trái cây
+Cơ bắp bị co cứng đột ngột, gây đau gọi là hiện tượng gì? | Chuột rút | Bong gân | Trật khớp | Gãy xương
+Đầu xương bị lệch ra khỏi vị trí ở khớp gọi là gì? | Trật khớp | Bong gân | Chuột rút | Rạn xương
+Bệnh ung thư máu còn được gọi là bệnh gì? | Bệnh bạch cầu | Máu khó đông | Thiếu máu | Bệnh tan máu
+Nước mắt được tiết ra từ đâu? | Tuyến lệ | Tuyến nước bọt | Tuyến mồ hôi | Tuyến giáp
+Bệnh viêm gan A lây chủ yếu qua đường nào? | Ăn uống | Truyền máu | Muỗi đốt | Hô hấp
+Chất gây say trong rượu bia là chất gì? | Cồn etylic | Nicotin | Cafein | Capsaicin
+Chỉ số huyết áp gồm huyết áp tâm thu và huyết áp gì? | Tâm trương | Tâm nhĩ | Tâm thất | Tâm điểm
+Mụn trứng cá hay gặp nhất ở lứa tuổi nào? | Tuổi dậy thì | Tuổi mẫu giáo | Tuổi trung niên | Tuổi già
+Bệnh bại liệt do loại tác nhân nào gây ra? | Virus | Vi khuẩn | Nấm | Giun sán
+Bệnh đau mắt hột thường lây qua đâu? | Dùng chung khăn mặt | Ăn đồ tái | Muỗi đốt | Truyền máu
+[kho]
+Thiếu vitamin B1 lâu ngày gây bệnh gì? | Tê phù | Còi xương | Quáng gà | Bướu cổ
+Thủy thủ xưa đi biển dài ngày hay bị bệnh scorbut do thiếu vitamin nào? | Vitamin C | Vitamin A | Vitamin D | Vitamin B12
+Vitamin nào sau đây tan trong chất béo? | Vitamin A | Vitamin C | Vitamin B1 | Vitamin B6
+Người ăn chay trường dễ thiếu vitamin nào vì nó chủ yếu có trong thực phẩm động vật? | Vitamin B12 | Vitamin C | Vitamin E | Vitamin K
+Axit folic còn được gọi là vitamin gì? | Vitamin B9 | Vitamin B12 | Vitamin B1 | Vitamin C
+Ai đặt ra từ "vitamin" vào năm 1912? | Casimir Funk | Louis Pasteur | Robert Koch | Alexander Fleming
+Một gam chất béo cung cấp khoảng bao nhiêu kilocalo? | 9 | 4 | 7 | 2
+Chỉ số BMI được tính bằng cân nặng chia cho gì? | Bình phương chiều cao | Chiều cao | Số tuổi | Vòng eo
+Enzim nào trong nước bọt biến đổi tinh bột? | Amilaza | Pepsin | Lipaza | Lactaza
+Enzim pepsin ở dạ dày phân giải chất nào? | Prôtêin | Tinh bột | Chất béo | Chất xơ
+Chất béo bị tiêu hoá thành axit béo và chất gì? | Glixêrin | Glucôzơ | Axit amin | Urê
+Người không dung nạp đường sữa là do thiếu enzim nào? | Lactaza | Amilaza | Pepsin | Lipaza
+Tinh bột qua tiêu hoá cuối cùng được biến đổi thành đường gì? | Glucôzơ | Saccarôzơ | Lactôzơ | Fructôzơ
+Vi khuẩn có lợi trong ruột già góp phần tổng hợp vitamin nào? | Vitamin K | Vitamin C | Vitamin A | Vitamin D
+Gan dự trữ đường dưới dạng chất nào? | Glicôgen | Tinh bột | Xenlulôzơ | Lactôzơ
+Gan chuyển amoniac độc thành chất nào để thải qua nước tiểu? | Urê | Axit lactic | Glucôzơ | Axit amin
+Huyết tương chiếm khoảng bao nhiêu phần trăm thể tích máu? | 55 phần trăm | 25 phần trăm | 80 phần trăm | 10 phần trăm
+Ai mô tả vòng tuần hoàn máu trong cuốn sách năm 1628? | William Harvey | Karl Landsteiner | Andreas Vesalius | Hippocrates
+Ngăn nào của tim có thành cơ dày nhất? | Tâm thất trái | Tâm thất phải | Tâm nhĩ trái | Tâm nhĩ phải
+Máu giàu oxy từ phổi trở về đổ vào ngăn nào của tim? | Tâm nhĩ trái | Tâm nhĩ phải | Tâm thất trái | Tâm thất phải
+Khi máu đông, các sợi tơ máu được tạo thành từ chất nào? | Fibrin | Keratin | Collagen | Melanin
+Loại bạch cầu nào tiết ra kháng thể? | Lympho B | Lympho T | Bạch cầu trung tính | Tiểu cầu
+Virus HIV tấn công chủ yếu loại tế bào nào? | Lympho T | Hồng cầu | Tiểu cầu | Tế bào gan
+Bán cầu não trái điều khiển cử động phần cơ thể bên nào? | Bên phải | Bên trái | Cả hai bên | Chỉ phần đầu
+Ai nổi tiếng với nghiên cứu về phản xạ có điều kiện? | Ivan Pavlov | Sigmund Freud | Charles Darwin | Louis Pasteur
+Chỗ dây thần kinh thị giác rời mắt, không có tế bào cảm quang, gọi là gì? | Điểm mù | Điểm vàng | Mống mắt | Giác mạc
+Nơi ảnh hiện rõ nhất trên màng lưới của mắt gọi là gì? | Điểm vàng | Điểm mù | Thể mi | Đồng tử
+Tế bào nào ở màng lưới giúp ta phân biệt màu sắc? | Tế bào nón | Tế bào que | Tế bào hạch | Tế bào biểu bì
+Tai giữa người có tổng cộng mấy xương nhỏ? | 3 | 2 | 4 | 5
+Bộ phận nào ở tai trong tiếp nhận kích thích âm thanh? | Ốc tai | Vành tai | Màng nhĩ | Vòi nhĩ
+Bộ phận nào đậy kín đường thở khi ta nuốt thức ăn? | Nắp thanh quản | Lưỡi gà | Amiđan | Vòm họng
+Lớp màng trong suốt phía trước mắt, có thể ghép từ người hiến, gọi là gì? | Giác mạc | Võng mạc | Mống mắt | Kết mạc
+Gân A-sin nối bắp chân với xương nào? | Xương gót | Xương bánh chè | Xương đùi | Xương chậu
+Cơ nào hoạt động không theo ý muốn và có ở thành ruột? | Cơ trơn | Cơ vân | Cơ tim | Cơ hoành
+Xương dài ra nhờ bộ phận nào? | Sụn tăng trưởng | Màng xương | Tủy xương | Mô xương xốp
+Khớp giữa các xương sọ ở người lớn thuộc loại khớp nào? | Khớp bất động | Khớp động | Khớp bán động | Khớp cầu
+Xương nào là xương duy nhất cử động được ở hộp sọ? | Xương hàm dưới | Xương trán | Xương gò má | Xương chẩm
+Người trưởng thành có bao nhiêu chiếc răng nanh? | 4 | 2 | 6 | 8
+Khi sợ hãi, tuyến nào tiết ra adrenalin? | Tuyến thượng thận | Tuyến giáp | Tuyến yên | Tuyến tuỵ
+Tế bào lympho T trưởng thành ở tuyến nào trong lồng ngực? | Tuyến ức | Tuyến giáp | Tuyến vú | Tuyến thượng thận
+Lá lách nằm ở vùng nào của ổ bụng? | Trên bên trái | Trên bên phải | Dưới bên phải | Dưới bên trái
+Tuyến nước bọt lớn nhất ở người là tuyến nào? | Tuyến mang tai | Tuyến dưới hàm | Tuyến dưới lưỡi | Tuyến giáp
+Người có bao nhiêu đôi dây thần kinh tủy? | 31 | 12 | 24 | 33
+Người có bao nhiêu đôi dây thần kinh não? | 12 | 31 | 10 | 8
+Tế bào lớn nhất trong cơ thể người là tế bào nào? | Tế bào trứng | Hồng cầu | Tế bào gan | Tế bào da
+Trong ADN, nuclêôtit loại A luôn liên kết với loại nào? | Timin | Guanin | Xitôzin | Uraxin
+Loại nuclêôtit nào có trong ARN mà không có trong ADN? | Uraxin | Timin | Ađênin | Guanin
+Gen gây bệnh máu khó đông nằm trên nhiễm sắc thể nào? | Nhiễm sắc thể X | Nhiễm sắc thể Y | Nhiễm sắc thể 21 | Nhiễm sắc thể 1
+Mỗi bộ ba mã di truyền quy định một đơn vị nào trong prôtêin? | Axit amin | Gen | Nhiễm sắc thể | Nuclêôtit
+Có bao nhiêu loại axit amin chính cấu tạo nên prôtêin? | 20 | 4 | 64 | 46
+Dự án giải mã bộ gen người được công bố hoàn tất năm nào? | 2003 | 1990 | 1953 | 2010
+Lớp vỏ prôtêin bao bọc vật chất di truyền của virus gọi là gì? | Capsit | Thành tế bào | Màng nhân | Vách ngăn
+Bệnh đậu mùa được Tổ chức Y tế Thế giới tuyên bố xoá sổ năm nào? | 1980 | 1960 | 1995 | 2000
+Bác sĩ Việt Nam nổi tiếng thế giới với phương pháp mổ cắt gan là ai? | Tôn Thất Tùng | Phạm Ngọc Thạch | Đặng Văn Ngữ | Hồ Đắc Di
+Giáo sư nào sản xuất nước lọc penicillin ở chiến khu Việt Bắc? | Đặng Văn Ngữ | Tôn Thất Tùng | Hồ Đắc Di | Phạm Ngọc Thạch
+Ca ghép tim người đầu tiên năm 1967 do bác sĩ nào thực hiện? | Christiaan Barnard | Alexander Fleming | William Harvey | Joseph Lister
+Vi khuẩn nào hay gây ngộ độc khi ăn trứng sống, gà chưa chín? | Salmonella | Vi khuẩn lao | Vi khuẩn tả | Vi khuẩn uốn ván
+Bệnh sốt xuất huyết do tác nhân nào gây ra? | Virus Dengue | Vi khuẩn tả | Kí sinh trùng | Nấm men
+Bệnh viêm gan B lây chủ yếu qua đường nào? | Đường máu | Hắt hơi | Muỗi đốt | Đường ăn uống
+Bệnh thương hàn lây chủ yếu qua đường nào? | Ăn uống | Hô hấp | Muỗi đốt | Đường máu
+Bệnh viêm não Nhật Bản lây sang người qua trung gian nào? | Muỗi | Chuột | Gián | Ruồi
+Khi ép tim cho người lớn, nên ấn với tốc độ khoảng bao nhiêu lần mỗi phút? | 100 đến 120 lần | 40 đến 60 lần | 60 đến 80 lần | 150 đến 180 lần
+Hồi sinh tim phổi cho người lớn, tỉ lệ ép tim và thổi ngạt là bao nhiêu? | 30 ép, 2 thổi | 15 ép, 1 thổi | 5 ép, 1 thổi | 10 ép, 2 thổi
+Khi một người lên cơn co giật, việc KHÔNG nên làm là gì? | Nhét vật vào miệng | Nới lỏng cổ áo | Dọn vật nguy hiểm | Theo dõi thời gian
+Vị cay của ớt do chất nào gây ra? | Capsaicin | Cafein | Nicotin | Tanin
+Ngoài ngọt, mặn, chua, đắng, vị cơ bản thứ năm được công nhận là vị gì? | Umami | Cay | Chát | The
+Vùng nào của não giữ vai trò quan trọng trong hình thành trí nhớ? | Hồi hải mã | Tiểu não | Hành não | Tuyến yên
+Phần não nào điều khiển hô hấp và nhịp tim? | Hành não | Tiểu não | Đại não | Thể chai
+Bộ phận nào nối hai bán cầu đại não với nhau? | Thể chai | Hành não | Tiểu não | Tuyến tùng
+Vùng Broca trong não liên quan đến khả năng nào? | Nói | Nghe | Nhìn | Ngửi
+Phản xạ rụt tay khi chạm vật nóng do trung ương thần kinh nào điều khiển? | Tủy sống | Đại não | Tiểu não | Tuyến yên
+Đơn vị chức năng của thận gọi là gì? | Nephron | Phế nang | Lông ruột | Tiểu thùy gan
+Cấu trúc nào giúp ruột non tăng diện tích hấp thụ? | Lông ruột | Phế nang | Van tim | Gai vị giác
+Bộ não người trưởng thành nặng khoảng bao nhiêu? | Khoảng 1,4 kg | Khoảng 0,3 kg | Khoảng 3 kg | Khoảng 5 kg
+Cơ quan nội tạng nào nổi tiếng với khả năng tự tái tạo? | Gan | Tim | Não | Phổi
+Joseph Lister nổi tiếng với đóng góp nào trong y học? | Sát trùng khi mổ | Tìm ra penicillin | Phát hiện tia X | Ghép tim
+Bác sĩ Semmelweis kêu gọi đồng nghiệp làm gì để giảm sốt hậu sản? | Rửa tay | Đeo khẩu trang | Mở cửa sổ | Tiêm vắc xin
+Phương pháp nhuộm chia vi khuẩn thành hai nhóm mang tên ai? | Gram | Koch | Pasteur | Lister
+Tuyến giáp tiết ra hormone nào? | Thyroxin | Insulin | Adrenalin | Glucagon
+Hormone nào điều hoà giấc ngủ, tiết nhiều vào ban đêm? | Melatonin | Insulin | Adrenalin | Thyroxin
+Hormone glucagon tác động thế nào đến đường huyết? | Làm tăng lên | Làm giảm xuống | Không ảnh hưởng | Làm đông máu
+Bệnh Parkinson liên quan đến thiếu chất dẫn truyền thần kinh nào? | Dopamin | Serotonin | Insulin | Histamin
+Chất nào được cơ thể tiết ra gây ngứa, sưng khi dị ứng? | Histamin | Dopamin | Insulin | Melatonin
+Thể thủy tinh của mắt bị mờ đục gây ra bệnh gì? | Đục thủy tinh thể | Tăng nhãn áp | Viêm kết mạc | Lẹo mắt
+Người lớn tuổi bị lão thị cần đeo kính loại gì để đọc sách? | Thấu kính hội tụ | Thấu kính phân kì | Kính phẳng | Kính màu
+Trong hệ mạch, huyết áp lớn nhất ở đâu? | Động mạch chủ | Tĩnh mạch chủ | Mao mạch | Tĩnh mạch phổi
+Máu chảy chậm nhất trong loại mạch nào? | Mao mạch | Động mạch | Tĩnh mạch | Động mạch chủ
+Van trong tĩnh mạch có tác dụng gì? | Chống máu chảy ngược | Lọc máu | Tạo máu | Tăng huyết áp
+Đoạn đầu tiên của ruột non, nơi dịch mật và dịch tuỵ đổ vào, là đoạn nào? | Tá tràng | Hồi tràng | Hỗng tràng | Đại tràng
+Bào quan chứa enzim phân huỷ chất thải trong tế bào là gì? | Lizôxôm | Bộ máy Gôngi | Ti thể | Trung thể
+Một tế bào nguyên phân một lần tạo ra mấy tế bào con? | 2 | 4 | 1 | 8
+Từ một tế bào, giảm phân tạo ra mấy tế bào con? | 4 | 2 | 8 | 1
+Giao tử ở người có bao nhiêu nhiễm sắc thể? | 23 | 46 | 22 | 44
+Bệnh Alzheimer ở người già gây suy giảm chủ yếu điều gì? | Trí nhớ | Thị lực | Thính lực | Vị giác
+Vitamin D giúp cơ thể hấp thụ khoáng chất nào? | Canxi | Sắt | Kẽm | Iốt
+Ăn kèm thực phẩm giàu vitamin C giúp hấp thụ tốt hơn chất khoáng nào từ rau? | Sắt | Canxi | Iốt | Kẽm
+Bệnh pellagra là do thiếu vitamin nào? | Vitamin B3 | Vitamin B1 | Vitamin A | Vitamin D
+Phần răng nằm trong xương hàm gọi là gì? | Chân răng | Thân răng | Cổ răng | Men răng
+Kháng thể có bản chất là chất gì? | Prôtêin | Lipit | Tinh bột | Vitamin
+Loại cholesterol thường được gọi là cholesterol "tốt" là loại nào? | HDL | LDL | VLDL | Triglyxerit
+Vi khuẩn uốn ván thường có ở đâu trong tự nhiên? | Trong đất | Trong nước biển | Trên lá cây | Trong không khí lạnh
+Bệnh bạch hầu tạo ra lớp màng giả ở đâu? | Họng | Da | Mắt | Ruột
+Bác sĩ nào phát hiện ra vi khuẩn gây bệnh phong? | Gerhard Hansen | Robert Koch | Louis Pasteur | Alexandre Yersin
+Vùng nào của não điều hoà thân nhiệt? | Vùng dưới đồi | Tiểu não | Hành não | Thể chai
+Ai phát minh ra ống nghe y khoa đầu thế kỷ 19? | René Laennec | Louis Pasteur | Joseph Lister | William Harvey
+Ống dẫn nước tiểu từ bàng quang ra ngoài gọi là gì? | Niệu đạo | Niệu quản | Tá tràng | Ống mật
+Đơn vị cơ bản của vật chất di truyền ADN là gì? | Nuclêôtit | Axit amin | Glucôzơ | Axit béo
+Bệnh ho gà do tác nhân nào gây ra? | Vi khuẩn | Virus | Nấm | Giun sán
+Phổi phải của người có mấy thùy? | 3 | 2 | 4 | 5
+Khí quản có các vòng sụn khuyết hình chữ gì? | Chữ C | Chữ O | Chữ U | Chữ V
+Nơi phát nhịp tự động cho tim đập gọi là gì? | Nút xoang nhĩ | Nút nhĩ thất | Van ba lá | Vách liên thất
+Theo sách giáo khoa, mỗi chu kỳ co dãn của tim kéo dài khoảng bao lâu? | 0,8 giây | 2 giây | 5 giây | 0,1 giây
+Răng khôn là chiếc răng hàm lớn thứ mấy? | Thứ ba | Thứ hai | Thứ nhất | Thứ tư
+Bệnh hồng cầu hình liềm thuộc loại bệnh nào? | Bệnh di truyền | Bệnh truyền nhiễm | Bệnh do dinh dưỡng | Bệnh nghề nghiệp
+Người mắc hội chứng Tớcnơ có cặp nhiễm sắc thể giới tính là gì? | XO | XXY | XXX | XY
+Thể đột biến có ba nhiễm sắc thể ở một cặp gọi là gì? | Thể ba | Thể một | Thể đa bội | Thể khảm
+Ai đặt ra tên gọi "tế bào" khi soi lát bần qua kính hiển vi năm 1665? | Robert Hooke | Van Leeuwenhoek | Louis Pasteur | Robert Koch
+Ai là người đầu tiên nhìn thấy vi khuẩn qua kính hiển vi tự chế? | Van Leeuwenhoek | Robert Hooke | Robert Koch | Joseph Lister
+Bác sĩ Phạm Ngọc Thạch gắn với cuộc chiến chống bệnh nào? | Bệnh lao | Sốt rét | Dịch hạch | Bệnh phong
+Nhà khoa học Jonas Salk nổi tiếng với vắc xin phòng bệnh gì? | Bại liệt | Đậu mùa | Bệnh dại | Bệnh lao
+Insulin được tiết ra từ loại tế bào nào trong đảo tuỵ? | Tế bào beta | Tế bào alpha | Tế bào gan | Tế bào mỡ
+Hồng cầu của người nhóm máu O mang kháng nguyên nào? | Không có A và B | Cả A và B | Chỉ có A | Chỉ có B
