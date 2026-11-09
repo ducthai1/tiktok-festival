@@ -71,6 +71,27 @@ export function createShuffleBag(items, random = Math.random) {
   };
 }
 
+/**
+ * Nhiều tầng: rút hết tầng 1 (xáo trộn) rồi mới sang tầng 2, hết tầng cuối thì quay lại tầng 1.
+ * Dùng cho tiếng Anh: bộ từ theo chủ đề chạy trước, 176 từ cơ bản cũ xuống cuối danh sách.
+ */
+export function createTieredDeck(tiers, random = Math.random) {
+  const bags = tiers.filter((t) => t.length).map((t) => createShuffleBag(t, random));
+  let at = 0;
+  let left = bags[0]?.size || 0;
+  return {
+    size: bags.reduce((n, b) => n + b.size, 0),
+    next() {
+      if (left === 0) {
+        at = (at + 1) % bags.length;
+        left = bags[at].size;
+      }
+      left -= 1;
+      return bags[at].next();
+    }
+  };
+}
+
 const ENGLISH_FILE = '25-tieng-anh.txt';
 const EMOJI_FILE = '31-duoi-hinh-dh.txt';
 
@@ -89,7 +110,7 @@ export function loadClassroomQuestions() {
  */
 export function loadEnglishQuestions() {
   const file = lopHocFiles().find((f) => f.file === ENGLISH_FILE);
-  const basic = parseTextBank(file.text).map((q) => ({ ...q, category: 'Tiếng Anh · Cơ bản' }));
+  const basic = parseTextBank(file.text).map((q) => ({ ...q, category: 'Tiếng Anh · Cơ bản', basic: true }));
   const topics = readTxtDir('tieng-anh').flatMap((f) => parseTextBank(f.text, 'Tiếng Anh'));
   const seen = new Set();
   return [...basic, ...topics].filter((q) => {

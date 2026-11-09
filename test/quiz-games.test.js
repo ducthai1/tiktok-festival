@@ -5,7 +5,7 @@ import test from 'node:test';
 import { GAME_IDS, PUBLIC_DIR } from '../src/config.js';
 import { createGameHub } from '../src/games/game-hub.js';
 import {
-  loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
+  createTieredDeck, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
 } from '../src/games/quiz/quiz-bank.js';
 import { createQuizGame, POINTS, scoreWordle } from '../src/games/quiz/quiz-game.js';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
@@ -44,6 +44,18 @@ test('quiz banks: every question is answerable and A/B/C/D options are distinct'
       assert.ok(Number(q.answer) >= 0 && Number.isInteger(Number(q.answer)), q.prompt);
     }
   }
+});
+
+test('quiz English: every topic word is asked before any of the 176 old basic words, then the cycle repeats', () => {
+  const english = loadEnglishQuestions();
+  const topics = english.filter((q) => !q.basic).length;
+  assert.equal(english.length - topics, 176);
+  const deck = createTieredDeck([english.filter((q) => !q.basic), english.filter((q) => q.basic)]);
+  const drawn = Array.from({ length: english.length + 5 }, () => deck.next());
+  assert.ok(drawn.slice(0, topics).every((q) => !q.basic));
+  assert.ok(drawn.slice(topics, english.length).every((q) => q.basic));
+  assert.equal(new Set(drawn.slice(0, english.length)).size, english.length); // không câu nào lặp trong một vòng
+  assert.ok(drawn.slice(english.length).every((q) => !q.basic)); // vòng mới lại bắt đầu bằng bộ theo chủ đề
 });
 
 test('quiz text: accent-free answers count, 5 fastest get 10/7/5/3/3, reveal 5 s after the first correct', () => {

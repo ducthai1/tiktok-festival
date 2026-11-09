@@ -1,6 +1,6 @@
 // 7 tab đố vui, cùng một bộ máy (quiz-game.js), khác kho câu hỏi + cách chơi.
 import {
-  createMathDeck, createShuffleBag, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions,
+  createMathDeck, createShuffleBag, createTieredDeck, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions,
   loadFlagQuestions, loadWordleWords
 } from './quiz-bank.js';
 import { createQuizGame } from './quiz-game.js';
@@ -27,7 +27,9 @@ export function createQuizGames({ random = Math.random } = {}) {
     createQuizGame({ id: 'lophoc', title: 'Lớp Học Chữ', deck: bag(b.classroom), questionMs: 25000, random }),
     createQuizGame({ id: 'dovui', title: 'Đố Vui A/B/C/D', kind: 'abcd', deck: bag(b.choice), random }),
     createQuizGame({
-      id: 'english', title: 'Từ Vựng Tiếng Anh', deck: bag(b.english), questionMs: 20000, revealAnswerAloud: false, random
+      // ~1.080 từ theo chủ đề (A1–B1) chạy trước; 176 từ cơ bản cũ để cuối danh sách
+      id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random,
+      deck: createTieredDeck([b.english.filter((q) => !q.basic), b.english.filter((q) => q.basic)], random)
     }),
     createQuizGame({
       id: 'emoji', title: 'Đuổi Hình Bắt Chữ', deck: bag(b.emoji), questionMs: 30000, speakLine: () => 'Đuổi hình bắt chữ! Đây là gì nào?', random
