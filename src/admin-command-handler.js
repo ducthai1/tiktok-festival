@@ -3,12 +3,14 @@
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
 
+const QUIZ_COMMANDS = ['next', 'hint', 'pause', 'resume', 'resetScores'];
 const GAME_COMMANDS = {
   boss: ['resetBoss', 'killBoss', 'frenzy'],
   bar: ['party', 'clear'],
   dance: ['drop', 'clear', 'seeds'],
   swim: ['pause', 'resume', 'resetRound', 'resetWins'],
-  temple: ['resetMerit', 'clear']
+  temple: ['resetMerit', 'clear'],
+  ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS]))
 };
 const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 
