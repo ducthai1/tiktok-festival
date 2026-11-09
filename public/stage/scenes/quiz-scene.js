@@ -21,10 +21,12 @@ const MODES = {
   wordle: { icon: '🟩', title: 'WORDLE TIẾNG ANH', color: '#6aaa64', bg: '#0e140e',
     hint: ['Gõ ', '*từ tiếng Anh 5 chữ cái*', ' · 🟩 đúng chỗ · 🟨 có nhưng sai chỗ · ⬛ không có'] }
 };
-const GIFT_LABELS = {
-  text: { 1: 'Mở 1 chữ cho cả phòng', 3: 'Mở 2 chữ cho cả phòng' },
-  abcd: { 1: 'Loại 1 đáp án sai cho cả phòng', 3: 'Loại 2 đáp án sai' },
-  wordle: { 1: 'Mở 1 ô chữ cho cả phòng', 3: 'Mở 2 ô chữ' }
+// Luật quà + tim ở chân bảng câu hỏi (bậc 3 = món từ 99💎, xem public/shared/gift-tiers.js)
+const GIFT_RULES = {
+  text: ['🎁 Quà → ', '*mở 1 chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
+  abcd: ['🎁 Quà → ', '*loại 1 đáp án sai cho cả phòng*', ' (từ 99💎 loại 2) · ❤️ 300 tim = +3 giây'],
+  wordle: ['🎁 Quà → ', '*mở 1 ô chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
+  math: ['🎁 Quà = lời cảm ơn trên màn hình · ❤️ 300 tim = +3 giây']
 };
 
 export function createQuizScene({ hud, labels, audio, pipeline, id }) {
@@ -73,9 +75,15 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const timerFill = el('div', 'fill');
   timer.append(timerFill);
   const body = el('div', 'quiz-body');
-  const answerBox = el('div', 'quiz-answer');
   const winnersRow = el('div', 'quiz-winners');
-  card.append(head, timer, body, answerBox, winnersRow);
+  const foot = el('div', 'quiz-foot');
+  const rich = (parts, className) => {
+    const line = el('div', className);
+    line.append(...parts.map((p) => (p.startsWith('*') ? el('b', '', p.slice(1, -1)) : document.createTextNode(p))));
+    return line;
+  };
+  foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[id === 'dovui' ? 'abcd' : id === 'wordle' ? 'wordle' : id === 'math' ? 'math' : 'text'], 'gift'));
+  card.append(head, timer, body, winnersRow, foot);
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -90,11 +98,13 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       img.src = `/static/assets/flags/${state.flag}.svg`;
       img.alt = '';
       parts.push(img);
-    } else if (state.emoji) parts.push(el('div', 'quiz-emoji', state.emoji));
-    else if (state.math) parts.push(el('div', 'quiz-math', state.prompt));
-    else parts.push(el('div', 'quiz-prompt', state.prompt));
+    } else if (state.emoji) parts.push(el('div', `quiz-emoji${[...new Intl.Segmenter().segment(state.emoji)].length > 5 ? ' many' : ''}`, state.emoji));
+    else if (state.math) {
+      const text = state.phase === 'reveal' && state.answer ? state.prompt.replace('?', state.answer) : state.prompt;
+      parts.push(el('div', `quiz-math${text.length > 12 ? ' long' : ''}`, text));
+    } else parts.push(el('div', `quiz-prompt${state.prompt.length > 80 ? ' long' : ''}`, state.prompt));
     if (state.mask) {
-      const mask = el('div', 'quiz-mask');
+      const mask = el('div', `quiz-mask${state.mask.filter((c) => c !== ' ').length > 13 ? ' long' : ''}`);
       for (const ch of state.mask) {
         if (ch === ' ') mask.append(el('span', 'gap'));
         else mask.append(el('span', ch === '_' ? 'tile' : 'tile open', ch === '_' ? '' : ch.toUpperCase()));
@@ -117,15 +127,16 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       row.append(bar, el('b', 'letter', o.letter), el('span', 'text', o.text), el('span', 'pct', o.removed ? '✕' : `${pct}%`));
       return row;
     });
-    body.replaceChildren(el('div', 'quiz-prompt small', state.prompt), el('div', 'quiz-opts', ''), el('div', 'quiz-voters', `🗳 ${state.voters} người đã chọn`));
-    body.children[1].append(...rows);
+    const opts = el('div', 'quiz-opts');
+    opts.append(...rows);
+    body.replaceChildren(el('div', `quiz-prompt small${state.prompt.length > 70 ? ' long' : ''}`, state.prompt), opts);
   }
 
   function renderWordle(state) {
     const known = el('div', 'wordle-known');
     for (const ch of state.known) known.append(el('span', ch ? 'tile g' : 'tile', ch));
     const grid = el('div', 'wordle-grid');
-    for (const g of state.guesses) {
+    for (const g of state.guesses.slice(-4)) {
       const row = el('div', 'wordle-row');
       [...g.word].forEach((ch, i) => row.append(el('span', `tile ${g.marks[i]}`, ch)));
       row.append(el('span', 'who', g.nickname));
@@ -141,7 +152,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       }
       kb.append(row);
     }
-    body.replaceChildren(known, grid, kb, el('div', 'quiz-voters', `${state.guessCount} lượt đoán`));
+    body.replaceChildren(known, grid, kb);
   }
 
   function renderWinners(state) {
@@ -152,6 +163,8 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       winnersRow.replaceChildren(el('span', 'none', state.phase === 'reveal' ? 'Chưa ai trả lời đúng câu này' : 'Ai sẽ là người nhanh nhất? ⚡'));
       return;
     }
+    winnersRow.style.setProperty('--n', String(state.winners.length));
+    winnersRow.classList.toggle('crowded', state.winners.length >= 4);
     winnersRow.replaceChildren(...state.winners.map((w, i) => {
       const chip = el('span', `w w${i + 1}`);
       chip.append(avatarNode(w.avatar), el('b', '', w.nickname), el('em', '', `+${w.points}`));
@@ -164,17 +177,17 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     camera,
     themeClass: 'theme-quiz',
     welcome: { line: 'đã vào lớp! Gõ đáp án vào bình luận nhé ✏️', speech: (n) => `Chào mừng ${n} vào chơi đố vui!` },
-    legend: [['❤', '300 tim = +3 giây cho câu đang hỏi'], ['Follow', 'Được cảm ơn trên màn hình']],
-    giftLabels: GIFT_LABELS[id === 'dovui' ? 'abcd' : id === 'wordle' ? 'wordle' : id === 'math' ? '' : 'text'] || null,
+    legend: [], // cách chơi + luật quà nằm ở chân bảng câu hỏi (.quiz-foot)
     update(snapshot) {
       const state = snapshot.state;
       if (!state || state.phase === 'idle') return;
       hud.setStats([`❓ Câu ${state.qNumber}`, `✅ ${state.correctCount} đúng`]);
       hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, score: `${r.points} đ` })));
       cat.textContent = state.category || mode.title;
-      qno.textContent = state.paused ? '⏸ TẠM DỪNG' : '';
+      const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
+      qno.textContent = state.paused ? '⏸ TẠM DỪNG' : count;
       const seconds = Math.ceil(state.msLeft / 1000);
-      clock.textContent = state.phase === 'question' ? `${seconds}s` : '';
+      clock.textContent = state.phase === 'question' ? `${seconds}s` : state.phase === 'reveal' ? '✅ ĐÁP ÁN' : '';
       timerFill.style.width = `${state.phase === 'question' && state.totalMs ? (state.msLeft / state.totalMs) * 100 : 0}%`;
       card.classList.toggle('urgent', state.phase === 'question' && seconds <= 5);
       card.classList.toggle('reveal', state.phase === 'reveal');
@@ -182,7 +195,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       lastSecond = seconds;
       // vẽ lại phần thân khi dữ liệu đổi (không vẽ lại mỗi lần đồng hồ nhảy)
       const view = state.mode === 'abcd' ? [state.prompt, state.options, state.votes, state.rightIndex]
-        : state.mode === 'wordle' ? [state.guesses, state.known, state.keyboard] : [state.prompt, state.emoji, state.flag, state.mask];
+        : state.mode === 'wordle' ? [state.guesses, state.known, state.keyboard] : [state.prompt, state.emoji, state.flag, state.mask, state.answer];
       const bk = JSON.stringify(view);
       if (bk !== bodyKey) {
         bodyKey = bk;
@@ -190,7 +203,6 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         else if (state.mode === 'wordle') renderWordle(state);
         else renderText(state);
       }
-      answerBox.textContent = state.phase === 'reveal' ? `ĐÁP ÁN: ${state.answer}` : '';
       renderWinners(state);
     },
     onFx(fx) {
@@ -199,8 +211,6 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         if (fx.speech) audio.speak(fx.speech, 'story');
       } else if (fx.kind === 'quizCorrect') {
         audio.play('coin');
-        hud.toast(fx.rank === 1 ? `⚡ Nhanh nhất! +${fx.points} điểm` : `✅ Đúng rồi! Hạng ${fx.rank} · +${fx.points} điểm`,
-          { title: fx.nickname, gold: fx.rank === 1, ms: 3000 });
         if (fx.rank === 1) confetti(120);
       } else if (fx.kind === 'quizReveal') {
         audio.play(fx.correctCount ? 'fanfare' : 'pop');
@@ -209,7 +219,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       } else if (fx.kind === 'quizGift') {
         audio.play('magic');
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🎁 ${fx.giftName} ×${n}${fx.hint ? ` → ${fx.hint} cho cả phòng` : ' · cảm ơn bạn!'}`,
-          { title: fx.nickname, gold: fx.tier >= 3, image: fx.giftPicture });
+          { title: fx.nickname, gold: fx.tier >= 3, image: fx.giftPicture, ms: 3500 });
         particles.burst({ position: new THREE.Vector3(0, 0, 3), box: new THREE.Vector3(3, 3, 1), count: 80 + fx.tier * 40,
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
       } else if (fx.kind === 'quizTime') {
