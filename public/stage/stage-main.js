@@ -36,7 +36,6 @@ const audio = createStageAudio();
 let settings = { legend: true };
 // quà đại diện từng bậc (server gửi: quà thật của phòng khi đang live, quà mẫu khi chưa)
 let giftTiers = [];
-let giftCatalog = []; // quà rẻ thật của phòng (tên, giá, ảnh) — cảnh nào cần thì lấy qua setGiftCatalog
 // Bảng chú thích = dòng thường của cảnh (tim, follow…) + mỗi bậc quà: ảnh 2 món quà thật + điều nó làm
 function legendFor(scene) {
   if (!scene) return [];
@@ -125,7 +124,6 @@ async function switchScene(id) {
   if (current.themeClass) stageEl.classList.add(current.themeClass);
   audio.setTheme(id);
   hud.setLegend(legendFor(current), settings.legend !== false);
-  current.setGiftCatalog?.(giftCatalog);
   if (latest?.game === id) current.update(latest);
   fadeEl.classList.remove('on');
 }
@@ -174,10 +172,7 @@ connectLiveSocket({
     if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
       if (message.giftTiers || message.tiers) giftTiers = message.giftTiers || message.tiers;
-      if (Array.isArray(message.catalog)) {
-        giftCatalog = message.catalog;
-        current?.setGiftCatalog?.(giftCatalog);
-      }
+
       applyAudio();
       if (current) hud.setLegend(legendFor(current), settings.legend !== false);
     } else if (message.t === 'state') onState(message);

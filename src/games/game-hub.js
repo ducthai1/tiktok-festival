@@ -44,6 +44,10 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       const fx = active().handleEvent(event, now);
       return [...fx, ...welcome.notice(event.user, now)];
     },
+    /** Danh mục quà thật của phòng → game nào cần (tab tiếng Anh gán quà đổi bộ đề). */
+    setGiftCatalog(catalog) {
+      for (const game of games.values()) game.setGiftCatalog?.(catalog);
+    },
     setWelcomeThreshold(n) {
       welcome.setThreshold(n);
     },

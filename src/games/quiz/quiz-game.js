@@ -49,7 +49,7 @@ export function createQuizGame({
   id, title, kind = 'text', deck, questionMs = 25000, revealMs = 6500, firstLetter = true, autoHints = true,
   speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random,
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
-  onGift = null, onCommand = null, extraState = null
+  onGift = null, onCommand = null, extraState = null, onCatalog = null
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -269,6 +269,7 @@ export function createQuizGame({
   return {
     id,
     title,
+    setGiftCatalog: (catalog) => onCatalog?.(catalog),
     handleEvent(event, now = Date.now()) {
       const fx = [];
       touch(event.user, now);

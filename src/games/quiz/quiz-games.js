@@ -34,7 +34,8 @@ export function createQuizGames({ random = Math.random } = {}) {
     createQuizGame({
       // quà đổi bộ đề (TOEIC, IELTS, Y học…) / độ khó — xem english-switcher.js; 176 từ cơ bản luôn ở cuối danh sách
       id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
-      onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot()
+      onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot(),
+      onCatalog: (catalog) => english.setCatalog(catalog)
     }),
     createQuizGame({
       id: 'emoji', title: 'Đuổi Hình Bắt Chữ', deck: bag(b.emoji), questionMs: 30000, speakLine: () => 'Đuổi hình bắt chữ! Đây là gì nào?', random

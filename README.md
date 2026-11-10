@@ -45,7 +45,7 @@ Cùng một bộ máy (`src/games/quiz/quiz-game.js`) + một cảnh (`public/st
 | 🟩 Wordle Tiếng Anh | từ tiếng Anh 5 chữ cái | 442 đáp án |
 
 - Điểm: 5 người đúng nhanh nhất +10/7/5/3/3, đúng sau +1 (Wordle: đoán trúng +15, mở ô xanh mới +1/ô). Bảng điểm giữ suốt phiên, nút "Xoá bảng điểm".
-- **Tab tiếng Anh: quà đổi bộ đề / độ khó cho cả phòng** (luật ở `public/shared/english-sets.js`): Hoa hồng → Dễ, quà 1 xu khác → Khó, 5 xu → TOEIC, 10 → IELTS, 20 → Y học, 30 → Bóng đá, 99 → Công nghệ. Đổi từ câu sau, giữ 20 câu rồi tự về Tổng hợp · Vừa. Bảng icon quà thật + tên người đổi nằm dưới bảng điểm. Ở tab này quà không mở gợi ý.
+- **Tab tiếng Anh: quà đổi bộ đề / độ khó cho cả phòng** (`public/shared/english-sets.js`): chỉ dùng quà **dưới 20 xu**, gán theo từng món: Hoa hồng → Dễ; các ô Khó, TOEIC, IELTS, Y học, Bóng đá, Công nghệ lấy lần lượt món rẻ nhất trong danh mục quà thật của phòng (ưu tiên TikTok, GG, Kem, Bắn tim, Rosa). Đã gán thì giữ cố định. Đổi từ câu sau, giữ 20 câu rồi tự về Tổng hợp · Vừa. Bảng ảnh quà thật + tên người đổi nằm dưới bảng điểm. Ở tab này quà không mở gợi ý; quà từ 20 xu chỉ để cảm ơn.
 - **Quà không cộng điểm cho người tặng** (theo hướng dẫn TikTok, nhất là khi có trẻ em xem): quà mở gợi ý cho CẢ PHÒNG — mở chữ, loại đáp án sai, mở ô Wordle. Luôn chừa lại ít nhất 1 chữ.
 - 300 tim = +3 giây cho câu đang hỏi (tối đa +15 giây/câu).
 - Tab không được chọn thì đứng yên (đồng hồ không chạy). Nút điều khiển: câu tiếp / lật đáp án, gợi ý, tạm dừng, tiếp tục.

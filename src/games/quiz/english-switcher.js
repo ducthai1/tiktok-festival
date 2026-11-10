@@ -1,7 +1,8 @@
-// Bộ đề + độ khó của tab Từ Vựng Tiếng Anh, đổi bằng quà (luật ở public/shared/english-sets.js).
+// Bộ đề + độ khó của tab Từ Vựng Tiếng Anh, đổi bằng quà dưới 20 xu (bảng gán quà ở public/shared/english-sets.js).
 // Đổi có hiệu lực từ CÂU SAU (câu đang hỏi không bị cắt ngang), giữ ENGLISH_HOLD_QUESTIONS câu rồi tự về mặc định.
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
-import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, englishRuleFor } from '../../../public/shared/english-sets.js';
+import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
+import { SAMPLE_GIFTS } from '../../../public/shared/gift-tiers.js';
 import { createShuffleBag, createTieredDeck } from './quiz-bank.js';
 
 const MIN_POOL = 15;
@@ -25,6 +26,9 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
   let levelBy = null;
   let deck = null;
   let dirty = true;
+  // chưa có danh mục quà thật của phòng thì tạm gán theo quà mẫu; có danh mục thật thì gán lại từ đầu một lần rồi giữ cố định
+  let assignments = assignEnglishGifts(SAMPLE_GIFTS);
+  let fromCatalog = false;
 
   function build() {
     if (set === 'general') {
@@ -80,16 +84,25 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
         return q;
       }
     },
+    /** Danh mục quà thật của phòng (server lưu lại giữa các buổi live). */
+    setCatalog(catalog) {
+      if (!catalog?.length) return;
+      const next = assignEnglishGifts(catalog, fromCatalog ? assignments : []);
+      if (next.length) {
+        assignments = next;
+        fromCatalog = true;
+      }
+    },
     onGift(event) {
       const gift = event.gift;
-      const rule = englishRuleFor(gift);
+      const to = englishTargetFor(assignments, gift);
       const base = { userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, giftName: gift.name,
         giftPicture: gift.pictureUrl, count: gift.count };
-      if (!rule || !apply(rule.to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar })) {
-        return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // quà lớn: chỉ cảm ơn
+      if (!to || !apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar })) {
+        return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
       }
-      const target = ENGLISH_TARGETS[rule.to];
-      return [{ kind: 'quizDeck', ...base, to: rule.to, icon: target.icon, label: target.label, questions: ENGLISH_HOLD_QUESTIONS }];
+      const target = ENGLISH_TARGETS[to];
+      return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label, questions: ENGLISH_HOLD_QUESTIONS }];
     },
     /** Nút ở trang điều khiển: deck-<đích> (đổi tay, không ghi tên ai) hoặc resetDeck. */
     command(name) {
@@ -106,7 +119,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const l = level === 'normal' ? ENGLISH_DEFAULTS.level : ENGLISH_TARGETS[level];
       return {
         set, setIcon: s.icon, setLabel: s.label, setLeft: set === 'general' ? 0 : setLeft, setBy,
-        level, levelIcon: l.icon, levelLabel: l.label, levelLeft: level === 'normal' ? 0 : levelLeft, levelBy
+        level, levelIcon: l.icon, levelLabel: l.label, levelLeft: level === 'normal' ? 0 : levelLeft, levelBy,
+        rules: assignments.map((a) => ({ to: a.to, icon: ENGLISH_TARGETS[a.to].icon, label: ENGLISH_TARGETS[a.to].label, gift: a.gift }))
       };
     }
   };

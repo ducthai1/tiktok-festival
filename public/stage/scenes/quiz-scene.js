@@ -4,8 +4,6 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createParticleSystem } from './particle-effects.js';
 import { disposeObject } from './person-model.js';
 import { avatarNode } from '../stage-labels.js';
-import { ENGLISH_GIFT_RULES, ENGLISH_TARGETS, englishRuleFor } from '/static/shared/english-sets.js';
-import { SAMPLE_GIFTS } from '/static/shared/gift-tiers.js';
 
 const MODES = {
   lophoc: { icon: '📚', title: 'LỚP HỌC CHỮ', color: '#ffd36b', bg: '#0b1a16',
@@ -34,13 +32,6 @@ const GIFT_RULES = {
 const DECK_RULES_PER_PAGE = 7; // nhiều hơn thì bảng lật trang mỗi 10 giây
 const DECK_PAGE_MS = 10000;
 
-/** Món quà thật của phòng (có ảnh) đại diện cho một luật; chưa có danh mục thì dùng quà mẫu. */
-function giftForRule(rule, catalog) {
-  const pick = (list) => list.filter((g) => englishRuleFor(g) === rule)
-    .sort((a, b) => Boolean(b.image) - Boolean(a.image) || a.coins - b.coins || String(a.name).localeCompare(String(b.name)))[0];
-  return pick(catalog) || pick(SAMPLE_GIFTS) || null;
-}
-
 /** Bảng "quà đổi bộ đề" của tab tiếng Anh: dòng trạng thái (bộ + độ khó + người đổi) và các ô quà → bộ đề. */
 function createDeckPanel(hud) {
   const el = hud.el;
@@ -52,9 +43,10 @@ function createDeckPanel(hud) {
   let chips = [];
   let pageTimer = 0;
   let statusKey = '';
+  let rulesKey = '';
   let active = new Set();
 
-  function giftIcon(gift, rule) {
+  function giftIcon(gift) {
     const box = el('span', 'gift');
     if (gift?.image) {
       const img = el('img');
@@ -63,7 +55,7 @@ function createDeckPanel(hud) {
       img.referrerPolicy = 'no-referrer';
       box.append(img);
     } else box.append(el('span', 'emoji', gift?.emoji || '🎁'));
-    box.append(el('i', '', `${gift?.coins || rule.min}💎`));
+    box.append(el('i', '', `${gift?.coins || 1}💎`));
     return box;
   }
 
@@ -80,27 +72,32 @@ function createDeckPanel(hud) {
   }
 
   return {
-    setCatalog(catalog) {
+    /** rules: [{ to, icon, label, gift }] — server gán sẵn món quà (dưới 20 xu) cho từng ô. */
+    setRules(rules) {
+      const key = JSON.stringify(rules || []);
+      if (key === rulesKey) return;
+      rulesKey = key;
       clearInterval(pageTimer);
-      chips = ENGLISH_GIFT_RULES.map((rule) => {
-        const target = ENGLISH_TARGETS[rule.to];
+      chips = (rules || []).map((rule) => {
         const chip = el('div', 'deck-rule');
         chip.dataset.to = rule.to;
         const to = el('span', 'to');
-        to.append(el('b', '', target.icon), el('small', '', target.label));
-        chip.append(giftIcon(giftForRule(rule, catalog || []), rule), el('span', 'arrow', '➜'), to);
+        to.append(el('b', '', rule.icon), el('small', '', rule.label));
+        chip.append(giftIcon(rule.gift), el('span', 'arrow', '➜'), to);
         chip.classList.toggle('on', active.has(rule.to));
         return chip;
       });
+      rulesRoot.style.gridTemplateColumns = `repeat(${Math.max(1, Math.min(chips.length, DECK_RULES_PER_PAGE))}, 1fr)`;
       const pages = [];
       for (let i = 0; i < chips.length; i += DECK_RULES_PER_PAGE) pages.push(chips.slice(i, i + DECK_RULES_PER_PAGE));
       let at = 0;
-      const show = () => rulesRoot.replaceChildren(...pages[at]);
+      const show = () => rulesRoot.replaceChildren(...(pages[at] || []));
       show();
       if (pages.length > 1) pageTimer = setInterval(() => { at = (at + 1) % pages.length; show(); }, DECK_PAGE_MS);
     },
     update(c) {
       if (!c) return;
+      this.setRules(c.rules);
       active = new Set([c.set, c.level]);
       for (const chip of chips) chip.classList.toggle('on', active.has(chip.dataset.to));
       const key = JSON.stringify(c);
@@ -171,7 +168,6 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[rulesKey], 'gift'));
   card.append(head, timer, body, winnersRow, foot);
   const deckPanel = id === 'english' ? createDeckPanel(hud) : null;
-  deckPanel?.setCatalog([]);
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -266,7 +262,6 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     themeClass: 'theme-quiz',
     welcome: { line: 'đã vào lớp! Gõ đáp án vào bình luận nhé ✏️', speech: (n) => `Chào mừng ${n} vào chơi đố vui!` },
     legend: [], // cách chơi + luật quà nằm ở chân bảng câu hỏi (.quiz-foot)
-    setGiftCatalog: (catalog) => deckPanel?.setCatalog(catalog),
     update(snapshot) {
       const state = snapshot.state;
       if (!state || state.phase === 'idle') return;

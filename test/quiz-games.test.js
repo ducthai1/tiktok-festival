@@ -10,7 +10,7 @@ import {
 import { createQuizGame, POINTS, scoreWordle } from '../src/games/quiz/quiz-game.js';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
 import { createEnglishSwitcher, filterByLevel } from '../src/games/quiz/english-switcher.js';
-import { englishRuleFor } from '../public/shared/english-sets.js';
+import { assignEnglishGifts, englishTargetFor } from '../public/shared/english-sets.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
 const chat = (n, comment) => ({ type: 'chat', user: user(n), comment });
@@ -157,12 +157,20 @@ test('wordle: a winner ends the round with the answer shown', () => {
   assert.deepEqual(snap.guesses.map((g) => g.word), ['HOUSE', 'APPLE']);
 });
 
-test('english gifts: rose = easy, other 1-coin = hard, 5 TOEIC, 10 IELTS, 20 medicine, 30 football, 99 tech, 199+ nothing', () => {
-  const to = (name, coins) => englishRuleFor({ name, diamondsEach: coins })?.to || null;
-  assert.deepEqual([to('Rose', 1), to('Hoa hồng', 1), to('TikTok', 1), to('GG', 1), to('Finger Heart', 5), to('Rosa', 10), to('Perfume', 20),
-    to('Doughnut', 30), to('Cap', 99), to('Sunglasses', 199), to('Lion', 29999)],
-  ['easy', 'easy', 'hard', 'hard', 'toeic', 'ielts', 'yhoc', 'bongda', 'congnghe', null, null]);
-  assert.equal(englishRuleFor({ name: 'Rosa', coins: 10 }).to, 'ielts'); // món trong danh mục (coins) cũng khớp
+test('english gifts: only gifts under 20 coins, rose is always easy, assignments stay put when the room gets new gifts', () => {
+  const g = (id, name, coins) => ({ id, name, coins, image: '' });
+  const room = [g('5655', 'Rose', 1), g('5269', 'TikTok', 1), g('6064', 'GG', 1), g('5827', 'Ice Cream Cone', 1), g('7934', 'Heart Me', 1),
+    g('5487', 'Finger Heart', 5), g('5760', 'Weights', 1), g('8913', 'Rosa', 10), g('5658', 'Perfume', 20), g('5879', 'Doughnut', 30), g('6100', 'Cap', 99)];
+  const a = assignEnglishGifts(room);
+  assert.deepEqual(a.map((x) => x.to), ['easy', 'hard', 'toeic', 'ielts', 'yhoc', 'bongda', 'congnghe']);
+  assert.ok(a.every((x) => x.gift.coins < 20));
+  assert.equal(a[0].gift.name, 'Rose');
+  assert.deepEqual(a.slice(1, 4).map((x) => x.gift.name), ['TikTok', 'GG', 'Ice Cream Cone']); // món quen trước
+  const later = assignEnglishGifts([g('9999', 'Aaa New', 1), ...room], a);
+  assert.deepEqual(later.map((x) => x.gift.name), a.map((x) => x.gift.name)); // quà mới không xáo bảng
+  assert.equal(englishTargetFor(a, { id: '6064', name: 'GG', diamondsEach: 1 }), 'toeic');
+  assert.equal(englishTargetFor(a, { id: '', name: 'Rose', diamondsEach: 1 }), 'easy');
+  assert.equal(englishTargetFor(a, { id: '5658', name: 'Perfume', diamondsEach: 20 }), null);
   const sets = loadEnglishSets();
   for (const [id, list] of Object.entries(sets)) assert.ok(list.length >= 150, `${id}: ${list.length}`);
 });
@@ -170,10 +178,12 @@ test('english gifts: rose = easy, other 1-coin = hard, 5 TOEIC, 10 IELTS, 20 med
 test('english switcher: a gift changes the set from the next question for 20 questions, never scores the gifter', () => {
   const english = loadEnglishQuestions();
   const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets: loadEnglishSets() });
+  sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'GG', coins: 1 }]);
   const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
   game.tick(0);
   assert.equal(game.snapshot(0).control.set, 'general');
-  const fx = game.handleEvent(gift(7, 5), 10);
+  assert.deepEqual(game.snapshot(0).control.rules.map((r) => r.to), ['easy', 'hard', 'toeic']);
+  const fx = game.handleEvent({ type: 'gift', user: user(7), gift: { id: '3', name: 'GG', diamondsEach: 1, count: 1, diamonds: 1 } }, 10);
   assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']);
   assert.ok(!game.snapshot(10).category.endsWith('TOEIC')); // câu đang hỏi không bị cắt ngang
   const cats = [];
