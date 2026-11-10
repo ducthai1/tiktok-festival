@@ -118,18 +118,54 @@ test('quiz A/B/C/D: first vote counts, fastest correct voters scored at reveal, 
   const snap = game.snapshot(500);
   assert.equal(snap.options.filter((o) => o.removed).length, 2);
   assert.equal(snap.options[right].removed, false);
-  const fx = game.tick(13000);
+  assert.equal(game.tick(15000).length, 0); // 2 s chờ + 12 s đếm + 1,5 s nhận bình luận tới trễ
+  const fx = game.tick(15600);
   assert.deepEqual(fx[0].winners.map((w) => [w.id, w.points]), [['u2', 10], ['u3', 7]]);
-  assert.equal(game.snapshot(13000).rightIndex, right);
+  assert.equal(game.snapshot(15600).rightIndex, right);
 });
 
-test('quiz likes add time, capped per question', () => {
-  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo')), questionMs: 10000 });
+test('quiz timing: the clock waits 2 s for the live delay, and answers arriving 1.5 s after time-up still count', () => {
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo'), textQ('Chó')), questionMs: 10000 });
   game.tick(0);
-  const fx = game.handleEvent({ type: 'like', user: user(1), likeCount: 1000 }, 10);
-  assert.equal(fx.filter((f) => f.kind === 'quizTime').length, 3);
-  for (let i = 0; i < 20; i += 1) game.handleEvent({ type: 'like', user: user(1), likeCount: 1000 }, 20 + i);
-  assert.equal(game.snapshot(100).totalMs, 25000);
+  assert.equal(game.snapshot(1000).leadIn, true);
+  assert.equal(game.snapshot(1000).msLeft, 10000); // đồng hồ đứng ở mức đầy trong 2 giây đầu
+  assert.equal(game.snapshot(7000).msLeft, 5000);
+  assert.equal(game.tick(12500).length, 0); // hết giờ ở 12 s nhưng còn nhận thêm
+  assert.equal(game.handleEvent(chat(1, 'meo'), 13000)[0].kind, 'quizCorrect');
+  assert.ok(kinds(game.tick(13600)).includes('quizReveal'));
+});
+
+test('quiz energy: 1,000 hearts make the next question golden (x2), 3,000 start a 3-question lightning round with a bonus', () => {
+  const qs = Array.from({ length: 10 }, (_, i) => textQ(`Từ${i}`));
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(...qs) });
+  const likes = (n, t) => game.handleEvent({ type: 'like', user: user(9), likeCount: n }, t);
+  game.tick(0);
+  assert.deepEqual(kinds(likes(1000, 10)), ['quizEnergy']);
+  assert.equal(game.snapshot(10).energy.goldenPending, true);
+  game.command('next', 20);
+  assert.equal(game.snapshot(30).golden, false); // câu đang lật đáp án không đổi
+  game.command('next', 40);
+  assert.equal(game.snapshot(50).golden, true);
+  assert.equal(game.handleEvent(chat(1, 'tu1'), 60)[0].points, 20); // nhanh nhất 10 × 2
+  const fx = likes(2000, 70);
+  assert.deepEqual(fx.map((f) => f.reward), ['lightning']);
+  assert.equal(game.snapshot(70).energy.value, 0);
+  let t = 100;
+  const bolts = [];
+  game.command('next', (t += 10)); // lật câu vàng đang hỏi
+  for (let i = 0; i < 3; i += 1) {
+    game.command('next', (t += 10)); // ra câu chớp nhoáng
+    const snap = game.snapshot(t);
+    assert.deepEqual(snap.lightning, { index: i + 1, total: 3 });
+    assert.equal(snap.totalMs, 8000);
+    game.handleEvent(chat(1, `tu${snap.qNumber - 1}`), (t += 10));
+    bolts.push(...game.command('next', (t += 10)).filter((f) => f.kind === 'quizLightningEnd'));
+  }
+  assert.equal(bolts.length, 1);
+  assert.deepEqual(bolts[0].perfect.map((p) => p.id), ['u1']);
+  assert.equal(game.snapshot(t).board[0].bolts, 1);
+  game.command('next', (t += 10));
+  assert.equal(game.snapshot(t).lightning, null); // hết 3 câu là về bình thường
 });
 
 test('wordle: colours handle repeated letters; only dictionary words count', () => {

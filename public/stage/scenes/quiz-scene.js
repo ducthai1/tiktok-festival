@@ -23,11 +23,11 @@ const MODES = {
 };
 // Luật quà + tim ở chân bảng câu hỏi (bậc 3 = món từ 99💎, xem public/shared/gift-tiers.js)
 const GIFT_RULES = {
-  text: ['🎁 Quà → ', '*mở 1 chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
-  abcd: ['🎁 Quà → ', '*loại 1 đáp án sai cho cả phòng*', ' (từ 99💎 loại 2) · ❤️ 300 tim = +3 giây'],
-  wordle: ['🎁 Quà → ', '*mở 1 ô chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
-  math: ['🎁 Quà = lời cảm ơn trên màn hình · ❤️ 300 tim = +3 giây'],
-  english: ['🎁 Quà → ', '*đổi bộ đề / độ khó*', ' (bảng bên dưới) · ❤️ 300 tim = +3 giây']
+  text: ['🎁 Quà → ', '*mở 1 chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ tim nạp năng lượng ↑'],
+  abcd: ['🎁 Quà → ', '*loại 1 đáp án sai cho cả phòng*', ' (từ 99💎 loại 2) · ❤️ tim nạp năng lượng ↑'],
+  wordle: ['🎁 Quà → ', '*mở 1 ô chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ tim nạp năng lượng ↑'],
+  math: ['🎁 Quà = lời cảm ơn · ❤️ tim nạp năng lượng ↑'],
+  english: ['🎁 Quà → ', '*đổi bộ đề / độ khó*', ' (bảng bên dưới) · ❤️ tim nạp năng lượng ↑']
 };
 const DECK_RULES_PER_PAGE = 7; // nhiều hơn thì bảng lật trang mỗi 10 giây
 const DECK_PAGE_MS = 10000;
@@ -144,6 +144,28 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
 
   hud.setTitle(`${mode.icon} ${mode.title}`);
   hud.setHint(mode.hint);
+
+  // ---- thanh NĂNG LƯỢNG: tim cả phòng → 1.000 ⭐ câu vàng x2, 3.000 ⚡ chớp nhoáng ----
+  const energyRoot = el('div', 'quiz-energy');
+  const energyNum = el('span', 'num');
+  const energyBar = el('div', 'bar');
+  const energyFill = el('div', 'fill');
+  const markGold = el('span', 'mark gold', '⭐ x2');
+  const markBolt = el('span', 'mark bolt', '⚡ 3 câu');
+  energyBar.append(energyFill, markGold, markBolt);
+  energyRoot.append(el('span', 'heart', '❤️'), energyBar, energyNum);
+  hud.gameRoot.append(energyRoot);
+  let energyKey = '';
+  function renderEnergy(e, active) {
+    const key = JSON.stringify([e, active]);
+    if (!e || key === energyKey) return;
+    energyKey = key;
+    energyFill.style.width = `${Math.min(1, e.value / e.max) * 100}%`;
+    markGold.style.left = `${(e.golden / e.max) * 100}%`;
+    energyNum.textContent = `${new Intl.NumberFormat('vi-VN').format(e.value)} / ${new Intl.NumberFormat('vi-VN').format(e.max)}`;
+    energyRoot.classList.toggle('gold-ready', e.goldenPending || active.golden);
+    energyRoot.classList.toggle('bolt-ready', e.lightningQueued > 0 || Boolean(active.lightning));
+  }
 
   // ---- bảng câu hỏi ----
   const card = el('section', `quiz-card quiz-mode-${id}`);
@@ -266,17 +288,22 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       const state = snapshot.state;
       if (!state || state.phase === 'idle') return;
       hud.setStats([`❓ Câu ${state.qNumber}`, `✅ ${state.correctCount} đúng`]);
-      hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, score: `${r.points} đ` })));
+      hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, score: `${r.points} đ${r.bolts ? ` ⚡${r.bolts > 1 ? r.bolts : ''}` : ''}` })));
       deckPanel?.update(state.control);
       cat.textContent = state.category || mode.title;
       const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
-      qno.textContent = state.paused ? '⏸ TẠM DỪNG' : count;
+      const special = state.lightning ? `⚡ CHỚP NHOÁNG ${state.lightning.index}/${state.lightning.total}` : state.golden ? '⭐ CÂU VÀNG x2' : '';
+      qno.textContent = state.paused ? '⏸ TẠM DỪNG' : special || count;
+      qno.classList.toggle('special', Boolean(special));
+      card.classList.toggle('golden', Boolean(state.golden));
+      card.classList.toggle('lightning', Boolean(state.lightning));
+      renderEnergy(state.energy, { golden: state.golden, lightning: state.lightning });
       const seconds = Math.ceil(state.msLeft / 1000);
-      clock.textContent = state.phase === 'question' ? `${seconds}s` : state.phase === 'reveal' ? '✅ ĐÁP ÁN' : '';
+      clock.textContent = state.phase === 'question' ? (state.leadIn ? '⏳' : `${seconds}s`) : state.phase === 'reveal' ? '✅ ĐÁP ÁN' : '';
       timerFill.style.width = `${state.phase === 'question' && state.totalMs ? (state.msLeft / state.totalMs) * 100 : 0}%`;
-      card.classList.toggle('urgent', state.phase === 'question' && seconds <= 5);
+      card.classList.toggle('urgent', state.phase === 'question' && !state.leadIn && seconds <= 5);
       card.classList.toggle('reveal', state.phase === 'reveal');
-      if (state.phase === 'question' && seconds <= 5 && seconds > 0 && seconds !== lastSecond && !state.paused) audio.play('chirp');
+      if (state.phase === 'question' && !state.leadIn && seconds <= 5 && seconds > 0 && seconds !== lastSecond && !state.paused) audio.play('chirp');
       lastSecond = seconds;
       // vẽ lại phần thân khi dữ liệu đổi (không vẽ lại mỗi lần đồng hồ nhảy)
       const view = state.mode === 'abcd' ? [state.prompt, state.options, state.votes, state.rightIndex]
@@ -312,9 +339,22 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ${fx.questions} câu tới`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
-      } else if (fx.kind === 'quizTime') {
-        audio.play('chime');
-        hud.toast(`❤ Tim đủ mốc → +${fx.seconds} giây!`, { ms: 2500 });
+      } else if (fx.kind === 'quizEnergy') {
+        if (fx.reward === 'golden') {
+          audio.play('chime');
+          hud.banner('⭐ CÂU VÀNG ⭐', 'Câu sau nhân đôi điểm', 2800);
+        } else {
+          audio.play('airhorn');
+          hud.banner('⚡ CHỚP NHOÁNG ⚡', '3 câu siêu tốc · đúng cả 3 được ⚡', 3200);
+        }
+        confetti(240);
+      } else if (fx.kind === 'quizLightningEnd') {
+        if (fx.count) {
+          audio.play('fanfare');
+          const names = fx.perfect.map((p) => p.nickname).join(', ');
+          hud.toast(`⚡ Đúng cả 3 câu (+${fx.bonus} điểm): ${names}${fx.count > fx.perfect.length ? ` và ${fx.count - fx.perfect.length} bạn` : ''}`, { gold: true, ms: 5000 });
+          confetti(300);
+        } else hud.toast('⚡ Chưa ai đúng cả 3 câu chớp nhoáng', { ms: 3500 });
       } else if (fx.kind === 'quizClue') {
         audio.play('pop');
         hud.toast(`🟩 ${fx.word} mở ${fx.found} chữ đúng chỗ (+${fx.found} điểm)`, { title: fx.nickname, ms: 2800 });

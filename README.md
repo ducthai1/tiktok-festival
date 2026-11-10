@@ -47,7 +47,8 @@ Cùng một bộ máy (`src/games/quiz/quiz-game.js`) + một cảnh (`public/st
 - Điểm: 5 người đúng nhanh nhất +10/7/5/3/3, đúng sau +1 (Wordle: đoán trúng +15, mở ô xanh mới +1/ô). Bảng điểm giữ suốt phiên, nút "Xoá bảng điểm".
 - **Tab tiếng Anh: quà đổi bộ đề / độ khó cho cả phòng** (`public/shared/english-sets.js`): chỉ dùng quà **dưới 20 xu**, gán theo từng món: Hoa hồng → Dễ; các ô Khó, TOEIC, IELTS, Y học, Bóng đá, Công nghệ lấy lần lượt món rẻ nhất trong danh mục quà thật của phòng (ưu tiên TikTok, GG, Kem, Bắn tim, Rosa). Đã gán thì giữ cố định. Đổi từ câu sau, giữ 20 câu rồi tự về Tổng hợp · Vừa. Bảng ảnh quà thật + tên người đổi nằm dưới bảng điểm. Ở tab này quà không mở gợi ý; quà từ 20 xu chỉ để cảm ơn.
 - **Quà không cộng điểm cho người tặng** (theo hướng dẫn TikTok, nhất là khi có trẻ em xem): quà mở gợi ý cho CẢ PHÒNG — mở chữ, loại đáp án sai, mở ô Wordle. Luôn chừa lại ít nhất 1 chữ.
-- 300 tim = +3 giây cho câu đang hỏi (tối đa +15 giây/câu).
+- **Tim → thanh Năng lượng** (dưới tiêu đề): 1.000 tim → câu sau là ⭐ **Câu vàng** (đúng được x2 điểm); 3.000 tim → ⚡ **Chớp nhoáng**: 3 câu liền, mỗi câu đếm 8 giây, ai đúng cả 3 được ⚡ cạnh tên + 5 điểm, rồi thanh về 0 (Wordle: mốc 3.000 cũng là câu vàng).
+- **Bù độ trễ live**: mỗi câu hiện đề 2 giây rồi mới đếm ngược (người xem thấy đề trễ 1–2 giây); hết giờ vẫn nhận thêm 1,5 giây bình luận đang tới.
 - Tab không được chọn thì đứng yên (đồng hồ không chạy). Nút điều khiển: câu tiếp / lật đáp án, gợi ý, tạm dừng, tiếp tục.
 - Bật "Đọc cảm ơn quà / follow" để giọng đọc đọc câu hỏi và đáp án.
 
