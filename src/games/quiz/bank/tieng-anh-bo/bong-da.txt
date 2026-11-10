@@ -1,0 +1,152 @@
+# Bộ đề · Bóng đá
+FOOTBALL | Môn bóng đá tiếng Anh là gì? | 1 | SOCCER
+GOAL | Bàn thắng tiếng Anh là gì? | 1
+GOALKEEPER | Thủ môn tiếng Anh là gì? | 1 | GOALIE, KEEPER
+DEFENDER | Hậu vệ tiếng Anh là gì? | 1
+STRIKER | Tiền đạo tiếng Anh là gì? | 1 | FORWARD
+CAPTAIN | Đội trưởng tiếng Anh là gì? | 1 | SKIPPER
+COACH | Huấn luyện viên tiếng Anh là gì? | 1 | MANAGER, TRAINER
+REFEREE | Trọng tài tiếng Anh là gì? | 1 | REF
+FAN | Cổ động viên tiếng Anh là gì? | 1 | SUPPORTER, FANS, SUPPORTERS
+STADIUM | Sân vận động tiếng Anh là gì? | 1 | ARENA
+WHISTLE | Cái còi tiếng Anh là gì? | 1
+YELLOW CARD | Thẻ vàng tiếng Anh là gì? | 1
+RED CARD | Thẻ đỏ tiếng Anh là gì? | 1
+PENALTY | Quả phạt đền tiếng Anh là gì? | 1 | PENALTY KICK, SPOT KICK
+CORNER | Quả phạt góc tiếng Anh là gì? | 1 | CORNER KICK
+FIRST HALF | Hiệp một tiếng Anh là gì? | 1
+SECOND HALF | Hiệp hai tiếng Anh là gì? | 1
+DRAW | Hoà (kết quả trận) tiếng Anh là gì? | 1 | TIE
+WIN | Thắng trận tiếng Anh là gì? | 1 | VICTORY
+LOSE | Thua trận tiếng Anh là gì? | 1 | DEFEAT
+SCORE | Ghi bàn tiếng Anh là gì? | 1
+PASS | Chuyền bóng tiếng Anh là gì? | 1
+SHOOT | Sút bóng tiếng Anh là gì? | 1 | SHOT, STRIKE
+KICK | Đá (động từ) tiếng Anh là gì? | 1
+PLAYER | Cầu thủ tiếng Anh là gì? | 1 | FOOTBALLER
+NET | Lưới khung thành tiếng Anh là gì? | 1
+TEAM | Đội bóng tiếng Anh là gì? | 1 | SIDE, SQUAD
+CLUB | Câu lạc bộ tiếng Anh là gì? | 1
+CHAMPION | Nhà vô địch tiếng Anh là gì? | 1 | WINNER, CHAMPIONS, WINNERS
+TROPHY | Chiếc cúp tiếng Anh là gì? | 1 | CUP
+MEDAL | Huy chương tiếng Anh là gì? | 1
+FINAL | Trận chung kết tiếng Anh là gì? | 1
+WORLD CUP | Giải vô địch bóng đá thế giới tiếng Anh là gì? | 1
+MATCH | Trận đấu tiếng Anh là gì? | 1 | GAME
+TRAINING | Buổi tập luyện tiếng Anh là gì? | 1 | PRACTICE
+SKILL | Kỹ thuật cá nhân tiếng Anh là gì? | 1 | TECHNIQUE, SKILLS
+TALENT | Tài năng tiếng Anh là gì? | 1 | GIFT
+NATIONAL TEAM | Đội tuyển quốc gia tiếng Anh là gì? | 1
+CROWD | Đám đông khán giả tiếng Anh là gì? | 1 | AUDIENCE, SPECTATORS
+CHEER | Hò reo cổ vũ tiếng Anh là gì? | 1 | SUPPORT
+TICKET | Vé xem trận tiếng Anh là gì? | 1
+SEASON | Mùa giải tiếng Anh là gì? | 1
+POINT | Điểm (trên bảng xếp hạng) tiếng Anh là gì? | 1 | POINTS
+ATTACK | Tấn công tiếng Anh là gì? | 1 | OFFENSE
+MISS | Sút trượt, bỏ lỡ tiếng Anh là gì? | 1
+TEAMMATE | Đồng đội tiếng Anh là gì? | 1 | TEAM MATE
+SHORTS | Quần đùi thi đấu tiếng Anh là gì? | 1
+SOCKS | Tất, vớ tiếng Anh là gì? | 1 | SOCK
+CELEBRATE | Ăn mừng tiếng Anh là gì? | 1 | CELEBRATION
+MIDFIELDER | Tiền vệ tiếng Anh là gì? | 2
+PITCH | Mặt sân thi đấu tiếng Anh là gì? | 2 | FIELD
+JERSEY | Áo đấu tiếng Anh là gì? | 2 | SHIRT, KIT
+BOOTS | Giày đá bóng tiếng Anh là gì? | 2 | FOOTBALL BOOTS, CLEATS, BOOT
+FOUL | Phạm lỗi tiếng Anh là gì? | 2
+FREE KICK | Quả đá phạt tiếng Anh là gì? | 2
+THROW-IN | Quả ném biên tiếng Anh là gì? | 2 | THROW IN
+OFFSIDE | Việt vị tiếng Anh là gì? | 2
+KICK-OFF | Giao bóng bắt đầu trận tiếng Anh là gì? | 2 | KICKOFF, KICK OFF
+HALF-TIME | Giờ nghỉ giữa hiệp tiếng Anh là gì? | 2 | HALFTIME, HALF TIME, INTERVAL
+EXTRA TIME | Hiệp phụ tiếng Anh là gì? | 2 | OVERTIME
+HEADER | Cú đánh đầu tiếng Anh là gì? | 2 | HEAD
+CROSS | Tạt bóng (từ cánh vào) tiếng Anh là gì? | 2 | CROSSING
+DRIBBLE | Rê bóng, dắt bóng tiếng Anh là gì? | 2
+TACKLE | Vào bóng, cướp bóng tiếng Anh là gì? | 2 | SLIDE TACKLE
+SAVE | Cứu thua (thủ môn bắt bóng) tiếng Anh là gì? | 2
+ASSIST | Đường kiến tạo tiếng Anh là gì? | 2
+OWN GOAL | Phản lưới nhà tiếng Anh là gì? | 2
+HAT-TRICK | Ghi 3 bàn trong một trận tiếng Anh là gì? | 2 | HAT TRICK, HATTRICK
+CROSSBAR | Xà ngang tiếng Anh là gì? | 2 | BAR
+GOALPOST | Cột dọc khung thành tiếng Anh là gì? | 2 | POST, GOAL POST, UPRIGHT
+PENALTY AREA | Vòng cấm địa tiếng Anh là gì? | 2 | PENALTY BOX, BOX
+SUBSTITUTE | Cầu thủ vào thay người tiếng Anh là gì? | 2 | SUB, SUBSTITUTION, REPLACEMENT
+BENCH | Băng ghế dự bị tiếng Anh là gì? | 2
+LINEUP | Đội hình ra sân tiếng Anh là gì? | 2 | LINE-UP, STARTING ELEVEN, STARTING LINEUP
+TACTICS | Chiến thuật tiếng Anh là gì? | 2 | TACTIC, STRATEGY
+LEAGUE | Giải đấu vòng tròn (giải VĐQG) tiếng Anh là gì? | 2 | CHAMPIONSHIP
+SEMI-FINAL | Trận bán kết tiếng Anh là gì? | 2 | SEMIFINAL, SEMI FINAL
+QUARTER-FINAL | Trận tứ kết tiếng Anh là gì? | 2 | QUARTERFINAL, QUARTER FINAL
+GROUP STAGE | Vòng bảng tiếng Anh là gì? | 2
+TOURNAMENT | Giải đấu tiếng Anh là gì? | 2 | COMPETITION
+AWAY | Đá sân khách tiếng Anh là gì? | 2 | AWAY GAME, AWAY MATCH
+HOME | Đá sân nhà tiếng Anh là gì? | 2 | HOME GROUND, HOME GAME
+TRANSFER | Chuyển nhượng cầu thủ tiếng Anh là gì? | 2
+INJURY | Chấn thương tiếng Anh là gì? | 2
+WARM UP | Khởi động trước trận tiếng Anh là gì? | 2 | WARM-UP, WARMUP
+STRETCH | Giãn cơ tiếng Anh là gì? | 2 | STRETCHING
+SPRINT | Chạy nước rút tiếng Anh là gì? | 2 | DASH
+FITNESS | Thể lực tiếng Anh là gì? | 2 | STAMINA
+LEGEND | Huyền thoại tiếng Anh là gì? | 2 | ICON
+COMMENTATOR | Bình luận viên tiếng Anh là gì? | 2 | ANNOUNCER, PUNDIT
+HIGHLIGHTS | Video tóm tắt trận đấu tiếng Anh là gì? | 2 | HIGHLIGHT
+LIVE BROADCAST | Truyền hình trực tiếp tiếng Anh là gì? | 2 | LIVE STREAM, LIVE
+TABLE | Bảng xếp hạng giải đấu tiếng Anh là gì? | 2 | STANDINGS, LEAGUE TABLE, RANKING
+TOP SCORER | Vua phá lưới tiếng Anh là gì? | 2 | GOLDEN BOOT
+VAR | Công nghệ video hỗ trợ trọng tài tiếng Anh là gì? | 2
+DEFENCE | Phòng ngự tiếng Anh là gì? | 2 | DEFENSE, DEFENDING
+CHANCE | Cơ hội ghi bàn tiếng Anh là gì? | 2 | OPPORTUNITY
+RIVAL | Đối thủ kình địch tiếng Anh là gì? | 2 | RIVALS
+OPPONENT | Đội đối thủ tiếng Anh là gì? | 2 | OPPOSITION
+GLOVES | Găng tay thủ môn tiếng Anh là gì? | 2 | GLOVE, GOALKEEPER GLOVES
+CORNER FLAG | Cờ phạt góc tiếng Anh là gì? | 2
+BALL BOY | Cậu bé nhặt bóng tiếng Anh là gì? | 2 | BALL BOYS, BALL KID
+SCOREBOARD | Bảng tỉ số tiếng Anh là gì? | 2
+HANDBALL | Lỗi chạm tay tiếng Anh là gì? | 2 | HAND BALL
+QUALIFY | Giành vé (vượt vòng loại) tiếng Anh là gì? | 2 | QUALIFIED
+WALL | Hàng rào (khi đá phạt) tiếng Anh là gì? | 2
+WINGER | Cầu thủ chạy cánh tiếng Anh là gì? | 3
+LINESMAN | Trọng tài biên tiếng Anh là gì? | 3 | ASSISTANT REFEREE
+SHIN GUARD | Miếng bảo vệ ống chân tiếng Anh là gì? | 3 | SHIN GUARDS, SHIN PAD, SHIN PADS
+STOPPAGE TIME | Thời gian bù giờ tiếng Anh là gì? | 3 | INJURY TIME, ADDED TIME
+SHOOTOUT | Loạt sút luân lưu tiếng Anh là gì? | 3 | PENALTY SHOOTOUT, PENALTIES
+CLEAN SHEET | Giữ sạch lưới tiếng Anh là gì? | 3
+TOUCHLINE | Đường biên dọc tiếng Anh là gì? | 3 | SIDELINE
+FORMATION | Sơ đồ chiến thuật (4-4-2) tiếng Anh là gì? | 3 | SYSTEM
+KNOCKOUT | Vòng đấu loại trực tiếp tiếng Anh là gì? | 3 | KNOCKOUT STAGE, KNOCK-OUT
+FIXTURE | Lịch thi đấu (trận đã xếp) tiếng Anh là gì? | 3 | FIXTURES, SCHEDULE
+DERBY | Trận đấu giữa 2 đội cùng thành phố tiếng Anh là gì? | 3 | LOCAL DERBY
+VETERAN | Cầu thủ lão làng tiếng Anh là gì? | 3
+CHANT | Hô vang bài cổ vũ tiếng Anh là gì? | 3 | SING
+MVP | Cầu thủ hay nhất trận tiếng Anh là gì? | 3 | PLAYER OF THE MATCH, MAN OF THE MATCH
+COUNTER-ATTACK | Phản công tiếng Anh là gì? | 3 | COUNTER ATTACK, COUNTERATTACK, COUNTER
+POSSESSION | Kiểm soát bóng tiếng Anh là gì? | 3 | BALL POSSESSION
+REBOUND | Bóng bật ra tiếng Anh là gì? | 3
+VOLLEY | Sút bóng khi bóng chưa chạm đất tiếng Anh là gì? | 3
+BICYCLE KICK | Cú móc bóng ngược (xe đạp chổng ngược) tiếng Anh là gì? | 3 | OVERHEAD KICK, SCISSOR KICK
+NUTMEG | Xâu kim (đi bóng qua háng) tiếng Anh là gì? | 3
+COMEBACK | Màn lội ngược dòng tiếng Anh là gì? | 3 | TURNAROUND, COME BACK
+UNDERDOG | Đội cửa dưới tiếng Anh là gì? | 3
+FAVOURITE | Đội cửa trên (được đánh giá cao) tiếng Anh là gì? | 3 | FAVORITE, FAVOURITES, FAVORITES
+DIVE | Ăn vạ (ngã giả vờ) tiếng Anh là gì? | 3 | SIMULATION, FLOP
+SUSPENSION | Án treo giò tiếng Anh là gì? | 3 | BAN, SUSPENDED
+RELEGATION | Xuống hạng tiếng Anh là gì? | 3 | DEMOTION, RELEGATED
+PROMOTION | Lên hạng tiếng Anh là gì? | 3 | PROMOTED
+ACADEMY | Lò đào tạo trẻ tiếng Anh là gì? | 3 | YOUTH ACADEMY
+GOAL KICK | Quả phát bóng lên tiếng Anh là gì? | 2
+CHIP | Cú lốp bóng tiếng Anh là gì? | 3 | LOB
+LONG SHOT | Cú sút xa tiếng Anh là gì? | 2
+EQUALISER | Bàn gỡ hoà tiếng Anh là gì? | 3 | EQUALIZER
+OPENER | Bàn mở tỉ số tiếng Anh là gì? | 3 | OPENING GOAL
+THROUGH BALL | Đường chọc khe tiếng Anh là gì? | 3
+ONE-TWO | Phối hợp bật tường tiếng Anh là gì? | 3 | ONE TWO, WALL PASS
+MARK | Kèm người (theo sát đối thủ) tiếng Anh là gì? | 3 | MARKING
+CLEARANCE | Phá bóng giải nguy tiếng Anh là gì? | 3 | CLEAR
+FRIENDLY | Trận giao hữu tiếng Anh là gì? | 2 | FRIENDLY MATCH
+LEAD | Dẫn trước (về tỉ số) tiếng Anh là gì? | 2
+SCARF | Khăn quàng của cổ động viên tiếng Anh là gì? | 1
+FLARE | Pháo sáng trên khán đài tiếng Anh là gì? | 3
+MASCOT | Linh vật tiếng Anh là gì? | 2
+ANTHEM | Quốc ca (hát trước trận) tiếng Anh là gì? | 2 | NATIONAL ANTHEM
+PENALTY SPOT | Chấm phạt đền tiếng Anh là gì? | 2 | SPOT
+DUGOUT | Khu kỹ thuật (băng ghế huấn luyện viên) tiếng Anh là gì? | 3

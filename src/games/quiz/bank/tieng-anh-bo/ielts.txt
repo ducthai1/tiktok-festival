@@ -1,0 +1,159 @@
+# Bộ đề · IELTS
+ENVIRONMENT | Môi trường tiếng Anh là gì? | 1
+POLLUTION | Sự ô nhiễm tiếng Anh là gì? | 1 | CONTAMINATION
+CLIMATE | Khí hậu tiếng Anh là gì? | 1
+ENERGY | Năng lượng tiếng Anh là gì? | 1
+ECONOMY | Nền kinh tế tiếng Anh là gì? | 1
+GOVERNMENT | Chính phủ tiếng Anh là gì? | 1
+POPULATION | Dân số tiếng Anh là gì? | 1
+EDUCATION | Giáo dục tiếng Anh là gì? | 1
+KNOWLEDGE | Kiến thức tiếng Anh là gì? | 1
+RESEARCH | Việc nghiên cứu tiếng Anh là gì? | 1 | STUDY
+DATA | Dữ liệu tiếng Anh là gì? | 1 | INFORMATION
+INCREASE | Tăng lên tiếng Anh là gì? | 1 | RISE, GROW, GROWTH
+DECREASE | Giảm xuống tiếng Anh là gì? | 1 | DECLINE, FALL, DROP, REDUCE
+TREND | Xu hướng tiếng Anh là gì? | 1
+AVERAGE | Mức trung bình tiếng Anh là gì? | 1 | MEAN
+ADVANTAGE | Ưu điểm, lợi thế tiếng Anh là gì? | 1 | BENEFIT, PRO, MERIT
+DISADVANTAGE | Nhược điểm, bất lợi tiếng Anh là gì? | 1 | DRAWBACK, CON, DOWNSIDE
+OPINION | Ý kiến, quan điểm tiếng Anh là gì? | 1 | VIEW, VIEWPOINT, POINT OF VIEW
+AGREE | Đồng ý tiếng Anh là gì? | 1
+DISAGREE | Không đồng ý tiếng Anh là gì? | 1
+CONCLUSION | Kết luận tiếng Anh là gì? | 1
+SOLUTION | Giải pháp tiếng Anh là gì? | 1 | REMEDY
+PROBLEM | Vấn đề (cần giải quyết) tiếng Anh là gì? | 1 | ISSUE
+CAUSE | Nguyên nhân tiếng Anh là gì? | 1 | REASON
+IMPROVE | Cải thiện tiếng Anh là gì? | 1 | ENHANCE
+DEVELOP | Phát triển (động từ) tiếng Anh là gì? | 1 | GROW
+DEVELOPMENT | Sự phát triển tiếng Anh là gì? | 1 | GROWTH
+TECHNOLOGY | Công nghệ tiếng Anh là gì? | 1
+CULTURE | Văn hoá tiếng Anh là gì? | 1
+TRADITION | Truyền thống tiếng Anh là gì? | 1 | CUSTOM
+CRIME | Tội phạm (hành vi phạm tội) tiếng Anh là gì? | 1 | OFFENCE, OFFENSE
+PRISON | Nhà tù tiếng Anh là gì? | 1 | JAIL
+LAW | Luật pháp tiếng Anh là gì? | 1 | LEGISLATION
+DIET | Chế độ ăn uống tiếng Anh là gì? | 1
+LIFESTYLE | Lối sống tiếng Anh là gì? | 1 | WAY OF LIFE
+STRESS | Căng thẳng, áp lực tiếng Anh là gì? | 1 | PRESSURE, TENSION
+CAREER | Sự nghiệp tiếng Anh là gì? | 1 | PROFESSION
+UNIVERSITY | Trường đại học tiếng Anh là gì? | 1 | COLLEGE
+ONLINE LEARNING | Học trực tuyến tiếng Anh là gì? | 1 | E-LEARNING, ONLINE COURSE
+MEDIA | Truyền thông (báo, đài) tiếng Anh là gì? | 1 | MASS MEDIA
+SOCIAL MEDIA | Mạng xã hội tiếng Anh là gì? | 1 | SOCIAL NETWORK
+DEVICE | Thiết bị điện tử tiếng Anh là gì? | 1 | GADGET
+RECYCLE | Tái chế tiếng Anh là gì? | 1
+WASTE | Rác thải tiếng Anh là gì? | 1 | RUBBISH, GARBAGE, TRASH
+FLOOD | Lũ lụt tiếng Anh là gì? | 1 | FLOODING
+TOURISM | Ngành du lịch tiếng Anh là gì? | 1
+TOURIST | Du khách tiếng Anh là gì? | 1 | TRAVELLER, TRAVELER, VISITOR
+MUSEUM | Bảo tàng tiếng Anh là gì? | 1
+COMMUNITY | Cộng đồng tiếng Anh là gì? | 1
+SOCIETY | Xã hội tiếng Anh là gì? | 1
+EXPERIMENT | Thí nghiệm tiếng Anh là gì? | 1 | TEST
+GRAPH | Biểu đồ đường tiếng Anh là gì? | 1 | CHART, LINE GRAPH
+COMPARE | So sánh tiếng Anh là gì? | 1
+SIMILAR | Tương tự, giống nhau tiếng Anh là gì? | 1 | ALIKE
+DIFFERENCE | Sự khác biệt tiếng Anh là gì? | 1 | DISTINCTION
+HOWEVER | Tuy nhiên (từ nối) tiếng Anh là gì? | 1 | BUT, NEVERTHELESS, NONETHELESS
+ALTHOUGH | Mặc dù tiếng Anh là gì? | 1 | THOUGH, EVEN THOUGH, DESPITE
+FOR EXAMPLE | Ví dụ như (từ nối) tiếng Anh là gì? | 1 | FOR INSTANCE, SUCH AS
+GLOBAL WARMING | Sự nóng lên toàn cầu tiếng Anh là gì? | 2 | CLIMATE CHANGE
+RESOURCE | Tài nguyên tiếng Anh là gì? | 2 | RESOURCES
+URBAN | Thuộc thành thị (tính từ) tiếng Anh là gì? | 2
+RURAL | Thuộc nông thôn (tính từ) tiếng Anh là gì? | 2
+EVIDENCE | Bằng chứng tiếng Anh là gì? | 2 | PROOF
+ANALYSE | Phân tích tiếng Anh là gì? | 2 | ANALYZE
+SIGNIFICANT | Đáng kể tiếng Anh là gì? | 2 | CONSIDERABLE, SUBSTANTIAL
+PERCENTAGE | Tỷ lệ phần trăm tiếng Anh là gì? | 2 | PERCENT
+APPROXIMATELY | Xấp xỉ, khoảng chừng tiếng Anh là gì? | 2 | ABOUT, AROUND, ROUGHLY
+GRADUALLY | Dần dần tiếng Anh là gì? | 2 | SLOWLY, STEADILY
+ARGUMENT | Lập luận tiếng Anh là gì? | 2 | REASONING
+CONSEQUENCE | Hậu quả tiếng Anh là gì? | 2 | RESULT, EFFECT, OUTCOME
+IMPACT | Tác động tiếng Anh là gì? | 2 | EFFECT, INFLUENCE
+INFLUENCE | Gây ảnh hưởng (động từ) tiếng Anh là gì? | 2 | AFFECT, IMPACT
+ESSENTIAL | Thiết yếu tiếng Anh là gì? | 2 | VITAL, NECESSARY, CRUCIAL
+BENEFICIAL | Có lợi (tính từ) tiếng Anh là gì? | 2 | ADVANTAGEOUS, HELPFUL, USEFUL
+HARMFUL | Có hại tiếng Anh là gì? | 2 | DAMAGING, DETRIMENTAL
+DIVERSITY | Sự đa dạng tiếng Anh là gì? | 2 | VARIETY
+EMPLOYMENT | Việc làm (có việc làm) tiếng Anh là gì? | 2 | JOBS, WORK
+UNEMPLOYMENT | Nạn thất nghiệp tiếng Anh là gì? | 2
+POVERTY | Sự nghèo đói tiếng Anh là gì? | 2
+WEALTH | Của cải, sự giàu có tiếng Anh là gì? | 2 | RICHES, FORTUNE
+PUNISHMENT | Hình phạt tiếng Anh là gì? | 2 | PENALTY
+HEALTHCARE | Chăm sóc y tế tiếng Anh là gì? | 2 | HEALTH CARE
+MENTAL HEALTH | Sức khoẻ tinh thần tiếng Anh là gì? | 2
+GENERATION | Thế hệ tiếng Anh là gì? | 2
+ELDERLY | Cao tuổi (người già) tiếng Anh là gì? | 2 | OLD, AGED, SENIOR
+YOUTH | Giới trẻ, tuổi trẻ tiếng Anh là gì? | 2 | YOUNG PEOPLE, TEENAGERS
+CHILDHOOD | Thời thơ ấu tiếng Anh là gì? | 2
+ACADEMIC | Thuộc học thuật tiếng Anh là gì? | 2 | SCHOLARLY
+DEGREE | Bằng đại học tiếng Anh là gì? | 2 | DIPLOMA, BACHELOR
+SCHOLARSHIP | Học bổng tiếng Anh là gì? | 2 | GRANT, BURSARY
+TUITION | Học phí tiếng Anh là gì? | 2 | TUITION FEE, TUITION FEES, FEES
+LECTURE | Bài giảng ở đại học tiếng Anh là gì? | 2 | TALK
+ADVERTISING | Ngành quảng cáo tiếng Anh là gì? | 2 | ADVERTISEMENT, ADS
+PRIVACY | Quyền riêng tư tiếng Anh là gì? | 2
+ADDICTION | Sự nghiện tiếng Anh là gì? | 2 | DEPENDENCE
+AI | Trí tuệ nhân tạo tiếng Anh là gì? | 2 | ARTIFICIAL INTELLIGENCE
+EXTINCT | Tuyệt chủng (tính từ) tiếng Anh là gì? | 2
+DROUGHT | Hạn hán tiếng Anh là gì? | 2
+DISASTER | Thảm hoạ, thiên tai tiếng Anh là gì? | 2 | CATASTROPHE, CALAMITY
+ARCHITECTURE | Kiến trúc tiếng Anh là gì? | 2
+LANDMARK | Công trình biểu tượng tiếng Anh là gì? | 2 | MONUMENT
+INDIVIDUAL | Cá nhân (một người) tiếng Anh là gì? | 2 | PERSON
+RESPONSIBILITY | Trách nhiệm tiếng Anh là gì? | 2 | DUTY
+VOLUNTEER | Tình nguyện viên tiếng Anh là gì? | 2
+CHARITY | Tổ chức từ thiện tiếng Anh là gì? | 2
+DONATE | Quyên góp tiếng Anh là gì? | 2 | CONTRIBUTE, GIVE
+INVESTMENT | Sự đầu tư tiếng Anh là gì? | 2
+CONSUMER | Người tiêu dùng tiếng Anh là gì? | 2 | CUSTOMER
+DEMAND | Nhu cầu (cầu thị trường) tiếng Anh là gì? | 2
+SUPPLY | Nguồn cung tiếng Anh là gì? | 2
+STATISTICS | Số liệu thống kê tiếng Anh là gì? | 2 | STATS
+PIE CHART | Biểu đồ tròn tiếng Anh là gì? | 2 | PIE GRAPH
+MAJORITY | Đa số, phần lớn tiếng Anh là gì? | 2 | MOST
+MINORITY | Thiểu số tiếng Anh là gì? | 2
+OVERALL | Nhìn chung, tổng thể tiếng Anh là gì? | 2 | IN GENERAL, GENERALLY
+THEREFORE | Do đó, vì vậy tiếng Anh là gì? | 2 | THUS, HENCE, SO, CONSEQUENTLY
+MOREOVER | Hơn nữa (từ nối) tiếng Anh là gì? | 2 | FURTHERMORE, IN ADDITION, ADDITIONALLY, BESIDES
+IN CONCLUSION | Tóm lại (mở đầu đoạn kết) tiếng Anh là gì? | 2 | TO CONCLUDE, TO SUM UP, IN SUMMARY
+RENEWABLE | Tái tạo được (năng lượng) tiếng Anh là gì? | 3
+SUSTAINABLE | Bền vững tiếng Anh là gì? | 3
+URBANIZATION | Đô thị hoá tiếng Anh là gì? | 3 | URBANISATION
+INFRASTRUCTURE | Cơ sở hạ tầng tiếng Anh là gì? | 3
+CONGESTION | Sự tắc nghẽn giao thông tiếng Anh là gì? | 3 | TRAFFIC JAM
+FLUCTUATE | Dao động lên xuống tiếng Anh là gì? | 3
+PROPORTION | Tỷ lệ (phần trên tổng) tiếng Anh là gì? | 3 | RATIO, SHARE
+DRAMATICALLY | Một cách mạnh mẽ, đột ngột tiếng Anh là gì? | 3 | SHARPLY, SIGNIFICANTLY
+CRUCIAL | Then chốt tiếng Anh là gì? | 3 | VITAL, ESSENTIAL, KEY
+ENHANCE | Nâng cao (chất lượng) tiếng Anh là gì? | 3 | IMPROVE, BOOST
+INNOVATION | Sự đổi mới sáng tạo tiếng Anh là gì? | 3 | INVENTION
+GLOBALISATION | Toàn cầu hoá tiếng Anh là gì? | 3 | GLOBALIZATION
+IMMIGRATION | Sự nhập cư tiếng Anh là gì? | 3 | MIGRATION
+INEQUALITY | Sự bất bình đẳng tiếng Anh là gì? | 3 | DISPARITY
+OBESITY | Bệnh béo phì tiếng Anh là gì? | 3
+SEDENTARY | Ít vận động (lối sống) tiếng Anh là gì? | 3 | INACTIVE
+WELL-BEING | Sự khoẻ mạnh, hạnh phúc tiếng Anh là gì? | 3 | WELLBEING, WELFARE
+ADOLESCENT | Thanh thiếu niên tiếng Anh là gì? | 3 | TEENAGER, TEEN, YOUTH
+PARENTING | Việc nuôi dạy con tiếng Anh là gì? | 3
+CURRICULUM | Chương trình giảng dạy tiếng Anh là gì? | 3 | SYLLABUS
+AUTOMATION | Tự động hoá tiếng Anh là gì? | 3
+ENDANGERED | Có nguy cơ tuyệt chủng tiếng Anh là gì? | 3 | THREATENED
+HABITAT | Môi trường sống (của loài vật) tiếng Anh là gì? | 3
+DEFORESTATION | Nạn phá rừng tiếng Anh là gì? | 3
+BIODIVERSITY | Đa dạng sinh học tiếng Anh là gì? | 3
+CONSERVATION | Sự bảo tồn tiếng Anh là gì? | 3 | PRESERVATION, PROTECTION
+EMISSION | Khí thải tiếng Anh là gì? | 3 | EMISSIONS, EXHAUST
+FOSSIL FUEL | Nhiên liệu hoá thạch tiếng Anh là gì? | 3 | FOSSIL FUELS
+HERITAGE | Di sản tiếng Anh là gì? | 3
+TAXPAYER | Người đóng thuế tiếng Anh là gì? | 3
+CONSUMPTION | Sự tiêu thụ tiếng Anh là gì? | 3 | USE, USAGE
+SHORTAGE | Sự thiếu hụt tiếng Anh là gì? | 3 | LACK, SCARCITY, DEFICIT
+ABUNDANT | Dồi dào tiếng Anh là gì? | 3 | PLENTIFUL
+INEVITABLE | Không thể tránh khỏi tiếng Anh là gì? | 3 | UNAVOIDABLE
+CONTROVERSIAL | Gây tranh cãi tiếng Anh là gì? | 3 | DEBATABLE
+ETHICAL | Hợp đạo đức tiếng Anh là gì? | 3 | MORAL
+PERSPECTIVE | Góc nhìn tiếng Anh là gì? | 3 | VIEWPOINT, POINT OF VIEW, VIEW
+PHENOMENON | Hiện tượng tiếng Anh là gì? | 3
+HYPOTHESIS | Giả thuyết tiếng Anh là gì? | 3 | THEORY
+CONTRAST | Sự tương phản tiếng Anh là gì? | 3 | DIFFERENCE

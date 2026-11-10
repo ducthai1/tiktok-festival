@@ -1,0 +1,152 @@
+# Bộ đề · Công nghệ
+COMPUTER | Máy tính tiếng Anh là gì? | 1 | PC
+LAPTOP | Máy tính xách tay tiếng Anh là gì? | 1 | NOTEBOOK
+SMARTPHONE | Điện thoại thông minh tiếng Anh là gì? | 1 | PHONE, MOBILE PHONE, CELL PHONE
+TABLET | Máy tính bảng tiếng Anh là gì? | 1
+KEYBOARD | Bàn phím tiếng Anh là gì? | 1
+MOUSE | Chuột máy tính tiếng Anh là gì? | 1
+SCREEN | Màn hình tiếng Anh là gì? | 1 | MONITOR, DISPLAY
+SPEAKER | Cái loa tiếng Anh là gì? | 1 | SPEAKERS, LOUDSPEAKER
+HEADPHONES | Tai nghe tiếng Anh là gì? | 1 | HEADPHONE, HEADSET, EARPHONES
+CHARGER | Củ sạc, bộ sạc tiếng Anh là gì? | 1
+BATTERY | Viên pin tiếng Anh là gì? | 1
+CABLE | Dây cáp tiếng Anh là gì? | 1 | WIRE, CORD
+ONLINE | Trực tuyến tiếng Anh là gì? | 1
+DOWNLOAD | Tải xuống tiếng Anh là gì? | 1
+UPLOAD | Tải lên tiếng Anh là gì? | 1
+INSTALL | Cài đặt phần mềm (động từ) tiếng Anh là gì? | 1
+UPDATE | Cập nhật tiếng Anh là gì? | 1 | UPGRADE
+DELETE | Xoá dữ liệu tiếng Anh là gì? | 1 | REMOVE, ERASE
+SAVE | Lưu (tệp) tiếng Anh là gì? | 1
+COPY | Sao chép tiếng Anh là gì? | 1
+PASTE | Dán (sau khi sao chép) tiếng Anh là gì? | 1
+LOG IN | Đăng nhập tiếng Anh là gì? | 1 | LOGIN, SIGN IN
+LOG OUT | Đăng xuất tiếng Anh là gì? | 1 | LOGOUT, SIGN OUT
+SIGN UP | Đăng ký tài khoản tiếng Anh là gì? | 1 | REGISTER
+ACCOUNT | Tài khoản tiếng Anh là gì? | 1
+PASSWORD | Mật khẩu tiếng Anh là gì? | 1 | PASSCODE
+USERNAME | Tên đăng nhập tiếng Anh là gì? | 1 | USER NAME
+SETTINGS | Mục cài đặt (trên máy) tiếng Anh là gì? | 1 | SETTING, OPTIONS
+MESSAGE | Tin nhắn tiếng Anh là gì? | 1 | TEXT, SMS
+FILE | Tệp tin tiếng Anh là gì? | 1 | DOCUMENT
+FOLDER | Thư mục tiếng Anh là gì? | 1 | DIRECTORY
+ICON | Biểu tượng trên màn hình tiếng Anh là gì? | 1
+APP | Ứng dụng tiếng Anh là gì? | 1 | APPLICATION, APPS
+SOFTWARE | Phần mềm tiếng Anh là gì? | 1 | PROGRAM, PROGRAMME
+DATA | Dữ liệu tiếng Anh là gì? | 1
+AI | Trí tuệ nhân tạo tiếng Anh là gì? | 1 | ARTIFICIAL INTELLIGENCE
+ROBOT | Người máy tiếng Anh là gì? | 1
+SELFIE | Ảnh tự sướng tiếng Anh là gì? | 1
+SCREENSHOT | Ảnh chụp màn hình tiếng Anh là gì? | 1 | SCREEN SHOT, SCREEN CAPTURE
+LIVESTREAM | Phát trực tiếp tiếng Anh là gì? | 1 | LIVE STREAM, LIVE, STREAM
+FOLLOWER | Người theo dõi tiếng Anh là gì? | 1 | FOLLOWERS
+LIKE | Bấm thích tiếng Anh là gì? | 1
+SHARE | Chia sẻ tiếng Anh là gì? | 1
+COMMENT | Bình luận tiếng Anh là gì? | 1
+POST | Bài đăng tiếng Anh là gì? | 1 | STATUS
+CLICK | Nhấp chuột tiếng Anh là gì? | 1 | TAP
+TYPE | Gõ phím tiếng Anh là gì? | 1
+PRINT | In tài liệu tiếng Anh là gì? | 1
+CONNECT | Kết nối tiếng Anh là gì? | 1
+SHUT DOWN | Tắt máy tiếng Anh là gì? | 1 | TURN OFF, POWER OFF, SHUTDOWN, SWITCH OFF
+RESTART | Khởi động lại tiếng Anh là gì? | 1 | REBOOT
+LOADING | Đang tải tiếng Anh là gì? | 1
+SPEED | Tốc độ tiếng Anh là gì? | 1
+DEVICE | Thiết bị điện tử tiếng Anh là gì? | 1 | GADGET
+TECHNOLOGY | Công nghệ tiếng Anh là gì? | 1 | TECH
+ENGINEER | Kỹ sư tiếng Anh là gì? | 1
+ELECTRICITY | Điện (năng lượng) tiếng Anh là gì? | 1 | POWER
+CHAT | Nhắn tin trò chuyện tiếng Anh là gì? | 1 | TEXT
+ONLINE SHOPPING | Mua sắm trực tuyến tiếng Anh là gì? | 1 | E-COMMERCE, ECOMMERCE
+VOLUME | Âm lượng tiếng Anh là gì? | 1
+PLUG | Phích cắm điện tiếng Anh là gì? | 2
+SOCKET | Ổ cắm điện tiếng Anh là gì? | 2 | OUTLET, POWER POINT
+NETWORK | Mạng (mạng máy tính) tiếng Anh là gì? | 2
+OFFLINE | Ngoại tuyến (không có mạng) tiếng Anh là gì? | 2
+BROWSER | Trình duyệt tiếng Anh là gì? | 2 | WEB BROWSER
+SEARCH ENGINE | Công cụ tìm kiếm tiếng Anh là gì? | 2
+UNDO | Hoàn tác tiếng Anh là gì? | 2
+REFRESH | Tải lại trang tiếng Anh là gì? | 2 | RELOAD
+PROFILE | Hồ sơ cá nhân trên mạng tiếng Anh là gì? | 2
+NOTIFICATION | Thông báo trên điện thoại tiếng Anh là gì? | 2 | ALERT, NOTIFICATIONS
+ATTACHMENT | Tệp đính kèm tiếng Anh là gì? | 2
+DESKTOP | Màn hình chính máy tính tiếng Anh là gì? | 2 | HOME SCREEN
+HARDWARE | Phần cứng tiếng Anh là gì? | 2
+PROGRAMMER | Lập trình viên tiếng Anh là gì? | 2 | CODER, DEVELOPER, SOFTWARE ENGINEER
+CODE | Mã lập trình tiếng Anh là gì? | 2 | SOURCE CODE
+BUG | Lỗi phần mềm tiếng Anh là gì? | 2 | ERROR, GLITCH
+HACKER | Tin tặc tiếng Anh là gì? | 2
+SECURITY | Bảo mật tiếng Anh là gì? | 2 | CYBERSECURITY
+PRIVACY | Quyền riêng tư tiếng Anh là gì? | 2
+BACKUP | Sao lưu dữ liệu tiếng Anh là gì? | 2 | BACK UP, BACK-UP
+CLOUD | Đám mây lưu trữ tiếng Anh là gì? | 2 | CLOUD STORAGE
+STORAGE | Dung lượng lưu trữ tiếng Anh là gì? | 2 | SPACE
+MEMORY | Bộ nhớ RAM tiếng Anh là gì? | 2 | RAM
+DATABASE | Cơ sở dữ liệu tiếng Anh là gì? | 2
+SERVER | Máy chủ tiếng Anh là gì? | 2
+DRONE | Máy bay không người lái tiếng Anh là gì? | 2 | UAV
+VIRTUAL REALITY | Thực tế ảo tiếng Anh là gì? | 2 | VR
+SUBSCRIBE | Đăng ký theo dõi kênh tiếng Anh là gì? | 2 | FOLLOW
+HASHTAG | Thẻ bắt đầu bằng dấu thăng (#) tiếng Anh là gì? | 2 | TAG
+VIRAL | Lan truyền rần rần (nổi trên mạng) tiếng Anh là gì? | 2 | TRENDING
+CONTENT | Nội dung tiếng Anh là gì? | 2
+CREATOR | Nhà sáng tạo nội dung tiếng Anh là gì? | 2 | CONTENT CREATOR
+INFLUENCER | Người có sức ảnh hưởng (KOL) tiếng Anh là gì? | 2 | KOL
+SCROLL | Lướt màn hình tiếng Anh là gì? | 2 | SWIPE
+TAP | Chạm nhẹ vào màn hình tiếng Anh là gì? | 2 | CLICK, PRESS
+SCAN | Quét mã, quét tài liệu tiếng Anh là gì? | 2
+BARCODE | Mã vạch tiếng Anh là gì? | 2
+SIGNAL | Tín hiệu sóng điện thoại tiếng Anh là gì? | 2 | RECEPTION
+ROUTER | Bộ phát wifi tiếng Anh là gì? | 2 | MODEM
+DISCONNECT | Ngắt kết nối tiếng Anh là gì? | 2
+CRASH | Bị sập, bị treo (ứng dụng) tiếng Anh là gì? | 2 | FREEZE, HANG
+DIGITAL | Kỹ thuật số tiếng Anh là gì? | 2
+INVENT | Phát minh (động từ) tiếng Anh là gì? | 2 | CREATE
+SATELLITE | Vệ tinh tiếng Anh là gì? | 2
+E-WALLET | Ví điện tử tiếng Anh là gì? | 2 | EWALLET, DIGITAL WALLET, E WALLET
+SPAM | Thư rác tiếng Anh là gì? | 2 | JUNK MAIL, JUNK
+SCAM | Lừa đảo qua mạng tiếng Anh là gì? | 2 | FRAUD
+FREE TRIAL | Dùng thử miễn phí tiếng Anh là gì? | 2
+VERSION | Phiên bản tiếng Anh là gì? | 2
+FEATURE | Tính năng tiếng Anh là gì? | 2 | FUNCTION
+TUTORIAL | Video hướng dẫn tiếng Anh là gì? | 2 | GUIDE, HOW-TO
+SHORTCUT | Phím tắt tiếng Anh là gì? | 2 | HOTKEY, KEYBOARD SHORTCUT
+SPACE BAR | Phím cách tiếng Anh là gì? | 2 | SPACE, SPACEBAR
+ENTER | Phím xuống dòng tiếng Anh là gì? | 2 | RETURN
+WIRELESS | Không dây tiếng Anh là gì? | 2 | CORDLESS
+TOUCHSCREEN | Màn hình cảm ứng tiếng Anh là gì? | 2 | TOUCH SCREEN
+BRIGHTNESS | Độ sáng màn hình tiếng Anh là gì? | 2
+PROCESSOR | Bộ vi xử lý tiếng Anh là gì? | 3 | CPU, CHIP, MICROPROCESSOR
+ALGORITHM | Thuật toán tiếng Anh là gì? | 3
+ENCRYPTION | Mã hoá dữ liệu tiếng Anh là gì? | 3 | ENCRYPT
+INNOVATION | Sự đổi mới công nghệ tiếng Anh là gì? | 3
+CIRCUIT | Mạch điện tiếng Anh là gì? | 3
+SENSOR | Cảm biến tiếng Anh là gì? | 3
+NAVIGATION | Định vị chỉ đường tiếng Anh là gì? | 3 | GPS
+SUBSCRIPTION | Gói đăng ký trả phí tiếng Anh là gì? | 3
+INTERFACE | Giao diện tiếng Anh là gì? | 3 | UI, USER INTERFACE
+PORTABLE | Dễ mang theo (di động) tiếng Anh là gì? | 3
+RESOLUTION | Độ phân giải tiếng Anh là gì? | 3
+BANDWIDTH | Băng thông tiếng Anh là gì? | 3
+FIRMWARE | Phần mềm điều khiển thiết bị tiếng Anh là gì? | 3
+COMPATIBLE | Tương thích tiếng Anh là gì? | 3
+AUTHENTICATION | Xác thực (bảo mật) tiếng Anh là gì? | 3 | VERIFICATION
+MALWARE | Phần mềm độc hại tiếng Anh là gì? | 3 | VIRUS
+FIREWALL | Tường lửa tiếng Anh là gì? | 3
+PROGRAMMING | Lập trình (ngành) tiếng Anh là gì? | 3 | CODING
+CYBERSPACE | Không gian mạng tiếng Anh là gì? | 3
+STREAMING | Phát trực tuyến (xem phim, nghe nhạc) tiếng Anh là gì? | 3
+OPERATING SYSTEM | Hệ điều hành tiếng Anh là gì? | 3 | OS
+DOWNLOAD SPEED | Tốc độ tải xuống tiếng Anh là gì? | 3
+SCANNER | Máy quét tài liệu tiếng Anh là gì? | 2
+PROJECTOR | Máy chiếu tiếng Anh là gì? | 2
+HARD DRIVE | Ổ cứng tiếng Anh là gì? | 2 | HARD DISK, HDD
+POWER BANK | Sạc dự phòng tiếng Anh là gì? | 1 | PORTABLE CHARGER
+SMARTWATCH | Đồng hồ thông minh tiếng Anh là gì? | 1 | SMART WATCH
+EARBUDS | Tai nghe nhét tai tiếng Anh là gì? | 2 | EARPHONES
+GAME CONSOLE | Máy chơi điện tử (cầm tay, cắm TV) tiếng Anh là gì? | 2 | CONSOLE
+VIDEO GAME | Trò chơi điện tử tiếng Anh là gì? | 1 | GAME
+SEARCH | Tìm kiếm trên mạng tiếng Anh là gì? | 1 | LOOK UP
+LINK | Đường liên kết tiếng Anh là gì? | 2 | URL, HYPERLINK
+CHATBOT | Trợ lý trò chuyện tự động tiếng Anh là gì? | 3 | BOT
+SMART HOME | Nhà thông minh tiếng Anh là gì? | 2

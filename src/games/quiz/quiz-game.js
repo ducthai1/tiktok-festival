@@ -47,7 +47,9 @@ export function scoreWordle(guess, answer) {
  */
 export function createQuizGame({
   id, title, kind = 'text', deck, questionMs = 25000, revealMs = 6500, firstLetter = true, autoHints = true,
-  speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random
+  speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random,
+  // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
+  onGift = null, onCommand = null, extraState = null
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -275,6 +277,8 @@ export function createQuizGame({
         if (kind === 'text') onText(event.user, event.comment, now, fx);
         else if (kind === 'abcd') onVote(event.user, event.comment, now);
         else onWordleGuess(event.user, event.comment, now, fx);
+      } else if (event.type === 'gift' && onGift) {
+        fx.push(...onGift(event, now));
       } else if (event.type === 'gift') {
         const tier = giftTier(event.gift.diamondsEach);
         let opened = 0;
@@ -335,6 +339,8 @@ export function createQuizGame({
       return fx;
     },
     command(name, now = Date.now()) {
+      const own = onCommand?.(name, now);
+      if (own) return own;
       const fx = [];
       if (name === 'next') {
         if (phase === 'question') reveal(now, fx);
@@ -379,6 +385,7 @@ export function createQuizGame({
         board,
         bonusMs
       };
+      if (extraState) state.control = extraState();
       if (kind === 'text' && q && !q.math) {
         state.mask = [...q.answer].map((ch, i) => (!foldText(ch) ? ch : phase === 'reveal' || revealed.has(i) ? ch : '_'));
       }

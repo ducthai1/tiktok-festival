@@ -4,6 +4,8 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createParticleSystem } from './particle-effects.js';
 import { disposeObject } from './person-model.js';
 import { avatarNode } from '../stage-labels.js';
+import { ENGLISH_GIFT_RULES, ENGLISH_TARGETS, englishRuleFor } from '/static/shared/english-sets.js';
+import { SAMPLE_GIFTS } from '/static/shared/gift-tiers.js';
 
 const MODES = {
   lophoc: { icon: '📚', title: 'LỚP HỌC CHỮ', color: '#ffd36b', bg: '#0b1a16',
@@ -26,8 +28,91 @@ const GIFT_RULES = {
   text: ['🎁 Quà → ', '*mở 1 chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
   abcd: ['🎁 Quà → ', '*loại 1 đáp án sai cho cả phòng*', ' (từ 99💎 loại 2) · ❤️ 300 tim = +3 giây'],
   wordle: ['🎁 Quà → ', '*mở 1 ô chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ 300 tim = +3 giây'],
-  math: ['🎁 Quà = lời cảm ơn trên màn hình · ❤️ 300 tim = +3 giây']
+  math: ['🎁 Quà = lời cảm ơn trên màn hình · ❤️ 300 tim = +3 giây'],
+  english: ['🎁 Quà → ', '*đổi bộ đề / độ khó*', ' (bảng bên dưới) · ❤️ 300 tim = +3 giây']
 };
+const DECK_RULES_PER_PAGE = 7; // nhiều hơn thì bảng lật trang mỗi 10 giây
+const DECK_PAGE_MS = 10000;
+
+/** Món quà thật của phòng (có ảnh) đại diện cho một luật; chưa có danh mục thì dùng quà mẫu. */
+function giftForRule(rule, catalog) {
+  const pick = (list) => list.filter((g) => englishRuleFor(g) === rule)
+    .sort((a, b) => Boolean(b.image) - Boolean(a.image) || a.coins - b.coins || String(a.name).localeCompare(String(b.name)))[0];
+  return pick(catalog) || pick(SAMPLE_GIFTS) || null;
+}
+
+/** Bảng "quà đổi bộ đề" của tab tiếng Anh: dòng trạng thái (bộ + độ khó + người đổi) và các ô quà → bộ đề. */
+function createDeckPanel(hud) {
+  const el = hud.el;
+  const root = el('section', 'deck-panel');
+  const status = el('div', 'deck-status');
+  const rulesRoot = el('div', 'deck-rules');
+  root.append(status, rulesRoot);
+  hud.gameRoot.append(root);
+  let chips = [];
+  let pageTimer = 0;
+  let statusKey = '';
+  let active = new Set();
+
+  function giftIcon(gift, rule) {
+    const box = el('span', 'gift');
+    if (gift?.image) {
+      const img = el('img');
+      img.src = gift.image;
+      img.alt = '';
+      img.referrerPolicy = 'no-referrer';
+      box.append(img);
+    } else box.append(el('span', 'emoji', gift?.emoji || '🎁'));
+    box.append(el('i', '', `${gift?.coins || rule.min}💎`));
+    return box;
+  }
+
+  function nowSlot(className, icon, label, left, by) {
+    const slot = el('div', `deck-now ${className}`);
+    slot.append(el('span', 'ic', icon), el('b', '', label));
+    if (left) slot.append(el('em', '', `${left} câu`));
+    if (by) {
+      const who = el('span', 'by');
+      who.append(avatarNode(by.avatar), el('span', 'name', by.nickname));
+      slot.append(who);
+    }
+    return slot;
+  }
+
+  return {
+    setCatalog(catalog) {
+      clearInterval(pageTimer);
+      chips = ENGLISH_GIFT_RULES.map((rule) => {
+        const target = ENGLISH_TARGETS[rule.to];
+        const chip = el('div', 'deck-rule');
+        chip.dataset.to = rule.to;
+        const to = el('span', 'to');
+        to.append(el('b', '', target.icon), el('small', '', target.label));
+        chip.append(giftIcon(giftForRule(rule, catalog || []), rule), el('span', 'arrow', '➜'), to);
+        chip.classList.toggle('on', active.has(rule.to));
+        return chip;
+      });
+      const pages = [];
+      for (let i = 0; i < chips.length; i += DECK_RULES_PER_PAGE) pages.push(chips.slice(i, i + DECK_RULES_PER_PAGE));
+      let at = 0;
+      const show = () => rulesRoot.replaceChildren(...pages[at]);
+      show();
+      if (pages.length > 1) pageTimer = setInterval(() => { at = (at + 1) % pages.length; show(); }, DECK_PAGE_MS);
+    },
+    update(c) {
+      if (!c) return;
+      active = new Set([c.set, c.level]);
+      for (const chip of chips) chip.classList.toggle('on', active.has(chip.dataset.to));
+      const key = JSON.stringify(c);
+      if (key === statusKey) return;
+      statusKey = key;
+      status.replaceChildren(nowSlot('set', c.setIcon, c.setLabel, c.setLeft, c.setBy), nowSlot('level', c.levelIcon, c.levelLabel, c.levelLeft, c.levelBy));
+    },
+    dispose() {
+      clearInterval(pageTimer);
+    }
+  };
+}
 
 export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const mode = MODES[id] || MODES.lophoc;
@@ -82,8 +167,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     line.append(...parts.map((p) => (p.startsWith('*') ? el('b', '', p.slice(1, -1)) : document.createTextNode(p))));
     return line;
   };
-  foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[id === 'dovui' ? 'abcd' : id === 'wordle' ? 'wordle' : id === 'math' ? 'math' : 'text'], 'gift'));
+  const rulesKey = { dovui: 'abcd', wordle: 'wordle', math: 'math', english: 'english' }[id] || 'text';
+  foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[rulesKey], 'gift'));
   card.append(head, timer, body, winnersRow, foot);
+  const deckPanel = id === 'english' ? createDeckPanel(hud) : null;
+  deckPanel?.setCatalog([]);
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -178,11 +266,13 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     themeClass: 'theme-quiz',
     welcome: { line: 'đã vào lớp! Gõ đáp án vào bình luận nhé ✏️', speech: (n) => `Chào mừng ${n} vào chơi đố vui!` },
     legend: [], // cách chơi + luật quà nằm ở chân bảng câu hỏi (.quiz-foot)
+    setGiftCatalog: (catalog) => deckPanel?.setCatalog(catalog),
     update(snapshot) {
       const state = snapshot.state;
       if (!state || state.phase === 'idle') return;
       hud.setStats([`❓ Câu ${state.qNumber}`, `✅ ${state.correctCount} đúng`]);
       hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, score: `${r.points} đ` })));
+      deckPanel?.update(state.control);
       cat.textContent = state.category || mode.title;
       const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
       qno.textContent = state.paused ? '⏸ TẠM DỪNG' : count;
@@ -222,6 +312,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
           { title: fx.nickname, gold: fx.tier >= 3, image: fx.giftPicture, ms: 3500 });
         particles.burst({ position: new THREE.Vector3(0, 0, 3), box: new THREE.Vector3(3, 3, 1), count: 80 + fx.tier * 40,
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
+      } else if (fx.kind === 'quizDeck') {
+        audio.play('magic');
+        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ${fx.questions} câu tới`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
+        confetti(200);
+        audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
       } else if (fx.kind === 'quizTime') {
         audio.play('chime');
         hud.toast(`❤ Tim đủ mốc → +${fx.seconds} giây!`, { ms: 2500 });
@@ -244,6 +339,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       particles.update(dt);
     },
     dispose() {
+      deckPanel?.dispose();
       particles.dispose();
       for (const g of geos) g.dispose();
       disposeObject(scene);

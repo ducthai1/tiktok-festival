@@ -122,6 +122,14 @@ export function loadEnglishQuestions() {
 }
 
 /** Đuổi hình bắt chữ: chuỗi emoji ghép chữ (Lớp Học Chữ) + kho emoji phim/bài hát/thành ngữ (Emoji Quiz). */
+// Bộ đề đổi bằng quà ở tab tiếng Anh (bank/tieng-anh-bo/, tự soạn, mỗi bộ ~150 từ bậc 1–3 trong bộ).
+const ENGLISH_SET_FILES = { toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt', bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt' };
+export function loadEnglishSets() {
+  const files = new Map(readTxtDir('tieng-anh-bo').map((f) => [f.file, f.text]));
+  return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => [id,
+    parseTextBank(files.get(file) || '').map((q) => ({ ...q, category: q.category.replace(/^Bộ đề · /, 'Tiếng Anh · ') }))]));
+}
+
 export function loadEmojiQuestions() {
   const file = lopHocFiles().find((f) => f.file === EMOJI_FILE);
   const pun = parseTextBank(file.text).map((q) => ({ ...q, category: 'Đuổi hình bắt chữ', emoji: q.prompt, prompt: '' }));

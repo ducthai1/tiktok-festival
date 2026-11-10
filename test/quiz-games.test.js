@@ -5,10 +5,12 @@ import test from 'node:test';
 import { GAME_IDS, PUBLIC_DIR } from '../src/config.js';
 import { createGameHub } from '../src/games/game-hub.js';
 import {
-  createTieredDeck, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
+  createTieredDeck, loadChoiceQuestions, loadEnglishSets, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
 } from '../src/games/quiz/quiz-bank.js';
 import { createQuizGame, POINTS, scoreWordle } from '../src/games/quiz/quiz-game.js';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
+import { createEnglishSwitcher, filterByLevel } from '../src/games/quiz/english-switcher.js';
+import { englishRuleFor } from '../public/shared/english-sets.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
 const chat = (n, comment) => ({ type: 'chat', user: user(n), comment });
@@ -153,4 +155,37 @@ test('wordle: a winner ends the round with the answer shown', () => {
   const snap = game.snapshot(30);
   assert.equal(snap.answer, 'APPLE');
   assert.deepEqual(snap.guesses.map((g) => g.word), ['HOUSE', 'APPLE']);
+});
+
+test('english gifts: rose = easy, other 1-coin = hard, 5 TOEIC, 10 IELTS, 20 medicine, 30 football, 99 tech, 199+ nothing', () => {
+  const to = (name, coins) => englishRuleFor({ name, diamondsEach: coins })?.to || null;
+  assert.deepEqual([to('Rose', 1), to('Hoa hồng', 1), to('TikTok', 1), to('GG', 1), to('Finger Heart', 5), to('Rosa', 10), to('Perfume', 20),
+    to('Doughnut', 30), to('Cap', 99), to('Sunglasses', 199), to('Lion', 29999)],
+  ['easy', 'easy', 'hard', 'hard', 'toeic', 'ielts', 'yhoc', 'bongda', 'congnghe', null, null]);
+  assert.equal(englishRuleFor({ name: 'Rosa', coins: 10 }).to, 'ielts'); // món trong danh mục (coins) cũng khớp
+  const sets = loadEnglishSets();
+  for (const [id, list] of Object.entries(sets)) assert.ok(list.length >= 150, `${id}: ${list.length}`);
+});
+
+test('english switcher: a gift changes the set from the next question for 20 questions, never scores the gifter', () => {
+  const english = loadEnglishQuestions();
+  const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets: loadEnglishSets() });
+  const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
+  game.tick(0);
+  assert.equal(game.snapshot(0).control.set, 'general');
+  const fx = game.handleEvent(gift(7, 5), 10);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']);
+  assert.ok(!game.snapshot(10).category.endsWith('TOEIC')); // câu đang hỏi không bị cắt ngang
+  const cats = [];
+  let t = 100;
+  for (let i = 0; i < 22; i += 1) {
+    game.command('next', (t += 10));
+    game.command('next', (t += 10));
+    cats.push(game.snapshot(t).category);
+  }
+  assert.ok(cats.slice(0, 20).every((c) => c === 'Tiếng Anh · TOEIC'), cats.join(','));
+  assert.ok(cats.slice(20).every((c) => c !== 'Tiếng Anh · TOEIC'));
+  assert.equal(game.snapshot(t).control.set, 'general');
+  assert.equal(game.snapshot(t).board.length, 0);
+  assert.ok(filterByLevel(loadEnglishSets().toeic, 'hard').every((q) => q.level === 3));
 });

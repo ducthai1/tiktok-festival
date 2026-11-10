@@ -38,13 +38,14 @@ Cùng một bộ máy (`src/games/quiz/quiz-game.js`) + một cảnh (`public/st
 |---|---|---|
 | 📚 Lớp Học Chữ | đáp án (không dấu cũng được) | ~2.200 câu, 32 chủ đề |
 | 🏆 Đố Vui A/B/C/D | A, B, C hoặc D (chỉ tính lần chọn đầu) | ~5.100 câu, 4 bậc khó |
-| 🔤 Từ Vựng Tiếng Anh | từ tiếng Anh đúng nghĩa | ~1.250 từ, 8 chủ đề, A1–B1 (`bank/tieng-anh/`: mỗi chủ đề một file, thêm dòng là có câu mới) |
+| 🔤 Từ Vựng Tiếng Anh | từ tiếng Anh đúng nghĩa | ~1.250 từ chung (`bank/tieng-anh/`) + 5 bộ đổi bằng quà: TOEIC, IELTS, Y học, Bóng đá, Công nghệ (~150 từ/bộ, `bank/tieng-anh-bo/`) |
 | 🧩 Đuổi Hình Bắt Chữ | cụm từ theo chuỗi emoji | ~1.100 câu |
 | 🚩 Đoán Quốc Kỳ | tên nước (Việt hoặc Anh) | 143 nước |
 | ➗ Toán Nhanh | kết quả | tự sinh, khó dần |
 | 🟩 Wordle Tiếng Anh | từ tiếng Anh 5 chữ cái | 442 đáp án |
 
 - Điểm: 5 người đúng nhanh nhất +10/7/5/3/3, đúng sau +1 (Wordle: đoán trúng +15, mở ô xanh mới +1/ô). Bảng điểm giữ suốt phiên, nút "Xoá bảng điểm".
+- **Tab tiếng Anh: quà đổi bộ đề / độ khó cho cả phòng** (luật ở `public/shared/english-sets.js`): Hoa hồng → Dễ, quà 1 xu khác → Khó, 5 xu → TOEIC, 10 → IELTS, 20 → Y học, 30 → Bóng đá, 99 → Công nghệ. Đổi từ câu sau, giữ 20 câu rồi tự về Tổng hợp · Vừa. Bảng icon quà thật + tên người đổi nằm dưới bảng điểm. Ở tab này quà không mở gợi ý.
 - **Quà không cộng điểm cho người tặng** (theo hướng dẫn TikTok, nhất là khi có trẻ em xem): quà mở gợi ý cho CẢ PHÒNG — mở chữ, loại đáp án sai, mở ô Wordle. Luôn chừa lại ít nhất 1 chữ.
 - 300 tim = +3 giây cho câu đang hỏi (tối đa +15 giây/câu).
 - Tab không được chọn thì đứng yên (đồng hồ không chạy). Nút điều khiển: câu tiếp / lật đáp án, gợi ý, tạm dừng, tiếp tục.

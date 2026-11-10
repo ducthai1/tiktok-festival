@@ -1,8 +1,9 @@
 // 7 tab đố vui, cùng một bộ máy (quiz-game.js), khác kho câu hỏi + cách chơi.
 import {
-  createMathDeck, createShuffleBag, createTieredDeck, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions,
-  loadFlagQuestions, loadWordleWords
+  createMathDeck, createShuffleBag, loadChoiceQuestions, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions,
+  loadEnglishSets, loadFlagQuestions, loadWordleWords
 } from './quiz-bank.js';
+import { createEnglishSwitcher } from './english-switcher.js';
 import { createQuizGame } from './quiz-game.js';
 
 let banks = null; // đọc file một lần cho cả server (test tạo nhiều hub vẫn nhanh)
@@ -11,6 +12,7 @@ function loadBanks() {
     classroom: loadClassroomQuestions(),
     choice: loadChoiceQuestions(),
     english: loadEnglishQuestions(),
+    englishSets: loadEnglishSets(),
     emoji: loadEmojiQuestions(),
     flags: loadFlagQuestions(),
     wordle: loadWordleWords()
@@ -23,13 +25,16 @@ export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'ma
 export function createQuizGames({ random = Math.random } = {}) {
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
+  const english = createEnglishSwitcher({
+    general: b.english.filter((q) => !q.basic), basic: b.english.filter((q) => q.basic), sets: b.englishSets, random
+  });
   return [
     createQuizGame({ id: 'lophoc', title: 'Lớp Học Chữ', deck: bag(b.classroom), questionMs: 25000, random }),
     createQuizGame({ id: 'dovui', title: 'Đố Vui A/B/C/D', kind: 'abcd', deck: bag(b.choice), random }),
     createQuizGame({
-      // ~1.080 từ theo chủ đề (A1–B1) chạy trước; 176 từ cơ bản cũ để cuối danh sách
-      id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random,
-      deck: createTieredDeck([b.english.filter((q) => !q.basic), b.english.filter((q) => q.basic)], random)
+      // quà đổi bộ đề (TOEIC, IELTS, Y học…) / độ khó — xem english-switcher.js; 176 từ cơ bản luôn ở cuối danh sách
+      id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
+      onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot()
     }),
     createQuizGame({
       id: 'emoji', title: 'Đuổi Hình Bắt Chữ', deck: bag(b.emoji), questionMs: 30000, speakLine: () => 'Đuổi hình bắt chữ! Đây là gì nào?', random

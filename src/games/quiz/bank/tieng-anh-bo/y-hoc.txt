@@ -1,0 +1,152 @@
+# Bộ đề · Y học
+HOSPITAL | Bệnh viện tiếng Anh là gì? | 1
+DOCTOR | Bác sĩ tiếng Anh là gì? | 1 | PHYSICIAN
+NURSE | Y tá, điều dưỡng tiếng Anh là gì? | 1
+PATIENT | Bệnh nhân tiếng Anh là gì? | 1
+DENTIST | Nha sĩ tiếng Anh là gì? | 1
+PHARMACY | Nhà thuốc tiếng Anh là gì? | 1 | DRUGSTORE, CHEMIST
+MEDICINE | Thuốc (nói chung) tiếng Anh là gì? | 1 | DRUG, MEDICATION
+PILL | Viên thuốc tiếng Anh là gì? | 1 | TABLET, CAPSULE
+AMBULANCE | Xe cứu thương tiếng Anh là gì? | 1
+CLINIC | Phòng khám tiếng Anh là gì? | 1
+BLOOD | Máu tiếng Anh là gì? | 1
+FEVER | Sốt tiếng Anh là gì? | 1 | TEMPERATURE
+COUGH | Ho tiếng Anh là gì? | 1
+HEADACHE | Đau đầu tiếng Anh là gì? | 1
+STOMACHACHE | Đau bụng tiếng Anh là gì? | 1 | STOMACH ACHE, TUMMY ACHE, BELLYACHE
+TOOTHACHE | Đau răng tiếng Anh là gì? | 1
+SORE THROAT | Đau họng tiếng Anh là gì? | 1
+FLU | Bệnh cúm tiếng Anh là gì? | 1 | INFLUENZA
+COMMON COLD | Cảm lạnh tiếng Anh là gì? | 1 | COLD
+BONE | Xương tiếng Anh là gì? | 1
+MUSCLE | Cơ bắp tiếng Anh là gì? | 1
+SKIN | Da (cơ thể) tiếng Anh là gì? | 1
+BRAIN | Não tiếng Anh là gì? | 1
+HEART | Quả tim tiếng Anh là gì? | 1
+STOMACH | Dạ dày tiếng Anh là gì? | 1 | TUMMY, BELLY
+BREATHE | Thở (động từ) tiếng Anh là gì? | 1
+MASK | Khẩu trang tiếng Anh là gì? | 1 | FACE MASK
+PAIN | Cơn đau tiếng Anh là gì? | 1 | ACHE
+HURT | Bị đau (động từ) tiếng Anh là gì? | 1 | ACHE
+HEALTHY | Khoẻ mạnh tiếng Anh là gì? | 1 | FIT, WELL
+SICK | Bị ốm tiếng Anh là gì? | 1 | ILL, UNWELL
+EXERCISE | Tập thể dục tiếng Anh là gì? | 1 | WORKOUT
+WEIGHT | Cân nặng tiếng Anh là gì? | 1
+HEIGHT | Chiều cao tiếng Anh là gì? | 1
+TEMPERATURE | Nhiệt độ cơ thể tiếng Anh là gì? | 1
+DIET | Chế độ ăn kiêng tiếng Anh là gì? | 1
+SURGEON | Bác sĩ phẫu thuật tiếng Anh là gì? | 2
+SURGERY | Ca phẫu thuật tiếng Anh là gì? | 2 | OPERATION
+PHARMACIST | Dược sĩ tiếng Anh là gì? | 2 | CHEMIST
+PRESCRIPTION | Đơn thuốc tiếng Anh là gì? | 2
+SIDE EFFECT | Tác dụng phụ tiếng Anh là gì? | 2 | SIDE EFFECTS
+VACCINE | Thuốc tiêm phòng (chủng ngừa) tiếng Anh là gì? | 2 | VACCINATION
+INJECTION | Mũi tiêm tiếng Anh là gì? | 2 | SHOT, JAB
+EMERGENCY ROOM | Phòng cấp cứu tiếng Anh là gì? | 2 | ER, EMERGENCY
+WHEELCHAIR | Xe lăn tiếng Anh là gì? | 2
+BANDAGE | Băng gạc tiếng Anh là gì? | 2 | DRESSING, GAUZE
+PLASTER | Miếng băng dán cá nhân tiếng Anh là gì? | 2 | BAND-AID, BANDAID
+THERMOMETER | Nhiệt kế tiếng Anh là gì? | 2
+BLOOD PRESSURE | Huyết áp tiếng Anh là gì? | 2
+BLOOD TEST | Xét nghiệm máu tiếng Anh là gì? | 2
+HEARTBEAT | Nhịp tim tiếng Anh là gì? | 2 | PULSE, HEART RATE
+SYMPTOM | Triệu chứng tiếng Anh là gì? | 2 | SYMPTOMS, SIGN
+TREATMENT | Sự điều trị tiếng Anh là gì? | 2 | THERAPY
+CURE | Chữa khỏi (động từ) tiếng Anh là gì? | 2 | HEAL, TREAT
+RECOVER | Hồi phục tiếng Anh là gì? | 2 | GET BETTER, HEAL
+INFECTION | Sự nhiễm trùng tiếng Anh là gì? | 2
+BACTERIA | Vi khuẩn tiếng Anh là gì? | 2 | BACTERIUM, GERMS, GERM
+SNEEZE | Hắt hơi tiếng Anh là gì? | 2
+RUNNY NOSE | Sổ mũi tiếng Anh là gì? | 2
+ALLERGY | Dị ứng tiếng Anh là gì? | 2 | ALLERGIES
+DIZZY | Chóng mặt tiếng Anh là gì? | 2 | LIGHTHEADED
+VOMIT | Nôn, ói tiếng Anh là gì? | 2 | THROW UP
+ITCHY | Ngứa (tính từ) tiếng Anh là gì? | 2 | ITCHING, ITCH
+WOUND | Vết thương tiếng Anh là gì? | 2 | INJURY, CUT
+SCAR | Vết sẹo tiếng Anh là gì? | 2
+BURN | Vết bỏng tiếng Anh là gì? | 2
+LUNG | Phổi tiếng Anh là gì? | 2 | LUNGS
+LIVER | Gan tiếng Anh là gì? | 2
+KIDNEY | Thận tiếng Anh là gì? | 2 | KIDNEYS
+SKELETON | Bộ xương tiếng Anh là gì? | 2
+SKULL | Hộp sọ tiếng Anh là gì? | 2
+PAINKILLER | Thuốc giảm đau tiếng Anh là gì? | 2 | PAINKILLERS
+EYE DROPS | Thuốc nhỏ mắt tiếng Anh là gì? | 2 | EYEDROPS
+GLOVES | Găng tay y tế tiếng Anh là gì? | 2 | GLOVE
+CHECK-UP | Khám sức khoẻ định kỳ tiếng Anh là gì? | 2 | CHECKUP, MEDICAL EXAMINATION, PHYSICAL
+APPOINTMENT | Lịch hẹn khám bệnh tiếng Anh là gì? | 2
+INSURANCE | Bảo hiểm y tế tiếng Anh là gì? | 2 | HEALTH INSURANCE
+FAINT | Ngất xỉu tiếng Anh là gì? | 2 | PASS OUT, BLACK OUT
+BLEED | Chảy máu tiếng Anh là gì? | 2 | BLEEDING
+INJURY | Chấn thương tiếng Anh là gì? | 2 | WOUND
+FIRST AID | Sơ cứu tiếng Anh là gì? | 2
+PREGNANT | Mang thai tiếng Anh là gì? | 2 | EXPECTING
+HAND SANITIZER | Nước rửa tay khô tiếng Anh là gì? | 2 | SANITIZER, SANITISER, HAND SANITISER
+NUTRITION | Dinh dưỡng tiếng Anh là gì? | 2 | NOURISHMENT
+SCALE | Cái cân sức khoẻ tiếng Anh là gì? | 2 | SCALES
+BLOOD TYPE | Nhóm máu tiếng Anh là gì? | 2 | BLOOD GROUP
+EYESIGHT | Thị lực tiếng Anh là gì? | 2 | VISION, SIGHT
+HEARING | Thính lực tiếng Anh là gì? | 2
+BRACES | Niềng răng tiếng Anh là gì? | 2
+WISDOM TOOTH | Răng khôn tiếng Anh là gì? | 2 | WISDOM TEETH
+DOSE | Liều lượng thuốc tiếng Anh là gì? | 3 | DOSAGE
+WARD | Buồng bệnh, khu điều trị tiếng Anh là gì? | 3
+STRETCHER | Cái cáng (khiêng bệnh nhân) tiếng Anh là gì? | 3
+CRUTCH | Cái nạng tiếng Anh là gì? | 3 | CRUTCHES
+STETHOSCOPE | Ống nghe của bác sĩ tiếng Anh là gì? | 3
+SCAN | Chụp chiếu (CT, MRI) tiếng Anh là gì? | 3 | SCANNING
+PULSE | Mạch (bắt mạch) tiếng Anh là gì? | 3 | HEARTBEAT
+DIAGNOSIS | Chẩn đoán tiếng Anh là gì? | 3
+ASTHMA | Bệnh hen suyễn tiếng Anh là gì? | 3
+DIABETES | Bệnh tiểu đường tiếng Anh là gì? | 3
+HYPERTENSION | Bệnh cao huyết áp tiếng Anh là gì? | 3 | HIGH BLOOD PRESSURE
+INSOMNIA | Chứng mất ngủ tiếng Anh là gì? | 3 | SLEEPLESSNESS
+NAUSEA | Cảm giác buồn nôn tiếng Anh là gì? | 3 | NAUSEOUS, SICKNESS
+DIARRHEA | Tiêu chảy tiếng Anh là gì? | 3 | DIARRHOEA
+CONSTIPATION | Táo bón tiếng Anh là gì? | 3
+RASH | Phát ban tiếng Anh là gì? | 3
+SWOLLEN | Bị sưng (tính từ) tiếng Anh là gì? | 3 | SWELLING
+BRUISE | Vết bầm tím tiếng Anh là gì? | 3
+FRACTURE | Gãy xương tiếng Anh là gì? | 3 | BROKEN BONE, BREAK
+SPRAIN | Bong gân tiếng Anh là gì? | 3 | TWIST
+INTESTINE | Ruột tiếng Anh là gì? | 3 | INTESTINES, BOWEL, BOWELS, GUT
+SPINE | Cột sống tiếng Anh là gì? | 3 | BACKBONE
+RIB | Xương sườn tiếng Anh là gì? | 3 | RIBS
+VEIN | Tĩnh mạch tiếng Anh là gì? | 3 | BLOOD VESSEL
+NERVE | Dây thần kinh tiếng Anh là gì? | 3
+JOINT | Khớp xương tiếng Anh là gì? | 3
+IMMUNE SYSTEM | Hệ miễn dịch tiếng Anh là gì? | 3
+DIGESTION | Sự tiêu hoá tiếng Anh là gì? | 3
+ANTIBIOTIC | Thuốc kháng sinh tiếng Anh là gì? | 3 | ANTIBIOTICS
+OINTMENT | Thuốc mỡ bôi da tiếng Anh là gì? | 3 | CREAM
+ADMIT | Cho nhập viện tiếng Anh là gì? | 3 | HOSPITALIZE, HOSPITALISE
+DISCHARGE | Cho xuất viện tiếng Anh là gì? | 3
+UNCONSCIOUS | Bất tỉnh tiếng Anh là gì? | 3 | PASSED OUT
+MIDWIFE | Nữ hộ sinh tiếng Anh là gì? | 3
+PEDIATRICIAN | Bác sĩ nhi khoa tiếng Anh là gì? | 3 | PAEDIATRICIAN
+OPTICIAN | Người đo mắt, làm kính tiếng Anh là gì? | 3 | OPTOMETRIST
+CONTAGIOUS | Dễ lây lan tiếng Anh là gì? | 3 | INFECTIOUS
+EPIDEMIC | Dịch bệnh tiếng Anh là gì? | 3 | OUTBREAK, PANDEMIC
+QUARANTINE | Cách ly tiếng Anh là gì? | 3 | ISOLATION
+HYGIENE | Vệ sinh (giữ sạch sẽ) tiếng Anh là gì? | 3 | SANITATION, CLEANLINESS
+CAST | Bó bột (chân tay gãy) tiếng Anh là gì? | 3 | PLASTER CAST
+STITCHES | Mũi khâu vết thương tiếng Anh là gì? | 3 | STITCH, SUTURE, SUTURES
+ANESTHESIA | Gây mê tiếng Anh là gì? | 3 | ANAESTHESIA, ANESTHETIC, ANAESTHETIC
+DONOR | Người hiến máu, hiến tạng tiếng Anh là gì? | 3 | BLOOD DONOR
+CAVITY | Lỗ sâu răng tiếng Anh là gì? | 3 | TOOTH DECAY
+FILLING | Trám răng tiếng Anh là gì? | 3
+GUMS | Lợi, nướu răng tiếng Anh là gì? | 3 | GUM
+X-RAY | Phim chụp X-quang tiếng Anh là gì? | 1 | XRAY
+OPERATING ROOM | Phòng mổ tiếng Anh là gì? | 2 | OPERATING THEATRE, THEATRE
+ICU | Phòng hồi sức tích cực tiếng Anh là gì? | 3 | INTENSIVE CARE
+BLOOD SUGAR | Đường huyết tiếng Anh là gì? | 3 | GLUCOSE
+CAPSULE | Viên con nhộng tiếng Anh là gì? | 2
+SYRINGE | Ống tiêm (xi lanh) tiếng Anh là gì? | 3
+NEEDLE | Kim tiêm tiếng Anh là gì? | 2
+DRIP | Truyền dịch (chai truyền) tiếng Anh là gì? | 3 | IV
+HEAT STROKE | Say nắng tiếng Anh là gì? | 3 | SUNSTROKE, HEATSTROKE
+FOOD POISONING | Ngộ độc thực phẩm tiếng Anh là gì? | 3
+CHICKENPOX | Bệnh thuỷ đậu tiếng Anh là gì? | 3 | CHICKEN POX
+MEASLES | Bệnh sởi tiếng Anh là gì? | 3
+FATIGUE | Mệt mỏi kéo dài tiếng Anh là gì? | 3 | TIREDNESS, EXHAUSTION
+SWEAT | Mồ hôi tiếng Anh là gì? | 2 | SWEATING, PERSPIRATION

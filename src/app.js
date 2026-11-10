@@ -57,6 +57,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // quà thật đã gom (có ảnh) + quà mẫu cho những bậc chưa gom được, để bảng chú thích luôn đủ 6 bậc
   const legendSource = () => [...giftCatalog, ...sampleGifts.filter((s) => !giftCatalog.some((g) => g.name === (s.realName || s.name)))];
   let giftTiers = tierRepresentatives(legendSource(), 3);
+  // quà rẻ của phòng (≤ 198 xu) cho bảng "quà đổi bộ đề" ở tab tiếng Anh
+  const cheapCatalog = () => giftCatalog.filter((g) => g.coins <= 198).map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: g.image }));
 
   const updateSettings = (patch) => {
     Object.assign(settings, patch);
@@ -93,7 +95,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     } catch (error) {
       console.warn('[app] không lưu được danh mục quà:', error.message);
     }
-    sockets.broadcast({ t: 'gifts', tiers: giftTiers, sampleGifts });
+    sockets.broadcast({ t: 'gifts', tiers: giftTiers, sampleGifts, catalog: cheapCatalog() });
   }
 
   // Người xem vừa xuất hiện (vào phòng / bình luận / tim…) ở Sàn Nhảy → tạo sẵn câu "Cảm ơn <tên>, đã follow!" bằng đúng
@@ -142,7 +144,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     adminToken,
     onAdminMessage: handleAdmin,
     onClientReady(ws) {
-      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
+      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts,
+        catalog: cheapCatalog() });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
     }
