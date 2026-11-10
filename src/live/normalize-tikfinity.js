@@ -26,7 +26,8 @@ function userOf(data = {}) {
     avatar: firstImageUrl(
       user.userDetails?.profilePictureUrls, data.userDetails?.profilePictureUrls,
       user.profilePictureUrls, user.profilePictureUrl, user.avatarUrl, data.profilePictureUrl
-    )
+    ),
+    follower: Number(user.followRole ?? data.followRole ?? user.followInfo?.followStatus) >= 1
   };
 }
 

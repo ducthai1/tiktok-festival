@@ -1,8 +1,9 @@
 // BỘ MÁY ĐỐ VUI dùng chung cho mọi tab đố (Lớp Học Chữ, A/B/C/D, Tiếng Anh, Đuổi hình, Quốc kỳ, Toán, Wordle).
 // Vòng lặp: HỎI (đếm ngược) → ĐÁP ÁN (vài giây) → câu tiếp. Người xem trả lời bằng bình luận.
 // Luật quà theo hướng dẫn TikTok: quà KHÔNG cộng điểm cho người tặng — quà chỉ mở gợi ý CHO CẢ PHÒNG (cố định, không may rủi).
-// Tim đổ vào thanh NĂNG LƯỢNG chung: 1.000 tim → câu sau là ⭐ CÂU VÀNG (x2 điểm); 3.000 tim → ⚡ CHỚP NHOÁNG (3 câu 8 giây,
-// ai đúng cả 3 được ⚡ + 5 điểm) rồi thanh về 0. Live trễ 1–2 giây nên mỗi câu hiện đề 2 giây rồi mới đếm, hết giờ vẫn nhận
+// Tim (và share) đổ vào thanh NĂNG LƯỢNG chung: 200 → câu sau là ⭐ CÂU VÀNG (x2 điểm); 400 → ⚡ CHỚP NHOÁNG (3 câu 8 giây,
+// ai đúng cả 3 được ⚡ + 5 điểm) rồi thanh về 0. Follow lần đầu trong buổi: +3 điểm + 💖; cứ 10 follow → câu vàng cho cả phòng.
+// Share: +20 năng lượng (tính 5 lần/người/buổi), người share nhiều nhất lên bảng ĐẠI SỨ. Live trễ 1–2 giây nên mỗi câu hiện đề 2 giây rồi mới đếm, hết giờ vẫn nhận
 // thêm 1,5 giây bình luận đang trên đường tới. Game không ở tab đang chọn thì đứng yên (đồng hồ không chạy).
 import { giftTier } from '../../../public/shared/gift-tiers.js';
 import { createCooldown, foldText, isCleanForDisplay } from '../text-match.js';
@@ -13,8 +14,12 @@ const MAX_TRIES = 6; // mỗi người tối đa 6 lần đoán mỗi câu (ch�
 const FIRST_CORRECT_GRACE_MS = 5000; // có người đúng rồi thì chờ thêm 5 giây cho người khác rồi lật đáp án
 export const LEAD_IN_MS = 2000; // đề hiện rồi mới bắt đầu đếm ngược (người xem thấy đề trễ 1–2 giây)
 export const LATE_MS = 1500; // hết giờ vẫn nhận bình luận gửi kịp nhưng tới chậm
-export const ENERGY_GOLDEN = 1000;
-export const ENERGY_LIGHTNING = 3000;
+export const ENERGY_GOLDEN = 200;
+export const ENERGY_LIGHTNING = 400;
+export const FOLLOW_POINTS = 3;
+export const FOLLOW_GOAL = 10;
+export const SHARE_ENERGY = 20;
+export const SHARE_ENERGY_MAX_PER_USER = 5;
 export const LIGHTNING_QUESTIONS = 3;
 export const LIGHTNING_MS = 8000;
 const LIGHTNING_REVEAL_MS = 3500;
@@ -91,6 +96,10 @@ export function createQuizGame({
   let lightningQueued = 0;
   let lightningIndex = 0; // 0 = không trong vòng chớp nhoáng; 1..3 = câu thứ mấy
   let lightningHits = new Map();
+  const followers = new Set(); // id người đang follow kênh (cờ từ TikTok / đã follow ở buổi trước / vừa follow)
+  const followedNow = new Set(); // follow trong buổi này (mỗi người thưởng một lần)
+  let followCount = 0;
+  const sharers = new Map(); // id → { id, nickname, avatar, shares }
   let hintsByGifts = 0;
 
   const totalMs = () => (lightningIndex ? LIGHTNING_MS : kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : questionMs);
@@ -98,6 +107,7 @@ export function createQuizGame({
 
   function touch(user, now) {
     if (!user?.id) return;
+    if (user.follower) followers.add(user.id);
     present.set(user.id, { id: user.id, nickname: user.nickname, avatar: user.avatar, at: now });
     if (present.size > 400) present.delete(present.keys().next().value);
   }
@@ -192,6 +202,30 @@ export function createQuizGame({
     if (top) speech += ` ${winners.length > 1 ? `${winners.length} bạn trả lời đúng, nhanh nhất là` : 'Chúc mừng'} ${top.nickname}!`;
     else speech += ' Chưa ai trả lời đúng.';
     fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 5), correctCount: winners.length, speech });
+  }
+
+  /** Tim / share nạp thanh năng lượng; qua mốc thì xếp câu vàng / vòng chớp nhoáng. */
+  function addEnergy(amount, fx) {
+    // đang/đã xếp vòng chớp nhoáng thì thanh đứng ngay dưới mốc cuối, xong vòng mới nổ tiếp
+    const busy = lightningQueued > 0 || lightningIndex > 0;
+    energy = Math.min(busy ? ENERGY_LIGHTNING - 1 : ENERGY_LIGHTNING, energy + amount);
+    if (!goldenUnlocked && energy >= ENERGY_GOLDEN) {
+      goldenUnlocked = true;
+      goldenPending = true;
+      fx.push({ kind: 'quizEnergy', reward: 'golden' });
+    }
+    if (energy >= ENERGY_LIGHTNING) {
+      energy = 0;
+      goldenUnlocked = false;
+      // Wordle một ván 150 giây — không chạy được 3 câu siêu tốc, thưởng câu vàng thay
+      if (kind === 'wordle') {
+        goldenPending = true;
+        fx.push({ kind: 'quizEnergy', reward: 'golden' });
+      } else {
+        lightningQueued = LIGHTNING_QUESTIONS;
+        fx.push({ kind: 'quizEnergy', reward: 'lightning' });
+      }
+    }
   }
 
   /** Ghi ai đúng câu chớp nhoáng này; hết câu thứ 3 thì thưởng người đúng cả 3. */
@@ -328,32 +362,31 @@ export function createQuizGame({
           count: event.gift.count, tier, hint: opened ? hintLabel(opened) : ''
         });
       } else if (event.type === 'like') {
-        if (paused) return fx;
-        // đang/đã xếp vòng chớp nhoáng thì thanh đứng ngay dưới mốc 3.000, xong vòng mới nổ tiếp
-        const busy = lightningQueued > 0 || lightningIndex > 0;
-        energy = Math.min(busy ? ENERGY_LIGHTNING - 1 : ENERGY_LIGHTNING, energy + event.likeCount);
-        if (!goldenUnlocked && energy >= ENERGY_GOLDEN) {
-          goldenUnlocked = true;
-          goldenPending = true;
-          fx.push({ kind: 'quizEnergy', reward: 'golden' });
-        }
-        if (energy >= ENERGY_LIGHTNING) {
-          energy = 0;
-          goldenUnlocked = false;
-          // Wordle một ván 150 giây — không chạy được 3 câu siêu tốc, thưởng câu vàng thay
-          if (kind === 'wordle') {
+        if (!paused) addEnergy(event.likeCount, fx);
+      } else if (event.type === 'follow') {
+        followers.add(event.user.id);
+        if (!followedNow.has(event.user.id)) {
+          followedNow.add(event.user.id);
+          followCount += 1;
+          addPoints(event.user, FOLLOW_POINTS, { correct: false });
+          fx.push({ kind: 'quizFollow', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, points: FOLLOW_POINTS,
+            goal: FOLLOW_GOAL, count: followCount % FOLLOW_GOAL || FOLLOW_GOAL });
+          if (followCount % FOLLOW_GOAL === 0) {
             goldenPending = true;
-            fx.push({ kind: 'quizEnergy', reward: 'golden' });
-          } else {
-            lightningQueued = LIGHTNING_QUESTIONS;
-            fx.push({ kind: 'quizEnergy', reward: 'lightning' });
+            fx.push({ kind: 'quizEnergy', reward: 'golden', by: 'follow' });
           }
         }
-      } else if (event.type === 'follow' || event.type === 'share') {
-        fx.push({ kind: 'toast', text: `${event.type === 'follow' ? '💖' : '↗'} Cảm ơn ${event.user.nickname} đã ${event.type === 'follow' ? 'follow' : 'chia sẻ'}!` });
+      } else if (event.type === 'share') {
+        const row = sharers.get(event.user.id) || { id: event.user.id, shares: 0 };
+        Object.assign(row, { nickname: event.user.nickname, avatar: event.user.avatar, shares: row.shares + 1 });
+        sharers.set(event.user.id, row);
+        const energized = row.shares <= SHARE_ENERGY_MAX_PER_USER && !paused;
+        fx.push({ kind: 'quizShare', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, energy: energized ? SHARE_ENERGY : 0 });
+        if (energized) addEnergy(SHARE_ENERGY, fx);
       }
       return fx;
     },
+    /** active=false: game đang ở tab khác → dừng đồng hồ, không ra câu mới. */
     /** active=false: game đang ở tab khác → dừng đồng hồ, không ra câu mới. */
     tick(now = Date.now(), active = true) {
       const fx = [];
@@ -413,10 +446,10 @@ export function createQuizGame({
     },
     snapshot(now = Date.now()) {
       const board = [...scores.values()].sort((a, b) => b.points - a.points || b.correct - a.correct).slice(0, 5)
-        .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, bolts: r.bolts || 0 }));
+        .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, bolts: r.bolts || 0, follower: followers.has(r.id) }));
       // người đang có mặt (cho mục "Tặng quà cho người đang có mặt") — để ĐẦU TIÊN trong state
       const players = [...present.values()].filter((p) => now - p.at < PRESENT_MS).slice(-30)
-        .map((p) => ({ id: p.id, nickname: p.nickname, avatar: p.avatar, points: scores.get(p.id)?.points || 0 }));
+        .map((p) => ({ id: p.id, nickname: p.nickname, avatar: p.avatar, points: scores.get(p.id)?.points || 0, follower: followers.has(p.id) }));
       const state = {
         players,
         mode: kind,
@@ -433,12 +466,16 @@ export function createQuizGame({
         msLeft: phase === 'question' ? Math.max(0, Math.round((phaseEnd - Math.max(now, countStart)) / 100) * 100) : 0,
         totalMs: q ? totalMs() : 0,
         answer: phase === 'reveal' ? answerText() : '',
-        winners: winners.slice(0, 5).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points })),
+        winners: winners.slice(0, 5).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
         correctCount: winners.length,
         board,
         golden,
         lightning: lightningIndex ? { index: lightningIndex, total: LIGHTNING_QUESTIONS } : null,
-        energy: { value: energy, golden: ENERGY_GOLDEN, max: ENERGY_LIGHTNING, goldenPending, lightningQueued }
+        energy: { value: energy, golden: ENERGY_GOLDEN, max: ENERGY_LIGHTNING, goldenPending, lightningQueued,
+          follows: followCount % FOLLOW_GOAL, followGoal: FOLLOW_GOAL },
+        // bảng ĐẠI SỨ: người share nhiều nhất buổi
+        ambassadors: [...sharers.values()].sort((a, b) => b.shares - a.shares).slice(0, 3)
+          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, shares: r.shares, follower: followers.has(r.id) }))
       };
       if (extraState) state.control = extraState();
       if (kind === 'text' && q && !q.math) {

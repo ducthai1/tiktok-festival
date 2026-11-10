@@ -153,8 +153,25 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const markGold = el('span', 'mark gold', '⭐ x2');
   const markBolt = el('span', 'mark bolt', '⚡ 3 câu');
   energyBar.append(energyFill, markGold, markBolt);
-  energyRoot.append(el('span', 'heart', '❤️'), energyBar, energyNum);
+  // mục tiêu follow của phòng: đủ N follow → câu vàng (cùng hàng, không thêm dòng mới)
+  const followGoal = el('span', 'follow-goal');
+  energyRoot.append(el('span', 'heart', '❤️'), energyBar, energyNum, followGoal);
   hud.gameRoot.append(energyRoot);
+  // bảng ĐẠI SỨ (người share nhiều nhất) — cột trái, ngay dưới dải thẻ chào người mới
+  const ambassadors = el('aside', 'quiz-ambassadors');
+  hud.gameRoot.append(ambassadors);
+  let ambKey = '';
+  function renderAmbassadors(list) {
+    const key = JSON.stringify(list || []);
+    if (key === ambKey) return;
+    ambKey = key;
+    if (!list?.length) return ambassadors.replaceChildren();
+    ambassadors.replaceChildren(el('h3', '', '📣 ĐẠI SỨ SHARE'), ...list.map((r, i) => {
+      const row = el('div', `amb amb${i + 1}`);
+      row.append(avatarNode(r.avatar), el('span', 'name', `${r.follower ? '💖 ' : ''}${r.nickname}`), el('b', '', `↗${r.shares}`));
+      return row;
+    }));
+  }
   let energyKey = '';
   function renderEnergy(e, active) {
     const key = JSON.stringify([e, active]);
@@ -162,7 +179,8 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     energyKey = key;
     energyFill.style.width = `${Math.min(1, e.value / e.max) * 100}%`;
     markGold.style.left = `${(e.golden / e.max) * 100}%`;
-    energyNum.textContent = `${new Intl.NumberFormat('vi-VN').format(e.value)} / ${new Intl.NumberFormat('vi-VN').format(e.max)}`;
+    energyNum.textContent = `${e.value}/${e.max}`;
+    followGoal.replaceChildren(el('span', '', '💖'), el('b', '', `${e.follows}/${e.followGoal}`), el('span', 'star', '⭐'));
     energyRoot.classList.toggle('gold-ready', e.goldenPending || active.golden);
     energyRoot.classList.toggle('bolt-ready', e.lightningQueued > 0 || Boolean(active.lightning));
   }
@@ -273,7 +291,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     winnersRow.classList.toggle('crowded', state.winners.length >= 4);
     winnersRow.replaceChildren(...state.winners.map((w, i) => {
       const chip = el('span', `w w${i + 1}`);
-      chip.append(avatarNode(w.avatar), el('b', '', w.nickname), el('em', '', `+${w.points}`));
+      chip.append(avatarNode(w.avatar), el('b', '', `${w.follower ? '💖 ' : ''}${w.nickname}`), el('em', '', `+${w.points}`));
       return chip;
     }));
   }
@@ -288,7 +306,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       const state = snapshot.state;
       if (!state || state.phase === 'idle') return;
       hud.setStats([`❓ Câu ${state.qNumber}`, `✅ ${state.correctCount} đúng`]);
-      hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, score: `${r.points} đ${r.bolts ? ` ⚡${r.bolts > 1 ? r.bolts : ''}` : ''}` })));
+      hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, nickname: `${r.follower ? '💖 ' : ''}${r.nickname}`, score: `${r.points} đ${r.bolts ? ` ⚡${r.bolts > 1 ? r.bolts : ''}` : ''}` })));
       deckPanel?.update(state.control);
       cat.textContent = state.category || mode.title;
       const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
@@ -298,6 +316,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       card.classList.toggle('golden', Boolean(state.golden));
       card.classList.toggle('lightning', Boolean(state.lightning));
       renderEnergy(state.energy, { golden: state.golden, lightning: state.lightning });
+      renderAmbassadors(state.ambassadors);
       const seconds = Math.ceil(state.msLeft / 1000);
       clock.textContent = state.phase === 'question' ? (state.leadIn ? '⏳' : `${seconds}s`) : state.phase === 'reveal' ? '✅ ĐÁP ÁN' : '';
       timerFill.style.width = `${state.phase === 'question' && state.totalMs ? (state.msLeft / state.totalMs) * 100 : 0}%`;
@@ -339,10 +358,16 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ${fx.questions} câu tới`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
+      } else if (fx.kind === 'quizFollow') {
+        audio.play('chime');
+        hud.toast(`💖 Follow → +${fx.points} điểm · mục tiêu ${fx.count}/${fx.goal}`, { title: fx.nickname, image: fx.avatar, ms: 3500 });
+      } else if (fx.kind === 'quizShare') {
+        audio.play('coin');
+        hud.toast(fx.energy ? `↗ Share → +${fx.energy} năng lượng` : '↗ Cảm ơn bạn đã chia sẻ!', { title: fx.nickname, image: fx.avatar, ms: 3500 });
       } else if (fx.kind === 'quizEnergy') {
         if (fx.reward === 'golden') {
           audio.play('chime');
-          hud.banner('⭐ CÂU VÀNG ⭐', 'Câu sau nhân đôi điểm', 2800);
+          hud.banner('⭐ CÂU VÀNG ⭐', fx.by === 'follow' ? 'Đủ mục tiêu follow · câu sau x2' : 'Câu sau nhân đôi điểm', 2800);
         } else {
           audio.play('airhorn');
           hud.banner('⚡ CHỚP NHOÁNG ⚡', '3 câu siêu tốc · đúng cả 3 được ⚡', 3200);

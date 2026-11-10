@@ -7,7 +7,14 @@ import { createGameHub } from '../src/games/game-hub.js';
 import {
   createTieredDeck, loadChoiceQuestions, loadEnglishSets, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
 } from '../src/games/quiz/quiz-bank.js';
-import { createQuizGame, POINTS, scoreWordle } from '../src/games/quiz/quiz-game.js';
+import {
+  createQuizGame, ENERGY_GOLDEN, ENERGY_LIGHTNING, FOLLOW_GOAL, FOLLOW_POINTS, POINTS, SHARE_ENERGY, SHARE_ENERGY_MAX_PER_USER, scoreWordle
+} from '../src/games/quiz/quiz-game.js';
+import { createFollowerStore } from '../src/live/follower-store.js';
+import { normalizeConnectorEvent } from '../src/live/normalize-tiktok-connector.js';
+import { sanitizeLiveEvent } from '../src/live/live-event-schema.js';
+import fsp from 'node:fs';
+import os from 'node:os';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
 import { createEnglishSwitcher, filterByLevel } from '../src/games/quiz/english-switcher.js';
 import { assignEnglishGifts, englishTargetFor } from '../public/shared/english-sets.js';
@@ -135,19 +142,21 @@ test('quiz timing: the clock waits 2 s for the live delay, and answers arriving 
   assert.ok(kinds(game.tick(13600)).includes('quizReveal'));
 });
 
-test('quiz energy: 1,000 hearts make the next question golden (x2), 3,000 start a 3-question lightning round with a bonus', () => {
+test('quiz energy: 200 hearts make the next question golden (x2), 400 start a 3-question lightning round with a bonus', () => {
   const qs = Array.from({ length: 10 }, (_, i) => textQ(`Từ${i}`));
   const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(...qs) });
   const likes = (n, t) => game.handleEvent({ type: 'like', user: user(9), likeCount: n }, t);
   game.tick(0);
-  assert.deepEqual(kinds(likes(1000, 10)), ['quizEnergy']);
+  assert.equal(ENERGY_GOLDEN, 200);
+  assert.equal(ENERGY_LIGHTNING, 400);
+  assert.deepEqual(kinds(likes(ENERGY_GOLDEN, 10)), ['quizEnergy']);
   assert.equal(game.snapshot(10).energy.goldenPending, true);
   game.command('next', 20);
   assert.equal(game.snapshot(30).golden, false); // câu đang lật đáp án không đổi
   game.command('next', 40);
   assert.equal(game.snapshot(50).golden, true);
   assert.equal(game.handleEvent(chat(1, 'tu1'), 60)[0].points, 20); // nhanh nhất 10 × 2
-  const fx = likes(2000, 70);
+  const fx = likes(ENERGY_LIGHTNING - ENERGY_GOLDEN, 70);
   assert.deepEqual(fx.map((f) => f.reward), ['lightning']);
   assert.equal(game.snapshot(70).energy.value, 0);
   let t = 100;
@@ -234,4 +243,58 @@ test('english switcher: a gift changes the set from the next question for 20 que
   assert.equal(game.snapshot(t).control.set, 'general');
   assert.equal(game.snapshot(t).board.length, 0);
   assert.ok(filterByLevel(loadEnglishSets().toeic, 'hard').every((q) => q.level === 3));
+});
+
+test('quiz follow: +3 once per person per live, a 💖 for followers (also from earlier lives), every 10 follows a golden question', () => {
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo'), textQ('Chó')) });
+  game.tick(0);
+  const follow = (n, t) => game.handleEvent({ type: 'follow', user: user(n) }, t);
+  assert.deepEqual(kinds(follow(1, 10)), ['quizFollow']);
+  assert.equal(follow(1, 20).length, 0); // bỏ follow rồi follow lại: không cộng thêm
+  game.handleEvent({ type: 'chat', user: { ...user(2), follower: true }, comment: 'mèo' }, 30); // follow từ buổi trước
+  const snap = game.snapshot(40);
+  assert.deepEqual(snap.board.map((r) => [r.id, r.points, r.follower]), [['u2', 10, true], ['u1', FOLLOW_POINTS, true]]);
+  assert.equal(snap.winners[0].follower, true);
+  let fx = [];
+  for (let n = 3; n < 3 + FOLLOW_GOAL - 1; n += 1) fx = follow(n, 50 + n);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizFollow', 'quizEnergy']);
+  assert.equal(game.snapshot(100).energy.goldenPending, true);
+  assert.equal(game.snapshot(100).energy.follows, 0);
+});
+
+test('quiz share: +20 energy for the first 5 shares per person, ambassadors board ranks sharers', () => {
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo')) });
+  game.tick(0);
+  const share = (n, t) => game.handleEvent({ type: 'share', user: user(n) }, t);
+  for (let i = 0; i < SHARE_ENERGY_MAX_PER_USER + 2; i += 1) share(1, 10 + i);
+  share(2, 30);
+  const snap = game.snapshot(40);
+  assert.equal(snap.energy.value, (SHARE_ENERGY_MAX_PER_USER + 1) * SHARE_ENERGY);
+  assert.deepEqual(snap.ambassadors.map((r) => [r.id, r.shares]), [['u1', SHARE_ENERGY_MAX_PER_USER + 2], ['u2', 1]]);
+  assert.equal(share(1, 50)[0].energy, 0);
+});
+
+test('follower flag: read from TikTok (followInfo / followRole) and kept across lives in data/followers.json; test events are not saved', () => {
+  const ev = (user) => sanitizeLiveEvent(normalizeConnectorEvent('chat', { user, comment: 'hi' }));
+  assert.equal(ev({ userId: '1', uniqueId: 'a', nickname: 'A', followInfo: { followStatus: 1 } }).user.follower, true);
+  assert.equal(ev({ userId: '2', uniqueId: 'b', nickname: 'B', followRole: 2 }).user.follower, true);
+  assert.equal(ev({ userId: '3', uniqueId: 'c', nickname: 'C', followInfo: { followStatus: 0 } }).user.follower, false);
+  const dir = fsp.mkdtempSync(path.join(os.tmpdir(), 'followers-'));
+  const store = createFollowerStore(dir, { saveDelayMs: 0 });
+  store.mark({ type: 'follow', user: { id: '42', nickname: 'X' } });
+  store.mark({ type: 'chat', user: { id: '7', nickname: 'Y', follower: true } });
+  store.mark({ type: 'follow', simulated: true, user: { id: '99', nickname: 'Thử' } });
+  store.flush();
+  const again = createFollowerStore(dir);
+  const later = again.mark({ type: 'chat', user: { id: '42', nickname: 'X', follower: false } });
+  assert.equal(later.user.follower, true);
+  assert.equal(again.has('7'), true);
+  assert.equal(again.has('99'), false);
+  fsp.rmSync(dir, { recursive: true, force: true });
+});
+
+test('follower flag from TikFinity followRole', async () => {
+  const { normalizeTikFinityMessage } = await import('../src/live/normalize-tikfinity.js');
+  const [event] = [normalizeTikFinityMessage({ event: 'chat', data: { userId: '5', uniqueId: 'e', nickname: 'E', comment: 'hi', followRole: 1 } })].flat();
+  assert.equal(sanitizeLiveEvent(event).user.follower, true);
 });

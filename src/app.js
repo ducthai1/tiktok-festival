@@ -10,6 +10,7 @@ import { isAllowedHost, safeImageUrl, securityHeaders } from './http/security.js
 import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
+import { createFollowerStore } from './live/follower-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
@@ -46,6 +47,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   fs.mkdirSync(dataDir, { recursive: true });
   const adminToken = loadOrCreateAdminToken(dataDir);
   const settings = loadSettings(dataDir);
+  const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
   const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });
   let port = config.port;
   let lastStateText = '';
@@ -116,6 +118,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       tikfinity: (opts) => createTikFinityProvider({ ...opts, url: config.tikfinityUrl })
     },
     onEvent(event) {
+      followers.mark(event);
       emitFx(hub.activeId(), hub.handleEvent(event));
       prefetchFollowThanks(event);
       // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
@@ -214,6 +217,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     async close() {
       clearInterval(timer);
       clearInterval(warmFollow);
+      followers.flush();
       tts.stop();
       await live.disconnect();
       sockets.close();

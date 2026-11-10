@@ -10,7 +10,9 @@ export function normalizeConnectorUser(data = {}) {
     id: userId,
     uniqueId: uniqueId || userId,
     nickname: firstText(user.nickname, uniqueId),
-    avatar: firstImageUrl(user.profilePicture, user.avatarThumb, user.avatarMedium, user.profilePictureUrl)
+    avatar: firstImageUrl(user.profilePicture, user.avatarThumb, user.avatarMedium, user.profilePictureUrl),
+    // đang follow kênh (1 = follower, 2 = bạn bè) — TikTok gửi kèm mỗi bình luận / vào phòng / quà
+    follower: Number(user.followInfo?.followStatus ?? user.followRole ?? data.followRole) >= 1
   };
 }
 
