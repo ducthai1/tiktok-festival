@@ -90,7 +90,13 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
     } catch (error) {
       if (myAttempt !== attempt) return;
       const offline = /offline|not live|UserOffline/i.test(`${error?.name} ${error?.message}`);
-      scheduleRetry(myAttempt, offline ? `@${status.username} chưa lên live` : `Lỗi: ${error?.message || error}`);
+      const blocked = /Failed to retrieve Room ID from all sources/i.test(`${error?.message}`);
+      const reason = offline
+        ? `@${status.username} chưa lên live`
+        : blocked
+          ? 'TikTok chặn kết nối — cần EULER_API_KEY (xem README)'
+          : `Lỗi: ${error?.message || error}`;
+      scheduleRetry(myAttempt, reason);
     }
   }
 

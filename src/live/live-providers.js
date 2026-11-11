@@ -21,7 +21,12 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
         enableExtendedGiftInfo: false
       });
       // EventEmitter coi 'error' không có người nghe là lỗi chết; giữ server sống.
-      connection.on('error', (error) => console.warn('[tiktok] lỗi kết nối:', error?.message || error));
+      // Lọc bỏ lỗi phụ (fetch quà, v.v.) — những lỗi đó có .catch riêng, không phải lỗi kết nối.
+      const GIFT_ERRORS = ['Failed to fetch room gifts.', 'Failed to fetch room gift gallery.'];
+      connection.on('error', (error) => {
+        if (GIFT_ERRORS.includes(error?.info)) return; // đã bắt bởi .catch() ở dưới
+        console.warn('[tiktok] lỗi kết nối:', error?.message || error);
+      });
       for (const type of CONNECTOR_EVENTS) {
         connection.on(type, (data) => emit(normalizeConnectorEvent(type, data)));
       }

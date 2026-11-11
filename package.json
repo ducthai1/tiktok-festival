@@ -9,7 +9,7 @@
     "node": ">=20"
   },
   "scripts": {
-    "start": "node src/main.js",
+    "start": "node --env-file-if-exists=.env src/main.js",
     "check": "node scripts/check-syntax.js",
     "test": "node --test \"test/*.test.js\"",
     "gate": "npm run check && npm test"
