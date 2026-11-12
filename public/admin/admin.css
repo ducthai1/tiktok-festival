@@ -74,3 +74,4 @@ button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical
 /* mất kết nối live quá 20 giây: băng đỏ nhấp nháy */
 .status.alarm { color: #fff; background: #b3122e; font-weight: 800; font-size: 18px; animation: alarm-blink 1s steps(2) infinite; }
 @keyframes alarm-blink { 50% { background: #5c0617; } }
+#stage-health.bad { color: #ff9b9b; font-weight: 700; }

@@ -242,13 +242,73 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   };
   const version = frontendVersion(PUBLIC_DIR);
   log.info('app', `phiên bản giao diện ${version}`);
+  // Tình trạng từng màn hình (OBS / khung xem trước): code bản nào, FPS, GPU — log [stage] + gửi trang điều khiển
+  const stageList = () => [...sockets.clients()].filter((ws) => ws.stage).map((ws) => ws.stage);
+  const sendStages = (ws = null) => {
+    const message = { t: 'stages', version, list: stageList() };
+    if (ws) sockets.send(ws, message);
+    else sockets.broadcast(message, { adminsOnly: true });
+  };
+  function stageInfo(ws, info) {
+    const clean = {
+      version: /^[0-9a-f]{6,40}$/.test(info.version) ? info.version : '',
+      obs: info.obs === true || /\bOBS\//.test(ws.userAgent), preview: info.preview === true, lite: info.lite === true,
+      fps: Number.isFinite(info.fps) ? Math.max(0, Math.min(500, Math.round(info.fps))) : 0,
+      gpu: String(info.gpu || '').replace(/[^\w .,:;()/+@-]/g, '').slice(0, 120), hidden: info.hidden === true
+    };
+    clean.stale = clean.version !== version;
+    clean.software = /swiftshader|llvmpipe|softpipe|software|microsoft basic/i.test(clean.gpu);
+    const first = !ws.stage;
+    const prev = ws.stage;
+    ws.stage = clean;
+    clearTimeout(ws.infoTimer);
+    if (!clean.preview) {
+      const who = clean.obs ? 'màn hình OBS' : 'màn hình';
+      if (first) {
+        log.info('stage', `${who}: code ${clean.version || '?'} (${clean.stale ? 'CŨ' : 'đúng bản mới'})`
+          + `${clean.fps ? ` · ${clean.fps} khung/giây` : ''} · GPU: ${clean.gpu || '?'}${clean.lite ? ' · ?lite=1' : ''}`);
+      }
+      // FPS thấp: CSS mờ dần 0,7 giây chỉ còn 1–3 khung → trông như lật trang tức thì / giật (khung xem trước trên trình duyệt vẫn mượt)
+      const now = Date.now();
+      if (clean.fps && clean.fps < 20 && now - (ws.lowFpsWarnAt || 0) > 10 * 60000) {
+        ws.lowFpsWarnAt = now;
+        log.warn('stage', `${who} chỉ vẽ ${clean.fps} khung/giây${clean.software ? ' — đang vẽ bằng CPU (không có GPU)' : ''}`
+          + ' → hiệu ứng mờ dần / lật trang sẽ giật hoặc mất. OBS: Cài đặt → Nâng cao → bật "Tăng tốc phần cứng cho nguồn trình duyệt"'
+          + ' rồi khởi động lại OBS; hoặc thêm ?lite=1 vào link màn hình');
+      }
+      if (clean.hidden && !prev?.hidden) log.warn('stage', `${who} báo trang đang ẨN (OBS không hiển thị nguồn) → trình duyệt hãm đồng hồ, hiệu ứng có thể đứng`);
+    }
+    sendStages();
+    return undefined;
+  }
+
   const sockets = createSocketHub({
     getPort: () => port,
     allowLan: config.allowLan,
     adminToken,
     onAdminMessage: handleAdmin,
+    onStageInfo: (ws, info) => stageInfo(ws, info),
+    onClientClose(ws) {
+      clearTimeout(ws.infoTimer);
+      if (ws.stage) {
+        if (!ws.stage.preview) log.info('stage', `${ws.stage.obs ? 'màn hình OBS' : 'màn hình'} đã ngắt`);
+        ws.stage = null;
+        sendStages();
+      }
+    },
     onClientReady(ws) {
       log.info('ws', `${ws.role === 'admin' ? 'trang điều khiển' : 'màn hình'} đã nối`);
+      if (ws.role === 'admin') sendStages(ws);
+      // màn hình mở từ trước bản 13/11 không biết tự báo → đang chạy code CŨ (OBS không tự tải lại khi server khởi động lại)
+      if (ws.role === 'stage') {
+        ws.infoTimer = setTimeout(() => {
+          if (ws.stage || ws.readyState !== ws.OPEN || ws.role !== 'stage') return;
+          ws.stage = { stale: true, obs: /\bOBS\//.test(ws.userAgent), preview: false, version: '', fps: 0, gpu: '' };
+          log.warn('stage', `${ws.stage.obs ? 'màn hình OBS' : 'một màn hình'} đang chạy code CŨ (không báo phiên bản) → hiệu ứng mới`
+            + ' (vd mờ dần khi lật trang bảng quà) sẽ không có. Trong OBS: chuột phải nguồn trình duyệt → Làm mới (Refresh) một lần');
+          sendStages();
+        }, 12000);
+      }
       sockets.send(ws, { t: 'hello', role: ws.role, version, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });

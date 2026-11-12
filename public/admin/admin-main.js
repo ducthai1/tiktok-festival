@@ -76,7 +76,8 @@ const socket = connectLiveSocket({
     } else if (m.t === 'adminInfo') {
       $('provider').value = m.provider;
       if (m.username && !$('username').value) $('username').value = m.username;
-    } else if (m.t === 'settings') applySettings(m.settings);
+    } else if (m.t === 'stages') renderStages(m);
+    else if (m.t === 'settings') applySettings(m.settings);
     else if (m.t === 'live') renderLive(m.status);
     else if (m.t === 'state') renderState(m);
     else if (m.t === 'log') appendLog(m.event);
@@ -229,6 +230,19 @@ function renderLive(status) {
   const locked = liveState === 'connected';
   for (const b of document.querySelectorAll('[data-test], [id^="test-"] button, #test-crowd, [id^="test-arrive"], #demo button')) b.disabled = locked;
   $('test-note').textContent = locked ? 'Đang live thật: nút thử bị khoá để không lẫn tương tác giả vào buổi live.' : 'Sự kiện thử hiện nhãn “CHẾ ĐỘ THỬ” trên màn hình.';
+}
+
+// Màn hình OBS chạy code cũ / vẽ quá ít khung → hiệu ứng (mờ dần khi lật trang bảng quà…) mất trên live dù khung xem trước vẫn có.
+function renderStages({ list = [] }) {
+  const obs = list.filter((s) => !s.preview);
+  const line = obs.map((s) => {
+    if (s.stale) return '⚠️ đang chạy code CŨ → bấm "Làm mới màn hình OBS" (không được thì trong OBS: chuột phải nguồn → Làm mới)';
+    const fps = s.fps ? `${s.fps} khung/giây` : 'đang đo FPS…';
+    if (s.fps && s.fps < 20) return `⚠️ ${fps}${s.software ? ' (vẽ bằng CPU)' : ''} — hiệu ứng sẽ giật/mất: bật tăng tốc phần cứng nguồn trình duyệt trong OBS hoặc dùng ?lite=1`;
+    return `✅ bản mới · ${fps}`;
+  });
+  $('stage-health').textContent = obs.length ? `${obs.length > 1 ? `${obs.length} màn hình` : 'Màn hình OBS'}: ${line.join(' | ')}` : 'Màn hình OBS: chưa nối';
+  $('stage-health').classList.toggle('bad', obs.some((s) => s.stale || (s.fps && s.fps < 20)));
 }
 
 function applySettings(s) {
@@ -576,3 +590,6 @@ if ($('reset-ambassadors')) $('reset-ambassadors').addEventListener('click', () 
   if (confirm('Xoá bảng đại sứ share?')) run({ t: 'resetAmbassadors' });
 });
 if ($('disconnect')) $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
+$('reload-stages').addEventListener('click', () => {
+  if (confirm('Tải lại màn hình OBS? Màn hình trống khoảng 2–3 giây.')) run({ t: 'reload' });
+});

@@ -115,3 +115,38 @@ test('HTTP and WebSocket refuse foreign hosts/origins; stage is read-only; admin
   stage.ws.close();
   admin.ws.close();
 });
+
+test('stage health: each screen reports its code version / FPS / GPU; admins see stale code and low FPS, junk is cleaned', async (t) => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tlg-'));
+  const app = await startApp(config, { dataDir, providerFactories: fakeProviders, tickMs: 50 });
+  t.after(async () => {
+    await app.close();
+    fs.rmSync(dataDir, { recursive: true, force: true });
+  });
+  const { port } = app;
+  const admin = await openSocket(port);
+  admin.ws.send(JSON.stringify({ t: 'auth', token: app.adminToken }));
+  const hello = await waitFor(admin.inbox, (m) => m.t === 'hello');
+  const stage = await openSocket(port);
+  await waitFor(stage.inbox, (m) => m.t === 'hello');
+  stage.ws.send(JSON.stringify({ t: 'stageInfo', version: hello.version, obs: true, fps: 9, gpu: 'Google SwiftShader<script>', lite: false }));
+  const good = await waitFor(admin.inbox, (m) => m.t === 'stages' && m.list.length === 1);
+  assert.deepEqual({ ...good.list[0], gpu: undefined }, { version: hello.version, obs: true, preview: false, lite: false, fps: 9, gpu: undefined,
+    hidden: false, stale: false, software: true });
+  assert.equal(good.list[0].gpu, 'Google SwiftShaderscript');
+  const old = await openSocket(port);
+  await waitFor(old.inbox, (m) => m.t === 'hello');
+  old.ws.send(JSON.stringify({ t: 'stageInfo', version: 'abc123', fps: 'x' }));
+  const both = await waitFor(admin.inbox, (m) => m.t === 'stages' && m.list.length === 2);
+  assert.equal(both.list.filter((s) => s.stale).length, 1);
+  old.ws.close();
+  await waitFor(admin.inbox, (m) => m.t === 'stages' && m.list.length === 1 && admin.inbox.indexOf(m) > admin.inbox.indexOf(both));
+  // màn hình vẫn chỉ được xem: lệnh làm mới từ màn hình bị bỏ qua
+  stage.ws.send(JSON.stringify({ t: 'reload', id: 1 }));
+  await new Promise((r) => setTimeout(r, 200));
+  assert.ok(!stage.inbox.some((m) => m.t === 'reload' || m.t === 'reply'));
+  admin.ws.send(JSON.stringify({ t: 'reload', id: 2 }));
+  await waitFor(stage.inbox, (m) => m.t === 'reload');
+  admin.ws.close();
+  stage.ws.close();
+});

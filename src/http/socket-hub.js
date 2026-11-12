@@ -5,7 +5,7 @@ import { createRateLimiter, isAllowedHost, isAllowedOrigin, isLoopbackAddress, t
 
 const MAX_AUTH_FAILURES = 3;
 
-export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage, onClientReady }) {
+export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage, onClientReady, onStageInfo = null, onClientClose = null }) {
   const wss = new WebSocketServer({ noServer: true, maxPayload: 16 * 1024, perMessageDeflate: false });
 
   function send(ws, message) {
@@ -22,11 +22,12 @@ export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage,
       socket.destroy();
       return;
     }
-    wss.handleUpgrade(request, socket, head, (ws) => wss.emit('connection', ws));
+    wss.handleUpgrade(request, socket, head, (ws) => wss.emit('connection', ws, request));
   }
 
-  wss.on('connection', (ws) => {
+  wss.on('connection', (ws, request) => {
     ws.role = 'stage';
+    ws.userAgent = String(request?.headers?.['user-agent'] || '').slice(0, 200); // OBS ghi "OBS/…" trong đây
     ws.alive = true;
     ws.authFailures = 0;
     // Màn hình chưa đăng nhập: 30 tin/5 giây là thừa. Trang điều khiển đã có token được nới hơn
@@ -35,6 +36,7 @@ export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage,
     const allowAdmin = createRateLimiter(400, 5000);
     ws.on('pong', () => { ws.alive = true; });
     ws.on('error', () => {});
+    ws.on('close', () => onClientClose?.(ws));
     ws.on('message', (raw, isBinary) => {
       if (isBinary || !(ws.role === 'admin' ? allowAdmin() : allowGuest())) return ws.close(1008, 'Quá nhiều tin nhắn');
       let message;
@@ -55,6 +57,8 @@ export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage,
         if (ws.authFailures >= MAX_AUTH_FAILURES) ws.close(1008, 'Sai token');
         return undefined;
       }
+      // màn hình tự báo phiên bản code / FPS / GPU — chỉ để ghi log, không điều khiển được gì
+      if (message.t === 'stageInfo' && ws.role === 'stage') return onStageInfo?.(ws, message);
       if (ws.role !== 'admin') return undefined; // màn hình OBS chỉ nhận, không ra lệnh
       Promise.resolve(onAdminMessage(message))
         .then((result) => send(ws, { t: 'reply', id: message.id, ok: true, ...(result || {}) }))
@@ -78,6 +82,7 @@ export function createSocketHub({ getPort, allowLan, adminToken, onAdminMessage,
   return {
     handleUpgrade,
     send,
+    clients: () => wss.clients,
     broadcast(message, { adminsOnly = false } = {}) {
       const text = JSON.stringify(message);
       for (const ws of wss.clients) {

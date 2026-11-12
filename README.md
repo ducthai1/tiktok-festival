@@ -238,13 +238,14 @@ Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` 
 | Phòng đông có làm server nghẽn không | `[health] độ trễ xử lý … p99` (≥ 250ms ghi WARN "SERVER ĐANG NGHẼN"), `xử lý sự kiện … mất …ms (chậm)` |
 | Lưu lượng từng phút | `[live] 60 giây qua: chat … · like … · member … · roomUser …` |
 | Người vận hành đã bấm gì | `[admin] lệnh connect / disconnect / switch …` |
+| OBS chạy code cũ / vẽ ít khung (hiệu ứng có ở khung xem trước mà mất trên live) | `[stage] màn hình OBS: code … (CŨ / đúng bản mới) · N khung/giây · GPU`, `đang chạy code CŨ`, `chỉ vẽ N khung/giây` |
 | Giọng đọc tiếng Anh có chạy không | `[tts-en] giọng tiếng Anh hoạt động`, `không đọc được "…": … — cách sửa`, `cài … thất bại` |
 
 Kết nối tự hồi phục: live **tạm dừng** (mạng máy phát chập chờn, thoát app) → thử lại mỗi 4 giây (3 phút đầu); live **kết thúc** → chờ live mới mỗi 20 giây rồi 2 phút; Euler giới hạn / chặn → giãn 30 s → 5 phút; một lần kết nối treo quá 25 giây thì bỏ, thử lại. Trang điều khiển hiện **băng đỏ nhấp nháy + tiếng bíp** khi mất live quá 20 giây.
 
 **Bắt buộc có `EULER_API_KEY` trong `.env`** (xem `.env.example`) — không có khoá TikTok dễ chặn / giới hạn. Danh mục quà qua Euler cần gói Business nên mặc định không tải (đặt `EULER_FETCH_GIFTS=1` nếu có gói), danh mục gom dần từ quà nhận được.
 
-Màn hình OBS và trang điều khiển **tự tải lại** khi server khởi động lại với code giao diện mới (không cần bấm Refresh nguồn trình duyệt).
+Trang điều khiển (dưới khung xem trước) hiện tình trạng màn hình OBS + nút **🔄 Làm mới màn hình OBS**. Màn hình OBS và trang điều khiển **tự tải lại** khi server khởi động lại với code giao diện mới (không cần bấm Refresh nguồn trình duyệt).
 
 ## Kiểm tra
 

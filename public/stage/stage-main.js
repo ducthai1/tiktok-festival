@@ -166,7 +166,33 @@ function onState(message) {
   }
 }
 
-connectLiveSocket({
+// Báo server: màn hình đang chạy code bản nào, vẽ được bao nhiêu khung/giây, GPU gì → log [stage] + cảnh báo ở trang điều khiển.
+// (OBS giữ nguyên code lúc mở nguồn; FPS thấp thì hiệu ứng mờ dần / lật trang trông như giật cục hoặc mất hẳn.)
+let statFrames = 0;
+let statSince = performance.now();
+function gpuName() {
+  try {
+    const gl = document.createElement('canvas').getContext('webgl');
+    const ext = gl?.getExtension('WEBGL_debug_renderer_info');
+    const name = ext ? gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) : gl ? gl.getParameter(gl.RENDERER) : 'không có WebGL';
+    gl?.getExtension('WEBGL_lose_context')?.loseContext();
+    return String(name).slice(0, 120);
+  } catch {
+    return '';
+  }
+}
+const gpu = gpuName();
+function stageInfo() {
+  const now = performance.now();
+  const fps = now - statSince > 2000 ? Math.round((statFrames * 1000) / (now - statSince)) : 0;
+  statFrames = 0;
+  statSince = now;
+  return { t: 'stageInfo', version: frontVersion, obs: Boolean(window.obsstudio), preview: isPreview, lite: quality.lite, fps, gpu,
+    hidden: document.visibilityState === 'hidden' };
+}
+setInterval(() => socket.send(stageInfo()), 60000);
+
+const socket = connectLiveSocket({
   onOpen: () => hud.setOffline(false),
   onClose: () => hud.setOffline(true),
   onMessage(message) {
@@ -174,6 +200,7 @@ connectLiveSocket({
     if (message.t === 'hello' && message.version) {
       if (!frontVersion) frontVersion = message.version;
       else if (frontVersion !== message.version) return location.reload();
+      setTimeout(() => socket.send(stageInfo()), 5000); // đo FPS 5 giây đầu rồi báo
     }
     if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
@@ -209,6 +236,7 @@ let fpsFrames = 0;
 let fpsSince = performance.now();
 function loop(now) {
   requestAnimationFrame(loop); // đặt khung sau TRƯỚC: lỗi một khung không được làm đứng hình cả buổi live
+  statFrames += 1;
   if (!shouldDraw(now)) return; // chế độ nhẹ: bỏ khung thừa trên màn 60/120 Hz
   // dt không bao giờ âm/quá lớn: tab bị ẩn rồi hiện lại, hay đồng hồ lệch, nhân vật cũng không bị kéo lùi/nhảy cóc.
   const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
