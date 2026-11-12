@@ -1,0 +1,166 @@
+{
+  "savedAt": "2026-11-12T07:36:28.846Z",
+  "gifts": [
+    {
+      "id": "corgi",
+      "name": "Corgi",
+      "coins": 299,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp"
+    },
+    {
+      "id": "universe",
+      "name": "Vũ trụ TikTok",
+      "coins": 44999,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/8f471afbcebfda3841a6cc515e381f58~tplv-obj.webp"
+    },
+    {
+      "id": "sports-car",
+      "name": "Siêu xe",
+      "coins": 7000,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/201304005bf8f86b533b97ffa88f1abe.png~tplv-obj.webp"
+    },
+    {
+      "id": "rose",
+      "name": "Hoa hồng",
+      "coins": 1,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.png",
+      "en": "Rose"
+    },
+    {
+      "id": "interstellar",
+      "name": "Liên hành tinh",
+      "coins": 10000,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp"
+    },
+    {
+      "id": "galaxy",
+      "name": "Dải ngân hà",
+      "coins": 1000,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/79a02148079526539f7599150da9fd28.png~tplv-obj.webp"
+    },
+    {
+      "id": "cap",
+      "name": "Mũ lưỡi trai",
+      "coins": 99,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/6c2ab2da19249ea570a2ece5e3377f04~tplv-obj.webp"
+    },
+    {
+      "id": "finger-heart",
+      "name": "Bắn tim",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.png",
+      "en": "Finger Heart"
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "coins": 10,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp",
+      "en": "Rosa"
+    },
+    {
+      "id": "5655",
+      "name": "Rose",
+      "coins": 1,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.png",
+      "en": "Rose"
+    },
+    {
+      "id": "5269",
+      "name": "TikTok",
+      "coins": 1,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/802a21ae29f9fae5abe3693de9f874bd~tplv-obj.png",
+      "en": "TikTok"
+    },
+    {
+      "id": "919346",
+      "name": "Welcome Dallah",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/1b65232470d2c0a9f85cfbc70b38307b.png~tplv-obj.png",
+      "en": "Welcome Dallah"
+    },
+    {
+      "id": "15231",
+      "name": "Love you so much",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/fc549cf1bc61f9c8a1c97ebab68dced7.png~tplv-obj.png",
+      "en": "Love you so much"
+    },
+    {
+      "id": "7934",
+      "name": "Heart Me",
+      "coins": 1,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/heartme_outfit/base_heartme_composition.png~tplv-resize:258:258.webp",
+      "en": "Heart Me"
+    },
+    {
+      "id": "105781",
+      "name": "Spinning Soccer",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/74a30ed3492d3e7d317efe7e10c3ba51.png~tplv-obj.png",
+      "en": "Spinning Soccer"
+    },
+    {
+      "id": "5487",
+      "name": "Finger Heart",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.png",
+      "en": "Finger Heart"
+    },
+    {
+      "id": "15232",
+      "name": "You're awesome",
+      "coins": 5,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.png",
+      "en": "You're awesome"
+    },
+    {
+      "id": "8825",
+      "name": "Lucky pig",
+      "coins": 10,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/resource/d53125bd5416e6f2f6ab61da02ddd302.png~tplv-obj.png"
+    },
+    {
+      "id": "corgi-pet",
+      "name": "Corgi",
+      "en": "Corgi",
+      "coins": 5,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp"
+    },
+    {
+      "id": "donut-food",
+      "name": "Bánh donut",
+      "en": "Doughnut",
+      "coins": 5,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp"
+    },
+    {
+      "id": "8913",
+      "name": "Rosa",
+      "en": "Rosa",
+      "coins": 10,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp"
+    },
+    {
+      "id": "rocket-tech",
+      "name": "Tên lửa",
+      "en": "Rocket",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp"
+    },
+    {
+      "id": "airplane",
+      "name": "Máy bay",
+      "en": "Private Jet",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/airplane_icon_gold.png~tplv-obj.webp"
+    },
+    {
+      "id": "sunglasses",
+      "name": "Kính râm",
+      "en": "Sunglasses",
+      "coins": 15,
+      "image": "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/08af67ab13a8053269bf539fd27f3873.png~tplv-obj.webp"
+    }
+  ]
+}
