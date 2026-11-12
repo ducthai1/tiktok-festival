@@ -225,7 +225,8 @@ Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` 
 |---|---|
 | Lúc nào mất / có lại dữ liệu | `[live] trạng thái →` (connected / reconnecting / idle) và `nối lại được sau … giây` |
 | TikTok báo live tạm dừng / kết thúc / đóng kết nối | `TikTok báo live TẠM DỪNG`, `KẾT THÚC`, `TikTok đóng kết nối: mã …` |
-| Kết nối "còn" mà không có dữ liệu | `canh chừng: … giây không có dữ liệu` (tự nối lại sau 90 giây im lặng) |
+| Kết nối "còn" mà không có dữ liệu | `canh chừng: … giây không có dữ liệu` (tự nối lại sau 90 giây im lặng; 2 phút đầu sau mỗi lần kết nối chỉ chờ 30 giây) |
+| Vừa mở live mới mà vẫn dính phòng cũ | `TikTok vẫn trả về phòng cũ … đã kết thúc — tra lại` |
 | Có cạn lượt ký Euler không | `kết nối … lần N trong ngày`, `kết nối thất bại (ratelimit / blocked)` |
 | Phòng đông có làm server nghẽn không | `[health] độ trễ xử lý … p99` (≥ 250ms ghi WARN "SERVER ĐANG NGHẼN"), `xử lý sự kiện … mất …ms (chậm)` |
 | Lưu lượng từng phút | `[live] 60 giây qua: chat … · like … · member … · roomUser …` |

@@ -15,6 +15,9 @@ import { sanitizeLiveEvent } from './live-event-schema.js';
 const USERNAME_RE = /^[A-Za-z0-9._]{2,24}$/;
 export const CONNECT_TIMEOUT_MS = 25000;
 export const WATCHDOG_MS = 90000; // phòng đang live luôn có số người xem / tim gửi về định kỳ
+// 2 phút đầu sau mỗi lần kết nối: 30 giây không có gì là nối lại ngay (hay gặp: vừa mở live mới mà TikTok vẫn trả phòng cũ)
+export const PROBATION_WATCHDOG_MS = 30000;
+const PROBATION_MS = 120000;
 const WATCHDOG_CHECK_MS = 10000;
 const STATS_MS = 60000;
 const SLOW_EVENT_MS = 50;
@@ -74,6 +77,9 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
   let connectsDay = '';
   let connectsToday = 0;
   let lastSlowLog = 0;
+  let connectedAt = 0;
+  let roomId = '';
+  let endedRoomId = ''; // phòng TikTok vừa báo KẾT THÚC — được trả lại phòng này nghĩa là chưa thấy live mới
 
   function setStatus(patch) {
     const before = `${status.state}|${status.message}`;
@@ -135,7 +141,8 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
       watchTimer = timers.setInterval(() => {
         if (status.state !== 'connected' || !provider) return;
         const silent = now() - lastDataAt;
-        if (silent < WATCHDOG_MS) return;
+        const limit = now() - connectedAt < PROBATION_MS ? PROBATION_WATCHDOG_MS : WATCHDOG_MS;
+        if (silent < limit) return;
         log.warn('live', `canh chừng: ${Math.round(silent / 1000)} giây không có dữ liệu dù đang "đã kết nối" → nối lại`);
         lost(attempt, 'stalled');
       }, WATCHDOG_CHECK_MS);
@@ -203,7 +210,8 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
       onEnded: (kind = 'ended') => {
         if (myAttempt !== attempt || provider !== instance || ended) return;
         ended = true;
-        log.warn('live', `TikTok báo ${kind === 'suspended' ? 'live TẠM DỪNG' : 'live KẾT THÚC'}`);
+        log.warn('live', `TikTok báo ${kind === 'suspended' ? 'live TẠM DỪNG' : 'live KẾT THÚC'} (phòng ${roomId || '?'})`);
+        if (kind !== 'suspended') endedRoomId = roomId;
         lost(myAttempt, kind === 'suspended' ? 'suspended' : 'ended');
       }
     });
@@ -218,6 +226,16 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
       ]);
       timers.clearTimeout(timeout);
       if (myAttempt !== attempt) return void instance.stop().catch(() => {});
+      const newRoom = String(info?.roomId || '');
+      if (newRoom && newRoom === endedRoomId) {
+        // TikTok vẫn trả về phòng vừa kết thúc (trang kênh chưa cập nhật live mới) → bỏ, tra lại
+        log.warn('live', `TikTok vẫn trả về phòng cũ ${newRoom} đã kết thúc — chưa thấy live mới, tra lại`);
+        if (provider === instance) await stopProvider();
+        return lost(myAttempt, 'ended');
+      }
+      roomId = newRoom;
+      endedRoomId = '';
+      connectedAt = now();
       if (downSince) log.info('live', `nối lại được sau ${Math.round((now() - downSince) / 1000)} giây mất kết nối`);
       failures = 0;
       downSince = 0;

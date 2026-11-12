@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
-  classifyConnectError, CONNECT_TIMEOUT_MS, createLiveConnectionManager, retryDelay, WATCHDOG_MS
+  classifyConnectError, CONNECT_TIMEOUT_MS, createLiveConnectionManager, PROBATION_WATCHDOG_MS, retryDelay, WATCHDOG_MS
 } from '../src/live/live-connection-manager.js';
 
 // Đồng hồ giả: chạy hẹn giờ theo ý, không phải chờ thật.
@@ -41,13 +41,14 @@ function fakeClock() {
 }
 
 // Nguồn live giả: ghi lại các lần mở, cho test bắn sự kiện / tạm dừng / ngắt.
-function fakeProvider({ hang = false } = {}) {
+function fakeProvider({ hang = false, rooms = null } = {}) {
   const opened = [];
   const factory = (opts) => {
+    const room = rooms ? rooms[Math.min(opened.length, rooms.length - 1)] : `room${opened.length}`;
     const inst = {
       opts,
       stopped: false,
-      start: () => (hang ? new Promise(() => {}) : Promise.resolve({ roomId: `room${opened.length}` })),
+      start: () => (hang ? new Promise(() => {}) : Promise.resolve({ roomId: room })),
       stop: async () => { inst.stopped = true; }
     };
     opened.push(inst);
@@ -58,6 +59,7 @@ function fakeProvider({ hang = false } = {}) {
 
 function setup(opts) {
   const clock = fakeClock();
+  void PROBATION_WATCHDOG_MS;
   const p = fakeProvider(opts);
   const statuses = [];
   const events = [];
@@ -102,10 +104,11 @@ test('watchdog: "connected" but no data for 90 s → reconnect; regular data kee
     await clock.advance(10000);
     p.opened[0].opts.onActivity();
   }
+  await clock.advance(1); // qua 2 phút đầu: giờ mới dùng ngưỡng 90 s
   assert.equal(p.opened.length, 1); // 2 phút có dữ liệu đều: không nối lại
   p.opened[0].opts.emit(chat(1));
   assert.equal(events.length, 1);
-  await clock.advance(WATCHDOG_MS + 1000); // lần canh chừng đầu tiên sau 90 s im lặng
+  await clock.advance(WATCHDOG_MS + 10000); // lần canh chừng (mỗi 10 s) đầu tiên sau 90 s im lặng
   assert.equal(p.opened[0].stopped, true);
   assert.equal(live.status().state, 'reconnecting');
   await clock.advance(4000);
@@ -146,4 +149,29 @@ test('connect errors are classified so the retry rhythm fits (offline / rate lim
   assert.equal(classifyConnectError(new Error('connect ETIMEDOUT')), 'network');
   assert.deepEqual([1, 2, 3, 4, 5, 6].map((f) => retryDelay('ratelimit', 0, f) / 1000), [30, 60, 120, 240, 300, 300]);
   assert.equal(retryDelay('suspended', 60000, 3), 4000);
+});
+
+test('live restarted: TikTok still returns the ended room → do not stay on it, look up again until the new room appears', async () => {
+  const { clock, p, live } = setup({ rooms: ['old', 'old', 'new'] });
+  await live.connect('tangducne', 'tiktok');
+  p.opened[0].opts.onEnded('ended'); // chủ kênh tắt live
+  await clock.advance(20000); // tra lại: TikTok vẫn trả "old"
+  assert.equal(p.opened.length, 2);
+  assert.equal(live.status().state, 'reconnecting');
+  await clock.advance(20000); // lần sau ra phòng mới
+  assert.equal(p.opened.length, 3);
+  assert.equal(live.status().state, 'connected');
+  assert.equal(live.status().roomId, 'new');
+  await live.disconnect();
+});
+
+test('manual "Kết nối" right after going live again: a silent new connection is retried after 30 s, not 90 s', async () => {
+  const { clock, p, live } = setup();
+  await live.disconnect();
+  await live.connect('tangducne', 'tiktok'); // bấm Kết nối trên trang điều khiển
+  await clock.advance(PROBATION_WATCHDOG_MS + 1000); // không có gói tin nào
+  assert.equal(live.status().state, 'reconnecting');
+  await clock.advance(4000);
+  assert.equal(p.opened.length, 2);
+  await live.disconnect();
 });
