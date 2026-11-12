@@ -415,6 +415,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       } else if (fx.kind === 'quizReveal') {
         audio.play(fx.correctCount ? 'fanfare' : 'pop');
         if (fx.correctCount) confetti(260);
+        // từ tiếng Anh đọc giọng bản xứ trước (thường rồi chậm), sau đó mới chúc mừng bằng tiếng Việt
+        if (fx.answerEn) {
+          audio.speakEnglish?.(fx.answerEn);
+          if (fx.answerEnSlow) audio.speakEnglish?.(fx.answerEn, { slow: true });
+        }
         if (fx.speech) audio.speak(fx.speech, 'story');
       } else if (fx.kind === 'quizGift') {
         audio.play('magic');

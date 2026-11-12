@@ -15,6 +15,10 @@ npm run gate           # kiểm cú pháp + toàn bộ test — BẮT BUỘC pas
 - **`EULER_API_KEY` trong `.env` là bắt buộc.** Thiếu khoá → TikTok/Euler chặn hoặc giới hạn kết nối → mất toàn bộ bình luận, quà, mắt xem
   (sự cố 11/11 và 12/11/2026). Dòng log đầu tiên khi khởi động ghi `EULER_API_KEY CÓ` / `KHÔNG CÓ`.
 - Màn hình OBS: `http://127.0.0.1:3939/stage` (Browser Source 1080×1920). Nó **tự tải lại** khi server khởi động lại với code giao diện mới.
+- Giọng đọc đáp án tiếng Anh (edge-tts, 8 giọng Microsoft): `npm start` tự cài lần đầu vào `~/.local/share/tiktok-live-games/tts-en-env`
+  (cần mạng; Mac/Linux; dùng `uv` nếu có, không thì `python3 -m venv`). Cài tay / kiểm tra: `npm run setup-tts-en` (đọc thử cả 8 giọng).
+  Log `[tts-en] … 403 … Microsoft từ chối` = Microsoft đổi cách ký → nâng `edge-tts` (+ phụ thuộc) trong `tools/tts/requirements-en.txt`,
+  chạy `npm run setup-tts-en` thử, rồi push — máy live pull + khởi động lại là tự cài lại. Không vá giao thức bằng tay trong code.
 
 ## 2. Bí mật và dữ liệu — KHÔNG BAO GIỜ đưa lên git
 
@@ -70,4 +74,6 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
   (so theo chữ thường, bỏ dấu cách). Độ khó chỉ 1, 2, 3. Không dán đề lộ đáp án.
 - **Xoay vòng không lặp** (`english-switcher.js`): sổ "đã hỏi" dùng chung mọi bộ, theo từ tiếng Anh, lưu `data/english-seen.json`.
   Đổi bộ / đổi độ khó / khởi động lại đều đi tiếp từ chưa hỏi; một bộ hỏi hết mới bắt đầu vòng mới cho riêng bộ đó. Có test.
+- `public/admin/admin-main.js`: giữ nguyên các khai báo `testPanel`, `demo`, sự kiện `connect-form` và vòng gắn công tắc `set-*`
+  (từng bị xoá nhầm → nút Kết nối chết, công tắc không ăn). Sửa trang điều khiển xong: mở thử, xem Console không có lỗi đỏ.
 - Commit: tiêu đề kiểu `feat(quiz): …` / `fix(live): …` (tiếng Anh), thân giải thích vì sao. Chạy `npm run gate` trước khi push.

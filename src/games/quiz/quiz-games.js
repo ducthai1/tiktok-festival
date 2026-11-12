@@ -23,7 +23,8 @@ function loadBanks() {
 
 export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'];
 
-export function createQuizGames({ random = Math.random, englishProgress = null } = {}) {
+// onEnglishAnswer(từ): câu tiếng Anh vừa ra — máy chủ tạo sẵn giọng đọc đáp án (src/tts/english-tts.js)
+export function createQuizGames({ random = Math.random, englishProgress = null, onEnglishAnswer = null } = {}) {
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
   // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)
@@ -40,7 +41,7 @@ export function createQuizGames({ random = Math.random, englishProgress = null }
       id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
       onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot(),
       onRestore: (control) => english.restore(control),
-      onCatalog: (catalog) => english.setCatalog(catalog)
+      onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => q.answer, onPronounce: onEnglishAnswer
     }),
     createQuizGame({
       id: 'emoji', title: 'Đuổi Hình Bắt Chữ', deck: emoji.deck, questionMs: 30000, 
@@ -53,8 +54,9 @@ export function createQuizGames({ random = Math.random, englishProgress = null }
     }),
     createQuizGame({ id: 'math', title: 'Toán Nhanh', deck: bag([]), questionMs: 15000, random }),
     createQuizGame({
-      id: 'wordle', title: 'Wordle Tiếng Anh', kind: 'wordle', deck: b.wordle.answers, questionMs: 150000, revealMs: 8000,
-      wordle: b.wordle, revealAnswerAloud: false, speakLine: (q) => `Đoán từ tiếng Anh ${q.length} chữ cái!`, random
+      id: 'wordle', title: 'Wordle Tiếng Anh', kind: 'wordle', deck: bag(b.wordle.answers), questionMs: 150000, revealMs: 8000,
+      wordle: b.wordle, revealAnswerAloud: false, speakLine: (q) => `Đoán từ tiếng Anh ${q.length} chữ cái!`, random,
+      pronounce: (q) => q, onPronounce: onEnglishAnswer
     })
   ];
 }

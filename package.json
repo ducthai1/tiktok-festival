@@ -14,7 +14,8 @@
     "test": "node --test \"test/*.test.js\"",
     "gate": "npm run check && npm test",
     "rotate-token": "node scripts/rotate-admin-token.mjs",
-    "untrack-data": "node scripts/untrack-live-data.mjs"
+    "untrack-data": "node scripts/untrack-live-data.mjs",
+    "setup-tts-en": "node scripts/setup-english-voice.mjs"
   },
   "dependencies": {
     "three": "0.186.1",

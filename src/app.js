@@ -15,6 +15,7 @@ import { log } from './logger.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
+import { createEnglishTts } from './tts/english-tts.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
@@ -46,7 +47,7 @@ function frontendVersion(dir) {
 }
 
 const DEFAULT_SETTINGS = {
-  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], legend: true, sound: true, volume: 0.6,
+  activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], ttsEnglish: true, legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000
 };
 
@@ -71,7 +72,7 @@ function loadSettings(dataDir) {
   }
 }
 
-export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false } = {}) {
+export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false, englishSynth = null } = {}) {
   fs.mkdirSync(dataDir, { recursive: true });
   const adminToken = loadOrCreateAdminToken(dataDir, {
     onRotate: () => log.warn('admin', 'ĐÃ ĐỔI token trang điều khiển (token cũ bị lộ, không dùng được nữa) — mở link mới in khi khởi động')
@@ -80,7 +81,12 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
   // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
-  const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress });
+  // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
+  const englishTts = voice || englishSynth ? createEnglishTts({ dataDir, synthesize: englishSynth }) : null;
+  const hub = createGameHub({
+    startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress,
+    onEnglishAnswer: englishTts && ((word) => settings.ttsEnglish !== false && englishTts.prefetch(word))
+  });
   let port = config.port;
   let lastStateText = '';
   // Danh mục quà THẬT của TikTok (tên, giá, ảnh chính thức) lưu lại từ lần nối live gần nhất, để lúc chạy thử
@@ -128,7 +134,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     sockets.broadcast({ t: 'settings', settings: publicSettings() });
   };
   const publicSettings = () => ({
-    tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, legend: settings.legend, sound: settings.sound, volume: settings.volume,
+    tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false, legend: settings.legend, sound: settings.sound, volume: settings.volume,
     music: settings.music, musicVolume: settings.musicVolume,
     welcomeTextAbove: settings.welcomeTextAbove
   });
@@ -253,6 +259,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const tts = createTtsBridge({ dataDir });
   // giọng đọc chỉ bật ở server thật (main.js) — test không nạp model ~580 MB
   if (voice && tts.start()) console.log('[tts] đang nạp giọng đọc VieNeu…');
+  if (voice) englishTts.start(); // chưa có edge-tts thì tự cài nền (lần đầu ~30 giây)
   // giọng sẵn sàng → tạo sẵn câu follow dự phòng cho cả 3 giọng (khán giả mới tinh follow ngay vẫn có giọng tức thì)
   const warmFollow = voice ? setInterval(() => {
     if (!tts.status().ready) return;
@@ -272,6 +279,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       return res.end();
     }
     if (urlPath === '/api/tts') return tts.handle(req, res, port);
+    if (urlPath === '/api/tts-en') {
+      if (englishTts) return englishTts.handle(req, res, port);
+      return reject(503, 'Giọng tiếng Anh chỉ bật khi chạy npm start');
+    }
     if (urlPath === '/api/health') {
       res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', ...securityHeaders(port) });
       return res.end(JSON.stringify({ ok: true, game: hub.activeId(), live: live.status().state }));

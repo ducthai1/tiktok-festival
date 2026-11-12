@@ -75,7 +75,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     settings(msg) {
       const patch = {};
-      for (const key of ['tts', 'ttsWelcome', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
+      for (const key of ['tts', 'ttsWelcome', 'ttsEnglish', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
       if (isVoiceSetting(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice; // tên giọng hoặc "random"
       for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) patch[key] = Math.max(0, Math.min(1, msg[key]));
       if (Number.isFinite(msg.welcomeTextAbove)) {

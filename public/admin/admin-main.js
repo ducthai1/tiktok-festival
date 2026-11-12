@@ -91,6 +91,14 @@ async function run(message, okText) {
   return reply;
 }
 
+// (3 khai báo dưới từng bị xoá nhầm ở commit 9a982d4 → nút "Kết nối" không gửi lệnh, trang báo lỗi testPanel — giữ nguyên)
+const testPanel = setupTestPanel({ $, run, socket, toast });
+const demo = createDemoRunner({ socket, toast, setStatus: (text) => { $('demo-status').textContent = text; } });
+$('connect-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  run({ t: 'connect', provider: $('provider').value, username: $('username').value });
+});
+
 function renderGames(games) {
   $('game-buttons').replaceChildren(...games.map((g) => {
     const b = document.createElement('button');
@@ -232,6 +240,7 @@ function applySettings(s) {
   $('set-music').checked = s.music !== false;
   $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
+  $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
 }
@@ -502,6 +511,10 @@ function appendLog(e) {
     }
   }
 }
+// (vòng này từng bị xoá nhầm ở commit 9a982d4 → các công tắc màn hình bấm không ăn — giữ nguyên)
+for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'ttsEnglish', 'legend']) {
+  $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: e.target.checked }, 'Đã lưu'));
+}
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
@@ -514,6 +527,15 @@ $('tts-preview').addEventListener('click', async () => {
   const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}&voice=${encodeURIComponent(voice)}`).catch(() => null);
   if (!res?.ok) return toast(res ? await res.text() : 'Không kết nối được máy chủ', true);
   toast(`🔊 ${voice}`);
+  new Audio(URL.createObjectURL(await res.blob())).play().catch(() => toast('Trình duyệt chặn phát tiếng — bấm lại'));
+});
+// Nghe thử giọng tiếng Anh: mỗi lần bấm một từ + một giọng khác (Mỹ / Anh / Úc, nam / nữ)
+const EN_SAMPLES = ['pronunciation', 'vocabulary', 'beautiful', 'congratulations', 'opportunity', 'strawberry', 'environment', 'comfortable'];
+$('tts-en-preview').addEventListener('click', async () => {
+  const word = EN_SAMPLES[Math.floor(Math.random() * EN_SAMPLES.length)];
+  const res = await fetch(`/api/tts-en?text=${encodeURIComponent(word)}&voice=random`).catch(() => null);
+  if (!res?.ok) return toast(res ? await res.text() : 'Không kết nối được máy chủ', true);
+  toast(`🔊 ${word} · ${res.headers.get('X-Voice') || ''}`);
   new Audio(URL.createObjectURL(await res.blob())).play().catch(() => toast('Trình duyệt chặn phát tiếng — bấm lại'));
 });
 for (const key of ['volume', 'musicVolume']) {

@@ -55,6 +55,10 @@ Cùng một bộ máy (`src/games/quiz/quiz-game.js`) + một cảnh (`public/st
 - **Bù độ trễ live**: mỗi câu hiện đề 2 giây rồi mới đếm ngược (người xem thấy đề trễ 1–2 giây); hết giờ vẫn nhận thêm 1,5 giây bình luận đang tới.
 - Tab không được chọn thì đứng yên (đồng hồ không chạy). Nút điều khiển: câu tiếp / lật đáp án, gợi ý, tạm dừng, tiếp tục.
 - Bật "Đọc cảm ơn quà / follow" để giọng đọc đọc câu hỏi và đáp án.
+- **Đọc đáp án tiếng Anh giọng bản xứ** (tab Tiếng Anh + Wordle, mặc định BẬT, công tắc "🇬🇧 Đọc đáp án tiếng Anh" ở mục 5): lật đáp án là đọc từ
+  đó một lần thường + một lần chậm, rồi mới "Chúc mừng …" tiếng Việt. 8 giọng neural Microsoft (Mỹ / Anh / Úc, nam ↔ nữ luân phiên, không lặp
+  3 từ liền). Máy chủ tạo sẵn giọng ngay lúc ra đề (đáp án không gửi ra màn hình trước khi lật). Cần mạng; lỗi / mất mạng thì im lặng, game
+  chạy bình thường. Cài: tự động lần đầu `npm start` (~30 giây, chạy nền) hoặc `npm run setup-tts-en` — xem `src/tts/english-tts.js`.
 
 ## Âm thanh
 
@@ -157,6 +161,7 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 | `EULER_API_KEY` | trống | Khoá Euler Stream nếu bị giới hạn lượt kết nối |
 | `TIKFINITY_WS_URL` | `ws://127.0.0.1:21213/` | Chỉ nhận địa chỉ trên chính máy này |
 | `START_GAME` | `bar` | `bar` / `swim` / `temple` |
+| `TTS_EN_ENV` | `~/.local/share/tiktok-live-games/tts-en-env` | Môi trường Python của giọng đọc tiếng Anh (edge-tts) |
 
 ## Quà TikTok thật → hiệu ứng
 
@@ -207,7 +212,7 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 - **Lọc lời khấn bẩn có tính dấu**: gập dấu thì "lớn", "các", "buổi" bị trùng từ bậy, nên ở đây so trên chữ còn dấu. Link và số điện thoại bị bỏ.
 - **Combo quà tính phần tăng thêm**: hiệu ứng hiện ngay, tổng kim cương không đếm trùng, kể cả khi TikFinity không gửi `repeatEnd`.
 - **Không có người xem giả tự chạy, không tự kết nối tài khoản của người khác.** Bản chùa tham khảo tự giả lập Phật tử và tự nối tới kênh của tác giả.
-- **Giọng đọc dùng `speechSynthesis` của trình duyệt** (mặc định tắt), không chạy chương trình Python ngoài.
+- **Giọng đọc chạy trên chính máy** (VieNeu tiếng Việt; edge-tts cho đáp án tiếng Anh) trong môi trường Python riêng, gói ghim đúng phiên bản; server chỉ nghe 127.0.0.1.
 - **Không có tự cập nhật.** SwimLive tải zip rồi chạy PowerShell ẩn mà không kiểm chữ ký.
 - **Thư viện ghim phiên bản cũ ít nhất 2 tuần**, `ignore-scripts=true`, `npm audit` = 0 lỗ hổng. `follow-redirects` được ép lên bản đã vá.
 - Vòng vẽ hình chịu được lỗi: một khung hình lỗi không làm đứng cả buổi live.
@@ -233,6 +238,7 @@ Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` 
 | Phòng đông có làm server nghẽn không | `[health] độ trễ xử lý … p99` (≥ 250ms ghi WARN "SERVER ĐANG NGHẼN"), `xử lý sự kiện … mất …ms (chậm)` |
 | Lưu lượng từng phút | `[live] 60 giây qua: chat … · like … · member … · roomUser …` |
 | Người vận hành đã bấm gì | `[admin] lệnh connect / disconnect / switch …` |
+| Giọng đọc tiếng Anh có chạy không | `[tts-en] giọng tiếng Anh hoạt động`, `không đọc được "…": … — cách sửa`, `cài … thất bại` |
 
 Kết nối tự hồi phục: live **tạm dừng** (mạng máy phát chập chờn, thoát app) → thử lại mỗi 4 giây (3 phút đầu); live **kết thúc** → chờ live mới mỗi 20 giây rồi 2 phút; Euler giới hạn / chặn → giãn 30 s → 5 phút; một lần kết nối treo quá 25 giây thì bỏ, thử lại. Trang điều khiển hiện **băng đỏ nhấp nháy + tiếng bíp** khi mất live quá 20 giây.
 

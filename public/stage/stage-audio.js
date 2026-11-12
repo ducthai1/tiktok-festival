@@ -21,7 +21,7 @@ export function createStageAudio() {
   // hạ nhỏ tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt: nhạc nền + tiếng hiệu ứng, mỗi đường một nút
   const ducks = { music: { node: null, level: 1, until: 0 }, sfx: { node: null, level: 1, until: 0 } };
   let theme = '';
-  const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền' };
+  const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền', ttsEnglish: true };
 
   function audio() {
     if (!ctx) {
@@ -151,6 +151,11 @@ export function createStageAudio() {
       }
       speech.say(text, { onStart, fallback, waitMs });
     },
+    /** Đáp án tiếng Anh giọng bản xứ — bật/tắt riêng ("Đọc đáp án tiếng Anh" ở trang điều khiển). */
+    speakEnglish(word, { slow = false } = {}) {
+      if (!opts.ttsEnglish || !opts.sound || !word || !isCleanForDisplay(word)) return;
+      speech.sayEnglish(word, { slow });
+    },
     configure(settings) {
       Object.assign(opts, {
         sound: settings.sound !== false,
@@ -159,9 +164,10 @@ export function createStageAudio() {
         musicVolume: Number.isFinite(settings.musicVolume) ? settings.musicVolume : 0.35,
         tts: settings.tts === true,
         ttsWelcome: settings.ttsWelcome === true,
-        ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'random'
+        ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'random',
+        ttsEnglish: settings.ttsEnglish !== false
       });
-      if (!opts.tts && !opts.ttsWelcome) speech.clear();
+      if (!opts.tts && !opts.ttsWelcome && !opts.ttsEnglish) speech.clear();
       applyLevels();
     },
     // Đo mức âm thật đang phát ra (0..1) — để kiểm tra "có tiếng" bằng máy, không phải đoán.

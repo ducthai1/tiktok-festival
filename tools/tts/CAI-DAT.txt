@@ -1,3 +1,9 @@
+GIỌNG ĐỌC ĐÁP ÁN TIẾNG ANH (edge-tts) — tự cài, không phải làm gì
+
+npm start lần đầu tự cài (chạy nền ~30 giây, log "[tts-en] cài xong edge-tts …"). Cài tay hoặc kiểm tra mạng: npm run setup-tts-en
+(in kết quả đọc thử cả 8 giọng). Môi trường riêng: ~/.local/share/tiktok-live-games/tts-en-env, gói ghim ở requirements-en.txt.
+Linux không có uv và báo thiếu venv: sudo apt install python3-venv (hoặc cài uv), rồi npm run setup-tts-en.
+
 GIỌNG ĐỌC TIẾNG VIỆT (VieNeu-TTS) — cài một lần
 
 Vì sao cần: OBS trên Linux không có giọng tiếng Việt nào, nên server game tự đọc bằng VieNeu-TTS (Apache-2.0, chạy ngay

@@ -58,12 +58,14 @@ export function scoreWordle(guess, answer) {
  * kind: 'text' (gõ đáp án) | 'abcd' (gõ A/B/C/D) | 'wordle' (gõ từ 5 chữ).
  * deck.next() → câu hỏi (xem quiz-bank.js). questionMs: thời gian mỗi câu (abcd tính theo độ khó).
  * speakLine(q): câu đọc lúc ra đề; revealAnswerAloud: đọc đáp án lúc lật (tắt cho từ tiếng Anh).
+ * pronounce(q): từ tiếng Anh màn hình đọc bằng giọng bản xứ lúc lật đáp án; onPronounce(từ): báo lúc ra đề để máy chủ tạo
+ * sẵn giọng đọc (từ không gửi ra màn hình trước khi lật — không lộ đáp án).
  */
 export function createQuizGame({
   id, title, kind = 'text', deck, questionMs = 25000, revealMs = 6500, firstLetter = true, autoHints = true,
   speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random,
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
-  onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null
+  onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -187,6 +189,13 @@ export function createQuizGame({
     phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
     const intro = diamond ? 'Câu Kim Cương, NHÂN BA ĐIỂM! ' : golden ? 'Câu Vàng, nhân đôi điểm! ' : '';
     fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, speech: intro + (speakLine(q) || '') });
+    if (pronounce && onPronounce) {
+      try {
+        onPronounce(pronounce(q));
+      } catch (error) {
+        console.warn(`[quiz] tạo sẵn giọng đọc đáp án lỗi: ${error.message}`); // giọng đọc hỏng không được làm hỏng câu hỏi
+      }
+    }
   }
 
   function finishLightningQuestion(fx) {
@@ -229,7 +238,9 @@ export function createQuizGame({
     else if (revealAnswerAloud) speech = `Đáp án là ${q.answer}.`;
     if (top) speech += ` ${winners.length > 1 ? `${winners.length} bạn trả lời đúng, nhanh nhất là` : 'Chúc mừng'} ${top.nickname}!`;
     else speech += ' Chưa ai trả lời đúng.';
-    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 5), correctCount: winners.length, speech });
+    // đáp án tiếng Anh: đọc giọng bản xứ (thường rồi chậm; vòng chớp nhoáng lật nhanh nên chỉ đọc một lần)
+    const english = pronounce ? { answerEn: pronounce(q), answerEnSlow: !lightningIndex || lightningIndex === LIGHTNING_QUESTIONS } : {};
+    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 5), correctCount: winners.length, speech, ...english });
   }
 
   /** Tim / share nạp thanh năng lượng; qua mốc thì xếp câu vàng / vòng chớp nhoáng. */
