@@ -1,0 +1,30 @@
+# Tiếng Anh · Đời sống số, mạng xã hội
+FILTER | Bộ lọc (hiệu ứng ảnh) tiếng Anh là gì? | 1
+REPOST | Đăng lại (bài người khác) tiếng Anh là gì? | 1 | RESHARE
+CAPTION | Chú thích ảnh (dòng caption) tiếng Anh là gì? | 1
+NEWSFEED | Bảng tin (trang chủ mạng xã hội) tiếng Anh là gì? | 2 | NEWS FEED, FEED
+WEARABLE | Thiết bị đeo được (đồng hồ thông minh…) tiếng Anh là gì? | 2
+EARPHONE | Tai nghe nhét tai tiếng Anh là gì? | 1 | EARPHONES, EARBUD
+CURSOR | Con trỏ chuột tiếng Anh là gì? | 1
+SYNC | Đồng bộ (dữ liệu) tiếng Anh là gì? | 2 | SYNCHRONIZE
+UNINSTALL | Gỡ cài đặt tiếng Anh là gì? | 1
+DIGITAL FOOTPRINT | Dấu vết số (trên mạng) tiếng Anh là gì? | 3
+CYBERBULLYING | Bắt nạt trên mạng tiếng Anh là gì? | 2
+E-COMMERCE | Thương mại điện tử tiếng Anh là gì? | 2 | ECOMMERCE
+DIGITAL WALLET | Ví điện tử tiếng Anh là gì? | 2 | E-WALLET
+QR CODE | Mã QR tiếng Anh là gì? | 1
+FACIAL RECOGNITION | Nhận diện khuôn mặt tiếng Anh là gì? | 2 | FACE RECOGNITION
+FINGERPRINT | Dấu vân tay tiếng Anh là gì? | 1
+CONTENT CREATOR | Người sáng tạo nội dung tiếng Anh là gì? | 1 | CREATOR
+TRENDING | Đang thịnh hành (đang hot) tiếng Anh là gì? | 1
+CLICKBAIT | Tiêu đề câu view tiếng Anh là gì? | 2
+TROLL | Kẻ chọc phá trên mạng tiếng Anh là gì? | 2
+GEOTAG | Gắn thẻ vị trí (vào ảnh) tiếng Anh là gì? | 2
+HOTSPOT | Điểm phát wifi (từ điện thoại) tiếng Anh là gì? | 2 | WIFI HOTSPOT
+PAIRING | Ghép đôi Bluetooth tiếng Anh là gì? | 2 | PAIR
+RECHARGE | Sạc lại pin tiếng Anh là gì? | 1
+PORTRAIT MODE | Chế độ chụp chân dung (xóa phông) tiếng Anh là gì? | 1
+LANDSCAPE MODE | Chế độ xoay ngang màn hình tiếng Anh là gì? | 1
+SWIPE | Vuốt (màn hình cảm ứng) tiếng Anh là gì? | 1
+ZOOM | Phóng to thu nhỏ tiếng Anh là gì? | 1 | ZOOM IN
+WIRED | Có dây (kết nối bằng dây) tiếng Anh là gì? | 2

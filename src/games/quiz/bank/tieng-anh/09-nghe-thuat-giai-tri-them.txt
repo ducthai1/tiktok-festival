@@ -1,0 +1,35 @@
+# Tiếng Anh · Nghệ thuật, giải trí
+FRESCO | Tranh vẽ trên tường vữa ướt tiếng Anh là gì? | 3
+ABSTRACT | Trừu tượng (phong cách hội họa) tiếng Anh là gì? | 2
+MURAL | Bích họa (tranh tường) tiếng Anh là gì? | 2
+COMPOSITION | Bố cục (tác phẩm) tiếng Anh là gì? | 2
+IMPROVISE | Ứng tác, ngẫu hứng tiếng Anh là gì? | 2
+INSTRUMENTAL | Bản nhạc không lời tiếng Anh là gì? | 2
+MONOLOGUE | Độc thoại (trên sân khấu) tiếng Anh là gì? | 2
+REHEARSE | Tập dượt (trước buổi diễn) tiếng Anh là gì? | 2 | REHEARSAL
+PLAYWRIGHT | Nhà viết kịch tiếng Anh là gì? | 3
+NARRATIVE | Lối kể chuyện (câu chuyện) tiếng Anh là gì? | 2
+FICTION | Truyện hư cấu tiếng Anh là gì? | 1
+ANTHOLOGY | Tuyển tập (văn, thơ) tiếng Anh là gì? | 3
+CARICATURE | Tranh biếm họa tiếng Anh là gì? | 3
+TYPOGRAPHY | Nghệ thuật sắp chữ (thiết kế chữ) tiếng Anh là gì? | 3
+PAINTING | Bức tranh vẽ tiếng Anh là gì? | 1
+BRUSHSTROKE | Nét cọ tiếng Anh là gì? | 2
+PIGMENT | Chất màu (bột màu) tiếng Anh là gì? | 2
+TEXTURE | Chất liệu bề mặt (thô, mịn) tiếng Anh là gì? | 2
+SYMMETRY | Sự đối xứng tiếng Anh là gì? | 2
+SILHOUETTE | Hình bóng (bóng đen trên nền sáng) tiếng Anh là gì? | 2
+MONOCHROME | Đơn sắc (một màu) tiếng Anh là gì? | 2
+VIVID | Sống động, rực rỡ tiếng Anh là gì? | 2
+THEATRICAL | Mang tính sân khấu (kịch tính) tiếng Anh là gì? | 2
+RECITAL | Buổi độc tấu (biểu diễn đơn) tiếng Anh là gì? | 2
+OVERTURE | Khúc dạo đầu (nhạc mở màn) tiếng Anh là gì? | 3
+VIRTUOSO | Nghệ sĩ bậc thầy (điêu luyện) tiếng Anh là gì? | 3
+REPERTOIRE | Các tiết mục sở trường tiếng Anh là gì? | 3
+ACOUSTIC GUITAR | Đàn guitar thùng tiếng Anh là gì? | 1
+PERCUSSION | Bộ gõ (nhạc cụ) tiếng Anh là gì? | 2
+BRASS | Bộ kèn đồng tiếng Anh là gì? | 2
+WOODWIND | Bộ kèn gỗ (nhạc cụ hơi bằng gỗ) tiếng Anh là gì? | 2
+STRINGS | Bộ dây (nhạc cụ dây) tiếng Anh là gì? | 2
+TROMBONE | Kèn trôm-bôn (kèn có cần trượt) tiếng Anh là gì? | 3
+HARPSICHORD | Đàn clavecin cổ (giống piano) tiếng Anh là gì? | 3

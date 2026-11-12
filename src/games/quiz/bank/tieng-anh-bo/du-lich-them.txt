@@ -1,0 +1,70 @@
+# Bộ đề · Du lịch
+JET SKI | Mô tô nước tiếng Anh là gì? | 2
+SNORKELING | Lặn với ống thở tiếng Anh là gì? | 2 | SNORKELLING, SNORKEL
+SUNBATHE | Tắm nắng tiếng Anh là gì? | 2 | SUNBATHING
+SUNBURN | Cháy nắng tiếng Anh là gì? | 2
+TRAVEL AGENCY | Công ty du lịch (đại lý) tiếng Anh là gì? | 2 | TRAVEL AGENT
+GUIDEBOOK | Sách hướng dẫn du lịch tiếng Anh là gì? | 2
+PHRASEBOOK | Sổ tay hội thoại tiếng Anh là gì? | 3
+RICE TERRACES | Ruộng bậc thang tiếng Anh là gì? | 2 | RICE TERRACE, TERRACED FIELDS
+FLOATING MARKET | Chợ nổi tiếng Anh là gì? | 2
+FOOD TOUR | Tour ẩm thực tiếng Anh là gì? | 2
+SINGLE ROOM | Phòng đơn tiếng Anh là gì? | 1
+DO NOT DISTURB | Xin đừng làm phiền tiếng Anh là gì? | 2
+FULLY BOOKED | Hết phòng tiếng Anh là gì? | 2 | NO VACANCY
+BELLBOY | Nhân viên xách hành lý khách sạn tiếng Anh là gì? | 3 | BELLHOP, PORTER
+VALET | Nhân viên đỗ xe hộ tiếng Anh là gì? | 3 | VALET PARKING
+TOURIST TRAP | Nơi chặt chém khách du lịch tiếng Anh là gì? | 3
+RIP-OFF | Giá cắt cổ (bị chặt chém) tiếng Anh là gì? | 3 | RIPOFF, OVERCHARGE
+HAGGLE | Mặc cả tiếng Anh là gì? | 2 | BARGAIN
+PICKPOCKET | Kẻ móc túi tiếng Anh là gì? | 2
+DIRECT FLIGHT | Chuyến bay thẳng tiếng Anh là gì? | 1 | NONSTOP FLIGHT
+STOPOVER | Điểm dừng chân giữa chặng tiếng Anh là gì? | 3
+AIRSICK | Say máy bay tiếng Anh là gì? | 2 | AIRSICKNESS
+CARSICK | Say xe tiếng Anh là gì? | 1 | CARSICKNESS, MOTION SICKNESS
+SEASICK | Say sóng tiếng Anh là gì? | 2 | SEASICKNESS
+SLEEPER BUS | Xe khách giường nằm tiếng Anh là gì? | 2
+SLEEPER TRAIN | Tàu giường nằm tiếng Anh là gì? | 2 | NIGHT TRAIN
+TICKET OFFICE | Phòng bán vé tiếng Anh là gì? | 1
+CARRIAGE | Toa tàu tiếng Anh là gì? | 2 | WAGON, COACH
+RIDE-HAILING | Gọi xe công nghệ tiếng Anh là gì? | 3 | RIDESHARE, RIDE SHARING
+CAMPSITE | Khu cắm trại tiếng Anh là gì? | 2 | CAMPGROUND
+SUMMIT | Đỉnh núi (chinh phục) tiếng Anh là gì? | 2
+GUEST HOUSE | Nhà nghỉ tiếng Anh là gì? | 2 | GUESTHOUSE
+TOURIST VISA | Thị thực du lịch tiếng Anh là gì? | 2
+TRAVEL BUDDY | Bạn đồng hành khi du lịch tiếng Anh là gì? | 2 | TRAVEL COMPANION
+SOLO TRAVEL | Du lịch một mình tiếng Anh là gì? | 2 | SOLO TRIP
+STAYCATION | Kỳ nghỉ tại nhà (gần nhà) tiếng Anh là gì? | 3
+BUCKET LIST | Danh sách điều muốn làm trong đời tiếng Anh là gì? | 2
+TRAVEL ADAPTER | Ổ chuyển đổi điện khi đi nước ngoài tiếng Anh là gì? | 2 | PLUG ADAPTER
+CURRENCY EXCHANGE | Đổi tiền ngoại tệ tiếng Anh là gì? | 2 | MONEY EXCHANGE
+CHECKPOINT | Trạm kiểm soát tiếng Anh là gì? | 2
+TOLL | Trạm thu phí (phí cầu đường) tiếng Anh là gì? | 2 | TOLL BOOTH
+SPEED LIMIT | Giới hạn tốc độ tiếng Anh là gì? | 1
+FLYOVER | Cầu vượt tiếng Anh là gì? | 2 | OVERPASS
+GPS | Định vị toàn cầu (chỉ đường) tiếng Anh là gì? | 1 | SATNAV
+LEGROOM | Chỗ để chân (trên máy bay) tiếng Anh là gì? | 3
+HAND LUGGAGE | Hành lý xách tay tiếng Anh là gì? | 1 | CABIN BAGGAGE
+LUGGAGE TAG | Thẻ hành lý tiếng Anh là gì? | 2 | BAG TAG
+CONVEYOR BELT | Băng chuyền hành lý tiếng Anh là gì? | 2 | CAROUSEL
+JETWAY | Ống lồng lên máy bay tiếng Anh là gì? | 3 | JET BRIDGE, AIR BRIDGE
+LOUNGE | Phòng chờ sân bay tiếng Anh là gì? | 2 | AIRPORT LOUNGE
+FREQUENT FLYER | Khách bay thường xuyên tiếng Anh là gì? | 3
+REFUNDABLE | Được hoàn tiền tiếng Anh là gì? | 2
+CULTURE SHOCK | Sốc văn hóa tiếng Anh là gì? | 2
+LOCAL CUISINE | Ẩm thực địa phương tiếng Anh là gì? | 2 | LOCAL FOOD
+STREET VENDOR | Người bán hàng rong tiếng Anh là gì? | 2 | HAWKER
+BAMBOO BOAT | Thuyền thúng tiếng Anh là gì? | 2 | BASKET BOAT
+SAND DUNES | Đồi cát tiếng Anh là gì? | 2 | SAND DUNE
+LIMESTONE | Núi đá vôi tiếng Anh là gì? | 3 | KARST
+NIGHTLIFE | Cuộc sống về đêm tiếng Anh là gì? | 2
+ROOFTOP BAR | Quán bar sân thượng tiếng Anh là gì? | 2 | ROOFTOP
+TOUR PACKAGE | Gói tour trọn gói tiếng Anh là gì? | 2 | PACKAGE TOUR
+FREE TIME | Thời gian tự do tiếng Anh là gì? | 1
+MEETING POINT | Điểm tập trung tiếng Anh là gì? | 2
+ENTRANCE FEE | Phí vào cửa tiếng Anh là gì? | 1 | ADMISSION FEE
+OPENING HOURS | Giờ mở cửa tiếng Anh là gì? | 1
+GUIDED TOUR | Chuyến tham quan có hướng dẫn tiếng Anh là gì? | 2
+AUDIO GUIDE | Thuyết minh bằng máy nghe tiếng Anh là gì? | 2
+TRAVEL ITINERARY | Lịch trình chuyến đi chi tiết tiếng Anh là gì? | 3
+BACKPACKING | Du lịch bụi tiếng Anh là gì? | 2

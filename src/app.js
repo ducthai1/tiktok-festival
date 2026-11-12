@@ -13,6 +13,7 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createFollowerStore } from './live/follower-store.js';
+import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
@@ -77,7 +78,9 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
   const settings = loadSettings(dataDir);
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
-  const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });
+  // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
+  const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
+  const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress });
   let port = config.port;
   let lastStateText = '';
   // Danh mục quà THẬT của TikTok (tên, giá, ảnh chính thức) lưu lại từ lần nối live gần nhất, để lúc chạy thử
@@ -312,6 +315,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       clearInterval(timer);
       clearInterval(warmFollow);
       followers.flush();
+      englishProgress.flush();
       tts.stop();
       await live.disconnect();
       sockets.close();

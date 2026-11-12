@@ -1,0 +1,60 @@
+# Tiếng Anh · Vũ trụ, khoa học
+QUASAR | Chuẩn tinh (thiên văn) tiếng Anh là gì? | 3
+PULSAR | Sao xung (sao neutron quay nhanh) tiếng Anh là gì? | 3
+PHOTON | Hạt ánh sáng (quang tử) tiếng Anh là gì? | 3
+NEUTRON | Hạt nơ-tron (không mang điện) tiếng Anh là gì? | 2
+PROTON | Hạt mang điện dương trong hạt nhân tiếng Anh là gì? | 2
+ELECTRON | Hạt mang điện âm quanh hạt nhân tiếng Anh là gì? | 2
+ELEMENT | Nguyên tố hóa học tiếng Anh là gì? | 2 | CHEMICAL ELEMENT
+COMPOUND | Hợp chất (hóa học) tiếng Anh là gì? | 2
+OSMOSIS | Hiện tượng thẩm thấu tiếng Anh là gì? | 3
+MITOSIS | Nguyên phân (phân bào) tiếng Anh là gì? | 3
+CHROMOSOME | Nhiễm sắc thể tiếng Anh là gì? | 3
+FOSSIL | Hóa thạch tiếng Anh là gì? | 1
+SPECTRUM | Quang phổ tiếng Anh là gì? | 2
+MAGNETIC | Có từ tính (thuộc nam châm) tiếng Anh là gì? | 2
+THERMAL | Thuộc về nhiệt tiếng Anh là gì? | 2
+COMBUSTION | Sự đốt cháy (phản ứng cháy) tiếng Anh là gì? | 2
+CRYSTALLIZE | Kết tinh tiếng Anh là gì? | 3 | CRYSTALLISE
+CHLOROPHYLL | Chất diệp lục tiếng Anh là gì? | 2
+HORMONE | Nội tiết tố tiếng Anh là gì? | 2
+ENZYME | Enzim (chất xúc tác sinh học) tiếng Anh là gì? | 2
+GRAVITATIONAL | Thuộc lực hấp dẫn tiếng Anh là gì? | 3
+WAVELENGTH | Bước sóng tiếng Anh là gì? | 3
+ASTEROID BELT | Vành đai tiểu hành tinh tiếng Anh là gì? | 3
+DARK MATTER | Vật chất tối tiếng Anh là gì? | 3
+WORMHOLE | Lỗ sâu (đường hầm vũ trụ) tiếng Anh là gì? | 3
+SPACE STATION | Trạm vũ trụ tiếng Anh là gì? | 2
+ROCKET | Tên lửa (đẩy lên vũ trụ) tiếng Anh là gì? | 1
+ZERO GRAVITY | Trạng thái không trọng lực tiếng Anh là gì? | 2 | WEIGHTLESSNESS
+INFRARED | Tia hồng ngoại tiếng Anh là gì? | 3
+ULTRAVIOLET | Tia cực tím tiếng Anh là gì? | 2 | UV
+FRICTION | Lực ma sát tiếng Anh là gì? | 2
+VELOCITY | Vận tốc tiếng Anh là gì? | 2
+ACCELERATION | Gia tốc tiếng Anh là gì? | 2
+MOMENTUM | Động lượng tiếng Anh là gì? | 3
+DENSITY | Khối lượng riêng (mật độ) tiếng Anh là gì? | 2
+PRESSURE | Áp suất tiếng Anh là gì? | 2
+BUOYANCY | Lực đẩy nổi tiếng Anh là gì? | 3
+REFRACTION | Hiện tượng khúc xạ tiếng Anh là gì? | 3
+DIFFRACTION | Hiện tượng nhiễu xạ tiếng Anh là gì? | 3
+INSULATOR | Chất cách điện tiếng Anh là gì? | 2
+AMPERE | Đơn vị am-pe (cường độ dòng điện) tiếng Anh là gì? | 2 | AMP
+NUCLEUS | Hạt nhân (nhân tế bào) tiếng Anh là gì? | 3
+GENE | Gen di truyền tiếng Anh là gì? | 2
+DNA | Phân tử ADN tiếng Anh là gì? | 2
+CLONE | Bản sao vô tính (nhân bản) tiếng Anh là gì? | 2
+STEM CELL | Tế bào gốc tiếng Anh là gì? | 2
+MICROORGANISM | Vi sinh vật tiếng Anh là gì? | 2 | MICROBE
+PREDATOR | Động vật săn mồi tiếng Anh là gì? | 2
+PREY | Con mồi tiếng Anh là gì? | 2
+CAMOUFLAGE | Ngụy trang tiếng Anh là gì? | 2
+POLLINATION | Sự thụ phấn tiếng Anh là gì? | 2
+GERMINATION | Sự nảy mầm tiếng Anh là gì? | 2
+PHOTOTROPISM | Tính hướng sáng (của cây) tiếng Anh là gì? | 3
+CARNIVORE | Động vật ăn thịt tiếng Anh là gì? | 2
+HERBIVORE | Động vật ăn cỏ tiếng Anh là gì? | 2
+OMNIVORE | Động vật ăn tạp tiếng Anh là gì? | 2
+INSTINCT | Bản năng tiếng Anh là gì? | 2
+HABITAT LOSS | Mất môi trường sống tiếng Anh là gì? | 2
+EXTINCTION | Sự tuyệt chủng tiếng Anh là gì? | 2

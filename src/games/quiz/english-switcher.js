@@ -3,7 +3,7 @@
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
 import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
 import { SAMPLE_GIFTS } from '../../../public/shared/gift-tiers.js';
-import { createShuffleBag, createTieredDeck } from './quiz-bank.js';
+import { foldText } from '../text-match.js';
 
 const MIN_POOL = 15;
 
@@ -17,43 +17,56 @@ export function filterByLevel(items, level) {
 }
 
 /** general: từ theo chủ đề; basic: 176 từ cơ bản (luôn để cuối); sets: { toeic: [...], ielts: [...], … } */
-export function createEnglishSwitcher({ general, basic, sets, random = Math.random }) {
+/**
+ * general: từ theo chủ đề; basic: 176 từ cơ bản (luôn để cuối); sets: { toeic: [...], ielts: [...], … }
+ * progress: { load(): string[], save(list) } — nhớ từ đã hỏi qua các lần khởi động lại (progress-store.js).
+ */
+export function createEnglishSwitcher({ general, basic, sets, random = Math.random, progress = null }) {
   let set = 'general';
   let level = 'normal';
   let setLeft = 0;
   let levelLeft = 0;
   let setBy = null;
   let levelBy = null;
-  let deck = null;
   let dirty = true;
   let deckQueue = [];
   // chưa có danh mục quà thật của phòng thì tạm gán theo quà mẫu; có danh mục thật thì gán lại từ đầu một lần rồi giữ cố định
   let assignments = assignEnglishGifts(SAMPLE_GIFTS);
   let fromCatalog = false;
 
-  // ── Persistent bags: mỗi set ID giữ riêng ShuffleBag của mình.
-  // Khi user quay lại bộ cũ, tiếp tục câu còn dở thay vì shuffle lại từ đầu.
-  // Key của general bag: 'general:<level>' (vì dễ/khó dùng bộ khác nhau).
-  const persistentBags = new Map();
+  // ── Xoay vòng KHÔNG LẶP trên toàn bộ từ: sổ "đã hỏi" dùng CHUNG mọi bộ, theo từ tiếng Anh (đáp án).
+  // Đang ở Tổng hợp câu 100 → đổi sang TOEIC (chỉ ra từ chưa hỏi ở bất kỳ đâu) → quay về Tổng hợp đi tiếp câu 101
+  // (từ chưa hỏi), không về câu 1. Đổi Dễ/Khó cũng không hỏi lại từ đã hỏi. Một bộ hỏi hết mọi từ thì RIÊNG bộ đó
+  // bắt đầu vòng mới. Sổ lưu ra đĩa nên khởi động lại server vẫn đi tiếp.
+  const keyOf = (q) => foldText(q.answer).replace(/ /g, '');
+  const seen = new Set(progress?.load?.() || []);
 
-  function bagKey() {
-    return set === 'general' ? `general:${level}` : `set:${set}:${level}`;
+  function tiers() {
+    if (set !== 'general') return [filterByLevel(sets[set], level)];
+    // khó: chỉ từ bậc 3 theo chủ đề; dễ / vừa: từ theo chủ đề trước, 176 từ cơ bản cuối danh sách
+    return level === 'hard' ? [filterByLevel(general, 'hard')] : [filterByLevel(general, level), basic].filter((t) => t.length);
+  }
+
+  function pick() {
+    const list = tiers();
+    for (let round = 0; round < 2; round += 1) {
+      for (const tier of list) {
+        const fresh = tier.filter((q) => !seen.has(keyOf(q)));
+        if (!fresh.length) continue;
+        const q = fresh[Math.floor(random() * fresh.length)];
+        seen.add(keyOf(q));
+        progress?.save?.([...seen]);
+        return q;
+      }
+      // cả bộ đã hỏi hết → vòng mới cho RIÊNG bộ này (bộ khác giữ nguyên tiến độ)
+      const label = set === 'general' ? 'Tổng hợp' : ENGLISH_TARGETS[set]?.label || set;
+      console.log(`[english] bộ ${label} (${level}) đã hỏi hết ${list.reduce((n, t) => n + t.length, 0)} từ → bắt đầu vòng mới`);
+      for (const tier of list) for (const q of tier) seen.delete(keyOf(q));
+    }
+    return list.flat()[0];
   }
 
   function build() {
-    const key = bagKey();
-    if (!persistentBags.has(key)) {
-      let newBag;
-      if (set === 'general') {
-        newBag = level === 'hard'
-          ? createShuffleBag(filterByLevel(general, 'hard'), random)
-          : createTieredDeck([filterByLevel(general, level), basic].filter((t) => t.length), random);
-      } else {
-        newBag = createShuffleBag(filterByLevel(sets[set], level), random);
-      }
-      persistentBags.set(key, newBag);
-    }
-    deck = persistentBags.get(key);
     dirty = false;
   }
 
@@ -116,7 +129,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     deck: {
       next() {
         if (dirty) build();
-        const q = deck.next();
+        const q = pick();
         // mỗi câu ra tiêu một lượt; hết lượt thì từ câu sau quay về mặc định
         if (set !== 'general') {
           setLeft -= 1;

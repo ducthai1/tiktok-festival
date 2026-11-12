@@ -1,0 +1,65 @@
+# Bộ đề · IELTS
+ALLOCATE | Phân bổ (nguồn lực) tiếng Anh là gì? | 2
+ANALOGY | Phép so sánh tương đồng tiếng Anh là gì? | 3
+ARBITRARY | Tùy tiện tiếng Anh là gì? | 3
+ASSUMPTION | Giả định tiếng Anh là gì? | 2
+ATTRIBUTE | Quy cho (cho là do) tiếng Anh là gì? | 3
+COMPLEMENT | Bổ sung cho nhau tiếng Anh là gì? | 3
+CONCEPT | Khái niệm tiếng Anh là gì? | 1 | NOTION
+CONSENSUS | Sự đồng thuận tiếng Anh là gì? | 3
+CONSTRAINT | Sự ràng buộc (hạn chế) tiếng Anh là gì? | 3 | LIMITATION
+CONTEXT | Bối cảnh tiếng Anh là gì? | 2
+CONVENTIONAL | Thông thường (truyền thống) tiếng Anh là gì? | 2 | TRADITIONAL
+CRITERIA | Các tiêu chí tiếng Anh là gì? | 2 | CRITERION
+DISCRIMINATION | Sự phân biệt đối xử tiếng Anh là gì? | 2
+DIVERSE | Đa dạng (tính từ) tiếng Anh là gì? | 2 | VARIED
+DURABLE | Bền tiếng Anh là gì? | 2
+ECONOMIC | Thuộc kinh tế tiếng Anh là gì? | 2
+ENSURE | Đảm bảo tiếng Anh là gì? | 1 | GUARANTEE
+ESTABLISH | Thành lập tiếng Anh là gì? | 2 | FOUND
+EVIDENT | Hiển nhiên tiếng Anh là gì? | 3 | OBVIOUS
+EXCESSIVE | Quá mức tiếng Anh là gì? | 2
+FLUENT | Lưu loát tiếng Anh là gì? | 1
+IDENTICAL | Giống hệt nhau tiếng Anh là gì? | 2
+IMPLICATION | Hàm ý (hệ quả) tiếng Anh là gì? | 3
+INCIDENCE | Tỷ lệ xảy ra tiếng Anh là gì? | 3
+INTERVENTION | Sự can thiệp tiếng Anh là gì? | 3
+LIKELIHOOD | Khả năng xảy ra tiếng Anh là gì? | 3 | PROBABILITY
+NEGATE | Phủ định (vô hiệu hóa) tiếng Anh là gì? | 3
+POTENTIAL | Tiềm năng tiếng Anh là gì? | 1
+PRIORITY | Sự ưu tiên tiếng Anh là gì? | 1
+RELEVANT | Liên quan, thích đáng tiếng Anh là gì? | 2
+RETAIN | Giữ lại tiếng Anh là gì? | 3 | KEEP
+SCENARIO | Kịch bản (tình huống giả định) tiếng Anh là gì? | 2
+STABLE | Ổn định tiếng Anh là gì? | 1
+TENDENCY | Xu hướng (thiên hướng) tiếng Anh là gì? | 2
+THEORY | Lý thuyết tiếng Anh là gì? | 1
+TRANSITION | Sự chuyển tiếp tiếng Anh là gì? | 2
+VALID | Hợp lệ (có giá trị) tiếng Anh là gì? | 2
+WIDESPREAD | Lan rộng, phổ biến tiếng Anh là gì? | 2
+ADVOCACY | Sự vận động ủng hộ tiếng Anh là gì? | 3
+AFFLUENT | Giàu có, sung túc tiếng Anh là gì? | 3 | WEALTHY
+AUTONOMY | Quyền tự chủ tiếng Anh là gì? | 3
+BUREAUCRACY | Bộ máy quan liêu tiếng Anh là gì? | 3
+COMPULSORY | Bắt buộc tiếng Anh là gì? | 2 | OBLIGATORY
+CONSCIOUS | Có ý thức tiếng Anh là gì? | 2 | AWARE
+CONTAMINATE | Làm ô nhiễm tiếng Anh là gì? | 3 | POLLUTE
+CREDIBLE | Đáng tin cậy tiếng Anh là gì? | 3 | BELIEVABLE
+DECLINE | Sự suy giảm tiếng Anh là gì? | 2
+DEPLETE | Làm cạn kiệt tiếng Anh là gì? | 3 | EXHAUST
+DISPOSABLE | Dùng một lần rồi bỏ tiếng Anh là gì? | 2 | SINGLE-USE
+DOMESTIC | Trong nước (nội địa) tiếng Anh là gì? | 2
+ENFORCE | Thi hành (luật) tiếng Anh là gì? | 3
+EXPLICIT | Rõ ràng, tường minh tiếng Anh là gì? | 3 | CLEAR
+HAZARDOUS | Nguy hiểm, độc hại tiếng Anh là gì? | 3 | DANGEROUS
+IMMENSE | To lớn, bao la tiếng Anh là gì? | 3 | HUGE, ENORMOUS
+INEVITABLY | Chắc chắn sẽ (không tránh được) tiếng Anh là gì? | 3
+INSIGHT | Sự thấu hiểu sâu sắc tiếng Anh là gì? | 3
+MARGINALIZED | Bị gạt ra lề xã hội tiếng Anh là gì? | 3 | MARGINALISED
+OBSTRUCT | Cản trở tiếng Anh là gì? | 3 | BLOCK
+OUTWEIGH | Vượt trội hơn (lợi lớn hơn hại) tiếng Anh là gì? | 3
+PREVALENCE | Sự phổ biến (tỷ lệ mắc) tiếng Anh là gì? | 3
+RECIPIENT | Người nhận tiếng Anh là gì? | 3
+REMEDY | Biện pháp khắc phục tiếng Anh là gì? | 3
+SURVEILLANCE | Sự giám sát tiếng Anh là gì? | 3
+UNPREDICTABLE | Khó lường trước tiếng Anh là gì? | 2

@@ -1,0 +1,75 @@
+# Bộ đề · Đồ vật
+COAT RACK | Cây treo áo tiếng Anh là gì? | 2 | COAT STAND
+CLOTHESLINE | Dây phơi quần áo tiếng Anh là gì? | 2 | CLOTHES LINE
+LAUNDRY BASKET | Giỏ đựng đồ giặt tiếng Anh là gì? | 2
+DRYER | Máy sấy quần áo tiếng Anh là gì? | 2 | TUMBLE DRYER
+STRAIGHTENER | Máy duỗi tóc tiếng Anh là gì? | 2 | HAIR STRAIGHTENER
+CURLING IRON | Máy uốn tóc tiếng Anh là gì? | 3
+NAIL FILE | Dũa móng tay tiếng Anh là gì? | 2
+FOOTSTOOL | Ghế kê chân tiếng Anh là gì? | 3
+ROCKING CHAIR | Ghế bập bênh tiếng Anh là gì? | 2
+DUVET | Ruột chăn bông tiếng Anh là gì? | 3 | QUILT, COMFORTER
+NIGHTSTAND | Tủ đầu giường tiếng Anh là gì? | 2 | BEDSIDE TABLE
+DRESSER | Tủ nhiều ngăn kéo tiếng Anh là gì? | 3 | CHEST OF DRAWERS
+SHOE POLISH | Xi đánh giày tiếng Anh là gì? | 3
+UMBRELLA STAND | Ống cắm ô tiếng Anh là gì? | 3
+DOORSTOP | Cái chặn cửa tiếng Anh là gì? | 3 | DOOR STOPPER
+LATCH | Chốt cửa tiếng Anh là gì? | 3 | BOLT
+HINGE | Bản lề tiếng Anh là gì? | 3
+THUMBTACK | Đinh ghim (đinh bấm) tiếng Anh là gì? | 2 | DRAWING PIN, PUSHPIN
+STICKY NOTE | Giấy nhớ (giấy note) tiếng Anh là gì? | 1 | POST-IT, STICKY NOTES
+HIGHLIGHTER | Bút dạ quang tiếng Anh là gì? | 1
+MARKER | Bút lông (bút dạ) tiếng Anh là gì? | 1 | FELT-TIP PEN
+CRAYON | Bút sáp màu tiếng Anh là gì? | 1 | CRAYONS
+GLUE STICK | Keo khô (hồ dán thỏi) tiếng Anh là gì? | 2
+CORRECTION TAPE | Bút xóa kéo tiếng Anh là gì? | 2 | WHITE-OUT, CORRECTION FLUID
+HOLE PUNCH | Cái bấm lỗ giấy tiếng Anh là gì? | 2 | PUNCHER
+BINDER | Bìa còng tiếng Anh là gì? | 3 | RING BINDER
+FILING CABINET | Tủ hồ sơ tiếng Anh là gì? | 2 | FILE CABINET
+DUSTER | Chổi phất trần tiếng Anh là gì? | 2 | FEATHER DUSTER
+SQUEEGEE | Cây gạt nước lau kính tiếng Anh là gì? | 3
+DISH RACK | Giá úp bát tiếng Anh là gì? | 2 | DISH DRAINER, DRYING RACK
+DISH SOAP | Nước rửa chén tiếng Anh là gì? | 1 | WASHING-UP LIQUID, DISHWASHING LIQUID
+DETERGENT | Bột giặt (nước giặt) tiếng Anh là gì? | 2 | LAUNDRY DETERGENT, WASHING POWDER
+FABRIC SOFTENER | Nước xả vải tiếng Anh là gì? | 2 | SOFTENER
+BLEACH | Thuốc tẩy (nước javen) tiếng Anh là gì? | 2
+AIR FRESHENER | Nước xịt phòng tiếng Anh là gì? | 2
+MOUSETRAP | Bẫy chuột tiếng Anh là gì? | 2 | MOUSE TRAP
+FLYSWATTER | Vỉ đập ruồi tiếng Anh là gì? | 3 | FLY SWATTER
+HEATER | Máy sưởi tiếng Anh là gì? | 1 | SPACE HEATER
+AIR PURIFIER | Máy lọc không khí tiếng Anh là gì? | 2
+HUMIDIFIER | Máy tạo độ ẩm tiếng Anh là gì? | 3
+CUTLERY | Bộ dao nĩa thìa tiếng Anh là gì? | 3 | SILVERWARE
+MUG | Cốc có quai tiếng Anh là gì? | 1 | COFFEE MUG
+SAUCER | Đĩa lót tách tiếng Anh là gì? | 2
+JUG | Bình rót nước tiếng Anh là gì? | 2 | PITCHER
+FUNNEL | Cái phễu tiếng Anh là gì? | 2
+TIMER | Đồng hồ hẹn giờ (nhà bếp) tiếng Anh là gì? | 1 | KITCHEN TIMER
+SPICE RACK | Kệ gia vị tiếng Anh là gì? | 2
+ICE CREAM SCOOP | Muỗng múc kem tiếng Anh là gì? | 2 | SCOOP
+INTERCOM | Chuông hình (điện thoại nội bộ) tiếng Anh là gì? | 3
+POWER STRIP | Ổ cắm kéo dài nhiều lỗ tiếng Anh là gì? | 2 | POWER BAR
+LIGHT SWITCH | Công tắc đèn tiếng Anh là gì? | 1
+CEILING FAN | Quạt trần tiếng Anh là gì? | 1
+FLOOR LAMP | Đèn cây (đèn đứng) tiếng Anh là gì? | 2
+DESK LAMP | Đèn bàn tiếng Anh là gì? | 1
+NIGHT LIGHT | Đèn ngủ tiếng Anh là gì? | 1 | NIGHTLIGHT
+PICTURE FRAME | Khung ảnh tiếng Anh là gì? | 1 | PHOTO FRAME, FRAME
+WALL CLOCK | Đồng hồ treo tường tiếng Anh là gì? | 1
+RUG | Tấm thảm nhỏ tiếng Anh là gì? | 2
+GLUE GUN | Súng bắn keo tiếng Anh là gì? | 2 | HOT GLUE GUN
+SPRINKLER | Vòi phun tưới cây tiếng Anh là gì? | 3
+COAT HANGER | Móc treo quần áo tiếng Anh là gì? | 1
+STORAGE BOX | Hộp đựng đồ tiếng Anh là gì? | 1 | CONTAINER
+SHOPPING BAG | Túi đi chợ tiếng Anh là gì? | 1 | TOTE BAG
+COIN PURSE | Ví đựng tiền xu tiếng Anh là gì? | 2
+BOBBY PIN | Kẹp tăm (kẹp tóc nhỏ) tiếng Anh là gì? | 3 | HAIRPIN
+MAKEUP BAG | Túi đựng mỹ phẩm tiếng Anh là gì? | 2 | COSMETIC BAG
+NAIL POLISH REMOVER | Nước tẩy sơn móng tiếng Anh là gì? | 3 | ACETONE
+SEWING MACHINE | Máy khâu tiếng Anh là gì? | 2
+THIMBLE | Cái đê (đeo ngón tay khi khâu) tiếng Anh là gì? | 3
+KNITTING NEEDLE | Que đan len tiếng Anh là gì? | 3
+YARN | Sợi len tiếng Anh là gì? | 2 | WOOL
+TAPE DISPENSER | Hộp cắt băng dính tiếng Anh là gì? | 3
+PAPER SHREDDER | Máy hủy giấy tiếng Anh là gì? | 2 | SHREDDER
+ELECTRIC KETTLE | Ấm siêu tốc tiếng Anh là gì? | 1

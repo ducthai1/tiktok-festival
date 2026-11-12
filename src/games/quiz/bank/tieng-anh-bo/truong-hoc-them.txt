@@ -1,0 +1,68 @@
+# Bộ đề · Trường học & Công việc
+BLACKBOARD | Bảng đen tiếng Anh là gì? | 1 | CHALKBOARD
+PROTRACTOR | Thước đo góc tiếng Anh là gì? | 2
+SET SQUARE | Ê-ke tiếng Anh là gì? | 3
+GLOBE | Quả địa cầu tiếng Anh là gì? | 1
+ATLAS | Tập bản đồ tiếng Anh là gì? | 2
+TEXTBOOK | Sách giáo khoa tiếng Anh là gì? | 1
+WORKBOOK | Sách bài tập tiếng Anh là gì? | 1
+REPORT CARD | Phiếu điểm (sổ liên lạc) tiếng Anh là gì? | 2 | SCHOOL REPORT
+GRADE | Điểm số tiếng Anh là gì? | 1 | MARK
+QUIZ | Bài kiểm tra ngắn tiếng Anh là gì? | 1
+MIDTERM | Thi giữa kỳ tiếng Anh là gì? | 2 | MIDTERM EXAM
+FINAL EXAM | Thi cuối kỳ tiếng Anh là gì? | 1 | FINALS
+ENTRANCE EXAM | Kỳ thi tuyển sinh tiếng Anh là gì? | 2
+CHEAT | Gian lận (quay cóp) tiếng Anh là gì? | 1
+PLAGIARISM | Đạo văn tiếng Anh là gì? | 3
+DETENTION | Phạt ở lại trường tiếng Anh là gì? | 3
+FIELD TRIP | Chuyến đi thực tế tiếng Anh là gì? | 1
+EXTRACURRICULAR | Hoạt động ngoại khóa tiếng Anh là gì? | 3
+SCHOOL BUS | Xe buýt trường học tiếng Anh là gì? | 1
+LOCKER | Tủ đồ cá nhân tiếng Anh là gì? | 2
+ROLL CALL | Điểm danh tiếng Anh là gì? | 2
+HOMEROOM TEACHER | Giáo viên chủ nhiệm tiếng Anh là gì? | 2 | FORM TEACHER, HOMEROOM
+CLASS MONITOR | Lớp trưởng tiếng Anh là gì? | 1 | CLASS PRESIDENT
+DESKMATE | Bạn cùng bàn tiếng Anh là gì? | 2 | DESK MATE
+PEN PAL | Bạn qua thư tiếng Anh là gì? | 2 | PENPAL
+EXTRA CLASS | Lớp học thêm tiếng Anh là gì? | 1 | EXTRA CLASSES
+DROPOUT | Người bỏ học tiếng Anh là gì? | 3 | DROP OUT
+PRIMARY SCHOOL | Trường tiểu học tiếng Anh là gì? | 1 | ELEMENTARY SCHOOL
+SECONDARY SCHOOL | Trường trung học cơ sở tiếng Anh là gì? | 2 | MIDDLE SCHOOL, JUNIOR HIGH
+HIGH SCHOOL | Trường trung học phổ thông tiếng Anh là gì? | 1
+BOARDING SCHOOL | Trường nội trú tiếng Anh là gì? | 2
+PUBLIC SCHOOL | Trường công lập tiếng Anh là gì? | 2 | STATE SCHOOL
+PRIVATE SCHOOL | Trường tư thục tiếng Anh là gì? | 2
+GPA | Điểm trung bình tích lũy tiếng Anh là gì? | 2 | GRADE POINT AVERAGE
+LECTURE HALL | Giảng đường tiếng Anh là gì? | 2
+STUDY ABROAD | Du học tiếng Anh là gì? | 1
+EXCHANGE STUDENT | Học sinh trao đổi tiếng Anh là gì? | 2
+FRESHMAN | Sinh viên năm nhất tiếng Anh là gì? | 2 | FIRST-YEAR STUDENT
+GROUP PROJECT | Bài tập nhóm tiếng Anh là gì? | 1 | GROUP WORK
+OUTLINE | Dàn ý tiếng Anh là gì? | 2
+DRAFT | Bản nháp tiếng Anh là gì? | 2
+PARAGRAPH | Đoạn văn tiếng Anh là gì? | 1
+SENTENCE | Câu văn tiếng Anh là gì? | 1
+GRAMMAR | Ngữ pháp tiếng Anh là gì? | 1
+VOCABULARY | Từ vựng tiếng Anh là gì? | 1
+PRONUNCIATION | Phát âm tiếng Anh là gì? | 2
+SPELLING | Chính tả tiếng Anh là gì? | 1
+REVIEW | Ôn tập tiếng Anh là gì? | 1 | REVISION
+CRAM | Học nhồi trước kỳ thi tiếng Anh là gì? | 3
+BOOKWORM | Mọt sách tiếng Anh là gì? | 2
+JANITOR | Lao công (trong trường) tiếng Anh là gì? | 3 | CUSTODIAN
+COUNSELOR | Chuyên viên tư vấn học đường tiếng Anh là gì? | 3 | COUNSELLOR
+LIBRARY CARD | Thẻ thư viện tiếng Anh là gì? | 1
+STUDENT ID | Thẻ sinh viên tiếng Anh là gì? | 1 | STUDENT CARD
+SCHOOLYARD | Sân trường tiếng Anh là gì? | 1
+JOB SEEKER | Người tìm việc tiếng Anh là gì? | 2 | JOB HUNTER
+REMOTE WORK | Làm việc từ xa tiếng Anh là gì? | 2 | WORK FROM HOME, WFH
+SIDE HUSTLE | Nghề tay trái (việc làm thêm) tiếng Anh là gì? | 3 | SIDE JOB
+PROBATION PERIOD | Thời gian thử việc tiếng Anh là gì? | 2
+DAY OFF | Ngày nghỉ tiếng Anh là gì? | 1
+PAYDAY | Ngày lĩnh lương tiếng Anh là gì? | 1 | PAY DAY
+RAISE | Sự tăng lương tiếng Anh là gì? | 2 | PAY RISE, SALARY INCREASE
+BREAK ROOM | Phòng nghỉ giải lao tiếng Anh là gì? | 2
+NAME CARD | Danh thiếp tiếng Anh là gì? | 1 | BUSINESS CARD
+TEAM LEADER | Trưởng nhóm tiếng Anh là gì? | 1 | TEAM LEAD
+CAREER PATH | Lộ trình sự nghiệp tiếng Anh là gì? | 2
+SOFT SKILLS | Kỹ năng mềm tiếng Anh là gì? | 2 | SOFT SKILL

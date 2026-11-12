@@ -23,11 +23,13 @@ function loadBanks() {
 
 export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'];
 
-export function createQuizGames({ random = Math.random } = {}) {
+export function createQuizGames({ random = Math.random, englishProgress = null } = {}) {
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
+  // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)
   const english = createEnglishSwitcher({
-    general: b.english, basic: b.classroom, sets: b.englishSets, random
+    general: b.english.filter((q) => !q.basic), basic: b.english.filter((q) => q.basic), sets: b.englishSets, random,
+    progress: englishProgress
   });
   const emoji = createEmojiSwitcher({ all: b.emoji, random });
   return [

@@ -1,0 +1,81 @@
+# Bộ đề · Động vật
+ALLIGATOR | Cá sấu Mỹ (mõm tù) tiếng Anh là gì? | 3
+BUMBLEBEE | Ong nghệ (ong lông xù) tiếng Anh là gì? | 3
+BEETLE | Bọ cánh cứng tiếng Anh là gì? | 2
+MOTH | Bướm đêm (con ngài) tiếng Anh là gì? | 2
+LOCUST | Châu chấu di cư tiếng Anh là gì? | 3
+SILKWORM | Con tằm tiếng Anh là gì? | 2
+LOUSE | Con chấy tiếng Anh là gì? | 3 | LICE
+BEDBUG | Con rệp tiếng Anh là gì? | 3 | BED BUG
+CUB | Hổ con, sư tử con tiếng Anh là gì? | 2
+CALF | Con bê tiếng Anh là gì? | 2
+FOAL | Con ngựa non tiếng Anh là gì? | 3 | COLT
+PIGLET | Con heo con tiếng Anh là gì? | 2
+DUCKLING | Con vịt con tiếng Anh là gì? | 2
+CHICK | Con gà con tiếng Anh là gì? | 1
+ROOSTER | Con gà trống tiếng Anh là gì? | 1 | COCK, COCKEREL
+MULE | Con la tiếng Anh là gì? | 3
+PONY | Con ngựa lùn tiếng Anh là gì? | 2
+BULL | Con bò đực tiếng Anh là gì? | 2 | OX
+WATER BUFFALO | Con trâu tiếng Anh là gì? | 1 | BUFFALO
+RAT | Con chuột cống tiếng Anh là gì? | 1
+SEA URCHIN | Con nhím biển tiếng Anh là gì? | 2
+SEA CUCUMBER | Hải sâm tiếng Anh là gì? | 3
+PUFFERFISH | Cá nóc tiếng Anh là gì? | 2 | BLOWFISH, PUFFER FISH
+SWORDFISH | Cá kiếm tiếng Anh là gì? | 2
+CLOWNFISH | Cá hề tiếng Anh là gì? | 2 | CLOWN FISH
+CARP | Cá chép tiếng Anh là gì? | 2 | KOI
+HAMMERHEAD | Cá mập đầu búa tiếng Anh là gì? | 3 | HAMMERHEAD SHARK
+SEA TURTLE | Rùa biển tiếng Anh là gì? | 1
+TREE FROG | Ếch cây tiếng Anh là gì? | 2
+BULLFROG | Con ễnh ương tiếng Anh là gì? | 3
+CHIPMUNK | Con sóc chuột tiếng Anh là gì? | 2
+HARE | Thỏ rừng tiếng Anh là gì? | 2
+WILD BOAR | Lợn rừng tiếng Anh là gì? | 2 | BOAR
+FAWN | Nai con tiếng Anh là gì? | 3
+ELK | Nai sừng tấm tiếng Anh là gì? | 3
+RED PANDA | Gấu trúc đỏ tiếng Anh là gì? | 2
+SUN BEAR | Gấu chó tiếng Anh là gì? | 3
+GRIZZLY | Gấu xám Bắc Mỹ tiếng Anh là gì? | 3 | GRIZZLY BEAR
+LIONESS | Sư tử cái tiếng Anh là gì? | 2
+TUSK | Ngà voi tiếng Anh là gì? | 2 | TUSKS, IVORY
+TRUNK | Vòi voi tiếng Anh là gì? | 2
+HORN | Cái sừng tiếng Anh là gì? | 1 | HORNS
+ANTLER | Gạc hươu nai tiếng Anh là gì? | 3 | ANTLERS
+MANE | Bờm (ngựa, sư tử) tiếng Anh là gì? | 2
+HOOF | Móng guốc tiếng Anh là gì? | 3 | HOOVES
+PAW | Bàn chân thú (có đệm) tiếng Anh là gì? | 2 | PAWS
+CLAW | Móng vuốt tiếng Anh là gì? | 2 | CLAWS
+BEAK | Mỏ chim tiếng Anh là gì? | 1
+FUR | Bộ lông thú tiếng Anh là gì? | 1
+FIN | Vây cá tiếng Anh là gì? | 2 | FINS
+GILLS | Mang cá tiếng Anh là gì? | 2 | GILL
+WHISKERS | Ria mèo tiếng Anh là gì? | 2 | WHISKER
+COBWEB | Mạng nhện tiếng Anh là gì? | 2 | SPIDER WEB, WEB
+BEEHIVE | Tổ ong tiếng Anh là gì? | 2 | HIVE
+DEN | Hang ổ thú (hang cáo) tiếng Anh là gì? | 3 | LAIR
+BURROW | Hang đào (hang thỏ) tiếng Anh là gì? | 3
+FLOCK | Đàn chim, đàn cừu tiếng Anh là gì? | 3
+HERD | Đàn bò, đàn voi tiếng Anh là gì? | 3
+SWARM | Đàn ong (bầy côn trùng bay) tiếng Anh là gì? | 3
+HIBERNATE | Ngủ đông tiếng Anh là gì? | 2 | HIBERNATION
+NOCTURNAL | Hoạt động về đêm tiếng Anh là gì? | 3
+MAMMAL | Động vật có vú tiếng Anh là gì? | 2
+REPTILE | Loài bò sát tiếng Anh là gì? | 2
+AMPHIBIAN | Loài lưỡng cư tiếng Anh là gì? | 3
+RODENT | Loài gặm nhấm tiếng Anh là gì? | 3
+PRIMATE | Loài linh trưởng tiếng Anh là gì? | 3
+MARSUPIAL | Thú có túi tiếng Anh là gì? | 3
+VERTEBRATE | Động vật có xương sống tiếng Anh là gì? | 3
+ZOOKEEPER | Người chăm thú ở vườn thú tiếng Anh là gì? | 2
+SHEEPDOG | Chó chăn cừu tiếng Anh là gì? | 2 | SHEPHERD DOG
+HUSKY | Chó kéo xe tuyết (husky) tiếng Anh là gì? | 2
+POODLE | Chó lông xù (poodle) tiếng Anh là gì? | 2
+STRAY CAT | Mèo hoang tiếng Anh là gì? | 2 | STRAY
+TOMCAT | Mèo đực tiếng Anh là gì? | 3 | TOM
+KING COBRA | Rắn hổ mang chúa tiếng Anh là gì? | 3 | KING COBRA
+ANT COLONY | Đàn kiến (tổ kiến) tiếng Anh là gì? | 2 | ANTHILL
+SCARAB | Bọ hung tiếng Anh là gì? | 3 | DUNG BEETLE
+STICK INSECT | Bọ que tiếng Anh là gì? | 3
+GLOWWORM | Đom đóm ấu trùng (sâu phát sáng) tiếng Anh là gì? | 3
+WATER STRIDER | Con gọng vó (nhện nước) tiếng Anh là gì? | 3

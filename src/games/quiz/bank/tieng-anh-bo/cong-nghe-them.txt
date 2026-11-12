@@ -1,0 +1,81 @@
+# Bộ đề · Công nghệ
+SMART TV | Ti vi thông minh tiếng Anh là gì? | 1
+MICROCHIP | Vi mạch tiếng Anh là gì? | 3 | CHIP
+TRANSISTOR | Bóng bán dẫn tiếng Anh là gì? | 3
+SOLDER | Hàn linh kiện điện tử tiếng Anh là gì? | 3 | SOLDERING
+CIRCUIT BOARD | Bo mạch tiếng Anh là gì? | 2 | PCB
+POWER SUPPLY | Bộ nguồn tiếng Anh là gì? | 2 | PSU
+COOLING FAN | Quạt tản nhiệt tiếng Anh là gì? | 2
+HEAT SINK | Miếng tản nhiệt kim loại tiếng Anh là gì? | 3 | HEATSINK
+OVERHEAT | Quá nóng tiếng Anh là gì? | 2 | OVERHEATING
+BATTERY LIFE | Thời lượng pin tiếng Anh là gì? | 2
+FAST CHARGING | Sạc nhanh tiếng Anh là gì? | 1
+SSD | Ổ cứng thể rắn tiếng Anh là gì? | 2 | SOLID STATE DRIVE
+MEMORY CARD | Thẻ nhớ tiếng Anh là gì? | 1 | SD CARD
+DATA PLAN | Gói cước dữ liệu di động tiếng Anh là gì? | 2 | MOBILE DATA
+ROAMING | Chuyển vùng quốc tế tiếng Anh là gì? | 3
+COVERAGE | Vùng phủ sóng tiếng Anh là gì? | 3
+FIBER OPTIC | Cáp quang tiếng Anh là gì? | 3 | OPTICAL FIBER, FIBRE OPTIC
+URL | Địa chỉ trang web tiếng Anh là gì? | 2 | WEB ADDRESS
+HOMEPAGE | Trang chủ tiếng Anh là gì? | 1 | HOME PAGE
+LANDING PAGE | Trang đích (trang giới thiệu sản phẩm) tiếng Anh là gì? | 3
+INCOGNITO | Chế độ ẩn danh tiếng Anh là gì? | 2 | PRIVATE MODE, PRIVATE BROWSING
+VERIFICATION CODE | Mã xác minh (OTP) tiếng Anh là gì? | 2 | OTP, ONE-TIME PASSWORD
+BIOMETRICS | Sinh trắc học tiếng Anh là gì? | 3 | BIOMETRIC
+DECRYPT | Giải mã (dữ liệu) tiếng Anh là gì? | 3 | DECRYPTION
+HACK | Xâm nhập hệ thống trái phép tiếng Anh là gì? | 2 | HACKING
+DATA BREACH | Rò rỉ dữ liệu tiếng Anh là gì? | 3 | DATA LEAK
+IDENTITY THEFT | Đánh cắp danh tính tiếng Anh là gì? | 3
+ANTIVIRUS | Phần mềm diệt virus tiếng Anh là gì? | 1
+POP-UP | Cửa sổ bật lên tiếng Anh là gì? | 2 | POPUP
+DRAG AND DROP | Kéo và thả tiếng Anh là gì? | 2 | DRAG
+DOUBLE-CLICK | Nhấp đúp chuột tiếng Anh là gì? | 1 | DOUBLE CLICK
+RIGHT-CLICK | Nhấp chuột phải tiếng Anh là gì? | 1 | RIGHT CLICK
+TOGGLE | Nút gạt bật/tắt tiếng Anh là gì? | 3 | SWITCH
+DROPDOWN | Danh sách thả xuống tiếng Anh là gì? | 3 | DROP-DOWN, DROPDOWN MENU
+CHECKBOX | Ô đánh dấu (tích chọn) tiếng Anh là gì? | 2 | CHECK BOX, TICK BOX
+SLIDER | Thanh trượt (kéo để chỉnh) tiếng Anh là gì? | 3
+PROGRESS BAR | Thanh tiến trình tiếng Anh là gì? | 2
+BUFFERING | Video đang tải bị khựng tiếng Anh là gì? | 2 | BUFFER
+GLITCH | Trục trặc nhỏ (lỗi vặt) tiếng Anh là gì? | 2
+FACTORY RESET | Khôi phục cài đặt gốc tiếng Anh là gì? | 2 | RESET
+FORMAT | Định dạng (ổ đĩa) tiếng Anh là gì? | 2
+ZIP | Nén tệp tiếng Anh là gì? | 2 | COMPRESS
+UNZIP | Giải nén tệp tiếng Anh là gì? | 2 | EXTRACT, DECOMPRESS
+SPREADSHEET | Bảng tính tiếng Anh là gì? | 2
+WORD PROCESSOR | Trình soạn thảo văn bản tiếng Anh là gì? | 3
+SLIDESHOW | Trình chiếu ảnh/slide tiếng Anh là gì? | 2
+FONT | Phông chữ tiếng Anh là gì? | 1 | TYPEFACE
+PIXEL | Điểm ảnh tiếng Anh là gì? | 2
+SCREENSAVER | Hình chờ bảo vệ màn hình tiếng Anh là gì? | 3
+TRACKPAD | Bàn di chuột (laptop) tiếng Anh là gì? | 2 | TOUCHPAD
+STYLUS | Bút cảm ứng tiếng Anh là gì? | 2 | STYLUS PEN
+CHARGING PORT | Cổng sạc tiếng Anh là gì? | 2 | PORT
+ADAPTER | Bộ chuyển đổi (củ đổi) tiếng Anh là gì? | 2 | ADAPTOR
+UPS | Bộ lưu điện tiếng Anh là gì? | 3
+IN-APP PURCHASE | Mua hàng trong ứng dụng tiếng Anh là gì? | 3
+DEEPFAKE | Video giả mạo bằng AI tiếng Anh là gì? | 3
+PROMPT | Câu lệnh nhập cho AI tiếng Anh là gì? | 2
+MACHINE LEARNING | Học máy tiếng Anh là gì? | 2
+METAVERSE | Vũ trụ ảo tiếng Anh là gì? | 2
+HOLOGRAM | Ảnh ba chiều (hình chiếu nổi) tiếng Anh là gì? | 3
+SELF-DRIVING CAR | Xe tự lái tiếng Anh là gì? | 2 | AUTONOMOUS CAR, DRIVERLESS CAR
+ELECTRIC CAR | Xe điện tiếng Anh là gì? | 1 | EV, ELECTRIC VEHICLE
+SOLAR PANEL | Tấm pin mặt trời tiếng Anh là gì? | 2 | SOLAR PANELS
+WIND TURBINE | Tuabin gió tiếng Anh là gì? | 2
+SMART LOCK | Khóa thông minh tiếng Anh là gì? | 2
+ROBOT VACUUM | Robot hút bụi tiếng Anh là gì? | 2
+SECURITY CAMERA | Camera an ninh tiếng Anh là gì? | 1 | CCTV
+VOICE ASSISTANT | Trợ lý giọng nói tiếng Anh là gì? | 2 | VIRTUAL ASSISTANT
+E-BOOK | Sách điện tử tiếng Anh là gì? | 1 | EBOOK
+SPEAKERPHONE | Loa ngoài khi gọi điện tiếng Anh là gì? | 2
+VIDEO CALL | Cuộc gọi video tiếng Anh là gì? | 1 | VIDEO CHAT
+VOICE MESSAGE | Tin nhắn thoại tiếng Anh là gì? | 1 | VOICE NOTE
+GROUP CHAT | Nhóm chat tiếng Anh là gì? | 1
+SCREEN TIME | Thời gian dùng màn hình tiếng Anh là gì? | 2
+AIRPLANE MODE | Chế độ máy bay tiếng Anh là gì? | 1 | FLIGHT MODE
+SILENT MODE | Chế độ im lặng tiếng Anh là gì? | 1 | SILENT
+LOCK SCREEN | Màn hình khóa tiếng Anh là gì? | 1
+HOME SCREEN | Màn hình chính (điện thoại) tiếng Anh là gì? | 1
+SOFTWARE UPDATE | Cập nhật phần mềm tiếng Anh là gì? | 1
+CLOUD STORAGE | Lưu trữ đám mây tiếng Anh là gì? | 2

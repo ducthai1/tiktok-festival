@@ -134,9 +134,20 @@ const ENGLISH_SET_FILES = {
   dovat: 'do-vat.txt', dulich: 'du-lich.txt', giaitri: 'giai-tri.txt'
 };
 export function loadEnglishSets() {
-  const files = new Map(readTxtDir('tieng-anh-bo').map((f) => [f.file, f.text]));
-  return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => [id,
-    parseTextBank(files.get(file) || '').map((q) => ({ ...q, category: q.category.replace(/^Bộ đề · /, 'Tiếng Anh · ') }))]));
+  const files = readTxtDir('tieng-anh-bo');
+  return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => {
+    // file chính + file bổ sung cùng bộ (vd toeic.txt + toeic-them.txt) — thêm từ không phải sửa file người khác đang làm
+    const base = file.replace(/\.txt$/, '');
+    const texts = files.filter((f) => f.file === file || f.file.startsWith(`${base}-`)).map((f) => f.text);
+    const seen = new Set();
+    const list = texts.flatMap((t) => parseTextBank(t)).filter((q) => {
+      const key = foldText(q.answer);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    }).map((q) => ({ ...q, category: q.category.replace(/^Bộ đề · /, 'Tiếng Anh · ').replace(/ \(bổ sung\)$/, '') }));
+    return [id, list];
+  }));
 }
 
 /** Trả về Set các đáp án (đã foldText) thuộc bất kỳ bộ nào trong tieng-anh-bo — dùng để loại khỏi general. */

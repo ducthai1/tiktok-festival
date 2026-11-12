@@ -1,0 +1,67 @@
+# Bộ đề · Y học
+ACNE | Mụn trứng cá tiếng Anh là gì? | 2 | PIMPLES
+BLISTER | Vết phồng rộp tiếng Anh là gì? | 3
+CHAPPED LIPS | Môi nứt nẻ tiếng Anh là gì? | 2
+DANDRUFF | Gàu (trên tóc) tiếng Anh là gì? | 2
+EARACHE | Đau tai tiếng Anh là gì? | 1
+EYE STRAIN | Mỏi mắt tiếng Anh là gì? | 2
+HOARSE | Khàn giọng tiếng Anh là gì? | 3
+INSECT BITE | Vết côn trùng cắn tiếng Anh là gì? | 2 | BUG BITE
+NOSEBLEED | Chảy máu cam tiếng Anh là gì? | 2
+STIFF NECK | Cứng cổ (vẹo cổ) tiếng Anh là gì? | 2
+PINK EYE | Đau mắt đỏ tiếng Anh là gì? | 2 | CONJUNCTIVITIS
+TONSILLITIS | Viêm amidan tiếng Anh là gì? | 3
+SINUSITIS | Viêm xoang tiếng Anh là gì? | 3
+BRONCHITIS | Viêm phế quản tiếng Anh là gì? | 3
+PNEUMONIA | Viêm phổi tiếng Anh là gì? | 3
+HEPATITIS | Viêm gan tiếng Anh là gì? | 3
+GASTRITIS | Viêm dạ dày tiếng Anh là gì? | 3
+DENGUE FEVER | Sốt xuất huyết tiếng Anh là gì? | 2 | DENGUE
+MALARIA | Sốt rét tiếng Anh là gì? | 2
+TUBERCULOSIS | Bệnh lao tiếng Anh là gì? | 3 | TB
+STOMACH ULCER | Loét dạ dày tiếng Anh là gì? | 3 | ULCER
+APPENDIX | Ruột thừa tiếng Anh là gì? | 2
+BLADDER | Bàng quang tiếng Anh là gì? | 3
+PANCREAS | Tuyến tụy tiếng Anh là gì? | 3
+THYROID | Tuyến giáp tiếng Anh là gì? | 3
+SPLEEN | Lá lách tiếng Anh là gì? | 3
+ARTERY | Động mạch tiếng Anh là gì? | 3
+CARTILAGE | Sụn tiếng Anh là gì? | 3
+TENDON | Gân tiếng Anh là gì? | 3
+LIGAMENT | Dây chằng tiếng Anh là gì? | 3
+EARDRUM | Màng nhĩ tiếng Anh là gì? | 3
+RETINA | Võng mạc tiếng Anh là gì? | 3
+EYELID | Mí mắt tiếng Anh là gì? | 2
+NOSTRIL | Lỗ mũi tiếng Anh là gì? | 2
+VOCAL CORDS | Dây thanh quản tiếng Anh là gì? | 3 | VOCAL CORD
+WINDPIPE | Khí quản tiếng Anh là gì? | 3 | TRACHEA
+DIAPHRAGM | Cơ hoành tiếng Anh là gì? | 3
+OXIMETER | Máy đo nồng độ oxy máu tiếng Anh là gì? | 3 | PULSE OXIMETER
+BLOOD DONATION | Hiến máu tiếng Anh là gì? | 2
+MEDICAL RECORD | Hồ sơ bệnh án tiếng Anh là gì? | 2 | MEDICAL RECORDS
+OVER THE COUNTER | Thuốc không cần kê đơn tiếng Anh là gì? | 3 | OTC
+LOZENGE | Viên ngậm trị ho tiếng Anh là gì? | 3 | COUGH DROP
+ANTISEPTIC | Thuốc sát trùng tiếng Anh là gì? | 2
+SPLINT | Nẹp cố định xương tiếng Anh là gì? | 3
+SLING | Băng treo tay tiếng Anh là gì? | 3 | ARM SLING
+INHALER | Ống hít (hen suyễn) tiếng Anh là gì? | 3
+NEBULIZER | Máy xông khí dung tiếng Anh là gì? | 3 | NEBULISER
+WALKING STICK | Gậy chống tiếng Anh là gì? | 2 | CANE
+HEARING AID | Máy trợ thính tiếng Anh là gì? | 2
+CONTACT LENS | Kính áp tròng tiếng Anh là gì? | 2 | CONTACT LENSES, CONTACTS
+DENTURES | Răng giả tiếng Anh là gì? | 3 | FALSE TEETH
+PROTEIN | Chất đạm tiếng Anh là gì? | 2
+CARBOHYDRATE | Chất bột đường tiếng Anh là gì? | 3 | CARBS, CARBOHYDRATES
+FIBER | Chất xơ tiếng Anh là gì? | 2 | FIBRE
+DEHYDRATION | Mất nước (cơ thể) tiếng Anh là gì? | 2 | DEHYDRATED
+HANGOVER | Mệt mỏi sau khi say rượu tiếng Anh là gì? | 2
+NIGHTMARE | Ác mộng tiếng Anh là gì? | 1
+SLEEPWALK | Mộng du tiếng Anh là gì? | 3 | SLEEPWALKING
+SNORE | Ngáy tiếng Anh là gì? | 2 | SNORING
+BLOOD CLOT | Cục máu đông tiếng Anh là gì? | 3
+PALPITATIONS | Tim đập nhanh (hồi hộp) tiếng Anh là gì? | 3 | PALPITATION
+SALINE | Nước muối sinh lý tiếng Anh là gì? | 2 | SALINE SOLUTION
+GAUZE PAD | Miếng gạc tiếng Anh là gì? | 2
+MEDICAL MASK | Khẩu trang y tế tiếng Anh là gì? | 1 | SURGICAL MASK
+HEALTH CHECK | Khám tổng quát tiếng Anh là gì? | 1 | GENERAL CHECKUP
+SECOND OPINION | Ý kiến bác sĩ thứ hai tiếng Anh là gì? | 3

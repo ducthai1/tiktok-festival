@@ -1,0 +1,42 @@
+# Tiếng Anh · Cảm xúc, tính cách
+COMPASSION | Lòng trắc ẩn tiếng Anh là gì? | 2
+PERSEVERANCE | Sự kiên trì bền bỉ tiếng Anh là gì? | 2 | PERSISTENCE
+DIPLOMATIC | Khéo léo, ngoại giao tiếng Anh là gì? | 2 | TACTFUL
+ASSERTIVE | Quyết đoán (tự tin bày tỏ) tiếng Anh là gì? | 2
+INTROVERT | Người hướng nội tiếng Anh là gì? | 2 | INTROVERTED
+EXTROVERT | Người hướng ngoại tiếng Anh là gì? | 2 | EXTROVERTED, EXTRAVERT
+IMPULSIVE | Bốc đồng tiếng Anh là gì? | 2
+INDECISIVE | Thiếu quyết đoán (hay do dự) tiếng Anh là gì? | 2
+CREATIVE | Sáng tạo (tính từ) tiếng Anh là gì? | 1
+FRANK | Thẳng thắn tiếng Anh là gì? | 2 | STRAIGHTFORWARD, BLUNT
+LOYAL | Trung thành tiếng Anh là gì? | 1 | FAITHFUL
+CHARMING | Duyên dáng, có sức hút tiếng Anh là gì? | 2
+AWKWARD | Vụng về, ngượng ngùng tiếng Anh là gì? | 2 | CLUMSY
+TIMID | Rụt rè tiếng Anh là gì? | 2 | SHY
+DISCIPLINE | Tính kỷ luật tiếng Anh là gì? | 2 | SELF-DISCIPLINE
+GRATITUDE | Lòng biết ơn tiếng Anh là gì? | 2 | THANKFULNESS
+MINDFULNESS | Chánh niệm (sống tỉnh thức) tiếng Anh là gì? | 2
+MENTORSHIP | Sự kèm cặp, dìu dắt tiếng Anh là gì? | 3 | MENTORING
+ACCOUNTABILITY | Tinh thần chịu trách nhiệm giải trình tiếng Anh là gì? | 3
+PRIDE | Niềm tự hào tiếng Anh là gì? | 1
+SHAME | Sự xấu hổ tiếng Anh là gì? | 2
+GUILT | Cảm giác tội lỗi tiếng Anh là gì? | 2
+LONELINESS | Sự cô đơn tiếng Anh là gì? | 1
+BOREDOM | Sự buồn chán tiếng Anh là gì? | 1
+CONTENTMENT | Sự mãn nguyện tiếng Anh là gì? | 2 | SATISFACTION
+SHYNESS | Sự nhút nhát tiếng Anh là gì? | 1
+COURAGE | Lòng dũng cảm tiếng Anh là gì? | 1 | BRAVERY
+MATURITY | Sự trưởng thành tiếng Anh là gì? | 2
+LEADERSHIP | Khả năng lãnh đạo tiếng Anh là gì? | 2
+TEAMWORK | Làm việc nhóm tiếng Anh là gì? | 1
+COMMUNICATION | Giao tiếp tiếng Anh là gì? | 2
+BODY LANGUAGE | Ngôn ngữ cơ thể tiếng Anh là gì? | 2
+ACTIVE LISTENING | Lắng nghe chủ động tiếng Anh là gì? | 2
+BOUNDARY | Ranh giới cá nhân tiếng Anh là gì? | 2 | BOUNDARIES
+SELF-ESTEEM | Lòng tự trọng tiếng Anh là gì? | 2 | SELF ESTEEM
+WILLPOWER | Ý chí tiếng Anh là gì? | 2 | WILL POWER
+ENDURANCE | Sức chịu đựng tiếng Anh là gì? | 2
+FORGIVENESS | Sự tha thứ tiếng Anh là gì? | 2
+ACCEPTANCE | Sự chấp nhận tiếng Anh là gì? | 2
+OPEN-MINDED | Cởi mở (tư tưởng) tiếng Anh là gì? | 2 | OPEN MINDED
+EMPOWERMENT | Sự trao quyền tiếng Anh là gì? | 3

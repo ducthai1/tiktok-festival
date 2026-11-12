@@ -1,0 +1,75 @@
+# Bộ đề · Thể thao
+SHUTTLECOCK | Quả cầu lông tiếng Anh là gì? | 2 | BIRDIE
+RACKET | Cái vợt tiếng Anh là gì? | 1 | RACQUET
+RALLY | Pha bóng qua lại liên tục tiếng Anh là gì? | 3
+DEUCE | Tỉ số hòa 40-40 (quần vợt) tiếng Anh là gì? | 3
+GOLF | Môn đánh gôn tiếng Anh là gì? | 1
+HOLE IN ONE | Một gậy vào lỗ (gôn) tiếng Anh là gì? | 3
+CADDIE | Người vác gậy gôn tiếng Anh là gì? | 3 | CADDY
+ROUND | Hiệp đấu (quyền anh) tiếng Anh là gì? | 2
+UPPERCUT | Cú đấm móc ngược tiếng Anh là gì? | 3
+MARATHON | Cuộc chạy đường dài 42 km tiếng Anh là gì? | 1
+SPRINTER | Vận động viên chạy nước rút tiếng Anh là gì? | 2
+HURDLES | Chạy vượt rào tiếng Anh là gì? | 2 | HURDLE
+HIGH JUMP | Nhảy cao tiếng Anh là gì? | 1
+LONG JUMP | Nhảy xa tiếng Anh là gì? | 1
+POLE VAULT | Nhảy sào tiếng Anh là gì? | 3
+JAVELIN | Ném lao tiếng Anh là gì? | 3
+SHOT PUT | Đẩy tạ tiếng Anh là gì? | 3
+DISCUS | Ném đĩa tiếng Anh là gì? | 3
+RELAY | Chạy tiếp sức tiếng Anh là gì? | 2 | RELAY RACE
+BATON | Gậy tiếp sức tiếng Anh là gì? | 3
+FINISH LINE | Vạch đích tiếng Anh là gì? | 1
+STARTING LINE | Vạch xuất phát tiếng Anh là gì? | 2
+TRACK | Đường chạy (điền kinh) tiếng Anh là gì? | 2
+BALANCE BEAM | Cầu thăng bằng tiếng Anh là gì? | 3
+SWIMMING POOL | Bể bơi tiếng Anh là gì? | 1 | POOL
+BREASTSTROKE | Bơi ếch tiếng Anh là gì? | 2
+BACKSTROKE | Bơi ngửa tiếng Anh là gì? | 2
+BUTTERFLY STROKE | Bơi bướm tiếng Anh là gì? | 2 | BUTTERFLY
+FREESTYLE | Bơi tự do tiếng Anh là gì? | 2 | FRONT CRAWL
+DIVING BOARD | Ván nhảy cầu tiếng Anh là gì? | 2
+GOGGLES | Kính bơi tiếng Anh là gì? | 1 | SWIMMING GOGGLES
+ROLLER SKATES | Giày trượt pa-tanh tiếng Anh là gì? | 2 | ROLLERBLADES, INLINE SKATES
+ICE SKATING | Trượt băng tiếng Anh là gì? | 1
+ROCK CLIMBING | Leo núi đá tiếng Anh là gì? | 2 | CLIMBING, BOULDERING
+SAILING | Đua thuyền buồm tiếng Anh là gì? | 2
+SIT-UP | Gập bụng tiếng Anh là gì? | 1 | SITUP, SIT UP, CRUNCH
+PULL-UP | Hít xà đơn tiếng Anh là gì? | 2 | PULLUP, PULL UP, CHIN-UP
+UMPIRE | Trọng tài (quần vợt, bóng chày) tiếng Anh là gì? | 3
+GOLD MEDAL | Huy chương vàng tiếng Anh là gì? | 1 | GOLD
+SILVER MEDAL | Huy chương bạc tiếng Anh là gì? | 1 | SILVER
+BRONZE MEDAL | Huy chương đồng tiếng Anh là gì? | 1 | BRONZE
+OLYMPICS | Thế vận hội tiếng Anh là gì? | 1 | OLYMPIC GAMES
+SPORTSMANSHIP | Tinh thần thể thao cao thượng tiếng Anh là gì? | 3 | FAIR PLAY
+DOPING | Sử dụng chất cấm (thể thao) tiếng Anh là gì? | 3
+WORLD RECORD | Kỷ lục thế giới tiếng Anh là gì? | 1 | RECORD
+DARTS | Phi tiêu tiếng Anh là gì? | 2 | DART
+JUMP ROPE | Nhảy dây tiếng Anh là gì? | 1 | SKIPPING ROPE, SKIPPING
+COOL DOWN | Thả lỏng sau khi tập tiếng Anh là gì? | 2 | COOLDOWN
+CRAMP | Chuột rút tiếng Anh là gì? | 2 | CRAMPS
+ARENA | Nhà thi đấu tiếng Anh là gì? | 2 | STADIUM
+SPARRING | Đấu tập (võ thuật) tiếng Anh là gì? | 3
+BLACK BELT | Đai đen tiếng Anh là gì? | 1
+MARTIAL ARTIST | Võ sĩ (người tập võ) tiếng Anh là gì? | 2
+KNEE PAD | Miếng bảo vệ đầu gối tiếng Anh là gì? | 2 | KNEE PADS
+SPORTSWEAR | Đồ thể thao tiếng Anh là gì? | 1 | ACTIVEWEAR
+WATER BOTTLE | Bình nước tiếng Anh là gì? | 1
+PERSONAL TRAINER | Huấn luyện viên cá nhân (PT) tiếng Anh là gì? | 2 | PT
+BACKHAND | Cú đánh trái tay tiếng Anh là gì? | 3
+FOREHAND | Cú đánh thuận tay tiếng Anh là gì? | 3
+BULLSEYE | Hồng tâm tiếng Anh là gì? | 2 | BULL S EYE
+FINISHER | Người về đích tiếng Anh là gì? | 2
+ENDURANCE RUN | Chạy bền tiếng Anh là gì? | 2 | LONG-DISTANCE RUN
+DECATHLON | Mười môn phối hợp tiếng Anh là gì? | 3
+CARDIO | Bài tập tim mạch tiếng Anh là gì? | 2
+FLEXIBILITY | Độ dẻo dai tiếng Anh là gì? | 2
+PERSONAL BEST | Thành tích tốt nhất cá nhân tiếng Anh là gì? | 2 | PB
+HOME ADVANTAGE | Lợi thế sân nhà tiếng Anh là gì? | 2
+SUDDEN DEATH | Bàn thắng vàng (loạt sút cân não) tiếng Anh là gì? | 3
+MOUTHGUARD | Miếng bảo vệ răng tiếng Anh là gì? | 3 | MOUTH GUARD
+CHALK BAG | Túi phấn (leo núi, thể dục) tiếng Anh là gì? | 3
+STARTING BLOCK | Bàn đạp xuất phát tiếng Anh là gì? | 3 | STARTING BLOCKS
+LAP | Một vòng chạy tiếng Anh là gì? | 2
+OVERTAKE | Vượt lên (trong cuộc đua) tiếng Anh là gì? | 2 | PASS
+PHOTO FINISH | Về đích sát nút (phải xem ảnh) tiếng Anh là gì? | 3

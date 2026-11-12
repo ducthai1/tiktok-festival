@@ -1,0 +1,107 @@
+# Bộ đề · Ẩm thực
+FIG | Quả sung (quả vả) tiếng Anh là gì? | 3
+COCONUT MILK | Nước cốt dừa tiếng Anh là gì? | 2
+CONDENSED MILK | Sữa đặc có đường tiếng Anh là gì? | 2
+WHIPPED CREAM | Kem tươi đánh bông tiếng Anh là gì? | 2 | WHIPPING CREAM
+SOUR CREAM | Kem chua tiếng Anh là gì? | 3
+BROTH | Nước dùng (nước lèo) tiếng Anh là gì? | 2 | STOCK
+GRAVY | Nước sốt thịt (sốt nâu) tiếng Anh là gì? | 3
+MARINATE | Ướp (thịt, cá) tiếng Anh là gì? | 2 | MARINADE
+SEASONING | Gia vị nêm (bột nêm) tiếng Anh là gì? | 2
+MSG | Bột ngọt (mì chính) tiếng Anh là gì? | 2 | MONOSODIUM GLUTAMATE
+STARCH | Tinh bột (bột năng) tiếng Anh là gì? | 3 | CORNSTARCH, TAPIOCA STARCH
+YEAST | Men nở tiếng Anh là gì? | 2
+DOUGH | Bột nhào tiếng Anh là gì? | 2
+BATTER | Bột lỏng (để chiên giòn) tiếng Anh là gì? | 3
+BREADCRUMBS | Bột chiên xù tiếng Anh là gì? | 2 | PANKO, BREADCRUMB
+SKEWER | Xiên que (thịt xiên) tiếng Anh là gì? | 2
+SAUCEPAN | Nồi nhỏ có cán tiếng Anh là gì? | 2
+WOK | Chảo sâu lòng (chảo xào) tiếng Anh là gì? | 2
+STEAMER | Xửng hấp tiếng Anh là gì? | 2
+SIEVE | Cái rây bột tiếng Anh là gì? | 2 | STRAINER
+MORTAR | Cái cối giã tiếng Anh là gì? | 3 | MORTAR AND PESTLE
+PESTLE | Cái chày giã tiếng Anh là gì? | 3
+MEASURING CUP | Cốc đong tiếng Anh là gì? | 2
+OVEN MITT | Găng tay nhấc nồi tiếng Anh là gì? | 2 | OVEN GLOVE
+MINCE | Băm nhỏ (thịt) tiếng Anh là gì? | 2 | GRIND
+GRATE | Bào, nạo (phô mai, cà rốt) tiếng Anh là gì? | 2 | SHRED
+SIMMER | Đun liu riu tiếng Anh là gì? | 3
+SAUTE | Áp chảo (xào nhanh ít dầu) tiếng Anh là gì? | 3
+DEEP-FRY | Chiên ngập dầu tiếng Anh là gì? | 2 | DEEP FRY
+POACH | Chần (trứng chần nước sôi) tiếng Anh là gì? | 3
+BRAISE | Om, kho (thịt) tiếng Anh là gì? | 3
+STEW | Món hầm tiếng Anh là gì? | 2
+CARAMELIZE | Thắng đường (làm nước màu) tiếng Anh là gì? | 3 | CARAMELISE
+FERMENT | Lên men tiếng Anh là gì? | 2
+PICKLE | Dưa muối, đồ chua tiếng Anh là gì? | 2 | PICKLES
+VERMICELLI | Bún tiếng Anh là gì? | 2 | RICE VERMICELLI, RICE NOODLES
+GLASS NOODLES | Miến tiếng Anh là gì? | 2 | CELLOPHANE NOODLES
+RICE PAPER | Bánh tráng tiếng Anh là gì? | 2
+FISH BALL | Cá viên tiếng Anh là gì? | 1 | FISHBALL, FISH BALLS
+BEEF JERKY | Khô bò tiếng Anh là gì? | 2 | JERKY
+DRIED SQUID | Mực khô tiếng Anh là gì? | 2
+PORK BELLY | Thịt ba chỉ tiếng Anh là gì? | 2
+CHICKEN BREAST | Ức gà tiếng Anh là gì? | 1
+DRUMSTICK | Đùi gà tiếng Anh là gì? | 2 | CHICKEN LEG
+CHICKEN WING | Cánh gà tiếng Anh là gì? | 1 | CHICKEN WINGS
+LAMB | Thịt cừu non tiếng Anh là gì? | 2 | MUTTON
+VEAL | Thịt bê tiếng Anh là gì? | 3
+SCALLOP | Sò điệp tiếng Anh là gì? | 2
+MUSSEL | Con vẹm (chem chép) tiếng Anh là gì? | 3 | MUSSELS
+EEL | Con lươn tiếng Anh là gì? | 2
+TUNA | Cá ngừ tiếng Anh là gì? | 1
+SARDINE | Cá mòi tiếng Anh là gì? | 2
+ANCHOVY | Cá cơm tiếng Anh là gì? | 3
+MACKEREL | Cá thu tiếng Anh là gì? | 2
+CATFISH | Cá trê (cá basa) tiếng Anh là gì? | 2
+TILAPIA | Cá rô phi tiếng Anh là gì? | 3
+CHICKPEA | Đậu gà tiếng Anh là gì? | 3 | CHICKPEAS, GARBANZO
+LENTIL | Đậu lăng tiếng Anh là gì? | 3 | LENTILS
+MUNG BEAN | Đậu xanh tiếng Anh là gì? | 2 | MUNG BEANS
+RED BEAN | Đậu đỏ tiếng Anh là gì? | 1 | RED BEANS, ADZUKI BEAN
+SOYBEAN | Đậu nành tiếng Anh là gì? | 2 | SOY BEAN, SOYA BEAN
+SUNFLOWER SEEDS | Hạt hướng dương tiếng Anh là gì? | 2
+MACADAMIA | Hạt mắc ca tiếng Anh là gì? | 3
+CHESTNUT | Hạt dẻ tiếng Anh là gì? | 2
+LOTUS SEED | Hạt sen tiếng Anh là gì? | 2 | LOTUS SEEDS
+GINSENG | Nhân sâm tiếng Anh là gì? | 3
+STAR ANISE | Hoa hồi tiếng Anh là gì? | 3
+CHILI SAUCE | Tương ớt tiếng Anh là gì? | 1 | HOT SAUCE, SRIRACHA
+OYSTER SAUCE | Dầu hào tiếng Anh là gì? | 2
+SHRIMP PASTE | Mắm tôm tiếng Anh là gì? | 2
+LARD | Mỡ lợn (mỡ nước) tiếng Anh là gì? | 3
+MARGARINE | Bơ thực vật tiếng Anh là gì? | 3
+JELLY | Thạch rau câu tiếng Anh là gì? | 1 | JELLO, GELATIN
+FLAN | Bánh caramen tiếng Anh là gì? | 2 | CREME CARAMEL
+SPONGE CAKE | Bánh bông lan tiếng Anh là gì? | 2
+RICE CAKE | Bánh gạo tiếng Anh là gì? | 2
+HOT DOG | Bánh mì kẹp xúc xích tiếng Anh là gì? | 1 | HOTDOG
+CHEESEBURGER | Bánh kẹp thịt có phô mai tiếng Anh là gì? | 1
+PIE | Bánh nướng có nhân, vỏ giòn tiếng Anh là gì? | 2
+BISCUIT | Bánh quy tiếng Anh là gì? | 1 | COOKIE
+CRACKER | Bánh quy giòn mặn tiếng Anh là gì? | 2 | CRACKERS
+GUMMY | Kẹo dẻo tiếng Anh là gì? | 1 | GUMMIES, GUMMY BEAR
+CHEWING GUM | Kẹo cao su tiếng Anh là gì? | 1 | GUM, BUBBLE GUM
+ICE CUBE | Viên đá lạnh tiếng Anh là gì? | 1 | ICE CUBES
+TAP WATER | Nước máy tiếng Anh là gì? | 2
+MINERAL WATER | Nước khoáng tiếng Anh là gì? | 1
+HOT CHOCOLATE | Sô-cô-la nóng tiếng Anh là gì? | 1 | COCOA
+EGG YOLK | Lòng đỏ trứng tiếng Anh là gì? | 2 | YOLK
+EGG WHITE | Lòng trắng trứng tiếng Anh là gì? | 2
+BOILED EGG | Trứng luộc tiếng Anh là gì? | 1 | HARD-BOILED EGG
+SCRAMBLED EGGS | Trứng bác tiếng Anh là gì? | 2 | SCRAMBLED EGG
+LEFTOVERS | Đồ ăn thừa tiếng Anh là gì? | 2 | LEFTOVER
+TAKEAWAY | Đồ ăn mang đi tiếng Anh là gì? | 2 | TAKEOUT, TO GO
+VEGETARIAN | Người ăn chay tiếng Anh là gì? | 2
+VEGAN | Người ăn thuần chay tiếng Anh là gì? | 3
+APPETITE | Sự thèm ăn (khẩu vị) tiếng Anh là gì? | 2
+PORTION | Khẩu phần (một suất) tiếng Anh là gì? | 2 | SERVING
+SIDE DISH | Món ăn kèm tiếng Anh là gì? | 2 | SIDE
+MAIN COURSE | Món chính tiếng Anh là gì? | 1 | MAIN DISH, ENTREE
+TIP | Tiền boa tiếng Anh là gì? | 2 | GRATUITY
+SPOILED | Bị ôi thiu tiếng Anh là gì? | 2 | ROTTEN, SPOILT
+GREASY | Nhiều dầu mỡ tiếng Anh là gì? | 2 | OILY
+CHEWY | Dai (khi nhai) tiếng Anh là gì? | 2
+CRUNCHY | Giòn rụm tiếng Anh là gì? | 1 | CRISPY
+SOGGY | Bị ỉu, bị nhão tiếng Anh là gì? | 3
+BURNT | Bị cháy khét tiếng Anh là gì? | 2 | BURNED

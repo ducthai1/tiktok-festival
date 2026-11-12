@@ -299,3 +299,29 @@ test('follower flag from TikFinity followRole', async () => {
   const [event] = [normalizeTikFinityMessage({ event: 'chat', data: { userId: '5', uniqueId: 'e', nickname: 'E', comment: 'hi', followRole: 1 } })].flat();
   assert.equal(sanitizeLiveEvent(event).user.follower, true);
 });
+
+test('english rotation: general → set → back to general never repeats a word, survives a restart, and only a fully used pool starts over', async () => {
+  const { foldText } = await import('../src/games/text-match.js');
+  const key = (q) => foldText(q.answer).replace(/ /g, '');
+  const english = loadEnglishQuestions();
+  const sets = loadEnglishSets();
+  let saved = [];
+  const progress = { load: () => [...saved], save: (list) => { saved = [...list]; } };
+  const make = () => createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets, progress });
+  const asked = [];
+  let sw = make();
+  for (let i = 0; i < 100; i += 1) asked.push(key(sw.deck.next())); // Tổng hợp câu 1..100
+  const firstSet = Object.keys(sets).find((id) => sets[id].length);
+  sw.command(`deck-${firstSet}`);
+  for (let i = 0; i < 25; i += 1) asked.push(key(sw.deck.next())); // bộ riêng rồi tự quay về Tổng hợp
+  sw.command('deck-hard');
+  for (let i = 0; i < 25; i += 1) asked.push(key(sw.deck.next())); // đổi độ khó
+  sw = make(); // khởi động lại server: đọc sổ đã lưu
+  for (let i = 0; i < 100; i += 1) asked.push(key(sw.deck.next()));
+  assert.equal(new Set(asked).size, asked.length, 'có từ bị hỏi lặp');
+  // bộ nhỏ: hỏi hết thì vòng mới, không kẹt
+  const tiny = createEnglishSwitcher({ general: english.slice(0, 3), basic: [], sets: {} });
+  const round = Array.from({ length: 6 }, () => key(tiny.deck.next()));
+  assert.equal(new Set(round.slice(0, 3)).size, 3);
+  assert.equal(new Set(round.slice(3)).size, 3);
+});

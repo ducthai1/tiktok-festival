@@ -63,6 +63,11 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 
 - Node ≥ 20, ES modules, không framework; màn hình là three.js + DOM trong `public/stage/`. Chú thích tiếng Việt, ngắn, giải thích *vì sao*.
 - Bố cục màn hình theo vùng an toàn của TikTok (mục *Bố cục màn hình* trong README): chữ / bảng chỉ trong dải 180–1150 px, cách mép 94 px.
-- Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi | độ khó | cách khác`). Bộ đề tiếng Anh đổi bằng quà:
-  nhiều bộ chờ thì mỗi bộ ít câu đi (`english-switcher.js`, `adaptiveQuestions`).
+- Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi tiếng Anh là gì? | độ khó 1-3 | cách khác`).
+  Bộ đề tiếng Anh đổi bằng quà: nhiều bộ chờ thì mỗi bộ ít câu đi (`english-switcher.js`, `adaptiveQuestions`).
+- **Thêm từ tiếng Anh: không được trùng.** Mỗi bộ = file chính + file bổ sung `<bộ>-*.txt` (vd `toeic-them.txt`). Trước khi thêm,
+  kiểm đáp án chưa có ở BẤT KỲ file nào trong `bank/tieng-anh/`, `bank/tieng-anh-bo/`, `bank/lop-hoc/25-tieng-anh.txt`
+  (so theo chữ thường, bỏ dấu cách). Độ khó chỉ 1, 2, 3. Không dán đề lộ đáp án.
+- **Xoay vòng không lặp** (`english-switcher.js`): sổ "đã hỏi" dùng chung mọi bộ, theo từ tiếng Anh, lưu `data/english-seen.json`.
+  Đổi bộ / đổi độ khó / khởi động lại đều đi tiếp từ chưa hỏi; một bộ hỏi hết mới bắt đầu vòng mới cho riêng bộ đó. Có test.
 - Commit: tiêu đề kiểu `feat(quiz): …` / `fix(live): …` (tiếng Anh), thân giải thích vì sao. Chạy `npm run gate` trước khi push.

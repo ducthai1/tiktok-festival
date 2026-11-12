@@ -1,0 +1,69 @@
+# Bộ đề · TOEIC
+ADJOURN | Tạm hoãn cuộc họp tiếng Anh là gì? | 3
+ARRANGEMENT | Sự sắp xếp tiếng Anh là gì? | 2
+ASSEMBLY LINE | Dây chuyền lắp ráp tiếng Anh là gì? | 3
+ATTENDEE | Người tham dự tiếng Anh là gì? | 2
+AUCTION | Cuộc đấu giá tiếng Anh là gì? | 3
+BOARDROOM | Phòng họp hội đồng tiếng Anh là gì? | 2
+BOOKKEEPING | Ghi sổ kế toán tiếng Anh là gì? | 3
+BROKER | Người môi giới tiếng Anh là gì? | 3
+WHOLESALE | Bán buôn (bán sỉ) tiếng Anh là gì? | 2 | BULK
+RETAIL | Bán lẻ tiếng Anh là gì? | 2
+CLAIM | Yêu cầu bồi thường tiếng Anh là gì? | 3 | INSURANCE CLAIM
+CLERK | Nhân viên văn thư tiếng Anh là gì? | 2
+CONFIDENTIAL | Bảo mật (tài liệu mật) tiếng Anh là gì? | 2
+COUPON | Phiếu giảm giá tiếng Anh là gì? | 1 | VOUCHER
+COURIER | Dịch vụ chuyển phát tiếng Anh là gì? | 2
+CREDENTIALS | Giấy tờ chứng nhận năng lực tiếng Anh là gì? | 3
+DEBIT CARD | Thẻ ghi nợ tiếng Anh là gì? | 3 | DEBIT
+DEDUCT | Khấu trừ tiếng Anh là gì? | 3
+DISCONTINUE | Ngừng sản xuất tiếng Anh là gì? | 3
+DOWNSIZE | Thu hẹp quy mô (cắt giảm nhân sự) tiếng Anh là gì? | 3
+LAYOFF | Sa thải do cắt giảm tiếng Anh là gì? | 3 | LAY OFF
+DRESS CODE | Quy định trang phục tiếng Anh là gì? | 2
+ENCLOSE | Gửi kèm (trong thư) tiếng Anh là gì? | 3
+EXHIBIT | Trưng bày tiếng Anh là gì? | 2
+FARE | Giá vé (xe, tàu) tiếng Anh là gì? | 2
+FEE | Lệ phí tiếng Anh là gì? | 1
+FINANCE | Tài chính tiếng Anh là gì? | 1
+FREIGHT | Hàng hóa vận chuyển (cước) tiếng Anh là gì? | 3
+GRANT | Khoản tài trợ tiếng Anh là gì? | 3
+HANDOUT | Tài liệu phát tay tiếng Anh là gì? | 2
+HEADHUNTER | Người săn đầu người (tuyển dụng) tiếng Anh là gì? | 3
+INQUIRY | Yêu cầu thông tin tiếng Anh là gì? | 2 | ENQUIRY
+JOB OPENING | Vị trí đang tuyển tiếng Anh là gì? | 2 | OPENING, JOB VACANCY
+LABOR | Nhân công (lao động) tiếng Anh là gì? | 2 | LABOUR, WORKFORCE
+LETTERHEAD | Giấy có tiêu đề công ty tiếng Anh là gì? | 3
+LIAISON | Người liên lạc (đầu mối) tiếng Anh là gì? | 3
+MANUAL | Sách hướng dẫn sử dụng tiếng Anh là gì? | 1 | USER MANUAL, HANDBOOK
+MEMBERSHIP | Tư cách hội viên tiếng Anh là gì? | 1
+MILESTONE | Cột mốc (dự án) tiếng Anh là gì? | 2
+NEWSLETTER | Bản tin định kỳ tiếng Anh là gì? | 2
+NOMINATE | Đề cử tiếng Anh là gì? | 3
+ONBOARDING | Hội nhập nhân viên mới tiếng Anh là gì? | 3 | ORIENTATION
+OUTLET | Cửa hàng bán lẻ (điểm bán) tiếng Anh là gì? | 3
+PAYROLL | Bảng lương tiếng Anh là gì? | 3
+PREMISES | Cơ sở, mặt bằng (công ty) tiếng Anh là gì? | 3
+PREREQUISITE | Điều kiện tiên quyết tiếng Anh là gì? | 3
+PROFITABLE | Có lãi tiếng Anh là gì? | 2
+PROSPECTIVE | Tiềm năng (khách hàng tương lai) tiếng Anh là gì? | 3
+RECOMMENDATION | Thư giới thiệu tiếng Anh là gì? | 2 | REFERENCE
+REGISTRATION | Sự đăng ký tiếng Anh là gì? | 2
+REMINDER | Lời nhắc tiếng Anh là gì? | 1
+REPRESENTATIVE | Người đại diện tiếng Anh là gì? | 2 | REP
+RETURN POLICY | Chính sách đổi trả tiếng Anh là gì? | 2
+REVISE | Sửa lại (bản thảo) tiếng Anh là gì? | 2 | AMEND
+SHORTLIST | Danh sách rút gọn ứng viên tiếng Anh là gì? | 3
+SPONSOR | Nhà tài trợ tiếng Anh là gì? | 2
+STOCK | Cổ phiếu tiếng Anh là gì? | 2 | SHARE, SHARES
+SUGGESTION | Sự gợi ý, đề xuất tiếng Anh là gì? | 1
+SURPLUS | Thặng dư tiếng Anh là gì? | 3
+TELECONFERENCE | Hội nghị từ xa tiếng Anh là gì? | 3 | VIDEO CONFERENCE
+TRADE FAIR | Hội chợ thương mại tiếng Anh là gì? | 2 | TRADE SHOW
+URGENT | Khẩn cấp tiếng Anh là gì? | 1
+OFFICE SUPPLIES | Đồ dùng văn phòng tiếng Anh là gì? | 2
+JOB DESCRIPTION | Mô tả công việc tiếng Anh là gì? | 2 | JD
+PERFORMANCE REVIEW | Đánh giá hiệu quả làm việc tiếng Anh là gì? | 3 | APPRAISAL
+SALES REPRESENTATIVE | Nhân viên kinh doanh tiếng Anh là gì? | 2 | SALES REP, SALESPERSON
+CUSTOMER SERVICE | Dịch vụ chăm sóc khách hàng tiếng Anh là gì? | 1
+TERMS AND CONDITIONS | Điều khoản và điều kiện tiếng Anh là gì? | 2

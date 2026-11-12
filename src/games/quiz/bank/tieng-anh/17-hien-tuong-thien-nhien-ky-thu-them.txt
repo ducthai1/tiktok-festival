@@ -1,0 +1,31 @@
+# Tiếng Anh · Hiện tượng thiên nhiên, kỳ thú
+TYPHOON | Bão nhiệt đới (Tây Thái Bình Dương) tiếng Anh là gì? | 2
+VOLCANIC | Thuộc núi lửa tiếng Anh là gì? | 2
+SAVANNA | Xa-van (đồng cỏ nhiệt đới) tiếng Anh là gì? | 2 | SAVANNAH
+ESTUARY | Cửa sông tiếng Anh là gì? | 3
+PLATEAU | Cao nguyên tiếng Anh là gì? | 2
+MONSOON | Gió mùa tiếng Anh là gì? | 2
+HUMIDITY | Độ ẩm không khí tiếng Anh là gì? | 2
+PRECIPITATION | Lượng mưa (giáng thủy) tiếng Anh là gì? | 3 | RAINFALL
+PERMAFROST | Lớp băng vĩnh cửu tiếng Anh là gì? | 3
+EROSION | Sự xói mòn tiếng Anh là gì? | 2
+SEDIMENT | Trầm tích (phù sa) tiếng Anh là gì? | 2
+DESERTIFICATION | Sa mạc hóa tiếng Anh là gì? | 3
+BIODEGRADABLE | Có thể phân hủy sinh học tiếng Anh là gì? | 2
+COMPOST | Phân ủ hữu cơ tiếng Anh là gì? | 2
+OZONE | Tầng ô-dôn tiếng Anh là gì? | 2 | OZONE LAYER
+MIGRATION | Sự di cư tiếng Anh là gì? | 2
+CURRENT | Dòng hải lưu (dòng chảy) tiếng Anh là gì? | 2 | OCEAN CURRENT
+TIDAL | Thuộc thủy triều tiếng Anh là gì? | 2
+HAILSTORM | Mưa đá tiếng Anh là gì? | 2 | HAIL
+STALAGMITE | Măng đá (trong hang) tiếng Anh là gì? | 3
+DELTA | Châu thổ tiếng Anh là gì? | 2
+FJORD | Vịnh hẹp băng hà tiếng Anh là gì? | 3
+MANGROVE | Rừng ngập mặn tiếng Anh là gì? | 2
+GREENHOUSE GAS | Khí nhà kính tiếng Anh là gì? | 2 | GREENHOUSE GASES
+ACID RAIN | Mưa axit tiếng Anh là gì? | 2
+WATER CYCLE | Vòng tuần hoàn nước tiếng Anh là gì? | 2
+CARBON FOOTPRINT | Lượng khí thải các-bon tiếng Anh là gì? | 2
+SUSTAINABILITY | Tính bền vững tiếng Anh là gì? | 2
+OVERPOPULATION | Bùng nổ dân số tiếng Anh là gì? | 2
+REFORESTATION | Trồng lại rừng tiếng Anh là gì? | 2
