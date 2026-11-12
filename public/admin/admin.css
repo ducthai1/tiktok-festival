@@ -70,3 +70,7 @@ button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical
 .grant-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; max-height: 320px; overflow: auto; }
 .grant-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.06); }
 .grant-list li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* mất kết nối live quá 20 giây: băng đỏ nhấp nháy */
+.status.alarm { color: #fff; background: #b3122e; font-weight: 800; font-size: 18px; animation: alarm-blink 1s steps(2) infinite; }
+@keyframes alarm-blink { 50% { background: #5c0617; } }

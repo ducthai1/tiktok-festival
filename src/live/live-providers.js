@@ -9,7 +9,13 @@ import { normalizeTikFinityMessage } from './normalize-tikfinity.js';
 
 const CONNECTOR_EVENTS = ['chat', 'gift', 'like', 'member', 'follow', 'share', 'roomUser'];
 
-export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalog = () => {}, onDisconnected, onEnded }) {
+// TikTok báo kết thúc bằng ControlMessage: 3 = kết thúc thật, 4 = TẠM DỪNG (mạng máy phát / thoát app) — thư viện gộp cả hai
+// thành "streamEnd" rồi tự ngắt; tách ra để tạm dừng thì nối lại ngay.
+const STREAM_SUSPENDED = 4;
+// Tải danh mục quà cần gói Euler Business; gói thường lần nào cũng lỗi mà vẫn tốn lượt → mặc định tắt (EULER_FETCH_GIFTS=1 để bật).
+const FETCH_GIFT_CATALOG = process.env.EULER_FETCH_GIFTS === '1';
+
+export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalog = () => {}, onDisconnected, onEnded, onActivity = () => {} }) {
   let connection = null;
   return {
     async start() {
@@ -26,19 +32,22 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
       connection.on('error', (error) => {
         if (GIFT_ERRORS.includes(error?.info)) return;
         const msg = error?.exception?.message || error?.message || error;
-        if (!/UserOffline/i.test(msg)) console.warn('[tiktok] lỗi:', msg);
+        if (!/UserOffline/i.test(msg)) console.warn('[tiktok] lỗi:', error?.info || '', msg, error?.exception?.name || '');
       });
+      // mọi gói tin TikTok gửi về (kể cả số người xem, tim) — cho bộ canh chừng biết kết nối còn sống
+      connection.on('decodedData', () => onActivity());
       for (const type of CONNECTOR_EVENTS) {
         connection.on(type, (data) => emit(normalizeConnectorEvent(type, data)));
       }
-      connection.on('streamEnd', () => onEnded());
-      connection.on('disconnected', () => onDisconnected('mất kết nối'));
+      connection.on('streamEnd', (info) => onEnded(info?.action === STREAM_SUSPENDED ? 'suspended' : 'ended'));
+      connection.on('disconnected', (info) => onDisconnected(`mã ${info?.code ?? '?'}${info?.reason ? ` · ${info.reason}` : ''}`));
       const state = await connection.connect();
-      // thử lấy cả danh mục quà của phòng (cần khoá Euler gói cao); không được thì thôi, không ảnh hưởng kết nối
-      connection.fetchAvailableGifts().then((raw) => {
-        const catalog = normalizeGiftCatalog(raw);
-        if (catalog.length) onCatalog(catalog);
-      }).catch((error) => console.warn('[tiktok] chưa lấy được danh mục quà (sẽ gom dần từ quà nhận được):', error?.message || error));
+      if (FETCH_GIFT_CATALOG) {
+        connection.fetchAvailableGifts().then((raw) => {
+          const catalog = normalizeGiftCatalog(raw);
+          if (catalog.length) onCatalog(catalog);
+        }).catch((error) => console.warn('[tiktok] chưa lấy được danh mục quà (sẽ gom dần từ quà nhận được):', error?.message || error));
+      }
       return { roomId: String(state?.roomId || '') };
     },
     async stop() {
@@ -53,7 +62,7 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
   };
 }
 
-export function createTikFinityProvider({ url, emit, onDisconnected }) {
+export function createTikFinityProvider({ url, emit, onDisconnected, onActivity = () => {} }) {
   let socket = null;
   return {
     start() {
@@ -70,6 +79,7 @@ export function createTikFinityProvider({ url, emit, onDisconnected }) {
           resolve({ roomId: 'tikfinity' });
         });
         socket.on('message', (payload) => {
+          onActivity();
           for (const event of normalizeTikFinityMessage(payload)) emit(event);
         });
         socket.on('error', (error) => {

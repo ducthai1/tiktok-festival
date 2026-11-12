@@ -64,6 +64,9 @@ const socket = connectLiveSocket({
       $('app').hidden = true;
       toast('Token sai', true);
     } else if (m.t === 'hello') {
+      // server khởi động lại với code giao diện mới → tải lại trang (token vẫn giữ trong sessionStorage)
+      if (m.version && adminVersion && m.version !== adminVersion) return location.reload();
+      adminVersion = m.version || adminVersion;
       renderGames(m.games);
       applySettings(m.settings);
       renderLive(m.live);
@@ -179,12 +182,42 @@ function renderState(m) {
   $('totals').textContent = `Phiên này: ${t.viewers} người · ${t.diamonds}💎 · ${t.likes}❤ · ${t.chats} bình luận · ${t.follows} follow · ${t.shares} share`;
 }
 
+let adminVersion = '';
+let alarmTimer = 0;
+let lastAlarmBeep = 0;
+// Mất live đang chạy (đang nối lại) quá 20 giây → băng đỏ nhấp nháy + tiếng bíp mỗi 30 giây cho người vận hành biết ngay.
+function beep() {
+  try {
+    const ctx = new AudioContext();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.frequency.value = 880;
+    gain.gain.value = 0.15;
+    osc.connect(gain).connect(ctx.destination);
+    osc.start();
+    osc.stop(ctx.currentTime + 0.35);
+    osc.onended = () => ctx.close();
+  } catch {
+    // trình duyệt chặn âm thanh khi chưa bấm vào trang: chỉ còn băng đỏ
+  }
+}
 function renderLive(status) {
   if (!status) return;
   liveState = status.state;
   const el = $('live-status');
   el.className = `status ${status.state}`;
   el.textContent = status.message;
+  clearTimeout(alarmTimer);
+  if (status.state === 'reconnecting') {
+    alarmTimer = setTimeout(() => {
+      el.classList.add('alarm');
+      el.textContent = `⚠ MẤT KẾT NỐI LIVE — ${status.message}`;
+      if (Date.now() - lastAlarmBeep > 30000) {
+        lastAlarmBeep = Date.now();
+        beep();
+      }
+    }, 20000);
+  }
   const locked = liveState === 'connected';
   for (const b of document.querySelectorAll('[data-test], [id^="test-"] button, #test-crowd, [id^="test-arrive"], #demo button')) b.disabled = locked;
   $('test-note').textContent = locked ? 'Đang live thật: nút thử bị khoá để không lẫn tương tác giả vào buổi live.' : 'Sự kiện thử hiện nhãn “CHẾ ĐỘ THỬ” trên màn hình.';

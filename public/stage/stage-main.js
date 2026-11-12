@@ -36,6 +36,7 @@ const audio = createStageAudio();
 let settings = { legend: true };
 // quà đại diện từng bậc (server gửi: quà thật của phòng khi đang live, quà mẫu khi chưa)
 let giftTiers = [];
+let frontVersion = ''; // phiên bản giao diện lúc trang tải (server gửi trong 'hello')
 // Bảng chú thích = dòng thường của cảnh (tim, follow…) + mỗi bậc quà: ảnh 2 món quà thật + điều nó làm
 function legendFor(scene) {
   if (!scene) return [];
@@ -169,6 +170,11 @@ connectLiveSocket({
   onOpen: () => hud.setOffline(false),
   onClose: () => hud.setOffline(true),
   onMessage(message) {
+    // server khởi động lại với code giao diện mới → OBS tự tải lại trang (không cần bấm Refresh nguồn trình duyệt)
+    if (message.t === 'hello' && message.version) {
+      if (!frontVersion) frontVersion = message.version;
+      else if (frontVersion !== message.version) return location.reload();
+    }
     if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
       if (message.giftTiers || message.tiers) giftTiers = message.giftTiers || message.tiers;

@@ -217,6 +217,26 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 - Chủ đề chùa và quẻ xăm dễ bị xem là nhạy cảm (tôn giáo gắn với tiền). Hãy cân nhắc cách nói chuyện và cách đặt tên.
 - Chỉ live trên tài khoản đã xác thực theo quy định hiện hành.
 
+## Nhật ký (log) và xử lý sự cố mất dữ liệu live
+
+Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` (mỗi ngày một file, giữ 14 ngày; `data/` không lên git vì có tên người xem; token trang điều khiển bị che `***` trong file). Tìm nhanh:
+
+| Muốn biết | Tìm dòng |
+|---|---|
+| Lúc nào mất / có lại dữ liệu | `[live] trạng thái →` (connected / reconnecting / idle) và `nối lại được sau … giây` |
+| TikTok báo live tạm dừng / kết thúc / đóng kết nối | `TikTok báo live TẠM DỪNG`, `KẾT THÚC`, `TikTok đóng kết nối: mã …` |
+| Kết nối "còn" mà không có dữ liệu | `canh chừng: … giây không có dữ liệu` (tự nối lại sau 90 giây im lặng) |
+| Có cạn lượt ký Euler không | `kết nối … lần N trong ngày`, `kết nối thất bại (ratelimit / blocked)` |
+| Phòng đông có làm server nghẽn không | `[health] độ trễ xử lý … p99` (≥ 250ms ghi WARN "SERVER ĐANG NGHẼN"), `xử lý sự kiện … mất …ms (chậm)` |
+| Lưu lượng từng phút | `[live] 60 giây qua: chat … · like … · member … · roomUser …` |
+| Người vận hành đã bấm gì | `[admin] lệnh connect / disconnect / switch …` |
+
+Kết nối tự hồi phục: live **tạm dừng** (mạng máy phát chập chờn, thoát app) → thử lại mỗi 4 giây (3 phút đầu); live **kết thúc** → chờ live mới mỗi 20 giây rồi 2 phút; Euler giới hạn / chặn → giãn 30 s → 5 phút; một lần kết nối treo quá 25 giây thì bỏ, thử lại. Trang điều khiển hiện **băng đỏ nhấp nháy + tiếng bíp** khi mất live quá 20 giây.
+
+**Bắt buộc có `EULER_API_KEY` trong `.env`** (xem `.env.example`) — không có khoá TikTok dễ chặn / giới hạn. Danh mục quà qua Euler cần gói Business nên mặc định không tải (đặt `EULER_FETCH_GIFTS=1` nếu có gói), danh mục gom dần từ quà nhận được.
+
+Màn hình OBS và trang điều khiển **tự tải lại** khi server khởi động lại với code giao diện mới (không cần bấm Refresh nguồn trình duyệt).
+
 ## Kiểm tra
 
 ```bash

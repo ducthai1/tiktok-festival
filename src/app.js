@@ -1,4 +1,5 @@
 // Ráp mọi phần: HTTP + WebSocket + kết nối LIVE + 3 game + vòng tick 10 lần/giây.
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
@@ -10,12 +11,38 @@ import { isAllowedHost, safeImageUrl, securityHeaders } from './http/security.js
 import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
+import { log } from './logger.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
+
+/**
+ * "Phiên bản giao diện": dấu vân tay các file js/css/html trong public/. Màn hình OBS mở liền nhiều giờ, server khởi động lại
+ * với code mới thì nó chỉ nối lại WebSocket mà vẫn chạy code cũ (mất hiệu ứng mới) → thấy phiên bản khác là tự tải lại trang.
+ */
+function frontendVersion(dir) {
+  const hash = crypto.createHash('sha1');
+  const walk = (folder) => {
+    for (const entry of fs.readdirSync(folder, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
+      const full = path.join(folder, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name !== 'assets' && entry.name !== 'fonts') walk(full);
+      } else if (/\.(js|css|html)$/.test(entry.name)) {
+        const st = fs.statSync(full);
+        hash.update(`${path.relative(dir, full)}:${st.size}:${Math.round(st.mtimeMs)}|`);
+      }
+    }
+  };
+  try {
+    walk(dir);
+  } catch (error) {
+    log.warn('app', 'không tính được phiên bản giao diện:', error.message);
+  }
+  return hash.digest('hex').slice(0, 12);
+}
 
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], legend: true, sound: true, volume: 0.6,
@@ -73,6 +100,16 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   }
 
   let backupTimer = null;
+  // ghi KHÔNG chặn (phòng đông, server không được đứng chờ ổ cứng); lúc tắt server thì ghi đồng bộ cho chắc
+  let backupWriting = false;
+  const saveBackupAsync = () => {
+    if (backupWriting) return;
+    backupWriting = true;
+    fs.writeFile(hotBackupFile, JSON.stringify(hub.snapshot()), (error) => {
+      backupWriting = false;
+      if (error) log.warn('app', 'lỗi ghi backup nóng:', error.message);
+    });
+  };
   const saveBackup = () => {
     try {
       fs.writeFileSync(hotBackupFile, JSON.stringify(hub.snapshot()));
@@ -106,7 +143,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       if (!backupTimer) {
         backupTimer = setTimeout(() => {
           backupTimer = null;
-          saveBackup();
+          saveBackupAsync();
         }, 3000);
       }
     }
@@ -177,14 +214,31 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     onCatalog: (list) => mergeCatalog(list)
   });
 
-  const handleAdmin = (msg) => createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets })(msg);
+  // tạo một lần, lúc có lệnh đầu tiên (cần `sockets` — tạo ngay bên dưới)
+  let adminHandler = null;
+  const handleAdmin = async (msg) => {
+    adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets });
+    // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
+    if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
+      log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);
+    }
+    try {
+      return await adminHandler(msg);
+    } catch (error) {
+      log.warn('admin', `lệnh ${msg?.t} lỗi:`, error?.message || error);
+      throw error;
+    }
+  };
+  const version = frontendVersion(PUBLIC_DIR);
+  log.info('app', `phiên bản giao diện ${version}`);
   const sockets = createSocketHub({
     getPort: () => port,
     allowLan: config.allowLan,
     adminToken,
     onAdminMessage: handleAdmin,
     onClientReady(ws) {
-      sockets.send(ws, { t: 'hello', role: ws.role, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
+      log.info('ws', `${ws.role === 'admin' ? 'trang điều khiển' : 'màn hình'} đã nối`);
+      sockets.send(ws, { t: 'hello', role: ws.role, version, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
     }
