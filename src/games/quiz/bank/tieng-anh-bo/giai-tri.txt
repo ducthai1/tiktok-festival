@@ -1,0 +1,315 @@
+# Bộ đề · Giải trí
+MOVIE | Bộ phim điện ảnh chiếu trên màn ảnh tiếng Anh là gì? | 1 | FILM, MOTION PICTURE
+CINEMA | Rạp chiếu phim màn ảnh khổng lồ tiếng Anh là gì? | 1 | MOVIE THEATER, PICTURE HOUSE
+DIRECTOR | Đạo diễn chỉ đạo diễn xuất và góc máy tiếng Anh là gì? | 1 | FILMMAKER
+ACTOR | Nam diễn viên hoá thân vào vai diễn tiếng Anh là gì? | 1 | PERFORMER
+ACTRESS | Nữ diễn viên xinh đẹp trên màn bạc tiếng Anh là gì? | 1 | LEADING LADY
+STAR | Ngôi sao nổi tiếng hàng đầu giới giải trí tiếng Anh là gì? | 1 | MOVIE STAR, SUPERSTAR
+CELEBRITY | Người nổi tiếng có sức ảnh hưởng cộng đồng tiếng Anh là gì? | 1 | CELEB
+AUDIENCE | Khán giả ngồi xem chăm chú theo dõi buổi diễn tiếng Anh là gì? | 1 | SPECTATORS, VIEWERS
+SCENE | Một cảnh quay hấp dẫn trong phim tiếng Anh là gì? | 1 | SHOT
+SCRIPT | Kịch bản lời thoại của bộ phim tiếng Anh là gì? | 1 | SCREENPLAY
+PLOT | Cốt truyện diễn biến hấp dẫn gay cấn tiếng Anh là gì? | 2 | STORYLINE
+CHARACTER | Nhân vật xuất hiện trong phim truyện tiếng Anh là gì? | 1 | ROLE
+HERO | Người anh hùng chính nghĩa trừ gian diệt bạo tiếng Anh là gì? | 1 | SUPERHERO
+VILLAIN | Kẻ phản diện ác độc đối đầu nhân vật chính tiếng Anh là gì? | 2 | BAD GUY
+CAST | Dàn diễn viên tham gia diễn xuất trong phim tiếng Anh là gì? | 2 | ENSEMBLE
+SUBTITLE | Dòng phụ đề dịch nghĩa chạy dưới đáy màn hình tiếng Anh là gì? | 1 | CAPTION, SUBS
+SOUNDTRACK | Nhạc phim ca khúc chủ đề gắn liền với phim tiếng Anh là gì? | 1 | OST, FILM SCORE
+SPECIAL EFFECTS | Kỹ xảo hình ảnh vi tính cháy nổ ngoạn mục tiếng Anh là gì? | 2 | VFX, CGI
+TRAILER | Đoạn video ngắn giới thiệu phim chuẩn bị chiếu tiếng Anh là gì? | 1 | PREVIEW, TEASER
+PREMIERE | Buổi lễ công chiếu ra mắt phim đầu tiên tiếng Anh là gì? | 2 | RED CARPET PREMIERE
+BLOCKBUSTER | Phim bom tấn xô đổ mọi kỷ lục phòng vé tiếng Anh là gì? | 2 | HIT MOVIE
+DOCUMENTARY | Phim tài liệu ghi lại sự kiện người thật việc thật tiếng Anh là gì? | 2 | DOCUSERIES
+COMEDY | Thể loại phim hài kịch đem lại tiếng cười sảng khoái tiếng Anh là gì? | 1 | SITCOM
+HORROR | Thể loại phim kinh dị ma quái rùng rợn tiếng Anh là gì? | 1 | SCARY MOVIE
+ACTION | Thể loại phim hành động rượt đuổi võ thuật tiếng Anh là gì? | 1 | ACTION FILM
+DRAMA | Thể loại phim tâm lý chính kịch sâu sắc tiếng Anh là gì? | 1 | MELODRAMA
+ROMANCE | Phim ngôn tình lãng mạn tình cảm tiếng Anh là gì? | 1 | ROMANTIC FILM, ROM-COM
+ANIMATION | Thể loại phim hoạt hình 3D đồ họa vi tính tiếng Anh là gì? | 1 | ANIMATED FILM
+CARTOON | Phim hoạt hình vẽ tay vui nhộn cho trẻ nhỏ tiếng Anh là gì? | 1 | ANIME
+SCI-FI | Phim khoa học viễn tưởng du hành vũ trụ tiếng Anh là gì? | 2 | SCIENCE FICTION
+THRILLER | Thể loại phim giật gân kịch tính hồi hộp tiếng Anh là gì? | 2 | SUSPENSE FILM
+POPCORN | Bắp rang bơ thơm ngậy vừa ăn vừa xem phim tiếng Anh là gì? | 1 | CORN
+PRODUCER | Nhà sản xuất chi tiền đầu tư làm phim tiếng Anh là gì? | 2 | FILM PRODUCER
+GENRE | Thể loại phong cách nghệ thuật phim nhạc tiếng Anh là gì? | 2 | CATEGORY
+STUDIO | Phim trường ghi hình hoặc phòng thu âm tiếng Anh là gì? | 1 | SOUNDSTAGE
+STAGE | Sân khấu trung tâm biểu diễn ca múa kịch tiếng Anh là gì? | 1 | PLATFORM
+MUSIC | Âm nhạc nghệ thuật của âm thanh và giai điệu tiếng Anh là gì? | 1 | TUNES
+SONG | Một bài hát có ca từ và giai điệu ngọt ngào tiếng Anh là gì? | 1 | TRACK, TUNE
+SINGER | Ca sĩ cất cao giọng ca truyền cảm tiếng Anh là gì? | 1 | VOCALIST, ARTIST
+VOCALIST | Giọng ca lĩnh xướng trong ban nhạc tiếng Anh là gì? | 2 | LEAD SINGER
+BAND | Ban nhạc sống gồm các thành viên chơi nhạc cụ tiếng Anh là gì? | 1 | MUSICAL GROUP, ROCK BAND
+ORCHESTRA | Dàn nhạc giao hưởng hùng hậu hòa tấu tiếng Anh là gì? | 2 | SYMPHONY
+CHOIR | Dàn hợp xướng nhiều giọng hát hòa quyện tiếng Anh là gì? | 2 | CHORUS
+CONCERT | Đêm nhạc trực tiếp trước biển người hâm mộ tiếng Anh là gì? | 1 | LIVE SHOW, GIG
+FESTIVAL | Lễ hội âm nhạc hoành tráng ngoài trời tiếng Anh là gì? | 1 | MUSIC FESTIVAL
+ALBUM | Đĩa nhạc tuyển tập các sáng tác mới tiếng Anh là gì? | 1 | RECORD, LP
+LYRICS | Lời thơ ca từ của một bài hát tiếng Anh là gì? | 1 | WORDS, SONG LYRICS
+RHYTHM | Tiết tấu nhịp điệu rộn ràng của bản nhạc tiếng Anh là gì? | 2 | CADENCE, GROOVE
+BEAT | Nhịp phách đều đặn gõ theo tiếng trống tiếng Anh là gì? | 1 | TEMPO, METER
+MELODY | Giai điệu du dương thánh thót lọt tai tiếng Anh là gì? | 1 | TUNE
+GUITAR | Cây đàn ghi ta 6 dây mộc mạc tiếng Anh là gì? | 1 | ACOUSTIC GUITAR
+PIANO | Cây đàn dương cầm phím ngà lộng lẫy tiếng Anh là gì? | 1 | GRAND PIANO
+DRUMS | Bộ trống gõ giữ nhịp sôi nổi tiếng Anh là gì? | 1 | DRUM KIT
+VIOLIN | Cây đàn vĩ cầm kéo réo rắt da diết tiếng Anh là gì? | 1 | FIDDLE
+SAXOPHONE | Chiếc kèn saxophone uốn cong chơi nhạc jazz tiếng Anh là gì? | 2 | SAX
+TRUMPET | Chiếc kèn trumpet đồng âm vang dõng dạc tiếng Anh là gì? | 2 | BRASS HORN
+FLUTE | Cây sáo thổi hơi du dương réo rắt tiếng Anh là gì? | 1 | WOODEN FLUTE
+KEYBOARD | Chiếc đàn phím điện tử organ tiếng Anh là gì? | 1 | SYNTHESIZER
+BASS | Cây đàn ghi ta bass đánh nốt trầm bổng tiếng Anh là gì? | 2 | BASS GUITAR
+HARMONICA | Chiếc kèn ac-mô-ni-ca nhỏ ngậm miệng thổi tiếng Anh là gì? | 2 | MOUTH ORGAN
+CELLO | Cây đàn trung cầm lớn chống chân dưới sàn tiếng Anh là gì? | 2 | VIOLONCELLO
+FAN | Người hâm mộ theo dõi thần tượng từng bước đi tiếng Anh là gì? | 1 | FOLLOWER, SUPPORTER
+IDOL | Thần tượng được giới trẻ mến mộ cuồng nhiệt tiếng Anh là gì? | 1 | SUPERSTAR
+AUTOGRAPH | Chữ ký tay nắn nót của người nổi tiếng tặng fan tiếng Anh là gì? | 2 | SIGNATURE
+PAPARAZZI | Cánh săn ảnh lùng sục đời tư ngôi sao tiếng Anh là gì? | 2 | PHOTO HUNTERS
+RED CARPET | Thảm đỏ trải sàn đón dàn sao sải bước tiếng Anh là gì? | 1 | CARPET
+AWARD | Giải thưởng danh dự trao tặng cho tài năng tiếng Anh là gì? | 1 | PRIZE, TROPHY
+TROPHY | Chiếc cúp vàng sáng loáng tượng trưng chiến thắng tiếng Anh là gì? | 1 | CUP
+OSCAR | Tượng vàng Oscar danh giá bậc nhất điện ảnh tiếng Anh là gì? | 1 | ACADEMY AWARD
+GRAMMY | Kèn vàng Grammy giải thưởng âm nhạc đỉnh cao tiếng Anh là gì? | 1 | GRAMMY AWARD
+BILLBOARD | Bảng xếp hạng đĩa đơn và bài hát ăn khách tiếng Anh là gì? | 1 | CHARTS
+GAME | Trò chơi điện tử giải trí trên máy tính tiếng Anh là gì? | 1 | VIDEO GAME
+PLAYER | Người chơi tham gia thi đấu đối kháng tiếng Anh là gì? | 1 | GAMER
+LEVEL | Màn chơi vượt cấp trong trò chơi tiếng Anh là gì? | 1 | STAGE
+MISSION | Nhiệm vụ vượt thử thách trong game tiếng Anh là gì? | 1 | QUEST
+CONSOLE | Máy chơi game tay cầm chuyên dụng tiếng Anh là gì? | 2 | GAME CONSOLE
+JOYSTICK | Cần điều khiển xoay hướng chơi game tiếng Anh là gì? | 2 | GAMEPAD, CONTROLLER
+CHAMPION | Nhà quán quân bước lên bục vinh quang tiếng Anh là gì? | 1 | WINNER
+TOURNAMENT | Giải đấu thể thao điện tử quy mô lớn tiếng Anh là gì? | 2 | CHAMPIONSHIP
+SHOW | Chương trình biểu diễn nghệ thuật giải trí tiếng Anh là gì? | 1 | PERFORMANCE
+EPISODE | Một tập phát sóng của bộ phim truyền hình tiếng Anh là gì? | 1 | CHAPTER
+SERIES | Loạt phim truyền hình nhiều tập ăn khách tiếng Anh là gì? | 1 | TV SERIES, DRAMA SERIES
+SEASON | Một mùa phát sóng gồm nhiều tập phim tiếng Anh là gì? | 1 | SERIES RUN
+HOST | Người dẫn chương trình MC hoạt ngôn linh hoạt tiếng Anh là gì? | 1 | MC, PRESENTER
+INTERVIEW | Buổi trò chuyện phỏng vấn tâm sự với khách mời tiếng Anh là gì? | 1 | TALK SHOW
+MAGICIAN | Nhà ảo thuật biến hoá bồ câu và khăn tay tiếng Anh là gì? | 1 | ILLUSIONIST
+CIRCUS | Rạp xiếc nhào lộn xiếc thú vui mắt tiếng Anh là gì? | 1 | BIG TOP
+COMEDIAN | Nghệ sĩ hài mang tiếng cười cho khán giả tiếng Anh là gì? | 1 | STAND-UP COMIC
+DANCER | Vũ công biểu diễn bước nhảy dẻo dai tiếng Anh là gì? | 1 | BALLERINA
+BALLET | Vở vũ kịch múa ba lê kinh điển trên mũi chân tiếng Anh là gì? | 2 | CLASSICAL BALLET
+OPERA | Vở nhạc kịch thính phòng cổ điển giọng vang dội tiếng Anh là gì? | 2 | OPERA PLAY
+PERFORMANCE | Tiết mục biểu diễn nghệ thuật trước hội trường tiếng Anh là gì? | 1 | ACT
+CHOREOGRAPHY | Biên đạo múa dàn dựng đội hình nhảy tiếng Anh là gì? | 3 | DANCE ROUTINE
+CLOWN | Chú hề mặt trắng mũi đỏ làm trò cười tiếng Anh là gì? | 1 | JESTER
+JUGGLER | Nghệ sĩ xiếc tung hứng nhiều trái bóng khéo léo tiếng Anh là gì? | 2 | TOSS JUGGLER
+ACROBAT | Nghệ sĩ nhào lộn uốn dẻo đu dây trên không tiếng Anh là gì? | 2 | GYMNAST
+PUPPET | Con rối gỗ hoặc rối bóng cử động theo dây tiếng Anh là gì? | 1 | MARIONETTE
+PUPPETRY | Bộ môn nghệ thuật múa rối dân gian tiếng Anh là gì? | 2 | PUPPET SHOW
+VENTRILOQUIST | Nghệ sĩ tài ba nói tiếng bụng cử động rối tiếng Anh là gì? | 3
+MAKEUP ARTIST | Chuyên viên trang điểm hoá trang khuôn mặt tiếng Anh là gì? | 1 | COSMETICIAN
+STUNTMAN | Diễn viên đóng thế những pha nguy hiểm tiếng Anh là gì? | 2 | STUNT DOUBLE
+CAMERAMAN | Người quay phim cầm máy quay theo dõi diễn xuất tiếng Anh là gì? | 1 | CINEMATOGRAPHER
+CLAPPERBOARD | Tấm bảng đen gõ cạch báo bắt đầu bấm máy tiếng Anh là gì? | 2 | CLAPPER
+BOOM MIC | Cần micro dài vươn thu tiếng nói diễn viên tiếng Anh là gì? | 2 | BOOM POLE
+COSTUME | Trang phục hoá trang của nhân vật trong phim tiếng Anh là gì? | 1 | OUTFIT
+PROP | Đạo cụ diễn xuất trên phim trường tiếng Anh là gì? | 2 | STAGE PROP
+BOX OFFICE | Doanh thu phòng vé rạp chiếu phim tiếng Anh là gì? | 2 | TICKET BOOTH
+SEQUEL | Phần phim tiếp theo nối tiếp câu chuyện trước tiếng Anh là gì? | 2 | FOLLOW-UP
+PREQUEL | Phần phim tiền truyện kể lại quá khứ nhân vật tiếng Anh là gì? | 2 | BACKSTORY
+REMAKE | Bộ phim làm lại từ một tác phẩm xưa tiếng Anh là gì? | 2 | REBOOT
+SPOILER | Lời tiết lộ trước kết thúc làm mất hứng xem tiếng Anh là gì? | 1 | LEAK
+CLIFFHANGER | Cái kết mở lửng lơ nghẹt thở ở cuối tập phim tiếng Anh là gì? | 2 | SUSPENSE ENDING
+CAMEO | Vai diễn khách mời xuất hiện chớp nhoáng của ngôi sao tiếng Anh là gì? | 2 | GUEST APPEARANCE
+STAND-IN | Người đứng thế chỗ chỉnh góc máy và ánh sáng tiếng Anh là gì? | 3 | BODY DOUBLE
+VOICE ACTOR | Diễn viên lồng tiếng cho nhân vật hoạt hình tiếng Anh là gì? | 1 | DUBBER
+DUBBING | Kỹ thuật lồng tiếng đè lên giọng gốc tiếng Anh là gì? | 2 | VOICE-OVER
+STREAMING | Dịch vụ phát trực tuyến video và âm nhạc tiếng Anh là gì? | 1 | LIVE STREAMING
+PLAYLIST | Danh sách phát chọn lọc các ca khúc yêu thích tiếng Anh là gì? | 1 | TRACKLIST
+CHORUS | Đoạn điệp khúc cao trào dễ nhớ nhất bài hát tiếng Anh là gì? | 1 | HOOK, REFRAIN
+VERSE | Đoạn lời ca kể chuyện mở đầu bài hát tiếng Anh là gì? | 2 | STANZA
+INTRO | Đoạn dạo nhạc mở màn bài hát tiếng Anh là gì? | 1 | INTRODUCTION
+OUTRO | Đoạn nhạc kết thúc khép lại bài hát tiếng Anh là gì? | 2 | FINALE
+SOLO | Tiết mục đơn ca hoặc độc tấu nhạc cụ tiếng Anh là gì? | 1 | SOLO ACT
+DUET | Màn song ca ngọt ngào của hai ca sĩ tiếng Anh là gì? | 1 | DUO
+ENCORE | Lời kêu gọi vỗ tay hát thêm bài nữa của khán giả tiếng Anh là gì? | 2 | REPEAT
+METRONOME | Máy đếm nhịp gõ phách giữ nhịp cho người học đàn tiếng Anh là gì? | 2 | TEMPO TICKER
+TUNER | Máy lên dây đàn chỉnh đúng cao độ nốt tiếng Anh là gì? | 2 | PITCH PIPE
+AMPLIFIER | Bộ amply khuếch đại âm thanh guitar điện tiếng Anh là gì? | 2 | AMP
+SYNTHESIZER | Đàn synthesizer tạo âm thanh điện tử tổng hợp tiếng Anh là gì? | 2 | KEYBOARD SYNTH
+TAMBOURINE | Chiếc trống lắc tay có vòng chuông kim loại tiếng Anh là gì? | 2 | JINGLE RING
+TRIANGLE | Nhạc cụ kẻng tam giác gõ leng keng tiếng Anh là gì? | 2 | TRIANGLE BELL
+XYLOPHONE | Đàn mộc cầm gõ thanh gỗ phát ra âm trong trẻo tiếng Anh là gì? | 2 | WOODEN BELLS
+UKULELE | Cây đàn ukulele 4 dây nhỏ nhắn của xứ Hawaii tiếng Anh là gì? | 1 | HAWAIIAN GUITAR
+BANJO | Cây đàn banjo mặt tròn gảy nhạc đồng quê tiếng Anh là gì? | 2 | FIVE-STRING BANJO
+MANDOLIN | Chiếc đàn mandolin gảy dây réo rắt xứ Ý tiếng Anh là gì? | 2
+BAGPIPES | Kèn túi truyền thống độc đáo của xứ Scotland tiếng Anh là gì? | 2 | SCOTTISH PIPES
+ACCORDION | Cây đàn phong cầm xếp hộp kéo ra thụt vào tiếng Anh là gì? | 2 | SQUEEZEBOX
+OBOE | Cây kèn dăm kép bằng gỗ âm sắc ấm áp tiếng Anh là gì? | 3
+CLARINET | Cây kèn clarinet thân đen bóng thổi hơi tiếng Anh là gì? | 2
+BASSOON | Cây kèn đại dăm kép phát âm trầm sâu tiếng Anh là gì? | 3
+TUBA | Chiếc kèn đại bằng đồng to lớn nhất dàn nhạc tiếng Anh là gì? | 2 | BASS HORN
+GONG | Chiếc cồng chiêng đồng gõ vang dội núi rừng tiếng Anh là gì? | 1 | CHIME GONG
+CYMBALS | Cặp chũm chọe đồng đập vào nhau choang choang tiếng Anh là gì? | 2 | CRASH CYMBALS
+CASTANETS | Cặp phách gỗ kẹp ngón tay gõ nhịp điệu Flamenco tiếng Anh là gì? | 3 | CLAPPERS
+HARP | Cây đàn hạc dây vàng huyền diệu của thiên thần tiếng Anh là gì? | 2
+LUTE | Cây đàn nguyệt cổ xưa thời kỳ phục hưng tiếng Anh là gì? | 3
+RECORDING | Bản thu âm âm thanh được ghi lại tiếng Anh là gì? | 1 | AUDIO TRACK
+BROADCAST | Chương trình phát sóng trên sóng truyền hình đài phát thanh tiếng Anh là gì? | 1 | TRANSMISSION
+CHANNEL | Kênh truyền hình giải trí hoặc thời sự tiếng Anh là gì? | 1 | TV CHANNEL
+NETWORK | Hệ thống mạng lưới truyền hình phát sóng tiếng Anh là gì? | 2 | TELEVISION NETWORK
+RATING | Tỷ suất người xem đo độ ăn khách của chương trình tiếng Anh là gì? | 2 | VIEWERSHIP
+PRIME TIME | Khung giờ vàng phát sóng thu hút đông người xem nhất tiếng Anh là gì? | 2 | PEAK HOURS
+COMMERCIAL | Đoạn video quảng cáo chèn giữa chương trình tiếng Anh là gì? | 1 | TV AD, ADVERTISEMENT
+AUDITION | Buổi thi tuyển thử giọng tìm kiếm tài năng tiếng Anh là gì? | 1 | TRYOUT
+CONTESTANT | Thí sinh tham gia thi tài trong cuộc thi tiếng Anh là gì? | 1 | COMPETITOR
+JUDGE | Thành viên ban giám khảo chấm điểm nhận xét tiếng Anh là gì? | 1 | JURY MEMBER
+VOTE | Lượt bình chọn gửi tin nhắn của khán giả tiếng Anh là gì? | 1 | BALLOT
+REALITY SHOW | Chương trình truyền hình thực tế ghi lại đời thực tiếng Anh là gì? | 1 | REALITY TV
+GAME SHOW | Trò chơi truyền hình đố vui có thưởng tiếng Anh là gì? | 1 | QUIZ SHOW
+TALK SHOW | Chương trình trò chuyện đối thoại với người nổi tiếng tiếng Anh là gì? | 1 | CHAT SHOW
+NEWSCAST | Bản tin thời sự cập nhật tin tức tiếng Anh là gì? | 2 | NEWS BULLETIN
+WEATHER FORECAST | Bản tin dự báo thời tiết hàng ngày tiếng Anh là gì? | 1 | WEATHER REPORT
+ANIMATOR | Hoạ sĩ vẽ nhân vật hoạt hình chuyển động tiếng Anh là gì? | 2 | CARTOONIST
+ILLUSTRATOR | Hoạ sĩ vẽ tranh minh hoạ sách báo truyện tranh tiếng Anh là gì? | 2 | GRAPHIC ARTIST
+NOVEL | Cuốn tiểu thuyết văn học dày cộp tiếng Anh là gì? | 1 | FICTION BOOK
+COMIC BOOK | Cuốn truyện tranh tranh vẽ màu sắc cho tuổi teen tiếng Anh là gì? | 1 | GRAPHIC NOVEL
+MANGA | Truyện tranh phong cách Nhật Bản đọc từ phải sang tiếng Anh là gì? | 1 | JAPANESE COMIC
+SUPERHERO | Siêu anh hùng sở hữu siêu năng lực phi thường tiếng Anh là gì? | 1 | HERO
+MAGIC | Trò ảo thuật ma thuật kỳ bí tiếng Anh là gì? | 1 | WITCHCRAFT
+SPELL | Câu thần chú niệm phép biến hóa tiếng Anh là gì? | 2 | INCANTATION
+WAND | Cây đũa phép bằng gỗ phát ra tia sáng kỳ diệu tiếng Anh là gì? | 1 | MAGIC WAND
+POTION | Bình thuốc độc dược thần kỳ trong truyện cổ tích tiếng Anh là gì? | 2 | MAGIC BREW
+DRAGON | Con rồng thần thoại bay lượn phun lửa tiếng Anh là gì? | 1 | MYTHICAL DRAGON
+UNICORN | Chú kỳ lân một sừng trắng muốt thuần khiết tiếng Anh là gì? | 1 | HORNED HORSE
+FAIRY | Nàng tiên tí hon có đôi cánh mỏng lấp lánh tiếng Anh là gì? | 1 | PIXIE
+MONSTER | Quái vật khổng lồ hung tợn trong thần thoại tiếng Anh là gì? | 1 | BEAST
+GHOST | Bóng ma lướt qua rùng rợn trong ngôi nhà hoang tiếng Anh là gì? | 1 | PHANTOM, SPIRIT
+VAMPIRE | Ma cà rồng răng nanh hút máu bất tử tiếng Anh là gì? | 1 | DRACULA
+ZOMBIE | Xác sống biết đi lê bước dật dờ tiếng Anh là gì? | 1 | UNDEAD
+WEREWOLF | Người sói biến hình gầm rú dưới ánh trăng tròn tiếng Anh là gì? | 2 | WOLFMAN
+MUMMY | Xác ướp Ai Cập quấn băng vải trắng trong hầm mộ tiếng Anh là gì? | 1
+ALIEN | Người ngoài hành tinh lái đĩa bay đến Trái Đất tiếng Anh là gì? | 1 | EXTRATERRESTRIAL
+SPACESHIP | Con tàu vũ trụ du hành khám phá các vì sao tiếng Anh là gì? | 1 | STARSHIP
+ROBOT | Người máy thông minh hoạt động bằng điện cơ tiếng Anh là gì? | 1 | ANDROID
+CYBORG | Người nửa người nửa máy cấy ghép kim loại tiếng Anh là gì? | 2 | BIONIC HUMAN
+TIME TRAVEL | Khả năng du hành xuyên thời gian về quá khứ tiếng Anh là gì? | 2 | TIME MACHINE
+PORTAL | Cánh cổng không gian bước sang thế giới khác tiếng Anh là gì? | 2 | GATEWAY
+TREASURE | Rương kho báu vàng bạc chôn giấu ngoài đảo hoang tiếng Anh là gì? | 1 | RICHES
+PIRATE | Tên cướp biển mắt bịt chột giong buồm cướp tàu tiếng Anh là gì? | 1 | CORSAIR
+MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa tiếng Anh là gì? | 2 | KIỆT TÁC
+SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội tiếng Anh là gì? | 2 | BẢN GIAO HƯỞNG, GIAO HƯỞNG
+AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát tiếng Anh là gì? | 3 | KHÁN PHÒNG
+CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh tiếng Anh là gì? | 3 | QUAY PHIM
+EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật tiếng Anh là gì? | 2 | TRIỂN LÃM
+SCULPTURE | Tác phẩm điêu khắc đục đẽo từ đá hoặc đồng tiếng Anh là gì? | 2 | ĐIÊU KHẮC, TƯỢNG ĐIÊU KHẮC
+CALLIGRAPHY | Nghệ thuật viết thư pháp bằng bút lông uốn lượn uyển chuyển tiếng Anh là gì? | 3 | THƯ PHÁP
+PORTRAIT | Bức tranh vẽ chân dung cận cảnh khuôn mặt một người tiếng Anh là gì? | 2 | TRANH CHÂN DUNG, CHÂN DUNG
+LANDSCAPE | Bức tranh vẽ phong cảnh thiên nhiên núi non đồng cỏ tiếng Anh là gì? | 2 | TRANH PHONG CẢNH, PHONG CẢNH
+ILLUSION | Trò ảo ảnh đánh lừa thị giác người xem tiếng Anh là gì? | 2 | ẢO ẢNH, ẢO GIÁC
+SPOTLIGHT | Chiếc đèn rọi sân khấu chiếu ánh sáng vào nghệ sĩ biểu diễn tiếng Anh là gì? | 1 | ĐÈN RỌI, ĐÈN SÂN KHẤU
+CARNIVAL | Lễ hội hóa trang đường phố rực rỡ sắc màu và âm nhạc tiếng Anh là gì? | 2 | LỄ HỘI HÓA TRANG, LỄ HỘI
+APPLAUSE | Tiếng vỗ tay rộn rã tán thưởng của cả khán phòng tiếng Anh là gì? | 2 | TIẾNG VỖ TAY, TRÀNG VỖ TAY
+SCREENPLAY | Tập kịch bản chi tiết của bộ phim điện ảnh tiếng Anh là gì? | 3 | KỊCH BẢN PHIM, KỊCH BẢN
+NETFLIX | Dịch vụ xem phim trực tuyến phổ biến nhất thế giới tiếng Anh là gì? | 1 | STREAMING SERVICE
+SPOTIFY | Ứng dụng nghe nhạc trực tuyến hàng đầu tiếng Anh là gì? | 1 | MUSIC APP
+YOUTUBE | Nền tảng chia sẻ video lớn nhất hành tinh tiếng Anh là gì? | 1 | VIDEO PLATFORM
+TIKTOK | Mạng xã hội video ngắn nổi tiếng giới trẻ tiếng Anh là gì? | 1 | SHORT VIDEO APP
+PODCAST | Chương trình âm thanh phát thanh chủ đề để nghe tiếng Anh là gì? | 1 | AUDIO SHOW
+LIVESTREAM | Buổi phát video trực tiếp tương tác với người xem tiếng Anh là gì? | 1 | LIVE STREAM
+VLOGGER | Người làm video nhật ký đời sống chia sẻ lên mạng tiếng Anh là gì? | 1 | CONTENT CREATOR
+STREAMER | Người phát sóng trực tiếp chơi game nói chuyện tiếng Anh là gì? | 1 | LIVE STREAMER
+GAMER | Game thủ đam mê chơi các trò chơi điện tử tiếng Anh là gì? | 1 | PRO GAMER
+ESPORTS | Thể thao điện tử thi đấu chuyên nghiệp tiếng Anh là gì? | 1 | ELECTRONIC SPORTS
+COSPLAY | Trò hoá trang thành nhân vật truyện tranh game tiếng Anh là gì? | 1 | COSTUME PLAY
+ANIME | Hoạt hình phong cách truyện tranh Nhật Bản tiếng Anh là gì? | 1 | JAPANESE ANIMATION
+FANDOM | Cộng đồng những người cùng hâm mộ một thần tượng tiếng Anh là gì? | 1 | FAN CLUB
+LIGHTSTICK | Gậy phát sáng cổ vũ thần tượng trong concert tiếng Anh là gì? | 1 | GLOW STICK
+FANMEETING | Buổi họp mặt giao lưu ấm cúng giữa thần tượng và fan tiếng Anh là gì? | 1 | FAN MEET
+COMEBACK | Sự trở lại sân khấu với sản phẩm âm nhạc mới tiếng Anh là gì? | 1 | MUSIC RETURN
+DEBUT | Màn ra mắt chính thức bước chân vào showbiz tiếng Anh là gì? | 1 | FIRST APPEARANCE
+TRAINEE | Thực tập sinh đang rèn luyện trước khi ra mắt tiếng Anh là gì? | 2 | IDOL TRAINEE
+CHART-TOPPER | Bài hát leo lên vị trí dẫn đầu bảng xếp hạng tiếng Anh là gì? | 2 | NUMBER ONE HIT
+MAINSTREAM | Xu hướng văn hoá âm nhạc đại chúng phổ biến tiếng Anh là gì? | 2 | POP CULTURE
+INDIE | Âm nhạc hoặc phim độc lập không phụ thuộc hãng lớn tiếng Anh là gì? | 2 | INDEPENDENT MUSIC
+UNDERGROUND | Dòng nhạc ngầm cá tính không theo trào lưu tiếng Anh là gì? | 2 | SUB-CULTURE
+HIP HOP | Dòng nhạc và văn hoá hip hop đường phố tiếng Anh là gì? | 1 | HIP-HOP
+RAP | Thể loại nhạc đọc lời ca nhanh có nhịp điệu vần điệu tiếng Anh là gì? | 1 | RAP MUSIC
+RAPPER | Rapper cất lời rap gieo vần sắc bén tiếng Anh là gì? | 1 | MC
+POP | Thể loại nhạc pop đại chúng bắt tai dễ nghe tiếng Anh là gì? | 1 | POP MUSIC
+ROCK | Dòng nhạc rock mạnh mẽ với tiếng guitar điện gầm rú tiếng Anh là gì? | 1 | ROCK AND ROLL
+JAZZ | Dòng nhạc jazz ngẫu hứng kèn saxophone quyến rũ tiếng Anh là gì? | 1 | JAZZ MUSIC
+BLUES | Dòng nhạc blues trầm buồn nguồn gốc từ người Mỹ gốc Phi tiếng Anh là gì? | 2
+R&B | Dòng nhạc R&B nhịp điệu uyển chuyển lôi cuốn tiếng Anh là gì? | 1 | RHYTHM AND BLUES
+EDM | Dòng nhạc điện tử sôi động quẩy tung sàn nhảy tiếng Anh là gì? | 1 | DANCE MUSIC
+DJ | Người chỉnh nhạc trộn nhạc khuấy động bữa tiệc tiếng Anh là gì? | 1 | DISC JOCKEY
+REMIX | Bản phối lại mới mẻ của một bài hát cũ tiếng Anh là gì? | 1 | NEW MIX
+COVER | Bản hát lại ca khúc của ca sĩ khác tiếng Anh là gì? | 1 | COVER VERSION
+KARAOKE | Hoạt động hát theo nhạc đệm có lời trên màn hình tiếng Anh là gì? | 1 | SING-ALONG
+VIRAL | Hiện tượng lan truyền với tốc độ chóng mặt trên mạng tiếng Anh là gì? | 1 | TRENDING
+MEME | Hình ảnh hoặc video hài hước chế lại lan truyền tiếng Anh là gì? | 1 | INTERNET MEME
+TREND | Xu hướng trào lưu đang thịnh hành được bắt chước tiếng Anh là gì? | 1 | FAD
+HASHTAG | Thẻ đánh dấu từ khoá bắt đầu bằng dấu thăng tiếng Anh là gì? | 1 | TOPIC TAG
+SUBSCRIBER | Người bấm đăng ký theo dõi kênh video tiếng Anh là gì? | 1 | FOLLOWER
+VIEW | Lượt xem hiển thị độ ăn khách của video tiếng Anh là gì? | 1 | PAGEVIEW
+LIKE | Nút bấm yêu thích bày tỏ tình cảm tiếng Anh là gì? | 1 | THUMBS UP
+SHARE | Thao tác chia sẻ bài viết video cho bạn bè tiếng Anh là gì? | 1 | REPOST
+COMMENT | Bình luận ý kiến phản hồi dưới bài viết tiếng Anh là gì? | 1 | REPLY
+NOTIFICATION | Thông báo báo tin có nội dung mới tiếng Anh là gì? | 1 | ALERT
+CLIP | Đoạn video ngắn vài phút tiếng Anh là gì? | 1 | VIDEO CLIP
+HIGHLIGHT | Khoảnh khắc đáng nhớ ấn tượng nhất buổi diễn tiếng Anh là gì? | 1 | BEST MOMENTS
+BLOOPER | Cảnh quay hỏng hậu trường cười ra nước mắt tiếng Anh là gì? | 2 | GAG REEL, OUTTAKE
+BEHIND THE SCENES | Hậu trường phía sau ống kính của đoàn làm phim tiếng Anh là gì? | 1 | MAKING OF, BTS
+BALCONY SEATS | Hàng ghế trên tầng lầu ngắm sân khấu tiếng Anh là gì? | 2 | UPPER TIER
+VIP SEAT | Ghế ngồi hạng sang vị trí đẹp nhất khán phòng tiếng Anh là gì? | 1 | PREMIUM SEAT
+FRONT ROW | Hàng ghế đầu tiên sát mép sân khấu tiếng Anh là gì? | 1 | FIRST ROW
+BACKSTAGE | Khu vực hậu trường phía sau cánh gà tiếng Anh là gì? | 1 | DRESSING ROOM
+GREEN ROOM | Phòng nghỉ ngơi của nghệ sĩ trước khi ra sân khấu tiếng Anh là gì? | 2 | ARTIST LOUNGE
+CURTAIN CALL | Màn cúi chào khán giả khi hạ màn buổi diễn tiếng Anh là gì? | 2 | FINAL BOW
+STANDING OVATION | Tràng pháo tay nồng nhiệt toàn bộ khán giả đứng dậy tiếng Anh là gì? | 2 | PROLONGED APPLAUSE
+CHEER | Tiếng hò reo cổ vũ khích lệ tinh thần tiếng Anh là gì? | 1 | ROAR
+BOOING | Tiếng la ó la hét phản đối chê bai tiếng Anh là gì? | 2 | JEERING
+STAGE LIGHTS | Hệ thống đèn màu rực rỡ chiếu sáng sân khấu tiếng Anh là gì? | 1 | THEATER LIGHTING
+FOG MACHINE | Máy phun khói mờ ảo lãng mạn trên sân khấu tiếng Anh là gì? | 2 | SMOKE GENERATOR
+LASER SHOW | Màn trình diễn tia laser quét nhiều màu ấn tượng tiếng Anh là gì? | 1 | LIGHT SHOW
+CONFETTI CANNON | Pháo bắn giấy vụn kim tuyến tung bay mừng chiến thắng tiếng Anh là gì? | 2 | CONFETTI BLAST
+FIREWORK DISPLAY | Màn bắn pháo hoa rực rỡ trên bầu trời tiếng Anh là gì? | 1 | PYROTECHNICS
+TICKET COUNTER | Quầy bán vé xem phim xem ca nhạc tiếng Anh là gì? | 1 | BOX OFFICE WINDOW
+SOLD OUT | Tình trạng cháy vé không còn chỗ trống tiếng Anh là gì? | 1 | FULL HOUSE
+SCALPER | Phe vé chợ đen bán lại vé giá cắt cổ tiếng Anh là gì? | 2 | TICKET TOUT
+VIP PASS | Thẻ thông hành đặc biệt vào khu vực VIP tiếng Anh là gì? | 1 | ALL-ACCESS PASS
+MERCHANDISE | Đồ lưu niệm áo mũ in hình thần tượng tiếng Anh là gì? | 1 | MERCH
+FANART | Tranh vẽ thần tượng do người hâm mộ tự vẽ tiếng Anh là gì? | 1 | FAN ART
+FANFIC | Truyện tự sáng tác do fan viết về nhân vật yêu thích tiếng Anh là gì? | 2 | FAN FICTION
+SUBSCRIPTION | Gói thuê bao định kỳ hàng tháng xem phim nghe nhạc tiếng Anh là gì? | 1 | MONTHLY PLAN
+PAY-PER-VIEW | Hình thức trả tiền xem trực tiếp từng trận đấu sự kiện tiếng Anh là gì? | 2 | PPV
+HD | Độ phân giải hình ảnh sắc nét độ nét cao tiếng Anh là gì? | 1 | HIGH DEFINITION
+4K | Độ phân giải siêu nét gấp 4 lần chuẩn Full HD tiếng Anh là gì? | 1 | ULTRA HD
+BLU-RAY | Đĩa quang chất lượng cao xem phim nét căng tiếng Anh là gì? | 2 | BLURAY DISC
+SCREENWRITER | Nhà biên kịch chắp bút viết nên cốt truyện kịch bản tiếng Anh là gì? | 2 | SCRIPTWRITER
+COMPOSER | Nhạc sĩ sáng tác giai điệu bản nhạc tiếng Anh là gì? | 1 | SONGWRITER
+LYRICIST | Nhà viết lời ca từ cho bài hát tiếng Anh là gì? | 2 | WORDSMITH
+CONDUCTOR | Nhạc trưởng cầm đũa chỉ huy cả dàn nhạc giao hưởng tiếng Anh là gì? | 2 | MAESTRO
+CONCERTMASTER | Nghệ sĩ vĩ cầm trưởng lĩnh xướng dàn nhạc tiếng Anh là gì? | 3 | FIRST VIOLIN
+SOLOIST | Nghệ sĩ độc tấu đơn ca trên sân khấu tiếng Anh là gì? | 2 | FEATURED ARTIST
+CHORISTER | Thành viên hát trong dàn hợp xướng tiếng Anh là gì? | 2 | CHOIR SINGER
+PRIMA DONNA | Nữ ca sĩ chính xuất sắc nhất trong vở opera tiếng Anh là gì? | 3 | DIVA
+TENOR | Giọng nam cao vút đầy nội lực trong opera tiếng Anh là gì? | 2 | HIGH MALE VOICE
+SOPRANO | Giọng nữ cao vút thanh thoát nhất tiếng Anh là gì? | 2 | HIGH FEMALE VOICE
+BARITONE | Giọng nam trung ấm áp truyền cảm tiếng Anh là gì? | 2
+ALTO | Giọng nữ trầm dày dặn tiếng Anh là gì? | 2 | CONTRALTO
+BASS VOICE | Giọng nam trầm ấm sâu lắng nhất tiếng Anh là gì? | 2 | DEEP VOICE
+FALSETTO | Kỹ thuật hát giọng gió giả thanh cao vút tiếng Anh là gì? | 3 | HEAD VOICE
+VIBRATO | Kỹ thuật ngân rung giọng trong thanh nhạc tiếng Anh là gì? | 3
+PITCH | Cao độ nốt nhạc trầm hay bổng tiếng Anh là gì? | 2 | TONE PITCH
+OCTAVE | Một quãng tám gồm 8 nốt nhạc tiếng Anh là gì? | 2 | MUSICAL INTERVAL
+CHORD | Hợp âm phối hợp nhiều nốt vang lên cùng lúc tiếng Anh là gì? | 2 | HARMONY CHORD
+KEYNOTE | Nốt chủ âm định hình giọng của bài hát tiếng Anh là gì? | 2 | TONIC
+ACOUSTICS | Đặc tính âm học vang dội của khán phòng tiếng Anh là gì? | 3 | SOUND QUALITY
+REVERB | Hiệu ứng âm vang vọng lại không gian tiếng Anh là gì? | 2 | REVERBERATION
+ECHO | Tiếng vọng dội lại từ vách núi tiếng Anh là gì? | 1
+AUTOTUNE | Phần mềm chỉnh sửa giọng hát đúng cao độ tiếng Anh là gì? | 1 | AUTO-TUNE, PITCH CORRECTION
+PLAYBACK | Hát nhép theo đĩa thu sẵn trên sân khấu tiếng Anh là gì? | 1 | LIP-SYNC, LIP SYNC
+LIVE VOCALS | Giọng hát mộc trực tiếp 100% không nhép tiếng Anh là gì? | 1 | RAW SINGING
+UNPLUGGED | Buổi diễn nhạc mộc chỉ dùng nhạc cụ thùng không cắm điện tiếng Anh là gì? | 2 | ACOUSTIC SET
+JAM SESSION | Buổi chơi nhạc ngẫu hứng cùng nhau của các nhạc công tiếng Anh là gì? | 2 | IMPROV
+AUDITORY | Thuộc về thính giác và cảm nhận âm thanh tiếng Anh là gì? | 3
+BLOCKING | Sự sắp xếp vị trí đứng và di chuyển của diễn viên trên sân khấu tiếng Anh là gì? | 3 | STAGE MOVEMENT
+SOLILOQUY | Đoạn độc thoại nội tâm bộc bạch một mình của nhân vật tiếng Anh là gì? | 3 | MONOLOGUE
+DIALOGUE | Cuộc đối thoại trò chuyện qua lại giữa hai nhân vật tiếng Anh là gì? | 1 | CONVERSATION
+PROLOGUE | Phần mở đầu dẫn chuyện cho cả tác phẩm tiếng Anh là gì? | 2 | FOREWORD
+EPILOGUE | Phần vĩ thanh kết thúc khép lại câu chuyện tiếng Anh là gì? | 2 | AFTERWORD
+ACT | Một hồi kịch lớn trong vở kịch nhiều màn tiếng Anh là gì? | 1 | PLAY SECTION
+CURTAIN RISES | Khoảnh khắc tấm màn nhung kéo lên mở màn tiếng Anh là gì? | 2
+CURTAIN FALLS | Khoảnh khắc tấm màn nhung hạ xuống khép lại tiếng Anh là gì? | 2

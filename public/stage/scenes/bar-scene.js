@@ -74,7 +74,7 @@ export function createBarScene({ hud, labels, audio, pipeline }) {
       meter.root.classList.toggle('party', party);
       meter.update(party ? 1 : state.vibe / state.vibeGoal, party ? `TIỆC! ${Math.ceil(state.partyMs / 1000)}s` : `${formatNumber(state.vibe)} / ${formatNumber(state.vibeGoal)}`);
       hud.setStats([`👥 ${state.patrons.length} khách`, `💎 ${formatNumber(snapshot.totals.diamonds)}`]);
-      hud.setBoard('TOP DÂN CHƠI', snapshot.top.map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
+      hud.setBoard('TOP DÂN CHƠI', snapshot.top.slice(0, 5).map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
       crowd.sync(state.patrons, new Set(snapshot.viewers?.pending || []));
       syncDrinks(state.patrons);
     },

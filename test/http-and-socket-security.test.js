@@ -41,6 +41,7 @@ const waitFor = async (inbox, predicate, ms = 2000) => {
     if (hit) return hit;
     await new Promise((r) => setTimeout(r, 20));
   }
+  console.log('waitFor inbox last 10:', inbox.slice(-10));
   throw new Error('timeout');
 };
 

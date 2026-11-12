@@ -157,3 +157,151 @@ PERSPECTIVE | Góc nhìn tiếng Anh là gì? | 3 | VIEWPOINT, POINT OF VIEW, VI
 PHENOMENON | Hiện tượng tiếng Anh là gì? | 3
 HYPOTHESIS | Giả thuyết tiếng Anh là gì? | 3 | THEORY
 CONTRAST | Sự tương phản tiếng Anh là gì? | 3 | DIFFERENCE
+DEGRADATION | Sự suy thoái, xuống cấp tiếng Anh là gì? | 3 | DETERIORATION, DECLINE
+AFFORDABLE | Giá cả phải chăng tiếng Anh là gì? | 2 | REASONABLE, INEXPENSIVE
+ACCESSIBLE | Dễ dàng tiếp cận tiếng Anh là gì? | 2 | REACHABLE, AVAILABLE
+PERSUASIVE | Có tính thuyết phục tiếng Anh là gì? | 2 | CONVINCING
+PROLIFIC | Năng suất cao, phong phú tiếng Anh là gì? | 3 | PRODUCTIVE, FRUITFUL
+REVOLUTION | Cuộc cách mạng tiếng Anh là gì? | 2 | UPRISING
+MORTALITY | Tỷ lệ tử vong tiếng Anh là gì? | 3 | MORTALITY RATE, DEATH RATE
+LITERACY | Trình độ biết chữ (biết đọc biết viết) tiếng Anh là gì? | 3
+OBSTACLE | Trở ngại, chướng ngại vật tiếng Anh là gì? | 2 | BARRIER, HINDRANCE, IMPEDIMENT
+VULNERABLE | Dễ bị tổn thương tiếng Anh là gì? | 3 | SUSCEPTIBLE, EXPOSED
+PREDOMINANT | Chiếm ưu thế, chủ yếu tiếng Anh là gì? | 3 | DOMINANT, MAIN, PRIMARY
+DETERIORATE | Xấu đi, suy giảm tiếng Anh là gì? | 3 | WORSEN, DECLINE
+PREVALENT | Phổ biến, thịnh hành tiếng Anh là gì? | 3 | WIDESPREAD, COMMON
+EXACERBATE | Làm trầm trọng thêm tiếng Anh là gì? | 3 | WORSEN, AGGRAVATE
+SUBSTANTIATE | Chứng minh, xác minh tiếng Anh là gì? | 3 | PROVE, VERIFY, CONFIRM
+MITIGATE | Giảm nhẹ, làm dịu bớt tiếng Anh là gì? | 3 | REDUCE, LESSEN, ALLEVIATE
+AMELIORATE | Cải thiện (tình hình xấu) tiếng Anh là gì? | 3 | IMPROVE, BETTER
+PARADIGM | Mô hình, mẫu hình tiếng Anh là gì? | 3 | MODEL, PATTERN
+COMPREHENSIVE | Toàn diện, bao quát tiếng Anh là gì? | 3 | THOROUGH, COMPLETE, ALL-INCLUSIVE
+COGNITIVE | Thuộc về nhận thức tiếng Anh là gì? | 3 | MENTAL
+DEMOGRAPHIC | Nhân khẩu học (thông tin dân số) tiếng Anh là gì? | 3 | DEMOGRAPHICS
+STIGMA | Định kiến, vết nhơ xã hội tiếng Anh là gì? | 3 | SHAME, DISGRACE
+DEPRIVATION | Sự thiếu thốn, tước đoạt tiếng Anh là gì? | 3 | PRIVATION, HARDSHIP
+
+UNPRECEDENTED | Chưa từng có tiền lệ trước đây | 3 | CHƯA TỪNG CÓ
+SUBSTANTIAL | Đáng kể / lớn lao | 3 | ĐÁNG KỂ
+FEASIBLE | Khả thi / có thể thực hiện được | 3 | KHẢ THI
+DETRIMENTAL | Gây hại / có hại nghiêm trọng | 3 | GÂY HẠI
+DOMINANT | Chiếm ưu thế / thống trị | 3 | THỐNG TRỊ
+IMPLEMENT | Triển khai / thi hành chính sách | 3 | TRIỂN KHAI
+PERSISTENT | Kiên trì / dai dẳng | 3 | DAI DẲNG
+PROFOUND | Sâu sắc / tác động mạnh mẽ | 3 | SÂU SẮC
+REVOLUTIONIZE | Cách mạng hóa / đổi mới hoàn toàn | 3 | CÁCH MẠNG HÓA
+VERSATILE | Đa năng / linh hoạt | 3 | ĐA NĂNG
+DISCREPANCY | Sự khác biệt / sự lệch nhau | 3 | SỰ LỆCH NHAU
+EQUIVALENT | Tương đương / giá trị như nhau | 3 | TƯƠNG ĐƯƠNG
+
+CONTEMPORARY | Hiện đại / đương đại | 3 | ĐƯƠNG ĐẠI
+DISPARITY | Sự chênh lệch rõ rệt | 3 | CHÊNH LỆCH
+MANDATORY | Bắt buộc tuân thủ | 3 | BẮT BUỘC
+OBSOLETE | Lạc hậu / lỗi thời | 3 | LỖI THỜI
+PLAUSIBLE | Hợp lý / đáng tin | 3 | HỢP LÝ
+QUALITATIVE | Định tính / về mặt chất lượng | 3 | ĐỊNH TÍNH
+QUANTITATIVE | Định lượng / về mặt con số | 3 | ĐỊNH LƯỢNG
+RATIONAL | Hợp lý / trí tuệ | 3 | HỢP LÝ
+SOVEREIGNTY | Chủ quyền quốc gia | 3 | CHỦ QUYỀN
+
+AMBIGUOUS | Mơ hồ / nhập nhằng | 3 | MƠ HỒ
+ANACHRONISTIC | Lỗi thời / sai thời đại | 3 | LỖI THỜI
+ARTICULATE | Ăn nói lưu loát / rõ ràng | 3 | LƯU LOÁT
+COHERENT | Mạch lạc / chặt chẽ | 3 | MẠCH LẠC
+CONSEQUENTIAL | Quan trọng / hệ trọng | 3 | QUAN TRỌNG
+CUMULATIVE | Tích lũy dồn lại | 3 | TÍCH LŨY
+DIVERSIFY | Đa dạng hóa | 3 | ĐA DẠNG HÓA
+ELOQUENT | Có tài hùng biện | 3 | HÙNG BIỆN
+EMPIRICAL | Dựa trên kinh nghiệm thực tế | 3 | THỰC NGHIỆM
+EQUIVOCAL | Lập lờ / nước đôi | 3 | LẬP LỜ
+EXEMPLARY | Gương mẫu / tiêu biểu | 3 | GƯƠNG MẪU
+FALLACIOUS | Sai lầm / ngụy biện | 3 | SAI LẦM
+HOMOGENEOUS | Đồng nhất / thuần nhất | 3 | ĐỒNG NHẤT
+INCENTIVE | Sự khuyến khích / khích lệ | 3 | KHUYẾN KHÍCH
+INHERENT | Vốn có / nội tại | 3 | VỐN CÓ
+INNATE | Bẩm sinh | 3 | BẨM SINH
+INTANGIBLE | Vô hình / không chạm được | 3 | VÔ HÌNH
+METICULOUS | Tỉ mỉ / kỹ lưỡng | 3 | TỈ MỈ
+NEGLIGIBLE | Không đáng kể | 3 | KHÔNG ĐÁNG KỂ
+OBJECTIVE | Khách quan | 2 | KHÁCH QUAN
+OBSCURE | Mờ mịt / khó hiểu | 3 | MỜ MỊT
+PARADOX | Nghịch lý | 3 | NGHỊCH LÝ
+PRAGMATIC | Thực dụng / thực tế | 3 | THỰC TẾ
+REDUNDANT | Dư thừa / không cần thiết | 3 | DƯ THỪA
+SPECULATIVE | Có tính suy đoán | 3 | SUY ĐOÁN
+SUBSEQUENT | Xảy ra sau đó | 3 | SAU ĐÓ
+SUPERFICIAL | Hời hợt / nông cạn | 3 | HỜI HỢT
+SYPNOTIC | Có tính thôi miên | 3 | THÔI MIÊN
+TANGIBLE | Hữu hình / có thể chạm được | 3 | HỮU HÌNH
+UBIQUITOUS | Phổ biến ở khắp mọi nơi | 3 | PHỔ BIẾN
+ZEALOUS | Hăng hái / nhiệt huyết | 3 | HĂNG HÁI
+ADVOCATE | Ủng hộ / tán thành | 2 | ỦNG HỘ
+ALLEVIATE | Làm nhẹ bớt / giảm bớt | 3 | GIẢM BỚT
+COLLABORATE | Cộng tác / hợp tác | 2 | HỢP TÁC
+ENDEAVOR | Nỗ lực / cố gắng | 3 | NỖ LỰC
+
+APPREHENSIVE | Cảm giác lo âu băn khoăn về một điều gì đó sắp xảy đến | 3 | LO ÂU, BĂN KHOĂN
+LETHARGIC | Cảm giác uể oải, đờ đẫn, thiếu hụt toàn bộ năng lượng sống | 3 | UỂ OẢI
+QUINTESSENTIAL | Thuộc về phần tinh túy, điển hình hoàn hảo nhất của một phong cách | 3 | TINH TÚY, ĐIỂN HÌNH
+UBIQUITY | Sự hiện diện phổ biến ở khắp mọi nơi cùng lúc | 3 | PHỔ BIẾN KHẮP NƠI
+VEHEMENT | Thái độ phản đối mãnh liệt kịch liệt khăng khăng | 3 | MÃNH LIỆT
+EPITOME | Hình mẫu thu nhỏ tiêu biểu nhất cho một đức tính cao đẹp | 3 | HÌNH MẪU TIÊU BIỂU
+INNOCUOUS | Hoàn toàn vô hại, không gây ra bất cứ mối đe dọa nào | 3 | VÔ HẠI
+
+FASTIDIOUS | Tính cách kỹ tính, kén chọn, đòi hỏi mọi thứ phải hoàn hảo | 3 | KỸ TÍNH, CẦU TOÀN
+COLLOQUIAL | Ngôn ngữ văn nói thân mật đời thường của người bản xứ | 3 | KHẨU NGỮ, VĂN NÓI
+ZEAL | Lòng nhiệt thành, hăng hái cháy bỏng với một lý tưởng | 3 | NHIỆT THÀNH
+
+METAPHOR | Biện pháp tu từ ẩn dụ ví von trong văn học tiếng Anh là gì? | 2 | ẨN DỤ
+SIMILE | Biện pháp so sánh ví von dùng chữ like hoặc as tiếng Anh là gì? | 2 | SO SÁNH
+HYPERBOLE | Phép nói quá khoa trương phóng đại trong văn học tiếng Anh là gì? | 3 | NÓI QUÁ
+IRONY | Sự mỉa mai châm biếm ngầm đầy thâm thúy tiếng Anh là gì? | 2 | CHÂM BIẾM, MỈA MAI
+RHETORIC | Nghệ thuật tu từ hùng biện thuyết phục người nghe tiếng Anh là gì? | 3 | THUẬT TU TỪ
+NUANCE | Sắc thái ý nghĩa tinh tế nhỏ nhặt giữa hai từ ngữ tiếng Anh là gì? | 3 | SẮC THÁI
+COHESION | Sự liên kết mạch lạc chặt chẽ giữa các câu văn trong đoạn tiếng Anh là gì? | 2 | SỰ LIÊN KẾT
+COHERENCE | Tính mạch lạc logic về mặt ý tưởng của bài viết tiếng Anh là gì? | 2 | TÍNH MẠCH LẠC
+PARAPHRASE | Kỹ năng diễn giải lại câu bằng từ ngữ khác giữ nguyên nghĩa tiếng Anh là gì? | 2 | DIỄN GIẢI LẠI
+OVERSTATEMENT | Lời nói phóng đại quá mức vượt sự thật tiếng Anh là gì? | 3 | NÓI PHÓNG ĐẠI
+UNDERSTATEMENT | Cách nói giảm nói tránh hạ bớt mức độ nghiêm trọng tiếng Anh là gì? | 3 | NÓI GIẢM NÓI TRÁNH
+CONTRADICTION | Sự mâu thuẫn trái ngược nhau chan chát trong luận điểm tiếng Anh là gì? | 2 | SỰ MÂU THUẪN
+FALLACY | Ngụy biện sai lầm logic trong lập luận tiếng Anh là gì? | 3 | NGỤY BIỆN
+OMNIPRESENT | Hiện diện ở khắp muôn nơi bao trùm không gian tiếng Anh là gì? | 3 | HIỆN DIỆN KHẮP NƠI
+TRANSIENT | Tạm thời ngắn ngủi thoáng qua rồi biến mất tiếng Anh là gì? | 3 | THOÁNG QUA, TẠM THỜI
+PERPETUAL | Vĩnh viễn không bao giờ ngừng lặp đi lặp lại tiếng Anh là gì? | 3 | VĨNH VIỄN
+EVERLASTING | Bền lâu mãi mãi trường tồn cùng thời gian tiếng Anh là gì? | 2 | MÃI MÃI, TRƯỜNG TỒN
+AMBIGUITY | Sự mơ hồ đa nghĩa không rõ ràng tiếng Anh là gì? | 3 | SỰ MƠ HỒ
+UNEQUIVOCAL | Rõ ràng dứt khoát không thể hiểu lầm tiếng Anh là gì? | 3 | DỨT KHOÁT
+INDISPENSABLE | Không thể thiếu được, đóng vai trò sống còn tiếng Anh là gì? | 3 | KHÔNG THỂ THIẾU
+SUPERFLUOUS | Thừa thãi không cần thiết vượt mức đòi hỏi tiếng Anh là gì? | 3 | THỪA THÃI
+PARAMOUNT | Tối quan trọng, có tầm quan trọng tối thượng hàng đầu tiếng Anh là gì? | 3 | TỐI QUAN TRỌNG
+EXPONENTIAL | Tăng trưởng theo cấp số nhân thần tốc tiếng Anh là gì? | 3 | CẤP SỐ NHÂN
+MARGINAL | Thuộc về phần rìa, mép hoặc chênh lệch nhỏ tiếng Anh là gì? | 3 | NHỎ NHẶT
+SALUBRIOUS | Lành mạnh bổ ích tốt cho sức khỏe cơ thể tiếng Anh là gì? | 4 | LÀNH MẠNH
+PERVASIVE | Lan tỏa tỏa khắp len lỏi vào mọi ngóc ngách xã hội tiếng Anh là gì? | 3 | LAN TỎA KHẮP NƠI
+CATALYST | Chất xúc tác đẩy nhanh tiến trình thay đổi tiếng Anh là gì? | 2 | CHẤT XÚC TÁC
+IMPEDIMENT | Chướng ngại vật cản trở bước tiến phía trước tiếng Anh là gì? | 3 | CHƯỚNG NGẠI VẬT
+DETERRENT | Biện pháp răn đe ngăn chặn hành vi xấu tiếng Anh là gì? | 3 | BIỆN PHÁP RĂN ĐE
+SURMOUNT | Vượt qua khắc phục được khó khăn trở ngại lớn tiếng Anh là gì? | 3 | VƯỢT QUA
+EXEMPLIFY | Minh họa làm gương mẫu tiêu biểu cho một luận điểm tiếng Anh là gì? | 3 | MINH HỌA
+ELUCIDATE | Làm sáng tỏ giải thích cặn kẽ một vấn đề phức tạp tiếng Anh là gì? | 3 | LÀM SÁNG TỎ
+REFUTE | Bác bỏ luận điệu sai trái đưa ra phản biện tiếng Anh là gì? | 3 | BÁC BỎ
+CONCEDE | Thừa nhận nhượng bộ một phần lý lẽ của đối phương tiếng Anh là gì? | 3 | NHƯỢNG BỘ, THỪA NHẬN
+PREPONDERANCE | Sự vượt trội chiếm ưu thế áp đảo về số lượng tiếng Anh là gì? | 4 | SỰ ÁP ĐẢO
+DISSEMINATE | Truyền bá phổ biến rộng rãi thông tin kiến thức tiếng Anh là gì? | 3 | TRUYỀN BÁ, PHỔ BIẾN
+PROPAGATE | Nhân giống hoặc tuyên truyền lan rộng quan điểm tiếng Anh là gì? | 3 | TUYÊN TRUYỀN
+ASPIRATION | Khát vọng hoài bão ước mơ cháy bỏng trong lòng tiếng Anh là gì? | 2 | KHÁT VỌNG, HOÀI BÃO
+PARADIGM SHIFT | Sự thay đổi bước ngoặt mang tính căn bản trong nhận thức tiếng Anh là gì? | 3 | BƯỚC NGOẶT NHẬN THỨC
+STATUS QUO | Tình trạng hiện tại nguyên trạng giữ nguyên tiếng Anh là gì? | 3 | NGUYÊN TRẠNG, HIỆN TRẠNG
+DELINEATE | Phác thảo mô tả rõ ràng các đặc điểm hoặc ranh giới tiếng Anh là gì? | 3 | PHÁC THẢO RÕ RÀNG
+ENUMERATE | Liệt kê từng mục một cách có hệ thống tiếng Anh là gì? | 3 | LIỆT KÊ
+HYPOTHESIZE | Đặt ra giả thuyết để kiểm chứng bằng bằng chứng tiếng Anh là gì? | 3 | ĐẶT GIẢ THUYẾT
+CORROBORATE | Xác nhận củng cố thêm bằng chứng hoặc lập luận tiếng Anh là gì? | 3 | XÁC NHẬN THÊM
+EXTRAPOLATE | Ngoại suy dự đoán xu hướng vượt ra ngoài dữ liệu có sẵn tiếng Anh là gì? | 4 | NGOẠI SUY
+INTERPOLATE | Nội suy ước tính giá trị nằm giữa các điểm dữ liệu đã biết tiếng Anh là gì? | 4 | NỘI SUY
+CORROBORATION | Bằng chứng bổ sung xác nhận tính đúng đắn của một tuyên bố tiếng Anh là gì? | 3 | BẰNG CHỨNG XÁC NHẬN
+DICHOTOMY | Sự phân đôi đối lập rõ ràng giữa hai điều tương phản tiếng Anh là gì? | 3 | SỰ PHÂN ĐÔI
+EUPHEMISM | Cách nói giảm nói tránh thay từ thô tục bằng từ nhẹ hơn tiếng Anh là gì? | 3 | NÓI GIẢM NÓI TRÁNH
+ABSTAIN | Kiềm chế không tham gia bỏ phiếu hoặc không ăn uống thứ gì tiếng Anh là gì? | 3 | KIỀM CHẾ
+SCRUTINIZE | Xem xét kỹ lưỡng kiểm tra chi tiết từng phần tiếng Anh là gì? | 3 | XEM XÉT KỸ
+SYNTHESIZE | Tổng hợp kết hợp nhiều ý tưởng hoặc thông tin thành một cái mới tiếng Anh là gì? | 3 | TỔNG HỢP
+CONTEMPLATE | Suy ngẫm suy nghĩ sâu sắc về điều gì đó tiếng Anh là gì? | 3 | SUY NGẪM

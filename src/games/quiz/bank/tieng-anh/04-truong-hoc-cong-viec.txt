@@ -153,3 +153,63 @@ CREDIT CARD | Thẻ tín dụng tiếng Anh là gì? | 3
 BARGAIN | Mặc cả, trả giá tiếng Anh là gì? | 3 | HAGGLE
 REFUND | Hoàn tiền (trả lại tiền) tiếng Anh là gì? | 3
 SAVINGS | Tiền tiết kiệm tiếng Anh là gì? | 3 | SAVING
+
+CURRICULUM | Chương trình giảng dạy / khung môn học | 3 | CHƯƠNG TRÌNH HỌC
+ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2 | BÀI TẬP
+PRESENTATION | Bài thuyết trình / bài báo cáo | 2 | THUYẾT TRÌNH
+CERTIFICATE | Chứng chỉ / bằng cấp | 2 | CHỨNG CHỈ
+DIPLOMA | Bằng tốt nghiệp | 3 | BẰNG TỐT NGHIỆP
+INTERNSHIP | Kỳ thực tập của sinh viên | 2 | THỰC TẬP
+EXECUTIVE | Giám đốc điều hành / người quản lý | 3 | GIÁM ĐỐC
+ENTREPRENEUR | Nhà khởi nghiệp / doanh nhân | 3 | DOANH NHÂN
+RESIGNATION | Việc nộp đơn xin nghỉ việc | 3 | NGHỈ VIỆC
+QUALIFICATION | Trình độ chuyên môn / năng lực | 3 | TRÌNH ĐỘ
+HEADQUARTERS | Trụ sở chính của công ty | 3 | TRỤ SỞ CHÍNH
+PENSION | Tiền lương hưu | 3 | LƯƠNG HƯU
+WORKSHOP | Hội thảo thực hành / buổi tập huấn | 2 | HỘI THẢO
+SEMINAR | Buổi thảo luận chuyên đề | 3 | CHUYÊN ĐỀ
+LABORATORY | Phòng thí nghiệm khoa học | 2 | PHÒNG THÍ NGHIỆM
+COMPETENCE | Năng lực / tay nghề | 3 | NĂNG LỰC
+PROFICIENCY | Độ thành thạo / độ giỏi | 3 | THÀNH THẠO
+WORKPLACE | Môi trường làm việc / nơi làm việc | 2 | NƠI LÀM VIỆC
+
+PROFESSOR | Giáo sư đại học giảng dạy | 2 | GIÁO SƯ
+TUTOR | Gia sư dạy kèm | 1 | GIA SƯ
+LECTURER | Giảng viên đại học | 2 | GIẢNG VIÊN
+CURRICULUM VITAE | Bản sơ yếu lý lịch xin việc (CV) | 3 | CV
+RECRUITMENT | Đợt tuyển dụng nhân sự | 2 | TUYỂN DỤNG
+TRAINEE | Thực tập sinh / người được đào tạo | 2 | THỰC TẬP SINH
+SUPERVISOR | Người giám sát công việc | 2 | GIÁM SÁT
+PHARMACIST | Dược sĩ bán thuốc | 2 | DƯỢC SĨ
+TRANSLATOR | Biên dịch viên | 2 | BIÊN DỊCH
+INTERPRETER | Phiên dịch viên nói trực tiếp | 3 | PHIÊN DỊCH
+ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3 | KHỞI NGHIỆP
+COMPENSATION | Tiền đền bù / thù lao | 3 | THÙ LAO
+WORKLOAD | Khối lượng công việc | 2 | KHỐI LƯỢNG CÔNG VIỆC
+
+ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ tiếng Anh là gì? | 1 | PHI HÀNH GIA, COSMONAUT
+DETECTIVE | Thám tử tư chuyên nghiệp điều tra manh mối phá án tiếng Anh là gì? | 2 | THÁM TỬ, INVESTIGATOR
+DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán tiếng Anh là gì? | 3 | NHÀ NGOẠI GIAO
+ARCHAEOLOGIST | Nhà khảo cổ học khai quật lăng mộ và di tích cổ tiếng Anh là gì? | 3 | NHÀ KHẢO CỔ
+PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý tiếng Anh là gì? | 3 | NHÀ TRIẾT HỌC
+PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần tiếng Anh là gì? | 3 | CHUYÊN GIA TÂM LÝ
+VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo tiếng Anh là gì? | 2 | BÁC SĨ THÚ Y, VET
+FLIGHT ATTENDANT | Tiếp viên hàng không phục vụ hành khách trên chuyến bay tiếng Anh là gì? | 2 | TIẾP VIÊN HÀNG KHÔNG
+ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao tiếng Anh là gì? | 3 | NHÀ THIÊN VĂN
+THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên tiếng Anh là gì? | 3 | LUẬN VĂN, DISSERTATION
+METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày tiếng Anh là gì? | 3 | DỰ BÁO THỜI TIẾT
+LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện tiếng Anh là gì? | 2 | THỦ THƯ
+ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng tiếng Anh là gì? | 2 | THỢ ĐIỆN
+PLUMBER | Người thợ sửa ống nước đến nhà kiểm tra vòi nước rò rỉ tiếng Anh là gì? | 2 | THỢ SỬA ỐNG NƯỚC
+CARPENTER | Người thợ mộc đục đẽo gỗ làm bàn ghế giường tủ tiếng Anh là gì? | 2 | THỢ MỘC
+AUDITOR | Kiểm toán viên soát xét các con số báo cáo tài chính tiếng Anh là gì? | 3 | KIỂM TOÁN VIÊN
+
+JUDGE | Vị thẩm phán cầm búa gõ phán quyết tại phiên tòa tiếng Anh là gì? | 1 | THẨM PHÁN
+BIOLOGIST | Nhà sinh học nghiên cứu thế giới sinh vật động thực vật tiếng Anh là gì? | 2 | NHÀ SINH HỌC
+PHYSICIST | Nhà vật lý học nghiên cứu lực hấp dẫn và năng lượng vũ trụ tiếng Anh là gì? | 2 | NHÀ VẬT LÝ
+DESIGNER | Nhà thiết kế sáng tạo bản vẽ thời trang và đồ họa tiếng Anh là gì? | 1 | NHÀ THIẾT KẾ
+MUSICIAN | Nhạc sĩ sáng tác giai điệu và chơi nhạc cụ điêu luyện tiếng Anh là gì? | 1 | NHẠC SĨ
+COMPOSER | Nhà soạn nhạc các bản giao hưởng thính phòng cổ điển tiếng Anh là gì? | 2 | NHÀ SOẠN NHẠC
+TAILOR | Người thợ may đo cắt vải may quần áo vừa vặn dáng người tiếng Anh là gì? | 2 | THỢ MAY
+BUTCHER | Người bán thịt cầm dao pha thịt tại quầy sạp chợ tiếng Anh là gì? | 2 | NGƯỜI BÁN THỊT
+BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng lò nướng tiếng Anh là gì? | 1 | THỢ LÀM BÁNH

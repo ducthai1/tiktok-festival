@@ -1,0 +1,343 @@
+# Bộ đề · Đồ vật
+KEY | Chìa khoá mở ổ khoá cửa tiếng Anh là gì? | 1 | KEYS
+DOOR | Cánh cửa ra vào căn phòng tiếng Anh là gì? | 1 | DOORS
+LOCK | Ổ khoá bấm móc kim loại tiếng Anh là gì? | 1 | PADLOCK
+CLOCK | Chiếc đồng hồ treo tường trong phòng tiếng Anh là gì? | 1 | WALL CLOCK
+WATCH | Chiếc đồng hồ đeo trên cổ tay tiếng Anh là gì? | 1 | WRISTWATCH
+MIRROR | Chiếc gương soi mặt phản chiếu hình ảnh tiếng Anh là gì? | 1 | LOOKING GLASS
+FAN | Chiếc quạt điện làm mát không khí tiếng Anh là gì? | 1 | ELECTRIC FAN
+LAMP | Đèn bàn hoặc đèn ngủ để bàn tiếng Anh là gì? | 1 | DESK LAMP, TABLE LAMP
+TABLE | Cái bàn ăn hoặc bàn uống nước tiếng Anh là gì? | 1 | DINING TABLE
+CHAIR | Cái ghế ngồi có tựa lưng tiếng Anh là gì? | 1 | SEAT
+BED | Chiếc giường êm nằm ngủ tiếng Anh là gì? | 1 | BEDSTEAD
+SOFA | Ghế sofa bọc đệm dài trong phòng khách tiếng Anh là gì? | 1 | COUCH
+DESK | Bàn học tập hoặc bàn làm việc văn phòng tiếng Anh là gì? | 1 | WORK DESK
+CUP | Cái tách, cái ly nhỏ uống nước tiếng Anh là gì? | 1 | MUG, GLASS
+BOWL | Cái bát (cái chén) ăn cơm tiếng Anh là gì? | 1
+PLATE | Chiếc đĩa tròn đựng thức ăn tiếng Anh là gì? | 1 | DISH
+FORK | Cái nĩa (cái dĩa) xiên thức ăn tiếng Anh là gì? | 1
+SPOON | Cái thìa (cái muỗng) xúc súp tiếng Anh là gì? | 1
+KNIFE | Con dao thái cắt gọt trong nhà bếp tiếng Anh là gì? | 1
+CHOPSTICKS | Đôi đũa gắp thức ăn tiếng Anh là gì? | 1 | CHOPSTICK
+BOTTLE | Cái chai đựng nước uống tiếng Anh là gì? | 1 | WATER BOTTLE
+BOX | Chiếc hộp giấy hoặc thùng đựng đồ tiếng Anh là gì? | 1 | CARTON
+BAG | Chiếc túi xách đựng đồ cá nhân tiếng Anh là gì? | 1 | HANDBAG
+BACKPACK | Chiếc ba lô đeo vai tiếng Anh là gì? | 1 | RUCKSACK, KNAPSACK
+WALLET | Chiếc ví tiền nam nhỏ bỏ túi tiếng Anh là gì? | 1 | BILLFOLD
+PURSE | Chiếc ví tiền nữ hoặc túi xách nhỏ tiếng Anh là gì? | 1 | HANDBAG
+UMBRELLA | Cây ô (cây dù) che mưa che nắng tiếng Anh là gì? | 1 | PARASOL
+TOWEL | Khăn bông tắm lau khô người tiếng Anh là gì? | 1 | BATH TOWEL
+SOAP | Cục xà phòng (xà bông) rửa tay tiếng Anh là gì? | 1 | BAR SOAP
+COMB | Chiếc lược chải tóc mượt mà tiếng Anh là gì? | 1 | HAIR COMB
+BRUSH | Cây cọ hoặc bàn chải cầm tay tiếng Anh là gì? | 1
+TOOTHBRUSH | Bàn chải đánh răng vệ sinh miệng tiếng Anh là gì? | 1
+TOOTHPASTE | Tuýp kem đánh răng thơm mát tiếng Anh là gì? | 1
+SCISSORS | Cây kéo cắt giấy cắt chỉ tiếng Anh là gì? | 1 | PAIR OF SCISSORS
+PEN | Cây bút mực, bút bi để viết chữ tiếng Anh là gì? | 1 | BALLPOINT PEN
+PENCIL | Cây bút chì gỗ để viết và vẽ tiếng Anh là gì? | 1
+RULER | Cây thước kẻ thẳng đo độ dài centimet tiếng Anh là gì? | 1
+NOTEBOOK | Cuốn sổ tay ghi chép hoặc cuốn vở học sinh tiếng Anh là gì? | 1 | EXERCISE BOOK
+BOOK | Cuốn sách in chữ để đọc tiếng Anh là gì? | 1
+GLASSES | Cặp kính cận hoặc kính mắt tiếng Anh là gì? | 1 | EYEGLASSES, SPECTACLES
+SUNGLASSES | Cặp kính râm (kính mát) chống chói nắng tiếng Anh là gì? | 1 | SHADES
+RING | Chiếc nhẫn đeo ngón tay làm duyên tiếng Anh là gì? | 1
+NECKLACE | Sợi dây chuyền đeo trên cổ tiếng Anh là gì? | 1 | CHAIN
+BRACELET | Chiếc vòng tay (lắc tay) kim loại tiếng Anh là gì? | 1 | BANGLE
+EARRING | Chiếc khuyên tai (hoa tai) đeo tai tiếng Anh là gì? | 1 | EARRINGS
+BELT | Sợi thắt lưng (dây nịt) da quần âu tiếng Anh là gì? | 1 | WAISTBAND
+HAT | Chiếc mũ đội đầu che nắng tiếng Anh là gì? | 1
+CAP | Chiếc nón (mũ) lưỡi trai thể thao tiếng Anh là gì? | 1 | BASEBALL CAP
+SHIRT | Chiếc áo sơ mi có cổ cài cúc tiếng Anh là gì? | 1 | DRESS SHIRT
+T-SHIRT | Chiếc áo phông (áo thun) cộc tay tiếng Anh là gì? | 1 | TEE, T SHIRT
+PANTS | Chiếc quần dài mặc thường ngày tiếng Anh là gì? | 1 | TROUSERS
+JEANS | Chiếc quần bò (quần jean) vải thô xanh tiếng Anh là gì? | 1 | BLUE JEANS
+SHORTS | Chiếc quần đùi (quần soóc) ngắn tiếng Anh là gì? | 1 | SHORT PANTS
+SKIRT | Chiếc chân váy xếp ly của phụ nữ tiếng Anh là gì? | 1
+DRESS | Chiếc váy liền thân thướt tha của phụ nữ tiếng Anh là gì? | 1 | GOWN
+JACKET | Chiếc áo khoác lửng mặc bên ngoài tiếng Anh là gì? | 1
+COAT | Chiếc áo măng tô (áo khoác dài mùa đông) tiếng Anh là gì? | 1 | OVERCOAT
+SWEATER | Chiếc áo len dệt giữ ấm mùa đông tiếng Anh là gì? | 1 | JUMPER, PULLOVER
+SOCKS | Đôi tất (đôi vớ) mềm đi chân tiếng Anh là gì? | 1 | SOCK
+SHOES | Đôi giày đi chân hàng ngày tiếng Anh là gì? | 1 | SHOE
+BOOTS | Đôi ủng (bốt) cao cổ che chân tiếng Anh là gì? | 1 | BOOT
+SANDALS | Đôi dép quai hậu (xăng-đan) đi học tiếng Anh là gì? | 1 | SANDAL
+SLIPPERS | Đôi dép lê êm ái đi trong nhà tiếng Anh là gì? | 1 | FLIP FLOPS
+PILLOW | Chiếc gối bông êm gối đầu ngủ tiếng Anh là gì? | 1 | CUSHION
+BLANKET | Tấm chăn (mền) ấm đắp lên người khi ngủ tiếng Anh là gì? | 1 | QUILT, DUVET
+MATTRESS | Tấm đệm (nệm) lò xo trải trên giường tiếng Anh là gì? | 2
+CURTAIN | Tấm rèm vải buông che cửa sổ tiếng Anh là gì? | 2 | DRAPES
+CARPET | Tấm thảm lớn trải trên sàn nhà tiếng Anh là gì? | 2 | RUG
+VASE | Chiếc bình (lọ) cắm hoa để bàn tiếng Anh là gì? | 1 | FLOWER VASE
+TRASH CAN | Chiếc thùng rác gom rác gia đình tiếng Anh là gì? | 1 | DUSTBIN, GARBAGE CAN, RUBBISH BIN
+BROOM | Cây chổi rơm hoặc chổi nhựa quét nhà tiếng Anh là gì? | 1 | SWEEPER
+MOP | Cây lau sàn nhà có sợi vải thấm nước tiếng Anh là gì? | 1 | FLOOR MOP
+BUCKET | Chiếc xô nhựa xách nước lau nhà tiếng Anh là gì? | 1 | PAIL
+LADDER | Chiếc thang gấp chữ A trèo lên cao tiếng Anh là gì? | 1 | STEPLADDER
+HAMMER | Cây búa sắt đóng nhổ đinh tiếng Anh là gì? | 1 | CLAW HAMMER
+NAIL | Cây đinh sắt nhọn dùng để đóng gỗ tiếng Anh là gì? | 1
+SCREW | Con đinh ốc (ốc vít) có rãnh xoắn tiếng Anh là gì? | 1 | BOLT
+TAPE | Cuộn băng dính dán dính đồ vật tiếng Anh là gì? | 1 | ADHESIVE TAPE, SCOTCH TAPE
+GLUE | Lọ keo dán (hồ dán) kết dính tiếng Anh là gì? | 1 | ADHESIVE
+NEEDLE | Cây kim thép nhỏ có lỗ xỏ chỉ khâu vá tiếng Anh là gì? | 1 | SEWING NEEDLE
+THREAD | Sợi chỉ se may vá quần áo tiếng Anh là gì? | 1 | SEWING THREAD
+BUTTON | Chiếc khuy áo (cúc áo) tròn nhỏ tiếng Anh là gì? | 1
+ZIPPER | Khoá kéo sắt kéo mở áo khoác tiếng Anh là gì? | 1 | ZIP
+FLASHLIGHT | Cây đèn pin cầm tay thắp sáng trong đêm tiếng Anh là gì? | 1 | TORCH
+BATTERY | Cục pin tiểu cung cấp năng lượng điện tiếng Anh là gì? | 1 | DRY CELL
+CHARGER | Củ sạc (dây sạc) điện thoại di động tiếng Anh là gì? | 1 | PHONE CHARGER
+CABLE | Sợi dây cáp truyền tín hiệu điện tiếng Anh là gì? | 1 | WIRE, CORD
+PLUG | Chiếc phích cắm điện chân đồng tiếng Anh là gì? | 1 | POWER PLUG
+SOCKET | Ổ cắm điện âm tường trong nhà tiếng Anh là gì? | 1 | OUTLET, POWER SOCKET
+SWITCH | Công tắc bật tắt bóng đèn gắn trên tường tiếng Anh là gì? | 1 | LIGHT SWITCH
+LIGHT BULB | Bóng đèn sợi đốt hoặc bóng đèn LED thắp sáng tiếng Anh là gì? | 1 | BULB
+IRON | Bàn là (bàn ủi) điện ủi thẳng nếp áo tiếng Anh là gì? | 1 | FLATIRON
+KETTLE | Ấm đun nước sôi siêu tốc tiếng Anh là gì? | 1 | WATER KETTLE
+POT | Chiếc nồi kim loại nấu canh hầm cháo tiếng Anh là gì? | 1 | COOKING POT
+PAN | Chiếc chảo đáy bằng rán trứng chiên cá tiếng Anh là gì? | 1 | FRYING PAN, SKILLET
+OVEN | Lò nướng bánh mì và thịt quay gia đình tiếng Anh là gì? | 2 | BAKING OVEN
+MICROWAVE | Lò vi sóng hâm nóng thức ăn cực nhanh tiếng Anh là gì? | 2 | MICROWAVE OVEN
+BLENDER | Máy xay sinh tố hoa quả nhuyễn mịn tiếng Anh là gì? | 2 | FOOD PROCESSOR
+TOASTER | Máy nướng bánh mì kẹp giòn nóng tiếng Anh là gì? | 2 | BREAD TOASTER
+SINK | Bồn rửa bát đĩa và rau củ trong bếp tiếng Anh là gì? | 1 | KITCHEN SINK
+FAUCET | Vòi nước xoay van xả nước bồn rửa tiếng Anh là gì? | 1 | TAP, WATER TAP
+SHOWER | Vòi sen tắm toả tia nước mát tiếng Anh là gì? | 1 | SHOWER HEAD
+BATHTUB | Bồn tắm nằm ngâm mình thư giãn tiếng Anh là gì? | 1 | TUB, BATH
+DRAWER | Ngăn kéo bàn tủ kéo ra đẩy vào tiếng Anh là gì? | 2
+SHELF | Tấm kệ gỗ gắn tường để sách báo tiếng Anh là gì? | 1 | BOOKSHELF
+WARDROBE | Tủ đứng đựng quần áo phòng ngủ tiếng Anh là gì? | 2 | CLOSET
+CABINET | Tủ đựng chén bát hoặc tài liệu có cánh tiếng Anh là gì? | 2 | CUPBOARD
+HOOK | Móc gắn tường treo mũ nón áo mưa tiếng Anh là gì? | 1 | COAT HOOK
+HANGER | Móc (mắc) treo quần áo bằng nhôm hoặc gỗ tiếng Anh là gì? | 1 | CLOTHES HANGER
+LIGHTER | Chiếc bật lửa (hộp quẹt) đánh lửa ga tiếng Anh là gì? | 1 | GAS LIGHTER
+MATCH | Que diêm quẹt đầu đỏ tạo lửa tiếng Anh là gì? | 1 | MATCHSTICK
+CANDLE | Cây nến sáp thắp sáng lung linh tiếng Anh là gì? | 1 | WAX CANDLE
+BELL | Chiếc chuông lắc reng reng báo hiệu tiếng Anh là gì? | 1 | DOORBELL
+WHISTLE | Chiếc còi thổi bằng nhựa hoặc kim loại tiếng Anh là gì? | 1
+PADLOCK | Ổ khoá chữ U bấm mở bằng chìa tiếng Anh là gì? | 2
+SAFETY PIN | Chiếc kim băng an toàn gài tã hoặc áo tiếng Anh là gì? | 2
+THERMOMETER | Chiếc nhiệt kế thuỷ ngân đo nhiệt độ sốt tiếng Anh là gì? | 2 | CLINICAL THERMOMETER
+SCALE | Chiếc cân đồng hồ đo trọng lượng cơ thể tiếng Anh là gì? | 1 | WEIGHING SCALE
+CALENDAR | Tờ lịch (cuốn lịch) xem ngày tháng năm tiếng Anh là gì? | 1 | WALL CALENDAR
+ENVELOPE | Chiếc phong bì dán tem gửi thư tay tiếng Anh là gì? | 1 | LETTER ENVELOPE
+STAMP | Con tem bưu chính dán góc phong bì thư tiếng Anh là gì? | 1 | POSTAGE STAMP
+SCREWDRIVER | Chiếc tua vít đầu bốn cạnh vặn ốc xoáy tiếng Anh là gì? | 2 | SCREW DRIVER
+WRENCH | Chiếc cờ lê (mỏ lết) mở đai ốc bù loong tiếng Anh là gì? | 2 | SPANNER
+PLIERS | Chiếc kìm mỏ nhọn bấm kẹp dây thép tiếng Anh là gì? | 2 | PINCERS
+TAPE MEASURE | Chiếc thước dây cuộn tròn đo kích thước may mặc tiếng Anh là gì? | 2 | MEASURING TAPE
+MAGNIFYING GLASS | Chiếc kính lúp cầm tay nhìn vật thể li ti tiếng Anh là gì? | 2 | HAND LENS
+HOURGLASS | Chiếc đồng hồ cát cổ đo thời gian trôi tiếng Anh là gì? | 2 | SAND TIMER
+BASKET | Chiếc làn (giỏ tre) đi chợ đựng rau củ tiếng Anh là gì? | 1 | SHOPPING BASKET
+JAR | Chiếc hũ (lọ) thuỷ tinh đựng đường kẹo mứt tiếng Anh là gì? | 1 | GLASS JAR
+CAN | Lon thiếc đựng nước ngọt giải khát tiếng Anh là gì? | 1 | TIN CAN
+LID | Chiếc nắp đậy vung xoong nồi chảo tiếng Anh là gì? | 1 | CAP, COVER
+STRAW | Ống hút nhựa hút nước trái cây trà sữa tiếng Anh là gì? | 1 | DRINKING STRAW
+NAPKIN | Khăn ăn bằng giấy hoặc vải lau miệng bàn ăn tiếng Anh là gì? | 1 | SERVIETTE
+TISSUE | Khăn giấy khô rút hộp lau mặt mũi tiếng Anh là gì? | 1 | FACIAL TISSUE
+TOILET PAPER | Cuộn giấy vệ sinh mềm mại trong phòng tắm tiếng Anh là gì? | 1 | TOILET ROLL
+SPONGE | Miếng bọt biển vàng xốp rửa chén bát tiếng Anh là gì? | 1 | WASH SPONGE
+DUSTPAN | Cái xẻng hót rác gom rác quét nhà tiếng Anh là gì? | 1 | DUST PAN
+CLIP | Chiếc kẹp ghim giấy tài liệu văn phòng tiếng Anh là gì? | 1 | PAPERCLIP, PAPER CLIP
+STAPLER | Chiếc dập ghim bấm giấy đóng tệp tiếng Anh là gì? | 2 | STAPLE GUN
+RUBBER BAND | Sợi dây nịt cao su buộc hàng co giãn tiếng Anh là gì? | 1 | ELASTIC BAND
+ERASER | Cục tẩy gôm xoá sạch nét bút chì tiếng Anh là gì? | 1 | RUBBER
+SHARPENER | Cái gọt (chuốt) bút chì xoay tay tiếng Anh là gì? | 1 | PENCIL SHARPENER
+PENCIL CASE | Hộp bút (túi đựng bút) học trò đến lớp tiếng Anh là gì? | 1 | PENCIL BOX
+BOOKMARK | Tấm thẻ đánh dấu trang sách đang đọc dở tiếng Anh là gì? | 1 | BOOK MARKER
+BOOKSTAND | Chiếc giá đỡ nghiêng để kê sách đọc tiếng Anh là gì? | 2 | BOOK REST
+PAPERWEIGHT | Cục chặn giấy pha lê nặng đè giữ tài liệu tiếng Anh là gì? | 2 | PAPER WEIGHT
+ALARM CLOCK | Chiếc đồng hồ báo thức reo vang đầu giường tiếng Anh là gì? | 1 | ALARM
+STOPWATCH | Chiếc đồng hồ bấm giây tính giờ chạy đua tiếng Anh là gì? | 2 | CHRONOMETER
+BINOCULARS | Ống nhòm hai mắt nhìn xa phong cảnh tiếng Anh là gì? | 2 | FIELD GLASSES
+TELESCOPE | Kính thiên văn quang học ngắm trăng sao tiếng Anh là gì? | 2 | SPYGLASS
+COMPASS | Chiếc la bàn từ tính chỉ hướng kim nam châm tiếng Anh là gì? | 2 | MAGNETIC COMPASS
+CALCULATOR | Máy tính bỏ túi bấm phím cộng trừ nhân chia tiếng Anh là gì? | 1 | POCKET CALCULATOR
+HEADPHONES | Bộ tai nghe chụp kín hai vành tai tiếng Anh là gì? | 1 | HEADSET
+EARPHONES | Tai nghe dây nhét lỗ tai nghe nhạc tiếng Anh là gì? | 1 | EARBUDS
+SPEAKER | Chiếc loa thùng phát nhạc sôi động tiếng Anh là gì? | 1 | LOUDSPEAKER
+MICROPHONE | Cây micrô cầm tay hát karaoke tiếng Anh là gì? | 1 | MIC
+REMOTE CONTROL | Chiếc điều khiển từ xa tivi bấm kênh tiếng Anh là gì? | 1 | REMOTE
+MOUSEPAD | Tấm lót chuột máy tính rê chuột mượt mà tiếng Anh là gì? | 1 | MOUSE PAD
+KEYBOARD | Bàn phím máy tính bấm gõ văn bản tiếng Anh là gì? | 1 | COMPUTER KEYBOARD
+SCREEN | Màn hình vi tính hoặc tivi hiển thị ảnh tiếng Anh là gì? | 1 | MONITOR
+PROJECTOR | Máy chiếu phóng hình ảnh lên phông màn trắng tiếng Anh là gì? | 2 | VIDEO PROJECTOR
+TRIPOD | Giá ba chân đỡ máy ảnh chống rung tiếng Anh là gì? | 2 | CAMERA STAND
+SELFIE STICK | Cây gậy tự sướng kéo dài chụp ảnh tiếng Anh là gì? | 1 | MONOPOD
+POWER BANK | Cục sạc dự phòng tích điện cho smartphone tiếng Anh là gì? | 1 | PORTABLE BATTERY
+USB DRIVE | Chiếc thẻ nhớ USB cắm cổng máy tính tiếng Anh là gì? | 1 | FLASH DRIVE, THUMB DRIVE
+WEBCAM | Chiếc camera nhỏ gắn máy tính họp trực tuyến tiếng Anh là gì? | 2 | WEB CAMERA
+KEYCHAIN | Móc treo chùm chìa khoá trang trí tiếng Anh là gì? | 1 | KEY RING
+BADGE | Chiếc huy hiệu cài ngực áo kỷ niệm tiếng Anh là gì? | 2 | PIN, EMBLEM
+NAME TAG | Thẻ tên sinh viên hoặc nhân viên cài áo tiếng Anh là gì? | 1 | ID BADGE
+LANYARD | Dây vải đeo thẻ học sinh sinh viên quanh cổ tiếng Anh là gì? | 2 | NECK STRAP
+SUN HAT | Chiếc nón rộng vành che nắng ngoài trời tiếng Anh là gì? | 1 | STRAW HAT
+BEANIE | Chiếc mũ len trùm đầu che kín tai mùa lạnh tiếng Anh là gì? | 2 | WOOLEN CAP
+BERET | Mũ nồi vải dạ mềm phong cách hoạ sĩ tiếng Anh là gì? | 2 | FRENCH BERET
+HELMET | Mũ bảo hiểm cứng cáp đội khi đi xe máy tiếng Anh là gì? | 1 | CRASH HELMET
+RAINCOAT | Chiếc áo mưa trùm kín người đi đường tiếng Anh là gì? | 1 | PONCHO, MACKINTOSH
+OVERALLS | Quần yếm bò hoặc quần yếm lao động tiếng Anh là gì? | 2 | DUNGAREES
+APRON | Tấm tạp dề vải đeo trước ngực nấu bếp tiếng Anh là gì? | 1 | PINAFORE
+GLOVES | Đôi găng tay len giữ ấm đôi bàn tay tiếng Anh là gì? | 1 | PAIR OF GLOVES
+MITTENS | Đôi găng tay xỏ chung 4 ngón chỉ tách ngón cái tiếng Anh là gì? | 2 | MITTS
+SCARF | Khăn len quàng cổ chắn gió lạnh mùa đông tiếng Anh là gì? | 1 | MUFFLER
+TIE | Chiếc cà vạt lụa thắt nút cổ áo sơ mi tiếng Anh là gì? | 1 | NECKTIE
+BOW TIE | Chiếc nơ bướm cài cổ áo chú rể bảnh bao tiếng Anh là gì? | 2 | BOWTIE
+VEST | Áo gile khoét nách mặc lót trong bộ suit tiếng Anh là gì? | 2 | WAISTCOAT
+BLAZER | Áo khoác vest dạ mặc thường nhật năng động tiếng Anh là gì? | 2 | SPORT COAT
+SUIT | Bộ âu phục com-lê gồm áo vest và quần âu tiếng Anh là gì? | 1 | BUSINESS SUIT
+PYJAMAS | Bộ đồ ngủ pijama vải lụa hoặc cotton ở nhà tiếng Anh là gì? | 1 | PAJAMAS, PJS
+BATHROBE | Chiếc áo choàng tắm bằng vải bông dày dặn tiếng Anh là gì? | 2 | ROBE
+SWIMSUIT | Bộ đồ bơi một mảnh của nữ đi biển tiếng Anh là gì? | 1 | BATHING SUIT, SWIMWEAR
+SWIMMING TRUNKS | Chiếc quần bơi co giãn của nam tiếng Anh là gì? | 2 | TRUNKS, SWIM TRUNKS
+SHOE LACE | Dây buộc giày thắt nơ mũi giày tiếng Anh là gì? | 1 | SHOELACE, SHOESTRING
+INSOLE | Tấm lót êm đặt bên trong đáy giày tiếng Anh là gì? | 2 | SHOE INSERT
+SHOE HORN | Cái đón gót nhựa giúp xỏ giày dễ dàng tiếng Anh là gì? | 2 | SHOEHORN
+HAIR CLIP | Chiếc kẹp tóc xinh kẹp tóc mái gọn gàng tiếng Anh là gì? | 1 | BARRETTE, HAIRPIN
+HAIR TIE | Dây chun thun buộc tóc đuôi ngựa tiếng Anh là gì? | 1 | SCRUNCHIE, ELASTIC TIE
+HEADBAND | Chiếc băng đô (bờm tóc) cài trán tiếng Anh là gì? | 1 | HAIRBAND
+PERFUME BOTTLE | Chai nước hoa thuỷ tinh xịt toả hương thơm tiếng Anh là gì? | 2 | SCENT BOTTLE
+LIPSTICK | Thỏi son môi thoa màu hồng cam tươi tắn tiếng Anh là gì? | 1 | LIP BALM
+COMPACT | Hộp phấn nén trang điểm có gương soi nhỏ tiếng Anh là gì? | 2 | POWDER COMPACT
+MASCARA | Cây chuốt mi mắt mascara làm cong dày mi tiếng Anh là gì? | 2 | LASH MASCARA
+EYELINER | Cây bút kẻ viền mắt nước sắc sảo tiếng Anh là gì? | 2 | EYE PENCIL
+NAIL POLISH | Lọ sơn móng tay nhiều màu rực rỡ tiếng Anh là gì? | 2 | NAIL LACQUER
+NAIL CLIPPER | Chiếc bấm móng tay nhỏ gọn bằng inox tiếng Anh là gì? | 1 | NAIL TRIMMER
+COTTON SWAB | Cây tăm bông ngoáy tai hai đầu bông gòn tiếng Anh là gì? | 1 | Q-TIP, COTTON BUD
+COTTON PAD | Miếng bông tẩy trang tròn lau sạch mặt tiếng Anh là gì? | 1 | COTTON WOOL
+BANDAGE | Cuộn băng gạc y tế băng bó vết thương hở tiếng Anh là gì? | 1 | GAUZE
+PLASTER | Miếng băng dán cá nhân dán vết xước tay tiếng Anh là gì? | 1 | BAND-AID, BANDAID
+ICE PACK | Túi chườm đá lạnh giảm sưng bầm tím tiếng Anh là gì? | 2 | COLD PACK
+HOT WATER BOTTLE | Bình cao su chườm nước nóng sưởi ấm tiếng Anh là gì? | 2 | HEATING PAD
+PILLBOX | Hộp đựng thuốc chia thành các ngăn theo ngày tiếng Anh là gì? | 2 | PILL ORGANIZER
+EYEDROPS | Lọ thuốc nhỏ mắt rửa bụi bẩn tiếng Anh là gì? | 2 | EYE DROPS
+TWEEZERS | Cái nhíp kim loại nhỏ gắp dằm gai tiếng Anh là gì? | 2 | PLUCKERS
+RAZOR | Chiếc dao cạo râu lưỡi lam bén ngót tiếng Anh là gì? | 1 | SHAVING RAZOR
+SHAVING CREAM | Bọt kem cạo râu thoa cằm làm mềm râu tiếng Anh là gì? | 2 | SHAVE FOAM
+TOOTHSTICK | Chiếc tăm tre nhỏ xỉa kẽ răng sau bữa ăn tiếng Anh là gì? | 1 | TOOTHPICK
+DENTAL FLOSS | Sợi chỉ tơ nha khoa vệ sinh kẽ răng tiếng Anh là gì? | 2 | FLOSS
+MOUTHWASH | Nước súc miệng diệt khuẩn thơm tho hơi thở tiếng Anh là gì? | 2 | ORAL RINSE
+HAND SANITIZER | Gel rửa tay khô sát khuẩn tiện lợi tiếng Anh là gì? | 1 | HAND GEL
+FACE WASH | Sữa rửa mặt dạng tuýp tạo bọt rửa sạch bụi tiếng Anh là gì? | 1 | FACIAL CLEANSER
+LOTION | Sữa dưỡng thể thoa mịn da toàn thân tiếng Anh là gì? | 1 | BODY LOTION
+SUNSCREEN | Kem chống nắng bảo vệ da khỏi tia cực tím tiếng Anh là gì? | 1 | SUNBLOCK
+LIP BALM | Thỏi son dưỡng môi chống nứt nẻ khô môi tiếng Anh là gì? | 1 | CHAPSTICK
+HAIR GEL | Hũ gel vuốt tóc tạo kiểu bóng bẩy tiếng Anh là gì? | 2 | HAIR WAX
+HAIR SPRAY | Chai xịt gôm giữ nếp tóc cố định tiếng Anh là gì? | 2 | HAIRSPRAY
+BABY WIPES | Gói khăn ướt không cồn lau da cho em bé tiếng Anh là gì? | 1 | WET WIPES
+DIAPER | Miếng tã lót (bỉm) dán của trẻ sơ sinh tiếng Anh là gì? | 1 | NAPPY
+PACIFIER | Núm vú ngậm bằng cao su silicon dỗ em bé tiếng Anh là gì? | 2 | DUMMY, SOOTHER
+FEEDING BOTTLE | Bình sữa trẻ em có vạch chia ml tiếng Anh là gì? | 1 | BABY BOTTLE
+RATTLE | Chiếc lục lạc đồ chơi lắc kêu vui tai của bé tiếng Anh là gì? | 2 | BABY RATTLE
+STROLLER | Chiếc xe đẩy bốn bánh đẩy em bé đi dạo tiếng Anh là gì? | 1 | PRAM, BUGGY
+CRIB | Chiếc cũi gỗ có thanh chắn cho em bé nằm tiếng Anh là gì? | 2 | COT, BABY BED
+HIGH CHAIR | Chiếc ghế ăn dặm chân cao cho bé ngồi ăn tiếng Anh là gì? | 2 | HIGHCHAIR
+BIB | Chiếc yếm ăn dặm hứng thức ăn rơi của bé tiếng Anh là gì? | 2 | BABY BIB
+POTTY | Chiếc bô nhựa cho trẻ tập đi vệ sinh tiếng Anh là gì? | 2 | POTTY CHAIR
+TEDDY BEAR | Chú gấu nhồi bông mềm mại đáng yêu tiếng Anh là gì? | 1 | STUFFED BEAR
+DOLL | Búp bê đồ chơi bé gái ôm ngủ tiếng Anh là gì? | 1 | TOY DOLL
+PUZZLE | Trò chơi ghép hình nhiều mảnh ghép logic tiếng Anh là gì? | 1 | JIGSAW PUZZLE
+BOARD GAME | Bộ cờ bàn chiến thuật chơi nhiều người tiếng Anh là gì? | 1 | TABLETOP GAME
+PLAYING CARDS | Bộ bài tú lơ khơ 52 lá bài tây tiếng Anh là gì? | 1 | CARD DECK, DECK OF CARDS
+DICE | Viên xúc xắc đổ xí ngầu 6 mặt tiếng Anh là gì? | 1 | DIE
+CHESSBOARD | Bàn cờ vua gồm 64 ô cờ đen trắng tiếng Anh là gì? | 2 | CHESS BOARD
+CHESS PIECE | Quân cờ vua (xe, mã, tượng, hậu, vua) tiếng Anh là gì? | 2 | CHESSMAN
+DOMINO | Thẻ cờ domino chia đôi có các chấm số tiếng Anh là gì? | 2 | DOMINOES
+PIGGY BANK | Chú heo đất (lợn đất) nhét tiền xu tiết kiệm tiếng Anh là gì? | 1 | MONEY BOX
+SAFE | Chiếc két sắt chống trộm khoá mã số an toàn tiếng Anh là gì? | 2 | STRONGBOX
+DRAIN | Phễu thoát nước sàn nhà tắm ngăn mùi tiếng Anh là gì? | 2 | FLOOR DRAIN
+PLUNGER | Cây thụt cao su thông tắc bồn cầu nghẹt tiếng Anh là gì? | 2 | TOILET PLUNGER
+TOILET BRUSH | Cây cọ chà rửa bồn cầu nhà vệ sinh tiếng Anh là gì? | 1 | LOO BRUSH
+TRASH BAG | Cuộn túi rác nilon màu đen dẻo dai tiếng Anh là gì? | 1 | GARBAGE BAG, BIN LINER
+RECYCLING BIN | Thùng rác phân loại rác tái chế màu xanh tiếng Anh là gì? | 2 | RECYCLE BIN
+DOORMAT | Tấm thảm chùi chân đặt ngoài cửa ra vào tiếng Anh là gì? | 1 | DOOR MAT, WELCOME MAT
+SHOE RACK | Kệ để giày dép nhiều tầng xếp gọn góc nhà tiếng Anh là gì? | 1 | SHOE SHELF
+KEY HOLDER | Bảng gắn tường có móc treo chùm chìa khoá tiếng Anh là gì? | 2 | KEY RACK
+MAILBOX | Chiếc hòm thư sắt gắn trước cổng nhận thư tiếng Anh là gì? | 1 | POSTBOX, LETTERBOX
+DOORKNOB | Tay nắm đấm cửa tròn bằng đồng tiếng Anh là gì? | 1 | DOOR HANDLE
+PEEPHOLE | Ống kính mắt thần gắn trên cửa nhìn ra hành lang tiếng Anh là gì? | 2 | DOOR VIEWER
+SCREEN DOOR | Cánh cửa gắn lưới chống muỗi và ruồi tiếng Anh là gì? | 2 | MESH DOOR
+WINDOW | Khung cửa sổ kính đón gió ban mai tiếng Anh là gì? | 1 | CASEMENT
+WINDOW SILL | Bệ cửa sổ phẳng để đặt chậu cây cảnh tiếng Anh là gì? | 2 | WINDOWSILL
+BLINDS | Rèm sáo nhôm kéo dây chớp lật cửa sổ tiếng Anh là gì? | 2 | VENETIAN BLINDS
+AWNING | Mái bạt di động che hiên nhà trước mưa nắng tiếng Anh là gì? | 2 | CANOPY
+CHIMNEY | Ống khói gạch nhô cao trên mái ngói tiếng Anh là gì? | 2 | SMOKESTACK
+FIREPLACE | Lò sưởi xây gạch đốt củi ấm áp góc phòng tiếng Anh là gì? | 2 | HEARTH
+MANTELPIECE | Gờ kệ gỗ đặt phía trên lò sưởi tiếng Anh là gì? | 3 | MANTEL
+WALLPAPER | Cuộn giấy dán tường in hoa văn trang trí tiếng Anh là gì? | 2 | WALL COVERING
+CHANDELIER | Đèn chùm pha lê thả trần phòng khách sang trọng tiếng Anh là gì? | 2 | CRYSTAL LIGHT
+LAMPSHADE | Chụp đèn bằng vải nón che bớt ánh sáng chói tiếng Anh là gì? | 2 | LAMP SHADE
+EXTENSION CORD | Ổ cắm điện kéo dài có dây dài 5 mét tiếng Anh là gì? | 2 | POWER STRIP
+VOLTAGE REGULATOR | Chiếc ổn áp điện giữ dòng điện ổn định 220V tiếng Anh là gì? | 3 | STABILIZER
+GENERATOR | Máy phát điện chạy dầu khi cúp điện tiếng Anh là gì? | 2 | DYNAMO
+FIRE EXTINGUISHER | Bình bọt cứu hoả xịt chữa cháy khẩn cấp tiếng Anh là gì? | 2 | FIRE BOTTLE
+SMOKE DETECTOR | Cảm biến báo khói kêu bíp bíp trên trần tiếng Anh là gì? | 2 | SMOKE ALARM
+FIRST AID KIT | Hộp dụng cụ y tế sơ cứu thương tích tại nhà tiếng Anh là gì? | 1 | EMERGENCY KIT
+WATER FILTER | Hệ thống máy lọc nước tinh khiết uống ngay tiếng Anh là gì? | 2 | WATER PURIFIER
+PRESSURE COOKER | Chiếc nồi áp suất hầm thịt ninh xương nhanh nhừ tiếng Anh là gì? | 2 | INSTANT POT
+RICE COOKER | Nồi cơm điện bật nút nấu cơm chín tới tiếng Anh là gì? | 1 | RICE STEAMER
+SLOW COOKER | Nồi đất ninh kho cá nấu chậm giữ nhiệt tiếng Anh là gì? | 2 | CROCKPOT
+AIR FRYER | Nồi chiên không dầu giòn rụm tốt cho sức khoẻ tiếng Anh là gì? | 1 | OIL FREE FRYER
+JUICER | Máy ép hoa quả tách bã lấy nước cốt tiếng Anh là gì? | 2 | JUICE EXTRACTOR
+FOOD PROCESSOR | Máy chế biến thực phẩm băm nhỏ rau thịt tiếng Anh là gì? | 2 | CHOPPER
+MEAT GRINDER | Chiếc cối xay thịt đùn thịt nhuyễn tiếng Anh là gì? | 2 | MINCER
+WHISK | Cây phới đánh trứng lò xo cầm tay tiếng Anh là gì? | 1 | EGG BEATER
+SPATULA | Cái xẻng gỗ đảo thức ăn lật bánh tiếng Anh là gì? | 1 | TURNER
+LADLE | Chiếc muôi (vá) to cán dài múc canh lẩu tiếng Anh là gì? | 1 | SOUP LADLE
+TONGS | Chiếc kẹp gắp thịt nướng than hoa tiếng Anh là gì? | 1 | FOOD TONGS
+COLANDER | Chiếc rổ inox nhiều lỗ thoát nước trụng mì tiếng Anh là gì? | 2 | STRAINER
+GRATER | Bàn bào sắt nạo sợi cà rốt và phô mai tiếng Anh là gì? | 2 | SHREDDER
+PEELER | Chiếc dao nạo hai lưỡi gọt vỏ củ quả tiếng Anh là gì? | 1 | VEGETABLE PEELER
+CUTTING BOARD | Tấm thớt gỗ dày kê thái thịt băm đồ tiếng Anh là gì? | 1 | CHOPPING BOARD
+ROLLING PIN | Cây lăn cán mỏng bột làm bánh pizza mì sợi tiếng Anh là gì? | 2 | PASTRY ROLLER
+CAN OPENER | Cái mở đồ hộp sắt tây xoay tay tiếng Anh là gì? | 1 | TIN OPENER
+BOTTLE OPENER | Dụng cụ nậy mở nắp chai bia nước ngọt tiếng Anh là gì? | 1 | CORKSCREW
+CORKSCREW | Cây khui nút bần chai rượu vang xoắn ruột gà tiếng Anh là gì? | 2 | WINE OPENER
+TRAY | Chiếc khay nhôm bưng bê nhiều ly chén tiếng Anh là gì? | 1 | SERVING TRAY
+COASTER | Tấm lót đáy cốc chống đọng nước ướt bàn tiếng Anh là gì? | 1 | CUP MAT
+PLACEMAT | Tấm lót trải bàn ăn sạch sẽ lịch sự tiếng Anh là gì? | 2 | TABLE MAT
+SALT SHAKER | Lọ rắc muối nhỏ có lỗ trên bàn ăn tiếng Anh là gì? | 2 | SALT CELLAR
+PEPPER MILL | Cối xay tiêu gỗ xoay rắc tiêu bột thơm tiếng Anh là gì? | 2 | PEPPER GRINDER
+SAUCE BOAT | Chiếc âu gốm nhỏ rót nước sốt thịt tiếng Anh là gì? | 3 | GRAVY BOAT
+TEAPOT | Chiếc ấm pha trà bằng sứ có quai tiếng Anh là gì? | 1 | TEA POT
+TEA STRAINER | Chiếc lọc trà lưới thép chắn bã chè tiếng Anh là gì? | 2 | TEA INFUSER
+SUGAR BOWL | Chiếc hũ đường nhỏ có thìa con trên bàn cà phê tiếng Anh là gì? | 2 | SUGAR POT
+ICE BUCKET | Xô inox giữ đá lạnh ướp rượu vang tiếng Anh là gì? | 2 | WINE COOLER
+WINE GLASS | Chiếc ly thuỷ tinh chân dài uống rượu vang đỏ tiếng Anh là gì? | 1 | GOBLET
+CHAMPAGNE FLUTE | Ly thon dài giữ bọt khí rượu sâm-panh tiếng Anh là gì? | 2 | FLUTE GLASS
+BEER MUG | Cốc vại thuỷ tinh dày có quai cầm uống bia tiếng Anh là gì? | 1 | BEER GLASS
+THERMOS | Chiếc bình giữ nhiệt nước nóng bằng inox tiếng Anh là gì? | 1 | VACUUM FLASK
+LUNCH BOX | Hộp cơm nhiều ngăn mang đi làm ăn trưa tiếng Anh là gì? | 1 | BENTO BOX
+PLASTIC WRAP | Cuộn màng bọc thức ăn trong suốt bảo quản lạnh tiếng Anh là gì? | 1 | CLING FILM, SARAN WRAP
+ALUMINIUM FOIL | Cuộn giấy bạc bọc cá nướng lò thơm nức tiếng Anh là gì? | 2 | TIN FOIL, FOIL
+ZIPLOCK BAG | Túi zip miết mép chống ẩm bảo quản hạt khô tiếng Anh là gì? | 1 | ZIP BAG
+TUPPERWARE | Bộ hộp nhựa bảo quản thực phẩm trong tủ lạnh tiếng Anh là gì? | 1 | FOOD CONTAINER
+ICE TRAY | Khay nhựa đổ nước làm đá viên tủ lạnh tiếng Anh là gì? | 1 | ICE CUBE TRAY
+MATCHBOX | Bao diêm quẹt lửa hình hộp chữ nhật nhỏ tiếng Anh là gì? | 1 | MATCH BOX
+INCENSE STICK | Cây nhang (nén hương) trầm thắp trên bàn thờ tiếng Anh là gì? | 2 | JOSS STICK
+INCENSE BURNER | Lư hương đồng đặt trên bàn thờ cắm nhang tiếng Anh là gì? | 2 | CENSER
+ALTAR | Bàn thờ gia tiên trang nghiêm trong nhà tiếng Anh là gì? | 2 | SHRINE
+WATER PIPE | Chiếc điếu cày nứa hút thuốc lào rít giòn tiếng Anh là gì? | 3 | BAMBOO PIPE
+ASHTRAY | Chiếc gạt tàn thuốc lá gốm sứ đặt góc bàn tiếng Anh là gì? | 1 | ASH TRAY
+CIGARETTE CASE | Chiếc hộp kim loại sang trọng đựng điếu thuốc tiếng Anh là gì? | 2 | CIGAR CASE
+POCKET KNIFE | Con dao nhíp xếp bỏ túi đa năng nhiều lưỡi tiếng Anh là gì? | 2 | PENKNIFE, SWISS ARMY KNIFE
+TOOLBOX | Chiếc hộp đồ nghề thợ cơ khí sửa chữa tiếng Anh là gì? | 1 | TOOL BOX, TOOL KIT
+SANDPAPER | Tờ giấy nhám mài ráp mịn bề mặt gỗ tiếng Anh là gì? | 2 | EMERY PAPER
+PAINTBRUSH | Cây cọ quét sơn vẽ màu lông mềm tiếng Anh là gì? | 1 | PAINT BRUSH
+PAINT ROLLER | Cây rulo lăn sơn tường bản rộng lăn đều tay tiếng Anh là gì? | 2 | ROLLER
+DRILL | Chiếc máy khoan bê tông cầm tay gắn mũi khoan tiếng Anh là gì? | 2 | POWER DRILL
+SAW | Chiếc cưa tay có lưỡi răng cưa cắt gỗ tiếng Anh là gì? | 1 | HANDSAW, HAND SAW
+AXE | Cây rìu đốn cây bổ củi lưỡi thép sắc tiếng Anh là gì? | 1 | HATCHET
+SHOVEL | Cái xẻng sắt cán dài xúc cát sỏi đất đá tiếng Anh là gì? | 1 | SPADE
+RAKE | Cây cào sắt nhiều răng gom rơm lá rụng tiếng Anh là gì? | 1 | GARDEN RAKE
+HOE | Chiếc cuốc làm cỏ xới đất trồng rau vườn tiếng Anh là gì? | 2 | GARDEN HOE
+GARDEN HOSE | Ống dây cao su dài dẫn nước tưới hoa trong vườn tiếng Anh là gì? | 1 | WATER HOSE
+WATERING CAN | Bình tưới hoa có vòi sen toả tia nước tiếng Anh là gì? | 1 | WATER CAN
+LAWN MOWER | Máy cắt cỏ đẩy tay dọn dẹp bãi cỏ xanh tiếng Anh là gì? | 2 | LAWNMOWER
+PRUNING SHEARS | Chiếc kéo cắt tỉa cành cây cảnh tiếng Anh là gì? | 2 | SECATEURS
+FLOWER POT | Chậu gốm đất nung trồng cây cảnh trước hiên tiếng Anh là gì? | 1 | PLANT POT
+BIRDCAGE | Lồng nhốt chim vành khuyên bằng nan tre uốn tiếng Anh là gì? | 2 | BIRD CAGE
+AQUARIUM TANK | Bể kính nuôi cá vàng bơi lội trong nhà tiếng Anh là gì? | 1 | FISH TANK
+COLLAR | Vòng cổ da có chuông lắc cho cún con tiếng Anh là gì? | 1 | PET COLLAR
+LEASH | Sợi dây dắt chó đi dạo công viên tiếng Anh là gì? | 1 | LEAD, DOG LEASH
+CAT LITTER BOX | Chậu cát vệ sinh khử mùi cho mèo cưng tiếng Anh là gì? | 2 | LITTER TRAY
+DOG BONE | Đồ chơi khúc xương gặm ngứa răng cho chó tiếng Anh là gì? | 1 | CHEW BONE
+PET CARRIER | Túi xách lồng nhựa vận chuyển mèo cún đi thú y tiếng Anh là gì? | 2 | PET CRATE

@@ -50,7 +50,8 @@ a { color: var(--gold); }
 .dot.off { background: var(--bad); }
 .toggle { display: flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 10px; }
 #preview { width: 360px; height: 640px; border: 1px solid var(--line); border-radius: 12px; background: #000; }
-.board { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.board { margin: 0; padding-left: 28px; max-height: 280px; overflow-y: auto; display: grid; gap: 4px; padding-right: 6px; }
+.board li { padding: 4px 8px; border-radius: 6px; background: #0b0912; overflow-wrap: anywhere; font-size: 13px; }
 .log { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow: auto; font-size: 13px; display: grid; gap: 3px; }
 .log li { padding: 4px 8px; border-radius: 8px; background: #0b0912; overflow-wrap: anywhere; }
 .log li.sim { border-left: 3px solid var(--warn); }

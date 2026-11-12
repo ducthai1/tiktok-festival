@@ -24,8 +24,9 @@ export function createTikTokConnectorProvider({ username, apiKey, emit, onCatalo
       // Lọc bỏ lỗi phụ (fetch quà, v.v.) — những lỗi đó có .catch riêng, không phải lỗi kết nối.
       const GIFT_ERRORS = ['Failed to fetch room gifts.', 'Failed to fetch room gift gallery.'];
       connection.on('error', (error) => {
-        if (GIFT_ERRORS.includes(error?.info)) return; // đã bắt bởi .catch() ở dưới
-        console.warn('[tiktok] lỗi kết nối:', error?.message || error);
+        if (GIFT_ERRORS.includes(error?.info)) return;
+        const msg = error?.exception?.message || error?.message || error;
+        if (!/UserOffline/i.test(msg)) console.warn('[tiktok] lỗi:', msg);
       });
       for (const type of CONNECTOR_EVENTS) {
         connection.on(type, (data) => emit(normalizeConnectorEvent(type, data)));

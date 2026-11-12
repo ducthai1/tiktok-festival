@@ -150,3 +150,158 @@ CHICKENPOX | Bệnh thuỷ đậu tiếng Anh là gì? | 3 | CHICKEN POX
 MEASLES | Bệnh sởi tiếng Anh là gì? | 3
 FATIGUE | Mệt mỏi kéo dài tiếng Anh là gì? | 3 | TIREDNESS, EXHAUSTION
 SWEAT | Mồ hôi tiếng Anh là gì? | 2 | SWEATING, PERSPIRATION
+
+CARDIOLOGY | Khoa tim mạch | 3 | KHOA TIM MẠCH
+IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3 | TIÊM CHỦNG
+PEDIATRICS | Khoa nhi / y học trẻ em | 3 | KHOA NHI
+PHYSICIAN | Bác sĩ điều trị | 2 | BÁC SĨ
+VACCINATION | Tiêm vắc-xin ngừa bệnh | 2 | TIÊM VẮC XIN
+CHRONIC | Bệnh mãn tính dai dẳng | 3 | MÃN TÍNH
+MALIGNANT | Khối u ác tính / nguy hiểm | 3 | ÁC TÍNH
+BENIGN | Khối u lành tính | 3 | LÀNH TÍNH
+PARALYSIS | Tình trạng liệt / mất cảm giác | 3 | TÌNH TRẠNG LIỆT
+TRANSPLANT | Ca ghép tạng nội tạng | 3 | GHÉP TẠNG
+
+CARDIAC | Thuộc về tim mạch | 3 | TIM MẠCH
+DERMATOLOGY | Khoa da liễu | 3 | KHOA DA LIỄU
+NEUROLOGY | Khoa thần kinh | 3 | KHOA THẦN KINH
+ONCOLOGY | Khoa ung bướu | 3 | KHOA UNG BƯỚU
+PATHOLOGY | Bệnh lý học | 3 | BỆNH LÝ HỌC
+PSYCHIATRY | Khoa tâm thần | 3 | KHOA TÂM THẦN
+RADIOLOGY | Khoa chẩn đoán hình ảnh / X-quang | 3 | X QUANG
+REHABILITATION | Phục hồi chức năng | 3 | PHỤC HỒI CHỨC NĂNG
+SYNDROME | Hội chứng bệnh lý | 3 | HỘI CHỨNG
+
+ABDOMEN | Vùng bụng | 2 | BỤNG
+BONE MARROW | Tủy xương | 3 | TỦY XƯƠNG
+CANCER | Bệnh ung thư | 1 | UNG THƯ
+CHOLESTEROL | Chất mỡ trong máu | 2 | CHOLESTEROL
+CONCUSSION | Sự chấn động não | 3 | CHẤN THƯƠNG NÃO
+DIZZINESS | Cơn chóng mặt | 1 | CHÓNG MẶT
+GENETICS | Di truyền học | 3 | DI TRUYỀN HỌC
+HEART ATTACK | Cơn đau tim / đột quỵ tim | 1 | ĐAU TIM
+HEMOGLOBIN | Huyết sắc tố | 3 | HUYẾT SẮC TỐ
+INFLAMMATION | Sự viêm nhiễm | 3 | VIÊM
+INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3 | CHĂM SÓC ĐẶC BIỆT
+LABORATORY | Phòng thí nghiệm | 1 | PHÒNG THÍ NGHIỆM
+MEDICATION | Thuốc điều trị | 2 | THUỐC
+PENICILLIN | Thuốc kháng sinh Penicillin | 3 | THUỐC KHÁNG SINH
+PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3 | BÁC SĨ
+RESPIRATORY | Thuộc về hô hấp | 3 | HÔ HẤP
+SPECIALIST | Bác sĩ chuyên khoa | 2 | CHUYÊN KHOA
+STERILIZATION | Sự tiệt trùng | 3 | TIỆT TRÙNG
+THERAPY | Liệu pháp điều trị | 2 | LIỆU PHÁP
+ULTRASOUND | Siêu âm | 2 | SIÊU ÂM
+URINE | Nước tiểu | 2 | NƯỚC TIỂU
+VENTILATOR | Máy trợ thở | 3 | MÁY TRỢ THỞ
+
+BIOPSY | Kỹ thuật sinh thiết lấy một mẩu mô nhỏ để làm xét nghiệm tế bào | 3 | SINH THIẾT
+PROGNOSIS | Tiên lượng diễn biến và khả năng phục hồi của căn bệnh | 3 | TIÊN LƯỢNG
+METABOLISM | Quá trình trao đổi chất và chuyển hóa năng lượng trong cơ thể | 2 | TRAO ĐỔI CHẤT
+RESUSCITATION | Kỹ thuật hồi sức cấp cứu tim phổi ngừng đập (CPR) | 3 | HỒI SỨC CẤP CỨU
+INCISION | Vết rạch phẫu thuật chính xác bằng dao mổ trên da bệnh nhân | 3 | VẾT RẠCH MỔ
+DEFICIENCY | Tình trạng thiếu hụt vitamin hoặc vi chất dinh dưỡng cần thiết | 2 | THIẾU HỤT
+
+HEMORRHAGE | Hiện tượng xuất huyết chảy máu ồ ạt trong cơ thể | 3 | XUẤT HUYẾT
+TOXICOLOGY | Độc chất học - ngành khoa học nghiên cứu về các chất độc hại | 3 | ĐỘC CHẤT HỌC
+
+OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay tiếng Anh là gì? | 2 | BỆNH NHÂN NGOẠI TRÚ
+INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm tiếng Anh là gì? | 2 | BỆNH NHÂN NỘI TRÚ
+SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em tiếng Anh là gì? | 1 | SIRO THUỐC, THUỐC SIRO
+GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương tiếng Anh là gì? | 2 | GẠC TIỆT TRÙNG
+COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương tiếng Anh là gì? | 2 | BÔNG Y TẾ
+DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ tiếng Anh là gì? | 2 | THUỐC SÁT TRÙNG, ANTISEPTIC
+IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu tiếng Anh là gì? | 2 | TRUYỀN DỊCH, DRIP
+BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người tiếng Anh là gì? | 2 | THÂN NHIỆT
+CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người tiếng Anh là gì? | 2 | ỚN LẠNH, RÉT RUN
+CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp tiếng Anh là gì? | 2 | NGHẸT MŨI
+VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày tiếng Anh là gì? | 2 | NÔN MỬA, THROWING UP
+INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn tiếng Anh là gì? | 2 | KHÓ TIÊU, ĐẦY BỤNG
+HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản tiếng Anh là gì? | 2 | Ợ CHUA, TRÀO NGƯỢC
+SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương tiếng Anh là gì? | 2 | SƯNG TẤY, SƯNG PHÙ
+DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp tiếng Anh là gì? | 3 | TRẬT KHỚP
+CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi tiếng Anh là gì? | 2 | CẶP NẠNG, NẠNG
+DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn tiếng Anh là gì? | 3 | MÁY SỐC ĐIỆN
+DIALYSIS | Thủ thuật chạy thận nhân tạo lọc máu lọc độc tiếng Anh là gì? | 3 | CHẠY THẬN
+CHEMOTHERAPY | Hóa trị liệu tiêu diệt tế bào ung thư quái ác tiếng Anh là gì? | 3 | HÓA TRỊ, CHEMO
+RADIOTHERAPY | Xạ trị dùng tia phóng xạ chiếu diệt khối u tiếng Anh là gì? | 3 | XẠ TRỊ
+TUMOR | Khối u bất thường phát triển trong cơ thể tiếng Anh là gì? | 2 | KHỐI U
+LESION | Vết tổn thương thực thể trên mô cơ quan tiếng Anh là gì? | 3 | VẾT TỔN THƯƠNG
+ORTHOPEDICS | Chuyên khoa xương khớp điều trị bệnh cơ xương tiếng Anh là gì? | 2 | CHỈNH HÌNH HỌC
+ENDOCRINOLOGY | Khoa nội tiết nghiên cứu các hormone và tuyến nội tiết tiếng Anh là gì? | 3 | NỘI TIẾT HỌC
+GASTROENTEROLOGY | Khoa tiêu hóa điều trị bệnh dạ dày và đường ruột tiếng Anh là gì? | 3 | TIÊU HÓA HỌC
+PULMONOLOGY | Khoa hô hấp điều trị các bệnh phổi và đường thở tiếng Anh là gì? | 3 | HÔ HẤP HỌC
+OPHTHALMOLOGY | Khoa mắt chuyên khám và điều trị các bệnh về mắt tiếng Anh là gì? | 3 | NHÃN KHOA
+OTOLARYNGOLOGY | Khoa tai mũi họng điều trị bệnh tai mũi và cổ họng tiếng Anh là gì? | 3 | TAI MŨI HỌNG
+PATHOGEN | Mầm bệnh vi sinh vật gây ra bệnh cho cơ thể tiếng Anh là gì? | 2 | MẦM BỆNH
+VIRUS | Vi-rút mầm bệnh nhỏ hơn vi khuẩn cần tế bào chủ để sống tiếng Anh là gì? | 1 | VI-RÚT
+FUNGUS | Nấm sinh vật gây bệnh nấm da hoặc nhiễm trùng tiếng Anh là gì? | 1 | NẤM
+PARASITE | Ký sinh trùng sinh vật sống ký sinh trong hoặc ngoài cơ thể tiếng Anh là gì? | 2 | KÝ SINH TRÙNG
+ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống lại mầm bệnh tiếng Anh là gì? | 2 | KHÁNG THỂ
+ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể tiếng Anh là gì? | 3 | KHÁNG NGUYÊN
+LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng tiếng Anh là gì? | 2 | HẠCH BẠCH HUYẾT
+SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng tiếng Anh là gì? | 3 | NHIỄM TRÙNG HUYẾT
+CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm tiếng Anh là gì? | 1 | BỆNH MÃN TÍNH
+ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội tiếng Anh là gì? | 2 | BỆNH CẤP TÍNH
+TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi tiếng Anh là gì? | 2 | BỆNH GIAI ĐOẠN CUỐI
+REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư tiếng Anh là gì? | 3 | BỆNH ĐỢT HIM
+RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi tiếng Anh là gì? | 2 | TÁI PHÁT
+TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng tiếng Anh là gì? | 3 | PHÂN LOẠI CẤP CỨU
+VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ tiếng Anh là gì? | 1 | DẤU HIỆU SINH TỒN
+OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 tiếng Anh là gì? | 2 | ĐỘ BÃO HÒA OXY
+ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim tiếng Anh là gì? | 3 | ĐIỆN TÂM ĐỒ
+MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể tiếng Anh là gì? | 2 | CHỤP CỘNG HƯỞNG TỪ
+CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể tiếng Anh là gì? | 2 | CHỤP CẮT LỚP
+ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể tiếng Anh là gì? | 2 | NỘI SOI
+LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ tiếng Anh là gì? | 3 | NỘI SOI Ổ BỤNG
+SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật tiếng Anh là gì? | 2 | KHÂu VẾT THƯƠNG
+WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương tiếng Anh là gì? | 2 | LÀnh VẾT THƯƠNG
+PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị tiếng Anh là gì? | 1 | VẬT LÝ TRỊ LIỆU
+OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày tiếng Anh là gì? | 3 | LIỆU PHÁP NGHỀ NGHIỆP
+SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt tiếng Anh là gì? | 2 | TRỊ LIỆU NGÔN NGỮ
+PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc tiếng Anh là gì? | 3 | CHĂM SÓC GIẢM NHẸ
+HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối tiếng Anh là gì? | 3 | CHĂM SÓC CUỐI ĐỜI
+ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống tiếng Anh là gì? | 1 | HIẾN TẠNG
+PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất tiếng Anh là gì? | 3 | CHI GIẢ
+CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới tiếng Anh là gì? | 3 | THỬ NGHIỆM LÂM SÀNG
+PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm tiếng Anh là gì? | 2 | GIẢ DƯỢC
+DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần tiếng Anh là gì? | 1 | LIỀU LƯỢNG
+CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật tiếng Anh là gì? | 3 | CHỐNG CHỈ ĐỊNH
+ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức tiếng Anh là gì? | 3 | PHẢN VỆ
+IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể tiếng Anh là gì? | 1 | MIỄN DỊCH
+HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ tiếng Anh là gì? | 3 | MIỄN DỊCH CỘNG ĐỒNG
+PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới tiếng Anh là gì? | 1 | ĐẠI DỊCH
+ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực tiếng Anh là gì? | 3 | BỆNH ĐẶC HỮU
+OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi tiếng Anh là gì? | 2 | BÙNG PHÁT DỊCH
+CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh tiếng Anh là gì? | 2 | TRUY VẾT
+INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng tiếng Anh là gì? | 2 | THỜI GIAN Ủ BỆNH
+ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì tiếng Anh là gì? | 2 | KHÔNG TRIỆU CHỨNG
+COMORBIDITY | Bệnh đồng mắc hai hoặc nhiều bệnh cùng tồn tại ở một người tiếng Anh là gì? | 3 | BỆNH ĐỒNG MẮC
+MORTALITY RATE | Tỷ lệ tử vong số người chết trên tổng số ca bệnh tiếng Anh là gì? | 2 | TỶ LỆ TỬ VONG
+MORBIDITY | Tỷ lệ mắc bệnh hoặc tình trạng bệnh tật trong dân số tiếng Anh là gì? | 3 | TỶ LỆ MẮC BỆNH
+MALNUTRITION | Suy dinh dưỡng thiếu hụt dinh dưỡng cần thiết cho cơ thể tiếng Anh là gì? | 2 | SUY DINH DƯỠNG
+OBESITY | Béo phì tình trạng tích lũy mỡ quá mức gây hại sức khỏe tiếng Anh là gì? | 1 | BÉO PHÌ
+STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử vong tiếng Anh là gì? | 1 | ĐỘT QUỴ
+AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể tiếng Anh là gì? | 3 | BỆNH TỰ MIỄN
+ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân tiếng Anh là gì? | 2 | VIÊM KHỚP
+ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin tiếng Anh là gì? | 2 | THIẾU MÁU
+VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não tiếng Anh là gì? | 2 | CHÓNG MẶT
+DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài tiếng Anh là gì? | 1 | TRẦM CẢM
+ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát tiếng Anh là gì? | 1 | LO ÂU
+TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc tiếng Anh là gì? | 1 | CHẤN THƯƠNG
+POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD tiếng Anh là gì? | 3 | RỐI LOẠN PTSD
+BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm tiếng Anh là gì? | 3 | RỐI LOẠN LƯỠNG CỰC
+SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng tiếng Anh là gì? | 3 | TÂM THẦN PHÂN LIỆT
+DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi tiếng Anh là gì? | 2 | SA SÚT TRÍ TUỆ
+ALZHEIMER | Bệnh Alzheimer dạng sa sút trí tuệ phổ biến nhất tiếng Anh là gì? | 2 | ALZHEIMER
+PARKINSON | Bệnh Parkinson rối loạn vận động run tay và cứng cơ tiếng Anh là gì? | 2 | PARKINSON
+EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ tiếng Anh là gì? | 2 | ĐỘNG KINH
+MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng tiếng Anh là gì? | 1 | ĐAU NỬA ĐẦU
+KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận tiếng Anh là gì? | 1 | SỎI THẬN
+GALLSTONE | Sỏi mật cặn cholesterol hoặc muối mật tích tụ trong túi mật tiếng Anh là gì? | 2 | SỎI MẬT
+APPENDICITIS | Viêm ruột thừa cần phẫu thuật khẩn cấp tiếng Anh là gì? | 2 | VIÊM RUỘT THỪA
+HERNIA | Thoát vị nội tạng chui ra khỏi vị trí bình thường tiếng Anh là gì? | 2 | THOÁT VỊ
+CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ tiếng Anh là gì? | 2 | ĐỤC THỦY TINH THỂ
+GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác tiếng Anh là gì? | 3 | TĂNG NHÃN ÁP
+HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể tiếng Anh là gì? | 3 | THIẾU OXY MÔ
+COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông tiếng Anh là gì? | 3 | ĐÔNG MÁU

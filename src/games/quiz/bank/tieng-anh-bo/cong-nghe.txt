@@ -150,3 +150,158 @@ SEARCH | Tìm kiếm trên mạng tiếng Anh là gì? | 1 | LOOK UP
 LINK | Đường liên kết tiếng Anh là gì? | 2 | URL, HYPERLINK
 CHATBOT | Trợ lý trò chuyện tự động tiếng Anh là gì? | 3 | BOT
 SMART HOME | Nhà thông minh tiếng Anh là gì? | 2
+
+ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo (AI) | 2 | AI
+CYBERSECURITY | An ninh mạng | 3 | AN NINH MẠNG
+CLOUD COMPUTING | Điện toán đám mây | 2 | ĐIỆN TOÁN ĐÁM MÂY
+BLOCKCHAIN | Công nghệ chuỗi khối | 3 | CHUỖI KHỐI
+AUTOMATION | Tự động hóa quy trình | 3 | TỰ ĐỘNG HÓA
+CRYPTOCURRENCY | Tiền mã hóa / tiền điện tử | 3 | TIỀN MÃ HÓA
+FRAMEWORK | Bộ khung phần mềm / nền tảng | 3 | KHUNG PHẦN MỀM
+MICROPROCESSOR | Bộ vi xử lý | 3 | BỘ VI XỬ LÝ
+OPEN SOURCE | Mã nguồn mở | 2 | MÃ NGUỒN MỞ
+SEMICONDUCTOR | Vật liệu bán dẫn | 3 | BÁN DẪN
+AUGMENTED REALITY | Thực tế tăng cường (AR) | 3 | AR
+
+FRONTEND | Giao diện phía người dùng | 2 | FRONTEND
+BACKEND | Hệ thống máy chủ phía sau | 2 | BACKEND
+FULLSTACK | Lập trình viên toàn năng | 3 | FULLSTACK
+REPOSITORY | Kho lưu trữ mã nguồn | 3 | KHO MÃ NGUỒN
+CONTAINER | Công nghệ đóng gói ứng dụng (Docker) | 3 | CONTAINER
+DEPLOYMENT | Việc triển khai ứng dụng lên mạng | 3 | TRIỂN KHAI
+DEBUGGING | Việc sửa lỗi phần mềm | 2 | SỬA LỖI
+COMPILER | Trình biên dịch mã nguồn | 3 | TRÌNH BIÊN DỊCH
+INTERNET OF THINGS | Mạng lưới thiết bị kết nối internet (IoT) | 3 | IOT
+NEURAL NETWORK | Mạng nơ-ron nhân tạo | 3 | MẠNG NƠ RON
+QUANTUM COMPUTING | Điện toán lượng tử | 3 | ĐIỆN TOÁN LƯỢNG TỬ
+VULNERABILITY | Lỗ hổng bảo mật | 3 | LỖ HỔNG BẢO MẬT
+
+DATACENTER | Trung tâm dữ liệu | 2 | TRUNG TÂM DỮ LIỆU
+REDUNDANCY | Sự dự phòng dữ liệu | 3 | DỰ PHÒNG
+SCALABILITY | Khả năng mở rộng hệ thống | 3 | MỞ RỘNG
+LATENCY | Độ trễ mạng | 3 | ĐỘ TRỄ
+THROUGHPUT | Băng thông thực tế / thông lượng | 3 | THÔNG LƯỢNG
+PROTOCOL | Giao thức kết nối | 2 | GIAO THỨC
+VIRTUALIZATION | Công nghệ ảo hóa | 3 | ẢO HÓA
+MAINFRAME | Máy tính cỡ lớn siêu mạnh | 3 | MÁY TÍNH LỚN
+MIDDLEWARE | Phần mềm trung gian | 3 | PHẦN MỀM TRUNG GIAN
+ARCHITECTURE | Kiến trúc hệ thống | 2 | KIẾN TRÚC
+AUTHORIZATION | Việc cấp quyền truy cập | 3 | CẤP QUYỀN
+CRYPTOGRAPHY | Mật mã học | 3 | MẬT MÃ HỌC
+COMPUTING | Việc tính toán / điện toán | 1 | ĐIỆN TOÁN
+REFACTORING | Việc tối ưu lại mã nguồn | 3 | TỐI ƯU MÃ
+ABSTRACTION | Tính trừu tượng trong lập trình | 3 | TRỪU TƯỢNG
+ENCAPSULATION | Tính đóng gói dữ liệu | 3 | ĐÓNG GÓI
+INHERITANCE | Tính kế thừa trong lập trình | 3 | KẾ THỪA
+POLYMORPHISM | Tính đa hình | 3 | ĐA HÌNH
+SYNCHRONIZATION | Sự đồng bộ hóa | 3 | ĐỒNG BỘ HÓA
+DEPRECATED | Đã lỗi thời / không khuyến khích dùng | 3 | LỖI THỜI
+BACKWARD COMPATIBILITY | Tính tương thích ngược | 3 | TƯƠNG THÍCH NGƯỢC
+IMMUTABLE | Không thể thay đổi | 3 | KHÔNG ĐỔI
+SERIALIZATION | Việc tuần tự hóa dữ liệu | 3 | TUẦN TỰ HÓA
+HYPERLINK | Đường dẫn liên kết | 1 | ĐƯỜNG DẪN
+PHISHING | Tấn công lừa đảo qua mạng | 2 | LỪA ĐẢO MẠNG
+RANSOMWARE | Mã độc tống tiền | 3 | MÃ ĐỘC TỐNG TIỀN
+SPYWARE | Phần mềm gián điệp | 2 | PHẦN MỀM GIÁN ĐIỆP
+ADWARE | Phần mềm quảng cáo độc hại | 2 | PHẦN MỀM QUẢNG CÁO
+BOTNET | Mạng máy tính ma | 3 | MẠNG MÁY TÍNH MA
+CLOUD NATIVE | Công nghệ dựa trên đám mây | 3 | ĐÁM MÂY GỐC
+MICROSERVICES | Kiến trúc vi dịch vụ | 3 | VI DỊCH VỤ
+CONTAINERIZATION | Công nghệ đóng gói container | 3 | ĐÓNG GÓI CONTAINER
+ORCHESTRATION | Sự điều phối hệ thống | 3 | ĐIỀU PHỐI
+DEVOPS | Quy trình phát triển và vận hành | 3 | DEVOPS
+AGILE | Quy trình phát triển linh hoạt | 2 | PHÁT TRIỂN LINH HOẠT
+SCRUM | Một khung làm việc trong Agile | 3 | SCRUM
+
+REFACTOR | Hành động tối ưu cấu trúc lại mã nguồn mà không đổi tính năng | 3 | TỐI ƯU CODE
+ASYNCHRONOUS | Cơ chế xử lý bất đồng bộ không chặn luồng chính chương trình | 3 | BẤT ĐỒNG BỘ, ASYNC
+CACHE | Bộ nhớ đệm lưu dữ liệu tạm để truy xuất siêu tốc | 1 | BỘ NHỚ ĐỆM
+
+MICROSERVICE | Kiến trúc vi dịch vụ chia nhỏ hệ thống phần mềm lớn | 3 | VI DỊCH VỤ
+ENDPOINT | Điểm cuối của cổng giao tiếp API nhận và gửi dữ liệu mạng | 2 | ĐIỂM CUỐI
+PAYLOAD | Phần dữ liệu chính thực sự được truyền tải trong gói tin mạng | 3 | DỮ LIỆU TẢI
+
+API | Giao diện lập trình ứng dụng kết nối trao đổi dữ liệu giữa các phần mềm tiếng Anh là gì? | 1 | CỔNG API
+CPU | Bộ vi xử lý trung tâm - đầu não tính toán của máy tính tiếng Anh là gì? | 1 | BỘ XỬ LÝ, CHIP
+GPU | Bộ xử lý đồ họa chuyên xử lý hình ảnh và đào tạo mô hình AI tiếng Anh là gì? | 1 | CARD ĐỒ HỌA
+RAM | Bộ nhớ truy xuất ngẫu nhiên tạm thời của máy tính tiếng Anh là gì? | 1 | BỘ NHỚ RAM
+MOTHERBOARD | Bo mạch chủ kết nối mọi linh kiện máy tính lại với nhau tiếng Anh là gì? | 2 | BO MẠCH CHỦ, MAINBOARD
+IP ADDRESS | Địa chỉ giao thức mạng nhận diện thiết bị trên internet tiếng Anh là gì? | 2 | ĐỊA CHỈ IP
+DOMAIN | Tên miền định danh trang web (như google.com) tiếng Anh là gì? | 1 | TÊN MIỀN
+CLIENT | Ứng dụng máy khách gửi yêu cầu lên máy chủ tiếng Anh là gì? | 2 | MÁY KHÁCH
+HOSTING | Dịch vụ lưu trữ dữ liệu website trên máy chủ trực tuyến tiếng Anh là gì? | 2 | LƯU TRỮ WEB
+MODEM | Thiết bị giải mã tín hiệu đường truyền internet cáp quang tiếng Anh là gì? | 1 | CỤC MODEM
+PATCH | Bản vá lỗi phần mềm được phát hành để sửa trục trặc tiếng Anh là gì? | 2 | BẢN VÁ LỖI
+RESTORE | Hành động phục hồi lại dữ liệu từ bản sao lưu dự phòng tiếng Anh là gì? | 2 | PHỤC HỒI DỮ LIỆU
+SYNTAX | Cú pháp ngữ pháp của ngôn ngữ lập trình tiếng Anh là gì? | 2 | CÚ PHÁP
+VARIABLE | Biến số dùng để lưu trữ giá trị trong mã code tiếng Anh là gì? | 2 | BIẾN SỐ
+CONSTANT | Hằng số mang giá trị cố định không đổi trong chương trình tiếng Anh là gì? | 2 | HẰNG SỐ
+FUNCTION | Hàm thực thi một khối lệnh chức năng trong lập trình tiếng Anh là gì? | 2 | HÀM SỐ, PHƯƠNG THỨC
+LOOP | Vòng lặp lặp đi lặp lại khối lệnh (như for, while) tiếng Anh là gì? | 1 | VÒNG LẶP
+CONDITION | Điều kiện rẽ nhánh logic (như if-else) trong code tiếng Anh là gì? | 2 | ĐIỀU KIỆN
+ARRAY | Mảng danh sách tuần tự chứa nhiều phần tử dữ liệu tiếng Anh là gì? | 2 | MẢNG DỮ LIỆU
+OBJECT | Đối tượng chứa các thuộc tính và phương thức trong OOP tiếng Anh là gì? | 2 | ĐỐI TƯỢNG
+CLASS | Lớp khuôn mẫu định nghĩa đối tượng trong lập trình hướng đối tượng tiếng Anh là gì? | 2 | LỚP ĐỐI TƯỢNG
+LIBRARY | Thư viện lập trình chứa các hàm có sẵn để tái sử dụng tiếng Anh là gì? | 1 | THƯ VIỆN CODE
+PACKAGE | Gói module phần mềm cài đặt qua npm hoặc pip tiếng Anh là gì? | 2 | GÓI PHẦN MỀM
+DEPENDENCY | Sự phụ thuộc vào các thư viện bên ngoài của dự án phần mềm tiếng Anh là gì? | 3 | PHỤ THUỘC
+TERMINAL | Giao diện dòng lệnh gõ lệnh chữ màu đen trên máy tính tiếng Anh là gì? | 2 | CỬA SỔ DÒNG LỆNH, CONSOLE
+SCRIPT | Tệp kịch bản tự động hóa chuỗi câu lệnh tiếng Anh là gì? | 2 | KỊCH BẢN TỰ ĐỘNG
+LOG | Nhật ký ghi lại toàn bộ hoạt động và lỗi của máy chủ tiếng Anh là gì? | 1 | NHẬT KÝ HỆ THỐNG
+METRIC | Chỉ số đo lường hiệu năng của hệ thống (như tải CPU, RAM) tiếng Anh là gì? | 2 | CHỈ SỐ HIỆU NĂNG
+DOWNTIME | Thời gian hệ thống gặp sự cố sập mạng ngừng hoạt động tiếng Anh là gì? | 2 | THỜI GIAN CHẾT
+UPTIME | Thời gian hệ thống vận hành liên tục ổn định không gián đoạn tiếng Anh là gì? | 2 | THỜI GIAN HOẠT ĐỘNG
+CONCURRENCY | Cơ chế xử lý đồng thời nhiều tác vụ cùng một lúc tiếng Anh là gì? | 3 | XỬ LÝ ĐỒNG THỜI
+THREAD | Luồng thực thi chỉ lệnh nhỏ nhất trong tiến trình máy tính tiếng Anh là gì? | 2 | LUỒNG XỬ LÝ
+PROCESS | Tiến trình chương trình đang chạy trong bộ nhớ máy tính tiếng Anh là gì? | 2 | TIẾN TRÌNH
+DEADLOCK | Tình trạng bế tắc nghẽn mạng khi các tiến trình cùng chờ nhau nhả tài nguyên tiếng Anh là gì? | 3 | TẮC NGHẼN BẾ TẮC
+PIPELINE | Quy trình đường ống tự động hóa tích hợp và phát hành mã nguồn tiếng Anh là gì? | 2 | ĐƯỜNG ỐNG TỰ ĐỘNG
+INTEGRATION | Sự tích hợp kết hợp nhiều hệ thống phần mềm lại với nhau tiếng Anh là gì? | 2 | TÍCH HỢP HỆ THỐNG
+BOT | Robot phần mềm tự động hóa các tác vụ lặp đi lặp lại tiếng Anh là gì? | 1 | CON BOT
+CRAWLER | Bọ cào dữ liệu tự động thu thập thông tin từ các trang web tiếng Anh là gì? | 3 | BỌ TÌM KIẾM
+BIG DATA | Tập hợp khối lượng dữ liệu khổng lồ của thời đại số tiếng Anh là gì? | 1 | DỮ LIỆU LỚN
+DEEP LEARNING | Học sâu - phân nhánh cao cấp của trí tuệ nhân tạo tiếng Anh là gì? | 2 | HỌC SÂU
+SUPERVISED LEARNING | Học có giám sát huấn luyện mô hình dựa trên nhãn dữ liệu có sẵn tiếng Anh là gì? | 3 | HỌC CÓ GIÁM SÁT
+DATASET | Tập dữ liệu dùng để huấn luyện mô hình máy học tiếng Anh là gì? | 2 | TẬP DỮ LIỆU
+PREDICTION | Dự đoán kết quả tương lai dựa trên phân tích dữ liệu AI tiếng Anh là gì? | 2 | DỰ ĐOÁN
+ANALYTICS | Ngành phân tích số liệu thống kê hành vi người dùng tiếng Anh là gì? | 2 | PHÂN TÍCH SỐ LIỆU
+DASHBOARD | Bảng điều khiển trực quan hóa các biểu đồ số liệu tiếng Anh là gì? | 2 | BẢNG ĐIỀU KHIỂN
+WIDGET | Tiện ích nhỏ hiển thị thông tin nhanh trên màn hình chính tiếng Anh là gì? | 2 | TIỆN ÍCH
+PLUGIN | Phần mở rộng cài thêm tính năng cho ứng dụng tiếng Anh là gì? | 1 | PHẦN MỞ RỘNG, ADDON, EXTENSION
+TEMPLATE | Mẫu giao diện hoặc mẫu tài liệu thiết kế sẵn tiện dụng tiếng Anh là gì? | 1 | BẢN MẪU, MẪU THIẾT KẾ
+DARK MODE | Giao diện chế độ tối bảo vệ mắt ban đêm tiếng Anh là gì? | 1 | CHẾ ĐỘ TỐI
+COMMIT | Hành động lưu thay đổi mã vào hệ thống quản lý phiên bản tiếng Anh là gì? | 1 | COMMIT
+PULL REQUEST | Yêu cầu gộp nhánh code mới vào nhánh chính tiếng Anh là gì? | 2 | PULL REQUEST
+BRANCH | Nhánh phát triển riêng trong hệ thống quản lý phiên bản tiếng Anh là gì? | 1 | NHÁNH CODE
+MERGE | Hành động gộp hai nhánh code lại thành một tiếng Anh là gì? | 1 | GỘP NHÁNH
+CONFLICT | Xung đột code xảy ra khi hai nhánh sửa cùng một dòng tiếng Anh là gì? | 2 | XUNG ĐỘT CODE
+SYNTAX ERROR | Lỗi cú pháp do viết sai quy tắc ngôn ngữ lập trình tiếng Anh là gì? | 1 | LỖI CÚ PHÁP
+RUNTIME ERROR | Lỗi xảy ra khi chương trình đang chạy thực tế tiếng Anh là gì? | 2 | LỖI KHI CHẠY
+LOGIC ERROR | Lỗi logic chương trình chạy được nhưng cho kết quả sai tiếng Anh là gì? | 2 | LỖI LOGIC
+STACK OVERFLOW | Lỗi tràn ngăn xếp thường do đệ quy vô hạn tiếng Anh là gì? | 3 | TRÀN NGĂN XẾP
+NULL POINTER | Con trỏ trỏ vào vùng nhớ không tồn tại gây lỗi chương trình tiếng Anh là gì? | 3 | CON TRỎ NULL
+GARBAGE COLLECTION | Cơ chế tự động thu hồi bộ nhớ không còn sử dụng tiếng Anh là gì? | 3 | THU HỒI BỘ NHỚ
+PACKAGE MANAGER | Công cụ quản lý cài đặt và cập nhật các gói thư viện tiếng Anh là gì? | 2 | QUẢN LÝ GÓI
+MONOLITH | Kiến trúc ứng dụng nguyên khối gộp tất cả vào một nơi tiếng Anh là gì? | 3 | ĐƠN KHỐI
+LOAD BALANCER | Bộ cân bằng tải phân phối yêu cầu đến nhiều máy chủ tiếng Anh là gì? | 2 | CÂN BẰNG TẢI
+CACHING | Lưu tạm dữ liệu hay dùng để tăng tốc độ truy cập tiếng Anh là gì? | 2 | CACHE DỮ LIỆU
+CDN | Mạng phân phối nội dung giúp tải trang web nhanh hơn tiếng Anh là gì? | 2 | MẠNG PHÂN PHỐI NỘI DUNG
+SLA | Thỏa thuận mức độ dịch vụ cam kết giữa nhà cung cấp và khách hàng tiếng Anh là gì? | 3 | THỎA THUẬN DỊCH VỤ
+SPRINT | Giai đoạn làm việc ngắn trong Scrum thường 1 đến 4 tuần tiếng Anh là gì? | 2 | SPRINT
+KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng tiếng Anh là gì? | 2 | KANBAN
+BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên tiếng Anh là gì? | 2 | DANH SÁCH CHỜ
+USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile tiếng Anh là gì? | 2 | CÂU CHUYỆN NGƯỜI DÙNG
+TECHNICAL DEBT | Nợ kỹ thuật chi phí phát sinh do chọn giải pháp nhanh thay vì tốt tiếng Anh là gì? | 3 | NỢ KỸ THUẬT
+CODE REVIEW | Việc xem xét kiểm tra code của đồng nghiệp trước khi gộp vào tiếng Anh là gì? | 2 | KIỂM TRA CODE
+UNIT TEST | Kiểm thử đơn vị kiểm tra từng hàm hoặc module nhỏ riêng lẻ tiếng Anh là gì? | 2 | KIỂM THỬ ĐƠN VỊ
+INTEGRATION TEST | Kiểm thử tích hợp đảm bảo các module hoạt động đúng khi kết hợp tiếng Anh là gì? | 3 | KIỂM THỬ TÍCH HỢP
+REGRESSION TEST | Kiểm thử hồi quy đảm bảo tính năng cũ không bị hỏng sau sửa đổi tiếng Anh là gì? | 3 | KIỂM THỬ HỒI QUY
+CONTINUOUS INTEGRATION | Tích hợp liên tục tự động build và test mỗi khi code được push tiếng Anh là gì? | 3 | TÍCH HỢP LIÊN TỤC
+ROLLBACK | Khôi phục phiên bản cũ khi phiên bản mới bị lỗi tiếng Anh là gì? | 2 | KHÔI PHỤC PHIÊN BẢN
+HOTFIX | Bản vá khẩn cấp sửa lỗi nghiêm trọng ngay trên môi trường sản xuất tiếng Anh là gì? | 2 | VÁ KHẨN CẤP
+PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính khả thi trước tiếng Anh là gì? | 3 | THỬ NGHIỆM Ý TƯỞNG
+MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường tiếng Anh là gì? | 3 | MVP
+TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng tiếng Anh là gì? | 2 | BỘ CÔNG NGHỆ
+PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code tiếng Anh là gì? | 3 | MÃ GIẢ
+TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP tiếng Anh là gì? | 3 | TOKEN HÓA
+EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI tiếng Anh là gì? | 3 | NHÚNG VÉC-TƠ

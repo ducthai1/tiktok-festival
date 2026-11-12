@@ -186,6 +186,9 @@ connectLiveSocket({
         }
       }
     }
+    else if (message.t === 'reload') {
+      location.reload();
+    }
   }
 });
 

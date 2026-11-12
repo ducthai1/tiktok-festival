@@ -1,0 +1,19 @@
+# Tiếng Anh · Nghề nghiệp, đời sống
+SOLDIER | Người người lính bộ đội cầm súng bảo vệ quê hương tiếng Anh là gì? | 1 | BỘ ĐỘI, NGƯỜI LÍNH
+GUARDSMAN | Người lính cận vệ đứng gác canh giữ cổng cung điện hoàng gia tiếng Anh là gì? | 2 | CẬN VỆ, LÍNH GÁC
+PARAMEDIC | Nhân viên y tế cấp cứu khẩn cấp trên xe cứu thương tiếng Anh là gì? | 2 | CẤP CỨU VIÊN
+BARISTA | Thợ pha chế cà phê điêu luyện vẽ hình bọt sữa latte tiếng Anh là gì? | 2 | THỢ PHA CÀ PHÊ
+BARTENDER | Người pha chế đồ uống rượu cocktail tại quầy bar tiếng Anh là gì? | 2 | NGƯỜI PHA CHẾ
+FLORIST | Người thợ cắm hoa và bán hoa tươi rực rỡ tiếng Anh là gì? | 2 | THỢ CẮM HOA
+LIFEGUARD | Nhân viên cứu hộ túc trực tại bãi biển và bể bơi tiếng Anh là gì? | 2 | CỨU HỘ BIỂN
+ANESTHESIOLOGIST | Bác sĩ chuyên khoa gây mê hồi sức trong phòng phẫu thuật tiếng Anh là gì? | 4 | BÁC SĨ GÂY MÊ
+CARTOGRAPHER | Nhà bản đồ học chuyên vẽ và đo đạc bản đồ địa lý tiếng Anh là gì? | 3 | NGƯỜI VẼ BẢN ĐỒ
+PALEONTOLOGIST | Nhà cổ sinh vật học nghiên cứu các hóa thạch khủng long cổ tiếng Anh là gì? | 3 | NHÀ CỔ SINH VẬT
+ACTUARY | Chuyên gia định phí bảo hiểm và tính toán rủi ro tài chính tiếng Anh là gì? | 3 | CHUYÊN VIÊN ĐỊNH PHÍ
+SOMMELIER | Chuyên gia nếm thử và tư vấn rượu vang tại nhà hàng 5 sao tiếng Anh là gì? | 3 | CHUYÊN GIA RƯỢU
+TAXONOMIST | Nhà phân loại học chuyên định danh và sắp xếp các loài sinh vật tiếng Anh là gì? | 4 | NHÀ PHÂN LOẠI
+PHILANTHROPIST | Nhà từ thiện quyên góp hàng triệu đô giúp đỡ người nghèo tiếng Anh là gì? | 3 | NHÀ TỪ THIỆN
+POLICEMAN | Chiến sĩ cảnh sát bảo vệ trật tự an ninh tiếng Anh là gì? | 1 | CẢNH SÁT, POLICE, POLICE OFFICER
+BARBER | Thợ cắt tóc nam tạo kiểu tóc tiếng Anh là gì? | 1 | THỢ CẮT TÓC, CẮT TÓC
+GARDENER | Người làm vườn chăm sóc hoa cỏ cây cối tiếng Anh là gì? | 1 | NGƯỜI LÀM VƯỜN
+FISHERMAN | Ngư dân quăng lưới đánh bắt cá trên biển tiếng Anh là gì? | 1 | NGƯ DÂN, BÁC ĐÁNH CÁ

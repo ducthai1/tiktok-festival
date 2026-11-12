@@ -150,3 +150,157 @@ MASCOT | Linh vật tiếng Anh là gì? | 2
 ANTHEM | Quốc ca (hát trước trận) tiếng Anh là gì? | 2 | NATIONAL ANTHEM
 PENALTY SPOT | Chấm phạt đền tiếng Anh là gì? | 2 | SPOT
 DUGOUT | Khu kỹ thuật (băng ghế huấn luyện viên) tiếng Anh là gì? | 3
+
+CORNER KICK | Quả phạt góc | 1 | PHẠT GÓC
+HAT TRICK | Ghi 3 bàn thắng trong một trận đấu | 1 | HAT TRICK
+FORWARD | Tiền đạo tấn công | 1 | TIỀN ĐẠO
+COUNTER ATTACK | Pha phản công nhanh | 2 | PHẢN CÔNG
+CHAMPIONSHIP | Giải vô địch bóng đá | 2 | VÔ ĐỊCH
+EQUALIZE | Bàn thắng gỡ hòa | 3 | GỠ HÒA
+PENALTY SHOOTOUT | Loạt sút luân lưu 11m | 2 | PENALTY, LUÂN LƯU
+
+SPECTATOR | Khán giả xem bóng đá trên khán đài | 2 | KHÁN GIẢ
+OFFENCE | Hàng tấn công | 2 | TẤN CÔNG
+GOLDEN BOOT | Danh hiệu Giày vàng | 2 | GIÀY VÀNG
+BALLON D OR | Giải thưởng Quả bóng vàng | 2 | QUẢ BÓNG VÀNG
+
+PLAYMAKER | Người dẫn dắt lối chơi | 2 | DẪN DẮT
+GOAL LINE | Đường biên ngang khung thành | 2 | BIÊN NGANG
+SIX YARD BOX | Vòng cấm nhỏ 5m50 | 2 | VÒNG 5M50
+CENTRE CIRCLE | Vòng tròn giữa sân | 1 | VÒNG TRÒN GIỮA
+KICK OFF | Cú giao bóng bắt đầu trận | 1 | GIAO BÓNG
+FULL TIME | Hết giờ thi đấu chính thức | 1 | HẾT GIỜ
+HALF TIME | Nghỉ giữa hiệp | 1 | NGHỈ GIỮA HIỆP
+INJURY TIME | Thời gian bù giờ | 1 | BÙ GIỜ
+TRANSFER WINDOW | Thị trường chuyển nhượng | 3 | CHUYỂN NHƯỢNG
+LOAN DEAL | Hợp đồng cho mượn cầu thủ | 2 | CHO MƯỢN
+RELEGATION BATTLE | Cuộc chiến trụ hạng | 3 | TRỤ HẠNG
+CLEAN TACKLE | Pha xoạc bóng đúng luật | 2 | XOẠC ĐÚNG LUẬT
+SET PIECE | Tình huống dàn xếp đá phạt | 3 | DÀN XẾP
+OVERHEAD KICK | Cú sút ngả người móc bóng | 3 | MÓC BÓNG
+WOODWORK | Cột dọc hoặc xà ngang | 2 | CỘT DỌC, XÀ NGANG
+OFFSIDE TRAP | Bẫy việt vị | 2 | BẪY VIỆT VỊ
+ZONAL MARKING | Phòng ngự khu vực | 3 | PHÒNG NGỰ KHU VỰC
+MAN MARKING | Phòng ngự kèm người | 3 | KÈM NGƯỜI
+STRETCHER | Cáng khiêng cầu thủ chấn thương | 2 | CÁNG
+HOME GROUND | Sân nhà của đội bóng | 1 | SÂN NHÀ
+AWAY GAME | Trận đấu trên sân khách | 1 | SÂN KHÁCH
+AGGREGATE SCORE | Tổng tỷ số sau hai lượt | 3 | TỔNG TỶ SỐ
+AWAY GOAL RULE | Luật bàn thắng sân khách | 3 | BÀN THẮNG SÂN KHÁCH
+BOOKING | Nhận thẻ phạt (vàng/đỏ) | 2 | PHẠT THẺ
+SKIPPER | Đội trưởng (biệt danh) | 2 | ĐỘI TRƯỞNG
+BRACE | Ghi 2 bàn trong một trận | 3 | CÚ ĐÚP
+POACHER | Tiền đạo chớp thời cơ | 3 | CHỚP THỜI CƠ
+BACKHEEL | Cú đánh gót | 2 | ĐÁNH GÓT
+
+PANENKA | Cú sút phạt đền 11m bấm bóng nhẹ bổng điệu nghệ đánh lừa thủ môn | 3 | SÚT PANENKA
+RABONA | Kỹ thuật vắt chéo chân sau chân trụ để tạt bóng điệu nghệ | 3 | CÚ ĐÁ RABONA
+TREBLE | Cú ăn ba danh hiệu vô địch danh giá trong một mùa giải | 2 | CÚ ĂN BA
+QUADRUPLE | Cú ăn bốn vô tiền khoáng hậu của một câu lạc bộ | 3 | CÚ ĂN BỐN
+SILVERWARE | Các danh hiệu cúp bạc mà đội bóng khao khát giành được | 2 | CÚP BẠC, DANH HIỆU
+CAPTAINCY | Băng đội trưởng và vai trò thủ lĩnh tinh thần của đội | 2 | BĂNG ĐỘI TRƯỞNG
+CRUNCH MATCH | Trận đấu sinh tử then chốt quyết định ngôi vô địch | 3 | TRẬN THEN CHỐT
+GOALLINE TECHNOLOGY | Công nghệ vạch vôi xác định bóng đã qua vạch khung thành | 2 | CÔNG NGHỆ VẠCH VÔI
+SQUEAKER | Chiến thắng sít sao nghẹt thở ở những giây cuối cùng | 3 | THẮNG SÍT SAO
+
+MANAGER | Huấn luyện viên trưởng chỉ đạo chiến thuật bên ngoài sân tiếng Anh là gì? | 1 | HUẤN LUYỆN VIÊN, COACH, HEAD COACH
+ADDED TIME | Thời gian bù giờ sau mỗi hiệp đấu tiếng Anh là gì? | 2 | BÙ GIỜ, INJURY TIME, STOPPAGE TIME
+EQUALIZER | Bàn thắng gỡ hòa quý giá đưa trận đấu về vạch xuất phát tiếng Anh là gì? | 2 | BÀN GỠ HÒA
+WINNER | Bàn thắng ấn định thắng lợi chung cuộc tiếng Anh là gì? | 2 | BÀN THẮNG QUYẾT ĐỊNH
+INTERCEPTION | Cú cắt đường chuyền bóng của đối phương tiếng Anh là gì? | 3 | CẮT BÓNG
+LONG BALL | Đường chuyền dài vượt tuyến từ phần sân nhà tiếng Anh là gì? | 2 | CHUYỀN DÀI
+BYLINE | Đường biên ngang phía sau hai cầu môn tiếng Anh là gì? | 3 | ĐƯỜNG BIÊN NGANG
+PENALTY BOX | Khu vực vòng cấm địa 16 mét 50 tiếng Anh là gì? | 2 | VÒNG CẤM, PENALTY AREA, BOX
+CENTER CIRCLE | Vòng tròn trung tâm giữa sân bóng tiếng Anh là gì? | 2 | VÒNG TRÒN GIỮA SÂN
+COUNTERATTACK | Đòn phản công chớp nhoáng khi đối thủ dâng cao tiếng Anh là gì? | 2 | PHẢN CÔNG
+GOAL DIFFERENCE | Hiệu số bàn thắng bại để xếp hạng giải đấu tiếng Anh là gì? | 3 | HIỆU SỐ BÀN THẮNG
+HEAD-TO-HEAD | Thành tích đối đầu trực tiếp giữa hai câu lạc bộ tiếng Anh là gì? | 3 | ĐỐI ĐẦU TRỰC TIẾP
+RUNNER-UP | Đội á quân về nhì nhận huy chương bạc tiếng Anh là gì? | 2 | Á QUÂN
+GOLDEN GLOVE | Danh hiệu Găng tay vàng cho thủ môn xuất sắc nhất tiếng Anh là gì? | 2 | GĂNG TAY VÀNG
+CLEATS | Đôi giày đinh chuyên dụng để thi đấu trên sân cỏ tiếng Anh là gì? | 2 | GIÀY ĐINH, FOOTBALL BOOTS
+SHIN GUARDS | Miếng ốp bảo vệ ống đồng tránh gãy chân khi va chạm tiếng Anh là gì? | 2 | ỐP ỐNG ĐỒNG, SHIN PADS
+SUPPORTER | Cổ động viên trung thành luôn sát cánh bên đội bóng tiếng Anh là gì? | 2 | CỔ ĐỘNG VIÊN, FAN
+TURF | Mặt thảm cỏ xanh mướt trên sân bóng đá tiếng Anh là gì? | 2 | MẶT CỎ, PITCH
+TUNNEL | Đường hầm dẫn cầu thủ từ phòng thay đồ bước ra sân thi đấu tiếng Anh là gì? | 2 | ĐƯỜNG HẦM
+LOCKER ROOM | Phòng thay đồ của các cầu thủ sau giờ thi đấu tiếng Anh là gì? | 1 | PHÒNG THAY ĐỒ, DRESSING ROOM
+SCOUT | Chuyên viên trinh sát săn tìm tài năng bóng đá trẻ tiếng Anh là gì? | 3 | TRINH SÁT VIÊN, TALENT SCOUT
+STOMPING | Hành vi giẫm đạp thô bạo vào chân đối phương nhận thẻ phạt tiếng Anh là gì? | 3 | GIẪM ĐẠP
+DIVING | Hành vi ăn vạ giả vờ ngã kiếm quả phạt đền tiếng Anh là gì? | 2 | ĂN VẠ, SIMULATION
+FLAG | Lá cờ hiệu màu vàng cam của trọng tài biên tiếng Anh là gì? | 1 | LÁ CỜ
+CENTER SPOT | Điểm tròn giao bóng chính giữa tâm sân bóng tiếng Anh là gì? | 2 | ĐIỂM GIAO BÓNG
+CROSSBAR SHOT | Cú sút dội xà ngang nảy ra đầy tiếc nuối tiếng Anh là gì? | 3 | SÚT DỘI XÀ
+WOODWORK SHOT | Cú sút đập trúng cột dọc khung thành tiếng Anh là gì? | 3 | SÚT TRÚNG CỘT
+CURLER | Cú sút cứa lòng hình quả chuối bóng xoáy cong vào góc xa tiếng Anh là gì? | 3 | CỨA LÒNG, BEND
+KNUCKLEBALL | Cú sút bóng lắc lư không xoáy quỹ đạo khó lường tiếng Anh là gì? | 3 | SÚT LẮC LƯ
+DRIVE | Cú sút mu chính diện cực căng xé gió tiếng Anh là gì? | 3 | SÚT CĂNG
+TIE | Trận đấu kết thúc với kết quả hòa không phân thắng bại tiếng Anh là gì? | 1 | HÒA, DRAW
+DEFEAT | Thất bại cay đắng trước đối thủ tiếng Anh là gì? | 2 | THẤT BẠI, LOSS
+VICTORY | Chiến thắng vang dội vẻ vang của toàn đội tiếng Anh là gì? | 1 | CHIẾN THẮNG, WIN
+STANDINGS | Bảng xếp hạng điểm số của các đội bóng trong mùa giải tiếng Anh là gì? | 2 | BẢNG XẾP HẠNG, TABLE
+QUALIFIER | Trận đấu thuộc vòng loại để giành vé dự vòng chung kết tiếng Anh là gì? | 2 | VÒNG LOẠI
+QUARTERFINAL | Vòng đấu tứ kết quy tụ 8 đội bóng mạnh nhất tiếng Anh là gì? | 2 | TỨ KẾT
+SEMIFINAL | Vòng đấu bán kết quy tụ 4 đội tranh vé vào chung kết tiếng Anh là gì? | 2 | BÁN KẾT
+DEFENDING CHAMPION | Nhà đương kim vô địch đang giữ chiếc cúp mùa trước tiếng Anh là gì? | 3 | ĐƯƠNG KIM VÔ ĐỊCH
+FAVORITE | Đội bóng hạt giống sáng giá được dự đoán sẽ vô địch tiếng Anh là gì? | 2 | ỨNG CỬ VIÊN
+UPSET | Cơn địa chấn bất ngờ khi đội yếu quật ngã đội mạnh tiếng Anh là gì? | 3 | BẤT NGỜ LỚN
+BLUNDER | Sai lầm ngớ ngẩn tai hại của thủ môn dẫn tới bàn thua tiếng Anh là gì? | 3 | SAI LẦM TAI HẠI
+PARRY | Pha bay người đấm bóng đẩy bóng cứu thua xuất thần của thủ môn tiếng Anh là gì? | 3 | ĐẨY BÓNG CỨU THUA
+FIST | Nắm đấm của thủ môn đấm tung quả bóng bổng ra xa tiếng Anh là gì? | 2 | ĐẤM BÓNG
+CATCH | Pha ôm gọn bắt dính trái bóng vào ngực của thủ môn tiếng Anh là gì? | 1 | BẮT DÍNH BÓNG
+GOALKICK | Quả phát bóng lên từ khu vực 5 mét 50 của thủ môn tiếng Anh là gì? | 2 | PHÁT BÓNG LÊN
+SCORPION KICK | Cú đá bọ cạp dùng gót chân hất bóng qua người tiếng Anh là gì? | 3 | ĐÁ BỌ CẠP
+STEP-OVER | Điệu bộ giả vờ bước qua bóng để lừa đối thủ tiếng Anh là gì? | 2 | QUA NGƯỜI GIẢ BƯỚC
+FEINT | Động tác giả vờ lừa đối thủ trước khi đổi hướng tiếng Anh là gì? | 2 | ĐỘNG TÁC GIẢ VỜ
+BODY FEINT | Lừa người bằng chuyển động thân trên tiếng Anh là gì? | 3 | LỪA BẰNG THÂN NGƯỜI
+ELASTICO | Màn lừa bóng kinh điển xoay cổ chân tiếng Anh là gì? | 3 | ELASTICO
+CRUYFF TURN | Màn xoay người kinh điển của Cruyff né đối thủ tiếng Anh là gì? | 3 | CRUYFF TURN
+RAINBOW FLICK | Cú hất bóng qua đầu đối thủ theo hình vòng cầu tiếng Anh là gì? | 3 | HẤT BÓNG QUA ĐẦU
+DIVING HEADER | Cú đánh đầu lao người xuống tiếng Anh là gì? | 2 | ĐẦU BÓNG LAO NGƯỜI
+HALF-VOLLEY | Cú sút ngay khi bóng vừa chạm đất nảy lên tiếng Anh là gì? | 3 | SÚT NỬA BỔNG
+CHIP SHOT | Cú lobbing bóng vượt qua thủ môn vào lưới tiếng Anh là gì? | 2 | CU LOP BÓNG
+PERFECT HAT-TRICK | Hat-trick với một bàn chân phải chân trái và đầu tiếng Anh là gì? | 3 | HAT TRICK HOÀN HẢO
+POKER | Ghi được bốn bàn thắng trong một trận tiếng Anh là gì? | 3 | GHI BỐN BÀN
+MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản tiếng Anh là gì? | 4 | MANITA
+SHUTOUT | Giữ lưới sạch bóng đối thủ không ghi được bàn nào tiếng Anh là gì? | 2 | KHÔNG ĐỂ THỦNG LƯỚI
+PLAYOFF | Vòng tranh suất thăng hạng hoặc quyết định chức vô địch tiếng Anh là gì? | 2 | PLAY OFF
+WALKOVER | Trận thắng không chiến khi đối thủ bỏ cuộc tiếng Anh là gì? | 2 | THẮNG KHÔNG CHIẾN
+SUBSTITUTION BENCH | Khu dự bị nơi các cầu thủ ngồi chờ được tung vào sân tiếng Anh là gì? | 2 | KHU DỰ BỊ
+HALFWAY LINE | Vạch giữa sân chia đôi sân bóng tiếng Anh là gì? | 1 | VẠCH GIỮA SÂN
+SIX-YARD BOX | Vùng cấm địa nhỏ sát gần khung thành tiếng Anh là gì? | 2 | CẤM ĐỊA NHỎ
+GOALPOSTS | Hai cột dọc của khung thành tiếng Anh là gì? | 2 | CỘT DỌC KHUNG THÀNH
+BOOT | Giày đinh bóng đá chuyên dụng tiếng Anh là gì? | 1 | GIÀY BÓNG ĐÁ
+STUDS | Đinh bám đất dưới đế giày bóng đá tiếng Anh là gì? | 2 | ĐINH GIÀY
+GOALKEEPER GLOVES | Găng tay thủ môn tiếng Anh là gì? | 1 | GĂNG TAY THỦ MÔN
+ARMBAND | Băng đội trưởng đeo ở cánh tay tiếng Anh là gì? | 1 | BĂNG ĐỘI TRƯỞNG
+FRIENDLY MATCH | Trận giao hữu không tính điểm chỉ để luyện tập tiếng Anh là gì? | 1 | TRẬN GIAO HỮU
+PRESSER | Buổi họp báo trước hoặc sau trận của ban huấn luyện tiếng Anh là gì? | 2 | HỌP BÁO
+TALENT SCOUT | Chuyên viên săn tìm tài năng bóng đá tiếng Anh là gì? | 2 | NGƯỜI PHÁT HIỆN TÀI NĂNG
+GRASSROOTS | Bóng đá cơ sở phong trào ở cấp địa phương tiếng Anh là gì? | 2 | BÓNG ĐÁ CƠ SỞ
+FUTSAL | Bóng đá trong nhà sân nhỏ 5 người tiếng Anh là gì? | 1 | BÓNG ĐÁ TRONG NHÀ
+BEACH SOCCER | Bóng đá bãi biển thi đấu trên cát tiếng Anh là gì? | 1 | BÓNG ĐÁ BÃI BIỂN
+SWEEPER | Trung vệ libero chơi tự do phòng thủ theo khu vực tiếng Anh là gì? | 3 | TRUNG VỆ LIBERO
+LIBERO | Vị trí chơi phòng thủ tự do phía sau các hậu vệ tiếng Anh là gì? | 3 | LIBERO
+WINGBACK | Hậu vệ cánh thường xuyên dâng lên tấn công tiếng Anh là gì? | 2 | HẬU VỆ CÁNH
+GOALKEEPER KIT | Bộ trang phục màu khác biệt dành riêng cho thủ môn tiếng Anh là gì? | 2 | ĐỒ THỦ MÔN
+GOALKEEPER DISTRIBUTION | Khả năng phân phối bóng của thủ môn bằng tay hoặc chân tiếng Anh là gì? | 3 | PHÂN PHỐI BÓNG CỦA THỦ MÔN
+NEAR POST | Cột gần phía cầu thủ đang dứt điểm tiếng Anh là gì? | 2 | CỘT GẦN
+FAR POST | Cột xa phía đối diện khi sút tiếng Anh là gì? | 2 | CỘT XA
+GOAL MOUTH | Vùng miệng lưới giữa hai cột dọc khung thành tiếng Anh là gì? | 2 | MIỆNG LƯỚI
+TECHNICAL AREA | Khu kỹ thuật giới hạn khu vực chỉ đạo của ban huấn luyện tiếng Anh là gì? | 2 | KHU KỸ THUẬT
+FOURTH OFFICIAL | Trọng tài thứ tư phụ trách bảng thay người tiếng Anh là gì? | 2 | TRỌNG TÀI THỨ TƯ
+ASSISTANT REFEREE | Trọng tài biên giơ cờ việt vị và bóng ra ngoài tiếng Anh là gì? | 2 | TRỌNG TÀI BIÊN
+VIDEO REVIEW | Quy trình xem lại video để xác nhận quyết định trọng tài tiếng Anh là gì? | 2 | XEM LẠI VIDEO
+OVERTURNED DECISION | Quyết định bị đảo ngược sau khi xem lại video tiếng Anh là gì? | 3 | QUYẾT ĐỊNH BỊ ĐẢO NGƯỢC
+CHECK COMPLETE | Thông báo VAR đã hoàn tất kiểm tra không thay đổi quyết định tiếng Anh là gì? | 3 | KIỂM TRA HOÀN TẤT
+ON REVIEW | Khoảng thời gian trọng tài đang xem lại màn hình VAR tiếng Anh là gì? | 2 | ĐANG XEM LẠI
+PITCHSIDE MONITOR | Màn hình bên đường biên để trọng tài xem lại pha tranh cãi tiếng Anh là gì? | 3 | MÀN HÌNH BIÊN
+MAXIMUM POINTS | Số điểm tối đa thu được nếu thắng toàn bộ trận tiếng Anh là gì? | 2 | ĐIỂM TỐI ĐA
+DEAD RUBBER | Trận đấu không còn ý nghĩa vì cả hai đội đã xác định vị trí tiếng Anh là gì? | 3 | TRẬN VÔ NGHĨA
+CARETAKER | Huấn luyện viên tạm quyền trong khi tìm người thay thế tiếng Anh là gì? | 2 | HLV TẠM QUYỀN
+HEAD COACH | Huấn luyện viên trưởng người đứng đầu ban kỹ thuật tiếng Anh là gì? | 1 | HLV TRƯỞNG
+ASSISTANT COACH | Huấn luyện viên phó trợ lý cho HLV trưởng tiếng Anh là gì? | 1 | HLV PHÓ
+GOALKEEPER COACH | Huấn luyện viên chuyên phụ trách huấn luyện thủ môn tiếng Anh là gì? | 2 | HLV THỦ MÔN
+SPORTS DIRECTOR | Giám đốc thể thao phụ trách toàn bộ hoạt động chuyên môn của CLB tiếng Anh là gì? | 2 | GIÁM ĐỐC THỂ THAO
+CHAIRMAN | Chủ tịch hội đồng quản trị câu lạc bộ bóng đá tiếng Anh là gì? | 2 | CHỦ TỊCH CLB
+MATCHDAY SQUAD | Danh sách 18 đến 23 cầu thủ được đăng ký cho trận đấu tiếng Anh là gì? | 3 | ĐĂNG KÝ TRẬN ĐẤU
+STAMINA | Sức bền thể lực chạy liên tục 90 phút của cầu thủ tiếng Anh là gì? | 1 | SỨC BỀN

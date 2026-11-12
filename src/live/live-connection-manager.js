@@ -74,11 +74,9 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
         if (myAttempt === attempt && provider === instance) scheduleRetry(myAttempt, reason);
       },
       onEnded: () => {
-        if (myAttempt !== attempt) return;
-        attempt += 1; // live kết thúc: dừng hẳn, không nối lại
-        clearRetry();
-        void stopProvider();
-        setStatus({ state: 'ended', message: `Live @${status.username} đã kết thúc` });
+        if (myAttempt === attempt && provider === instance) {
+          scheduleRetry(myAttempt, `Live @${status.username} tạm dừng / đổi phòng`);
+        }
       }
     });
     provider = instance;
@@ -96,6 +94,7 @@ export function createLiveConnectionManager({ providerFactories, onEvent, onStat
         : blocked
           ? 'TikTok chặn kết nối — cần EULER_API_KEY (xem README)'
           : `Lỗi: ${error?.message || error}`;
+      console.log(`[live] ${reason}`);
       scheduleRetry(myAttempt, reason);
     }
   }

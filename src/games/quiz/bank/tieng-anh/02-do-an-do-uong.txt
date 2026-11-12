@@ -154,3 +154,75 @@ LUNCH | Bữa trưa tiếng Anh là gì? | 1
 DINNER | Bữa tối tiếng Anh là gì? | 1 | SUPPER
 MEAL | Bữa ăn tiếng Anh là gì? | 1 | MEALS
 MENU | Thực đơn tiếng Anh là gì? | 1 | MENUS
+
+SPAGHETTI | Mì Ý sốt cà chua / thịt băm | 1 | MÌ Ý
+CROISSANT | Bánh sừng bò / bánh sừng trâu | 2 | BÁNH SỪNG BÒ
+PANCAKE | Bánh rán chảo ăn kèm mật ong | 1 | BÁNH RÁN
+OATMEAL | Yến mạch / cháo yến mạch | 2 | YẾN MẠCH
+ESPRESSO | Cà phê đậm đặc | 2 | CÀ PHÊ ESPRESSO
+CAPPUCCINO | Cà phê bọt sữa Ý | 2
+MILKSHAKE | Sữa lắc trái cây / kem | 2 | SỮA LẮC
+BARBECUE | Món nướng BBQ | 1 | BBQ, THỊT NƯỚNG
+APPETIZER | Món khai vị | 3 | KHAI VỊ
+BEVERAGE | Đồ uống / thức uống nói chung | 3 | ĐỒ UỐNG
+INGREDIENT | Nguyên liệu nấu ăn | 2 | NGUYÊN LIỆU
+WATERMELON | Dưa hấu đỏ | 1 | DƯA HẤU
+ASPARAGUS | Măng tây | 3 | MĂNG TÂY
+
+LASAGNA | Mì đút lò xếp lớp Ý | 2 | LASAGNA
+MACARONI | Nơ ống / mì ống phô mai | 2 | MÌ ỐNG
+WAFFLE | Bánh tổ ong nướng nóng | 2 | BÁNH TỔ ONG
+BAGUETTE | Bánh mì Pháp dài | 2 | BÁNH MÌ PHÁP
+MARSHMALLOW | Kẹo dẻo bông xốp | 1 | KẸO DẺO
+POMEGRANATE | Quả lựu đỏ | 2 | QUẢ LỰU
+GRAPE | Quả nho tươi | 1 | GRAPES, QUẢ NHO
+BLUEBERRY | Quả việt quất | 2 | VIỆT QUẤT
+RASPBERRY | Quả mâm xôi | 2 | MÂM XÔI
+DRAGONFRUIT | Quả thanh long | 1 | THANH LONG
+PERSIMMON | Quả hồng chín | 2 | QUẢ HỒNG
+NUTRIENT | Chất dinh dưỡng thực phẩm | 3 | DINH DƯỠNG
+CALORIE | Lượng calo năng lượng | 2 | CALO
+
+TIRAMISU | Món bánh ngọt tiramisu béo ngậy vị cà phê và cacao của Ý tiếng Anh là gì? | 1 | BÁNH TIRAMISU
+GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico tiếng Anh là gì? | 3 | SỐT BƠ
+TACO | Bánh taco vỏ giòn kẹp thịt băm cay của Mexico tiếng Anh là gì? | 1 | BÁNH TACO, TACOS
+BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico tiếng Anh là gì? | 2 | BURRITOS
+SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản tiếng Anh là gì? | 1 | CƠM CUỘN
+WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản tiếng Anh là gì? | 2 | MÙ TẠT XANH
+VANILLA | Hương vani thơm ngọt ngào cho món bánh kem tiếng Anh là gì? | 1 | VANI
+CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm tiếng Anh là gì? | 1 | CARAMEN
+COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng tiếng Anh là gì? | 2 | KẸO BÔNG GÒN, CANDY FLOSS
+LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu tiếng Anh là gì? | 1 | KẸO MÚT
+PRETZEL | Bánh quy xoắn nướng giòn rắc hạt muối của Đức tiếng Anh là gì? | 2 | BÁNH QUY XOẮN, PRETZELS
+CAVIAR | Món trứng cá tầm đen muối xa xỉ đắt giá bậc nhất tiếng Anh là gì? | 3 | TRỨNG CÁ MUỐI
+TRUFFLE | Loài nấm truffle kim cương đen quý hiếm mọc dưới rễ cây tiếng Anh là gì? | 3 | NẤM TRUFFLE, TRUFFLES
+MUSTARD | Sốt mù tạt vàng cay dịu thường chấm cùng xúc xích nướng tiếng Anh là gì? | 2 | MÙ TẠT VÀNG
+MAYONNAISE | Sốt trứng béo ngậy trộn cùng rau củ salad tiếng Anh là gì? | 1 | SỐT MAYONNAISE, MAYO
+CUSTARD | Lớp sốt kem trứng sữa vàng ươm béo ngậy tiếng Anh là gì? | 2 | KEM TRỨNG
+CIDER | Thức uống rượu táo lên men có ga sủi bọt nhẹ tiếng Anh là gì? | 2 | RƯỢU TÁO, APPLE CIDER
+MOJITO | Món cocktail pha từ chanh, đường và lá bạc hà tươi tiếng Anh là gì? | 2 | COCKTAIL MOJITO
+CHEESECAKE | Bánh kem phô mai nướng thơm béo ngậy tiếng Anh là gì? | 1 | BÁNH PHÔ MAI
+MACARON | Bánh macaron tròn nhỏ vỏ giòn kẹp kem nhiều màu của Pháp tiếng Anh là gì? | 2 | BÁNH MACARON, MACARONS
+BROWNIE | Bánh sô-cô-la nướng vuông mềm ẩm đậm vị tiếng Anh là gì? | 1 | BÁNH CHOCOLATE, BROWNIES
+ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát tiếng Anh là gì? | 3 | BÔNG ATISO, ATISO
+CASHEW | Hạt điều rang béo bùi giòn rụm tiếng Anh là gì? | 2 | HẠT ĐIỀU, CASHEWS, CASHEW NUT
+WALNUT | Quả óc chó vỏ cứng giàu chất dinh dưỡng tiếng Anh là gì? | 2 | QUẢ ÓC CHÓ, ÓC CHÓ, WALNUTS
+ALMOND | Hạt hạnh nhân thơm giòn béo bùi tiếng Anh là gì? | 2 | HẠNH NHÂN, HẠT HẠNH NHÂN, ALMONDS
+PISTACHIO | Hạt dẻ cười vỏ hé nứt miệng rắc muối tiếng Anh là gì? | 2 | HẠT DẺ CƯỜI, PISTACHIOS
+
+CUPCAKE | Bánh bông lan nhỏ nướng trong khuôn cốc giấy bắt kem bên trên tiếng Anh là gì? | 1 | BÁNH CỐC
+
+SASHIMI | Món cá sống phi lê tươi rói cắt lát mỏng chấm xì dầu mù tạt của Nhật tiếng Anh là gì? | 1 | CÁ SỐNG
+UDON | Món mì udon sợi to tròn trắng mềm của Nhật tiếng Anh là gì? | 1 | MÌ UDON
+TEMPURA | Món tôm tẩm bột chiên xù vàng giòn rụm của Nhật tiếng Anh là gì? | 2 | TÔM CHIÊN XÙ
+KIMCHI | Món dưa cải thảo muối ớt cay giòn trứ danh của Hàn Quốc tiếng Anh là gì? | 1 | KIM CHI
+KEBAB | Món bánh mì kẹp thịt nướng xiên quay tròn Thổ Nhĩ Kỳ tiếng Anh là gì? | 1 | THỊT NƯỚNG KEBAB
+RISOTTO | Món cơm Ý nấu nhừ cùng sốt bơ nấm và phô mai béo ngậy tiếng Anh là gì? | 2 | CƠM Ý
+PIZZA | Chiếc bánh pizza đế bột nướng phủ đầy phô mai mozzarella kéo sợi tiếng Anh là gì? | 1 | BÁNH PIZZA
+HAMBURGER | Bánh mì tròn kẹp miếng thịt bò băm nướng xà lách cà chua tiếng Anh là gì? | 1 | BÁNH MÌ KẸP THỊT, BURGER
+TOAST | Lát bánh mì nướng giòn rụm quết bơ thơm phức tiếng Anh là gì? | 1 | BÁNH MÌ NƯỚNG
+MEATBALL | Viên thịt băm viên sốt cà chua đượm vị tiếng Anh là gì? | 1 | THỊT VIÊN
+APRICOT | Quả mơ vàng ươm ngâm đường chua ngọt tiếng Anh là gì? | 2 | QUẢ MƠ, TRÁI MƠ
+PLUM | Quả mận giòn chua chấm muối ớt tiếng Anh là gì? | 1 | QUẢ MẬN, TRÁI MẬN
+SESAME | Hạt vừng hạt mè rắc lên chè bánh tiếng Anh là gì? | 2 | MÈ, VỪNG, HẠT MÈ
+OMELET | Món trứng cuộn tráng vàng ruộm bữa sáng tiếng Anh là gì? | 1 | TRỨNG CUỘN, TRỨNG RÁN, OMELETTE

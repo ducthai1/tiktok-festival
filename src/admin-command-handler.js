@@ -21,10 +21,9 @@ export function presentPeople(state) {
     : Object.values(state).find((v) => Array.isArray(v) && v.length && v.every((p) => p && p.id && p.nickname)) || [];
   return list.filter((p) => p && p.id && p.nickname);
 }
+let testSeq = 0;
 
-export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined }) {
-  let testSeq = 0;
-
+export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets }) {
   const handlers = {
     async connect(msg) {
       const provider = msg.provider === 'tikfinity' ? 'tikfinity' : 'tiktok';
@@ -88,8 +87,19 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     resetSession() {
       hub.resetSession();
+      // Cũng xoá luôn điểm số trong game hiện tại nếu đang ở game tính điểm
+      try { hub.command(hub.snapshot().game, 'resetScores'); } catch {}
       pushState(true);
-      return { message: 'Đã xoá bảng xếp hạng phiên' };
+      return { message: 'Đã xoá bảng xếp hạng phiên và điểm game' };
+    },
+    resetAmbassadors() {
+      try { hub.command(hub.snapshot().game, 'resetAmbassadors'); } catch {}
+      pushState(true);
+      return { message: 'Đã xoá bảng đại sứ share' };
+    },
+    reload() {
+      sockets?.broadcast({ t: 'reload' });
+      return { message: 'Đã gửi lệnh làm mới tới tất cả màn hình' };
     },
     ping() {
       return { message: 'pong', settings, live: live.status() };

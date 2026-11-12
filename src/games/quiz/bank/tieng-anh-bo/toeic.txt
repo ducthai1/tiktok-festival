@@ -150,3 +150,158 @@ SUPERVISE | Giám sát tiếng Anh là gì? | 3 | OVERSEE, MONITOR
 DELEGATE | Giao việc cho cấp dưới tiếng Anh là gì? | 3 | ASSIGN
 MEMO | Bản ghi nhớ nội bộ tiếng Anh là gì? | 3 | MEMORANDUM
 BOARD | Hội đồng quản trị tiếng Anh là gì? | 3 | BOARD OF DIRECTORS
+REIMBURSE | Hoàn trả chi phí (bù tiền đã chi) tiếng Anh là gì? | 3 | REFUND, REPAY
+AUDIT | Kiểm toán (kiểm tra tài chính) tiếng Anh là gì? | 3 | AUDITING
+TRANSACTION | Giao dịch tài chính tiếng Anh là gì? | 3 | DEAL
+COMPENSATION | Tiền đền bù, bồi thường tiếng Anh là gì? | 3 | INDEMNITY, REPARATION
+NEGOTIATION | Sự thương lượng, đàm phán tiếng Anh is gì? | 3 | BARGAINING, NEGOTIATIONS
+STAKEHOLDER | Bên liên quan (trong dự án/doanh nghiệp) tiếng Anh là gì? | 3 | INTERESTED PARTY
+INSURANCE | Bảo hiểm tiếng Anh là gì? | 2 | COVERAGE
+PORTFOLIO | Danh mục đầu tư tiếng Anh là gì? | 3
+CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại tiếng Anh là gì? | 3 | LETTERS, MAIL
+COLLATERAL | Tài sản thế chấp (vay ngân hàng) tiếng Anh là gì? | 3 | SECURITY, PLEDGE
+RECRUITMENT | Sự tuyển dụng nhân sự tiếng Anh là gì? | 3 | RECRUITING, HIRING
+COMMISSION | Tiền hoa hồng (doanh số) tiếng Anh là gì? | 2 | CUT
+SUBSIDY | Tiền trợ cấp của chính phủ tiếng Anh là gì? | 3 | GRANT, SUBVENTIONS
+CURRENCY | Tiền tệ (của một quốc gia) tiếng Anh là gì? | 2 | MONEY
+DEFECT | Lỗi sản phẩm (khuyết tật) tiếng Anh là gì? | 3 | FAULT, FLAW
+LIABILITY | Nghĩa vụ pháp lý, khoản nợ tiếng Anh là gì? | 3 | DEBT, OBLIGATION
+INCENTIVE | Tiền thưởng khuyến khích (động lực) tiếng Anh là gì? | 3 | STIMULUS, MOTIVATION
+ASSET | Tài sản (của doanh nghiệp) tiếng Anh là gì? | 2 | ASSETS, PROPERTY
+ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân tiếng Anh là gì? | 3 | BUSINESSOWNER
+INFLATION | Sự lạm phát tiếng Anh là gì? | 3
+EXCHANGE RATE | Tỷ giá hối đoái tiếng Anh là gì? | 2 | FOREX RATE
+VACANCY | Vị trí công việc đang trống tiếng Anh là gì? | 2 | JOB VACANCY, OPENING
+ALLOWANCE | Tiền phụ cấp tiếng Anh là gì? | 2 | SUBSIDY, STIPEND
+
+ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3 | ĐÁP ỨNG
+AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3 | SỬA ĐỔI
+COMPLIANCE | Sự tuân thủ quy định | 3 | TUÂN THỦ
+DELIBERATION | Sự cân nhắc / thảo luận kỹ | 3 | CÂN NHẮC
+OUTSOURCING | Thuê ngoài dịch vụ | 3 | THUÊ NGOÀI
+QUOTATION | Bảng báo giá sản phẩm | 2 | BÁO GIÁ
+RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3 | TÁI CẤU TRÚC
+SPECIFICATION | Thông số kỹ thuật chi tiết | 3 | THÔNG SỐ
+SUPERVISION | Sự giám sát công việc | 3 | GIÁM SÁT
+VENDOR | Nhà cung cấp / người bán | 2 | NHÀ CUNG CẤP
+
+BENCHMARK | Tiêu chuẩn đánh giá | 3 | TIÊU CHUẨN
+DEPRECIATION | Sự khấu hao tài sản | 3 | KHẤU HAO
+EXPENDITURE | Mức chi tiêu / chi phí | 3 | CHI PHÍ
+TURNOVER | Doanh số / tỷ lệ luân chuyển | 3 | DOANH SỐ
+
+ADMINISTRATION | Sự quản lý / hành chính | 2 | QUẢN LÝ
+AUTHORIZATION | Sự cho phép / ủy quyền | 3 | ỦY QUYỀN
+BENEFICIARY | Người thụ hưởng | 3 | NGƯỜI THỤ HƯỞNG
+CANDIDATE | Ứng cử viên | 2 | ỨNG VIÊN
+COLLABORATION | Sự hợp tác | 2 | HỢP TÁC
+CONFIRMATION | Sự xác nhận | 1 | XÁC NHẬN
+CONTRACTOR | Nhà thầu | 2 | NHÀ THẦU
+CONVENTION | Hội nghị / quy ước | 2 | HỘI NGHỊ
+DELEGATION | Đoàn đại biểu / sự ủy thác | 3 | ĐOÀN ĐẠI BIỂU
+DISTRIBUTION | Sự phân phối | 2 | PHÂN PHỐI
+EFFICIENCY | Hiệu quả / năng suất | 2 | HIỆU QUẢ
+ELIGIBILITY | Đủ điều kiện / tư cách | 3 | ĐỦ ĐIỀU KIỆN
+ENTERPRISE | Doanh nghiệp / xí nghiệp | 3 | DOANH NGHIỆP
+ESTABLISHMENT | Sự thành lập / cơ sở | 3 | THÀNH LẬP
+EVALUATION | Sự đánh giá | 2 | ĐÁNH GIÁ
+FACILITY | Cơ sở vật chất / tiện nghi | 2 | CƠ SỞ VẬT CHẤT
+GUARANTEE | Sự bảo hành / cam kết | 2 | BẢO HÀNH
+IMPLEMENTATION | Sự thi hành / triển khai | 3 | TRIỂN KHAI
+INSPECTION | Sự thanh tra / kiểm tra | 3 | KIỂM TRA
+INVESTMENT | Sự đầu tư | 2 | ĐẦU TƯ
+MANAGEMENT | Sự quản lý / ban quản lý | 1 | QUẢN LÝ
+OCCUPATION | Nghề nghiệp | 2 | NGHỀ NGHIỆP
+OPPORTUNITY | Cơ hội | 1 | CƠ HỘI
+PARTICIPANT | Người tham gia | 2 | NGƯỜI THAM GIA
+
+ACQUISITION | Thương vụ thâu tóm và mua lại một doanh nghiệp khác | 2 | THÂU TÓM
+COMMODITY | Hàng hóa thương mại thô trên thị trường giao dịch | 2 | HÀNG HÓA
+DEFECTIVE | Sản phẩm bị lỗi hỏng hóc do trục trặc sản xuất | 2 | BỊ LỖI
+DISPATCH | Hành động gửi chuyển phát nhanh hàng hóa hoặc tài liệu quan trọng | 2 | GỬI HÀNG
+EXPEDITE | Xúc tiến đẩy nhanh tiến độ xử lý đơn hàng cho khách | 3 | ĐẨY NHANH TIẾN ĐỘ
+TARIFF | Mức thuế quan áp đặt lên hàng hóa xuất nhập khẩu | 2 | THUẾ QUAN
+
+CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh nghiệp | 3 | KHÁCH HÀNG QUEN
+ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2 | BẢO CHỨNG
+FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3 | TÍNH KHẢ THI
+
+DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty tiếng Anh là gì? | 3 | CỔ TỨC
+TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty tiếng Anh là gì? | 2 | THÂU TÓM
+SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ tiếng Anh là gì? | 3 | CÔNG TY CON
+CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn tiếng Anh là gì? | 2 | TẬP ĐOÀN
+STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá tiếng Anh là gì? | 1 | KHỞI NGHIỆP
+VENTURE | Dự án liên doanh kinh doanh mạo hiểm tiếng Anh là gì? | 2 | DỰ ÁN MẠO HIỂM
+CLIENT | Khách hàng đối tác sử dụng dịch vụ chuyên nghiệp tiếng Anh là gì? | 1 | KHÁCH HÀNG
+CONSUMER | Người tiêu dùng mua sắm sản phẩm trên thị trường tiếng Anh là gì? | 2 | NGƯỜI TIÊU DÙNG
+DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường tiếng Anh là gì? | 2 | NHÀ PHÂN PHỐI
+RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua tiếng Anh là gì? | 2 | BÁN LẺ
+CONSIGNMENT | Hàng gửi bán đại lý ký gửi tiếng Anh là gì? | 3 | HÀNG KÝ GỬI
+BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển tiếng Anh là gì? | 3 | VẬN ĐƠN
+PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng tiếng Anh là gì? | 2 | PHIẾU ĐÓNG GÓI
+CLEARANCE | Thủ tục thông quan hàng hóa tại cửa khẩu hải quan tiếng Anh là gì? | 3 | THÔNG QUAN
+CUSTOMS | Cơ quan hải quan kiểm tra hành lý hàng hóa xuất nhập khẩu tiếng Anh là gì? | 2 | HẢI QUAN
+DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh tiếng Anh là gì? | 2 | THUẾ NHẬP KHẨU
+EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá tiếng Anh là gì? | 3 | THUẾ TIÊU THỤ
+REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng tiếng Anh là gì? | 3 | TIỀN HOÀN LẠI
+BARGAIN | Món hàng mua được giá hời rất rẻ tiếng Anh là gì? | 2 | MÓN HỜI
+BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc tiếng Anh là gì? | 2 | BIỂN QUẢNG CÁO
+FLYER | Tờ rơi quảng cáo phát tận tay người đi đường tiếng Anh là gì? | 2 | TỜ RƠI, LEAFLET
+CAMPAIGN | Chiến dịch truyền thông tiếp thị ra mắt sản phẩm mới tiếng Anh là gì? | 2 | CHIẾN DỊCH
+QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra tiếng Anh là gì? | 2 | BẢN CÂU HỎI
+RESOLUTION | Giải pháp tháo gỡ giải quyết ổn thỏa tranh chấp tiếng Anh là gì? | 2 | GIẢI PHÁP
+AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác tiếng Anh là gì? | 1 | THỎA THUẬN
+CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật tiếng Anh là gì? | 2 | ĐIỀU KHOẢN
+STIPULATION | Quy định điều kiện bắt buộc phải tuân theo tiếng Anh là gì? | 3 | QUY ĐỊNH BẮT BUỘC
+BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng tiếng Anh là gì? | 3 | VI PHẠM HỢP ĐỒNG
+PENALTY | Khoản tiền phạt vi phạm hành chính hoặc hợp đồng tiếng Anh là gì? | 2 | TIỀN PHẠT
+TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động tiếng Anh là gì? | 2 | CHẤM DỨT HỢP ĐỒNG
+RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng tiếng Anh là gì? | 2 | GIA HẠN
+EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng tiếng Anh là gì? | 2 | HẾT HẠN, EXPIRY
+FISCAL YEAR | Năm tài chính kỳ kế toán 12 tháng của doanh nghiệp tiếng Anh là gì? | 2 | NĂM TÀI CHÍNH
+QUARTERLY REPORT | Báo cáo kết quả kinh doanh quý được công bố định kỳ tiếng Anh là gì? | 2 | BÁO CÁO QUÝ
+GROSS PROFIT | Lợi nhuận gộp doanh thu trừ giá vốn hàng bán tiếng Anh là gì? | 2 | LỢI NHUẬN GỘP
+NET PROFIT | Lợi nhuận ròng sau khi đã trừ tất cả các chi phí và thuế tiếng Anh là gì? | 2 | LỢI NHUẬN RÒNG
+OPERATING COST | Chi phí vận hành hoạt động kinh doanh thường ngày tiếng Anh là gì? | 2 | CHI PHÍ VẬN HÀNH
+OVERHEAD | Chi phí chung cố định như tiền thuê văn phòng điện nước tiếng Anh là gì? | 2 | CHI PHÍ CHUNG
+VARIABLE COST | Chi phí biến đổi thay đổi theo sản lượng sản xuất tiếng Anh là gì? | 3 | CHI PHÍ BIẾN ĐỔI
+FIXED COST | Chi phí cố định không thay đổi dù sản xuất nhiều hay ít tiếng Anh là gì? | 2 | CHI PHÍ CỐ ĐỊNH
+BREAK-EVEN POINT | Điểm hòa vốn mức doanh thu đủ bù đắp toàn bộ chi phí tiếng Anh là gì? | 3 | ĐIỂM HÒA VỐN
+ACCOUNTS PAYABLE | Khoản phải trả tiền công ty nợ nhà cung cấp tiếng Anh là gì? | 3 | KHOẢN PHẢI TRẢ
+ACCOUNTS RECEIVABLE | Khoản phải thu tiền khách hàng còn nợ công ty tiếng Anh là gì? | 3 | KHOẢN PHẢI THU
+BALANCE SHEET | Bảng cân đối kế toán phản ánh tài sản nợ và vốn chủ sở hữu tiếng Anh là gì? | 2 | BẢNG CÂN ĐỐI KẾ TOÁN
+CASH FLOW | Dòng tiền lưu chuyển vào ra của doanh nghiệp trong kỳ tiếng Anh là gì? | 1 | DÒNG TIỀN
+LIQUIDITY | Tính thanh khoản khả năng chuyển tài sản thành tiền mặt nhanh tiếng Anh là gì? | 2 | TÍNH THANH KHOẢN
+BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới tiếng Anh là gì? | 2 | DỰ BÁO NGÂN SÁCH
+PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày tiếng Anh là gì? | 2 | QUỸ TIỀN LẺ
+REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên tiếng Anh là gì? | 2 | HOÀN TRẢ CHI PHÍ
+INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn tiếng Anh là gì? | 2 | SỐ HÓA ĐƠN
+DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ tiếng Anh là gì? | 1 | NGÀY ĐẾN HẠN
+OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày tiếng Anh là gì? | 2 | THANH TOÁN QUÁ HẠN
+CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp tiếng Anh là gì? | 2 | GIẤY BÁO GIẢM GIÁ
+PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng tiếng Anh là gì? | 2 | ĐẶT HÀNG
+DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao tiếng Anh là gì? | 2 | PHIẾU GIAO HÀNG
+STOCK KEEPING UNIT | Mã quản lý hàng tồn kho ký hiệu định danh từng sản phẩm tiếng Anh là gì? | 3 | SKU
+BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho tiếng Anh là gì? | 2 | ĐƠN CHỜ HÀNG
+SUPPLY CHAIN | Chuỗi cung ứng toàn bộ quá trình từ sản xuất đến tay người tiêu dùng tiếng Anh là gì? | 2 | CHUỖI CUNG ỨNG
+PROCUREMENT | Quá trình mua sắm nguồn cung phục vụ hoạt động doanh nghiệp tiếng Anh là gì? | 3 | MUA SẮM NGUỒN CUNG
+TENDER | Hồ sơ mời thầu để chọn nhà cung cấp dịch vụ hoặc hàng hóa tiếng Anh là gì? | 2 | MỜI THẦU
+BID | Hồ sơ dự thầu giá chào mời của nhà cung cấp tiếng Anh là gì? | 2 | DỰ THẦU
+WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán lẻ tiếng Anh là gì? | 2 | NHÀ BÁN SỈ
+MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường tiếng Anh là gì? | 2 | THỊ PHẦN
+TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận tiếng Anh là gì? | 2 | THỊ TRƯỜNG MỤC TIÊU
+BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm tiếng Anh là gì? | 2 | ĐỘ NHẬN BIẾT THƯƠNG HIỆU
+MARKETING MIX | Hỗn hợp marketing 4P sản phẩm giá phân phối và xúc tiến tiếng Anh là gì? | 3 | HỖN HỢP MARKETING
+CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay tiếng Anh là gì? | 2 | LỜI KÊU GỌI HÀNH ĐỘNG
+CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự tiếng Anh là gì? | 2 | TỶ LỆ CHUYỂN ĐỔI
+UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn tiếng Anh là gì? | 2 | BÁN THÊM SẢN PHẨM CAO CẤP
+CROSS-SELLING | Gợi ý bán thêm sản phẩm bổ sung liên quan đến thứ khách đang mua tiếng Anh là gì? | 2 | BÁN THÊM SẢN PHẨM LIÊN QUAN
+CUSTOMER RETENTION | Giữ chân khách hàng hiện tại để họ tiếp tục quay lại mua tiếng Anh là gì? | 2 | GIỮ CHÂN KHÁCH HÀNG
+CHURN RATE | Tỷ lệ khách hàng rời bỏ ngừng sử dụng sản phẩm tiếng Anh là gì? | 3 | TỶ LỆ KHÁCH HÀNG RỜI BỎ
+NET PROMOTER SCORE | Chỉ số đo mức độ khách hàng sẵn sàng giới thiệu sản phẩm cho bạn bè tiếng Anh là gì? | 3 | NPS
+INTEREST RATE | Lãi suất tỷ lệ phần trăm trả thêm khi vay tiền tiếng Anh là gì? | 1 | LÃI SUẤT
+MORTGAGE | Vay thế chấp bất động sản để mua nhà tiếng Anh là gì? | 2 | VAY THẾ CHẤP NHÀ
+CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ tiếng Anh là gì? | 2 | ĐIỂM TÍN DỤNG
+DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn tiếng Anh là gì? | 2 | VỠ NỢ, VI PHẠM
+JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án tiếng Anh là gì? | 2 | LIÊN DOANH
+FRANCHISE | Nhượng quyền thương mại sử dụng thương hiệu và mô hình sẵn có tiếng Anh là gì? | 2 | NHƯỢNG QUYỀN

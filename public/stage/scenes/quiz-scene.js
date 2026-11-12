@@ -27,21 +27,30 @@ const GIFT_RULES = {
   abcd: ['🎁 Quà → ', '*loại 1 đáp án sai cho cả phòng*', ' (từ 99💎 loại 2) · ❤️ tim nạp năng lượng ↑'],
   wordle: ['🎁 Quà → ', '*mở 1 ô chữ cho cả phòng*', ' (từ 99💎 mở 2) · ❤️ tim nạp năng lượng ↑'],
   math: ['🎁 Quà = lời cảm ơn · ❤️ tim nạp năng lượng ↑'],
-  english: ['🎁 Quà → ', '*đổi bộ đề / độ khó*', ' (bảng bên dưới) · ❤️ tim nạp năng lượng ↑']
+  english: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI BỘ ĐỀ / ĐỘ KHÓ*', ' · ❤️ nạp năng lượng ↑'],
+  emoji: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI CHỦ ĐỀ*', ' · ❤️ nạp năng lượng ↑']
 };
-const DECK_RULES_PER_PAGE = 7; // nhiều hơn thì bảng lật trang mỗi 10 giây
-const DECK_PAGE_MS = 10000;
+const DECK_RULES_PER_PAGE = 7; // Đúng 7 ô mỗi trang (Trang 1: 7 ô, Trang 2: 7 ô)
+const DECK_PAGE_MS_P1 = 20000; // Trang 1 hiển thị 20 giây
+const DECK_PAGE_MS_P2 = 12000; // Trang 2 hiển thị 12 giây
+const DECK_FADE_MS = 700;      // fade in/out mượt mà, chậm rãi giữa các trang (700ms)
 
 /** Bảng "quà đổi bộ đề" của tab tiếng Anh: dòng trạng thái (bộ + độ khó + người đổi) và các ô quà → bộ đề. */
-function createDeckPanel(hud) {
+function createDeckPanel(hud, gameId) {
   const el = hud.el;
   const root = el('section', 'deck-panel');
+  const header = el('div', 'deck-header');
+  const title = el('h3', 'deck-title', gameId === 'emoji' ? '🎁 TẶNG QUÀ ĐỂ ĐỔI CHỦ ĐỀ' : '🎁 TẶNG QUÀ ĐỂ ĐỔI BỘ ĐỀ / ĐỘ KHÓ');
+  const activeBadge = el('div', 'deck-active-badge');
+  header.append(title, activeBadge);
+
   const status = el('div', 'deck-status');
   const rulesRoot = el('div', 'deck-rules');
-  root.append(status, rulesRoot);
+  root.append(header, status, rulesRoot);
   hud.gameRoot.append(root);
   let chips = [];
   let pageTimer = 0;
+  let fadeTimer = 0;
   let statusKey = '';
   let rulesKey = '';
   let active = new Set();
@@ -53,22 +62,55 @@ function createDeckPanel(hud) {
       img.src = gift.image;
       img.alt = '';
       img.referrerPolicy = 'no-referrer';
+      img.onerror = () => {
+        img.remove();
+        if (!box.querySelector('.emoji')) {
+          box.prepend(el('span', 'emoji', gift?.emoji || '🎁'));
+        }
+      };
       box.append(img);
     } else box.append(el('span', 'emoji', gift?.emoji || '🎁'));
     box.append(el('i', '', `${gift?.coins || 1}💎`));
     return box;
   }
 
-  function nowSlot(className, icon, label, left, by) {
-    const slot = el('div', `deck-now ${className}`);
-    slot.append(el('span', 'ic', icon), el('b', '', label));
-    if (left) slot.append(el('em', '', `${left} câu`));
-    if (by) {
-      const who = el('span', 'by');
-      who.append(avatarNode(by.avatar), el('span', 'name', by.nickname));
-      slot.append(who);
+  function updateActiveBadge(c) {
+    if (c.setLeft > 0) {
+      activeBadge.replaceChildren(el('em', '', `⏳ còn ${c.setLeft} câu (${gameId === 'emoji' ? 'Chủ đề' : 'Bộ đề'}: ${c.setLabel})`));
+      if (c.setBy) {
+        const who = el('span', 'by');
+        who.append(avatarNode(c.setBy.avatar), el('span', 'name', c.setBy.nickname));
+        activeBadge.append(who);
+      }
+      activeBadge.hidden = false;
+    } else if (c.levelLeft > 0) {
+      activeBadge.replaceChildren(el('em', '', `⏳ còn ${c.levelLeft} câu (${c.levelLabel})`));
+      if (c.levelBy) {
+        const who = el('span', 'by');
+        who.append(avatarNode(c.levelBy.avatar), el('span', 'name', c.levelBy.nickname));
+        activeBadge.append(who);
+      }
+      activeBadge.hidden = false;
+    } else {
+      activeBadge.replaceChildren();
+      activeBadge.hidden = true;
     }
-    return slot;
+  }
+
+  function renderStatus(c) {
+    const setSlot = el('div', 'deck-now set');
+    setSlot.append(el('span', 'ic', c.setIcon), el('b', '', `${gameId === 'emoji' ? 'Chủ đề' : 'Bộ đề'}: ${c.setLabel.replace(/^Chủ đề:\s*/, '')}`));
+
+    if (gameId === 'emoji') {
+      updateActiveBadge(c);
+      return [setSlot];
+    }
+
+    const levelSlot = el('div', 'deck-now level');
+    levelSlot.append(el('span', 'ic', c.levelIcon), el('b', '', `Độ khó: ${c.levelLabel.replace(/^Độ khó:\s*/, '')}`));
+
+    updateActiveBadge(c);
+    return [setSlot, levelSlot];
   }
 
   return {
@@ -77,7 +119,8 @@ function createDeckPanel(hud) {
       const key = JSON.stringify(rules || []);
       if (key === rulesKey) return;
       rulesKey = key;
-      clearInterval(pageTimer);
+      clearTimeout(pageTimer);
+      clearTimeout(fadeTimer);
       chips = (rules || []).map((rule) => {
         const chip = el('div', 'deck-rule');
         chip.dataset.to = rule.to;
@@ -91,9 +134,34 @@ function createDeckPanel(hud) {
       const pages = [];
       for (let i = 0; i < chips.length; i += DECK_RULES_PER_PAGE) pages.push(chips.slice(i, i + DECK_RULES_PER_PAGE));
       let at = 0;
-      const show = () => rulesRoot.replaceChildren(...(pages[at] || []));
-      show();
-      if (pages.length > 1) pageTimer = setInterval(() => { at = (at + 1) % pages.length; show(); }, DECK_PAGE_MS);
+      // Fade in/out mượt mà, chậm rãi giữa các trang
+      const show = (fadeIn = false, onReady = null) => {
+        clearTimeout(fadeTimer);
+        if (fadeIn) {
+          rulesRoot.classList.add('is-switching');
+          fadeTimer = setTimeout(() => {
+            rulesRoot.replaceChildren(...(pages[at] || []));
+            void rulesRoot.offsetWidth; // force reflow kích hoạt transition fade-in
+            rulesRoot.classList.remove('is-switching');
+            if (onReady) onReady();
+          }, DECK_FADE_MS);
+        } else {
+          rulesRoot.replaceChildren(...(pages[at] || []));
+          rulesRoot.classList.remove('is-switching');
+          if (onReady) onReady();
+        }
+      };
+      show(false);
+      if (pages.length > 1) {
+        // Trang đầu (tổng hợp + phổ biến) hiển thị 20s, trang sau 12s
+        const advance = () => {
+          at = (at + 1) % pages.length;
+          show(true, () => {
+            pageTimer = setTimeout(advance, at === 0 ? DECK_PAGE_MS_P1 : DECK_PAGE_MS_P2);
+          });
+        };
+        pageTimer = setTimeout(advance, DECK_PAGE_MS_P1);
+      }
     },
     update(c) {
       if (!c) return;
@@ -103,10 +171,11 @@ function createDeckPanel(hud) {
       const key = JSON.stringify(c);
       if (key === statusKey) return;
       statusKey = key;
-      status.replaceChildren(nowSlot('set', c.setIcon, c.setLabel, c.setLeft, c.setBy), nowSlot('level', c.levelIcon, c.levelLabel, c.levelLeft, c.levelBy));
+      status.replaceChildren(...renderStatus(c));
     },
     dispose() {
-      clearInterval(pageTimer);
+      clearTimeout(pageTimer);
+      clearTimeout(fadeTimer);
     }
   };
 }
@@ -204,10 +273,10 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     line.append(...parts.map((p) => (p.startsWith('*') ? el('b', '', p.slice(1, -1)) : document.createTextNode(p))));
     return line;
   };
-  const rulesKey = { dovui: 'abcd', wordle: 'wordle', math: 'math', english: 'english' }[id] || 'text';
+  const rulesKey = { dovui: 'abcd', wordle: 'wordle', math: 'math', english: 'english', emoji: 'emoji' }[id] || 'text';
   foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[rulesKey], 'gift'));
   card.append(head, timer, body, winnersRow, foot);
-  const deckPanel = id === 'english' ? createDeckPanel(hud) : null;
+  const deckPanel = (id === 'english' || id === 'emoji') ? createDeckPanel(hud, id) : null;
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -310,11 +379,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       deckPanel?.update(state.control);
       cat.textContent = state.category || mode.title;
       const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
-      const special = state.lightning ? `⚡ CHỚP NHOÁNG ${state.lightning.index}/${state.lightning.total}` : state.golden ? '⭐ CÂU VÀNG x2' : '';
+      const special = state.diamond ? '💎 CÂU KIM CƯƠNG x3' : state.golden ? '⭐ CÂU VÀNG x2' : '';
       qno.textContent = state.paused ? '⏸ TẠM DỪNG' : special || count;
       qno.classList.toggle('special', Boolean(special));
       card.classList.toggle('golden', Boolean(state.golden));
-      card.classList.toggle('lightning', Boolean(state.lightning));
+      card.classList.toggle('diamond', Boolean(state.diamond));
       renderEnergy(state.energy, { golden: state.golden, lightning: state.lightning });
       renderAmbassadors(state.ambassadors);
       const seconds = Math.ceil(state.msLeft / 1000);
@@ -355,7 +424,9 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
       } else if (fx.kind === 'quizDeck') {
         audio.play('magic');
-        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ${fx.questions} câu tới`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
+        const isLevel = fx.to === 'easy' || fx.to === 'hard';
+        hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`, `${fx.nickname} đã chọn · ${fx.questions} câu tiếp theo`, 5500);
+        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ⏳ ${fx.questions} câu`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
       } else if (fx.kind === 'quizFollow') {
@@ -365,12 +436,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         audio.play('coin');
         hud.toast(fx.energy ? `↗ Share → +${fx.energy} năng lượng` : '↗ Cảm ơn bạn đã chia sẻ!', { title: fx.nickname, image: fx.avatar, ms: 3500 });
       } else if (fx.kind === 'quizEnergy') {
-        if (fx.reward === 'golden') {
-          audio.play('chime');
-          hud.banner('⭐ CÂU VÀNG ⭐', fx.by === 'follow' ? 'Đủ mục tiêu follow · câu sau x2' : 'Câu sau nhân đôi điểm', 2800);
+        audio.play(fx.reward === 'diamond' ? 'airhorn' : 'chime');
+        if (fx.reward === 'diamond') {
+          hud.banner('💎 CÂU KIM CƯƠNG 💎', 'Năng lượng cực đại · câu sau x3 điểm!', 4500);
         } else {
-          audio.play('airhorn');
-          hud.banner('⚡ CHỚP NHOÁNG ⚡', '3 câu siêu tốc · đúng cả 3 được ⚡', 3200);
+          hud.banner('⭐ CÂU VÀNG ⭐', fx.by === 'follow' ? 'Đủ mục tiêu follow · câu sau x2' : 'Câu sau nhân đôi điểm', 2800);
         }
         confetti(240);
       } else if (fx.kind === 'quizLightningEnd') {

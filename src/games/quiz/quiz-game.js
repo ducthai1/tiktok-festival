@@ -37,18 +37,20 @@ function letterSlots(answer) {
 
 /** Tô màu một lượt Wordle: g = đúng chỗ, y = có nhưng sai chỗ, x = không có (xử lý đúng chữ lặp). */
 export function scoreWordle(guess, answer) {
-  const marks = Array(5).fill('x');
-  const left = {};
-  for (let i = 0; i < 5; i += 1) {
-    if (guess[i] === answer[i]) marks[i] = 'g';
-    else left[answer[i]] = (left[answer[i]] || 0) + 1;
-  }
-  for (let i = 0; i < 5; i += 1) {
-    if (marks[i] !== 'g' && left[guess[i]] > 0) {
-      marks[i] = 'y';
-      left[guess[i]] -= 1;
+  const marks = Array(answer.length).fill('x');
+  const pool = [...answer];
+  [...guess].forEach((ch, i) => {
+    if (ch === answer[i]) {
+      marks[i] = 'g';
+      pool[i] = null;
     }
-  }
+  });
+  [...guess].forEach((ch, i) => {
+    if (marks[i] === 'x' && pool.includes(ch)) {
+      marks[i] = 'y';
+      pool[pool.indexOf(ch)] = null;
+    }
+  });
   return marks.join('');
 }
 
@@ -61,7 +63,7 @@ export function createQuizGame({
   id, title, kind = 'text', deck, questionMs = 25000, revealMs = 6500, firstLetter = true, autoHints = true,
   speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random,
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
-  onGift = null, onCommand = null, extraState = null, onCatalog = null
+  onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -90,11 +92,13 @@ export function createQuizGame({
   let greens = new Set();
   let countStart = 0; // lúc bắt đầu đếm ngược (sau 2 giây hiện đề)
   let energy = 0;
-  let goldenUnlocked = false; // vòng năng lượng này đã qua mốc 1.000 chưa
+  let goldenUnlocked = false; // vòng năng lượng này đã qua mốc ENERGY_GOLDEN chưa
   let goldenPending = false;
-  let golden = false; // câu đang hỏi là câu vàng
+  let diamondPending = false;
+  let golden = false; // câu đang hỏi là câu vàng (x2)
+  let diamond = false; // câu đang hỏi là câu kim cương (x3)
+  let lightningIndex = 0;
   let lightningQueued = 0;
-  let lightningIndex = 0; // 0 = không trong vòng chớp nhoáng; 1..3 = câu thứ mấy
   let lightningHits = new Map();
   const followers = new Set(); // id người đang follow kênh (cờ từ TikTok / đã follow ở buổi trước / vừa follow)
   const followedNow = new Set(); // follow trong buổi này (mỗi người thưởng một lần)
@@ -102,8 +106,8 @@ export function createQuizGame({
   const sharers = new Map(); // id → { id, nickname, avatar, shares }
   let hintsByGifts = 0;
 
-  const totalMs = () => (lightningIndex ? LIGHTNING_MS : kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : questionMs);
-  const mult = () => (golden ? 2 : 1);
+  const totalMs = () => (kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : questionMs);
+  const mult = () => (diamond ? 3 : golden ? 2 : 1);
 
   function touch(user, now) {
     if (!user?.id) return;
@@ -157,11 +161,15 @@ export function createQuizGame({
     hintsByGifts = 0;
     golden = goldenPending;
     goldenPending = false;
+    diamond = diamondPending;
+    diamondPending = false;
     if (lightningQueued > 0) {
       lightningIndex = LIGHTNING_QUESTIONS - lightningQueued + 1;
       lightningQueued -= 1;
       if (lightningIndex === 1) lightningHits = new Map();
-    } else lightningIndex = 0;
+    } else {
+      lightningIndex = 0;
+    }
     if (kind === 'text') {
       slots = q.math ? [] : letterSlots(q.answer);
       if (firstLetter && slots.length > 3) revealed.add(slots[0]);
@@ -174,13 +182,33 @@ export function createQuizGame({
       }
       rightIndex = options.indexOf(q.right);
     }
-    if (kind === 'wordle') slots = [0, 1, 2, 3, 4];
+    if (kind === 'wordle') slots = [...Array(q.length).keys()];
     countStart = now + LEAD_IN_MS;
-    phaseEnd = countStart + totalMs();
-    const intro = lightningIndex ? `Chớp nhoáng câu ${lightningIndex}! ` : golden ? 'Câu vàng, nhân đôi điểm! ' : '';
+    phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
+    const intro = diamond ? 'Câu Kim Cương, NHÂN BA ĐIỂM! ' : golden ? 'Câu Vàng, nhân đôi điểm! ' : '';
     fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, speech: intro + (speakLine(q) || '') });
   }
 
+  function finishLightningQuestion(fx) {
+    for (const w of winners) {
+      const row = lightningHits.get(w.id) || { user: { id: w.id, nickname: w.nickname, avatar: w.avatar }, count: 0 };
+      row.count += 1;
+      lightningHits.set(w.id, row);
+    }
+    if (lightningIndex === LIGHTNING_QUESTIONS) {
+      const perfect = [];
+      for (const row of lightningHits.values()) {
+        if (row.count >= LIGHTNING_QUESTIONS) {
+          addPoints(row.user, LIGHTNING_PERFECT_BONUS, { correct: false });
+          const scoreRow = scores.get(row.user.id);
+          if (scoreRow) scoreRow.bolts = (scoreRow.bolts || 0) + 1;
+          perfect.push({ id: row.user.id, nickname: row.user.nickname, avatar: row.user.avatar });
+        }
+      }
+      fx.push({ kind: 'quizLightningEnd', perfect });
+      lightningHits = new Map();
+    }
+  }
   function reveal(now, fx) {
     if (kind === 'abcd') {
       const right = [...votes.values()].filter((v) => v.idx === rightIndex).sort((a, b) => a.at - b.at);
@@ -206,9 +234,7 @@ export function createQuizGame({
 
   /** Tim / share nạp thanh năng lượng; qua mốc thì xếp câu vàng / vòng chớp nhoáng. */
   function addEnergy(amount, fx) {
-    // đang/đã xếp vòng chớp nhoáng thì thanh đứng ngay dưới mốc cuối, xong vòng mới nổ tiếp
-    const busy = lightningQueued > 0 || lightningIndex > 0;
-    energy = Math.min(busy ? ENERGY_LIGHTNING - 1 : ENERGY_LIGHTNING, energy + amount);
+    energy = Math.min(ENERGY_LIGHTNING, energy + amount);
     if (!goldenUnlocked && energy >= ENERGY_GOLDEN) {
       goldenUnlocked = true;
       goldenPending = true;
@@ -217,29 +243,11 @@ export function createQuizGame({
     if (energy >= ENERGY_LIGHTNING) {
       energy = 0;
       goldenUnlocked = false;
-      // Wordle một ván 150 giây — không chạy được 3 câu siêu tốc, thưởng câu vàng thay
-      if (kind === 'wordle') {
-        goldenPending = true;
-        fx.push({ kind: 'quizEnergy', reward: 'golden' });
-      } else {
-        lightningQueued = LIGHTNING_QUESTIONS;
-        fx.push({ kind: 'quizEnergy', reward: 'lightning' });
-      }
+      lightningQueued += LIGHTNING_QUESTIONS;
+      fx.push({ kind: 'quizEnergy', reward: 'lightning' });
     }
   }
 
-  /** Ghi ai đúng câu chớp nhoáng này; hết câu thứ 3 thì thưởng người đúng cả 3. */
-  function finishLightningQuestion(fx) {
-    for (const w of winners) lightningHits.set(w.id, { user: w, hits: (lightningHits.get(w.id)?.hits || 0) + 1 });
-    if (lightningIndex < LIGHTNING_QUESTIONS) return;
-    const perfect = [...lightningHits.values()].filter((h) => h.hits === LIGHTNING_QUESTIONS).map((h) => h.user);
-    for (const u of perfect) {
-      const row = addPoints(u, LIGHTNING_PERFECT_BONUS, { correct: false });
-      row.bolts = (row.bolts || 0) + 1;
-    }
-    fx.push({ kind: 'quizLightningEnd', perfect: perfect.slice(0, 5).map((u) => ({ id: u.id, nickname: u.nickname, avatar: u.avatar })),
-      count: perfect.length, bonus: LIGHTNING_PERFECT_BONUS });
-  }
 
   function answerText() {
     if (!q) return '';
@@ -276,7 +284,7 @@ export function createQuizGame({
 
   function onWordleGuess(user, comment, now, fx) {
     const word = foldText(comment).replace(/ /g, '');
-    if (!/^[a-z]{5}$/.test(word) || !wordle.allowed.has(word) || !wordleCooldown(user.id, now)) return;
+    if (word.length !== q.length || (wordle.allowed && !wordle.allowed.has(word)) || !wordleCooldown(user.id, now)) return;
     if (guesses.some((g) => g.word === word)) return;
     const marks = scoreWordle(word, q);
     guesses.push({ word, marks, id: user.id, nickname: user.nickname });
@@ -354,7 +362,10 @@ export function createQuizGame({
         const tier = giftTier(event.gift.diamondsEach);
         let opened = 0;
         if (phase === 'question' && !paused) {
-          opened = giveHint(tier >= 3 ? 2 : 1);
+          // 1 xu mở 1 chữ, >= 5 xu mở 2 chữ, >= 10 xu mở 3 chữ
+          const coins = event.gift.diamondsEach;
+          const amount = coins >= 10 ? 3 : coins >= 5 ? 2 : 1;
+          opened = giveHint(amount);
           hintsByGifts += opened;
         }
         fx.push({
@@ -362,7 +373,9 @@ export function createQuizGame({
           count: event.gift.count, tier, hint: opened ? hintLabel(opened) : ''
         });
       } else if (event.type === 'like') {
-        if (!paused) addEnergy(event.likeCount, fx);
+        if (!paused) {
+          addEnergy(event.likeCount, fx);
+        }
       } else if (event.type === 'follow') {
         followers.add(event.user.id);
         if (!followedNow.has(event.user.id)) {
@@ -382,7 +395,10 @@ export function createQuizGame({
         sharers.set(event.user.id, row);
         const energized = row.shares <= SHARE_ENERGY_MAX_PER_USER && !paused;
         fx.push({ kind: 'quizShare', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, energy: energized ? SHARE_ENERGY : 0 });
-        if (energized) addEnergy(SHARE_ENERGY, fx);
+        if (energized) {
+          addEnergy(SHARE_ENERGY, fx);
+          fx.push({ kind: 'toast', text: `🔄 Cảm ơn đại sứ ${event.user.nickname} đã chia sẻ!` });
+        }
       }
       return fx;
     },
@@ -440,9 +456,50 @@ export function createQuizGame({
         if (n) fx.push({ kind: 'toast', text: `💡 Gợi ý: ${hintLabel(n)}` });
       } else if (name === 'resetScores') {
         scores.clear();
-        fx.push({ kind: 'toast', text: '🏆 Đã xoá bảng điểm' });
+        sharers.clear();
+        fx.push({ kind: 'toast', text: '🏆 Đã xoá bảng điểm và đại sứ' });
+      } else if (name === 'resetAmbassadors') {
+        sharers.clear();
+        fx.push({ kind: 'toast', text: '↗ Đã xoá bảng đại sứ share' });
       }
       return fx;
+    },
+    restore(state) {
+      if (!state) return;
+      if (typeof state.qNumber === 'number' && state.qNumber > 0) {
+        qNumber = state.qNumber;
+      }
+      if (state.allScores) {
+        for (const r of state.allScores) {
+          scores.set(r.id, { id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || Math.floor(r.points / 5), bolts: r.bolts || 0 });
+        }
+      } else if (state.board) {
+        for (const r of state.board) {
+          scores.set(r.id, { id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: Math.floor(r.points / 5), bolts: r.bolts || 0 });
+        }
+      }
+      if (state.players) {
+        for (const p of state.players) {
+          present.set(p.id, { id: p.id, nickname: p.nickname, avatar: p.avatar, at: Date.now() });
+          if (!scores.has(p.id)) scores.set(p.id, { id: p.id, nickname: p.nickname, avatar: p.avatar, points: p.points, correct: 0 });
+        }
+      }
+      if (state.energy) {
+        if (typeof state.energy.value === 'number') energy = state.energy.value;
+        if (typeof state.energy.goldenPending === 'boolean') goldenPending = state.energy.goldenPending;
+        if (typeof state.energy.lightningQueued === 'boolean') lightningQueued = state.energy.lightningQueued;
+        if (typeof state.energy.follows === 'number') followCount = state.energy.follows;
+      }
+      if (typeof state.golden === 'boolean') golden = state.golden;
+      if (state.lightning && typeof state.lightning.index === 'number') {
+        lightningIndex = state.lightning.index;
+      }
+      if (state.ambassadors) {
+        for (const a of state.ambassadors) sharers.set(a.id, { id: a.id, nickname: a.nickname, avatar: a.avatar, shares: a.shares });
+      }
+      if (state.control && onRestore) {
+        onRestore(state.control);
+      }
     },
     snapshot(now = Date.now()) {
       const board = [...scores.values()].sort((a, b) => b.points - a.points || b.correct - a.correct).slice(0, 5)
@@ -464,11 +521,12 @@ export function createQuizGame({
         // 2 giây đầu (chờ live trễ) đồng hồ đứng ở mức đầy
         leadIn: phase === 'question' && now < countStart,
         msLeft: phase === 'question' ? Math.max(0, Math.round((phaseEnd - Math.max(now, countStart)) / 100) * 100) : 0,
-        totalMs: q ? totalMs() : 0,
+        totalMs: q ? (lightningIndex ? LIGHTNING_MS : totalMs()) : 0,
         answer: phase === 'reveal' ? answerText() : '',
         winners: winners.slice(0, 5).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
         correctCount: winners.length,
         board,
+        allScores: [...scores.values()].map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || 0, bolts: r.bolts || 0 })),
         golden,
         lightning: lightningIndex ? { index: lightningIndex, total: LIGHTNING_QUESTIONS } : null,
         energy: { value: energy, golden: ENERGY_GOLDEN, max: ENERGY_LIGHTNING, goldenPending, lightningQueued,

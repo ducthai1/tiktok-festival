@@ -71,12 +71,20 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
     },
+    restore(snapshot) {
+      if (!snapshot) return;
+      if (snapshot.game && games.has(snapshot.game)) activeId = snapshot.game;
+      if (snapshot.state) active().restore?.(snapshot.state);
+      if (snapshot.leaderboard) board.restore(snapshot.leaderboard);
+      else if (snapshot.totals) board.restore({ totals: snapshot.totals, viewers: snapshot.top });
+    },
     snapshot(now = Date.now()) {
       return {
         game: activeId,
         state: active().snapshot(now),
-        top: board.top(5),
+        top: board.top(),
         totals: board.totals(),
+        leaderboard: board.exportState(),
         viewers: { count: welcome.viewerCount(), textAbove: welcome.threshold(), waiting: welcome.backlog(), pending: welcome.pendingIds() },
         // Màn hình phải hiện nhãn "CHẾ ĐỘ THỬ" khi vừa có sự kiện giả lập.
         testMode: now - lastSimulatedAt < 20000

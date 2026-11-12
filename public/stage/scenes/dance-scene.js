@@ -263,7 +263,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
       meter.update(dropping ? 1 : state.hype / state.hypeGoal,
         dropping ? `DROP! ${Math.ceil(state.dropMs / 1000)}s` : `${formatNumber(state.hype)} / ${formatNumber(state.hypeGoal)}`);
       hud.setStats([`👥 ${state.dancers.length} người quẩy`, `💎 ${formatNumber(snapshot.totals.diamonds)}`]);
-      hud.setBoard('TOP DÂN QUẨY', snapshot.top.map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
+      hud.setBoard('TOP DÂN QUẨY', snapshot.top.slice(0, 5).map((r) => ({ ...r, score: r.diamonds ? `${formatNumber(r.diamonds)}💎` : `${formatNumber(r.likes)}❤` })));
       for (const d of state.dancers) {
         if (d.face && faces.get(d.id) !== d.face) {
           const e = crowd.get(d.id);

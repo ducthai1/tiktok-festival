@@ -1,0 +1,318 @@
+# Bộ đề · Ẩm thực
+FRUIT | Trái cây, hoa quả tiếng Anh là gì? | 1 | FRUITS
+STRAWBERRY | Quả dâu tây tiếng Anh là gì? | 1 | STRAWBERRIES
+PINEAPPLE | Quả dứa (trái thơm) tiếng Anh là gì? | 1 | PINEAPPLES
+COCONUT | Quả dừa tiếng Anh là gì? | 1 | COCONUTS
+PEAR | Quả lê tiếng Anh là gì? | 1 | PEARS
+PEACH | Quả đào tiếng Anh là gì? | 1 | PEACHES
+CHERRY | Quả anh đào tiếng Anh là gì? | 2 | CHERRIES
+PAPAYA | Quả đu đủ tiếng Anh là gì? | 2 | PAPAYAS, PAWPAW
+AVOCADO | Quả bơ (trái cây) tiếng Anh là gì? | 2 | AVOCADOS
+DRAGON FRUIT | Quả thanh long tiếng Anh là gì? | 2 | PITAYA, PITAHAYA
+LIME | Quả chanh xanh (chanh ta) tiếng Anh là gì? | 2 | LIMES
+GUAVA | Quả ổi tiếng Anh là gì? | 3 | GUAVAS
+DURIAN | Quả sầu riêng tiếng Anh là gì? | 3 | DURIANS
+LYCHEE | Quả vải (vải thiều) tiếng Anh là gì? | 3 | LITCHI, LICHEE, LYCHEES
+LONGAN | Quả nhãn tiếng Anh là gì? | 3 | LONGANS
+RAMBUTAN | Quả chôm chôm tiếng Anh là gì? | 3 | RAMBUTANS
+MANGOSTEEN | Quả măng cụt tiếng Anh là gì? | 3 | MANGOSTEENS
+JACKFRUIT | Quả mít tiếng Anh là gì? | 3
+POMELO | Quả bưởi tiếng Anh là gì? | 3 | GRAPEFRUIT, POMELOS
+STAR FRUIT | Quả khế tiếng Anh là gì? | 3 | CARAMBOLA
+PASSION FRUIT | Quả chanh leo (chanh dây) tiếng Anh là gì? | 3
+VEGETABLE | Rau củ, rau xanh tiếng Anh là gì? | 1 | VEGETABLES, VEGGIE, VEGGIES, VEG
+POTATO | Củ khoai tây tiếng Anh là gì? | 1 | POTATOES
+CARROT | Củ cà rốt tiếng Anh là gì? | 1 | CARROTS
+TOMATO | Quả cà chua tiếng Anh là gì? | 1 | TOMATOES
+CORN | Ngô (bắp) tiếng Anh là gì? | 1 | MAIZE, SWEETCORN
+ONION | Củ hành tây tiếng Anh là gì? | 1 | ONIONS
+BEAN | Hạt đậu (như đậu đen, đậu đỏ) tiếng Anh là gì? | 1 | BEANS
+SWEET POTATO | Củ khoai lang tiếng Anh là gì? | 2 | SWEET POTATOES
+GARLIC | Củ tỏi tiếng Anh là gì? | 2
+CABBAGE | Bắp cải tiếng Anh là gì? | 2 | CABBAGES
+CUCUMBER | Quả dưa chuột (dưa leo) tiếng Anh là gì? | 2 | CUCUMBERS
+PUMPKIN | Quả bí đỏ (bí ngô) tiếng Anh là gì? | 2 | PUMPKINS
+MUSHROOM | Nấm (để nấu ăn) tiếng Anh là gì? | 2 | MUSHROOMS
+CHILI | Quả ớt tiếng Anh là gì? | 2 | CHILLI, CHILE, CHILIES, CHILLIES, CHILI PEPPER, CHILLI PEPPER, HOT PEPPER
+LETTUCE | Rau xà lách tiếng Anh là gì? | 2
+BROCCOLI | Súp lơ xanh (bông cải xanh) tiếng Anh là gì? | 2
+EGGPLANT | Quả cà tím tiếng Anh là gì? | 2 | AUBERGINE, EGGPLANTS, AUBERGINES
+PEANUT | Hạt lạc (đậu phộng) tiếng Anh là gì? | 2 | PEANUTS, GROUNDNUT, GROUNDNUTS
+GINGER | Củ gừng tiếng Anh là gì? | 2
+SPRING ONION | Hành lá tiếng Anh là gì? | 3 | SPRING ONIONS, GREEN ONION, GREEN ONIONS, SCALLION, SCALLIONS
+LEMONGRASS | Cây sả (gia vị thơm) tiếng Anh là gì? | 3
+CORIANDER | Rau mùi (ngò rí) tiếng Anh là gì? | 3 | CILANTRO
+WATER SPINACH | Rau muống tiếng Anh là gì? | 3 | MORNING GLORY, KANGKONG
+BITTER MELON | Mướp đắng (khổ qua) tiếng Anh là gì? | 3 | BITTER GOURD
+BAMBOO SHOOT | Măng (búp tre non để nấu) tiếng Anh là gì? | 3 | BAMBOO SHOOTS
+BEAN SPROUTS | Giá đỗ (giá sống ăn kèm phở) tiếng Anh là gì? | 3 | BEAN SPROUT
+MEAT | Thịt (nói chung) tiếng Anh là gì? | 1
+BEEF | Thịt bò tiếng Anh là gì? | 1
+PORK | Thịt lợn (thịt heo) tiếng Anh là gì? | 1
+SAUSAGE | Xúc xích tiếng Anh là gì? | 1 | SAUSAGES
+BACON | Thịt ba chỉ xông khói tiếng Anh là gì? | 2
+STEAK | Món bò bít tết tiếng Anh là gì? | 2 | BEEFSTEAK, STEAKS
+FRIED CHICKEN | Gà rán tiếng Anh là gì? | 2
+SEAFOOD | Hải sản (tôm, cua, cá…) tiếng Anh là gì? | 2
+SHRIMP | Con tôm (hải sản) tiếng Anh là gì? | 2 | PRAWN, SHRIMPS, PRAWNS
+SQUID | Con mực (hải sản) tiếng Anh là gì? | 2 | CALAMARI, CUTTLEFISH, SQUIDS
+OYSTER | Con hàu (hải sản) tiếng Anh là gì? | 3 | OYSTERS
+LOBSTER | Con tôm hùm tiếng Anh là gì? | 3 | LOBSTERS
+TOFU | Đậu phụ (đậu hũ) tiếng Anh là gì? | 2 | BEAN CURD
+FOOD | Đồ ăn, thức ăn tiếng Anh là gì? | 1
+SOUP | Món canh, món súp tiếng Anh là gì? | 1 | SOUPS
+SALAD | Món rau trộn kiểu Tây tiếng Anh là gì? | 1 | SALADS
+SANDWICH | Bánh mì kẹp (lát bánh mì vuông) tiếng Anh là gì? | 1 | SANDWICHES
+CHEESE | Phô mai tiếng Anh là gì? | 1
+BUTTER | Bơ (để phết bánh mì) tiếng Anh là gì? | 1
+YOGURT | Sữa chua tiếng Anh là gì? | 1 | YOGHURT, YOGHOURT, YOGURTS
+CHOCOLATE | Sô-cô-la tiếng Anh là gì? | 1 | CHOCOLATES
+HONEY | Mật ong tiếng Anh là gì? | 1
+COOKIE | Bánh quy tiếng Anh là gì? | 1 | COOKIES, BISCUIT, BISCUITS
+FRENCH FRIES | Khoai tây chiên (cắt que) tiếng Anh là gì? | 1 | FRIES, CHIPS, FRENCH FRY
+SPRING ROLL | Nem rán (chả giò) tiếng Anh là gì? | 2 | SPRING ROLLS, EGG ROLL, EGG ROLLS
+FRIED EGG | Trứng ốp la tiếng Anh là gì? | 2 | FRIED EGGS, SUNNY SIDE UP
+FRIED RICE | Cơm chiên (cơm rang) tiếng Anh là gì? | 2
+HOT POT | Món lẩu tiếng Anh là gì? | 2 | STEAMBOAT
+DOUGHNUT | Bánh vòng chiên (có lỗ ở giữa) tiếng Anh là gì? | 2 | DONUT, DOUGHNUTS, DONUTS
+POPCORN | Bỏng ngô (bắp rang bơ) tiếng Anh là gì? | 2
+JAM | Mứt (phết lên bánh mì) tiếng Anh là gì? | 2 | JELLY, JAMS
+DESSERT | Món tráng miệng tiếng Anh là gì? | 2 | DESSERTS, PUDDING
+SNACK | Đồ ăn vặt tiếng Anh là gì? | 2 | SNACKS
+INSTANT NOODLES | Mì gói (mì tôm) tiếng Anh là gì? | 2 | INSTANT NOODLE, RAMEN, INSTANT RAMEN
+FAST FOOD | Đồ ăn nhanh tiếng Anh là gì? | 2
+PORRIDGE | Cháo (cháo gà, cháo trắng) tiếng Anh là gì? | 3 | CONGEE, RICE PORRIDGE
+STICKY RICE | Xôi, gạo nếp tiếng Anh là gì? | 3 | GLUTINOUS RICE
+BROKEN RICE | Cơm tấm tiếng Anh là gì? | 3
+DUMPLING | Bánh sủi cảo (há cảo) tiếng Anh là gì? | 3 | DUMPLINGS
+OMELETTE | Trứng tráng (đánh tan rồi chiên) tiếng Anh là gì? | 3 | OMELET, OMELETTES, OMELETS
+COFFEE | Cà phê tiếng Anh là gì? | 1
+BEER | Bia (đồ uống) tiếng Anh là gì? | 1 | BEERS
+GREEN TEA | Trà xanh tiếng Anh là gì? | 1
+LEMONADE | Nước chanh (đồ uống) tiếng Anh là gì? | 1 | LIMEADE, LEMON JUICE, LIME JUICE
+MILK TEA | Trà sữa tiếng Anh là gì? | 2 | BUBBLE TEA, BOBA TEA, BOBA, PEARL MILK TEA
+SMOOTHIE | Sinh tố (trái cây xay) tiếng Anh là gì? | 2 | SMOOTHIES
+SODA | Nước ngọt có ga tiếng Anh là gì? | 2 | SOFT DRINK, SOFT DRINKS, FIZZY DRINK, POP, SODA POP
+WINE | Rượu vang tiếng Anh là gì? | 2 | WINES
+SOY MILK | Sữa đậu nành tiếng Anh là gì? | 2 | SOYA MILK, SOYBEAN MILK
+ICED COFFEE | Cà phê đá tiếng Anh là gì? | 2 | ICE COFFEE
+SALT | Muối ăn tiếng Anh là gì? | 1
+SUGAR | Đường (để pha nước, làm bánh) tiếng Anh là gì? | 1
+PEPPER | Hạt tiêu (hồ tiêu) tiếng Anh là gì? | 2 | BLACK PEPPER, PEPPERCORN, PEPPERCORNS
+FISH SAUCE | Nước mắm tiếng Anh là gì? | 2
+SOY SAUCE | Nước tương (xì dầu) tiếng Anh là gì? | 2 | SOYA SAUCE, SOY
+OIL | Dầu ăn tiếng Anh là gì? | 2 | COOKING OIL, VEGETABLE OIL
+KETCHUP | Tương cà (sốt cà chua) tiếng Anh là gì? | 2 | TOMATO SAUCE, TOMATO KETCHUP, CATSUP
+SPICE | Gia vị (nói chung) tiếng Anh là gì? | 2 | SPICES, SEASONING, SEASONINGS, CONDIMENT, CONDIMENTS
+FLOUR | Bột mì tiếng Anh là gì? | 2 | WHEAT FLOUR
+VINEGAR | Giấm (gia vị chua) tiếng Anh là gì? | 3
+CINNAMON | Quế (gia vị thơm làm bánh) tiếng Anh là gì? | 3
+SWEET | Ngọt (vị) tiếng Anh là gì? | 1
+SOUR | Chua (vị) tiếng Anh là gì? | 2
+SALTY | Mặn (vị) tiếng Anh là gì? | 2
+BITTER | Đắng (vị) tiếng Anh là gì? | 2
+SPICY | Cay (vị) tiếng Anh là gì? | 2 | HOT
+DELICIOUS | Ngon (món ăn ngon) tiếng Anh là gì? | 1 | TASTY, YUMMY
+FRESH | Tươi (rau tươi, cá tươi) tiếng Anh là gì? | 2
+HUNGRY | Đói bụng tiếng Anh là gì? | 1 | STARVING
+THIRSTY | Khát nước tiếng Anh là gì? | 1
+RAW | Sống (chưa nấu chín) tiếng Anh là gì? | 3 | UNCOOKED
+RIPE | Chín (trái cây đã chín) tiếng Anh là gì? | 3
+CRISPY | Giòn (như gà rán giòn) tiếng Anh là gì? | 3 | CRISP, CRUNCHY
+TASTE | Nếm thử (món ăn) tiếng Anh là gì? | 2
+CUT | Cắt (bằng dao) tiếng Anh là gì? | 1
+FRY | Chiên, rán (động từ) tiếng Anh là gì? | 2 | DEEP FRY
+BOIL | Luộc, đun sôi (động từ) tiếng Anh là gì? | 2
+GRILL | Nướng (trên vỉ, than hoa) tiếng Anh là gì? | 2 | BARBECUE, BBQ, BROIL
+BAKE | Nướng (bánh trong lò) tiếng Anh là gì? | 2
+STEAM | Hấp (nấu bằng hơi nước) tiếng Anh là gì? | 2
+CHOP | Chặt, băm nhỏ (thịt, rau) tiếng Anh là gì? | 2 | MINCE, DICE
+SLICE | Thái lát mỏng (động từ) tiếng Anh là gì? | 2
+PEEL | Gọt vỏ, bóc vỏ tiếng Anh là gì? | 2
+MIX | Trộn (các nguyên liệu) tiếng Anh là gì? | 2
+STIR-FRY | Xào (động từ) tiếng Anh là gì? | 3 | SAUTE
+ROAST | Quay (như vịt quay, heo quay) tiếng Anh là gì? | 3 | ROASTED
+RECIPE | Công thức nấu ăn tiếng Anh là gì? | 3 | RECIPES
+KNIFE | Con dao tiếng Anh là gì? | 1 | KNIVES
+SPOON | Cái thìa (cái muỗng) tiếng Anh là gì? | 1 | SPOONS
+FORK | Cái nĩa (dĩa xiên thức ăn) tiếng Anh là gì? | 1 | FORKS
+BOWL | Cái bát (chén ăn cơm) tiếng Anh là gì? | 1 | BOWLS
+PLATE | Cái đĩa đựng thức ăn tiếng Anh là gì? | 1 | PLATES, DISH
+CUP | Cái tách (uống trà, cà phê) tiếng Anh là gì? | 1 | CUPS, MUG, TEACUP
+GLASS | Cái ly (cốc thủy tinh) tiếng Anh là gì? | 1
+BOTTLE | Cái chai tiếng Anh là gì? | 1 | BOTTLES
+CHOPSTICKS | Đôi đũa (để ăn cơm) tiếng Anh là gì? | 2 | CHOPSTICK
+PAN | Cái chảo (để chiên, xào) tiếng Anh là gì? | 2 | FRYING PAN, FRYPAN, SKILLET, WOK
+POT | Cái nồi (để nấu canh) tiếng Anh là gì? | 2 | SAUCEPAN, COOKING POT, POTS
+RICE COOKER | Nồi cơm điện tiếng Anh là gì? | 2
+NAPKIN | Khăn ăn, giấy ăn (lau miệng) tiếng Anh là gì? | 2 | NAPKINS, SERVIETTE, TISSUE, TISSUES, PAPER NAPKIN
+STRAW | Ống hút (uống nước) tiếng Anh là gì? | 2 | STRAWS, DRINKING STRAW
+CUTTING BOARD | Cái thớt tiếng Anh là gì? | 3 | CHOPPING BOARD
+TOOTHPICK | Cây tăm (xỉa răng sau bữa ăn) tiếng Anh là gì? | 3 | TOOTHPICKS
+BREAKFAST | Bữa sáng tiếng Anh là gì? | 1
+LUNCH | Bữa trưa tiếng Anh là gì? | 1
+DINNER | Bữa tối tiếng Anh là gì? | 1 | SUPPER
+MEAL | Bữa ăn tiếng Anh là gì? | 1 | MEALS
+MENU | Thực đơn tiếng Anh là gì? | 1 | MENUS
+
+SPAGHETTI | Mì Ý sốt cà chua / thịt băm | 1 | MÌ Ý
+CROISSANT | Bánh sừng bò / bánh sừng trâu | 2 | BÁNH SỪNG BÒ
+PANCAKE | Bánh rán chảo ăn kèm mật ong | 1 | BÁNH RÁN
+OATMEAL | Yến mạch / cháo yến mạch | 2 | YẾN MẠCH
+ESPRESSO | Cà phê đậm đặc | 2 | CÀ PHÊ ESPRESSO
+CAPPUCCINO | Cà phê bọt sữa Ý | 2
+MILKSHAKE | Sữa lắc trái cây / kem | 2 | SỮA LẮC
+BARBECUE | Món nướng BBQ | 1 | BBQ, THỊT NƯỚNG
+APPETIZER | Món khai vị | 3 | KHAI VỊ
+BEVERAGE | Đồ uống / thức uống nói chung | 3 | ĐỒ UỐNG
+INGREDIENT | Nguyên liệu nấu ăn | 2 | NGUYÊN LIỆU
+WATERMELON | Dưa hấu đỏ | 1 | DƯA HẤU
+ASPARAGUS | Măng tây | 3 | MĂNG TÂY
+
+LASAGNA | Mì đút lò xếp lớp Ý | 2 | LASAGNA
+MACARONI | Nơ ống / mì ống phô mai | 2 | MÌ ỐNG
+WAFFLE | Bánh tổ ong nướng nóng | 2 | BÁNH TỔ ONG
+BAGUETTE | Bánh mì Pháp dài | 2 | BÁNH MÌ PHÁP
+MARSHMALLOW | Kẹo dẻo bông xốp | 1 | KẸO DẺO
+POMEGRANATE | Quả lựu đỏ | 2 | QUẢ LỰU
+GRAPE | Quả nho tươi | 1 | GRAPES, QUẢ NHO
+BLUEBERRY | Quả việt quất | 2 | VIỆT QUẤT
+RASPBERRY | Quả mâm xôi | 2 | MÂM XÔI
+DRAGONFRUIT | Quả thanh long | 1 | THANH LONG
+PERSIMMON | Quả hồng chín | 2 | QUẢ HỒNG
+NUTRIENT | Chất dinh dưỡng thực phẩm | 3 | DINH DƯỠNG
+CALORIE | Lượng calo năng lượng | 2 | CALO
+
+TIRAMISU | Món bánh ngọt tiramisu béo ngậy vị cà phê và cacao của Ý tiếng Anh là gì? | 1 | BÁNH TIRAMISU
+GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico tiếng Anh là gì? | 3 | SỐT BƠ
+TACO | Bánh taco vỏ giòn kẹp thịt băm cay của Mexico tiếng Anh là gì? | 1 | BÁNH TACO, TACOS
+BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico tiếng Anh là gì? | 2 | BURRITOS
+SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản tiếng Anh là gì? | 1 | CƠM CUỘN
+WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản tiếng Anh là gì? | 2 | MÙ TẠT XANH
+VANILLA | Hương vani thơm ngọt ngào cho món bánh kem tiếng Anh là gì? | 1 | VANI
+CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm tiếng Anh là gì? | 1 | CARAMEN
+COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng tiếng Anh là gì? | 2 | KẸO BÔNG GÒN, CANDY FLOSS
+LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu tiếng Anh là gì? | 1 | KẸO MÚT
+PRETZEL | Bánh quy xoắn nướng giòn rắc hạt muối của Đức tiếng Anh là gì? | 2 | BÁNH QUY XOẮN, PRETZELS
+CAVIAR | Món trứng cá tầm đen muối xa xỉ đắt giá bậc nhất tiếng Anh là gì? | 3 | TRỨNG CÁ MUỐI
+TRUFFLE | Loài nấm truffle kim cương đen quý hiếm mọc dưới rễ cây tiếng Anh là gì? | 3 | NẤM TRUFFLE, TRUFFLES
+MUSTARD | Sốt mù tạt vàng cay dịu thường chấm cùng xúc xích nướng tiếng Anh là gì? | 2 | MÙ TẠT VÀNG
+MAYONNAISE | Sốt trứng béo ngậy trộn cùng rau củ salad tiếng Anh là gì? | 1 | SỐT MAYONNAISE, MAYO
+CUSTARD | Lớp sốt kem trứng sữa vàng ươm béo ngậy tiếng Anh là gì? | 2 | KEM TRỨNG
+CIDER | Thức uống rượu táo lên men có ga sủi bọt nhẹ tiếng Anh là gì? | 2 | RƯỢU TÁO, APPLE CIDER
+MOJITO | Món cocktail pha từ chanh, đường và lá bạc hà tươi tiếng Anh là gì? | 2 | COCKTAIL MOJITO
+CHEESECAKE | Bánh kem phô mai nướng thơm béo ngậy tiếng Anh là gì? | 1 | BÁNH PHÔ MAI
+MACARON | Bánh macaron tròn nhỏ vỏ giòn kẹp kem nhiều màu của Pháp tiếng Anh là gì? | 2 | BÁNH MACARON, MACARONS
+BROWNIE | Bánh sô-cô-la nướng vuông mềm ẩm đậm vị tiếng Anh là gì? | 1 | BÁNH CHOCOLATE, BROWNIES
+ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát tiếng Anh là gì? | 3 | BÔNG ATISO, ATISO
+CASHEW | Hạt điều rang béo bùi giòn rụm tiếng Anh là gì? | 2 | HẠT ĐIỀU, CASHEWS, CASHEW NUT
+WALNUT | Quả óc chó vỏ cứng giàu chất dinh dưỡng tiếng Anh là gì? | 2 | QUẢ ÓC CHÓ, ÓC CHÓ, WALNUTS
+ALMOND | Hạt hạnh nhân thơm giòn béo bùi tiếng Anh là gì? | 2 | HẠNH NHÂN, HẠT HẠNH NHÂN, ALMONDS
+PISTACHIO | Hạt dẻ cười vỏ hé nứt miệng rắc muối tiếng Anh là gì? | 2 | HẠT DẺ CƯỜI, PISTACHIOS
+
+CUPCAKE | Bánh bông lan nhỏ nướng trong khuôn cốc giấy bắt kem bên trên tiếng Anh là gì? | 1 | BÁNH CỐC
+
+SASHIMI | Món cá sống phi lê tươi rói cắt lát mỏng chấm xì dầu mù tạt của Nhật tiếng Anh là gì? | 1 | CÁ SỐNG
+UDON | Món mì udon sợi to tròn trắng mềm của Nhật tiếng Anh là gì? | 1 | MÌ UDON
+TEMPURA | Món tôm tẩm bột chiên xù vàng giòn rụm của Nhật tiếng Anh là gì? | 2 | TÔM CHIÊN XÙ
+KIMCHI | Món dưa cải thảo muối ớt cay giòn trứ danh của Hàn Quốc tiếng Anh là gì? | 1 | KIM CHI
+KEBAB | Món bánh mì kẹp thịt nướng xiên quay tròn Thổ Nhĩ Kỳ tiếng Anh là gì? | 1 | THỊT NƯỚNG KEBAB
+RISOTTO | Món cơm Ý nấu nhừ cùng sốt bơ nấm và phô mai béo ngậy tiếng Anh là gì? | 2 | CƠM Ý
+PIZZA | Chiếc bánh pizza đế bột nướng phủ đầy phô mai mozzarella kéo sợi tiếng Anh là gì? | 1 | BÁNH PIZZA
+HAMBURGER | Bánh mì tròn kẹp miếng thịt bò băm nướng xà lách cà chua tiếng Anh là gì? | 1 | BÁNH MÌ KẸP THỊT, BURGER
+TOAST | Lát bánh mì nướng giòn rụm quết bơ thơm phức tiếng Anh là gì? | 1 | BÁNH MÌ NƯỚNG
+MEATBALL | Viên thịt băm viên sốt cà chua đượm vị tiếng Anh là gì? | 1 | THỊT VIÊN
+RAMEN | Mì ramen nước dùng đậm đà trứng lòng đào Nhật Bản tiếng Anh là gì? | 1 | MÌ RAMEN
+SOBA | Mì soba kiều mạch ăn lạnh hoặc nóng của Nhật Bản tiếng Anh là gì? | 2 | MÌ SOBA
+TAKOYAKI | Bánh bạch tuộc nướng viên tròn đường phố Nhật Bản tiếng Anh là gì? | 2 | BÁNH BẠCH TUỘC
+DIM SUM | Điểm tâm dim sum các món hấp chiên trong xửng tre tiếng Anh là gì? | 1 | ĐIỂM TÂM, DIM SUM
+WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh tiếng Anh là gì? | 1 | HOÀNH THÁNH
+BIBIMBAP | Cơm trộn thố đá bibimbap đủ màu sắc Hàn Quốc tiếng Anh là gì? | 2 | CƠM TRỘN
+BULGOGI | Thịt bò xào ướp sốt ngọt bulgogi Hàn Quốc tiếng Anh là gì? | 2 | BÒ XÀO BULGOGI
+TOPOKKI | Bánh gạo cay tteokbokki sốt đỏ dẻo dai Hàn Quốc tiếng Anh là gì? | 1 | BÁNH GẠO CAY
+SHAWARMA | Bánh cuộn thịt nướng shawarma Trung Đông thơm phức tiếng Anh là gì? | 2 | BÁNH CUỘN SHAWARMA
+FALAFEL | Chả viên đậu gà chiên giòn falafel Trung Đông tiếng Anh là gì? | 3 | CHẢ ĐẬU GÀ
+HUMMUS | Sốt đậu gà nghiền mịn béo ngậy hummus tiếng Anh là gì? | 2 | SỐT ĐẬU GÀ
+PITA | Bánh mì dẹt pita có túi kẹp nhân bên trong tiếng Anh là gì? | 2 | BÁNH MÌ PITA
+BRIOCHE | Bánh mì brioche mềm xốp giàu bơ và trứng tiếng Anh là gì? | 2 | BÁNH MÌ BRIOCHE
+CREPE | Bánh kếp mỏng crepe cuộn kem trái cây tiếng Anh là gì? | 1 | BÁNH CREPE
+MUFFIN | Bánh nướng muffin cốc xốp nhân việt quất sô-cô-la tiếng Anh là gì? | 1 | BÁNH MUFFIN
+SCONE | Bánh nướng scone ăn kèm mứt và kem trà chiều Anh tiếng Anh là gì? | 2 | BÁNH SCONE
+CHURRO | Bánh quẩy ngọt churro phủ đường quế chấm sô-cô-la tiếng Anh là gì? | 2 | BÁNH CHURRO
+PANNA COTTA | Món tráng miệng panna cotta thạch kem sữa nấu của Ý tiếng Anh là gì? | 2 | PANNA COTTA
+PUDDING | Bánh pudding mềm núng nính rưới caramen tiếng Anh là gì? | 1 | BÁNH PUDDING
+TART | Bánh tart vỏ giòn nhân kem trứng hoặc trái cây tiếng Anh là gì? | 1 | BÁNH TART
+SUNDAE | Ly kem sundae nhiều tầng sốt sô-cô-la quả anh đào tiếng Anh là gì? | 1 | KEM SUNDAE
+LATTE | Cà phê latte nhiều sữa nóng có bọt sữa vẽ hình tiếng Anh là gì? | 1 | CÀ PHÊ LATTE
+MOCHA | Cà phê mocha kết hợp espresso sữa và sô-cô-la tiếng Anh là gì? | 1 | CÀ PHÊ MOCHA
+AMERICANO | Cà phê americano pha loãng espresso với nước nóng tiếng Anh là gì? | 1 | AMERICANO
+MATCHA | Trà xanh matcha bột mịn Nhật Bản pha trà sữa tiếng Anh là gì? | 1 | TRÀ MATCHA
+BOBA | Trân châu dẻo dai trong trà sữa boba tiếng Anh là gì? | 1 | TRÂN CHÂU
+MOCKTAIL | Đồ uống mocktail pha chế không cồn từ trái cây tiếng Anh là gì? | 2 | MOCKTAIL
+MOZZARELLA | Phô mai mozzarella kéo sợi dẻo trên bánh pizza tiếng Anh là gì? | 1 | PHÔ MAI MOZZARELLA
+PARMESAN | Phô mai parmesan cứng bào vụn rắc lên mì Ý tiếng Anh là gì? | 2 | PHÔ MAI PARMESAN
+CHEDDAR | Phô mai cheddar màu vàng cam kẹp burger tiếng Anh là gì? | 1 | PHÔ MAI CHEDDAR
+PROSCIUTTO | Thịt giăm bông muối xông khói thái lát mỏng của Ý tiếng Anh là gì? | 3 | THỊT GIĂM BÔNG Ý
+PEPPERONI | Xúc xích cay pepperoni cắt lát tròn trên mặt pizza tiếng Anh là gì? | 1 | XÚC XÍCH CAY
+RIBS | Sườn heo hoặc bò nướng sốt BBQ đậm đà tiếng Anh là gì? | 1 | SƯỜN NƯỚNG
+PATTY | Miếng thịt băm viên kẹp giữa bánh burger tiếng Anh là gì? | 2 | MIẾNG THỊT BURGER
+NUGGET | Gà viên tẩm bột chiên giòn nugget tiếng Anh là gì? | 1 | GÀ VIÊN CHIÊN
+RAVIOLI | Bánh bột mì ravioli nhồi nhân thịt phô mai của Ý tiếng Anh là gì? | 2 | MÌ NHỒI RAVIOLI
+GNOCCHI | Gnocchi viên bột khoai tây luộc sốt bơ Ý tiếng Anh là gì? | 3 | GNOCCHI
+PAELLA | Cơm rang hải sản paella chảo lớn của Tây Ban Nha tiếng Anh là gì? | 2 | CƠM TÂY BAN NHA
+NACHOS | Snack khoai tây ngô nachos chấm phô mai sốt cà chua tiếng Anh là gì? | 1 | NACHOS
+QUESADILLA | Bánh xếp quesadilla nướng kẹp phô mai chảy Mexico tiếng Anh là gì? | 2 | BÁNH QUESADILLA
+SALSA | Sốt cà chua cay salsa chấm bánh ngô giòn tiếng Anh là gì? | 1 | SỐT SALSA
+CURRY | Món cà ri cay nồng nấu cùng khoai thịt tiếng Anh là gì? | 1 | CÀ RI
+BIRYANI | Cơm nướng biryani thơm mùi thảo mộc Ấn Độ tiếng Anh là gì? | 2 | CƠM NƯỚNG BIRYANI
+TANDOORI | Gà nướng lò đất tandoori màu đỏ rực Ấn Độ tiếng Anh là gì? | 2 | GÀ NƯỚNG TANDOORI
+SAMOSA | Bánh gối tam giác samosa nhân khoai tây chiên giòn Ấn Độ tiếng Anh là gì? | 2 | BÁNH SAMOSA
+PHO | Phở bò nước dùng trong thơm mùi quế hồi Việt Nam tiếng Anh là gì? | 1 | PHỞ
+BANH MI | Bánh mì kẹp pate thịt chả nổi tiếng Việt Nam tiếng Anh là gì? | 1 | BÁNH MÌ
+POUTINE | Khoai tây chiên poutine rưới sốt thịt và phô mai Canada tiếng Anh là gì? | 2 | KHOAI TÂY POUTINE
+GOULASH | Món súp thịt bò hầm goulash ớt bột paprika Hungary tiếng Anh là gì? | 3 | SÚP BÒ HẦM
+SCHNITZEL | Miếng thịt tẩm bột chiên giòn schnitzel nước Áo tiếng Anh là gì? | 2 | THỊT CHIÊN GIÒN
+BRATWURST | Xúc xích nướng bratwurst truyền thống của Đức tiếng Anh là gì? | 3 | XÚC XÍCH ĐỨC
+SAUERKRAUT | Bắp cải muối chua sauerkraut ăn kèm xúc xích Đức tiếng Anh là gì? | 3 | BẮP CẢI MUỐI CHUA
+OLIVE OIL | Dầu ô liu nguyên chất thơm ngon tốt cho tim mạch tiếng Anh là gì? | 1 | DẦU Ô LIU
+OREGANO | Lá kinh giới cay oregano rắc lên bánh pizza tiếng Anh là gì? | 2 | LÁ OREGANO
+ROSEMARY | Lá hương thảo rosemary ướp bít tết bò thơm lừng tiếng Anh là gì? | 2 | LÁ HƯƠNG THẢO
+THYME | Cỏ xạ hương thyme dùng trong món hầm và nướng tiếng Anh là gì? | 2 | CỎ XẠ HƯƠNG
+BASIL | Lá húng tây basil thơm nồng làm sốt pesto tiếng Anh là gì? | 1 | HÚNG TÂY
+DILL | Rau thì là nấu canh cá chả cá thơm ngon tiếng Anh là gì? | 2 | THÌ LÀ
+PARSLEY | Rau mùi tây parsley trang trí món ăn phương Tây tiếng Anh là gì? | 2 | MÙI TÂY
+CLOVE | Đinh hương nụ hoa khô gia vị cay thơm tiếng Anh là gì? | 2 | ĐINH HƯƠNG
+CARDAMOM | Bạch đậu khấu thảo quả gia vị cà ri quý giá tiếng Anh là gì? | 3 | BẠCH ĐẬU KHẤU
+TURMERIC | Nghệ vàng tạo màu và vị thơm cho món kho tiếng Anh là gì? | 1 | CỦ NGHỆ
+SHALLOT | Hành khô hành tím phi thơm giòn rụm tiếng Anh là gì? | 2 | HÀNH TÍM
+CHIVES | Hẹ lá xanh nấu canh đậu phụ tiếng Anh là gì? | 2 | LÁ HẸ
+LEEK | Tỏi tây baro thân to xào thịt bò tiếng Anh là gì? | 2 | TỎI TÂY
+SCALLION | Hành lá rắc lên bát bún phở nóng hổi tiếng Anh là gì? | 1 | HÀNH LÁ
+CELERY | Cần tây ép nước hoặc xào mực giòn ngọt tiếng Anh là gì? | 1 | CẦN TÂY
+ZUCCHINI | Bí ngòi xanh giòn mát xào nấu tiếng Anh là gì? | 2 | BÍ NGÒI
+CAULIFLOWER | Súp lơ trắng bông cải trắng giòn ngọt tiếng Anh là gì? | 1 | SÚP LƠ TRẮNG
+SPINACH | Rau chân vịt cải bó xôi giúp tăng cường sức mạnh tiếng Anh là gì? | 1 | RAU CHÂN VỊT
+KALE | Cải xoăn kale làm sinh tố giảm cân tiếng Anh là gì? | 2 | CẢI XOĂN
+RADISH | Củ cải đỏ tròn nhỏ ăn sống trong món salad tiếng Anh là gì? | 2 | CỦ CẢI ĐỎ
+BEETROOT | Củ dền đỏ thẫm nấu canh bổ máu tiếng Anh là gì? | 2 | CỦ DỀN
+TARO | Khoai môn khoai sọ nấu canh sườn dẻo bùi tiếng Anh là gì? | 1 | KHOAI MÔN
+CASSAVA | Củ sắn củ khoai mì luộc chấm muối mè tiếng Anh là gì? | 2 | KHOAI MÌ, SẮN
+LOTUS ROOT | Củ sen nhiều lỗ giòn ngọt nấu chè canh tiếng Anh là gì? | 2 | CỦ SEN
+SEAWEED | Rong biển nấu canh cuộn cơm kimbap tiếng Anh là gì? | 1 | RONG BIỂN
+EDAMAME | Đậu nành non edamame luộc rắc muối nhắm bia tiếng Anh là gì? | 2 | ĐẬU NÀNH NON
+NOODLES | Mì sợi bún phở nói chung tiếng Anh là gì? | 1 | MÌ SỢI
+HOTPOT | Món lẩu nhúng thịt rau sôi sùng sục tiếng Anh là gì? | 1 | MÓN LẨU
+KOMBUCHA | Trà lên men kombucha chua ngọt tốt cho tiêu hóa tiếng Anh là gì? | 2 | TRÀ KOMBUCHA
+CHAI TEA | Trà sữa thảo mộc gia vị thơm lừng Ấn Độ tiếng Anh là gì? | 2 | TRÀ SỮA CHAI
+EARL GREY | Trà bá tước hương cam bergamot quý tộc Anh tiếng Anh là gì? | 2 | TRÀ BÁ TƯỚC
+JASMINE TEA | Trà hoa nhài ướp hương thơm dịu nhẹ tiếng Anh là gì? | 1 | TRÀ HOA NHÀI
+OOLONG TEA | Trà ô long thơm đậm đà hảo hạng tiếng Anh là gì? | 1 | TRÀ Ô LONG
+PEPPERMINT TEA | Trà bạc hà the mát sảng khoái tiếng Anh là gì? | 2 | TRÀ BẠC HÀ
+GINGER ALE | Nước ngọt có ga vị gừng cay nhẹ tiếng Anh là gì? | 2 | NƯỚC GỪNG CÓ GA
+SPARKLING WATER | Nước khoáng có ga sủi bọt lăn tăn tiếng Anh là gì? | 1 | NƯỚC KHOÁNG CÓ GA
+TONIC WATER | Nước tonic vị đắng nhẹ pha rượu gin tiếng Anh là gì? | 2 | NƯỚC TONIC
+ENERGY DRINK | Nước tăng lực giúp tỉnh táo tập trung tiếng Anh là gì? | 1 | NƯỚC TĂNG LỰC
+COCONUT WATER | Nước dừa tươi ngọt lành thanh mát tiếng Anh là gì? | 1 | NƯỚC DỪA
+SUGARCANE JUICE | Nước mía ép tươi giải khát ngày hè tiếng Anh là gì? | 1 | NƯỚC MÍA
+ALMOND MILK | Sữa hạnh nhân bùi béo thay thế sữa bò tiếng Anh là gì? | 2 | SỮA HẠNH NHÂN
+OAT MILK | Sữa yến mạch thanh nhẹ pha cà phê latte tiếng Anh là gì? | 2 | SỮA YẾN MẠCH

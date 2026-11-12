@@ -33,17 +33,30 @@ export function createSessionLeaderboard(limit = 5000) {
       } else if (event.type === 'follow') totals.follows += 1;
       else if (event.type === 'share') totals.shares += 1;
     },
-    top(count = 5) {
+    top(count = 1000) {
       return [...viewers.values()]
-        .filter((v) => v.diamonds > 0 || v.likes > 0)
-        .sort((a, b) => b.diamonds - a.diamonds || b.likes - a.likes)
+        .sort((a, b) => b.diamonds - a.diamonds || b.likes - a.likes || b.chats - a.chats)
         .slice(0, count)
-        .map(({ id, nickname, avatar, diamonds, likes }) => ({ id, nickname, avatar, diamonds, likes }));
+        .map(({ id, nickname, avatar, diamonds, likes, chats }) => ({ id, nickname, avatar, diamonds, likes, chats }));
     },
     totals: () => ({ ...totals, viewers: viewers.size }),
     reset() {
       viewers.clear();
       for (const key of Object.keys(totals)) totals[key] = 0;
+    },
+    exportState() {
+      return {
+        totals: { ...totals },
+        viewers: [...viewers.values()]
+      };
+    },
+    restore(data) {
+      if (!data) return;
+      viewers.clear();
+      for (const v of data.viewers || []) {
+        if (v && v.id) viewers.set(v.id, { ...v, lastSeen: Date.now(), chats: v.chats || 0 });
+      }
+      if (data.totals) Object.assign(totals, data.totals);
     }
   };
 }

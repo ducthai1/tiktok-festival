@@ -149,3 +149,36 @@ RUBBER | Cao su tiếng Anh là gì? | 3
 STEEL | Thép tiếng Anh là gì? | 3
 CERAMIC | Gốm sứ tiếng Anh là gì? | 3 | CERAMICS, PORCELAIN, POTTERY, CHINA
 ALUMINUM | Nhôm tiếng Anh là gì? | 3 | ALUMINIUM
+
+BOOKCASE | Tủ sách / kệ sách | 1 | KỆ SÁCH
+FIREPLACE | Lò sưởi trong nhà | 2 | LÒ SƯỜI
+JEWELLERY | Trang sức / nữ trang | 2 | TRANG SỨC
+MICROWAVE | Lò vi sóng | 2 | LÒ VI SÓNG
+BLENDER | Máy sinh tố / máy xay | 2 | MÁY XAY
+DISHWASHER | Máy rửa bát | 2 | MÁY RỬA BÁT
+TABLECLOTH | Khăn trải bàn | 2 | KHĂN TRẢI BÀN
+PILLOWCASE | Vỏ gối | 2 | VỎ GỐI
+
+BUNGALOW | Nhà gỗ một tầng ven biển | 3 | NHÀ GỖ
+MANSION | Dinh thự sang trọng | 3 | DINH THỰ
+PENTHOUSE | Căn hộ tầng mái cao cấp | 3 | PENTHOUSE
+STAIRCASE | Cầu thang bộ | 1 | CẦU THANG
+OVERALLS | Quần yếm / đồ bảo hộ | 2 | QUẦN YẾM
+CARDIGAN | Áo khoác len len len cúc | 2 | ÁO CARDIGAN
+BLAZER | Áo khoác vest nhẹ | 2 | ÁO BLAZER
+TUXEDO | Bộ âu phục chú rể sang trọng | 3 | TUXEDO
+FLIP FLOPS | Dép xỏ ngón / dép kẹp | 1 | DÉP XỎ NGÓN
+HAIRBRUSH | Lược chải tóc | 1 | LƯỢC
+THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3 | ĐIỀU CHỈNH NHIỆT
+REFRIGERATOR | Tủ lạnh bảo quản | 1 | TỦ LẠNH
+TOASTER | Máy nướng bánh mì | 2 | MÁY NƯỚNG BÁNH
+
+CHANDELIER | Bộ đèn chùm pha lê lộng lẫy gắn trần nhà phòng khách tiếng Anh là gì? | 3 | ĐÈN CHÙM
+KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản tiếng Anh là gì? | 1 | ÁO KIMONO
+BOWTIE | Chiếc nơ bướm nhỏ thắt trước cổ áo sơ mi lịch lãm tiếng Anh là gì? | 2 | NƠ ĐEO CỔ, BOW TIE
+APRON | Tấm tạp dề đeo trước ngực giữ sạch áo khi vào bếp nấu ăn tiếng Anh là gì? | 2 | TẠP DỀ
+
+TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông tiếng Anh là gì? | 2 | ÁO CỔ LỌ
+POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động tiếng Anh là gì? | 1 | ÁO POLO, POLO
+CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha tiếng Anh là gì? | 1 | ĐỆM TỰA, GỐI TỰA
+BEDSHEET | Tấm ga trải giường phẳng phiu sạch sẽ tiếng Anh là gì? | 2 | GA TRẢI GIƯỜNG, GA GIƯỜNG

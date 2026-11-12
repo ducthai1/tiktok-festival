@@ -61,6 +61,25 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let giftTiers = tierRepresentatives(legendSource(), 3);
   hub.setGiftCatalog(giftCatalog); // tab tiếng Anh gán quà đổi bộ đề theo danh mục thật của phòng
 
+  const hotBackupFile = path.join(dataDir, 'hot-backup.json');
+  if (fs.existsSync(hotBackupFile)) {
+    try {
+      const backup = JSON.parse(fs.readFileSync(hotBackupFile, 'utf8'));
+      hub.restore(backup);
+      console.log('[app] Đã khôi phục dữ liệu từ backup nóng.');
+    } catch (e) {
+      console.warn('[app] Lỗi khôi phục backup:', e.message);
+    }
+  }
+
+  let backupTimer = null;
+  const saveBackup = () => {
+    try {
+      fs.writeFileSync(hotBackupFile, JSON.stringify(hub.snapshot()));
+    } catch (e) {
+      console.warn('[app] Lỗi ghi backup nóng:', e.message);
+    }
+  };
   const updateSettings = (patch) => {
     Object.assign(settings, patch);
     fs.writeFileSync(path.join(dataDir, 'settings.json'), JSON.stringify(settings, null, 2));
@@ -74,11 +93,22 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
   };
+  let lastPushAt = 0;
   const pushState = (force = false) => {
-    const text = JSON.stringify({ t: 'state', ...hub.snapshot() });
+    const now = Date.now();
+    if (!force && lastStateText && now - lastPushAt < 200) return;
+    const snap = hub.snapshot(now);
+    const text = JSON.stringify({ t: 'state', ...snap });
     if (force || text !== lastStateText) {
       lastStateText = text;
+      lastPushAt = now;
       sockets.broadcast(JSON.parse(text));
+      if (!backupTimer) {
+        backupTimer = setTimeout(() => {
+          backupTimer = null;
+          saveBackup();
+        }, 3000);
+      }
     }
   };
 
@@ -133,6 +163,13 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         ? `${event.gift.name} ×${event.gift.count} (${event.gift.diamonds}💎)` : event.type === 'like' ? `${event.likeCount} tim` : '';
       sockets.broadcast({ t: 'log', event: { type: event.type, nickname: event.user.nickname, text, simulated: event.simulated } },
         { adminsOnly: true });
+      // Ghi log quà tặng vào ổ cứng (bất đồng bộ để tránh chặn event loop)
+      if (event.type === 'gift' && !event.simulated) {
+        const logLine = `[${new Date().toLocaleString('sv-SE')}] [GIFT] ${event.user.nickname} (@${event.user.uniqueId || event.user.id}): ${event.gift.name} x${event.gift.count} (${event.gift.diamonds}💎)\n`;
+        fs.appendFile(path.join(dataDir, 'gifts.log'), logLine, (err) => {
+          if (err) console.error('[app] Không ghi được log quà:', err.message);
+        });
+      }
     },
     onStatus(status) {
       sockets.broadcast({ t: 'live', status });
@@ -140,7 +177,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     onCatalog: (list) => mergeCatalog(list)
   });
 
-  const handleAdmin = createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts });
+  const handleAdmin = (msg) => createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets })(msg);
   const sockets = createSocketHub({
     getPort: () => port,
     allowLan: config.allowLan,
@@ -215,6 +252,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     hub,
     live,
     async close() {
+      saveBackup();
       clearInterval(timer);
       clearInterval(warmFollow);
       followers.flush();

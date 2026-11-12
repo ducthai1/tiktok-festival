@@ -153,3 +153,49 @@ WEDDING | Đám cưới tiếng Anh là gì? | 1
 KISS | Hôn, thơm (má) tiếng Anh là gì? | 1
 HUG | Ôm (ai đó) tiếng Anh là gì? | 1 | CUDDLE, EMBRACE
 CRUSH | Người mình thầm thích tiếng Anh là gì? | 2
+
+FEATHER | Lông vũ chim | 1 | LÔNG VŨ
+SKELETON | Bộ xương người / động vật | 2 | BỘ XƯƠNG
+TOOTHLYNE | Đau răng / nhức răng | 2 | ĐAU RĂNG
+INSOMNIA | Chứng mất ngủ mãn tính | 3 | MẤT NGỦ
+DEPRESSION | Trạng thái trầm cảm / phiền muộn | 3 | TRẦM CẢM
+ANXIETY | Sự lo âu / hồi hộp | 2 | LO ÂU
+EMOTION | Cảm xúc tâm lý | 1 | CẢM XÚC
+CONFIDENCE | Sự tự tin / lòng tin | 2 | TỰ TIN
+ENTHUSIASM | Sự nhiệt huyết / hào hứng | 3 | NHIỆT HUYẾT
+JEALOUSY | Sự ghen tị / lòng đố đố | 2 | GHEN TỊ
+EXHAUSTED | Kiệt sức / mệt mỏi lả | 2 | KIỆT SỨC
+PESSIMISTIC | Bi quan tiêu cực | 3 | BI QUAN
+SYMPTOM | Triệu chứng bệnh | 2 | TRIỆU CHỨNG
+PRESCRIPTION | Đơn thuốc của bác sĩ | 3 | ĐƠN THUỐC
+NUTRITION | Dinh dưỡng sinh học | 3 | DINH DƯỠNG
+IMMUNITY | Sức đề kháng / hệ miễn dịch | 3 | MIỄN DỊCH
+FATIGUE | Sự mệt mỏi kéo dài | 3 | MỆT MỎI
+RECOVERY | Sự hồi phục sức khỏe | 2 | HỒI PHỤC
+THERAPY | Liệu pháp điều trị | 3 | LIỆU PHÁP
+WELLNESS | Sức khỏe toàn diện | 2 | SỨC KHỎE
+
+EYELASH | Lông mi mắt | 2 | LÔNG MI
+KIDNEY | Quả thận trong cơ thể | 3 | QUẢ THẬN
+LIVER | Lá gan | 2 | LÁ GAN
+LUNGS | Cặp lá phổi hít thở | 2 | LÁ PHỔI
+HOSPITALIZATION | Việc nhập viện điều trị | 3 | NHẬP VIỆN
+DIAGNOSTIC | Việc chẩn đoán bệnh | 3 | CHẨN ĐOÁN
+PREVENTION | Việc phòng ngừa bệnh tật | 2 | PHÒNG NGỪA
+EXHAUSTION | Sự kiệt sức / lả đi | 3 | KIỆT SỨC
+SATISFACTION | Sự hài lòng thỏa mãn | 2 | HÀI LÒNG
+FRUSTRATION | Sự bực bội / bức bối | 3 | BỨC BỐI
+
+NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ tiếng Anh là gì? | 3 | HOÀI NIỆM
+EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc tiếng Anh là gì? | 3 | HƯNG PHẤN
+MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng tiếng Anh là gì? | 3 | U SẦU
+EMPATHY | Sự thấu cảm sâu sắc hiểu được cảm xúc của người khác tiếng Anh là gì? | 3 | THẤU CẢM
+ADRENALINE | Chất hoóc-môn tiết ra khiến tim đập thình thịch khi hồi hộp hay phấn khích tiếng Anh là gì? | 2 | ADRENALIN
+HICCUP | Cơn nấc cụt giật liên hồi ở cổ họng tiếng Anh là gì? | 2 | NẤC CỤT, HICCUPS
+YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ngủ tiếng Anh là gì? | 1 | NGÁP
+GOOSEBUMPS | Hiện tượng nổi gai ốc da gà khắp người khi lạnh hoặc sợ tiếng Anh là gì? | 2 | NỔI DA GÀ, GOOSE BUMPS
+HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi tiếng Anh là gì? | 2 | GÓT CHÂN
+PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói tiếng Anh là gì? | 2 | LÒNG BÀN TAY
+
+THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt tiếng Anh là gì? | 1 | CỔ HỌNG
+WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể tiếng Anh là gì? | 1 | VÒNG EO

@@ -1,0 +1,15 @@
+# Tiếng Anh · Hiện tượng thiên nhiên, kỳ thú
+DEW | Những giọt sương mai đọng long lanh trên cành lá buổi sớm tiếng Anh là gì? | 2 | GIỌT SƯƠNG, SƯƠNG MAI
+SANDSTORM | Trận bão cát mù mịt cuốn bụi cát cuồn cuộn trên sa mạc tiếng Anh là gì? | 2 | BÃO CÁT
+BLIZZARD | Trận bão tuyết mù mịt với gió rét căm căm tiếng Anh là gì? | 2 | BÃO TUYẾT
+PETRICHOR | Mùi hương thanh mát của đất sau cơn mưa rào đầu mùa tiếng Anh là gì? | 4 | MÙI ĐẤT SAU MƯA
+BIOLUMINESCENCE | Hiện tượng phát quang sinh học của sinh vật dưới đáy biển sâu tiếng Anh là gì? | 4 | PHÁT QUANG SINH HỌC
+PHOTOSYNTHESIS | Quá trình quang hợp của cây xanh hút ánh sáng nhả khí oxy tiếng Anh là gì? | 3 | QUANG HỢP
+METAMORPHOSIS | Quá trình biến thái biến đổi ngoạn mục từ sâu hóa bướm tiếng Anh là gì? | 3 | BIẾN THÁI
+CHRYSALIS | Cái kén nhộng bao bọc sâu bướm chuẩn bị lột xác tiếng Anh là gì? | 3 | KÉN TẰM, KÉN BƯỚM
+SYMBIOSIS | Mối quan hệ cộng sinh tương trợ cùng có lợi giữa hai loài sinh vật tiếng Anh là gì? | 3 | CỘNG SINH
+EXOSKELETON | Bộ vỏ ngoài cứng cáp (bộ xương ngoài) của loài giáp xác tiếng Anh là gì? | 3 | XƯƠNG NGOÀI, VỎ NGOÀI
+CONUNDRUM | Câu đố hóc búa nan giải khiến người ta vò đầu bứt tai tiếng Anh là gì? | 3 | CÂU ĐỐ NAN GIẢI
+ANOMALY | Sự bất thường, dị thường đi ngược lại quy luật thông thường tiếng Anh là gì? | 3 | SỰ DỊ THƯỜNG, BẤT THƯỜNG
+RAINBOW | Cầu vồng bảy sắc lung linh sau cơn mưa tiếng Anh là gì? | 1 | CẦU VỒNG
+MIRAGE | Hiện tượng ảo ảnh trên sa mạc nắng cháy tiếng Anh là gì? | 3 | ẢO ẢNH

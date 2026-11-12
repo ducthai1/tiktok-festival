@@ -1,0 +1,41 @@
+# Tiếng Anh · Thể thao, thể hình
+BASEBALL | Môn bóng chày dùng gậy gỗ đánh bóng và chạy về các gôn tiếng Anh là gì? | 1 | BÓNG CHÀY
+ARCHERY | Môn thể thao bắn cung tên vào tâm bia ngắm bắn tiếng Anh là gì? | 2 | BẮN CUNG
+FENCING | Môn thể thao đấu kiếm phương Tây mang mặt nạ lưới sắt tiếng Anh là gì? | 2 | ĐẤU KIẾM
+GYMNASTICS | Môn thể dục dụng cụ nhào lộn dẻo dai trên xà và thảm tiếng Anh là gì? | 2 | THỂ DỤC DỤNG CỤ
+WEIGHTLIFTING | Môn cử tạ nâng các mức tạ nặng qua đầu tiếng Anh là gì? | 2 | CỬ TẠ
+SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường phố tiếng Anh là gì? | 1 | VÁN TRƯỢT, SKATEBOARDING
+SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn tiếng Anh là gì? | 1 | LƯỚT SÓNG
+SCUBA DIVING | Môn lặn biển có bình dưỡng khí ngắm san hô dưới đáy đại dương tiếng Anh là gì? | 2 | LẶN BIỂN, DIVING
+PARACHUTE | Chiếc dù bay nhảy dù từ trên máy bay xuống tiếng Anh là gì? | 2 | NHẢY DÙ, CÂY DÙ BAY
+KAYAK | Chiếc thuyền kayak chèo bằng mái chèo hai đầu trên sông nước tiếng Anh là gì? | 2 | THUYỀN KAYAK
+TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ tiếng Anh là gì? | 3 | BA MÔN PHỐI HỢP
+ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ tiếng Anh là gì? | 2 | CHÈO THUYỀN
+SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết tiếng Anh là gì? | 2 | TRƯỢT TUYẾT, SNOWBOARDING
+BOXING | Môn đấm bốc / quyền anh so găng đối kháng trên sàn đài tiếng Anh là gì? | 1 | QUYỀN ANH, ĐẤM BỐC
+WRESTLING | Môn đấu vật tranh tài sức mạnh ghì đè đối thủ xuống thảm tiếng Anh là gì? | 2 | ĐẤU VẬT
+DUMBBELL | Cặp quả tạ tay nhỏ tập cơ bắp tay trong phòng gym tiếng Anh là gì? | 2 | TẠ TAY
+BARBELL | Thanh đòn tạ dài lắp bánh tạ hai đầu để gánh tạ tiếng Anh là gì? | 2 | THANH TẠ
+TREADMILL | Chiếc máy chạy bộ điện trong phòng tập thể hình tiếng Anh là gì? | 2 | MÁY CHẠY BỘ
+CALISTHENICS | Bộ môn tập thể hình đường phố dùng chính trọng lượng cơ thể tiếng Anh là gì? | 3 | THỂ HÌNH ĐƯỜNG PHỐ
+AEROBICS | Môn thể dục nhịp điệu aerobic vận động theo tiếng nhạc sôi động tiếng Anh là gì? | 2 | THỂ DỤC NHỊP ĐIỆU
+PODIUM | Bục vinh quang có ba bậc để các vận động viên đứng nhận giải tiếng Anh là gì? | 2 | BỤC VINH QUANG
+ATHLETE | Một vận động viên thể thao chuyên nghiệp rèn luyện thi đấu tiếng Anh là gì? | 2 | VẬN ĐỘNG VIÊN
+BOWLING | Trò chơi ném bóng gỗ làm đổ các ki gỗ tiếng Anh là gì? | 1 | BÓNG GỖ, BOWLING
+BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ tiếng Anh là gì? | 1 | BI-A, BIDA, POOL
+CRICKET | Môn bóng gậy rất được yêu thích tại Anh và Ấn Độ tiếng Anh là gì? | 2 | BÓNG GẬY, BÓNG CRICKET
+RUGBY | Môn bóng bầu dục tranh cướp bóng quyết liệt tiếng Anh là gì? | 2 | BÓNG BẦU DỤC
+HOCKEY | Môn khúc côn cầu chơi trên sân cỏ hoặc sân băng tiếng Anh là gì? | 2 | KHÚC CÔN CẦU
+SKATING | Trượt băng hoặc trượt pa-tin tiếng Anh là gì? | 1 | TRƯỢT BĂNG, TRƯỢT PATIN
+SKIING | Môn trượt tuyết trên các sườn núi dốc tiếng Anh là gì? | 1 | TRƯỢT TUYẾT
+SNOWBOARDING | Môn lướt ván trên nền tuyết trắng tiếng Anh là gì? | 2 | TRƯỢT VÁN TUYẾT
+WINDSURFING | Môn lướt ván buồm trên biển tiếng Anh là gì? | 2 | LƯỚT VÁN BUỒM
+KAYAKING | Môn chèo thuyền kayak vượt ghềnh thác tiếng Anh là gì? | 2 | CHÈO THUYỀN KAYAK
+CYCLING | Môn thể thao đua xe đạp đường trường tiếng Anh là gì? | 1 | ĐUA XE ĐẠP, ĐI XE ĐẠP
+EQUESTRIAN | Môn thể thao cưỡi ngựa nghệ thuật tiếng Anh là gì? | 3 | CƯỠI NGỰA
+BODYBUILDING | Môn thể hình rèn luyện cơ bắp săn chắc tiếng Anh là gì? | 2 | THỂ HÌNH
+STRETCHING | Bài tập giãn cơ bắp sau khi vận động tiếng Anh là gì? | 1 | GIÃN CƠ
+PUSH-UP | Động tác hít đất chống đẩy tăng cường sức mạnh tiếng Anh là gì? | 1 | HÍT ĐẤT, CHỐNG ĐẨY, PUSHUP
+SQUAT | Động tác gánh đùi ngồi xổm tăng lực chân tiếng Anh là gì? | 1 | GÁNH ĐÙI, SQUATS
+PLANK | Động tác đo sàn giữ thẳng người siết cơ bụng tiếng Anh là gì? | 1 | ĐO SÀN, TẬP PLANK
+WARM-UP | Khởi động làm nóng cơ thể trước khi thi đấu tiếng Anh là gì? | 1 | KHỞI ĐỘNG, WARMUP

@@ -127,13 +127,25 @@
       <div>
         <h2>Bảng xếp hạng phiên <button type="button" id="reset-session" class="tiny ghost">Xoá</button></h2>
         <ol id="leaderboard" class="board"></ol>
+        <div id="ambassadors-section" style="margin-top:20px;">
+          <h2>Đại sứ Share <button type="button" id="reset-ambassadors" class="tiny ghost">Xoá</button></h2>
+          <ol id="ambassadors" class="board"></ol>
+        </div>
         <p id="totals" class="muted small"></p>
-      </div>
       <div>
-        <h2>Nhật ký sự kiện</h2>
+        <h2>Nhật ký sự kiện
+          <span style="display:inline-flex;gap:6px;margin-left:8px;font-size:13px;font-weight:400;vertical-align:middle;">
+            <button type="button" id="pip-video-btn" class="tiny primary">📌 Ghim Nổi 100% (như YouTube)</button>
+            <button type="button" id="pip-doc-btn" class="tiny ghost">🪟 Cửa Sổ HTML (Cuộn chuột)</button>
+            <span id="pip-scroll-controls" style="display:none;align-items:center;gap:4px;">
+              <button type="button" id="pip-scroll-up" class="tiny ghost">▲ Lên</button>
+              <button type="button" id="pip-scroll-down" class="tiny ghost">▼ Xuống</button>
+              <button type="button" id="pip-scroll-latest" class="tiny ghost">⏬ Mới nhất</button>
+            </span>
+          </span>
+        </h2>
         <ul id="log" class="log"></ul>
       </div>
-    </section>
   </main>
   <div id="toast" class="toast" hidden></div>
 </body>

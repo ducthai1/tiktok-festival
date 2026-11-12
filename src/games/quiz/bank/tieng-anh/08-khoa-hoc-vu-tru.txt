@@ -1,0 +1,33 @@
+# Tiếng Anh · Vũ trụ, khoa học
+GALAXY | Một dải thiên hà bao la chứa hàng tỷ ngôi sao xoay quanh tiếng Anh là gì? | 1 | THIÊN HÀ, NGÂN HÀ
+TELESCOPE | Chiếc kính viễn vọng dùng để ngắm các vì sao xa xôi ngoài vũ trụ tiếng Anh là gì? | 1 | KÍNH VIỄN VỌNG
+BLACK HOLE | Hố đen vũ trụ có lực hấp dẫn cực mạnh nuốt chửng cả ánh sáng tiếng Anh là gì? | 2 | HỐ ĐEN
+SUPERNOVA | Hiện tượng vụ nổ siêu tân tinh chói lóa khi một ngôi sao khổng lồ qua đời tiếng Anh là gì? | 3 | SIÊU TÂN TINH
+GRAVITY | Lực hấp dẫn kéo vạn vật rơi về phía tâm Trái Đất tiếng Anh là gì? | 1 | TRỌNG LỰC, LỰC HẤP DẪN
+SPACESHIP | Con tàu vũ trụ chở các nhà du hành bay vào không gian tiếng Anh là gì? | 1 | TÀU VŨ TRỤ, SPACECRAFT
+ASTEROID | Tiểu hành tinh bằng đất đá bay lơ lửng quanh Mặt Trời tiếng Anh là gì? | 2 | TIỂU HÀNH TINH
+ECLIPSE | Hiện tượng thiên thực (nhật thực che Mặt Trời hoặc nguyệt thực che Mặt Trăng) tiếng Anh là gì? | 2 | NHẬT THỰC, NGUYỆT THỰC
+CONSTELLATION | Một chòm sao mang hình thù cung hoàng đạo trên bầu trời đêm tiếng Anh là gì? | 3 | CHÒM SAO
+ROBOTICS | Ngành khoa học chế tạo và lập trình robot tự động hóa tiếng Anh là gì? | 2 | KỸ THUẬT ROBOT
+QUANTUM | Ngành vật lý lượng tử nghiên cứu các hạt hạ nguyên tử siêu nhỏ tiếng Anh là gì? | 3 | LƯỢNG TỬ
+ATOM | Hạt nguyên tử - đơn vị cấu tạo cơ bản nhất của vật chất tiếng Anh là gì? | 2 | NGUYÊN TỬ
+MOLECULE | Một phân tử gồm nhiều nguyên tử liên kết lại với nhau tiếng Anh là gì? | 2 | PHÂN TỬ
+MICROSCOPE | Chiếc kính hiển vi dùng để phóng đại quan sát vi khuẩn siêu nhỏ tiếng Anh là gì? | 2 | KÍNH HIỂN VI
+SOLAR SYSTEM | Hệ Mặt Trời gồm 8 hành tinh quay quanh tiếng Anh là gì? | 1 | HỆ MẶT TRỜI
+COMET | Một ngôi sao chổi có đuôi bụi phát sáng kéo dài qua bầu trời tiếng Anh là gì? | 2 | SAO CHỔI
+NEBULA | Tinh vân - đám mây bụi khí khổng lồ nơi các vì sao mới sinh ra tiếng Anh là gì? | 3 | TINH VÂN
+LIGHTYEAR | Đơn vị đo khoảng cách năm ánh sáng trong thiên văn tiếng Anh là gì? | 3 | NĂM ÁNH SÁNG, LIGHT YEAR
+METEORITE | Khối thiên thạch từ ngoài vũ trụ rơi xuống mặt đất tiếng Anh là gì? | 3 | THIÊN THẠCH
+ASTRONOMY | Ngành thiên văn học nghiên cứu các thiên thể ngoài vũ trụ tiếng Anh là gì? | 2 | THIÊN VĂN HỌC
+ORBIT | Quỹ đạo quay của một hành tinh quanh Mặt Trời tiếng Anh là gì? | 2 | QUỸ ĐẠO
+METEOR | Sao băng lướt nhanh qua bầu trời đêm tiếng Anh là gì? | 1 | SAO BĂNG, METEORITE
+OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp tiếng Anh là gì? | 1 | OXY, KHÍ OXY
+HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn tiếng Anh là gì? | 2 | HYDRO, KHÍ HYDRO
+CARBON | Nguyên tố cacbon có trong mọi hợp chất hữu cơ tiếng Anh là gì? | 2 | CACBON
+RADIATION | Bức xạ nhiệt hoặc bức xạ phóng xạ tiếng Anh là gì? | 3 | BỨC XẠ
+COSMOS | Vũ trụ bao la vô tận tiếng Anh là gì? | 2 | VŨ TRỤ, UNIVERSE
+LIGHT YEAR | Năm ánh sáng đơn vị đo khoảng cách trong thiên văn tiếng Anh là gì? | 2 | NĂM ÁNH SÁNG
+EVOLUTION | Sự tiến hóa của các loài sinh vật qua thời gian tiếng Anh là gì? | 2 | TIẾN HÓA
+THERMODYNAMICS | Nhiệt động lực học trong vật lý tiếng Anh là gì? | 3 | NHIỆT ĐỘNG LỰC HỌC
+MAGNETISM | Hiện tượng từ tính của nam châm tiếng Anh là gì? | 2 | TỪ TÍNH, TỪ TRƯỜNG
+VOLTAGE | Điện áp hoặc hiệu điện thế tiếng Anh là gì? | 2 | ĐIỆN ÁP, HIỆU ĐIỆN THẾ

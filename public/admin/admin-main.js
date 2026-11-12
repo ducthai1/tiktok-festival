@@ -139,6 +139,16 @@ function renderGrantList(state) {
 
 function renderState(m) {
   renderGrantList(m.state);
+  
+  // Cập nhật số người xem cho cả 2 loại PiP
+  const v = m.viewers || {};
+  pipViewerCount = v.count || 0;
+  if (document.pictureInPictureElement) drawPipCanvas();
+  if (pipWin && pipWin.document) {
+    const vEl = pipWin.document.getElementById('pip-viewers');
+    if (vEl) vEl.textContent = `👀 ${pipViewerCount}`;
+  }
+
   if (m.game !== activeGame) {
     activeGame = m.game;
     for (const b of $('game-buttons').children) b.classList.toggle('active', b.dataset.game === activeGame);
@@ -146,10 +156,23 @@ function renderState(m) {
   }
   $('leaderboard').replaceChildren(...m.top.map((r) => {
     const li = document.createElement('li');
-    li.textContent = `${r.nickname} — ${r.diamonds}💎 · ${r.likes}❤`;
+    const details = [];
+    if (r.diamonds) details.push(`${r.diamonds}💎`);
+    if (r.likes) details.push(`${r.likes}❤`);
+    if (r.chats) details.push(`${r.chats}💬`);
+    li.textContent = `${r.nickname}${details.length ? ` — ${details.join(' · ')}` : ''}`;
     return li;
   }));
-  const v = m.viewers || {};
+
+  const amb = m.state?.ambassadors || [];
+  $('ambassadors-section').style.display = amb.length > 0 ? 'block' : 'none';
+  $('ambassadors').replaceChildren(...amb.map((r) => {
+    const li = document.createElement('li');
+    li.textContent = `${r.nickname} — ${r.shares} lượt share`;
+    if (r.follower) li.style.color = '#ffc107'; // highlight followers
+    return li;
+  }));
+
   $('viewers-status').textContent = `👀 ${v.count || 0} người xem · đang chờ chào: ${v.waiting || 0} · `
     + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
   const t = m.totals;
@@ -180,26 +203,271 @@ function applySettings(s) {
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
 }
 
-function appendLog(e) {
-  const li = document.createElement('li');
-  if (e.simulated) li.className = 'sim';
-  const who = document.createElement('b');
-  who.textContent = e.nickname;
-  li.append(`${e.type} · `, who, e.text ? `: ${e.text}` : '');
-  $('log').prepend(li);
-  while ($('log').children.length > 80) $('log').lastChild.remove();
+let pipWin = null;
+let pipVideo = null;
+let pipCanvas = null;
+let pipCtx = null;
+let pipLogs = [];
+let pipScrollOffset = 0;
+let pipViewerCount = 0;
+let userScrolledUp = false;
+
+function initPipCanvas() {
+  if (pipCanvas) return;
+  pipCanvas = document.createElement('canvas');
+  pipCanvas.width = 400;
+  pipCanvas.height = 560;
+  pipCtx = pipCanvas.getContext('2d');
+
+  pipVideo = document.createElement('video');
+  pipVideo.muted = true;
+  pipVideo.playsInline = true;
+  pipVideo.srcObject = pipCanvas.captureStream(10);
+
+  pipVideo.addEventListener('leavepictureinpicture', () => {
+    if ($('pip-video-btn')) $('pip-video-btn').textContent = '📌 Ghim Nổi 100% (như YouTube)';
+    if ($('pip-scroll-controls')) $('pip-scroll-controls').style.display = 'none';
+  });
 }
 
-const testPanel = setupTestPanel({ $, run, socket, toast });
-const demo = createDemoRunner({ socket, toast, setStatus: (text) => { $('demo-status').textContent = text; } });
-$('connect-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  run({ t: 'connect', provider: $('provider').value, username: $('username').value });
-});
-$('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
-$('reset-session').addEventListener('click', () => run({ t: 'resetSession' }));
-for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'legend']) {
-  $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: e.target.checked }, 'Đã lưu'));
+function drawPipCanvas() {
+  if (!pipCtx) return;
+  const ctx = pipCtx;
+  const w = pipCanvas.width;
+  const h = pipCanvas.height;
+
+  ctx.fillStyle = '#0d1117';
+  ctx.fillRect(0, 0, w, h);
+
+  ctx.fillStyle = '#161b22';
+  ctx.fillRect(0, 0, w, 42);
+  ctx.fillStyle = '#30363d';
+  ctx.fillRect(0, 41, w, 1);
+
+  ctx.fillStyle = '#ffe066';
+  ctx.font = 'bold 15px system-ui, sans-serif';
+  ctx.fillText('📌 LIVE CHAT (ALWAYS ON TOP)', 14, 27);
+
+  // Viewer count on canvas
+  ctx.fillStyle = '#8b949e';
+  ctx.font = '13px system-ui, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText(`👀 ${pipViewerCount}`, w - 14, 27);
+  ctx.textAlign = 'left';
+
+  if (pipScrollOffset > 0) {
+    ctx.fillStyle = '#238636';
+    ctx.font = 'bold 12px system-ui, sans-serif';
+    ctx.fillText(`▲ Đang cuộn (+${pipScrollOffset})`, w - 140, 27);
+  }
+
+  const total = pipLogs.length;
+  const endIndex = Math.max(0, total - pipScrollOffset);
+  const items = pipLogs.slice(Math.max(0, endIndex - 14), endIndex);
+
+  let y = 68;
+  for (const e of items) {
+    if (y > h - 15) break;
+
+    const icon = e.type === 'chat' ? '💬' : e.type === 'gift' ? '🎁' : e.type === 'like' ? '❤' : e.type === 'follow' ? '💖' : '↗';
+
+    ctx.fillStyle = e.type === 'gift' ? 'rgba(255, 211, 107, 0.15)' : 'rgba(255, 255, 255, 0.06)';
+    ctx.beginPath();
+    ctx.roundRect(10, y - 20, w - 20, 32, 6);
+    ctx.fill();
+
+    ctx.font = '15px system-ui, sans-serif';
+    ctx.fillStyle = '#ffffff';
+    ctx.fillText(icon, 18, y + 2);
+
+    ctx.font = 'bold 15px system-ui, sans-serif';
+    ctx.fillStyle = e.type === 'gift' ? '#ffe066' : '#58a6ff';
+    const nameText = (e.nickname || 'Khách').slice(0, 18);
+    ctx.fillText(nameText, 42, y + 2);
+
+    const nameWidth = ctx.measureText(nameText).width;
+    ctx.font = '14px system-ui, sans-serif';
+    ctx.fillStyle = '#e6edf3';
+    const msgText = e.text ? `: ${e.text}` : '';
+
+    let displayMsg = msgText;
+    const maxMsgWidth = w - 55 - nameWidth;
+    if (ctx.measureText(displayMsg).width > maxMsgWidth && maxMsgWidth > 20) {
+      while (displayMsg.length > 3 && ctx.measureText(displayMsg + '…').width > maxMsgWidth) {
+        displayMsg = displayMsg.slice(0, -1);
+      }
+      displayMsg += '…';
+    }
+    ctx.fillText(displayMsg, 42 + nameWidth, y + 2);
+
+    y += 36;
+  }
+}
+
+async function toggleVideoPip() {
+  initPipCanvas();
+  drawPipCanvas();
+
+  if (document.pictureInPictureElement) {
+    await document.exitPictureInPicture().catch(() => {});
+    if ($('pip-video-btn')) $('pip-video-btn').textContent = '📌 Ghim Nổi 100% (như YouTube)';
+    if ($('pip-scroll-controls')) $('pip-scroll-controls').style.display = 'none';
+    return;
+  }
+
+  try {
+    await pipVideo.play();
+    await pipVideo.requestPictureInPicture();
+    if ($('pip-video-btn')) $('pip-video-btn').textContent = '❌ Đóng Ghim Nổi';
+    if ($('pip-scroll-controls')) $('pip-scroll-controls').style.display = 'inline-flex';
+  } catch (err) {
+    console.error('Lỗi mở Video PiP:', err);
+    toast('Trình duyệt chưa cho phép ghim nổi (cần bấm tương tác chuột)', true);
+  }
+}
+
+async function toggleDocPip() {
+  if (pipWin) {
+    try { pipWin.close(); } catch {}
+    pipWin = null;
+    if ($('pip-doc-btn')) $('pip-doc-btn').textContent = '🪟 Cửa Sổ HTML (Cuộn chuột)';
+    return;
+  }
+
+  if (!('documentPictureInPicture' in window)) {
+    const pop = window.open('', 'pipLog', 'width=420,height=580,scrollbars=yes');
+    if (!pop) return toast('Trình duyệt chặn mở cửa sổ mới', true);
+    setupPipWindowDOM(pop);
+    pipWin = pop;
+    if ($('pip-doc-btn')) $('pip-doc-btn').textContent = '❌ Đóng HTML';
+    return;
+  }
+
+  try {
+    const win = await window.documentPictureInPicture.requestWindow({ width: 420, height: 580 });
+    setupPipWindowDOM(win);
+    pipWin = win;
+
+    win.addEventListener('pagehide', () => {
+      pipWin = null;
+      if ($('pip-doc-btn')) $('pip-doc-btn').textContent = '🪟 Cửa Sổ HTML (Cuộn chuột)';
+    });
+
+    if ($('pip-doc-btn')) $('pip-doc-btn').textContent = '❌ Đóng HTML';
+  } catch (err) {
+    console.error('Lỗi mở Document PiP:', err);
+    toast('Trình duyệt từ chối mở cửa sổ nổi', true);
+  }
+}
+
+function setupPipWindowDOM(win) {
+  const doc = win.document;
+  doc.title = '💬 Live Chat & Quà';
+
+  const style = doc.createElement('style');
+  style.textContent = `
+    * { box-sizing: border-box; }
+    body { background: #0d1117; color: #e6edf3; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 0; margin: 0; height: 100vh; display: flex; flex-direction: column; overflow: hidden; user-select: text; }
+    header { background: #161b22; border-bottom: 1px solid #30363d; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; flex: none; }
+    h3 { margin: 0; font-size: 15px; color: #ffe066; font-weight: 800; }
+    .viewers { font-size: 13px; color: #8b949e; font-weight: 600; }
+    .container { flex: 1; overflow-y: auto; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; scroll-behavior: smooth; }
+    .container::-webkit-scrollbar { width: 6px; }
+    .container::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+    .container::-webkit-scrollbar-thumb:hover { background: #8b949e; }
+    .log-item { padding: 8px 12px; border-radius: 8px; background: rgba(255,255,255,0.05); font-size: 14px; line-height: 1.45; word-break: break-word; border: 1px solid transparent; transition: background 150ms; }
+    .log-item:hover { background: rgba(255,255,255,0.09); }
+    .log-item.gift { background: rgba(255, 211, 107, 0.12); border-color: rgba(255, 211, 107, 0.3); }
+    .log-item.sim { border-left: 3px solid #ffc107; }
+    .log-item b { color: #58a6ff; font-weight: 700; }
+    .log-item.gift b { color: #ffe066; }
+    .scroll-btn { position: fixed; bottom: 12px; right: 14px; padding: 6px 14px; border-radius: 20px; background: #238636; color: #fff; border: 0; font-weight: 800; font-size: 13px; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.5); display: none; z-index: 99; }
+    .scroll-btn:hover { background: #2ea043; }
+  `;
+  doc.head.appendChild(style);
+
+  const header = doc.createElement('header');
+  header.innerHTML = '<h3>💬 Live Chat & Quà Tặng</h3><span id="pip-viewers" class="viewers">👀 0</span>';
+
+  const container = doc.createElement('div');
+  container.className = 'container';
+  container.id = 'log-container';
+
+  const scrollBtn = doc.createElement('button');
+  scrollBtn.className = 'scroll-btn';
+  scrollBtn.id = 'scroll-btn';
+  scrollBtn.textContent = '⬇ Bình luận mới';
+
+  doc.body.append(header, container, scrollBtn);
+
+  userScrolledUp = false;
+  container.addEventListener('scroll', () => {
+    const isAtBottom = container.scrollHeight - container.scrollTop - container.clientHeight < 40;
+    userScrolledUp = !isAtBottom;
+    scrollBtn.style.display = userScrolledUp ? 'block' : 'none';
+  });
+
+  scrollBtn.addEventListener('click', () => {
+    container.scrollTop = container.scrollHeight;
+    userScrolledUp = false;
+    scrollBtn.style.display = 'none';
+  });
+
+  const mainLogs = [...$('log').children];
+  for (let i = mainLogs.length - 1; i >= 0; i--) {
+    const item = mainLogs[i];
+    let rawObj = null;
+    try { rawObj = item.dataset.rawObj ? JSON.parse(item.dataset.rawObj) : null; } catch {}
+    appendPipLogNode(doc, container, rawObj || { type: item.dataset.type || 'chat', nickname: item.querySelector('b')?.textContent || '', text: item.innerText });
+  }
+
+  setTimeout(() => {
+    container.scrollTop = container.scrollHeight;
+  }, 50);
+}
+
+function appendPipLogNode(doc, container, e) {
+  const div = doc.createElement('div');
+  div.className = `log-item${e.type === 'gift' ? ' gift' : ''}${e.simulated ? ' sim' : ''}`;
+  const icon = e.type === 'chat' ? '💬' : e.type === 'gift' ? '🎁' : e.type === 'like' ? '❤' : e.type === 'follow' ? '💖' : '↗';
+
+  const who = doc.createElement('b');
+  who.textContent = e.nickname || 'Khách';
+
+  div.append(`${icon} `, who, e.text ? `: ${e.text}` : '');
+  container.appendChild(div);
+
+  while (container.children.length > 300) {
+    container.removeChild(container.firstChild);
+  }
+
+  if (!userScrolledUp) {
+    container.scrollTop = container.scrollHeight;
+  }
+}
+
+function appendLog(e) {
+  pipLogs.push(e);
+  if (pipLogs.length > 100) pipLogs.shift();
+  drawPipCanvas();
+
+  const li = document.createElement('li');
+  if (e.simulated) li.className = 'sim';
+  li.dataset.rawObj = JSON.stringify(e);
+  li.dataset.type = e.type;
+  const who = document.createElement('b');
+  who.textContent = e.nickname;
+  const typeIcon = e.type === 'chat' ? '💬' : e.type === 'gift' ? '🎁' : e.type === 'like' ? '❤' : e.type === 'follow' ? '💖' : e.type === 'share' ? '↗' : e.type;
+  li.append(`${typeIcon} `, who, e.text ? `: ${e.text}` : '');
+  $('log').prepend(li);
+  while ($('log').children.length > 100) $('log').lastChild.remove();
+
+  if (pipWin && pipWin.document) {
+    const container = pipWin.document.getElementById('log-container');
+    if (container) {
+      appendPipLogNode(pipWin.document, container, e);
+    }
+  }
 }
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
@@ -241,3 +509,15 @@ $('login-form').addEventListener('submit', (e) => {
 const stageUrl = `${location.origin}/stage`;
 $('stage-url').textContent = stageUrl;
 $('copy-stage').addEventListener('click', () => navigator.clipboard?.writeText(stageUrl).then(() => toast('Đã chép link')));
+if ($('pip-video-btn')) $('pip-video-btn').addEventListener('click', toggleVideoPip);
+if ($('pip-doc-btn')) $('pip-doc-btn').addEventListener('click', toggleDocPip);
+if ($('pip-scroll-up')) $('pip-scroll-up').addEventListener('click', () => { pipScrollOffset = Math.min(pipLogs.length - 1, pipScrollOffset + 5); drawPipCanvas(); });
+if ($('pip-scroll-down')) $('pip-scroll-down').addEventListener('click', () => { pipScrollOffset = Math.max(0, pipScrollOffset - 5); drawPipCanvas(); });
+if ($('pip-scroll-latest')) $('pip-scroll-latest').addEventListener('click', () => { pipScrollOffset = 0; drawPipCanvas(); });
+if ($('reset-session')) $('reset-session').addEventListener('click', () => {
+  if (confirm('Xoá bảng xếp hạng phiên (kim cương/like)?')) run({ t: 'resetSession' });
+});
+if ($('reset-ambassadors')) $('reset-ambassadors').addEventListener('click', () => {
+  if (confirm('Xoá bảng đại sứ share?')) run({ t: 'resetAmbassadors' });
+});
+if ($('disconnect')) $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));

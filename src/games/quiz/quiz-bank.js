@@ -111,23 +111,42 @@ export function loadClassroomQuestions() {
 export function loadEnglishQuestions() {
   const file = lopHocFiles().find((f) => f.file === ENGLISH_FILE);
   const basic = parseTextBank(file.text).map((q) => ({ ...q, category: 'Tiếng Anh · Cơ bản', basic: true }));
-  const topics = readTxtDir('tieng-anh').flatMap((f) => parseTextBank(f.text, 'Tiếng Anh'));
-  const seen = new Set();
+  const topics = readTxtDir('tieng-anh').flatMap((f) => parseTextBank(f.text, 'Tiếng Anh').map((q) => ({ ...q, category: q.category.startsWith('Tiếng Anh') ? q.category : `Tiếng Anh · ${q.category}`, file: f.file })));
+  // Loại bỏ các từ đã có trong bộ đề quà (tieng-anh-bo) để tránh trùng lặp khi user đổi topic
+  const setKeys = loadEnglishSetAnswerKeys();
+  // Dedup bằng answer (không phân biệt hoa thường) — cùng đáp án dù prompt khác cũng chỉ lấy 1 bản
+  const seenAns = new Set();
   return [...basic, ...topics].filter((q) => {
-    const key = `${foldText(q.answer)}|${foldText(q.prompt)}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
+    if (setKeys.has(foldText(q.answer))) return false; // từ trong bộ đề riêng → bỏ khỏi general
+    const ansKey = foldText(q.answer);
+    if (seenAns.has(ansKey)) return false;
+    seenAns.add(ansKey);
     return true;
   });
 }
 
 /** Đuổi hình bắt chữ: chuỗi emoji ghép chữ (Lớp Học Chữ) + kho emoji phim/bài hát/thành ngữ (Emoji Quiz). */
 // Bộ đề đổi bằng quà ở tab tiếng Anh (bank/tieng-anh-bo/, tự soạn, mỗi bộ ~150 từ bậc 1–3 trong bộ).
-const ENGLISH_SET_FILES = { toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt', bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt' };
+const ENGLISH_SET_FILES = {
+  toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt',
+  bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt', truonghoc: 'truong-hoc.txt',
+  dongvat: 'dong-vat.txt', amthuc: 'am-thuc.txt', thanhngu: 'thanh-ngu.txt',
+  dovat: 'do-vat.txt', dulich: 'du-lich.txt', giaitri: 'giai-tri.txt'
+};
 export function loadEnglishSets() {
   const files = new Map(readTxtDir('tieng-anh-bo').map((f) => [f.file, f.text]));
   return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => [id,
     parseTextBank(files.get(file) || '').map((q) => ({ ...q, category: q.category.replace(/^Bộ đề · /, 'Tiếng Anh · ') }))]));
+}
+
+/** Trả về Set các đáp án (đã foldText) thuộc bất kỳ bộ nào trong tieng-anh-bo — dùng để loại khỏi general. */
+export function loadEnglishSetAnswerKeys() {
+  const sets = loadEnglishSets();
+  const keys = new Set();
+  for (const list of Object.values(sets)) {
+    for (const q of list) keys.add(foldText(q.answer));
+  }
+  return keys;
 }
 
 export function loadEmojiQuestions() {
@@ -157,8 +176,10 @@ export function loadChoiceQuestions() {
 }
 
 export function loadWordleWords() {
-  const { answers, allowed } = readJson('wordle-words.json');
-  return { answers, allowed: new Set([...allowed, ...answers]) };
+  const data = readJson('wordle-words.json');
+  const answers = Array.isArray(data) ? data : data['5'] || [];
+  const allowed = new Set(answers);
+  return { answers, allowed };
 }
 
 // ---- Toán nhanh: tự sinh, khó dần theo vòng 12 câu (3 câu mỗi bậc) ----

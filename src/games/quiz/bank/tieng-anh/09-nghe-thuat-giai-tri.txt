@@ -1,0 +1,37 @@
+# Tiếng Anh · Nghệ thuật, giải trí
+MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa tiếng Anh là gì? | 2 | KIỆT TÁC
+SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội tiếng Anh là gì? | 2 | BẢN GIAO HƯỞNG, GIAO HƯỞNG
+ORCHESTRA | Dàn nhạc giao hưởng đông đảo hòa tấu nhiều loại nhạc cụ tiếng Anh là gì? | 2 | DÀN NHẠC GIAO HƯỞNG, DÀN NHẠC
+AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát tiếng Anh là gì? | 3 | KHÁN PHÒNG
+CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh tiếng Anh là gì? | 3 | QUAY PHIM
+SOUNDTRACK | Album nhạc nền trong phim mang lại nhiều cảm xúc tiếng Anh là gì? | 2 | NHẠC PHIM, OST
+BLOCKBUSTER | Một bộ phim bom tấn phá đảo mọi kỷ lục phòng vé chiếu rạp tiếng Anh là gì? | 2 | PHIM BOM TẤN, BOM TẤN
+EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật tiếng Anh là gì? | 2 | TRIỂN LÃM
+SCULPTURE | Tác phẩm điêu khắc đục đẽo từ đá hoặc đồng tiếng Anh là gì? | 2 | ĐIÊU KHẮC, TƯỢNG ĐIÊU KHẮC
+CALLIGRAPHY | Nghệ thuật viết thư pháp bằng bút lông uốn lượn uyển chuyển tiếng Anh là gì? | 3 | THƯ PHÁP
+PORTRAIT | Bức tranh vẽ chân dung cận cảnh khuôn mặt một người tiếng Anh là gì? | 2 | TRANH CHÂN DUNG, CHÂN DUNG
+LANDSCAPE | Bức tranh vẽ phong cảnh thiên nhiên núi non đồng cỏ tiếng Anh là gì? | 2 | TRANH PHONG CẢNH, PHONG CẢNH
+ILLUSION | Trò ảo ảnh đánh lừa thị giác người xem tiếng Anh là gì? | 2 | ẢO ẢNH, ẢO GIÁC
+MAGICIAN | Nhà ảo thuật gia biến hóa chim bồ câu trên sân khấu tiếng Anh là gì? | 1 | ẢO THUẬT GIA
+SPOTLIGHT | Chiếc đèn rọi sân khấu chiếu ánh sáng vào nghệ sĩ biểu diễn tiếng Anh là gì? | 1 | ĐÈN RỌI, ĐÈN SÂN KHẤU
+CARNIVAL | Lễ hội hóa trang đường phố rực rỡ sắc màu và âm nhạc tiếng Anh là gì? | 2 | LỄ HỘI HÓA TRANG, LỄ HỘI
+CHOREOGRAPHY | Nghệ thuật biên đạo các động tác múa nhảy cho ca sĩ tiếng Anh là gì? | 3 | BIÊN ĐẠO MÚA
+APPLAUSE | Tiếng vỗ tay rộn rã tán thưởng của cả khán phòng tiếng Anh là gì? | 2 | TIẾNG VỖ TAY, TRÀNG VỖ TAY
+SCREENPLAY | Tập kịch bản chi tiết của bộ phim điện ảnh tiếng Anh là gì? | 3 | KỊCH BẢN PHIM, KỊCH BẢN
+SKETCH | Bản vẽ phác thảo chì nhanh tiếng Anh là gì? | 1 | PHÁC THẢO, BẢN PHÁC THẢO
+CANVAS | Khung vải toan dùng để vẽ tranh sơn dầu tiếng Anh là gì? | 2 | VẢI VẼ TRANH, TOAN VẼ
+EASEL | Giá đỡ ba chân để đặt tranh vẽ tiếng Anh là gì? | 3 | GIÁ VẼ
+PALETTE | Khay pha màu vẽ của họa sĩ tiếng Anh là gì? | 2 | BẢNG PHA MÀU, KHAY PHA MÀU
+WATERCOLOR | Màu nước dùng trong hội họa tiếng Anh là gì? | 2 | MÀU NƯỚC
+OIL PAINTING | Tranh sơn dầu nghệ thuật tiếng Anh là gì? | 2 | TRANH SƠN DẦU
+POTTERY | Nghệ thuật làm đồ gốm sứ thủ công tiếng Anh là gì? | 2 | ĐỒ GỐM, GỐM SỨ
+CERAMICS | Đồ gốm nung men sứ mỹ nghệ tiếng Anh là gì? | 2 | GỐM SỨ
+ORIGAMI | Nghệ thuật gấp giấy truyền thống của Nhật Bản tiếng Anh là gì? | 1 | GẤP GIẤY
+MOSAIC | Tranh ghép từ nhiều mảnh gốm đá nhỏ tiếng Anh là gì? | 3 | TRANH GHÉP MẢNH
+GRAFFITI | Nghệ thuật vẽ tranh đường phố bằng bình xịt sơn tiếng Anh là gì? | 1 | TRANH ĐƯỜNG PHỐ
+HARMONY | Sự hòa âm nhịp nhàng trong bản nhạc tiếng Anh là gì? | 2 | HÒA ÂM
+TEMPO | Tốc độ nhịp điệu nhanh chậm của bản nhạc tiếng Anh là gì? | 2 | NHỊP ĐIỆU, TỐC ĐỘ BẢN NHẠC
+ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện tiếng Anh là gì? | 2 | NHẠC MỘC, ACOUSTIC GUITAR
+INSTRUMENT | Nhạc cụ âm nhạc nói chung tiếng Anh là gì? | 1 | NHẠC CỤ
+DRUM | Cái trống gõ tạo nhịp điệu rộn ràng tiếng Anh là gì? | 1 | CÁI TRỐNG, TRỐNG
+CYMBAL | Chiếc chũm chọe bằng đồng trong bộ trống tiếng Anh là gì? | 2 | CHŨM CHỌE

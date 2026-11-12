@@ -158,3 +158,63 @@ MID-AUTUMN | Tết Trung thu tiếng Anh là gì? | 3 | MID-AUTUMN FESTIVAL, MOO
 LUCKY MONEY | Tiền lì xì ngày Tết tiếng Anh là gì? | 3 | RED ENVELOPE, RED ENVELOPES, RED PACKET
 LION DANCE | Múa lân tiếng Anh là gì? | 3 | LION DANCING
 CELEBRATE | Ăn mừng, tổ chức mừng tiếng Anh là gì? | 3 | CELEBRATION
+
+DESTINATION | Điểm đến du lịch | 2 | ĐIỂM ĐẾN
+ITINERARY | Lịch trình chuyến đi | 3 | LỊCH TRÌNH
+ACCOMMODATION | Chỗ ở / khách sạn lưu trú | 3 | CHỖ Ở
+RESERVATION | Đặt chỗ trước / đặt phòng | 2 | ĐẶT CHỖ
+DEPARTURE | Giờ khởi hành / chuyến đi | 2 | KHỞI HÀNH
+ARRIVAL | Giờ đến nơi | 2 | ĐẾN NƠI
+METROPOLIS | Siêu đô thị / thành phố lớn | 3 | SIÊU ĐÔ THỊ
+NEIGHBOURHOOD | Khu phố xóm giềng | 2 | KHU PHỐ
+SKYSCRAPER | Tòa nhà cao tầng chọc trời | 2 | NHÀ CHỌC TRỜI
+PEDESTRIAN | Người đi bộ trên đường | 3 | NGƯỜI ĐI BỘ
+SUBURB | Khu vực ngoại thành | 3 | NGOẠI THÀNH
+FORTNIGHT | Khoảng thời gian hai tuần (14 ngày) | 3 | HAI TUẦN
+MILLENNIUM | Thiên niên kỷ (1000 năm) | 3 | THIÊN NIÊN KỶ
+PUNCTUAL | Đúng giờ / không muộn | 2 | ĐÚNG GIỜ
+TEMPORARY | Tạm thời / không vĩnh viễn | 3 | TẠM THỜI
+PERMANENT | Lâu dài / vĩnh viễn | 3 | VĨNH VIỄN
+SCHEDULE | Thời gian biểu / lịch trình | 1 | LỊCH TRÌNH
+DURATION | Khoảng thời gian kéo dài | 2 | THỜI GIAN
+
+EXCURSION | Chuyến tham quan dã ngoại | 3 | CHUYẾN ĐI
+EXPEDITION | Cuộc thám hiểm khám phá | 3 | THÁM HIỂM
+CRUISE | Chuyến du lịch bằng tàu thủy lớn | 2 | DU THUYỀN
+BACKPACKER | Khách du lịch ba lô / phượt thủ | 2 | PHƯỢT THỦ
+LANDMARK | Địa danh nổi tiếng / biểu tượng | 2 | ĐỊA DANH
+INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3 | CƠ SỞ HẠ TẦNG
+CONGESTION | Sự tắc nghẽn giao thông | 3 | TẮC NGHIỄN
+COMMUTER | Người đi làm hằng ngày bằng xe bus/tàu | 3 | NGƯỜI ĐI LÀM
+BOULEVARD | Đại lộ rộng lớn | 2 | ĐẠI LỘ
+CROSSWALK | Vạch sang đường cho người đi bộ | 1 | VẠCH SANG ĐƯỜNG
+ROUNDABOUT | Vòng xoay / bùng binh | 2 | BÙNG BINH
+TIMEZONE | Múi giờ Trái Đất | 2 | MÚI GIỜ
+DAYLIGHT | Ánh sáng ban ngày | 1 | BAN NGÀY
+DAWN | Bình minh hửng sáng | 2 | BÌNH MINH
+DUSK | Hoàng hôn chiều tà | 2 | HOÀNG HÔN
+
+WANDERLUST | Niềm khao khát cuồng nhiệt muốn đi du lịch chu du khắp thế giới tiếng Anh là gì? | 3 | ĐAM MÊ XÊ DỊCH
+LIGHTHOUSE | Ngọn hải đăng bên bờ biển phát ánh sáng dẫn đường cho tàu bè tiếng Anh là gì? | 2 | HẢI ĐĂNG, NGỌN HẢI ĐĂNG
+FOUNTAIN | Đài phun nước nghệ thuật tung bọt trắng xóa giữa hoa viên tiếng Anh là gì? | 1 | ĐÀI PHUN NƯỚC
+COMPASS | Chiếc la bàn định vị luôn có kim chỉ về hướng Bắc tiếng Anh là gì? | 1 | LA BÀN
+HORIZON | Đường chân trời xa tít tắp nơi trời và biển gặp nhau tiếng Anh là gì? | 2 | ĐƯỜNG CHÂN TRỜI
+TWILIGHT | Thời khắc chập choạng hoàng hôn chiều tà mặt trời lặn tiếng Anh là gì? | 2 | CHẬP TỐI, HOÀNG HÔN
+SOLSTICE | Hiện tượng điểm chí (hạ chí ngày dài nhất, đông chí đêm dài nhất) tiếng Anh là gì? | 3 | ĐIỂM CHÍ
+EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đêm dài bằng nhau) tiếng Anh là gì? | 3 | ĐIỂM PHÂN
+PANORAMA | Bức ảnh toàn cảnh góc rộng nhìn bao quát toàn bộ thành phố tiếng Anh là gì? | 2 | TOÀN CẢNH
+EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn tiếng Anh là gì? | 2 | ĐẠI SỨ QUÁN
+HARBOR | Bến cảng neo đậu tàu thuyền biển bình yên tiếng Anh là gì? | 2 | BẾN CẢNG, PORT
+TERMINAL | Khu vực nhà ga sân bay nơi đón tiễn khách cất cánh tiếng Anh là gì? | 2 | NHÀ GA SÂN BAY
+CANAL | Con kênh đào nhân tạo dẫn nước chảy êm đềm qua lòng thành phố tiếng Anh là gì? | 2 | KÊNH ĐÀO
+CASTLE | Tòa lâu đài nguy nga cổ kính như trong truyện cổ tích hoàng gia tiếng Anh là gì? | 1 | LÂU ĐÀI
+CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập ra đường tiếng Anh là gì? | 3 | GIỜ GIỚI NGHIÊM
+
+AVENUE | Đại lộ thênh thang rợp bóng hai hàng cây xanh mát tiếng Anh là gì? | 2 | ĐẠI LỘ
+ALLEY | Con ngõ nhỏ quanh co rẽ vào sâu trong phố tiếng Anh là gì? | 2 | CON NGÕ, NGÕ HẺM
+RESORT | Khu nghỉ dưỡng sinh thái sang trọng bên bờ biển xanh tiếng Anh là gì? | 1 | KHU NGHỈ DƯỠNG
+VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt tiếng Anh là gì? | 1 | BIỆT THỰ
+TENT | Chiếc lều cắm trại vải bạt dựng giữa rừng ngủ đêm dã ngoại tiếng Anh là gì? | 1 | CÁI LỀU, LỀU TRẠI
+CAMPFIRE | Đống lửa trại bập bùng nướng khoai và ca hát trong đêm tiếng Anh là gì? | 1 | LỬA TRẠI
+FERRY | Chiếc phà chở xe cộ và hành khách xuôi ngược qua sông tiếng Anh là gì? | 2 | CHIẾC PHÀ
+CABLE CAR | Tuyến cáp treo lơ lửng trên không đưa khách lên ngắm đỉnh núi tiếng Anh là gì? | 2 | CÁP TREO

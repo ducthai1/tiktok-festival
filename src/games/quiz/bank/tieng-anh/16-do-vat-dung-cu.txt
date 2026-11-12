@@ -1,0 +1,14 @@
+# Tiếng Anh · Đồ vật, dụng cụ hàng ngày
+SCISSORS | Cây kéo dùng để cắt giấy và cắt vải tiếng Anh là gì? | 1 | CÂY KÉO, CÁI KÉO
+HAMMER | Cây búa đóng đinh bằng sắt có cán gỗ tiếng Anh là gì? | 1 | CÂY BÚA, CÁI BÚA
+SCREWDRIVER | Chiếc tua vít dùng để vặn ốc xoáy tiếng Anh là gì? | 1 | TUA VÍT, TÔ VÍT
+MAGNIFYING GLASS | Kính lúp cầm tay phóng to các vật thể nhỏ xíu tiếng Anh là gì? | 2 | KÍNH LÚP
+WRENCH | Cái cờ lê / mỏ lết dùng để siết chặt đai ốc bù loong tiếng Anh là gì? | 2 | CỜ LÊ, MỎ LẾT, SPANNER
+PLIERS | Cái kìm mỏ nhọn dùng để kẹp và uốn dây thép tiếng Anh là gì? | 2 | CÁI KÌM, KÌM
+WHEELBARROW | Chiếc xe rùa một bánh đẩy cát sỏi trong công trình tiếng Anh là gì? | 2 | XE RÙA
+TAPE MEASURE | Chiếc thước dây rút cuộn tròn đo chiều dài thợ may tiếng Anh là gì? | 2 | THƯỚC DÂY
+KALEIDOSCOPE | Ống kính vạn hoa nhìn vào thấy vô số hoa văn đổi màu lung linh tiếng Anh là gì? | 3 | KÍNH VẠN HOA
+LABYRINTH | Một mê cung rắc rối ngoằn ngoèo với vô số lối rẽ hiểm hóc tiếng Anh là gì? | 3 | MÊ CUNG
+HOURGLASS | Đồng hồ cát đo thời gian bằng cát chảy qua eo hẹp tiếng Anh là gì? | 2 | ĐỒNG HỒ CÁT
+SUNDIAL | Đồng hồ mặt trời cổ đại xác định giờ theo bóng nắng tiếng Anh là gì? | 3 | ĐỒNG HỒ MẶT TRỜI
+ASTROLABE | Thước trắc tinh thiên văn cổ dùng định vị vị trí các vì sao tiếng Anh là gì? | 4 | THƯỚC TRẮC TINH

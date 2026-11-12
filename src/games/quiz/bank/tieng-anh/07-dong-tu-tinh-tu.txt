@@ -148,3 +148,682 @@ RARE | Hiếm (tính từ) tiếng Anh là gì? | 3 | UNCOMMON, SCARCE
 SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) tiếng Anh là gì? | 3
 ROUGH | Thô ráp, sần sùi (tính từ) tiếng Anh là gì? | 3 | COARSE
 SECRET | Bí mật (tính từ, vd lối đi bí mật) tiếng Anh là gì? | 3 | HIDDEN
+
+ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3 | HOÀN THÀNH
+ACCUMULATE | Tích lũy / gom góp dần | 3 | TÍCH LŨY
+BENEFICIAL | Có lợi / có ích | 2 | CÓ LỢI
+COMPREHENSIVE | Toàn diện / bao quát | 3 | TOÀN DIỆN
+DETERMINE | Quyết tâm / xác định rõ | 2 | QUYẾT TÂM
+EFFICIENT | Năng suất / hiệu quả cao | 2 | HIỆU QUẢ
+FASCINATING | Lôi cuốn / cực kỳ thú vị | 3 | HẤP DẪN
+GENUINE | Chân thật / hàng thật nguyên bản | 3 | CHÂN THẬT
+HESITATE | Do dự / ngập ngừng | 2 | DO DỰ
+IMPRESSIVE | Gây ấn tượng mạnh | 2 | Ấn TƯỢNG
+JUSTIFY | Bào chữa / thanh minh | 3 | BÀO CHỮA
+KNOWLEDGEABLE | Có hiểu biết rộng / am hiểu | 3 | AM HIỂU
+MAINTAIN | Duy trì / giữ vững | 2 | DUY TRÌ
+NEGOTIATE | Đàm phán / thương lượng | 3 | ĐÀM PHÁN
+OBVIOUS | Rõ ràng / hiển nhiên | 2 | HIỂN NHIÊN
+PERSUADE | Thuyết phục người khác | 2 | THUYẾT PHỤC
+RELUCTANT | Miễn cưỡng / không tự nguyện | 3 | MIỄN CƯỠNG
+STIMULATE | Kích thích / thúc đẩy | 3 | KÍCH THÍCH
+TOLERANT | Vị tha / nhẫn nại khoan dung | 3 | KHOAN DUNG
+ULTIMATE | Cuối cùng / tối thượng | 3 | TỐI THƯỢNG
+VALUABLE | Có giá trị cao / quý giá | 2 | QUÝ GIÁ
+WONDERFUL | Tuyệt vời / kỳ diệu | 1 | TUYỆT VỜI
+ZEALOUS | Hăng hái / nhiệt thành | 3 | HĂNG HÁI, ENTHUSIASTIC
+ACCURATE | Chính xác tuyệt đối | 2 | CHÍNH XÁC
+
+APPRECIATE | Trân trọng / cảm kích | 2 | TRÂN TRỌNG
+BOOST | Tăng cường / đẩy mạnh | 2 | TĂNG CƯỜNG
+COLLABORATE | Hợp tác làm việc chung | 3 | HỢP TÁC
+DEMONSTRATE | Chứng minh / thể hiện rõ | 3 | CHỨNG MINH
+ENCOURAGE | Khuyến khích / động viên | 2 | KHUYẾN KHÍCH
+FACILITATE | Tạo điều kiện thuận lợi | 3 | TẠO ĐIỀU KIỆN
+GUARANTEE | Cam kết / bảo đảm | 2 | CAM KẾT
+HIGHLIGHT | Nhấn mạnh / làm nổi bật | 2 | NHẤN MẠNH
+INNOVATE | Đổi mới sáng tạo | 3 | ĐỔI MỚI
+MAXIMIZE | Tối đa hóa | 2 | TỐI ĐA HÓA
+MINIMIZE | Tối thiểu hóa / giảm bớt | 2 | TỐI THIỂU HÓA
+NAVIGATE | Định hướng / điều hướng | 3 | ĐỊNH HƯỚNG
+OPTIMIZE | Tối ưu hóa hiệu quả | 3 | TỐI ƯU HÓA
+PRIORITIZE | Ưu tiên hàng đầu | 3 | ƯU TIÊN
+REINFORCE | Củng cố / gia cố chắc thêm | 3 | CỦNG CỐ
+SIMPLIFY | Đơn giản hóa vấn đề | 2 | ĐƠN GIẢN HÓA
+TRANSFORM | Biến đổi hoàn toàn | 3 | BIẾN ĐỔI
+UNDERTAKE | Đảm nhận nhiệm vụ | 3 | ĐẢM NHẬN
+VALIDATE | Xác nhận tính hợp lệ | 3 | XÁC NHẬN
+
+SERENDIPITY | Sự tình cờ may mắn tìm thấy điều tuyệt vời bất ngờ mà không hề tính trước tiếng Anh là gì? | 3 | TÌNH CỜ MAY MẮN
+EPHEMERAL | Tính chất phù du, sớm nở tối tàn, ngắn ngủi thoáng qua tiếng Anh là gì? | 3 | PHÙ DU, NGẮN NGỦI
+RESILIENT | Tính từ chỉ người kiên cường, bất khuất, luôn gượng dậy sau vấp ngã tiếng Anh là gì? | 3 | KIÊN CƯỜNG
+PRISTINE | Vẻ đẹp hoang sơ, nguyên bản thuần khiết chưa từng bị con người làm ô uế tiếng Anh là gì? | 3 | NGUYÊN SƠ, THUẦN KHIẾT
+HYPNOTIZE | Hành động dùng thuật thôi miên để đưa người khác vào giấc ngủ điều khiển tiếng Anh là gì? | 3 | THÔI MIÊN
+PROCRASTINATE | Thói quen xấu hay trì hoãn, lần lữa công việc đến phút chót tiếng Anh là gì? | 3 | TRÌ HOÃN
+PERSEVERE | Động từ kiên trì, bền chí theo đuổi đam mê vượt qua mọi trở ngại tiếng Anh là gì? | 3 | KIÊN TRÌ, BỀN CHÍ
+MESMERIZING | Tính từ mê hoặc, quyến rũ khiến người xem không thể rời mắt tiếng Anh là gì? | 3 | MÊ HOẶC
+INTRIGUING | Điều gì đó vô cùng kỳ thú, khơi gợi trí tò mò muốn tìm hiểu tiếng Anh là gì? | 3 | KỲ THÚ, TÒ MÒ
+RELENTLESS | Sự nỗ lực bền bỉ không ngừng nghỉ, quyết liệt không bao giờ từ bỏ tiếng Anh là gì? | 3 | KHÔNG NGỪNG NGHỈ
+EXTRAORDINARY | Điều gì đó phi thường, xuất chúng, vượt xa mức bình thường tiếng Anh là gì? | 2 | PHI THƯỜNG
+BREATHTAKING | Cảnh tượng đẹp đến nghẹt thở, hùng vĩ choáng ngợp lòng người tiếng Anh là gì? | 2 | ĐẸP NGHẸT THỞ
+INGENIOUS | Bộ óc tài tình, khéo léo, sáng tạo giải pháp thông minh tài ba tiếng Anh là gì? | 3 | TÀI TÌNH, THÔNG MINH
+SURREAL | Cảm giác siêu thực, kỳ lạ mơ màng như bước ra từ một giấc chiêm bao tiếng Anh là gì? | 3 | SIÊU THỰC
+CONTEMPLATE | Hành động ngồi trầm ngâm suy ngẫm, chiêm nghiệm sâu sắc về cuộc đời tiếng Anh là gì? | 3 | SUY NGẪM, TRẦM NGÂM
+EXAGGERATE | Hành động nói quá lời, phóng đại khoa trương câu chuyện vượt mức thật tiếng Anh là gì? | 2 | PHÓNG ĐẠI, NÓI QUÁ
+OVERWHELM | Cảm giác bị choáng ngợp, lấn át bởi quá nhiều cảm xúc dồn dập tiếng Anh là gì? | 2 | CHOÁNG NGỢP
+ENLIGHTEN | Động từ khai sáng, mở mang tâm trí trí tuệ cho người khác tiếng Anh là gì? | 3 | KHAI SÁNG
+REJUVENATE | Làm trẻ hóa lại làn da, hồi phục sức sống tươi mới tràn trề tiếng Anh là gì? | 3 | TRẺ HÓA
+DELIBERATE | Hành động có chủ đích cố ý tính toán trước chứ không phải ngẫu nhiên tiếng Anh là gì? | 3 | CỐ Ý, CÓ CHỦ ĐÍCH
+
+MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi tiếng Anh là gì? | 2 | TRÁNG LỆ, NGUY NGA
+INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai tiếng Anh là gì? | 2 | BẤT KHẢ CHIẾN BẠI
+LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối tiếng Anh là gì? | 3 | TỎA SÁNG, LẤP LÁNH
+NOSTALGIC | Cảm giác mang đầy hoài niệm nhung nhớ về những tháng năm xưa tiếng Anh là gì? | 2 | HOÀI NIỆM
+MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe tiếng Anh là gì? | 3 | DU DƯƠNG, ÊM DỊU
+
+WHISPER | Hành động nói thầm, thì thầm nho nhỏ vào tai người bên cạnh tiếng Anh là gì? | 1 | THÌ THẦM, NÓI THẦM
+GIGGLE | Cười khúc khích khúc khích e thẹn che miệng tiếng Anh là gì? | 2 | CƯỜI KHÚC KHÍCH
+BLINK | Chớp mắt một cái để làm ẩm mắt tiếng Anh là gì? | 1 | CHỚP MẮT
+NOD | Hành động gật đầu nhẹ để đồng ý tán thành ý kiến tiếng Anh là gì? | 1 | GẬT ĐẦU
+SHRUG | Hành động nhún hai vai tỏ vẻ không biết hoặc không quan tâm tiếng Anh là gì? | 2 | NHÚN VAI
+SWALLOW | Động tác nuốt ngụm nước hoặc nuốt thức ăn qua cổ họng tiếng Anh là gì? | 1 | NUỐT
+CHEW | Nhai kỹ thức ăn bằng răng hàm trước khi nuốt tiếng Anh là gì? | 1 | NHAI
+FLOAT | Nổi bồng bềnh lơ lửng trên mặt nước không bị chìm tiếng Anh là gì? | 1 | NỔI
+CRAWL | Động tác bò lê bò toài của em bé trên sàn nhà tiếng Anh là gì? | 1 | BÒ LÊ, BÒ
+STROLL | Hành động đi tản bộ thong dong thảnh thơi ngắm cảnh công viên tiếng Anh là gì? | 2 | TẢN BỘ, ĐI DẠO
+ABANDON | Từ bỏ hoặc ruồng bỏ ai đó tiếng Anh là gì? | 2 | DESERT
+ABSORB | Hấp thụ chất lỏng hoặc tiếp thu kiến thức tiếng Anh là gì? | 2 | SOAK UP
+ACCELERATE | Tăng tốc độ hoặc đẩy nhanh tiến độ tiếng Anh là gì? | 2 | SPEED UP
+ACKNOWLEDGE | Thừa nhận sự thật hoặc công nhận công lao tiếng Anh là gì? | 2 | ADMIT
+ACQUIRE | Giành được, thu được hoặc mua lại công ty tiếng Anh là gì? | 2 | OBTAIN
+ADAPT | Thích nghi với hoàn cảnh môi trường mới tiếng Anh là gì? | 2 | ADJUST
+ADMIRE | Ngưỡng mộ và khâm phục tài năng ai đó tiếng Anh là gì? | 1 | LOOK UP TO
+AFFECT | Gây ảnh hưởng hoặc tác động trực tiếp đến tiếng Anh là gì? | 2 | INFLUENCE
+AFFORD | Có đủ khả năng chi trả tiền bạc mua sắm tiếng Anh là gì? | 1
+AGGRAVATE | Làm trầm trọng thêm tình hình xấu tiếng Anh là gì? | 3 | WORSEN
+ALTER | Thay đổi hoặc sửa đổi một chút kích thước tiếng Anh là gì? | 2 | MODIFY
+AMUSE | Làm cho ai đó bật cười vui vẻ tiếng Anh là gì? | 2 | ENTERTAIN
+ANALYZE | Phân tích số liệu và dữ liệu chi tiết tiếng Anh là gì? | 2 | EXAMINE
+ANTICIPATE | Dự đoán trước và mong đợi điều sắp xảy ra tiếng Anh là gì? | 2 | FORESEE
+APOLOGIZE | Nói lời xin lỗi chân thành với ai đó tiếng Anh là gì? | 1 | SAY SORRY
+APPLAUD | Vỗ tay khen ngợi tán thưởng tiếng Anh là gì? | 2 | CLAP
+ARISE | Nảy sinh hoặc xuất hiện vấn đề bất ngờ tiếng Anh là gì? | 2 | OCCUR
+ARREST | Bắt giữ nghi phạm tội phạm tiếng Anh là gì? | 2 | APPREHEND
+ASCEND | Đi lên cao hoặc trèo lên bậc thang tiếng Anh là gì? | 3 | CLIMB
+ASSESS | Đánh giá mức độ hoặc thẩm định giá trị tiếng Anh là gì? | 2 | EVALUATE
+ASSIGN | Phân công nhiệm vụ hoặc giao bài tập tiếng Anh là gì? | 2 | ALLOT
+ASSUME | Giả định hoặc cho rằng điều gì là đúng tiếng Anh là gì? | 2 | PRESUME
+ATTACH | Đính kèm tệp tin hoặc gắn chặt vào tiếng Anh là gì? | 2 | APPEND
+ATTEMPT | Cố gắng hoặc nỗ lực thử làm điều khó tiếng Anh là gì? | 2 | TRY
+ATTRACT | Thu hút sự chú ý hoặc lôi cuốn ánh nhìn tiếng Anh là gì? | 1 | DRAW
+AVOID | Tránh né hoặc né tránh gặp mặt rắc rối tiếng Anh là gì? | 1 | SHUN
+BEG | Van xin hoặc cầu xin tha thứ tiếng Anh là gì? | 1 | PLEAD
+BELONG | Thuộc về sở hữu của một ai đó tiếng Anh là gì? | 1
+BEND | Uốn cong hoặc cúi gập người xuống tiếng Anh là gì? | 1 | FLEX
+BETRAY | Phản bội niềm tin hoặc phản quốc tiếng Anh là gì? | 2
+BOAST | Khoe khoang khoác lác về bản thân tiếng Anh là gì? | 2 | BRAG
+BOUNCE | Nảy lên tưng tưng như quả bóng tiếng Anh là gì? | 1 | REBOUND
+BRAKE | Đạp phanh hãm tốc độ xe dừng lại tiếng Anh là gì? | 1
+BRIBE | Đút lót hối lộ tiền bạc phi pháp tiếng Anh là gì? | 2
+BURY | Chôn cất thi thể hoặc chôn giấu dưới lòng đất tiếng Anh là gì? | 1 | INTER
+CALCULATE | Tính toán con số chính xác tiếng Anh là gì? | 2 | COMPUTE
+CAPTURE | Bắt giữ giam cầm hoặc ghi lại khoảnh khắc tiếng Anh là gì? | 2 | CATCH
+CEASE | Ngừng lại hoặc chấm dứt hoạt động tiếng Anh là gì? | 3 | STOP
+CIRCULATE | Lưu thông tuần hoàn trong huyết quản tiếng Anh là gì? | 2
+CLARIFY | Làm rõ và giải thích cặn kẽ khúc mắc tiếng Anh là gì? | 2 | EXPLAIN
+COLLIDE | Va chạm tông sầm vào nhau tiếng Anh là gì? | 2 | CRASH
+COMBINE | Kết hợp hoặc hoà trộn nhiều yếu tố tiếng Anh là gì? | 2 | MERGE
+COMMAND | Ra lệnh chỉ huy quân đội tiếng Anh là gì? | 2 | ORDER
+COMPEL | Bắt buộc hoặc cưỡng ép ai làm theo tiếng Anh là gì? | 3 | FORCE
+COMPETE | Cạnh tranh ganh đua tài năng tiếng Anh là gì? | 2 | VIE
+COMPLAIN | Phàn nàn kêu ca về chất lượng kém tiếng Anh là gì? | 1 | GRUMBLE
+CONCLUDE | Kết luận đúc rút ra bài học tiếng Anh là gì? | 2 | FINISH
+CONFESS | Thú nhận tội lỗi hoặc thú tội tiếng Anh là gì? | 2 | ADMIT
+CONFUSE | Làm cho bối rối hoang mang nhầm lẫn tiếng Anh là gì? | 2 | PUZZLE
+CONQUER | Chinh phục vùng đất hoặc chiến thắng nỗi sợ tiếng Anh là gì? | 2 | DEFEAT
+CONSENT | Đồng ý ưng thuận cho phép tiếng Anh là gì? | 2 | AGREE
+CONSERVE | Bảo tồn giữ gìn nguồn tài nguyên tiếng Anh là gì? | 2 | PRESERVE
+CONSIDER | Cân nhắc suy xét kỹ lưỡng tiếng Anh là gì? | 2 | WEIGH
+CONSTRUCT | Xây dựng công trình nhà cửa cầu đường tiếng Anh là gì? | 2 | BUILD
+CONSULT | Hỏi ý kiến tham khảo chuyên gia tiếng Anh là gì? | 2 | SEEK ADVICE
+CONSUME | Tiêu thụ năng lượng hoặc ăn uống hết tiếng Anh là gì? | 2 | USE UP
+CONTAIN | Chứa đựng bao gồm bên trong tiếng Anh là gì? | 1 | HOLD
+CONTRIBUTE | Đóng góp cống hiến công sức tiền của tiếng Anh là gì? | 2 | DONATE
+CONVINCE | Thuyết phục ai tin theo mình tiếng Anh là gì? | 2 | PERSUADE
+COOPERATE | Hợp tác chung tay làm việc tiếng Anh là gì? | 2 | COLLABORATE
+CRITICIZE | Chỉ trích phê bình khuyết điểm tiếng Anh là gì? | 2 | BLAME
+DAMAGE | Làm hư hại tổn thất đồ vật tài sản tiếng Anh là gì? | 1 | HARM
+DEBATE | Tranh luận biện luận một vấn đề mở tiếng Anh là gì? | 2 | DISCUSS
+DECAY | Mục nát hoặc sâu răng phân huỷ tiếng Anh là gì? | 2 | ROT
+DECLARE | Tuyên bố công khai trước mọi người tiếng Anh là gì? | 2 | ANNOUNCE
+DECORATE | Trang trí làm đẹp căn phòng tiếng Anh là gì? | 1 | ADORN
+DEDICATE | Cống hiến và tận tụy cả đời cho sự nghiệp tiếng Anh là gì? | 2 | DEVOTE
+DEFEND | Bảo vệ phòng thủ chống lại kẻ thù tiếng Anh là gì? | 1 | PROTECT
+DEFINE | Định nghĩa giải thích ý nghĩa từ ngữ tiếng Anh là gì? | 2
+DEPEND | Phụ thuộc dựa dẫm vào người khác tiếng Anh là gì? | 1 | RELY
+DEPRIVE | Tước đoạt quyền lợi của ai đó tiếng Anh là gì? | 3 | STRIP
+DESCRIBE | Mô tả miêu tả hình dáng cảnh vật tiếng Anh là gì? | 1 | PICTURE
+DESERVE | Xứng đáng nhận được phần thưởng tiếng Anh là gì? | 2 | MERIT
+DESTROY | Phá huỷ triệt phá tan hoang tiếng Anh là gì? | 1 | RUIN
+DETECT | Dò tìm phát hiện ra dấu vết tiếng Anh là gì? | 2 | DISCOVER
+DEVOTE | Dành hết tâm huyết cho việc gì tiếng Anh là gì? | 2 | DEDICATE
+DIAGNOSE | Chẩn đoán bệnh tình của bệnh nhân tiếng Anh là gì? | 2
+DIGEST | Tiêu hoá thức ăn trong dạ dày tiếng Anh là gì? | 2
+DIMINISH | Giảm bớt suy giảm dần đi tiếng Anh là gì? | 2 | DECREASE
+DISAPPOINT | Làm thất vọng không đạt kỳ vọng tiếng Anh là gì? | 2 | LET DOWN
+DISCLOSE | Tiết lộ vạch trần bí mật ra ngoài tiếng Anh là gì? | 3 | REVEAL
+DISMISS | Sa thải đuổi việc hoặc giải tán tiếng Anh là gì? | 2 | FIRE
+DISOBEY | Bất tuân không phục tùng mệnh lệnh tiếng Anh là gì? | 2 | DEFY
+DISPLAY | Trưng bày phô diễn cho mọi người xem tiếng Anh là gì? | 1 | EXHIBIT
+DISTINGUISH | Phân biệt nhận ra điểm khác nhau tiếng Anh là gì? | 2 | DIFFERENTIATE
+DISTRIBUTE | Phân phát chia đều cho mọi người tiếng Anh là gì? | 2 | HAND OUT
+DISTURB | Làm phiền quấy rầy sự yên tĩnh tiếng Anh là gì? | 2 | BOTHER
+DIVERT | Chuyển hướng làm trệch hướng đi tiếng Anh là gì? | 2 | REDIRECT
+DIVIDE | Chia rẽ chia nhỏ thành nhiều phần tiếng Anh là gì? | 1 | SPLIT
+DRAG | Kéo lê vật nặng trên mặt đất tiếng Anh là gì? | 1 | PULL
+DROWN | Chết đuối ngạt nước dưới sông tiếng Anh là gì? | 1
+DUPLICATE | Sao chép nhân bản thành hai bản y hệt tiếng Anh là gì? | 2 | COPY
+EDUCATE | Giáo dục rèn luyện dạy dỗ học sinh tiếng Anh là gì? | 1 | TEACH
+ELIMINATE | Loại bỏ trừ khử hoàn toàn tiếng Anh là gì? | 2 | REMOVE
+EMBRACE | Ôm chặt vào lòng hoặc cởi mở đón nhận tiếng Anh là gì? | 2 | HUG
+EMERGE | Nổi lên xuất hiện từ bóng tối tiếng Anh là gì? | 2 | APPEAR
+EMPHASIZE | Nhấn mạnh tầm quan trọng tiếng Anh là gì? | 2 | STRESS
+ENABLE | Cho phép tạo điều kiện có thể làm được tiếng Anh là gì? | 2 | ALLOW
+ENCOUNTER | Bắt gặp chạm trán tình cờ tiếng Anh là gì? | 2 | MEET
+ENDURE | Chịu đựng cam chịu gian khó tiếng Anh là gì? | 2 | BEAR
+ENJOY | Thưởng thức tận hưởng niềm vui tiếng Anh là gì? | 1 | RELISH
+ENTERTAIN | Giải trí chiêu đãi mua vui tiếng Anh là gì? | 1 | AMUSE
+ENVY | Ghen tị đố kỵ với may mắn của người khác tiếng Anh là gì? | 2 | BE JEALOUS
+EQUIP | Trang bị đầy đủ dụng cụ đồ nghề tiếng Anh là gì? | 2 | FURNISH
+ESTIMATE | Ước tính ước lượng chi phí tiếng Anh là gì? | 2 | GUESS
+EVAPORATE | Bay hơi bốc hơi thành thể khí tiếng Anh là gì? | 2
+EXAMINE | Khám xét kiểm tra soi xét kỹ tiếng Anh là gì? | 2 | INSPECT
+EXCLUDE | Loại trừ không tính vào danh sách tiếng Anh là gì? | 2 | LEAVE OUT
+EXCUSE | Tha thứ bỏ qua thứ lỗi tiếng Anh là gì? | 1 | FORGIVE
+EXHAUST | Làm kiệt sức mệt lử cạn kiệt tiếng Anh là gì? | 2 | DRAIN
+EXIST | Tồn tại hiện hữu trên đời tiếng Anh là gì? | 1 | LIVE
+EXPAND | Mở rộng diện tích bành trướng quy mô tiếng Anh là gì? | 2 | EXTEND
+EXPLODE | Phát nổ nổ tung dữ dội tiếng Anh là gì? | 1 | BURST
+EXPOSE | Phơi bày vạch trần ra ánh sáng tiếng Anh là gì? | 2 | UNCOVER
+EXTEND | Kéo dài thời hạn hoặc mở rộng thêm tiếng Anh là gì? | 2 | STRETCH
+EXTRACT | Chiết xuất hoặc nhổ răng ra ngoài tiếng Anh là gì? | 2 | PULL OUT
+FASCINATE | Mê hoặc cuốn hút kỳ lạ tiếng Anh là gì? | 2 | CAPTIVATE
+FASTEN | Cài chặt buộc chặt dây thừng tiếng Anh là gì? | 2 | TIE
+FLATTER | Nịnh nọt tâng bốc lấy lòng tiếng Anh là gì? | 2 | PRAISE
+FLEE | Tháo chạy chạy trốn nguy hiểm tiếng Anh là gì? | 2 | RUN AWAY
+FLOURISH | Phát triển thịnh vượng hưng thịnh tiếng Anh là gì? | 3 | THRIVE
+FORBID | Cấm đoán ngăn cấm không cho làm tiếng Anh là gì? | 2 | BAN
+FREEZE | Đóng băng đông cứng thành đá tiếng Anh là gì? | 1
+FRIGHTEN | Làm hoảng sợ khiếp sợ tiếng Anh là gì? | 1 | SCARE
+FULFILL | Hoàn thành trọn vẹn lời hứa nguyện vọng tiếng Anh là gì? | 2 | ACCOMPLISH
+GATHER | Tụ tập tụ họp lại một chỗ tiếng Anh là gì? | 1 | COLLECT
+GAZE | Nhìn chằm chằm say đắm ngắm nghía tiếng Anh là gì? | 2 | STARE
+GENERATE | Tạo ra phát ra nguồn điện năng lượng tiếng Anh là gì? | 2 | PRODUCE
+GLANCE | Liếc mắt nhìn thoáng qua một cái tiếng Anh là gì? | 2 | PEEK
+GOVERN | Cai trị lãnh đạo quản lý đất nước tiếng Anh là gì? | 2 | RULE
+GRAB | Túm lấy chộp lấy giật lấy nhanh tiếng Anh là gì? | 1 | SEIZE
+GREET | Chào hỏi đón chào khách đến nhà tiếng Anh là gì? | 1 | WELCOME
+GRUNT | Càu nhàu cằn nhằn làu bàu tiếng Anh là gì? | 2
+HARM | Gây hại tổn thương đau đớn tiếng Anh là gì? | 1 | DAMAGE
+HARVEST | Thu hoạch mùa màng gặt lúa hái quả tiếng Anh là gì? | 1 | REAP
+HEAL | Hàn gắn chữa lành vết thương tiếng Anh là gì? | 1 | CURE
+HINT | Gợi ý ra dấu ám chỉ ngầm tiếng Anh là gì? | 1 | SUGGEST
+HONOR | Tôn vinh kính trọng vinh danh tiếng Anh là gì? | 1 | RESPECT
+HUNT | Săn bắn thú rừng săn tìm con mồi tiếng Anh là gì? | 1 | CHASE
+IDENTIFY | Nhận dạng xác minh danh tính tiếng Anh là gì? | 2 | RECOGNIZE
+IGNORE | Phớt lờ làm ngơ không đoái hoài tiếng Anh là gì? | 1 | DISREGARD
+ILLUSTRATE | Minh hoạ giải thích bằng tranh ảnh tiếng Anh là gì? | 2 | DEPICT
+IMITATE | Bắt chước nhại lại hành động tiếng Anh là gì? | 2 | MIMIC
+IMPLY | Ngụ ý hàm ý bóng gió tiếng Anh là gì? | 2 | HINT
+IMPORT | Nhập khẩu hàng hoá từ nước ngoài về tiếng Anh là gì? | 1
+IMPOSE | Áp đặt áp thuế luật lệ lên ai tiếng Anh là gì? | 2
+IMPRESS | Gây ấn tượng sâu sắc trong lòng tiếng Anh là gì? | 1
+INCLUDE | Bao gồm tính gộp cả vào trong tiếng Anh là gì? | 1 | CONTAIN
+INDICATE | Chỉ ra biểu thị dấu hiệu cho thấy tiếng Anh là gì? | 2 | SHOW
+INFORM | Thông báo báo tin cho ai biết tiếng Anh là gì? | 1 | NOTIFY
+INHERIT | Thừa kế tài sản hưởng gia tài tiếng Anh là gì? | 2
+INJURE | Làm bị thương tổn thương thân thể tiếng Anh là gì? | 1 | HURT
+INSIST | Khăng khăng nài nỉ kiên quyết tiếng Anh là gì? | 2
+INSPIRE | Truyền cảm hứng khơi nguồn sáng tạo tiếng Anh là gì? | 2 | MOTIVATE
+INSTRUCT | Chỉ dẫn hướng dẫn chi tiết các bước tiếng Anh là gì? | 2 | GUIDE
+INSULT | Lăng mạ sỉ nhục xúc phạm danh dự tiếng Anh là gì? | 2 | OFFEND
+INTEND | Có ý định dự định thực hiện tiếng Anh là gì? | 1 | PLAN
+INTERFERE | Can thiệp xen vào chuyện người khác tiếng Anh là gì? | 2 | MEDDLE
+INTERRUPT | Ngắt lời xen ngang phá vỡ tiếng Anh là gì? | 1 | CUT IN
+INVESTIGATE | Điều tra truy xét vụ án tiếng Anh là gì? | 2 | PROBE
+INVOLVE | Liên quan dính líu bao hàm tiếng Anh là gì? | 2 | ENGAGE
+IRRITATE | Làm phát cáu khó chịu ngứa ngáy tiếng Anh là gì? | 2 | ANNOY
+ISOLATE | Cô lập cách ly một mình tiếng Anh là gì? | 2 | SEPARATE
+KNEEL | Quỳ gối xuống đất cầu xin tiếng Anh là gì? | 1
+KNIT | Đan len bằng que đan tiếng Anh là gì? | 1
+KNOCK | Gõ cốc cốc vào cửa tiếng Anh là gì? | 1 | RAP
+LEAN | Tựa vào dựa vào nghiêng người tiếng Anh là gì? | 1
+LOCATE | Định vị xác định vị trí nằm ở đâu tiếng Anh là gì? | 2 | FIND
+LOOSEN | Nới lỏng cởi bớt dây buộc thắt chặt tiếng Anh là gì? | 2 | UNTIE
+MANAGE | Quản lý xoay xở giải quyết thành công tiếng Anh là gì? | 1 | HANDLE
+MARRY | Kết hôn lấy nhau làm vợ chồng tiếng Anh là gì? | 1 | WED
+MEASURE | Đo đạc kích thước chiều dài cân nặng tiếng Anh là gì? | 1 | GAUGE
+MELT | Tan chảy ra dưới sức nóng mặt trời tiếng Anh là gì? | 1 | THAW
+MEMORIZE | Học thuộc lòng ghi nhớ vào đầu tiếng Anh là gì? | 1 | LEARN BY HEART
+MEND | Sửa chữa vá víu đồ rách hỏng tiếng Anh là gì? | 2 | REPAIR
+MENTION | Đề cập nhắc đến ai trong cuộc trò chuyện tiếng Anh là gì? | 1 | BRING UP
+MIGRATE | Di cư tránh rét của loài chim tiếng Anh là gì? | 2
+MISLEAD | Đưa ra thông tin sai lệch dẫn dắt lừa dối tiếng Anh là gì? | 2 | DECEIVE
+MODIFY | Sửa đổi điều chỉnh cho phù hợp tiếng Anh là gì? | 2 | ALTER
+MOTIVATE | Thúc đẩy tạo động lực mạnh mẽ tiếng Anh là gì? | 2 | INSPIRE
+MOURN | Thương tiếc đau buồn để tang tiếng Anh là gì? | 2 | GRIEVE
+MULTIPLY | Nhân lên gấp bội sinh sôi tiếng Anh là gì? | 2
+NEGLECT | Bỏ bê sao nhãng không chăm sóc tiếng Anh là gì? | 2 | IGNORE
+NOTICE | Để ý nhận thấy chú ý đến tiếng Anh là gì? | 1 | SPOT
+OBEY | Vâng lời nghe lời tuân theo tiếng Anh là gì? | 1 | COMPLY
+OBSERVE | Quan sát theo dõi chăm chú tiếng Anh là gì? | 2 | WATCH
+OBTAIN | Đạt được giành lấy được tiếng Anh là gì? | 2 | GET
+OCCUPY | Chiếm đóng chiếm giữ không gian tiếng Anh là gì? | 2 | TAKE UP
+OFFEND | Xúc phạm làm mất lòng ai tiếng Anh là gì? | 2 | INSULT
+OPERATE | Vận hành máy móc hoặc phẫu thuật tiếng Anh là gì? | 2 | RUN
+OPPOSE | Đối kháng kịch liệt phản đối tiếng Anh là gì? | 2 | RESIST
+ORGANIZE | Tổ chức sắp xếp trật tự bài bản tiếng Anh là gì? | 1 | ARRANGE
+OVERCOME | Vượt qua thử thách nghịch cảnh tiếng Anh là gì? | 2 | CONQUER
+OVERLOOK | Bỏ qua tha thứ hoặc nhìn từ trên cao xuống tiếng Anh là gì? | 2 | MISS
+OWE | Mắc nợ mang ơn ai điều gì tiếng Anh là gì? | 1 | BE IN DEBT
+PARTICIPATE | Tham gia vào một sự kiện tiếng Anh là gì? | 2 | JOIN IN
+PERCEIVE | Nhận thức cảm nhận thấu hiểu tiếng Anh là gì? | 3 | SENSE
+PERISH | Diệt vong chết chóc biến mất tiếng Anh là gì? | 3 | DIE
+PINCH | Véo véo nhéo vào da thịt tiếng Anh là gì? | 1 | NIP
+POUR | Rót nước đổ nước vào bình tiếng Anh là gì? | 1 | SPILL
+PRAISE | Tán dương ca ngợi khen ngợi hết lời tiếng Anh là gì? | 1 | COMMEND
+PRAY | Cầu nguyện chắp tay xin bình an tiếng Anh là gì? | 1 | WISH
+PREDICT | Dự đoán trước tương lai tiếng Anh là gì? | 2 | FORECAST
+PREFER | Thích hơn ưu tiên hơn tiếng Anh là gì? | 1 | FAVOR
+PRESERVE | Bảo quản gìn giữ nguyên vẹn tiếng Anh là gì? | 2 | KEEP
+PRETEND | Giả vờ đóng kịch như thật tiếng Anh là gì? | 1 | FAKE
+PREVENT | Ngăn chặn phòng ngừa rủi ro tiếng Anh là gì? | 2 | STOP
+PROCEED | Tiếp tục tiến hành bước kế tiếp tiếng Anh là gì? | 2 | GO ON
+PRODUCE | Sản xuất chế tạo ra hàng hoá tiếng Anh là gì? | 1 | MAKE
+PROHIBIT | Nghiêm cấm cấm đoán ngặt nghèo tiếng Anh là gì? | 2 | FORBID
+PROMOTE | Thăng chức hoặc quảng bá thương hiệu tiếng Anh là gì? | 2 | ADVANCE
+PROPOSE | Cầu hôn hoặc đưa ra đề xuất kiến nghị tiếng Anh là gì? | 2 | SUGGEST
+PROVE | Chứng minh tính đúng đắn tiếng Anh là gì? | 2 | VERIFY
+PROVIDE | Cung cấp tiếp tế đồ dùng lương thực tiếng Anh là gì? | 1 | SUPPLY
+PUBLISH | Xuất bản sách hoặc công bố công khai tiếng Anh là gì? | 2 | RELEASE
+PUNISH | Xử phạt trừng trị răn đe tiếng Anh là gì? | 1 | PENALIZE
+PURSUE | Theo đuổi ước mơ đam mê tiếng Anh là gì? | 2 | CHASE
+QUARREL | Cãi cọ xích mích lời qua tiếng lại tiếng Anh là gì? | 2 | ARGUE
+QUIT | Từ bỏ bỏ cuộc từ chức tiếng Anh là gì? | 1 | GIVE UP
+REACH | Vươn tới với tới hoặc chạm tới đích tiếng Anh là gì? | 1 | ATTAIN
+REACT | Phản ứng lại trước tình huống tiếng Anh là gì? | 1 | RESPOND
+RECOGNIZE | Nhận ra người quen sau nhiều năm tiếng Anh là gì? | 1 | IDENTIFY
+RECOMMEND | Tiến cử khuyên dùng giới thiệu tiếng Anh là gì? | 2 | ADVISE
+REDUCE | Cắt giảm hạ bớt chi phí tiếng Anh là gì? | 1 | LOWER
+REFLECT | Phản chiếu hình ảnh hoặc ngẫm nghĩ suy ngẫm tiếng Anh là gì? | 2 | MIRROR
+REGRET | Hối hận tiếc nuối những gì đã qua tiếng Anh là gì? | 1 | LAMENT
+REJECT | Bác bỏ từ chối thẳng thừng tiếng Anh là gì? | 2 | TURN DOWN
+RELEASE | Phóng thích thả tự do hoặc phát hành bài hát tiếng Anh là gì? | 2 | FREE
+RELY | Dựa dẫm tin cậy trông cậy vào tiếng Anh là gì? | 1 | DEPEND
+REMAIN | Còn lại giữ nguyên trạng thái cũ tiếng Anh là gì? | 2 | STAY
+REMIND | Nhắc nhở nhắc cho nhớ tiếng Anh là gì? | 1 | PROMPT
+REPLACE | Thay thế vật cũ bằng cái mới tiếng Anh là gì? | 1 | SUBSTITUTE
+RESCUE | Giải cứu cứu hộ người bị nạn tiếng Anh là gì? | 1 | SAVE
+RESIST | Kháng cự chống lại cám dỗ tiếng Anh là gì? | 2 | OPPOSE
+RESOLVE | Giải quyết dứt điểm mâu thuẫn tiếng Anh là gì? | 2 | SETTLE
+RESTRICT | Giới hạn thắt chặt hạn chế phạm vi tiếng Anh là gì? | 2 | LIMIT
+REVEAL | Bật mí hé lộ sự thật bí ẩn tiếng Anh là gì? | 2 | DISCLOSE
+REVENGE | Báo thù trả thù mối hận tiếng Anh là gì? | 2 | AVENGE
+REVERSE | Đảo ngược lùi xe quay ngược lại tiếng Anh là gì? | 2 | INVERT
+REWARD | Khen thưởng thưởng tiền cho công lao tiếng Anh là gì? | 1 | PRIZE
+ROB | Cướp giật trấn lột tài sản tiếng Anh là gì? | 1 | MUG
+ROTATE | Quay tròn xoay vòng quanh trục tiếng Anh là gì? | 2 | SPIN
+RUB | Xoa bóp chà xát cọ xát tiếng Anh là gì? | 1 | SCRUB
+SATISFY | Làm hài lòng thoả mãn yêu cầu tiếng Anh là gì? | 2 | PLEASE
+SCARE | Làm cho sợ hãi hết hồn tiếng Anh là gì? | 1 | FRIGHTEN
+SCATTER | Rải rác vương vãi khắp nơi tiếng Anh là gì? | 2 | DISPERSE
+SCOLD | La mắng quở trách đứa trẻ tiếng Anh là gì? | 1 | CHIDE
+SCRATCH | Cào xước gãi ngứa cào cấu tiếng Anh là gì? | 1 | CLAW
+SCREAM | Hét to gào thét thất thanh tiếng Anh là gì? | 1 | SHOUT
+SEEK | Tìm kiếm kiếm tìm cơ hội tiếng Anh là gì? | 2 | SEARCH
+SELECT | Chọn lọc kỹ càng lựa chọn tiếng Anh là gì? | 1 | CHOOSE
+SEPARATE | Tách rời phân chia cách ly tiếng Anh là gì? | 1 | DIVIDE
+SERVE | Phục vụ bưng bê dọn món tiếng Anh là gì? | 1 | WAIT ON
+SETTLE | Định cư sinh sống ổn định hoặc hoà giải tiếng Anh là gì? | 2
+SHIVER | Rùng mình run rẩy vì rét tiếng Anh là gì? | 2 | TREMBLE
+SHRINK | Co lại rút bớt vải sau khi giặt tiếng Anh là gì? | 2 | CONTRACT
+SLAP | Tát bạt tai vào má tiếng Anh là gì? | 1 | SMACK
+SLIDE | Trượt dài trên sàn trơn trượt tuyết tiếng Anh là gì? | 1 | GLIDE
+SLIP | Trượt chân ngã trượt ngã tiếng Anh là gì? | 1 | TRIP
+SMASH | Đập vỡ tan tành thành từng mảnh tiếng Anh là gì? | 2 | BREAK
+SOAK | Ngâm ướt sũng trong chậu nước tiếng Anh là gì? | 2 | STEEP
+SOLVE | Giải quyết bài toán tháo gỡ vấn đề tiếng Anh là gì? | 1 | RESOLVE
+SPARE | Để dành tiết kiệm hoặc tha mạng cho tiếng Anh là gì? | 2 | SAVE
+SPARKLE | Lấp lánh toả sáng lóng lánh tiếng Anh là gì? | 1 | GLITTER
+SPILL | Đổ tràn làm sánh nước canh ra bàn tiếng Anh là gì? | 1 | POUR
+SPIN | Xoay tít quay mòng mòng tròn vo tiếng Anh là gì? | 1 | ROTATE
+SPIT | Nhổ nước bọt khạc nhổ tiếng Anh là gì? | 1
+SPLIT | Chẻ đôi nứt toác chia rẽ tiếng Anh là gì? | 1 | DIVIDE
+SPOIL | Làm hư hỏng thức ăn ôi thiu hoặc nuông chiều hư tiếng Anh là gì? | 2 | RUIN
+SPREAD | Lan truyền lan toả lan rộng phết bơ tiếng Anh là gì? | 1 | EXPAND
+SQUEEZE | Vắt chanh bóp chặt ép chặt tiếng Anh là gì? | 1 | PRESS
+STARE | Nhìn chằm chằm không chớp mắt tiếng Anh là gì? | 1 | GAZE
+STEAL | Ăn cắp lấy trộm lén lút tiếng Anh là gì? | 1 | THIEVE
+STIR | Khuấy đều thìa cà phê đánh tan tiếng Anh là gì? | 1 | MIX
+STRUGGLE | Vật lộn chật vật đấu tranh gian khổ tiếng Anh là gì? | 2 | FIGHT
+STUMBLE | Vấp ngã vấp chân loạng choạng tiếng Anh là gì? | 2 | TRIP
+SUBMIT | Nộp bài nộp hồ sơ đệ trình tiếng Anh là gì? | 1 | HAND IN
+SUFFER | Chịu đựng đau khổ gánh chịu bệnh tật tiếng Anh là gì? | 1 | ENDURE
+SUGGEST | Đề xuất gợi ý phương án hay tiếng Anh là gì? | 1 | PROPOSE
+SURRENDER | Đầu hàng buông súng chịu thua tiếng Anh là gì? | 2 | GIVE IN
+SURVIVE | Sống sót tồn tại sau thảm hoạ tiếng Anh là gì? | 1 | OUTLIVE
+SUSPECT | Nghi ngờ hoài nghi ai phạm tội tiếng Anh là gì? | 2 | DOUBT
+SWEAR | Thề thốt tuyên thệ hoặc chửi bậy tiếng Anh là gì? | 1 | VOW
+SWEEP | Quét sạch rác bụi trên nền tiếng Anh là gì? | 1 | BRUSH
+SWELL | Sưng vù phồng to tấy đỏ tiếng Anh là gì? | 2 | BLOW UP
+TEASE | Trêu chọc chọc ghẹo đùa cợt tiếng Anh là gì? | 1 | TAUNT
+TEMPT | Cám dỗ quyến rũ xúi giục tiếng Anh là gì? | 2 | LURE
+TERRIFY | Làm cho khiếp đảm rụng rời sợ hãi tiếng Anh là gì? | 2 | FRIGHTEN
+THREATEN | Đe dọa uy hiếp tinh thần tiếng Anh là gì? | 2 | MENACE
+THRIVE | Phát triển mạnh mẽ tươi tốt mau lớn tiếng Anh là gì? | 2 | FLOURISH
+TICKLE | Cù lét chọc lét làm buồn cười tiếng Anh là gì? | 1
+TIGHTEN | Siết chặt vặn chặt ốc vít tiếng Anh là gì? | 2 | FASTEN
+TOLERATE | Khoan dung tha thứ chịu đựng tiếng Anh là gì? | 2 | ENDURE
+TOSS | Tung hất nhẹ hất đồng xu tiếng Anh là gì? | 1 | FLIP
+TRACE | Lần theo dấu vết truy tìm tiếng Anh là gì? | 2 | TRACK
+TRANSMIT | Truyền phát tín hiệu sóng truyền hình tiếng Anh là gì? | 2 | BROADCAST
+TRAP | Bẫy sập giăng bẫy bắt giữ tiếng Anh là gì? | 1 | CATCH
+TREMBLE | Run rẩy lập cập vì sợ hãi tiếng Anh là gì? | 2 | SHAKE
+TRUST | Tin tưởng đặt niềm tin cậy tiếng Anh là gì? | 1 | BELIEVE
+TWIST | Vặn xoắn trẹo khớp bóp méo tiếng Anh là gì? | 1 | WRING
+UNDERGO | Trải qua phẫu thuật hoặc trải nghiệm tiếng Anh là gì? | 2 | EXPERIENCE
+UNIFY | Thống nhất đoàn kết một lòng tiếng Anh là gì? | 2 | UNITE
+UNLOCK | Mở khoá cửa bằng chìa tiếng Anh là gì? | 1 | OPEN
+URGE | Thúc giục hối thúc khuyên bảo khẩn thiết tiếng Anh là gì? | 2 | PUSH
+VANISH | Biến mất không để lại dấu vết tiếng Anh là gì? | 2 | DISAPPEAR
+VARY | Thay đổi biến thiên đa dạng tiếng Anh là gì? | 2 | CHANGE
+WARN | Cảnh báo báo trước nguy hiểm tiếng Anh là gì? | 1 | CAUTION
+WEAKEN | Làm suy yếu yếu dần đi tiếng Anh là gì? | 2 | LESSEN
+WEEP | Khóc nức nở tuôn rơi nước mắt tiếng Anh là gì? | 1 | CRY
+WEIGH | Cân đo đong đếm trọng lượng tiếng Anh là gì? | 1 | MEASURE
+WIDEN | Mở rộng con đường thêm to tiếng Anh là gì? | 2 | EXPAND
+WITHDRAW | Rút tiền mặt khỏi cây ATM hoặc rút quân tiếng Anh là gì? | 2 | RETRACT
+WITNESS | Chứng kiến tận mắt vụ việc tiếng Anh là gì? | 2 | SEE
+WORRY | Lo lắng bồn chồn đứng ngồi không yên tiếng Anh là gì? | 1 | FRET
+WRECK | Làm đắm tàu phá nát vụn xe tiếng Anh là gì? | 2 | DESTROY
+YAWN | Ngáp ngủ chảy nước mắt tiếng Anh là gì? | 1
+YELL | La hét gào to vào mặt tiếng Anh là gì? | 1 | SCREAM
+YIELD | Nhường đường hoặc mang lại sản lượng cao tiếng Anh là gì? | 2 | PRODUCE
+ABOLISH | Bãi bỏ một đạo luật hoặc chế độ cũ tiếng Anh là gì? | 3 | BÃI BỎ, HỦY BỎ
+ACCOMPANY | Đồng hành hoặc đi cùng ai đó tiếng Anh là gì? | 2 | ĐỒNG HÀNH, ĐI CÙNG
+ACTIVATE | Kích hoạt chức năng hoặc thiết bị tiếng Anh là gì? | 2 | KÍCH HOẠT
+AMPLIFY | Khuếch đại âm thanh hoặc tín hiệu tiếng Anh là gì? | 2 | KHUẾCH ĐẠI
+APPOINT | Bổ nhiệm vào một chức vụ tiếng Anh là gì? | 2 | BỔ NHIỆM
+APPREHEND | Bắt giữ kẻ phạm tội hoặc lĩnh hội tiếng Anh là gì? | 3 | BẮT GIỮ
+APPROACH | Tiếp cận hoặc đến gần một mục tiêu tiếng Anh là gì? | 2 | TIẾP CẬN, ĐẾN GẦN
+ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người tiếng Anh là gì? | 2 | LẮP RÁP, TẬP HỢP
+AUTHORIZE | Cấp phép hoặc ủy quyền chính thức tiếng Anh là gì? | 2 | ỦY QUYỀN, CẤP PHÉP
+BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì tiếng Anh là gì? | 3 | HOANG MANG, BỐI RỐI
+BLEND | Trộn lẫn hòa quyện nhiều thành phần tiếng Anh là gì? | 2 | TRỘN, HÒA QUYỆN, MIX
+BROADEN | Mở rộng tầm mắt hoặc kiến thức tiếng Anh là gì? | 2 | MỞ RỘNG
+CAPTIVATE | Thu hút mê hoặc lòng người tiếng Anh là gì? | 3 | MÊ HOẶC, CUỐN HÚT
+CLASSIFY | Phân loại vào các nhóm tiếng Anh là gì? | 2 | PHÂN LOẠI
+COLLAPSE | Sụp đổ đổ sập xuống tiếng Anh là gì? | 2 | SỤP ĐỔ, ĐỔ SẬP
+COMMEMORATE | Tưởng niệm hoặc kỷ niệm sự kiện lịch sử tiếng Anh là gì? | 3 | TƯỞNG NIỆM
+COMMENCE | Bắt đầu khởi đầu một buổi lễ tiếng Anh là gì? | 3 | BẮT ĐẦU, KHỞI ĐẦU
+COMPENSATE | Đền bù bồi thường thiệt hại tiếng Anh là gì? | 2 | ĐỀN BÙ, BỒI THƯỜNG
+COMPILE | Biên soạn thu thập tài liệu tiếng Anh là gì? | 2 | BIÊN SOẠN
+COMPLIMENT | Khen ngợi khen tặng ai đó tiếng Anh là gì? | 2 | KHEN NGỢI, LỜI KHEN
+COMPREHEND | Lĩnh hội hiểu thấu đáo vấn đề tiếng Anh là gì? | 3 | HIỂU THẤU, LĨNH HỘI
+CONCEAL | Che giấu giấu kín điều gì tiếng Anh là gì? | 3 | CHE GIẤU, GIẤU KÍN
+CONDENSE | Ngưng tụ hoặc cô đọng súc tích tiếng Anh là gì? | 3 | NGƯNG TỤ, CÔ ĐỌNG
+CONTRADICT | Mâu thuẫn cãi lại ý kiến trước tiếng Anh là gì? | 3 | MÂU THUẪN, TRÁI NGƯỢC
+CONVERT | Chuyển đổi tiền tệ hoặc định dạng tiếng Anh là gì? | 2 | CHUYỂN ĐỔI
+COORDINATE | Điều phối sắp xếp công việc nhịp nhàng tiếng Anh là gì? | 2 | ĐIỀU PHỐI
+CULTIVATE | Canh tác gieo trồng hoặc vun đắp mối quan hệ tiếng Anh là gì? | 2 | VUN ĐẮP, CANH TÁC
+DECIPHER | Giải mã mật mã hoặc chữ viết cổ tiếng Anh là gì? | 3 | GIẢI MÃ, DECODE
+DEDUCE | Suy luận tìm ra kết luận từ bằng chứng tiếng Anh là gì? | 3 | SUY LUẬN
+DELAY | Trì hoãn lùi lại thời gian tiếng Anh là gì? | 1 | TRÌ HOÃN, HOÃN LẠI
+DEMOLISH | Phá hủy đánh sập tòa nhà cũ tiếng Anh là gì? | 2 | PHÁ HỦY, ĐÁNH SẬP
+DENOUNCE | Lên án tố cáo hành vi sai trái tiếng Anh là gì? | 3 | LÊN ÁN, TỐ CÁO
+DEPRECIATE | Giảm giá trị mất giá theo thời gian tiếng Anh là gì? | 3 | MẤT GIÁ, GIẢM GIÁ TRỊ
+DESCEND | Đi xuống hạ xuống từ trên cao tiếng Anh là gì? | 2 | ĐI XUỐNG, HẠ XUỐNG
+DESPISE | Khinh thường coi khinh ai đó tiếng Anh là gì? | 3 | KHINH THƯỜNG, COI KHINH
+DETACH | Tháo rời tách rời một bộ phận tiếng Anh là gì? | 2 | THÁO RỜI, TÁCH RỜI
+DEVOUR | Ăn ngấu nghiến nuốt trọn thức ăn tiếng Anh là gì? | 3 | ĂN NGẤU NGHIẾN
+DISCARD | Vứt bỏ loại bỏ thứ không dùng nữa tiếng Anh là gì? | 2 | VỨT BỎ, LOẠI BỎ
+DISPERSE | Giải tán tản mát ra bốn phương tiếng Anh là gì? | 3 | GIẢI TÁN, TẢN MÁT
+DOMINATE | Thống trị chiếm ưu thế tuyệt đối tiếng Anh là gì? | 2 | THỐNG TRỊ, ÁP ĐẢO
+ELABORATE | Giải thích kỹ càng tỉ mỉ thêm tiếng Anh là gì? | 3 | GIẢI THÍCH CHI TIẾT
+EMBARK | Lên tàu hoặc dấn thân khởi đầu hành trình tiếng Anh là gì? | 3 | DẤN THÂN, KHỞI HÀNH
+EMIT | Phát ra khí thải hoặc ánh sáng tiếng Anh là gì? | 2 | PHÁT RA, TỎA RA
+ENDORSE | Xác nhận ủng hộ công khai tiếng Anh là gì? | 2 | ỦNG HỘ, TÁN ĐỒNG
+ENRICH | Làm giàu thêm kiến thức tâm hồn tiếng Anh là gì? | 2 | LÀM GIÀU
+ENROLL | Đăng ký ghi danh vào khóa học tiếng Anh là gì? | 2 | GHI DANH, ĐĂNG KÝ
+ERADICATE | Xóa bỏ triệt để tiêu diệt tận gốc tiếng Anh là gì? | 3 | XÓA SỔ, TRIỆT TIÊU
+ERUPT | Phun trào dữ dội như nham thạch tiếng Anh là gì? | 2 | PHUN TRÀO
+ESCALATE | Leo thang gia tăng căng thẳng tiếng Anh là gì? | 3 | LEO THANG
+ESTEEM | Kính trọng tôn kính người có đức tiếng Anh là gì? | 3 | TÔN TRỌNG, KÍNH TRỌNG
+EVALUATE | Thẩm định đánh giá năng lực tiếng Anh là gì? | 2 | ĐÁNH GIÁ, THẨM ĐỊNH
+EXCEED | Vượt quá giới hạn cho phép tiếng Anh là gì? | 2 | VƯỢT QUÁ
+EXECUTE | Thi hành mệnh lệnh hoặc thực thi kế hoạch tiếng Anh là gì? | 2 | THỰC THI, THI HÀNH
+EXERT | Vận dụng dốc toàn bộ sức lực tiếng Anh là gì? | 3 | DỐC SỨC, VẬN DỤNG
+EXPLOIT | Khai thác tài nguyên hoặc bóc lột tiếng Anh là gì? | 2 | KHAI THÁC, BÓC LỘT
+EXPORT | Xuất khẩu hàng hóa ra nước ngoài tiếng Anh là gì? | 1 | XUẤT KHẨU
+EXTINGUISH | Dập tắt ngọn lửa đang cháy tiếng Anh là gì? | 2 | DẬP TẮT, DẬP LỬA
+FALSIFY | Làm giả tài liệu chứng từ tiếng Anh là gì? | 3 | LÀM GIẢ
+FORGIVE | Tha thứ bỏ qua lỗi lầm tiếng Anh là gì? | 1 | THA THỨ
+FORSAKE | Rời bỏ buông bỏ người thân yêu tiếng Anh là gì? | 3 | RỜI BỎ, TỪ BỎ
+FRUSTRATE | Làm bực bội nản lòng tiếng Anh là gì? | 2 | LÀM NẢN LÒNG, BỰC BỘI
+GLIDE | Lướt nhẹ nhàng êm ái trên không tiếng Anh là gì? | 2 | LƯỚT ĐI, LƯỚT NHẸ
+GLOW | Phát sáng rực rỡ lấp lánh trong đêm tiếng Anh là gì? | 1 | PHÁT SÁNG, TỎA SÁNG
+GRAPPLE | Vật lộn giằng co với vấn đề khó tiếng Anh là gì? | 3 | VẬT LỘN, GIẰNG CO
+GRASP | Nắm chặt chộp lấy hoặc hiểu thấu tiếng Anh là gì? | 2 | NẮM CHẶT, HIỂU THẤU
+GRIEVE | Đau buồn thương tiếc mất mát tiếng Anh là gì? | 2 | ĐAU BUỒN, TIẾC THƯƠNG
+GROWL | Gầm gừ tiếng gầm của dã thú tiếng Anh là gì? | 1 | GẦM GỪ, TIẾNG GẦM
+HALT | Dừng lại tạm ngừng chuyển động tiếng Anh là gì? | 2 | DỪNG LẠI, TẠM DỪNG
+HOVER | Bay lơ lửng một chỗ trên không tiếng Anh là gì? | 2 | BAY LƠ LỬNG
+IMMOBILIZE | Làm bất động giữ chặt không cho cử động tiếng Anh là gì? | 3 | LÀM BẤT ĐỘNG
+INCLINE | Nghiêng người hoặc có chiều hướng nghiêng về tiếng Anh là gì? | 2 | NGHIÊNG VỀ
+INDULGE | Nuông chiều đam mê chiều theo sở thích tiếng Anh là gì? | 3 | NUÔNG CHIỀU
+INHIBIT | Kìm hãm ngăn chặn sự phát triển tiếng Anh là gì? | 3 | KÌM HÃM, NGĂN CHẶN
+INITIATE | Khởi xướng đề xướng phong trào tiếng Anh là gì? | 2 | KHỞI XƯỚNG
+INQUIRE | Hỏi thăm dò xét thông tin tiếng Anh là gì? | 2 | HỎI THĂM, DÒ HỎI
+INSPECT | Thanh tra kiểm tra kỹ lưỡng tiếng Anh là gì? | 2 | THANH TRA, KIỂM TRA
+INSTILL | Truyền dẫn thấm nhuần tư tưởng đạo đức tiếng Anh là gì? | 3 | THẤM NHUẦN, TRUYỀN DẪN
+INTEGRATE | Hội nhập tích hợp gắn kết tiếng Anh là gì? | 2 | TÍCH HỢP, HỘI NHẬP
+INTERCEPT | Chặn đứng đánh chặn giữa đường tiếng Anh là gì? | 3 | ĐÁNH CHẶN, CHẶN LẠI
+INTERPRET | Diễn giải giải nghĩa thông điệp tiếng Anh là gì? | 2 | DIỄN GIẢI, GIẢI THÍCH
+INTRUDE | Xâm nhập đường đột không mời mà đến tiếng Anh là gì? | 3 | XÂM NHẬP
+INVADE | Xâm lăng xâm chiếm lãnh thổ tiếng Anh là gì? | 2 | XÂM LĂNG, XÂM CHIẾM
+INVOKE | Cầu viện viện dẫn điều luật tiếng Anh là gì? | 3 | VIỆN DẪN, CẦU NGUYỆN
+LAMENT | Than thở khóc thương tiếc nuối tiếng Anh là gì? | 3 | THAN THỞ, TIẾC THƯƠNG
+LAUNCH | Phóng tên lửa hoặc ra mắt sản phẩm tiếng Anh là gì? | 1 | PHÓNG, RA MẮT
+LIBERATE | Giải phóng trả tự do cho tù nhân tiếng Anh là gì? | 2 | GIẢI PHÓNG
+LINGER | Nấn ná dùng dằng chưa muốn rời đi tiếng Anh là gì? | 3 | NẤN NÁ, DÙNG DẰNG
+MAGNIFY | Phóng đại tăng kích thước hình ảnh tiếng Anh là gì? | 2 | PHÓNG ĐẠI, PHÓNG TO
+MANEUVER | Điều động chuyển hướng khéo léo tiếng Anh là gì? | 3 | ĐIỀU ĐỘNG, XOAY XỞ
+MARVEL | Kinh ngạc thán phục trước kỳ quan tiếng Anh là gì? | 2 | KINH NGẠC, THÁN PHỤC
+MEDIATE | Làm trung gian hòa giải tranh chấp tiếng Anh là gì? | 3 | HÒA GIẢI, LÀM TRUNG GIAN
+MIMIC | Bắt chước nhại lại giọng nói tiếng Anh là gì? | 2 | BẮT CHƯỚC, NHẠI GIỌNG
+MINGLE | Hòa nhập giao lưu trong bữa tiệc tiếng Anh là gì? | 2 | HÒA NHẬP, GIAO LƯU
+MODERATE | Tiết chế kiềm chế làm dịu bớt tiếng Anh là gì? | 3 | TIẾT CHẾ, LÀM DỊU
+NEUTRALIZE | Vô hiệu hóa hóa giải đòn đánh tiếng Anh là gì? | 3 | VÔ HIỆU HÓA
+NOURISH | Nuôi dưỡng tiếp tế chất dinh dưỡng tiếng Anh là gì? | 2 | NUÔI DƯỠNG
+OBLIGE | Bắt buộc hoặc làm ơn giúp đỡ tiếng Anh là gì? | 3 | BẮT BUỘC, LÀM ƠN
+OUTNUMBER | Đông hơn áp đảo về quân số tiếng Anh là gì? | 3 | ĐÔNG HƠN
+PARALYZE | Làm tê liệt bất toại không cử động tiếng Anh là gì? | 3 | LÀM TÊ LIỆT
+PENETRATE | Xuyên qua đâm thủng lớp áo giáp tiếng Anh là gì? | 3 | XUYÊN QUA, ĐÂM THỦNG
+PERSIST | Khăng khăng dai dẳng tiếp diễn tiếng Anh là gì? | 2 | DAI DẲNG, KIÊN TRÌ
+PILGRIMAGE | Hành hương về vùng đất thiêng tiếng Anh là gì? | 3 | HÀNH HƯƠNG
+PONDER | Trầm tư suy tính thiệt hơn tiếng Anh là gì? | 3 | TRẦM TƯ, SUY TÍNH
+PRECEDE | Đi trước xảy ra trước cái khác tiếng Anh là gì? | 3 | ĐI TRƯỚC, XẢY RA TRƯỚC
+PROCLAIM | Tuyên xưng ban bố tuyên ngôn tiếng Anh là gì? | 3 | TUYÊN BỐ, BAN BỐ
+PROLONG | Kéo dài thời gian ra thêm tiếng Anh là gì? | 2 | KÉO DÀI
+PROVOKE | Khiêu khích chọc giận người khác tiếng Anh là gì? | 2 | KHIÊU KHÍCH, CHỌC TỨC
+RECALL | Hồi tưởng nhớ lại kỷ niệm xưa tiếng Anh là gì? | 1 | NHỚ LẠI, HỒI TƯỞNG
+RECITE | Ngâm thơ đọc thuộc lòng diễn cảm tiếng Anh là gì? | 2 | NGÂM THƠ, ĐỌC THUỘC LÒNG
+REGULATE | Quy định điều chỉnh nhịp điệu tiếng Anh là gì? | 2 | ĐIỀU CHỈNH, QUY ĐỊNH
+REIGN | Trị vì ngự trị vương triều tiếng Anh là gì? | 3 | TRỊ VÌ, NGỰ TRỊ
+REJOICE | Vui mừng hân hoan reo hò tiếng Anh là gì? | 2 | VUI MỪNG, HÂN HOAN
+RELINQUISH | Buông tay từ bỏ quyền lợi ngai vàng tiếng Anh là gì? | 3 | TỪ BỎ, BUÔNG BỎ
+RELOCATE | Di dời dọn đến chỗ ở mới tiếng Anh là gì? | 2 | DI DỜI, DỌN NHÀ
+REPELL | Đẩy lùi xua đuổi côn trùng kẻ thù tiếng Anh là gì? | 2 | XUA ĐUỔI, ĐẨY LÙI
+REPLENISH | Làm đầy lại bổ sung thêm kho dự trữ tiếng Anh là gì? | 3 | BỔ SUNG, LÀM ĐẦY
+REPRESS | Kìm nén cảm xúc trong lòng tiếng Anh là gì? | 3 | KÌM NÉN
+REPRODUCE | Sinh sản hoặc tái tạo bản sao tiếng Anh là gì? | 2 | SINH SẢN, TÁI TẠO
+RESEMBLE | Giống giống hệt với ai đó tiếng Anh là gì? | 2 | GIỐNG NHAU, TRÔNG GIỐNG
+RESONATE | Cộng hưởng vang vọng âm thanh tiếng Anh là gì? | 3 | CỘNG HƯỞNG, VANG VỌNG
+RETRIEVE | Lấy lại truy xuất dữ liệu tiếng Anh là gì? | 2 | LẤY LẠI, TRUY XUẤT
+REVERE | Tôn sùng sùng kính bậc vĩ nhân tiếng Anh là gì? | 3 | SÙNG KÍNH, TÔN SÙNG
+REVIVE | Hồi sinh làm sống dậy hy vọng tiếng Anh là gì? | 2 | HỒI SINH, LÀM SỐNG LẠI
+REVOLVE | Xoay quanh trục hoặc tâm điểm tiếng Anh là gì? | 2 | XOAY QUANH
+SALUTE | Chào điều lệnh giơ tay chào trang nghiêm tiếng Anh là gì? | 2 | CHÀO ĐIỀU LỆNH, CHÀO
+SANCTION | Trừng phạt chế tài kinh tế tiếng Anh là gì? | 3 | CHẾ TÀI, TRỪNG PHẠT
+SHINE | Chiếu sáng lấp lánh như Mặt Trời tiếng Anh là gì? | 1 | TỎA SÁNG, CHIẾU SÁNG
+SHOCK | Gây sốc kinh ngạc bàng hoàng tiếng Anh là gì? | 1 | GÂY SỐC, SỐC
+SOAR | Bay vút lên cao vút trên trời xanh tiếng Anh là gì? | 2 | BAY VÚT LÊN
+SPECIFY | Chỉ rõ ghi rõ chi tiết yêu cầu tiếng Anh là gì? | 2 | CHỈ RÕ, GHI RÕ
+STABILIZE | Làm ổn định giữ cân bằng tình hình tiếng Anh là gì? | 2 | LÀM ỔN ĐỊNH
+SUCCEED | Thành công đạt mục tiêu tiếng Anh là gì? | 1 | THÀNH CÔNG
+SUPPRESS | Đàn áp trấn áp dẹp tan bạo loạn tiếng Anh là gì? | 3 | ĐÀN ÁP, TRẤN ÁP
+SURROUND | Bao vây vây quanh bốn bề tiếng Anh là gì? | 1 | BAO VÂY, VÂY QUANH
+SUSPEND | Đình chỉ tạm treo chức vụ tiếng Anh là gì? | 2 | ĐÌNH CHỈ, TREO
+SUSTAIN | Duy trì chống đỡ sự sống tiếng Anh là gì? | 2 | DUY TRÌ, CHỐNG ĐỠ
+TRIGGER | Kích hoạt bóp cò gây ra chuỗi sự kiện tiếng Anh là gì? | 2 | KÍCH HOẠT, BÓP CÒ
+TRIUMPH | Chiến thắng vang dội vẻ vang tiếng Anh là gì? | 2 | CHIẾN THẮNG, VẺ VANG
+UNDERESTIMATE | Đánh giá thấp xem nhẹ đối thủ tiếng Anh là gì? | 2 | ĐÁNH GIÁ THẤP, COI THƯỜNG
+UNFOLD | Mở ra hé lộ bức tranh toàn cảnh tiếng Anh là gì? | 2 | MỞ RA, HÉ LỘ
+UNRAVEL | Tháo gỡ làm sáng tỏ bí ẩn tiếng Anh là gì? | 3 | THÁO GỠ, LÀM SÁNG TỎ
+VIBRATE | Rung lên rung chuyển nhè nhẹ tiếng Anh là gì? | 1 | RUNG LÊN, RUNG
+VINDICATE | Minh oan chứng minh sự vô tội tiếng Anh là gì? | 3 | MINH OAN
+VIOLATE | Vi phạm xâm phạm điều luật tiếng Anh là gì? | 2 | VI PHẠM, XÂM PHẠM
+WANDER | Đi lang thang dạo bước không mục đích tiếng Anh là gì? | 1 | LANG THANG, ĐI DẠO
+WEAVE | Dệt vải đan lát nong nia tiếng Anh là gì? | 2 | DỆT VẢI, ĐAN LÁT
+WITHER | Héo úa tàn lụi bông hoa tiếng Anh là gì? | 2 | HÉO ÚA, TÀN LỤI
+ADAPTABLE | Dễ thích nghi linh hoạt trong mọi hoàn cảnh tiếng Anh là gì? | 2 | DỄ THÍCH NGHI, LINH HOẠT
+ADEQUATE | Đầy đủ đáp ứng vừa vặn yêu cầu tiếng Anh là gì? | 2 | ĐẦY ĐỦ, THỎA ĐÁNG
+AFFECTIONATE | Thương yêu trìu mến giàu tình cảm tiếng Anh là gì? | 2 | TRÌU MẾN, THƯƠNG YÊU
+ALERT | Cảnh giác tỉnh táo đề phòng tiếng Anh là gì? | 2 | CẢNH GIÁC, TỈNH TÁO
+AUTHENTIC | Thật đích thực hàng chính hãng nguyên bản tiếng Anh là gì? | 2 | ĐÍCH THỰC, CHÍNH HÃNG
+BRILLIANT | Sáng dạ xuất sắc rực rỡ tiếng Anh là gì? | 1 | XUẤT SẮC, SÁNG RỰC
+CAUTIOUS | Thận trọng cẩn thận trong từng bước tiếng Anh là gì? | 1 | THẬN TRỌNG, CẨN THẬN
+CHARISMATIC | Có sức hút lôi cuốn quần chúng tiếng Anh là gì? | 3 | LÔI CUỐN, CÓ SỨC HÚT
+COMPASSIONATE | Giàu lòng trắc ẩn thương người tiếng Anh là gì? | 3 | TRẮC ẨN, THƯƠNG NGƯỜI
+CONSCIENTIOUS | Tận tâm chu đáo có trách nhiệm tiếng Anh là gì? | 3 | TẬN TÂM, CHU ĐÁO
+CONSIDERATE | Ân cần chu đáo nghĩ cho người khác tiếng Anh là gì? | 2 | ÂN CẦN, CHU ĐÁO
+COURTEOUS | Nhã nhặn lịch thiệp lễ độ tiếng Anh là gì? | 2 | NHÃ NHẶN, LỊCH THIỆP
+DECISIVE | Quyết đoán dứt khoát không do dự tiếng Anh là gì? | 2 | QUYẾT ĐOÁN, DỨT KHOÁT
+DILIGENT | Cần cù siêng năng chăm chỉ tiếng Anh là gì? | 2 | CẦN CÙ, SIÊNG NĂNG
+DYNAMIC | Năng động đầy nhiệt huyết sôi nổi tiếng Anh là gì? | 2 | NĂNG ĐỘNG, SÔI NỔI
+ELEGANT | Thanh lịch duyên dáng tao nhã tiếng Anh là gì? | 2 | THANH LỊCH, DUYÊN DÁNG
+ENTHUSIASTIC | Nhiệt tình hào hứng phấn khởi tiếng Anh là gì? | 2 | NHIỆT TÌNH, HÀO HỨNG
+FEARLESS | Không sợ hãi can trường bất khuất tiếng Anh là gì? | 2 | KHÔNG SỢ, CAN TRƯỜNG
+FLEXIBLE | Linh hoạt mềm dẻo dễ thay đổi tiếng Anh là gì? | 2 | LINH HOẠT, MỀM DẺO
+GENTLE | Dịu dàng nhẹ nhàng hiền từ tiếng Anh là gì? | 1 | DỊU DÀNG, NHẸ NHÀNG
+GRACEFUL | Uyển chuyển thanh thoát duyên dáng tiếng Anh là gì? | 2 | UYỂN CHUYỂN, DUYÊN DÁNG
+HILARIOUS | Hài hước vui nhộn cười vỡ bụng tiếng Anh là gì? | 2 | HÀI HƯỚC, BUỒN CƯỜI, FUNNY
+IMAGINATIVE | Giàu trí tưởng tượng sáng tạo tiếng Anh là gì? | 2 | GIÀU TƯỞNG TƯỢNG
+INDEPENDENT | Tự lập độc lập không phụ thuộc ai tiếng Anh là gì? | 2 | ĐỘC LẬP, TỰ LẬP
+INSPIRING | Tạo cảm hứng đầy khích lệ tiếng Anh là gì? | 2 | TRUYỀN CẢM HỨNG
+INTREPID | Dũng cảm gan dạ không chùn bước tiếng Anh là gì? | 3 | GAN DẠ, DŨNG CẢM
+KINDHEARTED | Tốt bụng nhân hậu thơm thảo tiếng Anh là gì? | 1 | TỐT BỤNG, NHÂN HẬU
+NURTURING | Chăm chút ân cần nuôi dưỡng tiếng Anh là gì? | 2 | ÂU YẾM, CHĂM SÓC
+OBSERVANT | Tinh mắt tinh ý hay quan sát tiếng Anh là gì? | 2 | TINH MẮT, TINH Ý
+PRUDENT | Thận trọng khôn ngoan biết tính xa tiếng Anh là gì? | 3 | THẬN TRỌNG, KHÔN NGOAN
+RADIANT | Rạng rỡ tươi tắn như hoa nở tiếng Anh là gì? | 2 | RẠNG RỠ, TƯƠI TẮN
+RELIABLE | Đáng tin cậy chỗ dựa vững chắc tiếng Anh là gì? | 2 | ĐÁNG TIN, ĐÁNG TIN CẬY
+RESOURCEFUL | Tháo vát nhanh trí xoay xở giỏi tiếng Anh là gì? | 3 | THÁO VÁT, NHANH TRÍ
+SERENE | Thanh thản yên bình thanh tịnh tiếng Anh là gì? | 2 | THANH THẢN, YÊN BÌNH
+SOPHISTICATED | Tinh vi tinh xảo hoặc sành điệu tiếng Anh là gì? | 3 | TINH XẢO, SÀNH ĐIỆU
+STEADFAST | Kiên định vững vàng không lay chuyển tiếng Anh là gì? | 3 | KIÊN ĐỊNH, VỮNG VÀNG
+TRANQUIL | Thanh bình êm đềm tĩnh lặng tiếng Anh là gì? | 2 | THANH BÌNH, TĨNH LẶNG
+VIGOROUS | Cường tráng sung sức khỏe mạnh tiếng Anh là gì? | 2 | SUNG SỨC, KHỎE MẠNH
+VIRTUE | Đức hạnh phẩm chất tốt đẹp tiếng Anh là gì? | 2 | ĐỨC HẠNH, PHẨM HẠNH
+VIVACIOUS | Sôi nổi hoạt bát vui tươi hoạt ngôn tiếng Anh là gì? | 3 | HOẠT BÁT, SÔI NỔI
+GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi tiếng Anh là gì? | 1 | TỪ BỎ, ĐẦU HÀNG
+LOOK FOR | Cụm động từ tìm kiếm thứ gì bị thất lạc tiếng Anh là gì? | 1 | TÌM KIẾM
+LOOK AFTER | Cụm động từ chăm sóc trông nom người thân tiếng Anh là gì? | 1 | CHĂM SÓC, TRÔNG NOM, TAKE CARE OF
+TAKE OFF | Cụm động từ máy bay cất cánh bay lên trời tiếng Anh là gì? | 1 | CẤT CÁNH
+PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào tiếng Anh là gì? | 1 | MẶC VÀO, ĐEO VÀO
+TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép tiếng Anh là gì? | 1 | CỞI RA
+TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ tiếng Anh là gì? | 2 | VẶN TO, XUẤT HIỆN
+TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời tiếng Anh là gì? | 2 | VẶN NHỎ, TỪ CHỐI, REFUSE
+GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn tiếng Anh là gì? | 1 | TIẾP TỤC, CONTINUE
+CARRY OUT | Cụm động từ tiến hành thực hiện một cuộc khảo sát tiếng Anh là gì? | 2 | TIẾN HÀNH, THỰC HIỆN, CONDUCT
+RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng tiếng Anh là gì? | 2 | HẾT, CẠN KIỆT
+CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước tiếng Anh là gì? | 2 | ĐUỔI KỊP, BẮT KỊP
+KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ tiếng Anh là gì? | 2 | THEO KỊP
+BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường tiếng Anh là gì? | 2 | BỊ HỎNG, HỎNG HÓC
+BREAK UP | Cụm động từ chia tay chấm dứt một mối tình tiếng Anh là gì? | 1 | CHIA TAY
+COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ tiếng Anh là gì? | 2 | TÌNH CỜ GẶP, TÌNH CỜ THẤY
+FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề tiếng Anh là gì? | 2 | TÌM RA, NGHĨ RA
+GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép tiếng Anh là gì? | 2 | NHƯỢNG BỘ, CHỊU THUA
+HOLD ON | Cụm động từ giữ máy chờ máy điện thoại một lát tiếng Anh là gì? | 1 | CHỜ MÁY, GIỮ MÁY, WAIT
+HANG OUT | Cụm động từ tụ tập đi chơi tán gẫu cùng bạn bè tiếng Anh là gì? | 1 | ĐI CHƠI, TỤ TẬP
+GET ALONG WITH | Cụm động từ hòa thuận ăn ý với bạn bè người thân tiếng Anh là gì? | 2 | HÒA THUẬN, HÒA HỢP
+BRING UP | Cụm động từ nuôi nấng dạy dỗ đứa trẻ nên người tiếng Anh là gì? | 2 | NUÔI DƯỠNG, DẠY DỖ, RAISE
+PASS AWAY | Cụm từ trang trọng chỉ sự qua đời tạ thế tiếng Anh là gì? | 2 | QUA ĐỜI, TẠ THẾ, DIE
+SHOW UP | Cụm động từ xuất hiện có mặt tại buổi hẹn tiếng Anh là gì? | 1 | CÓ MẶT, XUẤT HIỆN, ARRIVE
+MAKE UP | Cụm động từ làm lành sau khi cãi vã hoặc trang điểm tiếng Anh là gì? | 1 | LÀM LÀNH, TRANG ĐIỂM
+PUT OFF | Cụm động từ hoãn lại việc gì sang ngày khác tiếng Anh là gì? | 2 | HOÃN LẠI, TRÌ HOÃN, POSTPONE
+CALL OFF | Cụm động từ hủy bỏ hoàn toàn trận đấu do mưa bão tiếng Anh là gì? | 2 | HỦY BỎ, CANCEL
+SET UP | Cụm động từ thành lập dựng nên hoặc cài đặt tiếng Anh là gì? | 1 | THÀNH LẬP, CÀI ĐẶT, ESTABLISH
+TAKE UP | Cụm động từ bắt đầu một sở thích thói quen mới tiếng Anh là gì? | 2 | BẮT ĐẦU SỞ THÍCH
+LOOK FORWARD TO | Cụm động từ ngóng trông háo hức mong đợi điều gì tiếng Anh là gì? | 2 | TRÔNG ĐỢI, MONG ĐỢI
+DROP BY | Cụm động từ tạt qua ghé thăm chốc lát tiếng Anh là gì? | 2 | GHÉ THĂM, TẠT QUA
+GET OVER | Cụm động từ vượt qua cú sốc hoặc khỏi bệnh tiếng Anh là gì? | 2 | VƯỢT QUA, HỒI PHỤC
+STAND FOR | Cụm từ viết tắt hoặc đại diện cho biểu tượng gì tiếng Anh là gì? | 2 | ĐẠI DIỆN CHO, VIẾT TẮT
+WORK OUT | Cụm động từ tập thể dục rèn luyện thân thể hoặc tính toán tiếng Anh là gì? | 1 | TẬP THỂ DỤC, TẬP GYM
+CHILL OUT | Cụm từ thư giãn xả hơi thoải mái tiếng Anh là gì? | 1 | THƯ GIÃN, XẢ HƠI, RELAX
+CALM DOWN | Cụm từ giữ bình tĩnh trấn tĩnh lại tiếng Anh là gì? | 1 | BÌNH TĨNH
+CHEER UP | Cụm từ vui lên phấn chấn tinh thần lên tiếng Anh là gì? | 1 | VUI LÊN, PHẤN CHẤN
+SPEAK UP | Cụm từ nói to lên dõng dạc lên tiếng Anh là gì? | 1 | NÓI TO LÊN
+SLOW DOWN | Cụm từ đi chậm lại giảm tốc độ xe tiếng Anh là gì? | 1 | ĐI CHẬM LẠI, GIẢM TỐC
+SPEED UP | Cụm từ tăng tốc phóng nhanh hơn tiếng Anh là gì? | 1 | TĂNG TỐC
+GET UP | Cụm động từ ngồi dậy rời khỏi giường tiếng Anh là gì? | 1 | RỜI GIƯỜNG, ĐỨNG DẬY
+GROW UP | Cụm động từ khôn lớn trưởng thành theo năm tháng tiếng Anh là gì? | 1 | TRƯỞNG THÀNH, LỚN LÊN
+DRESS UP | Cụm từ diện đồ đẹp lên đồ dự tiệc tiếng Anh là gì? | 1 | DIỆN ĐỒ, MẶC ĐẸP
+CHECK OUT | Cụm từ kiểm tra xem thử hoặc làm thủ tục trả phòng tiếng Anh là gì? | 1 | TRẢ PHÒNG, XEM THỬ
+SIGN IN | Cụm từ đăng nhập tài khoản hệ thống tiếng Anh là gì? | 1 | ĐĂNG NHẬP, LOGIN
+SIGN OUT | Cụm từ đăng xuất thoát khỏi tài khoản tiếng Anh là gì? | 1 | ĐĂNG XUẤT, LOGOUT
+DESTINY | Số phận định mệnh an bài của đời người tiếng Anh là gì? | 2 | SỐ PHẬN, ĐỊNH MỆNH, FATE
+ETERNITY | Vĩnh cửu muôn đời ngàn kiếp không phai tiếng Anh là gì? | 2 | VĨNH CỬU, MUÔN ĐỜI
+INFINITY | Vô cực vô tận không bao giờ kết thúc tiếng Anh là gì? | 2 | VÔ CỰC, VÔ TẬN
+BREEZE | Ngọn gió heo may gió thoảng nhẹ mát lành tiếng Anh là gì? | 1 | GIÓ THOẢNG, GIÓ NHẸ
+SHADOW | Bóng đen in hình trên mặt đất dưới ánh đèn tiếng Anh là gì? | 1 | BÓNG ĐEN, CÁI BÓNG
+REFLECTION | Hình ảnh phản chiếu trên mặt gương mặt nước tiếng Anh là gì? | 2 | PHẢN CHIẾU, HÌNH PHẢN CHIẾU
+RIPPLE | Gợn sóng lăn tăn xao động trên mặt hồ tiếng Anh là gì? | 2 | GỢN SÓNG, LĂN TĂN
+TIDE | Hiện tượng thủy triều con nước lên xuống theo chu kỳ tiếng Anh là gì? | 2 | THỦY TRIỀU
+WILDERNESS | Vùng đất hoang dã thiên nhiên nguyên sơ tiếng Anh là gì? | 3 | HOANG DÃ, VÙNG HOANG DÃ
+LAGOON | Đầm phá nước lợ ven biển yên bình tiếng Anh là gì? | 3 | ĐẦM PHÁ, ĐẦM NƯỚC
+REEF | Rạn san hô rực rỡ sắc màu dưới biển tiếng Anh là gì? | 2 | RẠN SAN HÔ, BÃI ĐÁ NGẦM
+PATHWAY | Lối đi mòn nhỏ dẫn vào khu vườn tiếng Anh là gì? | 2 | LỐI ĐI, ĐƯỜNG MÒN, TRAIL
+STREETLIGHT | Cột đèn đường thắp sáng phố đêm tiếng Anh là gì? | 1 | ĐÈN ĐƯỜNG, ĐÈN PHỐ
+BOLT | Bu lông ốc vít cỡ lớn có ren vặn đai ốc tiếng Anh là gì? | 2 | BU LÔNG, BÙ LOONG
+NUT | Đai ốc ê-cu vặn khớp với bu lông tiếng Anh là gì? | 2 | ĐAI ỐC, Ê CU
+CHAIN | Sợi dây xích bằng sắt chắc chắn khóa cổng tiếng Anh là gì? | 1 | DÂY XÍCH, XÍCH
+ROPE | Sợi dây thừng bện dẻo dai buộc thuyền tiếng Anh là gì? | 1 | DÂY THỪNG, DÂY DÙ
+BUCKLE | Mặt khóa dây thắt lưng bằng kim loại tiếng Anh là gì? | 2 | MẶT THẮT LƯNG, MẶT KHÓA
+SCALES | Chiếc cân đo trọng lượng cân nặng cơ thể tiếng Anh là gì? | 2 | CHIẾC CÂN, CÁI CÂN
+HIP | Hông eo lắc lư theo điệu nhảy tiếng Anh là gì? | 1 | HÔNG, EO HÔNG
+THIGH | Bắp đùi chân săn chắc nhờ tập luyện tiếng Anh là gì? | 2 | BẮP ĐÙI, ĐÙI
+PUDDLE | Vũng nước mưa nhỏ đọng trên đường sau cơn mưa tiếng Anh là gì? | 2 | VŨNG NƯỚC
+MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai tiếng Anh là gì? | 2 | SƯƠNG MÙ NHẸ, LÀN SƯƠNG, FOG
+FROST | Băng giá sương muối phủ trắng cành cây mùa đông tiếng Anh là gì? | 2 | BĂNG GIÁ, SƯƠNG MUỐI
+DOWNPOUR | Cơn mưa rào trút nước như thác đổ tiếng Anh là gì? | 2 | MƯA RÀO, MƯA TRÚT NƯỚC
+SHOWER RAIN | Cơn mưa rào thoảng qua chợt đến chợt đi tiếng Anh là gì? | 2 | MƯA RÀO THOẢNG
+HEATWAVE | Đợt nắng nóng gay gắt oi bức mùa hè tiếng Anh là gì? | 2 | ĐỢT NẮNG NÓNG, SÓNG NHIỆT
+COLD SPELL | Đợt không khí lạnh rét căm căm tràn về tiếng Anh là gì? | 2 | ĐỢT RÉT, ĐỢT LẠNH
+LEAP | Nhảy vọt qua con rãnh nhỏ bước nhảy xa tiếng Anh là gì? | 2 | NHẢY VỌT, BƯỚC NHẢY
+TIPTOE | Đi nhón chân rón rén nhẹ nhàng không phát ra tiếng tiếng Anh là gì? | 2 | ĐI NHÓN CHÂN, RÓN RÉN
+HICCOUP | Nấc cụt từng cơn do uống nước vội tiếng Anh là gì? | 2 | NẤC CỤT, HICCUP
+SNOCK | Ngáy khò khò khi ngủ say sưa tiếng Anh là gì? | 1 | NGÁY, SNORE
+WINK | Nháy một bên mắt đầy ngụ ý hài hước tiếng Anh là gì? | 1 | NHÁY MẮT
+SHAKE HEAD | Lắc đầu từ chối không chấp nhận tiếng Anh là gì? | 1 | LẮC ĐẦU
+CRISP | Giòn rụm quả táo tươi cắn vào giòn tan tiếng Anh là gì? | 2 | GIÒN RỤM, GIÒN TAN
+JUICY | Mọng nước quả cam quả dưa hấu nhiều nước tiếng Anh là gì? | 1 | MỌNG NƯỚC, NHIỀU NƯỚC
+BLAND | Nhạt nhẽo vô vị không nêm gia vị tiếng Anh là gì? | 2 | NHẠT NHẼO, VÔ VỊ
+FRAGRANT | Thơm ngát hương hoa thơm ngào ngạt tiếng Anh là gì? | 2 | THƠM NGÁT, NGÀO NGẠT
+STINKY | Hôi thối bốc mùi khó chịu tiếng Anh là gì? | 1 | HÔI THỐI, BỐC MÙI, SMELLY
+SHARP | Sắc bén lưỡi dao con dao gọt hoa quả tiếng Anh là gì? | 1 | SẮC BÉN, BÉN
+BLUNT | Cùn lưỡi kéo cùn cắt không đứt tiếng Anh là gì? | 2 | CÙN
+TIGHT | Chật chội bó sát bộ quần áo vừa may tiếng Anh là gì? | 1 | CHẶT, BÓ SÁT, CHẬT
+LOOSE | Rộng thùng thình lỏng lẻo thoải mái tiếng Anh là gì? | 1 | RỘNG, LỎNG LẺO
+LIGHT WEIGHT | Nhẹ bẫng lông hồng bay phất phơ tiếng Anh là gì? | 1 | NHẸ, NHẸ BÃNG
+FIRM | Chắc chắn kiên cố đệm nằm không lún tiếng Anh là gì? | 2 | CHẮC CHẮN, KIÊN CỐ

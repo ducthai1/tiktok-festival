@@ -1,0 +1,24 @@
+# Tiếng Anh · Cảm xúc, tính cách
+CHEERFUL | Tính từ vui tươi, rạng rỡ, luôn nở nụ cười yêu đời tiếng Anh là gì? | 1 | VUI TƯƠI, RẠNG RỠ
+SINCERE | Tính từ chân thành, thật lòng không chút dối gian tiếng Anh là gì? | 2 | CHÂN THÀNH, THẬT LÒNG
+MODEST | Tính từ khiêm tốn, không thích khoe khoang bản thân tiếng Anh là gì? | 2 | KHIÊM TỐN, HUMBLE
+AMBITIOUS | Tính từ có hoài bão lớn, tham vọng vươn lên đỉnh cao tiếng Anh là gì? | 2 | THAM VỌNG, CÓ HOÀI BÃO
+FRUSTRATED | Cảm giác bực bội, bất lực vì việc không theo ý muốn tiếng Anh là gì? | 2 | BẤT LỰC, BỰC BỘI
+MAGNANIMOUS | Đức tính đại lượng, cao thượng, tha thứ lỗi lầm cho kẻ khác tiếng Anh là gì? | 3 | CAO THƯỢNG
+BENEVOLENT | Tấm lòng nhân từ, phúc hậu, bác ái thương yêu muôn loài tiếng Anh là gì? | 3 | NHÂN TỪ, BÁC ÁI
+TRANQUILITY | Cảm giác tĩnh lặng, an yên thanh bình nơi tâm hồn tiếng Anh là gì? | 3 | TĨNH LẶNG, AN YÊN
+SOLITUDE | Khoảng thời gian một mình thanh tịnh trong cô độc an nhiên tiếng Anh là gì? | 3 | CÔ ĐỘC AN NHIÊN
+SERENITY | Vẻ thanh thản, phẳng lặng không gợn chút âu lo tiếng Anh là gì? | 3 | THANH THẢN
+SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất hạnh của người khác tiếng Anh là gì? | 4 | HẢ HÊ
+PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ tiếng Anh là gì? | 4 | VẺ ĐẸP KIỀU DIỄM
+GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt tiếng Anh là gì? | 4 | BA HOA, LẮM LỜI
+GREEDY | Tham lam chỉ muốn giữ tất cả cho riêng mình tiếng Anh là gì? | 2 | THAM LAM
+HUMBLE | Khiêm tốn nhã nhặn không khoe khoang tiếng Anh là gì? | 2 | KHIÊM TỐN, MODEST
+ARROGANT | Kiêu ngạo tự cao coi thường người khác tiếng Anh là gì? | 2 | KIÊU NGẠO, TỰ CAO
+DISHONEST | Không trung thực lừa lọc gian manh tiếng Anh là gì? | 2 | GIAN DỐI, BẤT LƯƠNG
+COURAGEOUS | Dũng cảm can trường đối mặt hiểm nguy tiếng Anh là gì? | 2 | DŨNG CẢM, CAN ĐẢM, BRAVE
+COWARDLY | Hèn nhát sợ sệt không dám làm gì tiếng Anh là gì? | 2 | HÈN NHÁT
+IMPATIENT | Nóng vội thiếu kiên nhẫn không chờ đợi được tiếng Anh là gì? | 2 | NÓNG VỘI, SỐT RUỘT
+IMPENITENT | Không hối cải không ăn năn hối hận tiếng Anh là gì? | 3 | KHÔNG HỐI CẢI
+SYMPATHETIC | Cảm thông đồng cảm với nỗi đau của người khác tiếng Anh là gì? | 2 | ĐỒNG CẢM, CẢM THÔNG
+AGGRESSIVE | Hung hăng hiếu chiến hay gây sự tiếng Anh là gì? | 2 | HUNG HĂNG, HIẾU CHIẾN

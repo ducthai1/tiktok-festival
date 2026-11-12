@@ -154,3 +154,79 @@ SOLAR ENERGY | Năng lượng mặt trời tiếng Anh là gì? | 3 | SOLAR POWE
 PROTECT | Bảo vệ (môi trường) tiếng Anh là gì? | 2 | PRESERVE, CONSERVE, SAVE
 EXTINCT | Tuyệt chủng tiếng Anh là gì? | 3 | EXTINCTION
 WILDFIRE | Cháy rừng tiếng Anh là gì? | 3 | FOREST FIRE, BUSHFIRE
+
+PANTHER | Báo đen (họ mèo săn mồi sa mạc/rừng rậm) | 2 | BLACK PANTHER
+CHAMELEON | Tắc kè hoa (loài bò sát đổi màu theo môi trường) | 2
+FLAMINGO | Chim hồng hạc (loài chim lông hồng đứng một chân) | 2 | HỒNG HẠC
+WOODPECKER | Chim gõ kiến | 2
+SALMON | Cá hồi (loài cá bơi ngược dòng đẻ trứng) | 2
+HUMMINGBIRD | Chim hút mật (loài chim nhỏ bay đập cánh cực nhanh) | 3
+PORCUPINE | Con nhím (loài thú có gai nhọn sau lưng) | 3
+SCORPION | Con bọ cạp | 2 | BỌ CẠP
+AVALANCHE | Trận tuyết lở | 3 | TUYẾT LỞ
+GLACIER | Sông băng / khối băng vĩnh cửu | 3 | SÔNG BĂNG
+RAINFOREST | Rừng nhiệt đới | 2 | RỪNG NHIỆT ĐỚI
+HURRICANE | Cơn bão biển / siêu bão | 3 | SIÊU BÃO
+ECOSYSTEM | Hệ sinh thái | 3 | HỆ SINH THÁI
+BIODIVERSITY | Đa dạng sinh học | 3
+
+CHEETAH | Báo gấm / báo đốm phi nước đại cực nhanh | 2 | BÁO GẤM
+HIPPOPOTAMUS | Con hà mã sống dưới nước | 2 | HIPPO, HÀ MÃ
+PLATYPUS | Thú mỏ vịt đẻ trứng | 3 | THÚ MỎ VỊT
+SLOTH | Con lười di chuyển chậm chạp trên cây | 2 | CON LƯỜI
+MEERKAT | Chồn cầy châu Phi đứng hai chân | 2 | CHỒN CẦY
+BUTTERFLY | Con bướm nhiều màu | 1 | BƯỚM
+CENTIPEDE | Con rết nhiều chân | 2 | RẾT
+DISASTER | Thảm họa thiên nhiên | 3 | THẢM HỌA
+FLOODING | Trận lũ lụt dâng cao | 2 | LŨ LỤT
+ATMOSPHERE | Bầu khí quyển Trái Đất | 3 | KHÍ QUYỂN
+FORESTATION | Việc trồng rừng phủ xanh | 3 | TRỒNG RỪNG
+
+AXOLOTL | Loài kỳ nhông nước Mexico (khủng long sáu sừng) tiếng Anh là gì? | 3 | KỲ NHÔNG NƯỚC
+NARWHAL | Kỳ lân biển (loài cá voi có một ngà dài nhọn ở đầu) tiếng Anh là gì? | 3 | KỲ LÂN BIỂN
+CAPYBARA | Loài chuột lang nước khổng lồ Nam Mỹ tính tình hiền lành tiếng Anh là gì? | 2 | CHUỘT LANG NƯỚC
+PANGOLIN | Con tê tê (loài thú ăn kiến có vảy cứng bảo vệ cơ thể) tiếng Anh là gì? | 3 | CON TÊ TÊ, TÊ TÊ
+LEMUR | Vượn cáo đuôi khoang đặc hữu của đảo Madagascar tiếng Anh là gì? | 3 | VƯỢN CÁO
+WALRUS | Con moóc biển / hải mã có hai răng nanh dài ở Bắc Cực tiếng Anh là gì? | 2 | HẢI MÃ
+STINGRAY | Con cá đuối biển có gai nhọn ở đuôi tiếng Anh là gì? | 2 | CÁ ĐUỐI
+OTTER | Con rái cá thích nằm ngửa trôi trên dòng sông tiếng Anh là gì? | 2 | RÁI CÁ
+BEAVER | Con hải ly chuyên gặm gỗ xây đập nước tiếng Anh là gì? | 2 | HẢI LY
+TOUCAN | Loài chim toucan có mỏ rất to và nhiều màu sắc rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
+FALCON | Chim ưng săn mồi liệng cánh thần tốc tiếng Anh là gì? | 2 | CHIM ƯNG
+MANTIS | Con bọ ngựa có hai càng kiếm săn mồi tiếng Anh là gì? | 2 | BỌ NGỰA, PRAYING MANTIS
+STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống tiếng Anh là gì? | 3 | THẠCH NHŨ
+GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất tiếng Anh là gì? | 3 | MẠCH NƯỚC PHUN
+OASIS | Ốc đảo tươi tốt có nước ngọt giữa sa mạc cát mênh mông tiếng Anh là gì? | 2 | ỐC ĐẢO
+PENINSULA | Bán đảo có ba mặt giáp với biển tiếng Anh là gì? | 3 | BÁN ĐẢO
+ARCHIPELAGO | Một quần đảo gồm nhiều đảo nhỏ tập hợp lại tiếng Anh là gì? | 3 | QUẦN ĐẢO
+TUNDRA | Vùng đài nguyên / đồng rêu băng giá quanh năm tiếng Anh là gì? | 3 | ĐÀI NGUYÊN
+EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu tiếng Anh là gì? | 2 | XÍCH ĐẠO
+AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực tiếng Anh là gì? | 3 | CỰC QUANG, NORTHERN LIGHTS
+DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc tiếng Anh là gì? | 2 | CỒN CÁT, SAND DUNE
+CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng tiếng Anh là gì? | 2 | HẺM NÚI, GORGE
+
+IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng tiếng Anh là gì? | 2 | KỲ NHÔNG CỰ ĐÀ, CỰ ĐÀ
+KOOKABURRA | Loài chim kookaburra nước Úc có tiếng hót như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
+PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước tiếng Anh là gì? | 2 | CHIM BỒ NÔNG, BỒ NÔNG
+ARMADILLO | Con tatu có lớp áo giáp vảy sừng cuộn tròn thành quả bóng tự vệ tiếng Anh là gì? | 3 | CON TATU, TATU
+HYENA | Linh cẩu đốm săn mồi thảo nguyên có tiếng kêu như tiếng cười ghê rợn tiếng Anh là gì? | 2 | LINH CẨU
+BABOON | Khỉ đầu chó có mõm dài dữ dằn sống thành bầy lớn tiếng Anh là gì? | 2 | KHỈ ĐẦU CHÓ
+GAZELLE | Linh dương linh dương đồng cỏ nhảy thoăn thoắt né báo săn tiếng Anh là gì? | 2 | LINH DƯƠNG
+MANATEE | Bò biển thân hình tròn trịa hiền hòa gặm cỏ dưới nước tiếng Anh là gì? | 3 | BÒ BIỂN, HẢI NGƯU
+WHALE SHARK | Cá mập voi khổng lồ hiền lành ăn sinh vật phù du tiếng Anh là gì? | 2 | CÁ MẬP VOI
+
+VIPER | Loài rắn lục đuôi chuông mang nọc độc chết người tiếng Anh là gì? | 2 | RẮN LỤC, RẮN ĐỘC
+COBRA | Rắn hổ mang bành phình cổ hung dữ mang nọc độc tiếng Anh là gì? | 1 | RẮN HỔ MANG, HỔ MANG
+PYTHON | Con trăn gấm khổng lồ cuộn tròn siết mồi tiếng Anh là gì? | 1 | CON TRĂN
+TADPOLE | Con nòng nọc bơi lội dưới nước trước khi mọc chân thành ếch tiếng Anh là gì? | 2 | NÒNG NỌC
+ANTEATER | Thú ăn kiến có chiếc mõm dài thè lưỡi bắt kiến tiếng Anh là gì? | 2 | THÚ ĂN KIẾN
+SKUNK | Con chồn hôi xịt mùi hôi nồng nặc để xua đuổi kẻ thù tiếng Anh là gì? | 2 | CHỒN HÔI
+BADGER | Con lửng mật gan dạ đầu gấu không sợ bất kỳ loài thú nào tiếng Anh là gì? | 2 | LỬNG MẬT, CON LỬNG
+WILDEBEEST | Linh dương đầu bò vượt sông dữ di cư trên thảo nguyên châu Phi tiếng Anh là gì? | 3 | LINH DƯƠNG ĐẦU BÒ
+MOOSE | Nai sừng tấm Bắc Mỹ khổng lồ có bộ sừng bè rộng tiếng Anh là gì? | 2 | NAI SỪNG TẤM
+GIBBON | Con vượn đu cây cánh tay dài hót vang rừng sớm tiếng Anh là gì? | 2 | CON VƯỢN, VƯỢN
+ORANGUTAN | Đười ươi lông đỏ thông minh sống trên ngọn cây rừng nhiệt đới tiếng Anh là gì? | 2 | ĐƯỜI ƯƠI
+GUINEA PIG | Chuột lang nhà lông xù đáng yêu nuôi làm thú cưng tiếng Anh là gì? | 1 | CHUỘT LANG
+HAMSTER | Chuột hamster nhỏ bé hai má phính gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
+WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu tiếng Anh là gì? | 3 | VÒNG XOÁY NƯỚC, XOÁY NƯỚC
+MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi tiếng Anh là gì? | 2 | ĐỒNG CỎ
