@@ -72,7 +72,9 @@ function loadSettings(dataDir) {
 
 export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false } = {}) {
   fs.mkdirSync(dataDir, { recursive: true });
-  const adminToken = loadOrCreateAdminToken(dataDir);
+  const adminToken = loadOrCreateAdminToken(dataDir, {
+    onRotate: () => log.warn('admin', 'ĐÃ ĐỔI token trang điều khiển (token cũ bị lộ, không dùng được nữa) — mở link mới in khi khởi động')
+  });
   const settings = loadSettings(dataDir);
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
   const hub = createGameHub({ startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove });

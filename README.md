@@ -1,5 +1,7 @@
 # TikTok Live Games — Quán Bar · Đua Bơi · Chùa Online
 
+> Làm việc trên repo (người hoặc AI): đọc **`AGENTS.md`** trước — setup chuẩn, dữ liệu không đưa lên git, quy tắc khi đang live, đổi token (`npm run rotate-token`).
+
 Ba game tương tác 3D cho TikTok LIVE chạy trên **một server**. Bấm một nút trên trang điều khiển là đổi game ngay khi đang live; game kia vẫn giữ nguyên trạng thái để quay lại.
 
 | Game | Người xem làm gì | Màn hình |

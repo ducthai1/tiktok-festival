@@ -175,3 +175,24 @@ test('manual "Kết nối" right after going live again: a silent new connection
   assert.equal(p.opened.length, 2);
   await live.disconnect();
 });
+
+test('admin token: a token from before the leak is replaced once at startup, then kept; fresh installs just get one', async () => {
+  const fs = await import('node:fs');
+  const os = await import('node:os');
+  const path = await import('node:path');
+  const { loadOrCreateAdminToken } = await import('../src/admin-token-store.js');
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'token-'));
+  const leaked = 'A'.repeat(32);
+  fs.writeFileSync(path.join(dir, 'admin-token'), `${leaked}\n`);
+  let rotated = 0;
+  const first = loadOrCreateAdminToken(dir, { onRotate: () => { rotated += 1; } });
+  assert.notEqual(first, leaked);
+  assert.equal(rotated, 1);
+  assert.equal(loadOrCreateAdminToken(dir, { onRotate: () => { rotated += 1; } }), first); // lần sau giữ nguyên
+  assert.equal(rotated, 1);
+  const fresh = fs.mkdtempSync(path.join(os.tmpdir(), 'token-'));
+  loadOrCreateAdminToken(fresh, { onRotate: () => { rotated += 1; } });
+  assert.equal(rotated, 1); // máy mới: không báo "đã đổi"
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.rmSync(fresh, { recursive: true, force: true });
+});

@@ -12,7 +12,9 @@
     "start": "node --env-file-if-exists=.env src/main.js",
     "check": "node scripts/check-syntax.js",
     "test": "node --test \"test/*.test.js\"",
-    "gate": "npm run check && npm test"
+    "gate": "npm run check && npm test",
+    "rotate-token": "node scripts/rotate-admin-token.mjs",
+    "untrack-data": "node scripts/untrack-live-data.mjs"
   },
   "dependencies": {
     "three": "0.186.1",
