@@ -1,8 +1,42 @@
 // Bộ đề + độ khó của tab Từ Vựng Tiếng Anh, đổi bằng quà tối đa 30 xu (bảng gán quà ở public/shared/english-sets.js).
 // Đổi có hiệu lực từ CÂU SAU (câu đang hỏi không bị cắt ngang), giữ ENGLISH_HOLD_QUESTIONS câu rồi tự về mặc định.
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
-import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
+import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, LISTEN_QUESTIONS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
 import { foldText } from '../text-match.js';
+import { homophonesOf } from './homophones.js';
+
+export const LISTEN_MS = 25000; // câu luyện nghe dài hơn câu thường (20 giây): phải nghe rồi mới gõ
+
+function editDistance(a, b) {
+  const row = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i += 1) {
+    let prev = row[0];
+    row[0] = i;
+    for (let j = 1; j <= b.length; j += 1) {
+      const keep = row[j];
+      row[j] = Math.min(row[j] + 1, row[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+      prev = keep;
+    }
+  }
+  return row[b.length];
+}
+
+/**
+ * Câu thường → câu luyện nghe. Chỉ nghe được ÂM nên chỉ nhận: đúng từ đó, cách viết khác của nó (colour/color, payday/pay day)
+ * và từ đồng âm (pear/pair) — KHÔNG nhận từ đồng nghĩa trong kho (nghe "acne" mà gõ "pimples" là không nghe).
+ */
+export function toListenQuestion(q) {
+  const answer = foldText(q.answer);
+  const compact = (s) => s.replace(/[ -]/g, '');
+  const accept = new Set([answer]);
+  for (const a of q.accept) if (editDistance(compact(a), compact(answer)) <= 2) accept.add(a);
+  if (!answer.includes(' ')) for (const h of homophonesOf(answer)) accept.add(foldText(h));
+  const meaning = String(q.prompt || '').replace(/\s*(trong\s+)?tiếng Anh\s+(là gì|gọi là gì|nói thế nào)\s*\??\s*$/i, '').trim();
+  return {
+    ...q, listen: true, category: 'Tiếng Anh · 🎧 Luyện nghe', prompt: '🎧 Nghe rồi gõ lại từ tiếng Anh', speech: '',
+    revealPrompt: meaning ? `🇻🇳 ${meaning}` : '', accept: [...accept], timeMs: LISTEN_MS
+  };
+}
 
 const MIN_POOL = 15;
 
@@ -20,7 +54,12 @@ export function filterByLevel(items, level) {
  * general: từ theo chủ đề; basic: 176 từ cơ bản (luôn để cuối); sets: { toeic: [...], ielts: [...], … }
  * progress: { load(): string[], save(list) } — nhớ từ đã hỏi qua các lần khởi động lại (progress-store.js).
  */
-export function createEnglishSwitcher({ general, basic, sets, random = Math.random, progress = null }) {
+/**
+ * listen: kho câu cho Luyện nghe (mọi từ đọc được, mọi độ khó); listenReady(): giọng đọc tiếng Anh đang chạy tốt không
+ * (không thì ô 🎧 ẩn khỏi bảng, quà chỉ được cảm ơn); onPrefetch(từ): chọn trước câu nghe kế tiếp → máy chủ tạo sẵn giọng.
+ */
+export function createEnglishSwitcher({ general, basic, sets, random = Math.random, progress = null,
+  listen = [], listenReady = () => false, onPrefetch = null }) {
   let set = 'general';
   let level = 'normal';
   let setLeft = 0;
@@ -64,6 +103,35 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     return list.flat()[0];
   }
 
+  // ── Luyện nghe: 40 từ ngẫu nhiên trên TOÀN kho, sổ riêng ("nghe:…") — các lượt sau không lặp cho tới khi nghe hết cả kho
+  let upcoming = null; // câu nghe kế tiếp đã chọn trước (để máy chủ kịp tạo giọng)
+  const listenKey = (q) => `nghe:${keyOf(q)}`;
+  function pickListen() {
+    let fresh = listen.filter((q) => !seen.has(listenKey(q)));
+    if (!fresh.length) {
+      console.log(`[english] Luyện nghe đã nghe hết ${listen.length} từ → bắt đầu vòng mới`);
+      for (const q of listen) seen.delete(listenKey(q));
+      fresh = listen;
+    }
+    const q = fresh[Math.floor(random() * fresh.length)];
+    seen.add(listenKey(q));
+    progress?.save?.([...seen]);
+    return toListenQuestion(q);
+  }
+  function prepareListen() {
+    if (upcoming || !listen.length) return;
+    upcoming = pickListen();
+    try {
+      onPrefetch?.(upcoming.answer);
+    } catch {
+      // tạo sẵn giọng lỗi thì lúc ra đề màn hình tự hỏi lại
+    }
+  }
+  function releaseListen() {
+    if (upcoming) seen.delete(listenKey(upcoming)); // chọn trước mà không hỏi → trả lại kho
+    upcoming = null;
+  }
+
   function build() {
     dirty = false;
   }
@@ -80,13 +148,15 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     const totalSlots = 1 + deckQueue.length; // topic đang chạy + queue
     const q = adaptiveQuestions(totalSlots);
     // Rút ngắn topic hiện tại nếu còn nhiều hơn mức mới (không kéo dài thêm)
-    if (set !== 'general') setLeft = Math.min(setLeft, q);
-    for (const item of deckQueue) item.questions = q;
+    // Luyện nghe (quà 30 xu) giữ đủ 40 câu, không bị rút ngắn
+    if (set !== 'general' && set !== 'nghe') setLeft = Math.min(setLeft, q);
+    for (const item of deckQueue) if (item.to !== 'nghe') item.questions = q;
   }
 
   function apply(to, user, giftInfo = null) {
     const target = ENGLISH_TARGETS[to];
     if (!target || (target.kind === 'set' && !sets[to]?.length)) return false;
+    if (target.kind === 'listen' && (!listen.length || !listenReady())) return false; // giọng đọc hỏng → không nhận đổi
     if (target.kind === 'reset') {
       reset();
       dirty = true;
@@ -97,14 +167,16 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       levelLeft = ENGLISH_HOLD_QUESTIONS;
       levelBy = user;
     } else {
+      const fixed = target.kind === 'listen' ? LISTEN_QUESTIONS : 0;
       if (set === 'general' || setLeft <= 0) {
         // Queue rỗng hoặc vừa về general → áp dụng ngay, tính câu theo slot hiện tại
         set = to;
-        setLeft = adaptiveQuestions(1 + deckQueue.length);
+        setLeft = fixed || adaptiveQuestions(1 + deckQueue.length);
         setBy = user;
+        if (fixed) prepareListen();
       } else {
         // Có topic đang chạy → đẩy vào queue rồi rebalance tất cả
-        deckQueue.push({ to, user, questions: ENGLISH_HOLD_QUESTIONS, giftName: giftInfo?.name || '', giftPicture: giftInfo?.pictureUrl || '' });
+        deckQueue.push({ to, user, questions: fixed || ENGLISH_HOLD_QUESTIONS, giftName: giftInfo?.name || '', giftPicture: giftInfo?.pictureUrl || '' });
         rebalanceQueue();
       }
     }
@@ -112,7 +184,22 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     return true;
   }
 
+  /** Bộ đang chạy hết lượt → bộ kế tiếp trong hàng chờ, hoặc về Tổng hợp. */
+  function advance() {
+    if (deckQueue.length > 0) {
+      const nextReq = deckQueue.shift();
+      set = nextReq.to;
+      setBy = nextReq.user;
+      setLeft = nextReq.questions || ENGLISH_HOLD_QUESTIONS;
+    } else {
+      set = 'general';
+      setBy = null;
+    }
+    dirty = true;
+  }
+
   function reset() {
+    releaseListen();
     set = 'general';
     level = 'normal';
     setLeft = 0;
@@ -127,30 +214,32 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     deck: {
       next() {
         if (dirty) build();
-        const q = pick();
+        let notice = '';
+        // đang Luyện nghe mà giọng đọc hỏng (mất mạng / Microsoft chặn) → dừng, sang bộ kế tiếp; màn hình báo cho người xem
+        if (set === 'nghe' && !listenReady()) {
+          releaseListen();
+          console.warn(`[english] giọng đọc tiếng Anh lỗi → dừng Luyện nghe (còn ${setLeft} câu)`);
+          setLeft = 0;
+          advance();
+          notice = '🎧 Giọng đọc đang lỗi — tạm dừng Luyện nghe';
+        }
+        let q;
+        if (set === 'nghe') {
+          q = upcoming || pickListen();
+          upcoming = null;
+        } else q = pick();
         // mỗi câu ra tiêu một lượt; hết lượt thì từ câu sau quay về mặc định
         if (set !== 'general') {
           setLeft -= 1;
-          if (setLeft <= 0) {
-            if (deckQueue.length > 0) {
-              const nextReq = deckQueue.shift();
-              set = nextReq.to;
-              setBy = nextReq.user;
-              setLeft = nextReq.questions || ENGLISH_HOLD_QUESTIONS;
-              dirty = true;
-            } else {
-              set = 'general';
-              setBy = null;
-              dirty = true;
-            }
-          }
+          if (setLeft <= 0) advance();
         }
+        if (set === 'nghe') prepareListen(); // còn nghe tiếp / vừa tới lượt nghe → chọn trước câu sau để tạo sẵn giọng
         if (level !== 'normal' && (levelLeft -= 1) <= 0) {
           level = 'normal';
           levelBy = null;
           dirty = true;
         }
-        return q;
+        return notice ? { ...q, notice } : q;
       }
     },
     /** Danh mục quà thật của phòng (server lưu lại giữa các buổi live). */
@@ -182,7 +271,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     },
     restore(s) {
       if (!s) return;
-      if (s.set && (s.set === 'general' || sets[s.set]?.length)) {
+      if (s.set && (s.set === 'general' || sets[s.set]?.length || (s.set === 'nghe' && listen.length))) {
         set = s.set;
         setLeft = Math.max(0, Number(s.setLeft) || 0);
         setBy = s.setBy || null;
@@ -199,7 +288,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
           questions: Math.max(1, Number(item.questions) || ENGLISH_HOLD_QUESTIONS),
           giftName: item.giftName || '',
           giftPicture: item.giftPicture || ''
-        })).filter((item) => ENGLISH_TARGETS[item.to] && (ENGLISH_TARGETS[item.to].kind === 'level' || sets[item.to]?.length));
+        })).filter((item) => ENGLISH_TARGETS[item.to] && (ENGLISH_TARGETS[item.to].kind !== 'set' || sets[item.to]?.length));
       }
       // Tự rebalance sau restore: nếu queue đông thì rút ngắn câu ngay
       if (set !== 'general' || deckQueue.length > 0) rebalanceQueue();
@@ -222,7 +311,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
           user: q.user ? { id: q.user.id, nickname: q.user.nickname, avatar: q.user.avatar } : null,
           giftPicture: q.giftPicture || ''
         })),
-        rules: assignments.map((a) => ({ to: a.to, icon: ENGLISH_TARGETS[a.to].icon, label: ENGLISH_TARGETS[a.to].label, gift: a.gift }))
+        rules: assignments.filter((a) => a.to !== 'nghe' || (listen.length && listenReady())).map((a) => ({ to: a.to, icon: ENGLISH_TARGETS[a.to].icon, label: ENGLISH_TARGETS[a.to].label, gift: a.gift }))
       };
     }
   };

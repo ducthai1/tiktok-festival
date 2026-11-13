@@ -1,5 +1,6 @@
 // Xử lý lệnh từ trang điều khiển (đã qua kiểm token ở socket-hub). Mọi tham số được
 // kiểm lại ở đây; lệnh sai trả lỗi chứ không làm sập server.
+import { ORDER } from '../public/shared/english-sets.js';
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
 
@@ -10,7 +11,9 @@ const GAME_COMMANDS = {
   dance: ['drop', 'clear', 'seeds'],
   swim: ['pause', 'resume', 'resetRound', 'resetWins'],
   temple: ['resetMerit', 'clear'],
-  ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS]))
+  ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS])),
+  // tab tiếng Anh: nút đổi bộ đề / độ khó / Luyện nghe bằng tay (trước đây thiếu → nút ở trang điều khiển bị từ chối)
+  english: [...QUIZ_COMMANDS, ...ORDER.map((to) => `deck-${to}`), 'resetDeck']
 };
 const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 

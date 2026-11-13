@@ -9,6 +9,8 @@ import { VN_GIFTS_UP_TO_30 } from './tiktok-gifts-vn.js';
 
 /** Đổi xong giữ trong bấy nhiêu câu rồi tự về mặc định (Tổng hợp · Vừa). Tặng lại thì đếm lại từ đầu. */
 export const ENGLISH_HOLD_QUESTIONS = 20;
+/** Luyện nghe (quà 30 xu): bấy nhiêu câu nghe giọng bản xứ rồi gõ lại từ — không bị rút ngắn khi nhiều người chờ đổi bộ. */
+export const LISTEN_QUESTIONS = 40;
 /** Giá cao nhất (xu) của một món quà được dùng để đổi đề. */
 export const ENGLISH_MAX_COINS = 30;
 
@@ -19,20 +21,21 @@ export const ENGLISH_MAX_COINS = 30;
  * Muốn đổi món / giá: sửa tên ở đây (phải có trong tiktok-gifts-vn.js), chạy npm run gate.
  */
 export const ENGLISH_GIFT_PLAN = {
-  general: 'TikTok', easy: 'Rose', hard: 'Heart Me', dongvat: 'Brown Paw', amthuc: 'Peach', truonghoc: 'Finger Heart', dovat: 'Rosa',
-  toeic: 'Doughnut', ielts: 'Perfume', congnghe: 'Tiny Diny', bongda: 'Lucky Pig', yhoc: 'Squirrel',
+  general: 'TikTok', easy: 'Rose', hard: 'Heart Me', dongvat: 'Brown Paw', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
+  toeic: 'Capybara', ielts: 'Perfume', congnghe: 'Tiny Diny', bongda: 'Lucky Pig', yhoc: 'Squirrel',
   dulich: 'Friendship Necklace', giaitri: 'Cheer You Up'
 };
 
 export const ENGLISH_TARGETS = {
-  // Trang 1: Đại trà & Dễ chơi (hiện 20s) — quà 1 / 5 / 10 xu
+  // Trang 1: Đại trà & Dễ chơi (hiện 20s) — quà 1 / 5 / 10 / 30 xu (Đồ vật đã gộp vào Tổng hợp)
   general:   { kind: 'reset', icon: '🌐', label: 'Tổng hợp' },
   easy:      { kind: 'level', icon: '😊', label: 'Dễ' },
   hard:      { kind: 'level', icon: '🔥', label: 'Khó' },
   dongvat:   { kind: 'set',   icon: '🐾', label: 'Động vật' },
   amthuc:    { kind: 'set',   icon: '🍕', label: 'Ẩm thực' },
   truonghoc: { kind: 'set',   icon: '🎒', label: 'Trường học' },
-  dovat:     { kind: 'set',   icon: '🏠', label: 'Đồ vật' },
+  // 🎧 nghe từ (giọng Mỹ / Anh / Úc) rồi gõ lại — chỉ hiện khi giọng đọc tiếng Anh đang chạy tốt (english-switcher.js)
+  nghe:      { kind: 'listen', icon: '🎧', label: 'Luyện nghe' },
 
   // Trang 2: Thử thách & Đam mê (hiện 12s) — quà quen: 9 / 10 / 20 / 30 xu
   toeic:     { kind: 'set',   icon: '💼', label: 'TOEIC' },
@@ -45,7 +48,7 @@ export const ENGLISH_TARGETS = {
 };
 export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '⚖️', label: 'Độ khó: Thường' } };
 export const ORDER = [
-  'general', 'easy', 'hard', 'dongvat', 'amthuc', 'truonghoc', 'dovat',
+  'general', 'easy', 'hard', 'dongvat', 'amthuc', 'truonghoc', 'nghe',
   'toeic', 'ielts', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri'
 ];
 

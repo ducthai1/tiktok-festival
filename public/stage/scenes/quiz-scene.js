@@ -274,7 +274,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     return line;
   };
   const rulesKey = { dovui: 'abcd', wordle: 'wordle', math: 'math', english: 'english', emoji: 'emoji' }[id] || 'text';
-  foot.append(rich(['✍️ ', ...mode.hint], 'how'), rich(GIFT_RULES[rulesKey], 'gift'));
+  const howLine = rich(['✍️ ', ...mode.hint], 'how');
+  // 🎧 Luyện nghe (tab tiếng Anh): đổi dòng hướng dẫn cho đúng cách chơi
+  const listenHow = rich(['🎧 Nghe giọng bản xứ (đọc 3 lần), ', '*gõ lại từ tiếng Anh*', ' · 5 bạn nhanh nhất được điểm'], 'how');
+  listenHow.hidden = true;
+  foot.append(howLine, listenHow, rich(GIFT_RULES[rulesKey], 'gift'));
   card.append(head, timer, body, winnersRow, foot);
   const deckPanel = (id === 'english' || id === 'emoji') ? createDeckPanel(hud, id) : null;
   hud.gameRoot.append(card);
@@ -297,11 +301,16 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       parts.push(el('div', `quiz-math${text.length > 12 ? ' long' : ''}`, text));
     } else parts.push(el('div', `quiz-prompt${state.prompt.length > 80 ? ' long' : ''}`, state.prompt));
     if (state.mask) {
-      const mask = el('div', `quiz-mask${state.mask.filter((c) => c !== ' ').length > 13 ? ' long' : ''}`);
+      // mỗi TỪ là một nhóm ô liền nhau — xuống dòng giữa hai từ, không cắt giữa từ ("CHEC / K")
+      const mask = el('div', `quiz-mask${state.mask.filter((c) => c !== ' ').length > 11 ? ' long' : ''}`);
+      let word = el('span', 'word');
       for (const ch of state.mask) {
-        if (ch === ' ') mask.append(el('span', 'gap'));
-        else mask.append(el('span', ch === '_' ? 'tile' : 'tile open', ch === '_' ? '' : ch.toUpperCase()));
+        if (ch === ' ') {
+          mask.append(word, el('span', 'gap'));
+          word = el('span', 'word');
+        } else word.append(el('span', ch === '_' ? 'tile' : 'tile open', ch === '_' ? '' : ch.toUpperCase()));
       }
+      mask.append(word);
       parts.push(mask);
     }
     body.replaceChildren(...parts);
@@ -391,6 +400,9 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       timerFill.style.width = `${state.phase === 'question' && state.totalMs ? (state.msLeft / state.totalMs) * 100 : 0}%`;
       card.classList.toggle('urgent', state.phase === 'question' && !state.leadIn && seconds <= 5);
       card.classList.toggle('reveal', state.phase === 'reveal');
+      card.classList.toggle('listening', Boolean(state.listen));
+      howLine.hidden = Boolean(state.listen);
+      listenHow.hidden = !state.listen;
       if (state.phase === 'question' && !state.leadIn && seconds <= 5 && seconds > 0 && seconds !== lastSecond && !state.paused) audio.play('chirp');
       lastSecond = seconds;
       // vẽ lại phần thân khi dữ liệu đổi (không vẽ lại mỗi lần đồng hồ nhảy)
@@ -409,6 +421,12 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       if (fx.kind === 'quizQuestion') {
         audio.play('whoosh');
         if (fx.speech) audio.speak(fx.speech, 'story');
+      } else if (fx.kind === 'quizListen') {
+        // 🎧 Luyện nghe: máy chủ hẹn giờ đọc từ (ra đề / đọc chậm / giữa giờ); thẻ câu hỏi nháy loa
+        audio.speakEnglish?.(fx.word, { slow: fx.slow });
+        card.classList.remove('speaking');
+        void card.offsetWidth;
+        card.classList.add('speaking');
       } else if (fx.kind === 'quizCorrect') {
         audio.play('coin');
         if (fx.rank === 1) confetti(120);

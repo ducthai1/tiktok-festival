@@ -11,14 +11,14 @@ import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 import { createQuizGames } from './quiz/quiz-games.js';
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
-  onEnglishAnswer = null } = {}) {
+  onEnglishAnswer = null, englishListenReady = () => false } = {}) {
   const games = new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
     ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
     ['swim', createSwimPushGame()],
-    ...createQuizGames({ random, englishProgress, onEnglishAnswer }).map((g) => [g.id, g])
+    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady }).map((g) => [g.id, g])
   ]);
   const board = createSessionLeaderboard();
   const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });

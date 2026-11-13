@@ -59,6 +59,8 @@ html.lite .quiz-card { backdrop-filter: none; background: rgba(8, 10, 22, 0.92);
   background: rgba(255, 255, 255, 0.1); border: 3px solid rgba(255, 255, 255, 0.35); box-sizing: border-box; }
 .quiz-mask .tile.open { background: var(--quiz); color: #10131c; border-color: #ffffff; }
 .quiz-mask .gap { width: 22px; }
+.quiz-mask .word { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; max-width: 100%; }
+.quiz-mask.long .word { gap: 6px; }
 .quiz-mask.long { gap: 6px; }
 .quiz-mask.long .tile { width: 44px; height: 54px; font-size: 32px; border-radius: 9px; border-width: 2px; }
 .quiz-mask.long .gap { width: 14px; }
@@ -186,3 +188,9 @@ html.lite .deck-panel { background: rgba(8, 10, 22, 0.92); }
 .quiz-ambassadors .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .quiz-ambassadors b { color: #6ee7ff; }
 html.lite .quiz-ambassadors { background: rgba(8, 10, 22, 0.92); }
+
+/* 🎧 Luyện nghe: đề to, loa nháy mỗi lần đọc từ */
+.quiz-card.listening .quiz-prompt { font-size: 44px; color: #9fe8ff; text-shadow: 0 0 18px rgba(80, 200, 255, 0.55); }
+.quiz-card.listening.reveal .quiz-prompt { font-size: 36px; color: #fff; text-shadow: none; }
+.quiz-card.listening.speaking .quiz-prompt { animation: quiz-listen-pulse 1.4s ease-out; }
+@keyframes quiz-listen-pulse { 0% { transform: scale(1); } 15% { transform: scale(1.08); } 100% { transform: scale(1); } }

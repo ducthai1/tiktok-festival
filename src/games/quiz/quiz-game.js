@@ -108,7 +108,10 @@ export function createQuizGame({
   const sharers = new Map(); // id → { id, nickname, avatar, shares }
   let hintsByGifts = 0;
 
-  const totalMs = () => (kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : questionMs);
+  const totalMs = () => (kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : q?.timeMs || questionMs);
+  // Luyện nghe (q.listen): đọc từ lúc ra đề, đọc CHẬM sau ~7 giây, đọc lại giữa giờ (live trễ / người vào giữa chừng vẫn nghe kịp)
+  let listenAt = []; // [{ at: ms kể từ lúc ra đề, slow }] — tính theo phaseStart nên tạm dừng không làm lệch
+
   const mult = () => (diamond ? 3 : golden ? 2 : 1);
 
   function touch(user, now) {
@@ -188,7 +191,12 @@ export function createQuizGame({
     countStart = now + LEAD_IN_MS;
     phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
     const intro = diamond ? 'Câu Kim Cương, NHÂN BA ĐIỂM! ' : golden ? 'Câu Vàng, nhân đôi điểm! ' : '';
-    fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, speech: intro + (speakLine(q) || '') });
+    if (q.notice) fx.push({ kind: 'toast', text: q.notice });
+    fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, listen: Boolean(q.listen),
+      speech: intro + (speakLine(q) || '') });
+    const total = lightningIndex ? LIGHTNING_MS : totalMs();
+    listenAt = !q.listen ? [] : lightningIndex ? [{ at: 300, slow: false }]
+      : [{ at: 300, slow: false }, { at: 7000, slow: true }, { at: LEAD_IN_MS + Math.round(total * 0.55), slow: false }];
     if (pronounce && onPronounce) {
       try {
         onPronounce(pronounce(q));
@@ -219,6 +227,7 @@ export function createQuizGame({
     }
   }
   function reveal(now, fx) {
+    listenAt = []; // lật sớm (đủ người đúng / bấm câu tiếp) thì thôi đọc lại
     if (kind === 'abcd') {
       const right = [...votes.values()].filter((v) => v.idx === rightIndex).sort((a, b) => a.at - b.at);
       winners = right.map((v, rank) => {
@@ -433,6 +442,10 @@ export function createQuizGame({
         return fx;
       }
       if (phase === 'question') {
+        while (listenAt.length && now - phaseStart >= listenAt[0].at) {
+          const { slow } = listenAt.shift();
+          if (pronounce) fx.push({ kind: 'quizListen', word: pronounce(q), slow });
+        }
         // gợi ý tự động khi đã qua 50% và 75% thời gian (chỉ đoán chữ)
         const ratio = (now - countStart) / totalMs();
         if (autoHints && kind === 'text' && !q.math) {
@@ -525,7 +538,9 @@ export function createQuizGame({
         paused,
         qNumber,
         category: q?.category || '',
-        prompt: q && kind !== 'wordle' ? q.prompt : '',
+        // luyện nghe: lúc hỏi chỉ có "🎧 Nghe rồi gõ lại", lật đáp án mới hiện nghĩa tiếng Việt
+        prompt: q && kind !== 'wordle' ? (phase === 'reveal' && q.revealPrompt ? q.revealPrompt : q.prompt) : '',
+        listen: Boolean(q?.listen),
         emoji: q?.emoji || '',
         flag: q?.flag || '',
         math: Boolean(q?.math),

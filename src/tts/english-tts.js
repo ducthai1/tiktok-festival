@@ -200,9 +200,13 @@ export function createEnglishTts({
     return job;
   }
 
-  /** Cài môi trường lần đầu (chạy nền, không chặn server). */
+  /** Cài môi trường lần đầu (chạy nền, không chặn server); đã cài thì đọc thử một từ để biết giọng đọc chạy được chưa. */
   function start() {
-    if (installed() || setupState === 'running') return;
+    if (installed()) {
+      clip('hello');
+      return;
+    }
+    if (setupState === 'running') return;
     setupState = 'running';
     const t0 = now();
     console.log('[tts-en] chưa có giọng đọc tiếng Anh → đang tự cài edge-tts (chạy nền, ~30 giây)…');
@@ -256,6 +260,7 @@ export function createEnglishTts({
       clip(answer).then(() => clip(answer, { slow: true }));
     },
     voiceFor: (answer) => voiceFor(speakableEnglish(answer)),
-    status: () => ({ installed: installed(), setup: setupState, failures, paused: now() < pausedUntil })
+    // ok: đã đọc được ít nhất một từ và không đang nghỉ vì lỗi 3 lần liền — điều kiện mở chế độ Luyện nghe
+    status: () => ({ installed: installed(), setup: setupState, failures, paused: now() < pausedUntil, ok: worked && now() >= pausedUntil && installed() })
   };
 }

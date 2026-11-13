@@ -85,7 +85,9 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const englishTts = voice || englishSynth ? createEnglishTts({ dataDir, synthesize: englishSynth }) : null;
   const hub = createGameHub({
     startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress,
-    onEnglishAnswer: englishTts && ((word) => settings.ttsEnglish !== false && englishTts.prefetch(word))
+    onEnglishAnswer: englishTts && ((word) => settings.ttsEnglish !== false && englishTts.prefetch(word)),
+    // 🎧 Luyện nghe chỉ mở khi màn hình đang đọc tiếng Anh và giọng đọc vừa đọc được (không lỗi liên tiếp)
+    englishListenReady: () => Boolean(englishTts) && settings.ttsEnglish !== false && englishTts.status().ok
   });
   let port = config.port;
   let lastStateText = '';

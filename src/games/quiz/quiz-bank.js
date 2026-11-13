@@ -112,11 +112,14 @@ export function loadEnglishQuestions() {
   const file = lopHocFiles().find((f) => f.file === ENGLISH_FILE);
   const basic = parseTextBank(file.text).map((q) => ({ ...q, category: 'Tiếng Anh · Cơ bản', basic: true }));
   const topics = readTxtDir('tieng-anh').flatMap((f) => parseTextBank(f.text, 'Tiếng Anh').map((q) => ({ ...q, category: q.category.startsWith('Tiếng Anh') ? q.category : `Tiếng Anh · ${q.category}`, file: f.file })));
+  // bộ đã bỏ ô quà riêng (13/11/2026: Đồ vật) → từ của bộ đó vào Tổng hợp
+  const merged = readTxtDir('tieng-anh-bo').filter((f) => MERGED_SET_FILES.some((base) => f.file === `${base}.txt` || f.file.startsWith(`${base}-`)))
+    .flatMap((f) => parseTextBank(f.text).map((q) => ({ ...q, category: q.category.replace(/^Bộ đề · /, 'Tiếng Anh · ').replace(/ \(bổ sung\)$/, ''), file: f.file })));
   // Loại bỏ các từ đã có trong bộ đề quà (tieng-anh-bo) để tránh trùng lặp khi user đổi topic
   const setKeys = loadEnglishSetAnswerKeys();
   // Dedup bằng answer (không phân biệt hoa thường) — cùng đáp án dù prompt khác cũng chỉ lấy 1 bản
   const seenAns = new Set();
-  return [...basic, ...topics].filter((q) => {
+  return [...basic, ...topics, ...merged].filter((q) => {
     if (setKeys.has(foldText(q.answer))) return false; // từ trong bộ đề riêng → bỏ khỏi general
     const ansKey = foldText(q.answer);
     if (seenAns.has(ansKey)) return false;
@@ -131,8 +134,10 @@ const ENGLISH_SET_FILES = {
   toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt',
   bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt', truonghoc: 'truong-hoc.txt',
   dongvat: 'dong-vat.txt', amthuc: 'am-thuc.txt', thanhngu: 'thanh-ngu.txt',
-  dovat: 'do-vat.txt', dulich: 'du-lich.txt', giaitri: 'giai-tri.txt'
+  dulich: 'du-lich.txt', giaitri: 'giai-tri.txt'
 };
+// bộ không còn ô quà riêng: từ nằm trong Tổng hợp (loadEnglishQuestions)
+const MERGED_SET_FILES = ['do-vat'];
 export function loadEnglishSets() {
   const files = readTxtDir('tieng-anh-bo');
   return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => {

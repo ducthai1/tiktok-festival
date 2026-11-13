@@ -5,6 +5,7 @@ import {
 } from './quiz-bank.js';
 import { createEmojiSwitcher } from './emoji-switcher.js';
 import { createEnglishSwitcher } from './english-switcher.js';
+import { foldText, isCleanForDisplay } from '../text-match.js';
 import { createQuizGame } from './quiz-game.js';
 
 let banks = null; // đọc file một lần cho cả server (test tạo nhiều hub vẫn nhanh)
@@ -21,16 +22,28 @@ function loadBanks() {
   return banks;
 }
 
+/** Luyện nghe: MỌI từ tiếng Anh trong kho (Tổng hợp + mọi bộ, mọi độ khó), bỏ trùng; chỉ từ giọng đọc đọc được (không tục). */
+function listenPool(english, sets) {
+  const seen = new Set();
+  return [...english, ...Object.values(sets).flat()].filter((q) => {
+    const key = foldText(q.answer).replace(/ /g, '');
+    if (!key || seen.has(key) || q.answer.length > 60 || !/^[A-Za-z0-9][A-Za-z0-9 '&.-]*$/.test(q.answer) || !isCleanForDisplay(q.answer)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'];
 
 // onEnglishAnswer(từ): câu tiếng Anh vừa ra — máy chủ tạo sẵn giọng đọc đáp án (src/tts/english-tts.js)
-export function createQuizGames({ random = Math.random, englishProgress = null, onEnglishAnswer = null } = {}) {
+// englishListenReady(): giọng đọc tiếng Anh đang chạy tốt → mới mở ô 🎧 Luyện nghe
+export function createQuizGames({ random = Math.random, englishProgress = null, onEnglishAnswer = null, englishListenReady = () => false } = {}) {
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
   // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)
   const english = createEnglishSwitcher({
     general: b.english.filter((q) => !q.basic), basic: b.english.filter((q) => q.basic), sets: b.englishSets, random,
-    progress: englishProgress
+    progress: englishProgress, listen: listenPool(b.english, b.englishSets), listenReady: englishListenReady, onPrefetch: onEnglishAnswer
   });
   const emoji = createEmojiSwitcher({ all: b.emoji, random });
   return [
@@ -41,7 +54,8 @@ export function createQuizGames({ random = Math.random, englishProgress = null, 
       id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
       onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot(),
       onRestore: (control) => english.restore(control),
-      onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => q.answer, onPronounce: onEnglishAnswer
+      onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => q.answer, onPronounce: onEnglishAnswer,
+      speakLine: (q) => (q.listen ? '' : q.speech || q.prompt) // luyện nghe: không đọc đề tiếng Việt, chỉ nghe từ tiếng Anh
     }),
     createQuizGame({
       id: 'emoji', title: 'Đuổi Hình Bắt Chữ', deck: emoji.deck, questionMs: 30000, 

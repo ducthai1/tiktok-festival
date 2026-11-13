@@ -15,8 +15,8 @@ const GAME_COMMANDS = {
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
   temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']],
   ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS])),
-  english: [...QUIZ_COMMANDS.filter(([name]) => name !== 'hint'), ['deck-easy', '😊 Dễ'], ['deck-hard', '🔥 Khó'], ['deck-toeic', '💼 TOEIC'],
-    ['deck-ielts', '🎓 IELTS'], ['deck-yhoc', '🩺 Y học'], ['deck-bongda', '⚽ Bóng đá'], ['deck-congnghe', '💻 Công nghệ'], ['resetDeck', '↺ Về Tổng hợp']]
+  english: [...QUIZ_COMMANDS.filter(([name]) => name !== 'hint'), ['deck-nghe', '🎧 Luyện nghe 40 câu'], ['deck-easy', '😊 Dễ'], ['deck-hard', '🔥 Khó'], ['deck-toeic', '💼 TOEIC'],
+    ['deck-ielts', '🎓 IELTS'], ['deck-yhoc', '🩺 Y học'], ['deck-bongda', '⚽ Thể thao'], ['deck-congnghe', '💻 Công nghệ'], ['resetDeck', '↺ Về Tổng hợp']]
 };
 
 let token = '';
