@@ -42,7 +42,7 @@ export function giftTierIn(coinsEach, mins) {
   return tier;
 }
 
-// Quà mẫu cho chế độ thử và bảng chú thích (giá phổ biến; có thể lệch theo vùng). Ảnh là ảnh CHÍNH THỨC
+// Quà mẫu cho chế độ thử và bảng chú thích — GIÁ THẬT vùng VN (streamtoearn.io/gifts?region=VN, 13/11/2026; không tự đặt giá). Ảnh là ảnh CHÍNH THỨC
 // của TikTok trên máy chủ ảnh của TikTok (tiktokcdn.com) — người xem nhận ra đúng món để tặng. Nối live thì
 // quà nhận được (tên, giá, ảnh thật của phòng) được gom thêm vào danh mục.
 const CDN = 'https://p16-webcast.tiktokcdn.com/img/';
@@ -50,17 +50,13 @@ export const SAMPLE_GIFTS = [
   { id: 'rose', name: 'Hoa hồng', en: 'Rose', emoji: '🌹', coins: 1, image: `${CDN}maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.png` },
   { id: '5269', name: 'TikTok', en: 'TikTok', emoji: '🎵', coins: 1, image: `${CDN}maliva/webcast-va/802a21ae29f9fae5abe3693de9f874bd~tplv-obj.png` },
   { id: '7934', name: 'Heart Me', en: 'Heart Me', emoji: '🤍', coins: 1, image: `${CDN}alisg/webcast-sg/heartme_outfit/base_heartme_composition.png~tplv-resize:258:258.webp` },
-  { id: 'corgi-pet', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 5, image: `${CDN}maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp` },
-  { id: 'donut-food', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 5, image: `${CDN}maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp` },
-  { id: '15232', name: "You're awesome", en: "You're awesome", emoji: '😎', coins: 5, image: `${CDN}alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.png` },
+  { id: '15232', name: "You're awesome", en: "You're awesome", emoji: '😎', coins: 1, image: `${CDN}alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.png` },
   { id: 'rosa', name: 'Rosa', en: 'Rosa', emoji: '💐', coins: 10, image: `${CDN}maliva/webcast-va/eb77ead5c3abb6da6034d3cf6cfeb438~tplv-obj.webp` },
-  { id: '15231', name: 'Love you so much', en: 'Love you so much', emoji: '🥰', coins: 15, image: `${CDN}alisg/webcast-sg/resource/fc549cf1bc61f9c8a1c97ebab68dced7.png~tplv-obj.png` },
-  { id: 'finger-heart', name: 'Bắn tim', en: 'Finger Heart', emoji: '🫰', coins: 15, image: `${CDN}maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.png` },
-  { id: 'rocket-tech', name: 'Tên lửa', en: 'Rocket', emoji: '🚀', coins: 15, image: `${CDN}maliva/webcast-va/8520d47b59c202a4534c1560a355ae06~tplv-obj.webp` },
-  { id: '105781', name: 'Spinning Soccer', en: 'Spinning Soccer', emoji: '⚽', coins: 15, image: `${CDN}alisg/webcast-sg/resource/74a30ed3492d3e7d317efe7e10c3ba51.png~tplv-obj.png` },
-  { id: '919346', name: 'Welcome Dallah', en: 'Welcome Dallah', emoji: '🫖', coins: 15, image: `${CDN}alisg/webcast-sg/resource/1b65232470d2c0a9f85cfbc70b38307b.png~tplv-obj.png` },
-  { id: 'airplane', name: 'Máy bay', en: 'Private Jet', emoji: '✈️', coins: 15, image: `${CDN}alisg/webcast-sg/airplane_icon_gold.png~tplv-obj.webp` },
-  { id: 'sunglasses', name: 'Kính râm', en: 'Sunglasses', emoji: '🕶️', coins: 15, image: `${CDN}alisg/webcast-sg/08af67ab13a8053269bf539fd27f3873.png~tplv-obj.webp` },
+  { id: '15231', name: 'Love you so much', en: 'Love you so much', emoji: '🥰', coins: 1, image: `${CDN}alisg/webcast-sg/resource/fc549cf1bc61f9c8a1c97ebab68dced7.png~tplv-obj.png` },
+  { id: 'finger-heart', name: 'Bắn tim', en: 'Finger Heart', emoji: '🫰', coins: 5, image: `${CDN}maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.png` },
+  { id: '105781', name: 'Spinning Soccer', en: 'Spinning Soccer', emoji: '⚽', coins: 5, image: `${CDN}alisg/webcast-sg/resource/74a30ed3492d3e7d317efe7e10c3ba51.png~tplv-obj.png` },
+  { id: '919346', name: 'Welcome Dallah', en: 'Welcome Dallah', emoji: '🫖', coins: 1, image: `${CDN}alisg/webcast-sg/resource/1b65232470d2c0a9f85cfbc70b38307b.png~tplv-obj.png` },
+  { id: 'sunglasses', name: 'Kính râm', en: 'Sunglasses', emoji: '🕶️', coins: 199, image: `${CDN}alisg/webcast-sg/08af67ab13a8053269bf539fd27f3873.png~tplv-obj.webp` },
   { id: 'doughnut', name: 'Bánh donut', en: 'Doughnut', emoji: '🍩', coins: 30, image: `${CDN}maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp` },
   { id: 'cap', name: 'Mũ lưỡi trai', en: 'Cap', emoji: '🧢', coins: 99, image: `${CDN}maliva/webcast-va/6c2ab2da19249ea570a2ece5e3377f04~tplv-obj.webp` },
   { id: 'corgi', name: 'Corgi', en: 'Corgi', emoji: '🐶', coins: 299, image: `${CDN}maliva/webcast-va/148eef0884fdb12058d1c6897d1e02b9~tplv-obj.webp` },

@@ -2,7 +2,6 @@
 // Đổi có hiệu lực từ CÂU SAU (câu đang hỏi không bị cắt ngang), giữ ENGLISH_HOLD_QUESTIONS câu rồi tự về mặc định.
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
 import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
-import { SAMPLE_GIFTS } from '../../../public/shared/gift-tiers.js';
 import { foldText } from '../text-match.js';
 
 const MIN_POOL = 15;
@@ -30,9 +29,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
   let levelBy = null;
   let dirty = true;
   let deckQueue = [];
-  // chưa có danh mục quà thật của phòng thì tạm gán theo quà mẫu; có danh mục thật thì gán lại từ đầu một lần rồi giữ cố định
-  let assignments = assignEnglishGifts(SAMPLE_GIFTS);
-  let fromCatalog = false;
+  // mỗi ô một món cố định, giá thật vùng VN (english-sets.js); phòng nhận được món đó thì dùng id + giá TikTok báo
+  let assignments = assignEnglishGifts([]);
 
   // ── Xoay vòng KHÔNG LẶP trên toàn bộ từ: sổ "đã hỏi" dùng CHUNG mọi bộ, theo từ tiếng Anh (đáp án).
   // Đang ở Tổng hợp câu 100 → đổi sang TOEIC (chỉ ra từ chưa hỏi ở bất kỳ đâu) → quay về Tổng hợp đi tiếp câu 101
@@ -158,11 +156,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     /** Danh mục quà thật của phòng (server lưu lại giữa các buổi live). */
     setCatalog(catalog) {
       if (!catalog?.length) return;
-      const next = assignEnglishGifts(catalog, fromCatalog ? assignments : []);
-      if (next.length) {
-        assignments = next;
-        fromCatalog = true;
-      }
+      const next = assignEnglishGifts(catalog);
+      if (next.length) assignments = next;
     },
     onGift(event) {
       const gift = event.gift;
