@@ -146,9 +146,9 @@ html.lite .deck-panel { background: rgba(8, 10, 22, 0.92); }
   padding: 5px 2px 4px; border-radius: 14px; background: rgba(255, 255, 255, 0.07); border: 2px solid transparent; transition: background 300ms, border-color 300ms; }
 .deck-rule.on { background: rgba(125, 255, 138, 0.22); border-color: #7dff8a; box-shadow: 0 0 18px rgba(125, 255, 138, 0.55); }
 /* giá nằm DƯỚI ảnh quà (không đè lên ảnh — người xem phải nhìn rõ món để tìm trong hộp quà) */
-.deck-rule .gift { display: flex; flex-direction: column; align-items: center; gap: 1px; }
-.deck-rule .gift img { width: 44px; height: 44px; object-fit: contain; }
-.deck-rule .gift .emoji { font-size: 34px; line-height: 44px; }
+.deck-rule .gift { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.deck-rule .gift img { width: 54px; height: 54px; object-fit: contain; }
+.deck-rule .gift .emoji { font-size: 42px; line-height: 54px; }
 .deck-rule .gift i { padding: 0 5px; border-radius: 6px; background: rgba(0, 0, 0, 0.55); font: 800 13px/15px var(--font); font-style: normal; color: #ffe9b0; white-space: nowrap; }
 .deck-rule .arrow { font-size: 16px; color: rgba(255, 255, 255, 0.6); }
 .deck-rule .to { display: contents; }
