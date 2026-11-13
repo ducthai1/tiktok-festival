@@ -128,6 +128,11 @@ function createDeckPanel(hud, gameId) {
         to.append(el('b', '', rule.icon), el('small', '', rule.label));
         chip.append(giftIcon(rule.gift), el('span', 'arrow', '➜'), to);
         chip.classList.toggle('on', active.has(rule.to));
+        // 🎧 Luyện nghe (món 30 xu, tính năng nổi bật): viền lửa chạy vòng + hào quang + ngọn lửa ở góc để người xem chú ý
+        if (rule.to === 'nghe') {
+          chip.classList.add('hot');
+          chip.append(el('span', 'flame', '🔥'));
+        }
         return chip;
       });
       rulesRoot.style.gridTemplateColumns = `repeat(${Math.max(1, Math.min(chips.length, DECK_RULES_PER_PAGE))}, 1fr)`;
@@ -278,7 +283,10 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   // 🎧 Luyện nghe (tab tiếng Anh): đổi dòng hướng dẫn cho đúng cách chơi
   const listenHow = rich(['🎧 Nghe giọng bản xứ (đọc 3 lần), ', '*gõ lại từ tiếng Anh*', ' · 5 bạn nhanh nhất được điểm'], 'how');
   listenHow.hidden = true;
-  foot.append(howLine, listenHow, rich(GIFT_RULES[rulesKey], 'gift'));
+  // người xem hay hỏi "app gì, tải ở đâu, web gì" → ghi rõ: chỉ có trên live này
+  const exclusive = el('div', 'exclusive');
+  exclusive.append(el('span', 'lock', '🔒 '), rich(['Game ', '*ĐỘC QUYỀN*', ' chỉ có trên LIVE này — không có app, không có web'], 'shine'));
+  foot.append(howLine, listenHow, rich(GIFT_RULES[rulesKey], 'gift'), exclusive);
   card.append(head, timer, body, winnersRow, foot);
   const deckPanel = (id === 'english' || id === 'emoji') ? createDeckPanel(hud, id) : null;
   hud.gameRoot.append(card);
