@@ -114,7 +114,7 @@ function createDeckPanel(hud, gameId) {
   }
 
   return {
-    /** rules: [{ to, icon, label, gift }] — server gán sẵn món quà (tối đa 20 xu) cho từng ô. */
+    /** rules: [{ to, icon, label, gift }] — server gán sẵn món quà (tối đa 30 xu) cho từng ô. */
     setRules(rules) {
       const key = JSON.stringify(rules || []);
       if (key === rulesKey) return;

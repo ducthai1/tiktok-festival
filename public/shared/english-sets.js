@@ -1,26 +1,27 @@
-// Tab Từ Vựng Tiếng Anh: quà đổi BỘ ĐỀ hoặc ĐỘ KHÓ cho cả phòng. Mọi món tối đa 20 xu.
+// Tab Từ Vựng Tiếng Anh: quà đổi BỘ ĐỀ hoặc ĐỘ KHÓ cho cả phòng. Mọi món tối đa 30 xu.
 // Mỗi ô gắn CỐ ĐỊNH một món quà có thật ở TikTok Việt Nam, ghi ĐÚNG giá thật (public/shared/tiktok-gifts-vn.js).
 // Trước 13/11/2026 bảng lấy giá từ quà mẫu bị sửa sai (vd "You're awesome" ghi 5 xu, thật 1 xu) → người xem tặng món 1 xu
 // mà đổi được ô "5 xu". Giờ: giá trên bảng = giá thật, và máy chủ còn chặn: món nhận được rẻ hơn giá ghi trên bảng thì
 // KHÔNG đổi (TikTok có món trùng tên khác giá, vd "Love you" 1 xu và 199 xu) — chỉ cảm ơn.
 import { giftEmoji } from './gift-tiers.js';
 import { foldText } from './profanity-filter.js';
-import { VN_GIFTS_UP_TO_20 } from './tiktok-gifts-vn.js';
+import { VN_GIFTS_UP_TO_30 } from './tiktok-gifts-vn.js';
 
 /** Đổi xong giữ trong bấy nhiêu câu rồi tự về mặc định (Tổng hợp · Vừa). Tặng lại thì đếm lại từ đầu. */
 export const ENGLISH_HOLD_QUESTIONS = 20;
 /** Giá cao nhất (xu) của một món quà được dùng để đổi đề. */
-export const ENGLISH_MAX_COINS = 20;
+export const ENGLISH_MAX_COINS = 30;
 
 /**
  * Ô → món quà (tên đúng như TikTok VN). Giá lấy từ bảng giá thật, không ghi tay ở đây.
- * Vùng VN tới 20 xu chỉ có các mức 1 / 2 / 5 / 6 / 9 / 10 / 15 / 20 xu; chỉ 4 món 15 xu → 3 ô trang 2 dùng món 20 xu (13/11/2026).
+ * Trang 2 dùng quà QUEN MẶT (người xem nhận ra ngay trong hộp quà) thay cho các món 15–20 xu mới, ít ai biết — chủ kênh chọn
+ * 13/11/2026, chấp nhận giá thấp hơn ở vài ô.
  * Muốn đổi món / giá: sửa tên ở đây (phải có trong tiktok-gifts-vn.js), chạy npm run gate.
  */
 export const ENGLISH_GIFT_PLAN = {
   general: 'TikTok', easy: 'Rose', hard: 'Heart Me', dongvat: 'Brown Paw', amthuc: 'Peach', truonghoc: 'Finger Heart', dovat: 'Rosa',
-  toeic: 'Bravo!', ielts: 'Kudos for My Star', congnghe: 'Lyric Mail', bongda: 'Rage Mode', yhoc: 'Perfume',
-  dulich: 'Live Up Earth', giaitri: 'LOL'
+  toeic: 'Doughnut', ielts: 'Perfume', congnghe: 'Tiny Diny', bongda: 'Lucky Pig', yhoc: 'Squirrel',
+  dulich: 'Friendship Necklace', giaitri: 'Cheer You Up'
 };
 
 export const ENGLISH_TARGETS = {
@@ -33,7 +34,7 @@ export const ENGLISH_TARGETS = {
   truonghoc: { kind: 'set',   icon: '🎒', label: 'Trường học' },
   dovat:     { kind: 'set',   icon: '🏠', label: 'Đồ vật' },
 
-  // Trang 2: Thử thách & Đam mê (hiện 12s) — quà 15 / 20 xu
+  // Trang 2: Thử thách & Đam mê (hiện 12s) — quà quen: 9 / 10 / 20 / 30 xu
   toeic:     { kind: 'set',   icon: '💼', label: 'TOEIC' },
   ielts:     { kind: 'set',   icon: '🎓', label: 'IELTS' },
   congnghe:  { kind: 'set',   icon: '💻', label: 'Công nghệ' },
@@ -62,9 +63,9 @@ const sameGift = (planned, g) => sameName(planned.name, g.name) || sameName(plan
  */
 export function assignEnglishGifts(catalog = []) {
   return ORDER.map((to) => {
-    const want = VN_GIFTS_UP_TO_20.find((g) => g.name === ENGLISH_GIFT_PLAN[to]);
+    const want = VN_GIFTS_UP_TO_30.find((g) => g.name === ENGLISH_GIFT_PLAN[to]);
     if (!want) return null;
-    // phòng đã nhận món cùng tên (tối đa 20 xu) → theo id + giá TikTok báo; món trùng tên mà trên 20 xu là món khác → bỏ
+    // phòng đã nhận món cùng tên (tối đa 30 xu) → theo id + giá TikTok báo; món trùng tên mà trên 30 xu là món khác → bỏ
     const room = (catalog || []).find((g) => sameGift(want, g) && coinsOf(g) >= 1 && coinsOf(g) <= ENGLISH_MAX_COINS);
     return {
       to,

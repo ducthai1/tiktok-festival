@@ -1,7 +1,7 @@
-// Quà TikTok vùng VIỆT NAM tối đa 20 xu — tên, GIÁ THẬT, ảnh thật. Nguồn: https://streamtoearn.io/gifts?region=VN (cập nhật 13/11/2026).
+// Quà TikTok vùng VIỆT NAM tối đa 30 xu — tên, GIÁ THẬT, ảnh thật. Nguồn: https://streamtoearn.io/gifts?region=VN (cập nhật 13/11/2026).
 // Dùng cho tab Tiếng Anh: bảng đổi bộ đề chỉ được ghi đúng giá ở đây (hoặc giá TikTok báo khi phòng nhận được món đó).
 // TikTok đổi giá / thêm quà → chạy lại: node scripts/update-vn-gifts.mjs (tải trang trên, ghi lại file này).
-export const VN_GIFTS_UP_TO_20 = [
+export const VN_GIFTS_UP_TO_30 = [
   { name: 'Rose', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp' },
   { name: "You're awesome", coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.webp' },
   { name: 'Ice Cream Cone', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/968820bc85e274713c795a6aef3f7c67~tplv-obj.webp' },
@@ -102,5 +102,12 @@ export const VN_GIFTS_UP_TO_20 = [
   { name: 'Huh?', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/6493d7a8418c9046e09a09bacb78719a.png~tplv-obj.webp' },
   { name: 'little kisses', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/0a5db92508ee667339289b2f87bc3123.png~tplv-obj.webp' },
   { name: 'Traffic Cone', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/f16725cc0a80273348d18c47dfa3b4fb.png~tplv-obj.webp' },
-  { name: 'Mushroom', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/b48dd927cf3deb1a2012a1c3082ac9fb.png~tplv-obj.webp' }
+  { name: 'Mushroom', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/b48dd927cf3deb1a2012a1c3082ac9fb.png~tplv-obj.webp' },
+  { name: 'Doughnut', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/4e7ad6bdf0a1d860c538f38026d4e812~tplv-obj.webp' },
+  { name: 'Capybara', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/6703facdac34caefbd0617a6321afe9b.png~tplv-obj.webp' },
+  { name: 'Warm Cocoa', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/9a0ae13b71859d1e4be7f222d12ec6be.png~tplv-obj.webp' },
+  { name: 'Bouquet Flower', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/b158b8493b51a3f30c59710c39d1dc96~tplv-obj.webp' },
+  { name: 'Energy Capsule', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/ae6e7024207fb82bab2c9b78405796a2.png~tplv-obj.webp' },
+  { name: 'Energy Drop', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/7db8b8636dd2f3f1251bd1297375d318.png~tplv-obj.webp' },
+  { name: 'Ghostfire', coins: 30, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/2d49630ebd574db497a26dd20562ff7e.png~tplv-obj.webp' }
 ];
