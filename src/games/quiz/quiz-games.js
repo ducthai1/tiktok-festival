@@ -53,7 +53,7 @@ export function createQuizGames({ random = Math.random, englishProgress = null, 
       // quà đổi bộ đề (TOEIC, IELTS, Y học…) / độ khó — xem english-switcher.js; 176 từ cơ bản luôn ở cuối danh sách
       id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
       onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot(),
-      onRestore: (control) => english.restore(control),
+      onRestore: (control) => english.restore(control), onRoomReset: () => english.resetRoom(),
       onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => q.answer, onPronounce: onEnglishAnswer,
       speakLine: (q) => (q.listen ? '' : q.speech || q.prompt) // luyện nghe: không đọc đề tiếng Việt, chỉ nghe từ tiếng Anh
     }),

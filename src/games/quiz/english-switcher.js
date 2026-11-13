@@ -1,7 +1,9 @@
 // Bộ đề + độ khó của tab Từ Vựng Tiếng Anh, đổi bằng quà tối đa 30 xu (bảng gán quà ở public/shared/english-sets.js).
 // Đổi có hiệu lực từ CÂU SAU (câu đang hỏi không bị cắt ngang), giữ ENGLISH_HOLD_QUESTIONS câu rồi tự về mặc định.
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
-import { ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, LISTEN_QUESTIONS, assignEnglishGifts, englishTargetFor } from '../../../public/shared/english-sets.js';
+import {
+  ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, LISTEN_MIN_QUESTIONS, LISTEN_QUESTIONS, assignEnglishGifts, englishTargetFor
+} from '../../../public/shared/english-sets.js';
 import { foldText } from '../text-match.js';
 import { homophonesOf } from './homophones.js';
 
@@ -105,6 +107,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
 
   // ── Luyện nghe: 40 từ ngẫu nhiên trên TOÀN kho, sổ riêng ("nghe:…") — các lượt sau không lặp cho tới khi nghe hết cả kho
   let upcoming = null; // câu nghe kế tiếp đã chọn trước (để máy chủ kịp tạo giọng)
+  let listenAsked = 0; // số câu nghe đã ra trong lượt Luyện nghe này
+  let pending = null; // { to, user } — quà đổi bộ tới lúc Luyện nghe chưa đủ LISTEN_MIN_QUESTIONS câu: đổi khi đủ (món sau cùng thắng)
   const listenKey = (q) => `nghe:${keyOf(q)}`;
   function pickListen() {
     let fresh = listen.filter((q) => !seen.has(listenKey(q)));
@@ -146,6 +150,17 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     if (!target || (target.kind === 'set' && !sets[to]?.length)) return false;
     if (target.kind === 'listen' && (!listen.length || !listenReady())) return false; // giọng đọc hỏng → không nhận đổi
     dirty = true;
+    // Luyện nghe chưa đủ 20 câu: đổi độ khó thì ghi nhận (dùng sau, không ngắt câu nghe); đổi bộ / về Tổng hợp thì chờ đủ 20 câu
+    if (set === 'nghe' && to !== 'nghe' && listenAsked < LISTEN_MIN_QUESTIONS) {
+      if (target.kind === 'level') {
+        level = to;
+        levelLeft = ENGLISH_HOLD_QUESTIONS;
+        levelBy = user;
+        return 'same';
+      }
+      pending = { to, user };
+      return 'later';
+    }
     if (target.kind === 'reset') {
       if (set === 'general' && level === 'normal' && !deckQueue.length) return 'same';
       reset();
@@ -162,15 +177,37 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     if (set === to) {
       setLeft = questions;
       setBy = user;
+      if (to === 'nghe') listenAsked = 0; // tặng thêm Luyện nghe: đếm lại 40 câu, lại được giữ ít nhất 20 câu
       return 'same';
     }
+    pending = null;
     if (set === 'nghe') releaseListen(); // rời Luyện nghe: câu nghe đã chọn trước trả lại kho
     deckQueue = [];
     set = to;
     setLeft = questions;
     setBy = user;
-    if (target.kind === 'listen') prepareListen();
+    if (target.kind === 'listen') {
+      listenAsked = 0;
+      prepareListen();
+    }
     return 'switch';
+  }
+
+  /** Luyện nghe đã đủ 20 câu (hoặc dừng vì giọng đọc hỏng) → đổi sang bộ người xem đã tặng trong lúc nghe. */
+  function applyPending() {
+    const p = pending;
+    pending = null;
+    releaseListen();
+    if (ENGLISH_TARGETS[p.to].kind === 'reset') {
+      reset();
+    } else {
+      deckQueue = [];
+      set = p.to;
+      setLeft = ENGLISH_HOLD_QUESTIONS;
+      setBy = p.user;
+    }
+    dirty = true;
+    return `🎁 ${p.user?.nickname ? `${p.user.nickname}: ` : ''}đổi sang ${ENGLISH_TARGETS[p.to].icon} ${ENGLISH_TARGETS[p.to].label}`;
   }
 
   /** Bộ đang chạy hết lượt → bộ kế tiếp trong hàng chờ, hoặc về Tổng hợp. */
@@ -189,6 +226,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
 
   function reset() {
     releaseListen();
+    pending = null;
     set = 'general';
     level = 'normal';
     setLeft = 0;
@@ -209,27 +247,38 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
           releaseListen();
           console.warn(`[english] giọng đọc tiếng Anh lỗi → dừng Luyện nghe (còn ${setLeft} câu)`);
           setLeft = 0;
-          advance();
+          if (pending) applyPending();
+          else advance();
           notice = '🎧 Giọng đọc đang lỗi — tạm dừng Luyện nghe';
+        } else if (set === 'nghe' && pending && listenAsked >= LISTEN_MIN_QUESTIONS) {
+          notice = applyPending(); // đã nghe đủ 20 câu → đổi sang bộ người xem tặng trong lúc nghe
         }
         let q;
-        if (set === 'nghe') {
+        const listening = set === 'nghe';
+        if (listening) {
           q = upcoming || pickListen();
           upcoming = null;
+          listenAsked += 1;
         } else q = pick();
         // mỗi câu ra tiêu một lượt; hết lượt thì từ câu sau quay về mặc định
         if (set !== 'general') {
           setLeft -= 1;
           if (setLeft <= 0) advance();
         }
-        if (set === 'nghe') prepareListen(); // còn nghe tiếp / vừa tới lượt nghe → chọn trước câu sau để tạo sẵn giọng
-        if (level !== 'normal' && (levelLeft -= 1) <= 0) {
+        // còn nghe tiếp → chọn trước câu sau để tạo sẵn giọng (sắp đổi sang bộ đang chờ thì thôi)
+        if (set === 'nghe' && !(pending && listenAsked >= LISTEN_MIN_QUESTIONS)) prepareListen();
+        // Luyện nghe không dùng độ khó → không trừ lượt độ khó trong lúc nghe
+        if (!listening && level !== 'normal' && (levelLeft -= 1) <= 0) {
           level = 'normal';
           levelBy = null;
           dirty = true;
         }
         return notice ? { ...q, notice } : q;
       }
+    },
+    /** Phòng live mới: về Tổng hợp · Vừa, bỏ Luyện nghe / bộ đề / đổi bộ đang chờ của phòng cũ (sổ "đã hỏi" giữ nguyên — không lặp từ). */
+    resetRoom() {
+      reset();
     },
     /** Danh mục quà thật của phòng (server lưu lại giữa các buổi live). */
     setCatalog(catalog) {
@@ -245,6 +294,10 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const result = to && apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar });
       if (!result) return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
       const target = ENGLISH_TARGETS[to];
+      if (result === 'later') { // đang Luyện nghe chưa đủ 20 câu → đổi khi đủ
+        return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label, questions: ENGLISH_HOLD_QUESTIONS,
+          after: LISTEN_MIN_QUESTIONS - listenAsked }];
+      }
       return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label,
         questions: target.kind === 'level' ? levelLeft : setLeft, switchNow: result === 'switch' }];
     },
@@ -257,7 +310,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const to = name.startsWith('deck-') ? name.slice(5) : '';
       const result = to && apply(to, null);
       if (!result) return null;
-      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}`, switchNow: result === 'switch' }];
+      const later = result === 'later' ? ` sau ${LISTEN_MIN_QUESTIONS - listenAsked} câu Luyện nghe nữa` : '';
+      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}${later}`, switchNow: result === 'switch' }];
     },
     restore(s) {
       if (!s) return;
@@ -265,7 +319,10 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
         set = s.set;
         setLeft = Math.max(0, Number(s.setLeft) || 0);
         setBy = s.setBy || null;
+        listenAsked = Math.max(0, Number(s.listenAsked) || 0);
       }
+      // quà đổi bộ đang chờ Luyện nghe đủ 20 câu
+      pending = s.pending && ENGLISH_TARGETS[s.pending.to] ? { to: s.pending.to, user: s.pending.user || null } : null;
       if (s.level) {
         level = s.level;
         levelLeft = Math.max(0, Number(s.levelLeft) || 0);
@@ -287,7 +344,10 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const s = set === 'general' ? ENGLISH_DEFAULTS.set : ENGLISH_TARGETS[set];
       const l = level === 'normal' ? ENGLISH_DEFAULTS.level : ENGLISH_TARGETS[level];
       return {
-        set, setIcon: s.icon, setLabel: s.label, setLeft: set === 'general' ? 0 : setLeft, setBy,
+        set, setIcon: s.icon, setLabel: s.label, setLeft: set === 'general' ? 0 : setLeft, setBy, listenAsked,
+        // đổi bộ đang chờ (Luyện nghe chưa đủ 20 câu): bộ nào, ai tặng, còn mấy câu nghe nữa thì đổi
+        pending: pending ? { to: pending.to, icon: ENGLISH_TARGETS[pending.to].icon, label: ENGLISH_TARGETS[pending.to].label, user: pending.user,
+          after: Math.max(0, LISTEN_MIN_QUESTIONS - listenAsked) } : null,
         level, levelIcon: l.icon, levelLabel: l.label, levelLeft: level === 'normal' ? 0 : levelLeft, levelBy,
         deckQueue: deckQueue.map((q) => ({
           to: q.to,

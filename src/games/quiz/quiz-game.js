@@ -20,6 +20,10 @@ export const FOLLOW_POINTS = 3;
 export const FOLLOW_GOAL = 10;
 export const SHARE_ENERGY = 20;
 export const SHARE_ENERGY_MAX_PER_USER = 5;
+/** Quá bấy nhiêu không có tương tác nào (bình luận, tim, quà, share, follow, vào phòng) → xoá khỏi bảng xếp hạng + bảng đại sứ share,
+ * quay lại thì tính từ 0 (chủ kênh chốt 13/11/2026). */
+export const INACTIVE_MS = 2 * 60 * 60 * 1000;
+const PRUNE_EVERY_MS = 30000;
 export const LIGHTNING_QUESTIONS = 3;
 export const LIGHTNING_MS = 8000;
 const LIGHTNING_REVEAL_MS = 3500;
@@ -65,7 +69,8 @@ export function createQuizGame({
   id, title, kind = 'text', deck, questionMs = 25000, revealMs = 6500, firstLetter = true, autoHints = true,
   speakLine = (q) => q.speech || q.prompt, revealAnswerAloud = true, wordle = null, random = Math.random,
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
-  onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null
+  onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null,
+  onRoomReset = null // phòng live mới: tab tự xoá trạng thái riêng của phòng cũ (vd tab tiếng Anh: chế độ đề đang chạy)
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -105,7 +110,10 @@ export function createQuizGame({
   const followers = new Set(); // id người đang follow kênh (cờ từ TikTok / đã follow ở buổi trước / vừa follow)
   const followedNow = new Set(); // follow trong buổi này (mỗi người thưởng một lần)
   let followCount = 0;
-  const sharers = new Map(); // id → { id, nickname, avatar, shares }
+  const sharers = new Map(); // id → { id, nickname, avatar, shares, at } — bảng đại sứ (giữ qua các phòng live, xoá sau 2 tiếng im lặng)
+  const liveShares = new Map(); // id → số lần share TRONG PHÒNG LIVE NÀY (giới hạn năng lượng 5 lần/người/buổi)
+  let lastPrune = 0;
+  let clock = 0; // giờ của sự kiện / nhịp đang xử lý (đồng hồ của engine, không phải Date.now — test chạy đồng hồ giả)
   let hintsByGifts = 0;
 
   const totalMs = () => (kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : q?.timeMs || questionMs);
@@ -116,6 +124,11 @@ export function createQuizGame({
 
   function touch(user, now) {
     if (!user?.id) return;
+    // còn tương tác → còn trên bảng xếp hạng / bảng đại sứ
+    const row = scores.get(user.id);
+    if (row) row.at = now;
+    const sharer = sharers.get(user.id);
+    if (sharer) sharer.at = now;
     if (user.follower) followers.add(user.id);
     present.set(user.id, { id: user.id, nickname: user.nickname, avatar: user.avatar, at: now });
     if (present.size > 400) present.delete(present.keys().next().value);
@@ -123,6 +136,7 @@ export function createQuizGame({
 
   function addPoints(user, points, { correct = true } = {}) {
     const row = scores.get(user.id) || { id: user.id, nickname: user.nickname, avatar: user.avatar, points: 0, correct: 0, bolts: 0 };
+    row.at = row.at || clock;
     row.nickname = user.nickname;
     row.avatar = user.avatar;
     row.points += points;
@@ -383,6 +397,7 @@ export function createQuizGame({
     setGiftCatalog: (catalog) => onCatalog?.(catalog),
     handleEvent(event, now = Date.now()) {
       const fx = [];
+      clock = now;
       touch(event.user, now);
       if (event.type === 'chat') {
         if (phase !== 'question' || paused) return fx;
@@ -426,9 +441,11 @@ export function createQuizGame({
         }
       } else if (event.type === 'share') {
         const row = sharers.get(event.user.id) || { id: event.user.id, shares: 0 };
-        Object.assign(row, { nickname: event.user.nickname, avatar: event.user.avatar, shares: row.shares + 1 });
+        Object.assign(row, { nickname: event.user.nickname, avatar: event.user.avatar, shares: row.shares + 1, at: now });
         sharers.set(event.user.id, row);
-        const energized = row.shares <= SHARE_ENERGY_MAX_PER_USER && !paused;
+        const inRoom = (liveShares.get(event.user.id) || 0) + 1;
+        liveShares.set(event.user.id, inRoom);
+        const energized = inRoom <= SHARE_ENERGY_MAX_PER_USER && !paused;
         fx.push({ kind: 'quizShare', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, energy: energized ? SHARE_ENERGY : 0 });
         if (energized) {
           addEnergy(SHARE_ENERGY, fx);
@@ -441,6 +458,12 @@ export function createQuizGame({
     /** active=false: game đang ở tab khác → dừng đồng hồ, không ra câu mới. */
     tick(now = Date.now(), active = true) {
       const fx = [];
+      clock = now;
+      if (now - lastPrune >= PRUNE_EVERY_MS) {
+        lastPrune = now;
+        for (const [uid, r] of scores) if (now - (r.at || now) > INACTIVE_MS) scores.delete(uid);
+        for (const [uid, r] of sharers) if (now - (r.at || now) > INACTIVE_MS) sharers.delete(uid);
+      }
       const dt = lastTick === null ? 0 : Math.max(0, now - lastTick);
       lastTick = now;
       if (!active || paused) {
@@ -477,7 +500,24 @@ export function createQuizGame({
       } else if (phase === 'reveal' && now >= phaseEnd) startQuestion(now, fx);
       return fx;
     },
+    /**
+     * Phòng live MỚI (app.js nhận ra room id khác phòng trước): xoá thông số của phòng cũ — năng lượng tim, câu vàng / chớp nhoáng
+     * đang chờ, mốc follow + ai đã được +3 điểm follow, lượt share tính năng lượng, chế độ đề của tab. GIỮ bảng xếp hạng và bảng
+     * đại sứ (chúng tự xoá người im lặng quá 2 tiếng).
+     */
+    resetRoom() {
+      energy = 0;
+      goldenUnlocked = false;
+      goldenPending = false;
+      diamondPending = false;
+      lightningQueued = 0;
+      followedNow.clear();
+      followCount = 0;
+      liveShares.clear();
+      onRoomReset?.();
+    },
     command(name, now = Date.now()) {
+      clock = now;
       const own = onCommand?.(name, now);
       if (own) {
         const out = [...own];
@@ -514,7 +554,8 @@ export function createQuizGame({
       }
       if (state.allScores) {
         for (const r of state.allScores) {
-          scores.set(r.id, { id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || Math.floor(r.points / 5), bolts: r.bolts || 0 });
+          scores.set(r.id, { id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || Math.floor(r.points / 5), bolts: r.bolts || 0,
+            at: Number(r.at) || Date.now() });
         }
       } else if (state.board) {
         for (const r of state.board) {
@@ -524,7 +565,7 @@ export function createQuizGame({
       if (state.players) {
         for (const p of state.players) {
           present.set(p.id, { id: p.id, nickname: p.nickname, avatar: p.avatar, at: Date.now() });
-          if (!scores.has(p.id)) scores.set(p.id, { id: p.id, nickname: p.nickname, avatar: p.avatar, points: p.points, correct: 0 });
+          if (!scores.has(p.id)) scores.set(p.id, { id: p.id, nickname: p.nickname, avatar: p.avatar, points: p.points, correct: 0, at: Date.now() });
         }
       }
       if (state.energy) {
@@ -538,7 +579,7 @@ export function createQuizGame({
         lightningIndex = state.lightning.index;
       }
       if (state.ambassadors) {
-        for (const a of state.ambassadors) sharers.set(a.id, { id: a.id, nickname: a.nickname, avatar: a.avatar, shares: a.shares });
+        for (const a of state.ambassadors) sharers.set(a.id, { id: a.id, nickname: a.nickname, avatar: a.avatar, shares: a.shares, at: Number(a.at) || Date.now() });
       }
       if (state.control && onRestore) {
         onRestore(state.control);
@@ -571,7 +612,7 @@ export function createQuizGame({
         winners: winners.slice(0, 5).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
         correctCount: winners.length,
         board,
-        allScores: [...scores.values()].map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || 0, bolts: r.bolts || 0 })),
+        allScores: [...scores.values()].map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || 0, bolts: r.bolts || 0, at: r.at || 0 })),
         golden,
         lightning: lightningIndex ? { index: lightningIndex, total: LIGHTNING_QUESTIONS } : null,
         energy: { value: energy, golden: ENERGY_GOLDEN, max: ENERGY_LIGHTNING, goldenPending, lightningQueued,

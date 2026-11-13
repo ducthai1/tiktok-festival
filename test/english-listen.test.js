@@ -117,18 +117,44 @@ test('listening is hidden and refused while the English voice is down, and stops
   assert.equal(sw.snapshot().set, 'general');
 });
 
-test('another gift ends listening at once (no queue); a restart resumes a running listening round', () => {
-  const { sw } = setup();
-  sw.command('deck-nghe');
-  assert.equal(sw.snapshot().setLeft, LISTEN_QUESTIONS);
-  const saved = JSON.parse(JSON.stringify(sw.snapshot()));
+test('listening runs at least 20 questions: another set waits (last gift wins), a level gift never cuts it, then the set switches', () => {
+  const { sw, game } = setup();
+  game.tick(0);
+  game.handleEvent(doughnut(), 10);
+  assert.ok(game.snapshot(10).listen);
+  const fx = game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Capybara', diamondsEach: 30, count: 1, diamonds: 30 } }, 20);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']); // không ra câu mới
+  assert.equal(fx[0].after, 19);
+  assert.ok(game.snapshot(20).listen);
+  assert.deepEqual(game.handleEvent({ type: 'gift', user: user(3), gift: { name: 'Rose', diamondsEach: 1, count: 1, diamonds: 1 } }, 30).map((f) => f.kind), ['quizDeck']);
+  assert.deepEqual([sw.snapshot().set, sw.snapshot().level, sw.snapshot().pending.to], ['nghe', 'easy', 'toeic']);
+  const saved = JSON.parse(JSON.stringify(sw.snapshot())); // khởi động lại giữa chừng vẫn nhớ
+  const kinds = [];
+  let t = 100;
+  for (let i = 0; i < 20; i += 1) {
+    game.command('next', (t += 10));
+    const qfx = game.command('next', (t += 10));
+    kinds.push(game.snapshot(t).listen ? 'nghe' : sw.snapshot().set);
+    if (i === 19) assert.ok(qfx.some((f) => f.kind === 'toast' && f.text.includes('Người 2: đổi sang 💼 TOEIC')));
+  }
+  assert.deepEqual(kinds.slice(0, 19), Array(19).fill('nghe')); // câu 1 (lúc tặng) + 19 câu = 20 câu nghe
+  assert.equal(kinds[19], 'toeic');
+  assert.equal(sw.snapshot().level, 'easy'); // độ khó tặng lúc nghe vẫn còn nguyên lượt
   const { sw: again } = setup();
   again.restore(saved);
-  assert.equal(again.snapshot().set, 'nghe');
+  assert.deepEqual([again.snapshot().set, again.snapshot().pending.to, again.snapshot().listenAsked], ['nghe', 'toeic', 1]);
+});
+
+test('listening: another Doughnut restarts the 40 and the 20-question protection; a restart resumes listening', () => {
+  const { sw } = setup();
+  sw.command('deck-nghe');
+  for (let i = 0; i < 15; i += 1) sw.deck.next();
+  assert.equal(sw.command('deck-toeic')[0].text, '💼 Đổi sang TOEIC sau 5 câu Luyện nghe nữa');
+  sw.command('deck-nghe');
+  assert.deepEqual([sw.snapshot().setLeft, sw.snapshot().listenAsked, sw.snapshot().pending.after], [LISTEN_QUESTIONS, 0, 20]);
+  const { sw: again } = setup();
+  again.restore(JSON.parse(JSON.stringify(sw.snapshot())));
   assert.ok(again.deck.next().listen);
-  sw.command('deck-toeic');
-  assert.deepEqual([sw.snapshot().set, sw.snapshot().deckQueue.length], ['toeic', 0]);
-  assert.ok(!sw.deck.next().listen);
 });
 
 test('Đồ vật is no longer a gift slot: its words are in the general pool', () => {

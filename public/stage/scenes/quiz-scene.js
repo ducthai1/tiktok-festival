@@ -457,12 +457,15 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         audio.play('magic');
         const isLevel = fx.to === 'easy' || fx.to === 'hard';
         // tab tiếng Anh: quà kết thúc luôn bộ đang chạy, câu mới ra ngay (switchNow)
-        const count = fx.questions ? ` · ${fx.questions} câu${fx.switchNow ? '' : ' tiếp theo'}` : '';
+        // fx.after: đang Luyện nghe chưa đủ 20 câu → đổi sau N câu nghe nữa
+        const count = fx.after ? ` · đổi sau ${fx.after} câu Luyện nghe nữa`
+          : fx.questions ? ` · ${fx.questions} câu${fx.switchNow ? '' : ' tiếp theo'}` : '';
         hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`,
           `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500);
-        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${fx.questions ? ` · ⏳ ${fx.questions} câu` : ''}`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
+        const left = fx.after ? ` · sau ${fx.after} câu 🎧` : fx.questions ? ` · ⏳ ${fx.questions} câu` : '';
+        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${left}`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
         confetti(200);
-        audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
+        audio.speak(`${fx.nickname} đổi sang ${fx.label}${fx.after ? ' sau phần luyện nghe' : ''}!`, 'story');
       } else if (fx.kind === 'quizFollow') {
         audio.play('chime');
         hud.toast(`💖 Follow → +${fx.points} điểm · mục tiêu ${fx.count}/${fx.goal}`, { title: fx.nickname, image: fx.avatar, ms: 3500 });

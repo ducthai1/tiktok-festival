@@ -13,6 +13,7 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createFollowerStore } from './live/follower-store.js';
+import { createRoomTracker } from './live/room-tracker.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
@@ -79,6 +80,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
   const settings = loadSettings(dataDir);
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
+  const rooms = createRoomTracker(path.join(dataDir, 'live-room.json')); // phòng live gần nhất → biết khi nào sang phòng mới
   // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
   // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
@@ -223,6 +225,15 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onStatus(status) {
       sockets.broadcast({ t: 'live', status });
+      // nối vào PHÒNG LIVE MỚI (room id khác phòng trước) → tự xoá thông số phòng cũ; giữ bảng xếp hạng (tự xoá người im lặng 2 tiếng)
+      if (status.state === 'connected' && rooms.isNew(status.roomId)) {
+        hub.resetRoom();
+        log.info('live', `phòng live MỚI ${status.roomId} → đã xoá thông số phòng cũ (năng lượng tim, câu vàng/chớp nhoáng chờ, mốc follow,`
+          + ' lượt share, chế độ đề) — giữ bảng xếp hạng + đại sứ share');
+        emitFx(hub.activeId(), [{ kind: 'toast', text: '🔴 Phòng live mới — năng lượng & thử thách bắt đầu lại!' }]);
+        pushState(true);
+        saveBackup();
+      }
     },
     onCatalog: (list) => mergeCatalog(list)
   });

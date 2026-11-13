@@ -28,7 +28,7 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
 |---|---|
 | `.env` | khoá Euler, cấu hình máy |
 | `data/admin-token`, `data/admin-token.rotation` | token trang điều khiển |
-| `data/settings.json`, `data/gift-catalog.json`, `data/hot-backup.json` | cài đặt, danh mục quà, trạng thái game |
+| `data/settings.json`, `data/gift-catalog.json`, `data/hot-backup.json`, `data/live-room.json` | cài đặt, danh mục quà, trạng thái game, phòng live gần nhất |
 | `data/followers.json`, `data/gifts.log` | ID / tên người xem — dữ liệu cá nhân |
 | `data/logs/*.log`, `*.log`, `server.log` | nhật ký (có tên người xem) |
 
@@ -70,6 +70,9 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 - Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi tiếng Anh là gì? | độ khó 1-3 | cách khác`).
   Bộ đề tiếng Anh đổi bằng quà (`english-switcher.js`): quà mới KẾT THÚC LUÔN bộ đang chạy và ra câu mới ngay (không hàng chờ,
   chủ kênh chốt 13/11/2026); tặng lại đúng bộ đang chạy chỉ đếm lại số câu. Vòng chớp nhoáng thì đổi từ câu sau.
+  Riêng Luyện nghe chạy ít nhất 20 câu (`LISTEN_MIN_QUESTIONS`): quà đổi bộ trong lúc đó chờ đủ 20 câu mới đổi.
+- Bảng xếp hạng / đại sứ: xoá người im lặng quá 2 tiếng (`INACTIVE_MS`). Phòng live mới (room id khác `data/live-room.json`)
+  → `hub.resetRoom()` xoá thông số phòng cũ, giữ bảng xếp hạng. Có test: `test/live-room-reset.test.js`.
 - **Thêm từ tiếng Anh: không được trùng.** Mỗi bộ = file chính + file bổ sung `<bộ>-*.txt` (vd `toeic-them.txt`). Trước khi thêm,
   kiểm đáp án chưa có ở BẤT KỲ file nào trong `bank/tieng-anh/`, `bank/tieng-anh-bo/`, `bank/lop-hoc/25-tieng-anh.txt`
   (so theo chữ thường, bỏ dấu cách). Độ khó chỉ 1, 2, 3. Không dán đề lộ đáp án.

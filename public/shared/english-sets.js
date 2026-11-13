@@ -11,6 +11,8 @@ import { VN_GIFTS_UP_TO_30 } from './tiktok-gifts-vn.js';
 export const ENGLISH_HOLD_QUESTIONS = 20;
 /** Luyện nghe (quà 30 xu): bấy nhiêu câu nghe giọng bản xứ rồi gõ lại từ — không bị rút ngắn khi nhiều người chờ đổi bộ. */
 export const LISTEN_QUESTIONS = 40;
+/** Luyện nghe chạy ít nhất bấy nhiêu câu: quà đổi bộ khác trong lúc đó chờ đủ số câu này mới đổi (chủ kênh chốt 13/11/2026). */
+export const LISTEN_MIN_QUESTIONS = 20;
 /** Giá cao nhất (xu) của một món quà được dùng để đổi đề. */
 export const ENGLISH_MAX_COINS = 30;
 
