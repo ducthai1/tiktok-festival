@@ -1,7 +1,7 @@
-// Quà TikTok vùng VIỆT NAM dưới 20 xu — tên, GIÁ THẬT, ảnh thật. Nguồn: https://streamtoearn.io/gifts?region=VN (cập nhật 13/11/2026).
+// Quà TikTok vùng VIỆT NAM tối đa 20 xu — tên, GIÁ THẬT, ảnh thật. Nguồn: https://streamtoearn.io/gifts?region=VN (cập nhật 13/11/2026).
 // Dùng cho tab Tiếng Anh: bảng đổi bộ đề chỉ được ghi đúng giá ở đây (hoặc giá TikTok báo khi phòng nhận được món đó).
 // TikTok đổi giá / thêm quà → chạy lại: node scripts/update-vn-gifts.mjs (tải trang trên, ghi lại file này).
-export const VN_GIFTS_UNDER_20 = [
+export const VN_GIFTS_UP_TO_20 = [
   { name: 'Rose', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/eba3a9bb85c33e017f3648eaf88d7189~tplv-obj.webp' },
   { name: "You're awesome", coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/e9cafce8279220ed26016a71076d6a8a.png~tplv-obj.webp' },
   { name: 'Ice Cream Cone', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/968820bc85e274713c795a6aef3f7c67~tplv-obj.webp' },
@@ -92,5 +92,15 @@ export const VN_GIFTS_UNDER_20 = [
   { name: 'Bravo!', coins: 15, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/075e206d6da035f10ff5f8fecd82abcc.png~tplv-obj.webp' },
   { name: 'Lyric Mail', coins: 15, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/8f666cf5d61636ff963c0633679e9c58.png~tplv-obj.webp' },
   { name: 'Kudos for My Star', coins: 15, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/538dd8c1904f795fced4ae91f0a2aab0.png~tplv-obj.webp' },
-  { name: 'Live Up Earth', coins: 15, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/0bdd0e3ac30573fbdfc32f1574e2131d.png~tplv-obj.webp' }
+  { name: 'Live Up Earth', coins: 15, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/0bdd0e3ac30573fbdfc32f1574e2131d.png~tplv-obj.webp' },
+  { name: 'Perfume', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/20b8f61246c7b6032777bb81bf4ee055~tplv-obj.webp' },
+  { name: 'G.O.A.T. Busker', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/a9ff60f42b278cc1e8278139dfebfca2.png~tplv-obj.webp' },
+  { name: 'Tiny Blush', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/1fb35b51a1ab0abe9ce19e43ee2e46e4.png~tplv-obj.webp' },
+  { name: 'Rage Mode', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/86134d21ae64d559e525abcec9843686.png~tplv-obj.webp' },
+  { name: 'LOL', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/00063dbbcc2af199b51d388ae5e2c099.png~tplv-obj.webp' },
+  { name: 'No Comment', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/a33ba0fc5a5f72d0c4bf65ba91db2f39.png~tplv-obj.webp' },
+  { name: 'Huh?', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/6493d7a8418c9046e09a09bacb78719a.png~tplv-obj.webp' },
+  { name: 'little kisses', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/0a5db92508ee667339289b2f87bc3123.png~tplv-obj.webp' },
+  { name: 'Traffic Cone', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/f16725cc0a80273348d18c47dfa3b4fb.png~tplv-obj.webp' },
+  { name: 'Mushroom', coins: 20, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/b48dd927cf3deb1a2012a1c3082ac9fb.png~tplv-obj.webp' }
 ];

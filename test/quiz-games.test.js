@@ -18,7 +18,7 @@ import os from 'node:os';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
 import { createEnglishSwitcher, filterByLevel } from '../src/games/quiz/english-switcher.js';
 import { assignEnglishGifts, ENGLISH_GIFT_PLAN, englishTargetFor, ORDER } from '../public/shared/english-sets.js';
-import { VN_GIFTS_UNDER_20 } from '../public/shared/tiktok-gifts-vn.js';
+import { VN_GIFTS_UP_TO_20 } from '../public/shared/tiktok-gifts-vn.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
 const chat = (n, comment) => ({ type: 'chat', user: user(n), comment });
@@ -204,15 +204,15 @@ test('wordle: a winner ends the round with the answer shown', () => {
   assert.deepEqual(snap.guesses.map((g) => g.word), ['HOUSE', 'APPLE']);
 });
 
-test('english gifts: every slot shows a real VN gift at its REAL price (< 20 coins), one gift per slot', () => {
+test('english gifts: every slot shows a real VN gift at its REAL price (≤ 20 coins), one gift per slot', () => {
   const a = assignEnglishGifts([]);
   assert.deepEqual(a.map((x) => x.to), ORDER);
   for (const x of a) {
-    const real = VN_GIFTS_UNDER_20.filter((g) => g.name === ENGLISH_GIFT_PLAN[x.to]);
+    const real = VN_GIFTS_UP_TO_20.filter((g) => g.name === ENGLISH_GIFT_PLAN[x.to]);
     assert.equal(real.length, 1, `${x.to}: món phải có thật và không trùng tên`);
     assert.equal(x.gift.coins, real[0].coins, x.to);
     assert.equal(x.gift.image, real[0].image, x.to);
-    assert.ok(x.gift.coins < 20);
+    assert.ok(x.gift.coins <= 20);
   }
   assert.equal(new Set(a.map((x) => x.gift.name)).size, a.length);
   assert.equal(a.find((x) => x.to === 'easy').gift.name, 'Rose');
@@ -232,7 +232,7 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: 'Brown Paw', diamondsEach: 0 }), null); // không rõ giá → không đổi
   // TikTok gửi tên tiếng Việt: nhận theo mã ảnh quà
   assert.equal(englishTargetFor(a, { id: 'x', name: 'Hoa hồng', diamondsEach: 1, pictureUrl: slot('easy').image.replace('.webp', '.png') }), 'easy');
-  // phòng đã nhận món thật: dùng id + giá TikTok báo (TikTok đổi giá thì bảng hiện giá mới); món trùng tên ≥ 20 xu là món khác
+  // phòng đã nhận món thật: dùng id + giá TikTok báo (TikTok đổi giá thì bảng hiện giá mới); món trùng tên trên 20 xu là món khác
   const room = assignEnglishGifts([{ id: '5487', name: 'Finger Heart', coins: 6, image: '' }, { id: '99', name: 'Bravo!', coins: 199 }]);
   const fh = room.find((x) => x.to === 'truonghoc').gift;
   assert.deepEqual([fh.id, fh.coins], ['5487', 6]);
