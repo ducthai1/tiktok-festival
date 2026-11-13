@@ -61,8 +61,9 @@ test('new live room: the English tab drops the old room mode (listening / set / 
   assert.deepEqual([hub.snapshot(40).state.control.set, hub.snapshot(40).state.control.level], ['general', 'normal']);
 });
 
-test('room tracker: same room after a reconnect or restart is not new; another room id is, and it is remembered on disk', () => {
+test('room tracker: same room after a reconnect or restart is not new; another room id is, and it is remembered on disk', (t) => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'room-'));
+  t.after(() => fs.rmSync(dir, { recursive: true, force: true }));
   const file = path.join(dir, 'live-room.json');
   const a = createRoomTracker(file);
   assert.equal(a.isNew('111'), true); // lần đầu chưa biết phòng nào

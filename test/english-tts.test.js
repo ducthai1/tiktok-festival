@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import http from 'node:http';
 import os from 'node:os';
 import path from 'node:path';
-import test from 'node:test';
+import test, { after } from 'node:test';
 import { startApp } from '../src/app.js';
 import { createEnglishTts, createVoiceRotation, EN_VOICES, speakableEnglish } from '../src/tts/english-tts.js';
 import { englishVoiceInstalled } from '../src/tts/english-voice-setup.js';
@@ -12,7 +12,13 @@ import { createQuizGames } from '../src/games/quiz/quiz-games.js';
 import { loadEnglishQuestions, loadEnglishSets, loadWordleWords } from '../src/games/quiz/quiz-bank.js';
 import { audibleRange } from '../public/stage/stage-speech.js';
 
-const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'tts-en-'));
+const made = [];
+const tmp = () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-en-'));
+  made.push(dir);
+  return dir;
+};
+after(() => { for (const dir of made) fs.rmSync(dir, { recursive: true, force: true }); }); // không để rác trong thư mục tạm
 const fakeMp3 = (tag) => Buffer.concat([Buffer.from('ID3'), Buffer.alloc(600, tag.length)]);
 /** edge-tts giả: ghi file như edge-tts thật, ghi lại các lần gọi. */
 function fakeSynth({ fail = false } = {}) {
