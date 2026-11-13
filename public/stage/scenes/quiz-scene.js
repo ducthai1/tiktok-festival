@@ -456,8 +456,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       } else if (fx.kind === 'quizDeck') {
         audio.play('magic');
         const isLevel = fx.to === 'easy' || fx.to === 'hard';
-        hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`, `${fx.nickname} đã chọn · ${fx.questions} câu tiếp theo`, 5500);
-        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label} · ⏳ ${fx.questions} câu`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
+        // tab tiếng Anh: quà kết thúc luôn bộ đang chạy, câu mới ra ngay (switchNow)
+        const count = fx.questions ? ` · ${fx.questions} câu${fx.switchNow ? '' : ' tiếp theo'}` : '';
+        hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`,
+          `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500);
+        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${fx.questions ? ` · ⏳ ${fx.questions} câu` : ''}`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}!`, 'story');
       } else if (fx.kind === 'quizFollow') {

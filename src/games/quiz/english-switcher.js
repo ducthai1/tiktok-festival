@@ -136,52 +136,41 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     dirty = false;
   }
 
-  const MIN_QUESTIONS = 2; // tối thiểu câu/topic khi queue rất đông
-
-  /** Adaptive: càng nhiều người chờ → chia đều câu, tối thiểu MIN_QUESTIONS. */
-  function adaptiveQuestions(totalSlots) {
-    return Math.max(MIN_QUESTIONS, Math.floor(ENGLISH_HOLD_QUESTIONS / Math.max(1, totalSlots)));
-  }
-
-  /** Tính lại số câu cho topic đang chạy và toàn bộ queue theo số slot hiện tại. */
-  function rebalanceQueue() {
-    const totalSlots = 1 + deckQueue.length; // topic đang chạy + queue
-    const q = adaptiveQuestions(totalSlots);
-    // Rút ngắn topic hiện tại nếu còn nhiều hơn mức mới (không kéo dài thêm)
-    // Luyện nghe (quà 30 xu) giữ đủ 40 câu, không bị rút ngắn
-    if (set !== 'general' && set !== 'nghe') setLeft = Math.min(setLeft, q);
-    for (const item of deckQueue) if (item.to !== 'nghe') item.questions = q;
-  }
-
-  function apply(to, user, giftInfo = null) {
+  /**
+   * Quà / nút đổi chế độ: KẾT THÚC LUÔN bộ đang chạy, vào chế độ mới ngay (engine ra câu mới liền — xem quiz-game.js switchNow).
+   * Không xếp hàng chờ: người tặng sau cùng quyết định. Trả về 'switch' (đổi chế độ → ra câu mới), 'same' (đang đúng chế độ đó:
+   * chỉ đếm lại số câu từ đầu, không ra câu mới — tặng combo không làm câu nhảy liên tục) hoặc false (không đổi được).
+   */
+  function apply(to, user) {
     const target = ENGLISH_TARGETS[to];
     if (!target || (target.kind === 'set' && !sets[to]?.length)) return false;
     if (target.kind === 'listen' && (!listen.length || !listenReady())) return false; // giọng đọc hỏng → không nhận đổi
+    dirty = true;
     if (target.kind === 'reset') {
+      if (set === 'general' && level === 'normal' && !deckQueue.length) return 'same';
       reset();
-      dirty = true;
-      return true;
+      return 'switch';
     }
     if (target.kind === 'level') {
+      const same = level === to;
       level = to;
       levelLeft = ENGLISH_HOLD_QUESTIONS;
       levelBy = user;
-    } else {
-      const fixed = target.kind === 'listen' ? LISTEN_QUESTIONS : 0;
-      if (set === 'general' || setLeft <= 0) {
-        // Queue rỗng hoặc vừa về general → áp dụng ngay, tính câu theo slot hiện tại
-        set = to;
-        setLeft = fixed || adaptiveQuestions(1 + deckQueue.length);
-        setBy = user;
-        if (fixed) prepareListen();
-      } else {
-        // Có topic đang chạy → đẩy vào queue rồi rebalance tất cả
-        deckQueue.push({ to, user, questions: fixed || ENGLISH_HOLD_QUESTIONS, giftName: giftInfo?.name || '', giftPicture: giftInfo?.pictureUrl || '' });
-        rebalanceQueue();
-      }
+      return same ? 'same' : 'switch';
     }
-    dirty = true;
-    return true;
+    const questions = target.kind === 'listen' ? LISTEN_QUESTIONS : ENGLISH_HOLD_QUESTIONS;
+    if (set === to) {
+      setLeft = questions;
+      setBy = user;
+      return 'same';
+    }
+    if (set === 'nghe') releaseListen(); // rời Luyện nghe: câu nghe đã chọn trước trả lại kho
+    deckQueue = [];
+    set = to;
+    setLeft = questions;
+    setBy = user;
+    if (target.kind === 'listen') prepareListen();
+    return 'switch';
   }
 
   /** Bộ đang chạy hết lượt → bộ kế tiếp trong hàng chờ, hoặc về Tổng hợp. */
@@ -253,21 +242,22 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const to = englishTargetFor(assignments, gift);
       const base = { userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, giftName: gift.name,
         giftPicture: gift.pictureUrl, count: gift.count };
-      if (!to || !apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar }, gift)) {
-        return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
-      }
+      const result = to && apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar });
+      if (!result) return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
       const target = ENGLISH_TARGETS[to];
-      return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label, questions: setLeft, queueLength: deckQueue.length }];
+      return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label,
+        questions: target.kind === 'level' ? levelLeft : setLeft, switchNow: result === 'switch' }];
     },
     /** Nút ở trang điều khiển: deck-<đích> (đổi tay, không ghi tên ai) hoặc resetDeck. */
     command(name) {
       if (name === 'resetDeck') {
         reset();
-        return [{ kind: 'toast', text: `${ENGLISH_DEFAULTS.set.icon} Về bộ ${ENGLISH_DEFAULTS.set.label} · ${ENGLISH_DEFAULTS.level.label}` }];
+        return [{ kind: 'toast', text: `${ENGLISH_DEFAULTS.set.icon} Về bộ ${ENGLISH_DEFAULTS.set.label} · ${ENGLISH_DEFAULTS.level.label}`, switchNow: true }];
       }
       const to = name.startsWith('deck-') ? name.slice(5) : '';
-      if (!to || !apply(to, null)) return null;
-      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label} (từ câu sau)` }];
+      const result = to && apply(to, null);
+      if (!result) return null;
+      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}`, switchNow: result === 'switch' }];
     },
     restore(s) {
       if (!s) return;
@@ -290,8 +280,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
           giftPicture: item.giftPicture || ''
         })).filter((item) => ENGLISH_TARGETS[item.to] && (ENGLISH_TARGETS[item.to].kind !== 'set' || sets[item.to]?.length));
       }
-      // Tự rebalance sau restore: nếu queue đông thì rút ngắn câu ngay
-      if (set !== 'general' || deckQueue.length > 0) rebalanceQueue();
+      // (hàng chờ chỉ còn ở bản lưu cũ trước 13/11/2026 — giờ quà mới kết thúc luôn bộ đang chạy, không xếp hàng)
       dirty = true;
     },
     snapshot() {

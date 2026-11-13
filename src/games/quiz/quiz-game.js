@@ -206,6 +206,19 @@ export function createQuizGame({
     }
   }
 
+  /**
+   * Quà / nút đổi chế độ (tab tiếng Anh) → ra câu mới NGAY trong chế độ mới, bỏ câu đang hỏi. Trừ vòng chớp nhoáng (câu 8 giây:
+   * đổi từ câu sau, không phá vòng 3 câu) và lúc tạm dừng. Câu vàng / kim cương chưa ai trả lời thì câu mới giữ quyền đó.
+   */
+  function switchNow(now, fx) {
+    if (lightningIndex || paused || phase === 'idle') return;
+    if (phase === 'question' && !winners.length) {
+      goldenPending = goldenPending || golden;
+      diamondPending = diamondPending || diamond;
+    }
+    startQuestion(now, fx);
+  }
+
   function finishLightningQuestion(fx) {
     for (const w of winners) {
       const row = lightningHits.get(w.id) || { user: { id: w.id, nickname: w.nickname, avatar: w.avatar }, count: 0 };
@@ -377,7 +390,9 @@ export function createQuizGame({
         else if (kind === 'abcd') onVote(event.user, event.comment, now);
         else onWordleGuess(event.user, event.comment, now, fx);
       } else if (event.type === 'gift' && onGift) {
-        fx.push(...onGift(event, now));
+        const own = onGift(event, now) || [];
+        fx.push(...own);
+        if (own.some((f) => f.switchNow)) switchNow(now, fx);
       } else if (event.type === 'gift') {
         const tier = giftTier(event.gift.diamondsEach);
         let opened = 0;
@@ -464,7 +479,11 @@ export function createQuizGame({
     },
     command(name, now = Date.now()) {
       const own = onCommand?.(name, now);
-      if (own) return own;
+      if (own) {
+        const out = [...own];
+        if (own.some((f) => f.switchNow)) switchNow(now, out);
+        return out;
+      }
       const fx = [];
       if (name === 'next') {
         if (phase === 'question') reveal(now, fx);

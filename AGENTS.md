@@ -68,7 +68,8 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 - Node ≥ 20, ES modules, không framework; màn hình là three.js + DOM trong `public/stage/`. Chú thích tiếng Việt, ngắn, giải thích *vì sao*.
 - Bố cục màn hình theo vùng an toàn của TikTok (mục *Bố cục màn hình* trong README): chữ / bảng chỉ trong dải 180–1150 px, cách mép 94 px.
 - Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi tiếng Anh là gì? | độ khó 1-3 | cách khác`).
-  Bộ đề tiếng Anh đổi bằng quà: nhiều bộ chờ thì mỗi bộ ít câu đi (`english-switcher.js`, `adaptiveQuestions`).
+  Bộ đề tiếng Anh đổi bằng quà (`english-switcher.js`): quà mới KẾT THÚC LUÔN bộ đang chạy và ra câu mới ngay (không hàng chờ,
+  chủ kênh chốt 13/11/2026); tặng lại đúng bộ đang chạy chỉ đếm lại số câu. Vòng chớp nhoáng thì đổi từ câu sau.
 - **Thêm từ tiếng Anh: không được trùng.** Mỗi bộ = file chính + file bổ sung `<bộ>-*.txt` (vd `toeic-them.txt`). Trước khi thêm,
   kiểm đáp án chưa có ở BẤT KỲ file nào trong `bank/tieng-anh/`, `bank/tieng-anh-bo/`, `bank/lop-hoc/25-tieng-anh.txt`
   (so theo chữ thường, bỏ dấu cách). Độ khó chỉ 1, 2, 3. Không dán đề lộ đáp án.

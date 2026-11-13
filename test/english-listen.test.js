@@ -31,17 +31,16 @@ test('listening question: accepts the word, its spellings and homophones — nev
   assert.ok(toListenQuestion(word('PAYDAY', 'Ngày lĩnh lương tiếng Anh là gì?', ['PAY DAY'])).accept.includes('pay day'));
 });
 
-test('listening: a 30-coin Doughnut gives 40 listening questions from the next one, words prepared ahead, then back to general', () => {
+test('listening: a 30-coin Doughnut switches to listening RIGHT NOW for 40 questions, words prepared ahead, then back to general', () => {
   const { game, prefetched } = setup();
   game.tick(0);
   const fx = game.handleEvent(doughnut(), 10);
-  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck', 'quizQuestion']);
   assert.equal(fx[0].questions, LISTEN_QUESTIONS);
-  assert.equal(prefetched.length, 1); // câu nghe đầu tiên đã được chọn + tạo sẵn giọng trong lúc câu hiện tại còn chạy
-  assert.ok(!game.snapshot(10).listen); // câu đang hỏi không bị cắt ngang
+  assert.ok(fx[1].listen && game.snapshot(10).listen); // câu nghe ra ngay
   let t = 100;
-  const asked = [];
-  for (let i = 0; i < LISTEN_QUESTIONS + 2; i += 1) {
+  const asked = [{ listen: true, cat: game.snapshot(10).category }];
+  for (let i = 0; i < LISTEN_QUESTIONS + 1; i += 1) {
     game.command('next', (t += 10));
     const qfx = game.command('next', (t += 10));
     const snap = game.snapshot(t);
@@ -118,17 +117,18 @@ test('listening is hidden and refused while the English voice is down, and stops
   assert.equal(sw.snapshot().set, 'general');
 });
 
-test('listening keeps its 40 questions when others queue sets behind it; a restart resumes it', () => {
+test('another gift ends listening at once (no queue); a restart resumes a running listening round', () => {
   const { sw } = setup();
   sw.command('deck-nghe');
-  sw.command('deck-toeic');
-  sw.command('deck-toeic');
   assert.equal(sw.snapshot().setLeft, LISTEN_QUESTIONS);
   const saved = JSON.parse(JSON.stringify(sw.snapshot()));
   const { sw: again } = setup();
   again.restore(saved);
   assert.equal(again.snapshot().set, 'nghe');
   assert.ok(again.deck.next().listen);
+  sw.command('deck-toeic');
+  assert.deepEqual([sw.snapshot().set, sw.snapshot().deckQueue.length], ['toeic', 0]);
+  assert.ok(!sw.deck.next().listen);
 });
 
 test('Đồ vật is no longer a gift slot: its words are in the general pool', () => {
