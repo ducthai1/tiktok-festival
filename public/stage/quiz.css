@@ -292,8 +292,11 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
   background: linear-gradient(160deg, rgba(60, 40, 6, 0.86), rgba(8, 10, 22, 0.86)); }
 .quiz-ambassadors.gold h3 { color: #ffd36b; text-shadow: 0 0 10px rgba(255, 200, 80, 0.6); }
 .quiz-ambassadors.gold b { color: #ffd36b; }
-.quiz-ambassadors.flip { animation: side-flip 450ms ease-out; }
-@keyframes side-flip { from { opacity: 0; transform: translateY(6px); } }
+/* hàng bảng: Bảng vàng | Đại sứ share chung một khung chia đôi (trái → trước bảng điểm 650 px); tên dài → "…" */
+.quiz-side { position: absolute; left: 94px; top: 1006px; width: 546px; display: flex; gap: 10px; align-items: flex-start; z-index: 1; }
+.quiz-side .quiz-ambassadors { position: static; width: auto; flex: 1 1 0; min-width: 0; padding: 8px 12px; }
+.quiz-side .quiz-ambassadors .amb { font-size: 18px; gap: 7px; }
+.quiz-side .quiz-ambassadors h3 { font-size: 17px; white-space: nowrap; }
 
 /* Tab có bảng quà (Tiếng Anh, Đuổi hình): màn hình live là MỘT video cho mọi máy — không "responsive" theo máy người xem được.
    iPhone màn dài (15 Pro…) TikTok che từ ~1.210 px, Android từ ~1.370 px → bảng quà lên ngay dưới thẻ câu hỏi (780–1.005 px),
@@ -301,11 +304,11 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 #game-hud.has-deck .quiz-card { height: 500px; }
 #game-hud.has-deck .deck-panel { top: 780px; }
 /* khung Bảng vàng / Đại sứ (quan trọng) lên trên dải chào người mới (thoáng qua) để iPhone vẫn thấy */
-#game-hud.has-deck .quiz-ambassadors { top: 1015px; }
+#game-hud.has-deck .quiz-side { top: 1015px; }
 #stage.theme-quiz #game-hud.has-deck ~ #board { top: 1015px; }
 #stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 1015px !important; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1160px; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1164px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1182px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1186px; }
 
 /* banner giữa màn (đổi bộ đề…) có avatar người tặng: đặt giữa thẻ câu hỏi, không đè bảng quà bên dưới */
 #stage.theme-quiz #banner { top: 380px; }

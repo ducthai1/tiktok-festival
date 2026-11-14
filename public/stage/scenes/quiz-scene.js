@@ -292,37 +292,33 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   energyRoot.append(el('span', 'heart', '❤️'), energyBar, energyNum, followGoal);
   hud.gameRoot.append(energyRoot);
   // bảng ĐẠI SỨ (người share nhiều nhất) — cột trái, ngay dưới dải thẻ chào người mới
+  // hàng bảng: 👑 BẢNG VÀNG | 📣 ĐẠI SỨ SHARE (chung một khung chia đôi, bảng trống thì bảng kia giãn ra) | 🏆 bảng điểm (#board)
+  const side = el('div', 'quiz-side');
+  const goldBoard = el('aside', 'quiz-ambassadors gold');
   const ambassadors = el('aside', 'quiz-ambassadors');
-  hud.gameRoot.append(ambassadors);
+  side.append(goldBoard, ambassadors);
+  hud.gameRoot.append(side);
   let ambKey = '';
-  // Khung trái: 📣 ĐẠI SỨ SHARE và 👑 BẢNG VÀNG (3 người tặng nhiều 💎 nhất) — có cả hai thì luân phiên mỗi 8 giây
-  let sideLists = { amb: [], gold: [] };
-  let sidePage = 'gold';
-  function renderSide() {
-    const page = !sideLists.gold.length ? 'amb' : !sideLists.amb.length ? 'gold' : sidePage;
-    const list = sideLists[page];
-    const key = JSON.stringify([page, list]);
-    if (key === ambKey) return;
-    ambKey = key;
-    ambassadors.classList.toggle('gold', page === 'gold');
-    if (!list.length) return ambassadors.replaceChildren();
-    ambassadors.replaceChildren(el('h3', '', page === 'gold' ? '👑 BẢNG VÀNG' : '📣 ĐẠI SỨ SHARE'), ...list.map((r, i) => {
+  let goldKey = '';
+  function renderList(root, title, list, value) {
+    if (!list?.length) return root.replaceChildren();
+    root.replaceChildren(el('h3', '', title), ...list.map((r, i) => {
       const row = el('div', `amb amb${i + 1}`);
-      const value = page === 'gold' ? `💎${Number(r.diamonds).toLocaleString('vi-VN')}` : `↗${r.shares}`;
-      row.append(avatarNode(r.avatar), el('span', 'name', `${page === 'gold' ? MEDALS[i + 1] : ''}${r.follower ? '💖' : ''} ${r.nickname}`.trim()), el('b', '', value));
+      row.append(avatarNode(r.avatar), el('span', 'name', `${r.follower ? '💖 ' : ''}${r.nickname}`), el('b', '', value(r)));
       return row;
     }));
-    ambassadors.classList.remove('flip');
-    void ambassadors.offsetWidth;
-    ambassadors.classList.add('flip');
   }
-  const sideTimer = setInterval(() => {
-    sidePage = sidePage === 'gold' ? 'amb' : 'gold';
-    renderSide();
-  }, 8000);
   function renderAmbassadors(amb, gold) {
-    sideLists = { amb: amb || [], gold: gold || [] };
-    renderSide();
+    const ak = JSON.stringify(amb || []);
+    if (ak !== ambKey) {
+      ambKey = ak;
+      renderList(ambassadors, '📣 ĐẠI SỨ SHARE', amb, (r) => `↗${r.shares}`);
+    }
+    const gk = JSON.stringify(gold || []);
+    if (gk !== goldKey) {
+      goldKey = gk;
+      renderList(goldBoard, '👑 BẢNG VÀNG', gold, (r) => `💎${Number(r.diamonds).toLocaleString('vi-VN')}`);
+    }
   }
   let energyKey = '';
   function renderEnergy(e, active) {
@@ -590,7 +586,6 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     dispose() {
       deckPanel?.dispose();
       commentsPanel.dispose();
-      clearInterval(sideTimer);
       hud.gameRoot.classList.remove('has-deck');
       particles.dispose();
       for (const g of geos) g.dispose();

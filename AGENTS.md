@@ -55,8 +55,8 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
   chưa commit trên máy live — lần pull sau sẽ xung đột / mất). 14/11: commit "bảng vàng" thật ra không có giao diện bảng vàng,
   còn phần sửa khung bình luận thì không commit.
 - **Sửa màn hình phải tự chụp lại kiểm tra** (Chrome headless / mở /stage) trước khi báo "đã xong" — test pass không có nghĩa là hiện đúng.
-- **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất, hiện trên màn hình (`state.donators`, khung trái luân phiên với
-  Đại sứ share). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
+- **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất, hiện trên màn hình (`state.donators`). Hàng bảng (tab đố vui):
+  👑 Bảng vàng | 📣 Đại sứ share | 🏆 Bảng điểm — ba bảng cạnh nhau, tên dài cắt "…" (không luân phiên). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
 - **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. iPhone màn dài (15 Pro) TikTok che từ ~1.210 px,
   Android từ ~1.370 px (toạ độ 1080×1920). Thứ quan trọng (bảng quà, bảng vàng) phải nằm trên 1.210 px.
 
