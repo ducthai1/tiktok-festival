@@ -226,7 +226,7 @@ html.lite .quiz-ambassadors { background: rgba(8, 10, 22, 0.92); }
   animation: quiz-exclusive-shine 3.5s linear infinite; }
 .quiz-foot .exclusive .shine b { color: inherit; -webkit-text-fill-color: transparent; }
 @keyframes quiz-exclusive-shine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
-/* 💬 Bảng bình luận trực tiếp: góc phải bên dưới phần tặng quà (top: 1385px, right: 94px, width: 436px) */
+/* 💬 Bảng bình luận trực tiếp: góc phải bên dưới phần tặng quà (top: 1385px, right: 94px, width: 436px; tab có bảng quà: 1214px) */
 .quiz-comments {
   position: absolute; right: 94px; top: 1385px; width: 436px; height: 320px; box-sizing: border-box;
   padding: 12px 14px; border-radius: 20px; background: rgba(8, 10, 22, 0.82); border: 2px solid rgba(255, 255, 255, 0.18);
@@ -301,20 +301,30 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 /* Tab có bảng quà (Tiếng Anh, Đuổi hình): màn hình live là MỘT video cho mọi máy — không "responsive" theo máy người xem được.
    iPhone màn dài (15 Pro…) TikTok che từ ~1.210 px, Android từ ~1.370 px → bảng quà lên ngay dưới thẻ câu hỏi (780–1.005 px),
    bảng điểm / dải chào / đại sứ + bảng vàng xuống dưới. Khung bình luận giữ chỗ cũ (bên phải, iPhone vẫn thấy). */
-/* chỉ bớt KHOẢNG TRỐNG (lề, khoảng cách, trống quanh câu hỏi) — cỡ chữ giữ nguyên; câu 2 dòng + ô đáp án vẫn vừa đúng cỡ */
-#game-hud.has-deck .quiz-card { height: 445px; padding: 12px 24px 10px; gap: 8px; }
+/* iPhone (đo từ ảnh chụp live thật): TikTok che PHÍA TRÊN tới ~268 px (tên kênh / Join / mắt xem + hàng "Daily Ranking · Gallery"),
+   PHÍA DƯỚI bên trái từ ~1.210 px (bình luận TikTok). Hai mép: iPhone thấy khoảng 75–1.005 px → nội dung 94–986 px vẫn trọn.
+   ⇒ tab có bảng quà xếp hết trong 278–1.206 px:
+   hàng năng lượng + số câu 278–310 · thẻ câu hỏi 318–763 · bảng quà 771–946 · Bảng vàng | Đại sứ | Bảng điểm 952–1.100 ·
+   thẻ quà đổi đề / chào mừng 1.106–1.206 · khung bình luận (bên phải, iPhone vẫn thấy) 1.214–1.534.
+   Thẻ câu hỏi chỉ bớt KHOẢNG TRỐNG (lề, khoảng cách) — cỡ chữ giữ nguyên; câu 2 dòng + ô đáp án vẫn vừa đúng cỡ. */
+#hud.has-deck > #topbar { top: 278px; left: auto; right: 94px; height: 32px; align-items: center; }
+#hud.has-deck > #topbar #title { display: none; } /* tên game: thẻ câu hỏi đã ghi "Tiếng Anh · …" */
+#hud.has-deck > #topbar .chip { padding: 2px 14px; font-size: 20px; line-height: 26px; }
+#game-hud.has-deck .quiz-energy { top: 278px; right: 380px; } /* chừa chỗ "❓ Câu 630 ✅ 12 đúng" bên phải */
+#game-hud.has-deck .quiz-card { top: 318px; height: 445px; padding: 12px 24px 10px; gap: 8px; }
 #game-hud.has-deck .quiz-foot { padding-top: 6px; }
-#game-hud.has-deck .deck-panel { top: 725px; }
-/* (tab có bảng quà) thẻ câu hỏi 270–715 · bảng quà 725–900 · hàng 3 bảng 912–1060 · hàng thẻ quà / chào mừng 1068–1168 — tất cả trên 1.210 */
-#game-hud.has-deck .quiz-side { top: 912px; }
-#stage.theme-quiz #game-hud.has-deck ~ #board { top: 912px; }
-#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 912px !important; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1068px; width: 892px; height: 100px; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1072px; }
-#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1068px; width: 892px; height: 100px; }
+#game-hud.has-deck .deck-panel { top: 771px; }
+#game-hud.has-deck .quiz-side { top: 952px; }
+#game-hud.has-deck .quiz-comments { top: 1214px; }
+#stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; }
+#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 952px !important; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1106px; width: 892px; height: 100px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1110px; }
+#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1106px; width: 892px; height: 100px; }
 
 /* banner giữa màn (đổi bộ đề…) có avatar người tặng: đặt giữa thẻ câu hỏi, không đè bảng quà bên dưới */
 #stage.theme-quiz #banner { top: 380px; }
+#stage.theme-quiz #hud.has-deck > #banner { top: 428px; }
 #banner .banner-ava { width: 136px; height: 136px; margin: 0 auto 14px; border-radius: 50%; padding: 6px; position: relative;
   background: conic-gradient(from 0deg, #ffd36b, #ff8a00, #fff3c4, #ffd36b); box-shadow: 0 0 30px rgba(255, 200, 80, 0.85);
   animation: banner-ava-pop 600ms cubic-bezier(0.2, 1.7, 0.4, 1) both; }

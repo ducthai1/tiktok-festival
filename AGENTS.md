@@ -57,9 +57,10 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
 - **Sửa màn hình phải tự chụp lại kiểm tra** (Chrome headless / mở /stage) trước khi báo "đã xong" — test pass không có nghĩa là hiện đúng.
 - **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất, hiện trên màn hình (`state.donators`). Hàng bảng (tab đố vui):
   👑 Bảng vàng | 📣 Đại sứ share | 🏆 Bảng điểm — ba bảng cạnh nhau, tên dài cắt "…" (không luân phiên). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
-- **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. iPhone màn dài (15 Pro) TikTok che từ ~1.210 px,
-  Android từ ~1.370 px (toạ độ 1080×1920). Thứ quan trọng (bảng quà, bảng vàng) phải nằm trên 1.210 px. Tab có bảng quà hiện tại:
-  thẻ câu hỏi 270–715 · bảng quà 725–900 · Bảng vàng | Đại sứ | Bảng điểm 912–1060 · thẻ quà đổi đề / chào mừng 1068–1168.
+- **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. Vùng iPhone (15 Pro) THẤY, đo từ ảnh live thật
+  (toạ độ 1080×1920): y 278–1.210 (trên 268 là tên kênh/Join/mắt xem + hàng "Daily Ranking · Gallery"; dưới-trái từ 1.210 là bình luận
+  TikTok), x ~75–1.005. Android che dưới-trái từ ~1.370. Tab có bảng quà hiện tại: năng lượng ×2 + Câu/đúng 278–310 · thẻ câu hỏi 318–763 ·
+  bảng quà 771–946 · Bảng vàng | Đại sứ | Bảng điểm 952–1100 · thẻ quà đổi đề / chào mừng 1106–1206 · khung bình luận (phải) 1214–1534.
   Chủ kênh KHÔNG muốn chữ nhỏ lại: chỉ được bớt khoảng trống. `fitBody` chỉ là lưới an toàn cho câu siêu dài (nếu không sẽ bị cắt chữ).
 - **Thẻ quà đổi đề** (`stage-hud.js` giftCard) nằm CÙNG CHỖ thẻ chào người mới và ƯU TIÊN hơn: đang hiện thẻ quà thì lời chào chờ
   (`stage-main.js` welcomeWaiting). 5 bậc theo giá thật món quà: 1 · 2–9 · 10–19 · 20–29 · 30+ xu.
@@ -87,7 +88,7 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 
 - Node ≥ 20, ES modules, không framework; màn hình là three.js + DOM trong `public/stage/`. Chú thích tiếng Việt, ngắn, giải thích *vì sao*.
 - Bố cục màn hình theo vùng an toàn của TikTok (mục *Bố cục màn hình* trong README): chữ / bảng chỉ trong dải 180–1150 px, cách mép 94 px
-  (thứ quan trọng ≤ 1.210 px cho iPhone — mục 3b; khung bình luận bên phải 1.385–1.705 px là ngoại lệ chủ kênh duyệt: iPhone vẫn thấy).
+  (tab có bảng quà: mọi thứ trong 278–1.210 px cho iPhone — mục 3b; khung bình luận bên phải 1.214–1.534 px: iPhone vẫn thấy).
 - Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi tiếng Anh là gì? | độ khó 1-3 | cách khác`).
   Bộ đề tiếng Anh đổi bằng quà (`english-switcher.js`): quà mới KẾT THÚC LUÔN bộ đang chạy và ra câu mới ngay (không hàng chờ,
   chủ kênh chốt 13/11/2026); tặng lại đúng bộ đang chạy chỉ đếm lại số câu. Vòng chớp nhoáng thì đổi từ câu sau.

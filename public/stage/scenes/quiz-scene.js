@@ -377,6 +377,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const commentsPanel = createCommentsPanel(hud);
   // tab có bảng quà (Tiếng Anh, Đuổi hình): bảng quà lên ngay dưới thẻ câu hỏi — iPhone màn dài bị TikTok che từ ~1.210 px (quiz.css)
   hud.gameRoot.classList.toggle('has-deck', Boolean(deckPanel));
+  hud.gameRoot.parentElement?.classList.toggle('has-deck', Boolean(deckPanel)); // #hud: dời thanh số câu (#topbar) vào vùng iPhone thấy
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -602,6 +603,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       deckPanel?.dispose();
       commentsPanel.dispose();
       hud.gameRoot.classList.remove('has-deck');
+      hud.gameRoot.parentElement?.classList.remove('has-deck');
       particles.dispose();
       for (const g of geos) g.dispose();
       disposeObject(scene);
