@@ -25,8 +25,9 @@ export const ENGLISH_MAX_COINS = 30;
  */
 export const ENGLISH_GIFT_PLAN = {
   general: 'TikTok', easy: 'Rose', hard: "You're awesome", dongvat: 'Finger Heart', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
-  toeic: 'G.O.A.T. Busker', ielts: 'Perfume', congnghe: 'Lyric Mail', bongda: 'Spinning Soccer', yhoc: 'Bravo!',
-  dulich: 'Friendship Necklace', giaitri: 'LOL'
+  // trang 2 (chủ kênh 14/11/2026: hạ giá về 10 xu): hộp quà chỉ có 6 món 10 xu ai cũng thấy (Rosa dùng ở trang 1)
+  toeic: 'Friendship Necklace', ielts: 'I Like What I See', congnghe: 'Curious Twinkle', bongda: 'Spinning Soccer', yhoc: 'Slow motion',
+  dulich: 'Journey Pass', giaitri: 'Divine Fingers'
 };
 /** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
 export const STREAMER_SEEN_GIFTS = ['Peach'];
@@ -42,7 +43,7 @@ export const ENGLISH_TARGETS = {
   // 🎧 nghe từ (giọng Mỹ / Anh / Úc) rồi gõ lại — chỉ hiện khi giọng đọc tiếng Anh đang chạy tốt (english-switcher.js)
   nghe:      { kind: 'listen', icon: '🎧', label: 'Luyện nghe' },
 
-  // Trang 2: Thử thách & Đam mê (hiện 12s) — quà quen: 9 / 10 / 20 / 30 xu
+  // Trang 2: Thử thách & Đam mê (hiện 12s) — quà 5 / 6 / 10 xu
   toeic:     { kind: 'set',   icon: '💼', label: 'TOEIC' },
   ielts:     { kind: 'set',   icon: '🎓', label: 'IELTS' },
   congnghe:  { kind: 'set',   icon: '💻', label: 'Công nghệ' },

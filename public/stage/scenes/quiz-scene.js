@@ -128,10 +128,10 @@ function createDeckPanel(hud, gameId) {
         to.append(el('b', '', rule.icon), el('small', '', rule.label));
         chip.append(giftIcon(rule.gift), el('span', 'arrow', '➜'), to);
         chip.classList.toggle('on', active.has(rule.to));
-        // 🎧 Luyện nghe (món 30 xu, tính năng nổi bật): viền lửa chạy vòng + hào quang + ngọn lửa ở góc để người xem chú ý
+        // 🎧 Luyện nghe (tính năng mới, 30 xu): lúc chờ có 🔥 + huy hiệu NEW; có người chọn (ô sáng .on) mới bật viền lửa + hào quang
         if (rule.to === 'nghe') {
           chip.classList.add('hot');
-          chip.append(el('span', 'flame', '🔥'));
+          chip.append(el('span', 'flame', '🔥'), el('span', 'new-badge', 'NEW'));
         }
         return chip;
       });
