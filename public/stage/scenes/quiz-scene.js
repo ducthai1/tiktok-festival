@@ -125,8 +125,7 @@ function createDeckPanel(hud, gameId) {
         const chip = el('div', 'deck-rule');
         chip.dataset.to = rule.to;
         const to = el('span', 'to');
-        // Luyện nghe có nhiều mức quà (vd 1 xu 10 câu, 30 xu 40 câu) → ghi rõ số câu
-        to.append(el('b', '', rule.icon), el('small', '', rule.to === 'nghe' && rule.questions ? `Nghe ${rule.questions} câu` : rule.label));
+        to.append(el('b', '', rule.icon), el('small', '', rule.label));
         chip.append(giftIcon(rule.gift), el('span', 'arrow', '➜'), to);
         chip.classList.toggle('on', active.has(rule.to));
         // 🎧 Luyện nghe (tính năng mới, 30 xu): lúc chờ có 🔥 + huy hiệu NEW; có người chọn (ô sáng .on) mới bật viền lửa + hào quang

@@ -15,7 +15,7 @@ export const DONOR_STEP = 100;
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
-  const games = new Map([
+  const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
@@ -23,6 +23,9 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     ['swim', createSwimPushGame()],
     ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady }).map((g) => [g.id, g])
   ]);
+  let games = buildGames();
+  let lastCatalog = null; // danh mục quà + luật quà tab tiếng Anh: dựng lại game (resetAll) thì gán lại
+  let lastEnglishRules = null;
   const board = createSessionLeaderboard();
   const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });
   let activeId = games.has(startGame) ? startGame : 'bar';
@@ -64,6 +67,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     },
     /** Danh mục quà thật của phòng → game nào cần (tab tiếng Anh gán quà đổi bộ đề). */
     setGiftCatalog(catalog) {
+      lastCatalog = catalog;
       for (const game of games.values()) game.setGiftCatalog?.(catalog);
     },
     setWelcomeThreshold(n) {
@@ -91,7 +95,24 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     },
     /** Tab 🎁 Quà (trang điều khiển): luật quà tab tiếng Anh. */
     setEnglishRules(rules) {
+      lastEnglishRules = rules;
       games.get('english')?.setEnglishRules?.(rules);
+    },
+    /**
+     * Nút "Xoá dữ liệu phiên live trước" (trang điều khiển): dựng lại MỌI game từ đầu — số câu cộng dồn, điểm, bảng xếp hạng, năng lượng
+     * tim, follow, share, đại sứ, chế độ đề, Luyện nghe… — và xoá bảng xếp hạng phiên, danh sách đã chào, tổng 💎 chúc mừng.
+     * GIỮ: game đang chọn, bảng quà / danh mục quà, sổ "từ đã hỏi" tab tiếng Anh (phiên mới vẫn không hỏi lại từ cũ).
+     * Chỉ chạy khi chủ kênh bấm — rớt live / khởi động lại server vẫn khôi phục từ bản lưu nóng như cũ.
+     */
+    resetAll() {
+      englishProgress?.flush?.();
+      games = buildGames();
+      if (lastCatalog) for (const game of games.values()) game.setGiftCatalog?.(lastCatalog);
+      if (lastEnglishRules) games.get('english')?.setEnglishRules?.(lastEnglishRules);
+      board.reset();
+      welcome.reset();
+      roomDonations.clear();
+      lastSimulatedAt = 0;
     },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {

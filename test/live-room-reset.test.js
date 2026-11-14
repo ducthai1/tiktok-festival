@@ -74,3 +74,27 @@ test('room tracker: same room after a reconnect or restart is not new; another r
   assert.equal(restarted.isNew('222'), true); // tắt live, mở live mới
   assert.equal(createRoomTracker(file).last(), '222');
 });
+
+test('"Xoá dữ liệu phiên live trước": every game starts over (question count, scores, energy, mode), gift rules + asked words are kept', () => {
+  const saved = [];
+  let stored = []; // giống data/english-seen.json: lưu gì thì nạp lại đúng thế
+  const progress = { load: () => stored, save: (list) => { stored = list; saved.push(list.length); }, flush: () => {} };
+  const hub = createGameHub({ startGame: 'english', englishProgress: progress, englishListenReady: () => true });
+  const rules = [{ to: 'toeic', gift: { id: '9947', name: 'Friendship Necklace', coins: 10, image: '' }, questions: 15, enabled: true }];
+  hub.setEnglishRules(rules);
+  hub.tick(0);
+  for (let i = 0; i < 6; i += 1) hub.command('english', 'next', 10 + i);
+  hub.handleEvent({ type: 'like', user: user(9), likeCount: 250 }, 20);
+  hub.handleEvent({ type: 'gift', user: user(2), gift: { id: '9947', name: 'Friendship Necklace', diamondsEach: 10, count: 1, diamonds: 10 } }, 30);
+  hub.handleEvent({ type: 'chat', user: user(3), comment: 'hello' }, 40);
+  const before = hub.snapshot(50).state;
+  assert.ok(before.qNumber >= 3 && before.energy.value === 250 && before.control.set === 'toeic');
+  const askedBefore = saved.at(-1);
+  hub.resetAll();
+  hub.tick(60);
+  const after = hub.snapshot(60);
+  assert.deepEqual([after.state.qNumber, after.state.energy.value, after.state.control.set, after.state.board.length, after.top.length], [1, 0, 'general', 0, 0]);
+  assert.deepEqual(after.state.control.rules.map((r) => `${r.gift.name}>${r.to}:${r.questions}`), ['Friendship Necklace>toeic:15']); // bảng quà giữ nguyên
+  assert.ok(saved.at(-1) >= askedBefore); // sổ từ đã hỏi không bị xoá
+  assert.equal(hub.activeId(), 'english');
+});

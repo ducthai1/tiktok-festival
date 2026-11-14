@@ -28,7 +28,7 @@ export function presentPeople(state) {
 let testSeq = 0;
 
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
-  getGiftCatalog = () => [] }) {
+  getGiftCatalog = () => [], saveBackup = () => {} }) {
   // tab 🎁 Quà: luật quà tab tiếng Anh đang dùng (chưa chỉnh thì mặc định) + danh sách quà để chọn + các chế độ
   const englishGiftsView = () => ({
     rules: settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules(),
@@ -115,6 +115,15 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       }
       updateSettings(patch);
       return { message: 'Đã lưu' };
+    },
+    /** Nút "🧹 Xoá dữ liệu phiên live trước": mọi game về từ đầu + ghi đè bản lưu nóng (khởi động lại không nạp lại dữ liệu cũ). */
+    resetLive() {
+      hub.resetAll();
+      saveBackup();
+      console.log('[admin] ĐÃ XOÁ dữ liệu phiên live trước (số câu, điểm, bảng xếp hạng, năng lượng, follow, share, chế độ đề, tổng 💎) — giữ log, bảng quà, sổ từ đã hỏi');
+      emitFx(hub.activeId(), [{ kind: 'toast', text: '🧹 Phiên live mới — mọi thứ bắt đầu lại từ đầu!' }]);
+      pushState(true);
+      return { message: 'Đã xoá dữ liệu phiên live trước — bắt đầu phiên mới' };
     },
     resetSession() {
       hub.resetSession();

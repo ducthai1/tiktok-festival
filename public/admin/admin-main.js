@@ -618,6 +618,11 @@ if ($('reset-ambassadors')) $('reset-ambassadors').addEventListener('click', () 
   if (confirm('Xoá bảng đại sứ share?')) run({ t: 'resetAmbassadors' });
 });
 if ($('disconnect')) $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
+$('reset-live').addEventListener('click', () => {
+  if (confirm('Xoá TOÀN BỘ dữ liệu phiên live trước (số câu, điểm, bảng xếp hạng, năng lượng, follow, share, chế độ đề…)? Không hoàn tác được.')) {
+    run({ t: 'resetLive' });
+  }
+});
 $('reload-stages').addEventListener('click', () => {
   if (confirm('Tải lại màn hình OBS? Màn hình trống khoảng 2–3 giây.')) run({ t: 'reload' });
 });

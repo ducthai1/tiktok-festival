@@ -253,7 +253,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let adminHandler = null;
   const handleAdmin = async (msg) => {
     adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
-      getGiftCatalog: () => giftCatalog });
+      getGiftCatalog: () => giftCatalog, saveBackup });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
       log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);
