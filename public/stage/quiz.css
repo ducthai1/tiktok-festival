@@ -226,3 +226,57 @@ html.lite .quiz-ambassadors { background: rgba(8, 10, 22, 0.92); }
   animation: quiz-exclusive-shine 3.5s linear infinite; }
 .quiz-foot .exclusive .shine b { color: inherit; -webkit-text-fill-color: transparent; }
 @keyframes quiz-exclusive-shine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+/* 💬 Bảng bình luận trực tiếp: góc phải bên dưới phần tặng quà (top: 1385px, right: 94px, width: 436px) */
+.quiz-comments {
+  position: absolute; right: 94px; top: 1385px; width: 436px; height: 320px; box-sizing: border-box;
+  padding: 12px 14px; border-radius: 20px; background: rgba(8, 10, 22, 0.82); border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5), inset 0 0 30px rgba(255, 255, 255, 0.03);
+  display: flex; flex-direction: column; gap: 8px; z-index: 2; backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.94); }
+.quiz-comments-header {
+  display: flex; align-items: center; justify-content: space-between; flex: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); padding-bottom: 8px;
+}
+.quiz-comments-title {
+  font-size: 17px; font-weight: 800; color: #6ee7ff; letter-spacing: 0.5px;
+  display: flex; align-items: center; gap: 6px; margin: 0; text-shadow: 0 0 10px rgba(110, 231, 255, 0.4);
+}
+.quiz-comments-badge {
+  font-size: 13px; font-weight: 800; color: #7dff8a; background: rgba(125, 255, 138, 0.15);
+  padding: 2px 9px; border-radius: 999px; border: 1px solid rgba(125, 255, 138, 0.4);
+  display: flex; align-items: center; gap: 5px;
+}
+.quiz-comments-badge::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%; background: #7dff8a;
+  box-shadow: 0 0 8px #7dff8a; animation: comment-live-dot 1.2s ease-in-out infinite alternate;
+}
+@keyframes comment-live-dot { from { opacity: 0.3; } to { opacity: 1; } }
+
+.quiz-comments-list {
+  flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 6px;
+  scrollbar-width: none;
+}
+.quiz-comments-list::-webkit-scrollbar { display: none; }
+
+.quiz-comment-item {
+  display: grid; grid-template-columns: 28px 1fr; align-items: start; gap: 8px;
+  padding: 6px 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.09); font-size: 16px; line-height: 1.35;
+  animation: comment-slide-in 0.2s ease-out;
+}
+.quiz-comment-member .quiz-comment-text { color: #88c0ff; font-style: italic; }
+.quiz-comment-follow .quiz-comment-text { color: #7dff8a; font-weight: 700; }
+.quiz-comment-share .quiz-comment-text { color: #ffd36b; font-weight: 700; }
+.quiz-comment-gift .quiz-comment-text { color: #ff85d5; font-weight: 700; }
+@keyframes comment-slide-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+.quiz-comment-ava {
+  width: 28px; height: 28px; border-radius: 50%; object-fit: cover; margin-top: 1px;
+  background: linear-gradient(135deg, #4f8bff, #a34fff); border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+.quiz-comment-content { overflow: hidden; min-width: 0; }
+.quiz-comment-nick { font-weight: 800; color: #ffd36b; margin-right: 6px; font-size: 15px; }
+.quiz-comment-text { color: #ffffff; word-break: break-word; }

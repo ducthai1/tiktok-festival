@@ -111,6 +111,7 @@ export function createQuizGame({
   const followedNow = new Set(); // follow trong buổi này (mỗi người thưởng một lần)
   let followCount = 0;
   const sharers = new Map(); // id → { id, nickname, avatar, shares, at } — bảng đại sứ (giữ qua các phòng live, xoá sau 2 tiếng im lặng)
+  const donators = new Map(); // id → { id, nickname, avatar, diamonds, at } — bảng vàng kim cương/quà
   const liveShares = new Map(); // id → số lần share TRONG PHÒNG LIVE NÀY (giới hạn năng lượng 5 lần/người/buổi)
   let lastPrune = 0;
   let clock = 0; // giờ của sự kiện / nhịp đang xử lý (đồng hồ của engine, không phải Date.now — test chạy đồng hồ giả)
@@ -409,7 +410,14 @@ export function createQuizGame({
         fx.push(...own);
         if (own.some((f) => f.switchNow)) switchNow(now, fx);
       } else if (event.type === 'gift') {
+        const user = event.user;
+        if (user?.id) {
+          const row = donators.get(user.id) || { id: user.id, diamonds: 0 };
+          Object.assign(row, { nickname: user.nickname, avatar: user.avatar, diamonds: row.diamonds + (event.gift?.diamonds || 0), at: now });
+          donators.set(user.id, row);
+        }
         const tier = giftTier(event.gift.diamondsEach);
+        // ok
         let opened = 0;
         if (phase === 'question' && !paused) {
           // 1 xu mở 1 chữ, >= 5 xu mở 2 chữ, >= 10 xu mở 3 chữ
@@ -463,6 +471,7 @@ export function createQuizGame({
         lastPrune = now;
         for (const [uid, r] of scores) if (now - (r.at || now) > INACTIVE_MS) scores.delete(uid);
         for (const [uid, r] of sharers) if (now - (r.at || now) > INACTIVE_MS) sharers.delete(uid);
+        for (const [uid, r] of donators) if (now - (r.at || now) > INACTIVE_MS) donators.delete(uid);
       }
       const dt = lastTick === null ? 0 : Math.max(0, now - lastTick);
       lastTick = now;
@@ -617,9 +626,10 @@ export function createQuizGame({
         lightning: lightningIndex ? { index: lightningIndex, total: LIGHTNING_QUESTIONS } : null,
         energy: { value: energy, golden: ENERGY_GOLDEN, max: ENERGY_LIGHTNING, goldenPending, lightningQueued,
           follows: followCount % FOLLOW_GOAL, followGoal: FOLLOW_GOAL },
-        // bảng ĐẠI SỨ: người share nhiều nhất buổi
         ambassadors: [...sharers.values()].sort((a, b) => b.shares - a.shares).slice(0, 3)
-          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, shares: r.shares, follower: followers.has(r.id) }))
+          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, shares: r.shares, follower: followers.has(r.id) })),
+        donators: [...donators.values()].sort((a, b) => b.diamonds - a.diamonds).slice(0, 3)
+          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, diamonds: r.diamonds, follower: followers.has(r.id) }))
       };
       if (extraState) state.control = extraState();
       if (kind === 'text' && q && !q.math) {

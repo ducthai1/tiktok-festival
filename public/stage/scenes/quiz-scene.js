@@ -186,6 +186,64 @@ function createDeckPanel(hud, gameId) {
     }
   };
 }
+/** Bảng hiển thị bình luận đổ về từ TikTok LIVE (góc dưới bên phải, dưới bảng quà) */
+function createCommentsPanel(hud) {
+  const el = hud.el;
+  const root = el('section', 'quiz-comments');
+  const header = el('div', 'quiz-comments-header');
+  const title = el('h3', 'quiz-comments-title', '💬 BÌNH LUẬN TRỰC TIẾP');
+  const badge = el('div', 'quiz-comments-badge', 'TRỰC TIẾP');
+  header.append(title, badge);
+
+  const list = el('div', 'quiz-comments-list');
+  root.append(header, list);
+  hud.gameRoot.append(root);
+
+  const maxItems = 25;
+  const existingKeys = new Set();
+
+  function addSingleComment(c) {
+    if (!c || !c.comment) return;
+    const key = `${c.id || c.nickname}:${c.at}:${c.comment}`;
+    if (existingKeys.has(key)) return;
+    existingKeys.add(key);
+    const item = el('div', 'quiz-comment-item');
+    if (c.type && c.type !== 'chat') item.classList.add(`quiz-comment-${c.type}`);
+    item.dataset.key = key;
+    const ava = avatarNode(c.avatar);
+    ava.classList.add('quiz-comment-ava');
+
+    const content = el('div', 'quiz-comment-content');
+    const nick = el('span', 'quiz-comment-nick', (c.nickname || 'Người xem') + ':');
+    const text = el('span', 'quiz-comment-text', c.comment || '');
+    content.append(nick, text);
+    item.append(ava, content);
+
+    list.append(item);
+
+    while (list.children.length > maxItems) {
+      const first = list.firstChild;
+      if (first && first.dataset && first.dataset.key) {
+        existingKeys.delete(first.dataset.key);
+      }
+      first?.remove();
+    }
+
+    list.scrollTop = list.scrollHeight;
+  }
+
+  return {
+    update(comments) {
+      if (!Array.isArray(comments) || comments.length === 0) return;
+      for (const c of comments) {
+        addSingleComment(c);
+      }
+    },
+    dispose() {
+      root.remove();
+    }
+  };
+}
 
 export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const mode = MODES[id] || MODES.lophoc;
@@ -291,6 +349,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   foot.append(howLine, listenHow, rich(GIFT_RULES[rulesKey], 'gift'), exclusive);
   card.append(head, timer, body, winnersRow, foot);
   const deckPanel = (id === 'english' || id === 'emoji') ? createDeckPanel(hud, id) : null;
+  const commentsPanel = createCommentsPanel(hud);
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -396,6 +455,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       hud.setStats([`❓ Câu ${state.qNumber}`, `✅ ${state.correctCount} đúng`]);
       hud.setBoard('🏆 BẢNG ĐIỂM', state.board.map((r) => ({ ...r, nickname: `${r.follower ? '💖 ' : ''}${r.nickname}`, score: `${r.points} đ${r.bolts ? ` ⚡${r.bolts > 1 ? r.bolts : ''}` : ''}` })));
       deckPanel?.update(state.control);
+      commentsPanel.update(state.comments);
       cat.textContent = state.category || mode.title;
       const count = state.mode === 'abcd' ? `🗳 ${state.voters} người chọn` : state.mode === 'wordle' ? `${state.guessCount} lượt đoán` : '';
       const special = state.diamond ? '💎 CÂU KIM CƯƠNG x3' : state.golden ? '⭐ CÂU VÀNG x2' : '';
@@ -465,7 +525,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`,
           `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500);
         const left = fx.after ? ` · sau ${fx.after} câu 🎧` : fx.questions ? ` · ⏳ ${fx.questions} câu` : '';
-        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${left}`, { title: fx.nickname, gold: true, image: fx.giftPicture, ms: 4000 });
+        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${left}`, { title: fx.nickname, gold: true, image: fx.avatar || fx.giftPicture, ms: 5000 });
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}${fx.after ? ' sau phần luyện nghe' : ''}!`, 'story');
       } else if (fx.kind === 'quizFollow') {
@@ -509,6 +569,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     },
     dispose() {
       deckPanel?.dispose();
+      commentsPanel.dispose();
       particles.dispose();
       for (const g of geos) g.dispose();
       disposeObject(scene);

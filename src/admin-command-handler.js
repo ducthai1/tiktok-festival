@@ -5,7 +5,7 @@ import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js'
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
 
-const QUIZ_COMMANDS = ['next', 'hint', 'pause', 'resume', 'resetScores'];
+const QUIZ_COMMANDS = ['next', 'hint', 'pause', 'resume', 'resetScores', 'resetDeck'];
 const GAME_COMMANDS = {
   boss: ['resetBoss', 'killBoss', 'frenzy'],
   bar: ['party', 'clear'],
@@ -14,7 +14,7 @@ const GAME_COMMANDS = {
   temple: ['resetMerit', 'clear'],
   ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS])),
   // tab tiếng Anh: nút đổi bộ đề / độ khó / Luyện nghe bằng tay (trước đây thiếu → nút ở trang điều khiển bị từ chối)
-  english: [...QUIZ_COMMANDS, ...ORDER.map((to) => `deck-${to}`), 'resetDeck']
+  english: [...QUIZ_COMMANDS, ...ORDER.map((to) => `deck-${to}`)]
 };
 const TEST_KINDS = new Set(['chat', 'gift', 'like', 'follow', 'share', 'member', 'viewers']);
 

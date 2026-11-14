@@ -9,19 +9,48 @@ import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
 import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 import { createQuizGames } from './quiz/quiz-games.js';
-
-/** Mốc chúc mừng người ủng hộ: mỗi 100 💎 cộng dồn trong một phòng live. */
+import { isCleanForDisplay } from './text-match.js';
 export const DONOR_STEP = 100;
-
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
+  const recentComments = []; // Hàng chờ bình luận & hoạt động mới nhất từ TikTok LIVE (tối đa 50)
+
+  function recordComment(event, now = Date.now()) {
+    if (!event || !event.user) return;
+    let text = '';
+    if (event.type === 'chat') {
+      text = String(event.comment || '').trim();
+    } else if (event.type === 'member') {
+      text = 'đã vào phòng';
+    } else if (event.type === 'follow') {
+      text = 'đã follow kênh';
+    } else if (event.type === 'share') {
+      text = 'đã chia sẻ live';
+    } else if (event.type === 'gift' && event.gift) {
+      text = `đã tặng ${event.gift.name}${event.gift.count > 1 ? ` ×${event.gift.count}` : ''}`;
+    }
+    if (!text) return;
+
+    const cleanComment = isCleanForDisplay(text) ? text : '***';
+    const nickname = isCleanForDisplay(event.user.nickname) ? event.user.nickname : 'Người xem';
+    recentComments.push({
+      id: event.user.id || '',
+      nickname,
+      avatar: event.user.avatar || '',
+      comment: cleanComment,
+      at: now,
+      type: event.type
+    });
+    if (recentComments.length > 50) recentComments.shift();
+  }
+
   const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
     ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
     ['swim', createSwimPushGame()],
-    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady }).map((g) => [g.id, g])
+    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady, getRecentComments: () => recentComments.filter((c) => !c.type || c.type === 'chat').slice(-20) }).map((g) => [g.id, g])
   ]);
   let games = buildGames();
   let lastCatalog = null; // danh mục quà + luật quà tab tiếng Anh: dựng lại game (resetAll) thì gán lại
@@ -61,6 +90,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
         return [];
       }
       if (event.viewerCount) welcome.setViewerCount(event.viewerCount);
+      recordComment(event, now);
       board.record(event, now);
       const fx = active().handleEvent(event, now);
       return [...fx, ...donorMilestone(event), ...welcome.notice(event.user, now)];
