@@ -10,6 +10,9 @@ import { createTempleGame } from './temple-game.js';
 import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 import { createQuizGames } from './quiz/quiz-games.js';
 
+/** Mốc chúc mừng người ủng hộ: mỗi 100 💎 cộng dồn trong một phòng live. */
+export const DONOR_STEP = 100;
+
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
   const games = new Map([
@@ -27,6 +30,20 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
 
   const active = () => games.get(activeId);
 
+  // 🎉 Chúc mừng người ủng hộ: cộng dồn 💎 mỗi người tặng TRONG PHÒNG LIVE NÀY; vượt mốc 100 / 200 / 300… → màn chúc mừng toàn màn hình
+  // (stage-celebration.js). Một món lớn vượt nhiều mốc một lúc → một màn với mốc cao nhất. Phòng live mới thì đếm lại.
+  const roomDonations = new Map(); // id → 💎 đã tặng trong phòng này
+  function donorMilestone(event) {
+    if (event.type !== 'gift' || !event.user?.id || !(event.gift?.diamonds > 0)) return [];
+    const before = roomDonations.get(event.user.id) || 0;
+    const total = before + event.gift.diamonds;
+    roomDonations.set(event.user.id, total);
+    if (Math.floor(total / DONOR_STEP) <= Math.floor(before / DONOR_STEP)) return [];
+    const milestone = Math.floor(total / DONOR_STEP) * DONOR_STEP;
+    if (!event.simulated) console.log(`[app] 🎉 ${event.user.nickname} đạt mốc ${milestone}💎 trong phòng (tổng ${total}💎)`);
+    return [{ kind: 'donorMilestone', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, milestone, total }];
+  }
+
   return {
     list: () => [...games.values()].map((g) => ({ id: g.id, title: g.title })),
     activeId: () => activeId,
@@ -43,7 +60,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       if (event.viewerCount) welcome.setViewerCount(event.viewerCount);
       board.record(event, now);
       const fx = active().handleEvent(event, now);
-      return [...fx, ...welcome.notice(event.user, now)];
+      return [...fx, ...donorMilestone(event), ...welcome.notice(event.user, now)];
     },
     /** Danh mục quà thật của phòng → game nào cần (tab tiếng Anh gán quà đổi bộ đề). */
     setGiftCatalog(catalog) {
@@ -78,6 +95,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {
+      roomDonations.clear();
       for (const game of games.values()) game.resetRoom?.();
       welcome.reset(); // phòng mới: chào lại người vào
     },

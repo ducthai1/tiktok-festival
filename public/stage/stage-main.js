@@ -7,6 +7,7 @@ import { createRenderPipeline, STAGE_HEIGHT, STAGE_WIDTH } from './stage-render-
 import { createFrameLimiter, stageQuality } from './stage-quality.js';
 import { SAMPLE_GIFTS, tierRangeLabel } from '/static/shared/gift-tiers.js';
 import { speakableName } from '/static/shared/spoken-name.js';
+import { createCelebration } from './stage-celebration.js';
 
 const SCENES = {
   boss: () => import('./scenes/boss-scene.js').then((m) => m.createBossScene),
@@ -33,6 +34,7 @@ const pipeline = createRenderPipeline(document.getElementById('scene'), quality)
 const hud = createHud();
 const labels = createLabelLayer(document.getElementById('labels'));
 const audio = createStageAudio();
+const celebration = createCelebration({ root: document.getElementById('hud'), audio });
 let settings = { legend: true };
 // quà đại diện từng bậc (server gửi: quà thật của phòng khi đang live, quà mẫu khi chưa)
 let giftTiers = [];
@@ -213,6 +215,7 @@ const socket = connectLiveSocket({
       for (const fx of message.list) {
         try {
           if (fx.kind === 'welcome') onWelcome(fx);
+          else if (fx.kind === 'donorMilestone') celebration.show(fx); // 🎉 người ủng hộ đạt mốc 100 / 200… 💎 — mọi game
           else current.onFx(fx);
         } catch (error) {
           console.error('[stage] lỗi hiệu ứng:', fx.kind, error);

@@ -1,0 +1,63 @@
+/* 🎉 Màn chúc mừng người ủng hộ (stage-celebration.js) — trên cùng mọi lớp, nội dung trong vùng an toàn TikTok (180–1150 px). */
+.celebrate { position: absolute; inset: 0; z-index: 50; pointer-events: none; overflow: hidden;
+  --c1: #ffd36b; --c2: #ff8a00; --glow: rgba(255, 200, 80, 0.9); }
+.celebrate.cb-rainbow { --c1: #ff4fa3; --c2: #36d6ff; --glow: rgba(255, 120, 220, 0.9); }
+.celebrate.cb-legend { --c1: #ff3d6e; --c2: #b388ff; --glow: rgba(255, 70, 120, 0.95); }
+.celebrate.out { animation: cb-out 600ms ease-in forwards; }
+@keyframes cb-out { to { opacity: 0; transform: scale(0.96); } }
+
+/* nền tối mờ cho nổi bật + chớp sáng */
+.celebrate::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 50% 33%, rgba(4, 2, 10, 0.78), rgba(4, 2, 10, 0.92) 70%);
+  animation: cb-fade-in 400ms ease-out both; }
+.cb-flash { position: absolute; inset: 0; background: radial-gradient(circle at 50% 30%, #fff, rgba(255, 240, 200, 0.6) 35%, transparent 70%);
+  animation: cb-flash 900ms ease-out both; }
+@keyframes cb-flash { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }
+@keyframes cb-fade-in { from { opacity: 0; } }
+
+/* hào quang xoay + sóng xung kích quanh avatar (tâm avatar ≈ 540, 606) */
+.cb-rays { position: absolute; left: 540px; top: 606px; width: 1500px; height: 1500px; margin: -750px 0 0 -750px; border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, var(--c1) 0deg 7deg, transparent 7deg 20deg);
+  -webkit-mask: radial-gradient(circle, #000 18%, transparent 62%); mask: radial-gradient(circle, #000 18%, transparent 62%);
+  opacity: 0.55; animation: cb-spin 9s linear infinite, cb-fade-in 700ms ease-out both; }
+.cb-rainbow .cb-rays, .cb-legend .cb-rays { background: repeating-conic-gradient(from 0deg, #ff4fa3 0deg 6deg, transparent 6deg 12deg,
+  #ffd36b 12deg 18deg, transparent 18deg 24deg, #36d6ff 24deg 30deg, transparent 30deg 36deg, #7dff8a 36deg 42deg, transparent 42deg 48deg); }
+@keyframes cb-spin { to { transform: rotate(360deg); } }
+.cb-ring { position: absolute; left: 540px; top: 606px; width: 300px; height: 300px; margin: -150px 0 0 -150px; border-radius: 50%;
+  border: 14px solid var(--c1); box-shadow: 0 0 40px var(--glow); opacity: 0; animation: cb-ring 1.3s ease-out 0.15s both; }
+.cb-ring.r2 { border-color: var(--c2); animation-delay: 0.45s; }
+@keyframes cb-ring { from { transform: scale(0.3); opacity: 1; } to { transform: scale(4.2); opacity: 0; } }
+.cb-fx { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+
+/* thẻ giữa màn hình */
+.cb-card { position: absolute; left: 110px; right: 110px; top: 250px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;
+  animation: cb-pop 900ms cubic-bezier(0.2, 1.6, 0.4, 1) 0.1s both; }
+@keyframes cb-pop { from { transform: scale(0.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.cb-kicker { font-size: 46px; font-weight: 900; letter-spacing: 1px; color: #fff; padding: 8px 30px; border-radius: 999px;
+  background: linear-gradient(135deg, var(--c2), var(--c1)); box-shadow: 0 0 40px var(--glow); text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); }
+.cb-avatar { position: relative; width: 300px; height: 300px; border-radius: 50%; padding: 12px; margin-top: 120px; /* chừa chỗ vương miện, không đè chữ trên */
+  background: conic-gradient(from 0deg, var(--c1), var(--c2), #fff, var(--c1)); box-shadow: 0 0 60px var(--glow), 0 0 140px var(--glow);
+  animation: cb-glow 1.2s ease-in-out infinite alternate; }
+.cb-avatar img, .cb-initial { position: absolute; inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); border-radius: 50%; object-fit: cover; }
+.cb-initial { display: grid; place-items: center; background: linear-gradient(135deg, #7a5cff, #ff4fa3); color: #fff; font-size: 130px; font-weight: 900; }
+.cb-crown { position: absolute; left: 50%; top: -118px; font-size: 140px; transform: translateX(-50%); filter: drop-shadow(0 0 20px var(--glow));
+  animation: cb-crown 900ms cubic-bezier(0.3, 1.8, 0.5, 1) 0.9s both; }
+@keyframes cb-crown { from { transform: translate(-50%, -420px) rotate(-30deg); opacity: 0; } to { transform: translate(-50%, 0) rotate(-8deg); opacity: 1; } }
+@keyframes cb-glow { to { box-shadow: 0 0 90px var(--glow), 0 0 200px var(--glow); } }
+.cb-name { max-width: 860px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 78px; font-weight: 900; line-height: 1.1;
+  background: linear-gradient(100deg, var(--c1) 0%, #fff 45%, var(--c1) 55%, var(--c2) 100%) 0 0 / 250% 100%;
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.7));
+  animation: cb-shine 2.2s linear infinite; }
+@keyframes cb-shine { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+.cb-amount { font-size: 132px; font-weight: 900; line-height: 1; color: #fff; text-shadow: 0 0 30px var(--glow), 0 8px 24px rgba(0, 0, 0, 0.7);
+  animation: cb-pulse 0.6s ease-in-out 2s 4 alternate; }
+.cb-amount .gem { font-size: 96px; }
+@keyframes cb-pulse { to { transform: scale(1.12); } }
+.cb-thanks { font-size: 42px; font-weight: 800; color: #fff; text-shadow: 0 4px 14px rgba(0, 0, 0, 0.8); }
+
+/* mưa kim cương */
+.cb-rain span { position: absolute; top: -120px; animation: cb-fall linear both; filter: drop-shadow(0 0 10px var(--glow)); }
+@keyframes cb-fall { from { transform: translateY(0) rotate(0); } to { transform: translateY(1400px) rotate(540deg); } }
+
+/* rung lớp chữ / bảng (không rung #stage — #stage dùng transform để co giãn khung) */
+#hud.cb-shake { animation: cb-shake 650ms ease-in-out; }
+@keyframes cb-shake { 10%, 50%, 90% { transform: translate(-14px, 6px); } 30%, 70% { transform: translate(14px, -6px); } }
