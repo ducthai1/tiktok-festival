@@ -5,6 +5,14 @@
 import { speakableName } from '/static/shared/spoken-name.js';
 
 const SHOW_MS = 8000;
+// khung danh hiệu + đôi cánh thật của Sàn Nhảy (public/assets/dance/banners) — càng mốc cao càng sang
+const ART = '/static/assets/dance/banners/';
+const LOOK = {
+  gold: { frame: 'title-fire.webp', wings: 'wings-fire.webp', crown: true },
+  rainbow: { frame: 'title-neon.webp', wings: 'energy-wings-v2.webp', crown: true },
+  legend: { frame: 'title-royal.webp', wings: 'player-wings.webp', crown: false } // khung hoàng gia đã có vương miện
+};
+for (const look of Object.values(LOOK)) for (const file of [look.frame, look.wings]) new Image().src = ART + file; // tải sẵn
 const OUT_MS = 600;
 const PALETTES = {
   gold: ['#ffd36b', '#fff3c4', '#ffb300', '#ff8a00', '#ffffff'],
@@ -86,7 +94,6 @@ export function createCelebration({ root, audio }) {
       img.onerror = () => img.remove();
       box.append(img);
     }
-    box.append(el('span', 'cb-crown', '👑'));
     return box;
   }
 
@@ -108,14 +115,30 @@ export function createCelebration({ root, audio }) {
       rain.append(d);
     }
     const card = el('div', 'cb-card');
-    const kicker = tier === 'legend' ? `👑 HUYỀN THOẠI CỦA KÊNH 👑` : tier === 'rainbow' ? `🔥 SIÊU ỦNG HỘ 🔥` : `🎉 MỐC ${m} 💎 🎉`;
+    const look = LOOK[tier];
+    // khung danh hiệu (ảnh thật) + chữ trong lòng khung
+    const kicker = el('div', 'cb-kicker');
+    kicker.style.backgroundImage = `url('${ART}${look.frame}')`;
+    const ktext = el('div', 'cb-ktext');
+    ktext.append(el('b', '', tier === 'legend' ? 'HUYỀN THOẠI' : tier === 'rainbow' ? 'SIÊU ỦNG HỘ' : `MỐC ${m} 💎`),
+      el('small', '', tier === 'gold' ? 'ỦNG HỘ KÊNH' : `${m.toLocaleString('vi-VN')} 💎`));
+    kicker.append(ktext);
+    const wings = el('div', 'cb-wings');
+    wings.style.backgroundImage = `url('${ART}${look.wings}')`;
+    const avatar = avatarNode(fx);
+    if (look.crown) avatar.append(el('span', 'cb-crown', '👑'));
     const amount = el('div', 'cb-amount');
     const num = el('span', 'num', '0');
     amount.append(num, el('span', 'gem', ' 💎'));
-    card.append(el('div', 'cb-kicker', kicker), avatarNode(fx), el('div', 'cb-name', fx.nickname || 'Bạn'), amount,
-      el('div', 'cb-thanks', 'CẢM ƠN BẠN ĐÃ ỦNG HỘ KÊNH! ❤️'));
+    card.append(kicker, wings, avatar, el('div', 'cb-name', fx.nickname || 'Bạn'), amount, el('div', 'cb-thanks', 'CẢM ƠN BẠN ĐÃ ỦNG HỘ KÊNH! ❤️'));
     layer.append(el('div', 'cb-flash'), el('div', 'cb-rays'), el('div', 'cb-ring'), el('div', 'cb-ring r2'), canvas, rain, card);
     root.append(layer);
+    // chữ dài → thu nhỏ cho vừa lòng khung (như khung danh hiệu Sàn Nhảy)
+    for (const [node, max, min] of [[ktext.firstChild, 52, 26], [ktext.lastChild, 26, 16]]) {
+      let size = max;
+      node.style.fontSize = `${size}px`;
+      while (node.scrollWidth > ktext.clientWidth && size > min) node.style.fontSize = `${(size -= 2)}px`;
+    }
     root.classList.remove('cb-shake');
     void root.offsetWidth;
     root.classList.add('cb-shake');
