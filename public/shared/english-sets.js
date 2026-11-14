@@ -53,9 +53,9 @@ export const ENGLISH_TARGETS = {
   giaitri:   { kind: 'set',   icon: '🎬', label: 'Giải trí' }
 };
 export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '⚖️', label: 'Độ khó: Thường' } };
-// thứ tự ô trên bảng quà (7 ô / trang): TOEIC, IELTS ở trang 1 (chỗ cũ của Động vật, Trường học — hai ô này sang trang 2)
+// thứ tự ô trên bảng quà (7 ô / trang): trang 1 có TOEIC, IELTS (Động vật, Trường học sang trang 2)
 export const ORDER = [
-  'general', 'easy', 'hard', 'toeic', 'amthuc', 'ielts', 'nghe',
+  'general', 'easy', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
   'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri'
 ];
 
