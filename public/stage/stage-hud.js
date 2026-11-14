@@ -182,9 +182,16 @@ export function createHud() {
         setTimeout(() => node.remove(), 400);
       }, ms);
     },
-    banner(text, sub = '', ms = 3200) {
+    /** who: { avatar, nickname } — hiện avatar người gây ra (vd người tặng quà đổi bộ đề) phía trên chữ. */
+    banner(text, sub = '', ms = 3200, who = null) {
       const root = $('banner');
       root.replaceChildren(document.createTextNode(text));
+      if (who) {
+        const ring = el('div', 'banner-ava');
+        if (who.avatar) ring.append(avatarNode(who.avatar));
+        else ring.append(el('span', 'initial', ([...String(who.nickname || '?').trim()][0] || '?').toUpperCase()));
+        root.prepend(ring);
+      }
       if (sub) root.append(el('small', '', sub));
       root.classList.add('show');
       clearTimeout(bannerTimer);

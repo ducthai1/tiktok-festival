@@ -543,7 +543,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         const count = fx.after ? ` · đổi sau ${fx.after} câu Luyện nghe nữa`
           : fx.questions ? ` · ${fx.questions} câu${fx.switchNow ? '' : ' tiếp theo'}` : '';
         hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`,
-          `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500);
+          `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500, { avatar: fx.avatar, nickname: fx.nickname });
         const left = fx.after ? ` · sau ${fx.after} câu 🎧` : fx.questions ? ` · ⏳ ${fx.questions} câu` : '';
         hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${left}`, { title: fx.nickname, gold: true, image: fx.avatar || fx.giftPicture, ms: 5000 });
         confetti(200);
