@@ -31,8 +31,21 @@ const HINT_FADE_MS = 450;
 let legendTimer = 0;
 let freeHint = null;
 
+/** Bậc thẻ quà theo giá thật món quà (xu): 1 · 2–9 · 10–19 · 20–29 · 30+ */
+export const giftCardTier = (coins) => (coins >= 30 ? 5 : coins >= 20 ? 4 : coins >= 10 ? 3 : coins >= 2 ? 2 : 1);
+const CARD_MS = [0, 4500, 5000, 5500, 6000, 7000];
+const CARD_KICKER = ['', '🎁 ĐỔI ĐỀ', '✨ ĐỔI ĐỀ', '🌟 ĐỔI ĐỀ VIP', '🔥 ĐỔI ĐỀ SIÊU CẤP', '👑 ĐỔI ĐỀ HOÀNG GIA'];
+
 export function createHud() {
   const toastRoot = $('toasts');
+  // 🎁 Thẻ quà đổi đề: cùng chỗ thẻ chào người mới, ƯU TIÊN hơn — đang hiện thẻ quà thì lời chào chờ (stage-main.js).
+  const cardRoot = document.createElement('section');
+  cardRoot.id = 'giftcard';
+  cardRoot.hidden = true;
+  $('hud').append(cardRoot);
+  const cardQueue = [];
+  let cardShowing = null; // { key, count, until, timer, node }
+  let cardDone = () => {};
   const combos = new Map(); // key → { node, text, total, timer }
   let bannerTimer = 0;
   let lastBoardKey = '';
@@ -182,6 +195,78 @@ export function createHud() {
         setTimeout(() => node.remove(), 400);
       }, ms);
     },
+    /**
+     * Thẻ quà đổi bộ đề (đẹp theo bậc giá món quà). card: { nickname, avatar, giftName, giftPicture, coins, count, icon, label, line }.
+     * Cùng người + cùng chế độ tặng liên tục (combo) → cộng ×N trên thẻ đang hiện, không bật thẻ mới.
+     */
+    giftCard(card) {
+      const key = `${card.nickname}|${card.label}`;
+      if (cardShowing?.key === key) {
+        cardShowing.count += card.count || 1;
+        cardShowing.node.querySelector('.gc-count').textContent = `×${cardShowing.count}`;
+        cardShowing.node.querySelector('.gc-count').classList.remove('bump', 'one');
+        void cardShowing.node.offsetWidth;
+        cardShowing.node.querySelector('.gc-count').classList.add('bump');
+        return;
+      }
+      const waiting = cardQueue.find((c) => `${c.nickname}|${c.label}` === key);
+      if (waiting) waiting.count = (waiting.count || 1) + (card.count || 1);
+      else if (cardQueue.length < 6) cardQueue.push({ ...card });
+      if (!cardShowing) this.nextGiftCard();
+    },
+    nextGiftCard() {
+      const card = cardQueue.shift();
+      if (!card) {
+        cardShowing = null;
+        cardRoot.hidden = true;
+        cardDone();
+        return;
+      }
+      const tier = giftCardTier(card.coins || 0);
+      cardRoot.className = `gc-t${tier}`;
+      const giftBox = el('div', 'gc-gift');
+      if (card.giftPicture) {
+        const img = document.createElement('img');
+        img.src = card.giftPicture;
+        img.alt = '';
+        img.referrerPolicy = 'no-referrer';
+        giftBox.append(img);
+      } else giftBox.append(el('span', 'gc-emoji', '🎁'));
+      giftBox.append(el('span', `gc-count${(card.count || 1) > 1 ? '' : ' one'}`, `×${card.count || 1}`));
+      const who = el('div', 'gc-ava');
+      if (card.avatar) who.append(avatarNode(card.avatar));
+      else who.append(el('span', 'initial', ([...String(card.nickname || '?').trim()][0] || '?').toUpperCase()));
+      if (tier >= 5) who.append(el('span', 'gc-crown', '👑'));
+      const text = el('div', 'gc-text');
+      text.append(el('div', 'gc-kicker', CARD_KICKER[tier]), el('div', 'gc-name', card.nickname), el('div', 'gc-line', card.line || ''));
+      const target = el('div', 'gc-target');
+      target.append(el('span', 'gc-icon', card.icon || '🎁'), el('span', 'gc-label', card.label || ''),
+        el('span', 'gc-price', `${card.coins || 1} 💎`));
+      const fx = el('div', 'gc-fx');
+      for (let i = 0; i < (tier >= 4 ? 10 : tier >= 3 ? 6 : 0); i += 1) {
+        const p = el('span', '', tier >= 4 ? (i % 2 ? '🔥' : '✨') : '✨');
+        p.style.left = `${6 + i * 9}%`;
+        p.style.animationDelay = `${(i % 5) * 0.35}s`;
+        fx.append(p);
+      }
+      cardRoot.replaceChildren(fx, giftBox, who, text, target);
+      cardRoot.hidden = false;
+      cardRoot.getAnimations?.().forEach((a) => a.cancel());
+      void cardRoot.offsetWidth;
+      cardRoot.classList.add('show');
+      const ms = CARD_MS[tier];
+      cardShowing = { key: `${card.nickname}|${card.label}`, count: card.count || 1, node: cardRoot };
+      clearTimeout(cardRoot.timer);
+      cardRoot.timer = setTimeout(() => {
+        cardRoot.classList.replace('show', 'hide');
+        cardRoot.timer = setTimeout(() => this.nextGiftCard(), 380);
+      }, ms - 380);
+    },
+    /** true khi đang hiện / còn thẻ quà chờ — lời chào người mới phải đợi. */
+    giftCardBusy: () => Boolean(cardShowing) || cardQueue.length > 0,
+    onGiftCardsDone(fn) {
+      cardDone = fn;
+    },
     /** who: { avatar, nickname } — hiện avatar người gây ra (vd người tặng quà đổi bộ đề) phía trên chữ. */
     banner(text, sub = '', ms = 3200, who = null) {
       const root = $('banner');
@@ -259,6 +344,10 @@ export function createHud() {
       combos.clear();
       $('banner').classList.remove('show');
       this.hideFortune();
+      cardQueue.length = 0;
+      clearTimeout(cardRoot.timer);
+      cardShowing = null;
+      cardRoot.hidden = true;
       $('welcome').hidden = true;
       $('welcome-ticker').replaceChildren();
       lastBoardKey = '';

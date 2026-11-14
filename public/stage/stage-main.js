@@ -134,7 +134,24 @@ async function switchScene(id) {
 const WELCOME_SOUND_GAP_MS = 6000;
 let lastWelcomeSound = -Infinity;
 // Chào người mới: thẻ tên chung cho mọi game + hiệu ứng 3D riêng của từng cảnh.
+// Thẻ quà đổi đề ƯU TIÊN hơn thẻ chào (cùng một chỗ): đang hiện thẻ quà thì lời chào chờ — xong thì chào (nhiều người → chào cả đoàn).
+const welcomeWaiting = [];
 function onWelcome(fx) {
+  if (hud.giftCardBusy()) {
+    welcomeWaiting.push(fx);
+    if (welcomeWaiting.length > 12) welcomeWaiting.shift();
+    return undefined;
+  }
+  return showWelcome(fx);
+}
+hud.onGiftCardsDone(() => {
+  if (!welcomeWaiting.length) return;
+  const waiting = welcomeWaiting.splice(0);
+  if (waiting.length === 1) return showWelcome(waiting[0]);
+  const people = waiting.flatMap((w) => (w.mode === 'group' ? w.people : [{ id: w.id, nickname: w.nickname, avatar: w.avatar }])).slice(-24);
+  return showWelcome({ kind: 'welcome', mode: 'group', people, durationMs: 3600 });
+});
+function showWelcome(fx) {
   const w = current?.welcome || {};
   if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);
   hud.welcome(fx, w.line);

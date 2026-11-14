@@ -4,6 +4,7 @@ import * as THREE from '/vendor/three/three.module.js';
 import { createParticleSystem } from './particle-effects.js';
 import { disposeObject } from './person-model.js';
 import { avatarNode } from '../stage-labels.js';
+import { giftCardTier } from '../stage-hud.js';
 
 const MODES = {
   lophoc: { icon: '📚', title: 'LỚP HỌC CHỮ', color: '#ffd36b', bg: '#0b1a16',
@@ -40,13 +41,13 @@ function createDeckPanel(hud, gameId) {
   const el = hud.el;
   const root = el('section', 'deck-panel');
   const header = el('div', 'deck-header');
-  const title = el('h3', 'deck-title', gameId === 'emoji' ? '🎁 TẶNG QUÀ ĐỂ ĐỔI CHỦ ĐỀ' : '🎁 TẶNG QUÀ ĐỂ ĐỔI BỘ ĐỀ / ĐỘ KHÓ');
+  const title = el('h3', 'deck-title', gameId === 'emoji' ? '🎁 TẶNG QUÀ ĐỔI CHỦ ĐỀ' : '🎁 TẶNG QUÀ ĐỔI ĐỀ');
   const activeBadge = el('div', 'deck-active-badge');
-  header.append(title, activeBadge);
-
+  // bộ đề / độ khó hiện tại nằm chung thanh tiêu đề (gọn 1 dòng → cả cụm dưới lên cao, iPhone không bị TikTok che)
   const status = el('div', 'deck-status');
+  header.append(title, status, activeBadge);
   const rulesRoot = el('div', 'deck-rules');
-  root.append(header, status, rulesRoot);
+  root.append(header, rulesRoot);
   hud.gameRoot.append(root);
   let chips = [];
   let pageTimer = 0;
@@ -76,7 +77,7 @@ function createDeckPanel(hud, gameId) {
 
   function updateActiveBadge(c) {
     if (c.setLeft > 0) {
-      activeBadge.replaceChildren(el('em', '', `⏳ còn ${c.setLeft} câu (${gameId === 'emoji' ? 'Chủ đề' : 'Bộ đề'}: ${c.setLabel})`));
+      activeBadge.replaceChildren(el('em', '', `⏳ ${c.setLeft} câu`));
       if (c.setBy) {
         const who = el('span', 'by');
         who.append(avatarNode(c.setBy.avatar), el('span', 'name', c.setBy.nickname));
@@ -84,7 +85,7 @@ function createDeckPanel(hud, gameId) {
       }
       activeBadge.hidden = false;
     } else if (c.levelLeft > 0) {
-      activeBadge.replaceChildren(el('em', '', `⏳ còn ${c.levelLeft} câu (${c.levelLabel})`));
+      activeBadge.replaceChildren(el('em', '', `⏳ ${c.levelLeft} câu`));
       if (c.levelBy) {
         const who = el('span', 'by');
         who.append(avatarNode(c.levelBy.avatar), el('span', 'name', c.levelBy.nickname));
@@ -99,7 +100,7 @@ function createDeckPanel(hud, gameId) {
 
   function renderStatus(c) {
     const setSlot = el('div', 'deck-now set');
-    setSlot.append(el('span', 'ic', c.setIcon), el('b', '', `${gameId === 'emoji' ? 'Chủ đề' : 'Bộ đề'}: ${c.setLabel.replace(/^Chủ đề:\s*/, '')}`));
+    setSlot.append(el('span', 'ic', c.setIcon), el('b', '', c.setLabel.replace(/^Chủ đề:\s*/, '')));
 
     if (gameId === 'emoji') {
       updateActiveBadge(c);
@@ -107,7 +108,7 @@ function createDeckPanel(hud, gameId) {
     }
 
     const levelSlot = el('div', 'deck-now level');
-    levelSlot.append(el('span', 'ic', c.levelIcon), el('b', '', `Độ khó: ${c.levelLabel.replace(/^Độ khó:\s*/, '')}`));
+    levelSlot.append(el('span', 'ic', c.levelIcon), el('b', '', c.levelLabel.replace(/^Độ khó:\s*/, '')));
 
     updateActiveBadge(c);
     return [setSlot, levelSlot];
@@ -540,8 +541,11 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
           : fx.questions ? ` · ${fx.questions} câu${fx.switchNow ? '' : ' tiếp theo'}` : '';
         hud.banner(`${fx.icon} ${isLevel ? 'ĐỘ KHÓ' : (id === 'emoji' ? 'CHỦ ĐỀ' : 'BỘ ĐỀ')}: ${fx.label.toUpperCase()}!`,
           `${fx.nickname} đã chọn${count}${fx.switchNow ? ' · đổi ngay!' : ''}`, 5500, { avatar: fx.avatar, nickname: fx.nickname });
-        const left = fx.after ? ` · sau ${fx.after} câu 🎧` : fx.questions ? ` · ⏳ ${fx.questions} câu` : '';
-        hud.toast(`🎁 ${fx.giftName} → ${fx.icon} ${fx.label}${left}`, { title: fx.nickname, gold: true, image: fx.avatar || fx.giftPicture, ms: 5000 });
+        // thẻ quà đổi đề — cùng chỗ thẻ chào người mới, đẹp theo bậc giá món quà (stage-hud.js giftCard)
+        const left = fx.after ? `sau ${fx.after} câu 🎧` : fx.questions ? `${fx.questions} câu${fx.switchNow ? ' · đổi ngay!' : ''}` : 'đổi ngay!';
+        hud.giftCard({ nickname: fx.nickname, avatar: fx.avatar, giftName: fx.giftName, giftPicture: fx.giftPicture, coins: fx.coins, count: fx.count,
+          icon: fx.icon, label: fx.label, line: `${fx.giftName} → ${fx.icon} ${fx.label} · ${left}` });
+        if (giftCardTier(fx.coins || 0) >= 4) audio.play('airhorn');
         confetti(200);
         audio.speak(`${fx.nickname} đổi sang ${fx.label}${fx.after ? ' sau phần luyện nghe' : ''}!`, 'story');
       } else if (fx.kind === 'quizFollow') {

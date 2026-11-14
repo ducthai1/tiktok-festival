@@ -309,8 +309,9 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const gift = event.gift;
       const rule = englishRuleFor(assignments, gift);
       const to = rule?.to;
+      // coins: giá THẬT món vừa tặng (TikTok báo) → màn hình chọn bậc thẻ quà (1 / 5 / 10 / 20 / 30+ xu)
       const base = { userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, giftName: gift.name,
-        giftPicture: gift.pictureUrl, count: gift.count };
+        giftPicture: gift.pictureUrl, count: gift.count, coins: Number(gift.diamondsEach) || 0 };
       const result = to && apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar }, rule.questions);
       if (!result) return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
       const target = ENGLISH_TARGETS[to];
