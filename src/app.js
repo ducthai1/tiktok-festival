@@ -18,7 +18,7 @@ import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
-import { defaultEnglishRules } from '../public/shared/english-sets.js';
+import { ORDER_VERSION, defaultEnglishRules, sortByOrder } from '../public/shared/english-sets.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
@@ -105,12 +105,31 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const legendSource = () => [...giftCatalog, ...sampleGifts.filter((s) => !giftCatalog.some((g) => g.name === (s.realName || s.name)))];
   let giftTiers = tierRepresentatives(legendSource(), 3);
   hub.setGiftCatalog(giftCatalog);
+  // thứ tự ô mặc định vừa đổi (vd TOEIC, IELTS lên trang 1) → bảng quà ĐÃ LƯU cũng xếp lại theo thứ tự mới, MỘT lần (giữ nguyên quà /
+  // số câu chủ kênh chọn); sau đó chủ kênh vẫn tự đổi chỗ bằng ▲▼ ở tab 🎁 Quà (lưu lại thì không xếp nữa)
+  if (settings.englishGifts?.length && settings.englishGiftsOrder !== ORDER_VERSION) {
+    settings.englishGifts = sortByOrder(settings.englishGifts);
+    settings.englishGiftsOrder = ORDER_VERSION;
+    try {
+      fs.writeFileSync(path.join(dataDir, 'settings.json'), JSON.stringify(settings, null, 2));
+      log.info('admin', 'đã xếp lại bảng quà tab tiếng Anh theo thứ tự ô mới (quà giữ nguyên)');
+    } catch (error) {
+      log.warn('admin', `không lưu được bảng quà đã xếp lại: ${error.message}`);
+    }
+  }
   // luật quà tab tiếng Anh đã chỉnh ở tab 🎁 Quà (chưa chỉnh → mặc định); quà đã lưu mà nay không còn trong bảng quà → mặc định
   try {
     hub.setEnglishRules(settings.englishGifts?.length ? normalizeRules(settings.englishGifts, giftOptions(giftCatalog)) : defaultEnglishRules());
   } catch (error) {
     log.warn('admin', `luật quà tab tiếng Anh đã lưu không dùng được (${error.message}) → dùng bảng mặc định`);
     hub.setEnglishRules(defaultEnglishRules());
+  }
+
+  // 👑 Bảng vàng: tổng 💎 mỗi người từ lịch sử quà (data/gifts.log, dòng ghi ở onEvent bên dưới) — donor-ledger.js
+  try {
+    hub.loadGiftHistory(fs.readFileSync(path.join(dataDir, 'gifts.log'), 'utf8'));
+  } catch (error) {
+    if (error.code !== 'ENOENT') log.warn('app', `không đọc được lịch sử quà gifts.log: ${error.message}`);
   }
 
   const hotBackupFile = path.join(dataDir, 'hot-backup.json');

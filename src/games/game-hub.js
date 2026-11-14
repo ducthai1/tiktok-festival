@@ -9,19 +9,21 @@ import { createSwimPushGame } from './swim-push-game.js';
 import { createTempleGame } from './temple-game.js';
 import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 import { createQuizGames } from './quiz/quiz-games.js';
+import { createDonorLedger } from './donor-ledger.js';
 
 /** Mốc chúc mừng người ủng hộ: mỗi 100 💎 cộng dồn trong một phòng live. */
 export const DONOR_STEP = 100;
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
+  const donors = createDonorLedger(); // 👑 Bảng vàng: mọi tab quiz dùng chung, sống qua "Xoá dữ liệu phiên live trước" (là lịch sử quà)
   const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
     ['bar', createBarClubGame({ random })],
     ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
     ['swim', createSwimPushGame()],
-    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady }).map((g) => [g.id, g])
+    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady, donors }).map((g) => [g.id, g])
   ]);
   let games = buildGames();
   let lastCatalog = null; // danh mục quà + luật quà tab tiếng Anh: dựng lại game (resetAll) thì gán lại
@@ -62,6 +64,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       }
       if (event.viewerCount) welcome.setViewerCount(event.viewerCount);
       board.record(event, now);
+      donors.record(event);
       const fx = active().handleEvent(event, now);
       return [...fx, ...donorMilestone(event), ...welcome.notice(event.user, now)];
     },
@@ -93,6 +96,10 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
     },
+    /** 👑 Bảng vàng: nạp lịch sử quà (nội dung data/gifts.log) lúc khởi động. */
+    loadGiftHistory(text) {
+      donors.load(text);
+    },
     /** Tab 🎁 Quà (trang điều khiển): luật quà tab tiếng Anh. */
     setEnglishRules(rules) {
       lastEnglishRules = rules;
@@ -101,7 +108,8 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     /**
      * Nút "Xoá dữ liệu phiên live trước" (trang điều khiển): dựng lại MỌI game từ đầu — số câu cộng dồn, điểm, bảng xếp hạng, năng lượng
      * tim, follow, share, đại sứ, chế độ đề, Luyện nghe… — và xoá bảng xếp hạng phiên, danh sách đã chào, tổng 💎 chúc mừng.
-     * GIỮ: game đang chọn, bảng quà / danh mục quà, sổ "từ đã hỏi" tab tiếng Anh (phiên mới vẫn không hỏi lại từ cũ).
+     * GIỮ: game đang chọn, bảng quà / danh mục quà, sổ "từ đã hỏi" tab tiếng Anh (phiên mới vẫn không hỏi lại từ cũ),
+     * 👑 Bảng vàng (lịch sử quà thật — chỉ bỏ quà thử).
      * Chỉ chạy khi chủ kênh bấm — rớt live / khởi động lại server vẫn khôi phục từ bản lưu nóng như cũ.
      */
     resetAll() {
@@ -112,11 +120,13 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
       roomDonations.clear();
+      donors.clearTest();
       lastSimulatedAt = 0;
     },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {
       roomDonations.clear();
+      donors.clearTest();
       for (const game of games.values()) game.resetRoom?.();
       welcome.reset(); // phòng mới: chào lại người vào
     },
@@ -126,6 +136,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       if (snapshot.state) active().restore?.(snapshot.state);
       if (snapshot.leaderboard) board.restore(snapshot.leaderboard);
       else if (snapshot.totals) board.restore({ totals: snapshot.totals, viewers: snapshot.top });
+      donors.restoreFaces(snapshot.donorFaces);
     },
     snapshot(now = Date.now()) {
       return {
@@ -134,6 +145,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
         top: board.top(),
         totals: board.totals(),
         leaderboard: board.exportState(),
+        donorFaces: donors.faces(),
         viewers: { count: welcome.viewerCount(), textAbove: welcome.threshold(), waiting: welcome.backlog(), pending: welcome.pendingIds() },
         // Màn hình phải hiện nhãn "CHẾ ĐỘ THỬ" khi vừa có sự kiện giả lập.
         testMode: now - lastSimulatedAt < 20000

@@ -58,6 +58,11 @@ export const ORDER = [
   'general', 'easy', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
   'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri'
 ];
+// ĐỔI ORDER thì tăng số này: bảng quà chủ kênh đã lưu (data/settings.json) được xếp lại MỘT lần theo thứ tự mới lúc khởi động (app.js)
+export const ORDER_VERSION = 2;
+/** Xếp luật quà theo thứ tự ô ORDER (giữ nguyên quà / số câu; nhiều món cùng một ô giữ thứ tự cũ). */
+export const sortByOrder = (rules) => rules.map((r, i) => [r, i])
+  .sort(([a, i], [b, j]) => ((ORDER.indexOf(a.to) + 1 || 99) - (ORDER.indexOf(b.to) + 1 || 99)) || i - j).map(([r]) => r);
 
 const coinsOf = (g) => Number(g?.diamondsEach ?? g?.coins) || 0;
 const sameName = (a, b) => Boolean(a && b) && foldText(a) === foldText(b);

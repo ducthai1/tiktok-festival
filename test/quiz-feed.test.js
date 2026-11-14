@@ -33,16 +33,31 @@ test('👑 Bảng vàng counts gifts that switch the English mode too (it used t
   assert.deepEqual(hub.snapshot(30).state.donators.map((d) => [d.id, d.diamonds]), [['u2', 99], ['u1', 10]]);
 });
 
-test('👑 Bảng vàng: top 3 by 💎, kept after a restart (hot backup), cleared by "Xoá dữ liệu phiên live trước"', () => {
+test('👑 Bảng vàng loads the whole gift history (data/gifts.log), keeps it through restarts and "Xoá dữ liệu phiên live trước"', () => {
+  const log = [
+    '[2026-11-10 20:01:02] [GIFT] Người 1 (@u1): Rose x30 (30💎)',
+    '[2026-11-10 20:05:00] [GIFT] Tên (có ngoặc) x2 (@u2): Hộp x quà x1 (99💎)',
+    'dòng hỏng',
+    '[2026-11-11 21:00:00] [GIFT] Người 3 (@u3): Rose x5 (5💎)',
+    '[2026-11-12 21:00:00] [GIFT] Người 1 đổi tên (@u1): Rose x80 (80💎)',
+    '[2026-11-12 21:01:00] [GIFT] Người 4 (@u4): Rose x1 (1💎)'
+  ].join('\n');
   const hub = createGameHub({ startGame: 'lophoc' });
+  hub.loadGiftHistory(log);
   hub.tick(0);
-  const gift = (n, d, t) => hub.handleEvent({ type: 'gift', user: user(n), gift: { id: 'g', name: 'Q', diamondsEach: d, count: 1, diamonds: d } }, t);
-  gift(1, 30, 10); gift(2, 99, 20); gift(1, 80, 30); gift(3, 5, 40); gift(4, 1, 50);
-  const gold = hub.snapshot(60).state.donators;
-  assert.deepEqual(gold.map((d) => [d.id, d.diamonds]), [['u1', 110], ['u2', 99], ['u3', 5]]);
+  assert.deepEqual(hub.snapshot(10).state.donators.map((d) => [d.nickname, d.diamonds]),
+    [['Người 1 đổi tên', 110], ['Tên (có ngoặc) x2', 99], ['Người 3', 5]]);
+  // quà mới cộng dồn; người có mặt trong live → có ảnh đại diện
+  hub.handleEvent({ type: 'gift', user: { ...user(4), avatar: 'https://a/4.webp' }, gift: { id: 'g', name: 'Q', diamondsEach: 9, count: 1, diamonds: 9 } }, 20);
+  assert.deepEqual(hub.snapshot(30).state.donators.map((d) => [d.id, d.diamonds, d.avatar]), [['u1', 110, ''], ['u2', 99, ''], ['u4', 10, 'https://a/4.webp']]);
+  // khởi động lại: đọc lại log (đã có dòng quà mới) + bản lưu nóng giữ ảnh
   const again = createGameHub({ startGame: 'lophoc' });
-  again.restore(JSON.parse(JSON.stringify(hub.snapshot(60))));
-  assert.deepEqual(again.snapshot(70).state.donators.map((d) => d.diamonds), [110, 99, 5]);
-  hub.resetAll();
-  assert.deepEqual(hub.snapshot(80).state.donators, []);
+  again.loadGiftHistory(`${log}\n[2026-11-14 20:00:00] [GIFT] Người 4 (@u4): Q x1 (9💎)`);
+  again.restore(JSON.parse(JSON.stringify(hub.snapshot(40))));
+  assert.deepEqual(again.snapshot(50).state.donators.map((d) => [d.id, d.diamonds, d.avatar]), [['u1', 110, ''], ['u2', 99, ''], ['u4', 10, 'https://a/4.webp']]);
+  // quà THỬ chỉ tạm: hiện ngay, "Xoá dữ liệu phiên live trước" bỏ quà thử nhưng giữ lịch sử thật
+  again.handleEvent({ type: 'gift', simulated: true, user: user(9), gift: { id: 'g', name: 'Q', diamondsEach: 500, count: 1, diamonds: 500 } }, 60);
+  assert.equal(again.snapshot(70).state.donators[0].diamonds, 500);
+  again.resetAll();
+  assert.deepEqual(again.snapshot(80).state.donators.map((d) => d.diamonds), [110, 99, 10]);
 });

@@ -1,6 +1,6 @@
 // Xử lý lệnh từ trang điều khiển (đã qua kiểm token ở socket-hub). Mọi tham số được
 // kiểm lại ở đây; lệnh sai trả lỗi chứ không làm sập server.
-import { ENGLISH_TARGETS, ORDER, defaultEnglishRules, defaultQuestionsFor } from '../public/shared/english-sets.js';
+import { ENGLISH_TARGETS, ORDER, ORDER_VERSION, defaultEnglishRules, defaultQuestionsFor } from '../public/shared/english-sets.js';
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
@@ -43,7 +43,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     saveEnglishGifts(msg) {
       const rules = normalizeRules(msg.rules, giftOptions(getGiftCatalog()));
-      updateSettings({ englishGifts: rules });
+      updateSettings({ englishGifts: rules, englishGiftsOrder: ORDER_VERSION }); // thứ tự chủ kênh tự xếp: không xếp lại nữa
       hub.setEnglishRules(rules);
       pushState(true);
       const on = rules.filter((r) => r.enabled);

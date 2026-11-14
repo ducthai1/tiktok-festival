@@ -55,12 +55,12 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
   chưa commit trên máy live — lần pull sau sẽ xung đột / mất). 14/11: commit "bảng vàng" thật ra không có giao diện bảng vàng,
   còn phần sửa khung bình luận thì không commit.
 - **Sửa màn hình phải tự chụp lại kiểm tra** (Chrome headless / mở /stage) trước khi báo "đã xong" — test pass không có nghĩa là hiện đúng.
-- **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất, hiện trên màn hình (`state.donators`). Hàng bảng (tab đố vui):
+- **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất TỪ TRƯỚC TỚI NAY, nạp từ lịch sử quà `data/gifts.log` (`src/games/donor-ledger.js`, `state.donators`) — không xoá theo phiên. Hàng bảng (tab đố vui):
   👑 Bảng vàng | 📣 Đại sứ share | 🏆 Bảng điểm — ba bảng cạnh nhau, tên dài cắt "…" (không luân phiên). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
 - **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. Vùng iPhone (15 Pro) THẤY, đo từ ảnh live thật
   (toạ độ 1080×1920): y 278–1.210 (trên 268 là tên kênh/Join/mắt xem + hàng "Daily Ranking · Gallery"; dưới-trái từ 1.210 là bình luận
   TikTok), x ~75–1.005. Android che dưới-trái từ ~1.370. Tab có bảng quà hiện tại: năng lượng ×2 + Câu/đúng 278–310 · thẻ câu hỏi 318–763 ·
-  bảng quà 771–946 · Bảng vàng | Đại sứ | Bảng điểm 952–1100 · thẻ quà đổi đề / chào mừng 1106–1206 · khung bình luận (phải) 1214–1534.
+  bảng quà 771–946 · Bảng vàng | Đại sứ | Bảng điểm 952–1100 · thẻ quà đổi đề (cả hàng) / chào mừng (nửa trái, nền vàng) 1106–1206 · bảng điểm chỉ top 3 · khung bình luận (phải) 1214–1534.
   Chủ kênh KHÔNG muốn chữ nhỏ lại: chỉ được bớt khoảng trống. `fitBody` chỉ là lưới an toàn cho câu siêu dài (nếu không sẽ bị cắt chữ).
 - **Thẻ quà đổi đề** (`stage-hud.js` giftCard) nằm CÙNG CHỖ thẻ chào người mới và ƯU TIÊN hơn: đang hiện thẻ quà thì lời chào chờ
   (`stage-main.js` welcomeWaiting). 5 bậc theo giá thật món quà: 1 · 2–9 · 10–19 · 20–29 · 30+ xu.

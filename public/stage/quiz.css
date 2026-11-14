@@ -22,6 +22,15 @@
 #stage.theme-quiz #welcome .name { font-size: 26px; -webkit-line-clamp: 1; }
 #stage.theme-quiz #welcome .line { margin-top: 2px; font-size: 16px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 #stage.theme-quiz #welcome-ticker { left: 94px; top: 896px; transform: none; align-items: flex-start; width: 420px; }
+/* thẻ chào màu VÀNG, chữ nâu đậm (dễ đọc trên điện thoại). Trước đây tab đố vui không có màu viền chạy vòng (--line, stage-theme.css)
+   + nền bị làm tối 55% → thành ô đen */
+#stage.theme-quiz #hud > #welcome { --line: #fff3c4; --line-2: #ff9800; background: linear-gradient(120deg, #ffe48a, #ffbf2e 45%, #f08c00);
+  backdrop-filter: none; box-shadow: 0 0 26px rgba(255, 196, 60, 0.8), 0 12px 30px rgba(0, 0, 0, 0.45); }
+#stage.theme-quiz #welcome .kicker { color: #7a3d00; -webkit-text-fill-color: #7a3d00; text-shadow: none; font-weight: 900; }
+#stage.theme-quiz #welcome .name, #stage.theme-quiz #welcome.group .name { background: none; color: #3b1c00; -webkit-text-fill-color: #3b1c00;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
+#stage.theme-quiz #welcome .line { color: #4f2800; -webkit-text-fill-color: #4f2800; text-shadow: none; font-weight: 700; }
+#stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { border-color: #fff8e1; box-shadow: 0 0 12px rgba(120, 60, 0, 0.5); }
 #stage.theme-quiz #hud > #test-badge { top: 96px; }
 
 .quiz-card {
@@ -317,8 +326,9 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 #game-hud.has-deck .quiz-side { top: 952px; }
 #game-hud.has-deck .quiz-comments { top: 1214px; }
 #stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; }
+#stage.theme-quiz #game-hud.has-deck ~ #board li:nth-child(n+4) { display: none; } /* chỉ top 3: cao bằng Bảng vàng / Đại sứ, không lấn dải chào */
 #stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 952px !important; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1106px; width: 892px; height: 100px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1106px; width: 441px; height: 100px; } /* nửa bề ngang (chủ kênh: dài quá) */
 #stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1110px; }
 #stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1106px; width: 892px; height: 100px; }
 
