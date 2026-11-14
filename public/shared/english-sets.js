@@ -65,42 +65,62 @@ const imageKey = (url) => String(url || '').match(/[0-9a-f]{32}/)?.[0] || '';
 const sameImage = (a, b) => Boolean(imageKey(a)) && imageKey(a) === imageKey(b);
 const sameGift = (planned, g) => sameName(planned.name, g.name) || sameName(planned.name, g.en) || sameImage(planned.image, g.image || g.pictureUrl);
 
-/**
- * Gán quà cho từng ô theo ENGLISH_GIFT_PLAN. catalog: quà thật phòng đã nhận [{ id, name, coins, image }] — có món cùng tên
- * thì lấy id + ảnh + GIÁ TikTok báo (TikTok đổi giá thì bảng hiện giá mới); không có thì dùng bảng giá thật vùng VN.
- * → [{ to, icon, label, gift: { id, name, en, coins, image, emoji } }] theo thứ tự ô.
- */
-export function assignEnglishGifts(catalog = []) {
-  return ORDER.map((to) => {
-    // trùng tên thì lấy món có trong hộp quà chung
-    const named = VN_GIFTS_UP_TO_30.filter((g) => g.name === ENGLISH_GIFT_PLAN[to]);
-    const want = named.find((g) => g.panel) || named[0];
-    if (!want) return null;
-    // phòng đã nhận món cùng tên (tối đa 30 xu) → theo id + giá TikTok báo; món trùng tên mà trên 30 xu là món khác → bỏ
-    const room = (catalog || []).find((g) => sameGift(want, g) && coinsOf(g) >= 1 && coinsOf(g) <= ENGLISH_MAX_COINS);
-    return {
-      to,
-      icon: ENGLISH_TARGETS[to].icon,
-      label: ENGLISH_TARGETS[to].label,
-      gift: {
-        id: String(room?.id || want.id || ''),
-        name: want.name,
-        en: want.name,
-        coins: room ? coinsOf(room) : want.coins,
-        image: room?.image || want.image,
-        emoji: giftEmoji(want.name)
-      }
-    };
-  }).filter(Boolean);
+/** Số câu mặc định của một ô khi luật quà không ghi: Luyện nghe 40, bộ đề / độ khó 20. */
+export const defaultQuestionsFor = (to) => (ENGLISH_TARGETS[to]?.kind === 'listen' ? LISTEN_QUESTIONS : ENGLISH_HOLD_QUESTIONS);
+
+function fromTable(name) {
+  const named = VN_GIFTS_UP_TO_30.filter((g) => g.name === name);
+  const g = named.find((x) => x.panel) || named[0];
+  return g && { id: g.id, name: g.name, coins: g.coins, image: g.image };
 }
 
 /**
- * Sự kiện quà → ô được đổi, hoặc null (món không có trên bảng, hoặc RẺ HƠN giá ghi trên bảng — món trùng tên khác giá).
+ * Luật quà mặc định (khi chưa chỉnh ở tab 🎁 Quà của trang điều khiển): mỗi ô một món theo ENGLISH_GIFT_PLAN, cộng một luật
+ * KHUYẾN MÃI tắt sẵn — Heart Me 1 xu (quà tham gia fan club) → Luyện nghe 10 câu.
+ * Luật: { to, gift: { id, name, coins, image }, questions, enabled }.
+ */
+export function defaultEnglishRules() {
+  const rules = ORDER.map((to) => {
+    const gift = fromTable(ENGLISH_GIFT_PLAN[to]);
+    return gift && { to, gift, questions: defaultQuestionsFor(to), enabled: true };
+  }).filter(Boolean);
+  const heart = fromTable('Heart Me');
+  if (heart) rules.splice(ORDER.indexOf('nghe') + 1, 0, { to: 'nghe', gift: heart, questions: 10, enabled: false });
+  return rules;
+}
+
+/**
+ * Luật đang bật → bảng hiện trên màn hình + dùng để nhận quà: [{ to, icon, label, questions, gift: { id, name, en, coins, image, emoji } }].
+ * Giá lấy từ luật (bảng giá thật TikTok lúc chọn quà) — KHÔNG lấy từ danh mục quà của phòng (13/11 danh mục có giá sai từ quà thử).
+ */
+export function buildEnglishRules(rules) {
+  return (rules || []).filter((r) => r && r.enabled !== false && ENGLISH_TARGETS[r.to] && r.gift?.name).map((r) => ({
+    to: r.to,
+    icon: ENGLISH_TARGETS[r.to].icon,
+    label: ENGLISH_TARGETS[r.to].label,
+    questions: Number(r.questions) || defaultQuestionsFor(r.to),
+    gift: { id: String(r.gift.id || ''), name: r.gift.name, en: r.gift.name, coins: Number(r.gift.coins) || 1, image: r.gift.image || '',
+      emoji: giftEmoji(r.gift.name) }
+  }));
+}
+
+/** Bảng mặc định (giữ cho code / test cũ). */
+export function assignEnglishGifts() {
+  return buildEnglishRules(defaultEnglishRules());
+}
+
+/**
+ * Sự kiện quà → luật được áp dụng, hoặc null (món không có trên bảng, hoặc RẺ HƠN giá ghi trên bảng — món trùng tên khác giá).
  * Giá lấy từ chính sự kiện TikTok gửi (diamondsEach) nên không bao giờ đổi được ô đắt bằng món rẻ.
  */
-export function englishTargetFor(assignments, gift) {
+export function englishRuleFor(assignments, gift) {
   if (!gift) return null;
-  const hit = assignments.find((a) => (a.gift.id && gift.id && a.gift.id === String(gift.id)) || sameGift(a.gift, gift));
+  const hit = assignments.find((a) => (a.gift.id && gift.id && a.gift.id === String(gift.id)))
+    || assignments.find((a) => sameGift(a.gift, gift));
   if (!hit || coinsOf(gift) < hit.gift.coins) return null;
-  return hit.to;
+  return hit;
+}
+
+export function englishTargetFor(assignments, gift) {
+  return englishRuleFor(assignments, gift)?.to || null;
 }

@@ -105,7 +105,8 @@ function explain(message) {
   if (/403|Forbidden|Sec-MS-GEC|Invalid response status/i.test(message)) {
     return 'Microsoft từ chối (có thể vừa đổi cách ký) → nâng edge-tts trong tools/tts/requirements-en.txt lên bản mới rồi khởi động lại';
   }
-  if (/No module named|ENOENT/i.test(message)) return 'chưa cài giọng tiếng Anh → chạy: npm run setup-tts-en';
+  // chỉ khi không chạy được python / thiếu gói (không phải file tạm của bộ đệm biến mất)
+  if (/No module named|spawn .*ENOENT/i.test(message)) return 'chưa cài giọng tiếng Anh → chạy: npm run setup-tts-en';
   if (/Cannot connect|getaddrinfo|Network|timed out|quá .* giây|ClientConnector|Connection reset/i.test(message)) return 'mất mạng / mạng chậm';
   return '';
 }

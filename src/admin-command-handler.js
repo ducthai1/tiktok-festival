@@ -1,6 +1,7 @@
 // Xử lý lệnh từ trang điều khiển (đã qua kiểm token ở socket-hub). Mọi tham số được
 // kiểm lại ở đây; lệnh sai trả lỗi chứ không làm sập server.
-import { ORDER } from '../public/shared/english-sets.js';
+import { ENGLISH_TARGETS, ORDER, defaultEnglishRules, defaultQuestionsFor } from '../public/shared/english-sets.js';
+import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
 
@@ -26,8 +27,35 @@ export function presentPeople(state) {
 }
 let testSeq = 0;
 
-export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets }) {
+export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
+  getGiftCatalog = () => [] }) {
+  // tab 🎁 Quà: luật quà tab tiếng Anh đang dùng (chưa chỉnh thì mặc định) + danh sách quà để chọn + các chế độ
+  const englishGiftsView = () => ({
+    rules: settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules(),
+    custom: Boolean(settings.englishGifts?.length),
+    options: giftOptions(getGiftCatalog()),
+    targets: ORDER.map((to) => ({ to, icon: ENGLISH_TARGETS[to].icon, label: ENGLISH_TARGETS[to].label, kind: ENGLISH_TARGETS[to].kind,
+      questions: defaultQuestionsFor(to) }))
+  });
   const handlers = {
+    englishGifts() {
+      return englishGiftsView();
+    },
+    saveEnglishGifts(msg) {
+      const rules = normalizeRules(msg.rules, giftOptions(getGiftCatalog()));
+      updateSettings({ englishGifts: rules });
+      hub.setEnglishRules(rules);
+      pushState(true);
+      const on = rules.filter((r) => r.enabled);
+      console.log(`[admin] luật quà tab tiếng Anh: ${on.map((r) => `${r.gift.name} ${r.gift.coins}xu→${r.to}${r.questions ? `(${r.questions}c)` : ''}`).join(', ')}`);
+      return { message: `Đã áp dụng ${on.length} món quà lên màn hình`, ...englishGiftsView() };
+    },
+    resetEnglishGifts() {
+      updateSettings({ englishGifts: null });
+      hub.setEnglishRules(defaultEnglishRules());
+      pushState(true);
+      return { message: 'Đã khôi phục bảng quà mặc định', ...englishGiftsView() };
+    },
     async connect(msg) {
       const provider = msg.provider === 'tikfinity' ? 'tikfinity' : 'tiktok';
       updateSettings({ provider, username: String(msg.username || '').slice(0, 100) });

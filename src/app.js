@@ -17,6 +17,8 @@ import { createRoomTracker } from './live/room-tracker.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
+import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
+import { defaultEnglishRules } from '../public/shared/english-sets.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
@@ -55,7 +57,8 @@ const DEFAULT_SETTINGS = {
 function loadGiftCatalog(file) {
   try {
     const saved = JSON.parse(fs.readFileSync(file, 'utf8'));
-    return Array.isArray(saved.gifts) ? saved.gifts.filter((g) => g && g.name && g.coins > 0)
+    // chỉ quà THẬT của TikTok (id số) — bản cũ từng ghi lẫn quà thử / quà mẫu với giá bịa (vd "Finger Heart 15 xu", "corgi-pet")
+    return Array.isArray(saved.gifts) ? saved.gifts.filter((g) => g && g.name && g.coins > 0 && /^\d+$/.test(String(g.id || '')))
       .map((g) => ({ id: String(g.id || ''), name: String(g.name).slice(0, 40), coins: Number(g.coins), image: safeImageUrl(g.image) })) : [];
   } catch {
     return [];
@@ -101,7 +104,14 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // quà thật đã gom (có ảnh) + quà mẫu cho những bậc chưa gom được, để bảng chú thích luôn đủ 6 bậc
   const legendSource = () => [...giftCatalog, ...sampleGifts.filter((s) => !giftCatalog.some((g) => g.name === (s.realName || s.name)))];
   let giftTiers = tierRepresentatives(legendSource(), 3);
-  hub.setGiftCatalog(giftCatalog); // tab tiếng Anh gán quà đổi bộ đề theo danh mục thật của phòng
+  hub.setGiftCatalog(giftCatalog);
+  // luật quà tab tiếng Anh đã chỉnh ở tab 🎁 Quà (chưa chỉnh → mặc định); quà đã lưu mà nay không còn trong bảng quà → mặc định
+  try {
+    hub.setEnglishRules(settings.englishGifts?.length ? normalizeRules(settings.englishGifts, giftOptions(giftCatalog)) : defaultEnglishRules());
+  } catch (error) {
+    log.warn('admin', `luật quà tab tiếng Anh đã lưu không dùng được (${error.message}) → dùng bảng mặc định`);
+    hub.setEnglishRules(defaultEnglishRules());
+  }
 
   const hotBackupFile = path.join(dataDir, 'hot-backup.json');
   if (fs.existsSync(hotBackupFile)) {
@@ -206,7 +216,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
       if (event.type === 'gift' && !event.simulated && event.gift.diamondsEach > 0) {
         const known = giftCatalog.find((g) => g.name === event.gift.name);
-        if (!known || (!known.image && event.gift.pictureUrl)) {
+        // món mới, món nay mới có ảnh, hoặc giá TikTok báo khác giá đã lưu (giá thật thắng)
+        if (!known || (!known.image && event.gift.pictureUrl) || known.coins !== event.gift.diamondsEach) {
           mergeCatalog([{ id: event.gift.id, name: event.gift.name, coins: event.gift.diamondsEach, image: event.gift.pictureUrl }]);
         }
       }
@@ -241,7 +252,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // tạo một lần, lúc có lệnh đầu tiên (cần `sockets` — tạo ngay bên dưới)
   let adminHandler = null;
   const handleAdmin = async (msg) => {
-    adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets });
+    adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
+      getGiftCatalog: () => giftCatalog });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
       log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);

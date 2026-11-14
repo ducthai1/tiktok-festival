@@ -215,6 +215,7 @@ html.lite .quiz-ambassadors { background: rgba(8, 10, 22, 0.92); }
   to { box-shadow: 0 0 18px rgba(255, 190, 0, 0.95), 0 0 40px rgba(255, 70, 0, 0.6), inset 0 0 16px rgba(255, 150, 0, 0.4); }
 }
 @keyframes deck-flame { from { transform: translateY(0) scale(1) rotate(-6deg); } to { transform: translateY(-4px) scale(1.15) rotate(6deg); } }
+.deck-rule.hot .new-badge.hot-badge { background: linear-gradient(135deg, #ff0050, #ffcc00); box-shadow: 0 0 14px rgba(255, 0, 80, 0.9); }
 @keyframes deck-new { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.12); } }
 
 /* 🔒 dòng "độc quyền" ở chân thẻ câu hỏi: chữ vàng, ánh kim chạy ngang */

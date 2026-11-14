@@ -3,6 +3,7 @@ import { connectLiveSocket } from '/static/shared/live-socket-client.js';
 import { pickVoice } from '/static/shared/tts-voices.js';
 import { createDemoRunner, renderDemoButtons } from './admin-demo-scenarios.js';
 import { setupTestPanel } from './admin-test-panel.js';
+import { setupGiftEditor } from './admin-gifts.js';
 import { SAMPLE_GIFTS, giftTier } from '/static/shared/gift-tiers.js';
 
 const $ = (id) => document.getElementById(id);
@@ -15,7 +16,7 @@ const GAME_COMMANDS = {
   swim: [['pause', '⏸ Tạm dừng'], ['resume', '▶ Tiếp tục'], ['resetRound', '↺ Vòng mới'], ['resetWins', '🏆 Xoá số trận thắng']],
   temple: [['resetMerit', '✨ Xoá công đức'], ['clear', '🚪 Mời hết ra']],
   ...Object.fromEntries(['lophoc', 'dovui', 'english', 'emoji', 'flag', 'math', 'wordle'].map((id) => [id, QUIZ_COMMANDS])),
-  english: [...QUIZ_COMMANDS.filter(([name]) => name !== 'hint'), ['deck-nghe', '🎧 Luyện nghe 40 câu'], ['deck-easy', '😊 Dễ'], ['deck-hard', '🔥 Khó'], ['deck-toeic', '💼 TOEIC'],
+  english: [...QUIZ_COMMANDS.filter(([name]) => name !== 'hint'), ['deck-nghe', '🎧 Luyện nghe'], ['deck-easy', '😊 Dễ'], ['deck-hard', '🔥 Khó'], ['deck-toeic', '💼 TOEIC'],
     ['deck-ielts', '🎓 IELTS'], ['deck-yhoc', '🩺 Y học'], ['deck-bongda', '⚽ Thể thao'], ['deck-congnghe', '💻 Công nghệ'], ['resetDeck', '↺ Về Tổng hợp']]
 };
 
@@ -59,6 +60,7 @@ const socket = connectLiveSocket({
       authed = true;
       $('login').hidden = true;
       $('app').hidden = false;
+      if (currentTab === 'gifts') gifts.load();
     } else if (m.t === 'authFail') {
       $('login').hidden = false;
       $('app').hidden = true;
@@ -94,13 +96,29 @@ async function run(message, okText) {
 
 // (3 khai báo dưới từng bị xoá nhầm ở commit 9a982d4 → nút "Kết nối" không gửi lệnh, trang báo lỗi testPanel — giữ nguyên)
 const testPanel = setupTestPanel({ $, run, socket, toast });
+const gifts = setupGiftEditor({ $, socket, toast });
+
+// ── tab: nhớ tab đang mở theo trình duyệt này ──
+let currentTab = 'live';
+function showTab(name) {
+  if (!document.querySelector(`.tab-panel[data-panel="${name}"]`)) name = 'live';
+  currentTab = name;
+  for (const b of $('tabs').children) b.classList.toggle('active', b.dataset.tab === name);
+  for (const p of document.querySelectorAll('.tab-panel')) p.hidden = p.dataset.panel !== name;
+  try { localStorage.setItem('adminTab', name); } catch { /* bỏ qua */ }
+  if (name === 'gifts' && authed) gifts.load();
+}
+for (const b of $('tabs').children) b.addEventListener('click', () => showTab(b.dataset.tab));
+try { showTab(localStorage.getItem('adminTab') || 'live'); } catch { showTab('live'); }
 const demo = createDemoRunner({ socket, toast, setStatus: (text) => { $('demo-status').textContent = text; } });
 $('connect-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'connect', provider: $('provider').value, username: $('username').value });
 });
 
+const gameTitles = new Map();
 function renderGames(games) {
+  for (const g of games) gameTitles.set(g.id, g.title);
   $('game-buttons').replaceChildren(...games.map((g) => {
     const b = document.createElement('button');
     b.type = 'button';
@@ -164,6 +182,7 @@ function renderState(m) {
   if (m.game !== activeGame) {
     activeGame = m.game;
     for (const b of $('game-buttons').children) b.classList.toggle('active', b.dataset.game === activeGame);
+    $('pill-game').textContent = `${GAME_ICONS[activeGame] || '🎮'} ${gameTitles.get(activeGame) || activeGame}`;
     renderCommands();
   }
   $('leaderboard').replaceChildren(...m.top.map((r) => {
@@ -177,13 +196,13 @@ function renderState(m) {
   }));
 
   const amb = m.state?.ambassadors || [];
-  $('ambassadors-section').style.display = amb.length > 0 ? 'block' : 'none';
   $('ambassadors').replaceChildren(...amb.map((r) => {
     const li = document.createElement('li');
     li.textContent = `${r.nickname} — ${r.shares} lượt share`;
     if (r.follower) li.style.color = '#ffc107'; // highlight followers
     return li;
   }));
+  if (!amb.length) $('ambassadors').replaceChildren(Object.assign(document.createElement('li'), { textContent: 'Chưa ai share trong 2 tiếng qua' }));
 
   $('viewers-status').textContent = `👀 ${v.count || 0} người xem · đang chờ chào: ${v.waiting || 0} · `
     + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
@@ -216,6 +235,11 @@ function renderLive(status) {
   const el = $('live-status');
   el.className = `status ${status.state}`;
   el.textContent = status.message;
+  const pill = $('pill-live');
+  pill.className = `pill ${status.state}`;
+  pill.textContent = `● ${{ connected: 'Đang live', connecting: 'Đang kết nối…', reconnecting: 'Mất kết nối — đang nối lại', idle: 'Chưa live',
+    error: 'Lỗi kết nối', ended: 'Live đã kết thúc' }[status.state] || status.state}`;
+  pill.title = status.message;
   clearTimeout(alarmTimer);
   if (status.state === 'reconnecting') {
     alarmTimer = setTimeout(() => {
@@ -242,7 +266,11 @@ function renderStages({ list = [] }) {
     return `✅ bản mới · ${fps}`;
   });
   $('stage-health').textContent = obs.length ? `${obs.length > 1 ? `${obs.length} màn hình` : 'Màn hình OBS'}: ${line.join(' | ')}` : 'Màn hình OBS: chưa nối';
-  $('stage-health').classList.toggle('bad', obs.some((s) => s.stale || (s.fps && s.fps < 20)));
+  const bad = obs.some((s) => s.stale || (s.fps && s.fps < 20));
+  $('stage-health').classList.toggle('bad', bad);
+  $('pill-obs').className = `pill ${!obs.length ? 'idle' : bad ? 'bad' : 'ok'}`;
+  $('pill-obs').textContent = !obs.length ? '📺 OBS: chưa nối' : bad ? '📺 OBS: cần xem lại' : `📺 OBS ✓${obs[0].fps ? ` ${obs[0].fps} fps` : ''}`;
+  $('pill-obs').title = $('stage-health').textContent;
 }
 
 function applySettings(s) {

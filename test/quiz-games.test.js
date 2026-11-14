@@ -240,13 +240,12 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: 'Brown Paw', diamondsEach: 0 }), null); // không rõ giá → không đổi
   // TikTok gửi tên tiếng Việt: nhận theo mã ảnh quà
   assert.equal(englishTargetFor(a, { id: 'x', name: 'Hoa hồng', diamondsEach: 1, pictureUrl: slot('easy').image.replace('.webp', '.png') }), 'easy');
-  // phòng đã nhận món thật: dùng id + giá TikTok báo (TikTok đổi giá thì bảng hiện giá mới); món trùng tên trên 30 xu là món khác
-  const room = assignEnglishGifts([{ id: '8913', name: 'Rosa', coins: 12, image: '' }, { id: '99', name: 'Friendship Necklace', coins: 299 }]);
-  const rosa = room.find((x) => x.to === 'truonghoc').gift;
-  assert.deepEqual([rosa.id, rosa.coins], ['8913', 12]);
-  assert.equal(englishTargetFor(room, { id: '8913', name: 'Hoa Rosa', diamondsEach: 10 }), null);
-  assert.equal(englishTargetFor(room, { id: '8913', name: 'Hoa Rosa', diamondsEach: 12 }), 'truonghoc');
-  assert.deepEqual([room.find((x) => x.to === 'toeic').gift.coins, englishTargetFor(room, { id: '99', name: 'Friendship Necklace', diamondsEach: 299 })], [10, 'toeic']);
+  // danh mục quà của phòng KHÔNG đổi giá trên bảng (13/11 danh mục trên máy live có "Finger Heart 15 xu" từ quà thử — thật 5 xu)
+  const sw = createEnglishSwitcher({ general: [], basic: [], sets: {} });
+  sw.setCatalog([{ id: '5487', name: 'Finger Heart', coins: 15 }]);
+  const fh = sw.snapshot().rules.find((r) => r.to === 'dongvat').gift;
+  assert.deepEqual([fh.id, fh.coins], ['5487', 5]);
+  assert.equal(englishTargetFor(a, { id: '5487', name: 'Bắn tim', diamondsEach: 5 }), 'dongvat'); // tên tiếng Việt: nhận theo id
 });
 
 test('english switcher: a gift ENDS the running set and switches right now (new question at once), 20 questions, never scores the gifter', () => {

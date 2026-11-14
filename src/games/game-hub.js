@@ -72,6 +72,10 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
     },
+    /** Tab 🎁 Quà (trang điều khiển): luật quà tab tiếng Anh. */
+    setEnglishRules(rules) {
+      games.get('english')?.setEnglishRules?.(rules);
+    },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {
       for (const game of games.values()) game.resetRoom?.();

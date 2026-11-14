@@ -76,6 +76,9 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 - **Thêm từ tiếng Anh: không được trùng.** Mỗi bộ = file chính + file bổ sung `<bộ>-*.txt` (vd `toeic-them.txt`). Trước khi thêm,
   kiểm đáp án chưa có ở BẤT KỲ file nào trong `bank/tieng-anh/`, `bank/tieng-anh-bo/`, `bank/lop-hoc/25-tieng-anh.txt`
   (so theo chữ thường, bỏ dấu cách). Độ khó chỉ 1, 2, 3. Không dán đề lộ đáp án.
+- Chủ kênh đổi quà / số câu tab tiếng Anh ở **tab 🎁 Quà** của trang điều khiển (lưu `data/settings.json` → `englishGifts`);
+  `ENGLISH_GIFT_PLAN` chỉ là bảng mặc định. Trang điều khiển chia tab (`public/admin/index.html`) — giữ nguyên các id phần tử mà
+  `admin-main.js`, `admin-test-panel.js`, `admin-demo-scenarios.js`, `admin-gifts.js` dùng.
 - **Giá quà KHÔNG được tự đặt.** Tab tiếng Anh gán quà trong `ENGLISH_GIFT_PLAN` (`public/shared/english-sets.js`), giá lấy từ
   `public/shared/tiktok-gifts-vn.js` (giá thật vùng VN; cập nhật: `node scripts/update-vn-gifts.mjs`). `SAMPLE_GIFTS` cũng phải đúng giá thật.
   (12/11 quà mẫu bị sửa giá sai — "You're awesome" ghi 5 xu, thật 1 xu — người xem đổi bộ đề bằng món rẻ hơn → lỗ.)
