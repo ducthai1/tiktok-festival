@@ -261,7 +261,7 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 .quiz-comments-list::-webkit-scrollbar { display: none; }
 
 .quiz-comment-item {
-  display: grid; grid-template-columns: 28px 1fr; align-items: start; gap: 8px;
+  display: grid; grid-template-columns: 28px 1fr auto; align-items: start; gap: 8px;
   padding: 6px 10px; border-radius: 12px; background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.09); font-size: 16px; line-height: 1.35;
   animation: comment-slide-in 0.2s ease-out;
@@ -280,3 +280,29 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 .quiz-comment-content { overflow: hidden; min-width: 0; }
 .quiz-comment-nick { font-weight: 800; color: #ffd36b; margin-right: 6px; font-size: 15px; }
 .quiz-comment-text { color: #ffffff; word-break: break-word; }
+
+/* 💬 thứ tự máy chủ nhận: giây từ lúc ra đề / huy chương người trả lời đúng */
+.quiz-comment-time { font-size: 13px; font-weight: 800; color: rgba(255, 255, 255, 0.55); white-space: nowrap; margin-top: 2px; }
+.quiz-comment-rank { font-size: 15px; font-weight: 900; color: #7dff8a; white-space: nowrap; }
+.quiz-comment-item.ok { background: rgba(125, 255, 138, 0.16); border-color: rgba(125, 255, 138, 0.55); }
+.quiz-comment-item.ok .quiz-comment-text { color: #b9ffc2; font-weight: 800; }
+
+/* 👑 BẢNG VÀNG (luân phiên với đại sứ share trong cùng khung) */
+.quiz-ambassadors.gold { border-color: rgba(255, 211, 107, 0.85); box-shadow: 0 0 22px rgba(255, 190, 60, 0.35);
+  background: linear-gradient(160deg, rgba(60, 40, 6, 0.86), rgba(8, 10, 22, 0.86)); }
+.quiz-ambassadors.gold h3 { color: #ffd36b; text-shadow: 0 0 10px rgba(255, 200, 80, 0.6); }
+.quiz-ambassadors.gold b { color: #ffd36b; }
+.quiz-ambassadors.flip { animation: side-flip 450ms ease-out; }
+@keyframes side-flip { from { opacity: 0; transform: translateY(6px); } }
+
+/* Tab có bảng quà (Tiếng Anh, Đuổi hình): màn hình live là MỘT video cho mọi máy — không "responsive" theo máy người xem được.
+   iPhone màn dài (15 Pro…) TikTok che từ ~1.210 px, Android từ ~1.370 px → bảng quà lên ngay dưới thẻ câu hỏi (780–1.005 px),
+   bảng điểm / dải chào / đại sứ + bảng vàng xuống dưới. Khung bình luận giữ chỗ cũ (bên phải, iPhone vẫn thấy). */
+#game-hud.has-deck .quiz-card { height: 500px; }
+#game-hud.has-deck .deck-panel { top: 780px; }
+/* khung Bảng vàng / Đại sứ (quan trọng) lên trên dải chào người mới (thoáng qua) để iPhone vẫn thấy */
+#game-hud.has-deck .quiz-ambassadors { top: 1015px; }
+#stage.theme-quiz #game-hud.has-deck ~ #board { top: 1015px; }
+#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 1015px !important; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1160px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1164px; }

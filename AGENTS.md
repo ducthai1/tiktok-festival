@@ -44,6 +44,22 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
 - Khi token bị lộ diện rộng, tăng `TOKEN_ROTATION` trong `src/admin-token-store.js`: mọi máy chạy bản mới tự đổi token một lần.
 - Mặc định server chỉ nghe `127.0.0.1`. Chỉ bật `ALLOW_LAN=1` khi thật cần điều khiển bằng điện thoại cùng wifi.
 
+## 3b. BẮT BUỘC cho AI chạy trên máy live (đọc kỹ — đã có sai sót thật ngày 14/11/2026)
+
+- **Server thứ 2 (tài khoản 2) chỉ chạy bằng `npm run live-acc2`** (hoặc `PORT=3940 DATA_DIR=data-acc2 npm start`).
+  CẤM `PORT=3940 node src/main.js` / `start-3940.sh`: thiếu `DATA_DIR` → dùng CHUNG `data/` với live chính (ghi đè token, cài đặt,
+  bảng quà, bản lưu nóng, phòng live). File `start-3940.sh` đã bị xoá vì lý do này.
+- **Không kill tiến trình / cổng mình không tự mở** (`fuser -k`, `pkill`…). Cổng bận → `ss -ltnp | grep <cổng>` rồi HỎI chủ kênh.
+- **Không bịa người / tên.** Máy này chỉ có chủ kênh (TikTok `tangducne`). Đừng nói "tiến trình của anh X" khi không có dữ liệu.
+- **Commit đúng việc đã làm + phải push hết.** Tiêu đề commit phải khớp nội dung; xong việc `git status` phải sạch (không để thay đổi
+  chưa commit trên máy live — lần pull sau sẽ xung đột / mất). 14/11: commit "bảng vàng" thật ra không có giao diện bảng vàng,
+  còn phần sửa khung bình luận thì không commit.
+- **Sửa màn hình phải tự chụp lại kiểm tra** (Chrome headless / mở /stage) trước khi báo "đã xong" — test pass không có nghĩa là hiện đúng.
+- **Từ ngữ của chủ kênh:** "Bảng vàng" = 3 người tặng nhiều 💎 nhất, hiện trên màn hình (`state.donators`, khung trái luân phiên với
+  Đại sứ share). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
+- **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. iPhone màn dài (15 Pro) TikTok che từ ~1.210 px,
+  Android từ ~1.370 px (toạ độ 1080×1920). Thứ quan trọng (bảng quà, bảng vàng) phải nằm trên 1.210 px.
+
 ## 4. Đang live — quy tắc
 
 - **Không sửa code, không cho AI sửa code trên máy đang live, không `git pull` giữa buổi.** Làm trên bản clone khác; chỉ cập nhật máy live
@@ -66,7 +82,8 @@ live kết thúc → chờ live mới; im lặng 90 giây (30 giây trong 2 phú
 ## 6. Code
 
 - Node ≥ 20, ES modules, không framework; màn hình là three.js + DOM trong `public/stage/`. Chú thích tiếng Việt, ngắn, giải thích *vì sao*.
-- Bố cục màn hình theo vùng an toàn của TikTok (mục *Bố cục màn hình* trong README): chữ / bảng chỉ trong dải 180–1150 px, cách mép 94 px.
+- Bố cục màn hình theo vùng an toàn của TikTok (mục *Bố cục màn hình* trong README): chữ / bảng chỉ trong dải 180–1150 px, cách mép 94 px
+  (thứ quan trọng ≤ 1.210 px cho iPhone — mục 3b; khung bình luận bên phải 1.385–1.705 px là ngoại lệ chủ kênh duyệt: iPhone vẫn thấy).
 - Kho câu hỏi: `src/games/quiz/bank/` (thêm từ = thêm dòng `ĐÁP ÁN | câu hỏi tiếng Anh là gì? | độ khó 1-3 | cách khác`).
   Bộ đề tiếng Anh đổi bằng quà (`english-switcher.js`): quà mới KẾT THÚC LUÔN bộ đang chạy và ra câu mới ngay (không hàng chờ,
   chủ kênh chốt 13/11/2026); tặng lại đúng bộ đang chạy chỉ đếm lại số câu. Vòng chớp nhoáng thì đổi từ câu sau.

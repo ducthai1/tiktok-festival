@@ -111,7 +111,11 @@ export function createQuizGame({
   const followedNow = new Set(); // follow trong buổi này (mỗi người thưởng một lần)
   let followCount = 0;
   const sharers = new Map(); // id → { id, nickname, avatar, shares, at } — bảng đại sứ (giữ qua các phòng live, xoá sau 2 tiếng im lặng)
-  const donators = new Map(); // id → { id, nickname, avatar, diamonds, at } — bảng vàng kim cương/quà
+  const donators = new Map(); // id → { id, nickname, avatar, diamonds, at } — 👑 BẢNG VÀNG: tổng 💎 mỗi người (xoá sau 2 tiếng im lặng)
+  // 💬 Bình luận THEO THỨ TỰ MÁY CHỦ NHẬN (khung bên phải màn hình): người xem thấy bình luận của mình trước trên máy mình nên tưởng
+  // mình nhanh hơn — khung này cho cả phòng thấy thứ tự thật + số giây từ lúc ra đề + ai đúng thứ mấy, khỏi tranh cãi.
+  const feed = [];
+  let feedSeq = 0;
   const liveShares = new Map(); // id → số lần share TRONG PHÒNG LIVE NÀY (giới hạn năng lượng 5 lần/người/buổi)
   let lastPrune = 0;
   let clock = 0; // giờ của sự kiện / nhịp đang xử lý (đồng hồ của engine, không phải Date.now — test chạy đồng hồ giả)
@@ -122,6 +126,21 @@ export function createQuizGame({
   let listenAt = []; // [{ at: ms kể từ lúc ra đề, slow }] — tính theo phaseStart nên tạm dừng không làm lệch
 
   const mult = () => (diamond ? 3 : golden ? 2 : 1);
+
+  /** Bình luận vào khung "theo thứ tự máy chủ nhận": giây tính từ lúc ra đề (đang hỏi), giữ 20 dòng mới nhất. */
+  function feedEntry(event, now) {
+    const text = String(event.comment || '').replace(/\s+/g, ' ').trim().slice(0, 60);
+    if (!text || !event.user?.id) return null;
+    const entry = {
+      key: (feedSeq += 1), id: event.user.id, avatar: event.user.avatar || '', q: qNumber,
+      nickname: isCleanForDisplay(event.user.nickname) ? event.user.nickname : 'Người xem',
+      text: isCleanForDisplay(text) ? text : '***',
+      t: phase === 'question' ? Math.max(0, Math.round((now - phaseStart) / 100) / 10) : null, rank: 0
+    };
+    feed.push(entry);
+    if (feed.length > 20) feed.shift();
+    return entry;
+  }
 
   function touch(user, now) {
     if (!user?.id) return;
@@ -400,24 +419,26 @@ export function createQuizGame({
       const fx = [];
       clock = now;
       touch(event.user, now);
+      // 👑 Bảng vàng: MỌI món quà (kể cả quà đổi bộ đề ở tab Tiếng Anh — trước đây chỉ tính quà không đổi đề nên bảng luôn trống)
+      if (event.type === 'gift' && event.user?.id && event.gift?.diamonds > 0) {
+        const row = donators.get(event.user.id) || { id: event.user.id, diamonds: 0 };
+        Object.assign(row, { nickname: event.user.nickname, avatar: event.user.avatar, diamonds: row.diamonds + event.gift.diamonds, at: now });
+        donators.set(event.user.id, row);
+      }
       if (event.type === 'chat') {
+        const entry = feedEntry(event, now);
         if (phase !== 'question' || paused) return fx;
+        const before = winners.length;
         if (kind === 'text') onText(event.user, event.comment, now, fx);
         else if (kind === 'abcd') onVote(event.user, event.comment, now);
         else onWordleGuess(event.user, event.comment, now, fx);
+        if (entry && winners.length > before && winners.at(-1).id === event.user.id) entry.rank = winners.length; // đúng thứ mấy
       } else if (event.type === 'gift' && onGift) {
         const own = onGift(event, now) || [];
         fx.push(...own);
         if (own.some((f) => f.switchNow)) switchNow(now, fx);
       } else if (event.type === 'gift') {
-        const user = event.user;
-        if (user?.id) {
-          const row = donators.get(user.id) || { id: user.id, diamonds: 0 };
-          Object.assign(row, { nickname: user.nickname, avatar: user.avatar, diamonds: row.diamonds + (event.gift?.diamonds || 0), at: now });
-          donators.set(user.id, row);
-        }
         const tier = giftTier(event.gift.diamondsEach);
-        // ok
         let opened = 0;
         if (phase === 'question' && !paused) {
           // 1 xu mở 1 chữ, >= 5 xu mở 2 chữ, >= 10 xu mở 3 chữ
@@ -587,6 +608,9 @@ export function createQuizGame({
       if (state.lightning && typeof state.lightning.index === 'number') {
         lightningIndex = state.lightning.index;
       }
+      if (state.donators) {
+        for (const d of state.donators) donators.set(d.id, { id: d.id, nickname: d.nickname, avatar: d.avatar, diamonds: d.diamonds, at: Number(d.at) || Date.now() });
+      }
       if (state.ambassadors) {
         for (const a of state.ambassadors) sharers.set(a.id, { id: a.id, nickname: a.nickname, avatar: a.avatar, shares: a.shares, at: Number(a.at) || Date.now() });
       }
@@ -628,8 +652,10 @@ export function createQuizGame({
           follows: followCount % FOLLOW_GOAL, followGoal: FOLLOW_GOAL },
         ambassadors: [...sharers.values()].sort((a, b) => b.shares - a.shares).slice(0, 3)
           .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, shares: r.shares, follower: followers.has(r.id) })),
+        // 👑 BẢNG VÀNG: 3 người tặng nhiều 💎 nhất (cùng khung với đại sứ share, luân phiên)
         donators: [...donators.values()].sort((a, b) => b.diamonds - a.diamonds).slice(0, 3)
-          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, diamonds: r.diamonds, follower: followers.has(r.id) }))
+          .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, diamonds: r.diamonds, follower: followers.has(r.id), at: r.at })),
+        comments: feed.slice(-12)
       };
       if (extraState) state.control = extraState();
       if (kind === 'text' && q && !q.math) {

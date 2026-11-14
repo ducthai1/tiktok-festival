@@ -186,58 +186,58 @@ function createDeckPanel(hud, gameId) {
     }
   };
 }
-/** Bảng hiển thị bình luận đổ về từ TikTok LIVE (góc dưới bên phải, dưới bảng quà) */
+/**
+ * 💬 Bình luận THEO THỨ TỰ MÁY CHỦ NHẬN (góc phải, dưới bảng quà): người xem thấy bình luận của mình trước trên máy mình nên tưởng
+ * mình nhanh hơn — khung này cho cả phòng thấy thứ tự thật, số giây từ lúc ra đề, và ai trả lời đúng thứ mấy (🥇 🥈 🥉).
+ * Dữ liệu: state.comments (quiz-game.js feedEntry) — mỗi dòng có key tăng dần; dòng đã vẽ chỉ cập nhật huy chương.
+ */
+const MEDALS = ['', '🥇', '🥈', '🥉'];
 function createCommentsPanel(hud) {
   const el = hud.el;
   const root = el('section', 'quiz-comments');
   const header = el('div', 'quiz-comments-header');
-  const title = el('h3', 'quiz-comments-title', '💬 BÌNH LUẬN TRỰC TIẾP');
-  const badge = el('div', 'quiz-comments-badge', 'TRỰC TIẾP');
-  header.append(title, badge);
-
+  header.append(el('h3', 'quiz-comments-title', '💬 THỨ TỰ MÁY CHỦ NHẬN'), el('div', 'quiz-comments-badge', 'TRỰC TIẾP'));
   const list = el('div', 'quiz-comments-list');
   root.append(header, list);
   hud.gameRoot.append(root);
+  const rows = new Map(); // key → { node, rank }
+  let lastKey = 0;
 
-  const maxItems = 25;
-  const existingKeys = new Set();
-
-  function addSingleComment(c) {
-    if (!c || !c.comment) return;
-    const key = `${c.id || c.nickname}:${c.at}:${c.comment}`;
-    if (existingKeys.has(key)) return;
-    existingKeys.add(key);
-    const item = el('div', 'quiz-comment-item');
-    if (c.type && c.type !== 'chat') item.classList.add(`quiz-comment-${c.type}`);
-    item.dataset.key = key;
-    const ava = avatarNode(c.avatar);
-    ava.classList.add('quiz-comment-ava');
-
-    const content = el('div', 'quiz-comment-content');
-    const nick = el('span', 'quiz-comment-nick', (c.nickname || 'Người xem') + ':');
-    const text = el('span', 'quiz-comment-text', c.comment || '');
-    content.append(nick, text);
-    item.append(ava, content);
-
-    list.append(item);
-
-    while (list.children.length > maxItems) {
-      const first = list.firstChild;
-      if (first && first.dataset && first.dataset.key) {
-        existingKeys.delete(first.dataset.key);
-      }
-      first?.remove();
-    }
-
-    list.scrollTop = list.scrollHeight;
+  function badge(c) {
+    if (c.rank) return el('span', 'quiz-comment-rank', `${MEDALS[c.rank] || '✅'}#${c.rank}`);
+    return el('span', 'quiz-comment-time', c.t === null || c.t === undefined ? '' : `${c.t.toFixed(1)}s`);
   }
 
   return {
     update(comments) {
-      if (!Array.isArray(comments) || comments.length === 0) return;
+      if (!Array.isArray(comments)) return;
       for (const c of comments) {
-        addSingleComment(c);
+        const known = rows.get(c.key);
+        if (known) {
+          if (known.rank !== c.rank) { // vừa được chấm đúng
+            known.rank = c.rank;
+            known.node.classList.toggle('ok', Boolean(c.rank));
+            known.node.lastChild.replaceWith(badge(c));
+          }
+          continue;
+        }
+        if (c.key <= lastKey) continue;
+        lastKey = c.key;
+        const item = el('div', `quiz-comment-item${c.rank ? ' ok' : ''}`);
+        const ava = avatarNode(c.avatar);
+        ava.classList.add('quiz-comment-ava');
+        const content = el('div', 'quiz-comment-content');
+        content.append(el('span', 'quiz-comment-nick', `${c.nickname}:`), el('span', 'quiz-comment-text', c.text));
+        item.append(ava, content, badge(c));
+        list.append(item);
+        rows.set(c.key, { node: item, rank: c.rank });
       }
+      while (list.children.length > 12) {
+        const first = list.firstChild;
+        for (const [key, row] of rows) if (row.node === first) rows.delete(key);
+        first.remove();
+      }
+      list.scrollTop = list.scrollHeight;
     },
     dispose() {
       root.remove();
@@ -295,16 +295,34 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const ambassadors = el('aside', 'quiz-ambassadors');
   hud.gameRoot.append(ambassadors);
   let ambKey = '';
-  function renderAmbassadors(list) {
-    const key = JSON.stringify(list || []);
+  // Khung trái: 📣 ĐẠI SỨ SHARE và 👑 BẢNG VÀNG (3 người tặng nhiều 💎 nhất) — có cả hai thì luân phiên mỗi 8 giây
+  let sideLists = { amb: [], gold: [] };
+  let sidePage = 'gold';
+  function renderSide() {
+    const page = !sideLists.gold.length ? 'amb' : !sideLists.amb.length ? 'gold' : sidePage;
+    const list = sideLists[page];
+    const key = JSON.stringify([page, list]);
     if (key === ambKey) return;
     ambKey = key;
-    if (!list?.length) return ambassadors.replaceChildren();
-    ambassadors.replaceChildren(el('h3', '', '📣 ĐẠI SỨ SHARE'), ...list.map((r, i) => {
+    ambassadors.classList.toggle('gold', page === 'gold');
+    if (!list.length) return ambassadors.replaceChildren();
+    ambassadors.replaceChildren(el('h3', '', page === 'gold' ? '👑 BẢNG VÀNG' : '📣 ĐẠI SỨ SHARE'), ...list.map((r, i) => {
       const row = el('div', `amb amb${i + 1}`);
-      row.append(avatarNode(r.avatar), el('span', 'name', `${r.follower ? '💖 ' : ''}${r.nickname}`), el('b', '', `↗${r.shares}`));
+      const value = page === 'gold' ? `💎${Number(r.diamonds).toLocaleString('vi-VN')}` : `↗${r.shares}`;
+      row.append(avatarNode(r.avatar), el('span', 'name', `${page === 'gold' ? MEDALS[i + 1] : ''}${r.follower ? '💖' : ''} ${r.nickname}`.trim()), el('b', '', value));
       return row;
     }));
+    ambassadors.classList.remove('flip');
+    void ambassadors.offsetWidth;
+    ambassadors.classList.add('flip');
+  }
+  const sideTimer = setInterval(() => {
+    sidePage = sidePage === 'gold' ? 'amb' : 'gold';
+    renderSide();
+  }, 8000);
+  function renderAmbassadors(amb, gold) {
+    sideLists = { amb: amb || [], gold: gold || [] };
+    renderSide();
   }
   let energyKey = '';
   function renderEnergy(e, active) {
@@ -350,6 +368,8 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   card.append(head, timer, body, winnersRow, foot);
   const deckPanel = (id === 'english' || id === 'emoji') ? createDeckPanel(hud, id) : null;
   const commentsPanel = createCommentsPanel(hud);
+  // tab có bảng quà (Tiếng Anh, Đuổi hình): bảng quà lên ngay dưới thẻ câu hỏi — iPhone màn dài bị TikTok che từ ~1.210 px (quiz.css)
+  hud.gameRoot.classList.toggle('has-deck', Boolean(deckPanel));
   hud.gameRoot.append(card);
 
   let bodyKey = '';
@@ -464,7 +484,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       card.classList.toggle('golden', Boolean(state.golden));
       card.classList.toggle('diamond', Boolean(state.diamond));
       renderEnergy(state.energy, { golden: state.golden, lightning: state.lightning });
-      renderAmbassadors(state.ambassadors);
+      renderAmbassadors(state.ambassadors, state.donators);
       const seconds = Math.ceil(state.msLeft / 1000);
       clock.textContent = state.phase === 'question' ? (state.leadIn ? '⏳' : `${seconds}s`) : state.phase === 'reveal' ? '✅ ĐÁP ÁN' : '';
       timerFill.style.width = `${state.phase === 'question' && state.totalMs ? (state.msLeft / state.totalMs) * 100 : 0}%`;
@@ -570,6 +590,8 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     dispose() {
       deckPanel?.dispose();
       commentsPanel.dispose();
+      clearInterval(sideTimer);
+      hud.gameRoot.classList.remove('has-deck');
       particles.dispose();
       for (const g of geos) g.dispose();
       disposeObject(scene);
