@@ -296,7 +296,7 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 .quiz-side { position: absolute; left: 94px; top: 1006px; width: 546px; display: flex; gap: 10px; align-items: flex-start; z-index: 1; }
 .quiz-side .quiz-ambassadors { position: static; width: auto; flex: 1 1 0; min-width: 0; padding: 8px 12px; }
 .quiz-side .quiz-ambassadors .amb { font-size: 18px; gap: 7px; }
-.quiz-side .quiz-ambassadors h3 { font-size: 17px; white-space: nowrap; }
+.quiz-side .quiz-ambassadors h3 { font-size: 17px; line-height: 1.2; white-space: nowrap; }
 
 /* Tab có bảng quà (Tiếng Anh, Đuổi hình): màn hình live là MỘT video cho mọi máy — không "responsive" theo máy người xem được.
    iPhone màn dài (15 Pro…) TikTok che từ ~1.210 px, Android từ ~1.370 px → bảng quà lên ngay dưới thẻ câu hỏi (780–1.005 px),
@@ -319,3 +319,12 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
   border-radius: 50%; object-fit: cover; background: linear-gradient(135deg, #7a5cff, #ff4fa3); }
 #banner .banner-ava .initial { font-size: 64px; color: #fff; -webkit-text-fill-color: #fff; }
 @keyframes banner-ava-pop { from { transform: scale(0.2) rotate(-25deg); opacity: 0; } }
+
+/* 🏆 Bảng điểm cùng kiểu khung với 👑 Bảng vàng / 📣 Đại sứ share (viền, bo góc, cỡ tiêu đề) → ba bảng thẳng mép trên + tiêu đề */
+#stage.theme-quiz #hud > #board { padding: 8px 12px; border-radius: 22px; border: 2px solid rgba(125, 255, 138, 0.6);
+  background: rgba(8, 10, 22, 0.78); box-shadow: 0 0 18px rgba(125, 255, 138, 0.18); }
+#stage.theme-quiz #hud > #board h3 { margin: 0 0 6px; font-size: 17px; line-height: 1.2; letter-spacing: 1px; color: #7dff8a;
+  -webkit-text-fill-color: #7dff8a; }
+html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
+#stage.theme-quiz #hud > #board ol { gap: 6px; }
+#stage.theme-quiz #hud > #board li { height: 30px; padding: 0 6px; }
