@@ -155,6 +155,15 @@ Xem lớn bằng cách mở `/stage` trong tab mới, bấm vào màn hình mộ
 
 Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và người vào phòng giả mang tên "Khách thử N". Có nút "25 người vào" để xem chào cả đoàn, và ô đặt số người xem giả để xem kiểu chỉ hiện chữ. Màn hình sẽ hiện nhãn vàng **CHẾ ĐỘ THỬ**. Khi đang kết nối live thật, các nút này **tự khoá**, để không ai lỡ phát tương tác bịa ra cho người xem thật.
 
+## Live 2 tài khoản trên 1 máy
+
+`npm run live-acc2` (`scripts/live-acc2.sh`): mở **OBS thứ 2 với cấu hình riêng** (`~/.config-acc2` — không thì 2 OBS chung cổng
+WebSocket 4455, LIVE Studio điều khiển nhầm) rồi chạy **server game thứ 2** ở cổng 3940, dữ liệu riêng `data-acc2/`. Script in các bước
+cài lần đầu cho OBS 2: 1080×1920 NVENC, WebSocket cổng 4456, nguồn `http://127.0.0.1:3940/stage?lite=1`, tắt Desktop Audio; LIVE Studio
+thứ 2 cũng chạy với `XDG_CONFIG_HOME` riêng và trỏ OBS cổng 4456.
+Máy live (i5-12400F, 32 GB, GTX 1650 4 GB): mã hoá 2 luồng NVENC ổn; giới hạn là card vẽ 2 màn three.js + 4 GB VRAM → màn tài
+khoản phụ dùng `?lite=1`, theo dõi `nvidia-smi dmon -s um` và dòng 📺 OBS trên trang điều khiển (≥ 25 khung/giây). Mạng lên cần ≥ 15 Mbps.
+
 ## Biến môi trường
 
 | Biến | Mặc định | Ý nghĩa |

@@ -15,7 +15,8 @@
     "gate": "npm run check && npm test",
     "rotate-token": "node scripts/rotate-admin-token.mjs",
     "untrack-data": "node scripts/untrack-live-data.mjs",
-    "setup-tts-en": "node scripts/setup-english-voice.mjs"
+    "setup-tts-en": "node scripts/setup-english-voice.mjs",
+    "live-acc2": "bash scripts/live-acc2.sh"
   },
   "dependencies": {
     "three": "0.186.1",
