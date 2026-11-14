@@ -323,11 +323,12 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 #game-hud.has-deck .quiz-card { top: 318px; height: 445px; padding: 12px 24px 10px; gap: 8px; }
 #game-hud.has-deck .quiz-foot { padding-top: 6px; }
 #game-hud.has-deck .deck-panel { top: 771px; }
-#game-hud.has-deck .quiz-side { top: 952px; }
+/* 3 bảng rộng BẰNG NHAU: (892 − 2 khe 10) / 3 ≈ 291 px — Bảng vàng | Đại sứ (chung khung 2 cột) 94–685 · Bảng điểm 695–986 */
+#game-hud.has-deck .quiz-side { top: 952px; width: calc((892px - 20px) * 2 / 3 + 10px); }
 #game-hud.has-deck .quiz-comments { top: 1214px; }
-#stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; }
+#stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; width: calc((892px - 20px) / 3); }
 #stage.theme-quiz #game-hud.has-deck ~ #board li:nth-child(n+4) { display: none; } /* chỉ top 3: cao bằng Bảng vàng / Đại sứ, không lấn dải chào */
-#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 952px !important; }
+#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 952px !important; width: calc((892px - 20px) / 3); }
 #stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1106px; width: 441px; height: 100px; } /* nửa bề ngang (chủ kênh: dài quá) */
 #stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1110px; }
 #stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1106px; width: 892px; height: 100px; }
