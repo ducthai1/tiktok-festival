@@ -246,6 +246,16 @@ function createCommentsPanel(hud) {
   };
 }
 
+/** Câu hỏi / ô đáp án dài tràn khung → thu nhỏ dần (3 mức) cho vừa, không cắt chữ; câu ngắn giữ cỡ to. */
+export function fitBody(body) {
+  body.classList.remove('fit1', 'fit2', 'fit3');
+  for (const level of ['fit1', 'fit2', 'fit3']) {
+    if (body.scrollHeight <= body.clientHeight + 1) return;
+    body.classList.remove('fit1', 'fit2', 'fit3');
+    body.classList.add(level);
+  }
+}
+
 export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const mode = MODES[id] || MODES.lophoc;
   const el = hud.el;
@@ -400,6 +410,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
       parts.push(mask);
     }
     body.replaceChildren(...parts);
+    fitBody(body);
   }
 
   function renderChoices(state) {

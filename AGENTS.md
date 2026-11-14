@@ -59,7 +59,8 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
   👑 Bảng vàng | 📣 Đại sứ share | 🏆 Bảng điểm — ba bảng cạnh nhau, tên dài cắt "…" (không luân phiên). "Khung bình luận" = bình luận THEO THỨ TỰ MÁY CHỦ NHẬN + giây từ lúc ra đề + 🥇🥈🥉 người đúng (chống cãi nhau ai trước).
 - **Bố cục:** live là MỘT video cho mọi máy — không responsive theo máy người xem. iPhone màn dài (15 Pro) TikTok che từ ~1.210 px,
   Android từ ~1.370 px (toạ độ 1080×1920). Thứ quan trọng (bảng quà, bảng vàng) phải nằm trên 1.210 px. Tab có bảng quà hiện tại:
-  thẻ câu hỏi 270–750 · bảng quà 760–937 · Bảng vàng | Đại sứ | Bảng điểm 947–1095 · thẻ quà đổi đề / chào mừng 1103–1203.
+  thẻ câu hỏi 270–700 · bảng quà 710–887 · Bảng vàng | Đại sứ | Bảng điểm 897–1045 · thẻ quà đổi đề / chào mừng 1053–1153.
+  Câu hỏi / đáp án dài tự thu nhỏ cho vừa thẻ (`quiz-scene.js` fitBody, 3 mức) — đừng tăng chiều cao thẻ để "chữa" câu dài.
 - **Thẻ quà đổi đề** (`stage-hud.js` giftCard) nằm CÙNG CHỖ thẻ chào người mới và ƯU TIÊN hơn: đang hiện thẻ quà thì lời chào chờ
   (`stage-main.js` welcomeWaiting). 5 bậc theo giá thật món quà: 1 · 2–9 · 10–19 · 20–29 · 30+ xu.
 
