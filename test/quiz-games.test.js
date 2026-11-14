@@ -17,7 +17,7 @@ import fsp from 'node:fs';
 import os from 'node:os';
 import { QUIZ_GAME_IDS } from '../src/games/quiz/quiz-games.js';
 import { createEnglishSwitcher, filterByLevel } from '../src/games/quiz/english-switcher.js';
-import { assignEnglishGifts, ENGLISH_GIFT_PLAN, englishTargetFor, ORDER } from '../public/shared/english-sets.js';
+import { assignEnglishGifts, ENGLISH_GIFT_PLAN, englishTargetFor, ORDER, STREAMER_SEEN_GIFTS } from '../public/shared/english-sets.js';
 import { VN_GIFTS_UP_TO_30 } from '../public/shared/tiktok-gifts-vn.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
@@ -215,6 +215,11 @@ test('english gifts: every slot shows a real VN gift at its REAL price (≤ 30 c
     assert.ok(x.gift.coins <= 30);
   }
   assert.equal(new Set(a.map((x) => x.gift.name)).size, a.length);
+  // mọi món phải có trong hộp quà mà người xem thấy (13/11 từng gán quà không có trong hộp quà → không ai tặng được)
+  for (const x of a) {
+    const listed = VN_GIFTS_UP_TO_30.some((g) => g.name === x.gift.name && g.panel);
+    assert.ok(listed || STREAMER_SEEN_GIFTS.includes(x.gift.name), `${x.to}: ${x.gift.name} không có trong hộp quà TikTok`);
+  }
   assert.equal(a.find((x) => x.to === 'easy').gift.name, 'Rose');
   const sets = loadEnglishSets();
   for (const [id, list] of Object.entries(sets)) assert.ok(list.length >= 150, `${id}: ${list.length}`);
@@ -223,30 +228,31 @@ test('english gifts: every slot shows a real VN gift at its REAL price (≤ 30 c
 test('english gifts: a gift cheaper than the price on the panel never switches (the 1-coin "5-coin" loss)', () => {
   const a = assignEnglishGifts([]);
   const slot = (to) => a.find((x) => x.to === to).gift;
-  assert.equal(englishTargetFor(a, { name: 'Capybara', diamondsEach: 30 }), 'toeic');
-  assert.equal(englishTargetFor(a, { name: 'Capybara', diamondsEach: 1 }), null);
+  assert.equal(englishTargetFor(a, { name: 'G.O.A.T. Busker', diamondsEach: 20 }), 'toeic');
+  assert.equal(englishTargetFor(a, { name: 'G.O.A.T. Busker', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Doughnut', diamondsEach: 30 }), 'nghe'); // trùng tên mà rẻ hơn → không đổi
   assert.equal(englishTargetFor(a, { name: 'Rosa', diamondsEach: 10 }), 'truonghoc');
-  assert.equal(englishTargetFor(a, { name: 'Finger Heart', diamondsEach: 5 }), null); // không còn trên bảng
-  assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), null); // món 1 xu từng bị ghi 5 xu
+  assert.equal(englishTargetFor(a, { name: 'Finger Heart', diamondsEach: 5 }), 'dongvat');
+  assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), 'hard'); // giờ ghi đúng giá thật 1 xu (13/11 từng ghi 5 xu)
+  assert.equal(englishTargetFor(a, { id: '626064', name: 'Hát rong G.O.A.T.', diamondsEach: 20 }), 'toeic'); // tên tiếng Việt: nhận theo id quà thật
   assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Brown Paw', diamondsEach: 0 }), null); // không rõ giá → không đổi
   // TikTok gửi tên tiếng Việt: nhận theo mã ảnh quà
   assert.equal(englishTargetFor(a, { id: 'x', name: 'Hoa hồng', diamondsEach: 1, pictureUrl: slot('easy').image.replace('.webp', '.png') }), 'easy');
   // phòng đã nhận món thật: dùng id + giá TikTok báo (TikTok đổi giá thì bảng hiện giá mới); món trùng tên trên 30 xu là món khác
-  const room = assignEnglishGifts([{ id: '8913', name: 'Rosa', coins: 12, image: '' }, { id: '99', name: 'Capybara', coins: 299 }]);
+  const room = assignEnglishGifts([{ id: '8913', name: 'Rosa', coins: 12, image: '' }, { id: '99', name: 'G.O.A.T. Busker', coins: 299 }]);
   const rosa = room.find((x) => x.to === 'truonghoc').gift;
   assert.deepEqual([rosa.id, rosa.coins], ['8913', 12]);
   assert.equal(englishTargetFor(room, { id: '8913', name: 'Hoa Rosa', diamondsEach: 10 }), null);
   assert.equal(englishTargetFor(room, { id: '8913', name: 'Hoa Rosa', diamondsEach: 12 }), 'truonghoc');
-  assert.deepEqual([room.find((x) => x.to === 'toeic').gift.coins, englishTargetFor(room, { id: '99', name: 'Capybara', diamondsEach: 299 })], [30, 'toeic']);
+  assert.deepEqual([room.find((x) => x.to === 'toeic').gift.coins, englishTargetFor(room, { id: '99', name: 'G.O.A.T. Busker', diamondsEach: 299 })], [20, 'toeic']);
 });
 
 test('english switcher: a gift ENDS the running set and switches right now (new question at once), 20 questions, never scores the gifter', () => {
   const english = loadEnglishQuestions();
   const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets: loadEnglishSets() });
-  sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'Capybara', coins: 30 }]);
+  sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'G.O.A.T. Busker', coins: 20 }]);
   const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
   const gift = (n, id, name, coins, t) => game.handleEvent({ type: 'gift', user: user(n), gift: { id, name, diamondsEach: coins, count: 1, diamonds: coins } }, t);
   game.tick(0);
@@ -254,11 +260,11 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.deepEqual(game.snapshot(0).control.rules.map((r) => r.to), ORDER.filter((to) => to !== 'nghe')); // chưa có giọng đọc → ẩn ô 🎧
   assert.deepEqual(gift(8, '4', 'Love you so much', 1, 5).map((f) => f.kind), ['quizGift']); // món 1 xu: chỉ cảm ơn, không đổi bộ đề
   const q1 = game.snapshot(5).qNumber;
-  const fx = gift(7, '3', 'Capybara', 30, 10);
+  const fx = gift(7, '3', 'G.O.A.T. Busker', 20, 10);
   assert.deepEqual(fx.map((f) => f.kind), ['quizDeck', 'quizQuestion']); // đổi NGAY: câu mới ra liền
   assert.equal(game.snapshot(10).category, 'Tiếng Anh · TOEIC');
   assert.equal(game.snapshot(10).qNumber, q1 + 1);
-  assert.deepEqual(gift(9, '3', 'Capybara', 30, 20).map((f) => f.kind), ['quizDeck']); // đang TOEIC: chỉ đếm lại, không nhảy câu
+  assert.deepEqual(gift(9, '3', 'G.O.A.T. Busker', 20, 20).map((f) => f.kind), ['quizDeck']); // đang TOEIC: chỉ đếm lại, không nhảy câu
   const cats = [game.snapshot(20).category];
   let t = 100;
   for (let i = 0; i < 21; i += 1) {
@@ -272,7 +278,7 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.equal(game.snapshot(t).control.set, 'general');
   assert.equal(game.snapshot(t).board.length, 0);
   // đang TOEIC, người khác tặng Hoa hồng (Dễ) → đổi độ khó ngay; tặng TikTok → kết thúc luôn bộ đang chạy, về Tổng hợp ngay
-  gift(7, '3', 'Capybara', 30, (t += 10));
+  gift(7, '3', 'G.O.A.T. Busker', 20, (t += 10));
   assert.equal(game.snapshot(t).control.set, 'toeic');
   assert.ok(gift(5, '1', 'Rose', 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
   assert.equal(game.snapshot(t).control.level, 'easy');
@@ -290,7 +296,7 @@ test('english switcher: a golden question nobody answered stays golden when a gi
   game.command('next', 10);
   game.command('next', 20);
   assert.equal(game.snapshot(20).golden, true);
-  game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Capybara', diamondsEach: 30, count: 1, diamonds: 30 } }, 30);
+  game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'G.O.A.T. Busker', diamondsEach: 20, count: 1, diamonds: 20 } }, 30);
   assert.deepEqual([game.snapshot(30).category, game.snapshot(30).golden], ['Tiếng Anh · TOEIC', true]);
 });
 

@@ -18,15 +18,18 @@ export const ENGLISH_MAX_COINS = 30;
 
 /**
  * Ô → món quà (tên đúng như TikTok VN). Giá lấy từ bảng giá thật, không ghi tay ở đây.
- * Trang 2 dùng quà QUEN MẶT (người xem nhận ra ngay trong hộp quà) thay cho các món 15–20 xu mới, ít ai biết — chủ kênh chọn
- * 13/11/2026, chấp nhận giá thấp hơn ở vài ô.
+ * CHỈ dùng món có trong hộp quà mà mọi người xem đều thấy (panel: true ở tiktok-gifts-vn.js — test kiểm tra), trừ món chủ kênh
+ * đã xác nhận thấy trong hộp quà của phòng (STREAMER_SEEN_GIFTS). 13/11 từng gán Heart Me, Brown Paw, Capybara, Tiny Diny, Squirrel,
+ * Cheer You Up — có trên trang liệt kê quà nhưng KHÔNG có trong hộp quà → người xem không tìm thấy để tặng.
  * Muốn đổi món / giá: sửa tên ở đây (phải có trong tiktok-gifts-vn.js), chạy npm run gate.
  */
 export const ENGLISH_GIFT_PLAN = {
-  general: 'TikTok', easy: 'Rose', hard: 'Heart Me', dongvat: 'Brown Paw', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
-  toeic: 'Capybara', ielts: 'Perfume', congnghe: 'Tiny Diny', bongda: 'Lucky Pig', yhoc: 'Squirrel',
-  dulich: 'Friendship Necklace', giaitri: 'Cheer You Up'
+  general: 'TikTok', easy: 'Rose', hard: "You're awesome", dongvat: 'Finger Heart', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
+  toeic: 'G.O.A.T. Busker', ielts: 'Perfume', congnghe: 'Lyric Mail', bongda: 'Spinning Soccer', yhoc: 'Bravo!',
+  dulich: 'Friendship Necklace', giaitri: 'LOL'
 };
+/** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
+export const STREAMER_SEEN_GIFTS = ['Peach'];
 
 export const ENGLISH_TARGETS = {
   // Trang 1: Đại trà & Dễ chơi (hiện 20s) — quà 1 / 5 / 10 / 30 xu (Đồ vật đã gộp vào Tổng hợp)
@@ -68,7 +71,9 @@ const sameGift = (planned, g) => sameName(planned.name, g.name) || sameName(plan
  */
 export function assignEnglishGifts(catalog = []) {
   return ORDER.map((to) => {
-    const want = VN_GIFTS_UP_TO_30.find((g) => g.name === ENGLISH_GIFT_PLAN[to]);
+    // trùng tên thì lấy món có trong hộp quà chung
+    const named = VN_GIFTS_UP_TO_30.filter((g) => g.name === ENGLISH_GIFT_PLAN[to]);
+    const want = named.find((g) => g.panel) || named[0];
     if (!want) return null;
     // phòng đã nhận món cùng tên (tối đa 30 xu) → theo id + giá TikTok báo; món trùng tên mà trên 30 xu là món khác → bỏ
     const room = (catalog || []).find((g) => sameGift(want, g) && coinsOf(g) >= 1 && coinsOf(g) <= ENGLISH_MAX_COINS);
@@ -77,7 +82,7 @@ export function assignEnglishGifts(catalog = []) {
       icon: ENGLISH_TARGETS[to].icon,
       label: ENGLISH_TARGETS[to].label,
       gift: {
-        id: String(room?.id || ''),
+        id: String(room?.id || want.id || ''),
         name: want.name,
         en: want.name,
         coins: room ? coinsOf(room) : want.coins,

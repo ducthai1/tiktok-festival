@@ -122,7 +122,7 @@ test('listening runs at least 20 questions: another set waits (last gift wins), 
   game.tick(0);
   game.handleEvent(doughnut(), 10);
   assert.ok(game.snapshot(10).listen);
-  const fx = game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Capybara', diamondsEach: 30, count: 1, diamonds: 30 } }, 20);
+  const fx = game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'G.O.A.T. Busker', diamondsEach: 20, count: 1, diamonds: 20 } }, 20);
   assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']); // không ra câu mới
   assert.equal(fx[0].after, 19);
   assert.ok(game.snapshot(20).listen);
