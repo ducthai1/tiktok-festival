@@ -301,16 +301,17 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 /* Tab có bảng quà (Tiếng Anh, Đuổi hình): màn hình live là MỘT video cho mọi máy — không "responsive" theo máy người xem được.
    iPhone màn dài (15 Pro…) TikTok che từ ~1.210 px, Android từ ~1.370 px → bảng quà lên ngay dưới thẻ câu hỏi (780–1.005 px),
    bảng điểm / dải chào / đại sứ + bảng vàng xuống dưới. Khung bình luận giữ chỗ cũ (bên phải, iPhone vẫn thấy). */
-#game-hud.has-deck .quiz-card { height: 430px; padding: 12px 24px 10px; gap: 8px; }
-#game-hud.has-deck .quiz-foot { font-size: 18px; line-height: 1.25; padding-top: 6px; }
-#game-hud.has-deck .deck-panel { top: 710px; }
-/* (tab có bảng quà) thẻ câu hỏi 270–700 · bảng quà 710–887 · hàng 3 bảng 897–1045 · hàng thẻ quà / chào mừng 1053–1153 — tất cả trên 1.210 */
-#game-hud.has-deck .quiz-side { top: 897px; }
-#stage.theme-quiz #game-hud.has-deck ~ #board { top: 897px; }
-#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 897px !important; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1053px; width: 892px; height: 100px; }
-#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1057px; }
-#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1053px; width: 892px; height: 100px; }
+/* chỉ bớt KHOẢNG TRỐNG (lề, khoảng cách, trống quanh câu hỏi) — cỡ chữ giữ nguyên; câu 2 dòng + ô đáp án vẫn vừa đúng cỡ */
+#game-hud.has-deck .quiz-card { height: 445px; padding: 12px 24px 10px; gap: 8px; }
+#game-hud.has-deck .quiz-foot { padding-top: 6px; }
+#game-hud.has-deck .deck-panel { top: 725px; }
+/* (tab có bảng quà) thẻ câu hỏi 270–715 · bảng quà 725–900 · hàng 3 bảng 912–1060 · hàng thẻ quà / chào mừng 1068–1168 — tất cả trên 1.210 */
+#game-hud.has-deck .quiz-side { top: 912px; }
+#stage.theme-quiz #game-hud.has-deck ~ #board { top: 912px; }
+#stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 912px !important; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1068px; width: 892px; height: 100px; }
+#stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1072px; }
+#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1068px; width: 892px; height: 100px; }
 
 /* banner giữa màn (đổi bộ đề…) có avatar người tặng: đặt giữa thẻ câu hỏi, không đè bảng quà bên dưới */
 #stage.theme-quiz #banner { top: 380px; }
@@ -396,7 +397,7 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 .gc-fx span { position: absolute; bottom: -24px; font-size: 22px; opacity: 0; animation: gc-float 1.8s ease-out infinite; }
 @keyframes gc-float { 0% { transform: translateY(0) scale(0.6); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(-120px) scale(1.1); opacity: 0; } }
 
-/* câu dài tự thu nhỏ cho vừa khung (quiz-scene.js fitBody) */
+/* LƯỚI AN TOÀN cho số ít câu siêu dài (trước đây bị cắt mất chữ): chỉ khi tràn khung mới thu nhỏ — câu thường giữ nguyên cỡ (fitBody) */
 .quiz-body.fit1 .quiz-prompt { font-size: 37px; }
 .quiz-body.fit1 .quiz-mask .tile { width: 44px; height: 54px; font-size: 32px; }
 .quiz-body.fit2 { gap: 10px; }
