@@ -166,6 +166,7 @@ Mục **Thử trước khi live** gửi bình luận, tim, follow, quà và ngư
 | `EULER_API_KEY` | trống | Khoá Euler Stream nếu bị giới hạn lượt kết nối |
 | `TIKFINITY_WS_URL` | `ws://127.0.0.1:21213/` | Chỉ nhận địa chỉ trên chính máy này |
 | `START_GAME` | `bar` | `bar` / `swim` / `temple` |
+| `DATA_DIR` | `data` | Thư mục dữ liệu — live 2 tài khoản trên 1 máy: mỗi server một thư mục (`PORT=3940 DATA_DIR=data-acc2 npm start`) |
 | `TTS_EN_ENV` | `~/.local/share/tiktok-live-games/tts-en-env` | Môi trường Python của giọng đọc tiếng Anh (edge-tts) |
 
 ## Quà TikTok thật → hiệu ứng

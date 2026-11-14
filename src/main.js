@@ -11,7 +11,7 @@ process.on('uncaughtException', (error) => log.error('process', 'lỗi không b�
 
 const config = loadConfig();
 log.info('server', `khởi động — node ${process.version}, pid ${process.pid}, cổng ${config.port}, nguồn ${config.provider}`
-  + `, tự kết nối ${config.tiktokUsername || '(không)'}, EULER_API_KEY ${config.eulerApiKey ? 'CÓ' : 'KHÔNG CÓ'}, log ở ${logDir}`);
+  + `, tự kết nối ${config.tiktokUsername || '(không)'}, EULER_API_KEY ${config.eulerApiKey ? 'CÓ' : 'KHÔNG CÓ'}, dữ liệu ở ${DATA_DIR}, log ở ${logDir}`);
 if (!config.eulerApiKey) log.warn('server', 'chưa có EULER_API_KEY trong .env — TikTok dễ chặn / giới hạn kết nối (xem .env.example)');
 const app = await startApp(config, { voice: true }).catch((error) => {
   if (error?.code === 'EADDRINUSE') {

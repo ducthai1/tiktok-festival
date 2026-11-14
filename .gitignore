@@ -2,6 +2,8 @@ node_modules/
 # token điều khiển + cài đặt máy này: không bao giờ commit
 data/*
 !data/.gitkeep
+# dữ liệu tài khoản thứ 2, 3… (DATA_DIR=data-acc2 …)
+data-*/
 .env
 *.log
 

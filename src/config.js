@@ -5,7 +5,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const ROOT_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-export const DATA_DIR = path.join(ROOT_DIR, 'data');
+// DATA_DIR: chạy 2 tài khoản trên một máy = 2 server, mỗi server một thư mục dữ liệu riêng (token, cài đặt, bảng quà, bản lưu,
+// phòng live, log…) — vd: PORT=3940 DATA_DIR=data-acc2 npm start. Mặc định: data/
+export const DATA_DIR = process.env.DATA_DIR ? path.resolve(ROOT_DIR, process.env.DATA_DIR) : path.join(ROOT_DIR, 'data');
 export const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
 
 function parseDotEnv(filePath) {
