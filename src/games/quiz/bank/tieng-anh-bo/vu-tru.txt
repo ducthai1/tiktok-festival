@@ -1,0 +1,523 @@
+STARLIGHT | Ánh sáng từ ngôi sao tiếng Anh là gì? | 2
+MOONLIGHT | Ánh sáng mặt trăng tiếng Anh là gì? | 1
+MILKY WAY | Ngân Hà, dải Ngân Hà tiếng Anh là gì? | 2
+BIG BANG | Vụ nổ lớn bắt đầu vũ trụ tiếng Anh là gì? | 2
+ORBIT | Chuyển động vòng tròn xung quanh tiếng Anh là gì? | 2
+SPACE RACE | Cuộc đua vào vũ trụ tiếng Anh là gì? | 2
+APOLLO | Chương trình đáp mặt trăng (NASA) tiếng Anh là gì? | 2
+GEMINI | Chương trình tàu hai người (NASA) tiếng Anh là gì? | 2
+SPACE STATION | Trạm không gian tiếng Anh là gì? | 2
+LUNAR ECLIPSE | Nguyệt thực (bóng trái đất che mặt trăng) tiếng Anh là gì? | 2
+ESCAPE VELOCITY | Vận tốc thoát khỏi hành tinh tiếng Anh là gì? | 3
+DOPPLER EFFECT | Hiệu ứng Doppler (thay đổi tần số) tiếng Anh là gì? | 3
+PARALLAX | Thị sai (cách đo khoảng cách sao) tiếng Anh là gì? | 3
+REDSHIFT | Dịch đỏ tiếng Anh là gì? | 3
+BLUESHIFT | Dịch xanh tiếng Anh là gì? | 3
+OCCULTATION | Che phủ (một thiên thể che một thiên thể khác) tiếng Anh là gì? | 3
+CONJUNCTION | Hội tụ (hai thiên thể gần nhau) tiếng Anh là gì? | 3
+OPPOSITION | Đối xứng (hai thiên thể ở hai bên trái đất) tiếng Anh là gì? | 3
+PERIGEE | Điểm gần nhất với trái đất tiếng Anh là gì? | 3
+APOGEE | Điểm xa nhất từ trái đất tiếng Anh là gì? | 3
+PERIHELION | Điểm gần nhất với mặt trời tiếng Anh là gì? | 3
+APHELION | Điểm xa nhất từ mặt trời tiếng Anh là gì? | 3
+MARS ROVER | Thiết bị khám phá mặt hỏa tiếng Anh là gì? | 2
+CURIOSITY | Tên xe tự hành khám phá Sao Hỏa tiếng Anh là gì? | 2
+LUNA | Chương trình tàu mặt trăng Liên Xô tiếng Anh là gì? | 2
+SPUTNIK | Vệ tinh nhân tạo đầu tiên (Liên Xô) tiếng Anh là gì? | 2
+LAIKA | Chú chó đầu tiên bay vào vũ trụ tiếng Anh là gì? | 2
+YURI GAGARIN | Người bay vào vũ trụ đầu tiên tiếng Anh là gì? | 2
+NEIL ARMSTRONG | Người đi bộ trên mặt trăng đầu tiên tiếng Anh là gì? | 1
+BUZZ ALDRIN | Người thứ hai đi bộ trên mặt trăng tiếng Anh là gì? | 2
+JOHN GLENN | Người mỹ bay quanh trái đất tiếng Anh là gì? | 2
+ALAN SHEPARD | Người mỹ bay vào vũ trụ tiếng Anh là gì? | 2
+VALENTINA TERESHKOVA | Phụ nữ bay vào vũ trụ đầu tiên tiếng Anh là gì? | 2
+SPACE WALK | Bước đi ngoài tàu vũ trụ tiếng Anh là gì? | 2 | SPACEWALK
+DOCKING | Gắn nối giữa hai tàu vũ trụ tiếng Anh là gì? | 2
+RENDEZVOUS | Cuộc gặp trong không gian tiếng Anh là gì? | 2
+REENTRY | Vào lại bầu khí quyển tiếng Anh là gì? | 2
+LAUNCHPAD | Bệ phóng tên lửa tiếng Anh là gì? | 2
+THRUSTER | Động cơ điều hướng tiếng Anh là gì? | 2 | THRUSTERS
+FUEL TANK | Bình chứa nhiên liệu tiếng Anh là gì? | 2
+TRAJECTORY | Quỹ đạo bay tiếng Anh là gì? | 2 | TRAJECTORIES
+PROBE | Tàu thăm dò tiếng Anh là gì? | 2 | PROBES
+ROVER | Xe khám phá tiếng Anh là gì? | 2 | ROVERS
+LANDER | Tàu đáp tiếng Anh là gì? | 2 | LANDERS
+ORBITER | Tàu vệ tinh quỹ đạo tiếng Anh là gì? | 2 | ORBITERS
+SPACE TELESCOPE | Kính thiên văn trong vũ trụ tiếng Anh là gì? | 2
+RADIO TELESCOPE | Kính viễn vọng vô tuyến tiếng Anh là gì? | 3
+OBSERVATORY | Đài quan sát thiên văn tiếng Anh là gì? | 2 | OBSERVATORIES
+ARECIBO OBSERVATORY | Đài quan sát Arecibo (đã đóng) tiếng Anh là gì? | 3
+SOUTHERN CROSS | Chòm sao Nam th十字 tiếng Anh là gì? | 2
+POLARIS | Sao Bắc Đẩu tiếng Anh là gì? | 2
+SIRIUS | Sao Thiên Sửu (sao sáng nhất) tiếng Anh là gì? | 2
+BETELGEUSE | Sao Bê-tê-jun tiếng Anh là gì? | 2
+RIGEL | Sao Ri-giên tiếng Anh là gì? | 2
+ORION | Chòm sao Thủ Công tiếng Anh là gì? | 1
+LEO | Chòm sao Sư Tử tiếng Anh là gì? | 1
+URSA MAJOR | Chòm sao Gấu Lớn tiếng Anh là gì? | 2
+URSA MINOR | Chòm sao Gấu Nhỏ tiếng Anh là gì? | 2
+CASSIOPEIA | Chòm sao Hoàng hậu tiếng Anh là gì? | 2
+PEGASUS | Chòm sao Ngựa cánh tiếng Anh là gì? | 2
+ANDROMEDA GALAXY | Thiên hà Tiên nữ tiếng Anh là gì? | 2
+HORSEHEAD NEBULA | Tinh vân Đầu Ngựa tiếng Anh là gì? | 2
+CRAB NEBULA | Tinh vân Cua tiếng Anh là gì? | 2
+ORION NEBULA | Tinh vân Thủ Công tiếng Anh là gì? | 2
+EAGLE NEBULA | Tinh vân Đại Bàng tiếng Anh là gì? | 2
+PILLARS OF CREATION | Trụ Sáng Tạo tiếng Anh là gì? | 3
+RING NEBULA | Tinh vân Vòng tiếng Anh là gì? | 2
+PLANETARY NEBULA | Tinh vân hành tinh tiếng Anh là gì? | 3
+EMISSION NEBULA | Tinh vân phát xạ tiếng Anh là gì? | 3
+REFLECTION NEBULA | Tinh vân phản xạ tiếng Anh là gì? | 3
+DARK NEBULA | Tinh vân tối tiếng Anh là gì? | 3
+INTERSTELLAR | Giữa các ngôi sao tiếng Anh là gì? | 3
+INTERSTELLAR DUST | Bụi giữa các sao tiếng Anh là gì? | 3
+INTERSTELLAR GAS | Khí giữa các sao tiếng Anh là gì? | 3
+STAR CLUSTER | Cụm sao tiếng Anh là gì? | 2
+GLOBULAR CLUSTER | Cụm sao cầu tiếng Anh là gì? | 3
+OPEN CLUSTER | Cụm sao mở tiếng Anh là gì? | 3
+STELLAR EVOLUTION | Tiến hóa ngôi sao tiếng Anh là gì? | 3
+MAIN SEQUENCE | Dãy chính (loại sao) tiếng Anh là gì? | 3
+GIANT STAR | Sao khổng lồ tiếng Anh là gì? | 2
+DWARF STAR | Sao lùn tiếng Anh là gì? | 2
+RED GIANT | Sao khổng lồ đỏ tiếng Anh là gì? | 2
+WHITE DWARF | Sao lùn trắng tiếng Anh là gì? | 2
+NEUTRON STAR | Sao neutron tiếng Anh là gì? | 3
+PULSAR | Sao xoay phát tia tiếng Anh là gì? | 3
+BLACK HOLE | Lỗ đen tiếng Anh là gì? | 2
+SINGULARITY | Điểm kỳ dị tiếng Anh là gì? | 3
+ACCRETION DISK | Đĩa hấp thu xoay tiếng Anh là gì? | 3
+HAWKING RADIATION | Bức xạ Hawking từ lỗ đen tiếng Anh là gì? | 3
+WORMHOLE | Lỗ giun không-thời gian tiếng Anh là gì? | 3
+GAMMA RAY BURST | Bùng nổ tia gamma tiếng Anh là gì? | 3
+GAMMA RAY | Tia gamma tiếng Anh là gì? | 3
+COSMIC RAY | Tia vũ trụ tiếng Anh là gì? | 2
+SOLAR WIND | Gió mặt trời tiếng Anh là gì? | 2
+MAGNETIC FIELD | Trường từ tiếng Anh là gì? | 2
+MAGNETOSPHERE | Bao từ tiếng Anh là gì? | 3
+IONOSPHERE | Tầng ion tiếng Anh là gì? | 2
+SOUTHERN LIGHTS | Cực quang nam tiếng Anh là gì? | 2
+EXOPLANET | Hành tinh ngoài hệ tiếng Anh là gì? | 2 | EXOPLANETS
+HABITABLE ZONE | Vùng sinh sống tiếng Anh là gì? | 2
+EARTH-LIKE PLANET | Hành tinh giống trái đất tiếng Anh là gì? | 2
+GOLDILOCKS ZONE | Vùng Goldilocks (điều kiện sống) tiếng Anh là gì? | 3
+PLANET EARTH | Hành tinh Trái Đất tiếng Anh là gì? | 1
+TERRESTRIAL PLANET | Hành tinh đất đá tiếng Anh là gì? | 2
+GAS GIANT | Hành tinh khí khổng lồ tiếng Anh là gì? | 2
+ICE GIANT | Hành tinh băng khổng lồ tiếng Anh là gì? | 2
+JOVIAN PLANET | Hành tinh giống Sao Mộc tiếng Anh là gì? | 3
+PROXIMA CENTAURI | Sao gần trái đất nhất tiếng Anh là gì? | 2
+ALPHA CENTAURI | Hệ sao gần trái đất nhất tiếng Anh là gì? | 2
+VEGA | Sao Vẹt (sao sáng) tiếng Anh là gì? | 2
+ALTAIR | Sao Đại Ưng tiếng Anh là gì? | 2
+DENEB | Sao Thiên Nga tiếng Anh là gì? | 2
+ANTARES | Sao Bọ Cạp tiếng Anh là gì? | 2
+ALDEBARAN | Sao Taurus tiếng Anh là gì? | 2
+SPICA | Sao Trinh Nữ tiếng Anh là gì? | 2
+REGULUS | Sao Sư Tử tiếng Anh là gì? | 2
+ARCTURUS | Sao Yển tiếng Anh là gì? | 2
+CAPELLA | Sao Yêu tiếng Anh là gì? | 2
+FOMALHAUT | Sao Cá tiếng Anh là gì? | 2
+VELA SUPERNOVA | Tàn dư siêu tân tinh Vela tiếng Anh là gì? | 3
+TYCHO SUPERNOVA | Tàn dư siêu tân tinh Tycho tiếng Anh là gì? | 3
+KEPLER SUPERNOVA | Tàn dư siêu tân tinh Kepler tiếng Anh là gì? | 3
+GRAVITATIONAL LENSING | Thấu kính hấp dẫn tiếng Anh là gì? | 3
+EINSTEIN RING | Vòng Einstein tiếng Anh là gì? | 3
+DARK MATTER | Vật chất tối tiếng Anh là gì? | 2
+COSMIC INFLATION | Lạm phát vũ trụ tiếng Anh là gì? | 3
+HUBBLE CONSTANT | Hằng số Hubble tiếng Anh là gì? | 3
+HUBBLE LAW | Định luật Hubble tiếng Anh là gì? | 3
+EXPANSION OF UNIVERSE | Sự giãn nở vũ trụ tiếng Anh là gì? | 2
+BIG FREEZE | Kết thúc vũ trụ do lạnh tiếng Anh là gì? | 3
+HEAT DEATH | Cái chết nhiệt tiếng Anh là gì? | 3
+BIG RIP | Xé nát vũ trụ tiếng Anh là gì? | 3
+BIG CRUNCH | Sụp đổ vũ trụ tiếng Anh là gì? | 3
+MULTIVERSE | Đa vũ trụ tiếng Anh là gì? | 2
+PARALLEL UNIVERSE | Vũ trụ song song tiếng Anh là gì? | 2
+QUANTUM GRAVITY | Trọng lực lượng tử tiếng Anh là gì? | 3
+STRING THEORY | Lý thuyết dây tiếng Anh là gì? | 3
+SUPERSYMMETRY | Siêu đối xứng tiếng Anh là gì? | 3
+HIGGS BOSON | Boson Higgs tiếng Anh là gì? | 3
+VACUUM ENERGY | Năng lượng chân không tiếng Anh là gì? | 3
+COSMOLOGICAL CONSTANT | Hằng số vũ trụ tiếng Anh là gì? | 3
+GENERAL RELATIVITY | Thuyết tương đối rộng tiếng Anh là gì? | 2
+SPECIAL RELATIVITY | Thuyết tương đối hẹp tiếng Anh là gì? | 2
+SPACETIME | Không-thời gian tiếng Anh là gì? | 2
+STEPHEN HAWKING | Nhà vật lý nổi tiếng tiếng Anh là gì? | 2
+VENUS PROBE | Tàu thăm dò Sao Kim tiếng Anh là gì? | 2
+MERCURY PROBE | Tàu thăm dò Sao Thủy tiếng Anh là gì? | 2
+JUPITER PROBE | Tàu thăm dò Sao Mộc tiếng Anh là gì? | 2
+SATURN PROBE | Tàu thăm dò Sao Thổ tiếng Anh là gì? | 2
+CASSINI-HUYGENS | Tàu thăm dò Sao Thổ tiếng Anh là gì? | 2
+GALILEO | Tàu thăm dò Sao Mộc tiếng Anh là gì? | 1
+JUNO | Tàu thăm dò Sao Mộc hiện tại tiếng Anh là gì? | 2
+NEW HORIZONS | Tàu thăm dò Sao Diêm Vương tiếng Anh là gì? | 2
+DAWN MISSION | Sứ mệnh Dawn (Ceres) tiếng Anh là gì? | 2
+HAYABUSA | Sứ mệnh mang mẫu tiểu hành tinh tiếng Anh là gì? | 2
+ROSETTA | Sứ mệnh theo dõi sao chổi tiếng Anh là gì? | 2
+PHILAE | Tàu đáp sao chổi (Rosetta) tiếng Anh là gì? | 2
+CHANG'E MISSION | Sứ mệnh mặt trăng Trung Quốc tiếng Anh là gì? | 2
+LUNAR ORBITER | Tàu quỹ đạo mặt trăng tiếng Anh là gì? | 2
+VIKING LANDER | Tàu đáp Sao Hỏa tiếng Anh là gì? | 2
+PATHFINDER | Tàu đáp Sao Hỏa đầu tiên tiếng Anh là gì? | 2
+SOJOURNER | Xe đầu tiên trên Sao Hỏa tiếng Anh là gì? | 1
+ZHURONG | Xe Trung Quốc trên Sao Hỏa tiếng Anh là gì? | 2
+INGENUITY | Máy bay trên Sao Hỏa tiếng Anh là gì? | 2
+ISS MODULE | Mô-đun Trạm Vũ Trụ Quốc tế tiếng Anh là gì? | 2
+DRAGON CAPSULE | Tàu vũ trụ SpaceX tiếng Anh là gì? | 2
+STARLINER | Tàu vũ trụ Boeing tiếng Anh là gì? | 2
+SOYUZ | Tàu vũ trụ Nga tiếng Anh là gì? | 1
+ATLANTIS | Tàu con thoi NASA tiếng Anh là gì? | 1
+CHALLENGER | Tàu con thoi NASA tiếng Anh là gì? | 1
+COLUMBIA | Tàu con thoi NASA tiếng Anh là gì? | 1
+DISCOVERY | Tàu con thoi NASA tiếng Anh là gì? | 1
+ENDEAVOUR | Tàu con thoi NASA tiếng Anh là gì? | 1
+SPACE SHUTTLE | Tàu con thoi tiếng Anh là gì? | 1
+SPACE EXPLORATION | Khám phá vũ trụ tiếng Anh là gì? | 1
+COLONIZATION | Định cư tiếng Anh là gì? | 1
+SPACE MINING | Khai thác tài nguyên vũ trụ tiếng Anh là gì? | 2
+ASTEROID MINING | Khai thác tiểu hành tinh tiếng Anh là gì? | 2
+MOON BASE | Căn cứ mặt trăng tiếng Anh là gì? | 2
+MARS COLONY | Thuộc địa Sao Hỏa tiếng Anh là gì? | 2
+TERRAFORM | Biến đổi hành tinh tiếng Anh là gì? | 3
+SPACE ELEVATOR | Thang máy vũ trụ tiếng Anh là gì? | 3
+SOLAR SAIL | Buồm năng lượng mặt trời tiếng Anh là gì? | 3
+HIBERNATION | Ngủ đông tiếng Anh là gì? | 2
+LIFE SUPPORT SYSTEM | Hệ thống duy trì sự sống tiếng Anh là gì? | 2
+BIOSPHERE | Sinh quyển tiếng Anh là gì? | 2
+ASTROBIOLOGY | Sinh vật học vũ trụ tiếng Anh là gì? | 3
+SETI | Tìm kiếm trí tuệ ngoài hành tinh tiếng Anh là gì? | 2
+ALIEN LIFE | Sự sống ngoài hành tinh tiếng Anh là gì? | 1
+UFO | Vật thể bay không xác định tiếng Anh là gì? | 1
+SCIENCE FICTION | Khoa học viễn tưởng tiếng Anh là gì? | 1
+SPACE DEBRIS | Rác vũ trụ tiếng Anh là gì? | 2
+SPACE JUNK | Rác không gian tiếng Anh là gì? | 2
+ACCELEROMETER | Gia tốc kế tiếng Anh là gì? | 2
+MAGNETOMETER | Từ kế tiếng Anh là gì? | 2
+REFLECTING TELESCOPE | Kính phản xạ tiếng Anh là gì? | 3
+LIGHT POLLUTION | Ô nhiễm ánh sáng tiếng Anh là gì? | 2
+DARK SKY | Bầu trời tối tiếng Anh là gì? | 2
+NIGHT SKY | Bầu trời đêm tiếng Anh là gì? | 1
+STARGAZING | Ngắm sao tiếng Anh là gì? | 1
+ASTROPHOTOGRAPHY | Nhiếp ảnh thiên văn tiếng Anh là gì? | 2
+POLAR ALIGNMENT | Căn chỉnh cực tiếng Anh là gì? | 2
+APPARENT MAGNITUDE | Độ sáng biểu kiến tiếng Anh là gì? | 2
+ABSOLUTE MAGNITUDE | Độ sáng tuyệt đối tiếng Anh là gì? | 2
+SPECTROSCOPY | Quang phổ học tiếng Anh là gì? | 2
+FUSION | Phản ứng hợp nhân tiếng Anh là gì? | 2
+FISSION | Phản ứng tách nhân tiếng Anh là gì? | 2
+CONVECTION | Đối lưu tiếng Anh là gì? | 2
+PHOTOSPHERE | Lớp sáng tiếng Anh là gì? | 2
+CHROMOSPHERE | Lớp sắc tiếng Anh là gì? | 2
+CORONA | Quanh hàng tiếng Anh là gì? | 2
+PROMINENCE | Lửa ngoài tiếng Anh là gì? | 2
+SOLAR CYCLE | Chu kỳ mặt trời tiếng Anh là gì? | 2
+MAUNDER MINIMUM | Cực tiểu Maunder tiếng Anh là gì? | 3
+LIGHT CURVE | Đường cong sáng tiếng Anh là gì? | 2
+LAGRANGE POINT | Điểm Lagrange tiếng Anh là gì? | 3
+ROCHE LIMIT | Giới hạn Roche tiếng Anh là gì? | 3
+PRECESSION | Tiến động tiếng Anh là gì? | 3
+MASS LOSS | Mất khối lượng tiếng Anh là gì? | 2
+STELLAR WIND | Gió sao tiếng Anh là gì? | 2
+OUTFLOW | Dòng chảy ra tiếng Anh là gì? | 2
+JET | Tia tiếng Anh là gì? | 1 | JETS
+BIPOLAR JET | Tia hai cực tiếng Anh là gì? | 3
+PROTOSTARS | Sao nguyên thủy tiếng Anh là gì? | 2
+BROWN DWARF | Sao nâu tiếng Anh là gì? | 2
+DOUBLE STAR | Ngôi sao đôi tiếng Anh là gì? | 1
+BINARY STAR | Sao nhị phân tiếng Anh là gì? | 2
+VISUAL BINARY | Sao nhị phân trực quan tiếng Anh là gì? | 3
+SPECTROSCOPIC BINARY | Sao nhị phân quang phổ tiếng Anh là gì? | 3
+ECLIPSING BINARY | Sao nhị phân che phủ tiếng Anh là gì? | 3
+SUPER-EDDINGTON | Vượt giới hạn Eddington tiếng Anh là gì? | 3
+X-RAY BINARY | Sao nhị phân tia X tiếng Anh là gì? | 3
+MICROQUASAR | Một hệ sao nhị phân với lỗ đen phát tia X mạnh tiếng Anh là gì? | 3
+NEUTRON STAR BINARY | Sao nhị phân neutron tiếng Anh là gì? | 3
+TOTAL ECLIPSE | Nhật/nguyệt thực toàn phần tiếng Anh là gì? | 2
+PARTIAL ECLIPSE | Nhật/nguyệt thực bán phần tiếng Anh là gì? | 2
+ANNULAR ECLIPSE | Nhật thực vành tiếng Anh là gì? | 2
+LUNAR MONTH | Tháng âm lịch tiếng Anh là gì? | 2
+SOLAR MONTH | Tháng dương lịch tiếng Anh là gì? | 2
+SIDEREAL MONTH | Tháng sao tiếng Anh là gì? | 2
+ANOMALISTIC MONTH | Tháng bất thường tiếng Anh là gì? | 3
+SIDEREAL DAY | Ngày sao tiếng Anh là gì? | 2
+SOLAR DAY | Ngày mặt trời tiếng Anh là gì? | 2
+STELLAR DAY | Ngày thiên thể tiếng Anh là gì? | 2
+TROPICAL YEAR | Năm xích đạo tiếng Anh là gì? | 2
+SIDEREAL YEAR | Năm sao tiếng Anh là gì? | 2
+ANOMALISTIC YEAR | Năm bất thường tiếng Anh là gì? | 3
+DRACONIC YEAR | Năm rồng tiếng Anh là gì? | 3
+LEAP YEAR | Năm nhuận tiếng Anh là gì? | 1
+COMMON YEAR | Năm thường tiếng Anh là gì? | 2
+GREGORIAN CALENDAR | Lịch Gregory tiếng Anh là gì? | 2
+JULIAN CALENDAR | Lịch Julius tiếng Anh là gì? | 2
+SOLAR CALENDAR | Lịch dương tiếng Anh là gì? | 1
+LUNISOLAR CALENDAR | Lịch âm-dương tiếng Anh là gì? | 2
+ANCIENT ASTRONOMER | Nhà thiên văn cổ đại tiếng Anh là gì? | 2
+MODERN ASTRONOMER | Nhà thiên văn hiện đại tiếng Anh là gì? | 2
+THEORETICAL ASTRONOMY | Thiên văn lý thuyết tiếng Anh là gì? | 2
+POSITIONAL ASTRONOMY | Thiên văn vị trí tiếng Anh là gì? | 2
+ASTROMETRY | Đo vị trí sao tiếng Anh là gì? | 2
+DISTANCE MODULUS | Modulus khoảng cách tiếng Anh là gì? | 3
+STANDARD DEVIATIONS | Độ lệch chuẩn tiếng Anh là gì? | 2
+STATISTICAL ASTRONOMY | Thiên văn thống kê tiếng Anh là gì? | 3
+PROBABILISTIC MODELS | Mô hình xác suất tiếng Anh là gì? | 2
+MONTE CARLO METHOD | Phương pháp Monte Carlo tiếng Anh là gì? | 3
+BAYESIAN STATISTICS | Thống kê Bayesian tiếng Anh là gì? | 3
+SAMPLING TECHNIQUES | Kỹ thuật lấy mẫu tiếng Anh là gì? | 2
+OBSERVATIONAL DATA | Dữ liệu quan sát tiếng Anh là gì? | 1
+EMPIRICAL EVIDENCE | Bằng chứng thực nghiệm tiếng Anh là gì? | 2
+HYPOTHESIS TESTING | Kiểm định giả thuyết tiếng Anh là gì? | 2
+PEER REVIEW | Đánh giá bình dân tiếng Anh là gì? | 1
+SCIENTIFIC METHOD | Phương pháp khoa học tiếng Anh là gì? | 1
+REPRODUCIBILITY | Khả năng lặp lại tiếng Anh là gì? | 2
+LUNAR MARIA | Biển mặt trăng tiếng Anh là gì? | 2
+MARE | Biển Mặt Trăng nơi dung nham tiếng Anh là gì? | 2
+CRATER RIM | Mép miệng núi tiếng Anh là gì? | 2
+CENTRAL PEAK | Đỉnh trung tâm tiếng Anh là gì? | 2
+EJECTA | Vật ejectile tiếng Anh là gì? | 2
+RIMWALL | Tường mép tiếng Anh là gì? | 2
+TERRACE | Sườn thềm tiếng Anh là gì? | 2
+QUASAR | Chuẩn tinh (thiên văn) tiếng Anh là gì? | 3
+ASTEROID BELT | Vành đai tiểu hành tinh tiếng Anh là gì? | 3
+ROCKET | Tên lửa (đẩy lên vũ trụ) tiếng Anh là gì? | 1
+ZERO GRAVITY | Trạng thái không trọng lực tiếng Anh là gì? | 2 | WEIGHTLESSNESS
+LAUNCH | Phóng tên lửa hoặc ra mắt sản phẩm tiếng Anh là gì? | 1 | PHÓNG, RA MẮT
+GALAXY | Dải thiên hà khổng lồ chứa hàng tỷ sao tiếng Anh là gì? | 1
+SUPERNOVA | Vụ nổ siêu tân tinh chói sáng tiếng Anh là gì? | 3
+GRAVITY | Lực hấp dẫn kéo vạn vật rơi về phía tâm Trái Đất tiếng Anh là gì? | 1 | TRỌNG LỰC, LỰC HẤP DẪN
+ASTEROID | Tiểu hành tinh bay quanh Mặt Trời tiếng Anh là gì? | 2
+ECLIPSE | Hiện tượng che phủ Mặt Trời hay Mặt Trăng tiếng Anh là gì? | 2
+CONSTELLATION | Chòm sao trên bầu trời đêm tiếng Anh là gì? | 3
+SOLAR SYSTEM | Hệ Mặt Trời gồm 8 hành tinh quay quanh tiếng Anh là gì? | 1 | HỆ MẶT TRỜI
+COMET | Sao chổi có đuôi lấp lánh qua bầu trời tiếng Anh là gì? | 2
+NEBULA | Tinh vân - đám mây bụi khí sinh sao tiếng Anh là gì? | 3
+LIGHTYEAR | Đơn vị đo khoảng cách trong thiên văn tiếng Anh là gì? | 3
+METEORITE | Khối thiên thạch rơi từ không gian tiếng Anh là gì? | 3
+ASTRONOMY | Khoa học nghiên cứu các thiên thể vũ trụ tiếng Anh là gì? | 2
+METEOR | Sao băng lướt nhanh qua bầu trời đêm tiếng Anh là gì? | 1 | SAO BĂNG, METEORITE
+COSMOS | Vũ trụ bao la vô tận tiếng Anh là gì? | 2 | VŨ TRỤ, UNIVERSE
+SUN | Mặt trời tiếng Anh là gì? | 1
+MOON | Mặt trăng tiếng Anh là gì? | 1
+MERCURY | Hành tinh nhỏ nhất và gần Mặt Trời nhất tiếng Anh là gì? | 1
+VENUS | Hành tinh nóng nhất trong Hệ Mặt Trời tiếng Anh là gì? | 1
+MARS | Sao Hỏa hay hành tinh đỏ tiếng Anh là gì? | 1
+JUPITER | Hành tinh lớn nhất trong Hệ Mặt Trời tiếng Anh là gì? | 1
+SATURN | Hành tinh có những vành đai nổi tiếng tiếng Anh là gì? | 1
+URANUS | Hành tinh xanh lam xoay ngược tiếng Anh là gì? | 2
+NEPTUNE | Hành tinh xanh nước biển xa nhất tiếng Anh là gì? | 2
+PLUTO | Hành tinh lùn trước đây tiếng Anh là gì? | 2
+LUNAR | Liên quan đến Mặt Trăng tiếng Anh là gì? | 1
+ECLIPSE PHASE | Giai đoạn Mặt Trăng tối theo thứ tự tiếng Anh là gì? | 2
+FULL MOON | Khi Mặt Trăng sáng tròn như bánh xe tiếng Anh là gì? | 1
+NEW MOON | Khi Mặt Trăng không nhìn thấy được tiếng Anh là gì? | 1
+CRESCENT | Hình lưỡi liềm của Mặt Trăng tiếng Anh là gì? | 2
+CRATER | Hố sâu trên Mặt Trăng hoặc sao tiếng Anh là gì? | 1
+ECLIPSE SHADOW | Bóng tối chắn Mặt Trời hay Mặt Trăng tiếng Anh là gì? | 2
+SOLAR ECLIPSE | Khi Mặt Trăng che Mặt Trời tiếng Anh là gì? | 1 | NHẬT THỰC
+TAURUS | Cung bò tiếng Anh là gì? | 2
+VIRGO | Cung xử nữ tiếng Anh là gì? | 2
+LIBRA | Cung thiên bình tiếng Anh là gì? | 2
+SCORPIO | Cung bò cạp tiếng Anh là gì? | 1
+SAGITTARIUS | Cung nhân mã tiếng Anh là gì? | 2
+CAPRICORN | Cung ma kết tiếng Anh là gì? | 1
+AQUARIUS | Cung bình瓶 tiếng Anh là gì? | 2
+PISCES | Cung song cá tiếng Anh là gì? | 1
+ARIES | Cung chiên tiếng Anh là gì? | 1
+ZODIAC | Bộ 12 cung hoàng đạo tiếng Anh là gì? | 2
+ECLIPSE PATH | Đường đi của bóng tối trên Trái Đất tiếng Anh là gì? | 3
+METEOR SHOWER | Mưa sao băng hàng năm tiếng Anh là gì? | 2 | SAO BĂNG MƯA
+PERSEID | Mưa sao băng tháng 8 hàng năm tiếng Anh là gì? | 2
+GEMINID | Mưa sao băng tháng 12 tiếng Anh là gì? | 2
+LEONID | Mưa sao băng liên quan Orion tiếng Anh là gì? | 3
+NORTHERN LIGHTS | Cực quang ở Bắc Cực tiếng Anh là gì? | 1
+GEOMAGNETIC STORM | Bão từ địa cầu gây cực quang tiếng Anh là gì? | 3
+CORONAL MASS EJECTION | Phun khối khí từ vành nhật tiếng Anh là gì? | 3
+COSMONAUT | Phi hành gia Nga hay Liên Xô tiếng Anh là gì? | 2 | NHÂN VIÊN VŨ TRỤ LIÊN XOÉT
+ISS | Trạm vũ trụ quốc tế tiếng Anh là gì? | 2
+CREW DRAGON | Phiên bản chở người của tàu Dragon tiếng Anh là gì? | 2
+STARSHIP | Tàu vũ trụ tái sử dụng của SpaceX tiếng Anh là gì? | 2
+SATURN V | Tên lửa khổng lồ đưa con người lên Mặt Trăng tiếng Anh là gì? | 3
+SPACESUIT | Bộ quần áo bảo vệ phi hành gia tiếng Anh là gì? | 1
+VISOR | Kính bảo vệ mặt nạ mũ phi hành gia tiếng Anh là gì? | 2
+OXYGEN TANK | Bình chứa khí oxy cho phi hành gia tiếng Anh là gì? | 2
+TETHER | Dây bảo vệ phi hành gia đi bộ ngoài vũ trụ tiếng Anh là gì? | 2
+AIRLOCK | Phòng khí áp giữa tàu vũ trụ tiếng Anh là gì? | 2
+EVA | Hành động đi bộ ngoài vũ trụ tiếng Anh là gì? | 1
+MICROGRAVITY | Trạng thái không trọng lượng trong vũ trụ tiếng Anh là gì? | 2
+WEIGHTLESSNESS | Cảm giác không trọng lượng tiếng Anh là gì? | 1
+BIOLOGICAL | Liên quan đến sự sống tiếng Anh là gì? | 1
+CRYSTALLIZATION | Quá trình tạo tinh thể trên ISS tiếng Anh là gì? | 3
+PROTEIN CRYSTAL | Tinh thể protein lớn tạo được ngoài vũ trụ tiếng Anh là gì? | 3
+CARDIOVASCULAR | Liên quan tim mạch tiếng Anh là gì? | 2
+BONE LOSS | Tình trạng mất xương do không trọng lực tiếng Anh là gì? | 2
+MUSCLE ATROPHY | Tình trạng mất cơ tiếng Anh là gì? | 2
+REPRODUCTION | Quá trình sinh sản tiếng Anh là gì? | 1
+VAN ALLEN BELT | Vành đai từ bảo vệ Trái Đất tiếng Anh là gì? | 3
+EXTRATERRESTRIAL | Sinh vật từ ngoài Trái Đất tiếng Anh là gì? | 2 | E.T, NGOÀI TRÁI ĐẤT
+FLYING SAUCER | Đĩa bay ngoài hành tinh tiếng Anh là gì? | 1
+ABDUCTION | Sự bắt cóc bởi người ngoài hành tinh tiếng Anh là gì? | 2
+CONTACT | Sự tiếp xúc với sinh vật ngoài hành tinh tiếng Anh là gì? | 1
+STAR TREK | Bộ phim viễn tưởng nổi tiếng tiếng Anh là gì? | 2
+STAR WARS | Bộ phim khoa học viễn tưởng nổi tiếng tiếng Anh là gì? | 2 | CHIẾN TRANH SAO
+ALIEN INVASION | Xâm lăng của người ngoài hành tinh tiếng Anh là gì? | 2
+EVENT HORIZON | Ranh giới không thoát khỏi lỗ đen tiếng Anh là gì? | 3
+WHITE HOLE | Hố trắng phát ra năng lượng tiếng Anh là gì? | 3
+LUMINOSITY | Độ sáng thực tế của sao tiếng Anh là gì? | 2
+SPECTRAL CLASS | Phân loại sao theo quang phổ tiếng Anh là gì? | 2
+HERTZSPRUNG-RUSSELL | Biểu đồ so sánh sao tiếng Anh là gì? | 3
+TRIPLE STAR | Ba sao quay quanh nhau tiếng Anh là gì? | 2
+VARIABLE STAR | Sao sáng tối không ổn định tiếng Anh là gì? | 2
+PLANETARY MASS | Khối lượng so sánh với hành tinh tiếng Anh là gì? | 2
+TRANSIT METHOD | Phương pháp phát hiện hành tinh tiếng Anh là gì? | 3
+TIDAL LOCKING | Hiện tượng một mặt luôn hướng sao tiếng Anh là gì? | 3
+RESONANCE | Hiệu ứng cộng hưởng quỹ đạo tiếng Anh là gì? | 3
+SATELLITE MOON | Vệ tinh tự nhiên quay sao tiếng Anh là gì? | 1
+IO | Vệ tinh Sao Mộc phun lửa tiếng Anh là gì? | 2
+EUROPA | Vệ tinh Sao Mộc có đại dương tiếng Anh là gì? | 2
+GANYMEDE | Vệ tinh lớn nhất Sao Mộc tiếng Anh là gì? | 2
+CALLISTO | Vệ tinh Sao Mộc nhiều miệng núi tiếng Anh là gì? | 2
+TITAN | Vệ tinh Sao Thổ với khí quyển tiếng Anh là gì? | 2
+ENCELADUS | Vệ tinh Sao Thổ phun nước tiếng Anh là gì? | 2
+MIMAS | Vệ tinh Sao Thổ có hố khồng lồ tiếng Anh là gì? | 2
+PHOBOS | Vệ tinh Sao Hỏa lớn tiếng Anh là gì? | 2
+DEIMOS | Vệ tinh Sao Hỏa nhỏ tiếng Anh là gì? | 2
+RING SYSTEM | Hệ thống vành quay sao tiếng Anh là gì? | 2
+RING PARTICLE | Hạt bụi tạo nên vành sao tiếng Anh là gì? | 2
+CASSINI DIVISION | Khoảng trống trong vành tiếng Anh là gì? | 3
+SHEPHERD MOON | Vệ tinh định hình vành sao tiếng Anh là gì? | 3
+GREAT RED SPOT | Bão lớn đỏ trên Sao Mộc tiếng Anh là gì? | 2
+OORT CLOUD | Đám mây ngoài cùng Hệ Mặt Trời tiếng Anh là gì? | 3
+KUIPER BELT | Vành Kuiper chứa sao chổi tiếng Anh là gì? | 2
+IMPACT CRATER | Hố va chạm từ thiên thạch tiếng Anh là gì? | 2
+EXTINCTION EVENT | Sự tuyệt chủng do thiên thạch tiếng Anh là gì? | 2
+MOON LANDING | Cuộc hạ cánh lên Mặt Trăng tiếng Anh là gì? | 1
+FOOTPRINT | Dấu chân phi hành gia trên Mặt Trăng tiếng Anh là gì? | 1
+LUNAR SOIL | Đất Mặt Trăng tiếng Anh là gì? | 1
+REGOLITH | Tầng đất bề mặt hành tinh tiếng Anh là gì? | 2
+LAVA TUBE | Hầm dung nham trên Mặt Trăng tiếng Anh là gì? | 2
+BASALT | Đá tạo từ dung nham tiếng Anh là gì? | 2
+HIGHLANDS | Vùng cao trên Mặt Trăng tiếng Anh là gì? | 2
+REFRACTOR | Kính thiên văn dùng thấu kính tiếng Anh là gì? | 2
+REFLECTOR | Kính thiên văn dùng gương tiếng Anh là gì? | 2
+EYEPIECE | Thấu kính nhìn qua kính tiếng Anh là gì? | 2
+REFRACTING | Thuộc tính kính khúc xạ tiếng Anh là gì? | 2
+REFLECTING | Thuộc tính kính phản xạ tiếng Anh là gì? | 2
+FOCAL LENGTH | Tiêu cự của kính thiên văn tiếng Anh là gì? | 2
+MAGNIFICATION | Độ phóng đại kính thiên văn tiếng Anh là gì? | 2
+APERTURE | Đường kính khẩu độ kính tiếng Anh là gì? | 2
+FIELD OF VIEW | Góc nhìn qua kính thiên văn tiếng Anh là gì? | 2
+OBSERVATION | Quan sát thiên thể bằng kính tiếng Anh là gì? | 1
+ASTRONOMY CLUB | Câu lạc bộ yêu thích thiên văn tiếng Anh là gì? | 2
+PLANETARIUM | Nhà chiếu film về hành tinh tiếng Anh là gì? | 1
+HUBBLE | Kính vũ trụ orbit được phóng năm 1990 tiếng Anh là gì? | 2
+JAMES WEBB | Kính vũ trụ hiện đại nhất quan sát hồng ngoại tiếng Anh là gì? | 2
+SPITZER | Kính vũ trụ quan sát tia hồng ngoại tiếng Anh là gì? | 3
+KEPLER | Kính vũ trụ chuyên tìm hành tinh xa tiếng Anh là gì? | 2
+CHANDRA | Kính vũ trụ chuyên quan sát tia X tiếng Anh là gì? | 3
+FERMI | Kính vũ trụ quan sát tia gamma từ không gian tiếng Anh là gì? | 3
+QUASAR DISCOVERY | Phát hiện quasar là lịch sử tiếng Anh là gì? | 3
+DRAKE EQUATION | Phương trình ước tính sinh vật tiếng Anh là gì? | 3
+BREAKTHROUGH LISTEN | Dự án tìm tín hiệu ngoài hành tinh tiếng Anh là gì? | 3
+ARECIBO MESSAGE | Thông điệp gửi không gian năm 1974 tiếng Anh là gì? | 3
+COSMIC MICROWAVE | Bức xạ nền vũ trụ tiếng Anh là gì? | 3
+DARK ENERGY | Năng lượng tối đẩy vũ trụ tiếng Anh là gì? | 2
+EXPANSION | Sự giãn nở vũ trụ tiếng Anh là gì? | 1
+UNIVERSE | Vũ trụ bao la vô tận tiếng Anh là gì? | 1 | TOÀN VŨ TRỤ
+INFINITE | Không có giới hạn tiếng Anh là gì? | 1
+MULTIVERSSE | Nhiều vũ trụ song song tiếng Anh là gì? | 3 | ĐA VŨ TRỤ
+RELATIVITY | Lý thuyết tương đối của Einstein tiếng Anh là gì? | 3
+GRAVITY WAVE | Sóng hấp dẫn từ đối tượng tiếng Anh là gì? | 3
+EINSTEIN | Nhà khoa học thiên tài tiếng Anh là gì? | 1
+COSMIC | Liên quan đến vũ trụ bao la tiếng Anh là gì? | 1
+DISTANT | Xa xôi trong không gian tiếng Anh là gì? | 1
+VAST | Rộng lớn khổng lồ tiếng Anh là gì? | 1
+PLANETARY | Liên quan hành tinh tiếng Anh là gì? | 1
+STELLAR | Liên quan đến sao tiếng Anh là gì? | 2
+ASTRAL | Liên quan đến sao tiếng Anh là gì? | 2
+CELESTIAL | Thuộc thiên đàng hay bầu trời tiếng Anh là gì? | 2
+TERRESTRIAL | Thuộc về Trái Đất tiếng Anh là gì? | 2
+GALACTIC | Liên quan tới thiên hà tiếng Anh là gì? | 2
+INTERSTELLAR SPACE | Không gian giữa các sao tiếng Anh là gì? | 2
+VOID | Khoảng trống khổng lồ vũ trụ tiếng Anh là gì? | 3
+FILAMENT | Sợi vật chất nối các thiên hà tiếng Anh là gì? | 3
+CLUSTER | Đám mây thiên hà tiếng Anh là gì? | 2
+SUPERCLUSTER | Cụm siêu thiên hà tiếng Anh là gì? | 3
+PROTOSTAR | Sao sơ sinh chưa phát sáng tiếng Anh là gì? | 2
+STELLAR DEATH | Sự chết của sao tiếng Anh là gì? | 1
+OUTBURST | Sự phun trào năng lượng sao tiếng Anh là gì? | 2
+ERUPTION | Sự bùng phát mạnh tiếng Anh là gì? | 1
+SUNSPOT | Vết đen trên Mặt Trời tiếng Anh là gì? | 1
+LUNAR PHASE | Giai đoạn sáng tối Mặt Trăng tiếng Anh là gì? | 1
+LUNAR YEAR | Năm âm lịch tiếng Anh là gì? | 1
+SELENOLOGY | Khoa học nghiên cứu Mặt Trăng tiếng Anh là gì? | 3
+IMPACT BASIN | Lõm lớn từ va chạm tiếng Anh là gì? | 2
+LAVA FLOW | Dòng dung nham từ núi tiếng Anh là gì? | 1
+TERRAIN | Địa hình bề mặt tiếng Anh là gì? | 1
+DUST STORM | Bão bụi trên sao Hỏa tiếng Anh là gì? | 1
+POLAR CAP | Bắc/Nam Cực lạnh trên sao tiếng Anh là gì? | 1
+ICE DEPOSIT | Tích tụ băng dưới bề mặt tiếng Anh là gì? | 2
+SUBSURFACE | Dưới bề mặt hành tinh tiếng Anh là gì? | 2
+AURORA BOREALIS | Cực quang Bắc Bắc Cực tiếng Anh là gì? | 2
+AURORA AUSTRALIS | Cực quang ở Nam Cực tiếng Anh là gì? | 2
+SOLAR ACTIVITY | Hoạt động Mặt Trời tiếng Anh là gì? | 2
+SOLAR FLARE | Chớp sáng Mặt Trời mạnh tiếng Anh là gì? | 2
+CORONAL HOLE | Lỗ trong vành Mặt Trời tiếng Anh là gì? | 3
+RADIATION BELT | Vành bức xạ tiếng Anh là gì? | 2
+RADIO WAVE | Sóng vô tuyến tiếng Anh là gì? | 1
+FREQUENCY | Tần số sóng tiếng Anh là gì? | 2
+SPEED OF LIGHT | Vận tốc ánh sáng tiếng Anh là gì? | 2
+MASS | Khối lượng vật thể tiếng Anh là gì? | 1
+FORCE | Lực vật lý tiếng Anh là gì? | 1
+PRESSURE ALTITUDE | Cao độ tại vị trí tiếng Anh là gì? | 2
+HELIUM | Heli khí nhẹ thứ 2 tiếng Anh là gì? | 1
+ORBIT DECAY | Sự giảm quỹ đạo vệ tinh tiếng Anh là gì? | 2
+LUNAR BASES | Các căn cứ trên Mặt Trăng tiếng Anh là gì? | 2
+MOON CITY | Thành phố sinh sống Mặt Trăng tiếng Anh là gì? | 2
+TERRAFORMING | Biến đổi hành tinh thành Trái Đất tiếng Anh là gì? | 3
+HABITAT MODULE | Khoang sinh sống trong tàu vũ trụ tiếng Anh là gì? | 2
+LIFE SUPPORT | Hệ thống hỗ trợ sự sống tiếng Anh là gì? | 2
+WATER RECYCLING | Tái chế nước sạch trên tàu tiếng Anh là gì? | 2
+AIR PURIFICATION | Lọc sạch không khí trên tàu tiếng Anh là gì? | 2
+WASTE MANAGEMENT | Quản lý chất thải tiếng Anh là gì? | 1
+ISOLATION CHAMBER | Phòng cách ly khí áp tiếng Anh là gì? | 2
+PRESSURE SUIT | Bộ quần áo chịu áp lực tiếng Anh là gì? | 2
+THERMAL PROTECTION | Bảo vệ nhiệt khi vào khí quyển tiếng Anh là gì? | 2
+HEAT SHIELD | Khiên chống nóng tàu vũ trụ tiếng Anh là gì? | 2
+LANDING ZONE | Khu vực hạ cánh tiếng Anh là gì? | 1
+SOFT LANDING | Hạ cánh nhẹ nhàng tiếng Anh là gì? | 1
+HARD LANDING | Hạ cánh mạnh va chạm tiếng Anh là gì? | 1
+SAMPLE RETURN | Mang mẫu vật về Trái Đất tiếng Anh là gì? | 2
+FLYBY | Bay qua hành tinh không quay tiếng Anh là gì? | 2
+IMPACT MISSION | Sứ mệnh va chạm hành tinh tiếng Anh là gì? | 2
+OBSERVATION DECK | Tầng quan sát trên tàu vũ trụ tiếng Anh là gì? | 2
+CONTROL ROOM | Phòng điều khiển tàu vũ trụ tiếng Anh là gì? | 1
+COMMAND CENTER | Trung tâm chỉ huy tiếng Anh là gì? | 1
+MISSION CONTROL | Trung tâm kiểm soát sứ mệnh tiếng Anh là gì? | 1
+MODULE | Mô-đun riêng lẻ của tàu tiếng Anh là gì? | 1
+BOOSTER | Tên lửa tăng tốc tiếng Anh là gì? | 2
+FIRST STAGE | Tầng thứ nhất tên lửa tiếng Anh là gì? | 1
+SECOND STAGE | Tầng thứ hai tên lửa tiếng Anh là gì? | 1
+THRUST | Lực đẩy động cơ tiếng Anh là gì? | 1
+OXIDIZER | Chất oxy hóa tên lửa tiếng Anh là gì? | 2
+IGNITION | Khởi động cháy tiếng Anh là gì? | 1
+LIFTOFF | Cất cánh tàu vũ trụ tiếng Anh là gì? | 1
+ASCENT | Quá trình bay lên tiếng Anh là gì? | 1
+DESCENT | Quá trình bay xuống tiếng Anh là gì? | 1
+CIRCULAR ORBIT | Quỹ đạo tròn hoàn hảo tiếng Anh là gì? | 2
+ELLIPTICAL ORBIT | Quỹ đạo hình bầu dục tiếng Anh là gì? | 2
+GEOSYNCHRONOUS | Quỹ đạo đồng bộ Trái Đất tiếng Anh là gì? | 3
+GEOSTATIONARY | Quỹ đạo tĩnh địa cầu tiếng Anh là gì? | 3
+SWING BY | Lợi dụng trọng lực hành tinh tiếng Anh là gì? | 2
+GRAVITY ASSIST | Hỗ trợ lực hấp dẫn tiếng Anh là gì? | 2
+LAUNCH WINDOW | Cửa sổ thời gian phóng tên lửa tiếng Anh là gì? | 2
+COUNTDOWN | Đếm ngược trước phóng tiếng Anh là gì? | 1
+MISSION DURATION | Thời gian sứ mệnh tiếng Anh là gì? | 2
+REENTRY VEHICLE | Tàu quay về khí quyển tiếng Anh là gì? | 2
+SPACE STATION MODULE | Mô-đun trạm vũ trụ tiếng Anh là gì? | 2
+REMOTE SENSING | Cảm biến từ xa quan sát Trái Đất tiếng Anh là gì? | 3
+SATELLITE IMAGE | Ảnh vệ tinh chụp Trái Đất tiếng Anh là gì? | 2
+DEEP SPACE NETWORK | Mạng lưới giao tiếp tàu vũ trụ tiếng Anh là gì? | 2
+COSMIC EXPANSION | Sự mở rộng vũ trụ hiện tại tiếng Anh là gì? | 2
+PANSPERMIA | Lý thuyết sự sống từ vũ trụ tiếng Anh là gì? | 3
+SOLAR PROMINENCE | Vầng phun từ Mặt Trời tiếng Anh là gì? | 2
+MOON EXPEDITION | Chuyến thám hiểm Mặt Trăng tiếng Anh là gì? | 1

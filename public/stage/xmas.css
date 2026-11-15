@@ -47,3 +47,21 @@ html.lite #snow i { text-shadow: none; }
 
 /* chữ to giữa màn (đổi bộ đề…): viền đỏ tuyết */
 #stage.xmas #banner { text-shadow: 0 0 18px rgba(230, 57, 70, 0.9), 0 4px 0 rgba(0, 0, 0, 0.5); }
+
+/* 🦌🦌🛷🎅 có người tặng quà: xe tuần lộc bay ngang ngay trên dải thẻ quà / chào mừng (stage-hud.js sleigh), thả quà rơi xuống */
+.sleigh { position: absolute; left: 0; top: 1046px; z-index: 6; display: flex; align-items: flex-end; pointer-events: none;
+  animation: sleigh-fly 5.2s linear forwards; filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.55)); }
+.sleigh .deer { font-size: 56px; line-height: 1; display: inline-block; animation: sleigh-gallop 0.45s ease-in-out infinite alternate; }
+.sleigh .deer + .deer { animation-delay: 0.22s; margin-left: 4px; }
+.sleigh .reins { width: 34px; height: 3px; margin: 0 2px 26px; border-radius: 2px; background: linear-gradient(90deg, #ffd36b, #e63946); }
+.sleigh .sled { position: relative; font-size: 66px; line-height: 1; animation: sleigh-bob 0.9s ease-in-out infinite alternate; }
+.sleigh .santa { position: absolute; left: 12px; top: -30px; font-size: 46px; }
+.sleigh .trail { font-size: 34px; margin-left: 4px; animation: sleigh-twinkle 0.5s steps(2) infinite; }
+@keyframes sleigh-fly { from { transform: translate(1180px, 18px); } 50% { transform: translate(330px, -16px); } to { transform: translate(-520px, 12px); } }
+@keyframes sleigh-gallop { to { transform: translateY(-8px) rotate(-8deg); } }
+@keyframes sleigh-bob { to { transform: translateY(-5px) rotate(3deg); } }
+@keyframes sleigh-twinkle { 50% { opacity: 0.3; transform: scale(0.8); } }
+.sleigh-gift { position: absolute; top: 1100px; z-index: 5; font-size: 34px; pointer-events: none;
+  animation: sleigh-drop 1.5s cubic-bezier(0.45, 0, 0.9, 0.6) forwards; }
+@keyframes sleigh-drop { 0% { transform: translateY(0) rotate(0); opacity: 0; } 12% { opacity: 1; }
+  100% { transform: translate(var(--drift, 0px), 150px) rotate(var(--spin, 200deg)); opacity: 0; } }

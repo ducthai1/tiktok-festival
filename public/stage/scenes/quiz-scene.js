@@ -546,13 +546,15 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         if (fx.speech) audio.speak(fx.speech, 'story');
       } else if (fx.kind === 'quizGift') {
         audio.play('magic');
+        hud.sleigh(); // 🎄 Giáng sinh: xe tuần lộc bay ngang thả quà
         hud.comboToast(`${fx.userId}|${fx.giftName}`, fx.count, (n) => `🎁 ${fx.giftName} ×${n}${fx.hint ? ` → ${fx.hint} cho cả phòng` : ' · cảm ơn bạn!'}`,
           { title: fx.nickname, gold: fx.tier >= 3, image: fx.giftPicture, ms: 3500 });
         particles.burst({ position: new THREE.Vector3(0, 0, 3), box: new THREE.Vector3(3, 3, 1), count: 80 + fx.tier * 40,
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
       } else if (fx.kind === 'quizDeck') {
         audio.play('magic');
-        const isLevel = fx.to === 'easy' || fx.to === 'hard';
+        hud.sleigh();
+        const isLevel = fx.to === 'easy' || fx.to === 'normal' || fx.to === 'hard';
         // tab tiếng Anh: quà kết thúc luôn bộ đang chạy, câu mới ra ngay (switchNow)
         // fx.after: đang Luyện nghe chưa đủ 20 câu → đổi sau N câu nghe nữa
         const count = fx.after ? ` · đổi sau ${fx.after} câu Luyện nghe nữa`

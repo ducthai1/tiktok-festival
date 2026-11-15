@@ -633,7 +633,6 @@ INTRUDE | Xâm nhập đường đột không mời mà đến tiếng Anh là g
 INVADE | Xâm lăng xâm chiếm lãnh thổ tiếng Anh là gì? | 2 | XÂM LĂNG, XÂM CHIẾM
 INVOKE | Cầu viện viện dẫn điều luật tiếng Anh là gì? | 3 | VIỆN DẪN, CẦU NGUYỆN
 LAMENT | Than thở khóc thương tiếc nuối tiếng Anh là gì? | 3 | THAN THỞ, TIẾC THƯƠNG
-LAUNCH | Phóng tên lửa hoặc ra mắt sản phẩm tiếng Anh là gì? | 1 | PHÓNG, RA MẮT
 LIBERATE | Giải phóng trả tự do cho tù nhân tiếng Anh là gì? | 2 | GIẢI PHÓNG
 LINGER | Nấn ná dùng dằng chưa muốn rời đi tiếng Anh là gì? | 3 | NẤN NÁ, DÙNG DẰNG
 MAGNIFY | Phóng đại tăng kích thước hình ảnh tiếng Anh là gì? | 2 | PHÓNG ĐẠI, PHÓNG TO

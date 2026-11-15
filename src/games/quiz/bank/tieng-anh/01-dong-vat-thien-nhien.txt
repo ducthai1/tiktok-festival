@@ -133,7 +133,6 @@ ROCK | Hòn đá, tảng đá tiếng Anh là gì? | 1 | STONE, ROCKS, STONES
 SAND | Cát tiếng Anh là gì? | 1
 SOIL | Đất trồng cây tiếng Anh là gì? | 2 | DIRT, EARTH
 MUD | Bùn tiếng Anh là gì? | 2
-EARTH | Trái Đất tiếng Anh là gì? | 1 | THE EARTH, PLANET EARTH
 WAVE | Sóng biển (con sóng) tiếng Anh là gì? | 1 | WAVES
 AIR | Không khí tiếng Anh là gì? | 1
 FIRE | Lửa (ngọn lửa) tiếng Anh là gì? | 1 | FLAME, FLAMES

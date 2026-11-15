@@ -130,9 +130,6 @@ BIKE | Xe đạp tiếng Anh là gì? | 1 | BICYCLE
 TRAIN | Tàu hỏa tiếng Anh là gì? | 2
 PLANE | Máy bay tiếng Anh là gì? | 1 | AIRPLANE, AEROPLANE
 BOAT | Con thuyền tiếng Anh là gì? | 1 | SHIP
-SUN | Mặt trời tiếng Anh là gì? | 1
-MOON | Mặt trăng tiếng Anh là gì? | 1
-STAR | Ngôi sao tiếng Anh là gì? | 1
 SKY | Bầu trời tiếng Anh là gì? | 1
 RAIN | Cơn mưa tiếng Anh là gì? | 1
 TREE | Cái cây tiếng Anh là gì? | 1

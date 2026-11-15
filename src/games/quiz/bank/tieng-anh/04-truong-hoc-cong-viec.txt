@@ -187,7 +187,6 @@ ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3 | KHỞI NGHIỆP
 COMPENSATION | Tiền đền bù / thù lao | 3 | THÙ LAO
 WORKLOAD | Khối lượng công việc | 2 | KHỐI LƯỢNG CÔNG VIỆC
 
-ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ tiếng Anh là gì? | 1 | PHI HÀNH GIA, COSMONAUT
 DETECTIVE | Thám tử tư chuyên nghiệp điều tra manh mối phá án tiếng Anh là gì? | 2 | THÁM TỬ, INVESTIGATOR
 DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán tiếng Anh là gì? | 3 | NHÀ NGOẠI GIAO
 ARCHAEOLOGIST | Nhà khảo cổ học khai quật lăng mộ và di tích cổ tiếng Anh là gì? | 3 | NHÀ KHẢO CỔ

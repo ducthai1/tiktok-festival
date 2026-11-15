@@ -48,6 +48,7 @@ export function createHud() {
   let cardDone = () => {};
   const combos = new Map(); // key → { node, text, total, timer }
   let bannerTimer = 0;
+  let sleighUntil = 0;
   let lastBoardKey = '';
   let boardScores = new Map();
 
@@ -199,6 +200,37 @@ export function createHud() {
      * Thẻ quà đổi bộ đề (đẹp theo bậc giá món quà). card: { nickname, avatar, giftName, giftPicture, coins, count, icon, label, line }.
      * Cùng người + cùng chế độ tặng liên tục (combo) → cộng ×N trên thẻ đang hiện, không bật thẻ mới.
      */
+    /**
+     * 🎄 Giáng sinh (#stage.xmas): có người tặng quà → xe tuần lộc chở ông già Noel bay ngang ngay trên dải thẻ quà / chào mừng,
+     * vừa bay vừa thả quà rơi xuống. Chỉ CSS transform (xmas.css) — OBS máy yếu vẫn mượt. Đang bay thì quà sau không gọi thêm xe.
+     */
+    sleigh() {
+      const now = performance.now();
+      if (!$('stage').classList.contains('xmas') || now < sleighUntil) return;
+      const FLY_MS = 5200;
+      sleighUntil = now + FLY_MS;
+      const ride = el('div', 'sleigh');
+      const sled = el('span', 'sled', '🛷');
+      sled.append(el('span', 'santa', '🎅'));
+      ride.append(el('span', 'deer', '🦌'), el('span', 'deer', '🦌'), el('span', 'reins'), sled, el('span', 'trail', '✨'));
+      $('hud').append(ride);
+      const GIFTS = ['🎁', '🎁', '🎁', '🍬', '⭐', '🎀', '🍭'];
+      let n = 0;
+      const drop = setInterval(() => {
+        const p = (performance.now() - now) / FLY_MS;
+        if (p > 0.9) return;
+        const g = el('span', 'sleigh-gift', GIFTS[(n += 1) % GIFTS.length]);
+        g.style.left = `${Math.round(1180 - 1700 * p + 190)}px`; // dưới xe trượt (xe bay đều từ phải sang trái, xmas.css)
+        g.style.setProperty('--drift', `${(n % 3) * 18 - 18}px`);
+        g.style.setProperty('--spin', `${n % 2 ? 220 : -200}deg`);
+        $('hud').append(g);
+        setTimeout(() => g.remove(), 1600);
+      }, 230);
+      setTimeout(() => {
+        clearInterval(drop);
+        ride.remove();
+      }, FLY_MS);
+    },
     giftCard(card) {
       const key = `${card.nickname}|${card.label}`;
       if (cardShowing?.key === key) {
