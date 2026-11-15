@@ -283,10 +283,9 @@ function applySettings(s) {
   $('set-music').checked = s.music !== false;
   $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
   // 🎄 chủ đề Giáng sinh: một nút đổi cả màn hình live + nhạc + trang điều khiển
-  const xmas = s.season === 'christmas';
-  document.body.classList.toggle('xmas', xmas);
-  $('season-xmas').setAttribute('aria-pressed', String(xmas));
-  $('season-xmas').textContent = xmas ? '🎄 Giáng sinh: BẬT' : '🎄 Giáng sinh: TẮT';
+  document.body.classList.toggle('xmas', s.season === 'christmas');
+  document.body.classList.toggle('teacher', s.season === 'teacher');
+  for (const b of document.querySelectorAll('#season-pick button')) b.setAttribute('aria-pressed', String(b.dataset.season === (s.season || '')));
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
@@ -567,10 +566,10 @@ $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
 });
-$('season-xmas').addEventListener('click', () => {
-  const on = $('season-xmas').getAttribute('aria-pressed') === 'true';
-  run({ t: 'settings', season: on ? '' : 'christmas' }, on ? 'Đã tắt chủ đề Giáng sinh' : '🎄 Đã bật chủ đề Giáng sinh — màn hình live + nhạc nền');
-});
+// chủ đề mùa (một chỗ chọn ở thanh trên): đổi cả màn hình live + nhạc nền + trang này
+for (const b of document.querySelectorAll('#season-pick button')) {
+  b.addEventListener('click', () => run({ t: 'settings', season: b.dataset.season }, `Chủ đề: ${b.textContent}`));
+}
 $('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoice: e.target.value }, 'Đã đổi giọng đọc'));
 // Nghe thử giọng ngay trên trang này (máy chủ đọc bằng VieNeu; lần đầu mỗi câu mất 1–3 giây)
 $('tts-preview').addEventListener('click', async () => {

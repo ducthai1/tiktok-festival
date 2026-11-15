@@ -108,7 +108,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       const patch = {};
       for (const key of ['tts', 'ttsWelcome', 'ttsEnglish', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
       if (isVoiceSetting(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice; // tên giọng hoặc "random"
-      if (msg.season === '' || msg.season === 'christmas') patch.season = msg.season; // 🎄 chủ đề mùa
+      if (['', 'christmas', 'teacher'].includes(msg.season)) patch.season = msg.season; // chủ đề mùa: 🎄 Giáng sinh / 💐 20/11
       for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) patch[key] = Math.max(0, Math.min(1, msg[key]));
       if (Number.isFinite(msg.welcomeTextAbove)) {
         patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));

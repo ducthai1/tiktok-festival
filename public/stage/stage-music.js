@@ -24,11 +24,17 @@ const XMAS_SONGS = [
     [76, 0.5], [78, 0.5], [79, 1], [81, 0.5], [83, 0.5], [84, 1], [83, 1], [81, 1], [79, 2], [79, 1.5], [77, 0.5], [76, 1], [74, 1],
     [72, 1], [74, 1], [76, 1], [72, 1], [81, 0.5], [81, 0.5], [81, 0.5], [81, 0.5], [79, 1.5], [77, 0.5], [76, 1], [74, 1], [72, 4]] }
 ];
+// 💐 20/11: giai điệu hộp nhạc nhẹ nhàng TỰ SOẠN (ngũ cung, nhịp 3/4) — không phải bài hát của ai
+const TEACHER_SONGS = [
+  { root: 48, notes: [[76, 1], [79, 1], [81, 1], [79, 2], [76, 1], [74, 1], [76, 1], [79, 1], [72, 3], [76, 1], [79, 1], [84, 1], [81, 2], [79, 1],
+    [76, 1], [74, 1], [72, 1], [74, 3], [79, 1], [81, 1], [84, 1], [86, 2], [84, 1], [81, 1], [79, 1], [76, 1], [79, 3],
+    [81, 1], [79, 1], [76, 1], [74, 2], [76, 1], [79, 1], [76, 1], [74, 1], [72, 3]] }
+];
 const midiHz = (m) => 440 * 2 ** ((m - 69) / 12);
 // dàn thành từng ô 1/16 phách: ô nào bắt đầu nốt nào, bài nào (để bass theo đúng giọng), nghỉ 1 ô nhịp giữa các bài
-const XMAS_STEPS = (() => {
+const buildSteps = (songs) => {
   const steps = [];
-  for (const song of XMAS_SONGS) {
+  for (const song of songs) {
     for (const [note, beats] of song.notes) {
       const len = Math.round(beats * 4);
       steps.push({ note, len, root: song.root });
@@ -37,7 +43,9 @@ const XMAS_STEPS = (() => {
     for (let i = 0; i < 16; i += 1) steps.push({ root: song.root });
   }
   return steps;
-})();
+};
+const XMAS_STEPS = buildSteps(XMAS_SONGS);
+const TEACHER_STEPS = buildSteps(TEACHER_SONGS);
 
 export function createMusic(ctx, out) {
   const s = createSynth(ctx, out);
@@ -107,6 +115,19 @@ export function createMusic(ctx, out) {
         if (k === 0) s.tone(midiHz(step.root), { type: 'triangle', decay: 0.5, gain: 0.09, lowpass: 600, delay: d }); // bass giọng của bài
         if (k === 4) s.tone(midiHz(step.root + 7), { type: 'triangle', decay: 0.4, gain: 0.06, lowpass: 600, delay: d });
         if (i % 2 === 0) s.noise({ decay: 0.05, gain: k % 4 === 2 ? 0.05 : 0.02, type: 'highpass', freq: 8500, delay: d }); // lục lạc
+      }
+    },
+    teacher: {
+      bpm: 92,
+      play(i, time) {
+        const d = at(time);
+        const step = TEACHER_STEPS[i % TEACHER_STEPS.length];
+        if (step.note) {
+          s.bell(midiHz(step.note), { gain: 0.05, length: Math.min(2.6, 0.5 + step.len * 0.14), delay: d }); // hộp nhạc
+          s.tone(midiHz(step.note - 12), { type: 'triangle', decay: 0.3, gain: 0.015, delay: d });
+        }
+        const k = i % 12; // 3/4: mỗi ô nhịp 12 ô 1/16
+        if (k === 0) [0, 7, 16].forEach((n) => s.tone(midiHz(step.root + n), { type: 'triangle', decay: 1.1, gain: 0.04, lowpass: 900, delay: d }));
       }
     },
     temple: {

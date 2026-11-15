@@ -52,7 +52,7 @@ function frontendVersion(dir) {
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], ttsEnglish: true, legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000,
-  season: '' // 'christmas' = 🎄 chủ đề Giáng sinh (màn hình + nhạc + trang điều khiển), một nút ở trang điều khiển
+  season: '' // chủ đề mùa: 'christmas' 🎄 Giáng sinh · 'teacher' 💐 20/11 (màn hình + nhạc + trang điều khiển), chọn ở thanh trên trang điều khiển
 };
 
 function loadGiftCatalog(file) {

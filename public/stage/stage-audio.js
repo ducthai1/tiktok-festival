@@ -69,7 +69,7 @@ export function createStageAudio() {
       tracks.stop();
       return;
     }
-    const name = opts.season === 'christmas' ? 'xmas' : theme; // 🎄 Giáng sinh: mọi game phát nhạc Giáng sinh
+    const name = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme; // chủ đề mùa: mọi game phát nhạc của mùa đó
     tracks.available(name).then((has) => {
       if (!wanted() || theme !== name) return;
       if (has) {

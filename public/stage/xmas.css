@@ -25,10 +25,41 @@ html.lite #snow i { text-shadow: none; }
 @keyframes xmas-blink { 50% { filter: brightness(1.8) saturate(1.3); } }
 #stage.xmas .quiz-cat, #stage.xmas .quiz-head .pill { border-color: var(--xmas-green); }
 
-/* bảng quà, ba bảng, khung bình luận: xanh thông viền đỏ, mép trên phủ "tuyết" */
+/* bảng quà, ba bảng, khung bình luận: VIỀN KẸO GẬY đỏ – trắng (nền xanh thông), góc trái cây thông nhỏ, góc phải quả châu treo */
+#stage.xmas {
+  --x-tree: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><text y='34' font-size='34'>🎄</text></svg>");
+  --x-bell: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><text y='34' font-size='34'>🔔</text></svg>");
+  --x-candy: repeating-linear-gradient(135deg, #e63946 0 9px, #fff 9px 18px);
+  --x-fill: linear-gradient(180deg, rgba(16, 58, 38, 0.93), rgba(8, 22, 16, 0.92));
+  --x-ball-red: radial-gradient(circle at 38% 34%, #fff 0 2px, #ff6b6b 3px, #c1121f 9px, transparent 10px);
+  --x-ball-gold: radial-gradient(circle at 38% 34%, #fff 0 2px, #ffe08a 3px, #d4a017 9px, transparent 10px);
+  --x-ball-blue: radial-gradient(circle at 38% 34%, #fff 0 2px, #8fd3ff 3px, #1e6fd9 9px, transparent 10px);
+}
 #stage.xmas .deck-panel, #stage.xmas .quiz-ambassadors, #stage.xmas.theme-quiz #hud > #board, #stage.xmas .quiz-comments {
-  border-color: rgba(230, 57, 70, 0.85); box-shadow: 0 0 22px rgba(46, 194, 126, 0.35), inset 0 3px 0 rgba(255, 255, 255, 0.85); }
-#stage.xmas .deck-panel { background: linear-gradient(180deg, rgba(14, 52, 34, 0.9), rgba(8, 20, 16, 0.88)); }
+  border: 4px solid transparent; box-shadow: 0 0 22px rgba(46, 194, 126, 0.35);
+  background: var(--x-fill) padding-box, var(--x-candy) border-box; }
+#stage.xmas .quiz-ambassadors, #stage.xmas.theme-quiz #hud > #board {
+  background: var(--x-tree) left 8px top 4px / 26px no-repeat padding-box,
+    linear-gradient(#ffd36b, #ffd36b) right 21px top 0 / 2px 9px no-repeat padding-box,
+    var(--x-ball-red) right 10px top 7px / 24px 24px no-repeat padding-box,
+    var(--x-fill) padding-box, var(--x-candy) border-box; }
+#stage.xmas .quiz-ambassadors.gold { background: var(--x-tree) left 8px top 4px / 26px no-repeat padding-box,
+    linear-gradient(#ffd36b, #ffd36b) right 21px top 0 / 2px 9px no-repeat padding-box,
+    var(--x-ball-gold) right 10px top 7px / 24px 24px no-repeat padding-box,
+    var(--x-fill) padding-box, var(--x-candy) border-box; }
+#stage.xmas.theme-quiz #hud > #board { background: var(--x-bell) left 8px top 4px / 24px no-repeat padding-box,
+    linear-gradient(#ffd36b, #ffd36b) right 21px top 0 / 2px 9px no-repeat padding-box,
+    var(--x-ball-blue) right 10px top 7px / 24px 24px no-repeat padding-box,
+    var(--x-fill) padding-box, var(--x-candy) border-box; }
+/* dây lá thông + quả châu chạy dọc chỗ nối thẻ câu hỏi ↔ bảng quà */
+#stage.xmas .deck-panel::before { content: ''; position: absolute; left: 6px; right: 6px; top: -17px; height: 24px; z-index: 3; pointer-events: none;
+  background:
+    var(--x-ball-red) 40px 6px / 120px 22px repeat-x,
+    var(--x-ball-gold) 80px 8px / 120px 22px repeat-x,
+    var(--x-ball-blue) 120px 6px / 120px 22px repeat-x,
+    radial-gradient(circle, #ff3b4f 0 3px, transparent 3.5px) 6px 2px / 34px 12px repeat-x,
+    radial-gradient(ellipse 9px 6px at 50% 50%, #2ec27e 0 60%, transparent 64%) 8px -1px / 16px 12px repeat-x,
+    radial-gradient(ellipse 10px 7px at 50% 50%, #17693f 0 60%, transparent 64%) 0 1px / 16px 12px repeat-x; }
 #stage.xmas .deck-panel .deck-title, #stage.xmas .quiz-comments-title { color: #fff; text-shadow: 0 0 10px var(--xmas-red); }
 #stage.xmas .deck-panel .deck-page { color: #fff; background: rgba(230, 57, 70, 0.35); border-color: var(--xmas-gold); }
 #stage.xmas .quiz-ambassadors h3, #stage.xmas.theme-quiz #hud > #board h3 { color: var(--xmas-gold); -webkit-text-fill-color: var(--xmas-gold); }

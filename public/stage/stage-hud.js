@@ -201,20 +201,24 @@ export function createHud() {
      * Cùng người + cùng chế độ tặng liên tục (combo) → cộng ×N trên thẻ đang hiện, không bật thẻ mới.
      */
     /**
-     * 🎄 Giáng sinh (#stage.xmas): có người tặng quà → xe tuần lộc chở ông già Noel bay ngang ngay trên dải thẻ quà / chào mừng,
-     * vừa bay vừa thả quà rơi xuống. Chỉ CSS transform (xmas.css) — OBS máy yếu vẫn mượt. Đang bay thì quà sau không gọi thêm xe.
+     * Có người tặng quà (chủ đề mùa): 🎄 Giáng sinh — xe tuần lộc chở ông già Noel; 💐 20/11 — bồ câu mang bó hoa. Bay ngang ngay
+     * trên dải thẻ quà / chào mừng, thả quà / cánh hoa rơi xuống. Chỉ CSS transform (xmas.css) — OBS máy yếu vẫn mượt.
+     * Đang bay thì quà sau không gọi thêm.
      */
     sleigh() {
       const now = performance.now();
-      if (!$('stage').classList.contains('xmas') || now < sleighUntil) return;
+      const xmas = $('stage').classList.contains('xmas');
+      if (!(xmas || $('stage').classList.contains('teacher')) || now < sleighUntil) return;
       const FLY_MS = 5200;
       sleighUntil = now + FLY_MS;
       const ride = el('div', 'sleigh');
-      const sled = el('span', 'sled', '🛷');
-      sled.append(el('span', 'santa', '🎅'));
-      ride.append(el('span', 'deer', '🦌'), el('span', 'deer', '🦌'), el('span', 'reins'), sled, el('span', 'trail', '✨'));
+      if (xmas) {
+        const sled = el('span', 'sled', '🛷');
+        sled.append(el('span', 'santa', '🎅'));
+        ride.append(el('span', 'deer', '🦌'), el('span', 'deer', '🦌'), el('span', 'reins'), sled, el('span', 'trail', '✨'));
+      } else ride.append(el('span', 'dove', '🕊️'), el('span', 'bouquet', '💐'), el('span', 'trail', '✨'));
       $('hud').append(ride);
-      const GIFTS = ['🎁', '🎁', '🎁', '🍬', '⭐', '🎀', '🍭'];
+      const GIFTS = xmas ? ['🎁', '🎁', '🎁', '🍬', '⭐', '🎀', '🍭'] : ['🌸', '🌷', '💮', '🌸', '🌼', '🌹', '🌸'];
       let n = 0;
       const drop = setInterval(() => {
         const p = (performance.now() - now) / FLY_MS;

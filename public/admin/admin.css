@@ -184,8 +184,11 @@ button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical
 .viewers-big span:last-child { color: var(--muted); font-weight: 600; }
 
 /* 🎄 nút chủ đề Giáng sinh + giao diện Giáng sinh của trang điều khiển (body.xmas) */
-.xmas-toggle { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line2); background: var(--card2); color: var(--text); font-weight: 700; cursor: pointer; }
-.xmas-toggle[aria-pressed="true"] { background: linear-gradient(135deg, #c1121f, #2b9348); border-color: #ffd36b; box-shadow: 0 0 14px rgba(230, 57, 70, 0.6); }
+.season-pick { display: inline-flex; padding: 3px; gap: 2px; border-radius: 999px; border: 1px solid var(--line2); background: var(--card2); }
+.season-pick button { padding: 5px 12px; border: 0; border-radius: 999px; background: transparent; color: var(--muted); font-weight: 700; cursor: pointer; }
+.season-pick button[aria-pressed="true"] { color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow: 0 0 12px rgba(255, 255, 255, 0.15); }
+body.xmas .season-pick button[aria-pressed="true"] { background: linear-gradient(135deg, #c1121f, #2b9348); }
+body.teacher .season-pick button[aria-pressed="true"] { background: linear-gradient(135deg, #ff5fa2, #9b5de5); }
 body.xmas { --bg: #0b1410; --panel: #10201a; --card: #142a21; --card2: #1b3529; --line: #24493a; --line2: #2f5e4a;
   --accent: #e63946; --accent2: #2b9348; --gold: #ffd36b; --muted: #a9c4b6;
   background: radial-gradient(900px 500px at 0% -10%, rgba(230, 57, 70, 0.28), transparent 60%),
@@ -203,3 +206,19 @@ body.xmas .brand .logo::before { content: '🎅'; font-size: 22px; }
 body.xmas .card { border-top: 3px solid rgba(255, 255, 255, 0.75); box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(230, 57, 70, 0.25); }
 body.xmas .tabs button.active { background: linear-gradient(135deg, #c1121f, #2b9348); color: #fff; }
 body.xmas .shell, body.xmas .login { position: relative; z-index: 1; } /* trên lớp tuyết; thanh trên vẫn dính (sticky) */
+/* 💐 20/11 (body.teacher): hồng tím, cánh hoa */
+body.teacher { --bg: #170b17; --panel: #221024; --card: #2a142c; --card2: #351a38; --line: #4a2550; --line2: #5c2f63;
+  --accent: #ff5fa2; --accent2: #9b5de5; --gold: #ffd36b; --muted: #d3b2cf;
+  background: radial-gradient(900px 500px at 0% -10%, rgba(255, 95, 162, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 100% -10%, rgba(155, 93, 229, 0.3), transparent 60%), var(--bg); }
+body.teacher::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0.6;
+  background-image: radial-gradient(3px 2px at 30px 40px, #ff9ccf, transparent), radial-gradient(3px 2px at 160px 120px, #ffd1e8, transparent),
+    radial-gradient(2px 2px at 260px 60px, #ff9ccf, transparent), radial-gradient(3px 2px at 340px 200px, #fff, transparent);
+  background-size: 400px 260px; animation: admin-snow 22s linear infinite; }
+body.teacher .topbar { border-bottom: 3px solid transparent;
+  border-image: repeating-linear-gradient(90deg, #ff7ab8 0 18px, #fff1f8 18px 26px, #ffd36b 26px 34px, #fff1f8 34px 42px) 1; }
+body.teacher .brand .logo { font-size: 0; }
+body.teacher .brand .logo::before { content: '💐'; font-size: 22px; }
+body.teacher .card { border-top: 3px solid rgba(255, 156, 207, 0.8); }
+body.teacher .tabs button.active { background: linear-gradient(135deg, #ff5fa2, #9b5de5); color: #fff; }
+body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
