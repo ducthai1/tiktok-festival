@@ -1,0 +1,126 @@
+# Bộ đề · Game
+LEVEL | Cấp độ nhân vật hoặc bản đồ trong trò chơi tiếng Anh là gì? | 1 | STAGE
+SCORE | Điểm số tích lũy thành tích trò tiếng Anh là gì? | 1 | POINT
+WIN | Thắng chiến thắng trận đấu tiếng Anh là gì? | 1 | VICTORY
+LOSE | Thua cuộc thất bại trong trò chơi tiếng Anh là gì? | 1 | DEFEAT
+TEAM | Đội nhóm người chơi cùng chơi tiếng Anh là gì? | 1 | SQUAD
+MAP | Bản đồ không gian trò chơi diễn tiếng Anh là gì? | 1 | TERRAIN
+JUMP | Nhảy vượt qua chướng ngại vật tiếng Anh là gì? | 1 | LEAP
+SHOOT | Bắn phóng đạn vũ khí tiếng Anh là gì? | 1 | FIRE
+COIN | Tiền xu vàng trong trò chơi tiếng Anh là gì? | 1 | GOLD
+LIFE | Mạng sống nhân vật còn tiếng Anh là gì? | 1 | LIVES
+ENEMY | Kẻ địch đối thủ tiếng Anh là gì? | 1 | FOE
+HERO | Nhân vật anh hùng chính tiếng Anh là gì? | 1 | CHARACTER
+SKIN | Trang phục bề ngoài nhân vật tiếng Anh là gì? | 1 | OUTFIT
+CHEST | Rương chứa vật phẩm thưởng tiếng Anh là gì? | 1 | TREASURE
+GEM | Ngọc quý đá quý tiếng Anh là gì? | 1 | CRYSTAL
+RANK | Hạng xếp vị trí cao tiếng Anh là gì? | 1 | PLACEMENT
+REWARD | Phần thưởng hưởng lợi tiếng Anh là gì? | 1 | PRIZE
+ENDGAME | Giai đoạn cuối cùng trò chơi tiếng Anh là gì? | 1 | FINAL STAGE
+TUTORIAL | Hướng dẫn cách chơi cơ bản tiếng Anh là gì? | 1 | GUIDE
+COMBO BREAKER | Bẻ gãy chuỗi tấn công đối tiếng Anh là gì? | 1 | INTERRUPT
+DODGE | Né tránh tránh khỏi sát thương tiếng Anh là gì? | 1 | EVADE
+BLOCK | Chặn bảo vệ tránh sát thương tiếng Anh là gì? | 1 | SHIELD UP
+CAMPAIGN | Chiến dịch câu chuyện chính trò tiếng Anh là gì? | 1 | STORY MODE
+SINGLE PLAYER | Chơi một người không cần ai tiếng Anh là gì? | 1
+MULTIPLAYER | Chơi nhiều người cùng một lúc tiếng Anh là gì? | 1
+OFFLINE | Chơi không kết nối mạng internet tiếng Anh là gì? | 1 | LOCAL
+ONLINE | Chơi kết nối internet với người khác tiếng Anh là gì? | 1
+CONSOLE | Máy chơi game chuyên dụng bảng tiếng Anh là gì? | 1 | GAMING DEVICE
+MOBILE | Thiết bị di động điện thoại tiếng Anh là gì? | 1 | PHONE
+CONTROLLER | Bộ điều khiển cầm tay tiếng Anh là gì? | 1 | GAMEPAD
+JOYSTICK | Cần điều khiển hướng chuyển động tiếng Anh là gì? | 1 | LEVER
+BUTTON | Nút bấm điều khiển tiếng Anh là gì? | 1 | KEY
+PAUSE | Tạm dừng trò chơi tiếng Anh là gì? | 1 | STOP
+RESTART | Khởi động lại trò chơi từ đầu tiếng Anh là gì? | 1 | RESET
+QUIT | Thoát trò chơi từ bỏ tiếng Anh là gì? | 1 | EXIT
+SETTINGS | Cài đặt tùy chỉnh tham số tiếng Anh là gì? | 1 | OPTIONS
+GRAPHICS | Đồ họa hình ảnh trực quan tiếng Anh là gì? | 1 | VISUALS
+SOUND | Âm thanh âm lượng nhạc tiếng Anh là gì? | 1 | AUDIO
+VOLUME | Độ lớn âm thanh âm tiếng Anh là gì? | 1 | LOUDNESS
+BRIGHTNESS | Độ sáng độ tối hình ảnh tiếng Anh là gì? | 1 | LUMINOSITY
+RESOLUTION | Độ phân giải hình ảnh rõ nét tiếng Anh là gì? | 1 | CLARITY
+FULLSCREEN | Toàn màn hình không thanh tiếng Anh là gì? | 1 | MAXIMIZE
+WINDOWED | Cửa sổ nhỏ mode cửa tiếng Anh là gì? | 1 | WINDOW MODE
+UPDATE | Cập nhật phiên bản mới tiếng Anh là gì? | 1 | UPGRADE
+PATCH | Bản cập nhật sửa lỗi tiếng Anh là gì? | 1 | FIX
+EXPANSION | Mở rộng game thêm nhiều tiếng Anh là gì? | 1 | EXTENSION
+STORYLINE | Chuỗi câu chuyện cốt truyện tiếng Anh là gì? | 1 | NARRATIVE
+INVENTORY | Kho vật phẩm cầm theo tiếng Anh là gì? | 1 | BAG
+QUEST LOG | Nhật ký nhiệm vụ ghi chép tiếng Anh là gì? | 1 | TASK LIST
+CHEAT CODE | Mã cheat bí mật để thay đổi tiếng Anh là gì? | 1 | SECRET CODE
+HIGHSCORE | Điểm số cao nhất từng đạt tiếng Anh là gì? | 1 | BEST SCORE
+STATISTICS | Thống kê dữ liệu kết quả tiếng Anh là gì? | 1 | STATS
+LEADERBOARD | Bảng xếp hạng người chơi top tiếng Anh là gì? | 1
+DIFFICULTY MODE | Chế độ mức độ khó dễ tiếng Anh là gì? | 1
+SPEEDRUN | Chơi hoàn thành game nhanh nhất tiếng Anh là gì? | 3 | FAST RUN
+RESPAWN | Sinh lại nhân vật sau chết tiếng Anh là gì? | 1 | REBIRTH
+DODGE ROLL | Lăn tránh né sát thương nhanh tiếng Anh là gì? | 1 | EVADE ROLL
+SKILL TREE | Cây kỹ năng nâng cấp tiếng Anh là gì? | 1 | ABILITY TREE
+LATENCY | Độ trễ phản ứng mạng truyền tiếng Anh là gì? | 3 | PING
+FRAME RATE | Tốc độ khung hình mỗi giây tiếng Anh là gì? | 3 | FPS
+EASTER EGG | Bí mật ẩn giấu nhà phát triển tiếng Anh là gì? | 3
+SANDBOX | Chế độ tự do xây dựng sáng tạo tiếng Anh là gì? | 3 | CREATIVE MODE
+NERF | Làm yếu đi nhân vật kỹ năng tiếng Anh là gì? | 3 | WEAKEN
+HITSCAN | Kỹ năng bắn ngang tức thì tiếng Anh là gì? | 3 | INSTANT HIT
+MICROTRANSACTION | Mua nhỏ vật phẩm phí tiền tiếng Anh là gì? | 3 | SMALL PURCHASE
+PATCH NOTES | Ghi chú cập nhật thay đổi tiếng Anh là gì? | 3
+OPEN WORLD | Thế giới mở tự do khám phá tiếng Anh là gì? | 3 | FREE WORLD
+RAY TRACING | Công nghệ đồ họa ánh sáng tiếng Anh là gì? | 3 | LIGHT RENDERING
+PROCEDURAL GENERATION | Tạo nội dung ngẫu nhiên thuật toán tiếng Anh là gì? | 3
+PHYSICS ENGINE | Động cơ vật lý tương tác tiếng Anh là gì? | 3
+ANIMATION | Chuyển động hoạt hình nhân vật tiếng Anh là gì? | 3 | MOTION
+PARTICLE EFFECT | Hiệu ứng hạt tia ánh sáng tiếng Anh là gì? | 3
+SHADER | Chương trình tô màu đồ họa tiếng Anh là gì? | 3 | GRAPHICS CODE
+POLYGON | Hình đa giác cấu trúc mô hình tiếng Anh là gì? | 3 | SHAPE
+TEXTURE | Bề mặt chất liệu chi tiết tiếng Anh là gì? | 3 | SURFACE
+NORMAL MAP | Bản đồ pháp tuyến độ sâu tiếng Anh là gì? | 3
+COLLIDER | Vùng va chạm vật lý tiếng Anh là gì? | 3 | COLLISION ZONE
+SPRITE | Hình hai chiều nhân vật tiếng Anh là gì? | 3 | 2D IMAGE
+TILESET | Bộ gạch lát xây dựng bản đồ tiếng Anh là gì? | 3 | TILE COLLECTION
+ASSET | Tài nguyên hình ảnh âm thanh tiếng Anh là gì? | 3 | RESOURCE
+RENDER | Vẽ tính toán hình ảnh tiếng Anh là gì? | 3 | DRAW
+OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng tiếng Anh là gì? | 3 | PERFORMANCE TUNING
+DEBUGGING | Gỡ rối tìm lỗi chương trình tiếng Anh là gì? | 3 | FIXING BUGS
+SCRIPTING | Viết kịch bản code logic tiếng Anh là gì? | 3 | CODE WRITING
+ENGINE | Động cơ công cụ xây dựng tiếng Anh là gì? | 3 | TOOL
+MEMORY LEAK | Rò rỉ bộ nhớ không giải phóng tiếng Anh là gì? | 3 | MEMORY LOSS
+BANDWIDTH | Độ rộng băng thông truyền tiếng Anh là gì? | 3 | NETWORK SPEED
+SERVER | Máy chủ lưu trữ dữ liệu tiếng Anh là gì? | 3 | HOST
+CLIENT | Máy khách kết nối server tiếng Anh là gì? | 3 | PLAYER DEVICE
+SYNCHRONIZATION | Đồng bộ hóa dữ liệu giữa tiếng Anh là gì? | 3 | SYNC
+MODDING | Chỉnh sửa game theo ý thích tiếng Anh là gì? | 3 | GAME MODIFICATION
+MODDER | Người chỉnh sửa mod game tiếng Anh là gì? | 3 | MOD CREATOR
+STREAMING | Phát trực tiếp gameplay online tiếng Anh là gì? | 3 | LIVE BROADCAST
+ESPORTS | Thể thao điện tử thi đấu tiếng Anh là gì? | 3 | COMPETITIVE GAMING
+TOURNAMENT | Giải đấu cạnh tranh tập thể tiếng Anh là gì? | 3 | CHAMPIONSHIP
+PRIZE POOL | Quỹ tiền thưởng tổng cộng tiếng Anh là gì? | 3 | REWARD FUND
+SPONSORSHIP | Tài trợ hỗ trợ tài chính tiếng Anh là gì? | 3 | FUNDING
+FRANCHISE | Đội chuyên nghiệp cấp cao tiếng Anh là gì? | 3 | PROFESSIONAL TEAM
+ROSTER | Danh sách thành viên đội tiếng Anh là gì? | 3 | MEMBER LIST
+BOOTCAMP | Trại huấn luyện chuẩn bị tiếng Anh là gì? | 3 | TRAINING CAMP
+SCRIM MATCH | Trận tập đấu không chính thức tiếng Anh là gì? | 3 | PRACTICE GAME
+META GAME | Chiến lược tối ưu hiện tại tiếng Anh là gì? | 3 | OPTIMAL STRATEGY
+PROTOTYPE | Mẫu bản thử nghiệm ban đầu tiếng Anh là gì? | 3 | DRAFT VERSION
+RELEASE | Phát hành công bố chính thức tiếng Anh là gì? | 3 | LAUNCH
+BETA TESTING | Kiểm tra phiên bản nước ngoài tiếng Anh là gì? | 3 | EARLY ACCESS
+ALPHA VERSION | Phiên bản sơ khai chưa hoàn tiếng Anh là gì? | 3 | EARLY BUILD
+CROSSPLAY | Chơi cùng nhau nền tảng khác tiếng Anh là gì? | 3 | CROSS PLATFORM
+CROSSOVER | Sự hợp tác giữa hai game tiếng Anh là gì? | 3 | COLLABORATION
+COSMETIC | Vật phẩm chỉ trang trí không tiếng Anh là gì? | 3 | APPEARANCE ITEM
+GAMEPLAY LOOP | Vòng lặp trò chơi cơ bản tiếng Anh là gì? | 3
+DUNGEON CRAWLER | Khám phá hầm ngục tầng tiếng Anh là gì? | 3 | CAVE EXPLORER
+ROGUELITE | Trò roguelike nhưng giữ tiến tiếng Anh là gì? | 3 | HYBRID ROGUELIKE
+PLATFORMER | Trò nhảy qua chướng ngại vật tiếng Anh là gì? | 3 | JUMPING GAME
+BULLET HELL | Trò nhiều viên đạn bay tiếng Anh là gì? | 3 | BULLET STORM
+IDLE GAME | Trò chơi tự động chế độ tiếng Anh là gì? | 3 | AUTOMATIC GAME
+CLICKER | Trò nhấp chuột tích lũy tiếng Anh là gì? | 3 | TAP GAME
+PUZZLE | Trò giải đố xếp ghép tiếng Anh là gì? | 3 | BRAIN GAME
+TURN BASED | Chơi lượt không thời gian tiếng Anh là gì? | 3 | ROUND SYSTEM
+REAL TIME | Chơi thực tế hành động tiếng Anh là gì? | 3 | LIVE ACTION
+ISOMETRIC | Góc nhìn xiên ba chiều tiếng Anh là gì? | 3 | ANGLED VIEW
+FIRST PERSON | Góc nhìn từ mắt nhân vật tiếng Anh là gì? | 3 | POV VIEW
+THIRD PERSON | Góc nhìn từ phía sau tiếng Anh là gì? | 3 | BEHIND VIEW
+SIDE QUEST | Nhiệm vụ phụ ngoài cốt truyện chính trong game tiếng Anh là gì? | 2
+HEALTH BAR | Thanh hiển thị lượng máu còn lại của nhân vật tiếng Anh là gì? | 1
+GAME OVER | Dòng chữ hiện ra khi thua cuộc, hết mạng tiếng Anh là gì? | 1

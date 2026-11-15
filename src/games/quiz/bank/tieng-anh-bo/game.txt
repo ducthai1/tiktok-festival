@@ -1,0 +1,177 @@
+# Bộ đề · Game
+LOOT | Thu thập vật phẩm từ quái vật sau tiêu diệt tiếng Anh là gì? | 1 | ITEM DROP
+COMBO | Chuỗi kỹ năng dùng liên tiếp tạo sát thương tiếng Anh là gì? | 1 | COMBINATION
+HEADSHOT | Bắn trúng đầu kẻ địch gây sát thương cực tiếng Anh là gì? | 1 | HEAD KILL
+NOOB | Người mới chơi kém kỹ năng nhập môn tiếng Anh là gì? | 1 | NEWBIE
+MELEE | Tấn công gần cận chém chích tiếng Anh là gì? | 1 | CLOSE COMBAT
+RANGE | Tấn công từ khoảng cách xa tiếng Anh là gì? | 1 | DISTANCE ATTACK
+ARMOR | Giáp trang bị giảm sát thương nhận tiếng Anh là gì? | 1 | DEFENSE
+SHIELD | Bảo vệ hấp thụ sát thương tiếng Anh là gì? | 1 | BARRIER
+SWORD | Kiếm vũ khí cơ bản dùng tấn công tiếng Anh là gì? | 1 | BLADE
+HEALTH | Máu số sức sống của nhân vật còn bao tiếng Anh là gì? | 1 | HP
+MANA | Năng lượng xanh sử dụng phát động kỹ tiếng Anh là gì? | 1 | MAGIC ENERGY
+SPAWN | Nơi xuất hiện nhân vật trong trò chơi tiếng Anh là gì? | 1 | START POINT
+MINION | Lính máy tính được điều khiển tự động tiếng Anh là gì? | 1 | CREEP
+ITEM | Vật phẩm trang bị tăng chỉ số tiếng Anh là gì? | 1 | EQUIPMENT
+PROJECTILE | Vật thể bay phóng ra từ kỹ năng tiếng Anh là gì? | 1 | FLYING OBJECT
+BASE | Nơi khởi hành điểm yên toàn an toàn tiếng Anh là gì? | 1 | HOME
+ALLY | Đồng minh giúp đỡ bạn trong trận chiến tiếng Anh là gì? | 1 | TEAMMATE
+WEAPON | Vũ khí dùng để tấn công kẻ địch tiếng Anh là gì? | 1 | FIREARM
+STRIKE | Tấn công chủ động gây sát thương đối tiếng Anh là gì? | 1 | HIT
+GUARD | Phòng thủ chặn sát thương tránh mất tiếng Anh là gì? | 1 | DEFEND
+SAVE POINT | Điểm lưu tiến độ giữa chừng tiếng Anh là gì? | 1 | CHECKPOINT
+TIER | Cấp độ bản đồ hoặc tầng trò chơi tiếng Anh là gì? | 1 | STAGE
+CREATURE | Quái vật mạnh trong trò chơi tiếng Anh là gì? | 1 | MONSTER
+BOUNTY | Phần thưởng được trao sau hoàn thành tiếng Anh là gì? | 1 | PRIZE
+CO-OP | Chơi được nhiều người cùng lúc tiếng Anh là gì? | 1 | COOPERATIVE
+HARDCORE | Mức độ khó khiến game thủ phải tập tiếng Anh là gì? | 1 | DIFFICULTY
+OUTFIT | Vũ khí trang bị chuẩn bị chiến tiếng Anh là gì? | 1 | GEAR
+GANK | Tập trung sức mạnh nhiều để giết người tiếng Anh là gì? | 2 | COORDINATED KILL
+FARM | Canh nông kiếm tiền vàng trong game tiếng Anh là gì? | 2 | EARN RESOURCES
+ROAM | Di chuyển khắp bản đồ tìm cơ hội tiếng Anh là gì? | 2 | ROTATE MAP
+ENGAGE | Bắt đầu cuộc chiến với đối thủ tiếng Anh là gì? | 2 | START FIGHT
+POKE | Tấn công nhỏ chip sát thương từ xa tiếng Anh là gì? | 2 | CHIP DAMAGE
+AGGRO | Kích hoạt sự chú ý của kẻ địch tiếng Anh là gì? | 2 | ATTENTION
+PROC | Kích hoạt hiệu ứng xác suất ngẫu nhiên tiếng Anh là gì? | 2 | TRIGGER
+DEBUFF | Hiệu ứng xấu giảm chỉ số nhân vật tiếng Anh là gì? | 2
+BUFF | Hiệu ứng tốt tăng chỉ số nhân vật tiếng Anh là gì? | 2
+SCALING | Tăng sát thương theo chỉ số nhân vật tiếng Anh là gì? | 2
+COOLDOWN | Thời gian chờ để sử dụng lại kỹ năng tiếng Anh là gì? | 2
+SKILLSHOT | Kỹ năng phải nhắm bắn chính xác tiếng Anh là gì? | 2
+COUNTER | Nhân vật tactic có khả năng đánh bại tiếng Anh là gì? | 2
+MATCHUP | So sánh lực lượng giữa hai đối thủ tiếng Anh là gì? | 2
+SUPPORT | Vai trò hỗ trợ bảo vệ đồng đội tiếng Anh là gì? | 2
+TIER LIST | Bảng xếp hạng nhân vật mạnh yếu tiếng Anh là gì? | 2
+CRITICAL HIT | Đòn tấn công chí mạng gây gấp sát thương tiếng Anh là gì? | 2 | CRIT
+PIERCE | Tấn công xuyên qua giáp bỏ qua tiếng Anh là gì? | 2
+POISON | Chất độc liên tục làm mất máu tiếng Anh là gì? | 2
+DAZE | Làm choáng váng đối thủ mất hành động tiếng Anh là gì? | 2 | STUN
+SILENCE | Cắt khả năng dùng kỹ năng phép tiếng Anh là gì? | 2
+MIND CONTROL | Kiểm soát nhân vật tấn công đồng đội tiếng Anh là gì? | 2 | CHARM
+KNOCKBACK | Đẩy lùi nhân vật ra xa tiếng Anh là gì? | 2
+CROWD CONTROL | Kiểm soát đám đông đối thủ tiếng Anh là gì? | 2
+CLOAK | Ngụy trang hòa lẫn môi trường tiếng Anh là gì? | 2
+PERMADEATH | Chết vĩnh viễn không thể sống lại tiếng Anh là gì? | 2
+LOADOUT | Thiết lập vũ khí trang bị chuẩn tiếng Anh là gì? | 2
+MAGIC RESISTANCE | Khả năng chống phép thuật ma giáo tiếng Anh là gì? | 2
+EVASION | Khả năng né tránh sát thương tiếng Anh là gì? | 2
+LIFESTEAL | Hút máu sát thương gây ra tiếng Anh là gì? | 2
+SPELL VAMP | Hút máu từ kỹ năng phép tiếng Anh là gì? | 2
+REGEN | Tái tạo máu tự động liên tục tiếng Anh là gì? | 2
+MANA REGEN | Phục hồi năng lượng phép tự động tiếng Anh là gì? | 2
+MOVEMENT SPEED | Tốc độ di chuyển nhanh chậm tiếng Anh là gì? | 2
+ATTACK SPEED | Tốc độ tấn công cơ bản nhanh tiếng Anh là gì? | 2
+COOLDOWN REDUCTION | Giảm thời gian chờ dùng lại tiếng Anh là gì? | 2
+OVERKILL | Gây sát thương vượt quá giới hạn tiếng Anh là gì? | 2
+TAUNT | Cưỡng bách tấn công nhân vật tiếng Anh là gì? | 2
+PETRIFY | Hoá đá làm cứng người dùng tiếng Anh là gì? | 2
+CLEANSE | Loại bỏ tất cả trạng thái xấu tiếng Anh là gì? | 2
+DISPEL | Xoá bỏ hiệu ứng trạng thái tiếng Anh là gì? | 2
+UNTARGETABLE | Không bị nhắm mục tiêu tiếng Anh là gì? | 2
+INVISIBLE | Ẩn thân trốn khỏi địch thấy tiếng Anh là gì? | 2 | STEALTH
+HITBOX | Vùng va chạm để nhận sát thương tiếng Anh là gì? | 2
+CASTING TIME | Thời gian chuẩn bị kỹ năng tiếng Anh là gì? | 2
+POWER UP | Tích tụ năng lượng tăng sức mạnh tiếng Anh là gì? | 2 | CHARGE
+INSTANT | Kỹ năng phát động tức thì tiếng Anh là gì? | 2
+CAST RANGE | Khoảng cách sử dụng kỹ năng tiếng Anh là gì? | 2
+PHYSICAL DAMAGE | Sát thương cơ bắp từ tấn công tiếng Anh là gì? | 2
+MAGIC DAMAGE | Sát thương từ phép thuật tiếng Anh là gì? | 2
+TRUE DAMAGE | Sát thương không thể giảm tiếng Anh là gì? | 2
+STRENGTH | Sức mạnh tấn công vật lý cao tiếng Anh là gì? | 2
+INTELLIGENCE | Trí tuệ phép thuật mạnh tiếng Anh là gì? | 2
+AGILITY | Nhanh nhẹn né tránh sát thương tiếng Anh là gì? | 2
+DEXTERITY | Khéo léo tấn công chính xác tiếng Anh là gì? | 2
+CONSTITUTION | Thể chất máu sống cao tiếng Anh là gì? | 2
+VITALITY | Sức sống máu cơ bản cao tiếng Anh là gì? | 2
+WISDOM | Khôn ngoan khả năng chống tiếng Anh là gì? | 2
+CHARISMA | Sức hút ảnh hưởng chiêu mộ tiếng Anh là gì? | 2
+STREAMER | Người truyền trực tiếp gameplay tiếng Anh là gì? | 2
+PRO PLAYER | Người chơi chuyên nghiệp kiếm tiền tiếng Anh là gì? | 2
+COACH | Huấn luyện viên dạy kỹ thuật đội tiếng Anh là gì? | 2
+VIEWER | Khán giả xem trận đấu livestream tiếng Anh là gì? | 2
+POSITIONING | Vị trí chiến lược trong chiến tiếng Anh là gì? | 2
+MAP AWARENESS | Tầm nhìn khả năng nhìn thấy địch tiếng Anh là gì? | 2 | VISION
+WARD | Trồng cây nhìn bản đồ vùng tiếng Anh là gì? | 2
+FRONTLINE | Tiền phương hàng đầu chiến tiếng Anh là gì? | 2
+BACKLINE | Hậu phương hàng sau an toàn tiếng Anh là gì? | 2
+FOCUS FIRE | Tập trung sức mạnh vào một tiếng Anh là gì? | 2
+ROTATION | Xoay chuyển vị trí chiến đấu tiếng Anh là gì? | 2
+MAP CONTROL | Kiểm soát bản đồ vùng chiến tiếng Anh là gì? | 2
+TEAMFIGHT | Đánh nhóm toàn bộ đội tiếng Anh là gì? | 2
+SKIRMISH | Xung đột nhỏ lẻ tẻ tiếng Anh là gì? | 2
+SIEGE | Vây hãm phòng thủ vị trí tiếng Anh là gì? | 2 | SIEGE
+PICK | Chọn nhân vật trong chế độ soạn tiếng Anh là gì? | 2
+BAN | Cấm nhân vật không dùng được tiếng Anh là gì? | 2
+DRAFT | Chọn đội hình theo chiến lược tiếng Anh là gì? | 2
+RUSH | Tấn công nhanh liều lĩnh vô tiếng Anh là gì? | 2
+TEMPO | Tốc độ nhịp độ chơi game tiếng Anh là gì? | 2
+REACTION | Phản ứng nhanh tác động tiếng Anh là gì? | 2
+WAVE CLEAR | Tiêu diệt hết đợt quái vật tiếng Anh là gì? | 3
+CREEP SCORE | Số quân lính tiêu diệt kiếm vàng tiếng Anh là gì? | 3 | CS
+MACRO | Chiến lược toàn bộ bản đồ game tiếng Anh là gì? | 3
+MICRO | Kỹ thuật chi tiết cơ chế tiếng Anh là gì? | 3
+KITE | Quẳng lại chạy tấn công di chuyển tiếng Anh là gì? | 3
+DISENGAGE | Rút lui thoát khỏi chiến tiếng Anh là gì? | 3
+TRADE | Đánh trao đổi sát thương đôi tiếng Anh là gì? | 3
+ALL-IN | Tất tay chi tất cả tài nguyên tiếng Anh là gì? | 3
+SNOWBALL | Trôi tuyết cuộn ưu thế dồn tiếng Anh là gì? | 3
+COMEBACK | Quay lại lật ngược thế tiếng Anh là gì? | 3
+TEAM COMPOSITION | Thành phần đội hình nhân vật tiếng Anh là gì? | 3 | COMP
+SYNERGY | Hợp tác cộng hưởng nhân vật tiếng Anh là gì? | 3
+WIN CONDITION | Điều kiện thắng chiến lược tiếng Anh là gì? | 3 | WINCON
+OUTPLAY | Vượt trội chơi tốt hơn tiếng Anh là gì? | 3
+EXPLOIT | Tận dụng điểm yếu lợi dụng tiếng Anh là gì? | 3
+VISION CONTROL | Kiểm soát tầm nhìn bản đồ tiếng Anh là gì? | 3
+JUNGLE CONTROL | Kiểm soát rừng tiêu diệt tiếng Anh là gì? | 3
+DUEL | Một cuộc đơn đấu hai người riêng tiếng Anh là gì? | 1 | ONE ON ONE
+FACTION | Phe nhóm lực lượng trong game tiếng Anh là gì? | 1 | SIDE
+GUILD | Bang hội hoặc nhóm game thủ cùng tiếng Anh là gì? | 1 | CLAN
+QUEST | Nhiệm vụ cần hoàn thành để nhận tiếng Anh là gì? | 1 | MISSION
+CRAFT | Chế tạo vật phẩm từ nguyên liệu tiếng Anh là gì? | 1 | MAKE
+SHOPKEEPER | Người bán hàng bán vật phẩm tiếng Anh là gì? | 1 | SELLER
+QUEST GIVER | Người giao nhiệm vụ chính yêu tiếng Anh là gì? | 1 | NPCQUESTER
+RESPAWN TIMER | Thời gian chờ sinh lại sau chết tiếng Anh là gì? | 1 | DEATH TIMER
+RANKINGS | Bảng xếp hạng người chơi top cao tiếng Anh là gì? | 1 | CHART
+MATCHMAKING | Hệ thống ghép cặp người chơi cân tiếng Anh là gì? | 1 | PAIRING SYSTEM
+PROGRESSION | Tiến triển nâng cấp nhân vật tiếng Anh là gì? | 1 | ADVANCEMENT
+GRINDING | Lặp lại kiếm kinh nghiệm vàng tiếng Anh là gì? | 2 | FARMING
+BOSS FIGHT | Chiến đấu với trùm cuối quan trọng tiếng Anh là gì? | 2 | RAID
+LOOT TABLE | Bảng tỷ lệ rơi vật phẩm quái tiếng Anh là gì? | 2 | DROP CHANCE
+RARE DROP | Rơi vật phẩm hiếm kỳ lạ tiếng Anh là gì? | 2 | RARITY
+OVERPOWERED | Quá mạnh mẻ không cân bằng tiếng Anh là gì? | 2 | OP
+UNDERPOWERED | Quá yếu kém so với khác tiếng Anh là gì? | 2 | WEAK
+BALANCE PATCH | Bản cập nhật cân bằng nhân vật tiếng Anh là gì? | 2 | ADJUSTMENT
+META SHIFT | Thay đổi cách chơi hot hiện tại tiếng Anh là gì? | 2 | STRATEGY CHANGE
+MECHANICAL KEYBOARD | Bàn phím cơ học chơi game tiếng Anh là gì? | 2 | GAMING KEYBOARD
+GAMING MOUSE | Chuột chuyên game cảm biến tiếng Anh là gì? | 2 | PRECISION MOUSE
+INPUT LAG | Trễ phản ứng điều khiển tiếng Anh là gì? | 2 | RESPONSE DELAY
+DESYNC | Không đồng bộ giữa máy chủ tiếng Anh là gì? | 2 | OUT OF SYNC
+ANTI CHEAT | Hệ thống chống gian lận tiếng Anh là gì? | 2 | CHEAT PREVENTION
+PERMABAN | Cấm vĩnh viễn tài khoản gian lận tiếng Anh là gì? | 2 | PERMANENT BAN
+TEMPBAN | Cảnh cáo tạm cấm tài khoản tiếng Anh là gì? | 2 | TIMEOUT
+TOXICITY | Hành vi độc hại gây phiền tiếng Anh là gì? | 2 | HARMFUL BEHAVIOR
+FAIR PLAY | Thái độ thể thao công bằng tiếng Anh là gì? | 2 | ETIQUETTE
+ROLE QUEUE | Hàng chờ chọn vai trò trước tiếng Anh là gì? | 2 | POSITION SELECTION
+VOICE CHAT | Giao tiếp bằng giọng nói tiếng Anh là gì? | 2
+KILL CAM | Camera xem lại cách bạn chết tiếng Anh là gì? | 2 | DEATH FOOTAGE
+SPECTATOR MODE | Chế độ xem trận không chơi tiếng Anh là gì? | 2 | OBSERVER MODE
+CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện tiếng Anh là gì? | 2 | PERSONALIZATION
+COSMETICS | Vật phẩm trang trí không ảnh hưởng tiếng Anh là gì? | 2 | SKINS
+BATTLE PASS | Thẻ hạng nhân vật trả tiền tiếng Anh là gì? | 2 | SEASON PASS
+HARDCORE MODE | Chế độ khó tối đa một lần tiếng Anh là gì? | 2 | IRONMAN MODE
+ROGUELIKE | Trò lặp lại chết mất tiến tiếng Anh là gì? | 2 | PROCEDURAL
+METROIDVANIA | Trò khám phá khoá mở tiếng Anh là gì? | 2 | EXPLORATION GAME
+SKILL CEILING | Mức trần kỹ năng tối đa tiếng Anh là gì? | 2 | SKILL MASTERY
+LEARNING CURVE | Độ khó học chơi trò tiếng Anh là gì? | 2 | EDUCATION PACE
+SCRIM | Trận tập đấu liên tục giữa tiếng Anh là gì? | 2 | PRACTICE MATCH
+PENTAKILL | Giết năm kẻ địch liên tiếp tiếng Anh là gì? | 2 | KILL STREAK
+TEAM WIPE | Tiêu diệt toàn bộ đội địch tiếng Anh là gì? | 2 | TEAM ELIMINATION
+SPLIT PUSH | Tấn công tách riêng bản đồ tiếng Anh là gì? | 3 | SEPARATE PUSH
+JUNGLING | Giết quái rừng kiếm vàng tiếng Anh là gì? | 3 | JUNGLE FARMING
+WARDING | Trồng cây nhìn bản đồ chiến tiếng Anh là gì? | 3 | VISION PLACEMENT
+DEWARD | Phá cây giả vị trí địch tiếng Anh là gì? | 3 | VISION CLEARING
+INVASION | Xâm nhập rừng địch trộm tiếng Anh là gì? | 3 | INCURSION
+TOWER DIVE | Lao vào tháp đánh người tiếng Anh là gì? | 3 | TOWER AGGRESSION
+PICK OFF | Cướp một người riêng rẻ tiếng Anh là gì? | 3 | ISOLATION KILLS
+CUTSCENE | Cảnh điểm phim giữa trò chơi tiếng Anh là gì? | 1 | MOVIE SCENE
+KEYBINDING | Ràng buộc phím tùy chỉnh tiếng Anh là gì? | 1 | KEY MAPPING
