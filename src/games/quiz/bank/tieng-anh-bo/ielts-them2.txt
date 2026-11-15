@@ -1,0 +1,17 @@
+# Bộ đề · IELTS
+ANNOTATION | Ghi chú tiếng Anh là gì? | 1 | NOTE
+DISCOURSE | Bài nói, bài luận tiếng Anh là gì? | 1 | SPEECH, ESSAY
+SEMANTICS | Khoa học về ý nghĩa từ tiếng Anh là gì? | 1
+METHODOLOGY | Phương pháp nghiên cứu tiếng Anh là gì? | 1
+INFERENCE | Suy luận tiếng Anh là gì? | 1 | CONCLUSION, DEDUCTION
+CORRELATION | Mối quan hệ tiếng Anh là gì? | 1 | RELATIONSHIP
+CRITERION | Tiêu chí tiếng Anh là gì? | 1 | STANDARD
+GLOSSARY | Từ điển chuyên ngành tiếng Anh là gì? | 1 | VOCABULARY
+FOREWORD | Lời nói đầu tiếng Anh là gì? | 1 | INTRODUCTION
+MANUSCRIPT | Bản thảo tiếng Anh là gì? | 1
+EXTRAPOLATION | Suy rộng từ dữ liệu tiếng Anh là gì? | 1
+DENOUEMENT | Kết thúc câu chuyện tiếng Anh là gì? | 1 | ENDING, RESOLUTION
+MONOGRAPH | Luận thuyết chuyên sâu tiếng Anh là gì? | 1 | TREATISE
+MEMOIR | Hồi ký cá nhân tiếng Anh là gì? | 1 | AUTOBIOGRAPHY
+ECLOGUE | Bài thơ vùng quê tiếng Anh là gì? | 1 | PASTORAL
+EPOCH | Thời kỳ lịch sử tiếng Anh là gì? | 1 | ERA, ERA

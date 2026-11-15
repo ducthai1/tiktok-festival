@@ -1,0 +1,45 @@
+# Bộ đề · Cảm xúc
+ANXIOUS | Lo lắng tiếng Anh là gì? | 1
+GLEEFUL | Vui sướng tiếng Anh là gì? | 1
+IRRITABLE | Dễ cáu tiếng Anh là gì? | 1
+MISERABLE | Khổ sở tiếng Anh là gì? | 1
+RESTLESS | Vô tâm tiếng Anh là gì? | 1
+TENSE | Căng tiếng Anh là gì? | 1
+UPBEAT | Tích cực tiếng Anh là gì? | 1
+ZESTY | Sôi động tiếng Anh là gì? | 1
+APATHETIC | Thờ ơ tiếng Anh là gì? | 1
+BUOYANT | Vui vẻ tiếng Anh là gì? | 1
+CRANKY | Khó chịu tiếng Anh là gì? | 1
+DOLEFUL | Buồn lặng tiếng Anh là gì? | 1
+EBULLIENT | Phấn khích tràn đầy tiếng Anh là gì? | 1
+FRANTIC | Điên cuồng tiếng Anh là gì? | 1
+GIDDY | Chóng mặt tiếng Anh là gì? | 1
+HASTY | Vội vàng tiếng Anh là gì? | 1
+IRATE | Nổi giận tiếng Anh là gì? | 1
+JOYFUL | Vui mừng tiếng Anh là gì? | 1
+QUIESCENT | Đứng yên tiếng Anh là gì? | 2
+SAGACIOUS | Khôn ngoan tiếng Anh là gì? | 2
+TACITURN | Im lặng tiếng Anh là gì? | 2
+WISTFUL | Tiếc nuối tiếng Anh là gì? | 2
+JUBILANT | Vui sướng tiếng Anh là gì? | 2
+ACERBIC | Cắt khóe tiếng Anh là gì? | 3
+CAPRICIOUS | Thất thường tiếng Anh là gì? | 3
+DEMURE | Kín đáo tiếng Anh là gì? | 3
+FELICITOUS | Thích hợp tiếng Anh là gì? | 3
+INSOUCIANT | Vô tư tiếng Anh là gì? | 3
+PLAINTIVE | Than vãn tiếng Anh là gì? | 3
+QUIXOTIC | Lý tưởng hoá tiếng Anh là gì? | 3
+RAFFISH | Liều lĩnh tiếng Anh là gì? | 3
+TURBID | Hỗn độn tiếng Anh là gì? | 3
+UXORIOUS | Vợ say tiếng Anh là gì? | 3
+WHIMSICAL | Dạo chơi tiếng Anh là gì? | 3
+WINSOME | Duyên dáng tiếng Anh là gì? | 3
+OBSTREPEROUS | Ồn ào tiếng Anh là gì? | 3
+SANGUINE | Lạc quan tiếng Anh là gì? | 3
+TENACIOUS | Bền chí tiếng Anh là gì? | 3
+URBANE | Lịch thiệp tiếng Anh là gì? | 3
+VERBOSE | Nói nhiều tiếng Anh là gì? | 3
+AUSPICIOUS | Có lợi tiếng Anh là gì? | 3
+BELLICOSE | Hùng hổ tiếng Anh là gì? | 3
+CHIVALROUS | Hiệp sĩ tiếng Anh là gì? | 3
+DESPONDENT | Tuyệt vọng tiếng Anh là gì? | 3
