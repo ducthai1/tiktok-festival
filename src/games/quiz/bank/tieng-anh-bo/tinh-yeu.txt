@@ -1,0 +1,223 @@
+# Bộ đề · Tình yêu
+CRUSH | Người mà bạn thích và mong muốn được gần gũi tiếng Anh là gì? | 1
+LOVE | Cảm xúc sâu sắc về ai hoặc cái gì đó tiếng Anh là gì? | 1
+HEART | Bộ phận cơ thể biểu tượng cho tình yêu tiếng Anh là gì? | 1
+DATE | Cuộc gặp mặt lãng mạn với ai đó tiếng Anh là gì? | 1
+HUG | Ôm ai đó với tay tiếng Anh là gì? | 1
+KISS | Chạm môi vào ai đó như biểu hiện tình cảm tiếng Anh là gì? | 1
+COUPLE | Hai người yêu nhau tiếng Anh là gì? | 1
+BOYFRIEND | Bạn trai của ai đó tiếng Anh là gì? | 1
+GIRLFRIEND | Bạn gái của ai đó tiếng Anh là gì? | 1
+WEDDING | Buổi lễ kết hôn tiếng Anh là gì? | 1
+BRIDE | Cô dâu trong đám cưới tiếng Anh là gì? | 1
+GROOM | Chú rể trong đám cưới tiếng Anh là gì? | 1
+FLOWER | Cây hoa để tặng người yêu tiếng Anh là gì? | 1
+ROSE | Loài hoa đỏ biểu tượng của tình yêu tiếng Anh là gì? | 1
+CHOCOLATE | Kẹo ngọt làm từ ca cao tiếng Anh là gì? | 1
+VALENTINE | Ngày lễ tình yêu ngày 14 tháng 2 tiếng Anh là gì? | 1
+PROPOSE | Cầu hôn, xin người kia lấy mình tiếng Anh là gì? | 1
+MARRY | Kết hôn với ai đó tiếng Anh là gì? | 1
+RING | Vòng trang sức đeo trên ngón tay tiếng Anh là gì? | 1
+BOUQUET | Bó hoa xinh đẹp tiếng Anh là gì? | 1
+ROMANTIC | Liên quan đến tình yêu và lãng mạn tiếng Anh là gì? | 1
+IN LOVE | Trạng thái yêu ai đó tiếng Anh là gì? | 1
+SWEETHEART | Người yêu, bạn trai/gái tiếng Anh là gì? | 1
+DARLING | Cách gọi thân thiết cho người yêu tiếng Anh là gì? | 1
+HONEY | Tên gọi yêu thương cho người yêu tiếng Anh là gì? | 1
+DEAR | Cách gọi yêu thương tiếng Anh là gì? | 1
+LOVER | Người yêu tiếng Anh là gì? | 1
+ADMIRE | Yêu quý, ngưỡng mộ ai đó tiếng Anh là gì? | 1
+LIKE | Thích ai đó tiếng Anh là gì? | 1
+CARE | Quan tâm, chăm sóc ai đó tiếng Anh là gì? | 1
+HANDSOME | Đẹp trai (nói về con trai) tiếng Anh là gì? | 1
+BEAUTIFUL | Xinh đẹp tiếng Anh là gì? | 1
+PRETTY | Xinh xắn tiếng Anh là gì? | 1
+LOVELY | Dễ thương, đáng yêu tiếng Anh là gì? | 1
+SWEET | Ngọt ngào, tốt bụng tiếng Anh là gì? | 1
+SMILE | Cười vui vẻ tiếng Anh là gì? | 1
+ADORE | Rất yêu thích ai đó tiếng Anh là gì? | 1
+HOLD HANDS | Nắm tay tiếng Anh là gì? | 1
+CUDDLE | Ôm nhau ấm áp tiếng Anh là gì? | 1
+CHERISH | Cưng chiều, quý trọng tiếng Anh là gì? | 1
+EMBRACE | Ôm nhau tiếng Anh là gì? | 1
+CARESS | Vuốt ve, âu yếm tiếng Anh là gì? | 1
+DANCE | Nhảy múa với ai đó tiếng Anh là gì? | 1
+MUSIC | Âm nhạc lãng mạn tiếng Anh là gì? | 1
+CANDLE | Nến rực sáng trong bữa tối lãng mạn tiếng Anh là gì? | 1
+DINNER | Bữa ăn tối lãng mạn tiếng Anh là gì? | 1
+GIFT | Quà tặng cho người yêu tiếng Anh là gì? | 1
+PRESENT | Món quà tiếng Anh là gì? | 1
+CARD | Tấm thiệp lãng mạn tiếng Anh là gì? | 1
+LETTER | Thư tình yêu tiếng Anh là gì? | 1
+POEM | Bài thơ về tình yêu tiếng Anh là gì? | 1
+VEIL | Tấm voan trên đầu cô dâu tiếng Anh là gì? | 1
+DRESS | Váy cưới tiếng Anh là gì? | 1
+SUIT | Bộ quần áo chủ rể tiếng Anh là gì? | 1
+CHURCH | Nhà thờ nơi tổ chức đám cưới tiếng Anh là gì? | 1
+VOWS | Lời thề kết hôn tiếng Anh là gì? | 1
+WIFE | Vợ, người phụ nữ đã kết hôn tiếng Anh là gì? | 1
+HUSBAND | Chồng, người đàn ông đã kết hôn tiếng Anh là gì? | 1
+MARRIED | Đã kết hôn tiếng Anh là gì? | 1
+SINGLE | Độc thân, chưa kết hôn tiếng Anh là gì? | 1
+DIVORCED | Ly dị, đã chia tay vợ/chồng tiếng Anh là gì? | 1
+ENGAGED | Đã đính hôn tiếng Anh là gì? | 1
+DATING | Đang hẹn hò tiếng Anh là gì? | 1
+RELATIONSHIP | Mối quan hệ giữa hai người tiếng Anh là gì? | 1
+TOGETHER | Ở bên nhau tiếng Anh là gì? | 1
+FOREVER | Mãi mãi cùng nhau tiếng Anh là gì? | 1
+MISS | Nhớ nhung ai đó tiếng Anh là gì? | 1
+REMEMBER | Nhớ lại khoảnh khắc tiếng Anh là gì? | 1
+DREAM | Mơ thấy ai đó tiếng Anh là gì? | 1
+HAPPY | Vui sướng, hạnh phúc tiếng Anh là gì? | 1
+SAD | Buồn bã tiếng Anh là gì? | 1
+LONELY | Cảm thấy cô đơn tiếng Anh là gì? | 1
+CUPID | Thần tình yêu trong thần thoại tiếng Anh là gì? | 1
+ANGEL | Thiên thần, thần mộ tiếng Anh là gì? | 1
+BLIND DATE | Cuộc hẹn hò không biết trước tiếng Anh là gì? | 1
+FLIRT | Tán tỉnh, nhều nhếch với ai đó tiếng Anh là gì? | 2
+JEALOUS | Ghen tức, không chịu chia sẻ tiếng Anh là gì? | 2
+BUTTERFLIES | Cảm giác rối loạn trong bụng khi yêu tiếng Anh là gì? | 2
+HEARTBREAK | Đau lòng vì yêu bị từ chối tiếng Anh là gì? | 2
+BREAKUP | Chia tay tiếng Anh là gì? | 2
+HONEYMOON | Kỳ trăng mật sau kết hôn tiếng Anh là gì? | 2
+ENGAGEMENT | Kì đính hôn trước kết hôn tiếng Anh là gì? | 2
+ANNIVERSARY | Ngày kỷ niệm yêu nhau tiếng Anh là gì? | 2
+SOULMATE | Người kia trong cuộc sống tiếng Anh là gì? | 2
+AFFECTION | Tình cảm yêu thương tiếng Anh là gì? | 2
+ADMIRATION | Sự ngưỡng mộ, tôn trọng tiếng Anh là gì? | 2
+DEVOTION | Sự tận tâm, hiến dâng cho ai đó tiếng Anh là gì? | 2
+TENDERNESS | Sự dịu dàng, yêu thương tiếng Anh là gì? | 2
+ROMANCE | Mối quan hệ tình cảm lãng mạn tiếng Anh là gì? | 2
+CONFESSION | Khai báo tình cảm cho ai đó tiếng Anh là gì? | 2
+PASSION | Cơn sốt, khao khát mạnh mẽ tiếng Anh là gì? | 2
+COURTSHIP | Thời kì yêu nhau trước hôn nhân tiếng Anh là gì? | 2
+LOYALTY | Sự trung thành tiếng Anh là gì? | 2
+FAITHFULNESS | Sự chung thủy tiếng Anh là gì? | 2
+JEALOUSY | Cảm giác ghen tức tiếng Anh là gì? | 2
+ELOPEMENT | Chạy trốn để kết hôn tiếng Anh là gì? | 2
+RECONCILIATION | Tái hợp sau khi chia tay tiếng Anh là gì? | 2
+LONG DISTANCE | Yêu nhau từ xa, không cùng nơi tiếng Anh là gì? | 2
+COMMITMENT | Sự cam kết trong tình yêu tiếng Anh là gì? | 2
+TRUST | Sự tin tưởng tiếng Anh là gì? | 2
+COMMUNICATION | Giao tiếp, nói chuyện tiếng Anh là gì? | 2
+SUPPORT | Ủng hộ, hỗ trợ tiếng Anh là gì? | 2
+UNDERSTANDING | Hiểu rõ, thấu cảm tiếng Anh là gì? | 2
+COMPROMISE | Nhường nhịn lẫn nhau tiếng Anh là gì? | 2
+RESPECT | Sự tôn trọng tiếng Anh là gì? | 2
+EQUALITY | Bình đẳng trong tình yêu tiếng Anh là gì? | 2
+COMPATIBILITY | Sự phù hợp giữa hai người tiếng Anh là gì? | 2
+CHEMISTRY | Sự hóa học, cảm ứng tiếng Anh là gì? | 2
+SPARK | Lửa tình cảm tiếng Anh là gì? | 2
+CONNECTION | Kết nối, liên kết với ai đó tiếng Anh là gì? | 2
+FASCINATED | Bị mê hoặc tiếng Anh là gì? | 2
+ATTACHMENT | Sự gắn bó, yêu thương tiếng Anh là gì? | 2
+LONGING | Khao khát, mong mỏi tiếng Anh là gì? | 2
+YEARNING | Khao khát, hằng mong tiếng Anh là gì? | 2
+ADMIRABLE | Đáng ngưỡng mộ, tốt tiếng Anh là gì? | 2
+ALLURE | Sức hấp dẫn, lôi cuốn tiếng Anh là gì? | 2
+CAPTIVATED | Bị lôi cuốn, bị mê tiếng Anh là gì? | 2
+DEVOTED | Tận tâm, hết lòng tiếng Anh là gì? | 2
+NURTURE | Chăm sóc, nuôi dạy tiếng Anh là gì? | 2
+BOND | Liên kết, mối quan hệ tiếng Anh là gì? | 2
+CHERISHED | Được yêu thương, quý trọng tiếng Anh là gì? | 2
+ADORATION | Sự tôn thờ, yêu quý tiếng Anh là gì? | 2
+COMPANIONSHIP | Tình bạn, sự sống chung tiếng Anh là gì? | 2
+FIDELITY | Sự trung thành tiếng Anh là gì? | 2
+VULNERABILITY | Sự dễ bị tổn thương tiếng Anh là gì? | 2
+OPENNESS | Sự cởi mở, thể hiện cảm xúc tiếng Anh là gì? | 2
+PATIENCE | Sự kiên nhẫn tiếng Anh là gì? | 2
+FORGIVENESS | Sự tha thứ tiếng Anh là gì? | 2
+ACCEPTANCE | Sự chấp nhận tiếng Anh là gì? | 2
+BELONGING | Cảm giác thuộc về tiếng Anh là gì? | 2
+WARMTH | Cảm giác ấm áp, tình cảm tiếng Anh là gì? | 2
+CHARMING | Quyến rũ, duyên dáng tiếng Anh là gì? | 2
+MAGNETISM | Sức hấp dẫn tiếng Anh là gì? | 2
+FASCINATION | Sự mê hoặc tiếng Anh là gì? | 2
+ENCHANTING | Quyến rũ, lôi cuốn tiếng Anh là gì? | 2
+CAPTIVATING | Lôi cuốn, bắt mắt tiếng Anh là gì? | 2
+ARDOR | Sự say đắm, nhiệt tình tiếng Anh là gì? | 3
+BETROTHAL | Sự đúc kết hôn tiếng Anh là gì? | 3
+CHAPERONE | Người đi kèm theo để giám sát tiếng Anh là gì? | 3
+WOOING | Hành động tán tỉnh, chinh phục tiếng Anh là gì? | 3
+AMOROUS | Đầy tình cảm, yêu đương tiếng Anh là gì? | 3
+ARDENT | Sốt sắng, say đắm tiếng Anh là gì? | 3
+BESOTTED | Mê hoặc, bị cuốn hút tiếng Anh là gì? | 3
+ENAMORED | Yêu mê mệt tiếng Anh là gì? | 3
+SMITTEN | Bị mê hoặc bởi tình yêu tiếng Anh là gì? | 3
+UNREQUITED | Tình yêu không được đáp lại tiếng Anh là gì? | 3
+CONSORT | Bạn đời, vợ chồng tiếng Anh là gì? | 3
+SUITOR | Chàng trai tìm kiếm bạn gái tiếng Anh là gì? | 3
+COURTLY | Lịch sự, quý phái tiếng Anh là gì? | 3
+ELOPE | Chạy trốn để kết hôn tiếng Anh là gì? | 3
+TENDERHEARTED | Có trái tim từng tốt tiếng Anh là gì? | 3
+LIGHTHEARTED | Vui vẻ, không suy nghĩ quá tiếng Anh là gì? | 3
+VIVACIOUS | Sống động, vui tươi tiếng Anh là gì? | 3
+GRACIOUS | Lịch sự, tốt bụng tiếng Anh là gì? | 3
+TRANSFIXED | Bị mê hoặc, say mê tiếng Anh là gì? | 3
+MESMERIZED | Bị mê hoặc tiếng Anh là gì? | 3
+FERVENT | Nồng nàn, say đắm tiếng Anh là gì? | 3
+SENTIMENTAL | Tình cảm, lãng mạn tiếng Anh là gì? | 3
+SENTIMENTALITY | Sự tình cảm, lãng mạn tiếng Anh là gì? | 3
+DOTE | Yêu thương quá mức tiếng Anh là gì? | 3
+DOTING | Yêu thương quá mức tiếng Anh là gì? | 3
+ENRAPTURE | Làm vui sướng tiếng Anh là gì? | 3
+ENRAPTURED | Vui sướng, say mê tiếng Anh là gì? | 3
+ENTRANCED | Bị mê hoặc, say mê tiếng Anh là gì? | 3
+FONDNESS | Sự yêu thương, ưa thích tiếng Anh là gì? | 3
+BLUSH | Đỏ mặt vì xấu hổ hoặc thích ai tiếng Anh là gì? | 1
+FRIENDSHIP | Mối quan hệ bạn bè tiếng Anh là gì? | 1
+FAMILY | Gia đình, những người thân yêu tiếng Anh là gì? | 1
+MOTHER | Mẹ, người phụ nữ sinh ra bạn tiếng Anh là gì? | 1
+FATHER | Bố, người đàn ông sinh ra bạn tiếng Anh là gì? | 1
+SISTER | Chị em gái tiếng Anh là gì? | 1
+BROTHER | Anh em trai tiếng Anh là gì? | 1
+BABY | Em bé, trẻ sơ sinh tiếng Anh là gì? | 1
+CHILD | Trẻ em tiếng Anh là gì? | 1
+PARENT | Bố mẹ, người nuôi dạy tiếng Anh là gì? | 1
+FRIEND | Bạn, người bạn thân tiếng Anh là gì? | 1
+STRANGER | Người lạ mặt tiếng Anh là gì? | 1
+LAUGHTER | Tiếng cười, sự vui vẻ tiếng Anh là gì? | 1
+TEARS | Nước mắt tiếng Anh là gì? | 1
+ARGUE | Tranh cãi, cứng rắn tiếng Anh là gì? | 1
+FIGHT | Cãi nhau, đánh nhau tiếng Anh là gì? | 1
+PEACE | Hòa bình, yên tĩnh tiếng Anh là gì? | 1
+SURPRISE | Bất ngờ, sự kinh ngạc tiếng Anh là gì? | 1
+EMOTIONAL | Cảm thụ, dễ bị cuốn theo cảm xúc tiếng Anh là gì? | 2
+NOSTALGIC | Nhớ lại quá khứ, luyến tiếc tiếng Anh là gì? | 2
+ONLINE DATING | Hẹn hò trực tuyến qua mạng tiếng Anh là gì? | 2
+SPEED DATING | Hẹn hò nhanh chóng tiếng Anh là gì? | 2
+FIRST DATE | Lần hẹn hò đầu tiên tiếng Anh là gì? | 2
+WEDDING DRESS | Váy cưới tiếng Anh là gì? | 2
+WEDDING CAKE | Bánh cưới tiếng Anh là gì? | 2
+WEDDING RING | Nhẫn cưới tiếng Anh là gì? | 2
+WEDDING BELLS | Chuông cưới tiếng Anh là gì? | 2
+HONEYMOON PHASE | Giai đoạn hồng hận tiếng Anh là gì? | 2
+DIVORCE | Ly dị, sự chia tay vợ chồng tiếng Anh là gì? | 2
+DIVORCED PARENTS | Bố mẹ đã ly dị tiếng Anh là gì? | 2
+SINGLE PARENT | Bố hoặc mẹ đơn thân tiếng Anh là gì? | 2
+STEPMOTHER | Mẹ kế, vợ của bố tiếng Anh là gì? | 2
+STEPFATHER | Bố kế, chồng của mẹ tiếng Anh là gì? | 2
+STEPCHILD | Con kế tiếng Anh là gì? | 2
+SIBLING | Anh em ruột tiếng Anh là gì? | 2
+RELATIVE | Họ hàng, bà con tiếng Anh là gì? | 2
+EXTENDED FAMILY | Gia đình mở rộng tiếng Anh là gì? | 2
+NUCLEAR FAMILY | Gia đình hạt nhân tiếng Anh là gì? | 2
+FAMILY GATHERING | Họp mặt gia đình tiếng Anh là gì? | 2
+PARENTAL LOVE | Tình yêu cha mẹ dành con tiếng Anh là gì? | 2
+UNCONDITIONAL LOVE | Tình yêu vô điều kiện tiếng Anh là gì? | 2
+PUPPY LOVE | Tình yêu khi còn bé tiếng Anh là gì? | 2
+TOXIC RELATIONSHIP | Mối quan hệ độc hại tiếng Anh là gì? | 2
+HEALTHY RELATIONSHIP | Mối quan hệ lành mạnh tiếng Anh là gì? | 2
+DATING APP | Ứng dụng hẹn hò trên điện thoại tiếng Anh là gì? | 2
+PROFILE | Hồ sơ, tiểu sử cá nhân tiếng Anh là gì? | 2
+MATCH | Sự phù hợp, ghép cặp tiếng Anh là gì? | 2
+DATING PROFILE | Hồ sơ hẹn hò tiếng Anh là gì? | 2
+SWIPE | Vuốt trái hoặc phải tiếng Anh là gì? | 2
+UNMATCH | Hủy ghép cặp tiếng Anh là gì? | 2
+RELATIONSHIP STATUS | Tình trạng quan hệ tiếng Anh là gì? | 2
+COMMITTED | Cam kết, gắn bó sâu trong tình yêu tiếng Anh là gì? | 2
+ROMANTIC DINNER | Bữa tối lãng mạn tiếng Anh là gì? | 2
+ROMANTIC MOVIE | Phim lãng mạn tiếng Anh là gì? | 2
+MARRIAGE PROPOSAL | Lời cầu hôn tiếng Anh là gì? | 2
+NUPTIAL | Liên quan đến lễ cưới tiếng Anh là gì? | 3
+MARITAL | Liên quan đến hôn nhân tiếng Anh là gì? | 3
