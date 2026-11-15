@@ -23,6 +23,18 @@ function loadBanks() {
 }
 
 /** Luyện nghe: MỌI từ tiếng Anh trong kho (Tổng hợp + mọi bộ, mọi độ khó), bỏ trùng; chỉ từ giọng đọc đọc được (không tục). */
+// 🌐 Tổng hợp = MỌI từ trong kho (từ chung + mọi bộ đề), mỗi đáp án một lần. Không lo lặp: sổ "đã hỏi" dùng chung mọi bộ
+// (english-switcher.js) — Tổng hợp đã hỏi từ nào thì bộ riêng bỏ qua từ đó và ngược lại.
+function allWords(english, sets) {
+  const seen = new Set();
+  return [...english.filter((q) => !q.basic), ...Object.values(sets).flat()].filter((q) => {
+    const key = foldText(q.answer);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function listenPool(english, sets) {
   const seen = new Set();
   return [...english, ...Object.values(sets).flat()].filter((q) => {
@@ -44,7 +56,7 @@ export function createQuizGames({ random = Math.random, englishProgress = null, 
   const bag = (items) => createShuffleBag(items, random);
   // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)
   const english = createEnglishSwitcher({
-    general: b.english.filter((q) => !q.basic), basic: b.english.filter((q) => q.basic), sets: b.englishSets, random,
+    general: allWords(b.english, b.englishSets), basic: b.english.filter((q) => q.basic), sets: b.englishSets, random,
     progress: englishProgress, listen: listenPool(b.english, b.englishSets), listenReady: englishListenReady, onPrefetch: onEnglishAnswer
   });
   const emoji = createEmojiSwitcher({ all: b.emoji, random });

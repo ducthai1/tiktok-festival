@@ -30,7 +30,8 @@ export const ENGLISH_GIFT_PLAN = {
   dulich: 'Journey Pass', giaitri: 'Divine Fingers',
   // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + Thành ngữ (trang 2) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
   normal: 'Ice Cream Cone', thanhngu: 'Encore Ticket',
-  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail', thoitrang: 'Bravo!', kinhdoanh: 'Name shoutout'
+  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail',
+  dongtu: 'Name shoutout', nghenghiep: 'Bravo!', camxuc: 'Love you so much', nhacua: 'Tiny Blush'
 };
 /** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
 export const STREAMER_SEEN_GIFTS = ['Peach'];
@@ -62,23 +63,26 @@ export const ENGLISH_TARGETS = {
   game:      { kind: 'set',   icon: '🎮', label: 'Game' },
   tinhyeu:   { kind: 'set',   icon: '💘', label: 'Tình yêu' },
   bian:      { kind: 'set',   icon: '👻', label: 'Bí ẩn' },
-  thoitrang: { kind: 'set',   icon: '👗', label: 'Thời trang' },
-  kinhdoanh: { kind: 'set',   icon: '💰', label: 'Làm giàu' } // tiền bạc, kinh doanh (nhãn ngắn cho vừa ô)
+  dongtu:    { kind: 'set',   icon: '🏃', label: 'Động từ' }, // động từ + tính từ thông dụng
+  nghenghiep:{ kind: 'set',   icon: '👷', label: 'Nghề nghiệp' },
+  camxuc:    { kind: 'set',   icon: '😍', label: 'Cảm xúc' }, // cảm xúc, tính cách, cơ thể
+  nhacua:    { kind: 'set',   icon: '🏠', label: 'Nhà cửa' } // nhà cửa, quần áo, đồ vật
 };
 export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '⚖️', label: 'Độ khó: Thường' } };
 // thứ tự ô trên bảng quà (8 ô / trang, quiz-scene.js): trang 1 cơ bản + độ khó + TOEIC/IELTS + Luyện nghe · trang 2 chủ đề · trang 3 chủ đề mới
 export const ORDER = [
   'general', 'easy', 'normal', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
   'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri', 'thanhngu',
-  'vutru', 'game', 'tinhyeu', 'bian', 'thoitrang', 'kinhdoanh'
+  'vutru', 'dongtu', 'nghenghiep', 'camxuc', 'nhacua', 'game', 'tinhyeu', 'bian'
 ];
 // ĐỔI ORDER thì tăng số này: bảng quà chủ kênh đã lưu (data/settings.json) được xếp lại MỘT lần theo thứ tự mới lúc khởi động (app.js);
 // ô MỚI của phiên bản đó (ADDED_IN) được thêm vào bảng đã lưu với món quà mặc định (nếu món đó chưa gán cho ô khác)
-export const ORDER_VERSION = 3;
-const ADDED_IN = { 3: ['normal', 'thanhngu', 'vutru', 'game', 'tinhyeu', 'bian', 'thoitrang', 'kinhdoanh'] };
+export const ORDER_VERSION = 4;
+const ADDED_IN = { 3: ['normal', 'thanhngu', 'vutru', 'game', 'tinhyeu', 'bian'], 4: ['dongtu', 'nghenghiep', 'camxuc', 'nhacua'] };
 /** Bảng quà đã lưu ở phiên bản `from` → phiên bản hiện tại: thêm ô mới + xếp theo ORDER. */
 export function upgradeSavedRules(saved, from = 1) {
   const added = Object.entries(ADDED_IN).filter(([v]) => Number(v) > from).flatMap(([, list]) => list);
+  saved = saved.filter((r) => ENGLISH_TARGETS[r?.to]); // ô đã bỏ (vd Thời trang, Làm giàu bản 3) → bỏ khỏi bảng đã lưu
   const have = new Set(saved.map((r) => r.to));
   const gifts = new Set(saved.map((r) => String(r.gift?.id ?? r.giftId ?? '')));
   const extra = defaultEnglishRules().filter((r) => added.includes(r.to) && !have.has(r.to) && !gifts.has(String(r.gift.id)));

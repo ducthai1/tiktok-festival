@@ -20,8 +20,12 @@ test('upgrading saved gift rules adds the new slots (Thường, Thành ngữ, pa
   const up = upgradeSavedRules(saved, 2);
   assert.deepEqual(up.slice(0, 8).map((r) => r.to), ['general', 'easy', 'normal', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe']);
   assert.ok(!up.some((r) => r.to === 'dongvat')); // ô chủ kênh đã xoá không tự quay lại
-  assert.ok(['thanhngu', 'vutru', 'game', 'tinhyeu', 'bian', 'thoitrang', 'kinhdoanh'].every((to) => up.some((r) => r.to === to)));
+  assert.ok(['thanhngu', 'vutru', 'game', 'tinhyeu', 'bian', 'dongtu', 'nghenghiep', 'camxuc', 'nhacua'].every((to) => up.some((r) => r.to === to)));
+  // bảng đã nâng lên bản 3 (còn ô Thời trang / Làm giàu đã bỏ) → bản 4: bỏ ô không còn, thêm ô mới
+  const v3 = [...up, { to: 'thoitrang', gift: { id: 'x1', name: 'Bravo!', coins: 15 }, questions: 20, enabled: true }];
+  const v4 = upgradeSavedRules(v3, 3);
+  assert.ok(!v4.some((r) => r.to === 'thoitrang'));
   assert.ok(saved.every((r) => up.includes(r))); // quà / số câu đã chọn giữ nguyên
   assert.equal(new Set(up.map((r) => r.gift.id)).size, up.length); // không món nào gán hai ô
-  assert.deepEqual(upgradeSavedRules(up, 3), up); // đã nâng cấp → không thêm lần nữa
+  assert.deepEqual(upgradeSavedRules(up, 4), up); // đã nâng cấp → không thêm lần nữa
 });

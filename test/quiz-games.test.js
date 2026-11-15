@@ -39,9 +39,9 @@ test('quiz banks: every question is answerable and A/B/C/D options are distinct'
   const text = [...loadClassroomQuestions(), ...loadEnglishQuestions(), ...loadEmojiQuestions(), ...loadFlagQuestions()];
   assert.ok(text.length > 3000);
   for (const q of text) assert.ok(q.answer && q.accept.length && q.accept.every(Boolean), JSON.stringify(q));
-  const english = loadEnglishQuestions();
-  assert.ok(english.length > 1000, `tiếng Anh chỉ có ${english.length} câu`);
-  for (const q of english) assert.ok(q.category.startsWith('Tiếng Anh · ') && /^[A-Z][A-Z -]*$/.test(q.answer), JSON.stringify(q));
+  const english = [...loadEnglishQuestions(), ...Object.values(loadEnglishSets()).flat()]; // Tổng hợp = từ chung + mọi bộ đề
+  assert.ok(english.length > 6000, `tiếng Anh chỉ có ${english.length} câu`);
+  for (const q of english) assert.ok(q.category.startsWith('Tiếng Anh · ') && /^[A-Z0-9][A-Z0-9 '&.-]*$/.test(q.answer), JSON.stringify(q));
   const choice = loadChoiceQuestions();
   assert.ok(choice.length > 4000);
   for (const q of choice) assert.equal(new Set([q.right, ...q.wrong]).size, 4, q.prompt);
@@ -236,7 +236,8 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: 'Finger Heart', diamondsEach: 5 }), 'dongvat');
   assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), 'hard'); // giờ ghi đúng giá thật 1 xu (13/11 từng ghi 5 xu)
   assert.equal(englishTargetFor(a, { id: '9947', name: 'Vòng cổ tình bạn', diamondsEach: 10 }), 'toeic'); // tên tiếng Việt: nhận theo id quà thật
-  assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), null);
+  assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), 'camxuc');
+  assert.equal(englishTargetFor(a, { name: 'Wink wink', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), 'normal'); // ⚖️ về độ khó Thường
   assert.equal(englishTargetFor(a, { name: 'GG', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Brown Paw', diamondsEach: 0 }), null); // không rõ giá → không đổi
@@ -261,7 +262,7 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.equal(game.snapshot(0).control.set, 'general');
   // chưa có giọng đọc → ẩn ô 🎧; bộ chưa có câu hỏi → ẩn ô
   assert.deepEqual(game.snapshot(0).control.rules.map((r) => r.to), ORDER.filter((to) => to !== 'nghe' && (!(to in sets) || sets[to].length)));
-  assert.deepEqual(gift(8, '4', 'Love you so much', 1, 5).map((f) => f.kind), ['quizGift']); // món 1 xu: chỉ cảm ơn, không đổi bộ đề
+  assert.deepEqual(gift(8, '4', 'Wink wink', 1, 5).map((f) => f.kind), ['quizGift']); // món 1 xu: chỉ cảm ơn, không đổi bộ đề
   const q1 = game.snapshot(5).qNumber;
   const fx = gift(7, '3', 'Friendship Necklace', 10, 10);
   assert.deepEqual(fx.map((f) => f.kind), ['quizDeck', 'quizQuestion']); // đổi NGAY: câu mới ra liền

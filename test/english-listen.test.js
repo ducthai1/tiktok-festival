@@ -157,7 +157,8 @@ test('listening: another Doughnut restarts the 40 and the 20-question protection
   assert.ok(again.deck.next().listen);
 });
 
-test('Đồ vật is no longer a gift slot: its words are in the general pool', () => {
-  assert.ok(!('dovat' in loadEnglishSets()));
-  assert.ok(loadEnglishQuestions().some((q) => q.category === 'Tiếng Anh · Đồ vật'));
+test('Đồ vật is no longer its own slot: its words live in the 🏠 Nhà cửa set (page 3)', () => {
+  const sets = loadEnglishSets();
+  assert.ok(!('dovat' in sets));
+  assert.ok(sets.nhacua.some((q) => q.category === 'Tiếng Anh · Đồ vật'));
 });
