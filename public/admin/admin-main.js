@@ -204,7 +204,8 @@ function renderState(m) {
   }));
   if (!amb.length) $('ambassadors').replaceChildren(Object.assign(document.createElement('li'), { textContent: 'Chưa ai share trong 2 tiếng qua' }));
 
-  $('viewers-status').textContent = `👀 ${v.count || 0} người xem · đang chờ chào: ${v.waiting || 0} · `
+  $('viewers-count').textContent = (v.count || 0).toLocaleString('vi-VN');
+  $('viewers-status').textContent = `Đang chờ chào: ${v.waiting || 0} · `
     + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
   const t = m.totals;
   $('totals').textContent = `Phiên này: ${t.viewers} người · ${t.diamonds}💎 · ${t.likes}❤ · ${t.chats} bình luận · ${t.follows} follow · ${t.shares} share`;
@@ -281,6 +282,11 @@ function applySettings(s) {
   $('set-volume').value = String(s.volume ?? 0.6);
   $('set-music').checked = s.music !== false;
   $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
+  // 🎄 chủ đề Giáng sinh: một nút đổi cả màn hình live + nhạc + trang điều khiển
+  const xmas = s.season === 'christmas';
+  document.body.classList.toggle('xmas', xmas);
+  $('season-xmas').setAttribute('aria-pressed', String(xmas));
+  $('season-xmas').textContent = xmas ? '🎄 Giáng sinh: BẬT' : '🎄 Giáng sinh: TẮT';
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
@@ -560,6 +566,10 @@ for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'ttsEnglish', 'legend'
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');
+});
+$('season-xmas').addEventListener('click', () => {
+  const on = $('season-xmas').getAttribute('aria-pressed') === 'true';
+  run({ t: 'settings', season: on ? '' : 'christmas' }, on ? 'Đã tắt chủ đề Giáng sinh' : '🎄 Đã bật chủ đề Giáng sinh — màn hình live + nhạc nền');
 });
 $('set-ttsVoice').addEventListener('change', (e) => run({ t: 'settings', ttsVoice: e.target.value }, 'Đã đổi giọng đọc'));
 // Nghe thử giọng ngay trên trang này (máy chủ đọc bằng VieNeu; lần đầu mỗi câu mất 1–3 giây)

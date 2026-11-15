@@ -71,7 +71,7 @@ export function createQuizGame({
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
   onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null,
   onRoomReset = null, // phòng live mới: tab tự xoá trạng thái riêng của phòng cũ (vd tab tiếng Anh: chế độ đề đang chạy)
-  donors = null // 👑 Bảng vàng dùng chung mọi tab (game-hub.js → donor-ledger.js: cả lịch sử quà trong data/gifts.log)
+  donors = null // 👑 Bảng vàng (phiên live hiện tại) dùng chung mọi tab — game-hub.js → donor-ledger.js
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -642,7 +642,7 @@ export function createQuizGame({
           follows: followCount % FOLLOW_GOAL, followGoal: FOLLOW_GOAL },
         ambassadors: [...sharers.values()].sort((a, b) => b.shares - a.shares).slice(0, 3)
           .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, shares: r.shares, follower: followers.has(r.id) })),
-        // 👑 BẢNG VÀNG: 3 người tặng nhiều 💎 nhất từ trước tới nay (cả lịch sử quà — donor-ledger.js)
+        // 👑 BẢNG VÀNG: 3 người tặng nhiều 💎 nhất trong phiên live hiện tại (donor-ledger.js)
         donators: (donors?.top(3) || []).map((r) => ({ ...r, follower: followers.has(r.id) })),
         comments: feed.slice(-12)
       };

@@ -27,7 +27,10 @@ export const ENGLISH_GIFT_PLAN = {
   general: 'TikTok', easy: 'Rose', hard: "You're awesome", dongvat: 'Finger Heart', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
   // trang 2 (chủ kênh 14/11/2026: hạ giá về 10 xu): hộp quà chỉ có 6 món 10 xu ai cũng thấy (Rosa dùng ở trang 1)
   toeic: 'Friendship Necklace', ielts: 'I Like What I See', congnghe: 'Curious Twinkle', bongda: 'Spinning Soccer', yhoc: 'Slow motion',
-  dulich: 'Journey Pass', giaitri: 'Divine Fingers'
+  dulich: 'Journey Pass', giaitri: 'Divine Fingers',
+  // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + Thành ngữ (trang 2) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
+  normal: 'Ice Cream Cone', thanhngu: 'Encore Ticket',
+  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail', thoitrang: 'Bravo!', kinhdoanh: 'Name shoutout'
 };
 /** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
 export const STREAMER_SEEN_GIFTS = ['Peach'];
@@ -36,6 +39,7 @@ export const ENGLISH_TARGETS = {
   // Trang 1: Đại trà & Dễ chơi (hiện 20s) — quà 1 / 5 / 10 / 30 xu (Đồ vật đã gộp vào Tổng hợp)
   general:   { kind: 'reset', icon: '🌐', label: 'Tổng hợp' },
   easy:      { kind: 'level', icon: '😊', label: 'Dễ' },
+  normal:    { kind: 'level', icon: '⚖️', label: 'Thường' }, // về độ khó thường (trộn mọi bậc)
   hard:      { kind: 'level', icon: '🔥', label: 'Khó' },
   dongvat:   { kind: 'set',   icon: '🐾', label: 'Động vật' },
   amthuc:    { kind: 'set',   icon: '🍕', label: 'Ẩm thực' },
@@ -50,16 +54,36 @@ export const ENGLISH_TARGETS = {
   bongda:    { kind: 'set',   icon: '⚽', label: 'Thể thao' },
   yhoc:      { kind: 'set',   icon: '🩺', label: 'Y học' },
   dulich:    { kind: 'set',   icon: '✈️', label: 'Du lịch' },
-  giaitri:   { kind: 'set',   icon: '🎬', label: 'Giải trí' }
+  giaitri:   { kind: 'set',   icon: '🎬', label: 'Giải trí' },
+  thanhngu:  { kind: 'set',   icon: '💬', label: 'Thành ngữ' },
+
+  // Trang 3 (15/11/2026): chủ đề mới — ô chưa có câu hỏi thì tự ẩn (english-switcher.js)
+  vutru:     { kind: 'set',   icon: '🚀', label: 'Vũ trụ' },
+  game:      { kind: 'set',   icon: '🎮', label: 'Game' },
+  tinhyeu:   { kind: 'set',   icon: '💘', label: 'Tình yêu' },
+  bian:      { kind: 'set',   icon: '👻', label: 'Bí ẩn' },
+  thoitrang: { kind: 'set',   icon: '👗', label: 'Thời trang' },
+  kinhdoanh: { kind: 'set',   icon: '💰', label: 'Làm giàu' } // tiền bạc, kinh doanh (nhãn ngắn cho vừa ô)
 };
 export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '⚖️', label: 'Độ khó: Thường' } };
-// thứ tự ô trên bảng quà (7 ô / trang): trang 1 có TOEIC, IELTS (Động vật, Trường học sang trang 2)
+// thứ tự ô trên bảng quà (8 ô / trang, quiz-scene.js): trang 1 cơ bản + độ khó + TOEIC/IELTS + Luyện nghe · trang 2 chủ đề · trang 3 chủ đề mới
 export const ORDER = [
-  'general', 'easy', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
-  'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri'
+  'general', 'easy', 'normal', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
+  'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri', 'thanhngu',
+  'vutru', 'game', 'tinhyeu', 'bian', 'thoitrang', 'kinhdoanh'
 ];
-// ĐỔI ORDER thì tăng số này: bảng quà chủ kênh đã lưu (data/settings.json) được xếp lại MỘT lần theo thứ tự mới lúc khởi động (app.js)
-export const ORDER_VERSION = 2;
+// ĐỔI ORDER thì tăng số này: bảng quà chủ kênh đã lưu (data/settings.json) được xếp lại MỘT lần theo thứ tự mới lúc khởi động (app.js);
+// ô MỚI của phiên bản đó (ADDED_IN) được thêm vào bảng đã lưu với món quà mặc định (nếu món đó chưa gán cho ô khác)
+export const ORDER_VERSION = 3;
+const ADDED_IN = { 3: ['normal', 'thanhngu', 'vutru', 'game', 'tinhyeu', 'bian', 'thoitrang', 'kinhdoanh'] };
+/** Bảng quà đã lưu ở phiên bản `from` → phiên bản hiện tại: thêm ô mới + xếp theo ORDER. */
+export function upgradeSavedRules(saved, from = 1) {
+  const added = Object.entries(ADDED_IN).filter(([v]) => Number(v) > from).flatMap(([, list]) => list);
+  const have = new Set(saved.map((r) => r.to));
+  const gifts = new Set(saved.map((r) => String(r.gift?.id ?? r.giftId ?? '')));
+  const extra = defaultEnglishRules().filter((r) => added.includes(r.to) && !have.has(r.to) && !gifts.has(String(r.gift.id)));
+  return sortByOrder([...saved, ...extra]);
+}
 /** Xếp luật quà theo thứ tự ô ORDER (giữ nguyên quà / số câu; nhiều món cùng một ô giữ thứ tự cũ). */
 export const sortByOrder = (rules) => rules.map((r, i) => [r, i])
   .sort(([a, i], [b, j]) => ((ORDER.indexOf(a.to) + 1 || 99) - (ORDER.indexOf(b.to) + 1 || 99)) || i - j).map(([r]) => r);

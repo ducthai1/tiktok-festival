@@ -69,7 +69,7 @@ export function createStageAudio() {
       tracks.stop();
       return;
     }
-    const name = theme;
+    const name = opts.season === 'christmas' ? 'xmas' : theme; // 🎄 Giáng sinh: mọi game phát nhạc Giáng sinh
     tracks.available(name).then((has) => {
       if (!wanted() || theme !== name) return;
       if (has) {
@@ -165,7 +165,8 @@ export function createStageAudio() {
         tts: settings.tts === true,
         ttsWelcome: settings.ttsWelcome === true,
         ttsVoice: typeof settings.ttsVoice === 'string' ? settings.ttsVoice : 'random',
-        ttsEnglish: settings.ttsEnglish !== false
+        ttsEnglish: settings.ttsEnglish !== false,
+        season: settings.season || ''
       });
       if (!opts.tts && !opts.ttsWelcome && !opts.ttsEnglish) speech.clear();
       applyLevels();

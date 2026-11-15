@@ -15,6 +15,7 @@
       <span id="pill-live" class="pill idle" title="Kết nối TikTok LIVE">● Chưa live</span>
       <span id="pill-obs" class="pill idle" title="Màn hình OBS">📺 OBS: chưa nối</span>
       <span id="pill-game" class="pill game" title="Game đang phát">—</span>
+      <button type="button" id="season-xmas" class="xmas-toggle" aria-pressed="false" title="Đổi cả màn hình live + nhạc + trang này sang chủ đề Giáng sinh">🎄 Giáng sinh: TẮT</button>
     </div>
   </header>
 
@@ -138,7 +139,6 @@
             <label class="field">Phòng trên <input id="set-welcome-above" type="number" min="0" max="1000000" step="100"> người xem thì chỉ hiện dòng chữ (không thẻ tên + nhân vật)</label>
             <button type="submit" class="ghost">Lưu</button>
           </form>
-          <p id="viewers-status" class="muted small"></p>
         </div>
       </section>
 
@@ -184,6 +184,10 @@
 
       <!-- ══ 📊 BẢNG & NHẬT KÝ ══ -->
       <section class="tab-panel" data-panel="board" hidden>
+        <div class="card viewers-card">
+          <div class="viewers-big"><span class="eye">👀</span><b id="viewers-count">0</b><span>người đang xem live</span></div>
+          <p id="viewers-status" class="muted small"></p>
+        </div>
         <div class="grid2">
           <div class="card">
             <div class="card-head"><h2>Bảng xếp hạng phiên</h2><button type="button" id="reset-session" class="tiny ghost">Xoá</button></div>

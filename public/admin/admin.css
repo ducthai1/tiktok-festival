@@ -175,3 +175,31 @@ button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical
   .rule .arrow { display: none; }
   .rule .qty, .rule .acts, .rule select { grid-column: 2; }
 }
+
+/* 👀 số người đang xem (tab Bảng & nhật ký) */
+.viewers-card { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.viewers-big { display: flex; align-items: baseline; gap: 10px; }
+.viewers-big .eye { font-size: 30px; align-self: center; }
+.viewers-big b { font-size: 40px; line-height: 1; color: var(--gold); font-variant-numeric: tabular-nums; }
+.viewers-big span:last-child { color: var(--muted); font-weight: 600; }
+
+/* 🎄 nút chủ đề Giáng sinh + giao diện Giáng sinh của trang điều khiển (body.xmas) */
+.xmas-toggle { padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line2); background: var(--card2); color: var(--text); font-weight: 700; cursor: pointer; }
+.xmas-toggle[aria-pressed="true"] { background: linear-gradient(135deg, #c1121f, #2b9348); border-color: #ffd36b; box-shadow: 0 0 14px rgba(230, 57, 70, 0.6); }
+body.xmas { --bg: #0b1410; --panel: #10201a; --card: #142a21; --card2: #1b3529; --line: #24493a; --line2: #2f5e4a;
+  --accent: #e63946; --accent2: #2b9348; --gold: #ffd36b; --muted: #a9c4b6;
+  background: radial-gradient(900px 500px at 0% -10%, rgba(230, 57, 70, 0.28), transparent 60%),
+    radial-gradient(900px 500px at 100% -10%, rgba(43, 147, 72, 0.3), transparent 60%), var(--bg); }
+body.xmas::before { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: 0.55;
+  background-image: radial-gradient(2px 2px at 20px 30px, #fff, transparent), radial-gradient(2px 2px at 120px 80px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 200px 150px, #fff, transparent), radial-gradient(2.5px 2.5px at 300px 40px, #fff, transparent),
+    radial-gradient(1.5px 1.5px at 360px 210px, #fff, transparent);
+  background-size: 400px 260px; animation: admin-snow 18s linear infinite; }
+@keyframes admin-snow { to { background-position: 60px 260px; } }
+body.xmas .topbar { border-bottom: 3px solid transparent;
+  border-image: repeating-linear-gradient(90deg, #e63946 0 18px, #fff 18px 30px, #2b9348 30px 48px, #fff 48px 60px) 1; }
+body.xmas .brand .logo { font-size: 0; }
+body.xmas .brand .logo::before { content: '🎅'; font-size: 22px; }
+body.xmas .card { border-top: 3px solid rgba(255, 255, 255, 0.75); box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(230, 57, 70, 0.25); }
+body.xmas .tabs button.active { background: linear-gradient(135deg, #c1121f, #2b9348); color: #fff; }
+body.xmas .shell, body.xmas .login { position: relative; z-index: 1; } /* trên lớp tuyết; thanh trên vẫn dính (sticky) */

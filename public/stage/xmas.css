@@ -1,0 +1,49 @@
+/* 🎄 Chủ đề GIÁNG SINH — bật bằng một nút ở trang điều khiển (settings.season = 'christmas' → #stage.xmas, stage-main.js).
+   Tuyết rơi (sau các bảng, không che chữ) · dây đèn nhấp nháy trên thẻ câu hỏi · khung đỏ / xanh thông / vàng · thanh năng lượng
+   sọc kẹo gậy · thẻ chào đỏ nhung viền vàng. Chỉ đổi màu / trang trí — vị trí, cỡ chữ giữ nguyên (vùng an toàn iPhone không đổi). */
+#stage.xmas { --xmas-red: #e63946; --xmas-green: #2ec27e; --xmas-gold: #ffd36b; --quiz: #2ec27e; }
+
+/* ❄ tuyết */
+#snow { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 1; }
+#snow i { position: absolute; top: -40px; color: #fff; font-style: normal; text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  animation-name: xmas-fall, xmas-sway; animation-timing-function: linear, ease-in-out; animation-iteration-count: infinite, infinite;
+  animation-direction: normal, alternate; }
+@keyframes xmas-fall { to { transform: translateY(2000px); } }
+@keyframes xmas-sway { from { margin-left: -18px; } to { margin-left: 18px; } }
+html.lite #snow i { text-shadow: none; }
+
+/* thẻ câu hỏi: viền đỏ – vàng, dây đèn màu nhấp nháy ở mép trên */
+#stage.xmas .quiz-card { border-color: var(--xmas-red);
+  box-shadow: 0 0 36px rgba(230, 57, 70, 0.55), 0 0 0 2px rgba(255, 211, 107, 0.55) inset, inset 0 0 60px rgba(0, 0, 0, 0.4); }
+#stage.xmas .quiz-card::after { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 20px; pointer-events: none; z-index: 2;
+  background:
+    radial-gradient(circle at 10px 11px, #ff4d5e 0 6px, transparent 7px) 0 0 / 60px 20px repeat-x,
+    radial-gradient(circle at 25px 11px, #ffd36b 0 6px, transparent 7px) 0 0 / 60px 20px repeat-x,
+    radial-gradient(circle at 40px 11px, #2ec27e 0 6px, transparent 7px) 0 0 / 60px 20px repeat-x,
+    radial-gradient(circle at 55px 11px, #4dabff 0 6px, transparent 7px) 0 0 / 60px 20px repeat-x;
+  animation: xmas-blink 1.6s steps(2) infinite; }
+@keyframes xmas-blink { 50% { filter: brightness(1.8) saturate(1.3); } }
+#stage.xmas .quiz-cat, #stage.xmas .quiz-head .pill { border-color: var(--xmas-green); }
+
+/* bảng quà, ba bảng, khung bình luận: xanh thông viền đỏ, mép trên phủ "tuyết" */
+#stage.xmas .deck-panel, #stage.xmas .quiz-ambassadors, #stage.xmas.theme-quiz #hud > #board, #stage.xmas .quiz-comments {
+  border-color: rgba(230, 57, 70, 0.85); box-shadow: 0 0 22px rgba(46, 194, 126, 0.35), inset 0 3px 0 rgba(255, 255, 255, 0.85); }
+#stage.xmas .deck-panel { background: linear-gradient(180deg, rgba(14, 52, 34, 0.9), rgba(8, 20, 16, 0.88)); }
+#stage.xmas .deck-panel .deck-title, #stage.xmas .quiz-comments-title { color: #fff; text-shadow: 0 0 10px var(--xmas-red); }
+#stage.xmas .deck-panel .deck-page { color: #fff; background: rgba(230, 57, 70, 0.35); border-color: var(--xmas-gold); }
+#stage.xmas .quiz-ambassadors h3, #stage.xmas.theme-quiz #hud > #board h3 { color: var(--xmas-gold); -webkit-text-fill-color: var(--xmas-gold); }
+
+/* thanh năng lượng: sọc kẹo gậy đỏ – trắng */
+#stage.xmas .quiz-energy .fill { background: repeating-linear-gradient(135deg, #e63946 0 12px, #fff 12px 22px); }
+
+/* thẻ chào: đỏ nhung viền vàng, chữ trắng */
+#stage.xmas.theme-quiz #hud > #welcome { --line: #ffd36b; --line-2: #fff3c4; background: linear-gradient(120deg, #c1121f, #e63946 50%, #9d0208);
+  box-shadow: 0 0 26px rgba(230, 57, 70, 0.8), 0 12px 30px rgba(0, 0, 0, 0.45); }
+#stage.xmas.theme-quiz #welcome .kicker { color: var(--xmas-gold); -webkit-text-fill-color: var(--xmas-gold); }
+#stage.xmas.theme-quiz #welcome .name, #stage.xmas.theme-quiz #welcome.group .name { color: #fff; -webkit-text-fill-color: #fff;
+  text-shadow: 0 2px 6px rgba(80, 0, 0, 0.8); }
+#stage.xmas.theme-quiz #welcome .line { color: #ffe9ec; -webkit-text-fill-color: #ffe9ec; }
+#stage.xmas.theme-quiz #welcome .kicker::before { content: '🎄 '; }
+
+/* chữ to giữa màn (đổi bộ đề…): viền đỏ tuyết */
+#stage.xmas #banner { text-shadow: 0 0 18px rgba(230, 57, 70, 0.9), 0 4px 0 rgba(0, 0, 0, 0.5); }

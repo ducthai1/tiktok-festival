@@ -31,7 +31,7 @@ const GIFT_RULES = {
   english: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI BỘ ĐỀ / ĐỘ KHÓ*', ' · ❤️ nạp năng lượng ↑'],
   emoji: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI CHỦ ĐỀ*', ' · ❤️ nạp năng lượng ↑']
 };
-const DECK_RULES_PER_PAGE = 7; // Đúng 7 ô mỗi trang (Trang 1: 7 ô, Trang 2: 7 ô)
+const DECK_RULES_PER_PAGE = 8; // 8 ô mỗi trang (english-sets.js ORDER: trang 1 cơ bản + độ khó, trang 2 chủ đề, trang 3 chủ đề mới)
 const DECK_PAGE_MS_P1 = 20000; // Trang 1 hiển thị 20 giây
 const DECK_PAGE_MS_P2 = 12000; // Trang 2 hiển thị 12 giây
 const DECK_FADE_MS = 700;      // fade in/out mượt mà, chậm rãi giữa các trang (700ms)
@@ -42,6 +42,8 @@ function createDeckPanel(hud, gameId) {
   const root = el('section', 'deck-panel');
   const header = el('div', 'deck-header');
   const title = el('h3', 'deck-title', gameId === 'emoji' ? '🎁 TẶNG QUÀ ĐỔI CHỦ ĐỀ' : '🎁 TẶNG QUÀ ĐỔI ĐỀ');
+  const pageTag = el('span', 'deck-page'); // "Trang 1/3" — người xem biết đang ở trang nào của bảng quà
+  title.append(pageTag);
   const activeBadge = el('div', 'deck-active-badge');
   // bộ đề / độ khó hiện tại nằm chung thanh tiêu đề (gọn 1 dòng → cả cụm dưới lên cao, iPhone không bị TikTok che)
   const status = el('div', 'deck-status');
@@ -138,23 +140,27 @@ function createDeckPanel(hud, gameId) {
         }
         return chip;
       });
-      rulesRoot.style.gridTemplateColumns = `repeat(${Math.max(1, Math.min(chips.length, DECK_RULES_PER_PAGE))}, 1fr)`;
+      rulesRoot.style.gridTemplateColumns = `repeat(${Math.max(1, Math.min(chips.length, DECK_RULES_PER_PAGE))}, minmax(0, 1fr))`; // ô bằng nhau, không ô nào đẩy tràn
       const pages = [];
       for (let i = 0; i < chips.length; i += DECK_RULES_PER_PAGE) pages.push(chips.slice(i, i + DECK_RULES_PER_PAGE));
       let at = 0;
+      const fill = () => {
+        rulesRoot.replaceChildren(...(pages[at] || []));
+        pageTag.textContent = pages.length > 1 ? `Trang ${at + 1}/${pages.length}` : '';
+      };
       // Fade in/out mượt mà, chậm rãi giữa các trang
       const show = (fadeIn = false, onReady = null) => {
         clearTimeout(fadeTimer);
         if (fadeIn) {
           rulesRoot.classList.add('is-switching');
           fadeTimer = setTimeout(() => {
-            rulesRoot.replaceChildren(...(pages[at] || []));
+            fill();
             void rulesRoot.offsetWidth; // force reflow kích hoạt transition fade-in
             rulesRoot.classList.remove('is-switching');
             if (onReady) onReady();
           }, DECK_FADE_MS);
         } else {
-          rulesRoot.replaceChildren(...(pages[at] || []));
+          fill();
           rulesRoot.classList.remove('is-switching');
           if (onReady) onReady();
         }

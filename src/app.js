@@ -18,7 +18,7 @@ import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
-import { ORDER_VERSION, defaultEnglishRules, sortByOrder } from '../public/shared/english-sets.js';
+import { ORDER_VERSION, defaultEnglishRules, upgradeSavedRules } from '../public/shared/english-sets.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
@@ -51,7 +51,8 @@ function frontendVersion(dir) {
 
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], ttsEnglish: true, legend: true, sound: true, volume: 0.6,
-  music: true, musicVolume: 0.35, welcomeTextAbove: 1000
+  music: true, musicVolume: 0.35, welcomeTextAbove: 1000,
+  season: '' // 'christmas' = 🎄 chủ đề Giáng sinh (màn hình + nhạc + trang điều khiển), một nút ở trang điều khiển
 };
 
 function loadGiftCatalog(file) {
@@ -108,11 +109,11 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // thứ tự ô mặc định vừa đổi (vd TOEIC, IELTS lên trang 1) → bảng quà ĐÃ LƯU cũng xếp lại theo thứ tự mới, MỘT lần (giữ nguyên quà /
   // số câu chủ kênh chọn); sau đó chủ kênh vẫn tự đổi chỗ bằng ▲▼ ở tab 🎁 Quà (lưu lại thì không xếp nữa)
   if (settings.englishGifts?.length && settings.englishGiftsOrder !== ORDER_VERSION) {
-    settings.englishGifts = sortByOrder(settings.englishGifts);
+    settings.englishGifts = upgradeSavedRules(settings.englishGifts, Number(settings.englishGiftsOrder) || 1);
     settings.englishGiftsOrder = ORDER_VERSION;
     try {
       fs.writeFileSync(path.join(dataDir, 'settings.json'), JSON.stringify(settings, null, 2));
-      log.info('admin', 'đã xếp lại bảng quà tab tiếng Anh theo thứ tự ô mới (quà giữ nguyên)');
+      log.info('admin', 'đã xếp lại bảng quà tab tiếng Anh theo thứ tự ô mới + thêm ô mới (quà đã chọn giữ nguyên)');
     } catch (error) {
       log.warn('admin', `không lưu được bảng quà đã xếp lại: ${error.message}`);
     }
@@ -123,13 +124,6 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   } catch (error) {
     log.warn('admin', `luật quà tab tiếng Anh đã lưu không dùng được (${error.message}) → dùng bảng mặc định`);
     hub.setEnglishRules(defaultEnglishRules());
-  }
-
-  // 👑 Bảng vàng: tổng 💎 mỗi người từ lịch sử quà (data/gifts.log, dòng ghi ở onEvent bên dưới) — donor-ledger.js
-  try {
-    hub.loadGiftHistory(fs.readFileSync(path.join(dataDir, 'gifts.log'), 'utf8'));
-  } catch (error) {
-    if (error.code !== 'ENOENT') log.warn('app', `không đọc được lịch sử quà gifts.log: ${error.message}`);
   }
 
   const hotBackupFile = path.join(dataDir, 'hot-backup.json');
@@ -169,7 +163,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const publicSettings = () => ({
     tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false, legend: settings.legend, sound: settings.sound, volume: settings.volume,
     music: settings.music, musicVolume: settings.musicVolume,
-    welcomeTextAbove: settings.welcomeTextAbove
+    welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || ''
   });
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });

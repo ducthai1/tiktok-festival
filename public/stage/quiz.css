@@ -326,12 +326,12 @@ html.lite .quiz-comments { backdrop-filter: none; background: rgba(8, 10, 22, 0.
 /* 3 bảng rộng BẰNG NHAU: (892 − 2 khe 10) / 3 ≈ 291 px — Bảng vàng | Đại sứ (chung khung 2 cột) 94–685 · Bảng điểm 695–986 */
 #game-hud.has-deck .quiz-side { top: 952px; width: calc((892px - 20px) * 2 / 3 + 10px); }
 #game-hud.has-deck .quiz-comments { top: 1214px; }
-#stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; width: calc((892px - 20px) / 3); }
-#stage.theme-quiz #game-hud.has-deck ~ #board li:nth-child(n+4) { display: none; } /* chỉ top 3: cao bằng Bảng vàng / Đại sứ, không lấn dải chào */
+/* bảng điểm cột phải kéo dài xuống sát khung bình luận (952–1206) → đủ top 5; dải chào / thẻ quà bên trái chỉ rộng tới sát bảng điểm */
+#stage.theme-quiz #game-hud.has-deck ~ #board { top: 952px; width: calc((892px - 20px) / 3); height: 254px; }
 #stage.theme-quiz #game-hud.has-deck ~ #toasts { top: 952px !important; width: calc((892px - 20px) / 3); }
 #stage.theme-quiz #game-hud.has-deck ~ #welcome { top: 1106px; width: 441px; height: 100px; } /* nửa bề ngang (chủ kênh: dài quá) */
 #stage.theme-quiz #game-hud.has-deck ~ #welcome-ticker { top: 1110px; }
-#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1106px; width: 892px; height: 100px; }
+#stage.theme-quiz #game-hud.has-deck ~ #giftcard { top: 1106px; width: calc((892px - 20px) * 2 / 3 + 10px); height: 100px; }
 
 /* banner giữa màn (đổi bộ đề…) có avatar người tặng: đặt giữa thẻ câu hỏi, không đè bảng quà bên dưới */
 #stage.theme-quiz #banner { top: 380px; }
@@ -356,6 +356,15 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 /* ── bảng quà gọn: bộ đề / độ khó / số câu còn lại chung thanh tiêu đề ── */
 .deck-header { gap: 10px; min-height: 34px; }
 .deck-panel .deck-title { flex: none; font-size: 19px; }
+.deck-panel .deck-page { margin-left: 8px; padding: 1px 10px; border-radius: 999px; font-size: 16px; font-weight: 800; color: #c9ffd0;
+  background: rgba(125, 255, 138, 0.16); border: 1px solid rgba(125, 255, 138, 0.55); text-shadow: none; vertical-align: 2px; }
+.deck-panel .deck-page:empty { display: none; }
+/* 8 ô / trang (≈106 px mỗi ô): bớt lề + khe + mũi tên, chữ khít lại chút — cỡ chữ nhãn (20 px) và icon quà (54 px) giữ nguyên */
+#game-hud.has-deck .deck-panel { padding-left: 6px; padding-right: 6px; }
+#game-hud.has-deck .deck-rules { gap: 4px; }
+#game-hud.has-deck .deck-rule { min-width: 0; padding-left: 0; padding-right: 0; column-gap: 1px; }
+#game-hud.has-deck .deck-rule .arrow { font-size: 12px; }
+#game-hud.has-deck .deck-rule .to small { letter-spacing: -0.5px; justify-self: center; }
 .deck-header .deck-status { display: flex; gap: 6px; margin-left: auto; min-width: 0; }
 .deck-header .deck-now { height: 32px; padding: 0 10px; font-size: 17px; gap: 6px; }
 .deck-header .deck-now .ic { font-size: 18px; }

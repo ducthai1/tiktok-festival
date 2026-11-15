@@ -16,7 +16,7 @@ export const DONOR_STEP = 100;
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
-  const donors = createDonorLedger(); // 👑 Bảng vàng: mọi tab quiz dùng chung, sống qua "Xoá dữ liệu phiên live trước" (là lịch sử quà)
+  const donors = createDonorLedger(); // 👑 Bảng vàng của PHIÊN LIVE HIỆN TẠI — mọi tab quiz dùng chung
   const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
@@ -96,10 +96,6 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
     },
-    /** 👑 Bảng vàng: nạp lịch sử quà (nội dung data/gifts.log) lúc khởi động. */
-    loadGiftHistory(text) {
-      donors.load(text);
-    },
     /** Tab 🎁 Quà (trang điều khiển): luật quà tab tiếng Anh. */
     setEnglishRules(rules) {
       lastEnglishRules = rules;
@@ -108,8 +104,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     /**
      * Nút "Xoá dữ liệu phiên live trước" (trang điều khiển): dựng lại MỌI game từ đầu — số câu cộng dồn, điểm, bảng xếp hạng, năng lượng
      * tim, follow, share, đại sứ, chế độ đề, Luyện nghe… — và xoá bảng xếp hạng phiên, danh sách đã chào, tổng 💎 chúc mừng.
-     * GIỮ: game đang chọn, bảng quà / danh mục quà, sổ "từ đã hỏi" tab tiếng Anh (phiên mới vẫn không hỏi lại từ cũ),
-     * 👑 Bảng vàng (lịch sử quà thật — chỉ bỏ quà thử).
+     * GIỮ: game đang chọn, bảng quà / danh mục quà, sổ "từ đã hỏi" tab tiếng Anh (phiên mới vẫn không hỏi lại từ cũ).
      * Chỉ chạy khi chủ kênh bấm — rớt live / khởi động lại server vẫn khôi phục từ bản lưu nóng như cũ.
      */
     resetAll() {
@@ -120,13 +115,13 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
       roomDonations.clear();
-      donors.clearTest();
+      donors.clear();
       lastSimulatedAt = 0;
     },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {
       roomDonations.clear();
-      donors.clearTest();
+      donors.clear(); // 👑 Bảng vàng: phiên live mới bắt đầu lại
       for (const game of games.values()) game.resetRoom?.();
       welcome.reset(); // phòng mới: chào lại người vào
     },
@@ -136,7 +131,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       if (snapshot.state) active().restore?.(snapshot.state);
       if (snapshot.leaderboard) board.restore(snapshot.leaderboard);
       else if (snapshot.totals) board.restore({ totals: snapshot.totals, viewers: snapshot.top });
-      donors.restoreFaces(snapshot.donorFaces);
+      donors.restore(snapshot.donors);
     },
     snapshot(now = Date.now()) {
       return {
@@ -145,7 +140,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
         top: board.top(),
         totals: board.totals(),
         leaderboard: board.exportState(),
-        donorFaces: donors.faces(),
+        donors: donors.exportState(),
         viewers: { count: welcome.viewerCount(), textAbove: welcome.threshold(), waiting: welcome.backlog(), pending: welcome.pendingIds() },
         // Màn hình phải hiện nhãn "CHẾ ĐỘ THỬ" khi vừa có sự kiện giả lập.
         testMode: now - lastSimulatedAt < 20000

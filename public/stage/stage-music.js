@@ -9,6 +9,36 @@ const DANCE_ROOTS = [55, 65.41, 49, 58.27];
 const DANCE_CHORDS = [[440, 523.3, 659.3], [523.3, 659.3, 784], [392, 493.9, 587.3], [466.2, 587.3, 698.5]];
 const DANCE_ARP = [880, 1046.5, 1318.5, 1046.5, 1568, 1318.5, 1046.5, 784];
 
+// 🎄 Nhạc Giáng sinh: giai điệu dân gian ĐÃ HẾT bản quyền (Jingle Bells 1857, We Wish You a Merry Christmas, Deck the Halls),
+// tự chơi bằng chuông + bass nhẹ + lục lạc xe tuần lộc — không dùng bản thu âm của ai. [nốt MIDI, số phách]
+const XMAS_SONGS = [
+  { root: 48, notes: [[76, 1], [76, 1], [76, 2], [76, 1], [76, 1], [76, 2], [76, 1], [79, 1], [72, 1.5], [74, 0.5], [76, 4],
+    [77, 1], [77, 1], [77, 1.5], [77, 0.5], [77, 1], [76, 1], [76, 1], [76, 0.5], [76, 0.5], [76, 1], [74, 1], [74, 1], [76, 1], [74, 2], [79, 2],
+    [76, 1], [76, 1], [76, 2], [76, 1], [76, 1], [76, 2], [76, 1], [79, 1], [72, 1.5], [74, 0.5], [76, 4],
+    [77, 1], [77, 1], [77, 1.5], [77, 0.5], [77, 1], [76, 1], [76, 1], [76, 0.5], [76, 0.5], [79, 1], [79, 1], [77, 1], [74, 1], [72, 4]] },
+  { root: 43, notes: [[74, 1], [79, 1], [79, 0.5], [81, 0.5], [79, 0.5], [78, 0.5], [76, 1], [72, 1], [76, 1], [81, 1], [81, 0.5], [83, 0.5],
+    [81, 0.5], [79, 0.5], [78, 1], [74, 1], [74, 1], [83, 1], [83, 0.5], [84, 0.5], [83, 0.5], [81, 0.5], [79, 1], [76, 1], [74, 0.5], [74, 0.5],
+    [76, 1], [81, 1], [78, 1], [79, 3]] },
+  { root: 48, notes: [[79, 1.5], [77, 0.5], [76, 1], [74, 1], [72, 1], [74, 1], [76, 1], [72, 1], [74, 0.5], [76, 0.5], [77, 0.5], [74, 0.5],
+    [76, 1.5], [74, 0.5], [72, 1], [71, 1], [72, 2], [74, 1.5], [76, 0.5], [77, 1], [74, 1], [76, 1.5], [77, 0.5], [79, 1], [74, 1],
+    [76, 0.5], [78, 0.5], [79, 1], [81, 0.5], [83, 0.5], [84, 1], [83, 1], [81, 1], [79, 2], [79, 1.5], [77, 0.5], [76, 1], [74, 1],
+    [72, 1], [74, 1], [76, 1], [72, 1], [81, 0.5], [81, 0.5], [81, 0.5], [81, 0.5], [79, 1.5], [77, 0.5], [76, 1], [74, 1], [72, 4]] }
+];
+const midiHz = (m) => 440 * 2 ** ((m - 69) / 12);
+// dàn thành từng ô 1/16 phách: ô nào bắt đầu nốt nào, bài nào (để bass theo đúng giọng), nghỉ 1 ô nhịp giữa các bài
+const XMAS_STEPS = (() => {
+  const steps = [];
+  for (const song of XMAS_SONGS) {
+    for (const [note, beats] of song.notes) {
+      const len = Math.round(beats * 4);
+      steps.push({ note, len, root: song.root });
+      for (let i = 1; i < len; i += 1) steps.push({ root: song.root });
+    }
+    for (let i = 0; i < 16; i += 1) steps.push({ root: song.root });
+  }
+  return steps;
+})();
+
 export function createMusic(ctx, out) {
   const s = createSynth(ctx, out);
   let theme = '';
@@ -62,6 +92,21 @@ export function createMusic(ctx, out) {
         s.noise({ decay: 0.04, gain: k % 2 ? 0.035 : 0.015, type: 'highpass', freq: 6000, delay: d }); // lắc
         if ([0, 6, 10].includes(k)) s.tone(180, { decay: 0.14, gain: 0.25, slide: 0.8, delay: d }); // trống conga
         if (k % 2 === 0) s.tone(PENTA[(i / 2) % PENTA.length], { type: 'triangle', decay: 0.28, gain: 0.045, delay: d }); // marimba
+      }
+    },
+    xmas: {
+      bpm: 116,
+      play(i, time) {
+        const d = at(time);
+        const step = XMAS_STEPS[i % XMAS_STEPS.length];
+        if (step.note) {
+          s.bell(midiHz(step.note), { gain: 0.06, length: Math.min(2.4, 0.35 + step.len * 0.12), delay: d }); // chuông giai điệu
+          s.tone(midiHz(step.note + 12), { type: 'triangle', decay: 0.12, gain: 0.012, delay: d }); // hộp nhạc lấp lánh
+        }
+        const k = i % 8;
+        if (k === 0) s.tone(midiHz(step.root), { type: 'triangle', decay: 0.5, gain: 0.09, lowpass: 600, delay: d }); // bass giọng của bài
+        if (k === 4) s.tone(midiHz(step.root + 7), { type: 'triangle', decay: 0.4, gain: 0.06, lowpass: 600, delay: d });
+        if (i % 2 === 0) s.noise({ decay: 0.05, gain: k % 4 === 2 ? 0.05 : 0.02, type: 'highpass', freq: 8500, delay: d }); // lục lạc
       }
     },
     temple: {

@@ -46,7 +46,7 @@ const MIN_POOL = 15;
 /** easy = câu bậc 1, hard = câu bậc 3; bộ nào ít câu quá thì nới ra (≤2 / ≥2). */
 export function filterByLevel(items, level) {
   if (level !== 'easy' && level !== 'hard') return items;
-  const strict = items.filter((q) => (level === 'easy' ? q.level === 1 : q.level === 3));
+  const strict = items.filter((q) => (level === 'easy' ? q.level === 1 : q.level >= 3)); // bậc 4 (rất khó) cũng vào Khó
   if (strict.length >= MIN_POOL) return strict;
   const loose = items.filter((q) => (level === 'easy' ? q.level <= 2 : q.level >= 2));
   return loose.length ? loose : items;
@@ -382,7 +382,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
           user: q.user ? { id: q.user.id, nickname: q.user.nickname, avatar: q.user.avatar } : null,
           giftPicture: q.giftPicture || ''
         })),
-        rules: assignments.filter((a) => a.to !== 'nghe' || (listen.length && listenReady()))
+        rules: assignments.filter((a) => (a.to !== 'nghe' || (listen.length && listenReady())) && (ENGLISH_TARGETS[a.to]?.kind !== 'set' || sets[a.to]?.length))
           .map((a) => ({ to: a.to, icon: a.icon, label: a.label, questions: a.questions, gift: a.gift }))
       };
     }

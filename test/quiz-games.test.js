@@ -222,7 +222,8 @@ test('english gifts: every slot shows a real VN gift at its REAL price (≤ 30 c
   }
   assert.equal(a.find((x) => x.to === 'easy').gift.name, 'Rose');
   const sets = loadEnglishSets();
-  for (const [id, list] of Object.entries(sets)) assert.ok(list.length >= 150, `${id}: ${list.length}`);
+  // bộ đang soạn (chưa có file) thì ô tự ẩn; bộ đã có câu phải đủ dùng
+  for (const [id, list] of Object.entries(sets)) if (list.length) assert.ok(list.length >= 150, `${id}: ${list.length}`);
 });
 
 test('english gifts: a gift cheaper than the price on the panel never switches (the 1-coin "5-coin" loss)', () => {
@@ -236,12 +237,13 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), 'hard'); // giờ ghi đúng giá thật 1 xu (13/11 từng ghi 5 xu)
   assert.equal(englishTargetFor(a, { id: '9947', name: 'Vòng cổ tình bạn', diamondsEach: 10 }), 'toeic'); // tên tiếng Việt: nhận theo id quà thật
   assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), null);
-  assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), null);
+  assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), 'normal'); // ⚖️ về độ khó Thường
+  assert.equal(englishTargetFor(a, { name: 'GG', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Brown Paw', diamondsEach: 0 }), null); // không rõ giá → không đổi
   // TikTok gửi tên tiếng Việt: nhận theo mã ảnh quà
   assert.equal(englishTargetFor(a, { id: 'x', name: 'Hoa hồng', diamondsEach: 1, pictureUrl: slot('easy').image.replace('.webp', '.png') }), 'easy');
   // danh mục quà của phòng KHÔNG đổi giá trên bảng (13/11 danh mục trên máy live có "Finger Heart 15 xu" từ quà thử — thật 5 xu)
-  const sw = createEnglishSwitcher({ general: [], basic: [], sets: {} });
+  const sw = createEnglishSwitcher({ general: [], basic: [], sets: { dongvat: [{ kind: 'text', answer: 'CAT', prompt: '?', level: 1, accept: ['cat'] }] } });
   sw.setCatalog([{ id: '5487', name: 'Finger Heart', coins: 15 }]);
   const fh = sw.snapshot().rules.find((r) => r.to === 'dongvat').gift;
   assert.deepEqual([fh.id, fh.coins], ['5487', 5]);
@@ -250,13 +252,15 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
 
 test('english switcher: a gift ENDS the running set and switches right now (new question at once), 20 questions, never scores the gifter', () => {
   const english = loadEnglishQuestions();
-  const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets: loadEnglishSets() });
+  const sets = loadEnglishSets();
+  const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets });
   sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'Friendship Necklace', coins: 10 }]);
   const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
   const gift = (n, id, name, coins, t) => game.handleEvent({ type: 'gift', user: user(n), gift: { id, name, diamondsEach: coins, count: 1, diamonds: coins } }, t);
   game.tick(0);
   assert.equal(game.snapshot(0).control.set, 'general');
-  assert.deepEqual(game.snapshot(0).control.rules.map((r) => r.to), ORDER.filter((to) => to !== 'nghe')); // chưa có giọng đọc → ẩn ô 🎧
+  // chưa có giọng đọc → ẩn ô 🎧; bộ chưa có câu hỏi → ẩn ô
+  assert.deepEqual(game.snapshot(0).control.rules.map((r) => r.to), ORDER.filter((to) => to !== 'nghe' && (!(to in sets) || sets[to].length)));
   assert.deepEqual(gift(8, '4', 'Love you so much', 1, 5).map((f) => f.kind), ['quizGift']); // món 1 xu: chỉ cảm ơn, không đổi bộ đề
   const q1 = game.snapshot(5).qNumber;
   const fx = gift(7, '3', 'Friendship Necklace', 10, 10);
@@ -377,4 +381,29 @@ test('english rotation: general → set → back to general never repeats a word
   const round = Array.from({ length: 6 }, () => key(tiny.deck.next()));
   assert.equal(new Set(round.slice(0, 3)).size, 3);
   assert.equal(new Set(round.slice(3)).size, 3);
+});
+
+test('english topics resume where they left off (A 40, B 10, C 2 → back to A goes on), whatever the level, no word twice', async () => {
+  const { foldText } = await import('../src/games/text-match.js');
+  const key = (q) => foldText(q.answer).replace(/ /g, '');
+  const english = loadEnglishQuestions();
+  const sets = loadEnglishSets();
+  const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets });
+  const asked = [];
+  const ask = (to, n) => {
+    sw.command(`deck-${to}`);
+    const keys = new Set(['easy', 'normal', 'hard'].includes(to) ? [] : (to === 'general' ? english : sets[to]).map(key));
+    for (let i = 0; i < n; i += 1) {
+      const k = key(sw.deck.next());
+      if (keys.size) assert.ok(keys.has(k), `${to}: câu ${i + 1} không thuộc bộ`);
+      asked.push(k);
+    }
+  };
+  ask('toeic', 20); ask('toeic', 20); // A: 40 câu
+  ask('ielts', 10); // B: 10
+  ask('dongvat', 2); // C: 2
+  ask('easy', 0); ask('toeic', 15); // quay lại A, độ khó Dễ: câu 41…
+  ask('normal', 0); ask('ielts', 10); // B, Thường: câu 11…
+  ask('hard', 0); ask('dongvat', 10); ask('general', 30); // C Khó, rồi Tổng hợp
+  assert.equal(new Set(asked).size, asked.length, 'đổi bộ / độ khó mà bị hỏi lại từ cũ');
 });

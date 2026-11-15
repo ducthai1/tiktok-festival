@@ -134,7 +134,8 @@ const ENGLISH_SET_FILES = {
   toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt',
   bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt', truonghoc: 'truong-hoc.txt',
   dongvat: 'dong-vat.txt', amthuc: 'am-thuc.txt', thanhngu: 'thanh-ngu.txt',
-  dulich: 'du-lich.txt', giaitri: 'giai-tri.txt'
+  dulich: 'du-lich.txt', giaitri: 'giai-tri.txt',
+  vutru: 'vu-tru.txt', game: 'game.txt', tinhyeu: 'tinh-yeu.txt', bian: 'bi-an.txt', thoitrang: 'thoi-trang.txt', kinhdoanh: 'kinh-doanh.txt'
 };
 // bộ không còn ô quà riêng: từ nằm trong Tổng hợp (loadEnglishQuestions)
 const MERGED_SET_FILES = ['do-vat'];

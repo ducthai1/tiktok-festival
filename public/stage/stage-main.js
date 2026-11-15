@@ -25,6 +25,26 @@ const SCENES = {
 };
 
 const stageEl = document.getElementById('stage');
+// 🎄 Chủ đề Giáng sinh (một nút ở trang điều khiển): tuyết rơi + khung đỏ/xanh/vàng (xmas.css) + nhạc Giáng sinh (stage-music.js)
+let snow = null;
+function applySeason() {
+  const on = settings.season === 'christmas';
+  stageEl.classList.toggle('xmas', on);
+  if (on && !snow) {
+    snow = document.createElement('div');
+    snow.id = 'snow';
+    const flakes = quality.lite ? 18 : 42;
+    for (let i = 0; i < flakes; i += 1) {
+      const f = document.createElement('i');
+      f.textContent = i % 3 ? '❄' : '•';
+      f.style.cssText = `left:${(i * 97) % 100}%;font-size:${14 + ((i * 37) % 26)}px;animation-duration:${9 + ((i * 53) % 9)}s,${3 + (i % 4)}s;`
+        + `animation-delay:-${(i * 71) % 17}s,-${i % 3}s;opacity:${0.45 + ((i * 29) % 50) / 100}`;
+      snow.append(f);
+    }
+    stageEl.insertBefore(snow, document.getElementById('hud'));
+  }
+  if (snow) snow.hidden = !on;
+}
 const fadeEl = document.getElementById('fade');
 // ?lite=1: máy yếu (Mac 8 GB, điện thoại) — xem stage-quality.js
 const quality = stageQuality(location.search);
@@ -226,6 +246,7 @@ const socket = connectLiveSocket({
       if (message.giftTiers || message.tiers) giftTiers = message.giftTiers || message.tiers;
 
       applyAudio();
+      applySeason();
       if (current) hud.setLegend(legendFor(current), settings.legend !== false);
     } else if (message.t === 'state') onState(message);
     else if (message.t === 'fx' && message.game === currentId && current) {
