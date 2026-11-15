@@ -1,0 +1,112 @@
+# Bộ đề · Bí ẩn
+RIDDLE | Câu đố khó hiểu cần tìm lời giải tiếng Anh là gì? | 1
+PUZZLE | Trò chơi ghép mảnh hình hoàn chỉnh tiếng Anh là gì? | 1
+TRAP | Cái bẫy để bắt hoặc đánh lừa tiếng Anh là gì? | 1
+MASK | Chiếc mặt nạ che mặt tiếng Anh là gì? | 1
+CLOAK | Chiếc áo khoác che giấu toàn thân tiếng Anh là gì? | 1
+SHADOW | Bóng tối sợ phía sau người tiếng Anh là gì? | 1
+SECRET | Bí mật không được phép tiết lộ tiếng Anh là gì? | 1
+WHISPER | Lời nói thầm nhỏ kín đáo tiếng Anh là gì? | 1
+CONSPIRACY | Âm mưu kế hoạch bí mật gây hại tiếng Anh là gì? | 2
+COVER UP | Che giấu che dấu sự thật tiếng Anh là gì? | 2
+FORTUNE TELLER | Người đoán tương lai xem bói tiếng Anh là gì? | 2
+PORTAL | Cánh cửa dị chiều sang thế giới khác tiếng Anh là gì? | 2
+LABYRINTH | Mê cung đường đi quanh co tiếng Anh là gì? | 2 | MAZE
+MYSTIC | Thần bí liên quan tâm linh tiếng Anh là gì? | 2
+MUMMY | Thi thể bảo quản trong quan tài tiếng Anh là gì? | 2
+ARCHAEOLOGIST | Nhà khảo cổ học chuyên gia tiếng Anh là gì? | 2
+PAPYRUS | Giấy cổ Ai Cập để viết tiếng Anh là gì? | 2
+DECEPTION | Sự lừa dối gây nhầm lẫn tiếng Anh là gì? | 2
+RUSE | Kế sách khéo léo lừa tiếng Anh là gì? | 2
+MISDIRECTION | Làm lạc hướng chú ý tiếng Anh là gì? | 2
+CENTAUR | Sinh vật nửa người nửa ngựa tiếng Anh là gì? | 3
+HYDRA | Thủy quái nhiều đầu thần thoại tiếng Anh là gì? | 3
+SPHINX | Thủ tiếp có cơ thể sư tử tiếng Anh là gì? | 3
+PEGASUS | Ngựa cổ có cánh thần thoại tiếng Anh là gì? | 3
+WRAITH | Ma quái xuất hiện bóng người tiếng Anh là gì? | 3
+HARPY | Sinh vật nửa người nửa chim tiếng Anh là gì? | 3
+ARGONAUT | Người lính thủy thủ tìm vàng tiếng Anh là gì? | 3
+MAGE | Pháp sư thạo phép thuật tiếng Anh là gì? | 3
+ENCHANTRESS | Phụ nữ phù thủy làm mê hoặc tiếng Anh là gì? | 3
+DIVINER | Người tiên tri dùng phép coi tiếng Anh là gì? | 3
+FORTUNE TELLING | Xem bói dự báo tương lai tiếng Anh là gì? | 3
+INCANTATION | Lời thần chú được niệm tiếng Anh là gì? | 3
+HEX | Phép nguyền làm ai đó tổn thương tiếng Anh là gì? | 3
+CONJURE | Gọi triệu tập sinh vật tinh thần tiếng Anh là gì? | 3
+CONJURER | Nhà ảo thuật gọi tinh thần tiếng Anh là gì? | 3
+ATLANTIS | Đại lục bị chìm nước tiếng Anh là gì? | 2
+EL DORADO | Vùng đất vàng huyền thoại tiếng Anh là gì? | 2
+GHOST SHIP | Con tàu ma không người lái tiếng Anh là gì? | 1
+LOST CITY | Thành phố mất tích bí ẩn tiếng Anh là gì? | 2
+TIME TRAVEL | Du hành thời gian qua quá khứ tiếng Anh là gì? | 2
+UFO | Vật thể bay không xác định tiếng Anh là gì? | 1
+ALIEN | Người ngoài hành tinh sinh vật tiếng Anh là gì? | 1
+UFO SIGHTING | Nhìn thấy tàu vũ trụ bí ẩn tiếng Anh là gì? | 2
+STAKEOUT | Đội ngũ canh giữ theo dõi tiếng Anh là gì? | 2
+UNDERCOVER | Thực hiên đóng giả theo dõi tiếng Anh là gì? | 2
+INFORMANT | Người cung cấp thông tin mật tiếng Anh là gì? | 2
+FOOTPRINT | Dấu chân để lại tiếng Anh là gì? | 1
+HANDCUFFS | Còng tay dùng bắt người tiếng Anh là gì? | 1
+LIE DETECTOR | Máy phát hiện nói dối tiếng Anh là gì? | 2
+LINEUP | Hàng người để nhân chứng chỉ tiếng Anh là gì? | 2
+MUGSHOT | Ảnh lệnh bắt giữ hồ sơ tiếng Anh là gì? | 2
+CASE FILE | Hồ sơ vụ án tổng hợp tiếng Anh là gì? | 2
+CRIME SCENE | Hiện trường vụ án tiếng Anh là gì? | 1
+HEIST | Vụ cướp kế hoạch trộm tiếng Anh là gì? | 2
+SAFE CRACKER | Kẻ mở két sắt chuyên nghiệp tiếng Anh là gì? | 3
+FORGERY | Giả mạo tạo giả tài liệu tiếng Anh là gì? | 3
+SURVEILLANCE | Theo dõi canh giữ tiếng Anh là gì? | 2
+WIRETAP | Nghe lén điện thoại bí mật tiếng Anh là gì? | 3
+PRISON BREAK | Vụ vượt ngục tinh pháp tiếng Anh là gì? | 2
+INFILTRATION | Thâm nhập vào tổ chức bí mật tiếng Anh là gì? | 3
+SPYCRAFT | Kỹ thuật điệp báo tinh vi tiếng Anh là gì? | 3
+CODED MESSAGE | Thông điệp mã hóa bí mật tiếng Anh là gì? | 2
+INVISIBLE INK | Mực vô hình viết bí mật tiếng Anh là gì? | 3
+DEAD DROP | Nơi để lại thông tin bí mật tiếng Anh là gì? | 3 | DEAD DROP
+SEER | Người tiên tri nhìn thấy tương lai tiếng Anh là gì? | 3 | PROPHET
+FORESIGHT | Khả năng nhìn trước tương lai tiếng Anh là gì? | 3
+PSYCHIC | Nhân vật có khả năng tâm linh tiếng Anh là gì? | 3
+MENTALIST | Nhà ảo thuật đoán ý tưởng tiếng Anh là gì? | 3
+ESCAPE ARTIST | Ảo thuật gia thoát khỏi xiềng xích tiếng Anh là gì? | 3
+SLEIGHT OF HAND | Kỹ thuật ảo thuật tay nhanh tiếng Anh là gì? | 3
+VANISHING ACT | Tiết mục ảo thuật làm biến mất tiếng Anh là gì? | 3
+LEVITATION | Phép ảo thuật nhân vật bay lơi tiếng Anh là gì? | 3
+MIND READING | Đọc được ý tưởng người khác tiếng Anh là gì? | 3
+CURSED OBJECT | Đồ vật bị nguyền tiếng Anh là gì? | 3
+PARANORMAL | Vượt ngoài ranh giới tự nhiên tiếng Anh là gì? | 3
+CRYPTOGRAPHY | Mã hóa giải mã bí mật tiếng Anh là gì? | 3
+KELPIE | Ngựa nước ma quái trong truyền thuyết Scotland tiếng Anh là gì? | 3
+CHUPACABRA | Quái vật hút máu dê trong truyền thuyết Mỹ Latin tiếng Anh là gì? | 3
+MOTHMAN | Người bướm đêm, sinh vật bí ẩn ở Mỹ tiếng Anh là gì? | 3
+SASQUATCH | Người tuyết lông lá ở rừng Bắc Mỹ tiếng Anh là gì? | 3
+CHANGELING | Đứa trẻ bị tiên tráo đổi trong truyện cổ tiếng Anh là gì? | 3
+SELKIE | Hải cẩu hoá người trong truyền thuyết Bắc Âu tiếng Anh là gì? | 3
+GORGON | Nữ quái tóc rắn nhìn ai là hoá đá tiếng Anh là gì? | 3
+SIREN | Nàng tiên cá hát mê hoặc thuỷ thủ tiếng Anh là gì? | 3
+FAIRY RING | Vòng nấm mọc tròn, nơi tiên nhảy múa tiếng Anh là gì? | 3
+CRYSTAL SKULL | Hộp sọ pha lê bí ẩn của người cổ đại tiếng Anh là gì? | 3
+TREASURE CHEST | Rương châu báu của cướp biển tiếng Anh là gì? | 1
+TREASURE HUNT | Trò săn tìm kho báu tiếng Anh là gì? | 1
+SECRET CODE | Mật mã bí mật tiếng Anh là gì? | 1
+SECRET AGENT | Điệp viên bí mật tiếng Anh là gì? | 2
+SPY | Gián điệp tiếng Anh là gì? | 1
+DISGUISE | Cải trang, giả dạng để không bị nhận ra tiếng Anh là gì? | 2
+HIDE AND SEEK | Trò chơi trốn tìm tiếng Anh là gì? | 1
+FLASHLIGHT | Đèn pin soi đường trong đêm tối tiếng Anh là gì? | 1
+OWL | Con cú kêu trong đêm khuya tiếng Anh là gì? | 1
+FOG | Sương mù dày đặc tiếng Anh là gì? | 1
+GHOST HUNTER | Người đi săn ma tiếng Anh là gì? | 2
+WITCH HAT | Mũ chóp nhọn của phù thuỷ tiếng Anh là gì? | 1
+MYSTERY NOVEL | Tiểu thuyết trinh thám bí ẩn tiếng Anh là gì? | 2
+INVESTIGATOR | Điều tra viên tiếng Anh là gì? | 2
+CRIME LAB | Phòng thí nghiệm phân tích chứng cứ tiếng Anh là gì? | 2
+FAIRY | Nàng tiên có cánh tiếng Anh là gì? | 1
+ELF | Yêu tinh tai nhọn trong truyện cổ tiếng Anh là gì? | 1
+GIANT | Người khổng lồ tiếng Anh là gì? | 1
+PIXIE | Tiên tí hon tinh nghịch tiếng Anh là gì? | 2
+DWARF | Chú lùn trong truyện cổ tích tiếng Anh là gì? | 1
+VAMPIRE BAT | Loài dơi hút máu tiếng Anh là gì? | 2
+MAGIC CARPET | Tấm thảm bay thần kỳ tiếng Anh là gì? | 2
+GENIE | Thần đèn ban ba điều ước tiếng Anh là gì? | 2
+CRYSTAL CAVE | Hang động pha lê lấp lánh tiếng Anh là gì? | 2
+SECRET DIARY | Cuốn nhật ký bí mật tiếng Anh là gì? | 1

@@ -61,6 +61,8 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
   (toạ độ 1080×1920): y 278–1.210 (trên 268 là tên kênh/Join/mắt xem + hàng "Daily Ranking · Gallery"; dưới-trái từ 1.210 là bình luận
   TikTok), x ~75–1.005. Android che dưới-trái từ ~1.370. Tab có bảng quà hiện tại: năng lượng ×2 + Câu/đúng 278–310 · thẻ câu hỏi 318–763 ·
   bảng quà 771–946 · Bảng vàng | Đại sứ | Bảng điểm 952–1100 · thẻ quà đổi đề (94–685) / chào mừng (nửa trái, nền vàng) 1106–1206 · bảng điểm cột phải 952–1206 (top 5) · khung bình luận (phải) 1214–1534.
+  Bảng quà 8 ô × 3 trang (english-sets.js ORDER; trang 3 không được trống ô). Mỗi bộ đề ≥ 300 câu, mỗi bậc ≥ 80; Tổng hợp = mọi từ.
+  Chủ đề mùa (thanh trên trang điều khiển): 🎄 xmas.css · 💐 teacher.css (20/11) — chỉ đổi màu / trang trí, không đổi vị trí / cỡ chữ.
   Chủ kênh KHÔNG muốn chữ nhỏ lại: chỉ được bớt khoảng trống. `fitBody` chỉ là lưới an toàn cho câu siêu dài (nếu không sẽ bị cắt chữ).
 - **Thẻ quà đổi đề** (`stage-hud.js` giftCard) nằm CÙNG CHỖ thẻ chào người mới và ƯU TIÊN hơn: đang hiện thẻ quà thì lời chào chờ
   (`stage-main.js` welcomeWaiting). 5 bậc theo giá thật món quà: 1 · 2–9 · 10–19 · 20–29 · 30+ xu.

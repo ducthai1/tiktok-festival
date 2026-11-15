@@ -1,0 +1,203 @@
+# Bộ đề · Bí ẩn
+DETECTIVE | Thám tử điều tra giải quyết các vụ án hình sự tiếng Anh là gì? | 1 | INVESTIGATOR
+MYSTERY | Bí ẩn điều không rõ ràng cần phải giải đáp tiếng Anh là gì? | 1 | SECRET, PUZZLE
+CLUE | Manh mối dấu hiệu giúp tìm lời giải đáp tiếng Anh là gì? | 1 | HINT, EVIDENCE
+SUSPECT | Người bị nghi ngờ liên quan đến vụ án tiếng Anh là gì? | 1 | ACCUSED
+CRIME | Tội ác hành động phạm pháp lương tâm tiếng Anh là gì? | 1 | OFFENSE, FELONY
+CRIMINAL | Tội phạm kẻ phạm luật gây họa tiếng Anh là gì? | 1 | OFFENDER, LAWBREAKER
+INVESTIGATION | Điều tra kiểm chứng sự kiện làm sáng tỏ tiếng Anh là gì? | 2 | INQUIRY, PROBE
+WITNESS | Nhân chứng người chứng kiến sự việc tiếng Anh là gì? | 1 | EYEWITNESS
+ALIBI | Chứng cứ minh oan nơi người khác lúc phạm tội tiếng Anh là gì? | 2 | EXCUSE
+FINGERPRINT | Vân tay dấu chỉ tay định danh con người tiếng Anh là gì? | 1 | PRINT
+EVIDENCE | Bằng chứng chứng cứ về sự thật tiếng Anh là gì? | 1 | PROOF, SIGN
+GUILTY | Có lỗi chịu trách nhiệm phạm tội tiếng Anh là gì? | 1 | CULPABLE
+INNOCENT | Vô tội không liên quan sạch bóng tiếng Anh là gì? | 1 | BLAMELESS
+VERDICT | Phán quyết kết luận từ tòa án tiếng Anh là gì? | 2 | JUDGMENT, DECISION
+GHOST | Ma quái linh hồn người đã mất tiếng Anh là gì? | 1 | SPIRIT, PHANTOM, SPECTER
+HAUNTED | Bị ma ám có linh hồn trở lại tiếng Anh là gì? | 2 | POSSESSED
+SUPERNATURAL | Siêu nhiên vượt ngoài giới hạn tự nhiên tiếng Anh là gì? | 2 | PARANORMAL
+VAMPIRE | Người hút máu không bị cái chết tiếng Anh là gì? | 1 | BLOODSUCKER
+WEREWOLF | Người sói con người biến thành sói tiếng Anh là gì? | 2 | LYCANTHROPE
+WITCH | Phù thủy người phụ nữ biết thuật phép tiếng Anh là gì? | 1 | SORCERESS
+CURSE | Lời nguyền bùa chú sát hại tiếng Anh là gì? | 1 | HEX, SPELL
+LEGEND | Truyền thuyết câu chuyện lịch sử truyền miệng tiếng Anh là gì? | 1 | MYTH, FOLKLORE, TALE
+HAUNTING | Những hiện tượng ma quái kinh dị lạnh tiếng Anh là gì? | 2 | GHOSTLY APPEARANCE
+CREEPY | Rùng rợn kinh khủng làm sợ tiếng Anh là gì? | 1 | SPOOKY, EERIE, SCARY
+EERIE | Rợn tóc gai cảm giác kỳ lạ tiếng Anh là gì? | 2 | UNCANNY, MYSTERIOUS
+SINISTER | Xấu xa đầy dự cảm không lành tiếng Anh là gì? | 2 | EVIL, OMINOUS
+OMEN | Dự báo dấu báo trước tiếng Anh là gì? | 2 | SIGN, PORTENT
+DESTINY | Số mệnh định mệnh cuộc đời tiếng Anh là gì? | 2 | FATE, DOOM
+PROPHECY | Lời tiên tri dự báo tương lai tiếng Anh là gì? | 2 | PREDICTION, FORETELLING
+ORACLE | Thầy bói tiên tri người nói lời thần tiếng Anh là gì? | 2 | SEER, DIVINER
+DIVINATION | Bói toán dự đoán tương lai tiếng Anh là gì? | 2 | FORTUNE TELLING
+MAGIC | Phép thuật trò ảo thuật kỳ diệu tiếng Anh là gì? | 1 | SORCERY, WITCHCRAFT
+SPELL | Bùa chú phép thuật bí mật tiếng Anh là gì? | 1 | INCANTATION, CHARM, HEX
+WAND | Cây đũa phép gậy cầu kỳ tiếng Anh là gì? | 1 | ROD, STICK
+POTION | Nước thuốc bình dùng lạ kỳ tiếng Anh là gì? | 1 | ELIXIR, BREW
+ENCHANTED | Bị mê hoặc bị phép lạ tiếng Anh là gì? | 2 | BEWITCHED, MAGICAL
+SORCERER | Phù thủy nam người biết phép thuật tiếng Anh là gì? | 2 | WIZARD, MAGICIAN
+WIZARD | Pháp sư phù thủy quyền lực tiếng Anh là gì? | 1 | SORCERER, MAGE
+ENCHANTMENT | Sự mê hoặc phép lạ kỳ diệu tiếng Anh là gì? | 2 | MAGIC, SPELL
+MYSTICAL | Bí ẩn thần bí khó hiểu tiếng Anh là gì? | 2 | MYSTERIOUS, MAGICAL
+CRYPTIC | Mã hóa khó hiểu lạnh lùng tiếng Anh là gì? | 2 | OBSCURE, PUZZLING
+RIDDLE | Câu đố khó đoán tiếng Anh là gì? | 1 | PUZZLE, ENIGMA
+ENIGMA | Câu hỏi khó đáp bí ẩn tiếng Anh là gì? | 2 | MYSTERY, PUZZLE
+PUZZLE | Trò chơi ghép lắp tư duy tiếng Anh là gì? | 1 | BRAINTEASER, ENIGMA
+LABYRINTH | Mê cung đường cong phức tạp tiếng Anh là gì? | 2 | MAZE
+MAZE | Mê cung đường quanh co tiếng Anh là gì? | 1 | LABYRINTH
+TRAP | Cái bẫy kế sách xảo quyệt tiếng Anh là gì? | 1 | SNARE, PITFALL
+HIDDEN | Ẩn giấu che giấu bí mật tiếng Anh là gì? | 1 | CONCEALED, SECRET
+SECRET | Bí mật điều không tiết lộ tiếng Anh là gì? | 1 | CONFIDENTIAL, PRIVATE
+TREASURE | Kho báu tài sản quý giá tiếng Anh là gì? | 1 | WEALTH, RICHES
+PIRATE | Cướp biển kẻ cướp trên đại dương tiếng Anh là gì? | 1 | BUCCANEER, CORSAIR
+SHIPWRECK | Tàu chìm tự nạn hàng hải tiếng Anh là gì? | 2 | WRECKAGE, WRECK
+TOMB | Mộ ngôi mộ nơi chôn cắt tiếng Anh là gì? | 1 | GRAVE, CRYPT
+MUMMY | Xác ướp người chết bảo quản tiếng Anh là gì? | 1 | WRAPPED CORPSE
+PHARAOH | Nhà vua Ai Cập cổ đại tiếng Anh là gì? | 1 | KING, RULER
+PYRAMID | Tòa lâu kiến trúc tam giác tiếng Anh là gì? | 1 | MONUMENT
+EXCAVATION | Khai quật đào bới tìm kiếm tiếng Anh là gì? | 2 | DIG, DIGGING
+ARTIFACT | Vật cổ đồ vật lịch sử tiếng Anh là gì? | 2 | RELIC, ANTIQUE
+ANCIENT | Cổ đại xưa xa thế kỷ tiếng Anh là gì? | 1 | OLD, PRIMITIVE
+RUINS | Tàn tích đổ nát cổ tích tiếng Anh là gì? | 1 | REMNANTS, REMAINS
+UFO | Vật thể bay lạ ngoài không gian tiếng Anh là gì? | 1 | FLYING SAUCER
+ALIEN | Sinh vật ngoài hành tinh tiếng Anh là gì? | 1 | EXTRATERRESTRIAL
+UNIDENTIFIED | Chưa xác định không tìm ra tiếng Anh là gì? | 2 | UNKNOWN, UNRECOGNIZED
+UNEXPLAINED | Không giải thích được bí ẩn tiếng Anh là gì? | 2 | MYSTERIOUS, UNCLEAR
+FOLKLORE | Truyền thuyết dân gian câu chuyện cổ tiếng Anh là gì? | 2 | LEGEND, MYTHOLOGY
+CRYPTID | Động vật huyền bí chưa chứng minh tiếng Anh là gì? | 2 | CREATURE, BEAST
+BIGFOOT | Người rừng chân lớn huyền thoại tiếng Anh là gì? | 1 | SASQUATCH
+YETI | Người tuyết Tây Tạng chân lớn tiếng Anh là gì? | 1 | ABOMINABLE SNOWMAN
+LOCH NESS MONSTER | Quái vật hồ nước Kỳ lạ tiếng Anh là gì? | 2 | NESSIE
+DRAGON | Rồng sinh vật huyền thoại tiếng Anh là gì? | 1 | MYTHICAL CREATURE
+MERMAID | Nàng tiên cá nữ sinh vật biển tiếng Anh là gì? | 1 | SEA MAIDEN
+CHIMERA | Quái vật hỗn hợp sinh vật tiếng Anh là gì? | 2 | MONSTER
+GOLEM | Tượng đất ngoại kỳ tiếng Anh là gì? | 2 | ANIMATED STATUE
+MONSTER | Quái vật sinh vật kỳ quái tiếng Anh là gì? | 1 | CREATURE, BEAST
+BEAST | Sinh vật quái vật thú dữ tiếng Anh là gì? | 1 | CREATURE, MONSTER
+GARGOYLE | Tượng kỳ dị trên tòa nhà cổ tiếng Anh là gì? | 2 | STATUE
+HALLOWEEN | Tết ma ngày 31 tháng 10 tiếng Anh là gì? | 1 | ALL HALLOWS EVE
+JACK O'LANTERN | Quả bí ngô khắc mặt Halloween tiếng Anh là gì? | 1 | PUMPKIN
+COSTUME | Trang phục hóa trang lạ tiếng Anh là gì? | 1 | OUTFIT, DISGUISE
+TRICK OR TREAT | Lừa hay quà Halloween tiếng Anh là gì? | 1
+SKELETON | Bộ xương người chết tiếng Anh là gì? | 1 | BONES, SKULL
+SKULL | Hộp sọ đầu xương tiếng Anh là gì? | 1 | CRANIUM
+COFFIN | Quan tài hộp chứa xác tiếng Anh là gì? | 1 | CASKET, COFFIN
+ZOMBIE | Xác sống người chết sống lại tiếng Anh là gì? | 1 | UNDEAD
+REINCARNATION | Luân hồi tái sinh linh hồn tiếng Anh là gì? | 2 | REBIRTH
+IMMORTAL | Bất tử không chết được tiếng Anh là gì? | 1 | ETERNAL, UNDYING
+TWILIGHT | Chạng vạng ánh sáng mờ tiếng Anh là gì? | 1 | DUSK, GLOAMING
+MOONLIGHT | Ánh sáng mặt trăng quắ lộng tiếng Anh là gì? | 1 | LUNAR LIGHT
+SHADOW | Bóng tối bóng người tiếng Anh là gì? | 1 | SHADE, DARKNESS
+DARKNESS | Tối tăm không có ánh sáng tiếng Anh là gì? | 1 | BLACKNESS, NIGHT
+TERROR | Nỗi sợ khủng bố kinh hoàng tiếng Anh là gì? | 2 | HORROR, FEAR, FRIGHT
+SCREAM | Tiếng la hét kinh hoàng tiếng Anh là gì? | 1 | SHRIEK, YELL, CRY
+ECHO | Tiếng vang lại lặp lại tiếng Anh là gì? | 1 | REVERBERATION
+FOOTSTEP | Bước chân âm thanh bước tiếng Anh là gì? | 1 | STEP, FOOTFALL
+WHISPER | Thì thầm nói nhỏ tiếng Anh là gì? | 1 | MURMUR, HUM
+CREAKING | Tiếng kêu lục xác tiếng Anh là gì? | 2 | SQUEAKING, GROANING
+CHILL | Lạnh rợn tâm lý tiếng Anh là gì? | 1 | COLD, SHIVER
+GOOSEBUMPS | Lông gà nhếch lên sợ hãi tiếng Anh là gì? | 2
+DREAD | Sợ hãi bất an lo tiếng Anh là gì? | 2 | FEAR, ANXIETY
+VISION | Tầm nhìn thị lực toàn cảnh tiếng Anh là gì? | 1 | SIGHT, VIEWPOINT
+HALLUCINATION | Ảo giác nhìn thấy không thực tiếng Anh là gì? | 2 | DELUSION, ILLUSION
+ILLUSION | Ảo ảnh hình ảnh giả mạo tiếng Anh là gì? | 2 | MIRAGE, DECEPTION
+APPARITION | Bóng người xuất hiện đột ngột tiếng Anh là gì? | 2 | GHOST, PHANTOM
+COBWEB | Mạng nhện bụi cũ tiếng Anh là gì? | 1 | SPIDER WEB
+BASEMENT | Tầng hầm dưới lòng đất tiếng Anh là gì? | 1 | CELLAR, UNDERGROUND
+ATTIC | Gác mái phòng dưới nóc tiếng Anh là gì? | 1 | LOFT
+INEXPLICABLE | Không thể giải thích được tiếng Anh là gì? | 2 | UNEXPLAINABLE
+PARANORMAL ACTIVITY | Hoạt động siêu nhiên tiếng Anh là gì? | 2
+MEDIUM | Người lên tiếp xúc linh hồn tiếng Anh là gì? | 1 | SPIRITUALIST
+SEANCE | Buổi gọi hồn liên lạc tiếng Anh là gì? | 2
+SPIRIT WORLD | Thế giới linh hồn bên kia tiếng Anh là gì? | 2
+HEXED | Bị bùa chú trúng lời nguyền tiếng Anh là gì? | 2 | CURSED
+TAROT | Bộ bài bói 78 lá xưa kia tiếng Anh là gì? | 1
+CRYSTAL BALL | Quả cầu thủy tinh bói toán tiếng Anh là gì? | 1
+ALCHEMY | Thuật giả kim biến chứng tiếng Anh là gì? | 2 | TRANSMUTATION
+SUPERSTITION | Mê tín tục lệ không lý tiếng Anh là gì? | 2 | BELIEF
+SYMBOL | Kí hiệu đại diện tiếng Anh là gì? | 1 | SIGN, EMBLEM
+RUNE | Chữ tố cổ bí ẩn tiếng Anh là gì? | 2 | ANCIENT LETTER
+HIEROGLYPH | Chữ tượng hình Ai Cập tiếng Anh là gì? | 2 | HIEROGLYPHIC, GLYPH
+GLYPH | Chữ tượng hình cổ tiếng Anh là gì? | 3 | SYMBOL, CHARACTER
+ARCANE | Bí ẩn khó hiểu huyền bí tiếng Anh là gì? | 2 | MYSTERIOUS, ESOTERIC
+CRYPTOGRAPHY | Mật mã học giải mã tiếng Anh là gì? | 3 | ENCODING
+CIPHER | Mã hóa bằng số mật tiếng Anh là gì? | 2 | CODE, SECRET WRITING
+CRYPT | Hầm mộ chôn cát tiếng Anh là gì? | 2 | VAULT, TOMB
+SARCOPHAGUS | Quan tài đá chôn cất tiếng Anh là gì? | 3 | STONE COFFIN
+SPECTRAL | Thuộc bóng ma linh hồn tiếng Anh là gì? | 2 | GHOSTLY, PHANTOM-LIKE
+ETHEREAL | Vô hình anh quang thần bí tiếng Anh là gì? | 3 | GHOSTLY, IMMATERIAL
+PHANTASMAL | Thuộc ảo ảnh bóng ma tiếng Anh là gì? | 3 | GHOSTLY, ILLUSORY
+NOCTURNAL | Ban đêm hoạt động lúc tối tiếng Anh là gì? | 2 | NIGHT-TIME
+APOCALYPSE | Tận thế ngày cuối cùng tiếng Anh là gì? | 2 | END TIMES, DOOM
+VOID | Khoảng trống hư không tiếng Anh là gì? | 2 | EMPTY SPACE, ABYSS
+ABYSS | Vực sâu tối tăm tiếng Anh là gì? | 2 | CHASM, CHASM
+INFERNO | Địa ngục lửa tiếng Anh là gì? | 2 | HELL, FIRE
+UNDERWORLD | Thế giới dưới đất Hades tiếng Anh là gì? | 2 | HELL, NETHERWORLD
+PURGATORY | Tạp ngục nơi sạch tội tiếng Anh là gì? | 2 | LIMBO
+MALICE | Ác ý sự gây hại tiếng Anh là gì? | 2 | SPITE, MALEVOLENCE
+ESOTERIC | Chỉ dành cho nội bộ bí ẩn tiếng Anh là gì? | 2 | SECRET, HIDDEN
+MYSTIQUE | Sức hấp dẫn bí ẩn kỳ thú tiếng Anh là gì? | 2 | MYSTERIOUS APPEAL
+ENIGMATIC | Bí ẩn khó hiểu kỳ lạ tiếng Anh là gì? | 2 | MYSTERIOUS, CRYPTIC
+PARAPSYCHOLOGY | Siêu tâm lý học tiếng Anh là gì? | 3 | STUDY OF PARANORMAL
+PARAPSYCHOLOGIST | Chuyên gia siêu tâm lý tiếng Anh là gì? | 3 | PARANORMAL RESEARCHER
+TELEKINESIS | Năng lực di chuyển vật tiếng Anh là gì? | 3 | PSYCHOKINESIS
+PSYCHOKINESIS | Năng lực di chuyển bằng tâm tiếng Anh là gì? | 3 | MIND POWER
+TELEPATHY | Cảm ứng tâm thức tiếng Anh là gì? | 2 | MIND READING
+CLAIRVOYANCE | Thường nhìn thấy vô hình tiếng Anh là gì? | 3 | SECOND SIGHT
+CLAIRVOYANT | Người nhìn thấy vô hình tiếng Anh là gì? | 3 | PSYCHIC SEER
+PRECOGNITION | Khả năng biết trước tiếng Anh là gì? | 3 | FOREKNOWLEDGE
+ECTOPLASM | Chất hữu linh phát xuất tiếng Anh là gì? | 3 | SPIRITUAL MATTER
+MANIFESTATION | Sự biểu hiện xuất hiện tiếng Anh là gì? | 2 | APPEARANCE, DISPLAY
+MATERIALIZE | Hóa thân hiện ra tiếng Anh là gì? | 2 | APPEAR, BECOME REAL
+INCORPOREAL | Không có hình thể tiếng Anh là gì? | 3 | IMMATERIAL, BODILESS
+TRANSMUTATION | Sự biến hoá chất tiếng Anh là gì? | 3 | TRANSFORMATION
+WHODUNIT | Truyện trinh thám đoán ai là hung thủ tiếng Anh là gì? | 3
+RED HERRING | Manh mối giả đánh lạc hướng người phá án tiếng Anh là gì? | 3
+COLD CASE | Vụ án cũ chưa phá được bị xếp xó tiếng Anh là gì? | 3
+PRIVATE EYE | Thám tử tư (cách nói thân mật) tiếng Anh là gì? | 3
+MAGNIFYING GLASS | Kính lúp thám tử dùng soi dấu vết tiếng Anh là gì? | 2
+SLEUTH | Thám tử, người lần theo dấu vết tiếng Anh là gì? | 3
+INTERROGATION | Cuộc thẩm vấn nghi phạm tiếng Anh là gì? | 3
+CULPRIT | Thủ phạm gây ra chuyện tiếng Anh là gì? | 3
+ACCOMPLICE | Kẻ đồng loã giúp sức tiếng Anh là gì? | 3
+MOTIVE | Động cơ gây án tiếng Anh là gì? | 2
+FORENSICS | Pháp y, khoa học điều tra hiện trường tiếng Anh là gì? | 3
+POLTERGEIST | Hồn ma quậy phá làm đồ vật bay lung tung tiếng Anh là gì? | 3
+BANSHEE | Nữ thần báo tử than khóc trong truyện Ireland tiếng Anh là gì? | 3
+PHANTOM | Bóng ma, hồn ma tiếng Anh là gì? | 2
+DOPPELGANGER | Người giống hệt mình như bản sao bí ẩn tiếng Anh là gì? | 3
+KRAKEN | Quái vật bạch tuộc khổng lồ dưới biển sâu tiếng Anh là gì? | 3
+MINOTAUR | Quái vật đầu bò mình người trong mê cung tiếng Anh là gì? | 3
+BASILISK | Mãng xà chúa nhìn ai là hoá đá tiếng Anh là gì? | 3
+CYCLOPS | Người khổng lồ một mắt tiếng Anh là gì? | 3
+GRIFFIN | Sinh vật đầu đại bàng mình sư tử tiếng Anh là gì? | 3
+PHOENIX | Phượng hoàng lửa tái sinh từ tro tàn tiếng Anh là gì? | 2
+UNICORN | Kỳ lân một sừng tiếng Anh là gì? | 1
+LEPRECHAUN | Yêu tinh tí hon giữ hũ vàng cuối cầu vồng tiếng Anh là gì? | 3
+GOBLIN | Yêu tinh lùn tinh quái tiếng Anh là gì? | 2
+TROLL | Quỷ khổng lồ sống dưới gầm cầu tiếng Anh là gì? | 2
+WITCHCRAFT | Phép phù thuỷ tiếng Anh là gì? | 3
+BROOMSTICK | Cây chổi phù thuỷ cưỡi bay tiếng Anh là gì? | 2
+CAULDRON | Cái vạc phù thuỷ nấu thuốc tiếng Anh là gì? | 3
+SPELLBOOK | Cuốn sách thần chú tiếng Anh là gì? | 2
+AMULET | Bùa hộ mệnh đeo trên cổ tiếng Anh là gì? | 3
+TALISMAN | Lá bùa may mắn trừ tà tiếng Anh là gì? | 3
+HAUNTED HOUSE | Ngôi nhà ma ám tiếng Anh là gì? | 1
+GHOST STORY | Truyện ma kể đêm khuya tiếng Anh là gì? | 1
+URBAN LEGEND | Truyền thuyết đô thị lan truyền khắp nơi tiếng Anh là gì? | 3
+CROP CIRCLE | Vòng tròn bí ẩn xuất hiện trên đồng lúa tiếng Anh là gì? | 3
+BERMUDA TRIANGLE | Vùng biển tam giác quỷ nơi tàu bè mất tích tiếng Anh là gì? | 3
+SECRET PASSAGE | Lối đi bí mật sau bức tường tiếng Anh là gì? | 2
+TRAPDOOR | Cửa sập bí mật dưới sàn nhà tiếng Anh là gì? | 3
+BLACK CAT | Con mèo đen bị xem là điềm gở tiếng Anh là gì? | 1
+FULL MOON | Đêm trăng tròn người sói biến hình tiếng Anh là gì? | 1
+ESCAPE ROOM | Trò chơi giải đố thoát khỏi căn phòng khoá tiếng Anh là gì? | 2
+SPOOKY | Rùng rợn, ma mị (kiểu Halloween) tiếng Anh là gì? | 1
+SCARY | Đáng sợ tiếng Anh là gì? | 1
+NIGHTMARE | Cơn ác mộng tiếng Anh là gì? | 1
+SPIDER WEB | Mạng nhện giăng trong lâu đài cổ tiếng Anh là gì? | 1
+BAT | Con dơi bay lượn đêm Halloween tiếng Anh là gì? | 1
+PUMPKIN | Quả bí ngô khắc mặt cười ngày Halloween tiếng Anh là gì? | 1
+CANDLE | Ngọn nến lập loè trong căn phòng tối tiếng Anh là gì? | 1
+CASTLE | Lâu đài cổ trên đồi tiếng Anh là gì? | 1
+MAGICIAN | Ảo thuật gia biểu diễn trên sân khấu tiếng Anh là gì? | 1
