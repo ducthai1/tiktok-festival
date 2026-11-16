@@ -197,9 +197,47 @@ function showWelcome(fx) {
   return current?.onFx(fx);
 }
 
+const stageStartAt = Date.now();
+let pendingSafeReload = false;
+let lowFpsStreak = 0;
+
+function checkAutoRefresh(currentFps) {
+  const auto = settings.obsAutoRefresh;
+  if (!auto) return;
+  const elapsed = Date.now() - stageStartAt;
+  if (auto.enabled !== false && elapsed >= (auto.intervalMs || 7200000)) {
+    if (!pendingSafeReload) {
+      console.log(`[stage] Đã chạy ${(elapsed / 3600000).toFixed(1)}h (đến lịch tự làm mới) → chờ hết câu để làm mới an toàn`);
+      pendingSafeReload = true;
+    }
+  }
+  if (auto.lagDetect !== false && currentFps > 0 && currentFps < 18 && !isPreview) {
+    lowFpsStreak += 1;
+    if (lowFpsStreak >= 3 && !pendingSafeReload) {
+      console.warn(`[stage] Phát hiện lag liên tục (${currentFps} fps) → chờ hết câu để tự làm mới`);
+      pendingSafeReload = true;
+    }
+  } else {
+    lowFpsStreak = 0;
+  }
+}
+
 function onState(message) {
   latest = message;
   hud.setTestMode(Boolean(message.testMode));
+
+  // Tự động làm mới an toàn khi hết câu hoặc khi phòng rảnh (không làm gián đoạn người chơi)
+  if (pendingSafeReload) {
+    const isSafePhase = !message.phase || message.phase === 'reveal' || message.phase === 'idle';
+    if (isSafePhase) {
+      pendingSafeReload = false;
+      console.log('[stage] Thời điểm an toàn (%s) → Tự động làm mới màn hình OBS…', message.phase || 'idle');
+      fadeEl.classList.add('on');
+      setTimeout(() => location.reload(), 120);
+      return;
+    }
+  }
+
   if (message.game !== currentId) {
     if (!switching) switching = switchScene(message.game).finally(() => { switching = null; });
     return;
@@ -232,8 +270,19 @@ function stageInfo() {
   const fps = now - statSince > 2000 ? Math.round((statFrames * 1000) / (now - statSince)) : 0;
   statFrames = 0;
   statSince = now;
-  return { t: 'stageInfo', version: frontVersion, obs: Boolean(window.obsstudio), preview: isPreview, lite: quality.lite, fps, gpu,
-    hidden: document.visibilityState === 'hidden' };
+  checkAutoRefresh(fps);
+  return {
+    t: 'stageInfo',
+    version: frontVersion,
+    obs: Boolean(window.obsstudio),
+    preview: isPreview,
+    lite: quality.lite,
+    fps,
+    gpu,
+    hidden: document.visibilityState === 'hidden',
+    uptimeMs: Math.round(now),
+    pendingReload: pendingSafeReload
+  };
 }
 setInterval(() => socket.send(stageInfo()), 60000);
 
@@ -264,6 +313,13 @@ const socket = connectLiveSocket({
         } catch (error) {
           console.error('[stage] lỗi hiệu ứng:', fx.kind, error);
         }
+      }
+    }
+    else if (message.t === 'safeReload') {
+      pendingSafeReload = true;
+      if (!latest?.phase || latest.phase === 'reveal' || latest.phase === 'idle') {
+        fadeEl.classList.add('on');
+        setTimeout(() => location.reload(), 120);
       }
     }
     else if (message.t === 'reload') {

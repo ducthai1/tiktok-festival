@@ -83,13 +83,20 @@ export function createParticleSystem(scene, max = 4000, { blending = THREE.Addit
         drag[i] = damping;
         baseSize[i] = pointSize * (0.6 + Math.random() * 0.8);
       }
+      geometry.attributes.color.needsUpdate = true;
     },
     update(dt) {
+      let active = 0;
+      let alphaCleared = false;
       for (let i = 0; i < max; i += 1) {
         if (life[i] <= 0) {
-          alpha[i] = 0;
+          if (alpha[i] > 0) {
+            alpha[i] = 0;
+            alphaCleared = true;
+          }
           continue;
         }
+        active += 1;
         life[i] -= dt;
         const k = Math.max(0, life[i] / maxLife[i]);
         vel[i * 3 + 1] += grav[i] * dt;
@@ -103,7 +110,11 @@ export function createParticleSystem(scene, max = 4000, { blending = THREE.Addit
         alpha[i] = Math.min(1, k * 2.5);
         size[i] = baseSize[i] * (0.4 + 0.6 * k);
       }
-      for (const name of ['position', 'color', 'size', 'alpha']) geometry.attributes[name].needsUpdate = true;
+      if (active > 0) {
+        for (const name of ['position', 'size', 'alpha']) geometry.attributes[name].needsUpdate = true;
+      } else if (alphaCleared) {
+        geometry.attributes.alpha.needsUpdate = true;
+      }
     },
     dispose() {
       scene.remove(points);

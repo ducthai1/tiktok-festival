@@ -142,6 +142,18 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       sockets?.broadcast({ t: 'reload' });
       return { message: 'Đã gửi lệnh làm mới tới tất cả màn hình' };
     },
+    safeReload() {
+      sockets?.broadcast({ t: 'safeReload' });
+      return { message: 'Đã lên lịch: Sẽ tự làm mới ngay khi kết thúc câu hỏi này (không gián đoạn live)' };
+    },
+    setObsAutoRefresh(msg) {
+      const enabled = Boolean(msg.enabled);
+      const intervalMs = Math.max(1800_000, Math.min(24 * 3600_000, Number(msg.intervalMs) || 7200_000));
+      const lagDetect = msg.lagDetect !== false;
+      const obsAutoRefresh = { enabled, intervalMs, lagDetect };
+      updateSettings({ obsAutoRefresh });
+      return { message: enabled ? `Tự làm mới OBS mỗi ${Math.round(intervalMs / 3600_000 * 10) / 10} giờ (khi hết câu)` : 'Đã tắt tự làm mới OBS' };
+    },
     ping() {
       return { message: 'pong', settings, live: live.status() };
     }

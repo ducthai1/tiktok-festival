@@ -282,6 +282,17 @@ function renderLive(status) {
 // Màn hình OBS chạy code cũ / vẽ quá ít khung → hiệu ứng (mờ dần khi lật trang bảng quà…) mất trên live dù khung xem trước vẫn có.
 function renderStages({ list = [] }) {
   const obs = list.filter((s) => !s.preview);
+  if (obs.length && $('obs-uptime')) {
+    const maxUptime = Math.max(...obs.map((s) => s.uptimeMs || 0));
+    const hrs = Math.floor(maxUptime / 3600000);
+    const mins = Math.floor((maxUptime % 3600000) / 60000);
+    $('obs-uptime').textContent = hrs > 0 ? `${hrs}h ${mins}p` : `${mins} phút`;
+    if ($('obs-schedule-status')) {
+      const pending = obs.some((s) => s.pendingReload);
+      $('obs-schedule-status').textContent = pending ? '🛡️ Sẽ tự làm mới ngay khi hết câu này' : '✓ Hoạt động bình thường';
+      $('obs-schedule-status').style.color = pending ? '#ffd36b' : '#7dff8a';
+    }
+  }
   const line = obs.map((s) => {
     if (s.stale) return '⚠️ đang chạy code CŨ → bấm "Làm mới màn hình OBS" (không được thì trong OBS: chuột phải nguồn → Làm mới)';
     const fps = s.fps ? `${s.fps} khung/giây` : 'đang đo FPS…';
@@ -312,6 +323,11 @@ function applySettings(s) {
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
+
+  const auto = s.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true };
+  if ($('set-obs-autorefresh')) $('set-obs-autorefresh').checked = auto.enabled !== false;
+  if ($('set-obs-interval')) $('set-obs-interval').value = String(auto.intervalMs || 7200000);
+  if ($('set-obs-lagdetect')) $('set-obs-lagdetect').checked = auto.lagDetect !== false;
 }
 
 let pipWin = null;
@@ -657,6 +673,19 @@ $('reset-live').addEventListener('click', () => {
     run({ t: 'resetLive' });
   }
 });
-$('reload-stages').addEventListener('click', () => {
-  if (confirm('Tải lại màn hình OBS? Màn hình trống khoảng 2–3 giây.')) run({ t: 'reload' });
+function saveObsAutoRefresh() {
+  const enabled = $('set-obs-autorefresh')?.checked;
+  const intervalMs = Number($('set-obs-interval')?.value) || 7200000;
+  const lagDetect = $('set-obs-lagdetect')?.checked;
+  run({ t: 'setObsAutoRefresh', enabled, intervalMs, lagDetect });
+}
+$('set-obs-autorefresh')?.addEventListener('change', saveObsAutoRefresh);
+$('set-obs-interval')?.addEventListener('change', saveObsAutoRefresh);
+$('set-obs-lagdetect')?.addEventListener('change', saveObsAutoRefresh);
+
+$('safe-reload-stages')?.addEventListener('click', () => {
+  run({ t: 'safeReload' });
+});
+$('reload-stages')?.addEventListener('click', () => {
+  if (confirm('Tải lại màn hình OBS ngay lập tức? Màn hình có thể chớp 1–2 giây.')) run({ t: 'reload' });
 });

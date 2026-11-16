@@ -163,7 +163,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const publicSettings = () => ({
     tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false, legend: settings.legend, sound: settings.sound, volume: settings.volume,
     music: settings.music, musicVolume: settings.musicVolume,
-    welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || ''
+    welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || '',
+    obsAutoRefresh: settings.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true }
   });
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
@@ -294,6 +295,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       fps: Number.isFinite(info.fps) ? Math.max(0, Math.min(500, Math.round(info.fps))) : 0,
       gpu: String(info.gpu || '').replace(/[^\w .,:;()/+@-]/g, '').slice(0, 120), hidden: info.hidden === true
     };
+    if (Number.isFinite(info.uptimeMs)) clean.uptimeMs = Math.max(0, Math.round(info.uptimeMs));
+    if (typeof info.pendingReload === 'boolean') clean.pendingReload = info.pendingReload;
     clean.stale = clean.version !== version;
     clean.software = /swiftshader|llvmpipe|softpipe|software|microsoft basic/i.test(clean.gpu);
     const first = !ws.stage;

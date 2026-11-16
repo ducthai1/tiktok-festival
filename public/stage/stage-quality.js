@@ -9,8 +9,11 @@ export const LITE_MAX_FPS = 30;
 
 /** @param {string} search chuỗi `location.search` của trang, vd "?lite=1&fps=1" */
 export function stageQuality(search = '') {
-  const value = new URLSearchParams(search).get('lite');
+  const params = new URLSearchParams(search);
+  const value = params.get('lite');
   const lite = value !== null && value !== '0' && value !== 'false';
+  const capParam = params.get('cap');
+  const cap = capParam !== null ? Math.max(15, Math.min(120, Number(capParam) || 0)) : 0;
   return {
     lite,
     antialias: !lite,
@@ -18,7 +21,7 @@ export function stageQuality(search = '') {
     bloom: !lite,
     glass: !lite,
     maxPixelRatio: lite ? LITE_PIXEL_RATIO : 1,
-    maxFps: lite ? LITE_MAX_FPS : 0
+    maxFps: lite ? LITE_MAX_FPS : cap
   };
 }
 

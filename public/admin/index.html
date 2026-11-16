@@ -101,12 +101,33 @@
       <!-- ══ 📺 MÀN HÌNH & ÂM THANH ══ -->
       <section class="tab-panel" data-panel="screen" hidden>
         <div class="card">
-          <div class="card-head"><h2>Gắn vào OBS</h2><button type="button" id="reload-stages" class="ghost">🔄 Làm mới màn hình OBS</button></div>
+          <div class="card-head">
+            <h2>Gắn vào OBS</h2>
+            <div class="row gap">
+              <button type="button" id="safe-reload-stages" class="tiny" style="background:#28a745;color:#fff;border:none;font-weight:600;padding:6px 12px;border-radius:6px;cursor:pointer;" title="Chờ hết câu hỏi hiện tại mới làm mới, không làm gián đoạn người chơi">🛡️ Làm mới an toàn</button>
+              <button type="button" id="reload-stages" class="ghost tiny" title="Làm mới ngay lập tức">⚡ Làm mới ngay</button>
+            </div>
+          </div>
           <ol class="steps">
             <li>OBS → thêm <b>Browser Source</b> (Nguồn trình duyệt), URL: <code id="stage-url"></code> <button type="button" id="copy-stage" class="tiny">Chép</button></li>
             <li>Rộng <b>1080</b> × Cao <b>1920</b>; bật "Control audio via OBS" để thu âm thanh game.</li>
-            <li>Máy yếu: thêm <code>?lite=1</code> vào cuối URL — nhẹ hơn nhiều lần, hình hơi kém rực.</li>
+            <li>Để nhẹ máy nhất: thêm <code>?cap=30</code> (khoá 30 FPS, TikTok chỉ phát 30 FPS) hoặc <code>?lite=1</code> (chế độ siêu nhẹ).</li>
           </ol>
+          <div class="obs-refresh-box" style="margin: 10px 0; padding: 10px 14px; background: rgba(255,255,255,0.03); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div class="row wrap gap align-center">
+              <label class="toggle" style="margin: 0;"><input type="checkbox" id="set-obs-autorefresh"><span>🔄 Tự làm mới OBS định kỳ khi hết câu</span></label>
+              <select id="set-obs-interval" class="tiny" style="width: auto;">
+                <option value="3600000">Mỗi 1 giờ</option>
+                <option value="7200000" selected>Mỗi 2 giờ (khuyên dùng)</option>
+                <option value="10800000">Mỗi 3 giờ</option>
+                <option value="14400000">Mỗi 4 giờ</option>
+              </select>
+            </div>
+            <div class="row wrap gap align-center" style="margin-top: 8px;">
+              <label class="toggle" style="margin: 0;"><input type="checkbox" id="set-obs-lagdetect" checked><span>⚡ Tự phục hồi khi phát hiện lag (&lt; 18 FPS)</span></label>
+            </div>
+            <p id="obs-status-line" class="muted small" style="margin: 8px 0 0 0;">Thời gian chạy: <b id="obs-uptime">--</b> · Trạng thái: <span id="obs-schedule-status">Bình thường</span></p>
+          </div>
           <p id="stage-health" class="status idle">Màn hình OBS: chưa nối</p>
           <p class="small"><a id="open-stage" href="/stage" target="_blank" rel="noopener">↗ Mở màn hình lớn trong tab mới</a> <span class="muted">(bấm vào màn hình một lần để bật âm thanh)</span></p>
         </div>
