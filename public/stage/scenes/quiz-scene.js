@@ -31,7 +31,7 @@ const GIFT_RULES = {
   english: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI BỘ ĐỀ / ĐỘ KHÓ*', ' · ❤️ nạp năng lượng ↑'],
   emoji: ['🎁 Tặng quà (xem bảng dưới) → ', '*ĐỔI CHỦ ĐỀ*', ' · ❤️ nạp năng lượng ↑']
 };
-const DECK_RULES_PER_PAGE = 8; // 8 ô mỗi trang (english-sets.js ORDER: trang 1 cơ bản + độ khó, trang 2 chủ đề, trang 3 chủ đề mới)
+const DECK_RULES_PER_PAGE = 7; // 7 ô mỗi trang (english-sets.js ORDER: trang 1 cơ bản + độ khó + TOEIC/IELTS + Luyện nghe, trang 2 chủ đề, trang 3 chủ đề mới)
 const DECK_PAGE_MS_P1 = 20000; // Trang 1 hiển thị 20 giây
 const DECK_PAGE_MS_P2 = 12000; // Trang 2 hiển thị 12 giây
 const DECK_FADE_MS = 700;      // fade in/out mượt mà, chậm rãi giữa các trang (700ms)
@@ -86,7 +86,7 @@ function createDeckPanel(hud, gameId) {
         activeBadge.append(who);
       }
       activeBadge.hidden = false;
-    } else if (c.levelLeft > 0) {
+    } else if (c.levelLeft > 0 && (c.levelBy || c.level !== 'easy')) {
       activeBadge.replaceChildren(el('em', '', `⏳ ${c.levelLeft} câu`));
       if (c.levelBy) {
         const who = el('span', 'by');
@@ -524,6 +524,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     },
     onFx(fx) {
       if (fx.kind === 'quizQuestion') {
+        audio.clearSpeech?.(); // Dừng ngay giọng câu cũ / câu bị nhảy trước đó
         audio.play('whoosh');
         if (fx.speech) audio.speak(fx.speech, 'story');
       } else if (fx.kind === 'quizListen') {
@@ -552,6 +553,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         particles.burst({ position: new THREE.Vector3(0, 0, 3), box: new THREE.Vector3(3, 3, 1), count: 80 + fx.tier * 40,
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
       } else if (fx.kind === 'quizDeck') {
+        audio.clearSpeech?.(); // Dừng ngay giọng đọc câu cũ khi chuyển chủ đề/độ khó
         audio.play('magic');
         hud.sleigh();
         const isLevel = fx.to === 'easy' || fx.to === 'normal' || fx.to === 'hard';

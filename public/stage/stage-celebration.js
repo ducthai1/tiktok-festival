@@ -1,4 +1,4 @@
-// 🎉 Chúc mừng người ủng hộ (game-hub.js: tổng 💎 một người tặng trong phòng live vượt mốc 100 / 200 / 300…).
+// 🎉 Chúc mừng người ủng hộ (game-hub.js: tổng 💎 một người tặng trong phòng live vượt mốc 50 / 100 / 150…).
 // Màn bùng nổ ~8 giây giữa vùng an toàn của TikTok: chớp sáng + sóng xung kích + rung, avatar giữa hào quang xoay, vương miện
 // rơi xuống, tên chữ vàng, số 💎 đếm lên, pháo hoa (canvas 2D — nhẹ, OBS vẽ bằng CPU vẫn chạy), mưa kim cương, kèn + giọng đọc.
 // Mốc càng cao càng hoành tráng: < 500 vàng · 500+ cầu vồng "SIÊU ỦNG HỘ" · 1000+ "HUYỀN THOẠI". Nhiều người cùng lúc → lần lượt.
@@ -99,7 +99,7 @@ export function createCelebration({ root, audio }) {
 
   function play(fx) {
     busy = true;
-    const m = Number(fx.milestone) || 100;
+    const m = Number(fx.milestone) || 50;
     const tier = m >= 1000 ? 'legend' : m >= 500 ? 'rainbow' : 'gold';
     const layer = el('div', `celebrate cb-${tier}`);
     const canvas = el('canvas', 'cb-fx');

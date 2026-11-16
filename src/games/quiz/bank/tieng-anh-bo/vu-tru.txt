@@ -10,7 +10,7 @@ GEMINI | Chương trình tàu hai người (NASA) tiếng Anh là gì? | 2
 SPACE STATION | Trạm không gian tiếng Anh là gì? | 2
 LUNAR ECLIPSE | Nguyệt thực (bóng trái đất che mặt trăng) tiếng Anh là gì? | 2
 ESCAPE VELOCITY | Vận tốc thoát khỏi hành tinh tiếng Anh là gì? | 3
-DOPPLER EFFECT | Hiệu ứng Doppler (thay đổi tần số) tiếng Anh là gì? | 3
+DOPPLER EFFECT | Hiệu ứng biến đổi tần số sóng khi nguồn phát chuyển động lại gần hoặc ra xa tiếng Anh là gì? | 3
 PARALLAX | Thị sai (cách đo khoảng cách sao) tiếng Anh là gì? | 3
 REDSHIFT | Dịch đỏ tiếng Anh là gì? | 3
 BLUESHIFT | Dịch xanh tiếng Anh là gì? | 3
@@ -47,7 +47,7 @@ ORBITER | Tàu vệ tinh quỹ đạo tiếng Anh là gì? | 2 | ORBITERS
 SPACE TELESCOPE | Kính thiên văn trong vũ trụ tiếng Anh là gì? | 2
 RADIO TELESCOPE | Kính viễn vọng vô tuyến tiếng Anh là gì? | 3
 OBSERVATORY | Đài quan sát thiên văn tiếng Anh là gì? | 2 | OBSERVATORIES
-ARECIBO OBSERVATORY | Đài quan sát Arecibo (đã đóng) tiếng Anh là gì? | 3
+ARECIBO OBSERVATORY | Kính viễn vọng vô tuyến lòng chảo khổng lồ từng đặt tại Puerto Rico tiếng Anh là gì? | 3
 SOUTHERN CROSS | Chòm sao Nam th十字 tiếng Anh là gì? | 2
 POLARIS | Sao Bắc Đẩu tiếng Anh là gì? | 2
 SIRIUS | Sao Thiên Sửu (sao sáng nhất) tiếng Anh là gì? | 2
@@ -82,15 +82,15 @@ GIANT STAR | Sao khổng lồ tiếng Anh là gì? | 2
 DWARF STAR | Sao lùn tiếng Anh là gì? | 2
 RED GIANT | Sao khổng lồ đỏ tiếng Anh là gì? | 2
 WHITE DWARF | Sao lùn trắng tiếng Anh là gì? | 2
-NEUTRON STAR | Sao neutron tiếng Anh là gì? | 3
+NEUTRON STAR | Xác sao tàn tích siêu đậm đặc gồm các hạt trung hòa điện hình thành sau vụ nổ siêu tân tinh tiếng Anh là gì? | 3
 PULSAR | Sao xoay phát tia tiếng Anh là gì? | 3
 BLACK HOLE | Lỗ đen tiếng Anh là gì? | 2
 SINGULARITY | Điểm kỳ dị tiếng Anh là gì? | 3
 ACCRETION DISK | Đĩa hấp thu xoay tiếng Anh là gì? | 3
-HAWKING RADIATION | Bức xạ Hawking từ lỗ đen tiếng Anh là gì? | 3
+HAWKING RADIATION | Bức xạ nhiệt lý thuyết phát ra từ rìa chân trời sự kiện của hố đen vũ trụ tiếng Anh là gì? | 3
 WORMHOLE | Lỗ giun không-thời gian tiếng Anh là gì? | 3
-GAMMA RAY BURST | Bùng nổ tia gamma tiếng Anh là gì? | 3
-GAMMA RAY | Tia gamma tiếng Anh là gì? | 3
+GAMMA RAY BURST | Chớp nổ phóng năng lượng điện từ dữ dội và sáng chói nhất trong vũ trụ tiếng Anh là gì? | 3
+GAMMA RAY | Bức xạ điện từ mang năng lượng cao nhất và bước sóng ngắn nhất tiếng Anh là gì? | 3
 COSMIC RAY | Tia vũ trụ tiếng Anh là gì? | 2
 SOLAR WIND | Gió mặt trời tiếng Anh là gì? | 2
 MAGNETIC FIELD | Trường từ tiếng Anh là gì? | 2
@@ -100,7 +100,7 @@ SOUTHERN LIGHTS | Cực quang nam tiếng Anh là gì? | 2
 EXOPLANET | Hành tinh ngoài hệ tiếng Anh là gì? | 2 | EXOPLANETS
 HABITABLE ZONE | Vùng sinh sống tiếng Anh là gì? | 2
 EARTH-LIKE PLANET | Hành tinh giống trái đất tiếng Anh là gì? | 2
-GOLDILOCKS ZONE | Vùng Goldilocks (điều kiện sống) tiếng Anh là gì? | 3
+GOLDILOCKS ZONE | Khoảng cách vừa phải quanh một ngôi sao cho phép nước lỏng duy trì sự sống tiếng Anh là gì? | 3
 PLANET EARTH | Hành tinh Trái Đất tiếng Anh là gì? | 1
 TERRESTRIAL PLANET | Hành tinh đất đá tiếng Anh là gì? | 2
 GAS GIANT | Hành tinh khí khổng lồ tiếng Anh là gì? | 2
@@ -118,15 +118,15 @@ REGULUS | Sao Sư Tử tiếng Anh là gì? | 2
 ARCTURUS | Sao Yển tiếng Anh là gì? | 2
 CAPELLA | Sao Yêu tiếng Anh là gì? | 2
 FOMALHAUT | Sao Cá tiếng Anh là gì? | 2
-VELA SUPERNOVA | Tàn dư siêu tân tinh Vela tiếng Anh là gì? | 3
-TYCHO SUPERNOVA | Tàn dư siêu tân tinh Tycho tiếng Anh là gì? | 3
-KEPLER SUPERNOVA | Tàn dư siêu tân tinh Kepler tiếng Anh là gì? | 3
+VELA SUPERNOVA | Tàn dư siêu tân tinh khổng lồ phát sáng nằm trong chòm sao Thuyền Phàm tiếng Anh là gì? | 3
+TYCHO SUPERNOVA | Vụ nổ siêu tân tinh do nhà thiên văn học người Đan Mạch ghi chép vào năm 1572 tiếng Anh là gì? | 3
+KEPLER SUPERNOVA | Tàn dư vụ nổ sao sáng rực do nhà thiên văn học người Đức quan sát năm 1604 tiếng Anh là gì? | 3
 GRAVITATIONAL LENSING | Thấu kính hấp dẫn tiếng Anh là gì? | 3
-EINSTEIN RING | Vòng Einstein tiếng Anh là gì? | 3
+EINSTEIN RING | Ảo ảnh vòng cung ánh sáng khép kín tạo ra bởi hiện tượng thấu kính hấp dẫn tiếng Anh là gì? | 3
 DARK MATTER | Vật chất tối tiếng Anh là gì? | 2
 COSMIC INFLATION | Lạm phát vũ trụ tiếng Anh là gì? | 3
-HUBBLE CONSTANT | Hằng số Hubble tiếng Anh là gì? | 3
-HUBBLE LAW | Định luật Hubble tiếng Anh là gì? | 3
+HUBBLE CONSTANT | Hằng số đo tốc độ giãn nở của vũ trụ theo khoảng cách tiếng Anh là gì? | 3
+HUBBLE LAW | Định luật vật lý thiên văn xác định thiên hà càng ở xa thì vận tốc lùi xa càng lớn tiếng Anh là gì? | 3
 EXPANSION OF UNIVERSE | Sự giãn nở vũ trụ tiếng Anh là gì? | 2
 BIG FREEZE | Kết thúc vũ trụ do lạnh tiếng Anh là gì? | 3
 HEAT DEATH | Cái chết nhiệt tiếng Anh là gì? | 3
@@ -137,7 +137,7 @@ PARALLEL UNIVERSE | Vũ trụ song song tiếng Anh là gì? | 2
 QUANTUM GRAVITY | Trọng lực lượng tử tiếng Anh là gì? | 3
 STRING THEORY | Lý thuyết dây tiếng Anh là gì? | 3
 SUPERSYMMETRY | Siêu đối xứng tiếng Anh là gì? | 3
-HIGGS BOSON | Boson Higgs tiếng Anh là gì? | 3
+HIGGS BOSON | Hạt cơ bản giải thích nguồn gốc khối lượng của vật chất thường ví như hạt của Chúa tiếng Anh là gì? | 3
 VACUUM ENERGY | Năng lượng chân không tiếng Anh là gì? | 3
 COSMOLOGICAL CONSTANT | Hằng số vũ trụ tiếng Anh là gì? | 3
 GENERAL RELATIVITY | Thuyết tương đối rộng tiếng Anh là gì? | 2
@@ -152,7 +152,7 @@ CASSINI-HUYGENS | Tàu thăm dò Sao Thổ tiếng Anh là gì? | 2
 GALILEO | Tàu thăm dò Sao Mộc tiếng Anh là gì? | 1
 JUNO | Tàu thăm dò Sao Mộc hiện tại tiếng Anh là gì? | 2
 NEW HORIZONS | Tàu thăm dò Sao Diêm Vương tiếng Anh là gì? | 2
-DAWN MISSION | Sứ mệnh Dawn (Ceres) tiếng Anh là gì? | 2
+DAWN MISSION | Chuyến tàu thám hiểm không gian khám phá tiểu hành tinh Vesta và hành tinh lùn Ceres tiếng Anh là gì? | 2
 HAYABUSA | Sứ mệnh mang mẫu tiểu hành tinh tiếng Anh là gì? | 2
 ROSETTA | Sứ mệnh theo dõi sao chổi tiếng Anh là gì? | 2
 PHILAE | Tàu đáp sao chổi (Rosetta) tiếng Anh là gì? | 2
@@ -212,10 +212,10 @@ CHROMOSPHERE | Lớp sắc tiếng Anh là gì? | 2
 CORONA | Quanh hàng tiếng Anh là gì? | 2
 PROMINENCE | Lửa ngoài tiếng Anh là gì? | 2
 SOLAR CYCLE | Chu kỳ mặt trời tiếng Anh là gì? | 2
-MAUNDER MINIMUM | Cực tiểu Maunder tiếng Anh là gì? | 3
+MAUNDER MINIMUM | Thời kỳ vết đen mặt trời gần như biến mất hoàn toàn vào thế kỷ 17 tiếng Anh là gì? | 3
 LIGHT CURVE | Đường cong sáng tiếng Anh là gì? | 2
-LAGRANGE POINT | Điểm Lagrange tiếng Anh là gì? | 3
-ROCHE LIMIT | Giới hạn Roche tiếng Anh là gì? | 3
+LAGRANGE POINT | Vị trí cân bằng trọng lực giữa hai thiên thể lớn giúp tàu vũ trụ giữ nguyên vị trí tiếng Anh là gì? | 3
+ROCHE LIMIT | Khoảng cách gần nhất mà một vệ tinh có thể tiếp cận hành tinh mẹ trước khi bị lực thủy triều xé tan tiếng Anh là gì? | 3
 PRECESSION | Tiến động tiếng Anh là gì? | 3
 MASS LOSS | Mất khối lượng tiếng Anh là gì? | 2
 STELLAR WIND | Gió sao tiếng Anh là gì? | 2
@@ -229,10 +229,10 @@ BINARY STAR | Sao nhị phân tiếng Anh là gì? | 2
 VISUAL BINARY | Sao nhị phân trực quan tiếng Anh là gì? | 3
 SPECTROSCOPIC BINARY | Sao nhị phân quang phổ tiếng Anh là gì? | 3
 ECLIPSING BINARY | Sao nhị phân che phủ tiếng Anh là gì? | 3
-SUPER-EDDINGTON | Vượt giới hạn Eddington tiếng Anh là gì? | 3
+SUPER-EDDINGTON | Trạng thái bức xạ của thiên thể vượt qua ngưỡng giới hạn áp suất cực đại tiếng Anh là gì? | 3
 X-RAY BINARY | Sao nhị phân tia X tiếng Anh là gì? | 3
 MICROQUASAR | Một hệ sao nhị phân với lỗ đen phát tia X mạnh tiếng Anh là gì? | 3
-NEUTRON STAR BINARY | Sao nhị phân neutron tiếng Anh là gì? | 3
+NEUTRON STAR BINARY | Hệ hai thiên thể tàn tích siêu đặc quay quanh khối tâm chung tiếng Anh là gì? | 3
 TOTAL ECLIPSE | Nhật/nguyệt thực toàn phần tiếng Anh là gì? | 2
 PARTIAL ECLIPSE | Nhật/nguyệt thực bán phần tiếng Anh là gì? | 2
 ANNULAR ECLIPSE | Nhật thực vành tiếng Anh là gì? | 2
@@ -258,12 +258,12 @@ MODERN ASTRONOMER | Nhà thiên văn hiện đại tiếng Anh là gì? | 2
 THEORETICAL ASTRONOMY | Thiên văn lý thuyết tiếng Anh là gì? | 2
 POSITIONAL ASTRONOMY | Thiên văn vị trí tiếng Anh là gì? | 2
 ASTROMETRY | Đo vị trí sao tiếng Anh là gì? | 2
-DISTANCE MODULUS | Modulus khoảng cách tiếng Anh là gì? | 3
+DISTANCE MODULUS | Đại lượng hiệu số giữa cấp sao biểu kiến và tuyệt đối để xác định cự ly vũ trụ tiếng Anh là gì? | 3
 STANDARD DEVIATIONS | Độ lệch chuẩn tiếng Anh là gì? | 2
 STATISTICAL ASTRONOMY | Thiên văn thống kê tiếng Anh là gì? | 3
 PROBABILISTIC MODELS | Mô hình xác suất tiếng Anh là gì? | 2
-MONTE CARLO METHOD | Phương pháp Monte Carlo tiếng Anh là gì? | 3
-BAYESIAN STATISTICS | Thống kê Bayesian tiếng Anh là gì? | 3
+MONTE CARLO METHOD | Thuật toán thống kê giải quyết bài toán phức tạp bằng cách lấy mẫu ngẫu nhiên lặp lại tiếng Anh là gì? | 3
+BAYESIAN STATISTICS | Trường phái thống kê tính toán xác suất có điều kiện dựa trên bằng chứng thu thập được tiếng Anh là gì? | 3
 SAMPLING TECHNIQUES | Kỹ thuật lấy mẫu tiếng Anh là gì? | 2
 OBSERVATIONAL DATA | Dữ liệu quan sát tiếng Anh là gì? | 1
 EMPIRICAL EVIDENCE | Bằng chứng thực nghiệm tiếng Anh là gì? | 2
@@ -335,7 +335,7 @@ GEOMAGNETIC STORM | Bão từ địa cầu gây cực quang tiếng Anh là gì?
 CORONAL MASS EJECTION | Phun khối khí từ vành nhật tiếng Anh là gì? | 3
 COSMONAUT | Phi hành gia Nga hay Liên Xô tiếng Anh là gì? | 2 | NHÂN VIÊN VŨ TRỤ LIÊN XOÉT
 ISS | Trạm vũ trụ quốc tế tiếng Anh là gì? | 2
-CREW DRAGON | Phiên bản chở người của tàu Dragon tiếng Anh là gì? | 2
+CREW DRAGON | Phiên bản tàu vũ trụ chở các phi hành gia lên trạm không gian do công ty tư nhân Mỹ chế tạo tiếng Anh là gì? | 2
 STARSHIP | Tàu vũ trụ tái sử dụng của SpaceX tiếng Anh là gì? | 2
 SATURN V | Tên lửa khổng lồ đưa con người lên Mặt Trăng tiếng Anh là gì? | 3
 SPACESUIT | Bộ quần áo bảo vệ phi hành gia tiếng Anh là gì? | 1
@@ -348,7 +348,7 @@ MICROGRAVITY | Trạng thái không trọng lượng trong vũ trụ tiếng Anh
 WEIGHTLESSNESS | Cảm giác không trọng lượng tiếng Anh là gì? | 1
 BIOLOGICAL | Liên quan đến sự sống tiếng Anh là gì? | 1
 CRYSTALLIZATION | Quá trình tạo tinh thể trên ISS tiếng Anh là gì? | 3
-PROTEIN CRYSTAL | Tinh thể protein lớn tạo được ngoài vũ trụ tiếng Anh là gì? | 3
+PROTEIN CRYSTAL | Cấu trúc kết tinh đại phân tử sinh học nuôi dưỡng trong môi trường không trọng lực tiếng Anh là gì? | 3
 CARDIOVASCULAR | Liên quan tim mạch tiếng Anh là gì? | 2
 BONE LOSS | Tình trạng mất xương do không trọng lực tiếng Anh là gì? | 2
 MUSCLE ATROPHY | Tình trạng mất cơ tiếng Anh là gì? | 2
@@ -388,7 +388,7 @@ CASSINI DIVISION | Khoảng trống trong vành tiếng Anh là gì? | 3
 SHEPHERD MOON | Vệ tinh định hình vành sao tiếng Anh là gì? | 3
 GREAT RED SPOT | Bão lớn đỏ trên Sao Mộc tiếng Anh là gì? | 2
 OORT CLOUD | Đám mây ngoài cùng Hệ Mặt Trời tiếng Anh là gì? | 3
-KUIPER BELT | Vành Kuiper chứa sao chổi tiếng Anh là gì? | 2
+KUIPER BELT | Vành đai các thiên thể đóng băng và sao chổi nằm ngoài rìa quỹ đạo Hải Vương Tinh tiếng Anh là gì? | 2
 IMPACT CRATER | Hố va chạm từ thiên thạch tiếng Anh là gì? | 2
 EXTINCTION EVENT | Sự tuyệt chủng do thiên thạch tiếng Anh là gì? | 2
 MOON LANDING | Cuộc hạ cánh lên Mặt Trăng tiếng Anh là gì? | 1
@@ -416,7 +416,7 @@ SPITZER | Kính vũ trụ quan sát tia hồng ngoại tiếng Anh là gì? | 3
 KEPLER | Kính vũ trụ chuyên tìm hành tinh xa tiếng Anh là gì? | 2
 CHANDRA | Kính vũ trụ chuyên quan sát tia X tiếng Anh là gì? | 3
 FERMI | Kính vũ trụ quan sát tia gamma từ không gian tiếng Anh là gì? | 3
-QUASAR DISCOVERY | Phát hiện quasar là lịch sử tiếng Anh là gì? | 3
+QUASAR DISCOVERY | Dấu mốc khoa học khám phá ra các chuẩn tinh cực sáng ở tâm thiên hà xa xôi tiếng Anh là gì? | 3
 DRAKE EQUATION | Phương trình ước tính sinh vật tiếng Anh là gì? | 3
 BREAKTHROUGH LISTEN | Dự án tìm tín hiệu ngoài hành tinh tiếng Anh là gì? | 3
 ARECIBO MESSAGE | Thông điệp gửi không gian năm 1974 tiếng Anh là gì? | 3

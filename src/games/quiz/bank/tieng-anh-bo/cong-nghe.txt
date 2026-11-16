@@ -171,7 +171,7 @@ CONTAINER | Công nghệ đóng gói ứng dụng (Docker) | 3 | CONTAINER
 DEPLOYMENT | Việc triển khai ứng dụng lên mạng | 3 | TRIỂN KHAI
 DEBUGGING | Việc sửa lỗi phần mềm | 2 | SỬA LỖI
 COMPILER | Trình biên dịch mã nguồn | 3 | TRÌNH BIÊN DỊCH
-INTERNET OF THINGS | Mạng lưới thiết bị kết nối internet (IoT) | 3 | IOT
+INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truyền mạng điện tử tiếng Anh là gì? | 3 | IOT
 NEURAL NETWORK | Mạng nơ-ron nhân tạo | 3 | MẠNG NƠ RON
 QUANTUM COMPUTING | Điện toán lượng tử | 3 | ĐIỆN TOÁN LƯỢNG TỬ
 VULNERABILITY | Lỗ hổng bảo mật | 3 | LỖ HỔNG BẢO MẬT
@@ -277,7 +277,7 @@ MERGE | Hành động gộp hai nhánh code lại thành một tiếng Anh là g
 CONFLICT | Xung đột code xảy ra khi hai nhánh sửa cùng một dòng tiếng Anh là gì? | 2 | XUNG ĐỘT CODE
 SYNTAX ERROR | Lỗi cú pháp do viết sai quy tắc ngôn ngữ lập trình tiếng Anh là gì? | 1 | LỖI CÚ PHÁP
 RUNTIME ERROR | Lỗi xảy ra khi chương trình đang chạy thực tế tiếng Anh là gì? | 2 | LỖI KHI CHẠY
-LOGIC ERROR | Lỗi logic chương trình chạy được nhưng cho kết quả sai tiếng Anh là gì? | 2 | LỖI LOGIC
+LOGIC ERROR | Lỗi thuật toán khiến chương trình chạy không báo lỗi nhưng ra kết quả sai tiếng Anh là gì? | 2 | LỖI LOGIC
 STACK OVERFLOW | Lỗi tràn ngăn xếp thường do đệ quy vô hạn tiếng Anh là gì? | 3 | TRÀN NGĂN XẾP
 NULL POINTER | Con trỏ trỏ vào vùng nhớ không tồn tại gây lỗi chương trình tiếng Anh là gì? | 3 | CON TRỎ NULL
 GARBAGE COLLECTION | Cơ chế tự động thu hồi bộ nhớ không còn sử dụng tiếng Anh là gì? | 3 | THU HỒI BỘ NHỚ
@@ -292,7 +292,7 @@ KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo l
 BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên tiếng Anh là gì? | 2 | DANH SÁCH CHỜ
 USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile tiếng Anh là gì? | 2 | CÂU CHUYỆN NGƯỜI DÙNG
 TECHNICAL DEBT | Nợ kỹ thuật chi phí phát sinh do chọn giải pháp nhanh thay vì tốt tiếng Anh là gì? | 3 | NỢ KỸ THUẬT
-CODE REVIEW | Việc xem xét kiểm tra code của đồng nghiệp trước khi gộp vào tiếng Anh là gì? | 2 | KIỂM TRA CODE
+CODE REVIEW | Hoạt động kiểm tra rà soát mã lập trình của đồng nghiệp trước khi gộp vào kho tiếng Anh là gì? | 2 | KIỂM TRA CODE
 UNIT TEST | Kiểm thử đơn vị kiểm tra từng hàm hoặc module nhỏ riêng lẻ tiếng Anh là gì? | 2 | KIỂM THỬ ĐƠN VỊ
 INTEGRATION TEST | Kiểm thử tích hợp đảm bảo các module hoạt động đúng khi kết hợp tiếng Anh là gì? | 3 | KIỂM THỬ TÍCH HỢP
 REGRESSION TEST | Kiểm thử hồi quy đảm bảo tính năng cũ không bị hỏng sau sửa đổi tiếng Anh là gì? | 3 | KIỂM THỬ HỒI QUY

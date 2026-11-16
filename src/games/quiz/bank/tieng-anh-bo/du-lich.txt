@@ -138,8 +138,8 @@ PYRAMID | Kim tự tháp Ai Cập xây bằng đá sa thạch tiếng Anh là g�
 SPHINX | Tượng nhân sư canh giữ lăng mộ cổ đại tiếng Anh là gì? | 2
 COLOSSEUM | Đấu trường La Mã cổ kính ở thành Rome tiếng Anh là gì? | 2 | AMPHITHEATER
 BIG BEN | Tháp đồng hồ nổi tiếng bên bờ sông Thames London tiếng Anh là gì? | 1 | CLOCK TOWER
-EIFFEL TOWER | Tháp Eiffel bằng thép biểu tượng kinh đô Paris tiếng Anh là gì? | 1
-TAJ MAHAL | Lăng đền Taj Mahal cẩm thạch trắng tình yêu tiếng Anh là gì? | 2
+EIFFEL TOWER | Công trình tháp sắt sừng sững biểu tượng của kinh đô ánh sáng Paris tiếng Anh là gì? | 1
+TAJ MAHAL | Lăng mộ bằng đá cẩm thạch trắng kiệt tác biểu tượng tình yêu vĩnh cửu ở Ấn Độ tiếng Anh là gì? | 2
 GREAT WALL | Vạn Lý Trường Thành xây dựng kiên cố trên núi tiếng Anh là gì? | 1 | LONG WALL
 STATUE OF LIBERTY | Tượng Nữ thần Tự do tay giơ cao ngọn đuốc tiếng Anh là gì? | 1
 OPERA HOUSE | Nhà hát vỏ sò độc đáo ở vịnh Sydney tiếng Anh là gì? | 1 | SYDNEY OPERA
@@ -153,8 +153,8 @@ SNORKEL | Kính bơi kèm ống thở lặn ngắm cá tiếng Anh là gì? | 1 
 SCUBA DIVING | Lặn biển sâu đeo bình khí nén thở tiếng Anh là gì? | 2 | DEEP SEA DIVING
 SURFBOARD | Tấm ván lướt sóng cưỡi trên đầu ngọn sóng tiếng Anh là gì? | 1 | SURF BOARD
 PARAGLIDING | Trò nhảy dù lượn bay bổng ngắm thung lũng tiếng Anh là gì? | 2 | PARAGLIDE
-BUNGEE JUMP | Cú nhảy bungee thót tim buộc dây chân tiếng Anh là gì? | 2 | BUNGEE JUMPING
-ZIPLINE | Trò trượt cáp zipline băng qua ngọn rừng tiếng Anh là gì? | 2 | ZIP LINE
+BUNGEE JUMP | Cú nhảy thót tim từ trên cầu cao xuống với sợi dây đàn hồi buộc chân tiếng Anh là gì? | 2 | BUNGEE JUMPING
+ZIPLINE | Trò chơi trượt ròng rọc trên dây cáp băng qua cánh rừng hoặc thung lũng tiếng Anh là gì? | 2 | ZIP LINE
 CABLE CAR | Hệ thống cabin cáp treo leo đỉnh núi cao tiếng Anh là gì? | 1 | ROPEWAY, GONDOLA LIFT
 SAFARI | Chuyến xe chuyên dụng đi xem hổ báo sư tử hoang dã tiếng Anh là gì? | 1 | WILDLIFE SAFARI
 ECOTOURISM | Hình thức du lịch sinh thái gần gũi thiên nhiên tiếng Anh là gì? | 2 | GREEN TOURISM
@@ -213,7 +213,7 @@ IN-FLIGHT MEAL | Suất ăn nóng phục vụ hành khách trên máy bay tiến
 COCKPIT | Khoang lái của phi công đầu máy bay tiếng Anh là gì? | 2 | FLIGHT DECK
 RUNWAY | Đường băng bê tông cho máy bay cất hạ cánh tiếng Anh là gì? | 2 | AIRSTRIP
 CONTROL TOWER | Đài kiểm soát không lưu chỉ huy sân bay tiếng Anh là gì? | 2 | AIR TRAFFIC CONTROL
-RADAR | Hệ thống radar quét định vị máy bay tàu bè tiếng Anh là gì? | 2
+RADAR | Hệ thống vô tuyến sóng phản xạ định vị máy bay và tàu thuyền từ xa tiếng Anh là gì? | 2
 BICYCLE | Chiếc xe đạp hai bánh đạp dạo phố tiếng Anh là gì? | 1 | BIKE
 MOTORBIKE | Chiếc xe máy xe mô tô hai bánh tiếng Anh là gì? | 1 | MOTORCYCLE
 SCOOTER | Chiếc xe ga lướt êm phố xá tiếng Anh là gì? | 1 | MOPED
@@ -222,7 +222,7 @@ HORSE CARRIAGE | Cỗ xe ngựa kéo lộc cộc đưa du khách dạo quanh ti�
 SLED | Chiếc xe trượt tuyết do đàn chó kéo tiếng Anh là gì? | 2 | SLEDGE, SLEIGH
 SNOWMOBILE | Xe trượt tuyết có động cơ chạy trên băng tuyết tiếng Anh là gì? | 2 | SKIDOO
 CANOE | Chiếc xuồng ca nô thon dài chèo bằng mái chèo tiếng Anh là gì? | 2
-KAYAK | Chiếc thuyền kayak đáy kín chèo vượt thác ghềnh tiếng Anh là gì? | 2
+KAYAK | Chiếc thuyền thể thao đáy kín thon hẹp chèo bằng mái đôi vượt thác tiếng Anh là gì? | 2
 SPEEDBOAT | Ca nô cao tốc lướt như bay xé toạc mặt nước tiếng Anh là gì? | 2 | MOTORBOAT
 HOVERCRAFT | Tàu đệm khí chạy lướt trên cả đất liền và mặt nước tiếng Anh là gì? | 3
 HYDROFOIL | Tàu cánh ngầm nâng thân tàu lên khỏi mặt sóng tiếng Anh là gì? | 3
@@ -234,7 +234,7 @@ PARACHUTE | Chiếc dù nhảy thả từ trên máy bay xuống tiếng Anh là
 TRAM | Tuyến xe điện leng keng chạy ray trên mặt phố tiếng Anh là gì? | 2 | STREETCAR, TRAMWAY
 MONORAIL | Tàu điện một ray trên cao uốn lượn hiện đại tiếng Anh là gì? | 2
 FUNICULAR | Tàu hoả kéo dây cáp leo vách núi dốc đứng tiếng Anh là gì? | 3 | CLIFF RAILWAY
-WATER TAXI | Thuyền taxi đón trả khách qua các bến sông tiếng Anh là gì? | 2 | RIVER TAXI
+WATER TAXI | Phương tiện xuồng ghe chở khách công cộng đi lại giữa các bến sông tiếng Anh là gì? | 2 | RIVER TAXI
 DOUBLE-DECKER | Chiếc xe buýt hai tầng đỏ rực biểu tượng thành phố tiếng Anh là gì? | 2 | TWO-TIER BUS
 PARK | Công viên tiếng Anh là gì? | 1
 CITY | Thành phố tiếng Anh là gì? | 1
@@ -391,10 +391,10 @@ EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đê
 EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn tiếng Anh là gì? | 2 | ĐẠI SỨ QUÁN
 CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập ra đường tiếng Anh là gì? | 3 | GIỜ GIỚI NGHIÊM
 VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt tiếng Anh là gì? | 1 | BIỆT THỰ
-STONEHENGE | Vòng tròn đá bí ẩn Stonehenge xếp từ thời tiền sử ở nước Anh tiếng Anh là gì? | 3 | BÃI ĐÁ CỔ
-SAHARA | Sa mạc cát Sahara lớn nhất thế giới ở châu Phi tiếng Anh là gì? | 1 | SA MẠC SAHARA
-EVEREST | Đỉnh núi tuyết Everest cao nhất hành tinh trên dãy Himalaya tiếng Anh là gì? | 1 | ĐỈNH EVEREST, NÚI EVEREST
-AMAZON | Khu rừng nhiệt đới nguyên sinh Amazon - lá phổi xanh của Trái Đất tiếng Anh là gì? | 1 | RỪNG AMAZON
+STONEHENGE | Vòng tròn các khối cự thạch bí ẩn xếp từ thời tiền sử ở nước Anh tiếng Anh là gì? | 3 | BÃI ĐÁ CỔ
+SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu Phi tiếng Anh là gì? | 1 | SA MẠC SAHARA
+EVEREST | Đỉnh núi tuyết cao nhất hành tinh trên dãy Himalaya tiếng Anh là gì? | 1 | ĐỈNH EVEREST, NÚI EVEREST
+AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất tiếng Anh là gì? | 1 | RỪNG AMAZON
 PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh tiếng Anh là gì? | 2 | THÁI BÌNH DƯƠNG, PACIFIC OCEAN
 ATLANTIC | Đại Tây Dương - đại dương ngăn cách châu Mỹ và châu Âu/châu Phi tiếng Anh là gì? | 2 | ĐẠI TÂY DƯƠNG, ATLANTIC OCEAN
 NILE | Dòng sông Nin huyền thoại nuôi dưỡng nền văn minh Ai Cập cổ tiếng Anh là gì? | 2 | SÔNG NIN, NILE RIVER

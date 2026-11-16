@@ -253,12 +253,12 @@ STEP-OVER | Điệu bộ giả vờ bước qua bóng để lừa đối thủ t
 FEINT | Động tác giả vờ lừa đối thủ trước khi đổi hướng tiếng Anh là gì? | 2 | ĐỘNG TÁC GIẢ VỜ
 BODY FEINT | Lừa người bằng chuyển động thân trên tiếng Anh là gì? | 3 | LỪA BẰNG THÂN NGƯỜI
 ELASTICO | Màn lừa bóng kinh điển xoay cổ chân tiếng Anh là gì? | 3 | ELASTICO
-CRUYFF TURN | Màn xoay người kinh điển của Cruyff né đối thủ tiếng Anh là gì? | 3 | CRUYFF TURN
+CRUYFF TURN | Kỹ thuật xoay người 180 độ giấu bóng ra sau chân trụ của huyền thoại Hà Lan tiếng Anh là gì? | 3 | CRUYFF TURN
 RAINBOW FLICK | Cú hất bóng qua đầu đối thủ theo hình vòng cầu tiếng Anh là gì? | 3 | HẤT BÓNG QUA ĐẦU
 DIVING HEADER | Cú đánh đầu lao người xuống tiếng Anh là gì? | 2 | ĐẦU BÓNG LAO NGƯỜI
 HALF-VOLLEY | Cú sút ngay khi bóng vừa chạm đất nảy lên tiếng Anh là gì? | 3 | SÚT NỬA BỔNG
 CHIP SHOT | Cú lobbing bóng vượt qua thủ môn vào lưới tiếng Anh là gì? | 2 | CU LOP BÓNG
-PERFECT HAT-TRICK | Hat-trick với một bàn chân phải chân trái và đầu tiếng Anh là gì? | 3 | HAT TRICK HOÀN HẢO
+PERFECT HAT-TRICK | Thành tích 3 bàn thắng trong một trận gồm chân phải chân trái và đánh đầu tiếng Anh là gì? | 3 | HAT TRICK HOÀN HẢO
 POKER | Ghi được bốn bàn thắng trong một trận tiếng Anh là gì? | 3 | GHI BỐN BÀN
 MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản tiếng Anh là gì? | 4 | MANITA
 SHUTOUT | Giữ lưới sạch bóng đối thủ không ghi được bàn nào tiếng Anh là gì? | 2 | KHÔNG ĐỂ THỦNG LƯỚI
@@ -289,7 +289,7 @@ GOAL MOUTH | Vùng miệng lưới giữa hai cột dọc khung thành tiếng A
 TECHNICAL AREA | Khu kỹ thuật giới hạn khu vực chỉ đạo của ban huấn luyện tiếng Anh là gì? | 2 | KHU KỸ THUẬT
 FOURTH OFFICIAL | Trọng tài thứ tư phụ trách bảng thay người tiếng Anh là gì? | 2 | TRỌNG TÀI THỨ TƯ
 ASSISTANT REFEREE | Trọng tài biên giơ cờ việt vị và bóng ra ngoài tiếng Anh là gì? | 2 | TRỌNG TÀI BIÊN
-VIDEO REVIEW | Quy trình xem lại video để xác nhận quyết định trọng tài tiếng Anh là gì? | 2 | XEM LẠI VIDEO
+VIDEO REVIEW | Quy trình xem lại băng hình chậm để xác nhận quyết định trọng tài trên sân cỏ tiếng Anh là gì? | 2 | XEM LẠI VIDEO
 OVERTURNED DECISION | Quyết định bị đảo ngược sau khi xem lại video tiếng Anh là gì? | 3 | QUYẾT ĐỊNH BỊ ĐẢO NGƯỢC
 CHECK COMPLETE | Thông báo VAR đã hoàn tất kiểm tra không thay đổi quyết định tiếng Anh là gì? | 3 | KIỂM TRA HOÀN TẤT
 ON REVIEW | Khoảng thời gian trọng tài đang xem lại màn hình VAR tiếng Anh là gì? | 2 | ĐANG XEM LẠI

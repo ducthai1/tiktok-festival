@@ -53,11 +53,11 @@ GUITAR | Cây đàn ghi ta 6 dây mộc mạc tiếng Anh là gì? | 1 | ACOUSTI
 PIANO | Cây đàn dương cầm phím ngà lộng lẫy tiếng Anh là gì? | 1 | GRAND PIANO
 DRUMS | Bộ trống gõ giữ nhịp sôi nổi tiếng Anh là gì? | 1 | DRUM KIT
 VIOLIN | Cây đàn vĩ cầm kéo réo rắt da diết tiếng Anh là gì? | 1 | FIDDLE
-SAXOPHONE | Chiếc kèn saxophone uốn cong chơi nhạc jazz tiếng Anh là gì? | 2 | SAX
-TRUMPET | Chiếc kèn trumpet đồng âm vang dõng dạc tiếng Anh là gì? | 2 | BRASS HORN
+SAXOPHONE | Chiếc kèn đồng hình chữ J uốn cong tạo âm thanh trầm bổng trong ban nhạc jazz tiếng Anh là gì? | 2 | SAX
+TRUMPET | Cây kèn đồng thân thẳng có ba nút bấm với âm sắc đanh dõng dạc tiếng Anh là gì? | 2 | BRASS HORN
 FLUTE | Cây sáo thổi hơi du dương réo rắt tiếng Anh là gì? | 1 | WOODEN FLUTE
 KEYBOARD | Chiếc đàn phím điện tử organ tiếng Anh là gì? | 1 | SYNTHESIZER
-BASS | Cây đàn ghi ta bass đánh nốt trầm bổng tiếng Anh là gì? | 2 | BASS GUITAR
+BASS | Cây đàn thường có 4 dây kim loại lớn giữ nhịp điệu trầm ấm cho ban nhạc tiếng Anh là gì? | 2 | BASS GUITAR
 HARMONICA | Chiếc kèn ac-mô-ni-ca nhỏ ngậm miệng thổi tiếng Anh là gì? | 2 | MOUTH ORGAN
 CELLO | Cây đàn trung cầm lớn chống chân dưới sàn tiếng Anh là gì? | 2 | VIOLONCELLO
 FAN | Người hâm mộ theo dõi thần tượng từng bước đi tiếng Anh là gì? | 1 | FOLLOWER, SUPPORTER
@@ -67,8 +67,8 @@ PAPARAZZI | Cánh săn ảnh lùng sục đời tư ngôi sao tiếng Anh là g�
 RED CARPET | Thảm đỏ trải sàn đón dàn sao sải bước tiếng Anh là gì? | 1 | CARPET
 AWARD | Giải thưởng danh dự trao tặng cho tài năng tiếng Anh là gì? | 1 | PRIZE, TROPHY
 TROPHY | Chiếc cúp vàng sáng loáng tượng trưng chiến thắng tiếng Anh là gì? | 1 | CUP
-OSCAR | Tượng vàng Oscar danh giá bậc nhất điện ảnh tiếng Anh là gì? | 1 | ACADEMY AWARD
-GRAMMY | Kèn vàng Grammy giải thưởng âm nhạc đỉnh cao tiếng Anh là gì? | 1 | GRAMMY AWARD
+OSCAR | Bức tượng hiệp sĩ mạ vàng danh giá bậc nhất của Viện Hàn lâm Điện ảnh nước Mỹ tiếng Anh là gì? | 1 | ACADEMY AWARD
+GRAMMY | Giải thưởng hình chiếc máy hát bằng vàng tôn vinh thành tựu âm nhạc tiếng Anh là gì? | 1 | GRAMMY AWARD
 BILLBOARD | Bảng xếp hạng đĩa đơn và bài hát ăn khách tiếng Anh là gì? | 1 | CHARTS
 GAME | Trò chơi điện tử giải trí trên máy tính tiếng Anh là gì? | 1 | VIDEO GAME
 PLAYER | Người chơi tham gia thi đấu đối kháng tiếng Anh là gì? | 1 | GAMER
@@ -127,17 +127,17 @@ ENCORE | Lời kêu gọi vỗ tay hát thêm bài nữa của khán giả tiế
 METRONOME | Máy đếm nhịp gõ phách giữ nhịp cho người học đàn tiếng Anh là gì? | 2 | TEMPO TICKER
 TUNER | Máy lên dây đàn chỉnh đúng cao độ nốt tiếng Anh là gì? | 2 | PITCH PIPE
 AMPLIFIER | Bộ amply khuếch đại âm thanh guitar điện tiếng Anh là gì? | 2 | AMP
-SYNTHESIZER | Đàn synthesizer tạo âm thanh điện tử tổng hợp tiếng Anh là gì? | 2 | KEYBOARD SYNTH
+SYNTHESIZER | Nhạc cụ bàn phím điện tử có khả năng tổng hợp và biến hóa mọi âm thanh tiếng Anh là gì? | 2 | KEYBOARD SYNTH
 TAMBOURINE | Chiếc trống lắc tay có vòng chuông kim loại tiếng Anh là gì? | 2 | JINGLE RING
 TRIANGLE | Nhạc cụ kẻng tam giác gõ leng keng tiếng Anh là gì? | 2 | TRIANGLE BELL
 XYLOPHONE | Đàn mộc cầm gõ thanh gỗ phát ra âm trong trẻo tiếng Anh là gì? | 2 | WOODEN BELLS
-UKULELE | Cây đàn ukulele 4 dây nhỏ nhắn của xứ Hawaii tiếng Anh là gì? | 1 | HAWAIIAN GUITAR
-BANJO | Cây đàn banjo mặt tròn gảy nhạc đồng quê tiếng Anh là gì? | 2 | FIVE-STRING BANJO
-MANDOLIN | Chiếc đàn mandolin gảy dây réo rắt xứ Ý tiếng Anh là gì? | 2
+UKULELE | Cây đàn nhỏ nhắn tựa guitar có 4 dây xuất xứ từ quần đảo Hawaii tiếng Anh là gì? | 1 | HAWAIIAN GUITAR
+BANJO | Cây đàn có bầu tròn như mặt trống gảy dây chơi nhạc đồng quê nước Mỹ tiếng Anh là gì? | 2 | FIVE-STRING BANJO
+MANDOLIN | Cây đàn dây nhỏ hình giọt lệ có các cặp dây đôi réo rắt xứ Ý tiếng Anh là gì? | 2
 BAGPIPES | Kèn túi truyền thống độc đáo của xứ Scotland tiếng Anh là gì? | 2 | SCOTTISH PIPES
 ACCORDION | Cây đàn phong cầm xếp hộp kéo ra thụt vào tiếng Anh là gì? | 2 | SQUEEZEBOX
 OBOE | Cây kèn dăm kép bằng gỗ âm sắc ấm áp tiếng Anh là gì? | 3
-CLARINET | Cây kèn clarinet thân đen bóng thổi hơi tiếng Anh là gì? | 2
+CLARINET | Cây kèn ống dăm đơn thân đen bóng thổi hơi trong dàn nhạc cổ điển tiếng Anh là gì? | 2
 BASSOON | Cây kèn đại dăm kép phát âm trầm sâu tiếng Anh là gì? | 3
 TUBA | Chiếc kèn đại bằng đồng to lớn nhất dàn nhạc tiếng Anh là gì? | 2 | BASS HORN
 GONG | Chiếc cồng chiêng đồng gõ vang dội núi rừng tiếng Anh là gì? | 1 | CHIME GONG
@@ -224,13 +224,13 @@ CHART-TOPPER | Bài hát leo lên vị trí dẫn đầu bảng xếp hạng ti�
 MAINSTREAM | Xu hướng văn hoá âm nhạc đại chúng phổ biến tiếng Anh là gì? | 2 | POP CULTURE
 INDIE | Âm nhạc hoặc phim độc lập không phụ thuộc hãng lớn tiếng Anh là gì? | 2 | INDEPENDENT MUSIC
 UNDERGROUND | Dòng nhạc ngầm cá tính không theo trào lưu tiếng Anh là gì? | 2 | SUB-CULTURE
-HIP HOP | Dòng nhạc và văn hoá hip hop đường phố tiếng Anh là gì? | 1 | HIP-HOP
+HIP HOP | Trào lưu văn hóa nghệ thuật đường phố gồm vẽ graffiti nhảy breakdance và đọc vần tiếng Anh là gì? | 1 | HIP-HOP
 RAP | Thể loại nhạc đọc lời ca nhanh có nhịp điệu vần điệu tiếng Anh là gì? | 1 | RAP MUSIC
-RAPPER | Rapper cất lời rap gieo vần sắc bén tiếng Anh là gì? | 1 | MC
-POP | Thể loại nhạc pop đại chúng bắt tai dễ nghe tiếng Anh là gì? | 1 | POP MUSIC
-ROCK | Dòng nhạc rock mạnh mẽ với tiếng guitar điện gầm rú tiếng Anh là gì? | 1 | ROCK AND ROLL
-JAZZ | Dòng nhạc jazz ngẫu hứng kèn saxophone quyến rũ tiếng Anh là gì? | 1 | JAZZ MUSIC
-BLUES | Dòng nhạc blues trầm buồn nguồn gốc từ người Mỹ gốc Phi tiếng Anh là gì? | 2
+RAPPER | Nghệ sĩ trình diễn đọc lời có nhịp điệu trên nền nhạc đập tiếng Anh là gì? | 1 | MC
+POP | Dòng âm nhạc đại chúng thịnh hành có giai điệu bắt tai dễ thuộc tiếng Anh là gì? | 1 | POP MUSIC
+ROCK | Thể loại âm nhạc cuồng nhiệt nổi bật với đàn thùng điện gầm rú và tiếng trống dồn dập tiếng Anh là gì? | 1 | ROCK AND ROLL
+JAZZ | Dòng âm nhạc ngẫu hứng phóng khoáng bắt nguồn từ New Orleans nước Mỹ tiếng Anh là gì? | 1 | JAZZ MUSIC
+BLUES | Dòng nhạc da diết đượm buồn nguồn gốc từ cộng đồng người Mỹ gốc Phi tiếng Anh là gì? | 2
 R&B | Dòng nhạc R&B nhịp điệu uyển chuyển lôi cuốn tiếng Anh là gì? | 1 | RHYTHM AND BLUES
 EDM | Dòng nhạc điện tử sôi động quẩy tung sàn nhảy tiếng Anh là gì? | 1 | DANCE MUSIC
 DJ | Người chỉnh nhạc trộn nhạc khuấy động bữa tiệc tiếng Anh là gì? | 1 | DISC JOCKEY
@@ -262,13 +262,13 @@ CHEER | Tiếng hò reo cổ vũ khích lệ tinh thần tiếng Anh là gì? | 
 BOOING | Tiếng la ó la hét phản đối chê bai tiếng Anh là gì? | 2 | JEERING
 STAGE LIGHTS | Hệ thống đèn màu rực rỡ chiếu sáng sân khấu tiếng Anh là gì? | 1 | THEATER LIGHTING
 FOG MACHINE | Máy phun khói mờ ảo lãng mạn trên sân khấu tiếng Anh là gì? | 2 | SMOKE GENERATOR
-LASER SHOW | Màn trình diễn tia laser quét nhiều màu ấn tượng tiếng Anh là gì? | 1 | LIGHT SHOW
+LASER SHOW | Màn biểu diễn các luồng sáng quang học hội tụ quét nhiều màu rực rỡ tiếng Anh là gì? | 1 | LIGHT SHOW
 CONFETTI CANNON | Pháo bắn giấy vụn kim tuyến tung bay mừng chiến thắng tiếng Anh là gì? | 2 | CONFETTI BLAST
 FIREWORK DISPLAY | Màn bắn pháo hoa rực rỡ trên bầu trời tiếng Anh là gì? | 1 | PYROTECHNICS
 TICKET COUNTER | Quầy bán vé xem phim xem ca nhạc tiếng Anh là gì? | 1 | BOX OFFICE WINDOW
 SOLD OUT | Tình trạng cháy vé không còn chỗ trống tiếng Anh là gì? | 1 | FULL HOUSE
 SCALPER | Phe vé chợ đen bán lại vé giá cắt cổ tiếng Anh là gì? | 2 | TICKET TOUT
-VIP PASS | Thẻ thông hành đặc biệt vào khu vực VIP tiếng Anh là gì? | 1 | ALL-ACCESS PASS
+VIP PASS | Tấm thẻ thông hành đặc quyền cho phép tiếp cận khu vực khách danh dự tiếng Anh là gì? | 1 | ALL-ACCESS PASS
 MERCHANDISE | Đồ lưu niệm áo mũ in hình thần tượng tiếng Anh là gì? | 1 | MERCH
 FANART | Tranh vẽ thần tượng do người hâm mộ tự vẽ tiếng Anh là gì? | 1 | FAN ART
 FANFIC | Truyện tự sáng tác do fan viết về nhân vật yêu thích tiếng Anh là gì? | 2 | FAN FICTION

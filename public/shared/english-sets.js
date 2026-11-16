@@ -28,10 +28,10 @@ export const ENGLISH_GIFT_PLAN = {
   // trang 2 (chủ kênh 14/11/2026: hạ giá về 10 xu): hộp quà chỉ có 6 món 10 xu ai cũng thấy (Rosa dùng ở trang 1)
   toeic: 'Friendship Necklace', ielts: 'I Like What I See', congnghe: 'Curious Twinkle', bongda: 'Spinning Soccer', yhoc: 'Slow motion',
   dulich: 'Journey Pass', giaitri: 'Divine Fingers',
-  // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + Thành ngữ (trang 2) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
-  normal: 'Ice Cream Cone', thanhngu: 'Encore Ticket',
-  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail',
-  dongtu: 'Name shoutout', nghenghiep: 'Bravo!', camxuc: 'Love you so much', nhacua: 'Tiny Blush'
+  // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
+  normal: 'Ice Cream Cone',
+  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love you so much', bian: 'Lyric Mail',
+  nghenghiep: 'Bravo!', nhacua: 'Tiny Blush'
 };
 /** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
 export const STREAMER_SEEN_GIFTS = ['Peach'];
@@ -42,43 +42,40 @@ export const ENGLISH_TARGETS = {
   easy:      { kind: 'level', icon: '😊', label: 'Dễ' },
   normal:    { kind: 'level', icon: '⚖️', label: 'Thường' }, // về độ khó thường (trộn mọi bậc)
   hard:      { kind: 'level', icon: '🔥', label: 'Khó' },
-  dongvat:   { kind: 'set',   icon: '🐾', label: 'Động vật' },
-  amthuc:    { kind: 'set',   icon: '🍕', label: 'Ẩm thực' },
-  truonghoc: { kind: 'set',   icon: '🎒', label: 'Trường học' },
+  toeic:     { kind: 'set',   icon: '💼', label: 'TOEIC' },
+  ielts:     { kind: 'set',   icon: '🎓', label: 'IELTS' },
   // 🎧 nghe từ (giọng Mỹ / Anh / Úc) rồi gõ lại — chỉ hiện khi giọng đọc tiếng Anh đang chạy tốt (english-switcher.js)
   nghe:      { kind: 'listen', icon: '🎧', label: 'Luyện nghe' },
 
-  // Trang 2: Thử thách & Đam mê (hiện 12s) — quà 5 / 6 / 10 xu
-  toeic:     { kind: 'set',   icon: '💼', label: 'TOEIC' },
-  ielts:     { kind: 'set',   icon: '🎓', label: 'IELTS' },
+  // Trang 2: Chủ đề phổ biến — quà 5 / 10 xu
+  dongvat:   { kind: 'set',   icon: '🐾', label: 'Động vật' },
+  truonghoc: { kind: 'set',   icon: '🎒', label: 'Trường học' },
   congnghe:  { kind: 'set',   icon: '💻', label: 'Công nghệ' },
   bongda:    { kind: 'set',   icon: '⚽', label: 'Thể thao' },
   yhoc:      { kind: 'set',   icon: '🩺', label: 'Y học' },
   dulich:    { kind: 'set',   icon: '✈️', label: 'Du lịch' },
   giaitri:   { kind: 'set',   icon: '🎬', label: 'Giải trí' },
-  thanhngu:  { kind: 'set',   icon: '💬', label: 'Thành ngữ' },
 
   // Trang 3 (15/11/2026): chủ đề mới — ô chưa có câu hỏi thì tự ẩn (english-switcher.js)
+  amthuc:    { kind: 'set',   icon: '🍕', label: 'Ẩm thực' },
   vutru:     { kind: 'set',   icon: '🚀', label: 'Vũ trụ' },
+  nghenghiep:{ kind: 'set',   icon: '👷', label: 'Nghề nghiệp' },
+  nhacua:    { kind: 'set',   icon: '🏠', label: 'Nhà cửa' }, // nhà cửa, quần áo, đồ vật
   game:      { kind: 'set',   icon: '🎮', label: 'Game' },
   tinhyeu:   { kind: 'set',   icon: '💘', label: 'Tình yêu' },
-  bian:      { kind: 'set',   icon: '👻', label: 'Bí ẩn' },
-  dongtu:    { kind: 'set',   icon: '🏃', label: 'Động từ' }, // động từ + tính từ thông dụng
-  nghenghiep:{ kind: 'set',   icon: '👷', label: 'Nghề nghiệp' },
-  camxuc:    { kind: 'set',   icon: '😍', label: 'Cảm xúc' }, // cảm xúc, tính cách, cơ thể
-  nhacua:    { kind: 'set',   icon: '🏠', label: 'Nhà cửa' } // nhà cửa, quần áo, đồ vật
+  bian:      { kind: 'set',   icon: '👻', label: 'Bí ẩn' }
 };
-export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '⚖️', label: 'Độ khó: Thường' } };
-// thứ tự ô trên bảng quà (8 ô / trang, quiz-scene.js): trang 1 cơ bản + độ khó + TOEIC/IELTS + Luyện nghe · trang 2 chủ đề · trang 3 chủ đề mới
+export const ENGLISH_DEFAULTS = { set: { icon: '🌐', label: 'Chủ đề: Ngẫu nhiên' }, level: { icon: '😊', label: 'Độ khó: Dễ' } };
+// thứ tự ô trên bảng quà (7 ô / trang, quiz-scene.js): trang 1 cơ bản + độ khó + TOEIC/IELTS + Luyện nghe · trang 2 chủ đề · trang 3 chủ đề mới
 export const ORDER = [
-  'general', 'easy', 'normal', 'hard', 'amthuc', 'toeic', 'ielts', 'nghe',
-  'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri', 'thanhngu',
-  'vutru', 'dongtu', 'nghenghiep', 'camxuc', 'nhacua', 'game', 'tinhyeu', 'bian'
+  'general', 'easy', 'normal', 'hard', 'toeic', 'ielts', 'nghe',
+  'dongvat', 'truonghoc', 'congnghe', 'bongda', 'yhoc', 'dulich', 'giaitri',
+  'amthuc', 'vutru', 'nghenghiep', 'nhacua', 'game', 'tinhyeu', 'bian'
 ];
 // ĐỔI ORDER thì tăng số này: bảng quà chủ kênh đã lưu (data/settings.json) được xếp lại MỘT lần theo thứ tự mới lúc khởi động (app.js);
 // ô MỚI của phiên bản đó (ADDED_IN) được thêm vào bảng đã lưu với món quà mặc định (nếu món đó chưa gán cho ô khác)
-export const ORDER_VERSION = 4;
-const ADDED_IN = { 3: ['normal', 'thanhngu', 'vutru', 'game', 'tinhyeu', 'bian'], 4: ['dongtu', 'nghenghiep', 'camxuc', 'nhacua'] };
+export const ORDER_VERSION = 5;
+const ADDED_IN = { 3: ['normal', 'vutru', 'game', 'tinhyeu', 'bian'], 4: ['nghenghiep', 'nhacua'] };
 /** Bảng quà đã lưu ở phiên bản `from` → phiên bản hiện tại: thêm ô mới + xếp theo ORDER. */
 export function upgradeSavedRules(saved, from = 1) {
   const added = Object.entries(ADDED_IN).filter(([v]) => Number(v) > from).flatMap(([, list]) => list);

@@ -48,7 +48,7 @@ EXPANSION | Mở rộng game thêm nhiều tiếng Anh là gì? | 1 | EXTENSION
 STORYLINE | Chuỗi câu chuyện cốt truyện tiếng Anh là gì? | 1 | NARRATIVE
 INVENTORY | Kho vật phẩm cầm theo tiếng Anh là gì? | 1 | BAG
 QUEST LOG | Nhật ký nhiệm vụ ghi chép tiếng Anh là gì? | 1 | TASK LIST
-CHEAT CODE | Mã cheat bí mật để thay đổi tiếng Anh là gì? | 1 | SECRET CODE
+CHEAT CODE | Dãy ký tự bí mật do lập trình viên cài vào để mở khóa tính năng game tiếng Anh là gì? | 1 | SECRET CODE
 HIGHSCORE | Điểm số cao nhất từng đạt tiếng Anh là gì? | 1 | BEST SCORE
 STATISTICS | Thống kê dữ liệu kết quả tiếng Anh là gì? | 1 | STATS
 LEADERBOARD | Bảng xếp hạng người chơi top tiếng Anh là gì? | 1

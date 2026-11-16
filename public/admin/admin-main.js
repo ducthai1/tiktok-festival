@@ -170,13 +170,17 @@ function renderGrantList(state) {
 function renderState(m) {
   renderGrantList(m.state);
   
-  // Cập nhật số người xem cho cả 2 loại PiP
+  // Cập nhật số người xem và kim cương cho cả 2 loại PiP
   const v = m.viewers || {};
+  const t = m.totals || {};
   pipViewerCount = v.count || 0;
+  pipDiamondCount = t.diamonds || 0;
   if (document.pictureInPictureElement) drawPipCanvas();
   if (pipWin && pipWin.document) {
     const vEl = pipWin.document.getElementById('pip-viewers');
-    if (vEl) vEl.textContent = `👀 ${pipViewerCount}`;
+    if (vEl) vEl.textContent = `👀 ${pipViewerCount.toLocaleString('vi-VN')}`;
+    const dEl = pipWin.document.getElementById('pip-diamonds');
+    if (dEl) dEl.textContent = `💎 ${pipDiamondCount.toLocaleString('vi-VN')}`;
   }
 
   if (m.game !== activeGame) {
@@ -207,8 +211,7 @@ function renderState(m) {
   $('viewers-count').textContent = (v.count || 0).toLocaleString('vi-VN');
   $('viewers-status').textContent = `Đang chờ chào: ${v.waiting || 0} · `
     + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
-  const t = m.totals;
-  $('totals').textContent = `Phiên này: ${t.viewers} người · ${t.diamonds}💎 · ${t.likes}❤ · ${t.chats} bình luận · ${t.follows} follow · ${t.shares} share`;
+  $('totals').textContent = `Phiên này: ${t.viewers || 0} người · ${t.diamonds || 0}💎 · ${t.likes || 0}❤ · ${t.chats || 0} bình luận · ${t.follows || 0} follow · ${t.shares || 0} share`;
 }
 
 let adminVersion = '';
@@ -299,6 +302,7 @@ let pipCtx = null;
 let pipLogs = [];
 let pipScrollOffset = 0;
 let pipViewerCount = 0;
+let pipDiamondCount = 0;
 let userScrolledUp = false;
 
 function initPipCanvas() {
@@ -334,20 +338,22 @@ function drawPipCanvas() {
   ctx.fillRect(0, 41, w, 1);
 
   ctx.fillStyle = '#ffe066';
-  ctx.font = 'bold 15px system-ui, sans-serif';
-  ctx.fillText('📌 LIVE CHAT (ALWAYS ON TOP)', 14, 27);
+  ctx.font = 'bold 14px system-ui, sans-serif';
+  ctx.fillText('📌 LIVE CHAT', 14, 27);
 
-  // Viewer count on canvas
-  ctx.fillStyle = '#8b949e';
-  ctx.font = '13px system-ui, sans-serif';
+  // Viewer & Diamond count on canvas
+  ctx.font = 'bold 13px system-ui, sans-serif';
   ctx.textAlign = 'right';
-  ctx.fillText(`👀 ${pipViewerCount}`, w - 14, 27);
+  ctx.fillStyle = '#ffe066';
+  const diaText = `💎 ${pipDiamondCount.toLocaleString('vi-VN')}`;
+  const viewText = `👀 ${pipViewerCount.toLocaleString('vi-VN')}`;
+  ctx.fillText(`${diaText}   ${viewText}`, w - 14, 27);
   ctx.textAlign = 'left';
 
   if (pipScrollOffset > 0) {
     ctx.fillStyle = '#238636';
-    ctx.font = 'bold 12px system-ui, sans-serif';
-    ctx.fillText(`▲ Đang cuộn (+${pipScrollOffset})`, w - 140, 27);
+    ctx.font = 'bold 11px system-ui, sans-serif';
+    ctx.fillText(`▲ (+${pipScrollOffset})`, 115, 27);
   }
 
   const total = pipLogs.length;
@@ -476,7 +482,7 @@ function setupPipWindowDOM(win) {
   doc.head.appendChild(style);
 
   const header = doc.createElement('header');
-  header.innerHTML = '<h3>💬 Live Chat & Quà Tặng</h3><span id="pip-viewers" class="viewers">👀 0</span>';
+  header.innerHTML = '<h3>💬 Live Chat & Quà Tặng</h3><div style="display:flex;gap:10px;align-items:center;"><span id="pip-diamonds" class="diamonds" style="color:#ffe066;font-weight:700;font-size:13px;">💎 0</span><span id="pip-viewers" class="viewers">👀 0</span></div>';
 
   const container = doc.createElement('div');
   container.className = 'container';

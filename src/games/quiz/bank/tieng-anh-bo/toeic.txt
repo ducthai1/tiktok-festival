@@ -291,7 +291,7 @@ WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán
 MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường tiếng Anh là gì? | 2 | THỊ PHẦN
 TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận tiếng Anh là gì? | 2 | THỊ TRƯỜNG MỤC TIÊU
 BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm tiếng Anh là gì? | 2 | ĐỘ NHẬN BIẾT THƯƠNG HIỆU
-MARKETING MIX | Hỗn hợp marketing 4P sản phẩm giá phân phối và xúc tiến tiếng Anh là gì? | 3 | HỖN HỢP MARKETING
+MARKETING MIX | Mô hình tiếp thị phối hợp chiến lược 4P (sản phẩm, giá cả, phân phối, xúc tiến) tiếng Anh là gì? | 3 | HỖN HỢP MARKETING
 CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay tiếng Anh là gì? | 2 | LỜI KÊU GỌI HÀNH ĐỘNG
 CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự tiếng Anh là gì? | 2 | TỶ LỆ CHUYỂN ĐỔI
 UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn tiếng Anh là gì? | 2 | BÁN THÊM SẢN PHẨM CAO CẤP

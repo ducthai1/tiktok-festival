@@ -11,8 +11,8 @@ import { createWelcomeQueue, DEFAULT_TEXT_ABOVE } from './welcome-queue.js';
 import { createQuizGames } from './quiz/quiz-games.js';
 import { createDonorLedger } from './donor-ledger.js';
 
-/** Mốc chúc mừng người ủng hộ: mỗi 100 💎 cộng dồn trong một phòng live. */
-export const DONOR_STEP = 100;
+/** Mốc chúc mừng người ủng hộ: mỗi 50 💎 cộng dồn trong một phòng live (50, 100, 150, 200...). */
+export const DONOR_STEP = 50;
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {

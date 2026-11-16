@@ -149,7 +149,7 @@ SUNFISH | Cá mặt trời bè tiếng Anh là gì? | 2
 GUPPY | Cá guppies nhỏ tiếng Anh là gì? | 1
 TETRA | Cá bé đỏ, sống bể cảnh tiếng Anh là gì? | 2
 GOLDFISH | Cá vàng nuôi tiếng Anh là gì? | 1
-KOI | Cá koi Nhật tiếng Anh là gì? | 1
+KOI | Giống cá chép cảnh nhiều màu rực rỡ bơi đàn trong hồ nước của Nhật Bản tiếng Anh là gì? | 1
 CARP | Cá chép nuôi tiếng Anh là gì? | 1
 STURGEON | Cá tầm, trứng caviar tiếng Anh là gì? | 2
 EEL | Cá lươn tiếng Anh là gì? | 1

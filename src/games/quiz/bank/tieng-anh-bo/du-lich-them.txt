@@ -8,7 +8,7 @@ GUIDEBOOK | Sách hướng dẫn du lịch tiếng Anh là gì? | 2
 PHRASEBOOK | Sổ tay hội thoại tiếng Anh là gì? | 3
 RICE TERRACES | Ruộng bậc thang tiếng Anh là gì? | 2 | RICE TERRACE, TERRACED FIELDS
 FLOATING MARKET | Chợ nổi tiếng Anh là gì? | 2
-FOOD TOUR | Tour ẩm thực tiếng Anh là gì? | 2
+FOOD TOUR | Chuyến hành trình du lịch khám phá và thưởng thức các món ăn địa phương tiếng Anh là gì? | 2
 SINGLE ROOM | Phòng đơn tiếng Anh là gì? | 1
 DO NOT DISTURB | Xin đừng làm phiền tiếng Anh là gì? | 2
 FULLY BOOKED | Hết phòng tiếng Anh là gì? | 2 | NO VACANCY
@@ -58,8 +58,8 @@ BAMBOO BOAT | Thuyền thúng tiếng Anh là gì? | 2 | BASKET BOAT
 SAND DUNES | Đồi cát tiếng Anh là gì? | 2 | SAND DUNE
 LIMESTONE | Núi đá vôi tiếng Anh là gì? | 3 | KARST
 NIGHTLIFE | Cuộc sống về đêm tiếng Anh là gì? | 2
-ROOFTOP BAR | Quán bar sân thượng tiếng Anh là gì? | 2 | ROOFTOP
-TOUR PACKAGE | Gói tour trọn gói tiếng Anh là gì? | 2 | PACKAGE TOUR
+ROOFTOP BAR | Quán đồ uống trên sân thượng tầng cao nhất ngắm toàn cảnh thành phố tiếng Anh là gì? | 2 | ROOFTOP
+TOUR PACKAGE | Chuyến du lịch trọn gói gồm vé xe vé bay ăn ở do công ty lữ hành tổ chức tiếng Anh là gì? | 2 | PACKAGE TOUR
 FREE TIME | Thời gian tự do tiếng Anh là gì? | 1
 MEETING POINT | Điểm tập trung tiếng Anh là gì? | 2
 ENTRANCE FEE | Phí vào cửa tiếng Anh là gì? | 1 | ADMISSION FEE

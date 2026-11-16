@@ -64,7 +64,7 @@ export function filterByLevel(items, level) {
 export function createEnglishSwitcher({ general, basic, sets, random = Math.random, progress = null,
   listen = [], listenReady = () => false, onPrefetch = null }) {
   let set = 'general';
-  let level = 'normal';
+  let level = 'easy';
   let setLeft = 0;
   let levelLeft = 0;
   let setBy = null;
@@ -172,7 +172,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       return 'later';
     }
     if (target.kind === 'reset') {
-      if (set === 'general' && level === 'normal' && !deckQueue.length) return 'same';
+      if (set === 'general' && level === 'easy' && !deckQueue.length) return 'same';
       reset();
       return 'switch';
     }
@@ -242,7 +242,7 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     releaseListen();
     pending = null;
     set = 'general';
-    level = 'normal';
+    level = 'easy';
     setLeft = 0;
     levelLeft = 0;
     setBy = null;
@@ -283,8 +283,8 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
         // còn nghe tiếp → chọn trước câu sau để tạo sẵn giọng (sắp đổi sang bộ đang chờ thì thôi)
         if (set === 'nghe' && !(pending && listenAsked >= listenMin)) prepareListen();
         // Luyện nghe không dùng độ khó → không trừ lượt độ khó trong lúc nghe
-        if (!listening && level !== 'normal' && (levelLeft -= 1) <= 0) {
-          level = 'normal';
+        if (!listening && level !== 'easy' && (levelLeft -= 1) <= 0) {
+          level = 'easy';
           levelBy = null;
           dirty = true;
         }
@@ -332,7 +332,10 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const result = to && apply(to, null);
       if (!result) return null;
       const later = result === 'later' ? ` sau ${listenMin - listenAsked} câu Luyện nghe nữa` : '';
-      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}${later}`, switchNow: result === 'switch' }];
+      const isLevel = ENGLISH_TARGETS[to]?.kind === 'level';
+      // Lệnh đổi độ khó từ trang quản trị / daemon duy trì không làm ngắt ngang câu đang hỏi
+      const shouldSwitch = result === 'switch' && !isLevel;
+      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}${later}`, switchNow: shouldSwitch }];
     },
     restore(s) {
       if (!s) return;
@@ -364,13 +367,13 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     },
     snapshot() {
       const s = set === 'general' ? ENGLISH_DEFAULTS.set : ENGLISH_TARGETS[set];
-      const l = level === 'normal' ? ENGLISH_DEFAULTS.level : ENGLISH_TARGETS[level];
+      const l = level === 'easy' && !levelBy ? ENGLISH_DEFAULTS.level : ENGLISH_TARGETS[level];
       return {
         set, setIcon: s.icon, setLabel: s.label, setLeft: set === 'general' ? 0 : setLeft, setBy, listenAsked, listenMin,
         // đổi bộ đang chờ (Luyện nghe chưa đủ 20 câu): bộ nào, ai tặng, còn mấy câu nghe nữa thì đổi
         pending: pending ? { to: pending.to, icon: ENGLISH_TARGETS[pending.to].icon, label: ENGLISH_TARGETS[pending.to].label, user: pending.user, count: pending.count,
           after: Math.max(0, listenMin - listenAsked) } : null,
-        level, levelIcon: l.icon, levelLabel: l.label, levelLeft: level === 'normal' ? 0 : levelLeft, levelBy,
+        level, levelIcon: l.icon, levelLabel: l.label, levelLeft: (level === 'easy' && !levelBy) ? 0 : levelLeft, levelBy,
         deckQueue: deckQueue.map((q) => ({
           to: q.to,
           label: ENGLISH_TARGETS[q.to]?.label || q.to,

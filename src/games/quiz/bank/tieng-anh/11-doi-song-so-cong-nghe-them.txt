@@ -1,7 +1,7 @@
 # Tiếng Anh · Đời sống số, mạng xã hội
 FILTER | Bộ lọc (hiệu ứng ảnh) tiếng Anh là gì? | 1
 REPOST | Đăng lại (bài người khác) tiếng Anh là gì? | 1 | RESHARE
-CAPTION | Chú thích ảnh (dòng caption) tiếng Anh là gì? | 1
+CAPTION | Dòng chữ chú thích đính kèm bên dưới bức ảnh hoặc bài đăng tiếng Anh là gì? | 1
 NEWSFEED | Bảng tin (trang chủ mạng xã hội) tiếng Anh là gì? | 2 | NEWS FEED, FEED
 WEARABLE | Thiết bị đeo được (đồng hồ thông minh…) tiếng Anh là gì? | 2
 EARPHONE | Tai nghe nhét tai tiếng Anh là gì? | 1 | EARPHONES, EARBUD

@@ -90,7 +90,7 @@ CLOTHES | Quần áo tiếng Anh là gì? | 1 | CLOTHING
 SHIRT | Áo sơ mi tiếng Anh là gì? | 1
 T-SHIRT | Áo phông (áo thun) tiếng Anh là gì? | 1 | TEE, TEE SHIRT
 SHORTS | Quần đùi (quần soóc) tiếng Anh là gì? | 1
-JEANS | Quần bò (quần jeans) tiếng Anh là gì? | 1 | DENIM, DENIMS, BLUE JEANS
+JEANS | Loại quần may bằng vải bông thô màu xanh chàm bền bỉ phổ biến toàn cầu tiếng Anh là gì? | 1 | DENIM, DENIMS, BLUE JEANS
 SKIRT | Chân váy tiếng Anh là gì? | 1
 DRESS | Váy liền (cái đầm) tiếng Anh là gì? | 1
 JACKET | Áo khoác tiếng Anh là gì? | 1 | COAT

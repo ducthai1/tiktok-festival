@@ -58,7 +58,7 @@ test('new live room: the English tab drops the old room mode (listening / set / 
   hub.command('english', 'deck-hard', 20);
   assert.deepEqual([hub.snapshot(30).state.control.set, hub.snapshot(30).state.control.level], ['toeic', 'hard']);
   hub.resetRoom();
-  assert.deepEqual([hub.snapshot(40).state.control.set, hub.snapshot(40).state.control.level], ['general', 'normal']);
+  assert.deepEqual([hub.snapshot(40).state.control.set, hub.snapshot(40).state.control.level], ['general', 'easy']);
 });
 
 test('room tracker: same room after a reconnect or restart is not new; another room id is, and it is remembered on disk', (t) => {

@@ -46,7 +46,7 @@ METALLURGIST | Nhà luyện kim chuyên gia kim loại tiếng Anh là gì? | 3
 AUTO MECHANIC | Thợ sửa ôtô tiếng Anh là gì? | 1
 TRUCK DRIVER | Tài xế xe tải tiếng Anh là gì? | 1
 BUS DRIVER | Tài xế xe buýt tiếng Anh là gì? | 1
-TAXI DRIVER | Tài xế taxi tiếng Anh là gì? | 1
+TAXI DRIVER | Người hành nghề lái xe ô tô chở khách công cộng tính tiền theo đồng hồ cước tiếng Anh là gì? | 1
 MESSENGER | Nhân viên chuyên chở thư tiếng Anh là gì? | 2
 DELIVERY DRIVER | Tài xế giao hàng tiếng Anh là gì? | 1
 TRAIN DRIVER | Tài xế đầu máy xe lửa tiếng Anh là gì? | 2
@@ -58,7 +58,7 @@ CHIEF ENGINEER | Kỹ sư trưởng tàu tiếng Anh là gì? | 2
 DECK OFFICER | Sĩ quan boong tàu tiếng Anh là gì? | 2
 SUPERCARGO | Cơ trưởng kiểm soát hàng hóa tiếng Anh là gì? | 2
 PURSER | Thủ quỹ tàu quản lý tiền tiếng Anh là gì? | 2
-CABIN STEWARD | Tiếp viên phòng cabin tàu tiếng Anh là gì? | 2
+CABIN STEWARD | Nhân viên phục vụ trông nom các phòng ngủ hành khách trên du thuyền tiếng Anh là gì? | 2
 WEATHER FORECASTER | Dự báo viên thời tiết tiếng Anh là gì? | 2
 OCEANOGRAPHER | Nhà hải dương học tiếng Anh là gì? | 3 | OCEAN SCIENTIST
 MARINE BIOLOGIST | Nhà sinh vật học biển tiếng Anh là gì? | 2

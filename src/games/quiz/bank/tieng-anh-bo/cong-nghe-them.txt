@@ -64,14 +64,14 @@ ELECTRIC CAR | Xe điện tiếng Anh là gì? | 1 | EV, ELECTRIC VEHICLE
 SOLAR PANEL | Tấm pin mặt trời tiếng Anh là gì? | 2 | SOLAR PANELS
 WIND TURBINE | Tuabin gió tiếng Anh là gì? | 2
 SMART LOCK | Khóa thông minh tiếng Anh là gì? | 2
-ROBOT VACUUM | Robot hút bụi tiếng Anh là gì? | 2
-SECURITY CAMERA | Camera an ninh tiếng Anh là gì? | 1 | CCTV
+ROBOT VACUUM | Thiết bị tự động di chuyển quét dọn bụi bẩn trên sàn nhà tiếng Anh là gì? | 2
+SECURITY CAMERA | Mắt thần ghi hình theo dõi bảo đảm an ninh ở hành lang nhà cửa tiếng Anh là gì? | 1 | CCTV
 VOICE ASSISTANT | Trợ lý giọng nói tiếng Anh là gì? | 2 | VIRTUAL ASSISTANT
 E-BOOK | Sách điện tử tiếng Anh là gì? | 1 | EBOOK
 SPEAKERPHONE | Loa ngoài khi gọi điện tiếng Anh là gì? | 2
-VIDEO CALL | Cuộc gọi video tiếng Anh là gì? | 1 | VIDEO CHAT
+VIDEO CALL | Cuộc gọi trực tiếp vừa nghe tiếng vừa nhìn thấy hình ảnh nhau qua mạng tiếng Anh là gì? | 1 | VIDEO CHAT
 VOICE MESSAGE | Tin nhắn thoại tiếng Anh là gì? | 1 | VOICE NOTE
-GROUP CHAT | Nhóm chat tiếng Anh là gì? | 1
+GROUP CHAT | Hội nhóm nhắn tin trò chuyện nhiều người cùng lúc trên ứng dụng tiếng Anh là gì? | 1
 SCREEN TIME | Thời gian dùng màn hình tiếng Anh là gì? | 2
 AIRPLANE MODE | Chế độ máy bay tiếng Anh là gì? | 1 | FLIGHT MODE
 SILENT MODE | Chế độ im lặng tiếng Anh là gì? | 1 | SILENT

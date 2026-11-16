@@ -236,7 +236,7 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: 'Finger Heart', diamondsEach: 5 }), 'dongvat');
   assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), 'hard'); // giờ ghi đúng giá thật 1 xu (13/11 từng ghi 5 xu)
   assert.equal(englishTargetFor(a, { id: '9947', name: 'Vòng cổ tình bạn', diamondsEach: 10 }), 'toeic'); // tên tiếng Việt: nhận theo id quà thật
-  assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), 'camxuc');
+  assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), 'tinhyeu');
   assert.equal(englishTargetFor(a, { name: 'Wink wink', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), 'normal'); // ⚖️ về độ khó Thường
   assert.equal(englishTargetFor(a, { name: 'GG', diamondsEach: 1 }), null);
@@ -255,7 +255,7 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   const english = loadEnglishQuestions();
   const sets = loadEnglishSets();
   const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets });
-  sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'Friendship Necklace', coins: 10 }]);
+  sw.setCatalog([{ id: '1', name: 'Rose', coins: 1 }, { id: '2', name: 'TikTok', coins: 1 }, { id: '3', name: 'Friendship Necklace', coins: 10 }, { id: '5', name: "You're awesome", coins: 1 }]);
   const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
   const gift = (n, id, name, coins, t) => game.handleEvent({ type: 'gift', user: user(n), gift: { id, name, diamondsEach: coins, count: 1, diamonds: coins } }, t);
   game.tick(0);
@@ -281,13 +281,15 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.ok(cats.slice(21).every((c) => c !== 'Tiếng Anh · TOEIC'));
   assert.equal(game.snapshot(t).control.set, 'general');
   assert.equal(game.snapshot(t).board.length, 0);
-  // đang TOEIC, người khác tặng Hoa hồng (Dễ) → đổi độ khó ngay; tặng TikTok → kết thúc luôn bộ đang chạy, về Tổng hợp ngay
+  // đang TOEIC, người khác tặng You're awesome (Khó) → đổi độ khó ngay; tặng Rose (Dễ) → đổi sang Dễ ngay; tặng TikTok → về Tổng hợp · Dễ ngay
   gift(7, '3', 'Friendship Necklace', 10, (t += 10));
   assert.equal(game.snapshot(t).control.set, 'toeic');
+  assert.ok(gift(5, '5', "You're awesome", 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
+  assert.equal(game.snapshot(t).control.level, 'hard');
   assert.ok(gift(5, '1', 'Rose', 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
   assert.equal(game.snapshot(t).control.level, 'easy');
   assert.ok(gift(6, '2', 'TikTok', 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
-  assert.deepEqual([game.snapshot(t).control.set, game.snapshot(t).control.level, game.snapshot(t).control.deckQueue.length], ['general', 'normal', 0]);
+  assert.deepEqual([game.snapshot(t).control.set, game.snapshot(t).control.level, game.snapshot(t).control.deckQueue.length], ['general', 'easy', 0]);
   assert.ok(filterByLevel(loadEnglishSets().toeic, 'hard').every((q) => q.level === 3));
 });
 

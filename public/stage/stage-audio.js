@@ -151,6 +151,10 @@ export function createStageAudio() {
       }
       speech.say(text, { onStart, fallback, waitMs });
     },
+    /** Dừng ngay giọng đọc đang phát và xoá hàng chờ giọng cũ (dùng khi chuyển câu / đổi topic). */
+    clearSpeech() {
+      speech.clear();
+    },
     /** Đáp án tiếng Anh giọng bản xứ — bật/tắt riêng ("Đọc đáp án tiếng Anh" ở trang điều khiển). */
     speakEnglish(word, { slow = false } = {}) {
       if (!opts.ttsEnglish || !opts.sound || !word || !isCleanForDisplay(word)) return;

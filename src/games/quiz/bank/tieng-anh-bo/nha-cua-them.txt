@@ -10,7 +10,7 @@ LAMP | Đèn bàn hoặc đèn ngủ để bàn tiếng Anh là gì? | 1 | DESK 
 TABLE | Cái bàn ăn hoặc bàn uống nước tiếng Anh là gì? | 1 | DINING TABLE
 CHAIR | Cái ghế ngồi có tựa lưng tiếng Anh là gì? | 1 | SEAT
 BED | Chiếc giường êm nằm ngủ tiếng Anh là gì? | 1 | BEDSTEAD
-SOFA | Ghế sofa bọc đệm dài trong phòng khách tiếng Anh là gì? | 1 | COUCH
+SOFA | Chiếc ghế dài bọc đệm êm ái đặt ở trung tâm phòng khách tiếng Anh là gì? | 1 | COUCH
 DESK | Bàn học tập hoặc bàn làm việc văn phòng tiếng Anh là gì? | 1 | WORK DESK
 CUP | Cái tách, cái ly nhỏ uống nước tiếng Anh là gì? | 1 | MUG, GLASS
 BOWL | Cái bát (cái chén) ăn cơm tiếng Anh là gì? | 1
@@ -163,7 +163,7 @@ PROJECTOR | Máy chiếu phóng hình ảnh lên phông màn trắng tiếng Anh
 TRIPOD | Giá ba chân đỡ máy ảnh chống rung tiếng Anh là gì? | 2 | CAMERA STAND
 SELFIE STICK | Cây gậy tự sướng kéo dài chụp ảnh tiếng Anh là gì? | 1 | MONOPOD
 POWER BANK | Cục sạc dự phòng tích điện cho smartphone tiếng Anh là gì? | 1 | PORTABLE BATTERY
-USB DRIVE | Chiếc thẻ nhớ USB cắm cổng máy tính tiếng Anh là gì? | 1 | FLASH DRIVE, THUMB DRIVE
+USB DRIVE | Chiếc ổ cứng flash bỏ túi nhỏ gọn dùng cắm cổng máy tính chép tài liệu tiếng Anh là gì? | 1 | FLASH DRIVE, THUMB DRIVE
 WEBCAM | Chiếc camera nhỏ gắn máy tính họp trực tuyến tiếng Anh là gì? | 2 | WEB CAMERA
 KEYCHAIN | Móc treo chùm chìa khoá trang trí tiếng Anh là gì? | 1 | KEY RING
 BADGE | Chiếc huy hiệu cài ngực áo kỷ niệm tiếng Anh là gì? | 2 | PIN, EMBLEM
@@ -197,7 +197,7 @@ HEADBAND | Chiếc băng đô (bờm tóc) cài trán tiếng Anh là gì? | 1 |
 PERFUME BOTTLE | Chai nước hoa thuỷ tinh xịt toả hương thơm tiếng Anh là gì? | 2 | SCENT BOTTLE
 LIPSTICK | Thỏi son môi thoa màu hồng cam tươi tắn tiếng Anh là gì? | 1 | LIP BALM
 COMPACT | Hộp phấn nén trang điểm có gương soi nhỏ tiếng Anh là gì? | 2 | POWDER COMPACT
-MASCARA | Cây chuốt mi mắt mascara làm cong dày mi tiếng Anh là gì? | 2 | LASH MASCARA
+MASCARA | Cây cọ chuốt thuốc dưỡng giúp hàng mi mắt cong vút và đen dày tiếng Anh là gì? | 2 | LASH MASCARA
 EYELINER | Cây bút kẻ viền mắt nước sắc sảo tiếng Anh là gì? | 2 | EYE PENCIL
 NAIL POLISH | Lọ sơn móng tay nhiều màu rực rỡ tiếng Anh là gì? | 2 | NAIL LACQUER
 NAIL CLIPPER | Chiếc bấm móng tay nhỏ gọn bằng inox tiếng Anh là gì? | 1 | NAIL TRIMMER
@@ -220,7 +220,7 @@ FACE WASH | Sữa rửa mặt dạng tuýp tạo bọt rửa sạch bụi tiến
 LOTION | Sữa dưỡng thể thoa mịn da toàn thân tiếng Anh là gì? | 1 | BODY LOTION
 SUNSCREEN | Kem chống nắng bảo vệ da khỏi tia cực tím tiếng Anh là gì? | 1 | SUNBLOCK
 LIP BALM | Thỏi son dưỡng môi chống nứt nẻ khô môi tiếng Anh là gì? | 1 | CHAPSTICK
-HAIR GEL | Hũ gel vuốt tóc tạo kiểu bóng bẩy tiếng Anh là gì? | 2 | HAIR WAX
+HAIR GEL | Hũ sáp keo trong suốt xoa lên tóc để giữ nếp bóng bẩy tiếng Anh là gì? | 2 | HAIR WAX
 HAIR SPRAY | Chai xịt gôm giữ nếp tóc cố định tiếng Anh là gì? | 2 | HAIRSPRAY
 BABY WIPES | Gói khăn ướt không cồn lau da cho em bé tiếng Anh là gì? | 1 | WET WIPES
 DIAPER | Miếng tã lót (bỉm) dán của trẻ sơ sinh tiếng Anh là gì? | 1 | NAPPY
@@ -240,7 +240,7 @@ PLAYING CARDS | Bộ bài tú lơ khơ 52 lá bài tây tiếng Anh là gì? | 1
 DICE | Viên xúc xắc đổ xí ngầu 6 mặt tiếng Anh là gì? | 1 | DIE
 CHESSBOARD | Bàn cờ vua gồm 64 ô cờ đen trắng tiếng Anh là gì? | 2 | CHESS BOARD
 CHESS PIECE | Quân cờ vua (xe, mã, tượng, hậu, vua) tiếng Anh là gì? | 2 | CHESSMAN
-DOMINO | Thẻ cờ domino chia đôi có các chấm số tiếng Anh là gì? | 2 | DOMINOES
+DOMINO | Trò chơi xếp các quân cờ chữ nhật chia hai ô có chấm tròn để nối số tiếng Anh là gì? | 2 | DOMINOES
 PIGGY BANK | Chú heo đất (lợn đất) nhét tiền xu tiết kiệm tiếng Anh là gì? | 1 | MONEY BOX
 SAFE | Chiếc két sắt chống trộm khoá mã số an toàn tiếng Anh là gì? | 2 | STRONGBOX
 DRAIN | Phễu thoát nước sàn nhà tắm ngăn mùi tiếng Anh là gì? | 2 | FLOOR DRAIN

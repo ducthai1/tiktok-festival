@@ -30,7 +30,7 @@ STUFFED ANIMAL | Thú nhồi bông tiếng Anh là gì? | 1 | PLUSH, SOFT TOY
 CONTROLLER | Tay cầm chơi game tiếng Anh là gì? | 2 | GAMEPAD
 LEVEL UP | Lên cấp (trong game) tiếng Anh là gì? | 1
 HIGH SCORE | Điểm cao nhất (kỷ lục game) tiếng Anh là gì? | 1
-GAME OVER | Thua cuộc (hết ván game) tiếng Anh là gì? | 1
+GAME OVER | Dòng thông báo khi người chơi cạn sạch sinh mạng và ván đấu kết thúc tiếng Anh là gì? | 1
 MULTIPLAYER | Chế độ chơi nhiều người tiếng Anh là gì? | 2
 LEADERBOARD | Bảng xếp hạng người chơi tiếng Anh là gì? | 2
 CHEAT CODE | Mã gian lận (game) tiếng Anh là gì? | 2 | CHEAT
@@ -45,9 +45,9 @@ CLOSE-UP | Cận cảnh tiếng Anh là gì? | 2 | CLOSE UP, CLOSEUP
 HEADLINER | Nghệ sĩ diễn chính của lễ hội tiếng Anh là gì? | 3
 OPENING ACT | Tiết mục mở màn tiếng Anh là gì? | 2
 FAN CLUB | Hội người hâm mộ tiếng Anh là gì? | 1
-MUSIC VIDEO | Video ca nhạc tiếng Anh là gì? | 1 | MV
+MUSIC VIDEO | Phim ngắn ca nhạc kết hợp giai điệu bài hát với hình ảnh biểu diễn tiếng Anh là gì? | 1 | MV
 MUSIC CHART | Bảng xếp hạng âm nhạc tiếng Anh là gì? | 2 | CHART, CHARTS
-HIT SONG | Bài hát hit tiếng Anh là gì? | 1 | HIT
+HIT SONG | Tác phẩm âm nhạc bùng nổ thu hút đông đảo thính giả lắng nghe tiếng Anh là gì? | 1 | HIT
 BALLAD | Bản nhạc trữ tình chậm tiếng Anh là gì? | 2
 LULLABY | Bài hát ru tiếng Anh là gì? | 2
 NURSERY RHYME | Bài đồng dao tiếng Anh là gì? | 3

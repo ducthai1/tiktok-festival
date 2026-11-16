@@ -133,14 +133,14 @@ export function loadEnglishQuestions() {
 const ENGLISH_SET_FILES = {
   toeic: 'toeic.txt', ielts: 'ielts.txt', yhoc: 'y-hoc.txt',
   bongda: 'bong-da.txt', congnghe: 'cong-nghe.txt', truonghoc: 'truong-hoc.txt',
-  dongvat: 'dong-vat.txt', amthuc: 'am-thuc.txt', thanhngu: 'thanh-ngu.txt',
+  dongvat: 'dong-vat.txt', amthuc: 'am-thuc.txt',
   dulich: 'du-lich.txt', giaitri: 'giai-tri.txt',
   vutru: 'vu-tru.txt', game: 'game.txt', tinhyeu: 'tinh-yeu.txt', bian: 'bi-an.txt',
   // 15/11/2026: tách từ kho Tổng hợp thành bộ riêng (trang 3) — Đồ vật nằm trong Nhà cửa
-  dongtu: 'dong-tu.txt', nghenghiep: 'nghe-nghiep.txt', camxuc: 'cam-xuc.txt', nhacua: 'nha-cua.txt'
+  nghenghiep: 'nghe-nghiep.txt', nhacua: 'nha-cua.txt'
 };
 // bộ không còn ô quà riêng: từ nằm trong Tổng hợp (loadEnglishQuestions)
-const MERGED_SET_FILES = []; // (Đồ vật giờ nằm trong bộ Nhà cửa — nha-cua-them*.txt)
+const MERGED_SET_FILES = ['thanh-ngu', 'dong-tu', 'cam-xuc']; // Thành ngữ, Động từ, Cảm xúc gộp vào Tổng hợp
 export function loadEnglishSets() {
   const files = readTxtDir('tieng-anh-bo');
   return Object.fromEntries(Object.entries(ENGLISH_SET_FILES).map(([id, file]) => {

@@ -191,7 +191,7 @@ WALRUS | Con moóc biển / hải mã có hai răng nanh dài ở Bắc Cực ti
 STINGRAY | Con cá đuối biển có gai nhọn ở đuôi tiếng Anh là gì? | 2 | CÁ ĐUỐI
 OTTER | Con rái cá thích nằm ngửa trôi trên dòng sông tiếng Anh là gì? | 2 | RÁI CÁ
 BEAVER | Con hải ly chuyên gặm gỗ xây đập nước tiếng Anh là gì? | 2 | HẢI LY
-TOUCAN | Loài chim toucan có mỏ rất to và nhiều màu sắc rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
+TOUCAN | Loài chim nhiệt đới có chiếc mỏ rất to sặc sỡ rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
 FALCON | Chim ưng săn mồi liệng cánh thần tốc tiếng Anh là gì? | 2 | CHIM ƯNG
 MANTIS | Con bọ ngựa có hai càng kiếm săn mồi tiếng Anh là gì? | 2 | BỌ NGỰA, PRAYING MANTIS
 STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống tiếng Anh là gì? | 3 | THẠCH NHŨ
@@ -206,7 +206,7 @@ DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc tiếng Anh là 
 CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng tiếng Anh là gì? | 2 | HẺM NÚI, GORGE
 
 IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng tiếng Anh là gì? | 2 | KỲ NHÔNG CỰ ĐÀ, CỰ ĐÀ
-KOOKABURRA | Loài chim kookaburra nước Úc có tiếng hót như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
+KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
 PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước tiếng Anh là gì? | 2 | CHIM BỒ NÔNG, BỒ NÔNG
 ARMADILLO | Con tatu có lớp áo giáp vảy sừng cuộn tròn thành quả bóng tự vệ tiếng Anh là gì? | 3 | CON TATU, TATU
 HYENA | Linh cẩu đốm săn mồi thảo nguyên có tiếng kêu như tiếng cười ghê rợn tiếng Anh là gì? | 2 | LINH CẨU
@@ -227,7 +227,7 @@ MOOSE | Nai sừng tấm Bắc Mỹ khổng lồ có bộ sừng bè rộng ti�
 GIBBON | Con vượn đu cây cánh tay dài hót vang rừng sớm tiếng Anh là gì? | 2 | CON VƯỢN, VƯỢN
 ORANGUTAN | Đười ươi lông đỏ thông minh sống trên ngọn cây rừng nhiệt đới tiếng Anh là gì? | 2 | ĐƯỜI ƯƠI
 GUINEA PIG | Chuột lang nhà lông xù đáng yêu nuôi làm thú cưng tiếng Anh là gì? | 1 | CHUỘT LANG
-HAMSTER | Chuột hamster nhỏ bé hai má phính gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
+HAMSTER | Loài chuột cảnh nhỏ bé có hai túi má phính thích gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
 WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu tiếng Anh là gì? | 3 | VÒNG XOÁY NƯỚC, XOÁY NƯỚC
 MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi tiếng Anh là gì? | 2 | ĐỒNG CỎ
 RACCOON | Gấu mèo Bắc Mỹ lông xám có quầng đen quanh mắt tiếng Anh là gì? | 2 | GẤU MÈO
@@ -236,42 +236,42 @@ ECHIDNA | Thú lông nhím đẻ trứng ăn kiến ở châu Đại Dương ti�
 MOLE | Chuột chũi mắt mờ thích đào bới sống dưới lòng đất tiếng Anh là gì? | 2 | CHUỘT CHŨI
 VOLE | Chuột đồng đuôi ngắn gặm nhấm ngoài ruộng tiếng Anh là gì? | 3 | CHUỘT ĐỒNG
 SHREW | Chuột chù mõm nhọn mùi hôi ăn côn trùng tiếng Anh là gì? | 2 | CHUỘT CHÙ
-OPOSSUM | Thú có túi opossum giả chết khi gặp nguy hiểm tiếng Anh là gì? | 3 | THÚ CÓ TÚI
+OPOSSUM | Loài thú có túi nhỏ ở châu Mỹ có biệt tài nằm im giả chết khi gặp nguy hiểm tiếng Anh là gì? | 3 | THÚ CÓ TÚI
 JAGUAR | Báo đốm Nam Mỹ lực cắn cực khỏe tiếng Anh là gì? | 2 | BÁO ĐỐM
 LEOPARD | Báo hoa mai leo trèo cắp mồi lên cây tiếng Anh là gì? | 2 | BÁO HOA MAI
 COUGAR | Báo sư tử Bắc Mỹ puma tiếng Anh là gì? | 2 | BÁO SƯ TỬ
-OCELOT | Mèo gấm ocelot hoa văn vằn vện tuyệt đẹp tiếng Anh là gì? | 3 | MÈO GẤM
+OCELOT | Loài mèo hoang dã có hoa văn vằn đốm tuyệt đẹp sống trong rừng Nam Mỹ tiếng Anh là gì? | 3 | MÈO GẤM
 LYNX | Linh miêu tai có chùm lông nhọn mọc đứng tiếng Anh là gì? | 2 | LINH MIÊU
 BOBCAT | Linh miêu đuôi cộc Bắc Mỹ tiếng Anh là gì? | 3 | LINH MIÊU ĐUÔI CỘC
 CARACAL | Linh miêu tai đen sa mạc nhảy cao bắt chim tiếng Anh là gì? | 3 | LINH MIÊU TAI ĐEN
-SERVAL | Mèo rừng serval chân dài tai to thảo nguyên châu Phi tiếng Anh là gì? | 3 | MÈO RỪNG SERVAL
+SERVAL | Loài mèo hoang chân dài tai lớn chuyên săn bắt mồi trên thảo nguyên châu Phi tiếng Anh là gì? | 3 | MÈO RỪNG SERVAL
 ANTELOPE | Linh dương sừng nhọn đồng cỏ châu Phi tiếng Anh là gì? | 2 | LINH DƯƠNG
-IMPALA | Linh dương sừng cao impala nhảy xa vượt chướng ngại vật tiếng Anh là gì? | 3 | LINH DƯƠNG IMPALA
+IMPALA | Loài linh dương có cặp sừng cong dài với những cú nhảy cao vút qua bụi rậm tiếng Anh là gì? | 3 | LINH DƯƠNG IMPALA
 BISON | Bò rừng bizon Bắc Mỹ to lớn vạm vỡ tiếng Anh là gì? | 2 | BÒ RỪNG
 YAK | Bò Tây Tạng lông dài chịu rét vùng núi cao tiếng Anh là gì? | 2 | BÒ TÂY TẠNG
-LLAMA | Lạc đà không bướu llama vùng Andes Nam Mỹ tiếng Anh là gì? | 2 | LẠC ĐÀ KHÔNG BƯỚU
-ALPACA | Lạc đà alpaca Nam Mỹ lông siêu mềm ấm áp tiếng Anh là gì? | 2 | LẠC ĐÀ ALPACA
+LLAMA | Loài động vật họ lạc đà không có bướu trên lưng sống ở vùng cao Andes Nam Mỹ tiếng Anh là gì? | 2 | LẠC ĐÀ KHÔNG BƯỚU
+ALPACA | Loài động vật thuộc họ lạc đà Nam Mỹ có bộ lông dày mịn ấm áp tiếng Anh là gì? | 2 | LẠC ĐÀ ALPACA
 WARTHOG | Lợn rừng châu Phi có răng nanh cong vút tiếng Anh là gì? | 3 | LỢN RỪNG CHÂU PHI
 TAPIR | Heo vòi có vòi ngắn ăn lá cây trong rừng rậm tiếng Anh là gì? | 3 | HEO VÒI
 CHINCHILLA | Sóc sin-si lông cực dày mịn sống ở núi Andes tiếng Anh là gì? | 3 | SÓC CHINCHILLA
-GERBIL | Chuột nhảy sa mạc gerbil thích vùi mình trong cát tiếng Anh là gì? | 3 | CHUỘT NHẢY
-FERRET | Chồn sương ferret nuôi làm thú cưng tinh nghịch tiếng Anh là gì? | 2 | CHỒN SƯƠNG
-MINK | Chồn ecmin mink lấy lông quý giá tiếng Anh là gì? | 3 | CHỒN MINK
-SABLE | Chồn zibelin sable vùng Siberia Nga lông cực đắt đỏ tiếng Anh là gì? | 3 | CHỒN SABLE
+GERBIL | Loài gặm nhấm nhỏ thích đào bới và vùi mình trong cát hoang mạc tiếng Anh là gì? | 3 | CHUỘT NHẢY
+FERRET | Loài chồn cảnh thân dài tinh nghịch rất thích nô đùa với con người tiếng Anh là gì? | 2 | CHỒN SƯƠNG
+MINK | Loài chồn bán thủy sinh có bộ lông bóng mượt đắt giá thường được nuôi lấy lông tiếng Anh là gì? | 3 | CHỒN MINK
+SABLE | Loài chồn quý sống ở vùng rừng rậm Siberia xứ lạnh có bộ lông đen mịn vô cùng đắt đỏ tiếng Anh là gì? | 3 | CHỒN SABLE
 SEA LION | Sư tử biển diễn xiếc tung hứng bóng tiếng Anh là gì? | 1 | SƯ TỬ BIỂN
-DUGONG | Nàng tiên cá bò biển dugong bơi lội biển nông tiếng Anh là gì? | 3 | CÁ CÚI, NÀNG TIÊN CÁ
-BELUGA | Cá voi trắng beluga biết huýt sáo như chim tiếng Anh là gì? | 2 | CÁ VOI TRẮNG
+DUGONG | Loài động vật có vú ăn cỏ biển hiền lành thường được gọi là nàng tiên cá tiếng Anh là gì? | 3 | CÁ CÚI, NÀNG TIÊN CÁ
+BELUGA | Loài cá voi nhỏ toàn thân màu trắng muốt có thể phát ra âm thanh như chim hót tiếng Anh là gì? | 2 | CÁ VOI TRẮNG
 ORCA | Cá voi sát thủ kẻ săn mồi đỉnh cao đại dương tiếng Anh là gì? | 2 | CÁ VOI SÁT THỦ
 SPERM WHALE | Cá nhà táng lặn sâu nhất biển săn mực khổng lồ tiếng Anh là gì? | 3 | CÁ NHÀ TÁNG
 HUMPBACK WHALE | Cá voi lưng gù thích nhảy nhào lộn trên mặt nước tiếng Anh là gì? | 2 | CÁ VOI LƯNG GÙ
 BLUE WHALE | Cá voi xanh sinh vật to lớn nhất hành tinh tiếng Anh là gì? | 1 | CÁ VOI XANH
 MANTA RAY | Cá đuối ó khổng lồ bơi như bay dưới nước tiếng Anh là gì? | 3 | CÁ ĐUỐI KHỔNG LỒ
 BARRACUDA | Cá nhồng biển răng nhọn hoắt săn mồi chớp nhoáng tiếng Anh là gì? | 3 | CÁ NHỒNG
-PIRANHA | Cá hổ piranha sông Amazon răng sắc rỉa thịt tiếng Anh là gì? | 2 | CÁ PIRANHA
+PIRANHA | Loài cá ăn thịt sông Amazon có hàm răng sắc bén xé mồi chớp nhoáng tiếng Anh là gì? | 2 | CÁ PIRANHA
 SQUID | Mực ống bơi lùi nhanh lẹ trong biển tiếng Anh là gì? | 1 | MỰC ỐNG
 CUTTLEFISH | Mực nang mai cứng ngụy trang cực tài tình tiếng Anh là gì? | 2 | MỰC NANG
 HERMIT CRAB | Ốc mượn hồn cua ẩn sĩ chui vào vỏ ốc rỗng tiếng Anh là gì? | 2 | ỐC MƯỢN HỒN
-TARANTULA | Nhện khổng lồ tarantula lông lá nhiều chân tiếng Anh là gì? | 2 | NHỆN KHỔNG LỒ
+TARANTULA | Loài nhện săn mồi khổng lồ toàn thân đầy lông nhung đáng sợ tiếng Anh là gì? | 2 | NHỆN KHỔNG LỒ
 MILLIPEDE | Con cuốn chiếu cuộn tròn khi bị chạm vào tiếng Anh là gì? | 2 | CON CUỐN CHIẾU
 CICADA | Ve sầu kêu râm ran suốt mùa hè tiếng Anh là gì? | 1 | VE SẦU
 WASP | Ong bắp cày thắt eo hung dữ tiếng Anh là gì? | 2 | ONG BẮP CÀY
@@ -295,22 +295,22 @@ CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von tiếng An
 NIGHTINGALE | Chim họa mi hót líu lo trong đêm tiếng Anh là gì? | 2 | CHIM HỌA MI
 PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh tiếng Anh là gì? | 2 | VẸT YẾN PHỤNG
 COCKATOO | Vẹt mào Úc có chùm lông dựng đứng trên đầu tiếng Anh là gì? | 3 | VẸT MÀO
-EMU | Đà điểu sa mạc Emu đặc trưng của nước Úc tiếng Anh là gì? | 2 | ĐÀ ĐIỂU EMU
-CASSOWARY | Đà điểu đầu mào cassowary nguy hiểm nhất thế giới tiếng Anh là gì? | 3 | ĐÀ ĐIỂU ĐẦU MÀO
-KIWI | Chim kiwi không cánh mỏ dài biểu tượng New Zealand tiếng Anh là gì? | 2 | CHIM KIWI
+EMU | Loài chim chạy khổng lồ chân cao chỉ xếp sau đà điểu đặc trưng của nước Úc tiếng Anh là gì? | 2 | ĐÀ ĐIỂU EMU
+CASSOWARY | Loài chim chạy lớn có chiếc mào sừng dũng mãnh và móng vuốt nguy hiểm nhất thế giới tiếng Anh là gì? | 3 | ĐÀ ĐIỂU ĐẦU MÀO
+KIWI | Loài chim nhỏ không thể bay có mỏ dài nhọn là quốc điểu của New Zealand tiếng Anh là gì? | 2 | CHIM KIWI
 HERON | Con diệc chân dài đứng rình cá bờ đầm tiếng Anh là gì? | 2 | CON DIỆC
 CRANE | Chim sếu đầu đỏ sải cánh bay lượn tuyệt đẹp tiếng Anh là gì? | 2 | CHIM SẾU
 SWIFT | Chim yến làm tổ bằng dãi làm yến sào tiếng Anh là gì? | 2 | CHIM YẾN
 SWALLOW | Chim én báo hiệu mùa xuân về tiếng Anh là gì? | 1 | CHIM ÉN
 LARK | Chim sơn ca hót sớm khi mặt trời mọc tiếng Anh là gì? | 2 | CHIM SƠN CA
 FINCH | Chim sẻ nhỏ sẻ thông mỏ ngắn khỏe ăn hạt tiếng Anh là gì? | 3 | CHIM SẺ THÔNG
-GECKO | Thạch sùng thằn lằn gecko bám dính tường cực chắc tiếng Anh là gì? | 2 | THẠCH SÙNG, TẮC KÈ
+GECKO | Loài thằn lằn có lớp đệm ngón chân dính hút leo trèo trên tường kính tiếng Anh là gì? | 2 | THẠCH SÙNG, TẮC KÈ
 SALAMANDER | Kỳ giông lưỡng cư có khả năng tái sinh chi bị đứt tiếng Anh là gì? | 3 | KỲ GIÔNG
 NEWT | Sa giông nhỏ sống dưới nước và đầm lầy tiếng Anh là gì? | 3 | SA GIÔNG
 TOAD | Con cóc da xù xì bắt sâu bọ ban đêm tiếng Anh là gì? | 1 | CON CÓC
-ANACONDA | Trăn anaconda khổng lồ lưu vực sông Amazon tiếng Anh là gì? | 2 | TRĂN ANACONDA
+ANACONDA | Loài trăn khổng lồ nặng nhất hành tinh chuyên siết mồi dưới đầm lầy Amazon tiếng Anh là gì? | 2 | TRĂN ANACONDA
 RATTLESNAKE | Rắn chuông đuôi lắc phát ra tiếng kêu cảnh báo tiếng Anh là gì? | 2 | RẮN CHUÔNG
-MAMBA | Rắn mamba đen độc nhất châu Phi di chuyển siêu nhanh tiếng Anh là gì? | 3 | RẮN MAMBA
+MAMBA | Loài rắn độc tốc độ di chuyển siêu nhanh trên mặt đất ở châu Phi tiếng Anh là gì? | 3 | RẮN MAMBA
 ANEMONE | Hải quỳ biển xúc tu mềm nơi cá hề trú ẩn tiếng Anh là gì? | 3 | HẢI QUỲ
 SPONGE | Bọt biển sinh vật đại dương lọc nước tiếng Anh là gì? | 2 | BỌT BIỂN
 CLAM | Con ngao nghêu hai mảnh vỏ chôn mình dưới cát tiếng Anh là gì? | 2 | CON NGAO, NGHÊU

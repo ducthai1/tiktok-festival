@@ -23,7 +23,7 @@ CROSSROADS | Ngã tư tiếng Anh là gì? | 3 | CROSSROAD, INTERSECTION, JUNCTI
 SIDEWALK | Vỉa hè tiếng Anh là gì? | 3 | PAVEMENT, FOOTPATH
 AMUSEMENT PARK | Công viên giải trí (khu vui chơi) tiếng Anh là gì? | 3 | THEME PARK, FUNFAIR
 MOTORBIKE | Xe máy tiếng Anh là gì? | 1 | MOTORCYCLE, SCOOTER
-TAXI | Xe taxi tiếng Anh là gì? | 1 | CAB, TAXICAB
+TAXI | Loại xe ô tô chở khách công cộng tính tiền theo đồng hồ cước tiếng Anh là gì? | 1 | CAB, TAXICAB
 SHIP | Tàu thuỷ (tàu lớn đi biển) tiếng Anh là gì? | 1 | BOAT, VESSEL
 DRIVE | Lái xe ô tô tiếng Anh là gì? | 1
 RIDE | Cưỡi, đi (cưỡi ngựa, đi xe đạp) tiếng Anh là gì? | 1

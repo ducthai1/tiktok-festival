@@ -69,8 +69,8 @@ MARSUPIAL | Thú có túi tiếng Anh là gì? | 3
 VERTEBRATE | Động vật có xương sống tiếng Anh là gì? | 3
 ZOOKEEPER | Người chăm thú ở vườn thú tiếng Anh là gì? | 2
 SHEEPDOG | Chó chăn cừu tiếng Anh là gì? | 2 | SHEPHERD DOG
-HUSKY | Chó kéo xe tuyết (husky) tiếng Anh là gì? | 2
-POODLE | Chó lông xù (poodle) tiếng Anh là gì? | 2
+HUSKY | Giống chó kéo xe trên băng tuyết có bộ lông dày hai lớp và đôi mắt sáng tiếng Anh là gì? | 2
+POODLE | Giống chó cảnh thông minh nhanh nhẹn có bộ lông xoăn tít như cuộn len tiếng Anh là gì? | 2
 STRAY CAT | Mèo hoang tiếng Anh là gì? | 2 | STRAY
 TOMCAT | Mèo đực tiếng Anh là gì? | 3 | TOM
 KING COBRA | Rắn hổ mang chúa tiếng Anh là gì? | 3 | KING COBRA

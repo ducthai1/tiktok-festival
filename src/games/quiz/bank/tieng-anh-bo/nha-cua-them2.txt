@@ -17,7 +17,7 @@ DOORSTOP | Cái chặn cửa tiếng Anh là gì? | 3 | DOOR STOPPER
 LATCH | Chốt cửa tiếng Anh là gì? | 3 | BOLT
 HINGE | Bản lề tiếng Anh là gì? | 3
 THUMBTACK | Đinh ghim (đinh bấm) tiếng Anh là gì? | 2 | DRAWING PIN, PUSHPIN
-STICKY NOTE | Giấy nhớ (giấy note) tiếng Anh là gì? | 1 | POST-IT, STICKY NOTES
+STICKY NOTE | Tập giấy ghi việc nhỏ nhắn có mép keo tự dính tạm thời tiếng Anh là gì? | 1 | POST-IT, STICKY NOTES
 HIGHLIGHTER | Bút dạ quang tiếng Anh là gì? | 1
 MARKER | Bút lông (bút dạ) tiếng Anh là gì? | 1 | FELT-TIP PEN
 CRAYON | Bút sáp màu tiếng Anh là gì? | 1 | CRAYONS

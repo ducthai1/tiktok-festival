@@ -28,6 +28,8 @@ export function audibleRange(buffer) {
 export function createSpeech({ context, output, duck, options }) {
   const queue = [];
   let busy = false;
+  let currentSource = null;
+  let generation = 0;
 
   async function fetchClip(text) {
     try {
@@ -76,11 +78,15 @@ export function createSpeech({ context, output, duck, options }) {
     const { offset, duration } = trim ? audibleRange(buffer) : { offset: 0, duration: buffer.duration };
     return new Promise((resolve) => {
       const source = ctx.createBufferSource();
+      currentSource = source;
       source.buffer = buffer;
       const level = ctx.createGain();
       level.gain.value = options().gain;
       source.connect(level).connect(output());
-      source.onended = resolve;
+      source.onended = () => {
+        if (currentSource === source) currentSource = null;
+        resolve();
+      };
       duck(0.2, duration + 0.3);
       duck(0.5, duration + 0.3, 'sfx');
       source.start(0, offset, duration);
@@ -106,20 +112,29 @@ export function createSpeech({ context, output, duck, options }) {
   async function next() {
     if (busy || !queue.length) return;
     busy = true;
+    const currentGen = generation;
     const item = queue.shift();
     let buffer = await item.clip;
+    if (generation !== currentGen) {
+      busy = false;
+      return;
+    }
     if (buffer === LATE) buffer = await fetchClip(item.fallback); // câu có tên chưa kịp có → câu dự phòng (đã tạo sẵn)
+    if (generation !== currentGen) {
+      busy = false;
+      return;
+    }
     item.onStart?.();
     try {
       if (buffer) await playClip(buffer, { trim: item.english });
       else if (item.english) await englishInBrowser(item.text, item.slow);
       else await viaBrowser(item.text);
-      if (item.english) await new Promise((r) => setTimeout(r, EN_GAP_MS));
+      if (item.english && generation === currentGen) await new Promise((r) => setTimeout(r, EN_GAP_MS));
     } catch {
       // câu lỗi thì bỏ qua, đọc câu sau
     }
     busy = false;
-    next();
+    if (generation === currentGen) next();
   }
 
   return {
@@ -143,8 +158,14 @@ export function createSpeech({ context, output, duck, options }) {
       next();
     },
     clear() {
+      generation += 1;
       for (const item of queue.splice(0)) item.onStart?.();
+      if (currentSource) {
+        try { currentSource.stop(); } catch {}
+        currentSource = null;
+      }
       if ('speechSynthesis' in window) speechSynthesis.cancel();
+      busy = false;
     }
   };
 }

@@ -8,7 +8,7 @@ SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường ph
 SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn tiếng Anh là gì? | 1 | LƯỚT SÓNG
 SCUBA DIVING | Môn lặn biển có bình dưỡng khí ngắm san hô dưới đáy đại dương tiếng Anh là gì? | 2 | LẶN BIỂN, DIVING
 PARACHUTE | Chiếc dù bay nhảy dù từ trên máy bay xuống tiếng Anh là gì? | 2 | NHẢY DÙ, CÂY DÙ BAY
-KAYAK | Chiếc thuyền kayak chèo bằng mái chèo hai đầu trên sông nước tiếng Anh là gì? | 2 | THUYỀN KAYAK
+KAYAK | Chiếc thuyền thể thao thon dài chèo bằng mái chèo hai đầu trên sông nước tiếng Anh là gì? | 2 | THUYỀN KAYAK
 TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ tiếng Anh là gì? | 3 | BA MÔN PHỐI HỢP
 ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ tiếng Anh là gì? | 2 | CHÈO THUYỀN
 SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết tiếng Anh là gì? | 2 | TRƯỢT TUYẾT, SNOWBOARDING

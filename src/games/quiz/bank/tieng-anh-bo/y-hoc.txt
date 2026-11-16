@@ -185,7 +185,7 @@ INFLAMMATION | Sự viêm nhiễm | 3 | VIÊM
 INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3 | CHĂM SÓC ĐẶC BIỆT
 LABORATORY | Phòng thí nghiệm | 1 | PHÒNG THÍ NGHIỆM
 MEDICATION | Thuốc điều trị | 2 | THUỐC
-PENICILLIN | Thuốc kháng sinh Penicillin | 3 | THUỐC KHÁNG SINH
+PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc tiếng Anh là gì? | 3 | THUỐC KHÁNG SINH
 PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3 | BÁC SĨ
 RESPIRATORY | Thuộc về hô hấp | 3 | HÔ HẤP
 SPECIALIST | Bác sĩ chuyên khoa | 2 | CHUYÊN KHOA
@@ -293,8 +293,8 @@ POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD tiếng 
 BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm tiếng Anh là gì? | 3 | RỐI LOẠN LƯỠNG CỰC
 SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng tiếng Anh là gì? | 3 | TÂM THẦN PHÂN LIỆT
 DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi tiếng Anh là gì? | 2 | SA SÚT TRÍ TUỆ
-ALZHEIMER | Bệnh Alzheimer dạng sa sút trí tuệ phổ biến nhất tiếng Anh là gì? | 2 | ALZHEIMER
-PARKINSON | Bệnh Parkinson rối loạn vận động run tay và cứng cơ tiếng Anh là gì? | 2 | PARKINSON
+ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi tiếng Anh là gì? | 2 | ALZHEIMER
+PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động tiếng Anh là gì? | 2 | PARKINSON
 EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ tiếng Anh là gì? | 2 | ĐỘNG KINH
 MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng tiếng Anh là gì? | 1 | ĐAU NỬA ĐẦU
 KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận tiếng Anh là gì? | 1 | SỎI THẬN

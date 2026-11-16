@@ -190,7 +190,7 @@ WALRUS | Con moóc biển / hải mã có hai răng nanh dài ở Bắc Cực ti
 STINGRAY | Con cá đuối biển có gai nhọn ở đuôi tiếng Anh là gì? | 2 | CÁ ĐUỐI
 OTTER | Con rái cá thích nằm ngửa trôi trên dòng sông tiếng Anh là gì? | 2 | RÁI CÁ
 BEAVER | Con hải ly chuyên gặm gỗ xây đập nước tiếng Anh là gì? | 2 | HẢI LY
-TOUCAN | Loài chim toucan có mỏ rất to và nhiều màu sắc rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
+TOUCAN | Loài chim nhiệt đới có chiếc mỏ rất to sặc sỡ rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
 FALCON | Chim ưng săn mồi liệng cánh thần tốc tiếng Anh là gì? | 2 | CHIM ƯNG
 MANTIS | Con bọ ngựa có hai càng kiếm săn mồi tiếng Anh là gì? | 2 | BỌ NGỰA, PRAYING MANTIS
 STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống tiếng Anh là gì? | 3 | THẠCH NHŨ
@@ -205,7 +205,7 @@ DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc tiếng Anh là 
 CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng tiếng Anh là gì? | 2 | HẺM NÚI, GORGE
 
 IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng tiếng Anh là gì? | 2 | KỲ NHÔNG CỰ ĐÀ, CỰ ĐÀ
-KOOKABURRA | Loài chim kookaburra nước Úc có tiếng hót như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
+KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
 PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước tiếng Anh là gì? | 2 | CHIM BỒ NÔNG, BỒ NÔNG
 ARMADILLO | Con tatu có lớp áo giáp vảy sừng cuộn tròn thành quả bóng tự vệ tiếng Anh là gì? | 3 | CON TATU, TATU
 HYENA | Linh cẩu đốm săn mồi thảo nguyên có tiếng kêu như tiếng cười ghê rợn tiếng Anh là gì? | 2 | LINH CẨU
@@ -226,6 +226,6 @@ MOOSE | Nai sừng tấm Bắc Mỹ khổng lồ có bộ sừng bè rộng ti�
 GIBBON | Con vượn đu cây cánh tay dài hót vang rừng sớm tiếng Anh là gì? | 2 | CON VƯỢN, VƯỢN
 ORANGUTAN | Đười ươi lông đỏ thông minh sống trên ngọn cây rừng nhiệt đới tiếng Anh là gì? | 2 | ĐƯỜI ƯƠI
 GUINEA PIG | Chuột lang nhà lông xù đáng yêu nuôi làm thú cưng tiếng Anh là gì? | 1 | CHUỘT LANG
-HAMSTER | Chuột hamster nhỏ bé hai má phính gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
+HAMSTER | Loài chuột cảnh nhỏ bé có hai túi má phính thích gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
 WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu tiếng Anh là gì? | 3 | VÒNG XOÁY NƯỚC, XOÁY NƯỚC
 MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi tiếng Anh là gì? | 2 | ĐỒNG CỎ
