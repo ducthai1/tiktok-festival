@@ -296,7 +296,7 @@ export function createQuizGame({
     else speech += ' Chưa ai trả lời đúng.';
     // đáp án tiếng Anh: đọc giọng bản xứ (thường rồi chậm; vòng chớp nhoáng lật nhanh nên chỉ đọc một lần)
     const english = pronounce ? { answerEn: pronounce(q), answerEnSlow: !lightningIndex || lightningIndex === LIGHTNING_QUESTIONS } : {};
-    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 5), correctCount: winners.length, speech, ...english });
+    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 6), correctCount: winners.length, speech, ...english });
   }
 
   /** Tim / share nạp thanh năng lượng; qua mốc thì xếp câu vàng / vòng chớp nhoáng. */
@@ -609,7 +609,7 @@ export function createQuizGame({
       }
     },
     snapshot(now = Date.now()) {
-      const board = [...scores.values()].sort((a, b) => b.points - a.points || b.correct - a.correct).slice(0, 5)
+      const board = [...scores.values()].sort((a, b) => b.points - a.points || b.correct - a.correct).slice(0, 6)
         .map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, bolts: r.bolts || 0, follower: followers.has(r.id) }));
       // người đang có mặt (cho mục "Tặng quà cho người đang có mặt") — để ĐẦU TIÊN trong state
       const players = [...present.values()].filter((p) => now - p.at < PRESENT_MS).slice(-30)
@@ -632,7 +632,7 @@ export function createQuizGame({
         msLeft: phase === 'question' ? Math.max(0, Math.round((phaseEnd - Math.max(now, countStart)) / 100) * 100) : 0,
         totalMs: q ? (lightningIndex ? LIGHTNING_MS : totalMs()) : 0,
         answer: phase === 'reveal' ? answerText() : '',
-        winners: winners.slice(0, 5).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
+        winners: winners.slice(0, 6).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
         correctCount: winners.length,
         board,
         allScores: [...scores.values()].map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || 0, bolts: r.bolts || 0, at: r.at || 0 })),
