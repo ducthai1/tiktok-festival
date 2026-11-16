@@ -144,6 +144,20 @@ test('quiz timing: the clock waits 2 s for the live delay, and answers arriving 
   assert.ok(kinds(game.tick(13600)).includes('quizReveal'));
 });
 
+test('quiz timing: long question text waits for TTS reading to finish before countdown starts', () => {
+  const longPrompt = 'Câu Vàng, nhân đôi điểm! Con hà mã tiếng Anh là gì?';
+  const q = { kind: 'text', category: 'Tiếng Anh', answer: 'HIPPO', prompt: longPrompt, accept: ['hippo'] };
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(q), questionMs: 20000 });
+  game.tick(0);
+  // Câu dài 12 từ + dấu phẩy/chấm/hỏi: leadIn kéo dài ~4 giây để đọc xong
+  assert.equal(game.snapshot(1000).leadIn, true);
+  assert.equal(game.snapshot(2500).leadIn, true);
+  assert.equal(game.snapshot(2500).msLeft, 20000); // vẫn giữ nguyên 20s đầy
+  // Sau khi đọc xong (~4s): đồng hồ mới bắt đầu đếm ngược
+  assert.equal(game.snapshot(4500).leadIn, false);
+  assert.ok(game.snapshot(4500).msLeft < 20000);
+});
+
 test('quiz energy: 200 hearts make the next question golden (x2), 400 start a 3-question lightning round with a bonus', () => {
   const qs = Array.from({ length: 10 }, (_, i) => textQ(`Từ${i}`));
   const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(...qs) });
@@ -251,7 +265,7 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { id: '5487', name: 'Bắn tim', diamondsEach: 5 }), 'dongvat'); // tên tiếng Việt: nhận theo id
 });
 
-test('english switcher: a gift ENDS the running set and switches right now (new question at once), 20 questions, never scores the gifter', () => {
+test('english switcher: a gift waits for current question to finish, then switches to the new set on next question, never scores the gifter', () => {
   const english = loadEnglishQuestions();
   const sets = loadEnglishSets();
   const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: english.filter((q) => q.basic), sets });
@@ -265,11 +279,15 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.deepEqual(gift(8, '4', 'Wink wink', 1, 5).map((f) => f.kind), ['quizGift']); // món 1 xu: chỉ cảm ơn, không đổi bộ đề
   const q1 = game.snapshot(5).qNumber;
   const fx = gift(7, '3', 'Friendship Necklace', 10, 10);
-  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck', 'quizQuestion']); // đổi NGAY: câu mới ra liền
-  assert.equal(game.snapshot(10).category, 'Tiếng Anh · TOEIC');
-  assert.equal(game.snapshot(10).qNumber, q1 + 1);
-  assert.deepEqual(gift(9, '3', 'Friendship Necklace', 10, 20).map((f) => f.kind), ['quizDeck']); // đang TOEIC: chỉ đếm lại, không nhảy câu
-  const cats = [game.snapshot(20).category];
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']); // không cắt ngang: đợi hết câu hiện tại
+  assert.equal(game.snapshot(10).qNumber, q1); // câu hiện tại vẫn giữ nguyên
+  // hết câu hiện tại -> câu sau vào TOEIC:
+  game.command('next', 20);
+  game.command('next', 30);
+  assert.equal(game.snapshot(30).category, 'Tiếng Anh · TOEIC');
+  assert.equal(game.snapshot(30).qNumber, q1 + 1);
+  assert.deepEqual(gift(9, '3', 'Friendship Necklace', 10, 40).map((f) => f.kind), ['quizDeck']); // đang TOEIC: chỉ đếm lại, không nhảy câu
+  const cats = [game.snapshot(40).category];
   let t = 100;
   for (let i = 0; i < 21; i += 1) {
     game.command('next', (t += 10));
@@ -281,19 +299,21 @@ test('english switcher: a gift ENDS the running set and switches right now (new 
   assert.ok(cats.slice(21).every((c) => c !== 'Tiếng Anh · TOEIC'));
   assert.equal(game.snapshot(t).control.set, 'general');
   assert.equal(game.snapshot(t).board.length, 0);
-  // đang TOEIC, người khác tặng You're awesome (Khó) → đổi độ khó ngay; tặng Rose (Dễ) → đổi sang Dễ ngay; tặng TikTok → về Tổng hợp · Dễ ngay
+  // đang TOEIC, người khác tặng You're awesome (Khó) → đổi độ khó câu sau; tặng Rose (Dễ) → đổi sang Dễ; tặng TikTok → về Tổng hợp · Dễ
   gift(7, '3', 'Friendship Necklace', 10, (t += 10));
+  game.command('next', (t += 10));
+  game.command('next', (t += 10));
   assert.equal(game.snapshot(t).control.set, 'toeic');
-  assert.ok(gift(5, '5', "You're awesome", 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
-  assert.equal(game.snapshot(t).control.level, 'hard');
-  assert.ok(gift(5, '1', 'Rose', 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
-  assert.equal(game.snapshot(t).control.level, 'easy');
-  assert.ok(gift(6, '2', 'TikTok', 1, (t += 10)).some((f) => f.kind === 'quizQuestion'));
-  assert.deepEqual([game.snapshot(t).control.set, game.snapshot(t).control.level, game.snapshot(t).control.deckQueue.length], ['general', 'easy', 0]);
+  gift(5, '5', "You're awesome", 1, (t += 10));
+  assert.equal(sw.snapshot().level, 'hard');
+  gift(5, '1', 'Rose', 1, (t += 10));
+  assert.equal(sw.snapshot().level, 'easy');
+  gift(6, '2', 'TikTok', 1, (t += 10));
+  assert.deepEqual([sw.snapshot().set, sw.snapshot().level], ['general', 'easy']);
   assert.ok(filterByLevel(loadEnglishSets().toeic, 'hard').every((q) => q.level === 3));
 });
 
-test('english switcher: a golden question nobody answered stays golden when a gift switches the set mid-question', () => {
+test('english switcher: a gift during a golden question waits for it to end, then next question switches set', () => {
   const english = loadEnglishQuestions();
   const sw = createEnglishSwitcher({ general: english.filter((q) => !q.basic), basic: [], sets: loadEnglishSets() });
   const game = createQuizGame({ id: 'english', title: 'E', deck: sw.deck, onGift: (e) => sw.onGift(e), extraState: () => sw.snapshot() });
@@ -301,9 +321,15 @@ test('english switcher: a golden question nobody answered stays golden when a gi
   game.handleEvent({ type: 'like', user: user(1), likeCount: 200 }, 5);
   game.command('next', 10);
   game.command('next', 20);
-  assert.equal(game.snapshot(20).golden, true);
+  assert.equal(game.snapshot(20).golden, true); // câu vàng đang hỏi
   game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Friendship Necklace', diamondsEach: 10, count: 1, diamonds: 10 } }, 30);
-  assert.deepEqual([game.snapshot(30).category, game.snapshot(30).golden], ['Tiếng Anh · TOEIC', true]);
+  // câu vàng đang hỏi không bị cắt ngang:
+  assert.equal(game.snapshot(30).golden, true);
+  assert.notEqual(game.snapshot(30).category, 'Tiếng Anh · TOEIC');
+  // kết thúc câu vàng, câu tiếp theo chuyển sang TOEIC:
+  game.command('next', 40);
+  game.command('next', 50);
+  assert.equal(game.snapshot(50).category, 'Tiếng Anh · TOEIC');
 });
 
 test('quiz follow: +3 once per person per live, a 💖 for followers (also from earlier lives), every 10 follows a golden question', () => {

@@ -524,7 +524,9 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
     },
     onFx(fx) {
       if (fx.kind === 'quizQuestion') {
-        audio.clearSpeech?.(); // Dừng ngay giọng câu cũ / câu bị nhảy trước đó
+        // Chỉ dừng giọng cũ khi đổi chủ đề / độ khó (switchNow) hoặc bấm chuyển câu thủ công
+        // Chuyển câu tự nhiên không ngắt ngang giọng đọc kết quả của câu trước
+        if (fx.switchNow || fx.manual) audio.clearSpeech?.();
         audio.play('whoosh');
         if (fx.speech) audio.speak(fx.speech, 'story');
       } else if (fx.kind === 'quizListen') {
@@ -553,7 +555,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         particles.burst({ position: new THREE.Vector3(0, 0, 3), box: new THREE.Vector3(3, 3, 1), count: 80 + fx.tier * 40,
           colors: [mode.color, '#ffffff', '#ffd36b'], speed: 4, gravity: -1, life: 1.6, size: 0.22 });
       } else if (fx.kind === 'quizDeck') {
-        audio.clearSpeech?.(); // Dừng ngay giọng đọc câu cũ khi chuyển chủ đề/độ khó
+        if (fx.switchNow) audio.clearSpeech?.(); // Chỉ dừng giọng đọc câu cũ khi chuyển chủ đề/độ khó nếu switchNow
         audio.play('magic');
         hud.sleigh();
         const isLevel = fx.to === 'easy' || fx.to === 'normal' || fx.to === 'hard';

@@ -31,16 +31,20 @@ test('listening question: accepts the word, its spellings and homophones — nev
   assert.ok(toListenQuestion(word('PAYDAY', 'Ngày lĩnh lương tiếng Anh là gì?', ['PAY DAY'])).accept.includes('pay day'));
 });
 
-test('listening: a 30-coin Doughnut switches to listening RIGHT NOW for 40 questions, words prepared ahead, then back to general', () => {
+test('listening: a 30-coin Doughnut switches to listening after current question for 40 questions, words prepared ahead, then back to general', () => {
   const { game, prefetched } = setup();
   game.tick(0);
   const fx = game.handleEvent(doughnut(), 10);
-  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck', 'quizQuestion']);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']);
   assert.equal(fx[0].questions, LISTEN_QUESTIONS);
-  assert.ok(fx[1].listen && game.snapshot(10).listen); // câu nghe ra ngay
+  assert.equal(fx[0].switchNow, false);
+  // Kết thúc câu thường đang hỏi dở để sang câu nghe:
+  game.command('next', 20);
+  game.command('next', 30);
+  assert.ok(game.snapshot(30).listen); // câu nghe ra ngay sau câu thường
   let t = 100;
-  const asked = [{ listen: true, cat: game.snapshot(10).category }];
-  for (let i = 0; i < LISTEN_QUESTIONS + 1; i += 1) {
+  const asked = [{ listen: true, cat: game.snapshot(30).category }];
+  for (let i = 0; i < LISTEN_QUESTIONS; i += 1) {
     game.command('next', (t += 10));
     const qfx = game.command('next', (t += 10));
     const snap = game.snapshot(t);
@@ -117,41 +121,46 @@ test('listening is hidden and refused while the English voice is down, and stops
   assert.equal(sw.snapshot().set, 'general');
 });
 
-test('listening runs at least 20 questions: another set waits (last gift wins), a level gift never cuts it, then the set switches', () => {
+test('gift during listening switches immediately after current question (no 20-question wait); a level gift never cuts it', () => {
   const { sw, game } = setup();
   game.tick(0);
   game.handleEvent(doughnut(), 10);
-  assert.ok(game.snapshot(10).listen);
-  const fx = game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Friendship Necklace', diamondsEach: 10, count: 1, diamonds: 10 } }, 20);
-  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']); // không ra câu mới
-  assert.equal(fx[0].after, 19);
-  assert.ok(game.snapshot(20).listen);
-  assert.deepEqual(game.handleEvent({ type: 'gift', user: user(3), gift: { name: 'Rose', diamondsEach: 1, count: 1, diamonds: 1 } }, 30).map((f) => f.kind), ['quizDeck']);
-  assert.deepEqual([sw.snapshot().set, sw.snapshot().level, sw.snapshot().pending.to], ['nghe', 'easy', 'toeic']);
-  const saved = JSON.parse(JSON.stringify(sw.snapshot())); // khởi động lại giữa chừng vẫn nhớ
-  const kinds = [];
-  let t = 100;
-  for (let i = 0; i < 20; i += 1) {
-    game.command('next', (t += 10));
-    const qfx = game.command('next', (t += 10));
-    kinds.push(game.snapshot(t).listen ? 'nghe' : sw.snapshot().set);
-    if (i === 19) assert.ok(qfx.some((f) => f.kind === 'toast' && f.text.includes('Người 2: đổi sang 💼 TOEIC')));
-  }
-  assert.deepEqual(kinds.slice(0, 19), Array(19).fill('nghe')); // câu 1 (lúc tặng) + 19 câu = 20 câu nghe
-  assert.equal(kinds[19], 'toeic');
-  assert.equal(sw.snapshot().level, 'easy'); // độ khó tặng lúc nghe vẫn còn nguyên lượt
-  const { sw: again } = setup();
-  again.restore(saved);
-  assert.deepEqual([again.snapshot().set, again.snapshot().pending.to, again.snapshot().listenAsked], ['nghe', 'toeic', 1]);
+  // Kết thúc câu thường đang hỏi dở để sang câu nghe:
+  game.command('next', 20);
+  game.command('next', 30);
+  assert.ok(game.snapshot(30).listen);
+  // tặng TOEIC trong lúc nghe câu này → chờ hết câu này rồi chuyển sang TOEIC ngay, không chờ 20 câu
+  const fx = game.handleEvent({ type: 'gift', user: user(2), gift: { name: 'Friendship Necklace', diamondsEach: 10, count: 1, diamonds: 10 } }, 40);
+  assert.deepEqual(fx.map((f) => f.kind), ['quizDeck']); // không cắt ngang giữa câu (switchNow: false)
+  assert.equal(fx[0].switchNow, false);
+  assert.ok(game.snapshot(40).listen); // câu hiện tại vẫn là nghe
+  // kết thúc câu nghe này:
+  game.command('next', 50); // reveal
+  game.command('next', 60); // startQuestion câu tiếp
+  assert.ok(!game.snapshot(60).listen); // câu tiếp đã chuyển sang TOEIC!
+  assert.equal(sw.snapshot().set, 'toeic');
+  // tặng độ khó trong lúc nghe → không ngắt, ghi nhận
+  const { sw: sw2, game: game2 } = setup();
+  game2.tick(0);
+  game2.handleEvent(doughnut(), 10);
+  game2.command('next', 20);
+  game2.command('next', 30);
+  assert.ok(game2.snapshot(30).listen);
+  const fxLevel = game2.handleEvent({ type: 'gift', user: user(3), gift: { name: 'Rose', diamondsEach: 1, count: 1, diamonds: 1 } }, 40);
+  assert.deepEqual(fxLevel.map((f) => f.kind), ['quizDeck']); // 'same' → không ra câu mới
+  assert.ok(game2.snapshot(40).listen); // vẫn đang nghe
 });
 
-test('listening: another Doughnut restarts the 40 and the 20-question protection; a restart resumes listening', () => {
+test('listening: another Doughnut restarts the 40-question count; command during listening switches immediately', () => {
   const { sw } = setup();
   sw.command('deck-nghe');
   for (let i = 0; i < 15; i += 1) sw.deck.next();
-  assert.equal(sw.command('deck-toeic')[0].text, '💼 Đổi sang TOEIC sau 5 câu Luyện nghe nữa');
+  // lệnh đổi bộ từ admin trong lúc nghe → chuyển ngay (không còn thông báo "sau N câu")
+  assert.equal(sw.command('deck-toeic')[0].text, '💼 Đổi sang TOEIC');
+  assert.equal(sw.snapshot().set, 'toeic');
+  // Doughnut thứ 2 → khởi động lại Luyện nghe
   sw.command('deck-nghe');
-  assert.deepEqual([sw.snapshot().setLeft, sw.snapshot().listenAsked, sw.snapshot().pending.after], [LISTEN_QUESTIONS, 0, 20]);
+  assert.deepEqual([sw.snapshot().setLeft, sw.snapshot().listenAsked], [LISTEN_QUESTIONS, 0]);
   const { sw: again } = setup();
   again.restore(JSON.parse(JSON.stringify(sw.snapshot())));
   assert.ok(again.deck.next().listen);

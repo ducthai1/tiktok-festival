@@ -1,5 +1,5 @@
 // Bộ đề + độ khó của tab Từ Vựng Tiếng Anh, đổi bằng quà tối đa 30 xu (bảng gán quà ở public/shared/english-sets.js).
-// Quà (theo luật ở tab 🎁 Quà của trang điều khiển) kết thúc luôn bộ đang chạy, đổi chế độ NGAY; mỗi luật có số câu riêng.
+// Quà đổi bộ: đợi kết thúc câu hỏi hiện tại, chuyển sang bộ mới ở câu kế tiếp; mỗi luật có số câu riêng.
 // Quà ở tab này KHÔNG mở gợi ý và không cộng điểm cho người tặng — chỉ đổi đề cho cả phòng + hiện tên người đổi.
 import {
   ENGLISH_DEFAULTS, ENGLISH_HOLD_QUESTIONS, ENGLISH_TARGETS, LISTEN_MIN_QUESTIONS, buildEnglishRules, defaultEnglishRules,
@@ -160,16 +160,12 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
     if (target.kind === 'listen' && (!listen.length || !listenReady())) return false; // giọng đọc hỏng → không nhận đổi
     dirty = true;
     const questions = count || defaultQuestionsFor(to);
-    // Luyện nghe chưa đủ số câu tối thiểu: đổi độ khó thì ghi nhận (dùng sau, không ngắt câu nghe); đổi bộ / về Tổng hợp thì chờ
-    if (set === 'nghe' && to !== 'nghe' && listenAsked < listenMin) {
-      if (target.kind === 'level') {
-        level = to;
-        levelLeft = questions;
-        levelBy = user;
-        return 'same';
-      }
-      pending = { to, user, count };
-      return 'later';
+    // Đổi độ khó trong lúc nghe: ghi nhận, không ngắt câu nghe
+    if (set === 'nghe' && to !== 'nghe' && target.kind === 'level') {
+      level = to;
+      levelLeft = questions;
+      levelBy = user;
+      return 'same';
     }
     if (target.kind === 'reset') {
       if (set === 'general' && level === 'easy' && !deckQueue.length) return 'same';
@@ -315,27 +311,20 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
       const result = to && apply(to, { id: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar }, rule.questions);
       if (!result) return [{ kind: 'quizGift', ...base, tier: 3, hint: '' }]; // món không nằm trong bảng: chỉ cảm ơn
       const target = ENGLISH_TARGETS[to];
-      if (result === 'later') { // đang Luyện nghe chưa đủ 20 câu → đổi khi đủ
-        return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label, questions: rule.questions,
-          after: listenMin - listenAsked }];
-      }
       return [{ kind: 'quizDeck', ...base, to, icon: target.icon, label: target.label,
-        questions: target.kind === 'level' ? levelLeft : setLeft, switchNow: result === 'switch' }];
+        questions: target.kind === 'level' ? levelLeft : setLeft, switchNow: false }];
     },
     /** Nút ở trang điều khiển: deck-<đích> (đổi tay, không ghi tên ai) hoặc resetDeck. */
     command(name) {
       if (name === 'resetDeck') {
         reset();
-        return [{ kind: 'toast', text: `${ENGLISH_DEFAULTS.set.icon} Về bộ ${ENGLISH_DEFAULTS.set.label} · ${ENGLISH_DEFAULTS.level.label}`, switchNow: true }];
+        return [{ kind: 'toast', text: `${ENGLISH_DEFAULTS.set.icon} Về bộ ${ENGLISH_DEFAULTS.set.label} · ${ENGLISH_DEFAULTS.level.label}`, switchNow: false }];
       }
       const to = name.startsWith('deck-') ? name.slice(5) : '';
       const result = to && apply(to, null);
       if (!result) return null;
-      const later = result === 'later' ? ` sau ${listenMin - listenAsked} câu Luyện nghe nữa` : '';
-      const isLevel = ENGLISH_TARGETS[to]?.kind === 'level';
-      // Lệnh đổi độ khó từ trang quản trị / daemon duy trì không làm ngắt ngang câu đang hỏi
-      const shouldSwitch = result === 'switch' && !isLevel;
-      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}${later}`, switchNow: shouldSwitch }];
+      // Đợi kết thúc câu hỏi hiện tại xong mới chuyển sang bộ mới (switchNow: false)
+      return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}`, switchNow: false }];
     },
     restore(s) {
       if (!s) return;

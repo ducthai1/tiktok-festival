@@ -13,6 +13,22 @@ const LATE_POINTS = 1;
 const MAX_TRIES = 6; // mỗi người tối đa 6 lần đoán mỗi câu (chống dội bình luận)
 const FIRST_CORRECT_GRACE_MS = 5000; // có người đúng rồi thì chờ thêm 5 giây cho người khác rồi lật đáp án
 export const LEAD_IN_MS = 2000; // đề hiện rồi mới bắt đầu đếm ngược (người xem thấy đề trễ 1–2 giây)
+
+/**
+ * Tính thời gian đọc câu hỏi (giọng VieNeu / Edge TTS) để đồng hồ CHỜ ĐỌC XONG mới đếm ngược.
+ * Mỗi âm tiết ~230ms, dấu phẩy ~200ms, dấu chấm/hỏi/chấm than ~300ms + 500ms nạp/đệm âm thanh.
+ * Tối thiểu LEAD_IN_MS (2000ms) để người xem kịp nhìn đề kể cả khi câu ngắn / không có giọng đọc.
+ */
+export function estimateSpeechLeadIn(speechText) {
+  if (!speechText) return LEAD_IN_MS;
+  const clean = speechText.replace(/[!?,;.]/g, ' ').trim();
+  const words = clean.split(/\s+/).filter(Boolean).length;
+  if (!words) return LEAD_IN_MS;
+  const commas = (speechText.match(/[,;]/g) || []).length;
+  const periods = (speechText.match(/[.!?]/g) || []).length;
+  const speechMs = Math.round(500 + words * 230 + commas * 200 + periods * 300);
+  return Math.max(LEAD_IN_MS, speechMs);
+}
 export const LATE_MS = 1500; // hết giờ vẫn nhận bình luận gửi kịp nhưng tới chậm
 export const ENERGY_GOLDEN = 200;
 export const ENERGY_LIGHTNING = 400;
@@ -222,15 +238,17 @@ export function createQuizGame({
       rightIndex = options.indexOf(q.right);
     }
     if (kind === 'wordle') slots = [...Array(q.length).keys()];
-    countStart = now + LEAD_IN_MS;
-    phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
     const intro = diamond ? 'Câu Kim Cương, NHÂN BA ĐIỂM! ' : golden ? 'Câu Vàng, nhân đôi điểm! ' : '';
+    const speech = intro + (speakLine(q) || '');
     if (q.notice) fx.push({ kind: 'toast', text: q.notice });
     fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, listen: Boolean(q.listen),
-      speech: intro + (speakLine(q) || '') });
+      speech });
+    const leadIn = lightningIndex ? 1500 : (q.listen ? LEAD_IN_MS : estimateSpeechLeadIn(speech));
+    countStart = now + leadIn;
+    phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
     const total = lightningIndex ? LIGHTNING_MS : totalMs();
     listenAt = !q.listen ? [] : lightningIndex ? [{ at: 300, slow: false }]
-      : [{ at: 300, slow: false }, { at: 7000, slow: true }, { at: LEAD_IN_MS + Math.round(total * 0.55), slow: false }];
+      : [{ at: 300, slow: false }, { at: 7000, slow: true }, { at: leadIn + Math.round(total * 0.55), slow: false }];
     if (pronounce && onPronounce) {
       try {
         onPronounce(pronounce(q));
@@ -285,7 +303,6 @@ export function createQuizGame({
     }
     phase = 'reveal';
     phaseStart = now;
-    phaseEnd = now + (lightningIndex && lightningIndex < LIGHTNING_QUESTIONS ? LIGHTNING_REVEAL_MS : revealMs);
     if (lightningIndex) finishLightningQuestion(fx);
     const answer = answerText();
     const top = winners[0];
@@ -296,6 +313,9 @@ export function createQuizGame({
     else speech += ' Chưa ai trả lời đúng.';
     // đáp án tiếng Anh: đọc giọng bản xứ (thường rồi chậm; vòng chớp nhoáng lật nhanh nên chỉ đọc một lần)
     const english = pronounce ? { answerEn: pronounce(q), answerEnSlow: !lightningIndex || lightningIndex === LIGHTNING_QUESTIONS } : {};
+    const neededRevealMs = (english.answerEn ? (english.answerEnSlow ? 3500 : 1800) : 0) + (speech ? estimateSpeechLeadIn(speech) : 0) + 800;
+    const durationMs = Math.max(revealMs, neededRevealMs);
+    phaseEnd = now + (lightningIndex && lightningIndex < LIGHTNING_QUESTIONS ? LIGHTNING_REVEAL_MS : durationMs);
     fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 6), correctCount: winners.length, speech, ...english });
   }
 
@@ -518,7 +538,9 @@ export function createQuizGame({
             revealLetters(1, Math.max(1, Math.ceil(slots.length / 4)));
           }
         }
-        const graceOver = kind === 'text' && firstCorrectAt && now - firstCorrectAt >= FIRST_CORRECT_GRACE_MS;
+        // Chỉ cho phép kết thúc sớm khi bảng top (6 người) đã kín và đã qua 5s kể từ câu đúng đầu tiên
+        // Nếu mới có 1-5 người đúng thì để thời gian chạy tiếp cho mọi người kịp gõ đáp án
+        const graceOver = kind === 'text' && firstCorrectAt && winners.length >= 6 && now - firstCorrectAt >= FIRST_CORRECT_GRACE_MS;
         if (now >= phaseEnd + LATE_MS || graceOver || (kind === 'text' && winners.length >= 12)) reveal(now, fx);
       } else if (phase === 'reveal' && now >= phaseEnd) startQuestion(now, fx);
       return fx;
@@ -550,7 +572,11 @@ export function createQuizGame({
       const fx = [];
       if (name === 'next') {
         if (phase === 'question') reveal(now, fx);
-        else startQuestion(now, fx);
+        else {
+          startQuestion(now, fx);
+          const qFx = fx.find((f) => f.kind === 'quizQuestion');
+          if (qFx) qFx.manual = true;
+        }
       } else if (name === 'pause') {
         paused = true;
         fx.push({ kind: 'toast', text: '⏸ Tạm dừng' });

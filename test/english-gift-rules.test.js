@@ -49,19 +49,25 @@ test('listening tiers: Heart Me 1 coin → 10 questions (all 10 protected), Doug
   const chips = game.snapshot(0).control.rules.filter((r) => r.to === 'nghe').map((r) => [r.gift.coins, r.questions]);
   assert.deepEqual(chips, [[1, 10], [30, 40]]);
   assert.equal(gift(1, 'Heart Me', 1, 10)[0].questions, 10);
-  assert.equal(game.snapshot(10).listen, true);
-  assert.equal(gift(2, 'Friendship Necklace', 10, 20)[0].after, 9); // lượt 10 câu: giữ cả 10 câu rồi mới đổi
-  let t = 100;
-  for (let i = 0; i < 9; i += 1) {
-    game.command('next', (t += 10));
-    game.command('next', (t += 10));
-  }
-  assert.equal(game.snapshot(t).listen, true);
-  game.command('next', (t += 10));
-  game.command('next', (t += 10));
-  assert.equal(sw.snapshot().set, 'toeic');
+  assert.equal(gift(1, 'Heart Me', 1, 10)[0].switchNow, false);
+  // Kết thúc câu thường để vào câu nghe:
+  game.command('next', 20);
+  game.command('next', 30);
+  assert.equal(game.snapshot(30).listen, true);
+  // tặng TOEIC trong lúc nghe → không cắt ngang, đợi hết câu nghe thì chuyển ngay (không chờ 20 câu)
+  const fxSwitch = gift(2, 'Friendship Necklace', 10, 40);
+  assert.equal(fxSwitch[0].kind, 'quizDeck');
+  assert.equal(fxSwitch[0].switchNow, false);
+  assert.equal(game.snapshot(40).listen, true); // câu hiện tại vẫn là nghe
+  // kết thúc câu nghe:
+  game.command('next', 50);
+  game.command('next', 60);
+  assert.equal(sw.snapshot().set, 'toeic'); // câu tiếp theo đã chuyển sang TOEIC
   // lượt 40 câu đang chạy: tặng thêm Heart Me (10 câu) không làm ngắn lượt
+  let t = 100;
   gift(3, 'Doughnut', 30, (t += 10));
+  game.command('next', (t += 10));
+  game.command('next', (t += 10));
   assert.equal(sw.snapshot().setLeft, 39);
   gift(4, 'Heart Me', 1, (t += 10));
   assert.equal(sw.snapshot().setLeft, 39);

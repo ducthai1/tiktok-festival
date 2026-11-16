@@ -167,20 +167,39 @@ function renderGrantList(state) {
   $('grant-list').replaceChildren(...(rows.length ? rows : [Object.assign(document.createElement('li'), { textContent: 'Chưa có ai trong game' })]));
 }
 
+function formatDiamondsUsd(diamonds) {
+  const d = Number(diamonds) || 0;
+  const usd = d * 0.005;
+  const decimals = (usd * 100) % 1 !== 0 ? 3 : 2;
+  return `$${usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: decimals })}`;
+}
+
 function renderState(m) {
   renderGrantList(m.state);
   
   // Cập nhật số người xem và kim cương cho cả 2 loại PiP
   const v = m.viewers || {};
   const t = m.totals || {};
+  const diaCount = t.diamonds || 0;
+  const diaUsd = formatDiamondsUsd(diaCount);
   pipViewerCount = v.count || 0;
-  pipDiamondCount = t.diamonds || 0;
+  pipDiamondCount = diaCount;
   if (document.pictureInPictureElement) drawPipCanvas();
   if (pipWin && pipWin.document) {
     const vEl = pipWin.document.getElementById('pip-viewers');
     if (vEl) vEl.textContent = `👀 ${pipViewerCount.toLocaleString('vi-VN')}`;
     const dEl = pipWin.document.getElementById('pip-diamonds');
-    if (dEl) dEl.textContent = `💎 ${pipDiamondCount.toLocaleString('vi-VN')}`;
+    if (dEl) dEl.textContent = `💎 ${pipDiamondCount.toLocaleString('vi-VN')} (${diaUsd})`;
+  }
+
+  if ($('pill-diamonds')) {
+    $('pill-diamonds').textContent = `💎 ${diaCount.toLocaleString('vi-VN')} (${diaUsd})`;
+  }
+  if ($('diamonds-count')) {
+    $('diamonds-count').textContent = diaCount.toLocaleString('vi-VN');
+  }
+  if ($('diamonds-usd')) {
+    $('diamonds-usd').textContent = diaUsd;
   }
 
   if (m.game !== activeGame) {
@@ -192,7 +211,7 @@ function renderState(m) {
   $('leaderboard').replaceChildren(...m.top.map((r) => {
     const li = document.createElement('li');
     const details = [];
-    if (r.diamonds) details.push(`${r.diamonds}💎`);
+    if (r.diamonds) details.push(`${r.diamonds.toLocaleString('vi-VN')}💎 (${formatDiamondsUsd(r.diamonds)})`);
     if (r.likes) details.push(`${r.likes}❤`);
     if (r.chats) details.push(`${r.chats}💬`);
     li.textContent = `${r.nickname}${details.length ? ` — ${details.join(' · ')}` : ''}`;
@@ -211,7 +230,7 @@ function renderState(m) {
   $('viewers-count').textContent = (v.count || 0).toLocaleString('vi-VN');
   $('viewers-status').textContent = `Đang chờ chào: ${v.waiting || 0} · `
     + `${(v.count || 0) > (v.textAbove ?? 1000) ? 'phòng đông → chỉ hiện chữ' : 'đang chào từng người'}`;
-  $('totals').textContent = `Phiên này: ${t.viewers || 0} người · ${t.diamonds || 0}💎 · ${t.likes || 0}❤ · ${t.chats || 0} bình luận · ${t.follows || 0} follow · ${t.shares || 0} share`;
+  $('totals').textContent = `Phiên này: ${t.viewers || 0} người · ${diaCount.toLocaleString('vi-VN')}💎 (${diaUsd}) · ${t.likes || 0}❤ · ${t.chats || 0} bình luận · ${t.follows || 0} follow · ${t.shares || 0} share`;
 }
 
 let adminVersion = '';
@@ -345,7 +364,7 @@ function drawPipCanvas() {
   ctx.font = 'bold 13px system-ui, sans-serif';
   ctx.textAlign = 'right';
   ctx.fillStyle = '#ffe066';
-  const diaText = `💎 ${pipDiamondCount.toLocaleString('vi-VN')}`;
+  const diaText = `💎 ${pipDiamondCount.toLocaleString('vi-VN')} (${formatDiamondsUsd(pipDiamondCount)})`;
   const viewText = `👀 ${pipViewerCount.toLocaleString('vi-VN')}`;
   ctx.fillText(`${diaText}   ${viewText}`, w - 14, 27);
   ctx.textAlign = 'left';
@@ -482,7 +501,7 @@ function setupPipWindowDOM(win) {
   doc.head.appendChild(style);
 
   const header = doc.createElement('header');
-  header.innerHTML = '<h3>💬 Live Chat & Quà Tặng</h3><div style="display:flex;gap:10px;align-items:center;"><span id="pip-diamonds" class="diamonds" style="color:#ffe066;font-weight:700;font-size:13px;">💎 0</span><span id="pip-viewers" class="viewers">👀 0</span></div>';
+  header.innerHTML = '<h3>💬 Live Chat & Quà Tặng</h3><div style="display:flex;gap:10px;align-items:center;"><span id="pip-diamonds" class="diamonds" style="color:#ffe066;font-weight:700;font-size:13px;">💎 0 ($0.00)</span><span id="pip-viewers" class="viewers">👀 0</span></div>';
 
   const container = doc.createElement('div');
   container.className = 'container';
