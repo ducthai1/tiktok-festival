@@ -321,8 +321,12 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
         return [{ kind: 'toast', text: `${ENGLISH_DEFAULTS.set.icon} Về bộ ${ENGLISH_DEFAULTS.set.label} · ${ENGLISH_DEFAULTS.level.label}`, switchNow: false }];
       }
       const to = name.startsWith('deck-') ? name.slice(5) : '';
-      const result = to && apply(to, null);
-      if (!result) return null;
+      if (!to) return null;
+      // Dễ là mặc định: nếu đã đang ở Dễ (không có ai tặng) thì bỏ qua, không báo toast
+      if (to === 'easy' && level === 'easy' && !levelBy) return null;
+      if (to === 'general' && set === 'general' && !setBy) return null;
+      const result = apply(to, null);
+      if (!result || result === 'same') return null;
       // Đợi kết thúc câu hỏi hiện tại xong mới chuyển sang bộ mới (switchNow: false)
       return [{ kind: 'toast', text: `${ENGLISH_TARGETS[to].icon} Đổi sang ${ENGLISH_TARGETS[to].label}`, switchNow: false }];
     },
