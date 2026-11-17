@@ -4,130 +4,130 @@
 # Từ vựng tiểu học. Nghĩa nào có nhiều từ tiếng Anh đúng thì ghi thêm ở cột cách viết khác.
 # Mỗi dòng: ĐÁP ÁN | gợi ý | độ khó (1 dễ, 2 vừa, 3 khó) | cách trả lời khác cũng tính đúng
 > Câu tiếng Anh nè.
-CAT | Con mèo tiếng Anh là gì? | 1 | KITTY, KITTEN
-DOG | Con chó tiếng Anh là gì? | 1 | PUPPY
-FISH | Con cá tiếng Anh là gì? | 1
-BIRD | Con chim tiếng Anh là gì? | 1
-PIG | Con heo tiếng Anh là gì? | 1
-COW | Con bò tiếng Anh là gì? | 1
-DUCK | Con vịt tiếng Anh là gì? | 1
-CHICKEN | Con gà tiếng Anh là gì? | 1 | HEN, ROOSTER
-HORSE | Con ngựa tiếng Anh là gì? | 1
-RABBIT | Con thỏ tiếng Anh là gì? | 1 | BUNNY
-TIGER | Con hổ tiếng Anh là gì? | 1
-LION | Con sư tử tiếng Anh là gì? | 1
-MONKEY | Con khỉ tiếng Anh là gì? | 1
-ELEPHANT | Con voi tiếng Anh là gì? | 2
-BEAR | Con gấu tiếng Anh là gì? | 1
-FROG | Con ếch tiếng Anh là gì? | 1
-SNAKE | Con rắn tiếng Anh là gì? | 2
-BEE | Con ong tiếng Anh là gì? | 1
-ANT | Con kiến tiếng Anh là gì? | 1
-TURTLE | Con rùa tiếng Anh là gì? | 2 | TORTOISE
-GIRAFFE | Con hươu cao cổ tiếng Anh là gì? | 3
-PENGUIN | Con chim cánh cụt tiếng Anh là gì? | 2
-DOLPHIN | Con cá heo tiếng Anh là gì? | 3
-SHARK | Con cá mập tiếng Anh là gì? | 2
-SHEEP | Con cừu tiếng Anh là gì? | 2 | LAMB
-GOAT | Con dê tiếng Anh là gì? | 2
-ZEBRA | Con ngựa vằn tiếng Anh là gì? | 2
-KANGAROO | Con chuột túi tiếng Anh là gì? | 3
-SPIDER | Con nhện tiếng Anh là gì? | 2
-RED | Màu đỏ tiếng Anh là gì? | 1
-BLUE | Màu xanh dương tiếng Anh là gì? | 1
-GREEN | Màu xanh lá cây tiếng Anh là gì? | 1
-YELLOW | Màu vàng tiếng Anh là gì? | 1
-BLACK | Màu đen tiếng Anh là gì? | 1
-WHITE | Màu trắng tiếng Anh là gì? | 1
-PINK | Màu hồng tiếng Anh là gì? | 1
-ORANGE | Màu cam tiếng Anh là gì? | 2
-PURPLE | Màu tím tiếng Anh là gì? | 2 | VIOLET
-BROWN | Màu nâu tiếng Anh là gì? | 2
-GRAY | Màu xám tiếng Anh là gì? | 2 | GREY
-ONE | Số một tiếng Anh là gì? | 1
-TWO | Số hai tiếng Anh là gì? | 1
-THREE | Số ba tiếng Anh là gì? | 1
-FOUR | Số bốn tiếng Anh là gì? | 1
-FIVE | Số năm tiếng Anh là gì? | 1
-SIX | Số sáu tiếng Anh là gì? | 1
-SEVEN | Số bảy tiếng Anh là gì? | 1
-EIGHT | Số tám tiếng Anh là gì? | 1
-NINE | Số chín tiếng Anh là gì? | 1
-TEN | Số mười tiếng Anh là gì? | 1
-TWENTY | Số hai mươi tiếng Anh là gì? | 2
-ONE HUNDRED | Số một trăm tiếng Anh là gì? | 3 | HUNDRED, A HUNDRED
-APPLE | Quả táo tiếng Anh là gì? | 1
-BANANA | Quả chuối tiếng Anh là gì? | 1
-MANGO | Quả xoài tiếng Anh là gì? | 2
-LEMON | Quả chanh tiếng Anh là gì? | 2 | LIME
-MILK | Sữa tiếng Anh là gì? | 1
-WATER | Nước uống tiếng Anh là gì? | 1
-RICE | Cơm, gạo tiếng Anh là gì? | 1
-BREAD | Bánh mì tiếng Anh là gì? | 1
-EGG | Quả trứng tiếng Anh là gì? | 1
-CAKE | Bánh ngọt, bánh kem tiếng Anh là gì? | 2
-CANDY | Viên kẹo tiếng Anh là gì? | 1 | SWEET, SWEETS
-ICE CREAM | Que kem tiếng Anh là gì? | 2
-JUICE | Nước ép trái cây tiếng Anh là gì? | 2
-TEA | Trà tiếng Anh là gì? | 2
-GRANDMOTHER | Bà tiếng Anh là gì? | 2 | GRANDMA, GRANNY
-GRANDFATHER | Ông tiếng Anh là gì? | 2 | GRANDPA
-TEACHER | Cô giáo, thầy giáo tiếng Anh là gì? | 1
-STUDENT | Học sinh tiếng Anh là gì? | 2 | PUPIL
-HEAD | Cái đầu tiếng Anh là gì? | 1
-EYE | Con mắt tiếng Anh là gì? | 1 | EYES
-EAR | Cái tai tiếng Anh là gì? | 1 | EARS
-NOSE | Cái mũi tiếng Anh là gì? | 1
-MOUTH | Cái miệng tiếng Anh là gì? | 1
-HAND | Bàn tay tiếng Anh là gì? | 1 | HANDS
-FOOT | Bàn chân tiếng Anh là gì? | 2 | FEET
-HAIR | Mái tóc tiếng Anh là gì? | 1
-TOOTH | Cái răng tiếng Anh là gì? | 2 | TEETH
-ARM | Cánh tay tiếng Anh là gì? | 2
-FINGER | Ngón tay tiếng Anh là gì? | 2
-FACE | Khuôn mặt tiếng Anh là gì? | 2
-SCHOOLBAG | Cặp sách tiếng Anh là gì? | 2 | BAG, BACKPACK
-SCHOOL | Trường học tiếng Anh là gì? | 1
-CLASSROOM | Lớp học tiếng Anh là gì? | 2 | CLASS
-HOUSE | Ngôi nhà tiếng Anh là gì? | 1 | HOME
-PHONE | Điện thoại tiếng Anh là gì? | 1 | TELEPHONE, MOBILE
-TELEVISION | Cái ti vi tiếng Anh là gì? | 2 | TV
-BALL | Quả bóng tiếng Anh là gì? | 1
-CAR | Xe ô tô tiếng Anh là gì? | 1
-BIKE | Xe đạp tiếng Anh là gì? | 1 | BICYCLE
-PLANE | Máy bay tiếng Anh là gì? | 1 | AIRPLANE, AEROPLANE
-SKY | Bầu trời tiếng Anh là gì? | 1
-RAIN | Cơn mưa tiếng Anh là gì? | 1
-TREE | Cái cây tiếng Anh là gì? | 1
-SNOW | Tuyết tiếng Anh là gì? | 2
-WIND | Cơn gió tiếng Anh là gì? | 2
-RAINBOW | Cầu vồng tiếng Anh là gì? | 3
-HELLO | Xin chào tiếng Anh là gì? | 1 | HI
-THANK YOU | Cảm ơn tiếng Anh là gì? | 1 | THANKS
-SORRY | Xin lỗi tiếng Anh là gì? | 1
-GOODBYE | Tạm biệt tiếng Anh là gì? | 1 | BYE, BYE BYE
-YES | Vâng, có tiếng Anh là gì? | 1
-NO | Không tiếng Anh là gì? | 1
-BIG | To, lớn tiếng Anh là gì? | 1 | LARGE
-SMALL | Nhỏ, bé tiếng Anh là gì? | 1 | LITTLE
-HOT | Nóng tiếng Anh là gì? | 1
-COLD | Lạnh tiếng Anh là gì? | 1
-RUN | Chạy tiếng Anh là gì? | 1
-SWIM | Bơi tiếng Anh là gì? | 1
-EAT | Ăn tiếng Anh là gì? | 1
-DRINK | Uống tiếng Anh là gì? | 1
-SLEEP | Ngủ tiếng Anh là gì? | 1
-READ | Đọc tiếng Anh là gì? | 1
-WRITE | Viết tiếng Anh là gì? | 1
-SING | Hát tiếng Anh là gì? | 1
-PLAY | Chơi tiếng Anh là gì? | 1
-CRY | Khóc tiếng Anh là gì? | 2
-WALK | Đi bộ tiếng Anh là gì? | 2
-FLY | Bay tiếng Anh là gì? | 2
-COOK | Nấu ăn tiếng Anh là gì? | 2
-MONDAY | Thứ hai tiếng Anh là gì? | 3
-SUNDAY | Chủ nhật tiếng Anh là gì? | 3
-MORNING | Buổi sáng tiếng Anh là gì? | 2
-NIGHT | Ban đêm tiếng Anh là gì? | 2
-TODAY | Hôm nay tiếng Anh là gì? | 3
-BIRTHDAY | Sinh nhật tiếng Anh là gì? | 2
+CAT | Con mèo | 1 | KITTY, KITTEN
+DOG | Con chó | 1 | PUPPY
+FISH | Con cá | 1
+BIRD | Con chim | 1
+PIG | Con heo | 1
+COW | Con bò | 1
+DUCK | Con vịt | 1
+CHICKEN | Con gà | 1 | HEN, ROOSTER
+HORSE | Con ngựa | 1
+RABBIT | Con thỏ | 1 | BUNNY
+TIGER | Con hổ | 1
+LION | Con sư tử | 1
+MONKEY | Con khỉ | 1
+ELEPHANT | Con voi | 2
+BEAR | Con gấu | 1
+FROG | Con ếch | 1
+SNAKE | Con rắn | 2
+BEE | Con ong | 1
+ANT | Con kiến | 1
+TURTLE | Con rùa | 2 | TORTOISE
+GIRAFFE | Con hươu cao cổ | 3
+PENGUIN | Con chim cánh cụt | 2
+DOLPHIN | Con cá heo | 3
+SHARK | Con cá mập | 2
+SHEEP | Con cừu | 2 | LAMB
+GOAT | Con dê | 2
+ZEBRA | Con ngựa vằn | 2
+KANGAROO | Con chuột túi | 3
+SPIDER | Con nhện | 2
+RED | Màu đỏ | 1
+BLUE | Màu xanh dương | 1
+GREEN | Màu xanh lá cây | 1
+YELLOW | Màu vàng | 1
+BLACK | Màu đen | 1
+WHITE | Màu trắng | 1
+PINK | Màu hồng | 1
+ORANGE | Màu cam | 2
+PURPLE | Màu tím | 2 | VIOLET
+BROWN | Màu nâu | 2
+GRAY | Màu xám | 2 | GREY
+ONE | Số một | 1
+TWO | Số hai | 1
+THREE | Số ba | 1
+FOUR | Số bốn | 1
+FIVE | Số năm | 1
+SIX | Số sáu | 1
+SEVEN | Số bảy | 1
+EIGHT | Số tám | 1
+NINE | Số chín | 1
+TEN | Số mười | 1
+TWENTY | Số hai mươi | 2
+ONE HUNDRED | Số một trăm | 3 | HUNDRED, A HUNDRED
+APPLE | Quả táo | 1
+BANANA | Quả chuối | 1
+MANGO | Quả xoài | 2
+LEMON | Quả chanh | 2 | LIME
+MILK | Sữa | 1
+WATER | Nước uống | 1
+RICE | Cơm, gạo | 1
+BREAD | Bánh mì | 1
+EGG | Quả trứng | 1
+CAKE | Bánh ngọt, bánh kem | 2
+CANDY | Viên kẹo | 1 | SWEET, SWEETS
+ICE CREAM | Que kem | 2
+JUICE | Nước ép trái cây | 2
+TEA | Trà | 2
+GRANDMOTHER | Bà | 2 | GRANDMA, GRANNY
+GRANDFATHER | Ông | 2 | GRANDPA
+TEACHER | Cô giáo, thầy giáo | 1
+STUDENT | Học sinh | 2 | PUPIL
+HEAD | Cái đầu | 1
+EYE | Con mắt | 1 | EYES
+EAR | Cái tai | 1 | EARS
+NOSE | Cái mũi | 1
+MOUTH | Cái miệng | 1
+HAND | Bàn tay | 1 | HANDS
+FOOT | Bàn chân | 2 | FEET
+HAIR | Mái tóc | 1
+TOOTH | Cái răng | 2 | TEETH
+ARM | Cánh tay | 2
+FINGER | Ngón tay | 2
+FACE | Khuôn mặt | 2
+SCHOOLBAG | Cặp sách | 2 | BAG, BACKPACK
+SCHOOL | Trường học | 1
+CLASSROOM | Lớp học | 2 | CLASS
+HOUSE | Ngôi nhà | 1 | HOME
+PHONE | Điện thoại | 1 | TELEPHONE, MOBILE
+TELEVISION | Cái ti vi | 2 | TV
+BALL | Quả bóng | 1
+CAR | Xe ô tô | 1
+BIKE | Xe đạp | 1 | BICYCLE
+PLANE | Máy bay | 1 | AIRPLANE, AEROPLANE
+SKY | Bầu trời | 1
+RAIN | Cơn mưa | 1
+TREE | Cái cây | 1
+SNOW | Tuyết | 2
+WIND | Cơn gió | 2
+RAINBOW | Cầu vồng | 3
+HELLO | Xin chào | 1 | HI
+THANK YOU | Cảm ơn | 1 | THANKS
+SORRY | Xin lỗi | 1
+GOODBYE | Tạm biệt | 1 | BYE, BYE BYE
+YES | Vâng, có | 1
+NO | Không | 1
+BIG | To, lớn | 1 | LARGE
+SMALL | Nhỏ, bé | 1 | LITTLE
+HOT | Nóng | 1
+COLD | Lạnh | 1
+RUN | Chạy | 1
+SWIM | Bơi | 1
+EAT | Ăn | 1
+DRINK | Uống | 1
+SLEEP | Ngủ | 1
+READ | Đọc | 1
+WRITE | Viết | 1
+SING | Hát | 1
+PLAY | Chơi | 1
+CRY | Khóc | 2
+WALK | Đi bộ | 2
+FLY | Bay | 2
+COOK | Nấu ăn | 2
+MONDAY | Thứ hai | 3
+SUNDAY | Chủ nhật | 3
+MORNING | Buổi sáng | 2
+NIGHT | Ban đêm | 2
+TODAY | Hôm nay | 3
+BIRTHDAY | Sinh nhật | 2

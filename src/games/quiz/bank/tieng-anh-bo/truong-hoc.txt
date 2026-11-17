@@ -66,7 +66,7 @@ TEAM LEADER | Trưởng nhóm | 1 | TEAM LEAD
 CAREER PATH | Lộ trình sự nghiệp | 2
 SOFT SKILLS | Kỹ năng mềm | 2 | SOFT SKILL
 MATH | Môn toán | 1 | MATHS, MATHEMATICS
-ENGLISH | Môn tiếng Anh, gọi bằng | 1
+ENGLISH | Môn ngoại ngữ bắt buộc ở trường phổ thông Việt Nam | 1
 HISTORY | Môn lịch sử | 1
 SCIENCE | Môn khoa học | 1
 ART | Môn mỹ thuật | 1 | ARTS, FINE ART, FINE ARTS
