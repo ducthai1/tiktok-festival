@@ -48,7 +48,7 @@ DARTS | Phi tiêu | 2 | DART
 JUMP ROPE | Nhảy dây | 1 | SKIPPING ROPE, SKIPPING
 COOL DOWN | Thả lỏng sau khi tập | 2 | COOLDOWN
 CRAMP | Chuột rút | 2 | CRAMPS
-ARENA | Nhà thi đấu | 2 | STADIUM
+ARENA | Nhà thi đấu có mái che, dùng cho nhiều môn trong nhà | 2 | STADIUM
 SPARRING | Đấu tập (võ thuật) | 3
 BLACK BELT | Đai đen | 1
 MARTIAL ARTIST | Võ sĩ (người tập võ) | 2

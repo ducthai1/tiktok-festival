@@ -20,7 +20,7 @@ CEILING | Trần nhà | 3
 CORRIDOR | Hành lang | 3 | HALLWAY, HALL, PASSAGE
 BOOKSHELF | Giá sách (kệ sách) | 2 | BOOKCASE, BOOKSHELVES
 STOOL | Ghế đẩu (ghế không tựa lưng) | 2
-BED SHEET | Ga trải giường | 3 | SHEET, SHEETS, BED SHEETS
+BED SHEET | Tấm ga trải phẳng phiu lên mặt nệm trước khi ngủ | 3 | SHEET, SHEETS, BED SHEETS
 MOSQUITO NET | Cái màn (mùng) chống muỗi | 3
 HAMMOCK | Cái võng | 3
 ARMCHAIR | Ghế bành (có tay vịn) | 3
@@ -55,7 +55,7 @@ TANK TOP | Áo ba lỗ | 3 | SINGLET, VEST, UNDERSHIRT
 FLIP-FLOPS | Dép tông (dép xỏ ngón) | 2 | FLIP-FLOP
 SNEAKERS | Giày thể thao | 2 | SNEAKER, TRAINERS, TRAINER, RUNNING SHOES, SPORTS SHOES, SPORT SHOES
 HIGH HEELS | Giày cao gót | 2 | HEELS, HIGH HEEL
-SHOELACE | Dây giày | 3 | SHOELACES, LACE, LACES, SHOESTRING, SHOESTRINGS
+SHOELACE | Sợi dây luồn qua lỗ mũi giày rồi buộc lại thành nơ | 3 | SHOELACES, LACE, LACES, SHOESTRING, SHOESTRINGS
 WRISTWATCH | Đồng hồ đeo tay | 1 | WATCH
 EARRINGS | Bông tai (khuyên tai) | 2 | EARRING
 JEWELRY | Đồ trang sức | 3 | JEWELLERY, JEWELS
@@ -89,8 +89,6 @@ HAIRBRUSH | Lược chải tóc | 1
 THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3
 REFRIGERATOR | Tủ lạnh bảo quản | 1
 KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản | 1
-BOWTIE | Chiếc nơ bướm nhỏ thắt trước cổ áo sơ mi lịch lãm | 2 | BOW TIE
 TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông | 2
 POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động | 1 | POLO
 CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha | 1
-BEDSHEET | Tấm ga trải giường phẳng phiu sạch sẽ | 2

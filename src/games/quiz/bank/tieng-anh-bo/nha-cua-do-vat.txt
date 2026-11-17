@@ -133,7 +133,6 @@ PYJAMAS | Bộ đồ ngủ pijama vải lụa hoặc cotton ở nhà | 1 | PAJAM
 BATHROBE | Chiếc áo choàng tắm bằng vải bông dày dặn | 2 | ROBE
 SWIMSUIT | Bộ đồ bơi một mảnh của nữ đi biển | 1 | BATHING SUIT, SWIMWEAR
 SWIMMING TRUNKS | Chiếc quần bơi co giãn của nam | 2 | TRUNKS, SWIM TRUNKS
-SHOE LACE | Dây buộc giày thắt nơ mũi giày | 1 | SHOELACE, SHOESTRING
 INSOLE | Tấm lót êm đặt bên trong đáy giày | 2 | SHOE INSERT
 SHOE HORN | Cái đón gót nhựa giúp xỏ giày dễ dàng | 2 | SHOEHORN
 HAIR CLIP | Chiếc kẹp tóc xinh kẹp tóc mái gọn gàng | 1 | BARRETTE, HAIRPIN
@@ -151,7 +150,6 @@ COTTON PAD | Miếng bông tẩy trang tròn lau sạch mặt | 1 | COTTON WOOL
 ICE PACK | Túi chườm đá lạnh giảm sưng bầm tím | 2 | COLD PACK
 HOT WATER BOTTLE | Bình cao su chườm nước nóng sưởi ấm | 2 | HEATING PAD
 PILLBOX | Hộp đựng thuốc chia thành các ngăn theo ngày | 2 | PILL ORGANIZER
-EYEDROPS | Lọ thuốc nhỏ mắt rửa bụi bẩn | 2 | EYE DROPS
 TWEEZERS | Cái nhíp kim loại nhỏ gắp dằm gai | 2 | PLUCKERS
 RAZOR | Chiếc dao cạo râu lưỡi lam bén ngót | 1 | SHAVING RAZOR
 SHAVING CREAM | Bọt kem cạo râu thoa cằm làm mềm râu | 2 | SHAVE FOAM

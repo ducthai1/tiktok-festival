@@ -674,7 +674,7 @@ VIRTUE | Đức hạnh phẩm chất tốt đẹp | 2
 GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi | 1
 LOOK FOR | Cụm động từ tìm kiếm thứ gì bị thất lạc | 1
 LOOK AFTER | Cụm động từ chăm sóc trông nom người thân | 1 | TAKE CARE OF
-TAKE OFF | Cụm động từ máy bay cất cánh bay lên trời | 1
+TAKE OFF | Cụm động từ chỉ việc cởi bỏ giày dép hoặc áo khoác ra | 1
 PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào | 1
 TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép | 1
 TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ | 2
@@ -685,7 +685,7 @@ RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2
 CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2
 KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ | 2
 BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường | 2
-BREAK UP | Cụm động từ chia tay chấm dứt một mối tình | 1
+BREAK UP | Cụm động từ chỉ việc một đám đông tan rã giải tán | 1
 COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2
 FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2
 GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2

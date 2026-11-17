@@ -124,7 +124,6 @@ BAGGAGE CLAIM | Băng chuyền lấy lại hành lý ký gửi sau chuyến bay 
 PILOT | Phi công cơ trưởng lái máy bay | 1 | CAPTAIN
 FLIGHT ATTENDANT | Tiếp viên hàng không phục vụ trên chuyến bay | 1 | STEWARD, STEWARDESS, AIR HOSTESS
 PASSENGER | Hành khách đi trên các phương tiện giao thông | 1 | TRAVELER
-SEATBELT | Dây thắt an toàn gắn trên ghế ngồi | 1 | SAFETY BELT
 WINDOW SEAT | Chỗ ngồi cạnh cửa sổ ngắm mây trời | 1
 AISLE SEAT | Chỗ ngồi cạnh lối đi dễ dàng di chuyển | 2
 TRAIN | Chuyến tàu hoả (xe lửa) chạy trên đường ray sắt | 1 | RAILWAY
@@ -316,7 +315,7 @@ RIDE | Cưỡi, đi (cưỡi ngựa, đi xe đạp) | 1
 TRUCK | Xe tải | 2 | LORRY
 HELMET | Mũ bảo hiểm (đội khi đi xe máy) | 2 | CRASH HELMET
 TRAFFIC JAM | Kẹt xe, tắc đường | 3 | TRAFFIC CONGESTION, GRIDLOCK
-SEAT BELT | Dây an toàn (trên ô tô) | 3 | SEATBELT, SAFETY BELT
+SEAT BELT | Dây vắt chéo ngực phải cài khi ngồi ô tô hoặc máy bay | 3 | SEATBELT, SAFETY BELT
 CYCLO | Xích lô | 3 | PEDICAB, RICKSHAW, CYCLE RICKSHAW, TRISHAW
 TRAVEL | Đi du lịch | 1 | TRAVELING, TRAVELLING
 PHOTO | Bức ảnh chụp | 1 | PICTURE, PHOTOGRAPH, PIC

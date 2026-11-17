@@ -120,7 +120,7 @@ PEACH | Quả đào | 1 | PEACHES
 CHERRY | Quả anh đào | 2 | CHERRIES
 PAPAYA | Quả đu đủ | 2 | PAPAYAS, PAWPAW
 AVOCADO | Quả bơ (trái cây) | 2 | AVOCADOS
-DRAGON FRUIT | Quả thanh long | 2 | PITAYA, PITAHAYA
+DRAGON FRUIT | Quả vỏ hồng có vảy xanh, ruột trắng lấm tấm hạt đen | 2 | PITAYA, PITAHAYA
 LIME | Quả chanh xanh (chanh ta) | 2 | LIMES
 GUAVA | Quả ổi | 3 | GUAVAS
 DURIAN | Quả sầu riêng | 3 | DURIANS
@@ -185,7 +185,7 @@ FRENCH FRIES | Khoai tây chiên (cắt que) | 1 | FRIES, CHIPS, FRENCH FRY
 SPRING ROLL | Nem rán (chả giò) | 2 | SPRING ROLLS, EGG ROLL, EGG ROLLS
 FRIED EGG | Trứng ốp la | 2 | FRIED EGGS, SUNNY SIDE UP
 FRIED RICE | Cơm chiên (cơm rang) | 2
-HOT POT | Món lẩu | 2 | STEAMBOAT
+HOT POT | Nồi nước dùng sôi sùng sục giữa bàn, ai muốn ăn gì thì nhúng | 2 | STEAMBOAT
 DOUGHNUT | Bánh vòng chiên (có lỗ ở giữa) | 2 | DONUT, DOUGHNUTS, DONUTS
 POPCORN | Bỏng ngô (bắp rang bơ) | 2
 JAM | Mứt (phết lên bánh mì) | 2 | JELLY, JAMS
@@ -288,7 +288,6 @@ POMEGRANATE | Quả lựu đỏ | 2
 GRAPE | Quả nho tươi | 1 | GRAPES
 BLUEBERRY | Quả việt quất | 2
 RASPBERRY | Quả mâm xôi | 2
-DRAGONFRUIT | Quả thanh long | 1
 PERSIMMON | Quả hồng chín | 2
 NUTRIENT | Chất dinh dưỡng thực phẩm | 3
 CALORIE | Lượng calo năng lượng | 2
@@ -408,7 +407,6 @@ LOTUS ROOT | Củ sen nhiều lỗ giòn ngọt nấu chè canh | 2
 SEAWEED | Rong biển nấu canh cuộn cơm kimbap | 1
 EDAMAME | Món quả đậu nành còn xanh nguyên vỏ luộc chín rắc muối nhắm bia | 2
 NOODLES | Mì sợi bún phở nói chung | 1
-HOTPOT | Món lẩu nhúng thịt rau sôi sùng sục | 1
 KOMBUCHA | Thức uống trà lên men vị chua ngọt sủi bọt tốt cho đường ruột | 2
 CHAI TEA | Trà sữa thảo mộc gia vị thơm lừng Ấn Độ | 2
 EARL GREY | Trà bá tước hương cam bergamot quý tộc Anh | 2

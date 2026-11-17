@@ -3,100 +3,100 @@ FOOTBALL | Môn bóng đá | 1 | SOCCER
 GOAL | Bàn thắng | 1
 GOALKEEPER | Thủ môn | 1 | GOALIE, KEEPER
 DEFENDER | Hậu vệ | 1
-STRIKER | Tiền đạo | 1 | FORWARD
-CAPTAIN | Đội trưởng | 1 | SKIPPER
-COACH | Huấn luyện viên | 1 | MANAGER, TRAINER
+STRIKER | Tiền đạo cắm săn bàn, đứng cao nhất trên hàng công | 1
+CAPTAIN | Cầu thủ đeo băng, thay mặt đội nói chuyện với trọng tài | 1
+COACH | Người trực tiếp dạy kỹ chiến thuật trên sân tập | 1 | TRAINER
 REFEREE | Trọng tài | 1 | REF
-FAN | Cổ động viên | 1 | SUPPORTER, FANS, SUPPORTERS
-STADIUM | Sân vận động | 1 | ARENA
+FAN | Người hâm mộ nói chung, mê đội hoặc mê cầu thủ | 1 | FANS, SUPPORTERS
+STADIUM | Sân vận động ngoài trời có khán đài vây quanh | 1
 WHISTLE | Cái còi | 1
 YELLOW CARD | Thẻ vàng | 1
 RED CARD | Thẻ đỏ | 1
 PENALTY | Quả phạt đền | 1 | PENALTY KICK, SPOT KICK
-CORNER | Quả phạt góc | 1 | CORNER KICK
+CORNER | Góc sân có cắm cờ, cũng là tên gọi tắt quả đá phạt từ đó | 1
 FIRST HALF | Hiệp một | 1
 SECOND HALF | Hiệp hai | 1
-DRAW | Hoà (kết quả trận) | 1 | TIE
-WIN | Thắng trận | 1 | VICTORY
-LOSE | Thua trận | 1 | DEFEAT
+DRAW | Kết quả hai đội bằng điểm, từ phổ biến ở Anh | 1
+WIN | Động từ ngắn gọn chỉ việc giành phần thắng | 1
+LOSE | Động từ chỉ việc thua cuộc | 1
 SCORE | Ghi bàn | 1
 PASS | Chuyền bóng | 1
-SHOOT | Sút bóng | 1 | SHOT, STRIKE
+SHOOT | Sút bóng | 1 | SHOT
 KICK | Đá (động từ) | 1
 PLAYER | Cầu thủ | 1 | FOOTBALLER
 NET | Lưới khung thành | 1
 TEAM | Đội bóng | 1 | SIDE, SQUAD
 CLUB | Câu lạc bộ | 1
-CHAMPION | Nhà vô địch | 1 | WINNER, CHAMPIONS, WINNERS
+CHAMPION | Nhà vô địch | 1 | CHAMPIONS, WINNERS
 TROPHY | Chiếc kỷ niệm chương trao cho đội vô địch | 1
 MEDAL | Huy chương | 1
 FINAL | Trận chung kết | 1
 WORLD CUP | Giải vô địch bóng đá thế giới | 1
-MATCH | Trận đấu | 1 | GAME
+MATCH | Trận đấu | 1
 TRAINING | Buổi tập luyện | 1 | PRACTICE
 SKILL | Kỹ thuật cá nhân | 1 | TECHNIQUE, SKILLS
-TALENT | Tài năng | 1 | GIFT
+TALENT | Tài năng | 1
 NATIONAL TEAM | Đội tuyển quốc gia | 1
-CROWD | Đám đông khán giả | 1 | AUDIENCE, SPECTATORS
-CHEER | Hò reo cổ vũ | 1 | SUPPORT
+CROWD | Đám đông người xem chen chúc trên khán đài | 1 | SPECTATORS
+CHEER | Hò reo cổ vũ | 1
 TICKET | Vé xem trận | 1
 SEASON | Mùa giải | 1
 POINT | Điểm (trên bảng xếp hạng) | 1 | POINTS
-ATTACK | Tấn công | 1 | OFFENSE
+ATTACK | Pha dâng lên uy hiếp khung thành đối phương | 1 | OFFENSE
 MISS | Sút trượt, bỏ lỡ | 1
 TEAMMATE | Đồng đội | 1 | TEAM MATE
 SHORTS | Quần đùi thi đấu | 1
 SOCKS | Tất, vớ | 1 | SOCK
 CELEBRATE | Ăn mừng | 1 | CELEBRATION
 MIDFIELDER | Tiền vệ | 2
-PITCH | Mặt sân thi đấu | 2 | FIELD
-JERSEY | Áo đấu | 2 | SHIRT, KIT
-BOOTS | Giày đá bóng | 2 | FOOTBALL BOOTS, CLEATS, BOOT
+PITCH | Khoảnh sân chữ nhật nơi trận đấu diễn ra | 2
+JERSEY | Áo đấu | 2 | KIT
+BOOTS | Đôi giày thi đấu có đinh, viết ở dạng số nhiều | 2 | FOOTBALL BOOTS
 FOUL | Phạm lỗi | 2
 FREE KICK | Quả đá phạt | 2
 THROW-IN | Quả ném biên | 2
 OFFSIDE | Việt vị | 2
 KICK-OFF | Giao bóng bắt đầu trận | 2 | KICKOFF
 HALF-TIME | Giờ nghỉ giữa hiệp | 2 | HALFTIME, INTERVAL
-EXTRA TIME | Hiệp phụ | 2 | OVERTIME
-HEADER | Cú đánh đầu | 2 | HEAD
-CROSS | Tạt bóng (từ cánh vào) | 2 | CROSSING
+EXTRA TIME | Hiệp phụ | 2
+HEADER | Cú đánh đầu | 2
+CROSS | Tạt bóng (từ cánh vào) | 2
 DRIBBLE | Rê bóng, dắt bóng | 2
 TACKLE | Vào bóng, cướp bóng | 2 | SLIDE TACKLE
 SAVE | Cứu thua (thủ môn bắt bóng) | 2
 ASSIST | Đường kiến tạo | 2
 OWN GOAL | Phản lưới nhà | 2
 HAT-TRICK | Ghi 3 bàn trong một trận | 2 | HATTRICK
-CROSSBAR | Xà ngang | 2 | BAR
-GOALPOST | Cột dọc khung thành | 2 | POST, GOAL POST, UPRIGHT
-PENALTY AREA | Vòng cấm địa | 2 | PENALTY BOX, BOX
+CROSSBAR | Thanh ngang nối hai cột dọc khung thành | 2 | BAR
+GOALPOST | Một cột dọc dựng đứng của khung thành | 2 | GOAL POST, UPRIGHT
+PENALTY AREA | Vùng chữ nhật 16m50 nơi thủ môn được phép dùng tay | 2
 SUBSTITUTE | Cầu thủ vào thay người | 2 | SUB, SUBSTITUTION, REPLACEMENT
 BENCH | Băng ghế dự bị | 2
 LINEUP | Đội hình ra sân | 2 | LINE-UP, STARTING ELEVEN, STARTING LINEUP
-TACTICS | Chiến thuật | 2 | TACTIC, STRATEGY
-LEAGUE | Giải đấu vòng tròn (giải VĐQG) | 2 | CHAMPIONSHIP
-SEMI-FINAL | Trận bán kết | 2 | SEMIFINAL
-QUARTER-FINAL | Trận tứ kết | 2 | QUARTERFINAL
+TACTICS | Chiến thuật | 2 | TACTIC
+LEAGUE | Giải đấu vòng tròn cả mùa, tính điểm xếp hạng | 2
+SEMI-FINAL | Vòng đấu bán kết quy tụ 4 đội tranh vé vào chung kết | 2 | SEMIFINAL
+QUARTER-FINAL | Vòng đấu tứ kết quy tụ 8 đội bóng mạnh nhất | 2 | QUARTERFINAL
 GROUP STAGE | Vòng bảng | 2
 TOURNAMENT | Giải đấu | 2 | COMPETITION
-AWAY | Đá sân khách | 2 | AWAY GAME, AWAY MATCH
-HOME | Đá sân nhà | 2 | HOME GROUND, HOME GAME
+AWAY | Đá trên sân của đối thủ | 2 | AWAY MATCH
+HOME | Đá trên sân của mình, có khán giả nhà cổ vũ | 2 | HOME GAME
 TRANSFER | Chuyển nhượng cầu thủ | 2
 WARM UP | Khởi động trước trận | 2 | WARMUP
-STRETCH | Giãn cơ | 2 | STRETCHING
+STRETCH | Giãn cơ | 2
 SPRINT | Chạy nước rút | 2 | DASH
-FITNESS | Thể lực | 2 | STAMINA
-LEGEND | Huyền thoại | 2 | ICON
-COMMENTATOR | Bình luận viên | 2 | ANNOUNCER, PUNDIT
-HIGHLIGHTS | Video tóm tắt trận đấu | 2 | HIGHLIGHT
-LIVE BROADCAST | Truyền hình trực tiếp | 2 | LIVE STREAM, LIVE
-TABLE | Bảng xếp hạng giải đấu | 2 | STANDINGS, LEAGUE TABLE, RANKING
-TOP SCORER | Vua phá lưới | 2 | GOLDEN BOOT
+FITNESS | Thể lực | 2
+LEGEND | Huyền thoại | 2
+COMMENTATOR | Bình luận viên | 2 | PUNDIT
+HIGHLIGHTS | Video tóm tắt trận đấu | 2
+LIVE BROADCAST | Truyền hình trực tiếp | 2 | LIVE STREAM
+TABLE | Bảng xếp hạng các đội theo điểm số | 2 | LEAGUE TABLE, RANKING
+TOP SCORER | Cầu thủ ghi nhiều bàn nhất cả giải | 2
 VAR | Công nghệ video hỗ trợ trọng tài | 2
-DEFENCE | Phòng ngự | 2 | DEFENSE, DEFENDING
-CHANCE | Cơ hội ghi bàn | 2 | OPPORTUNITY
+DEFENCE | Việc phòng ngự, viết theo kiểu Anh | 2 | DEFENDING
+CHANCE | Cơ hội ghi bàn | 2
 RIVAL | Đối thủ kình địch | 2 | RIVALS
-OPPONENT | Đội đối thủ | 2 | OPPOSITION
+OPPONENT | Đội đối thủ | 2
 CORNER FLAG | Cờ phạt góc | 2
 BALL BOY | Cậu bé nhặt bóng | 2 | BALL BOYS, BALL KID
 SCOREBOARD | Bảng tỉ số | 2
@@ -104,43 +104,43 @@ HANDBALL | Lỗi chạm tay | 2 | HAND BALL
 QUALIFY | Giành vé (vượt vòng loại) | 2 | QUALIFIED
 WALL | Hàng rào (khi đá phạt) | 2
 WINGER | Cầu thủ chạy cánh | 3
-LINESMAN | Trọng tài biên | 3 | ASSISTANT REFEREE
-SHIN GUARD | Miếng bảo vệ ống chân | 3 | SHIN GUARDS, SHIN PAD, SHIN PADS
-STOPPAGE TIME | Thời gian bù giờ | 3 | INJURY TIME, ADDED TIME
-SHOOTOUT | Loạt sút luân lưu | 3 | PENALTY SHOOTOUT, PENALTIES
+LINESMAN | Trọng tài biên | 3
+SHIN GUARD | Một miếng ốp bảo vệ ống chân, dạng số ít | 3 | SHIN PAD, SHIN PADS
+STOPPAGE TIME | Phút bù thêm cuối hiệp để đền cho quãng bóng chết | 3
+SHOOTOUT | Màn phân thắng bại bằng những cú sút sau khi hoà | 3 | PENALTIES
 CLEAN SHEET | Giữ sạch lưới | 3
 TOUCHLINE | Đường biên dọc | 3 | SIDELINE
 FORMATION | Sơ đồ chiến thuật (4-4-2) | 3 | SYSTEM
 KNOCKOUT | Vòng đấu loại trực tiếp | 3 | KNOCKOUT STAGE, KNOCK-OUT
-FIXTURE | Lịch thi đấu (trận đã xếp) | 3 | FIXTURES, SCHEDULE
+FIXTURE | Lịch thi đấu (trận đã xếp) | 3 | FIXTURES
 DERBY | Trận đấu giữa 2 đội cùng thành phố | 3 | LOCAL DERBY
 VETERAN | Cầu thủ lão làng | 3
-CHANT | Hô vang bài cổ vũ | 3 | SING
+CHANT | Hô vang bài cổ vũ | 3
 MVP | Cầu thủ hay nhất trận | 3 | PLAYER OF THE MATCH, MAN OF THE MATCH
-COUNTER-ATTACK | Phản công | 3 | COUNTERATTACK, COUNTER
+COUNTER-ATTACK | Đòn phản công chớp nhoáng khi đối thủ dâng cao | 3 | COUNTERATTACK
 POSSESSION | Kiểm soát bóng | 3 | BALL POSSESSION
 REBOUND | Bóng bật ra | 3
 VOLLEY | Sút bóng khi bóng chưa chạm đất | 3
-BICYCLE KICK | Cú móc bóng ngược (xe đạp chổng ngược) | 3 | OVERHEAD KICK, SCISSOR KICK
+BICYCLE KICK | Cú ngả người đạp hai chân như đạp xe để móc bóng | 3 | SCISSOR KICK
 NUTMEG | Xâu kim (đi bóng qua háng) | 3
 COMEBACK | Màn lội ngược dòng | 3 | TURNAROUND, COME BACK
 UNDERDOG | Đội cửa dưới | 3
-FAVOURITE | Đội cửa trên (được đánh giá cao) | 3 | FAVORITE, FAVOURITES, FAVORITES
-DIVE | Ăn vạ (ngã giả vờ) | 3 | SIMULATION, FLOP
-SUSPENSION | Án treo giò | 3 | BAN, SUSPENDED
-RELEGATION | Xuống hạng | 3 | DEMOTION, RELEGATED
+FAVOURITE | Đội cửa trên (được đánh giá cao) | 3 | FAVOURITES, FAVORITES
+DIVE | Động từ chỉ việc ngã vờ để kiếm quả phạt | 3 | SIMULATION, FLOP
+SUSPENSION | Án treo giò | 3 | SUSPENDED
+RELEGATION | Xuống hạng | 3 | RELEGATED
 PROMOTION | Lên hạng | 3 | PROMOTED
 ACADEMY | Lò đào tạo trẻ | 3 | YOUTH ACADEMY
-GOAL KICK | Quả phát bóng lên | 2
-CHIP | Cú lốp bóng | 3 | LOB
+GOAL KICK | Quả phát bóng lên từ khu vực 5 mét 50 của thủ môn | 2
+CHIP | Cú chạm nhẹ hất bóng bổng qua đầu đối phương | 3 | LOB
 LONG SHOT | Cú sút xa | 2
-EQUALISER | Bàn gỡ hoà | 3 | EQUALIZER
+EQUALISER | Bàn gỡ hoà đưa trận đấu về thế cân bằng | 3 | EQUALIZER
 OPENER | Bàn mở tỉ số | 3 | OPENING GOAL
 THROUGH BALL | Đường chọc khe | 3
 ONE-TWO | Phối hợp bật tường | 3 | WALL PASS
 MARK | Kèm người (theo sát đối thủ) | 3 | MARKING
 CLEARANCE | Phá bóng giải nguy | 3 | CLEAR
-FRIENDLY | Trận giao hữu | 2 | FRIENDLY MATCH
+FRIENDLY | Trận không tính điểm, nói gọn trong một từ | 2
 LEAD | Dẫn trước (về tỉ số) | 2
 SCARF | Khăn quàng của cổ động viên | 1
 FLARE | Pháo sáng trên khán đài | 3
@@ -148,37 +148,37 @@ MASCOT | Linh vật | 2
 ANTHEM | Quốc ca (hát trước trận) | 2 | NATIONAL ANTHEM
 PENALTY SPOT | Chấm phạt đền | 2 | SPOT
 DUGOUT | Khu kỹ thuật (băng ghế huấn luyện viên) | 3
-CORNER KICK | Quả phạt góc | 1
-FORWARD | Tiền đạo tấn công | 1
-CHAMPIONSHIP | Giải vô địch bóng đá | 2
-EQUALIZE | Bàn thắng gỡ hòa | 3
-PENALTY SHOOTOUT | Loạt sút luân lưu 11m | 2 | PENALTY
-SPECTATOR | Khán giả xem bóng đá trên khán đài | 2
-OFFENCE | Hàng tấn công | 2 | OFFENSE
-GOLDEN BOOT | Danh hiệu Giày vàng | 2
+CORNER KICK | Cú đá phạt thực hiện từ góc sân khi bóng ra hết biên ngang | 1
+FORWARD | Cầu thủ chơi tuyến trên nói chung, gồm cả chạy cánh | 1
+CHAMPIONSHIP | Giải tranh ngôi vô địch, cũng chỉ chính chức vô địch đó | 2
+EQUALIZE | Động từ chỉ việc ghi bàn kéo tỉ số về hoà | 3
+PENALTY SHOOTOUT | Tên đầy đủ của loạt sút 11m quyết định đội đi tiếp | 2
+SPECTATOR | Một người ngồi xem trận đấu | 2
+OFFENCE | Hàng tấn công, viết theo kiểu Anh | 2 | OFFENSE
+GOLDEN BOOT | Chiếc giày mạ vàng trao cho vua phá lưới | 2
 BALLON D OR | Giải thưởng Quả bóng vàng | 2
 PLAYMAKER | Người dẫn dắt lối chơi | 2
 GOAL LINE | Đường biên ngang khung thành | 2
 SIX YARD BOX | Vòng cấm nhỏ 5m50 | 2
 CENTRE CIRCLE | Vòng tròn giữa sân | 1
 FULL TIME | Hết giờ thi đấu chính thức | 1
-INJURY TIME | Thời gian bù giờ | 1
+INJURY TIME | Phút bù giờ, cách gọi nhấn vào thời gian mất cho chấn thương | 1
 TRANSFER WINDOW | Thị trường chuyển nhượng | 3
 LOAN DEAL | Hợp đồng cho mượn cầu thủ | 2
 RELEGATION BATTLE | Cuộc chiến trụ hạng | 3
 CLEAN TACKLE | Pha xoạc bóng đúng luật | 2
 SET PIECE | Tình huống dàn xếp đá phạt | 3
-OVERHEAD KICK | Cú sút ngả người móc bóng | 3
-WOODWORK | Cột dọc hoặc xà ngang | 2
+OVERHEAD KICK | Cú sút ngược qua đầu khi bóng đang ở trên cao | 3
+WOODWORK | Cách gọi chung cả cột dọc lẫn xà ngang | 2
 OFFSIDE TRAP | Bẫy việt vị | 2
 ZONAL MARKING | Phòng ngự khu vực | 3
 MAN MARKING | Phòng ngự kèm người | 3
-HOME GROUND | Sân nhà của đội bóng | 1
-AWAY GAME | Trận đấu trên sân khách | 1
+HOME GROUND | Chính sân vận động mà đội lấy làm sân nhà | 1
+AWAY GAME | Trận cụ thể phải đi xa tới sân đối phương | 1
 AGGREGATE SCORE | Tổng tỷ số sau hai lượt | 3
 AWAY GOAL RULE | Luật bàn thắng sân khách | 3
 BOOKING | Nhận thẻ phạt (vàng/đỏ) | 2
-SKIPPER | Đội trưởng (biệt danh) | 2
+SKIPPER | Tiếng lóng của báo chí Anh để gọi đội trưởng | 2
 BRACE | Ghi 2 bàn trong một trận | 3
 POACHER | Tiền đạo chớp thời cơ | 3
 BACKHEEL | Cú đánh gót | 2
@@ -191,43 +191,38 @@ CAPTAINCY | Băng đội trưởng và vai trò thủ lĩnh tinh thần của đ
 CRUNCH MATCH | Trận đấu sinh tử then chốt quyết định ngôi vô địch | 3
 GOALLINE TECHNOLOGY | Công nghệ vạch vôi xác định bóng đã qua vạch khung thành | 2
 SQUEAKER | Chiến thắng sít sao nghẹt thở ở những giây cuối cùng | 3
-MANAGER | Huấn luyện viên trưởng chỉ đạo chiến thuật bên ngoài sân | 1 | COACH, HEAD COACH
-ADDED TIME | Thời gian bù giờ sau mỗi hiệp đấu | 2 | INJURY TIME, STOPPAGE TIME
-EQUALIZER | Bàn thắng gỡ hòa quý giá đưa trận đấu về vạch xuất phát | 2
+MANAGER | Người nắm toàn quyền chuyên môn ở CLB Anh, lo cả chuyển nhượng | 1
+ADDED TIME | Cách gọi chính thức hiện nay của phần phút bù cuối hiệp | 2
 WINNER | Bàn thắng ấn định thắng lợi chung cuộc | 2
 INTERCEPTION | Cú cắt đường chuyền bóng của đối phương | 3
 LONG BALL | Đường chuyền dài vượt tuyến từ phần sân nhà | 2
 BYLINE | Đường biên ngang phía sau hai cầu môn | 3
-PENALTY BOX | Khu vực vòng cấm địa 16 mét 50 | 2 | PENALTY AREA, BOX
-CENTER CIRCLE | Vòng tròn trung tâm giữa sân bóng | 2
-COUNTERATTACK | Đòn phản công chớp nhoáng khi đối thủ dâng cao | 2
+PENALTY BOX | Cách gọi dân dã của vòng cấm địa | 2
 GOAL DIFFERENCE | Hiệu số bàn thắng bại để xếp hạng giải đấu | 3
 HEAD-TO-HEAD | Thành tích đối đầu trực tiếp giữa hai câu lạc bộ | 3
 RUNNER-UP | Đội á quân về nhì nhận huy chương bạc | 2
 GOLDEN GLOVE | Danh hiệu Găng tay vàng cho thủ môn xuất sắc nhất | 2
-CLEATS | Đôi giày đinh chuyên dụng để thi đấu trên sân cỏ | 2 | FOOTBALL BOOTS
-SHIN GUARDS | Miếng ốp bảo vệ ống đồng tránh gãy chân khi va chạm | 2 | SHIN PADS
-SUPPORTER | Cổ động viên trung thành luôn sát cánh bên đội bóng | 2 | FAN
-TURF | Mặt thảm cỏ xanh mướt trên sân bóng đá | 2 | PITCH
+CLEATS | Từ người Mỹ dùng để gọi giày đinh đá bóng | 2 | FOOTBALL BOOTS
+SHIN GUARDS | Cặp miếng ốp ống chân đeo bên trong tất, dạng số nhiều | 2 | SHIN PADS
+SUPPORTER | Cổ động viên gắn bó, theo đội cả khi đá sân khách | 2
+TURF | Lớp cỏ phủ trên mặt sân | 2
 TUNNEL | Đường hầm dẫn cầu thủ từ phòng thay đồ bước ra sân thi đấu | 2
 LOCKER ROOM | Phòng thay đồ của các cầu thủ sau giờ thi đấu | 1 | DRESSING ROOM
-SCOUT | Chuyên viên trinh sát săn tìm tài năng bóng đá trẻ | 3 | TALENT SCOUT
+SCOUT | Người đi các sân nhỏ tìm cầu thủ tiềm năng | 3
 STOMPING | Hành vi giẫm đạp thô bạo vào chân đối phương nhận thẻ phạt | 3
-DIVING | Hành vi ăn vạ giả vờ ngã kiếm quả phạt đền | 2 | SIMULATION
+DIVING | Hành vi ăn vạ bị trọng tài rút thẻ phạt | 2 | SIMULATION
 FLAG | Lá cờ hiệu màu vàng cam của trọng tài biên | 1
 CENTER SPOT | Điểm tròn giao bóng chính giữa tâm sân bóng | 2
 CROSSBAR SHOT | Cú sút dội xà ngang nảy ra đầy tiếc nuối | 3
 WOODWORK SHOT | Cú sút đập trúng cột dọc khung thành | 3
-CURLER | Cú sút cứa lòng hình quả chuối bóng xoáy cong vào góc xa | 3 | BEND
+CURLER | Cú sút cứa lòng hình quả chuối bóng xoáy cong vào góc xa | 3
 KNUCKLEBALL | Cú sút bóng lắc lư không xoáy quỹ đạo khó lường | 3
 DRIVE | Cú sút mu chính diện cực căng xé gió | 3
-TIE | Trận đấu kết thúc với kết quả hòa không phân thắng bại | 1 | DRAW
-DEFEAT | Thất bại cay đắng trước đối thủ | 2 | LOSS
-VICTORY | Chiến thắng vang dội vẻ vang của toàn đội | 1 | WIN
-STANDINGS | Bảng xếp hạng điểm số của các đội bóng trong mùa giải | 2 | TABLE
+TIE | Kết quả hoà, từ người Mỹ hay dùng | 1
+DEFEAT | Danh từ chỉ thất bại, cũng là động từ đánh bại ai đó | 2 | LOSS
+VICTORY | Danh từ trang trọng chỉ chiến thắng vẻ vang | 1
+STANDINGS | Thứ hạng hiện tại của các đội, từ người Mỹ dùng | 2
 QUALIFIER | Trận đấu thuộc vòng loại để giành vé dự vòng chung kết | 2
-QUARTERFINAL | Vòng đấu tứ kết quy tụ 8 đội bóng mạnh nhất | 2
-SEMIFINAL | Vòng đấu bán kết quy tụ 4 đội tranh vé vào chung kết | 2
 DEFENDING CHAMPION | Nhà đương kim vô địch đang giữ chiếc cúp mùa trước | 3
 FAVORITE | Đội bóng hạt giống sáng giá được dự đoán sẽ vô địch | 2
 UPSET | Cơn địa chấn bất ngờ khi đội yếu quật ngã đội mạnh | 3
@@ -235,7 +230,6 @@ BLUNDER | Sai lầm ngớ ngẩn tai hại của thủ môn dẫn tới bàn thu
 PARRY | Pha bay người đấm bóng đẩy bóng cứu thua xuất thần của thủ môn | 3
 FIST | Nắm đấm của thủ môn đấm tung quả bóng bổng ra xa | 2
 CATCH | Pha ôm gọn bắt dính trái bóng vào ngực của thủ môn | 1
-GOALKICK | Quả phát bóng lên từ khu vực 5 mét 50 của thủ môn | 2
 SCORPION KICK | Cú đá bọ cạp dùng gót chân hất bóng qua người | 3
 STEP-OVER | Điệu bộ giả vờ bước qua bóng để lừa đối thủ | 2
 FEINT | Động tác giả vờ lừa đối thủ trước khi đổi hướng | 2
@@ -245,7 +239,7 @@ CRUYFF TURN | Kỹ thuật xoay người 180 độ giấu bóng ra sau chân tr�
 RAINBOW FLICK | Cú hất bóng qua đầu đối thủ theo hình vòng cầu | 3
 DIVING HEADER | Cú đánh đầu lao người xuống | 2
 HALF-VOLLEY | Cú sút ngay khi bóng vừa chạm đất nảy lên | 3
-CHIP SHOT | Cú lobbing bóng vượt qua thủ môn vào lưới | 2
+CHIP SHOT | Cú bấm bóng vượt qua thủ môn đang băng ra | 2
 PERFECT HAT-TRICK | Thành tích 3 bàn thắng trong một trận gồm chân phải chân trái và đánh đầu | 3
 POKER | Ghi được bốn bàn thắng trong một trận | 3
 MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản | 4
@@ -254,19 +248,19 @@ PLAYOFF | Vòng tranh suất thăng hạng hoặc quyết định chức vô đ�
 WALKOVER | Trận thắng không chiến khi đối thủ bỏ cuộc | 2
 SUBSTITUTION BENCH | Khu dự bị nơi các cầu thủ ngồi chờ được tung vào sân | 2
 HALFWAY LINE | Vạch giữa sân chia đôi sân bóng | 1
-GOALPOSTS | Hai cột dọc của khung thành | 2
-BOOT | Giày đinh bóng đá chuyên dụng | 1
+GOALPOSTS | Cả hai cột dọc khung thành, dạng số nhiều | 2
+BOOT | Một chiếc giày đinh, viết ở dạng số ít | 1
 STUDS | Đinh bám đất dưới đế giày bóng đá | 2
 GOALKEEPER GLOVES | Găng tay thủ môn | 1
 ARMBAND | Băng đội trưởng đeo ở cánh tay | 1
-FRIENDLY MATCH | Trận giao hữu không tính điểm chỉ để luyện tập | 1
+FRIENDLY MATCH | Trận giao hữu hai đội hẹn đá để rèn quân | 1
 PRESSER | Buổi họp báo trước hoặc sau trận của ban huấn luyện | 2
-TALENT SCOUT | Chuyên viên săn tìm tài năng bóng đá | 2
+TALENT SCOUT | Chuyên viên của CLB chuyên săn tài năng trẻ | 2
 GRASSROOTS | Bóng đá cơ sở phong trào ở cấp địa phương | 2
 FUTSAL | Bóng đá trong nhà sân nhỏ 5 người | 1
 BEACH SOCCER | Bóng đá bãi biển thi đấu trên cát | 1
-SWEEPER | Trung vệ libero chơi tự do phòng thủ theo khu vực | 3
-LIBERO | Vị trí chơi phòng thủ tự do phía sau các hậu vệ | 3
+SWEEPER | Trung vệ quét chơi lùi sau cùng để dọn bóng | 3
+LIBERO | Tên tiếng Ý của trung vệ thòng chơi tự do | 3
 WINGBACK | Hậu vệ cánh thường xuyên dâng lên tấn công | 2
 GOALKEEPER KIT | Bộ trang phục màu khác biệt dành riêng cho thủ môn | 2
 GOALKEEPER DISTRIBUTION | Khả năng phân phối bóng của thủ môn bằng tay hoặc chân | 3
@@ -284,7 +278,7 @@ PITCHSIDE MONITOR | Màn hình bên đường biên để trọng tài xem lại
 MAXIMUM POINTS | Số điểm tối đa thu được nếu thắng toàn bộ trận | 2
 DEAD RUBBER | Trận đấu không còn ý nghĩa vì cả hai đội đã xác định vị trí | 3
 CARETAKER | Huấn luyện viên tạm quyền trong khi tìm người thay thế | 2
-HEAD COACH | Huấn luyện viên trưởng người đứng đầu ban kỹ thuật | 1
+HEAD COACH | Người đứng đầu ban huấn luyện, chỉ lo chuyên môn thi đấu | 1
 ASSISTANT COACH | Huấn luyện viên phó trợ lý cho HLV trưởng | 1
 GOALKEEPER COACH | Huấn luyện viên chuyên phụ trách huấn luyện thủ môn | 2
 SPORTS DIRECTOR | Giám đốc thể thao phụ trách toàn bộ hoạt động chuyên môn của CLB | 2

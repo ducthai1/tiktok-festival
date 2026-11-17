@@ -24,7 +24,6 @@ PLAYGROUND | Sân chơi | 1
 TOY | Đồ chơi | 1 | TOYS
 STUFFED ANIMAL | Thú nhồi bông | 1 | PLUSH, SOFT TOY
 LEVEL UP | Lên cấp (trong game) | 1
-HIGH SCORE | Điểm cao nhất (kỷ lục game) | 1
 PLOT TWIST | Cú lật bất ngờ trong cốt truyện | 2 | TWIST
 HAPPY ENDING | Kết thúc có hậu | 1
 MAIN CHARACTER | Nhân vật chính | 1 | PROTAGONIST, LEAD
