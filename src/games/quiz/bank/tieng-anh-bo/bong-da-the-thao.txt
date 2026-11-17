@@ -26,7 +26,7 @@ BALANCE BEAM | Cầu thăng bằng | 3
 SWIMMING POOL | Bể bơi | 1 | POOL
 BREASTSTROKE | Bơi ếch | 2
 BACKSTROKE | Bơi ngửa | 2
-BUTTERFLY STROKE | Bơi bướm | 2 | BUTTERFLY
+BUTTERFLY STROKE | Bơi bướm | 2
 FREESTYLE | Bơi tự do | 2 | FRONT CRAWL
 DIVING BOARD | Ván nhảy cầu | 2
 GOGGLES | Kính bơi | 1 | SWIMMING GOGGLES
@@ -37,18 +37,18 @@ SAILING | Đua thuyền buồm | 2
 SIT-UP | Gập bụng | 1 | SITUP, CRUNCH
 PULL-UP | Hít xà đơn | 2 | PULLUP, CHIN-UP
 UMPIRE | Trọng tài (quần vợt, bóng chày) | 3
-GOLD MEDAL | Huy chương vàng | 1 | GOLD
-SILVER MEDAL | Huy chương bạc | 1 | SILVER
+GOLD MEDAL | Huy chương vàng | 1
+SILVER MEDAL | Huy chương bạc | 1
 BRONZE MEDAL | Huy chương đồng | 1 | BRONZE
 OLYMPICS | Thế vận hội | 1 | OLYMPIC GAMES
-SPORTSMANSHIP | Tinh thần thể thao cao thượng | 3 | FAIR PLAY
+SPORTSMANSHIP | Tinh thần thể thao cao thượng | 3
 DOPING | Sử dụng chất cấm (thể thao) | 3
 WORLD RECORD | Kỷ lục thế giới | 1 | RECORD
 DARTS | Phi tiêu | 2 | DART
 JUMP ROPE | Nhảy dây | 1 | SKIPPING ROPE, SKIPPING
-COOL DOWN | Thả lỏng sau khi tập | 2 | COOLDOWN
+COOL DOWN | Thả lỏng sau khi tập | 2
 CRAMP | Chuột rút | 2 | CRAMPS
-ARENA | Nhà thi đấu có mái che, dùng cho nhiều môn trong nhà | 2 | STADIUM
+ARENA | Nhà thi đấu có mái che, dùng cho nhiều môn trong nhà | 2
 SPARRING | Đấu tập (võ thuật) | 3
 BLACK BELT | Đai đen | 1
 MARTIAL ARTIST | Võ sĩ (người tập võ) | 2
@@ -71,5 +71,5 @@ MOUTHGUARD | Miếng bảo vệ răng | 3 | MOUTH GUARD
 CHALK BAG | Túi phấn (leo núi, thể dục) | 3
 STARTING BLOCK | Bàn đạp xuất phát | 3 | STARTING BLOCKS
 LAP | Một vòng chạy | 2
-OVERTAKE | Vượt lên (trong cuộc đua) | 2 | PASS
+OVERTAKE | Vượt lên (trong cuộc đua) | 2
 PHOTO FINISH | Về đích sát nút (phải xem ảnh) | 3
