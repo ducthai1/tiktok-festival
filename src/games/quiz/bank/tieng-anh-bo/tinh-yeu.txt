@@ -9,10 +9,10 @@ FAITHFUL | Trung thành, không phản bội | 1
 ENDEAR | Làm cho ai đó yêu quý mình | 1
 INTIMATE | Thân thiết, sâu sắc, riêng tư | 1
 FASCINATE | Mê hoặc, lôi cuốn sự chú ý | 2
-INFATUATED | Bị mê hoặc, say đắm | 2
+INFATUATED | Đang trong cơn say nắng mù quáng | 2
 IDOLIZE | Yêu quý như thần tượng | 2
 MESMERIZE | Mê hoặc, bắt buộc chú ý | 2
-GALLANTRY | Tính tốt tính, phép lịch sự quý phái | 2
+GALLANTRY | Cử chỉ ga lăng lịch thiệp của người đàn ông với phụ nữ | 2
 POIGNANCY | Sự xúc động, buồn sâu sắc | 2
 SORROWFUL | Buồn bã, đau lòng | 2
 WISTFUL | Buồn nhẹ, luyến tiếc | 2
@@ -20,7 +20,7 @@ SERENITY | Yên bình, tĩnh tại, bình an | 2
 JUBILANCE | Vui vẻ rộn ràng, phấn khích | 2
 FELICITY | Hạnh phúc, sung sướng | 2
 CONSTANCY | Sự không đổi, trung thành | 2
-RAPPORT | Mối quan hệ hòa hợp, uyển chuyển | 2
+RAPPORT | Sự ăn ý hiểu nhau giữa hai người ngay từ đầu | 2
 REUNION | Tái hợp, gặp lại | 2
 BETROTHED | Người đã hứa hôn, hôn thê | 3
 BRIDESMAID | Phù dâu, người phụ nữ trong đám cưới | 3
@@ -37,22 +37,22 @@ COLD FEET | Sợ, do dự lúc sắp kết hôn | 3
 TIE THE KNOT | Kết hôn, nên duyên | 3
 HEAD OVER HEELS | Yêu rất sâu, si mê hoàn toàn | 3
 POP THE QUESTION | Cầu hôn, hỏi lấy ai đó | 3
-LOVE LETTER | Thư tình, thư bày tỏ tình yêu | 3
-WEDDING VOWS | Lời thề hôn nhân, lời hứa cưới | 3
+LOVE LETTER | Lá thư tay viết tỏ tình gửi người thương | 3
+WEDDING VOWS | Những lời thề đôi uyên ương đọc trước mặt quan khách | 3
 DOWRY | Của hồi môn, tài sản mang theo kết hôn | 3
 CHIVALRY | Phép lịch sự và tôn trọng cổ điển | 3
 PLATONIC | Tình yêu tinh thần, không lãng mạn | 3
 RECIPROCATE | Đáp lại tình cảm của ai đó | 3
 MATRIMONY | Lễ cưới, hôn nhân | 3
-INFATUATION | Sự mê mẩn tạm thời, không thực sự yêu | 3
+INFATUATION | Cơn say nắng bùng lên rồi tắt nhanh | 3
 RAPTURE | Sung sướng, lạc lối trong hạnh phúc | 3
 EXULTATION | Vui vẻ rộn ràng, hân hoan | 3
-PINING | Khao khát, luyến tiếc, nao núng | 3
+PINING | Nỗi nhớ day dứt khi phải xa người thương | 3
 CAPTIVATION | Sự mê hoặc, bị lôi cuốn hoàn toàn | 3
 ENCHANTMENT | Sự mê đắm, sự quyến rũ | 3
-ESPOUSAL | Sự tán thành, ủng hộ | 3
+ESPOUSAL | Việc công khai đứng về phía một người hoặc một ý tưởng | 3
 SPOUSAL | Liên quan đến vợ hoặc chồng | 3
-MATRIMONIAL | Liên quan đến hôn nhân | 3
+MATRIMONIAL | Tính từ trang trọng chỉ những gì thuộc về lễ cưới | 3
 GROOMSMAN | Phù rể đứng cạnh chú rể trong lễ cưới | 3
 RING BEARER | Em bé cầm nhẫn cưới đi trong lễ cưới | 3
 FLOWER GIRL | Bé gái rải hoa đi trước cô dâu | 3
@@ -84,7 +84,7 @@ SOFT SPOT | Có cảm tình đặc biệt, mềm lòng với ai | 3
 CRUSH | Người mà bạn thích và mong muốn được gần gũi | 1
 LOVE | Cảm xúc sâu sắc về ai hoặc cái gì đó | 1
 DATE | Cuộc gặp mặt lãng mạn với ai đó | 1
-HUG | Ôm ai đó với tay | 1
+HUG | Vòng tay ôm lấy người kia | 1
 KISS | Chạm môi vào ai đó như biểu hiện tình cảm | 1
 COUPLE | Hai người yêu nhau | 1
 BOYFRIEND | Bạn trai của ai đó | 1
@@ -92,7 +92,7 @@ GIRLFRIEND | Bạn gái của ai đó | 1
 WEDDING | Buổi lễ kết hôn | 1
 BRIDE | Cô dâu trong đám cưới | 1
 GROOM | Chú rể trong đám cưới | 1
-FLOWER | Cây hoa để tặng người yêu | 1
+FLOWER | Bông hoa tươi tặng người thương | 1
 VALENTINE | Ngày lễ tình yêu ngày 14 tháng 2 | 1
 PROPOSE | Cầu hôn, xin người kia lấy mình | 1
 MARRY | Kết hôn với ai đó | 1
@@ -126,8 +126,8 @@ CARD | Tấm thiệp lãng mạn | 1
 LETTER | Thư tình yêu | 1
 POEM | Bài thơ về tình yêu | 1
 VEIL | Tấm voan trên đầu cô dâu | 1
-DRESS | Váy cưới | 1
-SUIT | Bộ quần áo chủ rể | 1
+DRESS | Chiếc váy nói chung phụ nữ mặc | 1
+SUIT | Bộ vest chú rể mặc trong lễ cưới | 1
 CHURCH | Nhà thờ nơi tổ chức đám cưới | 1
 VOWS | Lời thề kết hôn | 1
 WIFE | Vợ, người phụ nữ đã kết hôn | 1
@@ -165,10 +165,10 @@ ROMANCE | Mối quan hệ tình cảm lãng mạn | 2
 CONFESSION | Khai báo tình cảm cho ai đó | 2
 PASSION | Cơn sốt, khao khát mạnh mẽ | 2
 COURTSHIP | Thời kì yêu nhau trước hôn nhân | 2
-LOYALTY | Sự trung thành | 2
+LOYALTY | Sự một lòng gắn bó không bỏ rơi người mình theo | 2
 FAITHFULNESS | Sự chung thủy | 2
 JEALOUSY | Cảm giác ghen tức | 2
-ELOPEMENT | Chạy trốn để kết hôn | 2
+ELOPEMENT | Danh từ chỉ cuộc trốn nhà đi cưới không xin phép | 2
 RECONCILIATION | Tái hợp sau khi chia tay | 2
 LONG DISTANCE | Yêu nhau từ xa, không cùng nơi | 2
 COMMITMENT | Sự cam kết trong tình yêu | 2
@@ -182,7 +182,7 @@ COMPATIBILITY | Sự phù hợp giữa hai người | 2
 CHEMISTRY | Sự hóa học, cảm ứng | 2
 SPARK | Lửa tình cảm | 2
 CONNECTION | Kết nối, liên kết với ai đó | 2
-FASCINATED | Bị mê hoặc | 2
+FASCINATED | Bị cuốn hút tới mức không rời mắt được | 2
 LONGING | Khao khát, mong mỏi | 2
 YEARNING | Khao khát, hằng mong | 2
 ADMIRABLE | Đáng ngưỡng mộ, tốt | 2
@@ -194,7 +194,7 @@ BOND | Liên kết, mối quan hệ | 2
 CHERISHED | Được yêu thương, quý trọng | 2
 ADORATION | Sự tôn thờ, yêu quý | 2
 COMPANIONSHIP | Tình bạn, sự sống chung | 2
-FIDELITY | Sự trung thành | 2
+FIDELITY | Sự chung thuỷ, không ngoại tình với bạn đời | 2
 OPENNESS | Sự cởi mở, thể hiện cảm xúc | 2
 PATIENCE | Sự kiên nhẫn | 2
 FORGIVENESS | Sự tha thứ | 2
@@ -219,21 +219,21 @@ UNREQUITED | Tình yêu không được đáp lại | 3
 CONSORT | Bạn đời, vợ chồng | 3
 SUITOR | Chàng trai tìm kiếm bạn gái | 3
 COURTLY | Lịch sự, quý phái | 3
-ELOPE | Chạy trốn để kết hôn | 3
+ELOPE | Động từ chỉ việc hai người bỏ nhà đi cưới nhau | 3
 TENDERHEARTED | Có trái tim từng tốt | 3
 LIGHTHEARTED | Vui vẻ, không suy nghĩ quá | 3
 VIVACIOUS | Sống động, vui tươi | 3
 GRACIOUS | Lịch sự, tốt bụng | 3
-TRANSFIXED | Bị mê hoặc, say mê | 3
-MESMERIZED | Bị mê hoặc | 3
+TRANSFIXED | Đứng chết trân tại chỗ vì quá sửng sốt | 3
+MESMERIZED | Bị thôi miên như bị hút hồn, đứng ngẩn ra | 3
 FERVENT | Nồng nàn, say đắm | 3
 SENTIMENTAL | Tình cảm, lãng mạn | 3
 SENTIMENTALITY | Sự tình cảm, lãng mạn | 3
-DOTE | Yêu thương quá mức | 3
-DOTING | Yêu thương quá mức | 3
+DOTE | Động từ chỉ việc cưng chiều ai đó quá mức | 3
+DOTING | Tính từ mô tả người cưng chiều con cháu hết mực | 3
 ENRAPTURE | Làm vui sướng | 3
 ENRAPTURED | Vui sướng, say mê | 3
-ENTRANCED | Bị mê hoặc, say mê | 3
+ENTRANCED | Như lạc vào cõi mộng vì quá say mê | 3
 FONDNESS | Sự yêu thương, ưa thích | 3
 BLUSH | Đỏ mặt vì xấu hổ hoặc thích ai | 1
 FRIENDSHIP | Mối quan hệ bạn bè | 1
@@ -258,7 +258,7 @@ NOSTALGIC | Nhớ lại quá khứ, luyến tiếc | 2
 ONLINE DATING | Hẹn hò trực tuyến qua mạng | 2
 SPEED DATING | Hẹn hò nhanh chóng | 2
 FIRST DATE | Lần hẹn hò đầu tiên | 2
-WEDDING DRESS | Váy cưới | 2
+WEDDING DRESS | Chiếc váy trắng dài cô dâu mặc trong lễ cưới | 2
 WEDDING CAKE | Bánh cưới | 2
 WEDDING RING | Nhẫn cưới | 2
 WEDDING BELLS | Chuông cưới | 2
@@ -289,7 +289,7 @@ ROMANTIC DINNER | Bữa tối lãng mạn | 2
 ROMANTIC MOVIE | Phim lãng mạn | 2
 MARRIAGE PROPOSAL | Lời cầu hôn | 2
 NUPTIAL | Liên quan đến lễ cưới | 3
-MARITAL | Liên quan đến hôn nhân | 3
+MARITAL | Tính từ chỉ quan hệ giữa vợ và chồng sau khi cưới | 3
 LOVE SONG | Bài hát về tình yêu đôi lứa | 1
 COUPLE OUTFIT | Bộ đồ đôi hai người mặc giống nhau | 1
 ANNIVERSARY GIFT | Món quà tặng nhau dịp kỷ niệm ngày yêu | 1

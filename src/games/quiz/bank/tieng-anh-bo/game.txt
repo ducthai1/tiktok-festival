@@ -1,60 +1,60 @@
 # Tiếng Anh · Game
-LEVEL | Cấp độ nhân vật hoặc bản đồ trong trò chơi | 1 | STAGE
-MAP | Bản đồ không gian trò chơi diễn | 1 | TERRAIN
-JUMP | Nhảy vượt qua chướng ngại vật | 1 | LEAP
-COIN | Tiền xu vàng trong trò chơi | 1 | GOLD
-LIFE | Mạng sống nhân vật còn | 1 | LIVES
+LEVEL | Cấp bậc nhân vật tăng lên khi đủ kinh nghiệm | 1
+MAP | Bản đồ cả vùng đất nơi trận đấu diễn ra | 1
+JUMP | Nhảy vượt qua chướng ngại vật | 1
+COIN | Tiền xu vàng trong trò chơi | 1
+LIFE | Một lượt sống, hết là nhân vật gục | 1 | LIVES
 ENEMY | Kẻ địch đối thủ | 1 | FOE
-HERO | Nhân vật anh hùng chính | 1 | CHARACTER
-CHEST | Rương chứa vật phẩm thưởng | 1 | TREASURE
+HERO | Nhân vật anh hùng chính | 1
+CHEST | Rương chứa vật phẩm thưởng | 1
 GEM | Ngọc quý đá quý | 1 | CRYSTAL
-RANK | Hạng xếp vị trí cao | 1 | PLACEMENT
-REWARD | Phần thưởng hưởng lợi | 1 | PRIZE
+RANK | Bậc xếp hạng leo dần khi thắng nhiều trận | 1 | PLACEMENT
+REWARD | Thứ nhận được sau khi hoàn thành nhiệm vụ | 1 | PRIZE
 ENDGAME | Giai đoạn cuối cùng trò chơi | 1 | FINAL STAGE
-TUTORIAL | Hướng dẫn cách chơi cơ bản | 1 | GUIDE
-COMBO BREAKER | Bẻ gãy chuỗi tấn công đối | 1 | INTERRUPT
+TUTORIAL | Hướng dẫn cách chơi cơ bản | 1
+COMBO BREAKER | Đòn chen vào cắt đứt chuỗi liên hoàn của đối thủ | 1
 DODGE | Né tránh tránh khỏi sát thương | 1 | EVADE
-BLOCK | Chặn bảo vệ tránh sát thương | 1 | SHIELD UP
-CAMPAIGN | Chiến dịch câu chuyện chính trò | 1 | STORY MODE
+BLOCK | Động tác đỡ chặn đòn đánh của đối thủ | 1 | SHIELD UP
+CAMPAIGN | Mạch nhiệm vụ chính kể câu chuyện của game | 1 | STORY MODE
 SINGLE PLAYER | Chơi một người không cần ai | 1
 MULTIPLAYER | Chơi nhiều người cùng một lúc | 1
-OFFLINE | Chơi không kết nối mạng internet | 1 | LOCAL
+OFFLINE | Chơi không kết nối mạng internet | 1
 ONLINE | Chơi kết nối internet với người khác | 1
-CONSOLE | Máy chơi game chuyên dụng bảng | 1 | GAMING DEVICE
-MOBILE | Thiết bị di động điện thoại | 1 | PHONE
+CONSOLE | Máy chuyên để chơi game cắm vào ti vi | 1 | GAMING DEVICE
+MOBILE | Thiết bị di động điện thoại | 1
 CONTROLLER | Bộ điều khiển cầm tay | 1 | GAMEPAD
-JOYSTICK | Cần điều khiển hướng chuyển động | 1 | LEVER
-BUTTON | Nút bấm điều khiển | 1 | KEY
-PAUSE | Tạm dừng trò chơi | 1 | STOP
+JOYSTICK | Cần điều khiển hướng chuyển động | 1
+BUTTON | Nút bấm điều khiển | 1
+PAUSE | Tạm dừng trò chơi | 1
 RESTART | Khởi động lại trò chơi từ đầu | 1 | RESET
-QUIT | Thoát trò chơi từ bỏ | 1 | EXIT
+QUIT | Việc thoát khỏi trò chơi giữa chừng | 1
 SETTINGS | Cài đặt tùy chỉnh tham số | 1 | OPTIONS
 GRAPHICS | Đồ họa hình ảnh trực quan | 1 | VISUALS
 SOUND | Âm thanh âm lượng nhạc | 1 | AUDIO
-VOLUME | Độ lớn âm thanh âm | 1 | LOUDNESS
-BRIGHTNESS | Độ sáng độ tối hình ảnh | 1 | LUMINOSITY
-RESOLUTION | Độ phân giải hình ảnh rõ nét | 1 | CLARITY
-FULLSCREEN | Toàn màn hình không thanh | 1 | MAXIMIZE
-WINDOWED | Cửa sổ nhỏ mode cửa | 1 | WINDOW MODE
-UPDATE | Cập nhật phiên bản mới | 1 | UPGRADE
-PATCH | Bản cập nhật sửa lỗi | 1 | FIX
-STORYLINE | Chuỗi câu chuyện cốt truyện | 1 | NARRATIVE
-INVENTORY | Kho vật phẩm cầm theo | 1 | BAG
+VOLUME | Mức to nhỏ của tiếng trong game | 1 | LOUDNESS
+BRIGHTNESS | Độ sáng độ tối hình ảnh | 1
+RESOLUTION | Số điểm ảnh của hình, càng cao càng nét | 1 | CLARITY
+FULLSCREEN | Chế độ game phủ kín cả màn hình | 1
+WINDOWED | Chế độ game chạy trong một khung cửa sổ nhỏ | 1 | WINDOW MODE
+UPDATE | Cập nhật phiên bản mới | 1
+PATCH | Bản cập nhật sửa lỗi | 1
+STORYLINE | Chuỗi câu chuyện cốt truyện | 1
+INVENTORY | Kho vật phẩm cầm theo | 1
 QUEST LOG | Nhật ký nhiệm vụ ghi chép | 1 | TASK LIST
-CHEAT CODE | Dãy ký tự bí mật do lập trình viên cài vào để mở khóa tính năng game | 1 | SECRET CODE
-HIGHSCORE | Điểm số cao nhất từng đạt | 1 | BEST SCORE
+CHEAT CODE | Dãy ký tự bí mật do lập trình viên cài vào để mở khóa tính năng game | 1
+HIGHSCORE | Điểm cao nhất từng lập được, ghi lên bảng | 1 | BEST SCORE
 STATISTICS | Thống kê dữ liệu kết quả | 1 | STATS
 LEADERBOARD | Bảng xếp hạng người chơi top | 1
 DIFFICULTY MODE | Chế độ mức độ khó dễ | 1
-SPEEDRUN | Chơi hoàn thành game nhanh nhất | 3 | FAST RUN
+SPEEDRUN | Lối chơi đua phá đảo trong thời gian ngắn nhất | 3 | FAST RUN
 RESPAWN | Sinh lại nhân vật sau chết | 1 | REBIRTH
 DODGE ROLL | Lăn tránh né sát thương nhanh | 1 | EVADE ROLL
 SKILL TREE | Cây kỹ năng nâng cấp | 1 | ABILITY TREE
 LATENCY | Độ trễ phản ứng mạng truyền | 3 | PING
 FRAME RATE | Tốc độ khung hình mỗi giây | 3 | FPS
-EASTER EGG | Bí mật ẩn giấu nhà phát triển | 3
+EASTER EGG | Chi tiết vui người làm game giấu cho ai tinh mắt tìm ra | 3
 SANDBOX | Chế độ tự do xây dựng sáng tạo | 3 | CREATIVE MODE
-NERF | Làm yếu đi nhân vật kỹ năng | 3 | WEAKEN
+NERF | Làm yếu đi nhân vật kỹ năng | 3
 HITSCAN | Kỹ năng bắn ngang tức thì | 3 | INSTANT HIT
 MICROTRANSACTION | Mua nhỏ vật phẩm phí tiền | 3 | SMALL PURCHASE
 PATCH NOTES | Ghi chú cập nhật thay đổi | 3
@@ -71,45 +71,45 @@ NORMAL MAP | Bản đồ pháp tuyến độ sâu | 3
 COLLIDER | Vùng va chạm vật lý | 3 | COLLISION ZONE
 SPRITE | Hình hai chiều nhân vật | 3 | 2D IMAGE
 TILESET | Bộ gạch lát xây dựng bản đồ | 3 | TILE COLLECTION
-ASSET | Tài nguyên hình ảnh âm thanh | 3 | RESOURCE
-RENDER | Vẽ tính toán hình ảnh | 3 | DRAW
+ASSET | Tài nguyên hình ảnh âm thanh | 3
+RENDER | Vẽ tính toán hình ảnh | 3
 OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng | 3 | PERFORMANCE TUNING
 DEBUGGING | Gỡ rối tìm lỗi chương trình | 3 | FIXING BUGS
 SCRIPTING | Viết kịch bản code logic | 3 | CODE WRITING
 ENGINE | Động cơ công cụ xây dựng | 3 | TOOL
 MEMORY LEAK | Rò rỉ bộ nhớ không giải phóng | 3 | MEMORY LOSS
 BANDWIDTH | Độ rộng băng thông truyền | 3 | NETWORK SPEED
-SERVER | Máy chủ lưu trữ dữ liệu | 3 | HOST
-CLIENT | Máy khách kết nối server | 3 | PLAYER DEVICE
-SYNCHRONIZATION | Đồng bộ hóa dữ liệu giữa | 3 | SYNC
+SERVER | Máy chủ lưu trữ dữ liệu | 3
+CLIENT | Phần mềm cài trên máy người chơi để nối vào máy chủ | 3 | PLAYER DEVICE
+SYNCHRONIZATION | Việc giữ cho dữ liệu các máy khớp nhau theo thời gian thực | 3
 MODDING | Chỉnh sửa game theo ý thích | 3 | GAME MODIFICATION
-MODDER | Người chỉnh sửa mod game | 3 | MOD CREATOR
-STREAMING | Phát trực tiếp gameplay online | 3 | LIVE BROADCAST
+MODDER | Người tự chỉnh sửa game thêm nội dung cho người khác tải | 3 | MOD CREATOR
+STREAMING | Phát trực tiếp gameplay online | 3
 ESPORTS | Thể thao điện tử thi đấu | 3 | COMPETITIVE GAMING
 PRIZE POOL | Quỹ tiền thưởng tổng cộng | 3 | REWARD FUND
 SPONSORSHIP | Tài trợ hỗ trợ tài chính | 3 | FUNDING
-FRANCHISE | Đội chuyên nghiệp cấp cao | 3 | PROFESSIONAL TEAM
+FRANCHISE | Cả loạt game cùng một thương hiệu ra nhiều phần | 3 | PROFESSIONAL TEAM
 ROSTER | Danh sách thành viên đội | 3 | MEMBER LIST
 BOOTCAMP | Trại huấn luyện chuẩn bị | 3 | TRAINING CAMP
 SCRIM MATCH | Trận tập đấu không chính thức | 3 | PRACTICE GAME
 META GAME | Chiến lược tối ưu hiện tại | 3 | OPTIMAL STRATEGY
-PROTOTYPE | Mẫu bản thử nghiệm ban đầu | 3 | DRAFT VERSION
-RELEASE | Phát hành công bố chính thức | 3 | LAUNCH
-BETA TESTING | Kiểm tra phiên bản nước ngoài | 3 | EARLY ACCESS
-ALPHA VERSION | Phiên bản sơ khai chưa hoàn | 3 | EARLY BUILD
+PROTOTYPE | Bản mẫu thô làm nhanh để thử ý tưởng | 3 | DRAFT VERSION
+RELEASE | Phát hành công bố chính thức | 3
+BETA TESTING | Giai đoạn cho người chơi thử trước khi phát hành chính thức | 3 | EARLY ACCESS
+ALPHA VERSION | Bản dựng sớm nhất còn đầy lỗi, chỉ nội bộ chơi thử | 3 | EARLY BUILD
 CROSSPLAY | Chơi cùng nhau nền tảng khác | 3 | CROSS PLATFORM
-CROSSOVER | Sự hợp tác giữa hai game | 3 | COLLABORATION
-COSMETIC | Vật phẩm chỉ trang trí không | 3 | APPEARANCE ITEM
+CROSSOVER | Sự hợp tác giữa hai game | 3
+COSMETIC | Món chỉ để đẹp, không làm nhân vật mạnh lên | 3 | APPEARANCE ITEM
 GAMEPLAY LOOP | Vòng lặp trò chơi cơ bản | 3
 DUNGEON CRAWLER | Khám phá hầm ngục tầng | 3 | CAVE EXPLORER
-ROGUELITE | Trò roguelike nhưng giữ tiến | 3 | HYBRID ROGUELIKE
+ROGUELITE | Trò chết là chơi lại từ đầu nhưng vẫn giữ một phần nâng cấp | 3 | HYBRID ROGUELIKE
 PLATFORMER | Trò nhảy qua chướng ngại vật | 3 | JUMPING GAME
-BULLET HELL | Trò nhiều viên đạn bay | 3 | BULLET STORM
-IDLE GAME | Trò chơi tự động chế độ | 3 | AUTOMATIC GAME
+BULLET HELL | Trò né rừng đạn dày đặc phủ kín màn hình | 3 | BULLET STORM
+IDLE GAME | Trò vẫn tự chạy và tích điểm cả khi không ai bấm | 3 | AUTOMATIC GAME
 CLICKER | Trò nhấp chuột tích lũy | 3 | TAP GAME
-PUZZLE | Trò giải đố xếp ghép | 3 | BRAIN GAME
-TURN BASED | Chơi lượt không thời gian | 3 | ROUND SYSTEM
-REAL TIME | Chơi thực tế hành động | 3 | LIVE ACTION
+PUZZLE | Trò phải suy nghĩ sắp xếp mới qua màn | 3 | BRAIN GAME
+TURN BASED | Lối chơi chờ nhau đi từng lượt như cờ | 3 | ROUND SYSTEM
+REAL TIME | Lối chơi diễn ra liên tục, không ai chờ ai | 3 | LIVE ACTION
 ISOMETRIC | Góc nhìn xiên ba chiều | 3 | ANGLED VIEW
 FIRST PERSON | Góc nhìn từ mắt nhân vật | 3 | POV VIEW
 THIRD PERSON | Góc nhìn từ phía sau | 3 | BEHIND VIEW
@@ -118,44 +118,44 @@ HEALTH BAR | Thanh hiển thị lượng máu còn lại của nhân vật | 1
 GAME OVER | Dòng chữ hiện ra khi thua cuộc, hết mạng | 1
 LOOT | Thu thập vật phẩm từ quái vật sau tiêu diệt | 1 | ITEM DROP
 COMBO | Chuỗi kỹ năng dùng liên tiếp tạo sát thương | 1 | COMBINATION
-HEADSHOT | Bắn trúng đầu kẻ địch gây sát thương cực | 1 | HEAD KILL
+HEADSHOT | Phát bắn trúng đầu hạ gục ngay lập tức | 1 | HEAD KILL
 NOOB | Người mới chơi kém kỹ năng nhập môn | 1 | NEWBIE
-MELEE | Tấn công gần cận chém chích | 1 | CLOSE COMBAT
+MELEE | Lối đánh áp sát bằng vũ khí cầm tay | 1 | CLOSE COMBAT
 RANGE | Tấn công từ khoảng cách xa | 1 | DISTANCE ATTACK
-ARMOR | Giáp trang bị giảm sát thương nhận | 1 | DEFENSE, ARMOUR
+ARMOR | Giáp trang bị giảm sát thương nhận | 1 | ARMOUR
 SHIELD | Bảo vệ hấp thụ sát thương | 1 | BARRIER
 SWORD | Kiếm vũ khí cơ bản dùng tấn công | 1 | BLADE
-HEALTH | Máu số sức sống của nhân vật còn bao | 1 | HP
-MANA | Năng lượng xanh sử dụng phát động kỹ | 1 | MAGIC ENERGY
+HEALTH | Lượng máu còn lại của nhân vật | 1 | HP
+MANA | Năng lượng phép thuật tiêu hao mỗi lần dùng chiêu | 1 | MAGIC ENERGY
 SPAWN | Nơi xuất hiện nhân vật trong trò chơi | 1 | START POINT
 MINION | Lính máy tính được điều khiển tự động | 1 | CREEP
-ITEM | Vật phẩm trang bị tăng chỉ số | 1 | EQUIPMENT
+ITEM | Vật phẩm trang bị tăng chỉ số | 1
 PROJECTILE | Vật thể bay phóng ra từ kỹ năng | 1 | FLYING OBJECT
-BASE | Nơi khởi hành điểm yên toàn an toàn | 1 | HOME
-ALLY | Đồng minh giúp đỡ bạn trong trận chiến | 1 | TEAMMATE
+BASE | Căn cứ xuất phát được bảo vệ của mỗi đội | 1
+ALLY | Đồng minh giúp đỡ bạn trong trận chiến | 1
 WEAPON | Vũ khí dùng để tấn công kẻ địch | 1 | FIREARM
-STRIKE | Tấn công chủ động gây sát thương đối | 1 | HIT
-GUARD | Phòng thủ chặn sát thương tránh mất | 1 | DEFEND
-SAVE POINT | Điểm lưu tiến độ giữa chừng | 1 | CHECKPOINT
-TIER | Cấp độ bản đồ hoặc tầng trò chơi | 1 | STAGE
-CREATURE | Quái vật mạnh trong trò chơi | 1 | MONSTER
+STRIKE | Cú đánh thẳng gây sát thương lên đối thủ | 1 | HIT
+GUARD | Thế thủ giơ lên đỡ bớt đòn đánh tới | 1
+SAVE POINT | Điểm lưu tiến độ giữa chừng | 1
+TIER | Bậc phân hạng mạnh yếu của nhân vật hoặc trang bị | 1
+CREATURE | Quái vật mạnh trong trò chơi | 1
 BOUNTY | Phần thưởng được trao sau hoàn thành | 1 | PRIZE
 CO-OP | Chơi được nhiều người cùng lúc | 1 | COOPERATIVE
-HARDCORE | Mức độ khó khiến game thủ phải tập | 1 | DIFFICULTY
-OUTFIT | Vũ khí trang bị chuẩn bị chiến | 1 | GEAR
+HARDCORE | Chế độ khó nhất, chết là mất sạch tiến trình | 1 | DIFFICULTY
+OUTFIT | Bộ trang phục khoác lên cho nhân vật | 1 | GEAR
 GANK | Tập trung sức mạnh nhiều để giết người | 2 | COORDINATED KILL
-FARM | Canh nông kiếm tiền vàng trong game | 2 | EARN RESOURCES
+FARM | Việc cày quái liên tục để gom vàng và kinh nghiệm | 2 | EARN RESOURCES
 ROAM | Di chuyển khắp bản đồ tìm cơ hội | 2 | ROTATE MAP
 ENGAGE | Bắt đầu cuộc chiến với đối thủ | 2 | START FIGHT
-POKE | Tấn công nhỏ chip sát thương từ xa | 2 | CHIP DAMAGE
+POKE | Đòn chọc nhẹ từ xa bào dần máu đối thủ | 2 | CHIP DAMAGE
 AGGRO | Kích hoạt sự chú ý của kẻ địch | 2 | ATTENTION
-PROC | Kích hoạt hiệu ứng xác suất ngẫu nhiên | 2 | TRIGGER
+PROC | Kích hoạt hiệu ứng xác suất ngẫu nhiên | 2
 DEBUFF | Hiệu ứng xấu giảm chỉ số nhân vật | 2
 BUFF | Hiệu ứng tốt tăng chỉ số nhân vật | 2
 SCALING | Tăng sát thương theo chỉ số nhân vật | 2
 COOLDOWN | Thời gian chờ để sử dụng lại kỹ năng | 2
 SKILLSHOT | Kỹ năng phải nhắm bắn chính xác | 2
-COUNTER | Nhân vật tactic có khả năng đánh bại | 2
+COUNTER | Nhân vật khắc chế, chuyên trị một nhân vật khác | 2
 MATCHUP | So sánh lực lượng giữa hai đối thủ | 2
 SUPPORT | Vai trò hỗ trợ bảo vệ đồng đội | 2
 TIER LIST | Bảng xếp hạng nhân vật mạnh yếu | 2
@@ -206,7 +206,7 @@ STREAMER | Người truyền trực tiếp gameplay | 2
 PRO PLAYER | Người chơi chuyên nghiệp kiếm tiền | 2
 VIEWER | Khán giả xem trận đấu livestream | 2
 POSITIONING | Vị trí chiến lược trong chiến | 2
-MAP AWARENESS | Tầm nhìn khả năng nhìn thấy địch | 2 | VISION
+MAP AWARENESS | Tầm nhìn khả năng nhìn thấy địch | 2
 FRONTLINE | Tiền phương hàng đầu chiến | 2
 BACKLINE | Hậu phương hàng sau an toàn | 2
 FOCUS FIRE | Tập trung sức mạnh vào một | 2
@@ -225,7 +225,7 @@ WAVE CLEAR | Tiêu diệt hết đợt quái vật | 3
 CREEP SCORE | Số quân lính tiêu diệt kiếm vàng | 3 | CS
 MACRO | Chiến lược toàn bộ bản đồ game | 3
 MICRO | Kỹ thuật chi tiết cơ chế | 3
-KITE | Quẳng lại chạy tấn công di chuyển | 3
+KITE | Lối vừa lùi vừa bắn khiến đối thủ đuổi theo mà không đánh được | 3
 DISENGAGE | Rút lui thoát khỏi chiến | 3
 TRADE | Đánh trao đổi sát thương đôi | 3
 ALL-IN | Tất tay chi tất cả tài nguyên | 3
@@ -240,8 +240,8 @@ JUNGLE CONTROL | Kiểm soát rừng tiêu diệt | 3
 DUEL | Một cuộc đơn đấu hai người riêng | 1 | ONE ON ONE
 FACTION | Phe nhóm lực lượng trong game | 1 | SIDE
 GUILD | Bang hội hoặc nhóm game thủ cùng | 1 | CLAN
-QUEST | Nhiệm vụ cần hoàn thành để nhận | 1 | MISSION
-CRAFT | Chế tạo vật phẩm từ nguyên liệu | 1 | MAKE
+QUEST | Nhiệm vụ cần hoàn thành để nhận | 1
+CRAFT | Chế tạo vật phẩm từ nguyên liệu | 1
 SHOPKEEPER | Người bán hàng bán vật phẩm | 1 | SELLER
 QUEST GIVER | Người giao nhiệm vụ chính yêu | 1 | NPCQUESTER
 RESPAWN TIMER | Thời gian chờ sinh lại sau chết | 1 | DEATH TIMER
@@ -253,7 +253,7 @@ BOSS FIGHT | Chiến đấu với trùm cuối quan trọng | 2 | RAID
 LOOT TABLE | Bảng tỷ lệ rơi vật phẩm quái | 2 | DROP CHANCE
 RARE DROP | Rơi vật phẩm hiếm kỳ lạ | 2 | RARITY
 OVERPOWERED | Quá mạnh mẻ không cân bằng | 2 | OP
-UNDERPOWERED | Quá yếu kém so với khác | 2 | WEAK
+UNDERPOWERED | Quá yếu kém so với khác | 2
 BALANCE PATCH | Bản cập nhật cân bằng nhân vật | 2 | ADJUSTMENT
 META SHIFT | Thay đổi cách chơi hot hiện tại | 2 | STRATEGY CHANGE
 MECHANICAL KEYBOARD | Bàn phím cơ học chơi game | 2 | GAMING KEYBOARD
