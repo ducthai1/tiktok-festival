@@ -10,14 +10,14 @@ CONSENSUS | Sự đồng thuận | 3
 CONSTRAINT | Sự ràng buộc (hạn chế) | 3 | LIMITATION
 CONTEXT | Bối cảnh | 2
 CONVENTIONAL | Thông thường (truyền thống) | 2 | TRADITIONAL
-CRITERIA | Các tiêu chí | 2 | CRITERION
+CRITERIA | Dạng số nhiều của tiêu chí, cả bộ mục dùng để chấm điểm | 2
 DISCRIMINATION | Sự phân biệt đối xử | 2
 DIVERSE | Đa dạng (tính từ) | 2 | VARIED
 DURABLE | Bền | 2
 ECONOMIC | Thuộc kinh tế | 2
-ENSURE | Đảm bảo | 1 | GUARANTEE
+ENSURE | Đảm bảo | 1
 ESTABLISH | Thành lập | 2 | FOUND
-EVIDENT | Hiển nhiên | 3 | OBVIOUS
+EVIDENT | Hiển nhiên | 3
 EXCESSIVE | Quá mức | 2
 FLUENT | Lưu loát | 1
 IDENTICAL | Giống hệt nhau | 2
@@ -29,14 +29,14 @@ NEGATE | Phủ định (vô hiệu hóa) | 3
 POTENTIAL | Tiềm năng | 1
 PRIORITY | Sự ưu tiên | 1
 RELEVANT | Liên quan, thích đáng | 2
-RETAIN | Giữ lại | 3 | KEEP
+RETAIN | Giữ lại | 3
 SCENARIO | Kịch bản (tình huống giả định) | 2
 STABLE | Ổn định | 1
 TENDENCY | Xu hướng (thiên hướng) | 2
-THEORY | Lý thuyết | 1
+THEORY | Hệ thống giải thích đã qua kiểm chứng nhiều lần | 1
 TRANSITION | Sự chuyển tiếp | 2
 VALID | Hợp lệ (có giá trị) | 2
-WIDESPREAD | Lan rộng, phổ biến | 2
+WIDESPREAD | Trải rộng khắp một vùng hay nhiều nơi cùng lúc | 2
 ADVOCACY | Sự vận động ủng hộ | 3
 AFFLUENT | Giàu có, sung túc | 3 | WEALTHY
 AUTONOMY | Quyền tự chủ | 3
@@ -45,125 +45,125 @@ COMPULSORY | Bắt buộc | 2 | OBLIGATORY
 CONSCIOUS | Có ý thức | 2 | AWARE
 CONTAMINATE | Làm ô nhiễm | 3 | POLLUTE
 CREDIBLE | Đáng tin cậy | 3 | BELIEVABLE
-DECLINE | Sự suy giảm | 2
-DEPLETE | Làm cạn kiệt | 3 | EXHAUST
+DECLINE | Sự đi xuống kéo dài, cũng là động từ từ chối lời mời | 2
+DEPLETE | Làm cạn kiệt | 3
 DISPOSABLE | Dùng một lần rồi bỏ | 2 | SINGLE-USE
 DOMESTIC | Trong nước (nội địa) | 2
 ENFORCE | Thi hành (luật) | 3
 EXPLICIT | Rõ ràng, tường minh | 3 | CLEAR
-HAZARDOUS | Nguy hiểm, độc hại | 3 | DANGEROUS
+HAZARDOUS | Nguy hiểm, độc hại | 3
 IMMENSE | To lớn, bao la | 3 | HUGE, ENORMOUS
 INEVITABLY | Chắc chắn sẽ (không tránh được) | 3
 INSIGHT | Sự thấu hiểu sâu sắc | 3
 MARGINALIZED | Bị gạt ra lề xã hội | 3 | MARGINALISED
-OBSTRUCT | Cản trở | 3 | BLOCK
+OBSTRUCT | Cản trở | 3
 OUTWEIGH | Vượt trội hơn (lợi lớn hơn hại) | 3
 PREVALENCE | Sự phổ biến (tỷ lệ mắc) | 3
 RECIPIENT | Người nhận | 3
-REMEDY | Biện pháp khắc phục | 3
+REMEDY | Phương thuốc hay cách chữa một tình trạng đang xấu | 3
 UNPREDICTABLE | Khó lường trước | 2
-ANNOTATION | Ghi chú | 1 | NOTE
-DISCOURSE | Bài nói, bài luận | 1 | SPEECH, ESSAY
-SEMANTICS | Khoa học về ý nghĩa từ | 1
-METHODOLOGY | Phương pháp nghiên cứu | 1
-INFERENCE | Suy luận | 1 | CONCLUSION, DEDUCTION
-CORRELATION | Mối quan hệ | 1 | RELATIONSHIP
-CRITERION | Tiêu chí | 1 | STANDARD
-GLOSSARY | Từ điển chuyên ngành | 1 | VOCABULARY
-FOREWORD | Lời nói đầu | 1 | INTRODUCTION
-MANUSCRIPT | Bản thảo | 1
-EXTRAPOLATION | Suy rộng từ dữ liệu | 1
-DENOUEMENT | Kết thúc câu chuyện | 1 | ENDING, RESOLUTION
-MONOGRAPH | Luận thuyết chuyên sâu | 1 | TREATISE
-MEMOIR | Hồi ký cá nhân | 1 | AUTOBIOGRAPHY
-ECLOGUE | Bài thơ vùng quê | 1 | PASTORAL
-EPOCH | Thời kỳ lịch sử | 1 | ERA, ERA
+ANNOTATION | Ghi chú | 2 | NOTE
+DISCOURSE | Bài nói, bài luận | 3 | SPEECH
+SEMANTICS | Khoa học về ý nghĩa từ | 3
+METHODOLOGY | Phương pháp nghiên cứu | 3
+INFERENCE | Điều rút ra được từ dữ kiện dù không ai nói thẳng | 3 | DEDUCTION
+CORRELATION | Mối quan hệ | 3
+CRITERION | Một tiêu chí đơn lẻ dạng số ít, gốc tiếng Hy Lạp | 2 | STANDARD
+GLOSSARY | Từ điển chuyên ngành | 3
+FOREWORD | Lời nói đầu | 3 | INTRODUCTION
+MANUSCRIPT | Bản thảo | 2
+EXTRAPOLATION | Suy rộng từ dữ liệu | 4
+DENOUEMENT | Kết thúc câu chuyện | 4 | ENDING
+MONOGRAPH | Luận thuyết chuyên sâu | 4 | TREATISE
+MEMOIR | Hồi ký cá nhân | 2 | AUTOBIOGRAPHY
+ECLOGUE | Bài thơ vùng quê | 4
+EPOCH | Thời kỳ lịch sử | 2 | ERA
 ENERGY | Năng lượng | 1
 ECONOMY | Nền kinh tế | 1
 GOVERNMENT | Chính phủ | 1
 POPULATION | Dân số | 1
 EDUCATION | Giáo dục | 1
 KNOWLEDGE | Kiến thức | 1
-RESEARCH | Việc nghiên cứu | 1 | STUDY
+RESEARCH | Việc nghiên cứu | 1
 INCREASE | Tăng lên | 1 | RISE, GROW, GROWTH
-DECREASE | Giảm xuống | 1 | DECLINE, FALL, DROP, REDUCE
+DECREASE | Động từ thông dụng chỉ số lượng đi xuống | 1 | FALL
 TREND | Xu hướng | 1
 AVERAGE | Mức trung bình | 1 | MEAN
-ADVANTAGE | Ưu điểm, lợi thế | 1 | BENEFIT, PRO, MERIT
+ADVANTAGE | Ưu điểm, lợi thế | 1 | PRO, MERIT
 DISADVANTAGE | Nhược điểm, bất lợi | 1 | DRAWBACK, CON, DOWNSIDE
-OPINION | Ý kiến, quan điểm | 1 | VIEW, VIEWPOINT, POINT OF VIEW
+OPINION | Ý kiến, quan điểm | 1 | POINT OF VIEW
 AGREE | Đồng ý | 1
 DISAGREE | Không đồng ý | 1
-CONCLUSION | Kết luận | 1
-SOLUTION | Giải pháp | 1 | REMEDY
+CONCLUSION | Phần chốt lại ở cuối bài viết hay cuộc tranh luận | 1
+SOLUTION | Cách giải quyết vấn đề, trong hoá học còn là dung dịch | 1
 PROBLEM | Vấn đề (cần giải quyết) | 1 | ISSUE
 CAUSE | Nguyên nhân | 1 | REASON
-IMPROVE | Cải thiện | 1 | ENHANCE
+IMPROVE | Động từ thông dụng nhất chỉ làm cho tốt lên | 1
 DEVELOP | Phát triển (động từ) | 1 | GROW
 DEVELOPMENT | Sự phát triển | 1 | GROWTH
 TRADITION | Truyền thống | 1 | CUSTOM
 PRISON | Nhà tù | 1 | JAIL
-LAW | Luật pháp | 1 | LEGISLATION
+LAW | Luật pháp | 1
 LIFESTYLE | Lối sống | 1 | WAY OF LIFE
-STRESS | Căng thẳng, áp lực | 1 | PRESSURE, TENSION
+STRESS | Căng thẳng, áp lực | 1 | TENSION
 CAREER | Sự nghiệp | 1 | PROFESSION
 UNIVERSITY | Trường đại học | 1 | COLLEGE
 ONLINE LEARNING | Học trực tuyến | 1 | E-LEARNING, ONLINE COURSE
 MEDIA | Truyền thông (báo, đài) | 1 | MASS MEDIA
 SOCIAL MEDIA | Mạng xã hội | 1 | SOCIAL NETWORK
-WASTE | Rác thải | 1 | RUBBISH, GARBAGE, TRASH
+WASTE | Rác thải | 1 | GARBAGE
 TOURISM | Ngành du lịch | 1
 COMMUNITY | Cộng đồng | 1
 SOCIETY | Xã hội | 1
-EXPERIMENT | Thí nghiệm | 1 | TEST
+EXPERIMENT | Thí nghiệm | 1
 GRAPH | Biểu đồ đường | 1 | CHART, LINE GRAPH
 COMPARE | So sánh | 1
 SIMILAR | Tương tự, giống nhau | 1 | ALIKE
-DIFFERENCE | Sự khác biệt | 1 | DISTINCTION
+DIFFERENCE | Chỗ không giống nhau giữa hai thứ, từ thông dụng | 1 | DISTINCTION
 HOWEVER | Tuy nhiên (từ nối) | 1 | BUT, NEVERTHELESS, NONETHELESS
 ALTHOUGH | Mặc dù | 1 | THOUGH, EVEN THOUGH, DESPITE
 FOR EXAMPLE | Ví dụ như (từ nối) | 1 | FOR INSTANCE, SUCH AS
 RESOURCE | Tài nguyên | 2 | RESOURCES
 URBAN | Thuộc thành thị (tính từ) | 2
 RURAL | Thuộc nông thôn (tính từ) | 2
-ANALYSE | Phân tích | 2 | ANALYZE
-SIGNIFICANT | Đáng kể | 2 | CONSIDERABLE, SUBSTANTIAL
+ANALYSE | Phân tích | 2
+SIGNIFICANT | Đáng kể tới mức có ý nghĩa thống kê, đủ để chú ý | 2 | CONSIDERABLE
 PERCENTAGE | Tỷ lệ phần trăm | 2 | PERCENT
 APPROXIMATELY | Xấp xỉ, khoảng chừng | 2 | ABOUT, AROUND, ROUGHLY
 GRADUALLY | Dần dần | 2 | SLOWLY, STEADILY
 ARGUMENT | Lập luận | 2 | REASONING
-CONSEQUENCE | Hậu quả | 2 | RESULT, EFFECT, OUTCOME
-IMPACT | Tác động | 2 | EFFECT, INFLUENCE
-INFLUENCE | Gây ảnh hưởng (động từ) | 2 | AFFECT, IMPACT
-ESSENTIAL | Thiết yếu | 2 | VITAL, NECESSARY, CRUCIAL
-BENEFICIAL | Có lợi (tính từ) | 2 | ADVANTAGEOUS, HELPFUL, USEFUL
-HARMFUL | Có hại | 2 | DAMAGING, DETRIMENTAL
+CONSEQUENCE | Hậu quả | 2 | RESULT, EFFECT
+IMPACT | Danh từ chỉ tác động mạnh để lại hậu quả rõ rệt | 2 | EFFECT
+INFLUENCE | Động từ chỉ việc tác động dần làm đổi suy nghĩ người khác | 2
+ESSENTIAL | Thiết yếu, thiếu nó thì không làm được | 2 | VITAL
+BENEFICIAL | Có lợi (tính từ) | 2 | ADVANTAGEOUS, HELPFUL
+HARMFUL | Có hại nói chung, từ thông dụng | 2 | DAMAGING
 DIVERSITY | Sự đa dạng | 2 | VARIETY
-EMPLOYMENT | Việc làm (có việc làm) | 2 | JOBS, WORK
+EMPLOYMENT | Việc làm (có việc làm) | 2 | JOBS
 UNEMPLOYMENT | Nạn thất nghiệp | 2
 POVERTY | Sự nghèo đói | 2
 WEALTH | Của cải, sự giàu có | 2 | RICHES, FORTUNE
-PUNISHMENT | Hình phạt | 2 | PENALTY
+PUNISHMENT | Hình phạt | 2
 HEALTHCARE | Chăm sóc y tế | 2 | HEALTH CARE
 MENTAL HEALTH | Sức khoẻ tinh thần | 2
 GENERATION | Thế hệ | 2
-ELDERLY | Cao tuổi (người già) | 2 | OLD, AGED, SENIOR
-YOUTH | Giới trẻ, tuổi trẻ | 2 | YOUNG PEOPLE, TEENAGERS
+ELDERLY | Cao tuổi (người già) | 2 | AGED, SENIOR
+YOUTH | Giới trẻ nói chung, hoặc chính giai đoạn tuổi trẻ | 2 | YOUNG PEOPLE, TEENAGERS
 CHILDHOOD | Thời thơ ấu | 2
 ACADEMIC | Thuộc học thuật | 2 | SCHOLARLY
-DEGREE | Bằng đại học | 2 | DIPLOMA, BACHELOR
-SCHOLARSHIP | Học bổng | 2 | GRANT, BURSARY
+DEGREE | Bằng đại học | 2
+SCHOLARSHIP | Học bổng | 2 | BURSARY
 TUITION | Học phí | 2 | TUITION FEE, TUITION FEES, FEES
-LECTURE | Bài giảng ở đại học | 2 | TALK
-ADVERTISING | Ngành quảng cáo | 2 | ADVERTISEMENT, ADS
+LECTURE | Bài giảng ở đại học | 2
+ADVERTISING | Ngành quảng cáo | 2 | ADS
 ADDICTION | Sự nghiện | 2 | DEPENDENCE
 INDIVIDUAL | Cá nhân (một người) | 2 | PERSON
-RESPONSIBILITY | Trách nhiệm | 2 | DUTY
+RESPONSIBILITY | Trách nhiệm | 2
 VOLUNTEER | Tình nguyện viên | 2
 CHARITY | Tổ chức từ thiện | 2
-DONATE | Quyên góp | 2 | CONTRIBUTE, GIVE
+DONATE | Quyên góp | 2
 INVESTMENT | Sự đầu tư | 2
-CONSUMER | Người tiêu dùng | 2 | CUSTOMER
+CONSUMER | Người tiêu dùng | 2
 DEMAND | Nhu cầu (cầu thị trường) | 2
 SUPPLY | Nguồn cung | 2
 PIE CHART | Biểu đồ tròn | 2 | PIE GRAPH
@@ -177,62 +177,62 @@ RENEWABLE | Tái tạo được (năng lượng) | 3
 SUSTAINABLE | Bền vững | 3
 URBANIZATION | Đô thị hoá | 3 | URBANISATION
 FLUCTUATE | Dao động lên xuống | 3
-PROPORTION | Tỷ lệ (phần trên tổng) | 3 | RATIO, SHARE
+PROPORTION | Tỷ lệ (phần trên tổng) | 3 | RATIO
 DRAMATICALLY | Một cách mạnh mẽ, đột ngột | 3 | SHARPLY, SIGNIFICANTLY
-CRUCIAL | Then chốt | 3 | VITAL, ESSENTIAL, KEY
-ENHANCE | Nâng cao (chất lượng) | 3 | IMPROVE, BOOST
+CRUCIAL | Then chốt, quyết định thành bại của cả việc | 3 | VITAL
+ENHANCE | Làm tăng thêm giá trị của thứ vốn đã tốt sẵn | 3
 GLOBALISATION | Toàn cầu hoá | 3 | GLOBALIZATION
-INEQUALITY | Sự bất bình đẳng | 3 | DISPARITY
+INEQUALITY | Tình trạng không công bằng giữa các nhóm trong xã hội | 3
 SEDENTARY | Ít vận động (lối sống) | 3 | INACTIVE
 WELL-BEING | Sự khoẻ mạnh, hạnh phúc | 3 | WELLBEING, WELFARE
-ADOLESCENT | Thanh thiếu niên | 3 | TEENAGER, TEEN, YOUTH
+ADOLESCENT | Người đang tuổi dậy thì, khoảng 13 đến 19 tuổi | 3 | TEENAGER, TEEN
 PARENTING | Việc nuôi dạy con | 3
-CURRICULUM | Chương trình giảng dạy | 3 | SYLLABUS
+CURRICULUM | Chương trình giảng dạy | 3
 ENDANGERED | Có nguy cơ tuyệt chủng | 3 | THREATENED
 HABITAT | Môi trường sống (của loài vật) | 3
 DEFORESTATION | Nạn phá rừng | 3
 CONSERVATION | Sự bảo tồn | 3 | PRESERVATION, PROTECTION
-EMISSION | Khí thải | 3 | EMISSIONS, EXHAUST
+EMISSION | Khí thải | 3 | EMISSIONS
 FOSSIL FUEL | Nhiên liệu hoá thạch | 3 | FOSSIL FUELS
 TAXPAYER | Người đóng thuế | 3
-CONSUMPTION | Sự tiêu thụ | 3 | USE, USAGE
+CONSUMPTION | Sự tiêu thụ | 3 | USAGE
 SHORTAGE | Sự thiếu hụt | 3 | LACK, SCARCITY, DEFICIT
 ABUNDANT | Dồi dào | 3 | PLENTIFUL
 INEVITABLE | Không thể tránh khỏi | 3 | UNAVOIDABLE
 CONTROVERSIAL | Gây tranh cãi | 3 | DEBATABLE
 ETHICAL | Hợp đạo đức | 3 | MORAL
-PERSPECTIVE | Góc nhìn | 3 | VIEWPOINT, POINT OF VIEW, VIEW
+PERSPECTIVE | Góc nhìn | 3 | POINT OF VIEW
 PHENOMENON | Hiện tượng | 3
-HYPOTHESIS | Giả thuyết | 3 | THEORY
-CONTRAST | Sự tương phản | 3 | DIFFERENCE
-DEGRADATION | Sự suy thoái, xuống cấp | 3 | DETERIORATION, DECLINE
+HYPOTHESIS | Phỏng đoán nêu ra để làm thí nghiệm kiểm chứng | 3
+CONTRAST | Sự khác biệt nổi bật khi đặt hai thứ cạnh nhau | 3
+DEGRADATION | Sự xuống cấp hư hỏng dần của môi trường hay vật chất | 3 | DETERIORATION
 AFFORDABLE | Giá cả phải chăng | 2 | REASONABLE, INEXPENSIVE
-ACCESSIBLE | Dễ dàng tiếp cận | 2 | REACHABLE, AVAILABLE
+ACCESSIBLE | Dễ dàng tiếp cận | 2 | REACHABLE
 PERSUASIVE | Có tính thuyết phục | 2 | CONVINCING
 PROLIFIC | Năng suất cao, phong phú | 3 | PRODUCTIVE, FRUITFUL
 REVOLUTION | Cuộc cách mạng | 2 | UPRISING
-MORTALITY | Tỷ lệ tử vong | 3 | MORTALITY RATE, DEATH RATE
+MORTALITY | Tỷ lệ tử vong | 3 | DEATH RATE
 LITERACY | Trình độ biết chữ (biết đọc biết viết) | 3
-OBSTACLE | Trở ngại, chướng ngại vật | 2 | BARRIER, HINDRANCE, IMPEDIMENT
+OBSTACLE | Vật hay việc chắn ngang đường, từ thông dụng | 2 | BARRIER
 VULNERABLE | Dễ bị tổn thương | 3 | SUSCEPTIBLE, EXPOSED
-PREDOMINANT | Chiếm ưu thế, chủ yếu | 3 | DOMINANT, MAIN, PRIMARY
-DETERIORATE | Xấu đi, suy giảm | 3 | WORSEN, DECLINE
-PREVALENT | Phổ biến, thịnh hành | 3 | WIDESPREAD, COMMON
-EXACERBATE | Làm trầm trọng thêm | 3 | WORSEN, AGGRAVATE
-SUBSTANTIATE | Chứng minh, xác minh | 3 | PROVE, VERIFY, CONFIRM
-MITIGATE | Giảm nhẹ, làm dịu bớt | 3 | REDUCE, LESSEN, ALLEVIATE
-AMELIORATE | Cải thiện (tình hình xấu) | 3 | IMPROVE, BETTER
+PREDOMINANT | Chiếm phần lớn nhất về số lượng trong một nhóm | 3 | MAIN, PRIMARY
+DETERIORATE | Động từ chỉ chất lượng hay sức khoẻ xấu dần đi | 3 | WORSEN
+PREVALENT | Đang thịnh hành phổ biến trong một thời kỳ nhất định | 3 | COMMON
+EXACERBATE | Làm trầm trọng thêm | 3 | WORSEN
+SUBSTANTIATE | Chứng minh, xác minh | 3
+MITIGATE | Làm giảm mức độ nghiêm trọng của rủi ro hay thiệt hại | 3 | LESSEN
+AMELIORATE | Từ trang trọng chỉ làm dịu bớt một tình trạng tồi tệ | 3 | BETTER
 PARADIGM | Mô hình, mẫu hình | 3 | MODEL, PATTERN
-COMPREHENSIVE | Toàn diện, bao quát | 3 | THOROUGH, COMPLETE, ALL-INCLUSIVE
+COMPREHENSIVE | Toàn diện, bao quát | 3 | THOROUGH, COMPLETE
 COGNITIVE | Thuộc về nhận thức | 3 | MENTAL
 DEMOGRAPHIC | Nhân khẩu học (thông tin dân số) | 3 | DEMOGRAPHICS
-STIGMA | Định kiến, vết nhơ xã hội | 3 | SHAME, DISGRACE
+STIGMA | Định kiến, vết nhơ xã hội | 3 | DISGRACE
 DEPRIVATION | Sự thiếu thốn, tước đoạt | 3 | PRIVATION, HARDSHIP
 UNPRECEDENTED | Chưa từng có tiền lệ trước đây | 3
-SUBSTANTIAL | Đáng kể / lớn lao | 3
+SUBSTANTIAL | Lớn về khối lượng hoặc giá trị, nhiều một cách chắc chắn | 3
 FEASIBLE | Khả thi / có thể thực hiện được | 3
-DETRIMENTAL | Gây hại / có hại nghiêm trọng | 3
-DOMINANT | Chiếm ưu thế / thống trị | 3
+DETRIMENTAL | Từ trang trọng chỉ gây hại nghiêm trọng về lâu dài | 3
+DOMINANT | Mạnh nhất, áp đảo và chi phối những cái còn lại | 3
 IMPLEMENT | Triển khai / thi hành chính sách | 3
 PERSISTENT | Kiên trì / dai dẳng | 3
 PROFOUND | Sâu sắc / tác động mạnh mẽ | 3
@@ -241,7 +241,7 @@ VERSATILE | Đa năng / linh hoạt | 3
 DISCREPANCY | Sự khác biệt / sự lệch nhau | 3
 EQUIVALENT | Tương đương / giá trị như nhau | 3
 CONTEMPORARY | Hiện đại / đương đại | 3
-DISPARITY | Sự chênh lệch rõ rệt | 3
+DISPARITY | Khoảng cách chênh lệch rõ rệt giữa hai con số hay hai bên | 3
 MANDATORY | Bắt buộc tuân thủ | 3
 OBSOLETE | Lạc hậu / lỗi thời | 3
 PLAUSIBLE | Hợp lý / đáng tin | 3
@@ -280,7 +280,7 @@ TANGIBLE | Hữu hình / có thể chạm được | 3
 UBIQUITOUS | Phổ biến ở khắp mọi nơi | 3
 ZEALOUS | Hăng hái / nhiệt huyết | 3
 ADVOCATE | Ủng hộ / tán thành | 2
-ALLEVIATE | Làm nhẹ bớt / giảm bớt | 3
+ALLEVIATE | Làm dịu bớt cơn đau hay nỗi khổ | 3
 COLLABORATE | Cộng tác / hợp tác | 2
 ENDEAVOR | Nỗ lực / cố gắng | 3
 APPREHENSIVE | Cảm giác lo âu băn khoăn về một điều gì đó sắp xảy đến | 3
@@ -320,7 +320,7 @@ MARGINAL | Thuộc về phần rìa, mép hoặc chênh lệch nhỏ | 3
 SALUBRIOUS | Lành mạnh bổ ích tốt cho sức khỏe cơ thể | 4
 PERVASIVE | Lan tỏa tỏa khắp len lỏi vào mọi ngóc ngách xã hội | 3
 CATALYST | Chất xúc tác đẩy nhanh tiến trình thay đổi | 2
-IMPEDIMENT | Chướng ngại vật cản trở bước tiến phía trước | 3
+IMPEDIMENT | Từ trang trọng chỉ cái làm chậm bước tiến, cũng là tật nói lắp | 3
 DETERRENT | Biện pháp răn đe ngăn chặn hành vi xấu | 3
 SURMOUNT | Vượt qua khắc phục được khó khăn trở ngại lớn | 3
 EXEMPLIFY | Minh họa làm gương mẫu tiêu biểu cho một luận điểm | 3
