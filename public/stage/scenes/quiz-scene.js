@@ -574,10 +574,10 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
         audio.speak(`${fx.nickname} đổi sang ${fx.label}${fx.after ? ' sau phần luyện nghe' : ''}!`, 'story');
       } else if (fx.kind === 'quizFollow') {
         audio.play('chime');
-        hud.toast(`💖 Follow → +${fx.points} điểm · mục tiêu ${fx.count}/${fx.goal}`, { title: fx.nickname, image: fx.avatar, ms: 3500 });
+        hud.thanks(`💖 Cảm ơn đã follow · +${fx.points} điểm · ${fx.count}/${fx.goal}`, { title: fx.nickname, image: fx.avatar, kind: 'follow' });
       } else if (fx.kind === 'quizShare') {
         audio.play('coin');
-        hud.toast(fx.energy ? `↗ Share → +${fx.energy} năng lượng` : '↗ Cảm ơn bạn đã chia sẻ!', { title: fx.nickname, image: fx.avatar, ms: 3500 });
+        hud.thanks(fx.energy ? `↗ Cảm ơn đã chia sẻ · +${fx.energy} ❤` : '↗ Cảm ơn đã chia sẻ!', { title: fx.nickname, image: fx.avatar, kind: 'share' });
       } else if (fx.kind === 'quizEnergy') {
         audio.play(fx.reward === 'diamond' ? 'airhorn' : 'chime');
         if (fx.reward === 'diamond') {

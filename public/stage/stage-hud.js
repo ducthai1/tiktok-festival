@@ -185,6 +185,24 @@ export function createHud() {
         if (combos.get(key) === combo) combos.delete(key);
       }, ms);
     },
+    /**
+     * Cảm ơn follow / share: khung dịu bên TRÁI, không đè bảng điểm bên phải như toast.
+     * Cộng dồn tối đa 3 hàng, hàng mới lên trên, hàng cũ tự rụng.
+     */
+    thanks(text, { image = '', ms = 5200, title = '', kind = 'share' } = {}) {
+      const root = $('thanks');
+      if (!root) return;
+      const node = el('div', `thanks-row thanks-${kind}`);
+      if (image) node.append(avatarNode(image));
+      toastContent(node, title, document.createTextNode(text));
+      root.prepend(node);
+      while (root.children.length > 3) root.lastChild.remove();
+      setTimeout(() => {
+        node.classList.add('out');
+        setTimeout(() => node.remove(), 400);
+      }, ms);
+    },
+
     toast(text, { gold = false, image = '', ms = 4200, title = '' } = {}) {
       const node = el('div', `toast${gold ? ' gold' : ''}`);
       if (image) node.append(avatarNode(image));

@@ -140,6 +140,18 @@ body { font-family: var(--font); color: var(--ink); }
 #welcome.group .welcome-text { text-align: center; }
 #welcome.group .name { font-size: 22px; white-space: normal; line-height: 1.35; -webkit-text-fill-color: #fff3c4; color: #fff3c4; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; }
 #welcome .welcome-avatars .ava.more { display: grid; place-items: center; font-size: 22px; font-weight: 900; color: #3a2200; background: linear-gradient(135deg, #ffe08a, #c8902a); }
+/* Cảm ơn follow / share: khung DỊU bên TRÁI, cộng dồn tối đa 3 hàng (chủ kênh 17/11/2026).
+   Trước đây dùng toast ở cột phải nên đè lên bảng điểm — nay tách hẳn sang trái. */
+#thanks { position: absolute; z-index: 1; left: var(--safe-x); display: flex; flex-direction: column; gap: 6px; pointer-events: none; }
+.thanks-row { display: flex; align-items: center; gap: 10px; padding: 5px 14px; border-radius: 15px; font-size: 20px; font-weight: 800;
+  background: linear-gradient(90deg, rgba(26, 74, 62, 0.88), rgba(22, 52, 78, 0.8)); border: 2px solid rgba(150, 240, 200, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32); animation: slide-in 300ms ease-out; transition: opacity 400ms ease; }
+.thanks-row.thanks-follow { background: linear-gradient(90deg, rgba(92, 32, 70, 0.88), rgba(56, 30, 86, 0.8)); border-color: rgba(255, 170, 215, 0.45); }
+.thanks-row.out { opacity: 0; }
+.thanks-row img { width: 32px; height: 32px; border-radius: 9px; }
+.thanks-row .toast-name { font-size: 17px; opacity: 0.92; }
+.thanks-row .toast-text { -webkit-line-clamp: 1; }
+
 #welcome-ticker { position: absolute; left: 50%; top: 806px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px; }
 .ticker-line { padding: 6px 14px; border-radius: 12px; background: rgba(10, 6, 18, 0.72); border: 1px solid var(--panel-line); font-size: 21px; font-weight: 700; max-width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; animation: slide-in-right 260ms ease-out; }
 @keyframes slide-in-right { from { transform: translateX(40px); opacity: 0; } to { transform: none; opacity: 1; } }
