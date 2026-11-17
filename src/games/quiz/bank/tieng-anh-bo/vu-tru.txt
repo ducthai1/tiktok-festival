@@ -48,7 +48,7 @@ SPACE TELESCOPE | Kính thiên văn trong vũ trụ tiếng Anh là gì? | 2
 RADIO TELESCOPE | Kính viễn vọng vô tuyến tiếng Anh là gì? | 3
 OBSERVATORY | Đài quan sát thiên văn tiếng Anh là gì? | 2 | OBSERVATORIES
 ARECIBO OBSERVATORY | Kính viễn vọng vô tuyến lòng chảo khổng lồ từng đặt tại Puerto Rico tiếng Anh là gì? | 3
-SOUTHERN CROSS | Chòm sao Nam th十字 tiếng Anh là gì? | 2
+SOUTHERN CROSS | Chòm sao Nam Thập Tự tiếng Anh là gì? | 2
 POLARIS | Sao Bắc Đẩu tiếng Anh là gì? | 2
 SIRIUS | Sao Thiên Sửu (sao sáng nhất) tiếng Anh là gì? | 2
 BETELGEUSE | Sao Bê-tê-jun tiếng Anh là gì? | 2
@@ -321,7 +321,7 @@ LIBRA | Cung thiên bình tiếng Anh là gì? | 2
 SCORPIO | Cung bò cạp tiếng Anh là gì? | 1
 SAGITTARIUS | Cung nhân mã tiếng Anh là gì? | 2
 CAPRICORN | Cung ma kết tiếng Anh là gì? | 1
-AQUARIUS | Cung bình瓶 tiếng Anh là gì? | 2
+AQUARIUS | Cung Bảo Bình tiếng Anh là gì? | 2
 PISCES | Cung song cá tiếng Anh là gì? | 1
 ARIES | Cung chiên tiếng Anh là gì? | 1
 ZODIAC | Bộ 12 cung hoàng đạo tiếng Anh là gì? | 2
@@ -425,7 +425,6 @@ DARK ENERGY | Năng lượng tối đẩy vũ trụ tiếng Anh là gì? | 2
 EXPANSION | Sự giãn nở vũ trụ tiếng Anh là gì? | 1
 UNIVERSE | Vũ trụ bao la vô tận tiếng Anh là gì? | 1 | TOÀN VŨ TRỤ
 INFINITE | Không có giới hạn tiếng Anh là gì? | 1
-MULTIVERSSE | Nhiều vũ trụ song song tiếng Anh là gì? | 3 | ĐA VŨ TRỤ
 RELATIVITY | Lý thuyết tương đối của Einstein tiếng Anh là gì? | 3
 GRAVITY WAVE | Sóng hấp dẫn từ đối tượng tiếng Anh là gì? | 3
 EINSTEIN | Nhà khoa học thiên tài tiếng Anh là gì? | 1

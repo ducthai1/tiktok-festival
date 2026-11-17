@@ -129,7 +129,6 @@ SUFFICIENT | Đủ, đáp ứng nhu cầu | 2 | ENOUGH, ADEQUATE
 SUPPLEMENT | Bổ sung thêm | 3 | ADDITION, COMPLEMENT
 SURPASS | Vượt trội hơn hẳn | 3 | EXCEED, BEAT
 SYNTHESIS | Sự tổng hợp, kết hợp lại | 4 | COMBINATION, BLEND
-TARRIFF | Thuế quan nhập khẩu | 3 | TAX, DUTY
 TERMINATE | Chấm dứt, kết thúc hợp đồng | 3 | END, CANCEL
 TOLERANCE | Sự khoan dung, sức chịu đựng | 3 | ENDURANCE, PATIENCE
 TRANSCEND | Vượt qua giới hạn | 4 | EXCEED, SURPASS

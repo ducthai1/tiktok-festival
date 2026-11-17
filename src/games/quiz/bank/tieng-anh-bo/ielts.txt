@@ -275,7 +275,7 @@ REDUNDANT | Dư thừa / không cần thiết | 3 | DƯ THỪA
 SPECULATIVE | Có tính suy đoán | 3 | SUY ĐOÁN
 SUBSEQUENT | Xảy ra sau đó | 3 | SAU ĐÓ
 SUPERFICIAL | Hời hợt / nông cạn | 3 | HỜI HỢT
-SYPNOTIC | Có tính thôi miên | 3 | THÔI MIÊN
+HYPNOTIC | Có tính thôi miên | 3 | THÔI MIÊN
 TANGIBLE | Hữu hình / có thể chạm được | 3 | HỮU HÌNH
 UBIQUITOUS | Phổ biến ở khắp mọi nơi | 3 | PHỔ BIẾN
 ZEALOUS | Hăng hái / nhiệt huyết | 3 | HĂNG HÁI

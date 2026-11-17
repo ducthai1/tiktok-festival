@@ -657,7 +657,7 @@ REIGN | Trị vì ngự trị vương triều tiếng Anh là gì? | 3 | TRỊ V
 REJOICE | Vui mừng hân hoan reo hò tiếng Anh là gì? | 2 | VUI MỪNG, HÂN HOAN
 RELINQUISH | Buông tay từ bỏ quyền lợi ngai vàng tiếng Anh là gì? | 3 | TỪ BỎ, BUÔNG BỎ
 RELOCATE | Di dời dọn đến chỗ ở mới tiếng Anh là gì? | 2 | DI DỜI, DỌN NHÀ
-REPELL | Đẩy lùi xua đuổi côn trùng kẻ thù tiếng Anh là gì? | 2 | XUA ĐUỔI, ĐẨY LÙI
+REPEL | Đẩy lùi xua đuổi côn trùng kẻ thù tiếng Anh là gì? | 2 | XUA ĐUỔI, ĐẨY LÙI
 REPLENISH | Làm đầy lại bổ sung thêm kho dự trữ tiếng Anh là gì? | 3 | BỔ SUNG, LÀM ĐẦY
 REPRESS | Kìm nén cảm xúc trong lòng tiếng Anh là gì? | 3 | KÌM NÉN
 REPRODUCE | Sinh sản hoặc tái tạo bản sao tiếng Anh là gì? | 2 | SINH SẢN, TÁI TẠO
@@ -806,8 +806,6 @@ HEATWAVE | Đợt nắng nóng gay gắt oi bức mùa hè tiếng Anh là gì? 
 COLD SPELL | Đợt không khí lạnh rét căm căm tràn về tiếng Anh là gì? | 2 | ĐỢT RÉT, ĐỢT LẠNH
 LEAP | Nhảy vọt qua con rãnh nhỏ bước nhảy xa tiếng Anh là gì? | 2 | NHẢY VỌT, BƯỚC NHẢY
 TIPTOE | Đi nhón chân rón rén nhẹ nhàng không phát ra tiếng tiếng Anh là gì? | 2 | ĐI NHÓN CHÂN, RÓN RÉN
-HICCOUP | Nấc cụt từng cơn do uống nước vội tiếng Anh là gì? | 2 | NẤC CỤT, HICCUP
-SNOCK | Ngáy khò khò khi ngủ say sưa tiếng Anh là gì? | 1 | NGÁY, SNORE
 WINK | Nháy một bên mắt đầy ngụ ý hài hước tiếng Anh là gì? | 1 | NHÁY MẮT
 SHAKE HEAD | Lắc đầu từ chối không chấp nhận tiếng Anh là gì? | 1 | LẮC ĐẦU
 CRISP | Giòn rụm quả táo tươi cắn vào giòn tan tiếng Anh là gì? | 2 | GIÒN RỤM, GIÒN TAN
