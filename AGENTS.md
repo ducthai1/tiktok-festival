@@ -84,6 +84,7 @@ Bảng "cần tìm dòng nào" ở mục *Nhật ký (log)* trong `README.md`. T
 - `[live] trạng thái →` — lúc nào mất / có lại kết nối, vì sao.
 - `TikTok báo live TẠM DỪNG / KẾT THÚC`, `TikTok đóng kết nối: mã …`, `canh chừng: … không có dữ liệu`, `TikTok vẫn trả về phòng cũ`.
 - `kết nối thất bại (ratelimit|blocked|offline|network)` + `lần N trong ngày` — có cạn lượt ký Euler không.
+- `[quà] luân chuyển vòng N: …` — bảng quà tự đổi giá (20 phút/vòng, `src/games/quiz/gift-rotation.js`), kèm món hot nhất buổi.
 - `[health] … p99` — server có nghẽn khi phòng đông không. `[live] 60 giây qua: …` — lưu lượng từng phút.
 
 Kết nối đã **tự hồi phục** (`src/live/live-connection-manager.js`, có test ở `test/live-connection.test.js`): live tạm dừng → thử lại 4 giây;

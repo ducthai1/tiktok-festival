@@ -93,6 +93,20 @@
             Doughnut 30 xu → 40 câu). Tắt công tắc để ẩn tạm (khuyến mãi). Giá luôn là giá thật TikTok; người xem tặng món rẻ hơn giá ghi thì
             không đổi. Bảng trên màn hình hiện 7 món mỗi trang theo đúng thứ tự dưới đây.</p>
           <div id="gifts-status" class="status idle" hidden></div>
+
+          <div id="rotate-box" class="rotate-box">
+            <div class="row rotate-head">
+              <label class="toggle"><input type="checkbox" id="rotate-on" title="Bật / tắt tự luân chuyển"></label>
+              <b>Tự luân chuyển giá quà · 20 phút/vòng</b>
+              <span id="rotate-round" class="badge seen" hidden></span>
+              <button type="button" id="rotate-now" class="ghost small">⟳ Đổi ngay</button>
+            </div>
+            <p class="muted small">Mỗi vòng: ô đang giữ <b>món được tặng nhiều lượt nhất buổi này</b> đổi thành <b>Heart Me 1 xu</b>
+              (quà tham gia CLB người hâm mộ) · 4 ô <b>Tổng hợp / Dễ / Thường / Khó</b> luôn ≤ 5 xu · các ô còn lại đổi tự do nhưng
+              lệch giá gốc quá 2 vòng thì vòng thứ 3 phải quay về đúng giá cũ. Chỉ chạy khi đang live.</p>
+            <div id="rotate-hot" class="rotate-hot"></div>
+          </div>
+
           <div id="gift-rules" class="rules"></div>
           <button type="button" id="gifts-add" class="ghost wide">＋ Thêm món quà</button>
         </div>

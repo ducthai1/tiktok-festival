@@ -174,12 +174,32 @@ export function setupGiftEditor({ $, socket, toast }) {
   $('gift-picker').addEventListener('click', (e) => { if (e.target === $('gift-picker')) closePicker(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !$('gift-picker').hidden) closePicker(); });
 
+  /** Khối tự luân chuyển giá quà: công tắc, số vòng đã chạy, và món đang được tặng nhiều nhất buổi này. */
+  function renderRotate(rot) {
+    $('rotate-on').checked = Boolean(rot?.enabled);
+    $('rotate-round').hidden = !rot?.round;
+    if (rot?.round) $('rotate-round').textContent = `đã đổi ${rot.round} vòng`;
+    const box = $('rotate-hot');
+    box.replaceChildren();
+    const hot = rot?.hot || [];
+    if (!hot.length) {
+      box.append(el('span', 'none', 'Buổi này chưa ai tặng quà — chưa có món nào để tính "hot nhất".'));
+      return;
+    }
+    for (const g of hot) {
+      const chip = el('span', 'hot');
+      chip.append(el('b', '', g.name), el('span', 'n', `${g.count} lượt · ${g.coins} 💎${g.to ? ` · ${targetOf(g.to)?.label || g.to}` : ''}`));
+      box.append(chip);
+    }
+  }
+
   function apply(view) {
     options = view.options || [];
     targets = view.targets || [];
     rules = (view.rules || []).map((r) => ({ to: r.to, giftId: String(r.gift?.id || ''), questions: r.questions, enabled: r.enabled !== false }));
     setDirty(false);
     render();
+    renderRotate(view.rotate);
     status(view.custom ? '' : 'Đang dùng bảng quà mặc định — chỉnh rồi bấm "Lưu & áp dụng".', 'idle');
   }
 
@@ -189,6 +209,24 @@ export function setupGiftEditor({ $, socket, toast }) {
     if (reply.ok) apply(reply);
     else toast(reply.message || 'Không tải được bảng quà', true);
   }
+
+  $('rotate-on').addEventListener('change', async () => {
+    const on = $('rotate-on').checked;
+    const reply = await socket.request({ t: 'setGiftRotate', on });
+    if (!reply.ok) {
+      $('rotate-on').checked = !on;
+      return toast(reply.message || 'Không đổi được', true);
+    }
+    apply(reply);
+    toast(reply.message);
+  });
+  $('rotate-now').addEventListener('click', async () => {
+    if (!confirm('Đổi bảng quà ngay bây giờ? Giá các ô trên màn hình sẽ thay đổi với người xem.')) return;
+    const reply = await socket.request({ t: 'rotateNow' });
+    if (!reply.ok) return toast(reply.message || 'Không đổi được', true);
+    apply(reply);
+    status(`✓ ${reply.message}`, 'ok');
+  });
 
   $('gifts-add').addEventListener('click', () => {
     rules.push({ to: 'nghe', giftId: '', questions: targetOf('nghe')?.questions || 40, enabled: true });

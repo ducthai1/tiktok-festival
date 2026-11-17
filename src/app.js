@@ -19,6 +19,7 @@ import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
+import { ROTATE_MS, emptyRotation, rotateGifts } from './games/quiz/gift-rotation.js';
 import { ORDER_VERSION, defaultEnglishRules, upgradeSavedRules } from '../public/shared/english-sets.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
@@ -88,6 +89,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const rooms = createRoomTracker(path.join(dataDir, 'live-room.json')); // phòng live gần nhất → biết khi nào sang phòng mới
   const sessions = createSessionLog(path.join(dataDir, 'logs')); // mỗi buổi live một file log riêng, giữ lâu hơn log ngày
   sessions.setup();
+  // số LƯỢT tặng từng món trong buổi live này (không tính kim cương) → biết món nào đang được chọn nhiều nhất.
+  // Chỉ trong bộ nhớ, xoá khi sang phòng live mới: "đang hot" phải là hot của buổi này.
+  let giftCounts = Object.create(null);
+  let rotateAt = 0;
   // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
   // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
@@ -209,6 +214,36 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     sockets.broadcast({ t: 'gifts', tiers: giftTiers, sampleGifts });
   }
 
+  /**
+   * Một vòng luân chuyển giá quà (20 phút / vòng, chỉ khi chủ kênh bật ở tab 🎁 Quà).
+   * Luật nằm trong gift-rotation.js; ở đây chỉ lo lấy dữ liệu, lưu, và báo ra màn hình.
+   * Bọc try/catch: đang live thì một lỗi ở đây KHÔNG được làm chết server.
+   */
+  function runGiftRotation() {
+    try {
+      const options = giftOptions(giftCatalog);
+      const current = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
+      const { rules, state, changes } = rotateGifts({ rules: current, options, counts: giftCounts,
+        state: settings.englishRotation || emptyRotation() });
+      if (!changes.length) {
+        updateSettings({ englishRotation: state });
+        return;
+      }
+      const normalized = normalizeRules(rules, options); // chốt an toàn: bảng trùng món thì ném lỗi, không áp dụng
+      updateSettings({ englishGifts: normalized, englishGiftsOrder: ORDER_VERSION, englishRotation: state });
+      hub.setEnglishRules(normalized);
+      pushState(true);
+      const heart = changes.find((c) => c.fanclub);
+      emitFx(hub.activeId(), [{ kind: 'toast', text: heart
+        ? `🎁 Bảng quà vừa đổi · ${heart.label} giờ chỉ ${heart.coins} xu (${heart.name})`
+        : '🎁 Bảng quà vừa đổi giá — xem lại bảng bên dưới!' }]);
+      log.info('quà', `luân chuyển vòng ${state.round}: ${changes.map((c) => `${c.label} ${c.from}→${c.name} ${c.coins}xu`).join(', ')}`
+        + (state.hot ? ` · hot nhất buổi: ${state.hot.name || state.hot.id} (${state.hot.count} lượt)` : ' · chưa ai tặng quà'));
+    } catch (error) {
+      console.warn('[quà] không luân chuyển được bảng quà:', error.message);
+    }
+  }
+
   // Người xem vừa xuất hiện (vào phòng / bình luận / tim…) ở Sàn Nhảy → tạo sẵn câu "Cảm ơn <tên>, đã follow!" bằng đúng
   // giọng màn hình sẽ dùng → lúc họ follow, giọng đọc phát ngay cùng hiệu ứng thay vì trễ 3–4 giây chờ tạo giọng.
   const followPrepared = new Set();
@@ -232,6 +267,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       prefetchFollowThanks(event);
       // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
       if (event.type === 'gift' && !event.simulated && event.gift.diamondsEach > 0) {
+        const gid = String(event.gift.id || '');
+        if (gid) giftCounts[gid] = (giftCounts[gid] || 0) + (Number(event.gift.count) || 1);
         const known = giftCatalog.find((g) => g.name === event.gift.name);
         // món mới, món nay mới có ảnh, hoặc giá TikTok báo khác giá đã lưu (giá thật thắng)
         if (!known || (!known.image && event.gift.pictureUrl) || known.coins !== event.gift.diamondsEach) {
@@ -261,6 +298,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       // nối vào PHÒNG LIVE MỚI (room id khác phòng trước) → tự xoá thông số phòng cũ; giữ bảng xếp hạng (tự xoá người im lặng 2 tiếng)
       if (status.state === 'connected' && rooms.isNew(status.roomId)) {
         hub.resetRoom();
+        giftCounts = Object.create(null); // "món hot" tính lại từ đầu cho buổi mới
+        rotateAt = Date.now() + ROTATE_MS;
         log.info('live', `phòng live MỚI ${status.roomId} → đã xoá thông số phòng cũ (năng lượng tim, câu vàng/chớp nhoáng chờ, mốc follow,`
           + ' lượt share, chế độ đề) — giữ bảng xếp hạng + đại sứ share');
         emitFx(hub.activeId(), [{ kind: 'toast', text: '🔴 Phòng live mới — năng lượng & thử thách bắt đầu lại!' }]);
@@ -275,7 +314,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let adminHandler = null;
   const handleAdmin = async (msg) => {
     adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
-      getGiftCatalog: () => giftCatalog, saveBackup });
+      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
       log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);
@@ -419,6 +458,15 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const timer = setInterval(() => {
     emitFx(hub.activeId(), hub.tick());
     pushState();
+    // luân chuyển giá quà: chỉ chạy khi chủ kênh đã bật VÀ đang thật sự live (phòng vắng thì đổi vô nghĩa)
+    if (settings.englishRotate && live.status().state === 'connected') {
+      const now = Date.now();
+      if (!rotateAt) rotateAt = now + ROTATE_MS;
+      else if (now >= rotateAt) {
+        rotateAt = now + ROTATE_MS;
+        runGiftRotation();
+      }
+    }
   }, tickMs);
 
   if (config.tiktokUsername) {

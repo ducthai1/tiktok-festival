@@ -28,12 +28,24 @@ export function presentPeople(state) {
 let testSeq = 0;
 
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
-  getGiftCatalog = () => [], saveBackup = () => {} }) {
+  getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {} }) {
+  /** Món được tặng nhiều LƯỢT nhất buổi live này → tab 🎁 Quà hiện ra để chủ kênh thấy món nào đang hot. */
+  const hotGifts = () => {
+    const byId = new Map(getGiftCatalog().map((g) => [String(g.id), g]));
+    const rules = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
+    for (const r of rules) if (r.gift?.id) byId.set(String(r.gift.id), { ...byId.get(String(r.gift.id)), ...r.gift });
+    return Object.entries(getGiftCounts())
+      .map(([id, count]) => ({ id, count: Number(count), name: byId.get(String(id))?.name || `#${id}`,
+        coins: Number(byId.get(String(id))?.coins) || 0, to: rules.find((r) => String(r.gift?.id) === String(id))?.to || '' }))
+      .sort((a, b) => b.count - a.count).slice(0, 8);
+  };
   // tab 🎁 Quà: luật quà tab tiếng Anh đang dùng (chưa chỉnh thì mặc định) + danh sách quà để chọn + các chế độ
   const englishGiftsView = () => ({
     rules: settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules(),
     custom: Boolean(settings.englishGifts?.length),
     options: giftOptions(getGiftCatalog()),
+    // tự luân chuyển giá quà 20 phút/vòng (gift-rotation.js) — tắt sẵn, chủ kênh tự bật
+    rotate: { enabled: Boolean(settings.englishRotate), round: Number(settings.englishRotation?.round) || 0, hot: hotGifts() },
     targets: ORDER.map((to) => ({ to, icon: ENGLISH_TARGETS[to].icon, label: ENGLISH_TARGETS[to].label, kind: ENGLISH_TARGETS[to].kind,
       questions: defaultQuestionsFor(to) }))
   });
@@ -49,6 +61,15 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       const on = rules.filter((r) => r.enabled);
       console.log(`[admin] luật quà tab tiếng Anh: ${on.map((r) => `${r.gift.name} ${r.gift.coins}xu→${r.to}${r.questions ? `(${r.questions}c)` : ''}`).join(', ')}`);
       return { message: `Đã áp dụng ${on.length} món quà lên màn hình`, ...englishGiftsView() };
+    },
+    setGiftRotate(msg) {
+      updateSettings({ englishRotate: Boolean(msg.on) });
+      console.log(`[admin] tự luân chuyển giá quà: ${msg.on ? 'BẬT' : 'TẮT'}`);
+      return { message: msg.on ? 'Đã bật tự luân chuyển giá quà (20 phút/vòng)' : 'Đã tắt tự luân chuyển giá quà', ...englishGiftsView() };
+    },
+    rotateNow() {
+      rotateGiftsNow();
+      return { message: 'Đã luân chuyển bảng quà ngay', ...englishGiftsView() };
     },
     resetEnglishGifts() {
       updateSettings({ englishGifts: null });

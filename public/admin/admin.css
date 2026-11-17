@@ -231,3 +231,14 @@ body.teacher .brand .logo::before { content: '💐'; font-size: 22px; }
 body.teacher .card { border-top: 3px solid rgba(255, 156, 207, 0.8); }
 body.teacher .tabs button.active { background: linear-gradient(135deg, #ff5fa2, #9b5de5); color: #fff; }
 body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
+
+/* Tab 🎁 Quà: khối tự luân chuyển giá quà + bảng món đang hot của buổi live */
+.rotate-box { margin: 10px 0 14px; padding: 10px 12px; border: 1px solid rgba(122, 92, 255, 0.35); border-radius: 12px; background: rgba(122, 92, 255, 0.07); }
+.rotate-head { align-items: center; gap: 10px; }
+.rotate-head b { flex: 1; }
+.rotate-hot { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.rotate-hot .hot { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 999px; font-size: 12px;
+  background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1); }
+.rotate-hot .hot:first-child { background: rgba(255, 179, 71, 0.18); border-color: rgba(255, 179, 71, 0.45); font-weight: 700; }
+.rotate-hot .hot .n { opacity: 0.7; }
+.rotate-hot .none { font-size: 12px; opacity: 0.6; }
