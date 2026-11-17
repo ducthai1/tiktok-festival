@@ -1,4 +1,80 @@
-# Bộ đề · TOEIC
+# Tiếng Anh · TOEIC
+ADJOURN | Tạm hoãn cuộc họp tiếng Anh là gì? | 3
+ARRANGEMENT | Sự sắp xếp tiếng Anh là gì? | 2
+ASSEMBLY LINE | Dây chuyền lắp ráp tiếng Anh là gì? | 3
+ATTENDEE | Người tham dự tiếng Anh là gì? | 2
+AUCTION | Cuộc đấu giá tiếng Anh là gì? | 3
+BOARDROOM | Phòng họp hội đồng tiếng Anh là gì? | 2
+BOOKKEEPING | Ghi sổ kế toán tiếng Anh là gì? | 3
+BROKER | Người môi giới tiếng Anh là gì? | 3
+WHOLESALE | Bán buôn (bán sỉ) tiếng Anh là gì? | 2 | BULK
+RETAIL | Bán lẻ tiếng Anh là gì? | 2
+CLAIM | Yêu cầu bồi thường tiếng Anh là gì? | 3 | INSURANCE CLAIM
+CLERK | Nhân viên văn thư tiếng Anh là gì? | 2
+CONFIDENTIAL | Bảo mật (tài liệu mật) tiếng Anh là gì? | 2
+COUPON | Phiếu giảm giá tiếng Anh là gì? | 1 | VOUCHER
+COURIER | Dịch vụ chuyển phát tiếng Anh là gì? | 2
+CREDENTIALS | Giấy tờ chứng nhận năng lực tiếng Anh là gì? | 3
+DEBIT CARD | Thẻ ghi nợ tiếng Anh là gì? | 3 | DEBIT
+DEDUCT | Khấu trừ tiếng Anh là gì? | 3
+DISCONTINUE | Ngừng sản xuất tiếng Anh là gì? | 3
+DOWNSIZE | Thu hẹp quy mô (cắt giảm nhân sự) tiếng Anh là gì? | 3
+LAYOFF | Sa thải do cắt giảm tiếng Anh là gì? | 3 | LAY OFF
+DRESS CODE | Quy định trang phục tiếng Anh là gì? | 2
+ENCLOSE | Gửi kèm (trong thư) tiếng Anh là gì? | 3
+EXHIBIT | Trưng bày tiếng Anh là gì? | 2
+FARE | Giá vé (xe, tàu) tiếng Anh là gì? | 2
+FEE | Lệ phí tiếng Anh là gì? | 1
+FINANCE | Tài chính tiếng Anh là gì? | 1
+FREIGHT | Hàng hóa vận chuyển (cước) tiếng Anh là gì? | 3
+GRANT | Khoản tài trợ tiếng Anh là gì? | 3
+HANDOUT | Tài liệu phát tay tiếng Anh là gì? | 2
+HEADHUNTER | Người săn đầu người (tuyển dụng) tiếng Anh là gì? | 3
+INQUIRY | Yêu cầu thông tin tiếng Anh là gì? | 2 | ENQUIRY
+JOB OPENING | Vị trí đang tuyển tiếng Anh là gì? | 2 | OPENING, JOB VACANCY
+LABOR | Nhân công (lao động) tiếng Anh là gì? | 2 | LABOUR, WORKFORCE
+LETTERHEAD | Giấy có tiêu đề công ty tiếng Anh là gì? | 3
+LIAISON | Người liên lạc (đầu mối) tiếng Anh là gì? | 3
+MANUAL | Sách hướng dẫn sử dụng tiếng Anh là gì? | 1 | USER MANUAL, HANDBOOK
+MEMBERSHIP | Tư cách hội viên tiếng Anh là gì? | 1
+MILESTONE | Cột mốc (dự án) tiếng Anh là gì? | 2
+NEWSLETTER | Bản tin định kỳ tiếng Anh là gì? | 2
+NOMINATE | Đề cử tiếng Anh là gì? | 3
+ONBOARDING | Hội nhập nhân viên mới tiếng Anh là gì? | 3 | ORIENTATION
+OUTLET | Cửa hàng bán lẻ (điểm bán) tiếng Anh là gì? | 3
+PAYROLL | Bảng lương tiếng Anh là gì? | 3
+PREMISES | Cơ sở, mặt bằng (công ty) tiếng Anh là gì? | 3
+PREREQUISITE | Điều kiện tiên quyết tiếng Anh là gì? | 3
+PROFITABLE | Có lãi tiếng Anh là gì? | 2
+PROSPECTIVE | Tiềm năng (khách hàng tương lai) tiếng Anh là gì? | 3
+RECOMMENDATION | Thư giới thiệu tiếng Anh là gì? | 2 | REFERENCE
+REGISTRATION | Sự đăng ký tiếng Anh là gì? | 2
+REMINDER | Lời nhắc tiếng Anh là gì? | 1
+REPRESENTATIVE | Người đại diện tiếng Anh là gì? | 2 | REP
+RETURN POLICY | Chính sách đổi trả tiếng Anh là gì? | 2
+REVISE | Sửa lại (bản thảo) tiếng Anh là gì? | 2 | AMEND
+SHORTLIST | Danh sách rút gọn ứng viên tiếng Anh là gì? | 3
+SPONSOR | Nhà tài trợ tiếng Anh là gì? | 2
+STOCK | Cổ phiếu tiếng Anh là gì? | 2 | SHARE, SHARES
+SUGGESTION | Sự gợi ý, đề xuất tiếng Anh là gì? | 1
+SURPLUS | Thặng dư tiếng Anh là gì? | 3
+TELECONFERENCE | Hội nghị từ xa tiếng Anh là gì? | 3 | VIDEO CONFERENCE
+TRADE FAIR | Hội chợ thương mại tiếng Anh là gì? | 2 | TRADE SHOW
+URGENT | Khẩn cấp tiếng Anh là gì? | 1
+OFFICE SUPPLIES | Đồ dùng văn phòng tiếng Anh là gì? | 2
+JOB DESCRIPTION | Mô tả công việc tiếng Anh là gì? | 2 | JD
+PERFORMANCE REVIEW | Đánh giá hiệu quả làm việc tiếng Anh là gì? | 3 | APPRAISAL
+SALES REPRESENTATIVE | Nhân viên kinh doanh tiếng Anh là gì? | 2 | SALES REP, SALESPERSON
+CUSTOMER SERVICE | Dịch vụ chăm sóc khách hàng tiếng Anh là gì? | 1
+TERMS AND CONDITIONS | Điều khoản và điều kiện tiếng Anh là gì? | 2
+FISCAL | Liên quan tài chính (tính từ) tiếng Anh là gì? | 1
+ROYALTY | Tiền bản quyền tiếng Anh là gì? | 1
+STIPEND | Trợ cấp tiếng Anh là gì? | 1 | ALLOWANCE
+TRADEMARK | Nhãn hiệu thương mại tiếng Anh là gì? | 1 | BRAND
+PATENT | Bằng sáng chế tiếng Anh là gì? | 1
+DEBENTURE | Trái phiếu không có tài sản đảm bảo tiếng Anh là gì? | 1
+EMBARGO | Cấm vận tiếng Anh là gì? | 1
+LESSOR | Người cho thuê tiếng Anh là gì? | 1
 CONTRACT | Hợp đồng tiếng Anh là gì? | 1 | AGREEMENT
 MEETING | Cuộc họp tiếng Anh là gì? | 1
 SALARY | Tiền lương tiếng Anh là gì? | 1 | WAGE, WAGES, PAY
@@ -173,7 +249,6 @@ INFLATION | Sự lạm phát tiếng Anh là gì? | 3
 EXCHANGE RATE | Tỷ giá hối đoái tiếng Anh là gì? | 2 | FOREX RATE
 VACANCY | Vị trí công việc đang trống tiếng Anh là gì? | 2 | JOB VACANCY, OPENING
 ALLOWANCE | Tiền phụ cấp tiếng Anh là gì? | 2 | SUBSIDY, STIPEND
-
 ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3 | ĐÁP ỨNG
 AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3 | SỬA ĐỔI
 COMPLIANCE | Sự tuân thủ quy định | 3 | TUÂN THỦ
@@ -184,12 +259,10 @@ RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3 | TÁI CẤU TRÚC
 SPECIFICATION | Thông số kỹ thuật chi tiết | 3 | THÔNG SỐ
 SUPERVISION | Sự giám sát công việc | 3 | GIÁM SÁT
 VENDOR | Nhà cung cấp / người bán | 2 | NHÀ CUNG CẤP
-
 BENCHMARK | Tiêu chuẩn đánh giá | 3 | TIÊU CHUẨN
 DEPRECIATION | Sự khấu hao tài sản | 3 | KHẤU HAO
 EXPENDITURE | Mức chi tiêu / chi phí | 3 | CHI PHÍ
 TURNOVER | Doanh số / tỷ lệ luân chuyển | 3 | DOANH SỐ
-
 ADMINISTRATION | Sự quản lý / hành chính | 2 | QUẢN LÝ
 AUTHORIZATION | Sự cho phép / ủy quyền | 3 | ỦY QUYỀN
 BENEFICIARY | Người thụ hưởng | 3 | NGƯỜI THỤ HƯỞNG
@@ -214,18 +287,15 @@ MANAGEMENT | Sự quản lý / ban quản lý | 1 | QUẢN LÝ
 OCCUPATION | Nghề nghiệp | 2 | NGHỀ NGHIỆP
 OPPORTUNITY | Cơ hội | 1 | CƠ HỘI
 PARTICIPANT | Người tham gia | 2 | NGƯỜI THAM GIA
-
 ACQUISITION | Thương vụ thâu tóm và mua lại một doanh nghiệp khác | 2 | THÂU TÓM
 COMMODITY | Hàng hóa thương mại thô trên thị trường giao dịch | 2 | HÀNG HÓA
 DEFECTIVE | Sản phẩm bị lỗi hỏng hóc do trục trặc sản xuất | 2 | BỊ LỖI
 DISPATCH | Hành động gửi chuyển phát nhanh hàng hóa hoặc tài liệu quan trọng | 2 | GỬI HÀNG
 EXPEDITE | Xúc tiến đẩy nhanh tiến độ xử lý đơn hàng cho khách | 3 | ĐẨY NHANH TIẾN ĐỘ
 TARIFF | Mức thuế quan áp đặt lên hàng hóa xuất nhập khẩu | 2 | THUẾ QUAN
-
 CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh nghiệp | 3 | KHÁCH HÀNG QUEN
 ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2 | BẢO CHỨNG
 FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3 | TÍNH KHẢ THI
-
 DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty tiếng Anh là gì? | 3 | CỔ TỨC
 TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty tiếng Anh là gì? | 2 | THÂU TÓM
 SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ tiếng Anh là gì? | 3 | CÔNG TY CON

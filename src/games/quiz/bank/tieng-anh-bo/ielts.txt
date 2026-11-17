@@ -1,4 +1,84 @@
-# Bộ đề · IELTS
+# Tiếng Anh · IELTS
+ALLOCATE | Phân bổ (nguồn lực) tiếng Anh là gì? | 2
+ANALOGY | Phép so sánh tương đồng tiếng Anh là gì? | 3
+ARBITRARY | Tùy tiện tiếng Anh là gì? | 3
+ASSUMPTION | Giả định tiếng Anh là gì? | 2
+ATTRIBUTE | Quy cho (cho là do) tiếng Anh là gì? | 3
+COMPLEMENT | Bổ sung cho nhau tiếng Anh là gì? | 3
+CONCEPT | Khái niệm tiếng Anh là gì? | 1 | NOTION
+CONSENSUS | Sự đồng thuận tiếng Anh là gì? | 3
+CONSTRAINT | Sự ràng buộc (hạn chế) tiếng Anh là gì? | 3 | LIMITATION
+CONTEXT | Bối cảnh tiếng Anh là gì? | 2
+CONVENTIONAL | Thông thường (truyền thống) tiếng Anh là gì? | 2 | TRADITIONAL
+CRITERIA | Các tiêu chí tiếng Anh là gì? | 2 | CRITERION
+DISCRIMINATION | Sự phân biệt đối xử tiếng Anh là gì? | 2
+DIVERSE | Đa dạng (tính từ) tiếng Anh là gì? | 2 | VARIED
+DURABLE | Bền tiếng Anh là gì? | 2
+ECONOMIC | Thuộc kinh tế tiếng Anh là gì? | 2
+ENSURE | Đảm bảo tiếng Anh là gì? | 1 | GUARANTEE
+ESTABLISH | Thành lập tiếng Anh là gì? | 2 | FOUND
+EVIDENT | Hiển nhiên tiếng Anh là gì? | 3 | OBVIOUS
+EXCESSIVE | Quá mức tiếng Anh là gì? | 2
+FLUENT | Lưu loát tiếng Anh là gì? | 1
+IDENTICAL | Giống hệt nhau tiếng Anh là gì? | 2
+IMPLICATION | Hàm ý (hệ quả) tiếng Anh là gì? | 3
+INCIDENCE | Tỷ lệ xảy ra tiếng Anh là gì? | 3
+INTERVENTION | Sự can thiệp tiếng Anh là gì? | 3
+LIKELIHOOD | Khả năng xảy ra tiếng Anh là gì? | 3 | PROBABILITY
+NEGATE | Phủ định (vô hiệu hóa) tiếng Anh là gì? | 3
+POTENTIAL | Tiềm năng tiếng Anh là gì? | 1
+PRIORITY | Sự ưu tiên tiếng Anh là gì? | 1
+RELEVANT | Liên quan, thích đáng tiếng Anh là gì? | 2
+RETAIN | Giữ lại tiếng Anh là gì? | 3 | KEEP
+SCENARIO | Kịch bản (tình huống giả định) tiếng Anh là gì? | 2
+STABLE | Ổn định tiếng Anh là gì? | 1
+TENDENCY | Xu hướng (thiên hướng) tiếng Anh là gì? | 2
+THEORY | Lý thuyết tiếng Anh là gì? | 1
+TRANSITION | Sự chuyển tiếp tiếng Anh là gì? | 2
+VALID | Hợp lệ (có giá trị) tiếng Anh là gì? | 2
+WIDESPREAD | Lan rộng, phổ biến tiếng Anh là gì? | 2
+ADVOCACY | Sự vận động ủng hộ tiếng Anh là gì? | 3
+AFFLUENT | Giàu có, sung túc tiếng Anh là gì? | 3 | WEALTHY
+AUTONOMY | Quyền tự chủ tiếng Anh là gì? | 3
+BUREAUCRACY | Bộ máy quan liêu tiếng Anh là gì? | 3
+COMPULSORY | Bắt buộc tiếng Anh là gì? | 2 | OBLIGATORY
+CONSCIOUS | Có ý thức tiếng Anh là gì? | 2 | AWARE
+CONTAMINATE | Làm ô nhiễm tiếng Anh là gì? | 3 | POLLUTE
+CREDIBLE | Đáng tin cậy tiếng Anh là gì? | 3 | BELIEVABLE
+DECLINE | Sự suy giảm tiếng Anh là gì? | 2
+DEPLETE | Làm cạn kiệt tiếng Anh là gì? | 3 | EXHAUST
+DISPOSABLE | Dùng một lần rồi bỏ tiếng Anh là gì? | 2 | SINGLE-USE
+DOMESTIC | Trong nước (nội địa) tiếng Anh là gì? | 2
+ENFORCE | Thi hành (luật) tiếng Anh là gì? | 3
+EXPLICIT | Rõ ràng, tường minh tiếng Anh là gì? | 3 | CLEAR
+HAZARDOUS | Nguy hiểm, độc hại tiếng Anh là gì? | 3 | DANGEROUS
+IMMENSE | To lớn, bao la tiếng Anh là gì? | 3 | HUGE, ENORMOUS
+INEVITABLY | Chắc chắn sẽ (không tránh được) tiếng Anh là gì? | 3
+INSIGHT | Sự thấu hiểu sâu sắc tiếng Anh là gì? | 3
+MARGINALIZED | Bị gạt ra lề xã hội tiếng Anh là gì? | 3 | MARGINALISED
+OBSTRUCT | Cản trở tiếng Anh là gì? | 3 | BLOCK
+OUTWEIGH | Vượt trội hơn (lợi lớn hơn hại) tiếng Anh là gì? | 3
+PREVALENCE | Sự phổ biến (tỷ lệ mắc) tiếng Anh là gì? | 3
+RECIPIENT | Người nhận tiếng Anh là gì? | 3
+REMEDY | Biện pháp khắc phục tiếng Anh là gì? | 3
+SURVEILLANCE | Sự giám sát tiếng Anh là gì? | 3
+UNPREDICTABLE | Khó lường trước tiếng Anh là gì? | 2
+ANNOTATION | Ghi chú tiếng Anh là gì? | 1 | NOTE
+DISCOURSE | Bài nói, bài luận tiếng Anh là gì? | 1 | SPEECH, ESSAY
+SEMANTICS | Khoa học về ý nghĩa từ tiếng Anh là gì? | 1
+METHODOLOGY | Phương pháp nghiên cứu tiếng Anh là gì? | 1
+INFERENCE | Suy luận tiếng Anh là gì? | 1 | CONCLUSION, DEDUCTION
+CORRELATION | Mối quan hệ tiếng Anh là gì? | 1 | RELATIONSHIP
+CRITERION | Tiêu chí tiếng Anh là gì? | 1 | STANDARD
+GLOSSARY | Từ điển chuyên ngành tiếng Anh là gì? | 1 | VOCABULARY
+FOREWORD | Lời nói đầu tiếng Anh là gì? | 1 | INTRODUCTION
+MANUSCRIPT | Bản thảo tiếng Anh là gì? | 1
+EXTRAPOLATION | Suy rộng từ dữ liệu tiếng Anh là gì? | 1
+DENOUEMENT | Kết thúc câu chuyện tiếng Anh là gì? | 1 | ENDING, RESOLUTION
+MONOGRAPH | Luận thuyết chuyên sâu tiếng Anh là gì? | 1 | TREATISE
+MEMOIR | Hồi ký cá nhân tiếng Anh là gì? | 1 | AUTOBIOGRAPHY
+ECLOGUE | Bài thơ vùng quê tiếng Anh là gì? | 1 | PASTORAL
+EPOCH | Thời kỳ lịch sử tiếng Anh là gì? | 1 | ERA, ERA
 ENVIRONMENT | Môi trường tiếng Anh là gì? | 1
 POLLUTION | Sự ô nhiễm tiếng Anh là gì? | 1 | CONTAMINATION
 CLIMATE | Khí hậu tiếng Anh là gì? | 1
@@ -180,7 +260,6 @@ COGNITIVE | Thuộc về nhận thức tiếng Anh là gì? | 3 | MENTAL
 DEMOGRAPHIC | Nhân khẩu học (thông tin dân số) tiếng Anh là gì? | 3 | DEMOGRAPHICS
 STIGMA | Định kiến, vết nhơ xã hội tiếng Anh là gì? | 3 | SHAME, DISGRACE
 DEPRIVATION | Sự thiếu thốn, tước đoạt tiếng Anh là gì? | 3 | PRIVATION, HARDSHIP
-
 UNPRECEDENTED | Chưa từng có tiền lệ trước đây | 3 | CHƯA TỪNG CÓ
 SUBSTANTIAL | Đáng kể / lớn lao | 3 | ĐÁNG KỂ
 FEASIBLE | Khả thi / có thể thực hiện được | 3 | KHẢ THI
@@ -193,7 +272,6 @@ REVOLUTIONIZE | Cách mạng hóa / đổi mới hoàn toàn | 3 | CÁCH MẠNG 
 VERSATILE | Đa năng / linh hoạt | 3 | ĐA NĂNG
 DISCREPANCY | Sự khác biệt / sự lệch nhau | 3 | SỰ LỆCH NHAU
 EQUIVALENT | Tương đương / giá trị như nhau | 3 | TƯƠNG ĐƯƠNG
-
 CONTEMPORARY | Hiện đại / đương đại | 3 | ĐƯƠNG ĐẠI
 DISPARITY | Sự chênh lệch rõ rệt | 3 | CHÊNH LỆCH
 MANDATORY | Bắt buộc tuân thủ | 3 | BẮT BUỘC
@@ -203,7 +281,6 @@ QUALITATIVE | Định tính / về mặt chất lượng | 3 | ĐỊNH TÍNH
 QUANTITATIVE | Định lượng / về mặt con số | 3 | ĐỊNH LƯỢNG
 RATIONAL | Hợp lý / trí tuệ | 3 | HỢP LÝ
 SOVEREIGNTY | Chủ quyền quốc gia | 3 | CHỦ QUYỀN
-
 AMBIGUOUS | Mơ hồ / nhập nhằng | 3 | MƠ HỒ
 ANACHRONISTIC | Lỗi thời / sai thời đại | 3 | LỖI THỜI
 ARTICULATE | Ăn nói lưu loát / rõ ràng | 3 | LƯU LOÁT
@@ -239,7 +316,6 @@ ADVOCATE | Ủng hộ / tán thành | 2 | ỦNG HỘ
 ALLEVIATE | Làm nhẹ bớt / giảm bớt | 3 | GIẢM BỚT
 COLLABORATE | Cộng tác / hợp tác | 2 | HỢP TÁC
 ENDEAVOR | Nỗ lực / cố gắng | 3 | NỖ LỰC
-
 APPREHENSIVE | Cảm giác lo âu băn khoăn về một điều gì đó sắp xảy đến | 3 | LO ÂU, BĂN KHOĂN
 LETHARGIC | Cảm giác uể oải, đờ đẫn, thiếu hụt toàn bộ năng lượng sống | 3 | UỂ OẢI
 QUINTESSENTIAL | Thuộc về phần tinh túy, điển hình hoàn hảo nhất của một phong cách | 3 | TINH TÚY, ĐIỂN HÌNH
@@ -247,11 +323,9 @@ UBIQUITY | Sự hiện diện phổ biến ở khắp mọi nơi cùng lúc | 3 
 VEHEMENT | Thái độ phản đối mãnh liệt kịch liệt khăng khăng | 3 | MÃNH LIỆT
 EPITOME | Hình mẫu thu nhỏ tiêu biểu nhất cho một đức tính cao đẹp | 3 | HÌNH MẪU TIÊU BIỂU
 INNOCUOUS | Hoàn toàn vô hại, không gây ra bất cứ mối đe dọa nào | 3 | VÔ HẠI
-
 FASTIDIOUS | Tính cách kỹ tính, kén chọn, đòi hỏi mọi thứ phải hoàn hảo | 3 | KỸ TÍNH, CẦU TOÀN
 COLLOQUIAL | Ngôn ngữ văn nói thân mật đời thường của người bản xứ | 3 | KHẨU NGỮ, VĂN NÓI
 ZEAL | Lòng nhiệt thành, hăng hái cháy bỏng với một lý tưởng | 3 | NHIỆT THÀNH
-
 METAPHOR | Biện pháp tu từ ẩn dụ ví von trong văn học tiếng Anh là gì? | 2 | ẨN DỤ
 SIMILE | Biện pháp so sánh ví von dùng chữ like hoặc as tiếng Anh là gì? | 2 | SO SÁNH
 HYPERBOLE | Phép nói quá khoa trương phóng đại trong văn học tiếng Anh là gì? | 3 | NÓI QUÁ

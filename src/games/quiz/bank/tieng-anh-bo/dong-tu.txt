@@ -148,7 +148,6 @@ RARE | Hiếm (tính từ) tiếng Anh là gì? | 3 | UNCOMMON, SCARCE
 SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) tiếng Anh là gì? | 3
 ROUGH | Thô ráp, sần sùi (tính từ) tiếng Anh là gì? | 3 | COARSE
 SECRET | Bí mật (tính từ, vd lối đi bí mật) tiếng Anh là gì? | 3 | HIDDEN
-
 ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3 | HOÀN THÀNH
 ACCUMULATE | Tích lũy / gom góp dần | 3 | TÍCH LŨY
 BENEFICIAL | Có lợi / có ích | 2 | CÓ LỢI
@@ -173,7 +172,6 @@ VALUABLE | Có giá trị cao / quý giá | 2 | QUÝ GIÁ
 WONDERFUL | Tuyệt vời / kỳ diệu | 1 | TUYỆT VỜI
 ZEALOUS | Hăng hái / nhiệt thành | 3 | HĂNG HÁI, ENTHUSIASTIC
 ACCURATE | Chính xác tuyệt đối | 2 | CHÍNH XÁC
-
 APPRECIATE | Trân trọng / cảm kích | 2 | TRÂN TRỌNG
 BOOST | Tăng cường / đẩy mạnh | 2 | TĂNG CƯỜNG
 COLLABORATE | Hợp tác làm việc chung | 3 | HỢP TÁC
@@ -193,7 +191,6 @@ SIMPLIFY | Đơn giản hóa vấn đề | 2 | ĐƠN GIẢN HÓA
 TRANSFORM | Biến đổi hoàn toàn | 3 | BIẾN ĐỔI
 UNDERTAKE | Đảm nhận nhiệm vụ | 3 | ĐẢM NHẬN
 VALIDATE | Xác nhận tính hợp lệ | 3 | XÁC NHẬN
-
 SERENDIPITY | Sự tình cờ may mắn tìm thấy điều tuyệt vời bất ngờ mà không hề tính trước tiếng Anh là gì? | 3 | TÌNH CỜ MAY MẮN
 EPHEMERAL | Tính chất phù du, sớm nở tối tàn, ngắn ngủi thoáng qua tiếng Anh là gì? | 3 | PHÙ DU, NGẮN NGỦI
 RESILIENT | Tính từ chỉ người kiên cường, bất khuất, luôn gượng dậy sau vấp ngã tiếng Anh là gì? | 3 | KIÊN CƯỜNG
@@ -214,13 +211,11 @@ OVERWHELM | Cảm giác bị choáng ngợp, lấn át bởi quá nhiều cảm 
 ENLIGHTEN | Động từ khai sáng, mở mang tâm trí trí tuệ cho người khác tiếng Anh là gì? | 3 | KHAI SÁNG
 REJUVENATE | Làm trẻ hóa lại làn da, hồi phục sức sống tươi mới tràn trề tiếng Anh là gì? | 3 | TRẺ HÓA
 DELIBERATE | Hành động có chủ đích cố ý tính toán trước chứ không phải ngẫu nhiên tiếng Anh là gì? | 3 | CỐ Ý, CÓ CHỦ ĐÍCH
-
 MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi tiếng Anh là gì? | 2 | TRÁNG LỆ, NGUY NGA
 INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai tiếng Anh là gì? | 2 | BẤT KHẢ CHIẾN BẠI
 LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối tiếng Anh là gì? | 3 | TỎA SÁNG, LẤP LÁNH
 NOSTALGIC | Cảm giác mang đầy hoài niệm nhung nhớ về những tháng năm xưa tiếng Anh là gì? | 2 | HOÀI NIỆM
 MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe tiếng Anh là gì? | 3 | DU DƯƠNG, ÊM DỊU
-
 WHISPER | Hành động nói thầm, thì thầm nho nhỏ vào tai người bên cạnh tiếng Anh là gì? | 1 | THÌ THẦM, NÓI THẦM
 GIGGLE | Cười khúc khích khúc khích e thẹn che miệng tiếng Anh là gì? | 2 | CƯỜI KHÚC KHÍCH
 BLINK | Chớp mắt một cái để làm ẩm mắt tiếng Anh là gì? | 1 | CHỚP MẮT

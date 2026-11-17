@@ -153,7 +153,6 @@ WEDDING | Đám cưới tiếng Anh là gì? | 1
 KISS | Hôn, thơm (má) tiếng Anh là gì? | 1
 HUG | Ôm (ai đó) tiếng Anh là gì? | 1 | CUDDLE, EMBRACE
 CRUSH | Người mình thầm thích tiếng Anh là gì? | 2
-
 FEATHER | Lông vũ chim | 1 | LÔNG VŨ
 SKELETON | Bộ xương người / động vật | 2 | BỘ XƯƠNG
 TOOTHLYNE | Đau răng / nhức răng | 2 | ĐAU RĂNG
@@ -174,7 +173,6 @@ FATIGUE | Sự mệt mỏi kéo dài | 3 | MỆT MỎI
 RECOVERY | Sự hồi phục sức khỏe | 2 | HỒI PHỤC
 THERAPY | Liệu pháp điều trị | 3 | LIỆU PHÁP
 WELLNESS | Sức khỏe toàn diện | 2 | SỨC KHỎE
-
 EYELASH | Lông mi mắt | 2 | LÔNG MI
 KIDNEY | Quả thận trong cơ thể | 3 | QUẢ THẬN
 LIVER | Lá gan | 2 | LÁ GAN
@@ -185,7 +183,6 @@ PREVENTION | Việc phòng ngừa bệnh tật | 2 | PHÒNG NGỪA
 EXHAUSTION | Sự kiệt sức / lả đi | 3 | KIỆT SỨC
 SATISFACTION | Sự hài lòng thỏa mãn | 2 | HÀI LÒNG
 FRUSTRATION | Sự bực bội / bức bối | 3 | BỨC BỐI
-
 NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ tiếng Anh là gì? | 3 | HOÀI NIỆM
 EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc tiếng Anh là gì? | 3 | HƯNG PHẤN
 MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng tiếng Anh là gì? | 3 | U SẦU
@@ -196,6 +193,5 @@ YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ng�
 GOOSEBUMPS | Hiện tượng nổi gai ốc da gà khắp người khi lạnh hoặc sợ tiếng Anh là gì? | 2 | NỔI DA GÀ, GOOSE BUMPS
 HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi tiếng Anh là gì? | 2 | GÓT CHÂN
 PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói tiếng Anh là gì? | 2 | LÒNG BÀN TAY
-
 THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt tiếng Anh là gì? | 1 | CỔ HỌNG
 WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể tiếng Anh là gì? | 1 | VÒNG EO

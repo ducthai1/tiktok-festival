@@ -1,4 +1,4 @@
-# Bộ đề · Bóng đá
+# Tiếng Anh · Bóng đá
 FOOTBALL | Môn bóng đá tiếng Anh là gì? | 1 | SOCCER
 GOAL | Bàn thắng tiếng Anh là gì? | 1
 GOALKEEPER | Thủ môn tiếng Anh là gì? | 1 | GOALIE, KEEPER
@@ -150,27 +150,20 @@ MASCOT | Linh vật tiếng Anh là gì? | 2
 ANTHEM | Quốc ca (hát trước trận) tiếng Anh là gì? | 2 | NATIONAL ANTHEM
 PENALTY SPOT | Chấm phạt đền tiếng Anh là gì? | 2 | SPOT
 DUGOUT | Khu kỹ thuật (băng ghế huấn luyện viên) tiếng Anh là gì? | 3
-
 CORNER KICK | Quả phạt góc | 1 | PHẠT GÓC
-HAT TRICK | Ghi 3 bàn thắng trong một trận đấu | 1 | HAT TRICK
 FORWARD | Tiền đạo tấn công | 1 | TIỀN ĐẠO
-COUNTER ATTACK | Pha phản công nhanh | 2 | PHẢN CÔNG
 CHAMPIONSHIP | Giải vô địch bóng đá | 2 | VÔ ĐỊCH
 EQUALIZE | Bàn thắng gỡ hòa | 3 | GỠ HÒA
 PENALTY SHOOTOUT | Loạt sút luân lưu 11m | 2 | PENALTY, LUÂN LƯU
-
 SPECTATOR | Khán giả xem bóng đá trên khán đài | 2 | KHÁN GIẢ
 OFFENCE | Hàng tấn công | 2 | TẤN CÔNG
 GOLDEN BOOT | Danh hiệu Giày vàng | 2 | GIÀY VÀNG
 BALLON D OR | Giải thưởng Quả bóng vàng | 2 | QUẢ BÓNG VÀNG
-
 PLAYMAKER | Người dẫn dắt lối chơi | 2 | DẪN DẮT
 GOAL LINE | Đường biên ngang khung thành | 2 | BIÊN NGANG
 SIX YARD BOX | Vòng cấm nhỏ 5m50 | 2 | VÒNG 5M50
 CENTRE CIRCLE | Vòng tròn giữa sân | 1 | VÒNG TRÒN GIỮA
-KICK OFF | Cú giao bóng bắt đầu trận | 1 | GIAO BÓNG
 FULL TIME | Hết giờ thi đấu chính thức | 1 | HẾT GIỜ
-HALF TIME | Nghỉ giữa hiệp | 1 | NGHỈ GIỮA HIỆP
 INJURY TIME | Thời gian bù giờ | 1 | BÙ GIỜ
 TRANSFER WINDOW | Thị trường chuyển nhượng | 3 | CHUYỂN NHƯỢNG
 LOAN DEAL | Hợp đồng cho mượn cầu thủ | 2 | CHO MƯỢN
@@ -192,7 +185,6 @@ SKIPPER | Đội trưởng (biệt danh) | 2 | ĐỘI TRƯỞNG
 BRACE | Ghi 2 bàn trong một trận | 3 | CÚ ĐÚP
 POACHER | Tiền đạo chớp thời cơ | 3 | CHỚP THỜI CƠ
 BACKHEEL | Cú đánh gót | 2 | ĐÁNH GÓT
-
 PANENKA | Cú sút phạt đền 11m bấm bóng nhẹ bổng điệu nghệ đánh lừa thủ môn | 3 | SÚT PANENKA
 RABONA | Kỹ thuật vắt chéo chân sau chân trụ để tạt bóng điệu nghệ | 3 | CÚ ĐÁ RABONA
 TREBLE | Cú ăn ba danh hiệu vô địch danh giá trong một mùa giải | 2 | CÚ ĂN BA
@@ -202,7 +194,6 @@ CAPTAINCY | Băng đội trưởng và vai trò thủ lĩnh tinh thần của đ
 CRUNCH MATCH | Trận đấu sinh tử then chốt quyết định ngôi vô địch | 3 | TRẬN THEN CHỐT
 GOALLINE TECHNOLOGY | Công nghệ vạch vôi xác định bóng đã qua vạch khung thành | 2 | CÔNG NGHỆ VẠCH VÔI
 SQUEAKER | Chiến thắng sít sao nghẹt thở ở những giây cuối cùng | 3 | THẮNG SÍT SAO
-
 MANAGER | Huấn luyện viên trưởng chỉ đạo chiến thuật bên ngoài sân tiếng Anh là gì? | 1 | HUẤN LUYỆN VIÊN, COACH, HEAD COACH
 ADDED TIME | Thời gian bù giờ sau mỗi hiệp đấu tiếng Anh là gì? | 2 | BÙ GIỜ, INJURY TIME, STOPPAGE TIME
 EQUALIZER | Bàn thắng gỡ hòa quý giá đưa trận đấu về vạch xuất phát tiếng Anh là gì? | 2 | BÀN GỠ HÒA
@@ -266,7 +257,6 @@ PLAYOFF | Vòng tranh suất thăng hạng hoặc quyết định chức vô đ�
 WALKOVER | Trận thắng không chiến khi đối thủ bỏ cuộc tiếng Anh là gì? | 2 | THẮNG KHÔNG CHIẾN
 SUBSTITUTION BENCH | Khu dự bị nơi các cầu thủ ngồi chờ được tung vào sân tiếng Anh là gì? | 2 | KHU DỰ BỊ
 HALFWAY LINE | Vạch giữa sân chia đôi sân bóng tiếng Anh là gì? | 1 | VẠCH GIỮA SÂN
-SIX-YARD BOX | Vùng cấm địa nhỏ sát gần khung thành tiếng Anh là gì? | 2 | CẤM ĐỊA NHỎ
 GOALPOSTS | Hai cột dọc của khung thành tiếng Anh là gì? | 2 | CỘT DỌC KHUNG THÀNH
 BOOT | Giày đinh bóng đá chuyên dụng tiếng Anh là gì? | 1 | GIÀY BÓNG ĐÁ
 STUDS | Đinh bám đất dưới đế giày bóng đá tiếng Anh là gì? | 2 | ĐINH GIÀY

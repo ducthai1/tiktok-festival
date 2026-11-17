@@ -1,19 +1,350 @@
-# Bộ đề · Động vật
+# Tiếng Anh · Động vật
+ALLIGATOR | Cá sấu Mỹ (mõm tù) tiếng Anh là gì? | 3
+BUMBLEBEE | Ong nghệ (ong lông xù) tiếng Anh là gì? | 3
+BEETLE | Bọ cánh cứng tiếng Anh là gì? | 2
+MOTH | Bướm đêm (con ngài) tiếng Anh là gì? | 2
+LOCUST | Châu chấu di cư tiếng Anh là gì? | 3
+SILKWORM | Con tằm tiếng Anh là gì? | 2
+LOUSE | Con chấy tiếng Anh là gì? | 3 | LICE
+BEDBUG | Con rệp tiếng Anh là gì? | 3 | BED BUG
+CUB | Hổ con, sư tử con tiếng Anh là gì? | 2
+CALF | Con bê tiếng Anh là gì? | 2
+FOAL | Con ngựa non tiếng Anh là gì? | 3 | COLT
+PIGLET | Con heo con tiếng Anh là gì? | 2
+DUCKLING | Con vịt con tiếng Anh là gì? | 2
+CHICK | Con gà con tiếng Anh là gì? | 1
+ROOSTER | Con gà trống tiếng Anh là gì? | 1 | COCK, COCKEREL
+MULE | Con la tiếng Anh là gì? | 3
+PONY | Con ngựa lùn tiếng Anh là gì? | 2
+BULL | Con bò đực tiếng Anh là gì? | 2 | OX
+WATER BUFFALO | Con trâu tiếng Anh là gì? | 1 | BUFFALO
+RAT | Con chuột cống tiếng Anh là gì? | 1
+SEA URCHIN | Con nhím biển tiếng Anh là gì? | 2
+SEA CUCUMBER | Hải sâm tiếng Anh là gì? | 3
+PUFFERFISH | Cá nóc tiếng Anh là gì? | 2 | BLOWFISH, PUFFER FISH
+SWORDFISH | Cá kiếm tiếng Anh là gì? | 2
+CLOWNFISH | Cá hề tiếng Anh là gì? | 2 | CLOWN FISH
+CARP | Cá chép tiếng Anh là gì? | 2 | KOI
+HAMMERHEAD | Cá mập đầu búa tiếng Anh là gì? | 3 | HAMMERHEAD SHARK
+SEA TURTLE | Rùa biển tiếng Anh là gì? | 1
+TREE FROG | Ếch cây tiếng Anh là gì? | 2
+BULLFROG | Con ễnh ương tiếng Anh là gì? | 3
+CHIPMUNK | Con sóc chuột tiếng Anh là gì? | 2
+HARE | Thỏ rừng tiếng Anh là gì? | 2
+WILD BOAR | Lợn rừng tiếng Anh là gì? | 2 | BOAR
+FAWN | Nai con tiếng Anh là gì? | 3
+ELK | Nai sừng tấm tiếng Anh là gì? | 3
+RED PANDA | Gấu trúc đỏ tiếng Anh là gì? | 2
+SUN BEAR | Gấu chó tiếng Anh là gì? | 3
+GRIZZLY | Gấu xám Bắc Mỹ tiếng Anh là gì? | 3 | GRIZZLY BEAR
+LIONESS | Sư tử cái tiếng Anh là gì? | 2
+TUSK | Ngà voi tiếng Anh là gì? | 2 | TUSKS, IVORY
+TRUNK | Vòi voi tiếng Anh là gì? | 2
+HORN | Cái sừng tiếng Anh là gì? | 1 | HORNS
+ANTLER | Gạc hươu nai tiếng Anh là gì? | 3 | ANTLERS
+MANE | Bờm (ngựa, sư tử) tiếng Anh là gì? | 2
+HOOF | Móng guốc tiếng Anh là gì? | 3 | HOOVES
+PAW | Bàn chân thú (có đệm) tiếng Anh là gì? | 2 | PAWS
+CLAW | Móng vuốt tiếng Anh là gì? | 2 | CLAWS
+BEAK | Mỏ chim tiếng Anh là gì? | 1
+FUR | Bộ lông thú tiếng Anh là gì? | 1
+FIN | Vây cá tiếng Anh là gì? | 2 | FINS
+GILLS | Mang cá tiếng Anh là gì? | 2 | GILL
+WHISKERS | Ria mèo tiếng Anh là gì? | 2 | WHISKER
+COBWEB | Mạng nhện tiếng Anh là gì? | 2 | SPIDER WEB, WEB
+BEEHIVE | Tổ ong tiếng Anh là gì? | 2 | HIVE
+DEN | Hang ổ thú (hang cáo) tiếng Anh là gì? | 3 | LAIR
+BURROW | Hang đào (hang thỏ) tiếng Anh là gì? | 3
+FLOCK | Đàn chim, đàn cừu tiếng Anh là gì? | 3
+HERD | Đàn bò, đàn voi tiếng Anh là gì? | 3
+SWARM | Đàn ong (bầy côn trùng bay) tiếng Anh là gì? | 3
+HIBERNATE | Ngủ đông tiếng Anh là gì? | 2 | HIBERNATION
+NOCTURNAL | Hoạt động về đêm tiếng Anh là gì? | 3
+MAMMAL | Động vật có vú tiếng Anh là gì? | 2
+REPTILE | Loài bò sát tiếng Anh là gì? | 2
+AMPHIBIAN | Loài lưỡng cư tiếng Anh là gì? | 3
+RODENT | Loài gặm nhấm tiếng Anh là gì? | 3
+PRIMATE | Loài linh trưởng tiếng Anh là gì? | 3
+MARSUPIAL | Thú có túi tiếng Anh là gì? | 3
+VERTEBRATE | Động vật có xương sống tiếng Anh là gì? | 3
+ZOOKEEPER | Người chăm thú ở vườn thú tiếng Anh là gì? | 2
+SHEEPDOG | Chó chăn cừu tiếng Anh là gì? | 2 | SHEPHERD DOG
+HUSKY | Giống chó kéo xe trên băng tuyết có bộ lông dày hai lớp và đôi mắt sáng tiếng Anh là gì? | 2
+POODLE | Giống chó cảnh thông minh nhanh nhẹn có bộ lông xoăn tít như cuộn len tiếng Anh là gì? | 2
+STRAY CAT | Mèo hoang tiếng Anh là gì? | 2 | STRAY
+TOMCAT | Mèo đực tiếng Anh là gì? | 3 | TOM
+KING COBRA | Rắn hổ mang chúa tiếng Anh là gì? | 3 | KING COBRA
+ANT COLONY | Đàn kiến (tổ kiến) tiếng Anh là gì? | 2 | ANTHILL
+SCARAB | Bọ hung tiếng Anh là gì? | 3 | DUNG BEETLE
+STICK INSECT | Bọ que tiếng Anh là gì? | 3
+GLOWWORM | Đom đóm ấu trùng (sâu phát sáng) tiếng Anh là gì? | 3
+WATER STRIDER | Con gọng vó (nhện nước) tiếng Anh là gì? | 3
+BADGER | Động vật mộc túi có lông sẫm, sống dưới đất tiếng Anh là gì? | 1
+WEASEL | Động vật nhỏ báo thũ, sống ở rừng tiếng Anh là gì? | 2
+MOLE | Động vật khôi, sống dưới đất, có mắt nhỏ tiếng Anh là gì? | 2
+PORCUPINE | Động vật có gai, tự vệ khỏi kẻ thù tiếng Anh là gì? | 2
+CHEETAH | Mèo hoang có vệt, chạy nhanh nhất tiếng Anh là gì? | 2
+HYENA | Động vật giống chó, sống ở Phi tiếng Anh là gì? | 2
+JACKAL | Sói nhỏ, sống ở sa mạc tiếng Anh là gì? | 2
+LYNX | Mèo rừng có tai chóp tiếng Anh là gì? | 2
+BOBCAT | Mèo rừng nhỏ Bắc Mỹ tiếng Anh là gì? | 2
+COUGAR | Sư tử leo cây Mỹ tiếng Anh là gì? | 2
+MOOSE | Nai sừng to nhất thế giới tiếng Anh là gì? | 2
+ALPACA | Lạc đà lông dài Nam Mỹ tiếng Anh là gì? | 2
+LLAMA | Lạc đà gánh hàng Peru tiếng Anh là gì? | 2
+YAK | Bò bộng, sống ở Tây Tạng tiếng Anh là gì? | 2
+BISON | Trâu rừng, sống ở Bắc Mỹ tiếng Anh là gì? | 2
+BUFFALO | Trâu nước Châu Á tiếng Anh là gì? | 1
+DONKEY | Lừa con, sức kéo tiếng Anh là gì? | 1
+CAMEL | Lạc đà, sống ở sa mạc tiếng Anh là gì? | 1
+DROMEDARY | Lạc đà một bướu tiếng Anh là gì? | 2
+BACTRIAN | Lạc đà hai bướu tiếng Anh là gì? | 3
+EMU | Chim điểu không bay Úc tiếng Anh là gì? | 2
+RHEA | Chim tấu Nam Mỹ tiếng Anh là gì? | 2
+KIWI | Chim tò mò non Sơn Lan tiếng Anh là gì? | 2
+DODO | Chim tuyệt chủng Mauritius tiếng Anh là gì? | 2
+CASSOWARY | Chim dạo Úc nguy hiểm tiếng Anh là gì? | 3
+HOOPOE | Chim lửa cổ Âu tiếng Anh là gì? | 2
+KINGFISHER | Chim bắt cá xanh tiếng Anh là gì? | 2
+HUMMINGBIRD | Chim ruồi, cánh gật nhanh tiếng Anh là gì? | 2
+NIGHTINGALE | Chim học ca đêm tiếng Anh là gì? | 2
+FINCH | Chim sẻ vàng tiếng Anh là gì? | 2
+THRUSH | Chim mồng, hót gì tiếng Anh là gì? | 2
+WREN | Chim tích nhỏ xinh tiếng Anh là gì? | 2
+LARK | Chim sơn ca, hót sáng tiếng Anh là gì? | 2
+PHEASANT | Chim kê thêu đẹp tiếng Anh là gì? | 2
+QUAIL | Chim cút nhỏ tiếng Anh là gì? | 1
+GROUSE | Gà lôi rừng tiếng Anh là gì? | 2
+PARTRIDGE | Chim tẻ, tung bay cạnh tiếng Anh là gì? | 2
+WOODPECKER | Chim gõ kiếng, gõ thân cây tiếng Anh là gì? | 2
+VULTURE | Chim kền kền, ăn tử thể tiếng Anh là gì? | 2
+ALBATROSS | Chim thiên nga biển tiếng Anh là gì? | 2
+PETREL | Chim biển nhỏ tiếng Anh là gì? | 2
+CORMORANT | Chim cốc lặn tiếng Anh là gì? | 2
+HERON | Chim cáy chân dài tiếng Anh là gì? | 2
+EGRET | Chim diều trắng tiếng Anh là gì? | 2
+BITTERN | Chim gàn kêu tiếng Anh là gì? | 2
+IBIS | Chim cò mỏ cong tiếng Anh là gì? | 2
+FLAMINGO | Chim hồng hạc hồng tiếng Anh là gì? | 2
+BUSTARD | Chim đại điểu Phi tiếng Anh là gì? | 2
+MANDARIN | Vịt chim phục họa tiếng Anh là gì? | 2
+CUCKOO | Chim cu cu, trứa nhà chim khác tiếng Anh là gì? | 2
+KOEL | Chim cúc kêu tiếng Anh là gì? | 2
+ROADRUNNER | Chim chạy desert tiếng Anh là gì? | 2
+SECRETARY | Chim thư ký, chân dài tiếng Anh là gì? | 2
+WASP | Ong bắp cày, có kim tiếng Anh là gì? | 1
+HORNET | Bò cạp vàng, đốt đau tiếng Anh là gì? | 2
+MOSQUITO | Muỗi, hút máu tiếng Anh là gì? | 1
+FLEA | Bọ chét, nhảy tiếng Anh là gì? | 2
+TICK | Bọ chủy, hút máu tiếng Anh là gì? | 2
+MIDGE | Muỗi nhỏ, bay tiếng Anh là gì? | 2
+GNAT | Muỗi đêm, bay nhỏ tiếng Anh là gì? | 2
+MANTIS | Tàu rơm ăn thịt tiếng Anh là gì? | 2
+CICADA | Ve, kêu mùa hè tiếng Anh là gì? | 2
+CENTIPEDE | Rết, nhiều chân tiếng Anh là gì? | 2
+MILLIPEDE | Tò mò, ribbed body tiếng Anh là gì? | 2
+SCORPION | Bọ cạp, đuôi độc tiếng Anh là gì? | 2
+TARANTULA | Nhện lạc đà to tiếng Anh là gì? | 2
+LEECH | Sâu máu, dính da tiếng Anh là gì? | 2
+EARTHWORM | Sâu đất, sống đất tiếng Anh là gì? | 2
+TERMITE | Mối, ăn gỗ tiếng Anh là gì? | 1
+HORSEFLY | Ruồi ngựa, chích tiếng Anh là gì? | 2
+FIREFLY | Đom đóm, phát sáng tiếng Anh là gì? | 1
+STAG | Nai đực sừng tiếng Anh là gì? | 1
+DOE | Nai cái tiếng Anh là gì? | 1
+BUCK | Nai đực tiếng Anh là gì? | 1
+ROE | Nai cái con tiếng Anh là gì? | 1
+ANTELOPE | Linh dương, chạy nhanh tiếng Anh là gì? | 2
+WILDEBEEST | Gnu, đàn lớn Africa tiếng Anh là gì? | 2
+MUSK | Veld con có mùi tiếng Anh là gì? | 2
+IMPALA | Linh dương Phi tiếng Anh là gì? | 2
+ELAND | Linh dương lớn tiếng Anh là gì? | 2
+WARTHOG | Lợn thuốc lúc tiếng Anh là gì? | 2
+PECCARY | Lợn nhỏ Mỹ tiếng Anh là gì? | 2
+AARDVARK | Thú đơi ăn kiến tiếng Anh là gì? | 2
+PLATYPUS | Vật lạ trứng cá tiếng Anh là gì? | 2
+ECHIDNA | Nhím đơi Úc tiếng Anh là gì? | 2
+SLOTH | LQL chậm chạp cây tiếng Anh là gì? | 2
+ANTEATER | Thú ăn kiến dài mỏ tiếng Anh là gì? | 2
+ARMADILLO | Thú bọc bộng Mỹ tiếng Anh là gì? | 2
+PANGOLIN | Tê tê, gai vảy tiếng Anh là gì? | 2
+OPOSSUM | Thú túi Mỹ ơi tiếng Anh là gì? | 2
+LEMUR | Cú lemmur, đuôi vân tiếng Anh là gì? | 2
+GIBBON | Vượn nhỏ dài cánh tiếng Anh là gì? | 2
+ORANGUTAN | Vượn cam lớn Kiếp tiếng Anh là gì? | 2
+CHIMPANZEE | Tinh tinh, gần người tiếng Anh là gì? | 1
+GORILLA | Khỉ đột to mạnh tiếng Anh là gì? | 1
+BABOON | Khỉ đất, sống bầy tiếng Anh là gì? | 2
+LEMMING | Chuột vùng lạnh tiếng Anh là gì? | 2
+HAMSTER | Chuột túi nuôi tiếng Anh là gì? | 1
+GERBIL | Chuột sa mạc tiếng Anh là gì? | 2
+CHINCHILLA | Chuột lông dày Peru tiếng Anh là gì? | 2
+GUINEA PIG | Chuột Ê-cuadol tiếng Anh là gì? | 1
+CAPYBARA | Chuột nước lớn tiếng Anh là gì? | 2
+PORCUPETTE | Bé nhím tiếng Anh là gì? | 2
+STOAT | Chồn trắng Bắc tiếng Anh là gì? | 2
+FERRET | Chồn nuôi tiếng Anh là gì? | 2
+MARTEN | Chồn rừng tiếng Anh là gì? | 2
+OTTER | Rái cá, lội nước tiếng Anh là gì? | 1
+RACCOON | Nôi, mặt trắng tiếng Anh là gì? | 1
+POLECAT | Chồn thơm tiếng Anh là gì? | 2
+SKUNK | Động vật xịt mùi tiếng Anh là gì? | 2
+NUTRIA | Chuột nước lớn tiếng Anh là gì? | 2
+BEAVER | Hải li, xây đập tiếng Anh là gì? | 2
+MUSKRAT | Chuột mùi nước tiếng Anh là gì? | 2
+FLYING LEMUR | Loang bay Úc tiếng Anh là gì? | 3
+FLYING SQUIRREL | Sóc bay tiếng Anh là gì? | 2
+FLYING DRAGON | Rồng bay, tung cánh tiếng Anh là gì? | 2
+COLUGO | Mèo bay Đông tiếng Anh là gì? | 3
+POTOROO | Chuột túi Úc tiếng Anh là gì? | 3
+QUOKKA | Gấu túi tươi cười tiếng Anh là gì? | 2
+NUMBAT | Gấu ăn kiến Úc tiếng Anh là gì? | 2
+WOMBAT | Gấu đất Úc tiếng Anh là gì? | 2
+MANATEE | Thú biển chậm tiếng Anh là gì? | 2
+DUGONG | Thú biển ăn cỏ tiếng Anh là gì? | 2
+WALRUS | Hải mã, có ngà tiếng Anh là gì? | 2
+NARWHAL | Cá voi kỳ lân tiếng Anh là gì? | 2
+BELUGA | Cá voi trắng tiếng Anh là gì? | 2
+PORPOISE | Cá heo nhỏ tiếng Anh là gì? | 2
+ORCA | Cá voi sát thủ tiếng Anh là gì? | 2
+SPERM WHALE | Cá voi chứa mỡ tiếng Anh là gì? | 2
+BALEEN | Lược cá voi ăn tiếng Anh là gì? | 3
+MANTA RAY | Cá đuối to tiếng Anh là gì? | 2
+STINGRAY | Cá đuối kim tiếng Anh là gì? | 2
+SAWFISH | Cá lưỡi rưỡi tiếng Anh là gì? | 2
+ANGLERFISH | Cá đèn biển sâu tiếng Anh là gì? | 2
+SEAHORSE | Cá ngựa tiếng Anh là gì? | 1
+CATFISH | Cá trê tiếng Anh là gì? | 1
+PIRANHA | Cá piá ăn thịt tiếng Anh là gì? | 2
+SUNFISH | Cá mặt trời bè tiếng Anh là gì? | 2
+GUPPY | Cá guppies nhỏ tiếng Anh là gì? | 1
+TETRA | Cá bé đỏ, sống bể cảnh tiếng Anh là gì? | 2
+GOLDFISH | Cá vàng nuôi tiếng Anh là gì? | 1
+KOI | Giống cá chép cảnh nhiều màu rực rỡ bơi đàn trong hồ nước của Nhật Bản tiếng Anh là gì? | 1
+STURGEON | Cá tầm, trứng caviar tiếng Anh là gì? | 2
+EEL | Cá lươn tiếng Anh là gì? | 1
+LAMPREY | Cá roi hút máu tiếng Anh là gì? | 2
+COD | Cá tuyết tiếng Anh là gì? | 1
+HALIBUT | Cá bơn biển tiếng Anh là gì? | 2
+FLOUNDER | Cá bơn tiếng Anh là gì? | 2
+SARDINE | Cá mòi nhỏ tiếng Anh là gì? | 1
+HERRING | Cá sơn tiếng Anh là gì? | 1
+ANCHOVY | Cá cơm tiếng Anh là gì? | 1
+TUNA | Cá ngừ tiếng Anh là gì? | 1
+MARLIN | Cá kiếm biển tiếng Anh là gì? | 2
+BARRACUDA | Cá ròng tiếng Anh là gì? | 2
+BASS | Cá vược tiếng Anh là gì? | 1
+PERCH | Cá rô phi tiếng Anh là gì? | 1
+PIKE | Cá rô phi tiếng Anh là gì? | 1
+BREAM | Cá chuối tiếng Anh là gì? | 2
+CRAB | Cua tiếng Anh là gì? | 1
+LOBSTER | Tôm lớn tiếng Anh là gì? | 1
+SHRIMP | Tôm tiếng Anh là gì? | 1
+PRAWN | Tôm lớn tiếng Anh là gì? | 1
+SCALLOP | Sò dẹp tiếng Anh là gì? | 2
+OYSTER | Hàu tiếng Anh là gì? | 1
+MUSSEL | Trai tiếng Anh là gì? | 1
+CLAM | Sò tiếng Anh là gì? | 1
+SNAIL | Ốc sên tiếng Anh là gì? | 1
+SLUG | Ốc không vỏ tiếng Anh là gì? | 1
+SQUID | Mực tiếng Anh là gì? | 1
+OCTOPUS | Bạch tuộc tiếng Anh là gì? | 1
+ANEMONE | Hoa hải quỳ tiếng Anh là gì? | 2
+CORAL | San hô tiếng Anh là gì? | 1
+POLYP | Sinh vật nhỏ tạo nên san hô tiếng Anh là gì? | 3
+ZOOID | Thành viên của động vật kép tiếng Anh là gì? | 3
+CNIDARIAN | Động vật lục sắc tiếng Anh là gì? | 3
+PORIFERA | Động vật tự (bọt biển) tiếng Anh là gì? | 3
+ARTHROPOD | Động vật khớp tiếng Anh là gì? | 3
+MOLLUSK | Động vật mềm tiếng Anh là gì? | 3
+ECHINODERM | Lớp gai da sao tiếng Anh là gì? | 3
+BRITTLE STAR | Sao biển yếu tiếng Anh là gì? | 2
+NEMATODE | Sâu tròn chứng tiếng Anh là gì? | 3
+FLATWORM | Sâu dẹp tiếng Anh là gì? | 3
+ANNELID | Sâu vòng tiếng Anh là gì? | 3
+MONOTREME | Động vật một lỗ tiếng Anh là gì? | 3
+PLACENTAL | Động vật nhau thai tiếng Anh là gì? | 2
+CARCINOGEN | Chất gây ung thư tiếng Anh là gì? | 3
+DIURNAL | Hoạt động ban ngày tiếng Anh là gì? | 2
+CREPUSCULAR | Hoạt động bình minh tiếng Anh là gì? | 3
+ECTOTHERM | Động vật máu lạnh tiếng Anh là gì? | 3
+ENDOTHERM | Động vật máu nóng tiếng Anh là gì? | 3
+POIKILOTHERM | Nhiệt độ biến tiếng Anh là gì? | 3
+HOMEOTHERM | Nhiệt độ lâu tiếng Anh là gì? | 3
+PREDATION | Hành động ăn thịt tiếng Anh là gì? | 2
+SCAVENGER | Động vật ăn cặn tiếng Anh là gì? | 2
+GRAZER | Động vật cỏ tiếng Anh là gì? | 2
+BROWSER | Động vật lá tiếng Anh là gì? | 2
+FORAGE | Tìm kiếm thức ăn tiếng Anh là gì? | 2
+TERRITORY | Lãnh địa bảo vệ tiếng Anh là gì? | 2
+DOMINANCE | Quyền thống trị bầy tiếng Anh là gì? | 2
+HIERARCHY | Hệ thống xếp hạng tiếng Anh là gì? | 2
+MATING | Quá trình giao phối tiếng Anh là gì? | 2
+GESTATION | Thời kỳ mang thai tiếng Anh là gì? | 2
+FLEDGLING | Chim non vừa lông tiếng Anh là gì? | 2
+PUPA | Kỳ biến hóa côn trùng tiếng Anh là gì? | 1
+CHRYSALIS | Vỏ biến hóa bươm tiếng Anh là gì? | 2
+IMAGO | Dạng trưởng thành côn trùng tiếng Anh là gì? | 3
+NYMPH | Dạng nửa trưởng côn trùng tiếng Anh là gì? | 2
+THORAX | Ngực côn trùng tiếng Anh là gì? | 2
+ABDOMEN | Bụng con vật tiếng Anh là gì? | 2
+MANDIBLE | Hàm dưới tiếng Anh là gì? | 2
+PROBOSCIS | Mỏ hút thức ăn tiếng Anh là gì? | 2
+ANTENNA | Ăng ten cảm tiếng Anh là gì? | 1
+SETAE | Sợi cảm tiếng Anh là gì? | 3
+EXOSKELETON | Xương ngoài côn trùng tiếng Anh là gì? | 3
+CHITIN | Chất cứng xương tiếng Anh là gì? | 3
+SPIRACLE | Lỗ thở côn trùng tiếng Anh là gì? | 3
+TRACHEA | Ống thở tiếng Anh là gì? | 2
+SIMPLE EYE | Mắt đơn côn trùng tiếng Anh là gì? | 3
+COMPOUND EYE | Mắt kép côn trùng tiếng Anh là gì? | 3
+OCELLUS | Mắt đơn tiếng Anh là gì? | 3
+SENSILLUM | Cảm giác sơ tiếng Anh là gì? | 3
+CHEMORECEPTOR | Cảm thụ hóa học tiếng Anh là gì? | 3
+PHOTORECEPTOR | Cảm thụ ánh sáng tiếng Anh là gì? | 3
+MECHANORECEPTOR | Cảm thụ cơ học tiếng Anh là gì? | 3
+OSMOREGULATION | Điều hòa nước muối tiếng Anh là gì? | 3
+THERMOREGULATION | Điều hòa nhiệt tiếng Anh là gì? | 3
+PHOTOTROPISM | Hướng ánh sáng tiếng Anh là gì? | 3
+CHEMOTAXIS | Dẫn chất hóa tiếng Anh là gì? | 3
+PHOTOTAXIS | Dẫn ánh sáng tiếng Anh là gì? | 3
+GEOTROPISM | Hướng trọng lực tiếng Anh là gì? | 3
+ETHOLOGY | Học hành vi động vật tiếng Anh là gì? | 3
+INSTINCT | Bản năng sinh lý tiếng Anh là gì? | 2
+INNATE | Sinh với động vật tiếng Anh là gì? | 2
+LEARNED | Học được hành vi tiếng Anh là gì? | 1
+CONDITIONING | Điều kiện hoá tiếng Anh là gì? | 2
+IMPRINTING | Dấu ấn học tiếng Anh là gì? | 2
+CHEVROTAIN | Nai nhỏ nhất thế giới tiếng Anh là gì? | 3
+TAKIN | Động vật lạ, giữa dê và bò tiếng Anh là gì? | 3
+OKAPI | Động vật sọc, giữa ngựa và hươu tiếng Anh là gì? | 2
+QUAGGA | Ngựa sọc tuyệt chủng tiếng Anh là gì? | 2
+HYRAX | Động vật nhỏ giống chuột tiếng Anh là gì? | 2
+DASSIE | Hyrax đá, sống hang tiếng Anh là gì? | 2
+CONEY | Thỏ hoang tiếng Anh là gì? | 1
+PIKA | Thỏ núi nhỏ tiếng Anh là gì? | 2
+CAIMAN | Cá sấu nhỏ, bộ phận da tiếng Anh là gì? | 2
+GAVIAL | Cá sấu mỏ dài, India tiếng Anh là gì? | 3
+MATAMATA | Rùa nước, mặt lạ tiếng Anh là gì? | 3
+TERRAPIN | Rùa nước nhỏ tiếng Anh là gì? | 2
+GOPHER | Rùa đất Mỹ tiếng Anh là gì? | 2
+TUATARA | Bò sát thời tiền sử Sơn Lan tiếng Anh là gì? | 3
+AXOLOTL | Cá sắn Mexico, giữ dạng trẻ tiếng Anh là gì? | 2
+HELLBENDER | Cá sắn lớn Bắc Mỹ tiếng Anh là gì? | 3
+COLLEMBOLAN | Côn trùng nhảy nhỏ tiếng Anh là gì? | 3
+TARDIGRADE | Gấu nước, sinh vật nhỏ tiếng Anh là gì? | 3
+GAUR | Bò liar lớn, sống ở Châu Á tiếng Anh là gì? | 3
+ADDAX | Linh dương bạch, sống sa mạc tiếng Anh là gì? | 3
 WOLF | Con sói tiếng Anh là gì? | 1
 FOX | Con cáo tiếng Anh là gì? | 1
 DEER | Con nai tiếng Anh là gì? | 1
 REINDEER | Con tuần lộc (kéo xe ông già Noel) tiếng Anh là gì? | 2
-CAMEL | Con lạc đà tiếng Anh là gì? | 2
-DONKEY | Con lừa tiếng Anh là gì? | 1
-BUFFALO | Con trâu tiếng Anh là gì? | 2 | WATER BUFFALO
 SQUIRREL | Con sóc tiếng Anh là gì? | 2
 HEDGEHOG | Con nhím tiếng Anh là gì? | 3 | PORCUPINE
 BAT | Con dơi tiếng Anh là gì? | 1
 PANDA | Con gấu trúc tiếng Anh là gì? | 1 | GIANT PANDA
 KOALA | Con gấu túi tiếng Anh là gì? | 1 | KOALA BEAR
 POLAR BEAR | Gấu trắng Bắc Cực tiếng Anh là gì? | 2
-GORILLA | Con khỉ đột tiếng Anh là gì? | 2
-CHIMPANZEE | Con tinh tinh tiếng Anh là gì? | 3 | CHIMP
 RHINOCEROS | Con tê giác tiếng Anh là gì? | 3 | RHINO
 HIPPO | Con hà mã tiếng Anh là gì? | 2 | HIPPOPOTAMUS
 ANIMAL | Động vật (con vật nói chung) tiếng Anh là gì? | 1 | ANIMALS
@@ -22,15 +353,12 @@ DINOSAUR | Con khủng long tiếng Anh là gì? | 1 | DINOSAURS, DINO
 CROCODILE | Con cá sấu tiếng Anh là gì? | 1 | ALLIGATOR, CROC
 LIZARD | Con thằn lằn tiếng Anh là gì? | 2 | GECKO
 INSECT | Côn trùng tiếng Anh là gì? | 2 | INSECTS, BUG, BUGS
-MOSQUITO | Con muỗi tiếng Anh là gì? | 2 | MOSQUITOES, MOSQUITOS
 HOUSEFLY | Con ruồi tiếng Anh là gì? | 2 | FLY, FLIES, HOUSEFLIES
 DRAGONFLY | Con chuồn chuồn tiếng Anh là gì? | 3
 LADYBUG | Con bọ rùa tiếng Anh là gì? | 3 | LADYBIRD, LADY BEETLE
 COCKROACH | Con gián tiếng Anh là gì? | 3 | ROACH
 GRASSHOPPER | Con châu chấu tiếng Anh là gì? | 3 | LOCUST
 CATERPILLAR | Con sâu bướm tiếng Anh là gì? | 3
-FIREFLY | Con đom đóm tiếng Anh là gì? | 3 | LIGHTNING BUG
-SNAIL | Con ốc sên tiếng Anh là gì? | 2
 WORM | Con giun đất tiếng Anh là gì? | 2 | EARTHWORM
 PARROT | Con vẹt tiếng Anh là gì? | 1
 EAGLE | Chim đại bàng tiếng Anh là gì? | 1
@@ -47,14 +375,10 @@ NEST | Tổ chim tiếng Anh là gì? | 2 | NESTS, BIRD NEST, BIRDS NEST
 WING | Đôi cánh (của chim) tiếng Anh là gì? | 2 | WINGS
 TAIL | Cái đuôi (của con vật) tiếng Anh là gì? | 2 | TAILS
 WHALE | Con cá voi tiếng Anh là gì? | 1
-OCTOPUS | Con bạch tuộc tiếng Anh là gì? | 2
 JELLYFISH | Con sứa tiếng Anh là gì? | 2
 STARFISH | Con sao biển tiếng Anh là gì? | 2 | SEA STAR
-SEAHORSE | Con cá ngựa tiếng Anh là gì? | 2
 SEAL | Con hải cẩu tiếng Anh là gì? | 2
-CORAL | San hô tiếng Anh là gì? | 3 | CORALS, CORAL REEF
 SEASHELL | Vỏ sò, vỏ ốc biển tiếng Anh là gì? | 2 | SHELL, SHELLS, SEASHELLS
-GOLDFISH | Con cá vàng tiếng Anh là gì? | 1
 PLANT | Thực vật (cây cỏ nói chung) tiếng Anh là gì? | 1 | PLANTS
 LEAF | Chiếc lá tiếng Anh là gì? | 1 | LEAVES
 GRASS | Cỏ (bãi cỏ) tiếng Anh là gì? | 1 | LAWN
@@ -154,46 +478,24 @@ SOLAR ENERGY | Năng lượng mặt trời tiếng Anh là gì? | 3 | SOLAR POWE
 PROTECT | Bảo vệ (môi trường) tiếng Anh là gì? | 2 | PRESERVE, CONSERVE, SAVE
 EXTINCT | Tuyệt chủng tiếng Anh là gì? | 3 | EXTINCTION
 WILDFIRE | Cháy rừng tiếng Anh là gì? | 3 | FOREST FIRE, BUSHFIRE
-
 PANTHER | Báo đen (họ mèo săn mồi sa mạc/rừng rậm) | 2 | BLACK PANTHER
 CHAMELEON | Tắc kè hoa (loài bò sát đổi màu theo môi trường) | 2
-FLAMINGO | Chim hồng hạc (loài chim lông hồng đứng một chân) | 2 | HỒNG HẠC
-WOODPECKER | Chim gõ kiến | 2
 SALMON | Cá hồi (loài cá bơi ngược dòng đẻ trứng) | 2
-HUMMINGBIRD | Chim hút mật (loài chim nhỏ bay đập cánh cực nhanh) | 3
-PORCUPINE | Con nhím (loài thú có gai nhọn sau lưng) | 3
-SCORPION | Con bọ cạp | 2 | BỌ CẠP
 AVALANCHE | Trận tuyết lở | 3 | TUYẾT LỞ
 GLACIER | Sông băng / khối băng vĩnh cửu | 3 | SÔNG BĂNG
 RAINFOREST | Rừng nhiệt đới | 2 | RỪNG NHIỆT ĐỚI
 HURRICANE | Cơn bão biển / siêu bão | 3 | SIÊU BÃO
 ECOSYSTEM | Hệ sinh thái | 3 | HỆ SINH THÁI
 BIODIVERSITY | Đa dạng sinh học | 3
-
-CHEETAH | Báo gấm / báo đốm phi nước đại cực nhanh | 2 | BÁO GẤM
 HIPPOPOTAMUS | Con hà mã sống dưới nước | 2 | HIPPO, HÀ MÃ
-PLATYPUS | Thú mỏ vịt đẻ trứng | 3 | THÚ MỎ VỊT
-SLOTH | Con lười di chuyển chậm chạp trên cây | 2 | CON LƯỜI
 MEERKAT | Chồn cầy châu Phi đứng hai chân | 2 | CHỒN CẦY
 BUTTERFLY | Con bướm nhiều màu | 1 | BƯỚM
-CENTIPEDE | Con rết nhiều chân | 2 | RẾT
 DISASTER | Thảm họa thiên nhiên | 3 | THẢM HỌA
 FLOODING | Trận lũ lụt dâng cao | 2 | LŨ LỤT
 ATMOSPHERE | Bầu khí quyển Trái Đất | 3 | KHÍ QUYỂN
 FORESTATION | Việc trồng rừng phủ xanh | 3 | TRỒNG RỪNG
-
-AXOLOTL | Loài kỳ nhông nước Mexico (khủng long sáu sừng) tiếng Anh là gì? | 3 | KỲ NHÔNG NƯỚC
-NARWHAL | Kỳ lân biển (loài cá voi có một ngà dài nhọn ở đầu) tiếng Anh là gì? | 3 | KỲ LÂN BIỂN
-CAPYBARA | Loài chuột lang nước khổng lồ Nam Mỹ tính tình hiền lành tiếng Anh là gì? | 2 | CHUỘT LANG NƯỚC
-PANGOLIN | Con tê tê (loài thú ăn kiến có vảy cứng bảo vệ cơ thể) tiếng Anh là gì? | 3 | CON TÊ TÊ, TÊ TÊ
-LEMUR | Vượn cáo đuôi khoang đặc hữu của đảo Madagascar tiếng Anh là gì? | 3 | VƯỢN CÁO
-WALRUS | Con moóc biển / hải mã có hai răng nanh dài ở Bắc Cực tiếng Anh là gì? | 2 | HẢI MÃ
-STINGRAY | Con cá đuối biển có gai nhọn ở đuôi tiếng Anh là gì? | 2 | CÁ ĐUỐI
-OTTER | Con rái cá thích nằm ngửa trôi trên dòng sông tiếng Anh là gì? | 2 | RÁI CÁ
-BEAVER | Con hải ly chuyên gặm gỗ xây đập nước tiếng Anh là gì? | 2 | HẢI LY
 TOUCAN | Loài chim nhiệt đới có chiếc mỏ rất to sặc sỡ rực rỡ tiếng Anh là gì? | 3 | CHIM TOUCAN
 FALCON | Chim ưng săn mồi liệng cánh thần tốc tiếng Anh là gì? | 2 | CHIM ƯNG
-MANTIS | Con bọ ngựa có hai càng kiếm săn mồi tiếng Anh là gì? | 2 | BỌ NGỰA, PRAYING MANTIS
 STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống tiếng Anh là gì? | 3 | THẠCH NHŨ
 GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất tiếng Anh là gì? | 3 | MẠCH NƯỚC PHUN
 OASIS | Ốc đảo tươi tốt có nước ngọt giữa sa mạc cát mênh mông tiếng Anh là gì? | 2 | ỐC ĐẢO
@@ -204,106 +506,42 @@ EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu tiếng
 AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực tiếng Anh là gì? | 3 | CỰC QUANG, NORTHERN LIGHTS
 DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc tiếng Anh là gì? | 2 | CỒN CÁT, SAND DUNE
 CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng tiếng Anh là gì? | 2 | HẺM NÚI, GORGE
-
 IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng tiếng Anh là gì? | 2 | KỲ NHÔNG CỰ ĐÀ, CỰ ĐÀ
 KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái tiếng Anh là gì? | 3 | CHIM BỒI CÂY
 PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước tiếng Anh là gì? | 2 | CHIM BỒ NÔNG, BỒ NÔNG
-ARMADILLO | Con tatu có lớp áo giáp vảy sừng cuộn tròn thành quả bóng tự vệ tiếng Anh là gì? | 3 | CON TATU, TATU
-HYENA | Linh cẩu đốm săn mồi thảo nguyên có tiếng kêu như tiếng cười ghê rợn tiếng Anh là gì? | 2 | LINH CẨU
-BABOON | Khỉ đầu chó có mõm dài dữ dằn sống thành bầy lớn tiếng Anh là gì? | 2 | KHỈ ĐẦU CHÓ
 GAZELLE | Linh dương linh dương đồng cỏ nhảy thoăn thoắt né báo săn tiếng Anh là gì? | 2 | LINH DƯƠNG
-MANATEE | Bò biển thân hình tròn trịa hiền hòa gặm cỏ dưới nước tiếng Anh là gì? | 3 | BÒ BIỂN, HẢI NGƯU
 WHALE SHARK | Cá mập voi khổng lồ hiền lành ăn sinh vật phù du tiếng Anh là gì? | 2 | CÁ MẬP VOI
-
 VIPER | Loài rắn lục đuôi chuông mang nọc độc chết người tiếng Anh là gì? | 2 | RẮN LỤC, RẮN ĐỘC
 COBRA | Rắn hổ mang bành phình cổ hung dữ mang nọc độc tiếng Anh là gì? | 1 | RẮN HỔ MANG, HỔ MANG
 PYTHON | Con trăn gấm khổng lồ cuộn tròn siết mồi tiếng Anh là gì? | 1 | CON TRĂN
 TADPOLE | Con nòng nọc bơi lội dưới nước trước khi mọc chân thành ếch tiếng Anh là gì? | 2 | NÒNG NỌC
-ANTEATER | Thú ăn kiến có chiếc mõm dài thè lưỡi bắt kiến tiếng Anh là gì? | 2 | THÚ ĂN KIẾN
-SKUNK | Con chồn hôi xịt mùi hôi nồng nặc để xua đuổi kẻ thù tiếng Anh là gì? | 2 | CHỒN HÔI
-BADGER | Con lửng mật gan dạ đầu gấu không sợ bất kỳ loài thú nào tiếng Anh là gì? | 2 | LỬNG MẬT, CON LỬNG
-WILDEBEEST | Linh dương đầu bò vượt sông dữ di cư trên thảo nguyên châu Phi tiếng Anh là gì? | 3 | LINH DƯƠNG ĐẦU BÒ
-MOOSE | Nai sừng tấm Bắc Mỹ khổng lồ có bộ sừng bè rộng tiếng Anh là gì? | 2 | NAI SỪNG TẤM
-GIBBON | Con vượn đu cây cánh tay dài hót vang rừng sớm tiếng Anh là gì? | 2 | CON VƯỢN, VƯỢN
-ORANGUTAN | Đười ươi lông đỏ thông minh sống trên ngọn cây rừng nhiệt đới tiếng Anh là gì? | 2 | ĐƯỜI ƯƠI
-GUINEA PIG | Chuột lang nhà lông xù đáng yêu nuôi làm thú cưng tiếng Anh là gì? | 1 | CHUỘT LANG
-HAMSTER | Loài chuột cảnh nhỏ bé có hai túi má phính thích gặm hạt hướng dương tiếng Anh là gì? | 1 | CHUỘT HAMSTER
 WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu tiếng Anh là gì? | 3 | VÒNG XOÁY NƯỚC, XOÁY NƯỚC
 MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi tiếng Anh là gì? | 2 | ĐỒNG CỎ
-RACCOON | Gấu mèo Bắc Mỹ lông xám có quầng đen quanh mắt tiếng Anh là gì? | 2 | GẤU MÈO
-WEASEL | Con chồn nhỏ thon dài săn mồi nhanh nhẹn tiếng Anh là gì? | 2 | CON CHỒN
-ECHIDNA | Thú lông nhím đẻ trứng ăn kiến ở châu Đại Dương tiếng Anh là gì? | 3 | THÚ LÔNG NHÍM
-MOLE | Chuột chũi mắt mờ thích đào bới sống dưới lòng đất tiếng Anh là gì? | 2 | CHUỘT CHŨI
 VOLE | Chuột đồng đuôi ngắn gặm nhấm ngoài ruộng tiếng Anh là gì? | 3 | CHUỘT ĐỒNG
 SHREW | Chuột chù mõm nhọn mùi hôi ăn côn trùng tiếng Anh là gì? | 2 | CHUỘT CHÙ
-OPOSSUM | Loài thú có túi nhỏ ở châu Mỹ có biệt tài nằm im giả chết khi gặp nguy hiểm tiếng Anh là gì? | 3 | THÚ CÓ TÚI
 JAGUAR | Báo đốm Nam Mỹ lực cắn cực khỏe tiếng Anh là gì? | 2 | BÁO ĐỐM
 LEOPARD | Báo hoa mai leo trèo cắp mồi lên cây tiếng Anh là gì? | 2 | BÁO HOA MAI
-COUGAR | Báo sư tử Bắc Mỹ puma tiếng Anh là gì? | 2 | BÁO SƯ TỬ
 OCELOT | Loài mèo hoang dã có hoa văn vằn đốm tuyệt đẹp sống trong rừng Nam Mỹ tiếng Anh là gì? | 3 | MÈO GẤM
-LYNX | Linh miêu tai có chùm lông nhọn mọc đứng tiếng Anh là gì? | 2 | LINH MIÊU
-BOBCAT | Linh miêu đuôi cộc Bắc Mỹ tiếng Anh là gì? | 3 | LINH MIÊU ĐUÔI CỘC
 CARACAL | Linh miêu tai đen sa mạc nhảy cao bắt chim tiếng Anh là gì? | 3 | LINH MIÊU TAI ĐEN
 SERVAL | Loài mèo hoang chân dài tai lớn chuyên săn bắt mồi trên thảo nguyên châu Phi tiếng Anh là gì? | 3 | MÈO RỪNG SERVAL
-ANTELOPE | Linh dương sừng nhọn đồng cỏ châu Phi tiếng Anh là gì? | 2 | LINH DƯƠNG
-IMPALA | Loài linh dương có cặp sừng cong dài với những cú nhảy cao vút qua bụi rậm tiếng Anh là gì? | 3 | LINH DƯƠNG IMPALA
-BISON | Bò rừng bizon Bắc Mỹ to lớn vạm vỡ tiếng Anh là gì? | 2 | BÒ RỪNG
-YAK | Bò Tây Tạng lông dài chịu rét vùng núi cao tiếng Anh là gì? | 2 | BÒ TÂY TẠNG
-LLAMA | Loài động vật họ lạc đà không có bướu trên lưng sống ở vùng cao Andes Nam Mỹ tiếng Anh là gì? | 2 | LẠC ĐÀ KHÔNG BƯỚU
-ALPACA | Loài động vật thuộc họ lạc đà Nam Mỹ có bộ lông dày mịn ấm áp tiếng Anh là gì? | 2 | LẠC ĐÀ ALPACA
-WARTHOG | Lợn rừng châu Phi có răng nanh cong vút tiếng Anh là gì? | 3 | LỢN RỪNG CHÂU PHI
 TAPIR | Heo vòi có vòi ngắn ăn lá cây trong rừng rậm tiếng Anh là gì? | 3 | HEO VÒI
-CHINCHILLA | Sóc sin-si lông cực dày mịn sống ở núi Andes tiếng Anh là gì? | 3 | SÓC CHINCHILLA
-GERBIL | Loài gặm nhấm nhỏ thích đào bới và vùi mình trong cát hoang mạc tiếng Anh là gì? | 3 | CHUỘT NHẢY
-FERRET | Loài chồn cảnh thân dài tinh nghịch rất thích nô đùa với con người tiếng Anh là gì? | 2 | CHỒN SƯƠNG
 MINK | Loài chồn bán thủy sinh có bộ lông bóng mượt đắt giá thường được nuôi lấy lông tiếng Anh là gì? | 3 | CHỒN MINK
 SABLE | Loài chồn quý sống ở vùng rừng rậm Siberia xứ lạnh có bộ lông đen mịn vô cùng đắt đỏ tiếng Anh là gì? | 3 | CHỒN SABLE
 SEA LION | Sư tử biển diễn xiếc tung hứng bóng tiếng Anh là gì? | 1 | SƯ TỬ BIỂN
-DUGONG | Loài động vật có vú ăn cỏ biển hiền lành thường được gọi là nàng tiên cá tiếng Anh là gì? | 3 | CÁ CÚI, NÀNG TIÊN CÁ
-BELUGA | Loài cá voi nhỏ toàn thân màu trắng muốt có thể phát ra âm thanh như chim hót tiếng Anh là gì? | 2 | CÁ VOI TRẮNG
-ORCA | Cá voi sát thủ kẻ săn mồi đỉnh cao đại dương tiếng Anh là gì? | 2 | CÁ VOI SÁT THỦ
-SPERM WHALE | Cá nhà táng lặn sâu nhất biển săn mực khổng lồ tiếng Anh là gì? | 3 | CÁ NHÀ TÁNG
 HUMPBACK WHALE | Cá voi lưng gù thích nhảy nhào lộn trên mặt nước tiếng Anh là gì? | 2 | CÁ VOI LƯNG GÙ
 BLUE WHALE | Cá voi xanh sinh vật to lớn nhất hành tinh tiếng Anh là gì? | 1 | CÁ VOI XANH
-MANTA RAY | Cá đuối ó khổng lồ bơi như bay dưới nước tiếng Anh là gì? | 3 | CÁ ĐUỐI KHỔNG LỒ
-BARRACUDA | Cá nhồng biển răng nhọn hoắt săn mồi chớp nhoáng tiếng Anh là gì? | 3 | CÁ NHỒNG
-PIRANHA | Loài cá ăn thịt sông Amazon có hàm răng sắc bén xé mồi chớp nhoáng tiếng Anh là gì? | 2 | CÁ PIRANHA
-SQUID | Mực ống bơi lùi nhanh lẹ trong biển tiếng Anh là gì? | 1 | MỰC ỐNG
 CUTTLEFISH | Mực nang mai cứng ngụy trang cực tài tình tiếng Anh là gì? | 2 | MỰC NANG
 HERMIT CRAB | Ốc mượn hồn cua ẩn sĩ chui vào vỏ ốc rỗng tiếng Anh là gì? | 2 | ỐC MƯỢN HỒN
-TARANTULA | Loài nhện săn mồi khổng lồ toàn thân đầy lông nhung đáng sợ tiếng Anh là gì? | 2 | NHỆN KHỔNG LỒ
-MILLIPEDE | Con cuốn chiếu cuộn tròn khi bị chạm vào tiếng Anh là gì? | 2 | CON CUỐN CHIẾU
-CICADA | Ve sầu kêu râm ran suốt mùa hè tiếng Anh là gì? | 1 | VE SẦU
-WASP | Ong bắp cày thắt eo hung dữ tiếng Anh là gì? | 2 | ONG BẮP CÀY
-HORNET | Ong vò vẽ đốt nọc độc cực kỳ nguy hiểm tiếng Anh là gì? | 2 | ONG VÒ VẼ
-HORSEFLY | Ruồi trâu chuyên đốt hút máu gia súc tiếng Anh là gì? | 3 | RUỒI TRÂU
-FLEA | Bọ chét nhảy cao ký sinh trên chó mèo tiếng Anh là gì? | 2 | BỌ CHÉT
-TICK | Con ve bét hút máu bám chặt trên da vật nuôi tiếng Anh là gì? | 2 | CON VE
-TERMITE | Con mối đục rỗng gỗ phá hủy nhà cửa tiếng Anh là gì? | 2 | CON MỐI
-EARTHWORM | Giun đất đào xới làm tơi xốp đất trồng tiếng Anh là gì? | 1 | GIUN ĐẤT
-LEECH | Con đỉa hút máu sống dưới đầm lầy ruộng nước tiếng Anh là gì? | 2 | CON ĐỈA
-SLUG | Con sên trần nhớt nhát không có vỏ ốc tiếng Anh là gì? | 2 | SÊN TRẦN
-KINGFISHER | Chim bói cá lao nhanh xuống nước bắt cá tiếng Anh là gì? | 2 | CHIM BÓI CÁ
 SEAGULL | Mòng biển bay lượn kêu ríu rít ven bờ biển tiếng Anh là gì? | 1 | MÒNG BIỂN
-ALBATROSS | Hải âu sải cánh dài bay lượn vượt đại dương tiếng Anh là gì? | 2 | HẢI ÂU
 HAWK | Diều hâu mắt tinh bay lượn săn gà chuột tiếng Anh là gì? | 2 | DIỀU HÂU
-VULTURE | Kền kền đầu trọc chuyên rỉa xác thối tiếng Anh là gì? | 2 | KỀN KỀN
 RAVEN | Quạ đen lớn kêu quạ quạ rất thông minh tiếng Anh là gì? | 2 | CON QUẠ ĐEN
 MAGPIE | Chim ác là thích nhặt những vật lấp lánh tiếng Anh là gì? | 3 | CHIM ÁC LÀ
-CUCKOO | Chim tu hú hay đẻ nhờ trứng vào tổ chim khác tiếng Anh là gì? | 2 | CHIM TU HÚ, CHIM CÚC CU
 CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von tiếng Anh là gì? | 2 | CHIM YẾN HÓT
-NIGHTINGALE | Chim họa mi hót líu lo trong đêm tiếng Anh là gì? | 2 | CHIM HỌA MI
 PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh tiếng Anh là gì? | 2 | VẸT YẾN PHỤNG
 COCKATOO | Vẹt mào Úc có chùm lông dựng đứng trên đầu tiếng Anh là gì? | 3 | VẸT MÀO
-EMU | Loài chim chạy khổng lồ chân cao chỉ xếp sau đà điểu đặc trưng của nước Úc tiếng Anh là gì? | 2 | ĐÀ ĐIỂU EMU
-CASSOWARY | Loài chim chạy lớn có chiếc mào sừng dũng mãnh và móng vuốt nguy hiểm nhất thế giới tiếng Anh là gì? | 3 | ĐÀ ĐIỂU ĐẦU MÀO
-KIWI | Loài chim nhỏ không thể bay có mỏ dài nhọn là quốc điểu của New Zealand tiếng Anh là gì? | 2 | CHIM KIWI
-HERON | Con diệc chân dài đứng rình cá bờ đầm tiếng Anh là gì? | 2 | CON DIỆC
 CRANE | Chim sếu đầu đỏ sải cánh bay lượn tuyệt đẹp tiếng Anh là gì? | 2 | CHIM SẾU
 SWIFT | Chim yến làm tổ bằng dãi làm yến sào tiếng Anh là gì? | 2 | CHIM YẾN
 SWALLOW | Chim én báo hiệu mùa xuân về tiếng Anh là gì? | 1 | CHIM ÉN
-LARK | Chim sơn ca hót sớm khi mặt trời mọc tiếng Anh là gì? | 2 | CHIM SƠN CA
-FINCH | Chim sẻ nhỏ sẻ thông mỏ ngắn khỏe ăn hạt tiếng Anh là gì? | 3 | CHIM SẺ THÔNG
 GECKO | Loài thằn lằn có lớp đệm ngón chân dính hút leo trèo trên tường kính tiếng Anh là gì? | 2 | THẠCH SÙNG, TẮC KÈ
 SALAMANDER | Kỳ giông lưỡng cư có khả năng tái sinh chi bị đứt tiếng Anh là gì? | 3 | KỲ GIÔNG
 NEWT | Sa giông nhỏ sống dưới nước và đầm lầy tiếng Anh là gì? | 3 | SA GIÔNG
@@ -311,6 +549,4 @@ TOAD | Con cóc da xù xì bắt sâu bọ ban đêm tiếng Anh là gì? | 1 | 
 ANACONDA | Loài trăn khổng lồ nặng nhất hành tinh chuyên siết mồi dưới đầm lầy Amazon tiếng Anh là gì? | 2 | TRĂN ANACONDA
 RATTLESNAKE | Rắn chuông đuôi lắc phát ra tiếng kêu cảnh báo tiếng Anh là gì? | 2 | RẮN CHUÔNG
 MAMBA | Loài rắn độc tốc độ di chuyển siêu nhanh trên mặt đất ở châu Phi tiếng Anh là gì? | 3 | RẮN MAMBA
-ANEMONE | Hải quỳ biển xúc tu mềm nơi cá hề trú ẩn tiếng Anh là gì? | 3 | HẢI QUỲ
 SPONGE | Bọt biển sinh vật đại dương lọc nước tiếng Anh là gì? | 2 | BỌT BIỂN
-CLAM | Con ngao nghêu hai mảnh vỏ chôn mình dưới cát tiếng Anh là gì? | 2 | CON NGAO, NGHÊU

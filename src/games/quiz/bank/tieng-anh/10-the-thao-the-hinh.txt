@@ -6,9 +6,6 @@ GYMNASTICS | Môn thể dục dụng cụ nhào lộn dẻo dai trên xà và th
 WEIGHTLIFTING | Môn cử tạ nâng các mức tạ nặng qua đầu tiếng Anh là gì? | 2 | CỬ TẠ
 SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường phố tiếng Anh là gì? | 1 | VÁN TRƯỢT, SKATEBOARDING
 SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn tiếng Anh là gì? | 1 | LƯỚT SÓNG
-SCUBA DIVING | Môn lặn biển có bình dưỡng khí ngắm san hô dưới đáy đại dương tiếng Anh là gì? | 2 | LẶN BIỂN, DIVING
-PARACHUTE | Chiếc dù bay nhảy dù từ trên máy bay xuống tiếng Anh là gì? | 2 | NHẢY DÙ, CÂY DÙ BAY
-KAYAK | Chiếc thuyền thể thao thon dài chèo bằng mái chèo hai đầu trên sông nước tiếng Anh là gì? | 2 | THUYỀN KAYAK
 TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ tiếng Anh là gì? | 3 | BA MÔN PHỐI HỢP
 ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ tiếng Anh là gì? | 2 | CHÈO THUYỀN
 SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết tiếng Anh là gì? | 2 | TRƯỢT TUYẾT, SNOWBOARDING
@@ -38,4 +35,3 @@ STRETCHING | Bài tập giãn cơ bắp sau khi vận động tiếng Anh là g�
 PUSH-UP | Động tác hít đất chống đẩy tăng cường sức mạnh tiếng Anh là gì? | 1 | HÍT ĐẤT, CHỐNG ĐẨY, PUSHUP
 SQUAT | Động tác gánh đùi ngồi xổm tăng lực chân tiếng Anh là gì? | 1 | GÁNH ĐÙI, SQUATS
 PLANK | Động tác đo sàn giữ thẳng người siết cơ bụng tiếng Anh là gì? | 1 | ĐO SÀN, TẬP PLANK
-WARM-UP | Khởi động làm nóng cơ thể trước khi thi đấu tiếng Anh là gì? | 1 | KHỞI ĐỘNG, WARMUP
