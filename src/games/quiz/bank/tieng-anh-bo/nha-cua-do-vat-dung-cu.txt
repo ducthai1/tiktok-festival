@@ -9,4 +9,4 @@ TAPE MEASURE | Chiếc thước dây rút cuộn tròn đo chiều dài thợ ma
 KALEIDOSCOPE | Ống kính vạn hoa nhìn vào thấy vô số hoa văn đổi màu lung linh | 3
 HOURGLASS | Đồng hồ cát đo thời gian bằng cát chảy qua eo hẹp | 2
 SUNDIAL | Đồng hồ mặt trời cổ đại xác định giờ theo bóng nắng | 3
-ASTROLABE | Thước trắc tinh thiên văn cổ dùng định vị vị trí các vì sao | 4
+ASTROLABE | Thước trắc tinh thiên văn cổ dùng định vị vị trí các vì sao | 3

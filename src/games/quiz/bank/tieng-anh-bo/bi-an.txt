@@ -278,3 +278,25 @@ SCARY | Đáng sợ | 1
 SPIDER WEB | Mạng nhện giăng trong lâu đài cổ | 1
 CASTLE | Lâu đài cổ trên đồi | 1
 MAGICIAN | Ảo thuật gia biểu diễn trên sân khấu | 1
+OUIJA BOARD | Tấm bảng chữ cái dùng để hỏi chuyện linh hồn | 3
+EXORCISM | Nghi lễ trừ tà đuổi quỷ ra khỏi người bị nhập | 3
+PREMONITION | Linh cảm biết trước chuyện sắp tới | 3
+DEJA VU | Cảm giác cảnh này mình đã từng trải qua rồi | 2
+SLEEP PARALYSIS | Hiện tượng bóng đè, tỉnh mà không cử động được | 2
+CRYPTOZOOLOGY | Ngành săn tìm những loài vật chưa được khoa học công nhận | 3
+LOCH NESS | Hồ ở Scotland đồn có quái vật cổ dài sống dưới đáy | 2
+ROSWELL | Địa danh ở Mỹ gắn với vụ đồn rơi đĩa bay năm 1947 | 3
+AREA FIFTY ONE | Căn cứ quân sự Mỹ bị đồn giấu người ngoài hành tinh | 2
+TAROT CARD | Bộ bài có hình dùng để bói vận mệnh | 1
+WILL O THE WISP | Đốm lửa ma trơi lập loè dẫn lạc đường trong đầm | 3
+WENDIGO | Quái vật ăn thịt người trong truyền thuyết thổ dân Bắc Mỹ | 3
+MOTH FOLK | Sinh vật người có cánh bị đồn báo trước thảm hoạ | 3
+PHANTOM SHIP | Con tàu ma lênh đênh không người lái | 2
+TIME SLIP | Hiện tượng bị cho là trượt ngược về quá khứ | 3
+VANISHING | Vụ mất tích không để lại dấu vết nào | 2
+RELIC | Di vật cổ được cho là mang sức mạnh linh thiêng | 2
+MYSTERY BOX | Chiếc hộp kín không ai biết bên trong có gì | 1
+HIDDEN DOOR | Cánh cửa giấu sau giá sách hoặc bức tường | 1
+SPIRIT WORLD | Thế giới của các linh hồn sau khi chết | 2
+LUCKY CHARM | Vật nhỏ mang theo người để cầu may | 1
+NIGHT TERROR | Cơn hoảng loạn giữa đêm khi đang ngủ say | 2

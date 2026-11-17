@@ -242,7 +242,7 @@ HALF-VOLLEY | Cú sút ngay khi bóng vừa chạm đất nảy lên | 3
 CHIP SHOT | Cú bấm bóng vượt qua thủ môn đang băng ra | 2
 PERFECT HAT-TRICK | Thành tích 3 bàn thắng trong một trận gồm chân phải chân trái và đánh đầu | 3
 POKER | Ghi được bốn bàn thắng trong một trận | 3
-MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản | 4
+MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản | 3
 SHUTOUT | Giữ lưới sạch bóng đối thủ không ghi được bàn nào | 2
 PLAYOFF | Vòng tranh suất thăng hạng hoặc quyết định chức vô địch | 2 | PLAY OFF
 WALKOVER | Trận thắng không chiến khi đối thủ bỏ cuộc | 2

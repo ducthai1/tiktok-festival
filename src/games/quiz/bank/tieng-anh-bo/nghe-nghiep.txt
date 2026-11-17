@@ -6,14 +6,108 @@ BARISTA | Thợ pha chế cà phê điêu luyện vẽ hình bọt sữa latte |
 BARTENDER | Người pha chế đồ uống rượu cocktail tại quầy bar | 2
 FLORIST | Người thợ cắm hoa và bán hoa tươi rực rỡ | 2
 LIFEGUARD | Nhân viên cứu hộ túc trực tại bãi biển và bể bơi | 2
-ANESTHESIOLOGIST | Bác sĩ chuyên khoa gây mê hồi sức trong phòng phẫu thuật | 4
+ANESTHESIOLOGIST | Bác sĩ chuyên khoa gây mê hồi sức trong phòng phẫu thuật | 3
 CARTOGRAPHER | Nhà bản đồ học chuyên vẽ và đo đạc bản đồ địa lý | 3
 PALEONTOLOGIST | Nhà cổ sinh vật học nghiên cứu các hóa thạch khủng long cổ | 3
 ACTUARY | Chuyên gia định phí bảo hiểm và tính toán rủi ro tài chính | 3
 SOMMELIER | Chuyên gia nếm thử và tư vấn rượu vang tại nhà hàng 5 sao | 3
-TAXONOMIST | Nhà phân loại học chuyên định danh và sắp xếp các loài sinh vật | 4
+TAXONOMIST | Nhà phân loại học chuyên định danh và sắp xếp các loài sinh vật | 3
 PHILANTHROPIST | Nhà từ thiện quyên góp hàng triệu đô giúp đỡ người nghèo | 3
 POLICEMAN | Chiến sĩ cảnh sát bảo vệ trật tự an ninh | 1 | POLICE OFFICER
 BARBER | Thợ cắt tóc nam tạo kiểu tóc | 1
 GARDENER | Người làm vườn chăm sóc hoa cỏ cây cối | 1
 FISHERMAN | Ngư dân quăng lưới đánh bắt cá trên biển | 1
+WAITRESS | Cô phục vụ bưng đồ ăn ra bàn cho khách | 1
+SALESMAN | Người đi chào hàng và bán sản phẩm cho khách | 1
+CLEANER | Người lau dọn quét tước giữ nơi làm việc sạch sẽ | 1
+SECURITY GUARD | Người mặc đồng phục đứng gác trông coi toà nhà | 1
+MAID | Người giúp việc dọn phòng trong khách sạn hay nhà riêng | 1
+NANNY | Người được thuê để trông và chăm em bé | 1
+SHOEMAKER | Thợ đóng giày mới bằng da theo cỡ chân | 1
+WATCHMAKER | Thợ lắp ráp và sửa bộ máy đồng hồ tí hon | 2
+BLACKSMITH | Thợ rèn quai búa trên đe nung đỏ sắt thép | 2
+MINER | Người xuống hầm sâu đào quặng và than | 1
+SAILOR | Thuỷ thủ làm việc trên tàu lênh đênh ngoài biển | 1
+HUNTER | Người vào rừng săn bắt thú | 1
+SHEPHERD | Người lùa đàn cừu ra đồng cỏ chăn thả | 1
+POTTER | Thợ nặn đất sét trên bàn xoay làm bình lọ | 2
+PAINTER | Người cầm cọ vẽ tranh hoặc quét sơn tường | 1
+SCULPTOR | Nhà điêu khắc đục đá tạc tượng | 2
+MODEL | Người mặc đồ trình diễn trên sàn catwalk | 1
+GUIDE | Người dẫn đoàn đi và thuyết minh dọc đường | 1
+VET | Bác sĩ khám chữa bệnh cho chó mèo, gọi tắt | 1
+MONK | Nhà sư cạo đầu tu hành trong chùa | 1
+NUN | Nữ tu sống trong tu viện | 2
+PRIEST | Linh mục làm lễ trong nhà thờ | 2
+MAYOR | Người đứng đầu chính quyền một thành phố | 2
+PRESIDENT | Người đứng đầu nhà nước một quốc gia | 1
+KING | Vua đứng đầu vương quốc | 1
+QUEEN | Nữ hoàng hoặc vợ của vua | 1
+KNIGHT | Hiệp sĩ mặc giáp sắt cưỡi ngựa thời trung cổ | 2
+SAMURAI | Võ sĩ đạo Nhật Bản đeo kiếm cong | 2
+NINJA | Sát thủ Nhật mặc đồ đen hoạt động trong bóng tối | 1
+DIVER | Người mang bình khí lặn xuống đáy biển | 1
+SURFER | Người đứng trên ván cưỡi sóng biển | 1
+CLIMBER | Người leo vách núi dựng đứng bằng dây | 2
+RUNNER | Vận động viên chạy đường dài hoặc nước rút | 1
+SWIMMER | Vận động viên bơi trong bể hoặc ngoài biển | 1
+BOXER | Võ sĩ đeo găng đấm nhau trên sàn đài | 1
+WRESTLER | Đô vật quật ngã đối thủ xuống thảm | 2
+ARCHER | Người giương cung bắn tên vào bia | 2
+JOCKEY | Người cưỡi ngựa đua trên trường đua | 2
+SKIER | Người trượt ván dài xuống sườn núi tuyết | 2
+CYCLIST | Người đua xe đạp đường trường | 1
+CREW | Toàn bộ nhân viên làm việc trên một tàu hoặc máy bay | 1
+STAFF | Toàn thể nhân viên của một cơ quan | 1
+EXPERT | Người rất giỏi và am hiểu sâu một lĩnh vực | 1
+AMATEUR | Người làm vì đam mê chứ không phải nghề chính | 2
+INTERVIEWER | Người đặt câu hỏi cho ứng viên trong buổi tuyển | 1
+RECRUIT | Người vừa mới được nhận vào quân ngũ hoặc tổ chức | 2
+TRAINER | Người hướng dẫn tập luyện cho người khác | 1
+ASSISTANT | Người phụ giúp công việc cho cấp trên | 1
+HOSTESS | Nữ nhân viên đón và xếp chỗ cho khách | 1
+USHER | Người cầm đèn pin dẫn khán giả tới ghế trong rạp | 2
+PORTER | Người khuân vác hành lý ở ga hoặc khách sạn | 1
+RANGER | Nhân viên tuần tra bảo vệ rừng quốc gia | 2
+JEWELER | Thợ chế tác và bán đồ trang sức vàng bạc | 2
+BANKER | Người làm nghề ngân hàng lo tiền bạc cho khách | 1
+TRADER | Người mua đi bán lại kiếm chênh lệch | 2
+MERCHANT | Thương nhân buôn bán hàng hoá quy mô lớn | 2
+HARD HAT | Mũ nhựa cứng công nhân đội ở công trường | 3
+SAFETY VEST | Áo phản quang màu chói mặc cho dễ nhìn thấy | 3
+NIGHT WATCH | Ca trực gác suốt đêm trông coi cơ sở | 3
+PIECEWORK | Cách trả công tính theo số sản phẩm làm ra | 3
+UNION | Công đoàn đứng ra bảo vệ quyền lợi người lao động | 3
+STRIKE ACTION | Việc công nhân đồng loạt ngừng làm để đòi quyền lợi | 3
+SHIFT HANDOVER | Việc bàn giao công việc giữa hai ca | 3
+WORK PERMIT | Giấy phép cho người nước ngoài được đi làm | 3
+TRADE SCHOOL | Trường dạy nghề đào tạo thợ lành nghề | 3
+JOURNEYMAN | Thợ đã qua học việc, làm được độc lập | 3
+OVERSEER | Người đứng trông coi đốc thúc nhóm thợ làm việc | 3
+DAY LABORER | Người làm công nhật, thuê theo ngày | 3
+SEASONAL WORKER | Người chỉ làm vào mùa vụ cao điểm | 3
+BUS CONDUCTOR | Người bán vé và hô bến trên xe buýt | 1
+STREET CLEANER | Người đẩy xe quét rác dọc lòng đường | 1
+DELIVERY MAN | Người chở hàng tới tận cửa cho khách | 1
+MILKMAN | Người giao sữa tới từng nhà vào sáng sớm | 1
+NEWSPAPER BOY | Cậu bé ném báo vào trước cổng từng nhà | 1
+SHOESHINER | Người ngồi vỉa hè đánh bóng giày cho khách | 1
+KNIFE SHARPENER | Người rong ruổi mài dao kéo thuê | 2
+LOCKSMITH | Thợ làm chìa và mở khoá khi khách mất chìa | 2
+CHIMNEY SWEEP | Người trèo lên nóc nhà cạo muội trong ống khói | 2
+TOUR OPERATOR | Công ty đứng ra tổ chức và bán các chuyến đi | 2
+EVENT PLANNER | Người lo toàn bộ khâu tổ chức một sự kiện | 1
+WEDDING PLANNER | Người lo trọn gói từ A tới Z cho đám cưới | 1
+PET GROOMER | Người tắm và tỉa lông cho chó mèo | 1
+DOG WALKER | Người được thuê dắt chó đi dạo mỗi ngày | 1
+BABYSITTER | Người trông trẻ vài giờ khi bố mẹ đi vắng | 1
+HOUSE SITTER | Người tới ở trông nhà hộ khi chủ đi vắng dài ngày | 2
+TUTOR CENTER | Trung tâm dạy kèm ngoài giờ cho học sinh | 1
+CALL CENTER AGENT | Nhân viên đeo tai nghe trả lời điện thoại khách hàng | 1
+SURVEY TAKER | Người cầm bảng hỏi đi phỏng vấn lấy ý kiến | 1
+TICKET INSPECTOR | Người lên tàu kiểm tra vé của hành khách | 2
+QUALITY INSPECTOR | Người kiểm tra hàng trước khi cho xuất xưởng | 3
+SAFETY OFFICER | Người phụ trách an toàn lao động tại công trường | 3
+SHOP OWNER | Người làm chủ một cửa hàng nhỏ ngoài phố | 1
+STREET MUSICIAN | Người ôm đàn hát kiếm tiền trên vỉa hè | 1
+PARKING GUARD | Người trông giữ xe và ghi vé ở bãi | 1

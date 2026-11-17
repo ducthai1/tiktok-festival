@@ -92,3 +92,33 @@ KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản | 1
 TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông | 2
 POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động | 1 | POLO
 CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha | 1
+CORNICE MOULDING | Đường gờ trang trí chạy quanh mép trần nhà | 3
+WAINSCOTING | Tấm gỗ ốp nửa dưới bức tường trong phòng | 3
+BALUSTER | Thanh trụ nhỏ đỡ tay vịn cầu thang | 3
+NEWEL POST | Cột trụ lớn ở chân và đỉnh cầu thang | 3
+DORMER WINDOW | Ô cửa sổ nhô ra khỏi mái dốc | 3
+BAY WINDOW | Ô cửa sổ nhô hẳn ra ngoài tường thành hốc | 3
+SKYLIGHT | Ô kính lắp trên mái cho nắng rọi xuống | 2
+ATTIC FAN | Quạt hút gắn trên trần kéo khí nóng ra khỏi nhà | 3
+WEATHERSTRIP | Dải đệm viền quanh cửa để chặn gió lùa | 3
+DEADBOLT | Then khoá cửa đặc chạy sâu vào khung | 3
+GUTTER | Máng hứng chạy dọc mép mái hứng nước mưa | 3
+DOWNPIPE | Ống nhựa dẫn nước mưa từ mái xuống đất | 3
+EAVES | Phần mái nhô ra che nắng che mưa cho tường | 3
+FOUNDATION | Phần móng chìm dưới đất đỡ cả ngôi nhà | 3
+CRAWL SPACE | Khoảng trống thấp giữa sàn và mặt đất | 3
+PARTITION WALL | Bức vách ngăn chia một phòng thành hai | 3
+LOAD-BEARING WALL | Bức tường chịu lực không được phá bỏ | 3
+PLUMBING | Hệ thống ống nước cấp và thoát trong nhà | 2
+WIRING | Hệ thống dây điện đi âm trong tường | 3
+FUSE BOX | Hộp chứa cầu chì và cầu dao của cả nhà | 3
+WATER METER | Đồng hồ đo số nước đã dùng trong tháng | 2
+SEPTIC TANK | Bể ngầm chứa và xử lý nước thải sinh hoạt | 3
+DAMP PROOFING | Lớp chống ẩm ngăn nước thấm ngược lên tường | 3
+INSULATION FOAM | Lớp bọt cách nhiệt phun vào khe tường | 3
+SOFFIT BOARD | Tấm ốp che mặt dưới phần mái nhô ra | 3
+FLASHING STRIP | Dải kim loại chèn chỗ giáp mái chống dột | 3
+RIDGE TILE | Viên ngói úp chạy dọc đỉnh nóc nhà | 3
+JAMB | Khung đứng hai bên ô cửa | 3
+SILL | Bệ ngang dưới chân ô cửa sổ | 3
+ARCHITRAVE TRIM | Nẹp gỗ viền quanh khung cửa cho kín mép | 3

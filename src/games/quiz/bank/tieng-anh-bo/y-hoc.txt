@@ -383,3 +383,26 @@ CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ 
 GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác | 3
 HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể | 3
 COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông | 3
+REST | Việc ngừng hoạt động cho lại sức | 1
+WASH HANDS | Việc rửa tay bằng xà phòng cho sạch khuẩn | 1
+DRINK WATER | Việc uống nước cho cơ thể đủ nước | 1
+COLD WATER | Nước lạnh dùng để hạ nhiệt | 1
+BREATH | Hơi thở hít vào thở ra | 1
+SNEEZING | Việc hắt hơi liên tục khi ngạt mũi | 1
+CLEAN HANDS | Đôi tay đã được rửa sạch trước khi ăn | 1
+VITAMIN | Chất bổ cần cho cơ thể, có trong rau quả hoặc viên uống | 1
+COTTON BALL | Cục bông tròn thấm cồn lau vết tiêm | 1
+WAITING ROOM | Phòng ngồi chờ tới lượt khám | 1
+HOSPITAL BED | Giường có bánh xe và tay quay trong buồng bệnh | 1
+SICK NOTE | Giấy bác sĩ xác nhận để xin nghỉ ốm | 1
+FRESH AIR | Không khí trong lành ngoài trời tốt cho phổi | 1
+SUNLIGHT | Ánh nắng giúp cơ thể tạo vitamin D | 1
+MORNING WALK | Buổi đi bộ sớm quanh công viên cho khoẻ | 1
+HAND WASH | Việc kỳ cọ tay với xà phòng dưới vòi nước | 1
+NAP | Giấc ngủ ngắn buổi trưa | 1
+JOGGING | Việc chạy bộ chậm đều cho bền sức | 1
+YOGA MAT | Tấm thảm mỏng trải ra để tập giãn cơ | 1
+GYM | Phòng tập có tạ và máy chạy | 1
+DIET PLAN | Thực đơn ăn kiêng vạch sẵn theo tuần | 1
+BODY WEIGHT | Số cân nặng của một người | 1
+WARM CLOTHES | Quần áo dày mặc cho khỏi nhiễm lạnh | 1

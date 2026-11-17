@@ -290,3 +290,12 @@ ROMANTIC MOVIE | Phim lãng mạn | 2
 MARRIAGE PROPOSAL | Lời cầu hôn | 2
 NUPTIAL | Liên quan đến lễ cưới | 3
 MARITAL | Liên quan đến hôn nhân | 3
+LOVE SONG | Bài hát về tình yêu đôi lứa | 1
+COUPLE OUTFIT | Bộ đồ đôi hai người mặc giống nhau | 1
+ANNIVERSARY GIFT | Món quà tặng nhau dịp kỷ niệm ngày yêu | 1
+SECRET ADMIRER | Người thầm thương mà không dám nói ra | 2
+WEDDING VOW | Lời thề hứa đôi uyên ương nói trong lễ cưới | 2
+HONEYMOON TRIP | Chuyến đi riêng của đôi vợ chồng mới cưới | 1
+PROPOSAL RING | Chiếc nhẫn quỳ gối trao lúc cầu hôn | 1
+LOVE NOTE | Mẩu giấy nhỏ viết vài chữ ngọt ngào giấu cho người thương | 1
+FOREVER TOGETHER | Lời hứa gắn bó bên nhau trọn đời | 1

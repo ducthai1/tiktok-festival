@@ -526,3 +526,10 @@ NECK PILLOW | Gối kê cổ chữ U êm ái chống mỏi khi đi máy bay | 1 
 EYE MASK | Bịt mắt ngủ che ánh sáng chợp mắt | 1 | SLEEP MASK
 EARPLUGS | Nút bịt tai giảm tiếng ồn động cơ máy bay | 1 | EAR PLUGS
 POWER ADAPTER | Đầu chuyển đổi chân cắm điện du lịch quốc tế | 2
+ATOLL | Đảo san hô vòng bao quanh một đầm nước giữa biển | 3
+CRAG | Mỏm đá dựng đứng nhô ra khỏi sườn núi | 3
+RAVINE | Khe núi hẹp và sâu do nước xói mòn | 3
+CAUSEWAY | Con đường đắp cao chạy xuyên qua vùng nước | 3
+BADWATER | Vùng trũng thấp nhất lục địa Bắc Mỹ, nước mặn không uống được | 3
+SCREE | Sườn dốc phủ đầy đá vụn trượt chân khi leo | 3
+MORAINE | Đống đất đá băng hà đẩy dồn lại rồi bỏ lại | 3

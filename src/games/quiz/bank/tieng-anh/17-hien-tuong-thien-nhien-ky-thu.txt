@@ -32,8 +32,8 @@ REFORESTATION | Trồng lại rừng | 2
 DEW | Những giọt sương mai đọng long lanh trên cành lá buổi sớm | 2
 SANDSTORM | Trận bão cát mù mịt cuốn bụi cát cuồn cuộn trên sa mạc | 2
 BLIZZARD | Trận bão tuyết mù mịt với gió rét căm căm | 2
-PETRICHOR | Mùi hương thanh mát của đất sau cơn mưa rào đầu mùa | 4
-BIOLUMINESCENCE | Hiện tượng phát quang sinh học của sinh vật dưới đáy biển sâu | 4
+PETRICHOR | Mùi hương thanh mát của đất sau cơn mưa rào đầu mùa | 3
+BIOLUMINESCENCE | Hiện tượng phát quang sinh học của sinh vật dưới đáy biển sâu | 3
 PHOTOSYNTHESIS | Quá trình quang hợp của cây xanh hút ánh sáng nhả khí oxy | 3
 METAMORPHOSIS | Quá trình biến thái biến đổi ngoạn mục từ sâu hóa bướm | 3
 SYMBIOSIS | Mối quan hệ cộng sinh tương trợ cùng có lợi giữa hai loài sinh vật | 3

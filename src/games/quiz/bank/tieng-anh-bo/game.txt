@@ -289,3 +289,15 @@ TOWER DIVE | Lao vào tháp đánh người | 3 | TOWER AGGRESSION
 PICK OFF | Cướp một người riêng rẻ | 3 | ISOLATION KILLS
 CUTSCENE | Cảnh điểm phim giữa trò chơi | 1 | MOVIE SCENE
 KEYBINDING | Ràng buộc phím tùy chỉnh | 1 | KEY MAPPING
+GAME PAD | Tay cầm có nút bấm để chơi game | 1
+LOADING SCREEN | Màn hình chờ hiện ra trước khi vào trận | 1
+PLAYER NAME | Tên hiển thị của người chơi trong trò chơi | 1
+NEW GAME | Lựa chọn bắt đầu lại từ đầu câu chuyện | 1
+PAUSE MENU | Bảng chọn hiện ra khi tạm dừng trò chơi | 1
+SOUND SETTING | Mục chỉnh to nhỏ tiếng nhạc và hiệu ứng | 1
+CONTROLLER VIBRATION | Rung tay cầm mỗi khi nhân vật bị đánh trúng | 2
+BUTTON MASH | Kiểu bấm loạn xạ mọi nút cho nhanh thắng | 1
+LOCAL CO-OP | Chế độ hai người chơi chung trên cùng một máy | 1
+SPLIT SCREEN | Màn hình chia đôi cho hai người cùng chơi | 1
+GAME CARTRIDGE | Băng nhựa cắm vào máy để chạy trò chơi | 2
+ARCADE TOKEN | Đồng xu nhựa bỏ vào máy game thùng | 2

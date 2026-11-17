@@ -204,7 +204,7 @@ ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng | 2
 GRADUATION | Lễ tốt nghiệp trang trọng, khoác áo cử nhân rồi tung mũ | 1
 ALUMNI | Hội cựu học sinh cựu sinh viên của trường | 3
 VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn | 3
-SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 4
+SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 3
 MAJOR | Chuyên ngành học chính thức tại trường đại học | 1
 MINOR | Chuyên ngành phụ học thêm bằng kép | 2
 CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp | 2
@@ -212,7 +212,7 @@ TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học |
 BACHELOR | Bằng cử nhân đại học bốn năm chính quy | 2
 MASTER | Bằng sau đại học học thêm một đến hai năm, cao hơn cử nhân | 2
 DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | PHD
-POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 4 | POSTDOC
+POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 3 | POSTDOC
 DISSERTATION | Luận án tiến sĩ dày, bảo vệ trước hội đồng khoa học | 3
 DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2
 ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2
@@ -221,7 +221,7 @@ EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập 
 ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép | 1
 ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1
 MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2
-PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 4
+PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 3
 APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2
 VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3
 PROBATION | Giai đoạn thử thách, trong luật còn có nghĩa là án treo | 2
@@ -238,7 +238,7 @@ FREELANCER | Người làm nghề tự do nhận việc theo từng dự án đ�
 CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2
 BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2
 ABSENTEEISM | Thói quen trốn việc nghỉ làm việc không lý do chính đáng | 3
-PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả | 4
+PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả | 3
 ANNUAL LEAVE | Kỳ nghỉ phép năm có hưởng lương của người lao động | 2
 SICK LEAVE | Nghỉ ốm có giấy xác nhận của bác sĩ | 1
 MATERNITY LEAVE | Kỳ nghỉ thai sản sinh con dành cho các bà mẹ | 2
@@ -275,3 +275,29 @@ INSOLVENCY | Mất khả năng thanh toán các khoản nợ đến hạn | 3
 LIQUIDATION | Sự thanh lý giải thể tài sản để trả bớt nợ nần | 3
 CREDITOR | Chủ nợ bên cho công ty vay tiền | 2
 DEBTOR | Bên mang nợ người vay nợ | 2
+SCHOOL GATE | Cổng trường nơi phụ huynh đứng chờ đón con | 1
+SCHOOL BELL | Chuông reo báo vào lớp và tan học | 1
+BLACKBOARD ERASER | Miếng lau xoá chữ phấn trên bảng | 1
+SCHOOL YARD | Khoảng sân rộng giữa các dãy lớp học | 1
+SCHOOL FEE | Khoản tiền đóng cho nhà trường mỗi kỳ | 1
+PARENT MEETING | Buổi họp giữa giáo viên và phụ huynh | 1
+MORNING EXERCISE | Bài thể dục giữa giờ cả trường cùng tập | 1
+FLAG CEREMONY | Lễ chào cờ đầu tuần ở sân trường | 1
+SCHOOL CANTEEN | Nơi học sinh mua đồ ăn trong giờ ra chơi | 1
+AWARD CEREMONY | Buổi lễ trao phần thưởng cho học sinh giỏi | 2
+OPEN DAY | Ngày trường mở cửa cho khách tới tham quan | 2
+STUDY GROUP | Nhóm vài bạn hẹn nhau cùng ôn bài | 2
+MOCK EXAM | Kỳ thi thử tổ chức trước kỳ thi thật | 2
+PASS MARK | Mức điểm tối thiểu để được coi là đỗ | 2
+ACADEMIC PROBATION | Diện bị cảnh cáo học vụ vì điểm quá thấp | 3
+CREDIT TRANSFER | Việc chuyển tín chỉ đã học sang trường khác | 3
+THESIS DEFENSE | Buổi đứng trước hội đồng trình bày luận văn | 3
+PLAGIARISM CHECK | Việc rà soát bài viết xem có sao chép hay không | 3
+PEER ASSESSMENT | Việc sinh viên chấm bài lẫn nhau theo tiêu chí | 3
+LEARNING OUTCOME | Chuẩn đầu ra mà người học phải đạt sau môn học | 3
+TEACHING ASSISTANT | Trợ giảng giúp giảng viên chấm bài và hướng dẫn | 3
+TENURE | Chế độ biên chế trọn đời cho giáo sư đại học | 3
+ACCREDITATION | Việc một tổ chức công nhận chất lượng của trường | 3
+SCHOLARSHIP FUND | Quỹ tiền dành để cấp học bổng cho sinh viên | 3
+EXTENSION DEADLINE | Hạn nộp bài được gia hạn thêm cho sinh viên | 3
+WITHDRAWAL | Việc rút khỏi một môn học giữa kỳ | 3

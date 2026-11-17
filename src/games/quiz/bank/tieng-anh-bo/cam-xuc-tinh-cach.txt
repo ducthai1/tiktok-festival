@@ -8,9 +8,9 @@ MAGNANIMOUS | Đức tính đại lượng, cao thượng, tha thứ lỗi lầm
 BENEVOLENT | Tấm lòng nhân từ, phúc hậu, bác ái thương yêu muôn loài | 3
 TRANQUILITY | Cảm giác tĩnh lặng, an yên thanh bình nơi tâm hồn | 3
 SOLITUDE | Khoảng thời gian một mình thanh tịnh trong cô độc an nhiên | 3
-SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất hạnh của người khác | 4
-PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ | 4
-GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt | 4
+SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất hạnh của người khác | 3
+PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ | 3
+GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt | 3
 GREEDY | Tham lam chỉ muốn giữ tất cả cho riêng mình | 2
 HUMBLE | Khiêm tốn nhã nhặn không khoe khoang | 2 | MODEST
 ARROGANT | Kiêu ngạo tự cao coi thường người khác | 2

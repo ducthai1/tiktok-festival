@@ -335,3 +335,30 @@ MORTGAGE | Vay thế chấp bất động sản để mua nhà | 2
 CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ | 2
 DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn | 2
 JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án | 2
+WORKDAY | Một ngày đi làm trong tuần | 1
+LUNCH BREAK | Giờ nghỉ buổi trưa để ăn cơm | 1
+NOTEPAD | Tập giấy nhỏ để ghi nhanh vài dòng | 1
+PARCEL | Gói hàng bọc kín gửi qua bưu điện | 1
+WAREHOUSE WORKER | Người làm việc trong kho, xếp và lấy hàng | 1
+OPENING HOUR | Giờ cửa hàng bắt đầu mở cửa đón khách | 1
+CLOSING TIME | Giờ cửa hàng ngừng bán và đóng cửa | 1
+SHOP ASSISTANT | Nhân viên bán hàng đứng quầy tư vấn cho khách | 1
+QUEUE | Hàng người đứng nối đuôi nhau chờ tới lượt | 1
+SALE | Đợt hạ giá để đẩy hàng đi nhanh | 1
+BARGAIN HUNTER | Người săn lùng hàng giảm giá | 1
+PRICE TAG | Mẩu giấy nhỏ ghi giá gắn trên món hàng | 1
+SHOPPING CART | Xe đẩy bốn bánh lấy hàng trong siêu thị | 1
+CHECKOUT COUNTER | Quầy tính tiền ở lối ra siêu thị | 1
+SMALL BUSINESS | Doanh nghiệp quy mô nhỏ vài nhân sự | 1
+OWNER | Người sở hữu cửa hàng hoặc công ty | 1
+CUSTOMER REVIEW | Nhận xét khách để lại sau khi mua hàng | 1
+WORKING HOURS | Khung giờ phải có mặt ở nơi làm việc | 1
+JOB FAIR | Hội chợ nơi nhiều công ty tới tuyển người cùng lúc | 1
+NEW HIRE | Người vừa được nhận vào làm | 1
+TRIAL PERIOD | Khoảng thời gian thử trước khi quyết định chính thức | 1
+PAY RAISE | Việc được tăng mức lương hằng tháng | 1
+WORK EMAIL | Hộp thư điện tử dùng cho công việc công ty cấp | 1
+TEAM MEETING | Buổi họp ngắn của cả nhóm đầu tuần | 1
+OFFICE HOURS | Khung giờ cơ quan làm việc và tiếp khách | 1
+SICK DAY | Ngày nghỉ vì ốm, có báo với công ty | 1
+BUSINESS CARD HOLDER | Hộp nhỏ đựng danh thiếp trên bàn làm việc | 1

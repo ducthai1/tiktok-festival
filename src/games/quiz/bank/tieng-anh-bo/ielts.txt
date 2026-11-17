@@ -72,11 +72,11 @@ CRITERION | Một tiêu chí đơn lẻ dạng số ít, gốc tiếng Hy Lạp 
 GLOSSARY | Từ điển chuyên ngành | 3
 FOREWORD | Lời nói đầu | 3 | INTRODUCTION
 MANUSCRIPT | Bản thảo | 2
-EXTRAPOLATION | Suy rộng từ dữ liệu | 4
-DENOUEMENT | Kết thúc câu chuyện | 4 | ENDING
-MONOGRAPH | Luận thuyết chuyên sâu | 4 | TREATISE
+EXTRAPOLATION | Suy rộng từ dữ liệu | 3
+DENOUEMENT | Kết thúc câu chuyện | 3 | ENDING
+MONOGRAPH | Luận thuyết chuyên sâu | 3 | TREATISE
 MEMOIR | Hồi ký cá nhân | 2 | AUTOBIOGRAPHY
-ECLOGUE | Bài thơ vùng quê | 4
+ECLOGUE | Bài thơ vùng quê | 3
 EPOCH | Thời kỳ lịch sử | 2 | ERA
 ENERGY | Năng lượng | 1
 ECONOMY | Nền kinh tế | 1
@@ -317,7 +317,7 @@ SUPERFLUOUS | Thừa thãi không cần thiết vượt mức đòi hỏi | 3
 PARAMOUNT | Tối quan trọng, có tầm quan trọng tối thượng hàng đầu | 3
 EXPONENTIAL | Tăng trưởng theo cấp số nhân thần tốc | 3
 MARGINAL | Thuộc về phần rìa, mép hoặc chênh lệch nhỏ | 3
-SALUBRIOUS | Lành mạnh bổ ích tốt cho sức khỏe cơ thể | 4
+SALUBRIOUS | Lành mạnh bổ ích tốt cho sức khỏe cơ thể | 3
 PERVASIVE | Lan tỏa tỏa khắp len lỏi vào mọi ngóc ngách xã hội | 3
 CATALYST | Chất xúc tác đẩy nhanh tiến trình thay đổi | 2
 IMPEDIMENT | Từ trang trọng chỉ cái làm chậm bước tiến, cũng là tật nói lắp | 3
@@ -327,7 +327,7 @@ EXEMPLIFY | Minh họa làm gương mẫu tiêu biểu cho một luận điểm 
 ELUCIDATE | Làm sáng tỏ giải thích cặn kẽ một vấn đề phức tạp | 3
 REFUTE | Bác bỏ luận điệu sai trái đưa ra phản biện | 3
 CONCEDE | Thừa nhận nhượng bộ một phần lý lẽ của đối phương | 3
-PREPONDERANCE | Sự vượt trội chiếm ưu thế áp đảo về số lượng | 4
+PREPONDERANCE | Sự vượt trội chiếm ưu thế áp đảo về số lượng | 3
 DISSEMINATE | Truyền bá phổ biến rộng rãi thông tin kiến thức | 3
 PROPAGATE | Nhân giống hoặc tuyên truyền lan rộng quan điểm | 3
 ASPIRATION | Khát vọng hoài bão ước mơ cháy bỏng trong lòng | 2
@@ -337,8 +337,8 @@ DELINEATE | Phác thảo mô tả rõ ràng các đặc điểm hoặc ranh gi�
 ENUMERATE | Liệt kê từng mục một cách có hệ thống | 3
 HYPOTHESIZE | Đặt ra giả thuyết để kiểm chứng bằng bằng chứng | 3
 CORROBORATE | Xác nhận củng cố thêm bằng chứng hoặc lập luận | 3
-EXTRAPOLATE | Ngoại suy dự đoán xu hướng vượt ra ngoài dữ liệu có sẵn | 4
-INTERPOLATE | Nội suy ước tính giá trị nằm giữa các điểm dữ liệu đã biết | 4
+EXTRAPOLATE | Ngoại suy dự đoán xu hướng vượt ra ngoài dữ liệu có sẵn | 3
+INTERPOLATE | Nội suy ước tính giá trị nằm giữa các điểm dữ liệu đã biết | 3
 CORROBORATION | Bằng chứng bổ sung xác nhận tính đúng đắn của một tuyên bố | 3
 DICHOTOMY | Sự phân đôi đối lập rõ ràng giữa hai điều tương phản | 3
 EUPHEMISM | Cách nói giảm nói tránh thay từ thô tục bằng từ nhẹ hơn | 3
@@ -346,3 +346,32 @@ ABSTAIN | Kiềm chế không tham gia bỏ phiếu hoặc không ăn uống th�
 SCRUTINIZE | Xem xét kỹ lưỡng kiểm tra chi tiết từng phần | 3
 SYNTHESIZE | Tổng hợp kết hợp nhiều ý tưởng hoặc thông tin thành một cái mới | 3
 CONTEMPLATE | Suy ngẫm suy nghĩ sâu sắc về điều gì đó | 3
+CITY LIFE | Cuộc sống ở đô thị đông đúc nhộn nhịp | 1
+COUNTRYSIDE | Vùng quê yên tĩnh nhiều ruộng đồng | 1
+PUBLIC TRANSPORT | Xe buýt tàu điện chở chung nhiều người | 1
+TRAFFIC | Dòng xe cộ đi lại trên đường | 1
+RECYCLING | Việc gom rác đem tái chế thành đồ mới | 1
+READING | Việc đọc sách báo để mở mang hiểu biết | 1
+TRAVELLING | Việc đi đây đi đó tới những nơi mới | 1
+LANGUAGE | Hệ thống tiếng nói và chữ viết của một dân tộc | 1
+EXAM PRESSURE | Áp lực nặng nề trước mỗi kỳ thi | 1
+HOMEWORK LOAD | Lượng bài tập về nhà phải làm mỗi tối | 1
+CLASS SIZE | Số học sinh ngồi trong một lớp | 1
+PRACTICE | Việc làm đi làm lại cho thành thạo | 1
+SUCCESS | Kết quả tốt đẹp đạt được sau cố gắng | 1
+FAILURE | Việc không đạt được điều mình nhắm tới | 1
+CHOICE | Việc chọn một trong nhiều khả năng | 1
+PAST | Khoảng thời gian đã trôi qua | 1
+MODERN LIFE | Lối sống thời nay nhiều tiện nghi và vội vã | 1
+FREE TIME ACTIVITY | Việc người ta làm trong lúc rảnh | 1
+HEALTHY FOOD | Đồ ăn tốt cho cơ thể, ít dầu mỡ đường | 1
+DAILY ROUTINE | Chuỗi việc lặp lại mỗi ngày từ sáng tới tối | 1
+PART-TIME JOB | Việc làm thêm vài giờ ngoài giờ học chính | 1
+SOCIAL LIFE | Đời sống giao tiếp bạn bè ngoài công việc | 1
+ONLINE CLASS | Buổi học qua màn hình, thầy trò không gặp nhau | 1
+GROUP DISCUSSION | Buổi cả nhóm ngồi bàn bạc một đề tài | 1
+NOTE TAKING | Việc ghi lại ý chính trong lúc nghe giảng | 1
+TIME MANAGEMENT | Cách sắp xếp thời gian cho kịp mọi việc | 1
+PUBLIC SPEAKING | Việc đứng nói trước đám đông | 1
+EYE CONTACT | Việc nhìn thẳng vào mắt người đối diện khi nói | 1
+FIRST IMPRESSION | Cảm nhận ban đầu về ai đó trong vài giây gặp mặt | 1
