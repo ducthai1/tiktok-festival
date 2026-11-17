@@ -278,7 +278,7 @@ DEBTOR | Bên mang nợ người vay nợ | 2
 SCHOOL GATE | Cổng trường nơi phụ huynh đứng chờ đón con | 1
 SCHOOL BELL | Chuông reo báo vào lớp và tan học | 1
 BLACKBOARD ERASER | Miếng lau xoá chữ phấn trên bảng | 1
-SCHOOL YARD | Khoảng sân rộng giữa các dãy lớp học | 1
+SCHOOL NURSE | Y tá trực phòng y tế của trường | 1
 SCHOOL FEE | Khoản tiền đóng cho nhà trường mỗi kỳ | 1
 PARENT MEETING | Buổi họp giữa giáo viên và phụ huynh | 1
 MORNING EXERCISE | Bài thể dục giữa giờ cả trường cùng tập | 1
