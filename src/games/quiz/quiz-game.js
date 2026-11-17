@@ -527,15 +527,18 @@ export function createQuizGame({
           const { slow } = listenAt.shift();
           if (pronounce) fx.push({ kind: 'quizListen', word: pronounce(q), slow });
         }
-        // gợi ý tự động khi đã qua 50% và 75% thời gian (chỉ đoán chữ)
+        // Gợi ý tự động ở mốc 50% và 75% thời gian (chỉ đoán chữ).
+        // Mở theo ĐỘ DÀI chứ không phải mỗi lần 1 chữ: từ dài lộ nhanh hơn, nếu không
+        // "MAGNIFYING GLASS" (15 chữ) cũng chỉ được 2 gợi ý như "CAKE" và không ai đoán nổi.
+        // Mốc 50% chừa lại nửa số chữ, mốc 75% chừa đúng 1-2 ô cuối.
         const ratio = (now - countStart) / totalMs();
         if (autoHints && kind === 'text' && !q.math) {
           if (autoHintStep === 0 && ratio >= 0.5) {
             autoHintStep = 1;
-            revealLetters(1, Math.max(1, Math.ceil(slots.length / 3)));
+            revealLetters(slots.length, Math.max(2, Math.ceil(slots.length / 2)));
           } else if (autoHintStep === 1 && ratio >= 0.75) {
             autoHintStep = 2;
-            revealLetters(1, Math.max(1, Math.ceil(slots.length / 4)));
+            revealLetters(slots.length, slots.length > 6 ? 2 : 1);
           }
         }
         // Chỉ cho phép kết thúc sớm khi bảng top (6 người) đã kín và đã qua 5s kể từ câu đúng đầu tiên
