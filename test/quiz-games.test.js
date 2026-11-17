@@ -36,6 +36,16 @@ test('quiz: every tab is registered in the hub and allowed as START_GAME', () =>
   }
 });
 
+test('english: no Vietnamese answer is accepted — the clue would give it away', () => {
+  // Gợi ý hiện trên màn hình là tiếng Việt. Nhận thêm alias tiếng Việt thì người xem chỉ cần
+  // chép lại chữ vừa đọc là thắng (ATOM | "Hạt nguyên tử…" ← gõ "nguyên tử"). 2161 alias như vậy
+  // đã bị gỡ 17/11/2026; test này chặn chúng quay lại.
+  const VN = /[\u00e0-\u00e3\u00e8-\u00ea\u00ec\u00ed\u00f2-\u00f5\u00f9\u00fa\u00fd\u0103\u0111\u0129\u0169\u01b0\u1ea0-\u1ef9]/i;
+  for (const q of [...loadEnglishQuestions(), ...Object.values(loadEnglishSets()).flat()]) {
+    for (const a of q.accept) assert.ok(!VN.test(a), `${q.answer} nhận "${a}"`);
+  }
+});
+
 test('english sets: a word lives in exactly one gift set (luật ở docs/bank-trung-cheo.md)', () => {
   const owner = new Map();
   for (const [id, list] of Object.entries(loadEnglishSets())) {

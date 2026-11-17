@@ -1,5 +1,5 @@
 # Tiếng Anh · Đồ ăn, đồ uống
-APRICOT | Quả mơ vàng ươm ngâm đường chua ngọt | 2 | QUẢ MƠ, TRÁI MƠ
-PLUM | Quả mận giòn chua chấm muối ớt | 1 | QUẢ MẬN, TRÁI MẬN
-SESAME | Hạt vừng hạt mè rắc lên chè bánh | 2 | MÈ, VỪNG, HẠT MÈ
-OMELET | Món trứng cuộn tráng vàng ruộm bữa sáng | 1 | TRỨNG CUỘN, TRỨNG RÁN, OMELETTE
+APRICOT | Quả mơ vàng ươm ngâm đường chua ngọt | 2
+PLUM | Quả mận giòn chua chấm muối ớt | 1
+SESAME | Hạt vừng hạt mè rắc lên chè bánh | 2
+OMELET | Món trứng cuộn tráng vàng ruộm bữa sáng | 1 | OMELETTE

@@ -234,152 +234,152 @@ CHICKENPOX | Bệnh thuỷ đậu | 3 | CHICKEN POX
 MEASLES | Bệnh sởi | 3
 FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS, EXHAUSTION
 SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
-CARDIOLOGY | Khoa tim mạch | 3 | KHOA TIM MẠCH
-IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3 | TIÊM CHỦNG
+CARDIOLOGY | Khoa tim mạch | 3
+IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3
 PEDIATRICS | Khoa nhi / y học trẻ em | 3 | KHOA NHI
-PHYSICIAN | Bác sĩ điều trị | 2 | BÁC SĨ
-VACCINATION | Tiêm vắc-xin ngừa bệnh | 2 | TIÊM VẮC XIN
-CHRONIC | Bệnh mãn tính dai dẳng | 3 | MÃN TÍNH
-MALIGNANT | Khối u ác tính / nguy hiểm | 3 | ÁC TÍNH
-BENIGN | Khối u lành tính | 3 | LÀNH TÍNH
-PARALYSIS | Tình trạng liệt / mất cảm giác | 3 | TÌNH TRẠNG LIỆT
-TRANSPLANT | Ca ghép tạng nội tạng | 3 | GHÉP TẠNG
-CARDIAC | Thuộc về tim mạch | 3 | TIM MẠCH
-DERMATOLOGY | Khoa da liễu | 3 | KHOA DA LIỄU
-NEUROLOGY | Khoa thần kinh | 3 | KHOA THẦN KINH
-ONCOLOGY | Khoa ung bướu | 3 | KHOA UNG BƯỚU
-PATHOLOGY | Bệnh lý học | 3 | BỆNH LÝ HỌC
-PSYCHIATRY | Khoa tâm thần | 3 | KHOA TÂM THẦN
+PHYSICIAN | Bác sĩ điều trị | 2
+VACCINATION | Tiêm vắc-xin ngừa bệnh | 2
+CHRONIC | Bệnh mãn tính dai dẳng | 3
+MALIGNANT | Khối u ác tính / nguy hiểm | 3
+BENIGN | Khối u lành tính | 3
+PARALYSIS | Tình trạng liệt / mất cảm giác | 3
+TRANSPLANT | Ca ghép tạng nội tạng | 3
+CARDIAC | Thuộc về tim mạch | 3
+DERMATOLOGY | Khoa da liễu | 3
+NEUROLOGY | Khoa thần kinh | 3
+ONCOLOGY | Khoa ung bướu | 3
+PATHOLOGY | Bệnh lý học | 3
+PSYCHIATRY | Khoa tâm thần | 3
 RADIOLOGY | Khoa chẩn đoán hình ảnh / X-quang | 3 | X QUANG
-REHABILITATION | Phục hồi chức năng | 3 | PHỤC HỒI CHỨC NĂNG
-SYNDROME | Hội chứng bệnh lý | 3 | HỘI CHỨNG
-ABDOMEN | Vùng bụng | 2 | BỤNG
-BONE MARROW | Tủy xương | 3 | TỦY XƯƠNG
-CANCER | Bệnh ung thư | 1 | UNG THƯ
+REHABILITATION | Phục hồi chức năng | 3
+SYNDROME | Hội chứng bệnh lý | 3
+ABDOMEN | Vùng bụng | 2
+BONE MARROW | Tủy xương | 3
+CANCER | Bệnh ung thư | 1
 CHOLESTEROL | Chất mỡ trong máu | 2 | CHOLESTEROL
-CONCUSSION | Sự chấn động não | 3 | CHẤN THƯƠNG NÃO
-DIZZINESS | Cơn chóng mặt | 1 | CHÓNG MẶT
-GENETICS | Di truyền học | 3 | DI TRUYỀN HỌC
-HEART ATTACK | Cơn đau tim / đột quỵ tim | 1 | ĐAU TIM
-HEMOGLOBIN | Huyết sắc tố | 3 | HUYẾT SẮC TỐ
-INFLAMMATION | Sự viêm nhiễm | 3 | VIÊM
-INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3 | CHĂM SÓC ĐẶC BIỆT
-LABORATORY | Phòng thí nghiệm | 1 | PHÒNG THÍ NGHIỆM
-MEDICATION | Thuốc điều trị | 2 | THUỐC
-PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc | 3 | THUỐC KHÁNG SINH
-PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3 | BÁC SĨ
-RESPIRATORY | Thuộc về hô hấp | 3 | HÔ HẤP
-SPECIALIST | Bác sĩ chuyên khoa | 2 | CHUYÊN KHOA
-STERILIZATION | Sự tiệt trùng | 3 | TIỆT TRÙNG
-THERAPY | Liệu pháp điều trị | 2 | LIỆU PHÁP
-ULTRASOUND | Siêu âm | 2 | SIÊU ÂM
-URINE | Nước tiểu | 2 | NƯỚC TIỂU
-VENTILATOR | Máy trợ thở | 3 | MÁY TRỢ THỞ
-BIOPSY | Kỹ thuật sinh thiết lấy một mẩu mô nhỏ để làm xét nghiệm tế bào | 3 | SINH THIẾT
-PROGNOSIS | Tiên lượng diễn biến và khả năng phục hồi của căn bệnh | 3 | TIÊN LƯỢNG
-METABOLISM | Quá trình trao đổi chất và chuyển hóa năng lượng trong cơ thể | 2 | TRAO ĐỔI CHẤT
-RESUSCITATION | Kỹ thuật hồi sức cấp cứu tim phổi ngừng đập (CPR) | 3 | HỒI SỨC CẤP CỨU
-INCISION | Vết rạch phẫu thuật chính xác bằng dao mổ trên da bệnh nhân | 3 | VẾT RẠCH MỔ
-DEFICIENCY | Tình trạng thiếu hụt vitamin hoặc vi chất dinh dưỡng cần thiết | 2 | THIẾU HỤT
-HEMORRHAGE | Hiện tượng xuất huyết chảy máu ồ ạt trong cơ thể | 3 | XUẤT HUYẾT
-TOXICOLOGY | Độc chất học - ngành khoa học nghiên cứu về các chất độc hại | 3 | ĐỘC CHẤT HỌC
-OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay | 2 | BỆNH NHÂN NGOẠI TRÚ
-INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm | 2 | BỆNH NHÂN NỘI TRÚ
-SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em | 1 | SIRO THUỐC, THUỐC SIRO
-GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương | 2 | GẠC TIỆT TRÙNG
-COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương | 2 | BÔNG Y TẾ
-DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ | 2 | THUỐC SÁT TRÙNG, ANTISEPTIC
-IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu | 2 | TRUYỀN DỊCH, DRIP
-BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người | 2 | THÂN NHIỆT
-CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người | 2 | ỚN LẠNH, RÉT RUN
-CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp | 2 | NGHẸT MŨI
-VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày | 2 | NÔN MỬA, THROWING UP
-INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn | 2 | KHÓ TIÊU, ĐẦY BỤNG
-HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản | 2 | Ợ CHUA, TRÀO NGƯỢC
-SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương | 2 | SƯNG TẤY, SƯNG PHÙ
-DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp | 3 | TRẬT KHỚP
-CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi | 2 | CẶP NẠNG, NẠNG
-DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn | 3 | MÁY SỐC ĐIỆN
-DIALYSIS | Thủ thuật chạy thận nhân tạo lọc máu lọc độc | 3 | CHẠY THẬN
-CHEMOTHERAPY | Hóa trị liệu tiêu diệt tế bào ung thư quái ác | 3 | HÓA TRỊ, CHEMO
-RADIOTHERAPY | Xạ trị dùng tia phóng xạ chiếu diệt khối u | 3 | XẠ TRỊ
-TUMOR | Khối u bất thường phát triển trong cơ thể | 2 | KHỐI U, TUMOUR
-LESION | Vết tổn thương thực thể trên mô cơ quan | 3 | VẾT TỔN THƯƠNG
-ORTHOPEDICS | Chuyên khoa xương khớp điều trị bệnh cơ xương | 2 | CHỈNH HÌNH HỌC
-ENDOCRINOLOGY | Khoa nội tiết nghiên cứu các hormone và tuyến nội tiết | 3 | NỘI TIẾT HỌC
-GASTROENTEROLOGY | Khoa tiêu hóa điều trị bệnh dạ dày và đường ruột | 3 | TIÊU HÓA HỌC
-PULMONOLOGY | Khoa hô hấp điều trị các bệnh phổi và đường thở | 3 | HÔ HẤP HỌC
-OPHTHALMOLOGY | Khoa mắt chuyên khám và điều trị các bệnh về mắt | 3 | NHÃN KHOA
-OTOLARYNGOLOGY | Khoa tai mũi họng điều trị bệnh tai mũi và cổ họng | 3 | TAI MŨI HỌNG
-PATHOGEN | Mầm bệnh vi sinh vật gây ra bệnh cho cơ thể | 2 | MẦM BỆNH
-VIRUS | Vi-rút mầm bệnh nhỏ hơn vi khuẩn cần tế bào chủ để sống | 1 | VI-RÚT
-FUNGUS | Nấm sinh vật gây bệnh nấm da hoặc nhiễm trùng | 1 | NẤM
-PARASITE | Ký sinh trùng sinh vật sống ký sinh trong hoặc ngoài cơ thể | 2 | KÝ SINH TRÙNG
-ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống lại mầm bệnh | 2 | KHÁNG THỂ
-ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể | 3 | KHÁNG NGUYÊN
-LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng | 2 | HẠCH BẠCH HUYẾT
-SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng | 3 | NHIỄM TRÙNG HUYẾT
-CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm | 1 | BỆNH MÃN TÍNH
-ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội | 2 | BỆNH CẤP TÍNH
-TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi | 2 | BỆNH GIAI ĐOẠN CUỐI
-REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư | 3 | BỆNH ĐỢT HIM
-RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi | 2 | TÁI PHÁT
-TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng | 3 | PHÂN LOẠI CẤP CỨU
-VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ | 1 | DẤU HIỆU SINH TỒN
-OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 | 2 | ĐỘ BÃO HÒA OXY
-ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim | 3 | ĐIỆN TÂM ĐỒ
-MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể | 2 | CHỤP CỘNG HƯỞNG TỪ
-CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể | 2 | CHỤP CẮT LỚP
-ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể | 2 | NỘI SOI
-LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ | 3 | NỘI SOI Ổ BỤNG
-SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật | 2 | KHÂu VẾT THƯƠNG
-WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương | 2 | LÀnh VẾT THƯƠNG
-PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị | 1 | VẬT LÝ TRỊ LIỆU
-OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày | 3 | LIỆU PHÁP NGHỀ NGHIỆP
-SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt | 2 | TRỊ LIỆU NGÔN NGỮ
-PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc | 3 | CHĂM SÓC GIẢM NHẸ
-HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối | 3 | CHĂM SÓC CUỐI ĐỜI
-ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống | 1 | HIẾN TẠNG
-PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất | 3 | CHI GIẢ
-CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới | 3 | THỬ NGHIỆM LÂM SÀNG
-PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm | 2 | GIẢ DƯỢC
-DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần | 1 | LIỀU LƯỢNG
-CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật | 3 | CHỐNG CHỈ ĐỊNH
-ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức | 3 | PHẢN VỆ
-IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể | 1 | MIỄN DỊCH
-HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ | 3 | MIỄN DỊCH CỘNG ĐỒNG
-PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới | 1 | ĐẠI DỊCH
-ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực | 3 | BỆNH ĐẶC HỮU
-OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi | 2 | BÙNG PHÁT DỊCH
-CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh | 2 | TRUY VẾT
-INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng | 2 | THỜI GIAN Ủ BỆNH
-ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì | 2 | KHÔNG TRIỆU CHỨNG
-COMORBIDITY | Bệnh đồng mắc hai hoặc nhiều bệnh cùng tồn tại ở một người | 3 | BỆNH ĐỒNG MẮC
-MORTALITY RATE | Tỷ lệ tử vong số người chết trên tổng số ca bệnh | 2 | TỶ LỆ TỬ VONG
-MORBIDITY | Tỷ lệ mắc bệnh hoặc tình trạng bệnh tật trong dân số | 3 | TỶ LỆ MẮC BỆNH
-MALNUTRITION | Suy dinh dưỡng thiếu hụt dinh dưỡng cần thiết cho cơ thể | 2 | SUY DINH DƯỠNG
-OBESITY | Béo phì tình trạng tích lũy mỡ quá mức gây hại sức khỏe | 1 | BÉO PHÌ
-STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử vong | 1 | ĐỘT QUỴ
-AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể | 3 | BỆNH TỰ MIỄN
-ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân | 2 | VIÊM KHỚP
-ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin | 2 | THIẾU MÁU, ANAEMIA
-VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não | 2 | CHÓNG MẶT
-DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài | 1 | TRẦM CẢM
-ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát | 1 | LO ÂU
-TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc | 1 | CHẤN THƯƠNG
-POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD | 3 | RỐI LOẠN PTSD
-BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm | 3 | RỐI LOẠN LƯỠNG CỰC
-SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng | 3 | TÂM THẦN PHÂN LIỆT
-DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi | 2 | SA SÚT TRÍ TUỆ
+CONCUSSION | Sự chấn động não | 3
+DIZZINESS | Cơn chóng mặt | 1
+GENETICS | Di truyền học | 3
+HEART ATTACK | Cơn đau tim / đột quỵ tim | 1
+HEMOGLOBIN | Huyết sắc tố | 3
+INFLAMMATION | Sự viêm nhiễm | 3
+INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3
+LABORATORY | Phòng thí nghiệm | 1
+MEDICATION | Thuốc điều trị | 2
+PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc | 3
+PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3
+RESPIRATORY | Thuộc về hô hấp | 3
+SPECIALIST | Bác sĩ chuyên khoa | 2
+STERILIZATION | Sự tiệt trùng | 3
+THERAPY | Liệu pháp điều trị | 2
+ULTRASOUND | Siêu âm | 2
+URINE | Nước tiểu | 2
+VENTILATOR | Máy trợ thở | 3
+BIOPSY | Kỹ thuật sinh thiết lấy một mẩu mô nhỏ để làm xét nghiệm tế bào | 3
+PROGNOSIS | Tiên lượng diễn biến và khả năng phục hồi của căn bệnh | 3
+METABOLISM | Quá trình trao đổi chất và chuyển hóa năng lượng trong cơ thể | 2
+RESUSCITATION | Kỹ thuật hồi sức cấp cứu tim phổi ngừng đập (CPR) | 3
+INCISION | Vết rạch phẫu thuật chính xác bằng dao mổ trên da bệnh nhân | 3
+DEFICIENCY | Tình trạng thiếu hụt vitamin hoặc vi chất dinh dưỡng cần thiết | 2
+HEMORRHAGE | Hiện tượng xuất huyết chảy máu ồ ạt trong cơ thể | 3
+TOXICOLOGY | Độc chất học - ngành khoa học nghiên cứu về các chất độc hại | 3
+OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay | 2
+INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm | 2
+SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em | 1
+GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương | 2
+COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương | 2
+DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ | 2 | ANTISEPTIC
+IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu | 2 | DRIP
+BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người | 2
+CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người | 2
+CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp | 2
+VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày | 2 | THROWING UP
+INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn | 2
+HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản | 2
+SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương | 2
+DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp | 3
+CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi | 2
+DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn | 3
+DIALYSIS | Thủ thuật chạy thận nhân tạo lọc máu lọc độc | 3
+CHEMOTHERAPY | Hóa trị liệu tiêu diệt tế bào ung thư quái ác | 3 | CHEMO
+RADIOTHERAPY | Xạ trị dùng tia phóng xạ chiếu diệt khối u | 3
+TUMOR | Khối u bất thường phát triển trong cơ thể | 2 | TUMOUR
+LESION | Vết tổn thương thực thể trên mô cơ quan | 3
+ORTHOPEDICS | Chuyên khoa xương khớp điều trị bệnh cơ xương | 2
+ENDOCRINOLOGY | Khoa nội tiết nghiên cứu các hormone và tuyến nội tiết | 3
+GASTROENTEROLOGY | Khoa tiêu hóa điều trị bệnh dạ dày và đường ruột | 3
+PULMONOLOGY | Khoa hô hấp điều trị các bệnh phổi và đường thở | 3
+OPHTHALMOLOGY | Khoa mắt chuyên khám và điều trị các bệnh về mắt | 3
+OTOLARYNGOLOGY | Khoa tai mũi họng điều trị bệnh tai mũi và cổ họng | 3
+PATHOGEN | Mầm bệnh vi sinh vật gây ra bệnh cho cơ thể | 2
+VIRUS | Vi-rút mầm bệnh nhỏ hơn vi khuẩn cần tế bào chủ để sống | 1
+FUNGUS | Nấm sinh vật gây bệnh nấm da hoặc nhiễm trùng | 1
+PARASITE | Ký sinh trùng sinh vật sống ký sinh trong hoặc ngoài cơ thể | 2
+ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống lại mầm bệnh | 2
+ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể | 3
+LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng | 2
+SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng | 3
+CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm | 1
+ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội | 2
+TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi | 2
+REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư | 3
+RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi | 2
+TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng | 3
+VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ | 1
+OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 | 2
+ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim | 3
+MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể | 2
+CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể | 2
+ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể | 2
+LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ | 3
+SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật | 2
+WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương | 2
+PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị | 1
+OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày | 3
+SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt | 2
+PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc | 3
+HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối | 3
+ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống | 1
+PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất | 3
+CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới | 3
+PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm | 2
+DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần | 1
+CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật | 3
+ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức | 3
+IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể | 1
+HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ | 3
+PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới | 1
+ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực | 3
+OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi | 2
+CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh | 2
+INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng | 2
+ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì | 2
+COMORBIDITY | Bệnh đồng mắc hai hoặc nhiều bệnh cùng tồn tại ở một người | 3
+MORTALITY RATE | Tỷ lệ tử vong số người chết trên tổng số ca bệnh | 2
+MORBIDITY | Tỷ lệ mắc bệnh hoặc tình trạng bệnh tật trong dân số | 3
+MALNUTRITION | Suy dinh dưỡng thiếu hụt dinh dưỡng cần thiết cho cơ thể | 2
+OBESITY | Béo phì tình trạng tích lũy mỡ quá mức gây hại sức khỏe | 1
+STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử vong | 1
+AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể | 3
+ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân | 2
+ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin | 2 | ANAEMIA
+VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não | 2
+DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài | 1
+ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát | 1
+TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc | 1
+POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD | 3
+BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm | 3
+SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng | 3
+DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi | 2
 ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi | 2 | ALZHEIMER
 PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động | 2 | PARKINSON
-EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ | 2 | ĐỘNG KINH
-MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng | 1 | ĐAU NỬA ĐẦU
-KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận | 1 | SỎI THẬN
-GALLSTONE | Sỏi mật cặn cholesterol hoặc muối mật tích tụ trong túi mật | 2 | SỎI MẬT
-APPENDICITIS | Viêm ruột thừa cần phẫu thuật khẩn cấp | 2 | VIÊM RUỘT THỪA
-HERNIA | Thoát vị nội tạng chui ra khỏi vị trí bình thường | 2 | THOÁT VỊ
-CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ | 2 | ĐỤC THỦY TINH THỂ
-GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác | 3 | TĂNG NHÃN ÁP
-HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể | 3 | THIẾU OXY MÔ
-COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông | 3 | ĐÔNG MÁU
+EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ | 2
+MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng | 1
+KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận | 1
+GALLSTONE | Sỏi mật cặn cholesterol hoặc muối mật tích tụ trong túi mật | 2
+APPENDICITIS | Viêm ruột thừa cần phẫu thuật khẩn cấp | 2
+HERNIA | Thoát vị nội tạng chui ra khỏi vị trí bình thường | 2
+CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ | 2
+GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác | 3
+HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể | 3
+COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông | 3

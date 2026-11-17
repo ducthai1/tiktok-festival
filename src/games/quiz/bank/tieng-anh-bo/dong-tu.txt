@@ -132,64 +132,64 @@ AVAILABLE | Có sẵn, còn hàng (tính từ) | 3
 RARE | Hiếm (tính từ) | 3 | UNCOMMON, SCARCE
 SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) | 3
 ROUGH | Thô ráp, sần sùi (tính từ) | 3 | COARSE
-ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3 | HOÀN THÀNH
-ACCUMULATE | Tích lũy / gom góp dần | 3 | TÍCH LŨY
-DETERMINE | Quyết tâm / xác định rõ | 2 | QUYẾT TÂM
-FASCINATING | Lôi cuốn / cực kỳ thú vị | 3 | HẤP DẪN
-HESITATE | Do dự / ngập ngừng | 2 | DO DỰ
-IMPRESSIVE | Gây ấn tượng mạnh | 2 | Ấn TƯỢNG
-MAINTAIN | Duy trì / giữ vững | 2 | DUY TRÌ
-OBVIOUS | Rõ ràng / hiển nhiên | 2 | HIỂN NHIÊN
-PERSUADE | Thuyết phục người khác | 2 | THUYẾT PHỤC
-STIMULATE | Kích thích / thúc đẩy | 3 | KÍCH THÍCH
+ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3
+ACCUMULATE | Tích lũy / gom góp dần | 3
+DETERMINE | Quyết tâm / xác định rõ | 2
+FASCINATING | Lôi cuốn / cực kỳ thú vị | 3
+HESITATE | Do dự / ngập ngừng | 2
+IMPRESSIVE | Gây ấn tượng mạnh | 2
+MAINTAIN | Duy trì / giữ vững | 2
+OBVIOUS | Rõ ràng / hiển nhiên | 2
+PERSUADE | Thuyết phục người khác | 2
+STIMULATE | Kích thích / thúc đẩy | 3
 TOLERANT | Vị tha / nhẫn nại khoan dung | 3 | KHOAN DUNG
-ULTIMATE | Cuối cùng / tối thượng | 3 | TỐI THƯỢNG
-VALUABLE | Có giá trị cao / quý giá | 2 | QUÝ GIÁ
-WONDERFUL | Tuyệt vời / kỳ diệu | 1 | TUYỆT VỜI
-ACCURATE | Chính xác tuyệt đối | 2 | CHÍNH XÁC
-APPRECIATE | Trân trọng / cảm kích | 2 | TRÂN TRỌNG
-BOOST | Tăng cường / đẩy mạnh | 2 | TĂNG CƯỜNG
-DEMONSTRATE | Chứng minh / thể hiện rõ | 3 | CHỨNG MINH
-ENCOURAGE | Khuyến khích / động viên | 2 | KHUYẾN KHÍCH
-INNOVATE | Đổi mới sáng tạo | 3 | ĐỔI MỚI
-MAXIMIZE | Tối đa hóa | 2 | TỐI ĐA HÓA
-MINIMIZE | Tối thiểu hóa / giảm bớt | 2 | TỐI THIỂU HÓA
-NAVIGATE | Định hướng / điều hướng | 3 | ĐỊNH HƯỚNG
-PRIORITIZE | Ưu tiên hàng đầu | 3 | ƯU TIÊN
-SIMPLIFY | Đơn giản hóa vấn đề | 2 | ĐƠN GIẢN HÓA
-TRANSFORM | Biến đổi hoàn toàn | 3 | BIẾN ĐỔI
-UNDERTAKE | Đảm nhận nhiệm vụ | 3 | ĐẢM NHẬN
-SERENDIPITY | Sự tình cờ may mắn tìm thấy điều tuyệt vời bất ngờ mà không hề tính trước | 3 | TÌNH CỜ MAY MẮN
-EPHEMERAL | Tính chất phù du, sớm nở tối tàn, ngắn ngủi thoáng qua | 3 | PHÙ DU, NGẮN NGỦI
-RESILIENT | Tính từ chỉ người kiên cường, bất khuất, luôn gượng dậy sau vấp ngã | 3 | KIÊN CƯỜNG
-PRISTINE | Vẻ đẹp hoang sơ, nguyên bản thuần khiết chưa từng bị con người làm ô uế | 3 | NGUYÊN SƠ, THUẦN KHIẾT
-HYPNOTIZE | Hành động dùng thuật thôi miên để đưa người khác vào giấc ngủ điều khiển | 3 | THÔI MIÊN
-PROCRASTINATE | Thói quen xấu hay trì hoãn, lần lữa công việc đến phút chót | 3 | TRÌ HOÃN
-PERSEVERE | Động từ kiên trì, bền chí theo đuổi đam mê vượt qua mọi trở ngại | 3 | KIÊN TRÌ, BỀN CHÍ
-MESMERIZING | Tính từ mê hoặc, quyến rũ khiến người xem không thể rời mắt | 3 | MÊ HOẶC
-INTRIGUING | Điều gì đó vô cùng kỳ thú, khơi gợi trí tò mò muốn tìm hiểu | 3 | KỲ THÚ, TÒ MÒ
-RELENTLESS | Sự nỗ lực bền bỉ không ngừng nghỉ, quyết liệt không bao giờ từ bỏ | 3 | KHÔNG NGỪNG NGHỈ
-EXTRAORDINARY | Điều gì đó phi thường, xuất chúng, vượt xa mức bình thường | 2 | PHI THƯỜNG
-BREATHTAKING | Cảnh tượng đẹp đến nghẹt thở, hùng vĩ choáng ngợp lòng người | 2 | ĐẸP NGHẸT THỞ
-INGENIOUS | Bộ óc tài tình, khéo léo, sáng tạo giải pháp thông minh tài ba | 3 | TÀI TÌNH, THÔNG MINH
-SURREAL | Cảm giác siêu thực, kỳ lạ mơ màng như bước ra từ một giấc chiêm bao | 3 | SIÊU THỰC
-EXAGGERATE | Hành động nói quá lời, phóng đại khoa trương câu chuyện vượt mức thật | 2 | PHÓNG ĐẠI, NÓI QUÁ
-OVERWHELM | Cảm giác bị choáng ngợp, lấn át bởi quá nhiều cảm xúc dồn dập | 2 | CHOÁNG NGỢP
-ENLIGHTEN | Động từ khai sáng, mở mang tâm trí trí tuệ cho người khác | 3 | KHAI SÁNG
-REJUVENATE | Làm trẻ hóa lại làn da, hồi phục sức sống tươi mới tràn trề | 3 | TRẺ HÓA
-DELIBERATE | Hành động có chủ đích cố ý tính toán trước chứ không phải ngẫu nhiên | 3 | CỐ Ý, CÓ CHỦ ĐÍCH
-MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi | 2 | TRÁNG LỆ, NGUY NGA
-INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai | 2 | BẤT KHẢ CHIẾN BẠI
-LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối | 3 | TỎA SÁNG, LẤP LÁNH
-MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe | 3 | DU DƯƠNG, ÊM DỊU
-GIGGLE | Cười khúc khích khúc khích e thẹn che miệng | 2 | CƯỜI KHÚC KHÍCH
-BLINK | Chớp mắt một cái để làm ẩm mắt | 1 | CHỚP MẮT
-NOD | Hành động gật đầu nhẹ để đồng ý tán thành ý kiến | 1 | GẬT ĐẦU
-SHRUG | Hành động nhún hai vai tỏ vẻ không biết hoặc không quan tâm | 2 | NHÚN VAI
+ULTIMATE | Cuối cùng / tối thượng | 3
+VALUABLE | Có giá trị cao / quý giá | 2
+WONDERFUL | Tuyệt vời / kỳ diệu | 1
+ACCURATE | Chính xác tuyệt đối | 2
+APPRECIATE | Trân trọng / cảm kích | 2
+BOOST | Tăng cường / đẩy mạnh | 2
+DEMONSTRATE | Chứng minh / thể hiện rõ | 3
+ENCOURAGE | Khuyến khích / động viên | 2
+INNOVATE | Đổi mới sáng tạo | 3
+MAXIMIZE | Tối đa hóa | 2
+MINIMIZE | Tối thiểu hóa / giảm bớt | 2
+NAVIGATE | Định hướng / điều hướng | 3
+PRIORITIZE | Ưu tiên hàng đầu | 3
+SIMPLIFY | Đơn giản hóa vấn đề | 2
+TRANSFORM | Biến đổi hoàn toàn | 3
+UNDERTAKE | Đảm nhận nhiệm vụ | 3
+SERENDIPITY | Sự tình cờ may mắn tìm thấy điều tuyệt vời bất ngờ mà không hề tính trước | 3
+EPHEMERAL | Tính chất phù du, sớm nở tối tàn, ngắn ngủi thoáng qua | 3
+RESILIENT | Tính từ chỉ người kiên cường, bất khuất, luôn gượng dậy sau vấp ngã | 3
+PRISTINE | Vẻ đẹp hoang sơ, nguyên bản thuần khiết chưa từng bị con người làm ô uế | 3
+HYPNOTIZE | Hành động dùng thuật thôi miên để đưa người khác vào giấc ngủ điều khiển | 3
+PROCRASTINATE | Thói quen xấu hay trì hoãn, lần lữa công việc đến phút chót | 3
+PERSEVERE | Động từ kiên trì, bền chí theo đuổi đam mê vượt qua mọi trở ngại | 3
+MESMERIZING | Tính từ mê hoặc, quyến rũ khiến người xem không thể rời mắt | 3
+INTRIGUING | Điều gì đó vô cùng kỳ thú, khơi gợi trí tò mò muốn tìm hiểu | 3
+RELENTLESS | Sự nỗ lực bền bỉ không ngừng nghỉ, quyết liệt không bao giờ từ bỏ | 3
+EXTRAORDINARY | Điều gì đó phi thường, xuất chúng, vượt xa mức bình thường | 2
+BREATHTAKING | Cảnh tượng đẹp đến nghẹt thở, hùng vĩ choáng ngợp lòng người | 2
+INGENIOUS | Bộ óc tài tình, khéo léo, sáng tạo giải pháp thông minh tài ba | 3
+SURREAL | Cảm giác siêu thực, kỳ lạ mơ màng như bước ra từ một giấc chiêm bao | 3
+EXAGGERATE | Hành động nói quá lời, phóng đại khoa trương câu chuyện vượt mức thật | 2
+OVERWHELM | Cảm giác bị choáng ngợp, lấn át bởi quá nhiều cảm xúc dồn dập | 2
+ENLIGHTEN | Động từ khai sáng, mở mang tâm trí trí tuệ cho người khác | 3
+REJUVENATE | Làm trẻ hóa lại làn da, hồi phục sức sống tươi mới tràn trề | 3
+DELIBERATE | Hành động có chủ đích cố ý tính toán trước chứ không phải ngẫu nhiên | 3
+MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi | 2 | NGUY NGA
+INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai | 2
+LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối | 3
+MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe | 3
+GIGGLE | Cười khúc khích khúc khích e thẹn che miệng | 2
+BLINK | Chớp mắt một cái để làm ẩm mắt | 1
+NOD | Hành động gật đầu nhẹ để đồng ý tán thành ý kiến | 1
+SHRUG | Hành động nhún hai vai tỏ vẻ không biết hoặc không quan tâm | 2
 CHEW | Nhai kỹ thức ăn bằng răng hàm trước khi nuốt | 1 | NHAI
-FLOAT | Nổi bồng bềnh lơ lửng trên mặt nước không bị chìm | 1 | NỔI
-CRAWL | Động tác bò lê bò toài của em bé trên sàn nhà | 1 | BÒ LÊ, BÒ
-STROLL | Hành động đi tản bộ thong dong thảnh thơi ngắm cảnh công viên | 2 | TẢN BỘ, ĐI DẠO
+FLOAT | Nổi bồng bềnh lơ lửng trên mặt nước không bị chìm | 1
+CRAWL | Động tác bò lê bò toài của em bé trên sàn nhà | 1
+STROLL | Hành động đi tản bộ thong dong thảnh thơi ngắm cảnh công viên | 2
 ABANDON | Từ bỏ hoặc ruồng bỏ ai đó | 2 | DESERT
 ABSORB | Hấp thụ chất lỏng hoặc tiếp thu kiến thức | 2 | SOAK UP
 ACKNOWLEDGE | Thừa nhận sự thật hoặc công nhận công lao | 2 | ADMIT
@@ -488,272 +488,272 @@ WITHDRAW | Rút tiền mặt khỏi cây ATM hoặc rút quân | 2 | RETRACT
 WORRY | Lo lắng bồn chồn đứng ngồi không yên | 1 | FRET
 WRECK | Làm đắm tàu phá nát vụn xe | 2 | DESTROY
 YELL | La hét gào to vào mặt | 1 | SCREAM
-ABOLISH | Bãi bỏ một đạo luật hoặc chế độ cũ | 3 | BÃI BỎ, HỦY BỎ
-ACCOMPANY | Đồng hành hoặc đi cùng ai đó | 2 | ĐỒNG HÀNH, ĐI CÙNG
-ACTIVATE | Kích hoạt chức năng hoặc thiết bị | 2 | KÍCH HOẠT
-AMPLIFY | Khuếch đại âm thanh hoặc tín hiệu | 2 | KHUẾCH ĐẠI
-APPOINT | Bổ nhiệm vào một chức vụ | 2 | BỔ NHIỆM
-APPREHEND | Bắt giữ kẻ phạm tội hoặc lĩnh hội | 3 | BẮT GIỮ
-APPROACH | Tiếp cận hoặc đến gần một mục tiêu | 2 | TIẾP CẬN, ĐẾN GẦN
-ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người | 2 | LẮP RÁP, TẬP HỢP
-AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2 | ỦY QUYỀN, CẤP PHÉP
-BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3 | HOANG MANG, BỐI RỐI
-BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2 | TRỘN, HÒA QUYỆN, MIX
-BROADEN | Mở rộng tầm mắt hoặc kiến thức | 2 | MỞ RỘNG
-CAPTIVATE | Thu hút mê hoặc lòng người | 3 | MÊ HOẶC, CUỐN HÚT
-CLASSIFY | Phân loại vào các nhóm | 2 | PHÂN LOẠI
-COLLAPSE | Sụp đổ đổ sập xuống | 2 | SỤP ĐỔ, ĐỔ SẬP
-COMMEMORATE | Tưởng niệm hoặc kỷ niệm sự kiện lịch sử | 3 | TƯỞNG NIỆM
-COMMENCE | Bắt đầu khởi đầu một buổi lễ | 3 | BẮT ĐẦU, KHỞI ĐẦU
-COMPENSATE | Đền bù bồi thường thiệt hại | 2 | ĐỀN BÙ, BỒI THƯỜNG
-COMPILE | Biên soạn thu thập tài liệu | 2 | BIÊN SOẠN
-COMPLIMENT | Khen ngợi khen tặng ai đó | 2 | KHEN NGỢI, LỜI KHEN
-COMPREHEND | Lĩnh hội hiểu thấu đáo vấn đề | 3 | HIỂU THẤU, LĨNH HỘI
-CONCEAL | Che giấu giấu kín điều gì | 3 | CHE GIẤU, GIẤU KÍN
-CONDENSE | Ngưng tụ hoặc cô đọng súc tích | 3 | NGƯNG TỤ, CÔ ĐỌNG
-CONTRADICT | Mâu thuẫn cãi lại ý kiến trước | 3 | MÂU THUẪN, TRÁI NGƯỢC
-CONVERT | Chuyển đổi tiền tệ hoặc định dạng | 2 | CHUYỂN ĐỔI
-COORDINATE | Điều phối sắp xếp công việc nhịp nhàng | 2 | ĐIỀU PHỐI
-CULTIVATE | Canh tác gieo trồng hoặc vun đắp mối quan hệ | 2 | VUN ĐẮP, CANH TÁC
-DECIPHER | Giải mã mật mã hoặc chữ viết cổ | 3 | GIẢI MÃ, DECODE
-DEDUCE | Suy luận tìm ra kết luận từ bằng chứng | 3 | SUY LUẬN
-DELAY | Trì hoãn lùi lại thời gian | 1 | TRÌ HOÃN, HOÃN LẠI
-DEMOLISH | Phá hủy đánh sập tòa nhà cũ | 2 | PHÁ HỦY, ĐÁNH SẬP
-DENOUNCE | Lên án tố cáo hành vi sai trái | 3 | LÊN ÁN, TỐ CÁO
-DEPRECIATE | Giảm giá trị mất giá theo thời gian | 3 | MẤT GIÁ, GIẢM GIÁ TRỊ
-DESCEND | Đi xuống hạ xuống từ trên cao | 2 | ĐI XUỐNG, HẠ XUỐNG
-DESPISE | Khinh thường coi khinh ai đó | 3 | KHINH THƯỜNG, COI KHINH
-DETACH | Tháo rời tách rời một bộ phận | 2 | THÁO RỜI, TÁCH RỜI
-DEVOUR | Ăn ngấu nghiến nuốt trọn thức ăn | 3 | ĂN NGẤU NGHIẾN
-DISCARD | Vứt bỏ loại bỏ thứ không dùng nữa | 2 | VỨT BỎ, LOẠI BỎ
-DISPERSE | Giải tán tản mát ra bốn phương | 3 | GIẢI TÁN, TẢN MÁT
-DOMINATE | Thống trị chiếm ưu thế tuyệt đối | 2 | THỐNG TRỊ, ÁP ĐẢO
-ELABORATE | Giải thích kỹ càng tỉ mỉ thêm | 3 | GIẢI THÍCH CHI TIẾT
-EMBARK | Lên tàu hoặc dấn thân khởi đầu hành trình | 3 | DẤN THÂN, KHỞI HÀNH
-EMIT | Phát ra khí thải hoặc ánh sáng | 2 | PHÁT RA, TỎA RA
-ENDORSE | Xác nhận ủng hộ công khai | 2 | ỦNG HỘ, TÁN ĐỒNG
-ENRICH | Làm giàu thêm kiến thức tâm hồn | 2 | LÀM GIÀU
-ENROLL | Đăng ký ghi danh vào khóa học | 2 | GHI DANH, ĐĂNG KÝ, ENROL
-ERADICATE | Xóa bỏ triệt để tiêu diệt tận gốc | 3 | XÓA SỔ, TRIỆT TIÊU
-ERUPT | Phun trào dữ dội như nham thạch | 2 | PHUN TRÀO
+ABOLISH | Bãi bỏ một đạo luật hoặc chế độ cũ | 3
+ACCOMPANY | Đồng hành hoặc đi cùng ai đó | 2
+ACTIVATE | Kích hoạt chức năng hoặc thiết bị | 2
+AMPLIFY | Khuếch đại âm thanh hoặc tín hiệu | 2
+APPOINT | Bổ nhiệm vào một chức vụ | 2
+APPREHEND | Bắt giữ kẻ phạm tội hoặc lĩnh hội | 3
+APPROACH | Tiếp cận hoặc đến gần một mục tiêu | 2
+ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người | 2
+AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2
+BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3 | HOANG MANG
+BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2 | MIX
+BROADEN | Mở rộng tầm mắt hoặc kiến thức | 2
+CAPTIVATE | Thu hút mê hoặc lòng người | 3
+CLASSIFY | Phân loại vào các nhóm | 2
+COLLAPSE | Sụp đổ đổ sập xuống | 2
+COMMEMORATE | Tưởng niệm hoặc kỷ niệm sự kiện lịch sử | 3
+COMMENCE | Bắt đầu khởi đầu một buổi lễ | 3
+COMPENSATE | Đền bù bồi thường thiệt hại | 2
+COMPILE | Biên soạn thu thập tài liệu | 2
+COMPLIMENT | Khen ngợi khen tặng ai đó | 2
+COMPREHEND | Lĩnh hội hiểu thấu đáo vấn đề | 3
+CONCEAL | Che giấu giấu kín điều gì | 3
+CONDENSE | Ngưng tụ hoặc cô đọng súc tích | 3
+CONTRADICT | Mâu thuẫn cãi lại ý kiến trước | 3
+CONVERT | Chuyển đổi tiền tệ hoặc định dạng | 2
+COORDINATE | Điều phối sắp xếp công việc nhịp nhàng | 2
+CULTIVATE | Canh tác gieo trồng hoặc vun đắp mối quan hệ | 2
+DECIPHER | Giải mã mật mã hoặc chữ viết cổ | 3 | DECODE
+DEDUCE | Suy luận tìm ra kết luận từ bằng chứng | 3
+DELAY | Trì hoãn lùi lại thời gian | 1
+DEMOLISH | Phá hủy đánh sập tòa nhà cũ | 2
+DENOUNCE | Lên án tố cáo hành vi sai trái | 3
+DEPRECIATE | Giảm giá trị mất giá theo thời gian | 3
+DESCEND | Đi xuống hạ xuống từ trên cao | 2
+DESPISE | Khinh thường coi khinh ai đó | 3 | COI KHINH
+DETACH | Tháo rời tách rời một bộ phận | 2
+DEVOUR | Ăn ngấu nghiến nuốt trọn thức ăn | 3
+DISCARD | Vứt bỏ loại bỏ thứ không dùng nữa | 2
+DISPERSE | Giải tán tản mát ra bốn phương | 3
+DOMINATE | Thống trị chiếm ưu thế tuyệt đối | 2
+ELABORATE | Giải thích kỹ càng tỉ mỉ thêm | 3
+EMBARK | Lên tàu hoặc dấn thân khởi đầu hành trình | 3
+EMIT | Phát ra khí thải hoặc ánh sáng | 2
+ENDORSE | Xác nhận ủng hộ công khai | 2
+ENRICH | Làm giàu thêm kiến thức tâm hồn | 2
+ENROLL | Đăng ký ghi danh vào khóa học | 2 | GHI DANH, ENROL
+ERADICATE | Xóa bỏ triệt để tiêu diệt tận gốc | 3
+ERUPT | Phun trào dữ dội như nham thạch | 2
 ESCALATE | Leo thang gia tăng căng thẳng | 3 | LEO THANG
-ESTEEM | Kính trọng tôn kính người có đức | 3 | TÔN TRỌNG, KÍNH TRỌNG
-EVALUATE | Thẩm định đánh giá năng lực | 2 | ĐÁNH GIÁ, THẨM ĐỊNH
-EXCEED | Vượt quá giới hạn cho phép | 2 | VƯỢT QUÁ
-EXECUTE | Thi hành mệnh lệnh hoặc thực thi kế hoạch | 2 | THỰC THI, THI HÀNH
-EXERT | Vận dụng dốc toàn bộ sức lực | 3 | DỐC SỨC, VẬN DỤNG
-EXPORT | Xuất khẩu hàng hóa ra nước ngoài | 1 | XUẤT KHẨU
-EXTINGUISH | Dập tắt ngọn lửa đang cháy | 2 | DẬP TẮT, DẬP LỬA
-FALSIFY | Làm giả tài liệu chứng từ | 3 | LÀM GIẢ
-FORGIVE | Tha thứ bỏ qua lỗi lầm | 1 | THA THỨ
-FORSAKE | Rời bỏ buông bỏ người thân yêu | 3 | RỜI BỎ, TỪ BỎ
-FRUSTRATE | Làm bực bội nản lòng | 2 | LÀM NẢN LÒNG, BỰC BỘI
-GLIDE | Lướt nhẹ nhàng êm ái trên không | 2 | LƯỚT ĐI, LƯỚT NHẸ
-GLOW | Phát sáng rực rỡ lấp lánh trong đêm | 1 | PHÁT SÁNG, TỎA SÁNG
-GRAPPLE | Vật lộn giằng co với vấn đề khó | 3 | VẬT LỘN, GIẰNG CO
-GRASP | Nắm chặt chộp lấy hoặc hiểu thấu | 2 | NẮM CHẶT, HIỂU THẤU
-GRIEVE | Đau buồn thương tiếc mất mát | 2 | ĐAU BUỒN, TIẾC THƯƠNG
-GROWL | Gầm gừ tiếng gầm của dã thú | 1 | GẦM GỪ, TIẾNG GẦM
-HALT | Dừng lại tạm ngừng chuyển động | 2 | DỪNG LẠI, TẠM DỪNG
-HOVER | Bay lơ lửng một chỗ trên không | 2 | BAY LƠ LỬNG
-IMMOBILIZE | Làm bất động giữ chặt không cho cử động | 3 | LÀM BẤT ĐỘNG
-INCLINE | Nghiêng người hoặc có chiều hướng nghiêng về | 2 | NGHIÊNG VỀ
-INDULGE | Nuông chiều đam mê chiều theo sở thích | 3 | NUÔNG CHIỀU
-INHIBIT | Kìm hãm ngăn chặn sự phát triển | 3 | KÌM HÃM, NGĂN CHẶN
-INITIATE | Khởi xướng đề xướng phong trào | 2 | KHỞI XƯỚNG
-INQUIRE | Hỏi thăm dò xét thông tin | 2 | HỎI THĂM, DÒ HỎI
-INSPECT | Thanh tra kiểm tra kỹ lưỡng | 2 | THANH TRA, KIỂM TRA
-INSTILL | Truyền dẫn thấm nhuần tư tưởng đạo đức | 3 | THẤM NHUẦN, TRUYỀN DẪN
-INTEGRATE | Hội nhập tích hợp gắn kết | 2 | TÍCH HỢP, HỘI NHẬP
-INTERCEPT | Chặn đứng đánh chặn giữa đường | 3 | ĐÁNH CHẶN, CHẶN LẠI
-INTERPRET | Diễn giải giải nghĩa thông điệp | 2 | DIỄN GIẢI, GIẢI THÍCH
-INTRUDE | Xâm nhập đường đột không mời mà đến | 3 | XÂM NHẬP
-INVADE | Xâm lăng xâm chiếm lãnh thổ | 2 | XÂM LĂNG, XÂM CHIẾM
-INVOKE | Cầu viện viện dẫn điều luật | 3 | VIỆN DẪN, CẦU NGUYỆN
-LAMENT | Than thở khóc thương tiếc nuối | 3 | THAN THỞ, TIẾC THƯƠNG
-LIBERATE | Giải phóng trả tự do cho tù nhân | 2 | GIẢI PHÓNG
-LINGER | Nấn ná dùng dằng chưa muốn rời đi | 3 | NẤN NÁ, DÙNG DẰNG
-MAGNIFY | Phóng đại tăng kích thước hình ảnh | 2 | PHÓNG ĐẠI, PHÓNG TO
-MANEUVER | Điều động chuyển hướng khéo léo | 3 | ĐIỀU ĐỘNG, XOAY XỞ, MANOEUVRE
-MARVEL | Kinh ngạc thán phục trước kỳ quan | 2 | KINH NGẠC, THÁN PHỤC
-MEDIATE | Làm trung gian hòa giải tranh chấp | 3 | HÒA GIẢI, LÀM TRUNG GIAN
-MIMIC | Bắt chước nhại lại giọng nói | 2 | BẮT CHƯỚC, NHẠI GIỌNG
-MINGLE | Hòa nhập giao lưu trong bữa tiệc | 2 | HÒA NHẬP, GIAO LƯU
-MODERATE | Tiết chế kiềm chế làm dịu bớt | 3 | TIẾT CHẾ, LÀM DỊU
-NEUTRALIZE | Vô hiệu hóa hóa giải đòn đánh | 3 | VÔ HIỆU HÓA
-NOURISH | Nuôi dưỡng tiếp tế chất dinh dưỡng | 2 | NUÔI DƯỠNG
-OBLIGE | Bắt buộc hoặc làm ơn giúp đỡ | 3 | BẮT BUỘC, LÀM ƠN
-OUTNUMBER | Đông hơn áp đảo về quân số | 3 | ĐÔNG HƠN
-PARALYZE | Làm tê liệt bất toại không cử động | 3 | LÀM TÊ LIỆT, PARALYSE
-PENETRATE | Xuyên qua đâm thủng lớp áo giáp | 3 | XUYÊN QUA, ĐÂM THỦNG
-PERSIST | Khăng khăng dai dẳng tiếp diễn | 2 | DAI DẲNG, KIÊN TRÌ
-PILGRIMAGE | Hành hương về vùng đất thiêng | 3 | HÀNH HƯƠNG
-PONDER | Trầm tư suy tính thiệt hơn | 3 | TRẦM TƯ, SUY TÍNH
-PRECEDE | Đi trước xảy ra trước cái khác | 3 | ĐI TRƯỚC, XẢY RA TRƯỚC
-PROCLAIM | Tuyên xưng ban bố tuyên ngôn | 3 | TUYÊN BỐ, BAN BỐ
-PROLONG | Kéo dài thời gian ra thêm | 2 | KÉO DÀI
-PROVOKE | Khiêu khích chọc giận người khác | 2 | KHIÊU KHÍCH, CHỌC TỨC
-RECALL | Hồi tưởng nhớ lại kỷ niệm xưa | 1 | NHỚ LẠI, HỒI TƯỞNG
-RECITE | Ngâm thơ đọc thuộc lòng diễn cảm | 2 | NGÂM THƠ, ĐỌC THUỘC LÒNG
-REGULATE | Quy định điều chỉnh nhịp điệu | 2 | ĐIỀU CHỈNH, QUY ĐỊNH
-REIGN | Trị vì ngự trị vương triều | 3 | TRỊ VÌ, NGỰ TRỊ
-REJOICE | Vui mừng hân hoan reo hò | 2 | VUI MỪNG, HÂN HOAN
-RELINQUISH | Buông tay từ bỏ quyền lợi ngai vàng | 3 | TỪ BỎ, BUÔNG BỎ
-RELOCATE | Di dời dọn đến chỗ ở mới | 2 | DI DỜI, DỌN NHÀ
-REPEL | Đẩy lùi xua đuổi côn trùng kẻ thù | 2 | XUA ĐUỔI, ĐẨY LÙI
-REPLENISH | Làm đầy lại bổ sung thêm kho dự trữ | 3 | BỔ SUNG, LÀM ĐẦY
-REPRESS | Kìm nén cảm xúc trong lòng | 3 | KÌM NÉN
-REPRODUCE | Sinh sản hoặc tái tạo bản sao | 2 | SINH SẢN, TÁI TẠO
-RESEMBLE | Giống giống hệt với ai đó | 2 | GIỐNG NHAU, TRÔNG GIỐNG
-RESONATE | Cộng hưởng vang vọng âm thanh | 3 | CỘNG HƯỞNG, VANG VỌNG
-RETRIEVE | Lấy lại truy xuất dữ liệu | 2 | LẤY LẠI, TRUY XUẤT
-REVERE | Tôn sùng sùng kính bậc vĩ nhân | 3 | SÙNG KÍNH, TÔN SÙNG
-REVIVE | Hồi sinh làm sống dậy hy vọng | 2 | HỒI SINH, LÀM SỐNG LẠI
+ESTEEM | Kính trọng tôn kính người có đức | 3
+EVALUATE | Thẩm định đánh giá năng lực | 2
+EXCEED | Vượt quá giới hạn cho phép | 2
+EXECUTE | Thi hành mệnh lệnh hoặc thực thi kế hoạch | 2
+EXERT | Vận dụng dốc toàn bộ sức lực | 3
+EXPORT | Xuất khẩu hàng hóa ra nước ngoài | 1
+EXTINGUISH | Dập tắt ngọn lửa đang cháy | 2
+FALSIFY | Làm giả tài liệu chứng từ | 3
+FORGIVE | Tha thứ bỏ qua lỗi lầm | 1
+FORSAKE | Rời bỏ buông bỏ người thân yêu | 3
+FRUSTRATE | Làm bực bội nản lòng | 2
+GLIDE | Lướt nhẹ nhàng êm ái trên không | 2
+GLOW | Phát sáng rực rỡ lấp lánh trong đêm | 1
+GRAPPLE | Vật lộn giằng co với vấn đề khó | 3
+GRASP | Nắm chặt chộp lấy hoặc hiểu thấu | 2
+GRIEVE | Đau buồn thương tiếc mất mát | 2
+GROWL | Gầm gừ tiếng gầm của dã thú | 1
+HALT | Dừng lại tạm ngừng chuyển động | 2
+HOVER | Bay lơ lửng một chỗ trên không | 2
+IMMOBILIZE | Làm bất động giữ chặt không cho cử động | 3
+INCLINE | Nghiêng người hoặc có chiều hướng nghiêng về | 2
+INDULGE | Nuông chiều đam mê chiều theo sở thích | 3
+INHIBIT | Kìm hãm ngăn chặn sự phát triển | 3
+INITIATE | Khởi xướng đề xướng phong trào | 2
+INQUIRE | Hỏi thăm dò xét thông tin | 2
+INSPECT | Thanh tra kiểm tra kỹ lưỡng | 2 | THANH TRA
+INSTILL | Truyền dẫn thấm nhuần tư tưởng đạo đức | 3
+INTEGRATE | Hội nhập tích hợp gắn kết | 2
+INTERCEPT | Chặn đứng đánh chặn giữa đường | 3
+INTERPRET | Diễn giải giải nghĩa thông điệp | 2
+INTRUDE | Xâm nhập đường đột không mời mà đến | 3
+INVADE | Xâm lăng xâm chiếm lãnh thổ | 2
+INVOKE | Cầu viện viện dẫn điều luật | 3
+LAMENT | Than thở khóc thương tiếc nuối | 3
+LIBERATE | Giải phóng trả tự do cho tù nhân | 2
+LINGER | Nấn ná dùng dằng chưa muốn rời đi | 3
+MAGNIFY | Phóng đại tăng kích thước hình ảnh | 2
+MANEUVER | Điều động chuyển hướng khéo léo | 3 | MANOEUVRE
+MARVEL | Kinh ngạc thán phục trước kỳ quan | 2
+MEDIATE | Làm trung gian hòa giải tranh chấp | 3
+MIMIC | Bắt chước nhại lại giọng nói | 2
+MINGLE | Hòa nhập giao lưu trong bữa tiệc | 2
+MODERATE | Tiết chế kiềm chế làm dịu bớt | 3
+NEUTRALIZE | Vô hiệu hóa hóa giải đòn đánh | 3
+NOURISH | Nuôi dưỡng tiếp tế chất dinh dưỡng | 2
+OBLIGE | Bắt buộc hoặc làm ơn giúp đỡ | 3
+OUTNUMBER | Đông hơn áp đảo về quân số | 3
+PARALYZE | Làm tê liệt bất toại không cử động | 3 | PARALYSE
+PENETRATE | Xuyên qua đâm thủng lớp áo giáp | 3
+PERSIST | Khăng khăng dai dẳng tiếp diễn | 2
+PILGRIMAGE | Hành hương về vùng đất thiêng | 3
+PONDER | Trầm tư suy tính thiệt hơn | 3
+PRECEDE | Đi trước xảy ra trước cái khác | 3
+PROCLAIM | Tuyên xưng ban bố tuyên ngôn | 3
+PROLONG | Kéo dài thời gian ra thêm | 2
+PROVOKE | Khiêu khích chọc giận người khác | 2
+RECALL | Hồi tưởng nhớ lại kỷ niệm xưa | 1
+RECITE | Ngâm thơ đọc thuộc lòng diễn cảm | 2
+REGULATE | Quy định điều chỉnh nhịp điệu | 2
+REIGN | Trị vì ngự trị vương triều | 3
+REJOICE | Vui mừng hân hoan reo hò | 2
+RELINQUISH | Buông tay từ bỏ quyền lợi ngai vàng | 3
+RELOCATE | Di dời dọn đến chỗ ở mới | 2
+REPEL | Đẩy lùi xua đuổi côn trùng kẻ thù | 2
+REPLENISH | Làm đầy lại bổ sung thêm kho dự trữ | 3
+REPRESS | Kìm nén cảm xúc trong lòng | 3
+REPRODUCE | Sinh sản hoặc tái tạo bản sao | 2
+RESEMBLE | Giống giống hệt với ai đó | 2
+RESONATE | Cộng hưởng vang vọng âm thanh | 3
+RETRIEVE | Lấy lại truy xuất dữ liệu | 2
+REVERE | Tôn sùng sùng kính bậc vĩ nhân | 3
+REVIVE | Hồi sinh làm sống dậy hy vọng | 2
 REVOLVE | Xoay quanh trục hoặc tâm điểm | 2 | XOAY QUANH
-SALUTE | Chào điều lệnh giơ tay chào trang nghiêm | 2 | CHÀO ĐIỀU LỆNH, CHÀO
-SANCTION | Trừng phạt chế tài kinh tế | 3 | CHẾ TÀI, TRỪNG PHẠT
-SHINE | Chiếu sáng lấp lánh như Mặt Trời | 1 | TỎA SÁNG, CHIẾU SÁNG
-SHOCK | Gây sốc kinh ngạc bàng hoàng | 1 | GÂY SỐC, SỐC
-SOAR | Bay vút lên cao vút trên trời xanh | 2 | BAY VÚT LÊN
-SPECIFY | Chỉ rõ ghi rõ chi tiết yêu cầu | 2 | CHỈ RÕ, GHI RÕ
-STABILIZE | Làm ổn định giữ cân bằng tình hình | 2 | LÀM ỔN ĐỊNH
-SUCCEED | Thành công đạt mục tiêu | 1 | THÀNH CÔNG
-SUPPRESS | Đàn áp trấn áp dẹp tan bạo loạn | 3 | ĐÀN ÁP, TRẤN ÁP
-SURROUND | Bao vây vây quanh bốn bề | 1 | BAO VÂY, VÂY QUANH
-SUSPEND | Đình chỉ tạm treo chức vụ | 2 | ĐÌNH CHỈ, TREO
-SUSTAIN | Duy trì chống đỡ sự sống | 2 | DUY TRÌ, CHỐNG ĐỠ
-TRIGGER | Kích hoạt bóp cò gây ra chuỗi sự kiện | 2 | KÍCH HOẠT, BÓP CÒ
-TRIUMPH | Chiến thắng vang dội vẻ vang | 2 | CHIẾN THẮNG, VẺ VANG
-UNDERESTIMATE | Đánh giá thấp xem nhẹ đối thủ | 2 | ĐÁNH GIÁ THẤP, COI THƯỜNG
-UNFOLD | Mở ra hé lộ bức tranh toàn cảnh | 2 | MỞ RA, HÉ LỘ
-UNRAVEL | Tháo gỡ làm sáng tỏ bí ẩn | 3 | THÁO GỠ, LÀM SÁNG TỎ
-VIBRATE | Rung lên rung chuyển nhè nhẹ | 1 | RUNG LÊN, RUNG
+SALUTE | Chào điều lệnh giơ tay chào trang nghiêm | 2
+SANCTION | Trừng phạt chế tài kinh tế | 3
+SHINE | Chiếu sáng lấp lánh như Mặt Trời | 1
+SHOCK | Gây sốc kinh ngạc bàng hoàng | 1
+SOAR | Bay vút lên cao vút trên trời xanh | 2
+SPECIFY | Chỉ rõ ghi rõ chi tiết yêu cầu | 2
+STABILIZE | Làm ổn định giữ cân bằng tình hình | 2
+SUCCEED | Thành công đạt mục tiêu | 1
+SUPPRESS | Đàn áp trấn áp dẹp tan bạo loạn | 3
+SURROUND | Bao vây vây quanh bốn bề | 1
+SUSPEND | Đình chỉ tạm treo chức vụ | 2 | TREO
+SUSTAIN | Duy trì chống đỡ sự sống | 2
+TRIGGER | Kích hoạt bóp cò gây ra chuỗi sự kiện | 2
+TRIUMPH | Chiến thắng vang dội vẻ vang | 2
+UNDERESTIMATE | Đánh giá thấp xem nhẹ đối thủ | 2
+UNFOLD | Mở ra hé lộ bức tranh toàn cảnh | 2
+UNRAVEL | Tháo gỡ làm sáng tỏ bí ẩn | 3
+VIBRATE | Rung lên rung chuyển nhè nhẹ | 1 | RUNG
 VINDICATE | Minh oan chứng minh sự vô tội | 3 | MINH OAN
-VIOLATE | Vi phạm xâm phạm điều luật | 2 | VI PHẠM, XÂM PHẠM
-WANDER | Đi lang thang dạo bước không mục đích | 1 | LANG THANG, ĐI DẠO
-WEAVE | Dệt vải đan lát nong nia | 2 | DỆT VẢI, ĐAN LÁT
-WITHER | Héo úa tàn lụi bông hoa | 2 | HÉO ÚA, TÀN LỤI
-ADAPTABLE | Dễ thích nghi linh hoạt trong mọi hoàn cảnh | 2 | DỄ THÍCH NGHI, LINH HOẠT
-ADEQUATE | Đầy đủ đáp ứng vừa vặn yêu cầu | 2 | ĐẦY ĐỦ, THỎA ĐÁNG
-ALERT | Cảnh giác tỉnh táo đề phòng | 2 | CẢNH GIÁC, TỈNH TÁO
-AUTHENTIC | Thật đích thực hàng chính hãng nguyên bản | 2 | ĐÍCH THỰC, CHÍNH HÃNG
-BRILLIANT | Sáng dạ xuất sắc rực rỡ | 1 | XUẤT SẮC, SÁNG RỰC
-CAUTIOUS | Thận trọng cẩn thận trong từng bước | 1 | THẬN TRỌNG, CẨN THẬN
-CHARISMATIC | Có sức hút lôi cuốn quần chúng | 3 | LÔI CUỐN, CÓ SỨC HÚT
-COMPASSIONATE | Giàu lòng trắc ẩn thương người | 3 | TRẮC ẨN, THƯƠNG NGƯỜI
-CONSCIENTIOUS | Tận tâm chu đáo có trách nhiệm | 3 | TẬN TÂM, CHU ĐÁO
-CONSIDERATE | Ân cần chu đáo nghĩ cho người khác | 2 | ÂN CẦN, CHU ĐÁO
-COURTEOUS | Nhã nhặn lịch thiệp lễ độ | 2 | NHÃ NHẶN, LỊCH THIỆP
-DECISIVE | Quyết đoán dứt khoát không do dự | 2 | QUYẾT ĐOÁN, DỨT KHOÁT
-DILIGENT | Cần cù siêng năng chăm chỉ | 2 | CẦN CÙ, SIÊNG NĂNG
-DYNAMIC | Năng động đầy nhiệt huyết sôi nổi | 2 | NĂNG ĐỘNG, SÔI NỔI
-ELEGANT | Thanh lịch duyên dáng tao nhã | 2 | THANH LỊCH, DUYÊN DÁNG
-ENTHUSIASTIC | Nhiệt tình hào hứng phấn khởi | 2 | NHIỆT TÌNH, HÀO HỨNG
-FEARLESS | Không sợ hãi can trường bất khuất | 2 | KHÔNG SỢ, CAN TRƯỜNG
-FLEXIBLE | Linh hoạt mềm dẻo dễ thay đổi | 2 | LINH HOẠT, MỀM DẺO
-GENTLE | Dịu dàng nhẹ nhàng hiền từ | 1 | DỊU DÀNG, NHẸ NHÀNG
-GRACEFUL | Uyển chuyển thanh thoát duyên dáng | 2 | UYỂN CHUYỂN, DUYÊN DÁNG
-HILARIOUS | Hài hước vui nhộn cười vỡ bụng | 2 | HÀI HƯỚC, BUỒN CƯỜI, FUNNY
-IMAGINATIVE | Giàu trí tưởng tượng sáng tạo | 2 | GIÀU TƯỞNG TƯỢNG
-INDEPENDENT | Tự lập độc lập không phụ thuộc ai | 2 | ĐỘC LẬP, TỰ LẬP
-INSPIRING | Tạo cảm hứng đầy khích lệ | 2 | TRUYỀN CẢM HỨNG
-INTREPID | Dũng cảm gan dạ không chùn bước | 3 | GAN DẠ, DŨNG CẢM
-KINDHEARTED | Tốt bụng nhân hậu thơm thảo | 1 | TỐT BỤNG, NHÂN HẬU
-NURTURING | Chăm chút ân cần nuôi dưỡng | 2 | ÂU YẾM, CHĂM SÓC
-OBSERVANT | Tinh mắt tinh ý hay quan sát | 2 | TINH MẮT, TINH Ý
-PRUDENT | Thận trọng khôn ngoan biết tính xa | 3 | THẬN TRỌNG, KHÔN NGOAN
-RADIANT | Rạng rỡ tươi tắn như hoa nở | 2 | RẠNG RỠ, TƯƠI TẮN
-RELIABLE | Đáng tin cậy chỗ dựa vững chắc | 2 | ĐÁNG TIN, ĐÁNG TIN CẬY
-RESOURCEFUL | Tháo vát nhanh trí xoay xở giỏi | 3 | THÁO VÁT, NHANH TRÍ
-SERENE | Thanh thản yên bình thanh tịnh | 2 | THANH THẢN, YÊN BÌNH
-SOPHISTICATED | Tinh vi tinh xảo hoặc sành điệu | 3 | TINH XẢO, SÀNH ĐIỆU
-STEADFAST | Kiên định vững vàng không lay chuyển | 3 | KIÊN ĐỊNH, VỮNG VÀNG
-TRANQUIL | Thanh bình êm đềm tĩnh lặng | 2 | THANH BÌNH, TĨNH LẶNG
-VIGOROUS | Cường tráng sung sức khỏe mạnh | 2 | SUNG SỨC, KHỎE MẠNH
-VIRTUE | Đức hạnh phẩm chất tốt đẹp | 2 | ĐỨC HẠNH, PHẨM HẠNH
-GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi | 1 | TỪ BỎ, ĐẦU HÀNG
-LOOK FOR | Cụm động từ tìm kiếm thứ gì bị thất lạc | 1 | TÌM KIẾM
-LOOK AFTER | Cụm động từ chăm sóc trông nom người thân | 1 | CHĂM SÓC, TRÔNG NOM, TAKE CARE OF
-TAKE OFF | Cụm động từ máy bay cất cánh bay lên trời | 1 | CẤT CÁNH
-PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào | 1 | MẶC VÀO, ĐEO VÀO
-TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép | 1 | CỞI RA
-TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ | 2 | VẶN TO, XUẤT HIỆN
-TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời | 2 | VẶN NHỎ, TỪ CHỐI, REFUSE
-GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn | 1 | TIẾP TỤC, CONTINUE
-CARRY OUT | Cụm động từ tiến hành thực hiện một cuộc khảo sát | 2 | TIẾN HÀNH, THỰC HIỆN, CONDUCT
-RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2 | HẾT, CẠN KIỆT
-CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2 | ĐUỔI KỊP, BẮT KỊP
-KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ | 2 | THEO KỊP
-BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường | 2 | BỊ HỎNG, HỎNG HÓC
+VIOLATE | Vi phạm xâm phạm điều luật | 2
+WANDER | Đi lang thang dạo bước không mục đích | 1 | LANG THANG
+WEAVE | Dệt vải đan lát nong nia | 2
+WITHER | Héo úa tàn lụi bông hoa | 2
+ADAPTABLE | Dễ thích nghi linh hoạt trong mọi hoàn cảnh | 2
+ADEQUATE | Đầy đủ đáp ứng vừa vặn yêu cầu | 2
+ALERT | Cảnh giác tỉnh táo đề phòng | 2
+AUTHENTIC | Thật đích thực hàng chính hãng nguyên bản | 2
+BRILLIANT | Sáng dạ xuất sắc rực rỡ | 1
+CAUTIOUS | Thận trọng cẩn thận trong từng bước | 1
+CHARISMATIC | Có sức hút lôi cuốn quần chúng | 3
+COMPASSIONATE | Giàu lòng trắc ẩn thương người | 3
+CONSCIENTIOUS | Tận tâm chu đáo có trách nhiệm | 3
+CONSIDERATE | Ân cần chu đáo nghĩ cho người khác | 2
+COURTEOUS | Nhã nhặn lịch thiệp lễ độ | 2
+DECISIVE | Quyết đoán dứt khoát không do dự | 2
+DILIGENT | Cần cù siêng năng chăm chỉ | 2
+DYNAMIC | Năng động đầy nhiệt huyết sôi nổi | 2
+ELEGANT | Thanh lịch duyên dáng tao nhã | 2
+ENTHUSIASTIC | Nhiệt tình hào hứng phấn khởi | 2
+FEARLESS | Không sợ hãi can trường bất khuất | 2
+FLEXIBLE | Linh hoạt mềm dẻo dễ thay đổi | 2
+GENTLE | Dịu dàng nhẹ nhàng hiền từ | 1
+GRACEFUL | Uyển chuyển thanh thoát duyên dáng | 2
+HILARIOUS | Hài hước vui nhộn cười vỡ bụng | 2 | FUNNY
+IMAGINATIVE | Giàu trí tưởng tượng sáng tạo | 2
+INDEPENDENT | Tự lập độc lập không phụ thuộc ai | 2
+INSPIRING | Tạo cảm hứng đầy khích lệ | 2
+INTREPID | Dũng cảm gan dạ không chùn bước | 3
+KINDHEARTED | Tốt bụng nhân hậu thơm thảo | 1
+NURTURING | Chăm chút ân cần nuôi dưỡng | 2
+OBSERVANT | Tinh mắt tinh ý hay quan sát | 2
+PRUDENT | Thận trọng khôn ngoan biết tính xa | 3
+RADIANT | Rạng rỡ tươi tắn như hoa nở | 2
+RELIABLE | Đáng tin cậy chỗ dựa vững chắc | 2
+RESOURCEFUL | Tháo vát nhanh trí xoay xở giỏi | 3
+SERENE | Thanh thản yên bình thanh tịnh | 2
+SOPHISTICATED | Tinh vi tinh xảo hoặc sành điệu | 3
+STEADFAST | Kiên định vững vàng không lay chuyển | 3
+TRANQUIL | Thanh bình êm đềm tĩnh lặng | 2
+VIGOROUS | Cường tráng sung sức khỏe mạnh | 2
+VIRTUE | Đức hạnh phẩm chất tốt đẹp | 2
+GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi | 1
+LOOK FOR | Cụm động từ tìm kiếm thứ gì bị thất lạc | 1
+LOOK AFTER | Cụm động từ chăm sóc trông nom người thân | 1 | TAKE CARE OF
+TAKE OFF | Cụm động từ máy bay cất cánh bay lên trời | 1
+PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào | 1
+TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép | 1
+TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ | 2
+TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời | 2 | REFUSE
+GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn | 1 | CONTINUE
+CARRY OUT | Cụm động từ tiến hành thực hiện một cuộc khảo sát | 2 | CONDUCT
+RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2
+CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2
+KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ | 2
+BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường | 2
 BREAK UP | Cụm động từ chia tay chấm dứt một mối tình | 1 | CHIA TAY
-COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2 | TÌNH CỜ GẶP, TÌNH CỜ THẤY
-FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2 | TÌM RA, NGHĨ RA
-GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2 | NHƯỢNG BỘ, CHỊU THUA
-HOLD ON | Cụm động từ giữ máy chờ máy điện thoại một lát | 1 | CHỜ MÁY, GIỮ MÁY, WAIT
-HANG OUT | Cụm động từ tụ tập đi chơi tán gẫu cùng bạn bè | 1 | ĐI CHƠI, TỤ TẬP
-GET ALONG WITH | Cụm động từ hòa thuận ăn ý với bạn bè người thân | 2 | HÒA THUẬN, HÒA HỢP
-BRING UP | Cụm động từ nuôi nấng dạy dỗ đứa trẻ nên người | 2 | NUÔI DƯỠNG, DẠY DỖ, RAISE
-PASS AWAY | Cụm từ trang trọng chỉ sự qua đời tạ thế | 2 | QUA ĐỜI, TẠ THẾ, DIE
-SHOW UP | Cụm động từ xuất hiện có mặt tại buổi hẹn | 1 | CÓ MẶT, XUẤT HIỆN, ARRIVE
-MAKE UP | Cụm động từ làm lành sau khi cãi vã hoặc trang điểm | 1 | LÀM LÀNH, TRANG ĐIỂM
-PUT OFF | Cụm động từ hoãn lại việc gì sang ngày khác | 2 | HOÃN LẠI, TRÌ HOÃN, POSTPONE
-CALL OFF | Cụm động từ hủy bỏ hoàn toàn trận đấu do mưa bão | 2 | HỦY BỎ, CANCEL
-SET UP | Cụm động từ thành lập dựng nên hoặc cài đặt | 1 | THÀNH LẬP, CÀI ĐẶT, ESTABLISH
-TAKE UP | Cụm động từ bắt đầu một sở thích thói quen mới | 2 | BẮT ĐẦU SỞ THÍCH
-LOOK FORWARD TO | Cụm động từ ngóng trông háo hức mong đợi điều gì | 2 | TRÔNG ĐỢI, MONG ĐỢI
-DROP BY | Cụm động từ tạt qua ghé thăm chốc lát | 2 | GHÉ THĂM, TẠT QUA
-GET OVER | Cụm động từ vượt qua cú sốc hoặc khỏi bệnh | 2 | VƯỢT QUA, HỒI PHỤC
-STAND FOR | Cụm từ viết tắt hoặc đại diện cho biểu tượng gì | 2 | ĐẠI DIỆN CHO, VIẾT TẮT
-WORK OUT | Cụm động từ tập thể dục rèn luyện thân thể hoặc tính toán | 1 | TẬP THỂ DỤC, TẬP GYM
-CHILL OUT | Cụm từ thư giãn xả hơi thoải mái | 1 | THƯ GIÃN, XẢ HƠI, RELAX
-CALM DOWN | Cụm từ giữ bình tĩnh trấn tĩnh lại | 1 | BÌNH TĨNH
-CHEER UP | Cụm từ vui lên phấn chấn tinh thần lên | 1 | VUI LÊN, PHẤN CHẤN
-SPEAK UP | Cụm từ nói to lên dõng dạc lên | 1 | NÓI TO LÊN
-SLOW DOWN | Cụm từ đi chậm lại giảm tốc độ xe | 1 | ĐI CHẬM LẠI, GIẢM TỐC
-SPEED UP | Cụm từ tăng tốc phóng nhanh hơn | 1 | TĂNG TỐC
-GET UP | Cụm động từ ngồi dậy rời khỏi giường | 1 | RỜI GIƯỜNG, ĐỨNG DẬY
-GROW UP | Cụm động từ khôn lớn trưởng thành theo năm tháng | 1 | TRƯỞNG THÀNH, LỚN LÊN
-DRESS UP | Cụm từ diện đồ đẹp lên đồ dự tiệc | 1 | DIỆN ĐỒ, MẶC ĐẸP
-SIGN IN | Cụm từ đăng nhập tài khoản hệ thống | 1 | ĐĂNG NHẬP, LOGIN
-SIGN OUT | Cụm từ đăng xuất thoát khỏi tài khoản | 1 | ĐĂNG XUẤT, LOGOUT
-ETERNITY | Vĩnh cửu muôn đời ngàn kiếp không phai | 2 | VĨNH CỬU, MUÔN ĐỜI
-INFINITY | Vô cực vô tận không bao giờ kết thúc | 2 | VÔ CỰC, VÔ TẬN
-BREEZE | Ngọn gió heo may gió thoảng nhẹ mát lành | 1 | GIÓ THOẢNG, GIÓ NHẸ
-REFLECTION | Hình ảnh phản chiếu trên mặt gương mặt nước | 2 | PHẢN CHIẾU, HÌNH PHẢN CHIẾU
-RIPPLE | Gợn sóng lăn tăn xao động trên mặt hồ | 2 | GỢN SÓNG, LĂN TĂN
-TIDE | Hiện tượng thủy triều con nước lên xuống theo chu kỳ | 2 | THỦY TRIỀU
-WILDERNESS | Vùng đất hoang dã thiên nhiên nguyên sơ | 3 | HOANG DÃ, VÙNG HOANG DÃ
-LAGOON | Đầm phá nước lợ ven biển yên bình | 3 | ĐẦM PHÁ, ĐẦM NƯỚC
-REEF | Rạn san hô rực rỡ sắc màu dưới biển | 2 | RẠN SAN HÔ, BÃI ĐÁ NGẦM
-PATHWAY | Lối đi mòn nhỏ dẫn vào khu vườn | 2 | LỐI ĐI, ĐƯỜNG MÒN, TRAIL
-STREETLIGHT | Cột đèn đường thắp sáng phố đêm | 1 | ĐÈN ĐƯỜNG, ĐÈN PHỐ
-BOLT | Bu lông ốc vít cỡ lớn có ren vặn đai ốc | 2 | BU LÔNG, BÙ LOONG
-NUT | Đai ốc ê-cu vặn khớp với bu lông | 2 | ĐAI ỐC, Ê CU
-CHAIN | Sợi dây xích bằng sắt chắc chắn khóa cổng | 1 | DÂY XÍCH, XÍCH
-ROPE | Sợi dây thừng bện dẻo dai buộc thuyền | 1 | DÂY THỪNG, DÂY DÙ
-BUCKLE | Mặt khóa dây thắt lưng bằng kim loại | 2 | MẶT THẮT LƯNG, MẶT KHÓA
-SCALES | Chiếc cân đo trọng lượng cân nặng cơ thể | 2 | CHIẾC CÂN, CÁI CÂN
-HIP | Hông eo lắc lư theo điệu nhảy | 1 | HÔNG, EO HÔNG
-THIGH | Bắp đùi chân săn chắc nhờ tập luyện | 2 | BẮP ĐÙI, ĐÙI
-PUDDLE | Vũng nước mưa nhỏ đọng trên đường sau cơn mưa | 2 | VŨNG NƯỚC
-MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai | 2 | SƯƠNG MÙ NHẸ, LÀN SƯƠNG, FOG
-FROST | Băng giá sương muối phủ trắng cành cây mùa đông | 2 | BĂNG GIÁ, SƯƠNG MUỐI
-DOWNPOUR | Cơn mưa rào trút nước như thác đổ | 2 | MƯA RÀO, MƯA TRÚT NƯỚC
-SHOWER RAIN | Cơn mưa rào thoảng qua chợt đến chợt đi | 2 | MƯA RÀO THOẢNG
-HEATWAVE | Đợt nắng nóng gay gắt oi bức mùa hè | 2 | ĐỢT NẮNG NÓNG, SÓNG NHIỆT
-COLD SPELL | Đợt không khí lạnh rét căm căm tràn về | 2 | ĐỢT RÉT, ĐỢT LẠNH
-LEAP | Nhảy vọt qua con rãnh nhỏ bước nhảy xa | 2 | NHẢY VỌT, BƯỚC NHẢY
-TIPTOE | Đi nhón chân rón rén nhẹ nhàng không phát ra tiếng | 2 | ĐI NHÓN CHÂN, RÓN RÉN
-WINK | Nháy một bên mắt đầy ngụ ý hài hước | 1 | NHÁY MẮT
-SHAKE HEAD | Lắc đầu từ chối không chấp nhận | 1 | LẮC ĐẦU
-CRISP | Giòn rụm quả táo tươi cắn vào giòn tan | 2 | GIÒN RỤM, GIÒN TAN
-JUICY | Mọng nước quả cam quả dưa hấu nhiều nước | 1 | MỌNG NƯỚC, NHIỀU NƯỚC
-BLAND | Nhạt nhẽo vô vị không nêm gia vị | 2 | NHẠT NHẼO, VÔ VỊ
-FRAGRANT | Thơm ngát hương hoa thơm ngào ngạt | 2 | THƠM NGÁT, NGÀO NGẠT
-STINKY | Hôi thối bốc mùi khó chịu | 1 | HÔI THỐI, BỐC MÙI, SMELLY
-SHARP | Sắc bén lưỡi dao con dao gọt hoa quả | 1 | SẮC BÉN, BÉN
-BLUNT | Cùn lưỡi kéo cùn cắt không đứt | 2 | CÙN
-TIGHT | Chật chội bó sát bộ quần áo vừa may | 1 | CHẶT, BÓ SÁT, CHẬT
-LOOSE | Rộng thùng thình lỏng lẻo thoải mái | 1 | RỘNG, LỎNG LẺO
-LIGHT WEIGHT | Nhẹ bẫng lông hồng bay phất phơ | 1 | NHẸ, NHẸ BÃNG
-FIRM | Chắc chắn kiên cố đệm nằm không lún | 2 | CHẮC CHẮN, KIÊN CỐ
+COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2
+FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2
+GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2
+HOLD ON | Cụm động từ giữ máy chờ máy điện thoại một lát | 1 | WAIT
+HANG OUT | Cụm động từ tụ tập đi chơi tán gẫu cùng bạn bè | 1
+GET ALONG WITH | Cụm động từ hòa thuận ăn ý với bạn bè người thân | 2
+BRING UP | Cụm động từ nuôi nấng dạy dỗ đứa trẻ nên người | 2 | RAISE
+PASS AWAY | Cụm từ trang trọng chỉ sự qua đời tạ thế | 2 | DIE
+SHOW UP | Cụm động từ xuất hiện có mặt tại buổi hẹn | 1 | ARRIVE
+MAKE UP | Cụm động từ làm lành sau khi cãi vã hoặc trang điểm | 1
+PUT OFF | Cụm động từ hoãn lại việc gì sang ngày khác | 2 | POSTPONE
+CALL OFF | Cụm động từ hủy bỏ hoàn toàn trận đấu do mưa bão | 2 | CANCEL
+SET UP | Cụm động từ thành lập dựng nên hoặc cài đặt | 1 | ESTABLISH
+TAKE UP | Cụm động từ bắt đầu một sở thích thói quen mới | 2
+LOOK FORWARD TO | Cụm động từ ngóng trông háo hức mong đợi điều gì | 2
+DROP BY | Cụm động từ tạt qua ghé thăm chốc lát | 2
+GET OVER | Cụm động từ vượt qua cú sốc hoặc khỏi bệnh | 2
+STAND FOR | Cụm từ viết tắt hoặc đại diện cho biểu tượng gì | 2
+WORK OUT | Cụm động từ tập thể dục rèn luyện thân thể hoặc tính toán | 1
+CHILL OUT | Cụm từ thư giãn xả hơi thoải mái | 1 | RELAX
+CALM DOWN | Cụm từ giữ bình tĩnh trấn tĩnh lại | 1
+CHEER UP | Cụm từ vui lên phấn chấn tinh thần lên | 1
+SPEAK UP | Cụm từ nói to lên dõng dạc lên | 1
+SLOW DOWN | Cụm từ đi chậm lại giảm tốc độ xe | 1
+SPEED UP | Cụm từ tăng tốc phóng nhanh hơn | 1
+GET UP | Cụm động từ ngồi dậy rời khỏi giường | 1
+GROW UP | Cụm động từ khôn lớn trưởng thành theo năm tháng | 1
+DRESS UP | Cụm từ diện đồ đẹp lên đồ dự tiệc | 1
+SIGN IN | Cụm từ đăng nhập tài khoản hệ thống | 1 | LOGIN
+SIGN OUT | Cụm từ đăng xuất thoát khỏi tài khoản | 1 | LOGOUT
+ETERNITY | Vĩnh cửu muôn đời ngàn kiếp không phai | 2
+INFINITY | Vô cực vô tận không bao giờ kết thúc | 2
+BREEZE | Ngọn gió heo may gió thoảng nhẹ mát lành | 1
+REFLECTION | Hình ảnh phản chiếu trên mặt gương mặt nước | 2
+RIPPLE | Gợn sóng lăn tăn xao động trên mặt hồ | 2
+TIDE | Hiện tượng thủy triều con nước lên xuống theo chu kỳ | 2
+WILDERNESS | Vùng đất hoang dã thiên nhiên nguyên sơ | 3
+LAGOON | Đầm phá nước lợ ven biển yên bình | 3
+REEF | Rạn san hô rực rỡ sắc màu dưới biển | 2
+PATHWAY | Lối đi mòn nhỏ dẫn vào khu vườn | 2 | TRAIL
+STREETLIGHT | Cột đèn đường thắp sáng phố đêm | 1
+BOLT | Bu lông ốc vít cỡ lớn có ren vặn đai ốc | 2
+NUT | Đai ốc ê-cu vặn khớp với bu lông | 2
+CHAIN | Sợi dây xích bằng sắt chắc chắn khóa cổng | 1
+ROPE | Sợi dây thừng bện dẻo dai buộc thuyền | 1
+BUCKLE | Mặt khóa dây thắt lưng bằng kim loại | 2
+SCALES | Chiếc cân đo trọng lượng cân nặng cơ thể | 2
+HIP | Hông eo lắc lư theo điệu nhảy | 1
+THIGH | Bắp đùi chân săn chắc nhờ tập luyện | 2
+PUDDLE | Vũng nước mưa nhỏ đọng trên đường sau cơn mưa | 2
+MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai | 2 | FOG
+FROST | Băng giá sương muối phủ trắng cành cây mùa đông | 2
+DOWNPOUR | Cơn mưa rào trút nước như thác đổ | 2
+SHOWER RAIN | Cơn mưa rào thoảng qua chợt đến chợt đi | 2
+HEATWAVE | Đợt nắng nóng gay gắt oi bức mùa hè | 2
+COLD SPELL | Đợt không khí lạnh rét căm căm tràn về | 2
+LEAP | Nhảy vọt qua con rãnh nhỏ bước nhảy xa | 2
+TIPTOE | Đi nhón chân rón rén nhẹ nhàng không phát ra tiếng | 2
+WINK | Nháy một bên mắt đầy ngụ ý hài hước | 1
+SHAKE HEAD | Lắc đầu từ chối không chấp nhận | 1
+CRISP | Giòn rụm quả táo tươi cắn vào giòn tan | 2
+JUICY | Mọng nước quả cam quả dưa hấu nhiều nước | 1
+BLAND | Nhạt nhẽo vô vị không nêm gia vị | 2
+FRAGRANT | Thơm ngát hương hoa thơm ngào ngạt | 2
+STINKY | Hôi thối bốc mùi khó chịu | 1 | SMELLY
+SHARP | Sắc bén lưỡi dao con dao gọt hoa quả | 1
+BLUNT | Cùn lưỡi kéo cùn cắt không đứt | 2
+TIGHT | Chật chội bó sát bộ quần áo vừa may | 1
+LOOSE | Rộng thùng thình lỏng lẻo thoải mái | 1
+LIGHT WEIGHT | Nhẹ bẫng lông hồng bay phất phơ | 1
+FIRM | Chắc chắn kiên cố đệm nằm không lún | 2

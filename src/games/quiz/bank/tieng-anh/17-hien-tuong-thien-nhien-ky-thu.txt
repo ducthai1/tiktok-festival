@@ -29,14 +29,14 @@ CARBON FOOTPRINT | Lượng khí thải các-bon | 2
 SUSTAINABILITY | Tính bền vững | 2
 OVERPOPULATION | Bùng nổ dân số | 2
 REFORESTATION | Trồng lại rừng | 2
-DEW | Những giọt sương mai đọng long lanh trên cành lá buổi sớm | 2 | GIỌT SƯƠNG, SƯƠNG MAI
-SANDSTORM | Trận bão cát mù mịt cuốn bụi cát cuồn cuộn trên sa mạc | 2 | BÃO CÁT
-BLIZZARD | Trận bão tuyết mù mịt với gió rét căm căm | 2 | BÃO TUYẾT
-PETRICHOR | Mùi hương thanh mát của đất sau cơn mưa rào đầu mùa | 4 | MÙI ĐẤT SAU MƯA
-BIOLUMINESCENCE | Hiện tượng phát quang sinh học của sinh vật dưới đáy biển sâu | 4 | PHÁT QUANG SINH HỌC
-PHOTOSYNTHESIS | Quá trình quang hợp của cây xanh hút ánh sáng nhả khí oxy | 3 | QUANG HỢP
-METAMORPHOSIS | Quá trình biến thái biến đổi ngoạn mục từ sâu hóa bướm | 3 | BIẾN THÁI
-SYMBIOSIS | Mối quan hệ cộng sinh tương trợ cùng có lợi giữa hai loài sinh vật | 3 | CỘNG SINH
-CONUNDRUM | Câu đố hóc búa nan giải khiến người ta vò đầu bứt tai | 3 | CÂU ĐỐ NAN GIẢI
-ANOMALY | Sự bất thường, dị thường đi ngược lại quy luật thông thường | 3 | SỰ DỊ THƯỜNG, BẤT THƯỜNG
-MIRAGE | Hiện tượng ảo ảnh trên sa mạc nắng cháy | 3 | ẢO ẢNH
+DEW | Những giọt sương mai đọng long lanh trên cành lá buổi sớm | 2
+SANDSTORM | Trận bão cát mù mịt cuốn bụi cát cuồn cuộn trên sa mạc | 2
+BLIZZARD | Trận bão tuyết mù mịt với gió rét căm căm | 2
+PETRICHOR | Mùi hương thanh mát của đất sau cơn mưa rào đầu mùa | 4
+BIOLUMINESCENCE | Hiện tượng phát quang sinh học của sinh vật dưới đáy biển sâu | 4
+PHOTOSYNTHESIS | Quá trình quang hợp của cây xanh hút ánh sáng nhả khí oxy | 3
+METAMORPHOSIS | Quá trình biến thái biến đổi ngoạn mục từ sâu hóa bướm | 3
+SYMBIOSIS | Mối quan hệ cộng sinh tương trợ cùng có lợi giữa hai loài sinh vật | 3
+CONUNDRUM | Câu đố hóc búa nan giải khiến người ta vò đầu bứt tai | 3
+ANOMALY | Sự bất thường, dị thường đi ngược lại quy luật thông thường | 3
+MIRAGE | Hiện tượng ảo ảnh trên sa mạc nắng cháy | 3

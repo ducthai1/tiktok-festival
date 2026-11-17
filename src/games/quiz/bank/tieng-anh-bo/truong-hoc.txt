@@ -150,128 +150,128 @@ SPEND | Tiêu tiền (xài tiền) | 2
 CHANGE | Tiền thối, tiền thừa trả lại | 3
 DEBT | Món nợ | 3 | DEBTS
 SAVINGS | Tiền tiết kiệm | 3 | SAVING
-ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2 | BÀI TẬP
-CERTIFICATE | Chứng chỉ / bằng cấp | 2 | CHỨNG CHỈ
-DIPLOMA | Bằng tốt nghiệp | 3 | BẰNG TỐT NGHIỆP
-INTERNSHIP | Kỳ thực tập của sinh viên | 2 | THỰC TẬP
-EXECUTIVE | Giám đốc điều hành / người quản lý | 3 | GIÁM ĐỐC
-RESIGNATION | Việc nộp đơn xin nghỉ việc | 3 | NGHỈ VIỆC
-PENSION | Tiền lương hưu | 3 | LƯƠNG HƯU
-SEMINAR | Buổi thảo luận chuyên đề | 3 | CHUYÊN ĐỀ
-COMPETENCE | Năng lực / tay nghề | 3 | NĂNG LỰC
-PROFICIENCY | Độ thành thạo / độ giỏi | 3 | THÀNH THẠO
-WORKPLACE | Môi trường làm việc / nơi làm việc | 2 | NƠI LÀM VIỆC
-PROFESSOR | Giáo sư đại học giảng dạy | 2 | GIÁO SƯ
-TUTOR | Gia sư dạy kèm | 1 | GIA SƯ
-LECTURER | Giảng viên đại học | 2 | GIẢNG VIÊN
+ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2
+CERTIFICATE | Chứng chỉ / bằng cấp | 2
+DIPLOMA | Bằng tốt nghiệp | 3
+INTERNSHIP | Kỳ thực tập của sinh viên | 2
+EXECUTIVE | Giám đốc điều hành / người quản lý | 3
+RESIGNATION | Việc nộp đơn xin nghỉ việc | 3
+PENSION | Tiền lương hưu | 3
+SEMINAR | Buổi thảo luận chuyên đề | 3
+COMPETENCE | Năng lực / tay nghề | 3
+PROFICIENCY | Độ thành thạo / độ giỏi | 3
+WORKPLACE | Môi trường làm việc / nơi làm việc | 2
+PROFESSOR | Giáo sư đại học giảng dạy | 2
+TUTOR | Gia sư dạy kèm | 1
+LECTURER | Giảng viên đại học | 2
 CURRICULUM VITAE | Bản sơ yếu lý lịch xin việc (CV) | 3 | CV
-TRAINEE | Thực tập sinh / người được đào tạo | 2 | THỰC TẬP SINH
-SUPERVISOR | Người giám sát công việc | 2 | GIÁM SÁT
-TRANSLATOR | Biên dịch viên | 2 | BIÊN DỊCH
-INTERPRETER | Phiên dịch viên nói trực tiếp | 3 | PHIÊN DỊCH
-ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3 | KHỞI NGHIỆP
-WORKLOAD | Khối lượng công việc | 2 | KHỐI LƯỢNG CÔNG VIỆC
-ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ | 1 | PHI HÀNH GIA, COSMONAUT
-DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán | 3 | NHÀ NGOẠI GIAO
-PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý | 3 | NHÀ TRIẾT HỌC
-PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần | 3 | CHUYÊN GIA TÂM LÝ
-VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2 | BÁC SĨ THÚ Y, VET
-ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao | 3 | NHÀ THIÊN VĂN
-THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên | 3 | LUẬN VĂN, DISSERTATION
-METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày | 3 | DỰ BÁO THỜI TIẾT
-LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện | 2 | THỦ THƯ
-ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng | 2 | THỢ ĐIỆN
-PLUMBER | Người thợ sửa ống nước đến nhà kiểm tra vòi nước rò rỉ | 2 | THỢ SỬA ỐNG NƯỚC
-CARPENTER | Người thợ mộc đục đẽo gỗ làm bàn ghế giường tủ | 2 | THỢ MỘC
-AUDITOR | Kiểm toán viên soát xét các con số báo cáo tài chính | 3 | KIỂM TOÁN VIÊN
-JUDGE | Vị thẩm phán cầm búa gõ phán quyết tại phiên tòa | 1 | THẨM PHÁN
-BIOLOGIST | Nhà sinh học nghiên cứu thế giới sinh vật động thực vật | 2 | NHÀ SINH HỌC
-PHYSICIST | Nhà vật lý học nghiên cứu lực hấp dẫn và năng lượng vũ trụ | 2 | NHÀ VẬT LÝ
-DESIGNER | Nhà thiết kế sáng tạo bản vẽ thời trang và đồ họa | 1 | NHÀ THIẾT KẾ
-MUSICIAN | Nhạc sĩ sáng tác giai điệu và chơi nhạc cụ điêu luyện | 1 | NHẠC SĨ
-COMPOSER | Nhà soạn nhạc các bản giao hưởng thính phòng cổ điển | 2 | NHÀ SOẠN NHẠC
-TAILOR | Người thợ may đo cắt vải may quần áo vừa vặn dáng người | 2 | THỢ MAY
-BUTCHER | Người bán thịt cầm dao pha thịt tại quầy sạp chợ | 2 | NGƯỜI BÁN THỊT
-BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng lò nướng | 1 | THỢ LÀM BÁNH
-SYLLABUS | Đề cương chi tiết môn học liệt kê nội dung từng tuần | 3 | ĐỀ CƯƠNG MÔN HỌC
-DORMITORY | Ký túc xá sinh viên ở nội trú trong khuôn viên trường | 2 | KÝ TÚC XÁ, DORM
-CAMPUS | Khuôn viên trường đại học rợp bóng cây xanh | 2 | KHUÔN VIÊN TRƯỜNG
-FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học | 2 | KHOA, GIẢNG VIÊN
-DEAN | Vị trưởng khoa đứng đầu quản lý một khoa đại học | 3 | TRƯỞNG KHOA
-VICE PRINCIPAL | Thầy cô phó hiệu trưởng hỗ trợ điều hành trường | 2 | PHÓ HIỆU TRƯỞNG
-HEAD OF DEPARTMENT | Trưởng bộ môn phụ trách học thuật | 3 | TRƯỞNG BỘ MÔN
-ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng | 2 | NĂM HỌC, NIÊN KHÓA
-GRADUATION | Lễ tốt nghiệp trang trọng khoác áo cử nhân tung mũ | 1 | LỄ TỐT NGHIỆP
-ALUMNI | Hội cựu học sinh cựu sinh viên của trường | 3 | CỰU SINH VIÊN
-VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn | 3 | THỦ KHOA
-SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 4 | Á KHOA
-MAJOR | Chuyên ngành học chính thức tại trường đại học | 1 | CHUYÊN NGÀNH
-MINOR | Chuyên ngành phụ học thêm bằng kép | 2 | CHUYÊN NGÀNH PHỤ
-CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp | 2 | TÍN CHỈ
-TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học | 2 | BẢNG ĐIỂM
-BACHELOR | Bằng cử nhân đại học bốn năm chính quy | 2 | BẰNG CỬ NHÂN
-MASTER | Bằng thạc sĩ sau đại học chuyên sâu | 2 | BẰNG THẠC SĨ
-DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | BẰNG TIẾN SĨ, PHD
-POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 4 | HẬU TIẾN SĨ, POSTDOC
-DISSERTATION | Luận án tiến sĩ bảo vệ trước hội đồng khoa học | 3 | LUẬN ÁN TIẾN SĨ
-DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2 | BẢO VỆ LUẬN VĂN
-ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2 | TRÚNG TUYỂN
-ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2 | GHI DANH, ĐĂNG KÝ HỌC
-EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3 | ĐUỔI HỌC
-ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép | 1 | VẮNG MẶT, NGHỈ HỌC
-ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1 | ĐIỂM DANH
-MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2 | NGƯỜI CỐ VẤN
-PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 4 | ĐỆ TỬ
-APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2 | NGƯỜI HỌC VIỆC
-VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3 | HỌC NGHỀ, DẠY NGHỀ
-PROBATION | Thời gian thử việc hai tháng trước khi ký hợp đồng chính thức | 2 | THỬ VIỆC
-RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến | 2 | NGHỈ HƯU
-SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng | 3 | TRỢ CẤP THÔI VIỆC
-RECRUITER | Chuyên viên tuyển dụng săn đầu người cho công ty | 2 | NHÀ TUYỂN DỤNG, HEADHUNTER
-COVER LETTER | Thư xin việc bày tỏ nguyện vọng gửi kèm hồ sơ lý lịch | 2 | THƯ XIN VIỆC
-REFERENCE | Thư giới thiệu người làm chứng nhận bảo lãnh năng lực | 2 | THƯ GIỚI THIỆU
-COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc | 2 | ĐI LÀM HÀNG NGÀY
-NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau | 1 | CA ĐÊM
-DAY SHIFT | Ca làm việc ban ngày giờ hành chính | 1 | CA NGÀY
-TELEWORK | Hình thức làm việc từ xa tại nhà không cần lên văn phòng | 2 | LÀM TỪ XA, REMOTE WORK
-FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập | 1 | LÀM NGHỀ TỰ DO
-CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2 | CHUYÊN GIA TƯ VẤN
-BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2 | KIỆT SỨC VÌ CÔNG VIỆC
-ABSENTEEISM | Thói quen trốn việc nghỉ làm việc không lý do chính đáng | 3 | TRỐN VIỆC
-PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả | 4 | CỐ ĐI LÀM
-ANNUAL LEAVE | Kỳ nghỉ phép năm có hưởng lương của người lao động | 2 | NGHỈ PHÉP NĂM
-SICK LEAVE | Nghỉ ốm có giấy xác nhận của bác sĩ | 1 | NGHỈ ỐM
-MATERNITY LEAVE | Kỳ nghỉ thai sản sinh con dành cho các bà mẹ | 2 | NGHỈ THAI SẢN
-PATERNITY LEAVE | Kỳ nghỉ chăm vợ sinh con dành cho người cha | 2 | NGHỈ CHĂM VỢ SINH
-BEREAVEMENT LEAVE | Nghỉ phép việc hiếu chịu tang người thân trong gia đình | 3 | NGHỈ TANG
-SABBATICAL | Kỳ nghỉ phép dài hạn nhiều tháng để nghiên cứu hoặc du lịch | 3 | KỲ NGHỈ DÀI HẠN
-PAYSLIP | Phiếu chi tiết lương in rõ các khoản trừ thuế và thực nhận | 2 | PHIẾU LƯƠNG
-APPRAISAL | Kỳ đánh giá năng lực và thành tích làm việc định kỳ | 3 | ĐÁNH GIÁ NĂNG LỰC, PERFORMANCE REVIEW
-DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầm | 3 | GIÁNG CHỨC
-ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng | 3 | CÔNG THÁI HỌC
-CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng | 2 | VÁCH NGĂN VĂN PHÒNG
-PAPERCLIP | Chiếc kẹp ghim giấy bằng kim loại xoắn | 1 | KẸP GIẤY
-SHREDDER | Chiếc máy hủy tài liệu cắt nhỏ giấy vụn bảo mật | 2 | MÁY HỦY TÀI LIỆU
-WHITEBOARD | Chiếc bảng trắng viết bút dạ trong phòng họp công ty | 1 | BẢNG TRẮNG
-FLIPCHART | Bảng kẹp giấy thuyết trình có thể lật từng trang | 2 | BẢNG KẸP GIẤY
-HEADSET | Tai nghe có mic thoại chuyên dụng cho nhân viên trực tổng đài | 1 | TAI NGHE CÓ MIC
-CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp | 2 | CHỦ TỌA, CHỦ TỊCH CUỘC HỌP
-QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ | 3 | TỶ LỆ ĐỦ PHIẾU
-BALLOT | Lá phiếu kín để bỏ phiếu bầu cử | 2 | LÁ PHIẾU
-VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án | 1 | BỎ PHIẾU
-TELECOMMUTING | Phương thức làm việc từ xa kết nối qua mạng viễn thông | 3 | LÀM VIỆC TỪ XA
-NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc | 2 | THỜI HẠN BÁO TRƯỚC
-PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc | 2 | CHẤM CÔNG VÀO
-TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng | 2 | BẢNG CHẤM CÔNG
-BONUSES | Các khoản tiền thưởng thêm ngoài lương cơ bản | 1 | TIỀN THƯỞNG
-PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa | 2 | ĐẶC QUYỀN, PHÚC LỢI
-PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng | 3 | QUỸ HƯU TRÍ
-AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác | 3 | CÔNG TY LIÊN KẾT
-CONGLOMERATE | Tập đoàn kinh tế khổng lồ gồm nhiều công ty đa ngành | 3 | TẬP ĐOÀN ĐA NGÀNH
-MONOPOLY | Thế độc quyền chiếm trọn toàn bộ thị trường | 2 | ĐỘC QUYỀN
-OLIGOPOLY | Thị trường thiểu số độc quyền do vài ông lớn thống trị | 3 | THIỂU SỐ ĐỘC QUYỀN
-BANKRUPTCY | Tình trạng phá sản vỡ nợ không còn khả năng trả nợ | 2 | PHÁ SẢN
-INSOLVENCY | Mất khả năng thanh toán các khoản nợ đến hạn | 3 | MẤT KHẢ NĂNG THANH TOÁN
-LIQUIDATION | Sự thanh lý giải thể tài sản để trả bớt nợ nần | 3 | THANH LÝ TÀI SẢN
-CREDITOR | Chủ nợ bên cho công ty vay tiền | 2 | CHỦ NỢ
-DEBTOR | Bên mang nợ người vay nợ | 2 | CON NỢ, BÊN MANG NỢ
+TRAINEE | Thực tập sinh / người được đào tạo | 2
+SUPERVISOR | Người giám sát công việc | 2
+TRANSLATOR | Biên dịch viên | 2
+INTERPRETER | Phiên dịch viên nói trực tiếp | 3
+ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3
+WORKLOAD | Khối lượng công việc | 2
+ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ | 1 | COSMONAUT
+DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán | 3
+PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý | 3
+PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần | 3
+VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2 | VET
+ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao | 3
+THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên | 3 | DISSERTATION
+METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày | 3
+LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện | 2
+ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng | 2
+PLUMBER | Người thợ sửa ống nước đến nhà kiểm tra vòi nước rò rỉ | 2
+CARPENTER | Người thợ mộc đục đẽo gỗ làm bàn ghế giường tủ | 2
+AUDITOR | Kiểm toán viên soát xét các con số báo cáo tài chính | 3
+JUDGE | Vị thẩm phán cầm búa gõ phán quyết tại phiên tòa | 1
+BIOLOGIST | Nhà sinh học nghiên cứu thế giới sinh vật động thực vật | 2
+PHYSICIST | Nhà vật lý học nghiên cứu lực hấp dẫn và năng lượng vũ trụ | 2
+DESIGNER | Nhà thiết kế sáng tạo bản vẽ thời trang và đồ họa | 1
+MUSICIAN | Nhạc sĩ sáng tác giai điệu và chơi nhạc cụ điêu luyện | 1
+COMPOSER | Nhà soạn nhạc các bản giao hưởng thính phòng cổ điển | 2
+TAILOR | Người thợ may đo cắt vải may quần áo vừa vặn dáng người | 2
+BUTCHER | Người bán thịt cầm dao pha thịt tại quầy sạp chợ | 2
+BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng lò nướng | 1
+SYLLABUS | Đề cương chi tiết môn học liệt kê nội dung từng tuần | 3
+DORMITORY | Ký túc xá sinh viên ở nội trú trong khuôn viên trường | 2 | DORM
+CAMPUS | Khuôn viên trường đại học rợp bóng cây xanh | 2
+FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học | 2 | KHOA
+DEAN | Vị trưởng khoa đứng đầu quản lý một khoa đại học | 3
+VICE PRINCIPAL | Thầy cô phó hiệu trưởng hỗ trợ điều hành trường | 2
+HEAD OF DEPARTMENT | Trưởng bộ môn phụ trách học thuật | 3
+ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng | 2
+GRADUATION | Lễ tốt nghiệp trang trọng khoác áo cử nhân tung mũ | 1
+ALUMNI | Hội cựu học sinh cựu sinh viên của trường | 3
+VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn | 3
+SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 4
+MAJOR | Chuyên ngành học chính thức tại trường đại học | 1
+MINOR | Chuyên ngành phụ học thêm bằng kép | 2
+CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp | 2
+TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học | 2
+BACHELOR | Bằng cử nhân đại học bốn năm chính quy | 2
+MASTER | Bằng thạc sĩ sau đại học chuyên sâu | 2
+DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | PHD
+POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 4 | POSTDOC
+DISSERTATION | Luận án tiến sĩ bảo vệ trước hội đồng khoa học | 3
+DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2
+ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2
+ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2 | GHI DANH
+EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3
+ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép | 1
+ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1
+MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2
+PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 4
+APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2
+VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3
+PROBATION | Thời gian thử việc hai tháng trước khi ký hợp đồng chính thức | 2
+RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến | 2
+SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng | 3
+RECRUITER | Chuyên viên tuyển dụng săn đầu người cho công ty | 2 | HEADHUNTER
+COVER LETTER | Thư xin việc bày tỏ nguyện vọng gửi kèm hồ sơ lý lịch | 2
+REFERENCE | Thư giới thiệu người làm chứng nhận bảo lãnh năng lực | 2
+COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc | 2
+NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau | 1
+DAY SHIFT | Ca làm việc ban ngày giờ hành chính | 1
+TELEWORK | Hình thức làm việc từ xa tại nhà không cần lên văn phòng | 2 | REMOTE WORK
+FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập | 1
+CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2
+BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2
+ABSENTEEISM | Thói quen trốn việc nghỉ làm việc không lý do chính đáng | 3
+PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả | 4
+ANNUAL LEAVE | Kỳ nghỉ phép năm có hưởng lương của người lao động | 2
+SICK LEAVE | Nghỉ ốm có giấy xác nhận của bác sĩ | 1
+MATERNITY LEAVE | Kỳ nghỉ thai sản sinh con dành cho các bà mẹ | 2
+PATERNITY LEAVE | Kỳ nghỉ chăm vợ sinh con dành cho người cha | 2
+BEREAVEMENT LEAVE | Nghỉ phép việc hiếu chịu tang người thân trong gia đình | 3
+SABBATICAL | Kỳ nghỉ phép dài hạn nhiều tháng để nghiên cứu hoặc du lịch | 3
+PAYSLIP | Phiếu chi tiết lương in rõ các khoản trừ thuế và thực nhận | 2
+APPRAISAL | Kỳ đánh giá năng lực và thành tích làm việc định kỳ | 3 | PERFORMANCE REVIEW
+DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầm | 3
+ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng | 3
+CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng | 2
+PAPERCLIP | Chiếc kẹp ghim giấy bằng kim loại xoắn | 1
+SHREDDER | Chiếc máy hủy tài liệu cắt nhỏ giấy vụn bảo mật | 2
+WHITEBOARD | Chiếc bảng trắng viết bút dạ trong phòng họp công ty | 1
+FLIPCHART | Bảng kẹp giấy thuyết trình có thể lật từng trang | 2
+HEADSET | Tai nghe có mic thoại chuyên dụng cho nhân viên trực tổng đài | 1
+CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp | 2
+QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ | 3
+BALLOT | Lá phiếu kín để bỏ phiếu bầu cử | 2
+VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án | 1
+TELECOMMUTING | Phương thức làm việc từ xa kết nối qua mạng viễn thông | 3
+NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc | 2
+PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc | 2
+TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng | 2
+BONUSES | Các khoản tiền thưởng thêm ngoài lương cơ bản | 1
+PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa | 2
+PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng | 3
+AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác | 3
+CONGLOMERATE | Tập đoàn kinh tế khổng lồ gồm nhiều công ty đa ngành | 3
+MONOPOLY | Thế độc quyền chiếm trọn toàn bộ thị trường | 2
+OLIGOPOLY | Thị trường thiểu số độc quyền do vài ông lớn thống trị | 3
+BANKRUPTCY | Tình trạng phá sản vỡ nợ không còn khả năng trả nợ | 2
+INSOLVENCY | Mất khả năng thanh toán các khoản nợ đến hạn | 3
+LIQUIDATION | Sự thanh lý giải thể tài sản để trả bớt nợ nần | 3
+CREDITOR | Chủ nợ bên cho công ty vay tiền | 2
+DEBTOR | Bên mang nợ người vay nợ | 2

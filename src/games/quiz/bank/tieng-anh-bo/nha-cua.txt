@@ -74,23 +74,23 @@ RUBBER | Cao su | 3
 STEEL | Thép | 3
 CERAMIC | Gốm sứ | 3 | CERAMICS, PORCELAIN, POTTERY, CHINA
 ALUMINUM | Nhôm | 3 | ALUMINIUM
-BOOKCASE | Tủ sách / kệ sách | 1 | KỆ SÁCH
-JEWELLERY | Trang sức / nữ trang | 2 | TRANG SỨC
-DISHWASHER | Máy rửa bát | 2 | MÁY RỬA BÁT
-TABLECLOTH | Khăn trải bàn | 2 | KHĂN TRẢI BÀN
-PILLOWCASE | Vỏ gối | 2 | VỎ GỐI
-BUNGALOW | Nhà gỗ một tầng ven biển | 3 | NHÀ GỖ
-MANSION | Dinh thự sang trọng | 3 | DINH THỰ
+BOOKCASE | Tủ sách / kệ sách | 1
+JEWELLERY | Trang sức / nữ trang | 2
+DISHWASHER | Máy rửa bát | 2
+TABLECLOTH | Khăn trải bàn | 2
+PILLOWCASE | Vỏ gối | 2
+BUNGALOW | Nhà gỗ một tầng ven biển | 3
+MANSION | Dinh thự sang trọng | 3
 PENTHOUSE | Căn hộ tầng mái cao cấp | 3 | PENTHOUSE
-STAIRCASE | Cầu thang bộ | 1 | CẦU THANG
-CARDIGAN | Áo khoác len len len cúc | 2 | ÁO CARDIGAN
+STAIRCASE | Cầu thang bộ | 1
+CARDIGAN | Áo khoác len len len cúc | 2
 TUXEDO | Bộ âu phục chú rể sang trọng | 3 | TUXEDO
-HAIRBRUSH | Lược chải tóc | 1 | LƯỢC
-THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3 | ĐIỀU CHỈNH NHIỆT
-REFRIGERATOR | Tủ lạnh bảo quản | 1 | TỦ LẠNH
-KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản | 1 | ÁO KIMONO
-BOWTIE | Chiếc nơ bướm nhỏ thắt trước cổ áo sơ mi lịch lãm | 2 | NƠ ĐEO CỔ, BOW TIE
-TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông | 2 | ÁO CỔ LỌ
-POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động | 1 | ÁO POLO, POLO
-CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha | 1 | ĐỆM TỰA, GỐI TỰA
-BEDSHEET | Tấm ga trải giường phẳng phiu sạch sẽ | 2 | GA TRẢI GIƯỜNG, GA GIƯỜNG
+HAIRBRUSH | Lược chải tóc | 1
+THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3
+REFRIGERATOR | Tủ lạnh bảo quản | 1
+KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản | 1
+BOWTIE | Chiếc nơ bướm nhỏ thắt trước cổ áo sơ mi lịch lãm | 2 | BOW TIE
+TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông | 2
+POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động | 1 | POLO
+CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha | 1
+BEDSHEET | Tấm ga trải giường phẳng phiu sạch sẽ | 2

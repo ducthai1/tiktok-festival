@@ -25,11 +25,11 @@ PORTRAIT MODE | Chế độ chụp chân dung (xóa phông) | 1
 LANDSCAPE MODE | Chế độ xoay ngang màn hình | 1
 ZOOM | Phóng to thu nhỏ | 1 | ZOOM IN
 WIRED | Có dây (kết nối bằng dây) | 2
-BLUETOOTH | Công nghệ kết nối không dây tầm ngắn giữa tai nghe và điện thoại | 1 | KẾT NỐI KHÔNG DÂY
-AVATAR | Ảnh đại diện hồ sơ cá nhân của người dùng trên mạng xã hội | 1 | ẢNH ĐẠI DIỆN
-INTERACTION | Sự tương tác giữa người xem và người live (như thả tim, bình luận) | 2 | TƯƠNG TÁC
+BLUETOOTH | Công nghệ kết nối không dây tầm ngắn giữa tai nghe và điện thoại | 1
+AVATAR | Ảnh đại diện hồ sơ cá nhân của người dùng trên mạng xã hội | 1
+INTERACTION | Sự tương tác giữa người xem và người live (như thả tim, bình luận) | 2
 HEADPHONE | Tai nghe chụp qua đầu để thưởng thức âm nhạc | 1 | TAI NGHE, HEADPHONES
-USB | Thiết bị thẻ nhớ lưu trữ di động nhỏ gọn cắm vào máy tính | 1 | USB, Ổ USB, FLASH DRIVE
-MONITOR | Màn hình hiển thị của máy tính để bàn | 1 | MÀN HÌNH, MÀN HÌNH MÁY TÍNH
-APPLICATION | Ứng dụng hoặc phần mềm cài trên điện thoại | 1 | ỨNG DỤNG, APP
-EMOJI | Biểu tượng cảm xúc mặt cười ngộ nghĩnh khi nhắn tin | 1 | BIỂU TƯỢNG CẢM XÚC, EMOTICON
+USB | Thiết bị thẻ nhớ lưu trữ di động nhỏ gọn cắm vào máy tính | 1 | USB, FLASH DRIVE
+MONITOR | Màn hình hiển thị của máy tính để bàn | 1
+APPLICATION | Ứng dụng hoặc phần mềm cài trên điện thoại | 1 | APP
+EMOJI | Biểu tượng cảm xúc mặt cười ngộ nghĩnh khi nhắn tin | 1 | EMOTICON

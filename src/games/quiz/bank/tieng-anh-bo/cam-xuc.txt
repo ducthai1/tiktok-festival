@@ -98,31 +98,31 @@ GIRL | Cô bé | 1
 MAN | Người đàn ông | 1 | MEN, GUY
 WOMAN | Người phụ nữ | 1 | WOMEN, LADY
 ADULT | Người lớn | 2 | ADULTS, GROWN-UP, GROWNUP
-FEATHER | Lông vũ chim | 1 | LÔNG VŨ
-TOOTHLYNE | Đau răng / nhức răng | 2 | ĐAU RĂNG
-EMOTION | Cảm xúc tâm lý | 1 | CẢM XÚC
-CONFIDENCE | Sự tự tin / lòng tin | 2 | TỰ TIN
-ENTHUSIASM | Sự nhiệt huyết / hào hứng | 3 | NHIỆT HUYẾT
-EXHAUSTED | Kiệt sức / mệt mỏi lả | 2 | KIỆT SỨC
+FEATHER | Lông vũ chim | 1
+TOOTHLYNE | Đau răng / nhức răng | 2
+EMOTION | Cảm xúc tâm lý | 1
+CONFIDENCE | Sự tự tin / lòng tin | 2
+ENTHUSIASM | Sự nhiệt huyết / hào hứng | 3
+EXHAUSTED | Kiệt sức / mệt mỏi lả | 2
 PESSIMISTIC | Bi quan tiêu cực | 3 | BI QUAN
-RECOVERY | Sự hồi phục sức khỏe | 2 | HỒI PHỤC
-WELLNESS | Sức khỏe toàn diện | 2 | SỨC KHỎE
-EYELASH | Lông mi mắt | 2 | LÔNG MI
-LUNGS | Cặp lá phổi hít thở | 2 | LÁ PHỔI
-HOSPITALIZATION | Việc nhập viện điều trị | 3 | NHẬP VIỆN, HOSPITALISATION
-DIAGNOSTIC | Việc chẩn đoán bệnh | 3 | CHẨN ĐOÁN
-PREVENTION | Việc phòng ngừa bệnh tật | 2 | PHÒNG NGỪA
-EXHAUSTION | Sự kiệt sức / lả đi | 3 | KIỆT SỨC
-SATISFACTION | Sự hài lòng thỏa mãn | 2 | HÀI LÒNG
-FRUSTRATION | Sự bực bội / bức bối | 3 | BỨC BỐI
-NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ | 3 | HOÀI NIỆM
-EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc | 3 | HƯNG PHẤN
-MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng | 3 | U SẦU
-EMPATHY | Sự thấu cảm sâu sắc hiểu được cảm xúc của người khác | 3 | THẤU CẢM
+RECOVERY | Sự hồi phục sức khỏe | 2
+WELLNESS | Sức khỏe toàn diện | 2
+EYELASH | Lông mi mắt | 2
+LUNGS | Cặp lá phổi hít thở | 2
+HOSPITALIZATION | Việc nhập viện điều trị | 3 | HOSPITALISATION
+DIAGNOSTIC | Việc chẩn đoán bệnh | 3
+PREVENTION | Việc phòng ngừa bệnh tật | 2
+EXHAUSTION | Sự kiệt sức / lả đi | 3
+SATISFACTION | Sự hài lòng thỏa mãn | 2
+FRUSTRATION | Sự bực bội / bức bối | 3
+NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ | 3
+EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc | 3
+MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng | 3
+EMPATHY | Sự thấu cảm sâu sắc hiểu được cảm xúc của người khác | 3
 ADRENALINE | Chất hoóc-môn tiết ra khiến tim đập thình thịch khi hồi hộp hay phấn khích | 2 | ADRENALIN
-HICCUP | Cơn nấc cụt giật liên hồi ở cổ họng | 2 | NẤC CỤT, HICCUPS
-YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ngủ | 1 | NGÁP
-HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi | 2 | GÓT CHÂN
-PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói | 2 | LÒNG BÀN TAY
-THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt | 1 | CỔ HỌNG
-WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể | 1 | VÒNG EO
+HICCUP | Cơn nấc cụt giật liên hồi ở cổ họng | 2 | HICCUPS
+YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ngủ | 1
+HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi | 2
+PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói | 2
+THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt | 1
+WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể | 1

@@ -219,119 +219,119 @@ ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân | 3 | BUSINESSOWNER
 INFLATION | Sự lạm phát | 3
 VACANCY | Vị trí công việc đang trống | 2 | JOB VACANCY, OPENING
 ALLOWANCE | Tiền phụ cấp | 2 | SUBSIDY, STIPEND
-ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3 | ĐÁP ỨNG
-AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3 | SỬA ĐỔI
-COMPLIANCE | Sự tuân thủ quy định | 3 | TUÂN THỦ
-DELIBERATION | Sự cân nhắc / thảo luận kỹ | 3 | CÂN NHẮC
-OUTSOURCING | Thuê ngoài dịch vụ | 3 | THUÊ NGOÀI
-QUOTATION | Bảng báo giá sản phẩm | 2 | BÁO GIÁ
-RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3 | TÁI CẤU TRÚC
-SPECIFICATION | Thông số kỹ thuật chi tiết | 3 | THÔNG SỐ
-SUPERVISION | Sự giám sát công việc | 3 | GIÁM SÁT
-VENDOR | Nhà cung cấp / người bán | 2 | NHÀ CUNG CẤP
-BENCHMARK | Tiêu chuẩn đánh giá | 3 | TIÊU CHUẨN
-DEPRECIATION | Sự khấu hao tài sản | 3 | KHẤU HAO
-EXPENDITURE | Mức chi tiêu / chi phí | 3 | CHI PHÍ
-TURNOVER | Doanh số / tỷ lệ luân chuyển | 3 | DOANH SỐ
-ADMINISTRATION | Sự quản lý / hành chính | 2 | QUẢN LÝ
-BENEFICIARY | Người thụ hưởng | 3 | NGƯỜI THỤ HƯỞNG
-CANDIDATE | Ứng cử viên | 2 | ỨNG VIÊN
-COLLABORATION | Sự hợp tác | 2 | HỢP TÁC
-CONFIRMATION | Sự xác nhận | 1 | XÁC NHẬN
-CONTRACTOR | Nhà thầu | 2 | NHÀ THẦU
-CONVENTION | Hội nghị / quy ước | 2 | HỘI NGHỊ
-DELEGATION | Đoàn đại biểu / sự ủy thác | 3 | ĐOÀN ĐẠI BIỂU
-DISTRIBUTION | Sự phân phối | 2 | PHÂN PHỐI
-EFFICIENCY | Hiệu quả / năng suất | 2 | HIỆU QUẢ
-ELIGIBILITY | Đủ điều kiện / tư cách | 3 | ĐỦ ĐIỀU KIỆN
-ENTERPRISE | Doanh nghiệp / xí nghiệp | 3 | DOANH NGHIỆP
-ESTABLISHMENT | Sự thành lập / cơ sở | 3 | THÀNH LẬP
-EVALUATION | Sự đánh giá | 2 | ĐÁNH GIÁ
-FACILITY | Cơ sở vật chất / tiện nghi | 2 | CƠ SỞ VẬT CHẤT
-GUARANTEE | Sự bảo hành / cam kết | 2 | BẢO HÀNH
-IMPLEMENTATION | Sự thi hành / triển khai | 3 | TRIỂN KHAI
-INSPECTION | Sự thanh tra / kiểm tra | 3 | KIỂM TRA
-MANAGEMENT | Sự quản lý / ban quản lý | 1 | QUẢN LÝ
-OCCUPATION | Nghề nghiệp | 2 | NGHỀ NGHIỆP
-OPPORTUNITY | Cơ hội | 1 | CƠ HỘI
-PARTICIPANT | Người tham gia | 2 | NGƯỜI THAM GIA
-ACQUISITION | Thương vụ thâu tóm và mua lại một doanh nghiệp khác | 2 | THÂU TÓM
-COMMODITY | Hàng hóa thương mại thô trên thị trường giao dịch | 2 | HÀNG HÓA
-DEFECTIVE | Sản phẩm bị lỗi hỏng hóc do trục trặc sản xuất | 2 | BỊ LỖI
-DISPATCH | Hành động gửi chuyển phát nhanh hàng hóa hoặc tài liệu quan trọng | 2 | GỬI HÀNG
-EXPEDITE | Xúc tiến đẩy nhanh tiến độ xử lý đơn hàng cho khách | 3 | ĐẨY NHANH TIẾN ĐỘ
-TARIFF | Mức thuế quan áp đặt lên hàng hóa xuất nhập khẩu | 2 | THUẾ QUAN
-CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh nghiệp | 3 | KHÁCH HÀNG QUEN
-ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2 | BẢO CHỨNG
-FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3 | TÍNH KHẢ THI
-DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty | 3 | CỔ TỨC
-TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty | 2 | THÂU TÓM
-SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ | 3 | CÔNG TY CON
-CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn | 2 | TẬP ĐOÀN
-STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá | 1 | KHỞI NGHIỆP
-VENTURE | Dự án liên doanh kinh doanh mạo hiểm | 2 | DỰ ÁN MẠO HIỂM
-DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường | 2 | NHÀ PHÂN PHỐI
-RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua | 2 | BÁN LẺ
-CONSIGNMENT | Hàng gửi bán đại lý ký gửi | 3 | HÀNG KÝ GỬI
-BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển | 3 | VẬN ĐƠN
-PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng | 2 | PHIẾU ĐÓNG GÓI
-DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh | 2 | THUẾ NHẬP KHẨU
-EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá | 3 | THUẾ TIÊU THỤ
-REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng | 3 | TIỀN HOÀN LẠI
-BARGAIN | Món hàng mua được giá hời rất rẻ | 2 | MÓN HỜI
-BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc | 2 | BIỂN QUẢNG CÁO
-FLYER | Tờ rơi quảng cáo phát tận tay người đi đường | 2 | TỜ RƠI, LEAFLET
-QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra | 2 | BẢN CÂU HỎI
-AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác | 1 | THỎA THUẬN
-CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật | 2 | ĐIỀU KHOẢN
-STIPULATION | Quy định điều kiện bắt buộc phải tuân theo | 3 | QUY ĐỊNH BẮT BUỘC
-BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng | 3 | VI PHẠM HỢP ĐỒNG
-TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động | 2 | CHẤM DỨT HỢP ĐỒNG
-RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng | 2 | GIA HẠN
-EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng | 2 | HẾT HẠN, EXPIRY
-FISCAL YEAR | Năm tài chính kỳ kế toán 12 tháng của doanh nghiệp | 2 | NĂM TÀI CHÍNH
-QUARTERLY REPORT | Báo cáo kết quả kinh doanh quý được công bố định kỳ | 2 | BÁO CÁO QUÝ
-GROSS PROFIT | Lợi nhuận gộp doanh thu trừ giá vốn hàng bán | 2 | LỢI NHUẬN GỘP
-NET PROFIT | Lợi nhuận ròng sau khi đã trừ tất cả các chi phí và thuế | 2 | LỢI NHUẬN RÒNG
-OPERATING COST | Chi phí vận hành hoạt động kinh doanh thường ngày | 2 | CHI PHÍ VẬN HÀNH
-OVERHEAD | Chi phí chung cố định như tiền thuê văn phòng điện nước | 2 | CHI PHÍ CHUNG
-VARIABLE COST | Chi phí biến đổi thay đổi theo sản lượng sản xuất | 3 | CHI PHÍ BIẾN ĐỔI
-FIXED COST | Chi phí cố định không thay đổi dù sản xuất nhiều hay ít | 2 | CHI PHÍ CỐ ĐỊNH
-BREAK-EVEN POINT | Điểm hòa vốn mức doanh thu đủ bù đắp toàn bộ chi phí | 3 | ĐIỂM HÒA VỐN
-ACCOUNTS PAYABLE | Khoản phải trả tiền công ty nợ nhà cung cấp | 3 | KHOẢN PHẢI TRẢ
-ACCOUNTS RECEIVABLE | Khoản phải thu tiền khách hàng còn nợ công ty | 3 | KHOẢN PHẢI THU
-BALANCE SHEET | Bảng cân đối kế toán phản ánh tài sản nợ và vốn chủ sở hữu | 2 | BẢNG CÂN ĐỐI KẾ TOÁN
-CASH FLOW | Dòng tiền lưu chuyển vào ra của doanh nghiệp trong kỳ | 1 | DÒNG TIỀN
-LIQUIDITY | Tính thanh khoản khả năng chuyển tài sản thành tiền mặt nhanh | 2 | TÍNH THANH KHOẢN
-BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới | 2 | DỰ BÁO NGÂN SÁCH
-PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày | 2 | QUỸ TIỀN LẺ
-REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên | 2 | HOÀN TRẢ CHI PHÍ
-INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn | 2 | SỐ HÓA ĐƠN
-DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ | 1 | NGÀY ĐẾN HẠN
-OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày | 2 | THANH TOÁN QUÁ HẠN
-CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp | 2 | GIẤY BÁO GIẢM GIÁ
-PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng | 2 | ĐẶT HÀNG
-DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao | 2 | PHIẾU GIAO HÀNG
+ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3
+AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3
+COMPLIANCE | Sự tuân thủ quy định | 3
+DELIBERATION | Sự cân nhắc / thảo luận kỹ | 3
+OUTSOURCING | Thuê ngoài dịch vụ | 3
+QUOTATION | Bảng báo giá sản phẩm | 2
+RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3
+SPECIFICATION | Thông số kỹ thuật chi tiết | 3
+SUPERVISION | Sự giám sát công việc | 3
+VENDOR | Nhà cung cấp / người bán | 2
+BENCHMARK | Tiêu chuẩn đánh giá | 3
+DEPRECIATION | Sự khấu hao tài sản | 3
+EXPENDITURE | Mức chi tiêu / chi phí | 3
+TURNOVER | Doanh số / tỷ lệ luân chuyển | 3
+ADMINISTRATION | Sự quản lý / hành chính | 2
+BENEFICIARY | Người thụ hưởng | 3
+CANDIDATE | Ứng cử viên | 2
+COLLABORATION | Sự hợp tác | 2
+CONFIRMATION | Sự xác nhận | 1
+CONTRACTOR | Nhà thầu | 2
+CONVENTION | Hội nghị / quy ước | 2
+DELEGATION | Đoàn đại biểu / sự ủy thác | 3
+DISTRIBUTION | Sự phân phối | 2
+EFFICIENCY | Hiệu quả / năng suất | 2
+ELIGIBILITY | Đủ điều kiện / tư cách | 3
+ENTERPRISE | Doanh nghiệp / xí nghiệp | 3
+ESTABLISHMENT | Sự thành lập / cơ sở | 3
+EVALUATION | Sự đánh giá | 2
+FACILITY | Cơ sở vật chất / tiện nghi | 2
+GUARANTEE | Sự bảo hành / cam kết | 2
+IMPLEMENTATION | Sự thi hành / triển khai | 3
+INSPECTION | Sự thanh tra / kiểm tra | 3
+MANAGEMENT | Sự quản lý / ban quản lý | 1
+OCCUPATION | Nghề nghiệp | 2
+OPPORTUNITY | Cơ hội | 1
+PARTICIPANT | Người tham gia | 2
+ACQUISITION | Thương vụ thâu tóm và mua lại một doanh nghiệp khác | 2
+COMMODITY | Hàng hóa thương mại thô trên thị trường giao dịch | 2
+DEFECTIVE | Sản phẩm bị lỗi hỏng hóc do trục trặc sản xuất | 2
+DISPATCH | Hành động gửi chuyển phát nhanh hàng hóa hoặc tài liệu quan trọng | 2
+EXPEDITE | Xúc tiến đẩy nhanh tiến độ xử lý đơn hàng cho khách | 3
+TARIFF | Mức thuế quan áp đặt lên hàng hóa xuất nhập khẩu | 2
+CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh nghiệp | 3
+ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2
+FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3
+DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty | 3
+TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty | 2
+SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ | 3
+CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn | 2
+STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá | 1
+VENTURE | Dự án liên doanh kinh doanh mạo hiểm | 2
+DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường | 2
+RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua | 2
+CONSIGNMENT | Hàng gửi bán đại lý ký gửi | 3
+BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển | 3
+PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng | 2
+DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh | 2
+EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá | 3
+REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng | 3
+BARGAIN | Món hàng mua được giá hời rất rẻ | 2
+BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc | 2
+FLYER | Tờ rơi quảng cáo phát tận tay người đi đường | 2 | LEAFLET
+QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra | 2
+AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác | 1
+CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật | 2
+STIPULATION | Quy định điều kiện bắt buộc phải tuân theo | 3
+BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng | 3
+TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động | 2
+RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng | 2
+EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng | 2 | EXPIRY
+FISCAL YEAR | Năm tài chính kỳ kế toán 12 tháng của doanh nghiệp | 2
+QUARTERLY REPORT | Báo cáo kết quả kinh doanh quý được công bố định kỳ | 2
+GROSS PROFIT | Lợi nhuận gộp doanh thu trừ giá vốn hàng bán | 2
+NET PROFIT | Lợi nhuận ròng sau khi đã trừ tất cả các chi phí và thuế | 2
+OPERATING COST | Chi phí vận hành hoạt động kinh doanh thường ngày | 2
+OVERHEAD | Chi phí chung cố định như tiền thuê văn phòng điện nước | 2
+VARIABLE COST | Chi phí biến đổi thay đổi theo sản lượng sản xuất | 3
+FIXED COST | Chi phí cố định không thay đổi dù sản xuất nhiều hay ít | 2
+BREAK-EVEN POINT | Điểm hòa vốn mức doanh thu đủ bù đắp toàn bộ chi phí | 3
+ACCOUNTS PAYABLE | Khoản phải trả tiền công ty nợ nhà cung cấp | 3
+ACCOUNTS RECEIVABLE | Khoản phải thu tiền khách hàng còn nợ công ty | 3
+BALANCE SHEET | Bảng cân đối kế toán phản ánh tài sản nợ và vốn chủ sở hữu | 2
+CASH FLOW | Dòng tiền lưu chuyển vào ra của doanh nghiệp trong kỳ | 1
+LIQUIDITY | Tính thanh khoản khả năng chuyển tài sản thành tiền mặt nhanh | 2
+BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới | 2
+PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày | 2
+REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên | 2
+INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn | 2
+DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ | 1
+OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày | 2
+CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp | 2
+PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng | 2
+DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao | 2
 STOCK KEEPING UNIT | Mã quản lý hàng tồn kho ký hiệu định danh từng sản phẩm | 3 | SKU
-BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho | 2 | ĐƠN CHỜ HÀNG
-SUPPLY CHAIN | Chuỗi cung ứng toàn bộ quá trình từ sản xuất đến tay người tiêu dùng | 2 | CHUỖI CUNG ỨNG
-PROCUREMENT | Quá trình mua sắm nguồn cung phục vụ hoạt động doanh nghiệp | 3 | MUA SẮM NGUỒN CUNG
-TENDER | Hồ sơ mời thầu để chọn nhà cung cấp dịch vụ hoặc hàng hóa | 2 | MỜI THẦU
-BID | Hồ sơ dự thầu giá chào mời của nhà cung cấp | 2 | DỰ THẦU
-WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán lẻ | 2 | NHÀ BÁN SỈ
-MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường | 2 | THỊ PHẦN
-TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận | 2 | THỊ TRƯỜNG MỤC TIÊU
-BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm | 2 | ĐỘ NHẬN BIẾT THƯƠNG HIỆU
-MARKETING MIX | Mô hình tiếp thị phối hợp chiến lược 4P (sản phẩm, giá cả, phân phối, xúc tiến) | 3 | HỖN HỢP MARKETING
-CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay | 2 | LỜI KÊU GỌI HÀNH ĐỘNG
-CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự | 2 | TỶ LỆ CHUYỂN ĐỔI
-UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn | 2 | BÁN THÊM SẢN PHẨM CAO CẤP
-CROSS-SELLING | Gợi ý bán thêm sản phẩm bổ sung liên quan đến thứ khách đang mua | 2 | BÁN THÊM SẢN PHẨM LIÊN QUAN
-CUSTOMER RETENTION | Giữ chân khách hàng hiện tại để họ tiếp tục quay lại mua | 2 | GIỮ CHÂN KHÁCH HÀNG
-CHURN RATE | Tỷ lệ khách hàng rời bỏ ngừng sử dụng sản phẩm | 3 | TỶ LỆ KHÁCH HÀNG RỜI BỎ
+BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho | 2
+SUPPLY CHAIN | Chuỗi cung ứng toàn bộ quá trình từ sản xuất đến tay người tiêu dùng | 2
+PROCUREMENT | Quá trình mua sắm nguồn cung phục vụ hoạt động doanh nghiệp | 3
+TENDER | Hồ sơ mời thầu để chọn nhà cung cấp dịch vụ hoặc hàng hóa | 2
+BID | Hồ sơ dự thầu giá chào mời của nhà cung cấp | 2
+WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán lẻ | 2
+MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường | 2
+TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận | 2
+BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm | 2
+MARKETING MIX | Mô hình tiếp thị phối hợp chiến lược 4P (sản phẩm, giá cả, phân phối, xúc tiến) | 3
+CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay | 2
+CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự | 2
+UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn | 2
+CROSS-SELLING | Gợi ý bán thêm sản phẩm bổ sung liên quan đến thứ khách đang mua | 2
+CUSTOMER RETENTION | Giữ chân khách hàng hiện tại để họ tiếp tục quay lại mua | 2
+CHURN RATE | Tỷ lệ khách hàng rời bỏ ngừng sử dụng sản phẩm | 3
 NET PROMOTER SCORE | Chỉ số đo mức độ khách hàng sẵn sàng giới thiệu sản phẩm cho bạn bè | 3 | NPS
-INTEREST RATE | Lãi suất tỷ lệ phần trăm trả thêm khi vay tiền | 1 | LÃI SUẤT
-MORTGAGE | Vay thế chấp bất động sản để mua nhà | 2 | VAY THẾ CHẤP NHÀ
-CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ | 2 | ĐIỂM TÍN DỤNG
-DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn | 2 | VỠ NỢ, VI PHẠM
-JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án | 2 | LIÊN DOANH
+INTEREST RATE | Lãi suất tỷ lệ phần trăm trả thêm khi vay tiền | 1
+MORTGAGE | Vay thế chấp bất động sản để mua nhà | 2
+CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ | 2
+DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn | 2
+JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án | 2

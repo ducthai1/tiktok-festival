@@ -244,19 +244,19 @@ MANGA | Truyện tranh phong cách Nhật Bản đọc từ phải sang | 1 | JA
 SUPERHERO | Siêu anh hùng sở hữu siêu năng lực phi thường | 1 | HERO
 SPACESHIP | Con tàu vũ trụ du hành khám phá các vì sao | 1 | STARSHIP
 CYBORG | Người nửa người nửa máy cấy ghép kim loại | 2 | BIONIC HUMAN
-MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa | 2 | KIỆT TÁC
-SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội | 2 | BẢN GIAO HƯỞNG, GIAO HƯỞNG
-AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát | 3 | KHÁN PHÒNG
+MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa | 2
+SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội | 2
+AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát | 3
 CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh | 3 | QUAY PHIM
-EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật | 2 | TRIỂN LÃM
-SCULPTURE | Tác phẩm điêu khắc đục đẽo từ đá hoặc đồng | 2 | ĐIÊU KHẮC, TƯỢNG ĐIÊU KHẮC
-CALLIGRAPHY | Nghệ thuật viết thư pháp bằng bút lông uốn lượn uyển chuyển | 3 | THƯ PHÁP
-PORTRAIT | Bức tranh vẽ chân dung cận cảnh khuôn mặt một người | 2 | TRANH CHÂN DUNG, CHÂN DUNG
-LANDSCAPE | Bức tranh vẽ phong cảnh thiên nhiên núi non đồng cỏ | 2 | TRANH PHONG CẢNH, PHONG CẢNH
-SPOTLIGHT | Chiếc đèn rọi sân khấu chiếu ánh sáng vào nghệ sĩ biểu diễn | 1 | ĐÈN RỌI, ĐÈN SÂN KHẤU
-CARNIVAL | Lễ hội hóa trang đường phố rực rỡ sắc màu và âm nhạc | 2 | LỄ HỘI HÓA TRANG, LỄ HỘI
-APPLAUSE | Tiếng vỗ tay rộn rã tán thưởng của cả khán phòng | 2 | TIẾNG VỖ TAY, TRÀNG VỖ TAY
-SCREENPLAY | Tập kịch bản chi tiết của bộ phim điện ảnh | 3 | KỊCH BẢN PHIM, KỊCH BẢN
+EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật | 2
+SCULPTURE | Tác phẩm điêu khắc đục đẽo từ đá hoặc đồng | 2
+CALLIGRAPHY | Nghệ thuật viết thư pháp bằng bút lông uốn lượn uyển chuyển | 3
+PORTRAIT | Bức tranh vẽ chân dung cận cảnh khuôn mặt một người | 2
+LANDSCAPE | Bức tranh vẽ phong cảnh thiên nhiên núi non đồng cỏ | 2
+SPOTLIGHT | Chiếc đèn rọi sân khấu chiếu ánh sáng vào nghệ sĩ biểu diễn | 1
+CARNIVAL | Lễ hội hóa trang đường phố rực rỡ sắc màu và âm nhạc | 2
+APPLAUSE | Tiếng vỗ tay rộn rã tán thưởng của cả khán phòng | 2
+SCREENPLAY | Tập kịch bản chi tiết của bộ phim điện ảnh | 3
 NETFLIX | Dịch vụ xem phim trực tuyến phổ biến nhất thế giới | 1 | STREAMING SERVICE
 SPOTIFY | Ứng dụng nghe nhạc trực tuyến hàng đầu | 1 | MUSIC APP
 YOUTUBE | Nền tảng chia sẻ video lớn nhất hành tinh | 1 | VIDEO PLATFORM

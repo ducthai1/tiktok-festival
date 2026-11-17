@@ -48,15 +48,15 @@ HERBIVORE | Động vật ăn cỏ | 2
 OMNIVORE | Động vật ăn tạp | 2
 HABITAT LOSS | Mất môi trường sống | 2
 EXTINCTION | Sự tuyệt chủng | 2
-ROBOTICS | Ngành khoa học chế tạo và lập trình robot tự động hóa | 2 | KỸ THUẬT ROBOT
-QUANTUM | Ngành vật lý lượng tử nghiên cứu các hạt hạ nguyên tử siêu nhỏ | 3 | LƯỢNG TỬ
-ATOM | Hạt nguyên tử - đơn vị cấu tạo cơ bản nhất của vật chất | 2 | NGUYÊN TỬ
-MOLECULE | Một phân tử gồm nhiều nguyên tử liên kết lại với nhau | 2 | PHÂN TỬ
-MICROSCOPE | Chiếc kính hiển vi dùng để phóng đại quan sát vi khuẩn siêu nhỏ | 2 | KÍNH HIỂN VI
-OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp | 1 | OXY, KHÍ OXY
-HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn | 2 | HYDRO, KHÍ HYDRO
+ROBOTICS | Ngành khoa học chế tạo và lập trình robot tự động hóa | 2
+QUANTUM | Ngành vật lý lượng tử nghiên cứu các hạt hạ nguyên tử siêu nhỏ | 3
+ATOM | Hạt nguyên tử - đơn vị cấu tạo cơ bản nhất của vật chất | 2
+MOLECULE | Một phân tử gồm nhiều nguyên tử liên kết lại với nhau | 2
+MICROSCOPE | Chiếc kính hiển vi dùng để phóng đại quan sát vi khuẩn siêu nhỏ | 2
+OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp | 1 | OXY
+HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn | 2 | HYDRO
 CARBON | Nguyên tố cacbon có trong mọi hợp chất hữu cơ | 2 | CACBON
-RADIATION | Bức xạ nhiệt hoặc bức xạ phóng xạ | 3 | BỨC XẠ
-EVOLUTION | Sự tiến hóa của các loài sinh vật qua thời gian | 2 | TIẾN HÓA
-THERMODYNAMICS | Nhiệt động lực học trong vật lý | 3 | NHIỆT ĐỘNG LỰC HỌC
-VOLTAGE | Điện áp hoặc hiệu điện thế | 2 | ĐIỆN ÁP, HIỆU ĐIỆN THẾ
+RADIATION | Bức xạ nhiệt hoặc bức xạ phóng xạ | 3
+EVOLUTION | Sự tiến hóa của các loài sinh vật qua thời gian | 2
+THERMODYNAMICS | Nhiệt động lực học trong vật lý | 3
+VOLTAGE | Điện áp hoặc hiệu điện thế | 2

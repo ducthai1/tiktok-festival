@@ -282,21 +282,21 @@ QUASAR | Chuẩn tinh (thiên văn) | 3
 ASTEROID BELT | Vành đai tiểu hành tinh | 3
 ROCKET | Tên lửa (đẩy lên vũ trụ) | 1
 ZERO GRAVITY | Trạng thái không trọng lực | 2 | WEIGHTLESSNESS
-LAUNCH | Phóng tên lửa hoặc ra mắt sản phẩm | 1 | PHÓNG, RA MẮT
+LAUNCH | Phóng tên lửa hoặc ra mắt sản phẩm | 1
 GALAXY | Dải thiên hà khổng lồ chứa hàng tỷ sao | 1
 SUPERNOVA | Vụ nổ siêu tân tinh chói sáng | 3
-GRAVITY | Lực hấp dẫn kéo vạn vật rơi về phía tâm Trái Đất | 1 | TRỌNG LỰC, LỰC HẤP DẪN
+GRAVITY | Lực hấp dẫn kéo vạn vật rơi về phía tâm Trái Đất | 1
 ASTEROID | Tiểu hành tinh bay quanh Mặt Trời | 2
 ECLIPSE | Hiện tượng che phủ Mặt Trời hay Mặt Trăng | 2
 CONSTELLATION | Chòm sao trên bầu trời đêm | 3
-SOLAR SYSTEM | Hệ Mặt Trời gồm 8 hành tinh quay quanh | 1 | HỆ MẶT TRỜI
+SOLAR SYSTEM | Hệ Mặt Trời gồm 8 hành tinh quay quanh | 1
 COMET | Sao chổi có đuôi lấp lánh qua bầu trời | 2
 NEBULA | Tinh vân - đám mây bụi khí sinh sao | 3
 LIGHTYEAR | Đơn vị đo khoảng cách trong thiên văn | 3
 METEORITE | Khối thiên thạch rơi từ không gian | 3
 ASTRONOMY | Khoa học nghiên cứu các thiên thể vũ trụ | 2
-METEOR | Sao băng lướt nhanh qua bầu trời đêm | 1 | SAO BĂNG, METEORITE
-COSMOS | Vũ trụ bao la vô tận | 2 | VŨ TRỤ, UNIVERSE
+METEOR | Sao băng lướt nhanh qua bầu trời đêm | 1 | METEORITE
+COSMOS | Vũ trụ bao la vô tận | 2 | UNIVERSE
 SUN | Mặt trời | 1
 MOON | Mặt trăng | 1
 MERCURY | Hành tinh nhỏ nhất và gần Mặt Trời nhất | 1
@@ -314,7 +314,7 @@ NEW MOON | Khi Mặt Trăng không nhìn thấy được | 1
 CRESCENT | Hình lưỡi liềm của Mặt Trăng | 2
 CRATER | Hố sâu trên Mặt Trăng hoặc sao | 1
 ECLIPSE SHADOW | Bóng tối chắn Mặt Trời hay Mặt Trăng | 2
-SOLAR ECLIPSE | Khi Mặt Trăng che Mặt Trời | 1 | NHẬT THỰC
+SOLAR ECLIPSE | Khi Mặt Trăng che Mặt Trời | 1
 TAURUS | Cung bò | 2
 VIRGO | Cung xử nữ | 2
 LIBRA | Cung thiên bình | 2
@@ -326,14 +326,14 @@ PISCES | Cung song cá | 1
 ARIES | Cung chiên | 1
 ZODIAC | Bộ 12 cung hoàng đạo | 2
 ECLIPSE PATH | Đường đi của bóng tối trên Trái Đất | 3
-METEOR SHOWER | Mưa sao băng hàng năm | 2 | SAO BĂNG MƯA
+METEOR SHOWER | Mưa sao băng hàng năm | 2
 PERSEID | Mưa sao băng tháng 8 hàng năm | 2
 GEMINID | Mưa sao băng tháng 12 | 2
 LEONID | Mưa sao băng liên quan Orion | 3
 NORTHERN LIGHTS | Cực quang ở Bắc Cực | 1
 GEOMAGNETIC STORM | Bão từ địa cầu gây cực quang | 3
 CORONAL MASS EJECTION | Phun khối khí từ vành nhật | 3
-COSMONAUT | Phi hành gia Nga hay Liên Xô | 2 | NHÂN VIÊN VŨ TRỤ LIÊN XOÉT
+COSMONAUT | Phi hành gia Nga hay Liên Xô | 2
 ISS | Trạm vũ trụ quốc tế | 2
 CREW DRAGON | Phiên bản tàu vũ trụ chở các phi hành gia lên trạm không gian do công ty tư nhân Mỹ chế tạo | 2
 STARSHIP | Tàu vũ trụ tái sử dụng của SpaceX | 2
@@ -354,12 +354,12 @@ BONE LOSS | Tình trạng mất xương do không trọng lực | 2
 MUSCLE ATROPHY | Tình trạng mất cơ | 2
 REPRODUCTION | Quá trình sinh sản | 1
 VAN ALLEN BELT | Vành đai từ bảo vệ Trái Đất | 3
-EXTRATERRESTRIAL | Sinh vật từ ngoài Trái Đất | 2 | E.T, NGOÀI TRÁI ĐẤT
+EXTRATERRESTRIAL | Sinh vật từ ngoài Trái Đất | 2 | E.T
 FLYING SAUCER | Đĩa bay ngoài hành tinh | 1
 ABDUCTION | Sự bắt cóc bởi người ngoài hành tinh | 2
 CONTACT | Sự tiếp xúc với sinh vật ngoài hành tinh | 1
 STAR TREK | Bộ phim viễn tưởng nổi tiếng | 2
-STAR WARS | Bộ phim khoa học viễn tưởng nổi tiếng | 2 | CHIẾN TRANH SAO
+STAR WARS | Bộ phim khoa học viễn tưởng nổi tiếng | 2
 ALIEN INVASION | Xâm lăng của người ngoài hành tinh | 2
 EVENT HORIZON | Ranh giới không thoát khỏi lỗ đen | 3
 WHITE HOLE | Hố trắng phát ra năng lượng | 3
@@ -423,7 +423,7 @@ ARECIBO MESSAGE | Thông điệp gửi không gian năm 1974 | 3
 COSMIC MICROWAVE | Bức xạ nền vũ trụ | 3
 DARK ENERGY | Năng lượng tối đẩy vũ trụ | 2
 EXPANSION | Sự giãn nở vũ trụ | 1
-UNIVERSE | Vũ trụ bao la vô tận | 1 | TOÀN VŨ TRỤ
+UNIVERSE | Vũ trụ bao la vô tận | 1
 INFINITE | Không có giới hạn | 1
 RELATIVITY | Lý thuyết tương đối của Einstein | 3
 GRAVITY WAVE | Sóng hấp dẫn từ đối tượng | 3

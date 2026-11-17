@@ -1,16 +1,16 @@
 # Tiếng Anh · Thành ngữ, cụm từ đắt giá
-PIECE OF CAKE | Thành ngữ chỉ một việc gì đó cực kỳ dễ dàng, dễ như ăn bánh | 1 | DỄ NHƯ ĂN BÁNH, DỄ ỢT
-ONCE IN A BLUE MOON | Thành ngữ chỉ một điều gì đó rất hiếm khi xảy ra, năm thì mười họa | 2 | HIẾM KHI, NĂM THÌ MƯỜI HỌA
-BREAK A LEG | Lời chúc may mắn và biểu diễn thành công trước khi lên sân khấu | 1 | CHÚC MAY MẮN
-UNDER THE WEATHER | Cảm thấy người hơi mệt mỏi, uể oải ốm vặt trong người | 2 | HƠI MỆT, CẢM THẤY ỐM
-SPILL THE BEANS | Thành ngữ vô tình làm lộ bí mật cho người khác biết | 2 | LÀM LỘ BÍ MẬT
-BITE THE BULLET | Cắn răng chịu đựng đối mặt với tình huống khó khăn không thể né tránh | 3 | CẮN RĂNG CHỊU ĐỰNG
-CALL IT A DAY | Quyết định dừng công việc lại để nghỉ ngơi kết thúc một ngày làm việc | 2 | NGHỈ TAY, KẾT THÚC CÔNG VIỆC
-HIT THE SACK | Thành ngữ đi ngủ, đặt lưng lên giường sau một ngày dài mệt mỏi | 2 | ĐI NGỦ, HIT THE HAY
-SEE EYE TO EYE | Đồng thuận, có cùng quan điểm góc nhìn ăn ý với ai đó | 2 | ĐỒNG TÌNH, CÙNG QUAN ĐIỂM
-IN A NUTSHELL | Tóm lại một cách ngắn gọn xúc tích nhất | 2 | TÓM LẠI
-TIME FLIES | Thành ngữ thời gian trôi nhanh như tên bắn thoắt cái đã hết ngày | 1 | THỜI GIAN THOI ĐƯA
-ACTION SPEAKS LOUDER | Thành ngữ hành động có sức nặng hơn ngàn lời nói suông | 2 | HÀNH ĐỘNG HƠN LỜI NÓI
-BETTER LATE THAN NEVER | Thành ngữ thà muộn còn hơn là không bao giờ làm | 2 | THÀ MUỘN CÒN HƠN KHÔNG
-PRACTICE MAKES PERFECT | Thành ngữ có công mài sắt có ngày nên kim, chăm chỉ luyện tập sẽ thành tài | 2 | CHĂM LUYỆN THÀNH TÀI
-ACTIONS SPEAK LOUDER THAN WORDS | Thành ngữ hành động giá trị hơn lời nói suông | 2 | HÀNH ĐỘNG HƠN LỜI NÓI
+PIECE OF CAKE | Thành ngữ chỉ một việc gì đó cực kỳ dễ dàng, dễ như ăn bánh | 1
+ONCE IN A BLUE MOON | Thành ngữ chỉ một điều gì đó rất hiếm khi xảy ra, năm thì mười họa | 2
+BREAK A LEG | Lời chúc may mắn và biểu diễn thành công trước khi lên sân khấu | 1
+UNDER THE WEATHER | Cảm thấy người hơi mệt mỏi, uể oải ốm vặt trong người | 2
+SPILL THE BEANS | Thành ngữ vô tình làm lộ bí mật cho người khác biết | 2
+BITE THE BULLET | Cắn răng chịu đựng đối mặt với tình huống khó khăn không thể né tránh | 3
+CALL IT A DAY | Quyết định dừng công việc lại để nghỉ ngơi kết thúc một ngày làm việc | 2
+HIT THE SACK | Thành ngữ đi ngủ, đặt lưng lên giường sau một ngày dài mệt mỏi | 2 | HIT THE HAY
+SEE EYE TO EYE | Đồng thuận, có cùng quan điểm góc nhìn ăn ý với ai đó | 2
+IN A NUTSHELL | Tóm lại một cách ngắn gọn xúc tích nhất | 2
+TIME FLIES | Thành ngữ thời gian trôi nhanh như tên bắn thoắt cái đã hết ngày | 1
+ACTION SPEAKS LOUDER | Thành ngữ hành động có sức nặng hơn ngàn lời nói suông | 2
+BETTER LATE THAN NEVER | Thành ngữ thà muộn còn hơn là không bao giờ làm | 2
+PRACTICE MAKES PERFECT | Thành ngữ có công mài sắt có ngày nên kim, chăm chỉ luyện tập sẽ thành tài | 2
+ACTIONS SPEAK LOUDER THAN WORDS | Thành ngữ hành động giá trị hơn lời nói suông | 2

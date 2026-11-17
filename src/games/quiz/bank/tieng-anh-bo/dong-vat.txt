@@ -465,72 +465,72 @@ WILDFIRE | Cháy rừng | 3 | FOREST FIRE, BUSHFIRE
 PANTHER | Báo đen (họ mèo săn mồi sa mạc/rừng rậm) | 2 | BLACK PANTHER
 CHAMELEON | Tắc kè hoa (loài bò sát đổi màu theo môi trường) | 2
 SALMON | Cá hồi (loài cá bơi ngược dòng đẻ trứng) | 2
-AVALANCHE | Trận tuyết lở | 3 | TUYẾT LỞ
-GLACIER | Sông băng / khối băng vĩnh cửu | 3 | SÔNG BĂNG
-RAINFOREST | Rừng nhiệt đới | 2 | RỪNG NHIỆT ĐỚI
-HURRICANE | Cơn bão biển / siêu bão | 3 | SIÊU BÃO
-ECOSYSTEM | Hệ sinh thái | 3 | HỆ SINH THÁI
+AVALANCHE | Trận tuyết lở | 3
+GLACIER | Sông băng / khối băng vĩnh cửu | 3
+RAINFOREST | Rừng nhiệt đới | 2
+HURRICANE | Cơn bão biển / siêu bão | 3
+ECOSYSTEM | Hệ sinh thái | 3
 BIODIVERSITY | Đa dạng sinh học | 3
-HIPPOPOTAMUS | Con hà mã sống dưới nước | 2 | HIPPO, HÀ MÃ
-MEERKAT | Chồn cầy châu Phi đứng hai chân | 2 | CHỒN CẦY
-BUTTERFLY | Con bướm nhiều màu | 1 | BƯỚM
-DISASTER | Thảm họa thiên nhiên | 3 | THẢM HỌA
-FLOODING | Trận lũ lụt dâng cao | 2 | LŨ LỤT
-ATMOSPHERE | Bầu khí quyển Trái Đất | 3 | KHÍ QUYỂN
-FORESTATION | Việc trồng rừng phủ xanh | 3 | TRỒNG RỪNG
+HIPPOPOTAMUS | Con hà mã sống dưới nước | 2 | HIPPO
+MEERKAT | Chồn cầy châu Phi đứng hai chân | 2
+BUTTERFLY | Con bướm nhiều màu | 1
+DISASTER | Thảm họa thiên nhiên | 3
+FLOODING | Trận lũ lụt dâng cao | 2
+ATMOSPHERE | Bầu khí quyển Trái Đất | 3
+FORESTATION | Việc trồng rừng phủ xanh | 3
 TOUCAN | Loài chim nhiệt đới có chiếc mỏ rất to sặc sỡ rực rỡ | 3 | CHIM TOUCAN
-FALCON | Chim ưng săn mồi liệng cánh thần tốc | 2 | CHIM ƯNG
-STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống | 3 | THẠCH NHŨ
-GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất | 3 | MẠCH NƯỚC PHUN
-OASIS | Ốc đảo tươi tốt có nước ngọt giữa sa mạc cát mênh mông | 2 | ỐC ĐẢO
-PENINSULA | Bán đảo có ba mặt giáp với biển | 3 | BÁN ĐẢO
-ARCHIPELAGO | Một quần đảo gồm nhiều đảo nhỏ tập hợp lại | 3 | QUẦN ĐẢO
-TUNDRA | Vùng đài nguyên / đồng rêu băng giá quanh năm | 3 | ĐÀI NGUYÊN
-EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu | 2 | XÍCH ĐẠO
-AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực | 3 | CỰC QUANG, NORTHERN LIGHTS
-DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc | 2 | CỒN CÁT, SAND DUNE
-CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng | 2 | HẺM NÚI, GORGE
-IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng | 2 | KỲ NHÔNG CỰ ĐÀ, CỰ ĐÀ
-KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái | 3 | CHIM BỒI CÂY
-PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước | 2 | CHIM BỒ NÔNG, BỒ NÔNG
-GAZELLE | Linh dương linh dương đồng cỏ nhảy thoăn thoắt né báo săn | 2 | LINH DƯƠNG
-WHALE SHARK | Cá mập voi khổng lồ hiền lành ăn sinh vật phù du | 2 | CÁ MẬP VOI
-VIPER | Loài rắn lục đuôi chuông mang nọc độc chết người | 2 | RẮN LỤC, RẮN ĐỘC
-COBRA | Rắn hổ mang bành phình cổ hung dữ mang nọc độc | 1 | RẮN HỔ MANG, HỔ MANG
-PYTHON | Con trăn gấm khổng lồ cuộn tròn siết mồi | 1 | CON TRĂN
-TADPOLE | Con nòng nọc bơi lội dưới nước trước khi mọc chân thành ếch | 2 | NÒNG NỌC
-WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu | 3 | VÒNG XOÁY NƯỚC, XOÁY NƯỚC
-MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi | 2 | ĐỒNG CỎ
-VOLE | Chuột đồng đuôi ngắn gặm nhấm ngoài ruộng | 3 | CHUỘT ĐỒNG
-SHREW | Chuột chù mõm nhọn mùi hôi ăn côn trùng | 2 | CHUỘT CHÙ
-JAGUAR | Báo đốm Nam Mỹ lực cắn cực khỏe | 2 | BÁO ĐỐM
-LEOPARD | Báo hoa mai leo trèo cắp mồi lên cây | 2 | BÁO HOA MAI
-OCELOT | Loài mèo hoang dã có hoa văn vằn đốm tuyệt đẹp sống trong rừng Nam Mỹ | 3 | MÈO GẤM
-CARACAL | Linh miêu tai đen sa mạc nhảy cao bắt chim | 3 | LINH MIÊU TAI ĐEN
-SERVAL | Loài mèo hoang chân dài tai lớn chuyên săn bắt mồi trên thảo nguyên châu Phi | 3 | MÈO RỪNG SERVAL
-TAPIR | Heo vòi có vòi ngắn ăn lá cây trong rừng rậm | 3 | HEO VÒI
-MINK | Loài chồn bán thủy sinh có bộ lông bóng mượt đắt giá thường được nuôi lấy lông | 3 | CHỒN MINK
-SABLE | Loài chồn quý sống ở vùng rừng rậm Siberia xứ lạnh có bộ lông đen mịn vô cùng đắt đỏ | 3 | CHỒN SABLE
-SEA LION | Sư tử biển diễn xiếc tung hứng bóng | 1 | SƯ TỬ BIỂN
-HUMPBACK WHALE | Cá voi lưng gù thích nhảy nhào lộn trên mặt nước | 2 | CÁ VOI LƯNG GÙ
-BLUE WHALE | Cá voi xanh sinh vật to lớn nhất hành tinh | 1 | CÁ VOI XANH
-CUTTLEFISH | Mực nang mai cứng ngụy trang cực tài tình | 2 | MỰC NANG
-HERMIT CRAB | Ốc mượn hồn cua ẩn sĩ chui vào vỏ ốc rỗng | 2 | ỐC MƯỢN HỒN
-SEAGULL | Mòng biển bay lượn kêu ríu rít ven bờ biển | 1 | MÒNG BIỂN
-HAWK | Diều hâu mắt tinh bay lượn săn gà chuột | 2 | DIỀU HÂU
-RAVEN | Quạ đen lớn kêu quạ quạ rất thông minh | 2 | CON QUẠ ĐEN
-MAGPIE | Chim ác là thích nhặt những vật lấp lánh | 3 | CHIM ÁC LÀ
-CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von | 2 | CHIM YẾN HÓT
-PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh | 2 | VẸT YẾN PHỤNG
-COCKATOO | Vẹt mào Úc có chùm lông dựng đứng trên đầu | 3 | VẸT MÀO
-CRANE | Chim sếu đầu đỏ sải cánh bay lượn tuyệt đẹp | 2 | CHIM SẾU
-SWIFT | Chim yến làm tổ bằng dãi làm yến sào | 2 | CHIM YẾN
-SWALLOW | Chim én báo hiệu mùa xuân về | 1 | CHIM ÉN
-GECKO | Loài thằn lằn có lớp đệm ngón chân dính hút leo trèo trên tường kính | 2 | THẠCH SÙNG, TẮC KÈ
-SALAMANDER | Kỳ giông lưỡng cư có khả năng tái sinh chi bị đứt | 3 | KỲ GIÔNG
-NEWT | Sa giông nhỏ sống dưới nước và đầm lầy | 3 | SA GIÔNG
-TOAD | Con cóc da xù xì bắt sâu bọ ban đêm | 1 | CON CÓC
-ANACONDA | Loài trăn khổng lồ nặng nhất hành tinh chuyên siết mồi dưới đầm lầy Amazon | 2 | TRĂN ANACONDA
-RATTLESNAKE | Rắn chuông đuôi lắc phát ra tiếng kêu cảnh báo | 2 | RẮN CHUÔNG
-MAMBA | Loài rắn độc tốc độ di chuyển siêu nhanh trên mặt đất ở châu Phi | 3 | RẮN MAMBA
-SPONGE | Bọt biển sinh vật đại dương lọc nước | 2 | BỌT BIỂN
+FALCON | Chim ưng săn mồi liệng cánh thần tốc | 2
+STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống | 3
+GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất | 3
+OASIS | Ốc đảo tươi tốt có nước ngọt giữa sa mạc cát mênh mông | 2
+PENINSULA | Bán đảo có ba mặt giáp với biển | 3
+ARCHIPELAGO | Một quần đảo gồm nhiều đảo nhỏ tập hợp lại | 3
+TUNDRA | Vùng đài nguyên / đồng rêu băng giá quanh năm | 3
+EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu | 2
+AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực | 3 | NORTHERN LIGHTS
+DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc | 2 | SAND DUNE
+CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng | 2 | GORGE
+IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng | 2
+KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái | 3
+PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước | 2
+GAZELLE | Linh dương linh dương đồng cỏ nhảy thoăn thoắt né báo săn | 2
+WHALE SHARK | Cá mập voi khổng lồ hiền lành ăn sinh vật phù du | 2
+VIPER | Loài rắn lục đuôi chuông mang nọc độc chết người | 2
+COBRA | Rắn hổ mang bành phình cổ hung dữ mang nọc độc | 1
+PYTHON | Con trăn gấm khổng lồ cuộn tròn siết mồi | 1
+TADPOLE | Con nòng nọc bơi lội dưới nước trước khi mọc chân thành ếch | 2
+WHIRLPOOL | Vòng xoáy nước ngầm cuồn cuộn hút thuyền bè xuống sâu | 3
+MEADOW | Đồng cỏ hoa dại xanh mướt ngát hương dưới chân đồi | 2
+VOLE | Chuột đồng đuôi ngắn gặm nhấm ngoài ruộng | 3
+SHREW | Chuột chù mõm nhọn mùi hôi ăn côn trùng | 2
+JAGUAR | Báo đốm Nam Mỹ lực cắn cực khỏe | 2
+LEOPARD | Báo hoa mai leo trèo cắp mồi lên cây | 2
+OCELOT | Loài mèo hoang dã có hoa văn vằn đốm tuyệt đẹp sống trong rừng Nam Mỹ | 3
+CARACAL | Linh miêu tai đen sa mạc nhảy cao bắt chim | 3
+SERVAL | Loài mèo hoang chân dài tai lớn chuyên săn bắt mồi trên thảo nguyên châu Phi | 3
+TAPIR | Heo vòi có vòi ngắn ăn lá cây trong rừng rậm | 3
+MINK | Loài chồn bán thủy sinh có bộ lông bóng mượt đắt giá thường được nuôi lấy lông | 3
+SABLE | Loài chồn quý sống ở vùng rừng rậm Siberia xứ lạnh có bộ lông đen mịn vô cùng đắt đỏ | 3
+SEA LION | Sư tử biển diễn xiếc tung hứng bóng | 1
+HUMPBACK WHALE | Cá voi lưng gù thích nhảy nhào lộn trên mặt nước | 2
+BLUE WHALE | Cá voi xanh sinh vật to lớn nhất hành tinh | 1
+CUTTLEFISH | Mực nang mai cứng ngụy trang cực tài tình | 2
+HERMIT CRAB | Ốc mượn hồn cua ẩn sĩ chui vào vỏ ốc rỗng | 2
+SEAGULL | Mòng biển bay lượn kêu ríu rít ven bờ biển | 1
+HAWK | Diều hâu mắt tinh bay lượn săn gà chuột | 2
+RAVEN | Quạ đen lớn kêu quạ quạ rất thông minh | 2
+MAGPIE | Chim ác là thích nhặt những vật lấp lánh | 3
+CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von | 2
+PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh | 2
+COCKATOO | Vẹt mào Úc có chùm lông dựng đứng trên đầu | 3
+CRANE | Chim sếu đầu đỏ sải cánh bay lượn tuyệt đẹp | 2
+SWIFT | Chim yến làm tổ bằng dãi làm yến sào | 2
+SWALLOW | Chim én báo hiệu mùa xuân về | 1
+GECKO | Loài thằn lằn có lớp đệm ngón chân dính hút leo trèo trên tường kính | 2
+SALAMANDER | Kỳ giông lưỡng cư có khả năng tái sinh chi bị đứt | 3
+NEWT | Sa giông nhỏ sống dưới nước và đầm lầy | 3
+TOAD | Con cóc da xù xì bắt sâu bọ ban đêm | 1
+ANACONDA | Loài trăn khổng lồ nặng nhất hành tinh chuyên siết mồi dưới đầm lầy Amazon | 2
+RATTLESNAKE | Rắn chuông đuôi lắc phát ra tiếng kêu cảnh báo | 2
+MAMBA | Loài rắn độc tốc độ di chuyển siêu nhanh trên mặt đất ở châu Phi | 3
+SPONGE | Bọt biển sinh vật đại dương lọc nước | 2

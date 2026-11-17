@@ -416,44 +416,44 @@ WISH | Lời chúc, điều ước | 2 | WISHES, BEST WISHES, GREETING, GREETING
 MID-AUTUMN | Tết Trung thu | 3 | MID-AUTUMN FESTIVAL, MOON FESTIVAL
 LUCKY MONEY | Tiền lì xì ngày Tết | 3 | RED ENVELOPE, RED ENVELOPES, RED PACKET
 LION DANCE | Múa lân | 3 | LION DANCING
-ACCOMMODATION | Chỗ ở / khách sạn lưu trú | 3 | CHỖ Ở
-RESERVATION | Đặt chỗ trước / đặt phòng | 2 | ĐẶT CHỖ
-NEIGHBOURHOOD | Khu phố xóm giềng | 2 | KHU PHỐ, NEIGHBORHOOD
-PEDESTRIAN | Người đi bộ trên đường | 3 | NGƯỜI ĐI BỘ
-FORTNIGHT | Khoảng thời gian hai tuần (14 ngày) | 3 | HAI TUẦN
-MILLENNIUM | Thiên niên kỷ (1000 năm) | 3 | THIÊN NIÊN KỶ
-PUNCTUAL | Đúng giờ / không muộn | 2 | ĐÚNG GIỜ
-TEMPORARY | Tạm thời / không vĩnh viễn | 3 | TẠM THỜI
-PERMANENT | Lâu dài / vĩnh viễn | 3 | VĨNH VIỄN
-SCHEDULE | Thời gian biểu / lịch trình | 1 | LỊCH TRÌNH
-DURATION | Khoảng thời gian kéo dài | 2 | THỜI GIAN
-EXCURSION | Chuyến tham quan dã ngoại | 3 | CHUYẾN ĐI
-INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3 | CƠ SỞ HẠ TẦNG
-COMMUTER | Người đi làm hằng ngày bằng xe bus/tàu | 3 | NGƯỜI ĐI LÀM
-BOULEVARD | Đại lộ rộng lớn | 2 | ĐẠI LỘ
-CROSSWALK | Vạch sang đường cho người đi bộ | 1 | VẠCH SANG ĐƯỜNG
-TIMEZONE | Múi giờ Trái Đất | 2 | MÚI GIỜ
-DAYLIGHT | Ánh sáng ban ngày | 1 | BAN NGÀY
-DAWN | Bình minh hửng sáng | 2 | BÌNH MINH
-DUSK | Hoàng hôn chiều tà | 2 | HOÀNG HÔN
-WANDERLUST | Niềm khao khát cuồng nhiệt muốn đi du lịch chu du khắp thế giới | 3 | ĐAM MÊ XÊ DỊCH
-COMPASS | Chiếc la bàn định vị luôn có kim chỉ về hướng Bắc | 1 | LA BÀN
-HORIZON | Đường chân trời xa tít tắp nơi trời và biển gặp nhau | 2 | ĐƯỜNG CHÂN TRỜI
-SOLSTICE | Hiện tượng điểm chí (hạ chí ngày dài nhất, đông chí đêm dài nhất) | 3 | ĐIỂM CHÍ
-EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đêm dài bằng nhau) | 3 | ĐIỂM PHÂN
-EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn | 2 | ĐẠI SỨ QUÁN
-CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập ra đường | 3 | GIỜ GIỚI NGHIÊM
-VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt | 1 | BIỆT THỰ
-STONEHENGE | Vòng tròn các khối cự thạch bí ẩn xếp từ thời tiền sử ở nước Anh | 3 | BÃI ĐÁ CỔ
-SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu Phi | 1 | SA MẠC SAHARA
-EVEREST | Đỉnh núi tuyết cao nhất hành tinh trên dãy Himalaya | 1 | ĐỈNH EVEREST, NÚI EVEREST
-AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất | 1 | RỪNG AMAZON
-PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | THÁI BÌNH DƯƠNG, PACIFIC OCEAN
-ATLANTIC | Đại Tây Dương - đại dương ngăn cách châu Mỹ và châu Âu/châu Phi | 2 | ĐẠI TÂY DƯƠNG, ATLANTIC OCEAN
-NILE | Dòng sông Nin huyền thoại nuôi dưỡng nền văn minh Ai Cập cổ | 2 | SÔNG NIN, NILE RIVER
-ALPS | Dãy núi An-pơ hùng vĩ phủ đầy tuyết trắng trải qua các nước châu Âu | 2 | DÃY NÚI ALPS
-ANTARCTICA | Châu Nam Cực - lục địa băng giá lạnh nhất địa cầu nơi chim cánh cụt sống | 2 | CHÂU NAM CỰC, NAM CỰC
-GREENLAND | Hòn đảo lớn nhất thế giới phủ đầy băng tuyết gần Bắc Cực | 2 | ĐẢO GREENLAND
+ACCOMMODATION | Chỗ ở / khách sạn lưu trú | 3
+RESERVATION | Đặt chỗ trước / đặt phòng | 2
+NEIGHBOURHOOD | Khu phố xóm giềng | 2 | NEIGHBORHOOD
+PEDESTRIAN | Người đi bộ trên đường | 3
+FORTNIGHT | Khoảng thời gian hai tuần (14 ngày) | 3
+MILLENNIUM | Thiên niên kỷ (1000 năm) | 3
+PUNCTUAL | Đúng giờ / không muộn | 2
+TEMPORARY | Tạm thời / không vĩnh viễn | 3
+PERMANENT | Lâu dài / vĩnh viễn | 3
+SCHEDULE | Thời gian biểu / lịch trình | 1
+DURATION | Khoảng thời gian kéo dài | 2
+EXCURSION | Chuyến tham quan dã ngoại | 3
+INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3
+COMMUTER | Người đi làm hằng ngày bằng xe bus/tàu | 3
+BOULEVARD | Đại lộ rộng lớn | 2
+CROSSWALK | Vạch sang đường cho người đi bộ | 1
+TIMEZONE | Múi giờ Trái Đất | 2
+DAYLIGHT | Ánh sáng ban ngày | 1
+DAWN | Bình minh hửng sáng | 2
+DUSK | Hoàng hôn chiều tà | 2
+WANDERLUST | Niềm khao khát cuồng nhiệt muốn đi du lịch chu du khắp thế giới | 3
+COMPASS | Chiếc la bàn định vị luôn có kim chỉ về hướng Bắc | 1
+HORIZON | Đường chân trời xa tít tắp nơi trời và biển gặp nhau | 2
+SOLSTICE | Hiện tượng điểm chí (hạ chí ngày dài nhất, đông chí đêm dài nhất) | 3
+EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đêm dài bằng nhau) | 3
+EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn | 2
+CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập ra đường | 3
+VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt | 1
+STONEHENGE | Vòng tròn các khối cự thạch bí ẩn xếp từ thời tiền sử ở nước Anh | 3
+SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu Phi | 1
+EVEREST | Đỉnh núi tuyết cao nhất hành tinh trên dãy Himalaya | 1
+AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất | 1
+PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | PACIFIC OCEAN
+ATLANTIC | Đại Tây Dương - đại dương ngăn cách châu Mỹ và châu Âu/châu Phi | 2 | ATLANTIC OCEAN
+NILE | Dòng sông Nin huyền thoại nuôi dưỡng nền văn minh Ai Cập cổ | 2 | NILE RIVER
+ALPS | Dãy núi An-pơ hùng vĩ phủ đầy tuyết trắng trải qua các nước châu Âu | 2
+ANTARCTICA | Châu Nam Cực - lục địa băng giá lạnh nhất địa cầu nơi chim cánh cụt sống | 2
+GREENLAND | Hòn đảo lớn nhất thế giới phủ đầy băng tuyết gần Bắc Cực | 2
 EXPEDIA | Trang web đặt phòng vé du lịch trực tuyến nổi tiếng | 2 | TRAVEL SITE
 AIRBNB | Ứng dụng thuê căn hộ và phòng nghỉ homestay toàn cầu | 1
 TRIPADVISOR | Trang web đánh giá review khách sạn nhà hàng | 2

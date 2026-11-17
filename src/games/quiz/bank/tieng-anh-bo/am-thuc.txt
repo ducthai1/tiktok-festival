@@ -266,160 +266,160 @@ LUNCH | Bữa trưa | 1
 DINNER | Bữa tối | 1 | SUPPER
 MEAL | Bữa ăn | 1 | MEALS
 MENU | Thực đơn | 1 | MENUS
-SPAGHETTI | Mì Ý sốt cà chua / thịt băm | 1 | MÌ Ý
-CROISSANT | Bánh sừng bò / bánh sừng trâu | 2 | BÁNH SỪNG BÒ
-PANCAKE | Bánh rán chảo ăn kèm mật ong | 1 | BÁNH RÁN
-OATMEAL | Yến mạch / cháo yến mạch | 2 | YẾN MẠCH
-ESPRESSO | Cà phê đậm đặc | 2 | CÀ PHÊ ESPRESSO
+SPAGHETTI | Mì Ý sốt cà chua / thịt băm | 1
+CROISSANT | Bánh sừng bò / bánh sừng trâu | 2
+PANCAKE | Bánh rán chảo ăn kèm mật ong | 1
+OATMEAL | Yến mạch / cháo yến mạch | 2
+ESPRESSO | Cà phê đậm đặc | 2
 CAPPUCCINO | Cà phê bọt sữa Ý | 2
-MILKSHAKE | Sữa lắc trái cây / kem | 2 | SỮA LẮC
-BARBECUE | Món nướng BBQ | 1 | BBQ, THỊT NƯỚNG
-APPETIZER | Món khai vị | 3 | KHAI VỊ
-BEVERAGE | Đồ uống / thức uống nói chung | 3 | ĐỒ UỐNG
-INGREDIENT | Nguyên liệu nấu ăn | 2 | NGUYÊN LIỆU
-WATERMELON | Dưa hấu đỏ | 1 | DƯA HẤU
-ASPARAGUS | Măng tây | 3 | MĂNG TÂY
+MILKSHAKE | Sữa lắc trái cây / kem | 2
+BARBECUE | Món nướng BBQ | 1 | BBQ
+APPETIZER | Món khai vị | 3
+BEVERAGE | Đồ uống / thức uống nói chung | 3
+INGREDIENT | Nguyên liệu nấu ăn | 2
+WATERMELON | Dưa hấu đỏ | 1
+ASPARAGUS | Măng tây | 3
 LASAGNA | Mì đút lò xếp lớp Ý | 2 | LASAGNA
-MACARONI | Nơ ống / mì ống phô mai | 2 | MÌ ỐNG
-WAFFLE | Bánh tổ ong nướng nóng | 2 | BÁNH TỔ ONG
-BAGUETTE | Bánh mì Pháp dài | 2 | BÁNH MÌ PHÁP
-MARSHMALLOW | Kẹo dẻo bông xốp | 1 | KẸO DẺO
-POMEGRANATE | Quả lựu đỏ | 2 | QUẢ LỰU
-GRAPE | Quả nho tươi | 1 | GRAPES, QUẢ NHO
-BLUEBERRY | Quả việt quất | 2 | VIỆT QUẤT
-RASPBERRY | Quả mâm xôi | 2 | MÂM XÔI
+MACARONI | Nơ ống / mì ống phô mai | 2
+WAFFLE | Bánh tổ ong nướng nóng | 2
+BAGUETTE | Bánh mì Pháp dài | 2
+MARSHMALLOW | Kẹo dẻo bông xốp | 1
+POMEGRANATE | Quả lựu đỏ | 2
+GRAPE | Quả nho tươi | 1 | GRAPES
+BLUEBERRY | Quả việt quất | 2
+RASPBERRY | Quả mâm xôi | 2
 DRAGONFRUIT | Quả thanh long | 1 | THANH LONG
-PERSIMMON | Quả hồng chín | 2 | QUẢ HỒNG
-NUTRIENT | Chất dinh dưỡng thực phẩm | 3 | DINH DƯỠNG
+PERSIMMON | Quả hồng chín | 2
+NUTRIENT | Chất dinh dưỡng thực phẩm | 3
 CALORIE | Lượng calo năng lượng | 2 | CALO
-TIRAMISU | Món bánh ngọt béo ngậy vị cà phê và cacao trứ danh của nước Ý | 1 | BÁNH TIRAMISU
-GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico | 3 | SỐT BƠ
-TACO | Món bánh vỏ ngô giòn gập đôi kẹp thịt băm cay nổi tiếng của Mexico | 1 | BÁNH TACO, TACOS
+TIRAMISU | Món bánh ngọt béo ngậy vị cà phê và cacao trứ danh của nước Ý | 1
+GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico | 3
+TACO | Món bánh vỏ ngô giòn gập đôi kẹp thịt băm cay nổi tiếng của Mexico | 1 | TACOS
 BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico | 2 | BURRITOS
-SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản | 1 | CƠM CUỘN
-WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản | 2 | MÙ TẠT XANH
+SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản | 1
+WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản | 2
 VANILLA | Hương vani thơm ngọt ngào cho món bánh kem | 1 | VANI
 CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm | 1 | CARAMEN
-COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng | 2 | KẸO BÔNG GÒN, CANDY FLOSS
-LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu | 1 | KẸO MÚT
-PRETZEL | Bánh quy xoắn nướng giòn rắc hạt muối của Đức | 2 | BÁNH QUY XOẮN, PRETZELS
-CAVIAR | Món trứng cá tầm đen muối xa xỉ đắt giá bậc nhất | 3 | TRỨNG CÁ MUỐI
-TRUFFLE | Loài nấm được mệnh danh là kim cương đen vô cùng đắt đỏ mọc dưới rễ cây | 3 | NẤM TRUFFLE, TRUFFLES
-MUSTARD | Sốt mù tạt vàng cay dịu thường chấm cùng xúc xích nướng | 2 | MÙ TẠT VÀNG
-MAYONNAISE | Sốt trứng béo ngậy trộn cùng rau củ salad | 1 | SỐT MAYONNAISE, MAYO
-CUSTARD | Lớp sốt kem trứng sữa vàng ươm béo ngậy | 2 | KEM TRỨNG
-CIDER | Thức uống rượu táo lên men có ga sủi bọt nhẹ | 2 | RƯỢU TÁO, APPLE CIDER
+COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng | 2 | CANDY FLOSS
+LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu | 1
+PRETZEL | Bánh quy xoắn nướng giòn rắc hạt muối của Đức | 2 | PRETZELS
+CAVIAR | Món trứng cá tầm đen muối xa xỉ đắt giá bậc nhất | 3
+TRUFFLE | Loài nấm được mệnh danh là kim cương đen vô cùng đắt đỏ mọc dưới rễ cây | 3 | TRUFFLES
+MUSTARD | Sốt mù tạt vàng cay dịu thường chấm cùng xúc xích nướng | 2
+MAYONNAISE | Sốt trứng béo ngậy trộn cùng rau củ salad | 1 | MAYO
+CUSTARD | Lớp sốt kem trứng sữa vàng ươm béo ngậy | 2
+CIDER | Thức uống rượu táo lên men có ga sủi bọt nhẹ | 2 | APPLE CIDER
 MOJITO | Món cocktail pha từ chanh, đường và lá bạc hà tươi | 2 | COCKTAIL MOJITO
-CHEESECAKE | Bánh kem phô mai nướng thơm béo ngậy | 1 | BÁNH PHÔ MAI
-MACARON | Loại bánh ngọt tròn nhỏ nhiều màu sắc với hai nắp vỏ giòn xốp kẹp kem ngọt ngào của Pháp | 2 | BÁNH MACARON, MACARONS
-BROWNIE | Bánh sô-cô-la nướng vuông mềm ẩm đậm vị | 1 | BÁNH CHOCOLATE, BROWNIES
-ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát | 3 | BÔNG ATISO, ATISO
-CASHEW | Hạt điều rang béo bùi giòn rụm | 2 | HẠT ĐIỀU, CASHEWS, CASHEW NUT
-WALNUT | Quả óc chó vỏ cứng giàu chất dinh dưỡng | 2 | QUẢ ÓC CHÓ, ÓC CHÓ, WALNUTS
-ALMOND | Hạt hạnh nhân thơm giòn béo bùi | 2 | HẠNH NHÂN, HẠT HẠNH NHÂN, ALMONDS
-PISTACHIO | Hạt dẻ cười vỏ hé nứt miệng rắc muối | 2 | HẠT DẺ CƯỜI, PISTACHIOS
-CUPCAKE | Bánh bông lan nhỏ nướng trong khuôn cốc giấy bắt kem bên trên | 1 | BÁNH CỐC
-SASHIMI | Món cá sống phi lê tươi rói cắt lát mỏng chấm xì dầu mù tạt của Nhật | 1 | CÁ SỐNG
-UDON | Món mì sợi to tròn màu trắng sữa mềm dai nổi tiếng của Nhật Bản | 1 | MÌ UDON
-TEMPURA | Món tôm tẩm bột chiên xù vàng giòn rụm của Nhật | 2 | TÔM CHIÊN XÙ
+CHEESECAKE | Bánh kem phô mai nướng thơm béo ngậy | 1
+MACARON | Loại bánh ngọt tròn nhỏ nhiều màu sắc với hai nắp vỏ giòn xốp kẹp kem ngọt ngào của Pháp | 2 | MACARONS
+BROWNIE | Bánh sô-cô-la nướng vuông mềm ẩm đậm vị | 1 | BROWNIES
+ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát | 3 | ATISO
+CASHEW | Hạt điều rang béo bùi giòn rụm | 2 | CASHEWS, CASHEW NUT
+WALNUT | Quả óc chó vỏ cứng giàu chất dinh dưỡng | 2 | WALNUTS
+ALMOND | Hạt hạnh nhân thơm giòn béo bùi | 2 | ALMONDS
+PISTACHIO | Hạt dẻ cười vỏ hé nứt miệng rắc muối | 2 | PISTACHIOS
+CUPCAKE | Bánh bông lan nhỏ nướng trong khuôn cốc giấy bắt kem bên trên | 1
+SASHIMI | Món cá sống phi lê tươi rói cắt lát mỏng chấm xì dầu mù tạt của Nhật | 1
+UDON | Món mì sợi to tròn màu trắng sữa mềm dai nổi tiếng của Nhật Bản | 1
+TEMPURA | Món tôm tẩm bột chiên xù vàng giòn rụm của Nhật | 2
 KIMCHI | Món dưa cải thảo muối ớt cay giòn trứ danh của Hàn Quốc | 1 | KIM CHI
-KEBAB | Món bánh mì kẹp thịt nướng xiên quay tròn Thổ Nhĩ Kỳ | 1 | THỊT NƯỚNG KEBAB
-RISOTTO | Món cơm Ý nấu nhừ cùng sốt bơ nấm và phô mai béo ngậy | 2 | CƠM Ý
-PIZZA | Chiếc bánh nướng hình tròn phủ đầy phô mai kéo sợi nổi tiếng nước Ý | 1 | BÁNH PIZZA
-HAMBURGER | Bánh mì tròn kẹp miếng thịt bò băm nướng xà lách cà chua | 1 | BÁNH MÌ KẸP THỊT, BURGER
-TOAST | Lát bánh mì nướng giòn rụm quết bơ thơm phức | 1 | BÁNH MÌ NƯỚNG
-MEATBALL | Viên thịt băm viên sốt cà chua đượm vị | 1 | THỊT VIÊN
-RAMEN | Món mì nước truyền thống đậm đà ăn kèm trứng lòng đào của Nhật Bản | 1 | MÌ RAMEN
-SOBA | Món mì sợi làm từ hạt kiều mạch ăn lạnh hoặc nóng của Nhật Bản | 2 | MÌ SOBA
-TAKOYAKI | Bánh bạch tuộc nướng viên tròn đường phố Nhật Bản | 2 | BÁNH BẠCH TUỘC
-DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong xửng tre | 1 | ĐIỂM TÂM, DIM SUM
-WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh | 1 | HOÀNH THÁNH
-BIBIMBAP | Món cơm trộn nóng hổi đựng trong thố đá đủ màu sắc của Hàn Quốc | 2 | CƠM TRỘN
-BULGOGI | Món thịt bò xào thái mỏng ướp sốt ngọt trứ danh của Hàn Quốc | 2 | BÒ XÀO BULGOGI
-TOPOKKI | Bánh gạo cay tteokbokki sốt đỏ dẻo dai Hàn Quốc | 1 | BÁNH GẠO CAY
-SHAWARMA | Món bánh mì cuộn kẹp thịt nướng xiên quay cắt lát của Trung Đông | 2 | BÁNH CUỘN SHAWARMA
-FALAFEL | Món chả viên đậu gà tẩm gia vị chiên giòn rụm của Trung Đông | 3 | CHẢ ĐẬU GÀ
-HUMMUS | Món xốt chấm béo ngậy làm từ hạt đậu gà nghiền mịn trộn mè của Ả Rập | 2 | SỐT ĐẬU GÀ
-PITA | Loại bánh mì tròn dẹt có khoảng rỗng ruột kẹp nhân bên trong | 2 | BÁNH MÌ PITA
-BRIOCHE | Loại bánh mì ngọt nước Pháp mềm xốp màu vàng ươm giàu bơ và trứng | 2 | BÁNH MÌ BRIOCHE
-CREPE | Loại bánh tráng mỏng cuộn kem tươi và trái cây của nước Pháp | 1 | BÁNH CREPE
-MUFFIN | Bánh nướng hình cốc xốp mềm nhân việt quất hoặc sô-cô-la | 1 | BÁNH MUFFIN
-SCONE | Loại bánh nướng nhỏ xốp ăn kèm mứt và kem trong tiệc trà chiều Anh | 2 | BÁNH SCONE
-CHURRO | Món bánh quẩy ngọt thanh dài phủ đường quế chấm sốt sô-cô-la | 2 | BÁNH CHURRO
+KEBAB | Món bánh mì kẹp thịt nướng xiên quay tròn Thổ Nhĩ Kỳ | 1
+RISOTTO | Món cơm Ý nấu nhừ cùng sốt bơ nấm và phô mai béo ngậy | 2
+PIZZA | Chiếc bánh nướng hình tròn phủ đầy phô mai kéo sợi nổi tiếng nước Ý | 1
+HAMBURGER | Bánh mì tròn kẹp miếng thịt bò băm nướng xà lách cà chua | 1 | BURGER
+TOAST | Lát bánh mì nướng giòn rụm quết bơ thơm phức | 1
+MEATBALL | Viên thịt băm viên sốt cà chua đượm vị | 1
+RAMEN | Món mì nước truyền thống đậm đà ăn kèm trứng lòng đào của Nhật Bản | 1
+SOBA | Món mì sợi làm từ hạt kiều mạch ăn lạnh hoặc nóng của Nhật Bản | 2
+TAKOYAKI | Bánh bạch tuộc nướng viên tròn đường phố Nhật Bản | 2
+DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong xửng tre | 1 | DIM SUM
+WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh | 1
+BIBIMBAP | Món cơm trộn nóng hổi đựng trong thố đá đủ màu sắc của Hàn Quốc | 2
+BULGOGI | Món thịt bò xào thái mỏng ướp sốt ngọt trứ danh của Hàn Quốc | 2
+TOPOKKI | Bánh gạo cay tteokbokki sốt đỏ dẻo dai Hàn Quốc | 1
+SHAWARMA | Món bánh mì cuộn kẹp thịt nướng xiên quay cắt lát của Trung Đông | 2
+FALAFEL | Món chả viên đậu gà tẩm gia vị chiên giòn rụm của Trung Đông | 3
+HUMMUS | Món xốt chấm béo ngậy làm từ hạt đậu gà nghiền mịn trộn mè của Ả Rập | 2
+PITA | Loại bánh mì tròn dẹt có khoảng rỗng ruột kẹp nhân bên trong | 2
+BRIOCHE | Loại bánh mì ngọt nước Pháp mềm xốp màu vàng ươm giàu bơ và trứng | 2
+CREPE | Loại bánh tráng mỏng cuộn kem tươi và trái cây của nước Pháp | 1
+MUFFIN | Bánh nướng hình cốc xốp mềm nhân việt quất hoặc sô-cô-la | 1
+SCONE | Loại bánh nướng nhỏ xốp ăn kèm mứt và kem trong tiệc trà chiều Anh | 2
+CHURRO | Món bánh quẩy ngọt thanh dài phủ đường quế chấm sốt sô-cô-la | 2
 PANNA COTTA | Món tráng miệng thạch kem sữa tươi nấu sánh mịn của nước Ý | 2 | PANNA COTTA
-PUDDING | Món bánh tráng miệng mềm mại núng nính rưới sốt caramen | 1 | BÁNH PUDDING
-TART | Món bánh nướng vỏ giòn có vành viền trũng chứa kem trứng hoặc trái cây | 1 | BÁNH TART
+PUDDING | Món bánh tráng miệng mềm mại núng nính rưới sốt caramen | 1
+TART | Món bánh nướng vỏ giòn có vành viền trũng chứa kem trứng hoặc trái cây | 1
 SUNDAE | Ly kem tươi nhiều tầng rưới sốt sô-cô-la và quả anh đào trên đỉnh | 1 | KEM SUNDAE
-LATTE | Món cà phê nhiều sữa nóng có lớp bọt sữa vẽ hình nghệ thuật | 1 | CÀ PHÊ LATTE
-MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1 | CÀ PHÊ MOCHA
+LATTE | Món cà phê nhiều sữa nóng có lớp bọt sữa vẽ hình nghệ thuật | 1
+MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1
 AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1 | AMERICANO
-MATCHA | Bột trà xanh nguyên chất mịn màng của Nhật Bản dùng pha trà sữa | 1 | TRÀ MATCHA
-BOBA | Những viên trân châu bột lọc dẻo dai thả trong cốc trà sữa | 1 | TRÂN CHÂU
+MATCHA | Bột trà xanh nguyên chất mịn màng của Nhật Bản dùng pha trà sữa | 1
+BOBA | Những viên trân châu bột lọc dẻo dai thả trong cốc trà sữa | 1
 MOCKTAIL | Thức uống giải khát pha trộn nhiều loại nước trái cây không chứa cồn | 2 | MOCKTAIL
-MOZZARELLA | Loại phô mai màu trắng dẻo dai tan chảy kéo thành sợi trên mặt bánh nướng | 1 | PHÔ MAI MOZZARELLA
-PARMESAN | Loại phô mai già cứng bào vụn hạt mịn rắc lên đĩa mì Ý | 2 | PHÔ MAI PARMESAN
-CHEDDAR | Loại phô mai tự nhiên màu vàng cam béo ngậy kẹp trong burger | 1 | PHÔ MAI CHEDDAR
-PROSCIUTTO | Thịt giăm bông muối xông khói thái lát mỏng của Ý | 3 | THỊT GIĂM BÔNG Ý
-PEPPERONI | Loại xúc xích bò heo tẩm ớt cay cắt lát tròn mỏng trên mặt bánh nướng | 1 | XÚC XÍCH CAY
-RIBS | Sườn heo hoặc bò nướng sốt BBQ đậm đà | 1 | SƯỜN NƯỚNG
-PATTY | Miếng thịt băm viên kẹp giữa bánh burger | 2 | MIẾNG THỊT BURGER
-NUGGET | Món thịt gà viên xay nhuyễn tẩm bột chiên vàng giòn rụm | 1 | GÀ VIÊN CHIÊN
-RAVIOLI | Món bột mì cán mỏng nhồi nhân thịt và phô mai xếp mép răng cưa của Ý | 2 | MÌ NHỒI RAVIOLI
+MOZZARELLA | Loại phô mai màu trắng dẻo dai tan chảy kéo thành sợi trên mặt bánh nướng | 1
+PARMESAN | Loại phô mai già cứng bào vụn hạt mịn rắc lên đĩa mì Ý | 2
+CHEDDAR | Loại phô mai tự nhiên màu vàng cam béo ngậy kẹp trong burger | 1
+PROSCIUTTO | Thịt giăm bông muối xông khói thái lát mỏng của Ý | 3
+PEPPERONI | Loại xúc xích bò heo tẩm ớt cay cắt lát tròn mỏng trên mặt bánh nướng | 1
+RIBS | Sườn heo hoặc bò nướng sốt BBQ đậm đà | 1
+PATTY | Miếng thịt băm viên kẹp giữa bánh burger | 2
+NUGGET | Món thịt gà viên xay nhuyễn tẩm bột chiên vàng giòn rụm | 1
+RAVIOLI | Món bột mì cán mỏng nhồi nhân thịt và phô mai xếp mép răng cưa của Ý | 2
 GNOCCHI | Món mì viên làm từ bột khoai tây luộc thơm bùi sốt bơ nước Ý | 3 | GNOCCHI
-PAELLA | Món cơm nấu hải sản nhuộm màu nghệ tây trong chảo lớn của Tây Ban Nha | 2 | CƠM TÂY BAN NHA
+PAELLA | Món cơm nấu hải sản nhuộm màu nghệ tây trong chảo lớn của Tây Ban Nha | 2
 NACHOS | Món ăn vặt gồm các lát bánh ngô tam giác giòn tan chấm phô mai và sốt cà chua cay | 1 | NACHOS
-QUESADILLA | Món bánh ngô gập đôi kẹp nhân phô mai nướng chảy của Mexico | 2 | BÁNH QUESADILLA
-SALSA | Loại xốt chấm làm từ cà chua băm, ớt cay và hành tây của ẩm thực Mexico | 1 | SỐT SALSA
-CURRY | Món cà ri cay nồng nấu cùng khoai thịt | 1 | CÀ RI
-BIRYANI | Món cơm trộn thơm lừng tẩm ướp nhiều loại thảo mộc và thịt cừu của Ấn Độ | 2 | CƠM NƯỚNG BIRYANI
-TANDOORI | Món gà ướp gia vị đỏ nướng trong lò đất hình chum của Ấn Độ | 2 | GÀ NƯỚNG TANDOORI
-SAMOSA | Bánh gối chiên hình tam giác vỏ giòn rụm nhân khoai tây và đậu của Ấn Độ | 2 | BÁNH SAMOSA
-PHO | Phở bò nước dùng trong thơm mùi quế hồi Việt Nam | 1 | PHỞ
-BANH MI | Bánh mì kẹp pate thịt chả nổi tiếng Việt Nam | 1 | BÁNH MÌ
-POUTINE | Món khoai tây chiên phủ phô mai cục và rưới đẫm xốt thịt nâu của Canada | 2 | KHOAI TÂY POUTINE
-GOULASH | Món canh thịt bò hầm đậm đà với bột ớt chuông paprika của Hungary | 3 | SÚP BÒ HẦM
-SCHNITZEL | Món thịt đập mỏng lăn bột chiên vàng giòn rụm của nước Áo | 2 | THỊT CHIÊN GIÒN
-BRATWURST | Loại xúc xích tươi nướng than hoa truyền thống nổi tiếng của nước Đức | 3 | XÚC XÍCH ĐỨC
-SAUERKRAUT | Món bắp cải thái mỏng lên men chua giòn ăn kèm xúc xích của nước Đức | 3 | BẮP CẢI MUỐI CHUA
-OLIVE OIL | Dầu ô liu nguyên chất thơm ngon tốt cho tim mạch | 1 | DẦU Ô LIU
-OREGANO | Loại rau thơm khô vị cay the nồng chuyên rắc lên bánh nướng và mì Ý | 2 | LÁ OREGANO
-ROSEMARY | Loại lá thơm hình kim mùi nồng ấm chuyên dùng ướp thịt bò bít tết | 2 | LÁ HƯƠNG THẢO
-THYME | Loại thảo mộc cành nhỏ lá li ti thơm thanh dùng trong món hầm và nướng | 2 | CỎ XẠ HƯƠNG
-BASIL | Loại lá húng quế tây thơm dịu dùng làm món xốt pesto xanh | 1 | HÚNG TÂY
-DILL | Rau thì là nấu canh cá chả cá thơm ngon | 2 | THÌ LÀ
-PARSLEY | Loại rau ngò tây xoăn dùng để rắc trang trí đĩa món ăn phương Tây | 2 | MÙI TÂY
-CLOVE | Đinh hương nụ hoa khô gia vị cay thơm | 2 | ĐINH HƯƠNG
-CARDAMOM | Bạch đậu khấu thảo quả gia vị cà ri quý giá | 3 | BẠCH ĐẬU KHẤU
-TURMERIC | Nghệ vàng tạo màu và vị thơm cho món kho | 1 | CỦ NGHỆ
-SHALLOT | Hành khô hành tím phi thơm giòn rụm | 2 | HÀNH TÍM
-CHIVES | Hẹ lá xanh nấu canh đậu phụ | 2 | LÁ HẸ
-LEEK | Tỏi tây baro thân to xào thịt bò | 2 | TỎI TÂY
-SCALLION | Hành lá rắc lên bát bún phở nóng hổi | 1 | HÀNH LÁ
-CELERY | Cần tây ép nước hoặc xào mực giòn ngọt | 1 | CẦN TÂY
-ZUCCHINI | Bí ngòi xanh giòn mát xào nấu | 2 | BÍ NGÒI
-CAULIFLOWER | Súp lơ trắng bông cải trắng giòn ngọt | 1 | SÚP LƠ TRẮNG
-SPINACH | Rau chân vịt cải bó xôi giúp tăng cường sức mạnh | 1 | RAU CHÂN VỊT
-KALE | Loại rau cải có lá xoăn tít màu xanh thẫm thường xay sinh tố giảm cân | 2 | CẢI XOĂN
-RADISH | Củ cải đỏ tròn nhỏ ăn sống trong món salad | 2 | CỦ CẢI ĐỎ
-BEETROOT | Củ dền đỏ thẫm nấu canh bổ máu | 2 | CỦ DỀN
-TARO | Khoai môn khoai sọ nấu canh sườn dẻo bùi | 1 | KHOAI MÔN
-CASSAVA | Củ sắn củ khoai mì luộc chấm muối mè | 2 | KHOAI MÌ, SẮN
-LOTUS ROOT | Củ sen nhiều lỗ giòn ngọt nấu chè canh | 2 | CỦ SEN
-SEAWEED | Rong biển nấu canh cuộn cơm kimbap | 1 | RONG BIỂN
-EDAMAME | Món quả đậu nành còn xanh nguyên vỏ luộc chín rắc muối nhắm bia | 2 | ĐẬU NÀNH NON
-NOODLES | Mì sợi bún phở nói chung | 1 | MÌ SỢI
-HOTPOT | Món lẩu nhúng thịt rau sôi sùng sục | 1 | MÓN LẨU
-KOMBUCHA | Thức uống trà lên men vị chua ngọt sủi bọt tốt cho đường ruột | 2 | TRÀ KOMBUCHA
-CHAI TEA | Trà sữa thảo mộc gia vị thơm lừng Ấn Độ | 2 | TRÀ SỮA CHAI
-EARL GREY | Trà bá tước hương cam bergamot quý tộc Anh | 2 | TRÀ BÁ TƯỚC
-JASMINE TEA | Trà hoa nhài ướp hương thơm dịu nhẹ | 1 | TRÀ HOA NHÀI
-OOLONG TEA | Trà ô long thơm đậm đà hảo hạng | 1 | TRÀ Ô LONG
-PEPPERMINT TEA | Trà bạc hà the mát sảng khoái | 2 | TRÀ BẠC HÀ
-GINGER ALE | Nước ngọt có ga vị gừng cay nhẹ | 2 | NƯỚC GỪNG CÓ GA
-SPARKLING WATER | Nước khoáng có ga sủi bọt lăn tăn | 1 | NƯỚC KHOÁNG CÓ GA
-TONIC WATER | Loại nước có ga vị đắng nhẹ chiết xuất ký ninh chuyên dùng pha rượu gin | 2 | NƯỚC TONIC
-ENERGY DRINK | Nước tăng lực giúp tỉnh táo tập trung | 1 | NƯỚC TĂNG LỰC
-COCONUT WATER | Nước dừa tươi ngọt lành thanh mát | 1 | NƯỚC DỪA
-SUGARCANE JUICE | Nước mía ép tươi giải khát ngày hè | 1 | NƯỚC MÍA
-ALMOND MILK | Sữa hạnh nhân bùi béo thay thế sữa bò | 2 | SỮA HẠNH NHÂN
-OAT MILK | Sữa yến mạch thanh nhẹ pha cà phê latte | 2 | SỮA YẾN MẠCH
+QUESADILLA | Món bánh ngô gập đôi kẹp nhân phô mai nướng chảy của Mexico | 2
+SALSA | Loại xốt chấm làm từ cà chua băm, ớt cay và hành tây của ẩm thực Mexico | 1
+CURRY | Món cà ri cay nồng nấu cùng khoai thịt | 1
+BIRYANI | Món cơm trộn thơm lừng tẩm ướp nhiều loại thảo mộc và thịt cừu của Ấn Độ | 2
+TANDOORI | Món gà ướp gia vị đỏ nướng trong lò đất hình chum của Ấn Độ | 2
+SAMOSA | Bánh gối chiên hình tam giác vỏ giòn rụm nhân khoai tây và đậu của Ấn Độ | 2
+PHO | Phở bò nước dùng trong thơm mùi quế hồi Việt Nam | 1
+BANH MI | Bánh mì kẹp pate thịt chả nổi tiếng Việt Nam | 1
+POUTINE | Món khoai tây chiên phủ phô mai cục và rưới đẫm xốt thịt nâu của Canada | 2
+GOULASH | Món canh thịt bò hầm đậm đà với bột ớt chuông paprika của Hungary | 3
+SCHNITZEL | Món thịt đập mỏng lăn bột chiên vàng giòn rụm của nước Áo | 2
+BRATWURST | Loại xúc xích tươi nướng than hoa truyền thống nổi tiếng của nước Đức | 3
+SAUERKRAUT | Món bắp cải thái mỏng lên men chua giòn ăn kèm xúc xích của nước Đức | 3
+OLIVE OIL | Dầu ô liu nguyên chất thơm ngon tốt cho tim mạch | 1
+OREGANO | Loại rau thơm khô vị cay the nồng chuyên rắc lên bánh nướng và mì Ý | 2
+ROSEMARY | Loại lá thơm hình kim mùi nồng ấm chuyên dùng ướp thịt bò bít tết | 2
+THYME | Loại thảo mộc cành nhỏ lá li ti thơm thanh dùng trong món hầm và nướng | 2
+BASIL | Loại lá húng quế tây thơm dịu dùng làm món xốt pesto xanh | 1
+DILL | Rau thì là nấu canh cá chả cá thơm ngon | 2
+PARSLEY | Loại rau ngò tây xoăn dùng để rắc trang trí đĩa món ăn phương Tây | 2
+CLOVE | Đinh hương nụ hoa khô gia vị cay thơm | 2
+CARDAMOM | Bạch đậu khấu thảo quả gia vị cà ri quý giá | 3
+TURMERIC | Nghệ vàng tạo màu và vị thơm cho món kho | 1
+SHALLOT | Hành khô hành tím phi thơm giòn rụm | 2
+CHIVES | Hẹ lá xanh nấu canh đậu phụ | 2
+LEEK | Tỏi tây baro thân to xào thịt bò | 2
+SCALLION | Hành lá rắc lên bát bún phở nóng hổi | 1
+CELERY | Cần tây ép nước hoặc xào mực giòn ngọt | 1
+ZUCCHINI | Bí ngòi xanh giòn mát xào nấu | 2
+CAULIFLOWER | Súp lơ trắng bông cải trắng giòn ngọt | 1
+SPINACH | Rau chân vịt cải bó xôi giúp tăng cường sức mạnh | 1
+KALE | Loại rau cải có lá xoăn tít màu xanh thẫm thường xay sinh tố giảm cân | 2
+RADISH | Củ cải đỏ tròn nhỏ ăn sống trong món salad | 2
+BEETROOT | Củ dền đỏ thẫm nấu canh bổ máu | 2
+TARO | Khoai môn khoai sọ nấu canh sườn dẻo bùi | 1
+CASSAVA | Củ sắn củ khoai mì luộc chấm muối mè | 2
+LOTUS ROOT | Củ sen nhiều lỗ giòn ngọt nấu chè canh | 2
+SEAWEED | Rong biển nấu canh cuộn cơm kimbap | 1
+EDAMAME | Món quả đậu nành còn xanh nguyên vỏ luộc chín rắc muối nhắm bia | 2
+NOODLES | Mì sợi bún phở nói chung | 1
+HOTPOT | Món lẩu nhúng thịt rau sôi sùng sục | 1
+KOMBUCHA | Thức uống trà lên men vị chua ngọt sủi bọt tốt cho đường ruột | 2
+CHAI TEA | Trà sữa thảo mộc gia vị thơm lừng Ấn Độ | 2
+EARL GREY | Trà bá tước hương cam bergamot quý tộc Anh | 2
+JASMINE TEA | Trà hoa nhài ướp hương thơm dịu nhẹ | 1
+OOLONG TEA | Trà ô long thơm đậm đà hảo hạng | 1
+PEPPERMINT TEA | Trà bạc hà the mát sảng khoái | 2
+GINGER ALE | Nước ngọt có ga vị gừng cay nhẹ | 2
+SPARKLING WATER | Nước khoáng có ga sủi bọt lăn tăn | 1
+TONIC WATER | Loại nước có ga vị đắng nhẹ chiết xuất ký ninh chuyên dùng pha rượu gin | 2
+ENERGY DRINK | Nước tăng lực giúp tỉnh táo tập trung | 1
+COCONUT WATER | Nước dừa tươi ngọt lành thanh mát | 1
+SUGARCANE JUICE | Nước mía ép tươi giải khát ngày hè | 1
+ALMOND MILK | Sữa hạnh nhân bùi béo thay thế sữa bò | 2
+OAT MILK | Sữa yến mạch thanh nhẹ pha cà phê latte | 2
