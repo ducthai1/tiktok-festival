@@ -3,48 +3,48 @@ FIG | Quả sung (quả vả) | 3
 COCONUT MILK | Nước cốt dừa | 2
 CONDENSED MILK | Sữa đặc có đường | 2
 WHIPPED CREAM | Kem tươi đánh bông | 2 | WHIPPING CREAM
-SOUR CREAM | Kem chua | 3
-BROTH | Nước dùng (nước lèo) | 2 | STOCK
-GRAVY | Nước sốt thịt (sốt nâu) | 3
-MARINATE | Ướp (thịt, cá) | 2 | MARINADE
-SEASONING | Gia vị nêm (bột nêm) | 2
+SOUR CREAM | Kem sữa đã lên men, vị chua, chấm khoai tây | 3
+BROTH | Nước ninh xương hoặc rau, dùng làm nền cho món nước | 2
+GRAVY | Nước sốt sánh nâu chan lên thịt quay | 3
+MARINATE | Ướp thịt cá với gia vị cho ngấm trước khi nấu | 2 | MARINADE
+SEASONING | Hỗn hợp gia vị nêm sẵn cho vừa miệng | 2
 MSG | Bột ngọt (mì chính) | 2 | MONOSODIUM GLUTAMATE
 STARCH | Tinh bột (bột năng) | 3 | CORNSTARCH, TAPIOCA STARCH
-YEAST | Men nở | 2
-DOUGH | Bột nhào | 2
+YEAST | Men vi sinh cho vào bột để bánh nở phồng | 2
+DOUGH | Khối bột đã nhào dẻo, chưa đem nướng | 2
 BATTER | Bột lỏng (để chiên giòn) | 3
 BREADCRUMBS | Bột chiên xù | 2 | PANKO, BREADCRUMB
-SKEWER | Xiên que (thịt xiên) | 2
-SAUCEPAN | Nồi nhỏ có cán | 2
-WOK | Chảo sâu lòng (chảo xào) | 2
-STEAMER | Xửng hấp | 2
+SKEWER | Que nhọn xiên thịt rau để nướng | 2
+SAUCEPAN | Nồi nhỏ có một cán dài, đun sốt hoặc sữa | 2
+WOK | Chảo lòng sâu đáy tròn kiểu Á, đảo lửa to | 2
+STEAMER | Tầng xửng đục lỗ chồng lên nồi để hấp bằng hơi | 2
 SIEVE | Cái rây bột | 2 | STRAINER
 MORTAR | Cái cối giã | 3 | MORTAR AND PESTLE
 PESTLE | Cái chày giã | 3
 MEASURING CUP | Cốc đong | 2
 OVEN MITT | Găng tay nhấc nồi | 2 | OVEN GLOVE
-MINCE | Băm nhỏ (thịt) | 2 | GRIND
-GRATE | Bào, nạo (phô mai, cà rốt) | 2 | SHRED
+MINCE | Động từ chỉ việc băm thịt thật nhỏ | 2 | GRIND
+GRATE | Động từ chỉ việc mài nhỏ phô mai hay cà rốt qua lỗ sắt | 2 | SHRED
 SIMMER | Đun liu riu | 3
-SAUTE | Áp chảo (xào nhanh ít dầu) | 3
-DEEP-FRY | Chiên ngập dầu | 2
+SAUTE | Áp chảo nhanh bằng ít mỡ cho xém mặt ngoài | 3
+DEEP-FRY | Thả ngập hẳn vào chảo dầu nóng | 2
 POACH | Chần (trứng chần nước sôi) | 3
 BRAISE | Om, kho (thịt) | 3
-STEW | Món hầm | 2
+STEW | Món ninh nhỏ lửa lâu cho thịt và củ mềm nhừ | 2
 CARAMELIZE | Thắng đường (làm nước màu) | 3 | CARAMELISE
-FERMENT | Lên men | 2
-PICKLE | Dưa muối, đồ chua | 2 | PICKLES
-VERMICELLI | Bún | 2 | RICE VERMICELLI, RICE NOODLES
-GLASS NOODLES | Miến | 2 | CELLOPHANE NOODLES
-RICE PAPER | Bánh tráng | 2
-FISH BALL | Cá viên | 1 | FISHBALL, FISH BALLS
-BEEF JERKY | Khô bò | 2 | JERKY
+FERMENT | Động từ chỉ việc ủ cho lên men chua | 2
+PICKLE | Rau củ ngâm giấm hoặc muối cho chua | 2 | PICKLES
+VERMICELLI | Sợi trắng nhỏ làm từ bột gạo, ăn với chả và rau sống | 2 | RICE VERMICELLI, RICE NOODLES
+GLASS NOODLES | Sợi trong suốt làm từ bột đậu xanh, dai sần sật | 2 | CELLOPHANE NOODLES
+RICE PAPER | Tấm tròn mỏng làm từ bột gạo, nhúng nước để cuốn | 2
+FISH BALL | Viên tròn làm từ cá xay, thả vào nước lèo | 1 | FISHBALL, FISH BALLS
+BEEF JERKY | Thịt bò xé sợi sấy khô ăn vặt | 2 | JERKY
 DRIED SQUID | Mực khô | 2
 PORK BELLY | Thịt ba chỉ | 2
 CHICKEN BREAST | Ức gà | 1
 DRUMSTICK | Đùi gà | 2 | CHICKEN LEG
 CHICKEN WING | Cánh gà | 1 | CHICKEN WINGS
-LAMB | Thịt cừu non | 2 | MUTTON
+LAMB | Thịt của con cừu non, mềm và ít mùi hơn cừu già | 2 | MUTTON
 VEAL | Thịt bê | 3
 SCALLOP | Sò điệp | 2
 MUSSEL | Con vẹm (chem chép) | 3 | MUSSELS
@@ -71,14 +71,14 @@ OYSTER SAUCE | Dầu hào | 2
 SHRIMP PASTE | Mắm tôm | 2
 LARD | Mỡ lợn (mỡ nước) | 3
 MARGARINE | Bơ thực vật | 3
-JELLY | Thạch rau câu | 1 | JELLO, GELATIN
+JELLY | Thạch rau câu trong, rung rinh khi lắc | 1 | JELLO, GELATIN
 FLAN | Bánh caramen | 2 | CREME CARAMEL
 SPONGE CAKE | Bánh bông lan | 2
 RICE CAKE | Bánh gạo | 2
 HOT DOG | Bánh mì kẹp xúc xích | 1 | HOTDOG
 CHEESEBURGER | Bánh kẹp thịt có phô mai | 1
 PIE | Bánh nướng có nhân, vỏ giòn | 2
-BISCUIT | Bánh quy | 1 | COOKIE
+BISCUIT | Bánh nướng khô giòn, cách gọi của người Anh | 1
 CRACKER | Bánh quy giòn mặn | 2 | CRACKERS
 GUMMY | Kẹo dẻo | 1 | GUMMIES, GUMMY BEAR
 CHEWING GUM | Kẹo cao su | 1 | GUM, BUBBLE GUM
@@ -102,15 +102,15 @@ TIP | Tiền boa | 2 | GRATUITY
 SPOILED | Bị ôi thiu | 2 | ROTTEN, SPOILT
 GREASY | Nhiều dầu mỡ | 2 | OILY
 CHEWY | Dai (khi nhai) | 2
-CRUNCHY | Giòn rụm | 1 | CRISPY
+CRUNCHY | Giòn sần sật khi cắn, như rau tươi hay hạt rang | 1
 SOGGY | Bị ỉu, bị nhão | 3
 BURNT | Bị cháy khét | 2 | BURNED
 UMAMI | Vị thứ năm ngoài chua mặn ngọt đắng | 3
 MISE EN PLACE | Chuẩn bị nguyên liệu trước nấu | 3
 EMULSIFY | Trộn chất béo và nước để tạo sốt | 3
-JULIENNE | Cách cắt rau thành sợi dài nhỏ | 3 | CHIFFONADE
+JULIENNE | Kiểu thái rau củ thành sợi dài mảnh như que diêm | 3 | CHIFFONADE
 BRUNOISE | Cách cắt rau thành khối nhỏ 2-3mm | 3
-GASTRONOMY | Khoa học về ẩm thực | 3 | CULINARY
+GASTRONOMY | Ngành nghiên cứu về ăn uống và văn hoá ẩm thực | 3 | CULINARY
 FRUIT | Trái cây, hoa quả | 1 | FRUITS
 STRAWBERRY | Quả dâu tây | 1 | STRAWBERRIES
 PINEAPPLE | Quả dứa (trái thơm) | 1 | PINEAPPLES
@@ -129,7 +129,7 @@ LONGAN | Quả nhãn | 3 | LONGANS
 RAMBUTAN | Quả chôm chôm | 3 | RAMBUTANS
 MANGOSTEEN | Quả măng cụt | 3 | MANGOSTEENS
 JACKFRUIT | Quả mít | 3
-POMELO | Quả bưởi | 3 | GRAPEFRUIT, POMELOS
+POMELO | Quả múi to vỏ dày xanh, tách ra ăn tráng miệng | 3 | GRAPEFRUIT, POMELOS
 STAR FRUIT | Quả khế | 3 | CARAMBOLA
 PASSION FRUIT | Quả chanh leo (chanh dây) | 3
 VEGETABLE | Rau củ, rau xanh | 1 | VEGETABLES, VEGGIE, VEGGIES, VEG
@@ -151,7 +151,7 @@ BROCCOLI | Súp lơ xanh (bông cải xanh) | 2
 EGGPLANT | Quả cà tím | 2 | AUBERGINE, EGGPLANTS, AUBERGINES
 PEANUT | Hạt lạc (đậu phộng) | 2 | PEANUTS, GROUNDNUT, GROUNDNUTS
 GINGER | Củ gừng | 2
-SPRING ONION | Hành lá | 3 | SPRING ONIONS, GREEN ONION, GREEN ONIONS, SCALLION, SCALLIONS
+SPRING ONION | Cọng lá xanh dài vị hăng nhẹ, rắc lên bát canh | 3 | SPRING ONIONS, GREEN ONION, GREEN ONIONS, SCALLIONS
 LEMONGRASS | Cây sả (gia vị thơm) | 3
 CORIANDER | Rau mùi (ngò rí) | 3 | CILANTRO
 WATER SPINACH | Rau muống | 3 | MORNING GLORY, KANGKONG
@@ -166,8 +166,8 @@ BACON | Thịt ba chỉ xông khói | 2
 STEAK | Món bò bít tết | 2 | BEEFSTEAK, STEAKS
 FRIED CHICKEN | Gà rán | 2
 SEAFOOD | Hải sản (tôm, cua, cá…) | 2
-SHRIMP | Con tôm (hải sản) | 2 | PRAWN, SHRIMPS, PRAWNS
-SQUID | Con mực (hải sản) | 2 | CALAMARI, CUTTLEFISH, SQUIDS
+SHRIMP | Con tôm (hải sản) | 2 | SHRIMPS, PRAWNS
+SQUID | Hải sản thân ống trong suốt, mười tua, nướng hoặc chiên vòng | 2 | CALAMARI, SQUIDS
 OYSTER | Con hàu (hải sản) | 3 | OYSTERS
 LOBSTER | Con tôm hùm | 3 | LOBSTERS
 TOFU | Đậu phụ (đậu hũ) | 2 | BEAN CURD
@@ -180,7 +180,7 @@ BUTTER | Bơ (để phết bánh mì) | 1
 YOGURT | Sữa chua | 1 | YOGHURT, YOGHOURT, YOGURTS
 CHOCOLATE | Sô-cô-la | 1 | CHOCOLATES
 HONEY | Mật ong | 1
-COOKIE | Bánh quy | 1 | COOKIES, BISCUIT, BISCUITS
+COOKIE | Bánh nướng nhỏ dẻo có hạt sô-cô-la, cách gọi của người Mỹ | 1 | COOKIES, BISCUITS
 FRENCH FRIES | Khoai tây chiên (cắt que) | 1 | FRIES, CHIPS, FRENCH FRY
 SPRING ROLL | Nem rán (chả giò) | 2 | SPRING ROLLS, EGG ROLL, EGG ROLLS
 FRIED EGG | Trứng ốp la | 2 | FRIED EGGS, SUNNY SIDE UP
@@ -188,23 +188,23 @@ FRIED RICE | Cơm chiên (cơm rang) | 2
 HOT POT | Nồi nước dùng sôi sùng sục giữa bàn, ai muốn ăn gì thì nhúng | 2 | STEAMBOAT
 DOUGHNUT | Bánh vòng chiên (có lỗ ở giữa) | 2 | DONUT, DOUGHNUTS, DONUTS
 POPCORN | Bỏng ngô (bắp rang bơ) | 2
-JAM | Mứt (phết lên bánh mì) | 2 | JELLY, JAMS
-DESSERT | Món tráng miệng | 2 | DESSERTS, PUDDING
+JAM | Mứt hoa quả nghiền đặc, phết lên bánh mì | 2 | JAMS
+DESSERT | Món ngọt ăn sau cùng của bữa | 2 | DESSERTS
 SNACK | Đồ ăn vặt | 2 | SNACKS
-INSTANT NOODLES | Mì gói (mì tôm) | 2 | INSTANT NOODLE, RAMEN, INSTANT RAMEN
+INSTANT NOODLES | Vắt mì sấy khô, chế nước sôi ba phút là ăn được | 2 | INSTANT NOODLE, INSTANT RAMEN
 FAST FOOD | Đồ ăn nhanh | 2
 PORRIDGE | Cháo (cháo gà, cháo trắng) | 3 | CONGEE, RICE PORRIDGE
 STICKY RICE | Xôi, gạo nếp | 3 | GLUTINOUS RICE
 BROKEN RICE | Cơm tấm | 3
 DUMPLING | Bánh sủi cảo (há cảo) | 3 | DUMPLINGS
-OMELETTE | Trứng tráng (đánh tan rồi chiên) | 3 | OMELET, OMELETTES, OMELETS
+OMELETTE | Trứng tráng (đánh tan rồi chiên) | 3 | OMELETTES, OMELETS
 COFFEE | Cà phê | 1
 BEER | Bia (đồ uống) | 1 | BEERS
 GREEN TEA | Trà xanh | 1
 LEMONADE | Nước chanh (đồ uống) | 1 | LIMEADE, LEMON JUICE, LIME JUICE
-MILK TEA | Trà sữa | 2 | BUBBLE TEA, BOBA TEA, BOBA, PEARL MILK TEA
+MILK TEA | Trà pha sữa đặc, uống lạnh | 2 | BUBBLE TEA, BOBA TEA, PEARL MILK TEA
 SMOOTHIE | Sinh tố (trái cây xay) | 2 | SMOOTHIES
-SODA | Nước ngọt có ga | 2 | SOFT DRINK, SOFT DRINKS, FIZZY DRINK, POP, SODA POP
+SODA | Nước ngọt có ga | 2 | SOFT DRINK, SOFT DRINKS, FIZZY DRINK, SODA POP
 WINE | Rượu vang | 2 | WINES
 SOY MILK | Sữa đậu nành | 2 | SOYA MILK, SOYBEAN MILK
 ICED COFFEE | Cà phê đá | 2 | ICE COFFEE
@@ -215,7 +215,7 @@ FISH SAUCE | Nước mắm | 2
 SOY SAUCE | Nước tương (xì dầu) | 2 | SOYA SAUCE, SOY
 OIL | Dầu ăn | 2 | COOKING OIL, VEGETABLE OIL
 KETCHUP | Tương cà (sốt cà chua) | 2 | TOMATO SAUCE, TOMATO KETCHUP, CATSUP
-SPICE | Gia vị (nói chung) | 2 | SPICES, SEASONING, SEASONINGS, CONDIMENT, CONDIMENTS
+SPICE | Hương liệu khô từ cây cỏ như quế, hồi, tiêu | 2 | SPICES, SEASONINGS, CONDIMENT, CONDIMENTS
 FLOUR | Bột mì | 2 | WHEAT FLOUR
 VINEGAR | Giấm (gia vị chua) | 3
 CINNAMON | Quế (gia vị thơm làm bánh) | 3
@@ -223,26 +223,26 @@ SWEET | Ngọt (vị) | 1
 SOUR | Chua (vị) | 2
 SALTY | Mặn (vị) | 2
 BITTER | Đắng (vị) | 2
-SPICY | Cay (vị) | 2 | HOT
+SPICY | Cay (vị) | 2
 DELICIOUS | Ngon (món ăn ngon) | 1 | TASTY, YUMMY
 FRESH | Tươi (rau tươi, cá tươi) | 2
 HUNGRY | Đói bụng | 1 | STARVING
 THIRSTY | Khát nước | 1
 RAW | Sống (chưa nấu chín) | 3 | UNCOOKED
 RIPE | Chín (trái cây đã chín) | 3
-CRISPY | Giòn (như gà rán giòn) | 3 | CRISP, CRUNCHY
+CRISPY | Giòn tan vì được chiên ngập dầu hoặc nướng khô | 3
 TASTE | Nếm thử (món ăn) | 2
 CUT | Cắt (bằng dao) | 1
-FRY | Chiên, rán (động từ) | 2 | DEEP FRY
+FRY | Chiên trong chảo có dầu | 2
 BOIL | Luộc, đun sôi (động từ) | 2
-GRILL | Nướng (trên vỉ, than hoa) | 2 | BARBECUE, BBQ, BROIL
+GRILL | Nướng trên vỉ sắt đặt trên than hồng | 2 | BBQ, BROIL
 BAKE | Nướng (bánh trong lò) | 2
 STEAM | Hấp (nấu bằng hơi nước) | 2
-CHOP | Chặt, băm nhỏ (thịt, rau) | 2 | MINCE, DICE
+CHOP | Động từ chỉ việc chặt khúc hoặc thái to tay | 2
 SLICE | Thái lát mỏng (động từ) | 2
 PEEL | Gọt vỏ, bóc vỏ | 2
 MIX | Trộn (các nguyên liệu) | 2
-STIR-FRY | Xào (động từ) | 3 | SAUTE
+STIR-FRY | Đảo nhanh tay trên lửa to với chút dầu | 3
 ROAST | Quay (như vịt quay, heo quay) | 3 | ROASTED
 RECIPE | Công thức nấu ăn | 3 | RECIPES
 KNIFE | Con dao | 1 | KNIVES
@@ -250,14 +250,14 @@ SPOON | Cái thìa (cái muỗng) | 1 | SPOONS
 FORK | Cái nĩa (dĩa xiên thức ăn) | 1 | FORKS
 BOWL | Cái bát (chén ăn cơm) | 1 | BOWLS
 PLATE | Cái đĩa đựng thức ăn | 1 | PLATES, DISH
-CUP | Cái tách (uống trà, cà phê) | 1 | CUPS, MUG, TEACUP
+CUP | Đồ uống trà cà phê có quai nhỏ | 1 | CUPS, TEACUP
 GLASS | Cái ly (cốc thủy tinh) | 1
 BOTTLE | Cái chai | 1 | BOTTLES
 CHOPSTICKS | Đôi đũa (để ăn cơm) | 2 | CHOPSTICK
-PAN | Cái chảo (để chiên, xào) | 2 | FRYING PAN, FRYPAN, SKILLET, WOK
-POT | Cái nồi (để nấu canh) | 2 | SAUCEPAN, COOKING POT, POTS
+PAN | Dụng cụ lòng nông đáy phẳng để chiên xào | 2 | FRYING PAN, FRYPAN, SKILLET
+POT | Dụng cụ lòng sâu có quai để ninh và nấu canh | 2 | COOKING POT, POTS
 RICE COOKER | Nồi cơm điện | 2
-NAPKIN | Khăn ăn, giấy ăn (lau miệng) | 2 | NAPKINS, SERVIETTE, TISSUE, TISSUES, PAPER NAPKIN
+NAPKIN | Khăn ăn, giấy ăn (lau miệng) | 2 | NAPKINS, SERVIETTE, TISSUES, PAPER NAPKIN
 STRAW | Ống hút (uống nước) | 2 | STRAWS, DRINKING STRAW
 CUTTING BOARD | Cái thớt | 3 | CHOPPING BOARD
 TOOTHPICK | Cây tăm (xỉa răng sau bữa ăn) | 3 | TOOTHPICKS
@@ -273,14 +273,14 @@ OATMEAL | Yến mạch / cháo yến mạch | 2
 ESPRESSO | Cà phê đậm đặc | 2
 CAPPUCCINO | Cà phê bọt sữa Ý | 2
 MILKSHAKE | Sữa lắc trái cây / kem | 2
-BARBECUE | Món thịt nướng than ngoài trời kiểu Mỹ | 1 | BBQ
-APPETIZER | Món khai vị | 3
+BARBECUE | Tiệc nướng ngoài trời, thịt tẩm sốt nướng than | 1 | BBQ
+APPETIZER | Món nhỏ dọn đầu bữa cho đỡ đói trước món chính | 3
 BEVERAGE | Đồ uống / thức uống nói chung | 3
 INGREDIENT | Nguyên liệu nấu ăn | 2
 WATERMELON | Dưa hấu đỏ | 1
 ASPARAGUS | Măng tây | 3
 LASAGNA | Mì đút lò xếp lớp Ý | 2
-MACARONI | Nơ ống / mì ống phô mai | 2
+MACARONI | Mì ống ngắn cong rỗng ruột, hay trộn phô mai | 2
 WAFFLE | Bánh tổ ong nướng nóng | 2
 BAGUETTE | Bánh mì Pháp dài | 2
 MARSHMALLOW | Kẹo dẻo bông xốp | 1
@@ -327,15 +327,15 @@ RISOTTO | Món cơm Ý nấu nhừ cùng sốt bơ nấm và phô mai béo ngậ
 PIZZA | Chiếc bánh nướng hình tròn phủ đầy phô mai kéo sợi nổi tiếng nước Ý | 1
 HAMBURGER | Bánh mì tròn kẹp miếng thịt bò băm nướng xà lách cà chua | 1 | BURGER
 TOAST | Lát bánh mì nướng giòn rụm quết bơ thơm phức | 1
-MEATBALL | Viên thịt băm viên sốt cà chua đượm vị | 1
-RAMEN | Món mì nước truyền thống đậm đà ăn kèm trứng lòng đào của Nhật Bản | 1
+MEATBALL | Thịt băm vo tròn rồi rim sốt cà chua | 1
+RAMEN | Món mì nước Nhật đậm đà ăn kèm trứng lòng đào | 1
 SOBA | Món mì sợi làm từ hạt kiều mạch ăn lạnh hoặc nóng của Nhật Bản | 2
 TAKOYAKI | Bánh bạch tuộc nướng viên tròn đường phố Nhật Bản | 2
 DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong xửng tre | 1
 WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh | 1
 BIBIMBAP | Món cơm trộn nóng hổi đựng trong thố đá đủ màu sắc của Hàn Quốc | 2
 BULGOGI | Món thịt bò xào thái mỏng ướp sốt ngọt trứ danh của Hàn Quốc | 2
-TOPOKKI | Bánh gạo cay tteokbokki sốt đỏ dẻo dai Hàn Quốc | 1
+TTEOKBOKKI | Thanh bánh gạo dai nấu sốt ớt đỏ cay ngọt của Hàn Quốc | 1 | TOPOKKI
 SHAWARMA | Món bánh mì cuộn kẹp thịt nướng xiên quay cắt lát của Trung Đông | 2
 FALAFEL | Món chả viên đậu gà tẩm gia vị chiên giòn rụm của Trung Đông | 3
 HUMMUS | Món xốt chấm béo ngậy làm từ hạt đậu gà nghiền mịn trộn mè của Ả Rập | 2
@@ -353,7 +353,7 @@ LATTE | Món cà phê nhiều sữa nóng có lớp bọt sữa vẽ hình ngh�
 MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1
 AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1
 MATCHA | Bột trà xanh nguyên chất mịn màng của Nhật Bản dùng pha trà sữa | 1
-BOBA | Những viên trân châu bột lọc dẻo dai thả trong cốc trà sữa | 1
+BOBA | Những viên bột lọc dẻo đen thả dưới đáy cốc | 1
 MOCKTAIL | Thức uống giải khát pha trộn nhiều loại nước trái cây không chứa cồn | 2
 MOZZARELLA | Loại phô mai màu trắng dẻo dai tan chảy kéo thành sợi trên mặt bánh nướng | 1
 PARMESAN | Loại phô mai già cứng bào vụn hạt mịn rắc lên đĩa mì Ý | 2
@@ -392,8 +392,8 @@ CARDAMOM | Bạch đậu khấu thảo quả gia vị cà ri quý giá | 3
 TURMERIC | Nghệ vàng tạo màu và vị thơm cho món kho | 1
 SHALLOT | Hành khô hành tím phi thơm giòn rụm | 2
 CHIVES | Hẹ lá xanh nấu canh đậu phụ | 2
-LEEK | Tỏi tây baro thân to xào thịt bò | 2
-SCALLION | Hành lá rắc lên bát bún phở nóng hổi | 1
+LEEK | Tỏi tây thân trắng to, xào với thịt bò | 2
+SCALLION | Cách gọi của người Mỹ cho cọng hành lá | 1
 CELERY | Cần tây ép nước hoặc xào mực giòn ngọt | 1
 ZUCCHINI | Bí ngòi xanh giòn mát xào nấu | 2
 CAULIFLOWER | Súp lơ trắng bông cải trắng giòn ngọt | 1

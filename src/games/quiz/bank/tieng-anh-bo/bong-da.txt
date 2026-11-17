@@ -40,7 +40,7 @@ NATIONAL TEAM | Đội tuyển quốc gia | 1
 CROWD | Đám đông người xem chen chúc trên khán đài | 1 | SPECTATORS
 CHEER | Hò reo cổ vũ | 1
 TICKET | Vé xem trận | 1
-SEASON | Mùa giải | 1
+SEASON | Động từ chỉ việc nêm nếm cho vừa miệng | 1
 POINT | Điểm (trên bảng xếp hạng) | 1 | POINTS
 ATTACK | Pha dâng lên uy hiếp khung thành đối phương | 1 | OFFENSE
 MISS | Sút trượt, bỏ lỡ | 1
