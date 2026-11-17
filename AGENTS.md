@@ -77,7 +77,9 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
 
 ## 5. Mất dữ liệu live — xem LOG trước, đừng đoán
 
-Log: `data/logs/YYYY-MM-DD.log` (mỗi dòng có giờ). Bảng "cần tìm dòng nào" ở mục *Nhật ký (log)* trong `README.md`. Tóm tắt:
+Log: `data/logs/YYYY-MM-DD.log` (mỗi dòng có giờ) và `data/logs/sessions/<ngày>_<giờ>_<roomid>.log` — **mỗi buổi live một file**, giữ 60 buổi
+(`src/session-log.js`, test ở `test/session-log.test.js`). Truy một buổi cụ thể thì mở file buổi đó, đừng lội log cả ngày.
+Bảng "cần tìm dòng nào" ở mục *Nhật ký (log)* trong `README.md`. Tóm tắt:
 
 - `[live] trạng thái →` — lúc nào mất / có lại kết nối, vì sao.
 - `TikTok báo live TẠM DỪNG / KẾT THÚC`, `TikTok đóng kết nối: mã …`, `canh chừng: … không có dữ liệu`, `TikTok vẫn trả về phòng cũ`.

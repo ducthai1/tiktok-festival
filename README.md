@@ -242,7 +242,11 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 
 ## Nhật ký (log) và xử lý sự cố mất dữ liệu live
 
-Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` (mỗi ngày một file, giữ 14 ngày; `data/` không lên git vì có tên người xem; token trang điều khiển bị che `***` trong file). Tìm nhanh:
+Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` (mỗi ngày một file, giữ 14 ngày; `data/` không lên git vì có tên người xem; token trang điều khiển bị che `***` trong file).
+
+**Nhật ký từng buổi live** — cùng nội dung đó còn được chép riêng ra `data/logs/sessions/YYYY-MM-DD_HHmm_<roomid>.log`, **mỗi buổi live một file**, giữ **60 buổi gần nhất** (log theo ngày chỉ giữ 14 ngày và trộn lẫn mọi buổi trong ngày). Đầu file ghi giờ bắt đầu + room id, cuối file ghi giờ kết thúc + thời lượng. Mất sóng nối lại, hay Ctrl+C rồi `npm start` lại **giữa buổi**, vẫn ghi tiếp vào đúng file buổi đó (cùng room id, trong vòng 12 tiếng) — không bị cắt thành hai buổi. `data/logs/sessions/index.json` là danh sách các buổi đã lưu (giờ, thời lượng, số dòng). Muốn xem buổi gần nhất: `ls -t data/logs/sessions/*.log | head -1`.
+
+Tìm nhanh:
 
 | Muốn biết | Tìm dòng |
 |---|---|

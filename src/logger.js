@@ -10,6 +10,8 @@ let logDir = '';
 let stream = null;
 let streamDay = '';
 const original = { log: console.log, info: console.info, warn: console.warn, error: console.error };
+/** Nơi nhận thêm mọi dòng log đã che token — session-log.js dùng để chép ra file từng phiên live. */
+const sinks = new Set();
 
 const pad = (n, w = 2) => String(n).padStart(w, '0');
 /** "2026-11-12 16:05:03.124 +07:00" — giờ địa phương của máy chạy live. */
@@ -55,7 +57,24 @@ function write(level, args) {
   const line = `${timestamp(now)} ${level.padEnd(5)} ${render(args)}`;
   // khi chạy test (node --test) không in ra màn hình cho gọn
   if (!process.env.NODE_TEST_CONTEXT) (level === 'ERROR' ? original.error : level === 'WARN' ? original.warn : original.log)(line);
-  fileStream(now)?.write(`${line.replace(/token=[A-Za-z0-9_-]+/g, 'token=***')}\n`);
+  const safe = line.replace(/token=[A-Za-z0-9_-]+/g, 'token=***');
+  fileStream(now)?.write(`${safe}\n`);
+  for (const sink of sinks) {
+    try {
+      sink(safe);
+    } catch {
+      // một nơi nhận lỗi thì không được làm chết cả việc ghi log
+    }
+  }
+}
+
+/**
+ * Chép thêm mọi dòng log (đã che token) sang nơi khác. Trả về hàm gỡ ra.
+ * Tách rời thế này để logger.js không phải biết gì về chuyện phiên live.
+ */
+export function addLogSink(fn) {
+  sinks.add(fn);
+  return () => sinks.delete(fn);
 }
 
 /** Bật ghi file + gắn giờ cho mọi console.log/warn/error sẵn có trong code. Gọi một lần lúc khởi động. */
@@ -79,4 +98,5 @@ export const log = {
 export function closeLogging() {
   stream?.end();
   stream = null;
+  sinks.clear();
 }

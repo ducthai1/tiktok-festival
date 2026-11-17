@@ -12,6 +12,7 @@ import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
+import { createSessionLog } from './session-log.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createRoomTracker } from './live/room-tracker.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
@@ -85,6 +86,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const settings = loadSettings(dataDir);
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
   const rooms = createRoomTracker(path.join(dataDir, 'live-room.json')); // phòng live gần nhất → biết khi nào sang phòng mới
+  const sessions = createSessionLog(path.join(dataDir, 'logs')); // mỗi buổi live một file log riêng, giữ lâu hơn log ngày
+  sessions.setup();
   // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
   // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
@@ -250,6 +253,11 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onStatus(status) {
       sockets.broadcast({ t: 'live', status });
+      // Mở / đóng file log riêng của buổi live. Gọi thẳng theo trạng thái, KHÔNG dựa vào rooms.isNew():
+      // khởi động lại server giữa buổi thì isNew() là false, nhưng vẫn cần ghi tiếp vào đúng file buổi đó.
+      // 'reconnecting' cố ý không đóng — mất sóng vài phút vẫn là một buổi.
+      if (status.state === 'connected') sessions.start(status.roomId, { reason: `@${status.username || ''}` });
+      else if (status.state === 'idle') sessions.end('ngắt kết nối');
       // nối vào PHÒNG LIVE MỚI (room id khác phòng trước) → tự xoá thông số phòng cũ; giữ bảng xếp hạng (tự xoá người im lặng 2 tiếng)
       if (status.state === 'connected' && rooms.isNew(status.roomId)) {
         hub.resetRoom();
@@ -430,6 +438,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       englishProgress.flush();
       tts.stop();
       await live.disconnect();
+      await sessions.close();
       sockets.close();
       await new Promise((resolve) => server.close(resolve));
     }
