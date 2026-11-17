@@ -34,14 +34,14 @@ RETINA | Võng mạc | 3
 EYELID | Mí mắt | 2
 NOSTRIL | Lỗ mũi | 2
 VOCAL CORDS | Dây thanh quản | 3 | VOCAL CORD
-WINDPIPE | Khí quản | 3 | TRACHEA
+WINDPIPE | Ống dẫn khí từ cổ họng xuống phổi | 3
 DIAPHRAGM | Cơ hoành | 3
 OXIMETER | Máy đo nồng độ oxy máu | 3 | PULSE OXIMETER
 BLOOD DONATION | Hiến máu | 2
 MEDICAL RECORD | Hồ sơ bệnh án | 2 | MEDICAL RECORDS
 OVER THE COUNTER | Thuốc không cần kê đơn | 3 | OTC
 LOZENGE | Viên ngậm trị ho | 3 | COUGH DROP
-ANTISEPTIC | Thuốc sát trùng | 2
+ANTISEPTIC | Dung dịch bôi lên da người để diệt khuẩn | 2
 SPLINT | Nẹp cố định xương | 3
 SLING | Băng treo tay | 3 | ARM SLING
 INHALER | Ống hít (hen suyễn) | 3
@@ -50,7 +50,7 @@ WALKING STICK | Gậy chống | 2 | CANE
 HEARING AID | Máy trợ thính | 2
 CONTACT LENS | Kính áp tròng | 2 | CONTACT LENSES, CONTACTS
 DENTURES | Răng giả | 3 | FALSE TEETH
-PROTEIN | Chất đạm | 2
+PROTEIN | Chất đạm có nhiều trong thịt, cá, trứng | 2
 CARBOHYDRATE | Chất bột đường | 3 | CARBS, CARBOHYDRATES
 FIBER | Chất xơ | 2 | FIBRE
 DEHYDRATION | Mất nước (cơ thể) | 2 | DEHYDRATED
@@ -61,47 +61,47 @@ SNORE | Ngáy | 2 | SNORING
 BLOOD CLOT | Cục máu đông | 3
 PALPITATIONS | Tim đập nhanh (hồi hộp) | 3 | PALPITATION
 SALINE | Nước muối sinh lý | 2 | SALINE SOLUTION
-GAUZE PAD | Miếng gạc | 2
+GAUZE PAD | Miếng gạc vuông đã cắt sẵn dùng một lần | 2
 MEDICAL MASK | Khẩu trang y tế | 1 | SURGICAL MASK
 HEALTH CHECK | Khám tổng quát | 1 | GENERAL CHECKUP
 SECOND OPINION | Ý kiến bác sĩ thứ hai | 3
-INSULIN | Hormon điều chỉnh đường huyết | 1
-GLUCOSE | Đường trong máu | 1 | BLOOD SUGAR
-LIPID | Chất béo trong máu | 1
-PEPTIDE | Chuỗi acid amin | 1 | PROTEIN
-SERUM | Huyết thanh | 1
-MUCUS | Chất nhầy trong cơ thể | 1
-PITUITARY | Tuyến nho cơ thể | 1 | GLAND
-ADRENAL | Tuyến nằm trên thận | 1
-LYMPH | Chất bạch huyết trong cơ thể | 1
-MARROW | Tủy bên trong xương | 1
-PLATELET | Tiểu cầu trong máu | 1
-ALBUMIN | Protein chính trong huyết tương | 1
-SODIUM | Ion khoáng chất mặn | 1 | SALT
-POTASSIUM | Chất khoáng cần cho tim | 1 | MINERAL
+INSULIN | Hormon điều chỉnh đường huyết | 2
+GLUCOSE | Loại đường đơn mà tế bào dùng làm năng lượng | 2
+LIPID | Nhóm chất béo không tan trong nước của cơ thể | 3
+PEPTIDE | Chuỗi ngắn các acid amin nối với nhau | 3
+SERUM | Huyết thanh | 3
+MUCUS | Chất nhầy trong cơ thể | 2
+PITUITARY | Tuyến yên nằm dưới nền não, chỉ huy các tuyến nội tiết khác | 3 | GLAND
+ADRENAL | Tuyến thượng thận nằm úp trên quả thận, tiết hormon căng thẳng | 3
+LYMPH | Chất bạch huyết trong cơ thể | 3
+MARROW | Tủy bên trong xương | 3
+PLATELET | Tiểu cầu trong máu | 3
+ALBUMIN | Loại protein nhiều nhất trong huyết tương, giữ nước trong mạch | 3
+SODIUM | Khoáng chất tạo vị mặn, có nhiều trong muối ăn | 2
+POTASSIUM | Khoáng chất giữ nhịp tim đều, có nhiều trong chuối | 2 | MINERAL
 CALCIUM | Chất khoáng cho xương mạnh | 1
-MAGNESIUM | Chất khoáng hỗ trợ cơ | 1
-CORTISOL | Hormon stress | 1
-DOPAMINE | Hormon tạo cảm giác vui | 1
+MAGNESIUM | Chất khoáng hỗ trợ cơ | 2
+CORTISOL | Hormon stress | 3
+DOPAMINE | Hormon tạo cảm giác vui | 2
 HOSPITAL | Bệnh viện | 1
-DOCTOR | Bác sĩ | 1 | PHYSICIAN
+DOCTOR | Người khám bệnh kê đơn, từ thông dụng nhất | 1
 NURSE | Y tá, điều dưỡng | 1
 PATIENT | Bệnh nhân | 1
 DENTIST | Nha sĩ | 1
 PHARMACY | Nhà thuốc | 1 | DRUGSTORE, CHEMIST
-MEDICINE | Thuốc (nói chung) | 1 | DRUG, MEDICATION
-PILL | Viên thuốc | 1 | TABLET, CAPSULE
+MEDICINE | Thuốc nói chung, cũng là tên ngành y | 1 | DRUG
+PILL | Viên thuốc nén tròn dẹt nuốt với nước | 1
 AMBULANCE | Xe cứu thương | 1
 CLINIC | Phòng khám | 1
 BLOOD | Máu | 1
-FEVER | Sốt | 1 | TEMPERATURE
+FEVER | Tình trạng thân nhiệt tăng cao khi cơ thể chống nhiễm trùng | 1
 COUGH | Ho | 1
 HEADACHE | Đau đầu | 1
 STOMACHACHE | Đau bụng | 1 | STOMACH ACHE, TUMMY ACHE, BELLYACHE
 TOOTHACHE | Đau răng | 1
 SORE THROAT | Đau họng | 1
 FLU | Bệnh cúm | 1 | INFLUENZA
-COMMON COLD | Cảm lạnh | 1 | COLD
+COMMON COLD | Bệnh hắt hơi sổ mũi nhẹ do siêu vi, vài ngày là khỏi | 1
 BONE | Xương | 1
 MUSCLE | Cơ bắp | 1
 SKIN | Da (cơ thể) | 1
@@ -117,39 +117,39 @@ SICK | Bị ốm | 1 | ILL, UNWELL
 EXERCISE | Tập thể dục | 1 | WORKOUT
 WEIGHT | Cân nặng | 1
 HEIGHT | Chiều cao | 1
-TEMPERATURE | Nhiệt độ cơ thể | 1
+TEMPERATURE | Con số đo độ nóng lạnh của cơ thể | 1
 DIET | Chế độ ăn kiêng | 1
 SURGEON | Bác sĩ phẫu thuật | 2
 SURGERY | Ca phẫu thuật | 2 | OPERATION
 PHARMACIST | Dược sĩ | 2 | CHEMIST
 PRESCRIPTION | Đơn thuốc | 2
 SIDE EFFECT | Tác dụng phụ | 2 | SIDE EFFECTS
-VACCINE | Thuốc tiêm phòng (chủng ngừa) | 2 | VACCINATION
+VACCINE | Chế phẩm tiêm vào người để tạo kháng thể phòng bệnh | 2
 INJECTION | Mũi tiêm | 2 | SHOT, JAB
 EMERGENCY ROOM | Phòng cấp cứu | 2 | ER, EMERGENCY
 WHEELCHAIR | Xe lăn | 2
-BANDAGE | Băng gạc | 2 | DRESSING, GAUZE
+BANDAGE | Dải băng cuốn quanh để cố định vết thương | 2 | DRESSING
 PLASTER | Miếng băng dán cá nhân | 2 | BAND-AID, BANDAID
 THERMOMETER | Nhiệt kế | 2
 BLOOD PRESSURE | Huyết áp | 2
 BLOOD TEST | Xét nghiệm máu | 2
-HEARTBEAT | Nhịp tim | 2 | PULSE, HEART RATE
+HEARTBEAT | Nhịp đập của quả tim, đếm số lần mỗi phút | 2 | HEART RATE
 SYMPTOM | Triệu chứng | 2 | SYMPTOMS, SIGN
-TREATMENT | Sự điều trị | 2 | THERAPY
-CURE | Chữa khỏi (động từ) | 2 | HEAL, TREAT
-RECOVER | Hồi phục | 2 | GET BETTER, HEAL
+TREATMENT | Toàn bộ quá trình chữa một ca bệnh | 2
+CURE | Chữa khỏi (động từ) | 2 | TREAT
+RECOVER | Hồi phục | 2 | GET BETTER
 INFECTION | Sự nhiễm trùng | 2
 BACTERIA | Vi khuẩn | 2 | BACTERIUM, GERMS, GERM
 SNEEZE | Hắt hơi | 2
 RUNNY NOSE | Sổ mũi | 2
 ALLERGY | Dị ứng | 2 | ALLERGIES
-DIZZY | Chóng mặt | 2 | LIGHTHEADED
-VOMIT | Nôn, ói | 2 | THROW UP
+DIZZY | Tính từ mô tả cảm giác choáng váng quay cuồng | 2 | LIGHTHEADED
+VOMIT | Động từ chỉ việc nôn ra | 2 | THROW UP
 ITCHY | Ngứa (tính từ) | 2 | ITCHING, ITCH
-WOUND | Vết thương | 2 | INJURY, CUT
+WOUND | Vết rách hở trên da do vật sắc gây ra | 2
 SCAR | Vết sẹo | 2
 BURN | Vết bỏng | 2
-LUNG | Phổi | 2 | LUNGS
+LUNG | Một lá phổi, viết ở dạng số ít | 2
 LIVER | Gan | 2
 KIDNEY | Thận | 2 | KIDNEYS
 SKELETON | Bộ xương | 2
@@ -162,24 +162,24 @@ APPOINTMENT | Lịch hẹn khám bệnh | 2
 INSURANCE | Bảo hiểm y tế | 2 | HEALTH INSURANCE
 FAINT | Ngất xỉu | 2 | PASS OUT, BLACK OUT
 BLEED | Chảy máu | 2 | BLEEDING
-INJURY | Chấn thương | 2 | WOUND
+INJURY | Tổn thương cơ thể nói chung, gồm cả bên trong | 2
 FIRST AID | Sơ cứu | 2
 PREGNANT | Mang thai | 2 | EXPECTING
 HAND SANITIZER | Nước rửa tay khô | 2 | SANITIZER, SANITISER, HAND SANITISER
 NUTRITION | Dinh dưỡng | 2 | NOURISHMENT
-SCALE | Cái cân sức khoẻ | 2 | SCALES
+SCALE | Cái cân đứng lên để đo cân nặng | 2
 BLOOD TYPE | Nhóm máu | 2 | BLOOD GROUP
-EYESIGHT | Thị lực | 2 | VISION, SIGHT
+EYESIGHT | Khả năng nhìn rõ của mắt | 2 | SIGHT
 HEARING | Thính lực | 2
 BRACES | Niềng răng | 2
 WISDOM TOOTH | Răng khôn | 2 | WISDOM TEETH
-DOSE | Liều lượng thuốc | 3 | DOSAGE
+DOSE | Lượng thuốc uống trong một lần | 3
 WARD | Buồng bệnh, khu điều trị | 3
 STRETCHER | Cái cáng (khiêng bệnh nhân) | 3
-CRUTCH | Cái nạng | 3 | CRUTCHES
+CRUTCH | Một chiếc nạng chống nách, dạng số ít | 3
 STETHOSCOPE | Ống nghe của bác sĩ | 3
 SCAN | Chụp chiếu (CT, MRI) | 3 | SCANNING
-PULSE | Mạch (bắt mạch) | 3 | HEARTBEAT
+PULSE | Nhịp đập cảm thấy được khi đặt tay lên cổ tay | 3
 DIAGNOSIS | Chẩn đoán | 3
 ASTHMA | Bệnh hen suyễn | 3
 DIABETES | Bệnh tiểu đường | 3
@@ -189,13 +189,13 @@ NAUSEA | Cảm giác buồn nôn | 3 | NAUSEOUS, SICKNESS
 DIARRHEA | Tiêu chảy | 3 | DIARRHOEA
 CONSTIPATION | Táo bón | 3
 RASH | Phát ban | 3
-SWOLLEN | Bị sưng (tính từ) | 3 | SWELLING
+SWOLLEN | Tính từ mô tả chỗ bị phồng to lên | 3
 BRUISE | Vết bầm tím | 3
-FRACTURE | Gãy xương | 3 | BROKEN BONE, BREAK
-SPRAIN | Bong gân | 3 | TWIST
+FRACTURE | Tình trạng xương bị nứt hoặc gãy rời | 3 | BROKEN BONE
+SPRAIN | Tình trạng dây chằng quanh khớp bị giãn hoặc rách | 3
 INTESTINE | Ruột | 3 | INTESTINES, BOWEL, BOWELS, GUT
 SPINE | Cột sống | 3 | BACKBONE
-RIB | Xương sườn | 3 | RIBS
+RIB | Xương sườn | 3
 VEIN | Tĩnh mạch | 3 | BLOOD VESSEL
 NERVE | Dây thần kinh | 3
 JOINT | Khớp xương | 3
@@ -210,11 +210,11 @@ MIDWIFE | Nữ hộ sinh | 3
 PEDIATRICIAN | Bác sĩ nhi khoa | 3 | PAEDIATRICIAN
 OPTICIAN | Người đo mắt, làm kính | 3 | OPTOMETRIST
 CONTAGIOUS | Dễ lây lan | 3 | INFECTIOUS
-EPIDEMIC | Dịch bệnh | 3 | OUTBREAK, PANDEMIC
-QUARANTINE | Cách ly | 3 | ISOLATION
+EPIDEMIC | Dịch lan rộng trong một vùng hoặc một nước | 3
+QUARANTINE | Cách ly | 3
 HYGIENE | Vệ sinh (giữ sạch sẽ) | 3 | SANITATION, CLEANLINESS
 CAST | Bó bột (chân tay gãy) | 3 | PLASTER CAST
-STITCHES | Mũi khâu vết thương | 3 | STITCH, SUTURE, SUTURES
+STITCHES | Những mũi khâu đã khâu trên vết thương | 3 | STITCH, SUTURES
 ANESTHESIA | Gây mê | 3 | ANAESTHESIA, ANESTHETIC, ANAESTHETIC
 DONOR | Người hiến máu, hiến tạng | 3 | BLOOD DONOR
 CAVITY | Lỗ sâu răng | 3 | TOOTH DECAY
@@ -222,23 +222,23 @@ FILLING | Trám răng | 3
 GUMS | Lợi, nướu răng | 3 | GUM
 X-RAY | Phim chụp X-quang | 1 | XRAY
 OPERATING ROOM | Phòng mổ | 2 | OPERATING THEATRE, THEATRE
-ICU | Phòng hồi sức tích cực | 3 | INTENSIVE CARE
-BLOOD SUGAR | Đường huyết | 3 | GLUCOSE
-CAPSULE | Viên con nhộng | 2
+ICU | Viết tắt ba chữ cái của phòng hồi sức tích cực | 3
+BLOOD SUGAR | Mức đường trong máu đo khi đói hoặc sau ăn | 3
+CAPSULE | Viên con nhộng vỏ gelatin chứa bột thuốc bên trong | 2
 SYRINGE | Ống tiêm (xi lanh) | 3
 NEEDLE | Kim tiêm | 2
-DRIP | Truyền dịch (chai truyền) | 3 | IV
+DRIP | Chai dịch treo cao truyền nhỏ giọt vào tĩnh mạch | 3 | IV
 HEAT STROKE | Say nắng | 3 | SUNSTROKE, HEATSTROKE
 FOOD POISONING | Ngộ độc thực phẩm | 3
 CHICKENPOX | Bệnh thuỷ đậu | 3 | CHICKEN POX
 MEASLES | Bệnh sởi | 3
-FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS, EXHAUSTION
+FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS
 SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
 CARDIOLOGY | Khoa tim mạch | 3
-IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3
+IMMUNIZATION | Chương trình gây miễn dịch cho cả cộng đồng | 3
 PEDIATRICS | Khoa nhi / y học trẻ em | 3
-PHYSICIAN | Bác sĩ điều trị | 2
-VACCINATION | Tiêm vắc-xin ngừa bệnh | 2
+PHYSICIAN | Bác sĩ nội khoa chữa bằng thuốc chứ không mổ | 2
+VACCINATION | Việc tiêm chế phẩm phòng bệnh cho một người | 2
 CHRONIC | Bệnh mãn tính dai dẳng | 3
 MALIGNANT | Khối u ác tính / nguy hiểm | 3
 BENIGN | Khối u lành tính | 3
@@ -258,20 +258,20 @@ BONE MARROW | Tủy xương | 3
 CANCER | Bệnh ung thư | 1
 CHOLESTEROL | Chất mỡ trong máu | 2
 CONCUSSION | Sự chấn động não | 3
-DIZZINESS | Cơn chóng mặt | 1
+DIZZINESS | Danh từ chỉ cơn choáng váng mất thăng bằng | 2
 GENETICS | Di truyền học | 3
 HEART ATTACK | Cơn đau tim / đột quỵ tim | 1
 HEMOGLOBIN | Huyết sắc tố | 3
 INFLAMMATION | Sự viêm nhiễm | 3
-INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3
+INTENSIVE CARE | Việc chăm sóc liên tục cho ca bệnh nguy kịch | 3
 LABORATORY | Phòng thí nghiệm | 1
-MEDICATION | Thuốc điều trị | 2
+MEDICATION | Thuốc cụ thể đang được chỉ định cho một bệnh nhân | 2
 PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc | 3
-PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3
+PRACTITIONER | Người hành nghề y nói chung, hay dùng trong cụm bác sĩ đa khoa | 3
 RESPIRATORY | Thuộc về hô hấp | 3
-SPECIALIST | Bác sĩ chuyên khoa | 2
+SPECIALIST | Bác sĩ chỉ chuyên sâu một chuyên khoa | 2
 STERILIZATION | Sự tiệt trùng | 3
-THERAPY | Liệu pháp điều trị | 2
+THERAPY | Một liệu pháp cụ thể, có thể không dùng thuốc | 2
 ULTRASOUND | Siêu âm | 2
 URINE | Nước tiểu | 2
 VENTILATOR | Máy trợ thở | 3
@@ -286,17 +286,17 @@ TOXICOLOGY | Độc chất học - ngành khoa học nghiên cứu về các ch�
 OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay | 2
 INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm | 2
 SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em | 1
-GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương | 2
+GAUZE | Miếng vải thưa tiệt trùng đắp lên vết thương thấm dịch | 2
 COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương | 2
-DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ | 2 | ANTISEPTIC
-IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu | 2 | DRIP
-BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người | 2
+DISINFECTANT | Dung dịch lau rửa dụng cụ và bề mặt để diệt khuẩn | 2
+IV DRIP | Bộ dây và kim truyền dịch cắm vào mạch máu | 2
+BODY TEMPERATURE | Thân nhiệt bình thường quanh mức 37 độ | 2
 CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người | 2
 CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp | 2
-VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày | 2 | THROWING UP
+VOMITING | Danh từ chỉ tình trạng nôn mửa nhiều lần | 2 | THROWING UP
 INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn | 2
 HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản | 2
-SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương | 2
+SWELLING | Danh từ chỉ chỗ phù nề sau va đập | 2
 DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp | 3
 CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi | 2
 DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn | 3
@@ -319,38 +319,38 @@ ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống l�
 ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể | 3
 LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng | 2
 SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng | 3
-CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm | 1
+CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm | 2
 ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội | 2
 TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi | 2
 REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư | 3
 RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi | 2
 TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng | 3
-VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ | 1
+VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ | 3
 OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 | 2
 ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim | 3
 MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể | 2
 CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể | 2
 ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể | 2
 LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ | 3
-SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật | 2
+SUTURE | Sợi chỉ y tế dùng khâu khép miệng vết mổ | 2
 WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương | 2
-PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị | 1
+PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị | 2
 OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày | 3
 SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt | 2
 PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc | 3
 HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối | 3
-ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống | 1
+ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống | 2
 PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất | 3
 CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới | 3
 PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm | 2
-DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần | 1
+DOSAGE | Cách quy định liều và số lần uống trong ngày | 2
 CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật | 3
 ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức | 3
 IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể | 1
 HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ | 3
-PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới | 1
+PANDEMIC | Dịch lan ra khắp nhiều châu lục cùng lúc | 1
 ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực | 3
-OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi | 2
+OUTBREAK | Đợt bệnh bùng lên đột ngột ở một địa phương | 2
 CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh | 2
 INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng | 2
 ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì | 2
@@ -363,7 +363,7 @@ STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử
 AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể | 3
 ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân | 2
 ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin | 2 | ANAEMIA
-VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não | 2
+VERTIGO | Cảm giác mọi thứ xoay tròn do trục trặc tai trong | 2
 DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài | 1
 ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát | 1
 TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc | 1
