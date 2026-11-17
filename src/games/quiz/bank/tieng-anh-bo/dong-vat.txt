@@ -1,9 +1,9 @@
 # Tiếng Anh · Động vật
-ALLIGATOR | Cá sấu Mỹ (mõm tù) | 3
+ALLIGATOR | Cá sấu Mỹ mõm bè hình chữ U, ngậm lại là khuất hết răng | 3
 BUMBLEBEE | Ong nghệ (ong lông xù) | 3
 BEETLE | Bọ cánh cứng | 2
 MOTH | Bướm đêm (con ngài) | 2
-LOCUST | Châu chấu di cư | 3
+LOCUST | Châu chấu di cư thành đàn khổng lồ, ăn sạch cả mùa màng | 3
 SILKWORM | Con tằm | 2
 LOUSE | Con chấy | 3 | LICE
 BEDBUG | Con rệp | 3 | BED BUG
@@ -17,14 +17,14 @@ ROOSTER | Con gà trống | 1 | COCK, COCKEREL
 MULE | Con la | 3
 PONY | Con ngựa lùn | 2
 BULL | Con bò đực | 2 | OX
-WATER BUFFALO | Con trâu | 1 | BUFFALO
+WATER BUFFALO | Con trâu kéo cày, thích đầm mình dưới bùn | 1
 RAT | Con chuột cống | 1
 SEA URCHIN | Con nhím biển | 2
 SEA CUCUMBER | Hải sâm | 3
 PUFFERFISH | Cá nóc | 2 | BLOWFISH, PUFFER FISH
 SWORDFISH | Cá kiếm | 2
 CLOWNFISH | Cá hề | 2 | CLOWN FISH
-CARP | Cá chép | 2 | KOI
+CARP | Cá chép sông có râu, vảy to, hay thả phóng sinh | 2
 HAMMERHEAD | Cá mập đầu búa | 3 | HAMMERHEAD SHARK
 SEA TURTLE | Rùa biển | 1
 TREE FROG | Ếch cây | 2
@@ -51,14 +51,14 @@ FUR | Bộ lông thú | 1
 FIN | Vây cá | 2 | FINS
 GILLS | Mang cá | 2 | GILL
 WHISKERS | Ria mèo | 2 | WHISKER
-COBWEB | Mạng nhện | 2 | SPIDER WEB, WEB
+COBWEB | Mạng nhện | 2 | WEB
 BEEHIVE | Tổ ong | 2 | HIVE
 DEN | Hang ổ thú (hang cáo) | 3 | LAIR
 BURROW | Hang đào (hang thỏ) | 3
 FLOCK | Đàn chim, đàn cừu | 3
 HERD | Đàn bò, đàn voi | 3
 SWARM | Đàn ong (bầy côn trùng bay) | 3
-HIBERNATE | Ngủ đông | 2 | HIBERNATION
+HIBERNATE | Ngủ đông | 2
 NOCTURNAL | Hoạt động về đêm | 3
 MAMMAL | Động vật có vú | 2
 REPTILE | Loài bò sát | 2
@@ -73,289 +73,285 @@ HUSKY | Giống chó kéo xe trên băng tuyết có bộ lông dày hai lớp v
 POODLE | Giống chó cảnh thông minh nhanh nhẹn có bộ lông xoăn tít như cuộn len | 2
 STRAY CAT | Mèo hoang | 2 | STRAY
 TOMCAT | Mèo đực | 3 | TOM
-KING COBRA | Rắn hổ mang chúa | 3 | KING COBRA
+KING COBRA | Rắn hổ mang chúa | 3
 ANT COLONY | Đàn kiến (tổ kiến) | 2 | ANTHILL
 SCARAB | Bọ hung | 3 | DUNG BEETLE
 STICK INSECT | Bọ que | 3
 GLOWWORM | Đom đóm ấu trùng (sâu phát sáng) | 3
 WATER STRIDER | Con gọng vó (nhện nước) | 3
-BADGER | Động vật mộc túi có lông sẫm, sống dưới đất | 1
-WEASEL | Động vật nhỏ báo thũ, sống ở rừng | 2
-MOLE | Động vật khôi, sống dưới đất, có mắt nhỏ | 2
-PORCUPINE | Động vật có gai, tự vệ khỏi kẻ thù | 2
-CHEETAH | Mèo hoang có vệt, chạy nhanh nhất | 2
-HYENA | Động vật giống chó, sống ở Phi | 2
-JACKAL | Sói nhỏ, sống ở sa mạc | 2
-LYNX | Mèo rừng có tai chóp | 2
-BOBCAT | Mèo rừng nhỏ Bắc Mỹ | 2
-COUGAR | Sư tử leo cây Mỹ | 2
-MOOSE | Nai sừng to nhất thế giới | 2
-ALPACA | Lạc đà lông dài Nam Mỹ | 2
-LLAMA | Lạc đà gánh hàng Peru | 2
-YAK | Bò bộng, sống ở Tây Tạng | 2
-BISON | Trâu rừng, sống ở Bắc Mỹ | 2
-BUFFALO | Trâu nước Châu Á | 1
-DONKEY | Lừa con, sức kéo | 1
-CAMEL | Lạc đà, sống ở sa mạc | 1
+BADGER | Con lửng mõm nhọn lông khoang đen trắng, đào hang dưới đất | 1
+WEASEL | Con chồn nhỏ thân dài mềm, luồn hang săn chuột | 2
+MOLE | Chuột chũi mắt kém, đào đường hầm làm sụt luống rau | 2
+PORCUPINE | Nhím lông dài, dựng gai nhọn lên khi bị đe doạ | 2
+CHEETAH | Báo đốm chân dài, chạy nhanh nhất trên cạn | 2
+HYENA | Thú ăn xác thối châu Phi, tiếng kêu nghe như cười | 2
+JACKAL | Chó rừng nhỏ, kiếm ăn ban đêm trên thảo nguyên | 2
+LYNX | Mèo rừng tai có túm lông nhọn, chân to đi trên tuyết | 2
+BOBCAT | Mèo rừng đuôi cụt ngủn ở Bắc Mỹ | 2
+COUGAR | Sư tử núi châu Mỹ, lông nâu vàng trơn không đốm | 2
+MOOSE | Loài hươu lớn nhất, sừng bè ra như bàn tay xoè | 2
+ALPACA | Họ lạc đà Nam Mỹ nuôi lấy lông dệt áo len | 2
+LLAMA | Họ lạc đà Nam Mỹ dùng thồ hàng, hay phun nước bọt | 2
+YAK | Bò lông xù dài sống trên cao nguyên Tây Tạng | 2
+BISON | Bò rừng bướu vai lông bờm ở đồng cỏ Bắc Mỹ | 2
+BUFFALO | Trâu rừng châu Phi sừng dày ốp như mũ sắt, rất hung dữ | 1
+DONKEY | Con lừa tai dài chở hàng, kêu be be | 1
+CAMEL | Thú có bướu trên lưng chở hàng qua sa mạc | 1
 DROMEDARY | Lạc đà một bướu | 2
 BACTRIAN | Lạc đà hai bướu | 3
-EMU | Chim điểu không bay Úc | 2
-RHEA | Chim tấu Nam Mỹ | 2
-KIWI | Chim tò mò non Sơn Lan | 2
-DODO | Chim tuyệt chủng Mauritius | 2
-CASSOWARY | Chim dạo Úc nguy hiểm | 3
-HOOPOE | Chim lửa cổ Âu | 2
-KINGFISHER | Chim bắt cá xanh | 2
-HUMMINGBIRD | Chim ruồi, cánh gật nhanh | 2
-NIGHTINGALE | Chim học ca đêm | 2
-FINCH | Chim sẻ vàng | 2
-THRUSH | Chim mồng, hót gì | 2
-WREN | Chim tích nhỏ xinh | 2
-LARK | Chim sơn ca, hót sáng | 2
-PHEASANT | Chim kê thêu đẹp | 2
-QUAIL | Chim cút nhỏ | 1
-GROUSE | Gà lôi rừng | 2
-PARTRIDGE | Chim tẻ, tung bay cạnh | 2
-WOODPECKER | Chim gõ kiếng, gõ thân cây | 2
-VULTURE | Chim kền kền, ăn tử thể | 2
-ALBATROSS | Chim thiên nga biển | 2
-PETREL | Chim biển nhỏ | 2
-CORMORANT | Chim cốc lặn | 2
-HERON | Chim cáy chân dài | 2
-EGRET | Chim diều trắng | 2
-BITTERN | Chim gàn kêu | 2
-IBIS | Chim cò mỏ cong | 2
-FLAMINGO | Chim hồng hạc hồng | 2
-BUSTARD | Chim đại điểu Phi | 2
-MANDARIN | Vịt chim phục họa | 2
-CUCKOO | Chim cu cu, trứa nhà chim khác | 2
-KOEL | Chim cúc kêu | 2
-ROADRUNNER | Chim chạy desert | 2
-SECRETARY | Chim thư ký, chân dài | 2
-WASP | Ong bắp cày, có kim | 1
-HORNET | Bò cạp vàng, đốt đau | 2
-MOSQUITO | Muỗi, hút máu | 1
-FLEA | Bọ chét, nhảy | 2
-TICK | Bọ chủy, hút máu | 2
-MIDGE | Muỗi nhỏ, bay | 2
-GNAT | Muỗi đêm, bay nhỏ | 2
-MANTIS | Tàu rơm ăn thịt | 2
-CICADA | Ve, kêu mùa hè | 2
-CENTIPEDE | Rết, nhiều chân | 2
-MILLIPEDE | Tò mò, ribbed body | 2
-SCORPION | Bọ cạp, đuôi độc | 2
-TARANTULA | Nhện lạc đà to | 2
-LEECH | Sâu máu, dính da | 2
-EARTHWORM | Sâu đất, sống đất | 2
-TERMITE | Mối, ăn gỗ | 1
-HORSEFLY | Ruồi ngựa, chích | 2
-FIREFLY | Đom đóm, phát sáng | 1
-STAG | Nai đực sừng | 1
-DOE | Nai cái | 1
-BUCK | Nai đực | 1
-ROE | Nai cái con | 1
-ANTELOPE | Linh dương, chạy nhanh | 2
-WILDEBEEST | Gnu, đàn lớn Africa | 2
-MUSK | Veld con có mùi | 2
-IMPALA | Linh dương Phi | 2
-ELAND | Linh dương lớn | 2
-WARTHOG | Lợn thuốc lúc | 2
-PECCARY | Lợn nhỏ Mỹ | 2
-AARDVARK | Thú đơi ăn kiến | 2
-PLATYPUS | Vật lạ trứng cá | 2
-ECHIDNA | Nhím đơi Úc | 2
-SLOTH | LQL chậm chạp cây | 2
-ANTEATER | Thú ăn kiến dài mỏ | 2
-ARMADILLO | Thú bọc bộng Mỹ | 2
-PANGOLIN | Tê tê, gai vảy | 2
-OPOSSUM | Thú túi Mỹ ơi | 2
-LEMUR | Cú lemmur, đuôi vân | 2
-GIBBON | Vượn nhỏ dài cánh | 2
-ORANGUTAN | Vượn cam lớn Kiếp | 2
-CHIMPANZEE | Tinh tinh, gần người | 1
-GORILLA | Khỉ đột to mạnh | 1
-BABOON | Khỉ đất, sống bầy | 2
-LEMMING | Chuột vùng lạnh | 2
-HAMSTER | Chuột túi nuôi | 1
-GERBIL | Chuột sa mạc | 2
-CHINCHILLA | Chuột lông dày Peru | 2
-GUINEA PIG | Chuột Ê-cuadol | 1
-CAPYBARA | Chuột nước lớn | 2
-PORCUPETTE | Bé nhím | 2
-STOAT | Chồn trắng Bắc | 2
-FERRET | Chồn nuôi | 2
-MARTEN | Chồn rừng | 2
-OTTER | Rái cá, lội nước | 1
-RACCOON | Nôi, mặt trắng | 1
-POLECAT | Chồn thơm | 2
-SKUNK | Động vật xịt mùi | 2
-NUTRIA | Chuột nước lớn | 2
-BEAVER | Hải li, xây đập | 2
-MUSKRAT | Chuột mùi nước | 2
-FLYING LEMUR | Loang bay Úc | 3
-FLYING SQUIRREL | Sóc bay | 2
-FLYING DRAGON | Rồng bay, tung cánh | 2
-COLUGO | Mèo bay Đông | 3
-POTOROO | Chuột túi Úc | 3
-QUOKKA | Gấu túi tươi cười | 2
-NUMBAT | Gấu ăn kiến Úc | 2
-WOMBAT | Gấu đất Úc | 2
-MANATEE | Thú biển chậm | 2
-DUGONG | Thú biển ăn cỏ | 2
-WALRUS | Hải mã, có ngà | 2
-NARWHAL | Cá voi kỳ lân | 2
-BELUGA | Cá voi trắng | 2
-PORPOISE | Cá heo nhỏ | 2
-ORCA | Cá voi sát thủ | 2
-SPERM WHALE | Cá voi chứa mỡ | 2
-BALEEN | Lược cá voi ăn | 3
-MANTA RAY | Cá đuối to | 2
-STINGRAY | Cá đuối kim | 2
-SAWFISH | Cá lưỡi rưỡi | 2
-ANGLERFISH | Cá đèn biển sâu | 2
-SEAHORSE | Cá ngựa | 1
-PIRANHA | Cá piá ăn thịt | 2
-SUNFISH | Cá mặt trời bè | 2
-GUPPY | Cá guppies nhỏ | 1
-TETRA | Cá bé đỏ, sống bể cảnh | 2
-GOLDFISH | Cá vàng nuôi | 1
-KOI | Giống cá chép cảnh nhiều màu rực rỡ bơi đàn trong hồ nước của Nhật Bản | 1
-STURGEON | Cá tầm, trứng caviar | 2
-LAMPREY | Cá roi hút máu | 2
-COD | Cá tuyết | 1
-HALIBUT | Cá bơn biển | 2
-FLOUNDER | Cá bơn | 2
-HERRING | Cá sơn | 1
-MARLIN | Cá kiếm biển | 2
-BARRACUDA | Cá ròng | 2
-BASS | Cá vược | 1
-PERCH | Cá rô phi | 1
-PIKE | Cá rô phi | 1
-BREAM | Cá chuối | 2
-CRAB | Cua | 1
-PRAWN | Tôm lớn | 1
-CLAM | Sò | 1
-SNAIL | Ốc sên | 1
-SLUG | Ốc không vỏ | 1
-OCTOPUS | Bạch tuộc | 1
-ANEMONE | Hoa hải quỳ | 2
-CORAL | San hô | 1
-POLYP | Sinh vật nhỏ tạo nên san hô | 3
-ZOOID | Thành viên của động vật kép | 3
-CNIDARIAN | Động vật lục sắc | 3
-PORIFERA | Động vật tự (bọt biển) | 3
-ARTHROPOD | Động vật khớp | 3
-MOLLUSK | Động vật mềm | 3
-ECHINODERM | Lớp gai da sao | 3
-BRITTLE STAR | Sao biển yếu | 2
-NEMATODE | Sâu tròn chứng | 3
-FLATWORM | Sâu dẹp | 3
-ANNELID | Sâu vòng | 3
-MONOTREME | Động vật một lỗ | 3
-PLACENTAL | Động vật nhau thai | 2
-CARCINOGEN | Chất gây ung thư | 3
-DIURNAL | Hoạt động ban ngày | 2
-CREPUSCULAR | Hoạt động bình minh | 3
-ECTOTHERM | Động vật máu lạnh | 3
-ENDOTHERM | Động vật máu nóng | 3
-POIKILOTHERM | Nhiệt độ biến | 3
-HOMEOTHERM | Nhiệt độ lâu | 3
-PREDATION | Hành động ăn thịt | 2
-SCAVENGER | Động vật ăn cặn | 2
-GRAZER | Động vật cỏ | 2
-FORAGE | Tìm kiếm thức ăn | 2
-TERRITORY | Lãnh địa bảo vệ | 2
-DOMINANCE | Quyền thống trị bầy | 2
-HIERARCHY | Hệ thống xếp hạng | 2
-MATING | Quá trình giao phối | 2
-GESTATION | Thời kỳ mang thai | 2
-FLEDGLING | Chim non vừa lông | 2
-PUPA | Kỳ biến hóa côn trùng | 1
-CHRYSALIS | Vỏ biến hóa bươm | 2
-IMAGO | Dạng trưởng thành côn trùng | 3
-NYMPH | Dạng nửa trưởng côn trùng | 2
-THORAX | Ngực côn trùng | 2
-MANDIBLE | Hàm dưới | 2
-PROBOSCIS | Mỏ hút thức ăn | 2
-ANTENNA | Ăng ten cảm | 1
-SETAE | Sợi cảm | 3
-EXOSKELETON | Xương ngoài côn trùng | 3
-CHITIN | Chất cứng xương | 3
-SPIRACLE | Lỗ thở côn trùng | 3
-TRACHEA | Ống thở | 2
-SIMPLE EYE | Mắt đơn côn trùng | 3
-COMPOUND EYE | Mắt kép côn trùng | 3
-OCELLUS | Mắt đơn | 3
-SENSILLUM | Cảm giác sơ | 3
-CHEMORECEPTOR | Cảm thụ hóa học | 3
-PHOTORECEPTOR | Cảm thụ ánh sáng | 3
-MECHANORECEPTOR | Cảm thụ cơ học | 3
-OSMOREGULATION | Điều hòa nước muối | 3
-THERMOREGULATION | Điều hòa nhiệt | 3
-PHOTOTROPISM | Hướng ánh sáng | 3
-CHEMOTAXIS | Dẫn chất hóa | 3
-PHOTOTAXIS | Dẫn ánh sáng | 3
-GEOTROPISM | Hướng trọng lực | 3
-ETHOLOGY | Học hành vi động vật | 3
-INSTINCT | Bản năng sinh lý | 2
-INNATE | Sinh với động vật | 2
-LEARNED | Học được hành vi | 1
-CONDITIONING | Điều kiện hoá | 2
-IMPRINTING | Dấu ấn học | 2
-CHEVROTAIN | Nai nhỏ nhất thế giới | 3
-TAKIN | Động vật lạ, giữa dê và bò | 3
-OKAPI | Động vật sọc, giữa ngựa và hươu | 2
-QUAGGA | Ngựa sọc tuyệt chủng | 2
-HYRAX | Động vật nhỏ giống chuột | 2
-DASSIE | Hyrax đá, sống hang | 2
-CONEY | Thỏ hoang | 1
-PIKA | Thỏ núi nhỏ | 2
-CAIMAN | Cá sấu nhỏ, bộ phận da | 2
-GAVIAL | Cá sấu mỏ dài, India | 3
-MATAMATA | Rùa nước, mặt lạ | 3
-TERRAPIN | Rùa nước nhỏ | 2
-GOPHER | Rùa đất Mỹ | 2
-TUATARA | Bò sát thời tiền sử Sơn Lan | 3
-AXOLOTL | Cá sắn Mexico, giữ dạng trẻ | 2
-HELLBENDER | Cá sắn lớn Bắc Mỹ | 3
-COLLEMBOLAN | Côn trùng nhảy nhỏ | 3
-TARDIGRADE | Gấu nước, sinh vật nhỏ | 3
-GAUR | Bò liar lớn, sống ở Châu Á | 3
-ADDAX | Linh dương bạch, sống sa mạc | 3
+EMU | Chim lớn không bay ở Úc, chỉ nhỏ hơn đà điểu | 2
+RHEA | Chim lớn không bay trên đồng cỏ Nam Mỹ | 2
+KIWI | Chim không bay mỏ dài ở New Zealand, đẻ trứng rất to | 2
+DODO | Chim không bay đã tuyệt chủng trên đảo Mauritius | 2
+CASSOWARY | Chim lớn có mào sừng ở Úc, cú đá rất nguy hiểm | 3
+HOOPOE | Chim đầu rìu, mào xoè ra như nan quạt | 2
+KINGFISHER | Chim bói cá lông xanh biếc, lao xuống nước bắt cá | 2
+HUMMINGBIRD | Chim nhỏ nhất, vỗ cánh đứng yên giữa không trung hút mật | 2
+NIGHTINGALE | Chim hoạ mi hót hay vào lúc đêm khuya | 2
+FINCH | Chim nhỏ mỏ ngắn khoẻ, chuyên cắn vỡ vỏ hạt | 2
+THRUSH | Chim hoét ngực lốm đốm, hót vang buổi sáng sớm | 2
+WREN | Chim rất nhỏ đuôi dựng đứng, hót to bất ngờ | 2
+LARK | Chim sơn ca vừa bay vút lên cao vừa hót | 2
+PHEASANT | Chim trĩ đuôi dài, lông cổ ánh sặc sỡ | 2
+QUAIL | Chim cút tròn mập, trứng nhỏ lấm chấm | 1
+GROUSE | Gà rừng vùng lạnh, nấp trong bụi cây thấp | 2
+PARTRIDGE | Chim đa đa mập tròn, chạy nhiều hơn bay | 2
+WOODPECKER | Chim gõ kiến, mổ lộc cộc vào thân cây tìm sâu | 2
+VULTURE | Kền kền đầu trọc, chuyên rỉa xác chết | 2
+ALBATROSS | Hải âu lớn sải cánh dài nhất, bay xa ngoài đại dương | 2
+PETREL | Hải âu nhỏ lượn sát mặt sóng ngoài khơi | 2
+CORMORANT | Chim cốc lặn bắt cá, hay đứng phơi cánh cho khô | 2
+HERON | Con diệc cổ dài, đứng im một chỗ rình cá | 2
+EGRET | Cò trắng chân đen, theo trâu kiếm ăn ngoài đồng | 2
+BITTERN | Chim vạc kêu ồm ộp trong đầm lau sậy | 2
+IBIS | Cò quăm mỏ cong xuống như lưỡi liềm | 2
+FLAMINGO | Chim hồng hạc co một chân, lông hồng vì ăn tôm | 2
+BUSTARD | Ô tác, loài chim nặng nhất mà vẫn bay được | 2
+MANDARIN | Vịt uyên ương lông sặc sỡ, biểu tượng của đôi lứa | 2
+CUCKOO | Chim tu hú đẻ nhờ trứng vào tổ của chim khác | 2
+KOEL | Chim tu hú châu Á kêu vang suốt mùa hè | 2
+ROADRUNNER | Chim sa mạc chạy bộ nhanh hơn là bay | 2
+SECRETARY | Chim chân cao châu Phi, giẫm chết rắn để ăn | 2
+WASP | Ong eo thắt, chích được nhiều lần mà không chết | 1
+HORNET | Ong bắp cày to, nọc rất độc, làm tổ trên cây | 2
+MOSQUITO | Côn trùng hút máu kêu vo ve, truyền sốt xuất huyết | 1
+FLEA | Bọ chét nhảy rất xa, hút máu chó mèo | 2
+TICK | Con ve bám da hút máu, truyền bệnh cho trâu bò | 2
+MIDGE | Muỗi mắt li ti bay thành đám lúc chiều tối | 2
+GNAT | Muỗi nhỏ bay vo ve quanh mặt lúc nhá nhem | 2
+MANTIS | Bọ ngựa hai càng gập như đang chắp tay cầu nguyện | 2
+CICADA | Con ve sầu kêu ran trên cây suốt mùa hè | 2
+CENTIPEDE | Con rết nhiều chân, cắn một phát sưng tấy | 2
+MILLIPEDE | Con cuốn chiếu thân tròn, cuộn lại khi bị chạm | 2
+SCORPION | Bọ cạp có càng, đuôi cong giấu nọc độc | 2
+TARANTULA | Nhện lông to bằng bàn tay, có người nuôi làm cảnh | 2
+LEECH | Con đỉa bám vào da hút máu dưới ruộng nước | 2
+EARTHWORM | Giun đất làm tơi đất, mưa xong bò lên mặt đường | 2
+TERMITE | Con mối ăn rỗng cột gỗ, sống thành tổ lớn | 1
+HORSEFLY | Ruồi trâu to, chích trâu bò đau nhói | 2
+FIREFLY | Đom đóm phát sáng nhấp nháy trong đêm hè | 1
+STAG | Con hươu đực trưởng thành có bộ sừng lớn | 1
+DOE | Con hươu cái, không có sừng | 1
+BUCK | Con đực của hươu, nai hoặc thỏ | 1
+ROE | Giống hươu nhỏ ở châu Âu, mông có đốm trắng | 1
+ANTELOPE | Linh dương sừng thẳng, phi nước đại trên thảo nguyên | 2
+WILDEBEEST | Linh dương đầu bò châu Phi, di cư thành đàn khổng lồ | 2
+MUSK | Hươu xạ đực tiết chất thơm dùng làm nước hoa | 2
+IMPALA | Linh dương châu Phi nhảy vọt rất cao khi bỏ chạy | 2
+ELAND | Linh dương to nhất châu Phi, sừng xoắn ốc | 2
+WARTHOG | Lợn rừng châu Phi mặt có bướu, răng nanh cong | 2
+PECCARY | Lợn rừng nhỏ ở châu Mỹ, sống thành bầy | 2
+AARDVARK | Thú châu Phi mõm dài tai thỏ, đào tổ mối ăn kiến | 2
+PLATYPUS | Thú mỏ vịt ở Úc, có vú mà lại đẻ trứng | 2
+ECHIDNA | Thú lông nhím ở Úc đẻ trứng, lưỡi dài bắt kiến | 2
+SLOTH | Con lười treo ngược trên cành, di chuyển cực chậm | 2
+ANTEATER | Thú mõm ống lưỡi dài, thọc vào tổ kiến liếm mồi | 2
+ARMADILLO | Thú châu Mỹ có mai cứng, cuộn tròn khi gặp nguy | 2
+PANGOLIN | Tê tê phủ vảy sừng, cuộn tròn tự vệ, bị săn trộm nhiều | 2
+OPOSSUM | Thú có túi ở châu Mỹ, giả chết khi bị bắt | 2
+LEMUR | Vượn cáo Madagascar mắt to, đuôi khoang đen trắng | 2
+GIBBON | Vượn tay rất dài, chuyền cành và hú vang rừng | 2
+ORANGUTAN | Vượn lông đỏ cam ở rừng Borneo và Sumatra | 2
+CHIMPANZEE | Tinh tinh, loài vượn gần người nhất, biết dùng công cụ | 1
+GORILLA | Khỉ đột lưng bạc to khoẻ, sống thành đàn trong rừng | 1
+BABOON | Khỉ đầu chó mõm dài, sống thành bầy lớn ở châu Phi | 2
+LEMMING | Chuột nhỏ lông dày ở vùng đài nguyên băng giá | 2
+HAMSTER | Chuột cảnh má phình nhét đầy thức ăn, chạy vòng quay | 1
+GERBIL | Chuột nhảy sa mạc đuôi có túm lông ở chóp | 2
+CHINCHILLA | Chuột lông dày mượt nhất thế giới, quê ở dãy Andes | 2
+GUINEA PIG | Chuột lang mập tròn không đuôi, nuôi làm thú cưng | 1
+CAPYBARA | Loài gặm nhấm lớn nhất, hay ngâm mình dưới nước Nam Mỹ | 2
+PORCUPETTE | Nhím con mới sinh, gai còn mềm | 2
+STOAT | Chồn ecmin, mùa đông lông đổi sang màu trắng | 2
+FERRET | Chồn sương nuôi trong nhà, thân dài hay chui rúc | 2
+MARTEN | Chồn rừng leo cây giỏi, bộ lông quý | 2
+OTTER | Rái cá bơi ngửa, đập sò trên bụng để ăn | 1
+RACCOON | Gấu mèo mặt có vệt đen như đeo mặt nạ, bới thùng rác | 1
+POLECAT | Chồn hôi châu Âu, tiết mùi khó chịu khi hoảng sợ | 2
+SKUNK | Chồn hôi Bắc Mỹ xịt mùi thối để đuổi kẻ thù | 2
+NUTRIA | Chuột hải ly răng cam, phá bờ ruộng | 2
+BEAVER | Hải ly gặm cây chặn suối xây đập | 2
+MUSKRAT | Chuột xạ sống ở đầm lầy, đuôi dẹp | 2
+FLYING LEMUR | Thú Đông Nam Á căng màng da lượn từ cây này sang cây khác | 3
+FLYING SQUIRREL | Sóc căng màng da hai bên sườn để lượn trong đêm | 2
+FLYING DRAGON | Thằn lằn bay xoè nếp da sườn lượn giữa các thân cây | 2
+COLUGO | Thú bay Đông Nam Á, màng da nối cả bốn chi và đuôi | 3
+POTOROO | Chuột túi tí hon ở Úc, đào nấm dưới đất mà ăn | 3
+QUOKKA | Thú có túi nhỏ ở Úc, miệng trông như đang mỉm cười | 2
+NUMBAT | Thú có túi Úc lưng vằn, chỉ ăn mối | 2
+WOMBAT | Thú có túi Úc mập lùn, phân có hình khối vuông | 2
+MANATEE | Bò biển hiền lành gặm cỏ nước ở vùng nhiệt đới | 2
+DUGONG | Cá cúi đuôi chẻ như cá heo, gặm cỏ biển | 2
+WALRUS | Hải tượng to lớn có hai ngà dài và ria cứng | 2
+NARWHAL | Cá voi Bắc Cực có chiếc ngà xoắn dài như sừng kỳ lân | 2
+BELUGA | Cá voi trắng vùng Bắc Cực, trán tròn nhô cao | 2
+PORPOISE | Họ hàng cá heo nhưng mõm tù, thân nhỏ hơn | 2
+ORCA | Cá voi đen trắng săn mồi theo bầy, còn gọi là cá kình | 2
+SPERM WHALE | Cá nhà táng đầu vuông to, lặn sâu săn mực khổng lồ | 2
+BALEEN | Tấm sừng hàm lọc nước thay cho răng ở cá voi lớn | 3
+MANTA RAY | Cá đuối khổng lồ vỗ vây như đôi cánh, ăn sinh vật phù du | 2
+STINGRAY | Cá đuối có ngạnh độc ở đuôi, vùi mình dưới cát | 2
+SAWFISH | Cá có mũi dài gắn răng cưa hai bên như lưỡi cưa | 2
+ANGLERFISH | Cá biển sâu treo mồi phát sáng trước miệng để dụ con mồi | 2
+SEAHORSE | Cá ngựa bơi đứng, con đực mang thai trong túi bụng | 1
+PIRANHA | Cá răng sắc ở sông Amazon, xé mồi theo đàn | 2
+SUNFISH | Cá mặt trăng thân dẹt tròn, nặng nhất trong các loài cá xương | 2
+GUPPY | Cá bảy màu nhỏ đẻ con, nuôi nhiều trong bể cảnh | 1
+TETRA | Cá nhỏ có sọc óng ánh, bơi thành đàn trong bể thuỷ sinh | 2
+GOLDFISH | Cá vàng đuôi xoè nuôi trong bể, trí nhớ hay bị đem ra đùa | 1
+KOI | Cá chép cảnh Nhật Bản nhiều màu, nuôi trong hồ sân vườn | 1
+STURGEON | Cá tầm thân có hàng gai, trứng muối thành món xa xỉ | 2
+LAMPREY | Cá mút đá miệng tròn đầy răng, bám vào cá khác hút máu | 2
+COD | Cá tuyết biển lạnh, thịt trắng dùng làm fish and chips | 1
+HALIBUT | Cá bơn biển sâu rất to, hai mắt nằm cùng một bên | 2
+FLOUNDER | Cá bơn dẹt nằm nghiêng dưới đáy, đổi màu lẫn với cát | 2
+HERRING | Cá trích nhỏ bơi thành đàn lớn, hay đem muối hoặc hun khói | 1
+MARLIN | Cá cờ mũi nhọn như giáo, bơi nhanh nhất đại dương | 2
+BARRACUDA | Cá nhồng thân dài răng nhọn, săn mồi ở rạn san hô | 2
+BASS | Cá vược thịt chắc, câu được cả ở sông lẫn biển | 1
+PERCH | Cá rô vây lưng có gai, sống ở ao hồ nước ngọt | 1
+PIKE | Cá chó mõm dẹt đầy răng, rình mồi trong đám rong | 1
+BREAM | Cá vền thân dẹt cao, sống ở sông hồ | 2
+CRAB | Con cua tám chân hai càng, bò ngang | 1
+PRAWN | Con tôm to hơn tép, nấu lên chuyển màu đỏ cam | 1
+CLAM | Con nghêu hai mảnh vỏ, vùi mình dưới cát biển | 1
+SNAIL | Ốc sên bò chậm để lại vệt nhớt, mang vỏ xoắn trên lưng | 1
+SLUG | Sên trần không vỏ, bò trong vườn ăn lá non | 1
+OCTOPUS | Bạch tuộc tám xúc tu, phun mực và đổi màu da | 1
+ANEMONE | Hải quỳ bám đá, xúc tu đung đưa như cánh hoa | 2
+CORAL | San hô kết thành rạn ngầm, do vô số sinh vật nhỏ tạo nên | 1
+POLYP | Sinh vật nhỏ hình ống bám đá, vô số con kết thành rạn san hô | 3
+ZOOID | Một cá thể trong tập đoàn sinh vật sống dính liền nhau | 3
+CNIDARIAN | Ngành ruột khoang có tế bào châm, gồm sứa và hải quỳ | 3
+PORIFERA | Ngành bọt biển, cơ thể đầy lỗ lọc nước lấy thức ăn | 3
+ARTHROPOD | Ngành chân khớp vỏ cứng, gồm côn trùng, nhện và giáp xác | 3
+MOLLUSK | Ngành thân mềm, phần lớn có vỏ như ốc, trai, mực | 3
+ECHINODERM | Ngành da gai đối xứng toả tròn, gồm sao biển và nhím biển | 3
+BRITTLE STAR | Họ hàng sao biển, năm cánh mảnh dễ đứt khi bị túm | 2
+NEMATODE | Giun tròn nhỏ sống trong đất hoặc ký sinh trong ruột | 3
+FLATWORM | Giun dẹp thân mỏng, gồm cả sán lá và sán dây | 3
+ANNELID | Giun đốt, thân chia thành nhiều khoanh như giun đất | 3
+MONOTREME | Nhóm thú đẻ trứng duy nhất, gồm thú mỏ vịt và thú lông nhím | 3
+PLACENTAL | Nhóm thú nuôi con trong bụng mẹ bằng nhau thai | 2
+DIURNAL | Kiếm ăn ban ngày và ngủ về đêm | 2
+CREPUSCULAR | Chỉ hoạt động lúc tranh tối tranh sáng sớm và chiều | 3
+ECTOTHERM | Động vật máu lạnh, thân nhiệt đổi theo môi trường | 3
+ENDOTHERM | Động vật máu nóng, tự giữ thân nhiệt ổn định | 3
+POIKILOTHERM | Loài có thân nhiệt lên xuống theo nhiệt độ xung quanh | 3
+HOMEOTHERM | Loài giữ thân nhiệt gần như không đổi suốt ngày đêm | 3
+PREDATION | Quan hệ một loài săn bắt và ăn thịt loài khác | 2
+SCAVENGER | Loài chuyên ăn xác chết do con khác bỏ lại | 2
+GRAZER | Loài gặm cỏ trên đồng như trâu, bò, ngựa | 2
+FORAGE | Đi lùng sục khắp nơi kiếm thức ăn | 2
+TERRITORY | Vùng đất con thú đánh dấu và giữ không cho con khác vào | 2
+DOMINANCE | Vị thế con đầu đàn áp đảo những con còn lại | 2
+HIERARCHY | Trật tự trên dưới trong bầy, con nào ăn trước con nào sau | 2
+MATING | Việc con đực và con cái ghép đôi để sinh sản | 2
+GESTATION | Khoảng thời gian con non nằm trong bụng mẹ | 2
+FLEDGLING | Chim non vừa đủ lông cánh, tập chuyến bay đầu tiên | 2
+PUPA | Giai đoạn nhộng nằm im trước khi côn trùng hoá thành con trưởng thành | 1
+CHRYSALIS | Vỏ nhộng cứng bóng mà sâu bướm chui vào để hoá bướm | 2
+IMAGO | Dạng trưởng thành cuối cùng của côn trùng sau khi lột xác | 3
+NYMPH | Ấu trùng giống con trưởng thành thu nhỏ nhưng chưa có cánh | 2
+THORAX | Phần ngực giữa của côn trùng, nơi gắn chân và cánh | 2
+MANDIBLE | Đôi hàm cứng của côn trùng dùng cắn và nghiền thức ăn | 2
+PROBOSCIS | Vòi hút dài cuộn lại của bướm hoặc muỗi | 2
+ANTENNA | Đôi râu trên đầu côn trùng dùng để ngửi và dò đường | 1
+SETAE | Những sợi lông cứng mọc trên thân sâu bọ và giun | 3
+EXOSKELETON | Bộ vỏ cứng bọc ngoài thân, phải lột mới lớn lên được | 3
+CHITIN | Chất tạo nên lớp vỏ cứng của côn trùng và vỏ tôm cua | 3
+SPIRACLE | Lỗ nhỏ hai bên thân côn trùng để thở | 3
+TRACHEA | Hệ ống dẫn khí đưa dưỡng khí vào khắp thân côn trùng | 2
+SIMPLE EYE | Mắt chỉ có một thấu kính, chỉ phân biệt sáng tối | 3
+COMPOUND EYE | Mắt ghép từ hàng nghìn ô nhỏ, nhìn được gần như mọi hướng | 3
+OCELLUS | Mắt đơn li ti trên đỉnh đầu côn trùng, chỉ cảm nhận ánh sáng | 3
+SENSILLUM | Cơ quan cảm giác tí hon trên râu và chân côn trùng | 3
+CHEMORECEPTOR | Cơ quan nhận biết mùi và vị qua chất hoá học | 3
+PHOTORECEPTOR | Tế bào cảm nhận ánh sáng trong mắt | 3
+MECHANORECEPTOR | Cơ quan cảm nhận va chạm, rung động và áp lực | 3
+OSMOREGULATION | Khả năng giữ cân bằng nước và muối trong cơ thể | 3
+THERMOREGULATION | Khả năng tự điều chỉnh thân nhiệt cho ổn định | 3
+CHEMOTAXIS | Việc sinh vật di chuyển về phía hoặc tránh xa một chất hoá học | 3
+PHOTOTAXIS | Việc sinh vật tự động lao về phía nguồn sáng | 3
+ETHOLOGY | Ngành khoa học nghiên cứu tập tính của loài vật | 3
+INSTINCT | Hành vi bẩm sinh không cần học, như chim biết làm tổ | 2
+INNATE | Có sẵn từ lúc sinh ra chứ không phải học được | 2
+LEARNED | Hành vi có được nhờ trải nghiệm và luyện tập | 1
+CONDITIONING | Cách tập cho con vật phản xạ theo tín hiệu, như chó Pavlov | 2
+IMPRINTING | Chim non coi vật đầu tiên nhìn thấy là mẹ mình | 2
+CHEVROTAIN | Cheo cheo, loài guốc chẵn nhỏ nhất, chỉ to bằng con thỏ | 3
+TAKIN | Thú vùng Himalaya trông lai giữa dê và bò, lông vàng | 3
+OKAPI | Họ hàng hươu cao cổ, chân vằn như ngựa vằn, sống rừng Congo | 2
+QUAGGA | Phân loài ngựa vằn đã tuyệt chủng, chỉ vằn nửa thân trước | 2
+HYRAX | Thú nhỏ giống chuột lang nhưng họ hàng gần với voi | 2
+DASSIE | Tên gọi ở Nam Phi của loài thú nhỏ sống trong hốc đá | 2
+CONEY | Tên cũ chỉ con thỏ rừng | 1
+PIKA | Thú nhỏ tai tròn họ thỏ, sống trong đá núi cao | 2
+CAIMAN | Cá sấu nhỏ ở Trung và Nam Mỹ | 2
+GAVIAL | Cá sấu sông Hằng mõm cực mảnh dài, chuyên bắt cá | 3
+MATAMATA | Rùa Nam Mỹ mai sần sùi, đầu dẹt như chiếc lá mục | 3
+TERRAPIN | Rùa nhỏ sống ở nước lợ và đầm lầy | 2
+GOPHER | Loài gặm nhấm má có túi, đào hầm chằng chịt dưới bãi cỏ | 2
+TUATARA | Bò sát New Zealand còn sót từ thời khủng long | 3
+AXOLOTL | Kỳ giông Mexico giữ mang ngoài cả đời, mọc lại được chi đứt | 2
+HELLBENDER | Kỳ giông khổng lồ Bắc Mỹ sống dưới đá suối | 3
+COLLEMBOLAN | Bọ đuôi bật tí hon trong đất, búng mình nhảy xa | 3
+TARDIGRADE | Gấu nước tám chân siêu nhỏ, sống sót cả trong chân không | 3
+GAUR | Bò tót, loài bò hoang lớn nhất, sống trong rừng châu Á | 3
+ADDAX | Linh dương trắng sa mạc Sahara, sừng xoắn dài | 3
 WOLF | Con sói | 1
 FOX | Con cáo | 1
 DEER | Con nai | 1
 REINDEER | Con tuần lộc (kéo xe ông già Noel) | 2
 SQUIRREL | Con sóc | 2
-HEDGEHOG | Con nhím | 3 | PORCUPINE
+HEDGEHOG | Nhím lùn mặt chuột, gai ngắn, cuộn tròn như quả bóng | 3
 BAT | Con dơi | 1
 PANDA | Con gấu trúc | 1 | GIANT PANDA
 KOALA | Con gấu túi | 1 | KOALA BEAR
 POLAR BEAR | Gấu trắng Bắc Cực | 2
 RHINOCEROS | Con tê giác | 3 | RHINO
-HIPPO | Con hà mã | 2 | HIPPOPOTAMUS
 ANIMAL | Động vật (con vật nói chung) | 1 | ANIMALS
 PET | Thú cưng | 1 | PETS
 DINOSAUR | Con khủng long | 1 | DINOSAURS, DINO
-CROCODILE | Con cá sấu | 1 | ALLIGATOR, CROC
-LIZARD | Con thằn lằn | 2 | GECKO
-INSECT | Côn trùng | 2 | INSECTS, BUG, BUGS
-HOUSEFLY | Con ruồi | 2 | FLY, FLIES, HOUSEFLIES
+CROCODILE | Cá sấu mõm nhọn hình chữ V, ngậm miệng vẫn lộ răng nanh | 1 | CROC
+LIZARD | Bò sát bốn chân đuôi dài nói chung, phơi nắng trên tường | 2
+INSECT | Côn trùng | 2 | INSECTS, BUGS
+HOUSEFLY | Con ruồi | 2 | FLIES, HOUSEFLIES
 DRAGONFLY | Con chuồn chuồn | 3
 LADYBUG | Con bọ rùa | 3 | LADYBIRD, LADY BEETLE
 COCKROACH | Con gián | 3 | ROACH
-GRASSHOPPER | Con châu chấu | 3 | LOCUST
+GRASSHOPPER | Châu chấu chân sau khoẻ, búng mình nhảy xa trên đồng cỏ | 3
 CATERPILLAR | Con sâu bướm | 3
-WORM | Con giun đất | 2 | EARTHWORM
+WORM | Con vật thân mềm dài không chân, bò bằng cách co duỗi | 2
 PARROT | Con vẹt | 1
 EAGLE | Chim đại bàng | 1
 PEACOCK | Con chim công | 2 | PEAFOWL, PEAHEN
 SWAN | Con thiên nga | 2
-CROW | Con quạ | 2 | RAVEN
+CROW | Quạ đen cỡ vừa kêu quà quà, hay kiếm ăn thành đàn | 2
 PIGEON | Chim bồ câu | 2 | DOVE
 SPARROW | Chim sẻ | 3
 GOOSE | Con ngỗng | 2 | GEESE
-STORK | Con cò | 3 | EGRET, HERON
+STORK | Con cò mỏ dài thẳng, làm tổ to trên nóc nhà | 3
 OSTRICH | Con đà điểu | 3
 TURKEY | Con gà tây | 2
 NEST | Tổ chim | 2 | NESTS, BIRD NEST, BIRDS NEST
@@ -383,7 +379,7 @@ PINE | Cây thông | 2 | PINE TREE, FIR, FIR TREE
 BANYAN | Cây đa | 3 | BANYAN TREE
 BUSH | Bụi cây | 2 | BUSHES, SHRUB, SHRUBS
 FOREST | Khu rừng | 1 | WOODS, WOODLAND
-JUNGLE | Rừng rậm nhiệt đới | 1 | RAINFOREST
+JUNGLE | Rừng rậm nhiệt đới | 1
 RICE FIELD | Ruộng lúa | 3 | PADDY, PADDY FIELD, RICE PADDY
 FIELD | Cánh đồng | 2 | FIELDS
 WEATHER | Thời tiết | 1
@@ -400,36 +396,36 @@ DRY | Khô ráo, hanh khô (tính từ) | 1
 WET | Ướt (tính từ) | 1
 HUMID | Trời nồm ẩm, oi ẩm (tính từ) | 3 | MUGGY, DAMP
 FREEZING | Lạnh cóng, rét buốt (tính từ) | 2 | ICY, FREEZING COLD
-STORM | Cơn bão | 1 | TYPHOON, HURRICANE, CYCLONE
+STORM | Cơn bão | 1 | CYCLONE
 THUNDER | Tiếng sấm | 2
 LIGHTNING | Tia chớp, tia sét | 3 | LIGHTNING BOLT, THUNDERBOLT
-FOG | Sương mù | 2 | MIST
+FOG | Sương mù | 2
 ICE | Băng (nước đá) | 1
 HAIL | Mưa đá | 3 | HAILSTONE, HAILSTONES
 DRIZZLE | Mưa phùn | 3
 TORNADO | Lốc xoáy, vòi rồng | 2 | TWISTER, WHIRLWIND
-FLOOD | Lũ lụt | 2 | FLOODS, FLOODING
+FLOOD | Lũ lụt | 2 | FLOODS
 DROUGHT | Hạn hán | 3
 SUNSHINE | Ánh nắng mặt trời | 1 | SUNLIGHT
-SUNRISE | Bình minh (lúc mặt trời mọc) | 2 | DAWN, DAYBREAK
-SUNSET | Hoàng hôn (lúc mặt trời lặn) | 2 | SUNDOWN, DUSK
+SUNRISE | Bình minh (lúc mặt trời mọc) | 2 | DAYBREAK
+SUNSET | Hoàng hôn (lúc mặt trời lặn) | 2 | SUNDOWN
 RAINDROP | Giọt mưa | 2 | RAINDROPS
 SNOWFLAKE | Bông tuyết | 2 | SNOWFLAKES
 SNOWMAN | Người tuyết | 1 | SNOWMEN
-FORECAST | Dự báo thời tiết | 3 | WEATHER FORECAST
+FORECAST | Dự báo thời tiết | 3
 CLIMATE | Khí hậu | 3
 SPRING | Mùa xuân | 1 | SPRINGTIME
 SUMMER | Mùa hè | 1 | SUMMERTIME
 AUTUMN | Mùa thu | 1 | FALL
 WINTER | Mùa đông | 1 | WINTERTIME
-RAINY SEASON | Mùa mưa | 2 | WET SEASON, MONSOON SEASON, MONSOON
+RAINY SEASON | Mùa mưa | 2 | WET SEASON, MONSOON SEASON
 DRY SEASON | Mùa khô | 2
 NATURE | Thiên nhiên | 1
 LAKE | Cái hồ (hồ nước) | 1
 POND | Cái ao | 2
 ISLAND | Hòn đảo | 1 | ISLE
 BEACH | Bãi biển | 1
-COAST | Bờ biển | 2 | SHORE, SEASHORE, COASTLINE, SEASIDE
+COAST | Bờ biển | 2 | SHORE, SEASHORE, COASTLINE
 BAY | Vịnh (như vịnh Hạ Long) | 2 | GULF
 DESERT | Sa mạc | 2
 VOLCANO | Núi lửa | 2 | VOLCANOES
@@ -439,13 +435,13 @@ WATERFALL | Thác nước | 2 | FALLS
 STREAM | Dòng suối | 2 | CREEK, BROOK
 ROCK | Hòn đá, tảng đá | 1 | STONE, ROCKS, STONES
 SAND | Cát | 1
-SOIL | Đất trồng cây | 2 | DIRT, EARTH
+SOIL | Đất trồng cây | 2 | DIRT
 MUD | Bùn | 2
-EARTH | Trái Đất | 1 | THE EARTH, PLANET EARTH
+EARTH | Trái Đất | 1 | THE EARTH
 WAVE | Sóng biển (con sóng) | 1 | WAVES
 AIR | Không khí | 1
 FIRE | Lửa (ngọn lửa) | 1 | FLAME, FLAMES
-PEAK | Đỉnh núi | 3 | SUMMIT, MOUNTAIN TOP
+PEAK | Đỉnh núi | 3 | MOUNTAIN TOP
 ICEBERG | Tảng băng trôi | 2
 EARTHQUAKE | Động đất | 2 | QUAKE
 TSUNAMI | Sóng thần | 2 | TIDAL WAVE
@@ -453,14 +449,14 @@ LANDSLIDE | Sạt lở đất | 3 | MUDSLIDE, LANDSLIP
 ENVIRONMENT | Môi trường | 2
 POLLUTION | Sự ô nhiễm | 2
 RECYCLE | Tái chế | 2 | RECYCLING
-TRASH | Rác thải | 2 | GARBAGE, RUBBISH, WASTE, LITTER
+TRASH | Rác thải | 2 | GARBAGE, LITTER
 PLASTIC | Nhựa (chất liệu nhựa) | 2 | PLASTICS
 CLIMATE CHANGE | Biến đổi khí hậu | 3
 GLOBAL WARMING | Sự nóng lên toàn cầu | 3
 SMOKE | Khói | 2
 SOLAR ENERGY | Năng lượng mặt trời | 3 | SOLAR POWER
-PROTECT | Bảo vệ (môi trường) | 2 | PRESERVE, CONSERVE, SAVE
-EXTINCT | Tuyệt chủng | 3 | EXTINCTION
+PROTECT | Bảo vệ (môi trường) | 2
+EXTINCT | Tuyệt chủng | 3
 WILDFIRE | Cháy rừng | 3 | FOREST FIRE, BUSHFIRE
 PANTHER | Báo đen (họ mèo săn mồi sa mạc/rừng rậm) | 2 | BLACK PANTHER
 CHAMELEON | Tắc kè hoa (loài bò sát đổi màu theo môi trường) | 2
@@ -471,7 +467,7 @@ RAINFOREST | Rừng nhiệt đới | 2
 HURRICANE | Cơn bão biển / siêu bão | 3
 ECOSYSTEM | Hệ sinh thái | 3
 BIODIVERSITY | Đa dạng sinh học | 3
-HIPPOPOTAMUS | Con hà mã sống dưới nước | 2 | HIPPO
+HIPPOPOTAMUS | Thú khổng lồ da trần, ngâm mình dưới sông châu Phi | 2 | HIPPO
 MEERKAT | Chồn cầy châu Phi đứng hai chân | 2
 BUTTERFLY | Con bướm nhiều màu | 1
 DISASTER | Thảm họa thiên nhiên | 3
@@ -487,7 +483,7 @@ PENINSULA | Bán đảo có ba mặt giáp với biển | 3
 ARCHIPELAGO | Một quần đảo gồm nhiều đảo nhỏ tập hợp lại | 3
 TUNDRA | Vùng đài nguyên / đồng rêu băng giá quanh năm | 3
 EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu | 2
-AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực | 3 | NORTHERN LIGHTS
+AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực | 3
 DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc | 2 | SAND DUNE
 CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng | 2 | GORGE
 IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng | 2
@@ -518,7 +514,7 @@ CUTTLEFISH | Mực nang mai cứng ngụy trang cực tài tình | 2
 HERMIT CRAB | Ốc mượn hồn cua ẩn sĩ chui vào vỏ ốc rỗng | 2
 SEAGULL | Mòng biển bay lượn kêu ríu rít ven bờ biển | 1
 HAWK | Diều hâu mắt tinh bay lượn săn gà chuột | 2
-RAVEN | Quạ đen lớn kêu quạ quạ rất thông minh | 2
+RAVEN | Quạ đen cỡ lớn đuôi hình nêm, thông minh bậc nhất loài chim | 2
 MAGPIE | Chim ác là thích nhặt những vật lấp lánh | 3
 CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von | 2
 PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh | 2
