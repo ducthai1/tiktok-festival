@@ -352,7 +352,11 @@ export function createHud() {
       const root = $('welcome');
       const group = fx.mode === 'group';
       const people = group ? fx.people : [fx];
-      root.className = group ? 'group' : '';
+      // Fan CLB: thẻ xịn dần theo cấp (fan-1 đồng → fan-4 kim cương). Chào cả đoàn thì lấy cấp CAO NHẤT
+      // trong đoàn, để một fan cấp cao không bị chìm trong thẻ thường.
+      const level = Math.max(0, ...people.map((p) => (p.fanClub ? Math.max(1, Number(p.fanLevel) || 1) : 0)));
+      const band = level >= 10 ? 4 : level >= 6 ? 3 : level >= 3 ? 2 : level >= 1 ? 1 : 0;
+      root.className = `${group ? 'group' : ''}${band ? ` fan fan-${band}` : ''}`.trim();
       root.getAnimations?.().forEach((a) => a.cancel());
       const shown = people.slice(0, group ? 18 : 1);
       const avatars = shown.map((p, i) => {
@@ -362,7 +366,9 @@ export function createHud() {
       });
       if (people.length > shown.length) avatars.push(el('div', 'ava more', `+${people.length - shown.length}`));
       root.querySelector('.welcome-avatars').replaceChildren(...avatars);
-      root.querySelector('.kicker').textContent = group ? `🎉 CHÀO MỪNG ${people.length} BẠN MỚI` : '👋 CHÀO MỪNG';
+      root.querySelector('.kicker').textContent = group
+        ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ` · CÓ FAN CẤP ${level}` : ' MỚI'}`
+        : band ? `👑 FAN CỦA KÊNH · CẤP ${level}` : '👋 CHÀO MỪNG';
       root.querySelector('.name').textContent = group ? people.map((p) => p.nickname).join(' · ') : fx.nickname;
       root.querySelector('.line').textContent = line || 'vừa vào phòng!';
       root.hidden = false;

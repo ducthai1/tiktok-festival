@@ -27,7 +27,11 @@ function userOf(data = {}) {
       user.userDetails?.profilePictureUrls, data.userDetails?.profilePictureUrls,
       user.profilePictureUrls, user.profilePictureUrl, user.avatarUrl, data.profilePictureUrl
     ),
-    follower: Number(user.followRole ?? data.followRole ?? user.followInfo?.followStatus) >= 1
+    follower: Number(user.followRole ?? data.followRole ?? user.followInfo?.followStatus) >= 1,
+    // TikFinity nắn lại payload nên tên trường khác bản gốc — đọc lỏng tay, không có thì coi như không phải fan
+    fanClub: Boolean(user.isSubscriber ?? data.isSubscriber) || Number(user.fansClub?.data?.userFansClubStatus
+      ?? data.fansClub?.data?.userFansClubStatus) === 1 || Number(user.fanClubLevel ?? data.fanClubLevel) >= 1,
+    fanLevel: Number(user.fanClubLevel ?? data.fanClubLevel ?? user.fansClub?.data?.level) || 0
   };
 }
 

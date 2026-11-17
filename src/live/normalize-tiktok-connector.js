@@ -12,7 +12,11 @@ export function normalizeConnectorUser(data = {}) {
     nickname: firstText(user.nickname, uniqueId),
     avatar: firstImageUrl(user.profilePicture, user.avatarThumb, user.avatarMedium, user.profilePictureUrl),
     // đang follow kênh (1 = follower, 2 = bạn bè) — TikTok gửi kèm mỗi bình luận / vào phòng / quà
-    follower: Number(user.followInfo?.followStatus ?? user.followRole ?? data.followRole) >= 1
+    follower: Number(user.followInfo?.followStatus ?? user.followRole ?? data.followRole) >= 1,
+    // CLB người hâm mộ: userFansClubStatus 1 = ACTIVE (2 = hết hạn, 0 = chưa vào). KHÁC với
+    // user.isSubscribe (đăng ký trả phí hằng tháng) — người ta vào CLB bằng cách tặng quà Heart Me.
+    fanClub: Number(user.fansClub?.data?.userFansClubStatus) === 1,
+    fanLevel: Number(user.fansClub?.data?.level ?? user.fansClubInfo?.fansLevel) || 0
   };
 }
 

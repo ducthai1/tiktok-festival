@@ -99,15 +99,20 @@ export function createCelebration({ root, audio }) {
 
   function play(fx) {
     busy = true;
+    // 💞 FAN MỚI vào CLB người hâm mộ (game-hub.js: vừa tặng Heart Me) — dùng chung màn bùng nổ này,
+    // chỉ đổi chữ + biểu tượng. Cấp càng cao khung càng sang, hệt như mốc 💎 càng lớn càng hoành tráng.
+    const fan = fx.kind === 'fanJoin';
+    const level = Math.max(1, Number(fx.level) || 1);
     const m = Number(fx.milestone) || 50;
-    const tier = m > 400 ? 'legend' : m >= 250 ? 'rainbow' : 'gold';
+    const tier = fan ? (level >= 10 ? 'legend' : level >= 3 ? 'rainbow' : 'gold')
+      : m > 400 ? 'legend' : m >= 250 ? 'rainbow' : 'gold';
     const layer = el('div', `celebrate cb-${tier}`);
     const canvas = el('canvas', 'cb-fx');
     canvas.width = 1080;
     canvas.height = 1920;
     const rain = el('div', 'cb-rain');
     for (let i = 0; i < (tier === 'gold' ? 24 : 36); i += 1) {
-      const d = el('span', '', ['💎', '💎', '✨', '🪙', tier === 'legend' ? '👑' : '💖'][i % 5]);
+      const d = el('span', '', fan ? ['💖', '💞', '✨', '🌟', '👑'][i % 5] : ['💎', '💎', '✨', '🪙', tier === 'legend' ? '👑' : '💖'][i % 5]);
       d.style.left = `${4 + Math.random() * 92}%`;
       d.style.fontSize = `${38 + Math.random() * 46}px`;
       d.style.animationDelay = `${0.4 + Math.random() * 3.2}s`;
@@ -120,17 +125,18 @@ export function createCelebration({ root, audio }) {
     const kicker = el('div', 'cb-kicker');
     kicker.style.backgroundImage = `url('${ART}${look.frame}')`;
     const ktext = el('div', 'cb-ktext');
-    ktext.append(el('b', '', tier === 'legend' ? 'HUYỀN THOẠI' : tier === 'rainbow' ? 'SIÊU ỦNG HỘ' : `MỐC ${m} 💎`),
-      el('small', '', tier === 'gold' ? 'ỦNG HỘ KÊNH' : `${m.toLocaleString('vi-VN')} 💎`));
+    ktext.append(el('b', '', fan ? 'FAN MỚI' : tier === 'legend' ? 'HUYỀN THOẠI' : tier === 'rainbow' ? 'SIÊU ỦNG HỘ' : `MỐC ${m} 💎`),
+      el('small', '', fan ? 'CLB NGƯỜI HÂM MỘ' : tier === 'gold' ? 'ỦNG HỘ KÊNH' : `${m.toLocaleString('vi-VN')} 💎`));
     kicker.append(ktext);
     const wings = el('div', 'cb-wings');
     wings.style.backgroundImage = `url('${ART}${look.wings}')`;
     const avatar = avatarNode(fx);
     if (look.crown) avatar.append(el('span', 'cb-crown', '👑'));
     const amount = el('div', 'cb-amount');
-    const num = el('span', 'num', '0');
-    amount.append(num, el('span', 'gem', ' 💎'));
-    card.append(kicker, wings, avatar, el('div', 'cb-name', fx.nickname || 'Bạn'), amount, el('div', 'cb-thanks', 'CẢM ƠN BẠN ĐÃ ỦNG HỘ KÊNH! ❤️'));
+    const num = el('span', 'num', fan ? `CẤP ${level}` : '0');
+    amount.append(num, el('span', 'gem', fan ? ' 👑' : ' 💎'));
+    card.append(kicker, wings, avatar, el('div', 'cb-name', fx.nickname || 'Bạn'), amount,
+      el('div', 'cb-thanks', fan ? 'ĐÃ VÀO CLB NGƯỜI HÂM MỘ! 💖' : 'CẢM ƠN BẠN ĐÃ ỦNG HỘ KÊNH! ❤️'));
     layer.append(el('div', 'cb-flash'), el('div', 'cb-rays'), el('div', 'cb-ring'), el('div', 'cb-ring r2'), canvas, rain, card);
     root.append(layer);
     // chữ dài → thu nhỏ cho vừa lòng khung (như khung danh hiệu Sàn Nhảy)
@@ -146,6 +152,7 @@ export function createCelebration({ root, audio }) {
     // số 💎 đếm lên tới mốc
     const t0 = performance.now();
     const count = () => {
+      if (fan) return; // thẻ fan hiện thẳng "CẤP N", không có số để đếm lên
       const k = Math.min(1, (performance.now() - t0 - 500) / 1500);
       num.textContent = Math.max(0, Math.round(m * (1 - (1 - Math.max(0, k)) ** 3))).toLocaleString('vi-VN');
       if (k < 1) requestAnimationFrame(count);
@@ -156,7 +163,9 @@ export function createCelebration({ root, audio }) {
     audio.duck?.(0.2, 7);
     audio.play?.('airhorn');
     setTimeout(() => audio.play?.('fanfare'), 450);
-    audio.speak?.(`Quá đỉnh! Cảm ơn ${speakableName(fx.nickname)} đã ủng hộ ${m} kim cương!`, 'story');
+    audio.speak?.(fan
+      ? `Chào mừng ${speakableName(fx.nickname)} đã trở thành fan của kênh! Cấp ${level}!`
+      : `Quá đỉnh! Cảm ơn ${speakableName(fx.nickname)} đã ủng hộ ${m} kim cương!`, 'story');
 
     setTimeout(() => layer.classList.add('out'), SHOW_MS - OUT_MS);
     setTimeout(() => {
@@ -175,8 +184,8 @@ export function createCelebration({ root, audio }) {
   return {
     show(fx) {
       // cùng một người còn đang chờ → chỉ giữ mốc cao nhất
-      const waiting = queue.find((q) => q.userId === fx.userId);
-      if (waiting) Object.assign(waiting, fx, { milestone: Math.max(waiting.milestone, fx.milestone) });
+      const waiting = queue.find((q) => q.userId === fx.userId && q.kind === fx.kind);
+      if (waiting) Object.assign(waiting, fx, { milestone: Math.max(waiting.milestone || 0, fx.milestone || 0) });
       else if (queue.length < 5) queue.push({ ...fx });
       next();
     }

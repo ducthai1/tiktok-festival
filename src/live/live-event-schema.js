@@ -25,7 +25,9 @@ export function sanitizeLiveEvent(input) {
       uniqueId: uniqueId || userId,
       nickname: cleanText(user.nickname, 40) || uniqueId || 'Người xem',
       avatar: safeImageUrl(user.avatar),
-      follower: user.follower === true
+      follower: user.follower === true,
+      fanClub: user.fanClub === true,
+      fanLevel: clampInt(user.fanLevel, 0, 99, 0)
     }
   };
   if (event.type === 'chat') {

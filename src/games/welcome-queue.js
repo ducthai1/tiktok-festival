@@ -27,7 +27,9 @@ export function createWelcomeQueue({ textAbove = DEFAULT_TEXT_ABOVE } = {}) {
   let threshold = textAbove;
   let nextAt = 0;
 
-  const card = (user, mode, extra = {}) => ({ kind: 'welcome', mode, userId: user.id, nickname: user.nickname, avatar: user.avatar, ...extra });
+  // fanClub / fanLevel đi kèm để màn hình biết chào thường hay chào Fan CLB (cấp mấy)
+  const card = (user, mode, extra = {}) => ({ kind: 'welcome', mode, userId: user.id, nickname: user.nickname, avatar: user.avatar,
+    fanClub: user.fanClub === true, fanLevel: Number(user.fanLevel) || 0, ...extra });
 
   return {
     setViewerCount(n) {
@@ -57,7 +59,8 @@ export function createWelcomeQueue({ textAbove = DEFAULT_TEXT_ABOVE } = {}) {
     tick(now = Date.now()) {
       if (!queue.length || now < nextAt) return [];
       if (queue.length > GROUP_ABOVE) {
-        const people = queue.splice(0, GROUP_SIZE).map(({ id, nickname, avatar }) => ({ userId: id, nickname, avatar }));
+        const people = queue.splice(0, GROUP_SIZE).map(({ id, nickname, avatar, fanClub, fanLevel }) => ({ userId: id, nickname, avatar,
+          fanClub: fanClub === true, fanLevel: Number(fanLevel) || 0 }));
         const pace = groupPace(people.length);
         nextAt = now + pace;
         return [{ kind: 'welcome', mode: 'group', people, durationMs: pace + 300, waiting: queue.length }];

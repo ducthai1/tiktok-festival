@@ -177,6 +177,14 @@ hud.onGiftCardsDone(() => {
   const people = waiting.flatMap((w) => (w.mode === 'group' ? w.people : [{ id: w.id, nickname: w.nickname, avatar: w.avatar }])).slice(-24);
   return showWelcome({ kind: 'welcome', mode: 'group', people, durationMs: 3600 });
 });
+/** Một hiệu ứng → đúng nơi hiển thị. Dùng chung cho hiệu ứng từ server và cho __stage.inject khi chụp ảnh. */
+function dispatchFx(fx) {
+  if (fx.kind === 'welcome') onWelcome(fx);
+  else if (fx.kind === 'donorMilestone' || fx.kind === 'fanJoin') celebration.show(fx);
+  // 🎉 mốc 💎 · 💞 vừa tặng Heart Me vào CLB người hâm mộ — cả hai dùng chung màn chúc mừng, mọi game
+  else current?.onFx(fx);
+}
+
 function showWelcome(fx) {
   const w = current?.welcome || {};
   if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);
@@ -307,9 +315,7 @@ const socket = connectLiveSocket({
     else if (message.t === 'fx' && message.game === currentId && current) {
       for (const fx of message.list) {
         try {
-          if (fx.kind === 'welcome') onWelcome(fx);
-          else if (fx.kind === 'donorMilestone') celebration.show(fx); // 🎉 người ủng hộ đạt mốc 100 / 200… 💎 — mọi game
-          else current.onFx(fx);
+          dispatchFx(fx);
         } catch (error) {
           console.error('[stage] lỗi hiệu ứng:', fx.kind, error);
         }
@@ -380,10 +386,8 @@ window.__stage = {
   musicSpecial: () => audio.specialKind(),
   playSound: (name) => audio.play(name),
   // Chỉ để chụp ảnh kiểm tra: phát hiệu ứng ngay trên màn hình này, không qua server.
+  // Dùng ĐÚNG đường đi của hiệu ứng thật (dispatchFx) để ảnh chụp không khác lúc chạy live.
   inject(list) {
-    for (const fx of list) {
-      if (fx.kind === 'welcome') onWelcome(fx);
-      else current?.onFx(fx);
-    }
+    for (const fx of list) dispatchFx(fx);
   }
 };

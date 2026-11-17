@@ -13,6 +13,9 @@ import { createDonorLedger } from './donor-ledger.js';
 
 /** Mốc chúc mừng người ủng hộ: mỗi 50 💎 cộng dồn trong một phòng live (50, 100, 150, 200...). */
 export const DONOR_STEP = 50;
+/** Quà tham gia CLB người hâm mộ: tặng món này là vào CLB (id + tên, phòng khi TikTok đổi id). */
+export const FANCLUB_GIFT_IDS = new Set(['7934']);
+export const FANCLUB_GIFT_NAMES = new Set(['heart me']);
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
   onEnglishAnswer = null, englishListenReady = () => false } = {}) {
@@ -49,6 +52,21 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     return [{ kind: 'donorMilestone', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar, milestone, total }];
   }
 
+  // 💞 FAN MỚI: tặng Heart Me (1 xu) là vào CLB người hâm mộ. TikTok chỉ bật cờ fanClub ở các sự kiện SAU đó,
+  // nên khoảnh khắc vừa vào CLB phải bắt từ chính món quà — nếu chờ cờ thì mất đúng lúc đáng chúc mừng nhất.
+  // Mỗi người chỉ mừng một lần trong phòng này (tặng lại để gia hạn thì không mừng nữa).
+  const fanGreeted = new Set();
+  function fanClubJoin(event) {
+    if (event.type !== 'gift' || !event.user?.id) return [];
+    const name = String(event.gift?.name || '').trim().toLowerCase();
+    if (!FANCLUB_GIFT_IDS.has(String(event.gift?.id || '')) && !FANCLUB_GIFT_NAMES.has(name)) return [];
+    if (fanGreeted.has(event.user.id)) return [];
+    fanGreeted.add(event.user.id);
+    if (!event.simulated) console.log(`[app] 💞 ${event.user.nickname} vào CLB người hâm mộ (${event.gift.name})`);
+    return [{ kind: 'fanJoin', userId: event.user.id, nickname: event.user.nickname, avatar: event.user.avatar,
+      level: Number(event.user.fanLevel) || 1, gift: event.gift.name, image: event.gift.pictureUrl || '' }];
+  }
+
   return {
     list: () => [...games.values()].map((g) => ({ id: g.id, title: g.title })),
     activeId: () => activeId,
@@ -66,7 +84,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.record(event, now);
       donors.record(event);
       const fx = active().handleEvent(event, now);
-      return [...fx, ...donorMilestone(event), ...welcome.notice(event.user, now)];
+      return [...fx, ...donorMilestone(event), ...fanClubJoin(event), ...welcome.notice(event.user, now)];
     },
     /** Danh mục quà thật của phòng → game nào cần (tab tiếng Anh gán quà đổi bộ đề). */
     setGiftCatalog(catalog) {
@@ -115,12 +133,14 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       board.reset();
       welcome.reset();
       roomDonations.clear();
+      fanGreeted.clear();
       donors.clear();
       lastSimulatedAt = 0;
     },
     /** Phòng live mới: mỗi game xoá thông số của phòng cũ (game quiz: năng lượng, follow, share, chế độ đề) — giữ bảng xếp hạng. */
     resetRoom() {
       roomDonations.clear();
+      fanGreeted.clear();
       donors.clear(); // 👑 Bảng vàng: phiên live mới bắt đầu lại
       for (const game of games.values()) game.resetRoom?.();
       welcome.reset(); // phòng mới: chào lại người vào

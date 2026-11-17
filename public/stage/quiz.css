@@ -13,9 +13,9 @@
 #stage.theme-quiz #toasts { top: 892px !important; left: auto; right: 94px; width: 336px; max-height: 255px; overflow: hidden; z-index: 3; }
 /* thẻ chào: dải ngang gọn (ảnh trái, chữ phải) để bảng ĐẠI SỨ bên dưới luôn hiện */
 #stage.theme-quiz #hud > #welcome { top: 892px; left: 94px; width: 412px; height: 104px; min-height: 0; box-sizing: border-box; flex-direction: row;
+  justify-content: flex-start; align-items: center; text-align: left; padding: 10px 14px; gap: 12px; }
 .deck-title { margin: 0 0 6px; padding: 0; font-size: 20px; font-weight: 800; color: #fff; text-align: center;
   text-shadow: 0 0 10px #7dff8a; letter-spacing: 1px; }
-  justify-content: flex-start; align-items: center; text-align: left; padding: 10px 14px; gap: 12px; }
 #stage.theme-quiz #welcome .welcome-avatars { max-width: 150px; overflow: hidden; }
 #stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { width: 64px; height: 64px; border-width: 3px; }
 #stage.theme-quiz #welcome .kicker { font-size: 14px; letter-spacing: 2px; }
@@ -25,13 +25,19 @@
 #stage.theme-quiz #thanks { left: 94px; bottom: 920px; width: 420px; }
 /* thẻ chào màu VÀNG, chữ nâu đậm (dễ đọc trên điện thoại). Trước đây tab đố vui không có màu viền chạy vòng (--line, stage-theme.css)
    + nền bị làm tối 55% → thành ô đen */
-#stage.theme-quiz #hud > #welcome { --line: #fff3c4; --line-2: #ff9800; background: linear-gradient(120deg, #ffe48a, #ffbf2e 45%, #f08c00);
-  backdrop-filter: none; box-shadow: 0 0 26px rgba(255, 196, 60, 0.8), 0 12px 30px rgba(0, 0, 0, 0.45); }
-#stage.theme-quiz #welcome .kicker { color: #7a3d00; -webkit-text-fill-color: #7a3d00; text-shadow: none; font-weight: 900; }
-#stage.theme-quiz #welcome .name, #stage.theme-quiz #welcome.group .name { background: none; color: #3b1c00; -webkit-text-fill-color: #3b1c00;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
-#stage.theme-quiz #welcome .line { color: #4f2800; -webkit-text-fill-color: #4f2800; text-shadow: none; font-weight: 700; }
-#stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { border-color: #fff8e1; box-shadow: 0 0 12px rgba(120, 60, 0, 0.5); }
+#stage.theme-quiz #hud > #welcome { --line: rgba(255, 255, 255, 0.28); --line-2: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(120deg, rgba(26, 24, 40, 0.92), rgba(38, 34, 58, 0.9));
+  border: 2px solid rgba(255, 255, 255, 0.22); /* bỏ viền vàng của thẻ chung — vàng để dành cho Fan */
+  backdrop-filter: none; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.42); }
+#stage.theme-quiz #hud > #welcome::after { display: none; } /* bỏ vệt sáng quét — để dành cho thẻ Fan */
+/* viền sáng chạy vòng (stage-theme.css #welcome::before, conic-gradient có var(--gold)) → viền xám đứng yên */
+#stage.theme-quiz #hud > #welcome::before { background: rgba(255, 255, 255, 0.22); animation: none; }
+#stage.theme-quiz #welcome .kicker { color: #c9c3e8; -webkit-text-fill-color: #c9c3e8; text-shadow: none; font-weight: 800; }
+#stage.theme-quiz #welcome .name, #stage.theme-quiz #welcome.group .name { background: none; color: #fff; -webkit-text-fill-color: #fff;
+  text-shadow: none; }
+#stage.theme-quiz #welcome .line { color: #ded9f2; -webkit-text-fill-color: #ded9f2; text-shadow: none; font-weight: 600; }
+#stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: none; }
 #stage.theme-quiz #hud > #test-badge { top: 96px; }
 
 .quiz-card {
@@ -444,3 +450,53 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 .quiz-body.fit3 .quiz-mask, .quiz-body.fit3 .quiz-mask .word { gap: 4px; }
 .quiz-body.fit2 .quiz-emoji { font-size: 84px; }
 .quiz-body.fit3 .quiz-emoji { font-size: 64px; }
+
+/* ══ THẺ CHÀO FAN CLB (stage-hud.js: fx.fanClub + fx.fanLevel) ══
+   Người thường: thẻ xám trung tính ở trên. Fan: càng cấp cao khung càng sang, và luôn ghi rõ
+   "FAN CỦA KÊNH · CẤP N" để người xem khác thấy mà muốn vào CLB. 4 bậc: 1-2 đồng · 3-5 vàng ·
+   6-9 bạch kim · 10+ kim cương. */
+/* Fan: trả lại viền sáng CHẠY VÒNG, màu theo bậc */
+#stage.theme-quiz #hud > #welcome.fan::before { padding: 3px;
+  background: conic-gradient(from var(--spin), var(--line), var(--line-2), var(--line)); animation: spin 3s linear infinite; }
+#stage.theme-quiz #welcome.fan .kicker { font-weight: 900; letter-spacing: 2px; }
+#stage.theme-quiz #welcome.fan .welcome-avatars img, #stage.theme-quiz #welcome.fan .welcome-avatars .ava { border-color: #fff8e1; }
+
+/* bậc 1 — ĐỒNG (cấp 1-2) */
+#stage.theme-quiz #hud > #welcome.fan-1 { --line: #ffd9a8; --line-2: #a86a2c;
+  background: linear-gradient(120deg, #d99a5c, #b87333 55%, #8a521f);
+  box-shadow: 0 0 20px rgba(214, 150, 80, 0.6), 0 12px 28px rgba(0, 0, 0, 0.45); }
+#stage.theme-quiz #welcome.fan-1 .kicker { color: #fff1dd; -webkit-text-fill-color: #fff1dd; }
+#stage.theme-quiz #welcome.fan-1 .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 4px rgba(80, 40, 0, 0.6); }
+#stage.theme-quiz #welcome.fan-1 .line { color: #ffe9cf; -webkit-text-fill-color: #ffe9cf; }
+
+/* bậc 2 — VÀNG (cấp 3-5): có vệt sáng quét như cũ */
+#stage.theme-quiz #hud > #welcome.fan-2 { --line: #fff3c4; --line-2: #ff9800;
+  background: linear-gradient(120deg, #ffe48a, #ffbf2e 45%, #f08c00);
+  box-shadow: 0 0 30px rgba(255, 196, 60, 0.85), 0 12px 30px rgba(0, 0, 0, 0.45); }
+#stage.theme-quiz #hud > #welcome.fan-2::after { display: block; }
+#stage.theme-quiz #welcome.fan-2 .kicker { color: #7a3d00; -webkit-text-fill-color: #7a3d00; }
+#stage.theme-quiz #welcome.fan-2 .name { color: #3b1c00; -webkit-text-fill-color: #3b1c00; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
+#stage.theme-quiz #welcome.fan-2 .line { color: #4f2800; -webkit-text-fill-color: #4f2800; }
+
+/* bậc 3 — BẠCH KIM (cấp 6-9): viền sáng chạy + ánh tím lạnh */
+#stage.theme-quiz #hud > #welcome.fan-3 { --line: #e6f3ff; --line-2: #7aa7ff;
+  background: linear-gradient(120deg, #4a63b8, #6f7fd8 45%, #9ad0ff);
+  box-shadow: 0 0 34px rgba(140, 180, 255, 0.9), 0 12px 30px rgba(0, 0, 0, 0.45);
+  animation: fan-pulse 1.8s ease-in-out infinite; }
+#stage.theme-quiz #hud > #welcome.fan-3::after { display: block; }
+#stage.theme-quiz #welcome.fan-3 .kicker { color: #0d1b3c; -webkit-text-fill-color: #0d1b3c; }
+#stage.theme-quiz #welcome.fan-3 .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 6px rgba(20, 40, 110, 0.75); }
+#stage.theme-quiz #welcome.fan-3 .line { color: #eaf3ff; -webkit-text-fill-color: #eaf3ff; }
+
+/* bậc 4 — KIM CƯƠNG (cấp 10+): nền cầu vồng chạy, sáng nhất màn hình */
+#stage.theme-quiz #hud > #welcome.fan-4 { --line: #ffffff; --line-2: #ff4fa3;
+  background: linear-gradient(120deg, #ff4fa3, #ffd36b 30%, #36d6ff 60%, #b388ff);
+  background-size: 260% 100%; animation: fan-rainbow 4s linear infinite, fan-pulse 1.5s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(255, 150, 220, 0.95), 0 12px 30px rgba(0, 0, 0, 0.45); }
+#stage.theme-quiz #hud > #welcome.fan-4::after { display: block; }
+#stage.theme-quiz #welcome.fan-4 .kicker { color: #2a0a24; -webkit-text-fill-color: #2a0a24; }
+#stage.theme-quiz #welcome.fan-4 .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 7px rgba(90, 0, 60, 0.8); }
+#stage.theme-quiz #welcome.fan-4 .line { color: #fff0fa; -webkit-text-fill-color: #fff0fa; }
+
+@keyframes fan-rainbow { to { background-position: 260% 0; } }
+@keyframes fan-pulse { 50% { filter: brightness(1.12); } }
