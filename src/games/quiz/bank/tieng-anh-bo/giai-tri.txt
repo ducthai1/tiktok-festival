@@ -280,7 +280,7 @@ RAPPER | Nghệ sĩ trình diễn đọc lời có nhịp điệu trên nền nh
 POP | Dòng âm nhạc đại chúng thịnh hành có giai điệu bắt tai dễ thuộc | 1 | POP MUSIC
 JAZZ | Dòng âm nhạc ngẫu hứng phóng khoáng bắt nguồn từ New Orleans nước Mỹ | 1 | JAZZ MUSIC
 BLUES | Dòng nhạc da diết đượm buồn nguồn gốc từ cộng đồng người Mỹ gốc Phi | 2
-R&B | Dòng nhạc R&B nhịp điệu uyển chuyển lôi cuốn | 1 | RHYTHM AND BLUES
+R&B | Dòng nhạc Mỹ pha giữa soul và funk, nhịp điệu uyển chuyển | 1 | RHYTHM AND BLUES
 EDM | Dòng nhạc điện tử sôi động quẩy tung sàn nhảy | 1 | DANCE MUSIC
 DJ | Người chỉnh nhạc trộn nhạc khuấy động bữa tiệc | 1 | DISC JOCKEY
 REMIX | Bản phối lại mới mẻ của một bài hát cũ | 1 | NEW MIX

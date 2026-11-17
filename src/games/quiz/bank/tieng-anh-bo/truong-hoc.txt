@@ -125,7 +125,7 @@ HAIRDRESSER | Thợ cắt tóc | 3 | BARBER, HAIRSTYLIST
 BOSS | Sếp | 1
 WORK | Làm việc (đi làm) | 1
 BUSY | Bận rộn | 1
-CV | Bản lý lịch xin việc | 2 | RESUME, CURRICULUM VITAE
+CV | Viết tắt hai chữ cái của bản lý lịch xin việc | 2 | RESUME, CURRICULUM VITAE
 CAMERA | Máy ảnh | 1
 CALL | Gọi điện thoại | 1 | PHONE, RING, PHONE CALL
 WEBSITE | Trang web | 1 | WEB PAGE, SITE
@@ -164,7 +164,7 @@ WORKPLACE | Môi trường làm việc / nơi làm việc | 2
 PROFESSOR | Giáo sư đại học giảng dạy | 2
 TUTOR | Gia sư dạy kèm | 1
 LECTURER | Giảng viên đại học | 2
-CURRICULUM VITAE | Bản sơ yếu lý lịch xin việc (CV) | 3 | CV
+CURRICULUM VITAE | Tên đầy đủ bằng tiếng Latin của bản lý lịch xin việc | 3 | CV
 TRAINEE | Thực tập sinh / người được đào tạo | 2
 SUPERVISOR | Người giám sát công việc | 2
 TRANSLATOR | Biên dịch viên | 2

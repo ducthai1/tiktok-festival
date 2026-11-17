@@ -27,11 +27,11 @@ FARE | Giá vé (xe, tàu) | 2
 FEE | Lệ phí | 1
 FINANCE | Tài chính | 1
 FREIGHT | Hàng hóa vận chuyển (cước) | 3
-GRANT | Khoản tài trợ | 3
+GRANT | Khoản tài trợ cấp cho dự án nghiên cứu, không phải trả lại | 3
 HANDOUT | Tài liệu phát tay | 2
 HEADHUNTER | Người săn đầu người (tuyển dụng) | 3
 INQUIRY | Yêu cầu thông tin | 2 | ENQUIRY
-JOB OPENING | Vị trí đang tuyển | 2 | OPENING, JOB VACANCY
+JOB OPENING | Vị trí công ty đang đăng tuyển người mới | 2 | OPENING, JOB VACANCY
 LABOR | Nhân công (lao động) | 2 | LABOUR, WORKFORCE
 LETTERHEAD | Giấy có tiêu đề công ty | 3
 LIAISON | Người liên lạc (đầu mối) | 3
@@ -61,7 +61,7 @@ SURPLUS | Thặng dư | 3
 TELECONFERENCE | Hội nghị từ xa | 3 | VIDEO CONFERENCE
 TRADE FAIR | Hội chợ thương mại | 2 | TRADE SHOW
 URGENT | Khẩn cấp | 1
-OFFICE SUPPLIES | Đồ dùng văn phòng | 2
+OFFICE SUPPLIES | Đồ dùng chung của văn phòng: giấy in, mực, kẹp, băng dính | 2
 JOB DESCRIPTION | Mô tả công việc | 2 | JD
 PERFORMANCE REVIEW | Đánh giá hiệu quả làm việc | 3
 SALES REPRESENTATIVE | Nhân viên kinh doanh | 2 | SALES REP, SALESPERSON
@@ -69,24 +69,24 @@ CUSTOMER SERVICE | Dịch vụ chăm sóc khách hàng | 1
 TERMS AND CONDITIONS | Điều khoản và điều kiện | 2
 FISCAL | Liên quan tài chính (tính từ) | 3
 ROYALTY | Tiền bản quyền | 3
-STIPEND | Trợ cấp | 3
+STIPEND | Khoản tiền trả định kỳ cho thực tập sinh hay nghiên cứu sinh | 3
 TRADEMARK | Nhãn hiệu thương mại | 2
 PATENT | Bằng sáng chế | 2
 DEBENTURE | Trái phiếu không có tài sản đảm bảo | 3
 EMBARGO | Cấm vận | 3
 LESSOR | Người cho thuê | 3
-CONTRACT | Hợp đồng | 1
+CONTRACT | Văn bản ràng buộc pháp lý hai bên ký tên đóng dấu | 1
 MEETING | Cuộc họp | 1
 SALARY | Tiền lương | 1 | WAGE, WAGES
-COMPANY | Công ty | 1 | BUSINESS
+COMPANY | Tổ chức kinh doanh nói chung, to nhỏ gì cũng gọi vậy | 1 | BUSINESS
 CUSTOMER | Khách hàng | 1
 EMPLOYEE | Nhân viên (người làm công) | 1 | STAFF
 OFFICE | Văn phòng | 1
-DEADLINE | Hạn chót | 1
+DEADLINE | Thời điểm cuối cùng phải nộp xong công việc | 1
 REPORT | Bản báo cáo | 1
 PRICE | Giá bán | 1 | COST
 DISCOUNT | Giảm giá (chiết khấu) | 1 | SALE, MARKDOWN
-ORDER | Đơn đặt hàng | 1
+ORDER | Yêu cầu mua hàng khách đặt với người bán | 1
 DELIVERY | Việc giao hàng | 1 | SHIPPING
 PRODUCT | Sản phẩm | 1 | GOODS
 SERVICE | Dịch vụ | 1
@@ -120,40 +120,40 @@ RENT | Tiền thuê (nhà, văn phòng) | 1 | RENTAL
 RECEIPT | Biên lai (nhận khi trả tiền) | 2
 INVOICE | Hoá đơn (gửi khách đòi tiền) | 2
 WAREHOUSE | Nhà kho | 2 | STOREHOUSE, DEPOT
-SUPPLIER | Nhà cung cấp | 2 | PROVIDER
+SUPPLIER | Bên cung cấp nguyên liệu đầu vào cho nhà máy sản xuất | 2 | PROVIDER
 PROFIT | Lợi nhuận | 2 | EARNINGS, GAIN
 BUDGET | Ngân sách | 2
-EXPENSE | Khoản chi phí | 2 | EXPENSES, COST, COSTS
+EXPENSE | Khoản tiền chi cho một việc cụ thể, nhân viên kê để đòi lại | 2 | EXPENSES, COST, COSTS
 LOAN | Khoản vay | 2
 INVEST | Đầu tư (động từ) | 2
 INVESTOR | Nhà đầu tư | 2
 ACCOUNTANT | Kế toán viên | 2
 RECEPTIONIST | Nhân viên lễ tân | 2
-APPLICANT | Ứng viên (người nộp đơn) | 2
-RESUME | Sơ yếu lý lịch | 2
+APPLICANT | Người vừa nộp hồ sơ xin việc, chưa qua vòng nào | 2
+RESUME | Bản tóm tắt kinh nghiệm làm việc 1-2 trang, cách người Mỹ gọi | 2
 HIRE | Tuyển dụng, thuê người | 2 | RECRUIT, EMPLOY
 RESIGN | Xin nghỉ việc, từ chức | 2
 RETIRE | Nghỉ hưu | 2
 WORKSHOP | Buổi hội thảo thực hành | 2
-CONFERENCE | Hội nghị | 2
+CONFERENCE | Hội nghị nhiều diễn giả lên trình bày tham luận chuyên môn | 2
 PROPOSAL | Bản đề xuất | 2
-NEGOTIATE | Đàm phán (động từ) | 2
+NEGOTIATE | Động từ chỉ việc thương lượng để đi tới thỏa thuận | 2
 APPROVE | Phê duyệt, chấp thuận | 2 | ACCEPT, AUTHORISE
 POSTPONE | Hoãn lại (cuộc họp) | 2 | RESCHEDULE
-WARRANTY | Bảo hành | 2
+WARRANTY | Cam kết sửa chữa miễn phí trong thời hạn ghi trên phiếu mua hàng | 2
 COMPLAINT | Lời phàn nàn, khiếu nại | 2
-SURVEY | Cuộc khảo sát | 2 | POLL
+SURVEY | Cuộc điều tra thu thập ý kiến của nhiều người | 2 | POLL
 SLOGAN | Khẩu hiệu quảng cáo | 2 | TAGLINE
 COMPETITOR | Đối thủ cạnh tranh | 2
 SALES | Doanh số bán hàng | 2
 EQUIPMENT | Thiết bị, máy móc | 2 | MACHINERY
 PHOTOCOPY | Bản sao (bản photo) | 2
 BALANCE | Số dư tài khoản | 2
-PARTNERSHIP | Quan hệ hợp tác | 2 | COOPERATION
+PARTNERSHIP | Quan hệ đối tác lâu dài, cũng là loại hình công ty hợp danh | 2 | COOPERATION
 STRATEGY | Chiến lược | 2 | PLAN
 ACHIEVE | Đạt được (mục tiêu) | 2 | ATTAIN
 PERFORMANCE | Hiệu suất làm việc | 2
-EFFICIENT | Hiệu quả, năng suất (tính từ) | 2 | EFFECTIVE, PRODUCTIVE
+EFFICIENT | Tính từ chỉ làm việc nhanh gọn, ít tốn nguồn lực | 2 | EFFECTIVE, PRODUCTIVE
 REQUIREMENT | Yêu cầu (điều kiện cần có) | 2 | REQUIREMENTS
 BENEFIT | Phúc lợi (bảo hiểm, nghỉ phép) | 2 | BENEFITS, PERKS
 OVERTIME | Làm thêm giờ | 2
@@ -173,16 +173,16 @@ CAFETERIA | Căng tin | 2 | CANTEEN
 ANNOUNCEMENT | Thông báo (chính thức) | 2
 ANNUAL | Hằng năm (tính từ) | 2 | YEARLY
 QUARTER | Quý (3 tháng) | 2
-REVENUE | Doanh thu | 3 | INCOME
+REVENUE | Tổng tiền thu về từ bán hàng trước khi trừ chi phí | 3 | INCOME
 SHAREHOLDER | Cổ đông | 3 | STOCKHOLDER
 HEADQUARTERS | Trụ sở chính | 3 | HEAD OFFICE, HQ
 AGENDA | Các mục cần bàn trong cuộc họp | 3
 MINUTES | Biên bản cuộc họp | 3 | MEETING MINUTES
-SHIPMENT | Lô hàng (được gửi đi) | 3 | CARGO
+SHIPMENT | Lô hàng đang trên đường vận chuyển tới nơi nhận | 3 | CARGO
 MERCHANDISE | Hàng hoá (để bán) | 3 | GOODS, PRODUCTS
 MANUFACTURE | Sản xuất (trong nhà máy) | 3
 MAINTENANCE | Bảo trì | 3 | UPKEEP, SERVICING
-STATIONERY | Văn phòng phẩm | 3
+STATIONERY | Giấy bút phong bì dùng để viết lách | 3
 EXTENSION | Số máy lẻ (điện thoại) | 3
 VOICEMAIL | Hộp thư thoại | 3 | VOICE MAIL
 INSTALLMENT | Một kỳ trả góp | 3 | INSTALMENT
@@ -191,8 +191,8 @@ MERGER | Sự sáp nhập (hai công ty) | 3
 PRODUCTIVITY | Năng suất lao động | 3
 QUALIFICATION | Bằng cấp, trình độ | 3 | QUALIFICATIONS
 LOGISTICS | Hậu cần, kho vận | 3
-BROCHURE | Tờ gấp quảng cáo | 3 | LEAFLET, PAMPHLET
-QUOTE | Bảng báo giá | 3
+BROCHURE | Tập quảng cáo nhiều trang in đẹp giới thiệu sản phẩm | 3 | LEAFLET, PAMPHLET
+QUOTE | Mức giá người bán đưa ra khi khách hỏi, nói ngắn gọn | 3
 LEASE | Hợp đồng thuê | 3 | RENTAL AGREEMENT
 TENANT | Người thuê nhà | 3 | RENTER
 RENOVATE | Sửa sang, cải tạo (toà nhà) | 3 | REFURBISH, REMODEL
@@ -212,46 +212,46 @@ CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại | 3 | LETTERS, 
 COLLATERAL | Tài sản thế chấp (vay ngân hàng) | 3 | PLEDGE
 RECRUITMENT | Sự tuyển dụng nhân sự | 3 | RECRUITING, HIRING
 COMMISSION | Tiền hoa hồng (doanh số) | 2
-SUBSIDY | Tiền trợ cấp của chính phủ | 3
+SUBSIDY | Tiền chính phủ bù cho doanh nghiệp để giữ giá hàng thấp | 3
 DEFECT | Lỗi sản phẩm (khuyết tật) | 3 | FAULT, FLAW
 LIABILITY | Nghĩa vụ pháp lý, khoản nợ | 3
 ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân | 3 | BUSINESS OWNER
 INFLATION | Sự lạm phát | 3
-VACANCY | Vị trí công việc đang trống | 2 | JOB VACANCY, OPENING
-ALLOWANCE | Tiền phụ cấp | 2
+VACANCY | Chỗ trống chưa có người, cũng dùng cho phòng khách sạn còn trống | 2 | JOB VACANCY, OPENING
+ALLOWANCE | Tiền phụ cấp trả thêm ngoài lương như xăng xe, ăn trưa | 2
 ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3
 AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3
 COMPLIANCE | Sự tuân thủ quy định | 3
 DELIBERATION | Sự cân nhắc / thảo luận kỹ | 3
 OUTSOURCING | Thuê ngoài dịch vụ | 3
-QUOTATION | Bảng báo giá sản phẩm | 2
+QUOTATION | Văn bản báo giá chính thức ghi rõ từng hạng mục | 2
 RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3
 SPECIFICATION | Thông số kỹ thuật chi tiết | 3
 SUPERVISION | Sự giám sát công việc | 3
-VENDOR | Nhà cung cấp / người bán | 2
+VENDOR | Bên bán hàng, kể cả người bán rong ngoài phố | 2
 BENCHMARK | Tiêu chuẩn đánh giá | 3
 DEPRECIATION | Sự khấu hao tài sản | 3
-EXPENDITURE | Mức chi tiêu / chi phí | 3
-TURNOVER | Doanh số / tỷ lệ luân chuyển | 3
-ADMINISTRATION | Sự quản lý / hành chính | 2
+EXPENDITURE | Tổng mức chi tiêu của cả tổ chức trong một kỳ | 3
+TURNOVER | Doanh số cả kỳ, cũng dùng cho tỷ lệ nhân viên nghỉ việc | 3
+ADMINISTRATION | Công việc hành chính giấy tờ, cũng là bộ máy chính quyền | 2
 BENEFICIARY | Người thụ hưởng | 3
-CANDIDATE | Ứng cử viên | 2
-COLLABORATION | Sự hợp tác | 2
+CANDIDATE | Người đã lọt vào vòng phỏng vấn hoặc ra tranh cử | 2
+COLLABORATION | Việc cùng nhau làm chung một dự án cụ thể | 2
 CONFIRMATION | Sự xác nhận | 2
 CONTRACTOR | Nhà thầu | 2
-CONVENTION | Hội nghị / quy ước | 2
+CONVENTION | Đại hội lớn của một hiệp hội, cũng có nghĩa là thông lệ chung | 2
 DELEGATION | Đoàn đại biểu / sự ủy thác | 3
 DISTRIBUTION | Sự phân phối | 2
-EFFICIENCY | Hiệu quả / năng suất | 2
+EFFICIENCY | Danh từ chỉ mức làm được nhiều mà tốn ít nguồn lực | 2
 ELIGIBILITY | Đủ điều kiện / tư cách | 3
 ENTERPRISE | Doanh nghiệp / xí nghiệp | 3
 ESTABLISHMENT | Sự thành lập / cơ sở | 3
 EVALUATION | Sự đánh giá | 2
 FACILITY | Cơ sở vật chất / tiện nghi | 2
-GUARANTEE | Sự bảo hành / cam kết | 2
+GUARANTEE | Lời cam đoan chắc chắn về chất lượng, sai thì hoàn tiền | 2
 IMPLEMENTATION | Sự thi hành / triển khai | 3
 INSPECTION | Sự thanh tra / kiểm tra | 3
-MANAGEMENT | Sự quản lý / ban quản lý | 1
+MANAGEMENT | Ban lãnh đạo điều hành công ty, hoặc chính việc điều hành đó | 1
 OCCUPATION | Nghề nghiệp | 2
 OPPORTUNITY | Cơ hội | 1
 PARTICIPANT | Người tham gia | 2
@@ -267,12 +267,12 @@ FEASIBILITY | Tính khả thi có thể thực hiện được của một dự 
 DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty | 3
 TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty | 2
 SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ | 3
-CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn | 2
+CORPORATION | Tập đoàn lớn có tư cách pháp nhân riêng và nhiều cổ đông | 2
 STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá | 1
 VENTURE | Dự án liên doanh kinh doanh mạo hiểm | 2
 DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường | 2
 RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua | 2
-CONSIGNMENT | Hàng gửi bán đại lý ký gửi | 3
+CONSIGNMENT | Hàng giao cho đại lý bán hộ, bán được mới trả tiền | 3
 BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển | 3
 PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng | 2
 DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh | 2
@@ -280,9 +280,9 @@ EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá | 
 REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng | 3
 BARGAIN | Món hàng mua được giá hời rất rẻ | 2
 BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc | 2
-FLYER | Tờ rơi quảng cáo phát tận tay người đi đường | 2 | LEAFLET
-QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra | 2
-AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác | 2
+FLYER | Tờ giấy mỏng một trang phát tận tay người đi đường | 2 | LEAFLET
+QUESTIONNAIRE | Tờ liệt kê các câu hỏi phát cho người được hỏi tự điền | 2
+AGREEMENT | Sự đồng thuận giữa hai bên, không nhất thiết thành văn bản | 2
 CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật | 2
 STIPULATION | Quy định điều kiện bắt buộc phải tuân theo | 3
 BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng | 3
@@ -307,10 +307,10 @@ BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới | 
 PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày | 2
 REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên | 2
 INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn | 2
-DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ | 1
+DUE DATE | Ngày đến hạn phải trả tiền ghi trên hóa đơn | 1
 OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày | 2
 CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp | 2
-PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng | 2
+PURCHASE ORDER | Chứng từ mua hàng chính thức có mã số do bộ phận mua phát hành | 2
 DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao | 2
 STOCK KEEPING UNIT | Mã quản lý hàng tồn kho ký hiệu định danh từng sản phẩm | 3 | SKU
 BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho | 2

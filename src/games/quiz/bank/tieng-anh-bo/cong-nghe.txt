@@ -312,7 +312,7 @@ PROCESS | Tiến trình chương trình đang chạy trong bộ nhớ máy tính
 DEADLOCK | Tình trạng bế tắc nghẽn mạng khi các tiến trình cùng chờ nhau nhả tài nguyên | 3
 PIPELINE | Quy trình đường ống tự động hóa tích hợp và phát hành mã nguồn | 2
 INTEGRATION | Sự tích hợp kết hợp nhiều hệ thống phần mềm lại với nhau | 2
-BOT | Robot phần mềm tự động hóa các tác vụ lặp đi lặp lại | 1 | CON BOT
+BOT | Phần mềm tự động chạy tác vụ lặp đi lặp lại, hay thấy trong khung chat | 1 | CON BOT
 CRAWLER | Bọ cào dữ liệu tự động thu thập thông tin từ các trang web | 3
 BIG DATA | Tập hợp khối lượng dữ liệu khổng lồ của thời đại số | 1
 DEEP LEARNING | Học sâu - phân nhánh cao cấp của trí tuệ nhân tạo | 2

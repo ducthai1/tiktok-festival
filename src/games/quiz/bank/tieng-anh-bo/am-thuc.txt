@@ -374,8 +374,8 @@ CURRY | Món cà ri cay nồng nấu cùng khoai thịt | 1
 BIRYANI | Món cơm trộn thơm lừng tẩm ướp nhiều loại thảo mộc và thịt cừu của Ấn Độ | 2
 TANDOORI | Món gà ướp gia vị đỏ nướng trong lò đất hình chum của Ấn Độ | 2
 SAMOSA | Bánh gối chiên hình tam giác vỏ giòn rụm nhân khoai tây và đậu của Ấn Độ | 2
-PHO | Phở bò nước dùng trong thơm mùi quế hồi Việt Nam | 1
-BANH MI | Bánh mì kẹp pate thịt chả nổi tiếng Việt Nam | 1
+PHO | Món nước dùng xương bò thơm quế hồi, ăn với bánh sợi dẹt, đặc sản Hà Nội | 1
+BANH MI | Ổ bánh kẹp pate thịt chả rau dưa, đồ ăn sáng vỉa hè Việt Nam | 1
 POUTINE | Món khoai tây chiên phủ phô mai cục và rưới đẫm xốt thịt nâu của Canada | 2
 GOULASH | Món canh thịt bò hầm đậm đà với bột ớt chuông paprika của Hungary | 3
 SCHNITZEL | Món thịt đập mỏng lăn bột chiên vàng giòn rụm của nước Áo | 2
