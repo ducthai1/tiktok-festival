@@ -126,6 +126,15 @@ button.chip .gift-img { width: 22px; height: 22px; object-fit: contain; vertical
 .grant-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 5px 10px; border-radius: 10px; background: rgba(255, 255, 255, 0.05); }
 .grant-list li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
+.donation-log { list-style: none; padding-left: 0; max-height: 320px; }
+.donation-log li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 6px 10px; border-radius: 8px; background: rgba(255, 224, 102, 0.06); border: 1px solid rgba(255, 224, 102, 0.15); font-size: 13px; }
+.donation-log li.sim { border-left: 3px solid var(--warn); }
+.donation-log .item-main { display: flex; align-items: center; gap: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.donation-log .time { color: var(--muted); font-size: 12px; font-family: monospace; flex: none; }
+.donation-log .donor { color: #fff; font-weight: 700; }
+.donation-log .gift-info { color: #ffe066; display: inline-flex; align-items: center; gap: 4px; }
+.donation-log .gift-img { width: 20px; height: 20px; object-fit: contain; vertical-align: middle; border-radius: 4px; flex: none; }
+.donation-log .dia-val { color: #7dff8a; font-weight: 700; flex: none; font-size: 13px; font-variant-numeric: tabular-nums; }
 /* ── tab 🎁 Quà: luật quà ── */
 .rules { display: grid; gap: 8px; }
 .page-sep { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; margin-top: 6px; }

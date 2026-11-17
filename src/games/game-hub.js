@@ -139,6 +139,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
         state: active().snapshot(now),
         top: board.top(),
         totals: board.totals(),
+        donations: board.donations(300),
         leaderboard: board.exportState(),
         donors: donors.exportState(),
         viewers: { count: welcome.viewerCount(), textAbove: welcome.threshold(), waiting: welcome.backlog(), pending: welcome.pendingIds() },

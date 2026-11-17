@@ -174,6 +174,82 @@ function formatDiamondsUsd(diamonds) {
   return `$${usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: decimals })}`;
 }
 
+let donationListKey = '';
+
+function renderDonationList(donations = []) {
+  if (!Array.isArray(donations)) donations = [];
+  if ($('donations-count')) {
+    const totalCount = donations.length;
+    const totalDia = donations.reduce((sum, d) => sum + (d.gift?.diamonds || 0), 0);
+    $('donations-count').textContent = `${totalCount} lần (${totalDia.toLocaleString('vi-VN')}💎)`;
+  }
+
+  const key = donations.map((d) => `${d.id || d.at}:${d.user?.id}:${d.gift?.diamonds}:${d.gift?.count}`).slice(0, 50).join('|');
+  if (key === donationListKey) return;
+  donationListKey = key;
+
+  const nodes = donations.map((item) => {
+    const li = document.createElement('li');
+    if (item.simulated) li.className = 'sim';
+
+    const timeStr = item.at ? new Date(item.at).toLocaleTimeString('vi-VN', { hour12: false }) : '';
+
+    const mainDiv = document.createElement('div');
+    mainDiv.className = 'item-main';
+
+    const timeSpan = document.createElement('span');
+    timeSpan.className = 'time';
+    timeSpan.textContent = timeStr;
+
+    const userB = document.createElement('b');
+    userB.className = 'donor';
+    userB.textContent = item.user?.nickname || 'Người xem';
+
+    const giftSpan = document.createElement('span');
+    giftSpan.className = 'gift-info';
+
+    if (item.gift?.pictureUrl) {
+      const img = document.createElement('img');
+      img.src = item.gift.pictureUrl;
+      img.className = 'gift-img';
+      img.alt = item.gift.name || 'Quà';
+      giftSpan.append(img, ' ');
+    } else {
+      giftSpan.append('🎁 ');
+    }
+
+    const gName = item.gift?.name || 'Quà';
+    const gCount = (item.gift?.count || 1) > 1 ? ` ×${item.gift.count}` : '';
+    giftSpan.append(document.createTextNode(`${gName}${gCount}`));
+
+    mainDiv.append(timeSpan, ' · ', userB, ' đã tặng ', giftSpan);
+    if (item.simulated) {
+      const simTag = document.createElement('span');
+      simTag.className = 'muted small';
+      simTag.textContent = ' [THỬ]';
+      mainDiv.append(simTag);
+    }
+
+    const diaVal = document.createElement('div');
+    diaVal.className = 'dia-val';
+    const d = item.gift?.diamonds || 0;
+    diaVal.textContent = `${d.toLocaleString('vi-VN')}💎 (${formatDiamondsUsd(d)})`;
+
+    li.append(mainDiv, diaVal);
+    return li;
+  });
+
+  if (nodes.length === 0) {
+    const emptyLi = document.createElement('li');
+    emptyLi.className = 'muted';
+    emptyLi.style.justifyContent = 'center';
+    emptyLi.textContent = 'Chưa có lượt donate nào trong phiên';
+    if ($('donations-list')) $('donations-list').replaceChildren(emptyLi);
+  } else {
+    if ($('donations-list')) $('donations-list').replaceChildren(...nodes);
+  }
+}
+
 function renderState(m) {
   renderGrantList(m.state);
   
@@ -226,6 +302,8 @@ function renderState(m) {
     return li;
   }));
   if (!amb.length) $('ambassadors').replaceChildren(Object.assign(document.createElement('li'), { textContent: 'Chưa ai share trong 2 tiếng qua' }));
+
+  renderDonationList(m.donations);
 
   $('viewers-count').textContent = (v.count || 0).toLocaleString('vi-VN');
   $('viewers-status').textContent = `Đang chờ chào: ${v.waiting || 0} · `

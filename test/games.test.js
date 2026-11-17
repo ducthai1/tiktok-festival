@@ -6,6 +6,7 @@ import { createTempleGame, offeringForGift, TEMPLE_SLOTS } from '../src/games/te
 import { giftTier, tierRepresentatives, SAMPLE_GIFTS } from '../public/shared/gift-tiers.js';
 import { createGameHub } from '../src/games/game-hub.js';
 import { FORTUNES } from '../src/games/temple-fortunes.js';
+import { createSessionLeaderboard } from '../src/games/session-leaderboard.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
 const chat = (n, comment) => ({ type: 'chat', user: user(n), comment });
@@ -185,4 +186,24 @@ test('quà đại diện mỗi bậc: Hoa hồng cho bậc 1, các bậc khác l
   assert.ok(reps[5].gifts.every((g) => g.coins >= 20000));
   // ảnh quà mẫu là ảnh chính thức trên máy chủ ảnh TikTok (được phép trong CSP img-src)
   assert.ok(SAMPLE_GIFTS.every((g) => /^https:\/\/p16-webcast\.tiktokcdn\.com\//.test(g.image)));
+});
+test('session leaderboard records donations list, limits size and exports/restores correctly', () => {
+  const board = createSessionLeaderboard(5000, 3);
+  board.record(gift(1, 10, 1), 1000);
+  board.record(gift(2, 5, 2), 2000);
+  board.record(gift(3, 1, 10), 3000);
+  board.record(gift(4, 50, 1), 4000);
+
+  const list = board.donations();
+  assert.equal(list.length, 3);
+  assert.equal(list[0].user.id, 'u4');
+  assert.equal(list[0].gift.diamonds, 50);
+
+  const exported = board.exportState();
+  assert.equal(exported.donations.length, 3);
+
+  const newBoard = createSessionLeaderboard();
+  newBoard.restore(exported);
+  assert.equal(newBoard.donations().length, 3);
+  assert.equal(newBoard.donations()[0].user.id, 'u4');
 });
