@@ -169,7 +169,7 @@ function renderGrantList(state) {
 
 function formatDiamondsUsd(diamonds) {
   const d = Number(diamonds) || 0;
-  const usd = d * 0.005;
+  const usd = d * 0.004;
   const decimals = (usd * 100) % 1 !== 0 ? 3 : 2;
   return `$${usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: decimals })}`;
 }
