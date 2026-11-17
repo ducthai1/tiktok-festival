@@ -1,50 +1,50 @@
 # Tiếng Anh · Nghệ thuật, giải trí
-FRESCO | Tranh vẽ trên tường vữa ướt tiếng Anh là gì? | 3
-ABSTRACT | Trừu tượng (phong cách hội họa) tiếng Anh là gì? | 2
-MURAL | Bích họa (tranh tường) tiếng Anh là gì? | 2
-COMPOSITION | Bố cục (tác phẩm) tiếng Anh là gì? | 2
-IMPROVISE | Ứng tác, ngẫu hứng tiếng Anh là gì? | 2
-INSTRUMENTAL | Bản nhạc không lời tiếng Anh là gì? | 2
-MONOLOGUE | Độc thoại (trên sân khấu) tiếng Anh là gì? | 2
-REHEARSE | Tập dượt (trước buổi diễn) tiếng Anh là gì? | 2 | REHEARSAL
-PLAYWRIGHT | Nhà viết kịch tiếng Anh là gì? | 3
-NARRATIVE | Lối kể chuyện (câu chuyện) tiếng Anh là gì? | 2
-FICTION | Truyện hư cấu tiếng Anh là gì? | 1
-ANTHOLOGY | Tuyển tập (văn, thơ) tiếng Anh là gì? | 3
-CARICATURE | Tranh biếm họa tiếng Anh là gì? | 3
-TYPOGRAPHY | Nghệ thuật sắp chữ (thiết kế chữ) tiếng Anh là gì? | 3
-PAINTING | Bức tranh vẽ tiếng Anh là gì? | 1
-BRUSHSTROKE | Nét cọ tiếng Anh là gì? | 2
-PIGMENT | Chất màu (bột màu) tiếng Anh là gì? | 2
-SYMMETRY | Sự đối xứng tiếng Anh là gì? | 2
-SILHOUETTE | Hình bóng (bóng đen trên nền sáng) tiếng Anh là gì? | 2
-MONOCHROME | Đơn sắc (một màu) tiếng Anh là gì? | 2
-VIVID | Sống động, rực rỡ tiếng Anh là gì? | 2
-THEATRICAL | Mang tính sân khấu (kịch tính) tiếng Anh là gì? | 2
-RECITAL | Buổi độc tấu (biểu diễn đơn) tiếng Anh là gì? | 2
-OVERTURE | Khúc dạo đầu (nhạc mở màn) tiếng Anh là gì? | 3
-VIRTUOSO | Nghệ sĩ bậc thầy (điêu luyện) tiếng Anh là gì? | 3
-REPERTOIRE | Các tiết mục sở trường tiếng Anh là gì? | 3
-ACOUSTIC GUITAR | Cây đàn sáu dây thùng gỗ mộc không dùng điện tiếng Anh là gì? | 1
-PERCUSSION | Bộ gõ (nhạc cụ) tiếng Anh là gì? | 2
-BRASS | Bộ kèn đồng tiếng Anh là gì? | 2
-WOODWIND | Bộ kèn gỗ (nhạc cụ hơi bằng gỗ) tiếng Anh là gì? | 2
-STRINGS | Bộ dây (nhạc cụ dây) tiếng Anh là gì? | 2
-TROMBONE | Kèn trôm-bôn (kèn có cần trượt) tiếng Anh là gì? | 3
-HARPSICHORD | Đàn clavecin cổ (giống piano) tiếng Anh là gì? | 3
-SKETCH | Bản vẽ phác thảo chì nhanh tiếng Anh là gì? | 1 | PHÁC THẢO, BẢN PHÁC THẢO
-CANVAS | Khung vải toan dùng để vẽ tranh sơn dầu tiếng Anh là gì? | 2 | VẢI VẼ TRANH, TOAN VẼ
-EASEL | Giá đỡ ba chân để đặt tranh vẽ tiếng Anh là gì? | 3 | GIÁ VẼ
-PALETTE | Khay pha màu vẽ của họa sĩ tiếng Anh là gì? | 2 | BẢNG PHA MÀU, KHAY PHA MÀU
-WATERCOLOR | Màu nước dùng trong hội họa tiếng Anh là gì? | 2 | MÀU NƯỚC
-OIL PAINTING | Tranh sơn dầu nghệ thuật tiếng Anh là gì? | 2 | TRANH SƠN DẦU
-POTTERY | Nghệ thuật làm đồ gốm sứ thủ công tiếng Anh là gì? | 2 | ĐỒ GỐM, GỐM SỨ
-CERAMICS | Đồ gốm nung men sứ mỹ nghệ tiếng Anh là gì? | 2 | GỐM SỨ
-ORIGAMI | Nghệ thuật gấp giấy truyền thống của Nhật Bản tiếng Anh là gì? | 1 | GẤP GIẤY
-MOSAIC | Tranh ghép từ nhiều mảnh gốm đá nhỏ tiếng Anh là gì? | 3 | TRANH GHÉP MẢNH
-GRAFFITI | Nghệ thuật vẽ tranh đường phố bằng bình xịt sơn tiếng Anh là gì? | 1 | TRANH ĐƯỜNG PHỐ
-HARMONY | Sự hòa âm nhịp nhàng trong bản nhạc tiếng Anh là gì? | 2 | HÒA ÂM
-ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện tiếng Anh là gì? | 2 | NHẠC MỘC, ACOUSTIC GUITAR
-INSTRUMENT | Nhạc cụ âm nhạc nói chung tiếng Anh là gì? | 1 | NHẠC CỤ
-DRUM | Cái trống gõ tạo nhịp điệu rộn ràng tiếng Anh là gì? | 1 | CÁI TRỐNG, TRỐNG
-CYMBAL | Chiếc chũm chọe bằng đồng trong bộ trống tiếng Anh là gì? | 2 | CHŨM CHỌE
+FRESCO | Tranh vẽ trên tường vữa ướt | 3
+ABSTRACT | Trừu tượng (phong cách hội họa) | 2
+MURAL | Bích họa (tranh tường) | 2
+COMPOSITION | Bố cục (tác phẩm) | 2
+IMPROVISE | Ứng tác, ngẫu hứng | 2
+INSTRUMENTAL | Bản nhạc không lời | 2
+MONOLOGUE | Độc thoại (trên sân khấu) | 2 | MONOLOG
+REHEARSE | Tập dượt (trước buổi diễn) | 2 | REHEARSAL
+PLAYWRIGHT | Nhà viết kịch | 3
+NARRATIVE | Lối kể chuyện (câu chuyện) | 2
+FICTION | Truyện hư cấu | 1
+ANTHOLOGY | Tuyển tập (văn, thơ) | 3
+CARICATURE | Tranh biếm họa | 3
+TYPOGRAPHY | Nghệ thuật sắp chữ (thiết kế chữ) | 3
+PAINTING | Bức tranh vẽ | 1
+BRUSHSTROKE | Nét cọ | 2
+PIGMENT | Chất màu (bột màu) | 2
+SYMMETRY | Sự đối xứng | 2
+SILHOUETTE | Hình bóng (bóng đen trên nền sáng) | 2
+MONOCHROME | Đơn sắc (một màu) | 2
+VIVID | Sống động, rực rỡ | 2
+THEATRICAL | Mang tính sân khấu (kịch tính) | 2
+RECITAL | Buổi độc tấu (biểu diễn đơn) | 2
+OVERTURE | Khúc dạo đầu (nhạc mở màn) | 3
+VIRTUOSO | Nghệ sĩ bậc thầy (điêu luyện) | 3
+REPERTOIRE | Các tiết mục sở trường | 3
+ACOUSTIC GUITAR | Cây đàn sáu dây thùng gỗ mộc không dùng điện | 1
+PERCUSSION | Bộ gõ (nhạc cụ) | 2
+BRASS | Bộ kèn đồng | 2
+WOODWIND | Bộ kèn gỗ (nhạc cụ hơi bằng gỗ) | 2
+STRINGS | Bộ dây (nhạc cụ dây) | 2
+TROMBONE | Kèn trôm-bôn (kèn có cần trượt) | 3
+HARPSICHORD | Đàn clavecin cổ (giống piano) | 3
+SKETCH | Bản vẽ phác thảo chì nhanh | 1 | PHÁC THẢO, BẢN PHÁC THẢO
+CANVAS | Khung vải toan dùng để vẽ tranh sơn dầu | 2 | VẢI VẼ TRANH, TOAN VẼ
+EASEL | Giá đỡ ba chân để đặt tranh vẽ | 3 | GIÁ VẼ
+PALETTE | Khay pha màu vẽ của họa sĩ | 2 | BẢNG PHA MÀU, KHAY PHA MÀU
+WATERCOLOR | Màu nước dùng trong hội họa | 2 | MÀU NƯỚC, WATERCOLOUR
+OIL PAINTING | Tranh sơn dầu nghệ thuật | 2 | TRANH SƠN DẦU
+POTTERY | Nghệ thuật làm đồ gốm sứ thủ công | 2 | ĐỒ GỐM, GỐM SỨ
+CERAMICS | Đồ gốm nung men sứ mỹ nghệ | 2 | GỐM SỨ
+ORIGAMI | Nghệ thuật gấp giấy truyền thống của Nhật Bản | 1 | GẤP GIẤY
+MOSAIC | Tranh ghép từ nhiều mảnh gốm đá nhỏ | 3 | TRANH GHÉP MẢNH
+GRAFFITI | Nghệ thuật vẽ tranh đường phố bằng bình xịt sơn | 1 | TRANH ĐƯỜNG PHỐ
+HARMONY | Sự hòa âm nhịp nhàng trong bản nhạc | 2 | HÒA ÂM
+ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện | 2 | NHẠC MỘC, ACOUSTIC GUITAR
+INSTRUMENT | Nhạc cụ âm nhạc nói chung | 1 | NHẠC CỤ
+DRUM | Cái trống gõ tạo nhịp điệu rộn ràng | 1 | CÁI TRỐNG, TRỐNG
+CYMBAL | Chiếc chũm chọe bằng đồng trong bộ trống | 2 | CHŨM CHỌE

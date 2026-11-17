@@ -1,155 +1,155 @@
 # Tiếng Anh · Trường học & Công việc
-BLACKBOARD | Bảng đen tiếng Anh là gì? | 1 | CHALKBOARD
-PROTRACTOR | Thước đo góc tiếng Anh là gì? | 2
-SET SQUARE | Ê-ke tiếng Anh là gì? | 3
-GLOBE | Quả địa cầu tiếng Anh là gì? | 1
-ATLAS | Tập bản đồ tiếng Anh là gì? | 2
-TEXTBOOK | Sách giáo khoa tiếng Anh là gì? | 1
-WORKBOOK | Sách bài tập tiếng Anh là gì? | 1
-REPORT CARD | Phiếu điểm (sổ liên lạc) tiếng Anh là gì? | 2 | SCHOOL REPORT
-GRADE | Điểm số tiếng Anh là gì? | 1 | MARK
-QUIZ | Bài kiểm tra ngắn tiếng Anh là gì? | 1
-MIDTERM | Thi giữa kỳ tiếng Anh là gì? | 2 | MIDTERM EXAM
-FINAL EXAM | Thi cuối kỳ tiếng Anh là gì? | 1 | FINALS
-ENTRANCE EXAM | Kỳ thi tuyển sinh tiếng Anh là gì? | 2
-CHEAT | Gian lận (quay cóp) tiếng Anh là gì? | 1
-PLAGIARISM | Đạo văn tiếng Anh là gì? | 3
-DETENTION | Phạt ở lại trường tiếng Anh là gì? | 3
-FIELD TRIP | Chuyến đi thực tế tiếng Anh là gì? | 1
-EXTRACURRICULAR | Hoạt động ngoại khóa tiếng Anh là gì? | 3
-SCHOOL BUS | Xe buýt trường học tiếng Anh là gì? | 1
-LOCKER | Tủ đồ cá nhân tiếng Anh là gì? | 2
-ROLL CALL | Điểm danh tiếng Anh là gì? | 2
-HOMEROOM TEACHER | Giáo viên chủ nhiệm tiếng Anh là gì? | 2 | FORM TEACHER, HOMEROOM
-CLASS MONITOR | Lớp trưởng tiếng Anh là gì? | 1 | CLASS PRESIDENT
-DESKMATE | Bạn cùng bàn tiếng Anh là gì? | 2 | DESK MATE
-PEN PAL | Bạn qua thư tiếng Anh là gì? | 2 | PENPAL
-EXTRA CLASS | Lớp học thêm tiếng Anh là gì? | 1 | EXTRA CLASSES
-DROPOUT | Người bỏ học tiếng Anh là gì? | 3 | DROP OUT
-PRIMARY SCHOOL | Trường tiểu học tiếng Anh là gì? | 1 | ELEMENTARY SCHOOL
-SECONDARY SCHOOL | Trường trung học cơ sở tiếng Anh là gì? | 2 | MIDDLE SCHOOL, JUNIOR HIGH
-HIGH SCHOOL | Trường trung học phổ thông tiếng Anh là gì? | 1
-BOARDING SCHOOL | Trường nội trú tiếng Anh là gì? | 2
-PUBLIC SCHOOL | Trường công lập tiếng Anh là gì? | 2 | STATE SCHOOL
-PRIVATE SCHOOL | Trường tư thục tiếng Anh là gì? | 2
-GPA | Điểm trung bình tích lũy tiếng Anh là gì? | 2 | GRADE POINT AVERAGE
-LECTURE HALL | Giảng đường tiếng Anh là gì? | 2
-STUDY ABROAD | Du học tiếng Anh là gì? | 1
-EXCHANGE STUDENT | Học sinh trao đổi tiếng Anh là gì? | 2
-FRESHMAN | Sinh viên năm nhất tiếng Anh là gì? | 2 | FIRST-YEAR STUDENT
-GROUP PROJECT | Bài tập nhóm tiếng Anh là gì? | 1 | GROUP WORK
-OUTLINE | Dàn ý tiếng Anh là gì? | 2
-PARAGRAPH | Đoạn văn tiếng Anh là gì? | 1
-SENTENCE | Câu văn tiếng Anh là gì? | 1
-GRAMMAR | Ngữ pháp tiếng Anh là gì? | 1
-VOCABULARY | Từ vựng tiếng Anh là gì? | 1
-PRONUNCIATION | Phát âm tiếng Anh là gì? | 2
-SPELLING | Chính tả tiếng Anh là gì? | 1
-REVIEW | Ôn tập tiếng Anh là gì? | 1 | REVISION
-CRAM | Học nhồi trước kỳ thi tiếng Anh là gì? | 3
-BOOKWORM | Mọt sách tiếng Anh là gì? | 2
-JANITOR | Lao công (trong trường) tiếng Anh là gì? | 3 | CUSTODIAN
-COUNSELOR | Chuyên viên tư vấn học đường tiếng Anh là gì? | 3 | COUNSELLOR
-LIBRARY CARD | Thẻ thư viện tiếng Anh là gì? | 1
-STUDENT ID | Thẻ sinh viên tiếng Anh là gì? | 1 | STUDENT CARD
-SCHOOLYARD | Sân trường tiếng Anh là gì? | 1
-JOB SEEKER | Người tìm việc tiếng Anh là gì? | 2 | JOB HUNTER
-REMOTE WORK | Làm việc từ xa tiếng Anh là gì? | 2 | WORK FROM HOME, WFH
-SIDE HUSTLE | Nghề tay trái (việc làm thêm) tiếng Anh là gì? | 3 | SIDE JOB
-PROBATION PERIOD | Thời gian thử việc tiếng Anh là gì? | 2
-DAY OFF | Ngày nghỉ tiếng Anh là gì? | 1
-PAYDAY | Ngày lĩnh lương tiếng Anh là gì? | 1 | PAY DAY
-RAISE | Sự tăng lương tiếng Anh là gì? | 2 | PAY RISE, SALARY INCREASE
-BREAK ROOM | Phòng nghỉ giải lao tiếng Anh là gì? | 2
-NAME CARD | Danh thiếp tiếng Anh là gì? | 1 | BUSINESS CARD
-TEAM LEADER | Trưởng nhóm tiếng Anh là gì? | 1 | TEAM LEAD
-CAREER PATH | Lộ trình sự nghiệp tiếng Anh là gì? | 2
-SOFT SKILLS | Kỹ năng mềm tiếng Anh là gì? | 2 | SOFT SKILL
-MATH | Môn toán tiếng Anh là gì? | 1 | MATHS, MATHEMATICS
-ENGLISH | Môn tiếng Anh, gọi bằng tiếng Anh là gì? | 1
-HISTORY | Môn lịch sử tiếng Anh là gì? | 1
-SCIENCE | Môn khoa học tiếng Anh là gì? | 1
-ART | Môn mỹ thuật tiếng Anh là gì? | 1 | ARTS, FINE ART, FINE ARTS
-GEOGRAPHY | Môn địa lý tiếng Anh là gì? | 2
-PHYSICS | Môn vật lý tiếng Anh là gì? | 2
-BIOLOGY | Môn sinh học tiếng Anh là gì? | 2
-LITERATURE | Môn văn học tiếng Anh là gì? | 2
-PE | Môn thể dục tiếng Anh là gì? | 2 | PHYSICAL EDUCATION, GYM
-SUBJECT | Môn học (toán, văn, sử…) tiếng Anh là gì? | 2 | SUBJECTS
-INFORMATICS | Môn tin học tiếng Anh là gì? | 3 | IT, ICT, COMPUTER SCIENCE, COMPUTING
-HOMEWORK | Bài tập về nhà tiếng Anh là gì? | 1
-LESSON | Bài học, tiết học tiếng Anh là gì? | 1 | CLASS, PERIOD
-TEST | Bài kiểm tra (15 phút, 1 tiết) tiếng Anh là gì? | 1 | QUIZ
-QUESTION | Câu hỏi tiếng Anh là gì? | 1
-ANSWER | Câu trả lời tiếng Anh là gì? | 1 | REPLY
-STUDY | Học bài tiếng Anh là gì? | 1 | LEARN
-TEACH | Dạy học (dạy bài cho học sinh) tiếng Anh là gì? | 1
-PAGE | Trang sách tiếng Anh là gì? | 1 | PAGES
-LATE | Đến muộn, đi trễ giờ tiếng Anh là gì? | 1
-EXAM | Kỳ thi (thi học kỳ, thi đại học) tiếng Anh là gì? | 2 | EXAMINATION, TEST
-CLASSMATE | Bạn cùng lớp tiếng Anh là gì? | 2 | CLASSMATES
-DICTIONARY | Quyển từ điển tiếng Anh là gì? | 2
-UNIFORM | Bộ đồng phục tiếng Anh là gì? | 2
-BREAK | Giờ ra chơi tiếng Anh là gì? | 2 | BREAK TIME, RECESS, PLAYTIME
-CHALK | Viên phấn viết bảng tiếng Anh là gì? | 2
-FAIL | Thi trượt, thi rớt tiếng Anh là gì? | 2 | FAILED
-MISTAKE | Lỗi sai (làm bài bị sai) tiếng Anh là gì? | 2 | MISTAKES, ERROR
-PRINCIPAL | Thầy, cô hiệu trưởng tiếng Anh là gì? | 3 | HEADMASTER, HEADMISTRESS, HEAD TEACHER
-SEMESTER | Học kỳ tiếng Anh là gì? | 3 | TERM
-KINDERGARTEN | Trường mẫu giáo tiếng Anh là gì? | 3 | PRESCHOOL, NURSERY, NURSERY SCHOOL
-TIMETABLE | Thời khoá biểu tiếng Anh là gì? | 3 | SCHEDULE, CLASS SCHEDULE
-GRADUATE | Tốt nghiệp (ra trường) tiếng Anh là gì? | 3 | GRADUATION
-ESSAY | Bài luận, bài văn tiếng Anh là gì? | 3 | COMPOSITION
-FARMER | Nông dân tiếng Anh là gì? | 1
-POLICE | Chú cảnh sát tiếng Anh là gì? | 1 | POLICEMAN, POLICEWOMAN, POLICE OFFICER, OFFICER, COP
-DRIVER | Tài xế, bác tài tiếng Anh là gì? | 1
-SINGER | Ca sĩ tiếng Anh là gì? | 1
-WORKER | Công nhân tiếng Anh là gì? | 1 | FACTORY WORKER
-DANCER | Vũ công (người nhảy múa) tiếng Anh là gì? | 1
-JOB | Nghề nghiệp, công việc tiếng Anh là gì? | 1 | WORK, CAREER, OCCUPATION, PROFESSION
-CHEF | Đầu bếp tiếng Anh là gì? | 2 | COOK
-ACTOR | Diễn viên tiếng Anh là gì? | 2 | ACTRESS
-LAWYER | Luật sư tiếng Anh là gì? | 2 | ATTORNEY
-FIREFIGHTER | Lính cứu hoả tiếng Anh là gì? | 2 | FIREMAN
-ARTIST | Hoạ sĩ tiếng Anh là gì? | 2 | PAINTER
-WRITER | Nhà văn tiếng Anh là gì? | 2 | AUTHOR, NOVELIST
-WAITER | Người phục vụ bàn (bồi bàn) tiếng Anh là gì? | 2 | WAITRESS, SERVER
-POSTMAN | Người đưa thư tiếng Anh là gì? | 2 | MAILMAN, POSTWOMAN, MAIL CARRIER, POSTAL WORKER
-SCIENTIST | Nhà khoa học tiếng Anh là gì? | 2
-JOURNALIST | Nhà báo tiếng Anh là gì? | 3 | REPORTER
-ARCHITECT | Kiến trúc sư tiếng Anh là gì? | 3
-MECHANIC | Thợ sửa xe (thợ máy) tiếng Anh là gì? | 3
-CASHIER | Nhân viên thu ngân tiếng Anh là gì? | 3
-PHOTOGRAPHER | Thợ chụp ảnh, nhiếp ảnh gia tiếng Anh là gì? | 3
-HAIRDRESSER | Thợ cắt tóc tiếng Anh là gì? | 3 | BARBER, HAIRSTYLIST
-BOSS | Sếp tiếng Anh là gì? | 1
-WORK | Làm việc (đi làm) tiếng Anh là gì? | 1
-BUSY | Bận rộn tiếng Anh là gì? | 1
-CV | Bản lý lịch xin việc tiếng Anh là gì? | 2 | RESUME, CURRICULUM VITAE
-CAMERA | Máy ảnh tiếng Anh là gì? | 1
-CALL | Gọi điện thoại tiếng Anh là gì? | 1 | PHONE, RING, PHONE CALL
-WEBSITE | Trang web tiếng Anh là gì? | 1 | WEB PAGE, SITE
-EMAIL | Thư điện tử tiếng Anh là gì? | 1 | MAIL
-FOLLOW | Theo dõi (một tài khoản) tiếng Anh là gì? | 2
-MONEY | Tiền tiếng Anh là gì? | 1 | CASH
-CHEAP | Rẻ tiếng Anh là gì? | 1 | INEXPENSIVE
-BANK | Ngân hàng tiếng Anh là gì? | 1
-BUY | Mua tiếng Anh là gì? | 1 | PURCHASE
-SELL | Bán tiếng Anh là gì? | 1
-PAY | Trả tiền, thanh toán tiếng Anh là gì? | 1 | PAYMENT
-SHOP | Cửa hàng tiếng Anh là gì? | 1 | STORE
-RICH | Giàu tiếng Anh là gì? | 1 | WEALTHY
-POOR | Nghèo tiếng Anh là gì? | 1
-FREE | Miễn phí (không mất tiền) tiếng Anh là gì? | 1
-SHOPPING | Đi mua sắm tiếng Anh là gì? | 1 | GO SHOPPING
-SUPERMARKET | Siêu thị tiếng Anh là gì? | 1
-EXPENSIVE | Đắt (giá cao) tiếng Anh là gì? | 2 | COSTLY, PRICEY
-BILL | Hoá đơn tiếng Anh là gì? | 2 | INVOICE, CHECK, RECEIPT
-BORROW | Mượn, vay (tiền) tiếng Anh là gì? | 2
-SPEND | Tiêu tiền (xài tiền) tiếng Anh là gì? | 2
-CHANGE | Tiền thối, tiền thừa trả lại tiếng Anh là gì? | 3
-DEBT | Món nợ tiếng Anh là gì? | 3 | DEBTS
-SAVINGS | Tiền tiết kiệm tiếng Anh là gì? | 3 | SAVING
+BLACKBOARD | Bảng đen | 1 | CHALKBOARD
+PROTRACTOR | Thước đo góc | 2
+SET SQUARE | Ê-ke | 3
+GLOBE | Quả địa cầu | 1
+ATLAS | Tập bản đồ | 2
+TEXTBOOK | Sách giáo khoa | 1
+WORKBOOK | Sách bài tập | 1
+REPORT CARD | Phiếu điểm (sổ liên lạc) | 2 | SCHOOL REPORT
+GRADE | Điểm số | 1 | MARK
+QUIZ | Bài kiểm tra ngắn | 1
+MIDTERM | Thi giữa kỳ | 2 | MIDTERM EXAM
+FINAL EXAM | Thi cuối kỳ | 1 | FINALS
+ENTRANCE EXAM | Kỳ thi tuyển sinh | 2
+CHEAT | Gian lận (quay cóp) | 1
+PLAGIARISM | Đạo văn | 3
+DETENTION | Phạt ở lại trường | 3
+FIELD TRIP | Chuyến đi thực tế | 1
+EXTRACURRICULAR | Hoạt động ngoại khóa | 3
+SCHOOL BUS | Xe buýt trường học | 1
+LOCKER | Tủ đồ cá nhân | 2
+ROLL CALL | Điểm danh | 2
+HOMEROOM TEACHER | Giáo viên chủ nhiệm | 2 | FORM TEACHER, HOMEROOM
+CLASS MONITOR | Lớp trưởng | 1 | CLASS PRESIDENT
+DESKMATE | Bạn cùng bàn | 2 | DESK MATE
+PEN PAL | Bạn qua thư | 2 | PENPAL
+EXTRA CLASS | Lớp học thêm | 1 | EXTRA CLASSES
+DROPOUT | Người bỏ học | 3 | DROP OUT
+PRIMARY SCHOOL | Trường tiểu học | 1 | ELEMENTARY SCHOOL
+SECONDARY SCHOOL | Trường trung học cơ sở | 2 | MIDDLE SCHOOL, JUNIOR HIGH
+HIGH SCHOOL | Trường trung học phổ thông | 1
+BOARDING SCHOOL | Trường nội trú | 2
+PUBLIC SCHOOL | Trường công lập | 2 | STATE SCHOOL
+PRIVATE SCHOOL | Trường tư thục | 2
+GPA | Điểm trung bình tích lũy | 2 | GRADE POINT AVERAGE
+LECTURE HALL | Giảng đường | 2
+STUDY ABROAD | Du học | 1
+EXCHANGE STUDENT | Học sinh trao đổi | 2
+FRESHMAN | Sinh viên năm nhất | 2 | FIRST-YEAR STUDENT
+GROUP PROJECT | Bài tập nhóm | 1 | GROUP WORK
+OUTLINE | Dàn ý | 2
+PARAGRAPH | Đoạn văn | 1
+SENTENCE | Câu văn | 1
+GRAMMAR | Ngữ pháp | 1
+VOCABULARY | Từ vựng | 1
+PRONUNCIATION | Phát âm | 2
+SPELLING | Chính tả | 1
+REVIEW | Ôn tập | 1 | REVISION
+CRAM | Học nhồi trước kỳ thi | 3
+BOOKWORM | Mọt sách | 2
+JANITOR | Lao công (trong trường) | 3 | CUSTODIAN
+COUNSELOR | Chuyên viên tư vấn học đường | 3 | COUNSELLOR
+LIBRARY CARD | Thẻ thư viện | 1
+STUDENT ID | Thẻ sinh viên | 1 | STUDENT CARD
+SCHOOLYARD | Sân trường | 1
+JOB SEEKER | Người tìm việc | 2 | JOB HUNTER
+REMOTE WORK | Làm việc từ xa | 2 | WORK FROM HOME, WFH
+SIDE HUSTLE | Nghề tay trái (việc làm thêm) | 3 | SIDE JOB
+PROBATION PERIOD | Thời gian thử việc | 2
+DAY OFF | Ngày nghỉ | 1
+PAYDAY | Ngày lĩnh lương | 1 | PAY DAY
+RAISE | Sự tăng lương | 2 | PAY RISE, SALARY INCREASE
+BREAK ROOM | Phòng nghỉ giải lao | 2
+NAME CARD | Danh thiếp | 1 | BUSINESS CARD
+TEAM LEADER | Trưởng nhóm | 1 | TEAM LEAD
+CAREER PATH | Lộ trình sự nghiệp | 2
+SOFT SKILLS | Kỹ năng mềm | 2 | SOFT SKILL
+MATH | Môn toán | 1 | MATHS, MATHEMATICS
+ENGLISH | Môn tiếng Anh, gọi bằng | 1
+HISTORY | Môn lịch sử | 1
+SCIENCE | Môn khoa học | 1
+ART | Môn mỹ thuật | 1 | ARTS, FINE ART, FINE ARTS
+GEOGRAPHY | Môn địa lý | 2
+PHYSICS | Môn vật lý | 2
+BIOLOGY | Môn sinh học | 2
+LITERATURE | Môn văn học | 2
+PE | Môn thể dục | 2 | PHYSICAL EDUCATION, GYM
+SUBJECT | Môn học (toán, văn, sử…) | 2 | SUBJECTS
+INFORMATICS | Môn tin học | 3 | IT, ICT, COMPUTER SCIENCE, COMPUTING
+HOMEWORK | Bài tập về nhà | 1
+LESSON | Bài học, tiết học | 1 | CLASS, PERIOD
+TEST | Bài kiểm tra (15 phút, 1 tiết) | 1 | QUIZ
+QUESTION | Câu hỏi | 1
+ANSWER | Câu trả lời | 1 | REPLY
+STUDY | Học bài | 1 | LEARN
+TEACH | Dạy học (dạy bài cho học sinh) | 1
+PAGE | Trang sách | 1 | PAGES
+LATE | Đến muộn, đi trễ giờ | 1
+EXAM | Kỳ thi (thi học kỳ, thi đại học) | 2 | EXAMINATION, TEST
+CLASSMATE | Bạn cùng lớp | 2 | CLASSMATES
+DICTIONARY | Quyển từ điển | 2
+UNIFORM | Bộ đồng phục | 2
+BREAK | Giờ ra chơi | 2 | BREAK TIME, RECESS, PLAYTIME
+CHALK | Viên phấn viết bảng | 2
+FAIL | Thi trượt, thi rớt | 2 | FAILED
+MISTAKE | Lỗi sai (làm bài bị sai) | 2 | MISTAKES, ERROR
+PRINCIPAL | Thầy, cô hiệu trưởng | 3 | HEADMASTER, HEADMISTRESS, HEAD TEACHER
+SEMESTER | Học kỳ | 3 | TERM
+KINDERGARTEN | Trường mẫu giáo | 3 | PRESCHOOL, NURSERY, NURSERY SCHOOL
+TIMETABLE | Thời khoá biểu | 3 | SCHEDULE, CLASS SCHEDULE
+GRADUATE | Tốt nghiệp (ra trường) | 3 | GRADUATION
+ESSAY | Bài luận, bài văn | 3 | COMPOSITION
+FARMER | Nông dân | 1
+POLICE | Chú cảnh sát | 1 | POLICEMAN, POLICEWOMAN, POLICE OFFICER, OFFICER, COP
+DRIVER | Tài xế, bác tài | 1
+SINGER | Ca sĩ | 1
+WORKER | Công nhân | 1 | FACTORY WORKER
+DANCER | Vũ công (người nhảy múa) | 1
+JOB | Nghề nghiệp, công việc | 1 | WORK, CAREER, OCCUPATION, PROFESSION
+CHEF | Đầu bếp | 2 | COOK
+ACTOR | Diễn viên | 2 | ACTRESS
+LAWYER | Luật sư | 2 | ATTORNEY
+FIREFIGHTER | Lính cứu hoả | 2 | FIREMAN
+ARTIST | Hoạ sĩ | 2 | PAINTER
+WRITER | Nhà văn | 2 | AUTHOR, NOVELIST
+WAITER | Người phục vụ bàn (bồi bàn) | 2 | WAITRESS, SERVER
+POSTMAN | Người đưa thư | 2 | MAILMAN, POSTWOMAN, MAIL CARRIER, POSTAL WORKER
+SCIENTIST | Nhà khoa học | 2
+JOURNALIST | Nhà báo | 3 | REPORTER
+ARCHITECT | Kiến trúc sư | 3
+MECHANIC | Thợ sửa xe (thợ máy) | 3
+CASHIER | Nhân viên thu ngân | 3
+PHOTOGRAPHER | Thợ chụp ảnh, nhiếp ảnh gia | 3
+HAIRDRESSER | Thợ cắt tóc | 3 | BARBER, HAIRSTYLIST
+BOSS | Sếp | 1
+WORK | Làm việc (đi làm) | 1
+BUSY | Bận rộn | 1
+CV | Bản lý lịch xin việc | 2 | RESUME, CURRICULUM VITAE
+CAMERA | Máy ảnh | 1
+CALL | Gọi điện thoại | 1 | PHONE, RING, PHONE CALL
+WEBSITE | Trang web | 1 | WEB PAGE, SITE
+EMAIL | Thư điện tử | 1 | MAIL
+FOLLOW | Theo dõi (một tài khoản) | 2
+MONEY | Tiền | 1 | CASH
+CHEAP | Rẻ | 1 | INEXPENSIVE
+BANK | Ngân hàng | 1
+BUY | Mua | 1 | PURCHASE
+SELL | Bán | 1
+PAY | Trả tiền, thanh toán | 1 | PAYMENT
+SHOP | Cửa hàng | 1 | STORE
+RICH | Giàu | 1 | WEALTHY
+POOR | Nghèo | 1
+FREE | Miễn phí (không mất tiền) | 1
+SHOPPING | Đi mua sắm | 1 | GO SHOPPING
+SUPERMARKET | Siêu thị | 1
+EXPENSIVE | Đắt (giá cao) | 2 | COSTLY, PRICEY
+BILL | Hoá đơn | 2 | INVOICE, CHECK, RECEIPT
+BORROW | Mượn, vay (tiền) | 2
+SPEND | Tiêu tiền (xài tiền) | 2
+CHANGE | Tiền thối, tiền thừa trả lại | 3
+DEBT | Món nợ | 3 | DEBTS
+SAVINGS | Tiền tiết kiệm | 3 | SAVING
 ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2 | BÀI TẬP
 CERTIFICATE | Chứng chỉ / bằng cấp | 2 | CHỨNG CHỈ
 DIPLOMA | Bằng tốt nghiệp | 3 | BẰNG TỐT NGHIỆP
@@ -171,107 +171,107 @@ TRANSLATOR | Biên dịch viên | 2 | BIÊN DỊCH
 INTERPRETER | Phiên dịch viên nói trực tiếp | 3 | PHIÊN DỊCH
 ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3 | KHỞI NGHIỆP
 WORKLOAD | Khối lượng công việc | 2 | KHỐI LƯỢNG CÔNG VIỆC
-ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ tiếng Anh là gì? | 1 | PHI HÀNH GIA, COSMONAUT
-DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán tiếng Anh là gì? | 3 | NHÀ NGOẠI GIAO
-PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý tiếng Anh là gì? | 3 | NHÀ TRIẾT HỌC
-PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần tiếng Anh là gì? | 3 | CHUYÊN GIA TÂM LÝ
-VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo tiếng Anh là gì? | 2 | BÁC SĨ THÚ Y, VET
-ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao tiếng Anh là gì? | 3 | NHÀ THIÊN VĂN
-THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên tiếng Anh là gì? | 3 | LUẬN VĂN, DISSERTATION
-METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày tiếng Anh là gì? | 3 | DỰ BÁO THỜI TIẾT
-LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện tiếng Anh là gì? | 2 | THỦ THƯ
-ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng tiếng Anh là gì? | 2 | THỢ ĐIỆN
-PLUMBER | Người thợ sửa ống nước đến nhà kiểm tra vòi nước rò rỉ tiếng Anh là gì? | 2 | THỢ SỬA ỐNG NƯỚC
-CARPENTER | Người thợ mộc đục đẽo gỗ làm bàn ghế giường tủ tiếng Anh là gì? | 2 | THỢ MỘC
-AUDITOR | Kiểm toán viên soát xét các con số báo cáo tài chính tiếng Anh là gì? | 3 | KIỂM TOÁN VIÊN
-JUDGE | Vị thẩm phán cầm búa gõ phán quyết tại phiên tòa tiếng Anh là gì? | 1 | THẨM PHÁN
-BIOLOGIST | Nhà sinh học nghiên cứu thế giới sinh vật động thực vật tiếng Anh là gì? | 2 | NHÀ SINH HỌC
-PHYSICIST | Nhà vật lý học nghiên cứu lực hấp dẫn và năng lượng vũ trụ tiếng Anh là gì? | 2 | NHÀ VẬT LÝ
-DESIGNER | Nhà thiết kế sáng tạo bản vẽ thời trang và đồ họa tiếng Anh là gì? | 1 | NHÀ THIẾT KẾ
-MUSICIAN | Nhạc sĩ sáng tác giai điệu và chơi nhạc cụ điêu luyện tiếng Anh là gì? | 1 | NHẠC SĨ
-COMPOSER | Nhà soạn nhạc các bản giao hưởng thính phòng cổ điển tiếng Anh là gì? | 2 | NHÀ SOẠN NHẠC
-TAILOR | Người thợ may đo cắt vải may quần áo vừa vặn dáng người tiếng Anh là gì? | 2 | THỢ MAY
-BUTCHER | Người bán thịt cầm dao pha thịt tại quầy sạp chợ tiếng Anh là gì? | 2 | NGƯỜI BÁN THỊT
-BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng lò nướng tiếng Anh là gì? | 1 | THỢ LÀM BÁNH
-SYLLABUS | Đề cương chi tiết môn học liệt kê nội dung từng tuần tiếng Anh là gì? | 3 | ĐỀ CƯƠNG MÔN HỌC
-DORMITORY | Ký túc xá sinh viên ở nội trú trong khuôn viên trường tiếng Anh là gì? | 2 | KÝ TÚC XÁ, DORM
-CAMPUS | Khuôn viên trường đại học rợp bóng cây xanh tiếng Anh là gì? | 2 | KHUÔN VIÊN TRƯỜNG
-FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học tiếng Anh là gì? | 2 | KHOA, GIẢNG VIÊN
-DEAN | Vị trưởng khoa đứng đầu quản lý một khoa đại học tiếng Anh là gì? | 3 | TRƯỞNG KHOA
-VICE PRINCIPAL | Thầy cô phó hiệu trưởng hỗ trợ điều hành trường tiếng Anh là gì? | 2 | PHÓ HIỆU TRƯỞNG
-HEAD OF DEPARTMENT | Trưởng bộ môn phụ trách học thuật tiếng Anh là gì? | 3 | TRƯỞNG BỘ MÔN
-ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng tiếng Anh là gì? | 2 | NĂM HỌC, NIÊN KHÓA
-GRADUATION | Lễ tốt nghiệp trang trọng khoác áo cử nhân tung mũ tiếng Anh là gì? | 1 | LỄ TỐT NGHIỆP
-ALUMNI | Hội cựu học sinh cựu sinh viên của trường tiếng Anh là gì? | 3 | CỰU SINH VIÊN
-VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn tiếng Anh là gì? | 3 | THỦ KHOA
-SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa tiếng Anh là gì? | 4 | Á KHOA
-MAJOR | Chuyên ngành học chính thức tại trường đại học tiếng Anh là gì? | 1 | CHUYÊN NGÀNH
-MINOR | Chuyên ngành phụ học thêm bằng kép tiếng Anh là gì? | 2 | CHUYÊN NGÀNH PHỤ
-CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp tiếng Anh là gì? | 2 | TÍN CHỈ
-TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học tiếng Anh là gì? | 2 | BẢNG ĐIỂM
-BACHELOR | Bằng cử nhân đại học bốn năm chính quy tiếng Anh là gì? | 2 | BẰNG CỬ NHÂN
-MASTER | Bằng thạc sĩ sau đại học chuyên sâu tiếng Anh là gì? | 2 | BẰNG THẠC SĨ
-DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học tiếng Anh là gì? | 3 | BẰNG TIẾN SĨ, PHD
-POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học tiếng Anh là gì? | 4 | HẬU TIẾN SĨ, POSTDOC
-DISSERTATION | Luận án tiến sĩ bảo vệ trước hội đồng khoa học tiếng Anh là gì? | 3 | LUẬN ÁN TIẾN SĨ
-DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp tiếng Anh là gì? | 2 | BẢO VỆ LUẬN VĂN
-ADMISSION | Sự trúng tuyển nhập học vào trường đại học tiếng Anh là gì? | 2 | TRÚNG TUYỂN
-ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức tiếng Anh là gì? | 2 | GHI DANH, ĐĂNG KÝ HỌC
-EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập tiếng Anh là gì? | 3 | ĐUỔI HỌC
-ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép tiếng Anh là gì? | 1 | VẮNG MẶT, NGHỈ HỌC
-ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp tiếng Anh là gì? | 1 | ĐIỂM DANH
-MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt tiếng Anh là gì? | 2 | NGƯỜI CỐ VẤN
-PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề tiếng Anh là gì? | 4 | ĐỆ TỬ
-APPRENTICE | Người học việc tập việc trong xưởng thủ công tiếng Anh là gì? | 2 | NGƯỜI HỌC VIỆC
-VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành tiếng Anh là gì? | 3 | HỌC NGHỀ, DẠY NGHỀ
-PROBATION | Thời gian thử việc hai tháng trước khi ký hợp đồng chính thức tiếng Anh là gì? | 2 | THỬ VIỆC
-RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến tiếng Anh là gì? | 2 | NGHỈ HƯU
-SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng tiếng Anh là gì? | 3 | TRỢ CẤP THÔI VIỆC
-RECRUITER | Chuyên viên tuyển dụng săn đầu người cho công ty tiếng Anh là gì? | 2 | NHÀ TUYỂN DỤNG, HEADHUNTER
-COVER LETTER | Thư xin việc bày tỏ nguyện vọng gửi kèm hồ sơ lý lịch tiếng Anh là gì? | 2 | THƯ XIN VIỆC
-REFERENCE | Thư giới thiệu người làm chứng nhận bảo lãnh năng lực tiếng Anh là gì? | 2 | THƯ GIỚI THIỆU
-COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc tiếng Anh là gì? | 2 | ĐI LÀM HÀNG NGÀY
-NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau tiếng Anh là gì? | 1 | CA ĐÊM
-DAY SHIFT | Ca làm việc ban ngày giờ hành chính tiếng Anh là gì? | 1 | CA NGÀY
-TELEWORK | Hình thức làm việc từ xa tại nhà không cần lên văn phòng tiếng Anh là gì? | 2 | LÀM TỪ XA, REMOTE WORK
-FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập tiếng Anh là gì? | 1 | LÀM NGHỀ TỰ DO
-CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp tiếng Anh là gì? | 2 | CHUYÊN GIA TƯ VẤN
-BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài tiếng Anh là gì? | 2 | KIỆT SỨC VÌ CÔNG VIỆC
-ABSENTEEISM | Thói quen trốn việc nghỉ làm việc không lý do chính đáng tiếng Anh là gì? | 3 | TRỐN VIỆC
-PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả tiếng Anh là gì? | 4 | CỐ ĐI LÀM
-ANNUAL LEAVE | Kỳ nghỉ phép năm có hưởng lương của người lao động tiếng Anh là gì? | 2 | NGHỈ PHÉP NĂM
-SICK LEAVE | Nghỉ ốm có giấy xác nhận của bác sĩ tiếng Anh là gì? | 1 | NGHỈ ỐM
-MATERNITY LEAVE | Kỳ nghỉ thai sản sinh con dành cho các bà mẹ tiếng Anh là gì? | 2 | NGHỈ THAI SẢN
-PATERNITY LEAVE | Kỳ nghỉ chăm vợ sinh con dành cho người cha tiếng Anh là gì? | 2 | NGHỈ CHĂM VỢ SINH
-BEREAVEMENT LEAVE | Nghỉ phép việc hiếu chịu tang người thân trong gia đình tiếng Anh là gì? | 3 | NGHỈ TANG
-SABBATICAL | Kỳ nghỉ phép dài hạn nhiều tháng để nghiên cứu hoặc du lịch tiếng Anh là gì? | 3 | KỲ NGHỈ DÀI HẠN
-PAYSLIP | Phiếu chi tiết lương in rõ các khoản trừ thuế và thực nhận tiếng Anh là gì? | 2 | PHIẾU LƯƠNG
-APPRAISAL | Kỳ đánh giá năng lực và thành tích làm việc định kỳ tiếng Anh là gì? | 3 | ĐÁNH GIÁ NĂNG LỰC, PERFORMANCE REVIEW
-DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầm tiếng Anh là gì? | 3 | GIÁNG CHỨC
-ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng tiếng Anh là gì? | 3 | CÔNG THÁI HỌC
-CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng tiếng Anh là gì? | 2 | VÁCH NGĂN VĂN PHÒNG
-PAPERCLIP | Chiếc kẹp ghim giấy bằng kim loại xoắn tiếng Anh là gì? | 1 | KẸP GIẤY
-SHREDDER | Chiếc máy hủy tài liệu cắt nhỏ giấy vụn bảo mật tiếng Anh là gì? | 2 | MÁY HỦY TÀI LIỆU
-WHITEBOARD | Chiếc bảng trắng viết bút dạ trong phòng họp công ty tiếng Anh là gì? | 1 | BẢNG TRẮNG
-FLIPCHART | Bảng kẹp giấy thuyết trình có thể lật từng trang tiếng Anh là gì? | 2 | BẢNG KẸP GIẤY
-HEADSET | Tai nghe có mic thoại chuyên dụng cho nhân viên trực tổng đài tiếng Anh là gì? | 1 | TAI NGHE CÓ MIC
-CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp tiếng Anh là gì? | 2 | CHỦ TỌA, CHỦ TỊCH CUỘC HỌP
-QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ tiếng Anh là gì? | 3 | TỶ LỆ ĐỦ PHIẾU
-BALLOT | Lá phiếu kín để bỏ phiếu bầu cử tiếng Anh là gì? | 2 | LÁ PHIẾU
-VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án tiếng Anh là gì? | 1 | BỎ PHIẾU
-TELECOMMUTING | Phương thức làm việc từ xa kết nối qua mạng viễn thông tiếng Anh là gì? | 3 | LÀM VIỆC TỪ XA
-NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc tiếng Anh là gì? | 2 | THỜI HẠN BÁO TRƯỚC
-PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc tiếng Anh là gì? | 2 | CHẤM CÔNG VÀO
-TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng tiếng Anh là gì? | 2 | BẢNG CHẤM CÔNG
-BONUSES | Các khoản tiền thưởng thêm ngoài lương cơ bản tiếng Anh là gì? | 1 | TIỀN THƯỞNG
-PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa tiếng Anh là gì? | 2 | ĐẶC QUYỀN, PHÚC LỢI
-PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng tiếng Anh là gì? | 3 | QUỸ HƯU TRÍ
-AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác tiếng Anh là gì? | 3 | CÔNG TY LIÊN KẾT
-CONGLOMERATE | Tập đoàn kinh tế khổng lồ gồm nhiều công ty đa ngành tiếng Anh là gì? | 3 | TẬP ĐOÀN ĐA NGÀNH
-MONOPOLY | Thế độc quyền chiếm trọn toàn bộ thị trường tiếng Anh là gì? | 2 | ĐỘC QUYỀN
-OLIGOPOLY | Thị trường thiểu số độc quyền do vài ông lớn thống trị tiếng Anh là gì? | 3 | THIỂU SỐ ĐỘC QUYỀN
-BANKRUPTCY | Tình trạng phá sản vỡ nợ không còn khả năng trả nợ tiếng Anh là gì? | 2 | PHÁ SẢN
-INSOLVENCY | Mất khả năng thanh toán các khoản nợ đến hạn tiếng Anh là gì? | 3 | MẤT KHẢ NĂNG THANH TOÁN
-LIQUIDATION | Sự thanh lý giải thể tài sản để trả bớt nợ nần tiếng Anh là gì? | 3 | THANH LÝ TÀI SẢN
-CREDITOR | Chủ nợ bên cho công ty vay tiền tiếng Anh là gì? | 2 | CHỦ NỢ
-DEBTOR | Bên mang nợ người vay nợ tiếng Anh là gì? | 2 | CON NỢ, BÊN MANG NỢ
+ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ | 1 | PHI HÀNH GIA, COSMONAUT
+DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán | 3 | NHÀ NGOẠI GIAO
+PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý | 3 | NHÀ TRIẾT HỌC
+PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần | 3 | CHUYÊN GIA TÂM LÝ
+VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2 | BÁC SĨ THÚ Y, VET
+ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao | 3 | NHÀ THIÊN VĂN
+THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên | 3 | LUẬN VĂN, DISSERTATION
+METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày | 3 | DỰ BÁO THỜI TIẾT
+LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện | 2 | THỦ THƯ
+ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng | 2 | THỢ ĐIỆN
+PLUMBER | Người thợ sửa ống nước đến nhà kiểm tra vòi nước rò rỉ | 2 | THỢ SỬA ỐNG NƯỚC
+CARPENTER | Người thợ mộc đục đẽo gỗ làm bàn ghế giường tủ | 2 | THỢ MỘC
+AUDITOR | Kiểm toán viên soát xét các con số báo cáo tài chính | 3 | KIỂM TOÁN VIÊN
+JUDGE | Vị thẩm phán cầm búa gõ phán quyết tại phiên tòa | 1 | THẨM PHÁN
+BIOLOGIST | Nhà sinh học nghiên cứu thế giới sinh vật động thực vật | 2 | NHÀ SINH HỌC
+PHYSICIST | Nhà vật lý học nghiên cứu lực hấp dẫn và năng lượng vũ trụ | 2 | NHÀ VẬT LÝ
+DESIGNER | Nhà thiết kế sáng tạo bản vẽ thời trang và đồ họa | 1 | NHÀ THIẾT KẾ
+MUSICIAN | Nhạc sĩ sáng tác giai điệu và chơi nhạc cụ điêu luyện | 1 | NHẠC SĨ
+COMPOSER | Nhà soạn nhạc các bản giao hưởng thính phòng cổ điển | 2 | NHÀ SOẠN NHẠC
+TAILOR | Người thợ may đo cắt vải may quần áo vừa vặn dáng người | 2 | THỢ MAY
+BUTCHER | Người bán thịt cầm dao pha thịt tại quầy sạp chợ | 2 | NGƯỜI BÁN THỊT
+BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng lò nướng | 1 | THỢ LÀM BÁNH
+SYLLABUS | Đề cương chi tiết môn học liệt kê nội dung từng tuần | 3 | ĐỀ CƯƠNG MÔN HỌC
+DORMITORY | Ký túc xá sinh viên ở nội trú trong khuôn viên trường | 2 | KÝ TÚC XÁ, DORM
+CAMPUS | Khuôn viên trường đại học rợp bóng cây xanh | 2 | KHUÔN VIÊN TRƯỜNG
+FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học | 2 | KHOA, GIẢNG VIÊN
+DEAN | Vị trưởng khoa đứng đầu quản lý một khoa đại học | 3 | TRƯỞNG KHOA
+VICE PRINCIPAL | Thầy cô phó hiệu trưởng hỗ trợ điều hành trường | 2 | PHÓ HIỆU TRƯỞNG
+HEAD OF DEPARTMENT | Trưởng bộ môn phụ trách học thuật | 3 | TRƯỞNG BỘ MÔN
+ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng | 2 | NĂM HỌC, NIÊN KHÓA
+GRADUATION | Lễ tốt nghiệp trang trọng khoác áo cử nhân tung mũ | 1 | LỄ TỐT NGHIỆP
+ALUMNI | Hội cựu học sinh cựu sinh viên của trường | 3 | CỰU SINH VIÊN
+VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn | 3 | THỦ KHOA
+SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 4 | Á KHOA
+MAJOR | Chuyên ngành học chính thức tại trường đại học | 1 | CHUYÊN NGÀNH
+MINOR | Chuyên ngành phụ học thêm bằng kép | 2 | CHUYÊN NGÀNH PHỤ
+CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp | 2 | TÍN CHỈ
+TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học | 2 | BẢNG ĐIỂM
+BACHELOR | Bằng cử nhân đại học bốn năm chính quy | 2 | BẰNG CỬ NHÂN
+MASTER | Bằng thạc sĩ sau đại học chuyên sâu | 2 | BẰNG THẠC SĨ
+DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | BẰNG TIẾN SĨ, PHD
+POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 4 | HẬU TIẾN SĨ, POSTDOC
+DISSERTATION | Luận án tiến sĩ bảo vệ trước hội đồng khoa học | 3 | LUẬN ÁN TIẾN SĨ
+DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2 | BẢO VỆ LUẬN VĂN
+ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2 | TRÚNG TUYỂN
+ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2 | GHI DANH, ĐĂNG KÝ HỌC
+EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3 | ĐUỔI HỌC
+ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép | 1 | VẮNG MẶT, NGHỈ HỌC
+ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1 | ĐIỂM DANH
+MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2 | NGƯỜI CỐ VẤN
+PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 4 | ĐỆ TỬ
+APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2 | NGƯỜI HỌC VIỆC
+VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3 | HỌC NGHỀ, DẠY NGHỀ
+PROBATION | Thời gian thử việc hai tháng trước khi ký hợp đồng chính thức | 2 | THỬ VIỆC
+RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến | 2 | NGHỈ HƯU
+SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng | 3 | TRỢ CẤP THÔI VIỆC
+RECRUITER | Chuyên viên tuyển dụng săn đầu người cho công ty | 2 | NHÀ TUYỂN DỤNG, HEADHUNTER
+COVER LETTER | Thư xin việc bày tỏ nguyện vọng gửi kèm hồ sơ lý lịch | 2 | THƯ XIN VIỆC
+REFERENCE | Thư giới thiệu người làm chứng nhận bảo lãnh năng lực | 2 | THƯ GIỚI THIỆU
+COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc | 2 | ĐI LÀM HÀNG NGÀY
+NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau | 1 | CA ĐÊM
+DAY SHIFT | Ca làm việc ban ngày giờ hành chính | 1 | CA NGÀY
+TELEWORK | Hình thức làm việc từ xa tại nhà không cần lên văn phòng | 2 | LÀM TỪ XA, REMOTE WORK
+FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập | 1 | LÀM NGHỀ TỰ DO
+CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2 | CHUYÊN GIA TƯ VẤN
+BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2 | KIỆT SỨC VÌ CÔNG VIỆC
+ABSENTEEISM | Thói quen trốn việc nghỉ làm việc không lý do chính đáng | 3 | TRỐN VIỆC
+PRESENTEEISM | Hiện tượng cố đi làm dù đang ốm mệt không đạt hiệu quả | 4 | CỐ ĐI LÀM
+ANNUAL LEAVE | Kỳ nghỉ phép năm có hưởng lương của người lao động | 2 | NGHỈ PHÉP NĂM
+SICK LEAVE | Nghỉ ốm có giấy xác nhận của bác sĩ | 1 | NGHỈ ỐM
+MATERNITY LEAVE | Kỳ nghỉ thai sản sinh con dành cho các bà mẹ | 2 | NGHỈ THAI SẢN
+PATERNITY LEAVE | Kỳ nghỉ chăm vợ sinh con dành cho người cha | 2 | NGHỈ CHĂM VỢ SINH
+BEREAVEMENT LEAVE | Nghỉ phép việc hiếu chịu tang người thân trong gia đình | 3 | NGHỈ TANG
+SABBATICAL | Kỳ nghỉ phép dài hạn nhiều tháng để nghiên cứu hoặc du lịch | 3 | KỲ NGHỈ DÀI HẠN
+PAYSLIP | Phiếu chi tiết lương in rõ các khoản trừ thuế và thực nhận | 2 | PHIẾU LƯƠNG
+APPRAISAL | Kỳ đánh giá năng lực và thành tích làm việc định kỳ | 3 | ĐÁNH GIÁ NĂNG LỰC, PERFORMANCE REVIEW
+DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầm | 3 | GIÁNG CHỨC
+ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng | 3 | CÔNG THÁI HỌC
+CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng | 2 | VÁCH NGĂN VĂN PHÒNG
+PAPERCLIP | Chiếc kẹp ghim giấy bằng kim loại xoắn | 1 | KẸP GIẤY
+SHREDDER | Chiếc máy hủy tài liệu cắt nhỏ giấy vụn bảo mật | 2 | MÁY HỦY TÀI LIỆU
+WHITEBOARD | Chiếc bảng trắng viết bút dạ trong phòng họp công ty | 1 | BẢNG TRẮNG
+FLIPCHART | Bảng kẹp giấy thuyết trình có thể lật từng trang | 2 | BẢNG KẸP GIẤY
+HEADSET | Tai nghe có mic thoại chuyên dụng cho nhân viên trực tổng đài | 1 | TAI NGHE CÓ MIC
+CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp | 2 | CHỦ TỌA, CHỦ TỊCH CUỘC HỌP
+QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ | 3 | TỶ LỆ ĐỦ PHIẾU
+BALLOT | Lá phiếu kín để bỏ phiếu bầu cử | 2 | LÁ PHIẾU
+VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án | 1 | BỎ PHIẾU
+TELECOMMUTING | Phương thức làm việc từ xa kết nối qua mạng viễn thông | 3 | LÀM VIỆC TỪ XA
+NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc | 2 | THỜI HẠN BÁO TRƯỚC
+PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc | 2 | CHẤM CÔNG VÀO
+TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng | 2 | BẢNG CHẤM CÔNG
+BONUSES | Các khoản tiền thưởng thêm ngoài lương cơ bản | 1 | TIỀN THƯỞNG
+PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa | 2 | ĐẶC QUYỀN, PHÚC LỢI
+PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng | 3 | QUỸ HƯU TRÍ
+AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác | 3 | CÔNG TY LIÊN KẾT
+CONGLOMERATE | Tập đoàn kinh tế khổng lồ gồm nhiều công ty đa ngành | 3 | TẬP ĐOÀN ĐA NGÀNH
+MONOPOLY | Thế độc quyền chiếm trọn toàn bộ thị trường | 2 | ĐỘC QUYỀN
+OLIGOPOLY | Thị trường thiểu số độc quyền do vài ông lớn thống trị | 3 | THIỂU SỐ ĐỘC QUYỀN
+BANKRUPTCY | Tình trạng phá sản vỡ nợ không còn khả năng trả nợ | 2 | PHÁ SẢN
+INSOLVENCY | Mất khả năng thanh toán các khoản nợ đến hạn | 3 | MẤT KHẢ NĂNG THANH TOÁN
+LIQUIDATION | Sự thanh lý giải thể tài sản để trả bớt nợ nần | 3 | THANH LÝ TÀI SẢN
+CREDITOR | Chủ nợ bên cho công ty vay tiền | 2 | CHỦ NỢ
+DEBTOR | Bên mang nợ người vay nợ | 2 | CON NỢ, BÊN MANG NỢ

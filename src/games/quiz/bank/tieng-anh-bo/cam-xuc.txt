@@ -1,103 +1,103 @@
 # Tiếng Anh · Cơ thể, cảm xúc
-NECK | Cái cổ tiếng Anh là gì? | 1
-SHOULDER | Bờ vai tiếng Anh là gì? | 1 | SHOULDERS
-LEG | Cái chân (không phải bàn chân) tiếng Anh là gì? | 1 | LEGS
-KNEE | Đầu gối tiếng Anh là gì? | 2 | KNEES
-ELBOW | Khuỷu tay tiếng Anh là gì? | 2 | ELBOWS
-WRIST | Cổ tay tiếng Anh là gì? | 3 | WRISTS
-ANKLE | Mắt cá chân tiếng Anh là gì? | 3 | ANKLES
-TOE | Ngón chân tiếng Anh là gì? | 2 | TOES
-THUMB | Ngón tay cái tiếng Anh là gì? | 2 | THUMBS
-BACK | Cái lưng tiếng Anh là gì? | 1
-LIP | Đôi môi tiếng Anh là gì? | 2 | LIPS
-TONGUE | Cái lưỡi tiếng Anh là gì? | 2
-CHEEK | Gò má tiếng Anh là gì? | 2 | CHEEKS
-CHIN | Cái cằm tiếng Anh là gì? | 2
-FOREHEAD | Cái trán tiếng Anh là gì? | 3
-EYEBROW | Lông mày tiếng Anh là gì? | 3 | EYEBROWS, BROW, BROWS
-BEARD | Bộ râu (mọc ở cằm) tiếng Anh là gì? | 2
-MUSTACHE | Ria mép tiếng Anh là gì? | 2 | MOUSTACHE
-BODY | Cơ thể tiếng Anh là gì? | 1
-BELLY BUTTON | Cái rốn tiếng Anh là gì? | 3 | NAVEL, BELLYBUTTON
-DIMPLE | Lúm đồng tiền (trên má) tiếng Anh là gì? | 3 | DIMPLES
-SLEEPY | Buồn ngủ tiếng Anh là gì? | 1 | DROWSY
-TIRED | Mệt mỏi tiếng Anh là gì? | 1 | EXHAUSTED, WEARY
-STRONG | Khỏe, mạnh (về sức lực) tiếng Anh là gì? | 1
-WEAK | Yếu ớt (về sức lực) tiếng Anh là gì? | 2 | FEEBLE
-STRESSED | Căng thẳng, áp lực (tâm lý) tiếng Anh là gì? | 2 | STRESS, TENSE, STRESSED OUT
-ANGRY | Tức giận tiếng Anh là gì? | 1 | MAD, FURIOUS
-SCARED | Sợ hãi tiếng Anh là gì? | 1 | AFRAID, FRIGHTENED, TERRIFIED
-BORED | Chán (vì không có gì làm) tiếng Anh là gì? | 1
-WORRIED | Lo lắng tiếng Anh là gì? | 2 | ANXIOUS, CONCERNED
-NERVOUS | Hồi hộp, run (trước khi thi) tiếng Anh là gì? | 2 | ANXIOUS
-PROUD | Tự hào tiếng Anh là gì? | 2
-SURPRISED | Ngạc nhiên tiếng Anh là gì? | 2 | AMAZED, ASTONISHED
-SHOCKED | Bị sốc tiếng Anh là gì? | 2
-EXCITED | Háo hức, phấn khích tiếng Anh là gì? | 2 | THRILLED
-EMBARRASSED | Ngượng ngùng, quê độ tiếng Anh là gì? | 3 | ASHAMED
-CONFUSED | Bối rối, không hiểu gì tiếng Anh là gì? | 2 | PUZZLED
-CALM | Bình tĩnh tiếng Anh là gì? | 2
-RELAXED | Thư giãn, thoải mái tiếng Anh là gì? | 2 | RELAX
-GRATEFUL | Biết ơn tiếng Anh là gì? | 3 | THANKFUL
-HOPE | Hy vọng tiếng Anh là gì? | 2
-DISAPPOINTED | Thất vọng tiếng Anh là gì? | 3
-HOMESICK | Nhớ nhà tiếng Anh là gì? | 3
-HATE | Ghét tiếng Anh là gì? | 1 | DISLIKE
-LAUGH | Cười lớn (thành tiếng) tiếng Anh là gì? | 1
-KIND | Tốt bụng tiếng Anh là gì? | 1 | NICE, KIND-HEARTED, KINDHEARTED
-LAZY | Lười biếng tiếng Anh là gì? | 1
-SHY | Nhút nhát, rụt rè tiếng Anh là gì? | 2 | TIMID
-FUNNY | Hài hước, vui tính tiếng Anh là gì? | 1 | HUMOROUS
-SMART | Thông minh tiếng Anh là gì? | 1 | CLEVER, INTELLIGENT, BRIGHT
-HONEST | Trung thực tiếng Anh là gì? | 2
-BRAVE | Dũng cảm tiếng Anh là gì? | 2 | COURAGEOUS, BOLD
-POLITE | Lịch sự, lễ phép tiếng Anh là gì? | 2 | COURTEOUS
-RUDE | Thô lỗ, hỗn láo tiếng Anh là gì? | 2 | IMPOLITE
-HARD-WORKING | Chăm chỉ tiếng Anh là gì? | 2 | HARDWORKING, DILIGENT, INDUSTRIOUS
-GENEROUS | Hào phóng, rộng rãi tiếng Anh là gì? | 3
-SELFISH | Ích kỷ tiếng Anh là gì? | 3
-STINGY | Keo kiệt, bủn xỉn tiếng Anh là gì? | 3 | MEAN, MISERLY, CHEAP, TIGHT
-SILLY | Ngốc nghếch tiếng Anh là gì? | 2 | FOOLISH, STUPID
-CLUMSY | Vụng về, hậu đậu tiếng Anh là gì? | 3
-CAREFUL | Cẩn thận tiếng Anh là gì? | 2
-CONFIDENT | Tự tin tiếng Anh là gì? | 2
-TALKATIVE | Nói nhiều, lắm lời tiếng Anh là gì? | 3 | CHATTY
-NAUGHTY | Nghịch ngợm (trẻ con) tiếng Anh là gì? | 2 | MISCHIEVOUS
-CURIOUS | Tò mò tiếng Anh là gì? | 2 | NOSY, NOSEY, INQUISITIVE
-STUBBORN | Bướng bỉnh, cứng đầu tiếng Anh là gì? | 3 | OBSTINATE, HEADSTRONG
-ACTIVE | Năng động tiếng Anh là gì? | 2 | ENERGETIC, DYNAMIC
-TALL | Cao (dáng người) tiếng Anh là gì? | 1
-SHORT | Thấp, lùn (dáng người) tiếng Anh là gì? | 1
-FAT | Béo, mập tiếng Anh là gì? | 1 | OVERWEIGHT, CHUBBY, PLUMP
-THIN | Gầy, ốm (dáng người) tiếng Anh là gì? | 1 | SKINNY, SLIM, SLENDER
-CURLY HAIR | Tóc xoăn, tóc quăn tiếng Anh là gì? | 2 | CURLY
-STRAIGHT HAIR | Tóc thẳng tiếng Anh là gì? | 2 | STRAIGHT
-BALD | Hói đầu tiếng Anh là gì? | 2
-BLOND | Tóc vàng hoe tiếng Anh là gì? | 2 | BLONDE, BLOND HAIR, BLONDE HAIR, FAIR HAIR
-CUTE | Dễ thương tiếng Anh là gì? | 1 | ADORABLE
-UGLY | Xấu xí tiếng Anh là gì? | 1
-YOUNG | Trẻ (tuổi) tiếng Anh là gì? | 1
-PALE | Xanh xao, nhợt nhạt tiếng Anh là gì? | 3
-FRECKLES | Tàn nhang tiếng Anh là gì? | 3 | FRECKLE
-WRINKLE | Nếp nhăn tiếng Anh là gì? | 3 | WRINKLES
-SON | Con trai (của bố mẹ) tiếng Anh là gì? | 1
-DAUGHTER | Con gái (của bố mẹ) tiếng Anh là gì? | 1
-UNCLE | Chú, bác trai, cậu tiếng Anh là gì? | 1
-AUNT | Cô, dì, bác gái tiếng Anh là gì? | 2 | AUNTIE, AUNTY
-COUSIN | Anh chị em họ tiếng Anh là gì? | 2 | COUSINS
-NEPHEW | Cháu trai (con của anh chị em) tiếng Anh là gì? | 3
-NIECE | Cháu gái (con của anh chị em) tiếng Anh là gì? | 3
-GRANDCHILD | Cháu (con của con mình) tiếng Anh là gì? | 2 | GRANDCHILDREN, GRANDSON, GRANDDAUGHTER, GRANDKID, GRANDKIDS
-PARENTS | Bố mẹ (cả hai người) tiếng Anh là gì? | 1 | PARENT
-TWINS | Anh chị em sinh đôi tiếng Anh là gì? | 2 | TWIN
-NEIGHBOR | Hàng xóm tiếng Anh là gì? | 2 | NEIGHBOUR, NEIGHBORS, NEIGHBOURS
-GUEST | Khách (đến nhà chơi) tiếng Anh là gì? | 2 | GUESTS, VISITOR, VISITORS
-BEST FRIEND | Bạn thân tiếng Anh là gì? | 2 | BESTIE, BFF, CLOSE FRIEND
-BOY | Cậu bé tiếng Anh là gì? | 1
-GIRL | Cô bé tiếng Anh là gì? | 1
-MAN | Người đàn ông tiếng Anh là gì? | 1 | MEN, GUY
-WOMAN | Người phụ nữ tiếng Anh là gì? | 1 | WOMEN, LADY
-ADULT | Người lớn tiếng Anh là gì? | 2 | ADULTS, GROWN-UP, GROWNUP
+NECK | Cái cổ | 1
+SHOULDER | Bờ vai | 1 | SHOULDERS
+LEG | Cái chân (không phải bàn chân) | 1 | LEGS
+KNEE | Đầu gối | 2 | KNEES
+ELBOW | Khuỷu tay | 2 | ELBOWS
+WRIST | Cổ tay | 3 | WRISTS
+ANKLE | Mắt cá chân | 3 | ANKLES
+TOE | Ngón chân | 2 | TOES
+THUMB | Ngón tay cái | 2 | THUMBS
+BACK | Cái lưng | 1
+LIP | Đôi môi | 2 | LIPS
+TONGUE | Cái lưỡi | 2
+CHEEK | Gò má | 2 | CHEEKS
+CHIN | Cái cằm | 2
+FOREHEAD | Cái trán | 3
+EYEBROW | Lông mày | 3 | EYEBROWS, BROW, BROWS
+BEARD | Bộ râu (mọc ở cằm) | 2
+MUSTACHE | Ria mép | 2 | MOUSTACHE
+BODY | Cơ thể | 1
+BELLY BUTTON | Cái rốn | 3 | NAVEL, BELLYBUTTON
+DIMPLE | Lúm đồng tiền (trên má) | 3 | DIMPLES
+SLEEPY | Buồn ngủ | 1 | DROWSY
+TIRED | Mệt mỏi | 1 | EXHAUSTED, WEARY
+STRONG | Khỏe, mạnh (về sức lực) | 1
+WEAK | Yếu ớt (về sức lực) | 2 | FEEBLE
+STRESSED | Căng thẳng, áp lực (tâm lý) | 2 | STRESS, TENSE, STRESSED OUT
+ANGRY | Tức giận | 1 | MAD, FURIOUS
+SCARED | Sợ hãi | 1 | AFRAID, FRIGHTENED, TERRIFIED
+BORED | Chán (vì không có gì làm) | 1
+WORRIED | Lo lắng | 2 | ANXIOUS, CONCERNED
+NERVOUS | Hồi hộp, run (trước khi thi) | 2 | ANXIOUS
+PROUD | Tự hào | 2
+SURPRISED | Ngạc nhiên | 2 | AMAZED, ASTONISHED
+SHOCKED | Bị sốc | 2
+EXCITED | Háo hức, phấn khích | 2 | THRILLED
+EMBARRASSED | Ngượng ngùng, quê độ | 3 | ASHAMED
+CONFUSED | Bối rối, không hiểu gì | 2 | PUZZLED
+CALM | Bình tĩnh | 2
+RELAXED | Thư giãn, thoải mái | 2 | RELAX
+GRATEFUL | Biết ơn | 3 | THANKFUL
+HOPE | Hy vọng | 2
+DISAPPOINTED | Thất vọng | 3
+HOMESICK | Nhớ nhà | 3
+HATE | Ghét | 1 | DISLIKE
+LAUGH | Cười lớn (thành tiếng) | 1
+KIND | Tốt bụng | 1 | NICE, KIND-HEARTED, KINDHEARTED
+LAZY | Lười biếng | 1
+SHY | Nhút nhát, rụt rè | 2 | TIMID
+FUNNY | Hài hước, vui tính | 1 | HUMOROUS
+SMART | Thông minh | 1 | CLEVER, INTELLIGENT, BRIGHT
+HONEST | Trung thực | 2
+BRAVE | Dũng cảm | 2 | COURAGEOUS, BOLD
+POLITE | Lịch sự, lễ phép | 2 | COURTEOUS
+RUDE | Thô lỗ, hỗn láo | 2 | IMPOLITE
+HARD-WORKING | Chăm chỉ | 2 | HARDWORKING, DILIGENT, INDUSTRIOUS
+GENEROUS | Hào phóng, rộng rãi | 3
+SELFISH | Ích kỷ | 3
+STINGY | Keo kiệt, bủn xỉn | 3 | MEAN, MISERLY, CHEAP, TIGHT
+SILLY | Ngốc nghếch | 2 | FOOLISH, STUPID
+CLUMSY | Vụng về, hậu đậu | 3
+CAREFUL | Cẩn thận | 2
+CONFIDENT | Tự tin | 2
+TALKATIVE | Nói nhiều, lắm lời | 3 | CHATTY
+NAUGHTY | Nghịch ngợm (trẻ con) | 2 | MISCHIEVOUS
+CURIOUS | Tò mò | 2 | NOSY, NOSEY, INQUISITIVE
+STUBBORN | Bướng bỉnh, cứng đầu | 3 | OBSTINATE, HEADSTRONG
+ACTIVE | Năng động | 2 | ENERGETIC, DYNAMIC
+TALL | Cao (dáng người) | 1
+SHORT | Thấp, lùn (dáng người) | 1
+FAT | Béo, mập | 1 | OVERWEIGHT, CHUBBY, PLUMP
+THIN | Gầy, ốm (dáng người) | 1 | SKINNY, SLIM, SLENDER
+CURLY HAIR | Tóc xoăn, tóc quăn | 2 | CURLY
+STRAIGHT HAIR | Tóc thẳng | 2 | STRAIGHT
+BALD | Hói đầu | 2
+BLOND | Tóc vàng hoe | 2 | BLONDE, BLOND HAIR, BLONDE HAIR, FAIR HAIR
+CUTE | Dễ thương | 1 | ADORABLE
+UGLY | Xấu xí | 1
+YOUNG | Trẻ (tuổi) | 1
+PALE | Xanh xao, nhợt nhạt | 3
+FRECKLES | Tàn nhang | 3 | FRECKLE
+WRINKLE | Nếp nhăn | 3 | WRINKLES
+SON | Con trai (của bố mẹ) | 1
+DAUGHTER | Con gái (của bố mẹ) | 1
+UNCLE | Chú, bác trai, cậu | 1
+AUNT | Cô, dì, bác gái | 2 | AUNTIE, AUNTY
+COUSIN | Anh chị em họ | 2 | COUSINS
+NEPHEW | Cháu trai (con của anh chị em) | 3
+NIECE | Cháu gái (con của anh chị em) | 3
+GRANDCHILD | Cháu (con của con mình) | 2 | GRANDCHILDREN, GRANDSON, GRANDDAUGHTER, GRANDKID, GRANDKIDS
+PARENTS | Bố mẹ (cả hai người) | 1 | PARENT
+TWINS | Anh chị em sinh đôi | 2 | TWIN
+NEIGHBOR | Hàng xóm | 2 | NEIGHBOUR, NEIGHBORS, NEIGHBOURS
+GUEST | Khách (đến nhà chơi) | 2 | GUESTS, VISITOR, VISITORS
+BEST FRIEND | Bạn thân | 2 | BESTIE, BFF, CLOSE FRIEND
+BOY | Cậu bé | 1
+GIRL | Cô bé | 1
+MAN | Người đàn ông | 1 | MEN, GUY
+WOMAN | Người phụ nữ | 1 | WOMEN, LADY
+ADULT | Người lớn | 2 | ADULTS, GROWN-UP, GROWNUP
 FEATHER | Lông vũ chim | 1 | LÔNG VŨ
 TOOTHLYNE | Đau răng / nhức răng | 2 | ĐAU RĂNG
 EMOTION | Cảm xúc tâm lý | 1 | CẢM XÚC
@@ -109,20 +109,20 @@ RECOVERY | Sự hồi phục sức khỏe | 2 | HỒI PHỤC
 WELLNESS | Sức khỏe toàn diện | 2 | SỨC KHỎE
 EYELASH | Lông mi mắt | 2 | LÔNG MI
 LUNGS | Cặp lá phổi hít thở | 2 | LÁ PHỔI
-HOSPITALIZATION | Việc nhập viện điều trị | 3 | NHẬP VIỆN
+HOSPITALIZATION | Việc nhập viện điều trị | 3 | NHẬP VIỆN, HOSPITALISATION
 DIAGNOSTIC | Việc chẩn đoán bệnh | 3 | CHẨN ĐOÁN
 PREVENTION | Việc phòng ngừa bệnh tật | 2 | PHÒNG NGỪA
 EXHAUSTION | Sự kiệt sức / lả đi | 3 | KIỆT SỨC
 SATISFACTION | Sự hài lòng thỏa mãn | 2 | HÀI LÒNG
 FRUSTRATION | Sự bực bội / bức bối | 3 | BỨC BỐI
-NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ tiếng Anh là gì? | 3 | HOÀI NIỆM
-EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc tiếng Anh là gì? | 3 | HƯNG PHẤN
-MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng tiếng Anh là gì? | 3 | U SẦU
-EMPATHY | Sự thấu cảm sâu sắc hiểu được cảm xúc của người khác tiếng Anh là gì? | 3 | THẤU CẢM
-ADRENALINE | Chất hoóc-môn tiết ra khiến tim đập thình thịch khi hồi hộp hay phấn khích tiếng Anh là gì? | 2 | ADRENALIN
-HICCUP | Cơn nấc cụt giật liên hồi ở cổ họng tiếng Anh là gì? | 2 | NẤC CỤT, HICCUPS
-YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ngủ tiếng Anh là gì? | 1 | NGÁP
-HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi tiếng Anh là gì? | 2 | GÓT CHÂN
-PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói tiếng Anh là gì? | 2 | LÒNG BÀN TAY
-THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt tiếng Anh là gì? | 1 | CỔ HỌNG
-WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể tiếng Anh là gì? | 1 | VÒNG EO
+NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ | 3 | HOÀI NIỆM
+EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc | 3 | HƯNG PHẤN
+MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng | 3 | U SẦU
+EMPATHY | Sự thấu cảm sâu sắc hiểu được cảm xúc của người khác | 3 | THẤU CẢM
+ADRENALINE | Chất hoóc-môn tiết ra khiến tim đập thình thịch khi hồi hộp hay phấn khích | 2 | ADRENALIN
+HICCUP | Cơn nấc cụt giật liên hồi ở cổ họng | 2 | NẤC CỤT, HICCUPS
+YAWN | Hành động há to miệng ngáp một cái thật dài khi buồn ngủ | 1 | NGÁP
+HEEL | Phần gót chân sau bàn chân chạm đất đầu tiên khi bước đi | 2 | GÓT CHÂN
+PALM | Lòng bàn tay mở ra có các đường chỉ tay xem bói | 2 | LÒNG BÀN TAY
+THROAT | Cổ họng nơi nuốt thức ăn và nuốt nước bọt | 1 | CỔ HỌNG
+WAIST | Vòng eo thon gọn nhỏ nhắn của cơ thể | 1 | VÒNG EO

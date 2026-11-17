@@ -1,37 +1,37 @@
 # Tiếng Anh · Thể thao, thể hình
-BASEBALL | Môn bóng chày dùng gậy gỗ đánh bóng và chạy về các gôn tiếng Anh là gì? | 1 | BÓNG CHÀY
-ARCHERY | Môn thể thao bắn cung tên vào tâm bia ngắm bắn tiếng Anh là gì? | 2 | BẮN CUNG
-FENCING | Môn thể thao đấu kiếm phương Tây mang mặt nạ lưới sắt tiếng Anh là gì? | 2 | ĐẤU KIẾM
-GYMNASTICS | Môn thể dục dụng cụ nhào lộn dẻo dai trên xà và thảm tiếng Anh là gì? | 2 | THỂ DỤC DỤNG CỤ
-WEIGHTLIFTING | Môn cử tạ nâng các mức tạ nặng qua đầu tiếng Anh là gì? | 2 | CỬ TẠ
-SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường phố tiếng Anh là gì? | 1 | VÁN TRƯỢT, SKATEBOARDING
-SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn tiếng Anh là gì? | 1 | LƯỚT SÓNG
-TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ tiếng Anh là gì? | 3 | BA MÔN PHỐI HỢP
-ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ tiếng Anh là gì? | 2 | CHÈO THUYỀN
-SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết tiếng Anh là gì? | 2 | TRƯỢT TUYẾT, SNOWBOARDING
-BOXING | Môn đấm bốc / quyền anh so găng đối kháng trên sàn đài tiếng Anh là gì? | 1 | QUYỀN ANH, ĐẤM BỐC
-WRESTLING | Môn đấu vật tranh tài sức mạnh ghì đè đối thủ xuống thảm tiếng Anh là gì? | 2 | ĐẤU VẬT
-DUMBBELL | Cặp quả tạ tay nhỏ tập cơ bắp tay trong phòng gym tiếng Anh là gì? | 2 | TẠ TAY
-BARBELL | Thanh đòn tạ dài lắp bánh tạ hai đầu để gánh tạ tiếng Anh là gì? | 2 | THANH TẠ
-TREADMILL | Chiếc máy chạy bộ điện trong phòng tập thể hình tiếng Anh là gì? | 2 | MÁY CHẠY BỘ
-CALISTHENICS | Bộ môn tập thể hình đường phố dùng chính trọng lượng cơ thể tiếng Anh là gì? | 3 | THỂ HÌNH ĐƯỜNG PHỐ
-AEROBICS | Môn thể dục nhịp điệu aerobic vận động theo tiếng nhạc sôi động tiếng Anh là gì? | 2 | THỂ DỤC NHỊP ĐIỆU
-PODIUM | Bục vinh quang có ba bậc để các vận động viên đứng nhận giải tiếng Anh là gì? | 2 | BỤC VINH QUANG
-ATHLETE | Một vận động viên thể thao chuyên nghiệp rèn luyện thi đấu tiếng Anh là gì? | 2 | VẬN ĐỘNG VIÊN
-BOWLING | Trò chơi ném bóng gỗ làm đổ các ki gỗ tiếng Anh là gì? | 1 | BÓNG GỖ, BOWLING
-BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ tiếng Anh là gì? | 1 | BI-A, BIDA, POOL
-CRICKET | Môn bóng gậy rất được yêu thích tại Anh và Ấn Độ tiếng Anh là gì? | 2 | BÓNG GẬY, BÓNG CRICKET
-RUGBY | Môn bóng bầu dục tranh cướp bóng quyết liệt tiếng Anh là gì? | 2 | BÓNG BẦU DỤC
-HOCKEY | Môn khúc côn cầu chơi trên sân cỏ hoặc sân băng tiếng Anh là gì? | 2 | KHÚC CÔN CẦU
-SKATING | Trượt băng hoặc trượt pa-tin tiếng Anh là gì? | 1 | TRƯỢT BĂNG, TRƯỢT PATIN
-SKIING | Môn trượt tuyết trên các sườn núi dốc tiếng Anh là gì? | 1 | TRƯỢT TUYẾT
-SNOWBOARDING | Môn lướt ván trên nền tuyết trắng tiếng Anh là gì? | 2 | TRƯỢT VÁN TUYẾT
-WINDSURFING | Môn lướt ván buồm trên biển tiếng Anh là gì? | 2 | LƯỚT VÁN BUỒM
-KAYAKING | Môn chèo thuyền kayak vượt ghềnh thác tiếng Anh là gì? | 2 | CHÈO THUYỀN KAYAK
-CYCLING | Môn thể thao đua xe đạp đường trường tiếng Anh là gì? | 1 | ĐUA XE ĐẠP, ĐI XE ĐẠP
-EQUESTRIAN | Môn thể thao cưỡi ngựa nghệ thuật tiếng Anh là gì? | 3 | CƯỠI NGỰA
-BODYBUILDING | Môn thể hình rèn luyện cơ bắp săn chắc tiếng Anh là gì? | 2 | THỂ HÌNH
-STRETCHING | Bài tập giãn cơ bắp sau khi vận động tiếng Anh là gì? | 1 | GIÃN CƠ
-PUSH-UP | Động tác hít đất chống đẩy tăng cường sức mạnh tiếng Anh là gì? | 1 | HÍT ĐẤT, CHỐNG ĐẨY, PUSHUP
-SQUAT | Động tác gánh đùi ngồi xổm tăng lực chân tiếng Anh là gì? | 1 | GÁNH ĐÙI, SQUATS
-PLANK | Động tác đo sàn giữ thẳng người siết cơ bụng tiếng Anh là gì? | 1 | ĐO SÀN, TẬP PLANK
+BASEBALL | Môn bóng chày dùng gậy gỗ đánh bóng và chạy về các gôn | 1 | BÓNG CHÀY
+ARCHERY | Môn thể thao bắn cung tên vào tâm bia ngắm bắn | 2 | BẮN CUNG
+FENCING | Môn thể thao đấu kiếm phương Tây mang mặt nạ lưới sắt | 2 | ĐẤU KIẾM
+GYMNASTICS | Môn thể dục dụng cụ nhào lộn dẻo dai trên xà và thảm | 2 | THỂ DỤC DỤNG CỤ
+WEIGHTLIFTING | Môn cử tạ nâng các mức tạ nặng qua đầu | 2 | CỬ TẠ
+SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường phố | 1 | VÁN TRƯỢT, SKATEBOARDING
+SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn | 1 | LƯỚT SÓNG
+TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ | 3 | BA MÔN PHỐI HỢP
+ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ | 2 | CHÈO THUYỀN
+SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết | 2 | TRƯỢT TUYẾT, SNOWBOARDING
+BOXING | Môn đấm bốc / quyền anh so găng đối kháng trên sàn đài | 1 | QUYỀN ANH, ĐẤM BỐC
+WRESTLING | Môn đấu vật tranh tài sức mạnh ghì đè đối thủ xuống thảm | 2 | ĐẤU VẬT
+DUMBBELL | Cặp quả tạ tay nhỏ tập cơ bắp tay trong phòng gym | 2 | TẠ TAY
+BARBELL | Thanh đòn tạ dài lắp bánh tạ hai đầu để gánh tạ | 2 | THANH TẠ
+TREADMILL | Chiếc máy chạy bộ điện trong phòng tập thể hình | 2 | MÁY CHẠY BỘ
+CALISTHENICS | Bộ môn tập thể hình đường phố dùng chính trọng lượng cơ thể | 3 | THỂ HÌNH ĐƯỜNG PHỐ
+AEROBICS | Môn thể dục nhịp điệu aerobic vận động theo tiếng nhạc sôi động | 2 | THỂ DỤC NHỊP ĐIỆU
+PODIUM | Bục vinh quang có ba bậc để các vận động viên đứng nhận giải | 2 | BỤC VINH QUANG
+ATHLETE | Một vận động viên thể thao chuyên nghiệp rèn luyện thi đấu | 2 | VẬN ĐỘNG VIÊN
+BOWLING | Trò chơi ném bóng gỗ làm đổ các ki gỗ | 1 | BÓNG GỖ, BOWLING
+BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ | 1 | BI-A, BIDA, POOL
+CRICKET | Môn bóng gậy rất được yêu thích tại Anh và Ấn Độ | 2 | BÓNG GẬY, BÓNG CRICKET
+RUGBY | Môn bóng bầu dục tranh cướp bóng quyết liệt | 2 | BÓNG BẦU DỤC
+HOCKEY | Môn khúc côn cầu chơi trên sân cỏ hoặc sân băng | 2 | KHÚC CÔN CẦU
+SKATING | Trượt băng hoặc trượt pa-tin | 1 | TRƯỢT BĂNG, TRƯỢT PATIN
+SKIING | Môn trượt tuyết trên các sườn núi dốc | 1 | TRƯỢT TUYẾT
+SNOWBOARDING | Môn lướt ván trên nền tuyết trắng | 2 | TRƯỢT VÁN TUYẾT
+WINDSURFING | Môn lướt ván buồm trên biển | 2 | LƯỚT VÁN BUỒM
+KAYAKING | Môn chèo thuyền kayak vượt ghềnh thác | 2 | CHÈO THUYỀN KAYAK
+CYCLING | Môn thể thao đua xe đạp đường trường | 1 | ĐUA XE ĐẠP, ĐI XE ĐẠP
+EQUESTRIAN | Môn thể thao cưỡi ngựa nghệ thuật | 3 | CƯỠI NGỰA
+BODYBUILDING | Môn thể hình rèn luyện cơ bắp săn chắc | 2 | THỂ HÌNH
+STRETCHING | Bài tập giãn cơ bắp sau khi vận động | 1 | GIÃN CƠ
+PUSH-UP | Động tác hít đất chống đẩy tăng cường sức mạnh | 1 | HÍT ĐẤT, CHỐNG ĐẨY, PUSHUP
+SQUAT | Động tác gánh đùi ngồi xổm tăng lực chân | 1 | GÁNH ĐÙI, SQUATS
+PLANK | Động tác đo sàn giữ thẳng người siết cơ bụng | 1 | ĐO SÀN, TẬP PLANK

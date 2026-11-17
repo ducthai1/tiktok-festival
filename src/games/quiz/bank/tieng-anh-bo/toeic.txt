@@ -1,224 +1,224 @@
 # Tiếng Anh · TOEIC
-ADJOURN | Tạm hoãn cuộc họp tiếng Anh là gì? | 3
-ARRANGEMENT | Sự sắp xếp tiếng Anh là gì? | 2
-ASSEMBLY LINE | Dây chuyền lắp ráp tiếng Anh là gì? | 3
-ATTENDEE | Người tham dự tiếng Anh là gì? | 2
-AUCTION | Cuộc đấu giá tiếng Anh là gì? | 3
-BOARDROOM | Phòng họp hội đồng tiếng Anh là gì? | 2
-BOOKKEEPING | Ghi sổ kế toán tiếng Anh là gì? | 3
-BROKER | Người môi giới tiếng Anh là gì? | 3
-WHOLESALE | Bán buôn (bán sỉ) tiếng Anh là gì? | 2 | BULK
-RETAIL | Bán lẻ tiếng Anh là gì? | 2
-CLAIM | Yêu cầu bồi thường tiếng Anh là gì? | 3 | INSURANCE CLAIM
-CLERK | Nhân viên văn thư tiếng Anh là gì? | 2
-CONFIDENTIAL | Bảo mật (tài liệu mật) tiếng Anh là gì? | 2
-COUPON | Phiếu giảm giá tiếng Anh là gì? | 1 | VOUCHER
-COURIER | Dịch vụ chuyển phát tiếng Anh là gì? | 2
-CREDENTIALS | Giấy tờ chứng nhận năng lực tiếng Anh là gì? | 3
-DEBIT CARD | Thẻ ghi nợ tiếng Anh là gì? | 3 | DEBIT
-DEDUCT | Khấu trừ tiếng Anh là gì? | 3
-DISCONTINUE | Ngừng sản xuất tiếng Anh là gì? | 3
-DOWNSIZE | Thu hẹp quy mô (cắt giảm nhân sự) tiếng Anh là gì? | 3
-LAYOFF | Sa thải do cắt giảm tiếng Anh là gì? | 3 | LAY OFF
-DRESS CODE | Quy định trang phục tiếng Anh là gì? | 2
-ENCLOSE | Gửi kèm (trong thư) tiếng Anh là gì? | 3
-EXHIBIT | Trưng bày tiếng Anh là gì? | 2
-FARE | Giá vé (xe, tàu) tiếng Anh là gì? | 2
-FEE | Lệ phí tiếng Anh là gì? | 1
-FINANCE | Tài chính tiếng Anh là gì? | 1
-FREIGHT | Hàng hóa vận chuyển (cước) tiếng Anh là gì? | 3
-GRANT | Khoản tài trợ tiếng Anh là gì? | 3
-HANDOUT | Tài liệu phát tay tiếng Anh là gì? | 2
-HEADHUNTER | Người săn đầu người (tuyển dụng) tiếng Anh là gì? | 3
-INQUIRY | Yêu cầu thông tin tiếng Anh là gì? | 2 | ENQUIRY
-JOB OPENING | Vị trí đang tuyển tiếng Anh là gì? | 2 | OPENING, JOB VACANCY
-LABOR | Nhân công (lao động) tiếng Anh là gì? | 2 | LABOUR, WORKFORCE
-LETTERHEAD | Giấy có tiêu đề công ty tiếng Anh là gì? | 3
-LIAISON | Người liên lạc (đầu mối) tiếng Anh là gì? | 3
-MANUAL | Sách hướng dẫn sử dụng tiếng Anh là gì? | 1 | USER MANUAL, HANDBOOK
-MEMBERSHIP | Tư cách hội viên tiếng Anh là gì? | 1
-MILESTONE | Cột mốc (dự án) tiếng Anh là gì? | 2
-NEWSLETTER | Bản tin định kỳ tiếng Anh là gì? | 2
-NOMINATE | Đề cử tiếng Anh là gì? | 3
-ONBOARDING | Hội nhập nhân viên mới tiếng Anh là gì? | 3 | ORIENTATION
-OUTLET | Cửa hàng bán lẻ (điểm bán) tiếng Anh là gì? | 3
-PAYROLL | Bảng lương tiếng Anh là gì? | 3
-PREMISES | Cơ sở, mặt bằng (công ty) tiếng Anh là gì? | 3
-PREREQUISITE | Điều kiện tiên quyết tiếng Anh là gì? | 3
-PROFITABLE | Có lãi tiếng Anh là gì? | 2
-PROSPECTIVE | Tiềm năng (khách hàng tương lai) tiếng Anh là gì? | 3
-RECOMMENDATION | Thư giới thiệu tiếng Anh là gì? | 2 | REFERENCE
-REGISTRATION | Sự đăng ký tiếng Anh là gì? | 2
-REMINDER | Lời nhắc tiếng Anh là gì? | 1
-REPRESENTATIVE | Người đại diện tiếng Anh là gì? | 2 | REP
-RETURN POLICY | Chính sách đổi trả tiếng Anh là gì? | 2
-REVISE | Sửa lại (bản thảo) tiếng Anh là gì? | 2 | AMEND
-SHORTLIST | Danh sách rút gọn ứng viên tiếng Anh là gì? | 3
-SPONSOR | Nhà tài trợ tiếng Anh là gì? | 2
-STOCK | Cổ phiếu tiếng Anh là gì? | 2 | SHARE, SHARES
-SUGGESTION | Sự gợi ý, đề xuất tiếng Anh là gì? | 1
-SURPLUS | Thặng dư tiếng Anh là gì? | 3
-TELECONFERENCE | Hội nghị từ xa tiếng Anh là gì? | 3 | VIDEO CONFERENCE
-TRADE FAIR | Hội chợ thương mại tiếng Anh là gì? | 2 | TRADE SHOW
-URGENT | Khẩn cấp tiếng Anh là gì? | 1
-OFFICE SUPPLIES | Đồ dùng văn phòng tiếng Anh là gì? | 2
-JOB DESCRIPTION | Mô tả công việc tiếng Anh là gì? | 2 | JD
-PERFORMANCE REVIEW | Đánh giá hiệu quả làm việc tiếng Anh là gì? | 3 | APPRAISAL
-SALES REPRESENTATIVE | Nhân viên kinh doanh tiếng Anh là gì? | 2 | SALES REP, SALESPERSON
-CUSTOMER SERVICE | Dịch vụ chăm sóc khách hàng tiếng Anh là gì? | 1
-TERMS AND CONDITIONS | Điều khoản và điều kiện tiếng Anh là gì? | 2
-FISCAL | Liên quan tài chính (tính từ) tiếng Anh là gì? | 1
-ROYALTY | Tiền bản quyền tiếng Anh là gì? | 1
-STIPEND | Trợ cấp tiếng Anh là gì? | 1 | ALLOWANCE
-TRADEMARK | Nhãn hiệu thương mại tiếng Anh là gì? | 1 | BRAND
-PATENT | Bằng sáng chế tiếng Anh là gì? | 1
-DEBENTURE | Trái phiếu không có tài sản đảm bảo tiếng Anh là gì? | 1
-EMBARGO | Cấm vận tiếng Anh là gì? | 1
-LESSOR | Người cho thuê tiếng Anh là gì? | 1
-CONTRACT | Hợp đồng tiếng Anh là gì? | 1 | AGREEMENT
-MEETING | Cuộc họp tiếng Anh là gì? | 1
-SALARY | Tiền lương tiếng Anh là gì? | 1 | WAGE, WAGES, PAY
-COMPANY | Công ty tiếng Anh là gì? | 1 | FIRM, CORPORATION, BUSINESS
-CUSTOMER | Khách hàng tiếng Anh là gì? | 1 | CLIENT, CONSUMER
-EMPLOYEE | Nhân viên (người làm công) tiếng Anh là gì? | 1 | STAFF, WORKER
-OFFICE | Văn phòng tiếng Anh là gì? | 1
-DEADLINE | Hạn chót tiếng Anh là gì? | 1 | DUE DATE
-REPORT | Bản báo cáo tiếng Anh là gì? | 1
-PRICE | Giá bán tiếng Anh là gì? | 1 | COST
-DISCOUNT | Giảm giá (chiết khấu) tiếng Anh là gì? | 1 | SALE, MARKDOWN
-ORDER | Đơn đặt hàng tiếng Anh là gì? | 1 | PURCHASE ORDER
-DELIVERY | Việc giao hàng tiếng Anh là gì? | 1 | SHIPPING
-PRODUCT | Sản phẩm tiếng Anh là gì? | 1 | GOODS, ITEM
-SERVICE | Dịch vụ tiếng Anh là gì? | 1
-MARKET | Thị trường tiếng Anh là gì? | 1
-TAX | Thuế tiếng Anh là gì? | 1
-DEPARTMENT | Phòng ban (phòng kế toán…) tiếng Anh là gì? | 1 | DIVISION
-COLLEAGUE | Đồng nghiệp tiếng Anh là gì? | 1 | COWORKER, CO-WORKER
-INTERVIEW | Buổi phỏng vấn tiếng Anh là gì? | 1
-PRESENTATION | Bài thuyết trình tiếng Anh là gì? | 1
-SIGNATURE | Chữ ký tiếng Anh là gì? | 1
-CANCEL | Huỷ bỏ (huỷ lịch, huỷ đơn) tiếng Anh là gì? | 1
-CONFIRM | Xác nhận tiếng Anh là gì? | 1
-BUSINESS TRIP | Chuyến công tác tiếng Anh là gì? | 1
-FEEDBACK | Phản hồi, góp ý tiếng Anh là gì? | 1 | COMMENT, COMMENTS
-ADVERTISEMENT | Mẩu quảng cáo tiếng Anh là gì? | 1 | ADVERT, AD, COMMERCIAL
-BRAND | Thương hiệu tiếng Anh là gì? | 1
-FACTORY | Nhà máy tiếng Anh là gì? | 1 | PLANT
-REPAIR | Sửa chữa tiếng Anh là gì? | 1 | FIX
-REPLY | Trả lời (email) tiếng Anh là gì? | 1 | RESPOND, ANSWER
-PRINTER | Máy in tiếng Anh là gì? | 1
-DOCUMENT | Tài liệu, văn bản tiếng Anh là gì? | 1 | FILE, PAPER, PAPERS
-PAYMENT | Khoản thanh toán tiếng Anh là gì? | 1
-CASH | Tiền mặt tiếng Anh là gì? | 1
-CREDIT CARD | Thẻ tín dụng tiếng Anh là gì? | 1
-PARTNER | Đối tác tiếng Anh là gì? | 1
-EXPERIENCE | Kinh nghiệm tiếng Anh là gì? | 1
-BONUS | Tiền thưởng tiếng Anh là gì? | 1
-PART-TIME | Bán thời gian tiếng Anh là gì? | 1 | PART TIME
-INTERN | Thực tập sinh tiếng Anh là gì? | 1 | TRAINEE
-RENT | Tiền thuê (nhà, văn phòng) tiếng Anh là gì? | 1 | RENTAL
-RECEIPT | Biên lai (nhận khi trả tiền) tiếng Anh là gì? | 2
-INVOICE | Hoá đơn (gửi khách đòi tiền) tiếng Anh là gì? | 2 | BILL
-WAREHOUSE | Nhà kho tiếng Anh là gì? | 2 | STOREHOUSE, DEPOT
-SUPPLIER | Nhà cung cấp tiếng Anh là gì? | 2 | VENDOR, PROVIDER
-PROFIT | Lợi nhuận tiếng Anh là gì? | 2 | EARNINGS, GAIN
-BUDGET | Ngân sách tiếng Anh là gì? | 2
-EXPENSE | Khoản chi phí tiếng Anh là gì? | 2 | EXPENSES, COST, COSTS, EXPENDITURE
-LOAN | Khoản vay tiếng Anh là gì? | 2
-INVEST | Đầu tư (động từ) tiếng Anh là gì? | 2
-INVESTOR | Nhà đầu tư tiếng Anh là gì? | 2
-ACCOUNTANT | Kế toán viên tiếng Anh là gì? | 2
-RECEPTIONIST | Nhân viên lễ tân tiếng Anh là gì? | 2
-APPLICANT | Ứng viên (người nộp đơn) tiếng Anh là gì? | 2 | CANDIDATE
-RESUME | Sơ yếu lý lịch tiếng Anh là gì? | 2 | CV, CURRICULUM VITAE
-HIRE | Tuyển dụng, thuê người tiếng Anh là gì? | 2 | RECRUIT, EMPLOY
-RESIGN | Xin nghỉ việc, từ chức tiếng Anh là gì? | 2 | QUIT
-RETIRE | Nghỉ hưu tiếng Anh là gì? | 2
-WORKSHOP | Buổi hội thảo thực hành tiếng Anh là gì? | 2 | SEMINAR
-CONFERENCE | Hội nghị tiếng Anh là gì? | 2 | CONVENTION
-PROPOSAL | Bản đề xuất tiếng Anh là gì? | 2
-NEGOTIATE | Đàm phán (động từ) tiếng Anh là gì? | 2 | BARGAIN
-APPROVE | Phê duyệt, chấp thuận tiếng Anh là gì? | 2 | ACCEPT, AUTHORIZE, AUTHORISE
-POSTPONE | Hoãn lại (cuộc họp) tiếng Anh là gì? | 2 | DELAY, PUT OFF, RESCHEDULE
-WARRANTY | Bảo hành tiếng Anh là gì? | 2 | GUARANTEE
-COMPLAINT | Lời phàn nàn, khiếu nại tiếng Anh là gì? | 2
-SURVEY | Cuộc khảo sát tiếng Anh là gì? | 2 | QUESTIONNAIRE, POLL
-SLOGAN | Khẩu hiệu quảng cáo tiếng Anh là gì? | 2 | TAGLINE
-COMPETITOR | Đối thủ cạnh tranh tiếng Anh là gì? | 2 | RIVAL
-SALES | Doanh số bán hàng tiếng Anh là gì? | 2
-EQUIPMENT | Thiết bị, máy móc tiếng Anh là gì? | 2 | MACHINERY
-PHOTOCOPY | Bản sao (bản photo) tiếng Anh là gì? | 2 | COPY
-BALANCE | Số dư tài khoản tiếng Anh là gì? | 2
-PARTNERSHIP | Quan hệ hợp tác tiếng Anh là gì? | 2 | COOPERATION, COLLABORATION
-STRATEGY | Chiến lược tiếng Anh là gì? | 2 | PLAN
-ACHIEVE | Đạt được (mục tiêu) tiếng Anh là gì? | 2 | REACH, ACCOMPLISH, ATTAIN
-PERFORMANCE | Hiệu suất làm việc tiếng Anh là gì? | 2
-EFFICIENT | Hiệu quả, năng suất (tính từ) tiếng Anh là gì? | 2 | EFFECTIVE, PRODUCTIVE
-REQUIREMENT | Yêu cầu (điều kiện cần có) tiếng Anh là gì? | 2 | REQUIREMENTS, CONDITION
-BENEFIT | Phúc lợi (bảo hiểm, nghỉ phép) tiếng Anh là gì? | 2 | BENEFITS, PERKS
-OVERTIME | Làm thêm giờ tiếng Anh là gì? | 2
-SHIFT | Ca làm việc tiếng Anh là gì? | 2
-LEAVE | Nghỉ phép tiếng Anh là gì? | 2 | DAY OFF, TIME OFF, VACATION, HOLIDAY
-CEO | Giám đốc điều hành tiếng Anh là gì? | 2 | CHIEF EXECUTIVE, DIRECTOR
-HUMAN RESOURCES | Phòng nhân sự tiếng Anh là gì? | 2 | HR, PERSONNEL
-MARKETING | Ngành tiếp thị tiếng Anh là gì? | 2
-CATALOG | Danh mục sản phẩm (cuốn giới thiệu hàng) tiếng Anh là gì? | 2 | CATALOGUE
-SAMPLE | Hàng mẫu tiếng Anh là gì? | 2 | SPECIMEN
-PURCHASE | Mua (cách nói trang trọng) tiếng Anh là gì? | 2 | BUY
-LANDLORD | Chủ nhà cho thuê tiếng Anh là gì? | 2 | LANDLADY, OWNER
-CONSTRUCTION | Việc xây dựng tiếng Anh là gì? | 2 | BUILDING
-REGULATION | Quy định tiếng Anh là gì? | 2 | RULE, RULES, REGULATIONS
-POLICY | Chính sách (công ty) tiếng Anh là gì? | 2
-CAFETERIA | Căng tin tiếng Anh là gì? | 2 | CANTEEN
-ANNOUNCEMENT | Thông báo (chính thức) tiếng Anh là gì? | 2 | NOTICE
-ANNUAL | Hằng năm (tính từ) tiếng Anh là gì? | 2 | YEARLY
-QUARTER | Quý (3 tháng) tiếng Anh là gì? | 2
-REVENUE | Doanh thu tiếng Anh là gì? | 3 | TURNOVER, INCOME
-SHAREHOLDER | Cổ đông tiếng Anh là gì? | 3 | STOCKHOLDER
-HEADQUARTERS | Trụ sở chính tiếng Anh là gì? | 3 | HEAD OFFICE, HQ
-AGENDA | Các mục cần bàn trong cuộc họp tiếng Anh là gì? | 3
-MINUTES | Biên bản cuộc họp tiếng Anh là gì? | 3 | MEETING MINUTES
-SHIPMENT | Lô hàng (được gửi đi) tiếng Anh là gì? | 3 | CONSIGNMENT, CARGO
-MERCHANDISE | Hàng hoá (để bán) tiếng Anh là gì? | 3 | GOODS, PRODUCTS
-MANUFACTURE | Sản xuất (trong nhà máy) tiếng Anh là gì? | 3 | PRODUCE, MAKE
-MAINTENANCE | Bảo trì tiếng Anh là gì? | 3 | UPKEEP, SERVICING
-STATIONERY | Văn phòng phẩm tiếng Anh là gì? | 3 | OFFICE SUPPLIES
-EXTENSION | Số máy lẻ (điện thoại) tiếng Anh là gì? | 3
-VOICEMAIL | Hộp thư thoại tiếng Anh là gì? | 3 | VOICE MAIL
-INSTALLMENT | Một kỳ trả góp tiếng Anh là gì? | 3 | INSTALMENT
-BANKRUPT | Phá sản (tính từ) tiếng Anh là gì? | 3 | INSOLVENT
-MERGER | Sự sáp nhập (hai công ty) tiếng Anh là gì? | 3 | MERGE
-PRODUCTIVITY | Năng suất lao động tiếng Anh là gì? | 3
-QUALIFICATION | Bằng cấp, trình độ tiếng Anh là gì? | 3 | QUALIFICATIONS, DEGREE
-LOGISTICS | Hậu cần, kho vận tiếng Anh là gì? | 3
-BROCHURE | Tờ gấp quảng cáo tiếng Anh là gì? | 3 | LEAFLET, FLYER, PAMPHLET
-QUOTE | Bảng báo giá tiếng Anh là gì? | 3 | QUOTATION, ESTIMATE
-LEASE | Hợp đồng thuê tiếng Anh là gì? | 3 | RENTAL AGREEMENT
-TENANT | Người thuê nhà tiếng Anh là gì? | 3 | RENTER
-RENOVATE | Sửa sang, cải tạo (toà nhà) tiếng Anh là gì? | 3 | REFURBISH, REMODEL
-PERMIT | Giấy phép tiếng Anh là gì? | 3 | LICENSE, LICENCE
-SUPERVISE | Giám sát tiếng Anh là gì? | 3 | OVERSEE, MONITOR
-DELEGATE | Giao việc cho cấp dưới tiếng Anh là gì? | 3 | ASSIGN
-MEMO | Bản ghi nhớ nội bộ tiếng Anh là gì? | 3 | MEMORANDUM
-BOARD | Hội đồng quản trị tiếng Anh là gì? | 3 | BOARD OF DIRECTORS
-REIMBURSE | Hoàn trả chi phí (bù tiền đã chi) tiếng Anh là gì? | 3 | REFUND, REPAY
-AUDIT | Kiểm toán (kiểm tra tài chính) tiếng Anh là gì? | 3 | AUDITING
-TRANSACTION | Giao dịch tài chính tiếng Anh là gì? | 3 | DEAL
-COMPENSATION | Tiền đền bù, bồi thường tiếng Anh là gì? | 3 | INDEMNITY, REPARATION
+ADJOURN | Tạm hoãn cuộc họp | 3
+ARRANGEMENT | Sự sắp xếp | 2
+ASSEMBLY LINE | Dây chuyền lắp ráp | 3
+ATTENDEE | Người tham dự | 2
+AUCTION | Cuộc đấu giá | 3
+BOARDROOM | Phòng họp hội đồng | 2
+BOOKKEEPING | Ghi sổ kế toán | 3
+BROKER | Người môi giới | 3
+WHOLESALE | Bán buôn (bán sỉ) | 2 | BULK
+RETAIL | Bán lẻ | 2
+CLAIM | Yêu cầu bồi thường | 3 | INSURANCE CLAIM
+CLERK | Nhân viên văn thư | 2
+CONFIDENTIAL | Bảo mật (tài liệu mật) | 2
+COUPON | Phiếu giảm giá | 1 | VOUCHER
+COURIER | Dịch vụ chuyển phát | 2
+CREDENTIALS | Giấy tờ chứng nhận năng lực | 3
+DEBIT CARD | Thẻ ghi nợ | 3 | DEBIT
+DEDUCT | Khấu trừ | 3
+DISCONTINUE | Ngừng sản xuất | 3
+DOWNSIZE | Thu hẹp quy mô (cắt giảm nhân sự) | 3
+LAYOFF | Sa thải do cắt giảm | 3 | LAY OFF
+DRESS CODE | Quy định trang phục | 2
+ENCLOSE | Gửi kèm (trong thư) | 3
+EXHIBIT | Trưng bày | 2
+FARE | Giá vé (xe, tàu) | 2
+FEE | Lệ phí | 1
+FINANCE | Tài chính | 1
+FREIGHT | Hàng hóa vận chuyển (cước) | 3
+GRANT | Khoản tài trợ | 3
+HANDOUT | Tài liệu phát tay | 2
+HEADHUNTER | Người săn đầu người (tuyển dụng) | 3
+INQUIRY | Yêu cầu thông tin | 2 | ENQUIRY
+JOB OPENING | Vị trí đang tuyển | 2 | OPENING, JOB VACANCY
+LABOR | Nhân công (lao động) | 2 | LABOUR, WORKFORCE
+LETTERHEAD | Giấy có tiêu đề công ty | 3
+LIAISON | Người liên lạc (đầu mối) | 3
+MANUAL | Sách hướng dẫn sử dụng | 1 | USER MANUAL, HANDBOOK
+MEMBERSHIP | Tư cách hội viên | 1
+MILESTONE | Cột mốc (dự án) | 2
+NEWSLETTER | Bản tin định kỳ | 2
+NOMINATE | Đề cử | 3
+ONBOARDING | Hội nhập nhân viên mới | 3 | ORIENTATION
+OUTLET | Cửa hàng bán lẻ (điểm bán) | 3
+PAYROLL | Bảng lương | 3
+PREMISES | Cơ sở, mặt bằng (công ty) | 3
+PREREQUISITE | Điều kiện tiên quyết | 3
+PROFITABLE | Có lãi | 2
+PROSPECTIVE | Tiềm năng (khách hàng tương lai) | 3
+RECOMMENDATION | Thư giới thiệu | 2 | REFERENCE
+REGISTRATION | Sự đăng ký | 2
+REMINDER | Lời nhắc | 1
+REPRESENTATIVE | Người đại diện | 2 | REP
+RETURN POLICY | Chính sách đổi trả | 2
+REVISE | Sửa lại (bản thảo) | 2 | AMEND
+SHORTLIST | Danh sách rút gọn ứng viên | 3
+SPONSOR | Nhà tài trợ | 2
+STOCK | Cổ phiếu | 2 | SHARE, SHARES
+SUGGESTION | Sự gợi ý, đề xuất | 1
+SURPLUS | Thặng dư | 3
+TELECONFERENCE | Hội nghị từ xa | 3 | VIDEO CONFERENCE
+TRADE FAIR | Hội chợ thương mại | 2 | TRADE SHOW
+URGENT | Khẩn cấp | 1
+OFFICE SUPPLIES | Đồ dùng văn phòng | 2
+JOB DESCRIPTION | Mô tả công việc | 2 | JD
+PERFORMANCE REVIEW | Đánh giá hiệu quả làm việc | 3 | APPRAISAL
+SALES REPRESENTATIVE | Nhân viên kinh doanh | 2 | SALES REP, SALESPERSON
+CUSTOMER SERVICE | Dịch vụ chăm sóc khách hàng | 1
+TERMS AND CONDITIONS | Điều khoản và điều kiện | 2
+FISCAL | Liên quan tài chính (tính từ) | 1
+ROYALTY | Tiền bản quyền | 1
+STIPEND | Trợ cấp | 1 | ALLOWANCE
+TRADEMARK | Nhãn hiệu thương mại | 1 | BRAND
+PATENT | Bằng sáng chế | 1
+DEBENTURE | Trái phiếu không có tài sản đảm bảo | 1
+EMBARGO | Cấm vận | 1
+LESSOR | Người cho thuê | 1
+CONTRACT | Hợp đồng | 1 | AGREEMENT
+MEETING | Cuộc họp | 1
+SALARY | Tiền lương | 1 | WAGE, WAGES, PAY
+COMPANY | Công ty | 1 | FIRM, CORPORATION, BUSINESS
+CUSTOMER | Khách hàng | 1 | CLIENT, CONSUMER
+EMPLOYEE | Nhân viên (người làm công) | 1 | STAFF, WORKER
+OFFICE | Văn phòng | 1
+DEADLINE | Hạn chót | 1 | DUE DATE
+REPORT | Bản báo cáo | 1
+PRICE | Giá bán | 1 | COST
+DISCOUNT | Giảm giá (chiết khấu) | 1 | SALE, MARKDOWN
+ORDER | Đơn đặt hàng | 1 | PURCHASE ORDER
+DELIVERY | Việc giao hàng | 1 | SHIPPING
+PRODUCT | Sản phẩm | 1 | GOODS, ITEM
+SERVICE | Dịch vụ | 1
+MARKET | Thị trường | 1
+TAX | Thuế | 1
+DEPARTMENT | Phòng ban (phòng kế toán…) | 1 | DIVISION
+COLLEAGUE | Đồng nghiệp | 1 | COWORKER, CO-WORKER
+INTERVIEW | Buổi phỏng vấn | 1
+PRESENTATION | Bài thuyết trình | 1
+SIGNATURE | Chữ ký | 1
+CANCEL | Huỷ bỏ (huỷ lịch, huỷ đơn) | 1
+CONFIRM | Xác nhận | 1
+BUSINESS TRIP | Chuyến công tác | 1
+FEEDBACK | Phản hồi, góp ý | 1 | COMMENT, COMMENTS
+ADVERTISEMENT | Mẩu quảng cáo | 1 | ADVERT, AD, COMMERCIAL
+BRAND | Thương hiệu | 1
+FACTORY | Nhà máy | 1 | PLANT
+REPAIR | Sửa chữa | 1 | FIX
+REPLY | Trả lời (email) | 1 | RESPOND, ANSWER
+PRINTER | Máy in | 1
+DOCUMENT | Tài liệu, văn bản | 1 | FILE, PAPER, PAPERS
+PAYMENT | Khoản thanh toán | 1
+CASH | Tiền mặt | 1
+CREDIT CARD | Thẻ tín dụng | 1
+PARTNER | Đối tác | 1
+EXPERIENCE | Kinh nghiệm | 1
+BONUS | Tiền thưởng | 1
+PART-TIME | Bán thời gian | 1 | PART TIME
+INTERN | Thực tập sinh | 1 | TRAINEE
+RENT | Tiền thuê (nhà, văn phòng) | 1 | RENTAL
+RECEIPT | Biên lai (nhận khi trả tiền) | 2
+INVOICE | Hoá đơn (gửi khách đòi tiền) | 2 | BILL
+WAREHOUSE | Nhà kho | 2 | STOREHOUSE, DEPOT
+SUPPLIER | Nhà cung cấp | 2 | VENDOR, PROVIDER
+PROFIT | Lợi nhuận | 2 | EARNINGS, GAIN
+BUDGET | Ngân sách | 2
+EXPENSE | Khoản chi phí | 2 | EXPENSES, COST, COSTS, EXPENDITURE
+LOAN | Khoản vay | 2
+INVEST | Đầu tư (động từ) | 2
+INVESTOR | Nhà đầu tư | 2
+ACCOUNTANT | Kế toán viên | 2
+RECEPTIONIST | Nhân viên lễ tân | 2
+APPLICANT | Ứng viên (người nộp đơn) | 2 | CANDIDATE
+RESUME | Sơ yếu lý lịch | 2 | CV, CURRICULUM VITAE
+HIRE | Tuyển dụng, thuê người | 2 | RECRUIT, EMPLOY
+RESIGN | Xin nghỉ việc, từ chức | 2 | QUIT
+RETIRE | Nghỉ hưu | 2
+WORKSHOP | Buổi hội thảo thực hành | 2 | SEMINAR
+CONFERENCE | Hội nghị | 2 | CONVENTION
+PROPOSAL | Bản đề xuất | 2
+NEGOTIATE | Đàm phán (động từ) | 2 | BARGAIN
+APPROVE | Phê duyệt, chấp thuận | 2 | ACCEPT, AUTHORIZE, AUTHORISE
+POSTPONE | Hoãn lại (cuộc họp) | 2 | DELAY, PUT OFF, RESCHEDULE
+WARRANTY | Bảo hành | 2 | GUARANTEE
+COMPLAINT | Lời phàn nàn, khiếu nại | 2
+SURVEY | Cuộc khảo sát | 2 | QUESTIONNAIRE, POLL
+SLOGAN | Khẩu hiệu quảng cáo | 2 | TAGLINE
+COMPETITOR | Đối thủ cạnh tranh | 2 | RIVAL
+SALES | Doanh số bán hàng | 2
+EQUIPMENT | Thiết bị, máy móc | 2 | MACHINERY
+PHOTOCOPY | Bản sao (bản photo) | 2 | COPY
+BALANCE | Số dư tài khoản | 2
+PARTNERSHIP | Quan hệ hợp tác | 2 | COOPERATION, COLLABORATION
+STRATEGY | Chiến lược | 2 | PLAN
+ACHIEVE | Đạt được (mục tiêu) | 2 | REACH, ACCOMPLISH, ATTAIN
+PERFORMANCE | Hiệu suất làm việc | 2
+EFFICIENT | Hiệu quả, năng suất (tính từ) | 2 | EFFECTIVE, PRODUCTIVE
+REQUIREMENT | Yêu cầu (điều kiện cần có) | 2 | REQUIREMENTS, CONDITION
+BENEFIT | Phúc lợi (bảo hiểm, nghỉ phép) | 2 | BENEFITS, PERKS
+OVERTIME | Làm thêm giờ | 2
+SHIFT | Ca làm việc | 2
+LEAVE | Nghỉ phép | 2 | DAY OFF, TIME OFF, VACATION, HOLIDAY
+CEO | Giám đốc điều hành | 2 | CHIEF EXECUTIVE, DIRECTOR
+HUMAN RESOURCES | Phòng nhân sự | 2 | HR, PERSONNEL
+MARKETING | Ngành tiếp thị | 2
+CATALOG | Danh mục sản phẩm (cuốn giới thiệu hàng) | 2 | CATALOGUE
+SAMPLE | Hàng mẫu | 2 | SPECIMEN
+PURCHASE | Mua (cách nói trang trọng) | 2 | BUY
+LANDLORD | Chủ nhà cho thuê | 2 | LANDLADY, OWNER
+CONSTRUCTION | Việc xây dựng | 2 | BUILDING
+REGULATION | Quy định | 2 | RULE, RULES, REGULATIONS
+POLICY | Chính sách (công ty) | 2
+CAFETERIA | Căng tin | 2 | CANTEEN
+ANNOUNCEMENT | Thông báo (chính thức) | 2 | NOTICE
+ANNUAL | Hằng năm (tính từ) | 2 | YEARLY
+QUARTER | Quý (3 tháng) | 2
+REVENUE | Doanh thu | 3 | TURNOVER, INCOME
+SHAREHOLDER | Cổ đông | 3 | STOCKHOLDER
+HEADQUARTERS | Trụ sở chính | 3 | HEAD OFFICE, HQ
+AGENDA | Các mục cần bàn trong cuộc họp | 3
+MINUTES | Biên bản cuộc họp | 3 | MEETING MINUTES
+SHIPMENT | Lô hàng (được gửi đi) | 3 | CONSIGNMENT, CARGO
+MERCHANDISE | Hàng hoá (để bán) | 3 | GOODS, PRODUCTS
+MANUFACTURE | Sản xuất (trong nhà máy) | 3 | PRODUCE, MAKE
+MAINTENANCE | Bảo trì | 3 | UPKEEP, SERVICING
+STATIONERY | Văn phòng phẩm | 3 | OFFICE SUPPLIES
+EXTENSION | Số máy lẻ (điện thoại) | 3
+VOICEMAIL | Hộp thư thoại | 3 | VOICE MAIL
+INSTALLMENT | Một kỳ trả góp | 3 | INSTALMENT
+BANKRUPT | Phá sản (tính từ) | 3 | INSOLVENT
+MERGER | Sự sáp nhập (hai công ty) | 3 | MERGE
+PRODUCTIVITY | Năng suất lao động | 3
+QUALIFICATION | Bằng cấp, trình độ | 3 | QUALIFICATIONS, DEGREE
+LOGISTICS | Hậu cần, kho vận | 3
+BROCHURE | Tờ gấp quảng cáo | 3 | LEAFLET, FLYER, PAMPHLET
+QUOTE | Bảng báo giá | 3 | QUOTATION, ESTIMATE
+LEASE | Hợp đồng thuê | 3 | RENTAL AGREEMENT
+TENANT | Người thuê nhà | 3 | RENTER
+RENOVATE | Sửa sang, cải tạo (toà nhà) | 3 | REFURBISH, REMODEL
+PERMIT | Giấy phép | 3 | LICENSE, LICENCE
+SUPERVISE | Giám sát | 3 | OVERSEE, MONITOR
+DELEGATE | Giao việc cho cấp dưới | 3 | ASSIGN
+MEMO | Bản ghi nhớ nội bộ | 3 | MEMORANDUM
+BOARD | Hội đồng quản trị | 3 | BOARD OF DIRECTORS
+REIMBURSE | Hoàn trả chi phí (bù tiền đã chi) | 3 | REFUND, REPAY
+AUDIT | Kiểm toán (kiểm tra tài chính) | 3 | AUDITING
+TRANSACTION | Giao dịch tài chính | 3 | DEAL
+COMPENSATION | Tiền đền bù, bồi thường | 3 | INDEMNITY, REPARATION
 NEGOTIATION | Sự thương lượng, đàm phán tiếng Anh is gì? | 3 | BARGAINING, NEGOTIATIONS
-STAKEHOLDER | Bên liên quan (trong dự án/doanh nghiệp) tiếng Anh là gì? | 3 | INTERESTED PARTY
-PORTFOLIO | Danh mục đầu tư tiếng Anh là gì? | 3
-CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại tiếng Anh là gì? | 3 | LETTERS, MAIL
-COLLATERAL | Tài sản thế chấp (vay ngân hàng) tiếng Anh là gì? | 3 | SECURITY, PLEDGE
-RECRUITMENT | Sự tuyển dụng nhân sự tiếng Anh là gì? | 3 | RECRUITING, HIRING
-COMMISSION | Tiền hoa hồng (doanh số) tiếng Anh là gì? | 2 | CUT
-SUBSIDY | Tiền trợ cấp của chính phủ tiếng Anh là gì? | 3 | GRANT, SUBVENTIONS
-DEFECT | Lỗi sản phẩm (khuyết tật) tiếng Anh là gì? | 3 | FAULT, FLAW
-LIABILITY | Nghĩa vụ pháp lý, khoản nợ tiếng Anh là gì? | 3 | DEBT, OBLIGATION
-ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân tiếng Anh là gì? | 3 | BUSINESSOWNER
-INFLATION | Sự lạm phát tiếng Anh là gì? | 3
-VACANCY | Vị trí công việc đang trống tiếng Anh là gì? | 2 | JOB VACANCY, OPENING
-ALLOWANCE | Tiền phụ cấp tiếng Anh là gì? | 2 | SUBSIDY, STIPEND
+STAKEHOLDER | Bên liên quan (trong dự án/doanh nghiệp) | 3 | INTERESTED PARTY
+PORTFOLIO | Danh mục đầu tư | 3
+CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại | 3 | LETTERS, MAIL
+COLLATERAL | Tài sản thế chấp (vay ngân hàng) | 3 | SECURITY, PLEDGE
+RECRUITMENT | Sự tuyển dụng nhân sự | 3 | RECRUITING, HIRING
+COMMISSION | Tiền hoa hồng (doanh số) | 2 | CUT
+SUBSIDY | Tiền trợ cấp của chính phủ | 3 | GRANT, SUBVENTIONS
+DEFECT | Lỗi sản phẩm (khuyết tật) | 3 | FAULT, FLAW
+LIABILITY | Nghĩa vụ pháp lý, khoản nợ | 3 | DEBT, OBLIGATION
+ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân | 3 | BUSINESSOWNER
+INFLATION | Sự lạm phát | 3
+VACANCY | Vị trí công việc đang trống | 2 | JOB VACANCY, OPENING
+ALLOWANCE | Tiền phụ cấp | 2 | SUBSIDY, STIPEND
 ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3 | ĐÁP ỨNG
 AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3 | SỬA ĐỔI
 COMPLIANCE | Sự tuân thủ quy định | 3 | TUÂN THỦ
@@ -264,74 +264,74 @@ TARIFF | Mức thuế quan áp đặt lên hàng hóa xuất nhập khẩu | 2 |
 CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh nghiệp | 3 | KHÁCH HÀNG QUEN
 ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2 | BẢO CHỨNG
 FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3 | TÍNH KHẢ THI
-DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty tiếng Anh là gì? | 3 | CỔ TỨC
-TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty tiếng Anh là gì? | 2 | THÂU TÓM
-SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ tiếng Anh là gì? | 3 | CÔNG TY CON
-CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn tiếng Anh là gì? | 2 | TẬP ĐOÀN
-STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá tiếng Anh là gì? | 1 | KHỞI NGHIỆP
-VENTURE | Dự án liên doanh kinh doanh mạo hiểm tiếng Anh là gì? | 2 | DỰ ÁN MẠO HIỂM
-DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường tiếng Anh là gì? | 2 | NHÀ PHÂN PHỐI
-RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua tiếng Anh là gì? | 2 | BÁN LẺ
-CONSIGNMENT | Hàng gửi bán đại lý ký gửi tiếng Anh là gì? | 3 | HÀNG KÝ GỬI
-BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển tiếng Anh là gì? | 3 | VẬN ĐƠN
-PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng tiếng Anh là gì? | 2 | PHIẾU ĐÓNG GÓI
-DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh tiếng Anh là gì? | 2 | THUẾ NHẬP KHẨU
-EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá tiếng Anh là gì? | 3 | THUẾ TIÊU THỤ
-REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng tiếng Anh là gì? | 3 | TIỀN HOÀN LẠI
-BARGAIN | Món hàng mua được giá hời rất rẻ tiếng Anh là gì? | 2 | MÓN HỜI
-BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc tiếng Anh là gì? | 2 | BIỂN QUẢNG CÁO
-FLYER | Tờ rơi quảng cáo phát tận tay người đi đường tiếng Anh là gì? | 2 | TỜ RƠI, LEAFLET
-QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra tiếng Anh là gì? | 2 | BẢN CÂU HỎI
-AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác tiếng Anh là gì? | 1 | THỎA THUẬN
-CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật tiếng Anh là gì? | 2 | ĐIỀU KHOẢN
-STIPULATION | Quy định điều kiện bắt buộc phải tuân theo tiếng Anh là gì? | 3 | QUY ĐỊNH BẮT BUỘC
-BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng tiếng Anh là gì? | 3 | VI PHẠM HỢP ĐỒNG
-TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động tiếng Anh là gì? | 2 | CHẤM DỨT HỢP ĐỒNG
-RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng tiếng Anh là gì? | 2 | GIA HẠN
-EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng tiếng Anh là gì? | 2 | HẾT HẠN, EXPIRY
-FISCAL YEAR | Năm tài chính kỳ kế toán 12 tháng của doanh nghiệp tiếng Anh là gì? | 2 | NĂM TÀI CHÍNH
-QUARTERLY REPORT | Báo cáo kết quả kinh doanh quý được công bố định kỳ tiếng Anh là gì? | 2 | BÁO CÁO QUÝ
-GROSS PROFIT | Lợi nhuận gộp doanh thu trừ giá vốn hàng bán tiếng Anh là gì? | 2 | LỢI NHUẬN GỘP
-NET PROFIT | Lợi nhuận ròng sau khi đã trừ tất cả các chi phí và thuế tiếng Anh là gì? | 2 | LỢI NHUẬN RÒNG
-OPERATING COST | Chi phí vận hành hoạt động kinh doanh thường ngày tiếng Anh là gì? | 2 | CHI PHÍ VẬN HÀNH
-OVERHEAD | Chi phí chung cố định như tiền thuê văn phòng điện nước tiếng Anh là gì? | 2 | CHI PHÍ CHUNG
-VARIABLE COST | Chi phí biến đổi thay đổi theo sản lượng sản xuất tiếng Anh là gì? | 3 | CHI PHÍ BIẾN ĐỔI
-FIXED COST | Chi phí cố định không thay đổi dù sản xuất nhiều hay ít tiếng Anh là gì? | 2 | CHI PHÍ CỐ ĐỊNH
-BREAK-EVEN POINT | Điểm hòa vốn mức doanh thu đủ bù đắp toàn bộ chi phí tiếng Anh là gì? | 3 | ĐIỂM HÒA VỐN
-ACCOUNTS PAYABLE | Khoản phải trả tiền công ty nợ nhà cung cấp tiếng Anh là gì? | 3 | KHOẢN PHẢI TRẢ
-ACCOUNTS RECEIVABLE | Khoản phải thu tiền khách hàng còn nợ công ty tiếng Anh là gì? | 3 | KHOẢN PHẢI THU
-BALANCE SHEET | Bảng cân đối kế toán phản ánh tài sản nợ và vốn chủ sở hữu tiếng Anh là gì? | 2 | BẢNG CÂN ĐỐI KẾ TOÁN
-CASH FLOW | Dòng tiền lưu chuyển vào ra của doanh nghiệp trong kỳ tiếng Anh là gì? | 1 | DÒNG TIỀN
-LIQUIDITY | Tính thanh khoản khả năng chuyển tài sản thành tiền mặt nhanh tiếng Anh là gì? | 2 | TÍNH THANH KHOẢN
-BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới tiếng Anh là gì? | 2 | DỰ BÁO NGÂN SÁCH
-PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày tiếng Anh là gì? | 2 | QUỸ TIỀN LẺ
-REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên tiếng Anh là gì? | 2 | HOÀN TRẢ CHI PHÍ
-INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn tiếng Anh là gì? | 2 | SỐ HÓA ĐƠN
-DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ tiếng Anh là gì? | 1 | NGÀY ĐẾN HẠN
-OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày tiếng Anh là gì? | 2 | THANH TOÁN QUÁ HẠN
-CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp tiếng Anh là gì? | 2 | GIẤY BÁO GIẢM GIÁ
-PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng tiếng Anh là gì? | 2 | ĐẶT HÀNG
-DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao tiếng Anh là gì? | 2 | PHIẾU GIAO HÀNG
-STOCK KEEPING UNIT | Mã quản lý hàng tồn kho ký hiệu định danh từng sản phẩm tiếng Anh là gì? | 3 | SKU
-BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho tiếng Anh là gì? | 2 | ĐƠN CHỜ HÀNG
-SUPPLY CHAIN | Chuỗi cung ứng toàn bộ quá trình từ sản xuất đến tay người tiêu dùng tiếng Anh là gì? | 2 | CHUỖI CUNG ỨNG
-PROCUREMENT | Quá trình mua sắm nguồn cung phục vụ hoạt động doanh nghiệp tiếng Anh là gì? | 3 | MUA SẮM NGUỒN CUNG
-TENDER | Hồ sơ mời thầu để chọn nhà cung cấp dịch vụ hoặc hàng hóa tiếng Anh là gì? | 2 | MỜI THẦU
-BID | Hồ sơ dự thầu giá chào mời của nhà cung cấp tiếng Anh là gì? | 2 | DỰ THẦU
-WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán lẻ tiếng Anh là gì? | 2 | NHÀ BÁN SỈ
-MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường tiếng Anh là gì? | 2 | THỊ PHẦN
-TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận tiếng Anh là gì? | 2 | THỊ TRƯỜNG MỤC TIÊU
-BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm tiếng Anh là gì? | 2 | ĐỘ NHẬN BIẾT THƯƠNG HIỆU
-MARKETING MIX | Mô hình tiếp thị phối hợp chiến lược 4P (sản phẩm, giá cả, phân phối, xúc tiến) tiếng Anh là gì? | 3 | HỖN HỢP MARKETING
-CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay tiếng Anh là gì? | 2 | LỜI KÊU GỌI HÀNH ĐỘNG
-CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự tiếng Anh là gì? | 2 | TỶ LỆ CHUYỂN ĐỔI
-UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn tiếng Anh là gì? | 2 | BÁN THÊM SẢN PHẨM CAO CẤP
-CROSS-SELLING | Gợi ý bán thêm sản phẩm bổ sung liên quan đến thứ khách đang mua tiếng Anh là gì? | 2 | BÁN THÊM SẢN PHẨM LIÊN QUAN
-CUSTOMER RETENTION | Giữ chân khách hàng hiện tại để họ tiếp tục quay lại mua tiếng Anh là gì? | 2 | GIỮ CHÂN KHÁCH HÀNG
-CHURN RATE | Tỷ lệ khách hàng rời bỏ ngừng sử dụng sản phẩm tiếng Anh là gì? | 3 | TỶ LỆ KHÁCH HÀNG RỜI BỎ
-NET PROMOTER SCORE | Chỉ số đo mức độ khách hàng sẵn sàng giới thiệu sản phẩm cho bạn bè tiếng Anh là gì? | 3 | NPS
-INTEREST RATE | Lãi suất tỷ lệ phần trăm trả thêm khi vay tiền tiếng Anh là gì? | 1 | LÃI SUẤT
-MORTGAGE | Vay thế chấp bất động sản để mua nhà tiếng Anh là gì? | 2 | VAY THẾ CHẤP NHÀ
-CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ tiếng Anh là gì? | 2 | ĐIỂM TÍN DỤNG
-DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn tiếng Anh là gì? | 2 | VỠ NỢ, VI PHẠM
-JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án tiếng Anh là gì? | 2 | LIÊN DOANH
+DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty | 3 | CỔ TỨC
+TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty | 2 | THÂU TÓM
+SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ | 3 | CÔNG TY CON
+CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn | 2 | TẬP ĐOÀN
+STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá | 1 | KHỞI NGHIỆP
+VENTURE | Dự án liên doanh kinh doanh mạo hiểm | 2 | DỰ ÁN MẠO HIỂM
+DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường | 2 | NHÀ PHÂN PHỐI
+RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua | 2 | BÁN LẺ
+CONSIGNMENT | Hàng gửi bán đại lý ký gửi | 3 | HÀNG KÝ GỬI
+BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển | 3 | VẬN ĐƠN
+PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng | 2 | PHIẾU ĐÓNG GÓI
+DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh | 2 | THUẾ NHẬP KHẨU
+EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá | 3 | THUẾ TIÊU THỤ
+REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng | 3 | TIỀN HOÀN LẠI
+BARGAIN | Món hàng mua được giá hời rất rẻ | 2 | MÓN HỜI
+BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc | 2 | BIỂN QUẢNG CÁO
+FLYER | Tờ rơi quảng cáo phát tận tay người đi đường | 2 | TỜ RƠI, LEAFLET
+QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra | 2 | BẢN CÂU HỎI
+AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác | 1 | THỎA THUẬN
+CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật | 2 | ĐIỀU KHOẢN
+STIPULATION | Quy định điều kiện bắt buộc phải tuân theo | 3 | QUY ĐỊNH BẮT BUỘC
+BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng | 3 | VI PHẠM HỢP ĐỒNG
+TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động | 2 | CHẤM DỨT HỢP ĐỒNG
+RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng | 2 | GIA HẠN
+EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng | 2 | HẾT HẠN, EXPIRY
+FISCAL YEAR | Năm tài chính kỳ kế toán 12 tháng của doanh nghiệp | 2 | NĂM TÀI CHÍNH
+QUARTERLY REPORT | Báo cáo kết quả kinh doanh quý được công bố định kỳ | 2 | BÁO CÁO QUÝ
+GROSS PROFIT | Lợi nhuận gộp doanh thu trừ giá vốn hàng bán | 2 | LỢI NHUẬN GỘP
+NET PROFIT | Lợi nhuận ròng sau khi đã trừ tất cả các chi phí và thuế | 2 | LỢI NHUẬN RÒNG
+OPERATING COST | Chi phí vận hành hoạt động kinh doanh thường ngày | 2 | CHI PHÍ VẬN HÀNH
+OVERHEAD | Chi phí chung cố định như tiền thuê văn phòng điện nước | 2 | CHI PHÍ CHUNG
+VARIABLE COST | Chi phí biến đổi thay đổi theo sản lượng sản xuất | 3 | CHI PHÍ BIẾN ĐỔI
+FIXED COST | Chi phí cố định không thay đổi dù sản xuất nhiều hay ít | 2 | CHI PHÍ CỐ ĐỊNH
+BREAK-EVEN POINT | Điểm hòa vốn mức doanh thu đủ bù đắp toàn bộ chi phí | 3 | ĐIỂM HÒA VỐN
+ACCOUNTS PAYABLE | Khoản phải trả tiền công ty nợ nhà cung cấp | 3 | KHOẢN PHẢI TRẢ
+ACCOUNTS RECEIVABLE | Khoản phải thu tiền khách hàng còn nợ công ty | 3 | KHOẢN PHẢI THU
+BALANCE SHEET | Bảng cân đối kế toán phản ánh tài sản nợ và vốn chủ sở hữu | 2 | BẢNG CÂN ĐỐI KẾ TOÁN
+CASH FLOW | Dòng tiền lưu chuyển vào ra của doanh nghiệp trong kỳ | 1 | DÒNG TIỀN
+LIQUIDITY | Tính thanh khoản khả năng chuyển tài sản thành tiền mặt nhanh | 2 | TÍNH THANH KHOẢN
+BUDGET FORECAST | Dự báo ngân sách ước tính thu chi trong kỳ tới | 2 | DỰ BÁO NGÂN SÁCH
+PETTY CASH | Quỹ tiền mặt nhỏ dùng cho các chi tiêu lặt vặt hàng ngày | 2 | QUỸ TIỀN LẺ
+REIMBURSEMENT | Hoàn trả chi phí đã ứng trước cho nhân viên | 2 | HOÀN TRẢ CHI PHÍ
+INVOICE NUMBER | Số hóa đơn định danh mã duy nhất trên mỗi hóa đơn | 2 | SỐ HÓA ĐƠN
+DUE DATE | Ngày đến hạn thanh toán hóa đơn hoặc khoản nợ | 1 | NGÀY ĐẾN HẠN
+OVERDUE PAYMENT | Khoản thanh toán quá hạn chưa trả đúng ngày | 2 | THANH TOÁN QUÁ HẠN
+CREDIT NOTE | Giấy báo giảm giá hoặc hoàn tiền từ nhà cung cấp | 2 | GIẤY BÁO GIẢM GIÁ
+PURCHASE ORDER | Lệnh đặt hàng tài liệu chính thức yêu cầu mua hàng | 2 | ĐẶT HÀNG
+DELIVERY NOTE | Phiếu giao hàng xác nhận hàng đã được giao | 2 | PHIẾU GIAO HÀNG
+STOCK KEEPING UNIT | Mã quản lý hàng tồn kho ký hiệu định danh từng sản phẩm | 3 | SKU
+BACKORDER | Đơn hàng chờ hàng hóa đặt mua hiện chưa có trong kho | 2 | ĐƠN CHỜ HÀNG
+SUPPLY CHAIN | Chuỗi cung ứng toàn bộ quá trình từ sản xuất đến tay người tiêu dùng | 2 | CHUỖI CUNG ỨNG
+PROCUREMENT | Quá trình mua sắm nguồn cung phục vụ hoạt động doanh nghiệp | 3 | MUA SẮM NGUỒN CUNG
+TENDER | Hồ sơ mời thầu để chọn nhà cung cấp dịch vụ hoặc hàng hóa | 2 | MỜI THẦU
+BID | Hồ sơ dự thầu giá chào mời của nhà cung cấp | 2 | DỰ THẦU
+WHOLESALER | Nhà bán sỉ bán số lượng lớn với giá thấp hơn bán lẻ | 2 | NHÀ BÁN SỈ
+MARKET SHARE | Thị phần phần trăm doanh số của công ty so với toàn thị trường | 2 | THỊ PHẦN
+TARGET MARKET | Thị trường mục tiêu nhóm khách hàng công ty muốn tiếp cận | 2 | THỊ TRƯỜNG MỤC TIÊU
+BRAND AWARENESS | Độ nhận biết thương hiệu mức độ khách hàng biết đến sản phẩm | 2 | ĐỘ NHẬN BIẾT THƯƠNG HIỆU
+MARKETING MIX | Mô hình tiếp thị phối hợp chiến lược 4P (sản phẩm, giá cả, phân phối, xúc tiến) | 3 | HỖN HỢP MARKETING
+CALL TO ACTION | Lời kêu gọi hành động thúc đẩy khách hàng thực hiện ngay | 2 | LỜI KÊU GỌI HÀNH ĐỘNG
+CONVERSION RATE | Tỷ lệ chuyển đổi phần trăm khách xem thành khách mua thực sự | 2 | TỶ LỆ CHUYỂN ĐỔI
+UPSELLING | Thuyết phục khách mua sản phẩm đắt hơn hoặc cao cấp hơn | 2 | BÁN THÊM SẢN PHẨM CAO CẤP
+CROSS-SELLING | Gợi ý bán thêm sản phẩm bổ sung liên quan đến thứ khách đang mua | 2 | BÁN THÊM SẢN PHẨM LIÊN QUAN
+CUSTOMER RETENTION | Giữ chân khách hàng hiện tại để họ tiếp tục quay lại mua | 2 | GIỮ CHÂN KHÁCH HÀNG
+CHURN RATE | Tỷ lệ khách hàng rời bỏ ngừng sử dụng sản phẩm | 3 | TỶ LỆ KHÁCH HÀNG RỜI BỎ
+NET PROMOTER SCORE | Chỉ số đo mức độ khách hàng sẵn sàng giới thiệu sản phẩm cho bạn bè | 3 | NPS
+INTEREST RATE | Lãi suất tỷ lệ phần trăm trả thêm khi vay tiền | 1 | LÃI SUẤT
+MORTGAGE | Vay thế chấp bất động sản để mua nhà | 2 | VAY THẾ CHẤP NHÀ
+CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ | 2 | ĐIỂM TÍN DỤNG
+DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn | 2 | VỠ NỢ, VI PHẠM
+JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án | 2 | LIÊN DOANH

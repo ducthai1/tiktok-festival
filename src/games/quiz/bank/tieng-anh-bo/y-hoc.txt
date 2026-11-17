@@ -1,239 +1,239 @@
 # Tiếng Anh · Y học
-ACNE | Mụn trứng cá tiếng Anh là gì? | 2 | PIMPLES
-BLISTER | Vết phồng rộp tiếng Anh là gì? | 3
-CHAPPED LIPS | Môi nứt nẻ tiếng Anh là gì? | 2
-DANDRUFF | Gàu (trên tóc) tiếng Anh là gì? | 2
-EARACHE | Đau tai tiếng Anh là gì? | 1
-EYE STRAIN | Mỏi mắt tiếng Anh là gì? | 2
-HOARSE | Khàn giọng tiếng Anh là gì? | 3
-INSECT BITE | Vết côn trùng cắn tiếng Anh là gì? | 2 | BUG BITE
-NOSEBLEED | Chảy máu cam tiếng Anh là gì? | 2
-STIFF NECK | Cứng cổ (vẹo cổ) tiếng Anh là gì? | 2
-PINK EYE | Đau mắt đỏ tiếng Anh là gì? | 2 | CONJUNCTIVITIS
-TONSILLITIS | Viêm amidan tiếng Anh là gì? | 3
-SINUSITIS | Viêm xoang tiếng Anh là gì? | 3
-BRONCHITIS | Viêm phế quản tiếng Anh là gì? | 3
-PNEUMONIA | Viêm phổi tiếng Anh là gì? | 3
-HEPATITIS | Viêm gan tiếng Anh là gì? | 3
-GASTRITIS | Viêm dạ dày tiếng Anh là gì? | 3
-DENGUE FEVER | Sốt xuất huyết tiếng Anh là gì? | 2 | DENGUE
-MALARIA | Sốt rét tiếng Anh là gì? | 2
-TUBERCULOSIS | Bệnh lao tiếng Anh là gì? | 3 | TB
-STOMACH ULCER | Loét dạ dày tiếng Anh là gì? | 3 | ULCER
-APPENDIX | Ruột thừa tiếng Anh là gì? | 2
-BLADDER | Bàng quang tiếng Anh là gì? | 3
-PANCREAS | Tuyến tụy tiếng Anh là gì? | 3
-THYROID | Tuyến giáp tiếng Anh là gì? | 3
-SPLEEN | Lá lách tiếng Anh là gì? | 3
-ARTERY | Động mạch tiếng Anh là gì? | 3
-CARTILAGE | Sụn tiếng Anh là gì? | 3
-TENDON | Gân tiếng Anh là gì? | 3
-LIGAMENT | Dây chằng tiếng Anh là gì? | 3
-EARDRUM | Màng nhĩ tiếng Anh là gì? | 3
-RETINA | Võng mạc tiếng Anh là gì? | 3
-EYELID | Mí mắt tiếng Anh là gì? | 2
-NOSTRIL | Lỗ mũi tiếng Anh là gì? | 2
-VOCAL CORDS | Dây thanh quản tiếng Anh là gì? | 3 | VOCAL CORD
-WINDPIPE | Khí quản tiếng Anh là gì? | 3 | TRACHEA
-DIAPHRAGM | Cơ hoành tiếng Anh là gì? | 3
-OXIMETER | Máy đo nồng độ oxy máu tiếng Anh là gì? | 3 | PULSE OXIMETER
-BLOOD DONATION | Hiến máu tiếng Anh là gì? | 2
-MEDICAL RECORD | Hồ sơ bệnh án tiếng Anh là gì? | 2 | MEDICAL RECORDS
-OVER THE COUNTER | Thuốc không cần kê đơn tiếng Anh là gì? | 3 | OTC
-LOZENGE | Viên ngậm trị ho tiếng Anh là gì? | 3 | COUGH DROP
-ANTISEPTIC | Thuốc sát trùng tiếng Anh là gì? | 2
-SPLINT | Nẹp cố định xương tiếng Anh là gì? | 3
-SLING | Băng treo tay tiếng Anh là gì? | 3 | ARM SLING
-INHALER | Ống hít (hen suyễn) tiếng Anh là gì? | 3
-NEBULIZER | Máy xông khí dung tiếng Anh là gì? | 3 | NEBULISER
-WALKING STICK | Gậy chống tiếng Anh là gì? | 2 | CANE
-HEARING AID | Máy trợ thính tiếng Anh là gì? | 2
-CONTACT LENS | Kính áp tròng tiếng Anh là gì? | 2 | CONTACT LENSES, CONTACTS
-DENTURES | Răng giả tiếng Anh là gì? | 3 | FALSE TEETH
-PROTEIN | Chất đạm tiếng Anh là gì? | 2
-CARBOHYDRATE | Chất bột đường tiếng Anh là gì? | 3 | CARBS, CARBOHYDRATES
-FIBER | Chất xơ tiếng Anh là gì? | 2 | FIBRE
-DEHYDRATION | Mất nước (cơ thể) tiếng Anh là gì? | 2 | DEHYDRATED
-HANGOVER | Mệt mỏi sau khi say rượu tiếng Anh là gì? | 2
-NIGHTMARE | Ác mộng tiếng Anh là gì? | 1
-SLEEPWALK | Mộng du tiếng Anh là gì? | 3 | SLEEPWALKING
-SNORE | Ngáy tiếng Anh là gì? | 2 | SNORING
-BLOOD CLOT | Cục máu đông tiếng Anh là gì? | 3
-PALPITATIONS | Tim đập nhanh (hồi hộp) tiếng Anh là gì? | 3 | PALPITATION
-SALINE | Nước muối sinh lý tiếng Anh là gì? | 2 | SALINE SOLUTION
-GAUZE PAD | Miếng gạc tiếng Anh là gì? | 2
-MEDICAL MASK | Khẩu trang y tế tiếng Anh là gì? | 1 | SURGICAL MASK
-HEALTH CHECK | Khám tổng quát tiếng Anh là gì? | 1 | GENERAL CHECKUP
-SECOND OPINION | Ý kiến bác sĩ thứ hai tiếng Anh là gì? | 3
-INSULIN | Hormon điều chỉnh đường huyết tiếng Anh là gì? | 1
-GLUCOSE | Đường trong máu tiếng Anh là gì? | 1 | BLOOD SUGAR
-LIPID | Chất béo trong máu tiếng Anh là gì? | 1
-PEPTIDE | Chuỗi acid amin tiếng Anh là gì? | 1 | PROTEIN
-SERUM | Huyết thanh tiếng Anh là gì? | 1
-MUCUS | Chất nhầy trong cơ thể tiếng Anh là gì? | 1
-PITUITARY | Tuyến nho cơ thể tiếng Anh là gì? | 1 | GLAND
-ADRENAL | Tuyến nằm trên thận tiếng Anh là gì? | 1
-LYMPH | Chất bạch huyết trong cơ thể tiếng Anh là gì? | 1
-MARROW | Tủy bên trong xương tiếng Anh là gì? | 1
-PLATELET | Tiểu cầu trong máu tiếng Anh là gì? | 1
-ALBUMIN | Protein chính trong huyết tương tiếng Anh là gì? | 1
-SODIUM | Ion khoáng chất mặn tiếng Anh là gì? | 1 | SALT
-POTASSIUM | Chất khoáng cần cho tim tiếng Anh là gì? | 1 | MINERAL
-CALCIUM | Chất khoáng cho xương mạnh tiếng Anh là gì? | 1
-MAGNESIUM | Chất khoáng hỗ trợ cơ tiếng Anh là gì? | 1
-CORTISOL | Hormon stress tiếng Anh là gì? | 1
-DOPAMINE | Hormon tạo cảm giác vui tiếng Anh là gì? | 1
-HOSPITAL | Bệnh viện tiếng Anh là gì? | 1
-DOCTOR | Bác sĩ tiếng Anh là gì? | 1 | PHYSICIAN
-NURSE | Y tá, điều dưỡng tiếng Anh là gì? | 1
-PATIENT | Bệnh nhân tiếng Anh là gì? | 1
-DENTIST | Nha sĩ tiếng Anh là gì? | 1
-PHARMACY | Nhà thuốc tiếng Anh là gì? | 1 | DRUGSTORE, CHEMIST
-MEDICINE | Thuốc (nói chung) tiếng Anh là gì? | 1 | DRUG, MEDICATION
-PILL | Viên thuốc tiếng Anh là gì? | 1 | TABLET, CAPSULE
-AMBULANCE | Xe cứu thương tiếng Anh là gì? | 1
-CLINIC | Phòng khám tiếng Anh là gì? | 1
-BLOOD | Máu tiếng Anh là gì? | 1
-FEVER | Sốt tiếng Anh là gì? | 1 | TEMPERATURE
-COUGH | Ho tiếng Anh là gì? | 1
-HEADACHE | Đau đầu tiếng Anh là gì? | 1
-STOMACHACHE | Đau bụng tiếng Anh là gì? | 1 | STOMACH ACHE, TUMMY ACHE, BELLYACHE
-TOOTHACHE | Đau răng tiếng Anh là gì? | 1
-SORE THROAT | Đau họng tiếng Anh là gì? | 1
-FLU | Bệnh cúm tiếng Anh là gì? | 1 | INFLUENZA
-COMMON COLD | Cảm lạnh tiếng Anh là gì? | 1 | COLD
-BONE | Xương tiếng Anh là gì? | 1
-MUSCLE | Cơ bắp tiếng Anh là gì? | 1
-SKIN | Da (cơ thể) tiếng Anh là gì? | 1
-BRAIN | Não tiếng Anh là gì? | 1
-HEART | Quả tim tiếng Anh là gì? | 1
-STOMACH | Dạ dày tiếng Anh là gì? | 1 | TUMMY, BELLY
-BREATHE | Thở (động từ) tiếng Anh là gì? | 1
-MASK | Khẩu trang tiếng Anh là gì? | 1 | FACE MASK
-PAIN | Cơn đau tiếng Anh là gì? | 1 | ACHE
-HURT | Bị đau (động từ) tiếng Anh là gì? | 1 | ACHE
-HEALTHY | Khoẻ mạnh tiếng Anh là gì? | 1 | FIT, WELL
-SICK | Bị ốm tiếng Anh là gì? | 1 | ILL, UNWELL
-EXERCISE | Tập thể dục tiếng Anh là gì? | 1 | WORKOUT
-WEIGHT | Cân nặng tiếng Anh là gì? | 1
-HEIGHT | Chiều cao tiếng Anh là gì? | 1
-TEMPERATURE | Nhiệt độ cơ thể tiếng Anh là gì? | 1
-DIET | Chế độ ăn kiêng tiếng Anh là gì? | 1
-SURGEON | Bác sĩ phẫu thuật tiếng Anh là gì? | 2
-SURGERY | Ca phẫu thuật tiếng Anh là gì? | 2 | OPERATION
-PHARMACIST | Dược sĩ tiếng Anh là gì? | 2 | CHEMIST
-PRESCRIPTION | Đơn thuốc tiếng Anh là gì? | 2
-SIDE EFFECT | Tác dụng phụ tiếng Anh là gì? | 2 | SIDE EFFECTS
-VACCINE | Thuốc tiêm phòng (chủng ngừa) tiếng Anh là gì? | 2 | VACCINATION
-INJECTION | Mũi tiêm tiếng Anh là gì? | 2 | SHOT, JAB
-EMERGENCY ROOM | Phòng cấp cứu tiếng Anh là gì? | 2 | ER, EMERGENCY
-WHEELCHAIR | Xe lăn tiếng Anh là gì? | 2
-BANDAGE | Băng gạc tiếng Anh là gì? | 2 | DRESSING, GAUZE
-PLASTER | Miếng băng dán cá nhân tiếng Anh là gì? | 2 | BAND-AID, BANDAID
-THERMOMETER | Nhiệt kế tiếng Anh là gì? | 2
-BLOOD PRESSURE | Huyết áp tiếng Anh là gì? | 2
-BLOOD TEST | Xét nghiệm máu tiếng Anh là gì? | 2
-HEARTBEAT | Nhịp tim tiếng Anh là gì? | 2 | PULSE, HEART RATE
-SYMPTOM | Triệu chứng tiếng Anh là gì? | 2 | SYMPTOMS, SIGN
-TREATMENT | Sự điều trị tiếng Anh là gì? | 2 | THERAPY
-CURE | Chữa khỏi (động từ) tiếng Anh là gì? | 2 | HEAL, TREAT
-RECOVER | Hồi phục tiếng Anh là gì? | 2 | GET BETTER, HEAL
-INFECTION | Sự nhiễm trùng tiếng Anh là gì? | 2
-BACTERIA | Vi khuẩn tiếng Anh là gì? | 2 | BACTERIUM, GERMS, GERM
-SNEEZE | Hắt hơi tiếng Anh là gì? | 2
-RUNNY NOSE | Sổ mũi tiếng Anh là gì? | 2
-ALLERGY | Dị ứng tiếng Anh là gì? | 2 | ALLERGIES
-DIZZY | Chóng mặt tiếng Anh là gì? | 2 | LIGHTHEADED
-VOMIT | Nôn, ói tiếng Anh là gì? | 2 | THROW UP
-ITCHY | Ngứa (tính từ) tiếng Anh là gì? | 2 | ITCHING, ITCH
-WOUND | Vết thương tiếng Anh là gì? | 2 | INJURY, CUT
-SCAR | Vết sẹo tiếng Anh là gì? | 2
-BURN | Vết bỏng tiếng Anh là gì? | 2
-LUNG | Phổi tiếng Anh là gì? | 2 | LUNGS
-LIVER | Gan tiếng Anh là gì? | 2
-KIDNEY | Thận tiếng Anh là gì? | 2 | KIDNEYS
-SKELETON | Bộ xương tiếng Anh là gì? | 2
-SKULL | Hộp sọ tiếng Anh là gì? | 2
-PAINKILLER | Thuốc giảm đau tiếng Anh là gì? | 2 | PAINKILLERS
-EYE DROPS | Thuốc nhỏ mắt tiếng Anh là gì? | 2 | EYEDROPS
-GLOVES | Găng tay y tế tiếng Anh là gì? | 2 | GLOVE
-CHECK-UP | Khám sức khoẻ định kỳ tiếng Anh là gì? | 2 | CHECKUP, MEDICAL EXAMINATION, PHYSICAL
-APPOINTMENT | Lịch hẹn khám bệnh tiếng Anh là gì? | 2
-INSURANCE | Bảo hiểm y tế tiếng Anh là gì? | 2 | HEALTH INSURANCE
-FAINT | Ngất xỉu tiếng Anh là gì? | 2 | PASS OUT, BLACK OUT
-BLEED | Chảy máu tiếng Anh là gì? | 2 | BLEEDING
-INJURY | Chấn thương tiếng Anh là gì? | 2 | WOUND
-FIRST AID | Sơ cứu tiếng Anh là gì? | 2
-PREGNANT | Mang thai tiếng Anh là gì? | 2 | EXPECTING
-HAND SANITIZER | Nước rửa tay khô tiếng Anh là gì? | 2 | SANITIZER, SANITISER, HAND SANITISER
-NUTRITION | Dinh dưỡng tiếng Anh là gì? | 2 | NOURISHMENT
-SCALE | Cái cân sức khoẻ tiếng Anh là gì? | 2 | SCALES
-BLOOD TYPE | Nhóm máu tiếng Anh là gì? | 2 | BLOOD GROUP
-EYESIGHT | Thị lực tiếng Anh là gì? | 2 | VISION, SIGHT
-HEARING | Thính lực tiếng Anh là gì? | 2
-BRACES | Niềng răng tiếng Anh là gì? | 2
-WISDOM TOOTH | Răng khôn tiếng Anh là gì? | 2 | WISDOM TEETH
-DOSE | Liều lượng thuốc tiếng Anh là gì? | 3 | DOSAGE
-WARD | Buồng bệnh, khu điều trị tiếng Anh là gì? | 3
-STRETCHER | Cái cáng (khiêng bệnh nhân) tiếng Anh là gì? | 3
-CRUTCH | Cái nạng tiếng Anh là gì? | 3 | CRUTCHES
-STETHOSCOPE | Ống nghe của bác sĩ tiếng Anh là gì? | 3
-SCAN | Chụp chiếu (CT, MRI) tiếng Anh là gì? | 3 | SCANNING
-PULSE | Mạch (bắt mạch) tiếng Anh là gì? | 3 | HEARTBEAT
-DIAGNOSIS | Chẩn đoán tiếng Anh là gì? | 3
-ASTHMA | Bệnh hen suyễn tiếng Anh là gì? | 3
-DIABETES | Bệnh tiểu đường tiếng Anh là gì? | 3
-HYPERTENSION | Bệnh cao huyết áp tiếng Anh là gì? | 3 | HIGH BLOOD PRESSURE
-INSOMNIA | Chứng mất ngủ tiếng Anh là gì? | 3 | SLEEPLESSNESS
-NAUSEA | Cảm giác buồn nôn tiếng Anh là gì? | 3 | NAUSEOUS, SICKNESS
-DIARRHEA | Tiêu chảy tiếng Anh là gì? | 3 | DIARRHOEA
-CONSTIPATION | Táo bón tiếng Anh là gì? | 3
-RASH | Phát ban tiếng Anh là gì? | 3
-SWOLLEN | Bị sưng (tính từ) tiếng Anh là gì? | 3 | SWELLING
-BRUISE | Vết bầm tím tiếng Anh là gì? | 3
-FRACTURE | Gãy xương tiếng Anh là gì? | 3 | BROKEN BONE, BREAK
-SPRAIN | Bong gân tiếng Anh là gì? | 3 | TWIST
-INTESTINE | Ruột tiếng Anh là gì? | 3 | INTESTINES, BOWEL, BOWELS, GUT
-SPINE | Cột sống tiếng Anh là gì? | 3 | BACKBONE
-RIB | Xương sườn tiếng Anh là gì? | 3 | RIBS
-VEIN | Tĩnh mạch tiếng Anh là gì? | 3 | BLOOD VESSEL
-NERVE | Dây thần kinh tiếng Anh là gì? | 3
-JOINT | Khớp xương tiếng Anh là gì? | 3
-IMMUNE SYSTEM | Hệ miễn dịch tiếng Anh là gì? | 3
-DIGESTION | Sự tiêu hoá tiếng Anh là gì? | 3
-ANTIBIOTIC | Thuốc kháng sinh tiếng Anh là gì? | 3 | ANTIBIOTICS
-OINTMENT | Thuốc mỡ bôi da tiếng Anh là gì? | 3 | CREAM
-ADMIT | Cho nhập viện tiếng Anh là gì? | 3 | HOSPITALIZE, HOSPITALISE
-DISCHARGE | Cho xuất viện tiếng Anh là gì? | 3
-UNCONSCIOUS | Bất tỉnh tiếng Anh là gì? | 3 | PASSED OUT
-MIDWIFE | Nữ hộ sinh tiếng Anh là gì? | 3
-PEDIATRICIAN | Bác sĩ nhi khoa tiếng Anh là gì? | 3 | PAEDIATRICIAN
-OPTICIAN | Người đo mắt, làm kính tiếng Anh là gì? | 3 | OPTOMETRIST
-CONTAGIOUS | Dễ lây lan tiếng Anh là gì? | 3 | INFECTIOUS
-EPIDEMIC | Dịch bệnh tiếng Anh là gì? | 3 | OUTBREAK, PANDEMIC
-QUARANTINE | Cách ly tiếng Anh là gì? | 3 | ISOLATION
-HYGIENE | Vệ sinh (giữ sạch sẽ) tiếng Anh là gì? | 3 | SANITATION, CLEANLINESS
-CAST | Bó bột (chân tay gãy) tiếng Anh là gì? | 3 | PLASTER CAST
-STITCHES | Mũi khâu vết thương tiếng Anh là gì? | 3 | STITCH, SUTURE, SUTURES
-ANESTHESIA | Gây mê tiếng Anh là gì? | 3 | ANAESTHESIA, ANESTHETIC, ANAESTHETIC
-DONOR | Người hiến máu, hiến tạng tiếng Anh là gì? | 3 | BLOOD DONOR
-CAVITY | Lỗ sâu răng tiếng Anh là gì? | 3 | TOOTH DECAY
-FILLING | Trám răng tiếng Anh là gì? | 3
-GUMS | Lợi, nướu răng tiếng Anh là gì? | 3 | GUM
-X-RAY | Phim chụp X-quang tiếng Anh là gì? | 1 | XRAY
-OPERATING ROOM | Phòng mổ tiếng Anh là gì? | 2 | OPERATING THEATRE, THEATRE
-ICU | Phòng hồi sức tích cực tiếng Anh là gì? | 3 | INTENSIVE CARE
-BLOOD SUGAR | Đường huyết tiếng Anh là gì? | 3 | GLUCOSE
-CAPSULE | Viên con nhộng tiếng Anh là gì? | 2
-SYRINGE | Ống tiêm (xi lanh) tiếng Anh là gì? | 3
-NEEDLE | Kim tiêm tiếng Anh là gì? | 2
-DRIP | Truyền dịch (chai truyền) tiếng Anh là gì? | 3 | IV
-HEAT STROKE | Say nắng tiếng Anh là gì? | 3 | SUNSTROKE, HEATSTROKE
-FOOD POISONING | Ngộ độc thực phẩm tiếng Anh là gì? | 3
-CHICKENPOX | Bệnh thuỷ đậu tiếng Anh là gì? | 3 | CHICKEN POX
-MEASLES | Bệnh sởi tiếng Anh là gì? | 3
-FATIGUE | Mệt mỏi kéo dài tiếng Anh là gì? | 3 | TIREDNESS, EXHAUSTION
-SWEAT | Mồ hôi tiếng Anh là gì? | 2 | SWEATING, PERSPIRATION
+ACNE | Mụn trứng cá | 2 | PIMPLES
+BLISTER | Vết phồng rộp | 3
+CHAPPED LIPS | Môi nứt nẻ | 2
+DANDRUFF | Gàu (trên tóc) | 2
+EARACHE | Đau tai | 1
+EYE STRAIN | Mỏi mắt | 2
+HOARSE | Khàn giọng | 3
+INSECT BITE | Vết côn trùng cắn | 2 | BUG BITE
+NOSEBLEED | Chảy máu cam | 2
+STIFF NECK | Cứng cổ (vẹo cổ) | 2
+PINK EYE | Đau mắt đỏ | 2 | CONJUNCTIVITIS
+TONSILLITIS | Viêm amidan | 3
+SINUSITIS | Viêm xoang | 3
+BRONCHITIS | Viêm phế quản | 3
+PNEUMONIA | Viêm phổi | 3
+HEPATITIS | Viêm gan | 3
+GASTRITIS | Viêm dạ dày | 3
+DENGUE FEVER | Sốt xuất huyết | 2 | DENGUE
+MALARIA | Sốt rét | 2
+TUBERCULOSIS | Bệnh lao | 3 | TB
+STOMACH ULCER | Loét dạ dày | 3 | ULCER
+APPENDIX | Ruột thừa | 2
+BLADDER | Bàng quang | 3
+PANCREAS | Tuyến tụy | 3
+THYROID | Tuyến giáp | 3
+SPLEEN | Lá lách | 3
+ARTERY | Động mạch | 3
+CARTILAGE | Sụn | 3
+TENDON | Gân | 3
+LIGAMENT | Dây chằng | 3
+EARDRUM | Màng nhĩ | 3
+RETINA | Võng mạc | 3
+EYELID | Mí mắt | 2
+NOSTRIL | Lỗ mũi | 2
+VOCAL CORDS | Dây thanh quản | 3 | VOCAL CORD
+WINDPIPE | Khí quản | 3 | TRACHEA
+DIAPHRAGM | Cơ hoành | 3
+OXIMETER | Máy đo nồng độ oxy máu | 3 | PULSE OXIMETER
+BLOOD DONATION | Hiến máu | 2
+MEDICAL RECORD | Hồ sơ bệnh án | 2 | MEDICAL RECORDS
+OVER THE COUNTER | Thuốc không cần kê đơn | 3 | OTC
+LOZENGE | Viên ngậm trị ho | 3 | COUGH DROP
+ANTISEPTIC | Thuốc sát trùng | 2
+SPLINT | Nẹp cố định xương | 3
+SLING | Băng treo tay | 3 | ARM SLING
+INHALER | Ống hít (hen suyễn) | 3
+NEBULIZER | Máy xông khí dung | 3 | NEBULISER
+WALKING STICK | Gậy chống | 2 | CANE
+HEARING AID | Máy trợ thính | 2
+CONTACT LENS | Kính áp tròng | 2 | CONTACT LENSES, CONTACTS
+DENTURES | Răng giả | 3 | FALSE TEETH
+PROTEIN | Chất đạm | 2
+CARBOHYDRATE | Chất bột đường | 3 | CARBS, CARBOHYDRATES
+FIBER | Chất xơ | 2 | FIBRE
+DEHYDRATION | Mất nước (cơ thể) | 2 | DEHYDRATED
+HANGOVER | Mệt mỏi sau khi say rượu | 2
+NIGHTMARE | Ác mộng | 1
+SLEEPWALK | Mộng du | 3 | SLEEPWALKING
+SNORE | Ngáy | 2 | SNORING
+BLOOD CLOT | Cục máu đông | 3
+PALPITATIONS | Tim đập nhanh (hồi hộp) | 3 | PALPITATION
+SALINE | Nước muối sinh lý | 2 | SALINE SOLUTION
+GAUZE PAD | Miếng gạc | 2
+MEDICAL MASK | Khẩu trang y tế | 1 | SURGICAL MASK
+HEALTH CHECK | Khám tổng quát | 1 | GENERAL CHECKUP
+SECOND OPINION | Ý kiến bác sĩ thứ hai | 3
+INSULIN | Hormon điều chỉnh đường huyết | 1
+GLUCOSE | Đường trong máu | 1 | BLOOD SUGAR
+LIPID | Chất béo trong máu | 1
+PEPTIDE | Chuỗi acid amin | 1 | PROTEIN
+SERUM | Huyết thanh | 1
+MUCUS | Chất nhầy trong cơ thể | 1
+PITUITARY | Tuyến nho cơ thể | 1 | GLAND
+ADRENAL | Tuyến nằm trên thận | 1
+LYMPH | Chất bạch huyết trong cơ thể | 1
+MARROW | Tủy bên trong xương | 1
+PLATELET | Tiểu cầu trong máu | 1
+ALBUMIN | Protein chính trong huyết tương | 1
+SODIUM | Ion khoáng chất mặn | 1 | SALT
+POTASSIUM | Chất khoáng cần cho tim | 1 | MINERAL
+CALCIUM | Chất khoáng cho xương mạnh | 1
+MAGNESIUM | Chất khoáng hỗ trợ cơ | 1
+CORTISOL | Hormon stress | 1
+DOPAMINE | Hormon tạo cảm giác vui | 1
+HOSPITAL | Bệnh viện | 1
+DOCTOR | Bác sĩ | 1 | PHYSICIAN
+NURSE | Y tá, điều dưỡng | 1
+PATIENT | Bệnh nhân | 1
+DENTIST | Nha sĩ | 1
+PHARMACY | Nhà thuốc | 1 | DRUGSTORE, CHEMIST
+MEDICINE | Thuốc (nói chung) | 1 | DRUG, MEDICATION
+PILL | Viên thuốc | 1 | TABLET, CAPSULE
+AMBULANCE | Xe cứu thương | 1
+CLINIC | Phòng khám | 1
+BLOOD | Máu | 1
+FEVER | Sốt | 1 | TEMPERATURE
+COUGH | Ho | 1
+HEADACHE | Đau đầu | 1
+STOMACHACHE | Đau bụng | 1 | STOMACH ACHE, TUMMY ACHE, BELLYACHE
+TOOTHACHE | Đau răng | 1
+SORE THROAT | Đau họng | 1
+FLU | Bệnh cúm | 1 | INFLUENZA
+COMMON COLD | Cảm lạnh | 1 | COLD
+BONE | Xương | 1
+MUSCLE | Cơ bắp | 1
+SKIN | Da (cơ thể) | 1
+BRAIN | Não | 1
+HEART | Quả tim | 1
+STOMACH | Dạ dày | 1 | TUMMY, BELLY
+BREATHE | Thở (động từ) | 1
+MASK | Khẩu trang | 1 | FACE MASK
+PAIN | Cơn đau | 1 | ACHE
+HURT | Bị đau (động từ) | 1 | ACHE
+HEALTHY | Khoẻ mạnh | 1 | FIT, WELL
+SICK | Bị ốm | 1 | ILL, UNWELL
+EXERCISE | Tập thể dục | 1 | WORKOUT
+WEIGHT | Cân nặng | 1
+HEIGHT | Chiều cao | 1
+TEMPERATURE | Nhiệt độ cơ thể | 1
+DIET | Chế độ ăn kiêng | 1
+SURGEON | Bác sĩ phẫu thuật | 2
+SURGERY | Ca phẫu thuật | 2 | OPERATION
+PHARMACIST | Dược sĩ | 2 | CHEMIST
+PRESCRIPTION | Đơn thuốc | 2
+SIDE EFFECT | Tác dụng phụ | 2 | SIDE EFFECTS
+VACCINE | Thuốc tiêm phòng (chủng ngừa) | 2 | VACCINATION
+INJECTION | Mũi tiêm | 2 | SHOT, JAB
+EMERGENCY ROOM | Phòng cấp cứu | 2 | ER, EMERGENCY
+WHEELCHAIR | Xe lăn | 2
+BANDAGE | Băng gạc | 2 | DRESSING, GAUZE
+PLASTER | Miếng băng dán cá nhân | 2 | BAND-AID, BANDAID
+THERMOMETER | Nhiệt kế | 2
+BLOOD PRESSURE | Huyết áp | 2
+BLOOD TEST | Xét nghiệm máu | 2
+HEARTBEAT | Nhịp tim | 2 | PULSE, HEART RATE
+SYMPTOM | Triệu chứng | 2 | SYMPTOMS, SIGN
+TREATMENT | Sự điều trị | 2 | THERAPY
+CURE | Chữa khỏi (động từ) | 2 | HEAL, TREAT
+RECOVER | Hồi phục | 2 | GET BETTER, HEAL
+INFECTION | Sự nhiễm trùng | 2
+BACTERIA | Vi khuẩn | 2 | BACTERIUM, GERMS, GERM
+SNEEZE | Hắt hơi | 2
+RUNNY NOSE | Sổ mũi | 2
+ALLERGY | Dị ứng | 2 | ALLERGIES
+DIZZY | Chóng mặt | 2 | LIGHTHEADED
+VOMIT | Nôn, ói | 2 | THROW UP
+ITCHY | Ngứa (tính từ) | 2 | ITCHING, ITCH
+WOUND | Vết thương | 2 | INJURY, CUT
+SCAR | Vết sẹo | 2
+BURN | Vết bỏng | 2
+LUNG | Phổi | 2 | LUNGS
+LIVER | Gan | 2
+KIDNEY | Thận | 2 | KIDNEYS
+SKELETON | Bộ xương | 2
+SKULL | Hộp sọ | 2
+PAINKILLER | Thuốc giảm đau | 2 | PAINKILLERS
+EYE DROPS | Thuốc nhỏ mắt | 2 | EYEDROPS
+GLOVES | Găng tay y tế | 2 | GLOVE
+CHECK-UP | Khám sức khoẻ định kỳ | 2 | CHECKUP, MEDICAL EXAMINATION, PHYSICAL
+APPOINTMENT | Lịch hẹn khám bệnh | 2
+INSURANCE | Bảo hiểm y tế | 2 | HEALTH INSURANCE
+FAINT | Ngất xỉu | 2 | PASS OUT, BLACK OUT
+BLEED | Chảy máu | 2 | BLEEDING
+INJURY | Chấn thương | 2 | WOUND
+FIRST AID | Sơ cứu | 2
+PREGNANT | Mang thai | 2 | EXPECTING
+HAND SANITIZER | Nước rửa tay khô | 2 | SANITIZER, SANITISER, HAND SANITISER
+NUTRITION | Dinh dưỡng | 2 | NOURISHMENT
+SCALE | Cái cân sức khoẻ | 2 | SCALES
+BLOOD TYPE | Nhóm máu | 2 | BLOOD GROUP
+EYESIGHT | Thị lực | 2 | VISION, SIGHT
+HEARING | Thính lực | 2
+BRACES | Niềng răng | 2
+WISDOM TOOTH | Răng khôn | 2 | WISDOM TEETH
+DOSE | Liều lượng thuốc | 3 | DOSAGE
+WARD | Buồng bệnh, khu điều trị | 3
+STRETCHER | Cái cáng (khiêng bệnh nhân) | 3
+CRUTCH | Cái nạng | 3 | CRUTCHES
+STETHOSCOPE | Ống nghe của bác sĩ | 3
+SCAN | Chụp chiếu (CT, MRI) | 3 | SCANNING
+PULSE | Mạch (bắt mạch) | 3 | HEARTBEAT
+DIAGNOSIS | Chẩn đoán | 3
+ASTHMA | Bệnh hen suyễn | 3
+DIABETES | Bệnh tiểu đường | 3
+HYPERTENSION | Bệnh cao huyết áp | 3 | HIGH BLOOD PRESSURE
+INSOMNIA | Chứng mất ngủ | 3 | SLEEPLESSNESS
+NAUSEA | Cảm giác buồn nôn | 3 | NAUSEOUS, SICKNESS
+DIARRHEA | Tiêu chảy | 3 | DIARRHOEA
+CONSTIPATION | Táo bón | 3
+RASH | Phát ban | 3
+SWOLLEN | Bị sưng (tính từ) | 3 | SWELLING
+BRUISE | Vết bầm tím | 3
+FRACTURE | Gãy xương | 3 | BROKEN BONE, BREAK
+SPRAIN | Bong gân | 3 | TWIST
+INTESTINE | Ruột | 3 | INTESTINES, BOWEL, BOWELS, GUT
+SPINE | Cột sống | 3 | BACKBONE
+RIB | Xương sườn | 3 | RIBS
+VEIN | Tĩnh mạch | 3 | BLOOD VESSEL
+NERVE | Dây thần kinh | 3
+JOINT | Khớp xương | 3
+IMMUNE SYSTEM | Hệ miễn dịch | 3
+DIGESTION | Sự tiêu hoá | 3
+ANTIBIOTIC | Thuốc kháng sinh | 3 | ANTIBIOTICS
+OINTMENT | Thuốc mỡ bôi da | 3 | CREAM
+ADMIT | Cho nhập viện | 3 | HOSPITALIZE, HOSPITALISE
+DISCHARGE | Cho xuất viện | 3
+UNCONSCIOUS | Bất tỉnh | 3 | PASSED OUT
+MIDWIFE | Nữ hộ sinh | 3
+PEDIATRICIAN | Bác sĩ nhi khoa | 3 | PAEDIATRICIAN
+OPTICIAN | Người đo mắt, làm kính | 3 | OPTOMETRIST
+CONTAGIOUS | Dễ lây lan | 3 | INFECTIOUS
+EPIDEMIC | Dịch bệnh | 3 | OUTBREAK, PANDEMIC
+QUARANTINE | Cách ly | 3 | ISOLATION
+HYGIENE | Vệ sinh (giữ sạch sẽ) | 3 | SANITATION, CLEANLINESS
+CAST | Bó bột (chân tay gãy) | 3 | PLASTER CAST
+STITCHES | Mũi khâu vết thương | 3 | STITCH, SUTURE, SUTURES
+ANESTHESIA | Gây mê | 3 | ANAESTHESIA, ANESTHETIC, ANAESTHETIC
+DONOR | Người hiến máu, hiến tạng | 3 | BLOOD DONOR
+CAVITY | Lỗ sâu răng | 3 | TOOTH DECAY
+FILLING | Trám răng | 3
+GUMS | Lợi, nướu răng | 3 | GUM
+X-RAY | Phim chụp X-quang | 1 | XRAY
+OPERATING ROOM | Phòng mổ | 2 | OPERATING THEATRE, THEATRE
+ICU | Phòng hồi sức tích cực | 3 | INTENSIVE CARE
+BLOOD SUGAR | Đường huyết | 3 | GLUCOSE
+CAPSULE | Viên con nhộng | 2
+SYRINGE | Ống tiêm (xi lanh) | 3
+NEEDLE | Kim tiêm | 2
+DRIP | Truyền dịch (chai truyền) | 3 | IV
+HEAT STROKE | Say nắng | 3 | SUNSTROKE, HEATSTROKE
+FOOD POISONING | Ngộ độc thực phẩm | 3
+CHICKENPOX | Bệnh thuỷ đậu | 3 | CHICKEN POX
+MEASLES | Bệnh sởi | 3
+FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS, EXHAUSTION
+SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
 CARDIOLOGY | Khoa tim mạch | 3 | KHOA TIM MẠCH
 IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3 | TIÊM CHỦNG
 PEDIATRICS | Khoa nhi / y học trẻ em | 3 | KHOA NHI
@@ -266,7 +266,7 @@ INFLAMMATION | Sự viêm nhiễm | 3 | VIÊM
 INTENSIVE CARE | Chăm sóc đặc biệt (ICU) | 3 | CHĂM SÓC ĐẶC BIỆT
 LABORATORY | Phòng thí nghiệm | 1 | PHÒNG THÍ NGHIỆM
 MEDICATION | Thuốc điều trị | 2 | THUỐC
-PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc tiếng Anh là gì? | 3 | THUỐC KHÁNG SINH
+PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết xuất từ nấm mốc | 3 | THUỐC KHÁNG SINH
 PRACTITIONER | Bác sĩ đa khoa / người hành nghề | 3 | BÁC SĨ
 RESPIRATORY | Thuộc về hô hấp | 3 | HÔ HẤP
 SPECIALIST | Bác sĩ chuyên khoa | 2 | CHUYÊN KHOA
@@ -283,103 +283,103 @@ INCISION | Vết rạch phẫu thuật chính xác bằng dao mổ trên da bệ
 DEFICIENCY | Tình trạng thiếu hụt vitamin hoặc vi chất dinh dưỡng cần thiết | 2 | THIẾU HỤT
 HEMORRHAGE | Hiện tượng xuất huyết chảy máu ồ ạt trong cơ thể | 3 | XUẤT HUYẾT
 TOXICOLOGY | Độc chất học - ngành khoa học nghiên cứu về các chất độc hại | 3 | ĐỘC CHẤT HỌC
-OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay tiếng Anh là gì? | 2 | BỆNH NHÂN NGOẠI TRÚ
-INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm tiếng Anh là gì? | 2 | BỆNH NHÂN NỘI TRÚ
-SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em tiếng Anh là gì? | 1 | SIRO THUỐC, THUỐC SIRO
-GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương tiếng Anh là gì? | 2 | GẠC TIỆT TRÙNG
-COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương tiếng Anh là gì? | 2 | BÔNG Y TẾ
-DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ tiếng Anh là gì? | 2 | THUỐC SÁT TRÙNG, ANTISEPTIC
-IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu tiếng Anh là gì? | 2 | TRUYỀN DỊCH, DRIP
-BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người tiếng Anh là gì? | 2 | THÂN NHIỆT
-CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người tiếng Anh là gì? | 2 | ỚN LẠNH, RÉT RUN
-CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp tiếng Anh là gì? | 2 | NGHẸT MŨI
-VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày tiếng Anh là gì? | 2 | NÔN MỬA, THROWING UP
-INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn tiếng Anh là gì? | 2 | KHÓ TIÊU, ĐẦY BỤNG
-HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản tiếng Anh là gì? | 2 | Ợ CHUA, TRÀO NGƯỢC
-SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương tiếng Anh là gì? | 2 | SƯNG TẤY, SƯNG PHÙ
-DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp tiếng Anh là gì? | 3 | TRẬT KHỚP
-CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi tiếng Anh là gì? | 2 | CẶP NẠNG, NẠNG
-DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn tiếng Anh là gì? | 3 | MÁY SỐC ĐIỆN
-DIALYSIS | Thủ thuật chạy thận nhân tạo lọc máu lọc độc tiếng Anh là gì? | 3 | CHẠY THẬN
-CHEMOTHERAPY | Hóa trị liệu tiêu diệt tế bào ung thư quái ác tiếng Anh là gì? | 3 | HÓA TRỊ, CHEMO
-RADIOTHERAPY | Xạ trị dùng tia phóng xạ chiếu diệt khối u tiếng Anh là gì? | 3 | XẠ TRỊ
-TUMOR | Khối u bất thường phát triển trong cơ thể tiếng Anh là gì? | 2 | KHỐI U
-LESION | Vết tổn thương thực thể trên mô cơ quan tiếng Anh là gì? | 3 | VẾT TỔN THƯƠNG
-ORTHOPEDICS | Chuyên khoa xương khớp điều trị bệnh cơ xương tiếng Anh là gì? | 2 | CHỈNH HÌNH HỌC
-ENDOCRINOLOGY | Khoa nội tiết nghiên cứu các hormone và tuyến nội tiết tiếng Anh là gì? | 3 | NỘI TIẾT HỌC
-GASTROENTEROLOGY | Khoa tiêu hóa điều trị bệnh dạ dày và đường ruột tiếng Anh là gì? | 3 | TIÊU HÓA HỌC
-PULMONOLOGY | Khoa hô hấp điều trị các bệnh phổi và đường thở tiếng Anh là gì? | 3 | HÔ HẤP HỌC
-OPHTHALMOLOGY | Khoa mắt chuyên khám và điều trị các bệnh về mắt tiếng Anh là gì? | 3 | NHÃN KHOA
-OTOLARYNGOLOGY | Khoa tai mũi họng điều trị bệnh tai mũi và cổ họng tiếng Anh là gì? | 3 | TAI MŨI HỌNG
-PATHOGEN | Mầm bệnh vi sinh vật gây ra bệnh cho cơ thể tiếng Anh là gì? | 2 | MẦM BỆNH
-VIRUS | Vi-rút mầm bệnh nhỏ hơn vi khuẩn cần tế bào chủ để sống tiếng Anh là gì? | 1 | VI-RÚT
-FUNGUS | Nấm sinh vật gây bệnh nấm da hoặc nhiễm trùng tiếng Anh là gì? | 1 | NẤM
-PARASITE | Ký sinh trùng sinh vật sống ký sinh trong hoặc ngoài cơ thể tiếng Anh là gì? | 2 | KÝ SINH TRÙNG
-ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống lại mầm bệnh tiếng Anh là gì? | 2 | KHÁNG THỂ
-ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể tiếng Anh là gì? | 3 | KHÁNG NGUYÊN
-LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng tiếng Anh là gì? | 2 | HẠCH BẠCH HUYẾT
-SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng tiếng Anh là gì? | 3 | NHIỄM TRÙNG HUYẾT
-CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm tiếng Anh là gì? | 1 | BỆNH MÃN TÍNH
-ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội tiếng Anh là gì? | 2 | BỆNH CẤP TÍNH
-TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi tiếng Anh là gì? | 2 | BỆNH GIAI ĐOẠN CUỐI
-REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư tiếng Anh là gì? | 3 | BỆNH ĐỢT HIM
-RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi tiếng Anh là gì? | 2 | TÁI PHÁT
-TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng tiếng Anh là gì? | 3 | PHÂN LOẠI CẤP CỨU
-VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ tiếng Anh là gì? | 1 | DẤU HIỆU SINH TỒN
-OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 tiếng Anh là gì? | 2 | ĐỘ BÃO HÒA OXY
-ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim tiếng Anh là gì? | 3 | ĐIỆN TÂM ĐỒ
-MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể tiếng Anh là gì? | 2 | CHỤP CỘNG HƯỞNG TỪ
-CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể tiếng Anh là gì? | 2 | CHỤP CẮT LỚP
-ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể tiếng Anh là gì? | 2 | NỘI SOI
-LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ tiếng Anh là gì? | 3 | NỘI SOI Ổ BỤNG
-SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật tiếng Anh là gì? | 2 | KHÂu VẾT THƯƠNG
-WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương tiếng Anh là gì? | 2 | LÀnh VẾT THƯƠNG
-PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị tiếng Anh là gì? | 1 | VẬT LÝ TRỊ LIỆU
-OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày tiếng Anh là gì? | 3 | LIỆU PHÁP NGHỀ NGHIỆP
-SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt tiếng Anh là gì? | 2 | TRỊ LIỆU NGÔN NGỮ
-PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc tiếng Anh là gì? | 3 | CHĂM SÓC GIẢM NHẸ
-HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối tiếng Anh là gì? | 3 | CHĂM SÓC CUỐI ĐỜI
-ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống tiếng Anh là gì? | 1 | HIẾN TẠNG
-PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất tiếng Anh là gì? | 3 | CHI GIẢ
-CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới tiếng Anh là gì? | 3 | THỬ NGHIỆM LÂM SÀNG
-PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm tiếng Anh là gì? | 2 | GIẢ DƯỢC
-DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần tiếng Anh là gì? | 1 | LIỀU LƯỢNG
-CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật tiếng Anh là gì? | 3 | CHỐNG CHỈ ĐỊNH
-ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức tiếng Anh là gì? | 3 | PHẢN VỆ
-IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể tiếng Anh là gì? | 1 | MIỄN DỊCH
-HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ tiếng Anh là gì? | 3 | MIỄN DỊCH CỘNG ĐỒNG
-PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới tiếng Anh là gì? | 1 | ĐẠI DỊCH
-ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực tiếng Anh là gì? | 3 | BỆNH ĐẶC HỮU
-OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi tiếng Anh là gì? | 2 | BÙNG PHÁT DỊCH
-CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh tiếng Anh là gì? | 2 | TRUY VẾT
-INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng tiếng Anh là gì? | 2 | THỜI GIAN Ủ BỆNH
-ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì tiếng Anh là gì? | 2 | KHÔNG TRIỆU CHỨNG
-COMORBIDITY | Bệnh đồng mắc hai hoặc nhiều bệnh cùng tồn tại ở một người tiếng Anh là gì? | 3 | BỆNH ĐỒNG MẮC
-MORTALITY RATE | Tỷ lệ tử vong số người chết trên tổng số ca bệnh tiếng Anh là gì? | 2 | TỶ LỆ TỬ VONG
-MORBIDITY | Tỷ lệ mắc bệnh hoặc tình trạng bệnh tật trong dân số tiếng Anh là gì? | 3 | TỶ LỆ MẮC BỆNH
-MALNUTRITION | Suy dinh dưỡng thiếu hụt dinh dưỡng cần thiết cho cơ thể tiếng Anh là gì? | 2 | SUY DINH DƯỠNG
-OBESITY | Béo phì tình trạng tích lũy mỡ quá mức gây hại sức khỏe tiếng Anh là gì? | 1 | BÉO PHÌ
-STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử vong tiếng Anh là gì? | 1 | ĐỘT QUỴ
-AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể tiếng Anh là gì? | 3 | BỆNH TỰ MIỄN
-ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân tiếng Anh là gì? | 2 | VIÊM KHỚP
-ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin tiếng Anh là gì? | 2 | THIẾU MÁU
-VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não tiếng Anh là gì? | 2 | CHÓNG MẶT
-DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài tiếng Anh là gì? | 1 | TRẦM CẢM
-ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát tiếng Anh là gì? | 1 | LO ÂU
-TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc tiếng Anh là gì? | 1 | CHẤN THƯƠNG
-POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD tiếng Anh là gì? | 3 | RỐI LOẠN PTSD
-BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm tiếng Anh là gì? | 3 | RỐI LOẠN LƯỠNG CỰC
-SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng tiếng Anh là gì? | 3 | TÂM THẦN PHÂN LIỆT
-DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi tiếng Anh là gì? | 2 | SA SÚT TRÍ TUỆ
-ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi tiếng Anh là gì? | 2 | ALZHEIMER
-PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động tiếng Anh là gì? | 2 | PARKINSON
-EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ tiếng Anh là gì? | 2 | ĐỘNG KINH
-MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng tiếng Anh là gì? | 1 | ĐAU NỬA ĐẦU
-KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận tiếng Anh là gì? | 1 | SỎI THẬN
-GALLSTONE | Sỏi mật cặn cholesterol hoặc muối mật tích tụ trong túi mật tiếng Anh là gì? | 2 | SỎI MẬT
-APPENDICITIS | Viêm ruột thừa cần phẫu thuật khẩn cấp tiếng Anh là gì? | 2 | VIÊM RUỘT THỪA
-HERNIA | Thoát vị nội tạng chui ra khỏi vị trí bình thường tiếng Anh là gì? | 2 | THOÁT VỊ
-CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ tiếng Anh là gì? | 2 | ĐỤC THỦY TINH THỂ
-GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác tiếng Anh là gì? | 3 | TĂNG NHÃN ÁP
-HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể tiếng Anh là gì? | 3 | THIẾU OXY MÔ
-COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông tiếng Anh là gì? | 3 | ĐÔNG MÁU
+OUTPATIENT | Bệnh nhân điều trị ngoại trú khám xong về nhà ngay | 2 | BỆNH NHÂN NGOẠI TRÚ
+INPATIENT | Bệnh nhân nằm viện điều trị nội trú qua đêm | 2 | BỆNH NHÂN NỘI TRÚ
+SYRUP | Thuốc ho dạng siro ngọt lỏng dễ uống cho trẻ em | 1 | SIRO THUỐC, THUỐC SIRO
+GAUZE | Miếng vải gạc tiệt trùng thấm dịch vết thương | 2 | GẠC TIỆT TRÙNG
+COTTON WOOL | Bông gòn y tế thấm cồn sát trùng vết thương | 2 | BÔNG Y TẾ
+DISINFECTANT | Dung dịch cồn sát khuẩn tiệt trùng dụng cụ vết mổ | 2 | THUỐC SÁT TRÙNG, ANTISEPTIC
+IV DRIP | Dây truyền dịch nước biển nhỏ giọt vào mạch máu | 2 | TRUYỀN DỊCH, DRIP
+BODY TEMPERATURE | Thân nhiệt độ nóng lạnh của cơ thể người | 2 | THÂN NHIỆT
+CHILLS | Cảm giác ớn lạnh rét run cầm cập trong người | 2 | ỚN LẠNH, RÉT RUN
+CONGESTION | Chứng nghẹt mũi ngạt thở khó thở đường hô hấp | 2 | NGHẸT MŨI
+VOMITING | Hành động nôn mửa tống thức ăn ra khỏi dạ dày | 2 | NÔN MỬA, THROWING UP
+INDIGESTION | Chứng khó tiêu chướng bụng ợ hơi sau khi ăn | 2 | KHÓ TIÊU, ĐẦY BỤNG
+HEARTBURN | Chứng ợ chua trào ngược axit dạ dày lên thực quản | 2 | Ợ CHUA, TRÀO NGƯỢC
+SWELLING | Chỗ sưng phù tấy đỏ đau nhức sau chấn thương | 2 | SƯNG TẤY, SƯNG PHÙ
+DISLOCATION | Chứng trật khớp xương lệch khỏi ổ khớp | 3 | TRẬT KHỚP
+CRUTCHES | Cặp nạng gỗ chống nách tập tễnh bước đi | 2 | CẶP NẠNG, NẠNG
+DEFIBRILLATOR | Máy sốc điện tim cứu sống bệnh nhân ngừng tuần hoàn | 3 | MÁY SỐC ĐIỆN
+DIALYSIS | Thủ thuật chạy thận nhân tạo lọc máu lọc độc | 3 | CHẠY THẬN
+CHEMOTHERAPY | Hóa trị liệu tiêu diệt tế bào ung thư quái ác | 3 | HÓA TRỊ, CHEMO
+RADIOTHERAPY | Xạ trị dùng tia phóng xạ chiếu diệt khối u | 3 | XẠ TRỊ
+TUMOR | Khối u bất thường phát triển trong cơ thể | 2 | KHỐI U, TUMOUR
+LESION | Vết tổn thương thực thể trên mô cơ quan | 3 | VẾT TỔN THƯƠNG
+ORTHOPEDICS | Chuyên khoa xương khớp điều trị bệnh cơ xương | 2 | CHỈNH HÌNH HỌC
+ENDOCRINOLOGY | Khoa nội tiết nghiên cứu các hormone và tuyến nội tiết | 3 | NỘI TIẾT HỌC
+GASTROENTEROLOGY | Khoa tiêu hóa điều trị bệnh dạ dày và đường ruột | 3 | TIÊU HÓA HỌC
+PULMONOLOGY | Khoa hô hấp điều trị các bệnh phổi và đường thở | 3 | HÔ HẤP HỌC
+OPHTHALMOLOGY | Khoa mắt chuyên khám và điều trị các bệnh về mắt | 3 | NHÃN KHOA
+OTOLARYNGOLOGY | Khoa tai mũi họng điều trị bệnh tai mũi và cổ họng | 3 | TAI MŨI HỌNG
+PATHOGEN | Mầm bệnh vi sinh vật gây ra bệnh cho cơ thể | 2 | MẦM BỆNH
+VIRUS | Vi-rút mầm bệnh nhỏ hơn vi khuẩn cần tế bào chủ để sống | 1 | VI-RÚT
+FUNGUS | Nấm sinh vật gây bệnh nấm da hoặc nhiễm trùng | 1 | NẤM
+PARASITE | Ký sinh trùng sinh vật sống ký sinh trong hoặc ngoài cơ thể | 2 | KÝ SINH TRÙNG
+ANTIBODY | Kháng thể protein do hệ miễn dịch tạo ra để chống lại mầm bệnh | 2 | KHÁNG THỂ
+ANTIGEN | Kháng nguyên chất kích thích cơ thể sinh ra kháng thể | 3 | KHÁNG NGUYÊN
+LYMPH NODE | Hạch bạch huyết tham gia lọc dịch và chống nhiễm trùng | 2 | HẠCH BẠCH HUYẾT
+SEPSIS | Nhiễm trùng huyết phản ứng nguy hiểm đến tính mạng với nhiễm trùng | 3 | NHIỄM TRÙNG HUYẾT
+CHRONIC DISEASE | Bệnh mãn tính kéo dài nhiều tháng hoặc nhiều năm | 1 | BỆNH MÃN TÍNH
+ACUTE DISEASE | Bệnh cấp tính khởi phát nhanh và dữ dội | 2 | BỆNH CẤP TÍNH
+TERMINAL ILLNESS | Bệnh nan y giai đoạn cuối không còn hy vọng chữa khỏi | 2 | BỆNH GIAI ĐOẠN CUỐI
+REMISSION | Giai đoạn bệnh lui giảm triệu chứng hoặc không phát hiện ung thư | 3 | BỆNH ĐỢT HIM
+RELAPSE | Tái phát bệnh quay trở lại sau khi đã thuyên giảm hoặc khỏi | 2 | TÁI PHÁT
+TRIAGE | Phân loại cấp cứu xác định ưu tiên điều trị theo mức độ nặng | 3 | PHÂN LOẠI CẤP CỨU
+VITALS | Dấu hiệu sinh tồn gồm mạch huyết áp nhịp thở nhiệt độ | 1 | DẤU HIỆU SINH TỒN
+OXYGEN SATURATION | Độ bão hòa oxy trong máu đo bằng SpO2 | 2 | ĐỘ BÃO HÒA OXY
+ELECTROCARDIOGRAM | Điện tâm đồ ECG ghi lại hoạt động điện của tim | 3 | ĐIỆN TÂM ĐỒ
+MRI SCAN | Chụp cộng hưởng từ dùng từ trường tạo ảnh chi tiết bên trong cơ thể | 2 | CHỤP CỘNG HƯỞNG TỪ
+CT SCAN | Chụp cắt lớp vi tính tạo ảnh cắt lát chi tiết bên trong cơ thể | 2 | CHỤP CẮT LỚP
+ENDOSCOPY | Nội soi dùng camera nhỏ quan sát bên trong cơ thể | 2 | NỘI SOI
+LAPAROSCOPY | Phẫu thuật nội soi ổ bụng qua các vết rạch nhỏ | 3 | NỘI SOI Ổ BỤNG
+SUTURE | Chỉ khâu hoặc hành động khâu vết thương sau phẫu thuật | 2 | KHÂu VẾT THƯƠNG
+WOUND HEALING | Quá trình lành vết thương hồi phục mô bị tổn thương | 2 | LÀnh VẾT THƯƠNG
+PHYSICAL THERAPY | Vật lý trị liệu phục hồi chức năng bằng bài tập và thiết bị | 1 | VẬT LÝ TRỊ LIỆU
+OCCUPATIONAL THERAPY | Liệu pháp nghề nghiệp giúp bệnh nhân độc lập trong sinh hoạt hàng ngày | 3 | LIỆU PHÁP NGHỀ NGHIỆP
+SPEECH THERAPY | Trị liệu ngôn ngữ giúp cải thiện khả năng nói và nuốt | 2 | TRỊ LIỆU NGÔN NGỮ
+PALLIATIVE CARE | Chăm sóc giảm nhẹ tập trung giảm đau thay vì chữa bệnh gốc | 3 | CHĂM SÓC GIẢM NHẸ
+HOSPICE | Nhà chăm sóc cuối đời hỗ trợ bệnh nhân giai đoạn cuối | 3 | CHĂM SÓC CUỐI ĐỜI
+ORGAN DONATION | Hiến tạng cho người cần ghép để cứu sống | 1 | HIẾN TẠNG
+PROSTHESIS | Chi giả bộ phận nhân tạo thay thế tay chân bị mất | 3 | CHI GIẢ
+CLINICAL TRIAL | Thử nghiệm lâm sàng kiểm tra hiệu quả và an toàn của thuốc mới | 3 | THỬ NGHIỆM LÂM SÀNG
+PLACEBO | Giả dược chất không có tác dụng dược lý dùng trong thử nghiệm | 2 | GIẢ DƯỢC
+DOSAGE | Liều lượng lượng thuốc quy định dùng trong mỗi lần | 1 | LIỀU LƯỢNG
+CONTRAINDICATION | Chống chỉ định lý do không được dùng thuốc hoặc thực hiện thủ thuật | 3 | CHỐNG CHỈ ĐỊNH
+ANAPHYLAXIS | Phản vệ dị ứng nghiêm trọng đe dọa tính mạng ngay lập tức | 3 | PHẢN VỆ
+IMMUNITY | Miễn dịch khả năng chống lại bệnh tật của cơ thể | 1 | MIỄN DỊCH
+HERD IMMUNITY | Miễn dịch cộng đồng khi đủ người miễn dịch thì cả nhóm được bảo vệ | 3 | MIỄN DỊCH CỘNG ĐỒNG
+PANDEMIC | Đại dịch bệnh lây lan trên phạm vi toàn thế giới | 1 | ĐẠI DỊCH
+ENDEMIC | Bệnh đặc hữu thường xuyên hiện diện trong một cộng đồng hoặc khu vực | 3 | BỆNH ĐẶC HỮU
+OUTBREAK | Bùng phát bệnh số ca tăng đột ngột tại một nơi | 2 | BÙNG PHÁT DỊCH
+CONTACT TRACING | Truy vết tiếp xúc xác định người đã tiếp xúc với ca bệnh | 2 | TRUY VẾT
+INCUBATION PERIOD | Thời gian ủ bệnh từ khi nhiễm đến khi xuất hiện triệu chứng | 2 | THỜI GIAN Ủ BỆNH
+ASYMPTOMATIC | Không có triệu chứng bị nhiễm bệnh nhưng không biểu hiện gì | 2 | KHÔNG TRIỆU CHỨNG
+COMORBIDITY | Bệnh đồng mắc hai hoặc nhiều bệnh cùng tồn tại ở một người | 3 | BỆNH ĐỒNG MẮC
+MORTALITY RATE | Tỷ lệ tử vong số người chết trên tổng số ca bệnh | 2 | TỶ LỆ TỬ VONG
+MORBIDITY | Tỷ lệ mắc bệnh hoặc tình trạng bệnh tật trong dân số | 3 | TỶ LỆ MẮC BỆNH
+MALNUTRITION | Suy dinh dưỡng thiếu hụt dinh dưỡng cần thiết cho cơ thể | 2 | SUY DINH DƯỠNG
+OBESITY | Béo phì tình trạng tích lũy mỡ quá mức gây hại sức khỏe | 1 | BÉO PHÌ
+STROKE | Đột quỵ tắc hoặc vỡ mạch máu não gây liệt hoặc tử vong | 1 | ĐỘT QUỴ
+AUTOIMMUNE DISEASE | Bệnh tự miễn hệ miễn dịch tấn công nhầm tế bào cơ thể | 3 | BỆNH TỰ MIỄN
+ARTHRITIS | Viêm khớp đau và sưng khớp do nhiều nguyên nhân | 2 | VIÊM KHỚP
+ANEMIA | Thiếu máu tình trạng thiếu hồng cầu hoặc hemoglobin | 2 | THIẾU MÁU, ANAEMIA
+VERTIGO | Chóng mặt cảm giác xoay vòng do vấn đề tai trong hoặc não | 2 | CHÓNG MẶT
+DEPRESSION | Trầm cảm rối loạn tâm thần gây buồn bã mất hứng thú kéo dài | 1 | TRẦM CẢM
+ANXIETY | Lo âu cảm giác lo lắng sợ hãi quá mức không kiểm soát | 1 | LO ÂU
+TRAUMA | Chấn thương tâm lý hoặc thể chất do sự kiện gây sốc | 1 | CHẤN THƯƠNG
+POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD | 3 | RỐI LOẠN PTSD
+BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm | 3 | RỐI LOẠN LƯỠNG CỰC
+SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng | 3 | TÂM THẦN PHÂN LIỆT
+DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi | 2 | SA SÚT TRÍ TUỆ
+ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi | 2 | ALZHEIMER
+PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động | 2 | PARKINSON
+EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ | 2 | ĐỘNG KINH
+MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng | 1 | ĐAU NỬA ĐẦU
+KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận | 1 | SỎI THẬN
+GALLSTONE | Sỏi mật cặn cholesterol hoặc muối mật tích tụ trong túi mật | 2 | SỎI MẬT
+APPENDICITIS | Viêm ruột thừa cần phẫu thuật khẩn cấp | 2 | VIÊM RUỘT THỪA
+HERNIA | Thoát vị nội tạng chui ra khỏi vị trí bình thường | 2 | THOÁT VỊ
+CATARACT | Đục thủy tinh thể mắt bị mờ dần do protein tích tụ | 2 | ĐỤC THỦY TINH THỂ
+GLAUCOMA | Tăng nhãn áp bệnh mắt gây tổn thương thần kinh thị giác | 3 | TĂNG NHÃN ÁP
+HYPOXIA | Thiếu oxy trong mô và các cơ quan của cơ thể | 3 | THIẾU OXY MÔ
+COAGULATION | Đông máu quá trình máu đông lại tạo cục máu đông | 3 | ĐÔNG MÁU

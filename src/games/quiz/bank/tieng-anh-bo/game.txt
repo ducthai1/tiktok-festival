@@ -1,291 +1,291 @@
 # Tiếng Anh · Game
-LEVEL | Cấp độ nhân vật hoặc bản đồ trong trò chơi tiếng Anh là gì? | 1 | STAGE
-MAP | Bản đồ không gian trò chơi diễn tiếng Anh là gì? | 1 | TERRAIN
-JUMP | Nhảy vượt qua chướng ngại vật tiếng Anh là gì? | 1 | LEAP
-COIN | Tiền xu vàng trong trò chơi tiếng Anh là gì? | 1 | GOLD
-LIFE | Mạng sống nhân vật còn tiếng Anh là gì? | 1 | LIVES
-ENEMY | Kẻ địch đối thủ tiếng Anh là gì? | 1 | FOE
-HERO | Nhân vật anh hùng chính tiếng Anh là gì? | 1 | CHARACTER
-CHEST | Rương chứa vật phẩm thưởng tiếng Anh là gì? | 1 | TREASURE
-GEM | Ngọc quý đá quý tiếng Anh là gì? | 1 | CRYSTAL
-RANK | Hạng xếp vị trí cao tiếng Anh là gì? | 1 | PLACEMENT
-REWARD | Phần thưởng hưởng lợi tiếng Anh là gì? | 1 | PRIZE
-ENDGAME | Giai đoạn cuối cùng trò chơi tiếng Anh là gì? | 1 | FINAL STAGE
-TUTORIAL | Hướng dẫn cách chơi cơ bản tiếng Anh là gì? | 1 | GUIDE
-COMBO BREAKER | Bẻ gãy chuỗi tấn công đối tiếng Anh là gì? | 1 | INTERRUPT
-DODGE | Né tránh tránh khỏi sát thương tiếng Anh là gì? | 1 | EVADE
-BLOCK | Chặn bảo vệ tránh sát thương tiếng Anh là gì? | 1 | SHIELD UP
-CAMPAIGN | Chiến dịch câu chuyện chính trò tiếng Anh là gì? | 1 | STORY MODE
-SINGLE PLAYER | Chơi một người không cần ai tiếng Anh là gì? | 1
-MULTIPLAYER | Chơi nhiều người cùng một lúc tiếng Anh là gì? | 1
-OFFLINE | Chơi không kết nối mạng internet tiếng Anh là gì? | 1 | LOCAL
-ONLINE | Chơi kết nối internet với người khác tiếng Anh là gì? | 1
-CONSOLE | Máy chơi game chuyên dụng bảng tiếng Anh là gì? | 1 | GAMING DEVICE
-MOBILE | Thiết bị di động điện thoại tiếng Anh là gì? | 1 | PHONE
-CONTROLLER | Bộ điều khiển cầm tay tiếng Anh là gì? | 1 | GAMEPAD
-JOYSTICK | Cần điều khiển hướng chuyển động tiếng Anh là gì? | 1 | LEVER
-BUTTON | Nút bấm điều khiển tiếng Anh là gì? | 1 | KEY
-PAUSE | Tạm dừng trò chơi tiếng Anh là gì? | 1 | STOP
-RESTART | Khởi động lại trò chơi từ đầu tiếng Anh là gì? | 1 | RESET
-QUIT | Thoát trò chơi từ bỏ tiếng Anh là gì? | 1 | EXIT
-SETTINGS | Cài đặt tùy chỉnh tham số tiếng Anh là gì? | 1 | OPTIONS
-GRAPHICS | Đồ họa hình ảnh trực quan tiếng Anh là gì? | 1 | VISUALS
-SOUND | Âm thanh âm lượng nhạc tiếng Anh là gì? | 1 | AUDIO
-VOLUME | Độ lớn âm thanh âm tiếng Anh là gì? | 1 | LOUDNESS
-BRIGHTNESS | Độ sáng độ tối hình ảnh tiếng Anh là gì? | 1 | LUMINOSITY
-RESOLUTION | Độ phân giải hình ảnh rõ nét tiếng Anh là gì? | 1 | CLARITY
-FULLSCREEN | Toàn màn hình không thanh tiếng Anh là gì? | 1 | MAXIMIZE
-WINDOWED | Cửa sổ nhỏ mode cửa tiếng Anh là gì? | 1 | WINDOW MODE
-UPDATE | Cập nhật phiên bản mới tiếng Anh là gì? | 1 | UPGRADE
-PATCH | Bản cập nhật sửa lỗi tiếng Anh là gì? | 1 | FIX
-STORYLINE | Chuỗi câu chuyện cốt truyện tiếng Anh là gì? | 1 | NARRATIVE
-INVENTORY | Kho vật phẩm cầm theo tiếng Anh là gì? | 1 | BAG
-QUEST LOG | Nhật ký nhiệm vụ ghi chép tiếng Anh là gì? | 1 | TASK LIST
-CHEAT CODE | Dãy ký tự bí mật do lập trình viên cài vào để mở khóa tính năng game tiếng Anh là gì? | 1 | SECRET CODE
-HIGHSCORE | Điểm số cao nhất từng đạt tiếng Anh là gì? | 1 | BEST SCORE
-STATISTICS | Thống kê dữ liệu kết quả tiếng Anh là gì? | 1 | STATS
-LEADERBOARD | Bảng xếp hạng người chơi top tiếng Anh là gì? | 1
-DIFFICULTY MODE | Chế độ mức độ khó dễ tiếng Anh là gì? | 1
-SPEEDRUN | Chơi hoàn thành game nhanh nhất tiếng Anh là gì? | 3 | FAST RUN
-RESPAWN | Sinh lại nhân vật sau chết tiếng Anh là gì? | 1 | REBIRTH
-DODGE ROLL | Lăn tránh né sát thương nhanh tiếng Anh là gì? | 1 | EVADE ROLL
-SKILL TREE | Cây kỹ năng nâng cấp tiếng Anh là gì? | 1 | ABILITY TREE
-LATENCY | Độ trễ phản ứng mạng truyền tiếng Anh là gì? | 3 | PING
-FRAME RATE | Tốc độ khung hình mỗi giây tiếng Anh là gì? | 3 | FPS
-EASTER EGG | Bí mật ẩn giấu nhà phát triển tiếng Anh là gì? | 3
-SANDBOX | Chế độ tự do xây dựng sáng tạo tiếng Anh là gì? | 3 | CREATIVE MODE
-NERF | Làm yếu đi nhân vật kỹ năng tiếng Anh là gì? | 3 | WEAKEN
-HITSCAN | Kỹ năng bắn ngang tức thì tiếng Anh là gì? | 3 | INSTANT HIT
-MICROTRANSACTION | Mua nhỏ vật phẩm phí tiền tiếng Anh là gì? | 3 | SMALL PURCHASE
-PATCH NOTES | Ghi chú cập nhật thay đổi tiếng Anh là gì? | 3
-OPEN WORLD | Thế giới mở tự do khám phá tiếng Anh là gì? | 3 | FREE WORLD
-RAY TRACING | Công nghệ đồ họa ánh sáng tiếng Anh là gì? | 3 | LIGHT RENDERING
-PROCEDURAL GENERATION | Tạo nội dung ngẫu nhiên thuật toán tiếng Anh là gì? | 3
-PHYSICS ENGINE | Động cơ vật lý tương tác tiếng Anh là gì? | 3
-ANIMATION | Chuyển động hoạt hình nhân vật tiếng Anh là gì? | 3 | MOTION
-PARTICLE EFFECT | Hiệu ứng hạt tia ánh sáng tiếng Anh là gì? | 3
-SHADER | Chương trình tô màu đồ họa tiếng Anh là gì? | 3 | GRAPHICS CODE
-POLYGON | Hình đa giác cấu trúc mô hình tiếng Anh là gì? | 3 | SHAPE
-TEXTURE | Bề mặt chất liệu chi tiết tiếng Anh là gì? | 3 | SURFACE
-NORMAL MAP | Bản đồ pháp tuyến độ sâu tiếng Anh là gì? | 3
-COLLIDER | Vùng va chạm vật lý tiếng Anh là gì? | 3 | COLLISION ZONE
-SPRITE | Hình hai chiều nhân vật tiếng Anh là gì? | 3 | 2D IMAGE
-TILESET | Bộ gạch lát xây dựng bản đồ tiếng Anh là gì? | 3 | TILE COLLECTION
-ASSET | Tài nguyên hình ảnh âm thanh tiếng Anh là gì? | 3 | RESOURCE
-RENDER | Vẽ tính toán hình ảnh tiếng Anh là gì? | 3 | DRAW
-OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng tiếng Anh là gì? | 3 | PERFORMANCE TUNING
-DEBUGGING | Gỡ rối tìm lỗi chương trình tiếng Anh là gì? | 3 | FIXING BUGS
-SCRIPTING | Viết kịch bản code logic tiếng Anh là gì? | 3 | CODE WRITING
-ENGINE | Động cơ công cụ xây dựng tiếng Anh là gì? | 3 | TOOL
-MEMORY LEAK | Rò rỉ bộ nhớ không giải phóng tiếng Anh là gì? | 3 | MEMORY LOSS
-BANDWIDTH | Độ rộng băng thông truyền tiếng Anh là gì? | 3 | NETWORK SPEED
-SERVER | Máy chủ lưu trữ dữ liệu tiếng Anh là gì? | 3 | HOST
-CLIENT | Máy khách kết nối server tiếng Anh là gì? | 3 | PLAYER DEVICE
-SYNCHRONIZATION | Đồng bộ hóa dữ liệu giữa tiếng Anh là gì? | 3 | SYNC
-MODDING | Chỉnh sửa game theo ý thích tiếng Anh là gì? | 3 | GAME MODIFICATION
-MODDER | Người chỉnh sửa mod game tiếng Anh là gì? | 3 | MOD CREATOR
-STREAMING | Phát trực tiếp gameplay online tiếng Anh là gì? | 3 | LIVE BROADCAST
-ESPORTS | Thể thao điện tử thi đấu tiếng Anh là gì? | 3 | COMPETITIVE GAMING
-PRIZE POOL | Quỹ tiền thưởng tổng cộng tiếng Anh là gì? | 3 | REWARD FUND
-SPONSORSHIP | Tài trợ hỗ trợ tài chính tiếng Anh là gì? | 3 | FUNDING
-FRANCHISE | Đội chuyên nghiệp cấp cao tiếng Anh là gì? | 3 | PROFESSIONAL TEAM
-ROSTER | Danh sách thành viên đội tiếng Anh là gì? | 3 | MEMBER LIST
-BOOTCAMP | Trại huấn luyện chuẩn bị tiếng Anh là gì? | 3 | TRAINING CAMP
-SCRIM MATCH | Trận tập đấu không chính thức tiếng Anh là gì? | 3 | PRACTICE GAME
-META GAME | Chiến lược tối ưu hiện tại tiếng Anh là gì? | 3 | OPTIMAL STRATEGY
-PROTOTYPE | Mẫu bản thử nghiệm ban đầu tiếng Anh là gì? | 3 | DRAFT VERSION
-RELEASE | Phát hành công bố chính thức tiếng Anh là gì? | 3 | LAUNCH
-BETA TESTING | Kiểm tra phiên bản nước ngoài tiếng Anh là gì? | 3 | EARLY ACCESS
-ALPHA VERSION | Phiên bản sơ khai chưa hoàn tiếng Anh là gì? | 3 | EARLY BUILD
-CROSSPLAY | Chơi cùng nhau nền tảng khác tiếng Anh là gì? | 3 | CROSS PLATFORM
-CROSSOVER | Sự hợp tác giữa hai game tiếng Anh là gì? | 3 | COLLABORATION
-COSMETIC | Vật phẩm chỉ trang trí không tiếng Anh là gì? | 3 | APPEARANCE ITEM
-GAMEPLAY LOOP | Vòng lặp trò chơi cơ bản tiếng Anh là gì? | 3
-DUNGEON CRAWLER | Khám phá hầm ngục tầng tiếng Anh là gì? | 3 | CAVE EXPLORER
-ROGUELITE | Trò roguelike nhưng giữ tiến tiếng Anh là gì? | 3 | HYBRID ROGUELIKE
-PLATFORMER | Trò nhảy qua chướng ngại vật tiếng Anh là gì? | 3 | JUMPING GAME
-BULLET HELL | Trò nhiều viên đạn bay tiếng Anh là gì? | 3 | BULLET STORM
-IDLE GAME | Trò chơi tự động chế độ tiếng Anh là gì? | 3 | AUTOMATIC GAME
-CLICKER | Trò nhấp chuột tích lũy tiếng Anh là gì? | 3 | TAP GAME
-PUZZLE | Trò giải đố xếp ghép tiếng Anh là gì? | 3 | BRAIN GAME
-TURN BASED | Chơi lượt không thời gian tiếng Anh là gì? | 3 | ROUND SYSTEM
-REAL TIME | Chơi thực tế hành động tiếng Anh là gì? | 3 | LIVE ACTION
-ISOMETRIC | Góc nhìn xiên ba chiều tiếng Anh là gì? | 3 | ANGLED VIEW
-FIRST PERSON | Góc nhìn từ mắt nhân vật tiếng Anh là gì? | 3 | POV VIEW
-THIRD PERSON | Góc nhìn từ phía sau tiếng Anh là gì? | 3 | BEHIND VIEW
-SIDE QUEST | Nhiệm vụ phụ ngoài cốt truyện chính trong game tiếng Anh là gì? | 2
-HEALTH BAR | Thanh hiển thị lượng máu còn lại của nhân vật tiếng Anh là gì? | 1
-GAME OVER | Dòng chữ hiện ra khi thua cuộc, hết mạng tiếng Anh là gì? | 1
-LOOT | Thu thập vật phẩm từ quái vật sau tiêu diệt tiếng Anh là gì? | 1 | ITEM DROP
-COMBO | Chuỗi kỹ năng dùng liên tiếp tạo sát thương tiếng Anh là gì? | 1 | COMBINATION
-HEADSHOT | Bắn trúng đầu kẻ địch gây sát thương cực tiếng Anh là gì? | 1 | HEAD KILL
-NOOB | Người mới chơi kém kỹ năng nhập môn tiếng Anh là gì? | 1 | NEWBIE
-MELEE | Tấn công gần cận chém chích tiếng Anh là gì? | 1 | CLOSE COMBAT
-RANGE | Tấn công từ khoảng cách xa tiếng Anh là gì? | 1 | DISTANCE ATTACK
-ARMOR | Giáp trang bị giảm sát thương nhận tiếng Anh là gì? | 1 | DEFENSE
-SHIELD | Bảo vệ hấp thụ sát thương tiếng Anh là gì? | 1 | BARRIER
-SWORD | Kiếm vũ khí cơ bản dùng tấn công tiếng Anh là gì? | 1 | BLADE
-HEALTH | Máu số sức sống của nhân vật còn bao tiếng Anh là gì? | 1 | HP
-MANA | Năng lượng xanh sử dụng phát động kỹ tiếng Anh là gì? | 1 | MAGIC ENERGY
-SPAWN | Nơi xuất hiện nhân vật trong trò chơi tiếng Anh là gì? | 1 | START POINT
-MINION | Lính máy tính được điều khiển tự động tiếng Anh là gì? | 1 | CREEP
-ITEM | Vật phẩm trang bị tăng chỉ số tiếng Anh là gì? | 1 | EQUIPMENT
-PROJECTILE | Vật thể bay phóng ra từ kỹ năng tiếng Anh là gì? | 1 | FLYING OBJECT
-BASE | Nơi khởi hành điểm yên toàn an toàn tiếng Anh là gì? | 1 | HOME
-ALLY | Đồng minh giúp đỡ bạn trong trận chiến tiếng Anh là gì? | 1 | TEAMMATE
-WEAPON | Vũ khí dùng để tấn công kẻ địch tiếng Anh là gì? | 1 | FIREARM
-STRIKE | Tấn công chủ động gây sát thương đối tiếng Anh là gì? | 1 | HIT
-GUARD | Phòng thủ chặn sát thương tránh mất tiếng Anh là gì? | 1 | DEFEND
-SAVE POINT | Điểm lưu tiến độ giữa chừng tiếng Anh là gì? | 1 | CHECKPOINT
-TIER | Cấp độ bản đồ hoặc tầng trò chơi tiếng Anh là gì? | 1 | STAGE
-CREATURE | Quái vật mạnh trong trò chơi tiếng Anh là gì? | 1 | MONSTER
-BOUNTY | Phần thưởng được trao sau hoàn thành tiếng Anh là gì? | 1 | PRIZE
-CO-OP | Chơi được nhiều người cùng lúc tiếng Anh là gì? | 1 | COOPERATIVE
-HARDCORE | Mức độ khó khiến game thủ phải tập tiếng Anh là gì? | 1 | DIFFICULTY
-OUTFIT | Vũ khí trang bị chuẩn bị chiến tiếng Anh là gì? | 1 | GEAR
-GANK | Tập trung sức mạnh nhiều để giết người tiếng Anh là gì? | 2 | COORDINATED KILL
-FARM | Canh nông kiếm tiền vàng trong game tiếng Anh là gì? | 2 | EARN RESOURCES
-ROAM | Di chuyển khắp bản đồ tìm cơ hội tiếng Anh là gì? | 2 | ROTATE MAP
-ENGAGE | Bắt đầu cuộc chiến với đối thủ tiếng Anh là gì? | 2 | START FIGHT
-POKE | Tấn công nhỏ chip sát thương từ xa tiếng Anh là gì? | 2 | CHIP DAMAGE
-AGGRO | Kích hoạt sự chú ý của kẻ địch tiếng Anh là gì? | 2 | ATTENTION
-PROC | Kích hoạt hiệu ứng xác suất ngẫu nhiên tiếng Anh là gì? | 2 | TRIGGER
-DEBUFF | Hiệu ứng xấu giảm chỉ số nhân vật tiếng Anh là gì? | 2
-BUFF | Hiệu ứng tốt tăng chỉ số nhân vật tiếng Anh là gì? | 2
-SCALING | Tăng sát thương theo chỉ số nhân vật tiếng Anh là gì? | 2
-COOLDOWN | Thời gian chờ để sử dụng lại kỹ năng tiếng Anh là gì? | 2
-SKILLSHOT | Kỹ năng phải nhắm bắn chính xác tiếng Anh là gì? | 2
-COUNTER | Nhân vật tactic có khả năng đánh bại tiếng Anh là gì? | 2
-MATCHUP | So sánh lực lượng giữa hai đối thủ tiếng Anh là gì? | 2
-SUPPORT | Vai trò hỗ trợ bảo vệ đồng đội tiếng Anh là gì? | 2
-TIER LIST | Bảng xếp hạng nhân vật mạnh yếu tiếng Anh là gì? | 2
-CRITICAL HIT | Đòn tấn công chí mạng gây gấp sát thương tiếng Anh là gì? | 2 | CRIT
-PIERCE | Tấn công xuyên qua giáp bỏ qua tiếng Anh là gì? | 2
-POISON | Chất độc liên tục làm mất máu tiếng Anh là gì? | 2
-DAZE | Làm choáng váng đối thủ mất hành động tiếng Anh là gì? | 2 | STUN
-SILENCE | Cắt khả năng dùng kỹ năng phép tiếng Anh là gì? | 2
-MIND CONTROL | Kiểm soát nhân vật tấn công đồng đội tiếng Anh là gì? | 2 | CHARM
-KNOCKBACK | Đẩy lùi nhân vật ra xa tiếng Anh là gì? | 2
-CROWD CONTROL | Kiểm soát đám đông đối thủ tiếng Anh là gì? | 2
-CLOAK | Ngụy trang hòa lẫn môi trường tiếng Anh là gì? | 2
-PERMADEATH | Chết vĩnh viễn không thể sống lại tiếng Anh là gì? | 2
-LOADOUT | Thiết lập vũ khí trang bị chuẩn tiếng Anh là gì? | 2
-MAGIC RESISTANCE | Khả năng chống phép thuật ma giáo tiếng Anh là gì? | 2
-EVASION | Khả năng né tránh sát thương tiếng Anh là gì? | 2
-LIFESTEAL | Hút máu sát thương gây ra tiếng Anh là gì? | 2
-SPELL VAMP | Hút máu từ kỹ năng phép tiếng Anh là gì? | 2
-REGEN | Tái tạo máu tự động liên tục tiếng Anh là gì? | 2
-MANA REGEN | Phục hồi năng lượng phép tự động tiếng Anh là gì? | 2
-MOVEMENT SPEED | Tốc độ di chuyển nhanh chậm tiếng Anh là gì? | 2
-ATTACK SPEED | Tốc độ tấn công cơ bản nhanh tiếng Anh là gì? | 2
-COOLDOWN REDUCTION | Giảm thời gian chờ dùng lại tiếng Anh là gì? | 2
-OVERKILL | Gây sát thương vượt quá giới hạn tiếng Anh là gì? | 2
-TAUNT | Cưỡng bách tấn công nhân vật tiếng Anh là gì? | 2
-PETRIFY | Hoá đá làm cứng người dùng tiếng Anh là gì? | 2
-CLEANSE | Loại bỏ tất cả trạng thái xấu tiếng Anh là gì? | 2
-DISPEL | Xoá bỏ hiệu ứng trạng thái tiếng Anh là gì? | 2
-UNTARGETABLE | Không bị nhắm mục tiêu tiếng Anh là gì? | 2
-INVISIBLE | Ẩn thân trốn khỏi địch thấy tiếng Anh là gì? | 2 | STEALTH
-HITBOX | Vùng va chạm để nhận sát thương tiếng Anh là gì? | 2
-CASTING TIME | Thời gian chuẩn bị kỹ năng tiếng Anh là gì? | 2
-POWER UP | Tích tụ năng lượng tăng sức mạnh tiếng Anh là gì? | 2 | CHARGE
-INSTANT | Kỹ năng phát động tức thì tiếng Anh là gì? | 2
-CAST RANGE | Khoảng cách sử dụng kỹ năng tiếng Anh là gì? | 2
-PHYSICAL DAMAGE | Sát thương cơ bắp từ tấn công tiếng Anh là gì? | 2
-MAGIC DAMAGE | Sát thương từ phép thuật tiếng Anh là gì? | 2
-TRUE DAMAGE | Sát thương không thể giảm tiếng Anh là gì? | 2
-STRENGTH | Sức mạnh tấn công vật lý cao tiếng Anh là gì? | 2
-INTELLIGENCE | Trí tuệ phép thuật mạnh tiếng Anh là gì? | 2
-AGILITY | Nhanh nhẹn né tránh sát thương tiếng Anh là gì? | 2
-DEXTERITY | Khéo léo tấn công chính xác tiếng Anh là gì? | 2
-CONSTITUTION | Thể chất máu sống cao tiếng Anh là gì? | 2
-VITALITY | Sức sống máu cơ bản cao tiếng Anh là gì? | 2
-WISDOM | Khôn ngoan khả năng chống tiếng Anh là gì? | 2
-CHARISMA | Sức hút ảnh hưởng chiêu mộ tiếng Anh là gì? | 2
-STREAMER | Người truyền trực tiếp gameplay tiếng Anh là gì? | 2
-PRO PLAYER | Người chơi chuyên nghiệp kiếm tiền tiếng Anh là gì? | 2
-VIEWER | Khán giả xem trận đấu livestream tiếng Anh là gì? | 2
-POSITIONING | Vị trí chiến lược trong chiến tiếng Anh là gì? | 2
-MAP AWARENESS | Tầm nhìn khả năng nhìn thấy địch tiếng Anh là gì? | 2 | VISION
-FRONTLINE | Tiền phương hàng đầu chiến tiếng Anh là gì? | 2
-BACKLINE | Hậu phương hàng sau an toàn tiếng Anh là gì? | 2
-FOCUS FIRE | Tập trung sức mạnh vào một tiếng Anh là gì? | 2
-ROTATION | Xoay chuyển vị trí chiến đấu tiếng Anh là gì? | 2
-MAP CONTROL | Kiểm soát bản đồ vùng chiến tiếng Anh là gì? | 2
-TEAMFIGHT | Đánh nhóm toàn bộ đội tiếng Anh là gì? | 2
-SKIRMISH | Xung đột nhỏ lẻ tẻ tiếng Anh là gì? | 2
-SIEGE | Vây hãm phòng thủ vị trí tiếng Anh là gì? | 2 | SIEGE
-PICK | Chọn nhân vật trong chế độ soạn tiếng Anh là gì? | 2
-BAN | Cấm nhân vật không dùng được tiếng Anh là gì? | 2
-DRAFT | Chọn đội hình theo chiến lược tiếng Anh là gì? | 2
-RUSH | Tấn công nhanh liều lĩnh vô tiếng Anh là gì? | 2
-TEMPO | Tốc độ nhịp độ chơi game tiếng Anh là gì? | 2
-REACTION | Phản ứng nhanh tác động tiếng Anh là gì? | 2
-WAVE CLEAR | Tiêu diệt hết đợt quái vật tiếng Anh là gì? | 3
-CREEP SCORE | Số quân lính tiêu diệt kiếm vàng tiếng Anh là gì? | 3 | CS
-MACRO | Chiến lược toàn bộ bản đồ game tiếng Anh là gì? | 3
-MICRO | Kỹ thuật chi tiết cơ chế tiếng Anh là gì? | 3
-KITE | Quẳng lại chạy tấn công di chuyển tiếng Anh là gì? | 3
-DISENGAGE | Rút lui thoát khỏi chiến tiếng Anh là gì? | 3
-TRADE | Đánh trao đổi sát thương đôi tiếng Anh là gì? | 3
-ALL-IN | Tất tay chi tất cả tài nguyên tiếng Anh là gì? | 3
-SNOWBALL | Trôi tuyết cuộn ưu thế dồn tiếng Anh là gì? | 3
-TEAM COMPOSITION | Thành phần đội hình nhân vật tiếng Anh là gì? | 3 | COMP
-SYNERGY | Hợp tác cộng hưởng nhân vật tiếng Anh là gì? | 3
-WIN CONDITION | Điều kiện thắng chiến lược tiếng Anh là gì? | 3 | WINCON
-OUTPLAY | Vượt trội chơi tốt hơn tiếng Anh là gì? | 3
-EXPLOIT | Tận dụng điểm yếu lợi dụng tiếng Anh là gì? | 3
-VISION CONTROL | Kiểm soát tầm nhìn bản đồ tiếng Anh là gì? | 3
-JUNGLE CONTROL | Kiểm soát rừng tiêu diệt tiếng Anh là gì? | 3
-DUEL | Một cuộc đơn đấu hai người riêng tiếng Anh là gì? | 1 | ONE ON ONE
-FACTION | Phe nhóm lực lượng trong game tiếng Anh là gì? | 1 | SIDE
-GUILD | Bang hội hoặc nhóm game thủ cùng tiếng Anh là gì? | 1 | CLAN
-QUEST | Nhiệm vụ cần hoàn thành để nhận tiếng Anh là gì? | 1 | MISSION
-CRAFT | Chế tạo vật phẩm từ nguyên liệu tiếng Anh là gì? | 1 | MAKE
-SHOPKEEPER | Người bán hàng bán vật phẩm tiếng Anh là gì? | 1 | SELLER
-QUEST GIVER | Người giao nhiệm vụ chính yêu tiếng Anh là gì? | 1 | NPCQUESTER
-RESPAWN TIMER | Thời gian chờ sinh lại sau chết tiếng Anh là gì? | 1 | DEATH TIMER
-RANKINGS | Bảng xếp hạng người chơi top cao tiếng Anh là gì? | 1 | CHART
-MATCHMAKING | Hệ thống ghép cặp người chơi cân tiếng Anh là gì? | 1 | PAIRING SYSTEM
-PROGRESSION | Tiến triển nâng cấp nhân vật tiếng Anh là gì? | 1 | ADVANCEMENT
-GRINDING | Lặp lại kiếm kinh nghiệm vàng tiếng Anh là gì? | 2 | FARMING
-BOSS FIGHT | Chiến đấu với trùm cuối quan trọng tiếng Anh là gì? | 2 | RAID
-LOOT TABLE | Bảng tỷ lệ rơi vật phẩm quái tiếng Anh là gì? | 2 | DROP CHANCE
-RARE DROP | Rơi vật phẩm hiếm kỳ lạ tiếng Anh là gì? | 2 | RARITY
-OVERPOWERED | Quá mạnh mẻ không cân bằng tiếng Anh là gì? | 2 | OP
-UNDERPOWERED | Quá yếu kém so với khác tiếng Anh là gì? | 2 | WEAK
-BALANCE PATCH | Bản cập nhật cân bằng nhân vật tiếng Anh là gì? | 2 | ADJUSTMENT
-META SHIFT | Thay đổi cách chơi hot hiện tại tiếng Anh là gì? | 2 | STRATEGY CHANGE
-MECHANICAL KEYBOARD | Bàn phím cơ học chơi game tiếng Anh là gì? | 2 | GAMING KEYBOARD
-GAMING MOUSE | Chuột chuyên game cảm biến tiếng Anh là gì? | 2 | PRECISION MOUSE
-INPUT LAG | Trễ phản ứng điều khiển tiếng Anh là gì? | 2 | RESPONSE DELAY
-DESYNC | Không đồng bộ giữa máy chủ tiếng Anh là gì? | 2 | OUT OF SYNC
-ANTI CHEAT | Hệ thống chống gian lận tiếng Anh là gì? | 2 | CHEAT PREVENTION
-PERMABAN | Cấm vĩnh viễn tài khoản gian lận tiếng Anh là gì? | 2 | PERMANENT BAN
-TEMPBAN | Cảnh cáo tạm cấm tài khoản tiếng Anh là gì? | 2 | TIMEOUT
-TOXICITY | Hành vi độc hại gây phiền tiếng Anh là gì? | 2 | HARMFUL BEHAVIOR
-FAIR PLAY | Thái độ thể thao công bằng tiếng Anh là gì? | 2 | ETIQUETTE
-ROLE QUEUE | Hàng chờ chọn vai trò trước tiếng Anh là gì? | 2 | POSITION SELECTION
-VOICE CHAT | Giao tiếp bằng giọng nói tiếng Anh là gì? | 2
-KILL CAM | Camera xem lại cách bạn chết tiếng Anh là gì? | 2 | DEATH FOOTAGE
-SPECTATOR MODE | Chế độ xem trận không chơi tiếng Anh là gì? | 2 | OBSERVER MODE
-CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện tiếng Anh là gì? | 2 | PERSONALIZATION
-COSMETICS | Vật phẩm trang trí không ảnh hưởng tiếng Anh là gì? | 2 | SKINS
-BATTLE PASS | Thẻ hạng nhân vật trả tiền tiếng Anh là gì? | 2 | SEASON PASS
-HARDCORE MODE | Chế độ khó tối đa một lần tiếng Anh là gì? | 2 | IRONMAN MODE
-ROGUELIKE | Trò lặp lại chết mất tiến tiếng Anh là gì? | 2 | PROCEDURAL
-METROIDVANIA | Trò khám phá khoá mở tiếng Anh là gì? | 2 | EXPLORATION GAME
-SKILL CEILING | Mức trần kỹ năng tối đa tiếng Anh là gì? | 2 | SKILL MASTERY
-LEARNING CURVE | Độ khó học chơi trò tiếng Anh là gì? | 2 | EDUCATION PACE
-SCRIM | Trận tập đấu liên tục giữa tiếng Anh là gì? | 2 | PRACTICE MATCH
-PENTAKILL | Giết năm kẻ địch liên tiếp tiếng Anh là gì? | 2 | KILL STREAK
-TEAM WIPE | Tiêu diệt toàn bộ đội địch tiếng Anh là gì? | 2 | TEAM ELIMINATION
-SPLIT PUSH | Tấn công tách riêng bản đồ tiếng Anh là gì? | 3 | SEPARATE PUSH
-JUNGLING | Giết quái rừng kiếm vàng tiếng Anh là gì? | 3 | JUNGLE FARMING
-WARDING | Trồng cây nhìn bản đồ chiến tiếng Anh là gì? | 3 | VISION PLACEMENT
-DEWARD | Phá cây giả vị trí địch tiếng Anh là gì? | 3 | VISION CLEARING
-INVASION | Xâm nhập rừng địch trộm tiếng Anh là gì? | 3 | INCURSION
-TOWER DIVE | Lao vào tháp đánh người tiếng Anh là gì? | 3 | TOWER AGGRESSION
-PICK OFF | Cướp một người riêng rẻ tiếng Anh là gì? | 3 | ISOLATION KILLS
-CUTSCENE | Cảnh điểm phim giữa trò chơi tiếng Anh là gì? | 1 | MOVIE SCENE
-KEYBINDING | Ràng buộc phím tùy chỉnh tiếng Anh là gì? | 1 | KEY MAPPING
+LEVEL | Cấp độ nhân vật hoặc bản đồ trong trò chơi | 1 | STAGE
+MAP | Bản đồ không gian trò chơi diễn | 1 | TERRAIN
+JUMP | Nhảy vượt qua chướng ngại vật | 1 | LEAP
+COIN | Tiền xu vàng trong trò chơi | 1 | GOLD
+LIFE | Mạng sống nhân vật còn | 1 | LIVES
+ENEMY | Kẻ địch đối thủ | 1 | FOE
+HERO | Nhân vật anh hùng chính | 1 | CHARACTER
+CHEST | Rương chứa vật phẩm thưởng | 1 | TREASURE
+GEM | Ngọc quý đá quý | 1 | CRYSTAL
+RANK | Hạng xếp vị trí cao | 1 | PLACEMENT
+REWARD | Phần thưởng hưởng lợi | 1 | PRIZE
+ENDGAME | Giai đoạn cuối cùng trò chơi | 1 | FINAL STAGE
+TUTORIAL | Hướng dẫn cách chơi cơ bản | 1 | GUIDE
+COMBO BREAKER | Bẻ gãy chuỗi tấn công đối | 1 | INTERRUPT
+DODGE | Né tránh tránh khỏi sát thương | 1 | EVADE
+BLOCK | Chặn bảo vệ tránh sát thương | 1 | SHIELD UP
+CAMPAIGN | Chiến dịch câu chuyện chính trò | 1 | STORY MODE
+SINGLE PLAYER | Chơi một người không cần ai | 1
+MULTIPLAYER | Chơi nhiều người cùng một lúc | 1
+OFFLINE | Chơi không kết nối mạng internet | 1 | LOCAL
+ONLINE | Chơi kết nối internet với người khác | 1
+CONSOLE | Máy chơi game chuyên dụng bảng | 1 | GAMING DEVICE
+MOBILE | Thiết bị di động điện thoại | 1 | PHONE
+CONTROLLER | Bộ điều khiển cầm tay | 1 | GAMEPAD
+JOYSTICK | Cần điều khiển hướng chuyển động | 1 | LEVER
+BUTTON | Nút bấm điều khiển | 1 | KEY
+PAUSE | Tạm dừng trò chơi | 1 | STOP
+RESTART | Khởi động lại trò chơi từ đầu | 1 | RESET
+QUIT | Thoát trò chơi từ bỏ | 1 | EXIT
+SETTINGS | Cài đặt tùy chỉnh tham số | 1 | OPTIONS
+GRAPHICS | Đồ họa hình ảnh trực quan | 1 | VISUALS
+SOUND | Âm thanh âm lượng nhạc | 1 | AUDIO
+VOLUME | Độ lớn âm thanh âm | 1 | LOUDNESS
+BRIGHTNESS | Độ sáng độ tối hình ảnh | 1 | LUMINOSITY
+RESOLUTION | Độ phân giải hình ảnh rõ nét | 1 | CLARITY
+FULLSCREEN | Toàn màn hình không thanh | 1 | MAXIMIZE
+WINDOWED | Cửa sổ nhỏ mode cửa | 1 | WINDOW MODE
+UPDATE | Cập nhật phiên bản mới | 1 | UPGRADE
+PATCH | Bản cập nhật sửa lỗi | 1 | FIX
+STORYLINE | Chuỗi câu chuyện cốt truyện | 1 | NARRATIVE
+INVENTORY | Kho vật phẩm cầm theo | 1 | BAG
+QUEST LOG | Nhật ký nhiệm vụ ghi chép | 1 | TASK LIST
+CHEAT CODE | Dãy ký tự bí mật do lập trình viên cài vào để mở khóa tính năng game | 1 | SECRET CODE
+HIGHSCORE | Điểm số cao nhất từng đạt | 1 | BEST SCORE
+STATISTICS | Thống kê dữ liệu kết quả | 1 | STATS
+LEADERBOARD | Bảng xếp hạng người chơi top | 1
+DIFFICULTY MODE | Chế độ mức độ khó dễ | 1
+SPEEDRUN | Chơi hoàn thành game nhanh nhất | 3 | FAST RUN
+RESPAWN | Sinh lại nhân vật sau chết | 1 | REBIRTH
+DODGE ROLL | Lăn tránh né sát thương nhanh | 1 | EVADE ROLL
+SKILL TREE | Cây kỹ năng nâng cấp | 1 | ABILITY TREE
+LATENCY | Độ trễ phản ứng mạng truyền | 3 | PING
+FRAME RATE | Tốc độ khung hình mỗi giây | 3 | FPS
+EASTER EGG | Bí mật ẩn giấu nhà phát triển | 3
+SANDBOX | Chế độ tự do xây dựng sáng tạo | 3 | CREATIVE MODE
+NERF | Làm yếu đi nhân vật kỹ năng | 3 | WEAKEN
+HITSCAN | Kỹ năng bắn ngang tức thì | 3 | INSTANT HIT
+MICROTRANSACTION | Mua nhỏ vật phẩm phí tiền | 3 | SMALL PURCHASE
+PATCH NOTES | Ghi chú cập nhật thay đổi | 3
+OPEN WORLD | Thế giới mở tự do khám phá | 3 | FREE WORLD
+RAY TRACING | Công nghệ đồ họa ánh sáng | 3 | LIGHT RENDERING
+PROCEDURAL GENERATION | Tạo nội dung ngẫu nhiên thuật toán | 3
+PHYSICS ENGINE | Động cơ vật lý tương tác | 3
+ANIMATION | Chuyển động hoạt hình nhân vật | 3 | MOTION
+PARTICLE EFFECT | Hiệu ứng hạt tia ánh sáng | 3
+SHADER | Chương trình tô màu đồ họa | 3 | GRAPHICS CODE
+POLYGON | Hình đa giác cấu trúc mô hình | 3 | SHAPE
+TEXTURE | Bề mặt chất liệu chi tiết | 3 | SURFACE
+NORMAL MAP | Bản đồ pháp tuyến độ sâu | 3
+COLLIDER | Vùng va chạm vật lý | 3 | COLLISION ZONE
+SPRITE | Hình hai chiều nhân vật | 3 | 2D IMAGE
+TILESET | Bộ gạch lát xây dựng bản đồ | 3 | TILE COLLECTION
+ASSET | Tài nguyên hình ảnh âm thanh | 3 | RESOURCE
+RENDER | Vẽ tính toán hình ảnh | 3 | DRAW
+OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng | 3 | PERFORMANCE TUNING
+DEBUGGING | Gỡ rối tìm lỗi chương trình | 3 | FIXING BUGS
+SCRIPTING | Viết kịch bản code logic | 3 | CODE WRITING
+ENGINE | Động cơ công cụ xây dựng | 3 | TOOL
+MEMORY LEAK | Rò rỉ bộ nhớ không giải phóng | 3 | MEMORY LOSS
+BANDWIDTH | Độ rộng băng thông truyền | 3 | NETWORK SPEED
+SERVER | Máy chủ lưu trữ dữ liệu | 3 | HOST
+CLIENT | Máy khách kết nối server | 3 | PLAYER DEVICE
+SYNCHRONIZATION | Đồng bộ hóa dữ liệu giữa | 3 | SYNC
+MODDING | Chỉnh sửa game theo ý thích | 3 | GAME MODIFICATION
+MODDER | Người chỉnh sửa mod game | 3 | MOD CREATOR
+STREAMING | Phát trực tiếp gameplay online | 3 | LIVE BROADCAST
+ESPORTS | Thể thao điện tử thi đấu | 3 | COMPETITIVE GAMING
+PRIZE POOL | Quỹ tiền thưởng tổng cộng | 3 | REWARD FUND
+SPONSORSHIP | Tài trợ hỗ trợ tài chính | 3 | FUNDING
+FRANCHISE | Đội chuyên nghiệp cấp cao | 3 | PROFESSIONAL TEAM
+ROSTER | Danh sách thành viên đội | 3 | MEMBER LIST
+BOOTCAMP | Trại huấn luyện chuẩn bị | 3 | TRAINING CAMP
+SCRIM MATCH | Trận tập đấu không chính thức | 3 | PRACTICE GAME
+META GAME | Chiến lược tối ưu hiện tại | 3 | OPTIMAL STRATEGY
+PROTOTYPE | Mẫu bản thử nghiệm ban đầu | 3 | DRAFT VERSION
+RELEASE | Phát hành công bố chính thức | 3 | LAUNCH
+BETA TESTING | Kiểm tra phiên bản nước ngoài | 3 | EARLY ACCESS
+ALPHA VERSION | Phiên bản sơ khai chưa hoàn | 3 | EARLY BUILD
+CROSSPLAY | Chơi cùng nhau nền tảng khác | 3 | CROSS PLATFORM
+CROSSOVER | Sự hợp tác giữa hai game | 3 | COLLABORATION
+COSMETIC | Vật phẩm chỉ trang trí không | 3 | APPEARANCE ITEM
+GAMEPLAY LOOP | Vòng lặp trò chơi cơ bản | 3
+DUNGEON CRAWLER | Khám phá hầm ngục tầng | 3 | CAVE EXPLORER
+ROGUELITE | Trò roguelike nhưng giữ tiến | 3 | HYBRID ROGUELIKE
+PLATFORMER | Trò nhảy qua chướng ngại vật | 3 | JUMPING GAME
+BULLET HELL | Trò nhiều viên đạn bay | 3 | BULLET STORM
+IDLE GAME | Trò chơi tự động chế độ | 3 | AUTOMATIC GAME
+CLICKER | Trò nhấp chuột tích lũy | 3 | TAP GAME
+PUZZLE | Trò giải đố xếp ghép | 3 | BRAIN GAME
+TURN BASED | Chơi lượt không thời gian | 3 | ROUND SYSTEM
+REAL TIME | Chơi thực tế hành động | 3 | LIVE ACTION
+ISOMETRIC | Góc nhìn xiên ba chiều | 3 | ANGLED VIEW
+FIRST PERSON | Góc nhìn từ mắt nhân vật | 3 | POV VIEW
+THIRD PERSON | Góc nhìn từ phía sau | 3 | BEHIND VIEW
+SIDE QUEST | Nhiệm vụ phụ ngoài cốt truyện chính trong game | 2
+HEALTH BAR | Thanh hiển thị lượng máu còn lại của nhân vật | 1
+GAME OVER | Dòng chữ hiện ra khi thua cuộc, hết mạng | 1
+LOOT | Thu thập vật phẩm từ quái vật sau tiêu diệt | 1 | ITEM DROP
+COMBO | Chuỗi kỹ năng dùng liên tiếp tạo sát thương | 1 | COMBINATION
+HEADSHOT | Bắn trúng đầu kẻ địch gây sát thương cực | 1 | HEAD KILL
+NOOB | Người mới chơi kém kỹ năng nhập môn | 1 | NEWBIE
+MELEE | Tấn công gần cận chém chích | 1 | CLOSE COMBAT
+RANGE | Tấn công từ khoảng cách xa | 1 | DISTANCE ATTACK
+ARMOR | Giáp trang bị giảm sát thương nhận | 1 | DEFENSE, ARMOUR
+SHIELD | Bảo vệ hấp thụ sát thương | 1 | BARRIER
+SWORD | Kiếm vũ khí cơ bản dùng tấn công | 1 | BLADE
+HEALTH | Máu số sức sống của nhân vật còn bao | 1 | HP
+MANA | Năng lượng xanh sử dụng phát động kỹ | 1 | MAGIC ENERGY
+SPAWN | Nơi xuất hiện nhân vật trong trò chơi | 1 | START POINT
+MINION | Lính máy tính được điều khiển tự động | 1 | CREEP
+ITEM | Vật phẩm trang bị tăng chỉ số | 1 | EQUIPMENT
+PROJECTILE | Vật thể bay phóng ra từ kỹ năng | 1 | FLYING OBJECT
+BASE | Nơi khởi hành điểm yên toàn an toàn | 1 | HOME
+ALLY | Đồng minh giúp đỡ bạn trong trận chiến | 1 | TEAMMATE
+WEAPON | Vũ khí dùng để tấn công kẻ địch | 1 | FIREARM
+STRIKE | Tấn công chủ động gây sát thương đối | 1 | HIT
+GUARD | Phòng thủ chặn sát thương tránh mất | 1 | DEFEND
+SAVE POINT | Điểm lưu tiến độ giữa chừng | 1 | CHECKPOINT
+TIER | Cấp độ bản đồ hoặc tầng trò chơi | 1 | STAGE
+CREATURE | Quái vật mạnh trong trò chơi | 1 | MONSTER
+BOUNTY | Phần thưởng được trao sau hoàn thành | 1 | PRIZE
+CO-OP | Chơi được nhiều người cùng lúc | 1 | COOPERATIVE
+HARDCORE | Mức độ khó khiến game thủ phải tập | 1 | DIFFICULTY
+OUTFIT | Vũ khí trang bị chuẩn bị chiến | 1 | GEAR
+GANK | Tập trung sức mạnh nhiều để giết người | 2 | COORDINATED KILL
+FARM | Canh nông kiếm tiền vàng trong game | 2 | EARN RESOURCES
+ROAM | Di chuyển khắp bản đồ tìm cơ hội | 2 | ROTATE MAP
+ENGAGE | Bắt đầu cuộc chiến với đối thủ | 2 | START FIGHT
+POKE | Tấn công nhỏ chip sát thương từ xa | 2 | CHIP DAMAGE
+AGGRO | Kích hoạt sự chú ý của kẻ địch | 2 | ATTENTION
+PROC | Kích hoạt hiệu ứng xác suất ngẫu nhiên | 2 | TRIGGER
+DEBUFF | Hiệu ứng xấu giảm chỉ số nhân vật | 2
+BUFF | Hiệu ứng tốt tăng chỉ số nhân vật | 2
+SCALING | Tăng sát thương theo chỉ số nhân vật | 2
+COOLDOWN | Thời gian chờ để sử dụng lại kỹ năng | 2
+SKILLSHOT | Kỹ năng phải nhắm bắn chính xác | 2
+COUNTER | Nhân vật tactic có khả năng đánh bại | 2
+MATCHUP | So sánh lực lượng giữa hai đối thủ | 2
+SUPPORT | Vai trò hỗ trợ bảo vệ đồng đội | 2
+TIER LIST | Bảng xếp hạng nhân vật mạnh yếu | 2
+CRITICAL HIT | Đòn tấn công chí mạng gây gấp sát thương | 2 | CRIT
+PIERCE | Tấn công xuyên qua giáp bỏ qua | 2
+POISON | Chất độc liên tục làm mất máu | 2
+DAZE | Làm choáng váng đối thủ mất hành động | 2 | STUN
+SILENCE | Cắt khả năng dùng kỹ năng phép | 2
+MIND CONTROL | Kiểm soát nhân vật tấn công đồng đội | 2 | CHARM
+KNOCKBACK | Đẩy lùi nhân vật ra xa | 2
+CROWD CONTROL | Kiểm soát đám đông đối thủ | 2
+CLOAK | Ngụy trang hòa lẫn môi trường | 2
+PERMADEATH | Chết vĩnh viễn không thể sống lại | 2
+LOADOUT | Thiết lập vũ khí trang bị chuẩn | 2
+MAGIC RESISTANCE | Khả năng chống phép thuật ma giáo | 2
+EVASION | Khả năng né tránh sát thương | 2
+LIFESTEAL | Hút máu sát thương gây ra | 2
+SPELL VAMP | Hút máu từ kỹ năng phép | 2
+REGEN | Tái tạo máu tự động liên tục | 2
+MANA REGEN | Phục hồi năng lượng phép tự động | 2
+MOVEMENT SPEED | Tốc độ di chuyển nhanh chậm | 2
+ATTACK SPEED | Tốc độ tấn công cơ bản nhanh | 2
+COOLDOWN REDUCTION | Giảm thời gian chờ dùng lại | 2
+OVERKILL | Gây sát thương vượt quá giới hạn | 2
+TAUNT | Cưỡng bách tấn công nhân vật | 2
+PETRIFY | Hoá đá làm cứng người dùng | 2
+CLEANSE | Loại bỏ tất cả trạng thái xấu | 2
+DISPEL | Xoá bỏ hiệu ứng trạng thái | 2
+UNTARGETABLE | Không bị nhắm mục tiêu | 2
+INVISIBLE | Ẩn thân trốn khỏi địch thấy | 2 | STEALTH
+HITBOX | Vùng va chạm để nhận sát thương | 2
+CASTING TIME | Thời gian chuẩn bị kỹ năng | 2
+POWER UP | Tích tụ năng lượng tăng sức mạnh | 2 | CHARGE
+INSTANT | Kỹ năng phát động tức thì | 2
+CAST RANGE | Khoảng cách sử dụng kỹ năng | 2
+PHYSICAL DAMAGE | Sát thương cơ bắp từ tấn công | 2
+MAGIC DAMAGE | Sát thương từ phép thuật | 2
+TRUE DAMAGE | Sát thương không thể giảm | 2
+STRENGTH | Sức mạnh tấn công vật lý cao | 2
+INTELLIGENCE | Trí tuệ phép thuật mạnh | 2
+AGILITY | Nhanh nhẹn né tránh sát thương | 2
+DEXTERITY | Khéo léo tấn công chính xác | 2
+CONSTITUTION | Thể chất máu sống cao | 2
+VITALITY | Sức sống máu cơ bản cao | 2
+WISDOM | Khôn ngoan khả năng chống | 2
+CHARISMA | Sức hút ảnh hưởng chiêu mộ | 2
+STREAMER | Người truyền trực tiếp gameplay | 2
+PRO PLAYER | Người chơi chuyên nghiệp kiếm tiền | 2
+VIEWER | Khán giả xem trận đấu livestream | 2
+POSITIONING | Vị trí chiến lược trong chiến | 2
+MAP AWARENESS | Tầm nhìn khả năng nhìn thấy địch | 2 | VISION
+FRONTLINE | Tiền phương hàng đầu chiến | 2
+BACKLINE | Hậu phương hàng sau an toàn | 2
+FOCUS FIRE | Tập trung sức mạnh vào một | 2
+ROTATION | Xoay chuyển vị trí chiến đấu | 2
+MAP CONTROL | Kiểm soát bản đồ vùng chiến | 2
+TEAMFIGHT | Đánh nhóm toàn bộ đội | 2
+SKIRMISH | Xung đột nhỏ lẻ tẻ | 2
+SIEGE | Vây hãm phòng thủ vị trí | 2 | SIEGE
+PICK | Chọn nhân vật trong chế độ soạn | 2
+BAN | Cấm nhân vật không dùng được | 2
+DRAFT | Chọn đội hình theo chiến lược | 2 | DRAUGHT
+RUSH | Tấn công nhanh liều lĩnh vô | 2
+TEMPO | Tốc độ nhịp độ chơi game | 2
+REACTION | Phản ứng nhanh tác động | 2
+WAVE CLEAR | Tiêu diệt hết đợt quái vật | 3
+CREEP SCORE | Số quân lính tiêu diệt kiếm vàng | 3 | CS
+MACRO | Chiến lược toàn bộ bản đồ game | 3
+MICRO | Kỹ thuật chi tiết cơ chế | 3
+KITE | Quẳng lại chạy tấn công di chuyển | 3
+DISENGAGE | Rút lui thoát khỏi chiến | 3
+TRADE | Đánh trao đổi sát thương đôi | 3
+ALL-IN | Tất tay chi tất cả tài nguyên | 3
+SNOWBALL | Trôi tuyết cuộn ưu thế dồn | 3
+TEAM COMPOSITION | Thành phần đội hình nhân vật | 3 | COMP
+SYNERGY | Hợp tác cộng hưởng nhân vật | 3
+WIN CONDITION | Điều kiện thắng chiến lược | 3 | WINCON
+OUTPLAY | Vượt trội chơi tốt hơn | 3
+EXPLOIT | Tận dụng điểm yếu lợi dụng | 3
+VISION CONTROL | Kiểm soát tầm nhìn bản đồ | 3
+JUNGLE CONTROL | Kiểm soát rừng tiêu diệt | 3
+DUEL | Một cuộc đơn đấu hai người riêng | 1 | ONE ON ONE
+FACTION | Phe nhóm lực lượng trong game | 1 | SIDE
+GUILD | Bang hội hoặc nhóm game thủ cùng | 1 | CLAN
+QUEST | Nhiệm vụ cần hoàn thành để nhận | 1 | MISSION
+CRAFT | Chế tạo vật phẩm từ nguyên liệu | 1 | MAKE
+SHOPKEEPER | Người bán hàng bán vật phẩm | 1 | SELLER
+QUEST GIVER | Người giao nhiệm vụ chính yêu | 1 | NPCQUESTER
+RESPAWN TIMER | Thời gian chờ sinh lại sau chết | 1 | DEATH TIMER
+RANKINGS | Bảng xếp hạng người chơi top cao | 1 | CHART
+MATCHMAKING | Hệ thống ghép cặp người chơi cân | 1 | PAIRING SYSTEM
+PROGRESSION | Tiến triển nâng cấp nhân vật | 1 | ADVANCEMENT
+GRINDING | Lặp lại kiếm kinh nghiệm vàng | 2 | FARMING
+BOSS FIGHT | Chiến đấu với trùm cuối quan trọng | 2 | RAID
+LOOT TABLE | Bảng tỷ lệ rơi vật phẩm quái | 2 | DROP CHANCE
+RARE DROP | Rơi vật phẩm hiếm kỳ lạ | 2 | RARITY
+OVERPOWERED | Quá mạnh mẻ không cân bằng | 2 | OP
+UNDERPOWERED | Quá yếu kém so với khác | 2 | WEAK
+BALANCE PATCH | Bản cập nhật cân bằng nhân vật | 2 | ADJUSTMENT
+META SHIFT | Thay đổi cách chơi hot hiện tại | 2 | STRATEGY CHANGE
+MECHANICAL KEYBOARD | Bàn phím cơ học chơi game | 2 | GAMING KEYBOARD
+GAMING MOUSE | Chuột chuyên game cảm biến | 2 | PRECISION MOUSE
+INPUT LAG | Trễ phản ứng điều khiển | 2 | RESPONSE DELAY
+DESYNC | Không đồng bộ giữa máy chủ | 2 | OUT OF SYNC
+ANTI CHEAT | Hệ thống chống gian lận | 2 | CHEAT PREVENTION
+PERMABAN | Cấm vĩnh viễn tài khoản gian lận | 2 | PERMANENT BAN
+TEMPBAN | Cảnh cáo tạm cấm tài khoản | 2 | TIMEOUT
+TOXICITY | Hành vi độc hại gây phiền | 2 | HARMFUL BEHAVIOR
+FAIR PLAY | Thái độ thể thao công bằng | 2 | ETIQUETTE
+ROLE QUEUE | Hàng chờ chọn vai trò trước | 2 | POSITION SELECTION
+VOICE CHAT | Giao tiếp bằng giọng nói | 2
+KILL CAM | Camera xem lại cách bạn chết | 2 | DEATH FOOTAGE
+SPECTATOR MODE | Chế độ xem trận không chơi | 2 | OBSERVER MODE
+CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện | 2 | PERSONALIZATION
+COSMETICS | Vật phẩm trang trí không ảnh hưởng | 2 | SKINS
+BATTLE PASS | Thẻ hạng nhân vật trả tiền | 2 | SEASON PASS
+HARDCORE MODE | Chế độ khó tối đa một lần | 2 | IRONMAN MODE
+ROGUELIKE | Trò lặp lại chết mất tiến | 2 | PROCEDURAL
+METROIDVANIA | Trò khám phá khoá mở | 2 | EXPLORATION GAME
+SKILL CEILING | Mức trần kỹ năng tối đa | 2 | SKILL MASTERY
+LEARNING CURVE | Độ khó học chơi trò | 2 | EDUCATION PACE
+SCRIM | Trận tập đấu liên tục giữa | 2 | PRACTICE MATCH
+PENTAKILL | Giết năm kẻ địch liên tiếp | 2 | KILL STREAK
+TEAM WIPE | Tiêu diệt toàn bộ đội địch | 2 | TEAM ELIMINATION
+SPLIT PUSH | Tấn công tách riêng bản đồ | 3 | SEPARATE PUSH
+JUNGLING | Giết quái rừng kiếm vàng | 3 | JUNGLE FARMING
+WARDING | Trồng cây nhìn bản đồ chiến | 3 | VISION PLACEMENT
+DEWARD | Phá cây giả vị trí địch | 3 | VISION CLEARING
+INVASION | Xâm nhập rừng địch trộm | 3 | INCURSION
+TOWER DIVE | Lao vào tháp đánh người | 3 | TOWER AGGRESSION
+PICK OFF | Cướp một người riêng rẻ | 3 | ISOLATION KILLS
+CUTSCENE | Cảnh điểm phim giữa trò chơi | 1 | MOVIE SCENE
+KEYBINDING | Ràng buộc phím tùy chỉnh | 1 | KEY MAPPING

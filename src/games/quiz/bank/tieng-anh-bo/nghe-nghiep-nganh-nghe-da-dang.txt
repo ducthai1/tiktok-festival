@@ -1,152 +1,152 @@
 # Tiếng Anh · Ngành nghề đa dạng
-BARRISTER | Luật sư hành động tại tòa xử lý vụ kiện tiếng Anh là gì? | 2
-SOLICITOR | Luật sư tư vấn đơn thủ tục pháp lý tiếng Anh là gì? | 2
-COURT CLERK | Thư ký tòa soạn thảo biên bản xét xử tiếng Anh là gì? | 2
-LEGAL ADVISOR | Cố vấn pháp lý giải thích luật lệ tiếng Anh là gì? | 2
-SHERIFF | Trưởng cảnh sát hạt giữ gìn trật tự tiếng Anh là gì? | 2
-CONSTABLE | Cảnh sát lực lượng công an tiếng Anh là gì? | 1
-SERGEANT | Hạ sĩ cảnh sát quản lý đội ngũ tiếng Anh là gì? | 2
-INSPECTOR | Thanh tra cảnh sát điều tra tội phạm tiếng Anh là gì? | 2
-CHIEF | Trưởng công an giám sát tất cả tiếng Anh là gì? | 1
-FIRE CHIEF | Trưởng cứu hoả tổ chức chữa cháy tiếng Anh là gì? | 2
-COAST GUARD | Nhân viên bảo vệ bờ biển cứu hộ tiếng Anh là gì? | 2
-ORTHOPEDIST | Bác sĩ chuyên khoa xương khớp tiếng Anh là gì? | 2
-INFANTRYMAN | Lính bộ binh mang súng đi chiến tiếng Anh là gì? | 2
-NAVIGATOR | Hàng hải viên chỉ dẫn đường bay tiếng Anh là gì? | 2
-GUNNER | Pháo thủ bắn pháo trên tàu tiếng Anh là gì? | 2
-COMMANDO | Lính đặc biệt thực hiện nhiệm vụ tiếng Anh là gì? | 2
-LIEUTENANT | Trung úy sĩ quan quân hàm tiếng Anh là gì? | 2
-COLONEL | Đại tá quân hàm cao hơn thiếu tá tiếng Anh là gì? | 2
-CO-PILOT | Phó phi công giúp phi công lái tiếng Anh là gì? | 2
-BAGGAGE HANDLER | Nhân viên vận chuyển hành lý tiếng Anh là gì? | 2 | GROUND CREW
-TICKET AGENT | Nhân viên bán vé máy bay tiếng Anh là gì? | 2
-STRUCTURAL ENGINEER | Kỹ sư chỉnh cấu trúc kết cấu tiếng Anh là gì? | 2
-INTERIOR DESIGNER | Thiết kế viên nội thất nhà ở tiếng Anh là gì? | 2
-CRANE OPERATOR | Tài xế cơi cẩu nâng hàng tiếng Anh là gì? | 2
-GLAZIER | Thợ lắp kính cửa sổ tiếng Anh là gì? | 2
-STONEMASON | Thợ tạc đá xây tường tiếng Anh là gì? | 2
-TILER | Công nhân lát gạch tiếng Anh là gì? | 1
-STEAM FITTER | Công nhân lắp ống hơi tiếng Anh là gì? | 2
-PLASTERER | Công nhân trét vữa tường tiếng Anh là gì? | 2
-SOIL SCIENTIST | Nhà khoa học đất tiếng Anh là gì? | 2
-APICULTURIST | Nuôi ong lấy mật ong tiếng Anh là gì? | 2
-GOAT HERDER | Chăn dê trên cao nguyên tiếng Anh là gì? | 2
-HORSE TRAINER | Huấn luyện viên huấn luyện ngựa tiếng Anh là gì? | 2
-CATTLE RANCHER | Chủ trang trại nuôi bò tiếng Anh là gì? | 2
-POULTRY FARMER | Nuôi dạo gia cầm tiếng Anh là gì? | 2
-WOOD TURNER | Thợ quay gỗ tạo hình tiếng Anh là gì? | 2
-ARBORIST | Chăm sóc cây chuyên gia tiếng Anh là gì? | 2
-DYER | Công nhân nhuộm vải tiếng Anh là gì? | 1
-WEAVER | Thợ dệt vải bằng tay tiếng Anh là gì? | 2
-LEATHER TANNER | Công nhân thuộc da tiếng Anh là gì? | 2
-COBBLER | Thợ sửa giày tiếng Anh là gì? | 2 | SHOEMAKER
-MILLINER | Thợ may mũ tiếng Anh là gì? | 2
-CHEMICAL ENGINEER | Kỹ sư hoá chất tiếng Anh là gì? | 2
-METALLURGIST | Nhà luyện kim chuyên gia kim loại tiếng Anh là gì? | 3
-AUTO MECHANIC | Thợ sửa ôtô tiếng Anh là gì? | 1
-TRUCK DRIVER | Tài xế xe tải tiếng Anh là gì? | 1
-BUS DRIVER | Tài xế xe buýt tiếng Anh là gì? | 1
-TAXI DRIVER | Người hành nghề lái xe ô tô chở khách công cộng tính tiền theo đồng hồ cước tiếng Anh là gì? | 1
-MESSENGER | Nhân viên chuyên chở thư tiếng Anh là gì? | 2
-DELIVERY DRIVER | Tài xế giao hàng tiếng Anh là gì? | 1
-TRAIN DRIVER | Tài xế đầu máy xe lửa tiếng Anh là gì? | 2
-TRAIN CONDUCTOR | Nhân viên kiểm soát xe lửa tiếng Anh là gì? | 2
-STEVEDORE | Công nhân bốc dỡ hàng cảng tiếng Anh là gì? | 2
-LONGSHOREMAN | Công nhân cảng bốc dỡ hàng tiếng Anh là gì? | 2
-BOATSWAIN | Thuyền phó chỉ huy hạ sĩ tiếng Anh là gì? | 2
-CHIEF ENGINEER | Kỹ sư trưởng tàu tiếng Anh là gì? | 2
-DECK OFFICER | Sĩ quan boong tàu tiếng Anh là gì? | 2
-SUPERCARGO | Cơ trưởng kiểm soát hàng hóa tiếng Anh là gì? | 2
-PURSER | Thủ quỹ tàu quản lý tiền tiếng Anh là gì? | 2
-CABIN STEWARD | Nhân viên phục vụ trông nom các phòng ngủ hành khách trên du thuyền tiếng Anh là gì? | 2
-WEATHER FORECASTER | Dự báo viên thời tiết tiếng Anh là gì? | 2
-OCEANOGRAPHER | Nhà hải dương học tiếng Anh là gì? | 3 | OCEAN SCIENTIST
-MARINE BIOLOGIST | Nhà sinh vật học biển tiếng Anh là gì? | 2
-HYDROLOGIST | Nhà thủy văn học tiếng Anh là gì? | 3
-NEWS CORRESPONDENT | Phóng viên đặc biệt tiếng Anh là gì? | 2
-SPORTS REPORTER | Phóng viên thể thao tiếng Anh là gì? | 2
-SOUND ENGINEER | Kỹ sư âm thanh tiếng Anh là gì? | 2
-TYPESETTER | Người sắp chữ in ấn tiếng Anh là gì? | 2
-BOOKBINDER | Thợ đóng sách tiếng Anh là gì? | 2 | BOOK BINDER
-COPY EDITOR | Biên tập viên sửa bản thảo tiếng Anh là gì? | 2
-FACT CHECKER | Người kiểm chứng sự kiện tiếng Anh là gì? | 2
-INDEXER | Người lập chỉ mục sách tiếng Anh là gì? | 2
-ANNOUNCER | Người dẫn chương trình tiếng Anh là gì? | 2 | VOICE ANNOUNCER
-MUSIC PRODUCER | Nhà sản xuất nhạc tiếng Anh là gì? | 2
-RADIO HOST | Dẫn chương trình phát thanh tiếng Anh là gì? | 2
-CORRESPONDENT | Phóng viên báo tiếng Anh là gì? | 2
-PRESS OFFICER | Viên chức liên lạc báo chí tiếng Anh là gì? | 2
-SPEECH WRITER | Người viết diễn văn tiếng Anh là gì? | 2
-COPYWRITER | Viết quảng cáo bán hàng tiếng Anh là gì? | 2
-CENSUS TAKER | Nhân viên tổng điều tra tiếng Anh là gì? | 2
-REGISTRAR | Người lập sổ đăng ký tiếng Anh là gì? | 2
-TAX COLLECTOR | Nhân viên thu thuế tiếng Anh là gì? | 2
-BOOKKEEPER | Người quản lý sổ cái tiếng Anh là gì? | 1
-OFFICE MANAGER | Quản lý văn phòng tiếng Anh là gì? | 2
-PERSONAL ASSISTANT | Trợ lý cá nhân tiếng Anh là gì? | 2
-CAREER COUNSELOR | Tư vấn viên sự nghiệp tiếng Anh là gì? | 2
-THERAPIST | Nhà trị liệu tâm lý tiếng Anh là gì? | 2
-YOUTH WORKER | Công nhân thanh thiếu niên tiếng Anh là gì? | 2
-FUNDRAISER | Người quyên góp tiền từ thiện tiếng Anh là gì? | 2
-GRANT WRITER | Người viết đơn xin hỗ trợ tiếng Anh là gì? | 2
-PRISON GUARD | Nhân viên cảm giữ nhà tù tiếng Anh là gì? | 2
-PAROLE OFFICER | Viên chức phóng thích có điều kiện tiếng Anh là gì? | 2
-MARSHAL | Tướng công an tiếng Anh là gì? | 1
-DEPUTY | Phó viên chính quyền tiếng Anh là gì? | 1
-WARDEN | Giám đốc nhà tù tiếng Anh là gì? | 2
-FORENSIC PATHOLOGIST | Bác sĩ pháp y tiếng Anh là gì? | 2
-FINGERPRINT EXPERT | Chuyên gia vân tay tiếng Anh là gì? | 2
-TOXICOLOGIST | Nhà độc chất học tiếng Anh là gì? | 3
-MEDICAL EXAMINER | Pháp y kiểm tra thi thể tiếng Anh là gì? | 2
-HOSTAGE NEGOTIATOR | Người thương lượng con tin tiếng Anh là gì? | 2
-BOMB TECHNICIAN | Kỹ thuật viên xử lý bom tiếng Anh là gì? | 2
-DOG HANDLER | Huấn luyện viên chó cảnh sát tiếng Anh là gì? | 2
-POLICE DISPATCHER | Điều độ cảnh sát tiếng Anh là gì? | 2
-PRIVATE INVESTIGATOR | Thám tư tư nhân tiếng Anh là gì? | 2
-FRAUD INVESTIGATOR | Điều tra viên gian lận tiếng Anh là gì? | 2
-BOUNTY HUNTER | Thợ bắt trốn truy nã tiếng Anh là gì? | 2 | BOUNTY HUNTER
-ARMED GUARD | Canh gác có vũ trang tiếng Anh là gì? | 2
-TRAFFIC OFFICER | Cảnh sát giao thông tiếng Anh là gì? | 2
-PARKING ATTENDANT | Nhân viên canh giữ bãi đỗ xe tiếng Anh là gì? | 2
-METER READER | Nhân viên đọc đồng hồ tiếng Anh là gì? | 2
-SANITATION WORKER | Công nhân vệ sinh thành phố tiếng Anh là gì? | 2
-STREET SWEEPER | Người quét đường tiếng Anh là gì? | 1
-CUSTODIAN | Quản trị viên toà nhà tiếng Anh là gì? | 2
-TREE TRIMMER | Thợ cắt tỉa cây tiếng Anh là gì? | 2
-TREE SURGEON | Bác sĩ cây chuyên cứu hộ cây tiếng Anh là gì? | 2
-PARK RANGER | Quản lý viên công viên tiếng Anh là gì? | 2
-GAME WARDEN | Quản lý viên bảo vệ lâm tiếng Anh là gì? | 2
-COAL MINER | Thợ đào than tiếng Anh là gì? | 1
-PETROLEUM ENGINEER | Kỹ sư dầu khí tiếng Anh là gì? | 2
-STOCK CLERK | Thư ký kho tiếng Anh là gì? | 2
-CUSTOMS BROKER | Môi giới hải quan tiếng Anh là gì? | 2
-FREIGHT FORWARDER | Nhân viên chuyển tiếp hàng tiếng Anh là gì? | 2
-RIGGER | Thợ xây dựng giàn tàu tiếng Anh là gì? | 2
-SHIPWRIGHT | Thợ xây tàu gỗ tiếng Anh là gì? | 2
-OUTFITTER | Nhân viên trang bị tàu tiếng Anh là gì? | 2
-HARBOR MASTER | Bộ chỉ huy cảng tiếng Anh là gì? | 2
-HARBOR PILOT | Hoa tiêu cảng tiếng Anh là gì? | 2
-COMMERCIAL DIVER | Thợ lặn chuyên nghiệp tiếng Anh là gì? | 2
-UNDERWATER WELDER | Thợ hàn dưới nước tiếng Anh là gì? | 2
-SALVAGE EXPERT | Chuyên gia cứu vớt tiếng Anh là gì? | 2
-WRECK DIVER | Thợ lặn xác tàu tiếng Anh là gì? | 2
-SHIP BROKER | Môi giới tàu biển tiếng Anh là gì? | 2
-NAVAL ARCHITECT | Kiến trúc sư hàng hải tiếng Anh là gì? | 2
-DOCKWORKER | Công nhân cảng bốc dỡ tiếng Anh là gì? | 1
-REALTOR | Người môi giới bất động sản tiếng Anh là gì? | 2
-PROPERTY MANAGER | Quản lý tài sản tiếng Anh là gì? | 2
-BUILDING INSPECTOR | Kiểm tra viên tòa nhà tiếng Anh là gì? | 2
-MORTGAGE BROKER | Môi giới thế chấp tiếng Anh là gì? | 2
-HOME INSPECTOR | Kiểm tra viên nhà tiếng Anh là gì? | 2
-LEASING AGENT | Nhân viên cho thuê thương mại tiếng Anh là gì? | 2
-LAND SURVEYOR | Nhân viên đo đạc đất tiếng Anh là gì? | 2
-GENERAL CONTRACTOR | Nhà thầu tổng tiếng Anh là gì? | 2
-SUBCONTRACTOR | Nhà thầu phụ tiếng Anh là gì? | 2
-PROJECT MANAGER | Quản lý dự án tiếng Anh là gì? | 2
-COST ESTIMATOR | Nhân viên định giá chi phí tiếng Anh là gì? | 2
-LANDSCAPE ARCHITECT | Kiến trúc sư cảnh quan tiếng Anh là gì? | 2
-IPM | Chuyên gia quản lý côn trùng toàn bộ tiếng Anh là gì? | 3 | IPM SPECIALIST
-WELL DRILLER | Công nhân khoan giếng tiếng Anh là gì? | 2
-INSURANCE AGENT | Đại lý bảo hiểm tiếng Anh là gì? | 2
-CLAIM ADJUSTER | Giải quyết viên yêu cầu bảo hiểm tiếng Anh là gì? | 2
-FORENSIC ACCOUNTANT | Kế toán pháp y tiếng Anh là gì? | 2
+BARRISTER | Luật sư hành động tại tòa xử lý vụ kiện | 2
+SOLICITOR | Luật sư tư vấn đơn thủ tục pháp lý | 2
+COURT CLERK | Thư ký tòa soạn thảo biên bản xét xử | 2
+LEGAL ADVISOR | Cố vấn pháp lý giải thích luật lệ | 2
+SHERIFF | Trưởng cảnh sát hạt giữ gìn trật tự | 2
+CONSTABLE | Cảnh sát lực lượng công an | 1
+SERGEANT | Hạ sĩ cảnh sát quản lý đội ngũ | 2
+INSPECTOR | Thanh tra cảnh sát điều tra tội phạm | 2
+CHIEF | Trưởng công an giám sát tất cả | 1
+FIRE CHIEF | Trưởng cứu hoả tổ chức chữa cháy | 2
+COAST GUARD | Nhân viên bảo vệ bờ biển cứu hộ | 2
+ORTHOPEDIST | Bác sĩ chuyên khoa xương khớp | 2
+INFANTRYMAN | Lính bộ binh mang súng đi chiến | 2
+NAVIGATOR | Hàng hải viên chỉ dẫn đường bay | 2
+GUNNER | Pháo thủ bắn pháo trên tàu | 2
+COMMANDO | Lính đặc biệt thực hiện nhiệm vụ | 2
+LIEUTENANT | Trung úy sĩ quan quân hàm | 2
+COLONEL | Đại tá quân hàm cao hơn thiếu tá | 2
+CO-PILOT | Phó phi công giúp phi công lái | 2
+BAGGAGE HANDLER | Nhân viên vận chuyển hành lý | 2 | GROUND CREW
+TICKET AGENT | Nhân viên bán vé máy bay | 2
+STRUCTURAL ENGINEER | Kỹ sư chỉnh cấu trúc kết cấu | 2
+INTERIOR DESIGNER | Thiết kế viên nội thất nhà ở | 2
+CRANE OPERATOR | Tài xế cơi cẩu nâng hàng | 2
+GLAZIER | Thợ lắp kính cửa sổ | 2
+STONEMASON | Thợ tạc đá xây tường | 2
+TILER | Công nhân lát gạch | 1
+STEAM FITTER | Công nhân lắp ống hơi | 2
+PLASTERER | Công nhân trét vữa tường | 2
+SOIL SCIENTIST | Nhà khoa học đất | 2
+APICULTURIST | Nuôi ong lấy mật ong | 2
+GOAT HERDER | Chăn dê trên cao nguyên | 2
+HORSE TRAINER | Huấn luyện viên huấn luyện ngựa | 2
+CATTLE RANCHER | Chủ trang trại nuôi bò | 2
+POULTRY FARMER | Nuôi dạo gia cầm | 2
+WOOD TURNER | Thợ quay gỗ tạo hình | 2
+ARBORIST | Chăm sóc cây chuyên gia | 2
+DYER | Công nhân nhuộm vải | 1
+WEAVER | Thợ dệt vải bằng tay | 2
+LEATHER TANNER | Công nhân thuộc da | 2
+COBBLER | Thợ sửa giày | 2 | SHOEMAKER
+MILLINER | Thợ may mũ | 2
+CHEMICAL ENGINEER | Kỹ sư hoá chất | 2
+METALLURGIST | Nhà luyện kim chuyên gia kim loại | 3
+AUTO MECHANIC | Thợ sửa ôtô | 1
+TRUCK DRIVER | Tài xế xe tải | 1
+BUS DRIVER | Tài xế xe buýt | 1
+TAXI DRIVER | Người hành nghề lái xe ô tô chở khách công cộng tính tiền theo đồng hồ cước | 1
+MESSENGER | Nhân viên chuyên chở thư | 2
+DELIVERY DRIVER | Tài xế giao hàng | 1
+TRAIN DRIVER | Tài xế đầu máy xe lửa | 2
+TRAIN CONDUCTOR | Nhân viên kiểm soát xe lửa | 2
+STEVEDORE | Công nhân bốc dỡ hàng cảng | 2
+LONGSHOREMAN | Công nhân cảng bốc dỡ hàng | 2
+BOATSWAIN | Thuyền phó chỉ huy hạ sĩ | 2
+CHIEF ENGINEER | Kỹ sư trưởng tàu | 2
+DECK OFFICER | Sĩ quan boong tàu | 2
+SUPERCARGO | Cơ trưởng kiểm soát hàng hóa | 2
+PURSER | Thủ quỹ tàu quản lý tiền | 2
+CABIN STEWARD | Nhân viên phục vụ trông nom các phòng ngủ hành khách trên du thuyền | 2
+WEATHER FORECASTER | Dự báo viên thời tiết | 2
+OCEANOGRAPHER | Nhà hải dương học | 3 | OCEAN SCIENTIST
+MARINE BIOLOGIST | Nhà sinh vật học biển | 2
+HYDROLOGIST | Nhà thủy văn học | 3
+NEWS CORRESPONDENT | Phóng viên đặc biệt | 2
+SPORTS REPORTER | Phóng viên thể thao | 2
+SOUND ENGINEER | Kỹ sư âm thanh | 2
+TYPESETTER | Người sắp chữ in ấn | 2
+BOOKBINDER | Thợ đóng sách | 2 | BOOK BINDER
+COPY EDITOR | Biên tập viên sửa bản thảo | 2
+FACT CHECKER | Người kiểm chứng sự kiện | 2
+INDEXER | Người lập chỉ mục sách | 2
+ANNOUNCER | Người dẫn chương trình | 2 | VOICE ANNOUNCER
+MUSIC PRODUCER | Nhà sản xuất nhạc | 2
+RADIO HOST | Dẫn chương trình phát thanh | 2
+CORRESPONDENT | Phóng viên báo | 2
+PRESS OFFICER | Viên chức liên lạc báo chí | 2
+SPEECH WRITER | Người viết diễn văn | 2
+COPYWRITER | Viết quảng cáo bán hàng | 2
+CENSUS TAKER | Nhân viên tổng điều tra | 2
+REGISTRAR | Người lập sổ đăng ký | 2
+TAX COLLECTOR | Nhân viên thu thuế | 2
+BOOKKEEPER | Người quản lý sổ cái | 1
+OFFICE MANAGER | Quản lý văn phòng | 2
+PERSONAL ASSISTANT | Trợ lý cá nhân | 2
+CAREER COUNSELOR | Tư vấn viên sự nghiệp | 2
+THERAPIST | Nhà trị liệu tâm lý | 2
+YOUTH WORKER | Công nhân thanh thiếu niên | 2
+FUNDRAISER | Người quyên góp tiền từ thiện | 2
+GRANT WRITER | Người viết đơn xin hỗ trợ | 2
+PRISON GUARD | Nhân viên cảm giữ nhà tù | 2
+PAROLE OFFICER | Viên chức phóng thích có điều kiện | 2
+MARSHAL | Tướng công an | 1
+DEPUTY | Phó viên chính quyền | 1
+WARDEN | Giám đốc nhà tù | 2
+FORENSIC PATHOLOGIST | Bác sĩ pháp y | 2
+FINGERPRINT EXPERT | Chuyên gia vân tay | 2
+TOXICOLOGIST | Nhà độc chất học | 3
+MEDICAL EXAMINER | Pháp y kiểm tra thi thể | 2
+HOSTAGE NEGOTIATOR | Người thương lượng con tin | 2
+BOMB TECHNICIAN | Kỹ thuật viên xử lý bom | 2
+DOG HANDLER | Huấn luyện viên chó cảnh sát | 2
+POLICE DISPATCHER | Điều độ cảnh sát | 2
+PRIVATE INVESTIGATOR | Thám tư tư nhân | 2
+FRAUD INVESTIGATOR | Điều tra viên gian lận | 2
+BOUNTY HUNTER | Thợ bắt trốn truy nã | 2 | BOUNTY HUNTER
+ARMED GUARD | Canh gác có vũ trang | 2
+TRAFFIC OFFICER | Cảnh sát giao thông | 2
+PARKING ATTENDANT | Nhân viên canh giữ bãi đỗ xe | 2
+METER READER | Nhân viên đọc đồng hồ | 2
+SANITATION WORKER | Công nhân vệ sinh thành phố | 2
+STREET SWEEPER | Người quét đường | 1
+CUSTODIAN | Quản trị viên toà nhà | 2
+TREE TRIMMER | Thợ cắt tỉa cây | 2
+TREE SURGEON | Bác sĩ cây chuyên cứu hộ cây | 2
+PARK RANGER | Quản lý viên công viên | 2
+GAME WARDEN | Quản lý viên bảo vệ lâm | 2
+COAL MINER | Thợ đào than | 1
+PETROLEUM ENGINEER | Kỹ sư dầu khí | 2
+STOCK CLERK | Thư ký kho | 2
+CUSTOMS BROKER | Môi giới hải quan | 2
+FREIGHT FORWARDER | Nhân viên chuyển tiếp hàng | 2
+RIGGER | Thợ xây dựng giàn tàu | 2
+SHIPWRIGHT | Thợ xây tàu gỗ | 2
+OUTFITTER | Nhân viên trang bị tàu | 2
+HARBOR MASTER | Bộ chỉ huy cảng | 2
+HARBOR PILOT | Hoa tiêu cảng | 2
+COMMERCIAL DIVER | Thợ lặn chuyên nghiệp | 2
+UNDERWATER WELDER | Thợ hàn dưới nước | 2
+SALVAGE EXPERT | Chuyên gia cứu vớt | 2
+WRECK DIVER | Thợ lặn xác tàu | 2
+SHIP BROKER | Môi giới tàu biển | 2
+NAVAL ARCHITECT | Kiến trúc sư hàng hải | 2
+DOCKWORKER | Công nhân cảng bốc dỡ | 1
+REALTOR | Người môi giới bất động sản | 2
+PROPERTY MANAGER | Quản lý tài sản | 2
+BUILDING INSPECTOR | Kiểm tra viên tòa nhà | 2
+MORTGAGE BROKER | Môi giới thế chấp | 2
+HOME INSPECTOR | Kiểm tra viên nhà | 2
+LEASING AGENT | Nhân viên cho thuê thương mại | 2
+LAND SURVEYOR | Nhân viên đo đạc đất | 2
+GENERAL CONTRACTOR | Nhà thầu tổng | 2
+SUBCONTRACTOR | Nhà thầu phụ | 2
+PROJECT MANAGER | Quản lý dự án | 2
+COST ESTIMATOR | Nhân viên định giá chi phí | 2
+LANDSCAPE ARCHITECT | Kiến trúc sư cảnh quan | 2
+IPM | Chuyên gia quản lý côn trùng toàn bộ | 3 | IPM SPECIALIST
+WELL DRILLER | Công nhân khoan giếng | 2
+INSURANCE AGENT | Đại lý bảo hiểm | 2
+CLAIM ADJUSTER | Giải quyết viên yêu cầu bảo hiểm | 2
+FORENSIC ACCOUNTANT | Kế toán pháp y | 2

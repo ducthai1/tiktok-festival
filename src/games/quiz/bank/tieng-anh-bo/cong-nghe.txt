@@ -1,221 +1,221 @@
 # Tiếng Anh · Công nghệ
-SMART TV | Ti vi thông minh tiếng Anh là gì? | 1
-MICROCHIP | Vi mạch tiếng Anh là gì? | 3 | CHIP
-TRANSISTOR | Bóng bán dẫn tiếng Anh là gì? | 3
-SOLDER | Hàn linh kiện điện tử tiếng Anh là gì? | 3 | SOLDERING
-CIRCUIT BOARD | Bo mạch tiếng Anh là gì? | 2 | PCB
-POWER SUPPLY | Bộ nguồn tiếng Anh là gì? | 2 | PSU
-COOLING FAN | Quạt tản nhiệt tiếng Anh là gì? | 2
-HEAT SINK | Miếng tản nhiệt kim loại tiếng Anh là gì? | 3 | HEATSINK
-OVERHEAT | Quá nóng tiếng Anh là gì? | 2 | OVERHEATING
-BATTERY LIFE | Thời lượng pin tiếng Anh là gì? | 2
-FAST CHARGING | Sạc nhanh tiếng Anh là gì? | 1
-SSD | Ổ cứng thể rắn tiếng Anh là gì? | 2 | SOLID STATE DRIVE
-MEMORY CARD | Thẻ nhớ tiếng Anh là gì? | 1 | SD CARD
-DATA PLAN | Gói cước dữ liệu di động tiếng Anh là gì? | 2 | MOBILE DATA
-ROAMING | Chuyển vùng quốc tế tiếng Anh là gì? | 3
-COVERAGE | Vùng phủ sóng tiếng Anh là gì? | 3
-FIBER OPTIC | Cáp quang tiếng Anh là gì? | 3 | OPTICAL FIBER, FIBRE OPTIC
-URL | Địa chỉ trang web tiếng Anh là gì? | 2 | WEB ADDRESS
-HOMEPAGE | Trang chủ tiếng Anh là gì? | 1 | HOME PAGE
-LANDING PAGE | Trang đích (trang giới thiệu sản phẩm) tiếng Anh là gì? | 3
-INCOGNITO | Chế độ ẩn danh tiếng Anh là gì? | 2 | PRIVATE MODE, PRIVATE BROWSING
-VERIFICATION CODE | Mã xác minh (OTP) tiếng Anh là gì? | 2 | OTP, ONE-TIME PASSWORD
-BIOMETRICS | Sinh trắc học tiếng Anh là gì? | 3 | BIOMETRIC
-DECRYPT | Giải mã (dữ liệu) tiếng Anh là gì? | 3 | DECRYPTION
-HACK | Xâm nhập hệ thống trái phép tiếng Anh là gì? | 2 | HACKING
-DATA BREACH | Rò rỉ dữ liệu tiếng Anh là gì? | 3 | DATA LEAK
-IDENTITY THEFT | Đánh cắp danh tính tiếng Anh là gì? | 3
-ANTIVIRUS | Phần mềm diệt virus tiếng Anh là gì? | 1
-POP-UP | Cửa sổ bật lên tiếng Anh là gì? | 2 | POPUP
-DRAG AND DROP | Kéo và thả tiếng Anh là gì? | 2 | DRAG
-DOUBLE-CLICK | Nhấp đúp chuột tiếng Anh là gì? | 1 | DOUBLE CLICK
-RIGHT-CLICK | Nhấp chuột phải tiếng Anh là gì? | 1 | RIGHT CLICK
-TOGGLE | Nút gạt bật/tắt tiếng Anh là gì? | 3 | SWITCH
-DROPDOWN | Danh sách thả xuống tiếng Anh là gì? | 3 | DROP-DOWN, DROPDOWN MENU
-CHECKBOX | Ô đánh dấu (tích chọn) tiếng Anh là gì? | 2 | CHECK BOX, TICK BOX
-SLIDER | Thanh trượt (kéo để chỉnh) tiếng Anh là gì? | 3
-PROGRESS BAR | Thanh tiến trình tiếng Anh là gì? | 2
-BUFFERING | Video đang tải bị khựng tiếng Anh là gì? | 2 | BUFFER
-GLITCH | Trục trặc nhỏ (lỗi vặt) tiếng Anh là gì? | 2
-FACTORY RESET | Khôi phục cài đặt gốc tiếng Anh là gì? | 2 | RESET
-FORMAT | Định dạng (ổ đĩa) tiếng Anh là gì? | 2
-ZIP | Nén tệp tiếng Anh là gì? | 2 | COMPRESS
-UNZIP | Giải nén tệp tiếng Anh là gì? | 2 | EXTRACT, DECOMPRESS
-SPREADSHEET | Bảng tính tiếng Anh là gì? | 2
-WORD PROCESSOR | Trình soạn thảo văn bản tiếng Anh là gì? | 3
-SLIDESHOW | Trình chiếu ảnh/slide tiếng Anh là gì? | 2
-FONT | Phông chữ tiếng Anh là gì? | 1 | TYPEFACE
-PIXEL | Điểm ảnh tiếng Anh là gì? | 2
-SCREENSAVER | Hình chờ bảo vệ màn hình tiếng Anh là gì? | 3
-TRACKPAD | Bàn di chuột (laptop) tiếng Anh là gì? | 2 | TOUCHPAD
-STYLUS | Bút cảm ứng tiếng Anh là gì? | 2 | STYLUS PEN
-CHARGING PORT | Cổng sạc tiếng Anh là gì? | 2 | PORT
-ADAPTER | Bộ chuyển đổi (củ đổi) tiếng Anh là gì? | 2 | ADAPTOR
-UPS | Bộ lưu điện tiếng Anh là gì? | 3
-IN-APP PURCHASE | Mua hàng trong ứng dụng tiếng Anh là gì? | 3
-DEEPFAKE | Video giả mạo bằng AI tiếng Anh là gì? | 3
-PROMPT | Câu lệnh nhập cho AI tiếng Anh là gì? | 2
-MACHINE LEARNING | Học máy tiếng Anh là gì? | 2
-METAVERSE | Vũ trụ ảo tiếng Anh là gì? | 2
-HOLOGRAM | Ảnh ba chiều (hình chiếu nổi) tiếng Anh là gì? | 3
-SELF-DRIVING CAR | Xe tự lái tiếng Anh là gì? | 2 | AUTONOMOUS CAR, DRIVERLESS CAR
-ELECTRIC CAR | Xe điện tiếng Anh là gì? | 1 | EV, ELECTRIC VEHICLE
-SOLAR PANEL | Tấm pin mặt trời tiếng Anh là gì? | 2 | SOLAR PANELS
-WIND TURBINE | Tuabin gió tiếng Anh là gì? | 2
-SMART LOCK | Khóa thông minh tiếng Anh là gì? | 2
-ROBOT VACUUM | Thiết bị tự động di chuyển quét dọn bụi bẩn trên sàn nhà tiếng Anh là gì? | 2
-SECURITY CAMERA | Mắt thần ghi hình theo dõi bảo đảm an ninh ở hành lang nhà cửa tiếng Anh là gì? | 1 | CCTV
-VOICE ASSISTANT | Trợ lý giọng nói tiếng Anh là gì? | 2 | VIRTUAL ASSISTANT
-E-BOOK | Sách điện tử tiếng Anh là gì? | 1 | EBOOK
-SPEAKERPHONE | Loa ngoài khi gọi điện tiếng Anh là gì? | 2
-VIDEO CALL | Cuộc gọi trực tiếp vừa nghe tiếng vừa nhìn thấy hình ảnh nhau qua mạng tiếng Anh là gì? | 1 | VIDEO CHAT
-VOICE MESSAGE | Tin nhắn thoại tiếng Anh là gì? | 1 | VOICE NOTE
-GROUP CHAT | Hội nhóm nhắn tin trò chuyện nhiều người cùng lúc trên ứng dụng tiếng Anh là gì? | 1
-SCREEN TIME | Thời gian dùng màn hình tiếng Anh là gì? | 2
-AIRPLANE MODE | Chế độ máy bay tiếng Anh là gì? | 1 | FLIGHT MODE
-SILENT MODE | Chế độ im lặng tiếng Anh là gì? | 1 | SILENT
-LOCK SCREEN | Màn hình khóa tiếng Anh là gì? | 1
-HOME SCREEN | Màn hình chính (điện thoại) tiếng Anh là gì? | 1
-SOFTWARE UPDATE | Cập nhật phần mềm tiếng Anh là gì? | 1
-CLOUD STORAGE | Lưu trữ đám mây tiếng Anh là gì? | 2
-COMPUTER | Máy tính tiếng Anh là gì? | 1 | PC
-LAPTOP | Máy tính xách tay tiếng Anh là gì? | 1 | NOTEBOOK
-SMARTPHONE | Điện thoại thông minh tiếng Anh là gì? | 1 | PHONE, MOBILE PHONE, CELL PHONE
-TABLET | Máy tính bảng tiếng Anh là gì? | 1
-KEYBOARD | Bàn phím tiếng Anh là gì? | 1
-MOUSE | Chuột máy tính tiếng Anh là gì? | 1
-SCREEN | Màn hình tiếng Anh là gì? | 1 | MONITOR, DISPLAY
-SPEAKER | Cái loa tiếng Anh là gì? | 1 | SPEAKERS, LOUDSPEAKER
-HEADPHONES | Tai nghe tiếng Anh là gì? | 1 | HEADPHONE, HEADSET, EARPHONES
-CHARGER | Củ sạc, bộ sạc tiếng Anh là gì? | 1
-BATTERY | Viên pin tiếng Anh là gì? | 1
-CABLE | Dây cáp tiếng Anh là gì? | 1 | WIRE, CORD
-DOWNLOAD | Tải xuống tiếng Anh là gì? | 1
-UPLOAD | Tải lên tiếng Anh là gì? | 1
-INSTALL | Cài đặt phần mềm (động từ) tiếng Anh là gì? | 1
-DELETE | Xoá dữ liệu tiếng Anh là gì? | 1 | REMOVE, ERASE
-COPY | Sao chép tiếng Anh là gì? | 1
-PASTE | Dán (sau khi sao chép) tiếng Anh là gì? | 1
-LOG IN | Đăng nhập tiếng Anh là gì? | 1 | LOGIN, SIGN IN
-LOG OUT | Đăng xuất tiếng Anh là gì? | 1 | LOGOUT, SIGN OUT
-SIGN UP | Đăng ký tài khoản tiếng Anh là gì? | 1 | REGISTER
-ACCOUNT | Tài khoản tiếng Anh là gì? | 1
-PASSWORD | Mật khẩu tiếng Anh là gì? | 1 | PASSCODE
-USERNAME | Tên đăng nhập tiếng Anh là gì? | 1 | USER NAME
-MESSAGE | Tin nhắn tiếng Anh là gì? | 1 | TEXT, SMS
-FILE | Tệp tin tiếng Anh là gì? | 1 | DOCUMENT
-FOLDER | Thư mục tiếng Anh là gì? | 1 | DIRECTORY
-ICON | Biểu tượng trên màn hình tiếng Anh là gì? | 1
-APP | Ứng dụng tiếng Anh là gì? | 1 | APPLICATION, APPS
-SOFTWARE | Phần mềm tiếng Anh là gì? | 1 | PROGRAM, PROGRAMME
-DATA | Dữ liệu tiếng Anh là gì? | 1
-AI | Trí tuệ nhân tạo tiếng Anh là gì? | 1 | ARTIFICIAL INTELLIGENCE
-ROBOT | Người máy tiếng Anh là gì? | 1
-SELFIE | Ảnh tự sướng tiếng Anh là gì? | 1
-SCREENSHOT | Ảnh chụp màn hình tiếng Anh là gì? | 1 | SCREEN SHOT, SCREEN CAPTURE
-LIVESTREAM | Phát trực tiếp tiếng Anh là gì? | 1 | LIVE STREAM, LIVE, STREAM
-FOLLOWER | Người theo dõi tiếng Anh là gì? | 1 | FOLLOWERS
-LIKE | Bấm thích tiếng Anh là gì? | 1
-SHARE | Chia sẻ tiếng Anh là gì? | 1
-COMMENT | Bình luận tiếng Anh là gì? | 1
-POST | Bài đăng tiếng Anh là gì? | 1 | STATUS
-CLICK | Nhấp chuột tiếng Anh là gì? | 1 | TAP
-TYPE | Gõ phím tiếng Anh là gì? | 1
-PRINT | In tài liệu tiếng Anh là gì? | 1
-CONNECT | Kết nối tiếng Anh là gì? | 1
-SHUT DOWN | Tắt máy tiếng Anh là gì? | 1 | TURN OFF, POWER OFF, SHUTDOWN, SWITCH OFF
-LOADING | Đang tải tiếng Anh là gì? | 1
-SPEED | Tốc độ tiếng Anh là gì? | 1
-DEVICE | Thiết bị điện tử tiếng Anh là gì? | 1 | GADGET
-TECHNOLOGY | Công nghệ tiếng Anh là gì? | 1 | TECH
-ENGINEER | Kỹ sư tiếng Anh là gì? | 1
-ELECTRICITY | Điện (năng lượng) tiếng Anh là gì? | 1 | POWER
-CHAT | Nhắn tin trò chuyện tiếng Anh là gì? | 1 | TEXT
-ONLINE SHOPPING | Mua sắm trực tuyến tiếng Anh là gì? | 1 | E-COMMERCE, ECOMMERCE
-PLUG | Phích cắm điện tiếng Anh là gì? | 2
-SOCKET | Ổ cắm điện tiếng Anh là gì? | 2 | OUTLET, POWER POINT
-NETWORK | Mạng (mạng máy tính) tiếng Anh là gì? | 2
-BROWSER | Trình duyệt tiếng Anh là gì? | 2 | WEB BROWSER
-SEARCH ENGINE | Công cụ tìm kiếm tiếng Anh là gì? | 2
-UNDO | Hoàn tác tiếng Anh là gì? | 2
-REFRESH | Tải lại trang tiếng Anh là gì? | 2 | RELOAD
-PROFILE | Hồ sơ cá nhân trên mạng tiếng Anh là gì? | 2
-NOTIFICATION | Thông báo trên điện thoại tiếng Anh là gì? | 2 | ALERT, NOTIFICATIONS
-ATTACHMENT | Tệp đính kèm tiếng Anh là gì? | 2
-DESKTOP | Màn hình chính máy tính tiếng Anh là gì? | 2 | HOME SCREEN
-HARDWARE | Phần cứng tiếng Anh là gì? | 2
-PROGRAMMER | Lập trình viên tiếng Anh là gì? | 2 | CODER, DEVELOPER, SOFTWARE ENGINEER
-CODE | Mã lập trình tiếng Anh là gì? | 2 | SOURCE CODE
-BUG | Lỗi phần mềm tiếng Anh là gì? | 2 | ERROR, GLITCH
-HACKER | Tin tặc tiếng Anh là gì? | 2
-SECURITY | Bảo mật tiếng Anh là gì? | 2 | CYBERSECURITY
-PRIVACY | Quyền riêng tư tiếng Anh là gì? | 2
-BACKUP | Sao lưu dữ liệu tiếng Anh là gì? | 2 | BACK UP, BACK-UP
-CLOUD | Đám mây lưu trữ tiếng Anh là gì? | 2 | CLOUD STORAGE
-STORAGE | Dung lượng lưu trữ tiếng Anh là gì? | 2 | SPACE
-MEMORY | Bộ nhớ RAM tiếng Anh là gì? | 2 | RAM
-DATABASE | Cơ sở dữ liệu tiếng Anh là gì? | 2
-DRONE | Máy bay không người lái tiếng Anh là gì? | 2 | UAV
-VIRTUAL REALITY | Thực tế ảo tiếng Anh là gì? | 2 | VR
-SUBSCRIBE | Đăng ký theo dõi kênh tiếng Anh là gì? | 2 | FOLLOW
-HASHTAG | Thẻ bắt đầu bằng dấu thăng (#) tiếng Anh là gì? | 2 | TAG
-VIRAL | Lan truyền rần rần (nổi trên mạng) tiếng Anh là gì? | 2 | TRENDING
-CONTENT | Nội dung tiếng Anh là gì? | 2
-CREATOR | Nhà sáng tạo nội dung tiếng Anh là gì? | 2 | CONTENT CREATOR
-INFLUENCER | Người có sức ảnh hưởng (KOL) tiếng Anh là gì? | 2 | KOL
-SCROLL | Lướt màn hình tiếng Anh là gì? | 2 | SWIPE
-TAP | Chạm nhẹ vào màn hình tiếng Anh là gì? | 2 | CLICK, PRESS
-BARCODE | Mã vạch tiếng Anh là gì? | 2
-SIGNAL | Tín hiệu sóng điện thoại tiếng Anh là gì? | 2 | RECEPTION
-ROUTER | Bộ phát wifi tiếng Anh là gì? | 2 | MODEM
-DISCONNECT | Ngắt kết nối tiếng Anh là gì? | 2
-CRASH | Bị sập, bị treo (ứng dụng) tiếng Anh là gì? | 2 | FREEZE, HANG
-DIGITAL | Kỹ thuật số tiếng Anh là gì? | 2
-INVENT | Phát minh (động từ) tiếng Anh là gì? | 2 | CREATE
-SATELLITE | Vệ tinh tiếng Anh là gì? | 2
-E-WALLET | Ví điện tử tiếng Anh là gì? | 2 | EWALLET, DIGITAL WALLET, E WALLET
-SPAM | Thư rác tiếng Anh là gì? | 2 | JUNK MAIL, JUNK
-SCAM | Lừa đảo qua mạng tiếng Anh là gì? | 2 | FRAUD
-FREE TRIAL | Dùng thử miễn phí tiếng Anh là gì? | 2
-VERSION | Phiên bản tiếng Anh là gì? | 2
-FEATURE | Tính năng tiếng Anh là gì? | 2 | FUNCTION
-SHORTCUT | Phím tắt tiếng Anh là gì? | 2 | HOTKEY, KEYBOARD SHORTCUT
-SPACE BAR | Phím cách tiếng Anh là gì? | 2 | SPACE, SPACEBAR
-ENTER | Phím xuống dòng tiếng Anh là gì? | 2 | RETURN
-WIRELESS | Không dây tiếng Anh là gì? | 2 | CORDLESS
-TOUCHSCREEN | Màn hình cảm ứng tiếng Anh là gì? | 2 | TOUCH SCREEN
-PROCESSOR | Bộ vi xử lý tiếng Anh là gì? | 3 | CPU, CHIP, MICROPROCESSOR
-ALGORITHM | Thuật toán tiếng Anh là gì? | 3
-ENCRYPTION | Mã hoá dữ liệu tiếng Anh là gì? | 3 | ENCRYPT
-INNOVATION | Sự đổi mới công nghệ tiếng Anh là gì? | 3
-CIRCUIT | Mạch điện tiếng Anh là gì? | 3
-SENSOR | Cảm biến tiếng Anh là gì? | 3
-NAVIGATION | Định vị chỉ đường tiếng Anh là gì? | 3 | GPS
-SUBSCRIPTION | Gói đăng ký trả phí tiếng Anh là gì? | 3
-INTERFACE | Giao diện tiếng Anh là gì? | 3 | UI, USER INTERFACE
-PORTABLE | Dễ mang theo (di động) tiếng Anh là gì? | 3
-FIRMWARE | Phần mềm điều khiển thiết bị tiếng Anh là gì? | 3
-COMPATIBLE | Tương thích tiếng Anh là gì? | 3
-AUTHENTICATION | Xác thực (bảo mật) tiếng Anh là gì? | 3 | VERIFICATION
-MALWARE | Phần mềm độc hại tiếng Anh là gì? | 3 | VIRUS
-FIREWALL | Tường lửa tiếng Anh là gì? | 3
-PROGRAMMING | Lập trình (ngành) tiếng Anh là gì? | 3 | CODING
-CYBERSPACE | Không gian mạng tiếng Anh là gì? | 3
-OPERATING SYSTEM | Hệ điều hành tiếng Anh là gì? | 3 | OS
-DOWNLOAD SPEED | Tốc độ tải xuống tiếng Anh là gì? | 3
-SCANNER | Máy quét tài liệu tiếng Anh là gì? | 2
-PROJECTOR | Máy chiếu tiếng Anh là gì? | 2
-HARD DRIVE | Ổ cứng tiếng Anh là gì? | 2 | HARD DISK, HDD
-POWER BANK | Sạc dự phòng tiếng Anh là gì? | 1 | PORTABLE CHARGER
-SMARTWATCH | Đồng hồ thông minh tiếng Anh là gì? | 1 | SMART WATCH
-EARBUDS | Tai nghe nhét tai tiếng Anh là gì? | 2 | EARPHONES
-GAME CONSOLE | Máy chơi điện tử (cầm tay, cắm TV) tiếng Anh là gì? | 2 | CONSOLE
-VIDEO GAME | Trò chơi điện tử tiếng Anh là gì? | 1 | GAME
-SEARCH | Tìm kiếm trên mạng tiếng Anh là gì? | 1 | LOOK UP
-LINK | Đường liên kết tiếng Anh là gì? | 2 | URL, HYPERLINK
-CHATBOT | Trợ lý trò chuyện tự động tiếng Anh là gì? | 3 | BOT
-SMART HOME | Nhà thông minh tiếng Anh là gì? | 2
+SMART TV | Ti vi thông minh | 1
+MICROCHIP | Vi mạch | 3 | CHIP
+TRANSISTOR | Bóng bán dẫn | 3
+SOLDER | Hàn linh kiện điện tử | 3 | SOLDERING
+CIRCUIT BOARD | Bo mạch | 2 | PCB
+POWER SUPPLY | Bộ nguồn | 2 | PSU
+COOLING FAN | Quạt tản nhiệt | 2
+HEAT SINK | Miếng tản nhiệt kim loại | 3 | HEATSINK
+OVERHEAT | Quá nóng | 2 | OVERHEATING
+BATTERY LIFE | Thời lượng pin | 2
+FAST CHARGING | Sạc nhanh | 1
+SSD | Ổ cứng thể rắn | 2 | SOLID STATE DRIVE
+MEMORY CARD | Thẻ nhớ | 1 | SD CARD
+DATA PLAN | Gói cước dữ liệu di động | 2 | MOBILE DATA
+ROAMING | Chuyển vùng quốc tế | 3
+COVERAGE | Vùng phủ sóng | 3
+FIBER OPTIC | Cáp quang | 3 | OPTICAL FIBER, FIBRE OPTIC
+URL | Địa chỉ trang web | 2 | WEB ADDRESS
+HOMEPAGE | Trang chủ | 1 | HOME PAGE
+LANDING PAGE | Trang đích (trang giới thiệu sản phẩm) | 3
+INCOGNITO | Chế độ ẩn danh | 2 | PRIVATE MODE, PRIVATE BROWSING
+VERIFICATION CODE | Mã xác minh (OTP) | 2 | OTP, ONE-TIME PASSWORD
+BIOMETRICS | Sinh trắc học | 3 | BIOMETRIC
+DECRYPT | Giải mã (dữ liệu) | 3 | DECRYPTION
+HACK | Xâm nhập hệ thống trái phép | 2 | HACKING
+DATA BREACH | Rò rỉ dữ liệu | 3 | DATA LEAK
+IDENTITY THEFT | Đánh cắp danh tính | 3
+ANTIVIRUS | Phần mềm diệt virus | 1
+POP-UP | Cửa sổ bật lên | 2 | POPUP
+DRAG AND DROP | Kéo và thả | 2 | DRAG
+DOUBLE-CLICK | Nhấp đúp chuột | 1 | DOUBLE CLICK
+RIGHT-CLICK | Nhấp chuột phải | 1 | RIGHT CLICK
+TOGGLE | Nút gạt bật/tắt | 3 | SWITCH
+DROPDOWN | Danh sách thả xuống | 3 | DROP-DOWN, DROPDOWN MENU
+CHECKBOX | Ô đánh dấu (tích chọn) | 2 | CHECK BOX, TICK BOX
+SLIDER | Thanh trượt (kéo để chỉnh) | 3
+PROGRESS BAR | Thanh tiến trình | 2
+BUFFERING | Video đang tải bị khựng | 2 | BUFFER
+GLITCH | Trục trặc nhỏ (lỗi vặt) | 2
+FACTORY RESET | Khôi phục cài đặt gốc | 2 | RESET
+FORMAT | Định dạng (ổ đĩa) | 2
+ZIP | Nén tệp | 2 | COMPRESS
+UNZIP | Giải nén tệp | 2 | EXTRACT, DECOMPRESS
+SPREADSHEET | Bảng tính | 2
+WORD PROCESSOR | Trình soạn thảo văn bản | 3
+SLIDESHOW | Trình chiếu ảnh/slide | 2
+FONT | Phông chữ | 1 | TYPEFACE
+PIXEL | Điểm ảnh | 2
+SCREENSAVER | Hình chờ bảo vệ màn hình | 3
+TRACKPAD | Bàn di chuột (laptop) | 2 | TOUCHPAD
+STYLUS | Bút cảm ứng | 2 | STYLUS PEN
+CHARGING PORT | Cổng sạc | 2 | PORT
+ADAPTER | Bộ chuyển đổi (củ đổi) | 2 | ADAPTOR
+UPS | Bộ lưu điện | 3
+IN-APP PURCHASE | Mua hàng trong ứng dụng | 3
+DEEPFAKE | Video giả mạo bằng AI | 3
+PROMPT | Câu lệnh nhập cho AI | 2
+MACHINE LEARNING | Học máy | 2
+METAVERSE | Vũ trụ ảo | 2
+HOLOGRAM | Ảnh ba chiều (hình chiếu nổi) | 3
+SELF-DRIVING CAR | Xe tự lái | 2 | AUTONOMOUS CAR, DRIVERLESS CAR
+ELECTRIC CAR | Xe điện | 1 | EV, ELECTRIC VEHICLE
+SOLAR PANEL | Tấm pin mặt trời | 2 | SOLAR PANELS
+WIND TURBINE | Tuabin gió | 2
+SMART LOCK | Khóa thông minh | 2
+ROBOT VACUUM | Thiết bị tự động di chuyển quét dọn bụi bẩn trên sàn nhà | 2
+SECURITY CAMERA | Mắt thần ghi hình theo dõi bảo đảm an ninh ở hành lang nhà cửa | 1 | CCTV
+VOICE ASSISTANT | Trợ lý giọng nói | 2 | VIRTUAL ASSISTANT
+E-BOOK | Sách điện tử | 1 | EBOOK
+SPEAKERPHONE | Loa ngoài khi gọi điện | 2
+VIDEO CALL | Cuộc gọi trực tiếp vừa nghe tiếng vừa nhìn thấy hình ảnh nhau qua mạng | 1 | VIDEO CHAT
+VOICE MESSAGE | Tin nhắn thoại | 1 | VOICE NOTE
+GROUP CHAT | Hội nhóm nhắn tin trò chuyện nhiều người cùng lúc trên ứng dụng | 1
+SCREEN TIME | Thời gian dùng màn hình | 2
+AIRPLANE MODE | Chế độ máy bay | 1 | FLIGHT MODE
+SILENT MODE | Chế độ im lặng | 1 | SILENT
+LOCK SCREEN | Màn hình khóa | 1
+HOME SCREEN | Màn hình chính (điện thoại) | 1
+SOFTWARE UPDATE | Cập nhật phần mềm | 1
+CLOUD STORAGE | Lưu trữ đám mây | 2
+COMPUTER | Máy tính | 1 | PC
+LAPTOP | Máy tính xách tay | 1 | NOTEBOOK
+SMARTPHONE | Điện thoại thông minh | 1 | PHONE, MOBILE PHONE, CELL PHONE
+TABLET | Máy tính bảng | 1
+KEYBOARD | Bàn phím | 1
+MOUSE | Chuột máy tính | 1
+SCREEN | Màn hình | 1 | MONITOR, DISPLAY
+SPEAKER | Cái loa | 1 | SPEAKERS, LOUDSPEAKER
+HEADPHONES | Tai nghe | 1 | HEADPHONE, HEADSET, EARPHONES
+CHARGER | Củ sạc, bộ sạc | 1
+BATTERY | Viên pin | 1
+CABLE | Dây cáp | 1 | WIRE, CORD
+DOWNLOAD | Tải xuống | 1
+UPLOAD | Tải lên | 1
+INSTALL | Cài đặt phần mềm (động từ) | 1
+DELETE | Xoá dữ liệu | 1 | REMOVE, ERASE
+COPY | Sao chép | 1
+PASTE | Dán (sau khi sao chép) | 1
+LOG IN | Đăng nhập | 1 | LOGIN, SIGN IN
+LOG OUT | Đăng xuất | 1 | LOGOUT, SIGN OUT
+SIGN UP | Đăng ký tài khoản | 1 | REGISTER
+ACCOUNT | Tài khoản | 1
+PASSWORD | Mật khẩu | 1 | PASSCODE
+USERNAME | Tên đăng nhập | 1 | USER NAME
+MESSAGE | Tin nhắn | 1 | TEXT, SMS
+FILE | Tệp tin | 1 | DOCUMENT
+FOLDER | Thư mục | 1 | DIRECTORY
+ICON | Biểu tượng trên màn hình | 1
+APP | Ứng dụng | 1 | APPLICATION, APPS
+SOFTWARE | Phần mềm | 1 | PROGRAM, PROGRAMME
+DATA | Dữ liệu | 1
+AI | Trí tuệ nhân tạo | 1 | ARTIFICIAL INTELLIGENCE
+ROBOT | Người máy | 1
+SELFIE | Ảnh tự sướng | 1
+SCREENSHOT | Ảnh chụp màn hình | 1 | SCREEN SHOT, SCREEN CAPTURE
+LIVESTREAM | Phát trực tiếp | 1 | LIVE STREAM, LIVE, STREAM
+FOLLOWER | Người theo dõi | 1 | FOLLOWERS
+LIKE | Bấm thích | 1
+SHARE | Chia sẻ | 1
+COMMENT | Bình luận | 1
+POST | Bài đăng | 1 | STATUS
+CLICK | Nhấp chuột | 1 | TAP
+TYPE | Gõ phím | 1
+PRINT | In tài liệu | 1
+CONNECT | Kết nối | 1
+SHUT DOWN | Tắt máy | 1 | TURN OFF, POWER OFF, SHUTDOWN, SWITCH OFF
+LOADING | Đang tải | 1
+SPEED | Tốc độ | 1
+DEVICE | Thiết bị điện tử | 1 | GADGET
+TECHNOLOGY | Công nghệ | 1 | TECH
+ENGINEER | Kỹ sư | 1
+ELECTRICITY | Điện (năng lượng) | 1 | POWER
+CHAT | Nhắn tin trò chuyện | 1 | TEXT
+ONLINE SHOPPING | Mua sắm trực tuyến | 1 | E-COMMERCE, ECOMMERCE
+PLUG | Phích cắm điện | 2
+SOCKET | Ổ cắm điện | 2 | OUTLET, POWER POINT
+NETWORK | Mạng (mạng máy tính) | 2
+BROWSER | Trình duyệt | 2 | WEB BROWSER
+SEARCH ENGINE | Công cụ tìm kiếm | 2
+UNDO | Hoàn tác | 2
+REFRESH | Tải lại trang | 2 | RELOAD
+PROFILE | Hồ sơ cá nhân trên mạng | 2
+NOTIFICATION | Thông báo trên điện thoại | 2 | ALERT, NOTIFICATIONS
+ATTACHMENT | Tệp đính kèm | 2
+DESKTOP | Màn hình chính máy tính | 2 | HOME SCREEN
+HARDWARE | Phần cứng | 2
+PROGRAMMER | Lập trình viên | 2 | CODER, DEVELOPER, SOFTWARE ENGINEER
+CODE | Mã lập trình | 2 | SOURCE CODE
+BUG | Lỗi phần mềm | 2 | ERROR, GLITCH
+HACKER | Tin tặc | 2
+SECURITY | Bảo mật | 2 | CYBERSECURITY
+PRIVACY | Quyền riêng tư | 2
+BACKUP | Sao lưu dữ liệu | 2 | BACK UP, BACK-UP
+CLOUD | Đám mây lưu trữ | 2 | CLOUD STORAGE
+STORAGE | Dung lượng lưu trữ | 2 | SPACE
+MEMORY | Bộ nhớ RAM | 2 | RAM
+DATABASE | Cơ sở dữ liệu | 2
+DRONE | Máy bay không người lái | 2 | UAV
+VIRTUAL REALITY | Thực tế ảo | 2 | VR
+SUBSCRIBE | Đăng ký theo dõi kênh | 2 | FOLLOW
+HASHTAG | Thẻ bắt đầu bằng dấu thăng (#) | 2 | TAG
+VIRAL | Lan truyền rần rần (nổi trên mạng) | 2 | TRENDING
+CONTENT | Nội dung | 2
+CREATOR | Nhà sáng tạo nội dung | 2 | CONTENT CREATOR
+INFLUENCER | Người có sức ảnh hưởng (KOL) | 2 | KOL
+SCROLL | Lướt màn hình | 2 | SWIPE
+TAP | Chạm nhẹ vào màn hình | 2 | CLICK, PRESS
+BARCODE | Mã vạch | 2
+SIGNAL | Tín hiệu sóng điện thoại | 2 | RECEPTION
+ROUTER | Bộ phát wifi | 2 | MODEM
+DISCONNECT | Ngắt kết nối | 2
+CRASH | Bị sập, bị treo (ứng dụng) | 2 | FREEZE, HANG
+DIGITAL | Kỹ thuật số | 2
+INVENT | Phát minh (động từ) | 2 | CREATE
+SATELLITE | Vệ tinh | 2
+E-WALLET | Ví điện tử | 2 | EWALLET, DIGITAL WALLET, E WALLET
+SPAM | Thư rác | 2 | JUNK MAIL, JUNK
+SCAM | Lừa đảo qua mạng | 2 | FRAUD
+FREE TRIAL | Dùng thử miễn phí | 2
+VERSION | Phiên bản | 2
+FEATURE | Tính năng | 2 | FUNCTION
+SHORTCUT | Phím tắt | 2 | HOTKEY, KEYBOARD SHORTCUT
+SPACE BAR | Phím cách | 2 | SPACE, SPACEBAR
+ENTER | Phím xuống dòng | 2 | RETURN
+WIRELESS | Không dây | 2 | CORDLESS
+TOUCHSCREEN | Màn hình cảm ứng | 2 | TOUCH SCREEN
+PROCESSOR | Bộ vi xử lý | 3 | CPU, CHIP, MICROPROCESSOR
+ALGORITHM | Thuật toán | 3
+ENCRYPTION | Mã hoá dữ liệu | 3 | ENCRYPT
+INNOVATION | Sự đổi mới công nghệ | 3
+CIRCUIT | Mạch điện | 3
+SENSOR | Cảm biến | 3
+NAVIGATION | Định vị chỉ đường | 3 | GPS
+SUBSCRIPTION | Gói đăng ký trả phí | 3
+INTERFACE | Giao diện | 3 | UI, USER INTERFACE
+PORTABLE | Dễ mang theo (di động) | 3
+FIRMWARE | Phần mềm điều khiển thiết bị | 3
+COMPATIBLE | Tương thích | 3
+AUTHENTICATION | Xác thực (bảo mật) | 3 | VERIFICATION
+MALWARE | Phần mềm độc hại | 3 | VIRUS
+FIREWALL | Tường lửa | 3
+PROGRAMMING | Lập trình (ngành) | 3 | CODING
+CYBERSPACE | Không gian mạng | 3
+OPERATING SYSTEM | Hệ điều hành | 3 | OS
+DOWNLOAD SPEED | Tốc độ tải xuống | 3
+SCANNER | Máy quét tài liệu | 2
+PROJECTOR | Máy chiếu | 2
+HARD DRIVE | Ổ cứng | 2 | HARD DISK, HDD
+POWER BANK | Sạc dự phòng | 1 | PORTABLE CHARGER
+SMARTWATCH | Đồng hồ thông minh | 1 | SMART WATCH
+EARBUDS | Tai nghe nhét tai | 2 | EARPHONES
+GAME CONSOLE | Máy chơi điện tử (cầm tay, cắm TV) | 2 | CONSOLE
+VIDEO GAME | Trò chơi điện tử | 1 | GAME
+SEARCH | Tìm kiếm trên mạng | 1 | LOOK UP
+LINK | Đường liên kết | 2 | URL, HYPERLINK
+CHATBOT | Trợ lý trò chuyện tự động | 3 | BOT
+SMART HOME | Nhà thông minh | 2
 ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo (AI) | 2 | AI
 CYBERSECURITY | An ninh mạng | 3 | AN NINH MẠNG
 CLOUD COMPUTING | Điện toán đám mây | 2 | ĐIỆN TOÁN ĐÁM MÂY
@@ -234,7 +234,7 @@ REPOSITORY | Kho lưu trữ mã nguồn | 3 | KHO MÃ NGUỒN
 CONTAINER | Công nghệ đóng gói ứng dụng (Docker) | 3 | CONTAINER
 DEPLOYMENT | Việc triển khai ứng dụng lên mạng | 3 | TRIỂN KHAI
 COMPILER | Trình biên dịch mã nguồn | 3 | TRÌNH BIÊN DỊCH
-INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truyền mạng điện tử tiếng Anh là gì? | 3 | IOT
+INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truyền mạng điện tử | 3 | IOT
 NEURAL NETWORK | Mạng nơ-ron nhân tạo | 3 | MẠNG NƠ RON
 QUANTUM COMPUTING | Điện toán lượng tử | 3 | ĐIỆN TOÁN LƯỢNG TỬ
 VULNERABILITY | Lỗ hổng bảo mật | 3 | LỖ HỔNG BẢO MẬT
@@ -278,84 +278,84 @@ CACHE | Bộ nhớ đệm lưu dữ liệu tạm để truy xuất siêu tốc |
 MICROSERVICE | Kiến trúc vi dịch vụ chia nhỏ hệ thống phần mềm lớn | 3 | VI DỊCH VỤ
 ENDPOINT | Điểm cuối của cổng giao tiếp API nhận và gửi dữ liệu mạng | 2 | ĐIỂM CUỐI
 PAYLOAD | Phần dữ liệu chính thực sự được truyền tải trong gói tin mạng | 3 | DỮ LIỆU TẢI
-API | Giao diện lập trình ứng dụng kết nối trao đổi dữ liệu giữa các phần mềm tiếng Anh là gì? | 1 | CỔNG API
-CPU | Bộ vi xử lý trung tâm - đầu não tính toán của máy tính tiếng Anh là gì? | 1 | BỘ XỬ LÝ, CHIP
-GPU | Bộ xử lý đồ họa chuyên xử lý hình ảnh và đào tạo mô hình AI tiếng Anh là gì? | 1 | CARD ĐỒ HỌA
-RAM | Bộ nhớ truy xuất ngẫu nhiên tạm thời của máy tính tiếng Anh là gì? | 1 | BỘ NHỚ RAM
-MOTHERBOARD | Bo mạch chủ kết nối mọi linh kiện máy tính lại với nhau tiếng Anh là gì? | 2 | BO MẠCH CHỦ, MAINBOARD
-IP ADDRESS | Địa chỉ giao thức mạng nhận diện thiết bị trên internet tiếng Anh là gì? | 2 | ĐỊA CHỈ IP
-DOMAIN | Tên miền định danh trang web (như google.com) tiếng Anh là gì? | 1 | TÊN MIỀN
-HOSTING | Dịch vụ lưu trữ dữ liệu website trên máy chủ trực tuyến tiếng Anh là gì? | 2 | LƯU TRỮ WEB
-MODEM | Thiết bị giải mã tín hiệu đường truyền internet cáp quang tiếng Anh là gì? | 1 | CỤC MODEM
-RESTORE | Hành động phục hồi lại dữ liệu từ bản sao lưu dự phòng tiếng Anh là gì? | 2 | PHỤC HỒI DỮ LIỆU
-SYNTAX | Cú pháp ngữ pháp của ngôn ngữ lập trình tiếng Anh là gì? | 2 | CÚ PHÁP
-VARIABLE | Biến số dùng để lưu trữ giá trị trong mã code tiếng Anh là gì? | 2 | BIẾN SỐ
-CONSTANT | Hằng số mang giá trị cố định không đổi trong chương trình tiếng Anh là gì? | 2 | HẰNG SỐ
-FUNCTION | Hàm thực thi một khối lệnh chức năng trong lập trình tiếng Anh là gì? | 2 | HÀM SỐ, PHƯƠNG THỨC
-LOOP | Vòng lặp lặp đi lặp lại khối lệnh (như for, while) tiếng Anh là gì? | 1 | VÒNG LẶP
-CONDITION | Điều kiện rẽ nhánh logic (như if-else) trong code tiếng Anh là gì? | 2 | ĐIỀU KIỆN
-ARRAY | Mảng danh sách tuần tự chứa nhiều phần tử dữ liệu tiếng Anh là gì? | 2 | MẢNG DỮ LIỆU
-OBJECT | Đối tượng chứa các thuộc tính và phương thức trong OOP tiếng Anh là gì? | 2 | ĐỐI TƯỢNG
-CLASS | Lớp khuôn mẫu định nghĩa đối tượng trong lập trình hướng đối tượng tiếng Anh là gì? | 2 | LỚP ĐỐI TƯỢNG
-LIBRARY | Thư viện lập trình chứa các hàm có sẵn để tái sử dụng tiếng Anh là gì? | 1 | THƯ VIỆN CODE
-PACKAGE | Gói module phần mềm cài đặt qua npm hoặc pip tiếng Anh là gì? | 2 | GÓI PHẦN MỀM
-DEPENDENCY | Sự phụ thuộc vào các thư viện bên ngoài của dự án phần mềm tiếng Anh là gì? | 3 | PHỤ THUỘC
-TERMINAL | Giao diện dòng lệnh gõ lệnh chữ màu đen trên máy tính tiếng Anh là gì? | 2 | CỬA SỔ DÒNG LỆNH, CONSOLE
-SCRIPT | Tệp kịch bản tự động hóa chuỗi câu lệnh tiếng Anh là gì? | 2 | KỊCH BẢN TỰ ĐỘNG
-LOG | Nhật ký ghi lại toàn bộ hoạt động và lỗi của máy chủ tiếng Anh là gì? | 1 | NHẬT KÝ HỆ THỐNG
-METRIC | Chỉ số đo lường hiệu năng của hệ thống (như tải CPU, RAM) tiếng Anh là gì? | 2 | CHỈ SỐ HIỆU NĂNG
-DOWNTIME | Thời gian hệ thống gặp sự cố sập mạng ngừng hoạt động tiếng Anh là gì? | 2 | THỜI GIAN CHẾT
-UPTIME | Thời gian hệ thống vận hành liên tục ổn định không gián đoạn tiếng Anh là gì? | 2 | THỜI GIAN HOẠT ĐỘNG
-CONCURRENCY | Cơ chế xử lý đồng thời nhiều tác vụ cùng một lúc tiếng Anh là gì? | 3 | XỬ LÝ ĐỒNG THỜI
-THREAD | Luồng thực thi chỉ lệnh nhỏ nhất trong tiến trình máy tính tiếng Anh là gì? | 2 | LUỒNG XỬ LÝ
-PROCESS | Tiến trình chương trình đang chạy trong bộ nhớ máy tính tiếng Anh là gì? | 2 | TIẾN TRÌNH
-DEADLOCK | Tình trạng bế tắc nghẽn mạng khi các tiến trình cùng chờ nhau nhả tài nguyên tiếng Anh là gì? | 3 | TẮC NGHẼN BẾ TẮC
-PIPELINE | Quy trình đường ống tự động hóa tích hợp và phát hành mã nguồn tiếng Anh là gì? | 2 | ĐƯỜNG ỐNG TỰ ĐỘNG
-INTEGRATION | Sự tích hợp kết hợp nhiều hệ thống phần mềm lại với nhau tiếng Anh là gì? | 2 | TÍCH HỢP HỆ THỐNG
-BOT | Robot phần mềm tự động hóa các tác vụ lặp đi lặp lại tiếng Anh là gì? | 1 | CON BOT
-CRAWLER | Bọ cào dữ liệu tự động thu thập thông tin từ các trang web tiếng Anh là gì? | 3 | BỌ TÌM KIẾM
-BIG DATA | Tập hợp khối lượng dữ liệu khổng lồ của thời đại số tiếng Anh là gì? | 1 | DỮ LIỆU LỚN
-DEEP LEARNING | Học sâu - phân nhánh cao cấp của trí tuệ nhân tạo tiếng Anh là gì? | 2 | HỌC SÂU
-SUPERVISED LEARNING | Học có giám sát huấn luyện mô hình dựa trên nhãn dữ liệu có sẵn tiếng Anh là gì? | 3 | HỌC CÓ GIÁM SÁT
-DATASET | Tập dữ liệu dùng để huấn luyện mô hình máy học tiếng Anh là gì? | 2 | TẬP DỮ LIỆU
-PREDICTION | Dự đoán kết quả tương lai dựa trên phân tích dữ liệu AI tiếng Anh là gì? | 2 | DỰ ĐOÁN
-ANALYTICS | Ngành phân tích số liệu thống kê hành vi người dùng tiếng Anh là gì? | 2 | PHÂN TÍCH SỐ LIỆU
-DASHBOARD | Bảng điều khiển trực quan hóa các biểu đồ số liệu tiếng Anh là gì? | 2 | BẢNG ĐIỀU KHIỂN
-WIDGET | Tiện ích nhỏ hiển thị thông tin nhanh trên màn hình chính tiếng Anh là gì? | 2 | TIỆN ÍCH
-PLUGIN | Phần mở rộng cài thêm tính năng cho ứng dụng tiếng Anh là gì? | 1 | PHẦN MỞ RỘNG, ADDON, EXTENSION
-TEMPLATE | Mẫu giao diện hoặc mẫu tài liệu thiết kế sẵn tiện dụng tiếng Anh là gì? | 1 | BẢN MẪU, MẪU THIẾT KẾ
-DARK MODE | Giao diện chế độ tối bảo vệ mắt ban đêm tiếng Anh là gì? | 1 | CHẾ ĐỘ TỐI
-COMMIT | Hành động lưu thay đổi mã vào hệ thống quản lý phiên bản tiếng Anh là gì? | 1 | COMMIT
-PULL REQUEST | Yêu cầu gộp nhánh code mới vào nhánh chính tiếng Anh là gì? | 2 | PULL REQUEST
-BRANCH | Nhánh phát triển riêng trong hệ thống quản lý phiên bản tiếng Anh là gì? | 1 | NHÁNH CODE
-MERGE | Hành động gộp hai nhánh code lại thành một tiếng Anh là gì? | 1 | GỘP NHÁNH
-CONFLICT | Xung đột code xảy ra khi hai nhánh sửa cùng một dòng tiếng Anh là gì? | 2 | XUNG ĐỘT CODE
-SYNTAX ERROR | Lỗi cú pháp do viết sai quy tắc ngôn ngữ lập trình tiếng Anh là gì? | 1 | LỖI CÚ PHÁP
-RUNTIME ERROR | Lỗi xảy ra khi chương trình đang chạy thực tế tiếng Anh là gì? | 2 | LỖI KHI CHẠY
-LOGIC ERROR | Lỗi thuật toán khiến chương trình chạy không báo lỗi nhưng ra kết quả sai tiếng Anh là gì? | 2 | LỖI LOGIC
-STACK OVERFLOW | Lỗi tràn ngăn xếp thường do đệ quy vô hạn tiếng Anh là gì? | 3 | TRÀN NGĂN XẾP
-NULL POINTER | Con trỏ trỏ vào vùng nhớ không tồn tại gây lỗi chương trình tiếng Anh là gì? | 3 | CON TRỎ NULL
-GARBAGE COLLECTION | Cơ chế tự động thu hồi bộ nhớ không còn sử dụng tiếng Anh là gì? | 3 | THU HỒI BỘ NHỚ
-PACKAGE MANAGER | Công cụ quản lý cài đặt và cập nhật các gói thư viện tiếng Anh là gì? | 2 | QUẢN LÝ GÓI
-MONOLITH | Kiến trúc ứng dụng nguyên khối gộp tất cả vào một nơi tiếng Anh là gì? | 3 | ĐƠN KHỐI
-LOAD BALANCER | Bộ cân bằng tải phân phối yêu cầu đến nhiều máy chủ tiếng Anh là gì? | 2 | CÂN BẰNG TẢI
-CACHING | Lưu tạm dữ liệu hay dùng để tăng tốc độ truy cập tiếng Anh là gì? | 2 | CACHE DỮ LIỆU
-CDN | Mạng phân phối nội dung giúp tải trang web nhanh hơn tiếng Anh là gì? | 2 | MẠNG PHÂN PHỐI NỘI DUNG
-SLA | Thỏa thuận mức độ dịch vụ cam kết giữa nhà cung cấp và khách hàng tiếng Anh là gì? | 3 | THỎA THUẬN DỊCH VỤ
-KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng tiếng Anh là gì? | 2 | KANBAN
-BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên tiếng Anh là gì? | 2 | DANH SÁCH CHỜ
-USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile tiếng Anh là gì? | 2 | CÂU CHUYỆN NGƯỜI DÙNG
-TECHNICAL DEBT | Nợ kỹ thuật chi phí phát sinh do chọn giải pháp nhanh thay vì tốt tiếng Anh là gì? | 3 | NỢ KỸ THUẬT
-CODE REVIEW | Hoạt động kiểm tra rà soát mã lập trình của đồng nghiệp trước khi gộp vào kho tiếng Anh là gì? | 2 | KIỂM TRA CODE
-UNIT TEST | Kiểm thử đơn vị kiểm tra từng hàm hoặc module nhỏ riêng lẻ tiếng Anh là gì? | 2 | KIỂM THỬ ĐƠN VỊ
-INTEGRATION TEST | Kiểm thử tích hợp đảm bảo các module hoạt động đúng khi kết hợp tiếng Anh là gì? | 3 | KIỂM THỬ TÍCH HỢP
-REGRESSION TEST | Kiểm thử hồi quy đảm bảo tính năng cũ không bị hỏng sau sửa đổi tiếng Anh là gì? | 3 | KIỂM THỬ HỒI QUY
-CONTINUOUS INTEGRATION | Tích hợp liên tục tự động build và test mỗi khi code được push tiếng Anh là gì? | 3 | TÍCH HỢP LIÊN TỤC
-ROLLBACK | Khôi phục phiên bản cũ khi phiên bản mới bị lỗi tiếng Anh là gì? | 2 | KHÔI PHỤC PHIÊN BẢN
-HOTFIX | Bản vá khẩn cấp sửa lỗi nghiêm trọng ngay trên môi trường sản xuất tiếng Anh là gì? | 2 | VÁ KHẨN CẤP
-PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính khả thi trước tiếng Anh là gì? | 3 | THỬ NGHIỆM Ý TƯỞNG
-MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường tiếng Anh là gì? | 3 | MVP
-TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng tiếng Anh là gì? | 2 | BỘ CÔNG NGHỆ
-PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code tiếng Anh là gì? | 3 | MÃ GIẢ
-TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP tiếng Anh là gì? | 3 | TOKEN HÓA
-EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI tiếng Anh là gì? | 3 | NHÚNG VÉC-TƠ
+API | Giao diện lập trình ứng dụng kết nối trao đổi dữ liệu giữa các phần mềm | 1 | CỔNG API
+CPU | Bộ vi xử lý trung tâm - đầu não tính toán của máy tính | 1 | BỘ XỬ LÝ, CHIP
+GPU | Bộ xử lý đồ họa chuyên xử lý hình ảnh và đào tạo mô hình AI | 1 | CARD ĐỒ HỌA
+RAM | Bộ nhớ truy xuất ngẫu nhiên tạm thời của máy tính | 1 | BỘ NHỚ RAM
+MOTHERBOARD | Bo mạch chủ kết nối mọi linh kiện máy tính lại với nhau | 2 | BO MẠCH CHỦ, MAINBOARD
+IP ADDRESS | Địa chỉ giao thức mạng nhận diện thiết bị trên internet | 2 | ĐỊA CHỈ IP
+DOMAIN | Tên miền định danh trang web (như google.com) | 1 | TÊN MIỀN
+HOSTING | Dịch vụ lưu trữ dữ liệu website trên máy chủ trực tuyến | 2 | LƯU TRỮ WEB
+MODEM | Thiết bị giải mã tín hiệu đường truyền internet cáp quang | 1 | CỤC MODEM
+RESTORE | Hành động phục hồi lại dữ liệu từ bản sao lưu dự phòng | 2 | PHỤC HỒI DỮ LIỆU
+SYNTAX | Cú pháp ngữ pháp của ngôn ngữ lập trình | 2 | CÚ PHÁP
+VARIABLE | Biến số dùng để lưu trữ giá trị trong mã code | 2 | BIẾN SỐ
+CONSTANT | Hằng số mang giá trị cố định không đổi trong chương trình | 2 | HẰNG SỐ
+FUNCTION | Hàm thực thi một khối lệnh chức năng trong lập trình | 2 | HÀM SỐ, PHƯƠNG THỨC
+LOOP | Vòng lặp lặp đi lặp lại khối lệnh (như for, while) | 1 | VÒNG LẶP
+CONDITION | Điều kiện rẽ nhánh logic (như if-else) trong code | 2 | ĐIỀU KIỆN
+ARRAY | Mảng danh sách tuần tự chứa nhiều phần tử dữ liệu | 2 | MẢNG DỮ LIỆU
+OBJECT | Đối tượng chứa các thuộc tính và phương thức trong OOP | 2 | ĐỐI TƯỢNG
+CLASS | Lớp khuôn mẫu định nghĩa đối tượng trong lập trình hướng đối tượng | 2 | LỚP ĐỐI TƯỢNG
+LIBRARY | Thư viện lập trình chứa các hàm có sẵn để tái sử dụng | 1 | THƯ VIỆN CODE
+PACKAGE | Gói module phần mềm cài đặt qua npm hoặc pip | 2 | GÓI PHẦN MỀM
+DEPENDENCY | Sự phụ thuộc vào các thư viện bên ngoài của dự án phần mềm | 3 | PHỤ THUỘC
+TERMINAL | Giao diện dòng lệnh gõ lệnh chữ màu đen trên máy tính | 2 | CỬA SỔ DÒNG LỆNH, CONSOLE
+SCRIPT | Tệp kịch bản tự động hóa chuỗi câu lệnh | 2 | KỊCH BẢN TỰ ĐỘNG
+LOG | Nhật ký ghi lại toàn bộ hoạt động và lỗi của máy chủ | 1 | NHẬT KÝ HỆ THỐNG
+METRIC | Chỉ số đo lường hiệu năng của hệ thống (như tải CPU, RAM) | 2 | CHỈ SỐ HIỆU NĂNG
+DOWNTIME | Thời gian hệ thống gặp sự cố sập mạng ngừng hoạt động | 2 | THỜI GIAN CHẾT
+UPTIME | Thời gian hệ thống vận hành liên tục ổn định không gián đoạn | 2 | THỜI GIAN HOẠT ĐỘNG
+CONCURRENCY | Cơ chế xử lý đồng thời nhiều tác vụ cùng một lúc | 3 | XỬ LÝ ĐỒNG THỜI
+THREAD | Luồng thực thi chỉ lệnh nhỏ nhất trong tiến trình máy tính | 2 | LUỒNG XỬ LÝ
+PROCESS | Tiến trình chương trình đang chạy trong bộ nhớ máy tính | 2 | TIẾN TRÌNH
+DEADLOCK | Tình trạng bế tắc nghẽn mạng khi các tiến trình cùng chờ nhau nhả tài nguyên | 3 | TẮC NGHẼN BẾ TẮC
+PIPELINE | Quy trình đường ống tự động hóa tích hợp và phát hành mã nguồn | 2 | ĐƯỜNG ỐNG TỰ ĐỘNG
+INTEGRATION | Sự tích hợp kết hợp nhiều hệ thống phần mềm lại với nhau | 2 | TÍCH HỢP HỆ THỐNG
+BOT | Robot phần mềm tự động hóa các tác vụ lặp đi lặp lại | 1 | CON BOT
+CRAWLER | Bọ cào dữ liệu tự động thu thập thông tin từ các trang web | 3 | BỌ TÌM KIẾM
+BIG DATA | Tập hợp khối lượng dữ liệu khổng lồ của thời đại số | 1 | DỮ LIỆU LỚN
+DEEP LEARNING | Học sâu - phân nhánh cao cấp của trí tuệ nhân tạo | 2 | HỌC SÂU
+SUPERVISED LEARNING | Học có giám sát huấn luyện mô hình dựa trên nhãn dữ liệu có sẵn | 3 | HỌC CÓ GIÁM SÁT
+DATASET | Tập dữ liệu dùng để huấn luyện mô hình máy học | 2 | TẬP DỮ LIỆU
+PREDICTION | Dự đoán kết quả tương lai dựa trên phân tích dữ liệu AI | 2 | DỰ ĐOÁN
+ANALYTICS | Ngành phân tích số liệu thống kê hành vi người dùng | 2 | PHÂN TÍCH SỐ LIỆU
+DASHBOARD | Bảng điều khiển trực quan hóa các biểu đồ số liệu | 2 | BẢNG ĐIỀU KHIỂN
+WIDGET | Tiện ích nhỏ hiển thị thông tin nhanh trên màn hình chính | 2 | TIỆN ÍCH
+PLUGIN | Phần mở rộng cài thêm tính năng cho ứng dụng | 1 | PHẦN MỞ RỘNG, ADDON, EXTENSION
+TEMPLATE | Mẫu giao diện hoặc mẫu tài liệu thiết kế sẵn tiện dụng | 1 | BẢN MẪU, MẪU THIẾT KẾ
+DARK MODE | Giao diện chế độ tối bảo vệ mắt ban đêm | 1 | CHẾ ĐỘ TỐI
+COMMIT | Hành động lưu thay đổi mã vào hệ thống quản lý phiên bản | 1 | COMMIT
+PULL REQUEST | Yêu cầu gộp nhánh code mới vào nhánh chính | 2 | PULL REQUEST
+BRANCH | Nhánh phát triển riêng trong hệ thống quản lý phiên bản | 1 | NHÁNH CODE
+MERGE | Hành động gộp hai nhánh code lại thành một | 1 | GỘP NHÁNH
+CONFLICT | Xung đột code xảy ra khi hai nhánh sửa cùng một dòng | 2 | XUNG ĐỘT CODE
+SYNTAX ERROR | Lỗi cú pháp do viết sai quy tắc ngôn ngữ lập trình | 1 | LỖI CÚ PHÁP
+RUNTIME ERROR | Lỗi xảy ra khi chương trình đang chạy thực tế | 2 | LỖI KHI CHẠY
+LOGIC ERROR | Lỗi thuật toán khiến chương trình chạy không báo lỗi nhưng ra kết quả sai | 2 | LỖI LOGIC
+STACK OVERFLOW | Lỗi tràn ngăn xếp thường do đệ quy vô hạn | 3 | TRÀN NGĂN XẾP
+NULL POINTER | Con trỏ trỏ vào vùng nhớ không tồn tại gây lỗi chương trình | 3 | CON TRỎ NULL
+GARBAGE COLLECTION | Cơ chế tự động thu hồi bộ nhớ không còn sử dụng | 3 | THU HỒI BỘ NHỚ
+PACKAGE MANAGER | Công cụ quản lý cài đặt và cập nhật các gói thư viện | 2 | QUẢN LÝ GÓI
+MONOLITH | Kiến trúc ứng dụng nguyên khối gộp tất cả vào một nơi | 3 | ĐƠN KHỐI
+LOAD BALANCER | Bộ cân bằng tải phân phối yêu cầu đến nhiều máy chủ | 2 | CÂN BẰNG TẢI
+CACHING | Lưu tạm dữ liệu hay dùng để tăng tốc độ truy cập | 2 | CACHE DỮ LIỆU
+CDN | Mạng phân phối nội dung giúp tải trang web nhanh hơn | 2 | MẠNG PHÂN PHỐI NỘI DUNG
+SLA | Thỏa thuận mức độ dịch vụ cam kết giữa nhà cung cấp và khách hàng | 3 | THỎA THUẬN DỊCH VỤ
+KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng | 2 | KANBAN
+BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên | 2 | DANH SÁCH CHỜ
+USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile | 2 | CÂU CHUYỆN NGƯỜI DÙNG
+TECHNICAL DEBT | Nợ kỹ thuật chi phí phát sinh do chọn giải pháp nhanh thay vì tốt | 3 | NỢ KỸ THUẬT
+CODE REVIEW | Hoạt động kiểm tra rà soát mã lập trình của đồng nghiệp trước khi gộp vào kho | 2 | KIỂM TRA CODE
+UNIT TEST | Kiểm thử đơn vị kiểm tra từng hàm hoặc module nhỏ riêng lẻ | 2 | KIỂM THỬ ĐƠN VỊ
+INTEGRATION TEST | Kiểm thử tích hợp đảm bảo các module hoạt động đúng khi kết hợp | 3 | KIỂM THỬ TÍCH HỢP
+REGRESSION TEST | Kiểm thử hồi quy đảm bảo tính năng cũ không bị hỏng sau sửa đổi | 3 | KIỂM THỬ HỒI QUY
+CONTINUOUS INTEGRATION | Tích hợp liên tục tự động build và test mỗi khi code được push | 3 | TÍCH HỢP LIÊN TỤC
+ROLLBACK | Khôi phục phiên bản cũ khi phiên bản mới bị lỗi | 2 | KHÔI PHỤC PHIÊN BẢN
+HOTFIX | Bản vá khẩn cấp sửa lỗi nghiêm trọng ngay trên môi trường sản xuất | 2 | VÁ KHẨN CẤP
+PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính khả thi trước | 3 | THỬ NGHIỆM Ý TƯỞNG
+MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường | 3 | MVP
+TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 2 | BỘ CÔNG NGHỆ
+PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3 | MÃ GIẢ
+TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP | 3 | TOKEN HÓA
+EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI | 3 | NHÚNG VÉC-TƠ

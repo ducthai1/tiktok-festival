@@ -45,7 +45,7 @@ FOSTER | Nuôi dưỡng, khuyến khích sự phát triển | 3 | NURTURE, ENCOU
 FRAGMENT | Mảnh vỡ, khúc đoạn nhỏ | 3 | PIECE, PART
 FRAUDULENT | Gian lận, lừa đảo | 4 | DISHONEST, FAKE
 FRUGAL | Tiết kiệm, thanh tao, không lãng phí | 3 | THRIFTY, ECONOMICAL
-FULFILL | Hoàn thành, đáp ứng kỳ vọng | 2 | ACHIEVE, ACCOMPLISH
+FULFILL | Hoàn thành, đáp ứng kỳ vọng | 2 | ACHIEVE, ACCOMPLISH, FULFIL
 FUNDAMENTAL | Cơ bản, nền tảng cốt lõi | 2 | BASIC, ESSENTIAL
 FUTILE | Vô ích, không đem lại kết quả | 4 | USELESS, POINTLESS
 GENUINE | Chân thật, thật sự, không giả mạo | 2 | REAL, AUTHENTIC

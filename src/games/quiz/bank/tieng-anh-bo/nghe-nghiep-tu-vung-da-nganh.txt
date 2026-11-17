@@ -1,121 +1,121 @@
 # Tiếng Anh · Từ vựng đa ngành
-REBAR | Cốt thép được nhúng trong bê tông tiếng Anh là gì? | 2
-PLASTERBOARD | Tấm vật liệu xây dựng phủ trần tiếng Anh là gì? | 2
-STUCCO | Vữa lát trang trí bề mặt tường tiếng Anh là gì? | 2
-JOIST | Thanh gỗ ngang chịu tải sàn nhà tiếng Anh là gì? | 3
-SHINGLE | Viên lợp nhỏ lồng lên nhau che nóc nhà tiếng Anh là gì? | 3
-PILING | Cọc bê tông đóng sâu dưới nền tiếng Anh là gì? | 3
-GROUT | Vữa chặt các khe hở trong gạch tiếng Anh là gì? | 3
-FORMWORK | Khung gỗ tạm tính cho bê tông tiếng Anh là gì? | 3
-LINTEL | Dầu ngăn ở trên cửa sổ nhà tiếng Anh là gì? | 3
-SOFFIT | Phần trần dưới mái nhà tiếng Anh là gì? | 3
-PESTICIDE | Hóa chất diệt côn trùng sâu bệnh tiếng Anh là gì? | 2
-HERBICIDE | Hóa chất diệt cỏ dại ngoài đồng ruộng tiếng Anh là gì? | 2
-MULCH | Lớp vỏ rơm che phủ đất tiếng Anh là gì? | 2
-TILLER | Máy cày nhỏ trang trại tiếng Anh là gì? | 2
-MANURE | Phân trâu bò dùng bón cho cây tiếng Anh là gì? | 2
-THRESHER | Máy đập lúa tách hạt tiếng Anh là gì? | 2
-HUSK | Vỏ trấu bao quanh hạt lúa tiếng Anh là gì? | 2
-SILAGE | Cỏ ủ fermentilas cho gia súc tiếng Anh là gì? | 3
-IRRIGATION SYSTEM | Hệ thống tưới nước tự động tiếng Anh là gì? | 3
-ATTORNEY | Luật sư bào chữa trong tòa án tiếng Anh là gì? | 2
-INJUNCTION | Lệnh tòa áy cấm một hành động tiếng Anh là gì? | 3
-HABEAS CORPUS | Quyền bảo vệ tự do thân thể tiếng Anh là gì? | 3
-SUBPOENA | Giấy triệu tập buộc có mặt tòa tiếng Anh là gì? | 3
-INDICTMENT | Quyết định truy tố bị cáo tiếng Anh là gì? | 3
-BAIL | Số tiền đảm bảo phóng thích tiếng Anh là gì? | 2
-PAROLE | Phóng thích có điều kiện tù nhân tiếng Anh là gì? | 3
-STATUTE | Luật thành văn quy định hành vi tiếng Anh là gì? | 2
-GAZETTE | Công báo chính thức phát hành tiếng Anh là gì? | 2
-PRESS | Báo chí phương tiện truyền thông tiếng Anh là gì? | 1
-MASTHEAD | Phần tiêu đề tên báo ở đầu trang tiếng Anh là gì? | 2
-SCOOP | Bê tin tức độc quyền trước mọi nơi tiếng Anh là gì? | 2
-EDITORIAL | Bài xã luận quan điểm của báo tiếng Anh là gì? | 2
-SYNDICATE | Tổ chức phân phối nội dung báo tiếng Anh là gì? | 3
-RETRACTION | Xin lỗi hủy bỏ bài báo sai tiếng Anh là gì? | 3
-PUBLISHER | Nhà xuất bản in phát hành tiếng Anh là gì? | 2
-STERN | Phía đuôi tàu tiếng Anh là gì? | 2
-BOW | Phía mũi tàu tiếng Anh là gì? | 1
-GANGWAY | Cầu đi lên xuống tàu tiếng Anh là gì? | 2
-MOORING | Hệ thống buộc chắc tàu thuyền tiếng Anh là gì? | 3
-WINCH | Máy quay cuốn dây kéo hàng tiếng Anh là gì? | 3
-BILGE | Khoang hút nước dưới tàu tiếng Anh là gì? | 3
-KEEL | Sườn tàu chạy dọc đáy thân tiếng Anh là gì? | 3
-FORECASTLE | Buồng thủy thủ phía mũi tàu tiếng Anh là gì? | 3
-DAVIT | Tay cẩu nhỏ hạ thuyền cứu sinh tiếng Anh là gì? | 3
-BERTH | Khoảng nước neo đậu tàu tiếng Anh là gì? | 2
-ALTIMETER | Dụng cụ đo độ cao máy bay tiếng Anh là gì? | 3
-YOKE | Cần điều khiển máy bay tiếng Anh là gì? | 2
-AILERON | Mặt cánh giúp máy bay quay tiếng Anh là gì? | 3
-RUDDER | Vây lái hướng máy bay tiếng Anh là gì? | 2
-FLAP | Mặt cánh phụ tăng lực nâng tiếng Anh là gì? | 2
-SLAT | Mặt cánh trước bộ động cơ tiếng Anh là gì? | 3
-NACELLE | Vỏ bao quanh động cơ máy bay tiếng Anh là gì? | 3
-PYLON | Cấu trúc gắn động cơ vào cánh tiếng Anh là gì? | 3
-WORKBENCH | Bàn làm việc công nhân nhà máy tiếng Anh là gì? | 2
-CALIBRATION | Hiệu chuẩn độ chính xác dụng cụ tiếng Anh là gì? | 3
-MICRON | Đơn vị độ dài siêu nhỏ tiếng Anh là gì? | 2
-JIGS | Khuôn hỗ trợ định hướng chi tiết tiếng Anh là gì? | 3
-TOOLING | Tập hợp dụng cụ để sản xuất tiếng Anh là gì? | 3
-FLUX | Chất kích hoạt mối hàn ròng tiếng Anh là gì? | 3
-NOZZLE | Đầu vòi xịt nước chữa cháy tiếng Anh là gì? | 2
-BAFFLE | Tấm cản chặn dòng khí hay nước tiếng Anh là gì? | 3
-HYDRANT | Đầu nối lấy nước cứu hoả công cộng tiếng Anh là gì? | 2
-DAMPER | Van điều chỉnh dòng khí hệ thống tiếng Anh là gì? | 3
-EVACUATION | Sơ tán người khỏi nơi nguy hiểm tiếng Anh là gì? | 2
-WAYBILL | Giấy vận chuyển hàng hóa tiếng Anh là gì? | 2
-POSTAGE | Tiền cước gửi thư bưu điện tiếng Anh là gì? | 2
-SORTING | Quá trình sắp xếp thư bưu điện tiếng Anh là gì? | 2
-REGISTRY | Dịch vụ gửi thư có xác nhận tiếng Anh là gì? | 2
-ESCROW | Tài khoản giữ tiền trung lập tiếng Anh là gì? | 3
-CUSTODY | Quyền giám sát tài sản tiếng Anh là gì? | 2
-EQUITY | Vốn chủ sở hữu công ty tiếng Anh là gì? | 3
-ANNUITY | Khoản tiền định kỳ từ bảo hiểm tiếng Anh là gì? | 3
-LIEN | Quyền giữ tài sản để bảo đảm nợ tiếng Anh là gì? | 3
-DEED | Giấy tờ pháp lý chuyển nhượng tiếng Anh là gì? | 2
-CHISEL | Dụng cụ chạm chắn gỗ hay đá tiếng Anh là gì? | 2
-MORTISE | Lỗ chữ nhật khoét trên gỗ tiếng Anh là gì? | 3
-RASP | Dụng cụ mài ráp gồ ghề tiếng Anh là gì? | 2
-KERF | Vết cắt tạo bởi lưỡi cưa tiếng Anh là gì? | 3
-VISE | Kìm cặp giữ chặt vật tiếng Anh là gì? | 2
-CLAMP | Kìm cặp kẹp chặt hai vật tiếng Anh là gì? | 2
-FASCIA | Tấm gỗ trang trí mái nhà tiếng Anh là gì? | 2
-DYE | Chất nhuộm màu cho vải tiếng Anh là gì? | 1
-LOOM | Máy dệt sợi chỉ thành vải tiếng Anh là gì? | 2
-TUFT | Chùm lông dệt lên vải tiếng Anh là gì? | 2
-MILL | Nhà máy chế biến sản phẩm tiếng Anh là gì? | 1
-BOBBIN | Cuộn dây cho máy dệt tiếng Anh là gì? | 3
-SHUTTLE | Con chim máy dệt đưa sợi tiếng Anh là gì? | 3
-SPINDLE | Trục quay sợi chỉ quay tiếng Anh là gì? | 3
-GLAZE | Lớp phủ bóng trên đồ gốm tiếng Anh là gì? | 2
-KILN | Lò nung cao nhiệt nấu sứ tiếng Anh là gì? | 2
-ARTISAN | Thợ thủ công lành nghề tay tiếng Anh là gì? | 2
-MOLD | Khuôn hình đổ đúc sản phẩm tiếng Anh là gì? | 1
-PATINA | Lớp oxy hóa xanh trên đồng tiếng Anh là gì? | 3
-BURNISH | Đánh bóng bề mặt kim loại tiếng Anh là gì? | 3
-VARNISH | Chất sơn bảo vệ bề mặt gỗ tiếng Anh là gì? | 2
-SMELTING | Quá trình nóng chảy quặng lấy kim loại tiếng Anh là gì? | 3
-FORGE | Lò nung kim loại để rèn tiếng Anh là gì? | 2
-CASTING | Đúc kim loại vào khuôn tiếng Anh là gì? | 2
-WELDING | Hàn nối hai mảnh kim loại tiếng Anh là gì? | 2
-TEMPERING | Tôi luyện khí cho kim loại tiếng Anh là gì? | 3
-ANNEALING | Xử lý nhiệt làm mềm kim loại tiếng Anh là gì? | 3
-POLISH | Đánh bóng mặt bóng tiếng Anh là gì? | 1
-INSULATION | Vật liệu cách nhiệt điện tiếng Anh là gì? | 2
-SOLDERING | Hàn mỏng dây dẫn điện tiếng Anh là gì? | 3
-CONDUIT | Ống dẫn dây điện tiếng Anh là gì? | 2
-RIVET | Đinh mỏ nối hai tấm kim loại tiếng Anh là gì? | 2
-TRANSFORMER | Thiết bị biến đổi điện áp tiếng Anh là gì? | 2
-CAPACITOR | Linh kiện lưu trữ năng lượng điện tiếng Anh là gì? | 3
-RESISTOR | Linh kiện cản dòng điện tiếng Anh là gì? | 3
-GASKET | Vòng đệm chặn rò rỉ tiếng Anh là gì? | 2
-O-RING | Vòng cao su cách nước tiếng Anh là gì? | 2
-PULLEY | Bánh xe lăn cuốn dây tiếng Anh là gì? | 2
-BEARING | Ổ trục chảy dầu cảnh tiếng Anh là gì? | 2
-LEVER | Cần gật nhớp để nâng vật tiếng Anh là gì? | 1
-VALVE | Van xả kiểm soát dòng chất lỏng tiếng Anh là gì? | 1
-PUMP | Máy bơm nước tiếng Anh là gì? | 1
-SCAFFOLD | Khung tạm thời để công nhân leo tiếng Anh là gì? | 2
-FLASHING | Tấm chắn nước ở góc mái nhà tiếng Anh là gì? | 3
-RAFTER | Xà nhà chạy dốc mái tiếng Anh là gì? | 3
-CORNICE | Phần trang trí dưới mái nhà tiếng Anh là gì? | 3
+REBAR | Cốt thép được nhúng trong bê tông | 2
+PLASTERBOARD | Tấm vật liệu xây dựng phủ trần | 2
+STUCCO | Vữa lát trang trí bề mặt tường | 2
+JOIST | Thanh gỗ ngang chịu tải sàn nhà | 3
+SHINGLE | Viên lợp nhỏ lồng lên nhau che nóc nhà | 3
+PILING | Cọc bê tông đóng sâu dưới nền | 3
+GROUT | Vữa chặt các khe hở trong gạch | 3
+FORMWORK | Khung gỗ tạm tính cho bê tông | 3
+LINTEL | Dầu ngăn ở trên cửa sổ nhà | 3
+SOFFIT | Phần trần dưới mái nhà | 3
+PESTICIDE | Hóa chất diệt côn trùng sâu bệnh | 2
+HERBICIDE | Hóa chất diệt cỏ dại ngoài đồng ruộng | 2
+MULCH | Lớp vỏ rơm che phủ đất | 2
+TILLER | Máy cày nhỏ trang trại | 2
+MANURE | Phân trâu bò dùng bón cho cây | 2
+THRESHER | Máy đập lúa tách hạt | 2
+HUSK | Vỏ trấu bao quanh hạt lúa | 2
+SILAGE | Cỏ ủ fermentilas cho gia súc | 3
+IRRIGATION SYSTEM | Hệ thống tưới nước tự động | 3
+ATTORNEY | Luật sư bào chữa trong tòa án | 2
+INJUNCTION | Lệnh tòa áy cấm một hành động | 3
+HABEAS CORPUS | Quyền bảo vệ tự do thân thể | 3
+SUBPOENA | Giấy triệu tập buộc có mặt tòa | 3
+INDICTMENT | Quyết định truy tố bị cáo | 3
+BAIL | Số tiền đảm bảo phóng thích | 2
+PAROLE | Phóng thích có điều kiện tù nhân | 3
+STATUTE | Luật thành văn quy định hành vi | 2
+GAZETTE | Công báo chính thức phát hành | 2
+PRESS | Báo chí phương tiện truyền thông | 1
+MASTHEAD | Phần tiêu đề tên báo ở đầu trang | 2
+SCOOP | Bê tin tức độc quyền trước mọi nơi | 2
+EDITORIAL | Bài xã luận quan điểm của báo | 2
+SYNDICATE | Tổ chức phân phối nội dung báo | 3
+RETRACTION | Xin lỗi hủy bỏ bài báo sai | 3
+PUBLISHER | Nhà xuất bản in phát hành | 2
+STERN | Phía đuôi tàu | 2
+BOW | Phía mũi tàu | 1
+GANGWAY | Cầu đi lên xuống tàu | 2
+MOORING | Hệ thống buộc chắc tàu thuyền | 3
+WINCH | Máy quay cuốn dây kéo hàng | 3
+BILGE | Khoang hút nước dưới tàu | 3
+KEEL | Sườn tàu chạy dọc đáy thân | 3
+FORECASTLE | Buồng thủy thủ phía mũi tàu | 3
+DAVIT | Tay cẩu nhỏ hạ thuyền cứu sinh | 3
+BERTH | Khoảng nước neo đậu tàu | 2
+ALTIMETER | Dụng cụ đo độ cao máy bay | 3
+YOKE | Cần điều khiển máy bay | 2
+AILERON | Mặt cánh giúp máy bay quay | 3
+RUDDER | Vây lái hướng máy bay | 2
+FLAP | Mặt cánh phụ tăng lực nâng | 2
+SLAT | Mặt cánh trước bộ động cơ | 3
+NACELLE | Vỏ bao quanh động cơ máy bay | 3
+PYLON | Cấu trúc gắn động cơ vào cánh | 3
+WORKBENCH | Bàn làm việc công nhân nhà máy | 2
+CALIBRATION | Hiệu chuẩn độ chính xác dụng cụ | 3
+MICRON | Đơn vị độ dài siêu nhỏ | 2
+JIGS | Khuôn hỗ trợ định hướng chi tiết | 3
+TOOLING | Tập hợp dụng cụ để sản xuất | 3
+FLUX | Chất kích hoạt mối hàn ròng | 3
+NOZZLE | Đầu vòi xịt nước chữa cháy | 2
+BAFFLE | Tấm cản chặn dòng khí hay nước | 3
+HYDRANT | Đầu nối lấy nước cứu hoả công cộng | 2
+DAMPER | Van điều chỉnh dòng khí hệ thống | 3
+EVACUATION | Sơ tán người khỏi nơi nguy hiểm | 2
+WAYBILL | Giấy vận chuyển hàng hóa | 2
+POSTAGE | Tiền cước gửi thư bưu điện | 2
+SORTING | Quá trình sắp xếp thư bưu điện | 2
+REGISTRY | Dịch vụ gửi thư có xác nhận | 2
+ESCROW | Tài khoản giữ tiền trung lập | 3
+CUSTODY | Quyền giám sát tài sản | 2
+EQUITY | Vốn chủ sở hữu công ty | 3
+ANNUITY | Khoản tiền định kỳ từ bảo hiểm | 3
+LIEN | Quyền giữ tài sản để bảo đảm nợ | 3
+DEED | Giấy tờ pháp lý chuyển nhượng | 2
+CHISEL | Dụng cụ chạm chắn gỗ hay đá | 2
+MORTISE | Lỗ chữ nhật khoét trên gỗ | 3
+RASP | Dụng cụ mài ráp gồ ghề | 2
+KERF | Vết cắt tạo bởi lưỡi cưa | 3
+VISE | Kìm cặp giữ chặt vật | 2
+CLAMP | Kìm cặp kẹp chặt hai vật | 2
+FASCIA | Tấm gỗ trang trí mái nhà | 2
+DYE | Chất nhuộm màu cho vải | 1
+LOOM | Máy dệt sợi chỉ thành vải | 2
+TUFT | Chùm lông dệt lên vải | 2
+MILL | Nhà máy chế biến sản phẩm | 1
+BOBBIN | Cuộn dây cho máy dệt | 3
+SHUTTLE | Con chim máy dệt đưa sợi | 3
+SPINDLE | Trục quay sợi chỉ quay | 3
+GLAZE | Lớp phủ bóng trên đồ gốm | 2
+KILN | Lò nung cao nhiệt nấu sứ | 2
+ARTISAN | Thợ thủ công lành nghề tay | 2
+MOLD | Khuôn hình đổ đúc sản phẩm | 1 | MOULD
+PATINA | Lớp oxy hóa xanh trên đồng | 3
+BURNISH | Đánh bóng bề mặt kim loại | 3
+VARNISH | Chất sơn bảo vệ bề mặt gỗ | 2
+SMELTING | Quá trình nóng chảy quặng lấy kim loại | 3
+FORGE | Lò nung kim loại để rèn | 2
+CASTING | Đúc kim loại vào khuôn | 2
+WELDING | Hàn nối hai mảnh kim loại | 2
+TEMPERING | Tôi luyện khí cho kim loại | 3
+ANNEALING | Xử lý nhiệt làm mềm kim loại | 3
+POLISH | Đánh bóng mặt bóng | 1
+INSULATION | Vật liệu cách nhiệt điện | 2
+SOLDERING | Hàn mỏng dây dẫn điện | 3
+CONDUIT | Ống dẫn dây điện | 2
+RIVET | Đinh mỏ nối hai tấm kim loại | 2
+TRANSFORMER | Thiết bị biến đổi điện áp | 2
+CAPACITOR | Linh kiện lưu trữ năng lượng điện | 3
+RESISTOR | Linh kiện cản dòng điện | 3
+GASKET | Vòng đệm chặn rò rỉ | 2
+O-RING | Vòng cao su cách nước | 2
+PULLEY | Bánh xe lăn cuốn dây | 2
+BEARING | Ổ trục chảy dầu cảnh | 2
+LEVER | Cần gật nhớp để nâng vật | 1
+VALVE | Van xả kiểm soát dòng chất lỏng | 1
+PUMP | Máy bơm nước | 1
+SCAFFOLD | Khung tạm thời để công nhân leo | 2
+FLASHING | Tấm chắn nước ở góc mái nhà | 3
+RAFTER | Xà nhà chạy dốc mái | 3
+CORNICE | Phần trang trí dưới mái nhà | 3
