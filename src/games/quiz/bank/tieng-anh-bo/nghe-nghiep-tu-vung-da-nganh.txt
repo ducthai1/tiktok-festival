@@ -6,8 +6,8 @@ JOIST | Thanh gỗ ngang chịu tải sàn nhà | 3
 SHINGLE | Viên lợp nhỏ lồng lên nhau che nóc nhà | 3
 PILING | Cọc bê tông đóng sâu dưới nền | 3
 GROUT | Vữa chặt các khe hở trong gạch | 3
-FORMWORK | Khung gỗ tạm tính cho bê tông | 3
-LINTEL | Dầu ngăn ở trên cửa sổ nhà | 3
+FORMWORK | Khung cốp pha dựng tạm để đổ bê tông vào | 3
+LINTEL | Dầm ngang đỡ tường phía trên ô cửa | 3
 SOFFIT | Phần trần dưới mái nhà | 3
 PESTICIDE | Hóa chất diệt côn trùng sâu bệnh | 2
 HERBICIDE | Hóa chất diệt cỏ dại ngoài đồng ruộng | 2
@@ -16,10 +16,10 @@ TILLER | Máy cày nhỏ trang trại | 2
 MANURE | Phân trâu bò dùng bón cho cây | 2
 THRESHER | Máy đập lúa tách hạt | 2
 HUSK | Vỏ trấu bao quanh hạt lúa | 2
-SILAGE | Cỏ ủ fermentilas cho gia súc | 3
+SILAGE | Cỏ ủ chua trong hầm kín làm thức ăn dự trữ cho bò | 3
 IRRIGATION SYSTEM | Hệ thống tưới nước tự động | 3
 ATTORNEY | Luật sư bào chữa trong tòa án | 2
-INJUNCTION | Lệnh tòa áy cấm một hành động | 3
+INJUNCTION | Lệnh của toà buộc ai đó phải ngừng một hành động | 3
 HABEAS CORPUS | Quyền bảo vệ tự do thân thể | 3
 SUBPOENA | Giấy triệu tập buộc có mặt tòa | 3
 INDICTMENT | Quyết định truy tố bị cáo | 3
@@ -29,7 +29,7 @@ STATUTE | Luật thành văn quy định hành vi | 2
 GAZETTE | Công báo chính thức phát hành | 2
 PRESS | Báo chí phương tiện truyền thông | 1
 MASTHEAD | Phần tiêu đề tên báo ở đầu trang | 2
-SCOOP | Bê tin tức độc quyền trước mọi nơi | 2
+SCOOP | Tin độc quyền một tờ báo đăng trước tất cả các báo khác | 2
 EDITORIAL | Bài xã luận quan điểm của báo | 2
 SYNDICATE | Tổ chức phân phối nội dung báo | 3
 RETRACTION | Xin lỗi hủy bỏ bài báo sai | 3
@@ -48,8 +48,8 @@ ALTIMETER | Dụng cụ đo độ cao máy bay | 3
 YOKE | Cần điều khiển máy bay | 2
 AILERON | Mặt cánh giúp máy bay quay | 3
 RUDDER | Vây lái hướng máy bay | 2
-FLAP | Mặt cánh phụ tăng lực nâng | 2
-SLAT | Mặt cánh trước bộ động cơ | 3
+FLAP | Cánh tà bung ra ở mép sau cánh để tăng lực nâng | 2
+SLAT | Cánh tà phụ bung ra ở mép trước cánh máy bay khi hạ cánh | 3
 NACELLE | Vỏ bao quanh động cơ máy bay | 3
 PYLON | Cấu trúc gắn động cơ vào cánh | 3
 WORKBENCH | Bàn làm việc công nhân nhà máy | 2
@@ -57,7 +57,7 @@ CALIBRATION | Hiệu chuẩn độ chính xác dụng cụ | 3
 MICRON | Đơn vị độ dài siêu nhỏ | 2
 JIGS | Khuôn hỗ trợ định hướng chi tiết | 3
 TOOLING | Tập hợp dụng cụ để sản xuất | 3
-FLUX | Chất kích hoạt mối hàn ròng | 3
+FLUX | Chất trợ dung bôi vào mối hàn cho thiếc bám đều | 3
 NOZZLE | Đầu vòi xịt nước chữa cháy | 2
 BAFFLE | Tấm cản chặn dòng khí hay nước | 3
 HYDRANT | Đầu nối lấy nước cứu hoả công cộng | 2
@@ -73,23 +73,23 @@ EQUITY | Vốn chủ sở hữu công ty | 3
 ANNUITY | Khoản tiền định kỳ từ bảo hiểm | 3
 LIEN | Quyền giữ tài sản để bảo đảm nợ | 3
 DEED | Giấy tờ pháp lý chuyển nhượng | 2
-CHISEL | Dụng cụ chạm chắn gỗ hay đá | 2
+CHISEL | Cái đục lưỡi dẹt, gõ búa vào để khoét gỗ hoặc đá | 2
 MORTISE | Lỗ chữ nhật khoét trên gỗ | 3
 RASP | Dụng cụ mài ráp gồ ghề | 2
 KERF | Vết cắt tạo bởi lưỡi cưa | 3
-VISE | Kìm cặp giữ chặt vật | 2
-CLAMP | Kìm cặp kẹp chặt hai vật | 2
+VISE | Bàn kẹp bắt chặt vào mép bàn thợ để giữ vật | 2
+CLAMP | Cái kẹp vặn ốc để ép chặt hai mảnh dán keo | 2
 FASCIA | Tấm gỗ trang trí mái nhà | 2
 DYE | Chất nhuộm màu cho vải | 1
 LOOM | Máy dệt sợi chỉ thành vải | 2
 TUFT | Chùm lông dệt lên vải | 2
 MILL | Nhà máy chế biến sản phẩm | 1
 BOBBIN | Cuộn dây cho máy dệt | 3
-SHUTTLE | Con chim máy dệt đưa sợi | 3
+SHUTTLE | Con thoi chạy ngang qua lại đưa sợi ngang trên khung dệt | 3
 SPINDLE | Trục quay sợi chỉ quay | 3
 GLAZE | Lớp phủ bóng trên đồ gốm | 2
 KILN | Lò nung cao nhiệt nấu sứ | 2
-ARTISAN | Thợ thủ công lành nghề tay | 2
+ARTISAN | Thợ thủ công lành nghề làm hàng bằng tay | 2
 MOLD | Khuôn hình đổ đúc sản phẩm | 1 | MOULD
 PATINA | Lớp oxy hóa xanh trên đồng | 3
 BURNISH | Đánh bóng bề mặt kim loại | 3
@@ -98,21 +98,21 @@ SMELTING | Quá trình nóng chảy quặng lấy kim loại | 3
 FORGE | Lò nung kim loại để rèn | 2
 CASTING | Đúc kim loại vào khuôn | 2
 WELDING | Hàn nối hai mảnh kim loại | 2
-TEMPERING | Tôi luyện khí cho kim loại | 3
-ANNEALING | Xử lý nhiệt làm mềm kim loại | 3
-POLISH | Đánh bóng mặt bóng | 1
+TEMPERING | Ram thép, nung lại ở nhiệt vừa cho bớt giòn | 3
+ANNEALING | Ủ kim loại rồi làm nguội chậm cho mềm dễ gia công | 3
+POLISH | Chà xát cho bề mặt nhẵn bóng lên | 1
 INSULATION | Vật liệu cách nhiệt điện | 2
 SOLDERING | Hàn mỏng dây dẫn điện | 3
 CONDUIT | Ống dẫn dây điện | 2
-RIVET | Đinh mỏ nối hai tấm kim loại | 2
+RIVET | Đinh tán đóng xuyên rồi tán bẹp đầu để ghép hai tấm kim loại | 2
 TRANSFORMER | Thiết bị biến đổi điện áp | 2
 CAPACITOR | Linh kiện lưu trữ năng lượng điện | 3
 RESISTOR | Linh kiện cản dòng điện | 3
 GASKET | Vòng đệm chặn rò rỉ | 2
 O-RING | Vòng cao su cách nước | 2
 PULLEY | Bánh xe lăn cuốn dây | 2
-BEARING | Ổ trục chảy dầu cảnh | 2
-LEVER | Cần gật nhớp để nâng vật | 1
+BEARING | Ổ bi lắp vào trục cho quay trơn, đỡ ma sát | 2
+LEVER | Đòn bẩy gạt một đầu để nâng vật ở đầu kia | 1
 VALVE | Van xả kiểm soát dòng chất lỏng | 1
 PUMP | Máy bơm nước | 1
 SCAFFOLD | Khung tạm thời để công nhân leo | 2

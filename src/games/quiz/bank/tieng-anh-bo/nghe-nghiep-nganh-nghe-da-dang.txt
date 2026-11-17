@@ -1,13 +1,13 @@
 # Tiếng Anh · Ngành nghề đa dạng
-BARRISTER | Luật sư hành động tại tòa xử lý vụ kiện | 2
-SOLICITOR | Luật sư tư vấn đơn thủ tục pháp lý | 2
+BARRISTER | Luật sư ra tòa tranh tụng theo hệ thống luật Anh | 2
+SOLICITOR | Luật sư tư vấn và soạn giấy tờ, ít khi ra tòa | 2
 COURT CLERK | Thư ký tòa soạn thảo biên bản xét xử | 2
 LEGAL ADVISOR | Cố vấn pháp lý giải thích luật lệ | 2
 SHERIFF | Trưởng cảnh sát hạt giữ gìn trật tự | 2
-CONSTABLE | Cảnh sát lực lượng công an | 1
+CONSTABLE | Cảnh sát cấp thấp nhất tuần tra khu dân cư ở Anh | 1
 SERGEANT | Hạ sĩ cảnh sát quản lý đội ngũ | 2
 INSPECTOR | Thanh tra cảnh sát điều tra tội phạm | 2
-CHIEF | Trưởng công an giám sát tất cả | 1
+CHIEF | Người đứng đầu một sở cảnh sát hoặc một bộ phận | 1
 FIRE CHIEF | Trưởng cứu hoả tổ chức chữa cháy | 2
 COAST GUARD | Nhân viên bảo vệ bờ biển cứu hộ | 2
 ORTHOPEDIST | Bác sĩ chuyên khoa xương khớp | 2
@@ -20,12 +20,12 @@ COLONEL | Đại tá quân hàm cao hơn thiếu tá | 2
 CO-PILOT | Phó phi công giúp phi công lái | 2
 BAGGAGE HANDLER | Nhân viên vận chuyển hành lý | 2 | GROUND CREW
 TICKET AGENT | Nhân viên bán vé máy bay | 2
-STRUCTURAL ENGINEER | Kỹ sư chỉnh cấu trúc kết cấu | 2
+STRUCTURAL ENGINEER | Kỹ sư tính toán kết cấu chịu lực cho công trình | 2
 INTERIOR DESIGNER | Thiết kế viên nội thất nhà ở | 2
-CRANE OPERATOR | Tài xế cơi cẩu nâng hàng | 2
+CRANE OPERATOR | Người ngồi buồng lái điều khiển cần cẩu nâng hàng | 2
 GLAZIER | Thợ lắp kính cửa sổ | 2
 STONEMASON | Thợ tạc đá xây tường | 2
-TILER | Công nhân lát gạch | 1
+TILER | Thợ ốp lát gạch men lên tường và sàn | 1
 STEAM FITTER | Công nhân lắp ống hơi | 2
 PLASTERER | Công nhân trét vữa tường | 2
 SOIL SCIENTIST | Nhà khoa học đất | 2
@@ -33,14 +33,14 @@ APICULTURIST | Nuôi ong lấy mật ong | 2
 GOAT HERDER | Chăn dê trên cao nguyên | 2
 HORSE TRAINER | Huấn luyện viên huấn luyện ngựa | 2
 CATTLE RANCHER | Chủ trang trại nuôi bò | 2
-POULTRY FARMER | Nuôi dạo gia cầm | 2
+POULTRY FARMER | Người nuôi gà vịt lấy trứng và thịt | 2
 WOOD TURNER | Thợ quay gỗ tạo hình | 2
-ARBORIST | Chăm sóc cây chuyên gia | 2
-DYER | Công nhân nhuộm vải | 1
+ARBORIST | Chuyên gia chăm sóc và chữa bệnh cho cây lớn | 2
+DYER | Thợ nhuộm vải thành màu theo yêu cầu | 1
 WEAVER | Thợ dệt vải bằng tay | 2
 LEATHER TANNER | Công nhân thuộc da | 2
-COBBLER | Thợ sửa giày | 2 | SHOEMAKER
-MILLINER | Thợ may mũ | 2
+COBBLER | Thợ ngồi vỉa hè khâu vá và sửa giày dép | 2 | SHOEMAKER
+MILLINER | Thợ chuyên may và tạo dáng mũ cho phụ nữ | 2
 CHEMICAL ENGINEER | Kỹ sư hoá chất | 2
 METALLURGIST | Nhà luyện kim chuyên gia kim loại | 3
 AUTO MECHANIC | Thợ sửa ôtô | 1
@@ -53,10 +53,10 @@ TRAIN DRIVER | Tài xế đầu máy xe lửa | 2
 TRAIN CONDUCTOR | Nhân viên kiểm soát xe lửa | 2
 STEVEDORE | Công nhân bốc dỡ hàng cảng | 2
 LONGSHOREMAN | Công nhân cảng bốc dỡ hàng | 2
-BOATSWAIN | Thuyền phó chỉ huy hạ sĩ | 2
+BOATSWAIN | Thuỷ thủ trưởng phụ trách boong tàu và dây neo | 2
 CHIEF ENGINEER | Kỹ sư trưởng tàu | 2
 DECK OFFICER | Sĩ quan boong tàu | 2
-SUPERCARGO | Cơ trưởng kiểm soát hàng hóa | 2
+SUPERCARGO | Đại diện chủ hàng đi cùng tàu trông coi lô hàng | 2
 PURSER | Thủ quỹ tàu quản lý tiền | 2
 CABIN STEWARD | Nhân viên phục vụ trông nom các phòng ngủ hành khách trên du thuyền | 2
 WEATHER FORECASTER | Dự báo viên thời tiết | 2
@@ -66,33 +66,33 @@ HYDROLOGIST | Nhà thủy văn học | 3
 NEWS CORRESPONDENT | Phóng viên đặc biệt | 2
 SPORTS REPORTER | Phóng viên thể thao | 2
 SOUND ENGINEER | Kỹ sư âm thanh | 2
-TYPESETTER | Người sắp chữ in ấn | 2
+TYPESETTER | Thợ sắp chữ chì thành trang trước khi in | 2
 BOOKBINDER | Thợ đóng sách | 2 | BOOK BINDER
 COPY EDITOR | Biên tập viên sửa bản thảo | 2
 FACT CHECKER | Người kiểm chứng sự kiện | 2
-INDEXER | Người lập chỉ mục sách | 2
-ANNOUNCER | Người dẫn chương trình | 2 | VOICE ANNOUNCER
+INDEXER | Người lập bảng tra cứu từ khoá ở cuối sách | 2
+ANNOUNCER | Người đọc lời giới thiệu trên đài phát thanh hoặc truyền hình | 2 | VOICE ANNOUNCER
 MUSIC PRODUCER | Nhà sản xuất nhạc | 2
 RADIO HOST | Dẫn chương trình phát thanh | 2
 CORRESPONDENT | Phóng viên báo | 2
 PRESS OFFICER | Viên chức liên lạc báo chí | 2
 SPEECH WRITER | Người viết diễn văn | 2
 COPYWRITER | Viết quảng cáo bán hàng | 2
-CENSUS TAKER | Nhân viên tổng điều tra | 2
+CENSUS TAKER | Nhân viên đi từng nhà ghi số liệu tổng điều tra dân số | 2
 REGISTRAR | Người lập sổ đăng ký | 2
 TAX COLLECTOR | Nhân viên thu thuế | 2
-BOOKKEEPER | Người quản lý sổ cái | 1
+BOOKKEEPER | Người ghi chép sổ sách thu chi hằng ngày của doanh nghiệp | 1
 OFFICE MANAGER | Quản lý văn phòng | 2
 PERSONAL ASSISTANT | Trợ lý cá nhân | 2
 CAREER COUNSELOR | Tư vấn viên sự nghiệp | 2
 THERAPIST | Nhà trị liệu tâm lý | 2
-YOUTH WORKER | Công nhân thanh thiếu niên | 2
+YOUTH WORKER | Nhân viên công tác xã hội chuyên làm việc với thanh thiếu niên | 2
 FUNDRAISER | Người quyên góp tiền từ thiện | 2
 GRANT WRITER | Người viết đơn xin hỗ trợ | 2
-PRISON GUARD | Nhân viên cảm giữ nhà tù | 2
+PRISON GUARD | Nhân viên canh giữ phạm nhân trong trại giam | 2
 PAROLE OFFICER | Viên chức phóng thích có điều kiện | 2
-MARSHAL | Tướng công an | 1
-DEPUTY | Phó viên chính quyền | 1
+MARSHAL | Cảnh sát trưởng liên bang Mỹ áp giải tội phạm | 1
+DEPUTY | Phó cảnh sát trưởng, cấp dưới trực tiếp của sheriff | 1
 WARDEN | Giám đốc nhà tù | 2
 FORENSIC PATHOLOGIST | Bác sĩ pháp y | 2
 FINGERPRINT EXPERT | Chuyên gia vân tay | 2
@@ -102,7 +102,7 @@ HOSTAGE NEGOTIATOR | Người thương lượng con tin | 2
 BOMB TECHNICIAN | Kỹ thuật viên xử lý bom | 2
 DOG HANDLER | Huấn luyện viên chó cảnh sát | 2
 POLICE DISPATCHER | Điều độ cảnh sát | 2
-PRIVATE INVESTIGATOR | Thám tư tư nhân | 2
+PRIVATE INVESTIGATOR | Thám tử tư nhận điều tra thuê cho khách hàng | 2
 FRAUD INVESTIGATOR | Điều tra viên gian lận | 2
 BOUNTY HUNTER | Thợ bắt trốn truy nã | 2
 ARMED GUARD | Canh gác có vũ trang | 2
@@ -111,24 +111,24 @@ PARKING ATTENDANT | Nhân viên canh giữ bãi đỗ xe | 2
 METER READER | Nhân viên đọc đồng hồ | 2
 SANITATION WORKER | Công nhân vệ sinh thành phố | 2
 STREET SWEEPER | Người quét đường | 1
-CUSTODIAN | Quản trị viên toà nhà | 2
+CUSTODIAN | Người trông coi và bảo trì một toà nhà | 2
 TREE TRIMMER | Thợ cắt tỉa cây | 2
-TREE SURGEON | Bác sĩ cây chuyên cứu hộ cây | 2
+TREE SURGEON | Thợ leo cắt tỉa và chữa cây cổ thụ bị bệnh | 2
 PARK RANGER | Quản lý viên công viên | 2
-GAME WARDEN | Quản lý viên bảo vệ lâm | 2
+GAME WARDEN | Kiểm lâm canh giữ động vật hoang dã khỏi săn trộm | 2
 COAL MINER | Thợ đào than | 1
 PETROLEUM ENGINEER | Kỹ sư dầu khí | 2
 STOCK CLERK | Thư ký kho | 2
 CUSTOMS BROKER | Môi giới hải quan | 2
 FREIGHT FORWARDER | Nhân viên chuyển tiếp hàng | 2
-RIGGER | Thợ xây dựng giàn tàu | 2
+RIGGER | Thợ lắp dây cáp và giàn treo để nâng vật nặng | 2
 SHIPWRIGHT | Thợ xây tàu gỗ | 2
-OUTFITTER | Nhân viên trang bị tàu | 2
-HARBOR MASTER | Bộ chỉ huy cảng | 2
+OUTFITTER | Người cung cấp trang bị cho chuyến đi săn hoặc thám hiểm | 2
+HARBOR MASTER | Người điều phối tàu ra vào và neo đậu trong cảng | 2
 HARBOR PILOT | Hoa tiêu cảng | 2
 COMMERCIAL DIVER | Thợ lặn chuyên nghiệp | 2
 UNDERWATER WELDER | Thợ hàn dưới nước | 2
-SALVAGE EXPERT | Chuyên gia cứu vớt | 2
+SALVAGE EXPERT | Chuyên gia trục vớt tàu đắm và hàng hoá chìm | 2
 WRECK DIVER | Thợ lặn xác tàu | 2
 SHIP BROKER | Môi giới tàu biển | 2
 NAVAL ARCHITECT | Kiến trúc sư hàng hải | 2
@@ -145,7 +145,7 @@ SUBCONTRACTOR | Nhà thầu phụ | 2
 PROJECT MANAGER | Quản lý dự án | 2
 COST ESTIMATOR | Nhân viên định giá chi phí | 2
 LANDSCAPE ARCHITECT | Kiến trúc sư cảnh quan | 2
-IPM | Chuyên gia quản lý côn trùng toàn bộ | 3 | IPM SPECIALIST
+IPM | Phương pháp quản lý dịch hại tổng hợp, viết tắt ba chữ | 3 | IPM SPECIALIST
 WELL DRILLER | Công nhân khoan giếng | 2
 INSURANCE AGENT | Đại lý bảo hiểm | 2
 CLAIM ADJUSTER | Giải quyết viên yêu cầu bảo hiểm | 2

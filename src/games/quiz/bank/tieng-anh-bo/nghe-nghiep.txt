@@ -1,5 +1,5 @@
 # Tiếng Anh · Nghề nghiệp, đời sống
-SOLDIER | Người người lính bộ đội cầm súng bảo vệ quê hương | 1
+SOLDIER | Người lính bộ đội cầm súng bảo vệ quê hương | 1
 GUARDSMAN | Người lính cận vệ đứng gác canh giữ cổng cung điện hoàng gia | 2
 PARAMEDIC | Nhân viên y tế cấp cứu khẩn cấp trên xe cứu thương | 2
 BARISTA | Thợ pha chế cà phê điêu luyện vẽ hình bọt sữa latte | 2
@@ -13,7 +13,7 @@ ACTUARY | Chuyên gia định phí bảo hiểm và tính toán rủi ro tài ch
 SOMMELIER | Chuyên gia nếm thử và tư vấn rượu vang tại nhà hàng 5 sao | 3
 TAXONOMIST | Nhà phân loại học chuyên định danh và sắp xếp các loài sinh vật | 4
 PHILANTHROPIST | Nhà từ thiện quyên góp hàng triệu đô giúp đỡ người nghèo | 3
-POLICEMAN | Chiến sĩ cảnh sát bảo vệ trật tự an ninh | 1 | POLICE, POLICE OFFICER
+POLICEMAN | Chiến sĩ cảnh sát bảo vệ trật tự an ninh | 1 | POLICE OFFICER
 BARBER | Thợ cắt tóc nam tạo kiểu tóc | 1
 GARDENER | Người làm vườn chăm sóc hoa cỏ cây cối | 1
 FISHERMAN | Ngư dân quăng lưới đánh bắt cá trên biển | 1
