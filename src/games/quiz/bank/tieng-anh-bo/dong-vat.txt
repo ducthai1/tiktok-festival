@@ -58,7 +58,7 @@ BURROW | Hang đào (hang thỏ) | 3
 FLOCK | Đàn chim, đàn cừu | 3
 HERD | Đàn bò, đàn voi | 3
 SWARM | Đàn ong (bầy côn trùng bay) | 3
-HIBERNATE | Ngủ đông | 2
+HIBERNATE | Động từ chỉ việc con vật ngủ suốt mùa đông | 2
 NOCTURNAL | Hoạt động về đêm | 3
 MAMMAL | Động vật có vú | 2
 REPTILE | Loài bò sát | 2
@@ -401,12 +401,12 @@ THUNDER | Tiếng sấm | 2
 LIGHTNING | Tia chớp, tia sét | 3 | LIGHTNING BOLT, THUNDERBOLT
 FOG | Sương mù | 2
 ICE | Băng (nước đá) | 1
-HAIL | Mưa đá | 3 | HAILSTONE, HAILSTONES
+HAIL | Những hạt băng rơi xuống thay cho hạt mưa | 3 | HAILSTONE, HAILSTONES
 DRIZZLE | Mưa phùn | 3
 TORNADO | Lốc xoáy, vòi rồng | 2 | TWISTER, WHIRLWIND
 FLOOD | Lũ lụt | 2 | FLOODS
 DROUGHT | Hạn hán | 3
-SUNSHINE | Ánh nắng mặt trời | 1 | SUNLIGHT
+SUNSHINE | Ánh nắng mặt trời | 1
 SUNRISE | Bình minh (lúc mặt trời mọc) | 2 | DAYBREAK
 SUNSET | Hoàng hôn (lúc mặt trời lặn) | 2 | SUNDOWN
 RAINDROP | Giọt mưa | 2 | RAINDROPS
@@ -448,8 +448,8 @@ TSUNAMI | Sóng thần | 2 | TIDAL WAVE
 LANDSLIDE | Sạt lở đất | 3 | MUDSLIDE, LANDSLIP
 ENVIRONMENT | Môi trường | 2
 POLLUTION | Sự ô nhiễm | 2
-RECYCLE | Tái chế | 2 | RECYCLING
-TRASH | Rác thải | 2 | GARBAGE, LITTER
+RECYCLE | Tái chế | 2
+TRASH | Rác sinh hoạt gom vào thùng mang đi đổ | 2 | GARBAGE, LITTER
 PLASTIC | Nhựa (chất liệu nhựa) | 2 | PLASTICS
 CLIMATE CHANGE | Biến đổi khí hậu | 3
 GLOBAL WARMING | Sự nóng lên toàn cầu | 3

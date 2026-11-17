@@ -174,7 +174,7 @@ CRASH | Bị sập, bị treo (ứng dụng) | 2 | HANG
 DIGITAL | Kỹ thuật số | 2
 INVENT | Phát minh (động từ) | 2 | CREATE
 SATELLITE | Vệ tinh | 2
-E-WALLET | Ví điện tử | 2 | EWALLET
+E-WALLET | Ví điện tử viết tắt có gạch nối ở đầu | 2 | EWALLET
 SPAM | Thư rác | 2 | JUNK MAIL, JUNK
 SCAM | Lừa đảo qua mạng | 2 | FRAUD
 FREE TRIAL | Dùng thử miễn phí | 2
@@ -209,7 +209,7 @@ PROJECTOR | Máy chiếu | 2
 HARD DRIVE | Ổ cứng | 2 | HARD DISK, HDD
 POWER BANK | Sạc dự phòng | 1 | PORTABLE CHARGER
 SMARTWATCH | Đồng hồ thông minh | 1 | SMART WATCH
-EARBUDS | Tai nghe nhét tai | 2
+EARBUDS | Cặp tai nghe không dây nhỏ xíu nhét vừa lỗ tai | 2
 GAME CONSOLE | Máy chuyên để chơi game, cắm vào ti vi hoặc cầm tay | 2
 VIDEO GAME | Trò chơi chạy trên máy tính hoặc máy chơi game | 1
 SEARCH | Tìm kiếm trên mạng | 1 | LOOK UP

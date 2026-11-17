@@ -74,7 +74,7 @@ GEOGRAPHY | Môn địa lý | 2
 PHYSICS | Môn vật lý | 2
 BIOLOGY | Môn sinh học | 2
 LITERATURE | Môn văn học | 2
-PE | Môn thể dục | 2 | PHYSICAL EDUCATION, GYM
+PE | Môn thể dục | 2 | PHYSICAL EDUCATION
 SUBJECT | Môn học (toán, văn, sử…) | 2 | SUBJECTS
 INFORMATICS | Môn học về máy tính và xử lý thông tin trong trường | 3 | IT, ICT, COMPUTER SCIENCE
 HOMEWORK | Bài tập về nhà | 1
@@ -111,9 +111,9 @@ CHEF | Bếp trưởng đứng đầu gian bếp nhà hàng | 2
 ACTOR | Người đóng vai trong phim hoặc trên sân khấu | 2
 LAWYER | Người hành nghề luật nói chung, tư vấn và soạn hợp đồng | 2
 FIREFIGHTER | Lính cứu hoả | 2 | FIREMAN
-ARTIST | Hoạ sĩ | 2 | PAINTER
+ARTIST | Hoạ sĩ | 2
 WRITER | Nhà văn | 2 | AUTHOR, NOVELIST
-WAITER | Người bưng bê phục vụ khách tại bàn trong quán ăn | 2 | WAITRESS
+WAITER | Người bưng bê phục vụ khách tại bàn trong quán ăn | 2
 POSTMAN | Người đưa thư | 2 | MAILMAN, POSTWOMAN, MAIL CARRIER, POSTAL WORKER
 SCIENTIST | Nhà khoa học | 2
 JOURNALIST | Nhà báo | 3 | REPORTER
@@ -175,7 +175,7 @@ ASTRONAUT | Người mặc bộ đồ kín bay lên không gian làm nhiệm v�
 DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán | 3
 PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý | 3
 PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần | 3
-VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2 | VET
+VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2
 ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao | 3
 THESIS | Luận văn sinh viên hoặc thạc sĩ nộp để tốt nghiệp | 3
 METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày | 3

@@ -5,7 +5,7 @@ GOALKEEPER | Thủ môn | 1 | GOALIE, KEEPER
 DEFENDER | Hậu vệ | 1
 STRIKER | Tiền đạo cắm săn bàn, đứng cao nhất trên hàng công | 1
 CAPTAIN | Cầu thủ đeo băng, thay mặt đội nói chuyện với trọng tài | 1
-COACH | Người trực tiếp dạy kỹ chiến thuật trên sân tập | 1 | TRAINER
+COACH | Người trực tiếp dạy kỹ chiến thuật trên sân tập | 1
 REFEREE | Trọng tài | 1 | REF
 FAN | Người hâm mộ nói chung, mê đội hoặc mê cầu thủ | 1 | FANS, SUPPORTERS
 STADIUM | Sân vận động ngoài trời có khán đài vây quanh | 1
@@ -33,7 +33,7 @@ MEDAL | Huy chương | 1
 FINAL | Trận chung kết | 1
 WORLD CUP | Giải vô địch bóng đá thế giới | 1
 MATCH | Trận đấu | 1
-TRAINING | Buổi tập luyện | 1 | PRACTICE
+TRAINING | Buổi tập luyện | 1
 SKILL | Kỹ thuật cá nhân | 1 | TECHNIQUE, SKILLS
 TALENT | Tài năng | 1
 NATIONAL TEAM | Đội tuyển quốc gia | 1

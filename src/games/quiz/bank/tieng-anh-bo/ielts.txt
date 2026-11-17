@@ -111,7 +111,7 @@ UNIVERSITY | Trường đại học | 1 | COLLEGE
 ONLINE LEARNING | Học trực tuyến | 1 | E-LEARNING, ONLINE COURSE
 MEDIA | Truyền thông (báo, đài) | 1 | MASS MEDIA
 SOCIAL MEDIA | Mạng xã hội | 1 | SOCIAL NETWORK
-WASTE | Rác thải | 1 | GARBAGE
+WASTE | Thứ bỏ đi sau khi dùng, cũng là động từ lãng phí | 1 | GARBAGE
 TOURISM | Ngành du lịch | 1
 COMMUNITY | Cộng đồng | 1
 SOCIETY | Xã hội | 1
@@ -222,7 +222,7 @@ EXACERBATE | Làm trầm trọng thêm | 3 | WORSEN
 SUBSTANTIATE | Chứng minh, xác minh | 3
 MITIGATE | Làm giảm mức độ nghiêm trọng của rủi ro hay thiệt hại | 3 | LESSEN
 AMELIORATE | Từ trang trọng chỉ làm dịu bớt một tình trạng tồi tệ | 3 | BETTER
-PARADIGM | Mô hình, mẫu hình | 3 | MODEL, PATTERN
+PARADIGM | Mô hình, mẫu hình | 3 | PATTERN
 COMPREHENSIVE | Toàn diện, bao quát | 3 | THOROUGH, COMPLETE
 COGNITIVE | Thuộc về nhận thức | 3 | MENTAL
 DEMOGRAPHIC | Nhân khẩu học (thông tin dân số) | 3 | DEMOGRAPHICS

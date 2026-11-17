@@ -13,7 +13,7 @@ FOOD TOUR | Chuyến hành trình du lịch khám phá và thưởng thức các
 SINGLE ROOM | Phòng đơn | 1
 DO NOT DISTURB | Xin đừng làm phiền | 2
 FULLY BOOKED | Hết phòng | 2 | NO VACANCY
-BELLBOY | Nhân viên xách hành lý khách sạn | 3 | BELLHOP, PORTER
+BELLBOY | Nhân viên xách hành lý khách sạn | 3 | BELLHOP
 VALET | Nhân viên nhận xe của khách rồi đem đi đỗ hộ | 3
 TOURIST TRAP | Nơi chặt chém khách du lịch | 3
 RIP-OFF | Giá cắt cổ (bị chặt chém) | 3 | RIPOFF, OVERCHARGE
@@ -164,7 +164,7 @@ AQUARIUM | Thuỷ cung kính ngắm đàn cá bơi lội | 1 | OCEANARIUM
 AMUSEMENT PARK | Công viên giải trí có đu quay tàu lượn | 1 | THEME PARK
 SOUVENIR | Món quà lưu niệm kỷ niệm vùng đất đã đến | 1 | MEMENTO
 POSTCARD | Tấm bưu thiếp in phong cảnh gửi người thân | 1 | POST CARD
-TOUR GUIDE | Hướng dẫn viên du lịch giới thiệu thắng cảnh | 1 | GUIDE
+TOUR GUIDE | Hướng dẫn viên du lịch giới thiệu thắng cảnh | 1
 ITINERARY | Lịch trình tour du lịch từng ngày chi tiết | 2 | TRAVEL PLAN
 TOURIST | Người đi chơi ngắn ngày ở một điểm tham quan | 1 | SIGHTSEER
 TRAVELER | Người đi xa nhiều nơi, không nhất thiết để chơi | 1 | TRAVELLER, VOYAGER
@@ -317,7 +317,7 @@ HELMET | Mũ bảo hiểm (đội khi đi xe máy) | 2 | CRASH HELMET
 TRAFFIC JAM | Kẹt xe, tắc đường | 3 | TRAFFIC CONGESTION, GRIDLOCK
 SEAT BELT | Dây vắt chéo ngực phải cài khi ngồi ô tô hoặc máy bay | 3 | SEATBELT, SAFETY BELT
 CYCLO | Xe ba bánh kiểu Việt Nam, khách ngồi trước người đạp | 3 | PEDICAB, CYCLE RICKSHAW, TRISHAW
-TRAVEL | Động từ chỉ việc đi tới một nơi xa | 1 | TRAVELING, TRAVELLING
+TRAVEL | Động từ chỉ việc đi tới một nơi xa | 1 | TRAVELING
 PHOTO | Bức ảnh chụp | 1 | PICTURE, PHOTOGRAPH, PIC
 TRIP | Chuyến đi ngắn rồi quay về | 2 | JOURNEY, TOUR
 ABROAD | Ở nước ngoài (đi nước ngoài) | 3 | OVERSEAS

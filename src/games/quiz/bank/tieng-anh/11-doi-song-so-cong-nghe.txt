@@ -4,14 +4,14 @@ REPOST | Đăng lại (bài người khác) | 1 | RESHARE
 CAPTION | Dòng chữ chú thích đính kèm bên dưới bức ảnh hoặc bài đăng | 1
 NEWSFEED | Bảng tin (trang chủ mạng xã hội) | 2 | NEWS FEED, FEED
 WEARABLE | Thiết bị đeo được (đồng hồ thông minh…) | 2
-EARPHONE | Tai nghe nhét tai | 1 | EARBUD
+EARPHONE | Một bên tai nghe nhét lỗ tai, dạng số ít | 1 | EARBUD
 CURSOR | Con trỏ chuột | 1
 SYNC | Đồng bộ (dữ liệu) | 2 | SYNCHRONIZE
 UNINSTALL | Gỡ cài đặt | 1
 DIGITAL FOOTPRINT | Dấu vết số (trên mạng) | 3
 CYBERBULLYING | Bắt nạt trên mạng | 2
 E-COMMERCE | Thương mại điện tử | 2 | ECOMMERCE
-DIGITAL WALLET | Ví điện tử | 2
+DIGITAL WALLET | Ví điện tử nói chung, tên gọi đầy đủ hai từ | 2
 QR CODE | Mã QR | 1
 FACIAL RECOGNITION | Nhận diện khuôn mặt | 2 | FACE RECOGNITION
 CONTENT CREATOR | Người sáng tạo nội dung | 1

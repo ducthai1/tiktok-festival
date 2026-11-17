@@ -80,12 +80,12 @@ MEETING | Cuộc họp | 1
 SALARY | Tiền lương | 1 | WAGE, WAGES
 COMPANY | Tổ chức kinh doanh nói chung, to nhỏ gì cũng gọi vậy | 1 | BUSINESS
 CUSTOMER | Khách hàng | 1
-EMPLOYEE | Nhân viên (người làm công) | 1 | STAFF
+EMPLOYEE | Nhân viên (người làm công) | 1
 OFFICE | Văn phòng | 1
 DEADLINE | Thời điểm cuối cùng phải nộp xong công việc | 1
 REPORT | Bản báo cáo | 1
 PRICE | Giá bán | 1 | COST
-DISCOUNT | Giảm giá (chiết khấu) | 1 | SALE, MARKDOWN
+DISCOUNT | Giảm giá (chiết khấu) | 1 | MARKDOWN
 ORDER | Yêu cầu mua hàng khách đặt với người bán | 1
 DELIVERY | Việc giao hàng | 1 | SHIPPING
 PRODUCT | Sản phẩm | 1 | GOODS
@@ -131,7 +131,7 @@ ACCOUNTANT | Kế toán viên | 2
 RECEPTIONIST | Nhân viên lễ tân | 2
 APPLICANT | Người vừa nộp hồ sơ xin việc, chưa qua vòng nào | 2
 RESUME | Bản tóm tắt kinh nghiệm làm việc 1-2 trang, cách người Mỹ gọi | 2
-HIRE | Tuyển dụng, thuê người | 2 | RECRUIT, EMPLOY
+HIRE | Tuyển dụng, thuê người | 2 | EMPLOY
 RESIGN | Xin nghỉ việc, từ chức | 2
 RETIRE | Nghỉ hưu | 2
 WORKSHOP | Buổi hội thảo thực hành | 2
@@ -165,7 +165,7 @@ MARKETING | Ngành tiếp thị | 2
 CATALOG | Danh mục sản phẩm (cuốn giới thiệu hàng) | 2 | CATALOGUE
 SAMPLE | Hàng mẫu | 2 | SPECIMEN
 PURCHASE | Mua (cách nói trang trọng) | 2
-LANDLORD | Chủ nhà cho thuê | 2 | LANDLADY, OWNER
+LANDLORD | Chủ nhà cho thuê | 2 | LANDLADY
 CONSTRUCTION | Việc xây dựng | 2 | BUILDING
 REGULATION | Quy định | 2 | RULE, RULES, REGULATIONS
 POLICY | Chính sách (công ty) | 2

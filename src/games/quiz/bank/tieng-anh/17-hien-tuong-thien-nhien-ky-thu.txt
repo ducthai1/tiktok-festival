@@ -17,7 +17,7 @@ OZONE | Tầng ô-dôn | 2 | OZONE LAYER
 MIGRATION | Sự di cư | 2
 CURRENT | Dòng hải lưu (dòng chảy) | 2 | OCEAN CURRENT
 TIDAL | Thuộc thủy triều | 2
-HAILSTORM | Mưa đá | 2
+HAILSTORM | Trận mưa trút xuống toàn hạt băng cứng | 2
 STALAGMITE | Măng đá (trong hang) | 3
 DELTA | Châu thổ | 2
 FJORD | Vịnh hẹp băng hà | 3

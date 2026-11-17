@@ -182,7 +182,7 @@ MARS COLONY | Thuộc địa Sao Hỏa | 2
 TERRAFORM | Biến đổi hành tinh | 3
 SPACE ELEVATOR | Thang máy vũ trụ | 3
 SOLAR SAIL | Buồm năng lượng mặt trời | 3
-HIBERNATION | Ngủ đông | 2
+HIBERNATION | Danh từ chỉ giai đoạn ngủ vùi qua mùa đông | 2
 LIFE SUPPORT SYSTEM | Hệ thống duy trì sự sống | 2
 BIOSPHERE | Sinh quyển | 2
 ASTROBIOLOGY | Sinh vật học vũ trụ | 3

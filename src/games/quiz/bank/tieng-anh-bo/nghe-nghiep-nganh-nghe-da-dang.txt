@@ -39,7 +39,7 @@ ARBORIST | Chuyên gia chăm sóc và chữa bệnh cho cây lớn | 2
 DYER | Thợ nhuộm vải thành màu theo yêu cầu | 1
 WEAVER | Thợ dệt vải bằng tay | 2
 LEATHER TANNER | Công nhân thuộc da | 2
-COBBLER | Thợ ngồi vỉa hè khâu vá và sửa giày dép | 2 | SHOEMAKER
+COBBLER | Thợ ngồi vỉa hè khâu vá và sửa giày dép | 2
 MILLINER | Thợ chuyên may và tạo dáng mũ cho phụ nữ | 2
 CHEMICAL ENGINEER | Kỹ sư hoá chất | 2
 METALLURGIST | Nhà luyện kim chuyên gia kim loại | 3
