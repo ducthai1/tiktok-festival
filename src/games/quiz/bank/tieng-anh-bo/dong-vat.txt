@@ -214,7 +214,6 @@ STINGRAY | Cá đuối kim tiếng Anh là gì? | 2
 SAWFISH | Cá lưỡi rưỡi tiếng Anh là gì? | 2
 ANGLERFISH | Cá đèn biển sâu tiếng Anh là gì? | 2
 SEAHORSE | Cá ngựa tiếng Anh là gì? | 1
-CATFISH | Cá trê tiếng Anh là gì? | 1
 PIRANHA | Cá piá ăn thịt tiếng Anh là gì? | 2
 SUNFISH | Cá mặt trời bè tiếng Anh là gì? | 2
 GUPPY | Cá guppies nhỏ tiếng Anh là gì? | 1
@@ -222,15 +221,11 @@ TETRA | Cá bé đỏ, sống bể cảnh tiếng Anh là gì? | 2
 GOLDFISH | Cá vàng nuôi tiếng Anh là gì? | 1
 KOI | Giống cá chép cảnh nhiều màu rực rỡ bơi đàn trong hồ nước của Nhật Bản tiếng Anh là gì? | 1
 STURGEON | Cá tầm, trứng caviar tiếng Anh là gì? | 2
-EEL | Cá lươn tiếng Anh là gì? | 1
 LAMPREY | Cá roi hút máu tiếng Anh là gì? | 2
 COD | Cá tuyết tiếng Anh là gì? | 1
 HALIBUT | Cá bơn biển tiếng Anh là gì? | 2
 FLOUNDER | Cá bơn tiếng Anh là gì? | 2
-SARDINE | Cá mòi nhỏ tiếng Anh là gì? | 1
 HERRING | Cá sơn tiếng Anh là gì? | 1
-ANCHOVY | Cá cơm tiếng Anh là gì? | 1
-TUNA | Cá ngừ tiếng Anh là gì? | 1
 MARLIN | Cá kiếm biển tiếng Anh là gì? | 2
 BARRACUDA | Cá ròng tiếng Anh là gì? | 2
 BASS | Cá vược tiếng Anh là gì? | 1
@@ -238,16 +233,10 @@ PERCH | Cá rô phi tiếng Anh là gì? | 1
 PIKE | Cá rô phi tiếng Anh là gì? | 1
 BREAM | Cá chuối tiếng Anh là gì? | 2
 CRAB | Cua tiếng Anh là gì? | 1
-LOBSTER | Tôm lớn tiếng Anh là gì? | 1
-SHRIMP | Tôm tiếng Anh là gì? | 1
 PRAWN | Tôm lớn tiếng Anh là gì? | 1
-SCALLOP | Sò dẹp tiếng Anh là gì? | 2
-OYSTER | Hàu tiếng Anh là gì? | 1
-MUSSEL | Trai tiếng Anh là gì? | 1
 CLAM | Sò tiếng Anh là gì? | 1
 SNAIL | Ốc sên tiếng Anh là gì? | 1
 SLUG | Ốc không vỏ tiếng Anh là gì? | 1
-SQUID | Mực tiếng Anh là gì? | 1
 OCTOPUS | Bạch tuộc tiếng Anh là gì? | 1
 ANEMONE | Hoa hải quỳ tiếng Anh là gì? | 2
 CORAL | San hô tiếng Anh là gì? | 1
@@ -274,7 +263,6 @@ HOMEOTHERM | Nhiệt độ lâu tiếng Anh là gì? | 3
 PREDATION | Hành động ăn thịt tiếng Anh là gì? | 2
 SCAVENGER | Động vật ăn cặn tiếng Anh là gì? | 2
 GRAZER | Động vật cỏ tiếng Anh là gì? | 2
-BROWSER | Động vật lá tiếng Anh là gì? | 2
 FORAGE | Tìm kiếm thức ăn tiếng Anh là gì? | 2
 TERRITORY | Lãnh địa bảo vệ tiếng Anh là gì? | 2
 DOMINANCE | Quyền thống trị bầy tiếng Anh là gì? | 2
@@ -287,7 +275,6 @@ CHRYSALIS | Vỏ biến hóa bươm tiếng Anh là gì? | 2
 IMAGO | Dạng trưởng thành côn trùng tiếng Anh là gì? | 3
 NYMPH | Dạng nửa trưởng côn trùng tiếng Anh là gì? | 2
 THORAX | Ngực côn trùng tiếng Anh là gì? | 2
-ABDOMEN | Bụng con vật tiếng Anh là gì? | 2
 MANDIBLE | Hàm dưới tiếng Anh là gì? | 2
 PROBOSCIS | Mỏ hút thức ăn tiếng Anh là gì? | 2
 ANTENNA | Ăng ten cảm tiếng Anh là gì? | 1
@@ -383,7 +370,6 @@ PLANT | Thực vật (cây cỏ nói chung) tiếng Anh là gì? | 1 | PLANTS
 LEAF | Chiếc lá tiếng Anh là gì? | 1 | LEAVES
 GRASS | Cỏ (bãi cỏ) tiếng Anh là gì? | 1 | LAWN
 ROOT | Rễ cây tiếng Anh là gì? | 2 | ROOTS
-BRANCH | Cành cây tiếng Anh là gì? | 2 | BRANCHES, TWIG, TWIGS
 SEED | Hạt giống tiếng Anh là gì? | 2 | SEEDS
 ROSE | Hoa hồng tiếng Anh là gì? | 1 | ROSES
 LOTUS | Hoa sen tiếng Anh là gì? | 2 | LOTUS FLOWER
@@ -424,7 +410,6 @@ DRIZZLE | Mưa phùn tiếng Anh là gì? | 3
 TORNADO | Lốc xoáy, vòi rồng tiếng Anh là gì? | 2 | TWISTER, WHIRLWIND
 FLOOD | Lũ lụt tiếng Anh là gì? | 2 | FLOODS, FLOODING
 DROUGHT | Hạn hán tiếng Anh là gì? | 3
-TEMPERATURE | Nhiệt độ tiếng Anh là gì? | 2
 SUNSHINE | Ánh nắng mặt trời tiếng Anh là gì? | 1 | SUNLIGHT
 SUNRISE | Bình minh (lúc mặt trời mọc) tiếng Anh là gì? | 2 | DAWN, DAYBREAK
 SUNSET | Hoàng hôn (lúc mặt trời lặn) tiếng Anh là gì? | 2 | SUNDOWN, DUSK
@@ -437,7 +422,6 @@ SPRING | Mùa xuân tiếng Anh là gì? | 1 | SPRINGTIME
 SUMMER | Mùa hè tiếng Anh là gì? | 1 | SUMMERTIME
 AUTUMN | Mùa thu tiếng Anh là gì? | 1 | FALL
 WINTER | Mùa đông tiếng Anh là gì? | 1 | WINTERTIME
-SEASON | Mùa (xuân, hạ, thu, đông) tiếng Anh là gì? | 1 | SEASONS
 RAINY SEASON | Mùa mưa tiếng Anh là gì? | 2 | WET SEASON, MONSOON SEASON, MONSOON
 DRY SEASON | Mùa khô tiếng Anh là gì? | 2
 NATURE | Thiên nhiên tiếng Anh là gì? | 1

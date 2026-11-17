@@ -56,7 +56,6 @@ WORKBENCH | Bàn làm việc công nhân nhà máy tiếng Anh là gì? | 2
 CALIBRATION | Hiệu chuẩn độ chính xác dụng cụ tiếng Anh là gì? | 3
 MICRON | Đơn vị độ dài siêu nhỏ tiếng Anh là gì? | 2
 JIGS | Khuôn hỗ trợ định hướng chi tiết tiếng Anh là gì? | 3
-PROTOTYPE | Mẫu thử đầu tiên sản phẩm tiếng Anh là gì? | 2
 TOOLING | Tập hợp dụng cụ để sản xuất tiếng Anh là gì? | 3
 FLUX | Chất kích hoạt mối hàn ròng tiếng Anh là gì? | 3
 NOZZLE | Đầu vòi xịt nước chữa cháy tiếng Anh là gì? | 2

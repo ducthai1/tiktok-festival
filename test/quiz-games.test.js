@@ -10,6 +10,7 @@ import {
 import {
   createQuizGame, ENERGY_GOLDEN, ENERGY_LIGHTNING, FOLLOW_GOAL, FOLLOW_POINTS, POINTS, SHARE_ENERGY, SHARE_ENERGY_MAX_PER_USER, scoreWordle
 } from '../src/games/quiz/quiz-game.js';
+import { foldText } from '../public/shared/profanity-filter.js';
 import { createFollowerStore } from '../src/live/follower-store.js';
 import { normalizeConnectorEvent } from '../src/live/normalize-tiktok-connector.js';
 import { sanitizeLiveEvent } from '../src/live/live-event-schema.js';
@@ -33,6 +34,19 @@ test('quiz: every tab is registered in the hub and allowed as START_GAME', () =>
     assert.ok(ids.includes(id), id);
     assert.ok(GAME_IDS.includes(id), id);
   }
+});
+
+test('english sets: a word lives in exactly one gift set (luật ở docs/bank-trung-cheo.md)', () => {
+  const owner = new Map();
+  for (const [id, list] of Object.entries(loadEnglishSets())) {
+    for (const q of list) {
+      const key = foldText(q.answer);
+      const prev = owner.get(key);
+      assert.equal(prev, undefined, `"${q.answer}" nằm ở cả ${prev} lẫn ${id}`);
+      owner.set(key, id);
+    }
+  }
+  assert.ok(owner.size > 6000, `chỉ còn ${owner.size} từ`);
 });
 
 test('quiz banks: every question is answerable and A/B/C/D options are distinct', () => {

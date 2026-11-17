@@ -91,13 +91,10 @@ HEADPHONES | Tai nghe tiếng Anh là gì? | 1 | HEADPHONE, HEADSET, EARPHONES
 CHARGER | Củ sạc, bộ sạc tiếng Anh là gì? | 1
 BATTERY | Viên pin tiếng Anh là gì? | 1
 CABLE | Dây cáp tiếng Anh là gì? | 1 | WIRE, CORD
-ONLINE | Trực tuyến tiếng Anh là gì? | 1
 DOWNLOAD | Tải xuống tiếng Anh là gì? | 1
 UPLOAD | Tải lên tiếng Anh là gì? | 1
 INSTALL | Cài đặt phần mềm (động từ) tiếng Anh là gì? | 1
-UPDATE | Cập nhật tiếng Anh là gì? | 1 | UPGRADE
 DELETE | Xoá dữ liệu tiếng Anh là gì? | 1 | REMOVE, ERASE
-SAVE | Lưu (tệp) tiếng Anh là gì? | 1
 COPY | Sao chép tiếng Anh là gì? | 1
 PASTE | Dán (sau khi sao chép) tiếng Anh là gì? | 1
 LOG IN | Đăng nhập tiếng Anh là gì? | 1 | LOGIN, SIGN IN
@@ -106,7 +103,6 @@ SIGN UP | Đăng ký tài khoản tiếng Anh là gì? | 1 | REGISTER
 ACCOUNT | Tài khoản tiếng Anh là gì? | 1
 PASSWORD | Mật khẩu tiếng Anh là gì? | 1 | PASSCODE
 USERNAME | Tên đăng nhập tiếng Anh là gì? | 1 | USER NAME
-SETTINGS | Mục cài đặt (trên máy) tiếng Anh là gì? | 1 | SETTING, OPTIONS
 MESSAGE | Tin nhắn tiếng Anh là gì? | 1 | TEXT, SMS
 FILE | Tệp tin tiếng Anh là gì? | 1 | DOCUMENT
 FOLDER | Thư mục tiếng Anh là gì? | 1 | DIRECTORY
@@ -129,7 +125,6 @@ TYPE | Gõ phím tiếng Anh là gì? | 1
 PRINT | In tài liệu tiếng Anh là gì? | 1
 CONNECT | Kết nối tiếng Anh là gì? | 1
 SHUT DOWN | Tắt máy tiếng Anh là gì? | 1 | TURN OFF, POWER OFF, SHUTDOWN, SWITCH OFF
-RESTART | Khởi động lại tiếng Anh là gì? | 1 | REBOOT
 LOADING | Đang tải tiếng Anh là gì? | 1
 SPEED | Tốc độ tiếng Anh là gì? | 1
 DEVICE | Thiết bị điện tử tiếng Anh là gì? | 1 | GADGET
@@ -138,11 +133,9 @@ ENGINEER | Kỹ sư tiếng Anh là gì? | 1
 ELECTRICITY | Điện (năng lượng) tiếng Anh là gì? | 1 | POWER
 CHAT | Nhắn tin trò chuyện tiếng Anh là gì? | 1 | TEXT
 ONLINE SHOPPING | Mua sắm trực tuyến tiếng Anh là gì? | 1 | E-COMMERCE, ECOMMERCE
-VOLUME | Âm lượng tiếng Anh là gì? | 1
 PLUG | Phích cắm điện tiếng Anh là gì? | 2
 SOCKET | Ổ cắm điện tiếng Anh là gì? | 2 | OUTLET, POWER POINT
 NETWORK | Mạng (mạng máy tính) tiếng Anh là gì? | 2
-OFFLINE | Ngoại tuyến (không có mạng) tiếng Anh là gì? | 2
 BROWSER | Trình duyệt tiếng Anh là gì? | 2 | WEB BROWSER
 SEARCH ENGINE | Công cụ tìm kiếm tiếng Anh là gì? | 2
 UNDO | Hoàn tác tiếng Anh là gì? | 2
@@ -163,7 +156,6 @@ CLOUD | Đám mây lưu trữ tiếng Anh là gì? | 2 | CLOUD STORAGE
 STORAGE | Dung lượng lưu trữ tiếng Anh là gì? | 2 | SPACE
 MEMORY | Bộ nhớ RAM tiếng Anh là gì? | 2 | RAM
 DATABASE | Cơ sở dữ liệu tiếng Anh là gì? | 2
-SERVER | Máy chủ tiếng Anh là gì? | 2
 DRONE | Máy bay không người lái tiếng Anh là gì? | 2 | UAV
 VIRTUAL REALITY | Thực tế ảo tiếng Anh là gì? | 2 | VR
 SUBSCRIBE | Đăng ký theo dõi kênh tiếng Anh là gì? | 2 | FOLLOW
@@ -174,7 +166,6 @@ CREATOR | Nhà sáng tạo nội dung tiếng Anh là gì? | 2 | CONTENT CREATOR
 INFLUENCER | Người có sức ảnh hưởng (KOL) tiếng Anh là gì? | 2 | KOL
 SCROLL | Lướt màn hình tiếng Anh là gì? | 2 | SWIPE
 TAP | Chạm nhẹ vào màn hình tiếng Anh là gì? | 2 | CLICK, PRESS
-SCAN | Quét mã, quét tài liệu tiếng Anh là gì? | 2
 BARCODE | Mã vạch tiếng Anh là gì? | 2
 SIGNAL | Tín hiệu sóng điện thoại tiếng Anh là gì? | 2 | RECEPTION
 ROUTER | Bộ phát wifi tiếng Anh là gì? | 2 | MODEM
@@ -189,13 +180,11 @@ SCAM | Lừa đảo qua mạng tiếng Anh là gì? | 2 | FRAUD
 FREE TRIAL | Dùng thử miễn phí tiếng Anh là gì? | 2
 VERSION | Phiên bản tiếng Anh là gì? | 2
 FEATURE | Tính năng tiếng Anh là gì? | 2 | FUNCTION
-TUTORIAL | Video hướng dẫn tiếng Anh là gì? | 2 | GUIDE, HOW-TO
 SHORTCUT | Phím tắt tiếng Anh là gì? | 2 | HOTKEY, KEYBOARD SHORTCUT
 SPACE BAR | Phím cách tiếng Anh là gì? | 2 | SPACE, SPACEBAR
 ENTER | Phím xuống dòng tiếng Anh là gì? | 2 | RETURN
 WIRELESS | Không dây tiếng Anh là gì? | 2 | CORDLESS
 TOUCHSCREEN | Màn hình cảm ứng tiếng Anh là gì? | 2 | TOUCH SCREEN
-BRIGHTNESS | Độ sáng màn hình tiếng Anh là gì? | 2
 PROCESSOR | Bộ vi xử lý tiếng Anh là gì? | 3 | CPU, CHIP, MICROPROCESSOR
 ALGORITHM | Thuật toán tiếng Anh là gì? | 3
 ENCRYPTION | Mã hoá dữ liệu tiếng Anh là gì? | 3 | ENCRYPT
@@ -206,8 +195,6 @@ NAVIGATION | Định vị chỉ đường tiếng Anh là gì? | 3 | GPS
 SUBSCRIPTION | Gói đăng ký trả phí tiếng Anh là gì? | 3
 INTERFACE | Giao diện tiếng Anh là gì? | 3 | UI, USER INTERFACE
 PORTABLE | Dễ mang theo (di động) tiếng Anh là gì? | 3
-RESOLUTION | Độ phân giải tiếng Anh là gì? | 3
-BANDWIDTH | Băng thông tiếng Anh là gì? | 3
 FIRMWARE | Phần mềm điều khiển thiết bị tiếng Anh là gì? | 3
 COMPATIBLE | Tương thích tiếng Anh là gì? | 3
 AUTHENTICATION | Xác thực (bảo mật) tiếng Anh là gì? | 3 | VERIFICATION
@@ -215,7 +202,6 @@ MALWARE | Phần mềm độc hại tiếng Anh là gì? | 3 | VIRUS
 FIREWALL | Tường lửa tiếng Anh là gì? | 3
 PROGRAMMING | Lập trình (ngành) tiếng Anh là gì? | 3 | CODING
 CYBERSPACE | Không gian mạng tiếng Anh là gì? | 3
-STREAMING | Phát trực tuyến (xem phim, nghe nhạc) tiếng Anh là gì? | 3
 OPERATING SYSTEM | Hệ điều hành tiếng Anh là gì? | 3 | OS
 DOWNLOAD SPEED | Tốc độ tải xuống tiếng Anh là gì? | 3
 SCANNER | Máy quét tài liệu tiếng Anh là gì? | 2
@@ -247,7 +233,6 @@ FULLSTACK | Lập trình viên toàn năng | 3 | FULLSTACK
 REPOSITORY | Kho lưu trữ mã nguồn | 3 | KHO MÃ NGUỒN
 CONTAINER | Công nghệ đóng gói ứng dụng (Docker) | 3 | CONTAINER
 DEPLOYMENT | Việc triển khai ứng dụng lên mạng | 3 | TRIỂN KHAI
-DEBUGGING | Việc sửa lỗi phần mềm | 2 | SỬA LỖI
 COMPILER | Trình biên dịch mã nguồn | 3 | TRÌNH BIÊN DỊCH
 INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truyền mạng điện tử tiếng Anh là gì? | 3 | IOT
 NEURAL NETWORK | Mạng nơ-ron nhân tạo | 3 | MẠNG NƠ RON
@@ -256,7 +241,6 @@ VULNERABILITY | Lỗ hổng bảo mật | 3 | LỖ HỔNG BẢO MẬT
 DATACENTER | Trung tâm dữ liệu | 2 | TRUNG TÂM DỮ LIỆU
 REDUNDANCY | Sự dự phòng dữ liệu | 3 | DỰ PHÒNG
 SCALABILITY | Khả năng mở rộng hệ thống | 3 | MỞ RỘNG
-LATENCY | Độ trễ mạng | 3 | ĐỘ TRỄ
 THROUGHPUT | Băng thông thực tế / thông lượng | 3 | THÔNG LƯỢNG
 PROTOCOL | Giao thức kết nối | 2 | GIAO THỨC
 VIRTUALIZATION | Công nghệ ảo hóa | 3 | ẢO HÓA
@@ -271,7 +255,6 @@ ABSTRACTION | Tính trừu tượng trong lập trình | 3 | TRỪU TƯỢNG
 ENCAPSULATION | Tính đóng gói dữ liệu | 3 | ĐÓNG GÓI
 INHERITANCE | Tính kế thừa trong lập trình | 3 | KẾ THỪA
 POLYMORPHISM | Tính đa hình | 3 | ĐA HÌNH
-SYNCHRONIZATION | Sự đồng bộ hóa | 3 | ĐỒNG BỘ HÓA
 DEPRECATED | Đã lỗi thời / không khuyến khích dùng | 3 | LỖI THỜI
 BACKWARD COMPATIBILITY | Tính tương thích ngược | 3 | TƯƠNG THÍCH NGƯỢC
 IMMUTABLE | Không thể thay đổi | 3 | KHÔNG ĐỔI
@@ -302,10 +285,8 @@ RAM | Bộ nhớ truy xuất ngẫu nhiên tạm thời của máy tính tiếng
 MOTHERBOARD | Bo mạch chủ kết nối mọi linh kiện máy tính lại với nhau tiếng Anh là gì? | 2 | BO MẠCH CHỦ, MAINBOARD
 IP ADDRESS | Địa chỉ giao thức mạng nhận diện thiết bị trên internet tiếng Anh là gì? | 2 | ĐỊA CHỈ IP
 DOMAIN | Tên miền định danh trang web (như google.com) tiếng Anh là gì? | 1 | TÊN MIỀN
-CLIENT | Ứng dụng máy khách gửi yêu cầu lên máy chủ tiếng Anh là gì? | 2 | MÁY KHÁCH
 HOSTING | Dịch vụ lưu trữ dữ liệu website trên máy chủ trực tuyến tiếng Anh là gì? | 2 | LƯU TRỮ WEB
 MODEM | Thiết bị giải mã tín hiệu đường truyền internet cáp quang tiếng Anh là gì? | 1 | CỤC MODEM
-PATCH | Bản vá lỗi phần mềm được phát hành để sửa trục trặc tiếng Anh là gì? | 2 | BẢN VÁ LỖI
 RESTORE | Hành động phục hồi lại dữ liệu từ bản sao lưu dự phòng tiếng Anh là gì? | 2 | PHỤC HỒI DỮ LIỆU
 SYNTAX | Cú pháp ngữ pháp của ngôn ngữ lập trình tiếng Anh là gì? | 2 | CÚ PHÁP
 VARIABLE | Biến số dùng để lưu trữ giá trị trong mã code tiếng Anh là gì? | 2 | BIẾN SỐ
@@ -361,7 +342,6 @@ LOAD BALANCER | Bộ cân bằng tải phân phối yêu cầu đến nhiều m�
 CACHING | Lưu tạm dữ liệu hay dùng để tăng tốc độ truy cập tiếng Anh là gì? | 2 | CACHE DỮ LIỆU
 CDN | Mạng phân phối nội dung giúp tải trang web nhanh hơn tiếng Anh là gì? | 2 | MẠNG PHÂN PHỐI NỘI DUNG
 SLA | Thỏa thuận mức độ dịch vụ cam kết giữa nhà cung cấp và khách hàng tiếng Anh là gì? | 3 | THỎA THUẬN DỊCH VỤ
-SPRINT | Giai đoạn làm việc ngắn trong Scrum thường 1 đến 4 tuần tiếng Anh là gì? | 2 | SPRINT
 KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng tiếng Anh là gì? | 2 | KANBAN
 BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên tiếng Anh là gì? | 2 | DANH SÁCH CHỜ
 USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile tiếng Anh là gì? | 2 | CÂU CHUYỆN NGƯỜI DÙNG

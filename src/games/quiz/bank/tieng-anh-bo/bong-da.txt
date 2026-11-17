@@ -82,7 +82,6 @@ TOURNAMENT | Giải đấu tiếng Anh là gì? | 2 | COMPETITION
 AWAY | Đá sân khách tiếng Anh là gì? | 2 | AWAY GAME, AWAY MATCH
 HOME | Đá sân nhà tiếng Anh là gì? | 2 | HOME GROUND, HOME GAME
 TRANSFER | Chuyển nhượng cầu thủ tiếng Anh là gì? | 2
-INJURY | Chấn thương tiếng Anh là gì? | 2
 WARM UP | Khởi động trước trận tiếng Anh là gì? | 2 | WARM-UP, WARMUP
 STRETCH | Giãn cơ tiếng Anh là gì? | 2 | STRETCHING
 SPRINT | Chạy nước rút tiếng Anh là gì? | 2 | DASH
@@ -98,7 +97,6 @@ DEFENCE | Phòng ngự tiếng Anh là gì? | 2 | DEFENSE, DEFENDING
 CHANCE | Cơ hội ghi bàn tiếng Anh là gì? | 2 | OPPORTUNITY
 RIVAL | Đối thủ kình địch tiếng Anh là gì? | 2 | RIVALS
 OPPONENT | Đội đối thủ tiếng Anh là gì? | 2 | OPPOSITION
-GLOVES | Găng tay thủ môn tiếng Anh là gì? | 2 | GLOVE, GOALKEEPER GLOVES
 CORNER FLAG | Cờ phạt góc tiếng Anh là gì? | 2
 BALL BOY | Cậu bé nhặt bóng tiếng Anh là gì? | 2 | BALL BOYS, BALL KID
 SCOREBOARD | Bảng tỉ số tiếng Anh là gì? | 2
@@ -175,7 +173,6 @@ WOODWORK | Cột dọc hoặc xà ngang | 2 | CỘT DỌC, XÀ NGANG
 OFFSIDE TRAP | Bẫy việt vị | 2 | BẪY VIỆT VỊ
 ZONAL MARKING | Phòng ngự khu vực | 3 | PHÒNG NGỰ KHU VỰC
 MAN MARKING | Phòng ngự kèm người | 3 | KÈM NGƯỜI
-STRETCHER | Cáng khiêng cầu thủ chấn thương | 2 | CÁNG
 HOME GROUND | Sân nhà của đội bóng | 1 | SÂN NHÀ
 AWAY GAME | Trận đấu trên sân khách | 1 | SÂN KHÁCH
 AGGREGATE SCORE | Tổng tỷ số sau hai lượt | 3 | TỔNG TỶ SỐ

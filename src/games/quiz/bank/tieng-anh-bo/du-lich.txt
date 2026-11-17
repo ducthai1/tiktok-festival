@@ -97,7 +97,6 @@ OUTBACK | Vùng nông thôn hẻo lánh tiếng Anh là gì? | 3
 VISTA | Cảnh tượng đẹp nhìn từ xa tiếng Anh là gì? | 3 | VIEW
 PASSPORT | Cuốn hộ chiếu xuất nhập cảnh đi nước ngoài tiếng Anh là gì? | 1 | TRAVEL PASSPORT
 VISA | Thị thực nhập cảnh vào một quốc gia tiếng Anh là gì? | 1 | ENTRY VISA
-TICKET | Chiếc vé tàu xe hoặc vé máy bay tiếng Anh là gì? | 1 | TRAVEL TICKET
 BOARDING PASS | Thẻ lên máy bay nhận tại quầy làm thủ tục tiếng Anh là gì? | 2 | BOARDING CARD
 LUGGAGE | Hành lý đồ đạc mang theo chuyến đi tiếng Anh là gì? | 1 | BAGGAGE
 SUITCASE | Chiếc va li kéo du lịch đựng quần áo tiếng Anh là gì? | 1 | TRAVEL CASE
@@ -115,7 +114,6 @@ AIRPORT | Sân bay (phi trường) đón cất cánh máy bay tiếng Anh là g�
 FLIGHT | Chuyến bay chở khách trên không tiếng Anh là gì? | 1 | AIR FLIGHT
 AIRLINE | Hãng hàng không vận chuyển hành khách tiếng Anh là gì? | 1 | AIR CARRIER
 AIRPLANE | Chiếc máy bay chở khách bay trên mây tiếng Anh là gì? | 1 | PLANE, AIRCRAFT
-TERMINAL | Nhà ga hành khách sân bay đi và đến tiếng Anh là gì? | 2 | AIRPORT TERMINAL
 GATE | Cửa khởi hành ra máy bay tiếng Anh là gì? | 1 | BOARDING GATE
 DEPARTURE | Khu vực xuất phát, chuyến bay cất cánh tiếng Anh là gì? | 1 | DEPARTURES
 ARRIVAL | Khu vực hạ cánh đón khách đáp chuyến bay tiếng Anh là gì? | 1 | ARRIVALS
@@ -136,7 +134,6 @@ PLATFORM | Sân ga đứng đợi tàu hoả ghé bánh tiếng Anh là gì? | 2
 SUBWAY | Tuyến tàu điện ngầm dưới lòng đất tiếng Anh là gì? | 1 | METRO, UNDERGROUND, TUBE
 BUS | Chiếc xe buýt công cộng chạy trong đô thị tiếng Anh là gì? | 1 | OMNIBUS
 BUS STOP | Trạm dừng đón trả khách xe buýt tiếng Anh là gì? | 1 | BUS STATION
-COACH | Xe khách du lịch chất lượng cao đường dài tiếng Anh là gì? | 2 | TOUR BUS
 TAXI | Xe tắc xi đưa đón tính tiền theo đồng hồ tiếng Anh là gì? | 1 | CAB, TAXICAB
 RENTAL CAR | Xe ô tô tự lái thuê đi du lịch tiếng Anh là gì? | 2 | HIRE CAR
 FERRY | Chuyến phà lớn chở người và xe vượt sông biển tiếng Anh là gì? | 1 | FERRYBOAT
@@ -145,36 +142,20 @@ YACHT | Chiếc thuyền buồm du thuyền tư nhân sang trọng tiếng Anh l
 BOAT | Chiếc thuyền chèo tay bơi trên sông nước tiếng Anh là gì? | 1 | ROWBOAT
 HARBOR | Bến cảng neo đậu tàu thuyền tránh bão tiếng Anh là gì? | 2 | HARBOUR, SEAPORT
 PORT | Cảng biển giao thương quốc tế tấp nập tiếng Anh là gì? | 1 | SEA PORT
-BEACH | Bãi biển bờ cát vàng sóng biển vỗ rì rào tiếng Anh là gì? | 1 | SEASHORE
 SEASIDE | Khu du lịch ven bờ biển lộng gió tiếng Anh là gì? | 1 | COASTLINE
-COAST | Vùng duyên hải bờ biển trải dài tiếng Anh là gì? | 1 | SHORE
-ISLAND | Hòn đảo giữa biển khơi bốn bề là nước tiếng Anh là gì? | 1 | ISLE
 MOUNTAIN | Ngọn núi đá cao sừng sững tiếng Anh là gì? | 1 | PEAK
-VALLEY | Thung lũng trù phú nằm kẹp giữa các dãy núi tiếng Anh là gì? | 2
-FOREST | Khu rừng cây rậm rạp hoang sơ tiếng Anh là gì? | 1 | WOODS
-JUNGLE | Rừng nhiệt đới nguyên sinh nhiều muông thú tiếng Anh là gì? | 1 | RAINFOREST
-DESERT | Sa mạc cát mênh mông nắng cháy tiếng Anh là gì? | 1 | SAND DUNES
 RIVER | Dòng sông êm đềm chảy trôi tiếng Anh là gì? | 1 | STREAM
-LAKE | Hồ nước ngọt trong xanh phẳng lặng tiếng Anh là gì? | 1
-WATERFALL | Dòng thác nước đổ ào ào từ vách đá cao tiếng Anh là gì? | 1 | FALLS, CASCADE
 CAVE | Hang động thạch nhũ kỳ ảo trong lòng núi tiếng Anh là gì? | 1 | CAVERN, GROTTO
-VOLCANO | Ngọn núi lửa đang ngủ quên hoặc phun trào tiếng Anh là gì? | 2
 OCEAN | Đại dương mênh mông chiếm phần lớn Trái Đất tiếng Anh là gì? | 1
 SEA | Biển xanh ngắt chân trời bao la tiếng Anh là gì? | 1
-BAY | Vịnh biển kín gió thuyền bè neo đậu an toàn tiếng Anh là gì? | 1 | GULF
-PENINSULA | Bán đảo ba mặt tiếp giáp biển khơi tiếng Anh là gì? | 3
-CANYON | Hẻm núi dựng đứng do sông suối xói mòn nghìn năm tiếng Anh là gì? | 2 | GORGE
-GLACIER | Sông băng vĩnh cửu trắng xoá vùng cực tiếng Anh là gì? | 2 | ICE SHEET
 NATIONAL PARK | Vườn quốc gia bảo tồn thiên nhiên hoang dã tiếng Anh là gì? | 1 | NATURE RESERVE
 LANDMARK | Địa danh thắng cảnh mang tính biểu tượng tiếng Anh là gì? | 2 | MONUMENT
 MONUMENT | Đài tưởng niệm hoặc đài kỷ niệm công trình tiếng Anh là gì? | 2 | MEMORIAL
 STATUE | Bức tượng điêu khắc nghệ thuật đúc đồng hoặc tạc đá tiếng Anh là gì? | 1 | SCULPTURE
 TOWER | Toà tháp cao vút chọc trời tiếng Anh là gì? | 1
 BRIDGE | Cây cầu bắc qua sông nối đôi bờ tiếng Anh là gì? | 1
-CASTLE | Toà lâu đài cổ kính tường thành kiên cố tiếng Anh là gì? | 1 | FORTRESS
 PALACE | Cung điện hoàng gia xa hoa lộng lẫy tiếng Anh là gì? | 1 | ROYAL RESIDENCE
 TEMPLE | Ngôi đền thờ tôn kính linh thiêng tiếng Anh là gì? | 1 | SHRINE
-CHURCH | Nhà thờ giáo xứ thanh bình tiếng Anh là gì? | 1 | CHAPEL
 CATHEDRAL | Nhà thờ chính toà kiến trúc vĩ đại tiếng Anh là gì? | 2
 PAGODA | Ngôi chùa tháp mái cong uốn lượn tiếng Anh là gì? | 1 | BUDDHIST TEMPLE
 MUSEUM | Viện bảo tàng trưng bày hiện vật lịch sử tiếng Anh là gì? | 1 | EXHIBIT HALL
@@ -185,9 +166,7 @@ AMUSEMENT PARK | Công viên giải trí có đu quay tàu lượn tiếng Anh l
 SOUVENIR | Món quà lưu niệm kỷ niệm vùng đất đã đến tiếng Anh là gì? | 1 | KEEPSAKE, MEMENTO
 POSTCARD | Tấm bưu thiếp in phong cảnh gửi người thân tiếng Anh là gì? | 1 | POST CARD
 TOUR GUIDE | Hướng dẫn viên du lịch giới thiệu thắng cảnh tiếng Anh là gì? | 1 | GUIDE
-MAP | Tấm bản đồ giấy chỉ dẫn các cung đường tiếng Anh là gì? | 1 | ROADMAP
 ITINERARY | Lịch trình tour du lịch từng ngày chi tiết tiếng Anh là gì? | 2 | TRAVEL PLAN
-BOOKING | Việc đặt trước phòng khách sạn vé máy bay tiếng Anh là gì? | 1 | RESERVATION
 TOURIST | Khách du lịch phương xa ghé thăm thắng cảnh tiếng Anh là gì? | 1 | SIGHTSEER
 TRAVELER | Người đi du lịch khám phá bốn phương tiếng Anh là gì? | 1 | TRAVELLER, VOYAGER
 EXPLORER | Nhà thám hiểm đi tìm những chân trời lạ tiếng Anh là gì? | 2 | ADVENTURER
@@ -214,15 +193,11 @@ CARAVAN | Xe nhà lưu động kéo theo sau ô tô tiếng Anh là gì? | 2 | C
 VIEWPOINT | Đài quan sát trên cao ngắm toàn cảnh tiếng Anh là gì? | 2 | LOOKOUT, OVERLOOK
 PANORAMA | Khung cảnh nhìn góc rộng bao la toàn cảnh tiếng Anh là gì? | 2 | PANORAMIC VIEW
 SCENERY | Cảnh sắc thiên nhiên hữu tình tiếng Anh là gì? | 1 | LANDSCAPE
-SUNRISE | Cảnh bình minh rạng rỡ buổi sớm tiếng Anh là gì? | 1 | DAWN
-SUNSET | Cảnh hoàng hôn tím đỏ lúc chiều tà tiếng Anh là gì? | 1 | DUSK
-PEAK | Đỉnh núi chót vót phủ tuyết trắng tiếng Anh là gì? | 1 | SUMMIT
 CLIFF | Vách đá cheo leo dựng đứng sát mép biển tiếng Anh là gì? | 1 | BLUFF
 LIGHTHOUSE | Ngọn hải đăng quét ánh đèn dẫn lối tàu bè tiếng Anh là gì? | 1 | BEACON
 CAPITAL | Thủ đô trung tâm chính trị của một nước tiếng Anh là gì? | 1 | CAPITAL CITY
 CONTINENT | Lục địa (châu lục) rộng lớn trên địa cầu tiếng Anh là gì? | 2 | MAINLAND
 BORDER | Đường biên giới quốc gia có cột mốc phân định tiếng Anh là gì? | 1 | FRONTIER
-FLAG | Lá cờ quốc kỳ tung bay trước gió tiếng Anh là gì? | 1 | BANNER, NATIONAL FLAG
 CITIZEN | Công dân có quốc tịch chính thức tiếng Anh là gì? | 1 | NATIONAL
 LOCAL | Người dân địa phương đôn hậu hiếu khách tiếng Anh là gì? | 1 | RESIDENT
 NATIVE | Người bản xứ sinh ra và lớn lên ở đây tiếng Anh là gì? | 2 | INDIGENOUS
@@ -230,8 +205,6 @@ DIALECT | Tiếng nói địa phương mang âm hưởng vùng miền tiếng An
 CULTURE | Bản sắc văn hoá lâu đời truyền qua nhiều đời tiếng Anh là gì? | 1 | TRADITION
 HERITAGE | Di sản văn hoá vật thể hoặc phi vật thể tiếng Anh là gì? | 2 | HISTORIC HERITAGE
 WONDER | Kỳ quan tráng lệ được vinh danh tiếng Anh là gì? | 1 | WORLD WONDER
-PYRAMID | Kim tự tháp Ai Cập xây bằng đá sa thạch tiếng Anh là gì? | 1 | EGYPTIAN PYRAMID
-SPHINX | Tượng nhân sư canh giữ lăng mộ cổ đại tiếng Anh là gì? | 2
 COLOSSEUM | Đấu trường La Mã cổ kính ở thành Rome tiếng Anh là gì? | 2 | AMPHITHEATER
 BIG BEN | Tháp đồng hồ nổi tiếng bên bờ sông Thames London tiếng Anh là gì? | 1 | CLOCK TOWER
 EIFFEL TOWER | Công trình tháp sắt sừng sững biểu tượng của kinh đô ánh sáng Paris tiếng Anh là gì? | 1
@@ -241,9 +214,7 @@ STATUE OF LIBERTY | Tượng Nữ thần Tự do tay giơ cao ngọn đuốc ti�
 OPERA HOUSE | Nhà hát vỏ sò độc đáo ở vịnh Sydney tiếng Anh là gì? | 1 | SYDNEY OPERA
 CANAL | Kênh đào nhân tạo cho thuyền bè lưu thông tiếng Anh là gì? | 2 | WATERWAY
 GONDOLA | Chiếc thuyền gỗ mũi cong lãng mạn ở Venice tiếng Anh là gì? | 2
-OASIS | Ốc đảo tươi tốt có hồ nước giữa hoang mạc tiếng Anh là gì? | 2
 HOT SPRING | Suối nước khoáng nóng ngâm mình thư thái tiếng Anh là gì? | 1 | ONSEN, THERMAL SPRING
-GEYSER | Mạch nước ngầm phun cột nước sôi lên trời tiếng Anh là gì? | 3
 CORAL REEF | Rạn san hô rực rỡ sắc màu dưới đáy biển tiếng Anh là gì? | 2 | BARRIER REEF
 SNORKEL | Kính bơi kèm ống thở lặn ngắm cá tiếng Anh là gì? | 1 | DIVING SNORKEL
 SCUBA DIVING | Lặn biển sâu đeo bình khí nén thở tiếng Anh là gì? | 2 | DEEP SEA DIVING
@@ -266,7 +237,6 @@ CROSSROADS | Ngã tư đường phố giao nhau tấp nập tiếng Anh là gì?
 ROUNDABOUT | Vòng xuyến ngã năm ngã sáu điều phối giao thông tiếng Anh là gì? | 2 | TRAFFIC CIRCLE
 TRAFFIC LIGHT | Cột đèn tín hiệu giao thông ngã tư tiếng Anh là gì? | 1 | TRAFFIC SIGNAL
 HIGHWAY | Đường cao tốc xe chạy tốc độ cao tiếng Anh là gì? | 1 | EXPRESSWAY, FREEWAY
-TUNNEL | Đường hầm đào xuyên lòng núi đá kiên cố tiếng Anh là gì? | 1 | UNDERPASS
 METROPOLIS | Đại đô thị sầm uất hàng chục triệu dân tiếng Anh là gì? | 2 | MEGA CITY
 SKYSCRAPER | Toà nhà chọc trời cao hàng trăm mét tiếng Anh là gì? | 2 | HIGH RISE
 DOWNTOWN | Khu trung tâm mua sắm tài chính thành phố tiếng Anh là gì? | 1 | CITY CENTER
@@ -341,9 +311,7 @@ RESTAURANT | Nhà hàng tiếng Anh là gì? | 2
 POST OFFICE | Bưu điện tiếng Anh là gì? | 2
 TRAIN STATION | Ga tàu hoả tiếng Anh là gì? | 2 | RAILWAY STATION, RAIL STATION, STATION
 MALL | Trung tâm thương mại tiếng Anh là gì? | 2 | SHOPPING MALL, SHOPPING CENTER, SHOPPING CENTRE
-STADIUM | Sân vận động tiếng Anh là gì? | 2
 SHIP | Tàu thuỷ (tàu lớn đi biển) tiếng Anh là gì? | 1 | BOAT, VESSEL
-DRIVE | Lái xe ô tô tiếng Anh là gì? | 1
 RIDE | Cưỡi, đi (cưỡi ngựa, đi xe đạp) tiếng Anh là gì? | 1
 TRUCK | Xe tải tiếng Anh là gì? | 2 | LORRY
 HELMET | Mũ bảo hiểm (đội khi đi xe máy) tiếng Anh là gì? | 2 | CRASH HELMET
@@ -353,7 +321,6 @@ CYCLO | Xích lô tiếng Anh là gì? | 3 | PEDICAB, RICKSHAW, CYCLE RICKSHAW, 
 TRAVEL | Đi du lịch tiếng Anh là gì? | 1 | TRAVELING, TRAVELLING
 PHOTO | Bức ảnh chụp tiếng Anh là gì? | 1 | PICTURE, PHOTOGRAPH, PIC
 TRIP | Chuyến đi tiếng Anh là gì? | 2 | JOURNEY, TOUR
-SELFIE | Ảnh tự sướng tiếng Anh là gì? | 2
 ABROAD | Ở nước ngoài (đi nước ngoài) tiếng Anh là gì? | 3 | OVERSEAS
 LEFT | Bên trái tiếng Anh là gì? | 1
 RIGHT | Bên phải tiếng Anh là gì? | 1
@@ -418,7 +385,6 @@ FUTURE | Tương lai tiếng Anh là gì? | 2
 CENTURY | Thế kỷ (100 năm) tiếng Anh là gì? | 3
 DECADE | Thập kỷ (10 năm) tiếng Anh là gì? | 3
 LUNAR CALENDAR | Âm lịch tiếng Anh là gì? | 3 | LUNAR
-FOOTBALL | Bóng đá tiếng Anh là gì? | 1 | SOCCER
 MOVIE | Bộ phim tiếng Anh là gì? | 1 | FILM, MOVIES, FILMS
 SONG | Bài hát tiếng Anh là gì? | 1 | SONGS
 GAME | Trò chơi tiếng Anh là gì? | 1 | GAMES
@@ -432,19 +398,13 @@ FISHING | Câu cá tiếng Anh là gì? | 2 | FISH, GO FISHING
 HOBBY | Sở thích tiếng Anh là gì? | 2 | HOBBIES
 CONCERT | Buổi hoà nhạc, đêm nhạc tiếng Anh là gì? | 2
 CARTOON | Phim hoạt hình tiếng Anh là gì? | 2 | CARTOONS, ANIMATION, ANIMATED FILM, ANIMATED MOVIE
-PLAYER | Cầu thủ, người chơi tiếng Anh là gì? | 2
-MATCH | Trận đấu tiếng Anh là gì? | 2 | GAME
 PICNIC | Buổi dã ngoại tiếng Anh là gì? | 2
 TABLE TENNIS | Bóng bàn tiếng Anh là gì? | 3 | PING PONG
 MARTIAL ARTS | Võ thuật tiếng Anh là gì? | 3 | MARTIAL ART
-REFEREE | Trọng tài tiếng Anh là gì? | 3 | UMPIRE
-CHAMPION | Nhà vô địch tiếng Anh là gì? | 3
-MEDAL | Huy chương tiếng Anh là gì? | 3 | MEDALS
 GARDENING | Làm vườn (sở thích) tiếng Anh là gì? | 3
 LUNAR NEW YEAR | Tết Nguyên Đán tiếng Anh là gì? | 2 | TET HOLIDAY, SPRING FESTIVAL
 NEW YEAR | Năm mới tiếng Anh là gì? | 1 | HAPPY NEW YEAR
 CHRISTMAS | Lễ Giáng sinh tiếng Anh là gì? | 1 | XMAS, NOEL, CHRISTMAS DAY
-GIFT | Món quà tiếng Anh là gì? | 1 | PRESENT, GIFTS, PRESENTS
 PARTY | Bữa tiệc tiếng Anh là gì? | 1
 FESTIVAL | Lễ hội tiếng Anh là gì? | 2
 LANTERN | Đèn lồng tiếng Anh là gì? | 2 | LANTERNS
@@ -456,7 +416,6 @@ WISH | Lời chúc, điều ước tiếng Anh là gì? | 2 | WISHES, BEST WISHE
 MID-AUTUMN | Tết Trung thu tiếng Anh là gì? | 3 | MID-AUTUMN FESTIVAL, MOON FESTIVAL
 LUCKY MONEY | Tiền lì xì ngày Tết tiếng Anh là gì? | 3 | RED ENVELOPE, RED ENVELOPES, RED PACKET
 LION DANCE | Múa lân tiếng Anh là gì? | 3 | LION DANCING
-CELEBRATE | Ăn mừng, tổ chức mừng tiếng Anh là gì? | 3 | CELEBRATION
 ACCOMMODATION | Chỗ ở / khách sạn lưu trú | 3 | CHỖ Ở
 RESERVATION | Đặt chỗ trước / đặt phòng | 2 | ĐẶT CHỖ
 NEIGHBOURHOOD | Khu phố xóm giềng | 2 | KHU PHỐ
@@ -470,7 +429,6 @@ SCHEDULE | Thời gian biểu / lịch trình | 1 | LỊCH TRÌNH
 DURATION | Khoảng thời gian kéo dài | 2 | THỜI GIAN
 EXCURSION | Chuyến tham quan dã ngoại | 3 | CHUYẾN ĐI
 INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3 | CƠ SỞ HẠ TẦNG
-CONGESTION | Sự tắc nghẽn giao thông | 3 | TẮC NGHIỄN
 COMMUTER | Người đi làm hằng ngày bằng xe bus/tàu | 3 | NGƯỜI ĐI LÀM
 BOULEVARD | Đại lộ rộng lớn | 2 | ĐẠI LỘ
 CROSSWALK | Vạch sang đường cho người đi bộ | 1 | VẠCH SANG ĐƯỜNG
@@ -481,7 +439,6 @@ DUSK | Hoàng hôn chiều tà | 2 | HOÀNG HÔN
 WANDERLUST | Niềm khao khát cuồng nhiệt muốn đi du lịch chu du khắp thế giới tiếng Anh là gì? | 3 | ĐAM MÊ XÊ DỊCH
 COMPASS | Chiếc la bàn định vị luôn có kim chỉ về hướng Bắc tiếng Anh là gì? | 1 | LA BÀN
 HORIZON | Đường chân trời xa tít tắp nơi trời và biển gặp nhau tiếng Anh là gì? | 2 | ĐƯỜNG CHÂN TRỜI
-TWILIGHT | Thời khắc chập choạng hoàng hôn chiều tà mặt trời lặn tiếng Anh là gì? | 2 | CHẬP TỐI, HOÀNG HÔN
 SOLSTICE | Hiện tượng điểm chí (hạ chí ngày dài nhất, đông chí đêm dài nhất) tiếng Anh là gì? | 3 | ĐIỂM CHÍ
 EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đêm dài bằng nhau) tiếng Anh là gì? | 3 | ĐIỂM PHÂN
 EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn tiếng Anh là gì? | 2 | ĐẠI SỨ QUÁN
@@ -535,7 +492,6 @@ REFUND | Khoản tiền hoàn lại khi trả lại vé tiếng Anh là gì? | 1
 NON-REFUNDABLE | Loại vé khuyến mãi không được hoàn trả tiền tiếng Anh là gì? | 2
 VOUCHER | Phiếu giảm giá ưu đãi dịch vụ du lịch tiếng Anh là gì? | 1 | COUPON
 TRAVEL INSURANCE | Bảo hiểm du lịch chi trả rủi ro tai nạn tiếng Anh là gì? | 2 | TRIP INSURANCE
-VACCINATION | Giấy chứng nhận tiêm chủng vắc xin khi xuất cảnh tiếng Anh là gì? | 2 | VACCINE PASSPORT
 CONSULATE | Tổng lãnh sự quán hỗ trợ cấp visa giấy tờ tiếng Anh là gì? | 2 | CONSULAR OFFICE
 PASSPORT PHOTO | Ảnh thẻ cỡ 4x6 chụp làm hộ chiếu tiếng Anh là gì? | 1
 EXPIRED | Hộ chiếu hoặc thị thực đã hết hạn sử dụng tiếng Anh là gì? | 1 | OUT OF DATE

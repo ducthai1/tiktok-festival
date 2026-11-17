@@ -81,9 +81,7 @@ SALARY | Tiền lương tiếng Anh là gì? | 1 | WAGE, WAGES, PAY
 COMPANY | Công ty tiếng Anh là gì? | 1 | FIRM, CORPORATION, BUSINESS
 CUSTOMER | Khách hàng tiếng Anh là gì? | 1 | CLIENT, CONSUMER
 EMPLOYEE | Nhân viên (người làm công) tiếng Anh là gì? | 1 | STAFF, WORKER
-MANAGER | Người quản lý tiếng Anh là gì? | 1 | SUPERVISOR
 OFFICE | Văn phòng tiếng Anh là gì? | 1
-SCHEDULE | Lịch làm việc tiếng Anh là gì? | 1 | TIMETABLE
 DEADLINE | Hạn chót tiếng Anh là gì? | 1 | DUE DATE
 REPORT | Bản báo cáo tiếng Anh là gì? | 1
 PRICE | Giá bán tiếng Anh là gì? | 1 | COST
@@ -95,20 +93,16 @@ SERVICE | Dịch vụ tiếng Anh là gì? | 1
 MARKET | Thị trường tiếng Anh là gì? | 1
 TAX | Thuế tiếng Anh là gì? | 1
 DEPARTMENT | Phòng ban (phòng kế toán…) tiếng Anh là gì? | 1 | DIVISION
-SECRETARY | Thư ký tiếng Anh là gì? | 1 | ASSISTANT
 COLLEAGUE | Đồng nghiệp tiếng Anh là gì? | 1 | COWORKER, CO-WORKER
 INTERVIEW | Buổi phỏng vấn tiếng Anh là gì? | 1
-TRAINING | Buổi đào tạo nhân viên tiếng Anh là gì? | 1
 PRESENTATION | Bài thuyết trình tiếng Anh là gì? | 1
 SIGNATURE | Chữ ký tiếng Anh là gì? | 1
 CANCEL | Huỷ bỏ (huỷ lịch, huỷ đơn) tiếng Anh là gì? | 1
 CONFIRM | Xác nhận tiếng Anh là gì? | 1
-APPOINTMENT | Cuộc hẹn (với khách) tiếng Anh là gì? | 1
 BUSINESS TRIP | Chuyến công tác tiếng Anh là gì? | 1
 FEEDBACK | Phản hồi, góp ý tiếng Anh là gì? | 1 | COMMENT, COMMENTS
 ADVERTISEMENT | Mẩu quảng cáo tiếng Anh là gì? | 1 | ADVERT, AD, COMMERCIAL
 BRAND | Thương hiệu tiếng Anh là gì? | 1
-PACKAGE | Bưu kiện tiếng Anh là gì? | 1 | PARCEL
 FACTORY | Nhà máy tiếng Anh là gì? | 1 | PLANT
 REPAIR | Sửa chữa tiếng Anh là gì? | 1 | FIX
 REPLY | Trả lời (email) tiếng Anh là gì? | 1 | RESPOND, ANSWER
@@ -118,16 +112,10 @@ PAYMENT | Khoản thanh toán tiếng Anh là gì? | 1
 CASH | Tiền mặt tiếng Anh là gì? | 1
 CREDIT CARD | Thẻ tín dụng tiếng Anh là gì? | 1
 PARTNER | Đối tác tiếng Anh là gì? | 1
-GOAL | Mục tiêu tiếng Anh là gì? | 1 | TARGET, OBJECTIVE, AIM
 EXPERIENCE | Kinh nghiệm tiếng Anh là gì? | 1
-SKILL | Kỹ năng tiếng Anh là gì? | 1 | SKILLS, ABILITY
 BONUS | Tiền thưởng tiếng Anh là gì? | 1
 PART-TIME | Bán thời gian tiếng Anh là gì? | 1 | PART TIME
-FULL-TIME | Toàn thời gian tiếng Anh là gì? | 1 | FULL TIME
 INTERN | Thực tập sinh tiếng Anh là gì? | 1 | TRAINEE
-SECURITY | An ninh, bảo vệ tiếng Anh là gì? | 1
-ELEVATOR | Thang máy tiếng Anh là gì? | 1 | LIFT
-PARKING LOT | Bãi đỗ xe tiếng Anh là gì? | 1 | CAR PARK, PARKING
 RENT | Tiền thuê (nhà, văn phòng) tiếng Anh là gì? | 1 | RENTAL
 RECEIPT | Biên lai (nhận khi trả tiền) tiếng Anh là gì? | 2
 INVOICE | Hoá đơn (gửi khách đòi tiền) tiếng Anh là gì? | 2 | BILL
@@ -139,13 +127,11 @@ EXPENSE | Khoản chi phí tiếng Anh là gì? | 2 | EXPENSES, COST, COSTS, EXP
 LOAN | Khoản vay tiếng Anh là gì? | 2
 INVEST | Đầu tư (động từ) tiếng Anh là gì? | 2
 INVESTOR | Nhà đầu tư tiếng Anh là gì? | 2
-BRANCH | Chi nhánh (công ty) tiếng Anh là gì? | 2
 ACCOUNTANT | Kế toán viên tiếng Anh là gì? | 2
 RECEPTIONIST | Nhân viên lễ tân tiếng Anh là gì? | 2
 APPLICANT | Ứng viên (người nộp đơn) tiếng Anh là gì? | 2 | CANDIDATE
 RESUME | Sơ yếu lý lịch tiếng Anh là gì? | 2 | CV, CURRICULUM VITAE
 HIRE | Tuyển dụng, thuê người tiếng Anh là gì? | 2 | RECRUIT, EMPLOY
-PROMOTION | Sự thăng chức tiếng Anh là gì? | 2
 RESIGN | Xin nghỉ việc, từ chức tiếng Anh là gì? | 2 | QUIT
 RETIRE | Nghỉ hưu tiếng Anh là gì? | 2
 WORKSHOP | Buổi hội thảo thực hành tiếng Anh là gì? | 2 | SEMINAR
@@ -154,8 +140,6 @@ PROPOSAL | Bản đề xuất tiếng Anh là gì? | 2
 NEGOTIATE | Đàm phán (động từ) tiếng Anh là gì? | 2 | BARGAIN
 APPROVE | Phê duyệt, chấp thuận tiếng Anh là gì? | 2 | ACCEPT, AUTHORIZE, AUTHORISE
 POSTPONE | Hoãn lại (cuộc họp) tiếng Anh là gì? | 2 | DELAY, PUT OFF, RESCHEDULE
-RESERVATION | Sự đặt chỗ trước tiếng Anh là gì? | 2 | BOOKING
-REFUND | Hoàn tiền tiếng Anh là gì? | 2 | REPAYMENT
 WARRANTY | Bảo hành tiếng Anh là gì? | 2 | GUARANTEE
 COMPLAINT | Lời phàn nàn, khiếu nại tiếng Anh là gì? | 2
 SURVEY | Cuộc khảo sát tiếng Anh là gì? | 2 | QUESTIONNAIRE, POLL
@@ -163,13 +147,8 @@ SLOGAN | Khẩu hiệu quảng cáo tiếng Anh là gì? | 2 | TAGLINE
 COMPETITOR | Đối thủ cạnh tranh tiếng Anh là gì? | 2 | RIVAL
 SALES | Doanh số bán hàng tiếng Anh là gì? | 2
 EQUIPMENT | Thiết bị, máy móc tiếng Anh là gì? | 2 | MACHINERY
-INSTALL | Lắp đặt tiếng Anh là gì? | 2 | SET UP
-ATTACHMENT | Tệp đính kèm (email) tiếng Anh là gì? | 2 | ATTACHED FILE
-FORWARD | Chuyển tiếp (email) tiếng Anh là gì? | 2
 PHOTOCOPY | Bản sao (bản photo) tiếng Anh là gì? | 2 | COPY
-FOLDER | Bìa đựng hồ sơ tiếng Anh là gì? | 2 | FILE
 BALANCE | Số dư tài khoản tiếng Anh là gì? | 2
-DEPOSIT | Tiền đặt cọc tiếng Anh là gì? | 2 | DOWN PAYMENT
 PARTNERSHIP | Quan hệ hợp tác tiếng Anh là gì? | 2 | COOPERATION, COLLABORATION
 STRATEGY | Chiến lược tiếng Anh là gì? | 2 | PLAN
 ACHIEVE | Đạt được (mục tiêu) tiếng Anh là gì? | 2 | REACH, ACCOMPLISH, ATTAIN
@@ -190,8 +169,6 @@ LANDLORD | Chủ nhà cho thuê tiếng Anh là gì? | 2 | LANDLADY, OWNER
 CONSTRUCTION | Việc xây dựng tiếng Anh là gì? | 2 | BUILDING
 REGULATION | Quy định tiếng Anh là gì? | 2 | RULE, RULES, REGULATIONS
 POLICY | Chính sách (công ty) tiếng Anh là gì? | 2
-EMERGENCY EXIT | Lối thoát hiểm tiếng Anh là gì? | 2 | FIRE EXIT, EXIT
-LOBBY | Sảnh (toà nhà, khách sạn) tiếng Anh là gì? | 2 | HALL, FOYER
 CAFETERIA | Căng tin tiếng Anh là gì? | 2 | CANTEEN
 ANNOUNCEMENT | Thông báo (chính thức) tiếng Anh là gì? | 2 | NOTICE
 ANNUAL | Hằng năm (tính từ) tiếng Anh là gì? | 2 | YEARLY
@@ -201,8 +178,6 @@ SHAREHOLDER | Cổ đông tiếng Anh là gì? | 3 | STOCKHOLDER
 HEADQUARTERS | Trụ sở chính tiếng Anh là gì? | 3 | HEAD OFFICE, HQ
 AGENDA | Các mục cần bàn trong cuộc họp tiếng Anh là gì? | 3
 MINUTES | Biên bản cuộc họp tiếng Anh là gì? | 3 | MEETING MINUTES
-ITINERARY | Lịch trình chuyến đi tiếng Anh là gì? | 3 | SCHEDULE
-INVENTORY | Hàng tồn kho tiếng Anh là gì? | 3 | STOCK
 SHIPMENT | Lô hàng (được gửi đi) tiếng Anh là gì? | 3 | CONSIGNMENT, CARGO
 MERCHANDISE | Hàng hoá (để bán) tiếng Anh là gì? | 3 | GOODS, PRODUCTS
 MANUFACTURE | Sản xuất (trong nhà máy) tiếng Anh là gì? | 3 | PRODUCE, MAKE
@@ -232,21 +207,16 @@ TRANSACTION | Giao dịch tài chính tiếng Anh là gì? | 3 | DEAL
 COMPENSATION | Tiền đền bù, bồi thường tiếng Anh là gì? | 3 | INDEMNITY, REPARATION
 NEGOTIATION | Sự thương lượng, đàm phán tiếng Anh is gì? | 3 | BARGAINING, NEGOTIATIONS
 STAKEHOLDER | Bên liên quan (trong dự án/doanh nghiệp) tiếng Anh là gì? | 3 | INTERESTED PARTY
-INSURANCE | Bảo hiểm tiếng Anh là gì? | 2 | COVERAGE
 PORTFOLIO | Danh mục đầu tư tiếng Anh là gì? | 3
 CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại tiếng Anh là gì? | 3 | LETTERS, MAIL
 COLLATERAL | Tài sản thế chấp (vay ngân hàng) tiếng Anh là gì? | 3 | SECURITY, PLEDGE
 RECRUITMENT | Sự tuyển dụng nhân sự tiếng Anh là gì? | 3 | RECRUITING, HIRING
 COMMISSION | Tiền hoa hồng (doanh số) tiếng Anh là gì? | 2 | CUT
 SUBSIDY | Tiền trợ cấp của chính phủ tiếng Anh là gì? | 3 | GRANT, SUBVENTIONS
-CURRENCY | Tiền tệ (của một quốc gia) tiếng Anh là gì? | 2 | MONEY
 DEFECT | Lỗi sản phẩm (khuyết tật) tiếng Anh là gì? | 3 | FAULT, FLAW
 LIABILITY | Nghĩa vụ pháp lý, khoản nợ tiếng Anh là gì? | 3 | DEBT, OBLIGATION
-INCENTIVE | Tiền thưởng khuyến khích (động lực) tiếng Anh là gì? | 3 | STIMULUS, MOTIVATION
-ASSET | Tài sản (của doanh nghiệp) tiếng Anh là gì? | 2 | ASSETS, PROPERTY
 ENTREPRENEUR | Nhà khởi nghiệp, doanh nhân tiếng Anh là gì? | 3 | BUSINESSOWNER
 INFLATION | Sự lạm phát tiếng Anh là gì? | 3
-EXCHANGE RATE | Tỷ giá hối đoái tiếng Anh là gì? | 2 | FOREX RATE
 VACANCY | Vị trí công việc đang trống tiếng Anh là gì? | 2 | JOB VACANCY, OPENING
 ALLOWANCE | Tiền phụ cấp tiếng Anh là gì? | 2 | SUBSIDY, STIPEND
 ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3 | ĐÁP ỨNG
@@ -264,7 +234,6 @@ DEPRECIATION | Sự khấu hao tài sản | 3 | KHẤU HAO
 EXPENDITURE | Mức chi tiêu / chi phí | 3 | CHI PHÍ
 TURNOVER | Doanh số / tỷ lệ luân chuyển | 3 | DOANH SỐ
 ADMINISTRATION | Sự quản lý / hành chính | 2 | QUẢN LÝ
-AUTHORIZATION | Sự cho phép / ủy quyền | 3 | ỦY QUYỀN
 BENEFICIARY | Người thụ hưởng | 3 | NGƯỜI THỤ HƯỞNG
 CANDIDATE | Ứng cử viên | 2 | ỨNG VIÊN
 COLLABORATION | Sự hợp tác | 2 | HỢP TÁC
@@ -282,7 +251,6 @@ FACILITY | Cơ sở vật chất / tiện nghi | 2 | CƠ SỞ VẬT CHẤT
 GUARANTEE | Sự bảo hành / cam kết | 2 | BẢO HÀNH
 IMPLEMENTATION | Sự thi hành / triển khai | 3 | TRIỂN KHAI
 INSPECTION | Sự thanh tra / kiểm tra | 3 | KIỂM TRA
-INVESTMENT | Sự đầu tư | 2 | ĐẦU TƯ
 MANAGEMENT | Sự quản lý / ban quản lý | 1 | QUẢN LÝ
 OCCUPATION | Nghề nghiệp | 2 | NGHỀ NGHIỆP
 OPPORTUNITY | Cơ hội | 1 | CƠ HỘI
@@ -302,29 +270,22 @@ SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ tiếng Anh là gì? 
 CORPORATION | Một tập đoàn kinh tế doanh nghiệp quy mô lớn tiếng Anh là gì? | 2 | TẬP ĐOÀN
 STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá tiếng Anh là gì? | 1 | KHỞI NGHIỆP
 VENTURE | Dự án liên doanh kinh doanh mạo hiểm tiếng Anh là gì? | 2 | DỰ ÁN MẠO HIỂM
-CLIENT | Khách hàng đối tác sử dụng dịch vụ chuyên nghiệp tiếng Anh là gì? | 1 | KHÁCH HÀNG
-CONSUMER | Người tiêu dùng mua sắm sản phẩm trên thị trường tiếng Anh là gì? | 2 | NGƯỜI TIÊU DÙNG
 DISTRIBUTOR | Đại lý phân phối hàng hóa đưa sản phẩm ra thị trường tiếng Anh là gì? | 2 | NHÀ PHÂN PHỐI
 RETAILER | Cửa hàng bán lẻ trực tiếp tới tay người mua tiếng Anh là gì? | 2 | BÁN LẺ
 CONSIGNMENT | Hàng gửi bán đại lý ký gửi tiếng Anh là gì? | 3 | HÀNG KÝ GỬI
 BILL OF LADING | Vận đơn đường biển biên nhận gửi hàng tàu biển tiếng Anh là gì? | 3 | VẬN ĐƠN
 PACKING LIST | Bản kê khai danh mục đóng gói kiện hàng tiếng Anh là gì? | 2 | PHIẾU ĐÓNG GÓI
-CLEARANCE | Thủ tục thông quan hàng hóa tại cửa khẩu hải quan tiếng Anh là gì? | 3 | THÔNG QUAN
-CUSTOMS | Cơ quan hải quan kiểm tra hành lý hàng hóa xuất nhập khẩu tiếng Anh là gì? | 2 | HẢI QUAN
 DUTY | Thuế hải quan đánh vào hàng hóa nhập cảnh tiếng Anh là gì? | 2 | THUẾ NHẬP KHẨU
 EXCISE | Thuế tiêu thụ đặc biệt đánh vào rượu bia thuốc lá tiếng Anh là gì? | 3 | THUẾ TIÊU THỤ
 REBATE | Khoản tiền hoàn lại bớt giá sau khi mua hàng tiếng Anh là gì? | 3 | TIỀN HOÀN LẠI
 BARGAIN | Món hàng mua được giá hời rất rẻ tiếng Anh là gì? | 2 | MÓN HỜI
 BILLBOARD | Biển quảng cáo pano tấm lớn ngoài trời bên đường cao tốc tiếng Anh là gì? | 2 | BIỂN QUẢNG CÁO
 FLYER | Tờ rơi quảng cáo phát tận tay người đi đường tiếng Anh là gì? | 2 | TỜ RƠI, LEAFLET
-CAMPAIGN | Chiến dịch truyền thông tiếp thị ra mắt sản phẩm mới tiếng Anh là gì? | 2 | CHIẾN DỊCH
 QUESTIONNAIRE | Bản câu hỏi khảo sát phỏng vấn điều tra tiếng Anh là gì? | 2 | BẢN CÂU HỎI
-RESOLUTION | Giải pháp tháo gỡ giải quyết ổn thỏa tranh chấp tiếng Anh là gì? | 2 | GIẢI PHÁP
 AGREEMENT | Thỏa thuận thống nhất chung giữa hai bên hợp tác tiếng Anh là gì? | 1 | THỎA THUẬN
 CLAUSE | Điều khoản cụ thể trong hợp đồng văn bản luật tiếng Anh là gì? | 2 | ĐIỀU KHOẢN
 STIPULATION | Quy định điều kiện bắt buộc phải tuân theo tiếng Anh là gì? | 3 | QUY ĐỊNH BẮT BUỘC
 BREACH | Hành vi vi phạm phá vỡ điều khoản cam kết hợp đồng tiếng Anh là gì? | 3 | VI PHẠM HỢP ĐỒNG
-PENALTY | Khoản tiền phạt vi phạm hành chính hoặc hợp đồng tiếng Anh là gì? | 2 | TIỀN PHẠT
 TERMINATION | Sự chấm dứt hủy bỏ hiệu lực của hợp đồng lao động tiếng Anh là gì? | 2 | CHẤM DỨT HỢP ĐỒNG
 RENEWAL | Sự gia hạn tái ký thêm thời gian cho hợp đồng tiếng Anh là gì? | 2 | GIA HẠN
 EXPIRATION | Sự hết hạn hiệu lực của giấy phép hoặc hợp đồng tiếng Anh là gì? | 2 | HẾT HẠN, EXPIRY
@@ -374,4 +335,3 @@ MORTGAGE | Vay thế chấp bất động sản để mua nhà tiếng Anh là g
 CREDIT SCORE | Điểm tín dụng đánh giá khả năng thanh toán nợ tiếng Anh là gì? | 2 | ĐIỂM TÍN DỤNG
 DEFAULT | Vi phạm hợp đồng hoặc không trả được nợ đúng hạn tiếng Anh là gì? | 2 | VỠ NỢ, VI PHẠM
 JOINT VENTURE | Liên doanh hai hoặc nhiều bên hợp tác cùng thực hiện dự án tiếng Anh là gì? | 2 | LIÊN DOANH
-FRANCHISE | Nhượng quyền thương mại sử dụng thương hiệu và mô hình sẵn có tiếng Anh là gì? | 2 | NHƯỢNG QUYỀN
