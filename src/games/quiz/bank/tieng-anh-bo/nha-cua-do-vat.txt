@@ -1,11 +1,11 @@
 # Tiếng Anh · Đồ vật
 KEY | Chìa khoá mở ổ khoá cửa | 1 | KEYS
 DOOR | Cánh cửa ra vào căn phòng | 1 | DOORS
-LOCK | Ổ khoá bấm móc kim loại | 1 | PADLOCK
-CLOCK | Chiếc đồng hồ treo tường trong phòng | 1 | WALL CLOCK
-WATCH | Chiếc đồng hồ đeo trên cổ tay | 1 | WRISTWATCH
+LOCK | Ổ khoá gắn liền trên cánh cửa | 1
+CLOCK | Đồng hồ lớn treo tường hoặc đặt bàn | 1
+WATCH | Đồng hồ nhỏ đeo ở cổ tay | 1
 MIRROR | Chiếc gương soi mặt phản chiếu hình ảnh | 1 | LOOKING GLASS
-LAMP | Đèn bàn hoặc đèn ngủ để bàn | 1 | DESK LAMP, TABLE LAMP
+LAMP | Đèn có chụp đặt trên bàn hoặc cạnh giường | 1 | TABLE LAMP
 CHAIR | Cái ghế ngồi có tựa lưng | 1 | SEAT
 BED | Chiếc giường êm nằm ngủ | 1 | BEDSTEAD
 SOFA | Chiếc ghế dài bọc đệm êm ái đặt ở trung tâm phòng khách | 1 | COUCH
@@ -29,15 +29,15 @@ NOTEBOOK | Cuốn sổ tay ghi chép hoặc cuốn vở học sinh | 1 | EXERCIS
 BOOK | Cuốn sách in chữ để đọc | 1
 GLASSES | Cặp kính cận hoặc kính mắt | 1 | EYEGLASSES, SPECTACLES
 SUNGLASSES | Cặp kính râm (kính mát) chống chói nắng | 1 | SHADES
-NECKLACE | Sợi dây chuyền đeo trên cổ | 1 | CHAIN
+NECKLACE | Sợi dây đeo vòng quanh cổ làm đẹp | 1
 BRACELET | Chiếc vòng tay (lắc tay) kim loại | 1 | BANGLE
-EARRING | Chiếc khuyên tai (hoa tai) đeo tai | 1 | EARRINGS
+EARRING | Một chiếc khuyên đeo ở tai, dạng số ít | 1
 BELT | Sợi thắt lưng (dây nịt) da quần âu | 1 | WAISTBAND
 HAT | Chiếc mũ đội đầu che nắng | 1
 CAP | Chiếc nón (mũ) lưỡi trai thể thao | 1 | BASEBALL CAP
 SHIRT | Chiếc áo sơ mi có cổ cài cúc | 1 | DRESS SHIRT
 T-SHIRT | Chiếc áo phông (áo thun) cộc tay | 1 | TEE
-PANTS | Chiếc quần dài mặc thường ngày | 1 | TROUSERS
+PANTS | Quần dài, cách người Mỹ gọi | 1
 JEANS | Chiếc quần bò (quần jean) vải thô xanh | 1 | BLUE JEANS
 SKIRT | Chiếc chân váy xếp ly của phụ nữ | 1
 JACKET | Chiếc áo khoác lửng mặc bên ngoài | 1
@@ -45,58 +45,58 @@ COAT | Chiếc áo măng tô (áo khoác dài mùa đông) | 1 | OVERCOAT
 SWEATER | Chiếc áo len dệt giữ ấm mùa đông | 1 | JUMPER, PULLOVER
 SHOES | Đôi giày đi chân hàng ngày | 1 | SHOE
 SANDALS | Đôi dép quai hậu (xăng-đan) đi học | 1 | SANDAL
-SLIPPERS | Đôi dép lê êm ái đi trong nhà | 1 | FLIP FLOPS
-PILLOW | Chiếc gối bông êm gối đầu ngủ | 1 | CUSHION
-BLANKET | Tấm chăn (mền) ấm đắp lên người khi ngủ | 1 | QUILT, DUVET
+SLIPPERS | Dép lê êm đi trong nhà, gót để trần | 1
+PILLOW | Gối mềm kê đầu khi nằm ngủ | 1
+BLANKET | Tấm chăn mỏng đắp cho ấm khi ngủ | 1 | QUILT
 MATTRESS | Tấm đệm (nệm) lò xo trải trên giường | 2
 CURTAIN | Tấm rèm vải buông che cửa sổ | 2 | DRAPES
-CARPET | Tấm thảm lớn trải trên sàn nhà | 2 | RUG
+CARPET | Tấm thảm lớn trải trên sàn nhà | 2
 VASE | Chiếc bình (lọ) cắm hoa để bàn | 1 | FLOWER VASE
 TRASH CAN | Chiếc thùng rác gom rác gia đình | 1 | DUSTBIN, GARBAGE CAN, RUBBISH BIN
-BROOM | Cây chổi rơm hoặc chổi nhựa quét nhà | 1 | SWEEPER
+BROOM | Cây chổi rơm hoặc chổi nhựa quét nhà | 1
 MOP | Cây lau sàn nhà có sợi vải thấm nước | 1 | FLOOR MOP
 BUCKET | Chiếc xô nhựa xách nước lau nhà | 1 | PAIL
 LADDER | Chiếc thang gấp chữ A trèo lên cao | 1 | STEPLADDER
 NAIL | Cây đinh sắt nhọn dùng để đóng gỗ | 1
-SCREW | Con đinh ốc (ốc vít) có rãnh xoắn | 1 | BOLT
+SCREW | Con đinh ốc (ốc vít) có rãnh xoắn | 1
 TAPE | Cuộn băng dính dán dính đồ vật | 1 | ADHESIVE TAPE, SCOTCH TAPE
 GLUE | Lọ keo dán (hồ dán) kết dính | 1 | ADHESIVE
-ZIPPER | Khoá kéo sắt kéo mở áo khoác | 1 | ZIP
-SWITCH | Công tắc bật tắt bóng đèn gắn trên tường | 1 | LIGHT SWITCH
+ZIPPER | Khoá kéo sắt kéo mở áo khoác | 1
+SWITCH | Công tắc bật tắt bóng đèn gắn trên tường | 1
 LIGHT BULB | Bóng đèn sợi đốt hoặc bóng đèn LED thắp sáng | 1 | BULB
 IRON | Bàn là (bàn ủi) điện ủi thẳng nếp áo | 1 | FLATIRON
 KETTLE | Ấm đun nước sôi siêu tốc | 1 | WATER KETTLE
 OVEN | Lò nướng bánh mì và thịt quay gia đình | 2 | BAKING OVEN
 MICROWAVE | Lò vi sóng hâm nóng thức ăn cực nhanh | 2 | MICROWAVE OVEN
-BLENDER | Máy xay sinh tố hoa quả nhuyễn mịn | 2 | FOOD PROCESSOR
+BLENDER | Máy xay sinh tố hoa quả nhuyễn mịn | 2
 TOASTER | Máy nướng bánh mì kẹp giòn nóng | 2 | BREAD TOASTER
 SINK | Bồn rửa bát đĩa và rau củ trong bếp | 1 | KITCHEN SINK
-FAUCET | Vòi nước xoay van xả nước bồn rửa | 1 | TAP, WATER TAP
+FAUCET | Vòi nước xoay van xả nước bồn rửa | 1 | WATER TAP
 SHOWER | Vòi sen tắm toả tia nước mát | 1 | SHOWER HEAD
 BATHTUB | Bồn tắm nằm ngâm mình thư giãn | 1 | TUB, BATH
 DRAWER | Ngăn kéo bàn tủ kéo ra đẩy vào | 2
-SHELF | Tấm kệ gỗ gắn tường để sách báo | 1 | BOOKSHELF
+SHELF | Một tấm ván ngang để đồ, không nhất thiết là sách | 1
 WARDROBE | Tủ đứng đựng quần áo phòng ngủ | 2 | CLOSET
 CABINET | Tủ đựng chén bát hoặc tài liệu có cánh | 2 | CUPBOARD
 HOOK | Móc gắn tường treo mũ nón áo mưa | 1 | COAT HOOK
 HANGER | Móc (mắc) treo quần áo bằng nhôm hoặc gỗ | 1 | CLOTHES HANGER
 LIGHTER | Chiếc bật lửa (hộp quẹt) đánh lửa ga | 1 | GAS LIGHTER
-BELL | Chiếc chuông lắc reng reng báo hiệu | 1 | DOORBELL
-PADLOCK | Ổ khoá chữ U bấm mở bằng chìa | 2
+BELL | Quả chuông rung lên kêu leng keng | 1
+PADLOCK | Ổ khoá rời hình chữ U móc vào xích hoặc then | 2
 SAFETY PIN | Chiếc kim băng an toàn gài tã hoặc áo | 2
 ENVELOPE | Chiếc phong bì dán tem gửi thư tay | 1 | LETTER ENVELOPE
 STAMP | Con tem bưu chính dán góc phong bì thư | 1 | POSTAGE STAMP
 BASKET | Chiếc làn (giỏ tre) đi chợ đựng rau củ | 1 | SHOPPING BASKET
 JAR | Chiếc hũ (lọ) thuỷ tinh đựng đường kẹo mứt | 1 | GLASS JAR
 CAN | Lon thiếc đựng nước ngọt giải khát | 1 | TIN CAN
-LID | Chiếc nắp đậy vung xoong nồi chảo | 1 | CAP, COVER
+LID | Chiếc nắp đậy vung xoong nồi chảo | 1
 TISSUE | Khăn giấy khô rút hộp lau mặt mũi | 1 | FACIAL TISSUE
 TOILET PAPER | Cuộn giấy vệ sinh mềm mại trong phòng tắm | 1 | TOILET ROLL
 DUSTPAN | Cái xẻng hót rác gom rác quét nhà | 1 | DUST PAN
-CLIP | Chiếc kẹp ghim giấy tài liệu văn phòng | 1 | PAPERCLIP, PAPER CLIP
+CLIP | Cái kẹp nhỏ bằng thép uốn giữ xấp giấy | 1 | PAPER CLIP
 STAPLER | Chiếc dập ghim bấm giấy đóng tệp | 2 | STAPLE GUN
 RUBBER BAND | Sợi dây nịt cao su buộc hàng co giãn | 1 | ELASTIC BAND
-ERASER | Cục tẩy gôm xoá sạch nét bút chì | 1 | RUBBER
+ERASER | Cục tẩy chà lên giấy để xoá vết bút chì | 1
 SHARPENER | Cái gọt (chuốt) bút chì xoay tay | 1 | PENCIL SHARPENER
 PENCIL CASE | Hộp bút (túi đựng bút) học trò đến lớp | 1 | PENCIL BOX
 BOOKMARK | Tấm thẻ đánh dấu trang sách đang đọc dở | 1 | BOOK MARKER
@@ -107,7 +107,7 @@ STOPWATCH | Chiếc đồng hồ bấm giây tính giờ chạy đua | 2 | CHRON
 BINOCULARS | Ống nhòm hai mắt nhìn xa phong cảnh | 2 | FIELD GLASSES
 TELESCOPE | Kính thiên văn quang học ngắm trăng sao | 2 | SPYGLASS
 CALCULATOR | Máy tính bỏ túi bấm phím cộng trừ nhân chia | 1 | POCKET CALCULATOR
-EARPHONES | Tai nghe dây nhét lỗ tai nghe nhạc | 1 | EARBUDS
+EARPHONES | Tai nghe có dây nhét vào lỗ tai | 1
 MICROPHONE | Cây micrô cầm tay hát karaoke | 1 | MIC
 REMOTE CONTROL | Chiếc điều khiển từ xa tivi bấm kênh | 1 | REMOTE
 MOUSEPAD | Tấm lót chuột máy tính rê chuột mượt mà | 1 | MOUSE PAD
@@ -129,31 +129,31 @@ MITTENS | Đôi găng tay xỏ chung 4 ngón chỉ tách ngón cái | 2 | MITTS
 BOW TIE | Chiếc nơ bướm cài cổ áo chú rể bảnh bao | 2 | BOWTIE
 VEST | Áo gile khoét nách mặc lót trong bộ suit | 2 | WAISTCOAT
 BLAZER | Áo khoác vest dạ mặc thường nhật năng động | 2 | SPORT COAT
-PYJAMAS | Bộ đồ ngủ pijama vải lụa hoặc cotton ở nhà | 1 | PAJAMAS, PJS
+PYJAMAS | Bộ đồ ngủ pijama vải lụa hoặc cotton ở nhà | 1 | PJS
 BATHROBE | Chiếc áo choàng tắm bằng vải bông dày dặn | 2 | ROBE
 SWIMSUIT | Bộ đồ bơi một mảnh của nữ đi biển | 1 | BATHING SUIT, SWIMWEAR
 SWIMMING TRUNKS | Chiếc quần bơi co giãn của nam | 2 | TRUNKS, SWIM TRUNKS
 INSOLE | Tấm lót êm đặt bên trong đáy giày | 2 | SHOE INSERT
 SHOE HORN | Cái đón gót nhựa giúp xỏ giày dễ dàng | 2 | SHOEHORN
-HAIR CLIP | Chiếc kẹp tóc xinh kẹp tóc mái gọn gàng | 1 | BARRETTE, HAIRPIN
+HAIR CLIP | Chiếc kẹp tóc xinh kẹp tóc mái gọn gàng | 1 | BARRETTE
 HAIR TIE | Dây chun thun buộc tóc đuôi ngựa | 1 | SCRUNCHIE, ELASTIC TIE
 HEADBAND | Chiếc băng đô (bờm tóc) cài trán | 1 | HAIRBAND
 PERFUME BOTTLE | Chai nước hoa thuỷ tinh xịt toả hương thơm | 2 | SCENT BOTTLE
-LIPSTICK | Thỏi son môi thoa màu hồng cam tươi tắn | 1 | LIP BALM
+LIPSTICK | Thỏi son môi thoa màu hồng cam tươi tắn | 1
 COMPACT | Hộp phấn nén trang điểm có gương soi nhỏ | 2 | POWDER COMPACT
 MASCARA | Cây cọ chuốt thuốc dưỡng giúp hàng mi mắt cong vút và đen dày | 2 | LASH MASCARA
 EYELINER | Cây bút kẻ viền mắt nước sắc sảo | 2 | EYE PENCIL
 NAIL POLISH | Lọ sơn móng tay nhiều màu rực rỡ | 2 | NAIL LACQUER
 NAIL CLIPPER | Chiếc bấm móng tay nhỏ gọn bằng inox | 1 | NAIL TRIMMER
 COTTON SWAB | Cây tăm bông ngoáy tai hai đầu bông gòn | 1 | Q-TIP, COTTON BUD
-COTTON PAD | Miếng bông tẩy trang tròn lau sạch mặt | 1 | COTTON WOOL
+COTTON PAD | Miếng bông tẩy trang tròn lau sạch mặt | 1
 ICE PACK | Túi chườm đá lạnh giảm sưng bầm tím | 2 | COLD PACK
 HOT WATER BOTTLE | Bình cao su chườm nước nóng sưởi ấm | 2 | HEATING PAD
 PILLBOX | Hộp đựng thuốc chia thành các ngăn theo ngày | 2 | PILL ORGANIZER
 TWEEZERS | Cái nhíp kim loại nhỏ gắp dằm gai | 2 | PLUCKERS
 RAZOR | Chiếc dao cạo râu lưỡi lam bén ngót | 1 | SHAVING RAZOR
 SHAVING CREAM | Bọt kem cạo râu thoa cằm làm mềm râu | 2 | SHAVE FOAM
-TOOTHSTICK | Chiếc tăm tre nhỏ xỉa kẽ răng sau bữa ăn | 1 | TOOTHPICK
+TOOTHSTICK | Chiếc tăm tre nhỏ xỉa kẽ răng sau bữa ăn | 1
 DENTAL FLOSS | Sợi chỉ tơ nha khoa vệ sinh kẽ răng | 2 | FLOSS
 MOUTHWASH | Nước súc miệng diệt khuẩn thơm tho hơi thở | 2 | ORAL RINSE
 FACE WASH | Sữa rửa mặt dạng tuýp tạo bọt rửa sạch bụi | 1 | FACIAL CLEANSER
@@ -204,7 +204,7 @@ MANTELPIECE | Gờ kệ gỗ đặt phía trên lò sưởi | 3 | MANTEL
 WALLPAPER | Cuộn giấy dán tường in hoa văn trang trí | 2 | WALL COVERING
 CHANDELIER | Đèn chùm pha lê thả trần phòng khách sang trọng | 2 | CRYSTAL LIGHT
 LAMPSHADE | Chụp đèn bằng vải nón che bớt ánh sáng chói | 2 | LAMP SHADE
-EXTENSION CORD | Ổ cắm điện kéo dài có dây dài 5 mét | 2 | POWER STRIP
+EXTENSION CORD | Ổ cắm điện kéo dài có dây dài 5 mét | 2
 VOLTAGE REGULATOR | Chiếc ổn áp điện giữ dòng điện ổn định 220V | 3 | STABILIZER
 GENERATOR | Máy phát điện chạy dầu khi cúp điện | 2 | DYNAMO
 FIRE EXTINGUISHER | Bình bọt cứu hoả xịt chữa cháy khẩn cấp | 2 | FIRE BOTTLE
@@ -222,11 +222,11 @@ SPATULA | Cái xẻng gỗ đảo thức ăn lật bánh | 1 | TURNER
 LADLE | Chiếc muôi (vá) to cán dài múc canh lẩu | 1 | SOUP LADLE
 TONGS | Chiếc kẹp gắp thịt nướng than hoa | 1 | FOOD TONGS
 COLANDER | Chiếc rổ inox nhiều lỗ thoát nước trụng mì | 2 | STRAINER
-GRATER | Bàn bào sắt nạo sợi cà rốt và phô mai | 2 | SHREDDER
+GRATER | Bàn bào sắt nạo sợi cà rốt và phô mai | 2
 PEELER | Chiếc dao nạo hai lưỡi gọt vỏ củ quả | 1 | VEGETABLE PEELER
 ROLLING PIN | Cây lăn cán mỏng bột làm bánh pizza mì sợi | 2 | PASTRY ROLLER
 CAN OPENER | Cái mở đồ hộp sắt tây xoay tay | 1 | TIN OPENER
-BOTTLE OPENER | Dụng cụ nậy mở nắp chai bia nước ngọt | 1 | CORKSCREW
+BOTTLE OPENER | Dụng cụ nậy mở nắp chai bia nước ngọt | 1
 CORKSCREW | Cây khui nút bần chai rượu vang xoắn ruột gà | 2 | WINE OPENER
 TRAY | Chiếc khay nhôm bưng bê nhiều ly chén | 1 | SERVING TRAY
 COASTER | Tấm lót đáy cốc chống đọng nước ướt bàn | 1 | CUP MAT
@@ -244,7 +244,7 @@ BEER MUG | Cốc vại thuỷ tinh dày có quai cầm uống bia | 1 | BEER GLA
 THERMOS | Chiếc bình giữ nhiệt nước nóng bằng inox | 1 | VACUUM FLASK
 LUNCH BOX | Hộp cơm nhiều ngăn mang đi làm ăn trưa | 1 | BENTO BOX
 PLASTIC WRAP | Cuộn màng bọc thức ăn trong suốt bảo quản lạnh | 1 | CLING FILM, SARAN WRAP
-ALUMINIUM FOIL | Cuộn giấy bạc bọc cá nướng lò thơm nức | 2 | TIN FOIL, FOIL
+ALUMINIUM FOIL | Cuộn giấy bạc bọc cá nướng lò thơm nức | 2 | TIN FOIL
 ZIPLOCK BAG | Túi zip miết mép chống ẩm bảo quản hạt khô | 1 | ZIP BAG
 TUPPERWARE | Bộ hộp nhựa bảo quản thực phẩm trong tủ lạnh | 1 | FOOD CONTAINER
 ICE TRAY | Khay nhựa đổ nước làm đá viên tủ lạnh | 1 | ICE CUBE TRAY
@@ -273,7 +273,7 @@ FLOWER POT | Chậu gốm đất nung trồng cây cảnh trước hiên | 1 | P
 BIRDCAGE | Lồng nhốt chim vành khuyên bằng nan tre uốn | 2 | BIRD CAGE
 AQUARIUM TANK | Bể kính nuôi cá vàng bơi lội trong nhà | 1 | FISH TANK
 COLLAR | Vòng cổ da có chuông lắc cho cún con | 1 | PET COLLAR
-LEASH | Sợi dây dắt chó đi dạo công viên | 1 | LEAD, DOG LEASH
+LEASH | Sợi dây dắt chó đi dạo công viên | 1 | DOG LEASH
 CAT LITTER BOX | Chậu cát vệ sinh khử mùi cho mèo cưng | 2 | LITTER TRAY
 DOG BONE | Đồ chơi khúc xương gặm ngứa răng cho chó | 1 | CHEW BONE
 PET CARRIER | Túi xách lồng nhựa vận chuyển mèo cún đi thú y | 2 | PET CRATE
@@ -292,7 +292,7 @@ DRESSER | Tủ nhiều ngăn kéo | 3 | CHEST OF DRAWERS
 SHOE POLISH | Xi đánh giày | 3
 UMBRELLA STAND | Ống cắm ô | 3
 DOORSTOP | Cái chặn cửa | 3 | DOOR STOPPER
-LATCH | Chốt cửa | 3 | BOLT
+LATCH | Chốt cửa | 3
 HINGE | Bản lề | 3
 THUMBTACK | Đinh ghim (đinh bấm) | 2 | DRAWING PIN, PUSHPIN
 STICKY NOTE | Tập giấy ghi việc nhỏ nhắn có mép keo tự dính tạm thời | 1 | POST-IT, STICKY NOTES
@@ -308,7 +308,7 @@ DUSTER | Chổi phất trần | 2 | FEATHER DUSTER
 SQUEEGEE | Cây gạt nước lau kính | 3
 DISH RACK | Giá úp bát | 2 | DISH DRAINER, DRYING RACK
 DISH SOAP | Nước rửa chén | 1 | WASHING-UP LIQUID, DISHWASHING LIQUID
-DETERGENT | Bột giặt (nước giặt) | 2 | LAUNDRY DETERGENT, WASHING POWDER
+DETERGENT | Bột giặt (nước giặt) | 2 | LAUNDRY DETERGENT
 FABRIC SOFTENER | Nước xả vải | 2 | SOFTENER
 BLEACH | Thuốc tẩy (nước javen) | 2
 AIR FRESHENER | Nước xịt phòng | 2
@@ -317,14 +317,14 @@ FLYSWATTER | Vỉ đập ruồi | 3 | FLY SWATTER
 HEATER | Máy sưởi | 1 | SPACE HEATER
 AIR PURIFIER | Máy lọc không khí | 2
 HUMIDIFIER | Máy tạo độ ẩm | 3
-CUTLERY | Bộ dao nĩa thìa | 3 | SILVERWARE
+CUTLERY | Bộ dao nĩa thìa | 3
 MUG | Cốc có quai | 1 | COFFEE MUG
 SAUCER | Đĩa lót tách | 2
 JUG | Bình rót nước | 2 | PITCHER
 FUNNEL | Cái phễu | 2
 TIMER | Đồng hồ hẹn giờ (nhà bếp) | 1 | KITCHEN TIMER
 SPICE RACK | Kệ gia vị | 2
-ICE CREAM SCOOP | Muỗng múc kem | 2 | SCOOP
+ICE CREAM SCOOP | Muỗng múc kem | 2
 INTERCOM | Chuông hình (điện thoại nội bộ) | 3
 POWER STRIP | Ổ cắm kéo dài nhiều lỗ | 2 | POWER BAR
 LIGHT SWITCH | Công tắc đèn | 1
@@ -338,16 +338,16 @@ RUG | Tấm thảm nhỏ | 2
 GLUE GUN | Súng bắn keo | 2 | HOT GLUE GUN
 SPRINKLER | Vòi phun tưới cây | 3
 COAT HANGER | Móc treo quần áo | 1
-STORAGE BOX | Hộp đựng đồ | 1 | CONTAINER
-SHOPPING BAG | Túi đi chợ | 1 | TOTE BAG
+STORAGE BOX | Hộp đựng đồ | 1
+SHOPPING BAG | Túi đi chợ | 1
 COIN PURSE | Ví đựng tiền xu | 2
-BOBBY PIN | Kẹp tăm (kẹp tóc nhỏ) | 3 | HAIRPIN
+BOBBY PIN | Kẹp tăm (kẹp tóc nhỏ) | 3
 MAKEUP BAG | Túi đựng mỹ phẩm | 2 | COSMETIC BAG
 NAIL POLISH REMOVER | Nước tẩy sơn móng | 3 | ACETONE
 SEWING MACHINE | Máy khâu | 2
 THIMBLE | Cái đê (đeo ngón tay khi khâu) | 3
 KNITTING NEEDLE | Que đan len | 3
-YARN | Sợi len | 2 | WOOL
+YARN | Sợi len | 2
 TAPE DISPENSER | Hộp cắt băng dính | 3
-PAPER SHREDDER | Máy hủy giấy | 2 | SHREDDER
+PAPER SHREDDER | Máy hủy giấy | 2
 ELECTRIC KETTLE | Ấm siêu tốc | 1

@@ -2,64 +2,64 @@
 KITCHEN | Nhà bếp | 1
 BEDROOM | Phòng ngủ | 1
 BATHROOM | Phòng tắm | 1
-LIVING ROOM | Phòng khách | 1 | SITTING ROOM, LOUNGE
+LIVING ROOM | Phòng khách | 1 | SITTING ROOM
 DINING ROOM | Phòng ăn | 1
-TOILET | Nhà vệ sinh | 1 | RESTROOM, WC, LAVATORY, LOO, BATHROOM, WASHROOM
+TOILET | Nhà vệ sinh | 1 | RESTROOM, WC, LAVATORY, LOO, WASHROOM
 ROOM | Căn phòng | 1
 FLOOR | Sàn nhà | 1
 GARDEN | Khu vườn | 1 | YARD, BACKYARD
 APARTMENT | Căn hộ chung cư | 1 | FLAT, CONDO, CONDOMINIUM
-STAIRS | Cầu thang | 1 | STAIRCASE, STAIRWAY, STAIR, STEPS
+STAIRS | Dãy bậc bước lên xuống giữa các tầng | 1 | STAIRWAY, STAIR, STEPS
 BALCONY | Ban công | 2
 GARAGE | Nhà để xe ô tô (ga-ra) | 2
 ROOF | Mái nhà | 2
 FENCE | Hàng rào | 2
 ELEVATOR | Thang máy | 2 | LIFT
-DOORBELL | Chuông cửa | 2 | BELL
+DOORBELL | Nút bấm ngoài cửa reo chuông gọi chủ nhà | 2
 CEILING | Trần nhà | 3
 CORRIDOR | Hành lang | 3 | HALLWAY, HALL, PASSAGE
-BOOKSHELF | Giá sách (kệ sách) | 2 | BOOKCASE, BOOKSHELVES
+BOOKSHELF | Tấm ván gắn tường để xếp sách lên | 2 | BOOKSHELVES
 STOOL | Ghế đẩu (ghế không tựa lưng) | 2
 BED SHEET | Tấm ga trải phẳng phiu lên mặt nệm trước khi ngủ | 3 | SHEET, SHEETS, BED SHEETS
 MOSQUITO NET | Cái màn (mùng) chống muỗi | 3
 HAMMOCK | Cái võng | 3
 ARMCHAIR | Ghế bành (có tay vịn) | 3
 BUNK BED | Giường tầng | 3 | BUNK BEDS, BUNK
-FRIDGE | Tủ lạnh | 2 | REFRIGERATOR
+FRIDGE | Cách gọi tắt quen miệng của tủ lạnh | 2
 AIR CONDITIONER | Máy điều hoà (máy lạnh) | 2 | AIR CONDITIONING, AIR CON, AIRCON, AC
 WASHING MACHINE | Máy giặt | 2 | WASHER
 HAIR DRYER | Máy sấy tóc | 2 | HAIR DRIER, BLOW DRYER
 VACUUM CLEANER | Máy hút bụi | 3 | VACUUM, HOOVER
 WATER HEATER | Bình nóng lạnh | 3
 SHAMPOO | Dầu gội đầu | 2
-WASHBASIN | Bồn rửa mặt (lavabo) | 2 | SINK, BASIN, BATHROOM SINK
+WASHBASIN | Bồn rửa mặt (lavabo) | 2 | BASIN, BATHROOM SINK
 PERFUME | Nước hoa | 2 | FRAGRANCE, COLOGNE, SCENT
 WASH | Giặt (quần áo) | 1 | LAUNDER
-TIDY UP | Dọn dẹp, thu dọn (nhà cửa) | 2 | TIDY, CLEAN UP, CLEAN
-HOUSEWORK | Việc nhà | 2 | CHORES, CHORE, HOUSEHOLD CHORES, HOUSEKEEPING
+TIDY UP | Dọn dẹp, thu dọn (nhà cửa) | 2 | TIDY, CLEAN UP
+HOUSEWORK | Việc nhà | 2 | CHORES, CHORE, HOUSEHOLD CHORES
 SWEEP | Quét (nhà, sân) | 2
 FOLD | Gấp (quần áo, chăn) | 2
-RUBBISH | Rác (rác thải) | 2 | TRASH, GARBAGE, WASTE, LITTER
+RUBBISH | Rác (rác thải) | 2 | GARBAGE, LITTER
 CLOTHESPIN | Cái kẹp phơi quần áo | 3 | CLOTHES PEG, PEG
-WASHING POWDER | Bột giặt | 3 | DETERGENT, LAUNDRY DETERGENT, LAUNDRY POWDER, SOAP POWDER
+WASHING POWDER | Bột giặt | 3 | LAUNDRY DETERGENT, LAUNDRY POWDER, SOAP POWDER
 CLOTHES | Quần áo | 1 | CLOTHING
-TROUSERS | Cái quần dài | 2 | PANTS
+TROUSERS | Quần dài, cách người Anh gọi | 2
 HOODIE | Áo nỉ có mũ trùm đầu | 2 | HOODY, HOODED SWEATSHIRT
-PAJAMAS | Bộ đồ ngủ | 2 | PYJAMAS, PJS, NIGHTWEAR, SLEEPWEAR, NIGHTCLOTHES
+PAJAMAS | Bộ áo quần rộng mặc đi ngủ, viết theo kiểu Mỹ | 2 | PJS, NIGHTWEAR, SLEEPWEAR, NIGHTCLOTHES
 UNDERWEAR | Đồ lót | 2 | UNDERCLOTHES
 POCKET | Cái túi (trên áo, quần) | 2
 FASHION | Thời trang | 2
 CONICAL HAT | Nón lá | 3 | LEAF HAT, PALM LEAF HAT
 SLEEVE | Tay áo | 3 | SLEEVES
-TANK TOP | Áo ba lỗ | 3 | SINGLET, VEST, UNDERSHIRT
-FLIP-FLOPS | Dép tông (dép xỏ ngón) | 2 | FLIP-FLOP
-SNEAKERS | Giày thể thao | 2 | SNEAKER, TRAINERS, TRAINER, RUNNING SHOES, SPORTS SHOES, SPORT SHOES
+TANK TOP | Áo ba lỗ | 3 | SINGLET, UNDERSHIRT
+FLIP-FLOPS | Dép xỏ ngón có quai hình chữ V | 2 | FLIP-FLOP
+SNEAKERS | Giày thể thao | 2 | SNEAKER, TRAINERS, RUNNING SHOES, SPORTS SHOES, SPORT SHOES
 HIGH HEELS | Giày cao gót | 2 | HEELS, HIGH HEEL
 SHOELACE | Sợi dây luồn qua lỗ mũi giày rồi buộc lại thành nơ | 3 | SHOELACES, LACE, LACES, SHOESTRING, SHOESTRINGS
-WRISTWATCH | Đồng hồ đeo tay | 1 | WATCH
-EARRINGS | Bông tai (khuyên tai) | 2 | EARRING
-JEWELRY | Đồ trang sức | 3 | JEWELLERY, JEWELS
-HAIRPIN | Cái kẹp tóc | 3 | HAIR CLIP, BARRETTE, BOBBY PIN, HAIR SLIDE
+WRISTWATCH | Tên đầy đủ gọi chiếc đồng hồ đeo tay, viết liền một từ | 1
+EARRINGS | Cặp khuyên đeo cả hai tai, dạng số nhiều | 2
+JEWELRY | Đồ trang sức nói chung, viết theo kiểu Mỹ | 3 | JEWELS
+HAIRPIN | Cái kẹp tóc | 3 | BARRETTE, HAIR SLIDE
 WOOD | Gỗ | 1 | TIMBER
 GOLD | Vàng (kim loại quý) | 1
 METAL | Kim loại | 2
@@ -72,26 +72,26 @@ BRICK | Viên gạch | 2 | BRICKS
 FABRIC | Vải (để may quần áo) | 3 | CLOTH, TEXTILE
 RUBBER | Cao su | 3
 STEEL | Thép | 3
-CERAMIC | Gốm sứ | 3 | CERAMICS, PORCELAIN, POTTERY, CHINA
+CERAMIC | Gốm sứ | 3 | PORCELAIN, CHINA
 ALUMINUM | Nhôm | 3 | ALUMINIUM
-BOOKCASE | Tủ sách / kệ sách | 1
-JEWELLERY | Trang sức / nữ trang | 2
+BOOKCASE | Tủ đứng nhiều tầng chuyên để chứa sách | 1
+JEWELLERY | Đồ trang sức nói chung, viết theo kiểu Anh | 2
 DISHWASHER | Máy rửa bát | 2
 TABLECLOTH | Khăn trải bàn | 2
 PILLOWCASE | Vỏ gối | 2
 BUNGALOW | Nhà gỗ một tầng ven biển | 3
 MANSION | Dinh thự sang trọng | 3
 PENTHOUSE | Căn hộ tầng mái cao cấp | 3
-STAIRCASE | Cầu thang bộ | 1
-CARDIGAN | Áo khoác len len len cúc | 2
+STAIRCASE | Cả bộ cầu thang gồm bậc, chiếu nghỉ và tay vịn | 1
+CARDIGAN | Áo len cài cúc dọc phía trước, khoác vào cởi ra dễ | 2
 TUXEDO | Bộ âu phục chú rể sang trọng | 3
 HAIRBRUSH | Lược chải tóc | 1
 THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3
-REFRIGERATOR | Tủ lạnh bảo quản | 1
+REFRIGERATOR | Tên đầy đủ của chiếc tủ giữ lạnh thức ăn | 1
 KIMONO | Bộ trang phục truyền thống bằng lụa của Nhật Bản | 1
 TURTLENECK | Chiếc áo len cổ lọ cao ôm sát cổ giữ ấm mùa đông | 2
 POLO SHIRT | Chiếc áo thun có cổ bẻ cài cúc lịch sự năng động | 1 | POLO
-CUSHION | Chiếc đệm gối tựa lưng đặt trên ghế sô pha | 1
+CUSHION | Gối vuông nhỏ tựa lưng đặt trên ghế | 1
 CORNICE MOULDING | Đường gờ trang trí chạy quanh mép trần nhà | 3
 WAINSCOTING | Tấm gỗ ốp nửa dưới bức tường trong phòng | 3
 BALUSTER | Thanh trụ nhỏ đỡ tay vịn cầu thang | 3
