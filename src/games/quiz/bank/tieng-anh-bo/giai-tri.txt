@@ -1,6 +1,6 @@
 # Tiếng Anh · Giải trí
 BINGE-WATCH | Cày phim (xem liền nhiều tập) | 2
-SITCOM | Phim hài tình huống | 2
+SITCOM | Phim hài nhiều tập, mỗi tập một tình huống ở cùng một bối cảnh | 2
 SOAP OPERA | Phim truyền hình dài tập | 2
 MUSICAL | Nhạc kịch | 2
 STAND-UP COMEDY | Hài độc thoại | 2 | STANDUP
@@ -24,9 +24,9 @@ PLAYGROUND | Sân chơi | 1
 TOY | Đồ chơi | 1 | TOYS
 STUFFED ANIMAL | Thú nhồi bông | 1 | PLUSH, SOFT TOY
 LEVEL UP | Lên cấp (trong game) | 1
-PLOT TWIST | Cú lật bất ngờ trong cốt truyện | 2 | TWIST
+PLOT TWIST | Cú lật bất ngờ trong cốt truyện | 2
 HAPPY ENDING | Kết thúc có hậu | 1
-MAIN CHARACTER | Nhân vật chính | 1 | PROTAGONIST, LEAD
+MAIN CHARACTER | Người mà câu chuyện xoay quanh | 1 | PROTAGONIST
 SIDEKICK | Bạn đồng hành của nhân vật chính | 3
 FLASHBACK | Cảnh hồi tưởng | 2
 SLOW MOTION | Quay chậm | 1 | SLOW-MO
@@ -46,11 +46,11 @@ PARADE | Cuộc diễu hành | 2
 COSTUME PARTY | Tiệc hóa trang | 2 | FANCY DRESS PARTY
 MASQUERADE | Dạ hội đeo mặt nạ | 3
 BONFIRE | Lửa trại | 2
-PUPPET SHOW | Múa rối | 2 | WATER PUPPETRY
+PUPPET SHOW | Buổi diễn cụ thể có các con rối | 2 | WATER PUPPETRY
 CIRCUS TENT | Lều xiếc | 2
 TICKET STUB | Cuống vé | 3
 MATINEE | Suất chiếu ban ngày | 3
-INTERMISSION | Giờ giải lao giữa buổi diễn | 3 | INTERVAL
+INTERMISSION | Quãng nghỉ giữa buổi diễn để khán giả ra ngoài | 3 | INTERVAL
 STAGE FRIGHT | Sợ sân khấu | 2
 UNDERSTUDY | Diễn viên dự bị | 3
 BOX SET | Trọn bộ các mùa phim | 3
@@ -61,52 +61,52 @@ FAN SERVICE | Chiều lòng người hâm mộ | 3
 SING-ALONG | Hát theo cùng nhau | 2 | SINGALONG
 CRESCENDO | Tăng dần cường độ âm nhạc | 3
 DIMINUENDO | Giảm dần cường độ âm nhạc | 3
-REFRAIN | Đoạn lặp lại trong bài hát | 3
-CADENCE | Nhịp điệu kết thúc | 3
+REFRAIN | Câu hát lặp nguyên văn ở cuối mỗi đoạn | 3
+CADENCE | Chuỗi hợp âm khép lại một câu nhạc | 3
 MODULATION | Chuyển đổi tone trong nhạc | 3
 COUNTERPOINT | Phối hợp độc lập giữa các giai điệu | 3
 DYNAMICS | Biến đổi cường độ âm thanh | 3
-TONALITY | Tính chất tông nhạc | 3
+TONALITY | Việc cả bản nhạc xoay quanh một tông chủ đạo | 3
 TIMBRE | Chất âm của nhạc cụ | 3 | TONE COLOR
 TABLEAU | Tấm tranh sống trên sân khấu | 3
 MISE EN SCENE | Bố trí sân khấu | 3
-ENTR'ACTE | Khoảng thời gian giữa hai màn | 3 | INTERMISSION
+ENTR'ACTE | Đoạn nhạc hoặc tiết mục chen giữa hai màn kịch | 3
 SUBTEXT | Ý nghĩa tiềm tàng phía sau lời | 3
-FOIL | Nhân vật đối lập | 3 | CONTRAST
-ARCHETYPE | Nhân vật nguyên mẫu | 3 | PROTOTYPE
-CLICHE | Ý tưởng cũ rích | 3 | STEREOTYPE
+FOIL | Nhân vật đặt cạnh nhân vật chính để làm nổi bật tính cách | 3
+ARCHETYPE | Kiểu nhân vật mẫu lặp lại trong nhiều câu chuyện | 3
+CLICHE | Chi tiết dùng đi dùng lại tới mức sáo mòn | 3 | STEREOTYPE
 MONTAGE | Lắp ghép cảnh trong phim | 3
 FORESHADOWING | Báo trước sự kiện | 3
 CLIMAX | Đỉnh cao sự căng thẳng | 3
 EXPOSITION | Giới thiệu bối cảnh ban đầu | 3
 RISING ACTION | Tăng dần sự căng thẳng | 3
 FALLING ACTION | Giải quyết xung đột | 3
-HAMMY | Diễn cảm quá mức | 3 | OVERACTED
-SLICK | Trơn tru nhưng không chân thực | 3
+HAMMY | Lối diễn cường điệu lố, cố quá hoá kệch | 3 | OVERACTED
+SLICK | Bóng bẩy mượt mà nhưng thiếu chiều sâu | 3
 SLAPSTICK | Hài kịch gồm những pha vật lộn | 3
-PARODY | Lấy cảm giả chế giễu | 3 | SATIRE
-FARCE | Hài kịch nô dai không hợp lý | 3
+PARODY | Tác phẩm nhại lại tác phẩm khác để chế giễu | 3 | SATIRE
+FARCE | Hài kịch tình huống phóng đại tới mức vô lý | 3
 DRAMEDY | Kết hợp kịch tính và hài hước | 3
 DOCUDRAMA | Phim tài liệu kịch tính | 3
 BIOPIC | Phim tiểu sử nhân vật | 3 | BIOGRAPHY
 NOIR | Phim đen tối u uất | 3
 GOTHIC | Phong cách quái dị ảm đạm | 3
-PASTICHE | Tác phẩm lấy cảm từ tác phẩm khác | 3 | IMITATION
+PASTICHE | Tác phẩm ghép nhiều phong cách của người khác mà không chế giễu | 3 | IMITATION
 HOMAGE | Lời tôn vinh tác phẩm/tác giả | 3
-ALLUSION | Gợi ý gián tiếp đến sự vật | 3 | REFERENCE
+ALLUSION | Cách nhắc khéo tới tác phẩm khác mà không gọi tên | 3
 MOTIF | Chủ đề lặp lại trong tác phẩm | 3
 LEITMOTIF | Giai điệu lặp lại cho nhân vật | 3
-TROPE | Phương pháp sáng tạo thường dùng | 3
-DEUS EX MACHINA | Giải pháp bất ngờ trong phim | 3
+TROPE | Mô típ quen thuộc hay gặp trong một thể loại | 3
+DEUS EX MACHINA | Tình tiết từ trên trời rơi xuống gỡ bí cho nhân vật | 3
 CATHARSIS | Giải phóng cảm xúc qua tác phẩm | 3
-TRAGIC FLAW | Nhược điểm của nhân vật chính | 3
-TRAGIC HERO | Nhân vật chính bị tiếng số | 3
+TRAGIC FLAW | Khuyết điểm trong tính cách dẫn nhân vật chính tới bi kịch | 3
+TRAGIC HERO | Nhân vật chính cao đẹp nhưng bị chính khuyết điểm của mình hại | 3
 ANTI-HERO | Nhân vật chính không toàn hảo | 3
 INGENUE | Nữ diễn viên trẻ và ngây thơ | 3
 INGENU | Nam diễn viên trẻ và ngây thơ | 3
 AVANT GARDE | Phong cách tiên phong thử nghiệm | 3
-FINALE | Phần kết thúc | 3 | ENDING
-POETIC JUSTICE | Công lý thơ mộng trong câu chuyện | 3
+FINALE | Màn cuối hoành tráng khép lại cả chương trình | 3 | ENDING
+POETIC JUSTICE | Kết truyện trong đó kẻ ác bị báo ứng đúng cách nó gây ra | 3
 DRAMATIC IRONY | Mâu thuẫn giữa biết và không biết | 3
 CADENZA | Đoạn solo khó trong âm nhạc | 3
 DIRECTOR | Đạo diễn chỉ đạo diễn xuất và góc máy | 1 | FILMMAKER
@@ -115,36 +115,36 @@ STAR | Ngôi sao nổi tiếng hàng đầu giới giải trí | 1 | MOVIE STAR,
 CELEBRITY | Người nổi tiếng có sức ảnh hưởng cộng đồng | 1 | CELEB
 AUDIENCE | Khán giả ngồi xem chăm chú theo dõi buổi diễn | 1 | SPECTATORS, VIEWERS
 SCENE | Một cảnh quay hấp dẫn trong phim | 1 | SHOT
-PLOT | Cốt truyện diễn biến hấp dẫn gay cấn | 2 | STORYLINE
+PLOT | Chuỗi sự kiện được sắp xếp thành câu chuyện | 2
 CHARACTER | Nhân vật xuất hiện trong phim truyện | 1 | ROLE
 VILLAIN | Kẻ phản diện ác độc đối đầu nhân vật chính | 2 | BAD GUY
-SUBTITLE | Dòng phụ đề dịch nghĩa chạy dưới đáy màn hình | 1 | CAPTION, SUBS
+SUBTITLE | Dòng chữ dịch lời thoại chạy dưới đáy màn hình | 1 | SUBS
 SOUNDTRACK | Nhạc phim ca khúc chủ đề gắn liền với phim | 1 | OST, FILM SCORE
 SPECIAL EFFECTS | Kỹ xảo hình ảnh vi tính cháy nổ ngoạn mục | 2 | VFX, CGI
 TRAILER | Đoạn video ngắn giới thiệu phim chuẩn bị chiếu | 1 | PREVIEW, TEASER
 PREMIERE | Buổi lễ công chiếu ra mắt phim đầu tiên | 2 | RED CARPET PREMIERE
 BLOCKBUSTER | Phim bom tấn xô đổ mọi kỷ lục phòng vé | 2 | HIT MOVIE
 DOCUMENTARY | Phim tài liệu ghi lại sự kiện người thật việc thật | 2 | DOCUSERIES
-COMEDY | Thể loại phim hài kịch đem lại tiếng cười sảng khoái | 1 | SITCOM
+COMEDY | Thể loại phim chọc cười, nói chung | 1
 HORROR | Thể loại phim kinh dị ma quái rùng rợn | 1 | SCARY MOVIE
 ACTION | Thể loại phim hành động rượt đuổi võ thuật | 1 | ACTION FILM
 DRAMA | Thể loại phim tâm lý chính kịch sâu sắc | 1 | MELODRAMA
-SCI-FI | Phim khoa học viễn tưởng du hành vũ trụ | 2 | SCIENCE FICTION
+SCI-FI | Phim tưởng tượng về khoa học và tương lai, gọi tắt | 2
 THRILLER | Thể loại phim giật gân kịch tính hồi hộp | 2 | SUSPENSE FILM
 PRODUCER | Nhà sản xuất chi tiền đầu tư làm phim | 2 | FILM PRODUCER
 GENRE | Thể loại phong cách nghệ thuật phim nhạc | 2 | CATEGORY
 STUDIO | Phim trường ghi hình hoặc phòng thu âm | 1 | SOUNDSTAGE
-STAGE | Sân khấu trung tâm biểu diễn ca múa kịch | 1 | PLATFORM
+STAGE | Bục cao nơi nghệ sĩ đứng biểu diễn | 1
 VOCALIST | Giọng ca lĩnh xướng trong ban nhạc | 2 | LEAD SINGER
 BAND | Ban nhạc sống gồm các thành viên chơi nhạc cụ | 1 | MUSICAL GROUP, ROCK BAND
-ORCHESTRA | Dàn nhạc giao hưởng hùng hậu hòa tấu | 2 | SYMPHONY
-CHOIR | Dàn hợp xướng nhiều giọng hát hòa quyện | 2 | CHORUS
+ORCHESTRA | Tập thể đông nhạc công chơi nhiều loại nhạc cụ cùng lúc | 2
+CHOIR | Nhóm người cùng hát nhiều bè | 2
 ALBUM | Đĩa nhạc tuyển tập các sáng tác mới | 1 | RECORD, LP
 LYRICS | Lời thơ ca từ của một bài hát | 1 | WORDS, SONG LYRICS
-RHYTHM | Tiết tấu nhịp điệu rộn ràng của bản nhạc | 2 | CADENCE, GROOVE
-BEAT | Nhịp phách đều đặn gõ theo tiếng trống | 1 | TEMPO, METER
+RHYTHM | Cách sắp xếp dài ngắn của các âm trong bản nhạc | 2 | GROOVE
+BEAT | Cú nhịp đều đặn mà người nghe gõ chân theo | 1 | METER
 MELODY | Giai điệu du dương thánh thót lọt tai | 1 | TUNE
-GUITAR | Cây đàn ghi ta 6 dây mộc mạc | 1 | ACOUSTIC GUITAR
+GUITAR | Cây đàn sáu dây thùng gỗ, gảy hoặc quạt chả | 1
 PIANO | Cây đàn dương cầm phím ngà lộng lẫy | 1 | GRAND PIANO
 DRUMS | Bộ trống gõ giữ nhịp sôi nổi | 1 | DRUM KIT
 VIOLIN | Cây đàn vĩ cầm kéo réo rắt da diết | 1 | FIDDLE
@@ -154,14 +154,14 @@ FLUTE | Cây sáo thổi hơi du dương réo rắt | 1 | WOODEN FLUTE
 HARMONICA | Chiếc kèn ac-mô-ni-ca nhỏ ngậm miệng thổi | 2 | MOUTH ORGAN
 CELLO | Cây đàn trung cầm lớn chống chân dưới sàn | 2 | VIOLONCELLO
 IDOL | Thần tượng được giới trẻ mến mộ cuồng nhiệt | 1 | SUPERSTAR
-AUTOGRAPH | Chữ ký tay nắn nót của người nổi tiếng tặng fan | 2 | SIGNATURE
+AUTOGRAPH | Chữ ký tay nắn nót của người nổi tiếng tặng fan | 2
 PAPARAZZI | Cánh săn ảnh lùng sục đời tư ngôi sao | 2 | PHOTO HUNTERS
-RED CARPET | Thảm đỏ trải sàn đón dàn sao sải bước | 1 | CARPET
-AWARD | Giải thưởng danh dự trao tặng cho tài năng | 1 | PRIZE, TROPHY
+RED CARPET | Thảm đỏ trải sàn đón dàn sao sải bước | 1
+AWARD | Giải thưởng danh dự trao tặng cho tài năng | 1 | PRIZE
 OSCAR | Bức tượng hiệp sĩ mạ vàng danh giá bậc nhất của Viện Hàn lâm Điện ảnh nước Mỹ | 1 | ACADEMY AWARD
 GRAMMY | Giải thưởng hình chiếc máy hát bằng vàng tôn vinh thành tựu âm nhạc | 1 | GRAMMY AWARD
-MISSION | Nhiệm vụ vượt thử thách trong game | 1 | QUEST
-SHOW | Chương trình biểu diễn nghệ thuật giải trí | 1 | PERFORMANCE
+MISSION | Nhiệm vụ vượt thử thách trong game | 1
+SHOW | Chương trình biểu diễn nghệ thuật giải trí | 1
 EPISODE | Một tập phát sóng của bộ phim truyền hình | 1 | CHAPTER
 SERIES | Loạt phim truyền hình nhiều tập ăn khách | 1 | TV SERIES, DRAMA SERIES
 HOST | Người dẫn dắt chương trình, giữ nhịp và nối các tiết mục | 1 | MC, PRESENTER
@@ -174,7 +174,7 @@ CLOWN | Chú hề mặt trắng mũi đỏ làm trò cười | 1 | JESTER
 JUGGLER | Nghệ sĩ xiếc tung hứng nhiều trái bóng khéo léo | 2 | TOSS JUGGLER
 ACROBAT | Nghệ sĩ nhào lộn uốn dẻo đu dây trên không | 2 | GYMNAST
 PUPPET | Con rối gỗ hoặc rối bóng cử động theo dây | 1 | MARIONETTE
-PUPPETRY | Bộ môn nghệ thuật múa rối dân gian | 2 | PUPPET SHOW
+PUPPETRY | Bộ môn nghệ thuật điều khiển con rối | 2
 VENTRILOQUIST | Nghệ sĩ tài ba nói tiếng bụng cử động rối | 3
 MAKEUP ARTIST | Chuyên viên trang điểm hoá trang khuôn mặt | 1 | COSMETICIAN
 STUNTMAN | Diễn viên đóng thế những pha nguy hiểm | 2 | STUNT DOUBLE
@@ -190,16 +190,16 @@ SPOILER | Lời tiết lộ trước kết thúc làm mất hứng xem | 1 | LEA
 CLIFFHANGER | Cái kết mở lửng lơ nghẹt thở ở cuối tập phim | 2 | SUSPENSE ENDING
 CAMEO | Vai diễn khách mời xuất hiện chớp nhoáng của ngôi sao | 2 | GUEST APPEARANCE
 STAND-IN | Người đứng thế chỗ chỉnh góc máy và ánh sáng | 3 | BODY DOUBLE
-VOICE ACTOR | Diễn viên lồng tiếng cho nhân vật hoạt hình | 1 | DUBBER
-DUBBING | Kỹ thuật lồng tiếng đè lên giọng gốc | 2 | VOICE-OVER
+VOICE ACTOR | Người cho nhân vật mượn giọng nói | 1 | DUBBER
+DUBBING | Kỹ thuật thu giọng đè lên tiếng gốc của phim | 2 | VOICE-OVER
 PLAYLIST | Danh sách phát chọn lọc các ca khúc yêu thích | 1 | TRACKLIST
-CHORUS | Đoạn điệp khúc cao trào dễ nhớ nhất bài hát | 1 | HOOK, REFRAIN
+CHORUS | Đoạn điệp khúc lặp lại giữa các lời của bài hát | 1
 VERSE | Đoạn lời ca kể chuyện mở đầu bài hát | 2 | STANZA
 INTRO | Đoạn dạo nhạc mở màn bài hát | 1 | INTRODUCTION
-OUTRO | Đoạn nhạc kết thúc khép lại bài hát | 2 | FINALE
+OUTRO | Đoạn nhạc ngắn tắt dần ở cuối bài hát | 2
 SOLO | Tiết mục đơn ca hoặc độc tấu nhạc cụ | 1 | SOLO ACT
 DUET | Màn song ca ngọt ngào của hai ca sĩ | 1 | DUO
-ENCORE | Lời kêu gọi vỗ tay hát thêm bài nữa của khán giả | 2 | REPEAT
+ENCORE | Lời kêu gọi vỗ tay hát thêm bài nữa của khán giả | 2
 METRONOME | Máy đếm nhịp gõ phách giữ nhịp cho người học đàn | 2 | TEMPO TICKER
 TUNER | Máy lên dây đàn chỉnh đúng cao độ nốt | 2 | PITCH PIPE
 AMPLIFIER | Bộ amply khuếch đại âm thanh guitar điện | 2 | AMP
@@ -226,10 +226,10 @@ BROADCAST | Chương trình phát sóng trên sóng truyền hình đài phát t
 CHANNEL | Kênh truyền hình giải trí hoặc thời sự | 1 | TV CHANNEL
 RATING | Tỷ suất người xem đo độ ăn khách của chương trình | 2 | VIEWERSHIP
 PRIME TIME | Khung giờ vàng phát sóng thu hút đông người xem nhất | 2 | PEAK HOURS
-COMMERCIAL | Đoạn video quảng cáo chèn giữa chương trình | 1 | TV AD, ADVERTISEMENT
+COMMERCIAL | Đoạn video quảng cáo chèn giữa chương trình | 1 | TV AD
 AUDITION | Buổi thi tuyển thử giọng tìm kiếm tài năng | 1 | TRYOUT
-CONTESTANT | Thí sinh tham gia thi tài trong cuộc thi | 1 | COMPETITOR
-VOTE | Lượt bình chọn gửi tin nhắn của khán giả | 1 | BALLOT
+CONTESTANT | Thí sinh tham gia thi tài trong cuộc thi | 1
+VOTE | Lượt bình chọn gửi tin nhắn của khán giả | 1
 REALITY SHOW | Chương trình truyền hình thực tế ghi lại đời thực | 1 | REALITY TV
 GAME SHOW | Trò chơi truyền hình đố vui có thưởng | 1 | QUIZ SHOW
 TALK SHOW | Chương trình trò chuyện đối thoại với người nổi tiếng | 1 | CHAT SHOW
@@ -240,11 +240,11 @@ ILLUSTRATOR | Hoạ sĩ vẽ tranh minh hoạ sách báo truyện tranh | 2 | GR
 NOVEL | Cuốn tiểu thuyết văn học dày cộp | 1 | FICTION BOOK
 COMIC BOOK | Cuốn truyện tranh tranh vẽ màu sắc cho tuổi teen | 1 | GRAPHIC NOVEL
 MANGA | Truyện tranh phong cách Nhật Bản đọc từ phải sang | 1 | JAPANESE COMIC
-SUPERHERO | Siêu anh hùng sở hữu siêu năng lực phi thường | 1 | HERO
-SPACESHIP | Con tàu vũ trụ du hành khám phá các vì sao | 1 | STARSHIP
+SUPERHERO | Siêu anh hùng sở hữu siêu năng lực phi thường | 1
+SPACESHIP | Con tàu vũ trụ du hành khám phá các vì sao | 1
 CYBORG | Người nửa người nửa máy cấy ghép kim loại | 2 | BIONIC HUMAN
 MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa | 2
-SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội | 2
+SYMPHONY | Tác phẩm nhiều chương viết cho dàn nhạc lớn | 2
 AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát | 3
 CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh | 3
 EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật | 2
@@ -261,11 +261,11 @@ SPOTIFY | Ứng dụng nghe nhạc trực tuyến hàng đầu | 1 | MUSIC APP
 YOUTUBE | Nền tảng chia sẻ video lớn nhất hành tinh | 1 | VIDEO PLATFORM
 TIKTOK | Mạng xã hội video ngắn nổi tiếng giới trẻ | 1 | SHORT VIDEO APP
 PODCAST | Chương trình âm thanh phát thanh chủ đề để nghe | 1 | AUDIO SHOW
-VLOGGER | Người làm video nhật ký đời sống chia sẻ lên mạng | 1 | CONTENT CREATOR
+VLOGGER | Người làm video nhật ký đời sống chia sẻ lên mạng | 1
 GAMER | Game thủ đam mê chơi các trò chơi điện tử | 1 | PRO GAMER
 COSPLAY | Trò hoá trang thành nhân vật truyện tranh game | 1 | COSTUME PLAY
 ANIME | Hoạt hình phong cách truyện tranh Nhật Bản | 1 | JAPANESE ANIMATION
-FANDOM | Cộng đồng những người cùng hâm mộ một thần tượng | 1 | FAN CLUB
+FANDOM | Cộng đồng những người cùng hâm mộ một thần tượng | 1
 LIGHTSTICK | Gậy phát sáng cổ vũ thần tượng trong concert | 1 | GLOW STICK
 FANMEETING | Buổi họp mặt giao lưu ấm cúng giữa thần tượng và fan | 1 | FAN MEET
 DEBUT | Màn ra mắt chính thức bước chân vào showbiz | 1 | FIRST APPEARANCE
@@ -284,9 +284,9 @@ EDM | Dòng nhạc điện tử sôi động quẩy tung sàn nhảy | 1 | DANCE
 DJ | Người chỉnh nhạc trộn nhạc khuấy động bữa tiệc | 1 | DISC JOCKEY
 REMIX | Bản phối lại mới mẻ của một bài hát cũ | 1 | NEW MIX
 COVER | Bản hát lại ca khúc của ca sĩ khác | 1 | COVER VERSION
-KARAOKE | Hoạt động hát theo nhạc đệm có lời trên màn hình | 1 | SING-ALONG
+KARAOKE | Hoạt động hát theo nhạc đệm có lời trên màn hình | 1
 MEME | Hình ảnh hoặc video hài hước chế lại lan truyền | 1 | INTERNET MEME
-SUBSCRIBER | Người bấm đăng ký theo dõi kênh video | 1 | FOLLOWER
+SUBSCRIBER | Người bấm đăng ký theo dõi kênh video | 1
 VIEW | Lượt xem hiển thị độ ăn khách của video | 1 | PAGEVIEW
 HIGHLIGHT | Khoảnh khắc đáng nhớ ấn tượng nhất buổi diễn | 1 | BEST MOMENTS
 BLOOPER | Cảnh quay hỏng hậu trường cười ra nước mắt | 2 | GAG REEL, OUTTAKE
@@ -340,9 +340,9 @@ UNPLUGGED | Buổi diễn nhạc mộc chỉ dùng nhạc cụ thùng không c�
 JAM SESSION | Buổi chơi nhạc ngẫu hứng cùng nhau của các nhạc công | 2 | IMPROV
 AUDITORY | Thuộc về thính giác và cảm nhận âm thanh | 3
 BLOCKING | Sự sắp xếp vị trí đứng và di chuyển của diễn viên trên sân khấu | 3 | STAGE MOVEMENT
-SOLILOQUY | Đoạn độc thoại nội tâm bộc bạch một mình của nhân vật | 3 | MONOLOGUE
+SOLILOQUY | Đoạn độc thoại nội tâm bộc bạch một mình của nhân vật | 3
 DIALOGUE | Cuộc đối thoại trò chuyện qua lại giữa hai nhân vật | 1 | CONVERSATION, DIALOG
-PROLOGUE | Phần mở đầu dẫn chuyện cho cả tác phẩm | 2 | FOREWORD
+PROLOGUE | Phần mở đầu dẫn chuyện cho cả tác phẩm | 2
 EPILOGUE | Phần vĩ thanh kết thúc khép lại câu chuyện | 2 | AFTERWORD
 ACT | Một hồi kịch lớn trong vở kịch nhiều màn | 1 | PLAY SECTION
 CURTAIN RISES | Khoảnh khắc tấm màn nhung kéo lên mở màn | 2
