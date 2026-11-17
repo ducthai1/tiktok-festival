@@ -12,7 +12,7 @@ KNOCK ON WOOD | Gõ vào gỗ cầu may | 3 | TOUCH WOOD
 UNDER PRESSURE | Chịu áp lực | 1
 WALK IN THE PARK | Dễ như dạo công viên | 2
 WASTE OF TIME | Phí thời gian | 1
-WIN-WIN | Đôi bên cùng có lợi | 1 | WIN WIN
+WIN-WIN | Đôi bên cùng có lợi | 1
 WORTH IT | Đáng đồng tiền bát gạo | 1
 YOU ONLY LIVE ONCE | Đời người chỉ sống một lần | 1 | YOLO
 AT THE DROP OF A HAT | Ngay lập tức không chần chừ | 3

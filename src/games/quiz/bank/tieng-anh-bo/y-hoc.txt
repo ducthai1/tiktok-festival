@@ -256,7 +256,7 @@ SYNDROME | Hội chứng bệnh lý | 3
 ABDOMEN | Vùng bụng | 2
 BONE MARROW | Tủy xương | 3
 CANCER | Bệnh ung thư | 1
-CHOLESTEROL | Chất mỡ trong máu | 2 | CHOLESTEROL
+CHOLESTEROL | Chất mỡ trong máu | 2
 CONCUSSION | Sự chấn động não | 3
 DIZZINESS | Cơn chóng mặt | 1
 GENETICS | Di truyền học | 3
@@ -371,8 +371,8 @@ POST TRAUMATIC STRESS | Rối loạn căng thẳng sau sang chấn PTSD | 3
 BIPOLAR DISORDER | Rối loạn lưỡng cực thay đổi cực đoan giữa hưng và trầm | 3
 SCHIZOPHRENIA | Tâm thần phân liệt rối loạn tâm thần nghiêm trọng ảo giác hoang tưởng | 3
 DEMENTIA | Sa sút trí tuệ suy giảm trí nhớ và nhận thức ở người cao tuổi | 2
-ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi | 2 | ALZHEIMER
-PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động | 2 | PARKINSON
+ALZHEIMER | Chứng bệnh sa sút trí tuệ và suy giảm trí nhớ nghiêm trọng phổ biến ở người cao tuổi | 2
+PARKINSON | Hội chứng thoái hóa thần kinh tiến triển gây run tay chân và cứng đờ cử động | 2
 EPILEPSY | Động kinh rối loạn thần kinh gây co giật định kỳ | 2
 MIGRAINE | Chứng đau nửa đầu dữ dội kèm buồn nôn và nhạy cảm ánh sáng | 1
 KIDNEY STONE | Sỏi thận cặn khoáng chất tích tụ trong thận | 1

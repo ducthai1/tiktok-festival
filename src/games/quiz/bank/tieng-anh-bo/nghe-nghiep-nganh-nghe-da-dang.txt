@@ -104,7 +104,7 @@ DOG HANDLER | Huấn luyện viên chó cảnh sát | 2
 POLICE DISPATCHER | Điều độ cảnh sát | 2
 PRIVATE INVESTIGATOR | Thám tư tư nhân | 2
 FRAUD INVESTIGATOR | Điều tra viên gian lận | 2
-BOUNTY HUNTER | Thợ bắt trốn truy nã | 2 | BOUNTY HUNTER
+BOUNTY HUNTER | Thợ bắt trốn truy nã | 2
 ARMED GUARD | Canh gác có vũ trang | 2
 TRAFFIC OFFICER | Cảnh sát giao thông | 2
 PARKING ATTENDANT | Nhân viên canh giữ bãi đỗ xe | 2

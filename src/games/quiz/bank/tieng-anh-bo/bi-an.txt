@@ -54,7 +54,7 @@ INFILTRATION | Thâm nhập vào tổ chức bí mật | 3
 SPYCRAFT | Kỹ thuật điệp báo tinh vi | 3
 CODED MESSAGE | Thông điệp mã hóa bí mật | 2
 INVISIBLE INK | Mực vô hình viết bí mật | 3
-DEAD DROP | Nơi để lại thông tin bí mật | 3 | DEAD DROP
+DEAD DROP | Nơi để lại thông tin bí mật | 3
 SEER | Người tiên tri nhìn thấy tương lai | 3 | PROPHET
 FORESIGHT | Khả năng nhìn trước tương lai | 3
 PSYCHIC | Nhân vật có khả năng tâm linh | 3
@@ -170,7 +170,7 @@ HALLOWEEN | Tết ma ngày 31 tháng 10 | 1 | ALL HALLOWS EVE
 JACK O'LANTERN | Quả bí ngô khắc mặt Halloween | 1 | PUMPKIN
 COSTUME | Trang phục hóa trang lạ | 1 | OUTFIT, DISGUISE
 TRICK OR TREAT | Lừa hay quà Halloween | 1
-COFFIN | Quan tài hộp chứa xác | 1 | CASKET, COFFIN
+COFFIN | Quan tài hộp chứa xác | 1 | CASKET
 ZOMBIE | Xác sống người chết sống lại | 1 | UNDEAD
 REINCARNATION | Luân hồi tái sinh linh hồn | 2 | REBIRTH
 IMMORTAL | Bất tử không chết được | 1 | ETERNAL, UNDYING

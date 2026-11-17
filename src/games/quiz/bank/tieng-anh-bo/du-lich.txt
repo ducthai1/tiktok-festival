@@ -105,8 +105,8 @@ RESORT | Khu nghỉ dưỡng sinh thái ven biển hoặc trên đồi | 1 | HOL
 MOTEL | Nhà nghỉ ven đường cao tốc cho khách đi xe | 2 | MOTOR INN
 HOSTEL | Nhà nghỉ tập thể giường tầng giá rẻ cho dân phượt | 2 | YOUTH HOSTEL
 HOMESTAY | Hình thức ở lại nhà người dân bản địa trải nghiệm | 1 | HOME STAY
-CHECK-IN | Thủ tục nhận phòng khách sạn hoặc làm thủ tục bay | 1 | CHECK IN
-CHECK-OUT | Thủ tục trả phòng khách sạn thanh toán | 1 | CHECK OUT
+CHECK-IN | Thủ tục nhận phòng khách sạn hoặc làm thủ tục bay | 1
+CHECK-OUT | Thủ tục trả phòng khách sạn thanh toán | 1
 RECEPTION | Quầy lễ tân đón tiếp khách ra vào | 1 | FRONT DESK
 CONCIERGE | Nhân viên hỗ trợ đặt tour và thông tin khách sạn | 3
 LOBBY | Sảnh lớn đón khách ở tầng trệt khách sạn | 2 | HOTEL LOBBY
@@ -463,7 +463,7 @@ FULL BOARD | Gói phòng phục vụ đủ 3 bữa ăn mỗi ngày | 2
 BUFFET | Tiệc đứng tự chọn món ăn thỏa thích | 1 | SMORGASBORD
 CONTINENTAL BREAKFAST | Bữa sáng kiểu Âu nhẹ nhàng bánh mì cà phê | 2
 VALET PARKING | Dịch vụ nhân viên lái xe đỗ xe hộ | 2 | CAR VALET
-WAKE-UP CALL | Cuộc gọi báo thức buổi sáng của lễ tân khách sạn | 1 | WAKE UP CALL
+WAKE-UP CALL | Cuộc gọi báo thức buổi sáng của lễ tân khách sạn | 1
 ROOM SERVICE | Dịch vụ phục vụ đồ ăn mang tận phòng | 1
 HOUSEKEEPING | Bộ phận buồng phòng dọn dẹp phòng khách sạn | 2 | ROOM CLEANING
 MINIBAR | Tủ lạnh nhỏ chứa sẵn đồ uống có tính phí trong phòng | 1 | MINI BAR

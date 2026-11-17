@@ -1,8 +1,8 @@
 # Tiếng Anh · Công nghệ
 SMART TV | Ti vi thông minh | 1
-MICROCHIP | Vi mạch | 3 | CHIP
+MICROCHIP | Tấm mạch tí hon tích hợp hàng triệu bóng bán dẫn | 3
 TRANSISTOR | Bóng bán dẫn | 3
-SOLDER | Hàn linh kiện điện tử | 3 | SOLDERING
+SOLDER | Động từ chỉ việc dùng mỏ hàn gắn linh kiện lên bo mạch | 3
 CIRCUIT BOARD | Bo mạch | 2 | PCB
 POWER SUPPLY | Bộ nguồn | 2 | PSU
 COOLING FAN | Quạt tản nhiệt | 2
@@ -28,20 +28,20 @@ DATA BREACH | Rò rỉ dữ liệu | 3 | DATA LEAK
 IDENTITY THEFT | Đánh cắp danh tính | 3
 ANTIVIRUS | Phần mềm diệt virus | 1
 POP-UP | Cửa sổ bật lên | 2 | POPUP
-DRAG AND DROP | Kéo và thả | 2 | DRAG
-DOUBLE-CLICK | Nhấp đúp chuột | 1 | DOUBLE CLICK
-RIGHT-CLICK | Nhấp chuột phải | 1 | RIGHT CLICK
-TOGGLE | Nút gạt bật/tắt | 3 | SWITCH
+DRAG AND DROP | Kéo và thả | 2
+DOUBLE-CLICK | Nhấp đúp chuột | 1
+RIGHT-CLICK | Nhấp chuột phải | 1
+TOGGLE | Nút gạt bật/tắt | 3
 DROPDOWN | Danh sách thả xuống | 3 | DROP-DOWN, DROPDOWN MENU
 CHECKBOX | Ô đánh dấu (tích chọn) | 2 | CHECK BOX, TICK BOX
 SLIDER | Thanh trượt (kéo để chỉnh) | 3
 PROGRESS BAR | Thanh tiến trình | 2
 BUFFERING | Video đang tải bị khựng | 2 | BUFFER
-GLITCH | Trục trặc nhỏ (lỗi vặt) | 2
+GLITCH | Trục trặc thoáng qua rồi tự hết, không rõ nguyên do | 2
 FACTORY RESET | Khôi phục cài đặt gốc | 2 | RESET
 FORMAT | Định dạng (ổ đĩa) | 2
 ZIP | Nén tệp | 2 | COMPRESS
-UNZIP | Giải nén tệp | 2 | EXTRACT, DECOMPRESS
+UNZIP | Giải nén tệp | 2 | DECOMPRESS
 SPREADSHEET | Bảng tính | 2
 WORD PROCESSOR | Trình soạn thảo văn bản | 3
 SLIDESHOW | Trình chiếu ảnh/slide | 2
@@ -50,7 +50,7 @@ PIXEL | Điểm ảnh | 2
 SCREENSAVER | Hình chờ bảo vệ màn hình | 3
 TRACKPAD | Bàn di chuột (laptop) | 2 | TOUCHPAD
 STYLUS | Bút cảm ứng | 2 | STYLUS PEN
-CHARGING PORT | Cổng sạc | 2 | PORT
+CHARGING PORT | Cổng sạc | 2
 ADAPTER | Bộ chuyển đổi (củ đổi) | 2 | ADAPTOR
 UPS | Bộ lưu điện | 3
 IN-APP PURCHASE | Mua hàng trong ứng dụng | 3
@@ -76,18 +76,18 @@ SCREEN TIME | Thời gian dùng màn hình | 2
 AIRPLANE MODE | Chế độ máy bay | 1 | FLIGHT MODE
 SILENT MODE | Chế độ im lặng | 1 | SILENT
 LOCK SCREEN | Màn hình khóa | 1
-HOME SCREEN | Màn hình chính (điện thoại) | 1
+HOME SCREEN | Màn hình đầu tiên của điện thoại hiện ra sau khi mở khoá | 1
 SOFTWARE UPDATE | Cập nhật phần mềm | 1
-CLOUD STORAGE | Lưu trữ đám mây | 2
+CLOUD STORAGE | Dịch vụ cho thuê chỗ chứa file trên mạng như Drive hay Dropbox | 2
 COMPUTER | Máy tính | 1 | PC
-LAPTOP | Máy tính xách tay | 1 | NOTEBOOK
-SMARTPHONE | Điện thoại thông minh | 1 | PHONE, MOBILE PHONE, CELL PHONE
+LAPTOP | Máy tính xách tay | 1
+SMARTPHONE | Điện thoại thông minh | 1 | MOBILE PHONE, CELL PHONE
 TABLET | Máy tính bảng | 1
 KEYBOARD | Bàn phím | 1
 MOUSE | Chuột máy tính | 1
-SCREEN | Màn hình | 1 | MONITOR, DISPLAY
+SCREEN | Mặt kính hiển thị hình ảnh của thiết bị | 1
 SPEAKER | Cái loa | 1 | SPEAKERS, LOUDSPEAKER
-HEADPHONES | Tai nghe | 1 | HEADPHONE, HEADSET, EARPHONES
+HEADPHONES | Tai nghe chụp kín hai bên tai, có gọng vòng qua đầu | 1
 CHARGER | Củ sạc, bộ sạc | 1
 BATTERY | Viên pin | 1
 CABLE | Dây cáp | 1 | WIRE, CORD
@@ -97,34 +97,34 @@ INSTALL | Cài đặt phần mềm (động từ) | 1
 DELETE | Xoá dữ liệu | 1 | REMOVE, ERASE
 COPY | Sao chép | 1
 PASTE | Dán (sau khi sao chép) | 1
-LOG IN | Đăng nhập | 1 | LOGIN, SIGN IN
-LOG OUT | Đăng xuất | 1 | LOGOUT, SIGN OUT
+LOG IN | Đăng nhập | 1 | LOGIN
+LOG OUT | Đăng xuất | 1 | LOGOUT
 SIGN UP | Đăng ký tài khoản | 1 | REGISTER
 ACCOUNT | Tài khoản | 1
 PASSWORD | Mật khẩu | 1 | PASSCODE
 USERNAME | Tên đăng nhập | 1 | USER NAME
 MESSAGE | Tin nhắn | 1 | TEXT, SMS
-FILE | Tệp tin | 1 | DOCUMENT
+FILE | Tệp tin | 1
 FOLDER | Thư mục | 1 | DIRECTORY
 ICON | Biểu tượng trên màn hình | 1
-APP | Ứng dụng | 1 | APPLICATION, APPS
+APP | Ứng dụng | 1 | APPS
 SOFTWARE | Phần mềm | 1 | PROGRAM, PROGRAMME
 DATA | Dữ liệu | 1
-AI | Trí tuệ nhân tạo | 1 | ARTIFICIAL INTELLIGENCE
+AI | Viết tắt hai chữ cái của trí tuệ nhân tạo | 1
 ROBOT | Người máy | 1
 SELFIE | Ảnh tự sướng | 1
 SCREENSHOT | Ảnh chụp màn hình | 1 | SCREEN SHOT, SCREEN CAPTURE
-LIVESTREAM | Phát trực tiếp | 1 | LIVE STREAM, LIVE, STREAM
+LIVESTREAM | Phát trực tiếp | 1 | LIVE STREAM
 FOLLOWER | Người theo dõi | 1 | FOLLOWERS
 LIKE | Bấm thích | 1
 SHARE | Chia sẻ | 1
 COMMENT | Bình luận | 1
 POST | Bài đăng | 1 | STATUS
-CLICK | Nhấp chuột | 1 | TAP
+CLICK | Nhấp chuột | 1
 TYPE | Gõ phím | 1
 PRINT | In tài liệu | 1
 CONNECT | Kết nối | 1
-SHUT DOWN | Tắt máy | 1 | TURN OFF, POWER OFF, SHUTDOWN, SWITCH OFF
+SHUT DOWN | Tắt máy | 1 | POWER OFF, SHUTDOWN, SWITCH OFF
 LOADING | Đang tải | 1
 SPEED | Tốc độ | 1
 DEVICE | Thiết bị điện tử | 1 | GADGET
@@ -132,73 +132,73 @@ TECHNOLOGY | Công nghệ | 1 | TECH
 ENGINEER | Kỹ sư | 1
 ELECTRICITY | Điện (năng lượng) | 1 | POWER
 CHAT | Nhắn tin trò chuyện | 1 | TEXT
-ONLINE SHOPPING | Mua sắm trực tuyến | 1 | E-COMMERCE, ECOMMERCE
+ONLINE SHOPPING | Mua sắm trực tuyến | 1 | ECOMMERCE
 PLUG | Phích cắm điện | 2
-SOCKET | Ổ cắm điện | 2 | OUTLET, POWER POINT
+SOCKET | Ổ cắm điện | 2 | POWER POINT
 NETWORK | Mạng (mạng máy tính) | 2
 BROWSER | Trình duyệt | 2 | WEB BROWSER
 SEARCH ENGINE | Công cụ tìm kiếm | 2
 UNDO | Hoàn tác | 2
 REFRESH | Tải lại trang | 2 | RELOAD
 PROFILE | Hồ sơ cá nhân trên mạng | 2
-NOTIFICATION | Thông báo trên điện thoại | 2 | ALERT, NOTIFICATIONS
+NOTIFICATION | Thông báo trên điện thoại | 2 | NOTIFICATIONS
 ATTACHMENT | Tệp đính kèm | 2
-DESKTOP | Màn hình chính máy tính | 2 | HOME SCREEN
+DESKTOP | Mặt nền máy tính bày các biểu tượng, cũng chỉ loại máy để bàn | 2
 HARDWARE | Phần cứng | 2
 PROGRAMMER | Lập trình viên | 2 | CODER, DEVELOPER, SOFTWARE ENGINEER
 CODE | Mã lập trình | 2 | SOURCE CODE
-BUG | Lỗi phần mềm | 2 | ERROR, GLITCH
+BUG | Lỗi nằm trong mã khiến phần mềm chạy sai kết quả | 2 | ERROR
 HACKER | Tin tặc | 2
-SECURITY | Bảo mật | 2 | CYBERSECURITY
+SECURITY | Việc giữ an toàn nói chung, cả cửa nẻo lẫn dữ liệu | 2
 PRIVACY | Quyền riêng tư | 2
 BACKUP | Sao lưu dữ liệu | 2 | BACK UP, BACK-UP
-CLOUD | Đám mây lưu trữ | 2 | CLOUD STORAGE
+CLOUD | Cách gọi tắt việc để dữ liệu trên máy chủ người khác qua mạng | 2
 STORAGE | Dung lượng lưu trữ | 2 | SPACE
-MEMORY | Bộ nhớ tạm giữ dữ liệu đang chạy, tắt máy là mất | 2 | RAM
+MEMORY | Bộ nhớ tạm giữ dữ liệu đang chạy, tắt máy là mất | 2
 DATABASE | Cơ sở dữ liệu | 2
 DRONE | Máy bay không người lái | 2 | UAV
 VIRTUAL REALITY | Thực tế ảo | 2 | VR
-SUBSCRIBE | Đăng ký theo dõi kênh | 2 | FOLLOW
+SUBSCRIBE | Đăng ký theo dõi kênh | 2
 HASHTAG | Thẻ bắt đầu bằng dấu thăng (#) | 2 | TAG
-VIRAL | Lan truyền rần rần (nổi trên mạng) | 2 | TRENDING
+VIRAL | Lan truyền rần rần (nổi trên mạng) | 2
 CONTENT | Nội dung | 2
-CREATOR | Nhà sáng tạo nội dung | 2 | CONTENT CREATOR
+CREATOR | Nhà sáng tạo nội dung | 2
 INFLUENCER | Người có đông người theo dõi, nói gì cũng tác động tới số đông | 2 | KOL
-SCROLL | Lướt màn hình | 2 | SWIPE
-TAP | Chạm nhẹ vào màn hình | 2 | CLICK, PRESS
+SCROLL | Lướt màn hình | 2
+TAP | Chạm nhẹ vào màn hình | 2
 BARCODE | Mã vạch | 2
-SIGNAL | Tín hiệu sóng điện thoại | 2 | RECEPTION
-ROUTER | Bộ phát wifi | 2 | MODEM
+SIGNAL | Tín hiệu sóng điện thoại | 2
+ROUTER | Bộ phát wifi | 2
 DISCONNECT | Ngắt kết nối | 2
-CRASH | Bị sập, bị treo (ứng dụng) | 2 | FREEZE, HANG
+CRASH | Bị sập, bị treo (ứng dụng) | 2 | HANG
 DIGITAL | Kỹ thuật số | 2
 INVENT | Phát minh (động từ) | 2 | CREATE
 SATELLITE | Vệ tinh | 2
-E-WALLET | Ví điện tử | 2 | EWALLET, DIGITAL WALLET, E WALLET
+E-WALLET | Ví điện tử | 2 | EWALLET
 SPAM | Thư rác | 2 | JUNK MAIL, JUNK
 SCAM | Lừa đảo qua mạng | 2 | FRAUD
 FREE TRIAL | Dùng thử miễn phí | 2
 VERSION | Phiên bản | 2
-FEATURE | Tính năng | 2 | FUNCTION
+FEATURE | Một tính năng cụ thể mà phần mềm cung cấp cho người dùng | 2
 SHORTCUT | Phím tắt | 2 | HOTKEY, KEYBOARD SHORTCUT
 SPACE BAR | Phím cách | 2 | SPACE, SPACEBAR
-ENTER | Phím xuống dòng | 2 | RETURN
+ENTER | Phím xuống dòng | 2
 WIRELESS | Không dây | 2 | CORDLESS
 TOUCHSCREEN | Màn hình cảm ứng | 2 | TOUCH SCREEN
-PROCESSOR | Bộ vi xử lý | 3 | CPU, CHIP, MICROPROCESSOR
+PROCESSOR | Linh kiện tính toán chính, quyết định máy chạy nhanh hay chậm | 3
 ALGORITHM | Thuật toán | 3
 ENCRYPTION | Mã hoá dữ liệu | 3 | ENCRYPT
 INNOVATION | Sự đổi mới công nghệ | 3
 CIRCUIT | Mạch điện | 3
 SENSOR | Cảm biến | 3
-NAVIGATION | Định vị chỉ đường | 3 | GPS
+NAVIGATION | Định vị chỉ đường | 3
 SUBSCRIPTION | Gói đăng ký trả phí | 3
 INTERFACE | Giao diện | 3 | UI, USER INTERFACE
 PORTABLE | Dễ mang theo (di động) | 3
 FIRMWARE | Phần mềm điều khiển thiết bị | 3
 COMPATIBLE | Tương thích | 3
 AUTHENTICATION | Xác thực (bảo mật) | 3 | VERIFICATION
-MALWARE | Phần mềm độc hại | 3 | VIRUS
+MALWARE | Phần mềm viết ra để phá hoại hoặc ăn cắp dữ liệu | 3
 FIREWALL | Tường lửa | 3
 PROGRAMMING | Lập trình (ngành) | 3 | CODING
 CYBERSPACE | Không gian mạng | 3
@@ -209,29 +209,29 @@ PROJECTOR | Máy chiếu | 2
 HARD DRIVE | Ổ cứng | 2 | HARD DISK, HDD
 POWER BANK | Sạc dự phòng | 1 | PORTABLE CHARGER
 SMARTWATCH | Đồng hồ thông minh | 1 | SMART WATCH
-EARBUDS | Tai nghe nhét tai | 2 | EARPHONES
-GAME CONSOLE | Máy chơi điện tử (cầm tay, cắm TV) | 2 | CONSOLE
-VIDEO GAME | Trò chơi điện tử | 1 | GAME
+EARBUDS | Tai nghe nhét tai | 2
+GAME CONSOLE | Máy chuyên để chơi game, cắm vào ti vi hoặc cầm tay | 2
+VIDEO GAME | Trò chơi chạy trên máy tính hoặc máy chơi game | 1
 SEARCH | Tìm kiếm trên mạng | 1 | LOOK UP
-LINK | Đường liên kết | 2 | URL, HYPERLINK
-CHATBOT | Trợ lý trò chuyện tự động | 3 | BOT
+LINK | Chỗ bấm vào để nhảy sang trang khác | 2
+CHATBOT | Trợ lý trò chuyện tự động | 3
 SMART HOME | Nhà thông minh | 2
-ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo mô phỏng khả năng suy nghĩ của con người | 2 | AI
+ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo mô phỏng khả năng suy nghĩ của con người | 2
 CYBERSECURITY | An ninh mạng | 3
 CLOUD COMPUTING | Điện toán đám mây | 2
 BLOCKCHAIN | Công nghệ chuỗi khối | 3
 AUTOMATION | Tự động hóa quy trình | 3
 CRYPTOCURRENCY | Tiền mã hóa / tiền điện tử | 3
 FRAMEWORK | Bộ khung phần mềm / nền tảng | 3
-MICROPROCESSOR | Bộ vi xử lý | 3
+MICROPROCESSOR | Cả bộ xử lý thu gọn trong một con chip duy nhất | 3
 OPEN SOURCE | Mã nguồn mở | 2
 SEMICONDUCTOR | Vật liệu bán dẫn | 3
 AUGMENTED REALITY | Công nghệ chồng hình ảo lên khung cảnh thật qua màn hình | 3 | AR
-FRONTEND | Giao diện phía người dùng | 2 | FRONTEND
-BACKEND | Hệ thống máy chủ phía sau | 2 | BACKEND
-FULLSTACK | Lập trình viên toàn năng | 3 | FULLSTACK
+FRONTEND | Giao diện phía người dùng | 2
+BACKEND | Hệ thống máy chủ phía sau | 2
+FULLSTACK | Lập trình viên toàn năng | 3
 REPOSITORY | Kho lưu trữ mã nguồn | 3
-CONTAINER | Công nghệ đóng gói ứng dụng (Docker) | 3 | CONTAINER
+CONTAINER | Gói chứa ứng dụng cùng mọi thứ nó cần để chạy ở đâu cũng được | 3
 DEPLOYMENT | Việc triển khai ứng dụng lên mạng | 3
 COMPILER | Trình biên dịch mã nguồn | 3
 INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truyền mạng điện tử | 3 | IOT
@@ -249,8 +249,8 @@ MIDDLEWARE | Phần mềm trung gian | 3
 ARCHITECTURE | Kiến trúc hệ thống | 2
 AUTHORIZATION | Việc cấp quyền truy cập | 3
 CRYPTOGRAPHY | Mật mã học | 3
-COMPUTING | Việc tính toán / điện toán | 1
-REFACTORING | Việc tối ưu lại mã nguồn | 3
+COMPUTING | Việc dùng máy tính để xử lý và tính toán nói chung | 1
+REFACTORING | Danh từ chỉ công việc dọn dẹp lại mã nguồn cho gọn | 3
 ABSTRACTION | Tính trừu tượng trong lập trình | 3
 ENCAPSULATION | Tính đóng gói dữ liệu | 3
 INHERITANCE | Tính kế thừa trong lập trình | 3
@@ -259,29 +259,29 @@ DEPRECATED | Đã lỗi thời / không khuyến khích dùng | 3
 BACKWARD COMPATIBILITY | Tính tương thích ngược | 3
 IMMUTABLE | Không thể thay đổi | 3
 SERIALIZATION | Việc tuần tự hóa dữ liệu | 3
-HYPERLINK | Đường dẫn liên kết | 1
+HYPERLINK | Tên đầy đủ mang tính kỹ thuật của đường dẫn bấm được | 1
 PHISHING | Tấn công lừa đảo qua mạng | 2
 RANSOMWARE | Mã độc tống tiền | 3
 SPYWARE | Phần mềm gián điệp | 2
 ADWARE | Phần mềm quảng cáo độc hại | 2
 BOTNET | Mạng máy tính ma | 3
 CLOUD NATIVE | Công nghệ dựa trên đám mây | 3
-MICROSERVICES | Kiến trúc vi dịch vụ | 3
-CONTAINERIZATION | Công nghệ đóng gói container | 3
+MICROSERVICES | Kiểu kiến trúc chia hệ thống thành nhiều dịch vụ nhỏ, dạng số nhiều | 3
+CONTAINERIZATION | Việc đóng gói ứng dụng vào những gói chạy độc lập | 3
 ORCHESTRATION | Sự điều phối hệ thống | 3
-DEVOPS | Quy trình phát triển và vận hành | 3 | DEVOPS
+DEVOPS | Quy trình phát triển và vận hành | 3
 AGILE | Quy trình phát triển linh hoạt | 2
-SCRUM | Một khung làm việc trong Agile | 3 | SCRUM
-REFACTOR | Hành động tối ưu cấu trúc lại mã nguồn mà không đổi tính năng | 3
+SCRUM | Một khung làm việc trong Agile | 3
+REFACTOR | Động từ chỉ việc sửa lại cấu trúc mã mà không đổi tính năng | 3
 ASYNCHRONOUS | Cơ chế xử lý bất đồng bộ không chặn luồng chính chương trình | 3 | ASYNC
-CACHE | Bộ nhớ đệm lưu dữ liệu tạm để truy xuất siêu tốc | 1
-MICROSERVICE | Kiến trúc vi dịch vụ chia nhỏ hệ thống phần mềm lớn | 3
+CACHE | Chỗ chứa tạm dữ liệu hay dùng, lần sau lấy ra cho nhanh | 1
+MICROSERVICE | Một dịch vụ nhỏ chạy độc lập, viết ở dạng số ít | 3
 ENDPOINT | Điểm cuối của cổng giao tiếp API nhận và gửi dữ liệu mạng | 2
 PAYLOAD | Phần dữ liệu chính thực sự được truyền tải trong gói tin mạng | 3
 API | Giao diện lập trình ứng dụng kết nối trao đổi dữ liệu giữa các phần mềm | 1
-CPU | Bộ vi xử lý trung tâm - đầu não tính toán của máy tính | 1 | CHIP
+CPU | Viết tắt ba chữ cái của bộ xử lý trung tâm | 1
 GPU | Bộ xử lý đồ họa chuyên xử lý hình ảnh và đào tạo mô hình AI | 1
-RAM | Bộ nhớ truy xuất ngẫu nhiên tạm thời của máy tính | 1
+RAM | Viết tắt ba chữ cái của bộ nhớ truy xuất ngẫu nhiên | 1
 MOTHERBOARD | Bo mạch chủ kết nối mọi linh kiện máy tính lại với nhau | 2 | MAINBOARD
 IP ADDRESS | Địa chỉ giao thức mạng nhận diện thiết bị trên internet | 2
 DOMAIN | Tên miền định danh trang web (như google.com) | 1
@@ -300,7 +300,7 @@ CLASS | Lớp khuôn mẫu định nghĩa đối tượng trong lập trình hư
 LIBRARY | Thư viện lập trình chứa các hàm có sẵn để tái sử dụng | 1
 PACKAGE | Gói module phần mềm cài đặt qua npm hoặc pip | 2
 DEPENDENCY | Sự phụ thuộc vào các thư viện bên ngoài của dự án phần mềm | 3
-TERMINAL | Giao diện dòng lệnh gõ lệnh chữ màu đen trên máy tính | 2 | CONSOLE
+TERMINAL | Cửa sổ đen gõ lệnh bằng chữ để điều khiển máy | 2
 SCRIPT | Tệp kịch bản tự động hóa chuỗi câu lệnh | 2
 LOG | Nhật ký ghi lại toàn bộ hoạt động và lỗi của máy chủ | 1
 METRIC | Chỉ số đo lường hiệu năng của hệ thống (như tải CPU, RAM) | 2
@@ -312,7 +312,7 @@ PROCESS | Tiến trình chương trình đang chạy trong bộ nhớ máy tính
 DEADLOCK | Tình trạng bế tắc nghẽn mạng khi các tiến trình cùng chờ nhau nhả tài nguyên | 3
 PIPELINE | Quy trình đường ống tự động hóa tích hợp và phát hành mã nguồn | 2
 INTEGRATION | Sự tích hợp kết hợp nhiều hệ thống phần mềm lại với nhau | 2
-BOT | Phần mềm tự động chạy tác vụ lặp đi lặp lại, hay thấy trong khung chat | 1 | CON BOT
+BOT | Phần mềm tự động chạy tác vụ lặp đi lặp lại, hay thấy trong khung chat | 1
 CRAWLER | Bọ cào dữ liệu tự động thu thập thông tin từ các trang web | 3
 BIG DATA | Tập hợp khối lượng dữ liệu khổng lồ của thời đại số | 1
 DEEP LEARNING | Học sâu - phân nhánh cao cấp của trí tuệ nhân tạo | 2
@@ -322,11 +322,11 @@ PREDICTION | Dự đoán kết quả tương lai dựa trên phân tích dữ li
 ANALYTICS | Ngành phân tích số liệu thống kê hành vi người dùng | 2
 DASHBOARD | Bảng điều khiển trực quan hóa các biểu đồ số liệu | 2
 WIDGET | Tiện ích nhỏ hiển thị thông tin nhanh trên màn hình chính | 2
-PLUGIN | Phần mở rộng cài thêm tính năng cho ứng dụng | 1 | ADDON, EXTENSION
+PLUGIN | Phần mở rộng cài thêm tính năng cho ứng dụng | 1 | ADDON
 TEMPLATE | Mẫu giao diện hoặc mẫu tài liệu thiết kế sẵn tiện dụng | 1
 DARK MODE | Giao diện chế độ tối bảo vệ mắt ban đêm | 1
-COMMIT | Hành động lưu thay đổi mã vào hệ thống quản lý phiên bản | 1 | COMMIT
-PULL REQUEST | Yêu cầu gộp nhánh code mới vào nhánh chính | 2 | PULL REQUEST
+COMMIT | Hành động lưu thay đổi mã vào hệ thống quản lý phiên bản | 1
+PULL REQUEST | Yêu cầu gộp nhánh code mới vào nhánh chính | 2
 BRANCH | Nhánh phát triển riêng trong hệ thống quản lý phiên bản | 1
 MERGE | Hành động gộp hai nhánh code lại thành một | 1
 CONFLICT | Xung đột code xảy ra khi hai nhánh sửa cùng một dòng | 2
@@ -339,10 +339,10 @@ GARBAGE COLLECTION | Cơ chế tự động thu hồi bộ nhớ không còn s�
 PACKAGE MANAGER | Công cụ quản lý cài đặt và cập nhật các gói thư viện | 2
 MONOLITH | Kiến trúc ứng dụng nguyên khối gộp tất cả vào một nơi | 3
 LOAD BALANCER | Bộ cân bằng tải phân phối yêu cầu đến nhiều máy chủ | 2
-CACHING | Lưu tạm dữ liệu hay dùng để tăng tốc độ truy cập | 2
+CACHING | Việc áp dụng cơ chế lưu tạm để tăng tốc truy cập | 2
 CDN | Mạng phân phối nội dung giúp tải trang web nhanh hơn | 2
 SLA | Thỏa thuận mức độ dịch vụ cam kết giữa nhà cung cấp và khách hàng | 3
-KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng | 2 | KANBAN
+KANBAN | Phương pháp quản lý công việc bằng bảng trực quan theo luồng | 2
 BACKLOG | Danh sách tính năng và nhiệm vụ cần làm chờ ưu tiên | 2
 USER STORY | Mô tả tính năng từ góc nhìn người dùng trong phát triển Agile | 2
 TECHNICAL DEBT | Nợ kỹ thuật chi phí phát sinh do chọn giải pháp nhanh thay vì tốt | 3
@@ -354,7 +354,7 @@ CONTINUOUS INTEGRATION | Tích hợp liên tục tự động build và test m�
 ROLLBACK | Khôi phục phiên bản cũ khi phiên bản mới bị lỗi | 2
 HOTFIX | Bản vá khẩn cấp sửa lỗi nghiêm trọng ngay trên môi trường sản xuất | 2
 PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính khả thi trước | 3
-MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường | 3 | MVP
+MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường | 3
 TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 2
 PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3
 TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP | 3

@@ -27,7 +27,7 @@ MINCE | Băm nhỏ (thịt) | 2 | GRIND
 GRATE | Bào, nạo (phô mai, cà rốt) | 2 | SHRED
 SIMMER | Đun liu riu | 3
 SAUTE | Áp chảo (xào nhanh ít dầu) | 3
-DEEP-FRY | Chiên ngập dầu | 2 | DEEP FRY
+DEEP-FRY | Chiên ngập dầu | 2
 POACH | Chần (trứng chần nước sôi) | 3
 BRAISE | Om, kho (thịt) | 3
 STEW | Món hầm | 2
@@ -279,7 +279,7 @@ BEVERAGE | Đồ uống / thức uống nói chung | 3
 INGREDIENT | Nguyên liệu nấu ăn | 2
 WATERMELON | Dưa hấu đỏ | 1
 ASPARAGUS | Măng tây | 3
-LASAGNA | Mì đút lò xếp lớp Ý | 2 | LASAGNA
+LASAGNA | Mì đút lò xếp lớp Ý | 2
 MACARONI | Nơ ống / mì ống phô mai | 2
 WAFFLE | Bánh tổ ong nướng nóng | 2
 BAGUETTE | Bánh mì Pháp dài | 2
@@ -332,7 +332,7 @@ MEATBALL | Viên thịt băm viên sốt cà chua đượm vị | 1
 RAMEN | Món mì nước truyền thống đậm đà ăn kèm trứng lòng đào của Nhật Bản | 1
 SOBA | Món mì sợi làm từ hạt kiều mạch ăn lạnh hoặc nóng của Nhật Bản | 2
 TAKOYAKI | Bánh bạch tuộc nướng viên tròn đường phố Nhật Bản | 2
-DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong xửng tre | 1 | DIM SUM
+DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong xửng tre | 1
 WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh | 1
 BIBIMBAP | Món cơm trộn nóng hổi đựng trong thố đá đủ màu sắc của Hàn Quốc | 2
 BULGOGI | Món thịt bò xào thái mỏng ướp sốt ngọt trứ danh của Hàn Quốc | 2
@@ -346,16 +346,16 @@ CREPE | Loại bánh tráng mỏng cuộn kem tươi và trái cây của nướ
 MUFFIN | Bánh nướng hình cốc xốp mềm nhân việt quất hoặc sô-cô-la | 1
 SCONE | Loại bánh nướng nhỏ xốp ăn kèm mứt và kem trong tiệc trà chiều Anh | 2
 CHURRO | Món bánh quẩy ngọt thanh dài phủ đường quế chấm sốt sô-cô-la | 2
-PANNA COTTA | Món tráng miệng thạch kem sữa tươi nấu sánh mịn của nước Ý | 2 | PANNA COTTA
+PANNA COTTA | Món tráng miệng thạch kem sữa tươi nấu sánh mịn của nước Ý | 2
 PUDDING | Món bánh tráng miệng mềm mại núng nính rưới sốt caramen | 1
 TART | Món bánh nướng vỏ giòn có vành viền trũng chứa kem trứng hoặc trái cây | 1
 SUNDAE | Ly kem tươi nhiều tầng rưới sốt sô-cô-la và quả anh đào trên đỉnh | 1 | KEM SUNDAE
 LATTE | Món cà phê nhiều sữa nóng có lớp bọt sữa vẽ hình nghệ thuật | 1
 MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1
-AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1 | AMERICANO
+AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1
 MATCHA | Bột trà xanh nguyên chất mịn màng của Nhật Bản dùng pha trà sữa | 1
 BOBA | Những viên trân châu bột lọc dẻo dai thả trong cốc trà sữa | 1
-MOCKTAIL | Thức uống giải khát pha trộn nhiều loại nước trái cây không chứa cồn | 2 | MOCKTAIL
+MOCKTAIL | Thức uống giải khát pha trộn nhiều loại nước trái cây không chứa cồn | 2
 MOZZARELLA | Loại phô mai màu trắng dẻo dai tan chảy kéo thành sợi trên mặt bánh nướng | 1
 PARMESAN | Loại phô mai già cứng bào vụn hạt mịn rắc lên đĩa mì Ý | 2
 CHEDDAR | Loại phô mai tự nhiên màu vàng cam béo ngậy kẹp trong burger | 1
@@ -365,9 +365,9 @@ RIBS | Sườn heo hoặc bò nướng sốt BBQ đậm đà | 1
 PATTY | Miếng thịt băm viên kẹp giữa bánh burger | 2
 NUGGET | Món thịt gà viên xay nhuyễn tẩm bột chiên vàng giòn rụm | 1
 RAVIOLI | Món bột mì cán mỏng nhồi nhân thịt và phô mai xếp mép răng cưa của Ý | 2
-GNOCCHI | Món mì viên làm từ bột khoai tây luộc thơm bùi sốt bơ nước Ý | 3 | GNOCCHI
+GNOCCHI | Món mì viên làm từ bột khoai tây luộc thơm bùi sốt bơ nước Ý | 3
 PAELLA | Món cơm nấu hải sản nhuộm màu nghệ tây trong chảo lớn của Tây Ban Nha | 2
-NACHOS | Món ăn vặt gồm các lát bánh ngô tam giác giòn tan chấm phô mai và sốt cà chua cay | 1 | NACHOS
+NACHOS | Món ăn vặt gồm các lát bánh ngô tam giác giòn tan chấm phô mai và sốt cà chua cay | 1
 QUESADILLA | Món bánh ngô gập đôi kẹp nhân phô mai nướng chảy của Mexico | 2
 SALSA | Loại xốt chấm làm từ cà chua băm, ớt cay và hành tây của ẩm thực Mexico | 1
 CURRY | Món cà ri cay nồng nấu cùng khoai thịt | 1

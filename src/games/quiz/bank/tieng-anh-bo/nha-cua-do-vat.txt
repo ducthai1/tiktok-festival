@@ -36,7 +36,7 @@ BELT | Sợi thắt lưng (dây nịt) da quần âu | 1 | WAISTBAND
 HAT | Chiếc mũ đội đầu che nắng | 1
 CAP | Chiếc nón (mũ) lưỡi trai thể thao | 1 | BASEBALL CAP
 SHIRT | Chiếc áo sơ mi có cổ cài cúc | 1 | DRESS SHIRT
-T-SHIRT | Chiếc áo phông (áo thun) cộc tay | 1 | TEE, T SHIRT
+T-SHIRT | Chiếc áo phông (áo thun) cộc tay | 1 | TEE
 PANTS | Chiếc quần dài mặc thường ngày | 1 | TROUSERS
 JEANS | Chiếc quần bò (quần jean) vải thô xanh | 1 | BLUE JEANS
 SKIRT | Chiếc chân váy xếp ly của phụ nữ | 1

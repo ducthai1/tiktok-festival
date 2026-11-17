@@ -81,10 +81,10 @@ TABLECLOTH | Khăn trải bàn | 2
 PILLOWCASE | Vỏ gối | 2
 BUNGALOW | Nhà gỗ một tầng ven biển | 3
 MANSION | Dinh thự sang trọng | 3
-PENTHOUSE | Căn hộ tầng mái cao cấp | 3 | PENTHOUSE
+PENTHOUSE | Căn hộ tầng mái cao cấp | 3
 STAIRCASE | Cầu thang bộ | 1
 CARDIGAN | Áo khoác len len len cúc | 2
-TUXEDO | Bộ âu phục chú rể sang trọng | 3 | TUXEDO
+TUXEDO | Bộ âu phục chú rể sang trọng | 3
 HAIRBRUSH | Lược chải tóc | 1
 THERMOSTAT | Bộ điều chỉnh nhiệt độ | 3
 REFRIGERATOR | Tủ lạnh bảo quản | 1

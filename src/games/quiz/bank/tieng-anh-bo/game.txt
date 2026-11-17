@@ -214,7 +214,7 @@ ROTATION | Xoay chuyển vị trí chiến đấu | 2
 MAP CONTROL | Kiểm soát bản đồ vùng chiến | 2
 TEAMFIGHT | Đánh nhóm toàn bộ đội | 2
 SKIRMISH | Xung đột nhỏ lẻ tẻ | 2
-SIEGE | Vây hãm phòng thủ vị trí | 2 | SIEGE
+SIEGE | Vây hãm phòng thủ vị trí | 2
 PICK | Chọn nhân vật trong chế độ soạn | 2
 BAN | Cấm nhân vật không dùng được | 2
 DRAFT | Chọn đội hình theo chiến lược | 2 | DRAUGHT

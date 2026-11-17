@@ -53,8 +53,8 @@ TEAMWORK | Làm việc nhóm | 1
 BODY LANGUAGE | Ngôn ngữ cơ thể | 2
 ACTIVE LISTENING | Lắng nghe chủ động | 2
 BOUNDARY | Ranh giới cá nhân | 2 | BOUNDARIES
-SELF-ESTEEM | Lòng tự trọng | 2 | SELF ESTEEM
+SELF-ESTEEM | Lòng tự trọng | 2
 WILLPOWER | Ý chí | 2 | WILL POWER
 ENDURANCE | Sức chịu đựng | 2
-OPEN-MINDED | Cởi mở (tư tưởng) | 2 | OPEN MINDED
+OPEN-MINDED | Cởi mở (tư tưởng) | 2
 EMPOWERMENT | Sự trao quyền | 3

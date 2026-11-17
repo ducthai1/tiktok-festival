@@ -1,9 +1,9 @@
 # Tiếng Anh · Giải trí
-BINGE-WATCH | Cày phim (xem liền nhiều tập) | 2 | BINGE WATCH
+BINGE-WATCH | Cày phim (xem liền nhiều tập) | 2
 SITCOM | Phim hài tình huống | 2
 SOAP OPERA | Phim truyền hình dài tập | 2
 MUSICAL | Nhạc kịch | 2
-STAND-UP COMEDY | Hài độc thoại | 2 | STAND UP COMEDY, STANDUP
+STAND-UP COMEDY | Hài độc thoại | 2 | STANDUP
 MAGIC TRICK | Trò ảo thuật | 1 | TRICK
 CARD GAME | Trò chơi bài | 1
 CROSSWORD | Ô chữ | 2 | CROSSWORD PUZZLE
@@ -31,7 +31,7 @@ MAIN CHARACTER | Nhân vật chính | 1 | PROTAGONIST, LEAD
 SIDEKICK | Bạn đồng hành của nhân vật chính | 3
 FLASHBACK | Cảnh hồi tưởng | 2
 SLOW MOTION | Quay chậm | 1 | SLOW-MO
-CLOSE-UP | Cận cảnh | 2 | CLOSE UP, CLOSEUP
+CLOSE-UP | Cận cảnh | 2 | CLOSEUP
 HEADLINER | Nghệ sĩ diễn chính của lễ hội | 3
 OPENING ACT | Tiết mục mở màn | 2
 FAN CLUB | Hội người hâm mộ | 1
@@ -274,7 +274,7 @@ CHART-TOPPER | Bài hát leo lên vị trí dẫn đầu bảng xếp hạng | 2
 MAINSTREAM | Xu hướng văn hoá âm nhạc đại chúng phổ biến | 2 | POP CULTURE
 INDIE | Âm nhạc hoặc phim độc lập không phụ thuộc hãng lớn | 2 | INDEPENDENT MUSIC
 UNDERGROUND | Dòng nhạc ngầm cá tính không theo trào lưu | 2 | SUB-CULTURE
-HIP HOP | Trào lưu văn hóa nghệ thuật đường phố gồm vẽ graffiti nhảy breakdance và đọc vần | 1 | HIP-HOP
+HIP HOP | Trào lưu văn hóa nghệ thuật đường phố gồm vẽ graffiti nhảy breakdance và đọc vần | 1
 RAP | Thể loại nhạc đọc lời ca nhanh có nhịp điệu vần điệu | 1 | RAP MUSIC
 RAPPER | Nghệ sĩ trình diễn đọc lời có nhịp điệu trên nền nhạc đập | 1 | MC
 POP | Dòng âm nhạc đại chúng thịnh hành có giai điệu bắt tai dễ thuộc | 1 | POP MUSIC

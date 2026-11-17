@@ -54,10 +54,10 @@ JERSEY | Áo đấu | 2 | SHIRT, KIT
 BOOTS | Giày đá bóng | 2 | FOOTBALL BOOTS, CLEATS, BOOT
 FOUL | Phạm lỗi | 2
 FREE KICK | Quả đá phạt | 2
-THROW-IN | Quả ném biên | 2 | THROW IN
+THROW-IN | Quả ném biên | 2
 OFFSIDE | Việt vị | 2
-KICK-OFF | Giao bóng bắt đầu trận | 2 | KICKOFF, KICK OFF
-HALF-TIME | Giờ nghỉ giữa hiệp | 2 | HALFTIME, HALF TIME, INTERVAL
+KICK-OFF | Giao bóng bắt đầu trận | 2 | KICKOFF
+HALF-TIME | Giờ nghỉ giữa hiệp | 2 | HALFTIME, INTERVAL
 EXTRA TIME | Hiệp phụ | 2 | OVERTIME
 HEADER | Cú đánh đầu | 2 | HEAD
 CROSS | Tạt bóng (từ cánh vào) | 2 | CROSSING
@@ -66,7 +66,7 @@ TACKLE | Vào bóng, cướp bóng | 2 | SLIDE TACKLE
 SAVE | Cứu thua (thủ môn bắt bóng) | 2
 ASSIST | Đường kiến tạo | 2
 OWN GOAL | Phản lưới nhà | 2
-HAT-TRICK | Ghi 3 bàn trong một trận | 2 | HAT TRICK, HATTRICK
+HAT-TRICK | Ghi 3 bàn trong một trận | 2 | HATTRICK
 CROSSBAR | Xà ngang | 2 | BAR
 GOALPOST | Cột dọc khung thành | 2 | POST, GOAL POST, UPRIGHT
 PENALTY AREA | Vòng cấm địa | 2 | PENALTY BOX, BOX
@@ -75,14 +75,14 @@ BENCH | Băng ghế dự bị | 2
 LINEUP | Đội hình ra sân | 2 | LINE-UP, STARTING ELEVEN, STARTING LINEUP
 TACTICS | Chiến thuật | 2 | TACTIC, STRATEGY
 LEAGUE | Giải đấu vòng tròn (giải VĐQG) | 2 | CHAMPIONSHIP
-SEMI-FINAL | Trận bán kết | 2 | SEMIFINAL, SEMI FINAL
-QUARTER-FINAL | Trận tứ kết | 2 | QUARTERFINAL, QUARTER FINAL
+SEMI-FINAL | Trận bán kết | 2 | SEMIFINAL
+QUARTER-FINAL | Trận tứ kết | 2 | QUARTERFINAL
 GROUP STAGE | Vòng bảng | 2
 TOURNAMENT | Giải đấu | 2 | COMPETITION
 AWAY | Đá sân khách | 2 | AWAY GAME, AWAY MATCH
 HOME | Đá sân nhà | 2 | HOME GROUND, HOME GAME
 TRANSFER | Chuyển nhượng cầu thủ | 2
-WARM UP | Khởi động trước trận | 2 | WARM-UP, WARMUP
+WARM UP | Khởi động trước trận | 2 | WARMUP
 STRETCH | Giãn cơ | 2 | STRETCHING
 SPRINT | Chạy nước rút | 2 | DASH
 FITNESS | Thể lực | 2 | STAMINA
@@ -117,7 +117,7 @@ DERBY | Trận đấu giữa 2 đội cùng thành phố | 3 | LOCAL DERBY
 VETERAN | Cầu thủ lão làng | 3
 CHANT | Hô vang bài cổ vũ | 3 | SING
 MVP | Cầu thủ hay nhất trận | 3 | PLAYER OF THE MATCH, MAN OF THE MATCH
-COUNTER-ATTACK | Phản công | 3 | COUNTER ATTACK, COUNTERATTACK, COUNTER
+COUNTER-ATTACK | Phản công | 3 | COUNTERATTACK, COUNTER
 POSSESSION | Kiểm soát bóng | 3 | BALL POSSESSION
 REBOUND | Bóng bật ra | 3
 VOLLEY | Sút bóng khi bóng chưa chạm đất | 3
@@ -137,7 +137,7 @@ LONG SHOT | Cú sút xa | 2
 EQUALISER | Bàn gỡ hoà | 3 | EQUALIZER
 OPENER | Bàn mở tỉ số | 3 | OPENING GOAL
 THROUGH BALL | Đường chọc khe | 3
-ONE-TWO | Phối hợp bật tường | 3 | ONE TWO, WALL PASS
+ONE-TWO | Phối hợp bật tường | 3 | WALL PASS
 MARK | Kèm người (theo sát đối thủ) | 3 | MARKING
 CLEARANCE | Phá bóng giải nguy | 3 | CLEAR
 FRIENDLY | Trận giao hữu | 2 | FRIENDLY MATCH
@@ -240,15 +240,15 @@ SCORPION KICK | Cú đá bọ cạp dùng gót chân hất bóng qua người | 
 STEP-OVER | Điệu bộ giả vờ bước qua bóng để lừa đối thủ | 2
 FEINT | Động tác giả vờ lừa đối thủ trước khi đổi hướng | 2
 BODY FEINT | Lừa người bằng chuyển động thân trên | 3
-ELASTICO | Màn lừa bóng kinh điển xoay cổ chân | 3 | ELASTICO
-CRUYFF TURN | Kỹ thuật xoay người 180 độ giấu bóng ra sau chân trụ của huyền thoại Hà Lan | 3 | CRUYFF TURN
+ELASTICO | Màn lừa bóng kinh điển xoay cổ chân | 3
+CRUYFF TURN | Kỹ thuật xoay người 180 độ giấu bóng ra sau chân trụ của huyền thoại Hà Lan | 3
 RAINBOW FLICK | Cú hất bóng qua đầu đối thủ theo hình vòng cầu | 3
 DIVING HEADER | Cú đánh đầu lao người xuống | 2
 HALF-VOLLEY | Cú sút ngay khi bóng vừa chạm đất nảy lên | 3
 CHIP SHOT | Cú lobbing bóng vượt qua thủ môn vào lưới | 2
 PERFECT HAT-TRICK | Thành tích 3 bàn thắng trong một trận gồm chân phải chân trái và đánh đầu | 3
 POKER | Ghi được bốn bàn thắng trong một trận | 3
-MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản | 4 | MANITA
+MANITA | Thuật ngữ tiếng Tây Ban Nha chỉ chiến thắng năm bàn không có phản | 4
 SHUTOUT | Giữ lưới sạch bóng đối thủ không ghi được bàn nào | 2
 PLAYOFF | Vòng tranh suất thăng hạng hoặc quyết định chức vô địch | 2 | PLAY OFF
 WALKOVER | Trận thắng không chiến khi đối thủ bỏ cuộc | 2
@@ -266,7 +266,7 @@ GRASSROOTS | Bóng đá cơ sở phong trào ở cấp địa phương | 2
 FUTSAL | Bóng đá trong nhà sân nhỏ 5 người | 1
 BEACH SOCCER | Bóng đá bãi biển thi đấu trên cát | 1
 SWEEPER | Trung vệ libero chơi tự do phòng thủ theo khu vực | 3
-LIBERO | Vị trí chơi phòng thủ tự do phía sau các hậu vệ | 3 | LIBERO
+LIBERO | Vị trí chơi phòng thủ tự do phía sau các hậu vệ | 3
 WINGBACK | Hậu vệ cánh thường xuyên dâng lên tấn công | 2
 GOALKEEPER KIT | Bộ trang phục màu khác biệt dành riêng cho thủ môn | 2
 GOALKEEPER DISTRIBUTION | Khả năng phân phối bóng của thủ môn bằng tay hoặc chân | 3

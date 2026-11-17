@@ -34,8 +34,8 @@ ROLLER SKATES | Giày trượt pa-tanh | 2 | ROLLERBLADES, INLINE SKATES
 ICE SKATING | Trượt băng | 1
 ROCK CLIMBING | Leo núi đá | 2 | CLIMBING, BOULDERING
 SAILING | Đua thuyền buồm | 2
-SIT-UP | Gập bụng | 1 | SITUP, SIT UP, CRUNCH
-PULL-UP | Hít xà đơn | 2 | PULLUP, PULL UP, CHIN-UP
+SIT-UP | Gập bụng | 1 | SITUP, CRUNCH
+PULL-UP | Hít xà đơn | 2 | PULLUP, CHIN-UP
 UMPIRE | Trọng tài (quần vợt, bóng chày) | 3
 GOLD MEDAL | Huy chương vàng | 1 | GOLD
 SILVER MEDAL | Huy chương bạc | 1 | SILVER
