@@ -75,7 +75,7 @@ INTIMIDATE | Hù dọa, đe dọa | 3
 INTRICATE | Phức tạp, rắc rối nhiều chi tiết | 3 | COMPLEX, DETAILED
 INVALID | Không có hiệu lực, tàn phế | 3 | NULL
 INVALUABLE | Vô giá, cực kỳ quý báu | 3 | PRICELESS, PRECIOUS
-ISOLATION | Sự biệt lập, cô lập | 3 | SECLUSION, SEPARATION
+ISOLATION | Sự biệt lập, cô lập | 3 | SECLUSION
 JURISDICTION | Thẩm quyền tài phán, quyền hạn | 3 | AUTHORITY, CONTROL
 JUSTIFICATION | Sự biện minh, lý do chính đáng | 3 | REASON
 JUXTAPOSE | Đặt cạnh nhau để so sánh | 3
@@ -119,7 +119,7 @@ REVITALIZE | Hồi sinh, đem lại sức sống mới | 3 | RENEW
 RIGOROUS | Nghiêm ngặt, khắt khe | 3 | STRICT, THOROUGH
 ROBUST | Mạnh mẽ, vững chắc | 3 | STURDY
 SCARCE | Khan hiếm, ít có | 3 | LIMITED
-SEGREGATION | Sự kỳ thị, chia rẽ | 3 | SEPARATION
+SEGREGATION | Sự kỳ thị, chia rẽ | 3
 SIMULTANEOUS | Đồng thời, cùng một lúc | 3 | CONCURRENT
 SKEPTICAL | Hoài nghi, nghi ngờ | 3 | DOUBTFUL, CYNICAL
 SPONTANEOUS | Bột phát, tự phát, tự nhiên | 3 | UNPLANNED, NATURAL

@@ -23,7 +23,7 @@ PAIRING | Ghép đôi Bluetooth | 2 | PAIR
 RECHARGE | Sạc lại pin | 1
 PORTRAIT MODE | Chế độ chụp chân dung (xóa phông) | 1
 LANDSCAPE MODE | Chế độ xoay ngang màn hình | 1
-ZOOM | Phóng to thu nhỏ | 1 | ZOOM IN
+ZOOM | Phóng to thu nhỏ | 1
 WIRED | Có dây (kết nối bằng dây) | 2
 BLUETOOTH | Công nghệ kết nối không dây tầm ngắn giữa tai nghe và điện thoại | 1
 AVATAR | Ảnh đại diện hồ sơ cá nhân của người dùng trên mạng xã hội | 1

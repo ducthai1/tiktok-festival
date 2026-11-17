@@ -244,7 +244,7 @@ ALLEY | Con ngõ nhỏ ngoằn ngoèo trong phố | 1 | LANE
 SIDEWALK | Vỉa hè lát gạch dành cho người đi bộ | 1 | PAVEMENT
 AVENUE | Đại lộ rợp bóng cây xanh rộng lớn | 2
 SQUARE | Quảng trường trung tâm thành phố tụ họp đông người | 1 | PLAZA
-FOUNTAIN | Đài phun nước nghệ thuật nhảy múa | 1 | WATER FOUNTAIN
+FOUNTAIN | Đài phun nước nghệ thuật nhảy múa | 1
 WATERFRONT | Khu phố bờ sông bờ hồ thoáng mát | 2 | RIVERSIDE
 PROMENADE | Đường dạo bộ lát đá ven bờ biển | 2 | ESPLANADE
 MARINA | Bến nhỏ chuyên đậu du thuyền và ca nô cá nhân | 2 | BOAT BASIN
@@ -509,7 +509,7 @@ BOARDING TIME | Thời gian hành khách phải có mặt ở cửa lên máy ba
 LAST CALL | Lời loa phát thanh thông báo lần cuối lên máy bay | 1 | FINAL CALL
 MISSED FLIGHT | Việc hành khách đến trễ bị lỡ mất chuyến bay | 1
 DELAYED | Chuyến bay bị hoãn giờ khởi hành do thời tiết | 1 | FLIGHT DELAY
-CANCELLED | Chuyến bay bị huỷ bỏ hoàn toàn | 1 | CANCELLATION, CANCELED
+CANCELLED | Chuyến bay bị huỷ bỏ hoàn toàn | 1 | CANCELED
 DIVERTED | Chuyến bay phải hạ cánh chuyển hướng sân bay khác | 2 | REROUTED
 BAGGAGE ALLOWANCE | Số kg hành lý được phép mang theo quy định | 1 | LUGGAGE LIMIT
 EXCESS BAGGAGE | Hành lý quá cước vượt trọng lượng quy định | 2 | OVERWEIGHT LUGGAGE

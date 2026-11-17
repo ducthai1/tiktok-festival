@@ -32,7 +32,7 @@ HANDOUT | Tài liệu phát tay | 2
 HEADHUNTER | Người săn đầu người (tuyển dụng) | 3
 INQUIRY | Yêu cầu thông tin | 2 | ENQUIRY
 JOB OPENING | Vị trí công ty đang đăng tuyển người mới | 2 | OPENING, JOB VACANCY
-LABOR | Nhân công (lao động) | 2 | LABOUR, WORKFORCE
+LABOR | Nhân công (lao động) | 2 | LABOUR
 LETTERHEAD | Giấy có tiêu đề công ty | 3
 LIAISON | Người liên lạc (đầu mối) | 3
 MANUAL | Sách hướng dẫn sử dụng | 1 | USER MANUAL, HANDBOOK
@@ -362,3 +362,67 @@ TEAM MEETING | Buổi họp ngắn của cả nhóm đầu tuần | 1
 OFFICE HOURS | Khung giờ cơ quan làm việc và tiếp khách | 1
 SICK DAY | Ngày nghỉ vì ốm, có báo với công ty | 1
 BUSINESS CARD HOLDER | Hộp nhỏ đựng danh thiếp trên bàn làm việc | 1
+AGENDA ITEM | Một mục cụ thể cần bàn trong cuộc họp | 2
+MINUTES TAKER | Người ngồi ghi lại nội dung cuộc họp | 2
+ACTION POINT | Việc cụ thể ai đó phải làm sau cuộc họp | 2
+FOLLOW UP | Việc liên hệ lại để nhắc tiến độ | 1
+DEADLINE EXTENSION | Việc được gia hạn thêm thời gian nộp | 2
+PROGRESS REPORT | Bản báo cáo tiến độ công việc đang làm tới đâu | 2
+STATUS UPDATE | Lời cập nhật ngắn về tình hình hiện tại | 1
+TASK ASSIGNMENT | Việc phân chia đầu việc cho từng người | 2
+WORK BREAKDOWN | Việc chia dự án lớn thành nhiều việc nhỏ | 3
+MILESTONE REVIEW | Buổi rà soát khi dự án tới một mốc quan trọng | 3
+RISK ASSESSMENT | Việc đánh giá trước những rủi ro có thể xảy ra | 3
+CONTINGENCY PLAN | Phương án dự phòng khi kế hoạch chính hỏng | 3
+STAKEHOLDER MEETING | Buổi họp với các bên liên quan tới dự án | 3
+KICK OFF MEETING | Buổi họp mở màn khởi động một dự án | 2
+DEBRIEF | Buổi tổng kết rút kinh nghiệm sau khi xong việc | 3
+LESSONS LEARNED | Những bài học rút ra sau một dự án | 3
+BEST PRACTICE | Cách làm tốt nhất đã được kiểm chứng | 2
+STANDARD PROCEDURE | Quy trình chuẩn ai cũng phải làm theo | 2
+WORKFLOW | Trình tự các bước công việc chảy từ khâu này sang khâu khác | 2
+BOTTLENECK | Khâu nghẽn làm chậm cả dây chuyền | 3
+TURNAROUND TIME | Thời gian từ lúc nhận việc tới lúc trả kết quả | 3
+LEAD TIME | Thời gian chờ từ lúc đặt hàng tới lúc nhận được | 3
+BACKUP SUPPLIER | Nhà cung cấp dự phòng khi bên chính gặp sự cố | 3
+BULK ORDER | Đơn đặt số lượng lớn để được giá rẻ hơn | 2
+MINIMUM ORDER | Số lượng tối thiểu mới được đặt hàng | 2
+UNIT PRICE | Giá tính cho một sản phẩm đơn lẻ | 1
+TOTAL AMOUNT | Tổng số tiền phải trả của cả đơn | 1
+SUBTOTAL | Tổng tiền hàng trước khi cộng thuế và phí | 2
+SHIPPING FEE | Khoản phí trả cho việc vận chuyển hàng | 1
+FREE SHIPPING | Chương trình miễn phí vận chuyển cho khách | 1
+TRACKING NUMBER | Mã để tra xem đơn hàng đang ở đâu | 1
+SIGNATURE REQUIRED | Yêu cầu người nhận ký mới được giao hàng | 2
+DAMAGED GOODS | Hàng bị hỏng vỡ trong quá trình vận chuyển | 2
+RETURN LABEL | Nhãn dán sẵn để gửi trả hàng miễn phí | 2
+EXCHANGE POLICY | Quy định về việc đổi hàng sang món khác | 2
+WARRANTY PERIOD | Khoảng thời gian còn được bảo hành | 2
+AFTER SALES | Dịch vụ chăm sóc khách sau khi đã bán hàng | 2
+CUSTOMER LOYALTY | Việc khách quay lại mua nhiều lần | 2
+LOYALTY CARD | Thẻ tích điểm cho khách quen | 1
+MEMBER DISCOUNT | Mức giảm giá riêng cho hội viên | 1
+PROMO CODE | Dãy ký tự nhập vào để được giảm giá | 1
+FLASH SALE | Đợt giảm giá chớp nhoáng chỉ trong vài giờ | 1
+OUT OF STOCK | Tình trạng đã hết hàng trong kho | 1
+RESTOCK | Việc nhập thêm hàng về khi đã bán hết | 2
+INVENTORY COUNT | Việc kiểm đếm lại toàn bộ hàng trong kho | 2
+STOCKTAKING | Đợt kiểm kê kho định kỳ cuối kỳ | 3
+SHELF LIFE | Khoảng thời gian hàng còn dùng được | 2
+EXPIRY DATE | Ngày hàng hết hạn sử dụng | 1
+BATCH NUMBER | Mã lô sản xuất in trên bao bì | 3
+QUALITY CONTROL | Khâu kiểm tra chất lượng trước khi xuất hàng | 2
+DEFECT RATE | Tỷ lệ sản phẩm lỗi trong một lô | 3
+COMPLIANCE CHECK | Việc rà soát xem có tuân thủ quy định không | 3
+AUDIT TRAIL | Chuỗi ghi chép cho phép truy lại mọi thay đổi | 3
+EXPENSE CLAIM | Đơn xin hoàn lại tiền nhân viên đã tạm ứng | 2
+PETTY EXPENSE | Khoản chi lặt vặt giá trị nhỏ | 3
+BUDGET CUT | Việc cắt giảm ngân sách đã duyệt | 2
+COST SAVING | Khoản tiết kiệm được nhờ làm hiệu quả hơn | 2
+PROFIT MARGIN | Phần trăm lãi tính trên doanh thu | 2
+CASH ON HAND | Số tiền mặt công ty đang giữ | 2
+ACCOUNTS CLOSING | Việc chốt sổ sách cuối kỳ kế toán | 3
+TAX RETURN | Hồ sơ khai thuế nộp cho cơ quan thuế | 2
+VAT | Thuế giá trị gia tăng cộng vào giá bán | 2
+WITHHOLDING TAX | Khoản thuế trừ thẳng vào lương trước khi trả | 3
+SOCIAL INSURANCE | Khoản đóng bắt buộc để hưởng chế độ hưu và ốm đau | 2

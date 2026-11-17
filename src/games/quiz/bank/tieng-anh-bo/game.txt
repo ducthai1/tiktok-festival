@@ -95,7 +95,7 @@ SCRIM MATCH | Trận tập đấu không chính thức | 3 | PRACTICE GAME
 META GAME | Chiến lược tối ưu hiện tại | 3 | OPTIMAL STRATEGY
 PROTOTYPE | Bản mẫu thô làm nhanh để thử ý tưởng | 3 | DRAFT VERSION
 RELEASE | Phát hành công bố chính thức | 3
-BETA TESTING | Giai đoạn cho người chơi thử trước khi phát hành chính thức | 3 | EARLY ACCESS
+BETA TESTING | Giai đoạn cho người chơi thử trước khi phát hành chính thức | 3
 ALPHA VERSION | Bản dựng sớm nhất còn đầy lỗi, chỉ nội bộ chơi thử | 3 | EARLY BUILD
 CROSSPLAY | Chơi cùng nhau nền tảng khác | 3 | CROSS PLATFORM
 CROSSOVER | Sự hợp tác giữa hai game | 3
@@ -271,14 +271,14 @@ KILL CAM | Camera xem lại cách bạn chết | 2 | DEATH FOOTAGE
 SPECTATOR MODE | Chế độ xem trận không chơi | 2 | OBSERVER MODE
 CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện | 2 | PERSONALIZATION
 COSMETICS | Vật phẩm trang trí không ảnh hưởng | 2 | SKINS
-BATTLE PASS | Thẻ hạng nhân vật trả tiền | 2 | SEASON PASS
+BATTLE PASS | Thẻ hạng nhân vật trả tiền | 2
 HARDCORE MODE | Chế độ khó tối đa một lần | 2 | IRONMAN MODE
 ROGUELIKE | Trò lặp lại chết mất tiến | 2 | PROCEDURAL
 METROIDVANIA | Trò khám phá khoá mở | 2 | EXPLORATION GAME
 SKILL CEILING | Mức trần kỹ năng tối đa | 2 | SKILL MASTERY
 LEARNING CURVE | Độ khó học chơi trò | 2 | EDUCATION PACE
 SCRIM | Trận tập đấu liên tục giữa | 2 | PRACTICE MATCH
-PENTAKILL | Giết năm kẻ địch liên tiếp | 2 | KILL STREAK
+PENTAKILL | Giết năm kẻ địch liên tiếp | 2
 TEAM WIPE | Tiêu diệt toàn bộ đội địch | 2 | TEAM ELIMINATION
 SPLIT PUSH | Tấn công tách riêng bản đồ | 3 | SEPARATE PUSH
 JUNGLING | Giết quái rừng kiếm vàng | 3 | JUNGLE FARMING
@@ -301,3 +301,112 @@ LOCAL CO-OP | Chế độ hai người chơi chung trên cùng một máy | 1
 SPLIT SCREEN | Màn hình chia đôi cho hai người cùng chơi | 1
 GAME CARTRIDGE | Băng nhựa cắm vào máy để chạy trò chơi | 2
 ARCADE TOKEN | Đồng xu nhựa bỏ vào máy game thùng | 2
+CHARACTER SELECT | Màn hình chọn nhân vật trước khi vào trận | 1
+MAIN MENU | Bảng chọn đầu tiên hiện ra khi mở trò chơi | 1
+CREDITS | Danh sách người làm game chạy ở cuối | 1
+DIALOGUE BOX | Khung chữ hiện lời thoại nhân vật | 2
+SUBQUEST | Nhiệm vụ nhỏ không bắt buộc làm | 2
+MINI BOSS | Con trùm nhỏ giữa chặng, dễ hơn trùm cuối | 2
+FINAL BOSS | Kẻ địch mạnh nhất phải hạ để phá đảo | 1
+BOSS RUSH | Chế độ đánh liên tiếp tất cả các trùm | 3
+FRAME DATA | Số liệu từng khung hình của một đòn đánh | 3
+BUTTON COMBO | Chuỗi nút phải bấm đúng thứ tự để ra chiêu | 2
+QUICK TIME EVENT | Đoạn phải bấm đúng nút hiện lên trong tích tắc | 3
+AUTOSAVE | Tính năng tự lưu không cần người chơi bấm | 1
+SAVE SLOT | Ô chứa một bản lưu riêng | 1
+NEW GAME PLUS | Lượt chơi lại giữ nguyên đồ và cấp nhân vật | 3
+PERMADEATH MODE | Chế độ chết là xoá luôn bản lưu | 3
+SKILL POINT | Điểm nhận được để mở thêm kỹ năng mới | 2
+DEBUFF STACK | Lớp hiệu ứng xấu chồng lên nhau | 3
+COOLDOWN TIMER | Đồng hồ đếm lùi trước khi dùng lại chiêu | 2
+PASSIVE SKILL | Kỹ năng tự có hiệu lực không cần bấm | 2
+ACTIVE SKILL | Kỹ năng phải bấm nút mới phát động | 2
+AOE DAMAGE | Sát thương lan ra cả một vùng | 3
+KILL STREAK | Chuỗi hạ gục liên tiếp không chết lần nào | 2
+QUEUE TIME | Thời gian chờ được ghép trận | 2
+TOXIC PLAYER | Người chơi chửi bới gây khó chịu cho cả đội | 2
+REPORT SYSTEM | Cơ chế tố cáo người chơi vi phạm | 2
+BAN WAVE | Đợt khoá tài khoản hàng loạt kẻ gian lận | 3
+AIMBOT | Công cụ gian lận tự ngắm bắn chuẩn xác | 3
+WALLHACK | Công cụ gian lận cho nhìn xuyên tường | 3
+SMURF | Tài khoản phụ của cao thủ dùng để đánh với người yếu | 3
+RANKED MATCH | Trận có tính điểm xếp hạng | 1
+CASUAL MATCH | Trận chơi cho vui không tính hạng | 1
+SEASON PASS | Vé mùa mở thêm phần thưởng theo mốc | 2
+LOOT BOX | Hộp mở ra nhận vật phẩm ngẫu nhiên | 2
+GACHA | Cơ chế quay số ngẫu nhiên để lấy nhân vật | 2
+PITY SYSTEM | Cơ chế bảo đảm sau nhiều lần quay hụt sẽ trúng | 3
+EMOTE | Động tác biểu cảm nhân vật làm để trêu đối thủ | 1
+AFK | Trạng thái người chơi bỏ máy không điều khiển | 1
+LAG SPIKE | Khoảnh khắc mạng giật khựng đột ngột | 2
+PACKET LOSS | Tình trạng gói tin mạng bị rơi mất giữa đường | 3
+REROLL | Việc tạo lại tài khoản để quay lại từ đầu cho may hơn | 3
+PATCH DAY | Ngày nhà phát hành tung bản cập nhật lớn | 2
+PRELOAD | Việc tải sẵn dữ liệu trước ngày mở cửa | 2
+LAUNCH DAY | Ngày trò chơi chính thức mở bán | 1
+DEMO VERSION | Bản chơi thử giới hạn trước khi mua | 1
+WISHLIST | Danh sách game muốn mua để theo dõi giảm giá | 1
+ACHIEVEMENT | Thành tích mở khoá khi hoàn thành điều kiện đặc biệt | 1
+COMPLETIONIST | Người quyết làm hết mọi nhiệm vụ và thành tích | 3
+WALKTHROUGH | Bài hướng dẫn đi qua toàn bộ trò chơi | 2
+FAN THEORY | Giả thuyết người chơi tự nghĩ ra về cốt truyện | 2
+LORE | Toàn bộ nền câu chuyện và lịch sử của thế giới game | 2
+WORLD BUILDING | Việc dựng nên cả một thế giới có lịch sử riêng | 3
+NPC | Nhân vật do máy điều khiển đứng trong game | 1
+SIDEKICK CHARACTER | Nhân vật đi theo giúp người chơi suốt hành trình | 2
+COMPANION | Bạn đồng hành chiến đấu cùng nhân vật chính | 2
+MOUNT | Con vật hoặc xe nhân vật cưỡi để đi nhanh | 2
+FAST TRAVEL | Tính năng dịch chuyển tức thì tới nơi đã tới rồi | 2
+WAYPOINT | Điểm đánh dấu trên bản đồ để dẫn đường | 2
+MINIMAP | Bản đồ nhỏ ở góc màn hình | 1
+FOG OF WAR | Vùng tối trên bản đồ chưa được khám phá | 3
+RESOURCE NODE | Điểm trên bản đồ cho khai thác nguyên liệu | 3
+CRAFTING | Việc ghép nguyên liệu để chế ra đồ mới | 2
+BLUEPRINT | Bản thiết kế cần có để chế tạo món đồ | 2
+DURABILITY | Độ bền của vũ khí, dùng mãi sẽ hỏng | 2
+REPAIR KIT | Bộ đồ nghề dùng sửa lại trang bị bị hỏng | 2
+AUCTION HOUSE | Nơi người chơi rao bán đồ cho nhau | 2
+TRADE OFFER | Lời đề nghị đổi đồ giữa hai người chơi | 2
+SCAMMER | Kẻ lừa đảo chiếm đồ của người chơi khác | 2
+GUILD HALL | Trụ sở chung của một hội người chơi | 2
+RAID BOSS | Con trùm khổng lồ cần cả nhóm đông mới hạ nổi | 3
+TANK ROLE | Vai chịu đòn đứng trước đỡ cho cả đội | 2
+HEALER | Vai hồi máu cho đồng đội trong trận | 1
+DPS | Vai chuyên gây sát thương cao | 2
+LOADOUT PRESET | Bộ trang bị lưu sẵn để chọn nhanh vào trận | 2
+AIM ASSIST | Tính năng hỗ trợ ngắm cho người chơi tay cầm | 2
+SENSITIVITY | Mức nhạy khi di chuột hoặc cần gạt | 2
+KEYBIND | Việc gán chức năng vào một phím cụ thể | 2
+LATENCY SPIKE | Khoảnh khắc độ trễ mạng vọt lên đột ngột | 3
+SERVER REGION | Khu vực máy chủ gần nhất để chơi cho mượt | 2
+CROSS SAVE | Tính năng giữ chung tiến trình giữa nhiều thiết bị | 3
+CLOUD SAVE | Bản lưu cất trên mạng thay vì trong máy | 2
+CONTROLLER DRIFT | Lỗi cần gạt tự trôi dù không ai chạm | 3
+SPLIT PAYMENT | Việc chia tiền mua game chung với bạn | 3
+REFUND POLICY | Quy định hoàn tiền nếu chơi chưa quá số giờ cho phép | 2
+EARLY ACCESS | Bản cho chơi sớm khi game còn đang làm dở | 2
+ROADMAP | Lộ trình các nội dung sẽ ra trong tương lai | 2
+DEV DIARY | Nhật ký nhà phát triển kể quá trình làm game | 3
+BETA KEY | Mã mời tham gia chơi thử bản beta | 2
+CLOSED BETA | Đợt thử nghiệm chỉ mời một số người | 3
+OPEN BETA | Đợt thử nghiệm ai cũng vào chơi được | 2
+SERVER WIPE | Việc xoá sạch dữ liệu máy chủ bắt đầu lại | 3
+LAUNCH TRAILER | Đoạn phim quảng bá tung ra ngày phát hành | 1
+GAMEPLAY TRAILER | Đoạn phim cho xem cảnh chơi thật | 1
+BOXED COPY | Bản game bán trong hộp đĩa thay vì tải | 2
+DIGITAL COPY | Bản game mua rồi tải thẳng về máy | 1
+GAME KEY | Dãy ký tự nhập vào để kích hoạt bản quyền | 1
+PLAYTIME | Tổng số giờ đã chơi một trò | 1
+IDLE TIMEOUT | Thời gian không thao tác thì bị đá khỏi trận | 3
+RECONNECT | Việc nối lại vào trận sau khi bị rớt mạng | 2
+SURRENDER VOTE | Lượt bỏ phiếu xem cả đội có đầu hàng không | 2
+COMEBACK MECHANIC | Cơ chế giúp đội đang thua có cơ hội lật ngược | 3
+POWER SPIKE | Mốc nhân vật đột nhiên mạnh vượt trội | 3
+EARLY GAME | Giai đoạn đầu trận khi còn yếu | 2
+LATE GAME | Giai đoạn cuối trận khi ai cũng đủ đồ | 2
+FLANK | Việc vòng ra đánh tạt sườn đối phương | 3
+AMBUSH | Pha phục kích bất ngờ từ chỗ nấp | 2
+BAIT | Việc nhử địch vào bẫy đã giăng sẵn | 2
+ZONING | Việc đứng chặn không cho địch tiến vào một khu | 3
+BACKDOOR | Pha lén đánh thẳng vào nhà chính đối phương | 3
+JUNGLE CAMP | Bãi quái trong rừng để người đi rừng dọn | 2

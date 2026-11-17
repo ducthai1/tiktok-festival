@@ -285,3 +285,70 @@ SPORTS DIRECTOR | Giám đốc thể thao phụ trách toàn bộ hoạt động
 CHAIRMAN | Chủ tịch hội đồng quản trị câu lạc bộ bóng đá | 2
 MATCHDAY SQUAD | Danh sách 18 đến 23 cầu thủ được đăng ký cho trận đấu | 3
 STAMINA | Sức bền thể lực chạy liên tục 90 phút của cầu thủ | 1
+GOAL CELEBRATION | Màn ăn mừng của cầu thủ sau khi ghi bàn | 1
+KNEE SLIDE | Kiểu ăn mừng quỳ gối trượt dài trên cỏ | 2
+SHIRT PULL | Hành vi kéo áo đối thủ để cản, bị thổi phạt | 2
+SHOULDER CHARGE | Pha húc vai hợp lệ để tranh bóng | 2
+STUDS UP | Pha vào bóng giơ gầm giày, cực nguy hiểm | 3
+LAST MAN | Hậu vệ cuối cùng, phạm lỗi là thẻ đỏ | 3
+PROFESSIONAL FOUL | Pha phạm lỗi cố ý để chặn cơ hội ghi bàn | 3
+TIME WASTING | Hành vi câu giờ khi đang dẫn trước | 2
+FAIR PLAY AWARD | Giải thưởng cho đội chơi đẹp nhất giải | 2
+ADVANTAGE RULE | Luật cho trận đấu tiếp diễn khi đội bị phạm lỗi còn lợi thế | 3
+INDIRECT FREE KICK | Quả phạt phải chạm người khác trước khi vào lưới | 3
+DIRECT FREE KICK | Quả phạt được sút thẳng vào khung thành | 2
+DROP BALL | Pha thả bóng cho hai bên tranh lại sau gián đoạn | 3
+BALL IN PLAY | Khoảng thời gian bóng thực sự lăn trên sân | 2
+DEAD BALL | Tình huống bóng đứng yên chờ đá | 2
+NUTMEG PASS | Đường chuyền luồn qua háng đối thủ | 3
+FIRST TOUCH | Cú chạm bóng đầu tiên để khống chế | 2
+BALL CONTROL | Khả năng giữ bóng dính chân | 1
+WEAK FOOT | Chân không thuận của cầu thủ | 2
+STRONG FOOT | Chân thuận hay dùng để sút | 1
+LEFT WINGER | Cầu thủ chạy cánh trái | 1
+RIGHT WINGER | Cầu thủ chạy cánh phải | 1
+CENTRE BACK | Trung vệ chơi giữa hàng phòng ngự | 1
+FULL BACK | Hậu vệ biên chơi sát đường biên dọc | 2
+HOLDING MIDFIELDER | Tiền vệ trụ đứng chắn trước hàng thủ | 3
+ATTACKING MIDFIELDER | Tiền vệ công chơi ngay sau tiền đạo | 2
+FALSE NINE | Tiền đạo lùi sâu kéo trung vệ đối phương ra | 3
+TARGET MAN | Tiền đạo cao to làm tường cho đồng đội | 3
+SUPER SUB | Cầu thủ dự bị hay ghi bàn khi vào sân | 3
+BENCH WARMER | Cầu thủ ngồi dự bị cả mùa hiếm khi được ra sân | 3
+SQUAD DEPTH | Độ dày lực lượng của một đội bóng | 3
+PRE SEASON | Giai đoạn tập luyện và đá giao hữu trước mùa giải | 2
+MID SEASON | Giữa mùa giải khi đã đá được nửa chặng | 2
+RUN OF FORM | Chuỗi trận cầu thủ hoặc đội đang chơi rất hay | 3
+GOAL DROUGHT | Chuỗi trận tịt ngòi không ghi được bàn nào | 3
+WINNING STREAK | Chuỗi trận thắng liên tiếp | 1
+LOSING STREAK | Chuỗi trận thua liên tiếp | 1
+UNBEATEN RUN | Chuỗi trận không thua trận nào | 2
+CLEAN SWEEP | Việc thắng trọn vẹn tất cả các trận hoặc danh hiệu | 3
+POINT DEDUCTION | Án trừ điểm phạt một câu lạc bộ | 3
+FINANCIAL FAIR PLAY | Luật buộc câu lạc bộ chi tiêu trong khả năng | 3
+RELEASE CLAUSE | Điều khoản cho phép mua cầu thủ nếu trả đủ số tiền ghi trong hợp đồng | 3
+BUYOUT | Việc trả tiền để phá vỡ hợp đồng cầu thủ | 3
+FREE AGENT | Cầu thủ hết hợp đồng, ai cũng ký được mà không mất phí | 3
+CONTRACT EXTENSION | Việc gia hạn thêm thời gian hợp đồng | 2
+WAGE BILL | Tổng quỹ lương cả đội phải trả mỗi tuần | 3
+YOUTH PROSPECT | Cầu thủ trẻ được đánh giá là có tương lai | 2
+FIRST TEAM | Đội hình chính thi đấu ở giải chuyên nghiệp | 1
+RESERVE TEAM | Đội hai gồm cầu thủ dự bị và trẻ | 2
+TRIAL | Buổi thử việc để câu lạc bộ xem giò cầu thủ | 2
+MEDICAL CHECK | Buổi khám sức khoẻ trước khi ký hợp đồng | 2
+SIGNING | Việc một cầu thủ chính thức đặt bút ký | 1
+UNVEILING | Buổi ra mắt tân binh trước người hâm mộ | 3
+CAPTAIN ARMBAND | Chiếc băng đeo tay của người đội trưởng | 1
+TESTIMONIAL | Trận tri ân tổ chức cho cầu thủ sắp giải nghệ | 3
+RETIREMENT MATCH | Trận đấu cuối cùng trước khi treo giày | 2
+HALL OF FAME | Nơi vinh danh những huyền thoại của môn thể thao | 2
+PITCH INVASION | Việc cổ động viên tràn xuống sân | 3
+CROWD TROUBLE | Tình trạng khán giả gây rối trên khán đài | 2
+ATTENDANCE FIGURE | Con số khán giả tới sân trong một trận | 2
+SEASON TICKET | Vé mua trọn mùa xem hết các trận sân nhà | 2
+AWAY END | Khu khán đài dành riêng cho cổ động viên đội khách | 2
+TIFO | Màn xếp hình khổng lồ trên khán đài | 3
+DRUM SECTION | Nhóm cổ động viên gõ trống dẫn nhịp hò reo | 2
+KIT SPONSOR | Nhà tài trợ in logo lên ngực áo đấu | 2
+THIRD KIT | Bộ áo đấu thứ ba dùng khi hai bộ kia trùng màu | 3
+NUMBER TEN | Chiếc áo số 10 thường dành cho cầu thủ sáng tạo nhất | 2

@@ -13,7 +13,7 @@ STARCH | Tinh bột (bột năng) | 3 | CORNSTARCH, TAPIOCA STARCH
 YEAST | Men vi sinh cho vào bột để bánh nở phồng | 2
 DOUGH | Khối bột đã nhào dẻo, chưa đem nướng | 2
 BATTER | Bột lỏng (để chiên giòn) | 3
-BREADCRUMBS | Bột chiên xù | 2 | PANKO, BREADCRUMB
+BREADCRUMBS | Bột chiên xù | 2 | PANKO
 SKEWER | Que nhọn xiên thịt rau để nướng | 2
 SAUCEPAN | Nồi nhỏ có một cán dài, đun sốt hoặc sữa | 2
 WOK | Chảo lòng sâu đáy tròn kiểu Á, đảo lửa to | 2

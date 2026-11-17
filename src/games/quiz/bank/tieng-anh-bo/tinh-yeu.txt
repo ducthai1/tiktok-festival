@@ -299,3 +299,120 @@ HONEYMOON TRIP | Chuyến đi riêng của đôi vợ chồng mới cưới | 1
 PROPOSAL RING | Chiếc nhẫn quỳ gối trao lúc cầu hôn | 1
 LOVE NOTE | Mẩu giấy nhỏ viết vài chữ ngọt ngào giấu cho người thương | 1
 FOREVER TOGETHER | Lời hứa gắn bó bên nhau trọn đời | 1
+FLIRTING | Việc buông lời trêu ghẹo tán tỉnh cho vui | 1
+ADMIRER | Người thầm ngưỡng mộ và có cảm tình | 2
+BELOVED | Người được yêu quý nhất, cách gọi trang trọng | 2
+BECKON | Việc vẫy tay ra hiệu gọi ai đó lại gần | 3
+YEARN | Việc khao khát mong mỏi ai đó da diết | 3
+BETRAYAL | Hành vi phản bội lòng tin của người kia | 2
+POSSESSIVE | Tính muốn giữ riêng không cho ai lại gần | 2
+CLINGY | Tính bám dính không rời nửa bước | 2
+NEEDY | Tính đòi hỏi được quan tâm liên tục | 2
+SILENT TREATMENT | Việc giận mà không nói chuyện với nhau | 2
+WEDDING RECEPTION | Tiệc chiêu đãi khách sau lễ cưới | 2
+GUEST LIST | Danh sách khách được mời dự cưới | 1
+SAVE THE DATE | Thiệp báo trước ngày cưới cho khách giữ lịch | 2
+WEDDING INVITATION | Tấm thiệp mời dự lễ thành hôn | 1
+FIRST DANCE | Điệu nhảy đầu tiên của cô dâu chú rể | 1
+GARTER | Dải đăng ten cô dâu đeo ở đùi | 3
+WEDDING PHOTOGRAPHER | Người chụp ảnh suốt lễ cưới | 1
+WEDDING ALBUM | Cuốn album lưu ảnh ngày cưới | 1
+SILVER ANNIVERSARY | Kỷ niệm 25 năm chung sống | 3
+PRENUP | Thoả thuận tài sản ký trước khi cưới | 3
+IN-LAWS | Những người bên nhà vợ hoặc nhà chồng | 2
+MOTHER-IN-LAW | Mẹ của vợ hoặc của chồng | 1
+FATHER-IN-LAW | Bố của vợ hoặc của chồng | 1
+WIDOW | Người phụ nữ có chồng đã mất | 2
+WIDOWER | Người đàn ông có vợ đã mất | 3
+SEPARATION | Việc hai vợ chồng sống riêng chưa ly hôn | 2
+ALIMONY | Khoản cấp dưỡng trả cho vợ cũ sau ly hôn | 3
+CUSTODY BATTLE | Cuộc tranh giành quyền nuôi con sau ly hôn | 3
+REMARRY | Việc cưới lần nữa sau khi đã ly hôn | 2
+BLIND SPOT | Điểm mù khiến ta không thấy lỗi của người mình yêu | 3
+RED FLAG | Dấu hiệu cảnh báo nên dừng mối quan hệ lại | 2
+GREEN FLAG | Dấu hiệu tốt cho thấy người ấy đáng tin | 2
+GHOSTING | Việc lặn mất tăm không trả lời tin nhắn nữa | 2
+BREADCRUMBING | Việc thả thính nhỏ giọt giữ người kia trong hy vọng | 3
+EX | Người yêu cũ, gọi tắt | 1
+CLOSURE | Cảm giác khép lại được chuyện cũ để bước tiếp | 3
+MOVE ON | Việc bước tiếp bỏ lại mối tình đã qua | 2
+SELF-LOVE | Việc biết yêu thương chính bản thân mình | 2
+LOVE LANGUAGE | Cách mỗi người thể hiện và cảm nhận tình cảm | 2
+QUALITY TIME | Thời gian dành trọn cho nhau không phân tâm | 1
+ACTS OF SERVICE | Việc thể hiện yêu thương bằng hành động giúp đỡ | 3
+PHYSICAL TOUCH | Việc thể hiện yêu thương qua đụng chạm thân mật | 2
+WORDS OF AFFIRMATION | Việc thể hiện yêu thương bằng lời khen và động viên | 3
+WOO | Việc ra sức chinh phục trái tim ai đó | 3
+COURT | Động từ cổ chỉ việc theo đuổi để cưới | 3
+SPURN | Việc cự tuyệt lạnh lùng lời tỏ tình | 3
+FLING | Mối quan hệ chớp nhoáng không nghiêm túc | 2
+SITUATIONSHIP | Quan hệ lưng chừng không rõ là gì | 2
+OPEN RELATIONSHIP | Quan hệ cho phép mỗi bên hẹn hò người khác | 3
+PLATONIC FRIEND | Người bạn thân thiết mà không có tình cảm yêu đương | 2
+CHILDHOOD SWEETHEART | Người thương từ thuở còn bé | 2
+SOULFUL | Đầy cảm xúc sâu lắng từ tâm hồn | 3
+ROMANCE NOVEL | Tiểu thuyết ngôn tình | 1
+ROM COM | Phim hài lãng mạn, gọi tắt | 1
+SERENADER | Người đứng dưới cửa sổ hát tặng người thương | 3
+MISTLETOE | Nhành tầm gửi treo cửa, ai đứng dưới thì hôn nhau | 3
+CHOCOLATE BOX | Hộp sô-cô-la tặng ngày lễ tình nhân | 1
+ROSE PETALS | Những cánh hoa hồng rải trên giường | 1
+DATE NIGHT | Buổi tối cố định hai người dành riêng cho nhau | 1
+LOVE SONG DEDICATION | Việc nhờ đài phát một bài hát tặng người thương | 3
+SLOW DANCE | Điệu nhảy chậm ôm nhau trong tiếng nhạc | 2
+HAND IN HAND | Tình trạng hai người đi bên nhau nắm tay | 1
+EYE TO EYE | Tình trạng hai bên nhìn nhận giống nhau về một chuyện | 3
+PET NAME | Biệt danh âu yếm chỉ hai người gọi nhau | 1
+INSIDE JOKE | Câu đùa chỉ hai người hiểu với nhau | 2
+SHARED MEMORY | Kỷ niệm chung mà cả hai cùng giữ | 1
+MEMORY LANE | Chuyện cũ hai người cùng nhắc lại cho nhớ | 3
+SCRAPBOOK | Cuốn sổ dán ảnh và kỷ vật của hai người | 2
+LOVE PLAYLIST | Danh sách bài hát gắn với chuyện tình hai người | 1
+COUPLE GOALS | Hình mẫu đôi lứa mà người khác ao ước | 1
+PUBLIC DISPLAY | Việc thể hiện tình cảm giữa chốn đông người | 2
+HOLDING DOOR | Cử chỉ giữ cửa cho người kia bước qua trước | 1
+SURPRISE PARTY | Bữa tiệc tổ chức giấu để làm bất ngờ | 1
+FLOWER DELIVERY | Dịch vụ giao hoa tận nơi tặng người thương | 1
+HANDWRITTEN NOTE | Mẩu giấy viết tay thay vì nhắn tin | 2
+GOODNIGHT TEXT | Tin nhắn chúc ngủ ngon gửi mỗi tối | 1
+MORNING CALL | Cuộc gọi đánh thức người thương mỗi sáng | 1
+VIDEO CALL DATE | Buổi hẹn qua màn hình khi ở xa nhau | 1
+AIRPORT GOODBYE | Cảnh chia tay ở sân bay quyến luyến | 2
+WELCOME HOME | Lời đón người thương trở về sau chuyến xa | 1
+MOVING IN | Việc hai người dọn về sống chung một nhà | 2
+SPLIT CHORES | Việc chia nhau làm việc nhà cho công bằng | 2
+JOINT ACCOUNT | Tài khoản ngân hàng chung của hai vợ chồng | 3
+FAMILY PLANNING | Việc bàn trước chuyện sinh con mấy đứa | 3
+BABY SHOWER | Tiệc mừng trước khi em bé chào đời | 2
+GODPARENT | Người đỡ đầu nhận chăm lo cho đứa trẻ | 3
+GENERATION GAP | Khoảng cách suy nghĩ giữa hai thế hệ trong nhà | 3
+ARRANGED MARRIAGE | Hôn nhân do cha mẹ hai bên sắp đặt | 3
+LOVE MARRIAGE | Hôn nhân do hai người tự tìm đến nhau | 2
+ELOPE PLAN | Kế hoạch trốn nhà đi cưới của đôi trẻ | 3
+BLESSING | Lời chúc phúc cha mẹ dành cho đôi trẻ | 2
+DOWRY CUSTOM | Tục lệ nhà gái trao của cải khi gả con | 3
+ENGAGEMENT PARTY | Tiệc tổ chức khi hai bên chính thức hứa hôn | 2
+BRIDAL VEIL | Tấm khăn mỏng che mặt cô dâu | 2
+WEDDING MARCH | Bản nhạc vang lên khi cô dâu tiến vào | 2
+RING EXCHANGE | Nghi thức hai người trao nhẫn cho nhau | 2
+MARRIAGE CERTIFICATE | Tờ giấy chứng nhận hai người đã thành vợ chồng | 2
+WEDDING ANNIVERSARY | Ngày kỷ niệm lễ cưới hằng năm | 1
+LOVE TOKEN | Vật nhỏ tặng nhau làm tin | 3
+FRIENDSHIP BRACELET | Chiếc vòng tay tết tay tặng bạn thân | 1
+HEART SHAPE | Hình trái tim tượng trưng cho tình yêu | 1
+CUPID ARROW | Mũi tên thần tình yêu bắn trúng ai là người đó phải lòng | 2
+LOVE POTION | Thứ nước trong truyện uống vào là đem lòng yêu | 2
+FAIRY TALE ENDING | Cái kết viên mãn như truyện cổ tích | 2
+HAPPILY EVER AFTER | Câu kết chuyện cổ tích, sống hạnh phúc mãi mãi | 2
+PRINCE CHARMING | Chàng hoàng tử trong mộng của các cô gái | 1
+DREAM GIRL | Cô gái trong mơ của một chàng trai | 1
+BLUSHING BRIDE | Cô dâu e thẹn đỏ mặt trong ngày cưới | 3
+NERVOUS GROOM | Chú rể hồi hộp run tay trước giờ làm lễ | 3
+LOVE CONFESSION | Lời thú nhận tình cảm với người mình thích | 2
+REJECTION | Việc bị từ chối khi tỏ tình | 2
+SECOND CHANCE | Cơ hội thứ hai sau khi đã làm sai | 2
+OLD FLAME | Người yêu cũ từng rất sâu đậm | 3
+LOVE AT A DISTANCE | Tình yêu duy trì dù hai người ở xa nhau | 2
+TRUST ISSUE | Vấn đề khó tin tưởng người khác do bị tổn thương trước đó | 3
+INTIMACY | Sự thân mật gần gũi riêng tư giữa hai người | 2
+MUTUAL FEELING | Tình cảm cả hai bên đều có với nhau | 2

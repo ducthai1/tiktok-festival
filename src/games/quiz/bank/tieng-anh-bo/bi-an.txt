@@ -133,7 +133,7 @@ DIVINATION | Nghệ thuật đoán điềm qua quẻ, sao hoặc giấc mơ | 2
 MAGIC | Phép thuật trò ảo thuật kỳ diệu | 1 | SORCERY
 SPELL | Câu thần chú đọc lên để gây phép | 1 | CHARM
 WAND | Chiếc đũa nhỏ phù thuỷ vung lên niệm phép | 1 | ROD, STICK
-POTION | Lọ nước thuốc phù thuỷ pha để gây phép | 1 | ELIXIR, BREW
+POTION | Lọ nước thuốc phù thuỷ pha để gây phép | 1 | BREW
 ENCHANTED | Bị mê hoặc bị phép lạ | 2 | BEWITCHED, MAGICAL
 SORCERER | Nam phù thuỷ dùng phép thuật hắc ám | 2
 WIZARD | Pháp sư già râu dài đội mũ chóp, giỏi phép thuật | 1
@@ -206,7 +206,7 @@ HIEROGLYPH | Chữ tượng hình Ai Cập | 2 | HIEROGLYPHIC
 GLYPH | Chữ tượng hình cổ | 3
 ARCANE | Bí ẩn khó hiểu huyền bí | 2 | MYSTERIOUS
 CIPHER | Mã hóa bằng số mật | 2 | SECRET WRITING
-CRYPT | Hầm mộ chôn cát | 2 | VAULT
+CRYPT | Hầm mộ chôn cát | 2
 SARCOPHAGUS | Quan tài đá chôn cất | 3 | STONE COFFIN
 SPECTRAL | Thuộc bóng ma linh hồn | 2 | GHOSTLY, PHANTOM-LIKE
 ETHEREAL | Vô hình anh quang thần bí | 3 | GHOSTLY, IMMATERIAL
@@ -300,3 +300,118 @@ HIDDEN DOOR | Cánh cửa giấu sau giá sách hoặc bức tường | 1
 SPIRIT WORLD | Thế giới của các linh hồn sau khi chết | 2
 LUCKY CHARM | Vật nhỏ mang theo người để cầu may | 1
 NIGHT TERROR | Cơn hoảng loạn giữa đêm khi đang ngủ say | 2
+CATACOMB | Đường hầm ngầm chứa hàng nghìn bộ hài cốt | 3
+ROSETTA STONE | Phiến đá giúp giải mã chữ cổ Ai Cập | 3
+DIG SITE | Khu đất đang được đào tìm di vật | 2
+CARBON DATING | Cách đo tuổi hiện vật bằng đồng vị phóng xạ | 3
+STONEHENGE CIRCLE | Vòng tròn đá dựng đứng bí ẩn ở nước Anh | 2
+NAZCA LINES | Những hình vẽ khổng lồ chỉ thấy rõ từ trên cao ở Peru | 3
+EASTER ISLAND | Hòn đảo có hàng trăm tượng đầu người khổng lồ | 2
+MARY CELESTE | Con tàu được tìm thấy nguyên vẹn mà không một bóng người | 3
+VOYNICH MANUSCRIPT | Cuốn sách cổ viết bằng thứ chữ chưa ai đọc được | 3
+CIPHER WHEEL | Bánh xe xoay dùng để mã hoá thư từ | 3
+MORSE CODE | Hệ tín hiệu chấm và gạch truyền qua điện tín | 2
+DECODER | Thiết bị hoặc người giải được thông điệp mã hoá | 2
+ENCRYPTED | Đã bị khoá lại bằng mã, không đọc thẳng được | 2
+PASSPHRASE | Chuỗi từ dài dùng thay mật khẩu cho an toàn hơn | 3
+VAULT | Căn phòng tường dày khoá kín cất giữ của quý | 2
+COMBINATION LOCK | Khoá phải xoay đúng dãy số mới mở | 2
+BOOBY TRAP | Bẫy giấu sẵn chờ người không biết chạm vào | 3
+TRIPWIRE | Sợi dây căng ngang kích hoạt bẫy khi vướng chân | 3
+SECRET SOCIETY | Hội kín hoạt động ngầm không công khai thành viên | 3
+INITIATION | Nghi thức kết nạp người mới vào hội kín | 3
+RITUAL | Nghi lễ làm theo trình tự cố định | 2
+SACRIFICE | Lễ hiến tế dâng vật sống cho thần linh | 2
+PENTAGRAM | Ngôi sao năm cánh vẽ trong vòng tròn phép | 3
+GRIMOIRE | Cuốn sách cổ ghi chép các bài phép | 3
+PHILOSOPHERS STONE | Hòn đá huyền thoại được cho là cho sự bất tử | 3
+ELIXIR | Thứ nước uống vào được cho là sống mãi | 3
+IMMORTALITY | Trạng thái sống mãi không bao giờ chết | 2
+PAST LIFE | Kiếp sống trước được cho là của cùng một linh hồn | 2
+AURA | Vầng hào quang vô hình đồn bao quanh mỗi người | 3
+CHAKRA | Các luân xa trên cơ thể theo quan niệm phương Đông | 3
+DOWSING | Việc cầm que chữ Y đi tìm mạch nước ngầm | 3
+PENDULUM | Quả lắc treo dây đung đưa dùng để bói | 3
+CRYSTAL GAZING | Việc nhìn chăm vào quả cầu để thấy ảo ảnh | 3
+TEA LEAF READING | Việc đoán vận qua hình bã trà đọng đáy tách | 3
+PALM READING | Việc xem đường chỉ trong lòng bàn tay đoán số | 2
+HOROSCOPE | Lá số tử vi đoán vận theo ngày sinh | 1
+ZODIAC SIGN | Cung hoàng đạo ứng với tháng sinh của mỗi người | 1
+NUMEROLOGY | Thuật đoán vận mệnh dựa trên các con số | 3
+BLACK MIRROR | Tấm gương đen thầy bói nhìn vào để thấy hình | 3
+SPIRIT BOARD | Tấm bảng chữ cái dùng gọi hồn | 3
+ORB | Đốm sáng tròn xuất hiện trong ảnh chụp nơi có ma | 3
+COLD SPOT | Khoảng không khí lạnh bất thường trong nhà ma | 3
+EVP | Giọng nói lạ lọt vào bản ghi âm nơi hoang vắng | 3
+GHOST TOUR | Chuyến đi tham quan những nơi bị đồn có ma | 1
+ASYLUM | Toà nhà bỏ hoang từng là trại tâm thần | 2
+ABANDONED | Bị bỏ hoang không ai ở nữa từ lâu | 1
+DERELICT | Đổ nát hoang phế không còn ai trông nom | 3
+OVERGROWN | Bị cây cỏ mọc trùm kín vì lâu không ai dọn | 2
+DUST SHEET | Tấm vải trắng phủ lên đồ đạc trong nhà bỏ không | 3
+FOOTSTEPS | Tiếng bước chân vang lên khi không có ai | 1
+DOOR SLAM | Tiếng cửa đóng sầm khi không có gió | 2
+FLICKERING | Việc bóng đèn chớp tắt liên tục bất thường | 2
+SPINE-CHILLING | Rợn tới mức lạnh cả sống lưng | 3
+BLOODCURDLING | Tiếng thét kinh hoàng làm đông cả máu | 3
+FOREBODING | Linh cảm nặng nề rằng chuyện xấu sắp xảy ra | 3
+PARANOIA | Trạng thái lúc nào cũng nghĩ có người hại mình | 3
+REAPPEAR | Việc xuất hiện trở lại sau khi đã mất tích | 2
+UNSOLVED | Vẫn chưa tìm ra lời giải cho tới nay | 1
+MANHUNT | Cuộc truy lùng quy mô lớn tìm kẻ chạy trốn | 2
+AUTOPSY | Cuộc mổ tử thi tìm nguyên nhân cái chết | 3
+DNA TEST | Xét nghiệm gen để xác định danh tính | 2
+BLOOD SPATTER | Vệt máu bắn ra giúp dựng lại hiện trường | 3
+TYRE TRACK | Vệt bánh xe để lại trên mặt đường | 2
+SEARCH WARRANT | Lệnh của toà cho phép khám xét nhà | 3
+TESTIMONY | Lời khai nhân chứng trình bày trước toà | 3
+COURTROOM | Phòng xử án nơi diễn ra phiên toà | 2
+JURY | Nhóm người dân ngồi nghe và phán có tội hay không | 2
+ACQUITTAL | Phán quyết tuyên trắng án cho bị cáo | 3
+CONVICTION | Phán quyết tuyên có tội | 3
+PLOT HOLE | Lỗ hổng vô lý trong mạch truyện | 3
+TWIST ENDING | Cái kết lật ngược khiến ai cũng bất ngờ | 2
+PRIME SUSPECT | Người bị nghi ngờ nhiều nhất trong vụ án | 2
+ACCOMPLICE ROLE | Vai trò của kẻ giúp sức cho thủ phạm | 3
+EYEWITNESS ACCOUNT | Lời kể của người tận mắt chứng kiến | 2
+SKETCH ARTIST | Hoạ sĩ vẽ chân dung nghi phạm theo lời tả | 3
+POLYGRAPH | Máy đo nhịp tim và mồ hôi để dò nói dối | 3
+SURVEILLANCE FOOTAGE | Đoạn băng ghi hình từ camera an ninh | 2
+TIMELINE | Trình tự thời gian dựng lại diễn biến vụ việc | 2
+MISSING PERSON | Người đã mất tích chưa tìm thấy | 1
+RANSOM NOTE | Mẩu thư đòi tiền chuộc con tin | 2
+HOSTAGE | Người bị bắt giữ để đòi điều kiện | 2
+GETAWAY CAR | Chiếc xe chờ sẵn để bọn cướp tẩu thoát | 2
+ACCOMPLICE DRIVER | Kẻ cầm lái xe tẩu thoát cho đồng bọn | 3
+SAFE HOUSE | Ngôi nhà bí mật dùng để ẩn náu | 2
+DOUBLE AGENT | Điệp viên làm việc cho cả hai phía | 3
+CODE NAME | Bí danh dùng thay tên thật trong hoạt động ngầm | 2
+BRIEFCASE | Chiếc cặp da cứng đựng tài liệu mật | 2
+MICROFILM | Cuộn phim tí hon chứa tài liệu thu nhỏ | 3
+BUG DEVICE | Thiết bị nghe lén giấu trong phòng | 3
+TRACKING DEVICE | Thiết bị gắn lén để theo dõi vị trí | 2
+DISAPPEARING INK | Loại mực viết xong tự mờ dần đi | 3
+SECRET COMPARTMENT | Ngăn giấu kín bên trong đồ vật | 2
+FALSE BOTTOM | Đáy giả của vali che ngăn bí mật bên dưới | 3
+DUNGEON | Hầm ngục tối giam người dưới lâu đài | 2
+CANDLELIGHT | Ánh nến leo lét trong căn phòng tối | 1
+FULL MOON NIGHT | Đêm trăng tròn gắn với truyền thuyết người sói | 2
+WITCHING HOUR | Giờ ma quỷ, quãng ba giờ sáng | 3
+BLACK MAGIC | Thứ phép thuật dùng để hại người | 2
+WHITE MAGIC | Thứ phép thuật dùng để chữa lành giúp người | 3
+VOODOO DOLL | Con búp bê bị ghim kim để yểm người khác | 3
+SPIRIT ANIMAL | Con vật được tin là dẫn dắt linh hồn một người | 3
+TOTEM | Cột gỗ chạm hình thú làm biểu tượng bộ tộc | 3
+SHAMAN | Thầy cúng bộ tộc nối giữa người và thần linh | 3
+TRIBAL MASK | Mặt nạ gỗ bộ tộc đeo trong nghi lễ | 2
+BONFIRE RITUAL | Nghi lễ đốt lửa lớn nhảy múa quanh đống lửa | 3
+CHANTING | Việc nhiều người cùng đọc lầm rầm một câu lặp lại | 3
+TRANCE | Trạng thái như bị thôi miên, mất ý thức xung quanh | 3
+HOLY WATER | Nước được làm phép dùng để trừ tà | 2
+SILVER BULLET | Viên đạn bạc được tin là giết được người sói | 2
+WOODEN STAKE | Cọc gỗ nhọn đóng vào tim ma cà rồng | 2
+COFFIN LID | Nắp quan tài đậy kín phía trên | 2
+TOMBSTONE | Tấm bia đá dựng trên mộ khắc tên người mất | 1
+EPITAPH | Dòng chữ khắc trên bia mộ tưởng nhớ người đã khuất | 3
+GRAVEYARD | Khu đất chôn cất nhiều ngôi mộ | 1
+MAUSOLEUM VAULT | Gian hầm xây kín trong lăng mộ | 3

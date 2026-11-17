@@ -375,3 +375,60 @@ TIME MANAGEMENT | Cách sắp xếp thời gian cho kịp mọi việc | 1
 PUBLIC SPEAKING | Việc đứng nói trước đám đông | 1
 EYE CONTACT | Việc nhìn thẳng vào mắt người đối diện khi nói | 1
 FIRST IMPRESSION | Cảm nhận ban đầu về ai đó trong vài giây gặp mặt | 1
+URBAN SPRAWL | Việc đô thị loang rộng mãi ra vùng ven | 3
+GREEN SPACE | Mảng cây xanh công viên trong thành phố | 2
+RENEWABLE ENERGY | Nguồn điện từ gió, nắng, nước không cạn kiệt | 2
+FOSSIL FUEL DEPENDENCE | Việc phụ thuộc vào than và dầu để lấy năng lượng | 3
+SINGLE USE PLASTIC | Đồ nhựa dùng một lần rồi vứt | 2
+LANDFILL | Bãi chôn rác khổng lồ ngoài ngoại ô | 2
+CONSERVATION AREA | Khu vực được bảo vệ cấm xây dựng | 3
+FOOD CHAIN | Chuỗi loài này ăn loài kia trong tự nhiên | 2
+POACHING | Việc săn bắt trái phép động vật quý hiếm | 3
+ANIMAL TESTING | Việc thử thuốc và mỹ phẩm trên động vật | 2
+VEGETARIANISM | Lối ăn kiêng không dùng thịt | 2
+ORGANIC FARMING | Cách trồng trọt không dùng hoá chất | 2
+FOOD SECURITY | Việc bảo đảm ai cũng đủ lương thực để ăn | 3
+FAMINE | Nạn đói kéo dài trên diện rộng | 2
+AID ORGANIZATION | Tổ chức cứu trợ giúp vùng gặp thiên tai | 2
+REFUGEE | Người phải rời bỏ quê hương vì chiến tranh hoặc thiên tai | 2
+IMMIGRATION POLICY | Chính sách nhà nước về người nhập cư | 3
+BRAIN DRAIN | Tình trạng người giỏi rời nước ra nước ngoài làm việc | 3
+WORKFORCE | Toàn bộ lực lượng lao động của một nước | 2
+AUTOMATION RISK | Nguy cơ máy móc thay thế việc làm của con người | 3
+GIG ECONOMY | Nền kinh tế việc làm tự do theo từng cuốc | 3
+WORK LIFE BALANCE | Sự cân bằng giữa công việc và cuộc sống riêng | 2
+BURNOUT RISK | Nguy cơ kiệt sức vì làm việc quá tải kéo dài | 3
+MENTAL WELLBEING | Tình trạng khoẻ mạnh về mặt tinh thần | 2
+SCREEN ADDICTION | Tình trạng nghiện màn hình không rời điện thoại | 2
+DIGITAL DIVIDE | Khoảng cách giữa người có và không có internet | 3
+ONLINE PRIVACY | Quyền riêng tư của mỗi người trên mạng | 2
+FAKE NEWS | Tin bịa đặt lan truyền như tin thật | 1
+MISINFORMATION | Thông tin sai lan đi mà người đưa không cố ý | 3
+CENSORSHIP | Việc kiểm duyệt chặn nội dung không cho đăng | 3
+FREEDOM OF SPEECH | Quyền được nói lên suy nghĩ của mình | 2
+CIVIC DUTY | Bổn phận công dân với cộng đồng và đất nước | 3
+VOTER TURNOUT | Tỷ lệ người dân đi bỏ phiếu | 3
+TAXATION | Việc nhà nước thu thuế từ dân và doanh nghiệp | 2
+PUBLIC SPENDING | Khoản tiền nhà nước chi cho dịch vụ công | 2
+WELFARE STATE | Mô hình nhà nước lo an sinh cho mọi người dân | 3
+PRIVATIZATION | Việc chuyển doanh nghiệp nhà nước sang tư nhân | 3
+SUBSIDIZED | Được nhà nước bù một phần chi phí | 3
+AFFORDABLE HOUSING | Nhà ở giá vừa túi tiền người thu nhập thấp | 2
+HOMELESSNESS | Tình trạng người không có chỗ ở phải ngủ ngoài đường | 2
+SOCIAL MOBILITY | Khả năng vươn lên tầng lớp cao hơn trong xã hội | 3
+EQUAL OPPORTUNITY | Việc ai cũng có cơ hội như nhau không phân biệt | 2
+GENDER GAP | Khoảng cách giữa nam và nữ về lương hoặc cơ hội | 3
+AGEING POPULATION | Tình trạng người già chiếm tỷ lệ ngày càng lớn | 3
+BIRTH RATE | Số trẻ sinh ra tính trên một nghìn dân | 2
+LIFE EXPECTANCY | Số năm trung bình một người được sống | 2
+RURAL EXODUS | Làn sóng người bỏ quê lên thành phố | 3
+COMMUNITY CENTRE | Nơi người dân trong khu tụ họp sinh hoạt chung | 2
+VOLUNTEERING | Việc bỏ thời gian làm không công giúp cộng đồng | 2
+CHARITABLE DONATION | Khoản tiền quyên góp cho tổ chức từ thiện | 2
+CROWDFUNDING | Việc gọi vốn từ nhiều người qua mạng | 2
+SOCIAL ENTERPRISE | Doanh nghiệp lập ra để giải quyết vấn đề xã hội | 3
+SUSTAINABLE DEVELOPMENT | Phát triển mà không làm hại đời sau | 3
+CIRCULAR ECONOMY | Mô hình kinh tế dùng lại mọi thứ, không thải bỏ | 3
+CARBON NEUTRAL | Trạng thái thải ra bao nhiêu thì bù lại bấy nhiêu | 3
+GREENWASHING | Việc quảng cáo xanh giả tạo để đánh bóng tên tuổi | 3
+ETHICAL CONSUMPTION | Việc chọn mua hàng từ nơi làm ăn tử tế | 3

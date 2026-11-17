@@ -20,7 +20,7 @@ EXTRACURRICULAR | Hoạt động ngoại khóa | 3
 SCHOOL BUS | Xe buýt trường học | 1
 LOCKER | Tủ đồ cá nhân | 2
 ROLL CALL | Điểm danh | 2
-HOMEROOM TEACHER | Giáo viên chủ nhiệm | 2 | FORM TEACHER, HOMEROOM
+HOMEROOM TEACHER | Giáo viên chủ nhiệm | 2 | FORM TEACHER
 CLASS MONITOR | Lớp trưởng | 1 | CLASS PRESIDENT
 DESKMATE | Bạn cùng bàn | 2 | DESK MATE
 PEN PAL | Bạn qua thư | 2 | PENPAL
@@ -90,7 +90,7 @@ EXAM | Kỳ thi lớn cuối kỳ hoặc tuyển sinh, có phòng thi và giám 
 CLASSMATE | Bạn cùng lớp | 2 | CLASSMATES
 DICTIONARY | Quyển từ điển | 2
 UNIFORM | Bộ đồng phục | 2
-BREAK | Giờ ra chơi | 2 | BREAK TIME, RECESS, PLAYTIME
+BREAK | Giờ ra chơi | 2 | BREAK TIME, RECESS
 CHALK | Viên phấn viết bảng | 2
 FAIL | Thi trượt, thi rớt | 2 | FAILED
 MISTAKE | Lỗi sai (làm bài bị sai) | 2 | MISTAKES, ERROR
@@ -301,3 +301,121 @@ ACCREDITATION | Việc một tổ chức công nhận chất lượng của trư
 SCHOLARSHIP FUND | Quỹ tiền dành để cấp học bổng cho sinh viên | 3
 EXTENSION DEADLINE | Hạn nộp bài được gia hạn thêm cho sinh viên | 3
 WITHDRAWAL | Việc rút khỏi một môn học giữa kỳ | 3
+ROLL BOOK | Sổ điểm danh giáo viên mang vào lớp | 2
+SEATING CHART | Sơ đồ chỗ ngồi của cả lớp | 2
+BACK ROW | Dãy bàn cuối lớp xa bảng nhất | 1
+TEACHERS DESK | Bàn giáo viên đặt trên bục | 1
+PROJECTOR SCREEN | Tấm màn trắng kéo xuống để chiếu bài giảng | 2
+LAB COAT | Áo blouse trắng mặc khi làm thí nghiệm | 2
+SAFETY GOGGLES | Kính bảo hộ đeo khi làm thí nghiệm hoá | 2
+TEST TUBE | Ống nghiệm thuỷ tinh nhỏ đựng hoá chất | 2
+BEAKER | Cốc thuỷ tinh có mỏ dùng trong phòng thí nghiệm | 2
+MICROSCOPE SLIDE | Phiến kính mỏng đặt mẫu lên để soi | 3
+PERIODIC TABLE | Bảng xếp các nguyên tố hoá học treo tường lớp | 2
+GLOBE STAND | Chân đế đỡ quả địa cầu xoay được | 3
+WALL MAP | Tấm bản đồ lớn treo trong lớp học | 1
+SCHOOL LIBRARY | Phòng đọc chứa sách cho học sinh mượn | 1
+READING CORNER | Góc kê ghế đệm cho học sinh ngồi đọc | 2
+BORROW SLIP | Phiếu ghi khi mượn sách thư viện | 2
+OVERDUE FINE | Khoản phạt khi trả sách muộn hạn | 3
+STUDY HALL | Phòng tự học yên tĩnh giữa các tiết | 2
+TUTORIAL SESSION | Buổi học phụ đạo theo nhóm nhỏ | 3
+REMEDIAL CLASS | Lớp học bù dành cho học sinh yếu | 3
+GIFTED CLASS | Lớp chuyên dành cho học sinh giỏi | 3
+SCHOOL COUNSELOR | Người tư vấn tâm lý và hướng nghiệp cho học sinh | 2
+CAREER DAY | Ngày mời người đi làm tới kể về nghề của họ | 2
+SCHOOL TRIP | Chuyến đi chơi cả lớp do trường tổ chức | 1
+PERMISSION SLIP | Giấy xin phép phụ huynh ký cho con đi dã ngoại | 2
+ASSEMBLY HALL | Hội trường lớn cả trường tập trung | 2
+SCHOOL PLAY | Vở kịch do học sinh diễn trên sân khấu trường | 1
+TALENT SHOW | Buổi diễn cho học sinh khoe tài năng | 1
+SPORTS DAY | Ngày hội thể thao toàn trường | 1
+SCHOOL BAND | Ban nhạc gồm học sinh của trường | 1
+YEARBOOK | Cuốn kỷ yếu in ảnh cả khoá khi ra trường | 2
+CLASS REUNION | Buổi họp lớp gặp lại nhau sau nhiều năm | 2
+HOMEROOM | Tiết sinh hoạt lớp đầu hoặc cuối tuần | 2
+DETENTION ROOM | Phòng học sinh bị phạt ở lại sau giờ | 3
+HALL PASS | Giấy cho phép ra khỏi lớp giữa giờ học | 3
+TARDY SLIP | Phiếu ghi lại khi học sinh đi muộn | 3
+DRESS CODE VIOLATION | Lỗi mặc không đúng quy định của trường | 3
+BULLYING | Hành vi bắt nạt bạn yếu hơn trong trường | 2
+PEER PRESSURE | Áp lực làm theo bạn bè cho giống số đông | 2
+SCHOOL RULES | Bản nội quy học sinh phải tuân theo | 1
+MERIT POINT | Điểm thưởng cộng cho hành vi tốt | 2
+DEMERIT | Điểm trừ ghi lại khi vi phạm nội quy | 3
+HONOR ROLL | Bảng danh dự ghi tên học sinh xuất sắc | 3
+VALEDICTORY SPEECH | Bài phát biểu của thủ khoa trong lễ tốt nghiệp | 3
+CAP AND GOWN | Bộ mũ và áo choàng mặc ngày tốt nghiệp | 2
+DIPLOMA FRAME | Khung treo tấm bằng tốt nghiệp lên tường | 2
+ALMA MATER | Ngôi trường cũ mà một người từng theo học | 3
+ENTRANCE REQUIREMENT | Điều kiện bắt buộc phải có để được nhận vào trường | 3
+APPLICATION FORM | Tờ khai điền thông tin khi nộp hồ sơ | 1
+PERSONAL STATEMENT | Bài tự giới thiệu viết khi xin vào trường | 3
+RECOMMENDATION LETTER | Thư thầy cô viết giới thiệu học sinh | 2
+WAITING LIST | Danh sách chờ nếu còn chỗ trống sẽ được gọi | 2
+ACCEPTANCE LETTER | Thư báo đã trúng tuyển vào trường | 1
+ORIENTATION WEEK | Tuần đầu làm quen trường lớp của tân sinh viên | 2
+COURSE CATALOG | Cuốn liệt kê mọi môn học trường mở | 3
+ELECTIVE | Môn tự chọn sinh viên được quyền đăng ký hoặc không | 2
+CORE SUBJECT | Môn bắt buộc ai cũng phải học | 2
+PREREQUISITE COURSE | Môn phải học xong trước mới được đăng ký môn sau | 3
+LECTURE NOTES | Bản ghi chép nội dung bài giảng | 1
+HANDWRITING | Nét chữ viết tay của mỗi người | 1
+PROOFREAD | Việc đọc soát lại bài tìm lỗi trước khi nộp | 3
+WORD COUNT | Số chữ tối đa hoặc tối thiểu của bài viết | 2
+CITATION | Việc ghi nguồn khi trích dẫn ý của người khác | 3
+BIBLIOGRAPHY | Danh mục tài liệu tham khảo cuối bài | 3
+FOOTNOTE | Chú thích nhỏ in ở chân trang | 3
+APPENDIX SECTION | Phần phụ lục đặt sau phần chính của bài viết | 3
+ORAL EXAM | Kỳ thi vấn đáp trả lời miệng trước giám khảo | 2
+OPEN BOOK EXAM | Kỳ thi cho phép mở tài liệu khi làm bài | 2
+MULTIPLE CHOICE | Dạng câu hỏi chọn một trong các phương án cho sẵn | 1
+ESSAY QUESTION | Dạng câu hỏi phải viết thành đoạn văn trả lời | 2
+GRADING CURVE | Cách chấm điều chỉnh điểm theo mặt bằng cả lớp | 3
+RETAKE | Việc thi lại môn đã trượt | 2
+MAKE-UP TEST | Bài kiểm tra bù cho người vắng hôm thi | 2
+EXAM HALL | Phòng lớn kê bàn riêng cho kỳ thi | 2
+INVIGILATOR | Giám thị đi lại trông coi phòng thi | 3
+ANSWER SHEET | Tờ giấy tô đáp án nộp sau khi thi | 1
+SCRATCH PAPER | Tờ giấy nháp dùng tính toán trong lúc thi | 2
+SCHOOL MOTTO | Câu khẩu hiệu treo ở cổng làm phương châm của trường | 2
+SCHOOL BADGE | Phù hiệu trường may trên ngực áo đồng phục | 1
+SCHOOL ANTHEM | Bài hát truyền thống của nhà trường | 2
+HEAD BOY | Nam sinh đại diện toàn trường ở các trường Anh | 3
+HEAD GIRL | Nữ sinh đại diện toàn trường ở các trường Anh | 3
+PREFECT | Học sinh lớp lớn được giao giữ trật tự | 3
+STUDENT COUNCIL | Hội đồng học sinh tự quản của trường | 2
+CLASS REPRESENTATIVE | Người được lớp cử ra phát biểu thay mặt cả lớp | 2
+SCHOOL NEWSPAPER | Tờ báo do học sinh trong trường tự làm | 2
+NOTICE BOARD | Bảng tin dán thông báo ở hành lang | 1
+WATER FOUNTAIN | Vòi nước uống công cộng trong trường | 1
+SCHOOL NURSE OFFICE | Phòng y tế của trường | 1
+FIRE DRILL | Buổi tập dượt sơ tán khi có cháy | 2
+EVACUATION ROUTE | Lối thoát hiểm vạch sẵn khi có sự cố | 3
+SUBSTITUTE TEACHER | Giáo viên dạy thay khi thầy cô chính nghỉ | 2
+STAFF ROOM | Phòng chờ của giáo viên giữa các tiết | 2
+PARENT PORTAL | Trang mạng cho phụ huynh xem điểm con | 3
+REPORT COMMENT | Dòng nhận xét thầy cô ghi trong phiếu điểm | 2
+ATTENDANCE RATE | Tỷ lệ đi học đầy đủ của một học sinh | 2
+TRUANCY | Việc trốn học không có lý do | 3
+EXPEL | Việc đuổi học sinh khỏi trường vĩnh viễn | 3
+APOLOGY LETTER | Lá thư kiểm điểm học sinh viết khi mắc lỗi | 2
+BEHAVIOUR RECORD | Sổ ghi lại thái độ và hành vi của học sinh | 3
+GROUP PRESENTATION | Bài thuyết trình cả nhóm cùng đứng trình bày | 1
+POSTER PROJECT | Bài tập làm áp phích dán tường | 1
+SCIENCE FAIR | Hội chợ trưng bày các thí nghiệm học sinh làm | 2
+SPELLING BEE | Cuộc thi đánh vần từ khó | 2
+DEBATE CLUB | Câu lạc bộ tranh biện rèn nói trước đám đông | 2
+CHESS CLUB | Câu lạc bộ chơi cờ sau giờ học | 1
+SCHOOL CHOIR | Đội hợp xướng gồm học sinh của trường | 2
+FIELD DAY | Ngày cả trường ra sân chơi các trò vận động | 2
+SUMMER CAMP | Trại hè cho học sinh trong kỳ nghỉ | 1
+EXCHANGE PROGRAM | Chương trình đổi học sinh sang học ở nước khác | 2
+HOST FAMILY | Gia đình bản xứ nhận nuôi học sinh trao đổi | 3
+LANGUAGE BARRIER | Rào cản vì không nói được tiếng của nhau | 2
+PLACEMENT TEST | Bài kiểm tra xếp lớp theo trình độ | 2
+LEVEL UP CLASS | Lớp nâng cao dành cho người đã qua trình độ cơ bản | 3
+CERTIFICATE EXAM | Kỳ thi lấy chứng chỉ chính thức | 2
+SCHOOL FAIR | Hội chợ gây quỹ do trường tổ chức | 2
+BAKE SALE | Buổi bán bánh tự làm để gây quỹ lớp | 2
+FUNDRAISING | Việc quyên góp tiền cho hoạt động của trường | 2

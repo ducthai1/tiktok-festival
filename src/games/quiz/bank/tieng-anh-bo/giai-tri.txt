@@ -183,7 +183,7 @@ CLAPPERBOARD | Tấm bảng đen gõ cạch báo bắt đầu bấm máy | 2 | C
 BOOM MIC | Cần micro dài vươn thu tiếng nói diễn viên | 2 | BOOM POLE
 PROP | Đạo cụ diễn xuất trên phim trường | 2 | STAGE PROP
 BOX OFFICE | Doanh thu phòng vé rạp chiếu phim | 2 | TICKET BOOTH
-SEQUEL | Phần phim tiếp theo nối tiếp câu chuyện trước | 2 | FOLLOW-UP
+SEQUEL | Phần phim tiếp theo nối tiếp câu chuyện trước | 2
 PREQUEL | Phần phim tiền truyện kể lại quá khứ nhân vật | 2 | BACKSTORY
 REMAKE | Bộ phim làm lại từ một tác phẩm xưa | 2 | REBOOT
 SPOILER | Lời tiết lộ trước kết thúc làm mất hứng xem | 1 | LEAK
@@ -289,7 +289,7 @@ MEME | Hình ảnh hoặc video hài hước chế lại lan truyền | 1 | INTE
 SUBSCRIBER | Người bấm đăng ký theo dõi kênh video | 1
 VIEW | Lượt xem hiển thị độ ăn khách của video | 1 | PAGEVIEW
 HIGHLIGHT | Khoảnh khắc đáng nhớ ấn tượng nhất buổi diễn | 1 | BEST MOMENTS
-BLOOPER | Cảnh quay hỏng hậu trường cười ra nước mắt | 2 | GAG REEL, OUTTAKE
+BLOOPER | Cảnh quay hỏng hậu trường cười ra nước mắt | 2 | GAG REEL
 BEHIND THE SCENES | Hậu trường phía sau ống kính của đoàn làm phim | 1 | MAKING OF, BTS
 BALCONY SEATS | Hàng ghế trên tầng lầu ngắm sân khấu | 2 | UPPER TIER
 VIP SEAT | Ghế ngồi hạng sang vị trí đẹp nhất khán phòng | 1 | PREMIUM SEAT
@@ -309,7 +309,7 @@ SOLD OUT | Tình trạng cháy vé không còn chỗ trống | 1 | FULL HOUSE
 SCALPER | Phe vé chợ đen bán lại vé giá cắt cổ | 2 | TICKET TOUT
 VIP PASS | Tấm thẻ thông hành đặc quyền cho phép tiếp cận khu vực khách danh dự | 1 | ALL-ACCESS PASS
 FANART | Tranh vẽ thần tượng do người hâm mộ tự vẽ | 1 | FAN ART
-FANFIC | Truyện tự sáng tác do fan viết về nhân vật yêu thích | 2 | FAN FICTION
+FANFIC | Truyện tự sáng tác do fan viết về nhân vật yêu thích | 2
 PAY-PER-VIEW | Hình thức trả tiền xem trực tiếp từng trận đấu sự kiện | 2 | PPV
 HD | Độ phân giải hình ảnh sắc nét độ nét cao | 1 | HIGH DEFINITION
 4K | Độ phân giải siêu nét gấp 4 lần chuẩn Full HD | 1 | ULTRA HD
@@ -347,3 +347,58 @@ EPILOGUE | Phần vĩ thanh kết thúc khép lại câu chuyện | 2 | AFTERWOR
 ACT | Một hồi kịch lớn trong vở kịch nhiều màn | 1 | PLAY SECTION
 CURTAIN RISES | Khoảnh khắc tấm màn nhung kéo lên mở màn | 2
 CURTAIN FALLS | Khoảnh khắc tấm màn nhung hạ xuống khép lại | 2
+SCRIPT READING | Buổi cả dàn diễn viên ngồi đọc kịch bản lần đầu | 3
+TABLE READ | Buổi đọc kịch bản quanh bàn trước khi quay | 3
+CASTING CALL | Thông báo mời diễn viên tới thử vai | 2
+SCREEN TEST | Buổi quay thử để xem diễn viên lên hình thế nào | 3
+TYPECAST | Việc diễn viên bị đóng mãi một kiểu vai | 3
+METHOD ACTING | Lối nhập vai sống luôn như nhân vật ngoài đời | 3
+IMPROVISATION | Việc diễn ứng biến không theo kịch bản | 3
+OUTTAKE | Cảnh quay bị cắt không dùng trong bản chiếu | 3
+DIRECTORS CUT | Bản dựng theo đúng ý đạo diễn, thường dài hơn | 3
+POST PRODUCTION | Giai đoạn dựng và chỉnh sửa sau khi quay xong | 3
+COLOR GRADING | Việc chỉnh màu cho cả bộ phim đồng nhất | 3
+FOLEY | Việc tạo tiếng động bằng đạo cụ trong phòng thu | 3
+SOUND MIXING | Việc trộn lời thoại, nhạc và tiếng động thành một | 3
+GREEN SCREEN | Phông xanh dùng thay nền bằng kỹ xảo | 2
+MOTION CAPTURE | Kỹ thuật ghi cử động diễn viên để dựng nhân vật ảo | 3
+STORYBOARD | Loạt hình vẽ phác từng cảnh trước khi quay | 3
+SHOT LIST | Bảng liệt kê từng góc máy cần quay trong ngày | 3
+ESTABLISHING SHOT | Cảnh toàn mở đầu cho biết chuyện xảy ra ở đâu | 3
+WIDE SHOT | Góc quay lấy trọn khung cảnh và nhân vật | 2
+LOW ANGLE | Góc máy đặt thấp hất lên cho nhân vật trông oai | 3
+HIGH ANGLE | Góc máy đặt cao chúc xuống cho nhân vật trông nhỏ bé | 3
+TRACKING SHOT | Cảnh máy quay chạy theo nhân vật đang di chuyển | 3
+ZOOM IN | Việc kéo ống kính lại gần cho chủ thể to lên | 1
+FADE OUT | Việc hình tối dần đi cho tới hết | 2
+JUMP CUT | Cú cắt làm hình nhảy đột ngột giữa hai khoảnh khắc | 3
+SLOW BURN | Lối kể chậm rãi dồn nén trước khi bùng nổ | 3
+PACING | Nhịp nhanh chậm của câu chuyện | 3
+RUNTIME | Tổng thời lượng của một bộ phim | 2
+OPENING CREDITS | Phần giới thiệu tên chạy ở đầu phim | 2
+END CREDITS | Phần tên người làm phim chạy khi hết phim | 1
+POST CREDIT SCENE | Cảnh giấu sau phần tên cuối phim | 2
+FRANCHISE FILM | Phim thuộc một loạt phim cùng thương hiệu | 3
+SPIN-OFF | Phim tách ra kể riêng về một nhân vật phụ | 2
+MINISERIES | Phim truyền hình ngắn chỉ vài tập là hết | 3
+PILOT EPISODE | Tập đầu làm thử để nhà đài quyết có đặt hàng không | 3
+SEASON FINALE | Tập cuối khép lại một mùa phim | 2
+CANCELLATION | Việc ngừng sản xuất bộ phim giữa chừng | 3
+STREAMING PLATFORM | Dịch vụ xem phim trực tuyến trả phí hằng tháng | 1
+BINGE RELEASE | Cách tung cả mùa phim cùng một lúc | 3
+WEEKLY RELEASE | Cách phát hành nhỏ giọt mỗi tuần một tập | 2
+FAN FICTION | Truyện do người hâm mộ tự viết tiếp | 2
+COLLECTIBLE | Món đồ sản xuất giới hạn dân sưu tầm săn lùng | 2
+VINYL RECORD | Đĩa than đen quay trên máy phát nhạc cổ | 2
+CASSETTE TAPE | Băng từ nhỏ nghe nhạc thời trước đĩa CD | 2
+TURNTABLE | Mâm xoay đặt đĩa than lên để phát nhạc | 3
+HEADLINE ACT | Tiết mục chính được mong chờ nhất của đêm diễn | 3
+SETLIST | Danh sách bài hát ca sĩ sẽ trình diễn trong đêm | 2
+SOUND CHECK | Buổi thử âm thanh trước giờ diễn | 2
+STAGE CREW | Nhóm người lo đạo cụ và ánh sáng phía sau | 2
+ENCORE PERFORMANCE | Tiết mục hát thêm theo yêu cầu khán giả | 3
+TICKET SCALPER | Kẻ gom vé rồi bán lại giá cắt cổ | 3
+FRONT ROW SEAT | Chỗ ngồi hàng đầu sát sân khấu | 1
+BACKSTAGE PASS | Thẻ cho phép vào hậu trường gặp nghệ sĩ | 2
+MEET AND GREET | Buổi gặp gỡ chụp ảnh với thần tượng | 1
+AUTOGRAPH SESSION | Buổi nghệ sĩ ngồi ký tặng người hâm mộ | 2

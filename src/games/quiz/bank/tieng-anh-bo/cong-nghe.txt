@@ -359,3 +359,69 @@ TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 
 PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3
 TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP | 3
 EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI | 3
+TOUCH ID | Cách mở khoá máy bằng vân tay | 1
+FACE ID | Cách mở khoá máy bằng khuôn mặt | 1
+TWO FACTOR | Lớp bảo mật thứ hai ngoài mật khẩu | 2
+PASSWORD MANAGER | Phần mềm nhớ hộ toàn bộ mật khẩu | 2
+AUTOFILL | Tính năng tự điền sẵn thông tin vào biểu mẫu | 2
+CLIPBOARD | Vùng nhớ tạm giữ nội dung vừa sao chép | 2
+DRAG BAR | Thanh kéo để chỉnh kích thước cửa sổ | 3
+SCROLLBAR | Thanh dọc bên phải kéo lên xuống trang | 2
+TOOLTIP | Dòng chú thích hiện ra khi rê chuột lên biểu tượng | 3
+BREADCRUMB | Dãy đường dẫn nhỏ cho biết đang ở trang nào | 3
+SIDEBAR | Cột dọc bên cạnh chứa các mục điều hướng | 2
+NAVBAR | Thanh ngang trên cùng chứa các mục chính của trang | 2
+FOOTER | Phần chân trang chứa thông tin liên hệ | 2
+HERO IMAGE | Tấm ảnh lớn chiếm trọn đầu trang web | 3
+CAROUSEL SLIDER | Khung ảnh tự trượt qua lại trên trang | 3
+MODAL | Hộp thoại nổi lên che mờ phần nền phía sau | 3
+TOAST MESSAGE | Thông báo nhỏ hiện lên góc rồi tự biến mất | 3
+DARK PATTERN | Thiết kế cố tình gài người dùng bấm nhầm | 3
+RESPONSIVE DESIGN | Thiết kế tự co giãn vừa mọi cỡ màn hình | 3
+WIREFRAME | Bản phác khung bố cục trước khi thiết kế chi tiết | 3
+MOCKUP | Bản mô phỏng giao diện trông như thật | 2
+USER FLOW | Chuỗi bước người dùng đi qua để hoàn tất một việc | 3
+ONBOARDING SCREEN | Loạt màn hình hướng dẫn khi mở ứng dụng lần đầu | 3
+PUSH NOTIFICATION | Thông báo đẩy hiện lên màn hình khoá | 2
+BADGE COUNT | Con số đỏ trên biểu tượng ứng dụng báo tin chưa đọc | 2
+DEEP LINK | Đường dẫn mở thẳng vào một mục bên trong ứng dụng | 3
+QR SCANNER | Tính năng dùng camera đọc mã vuông | 1
+NFC | Công nghệ chạm hai thiết bị gần nhau để truyền dữ liệu | 2
+TETHERING | Việc chia mạng từ điện thoại cho máy khác dùng | 2
+AIRDROP | Cách gửi file không dây giữa hai máy Apple | 2
+SYNC FOLDER | Thư mục tự đồng bộ lên đám mây | 2
+VERSION HISTORY | Danh sách các bản cũ của tài liệu có thể khôi phục | 2
+TRASH BIN | Nơi chứa file đã xoá trước khi xoá hẳn | 1
+DISK SPACE | Dung lượng ổ cứng còn trống | 1
+DEFRAGMENT | Việc dồn lại dữ liệu rải rác trên ổ cứng | 3
+SAFE MODE | Chế độ khởi động tối giản để sửa lỗi máy | 3
+BLUE SCREEN | Màn hình xanh báo lỗi nghiêm trọng của Windows | 2
+TASK MANAGER | Bảng liệt kê các chương trình đang chạy | 2
+BACKGROUND APP | Ứng dụng vẫn chạy ngầm khi không mở ra | 1
+BATTERY SAVER | Chế độ hạn chế hoạt động để pin lâu hết | 1
+LOW POWER MODE | Chế độ giảm hiệu năng khi pin gần cạn | 1
+OVERCLOCK | Việc ép linh kiện chạy nhanh hơn mức nhà sản xuất đặt | 3
+THERMAL PASTE | Lớp keo tản nhiệt bôi giữa chip và bộ tản | 3
+LIQUID COOLING | Hệ thống làm mát máy bằng nước chạy trong ống | 3
+SURGE PROTECTOR | Ổ cắm có bộ chống sét lan truyền | 3
+DOCKING STATION | Đế cắm nối laptop với màn hình và chuột phím | 3
+KVM SWITCH | Hộp cho một bộ phím chuột điều khiển nhiều máy | 3
+KEYCAP | Nút nhựa rời lắp trên từng phím bàn phím cơ | 3
+DPI SETTING | Mức chỉnh độ nhạy của chuột | 3
+REFRESH RATE | Số lần màn hình làm mới hình mỗi giây | 2
+COLOR CALIBRATION | Việc chỉnh cho màu màn hình hiển thị chuẩn | 3
+ASPECT RATIO | Tỷ lệ chiều ngang so với chiều dọc của hình | 2
+THUMBNAIL | Ảnh nhỏ xem trước của video hoặc tệp | 1
+WATERMARK | Dấu mờ in chìm lên ảnh để đánh dấu bản quyền | 2
+METADATA | Thông tin đi kèm tệp như ngày chụp và máy ảnh | 3
+LOSSLESS | Kiểu nén không làm mất chút chất lượng nào | 3
+BITRATE | Lượng dữ liệu truyền mỗi giây của video hoặc nhạc | 3
+CODEC | Bộ quy tắc nén và giải nén video | 3
+BUFFER SIZE | Dung lượng tạm giữ trước để phát mượt | 3
+TORRENT | Cách tải tệp chia nhỏ từ nhiều máy cùng lúc | 3
+MIRROR SITE | Trang sao chép lại nội dung để tải cho nhanh | 3
+CHECKSUM | Chuỗi ký tự dùng kiểm tra tệp tải về có nguyên vẹn không | 3
+SANDBOX MODE | Môi trường cách ly để chạy thử phần mềm lạ | 3
+VIRTUAL MACHINE | Máy tính ảo chạy bên trong một máy thật | 3
+DUAL BOOT | Việc cài hai hệ điều hành trên cùng một máy | 3
+BIOS | Phần mềm chạy đầu tiên khi bật máy tính | 3

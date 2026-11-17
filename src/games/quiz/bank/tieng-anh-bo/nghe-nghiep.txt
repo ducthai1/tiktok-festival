@@ -111,3 +111,48 @@ SAFETY OFFICER | Người phụ trách an toàn lao động tại công trườn
 SHOP OWNER | Người làm chủ một cửa hàng nhỏ ngoài phố | 1
 STREET MUSICIAN | Người ôm đàn hát kiếm tiền trên vỉa hè | 1
 PARKING GUARD | Người trông giữ xe và ghi vé ở bãi | 1
+SHIFT WORKER | Người làm theo ca luân phiên ngày đêm | 2
+FREELANCE WRITER | Người viết thuê theo từng bài | 2
+GHOSTWRITER | Người viết hộ nhưng để tên người khác | 3
+PROOFREADER | Người soát lỗi chính tả trước khi in | 2
+TRANSCRIBER | Người gõ lại nội dung từ bản ghi âm | 3
+INTERPRETER BOOTH | Buồng kính phiên dịch viên ngồi dịch song song | 3
+SIGN LANGUAGE | Ngôn ngữ ra hiệu bằng tay cho người khiếm thính | 2
+BRAILLE | Hệ chữ nổi cho người khiếm thị sờ đọc | 3
+SPEECH THERAPIST | Người chữa tật nói lắp và phát âm sai | 3
+PHYSIOTHERAPIST | Người tập phục hồi vận động cho bệnh nhân | 2
+DIETITIAN | Chuyên gia lên thực đơn dinh dưỡng cho người bệnh | 3
+LAB TECHNICIAN | Người chạy máy xét nghiệm trong phòng thí nghiệm | 2
+RADIOGRAPHER | Người chụp phim X quang cho bệnh nhân | 3
+PARAMEDIC CREW | Tổ cấp cứu đi trên xe cứu thương | 2
+DISPATCHER | Người nhận cuộc gọi khẩn và điều xe tới hiện trường | 3
+AIR TRAFFIC CONTROLLER | Người ngồi đài chỉ huy máy bay cất hạ cánh | 3
+GROUND HANDLER | Nhân viên phục vụ mặt đất ở sân bay | 3
+CABIN CREW | Tổ tiếp viên phục vụ trên khoang máy bay | 1
+TRAIN GUARD | Nhân viên đi theo tàu lo an toàn hành khách | 3
+SIGNAL OPERATOR | Người bẻ ghi điều hướng tàu vào đúng đường ray | 3
+TOLL COLLECTOR | Người ngồi trạm thu tiền xe qua đường | 2
+FERRY OPERATOR | Người điều khiển chuyến phà qua sông | 2
+LIGHTHOUSE KEEPER | Người trông coi ngọn hải đăng ngoài đảo | 3
+RESCUE SWIMMER | Nhân viên cứu hộ bơi ra kéo người gặp nạn | 3
+FIRE MARSHAL | Người kiểm tra an toàn cháy nổ của toà nhà | 3
+BUILDING MANAGER | Người quản lý vận hành cả toà nhà | 2
+LEASING OFFICER | Nhân viên lo thủ tục cho thuê mặt bằng | 3
+APPRAISER | Người định giá tài sản trước khi mua bán | 3
+NOTARY PUBLIC | Người có thẩm quyền chứng thực chữ ký và giấy tờ | 3
+COURT REPORTER | Người gõ lại từng lời nói trong phiên toà | 3
+BAILIFF | Nhân viên giữ trật tự trong phòng xử án | 3
+PRISON WARDEN | Người đứng đầu quản lý cả một trại giam | 3
+PROBATION OFFICER | Người giám sát người đang hưởng án treo | 3
+SOCIAL WORKER | Người giúp đỡ các gia đình và trẻ em khó khăn | 2
+CARE WORKER | Người chăm sóc người già hoặc người khuyết tật | 2
+CHILDMINDER | Người giữ trẻ tại nhà mình cho các gia đình | 2
+TEACHING AIDE | Người phụ giúp giáo viên trong lớp học | 2
+EXAM MARKER | Người chấm bài thi theo đáp án chuẩn | 2
+CURRICULUM DESIGNER | Người soạn chương trình học cho nhà trường | 3
+PRINTING OPERATOR | Người vận hành máy in công nghiệp | 3
+GRAPHIC DESIGNER | Người thiết kế hình ảnh và ấn phẩm | 1
+WEB DESIGNER | Người thiết kế giao diện trang web | 1
+COPY TESTER | Người đọc thử bản quảng cáo xem có hiệu quả không | 3
+MARKET RESEARCHER | Người đi khảo sát để hiểu nhu cầu khách hàng | 2
+BRAND MANAGER | Người lo giữ gìn và phát triển hình ảnh thương hiệu | 3
