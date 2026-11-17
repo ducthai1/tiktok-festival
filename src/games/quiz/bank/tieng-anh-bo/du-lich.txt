@@ -1,7 +1,7 @@
 # Tiếng Anh · Du lịch
 # Bộ đề · Du lịch
 JET SKI | Mô tô nước | 2
-SNORKELING | Lặn với ống thở | 2 | SNORKELLING, SNORKEL
+SNORKELING | Hoạt động bơi úp mặt ngắm cá bằng ống thở | 2 | SNORKELLING
 SUNBATHE | Tắm nắng | 2 | SUNBATHING
 SUNBURN | Cháy nắng | 2
 TRAVEL AGENCY | Công ty du lịch (đại lý) | 2 | TRAVEL AGENT
@@ -14,23 +14,23 @@ SINGLE ROOM | Phòng đơn | 1
 DO NOT DISTURB | Xin đừng làm phiền | 2
 FULLY BOOKED | Hết phòng | 2 | NO VACANCY
 BELLBOY | Nhân viên xách hành lý khách sạn | 3 | BELLHOP, PORTER
-VALET | Nhân viên đỗ xe hộ | 3 | VALET PARKING
+VALET | Nhân viên nhận xe của khách rồi đem đi đỗ hộ | 3
 TOURIST TRAP | Nơi chặt chém khách du lịch | 3
 RIP-OFF | Giá cắt cổ (bị chặt chém) | 3 | RIPOFF, OVERCHARGE
-HAGGLE | Mặc cả | 2 | BARGAIN
+HAGGLE | Mặc cả | 2
 PICKPOCKET | Kẻ móc túi | 2
 DIRECT FLIGHT | Chuyến bay thẳng | 1 | NONSTOP FLIGHT
-STOPOVER | Điểm dừng chân giữa chặng | 3
+STOPOVER | Chặng dừng dài, khách ra khỏi sân bay chơi vài ngày | 3
 AIRSICK | Say máy bay | 2 | AIRSICKNESS
 CARSICK | Say xe | 1 | CARSICKNESS, MOTION SICKNESS
 SEASICK | Say sóng | 2 | SEASICKNESS
 SLEEPER BUS | Xe khách giường nằm | 2
 SLEEPER TRAIN | Tàu giường nằm | 2 | NIGHT TRAIN
 TICKET OFFICE | Phòng bán vé | 1
-CARRIAGE | Toa tàu | 2 | WAGON, COACH
+CARRIAGE | Toa khách nối trong đoàn tàu hoả | 2 | WAGON
 RIDE-HAILING | Gọi xe công nghệ | 3 | RIDESHARE, RIDE SHARING
 CAMPSITE | Khu cắm trại | 2 | CAMPGROUND
-SUMMIT | Đỉnh núi (chinh phục) | 2
+SUMMIT | Điểm cao nhất của ngọn núi, đích của người leo | 2
 GUEST HOUSE | Nhà nghỉ | 2 | GUESTHOUSE
 TOURIST VISA | Thị thực du lịch | 2
 TRAVEL BUDDY | Bạn đồng hành khi du lịch | 2 | TRAVEL COMPANION
@@ -40,14 +40,14 @@ BUCKET LIST | Danh sách điều muốn làm trong đời | 2
 TRAVEL ADAPTER | Ổ chuyển đổi điện khi đi nước ngoài | 2 | PLUG ADAPTER
 CURRENCY EXCHANGE | Đổi tiền ngoại tệ | 2 | MONEY EXCHANGE
 CHECKPOINT | Trạm kiểm soát | 2
-TOLL | Trạm thu phí (phí cầu đường) | 2 | TOLL BOOTH
+TOLL | Khoản phí phải trả khi đi qua cầu hoặc đường cao tốc | 2
 SPEED LIMIT | Giới hạn tốc độ | 1
 FLYOVER | Cầu vượt | 2 | OVERPASS
 GPS | Định vị toàn cầu (chỉ đường) | 1 | SATNAV
 LEGROOM | Chỗ để chân (trên máy bay) | 3
 HAND LUGGAGE | Hành lý xách tay | 1 | CABIN BAGGAGE
 LUGGAGE TAG | Thẻ hành lý | 2 | BAG TAG
-CONVEYOR BELT | Băng chuyền hành lý | 2 | CAROUSEL
+CONVEYOR BELT | Băng chuyền hành lý | 2
 JETWAY | Ống lồng lên máy bay | 3 | JET BRIDGE, AIR BRIDGE
 LOUNGE | Phòng chờ sân bay | 2 | AIRPORT LOUNGE
 FREQUENT FLYER | Khách bay thường xuyên | 3
@@ -70,31 +70,31 @@ AUDIO GUIDE | Thuyết minh bằng máy nghe | 2
 TRAVEL ITINERARY | Lịch trình chuyến đi chi tiết | 3
 BACKPACKING | Du lịch bụi | 2
 COVE | Vịnh nhỏ ven biển | 3 | INLET
-QUAINT | Duyên dáng lạc hậu | 3
+QUAINT | Cổ kính và duyên dáng theo kiểu xưa cũ | 3
 RUSTIC | Mộc mạc, thôn quê | 3
 PASTORAL | Đơn sơ nông thôn | 3
 ISTHMUS | Dải đất nối hai vùng | 3
-TRIBUTARY | Sông nhánh | 3 | AFFLUENT
+TRIBUTARY | Sông nhánh | 3
 PORTAGE | Vận chuyển thuyền qua đất | 3
 ANCHORAGE | Nơi thả neo tàu | 3
 BADLANDS | Vùng đất cằn cỗi | 3
 WETLANDS | Vùng đất ngập nước | 3
 SWAMP | Đầm lầy | 3 | MARSHLAND
-HEATH | Lòng đất hoang | 3
+HEATH | Vùng đất hoang mọc toàn cây bụi thấp ở Bắc Âu | 3
 MOOR | Đồng cỏ hoang | 3 | MOORLAND
 STEPPE | Bãi cỏ rộng lớn | 3 | GRASSLAND
 TAIGA | Rừng lạnh cao | 3
 THICKET | Bụi rậm rối | 3
-HINTERLAND | Vùng nôi địa | 3
+HINTERLAND | Vùng nội địa nằm sâu phía sau bờ biển hoặc thành phố | 3
 LOCALE | Địa điểm cụ thể | 3
-PROSPECT | Khả năng nhìn xa | 3 | VIEW
-BOUTIQUE | Cửa hàng nhỏ sành điệu | 3 | SHOP
-AMENITY | Tiện nghi dịch vụ | 3 | FACILITY
+PROSPECT | Tầm nhìn trải rộng ra phía trước từ một chỗ đứng | 3
+BOUTIQUE | Cửa hàng nhỏ sành điệu | 3
+AMENITY | Tiện nghi dịch vụ | 3
 SOJOURN | Lưu trú tạm thời | 3 | STAY
 EXPANSE | Vùng đất rộng | 3
-QUAY | Bến bộ để tàu cập | 3 | WHARF
+QUAY | Bờ kè xây dọc mép nước cho tàu cập vào bốc hàng | 3 | WHARF
 OUTBACK | Vùng nông thôn hẻo lánh | 3
-VISTA | Cảnh tượng đẹp nhìn từ xa | 3 | VIEW
+VISTA | Khung cảnh đẹp hiện ra ở cuối một lối nhìn hẹp | 3
 PASSPORT | Cuốn hộ chiếu xuất nhập cảnh đi nước ngoài | 1 | TRAVEL PASSPORT
 VISA | Thị thực nhập cảnh vào một quốc gia | 1 | ENTRY VISA
 BOARDING PASS | Thẻ lên máy bay nhận tại quầy làm thủ tục | 2 | BOARDING CARD
@@ -113,7 +113,7 @@ LOBBY | Sảnh lớn đón khách ở tầng trệt khách sạn | 2 | HOTEL LOB
 AIRPORT | Sân bay (phi trường) đón cất cánh máy bay | 1 | AIRFIELD
 FLIGHT | Chuyến bay chở khách trên không | 1 | AIR FLIGHT
 AIRLINE | Hãng hàng không vận chuyển hành khách | 1 | AIR CARRIER
-AIRPLANE | Chiếc máy bay chở khách bay trên mây | 1 | PLANE, AIRCRAFT, AEROPLANE
+AIRPLANE | Phương tiện có cánh cố định bay bằng động cơ phản lực | 1 | AIRCRAFT, AEROPLANE
 GATE | Cửa khởi hành ra máy bay | 1 | BOARDING GATE
 DEPARTURE | Khu vực xuất phát, chuyến bay cất cánh | 1 | DEPARTURES
 ARRIVAL | Khu vực hạ cánh đón khách đáp chuyến bay | 1 | ARRIVALS
@@ -121,16 +121,16 @@ CUSTOMS | Cơ quan hải quan kiểm tra hành lý hàng hoá | 2 | CUSTOMS OFFI
 IMMIGRATION | Quầy kiểm soát xuất nhập cảnh cửa khẩu | 2 | PASSPORT CONTROL
 DUTY FREE | Khu vực mua sắm cửa hàng miễn thuế tại sân bay | 2 | DUTY-FREE SHOP
 BAGGAGE CLAIM | Băng chuyền lấy lại hành lý ký gửi sau chuyến bay | 2 | LUGGAGE CAROUSEL
-PILOT | Phi công cơ trưởng lái máy bay | 1 | CAPTAIN
+PILOT | Phi công cơ trưởng lái máy bay | 1
 FLIGHT ATTENDANT | Tiếp viên hàng không phục vụ trên chuyến bay | 1 | STEWARD, STEWARDESS, AIR HOSTESS
-PASSENGER | Hành khách đi trên các phương tiện giao thông | 1 | TRAVELER
+PASSENGER | Người ngồi trên phương tiện mà không lái | 1
 WINDOW SEAT | Chỗ ngồi cạnh cửa sổ ngắm mây trời | 1
 AISLE SEAT | Chỗ ngồi cạnh lối đi dễ dàng di chuyển | 2
-TRAIN | Chuyến tàu hoả (xe lửa) chạy trên đường ray sắt | 1 | RAILWAY
-RAILWAY | Tuyến đường sắt liên tỉnh | 2 | RAILROAD
-STATION | Nhà ga xe lửa đón khách lên tàu | 1 | TRAIN STATION
+TRAIN | Đoàn toa nối nhau chạy trên đường ray | 1
+RAILWAY | Hệ thống đường ray và hạ tầng chạy tàu | 2 | RAILROAD
+STATION | Nơi phương tiện công cộng dừng đón trả khách | 1
 PLATFORM | Sân ga đứng đợi tàu hoả ghé bánh | 2 | RAILWAY PLATFORM
-SUBWAY | Tuyến tàu điện ngầm dưới lòng đất | 1 | METRO, UNDERGROUND, TUBE
+SUBWAY | Tuyến tàu điện ngầm dưới lòng đất | 1 | METRO, TUBE
 BUS | Chiếc xe buýt công cộng chạy trong đô thị | 1 | OMNIBUS
 BUS STOP | Trạm dừng đón trả khách xe buýt | 1 | BUS STATION
 TAXI | Xe tắc xi đưa đón tính tiền theo đồng hồ | 1 | CAB, TAXICAB
@@ -138,19 +138,19 @@ RENTAL CAR | Xe ô tô tự lái thuê đi du lịch | 2 | HIRE CAR
 FERRY | Chuyến phà lớn chở người và xe vượt sông biển | 1 | FERRYBOAT
 CRUISE SHIP | Du thuyền biển khổng lồ đẳng cấp 5 sao | 2 | OCEAN LINER
 YACHT | Chiếc thuyền buồm du thuyền tư nhân sang trọng | 2 | SAILBOAT
-BOAT | Chiếc thuyền chèo tay bơi trên sông nước | 1 | ROWBOAT
-HARBOR | Bến cảng neo đậu tàu thuyền tránh bão | 2 | HARBOUR, SEAPORT
-PORT | Cảng biển giao thương quốc tế tấp nập | 1 | SEA PORT
+BOAT | Phương tiện nhỏ đi trên sông hoặc ven bờ | 1 | ROWBOAT
+HARBOR | Vũng nước kín gió cho tàu neo đậu tránh bão | 2 | HARBOUR, SEAPORT
+PORT | Cảng có cầu tàu và kho bãi để bốc dỡ hàng hoá | 1 | SEA PORT
 SEASIDE | Khu du lịch ven bờ biển lộng gió | 1 | COASTLINE
-MOUNTAIN | Ngọn núi đá cao sừng sững | 1 | PEAK
-RIVER | Dòng sông êm đềm chảy trôi | 1 | STREAM
+MOUNTAIN | Khối núi cao đồ sộ nhô lên khỏi mặt đất | 1
+RIVER | Dòng sông êm đềm chảy trôi | 1
 CAVE | Hang động thạch nhũ kỳ ảo trong lòng núi | 1 | CAVERN, GROTTO
 OCEAN | Đại dương mênh mông chiếm phần lớn Trái Đất | 1
 SEA | Biển xanh ngắt chân trời bao la | 1
 NATIONAL PARK | Vườn quốc gia bảo tồn thiên nhiên hoang dã | 1 | NATURE RESERVE
-LANDMARK | Địa danh thắng cảnh mang tính biểu tượng | 2 | MONUMENT
-MONUMENT | Đài tưởng niệm hoặc đài kỷ niệm công trình | 2 | MEMORIAL
-STATUE | Bức tượng điêu khắc nghệ thuật đúc đồng hoặc tạc đá | 1 | SCULPTURE
+LANDMARK | Công trình hay cảnh vật nổi bật dùng làm mốc nhận ra một nơi | 2
+MONUMENT | Công trình dựng lên để tưởng nhớ một người hoặc sự kiện | 2 | MEMORIAL
+STATUE | Bức tượng điêu khắc nghệ thuật đúc đồng hoặc tạc đá | 1
 TOWER | Toà tháp cao vút chọc trời | 1
 BRIDGE | Cây cầu bắc qua sông nối đôi bờ | 1
 PALACE | Cung điện hoàng gia xa hoa lộng lẫy | 1 | ROYAL RESIDENCE
@@ -162,36 +162,36 @@ GALLERY | Phòng tranh trưng bày các tác phẩm mỹ thuật | 1 | ART GALLE
 ZOO | Vườn bách thú nuôi dưỡng động vật | 1 | ZOOLOGICAL GARDEN
 AQUARIUM | Thuỷ cung kính ngắm đàn cá bơi lội | 1 | OCEANARIUM
 AMUSEMENT PARK | Công viên giải trí có đu quay tàu lượn | 1 | THEME PARK
-SOUVENIR | Món quà lưu niệm kỷ niệm vùng đất đã đến | 1 | KEEPSAKE, MEMENTO
+SOUVENIR | Món quà lưu niệm kỷ niệm vùng đất đã đến | 1 | MEMENTO
 POSTCARD | Tấm bưu thiếp in phong cảnh gửi người thân | 1 | POST CARD
 TOUR GUIDE | Hướng dẫn viên du lịch giới thiệu thắng cảnh | 1 | GUIDE
 ITINERARY | Lịch trình tour du lịch từng ngày chi tiết | 2 | TRAVEL PLAN
-TOURIST | Khách du lịch phương xa ghé thăm thắng cảnh | 1 | SIGHTSEER
-TRAVELER | Người đi du lịch khám phá bốn phương | 1 | TRAVELLER, VOYAGER
+TOURIST | Người đi chơi ngắn ngày ở một điểm tham quan | 1 | SIGHTSEER
+TRAVELER | Người đi xa nhiều nơi, không nhất thiết để chơi | 1 | TRAVELLER, VOYAGER
 EXPLORER | Nhà thám hiểm đi tìm những chân trời lạ | 2 | ADVENTURER
 ADVENTURE | Chuyến thám hiểm phiêu lưu mạo hiểm | 1
 EXPEDITION | Đoàn thám hiểm khoa học đi nghiên cứu | 2
-BACKPACKER | Khách phượt đeo ba lô đi du lịch bụi | 1
+BACKPACKER | Người đi bụi dài ngày, mang tất cả trong một ba lô | 1
 SIGHTSEEING | Hoạt động đi tham quan thưởng ngoạn cảnh đẹp | 1 | TOURING
-VACATION | Kỳ nghỉ dài ngày thư giãn giải tỏa căng thẳng | 1 | HOLIDAY
-HOLIDAY | Ngày nghỉ lễ hoặc kỳ nghỉ phép | 1 | BREAK
+VACATION | Kỳ nghỉ dài ngày đi chơi xa, từ người Mỹ dùng | 1
+HOLIDAY | Ngày nghỉ lễ hoặc kỳ nghỉ, từ người Anh dùng | 1
 CRUISE | Chuyến hải trình du ngoạn trên biển | 1 | SEA VOYAGE
-ROAD TRIP | Chuyến du lịch bằng xe hơi chạy xuyên tỉnh | 1 | DRIVE
+ROAD TRIP | Chuyến du lịch bằng xe hơi chạy xuyên tỉnh | 1
 CAMPING | Buổi cắm trại ngủ lều ngoài thiên nhiên | 1
 TENT | Căn lều cắm trại dựng giữa rừng cỏ | 1 | CAMPING TENT
 SLEEPING BAG | Chiếc túi ngủ kéo khoá giữ ấm trong lều | 1
-CAMPFIRE | Đống lửa trại bập bùng nhảy múa trong đêm | 1 | BONFIRE
+CAMPFIRE | Đống lửa trại bập bùng nhảy múa trong đêm | 1
 HIKE | Chuyến đi bộ vượt đèo lội suối | 1 | HIKING
 TREKKING | Hành trình đi bộ băng rừng dài ngày | 2 | TREK
 EXCHANGE RATE | Tỷ giá hối đoái đổi tiền đô lấy tiền việt | 2 | FOREX RATE
-CURRENCY | Đơn vị tiền tệ chính thức của quốc gia | 1 | MONEY
+CURRENCY | Đơn vị tiền tệ chính thức của quốc gia | 1
 JET LAG | Hiện tượng mệt mỏi do chênh lệch múi giờ bay xa | 2 | JETLAG
 DESTINATION | Điểm đến cuối cùng của hành trình du lịch | 1
 CABIN | Căn nhà gỗ mộc mạc ẩn trong rừng thông | 2 | LOG CABIN
 CARAVAN | Xe nhà lưu động kéo theo sau ô tô | 2 | CAMPERVAN, RV
-VIEWPOINT | Đài quan sát trên cao ngắm toàn cảnh | 2 | LOOKOUT, OVERLOOK
-PANORAMA | Khung cảnh nhìn góc rộng bao la toàn cảnh | 2 | PANORAMIC VIEW
-SCENERY | Cảnh sắc thiên nhiên hữu tình | 1 | LANDSCAPE
+VIEWPOINT | Chỗ cao có lan can xây sẵn để khách dừng ngắm cảnh | 2 | LOOKOUT
+PANORAMA | Cảnh nhìn được trọn 180 độ không bị che khuất | 2 | PANORAMIC VIEW
+SCENERY | Cảnh sắc thiên nhiên nói chung của một vùng | 1
 CLIFF | Vách đá cheo leo dựng đứng sát mép biển | 1 | BLUFF
 LIGHTHOUSE | Ngọn hải đăng quét ánh đèn dẫn lối tàu bè | 1 | BEACON
 CAPITAL | Thủ đô trung tâm chính trị của một nước | 1 | CAPITAL CITY
@@ -199,9 +199,9 @@ CONTINENT | Lục địa (châu lục) rộng lớn trên địa cầu | 2 | MAI
 BORDER | Đường biên giới quốc gia có cột mốc phân định | 1 | FRONTIER
 CITIZEN | Công dân có quốc tịch chính thức | 1 | NATIONAL
 LOCAL | Người dân địa phương đôn hậu hiếu khách | 1 | RESIDENT
-NATIVE | Người bản xứ sinh ra và lớn lên ở đây | 2 | INDIGENOUS
+NATIVE | Người bản xứ sinh ra và lớn lên ở đây | 2
 DIALECT | Tiếng nói địa phương mang âm hưởng vùng miền | 2 | VERNACULAR
-CULTURE | Bản sắc văn hoá lâu đời truyền qua nhiều đời | 1 | TRADITION
+CULTURE | Bản sắc văn hoá lâu đời truyền qua nhiều đời | 1
 HERITAGE | Di sản văn hoá vật thể hoặc phi vật thể | 2 | HISTORIC HERITAGE
 WONDER | Kỳ quan tráng lệ được vinh danh | 1 | WORLD WONDER
 COLOSSEUM | Đấu trường La Mã cổ kính ở thành Rome | 2 | AMPHITHEATER
@@ -215,7 +215,7 @@ CANAL | Kênh đào nhân tạo cho thuyền bè lưu thông | 2 | WATERWAY
 GONDOLA | Chiếc thuyền gỗ mũi cong lãng mạn ở Venice | 2
 HOT SPRING | Suối nước khoáng nóng ngâm mình thư thái | 1 | ONSEN, THERMAL SPRING
 CORAL REEF | Rạn san hô rực rỡ sắc màu dưới đáy biển | 2 | BARRIER REEF
-SNORKEL | Kính bơi kèm ống thở lặn ngắm cá | 1 | DIVING SNORKEL
+SNORKEL | Chiếc ống thở cong ngậm vào miệng khi úp mặt xuống nước | 1 | DIVING SNORKEL
 SCUBA DIVING | Lặn biển sâu đeo bình khí nén thở | 2 | DEEP SEA DIVING
 SURFBOARD | Tấm ván lướt sóng cưỡi trên đầu ngọn sóng | 1 | SURF BOARD
 PARAGLIDING | Trò nhảy dù lượn bay bổng ngắm thung lũng | 2 | PARAGLIDE
@@ -229,7 +229,7 @@ NIGHT MARKET | Chợ đêm tấp nập khách ăn uống mua quà lưu niệm | 
 PEDESTRIAN STREET | Phố đi bộ thong thả dạo mát không có tiếng còi xe | 2 | WALKING STREET
 OLD QUARTER | Khu phố cổ lưu giữ nét xưa cổ kính | 2 | OLD TOWN
 CITADEL | Kinh thành hoặc hoàng thành thành trì phong kiến | 2 | IMPERIAL CITADEL
-MAUSOLEUM | Lăng tẩm tôn nghiêm an nghỉ của các bậc danh nhân | 2 | TOMB
+MAUSOLEUM | Lăng tẩm tôn nghiêm an nghỉ của các bậc danh nhân | 2
 BAZAAR | Khu chợ phương đông truyền thống buôn bán sầm uất | 2 | SOUK
 CROSSING | Lối vạch trắng kẻ đường ưu tiên cho người đi bộ | 1 | PEDESTRIAN CROSSING
 CROSSROADS | Ngã tư đường phố giao nhau tấp nập | 1 | INTERSECTION
@@ -242,21 +242,21 @@ DOWNTOWN | Khu trung tâm mua sắm tài chính thành phố | 1 | CITY CENTER
 SUBURB | Vùng ngoại ô yên tĩnh thoáng đãng | 2 | OUTSKIRTS
 ALLEY | Con ngõ nhỏ ngoằn ngoèo trong phố | 1 | LANE
 SIDEWALK | Vỉa hè lát gạch dành cho người đi bộ | 1 | PAVEMENT
-AVENUE | Đại lộ rợp bóng cây xanh rộng lớn | 2 | BOULEVARD
+AVENUE | Đại lộ rợp bóng cây xanh rộng lớn | 2
 SQUARE | Quảng trường trung tâm thành phố tụ họp đông người | 1 | PLAZA
 FOUNTAIN | Đài phun nước nghệ thuật nhảy múa | 1 | WATER FOUNTAIN
 WATERFRONT | Khu phố bờ sông bờ hồ thoáng mát | 2 | RIVERSIDE
 PROMENADE | Đường dạo bộ lát đá ven bờ biển | 2 | ESPLANADE
-MARINA | Bến thuyền bến du thuyền sang chảnh | 2 | BOAT BASIN
+MARINA | Bến nhỏ chuyên đậu du thuyền và ca nô cá nhân | 2 | BOAT BASIN
 PIER | Cầu cảng vươn dài ra mặt biển câu cá | 2 | JETTY
 BOARDWALK | Con đường lót ván gỗ chạy dọc mép biển | 2 | WOODEN WALKWAY
-TOLL BOOTH | Trạm thu phí phương tiện trên đường cao tốc | 2 | TOLLGATE
+TOLL BOOTH | Cái chòi nhỏ chắn ngang đường để thu tiền xe qua | 2 | TOLLGATE
 SERVICE STATION | Trạm dừng chân đổ xăng nghỉ ngơi ven đường | 2 | REST STOP
 GAS STATION | Cây xăng trạm tiếp nhiên liệu ô tô | 1 | PETROL STATION
 PARKING LOT | Bãi đỗ xe ô tô rộng rãi | 1 | CAR PARK
 ROUND TRIP | Chuyến đi khứ hồi cả đi lẫn về | 1 | RETURN TICKET
 ONE WAY | Chuyến đi một chiều không quay lại | 1 | ONE-WAY TICKET
-LAYOVER | Thời gian quá cảnh chờ nối chuyến bay | 2 | STOPOVER
+LAYOVER | Quãng chờ ngắn ngay trong sân bay để nối chuyến | 2
 TRANSIT | Khu vực quá cảnh tiếp tục hành trình | 2 | CONNECTING FLIGHT
 SHUTTLE BUS | Xe buýt trung chuyển đưa đón khách sân bay | 2 | AIRPORT SHUTTLE
 TROLLEY | Xe đẩy tay chở hành lý cồng kềnh ở sân bay | 2 | LUGGAGE CART
@@ -279,11 +279,11 @@ COCKPIT | Khoang lái của phi công đầu máy bay | 2 | FLIGHT DECK
 RUNWAY | Đường băng bê tông cho máy bay cất hạ cánh | 2 | AIRSTRIP
 CONTROL TOWER | Đài kiểm soát không lưu chỉ huy sân bay | 2 | AIR TRAFFIC CONTROL
 RADAR | Hệ thống vô tuyến sóng phản xạ định vị máy bay và tàu thuyền từ xa | 2
-BICYCLE | Chiếc xe đạp hai bánh đạp dạo phố | 1 | BIKE
+BICYCLE | Chiếc xe đạp hai bánh đạp dạo phố | 1
 MOTORBIKE | Chiếc xe máy xe mô tô hai bánh | 1 | MOTORCYCLE
 SCOOTER | Chiếc xe ga lướt êm phố xá | 1 | MOPED
-RICKSHAW | Chiếc xe xích lô đạp chở khách thong dong ngắm phố | 2 | PEDICAB
-HORSE CARRIAGE | Cỗ xe ngựa kéo lộc cộc đưa du khách dạo quanh | 2 | CARRIAGE
+RICKSHAW | Xe ba bánh có người đạp phía sau chở khách | 2 | PEDICAB
+HORSE CARRIAGE | Cỗ xe do ngựa kéo chở khách dạo phố cổ | 2
 SLED | Chiếc xe trượt tuyết do đàn chó kéo | 2 | SLEDGE, SLEIGH
 SNOWMOBILE | Xe trượt tuyết có động cơ chạy trên băng tuyết | 2 | SKIDOO
 CANOE | Chiếc xuồng ca nô thon dài chèo bằng mái chèo | 2
@@ -308,18 +308,18 @@ CAFE | Quán cà phê | 1 | COFFEE SHOP, COFFEE HOUSE
 CINEMA | Rạp chiếu phim | 2 | MOVIE THEATER, MOVIE THEATRE, THEATER, THEATRE, MOVIES
 RESTAURANT | Nhà hàng | 2
 POST OFFICE | Bưu điện | 2
-TRAIN STATION | Ga tàu hoả | 2 | RAILWAY STATION, RAIL STATION, STATION
+TRAIN STATION | Nhà ga cụ thể dành cho tàu hoả | 2 | RAILWAY STATION, RAIL STATION
 MALL | Trung tâm thương mại | 2 | SHOPPING MALL, SHOPPING CENTER, SHOPPING CENTRE
-SHIP | Tàu thuỷ (tàu lớn đi biển) | 1 | BOAT, VESSEL
+SHIP | Tàu lớn đủ sức vượt đại dương | 1 | VESSEL
 RIDE | Cưỡi, đi (cưỡi ngựa, đi xe đạp) | 1
 TRUCK | Xe tải | 2 | LORRY
 HELMET | Mũ bảo hiểm (đội khi đi xe máy) | 2 | CRASH HELMET
 TRAFFIC JAM | Kẹt xe, tắc đường | 3 | TRAFFIC CONGESTION, GRIDLOCK
 SEAT BELT | Dây vắt chéo ngực phải cài khi ngồi ô tô hoặc máy bay | 3 | SEATBELT, SAFETY BELT
-CYCLO | Xích lô | 3 | PEDICAB, RICKSHAW, CYCLE RICKSHAW, TRISHAW
-TRAVEL | Đi du lịch | 1 | TRAVELING, TRAVELLING
+CYCLO | Xe ba bánh kiểu Việt Nam, khách ngồi trước người đạp | 3 | PEDICAB, CYCLE RICKSHAW, TRISHAW
+TRAVEL | Động từ chỉ việc đi tới một nơi xa | 1 | TRAVELING, TRAVELLING
 PHOTO | Bức ảnh chụp | 1 | PICTURE, PHOTOGRAPH, PIC
-TRIP | Chuyến đi | 2 | JOURNEY, TOUR
+TRIP | Chuyến đi ngắn rồi quay về | 2 | JOURNEY, TOUR
 ABROAD | Ở nước ngoài (đi nước ngoài) | 3 | OVERSEAS
 LEFT | Bên trái | 1
 RIGHT | Bên phải | 1
@@ -333,7 +333,7 @@ THERE | Ở đó, ở kia | 1 | OVER THERE
 WHERE | Ở đâu (từ để hỏi đường) | 1
 OUTSIDE | Bên ngoài | 2 | OUT
 IN FRONT | Phía trước, đằng trước | 2 | IN FRONT OF, FRONT, AHEAD
-BEHIND | Phía sau, đằng sau | 2 | AT THE BACK, BACK
+BEHIND | Phía sau, đằng sau | 2 | AT THE BACK
 BETWEEN | Ở giữa hai vật (giữa A và B) | 2
 NEXT TO | Bên cạnh, sát bên | 2 | BESIDE, BY
 NORTH | Hướng Bắc | 2
@@ -364,7 +364,7 @@ NOVEMBER | Tháng Mười Một (tháng 11) | 2
 DECEMBER | Tháng Mười Hai (tháng 12) | 2
 TIME | Thời gian | 1
 HOUR | Giờ (một tiếng đồng hồ) | 1 | HOURS
-MINUTE | Phút | 1 | MINUTES
+MINUTE | Phút | 1
 SECOND | Giây (đơn vị thời gian) | 2 | SECONDS
 DAY | Ngày (một ngày có 24 giờ) | 1 | DAYS
 WEEK | Tuần (7 ngày) | 1 | WEEKS
@@ -383,7 +383,7 @@ CALENDAR | Cuốn lịch, tờ lịch | 2
 FUTURE | Tương lai | 2
 CENTURY | Thế kỷ (100 năm) | 3
 DECADE | Thập kỷ (10 năm) | 3
-LUNAR CALENDAR | Âm lịch | 3 | LUNAR
+LUNAR CALENDAR | Âm lịch | 3
 MOVIE | Bộ phim | 1 | FILM, MOVIES, FILMS
 SONG | Bài hát | 1 | SONGS
 GAME | Trò chơi | 1 | GAMES
@@ -393,10 +393,10 @@ BASKETBALL | Bóng rổ | 2
 VOLLEYBALL | Bóng chuyền | 2
 TENNIS | Quần vợt | 2
 CHESS | Cờ vua | 2
-FISHING | Câu cá | 2 | FISH, GO FISHING
+FISHING | Câu cá | 2 | GO FISHING
 HOBBY | Sở thích | 2 | HOBBIES
 CONCERT | Buổi hoà nhạc, đêm nhạc | 2
-CARTOON | Phim hoạt hình | 2 | CARTOONS, ANIMATION, ANIMATED FILM, ANIMATED MOVIE
+CARTOON | Phim hoạt hình | 2 | CARTOONS, ANIMATED FILM, ANIMATED MOVIE
 PICNIC | Buổi dã ngoại | 2
 TABLE TENNIS | Bóng bàn | 3 | PING PONG
 MARTIAL ARTS | Võ thuật | 3 | MARTIAL ART
@@ -461,7 +461,7 @@ HALF BOARD | Gói phòng bao gồm bữa sáng và bữa tối | 2
 FULL BOARD | Gói phòng phục vụ đủ 3 bữa ăn mỗi ngày | 2
 BUFFET | Tiệc đứng tự chọn món ăn thỏa thích | 1 | SMORGASBORD
 CONTINENTAL BREAKFAST | Bữa sáng kiểu Âu nhẹ nhàng bánh mì cà phê | 2
-VALET PARKING | Dịch vụ nhân viên lái xe đỗ xe hộ | 2 | CAR VALET
+VALET PARKING | Dịch vụ đỗ xe hộ mà khách sạn hay nhà hàng cung cấp | 2 | CAR VALET
 WAKE-UP CALL | Cuộc gọi báo thức buổi sáng của lễ tân khách sạn | 1
 ROOM SERVICE | Dịch vụ phục vụ đồ ăn mang tận phòng | 1
 HOUSEKEEPING | Bộ phận buồng phòng dọn dẹp phòng khách sạn | 2 | ROOM CLEANING
@@ -489,7 +489,7 @@ DEPOSIT | Khoản tiền đặt cọc giữ chỗ trước | 1 | DOWN PAYMENT
 CANCELLATION FEE | Phí phạt khi huỷ vé máy bay hoặc huỷ phòng | 2 | CANCELLATION PENALTY
 REFUND | Khoản tiền hoàn lại khi trả lại vé | 1 | MONEY BACK
 NON-REFUNDABLE | Loại vé khuyến mãi không được hoàn trả tiền | 2
-VOUCHER | Phiếu giảm giá ưu đãi dịch vụ du lịch | 1 | COUPON
+VOUCHER | Phiếu giảm giá ưu đãi dịch vụ du lịch | 1
 TRAVEL INSURANCE | Bảo hiểm du lịch chi trả rủi ro tai nạn | 2 | TRIP INSURANCE
 CONSULATE | Tổng lãnh sự quán hỗ trợ cấp visa giấy tờ | 2 | CONSULAR OFFICE
 PASSPORT PHOTO | Ảnh thẻ cỡ 4x6 chụp làm hộ chiếu | 1
@@ -513,7 +513,7 @@ CANCELLED | Chuyến bay bị huỷ bỏ hoàn toàn | 1 | CANCELLATION, CANCELE
 DIVERTED | Chuyến bay phải hạ cánh chuyển hướng sân bay khác | 2 | REROUTED
 BAGGAGE ALLOWANCE | Số kg hành lý được phép mang theo quy định | 1 | LUGGAGE LIMIT
 EXCESS BAGGAGE | Hành lý quá cước vượt trọng lượng quy định | 2 | OVERWEIGHT LUGGAGE
-CARRY-ON | Hành lý xách tay mang trực tiếp lên khoang máy bay | 1 | HAND LUGGAGE
+CARRY-ON | Hành lý xách tay mang trực tiếp lên khoang máy bay | 1
 CHECKED BAGGAGE | Hành lý ký gửi vào khoang hàng máy bay | 1 | HOLD LUGGAGE
 FRAGILE | Hàng dễ vỡ có dán nhãn xin nhẹ tay | 1 | HANDLE WITH CARE
 LOST AND FOUND | Quầy tìm kiếm hành lý thất lạc ở sân bay | 1 | LOST PROPERTY
@@ -525,4 +525,4 @@ FANNY PACK | Túi bao tử đeo quanh hông giữ tiền hộ chiếu | 2 | WAIS
 NECK PILLOW | Gối kê cổ chữ U êm ái chống mỏi khi đi máy bay | 1 | TRAVEL PILLOW
 EYE MASK | Bịt mắt ngủ che ánh sáng chợp mắt | 1 | SLEEP MASK
 EARPLUGS | Nút bịt tai giảm tiếng ồn động cơ máy bay | 1 | EAR PLUGS
-POWER ADAPTER | Đầu chuyển đổi chân cắm điện du lịch quốc tế | 2 | TRAVEL ADAPTER
+POWER ADAPTER | Đầu chuyển đổi chân cắm điện du lịch quốc tế | 2
