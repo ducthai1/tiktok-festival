@@ -53,9 +53,9 @@ QUANTUM | Ngành vật lý lượng tử nghiên cứu các hạt hạ nguyên t
 ATOM | Hạt nguyên tử - đơn vị cấu tạo cơ bản nhất của vật chất | 2
 MOLECULE | Một phân tử gồm nhiều nguyên tử liên kết lại với nhau | 2
 MICROSCOPE | Chiếc kính hiển vi dùng để phóng đại quan sát vi khuẩn siêu nhỏ | 2
-OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp | 1 | OXY
-HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn | 2 | HYDRO
-CARBON | Nguyên tố cacbon có trong mọi hợp chất hữu cơ | 2 | CACBON
+OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp | 1
+HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn | 2
+CARBON | Nguyên tố cacbon có trong mọi hợp chất hữu cơ | 2
 RADIATION | Bức xạ nhiệt hoặc bức xạ phóng xạ | 3
 EVOLUTION | Sự tiến hóa của các loài sinh vật qua thời gian | 2
 THERMODYNAMICS | Nhiệt động lực học trong vật lý | 3

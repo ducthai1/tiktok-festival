@@ -288,7 +288,7 @@ POINT OF NO RETURN | Điểm không thể quay đầu đã đâm lao phải theo
 PUT IN A NUTSHELL | Nói một cách tóm gọn xúc tích nhất | 2
 RAINING ON PARADE | Làm mất vui dội gáo nước lạnh vào cuộc vui | 2
 RIDE OR DIE | Người bạn trung thành vào sinh ra tử cùng nhau | 2
-RING A BELL | Nghe quen quen gợi nhớ điều gì đó | 2 | NGHE QUEN QUEN
+RING A BELL | Nghe quen quen gợi nhớ điều gì đó | 2
 ROCK THE BOAT | Gây xáo trộn làm xáo động tình hình êm đẹp | 2
 ROLL UP SLEEVES | Xắn tay áo lên bắt tay vào làm việc chăm chỉ | 1
 ROUGH AROUND THE EDGES | Còn thô sơ chưa mài giũa hoàn thiện | 3

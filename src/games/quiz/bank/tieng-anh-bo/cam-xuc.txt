@@ -104,7 +104,7 @@ EMOTION | Cảm xúc tâm lý | 1
 CONFIDENCE | Sự tự tin / lòng tin | 2
 ENTHUSIASM | Sự nhiệt huyết / hào hứng | 3
 EXHAUSTED | Kiệt sức / mệt mỏi lả | 2
-PESSIMISTIC | Bi quan tiêu cực | 3 | BI QUAN
+PESSIMISTIC | Bi quan tiêu cực | 3
 RECOVERY | Sự hồi phục sức khỏe | 2
 WELLNESS | Sức khỏe toàn diện | 2
 EYELASH | Lông mi mắt | 2

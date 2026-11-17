@@ -20,7 +20,7 @@ URL | Địa chỉ trang web | 2 | WEB ADDRESS
 HOMEPAGE | Trang chủ | 1 | HOME PAGE
 LANDING PAGE | Trang đích (trang giới thiệu sản phẩm) | 3
 INCOGNITO | Chế độ ẩn danh | 2 | PRIVATE MODE, PRIVATE BROWSING
-VERIFICATION CODE | Mã xác minh (OTP) | 2 | OTP, ONE-TIME PASSWORD
+VERIFICATION CODE | Dãy số gửi qua tin nhắn để xác nhận đăng nhập một lần | 2 | OTP, ONE-TIME PASSWORD
 BIOMETRICS | Sinh trắc học | 3 | BIOMETRIC
 DECRYPT | Giải mã (dữ liệu) | 3 | DECRYPTION
 HACK | Xâm nhập hệ thống trái phép | 2 | HACKING
@@ -154,7 +154,7 @@ PRIVACY | Quyền riêng tư | 2
 BACKUP | Sao lưu dữ liệu | 2 | BACK UP, BACK-UP
 CLOUD | Đám mây lưu trữ | 2 | CLOUD STORAGE
 STORAGE | Dung lượng lưu trữ | 2 | SPACE
-MEMORY | Bộ nhớ RAM | 2 | RAM
+MEMORY | Bộ nhớ tạm giữ dữ liệu đang chạy, tắt máy là mất | 2 | RAM
 DATABASE | Cơ sở dữ liệu | 2
 DRONE | Máy bay không người lái | 2 | UAV
 VIRTUAL REALITY | Thực tế ảo | 2 | VR
@@ -163,7 +163,7 @@ HASHTAG | Thẻ bắt đầu bằng dấu thăng (#) | 2 | TAG
 VIRAL | Lan truyền rần rần (nổi trên mạng) | 2 | TRENDING
 CONTENT | Nội dung | 2
 CREATOR | Nhà sáng tạo nội dung | 2 | CONTENT CREATOR
-INFLUENCER | Người có sức ảnh hưởng (KOL) | 2 | KOL
+INFLUENCER | Người có đông người theo dõi, nói gì cũng tác động tới số đông | 2 | KOL
 SCROLL | Lướt màn hình | 2 | SWIPE
 TAP | Chạm nhẹ vào màn hình | 2 | CLICK, PRESS
 BARCODE | Mã vạch | 2
@@ -216,7 +216,7 @@ SEARCH | Tìm kiếm trên mạng | 1 | LOOK UP
 LINK | Đường liên kết | 2 | URL, HYPERLINK
 CHATBOT | Trợ lý trò chuyện tự động | 3 | BOT
 SMART HOME | Nhà thông minh | 2
-ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo (AI) | 2 | AI
+ARTIFICIAL INTELLIGENCE | Trí tuệ nhân tạo mô phỏng khả năng suy nghĩ của con người | 2 | AI
 CYBERSECURITY | An ninh mạng | 3
 CLOUD COMPUTING | Điện toán đám mây | 2
 BLOCKCHAIN | Công nghệ chuỗi khối | 3
@@ -226,7 +226,7 @@ FRAMEWORK | Bộ khung phần mềm / nền tảng | 3
 MICROPROCESSOR | Bộ vi xử lý | 3
 OPEN SOURCE | Mã nguồn mở | 2
 SEMICONDUCTOR | Vật liệu bán dẫn | 3
-AUGMENTED REALITY | Thực tế tăng cường (AR) | 3 | AR
+AUGMENTED REALITY | Công nghệ chồng hình ảo lên khung cảnh thật qua màn hình | 3 | AR
 FRONTEND | Giao diện phía người dùng | 2 | FRONTEND
 BACKEND | Hệ thống máy chủ phía sau | 2 | BACKEND
 FULLSTACK | Lập trình viên toàn năng | 3 | FULLSTACK

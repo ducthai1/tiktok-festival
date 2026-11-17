@@ -28,7 +28,7 @@ NET | Lưới khung thành | 1
 TEAM | Đội bóng | 1 | SIDE, SQUAD
 CLUB | Câu lạc bộ | 1
 CHAMPION | Nhà vô địch | 1 | WINNER, CHAMPIONS, WINNERS
-TROPHY | Chiếc cúp | 1 | CUP
+TROPHY | Chiếc kỷ niệm chương trao cho đội vô địch | 1
 MEDAL | Huy chương | 1
 FINAL | Trận chung kết | 1
 WORLD CUP | Giải vô địch bóng đá thế giới | 1

@@ -7,8 +7,8 @@ ATLAS | Tập bản đồ | 2
 TEXTBOOK | Sách giáo khoa | 1
 WORKBOOK | Sách bài tập | 1
 REPORT CARD | Phiếu điểm (sổ liên lạc) | 2 | SCHOOL REPORT
-GRADE | Điểm số | 1 | MARK
-QUIZ | Bài kiểm tra ngắn | 1
+GRADE | Con điểm thầy cô chấm cho bài làm | 1
+QUIZ | Bài kiểm tra chớp nhoáng vài câu, thường không báo trước | 1
 MIDTERM | Thi giữa kỳ | 2 | MIDTERM EXAM
 FINAL EXAM | Thi cuối kỳ | 1 | FINALS
 ENTRANCE EXAM | Kỳ thi tuyển sinh | 2
@@ -48,15 +48,15 @@ SPELLING | Chính tả | 1
 REVIEW | Ôn tập | 1 | REVISION
 CRAM | Học nhồi trước kỳ thi | 3
 BOOKWORM | Mọt sách | 2
-JANITOR | Lao công (trong trường) | 3 | CUSTODIAN
+JANITOR | Người quét dọn lau chùi giữ vệ sinh trong trường | 3
 COUNSELOR | Chuyên viên tư vấn học đường | 3 | COUNSELLOR
 LIBRARY CARD | Thẻ thư viện | 1
 STUDENT ID | Thẻ sinh viên | 1 | STUDENT CARD
 SCHOOLYARD | Sân trường | 1
 JOB SEEKER | Người tìm việc | 2 | JOB HUNTER
-REMOTE WORK | Làm việc từ xa | 2 | WORK FROM HOME, WFH
+REMOTE WORK | Cách nói thông dụng nhất về việc làm ở nhà thay vì lên công ty | 2 | WORK FROM HOME, WFH
 SIDE HUSTLE | Nghề tay trái (việc làm thêm) | 3 | SIDE JOB
-PROBATION PERIOD | Thời gian thử việc | 2
+PROBATION PERIOD | Khoảng thời gian thử việc ghi rõ trong hợp đồng lao động | 2
 DAY OFF | Ngày nghỉ | 1
 PAYDAY | Ngày lĩnh lương | 1 | PAY DAY
 RAISE | Sự tăng lương | 2 | PAY RISE, SALARY INCREASE
@@ -76,17 +76,17 @@ BIOLOGY | Môn sinh học | 2
 LITERATURE | Môn văn học | 2
 PE | Môn thể dục | 2 | PHYSICAL EDUCATION, GYM
 SUBJECT | Môn học (toán, văn, sử…) | 2 | SUBJECTS
-INFORMATICS | Môn tin học | 3 | IT, ICT, COMPUTER SCIENCE, COMPUTING
+INFORMATICS | Môn học về máy tính và xử lý thông tin trong trường | 3 | IT, ICT, COMPUTER SCIENCE
 HOMEWORK | Bài tập về nhà | 1
-LESSON | Bài học, tiết học | 1 | CLASS, PERIOD
-TEST | Bài kiểm tra (15 phút, 1 tiết) | 1 | QUIZ
+LESSON | Một bài trong sách, học xong một buổi là hết bài | 1 | PERIOD
+TEST | Bài kiểm tra một tiết lấy điểm hệ số hai | 1
 QUESTION | Câu hỏi | 1
-ANSWER | Câu trả lời | 1 | REPLY
-STUDY | Học bài | 1 | LEARN
+ANSWER | Lời đáp cho một câu hỏi | 1
+STUDY | Ngồi vào bàn ôn lại bài vở đã học | 1
 TEACH | Dạy học (dạy bài cho học sinh) | 1
 PAGE | Trang sách | 1 | PAGES
 LATE | Đến muộn, đi trễ giờ | 1
-EXAM | Kỳ thi (thi học kỳ, thi đại học) | 2 | EXAMINATION, TEST
+EXAM | Kỳ thi lớn cuối kỳ hoặc tuyển sinh, có phòng thi và giám thị | 2 | EXAMINATION
 CLASSMATE | Bạn cùng lớp | 2 | CLASSMATES
 DICTIONARY | Quyển từ điển | 2
 UNIFORM | Bộ đồng phục | 2
@@ -97,23 +97,23 @@ MISTAKE | Lỗi sai (làm bài bị sai) | 2 | MISTAKES, ERROR
 PRINCIPAL | Thầy, cô hiệu trưởng | 3 | HEADMASTER, HEADMISTRESS, HEAD TEACHER
 SEMESTER | Học kỳ | 3 | TERM
 KINDERGARTEN | Trường mẫu giáo | 3 | PRESCHOOL, NURSERY, NURSERY SCHOOL
-TIMETABLE | Thời khoá biểu | 3 | SCHEDULE, CLASS SCHEDULE
-GRADUATE | Tốt nghiệp (ra trường) | 3 | GRADUATION
-ESSAY | Bài luận, bài văn | 3 | COMPOSITION
+TIMETABLE | Bảng xếp lịch các tiết học trong tuần | 3 | CLASS SCHEDULE
+GRADUATE | Động từ chỉ việc học xong và rời khỏi trường | 3
+ESSAY | Bài văn dài có mở thân kết, viết theo một đề cho sẵn | 3
 FARMER | Nông dân | 1
-POLICE | Chú cảnh sát | 1 | POLICEMAN, POLICEWOMAN, POLICE OFFICER, OFFICER, COP
+POLICE | Lực lượng giữ gìn an ninh trật tự, mặc sắc phục | 1 | POLICEWOMAN, POLICE OFFICER, OFFICER, COP
 DRIVER | Tài xế, bác tài | 1
 SINGER | Ca sĩ | 1
 WORKER | Công nhân | 1 | FACTORY WORKER
 DANCER | Vũ công (người nhảy múa) | 1
-JOB | Nghề nghiệp, công việc | 1 | WORK, CAREER, OCCUPATION, PROFESSION
-CHEF | Đầu bếp | 2 | COOK
-ACTOR | Diễn viên | 2 | ACTRESS
-LAWYER | Luật sư | 2 | ATTORNEY
+JOB | Công việc cụ thể có trả lương mà một người đang làm | 1 | PROFESSION
+CHEF | Bếp trưởng đứng đầu gian bếp nhà hàng | 2
+ACTOR | Người đóng vai trong phim hoặc trên sân khấu | 2
+LAWYER | Người hành nghề luật nói chung, tư vấn và soạn hợp đồng | 2
 FIREFIGHTER | Lính cứu hoả | 2 | FIREMAN
 ARTIST | Hoạ sĩ | 2 | PAINTER
 WRITER | Nhà văn | 2 | AUTHOR, NOVELIST
-WAITER | Người phục vụ bàn (bồi bàn) | 2 | WAITRESS, SERVER
+WAITER | Người bưng bê phục vụ khách tại bàn trong quán ăn | 2 | WAITRESS
 POSTMAN | Người đưa thư | 2 | MAILMAN, POSTWOMAN, MAIL CARRIER, POSTAL WORKER
 SCIENTIST | Nhà khoa học | 2
 JOURNALIST | Nhà báo | 3 | REPORTER
@@ -121,22 +121,22 @@ ARCHITECT | Kiến trúc sư | 3
 MECHANIC | Thợ sửa xe (thợ máy) | 3
 CASHIER | Nhân viên thu ngân | 3
 PHOTOGRAPHER | Thợ chụp ảnh, nhiếp ảnh gia | 3
-HAIRDRESSER | Thợ cắt tóc | 3 | BARBER, HAIRSTYLIST
+HAIRDRESSER | Thợ làm tóc cho nữ, gội nhuộm uốn sấy tạo kiểu | 3 | HAIRSTYLIST
 BOSS | Sếp | 1
-WORK | Làm việc (đi làm) | 1
+WORK | Động từ chỉ việc đi làm kiếm sống | 1
 BUSY | Bận rộn | 1
-CV | Viết tắt hai chữ cái của bản lý lịch xin việc | 2 | RESUME, CURRICULUM VITAE
+CV | Viết tắt hai chữ cái của bản lý lịch xin việc | 2
 CAMERA | Máy ảnh | 1
-CALL | Gọi điện thoại | 1 | PHONE, RING, PHONE CALL
+CALL | Bấm số gọi cho ai đó qua điện thoại | 1 | PHONE CALL
 WEBSITE | Trang web | 1 | WEB PAGE, SITE
 EMAIL | Thư điện tử | 1 | MAIL
 FOLLOW | Theo dõi (một tài khoản) | 2
-MONEY | Tiền | 1 | CASH
+MONEY | Thứ dùng để mua bán trao đổi, có tờ và có xu | 1
 CHEAP | Rẻ | 1 | INEXPENSIVE
 BANK | Ngân hàng | 1
-BUY | Mua | 1 | PURCHASE
+BUY | Bỏ tiền ra lấy món hàng về | 1
 SELL | Bán | 1
-PAY | Trả tiền, thanh toán | 1 | PAYMENT
+PAY | Đưa tiền để thanh toán cho món đã mua | 1
 SHOP | Cửa hàng | 1 | STORE
 RICH | Giàu | 1 | WEALTHY
 POOR | Nghèo | 1
@@ -144,40 +144,40 @@ FREE | Miễn phí (không mất tiền) | 1
 SHOPPING | Đi mua sắm | 1 | GO SHOPPING
 SUPERMARKET | Siêu thị | 1
 EXPENSIVE | Đắt (giá cao) | 2 | COSTLY, PRICEY
-BILL | Hoá đơn | 2 | INVOICE, CHECK, RECEIPT
+BILL | Giấy ghi số tiền phải trả sau bữa ăn hoặc dịch vụ | 2 | CHECK
 BORROW | Mượn, vay (tiền) | 2
 SPEND | Tiêu tiền (xài tiền) | 2
 CHANGE | Tiền thối, tiền thừa trả lại | 3
 DEBT | Món nợ | 3 | DEBTS
 SAVINGS | Tiền tiết kiệm | 3 | SAVING
 ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2
-CERTIFICATE | Chứng chỉ / bằng cấp | 2
-DIPLOMA | Bằng tốt nghiệp | 3
+CERTIFICATE | Giấy chứng nhận đã hoàn thành một khoá học ngắn | 2
+DIPLOMA | Tấm bằng nhận được khi học xong một bậc học | 3
 INTERNSHIP | Kỳ thực tập của sinh viên | 2
-EXECUTIVE | Giám đốc điều hành / người quản lý | 3
+EXECUTIVE | Người giữ chức quản lý cấp cao trong doanh nghiệp | 3
 RESIGNATION | Việc nộp đơn xin nghỉ việc | 3
 PENSION | Tiền lương hưu | 3
-SEMINAR | Buổi thảo luận chuyên đề | 3
-COMPETENCE | Năng lực / tay nghề | 3
-PROFICIENCY | Độ thành thạo / độ giỏi | 3
+SEMINAR | Buổi học có diễn giả trình bày rồi cả nhóm cùng thảo luận | 3
+COMPETENCE | Đủ khả năng làm được việc ở mức yêu cầu | 3
+PROFICIENCY | Mức thành thạo cao, làm nhuần nhuyễn như dân chuyên | 3
 WORKPLACE | Môi trường làm việc / nơi làm việc | 2
 PROFESSOR | Giáo sư đại học giảng dạy | 2
 TUTOR | Gia sư dạy kèm | 1
 LECTURER | Giảng viên đại học | 2
-CURRICULUM VITAE | Tên đầy đủ bằng tiếng Latin của bản lý lịch xin việc | 3 | CV
-TRAINEE | Thực tập sinh / người được đào tạo | 2
+CURRICULUM VITAE | Tên đầy đủ bằng tiếng Latin của bản lý lịch xin việc | 3
+TRAINEE | Người mới được công ty nhận vào để đào tạo nghề | 2
 SUPERVISOR | Người giám sát công việc | 2
 TRANSLATOR | Biên dịch viên | 2
 INTERPRETER | Phiên dịch viên nói trực tiếp | 3
 ENTREPRENEURSHIP | Tinh thần khởi nghiệp | 3
 WORKLOAD | Khối lượng công việc | 2
-ASTRONAUT | Phi hành gia mặc đồ du hành bay vào không gian vũ trụ | 1 | COSMONAUT
+ASTRONAUT | Người mặc bộ đồ kín bay lên không gian làm nhiệm vụ | 1
 DIPLOMAT | Nhà ngoại giao đại diện cho quốc gia làm việc ở sứ quán | 3
 PHILOSOPHER | Nhà triết học suy ngẫm về bản chất sự sống và chân lý | 3
 PSYCHOLOGIST | Chuyên gia tâm lý học lắng nghe tư vấn tinh thần | 3
 VETERINARIAN | Bác sĩ thú y khám và chữa bệnh cho thú cưng chó mèo | 2 | VET
 ASTRONOMER | Nhà thiên văn học ngắm kính viễn vọng nghiên cứu vì sao | 3
-THESIS | Bản luận văn tốt nghiệp nghiên cứu chuyên sâu của sinh viên | 3 | DISSERTATION
+THESIS | Luận văn sinh viên hoặc thạc sĩ nộp để tốt nghiệp | 3
 METEOROLOGIST | Chuyên gia khí tượng học dự báo thời tiết hằng ngày | 3
 LIBRARIAN | Người thủ thư trông nom và quản lý các đầu sách thư viện | 2
 ELECTRICIAN | Người thợ điện sửa chữa đường dây điện và bóng đèn hỏng | 2
@@ -196,12 +196,12 @@ BAKER | Người thợ làm bánh nướng những mẻ bánh mì thơm lừng l
 SYLLABUS | Đề cương chi tiết môn học liệt kê nội dung từng tuần | 3
 DORMITORY | Ký túc xá sinh viên ở nội trú trong khuôn viên trường | 2 | DORM
 CAMPUS | Khuôn viên trường đại học rợp bóng cây xanh | 2
-FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học | 2 | KHOA
+FACULTY | Toàn thể giảng viên hoặc khoa chuyên môn trong trường đại học | 2
 DEAN | Vị trưởng khoa đứng đầu quản lý một khoa đại học | 3
 VICE PRINCIPAL | Thầy cô phó hiệu trưởng hỗ trợ điều hành trường | 2
 HEAD OF DEPARTMENT | Trưởng bộ môn phụ trách học thuật | 3
 ACADEMIC YEAR | Một niên khóa năm học kéo dài 9 đến 10 tháng | 2
-GRADUATION | Lễ tốt nghiệp trang trọng khoác áo cử nhân tung mũ | 1
+GRADUATION | Lễ tốt nghiệp trang trọng, khoác áo cử nhân rồi tung mũ | 1
 ALUMNI | Hội cựu học sinh cựu sinh viên của trường | 3
 VALEDICTORIAN | Thủ khoa tốt nghiệp đại diện toàn khóa đọc diễn văn | 3
 SALUTATORIAN | Á khoa tốt nghiệp đứng thứ nhì toàn khóa | 4
@@ -210,13 +210,13 @@ MINOR | Chuyên ngành phụ học thêm bằng kép | 2
 CREDIT | Một tín chỉ học phần tích lũy để tốt nghiệp | 2
 TRANSCRIPT | Bảng điểm chi tiết kết quả học tập các môn học | 2
 BACHELOR | Bằng cử nhân đại học bốn năm chính quy | 2
-MASTER | Bằng thạc sĩ sau đại học chuyên sâu | 2
+MASTER | Bằng sau đại học học thêm một đến hai năm, cao hơn cử nhân | 2
 DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | PHD
 POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 4 | POSTDOC
-DISSERTATION | Luận án tiến sĩ bảo vệ trước hội đồng khoa học | 3
+DISSERTATION | Luận án tiến sĩ dày, bảo vệ trước hội đồng khoa học | 3
 DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2
 ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2
-ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2 | GHI DANH
+ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2
 EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3
 ABSENCE | Sự vắng mặt nghỉ học không phép hoặc có phép | 1
 ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1
@@ -224,16 +224,16 @@ MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2
 PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 4
 APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2
 VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3
-PROBATION | Thời gian thử việc hai tháng trước khi ký hợp đồng chính thức | 2
+PROBATION | Giai đoạn thử thách, trong luật còn có nghĩa là án treo | 2
 RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến | 2
 SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng | 3
-RECRUITER | Chuyên viên tuyển dụng săn đầu người cho công ty | 2 | HEADHUNTER
+RECRUITER | Nhân viên nhân sự lo khâu tìm và tuyển người cho công ty | 2
 COVER LETTER | Thư xin việc bày tỏ nguyện vọng gửi kèm hồ sơ lý lịch | 2
-REFERENCE | Thư giới thiệu người làm chứng nhận bảo lãnh năng lực | 2
+REFERENCE | Thư của người cũ đứng ra xác nhận năng lực cho ứng viên | 2
 COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc | 2
 NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau | 1
 DAY SHIFT | Ca làm việc ban ngày giờ hành chính | 1
-TELEWORK | Hình thức làm việc từ xa tại nhà không cần lên văn phòng | 2 | REMOTE WORK
+TELEWORK | Từ hành chính chỉ việc làm ngoài trụ sở cơ quan | 2
 FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập | 1
 CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2
 BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2
@@ -246,7 +246,7 @@ PATERNITY LEAVE | Kỳ nghỉ chăm vợ sinh con dành cho người cha | 2
 BEREAVEMENT LEAVE | Nghỉ phép việc hiếu chịu tang người thân trong gia đình | 3
 SABBATICAL | Kỳ nghỉ phép dài hạn nhiều tháng để nghiên cứu hoặc du lịch | 3
 PAYSLIP | Phiếu chi tiết lương in rõ các khoản trừ thuế và thực nhận | 2
-APPRAISAL | Kỳ đánh giá năng lực và thành tích làm việc định kỳ | 3 | PERFORMANCE REVIEW
+APPRAISAL | Buổi đánh giá định kỳ, từ này còn dùng khi định giá tài sản | 3
 DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầm | 3
 ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng | 3
 CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng | 2
@@ -259,11 +259,11 @@ CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp | 2
 QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ | 3
 BALLOT | Lá phiếu kín để bỏ phiếu bầu cử | 2
 VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án | 1
-TELECOMMUTING | Phương thức làm việc từ xa kết nối qua mạng viễn thông | 3
+TELECOMMUTING | Từ ghép với chuyện đi lại, nhấn vào việc thay chuyến đi làm bằng kết nối mạng | 3
 NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc | 2
 PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc | 2
 TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng | 2
-BONUSES | Các khoản tiền thưởng thêm ngoài lương cơ bản | 1
+BONUSES | Những khoản thưởng thêm ngoài lương, viết ở dạng số nhiều | 1
 PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa | 2
 PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng | 3
 AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác | 3

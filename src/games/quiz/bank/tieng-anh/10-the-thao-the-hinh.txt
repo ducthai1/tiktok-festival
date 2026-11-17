@@ -19,7 +19,7 @@ AEROBICS | Môn thể dục nhịp điệu aerobic vận động theo tiếng nh
 PODIUM | Bục vinh quang có ba bậc để các vận động viên đứng nhận giải | 2
 ATHLETE | Một vận động viên thể thao chuyên nghiệp rèn luyện thi đấu | 2
 BOWLING | Trò chơi ném bóng gỗ làm đổ các ki gỗ | 1 | BOWLING
-BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ | 1 | BI-A, BIDA, POOL
+BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ | 1 | BIDA, POOL
 CRICKET | Môn bóng gậy rất được yêu thích tại Anh và Ấn Độ | 2
 RUGBY | Môn bóng bầu dục tranh cướp bóng quyết liệt | 2
 HOCKEY | Môn khúc côn cầu chơi trên sân cỏ hoặc sân băng | 2

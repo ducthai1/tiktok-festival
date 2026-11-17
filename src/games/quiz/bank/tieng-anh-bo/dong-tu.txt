@@ -142,7 +142,7 @@ MAINTAIN | Duy trì / giữ vững | 2
 OBVIOUS | Rõ ràng / hiển nhiên | 2
 PERSUADE | Thuyết phục người khác | 2
 STIMULATE | Kích thích / thúc đẩy | 3
-TOLERANT | Vị tha / nhẫn nại khoan dung | 3 | KHOAN DUNG
+TOLERANT | Vị tha / nhẫn nại khoan dung | 3
 ULTIMATE | Cuối cùng / tối thượng | 3
 VALUABLE | Có giá trị cao / quý giá | 2
 WONDERFUL | Tuyệt vời / kỳ diệu | 1
@@ -178,7 +178,7 @@ OVERWHELM | Cảm giác bị choáng ngợp, lấn át bởi quá nhiều cảm 
 ENLIGHTEN | Động từ khai sáng, mở mang tâm trí trí tuệ cho người khác | 3
 REJUVENATE | Làm trẻ hóa lại làn da, hồi phục sức sống tươi mới tràn trề | 3
 DELIBERATE | Hành động có chủ đích cố ý tính toán trước chứ không phải ngẫu nhiên | 3
-MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi | 2 | NGUY NGA
+MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi | 2
 INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai | 2
 LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối | 3
 MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe | 3
@@ -186,7 +186,7 @@ GIGGLE | Cười khúc khích khúc khích e thẹn che miệng | 2
 BLINK | Chớp mắt một cái để làm ẩm mắt | 1
 NOD | Hành động gật đầu nhẹ để đồng ý tán thành ý kiến | 1
 SHRUG | Hành động nhún hai vai tỏ vẻ không biết hoặc không quan tâm | 2
-CHEW | Nhai kỹ thức ăn bằng răng hàm trước khi nuốt | 1 | NHAI
+CHEW | Nhai kỹ thức ăn bằng răng hàm trước khi nuốt | 1
 FLOAT | Nổi bồng bềnh lơ lửng trên mặt nước không bị chìm | 1
 CRAWL | Động tác bò lê bò toài của em bé trên sàn nhà | 1
 STROLL | Hành động đi tản bộ thong dong thảnh thơi ngắm cảnh công viên | 2
@@ -497,7 +497,7 @@ APPREHEND | Bắt giữ kẻ phạm tội hoặc lĩnh hội | 3
 APPROACH | Tiếp cận hoặc đến gần một mục tiêu | 2
 ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người | 2
 AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2
-BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3 | HOANG MANG
+BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3
 BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2 | MIX
 BROADEN | Mở rộng tầm mắt hoặc kiến thức | 2
 CAPTIVATE | Thu hút mê hoặc lòng người | 3
@@ -522,7 +522,7 @@ DEMOLISH | Phá hủy đánh sập tòa nhà cũ | 2
 DENOUNCE | Lên án tố cáo hành vi sai trái | 3
 DEPRECIATE | Giảm giá trị mất giá theo thời gian | 3
 DESCEND | Đi xuống hạ xuống từ trên cao | 2
-DESPISE | Khinh thường coi khinh ai đó | 3 | COI KHINH
+DESPISE | Khinh thường coi khinh ai đó | 3
 DETACH | Tháo rời tách rời một bộ phận | 2
 DEVOUR | Ăn ngấu nghiến nuốt trọn thức ăn | 3
 DISCARD | Vứt bỏ loại bỏ thứ không dùng nữa | 2
@@ -533,10 +533,10 @@ EMBARK | Lên tàu hoặc dấn thân khởi đầu hành trình | 3
 EMIT | Phát ra khí thải hoặc ánh sáng | 2
 ENDORSE | Xác nhận ủng hộ công khai | 2
 ENRICH | Làm giàu thêm kiến thức tâm hồn | 2
-ENROLL | Đăng ký ghi danh vào khóa học | 2 | GHI DANH, ENROL
+ENROLL | Đăng ký ghi danh vào khóa học | 2 | ENROL
 ERADICATE | Xóa bỏ triệt để tiêu diệt tận gốc | 3
 ERUPT | Phun trào dữ dội như nham thạch | 2
-ESCALATE | Leo thang gia tăng căng thẳng | 3 | LEO THANG
+ESCALATE | Leo thang gia tăng căng thẳng | 3
 ESTEEM | Kính trọng tôn kính người có đức | 3
 EVALUATE | Thẩm định đánh giá năng lực | 2
 EXCEED | Vượt quá giới hạn cho phép | 2
@@ -562,7 +562,7 @@ INDULGE | Nuông chiều đam mê chiều theo sở thích | 3
 INHIBIT | Kìm hãm ngăn chặn sự phát triển | 3
 INITIATE | Khởi xướng đề xướng phong trào | 2
 INQUIRE | Hỏi thăm dò xét thông tin | 2
-INSPECT | Thanh tra kiểm tra kỹ lưỡng | 2 | THANH TRA
+INSPECT | Thanh tra kiểm tra kỹ lưỡng | 2
 INSTILL | Truyền dẫn thấm nhuần tư tưởng đạo đức | 3
 INTEGRATE | Hội nhập tích hợp gắn kết | 2
 INTERCEPT | Chặn đứng đánh chặn giữa đường | 3
@@ -609,7 +609,7 @@ RESONATE | Cộng hưởng vang vọng âm thanh | 3
 RETRIEVE | Lấy lại truy xuất dữ liệu | 2
 REVERE | Tôn sùng sùng kính bậc vĩ nhân | 3
 REVIVE | Hồi sinh làm sống dậy hy vọng | 2
-REVOLVE | Xoay quanh trục hoặc tâm điểm | 2 | XOAY QUANH
+REVOLVE | Xoay quanh trục hoặc tâm điểm | 2
 SALUTE | Chào điều lệnh giơ tay chào trang nghiêm | 2
 SANCTION | Trừng phạt chế tài kinh tế | 3
 SHINE | Chiếu sáng lấp lánh như Mặt Trời | 1
@@ -620,17 +620,17 @@ STABILIZE | Làm ổn định giữ cân bằng tình hình | 2
 SUCCEED | Thành công đạt mục tiêu | 1
 SUPPRESS | Đàn áp trấn áp dẹp tan bạo loạn | 3
 SURROUND | Bao vây vây quanh bốn bề | 1
-SUSPEND | Đình chỉ tạm treo chức vụ | 2 | TREO
+SUSPEND | Đình chỉ tạm treo chức vụ | 2
 SUSTAIN | Duy trì chống đỡ sự sống | 2
 TRIGGER | Kích hoạt bóp cò gây ra chuỗi sự kiện | 2
 TRIUMPH | Chiến thắng vang dội vẻ vang | 2
 UNDERESTIMATE | Đánh giá thấp xem nhẹ đối thủ | 2
 UNFOLD | Mở ra hé lộ bức tranh toàn cảnh | 2
 UNRAVEL | Tháo gỡ làm sáng tỏ bí ẩn | 3
-VIBRATE | Rung lên rung chuyển nhè nhẹ | 1 | RUNG
-VINDICATE | Minh oan chứng minh sự vô tội | 3 | MINH OAN
+VIBRATE | Rung lên rung chuyển nhè nhẹ | 1
+VINDICATE | Minh oan chứng minh sự vô tội | 3
 VIOLATE | Vi phạm xâm phạm điều luật | 2
-WANDER | Đi lang thang dạo bước không mục đích | 1 | LANG THANG
+WANDER | Đi lang thang dạo bước không mục đích | 1
 WEAVE | Dệt vải đan lát nong nia | 2
 WITHER | Héo úa tàn lụi bông hoa | 2
 ADAPTABLE | Dễ thích nghi linh hoạt trong mọi hoàn cảnh | 2
@@ -685,7 +685,7 @@ RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2
 CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2
 KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ | 2
 BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường | 2
-BREAK UP | Cụm động từ chia tay chấm dứt một mối tình | 1 | CHIA TAY
+BREAK UP | Cụm động từ chia tay chấm dứt một mối tình | 1
 COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2
 FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2
 GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2

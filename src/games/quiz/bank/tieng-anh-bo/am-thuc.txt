@@ -273,7 +273,7 @@ OATMEAL | Yến mạch / cháo yến mạch | 2
 ESPRESSO | Cà phê đậm đặc | 2
 CAPPUCCINO | Cà phê bọt sữa Ý | 2
 MILKSHAKE | Sữa lắc trái cây / kem | 2
-BARBECUE | Món nướng BBQ | 1 | BBQ
+BARBECUE | Món thịt nướng than ngoài trời kiểu Mỹ | 1 | BBQ
 APPETIZER | Món khai vị | 3
 BEVERAGE | Đồ uống / thức uống nói chung | 3
 INGREDIENT | Nguyên liệu nấu ăn | 2
@@ -288,17 +288,17 @@ POMEGRANATE | Quả lựu đỏ | 2
 GRAPE | Quả nho tươi | 1 | GRAPES
 BLUEBERRY | Quả việt quất | 2
 RASPBERRY | Quả mâm xôi | 2
-DRAGONFRUIT | Quả thanh long | 1 | THANH LONG
+DRAGONFRUIT | Quả thanh long | 1
 PERSIMMON | Quả hồng chín | 2
 NUTRIENT | Chất dinh dưỡng thực phẩm | 3
-CALORIE | Lượng calo năng lượng | 2 | CALO
+CALORIE | Lượng calo năng lượng | 2
 TIRAMISU | Món bánh ngọt béo ngậy vị cà phê và cacao trứ danh của nước Ý | 1
 GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico | 3
 TACO | Món bánh vỏ ngô giòn gập đôi kẹp thịt băm cay nổi tiếng của Mexico | 1 | TACOS
 BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico | 2 | BURRITOS
 SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản | 1
 WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản | 2
-VANILLA | Hương vani thơm ngọt ngào cho món bánh kem | 1 | VANI
+VANILLA | Hương vani thơm ngọt ngào cho món bánh kem | 1
 CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm | 1 | CARAMEN
 COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng | 2 | CANDY FLOSS
 LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu | 1
@@ -313,7 +313,7 @@ MOJITO | Món cocktail pha từ chanh, đường và lá bạc hà tươi | 2 | 
 CHEESECAKE | Bánh kem phô mai nướng thơm béo ngậy | 1
 MACARON | Loại bánh ngọt tròn nhỏ nhiều màu sắc với hai nắp vỏ giòn xốp kẹp kem ngọt ngào của Pháp | 2 | MACARONS
 BROWNIE | Bánh sô-cô-la nướng vuông mềm ẩm đậm vị | 1 | BROWNIES
-ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát | 3 | ATISO
+ARTICHOKE | Búp bông atisô dùng nấu canh hoặc pha trà thanh mát | 3
 CASHEW | Hạt điều rang béo bùi giòn rụm | 2 | CASHEWS, CASHEW NUT
 WALNUT | Quả óc chó vỏ cứng giàu chất dinh dưỡng | 2 | WALNUTS
 ALMOND | Hạt hạnh nhân thơm giòn béo bùi | 2 | ALMONDS

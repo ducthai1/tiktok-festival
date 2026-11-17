@@ -55,7 +55,7 @@ MARTIAL ARTIST | Võ sĩ (người tập võ) | 2
 KNEE PAD | Miếng bảo vệ đầu gối | 2 | KNEE PADS
 SPORTSWEAR | Đồ thể thao | 1 | ACTIVEWEAR
 WATER BOTTLE | Bình nước | 1
-PERSONAL TRAINER | Huấn luyện viên cá nhân (PT) | 2 | PT
+PERSONAL TRAINER | Huấn luyện viên riêng kèm từng buổi tập ở phòng gym | 2 | PT
 BACKHAND | Cú đánh trái tay | 3
 FOREHAND | Cú đánh thuận tay | 3
 BULLSEYE | Hồng tâm | 2 | BULL S EYE

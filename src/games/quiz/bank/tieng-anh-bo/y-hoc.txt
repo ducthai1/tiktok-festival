@@ -236,7 +236,7 @@ FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS, EXHAUSTION
 SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
 CARDIOLOGY | Khoa tim mạch | 3
 IMMUNIZATION | Việc tiêm chủng phòng bệnh | 3
-PEDIATRICS | Khoa nhi / y học trẻ em | 3 | KHOA NHI
+PEDIATRICS | Khoa nhi / y học trẻ em | 3
 PHYSICIAN | Bác sĩ điều trị | 2
 VACCINATION | Tiêm vắc-xin ngừa bệnh | 2
 CHRONIC | Bệnh mãn tính dai dẳng | 3
@@ -250,7 +250,7 @@ NEUROLOGY | Khoa thần kinh | 3
 ONCOLOGY | Khoa ung bướu | 3
 PATHOLOGY | Bệnh lý học | 3
 PSYCHIATRY | Khoa tâm thần | 3
-RADIOLOGY | Khoa chẩn đoán hình ảnh / X-quang | 3 | X QUANG
+RADIOLOGY | Khoa chẩn đoán hình ảnh / X-quang | 3
 REHABILITATION | Phục hồi chức năng | 3
 SYNDROME | Hội chứng bệnh lý | 3
 ABDOMEN | Vùng bụng | 2

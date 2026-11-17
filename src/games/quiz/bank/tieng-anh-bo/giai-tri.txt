@@ -165,7 +165,7 @@ MISSION | Nhiệm vụ vượt thử thách trong game | 1 | QUEST
 SHOW | Chương trình biểu diễn nghệ thuật giải trí | 1 | PERFORMANCE
 EPISODE | Một tập phát sóng của bộ phim truyền hình | 1 | CHAPTER
 SERIES | Loạt phim truyền hình nhiều tập ăn khách | 1 | TV SERIES, DRAMA SERIES
-HOST | Người dẫn chương trình MC hoạt ngôn linh hoạt | 1 | MC, PRESENTER
+HOST | Người dẫn dắt chương trình, giữ nhịp và nối các tiết mục | 1 | MC, PRESENTER
 CIRCUS | Rạp xiếc nhào lộn xiếc thú vui mắt | 1 | BIG TOP
 COMEDIAN | Nghệ sĩ hài mang tiếng cười cho khán giả | 1 | STAND-UP COMIC
 BALLET | Vở vũ kịch múa ba lê kinh điển trên mũi chân | 2 | CLASSICAL BALLET
@@ -247,7 +247,7 @@ CYBORG | Người nửa người nửa máy cấy ghép kim loại | 2 | BIONIC 
 MASTERPIECE | Một kiệt tác nghệ thuật để đời của danh họa | 2
 SYMPHONY | Bản giao hưởng âm nhạc cổ điển đồ sộ vang dội | 2
 AUDITORIUM | Khán phòng lớn với các hàng ghế trong nhà hát | 3
-CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh | 3 | QUAY PHIM
+CINEMATOGRAPHY | Nghệ thuật quay phim và góc máy ánh sáng điện ảnh | 3
 EXHIBITION | Buổi triển lãm trưng bày các tác phẩm nghệ thuật | 2
 SCULPTURE | Tác phẩm điêu khắc đục đẽo từ đá hoặc đồng | 2
 CALLIGRAPHY | Nghệ thuật viết thư pháp bằng bút lông uốn lượn uyển chuyển | 3

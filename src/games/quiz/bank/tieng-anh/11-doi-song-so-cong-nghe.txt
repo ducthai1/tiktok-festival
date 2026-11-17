@@ -28,7 +28,7 @@ WIRED | Có dây (kết nối bằng dây) | 2
 BLUETOOTH | Công nghệ kết nối không dây tầm ngắn giữa tai nghe và điện thoại | 1
 AVATAR | Ảnh đại diện hồ sơ cá nhân của người dùng trên mạng xã hội | 1
 INTERACTION | Sự tương tác giữa người xem và người live (như thả tim, bình luận) | 2
-HEADPHONE | Tai nghe chụp qua đầu để thưởng thức âm nhạc | 1 | TAI NGHE, HEADPHONES
+HEADPHONE | Tai nghe chụp qua đầu để thưởng thức âm nhạc | 1 | HEADPHONES
 USB | Thiết bị thẻ nhớ lưu trữ di động nhỏ gọn cắm vào máy tính | 1 | USB, FLASH DRIVE
 MONITOR | Màn hình hiển thị của máy tính để bàn | 1
 APPLICATION | Ứng dụng hoặc phần mềm cài trên điện thoại | 1 | APP
