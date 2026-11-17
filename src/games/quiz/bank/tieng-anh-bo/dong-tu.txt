@@ -1,12 +1,12 @@
 # Tiếng Anh · Động từ, tính từ
 OPEN | Mở (động từ, vd mở cửa) | 1
 CLOSE | Đóng (động từ, vd đóng cửa) | 1 | SHUT
-GIVE | Cho, đưa (động từ, vd đưa tôi cây bút) | 1 | HAND, PASS
-TAKE | Lấy (động từ, vd lấy cái cặp) | 1 | GET, GRAB, FETCH, PICK UP
-HELP | Giúp đỡ (động từ) | 1 | ASSIST, AID, SUPPORT
-LEARN | Học (động từ, vd học tiếng Anh) | 1 | STUDY
-LISTEN | Nghe (động từ, vd nghe nhạc) | 1 | HEAR, LISTEN TO
-SPEAK | Nói (động từ) | 1 | SAY, TALK, TELL
+GIVE | Cho, đưa (động từ, vd đưa tôi cây bút) | 1
+TAKE | Lấy (động từ, vd lấy cái cặp) | 1 | GET, FETCH, PICK UP
+HELP | Giúp đỡ (động từ) | 1 | AID
+LEARN | Học (động từ, vd học tiếng Anh) | 1
+LISTEN | Nghe (động từ, vd nghe nhạc) | 1 | LISTEN TO
+SPEAK | Nói (động từ) | 1 | SAY
 THINK | Nghĩ, suy nghĩ (động từ) | 1
 KNOW | Biết (động từ, vd tôi biết rồi) | 1
 WAIT | Chờ, đợi (động từ) | 1 | AWAIT, WAIT FOR
@@ -16,63 +16,63 @@ COME | Đến, tới (động từ, vd đến nhà tôi chơi) | 1 | ARRIVE
 GO | Đi (động từ, vd đi học, đi chợ) | 1
 SIT | Ngồi (động từ) | 1 | SIT DOWN
 STAND | Đứng (động từ) | 1 | STAND UP
-SEE | Nhìn thấy (động từ, vd thấy con mèo) | 1 | SPOT, NOTICE
+SEE | Nhìn thấy (động từ, vd thấy con mèo) | 1 | SPOT
 ASK | Hỏi (động từ) | 1
 PUT | Đặt, để (động từ, vd để sách lên bàn) | 1 | PLACE, SET, LAY
 WANT | Muốn (động từ) | 1 | WOULD LIKE
 LIVE | Sống (động từ, vd sống ở Hà Nội) | 1 | RESIDE
 USE | Dùng, sử dụng (động từ) | 1
 TELL | Kể (động từ, vd kể chuyện) | 1
-STOP | Dừng lại (động từ) | 1 | HALT
+STOP | Dừng lại (động từ) | 1
 LOOK | Nhìn (động từ, vd nhìn lên bảng) | 1 | LOOK AT
 DO | Làm (động từ, vd làm bài tập về nhà) | 1
 HAVE | Có (động từ, vd tôi có một con mèo) | 1 | OWN, POSSESS, HAVE GOT
-TALK | Trò chuyện (động từ) | 2 | CHAT, SPEAK
+TALK | Trò chuyện (động từ) | 2
 FINISH | Kết thúc, làm xong (động từ) | 1 | END, COMPLETE
-WAKE UP | Thức dậy (động từ) | 2 | WAKE, GET UP
+WAKE UP | Thức dậy (động từ) | 2 | WAKE
 FORGET | Quên (động từ) | 2
-SHOUT | Hét lên (động từ) | 2 | YELL, SCREAM
-SEND | Gửi (động từ, vd gửi thư) | 2 | MAIL, POST
+SHOUT | Hét lên (động từ) | 2
+SEND | Gửi (động từ, vd gửi thư) | 2 | MAIL
 RECEIVE | Nhận (động từ, vd nhận quà) | 2 | GET, ACCEPT
 HIDE | Trốn, nấp (động từ, vd chơi trốn tìm) | 2
-MEET | Gặp (động từ, vd gặp bạn) | 2 | SEE
+MEET | Gặp (động từ, vd gặp bạn) | 2
 NEED | Cần (động từ) | 2 | REQUIRE
-MAKE | Làm ra, tạo ra (động từ, vd làm con diều) | 2 | CREATE, BUILD
+MAKE | Làm ra, tạo ra (động từ, vd làm con diều) | 2 | CREATE
 HEAR | Nghe thấy (động từ, vd nghe thấy tiếng gõ) | 2
-BUILD | Xây (động từ, vd xây nhà) | 2 | CONSTRUCT
-FIX | Sửa chữa (động từ, vd sửa xe) | 2 | REPAIR, MEND
-TRY | Cố gắng, thử (động từ) | 2 | ATTEMPT
+BUILD | Xây (động từ, vd xây nhà) | 2
+FIX | Sửa chữa (động từ, vd sửa xe) | 2
+TRY | Cố gắng, thử (động từ) | 2
 PUSH | Đẩy (động từ, vd đẩy cửa) | 2
-PULL | Kéo (động từ, vd kéo cửa) | 2 | DRAG
+PULL | Kéo (động từ, vd kéo cửa) | 2
 CARRY | Xách, mang vác (động từ, vd xách túi) | 2
 BRING | Mang đến (động từ, vd mang sách đến lớp) | 2
-THROW | Ném (động từ, vd ném bóng) | 2 | TOSS
+THROW | Ném (động từ, vd ném bóng) | 2
 CLIMB | Leo, trèo (động từ, vd leo cây) | 2
 KEEP | Giữ (động từ, vd giữ bí mật) | 2
 INVITE | Mời (động từ, vd mời bạn dự tiệc) | 2
-UNDERSTAND | Hiểu (động từ) | 2 | COMPREHEND
-CHOOSE | Chọn, lựa chọn (động từ) | 2 | PICK, SELECT
+UNDERSTAND | Hiểu (động từ) | 2
+CHOOSE | Chọn, lựa chọn (động từ) | 2
 RETURN | Trở về, quay lại (động từ) | 2 | COME BACK, GO BACK, GET BACK
 TURN ON | Bật (động từ, vd bật đèn) | 2 | SWITCH ON
 TURN OFF | Tắt (động từ, vd tắt đèn) | 2 | SWITCH OFF, SHUT OFF
-HOLD | Cầm, nắm (động từ, vd cầm tay) | 2 | GRIP, GRASP
+HOLD | Cầm, nắm (động từ, vd cầm tay) | 2 | GRIP
 GUESS | Đoán (động từ, vd đoán đáp án) | 2
 COUNT | Đếm (động từ, vd đếm từ 1 đến 10) | 2
-JOIN | Tham gia (động từ, vd tham gia trò chơi) | 2 | TAKE PART, PARTICIPATE
+JOIN | Tham gia (động từ, vd tham gia trò chơi) | 2 | TAKE PART
 REPEAT | Lặp lại, nhắc lại (động từ) | 2
 BECOME | Trở thành (động từ) | 2
 TOUCH | Chạm, sờ (động từ, vd chạm vào màn hình) | 2
-BELIEVE | Tin, tin tưởng (động từ) | 2 | TRUST
+BELIEVE | Tin, tin tưởng (động từ) | 2
 DROP | Đánh rơi (động từ, vd đánh rơi điện thoại) | 3
-LEND | Cho mượn (động từ) | 3 | LOAN
+LEND | Cho mượn (động từ) | 3
 IMAGINE | Tưởng tượng (động từ) | 3
 EXPLAIN | Giải thích (động từ) | 3
 DECIDE | Quyết định (động từ) | 3
-REFUSE | Từ chối (động từ) | 3 | DECLINE, REJECT, TURN DOWN
-ALLOW | Cho phép (động từ) | 3 | LET, PERMIT
-CONTINUE | Tiếp tục (động từ) | 3 | GO ON, CARRY ON, KEEP ON, KEEP GOING, PROCEED
+REFUSE | Từ chối (động từ) | 3
+ALLOW | Cho phép (động từ) | 3 | LET
+CONTINUE | Tiếp tục (động từ) | 3 | KEEP ON, KEEP GOING
 PREPARE | Chuẩn bị (động từ) | 3 | GET READY
-ESCAPE | Trốn thoát (động từ) | 3 | FLEE, RUN AWAY, GET AWAY
+ESCAPE | Trốn thoát (động từ) | 3 | RUN AWAY, GET AWAY
 TRANSLATE | Dịch (động từ, vd dịch sang tiếng Việt) | 3
 HAPPEN | Xảy ra (động từ) | 3 | OCCUR
 PROMISE | Hứa (động từ) | 3
@@ -81,15 +81,15 @@ OLD | Cũ (tính từ, vd quần áo cũ) | 1 | USED
 LONG | Dài (tính từ, vd con đường dài) | 1
 FAST | Nhanh (tính từ) | 1 | QUICK, RAPID, SPEEDY
 SLOW | Chậm (tính từ) | 1
-EASY | Dễ (tính từ) | 1 | SIMPLE
-DIFFICULT | Khó (tính từ) | 1 | HARD, TOUGH
+EASY | Dễ (tính từ) | 1
+DIFFICULT | Khó (tính từ) | 1 | TOUGH
 CLEAN | Sạch (tính từ) | 1
 DIRTY | Bẩn, dơ (tính từ) | 1 | FILTHY
 GOOD | Tốt (tính từ) | 1 | NICE, FINE
 BAD | Tệ, dở (tính từ, vd bộ phim dở) | 1 | TERRIBLE, AWFUL
 FULL | Đầy (tính từ, vd ly nước đầy) | 1
-CORRECT | Đúng (tính từ, vd câu trả lời đúng) | 1 | RIGHT, TRUE
-WRONG | Sai (tính từ, vd câu trả lời sai) | 1 | INCORRECT, FALSE
+CORRECT | Đúng (tính từ, vd câu trả lời đúng) | 1 | TRUE
+WRONG | Sai (tính từ, vd câu trả lời sai) | 1 | FALSE
 DARK | Tối (tính từ, vd căn phòng tối) | 1
 READY | Sẵn sàng (tính từ) | 1 | PREPARED
 NEXT | Tiếp theo (tính từ, vd tuần tiếp theo) | 1 | FOLLOWING
@@ -97,12 +97,12 @@ EMPTY | Rỗng, trống (tính từ, vd hộp rỗng) | 2 | VACANT
 HEAVY | Nặng (tính từ) | 2
 LIGHT | Nhẹ (tính từ, vd cái túi nhẹ) | 2
 NOISY | Ồn ào (tính từ) | 2 | LOUD
-QUIET | Yên tĩnh (tính từ) | 2 | SILENT, CALM, PEACEFUL
-DANGEROUS | Nguy hiểm (tính từ) | 2 | UNSAFE, HAZARDOUS
+QUIET | Yên tĩnh (tính từ) | 2 | SILENT, PEACEFUL
+DANGEROUS | Nguy hiểm (tính từ) | 2 | UNSAFE
 WIDE | Rộng (tính từ, vd con đường rộng) | 2 | BROAD
 NARROW | Hẹp (tính từ, vd con hẻm hẹp) | 2
 DEEP | Sâu (tính từ, vd hồ nước sâu) | 2
-SAME | Giống nhau, như nhau (tính từ) | 2 | ALIKE, SIMILAR, IDENTICAL
+SAME | Giống nhau, như nhau (tính từ) | 2 | ALIKE
 DIFFERENT | Khác nhau (tính từ) | 2
 IMPORTANT | Quan trọng (tính từ) | 2
 USEFUL | Có ích, hữu ích (tính từ) | 2 | HELPFUL
@@ -111,25 +111,25 @@ NORMAL | Bình thường (tính từ) | 2 | ORDINARY, USUAL, REGULAR
 STRANGE | Kỳ lạ (tính từ) | 2 | WEIRD, ODD, UNUSUAL, BIZARRE
 THICK | Dày (tính từ, vd quyển sách dày) | 2
 SPECIAL | Đặc biệt (tính từ) | 2
-BRIGHT | Sáng sủa (tính từ, vd căn phòng sáng) | 2 | LIGHT
-HARD | Cứng (tính từ, vd hòn đá cứng) | 2 | SOLID, FIRM
+BRIGHT | Sáng sủa (tính từ, vd căn phòng sáng) | 2
+HARD | Cứng (tính từ, vd hòn đá cứng) | 2 | SOLID
 SOFT | Mềm (tính từ, vd cái gối mềm) | 2
 BROKEN | Hỏng, vỡ (tính từ, vd điện thoại hỏng) | 2 | DAMAGED
-CROWDED | Đông đúc (tính từ, vd chợ đông) | 2 | PACKED, BUSY
-SIMPLE | Đơn giản (tính từ) | 2 | EASY, BASIC, PLAIN
-REAL | Thật, không giả (tính từ, vd tiền thật) | 2 | GENUINE, AUTHENTIC
+CROWDED | Đông đúc (tính từ, vd chợ đông) | 2 | PACKED
+SIMPLE | Đơn giản (tính từ) | 2 | BASIC, PLAIN
+REAL | Thật, không giả (tính từ, vd tiền thật) | 2
 FAKE | Giả (tính từ, vd tiền giả) | 2 | COUNTERFEIT
 SHALLOW | Nông, cạn (tính từ, vd hồ nước nông) | 3
-POSSIBLE | Có thể, khả thi (tính từ) | 3 | FEASIBLE
+POSSIBLE | Có thể, khả thi (tính từ) | 3
 IMPOSSIBLE | Không thể, bất khả thi (tính từ) | 3
-NECESSARY | Cần thiết (tính từ) | 3 | ESSENTIAL, NEEDED
+NECESSARY | Cần thiết (tính từ) | 3 | NEEDED
 USELESS | Vô dụng (tính từ, vd món đồ vô dụng) | 3
 PUBLIC | Công cộng (tính từ, vd xe buýt công cộng) | 3
 PRIVATE | Riêng (tính từ, vd phòng riêng) | 3 | PERSONAL, OWN
 COMPLICATED | Phức tạp (tính từ) | 3 | COMPLEX
 COMFORTABLE | Êm, thoải mái (tính từ, vd ghế êm) | 3 | COMFY, COZY, COSY
 AVAILABLE | Có sẵn, còn hàng (tính từ) | 3
-RARE | Hiếm (tính từ) | 3 | UNCOMMON, SCARCE
+RARE | Hiếm (tính từ) | 3 | UNCOMMON
 SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) | 3
 ROUGH | Thô ráp, sần sùi (tính từ) | 3 | COARSE
 ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3
@@ -190,304 +190,304 @@ CHEW | Nhai kỹ thức ăn bằng răng hàm trước khi nuốt | 1
 FLOAT | Nổi bồng bềnh lơ lửng trên mặt nước không bị chìm | 1
 CRAWL | Động tác bò lê bò toài của em bé trên sàn nhà | 1
 STROLL | Hành động đi tản bộ thong dong thảnh thơi ngắm cảnh công viên | 2
-ABANDON | Từ bỏ hoặc ruồng bỏ ai đó | 2 | DESERT
+ABANDON | Từ bỏ hoặc ruồng bỏ ai đó | 2
 ABSORB | Hấp thụ chất lỏng hoặc tiếp thu kiến thức | 2 | SOAK UP
-ACKNOWLEDGE | Thừa nhận sự thật hoặc công nhận công lao | 2 | ADMIT
-ACQUIRE | Giành được, thu được hoặc mua lại công ty | 2 | OBTAIN
+ACKNOWLEDGE | Thừa nhận sự thật hoặc công nhận công lao | 2
+ACQUIRE | Giành được, thu được hoặc mua lại công ty | 2
 ADAPT | Thích nghi với hoàn cảnh môi trường mới | 2 | ADJUST
-AFFECT | Gây ảnh hưởng hoặc tác động trực tiếp đến | 2 | INFLUENCE
+AFFECT | Gây ảnh hưởng hoặc tác động trực tiếp đến | 2
 AFFORD | Có đủ khả năng chi trả tiền bạc mua sắm | 1
 AGGRAVATE | Làm trầm trọng thêm tình hình xấu | 3 | WORSEN
-ALTER | Thay đổi hoặc sửa đổi một chút kích thước | 2 | MODIFY
-AMUSE | Làm cho ai đó bật cười vui vẻ | 2 | ENTERTAIN
-ANALYZE | Phân tích số liệu và dữ liệu chi tiết | 2 | EXAMINE
+ALTER | Thay đổi hoặc sửa đổi một chút kích thước | 2
+AMUSE | Làm cho ai đó bật cười vui vẻ | 2
+ANALYZE | Phân tích số liệu và dữ liệu chi tiết | 2
 ANTICIPATE | Dự đoán trước và mong đợi điều sắp xảy ra | 2 | FORESEE
 APOLOGIZE | Nói lời xin lỗi chân thành với ai đó | 1 | SAY SORRY, APOLOGISE
 APPLAUD | Vỗ tay khen ngợi tán thưởng | 2 | CLAP
 ARISE | Nảy sinh hoặc xuất hiện vấn đề bất ngờ | 2 | OCCUR
-ARREST | Bắt giữ nghi phạm tội phạm | 2 | APPREHEND
-ASCEND | Đi lên cao hoặc trèo lên bậc thang | 3 | CLIMB
-ASSESS | Đánh giá mức độ hoặc thẩm định giá trị | 2 | EVALUATE
+ARREST | Bắt giữ nghi phạm tội phạm | 2
+ASCEND | Đi lên cao hoặc trèo lên bậc thang | 3
+ASSESS | Đánh giá mức độ hoặc thẩm định giá trị | 2
 ASSIGN | Phân công nhiệm vụ hoặc giao bài tập | 2 | ALLOT
 ASSUME | Giả định hoặc cho rằng điều gì là đúng | 2 | PRESUME
 ATTACH | Đính kèm tệp tin hoặc gắn chặt vào | 2 | APPEND
-ATTEMPT | Cố gắng hoặc nỗ lực thử làm điều khó | 2 | TRY
-ATTRACT | Thu hút sự chú ý hoặc lôi cuốn ánh nhìn | 1 | DRAW
+ATTEMPT | Cố gắng hoặc nỗ lực thử làm điều khó | 2
+ATTRACT | Thu hút sự chú ý hoặc lôi cuốn ánh nhìn | 1
 AVOID | Tránh né hoặc né tránh gặp mặt rắc rối | 1 | SHUN
 BEG | Van xin hoặc cầu xin tha thứ | 1 | PLEAD
 BELONG | Thuộc về sở hữu của một ai đó | 1
 BEND | Uốn cong hoặc cúi gập người xuống | 1 | FLEX
 BETRAY | Phản bội niềm tin hoặc phản quốc | 2
 BOAST | Khoe khoang khoác lác về bản thân | 2 | BRAG
-BOUNCE | Nảy lên tưng tưng như quả bóng | 1 | REBOUND
+BOUNCE | Nảy lên tưng tưng như quả bóng | 1
 BRAKE | Đạp phanh hãm tốc độ xe dừng lại | 1
 BRIBE | Đút lót hối lộ tiền bạc phi pháp | 2
 BURY | Chôn cất thi thể hoặc chôn giấu dưới lòng đất | 1 | INTER
 CALCULATE | Tính toán con số chính xác | 2 | COMPUTE
-CAPTURE | Bắt giữ giam cầm hoặc ghi lại khoảnh khắc | 2 | CATCH
-CEASE | Ngừng lại hoặc chấm dứt hoạt động | 3 | STOP
+CAPTURE | Bắt giữ giam cầm hoặc ghi lại khoảnh khắc | 2
+CEASE | Ngừng lại hoặc chấm dứt hoạt động | 3
 CIRCULATE | Lưu thông tuần hoàn trong huyết quản | 2
-CLARIFY | Làm rõ và giải thích cặn kẽ khúc mắc | 2 | EXPLAIN
-COLLIDE | Va chạm tông sầm vào nhau | 2 | CRASH
-COMBINE | Kết hợp hoặc hoà trộn nhiều yếu tố | 2 | MERGE
-COMMAND | Ra lệnh chỉ huy quân đội | 2 | ORDER
-COMPEL | Bắt buộc hoặc cưỡng ép ai làm theo | 3 | FORCE
+CLARIFY | Làm rõ và giải thích cặn kẽ khúc mắc | 2
+COLLIDE | Va chạm tông sầm vào nhau | 2
+COMBINE | Kết hợp hoặc hoà trộn nhiều yếu tố | 2
+COMMAND | Ra lệnh chỉ huy quân đội | 2
+COMPEL | Bắt buộc hoặc cưỡng ép ai làm theo | 3
 COMPETE | Cạnh tranh ganh đua tài năng | 2 | VIE
 COMPLAIN | Phàn nàn kêu ca về chất lượng kém | 1 | GRUMBLE
-CONCLUDE | Kết luận đúc rút ra bài học | 2 | FINISH
-CONFESS | Thú nhận tội lỗi hoặc thú tội | 2 | ADMIT
-CONFUSE | Làm cho bối rối hoang mang nhầm lẫn | 2 | PUZZLE
-CONQUER | Chinh phục vùng đất hoặc chiến thắng nỗi sợ | 2 | DEFEAT
-CONSENT | Đồng ý ưng thuận cho phép | 2 | AGREE
-CONSERVE | Bảo tồn giữ gìn nguồn tài nguyên | 2 | PRESERVE
-CONSIDER | Cân nhắc suy xét kỹ lưỡng | 2 | WEIGH
-CONSTRUCT | Xây dựng công trình nhà cửa cầu đường | 2 | BUILD
+CONCLUDE | Kết luận đúc rút ra bài học | 2
+CONFESS | Thú nhận tội lỗi hoặc thú tội | 2
+CONFUSE | Làm cho bối rối hoang mang nhầm lẫn | 2
+CONQUER | Chinh phục vùng đất hoặc chiến thắng nỗi sợ | 2
+CONSENT | Đồng ý ưng thuận cho phép | 2
+CONSERVE | Bảo tồn giữ gìn nguồn tài nguyên | 2
+CONSIDER | Cân nhắc suy xét kỹ lưỡng | 2
+CONSTRUCT | Xây dựng công trình nhà cửa cầu đường | 2
 CONSULT | Hỏi ý kiến tham khảo chuyên gia | 2 | SEEK ADVICE
 CONSUME | Tiêu thụ năng lượng hoặc ăn uống hết | 2 | USE UP
-CONTAIN | Chứa đựng bao gồm bên trong | 1 | HOLD
-CONTRIBUTE | Đóng góp cống hiến công sức tiền của | 2 | DONATE
-CONVINCE | Thuyết phục ai tin theo mình | 2 | PERSUADE
-COOPERATE | Hợp tác chung tay làm việc | 2 | COLLABORATE
+CONTAIN | Chứa đựng bao gồm bên trong | 1
+CONTRIBUTE | Đóng góp cống hiến công sức tiền của | 2
+CONVINCE | Thuyết phục ai tin theo mình | 2
+COOPERATE | Hợp tác chung tay làm việc | 2
 CRITICIZE | Chỉ trích phê bình khuyết điểm | 2 | BLAME, CRITICISE
-DAMAGE | Làm hư hại tổn thất đồ vật tài sản | 1 | HARM
+DAMAGE | Làm hư hại tổn thất đồ vật tài sản | 1
 DEBATE | Tranh luận biện luận một vấn đề mở | 2 | DISCUSS
 DECAY | Mục nát hoặc sâu răng phân huỷ | 2 | ROT
 DECLARE | Tuyên bố công khai trước mọi người | 2 | ANNOUNCE
 DECORATE | Trang trí làm đẹp căn phòng | 1 | ADORN
-DEDICATE | Cống hiến và tận tụy cả đời cho sự nghiệp | 2 | DEVOTE
-DEFEND | Bảo vệ phòng thủ chống lại kẻ thù | 1 | PROTECT
+DEDICATE | Cống hiến và tận tụy cả đời cho sự nghiệp | 2
+DEFEND | Bảo vệ phòng thủ chống lại kẻ thù | 1
 DEFINE | Định nghĩa giải thích ý nghĩa từ ngữ | 2
-DEPEND | Phụ thuộc dựa dẫm vào người khác | 1 | RELY
+DEPEND | Phụ thuộc dựa dẫm vào người khác | 1
 DEPRIVE | Tước đoạt quyền lợi của ai đó | 3 | STRIP
 DESCRIBE | Mô tả miêu tả hình dáng cảnh vật | 1 | PICTURE
 DESERVE | Xứng đáng nhận được phần thưởng | 2 | MERIT
 DESTROY | Phá huỷ triệt phá tan hoang | 1 | RUIN
 DETECT | Dò tìm phát hiện ra dấu vết | 2 | DISCOVER
-DEVOTE | Dành hết tâm huyết cho việc gì | 2 | DEDICATE
+DEVOTE | Dành hết tâm huyết cho việc gì | 2
 DIAGNOSE | Chẩn đoán bệnh tình của bệnh nhân | 2
 DIGEST | Tiêu hoá thức ăn trong dạ dày | 2
-DIMINISH | Giảm bớt suy giảm dần đi | 2 | DECREASE
+DIMINISH | Giảm bớt suy giảm dần đi | 2
 DISAPPOINT | Làm thất vọng không đạt kỳ vọng | 2 | LET DOWN
-DISCLOSE | Tiết lộ vạch trần bí mật ra ngoài | 3 | REVEAL
-DISMISS | Sa thải đuổi việc hoặc giải tán | 2 | FIRE
+DISCLOSE | Tiết lộ vạch trần bí mật ra ngoài | 3
+DISMISS | Sa thải đuổi việc hoặc giải tán | 2
 DISOBEY | Bất tuân không phục tùng mệnh lệnh | 2 | DEFY
-DISPLAY | Trưng bày phô diễn cho mọi người xem | 1 | EXHIBIT
+DISPLAY | Trưng bày phô diễn cho mọi người xem | 1
 DISTINGUISH | Phân biệt nhận ra điểm khác nhau | 2 | DIFFERENTIATE
 DISTRIBUTE | Phân phát chia đều cho mọi người | 2 | HAND OUT
 DISTURB | Làm phiền quấy rầy sự yên tĩnh | 2 | BOTHER
 DIVERT | Chuyển hướng làm trệch hướng đi | 2 | REDIRECT
-DIVIDE | Chia rẽ chia nhỏ thành nhiều phần | 1 | SPLIT
-DRAG | Kéo lê vật nặng trên mặt đất | 1 | PULL
+DIVIDE | Chia rẽ chia nhỏ thành nhiều phần | 1
+DRAG | Kéo lê vật nặng trên mặt đất | 1
 DROWN | Chết đuối ngạt nước dưới sông | 1
-DUPLICATE | Sao chép nhân bản thành hai bản y hệt | 2 | COPY
-EDUCATE | Giáo dục rèn luyện dạy dỗ học sinh | 1 | TEACH
+DUPLICATE | Sao chép nhân bản thành hai bản y hệt | 2
+EDUCATE | Giáo dục rèn luyện dạy dỗ học sinh | 1
 ELIMINATE | Loại bỏ trừ khử hoàn toàn | 2 | REMOVE
 EMERGE | Nổi lên xuất hiện từ bóng tối | 2 | APPEAR
-EMPHASIZE | Nhấn mạnh tầm quan trọng | 2 | STRESS, EMPHASISE
-ENABLE | Cho phép tạo điều kiện có thể làm được | 2 | ALLOW
-ENCOUNTER | Bắt gặp chạm trán tình cờ | 2 | MEET
-ENDURE | Chịu đựng cam chịu gian khó | 2 | BEAR
+EMPHASIZE | Nhấn mạnh tầm quan trọng | 2 | EMPHASISE
+ENABLE | Cho phép tạo điều kiện có thể làm được | 2
+ENCOUNTER | Bắt gặp chạm trán tình cờ | 2
+ENDURE | Chịu đựng cam chịu gian khó | 2
 ENJOY | Thưởng thức tận hưởng niềm vui | 1 | RELISH
-ENTERTAIN | Giải trí chiêu đãi mua vui | 1 | AMUSE
+ENTERTAIN | Giải trí chiêu đãi mua vui | 1
 ENVY | Ghen tị đố kỵ với may mắn của người khác | 2 | BE JEALOUS
 EQUIP | Trang bị đầy đủ dụng cụ đồ nghề | 2 | FURNISH
-ESTIMATE | Ước tính ước lượng chi phí | 2 | GUESS
+ESTIMATE | Ước tính ước lượng chi phí | 2
 EVAPORATE | Bay hơi bốc hơi thành thể khí | 2
-EXAMINE | Khám xét kiểm tra soi xét kỹ | 2 | INSPECT
+EXAMINE | Khám xét kiểm tra soi xét kỹ | 2
 EXCLUDE | Loại trừ không tính vào danh sách | 2 | LEAVE OUT
-EXCUSE | Tha thứ bỏ qua thứ lỗi | 1 | FORGIVE
-EXHAUST | Làm kiệt sức mệt lử cạn kiệt | 2 | DRAIN
-EXIST | Tồn tại hiện hữu trên đời | 1 | LIVE
-EXPAND | Mở rộng diện tích bành trướng quy mô | 2 | EXTEND
+EXCUSE | Tha thứ bỏ qua thứ lỗi | 1
+EXHAUST | Làm kiệt sức mệt lử cạn kiệt | 2
+EXIST | Tồn tại hiện hữu trên đời | 1
+EXPAND | Mở rộng diện tích bành trướng quy mô | 2
 EXPLODE | Phát nổ nổ tung dữ dội | 1 | BURST
 EXPOSE | Phơi bày vạch trần ra ánh sáng | 2 | UNCOVER
-EXTEND | Kéo dài thời hạn hoặc mở rộng thêm | 2 | STRETCH
+EXTEND | Kéo dài thời hạn hoặc mở rộng thêm | 2
 EXTRACT | Chiết xuất hoặc nhổ răng ra ngoài | 2 | PULL OUT
-FASTEN | Cài chặt buộc chặt dây thừng | 2 | TIE
-FLATTER | Nịnh nọt tâng bốc lấy lòng | 2 | PRAISE
+FASTEN | Cài chặt buộc chặt dây thừng | 2
+FLATTER | Nịnh nọt tâng bốc lấy lòng | 2
 FLEE | Tháo chạy chạy trốn nguy hiểm | 2 | RUN AWAY
-FORBID | Cấm đoán ngăn cấm không cho làm | 2 | BAN
+FORBID | Cấm đoán ngăn cấm không cho làm | 2
 FREEZE | Đóng băng đông cứng thành đá | 1
-FRIGHTEN | Làm hoảng sợ khiếp sợ | 1 | SCARE
+FRIGHTEN | Làm hoảng sợ khiếp sợ | 1
 GATHER | Tụ tập tụ họp lại một chỗ | 1 | COLLECT
-GAZE | Nhìn chằm chằm say đắm ngắm nghía | 2 | STARE
-GENERATE | Tạo ra phát ra nguồn điện năng lượng | 2 | PRODUCE
+GAZE | Nhìn chằm chằm say đắm ngắm nghía | 2
+GENERATE | Tạo ra phát ra nguồn điện năng lượng | 2
 GLANCE | Liếc mắt nhìn thoáng qua một cái | 2 | PEEK
 GOVERN | Cai trị lãnh đạo quản lý đất nước | 2 | RULE
 GRAB | Túm lấy chộp lấy giật lấy nhanh | 1 | SEIZE
 GREET | Chào hỏi đón chào khách đến nhà | 1 | WELCOME
 GRUNT | Càu nhàu cằn nhằn làu bàu | 2
-HARM | Gây hại tổn thương đau đớn | 1 | DAMAGE
+HARM | Gây hại tổn thương đau đớn | 1
 HARVEST | Thu hoạch mùa màng gặt lúa hái quả | 1 | REAP
-HEAL | Hàn gắn chữa lành vết thương | 1 | CURE
-HINT | Gợi ý ra dấu ám chỉ ngầm | 1 | SUGGEST
-HONOR | Tôn vinh kính trọng vinh danh | 1 | RESPECT, HONOUR
+HEAL | Hàn gắn chữa lành vết thương | 1
+HINT | Gợi ý ra dấu ám chỉ ngầm | 1
+HONOR | Tôn vinh kính trọng vinh danh | 1 | HONOUR
 HUNT | Săn bắn thú rừng săn tìm con mồi | 1 | CHASE
-IDENTIFY | Nhận dạng xác minh danh tính | 2 | RECOGNIZE
+IDENTIFY | Nhận dạng xác minh danh tính | 2
 IGNORE | Phớt lờ làm ngơ không đoái hoài | 1 | DISREGARD
 ILLUSTRATE | Minh hoạ giải thích bằng tranh ảnh | 2 | DEPICT
-IMITATE | Bắt chước nhại lại hành động | 2 | MIMIC
-IMPLY | Ngụ ý hàm ý bóng gió | 2 | HINT
+IMITATE | Bắt chước nhại lại hành động | 2
+IMPLY | Ngụ ý hàm ý bóng gió | 2
 IMPORT | Nhập khẩu hàng hoá từ nước ngoài về | 1
 IMPOSE | Áp đặt áp thuế luật lệ lên ai | 2
 IMPRESS | Gây ấn tượng sâu sắc trong lòng | 1
-INCLUDE | Bao gồm tính gộp cả vào trong | 1 | CONTAIN
-INDICATE | Chỉ ra biểu thị dấu hiệu cho thấy | 2 | SHOW
+INCLUDE | Bao gồm tính gộp cả vào trong | 1
+INDICATE | Chỉ ra biểu thị dấu hiệu cho thấy | 2
 INFORM | Thông báo báo tin cho ai biết | 1 | NOTIFY
 INHERIT | Thừa kế tài sản hưởng gia tài | 2
-INJURE | Làm bị thương tổn thương thân thể | 1 | HURT
+INJURE | Làm bị thương tổn thương thân thể | 1
 INSIST | Khăng khăng nài nỉ kiên quyết | 2
-INSPIRE | Truyền cảm hứng khơi nguồn sáng tạo | 2 | MOTIVATE
-INSTRUCT | Chỉ dẫn hướng dẫn chi tiết các bước | 2 | GUIDE
-INSULT | Lăng mạ sỉ nhục xúc phạm danh dự | 2 | OFFEND
+INSPIRE | Truyền cảm hứng khơi nguồn sáng tạo | 2
+INSTRUCT | Chỉ dẫn hướng dẫn chi tiết các bước | 2
+INSULT | Lăng mạ sỉ nhục xúc phạm danh dự | 2
 INTEND | Có ý định dự định thực hiện | 1 | PLAN
 INTERFERE | Can thiệp xen vào chuyện người khác | 2 | MEDDLE
 INTERRUPT | Ngắt lời xen ngang phá vỡ | 1 | CUT IN
-INVESTIGATE | Điều tra truy xét vụ án | 2 | PROBE
-INVOLVE | Liên quan dính líu bao hàm | 2 | ENGAGE
+INVESTIGATE | Điều tra truy xét vụ án | 2
+INVOLVE | Liên quan dính líu bao hàm | 2
 IRRITATE | Làm phát cáu khó chịu ngứa ngáy | 2 | ANNOY
-ISOLATE | Cô lập cách ly một mình | 2 | SEPARATE
+ISOLATE | Cô lập cách ly một mình | 2
 KNEEL | Quỳ gối xuống đất cầu xin | 1
 KNIT | Đan len bằng que đan | 1
-KNOCK | Gõ cốc cốc vào cửa | 1 | RAP
+KNOCK | Gõ cốc cốc vào cửa | 1
 LEAN | Tựa vào dựa vào nghiêng người | 1
-LOCATE | Định vị xác định vị trí nằm ở đâu | 2 | FIND
+LOCATE | Định vị xác định vị trí nằm ở đâu | 2
 LOOSEN | Nới lỏng cởi bớt dây buộc thắt chặt | 2 | UNTIE
 MANAGE | Quản lý xoay xở giải quyết thành công | 1 | HANDLE
 MEASURE | Đo đạc kích thước chiều dài cân nặng | 1 | GAUGE
 MELT | Tan chảy ra dưới sức nóng mặt trời | 1 | THAW
-MEMORIZE | Học thuộc lòng ghi nhớ vào đầu | 1 | LEARN BY HEART, MEMORISE
-MEND | Sửa chữa vá víu đồ rách hỏng | 2 | REPAIR
-MENTION | Đề cập nhắc đến ai trong cuộc trò chuyện | 1 | BRING UP
+MEMORIZE | Học thuộc lòng ghi nhớ vào đầu | 1 | MEMORISE
+MEND | Sửa chữa vá víu đồ rách hỏng | 2
+MENTION | Đề cập nhắc đến ai trong cuộc trò chuyện | 1
 MIGRATE | Di cư tránh rét của loài chim | 2
 MISLEAD | Đưa ra thông tin sai lệch dẫn dắt lừa dối | 2 | DECEIVE
-MODIFY | Sửa đổi điều chỉnh cho phù hợp | 2 | ALTER
-MOTIVATE | Thúc đẩy tạo động lực mạnh mẽ | 2 | INSPIRE
-MOURN | Thương tiếc đau buồn để tang | 2 | GRIEVE
+MODIFY | Sửa đổi điều chỉnh cho phù hợp | 2
+MOTIVATE | Thúc đẩy tạo động lực mạnh mẽ | 2
+MOURN | Thương tiếc đau buồn để tang | 2
 MULTIPLY | Nhân lên gấp bội sinh sôi | 2
-NEGLECT | Bỏ bê sao nhãng không chăm sóc | 2 | IGNORE
+NEGLECT | Bỏ bê sao nhãng không chăm sóc | 2
 NOTICE | Để ý nhận thấy chú ý đến | 1 | SPOT
 OBEY | Vâng lời nghe lời tuân theo | 1 | COMPLY
-OBSERVE | Quan sát theo dõi chăm chú | 2 | WATCH
+OBSERVE | Quan sát theo dõi chăm chú | 2
 OBTAIN | Đạt được giành lấy được | 2 | GET
-OCCUPY | Chiếm đóng chiếm giữ không gian | 2 | TAKE UP
-OFFEND | Xúc phạm làm mất lòng ai | 2 | INSULT
-OPERATE | Vận hành máy móc hoặc phẫu thuật | 2 | RUN
-OPPOSE | Đối kháng kịch liệt phản đối | 2 | RESIST
+OCCUPY | Chiếm đóng chiếm giữ không gian | 2
+OFFEND | Xúc phạm làm mất lòng ai | 2
+OPERATE | Vận hành máy móc hoặc phẫu thuật | 2
+OPPOSE | Đối kháng kịch liệt phản đối | 2
 ORGANIZE | Tổ chức sắp xếp trật tự bài bản | 1 | ARRANGE, ORGANISE
-OVERCOME | Vượt qua thử thách nghịch cảnh | 2 | CONQUER
-OVERLOOK | Bỏ qua tha thứ hoặc nhìn từ trên cao xuống | 2 | MISS
+OVERCOME | Vượt qua thử thách nghịch cảnh | 2
+OVERLOOK | Bỏ qua tha thứ hoặc nhìn từ trên cao xuống | 2
 OWE | Mắc nợ mang ơn ai điều gì | 1 | BE IN DEBT
 PARTICIPATE | Tham gia vào một sự kiện | 2 | JOIN IN
 PERISH | Diệt vong chết chóc biến mất | 3 | DIE
 PINCH | Véo véo nhéo vào da thịt | 1 | NIP
-POUR | Rót nước đổ nước vào bình | 1 | SPILL
+POUR | Rót nước đổ nước vào bình | 1
 PRAISE | Tán dương ca ngợi khen ngợi hết lời | 1 | COMMEND
-PRAY | Cầu nguyện chắp tay xin bình an | 1 | WISH
-PREDICT | Dự đoán trước tương lai | 2 | FORECAST
+PRAY | Cầu nguyện chắp tay xin bình an | 1
+PREDICT | Dự đoán trước tương lai | 2
 PREFER | Thích hơn ưu tiên hơn | 1 | FAVOR
-PRESERVE | Bảo quản gìn giữ nguyên vẹn | 2 | KEEP
-PRETEND | Giả vờ đóng kịch như thật | 1 | FAKE
-PREVENT | Ngăn chặn phòng ngừa rủi ro | 2 | STOP
-PROCEED | Tiếp tục tiến hành bước kế tiếp | 2 | GO ON
-PRODUCE | Sản xuất chế tạo ra hàng hoá | 1 | MAKE
-PROHIBIT | Nghiêm cấm cấm đoán ngặt nghèo | 2 | FORBID
+PRESERVE | Bảo quản gìn giữ nguyên vẹn | 2
+PRETEND | Giả vờ đóng kịch như thật | 1
+PREVENT | Ngăn chặn phòng ngừa rủi ro | 2
+PROCEED | Tiếp tục tiến hành bước kế tiếp | 2
+PRODUCE | Sản xuất chế tạo ra hàng hoá | 1
+PROHIBIT | Nghiêm cấm cấm đoán ngặt nghèo | 2
 PROMOTE | Thăng chức hoặc quảng bá thương hiệu | 2 | ADVANCE
-PROVE | Chứng minh tính đúng đắn | 2 | VERIFY
-PROVIDE | Cung cấp tiếp tế đồ dùng lương thực | 1 | SUPPLY
-PUBLISH | Xuất bản sách hoặc công bố công khai | 2 | RELEASE
+PROVE | Chứng minh tính đúng đắn | 2
+PROVIDE | Cung cấp tiếp tế đồ dùng lương thực | 1
+PUBLISH | Xuất bản sách hoặc công bố công khai | 2
 PUNISH | Xử phạt trừng trị răn đe | 1 | PENALIZE
 PURSUE | Theo đuổi ước mơ đam mê | 2 | CHASE
-QUARREL | Cãi cọ xích mích lời qua tiếng lại | 2 | ARGUE
+QUARREL | Cãi cọ xích mích lời qua tiếng lại | 2
 REACH | Vươn tới với tới hoặc chạm tới đích | 1 | ATTAIN
 REACT | Phản ứng lại trước tình huống | 1 | RESPOND
-RECOGNIZE | Nhận ra người quen sau nhiều năm | 1 | IDENTIFY, RECOGNISE
+RECOGNIZE | Nhận ra người quen sau nhiều năm | 1 | RECOGNISE
 RECOMMEND | Tiến cử khuyên dùng giới thiệu | 2 | ADVISE
 REDUCE | Cắt giảm hạ bớt chi phí | 1 | LOWER
-REFLECT | Phản chiếu hình ảnh hoặc ngẫm nghĩ suy ngẫm | 2 | MIRROR
-REGRET | Hối hận tiếc nuối những gì đã qua | 1 | LAMENT
-REJECT | Bác bỏ từ chối thẳng thừng | 2 | TURN DOWN
-RELY | Dựa dẫm tin cậy trông cậy vào | 1 | DEPEND
+REFLECT | Phản chiếu hình ảnh hoặc ngẫm nghĩ suy ngẫm | 2
+REGRET | Hối hận tiếc nuối những gì đã qua | 1
+REJECT | Bác bỏ từ chối thẳng thừng | 2
+RELY | Dựa dẫm tin cậy trông cậy vào | 1
 REMAIN | Còn lại giữ nguyên trạng thái cũ | 2 | STAY
-REMIND | Nhắc nhở nhắc cho nhớ | 1 | PROMPT
-REPLACE | Thay thế vật cũ bằng cái mới | 1 | SUBSTITUTE
-RESCUE | Giải cứu cứu hộ người bị nạn | 1 | SAVE
-RESIST | Kháng cự chống lại cám dỗ | 2 | OPPOSE
-RESOLVE | Giải quyết dứt điểm mâu thuẫn | 2 | SETTLE
+REMIND | Nhắc nhở nhắc cho nhớ | 1
+REPLACE | Thay thế vật cũ bằng cái mới | 1
+RESCUE | Giải cứu cứu hộ người bị nạn | 1
+RESIST | Kháng cự chống lại cám dỗ | 2
+RESOLVE | Giải quyết dứt điểm mâu thuẫn | 2
 RESTRICT | Giới hạn thắt chặt hạn chế phạm vi | 2 | LIMIT
-REVEAL | Bật mí hé lộ sự thật bí ẩn | 2 | DISCLOSE
+REVEAL | Bật mí hé lộ sự thật bí ẩn | 2
 REVENGE | Báo thù trả thù mối hận | 2 | AVENGE
 REVERSE | Đảo ngược lùi xe quay ngược lại | 2 | INVERT
-ROB | Cướp giật trấn lột tài sản | 1 | MUG
-ROTATE | Quay tròn xoay vòng quanh trục | 2 | SPIN
+ROB | Cướp giật trấn lột tài sản | 1
+ROTATE | Quay tròn xoay vòng quanh trục | 2
 RUB | Xoa bóp chà xát cọ xát | 1 | SCRUB
 SATISFY | Làm hài lòng thoả mãn yêu cầu | 2 | PLEASE
-SCARE | Làm cho sợ hãi hết hồn | 1 | FRIGHTEN
-SCATTER | Rải rác vương vãi khắp nơi | 2 | DISPERSE
+SCARE | Làm cho sợ hãi hết hồn | 1
+SCATTER | Rải rác vương vãi khắp nơi | 2
 SCOLD | La mắng quở trách đứa trẻ | 1 | CHIDE
-SCRATCH | Cào xước gãi ngứa cào cấu | 1 | CLAW
-SEEK | Tìm kiếm kiếm tìm cơ hội | 2 | SEARCH
-SELECT | Chọn lọc kỹ càng lựa chọn | 1 | CHOOSE
-SEPARATE | Tách rời phân chia cách ly | 1 | DIVIDE
+SCRATCH | Cào xước gãi ngứa cào cấu | 1
+SEEK | Tìm kiếm kiếm tìm cơ hội | 2
+SELECT | Chọn lọc kỹ càng lựa chọn | 1
+SEPARATE | Tách rời phân chia cách ly | 1
 SERVE | Phục vụ bưng bê dọn món | 1 | WAIT ON
 SETTLE | Định cư sinh sống ổn định hoặc hoà giải | 2
-SHIVER | Rùng mình run rẩy vì rét | 2 | TREMBLE
-SHRINK | Co lại rút bớt vải sau khi giặt | 2 | CONTRACT
+SHIVER | Rùng mình run rẩy vì rét | 2
+SHRINK | Co lại rút bớt vải sau khi giặt | 2
 SLAP | Tát bạt tai vào má | 1 | SMACK
-SLIDE | Trượt dài trên sàn trơn trượt tuyết | 1 | GLIDE
-SLIP | Trượt chân ngã trượt ngã | 1 | TRIP
-SMASH | Đập vỡ tan tành thành từng mảnh | 2 | BREAK
+SLIDE | Trượt dài trên sàn trơn trượt tuyết | 1
+SLIP | Trượt chân ngã trượt ngã | 1
+SMASH | Đập vỡ tan tành thành từng mảnh | 2
 SOAK | Ngâm ướt sũng trong chậu nước | 2 | STEEP
-SOLVE | Giải quyết bài toán tháo gỡ vấn đề | 1 | RESOLVE
-SPARE | Để dành tiết kiệm hoặc tha mạng cho | 2 | SAVE
+SOLVE | Giải quyết bài toán tháo gỡ vấn đề | 1
+SPARE | Để dành tiết kiệm hoặc tha mạng cho | 2
 SPARKLE | Lấp lánh toả sáng lóng lánh | 1 | GLITTER
-SPILL | Đổ tràn làm sánh nước canh ra bàn | 1 | POUR
-SPIN | Xoay tít quay mòng mòng tròn vo | 1 | ROTATE
+SPILL | Đổ tràn làm sánh nước canh ra bàn | 1
+SPIN | Xoay tít quay mòng mòng tròn vo | 1
 SPIT | Nhổ nước bọt khạc nhổ | 1
-SPLIT | Chẻ đôi nứt toác chia rẽ | 1 | DIVIDE
+SPLIT | Chẻ đôi nứt toác chia rẽ | 1
 SPOIL | Làm hư hỏng thức ăn ôi thiu hoặc nuông chiều hư | 2 | RUIN
-SPREAD | Lan truyền lan toả lan rộng phết bơ | 1 | EXPAND
-SQUEEZE | Vắt chanh bóp chặt ép chặt | 1 | PRESS
-STARE | Nhìn chằm chằm không chớp mắt | 1 | GAZE
+SPREAD | Lan truyền lan toả lan rộng phết bơ | 1
+SQUEEZE | Vắt chanh bóp chặt ép chặt | 1
+STARE | Nhìn chằm chằm không chớp mắt | 1
 STEAL | Ăn cắp lấy trộm lén lút | 1 | THIEVE
-STIR | Khuấy đều thìa cà phê đánh tan | 1 | MIX
-STRUGGLE | Vật lộn chật vật đấu tranh gian khổ | 2 | FIGHT
-STUMBLE | Vấp ngã vấp chân loạng choạng | 2 | TRIP
+STIR | Khuấy đều thìa cà phê đánh tan | 1
+STRUGGLE | Vật lộn chật vật đấu tranh gian khổ | 2
+STUMBLE | Vấp ngã vấp chân loạng choạng | 2
 SUBMIT | Nộp bài nộp hồ sơ đệ trình | 1 | HAND IN
-SUFFER | Chịu đựng đau khổ gánh chịu bệnh tật | 1 | ENDURE
-SUGGEST | Đề xuất gợi ý phương án hay | 1 | PROPOSE
-SURRENDER | Đầu hàng buông súng chịu thua | 2 | GIVE IN
+SUFFER | Chịu đựng đau khổ gánh chịu bệnh tật | 1
+SUGGEST | Đề xuất gợi ý phương án hay | 1
+SURRENDER | Đầu hàng buông súng chịu thua | 2
 SURVIVE | Sống sót tồn tại sau thảm hoạ | 1 | OUTLIVE
 SWEAR | Thề thốt tuyên thệ hoặc chửi bậy | 1 | VOW
 SWELL | Sưng vù phồng to tấy đỏ | 2 | BLOW UP
-TEASE | Trêu chọc chọc ghẹo đùa cợt | 1 | TAUNT
+TEASE | Trêu chọc chọc ghẹo đùa cợt | 1
 TEMPT | Cám dỗ quyến rũ xúi giục | 2 | LURE
-TERRIFY | Làm cho khiếp đảm rụng rời sợ hãi | 2 | FRIGHTEN
+TERRIFY | Làm cho khiếp đảm rụng rời sợ hãi | 2
 THREATEN | Đe dọa uy hiếp tinh thần | 2 | MENACE
-THRIVE | Phát triển mạnh mẽ tươi tốt mau lớn | 2 | FLOURISH
+THRIVE | Phát triển mạnh mẽ tươi tốt mau lớn | 2
 TICKLE | Cù lét chọc lét làm buồn cười | 1
-TIGHTEN | Siết chặt vặn chặt ốc vít | 2 | FASTEN
-TOLERATE | Khoan dung tha thứ chịu đựng | 2 | ENDURE
+TIGHTEN | Siết chặt vặn chặt ốc vít | 2
+TOLERATE | Khoan dung tha thứ chịu đựng | 2
 TOSS | Tung hất nhẹ hất đồng xu | 1 | FLIP
-TRACE | Lần theo dấu vết truy tìm | 2 | TRACK
-TRANSMIT | Truyền phát tín hiệu sóng truyền hình | 2 | BROADCAST
+TRACE | Lần theo dấu vết truy tìm | 2
+TRANSMIT | Truyền phát tín hiệu sóng truyền hình | 2
 TREMBLE | Run rẩy lập cập vì sợ hãi | 2 | SHAKE
 TWIST | Vặn xoắn trẹo khớp bóp méo | 1 | WRING
-UNDERGO | Trải qua phẫu thuật hoặc trải nghiệm | 2 | EXPERIENCE
+UNDERGO | Trải qua phẫu thuật hoặc trải nghiệm | 2
 UNIFY | Thống nhất đoàn kết một lòng | 2 | UNITE
-UNLOCK | Mở khoá cửa bằng chìa | 1 | OPEN
-URGE | Thúc giục hối thúc khuyên bảo khẩn thiết | 2 | PUSH
+UNLOCK | Mở khoá cửa bằng chìa | 1
+URGE | Thúc giục hối thúc khuyên bảo khẩn thiết | 2
 VANISH | Biến mất không để lại dấu vết | 2 | DISAPPEAR
-VARY | Thay đổi biến thiên đa dạng | 2 | CHANGE
+VARY | Thay đổi biến thiên đa dạng | 2
 WARN | Cảnh báo báo trước nguy hiểm | 1 | CAUTION
 WEAKEN | Làm suy yếu yếu dần đi | 2 | LESSEN
-WEEP | Khóc nức nở tuôn rơi nước mắt | 1 | CRY
-WEIGH | Cân đo đong đếm trọng lượng | 1 | MEASURE
-WIDEN | Mở rộng con đường thêm to | 2 | EXPAND
+WEEP | Khóc nức nở tuôn rơi nước mắt | 1
+WEIGH | Cân đo đong đếm trọng lượng | 1
+WIDEN | Mở rộng con đường thêm to | 2
 WITHDRAW | Rút tiền mặt khỏi cây ATM hoặc rút quân | 2 | RETRACT
 WORRY | Lo lắng bồn chồn đứng ngồi không yên | 1 | FRET
-WRECK | Làm đắm tàu phá nát vụn xe | 2 | DESTROY
-YELL | La hét gào to vào mặt | 1 | SCREAM
+WRECK | Làm đắm tàu phá nát vụn xe | 2
+YELL | La hét gào to vào mặt | 1
 ABOLISH | Bãi bỏ một đạo luật hoặc chế độ cũ | 3
 ACCOMPANY | Đồng hành hoặc đi cùng ai đó | 2
 ACTIVATE | Kích hoạt chức năng hoặc thiết bị | 2
@@ -498,7 +498,7 @@ APPROACH | Tiếp cận hoặc đến gần một mục tiêu | 2
 ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người | 2
 AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2
 BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3
-BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2 | MIX
+BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2
 BROADEN | Mở rộng tầm mắt hoặc kiến thức | 2
 CAPTIVATE | Thu hút mê hoặc lòng người | 3
 CLASSIFY | Phân loại vào các nhóm | 2
@@ -653,7 +653,7 @@ FEARLESS | Không sợ hãi can trường bất khuất | 2
 FLEXIBLE | Linh hoạt mềm dẻo dễ thay đổi | 2
 GENTLE | Dịu dàng nhẹ nhàng hiền từ | 1
 GRACEFUL | Uyển chuyển thanh thoát duyên dáng | 2
-HILARIOUS | Hài hước vui nhộn cười vỡ bụng | 2 | FUNNY
+HILARIOUS | Hài hước vui nhộn cười vỡ bụng | 2
 IMAGINATIVE | Giàu trí tưởng tượng sáng tạo | 2
 INDEPENDENT | Tự lập độc lập không phụ thuộc ai | 2
 INSPIRING | Tạo cảm hứng đầy khích lệ | 2
@@ -678,8 +678,8 @@ TAKE OFF | Cụm động từ chỉ việc cởi bỏ giày dép hoặc áo kho�
 PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào | 1
 TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép | 1
 TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ | 2
-TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời | 2 | REFUSE
-GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn | 1 | CONTINUE
+TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời | 2
+GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn | 1
 CARRY OUT | Cụm động từ tiến hành thực hiện một cuộc khảo sát | 2 | CONDUCT
 RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2
 CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2
@@ -689,16 +689,16 @@ BREAK UP | Cụm động từ chỉ việc một đám đông tan rã giải tá
 COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2
 FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2
 GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2
-HOLD ON | Cụm động từ giữ máy chờ máy điện thoại một lát | 1 | WAIT
+HOLD ON | Cụm động từ giữ máy chờ máy điện thoại một lát | 1
 HANG OUT | Cụm động từ tụ tập đi chơi tán gẫu cùng bạn bè | 1
 GET ALONG WITH | Cụm động từ hòa thuận ăn ý với bạn bè người thân | 2
-BRING UP | Cụm động từ nuôi nấng dạy dỗ đứa trẻ nên người | 2 | RAISE
+BRING UP | Cụm động từ nuôi nấng dạy dỗ đứa trẻ nên người | 2
 PASS AWAY | Cụm từ trang trọng chỉ sự qua đời tạ thế | 2 | DIE
 SHOW UP | Cụm động từ xuất hiện có mặt tại buổi hẹn | 1 | ARRIVE
 MAKE UP | Cụm động từ làm lành sau khi cãi vã hoặc trang điểm | 1
-PUT OFF | Cụm động từ hoãn lại việc gì sang ngày khác | 2 | POSTPONE
-CALL OFF | Cụm động từ hủy bỏ hoàn toàn trận đấu do mưa bão | 2 | CANCEL
-SET UP | Cụm động từ thành lập dựng nên hoặc cài đặt | 1 | ESTABLISH
+PUT OFF | Cụm động từ hoãn lại việc gì sang ngày khác | 2
+CALL OFF | Cụm động từ hủy bỏ hoàn toàn trận đấu do mưa bão | 2
+SET UP | Cụm động từ thành lập dựng nên hoặc cài đặt | 1
 TAKE UP | Cụm động từ bắt đầu một sở thích thói quen mới | 2
 LOOK FORWARD TO | Cụm động từ ngóng trông háo hức mong đợi điều gì | 2
 DROP BY | Cụm động từ tạt qua ghé thăm chốc lát | 2
@@ -736,7 +736,7 @@ SCALES | Chiếc cân đo trọng lượng cân nặng cơ thể | 2
 HIP | Hông eo lắc lư theo điệu nhảy | 1
 THIGH | Bắp đùi chân săn chắc nhờ tập luyện | 2
 PUDDLE | Vũng nước mưa nhỏ đọng trên đường sau cơn mưa | 2
-MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai | 2 | FOG
+MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai | 2
 FROST | Băng giá sương muối phủ trắng cành cây mùa đông | 2
 DOWNPOUR | Cơn mưa rào trút nước như thác đổ | 2
 SHOWER RAIN | Cơn mưa rào thoảng qua chợt đến chợt đi | 2

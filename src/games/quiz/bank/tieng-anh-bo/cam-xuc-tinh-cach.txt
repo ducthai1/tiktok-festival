@@ -1,7 +1,7 @@
 # Tiếng Anh · Cảm xúc, tính cách
 CHEERFUL | Tính từ vui tươi, rạng rỡ, luôn nở nụ cười yêu đời | 1
 SINCERE | Tính từ chân thành, thật lòng không chút dối gian | 2
-MODEST | Tính từ khiêm tốn, không thích khoe khoang bản thân | 2 | HUMBLE
+MODEST | Tính từ khiêm tốn, không thích khoe khoang bản thân | 2
 AMBITIOUS | Tính từ có hoài bão lớn, tham vọng vươn lên đỉnh cao | 2
 FRUSTRATED | Cảm giác bực bội, bất lực vì việc không theo ý muốn | 2
 MAGNANIMOUS | Đức tính đại lượng, cao thượng, tha thứ lỗi lầm cho kẻ khác | 3
@@ -12,10 +12,10 @@ SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất h
 PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ | 3
 GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt | 3
 GREEDY | Tham lam chỉ muốn giữ tất cả cho riêng mình | 2
-HUMBLE | Khiêm tốn nhã nhặn không khoe khoang | 2 | MODEST
+HUMBLE | Khiêm tốn nhã nhặn không khoe khoang | 2
 ARROGANT | Kiêu ngạo tự cao coi thường người khác | 2
 DISHONEST | Không trung thực lừa lọc gian manh | 2
-COURAGEOUS | Dũng cảm can trường đối mặt hiểm nguy | 2 | BRAVE
+COURAGEOUS | Dũng cảm can trường đối mặt hiểm nguy | 2
 COWARDLY | Hèn nhát sợ sệt không dám làm gì | 2
 IMPATIENT | Nóng vội thiếu kiên nhẫn không chờ đợi được | 2
 IMPENITENT | Không hối cải không ăn năn hối hận | 3
@@ -30,10 +30,10 @@ EXTROVERT | Người hướng ngoại | 2 | EXTROVERTED, EXTRAVERT
 IMPULSIVE | Bốc đồng | 2
 INDECISIVE | Thiếu quyết đoán (hay do dự) | 2
 CREATIVE | Sáng tạo (tính từ) | 1
-FRANK | Thẳng thắn | 2 | STRAIGHTFORWARD, BLUNT
-LOYAL | Trung thành | 1 | FAITHFUL
-AWKWARD | Vụng về, ngượng ngùng | 2 | CLUMSY
-TIMID | Rụt rè | 2 | SHY
+FRANK | Thẳng thắn | 2 | STRAIGHTFORWARD
+LOYAL | Trung thành | 1
+AWKWARD | Vụng về, ngượng ngùng | 2
+TIMID | Rụt rè | 2
 DISCIPLINE | Tính kỷ luật | 2 | SELF-DISCIPLINE
 GRATITUDE | Lòng biết ơn | 2 | THANKFULNESS
 MINDFULNESS | Chánh niệm (sống tỉnh thức) | 2
@@ -44,7 +44,7 @@ SHAME | Sự xấu hổ | 2
 GUILT | Cảm giác tội lỗi | 2
 LONELINESS | Sự cô đơn | 1
 BOREDOM | Sự buồn chán | 1
-CONTENTMENT | Sự mãn nguyện | 2 | SATISFACTION
+CONTENTMENT | Sự mãn nguyện | 2
 SHYNESS | Sự nhút nhát | 1
 COURAGE | Lòng dũng cảm | 1 | BRAVERY
 MATURITY | Sự trưởng thành | 2

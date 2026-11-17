@@ -8,7 +8,7 @@ SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường ph
 SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn | 1
 TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ | 3
 ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ | 2
-SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết | 2 | SNOWBOARDING
+SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết | 2
 BOXING | Môn đấm bốc / quyền anh so găng đối kháng trên sàn đài | 1
 WRESTLING | Môn đấu vật tranh tài sức mạnh ghì đè đối thủ xuống thảm | 2
 DUMBBELL | Cặp quả tạ tay nhỏ tập cơ bắp tay trong phòng gym | 2

@@ -2,4 +2,4 @@
 APRICOT | Quả mơ vàng ươm ngâm đường chua ngọt | 2
 PLUM | Quả mận giòn chua chấm muối ớt | 1
 SESAME | Hạt vừng hạt mè rắc lên chè bánh | 2
-OMELET | Món trứng cuộn tráng vàng ruộm bữa sáng | 1 | OMELETTE
+OMELET | Món trứng cuộn tráng vàng ruộm bữa sáng | 1

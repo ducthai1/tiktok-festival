@@ -21,10 +21,10 @@ BODY | Cơ thể | 1
 BELLY BUTTON | Cái rốn | 3 | NAVEL, BELLYBUTTON
 DIMPLE | Lúm đồng tiền (trên má) | 3 | DIMPLES
 SLEEPY | Buồn ngủ | 1 | DROWSY
-TIRED | Mệt mỏi | 1 | EXHAUSTED, WEARY
+TIRED | Mệt mỏi | 1 | WEARY
 STRONG | Khỏe, mạnh (về sức lực) | 1
 WEAK | Yếu ớt (về sức lực) | 2 | FEEBLE
-STRESSED | Căng thẳng, áp lực (tâm lý) | 2 | STRESS, TENSE, STRESSED OUT
+STRESSED | Căng thẳng, áp lực (tâm lý) | 2 | TENSE, STRESSED OUT
 ANGRY | Tức giận | 1 | MAD, FURIOUS
 SCARED | Sợ hãi | 1 | AFRAID, FRIGHTENED, TERRIFIED
 BORED | Chán (vì không có gì làm) | 1
@@ -44,19 +44,19 @@ DISAPPOINTED | Thất vọng | 3
 HOMESICK | Nhớ nhà | 3
 HATE | Ghét | 1 | DISLIKE
 LAUGH | Cười lớn (thành tiếng) | 1
-KIND | Tốt bụng | 1 | NICE, KIND-HEARTED, KINDHEARTED
+KIND | Tốt bụng | 1 | NICE, KIND-HEARTED
 LAZY | Lười biếng | 1
-SHY | Nhút nhát, rụt rè | 2 | TIMID
+SHY | Nhút nhát, rụt rè | 2
 FUNNY | Hài hước, vui tính | 1 | HUMOROUS
-SMART | Thông minh | 1 | CLEVER, INTELLIGENT, BRIGHT
+SMART | Thông minh | 1 | CLEVER, INTELLIGENT
 HONEST | Trung thực | 2
-BRAVE | Dũng cảm | 2 | COURAGEOUS, BOLD
-POLITE | Lịch sự, lễ phép | 2 | COURTEOUS
+BRAVE | Dũng cảm | 2 | BOLD
+POLITE | Lịch sự, lễ phép | 2
 RUDE | Thô lỗ, hỗn láo | 2 | IMPOLITE
-HARD-WORKING | Chăm chỉ | 2 | HARDWORKING, DILIGENT, INDUSTRIOUS
+HARD-WORKING | Chăm chỉ | 2 | HARDWORKING, INDUSTRIOUS
 GENEROUS | Hào phóng, rộng rãi | 3
 SELFISH | Ích kỷ | 3
-STINGY | Keo kiệt, bủn xỉn | 3 | MEAN, MISERLY, CHEAP, TIGHT
+STINGY | Keo kiệt, bủn xỉn | 3 | MEAN, MISERLY
 SILLY | Ngốc nghếch | 2 | FOOLISH, STUPID
 CLUMSY | Vụng về, hậu đậu | 3
 CAREFUL | Cẩn thận | 2
@@ -65,13 +65,13 @@ TALKATIVE | Nói nhiều, lắm lời | 3 | CHATTY
 NAUGHTY | Nghịch ngợm (trẻ con) | 2 | MISCHIEVOUS
 CURIOUS | Tò mò | 2 | NOSY, NOSEY, INQUISITIVE
 STUBBORN | Bướng bỉnh, cứng đầu | 3 | OBSTINATE, HEADSTRONG
-ACTIVE | Năng động | 2 | ENERGETIC, DYNAMIC
+ACTIVE | Năng động | 2 | ENERGETIC
 TALL | Cao (dáng người) | 1
 SHORT | Thấp, lùn (dáng người) | 1
 FAT | Béo, mập | 1 | OVERWEIGHT, CHUBBY, PLUMP
 THIN | Gầy, ốm (dáng người) | 1 | SKINNY, SLIM, SLENDER
 CURLY HAIR | Tóc xoăn, tóc quăn | 2 | CURLY
-STRAIGHT HAIR | Tóc thẳng | 2 | STRAIGHT
+STRAIGHT HAIR | Tóc thẳng | 2
 BALD | Hói đầu | 2
 BLOND | Tóc vàng hoe | 2 | BLONDE, BLOND HAIR, BLONDE HAIR, FAIR HAIR
 CUTE | Dễ thương | 1 | ADORABLE
@@ -88,7 +88,7 @@ COUSIN | Anh chị em họ | 2 | COUSINS
 NEPHEW | Cháu trai (con của anh chị em) | 3
 NIECE | Cháu gái (con của anh chị em) | 3
 GRANDCHILD | Cháu (con của con mình) | 2 | GRANDCHILDREN, GRANDSON, GRANDDAUGHTER, GRANDKID, GRANDKIDS
-PARENTS | Bố mẹ (cả hai người) | 1 | PARENT
+PARENTS | Bố mẹ (cả hai người) | 1
 TWINS | Anh chị em sinh đôi | 2 | TWIN
 NEIGHBOR | Hàng xóm | 2 | NEIGHBOUR, NEIGHBORS, NEIGHBOURS
 GUEST | Khách (đến nhà chơi) | 2 | GUESTS, VISITOR, VISITORS

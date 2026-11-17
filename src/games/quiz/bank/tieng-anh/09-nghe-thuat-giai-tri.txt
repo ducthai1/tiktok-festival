@@ -44,7 +44,7 @@ ORIGAMI | Nghệ thuật gấp giấy truyền thống của Nhật Bản | 1
 MOSAIC | Tranh ghép từ nhiều mảnh gốm đá nhỏ | 3
 GRAFFITI | Nghệ thuật vẽ tranh đường phố bằng bình xịt sơn | 1
 HARMONY | Sự hòa âm nhịp nhàng trong bản nhạc | 2
-ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện | 2 | ACOUSTIC GUITAR
+ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện | 2
 INSTRUMENT | Nhạc cụ âm nhạc nói chung | 1
 DRUM | Cái trống gõ tạo nhịp điệu rộn ràng | 1
 CYMBAL | Chiếc chũm chọe bằng đồng trong bộ trống | 2

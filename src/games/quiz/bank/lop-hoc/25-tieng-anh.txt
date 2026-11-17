@@ -11,7 +11,7 @@ BIRD | Con chim | 1
 PIG | Con heo | 1
 COW | Con bò | 1
 DUCK | Con vịt | 1
-CHICKEN | Con gà | 1 | HEN, ROOSTER
+CHICKEN | Con gà | 1 | HEN
 HORSE | Con ngựa | 1
 RABBIT | Con thỏ | 1 | BUNNY
 TIGER | Con hổ | 1
@@ -28,7 +28,7 @@ GIRAFFE | Con hươu cao cổ | 3
 PENGUIN | Con chim cánh cụt | 2
 DOLPHIN | Con cá heo | 3
 SHARK | Con cá mập | 2
-SHEEP | Con cừu | 2 | LAMB
+SHEEP | Con cừu | 2
 GOAT | Con dê | 2
 ZEBRA | Con ngựa vằn | 2
 KANGAROO | Con chuột túi | 3
@@ -59,14 +59,14 @@ ONE HUNDRED | Số một trăm | 3 | HUNDRED, A HUNDRED
 APPLE | Quả táo | 1
 BANANA | Quả chuối | 1
 MANGO | Quả xoài | 2
-LEMON | Quả chanh | 2 | LIME
+LEMON | Quả chanh vàng vỏ dày, vắt vào trà | 2
 MILK | Sữa | 1
 WATER | Nước uống | 1
 RICE | Cơm, gạo | 1
 BREAD | Bánh mì | 1
 EGG | Quả trứng | 1
 CAKE | Bánh ngọt, bánh kem | 2
-CANDY | Viên kẹo | 1 | SWEET, SWEETS
+CANDY | Viên kẹo | 1 | SWEETS
 ICE CREAM | Que kem | 2
 JUICE | Nước ép trái cây | 2
 TEA | Trà | 2
@@ -86,16 +86,16 @@ TOOTH | Cái răng | 2 | TEETH
 ARM | Cánh tay | 2
 FINGER | Ngón tay | 2
 FACE | Khuôn mặt | 2
-SCHOOLBAG | Cặp sách | 2 | BAG, BACKPACK
+SCHOOLBAG | Cặp sách | 2
 SCHOOL | Trường học | 1
-CLASSROOM | Lớp học | 2 | CLASS
-HOUSE | Ngôi nhà | 1 | HOME
-PHONE | Điện thoại | 1 | TELEPHONE, MOBILE
+CLASSROOM | Lớp học | 2
+HOUSE | Ngôi nhà | 1
+PHONE | Điện thoại | 1 | TELEPHONE
 TELEVISION | Cái ti vi | 2 | TV
 BALL | Quả bóng | 1
 CAR | Xe ô tô | 1
-BIKE | Xe đạp | 1 | BICYCLE
-PLANE | Máy bay | 1 | AIRPLANE, AEROPLANE
+BIKE | Xe đạp | 1
+PLANE | Máy bay | 1 | AEROPLANE
 SKY | Bầu trời | 1
 RAIN | Cơn mưa | 1
 TREE | Cái cây | 1
