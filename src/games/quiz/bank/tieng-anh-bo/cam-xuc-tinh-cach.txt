@@ -8,7 +8,6 @@ MAGNANIMOUS | Đức tính đại lượng, cao thượng, tha thứ lỗi lầm
 BENEVOLENT | Tấm lòng nhân từ, phúc hậu, bác ái thương yêu muôn loài tiếng Anh là gì? | 3 | NHÂN TỪ, BÁC ÁI
 TRANQUILITY | Cảm giác tĩnh lặng, an yên thanh bình nơi tâm hồn tiếng Anh là gì? | 3 | TĨNH LẶNG, AN YÊN
 SOLITUDE | Khoảng thời gian một mình thanh tịnh trong cô độc an nhiên tiếng Anh là gì? | 3 | CÔ ĐỘC AN NHIÊN
-SERENITY | Vẻ thanh thản, phẳng lặng không gợn chút âu lo tiếng Anh là gì? | 3 | THANH THẢN
 SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất hạnh của người khác tiếng Anh là gì? | 4 | HẢ HÊ
 PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ tiếng Anh là gì? | 4 | VẺ ĐẸP KIỀU DIỄM
 GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt tiếng Anh là gì? | 4 | BA HOA, LẮM LỜI
@@ -33,7 +32,6 @@ INDECISIVE | Thiếu quyết đoán (hay do dự) tiếng Anh là gì? | 2
 CREATIVE | Sáng tạo (tính từ) tiếng Anh là gì? | 1
 FRANK | Thẳng thắn tiếng Anh là gì? | 2 | STRAIGHTFORWARD, BLUNT
 LOYAL | Trung thành tiếng Anh là gì? | 1 | FAITHFUL
-CHARMING | Duyên dáng, có sức hút tiếng Anh là gì? | 2
 AWKWARD | Vụng về, ngượng ngùng tiếng Anh là gì? | 2 | CLUMSY
 TIMID | Rụt rè tiếng Anh là gì? | 2 | SHY
 DISCIPLINE | Tính kỷ luật tiếng Anh là gì? | 2 | SELF-DISCIPLINE
@@ -52,14 +50,11 @@ COURAGE | Lòng dũng cảm tiếng Anh là gì? | 1 | BRAVERY
 MATURITY | Sự trưởng thành tiếng Anh là gì? | 2
 LEADERSHIP | Khả năng lãnh đạo tiếng Anh là gì? | 2
 TEAMWORK | Làm việc nhóm tiếng Anh là gì? | 1
-COMMUNICATION | Giao tiếp tiếng Anh là gì? | 2
 BODY LANGUAGE | Ngôn ngữ cơ thể tiếng Anh là gì? | 2
 ACTIVE LISTENING | Lắng nghe chủ động tiếng Anh là gì? | 2
 BOUNDARY | Ranh giới cá nhân tiếng Anh là gì? | 2 | BOUNDARIES
 SELF-ESTEEM | Lòng tự trọng tiếng Anh là gì? | 2 | SELF ESTEEM
 WILLPOWER | Ý chí tiếng Anh là gì? | 2 | WILL POWER
 ENDURANCE | Sức chịu đựng tiếng Anh là gì? | 2
-FORGIVENESS | Sự tha thứ tiếng Anh là gì? | 2
-ACCEPTANCE | Sự chấp nhận tiếng Anh là gì? | 2
 OPEN-MINDED | Cởi mở (tư tưởng) tiếng Anh là gì? | 2 | OPEN MINDED
 EMPOWERMENT | Sự trao quyền tiếng Anh là gì? | 3

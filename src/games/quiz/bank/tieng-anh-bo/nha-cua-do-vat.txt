@@ -22,7 +22,6 @@ COMB | Chiếc lược chải tóc mượt mà tiếng Anh là gì? | 1 | HAIR C
 BRUSH | Cây cọ hoặc bàn chải cầm tay tiếng Anh là gì? | 1
 TOOTHBRUSH | Bàn chải đánh răng vệ sinh miệng tiếng Anh là gì? | 1
 TOOTHPASTE | Tuýp kem đánh răng thơm mát tiếng Anh là gì? | 1
-SCISSORS | Cây kéo cắt giấy cắt chỉ tiếng Anh là gì? | 1 | PAIR OF SCISSORS
 PEN | Cây bút mực, bút bi để viết chữ tiếng Anh là gì? | 1 | BALLPOINT PEN
 PENCIL | Cây bút chì gỗ để viết và vẽ tiếng Anh là gì? | 1
 RULER | Cây thước kẻ thẳng đo độ dài centimet tiếng Anh là gì? | 1
@@ -58,7 +57,6 @@ BROOM | Cây chổi rơm hoặc chổi nhựa quét nhà tiếng Anh là gì? | 
 MOP | Cây lau sàn nhà có sợi vải thấm nước tiếng Anh là gì? | 1 | FLOOR MOP
 BUCKET | Chiếc xô nhựa xách nước lau nhà tiếng Anh là gì? | 1 | PAIL
 LADDER | Chiếc thang gấp chữ A trèo lên cao tiếng Anh là gì? | 1 | STEPLADDER
-HAMMER | Cây búa sắt đóng nhổ đinh tiếng Anh là gì? | 1 | CLAW HAMMER
 NAIL | Cây đinh sắt nhọn dùng để đóng gỗ tiếng Anh là gì? | 1
 SCREW | Con đinh ốc (ốc vít) có rãnh xoắn tiếng Anh là gì? | 1 | BOLT
 TAPE | Cuộn băng dính dán dính đồ vật tiếng Anh là gì? | 1 | ADHESIVE TAPE, SCOTCH TAPE
@@ -88,11 +86,6 @@ PADLOCK | Ổ khoá chữ U bấm mở bằng chìa tiếng Anh là gì? | 2
 SAFETY PIN | Chiếc kim băng an toàn gài tã hoặc áo tiếng Anh là gì? | 2
 ENVELOPE | Chiếc phong bì dán tem gửi thư tay tiếng Anh là gì? | 1 | LETTER ENVELOPE
 STAMP | Con tem bưu chính dán góc phong bì thư tiếng Anh là gì? | 1 | POSTAGE STAMP
-SCREWDRIVER | Chiếc tua vít đầu bốn cạnh vặn ốc xoáy tiếng Anh là gì? | 2 | SCREW DRIVER
-WRENCH | Chiếc cờ lê (mỏ lết) mở đai ốc bù loong tiếng Anh là gì? | 2 | SPANNER
-PLIERS | Chiếc kìm mỏ nhọn bấm kẹp dây thép tiếng Anh là gì? | 2 | PINCERS
-TAPE MEASURE | Chiếc thước dây cuộn tròn đo kích thước may mặc tiếng Anh là gì? | 2 | MEASURING TAPE
-HOURGLASS | Chiếc đồng hồ cát cổ đo thời gian trôi tiếng Anh là gì? | 2 | SAND TIMER
 BASKET | Chiếc làn (giỏ tre) đi chợ đựng rau củ tiếng Anh là gì? | 1 | SHOPPING BASKET
 JAR | Chiếc hũ (lọ) thuỷ tinh đựng đường kẹo mứt tiếng Anh là gì? | 1 | GLASS JAR
 CAN | Lon thiếc đựng nước ngọt giải khát tiếng Anh là gì? | 1 | TIN CAN
