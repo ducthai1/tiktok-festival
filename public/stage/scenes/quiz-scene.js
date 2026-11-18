@@ -218,6 +218,11 @@ function createCommentsPanel(hud) {
   return {
     update(comments) {
       if (!Array.isArray(comments)) return;
+      if (comments.length > 0 && comments[comments.length - 1].key < lastKey) {
+        lastKey = 0;
+        rows.clear();
+        list.replaceChildren();
+      }
       for (const c of comments) {
         const known = rows.get(c.key);
         if (known) {

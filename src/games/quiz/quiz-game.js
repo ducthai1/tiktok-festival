@@ -646,6 +646,12 @@ export function createQuizGame({
       if (state.control && onRestore) {
         onRestore(state.control);
       }
+      if (Array.isArray(state.comments) && state.comments.length) {
+        feed.length = 0;
+        feed.push(...state.comments);
+        const maxKey = Math.max(...state.comments.map((c) => Number(c.key) || 0));
+        if (maxKey > feedSeq) feedSeq = maxKey;
+      }
     },
     snapshot(now = Date.now()) {
       const board = [...scores.values()].sort((a, b) => b.points - a.points || b.correct - a.correct).slice(0, 6)
