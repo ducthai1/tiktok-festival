@@ -87,8 +87,10 @@ export function createStageAudio() {
     }
     // dừng custom audio nếu không dùng nữa
     if (customAudio && !customAudio.paused) customAudio.pause();
+    const currentTarget = name;
     tracks.available(name).then((has) => {
-      if (!wanted() || theme !== name) return;
+      const activeTarget = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme;
+      if (!wanted() || activeTarget !== currentTarget) return;
       if (has) {
         music.stop();
         tracks.start(name);
