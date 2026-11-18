@@ -18,7 +18,7 @@ export const FANCLUB_GIFT_IDS = new Set(['7934']);
 export const FANCLUB_GIFT_NAMES = new Set(['heart me']);
 
 export function createGameHub({ startGame = 'boss', random = Math.random, welcomeTextAbove = DEFAULT_TEXT_ABOVE, englishProgress = null,
-  onEnglishAnswer = null, englishListenReady = () => false } = {}) {
+  onEnglishAnswer = null, englishListenReady = () => false, dataDir = null } = {}) {
   const donors = createDonorLedger(); // 👑 Bảng vàng của PHIÊN LIVE HIỆN TẠI — mọi tab quiz dùng chung
   const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
@@ -26,7 +26,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     ['bar', createBarClubGame({ random })],
     ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
     ['swim', createSwimPushGame()],
-    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady, donors }).map((g) => [g.id, g])
+    ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady, donors, dataDir }).map((g) => [g.id, g])
   ]);
   let games = buildGames();
   let lastCatalog = null; // danh mục quà + luật quà tab tiếng Anh: dựng lại game (resetAll) thì gán lại

@@ -103,7 +103,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress,
     onEnglishAnswer: englishTts && ((word) => settings.ttsEnglish !== false && englishTts.prefetch(word)),
     // 🎧 Luyện nghe chỉ mở khi màn hình đang đọc tiếng Anh và giọng đọc vừa đọc được (không lỗi liên tiếp)
-    englishListenReady: () => Boolean(englishTts) && settings.ttsEnglish !== false && englishTts.status().ok
+    englishListenReady: () => Boolean(englishTts) && settings.ttsEnglish !== false && englishTts.status().ok,
+    dataDir
   });
   let port = config.port;
   let lastStateText = '';

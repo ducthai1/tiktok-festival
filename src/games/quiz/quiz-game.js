@@ -86,7 +86,8 @@ export function createQuizGame({
   // tab tự xử lý quà (vd tiếng Anh: quà đổi bộ đề thay cho mở gợi ý), lệnh riêng, và trạng thái riêng gửi lên màn hình
   onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null,
   onRoomReset = null, // phòng live mới: tab tự xoá trạng thái riêng của phòng cũ (vd tab tiếng Anh: chế độ đề đang chạy)
-  donors = null // 👑 Bảng vàng (phiên live hiện tại) dùng chung mọi tab — game-hub.js → donor-ledger.js
+  donors = null, // 👑 Bảng vàng (phiên live hiện tại) dùng chung mọi tab — game-hub.js → donor-ledger.js
+  answersLogger = null // 📋 Ghi log đáp án — answers-logger.js
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -243,6 +244,7 @@ export function createQuizGame({
     if (q.notice) fx.push({ kind: 'toast', text: q.notice });
     fx.push({ kind: 'quizQuestion', qNumber, category: q.category, golden, lightning: lightningIndex, listen: Boolean(q.listen),
       speech });
+    answersLogger?.logQuestion(qNumber, { category: q.category || '', prompt: q.prompt || q.emoji || q.speech || '', answer: q.answer || (kind === 'wordle' ? q : '') || '' });
     const leadIn = lightningIndex ? 1500 : (q.listen ? LEAD_IN_MS : estimateSpeechLeadIn(speech));
     countStart = now + leadIn;
     phaseEnd = countStart + (lightningIndex ? LIGHTNING_MS : totalMs());
@@ -345,23 +347,40 @@ export function createQuizGame({
 
   // ---- trả lời ----
   function onText(user, comment, now, fx) {
-    if (winners.length >= POINTS.length) return; // Chỉ 6 bạn nhanh nhất mới được điểm
-    if (winners.some((w) => w.id === user.id)) return;
+    if (winners.length >= POINTS.length) {
+      answersLogger?.logAnswer(qNumber, { user, comment, result: 'CAP_REACHED' });
+      return; // Chỉ 6 bạn nhanh nhất mới được điểm
+    }
+    if (winners.some((w) => w.id === user.id)) {
+      answersLogger?.logAnswer(qNumber, { user, comment, result: 'ALREADY_WON' });
+      return;
+    }
     const n = (tries.get(user.id) || 0) + 1;
     tries.set(user.id, n);
-    if (n > MAX_TRIES) return;
+    if (n > MAX_TRIES) {
+      answersLogger?.logAnswer(qNumber, { user, comment, result: 'MAX_TRIES' });
+      return;
+    }
     if (typeof q?.checkAnswer === 'function') {
-      if (!q.checkAnswer(comment)) return;
+      if (!q.checkAnswer(comment)) {
+        answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
+        return;
+      }
     } else {
       const said = foldText(comment);
       const compact = said.replace(/ /g, '');
-      if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) return;
+      if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) {
+        answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
+        return;
+      }
     }
     const points = POINTS[winners.length] * mult();
     addPoints(user, points);
     winners.push({ id: user.id, nickname: user.nickname, avatar: user.avatar, points, ms: now - phaseStart });
     if (!firstCorrectAt) firstCorrectAt = now;
-    fx.push({ kind: 'quizCorrect', userId: user.id, nickname: user.nickname, avatar: user.avatar, rank: winners.length, points });
+    const rank = winners.length;
+    answersLogger?.logAnswer(qNumber, { user, comment, result: 'correct', rank, points });
+    fx.push({ kind: 'quizCorrect', userId: user.id, nickname: user.nickname, avatar: user.avatar, rank, points });
   }
 
   function onVote(user, comment, now) {

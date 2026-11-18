@@ -7,6 +7,7 @@ import { createEmojiSwitcher } from './emoji-switcher.js';
 import { createEnglishSwitcher } from './english-switcher.js';
 import { foldText, isCleanForDisplay } from '../text-match.js';
 import { createQuizGame as createGame } from './quiz-game.js';
+import { createAnswersLogger } from './answers-logger.js';
 
 let banks = null; // đọc file một lần cho cả server (test tạo nhiều hub vẫn nhanh)
 function loadBanks() {
@@ -50,8 +51,9 @@ export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'ma
 // onEnglishAnswer(từ): câu tiếng Anh vừa ra — máy chủ tạo sẵn giọng đọc đáp án (src/tts/english-tts.js)
 // englishListenReady(): giọng đọc tiếng Anh đang chạy tốt → mới mở ô 🎧 Luyện nghe
 export function createQuizGames({ random = Math.random, englishProgress = null, onEnglishAnswer = null, englishListenReady = () => false,
-  donors = null } = {}) {
-  const createQuizGame = (opts) => createGame({ donors, ...opts }); // 👑 Bảng vàng chung mọi tab
+  donors = null, dataDir = null } = {}) {
+  const answersLogger = createAnswersLogger(dataDir);
+  const createQuizGame = (opts) => createGame({ donors, answersLogger, ...opts }); // 👑 Bảng vàng chung mọi tab
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
   // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)
