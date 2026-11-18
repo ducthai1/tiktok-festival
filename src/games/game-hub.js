@@ -110,6 +110,10 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       const fx = game.command(name, now);
       return gameId === activeId ? fx : [];
     },
+    queuePriority(questions) {
+      const g = games.get(activeId);
+      return g?.queuePriority?.(questions);
+    },
     resetSession() {
       board.reset();
       welcome.reset();

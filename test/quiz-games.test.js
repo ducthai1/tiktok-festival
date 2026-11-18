@@ -460,3 +460,73 @@ test('english topics resume where they left off (A 40, B 10, C 2 → back to A g
   ask('hard', 0); ask('dongvat', 10); ask('general', 30); // C Khó, rồi Tổng hợp
   assert.equal(new Set(asked).size, asked.length, 'đổi bộ / độ khó mà bị hỏi lại từ cũ');
 });
+
+test('special questions: Hoang Sa Truong Sa question validator and priority queue', async () => {
+  const { checkVietNamAnswer, createHoangSaTruongSaQuestions } = await import('../src/games/quiz/special-questions.js');
+  // Chấp nhận: viết hoa chữ cái đầu (V), hoa cả 2 từ, hoặc hoa toàn bộ
+  assert.equal(checkVietNamAnswer('Viet Nam'), true);
+  assert.equal(checkVietNamAnswer('Việt Nam'), true);
+  assert.equal(checkVietNamAnswer('VIET NAM'), true);
+  assert.equal(checkVietNamAnswer('VIỆT NAM'), true);
+  assert.equal(checkVietNamAnswer('VietNam'), true);
+  assert.equal(checkVietNamAnswer('ViệtNam'), true);
+  assert.equal(checkVietNamAnswer('VIETNAM'), true);
+  assert.equal(checkVietNamAnswer('VIỆTNAM'), true);
+  assert.equal(checkVietNamAnswer('Việt nam'), true);
+  assert.equal(checkVietNamAnswer('Viet nam'), true);
+  assert.equal(checkVietNamAnswer('Việt Nam 🇻🇳'), true);
+  assert.equal(checkVietNamAnswer('🇻🇳 Việt Nam'), true);
+
+  // Không chấp nhận: viết thường chữ cái đầu (v)
+  assert.equal(checkVietNamAnswer('viet nam'), false);
+  assert.equal(checkVietNamAnswer('việt nam'), false);
+  assert.equal(checkVietNamAnswer('vietnam'), false);
+  assert.equal(checkVietNamAnswer('việtnam'), false);
+  assert.equal(checkVietNamAnswer('viet Nam'), false);
+  assert.equal(checkVietNamAnswer('việt Nam'), false);
+  assert.equal(checkVietNamAnswer('Trung Quoc'), false);
+  assert.equal(checkVietNamAnswer(''), false);
+
+  const qs = createHoangSaTruongSaQuestions();
+  assert.equal(qs.length, 2);
+  assert.equal(qs[0].prompt, 'Hoàng Sa, Trường Sa là của đất nước nào?');
+  assert.equal(qs[1].prompt, 'Lại một lần nữa nè Hoàng Sa, Trường Sa là của đất nước nào?');
+  assert.equal(qs[0].answer, 'Việt Nam');
+  assert.equal(qs[1].answer, 'Việt Nam');
+
+  // Test game queuePriority
+  const game = createQuizGame({ id: 'test_vn', title: 'Test VN', deck: fixedDeck(textQ('NORMAL1'), textQ('NORMAL2')) });
+  game.tick(1000); // bắt đầu câu NORMAL1
+  assert.equal(game.snapshot().qNumber, 1);
+
+  // Nạp 2 câu đặc biệt
+  game.queuePriority(qs);
+
+  // Kết thúc câu 1
+  game.command('next', 1000); // reveal
+  game.tick(20000); // sang câu tiếp theo
+
+  const snap2 = game.snapshot();
+  assert.equal(snap2.prompt, 'Hoàng Sa, Trường Sa là của đất nước nào?');
+
+  // Thử trả lời sai: chữ thường 'viet nam' -> không trúng
+  const fxFail = game.handleEvent(chat(1, 'viet nam'), 21000);
+  assert.ok(!fxFail.some(f => f.kind === 'quizCorrect'));
+
+  // Trả lời đúng: 'Việt Nam' -> trúng
+  const fxOk = game.handleEvent(chat(2, 'Việt Nam'), 22000);
+  assert.ok(fxOk.some(f => f.kind === 'quizCorrect'));
+
+  // Sang câu tiếp theo
+  game.command('next', 23000); // reveal
+  game.tick(35000);
+
+  const snap3 = game.snapshot();
+  assert.equal(snap3.prompt, 'Lại một lần nữa nè Hoàng Sa, Trường Sa là của đất nước nào?');
+
+  // Sau khi hết 2 câu đặc biệt, câu kế tiếp quay lại deck bình thường
+  game.command('next', 36000);
+  game.tick(50000);
+  const snap4 = game.snapshot();
+  assert.equal(snap4.category, 'Thử'); // quay lại NORMAL2
+});

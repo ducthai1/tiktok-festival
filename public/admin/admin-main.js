@@ -764,6 +764,9 @@ $('set-obs-lagdetect')?.addEventListener('change', saveObsAutoRefresh);
 $('safe-reload-stages')?.addEventListener('click', () => {
   run({ t: 'safeReload' });
 });
+$('trigger-hsts')?.addEventListener('click', () => {
+  run({ t: 'triggerHoangSaTruongSa' });
+});
 $('reload-stages')?.addEventListener('click', () => {
   if (confirm('Tải lại màn hình OBS ngay lập tức? Màn hình có thể chớp 1–2 giây.')) run({ t: 'reload' });
 });

@@ -68,7 +68,7 @@ export function createQuizGames({ random = Math.random, englishProgress = null, 
       id: 'english', title: 'Từ Vựng Tiếng Anh', questionMs: 20000, revealAnswerAloud: false, random, deck: english.deck,
       onGift: (event) => english.onGift(event), onCommand: (name) => english.command(name), extraState: () => english.snapshot(),
       onRestore: (control) => english.restore(control), onRoomReset: () => english.resetRoom(),
-      onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => q.answer, onPronounce: onEnglishAnswer,
+      onCatalog: (catalog) => english.setCatalog(catalog), pronounce: (q) => (q.noPronounce ? '' : q.answer), onPronounce: onEnglishAnswer,
       speakLine: (q) => (q.listen ? '' : q.speech || q.prompt)
     }), { setEnglishRules: (rules) => english.setRules(rules) }), // tab 🎁 Quà ở trang điều khiển
     createQuizGame({

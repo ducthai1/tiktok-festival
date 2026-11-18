@@ -93,6 +93,7 @@ export function createQuizGame({
   const present = new Map(); // id → { id, nickname, avatar, at }
   const wordleCooldown = createCooldown(3000);
   let q = null;
+  const priorityQueue = [];
   let phase = 'idle'; // idle → question → reveal → question …
   let paused = false;
   let phaseStart = 0;
@@ -198,7 +199,7 @@ export function createQuizGame({
   }
 
   function startQuestion(now, fx) {
-    q = deck.next();
+    q = priorityQueue.length ? priorityQueue.shift() : deck.next();
     qNumber += 1;
     phase = 'question';
     phaseStart = now;
@@ -349,9 +350,13 @@ export function createQuizGame({
     const n = (tries.get(user.id) || 0) + 1;
     tries.set(user.id, n);
     if (n > MAX_TRIES) return;
-    const said = foldText(comment);
-    const compact = said.replace(/ /g, '');
-    if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) return;
+    if (typeof q?.checkAnswer === 'function') {
+      if (!q.checkAnswer(comment)) return;
+    } else {
+      const said = foldText(comment);
+      const compact = said.replace(/ /g, '');
+      if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) return;
+    }
     const points = (POINTS[winners.length] ?? LATE_POINTS) * mult();
     addPoints(user, points);
     winners.push({ id: user.id, nickname: user.nickname, avatar: user.avatar, points, ms: now - phaseStart });
@@ -434,6 +439,10 @@ export function createQuizGame({
   return {
     id,
     title,
+    queuePriority(list) {
+      if (Array.isArray(list)) priorityQueue.push(...list);
+      else if (list) priorityQueue.push(list);
+    },
     setGiftCatalog: (catalog) => onCatalog?.(catalog),
     handleEvent(event, now = Date.now()) {
       const fx = [];

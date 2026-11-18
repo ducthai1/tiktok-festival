@@ -4,6 +4,7 @@ import { ENGLISH_TARGETS, ORDER, ORDER_VERSION, defaultEnglishRules, defaultQues
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
+import { createHoangSaTruongSaQuestions } from './games/quiz/special-questions.js';
 
 const QUIZ_COMMANDS = ['next', 'hint', 'pause', 'resume', 'resetScores', 'resetDeck'];
 const GAME_COMMANDS = {
@@ -99,6 +100,11 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       emitFx(game, hub.command(game, msg.name));
       pushState(true);
       return { message: 'OK' };
+    },
+    triggerHoangSaTruongSa() {
+      const qs = createHoangSaTruongSaQuestions();
+      hub.queuePriority(qs);
+      return { ok: true, message: '🇻🇳 Đã lên lịch 2 câu hỏi Hoàng Sa - Trường Sa (sẽ ra ngay sau câu hiện tại)!' };
     },
     // Chủ phòng chỉ định một người ĐANG CÓ MẶT trong game nhận hiệu ứng của một món quà (người đó không phải
     // tặng). Tên/avatar lấy từ trạng thái game (không tin dữ liệu trang gửi lên); chạy như quà thật, kể cả khi live.
