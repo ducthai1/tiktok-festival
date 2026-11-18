@@ -207,6 +207,36 @@ function createCommentsPanel(hud) {
   const list = el('div', 'quiz-comments-list');
   root.append(header, list);
   hud.gameRoot.append(root);
+
+  // 🎵 2 option quà tặng mặc định (5 kim cương) nằm sát phía dưới bảng thứ tự máy chủ nhận để tắt hoặc bật nhạc nền
+  const musicBar = el('div', 'quiz-music-bar');
+
+  // Option 1: Bật nhạc nền (Finger Heart 5 xu)
+  const onOpt = el('div', 'quiz-music-opt opt-on');
+  const onGift = el('div', 'opt-gift');
+  const onImg = el('img', 'gift-img');
+  onImg.src = 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/a4c4dc437fd3a6632aba149769491f49.png~tplv-obj.webp';
+  onImg.alt = 'Finger Heart';
+  onImg.onerror = () => { onImg.remove(); if (!onGift.querySelector('.emoji')) onGift.prepend(el('span', 'emoji', '🫰')); };
+  onGift.append(onImg, el('i', 'price', '5💎'));
+  const onTo = el('div', 'opt-to');
+  onTo.append(el('span', 'arrow', '➜'), el('span', 'action', '🔊 Bật nhạc'));
+  onOpt.append(onGift, onTo);
+
+  // Option 2: Tắt nhạc nền (Spinning Soccer 5 xu)
+  const offOpt = el('div', 'quiz-music-opt opt-off');
+  const offGift = el('div', 'opt-gift');
+  const offImg = el('img', 'gift-img');
+  offImg.src = 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/74a30ed3492d3e7d317efe7e10c3ba51.png~tplv-obj.webp';
+  offImg.alt = 'Spinning Soccer';
+  offImg.onerror = () => { offImg.remove(); if (!offGift.querySelector('.emoji')) offGift.prepend(el('span', 'emoji', '⚽')); };
+  offGift.append(offImg, el('i', 'price', '5💎'));
+  const offTo = el('div', 'opt-to');
+  offTo.append(el('span', 'arrow', '➜'), el('span', 'action', '🔇 Tắt nhạc'));
+  offOpt.append(offGift, offTo);
+
+  musicBar.append(onOpt, offOpt);
+  hud.gameRoot.append(musicBar);
   const rows = new Map(); // key → { node, rank }
   let lastKey = 0;
 

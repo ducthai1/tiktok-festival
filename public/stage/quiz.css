@@ -500,3 +500,98 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 
 @keyframes fan-rainbow { to { background-position: 260% 0; } }
 @keyframes fan-pulse { 50% { filter: brightness(1.12); } }
+
+/* 🎵 Thanh quà bật / tắt nhạc nền (sát dưới bảng thứ tự máy chủ nhận) */
+.quiz-music-bar {
+  position: absolute;
+  right: 94px;
+  top: 1714px;
+  width: 436px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+#game-hud.has-deck .quiz-music-bar {
+  top: 1542px;
+}
+.quiz-music-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  background: rgba(8, 10, 22, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+  min-width: 0;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+.quiz-music-opt .opt-gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  flex: none;
+}
+.quiz-music-opt .opt-gift img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.quiz-music-opt .opt-gift .emoji {
+  font-size: 28px;
+  line-height: 36px;
+}
+.quiz-music-opt .opt-gift i.price {
+  padding: 0 5px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.65);
+  font: 800 12px/14px var(--font);
+  font-style: normal;
+  color: #ffe9b0;
+  white-space: nowrap;
+}
+.quiz-music-opt .opt-to {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  min-width: 0;
+  flex: 1;
+}
+.quiz-music-opt .opt-to .arrow {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  flex: none;
+}
+.quiz-music-opt .opt-to .action {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.quiz-music-opt.opt-on .opt-to .action {
+  color: #7dff8a;
+  text-shadow: 0 0 8px rgba(125, 255, 138, 0.4);
+}
+.quiz-music-opt.opt-off .opt-to .action {
+  color: #ff7675;
+  text-shadow: 0 0 8px rgba(255, 118, 117, 0.4);
+}
+
+/* Đèn viền báo hiệu trạng thái nhạc đang BẬT hoặc TẮT */
+#stage.music-on .quiz-music-opt.opt-on {
+  border-color: #4ade80;
+  background: rgba(30, 90, 50, 0.55);
+  box-shadow: 0 0 14px rgba(74, 222, 128, 0.45);
+}
+#stage.music-off .quiz-music-opt.opt-off {
+  border-color: #f87171;
+  background: rgba(110, 30, 30, 0.55);
+  box-shadow: 0 0 14px rgba(248, 113, 113, 0.45);
+}

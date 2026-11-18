@@ -99,7 +99,12 @@ function legendFor(scene) {
 // Khung xem trước trong trang điều khiển: tắt tiếng để không đọc/kêu trùng với nguồn OBS.
 const isPreview = new URLSearchParams(location.search).has('preview');
 let previewSound = false; // trang điều khiển bật "Nghe ở khung xem trước"
-const applyAudio = () => audio.configure(isPreview && !previewSound ? { ...settings, sound: false, tts: false, ttsWelcome: false } : settings);
+const applyAudio = () => {
+  audio.configure(isPreview && !previewSound ? { ...settings, sound: false, tts: false, ttsWelcome: false } : settings);
+  const isMusicOn = settings.music !== false;
+  stageEl.classList.toggle('music-on', isMusicOn);
+  stageEl.classList.toggle('music-off', !isMusicOn);
+};
 if (isPreview) {
   window.addEventListener('message', (event) => {
     if (event.origin !== location.origin || event.data?.t !== 'previewSound') return;

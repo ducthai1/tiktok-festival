@@ -295,6 +295,25 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         ? `${event.gift.name} ×${event.gift.count} (${event.gift.diamonds}💎)` : event.type === 'like' ? `${event.likeCount} tim` : '';
       sockets.broadcast({ t: 'log', event: { type: event.type, nickname: event.user.nickname, text, simulated: event.simulated } },
         { adminsOnly: true });
+      // 🎵 Bật / Tắt nhạc nền bằng quà tặng (mặc định 5 kim cương):
+      // Finger Heart (5487 / finger-heart) → BẬT NHẠC
+      // Spinning Soccer (105781) → TẮT NHẠC
+      if (event.type === 'gift') {
+        const gid = String(event.gift?.id || '');
+        const gname = String(event.gift?.name || '').toLowerCase();
+        const isOn = gid === '5487' || gid === 'finger-heart' || gname === 'finger heart' || gname === 'bắn tim' || (event.gift?.diamondsEach === 5 && gname.includes('finger'));
+        const isOff = gid === '105781' || gname === 'spinning soccer' || (event.gift?.diamondsEach === 5 && (gname.includes('soccer') || gname.includes('spinning')));
+
+        if (isOn) {
+          updateSettings({ music: true });
+          emitFx(hub.activeId(), [{ kind: 'toast', text: `🎵 @${event.user?.nickname || 'Khách'} tặng ${event.gift?.name || 'Bắn tim'} → BẬT NHẠC NỀN! 🔊` }]);
+          log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → BẬT NHẠC NỀN`);
+        } else if (isOff) {
+          updateSettings({ music: false });
+          emitFx(hub.activeId(), [{ kind: 'toast', text: `🔇 @${event.user?.nickname} tặng ${event.gift?.name || 'Spinning Soccer'} → TẮT NHẠC NỀN! 🛑` }]);
+          log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → TẮT NHẠC NỀN`);
+        }
+      }
       // Ghi log quà tặng vào ổ cứng (bất đồng bộ để tránh chặn event loop)
       if (event.type === 'gift' && !event.simulated) {
         const logLine = `[${new Date().toLocaleString('sv-SE')}] [GIFT] ${event.user.nickname} (@${event.user.uniqueId || event.user.id}): ${event.gift.name} x${event.gift.count} (${event.gift.diamonds}💎)\n`;

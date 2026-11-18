@@ -53,6 +53,7 @@ export function loadConfig(envInput = process.env) {
     provider,
     tikfinityUrl: String(env.TIKFINITY_WS_URL || 'ws://127.0.0.1:21213/'),
     eulerApiKey: env.EULER_API_KEY ? String(env.EULER_API_KEY) : undefined,
+    geminiApiKey: env.GEMINI_API_KEY ? String(env.GEMINI_API_KEY) : undefined,
     tiktokUsername: env.TIKTOK_USERNAME ? String(env.TIKTOK_USERNAME) : '',
     startGame
   };
