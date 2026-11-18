@@ -278,10 +278,12 @@ export function createEnglishSwitcher({ general, basic, sets, random = Math.rand
         }
         // còn nghe tiếp → chọn trước câu sau để tạo sẵn giọng (sắp đổi sang bộ đang chờ thì thôi)
         if (set === 'nghe' && !(pending && listenAsked >= listenMin)) prepareListen();
-        // Luyện nghe không dùng độ khó → không trừ lượt độ khó trong lúc nghe
-        if (!listening && level !== 'easy' && (levelLeft -= 1) <= 0) {
+        // Luyện nghe không dùng độ khó → không trừ lượt độ khó trong lúc nghe.
+        // Có người tặng chọn độ khó (kể cả tặng Rose chọn Dễ) → đếm lùi từng câu; hết lượt thì về Dễ mặc định (xoá tên người tặng).
+        if (!listening && levelBy && (levelLeft -= 1) <= 0) {
           level = 'easy';
           levelBy = null;
+          levelLeft = 0;
           dirty = true;
         }
         return notice ? { ...q, notice } : q;
