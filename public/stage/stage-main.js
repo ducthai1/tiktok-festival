@@ -168,14 +168,14 @@ function onWelcome(fx) {
     if (welcomeWaiting.length > 12) welcomeWaiting.shift();
     return undefined;
   }
-  return showWelcome(fx);
+  return showWelcomeWhenReady(fx);
 }
 hud.onGiftCardsDone(() => {
   if (!welcomeWaiting.length) return;
   const waiting = welcomeWaiting.splice(0);
-  if (waiting.length === 1) return showWelcome(waiting[0]);
+  if (waiting.length === 1) return showWelcomeWhenReady(waiting[0]);
   const people = waiting.flatMap((w) => (w.mode === 'group' ? w.people : [{ id: w.id, nickname: w.nickname, avatar: w.avatar, fanClub: w.fanClub, fanLevel: w.fanLevel }])).slice(-24);
-  return showWelcome({ kind: 'welcome', mode: 'group', people, durationMs: 3600 });
+  return showWelcomeWhenReady({ kind: 'welcome', mode: 'group', people, durationMs: 3600 });
 });
 /** Một hiệu ứng → đúng nơi hiển thị. Dùng chung cho hiệu ứng từ server và cho __stage.inject khi chụp ảnh. */
 function dispatchFx(fx) {
@@ -185,6 +185,32 @@ function dispatchFx(fx) {
   else current?.onFx(fx);
 }
 
+/** Preload tất cả avatar trong FX rồi mới show thẻ chào — tránh ô tím/trắng placeholder. */
+function showWelcomeWhenReady(fx) {
+  if (fx.mode === 'text') return showWelcome(fx);
+  const urls = fx.mode === 'group'
+    ? fx.people.slice(0, 18).map((p) => p.avatar).filter(Boolean)
+    : [fx.avatar].filter(Boolean);
+  if (!urls.length) return showWelcome(fx);
+  const TIMEOUT_MS = 500;
+  let done = false;
+  let loaded = 0;
+  function tryShow() {
+    if (done) return;
+    done = true;
+    showWelcome(fx);
+  }
+  const timer = setTimeout(tryShow, TIMEOUT_MS);
+  for (const url of urls) {
+    const img = new Image();
+    img.referrerPolicy = 'no-referrer';
+    img.onload = img.onerror = () => {
+      loaded++;
+      if (loaded >= urls.length) { clearTimeout(timer); tryShow(); }
+    };
+    img.src = url;
+  }
+}
 function showWelcome(fx) {
   const w = current?.welcome || {};
   if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);
