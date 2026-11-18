@@ -7,7 +7,7 @@ import { createAdminCommandHandler } from './admin-command-handler.js';
 import { loadOrCreateAdminToken } from './admin-token-store.js';
 import { DATA_DIR, PUBLIC_DIR, ROOT_DIR } from './config.js';
 import { createGameHub } from './games/game-hub.js';
-import { isAllowedHost, safeImageUrl, securityHeaders } from './http/security.js';
+import { isAllowedHost, safeImageUrl, securityHeaders, tokensEqual } from './http/security.js';
 import { createSocketHub } from './http/socket-hub.js';
 import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
@@ -431,8 +431,65 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       res.end(text);
     };
     if (!isAllowedHost(req.headers.host, port, config.allowLan)) return reject(403, 'Forbidden');
-    if (req.method !== 'GET' && req.method !== 'HEAD') return reject(405, 'Method not allowed');
+
+    // ── Upload nhạc nền 20/11 (POST /api/music-upload) ────────────────────────
     const urlPath = (req.url || '/').split('?')[0];
+    if (req.method === 'POST' && urlPath === '/api/music-upload') {
+      const tok = req.headers['x-admin-token'] || '';
+      if (!tokensEqual(adminToken, tok)) return reject(403, 'Forbidden');
+      const ct = req.headers['content-type'] || '';
+      const EXT_OK = /\.(mp3|ogg|wav|m4a|aac|flac)$/i;
+      const MIME_OK = /^audio\//i;
+      if (!MIME_OK.test(ct.split(';')[0].trim())) return reject(415, 'Chỉ chấp nhận file audio');
+      // lấy tên file từ header hoặc Content-Disposition
+      const rawName = (req.headers['x-filename'] || 'custom.mp3').replace(/[^a-z0-9._\-]/gi, '_');
+      const ext = (rawName.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
+      if (!EXT_OK.test(ext)) return reject(415, 'Định dạng không hỗ trợ (.mp3 .ogg .wav .m4a)');
+      const musicDir = path.join(dataDir, 'music');
+      fs.mkdirSync(musicDir, { recursive: true });
+      // xóa file custom cũ
+      try { for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f)); } catch { /**/ }
+      const dest = path.join(musicDir, `custom${ext}`);
+      const out = fs.createWriteStream(dest);
+      req.pipe(out);
+      await new Promise((resolve, reject2) => { out.on('finish', resolve); out.on('error', reject2); req.on('error', reject2); });
+      log.info('music', `file nhạc custom đã lưu: custom${ext}`);
+      // thông báo stage cập nhật
+      sockets.broadcast({ t: 'teacherMusicFile', url: `/api/music-custom${ext}` });
+      res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
+      return res.end(JSON.stringify({ ok: true, url: `/api/music-custom${ext}` }));
+    }
+    // ── Serve file nhạc custom ─────────────────────────────────────────────────
+    if (req.method === 'GET' && urlPath.startsWith('/api/music-custom')) {
+      const ext = urlPath.replace('/api/music-custom', '') || '.mp3';
+      const fpath = path.join(dataDir, 'music', `custom${ext}`);
+      if (!fs.existsSync(fpath)) return reject(404, 'Chưa có file nhạc custom');
+      const buf = fs.readFileSync(fpath);
+      const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac', '.flac': 'audio/flac' }[ext] || 'audio/mpeg';
+      res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'no-cache', 'Content-Length': String(buf.length), ...securityHeaders(port) });
+      return res.end(req.method === 'HEAD' ? undefined : buf);
+    }
+    // ── Truy vấn tên file nhạc custom hiện tại ────────────────────────────────
+    if (req.method === 'GET' && urlPath === '/api/music-info') {
+      const musicDir = path.join(dataDir, 'music');
+      let url = null;
+      try { const f = (fs.readdirSync(musicDir).find((f2) => /^custom\./i.test(f2))); if (f) url = `/api/music-custom${f.match(/\.[^.]+$/)[0]}`; } catch { /**/ }
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', ...securityHeaders(port) });
+      return res.end(JSON.stringify({ url }));
+    }
+
+    // ── Xóa file nhạc custom ───────────────────────────────────────────────────
+    if (req.method === 'POST' && urlPath === '/api/music-clear') {
+      const tok = req.headers['x-admin-token'] || '';
+      if (!tokensEqual(adminToken, tok)) return reject(403, 'Forbidden');
+      const musicDir = path.join(dataDir, 'music');
+      try { for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f)); } catch { /**/ }
+      sockets.broadcast({ t: 'teacherMusicFile', url: null });
+      res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
+      return res.end(JSON.stringify({ ok: true }));
+    }
+
+    if (req.method !== 'GET' && req.method !== 'HEAD') return reject(405, 'Method not allowed');
     if (urlPath === '/') {
       res.writeHead(302, { Location: '/admin', ...securityHeaders(port) });
       return res.end();

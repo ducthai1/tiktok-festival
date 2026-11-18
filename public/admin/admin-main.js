@@ -400,6 +400,9 @@ function applySettings(s) {
   document.body.classList.toggle('xmas', s.season === 'christmas');
   document.body.classList.toggle('teacher', s.season === 'teacher');
   for (const b of document.querySelectorAll('#season-pick button')) b.setAttribute('aria-pressed', String(b.dataset.season === (s.season || '')));
+  // hiện/ẩn box nhạc teacher
+  const musicBox = $('teacher-music-box');
+  if (musicBox) musicBox.hidden = s.season !== 'teacher';
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
@@ -891,3 +894,62 @@ $('clear-answers-btn')?.addEventListener('click', () => {
   $('answers-log')?.replaceChildren();
   if ($('answers-count')) $('answers-count').textContent = '0 mục';
 });
+
+// ── Nhạc tùy chỉnh 20/11 ────────────────────────────────────────────────────
+(function () {
+  const fileInput = $('teacher-music-file');
+  const pickBtn   = $('teacher-music-pick');
+  const clearBtn  = $('teacher-music-clear');
+  const nameEl    = $('teacher-music-name');
+  const statusEl  = $('teacher-music-status');
+  if (!fileInput || !pickBtn) return;
+
+  function setStatus(msg, cls = '') {
+    if (!statusEl) return;
+    statusEl.textContent = msg;
+    statusEl.className = 'teacher-music-status' + (cls ? ' ' + cls : '');
+  }
+
+  function setCustomName(name) {
+    if (nameEl) nameEl.textContent = name ? `🎵 ${name}` : '🎼 Nhạc hộp nhạc tự tổng hợp (mặc định)';
+    if (clearBtn) clearBtn.hidden = !name;
+  }
+
+  // kiểm tra file custom hiện tại khi admin load
+  fetch('/api/music-info').then((r) => r.json()).then((d) => {
+    if (d.url) setCustomName(decodeURIComponent(d.url.split('/').pop()));
+  }).catch(() => {});
+
+  pickBtn.addEventListener('click', () => fileInput.click());
+
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files?.[0];
+    if (!file) return;
+    setStatus('⏳ Đang tải lên…');
+    try {
+      const res = await fetch('/api/music-upload', {
+        method: 'POST',
+        headers: { 'Content-Type': file.type || 'audio/mpeg', 'x-admin-token': token, 'x-filename': file.name },
+        body: file,
+      });
+      if (!res.ok) { const t = await res.text(); setStatus('❌ ' + t, 'err'); return; }
+      const d = await res.json();
+      setCustomName(file.name);
+      setStatus('✅ Đã tải lên & áp dụng vào màn hình', 'ok');
+      toast(`🎵 Nhạc "${file.name}" đã được áp dụng`);
+    } catch (err) {
+      setStatus('❌ Lỗi: ' + err.message, 'err');
+    } finally {
+      fileInput.value = '';
+    }
+  });
+
+  clearBtn?.addEventListener('click', async () => {
+    try {
+      // xóa file custom bằng endpoint, server tự broadcast về stage
+      const res = await fetch('/api/music-clear', { method: 'POST', headers: { 'x-admin-token': token } });
+      if (res.ok) { setCustomName(''); setStatus('Đã trở về nhạc tổng hợp mặc định', 'ok'); }
+      else setStatus('Không xóa được', 'err');
+    } catch { setStatus('Lỗi kết nối', 'err'); }
+  });
+})();

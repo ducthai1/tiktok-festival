@@ -159,6 +159,19 @@
             <label class="slider">Âm lượng hiệu ứng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
             <label class="toggle"><input type="checkbox" id="set-music"><span>Nhạc nền</span></label>
             <label class="slider">Âm lượng nhạc <input type="range" id="set-musicVolume" min="0" max="1" step="0.05"></label>
+            <!-- Nhạc tùy chỉnh 20/11 — chỉ hiện khi season=teacher -->
+            <div id="teacher-music-box" class="teacher-music-box" hidden>
+              <div class="teacher-music-head">🎵 Nhạc nền 20/11</div>
+              <div class="teacher-music-row">
+                <span id="teacher-music-name" class="teacher-music-name">🎼 Nhạc hộp nhạc tự tổng hợp (mặc định)</span>
+                <button type="button" id="teacher-music-clear" class="ghost" hidden title="Xóa file custom, trở về nhạc tổng hợp">✕</button>
+              </div>
+              <label class="teacher-music-upload">
+                <input type="file" id="teacher-music-file" accept=".mp3,.ogg,.wav,.m4a,.aac,.flac,audio/*" hidden>
+                <button type="button" id="teacher-music-pick" class="ghost small">📂 Chọn file nhạc từ máy…</button>
+              </label>
+              <div id="teacher-music-status" class="teacher-music-status"></div>
+            </div>
             <label class="toggle"><input type="checkbox" id="set-legend"><span>Hiện bảng quà (các game hiệu ứng)</span></label>
           </div>
 

@@ -329,6 +329,8 @@ const socket = connectLiveSocket({
       if (!frontVersion) frontVersion = message.version;
       else if (frontVersion !== message.version) return location.reload();
       setTimeout(() => socket.send(stageInfo()), 5000); // đo FPS 5 giây đầu rồi báo
+      // kiểm tra file nhạc custom (teacher season)
+      fetch('/api/music-info').then((r) => r.json()).then((d) => { if (d.url) audio.setCustomMusicUrl(d.url); }).catch(() => {});
     }
     if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
@@ -356,6 +358,10 @@ const socket = connectLiveSocket({
     }
     else if (message.t === 'reload') {
       location.reload();
+    }
+    else if (message.t === 'teacherMusicFile') {
+      // admin upload file nhạc custom → stage chuyển sang phát file đó
+      audio.setCustomMusicUrl(message.url || null);
     }
   }
 });

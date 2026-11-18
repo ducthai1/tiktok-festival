@@ -347,3 +347,46 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
   background: rgba(248, 81, 73, 0.12);
 }
 
+
+/* ── Nhạc tùy chỉnh 20/11 ──────────────────────────────────────────── */
+.teacher-music-box {
+  margin-top: 10px;
+  padding: 10px 12px;
+  background: rgba(255, 213, 79, 0.08);
+  border: 1px solid rgba(255, 213, 79, 0.35);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.teacher-music-head {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffd54f;
+  letter-spacing: 0.5px;
+}
+.teacher-music-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.teacher-music-name {
+  font-size: 12px;
+  color: var(--fg2);
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.teacher-music-upload {
+  display: contents;
+}
+.teacher-music-status {
+  font-size: 11px;
+  min-height: 14px;
+  color: var(--fg2);
+}
+.teacher-music-status.ok  { color: #81c784; }
+.teacher-music-status.err { color: #e57373; }

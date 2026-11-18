@@ -21,6 +21,8 @@ export function createStageAudio() {
   // hạ nhỏ tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt: nhạc nền + tiếng hiệu ứng, mỗi đường một nút
   const ducks = { music: { node: null, level: 1, until: 0 }, sfx: { node: null, level: 1, until: 0 } };
   let theme = '';
+  let customMusicUrl = null; // URL file nhạc custom (upload từ admin) — null = dùng nhạc tổng hợp
+  let customAudio = null;   // HTMLAudioElement phát file custom
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền', ttsEnglish: true };
 
   function audio() {
@@ -70,6 +72,21 @@ export function createStageAudio() {
       return;
     }
     const name = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme; // chủ đề mùa: mọi game phát nhạc của mùa đó
+    // ── Phát file custom (do admin upload) nếu có ─────────────────────────────
+    if (opts.season === 'teacher' && customMusicUrl) {
+      music.stop();
+      tracks.stop();
+      if (!customAudio) {
+        customAudio = new Audio();
+        customAudio.loop = true;
+        // kết nối vào musicBus (hưởng volume + duck)
+        ctx.createMediaElementSource(customAudio).connect(musicBus);
+      }
+      if (customAudio.paused) customAudio.play().catch(() => {});
+      return;
+    }
+    // dừng custom audio nếu không dùng nữa
+    if (customAudio && !customAudio.paused) customAudio.pause();
     tracks.available(name).then((has) => {
       if (!wanted() || theme !== name) return;
       if (has) {
@@ -183,6 +200,23 @@ export function createStageAudio() {
       return Math.sqrt(data.reduce((sum, v) => sum + v * v, 0) / data.length);
     },
     state: () => (ctx ? ctx.state : 'none'),
-    specialKind: () => tracks?.specialKind() || ''
+    specialKind: () => tracks?.specialKind() || '',
+    /** Đặt URL file nhạc custom cho season teacher (null = dùng nhạc tổng hợp). */
+    setCustomMusicUrl(url) {
+      customMusicUrl = url || null;
+      if (customAudio) {
+        if (url) {
+          customAudio.src = url;
+          customAudio.load();
+          if (opts.sound && opts.music && opts.season === 'teacher' && ctx?.state === 'running') {
+            customAudio.play().catch(() => {});
+          }
+        } else {
+          customAudio.pause();
+          customAudio.src = '';
+        }
+      }
+      applyLevels();
+    }
   };
 }
