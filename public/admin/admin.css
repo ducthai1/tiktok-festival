@@ -254,6 +254,17 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
 .rotate-hot .hot .n { opacity: 0.7; }
 .rotate-hot .none { font-size: 12px; opacity: 0.6; }
 
+/* Tab 🎁 Quà: Khối cấu hình Quà Bật / Tắt nhạc nền */
+.music-gifts-box { margin: 10px 0 14px; padding: 10px 12px; border: 1px solid rgba(74, 222, 128, 0.35); border-radius: 12px; background: rgba(74, 222, 128, 0.06); }
+.music-gifts-head { align-items: center; gap: 10px; }
+.music-gifts-head b { flex: 1; }
+.music-gifts-row { display: flex; gap: 16px; margin-top: 8px; }
+.music-gift-col { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 200px; }
+.music-gift-label { font-size: 13px; font-weight: 700; white-space: nowrap; }
+.music-slot { flex: 1; min-width: 0; }
+.music-slot .gift-btn { width: 100%; box-sizing: border-box; }
+.music-slot.dup .gift-btn { border-color: #ff5252 !important; background: rgba(255, 82, 82, 0.2) !important; }
+
 /* 📝 Nhật ký đáp án Đố Vui */
 .answers-scroll-box {
   max-height: 420px;

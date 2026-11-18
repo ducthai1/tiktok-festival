@@ -35,7 +35,14 @@ export const emptyRotation = () => ({ round: 0, at: 0, base: {}, away: {}, heart
  * Quà được phép xoay vào: người xem phải tìm được (trong hộp quà chung, hoặc phòng đã nhận),
  * và không lấy chính Heart Me — món đó để dành riêng cho ô hot.
  */
-const pool = (options) => options.filter((g) => (g.panel || g.seen) && String(g.id) !== FANCLUB_GIFT_ID && Number(g.coins) >= 1);
+/**
+ * Quà được phép xoay vào: người xem phải tìm được (trong hộp quà chung, hoặc phòng đã nhận),
+ * và không lấy chính Heart Me — món đó để dành riêng cho ô hot. Loại trừ các món quà đã dùng (vd quà Bật/Tắt nhạc).
+ */
+const pool = (options, exclude = []) => {
+  const ex = new Set((exclude || []).map(String));
+  return options.filter((g) => (g.panel || g.seen) && String(g.id) !== FANCLUB_GIFT_ID && !ex.has(String(g.id)) && Number(g.coins) >= 1);
+};
 
 /** Món được tặng nhiều LƯỢT nhất buổi này. counts: { [giftId]: số lượt }. */
 export function hottestGift(counts = {}) {
@@ -54,9 +61,10 @@ export function hottestGift(counts = {}) {
  * @param {object} counts { [giftId]: số lượt tặng trong buổi live này }
  * @param {object} state trạng thái xoay vòng (emptyRotation() lần đầu)
  * @param {() => number} random bơm vào để test ra kết quả xác định
+ * @param {string[]} exclude các id quà loại trừ không luân chuyển vào (vd quà Bật/Tắt nhạc)
  * @returns {{ rules, state, changes: {to,label,from,to_,coins}[] }}
  */
-export function rotateGifts({ rules, options, counts = {}, state = emptyRotation(), random = Math.random }) {
+export function rotateGifts({ rules, options, counts = {}, state = emptyRotation(), random = Math.random, exclude = [] }) {
   const next = { ...emptyRotation(), ...state, base: { ...state.base }, away: { ...state.away } };
   // Lần chạy đầu: giá đang có chính là giá gốc của từng ô (ô trang 2 & 3 tối thiểu là 5 xu).
   for (const r of rules) {
@@ -67,7 +75,7 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
     }
   }
 
-  const candidates = pool(options);
+  const candidates = pool(options, exclude);
   const heartGift = options.find((g) => String(g.id) === FANCLUB_GIFT_ID)
     || { id: FANCLUB_GIFT_ID, name: 'Heart Me', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/d56945782445b0b8c8658ed44f894c7b~tplv-resize:258:258.webp' };
   const hot = hottestGift(counts);

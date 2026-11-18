@@ -5,10 +5,11 @@ const PER_PAGE = 7; // bảng trên màn hình: 7 món mỗi trang (quiz-scene.j
 
 export function setupGiftEditor({ $, socket, toast }) {
   let rules = []; // [{ to, giftId, questions, enabled }]
+  let musicGifts = { enabled: true, on: null, off: null };
   let options = [];
   let targets = [];
   let dirty = false;
-  let pickingFor = -1;
+  let pickingFor = -1; // number hoặc 'music-on' | 'music-off'
 
   const el = (tag, className = '', text = '') => {
     const node = document.createElement(tag);
@@ -38,8 +39,8 @@ export function setupGiftEditor({ $, socket, toast }) {
     return el('span', 'badge warn', '⚠ không có trong hộp quà chung');
   }
 
-  function giftButton(rule, index) {
-    const g = optionOf(rule.giftId);
+  function makeGiftBtn(giftId, onPick) {
+    const g = optionOf(giftId);
     const b = el('button', 'gift-btn');
     b.type = 'button';
     b.title = 'Đổi món quà';
@@ -56,13 +57,44 @@ export function setupGiftEditor({ $, socket, toast }) {
     meta.append(el('span', 'coins', g ? `${g.coins} 💎 ` : ''), badgeFor(g));
     name.append(meta);
     b.append(name);
-    b.addEventListener('click', () => openPicker(index));
+    b.addEventListener('click', onPick);
     return b;
+  }
+
+  function giftButton(rule, index) {
+    return makeGiftBtn(rule.giftId, () => openPicker(index));
+  }
+
+  function renderMusicGifts(dupIds) {
+    if (!$('music-gifts-box')) return;
+    $('music-gifts-on').checked = musicGifts.enabled !== false;
+
+    const onId = musicGifts.on?.id || '';
+    const offId = musicGifts.off?.id || '';
+
+    const onDup = dupIds.has(onId) || (onId && onId === offId);
+    const offDup = dupIds.has(offId) || (offId && onId === offId);
+
+    $('music-on-slot').className = `music-slot${onDup ? ' dup' : ''}`;
+    $('music-on-slot').replaceChildren(makeGiftBtn(onId, () => openPicker('music-on')));
+
+    $('music-off-slot').className = `music-slot${offDup ? ' dup' : ''}`;
+    $('music-off-slot').replaceChildren(makeGiftBtn(offId, () => openPicker('music-off')));
   }
 
   function render() {
     const root = $('gift-rules');
     const dupIds = new Set(rules.map((r) => r.giftId).filter((id, i, all) => id && all.indexOf(id) !== i));
+    if (musicGifts.enabled !== false) {
+      const onId = musicGifts.on?.id;
+      const offId = musicGifts.off?.id;
+      if (onId && offId && onId === offId) dupIds.add(onId);
+      for (const r of rules) {
+        if (r.giftId && (r.giftId === onId || r.giftId === offId)) dupIds.add(r.giftId);
+      }
+    }
+    renderMusicGifts(dupIds);
+
     const rows = [];
     let shown = 0;
     rules.forEach((rule, index) => {
@@ -122,7 +154,7 @@ export function setupGiftEditor({ $, socket, toast }) {
       rows.push(row);
     });
     root.replaceChildren(...rows);
-    if (dupIds.size) status('⚠ Có món quà gán cho 2 dòng (viền đỏ) — mỗi món chỉ một chế độ', 'bad');
+    if (dupIds.size) status('⚠ Có món quà bị trùng giữa các chế độ hoặc quà Bật/Tắt nhạc (viền đỏ) — mỗi món chỉ gán một tính năng', 'bad');
     else if (!$('gifts-status').classList.contains('ok')) status('');
   }
 
@@ -130,10 +162,18 @@ export function setupGiftEditor({ $, socket, toast }) {
   function renderPicker() {
     const q = $('picker-search').value.trim().toLowerCase();
     const all = $('picker-all').checked;
-    const usedBy = new Map(rules.map((r, i) => [r.giftId, i]));
+    const usedByRule = new Map(rules.map((r, i) => [r.giftId, i]));
+    const onId = musicGifts.on?.id;
+    const offId = musicGifts.off?.id;
     const list = options.filter((g) => (all || g.panel || g.seen) && (!q || g.name.toLowerCase().includes(q)));
+
+    let currentSelId = '';
+    if (pickingFor === 'music-on') currentSelId = onId;
+    else if (pickingFor === 'music-off') currentSelId = offId;
+    else if (pickingFor >= 0) currentSelId = rules[pickingFor]?.giftId;
+
     $('picker-grid').replaceChildren(...list.map((g) => {
-      const b = el('button', `pick${rules[pickingFor]?.giftId === g.id ? ' sel' : ''}`);
+      const b = el('button', `pick${currentSelId === g.id ? ' sel' : ''}`);
       b.type = 'button';
       const img = el('img');
       img.src = g.image;
@@ -141,12 +181,51 @@ export function setupGiftEditor({ $, socket, toast }) {
       img.loading = 'lazy';
       img.referrerPolicy = 'no-referrer';
       b.append(img, el('span', '', g.name), el('span', 'coins', `${g.coins} 💎`));
-      const used = usedBy.get(g.id);
-      if (used !== undefined && used !== pickingFor) b.append(el('span', 'badge used', `đang dùng: ${targetOf(rules[used].to)?.label || ''}`));
+
+      let usedLabel = '';
+      let isUsed = false;
+
+      if (pickingFor === 'music-on') {
+        if (usedByRule.has(g.id)) {
+          isUsed = true;
+          usedLabel = `đang dùng: ${targetOf(rules[usedByRule.get(g.id)].to)?.label || 'đổi chế độ'}`;
+        } else if (offId && g.id === offId) {
+          isUsed = true;
+          usedLabel = 'đang dùng: Tắt nhạc';
+        }
+      } else if (pickingFor === 'music-off') {
+        if (usedByRule.has(g.id)) {
+          isUsed = true;
+          usedLabel = `đang dùng: ${targetOf(rules[usedByRule.get(g.id)].to)?.label || 'đổi chế độ'}`;
+        } else if (onId && g.id === onId) {
+          isUsed = true;
+          usedLabel = 'đang dùng: Bật nhạc';
+        }
+      } else if (pickingFor >= 0) {
+        if (usedByRule.has(g.id) && usedByRule.get(g.id) !== pickingFor) {
+          isUsed = true;
+          usedLabel = `đang dùng: ${targetOf(rules[usedByRule.get(g.id)].to)?.label || ''}`;
+        } else if (musicGifts.enabled !== false && onId && g.id === onId) {
+          isUsed = true;
+          usedLabel = 'đang dùng: Bật nhạc';
+        } else if (musicGifts.enabled !== false && offId && g.id === offId) {
+          isUsed = true;
+          usedLabel = 'đang dùng: Tắt nhạc';
+        }
+      }
+
+      if (usedLabel) b.append(el('span', 'badge used', usedLabel));
       else b.append(badgeFor(g));
+
       b.addEventListener('click', () => {
-        if (used !== undefined && used !== pickingFor) return toast('Món này đang dùng ở dòng khác — mỗi món chỉ một chế độ', true);
-        rules[pickingFor].giftId = g.id;
+        if (isUsed) return toast(`Món này đang được dùng (${usedLabel}) — mỗi món chỉ gán một tính năng`, true);
+        if (pickingFor === 'music-on') {
+          musicGifts.on = { id: g.id, name: g.name, coins: g.coins, image: g.image };
+        } else if (pickingFor === 'music-off') {
+          musicGifts.off = { id: g.id, name: g.name, coins: g.coins, image: g.image };
+        } else if (pickingFor >= 0) {
+          rules[pickingFor].giftId = g.id;
+        }
         closePicker();
         setDirty(true);
         render();
@@ -155,10 +234,16 @@ export function setupGiftEditor({ $, socket, toast }) {
     }));
     if (!list.length) $('picker-grid').replaceChildren(el('p', 'muted', 'Không thấy quà nào — thử bật "Cả quà không có trong hộp quà chung".'));
   }
-  function openPicker(index) {
-    pickingFor = index;
+
+  function openPicker(target) {
+    pickingFor = target;
     $('picker-search').value = '';
-    const current = optionOf(rules[index]?.giftId);
+    let currentId = '';
+    if (target === 'music-on') currentId = musicGifts.on?.id;
+    else if (target === 'music-off') currentId = musicGifts.off?.id;
+    else currentId = rules[target]?.giftId;
+
+    const current = optionOf(currentId);
     $('picker-all').checked = Boolean(current && !current.panel && !current.seen);
     $('gift-picker').hidden = false;
     renderPicker();
@@ -200,6 +285,13 @@ export function setupGiftEditor({ $, socket, toast }) {
     options = view.options || [];
     targets = view.targets || [];
     rules = (view.rules || []).map((r) => ({ to: r.to, giftId: String(r.gift?.id || ''), questions: r.questions, enabled: r.enabled !== false }));
+    if (view.musicGifts) {
+      musicGifts = {
+        enabled: view.musicGifts.enabled !== false,
+        on: view.musicGifts.on ? { ...view.musicGifts.on } : null,
+        off: view.musicGifts.off ? { ...view.musicGifts.off } : null
+      };
+    }
     setDirty(false);
     render();
     renderRotate(view.rotate);
@@ -212,6 +304,12 @@ export function setupGiftEditor({ $, socket, toast }) {
     if (reply.ok) apply(reply);
     else toast(reply.message || 'Không tải được bảng quà', true);
   }
+
+  $('music-gifts-on')?.addEventListener('change', () => {
+    musicGifts.enabled = $('music-gifts-on').checked;
+    setDirty(true);
+    render();
+  });
 
   $('rotate-on').addEventListener('change', async () => {
     const on = $('rotate-on').checked;
@@ -254,7 +352,10 @@ export function setupGiftEditor({ $, socket, toast }) {
   });
   $('gifts-save').addEventListener('click', async () => {
     if (rules.some((r) => !r.giftId)) return toast('Còn dòng chưa chọn quà', true);
-    const reply = await socket.request({ t: 'saveEnglishGifts', rules });
+    if (musicGifts.enabled !== false && (!musicGifts.on?.id || !musicGifts.off?.id)) {
+      return toast('Chưa chọn quà Bật hoặc Tắt nhạc nền', true);
+    }
+    const reply = await socket.request({ t: 'saveEnglishGifts', rules, musicGifts });
     if (!reply.ok) {
       status(`✗ ${reply.message}`, 'bad');
       return toast(reply.message || 'Lưu không được', true);

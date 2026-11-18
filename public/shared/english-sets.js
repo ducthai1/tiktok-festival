@@ -110,6 +110,21 @@ function fromTable(name) {
  * KHUYẾN MÃI tắt sẵn — Heart Me 1 xu (quà tham gia fan club) → Luyện nghe 10 câu.
  * Luật: { to, gift: { id, name, coins, image }, questions, enabled }.
  */
+/**
+ * Quà mặc định để Bật / Tắt nhạc nền (mỗi món 5 kim cương, không trùng với danh sách đổi đề tiếng Anh):
+ * - Bật nhạc: Encore Ticket (5 xu)
+ * - Tắt nhạc: Name shoutout (5 xu)
+ */
+export function defaultMusicGifts() {
+  const onGift = fromTable('Encore Ticket');
+  const offGift = fromTable('Name shoutout');
+  return {
+    enabled: true,
+    on: onGift || { id: '1137702', name: 'Encore Ticket', coins: 5, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/620bd04e2551f7af28c2355934f3ca65.png~tplv-obj.webp' },
+    off: offGift || { id: '19445', name: 'Name shoutout', coins: 5, image: 'https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/resource/9b1d432109c95e77e8de11dd442c0a1f.png~tplv-obj.webp' }
+  };
+}
+
 export function defaultEnglishRules() {
   const rules = ORDER.map((to) => {
     const gift = fromTable(ENGLISH_GIFT_PLAN[to]);

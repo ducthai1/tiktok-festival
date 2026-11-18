@@ -21,7 +21,7 @@ import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
 import { createEnglishTts } from './tts/english-tts.js';
 import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
 import { ROTATE_MS, emptyRotation, rotateGifts } from './games/quiz/gift-rotation.js';
-import { ORDER_VERSION, defaultEnglishRules, upgradeSavedRules } from '../public/shared/english-sets.js';
+import { ORDER_VERSION, defaultEnglishRules, defaultMusicGifts, upgradeSavedRules } from '../public/shared/english-sets.js';
 import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
@@ -57,7 +57,8 @@ const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], ttsEnglish: true, legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000,
   season: '', // chủ đề mùa: 'christmas' 🎄 Giáng sinh · 'teacher' 💐 20/11 (màn hình + nhạc + trang điều khiển), chọn ở thanh trên trang điều khiển
-  englishRotateMinutes: 20
+  englishRotateMinutes: 20,
+  musicGifts: defaultMusicGifts()
 };
 
 function loadGiftCatalog(file) {
@@ -77,6 +78,7 @@ function loadSettings(dataDir) {
     const settings = { ...DEFAULT_SETTINGS, ...(saved && typeof saved === 'object' ? saved : {}) };
     if (!isVoiceSetting(settings.ttsVoice)) settings.ttsVoice = TTS_VOICES[0]; // giọng đã bỏ / gõ sai → giọng mặc định
     if (!Number.isFinite(settings.englishRotateMinutes) || settings.englishRotateMinutes < 1) settings.englishRotateMinutes = 20;
+    if (!settings.musicGifts) settings.musicGifts = defaultMusicGifts();
     return settings;
   } catch {
     return { ...DEFAULT_SETTINGS };
@@ -185,7 +187,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false, legend: settings.legend, sound: settings.sound, volume: settings.volume,
     music: settings.music, musicVolume: settings.musicVolume,
     welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || '',
-    obsAutoRefresh: settings.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true }
+    obsAutoRefresh: settings.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true },
+    musicGifts: settings.musicGifts || defaultMusicGifts()
   });
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
@@ -237,13 +240,15 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     try {
       const options = giftOptions(giftCatalog);
       const current = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
+      const mg = settings.musicGifts || defaultMusicGifts();
+      const exclude = mg && mg.enabled !== false ? [mg.on?.id, mg.off?.id].filter(Boolean) : [];
       const { rules, state, changes } = rotateGifts({ rules: current, options, counts: giftCounts,
-        state: settings.englishRotation || emptyRotation() });
+        state: settings.englishRotation || emptyRotation(), exclude });
       if (!changes.length) {
         updateSettings({ englishRotation: state });
         return;
       }
-      const normalized = normalizeRules(rules, options); // chốt an toàn: bảng trùng món thì ném lỗi, không áp dụng
+      const normalized = normalizeRules(rules, options, mg); // chốt an toàn: bảng trùng món thì ném lỗi, không áp dụng
       updateSettings({ englishGifts: normalized, englishGiftsOrder: ORDER_VERSION, englishRotation: state });
       hub.setEnglishRules(normalized);
       pushState(true);
@@ -295,23 +300,29 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         ? `${event.gift.name} ×${event.gift.count} (${event.gift.diamonds}💎)` : event.type === 'like' ? `${event.likeCount} tim` : '';
       sockets.broadcast({ t: 'log', event: { type: event.type, nickname: event.user.nickname, text, simulated: event.simulated } },
         { adminsOnly: true });
-      // 🎵 Bật / Tắt nhạc nền bằng quà tặng (mặc định 5 kim cương):
-      // Finger Heart (5487 / finger-heart) → BẬT NHẠC
-      // Spinning Soccer (105781) → TẮT NHẠC
+      // 🎵 Bật / Tắt nhạc nền bằng quà tặng (cấu hình trong tab 🎁 Quà):
       if (event.type === 'gift') {
-        const gid = String(event.gift?.id || '');
-        const gname = String(event.gift?.name || '').toLowerCase();
-        const isOn = gid === '5487' || gid === 'finger-heart' || gname === 'finger heart' || gname === 'bắn tim' || (event.gift?.diamondsEach === 5 && gname.includes('finger'));
-        const isOff = gid === '105781' || gname === 'spinning soccer' || (event.gift?.diamondsEach === 5 && (gname.includes('soccer') || gname.includes('spinning')));
+        const mg = settings.musicGifts || defaultMusicGifts();
+        if (mg && mg.enabled !== false) {
+          const gid = String(event.gift?.id || '');
+          const gname = String(event.gift?.name || '').toLowerCase();
+          const onId = String(mg.on?.id || '');
+          const onName = String(mg.on?.name || '').toLowerCase();
+          const offId = String(mg.off?.id || '');
+          const offName = String(mg.off?.name || '').toLowerCase();
 
-        if (isOn) {
-          updateSettings({ music: true });
-          emitFx(hub.activeId(), [{ kind: 'toast', text: `🎵 @${event.user?.nickname || 'Khách'} tặng ${event.gift?.name || 'Bắn tim'} → BẬT NHẠC NỀN! 🔊` }]);
-          log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → BẬT NHẠC NỀN`);
-        } else if (isOff) {
-          updateSettings({ music: false });
-          emitFx(hub.activeId(), [{ kind: 'toast', text: `🔇 @${event.user?.nickname} tặng ${event.gift?.name || 'Spinning Soccer'} → TẮT NHẠC NỀN! 🛑` }]);
-          log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → TẮT NHẠC NỀN`);
+          const isOn = (onId && gid === onId) || (onName && gname === onName);
+          const isOff = (offId && gid === offId) || (offName && gname === offName);
+
+          if (isOn) {
+            updateSettings({ music: true });
+            emitFx(hub.activeId(), [{ kind: 'toast', text: `🎵 @${event.user?.nickname || 'Khách'} tặng ${event.gift?.name || mg.on?.name || 'quà'} → BẬT NHẠC NỀN! 🔊` }]);
+            log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → BẬT NHẠC NỀN`);
+          } else if (isOff) {
+            updateSettings({ music: false });
+            emitFx(hub.activeId(), [{ kind: 'toast', text: `🔇 @${event.user?.nickname} tặng ${event.gift?.name || mg.off?.name || 'quà'} → TẮT NHẠC NỀN! 🛑` }]);
+            log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → TẮT NHẠC NỀN`);
+          }
         }
       }
       // Ghi log quà tặng vào ổ cứng (bất đồng bộ để tránh chặn event loop)

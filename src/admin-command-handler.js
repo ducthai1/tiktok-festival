@@ -1,7 +1,7 @@
 // Xử lý lệnh từ trang điều khiển (đã qua kiểm token ở socket-hub). Mọi tham số được
 // kiểm lại ở đây; lệnh sai trả lỗi chứ không làm sập server.
-import { ENGLISH_TARGETS, ORDER, ORDER_VERSION, defaultEnglishRules, defaultQuestionsFor } from '../public/shared/english-sets.js';
-import { giftOptions, normalizeRules } from './games/quiz/english-gift-rules.js';
+import { ENGLISH_TARGETS, ORDER, ORDER_VERSION, defaultEnglishRules, defaultMusicGifts, defaultQuestionsFor } from '../public/shared/english-sets.js';
+import { giftOptions, normalizeMusicGifts, normalizeRules } from './games/quiz/english-gift-rules.js';
 import { buildTestEvent } from './games/test-event-factory.js';
 import { isVoiceSetting } from '../public/shared/tts-voices.js';
 import { createHoangSaTruongSaQuestions } from './games/quiz/special-questions.js';
@@ -47,11 +47,12 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
         coins: Number(byId.get(String(id))?.coins) || 0, to: rules.find((r) => String(r.gift?.id) === String(id))?.to || '' }))
       .sort((a, b) => b.count - a.count).slice(0, 8);
   };
-  // tab 🎁 Quà: luật quà tab tiếng Anh đang dùng (chưa chỉnh thì mặc định) + danh sách quà để chọn + các chế độ
+  // tab 🎁 Quà: luật quà tab tiếng Anh đang dùng (chưa chỉnh thì mặc định) + danh sách quà để chọn + các chế độ + quà nhạc
   const englishGiftsView = () => ({
     rules: settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules(),
     custom: Boolean(settings.englishGifts?.length),
     options: giftOptions(getGiftCatalog()),
+    musicGifts: settings.musicGifts || defaultMusicGifts(),
     // tự luân chuyển giá quà (gift-rotation.js) — tắt sẵn, chủ kênh tự bật
     rotate: {
       enabled: Boolean(settings.englishRotate),
@@ -67,13 +68,28 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       return englishGiftsView();
     },
     saveEnglishGifts(msg) {
-      const rules = normalizeRules(msg.rules, giftOptions(getGiftCatalog()));
-      updateSettings({ englishGifts: rules, englishGiftsOrder: ORDER_VERSION }); // thứ tự chủ kênh tự xếp: không xếp lại nữa
+      const opts = giftOptions(getGiftCatalog());
+      let musicGifts = null;
+      if (msg.musicGifts) {
+        musicGifts = normalizeMusicGifts(msg.musicGifts, opts, msg.rules);
+      }
+      const rules = normalizeRules(msg.rules, opts, musicGifts || settings.musicGifts);
+      const patch = { englishGifts: rules, englishGiftsOrder: ORDER_VERSION };
+      if (musicGifts) patch.musicGifts = musicGifts;
+      updateSettings(patch);
       hub.setEnglishRules(rules);
       pushState(true);
       const on = rules.filter((r) => r.enabled);
       console.log(`[admin] luật quà tab tiếng Anh: ${on.map((r) => `${r.gift.name} ${r.gift.coins}xu→${r.to}${r.questions ? `(${r.questions}c)` : ''}`).join(', ')}`);
       return { message: `Đã áp dụng ${on.length} món quà lên màn hình`, ...englishGiftsView() };
+    },
+    setMusicGifts(msg) {
+      const opts = giftOptions(getGiftCatalog());
+      const rules = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
+      const musicGifts = normalizeMusicGifts(msg.musicGifts, opts, rules);
+      updateSettings({ musicGifts });
+      pushState(true);
+      return { message: 'Đã cập nhật quà Bật / Tắt nhạc nền', ...englishGiftsView() };
     },
     setGiftRotate(msg) {
       const on = Boolean(msg.on);
@@ -99,7 +115,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       return { message: 'Đã luân chuyển bảng quà ngay', ...englishGiftsView() };
     },
     resetEnglishGifts() {
-      updateSettings({ englishGifts: null });
+      updateSettings({ englishGifts: null, musicGifts: defaultMusicGifts() });
       hub.setEnglishRules(defaultEnglishRules());
       pushState(true);
       return { message: 'Đã khôi phục bảng quà mặc định', ...englishGiftsView() };

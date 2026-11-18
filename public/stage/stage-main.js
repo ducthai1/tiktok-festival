@@ -150,7 +150,7 @@ async function switchScene(id) {
   fadeEl.classList.add('on');
   if (current) await wait(400);
   current?.dispose();
-  current = factory({ hud, labels, audio, pipeline });
+  current = factory({ hud, labels, audio, pipeline, settings });
   pipeline.setToneMapping(current.toneMapping);
   currentId = id;
   for (const c of [...stageEl.classList]) if (c.startsWith('theme-')) stageEl.classList.remove(c);
@@ -343,7 +343,10 @@ const socket = connectLiveSocket({
 
       applyAudio();
       applySeason();
-      if (current) hud.setLegend(legendFor(current), settings.legend !== false);
+      if (current) {
+        hud.setLegend(legendFor(current), settings.legend !== false);
+        current.configure?.(settings);
+      }
     } else if (message.t === 'state') onState(message);
     else if (message.t === 'fx' && message.game === currentId && current) {
       for (const fx of message.list) {
