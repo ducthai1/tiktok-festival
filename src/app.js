@@ -14,6 +14,7 @@ import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createSessionLog } from './session-log.js';
 import { createFollowerStore } from './live/follower-store.js';
+import { createFanClubStore } from './live/fanclub-store.js';
 import { createRoomTracker } from './live/room-tracker.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
@@ -86,6 +87,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
   const settings = loadSettings(dataDir);
   const followers = createFollowerStore(dataDir); // ai đã follow kênh (qua mọi buổi live) → 💖 cạnh tên
+  const fanClubs = createFanClubStore(dataDir); // ai là Fan CLB → luôn chào khung Fan Cấp tương ứng
   const rooms = createRoomTracker(path.join(dataDir, 'live-room.json')); // phòng live gần nhất → biết khi nào sang phòng mới
   const sessions = createSessionLog(path.join(dataDir, 'logs')); // mỗi buổi live một file log riêng, giữ lâu hơn log ngày
   sessions.setup();
@@ -263,6 +265,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onEvent(event) {
       followers.mark(event);
+      fanClubs.mark(event);
       emitFx(hub.activeId(), hub.handleEvent(event));
       prefetchFollowThanks(event);
       // quà thật lần đầu thấy (hoặc nay mới có ảnh): đưa vào danh mục để bảng chú thích hiện đúng ảnh quà
