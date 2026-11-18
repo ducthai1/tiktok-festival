@@ -6,6 +6,30 @@ export function normalizeConnectorUser(data = {}) {
   const user = data.user || data;
   const uniqueId = firstText(user.uniqueId, user.displayId);
   const userId = firstText(user.userId, user.id, uniqueId);
+  const fanLevel = Number(
+    user.fanClubLevel ??
+    data.fanClubLevel ??
+    user.fansClub?.data?.level ??
+    user.fansClub?.level ??
+    user.fansClubInfo?.fansLevel ??
+    user.fansClubInfo?.level ??
+    0
+  );
+  const fanClubStatus = Number(
+    user.fansClub?.data?.userFansClubStatus ??
+    user.fansClub?.userFansClubStatus ??
+    user.fansClub?.status ??
+    user.fansClubStatus ??
+    0
+  );
+  const fanClub = Boolean(
+    user.isSubscribed ||
+    user.isSubscriber ||
+    data.isSubscribed ||
+    data.isSubscriber ||
+    fanClubStatus === 1 ||
+    fanLevel > 0
+  );
   return {
     id: userId,
     uniqueId: uniqueId || userId,
@@ -13,10 +37,9 @@ export function normalizeConnectorUser(data = {}) {
     avatar: firstImageUrl(user.profilePicture, user.avatarThumb, user.avatarMedium, user.profilePictureUrl),
     // đang follow kênh (1 = follower, 2 = bạn bè) — TikTok gửi kèm mỗi bình luận / vào phòng / quà
     follower: Number(user.followInfo?.followStatus ?? user.followRole ?? data.followRole) >= 1,
-    // CLB người hâm mộ: userFansClubStatus 1 = ACTIVE (2 = hết hạn, 0 = chưa vào). KHÁC với
-    // user.isSubscribe (đăng ký trả phí hằng tháng) — người ta vào CLB bằng cách tặng quà Heart Me.
-    fanClub: Number(user.fansClub?.data?.userFansClubStatus) === 1,
-    fanLevel: Number(user.fansClub?.data?.level ?? user.fansClubInfo?.fansLevel) || 0
+    // CLB người hâm mộ: đọc lỏng tay mọi biến thể trường từ thư viện tiktok-live-connector
+    fanClub,
+    fanLevel: Math.max(0, fanLevel)
   };
 }
 

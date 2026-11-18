@@ -174,7 +174,7 @@ hud.onGiftCardsDone(() => {
   if (!welcomeWaiting.length) return;
   const waiting = welcomeWaiting.splice(0);
   if (waiting.length === 1) return showWelcome(waiting[0]);
-  const people = waiting.flatMap((w) => (w.mode === 'group' ? w.people : [{ id: w.id, nickname: w.nickname, avatar: w.avatar }])).slice(-24);
+  const people = waiting.flatMap((w) => (w.mode === 'group' ? w.people : [{ id: w.id, nickname: w.nickname, avatar: w.avatar, fanClub: w.fanClub, fanLevel: w.fanLevel }])).slice(-24);
   return showWelcome({ kind: 'welcome', mode: 'group', people, durationMs: 3600 });
 });
 /** Một hiệu ứng → đúng nơi hiển thị. Dùng chung cho hiệu ứng từ server và cho __stage.inject khi chụp ảnh. */
