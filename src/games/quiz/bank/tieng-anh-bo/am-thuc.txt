@@ -335,7 +335,7 @@ DIM SUM | Bữa điểm tâm gồm các món bánh hấp hoặc chiên trong x�
 WONTON | Hoành thánh sủi cảo nhân thịt tôm nước dùng thanh | 1
 BIBIMBAP | Món cơm trộn nóng hổi đựng trong thố đá đủ màu sắc của Hàn Quốc | 2
 BULGOGI | Món thịt bò xào thái mỏng ướp sốt ngọt trứ danh của Hàn Quốc | 2
-TTEOKBOKKI | Thanh bánh gạo dai nấu sốt ớt đỏ cay ngọt của Hàn Quốc | 1 | TOPOKKI
+TTEOKBOKKI | Thanh bánh gạo dai nấu sốt ớt đỏ cay ngọt của Hàn Quốc | 1 | TOPOKKI, TOKBOKKI, TEOKBOKKI
 SHAWARMA | Món bánh mì cuộn kẹp thịt nướng xiên quay cắt lát của Trung Đông | 2
 FALAFEL | Món chả viên đậu gà tẩm gia vị chiên giòn rụm của Trung Đông | 3
 HUMMUS | Món xốt chấm béo ngậy làm từ hạt đậu gà nghiền mịn trộn mè của Ả Rập | 2
