@@ -80,11 +80,9 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
   // và normalizeRules sẽ chặn vì "mỗi món quà chỉ một chế độ".
   for (const r of rules) if (r.enabled === false || !ENGLISH_TARGETS[r.to]) taken.add(idOf(r));
   const changes = [];
-  let enabledIndex = 0;
   const out = rules.map((r) => {
     if (r.enabled === false || !ENGLISH_TARGETS[r.to]) return r; // ô tắt: giữ nguyên, không chiếm quà
-    const isPage2or3 = enabledIndex >= 7 || ORDER.indexOf(r.to) >= 7;
-    enabledIndex += 1;
+    const isPage2or3 = ORDER.indexOf(r.to) >= 7;
     const base = next.base[r.to] ?? Math.max(isPage2or3 ? MIN_PAGE_2_3_COINS : 0, coinsOf(r));
 
     if (r.to === heartTo) {

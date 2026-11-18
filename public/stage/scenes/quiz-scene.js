@@ -8,7 +8,7 @@ import { giftCardTier } from '../stage-hud.js';
 
 const MODES = {
   lophoc: { icon: '📚', title: 'LỚP HỌC CHỮ', color: '#ffd36b', bg: '#0b1a16',
-    hint: ['Gõ ', '*đáp án*', ' vào bình luận (không dấu cũng được) · 6 bạn nhanh nhất được điểm'] },
+    hint: ['Gõ ', '*đáp án*', ' vào bình luận (không dấu cũng được) · 6 bạn nhanh nhất được ', '*10·7·5·3·3·3 điểm*'] },
   dovui: { icon: '🏆', title: 'ĐỐ VUI A·B·C·D', color: '#6ee7ff', bg: '#071528',
     hint: ['Bình luận ', '*A, B, C hoặc D*', ' · chỉ tính lần chọn đầu · đúng nhanh nhất được ', '*10 điểm*'] },
   english: { icon: '🔤', title: 'TỪ VỰNG TIẾNG ANH', color: '#7dff8a', bg: '#0b1630',

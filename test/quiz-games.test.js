@@ -93,12 +93,12 @@ test('quiz English: every topic word is asked before any of the 176 old basic wo
   assert.ok(drawn.slice(english.length).every((q) => !q.basic)); // vòng mới lại bắt đầu bằng bộ theo chủ đề
 });
 
-test('quiz text: accent-free answers count, 5 fastest get 10/7/5/3/3, reveal 5 s after the first correct', () => {
+test('quiz text: accent-free answers count, 6 fastest get 10/7/5/3/3/3, reveal 5 s after the first correct', () => {
   const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Ngủ nướng'), textQ('Mèo')) });
   game.tick(0);
   assert.equal(game.snapshot(0).phase, 'question');
   game.handleEvent(chat(9, 'ngủ say'), 100); // sai
-  const scored = [1, 2, 3, 4, 5, 6].map((n) => game.handleEvent(chat(n, n % 2 ? 'ngu nuong' : 'NGỦ NƯỚNG!!'), 200 + n));
+  const scored = [1, 2, 3, 4, 5, 6, 7].map((n) => game.handleEvent(chat(n, n % 2 ? 'ngu nuong' : 'NGỦ NƯỚNG!!'), 200 + n));
   assert.deepEqual(scored.map((fx) => fx[0].points), [...POINTS, 1]);
   assert.equal(game.handleEvent(chat(1, 'ngu nuong'), 300).length, 0); // đã đúng thì không cộng lần hai
   assert.equal(game.snapshot(1000).answer, ''); // chưa lật đáp án khi còn đang hỏi

@@ -8,7 +8,7 @@
 import { giftTier } from '../../../public/shared/gift-tiers.js';
 import { createCooldown, foldText, isCleanForDisplay } from '../text-match.js';
 
-export const POINTS = [10, 7, 5, 3, 3]; // 5 người đúng nhanh nhất; ai đúng sau nữa +1
+export const POINTS = [10, 7, 5, 3, 3, 3]; // 6 người đúng nhanh nhất; ai đúng sau nữa +1
 const LATE_POINTS = 1;
 const MAX_TRIES = 6; // mỗi người tối đa 6 lần đoán mỗi câu (chống dội bình luận)
 const FIRST_CORRECT_GRACE_MS = 5000; // có người đúng rồi thì chờ thêm 5 giây cho người khác rồi lật đáp án
