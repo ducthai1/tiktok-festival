@@ -69,8 +69,13 @@ Repo này **công khai**. Những thứ sau chỉ ở trên máy, đã nằm tro
 - **Thẻ quà đổi đề** (`stage-hud.js` giftCard) nằm CÙNG CHỖ thẻ chào người mới và ƯU TIÊN hơn: đang hiện thẻ quà thì lời chào chờ
   (`stage-main.js` welcomeWaiting). 5 bậc theo giá thật món quà: 1 · 2–9 · 10–19 · 20–29 · 30+ xu.
 
-## 4. Đang live — quy tắc
+## 4. Đang live — quy tắc (NGHIÊM CẤM TÁC ĐỘNG VÀO PORT 3939)
 
+- ⛔ **QUY TẮC BẤT DI BẤT DỊCH: KHI ĐANG CÓ PHIÊN LIVE, TUYỆT ĐỐI KHÔNG ĐƯỢC TỰ Ý TÁC ĐỘNG VÀO PORT 3939 NẾU CHƯA CÓ SỰ ĐỒNG Ý RÕ RÀNG TỪ CHỦ KÊNH.**
+  - **CẤM** tự ý restart server (kể cả graceful restart qua debugger, SIGUSR1, SIGTERM hay SIGKILL).
+  - **CẤM** tự ý kết nối WebSocket hay HTTP vào port 3939 để gửi lệnh (đổi game, đổi season, reload, settings...) khi chưa được chủ kênh yêu cầu rõ ràng.
+  - **CẤM** can thiệp, bắn request thử nghiệm hay gửi payload điều khiển vào cổng đang live.
+  - Mọi thao tác sửa đổi, cập nhật hay khởi động lại phải HỎI Ý KIẾN VÀ ĐƯỢC SỰ ĐỒNG Ý CỦA CHỦ KÊNH trước khi chạm vào port 3939.
 - **Không sửa code, không cho AI sửa code trên máy đang live, không `git pull` giữa buổi.** Làm trên bản clone khác; chỉ cập nhật máy live
   giữa hai buổi: Ctrl+C → `git pull` → `npm ci` (nếu package-lock đổi) → `npm start`.
 - Bảng điểm, trạng thái game nằm trong bộ nhớ (+ `data/hot-backup.json`); khởi động lại giữa buổi có thể mất một phần.
