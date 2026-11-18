@@ -60,21 +60,6 @@
   box-shadow: 0 0 35px rgba(10, 35, 20, 0.6), 0 16px 45px rgba(0, 0, 0, 0.75), inset 0 0 40px rgba(0, 0, 0, 0.55);
 }
 
-/* 🎀 Dải ruy băng TRI ÂN THẦY CÔ · 20/11 vắt giữa đỉnh bảng */
-#stage.teacher .quiz-card::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -18px;
-  width: 280px;
-  height: 50px;
-  background: var(--t-banner) center / contain no-repeat;
-  z-index: 5;
-  pointer-events: none;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7));
-}
-
 /* 🪵🧽🖍️ Khay rãnh phấn ở chân bảng: có CÁI LAU BẢNG và CÁC VIÊN PHẤN */
 #stage.teacher .quiz-card::after {
   content: '';
