@@ -274,7 +274,7 @@ test('english gifts: a gift cheaper than the price on the panel never switches (
   assert.equal(englishTargetFor(a, { name: 'Finger Heart', diamondsEach: 5 }), 'dongvat');
   assert.equal(englishTargetFor(a, { name: "You're awesome", diamondsEach: 1 }), 'hard'); // giờ ghi đúng giá thật 1 xu (13/11 từng ghi 5 xu)
   assert.equal(englishTargetFor(a, { id: '9947', name: 'Vòng cổ tình bạn', diamondsEach: 10 }), 'toeic'); // tên tiếng Việt: nhận theo id quà thật
-  assert.equal(englishTargetFor(a, { name: 'Love you so much', diamondsEach: 1 }), 'tinhyeu');
+  assert.equal(englishTargetFor(a, { name: 'Love in Scent', diamondsEach: 5 }), 'tinhyeu');
   assert.equal(englishTargetFor(a, { name: 'Wink wink', diamondsEach: 1 }), null);
   assert.equal(englishTargetFor(a, { name: 'Ice Cream Cone', diamondsEach: 1 }), 'normal'); // ⚖️ về độ khó Thường
   assert.equal(englishTargetFor(a, { name: 'GG', diamondsEach: 1 }), null);

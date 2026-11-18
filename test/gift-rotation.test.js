@@ -3,7 +3,7 @@ import test from 'node:test';
 import { giftOptions, normalizeRules } from '../src/games/quiz/english-gift-rules.js';
 import { CHEAP_MAX_COINS, CHEAP_TARGETS, FANCLUB_GIFT_ID, MAX_ROUNDS_AWAY, emptyRotation, hottestGift, rotateGifts }
   from '../src/games/quiz/gift-rotation.js';
-import { defaultEnglishRules } from '../public/shared/english-sets.js';
+import { defaultEnglishRules, ORDER } from '../public/shared/english-sets.js';
 
 const options = giftOptions([]);
 const base = () => defaultEnglishRules().filter((r) => r.enabled !== false);
@@ -101,5 +101,19 @@ test('quà xoay vào phải là món người xem tìm được trong hộp quà
       if (r.gift.id === FANCLUB_GIFT_ID) continue; // Heart Me nằm ngoài hộp quà chung, chủ kênh chủ động chọn
       assert.ok(findable.has(String(r.gift.id)), `ô ${r.to} nhận món ngoài hộp quà: ${r.gift.name}`);
     }
+  }
+});
+
+test('trang 2 và 3 ít nhất phải là 5 kim cương, không bao giờ nhận món 1 xu (trừ Heart Me khi là ô hot)', () => {
+  let rules = base();
+  let state = emptyRotation();
+  for (let round = 0; round < 15; round += 1) {
+    ({ rules, state } = rotateGifts({ rules, options, counts: {}, state, random: seeded([0.1, 0.4, 0.7, 0.2, 0.9]) }));
+    rules.forEach((r, idx) => {
+      if (idx >= 7 || ORDER.indexOf(r.to) >= 7) {
+        if (r.gift.id === FANCLUB_GIFT_ID) return; // ngoại lệ Heart Me khi là ô hot
+        assert.ok(r.gift.coins >= 5, `vòng ${round + 1}: ô ${r.to} ở trang 2/3 nhận món ${r.gift.name} (${r.gift.coins} xu) < 5 xu`);
+      }
+    });
   }
 });

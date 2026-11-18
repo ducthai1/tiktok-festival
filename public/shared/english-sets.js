@@ -30,7 +30,7 @@ export const ENGLISH_GIFT_PLAN = {
   dulich: 'Journey Pass', giaitri: 'Divine Fingers',
   // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
   normal: 'Ice Cream Cone',
-  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love you so much', bian: 'Lyric Mail',
+  vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail',
   nghenghiep: 'Bravo!', nhacua: 'Tiny Blush'
 };
 /** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */

@@ -11,7 +11,7 @@
 //
 // Chỉ chọn quà người xem TÌM ĐƯỢC: món ai cũng thấy trong hộp quà (panel), hoặc phòng đã từng
 // nhận (seen). Riêng Heart Me nằm ngoài hộp quà chung nhưng chủ kênh chủ động chọn nên vẫn dùng.
-import { ENGLISH_TARGETS } from '../../../public/shared/english-sets.js';
+import { ENGLISH_TARGETS, ORDER } from '../../../public/shared/english-sets.js';
 
 /** 20 phút một vòng: đủ lâu để người xem kịp thấy và tặng, buổi 3 tiếng được ~9 vòng. */
 export const ROTATE_MS = 20 * 60 * 1000;
@@ -20,6 +20,8 @@ export const FANCLUB_GIFT_ID = '7934';
 /** Ô độ khó: lối vào của người mới, luôn giữ ≤ 5 xu. */
 export const CHEAP_TARGETS = ['general', 'easy', 'normal', 'hard'];
 export const CHEAP_MAX_COINS = 5;
+/** Quà ở trang 2 và 3 tối thiểu phải là 5 xu (không bao giờ random 1 xu vào, trừ Heart Me hot). */
+export const MIN_PAGE_2_3_COINS = 5;
 /** Lệch khỏi giá gốc quá bấy nhiêu vòng thì vòng sau phải quay về. */
 export const MAX_ROUNDS_AWAY = 2;
 
@@ -56,8 +58,14 @@ export function hottestGift(counts = {}) {
  */
 export function rotateGifts({ rules, options, counts = {}, state = emptyRotation(), random = Math.random }) {
   const next = { ...emptyRotation(), ...state, base: { ...state.base }, away: { ...state.away } };
-  // Lần chạy đầu: giá đang có chính là giá gốc của từng ô.
-  for (const r of rules) if (next.base[r.to] === undefined) next.base[r.to] = coinsOf(r);
+  // Lần chạy đầu: giá đang có chính là giá gốc của từng ô (ô trang 2 & 3 tối thiểu là 5 xu).
+  for (const r of rules) {
+    if (next.base[r.to] === undefined) {
+      const isP23 = ORDER.indexOf(r.to) >= 7;
+      const c = coinsOf(r);
+      next.base[r.to] = isP23 ? Math.max(MIN_PAGE_2_3_COINS, c) : c;
+    }
+  }
 
   const candidates = pool(options);
   const heartGift = options.find((g) => String(g.id) === FANCLUB_GIFT_ID);
@@ -72,9 +80,12 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
   // và normalizeRules sẽ chặn vì "mỗi món quà chỉ một chế độ".
   for (const r of rules) if (r.enabled === false || !ENGLISH_TARGETS[r.to]) taken.add(idOf(r));
   const changes = [];
+  let enabledIndex = 0;
   const out = rules.map((r) => {
     if (r.enabled === false || !ENGLISH_TARGETS[r.to]) return r; // ô tắt: giữ nguyên, không chiếm quà
-    const base = next.base[r.to] ?? coinsOf(r);
+    const isPage2or3 = enabledIndex >= 7 || ORDER.indexOf(r.to) >= 7;
+    enabledIndex += 1;
+    const base = next.base[r.to] ?? Math.max(isPage2or3 ? MIN_PAGE_2_3_COINS : 0, coinsOf(r));
 
     if (r.to === heartTo) {
       next.away[r.to] = (next.base[r.to] === 1 ? 0 : MAX_ROUNDS_AWAY); // 1 xu rồi thì coi như đúng giá gốc
@@ -87,8 +98,15 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
     const cheap = CHEAP_TARGETS.includes(r.to);
     const mustReturn = !cheap && (next.away[r.to] || 0) >= MAX_ROUNDS_AWAY;
     let allowed = candidates.filter((g) => !taken.has(String(g.id)) && String(g.id) !== idOf(r));
-    if (cheap) allowed = allowed.filter((g) => Number(g.coins) <= CHEAP_MAX_COINS);
-    else if (mustReturn) allowed = allowed.filter((g) => Number(g.coins) === base);
+    if (cheap) {
+      allowed = allowed.filter((g) => Number(g.coins) <= CHEAP_MAX_COINS);
+    } else if (isPage2or3) {
+      // Trang 2 và 3 ít nhất phải là 5 kim cương, KHÔNG ĐƯỢC random 1 kim cương vào
+      allowed = allowed.filter((g) => Number(g.coins) >= MIN_PAGE_2_3_COINS);
+      if (mustReturn) allowed = allowed.filter((g) => Number(g.coins) === base);
+    } else if (mustReturn) {
+      allowed = allowed.filter((g) => Number(g.coins) === base);
+    }
     if (!allowed.length) { // không còn món hợp lệ → giữ nguyên ô, lần sau tính lại
       taken.add(idOf(r));
       return r;

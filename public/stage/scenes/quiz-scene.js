@@ -8,11 +8,11 @@ import { giftCardTier } from '../stage-hud.js';
 
 const MODES = {
   lophoc: { icon: '📚', title: 'LỚP HỌC CHỮ', color: '#ffd36b', bg: '#0b1a16',
-    hint: ['Gõ ', '*đáp án*', ' vào bình luận (không dấu cũng được) · 5 bạn nhanh nhất được ', '*10·7·5·3·3 điểm*'] },
+    hint: ['Gõ ', '*đáp án*', ' vào bình luận (không dấu cũng được) · 6 bạn nhanh nhất được điểm'] },
   dovui: { icon: '🏆', title: 'ĐỐ VUI A·B·C·D', color: '#6ee7ff', bg: '#071528',
     hint: ['Bình luận ', '*A, B, C hoặc D*', ' · chỉ tính lần chọn đầu · đúng nhanh nhất được ', '*10 điểm*'] },
   english: { icon: '🔤', title: 'TỪ VỰNG TIẾNG ANH', color: '#7dff8a', bg: '#0b1630',
-    hint: ['Đọc nghĩa tiếng Việt, ', '*gõ từ tiếng Anh*', ' · 5 bạn nhanh nhất được điểm'] },
+    hint: ['Đọc nghĩa tiếng Việt, ', '*gõ từ tiếng Anh*', ' · 6 bạn nhanh nhất được điểm'] },
   emoji: { icon: '🧩', title: 'ĐUỔI HÌNH BẮT CHỮ', color: '#ff9bd2', bg: '#1d0b26',
     hint: ['Nhìn emoji, ', '*gõ cụm từ*', ' · không dấu cũng được'] },
   flag: { icon: '🚩', title: 'ĐOÁN QUỐC KỲ', color: '#ff7a6b', bg: '#1a0d0b',
@@ -372,7 +372,7 @@ export function createQuizScene({ hud, labels, audio, pipeline, id }) {
   const rulesKey = { dovui: 'abcd', wordle: 'wordle', math: 'math', english: 'english', emoji: 'emoji' }[id] || 'text';
   const howLine = rich(['✍️ ', ...mode.hint], 'how');
   // 🎧 Luyện nghe (tab tiếng Anh): đổi dòng hướng dẫn cho đúng cách chơi
-  const listenHow = rich(['🎧 Nghe giọng bản xứ (đọc 3 lần), ', '*gõ lại từ tiếng Anh*', ' · 5 bạn nhanh nhất được điểm'], 'how');
+  const listenHow = rich(['🎧 Nghe giọng bản xứ (đọc 3 lần), ', '*gõ lại từ tiếng Anh*', ' · 6 bạn nhanh nhất được điểm'], 'how');
   listenHow.hidden = true;
   // người xem hay hỏi "app gì, tải ở đâu, web gì" → ghi rõ: chỉ có trên live này
   const exclusive = el('div', 'exclusive');
