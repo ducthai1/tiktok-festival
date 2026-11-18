@@ -1,7 +1,7 @@
 /* 💐 Chủ đề NGÀY NHÀ GIÁO VIỆT NAM 20/11 — chọn ở trang điều khiển (settings.season = 'teacher' → #stage.teacher).
    Phong cách lớp học truyền thống Việt Nam:
-   - Bảng xanh rêu phấn trắng (Deep slate green chalkboard) có lưới ô ly và vệt lau bụi phấn mờ.
-   - Khung gỗ ấm học đường (Warm school teak wood frame) viền phào chỉ 2 lớp.
+   - Bảng xanh rêu phấn trắng (Deep matte slate green chalkboard) - mặt bảng mịn màng, KHÔNG sọc chéo, chống lóa.
+   - Khung gỗ ấm học đường (Warm school teak wood frame) viền phào chỉ 2 lớp dày dặn.
    - Máng khay đựng phấn (Chalk tray) ở chân bảng.
    - CÁI LAU BẢNG (Chalkboard Eraser) nỉ gỗ kinh điển bám bụi phấn.
    - BÓ PHẤN VIẾT BẢNG (Chalk sticks: phấn trắng, phấn vàng, phấn hồng, phấn xanh).
@@ -12,11 +12,11 @@
 
 #stage.teacher {
   --quiz: #4ade80;
-  --t-wood-frame: #633b1f;
-  --t-wood-dark: #3a1f0c;
-  --t-wood-light: #8c552b;
-  --t-board-fill: linear-gradient(180deg, rgba(14, 38, 26, 0.96), rgba(8, 24, 16, 0.96));
-  --t-board-green: #0f2c1d;
+  --t-wood-frame: #683d1c;
+  --t-wood-dark: #381e0a;
+  --t-wood-light: #8f5528;
+  --t-board-fill: radial-gradient(ellipse at 50% 40%, rgba(18, 48, 32, 0.98), rgba(9, 25, 17, 0.98));
+  --t-board-green: #113121;
 
   /* 🧽 CÁI LAU BẢNG (Chalkboard Eraser): nỉ dạ dày có vệt phấn, tay cầm gỗ dập chữ LAU BẢNG */
   --t-eraser: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 48' width='120' height='48'><defs><linearGradient id='ew' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%23c2834b'/><stop offset='50%' stop-color='%238f5326'/><stop offset='100%' stop-color='%235c3111'/></linearGradient><linearGradient id='ef' x1='0' y1='0' x2='0' y2='1'><stop offset='0%' stop-color='%233a3d40'/><stop offset='100%' stop-color='%231e2022'/></linearGradient></defs><rect x='6' y='22' width='108' height='20' rx='4' fill='url(%23ef)' stroke='%23222' stroke-width='1'/><rect x='10' y='36' width='100' height='3.5' rx='1.5' fill='rgba(255,255,255,0.55)'/><line x1='14' y1='34' x2='44' y2='34' stroke='rgba(255,255,255,0.35)' stroke-width='1.5' stroke-linecap='round'/><rect x='3' y='4' width='114' height='20' rx='5' fill='url(%23ew)' stroke='%2342210b' stroke-width='1.5'/><rect x='18' y='7' width='84' height='4' rx='2' fill='rgba(255,255,255,0.25)'/><text x='60' y='18' font-family='sans-serif' font-weight='900' font-size='9.5' fill='%23fff5ea' text-anchor='middle' letter-spacing='1.5'>LAU BẢNG</text></svg>");
@@ -47,17 +47,17 @@
 
 /* ==========================================================================
    1. THẺ CÂU HỎI: BẢNG XANH PHẤN TRẮNG, KHUNG GỖ TRƯỜNG HỌC, KHAY PHẤN + LAU BẢNG
+   (Mặt bảng sạch sẽ, phẳng mịn, KHÔNG lưới sọc chéo gây đau mắt)
    ========================================================================== */
 #stage.teacher .quiz-card {
-  border: 6px solid #6b3e1f;
-  outline: 3px solid #3d200e;
-  border-radius: 28px;
+  border: 7px solid #683d1c;
+  outline: 3px solid #381e0a;
+  border-radius: 26px;
   background:
-    radial-gradient(ellipse at 88% 90%, rgba(255, 255, 255, 0.12) 0%, transparent 45%),
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 36px 36px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px) 0 0 / 36px 36px,
+    radial-gradient(ellipse at 85% 90%, rgba(255, 255, 255, 0.05) 0%, transparent 40%),
+    radial-gradient(ellipse at 15% 15%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
     var(--t-board-fill);
-  box-shadow: 0 0 45px rgba(18, 64, 36, 0.65), 0 16px 45px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 0 35px rgba(10, 35, 20, 0.6), 0 16px 45px rgba(0, 0, 0, 0.75), inset 0 0 40px rgba(0, 0, 0, 0.55);
 }
 
 /* 🎀 Dải ruy băng TRI ÂN THẦY CÔ · 20/11 vắt giữa đỉnh bảng */
@@ -114,7 +114,7 @@
 
 /* Thể loại câu hỏi (Nhãn vở học sinh) */
 #stage.teacher .quiz-cat {
-  background: rgba(14, 46, 28, 0.92);
+  background: rgba(14, 46, 28, 0.95);
   border: 2px solid #ffd54f;
   color: #ffe082;
   box-shadow: 0 0 14px rgba(255, 213, 79, 0.35);
@@ -141,9 +141,9 @@
 
 /* Các ô đáp án: như những tấm bảng con của học sinh */
 #stage.teacher .quiz-opt {
-  background: rgba(12, 34, 22, 0.88);
-  border: 2px solid rgba(255, 230, 110, 0.4);
-  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.55);
+  background: rgba(14, 40, 28, 0.92);
+  border: 2px solid rgba(255, 224, 130, 0.45);
+  box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.55);
 }
 #stage.teacher .quiz-opt .letter {
   background: #ffe082;
@@ -156,9 +156,9 @@
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
 }
 #stage.teacher .quiz-opt.right {
-  background: rgba(30, 120, 60, 0.55);
+  background: rgba(30, 120, 60, 0.6);
   border-color: #4ade80;
-  box-shadow: 0 0 25px rgba(74, 222, 128, 0.65);
+  box-shadow: 0 0 25px rgba(74, 222, 128, 0.7);
 }
 
 /* Chân bảng câu hỏi: nét đứt phấn trắng */
@@ -178,7 +178,7 @@
 }
 #stage.teacher .quiz-energy .fill {
   border-radius: 3px;
-  background: linear-gradient(90deg, rgba(255, 230, 100, 0.8), rgba(255, 120, 50, 0.9));
+  background: linear-gradient(90deg, rgba(255, 230, 100, 0.85), rgba(255, 120, 50, 0.95));
   box-shadow: 0 0 14px rgba(255, 200, 60, 0.85);
 }
 #stage.teacher .quiz-energy .heart {
@@ -187,20 +187,20 @@
 }
 
 /* ==========================================================================
-   3. BẢNG PHỤ LỚP HỌC: BẢNG ĐỔI BỘ ĐỀ, BẢNG BÌNH LUẬN, BẢNG ĐIỂM
+   3. BẢNG PHỤ LỚP HỌC: BẢNG ĐỔI BỘ ĐỀ, BẢNG BÌNH LUẬN, BẢNG ĐIỂM, BẢNG VÀNG
+   (Đồng bộ khung gỗ học đường + mặt bảng xanh viết phấn mịn, KHÔNG sọc)
    ========================================================================== */
 #stage.teacher .deck-panel,
 #stage.teacher .quiz-ambassadors,
 #stage.teacher.theme-quiz #hud > #board,
 #stage.teacher .quiz-comments {
-  border: 4px solid #6b3e1f;
-  outline: 2px solid #3d200e;
+  border: 5px solid #683d1c;
+  outline: 2px solid #381e0a;
   border-radius: 20px;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 32px 32px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 32px 32px,
+    radial-gradient(ellipse at 80% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 45%),
     var(--t-board-fill);
-  box-shadow: 0 0 25px rgba(18, 64, 36, 0.45), 0 10px 25px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 25px rgba(10, 35, 20, 0.45), 0 10px 25px rgba(0, 0, 0, 0.65), inset 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 /* Bảng đổi bộ đề: góc kẹp thước ê-ke và compa */
@@ -231,6 +231,18 @@
   font-weight: 900;
 }
 
+/* Các ô quà đổi đề trong bảng tiếng Anh */
+#stage.teacher .deck-rule {
+  background: rgba(14, 42, 28, 0.9);
+  border: 1.5px solid rgba(255, 224, 130, 0.35);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#stage.teacher .deck-rule.on {
+  background: rgba(30, 110, 55, 0.65);
+  border-color: #4ade80;
+  box-shadow: 0 0 16px rgba(74, 222, 128, 0.6);
+}
+
 /* Bảng bình luận: Sổ nộp bài học sinh */
 #stage.teacher .quiz-comments-title {
   color: #ffe082;
@@ -240,13 +252,20 @@
 #stage.teacher .quiz-comments-title::before {
   content: '📝 ';
 }
+#stage.teacher .quiz-comment-item {
+  background: rgba(14, 38, 26, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+#stage.teacher .quiz-comment-item.ok {
+  background: rgba(30, 110, 55, 0.45);
+  border-color: rgba(74, 222, 128, 0.6);
+}
 
 /* Bảng vàng điểm số / thi đua */
 #stage.teacher.theme-quiz #hud > #board {
   background:
     var(--t-bookrose) left 6px top 4px / 30px no-repeat,
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 32px 32px,
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px) 0 0 / 32px 32px,
+    radial-gradient(ellipse at 80% 80%, rgba(255, 255, 255, 0.04) 0%, transparent 45%),
     var(--t-board-fill);
 }
 #stage.teacher.theme-quiz #hud > #board h3 {
@@ -271,15 +290,23 @@
   font-weight: 900;
 }
 
+/* Topbar chip học đường */
+#stage.teacher #topbar .chip {
+  background: rgba(14, 40, 26, 0.95);
+  border: 2px solid #8f5528;
+  color: #ffe082;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
 /* ==========================================================================
    4. THẺ CHÀO MỪNG: THIỆP TRI ÂN 20/11 / SỔ KHEN THƯỞNG HỌC SINH
    ========================================================================== */
 #stage.teacher.theme-quiz #hud > #welcome {
   --line: #ffd54f;
   --line-2: #ffe082;
-  background: linear-gradient(120deg, #b71c1c, #d32f2f 45%, #7f0000);
-  border: 2px solid #ffd54f;
-  box-shadow: 0 0 30px rgba(211, 47, 47, 0.8), 0 12px 32px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(135deg, #7a0000, #b71c1c 45%, #520000);
+  border: 3px solid #ffd54f;
+  box-shadow: 0 0 30px rgba(183, 28, 28, 0.75), 0 12px 32px rgba(0, 0, 0, 0.6);
   border-radius: 20px;
 }
 #stage.teacher.theme-quiz #welcome .kicker {
