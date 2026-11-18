@@ -234,9 +234,9 @@ export function createHud() {
         const sled = el('span', 'sled', '🛷');
         sled.append(el('span', 'santa', '🎅'));
         ride.append(el('span', 'deer', '🦌'), el('span', 'deer', '🦌'), el('span', 'reins'), sled, el('span', 'trail', '✨'));
-      } else ride.append(el('span', 'dove', '🕊️'), el('span', 'bouquet', '💐'), el('span', 'trail', '✨'));
+      } else ride.append(el('span', 'dove', '🕊️'), el('span', 'bouquet', '💐'), el('span', 'banner-teacher', '20/11 🎓'), el('span', 'trail', '✨'));
       $('hud').append(ride);
-      const GIFTS = xmas ? ['🎁', '🎁', '🎁', '🍬', '⭐', '🎀', '🍭'] : ['🌸', '🌷', '💮', '🌸', '🌼', '🌹', '🌸'];
+      const GIFTS = xmas ? ['🎁', '🎁', '🎁', '🍬', '⭐', '🎀', '🍭'] : ['💐', '💯', '🌹', '⭐', '🌺', '🎖️', '📝', '✨'];
       let n = 0;
       const drop = setInterval(() => {
         const p = (performance.now() - now) / FLY_MS;

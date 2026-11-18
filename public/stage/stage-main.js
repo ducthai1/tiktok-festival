@@ -27,7 +27,7 @@ const SCENES = {
 const stageEl = document.getElementById('stage');
 // Chủ đề mùa (chọn ở trang điều khiển): 🎄 Giáng sinh (xmas.css — tuyết, khung kẹo gậy, dây lá thông…) · 💐 20/11 (teacher.css —
 // cánh hoa rơi, khung hoa…) + nhạc của mùa (stage-music.js). Lớp rơi (#snow) dựng lại khi đổi mùa.
-const FALLING = { christmas: ['❄', '❄', '•'], teacher: ['🌸', '💮', '🌸', '🌼'] };
+const FALLING = { christmas: ['❄', '❄', '•'], teacher: ['✨', '🌹', '💯', '💐', '✨', '⭐', '💮', '📝'] };
 let snow = null;
 let snowSeason = '';
 function applySeason() {
