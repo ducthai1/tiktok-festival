@@ -170,7 +170,7 @@ COMEDIAN | Nghệ sĩ hài mang tiếng cười cho khán giả | 1 | STAND-UP C
 BALLET | Vở vũ kịch múa ba lê kinh điển trên mũi chân | 2 | CLASSICAL BALLET
 OPERA | Vở nhạc kịch thính phòng cổ điển giọng vang dội | 2 | OPERA PLAY
 CHOREOGRAPHY | Biên đạo múa dàn dựng đội hình nhảy | 3 | DANCE ROUTINE
-CLOWN | Chú hề mặt trắng mũi đỏ làm trò cười | 1 | JESTER
+CLOWN | Chú hề mặt trắng mũi đỏ làm trò cười | 1 | JESTER, CLON, CLƠN
 JUGGLER | Nghệ sĩ xiếc tung hứng nhiều trái bóng khéo léo | 2 | TOSS JUGGLER
 ACROBAT | Nghệ sĩ nhào lộn uốn dẻo đu dây trên không | 2 | GYMNAST
 PUPPET | Con rối gỗ hoặc rối bóng cử động theo dây | 1 | MARIONETTE
