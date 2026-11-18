@@ -8,8 +8,7 @@
 import { giftTier } from '../../../public/shared/gift-tiers.js';
 import { createCooldown, foldText, isCleanForDisplay } from '../text-match.js';
 
-export const POINTS = [10, 7, 5, 3, 3, 3]; // 6 người đúng nhanh nhất; ai đúng sau nữa +1
-const LATE_POINTS = 1;
+export const POINTS = [10, 7, 5, 3, 3, 3]; // đúng 6 bạn nhanh nhất mới được điểm, không có người thứ 7
 const MAX_TRIES = 6; // mỗi người tối đa 6 lần đoán mỗi câu (chống dội bình luận)
 const FIRST_CORRECT_GRACE_MS = 5000; // có người đúng rồi thì chờ thêm 5 giây cho người khác rồi lật đáp án
 export const LEAD_IN_MS = 2000; // đề hiện rồi mới bắt đầu đếm ngược (người xem thấy đề trễ 1–2 giây)
@@ -296,8 +295,8 @@ export function createQuizGame({
     listenAt = []; // lật sớm (đủ người đúng / bấm câu tiếp) thì thôi đọc lại
     if (kind === 'abcd') {
       const right = [...votes.values()].filter((v) => v.idx === rightIndex).sort((a, b) => a.at - b.at);
-      winners = right.map((v, rank) => {
-        const points = (POINTS[rank] ?? LATE_POINTS) * mult();
+      winners = right.slice(0, POINTS.length).map((v, rank) => {
+        const points = POINTS[rank] * mult();
         addPoints(v.user, points);
         return { id: v.user.id, nickname: v.user.nickname, avatar: v.user.avatar, points };
       });
@@ -346,6 +345,7 @@ export function createQuizGame({
 
   // ---- trả lời ----
   function onText(user, comment, now, fx) {
+    if (winners.length >= POINTS.length) return; // Chỉ 6 bạn nhanh nhất mới được điểm
     if (winners.some((w) => w.id === user.id)) return;
     const n = (tries.get(user.id) || 0) + 1;
     tries.set(user.id, n);
@@ -357,7 +357,7 @@ export function createQuizGame({
       const compact = said.replace(/ /g, '');
       if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) return;
     }
-    const points = (POINTS[winners.length] ?? LATE_POINTS) * mult();
+    const points = POINTS[winners.length] * mult();
     addPoints(user, points);
     winners.push({ id: user.id, nickname: user.nickname, avatar: user.avatar, points, ms: now - phaseStart });
     if (!firstCorrectAt) firstCorrectAt = now;
@@ -554,7 +554,7 @@ export function createQuizGame({
         // Chỉ cho phép kết thúc sớm khi bảng top (6 người) đã kín và đã qua 5s kể từ câu đúng đầu tiên
         // Nếu mới có 1-5 người đúng thì để thời gian chạy tiếp cho mọi người kịp gõ đáp án
         const graceOver = kind === 'text' && firstCorrectAt && winners.length >= 6 && now - firstCorrectAt >= FIRST_CORRECT_GRACE_MS;
-        if (now >= phaseEnd + LATE_MS || graceOver || (kind === 'text' && winners.length >= 12)) reveal(now, fx);
+        if (now >= phaseEnd + LATE_MS || graceOver) reveal(now, fx);
       } else if (phase === 'reveal' && now >= phaseEnd) startQuestion(now, fx);
       return fx;
     },

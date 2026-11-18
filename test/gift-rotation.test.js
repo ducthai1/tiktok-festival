@@ -44,9 +44,9 @@ test('ô được tặng nhiều nhất đổi thành Heart Me để kéo thêm 
   assert.equal(out.rules.filter((r) => r.gift.id === FANCLUB_GIFT_ID).length, 1);
 });
 
-test('chưa ai tặng quà thì không ô nào bị ép thành Heart Me', () => {
+test('trong random đổi quà bắt buộc luôn luôn có 1 nơi có sự hiện diện của Heart Me (kể cả chưa ai tặng)', () => {
   const out = rotateGifts({ rules: base(), options, counts: {}, random: seeded([0.5]) });
-  assert.equal(out.rules.filter((r) => r.gift.id === FANCLUB_GIFT_ID).length, 0);
+  assert.equal(out.rules.filter((r) => r.gift.id === FANCLUB_GIFT_ID).length, 1);
   assert.equal(out.state.hot, null);
 });
 

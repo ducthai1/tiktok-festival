@@ -68,11 +68,24 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
   }
 
   const candidates = pool(options);
-  const heartGift = options.find((g) => String(g.id) === FANCLUB_GIFT_ID);
+  const heartGift = options.find((g) => String(g.id) === FANCLUB_GIFT_ID)
+    || { id: FANCLUB_GIFT_ID, name: 'Heart Me', coins: 1, image: 'https://p16-webcast.tiktokcdn.com/img/maliva/webcast-va/d56945782445b0b8c8658ed44f894c7b~tplv-resize:258:258.webp' };
   const hot = hottestGift(counts);
-  // Ô đang giữ món hot → ô đó nhận Heart Me vòng này. Món hot chính là Heart Me thì không phải đổi.
-  const heartTo = hot && heartGift && hot.id !== FANCLUB_GIFT_ID
-    ? rules.find((r) => r.enabled !== false && idOf(r) === hot.id)?.to || '' : '';
+
+  // Heart Me: BẮT BUỘC LUÔN LUÔN CÓ MẶT Ở 1 Ô TRÊN BẢNG QUÀ
+  // - Nếu có món hot (khác Heart Me) → ô món hot đổi thành Heart Me
+  // - Nếu chưa có món hot hoặc món hot chính là Heart Me → giữ Heart Me ở ô đang có, hoặc gán vào ô 'nghe' (hoặc ô bật đầu tiên)
+  let heartTo = '';
+  if (hot && hot.id !== FANCLUB_GIFT_ID) {
+    heartTo = rules.find((r) => r.enabled !== false && idOf(r) === hot.id)?.to || '';
+  }
+  if (!heartTo) {
+    const currentHeartTo = rules.find((r) => r.enabled !== false && idOf(r) === FANCLUB_GIFT_ID)?.to;
+    heartTo = currentHeartTo
+      || rules.find((r) => r.enabled !== false && r.to === 'nghe')?.to
+      || rules.find((r) => r.enabled !== false)?.to
+      || '';
+  }
 
   const taken = new Set();
   if (heartTo) taken.add(FANCLUB_GIFT_ID);

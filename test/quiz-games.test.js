@@ -98,8 +98,9 @@ test('quiz text: accent-free answers count, 6 fastest get 10/7/5/3/3/3, reveal 5
   game.tick(0);
   assert.equal(game.snapshot(0).phase, 'question');
   game.handleEvent(chat(9, 'ngủ say'), 100); // sai
-  const scored = [1, 2, 3, 4, 5, 6, 7].map((n) => game.handleEvent(chat(n, n % 2 ? 'ngu nuong' : 'NGỦ NƯỚNG!!'), 200 + n));
-  assert.deepEqual(scored.map((fx) => fx[0].points), [...POINTS, 1]);
+  const scored = [1, 2, 3, 4, 5, 6].map((n) => game.handleEvent(chat(n, n % 2 ? 'ngu nuong' : 'NGỦ NƯỚNG!!'), 200 + n));
+  assert.deepEqual(scored.map((fx) => fx[0].points), POINTS);
+  assert.equal(game.handleEvent(chat(7, 'ngu nuong'), 210).length, 0); // chỉ 6 bạn nhanh nhất, người thứ 7 không được điểm
   assert.equal(game.handleEvent(chat(1, 'ngu nuong'), 300).length, 0); // đã đúng thì không cộng lần hai
   assert.equal(game.snapshot(1000).answer, ''); // chưa lật đáp án khi còn đang hỏi
   assert.equal(game.tick(4000).length, 0);
