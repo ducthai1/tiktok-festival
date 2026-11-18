@@ -133,3 +133,23 @@ test('sự kiện bản giao thức mới (v3, cùng dạng payload phòng live 
     ['Rose', 1, 3, true, false]);
   assert.equal(gift.giftRaw.pictureUrl, 'https://p16-webcast.tiktokcdn.com/rose.webp');
 });
+
+test('fanClub và fanLevel được đọc trực tiếp từ huy hiệu TikTok (badgeList sceneType 10 / fans_badge)', () => {
+  const userWithFan = {
+    id: '7346523311613297672',
+    nickname: 'Fan Xịn',
+    displayId: 'fan_xin',
+    badgeList: [
+      { displayType: 2, text: { defaultPattern: 'Moderator' } },
+      {
+        displayType: 4,
+        sceneType: 10,
+        privilegeLogExtra: { level: '2' },
+        combine: { icon: { uri: 'webcast-va/webcast-va-fans_badge_icon_lv1_v2.png' } }
+      }
+    ]
+  };
+  const ev = normalizeConnectorEvent('member', { user: userWithFan });
+  assert.equal(ev.user.fanClub, true);
+  assert.equal(ev.user.fanLevel, 2);
+});

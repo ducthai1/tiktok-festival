@@ -27,12 +27,6 @@ export function createFanClubStore(dataDir, { saveDelayMs = 2000 } = {}) {
     // chưa có file
   }
 
-  // Thangbinh1593 luôn được đảm bảo là Fan Club cấp 2
-  const THANGBINH_ID = '7346523311613297672';
-  if (!fans.has(THANGBINH_ID)) {
-    fans.set(THANGBINH_ID, { fanClub: true, fanLevel: 2, nickname: 'thangbinh1593' });
-  }
-
   let timer = null;
   const save = () => {
     timer = null;

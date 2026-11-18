@@ -6,14 +6,23 @@ export function normalizeConnectorUser(data = {}) {
   const user = data.user || data;
   const uniqueId = firstText(user.uniqueId, user.displayId);
   const userId = firstText(user.userId, user.id, uniqueId);
+  // TikTok bản mới gửi huy hiệu Fan Club trong badgeList (sceneType = 10, uri chứa fans_badge)
+  const badges = Array.isArray(user.badgeList) ? user.badgeList : Array.isArray(data.badgeList) ? data.badgeList : [];
+  const fanBadge = badges.find((b) => {
+    const uri = String(b?.combine?.icon?.uri || '');
+    return b?.sceneType === 10 || uri.includes('fans_badge') || uri.includes('fan_badge');
+  });
+  const badgeFanLevel = Number(fanBadge?.privilegeLogExtra?.level ?? fanBadge?.combine?.str) || 0;
+
   const fanLevel = Number(
-    user.fanClubLevel ??
+    badgeFanLevel ||
+    (user.fanClubLevel ??
     data.fanClubLevel ??
     user.fansClub?.data?.level ??
     user.fansClub?.level ??
     user.fansClubInfo?.fansLevel ??
     user.fansClubInfo?.level ??
-    0
+    0)
   );
   const fanClubStatus = Number(
     user.fansClub?.data?.userFansClubStatus ??
@@ -23,6 +32,7 @@ export function normalizeConnectorUser(data = {}) {
     0
   );
   const fanClub = Boolean(
+    fanBadge ||
     user.isSubscribed ||
     user.isSubscriber ||
     data.isSubscribed ||
@@ -37,7 +47,7 @@ export function normalizeConnectorUser(data = {}) {
     avatar: firstImageUrl(user.profilePicture, user.avatarThumb, user.avatarMedium, user.profilePictureUrl),
     // đang follow kênh (1 = follower, 2 = bạn bè) — TikTok gửi kèm mỗi bình luận / vào phòng / quà
     follower: Number(user.followInfo?.followStatus ?? user.followRole ?? data.followRole) >= 1,
-    // CLB người hâm mộ: đọc lỏng tay mọi biến thể trường từ thư viện tiktok-live-connector
+    // CLB người hâm mộ: đọc trực tiếp từ huy hiệu TikTok gửi về
     fanClub,
     fanLevel: Math.max(0, fanLevel)
   };
