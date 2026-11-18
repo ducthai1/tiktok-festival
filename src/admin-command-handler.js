@@ -29,7 +29,7 @@ export function presentPeople(state) {
 let testSeq = 0;
 
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
-  getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {} }) {
+  getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {}, answersLogger = null }) {
   /** Món được tặng nhiều LƯỢT nhất buổi live này → tab 🎁 Quà hiện ra để chủ kênh thấy món nào đang hot. */
   const hotGifts = () => {
     const byId = new Map(getGiftCatalog().map((g) => [String(g.id), g]));
@@ -159,6 +159,11 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       try { hub.command(hub.snapshot().game, 'resetScores'); } catch {}
       pushState(true);
       return { message: 'Đã xoá bảng xếp hạng phiên và điểm game' };
+    },
+    getAnswersLog(msg) {
+      const max = Math.min(500, Math.max(10, Number(msg.limit) || 150));
+      const lines = answersLogger?.getRecentLines(max, msg.date) || [];
+      return { lines };
     },
     resetAmbassadors() {
       try { hub.command(hub.snapshot().game, 'resetAmbassadors'); } catch {}

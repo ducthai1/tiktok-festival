@@ -51,9 +51,9 @@ export const QUIZ_GAME_IDS = ['lophoc', 'dovui', 'english', 'emoji', 'flag', 'ma
 // onEnglishAnswer(từ): câu tiếng Anh vừa ra — máy chủ tạo sẵn giọng đọc đáp án (src/tts/english-tts.js)
 // englishListenReady(): giọng đọc tiếng Anh đang chạy tốt → mới mở ô 🎧 Luyện nghe
 export function createQuizGames({ random = Math.random, englishProgress = null, onEnglishAnswer = null, englishListenReady = () => false,
-  donors = null, dataDir = null } = {}) {
-  const answersLogger = createAnswersLogger(dataDir);
-  const createQuizGame = (opts) => createGame({ donors, answersLogger, ...opts }); // 👑 Bảng vàng chung mọi tab
+  donors = null, dataDir = null, answersLogger = null } = {}) {
+  const logger = answersLogger || createAnswersLogger(dataDir);
+  const createQuizGame = (opts) => createGame({ donors, answersLogger: logger, ...opts }); // 👑 Bảng vàng chung mọi tab
   const b = loadBanks();
   const bag = (items) => createShuffleBag(items, random);
   // tầng cuối là 176 từ tiếng Anh cơ bản (trước đây nhầm là kho Lớp Học Chữ tiếng Việt → hết từ tiếng Anh sẽ hỏi câu đố tiếng Việt)

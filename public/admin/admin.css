@@ -242,3 +242,108 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
 .rotate-hot .hot:first-child { background: rgba(255, 179, 71, 0.18); border-color: rgba(255, 179, 71, 0.45); font-weight: 700; }
 .rotate-hot .hot .n { opacity: 0.7; }
 .rotate-hot .none { font-size: 12px; opacity: 0.6; }
+
+/* 📝 Nhật ký đáp án Đố Vui */
+.answers-scroll-box {
+  max-height: 420px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+}
+.answers-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+}
+.ans-q-hdr {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: rgba(88, 166, 255, 0.14);
+  border-left: 4px solid #58a6ff;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.ans-q-hdr .q-badge {
+  background: #f0883e;
+  color: #000;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+.ans-q-hdr .q-ans {
+  color: #3fb950;
+  font-weight: 700;
+}
+.ans-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  transition: background 120ms;
+}
+.ans-row:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.ans-row.correct {
+  background: rgba(46, 160, 67, 0.2);
+  border: 1px solid rgba(63, 185, 80, 0.4);
+}
+.ans-row.cap {
+  background: rgba(210, 153, 34, 0.15);
+}
+.ans-time {
+  color: #8b949e;
+  font-size: 11px;
+  min-width: 82px;
+}
+.ans-user {
+  font-weight: 700;
+  color: #79c0ff;
+}
+.ans-comment {
+  color: #f0f6fc;
+  padding: 1px 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+.ans-status {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+.ans-status.s-correct {
+  background: #238636;
+  color: #fff;
+}
+.ans-status.s-cap {
+  background: #9e6a03;
+  color: #fff;
+}
+.ans-status.s-already {
+  background: #1f6feb;
+  color: #fff;
+}
+.ans-status.s-max {
+  background: #6e7681;
+  color: #fff;
+}
+.ans-status.s-wrong {
+  color: #f85149;
+  background: rgba(248, 81, 73, 0.12);
+}
+

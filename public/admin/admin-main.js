@@ -61,6 +61,7 @@ const socket = connectLiveSocket({
       $('login').hidden = true;
       $('app').hidden = false;
       if (currentTab === 'gifts') gifts.load();
+      if (currentTab === 'board') loadAnswersLog();
     } else if (m.t === 'authFail') {
       $('login').hidden = false;
       $('app').hidden = true;
@@ -83,6 +84,7 @@ const socket = connectLiveSocket({
     else if (m.t === 'live') renderLive(m.status);
     else if (m.t === 'state') renderState(m);
     else if (m.t === 'log') appendLog(m.event);
+    else if (m.t === 'quizAnswerLog') appendQuizAnswerEntry(m.entry);
   }
 });
 
@@ -107,6 +109,7 @@ function showTab(name) {
   for (const p of document.querySelectorAll('.tab-panel')) p.hidden = p.dataset.panel !== name;
   try { localStorage.setItem('adminTab', name); } catch { /* bỏ qua */ }
   if (name === 'gifts' && authed) gifts.load();
+  if (name === 'board' && authed) loadAnswersLog();
 }
 for (const b of $('tabs').children) b.addEventListener('click', () => showTab(b.dataset.tab));
 try { showTab(localStorage.getItem('adminTab') || 'live'); } catch { showTab('live'); }
@@ -769,4 +772,122 @@ $('trigger-hsts')?.addEventListener('click', () => {
 });
 $('reload-stages')?.addEventListener('click', () => {
   if (confirm('Tải lại màn hình OBS ngay lập tức? Màn hình có thể chớp 1–2 giây.')) run({ t: 'reload' });
+});
+
+// ── 📝 Nhật ký đáp án Đố Vui ──
+function escapeHtml(s) {
+  return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function parseLogLine(line) {
+  if (!line || typeof line !== 'string') return null;
+  const qMatch = line.match(/CÂU #(\d+)(?: \| Chủ đề: (.*?))? \| Gợi ý: "(.*?)" \| Đáp án: "(.*?)"/);
+  if (qMatch) {
+    return {
+      kind: 'question',
+      qNumber: qMatch[1],
+      category: qMatch[2] || '',
+      prompt: qMatch[3] || '',
+      answer: qMatch[4] || ''
+    };
+  }
+  const aMatch = line.match(/^\[(.*?)\] \[(.*?)\] gõ: "(.*?)" -> (.*)$/);
+  if (aMatch) {
+    const time = aMatch[1];
+    const userStr = aMatch[2];
+    const comment = aMatch[3];
+    const statusStr = aMatch[4];
+    return {
+      kind: 'answer',
+      time,
+      user: { nickname: userStr },
+      comment,
+      statusStr,
+      result: statusStr.startsWith('ĐÚNG') && !statusStr.includes('NHƯNG') ? 'correct'
+        : statusStr.includes('CAP_REACHED') || statusStr.includes('ĐỦ 6') ? 'CAP_REACHED'
+        : statusStr.includes('ALREADY_WON') || statusStr.includes('ĐÃ ĐƯỢC TÍNH') ? 'ALREADY_WON'
+        : statusStr.includes('MAX_TRIES') || statusStr.includes('VƯỢT QUÁ') ? 'MAX_TRIES' : 'WRONG'
+    };
+  }
+  return null;
+}
+
+function renderQuizAnswerNode(entry) {
+  const li = document.createElement('li');
+  if (entry.kind === 'question') {
+    li.className = 'ans-q-hdr';
+    li.innerHTML = `<span class="q-badge">CÂU #${entry.qNumber}</span> <span>Chủ đề: <b>${escapeHtml(entry.category || '—')}</b></span> | Gợi ý: <i>"${escapeHtml(entry.prompt || '')}"</i> | Đáp án: <span class="q-ans">${escapeHtml(entry.answer || '')}</span>`;
+    return li;
+  }
+  const isCorrect = entry.result === 'correct' || (entry.rank > 0 && entry.points > 0);
+  const isCap = entry.result === 'CAP_REACHED';
+  const isAlready = entry.result === 'ALREADY_WON';
+  const isMax = entry.result === 'MAX_TRIES';
+  const isWrong = entry.result === 'WRONG';
+
+  li.className = `ans-row${isCorrect ? ' correct' : isCap ? ' cap' : isWrong ? ' wrong' : ''}`;
+
+  const timeSpan = `<span class="ans-time">[${escapeHtml(entry.time || '')}]</span>`;
+  const userNick = entry.user?.nickname || 'Khách';
+  const userUid = entry.user?.uniqueId ? `@${entry.user.uniqueId}` : '';
+  const userSpan = `<span class="ans-user">${escapeHtml(userNick)} ${userUid && !userNick.includes(userUid) ? `<small style="color:#8b949e">(${escapeHtml(userUid)})</small>` : ''}</span>`;
+  const commentSpan = `gõ: <span class="ans-comment">"${escapeHtml(entry.comment || '')}"</span>`;
+
+  let badgeClass = 's-wrong';
+  let badgeText = entry.statusStr || (isCorrect ? `ĐÚNG (Hạng ${entry.rank || 1}, +${entry.points || 10}đ)` : isWrong ? 'SAI' : entry.result);
+  if (isCorrect) badgeClass = 's-correct';
+  else if (isCap) badgeClass = 's-cap';
+  else if (isAlready) badgeClass = 's-already';
+  else if (isMax) badgeClass = 's-max';
+
+  const statusSpan = `<span class="ans-status ${badgeClass}">${escapeHtml(badgeText)}</span>`;
+  li.innerHTML = `${timeSpan} ${userSpan} ${commentSpan} ${statusSpan}`;
+  return li;
+}
+
+function appendQuizAnswerEntry(entry) {
+  const list = $('answers-log');
+  const box = $('answers-scroll-box');
+  if (!list) return;
+  const node = renderQuizAnswerNode(entry);
+  list.appendChild(node);
+  while (list.children.length > 250) {
+    list.removeChild(list.firstChild);
+  }
+  if ($('answers-count')) $('answers-count').textContent = `${list.children.length} mục`;
+  if (box) {
+    const isNearBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 120;
+    if (isNearBottom) box.scrollTop = box.scrollHeight;
+  }
+}
+
+async function loadAnswersLog() {
+  if (!authed) return;
+  try {
+    const reply = await socket.request({ t: 'getAnswersLog', limit: 200 });
+    if (!reply?.ok || !Array.isArray(reply.lines)) return;
+    const list = $('answers-log');
+    const box = $('answers-scroll-box');
+    if (!list) return;
+    list.replaceChildren();
+    for (const line of reply.lines) {
+      const entry = parseLogLine(line);
+      if (entry) {
+        list.appendChild(renderQuizAnswerNode(entry));
+      }
+    }
+    if ($('answers-count')) $('answers-count').textContent = `${list.children.length} mục`;
+    if (box) box.scrollTop = box.scrollHeight;
+  } catch (err) {
+    console.warn('[answers-log] Không tải được log:', err);
+  }
+}
+
+$('refresh-answers-btn')?.addEventListener('click', () => {
+  loadAnswersLog();
+  toast('Đã tải lại nhật ký đáp án');
+});
+$('clear-answers-btn')?.addEventListener('click', () => {
+  $('answers-log')?.replaceChildren();
+  if ($('answers-count')) $('answers-count').textContent = '0 mục';
 });

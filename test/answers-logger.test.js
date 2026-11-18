@@ -87,3 +87,35 @@ test('answers-logger: tự động dọn dẹp file log cũ trên 2 ngày (auto-
   assert.ok(fs.existsSync(day2), 'Log 2 ngày trước trong phạm vi vẫn giữ');
   assert.ok(fs.existsSync(today), 'Log hôm nay phải còn');
 });
+
+test('answers-logger: onEntry callback và getRecentLines cho trang admin', () => {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'answers-log-admin-'));
+  const clock = Date.parse('2026-11-18T14:30:00Z');
+  const entries = [];
+  const logger = createAnswersLogger(tmpDir, {
+    now: () => clock,
+    onEntry: (entry) => entries.push(entry)
+  });
+
+  logger.logQuestion(5280, { category: 'tiếng anh', prompt: 'Môn học', answer: 'SUBJECT' });
+  logger.logAnswer(5280, {
+    user: { id: 'u1', nickname: 'Bao Lỏng' },
+    comment: 'subject',
+    result: 'correct',
+    rank: 1,
+    points: 10
+  });
+
+  assert.equal(entries.length, 2);
+  assert.equal(entries[0].kind, 'question');
+  assert.equal(entries[0].qNumber, 5280);
+  assert.equal(entries[1].kind, 'answer');
+  assert.equal(entries[1].comment, 'subject');
+  assert.equal(entries[1].rank, 1);
+
+  // getRecentLines
+  const lines = logger.getRecentLines(10);
+  assert.ok(lines.length >= 2);
+  assert.ok(lines.some((l) => l.includes('CÂU #5280')));
+  assert.ok(lines.some((l) => l.includes('Bao Lỏng') && l.includes('subject')));
+});

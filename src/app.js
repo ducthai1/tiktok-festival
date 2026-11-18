@@ -26,6 +26,7 @@ import { isVoiceSetting, pickVoice } from '../public/shared/tts-voices.js';
 import { FOLLOW_FALLBACK_LINE, thankLine } from '../public/stage/scenes/dance-voice-lines.js';
 import { createTikFinityProvider, createTikTokConnectorProvider } from './live/live-providers.js';
 import { SAMPLE_GIFTS, tierRepresentatives, withCatalogImages } from '../public/shared/gift-tiers.js';
+import { createAnswersLogger } from './games/quiz/answers-logger.js';
 
 /**
  * "Phiên bản giao diện": dấu vân tay các file js/css/html trong public/. Màn hình OBS mở liền nhiều giờ, server khởi động lại
@@ -99,12 +100,14 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
   // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
   const englishTts = voice || englishSynth ? createEnglishTts({ dataDir, synthesize: englishSynth }) : null;
+  const answersLogger = createAnswersLogger(dataDir);
   const hub = createGameHub({
     startGame: settings.activeGame || config.startGame, welcomeTextAbove: settings.welcomeTextAbove, englishProgress,
     onEnglishAnswer: englishTts && ((word) => settings.ttsEnglish !== false && englishTts.prefetch(word)),
     // 🎧 Luyện nghe chỉ mở khi màn hình đang đọc tiếng Anh và giọng đọc vừa đọc được (không lỗi liên tiếp)
     englishListenReady: () => Boolean(englishTts) && settings.ttsEnglish !== false && englishTts.status().ok,
-    dataDir
+    dataDir,
+    answersLogger
   });
   let port = config.port;
   let lastStateText = '';
@@ -318,7 +321,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let adminHandler = null;
   const handleAdmin = async (msg) => {
     adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
-      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation });
+      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation, answersLogger });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
       log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);
@@ -405,6 +408,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
       if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
     }
+  });
+
+  answersLogger.setOnEntry((entry) => {
+    sockets.broadcast({ t: 'quizAnswerLog', entry }, { adminsOnly: true });
   });
 
   const serveStatic = createStaticFileServer({ publicDir: PUBLIC_DIR, rootDir: ROOT_DIR });

@@ -254,6 +254,21 @@
           <div class="card-head"><h2>📣 Đại sứ share</h2><button type="button" id="reset-ambassadors" class="tiny ghost">Xoá</button></div>
           <ol id="ambassadors" class="board"></ol>
         </div>
+        <div class="card" id="answers-log-card">
+          <div class="card-head">
+            <h2>📝 Nhật ký đáp án Đố Vui</h2>
+            <div class="row wrap">
+              <span id="answers-count" class="muted small">0 mục</span>
+              <button type="button" id="refresh-answers-btn" class="tiny">🔄 Làm mới</button>
+              <button type="button" id="clear-answers-btn" class="tiny ghost">Xoá màn hình</button>
+            </div>
+          </div>
+          <p class="muted small">Theo dõi trực tiếp thời gian trả lời của người xem: ai gõ đáp án gì, ai đúng (hạng 1–6, điểm cộng), ai sai.</p>
+          <div class="answers-scroll-box" id="answers-scroll-box">
+            <ul id="answers-log" class="answers-log"></ul>
+          </div>
+        </div>
+
         <div class="card">
           <div class="card-head">
             <h2>Nhật ký sự kiện</h2>

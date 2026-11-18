@@ -17,12 +17,15 @@ export function timeString(date = new Date()) {
   return `${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}.${String(date.getMilliseconds()).padStart(3, '0')}`;
 }
 
-export function createAnswersLogger(dataDir, { keepDays = KEEP_DAYS, now = () => Date.now() } = {}) {
+export function createAnswersLogger(dataDir, { keepDays = KEEP_DAYS, now = () => Date.now(), onEntry: initialOnEntry = null } = {}) {
+  let onEntry = initialOnEntry;
   if (!dataDir) {
     return {
       logQuestion: () => {},
       logAnswer: () => {},
-      prune: () => 0
+      prune: () => 0,
+      setOnEntry: () => {},
+      getRecentLines: () => []
     };
   }
 
@@ -92,10 +95,17 @@ export function createAnswersLogger(dataDir, { keepDays = KEEP_DAYS, now = () =>
   }
 
   return {
+    setOnEntry(fn) {
+      onEntry = fn;
+    },
+
     logQuestion(qNumber, { category = '', prompt = '', answer = '' } = {}) {
       const t = new Date(now()).toISOString();
       const header = `\n${'='.repeat(78)}\n[${t}] CÂU #${qNumber} | Chủ đề: ${category} | Gợi ý: "${prompt}" | Đáp án: "${answer}"\n${'='.repeat(78)}`;
       appendLine(header);
+      try {
+        onEntry?.({ kind: 'question', qNumber, category, prompt, answer, time: t, line: header.trim() });
+      } catch {}
     },
 
     logAnswer(qNumber, { user, comment, result, rank = 0, points = 0, note = '' } = {}) {
@@ -119,6 +129,33 @@ export function createAnswersLogger(dataDir, { keepDays = KEEP_DAYS, now = () =>
 
       const row = `[${t}] [${userStr}] gõ: "${comment}" -> ${statusStr}`;
       appendLine(row);
+      try {
+        onEntry?.({
+          kind: 'answer',
+          qNumber,
+          time: t,
+          user: { nickname: nick, uniqueId: user?.uniqueId || user?.id || '' },
+          comment,
+          result,
+          rank,
+          points,
+          statusStr,
+          line: row
+        });
+      } catch {}
+    },
+
+    getRecentLines(maxLines = 200, dateStr = null) {
+      const targetDate = dateStr || dayString(new Date(now()));
+      const file = path.join(dir, `${targetDate}.log`);
+      try {
+        if (!fs.existsSync(file)) return [];
+        const content = fs.readFileSync(file, 'utf8');
+        const lines = content.split('\n').filter((l) => l.trim().length > 0);
+        return lines.slice(-maxLines);
+      } catch (err) {
+        return [];
+      }
     },
 
     prune,
