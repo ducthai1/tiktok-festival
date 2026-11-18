@@ -51,6 +51,8 @@ export function createWelcomeQueue({ textAbove = DEFAULT_TEXT_ABOVE } = {}) {
       greetedAt.delete(user.id);
       greetedAt.set(user.id, now);
       if (greetedAt.size > 20000) greetedAt.delete(greetedAt.keys().next().value);
+      // Fan CLB: luôn luôn được thẻ chào đầy đủ, bỏ qua ngưỡng phòng đông / hàng đợi dài
+      if (user.fanClub === true) { queue.push(user); return []; }
       if (viewerCount > threshold || queue.length >= MAX_BACKLOG) return [card(user, 'text')];
       queue.push(user);
       return [];

@@ -63,6 +63,8 @@ test('above the viewer threshold each newcomer gets a text line immediately inst
   const fx = q.notice(user(2), 0);
   assert.equal(fx[0].mode, 'text');
   assert.equal(fx[0].nickname, 'Người 2');
+  // Fan CLB luôn được thẻ đầy đủ dù phòng đông
+  assert.equal(q.notice({ id: 'fan1', nickname: 'Fan Cấp 2', avatar: '', fanClub: true, fanLevel: 2 }, 0).length, 0); // vào queue, không phải text
   q.setThreshold(5000);
   assert.equal(q.notice(user(3), 0).length, 0);
 });
