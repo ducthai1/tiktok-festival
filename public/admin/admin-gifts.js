@@ -177,6 +177,9 @@ export function setupGiftEditor({ $, socket, toast }) {
   /** Khối tự luân chuyển giá quà: công tắc, số vòng đã chạy, và món đang được tặng nhiều nhất buổi này. */
   function renderRotate(rot) {
     $('rotate-on').checked = Boolean(rot?.enabled);
+    if ($('rotate-minutes') && document.activeElement !== $('rotate-minutes')) {
+      $('rotate-minutes').value = String(rot?.minutes || 20);
+    }
     $('rotate-round').hidden = !rot?.round;
     if (rot?.round) $('rotate-round').textContent = `đã đổi ${rot.round} vòng`;
     const box = $('rotate-hot');
@@ -212,13 +215,28 @@ export function setupGiftEditor({ $, socket, toast }) {
 
   $('rotate-on').addEventListener('change', async () => {
     const on = $('rotate-on').checked;
-    const reply = await socket.request({ t: 'setGiftRotate', on });
+    const minutes = Number($('rotate-minutes')?.value) || 20;
+    const reply = await socket.request({ t: 'setGiftRotate', on, minutes });
     if (!reply.ok) {
       $('rotate-on').checked = !on;
       return toast(reply.message || 'Không đổi được', true);
     }
     apply(reply);
     toast(reply.message);
+  });
+  $('rotate-minutes')?.addEventListener('change', async () => {
+    let minutes = Math.max(1, Math.min(180, Math.round(Number($('rotate-minutes').value)) || 20));
+    $('rotate-minutes').value = String(minutes);
+    const reply = await socket.request({ t: 'setGiftRotateInterval', minutes });
+    if (!reply.ok) return toast(reply.message || 'Không đổi được', true);
+    apply(reply);
+    toast(reply.message);
+  });
+  $('rotate-minutes')?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      $('rotate-minutes').blur();
+    }
   });
   $('rotate-now').addEventListener('click', async () => {
     if (!confirm('Đổi bảng quà ngay bây giờ? Giá các ô trên màn hình sẽ thay đổi với người xem.')) return;

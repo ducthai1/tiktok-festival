@@ -56,7 +56,8 @@ function frontendVersion(dir) {
 const DEFAULT_SETTINGS = {
   activeGame: '', provider: 'tiktok', username: '', tts: false, ttsWelcome: false, ttsVoice: TTS_VOICES[0], ttsEnglish: true, legend: true, sound: true, volume: 0.6,
   music: true, musicVolume: 0.35, welcomeTextAbove: 1000,
-  season: '' // chủ đề mùa: 'christmas' 🎄 Giáng sinh · 'teacher' 💐 20/11 (màn hình + nhạc + trang điều khiển), chọn ở thanh trên trang điều khiển
+  season: '', // chủ đề mùa: 'christmas' 🎄 Giáng sinh · 'teacher' 💐 20/11 (màn hình + nhạc + trang điều khiển), chọn ở thanh trên trang điều khiển
+  englishRotateMinutes: 20
 };
 
 function loadGiftCatalog(file) {
@@ -75,6 +76,7 @@ function loadSettings(dataDir) {
     const saved = JSON.parse(fs.readFileSync(path.join(dataDir, 'settings.json'), 'utf8'));
     const settings = { ...DEFAULT_SETTINGS, ...(saved && typeof saved === 'object' ? saved : {}) };
     if (!isVoiceSetting(settings.ttsVoice)) settings.ttsVoice = TTS_VOICES[0]; // giọng đã bỏ / gõ sai → giọng mặc định
+    if (!Number.isFinite(settings.englishRotateMinutes) || settings.englishRotateMinutes < 1) settings.englishRotateMinutes = 20;
     return settings;
   } catch {
     return { ...DEFAULT_SETTINGS };
@@ -96,6 +98,11 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // Chỉ trong bộ nhớ, xoá khi sang phòng live mới: "đang hot" phải là hot của buổi này.
   let giftCounts = Object.create(null);
   let rotateAt = 0;
+  const rotateIntervalMs = () => {
+    const mins = Number(settings.englishRotateMinutes);
+    const valid = Number.isFinite(mins) && mins >= 1 && mins <= 180 ? Math.round(mins) : 20;
+    return valid * 60 * 1000;
+  };
   // tab tiếng Anh nhớ từ đã hỏi qua các lần khởi động lại → xoay vòng hết mọi từ mới lặp
   const englishProgress = createProgressStore(path.join(dataDir, 'english-seen.json'));
   // đọc đáp án tiếng Anh giọng bản xứ: server thật tự cài + gọi edge-tts; test truyền englishSynth giả (không gọi mạng)
@@ -226,6 +233,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
    * Bọc try/catch: đang live thì một lỗi ở đây KHÔNG được làm chết server.
    */
   function runGiftRotation() {
+    rotateAt = Date.now() + rotateIntervalMs();
     try {
       const options = giftOptions(giftCatalog);
       const current = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
@@ -306,7 +314,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       if (status.state === 'connected' && rooms.isNew(status.roomId)) {
         hub.resetRoom();
         giftCounts = Object.create(null); // "món hot" tính lại từ đầu cho buổi mới
-        rotateAt = Date.now() + ROTATE_MS;
+        rotateAt = Date.now() + rotateIntervalMs();
         log.info('live', `phòng live MỚI ${status.roomId} → đã xoá thông số phòng cũ (năng lượng tim, câu vàng/chớp nhoáng chờ, mốc follow,`
           + ' lượt share, chế độ đề) — giữ bảng xếp hạng + đại sứ share');
         emitFx(hub.activeId(), [{ kind: 'toast', text: '🔴 Phòng live mới — năng lượng & thử thách bắt đầu lại!' }]);
@@ -321,7 +329,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let adminHandler = null;
   const handleAdmin = async (msg) => {
     adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
-      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation, answersLogger });
+      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation, answersLogger,
+      resetRotateTimer: () => { rotateAt = Date.now() + rotateIntervalMs(); } });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
       log.info('admin', `lệnh ${msg.t}${msg.game ? ` game=${msg.game}` : ''}${msg.name ? ` name=${msg.name}` : ''}${msg.username ? ` user=${msg.username}` : ''}${msg.provider ? ` nguồn=${msg.provider}` : ''}`);
@@ -528,10 +537,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     pushState();
     // luân chuyển giá quà: chỉ chạy khi chủ kênh đã bật VÀ đang thật sự live (phòng vắng thì đổi vô nghĩa)
     if (settings.englishRotate && live.status().state === 'connected') {
+      const interval = rotateIntervalMs();
       const now = Date.now();
-      if (!rotateAt) rotateAt = now + ROTATE_MS;
+      if (!rotateAt) rotateAt = now + interval;
       else if (now >= rotateAt) {
-        rotateAt = now + ROTATE_MS;
         runGiftRotation();
       }
     }

@@ -28,8 +28,15 @@ export function presentPeople(state) {
 }
 let testSeq = 0;
 
+const clampRotateMinutes = (val) => {
+  const n = Math.round(Number(val));
+  if (!Number.isFinite(n) || n < 1) return 20;
+  return Math.min(180, n);
+};
+
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
-  getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {}, answersLogger = null }) {
+  getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {}, answersLogger = null,
+  resetRotateTimer = () => {} }) {
   /** Món được tặng nhiều LƯỢT nhất buổi live này → tab 🎁 Quà hiện ra để chủ kênh thấy món nào đang hot. */
   const hotGifts = () => {
     const byId = new Map(getGiftCatalog().map((g) => [String(g.id), g]));
@@ -45,8 +52,13 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     rules: settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules(),
     custom: Boolean(settings.englishGifts?.length),
     options: giftOptions(getGiftCatalog()),
-    // tự luân chuyển giá quà 20 phút/vòng (gift-rotation.js) — tắt sẵn, chủ kênh tự bật
-    rotate: { enabled: Boolean(settings.englishRotate), round: Number(settings.englishRotation?.round) || 0, hot: hotGifts() },
+    // tự luân chuyển giá quà (gift-rotation.js) — tắt sẵn, chủ kênh tự bật
+    rotate: {
+      enabled: Boolean(settings.englishRotate),
+      minutes: Number(settings.englishRotateMinutes) || 20,
+      round: Number(settings.englishRotation?.round) || 0,
+      hot: hotGifts()
+    },
     targets: ORDER.map((to) => ({ to, icon: ENGLISH_TARGETS[to].icon, label: ENGLISH_TARGETS[to].label, kind: ENGLISH_TARGETS[to].kind,
       questions: defaultQuestionsFor(to) }))
   });
@@ -64,9 +76,23 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       return { message: `Đã áp dụng ${on.length} món quà lên màn hình`, ...englishGiftsView() };
     },
     setGiftRotate(msg) {
-      updateSettings({ englishRotate: Boolean(msg.on) });
-      console.log(`[admin] tự luân chuyển giá quà: ${msg.on ? 'BẬT' : 'TẮT'}`);
-      return { message: msg.on ? 'Đã bật tự luân chuyển giá quà (20 phút/vòng)' : 'Đã tắt tự luân chuyển giá quà', ...englishGiftsView() };
+      const on = Boolean(msg.on);
+      const patch = { englishRotate: on };
+      if (msg.minutes !== undefined) {
+        patch.englishRotateMinutes = clampRotateMinutes(msg.minutes);
+      }
+      updateSettings(patch);
+      resetRotateTimer();
+      const mins = Number(settings.englishRotateMinutes) || 20;
+      console.log(`[admin] tự luân chuyển giá quà: ${on ? 'BẬT' : 'TẮT'} (${mins} phút/vòng)`);
+      return { message: on ? `Đã bật tự luân chuyển giá quà (${mins} phút/vòng)` : 'Đã tắt tự luân chuyển giá quà', ...englishGiftsView() };
+    },
+    setGiftRotateInterval(msg) {
+      const valid = clampRotateMinutes(msg.minutes);
+      updateSettings({ englishRotateMinutes: valid });
+      resetRotateTimer();
+      console.log(`[admin] cài đặt thời gian luân chuyển quà: ${valid} phút/vòng`);
+      return { message: `Đã đổi thời gian luân chuyển quà thành ${valid} phút/vòng`, ...englishGiftsView() };
     },
     rotateNow() {
       rotateGiftsNow();

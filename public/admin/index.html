@@ -101,9 +101,14 @@
           <div id="gifts-status" class="status idle" hidden></div>
 
           <div id="rotate-box" class="rotate-box">
-            <div class="row rotate-head">
+            <div class="row rotate-head wrap">
               <label class="toggle"><input type="checkbox" id="rotate-on" title="Bật / tắt tự luân chuyển"></label>
-              <b>Tự luân chuyển giá quà · 20 phút/vòng</b>
+              <b>Tự luân chuyển giá quà</b>
+              <label class="row gap align-center rotate-interval-label">
+                <span>Mỗi</span>
+                <input type="number" id="rotate-minutes" min="1" max="180" step="1" value="20" title="Thời gian luân chuyển (phút)">
+                <span>phút/vòng</span>
+              </label>
               <span id="rotate-round" class="badge seen" hidden></span>
               <button type="button" id="rotate-now" class="ghost small">⟳ Đổi ngay</button>
             </div>

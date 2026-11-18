@@ -106,3 +106,47 @@ test('admin "🎁 Quà" tab: saving rules applies them to the screen at once, su
   assert.ok(rulesOnScreen().length >= 13);
   await app.close();
 });
+
+test('admin can configure gift rotation interval and toggle rotation, survives restart', async (t) => {
+  const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tlg-'));
+  t.after(() => fs.rmSync(dataDir, { recursive: true, force: true }));
+  const config = { port: 0, host: '127.0.0.1', allowLan: false, provider: 'tiktok', startGame: 'english' };
+  const providerFactories = { tiktok: () => ({ start: async () => ({ roomId: '1' }), stop: async () => {} }) };
+  let app = await startApp(config, { dataDir, tickMs: 50, providerFactories });
+  const request = async (msg) => {
+    const ws = new WebSocket(`ws://127.0.0.1:${app.port}/ws`, { origin: `http://127.0.0.1:${app.port}` });
+    const inbox = [];
+    ws.on('message', (raw) => inbox.push(JSON.parse(raw)));
+    await new Promise((r) => ws.once('open', r));
+    ws.send(JSON.stringify({ t: 'auth', token: app.adminToken }));
+    ws.send(JSON.stringify({ ...msg, id: 8 }));
+    for (let i = 0; i < 100 && !inbox.some((m) => m.t === 'reply'); i += 1) await new Promise((r) => setTimeout(r, 20));
+    ws.close();
+    return inbox.find((m) => m.t === 'reply');
+  };
+
+  const init = await request({ t: 'englishGifts' });
+  assert.equal(init.rotate.minutes, 20);
+  assert.equal(init.rotate.enabled, false);
+
+  const changeInterval = await request({ t: 'setGiftRotateInterval', minutes: 15 });
+  assert.ok(changeInterval.ok);
+  assert.equal(changeInterval.rotate.minutes, 15);
+
+  const turnOn = await request({ t: 'setGiftRotate', on: true, minutes: 30 });
+  assert.ok(turnOn.ok);
+  assert.equal(turnOn.rotate.enabled, true);
+  assert.equal(turnOn.rotate.minutes, 30);
+
+  const clampedLow = await request({ t: 'setGiftRotateInterval', minutes: 0 });
+  assert.equal(clampedLow.rotate.minutes, 20);
+  const clampedHigh = await request({ t: 'setGiftRotateInterval', minutes: 500 });
+  assert.equal(clampedHigh.rotate.minutes, 180);
+
+  await app.close();
+  app = await startApp(config, { dataDir, tickMs: 50, providerFactories });
+  const reloaded = await request({ t: 'englishGifts' });
+  assert.equal(reloaded.rotate.enabled, true);
+  assert.equal(reloaded.rotate.minutes, 180);
+  await app.close();
+});
