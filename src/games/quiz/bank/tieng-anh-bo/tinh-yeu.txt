@@ -183,7 +183,7 @@ CHEMISTRY | Sự hóa học, cảm ứng | 2
 SPARK | Lửa tình cảm | 2
 CONNECTION | Kết nối, liên kết với ai đó | 2
 FASCINATED | Bị cuốn hút tới mức không rời mắt được | 2
-LONGING | Khao khát, mong mỏi | 2
+LONGING | Danh từ chỉ nỗi khao khát âm ỉ hướng về ai đó | 2
 YEARNING | Khao khát, hằng mong | 2
 ADMIRABLE | Đáng ngưỡng mộ, tốt | 2
 ALLURE | Sức hấp dẫn, lôi cuốn | 2
@@ -217,7 +217,7 @@ ENAMORED | Yêu mê mệt | 3
 SMITTEN | Bị mê hoặc bởi tình yêu | 3
 UNREQUITED | Tình yêu không được đáp lại | 3
 CONSORT | Bạn đời, vợ chồng | 3
-SUITOR | Chàng trai tìm kiếm bạn gái | 3
+SUITOR | Chàng trai đang theo đuổi một cô gái để mong cưới làm vợ | 3
 COURTLY | Lịch sự, quý phái | 3
 ELOPE | Động từ chỉ việc hai người bỏ nhà đi cưới nhau | 3
 TENDERHEARTED | Có trái tim từng tốt | 3
@@ -303,7 +303,7 @@ FLIRTING | Việc buông lời trêu ghẹo tán tỉnh cho vui | 1
 ADMIRER | Người thầm ngưỡng mộ và có cảm tình | 2
 BELOVED | Người được yêu quý nhất, cách gọi trang trọng | 2
 BECKON | Việc vẫy tay ra hiệu gọi ai đó lại gần | 3
-YEARN | Việc khao khát mong mỏi ai đó da diết | 3
+YEARN | Động từ chỉ việc mong nhớ ai da diết tới mức nhói lòng | 3
 BETRAYAL | Hành vi phản bội lòng tin của người kia | 2
 POSSESSIVE | Tính muốn giữ riêng không cho ai lại gần | 2
 CLINGY | Tính bám dính không rời nửa bước | 2

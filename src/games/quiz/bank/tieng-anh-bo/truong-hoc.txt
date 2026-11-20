@@ -251,7 +251,7 @@ DEMOTION | Sự giáng chức xuống cấp bậc thấp hơn do phạm sai lầ
 ERGONOMICS | Bộ môn công thái học thiết kế bàn ghế chống đau lưng gù lưng | 3
 CUBICLE | Góc vách ngăn làm việc riêng của từng nhân viên văn phòng | 2
 PAPERCLIP | Chiếc kẹp ghim giấy bằng kim loại xoắn | 1
-SHREDDER | Chiếc máy hủy tài liệu cắt nhỏ giấy vụn bảo mật | 2
+SHREDDER | Chiếc máy nuốt tờ giấy vào rồi nhả ra một đống sợi vụn | 2 | PAPER SHREDDER
 WHITEBOARD | Chiếc bảng trắng viết bút dạ trong phòng họp công ty | 1
 FLIPCHART | Bảng kẹp giấy thuyết trình có thể lật từng trang | 2
 HEADSET | Tai nghe có mic thoại chuyên dụng cho nhân viên trực tổng đài | 1

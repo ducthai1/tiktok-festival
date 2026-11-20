@@ -349,5 +349,4 @@ THIMBLE | Cái đê (đeo ngón tay khi khâu) | 3
 KNITTING NEEDLE | Que đan len | 3
 YARN | Sợi len | 2
 TAPE DISPENSER | Hộp cắt băng dính | 3
-PAPER SHREDDER | Máy hủy giấy | 2
 ELECTRIC KETTLE | Ấm siêu tốc | 1

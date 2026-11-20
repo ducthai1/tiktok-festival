@@ -724,7 +724,7 @@ RIPPLE | Gợn sóng lăn tăn xao động trên mặt hồ | 2
 TIDE | Hiện tượng thủy triều con nước lên xuống theo chu kỳ | 2
 WILDERNESS | Vùng đất hoang dã thiên nhiên nguyên sơ | 3
 LAGOON | Đầm phá nước lợ ven biển yên bình | 3
-REEF | Rạn san hô rực rỡ sắc màu dưới biển | 2
+REEF | Dải đá ngầm nằm sát mặt nước, tàu bè phải vòng tránh kẻo mắc cạn | 2
 PATHWAY | Lối đi mòn nhỏ dẫn vào khu vườn | 2 | TRAIL
 STREETLIGHT | Cột đèn đường thắp sáng phố đêm | 1
 BOLT | Bu lông ốc vít cỡ lớn có ren vặn đai ốc | 2

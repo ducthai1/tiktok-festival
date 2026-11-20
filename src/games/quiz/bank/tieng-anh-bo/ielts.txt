@@ -232,7 +232,7 @@ SUBSTANTIAL | Lớn về khối lượng hoặc giá trị, nhiều một cách 
 FEASIBLE | Khả thi, có thể thực hiện được | 3
 DETRIMENTAL | Từ trang trọng chỉ gây hại nghiêm trọng về lâu dài | 3
 DOMINANT | Mạnh nhất, áp đảo và chi phối những cái còn lại | 3
-IMPLEMENT | Triển khai, thi hành chính sách | 3
+IMPLEMENT | Động từ chỉ việc đem một chính sách ra thi hành thật | 3
 PERSISTENT | Kiên trì, dai dẳng | 3
 PROFOUND | Sâu sắc, tác động mạnh mẽ | 3
 REVOLUTIONIZE | Làm thay đổi hoàn toàn cách một việc vẫn được làm xưa nay | 3 | REVOLUTIONISE
@@ -259,7 +259,7 @@ ELOQUENT | Có tài hùng biện | 3
 EMPIRICAL | Dựa trên kinh nghiệm thực tế | 3
 EQUIVOCAL | Lối trả lời cố tình nói nước đôi để khỏi phải nhận phe nào | 3
 EXEMPLARY | Gương mẫu, tiêu biểu | 3
-FALLACIOUS | Sai lầm, ngụy biện | 3
+FALLACIOUS | Tính từ chỉ lập luận nghe xuôi tai nhưng sai về logic | 3
 HOMOGENEOUS | Đồng nhất, thuần nhất | 3
 INCENTIVE | Sự khuyến khích, khích lệ | 3
 INHERENT | Vốn có, nội tại | 3

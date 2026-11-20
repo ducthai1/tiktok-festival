@@ -249,7 +249,7 @@ ESTABLISHMENT | Sự thành lập, cơ sở | 3
 EVALUATION | Sự đánh giá | 2
 FACILITY | Cơ sở vật chất, tiện nghi | 2
 GUARANTEE | Lời cam đoan chắc chắn về chất lượng, sai thì hoàn tiền | 2
-IMPLEMENTATION | Sự thi hành, triển khai | 3
+IMPLEMENTATION | Danh từ chỉ cả quá trình đưa kế hoạch vào thực tế | 3
 INSPECTION | Sự thanh tra, kiểm tra | 3
 MANAGEMENT | Ban lãnh đạo điều hành công ty, hoặc chính việc điều hành đó | 1
 OCCUPATION | Nghề nghiệp | 2

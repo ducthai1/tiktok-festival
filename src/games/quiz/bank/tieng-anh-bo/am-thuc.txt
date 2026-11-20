@@ -106,7 +106,7 @@ CRUNCHY | Giòn sần sật khi cắn, như rau tươi hay hạt rang | 1
 SOGGY | Bị ỉu, bị nhão | 3
 BURNT | Bị cháy khét | 2 | BURNED
 UMAMI | Vị thứ năm ngoài chua mặn ngọt đắng | 3
-MISE EN PLACE | Chuẩn bị nguyên liệu trước nấu | 3
+MISE EN PLACE | Việc đầu bếp sơ chế và bày sẵn mọi nguyên liệu trước khi lên bếp | 3
 EMULSIFY | Trộn chất béo và nước để tạo sốt | 3
 JULIENNE | Kiểu thái rau củ thành sợi dài mảnh như que diêm | 3 | CHIFFONADE
 BRUNOISE | Cách cắt rau thành khối nhỏ 2-3mm | 3
@@ -271,7 +271,7 @@ CROISSANT | Bánh sừng bò, bánh sừng trâu | 2
 PANCAKE | Bánh rán chảo ăn kèm mật ong | 1
 OATMEAL | Yến mạch, cháo yến mạch | 2
 ESPRESSO | Cà phê đậm đặc | 2
-CAPPUCCINO | Cà phê bọt sữa Ý | 2
+CAPPUCCINO | Ly cà phê Ý chia ba phần đều nhau, lớp bọt sữa dày phủ trên cùng | 2
 MILKSHAKE | Sữa lắc trái cây, kem | 2
 BARBECUE | Tiệc nướng ngoài trời, thịt tẩm sốt nướng than | 1 | BBQ
 APPETIZER | Món nhỏ dọn đầu bữa cho đỡ đói trước món chính | 3
@@ -349,7 +349,7 @@ PANNA COTTA | Món tráng miệng thạch kem sữa tươi nấu sánh mịn c�
 PUDDING | Món bánh tráng miệng mềm mại núng nính rưới sốt caramen | 1
 TART | Món bánh nướng vỏ giòn có vành viền trũng chứa kem trứng hoặc trái cây | 1
 SUNDAE | Ly kem tươi nhiều tầng rưới sốt sô-cô-la và quả anh đào trên đỉnh | 1 | KEM SUNDAE
-LATTE | Món cà phê nhiều sữa nóng có lớp bọt sữa vẽ hình nghệ thuật | 1
+LATTE | Ly cà phê chan nhiều sữa nóng, mặt trên vẽ hình bằng bọt sữa | 1
 MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1
 AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1
 MATCHA | Bột trà xanh nguyên chất mịn màng của Nhật Bản dùng pha trà sữa | 1

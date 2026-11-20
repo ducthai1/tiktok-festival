@@ -496,7 +496,7 @@ PASSPORT PHOTO | Ảnh thẻ cỡ 4x6 chụp làm hộ chiếu | 1
 EXPIRED | Hộ chiếu hoặc thị thực đã hết hạn sử dụng | 1 | OUT OF DATE
 VALIDITY | Thời hạn còn hiệu lực của hộ chiếu giấy tờ | 2 | VALID PERIOD
 OVERSTAY | Hành vi ở quá hạn thị thực cho phép | 2 | ILLEGAL STAY
-BORDER CHECKPOINT | Trạm trạm gác kiểm soát biên giới cửa khẩu | 2 | BORDER POST
+BORDER CHECKPOINT | Trạm gác nơi cửa khẩu, qua đây phải trình hộ chiếu | 2 | BORDER POST
 DUTY-FREE ALLOWANCE | Định mức hàng hoá miễn thuế được phép mang vào | 2
 DECLARATION FORM | Tờ khai hải quan kê khai hàng hoá tiền mặt | 2 | CUSTOMS DECLARATION
 PROHIBITED GOODS | Hàng cấm không được phép mang lên máy bay | 2 | BANNED ITEMS
