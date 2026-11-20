@@ -190,32 +190,54 @@ function dispatchFx(fx) {
   else current?.onFx(fx);
 }
 
-/** Preload tất cả avatar trong FX rồi mới show thẻ chào — tránh ô tím/trắng placeholder. */
+// CHỜ TẢI XONG AVATAR RỒI MỚI CHÀO. Trước đây chỉ chờ 500ms rồi chào bừa — ảnh từ CDN TikTok
+// hiếm khi về kịp nên thẻ chào hiện ra với ô tím trống trơn. Nay xếp HÀNG ĐỢI nối tiếp: chờ ảnh
+// decode xong hẳn (sẵn sàng vẽ, không chỉ tải xong) rồi mới chào, giữ nguyên thứ tự máy chủ gửi.
+// Hàng đợi dài thì bớt kiên nhẫn lại để không tụt sau nhịp chào của máy chủ.
+const AVATAR_WAIT_MS = 3000; // chờ tối đa chừng này cho một thẻ
+const AVATAR_WAIT_BUSY_MS = 800; // khi còn ≥3 người đang xếp hàng
+const welcomeQueue = [];
+let welcomeBusy = false;
+
 function showWelcomeWhenReady(fx) {
-  if (fx.mode === 'text') return showWelcome(fx);
-  const urls = fx.mode === 'group'
-    ? fx.people.slice(0, 18).map((p) => p.avatar).filter(Boolean)
-    : [fx.avatar].filter(Boolean);
-  if (!urls.length) return showWelcome(fx);
-  const TIMEOUT_MS = 500;
-  let done = false;
-  let loaded = 0;
-  function tryShow() {
-    if (done) return;
-    done = true;
-    showWelcome(fx);
-  }
-  const timer = setTimeout(tryShow, TIMEOUT_MS);
-  for (const url of urls) {
+  if (fx.mode === 'text') return showWelcome(fx); // dòng chữ không có avatar
+  welcomeQueue.push(fx);
+  if (welcomeQueue.length > 12) welcomeQueue.shift(); // phòng đông quá thì bỏ bớt người cũ nhất
+  pumpWelcome();
+  return undefined;
+}
+
+/** Tải sẵn một ảnh, trả về khi ảnh SẴN SÀNG VẼ hoặc khi hết kiên nhẫn / ảnh hỏng. */
+function loadAvatar(url, ms) {
+  return new Promise((resolve) => {
+    let xong = false;
+    const kết = () => { if (!xong) { xong = true; resolve(); } };
+    const timer = setTimeout(kết, ms);
     const img = new Image();
     img.referrerPolicy = 'no-referrer';
-    img.onload = img.onerror = () => {
-      loaded++;
-      if (loaded >= urls.length) { clearTimeout(timer); tryShow(); }
+    const sẵnSàng = () => { clearTimeout(timer); kết(); };
+    img.onerror = sẵnSàng;
+    img.onload = () => {
+      // decode() đảm bảo ảnh đã giải mã xong, vẽ ra là thấy ngay — onload thôi vẫn có thể nháy trắng
+      if (img.decode) img.decode().then(sẵnSàng, sẵnSàng);
+      else sẵnSàng();
     };
     img.src = url;
-  }
+  });
 }
+
+async function pumpWelcome() {
+  if (welcomeBusy || !welcomeQueue.length) return;
+  welcomeBusy = true;
+  const fx = welcomeQueue.shift();
+  const urls = (fx.mode === 'group' ? fx.people.slice(0, 18).map((p) => p.avatar) : [fx.avatar]).filter(Boolean);
+  const chờ = welcomeQueue.length >= 3 ? AVATAR_WAIT_BUSY_MS : AVATAR_WAIT_MS;
+  if (urls.length) await Promise.all(urls.map((u) => loadAvatar(u, chờ)));
+  showWelcome(fx);
+  welcomeBusy = false;
+  if (welcomeQueue.length) pumpWelcome();
+}
+
 function showWelcome(fx) {
   const w = current?.welcome || {};
   if (fx.mode === 'text') return hud.welcomeLine(fx.nickname);

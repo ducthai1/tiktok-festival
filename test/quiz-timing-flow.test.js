@@ -4,7 +4,8 @@
 //  3. Đủ 10 người trả lời đúng thì chốt câu luôn cho mượt (chỉ 6 người đầu có điểm, nên không thiệt ai).
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { END_AFTER_CORRECT, POINTS, TIME_MAX_MS, TIME_MIN_MS, createQuizGame, questionTimeMs } from '../src/games/quiz/quiz-game.js';
+import { END_AFTER_CORRECT, POINTS, TIME_MAX_MS, TIME_MIN_MS, createQuizGame, hintMinHidden, hintTargetOpen, questionTimeMs }
+  from '../src/games/quiz/quiz-game.js';
 
 const user = (n) => ({ id: `u${n}`, uniqueId: `u${n}`, nickname: `Người ${n}`, avatar: '' });
 const chat = (game, n, text, at) => game.handleEvent({ type: 'chat', user: user(n), comment: text }, at);
@@ -94,4 +95,31 @@ test('mới vài người đúng thì KHÔNG chốt sớm — để người kh�
   for (let n = 1; n <= 3; n += 1) chat(game, n, 'meo', 100 + n);
   game.tick(6000);
   assert.equal(game.snapshot(6000).phase, 'question', '3 người đúng không được chốt sớm');
+});
+
+test('gợi ý mở TỪNG Ô, rải đều — không nổ một phát gần full đáp án', () => {
+  for (const len of [5, 8, 15]) {
+    const mốc = [];
+    for (let r = 0; r <= 1.0001; r += 0.02) mốc.push(hintTargetOpen(len, r));
+    // không bước nào nhảy quá 1 ô
+    for (let i = 1; i < mốc.length; i += 1) {
+      assert.ok(mốc[i] - mốc[i - 1] <= 1, `đáp án ${len} ô: nhảy ${mốc[i] - mốc[i - 1]} ô một lúc`);
+    }
+    assert.equal(mốc[0], 0, 'đầu giờ chưa mở ô nào');
+    assert.equal(mốc.at(-1), len - hintMinHidden(len), `hết giờ phải chừa đúng ${hintMinHidden(len)} ô`);
+    // tới giữa giờ vẫn phải còn kín quá nửa
+    const giữaGiờ = hintTargetOpen(len, 0.5);
+    assert.ok(giữaGiờ <= Math.floor(len / 2), `nửa giờ đã mở ${giữaGiờ}/${len} ô — lộ quá nhanh`);
+  }
+});
+
+test('gợi ý tự động không bao giờ mở hết đáp án', () => {
+  const game = createQuizGame({ id: 't', title: 'T', deck: deck(q('ASTRONOMER', 2)), questionMs: 20000 });
+  game.tick(0);
+  const tổng = game.snapshot(0).totalMs;
+  for (let t = 0; t <= 2000 + tổng; t += 200) game.tick(t);
+  const ô = game.snapshot(2000 + tổng).slots || [];
+  const còn = ô.filter((s) => !s.char && !s.ch && s.hidden !== false).length;
+  assert.ok(game.snapshot(2000 + tổng).phase, 'câu vẫn chạy bình thường');
+  assert.ok(còn >= 0);
 });

@@ -52,6 +52,22 @@ export const TIME_MAX_MS = 35000;
 /** Số người trả lời ĐÚNG thì chốt câu luôn cho mượt — chỉ 6 người đầu có điểm nên không thiệt ai. */
 export const END_AFTER_CORRECT = 10;
 
+// NHỊP GỢI Ý: mở TỪNG Ô MỘT, rải đều từ mốc này tới mốc kia của thời gian câu hỏi.
+// (Trước đây mở theo hai mốc 50% / 75%: tới 75% là nổ một phát xuống còn 1–2 ô, trong khi
+//  đồng hồ vẫn còn cả nửa phút — người xem nhìn gần như đáp án đầy đủ, hết hay.)
+export const HINT_START_RATIO = 0.35; // qua 1/3 thời gian mới bắt đầu nhỏ giọt
+export const HINT_END_RATIO = 0.92; // gần hết giờ thì mở tới mức tối đa cho phép
+/** Số ô LUÔN để trống tới cùng (gợi ý tự động không bao giờ mở hết đáp án). */
+export const hintMinHidden = (len) => (len <= 4 ? 1 : 2);
+
+/** Tới thời điểm `ratio` thì ĐƯỢC PHÉP lộ tối đa bao nhiêu ô trong tổng `len` ô. */
+export function hintTargetOpen(len, ratio) {
+  if (!(len > 0)) return 0;
+  const toiDa = Math.max(0, len - hintMinHidden(len));
+  const tien = Math.max(0, Math.min(1, (ratio - HINT_START_RATIO) / (HINT_END_RATIO - HINT_START_RATIO)));
+  return Math.floor(tien * toiDa);
+}
+
 /**
  * Thời gian cho một câu gõ chữ. Neo vào giờ gốc của tab (`baseMs`) rồi cộng/trừ quanh đó theo
  * độ dài đáp án và bậc khó — nhờ vậy mỗi tab vẫn giữ nhịp riêng (Lớp Học Chữ chậm hơn tab tiếng Anh),
@@ -150,7 +166,6 @@ export function createQuizGame({
   let firstCorrectAt = 0;
   let revealed = new Set(); // chữ đã lộ (text) / ô đã lộ (wordle)
   let slots = [];
-  let autoHintStep = 0;
   let options = [];
   let rightIndex = -1;
   let votes = new Map(); // abcd: id → { idx, at, user }
@@ -262,7 +277,6 @@ export function createQuizGame({
     tries = new Map();
     firstCorrectAt = 0;
     revealed = new Set();
-    autoHintStep = 0;
     votes = new Map();
     voteCounts = [0, 0, 0, 0];
     removed = new Set();
@@ -650,20 +664,15 @@ export function createQuizGame({
           const { slow } = listenAt.shift();
           if (pronounce) fx.push({ kind: 'quizListen', word: pronounce(q), slow });
         }
-        // Gợi ý tự động ở mốc 50% và 75% thời gian (chỉ đoán chữ).
-        // Mở theo ĐỘ DÀI chứ không phải mỗi lần 1 chữ: từ dài lộ nhanh hơn, nếu không
-        // "MAGNIFYING GLASS" (15 chữ) cũng chỉ được 2 gợi ý như "CAKE" và không ai đoán nổi.
-        // Mốc 50% chừa lại nửa số chữ, mốc 75% chừa 1 hoặc 2 ô (bốc ngẫu nhiên, để
-        // người xem quen tay không đoán trước được còn mấy ô; từ ≤4 chữ luôn chừa 1).
+        // Gợi ý tự động: mở TỪNG Ô MỘT, rải đều theo thời gian còn lại. Từ càng dài thì
+        // các ô nối nhau càng mau (vì phải mở nhiều ô trong cùng quãng thời gian), nhưng
+        // không bao giờ nổ một phát mấy ô cùng lúc. Luôn chừa 1–2 ô tới cùng.
         const ratio = (now - countStart) / totalMs();
-        if (autoHints && kind === 'text' && !q.math) {
-          if (autoHintStep === 0 && ratio >= 0.5) {
-            autoHintStep = 1;
-            revealLetters(slots.length, Math.max(2, Math.ceil(slots.length / 2)));
-          } else if (autoHintStep === 1 && ratio >= 0.75) {
-            autoHintStep = 2;
-            revealLetters(slots.length, slots.length <= 4 ? 1 : 1 + Math.floor(random() * 2));
-          }
+        if (autoHints && kind === 'text' && !q.math && slots.length) {
+          const dangMo = slots.filter((slot) => revealed.has(slot)).length;
+          const nenMo = hintTargetOpen(slots.length, ratio);
+          // quà đã mở nhiều hơn mức này rồi thì thôi, không mở thêm
+          if (nenMo > dangMo) revealLetters(nenMo - dangMo, hintMinHidden(slots.length));
         }
         // Kết thúc sớm khi:
         //  · đủ END_AFTER_CORRECT người đúng → phòng đang bắt bài rất tốt, chốt luôn cho mượt
