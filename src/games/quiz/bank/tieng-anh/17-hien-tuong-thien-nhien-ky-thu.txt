@@ -1,34 +1,34 @@
 # Tiếng Anh · Hiện tượng thiên nhiên, kỳ thú
-TYPHOON | Bão nhiệt đới (Tây Thái Bình Dương) | 2
-VOLCANIC | Thuộc núi lửa | 2
-SAVANNA | Xa-van (đồng cỏ nhiệt đới) | 2 | SAVANNAH
-ESTUARY | Cửa sông | 3
-PLATEAU | Cao nguyên | 2
-MONSOON | Gió mùa | 2
-HUMIDITY | Độ ẩm không khí | 2
-PRECIPITATION | Lượng mưa (giáng thủy) | 3 | RAINFALL
-PERMAFROST | Lớp băng vĩnh cửu | 3
-EROSION | Sự xói mòn | 2
-SEDIMENT | Trầm tích (phù sa) | 2
-DESERTIFICATION | Sa mạc hóa | 3
-BIODEGRADABLE | Có thể phân hủy sinh học | 2
-COMPOST | Phân ủ hữu cơ | 2
-OZONE | Tầng ô-dôn | 2 | OZONE LAYER
-MIGRATION | Sự di cư | 2
-CURRENT | Dòng hải lưu (dòng chảy) | 2 | OCEAN CURRENT
-TIDAL | Thuộc thủy triều | 2
+TYPHOON | Cơn bão lớn hình thành ngoài biển Đông, mùa nào cũng đổ vào nước ta | 2
+VOLCANIC | Tính từ chỉ thứ thuộc về núi lửa, như tro hay dung nham | 2
+SAVANNA | Vùng đồng cỏ mênh mông rải rác vài cây, nơi sư tử và hươu cao cổ sống | 2 | SAVANNAH
+ESTUARY | Đoạn cuối con sông đổ ra biển, nước lợ nửa mặn nửa ngọt | 3
+PLATEAU | Vùng đất bằng phẳng nhưng nằm cao hẳn lên, như Đà Lạt hay Mộc Châu | 2
+MONSOON | Luồng gió đổi chiều theo mùa, kéo theo cả mùa mưa dầm | 2
+HUMIDITY | Mức hơi nước trong không khí, cao thì người nhớp nháp khó chịu | 2
+PRECIPITATION | Tổng lượng nước từ trời rơi xuống, tính cả mưa lẫn tuyết | 3 | RAINFALL
+PERMAFROST | Lớp đất đóng băng quanh năm không tan, ở vùng gần cực | 3
+EROSION | Việc đất đá bị nước và gió bào mòn dần đi | 2
+SEDIMENT | Lớp bùn cát lắng đọng lại dưới đáy sông, đáy hồ | 2
+DESERTIFICATION | Việc đất đang trồng trọt được biến dần thành sa mạc | 3
+BIODEGRADABLE | Tính từ chỉ thứ vi sinh vật phân huỷ được, chôn xuống là tự tiêu | 2
+COMPOST | Thứ phân bón ủ từ rác bếp và lá cây mục | 2
+OZONE | Lớp khí trên cao chắn tia cực tím, từng bị thủng một lỗ ở Nam Cực | 2 | OZONE LAYER
+MIGRATION | Việc cả đàn chim hay cá kéo nhau đi nơi khác theo mùa | 2
+CURRENT | Dòng nước chảy ngầm trong lòng biển, cuốn tàu bè đi theo | 2 | OCEAN CURRENT
+TIDAL | Tính từ chỉ thứ thuộc về con nước lên xuống mỗi ngày | 2
 HAILSTORM | Trận mưa trút xuống toàn hạt băng cứng | 2
-STALAGMITE | Măng đá (trong hang) | 3
-DELTA | Châu thổ | 2
-FJORD | Vịnh hẹp băng hà | 3
-MANGROVE | Rừng ngập mặn | 2
-GREENHOUSE GAS | Khí nhà kính | 2 | GREENHOUSE GASES
-ACID RAIN | Mưa axit | 2
-WATER CYCLE | Vòng tuần hoàn nước | 2
-CARBON FOOTPRINT | Lượng khí thải các-bon | 2
-SUSTAINABILITY | Tính bền vững | 2
-OVERPOPULATION | Bùng nổ dân số | 2
-REFORESTATION | Trồng lại rừng | 2
+STALAGMITE | Cột đá trong hang mọc từ dưới nền lên, do nước nhỏ giọt lâu năm | 3
+DELTA | Vùng đất phù sa hình tam giác nơi sông chia nhánh đổ ra biển | 2
+FJORD | Vịnh biển hẹp và sâu, hai bên vách núi dựng đứng, nhiều ở Na Uy | 3
+MANGROVE | Rừng cây mọc dưới nước mặn ven biển, rễ chống chằng chịt | 2
+GREENHOUSE GAS | Loại khí giữ nhiệt lại làm Trái Đất nóng lên | 2 | GREENHOUSE GASES
+ACID RAIN | Cơn mưa nhiễm chất chua từ khói nhà máy, ăn mòn cả tượng đá | 2
+WATER CYCLE | Vòng nước bốc hơi lên trời thành mây rồi lại rơi xuống | 2
+CARBON FOOTPRINT | Lượng khí thải mà một người hay một công ty gây ra cho khí hậu | 2
+SUSTAINABILITY | Lối làm ăn giữ được lâu dài mà không vắt kiệt tài nguyên | 2
+OVERPOPULATION | Tình trạng người quá đông so với sức chứa của một vùng | 2
+REFORESTATION | Việc trồng lại cây trên những vùng rừng đã bị chặt trụi | 2
 DEW | Những giọt sương mai đọng long lanh trên cành lá buổi sớm | 2
 SANDSTORM | Trận bão cát mù mịt cuốn bụi cát cuồn cuộn trên sa mạc | 2
 BLIZZARD | Trận bão tuyết mù mịt với gió rét căm căm | 2
