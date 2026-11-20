@@ -1,30 +1,30 @@
 # Tiếng Anh · Đời sống số, mạng xã hội
-FILTER | Bộ lọc (hiệu ứng ảnh) | 1
-REPOST | Đăng lại (bài người khác) | 1 | RESHARE
+FILTER | Lớp hiệu ứng phủ lên ảnh cho da mịn màu đẹp trước khi đăng | 1
+REPOST | Việc đăng lại nguyên bài của người khác lên trang mình | 1 | RESHARE
 CAPTION | Dòng chữ chú thích đính kèm bên dưới bức ảnh hoặc bài đăng | 1
-NEWSFEED | Bảng tin (trang chủ mạng xã hội) | 2 | NEWS FEED, FEED
-WEARABLE | Thiết bị đeo được (đồng hồ thông minh…) | 2
+NEWSFEED | Dòng bài chạy dài trên trang chủ, lướt mãi không hết | 2 | NEWS FEED, FEED
+WEARABLE | Loại máy đeo trên người được, như đồng hồ thông minh hay vòng tay đếm bước | 2
 EARPHONE | Một bên tai nghe nhét lỗ tai, dạng số ít | 1 | EARBUD
-CURSOR | Con trỏ chuột | 1
-SYNC | Đồng bộ (dữ liệu) | 2 | SYNCHRONIZE
-UNINSTALL | Gỡ cài đặt | 1
-DIGITAL FOOTPRINT | Dấu vết số (trên mạng) | 3
-CYBERBULLYING | Bắt nạt trên mạng | 2
-E-COMMERCE | Thương mại điện tử | 2 | ECOMMERCE
-DIGITAL WALLET | Ví điện tử nói chung, tên gọi đầy đủ hai từ | 2
-QR CODE | Mã QR | 1
-FACIAL RECOGNITION | Nhận diện khuôn mặt | 2 | FACE RECOGNITION
-CONTENT CREATOR | Người sáng tạo nội dung | 1
-TRENDING | Đang thịnh hành (đang hot) | 1
-CLICKBAIT | Tiêu đề câu view | 2
-GEOTAG | Gắn thẻ vị trí (vào ảnh) | 2
-HOTSPOT | Điểm phát wifi (từ điện thoại) | 2 | WIFI HOTSPOT
-PAIRING | Ghép đôi Bluetooth | 2 | PAIR
-RECHARGE | Sạc lại pin | 1
-PORTRAIT MODE | Chế độ chụp chân dung (xóa phông) | 1
-LANDSCAPE MODE | Chế độ xoay ngang màn hình | 1
-ZOOM | Phóng to thu nhỏ | 1
-WIRED | Có dây (kết nối bằng dây) | 2
+CURSOR | Mũi tên nhỏ nhấp nháy chạy theo chuột trên màn hình | 1
+SYNC | Việc cho dữ liệu hai máy khớp y nhau, sửa bên này bên kia đổi theo | 2 | SYNCHRONIZE
+UNINSTALL | Việc gỡ bỏ một ứng dụng ra khỏi máy | 1
+DIGITAL FOOTPRINT | Toàn bộ dấu vết một người để lại trên mạng, xoá cũng khó sạch | 3
+CYBERBULLYING | Việc hùa nhau chửi bới làm nhục ai đó trên mạng | 2
+E-COMMERCE | Việc mua bán hàng hoá qua mạng, như Shopee hay Lazada | 2 | ECOMMERCE
+DIGITAL WALLET | Thứ app giữ tiền trong điện thoại để quét mã trả tiền | 2
+QR CODE | Ô vuông đen trắng lấm chấm, giơ máy lên quét là ra link hoặc chuyển tiền | 1
+FACIAL RECOGNITION | Công nghệ nhìn mặt là mở khoá được máy | 2 | FACE RECOGNITION
+CONTENT CREATOR | Người làm nghề sản xuất video và bài đăng để nuôi kênh | 1
+TRENDING | Tính từ chỉ thứ đang nổi rần rần ai cũng nhắc tới | 1
+CLICKBAIT | Kiểu giật tít kêu to để dụ người ta bấm vào, đọc xong thấy hụt | 2
+GEOTAG | Việc gắn kèm toạ độ nơi chụp vào tấm ảnh | 2
+HOTSPOT | Việc lấy điện thoại phát sóng cho máy khác vào mạng nhờ | 2 | WIFI HOTSPOT
+PAIRING | Bước bắt tay lần đầu giữa tai nghe không dây với điện thoại | 2 | PAIR
+RECHARGE | Việc cắm điện nạp đầy pin lại | 1
+PORTRAIT MODE | Chế độ chụp người cho hậu cảnh mờ nhoè đi | 1
+LANDSCAPE MODE | Kiểu để màn hình nằm ngang, bề rộng hơn bề cao | 1
+ZOOM | Thao tác kéo hai ngón cho hình to ra hoặc nhỏ lại | 1
+WIRED | Tính từ chỉ thứ phải cắm dây mới chạy, trái với không dây | 2
 BLUETOOTH | Công nghệ kết nối không dây tầm ngắn giữa tai nghe và điện thoại | 1
 AVATAR | Ảnh đại diện hồ sơ cá nhân của người dùng trên mạng xã hội | 1
 INTERACTION | Sự tương tác giữa người xem và người live (như thả tim, bình luận) | 2
