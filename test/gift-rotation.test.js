@@ -103,11 +103,12 @@ test('hottestGift: lấy món nhiều lượt nhất, bỏ qua món 0 lượt', 
   assert.equal(hottestGift({}), null);
 });
 
-test('vòng xoay chỉ lấy món ĐÃ CÓ người xem thật tặng được', () => {
-  // Cờ panel của API TikTok không đáng tin (đo 21/11/2026 lệch cả hai chiều so với hộp quà thật),
-  // nên chỉ món có đủ SAFE_MIN_SENDERS người khác nhau tặng mới được xoay lên bảng.
+test('vòng xoay chỉ lấy món người xem CHẮC CHẮN tìm thấy trong hộp quà', () => {
+  // Cờ panel của API TikTok không đáng tin (đo 21/11/2026 lệch cả hai chiều so với hộp quà thật).
+  // Chỉ hai nguồn được chấp nhận: đủ SAFE_MIN_SENDERS người khác nhau đã tặng thật, hoặc chính chủ
+  // kênh mở hộp quà ra nhìn thấy (STREAMER_SEEN_GIFTS).
   const banDau = new Set(base().map((r) => String(r.gift.id)));
-  const coBangChung = new Set(options.filter((g) => g.senders >= SAFE_MIN_SENDERS).map((g) => String(g.id)));
+  const coBangChung = new Set(options.filter((g) => g.senders >= SAFE_MIN_SENDERS || g.streamerSeen).map((g) => String(g.id)));
   let rules = base();
   let state = emptyRotation();
   for (let round = 0; round < 6; round += 1) {
@@ -121,9 +122,9 @@ test('vòng xoay chỉ lấy món ĐÃ CÓ người xem thật tặng được',
   }
 });
 
-test('chưa có bằng chứng nào thì KHÔNG xoay — giữ nguyên bảng quà chủ kênh đã chọn', () => {
+test('không có nguồn nào đáng tin thì KHÔNG xoay — giữ nguyên bảng quà chủ kênh đã chọn', () => {
   // Thà đứng yên còn hơn xoay vào món mà người xem mở hộp quà ra không có.
-  const khongBangChung = giftOptions([]);
+  const khongBangChung = giftOptions([]).map((g) => ({ ...g, streamerSeen: false }));
   const truoc = base();
   const { rules } = rotateGifts({ rules: truoc, options: khongBangChung, counts: {}, state: emptyRotation(), random: () => 0.5 });
   for (const r of rules) {

@@ -50,7 +50,7 @@ export const emptyRotation = () => ({ round: 0, at: 0, base: {}, away: {}, heart
  */
 const pool = (options, exclude = []) => {
   const ex = new Set((exclude || []).map(String));
-  return options.filter((g) => Number(g.senders) >= SAFE_MIN_SENDERS
+  return options.filter((g) => (Number(g.senders) >= SAFE_MIN_SENDERS || g.streamerSeen)
     && String(g.id) !== FANCLUB_GIFT_ID && !ex.has(String(g.id)) && Number(g.coins) >= 1);
 };
 

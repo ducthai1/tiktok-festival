@@ -26,15 +26,35 @@ export const ENGLISH_MAX_COINS = 30;
 export const ENGLISH_GIFT_PLAN = {
   general: 'TikTok', easy: 'Rose', hard: "You're awesome", dongvat: 'Finger Heart', amthuc: 'Peach', truonghoc: 'Rosa', nghe: 'Doughnut',
   // trang 2 (chủ kênh 14/11/2026: hạ giá về 10 xu): hộp quà chỉ có 6 món 10 xu ai cũng thấy (Rosa dùng ở trang 1)
-  toeic: 'Friendship Necklace', ielts: 'I Like What I See', congnghe: 'Curious Twinkle', bongda: 'Spinning Soccer', yhoc: 'Slow motion',
+  toeic: 'Friendship Necklace', ielts: 'I Like What I See', congnghe: 'Shamrock', bongda: 'Spinning Soccer', yhoc: 'Slow motion',
   dulich: 'Journey Pass', giaitri: 'Divine Fingers',
   // 15/11/2026: ô ⚖️ Thường (về độ khó thường) + trang 3 chủ đề mới — hết món 10 xu trong hộp quà nên dùng 5 / 15 xu
   normal: 'Ice Cream Cone',
   vutru: 'Kudos for My Star', game: 'Overreact', tinhyeu: 'Love in Scent', bian: 'Lyric Mail',
-  nghenghiep: 'Bravo!', nhacua: 'Tiny Blush'
+  nghenghiep: 'Bravo!', nhacua: 'Perfume'
 };
-/** Món không có trong hộp quà chung (panel:false) nhưng chủ kênh đã thấy trong hộp quà của phòng (ảnh chụp 14/11/2026). */
-export const STREAMER_SEEN_GIFTS = ['Peach'];
+/**
+ * Hộp quà THẬT của chủ kênh — đọc từ ảnh chụp màn hình ngày 21/11/2026, chỉ giữ món có trong bảng quà VN.
+ *
+ * Vì sao phải khai tay: cờ is_displayed_on_panel của API TikTok KHÔNG phải hộp quà của ai cả. Đo ngày
+ * 21/11/2026: API nói 40 món ≤30 xu "ai cũng thấy", hộp quà thật của chủ kênh có 46 món, lệch cả hai
+ * chiều. Lý do nằm ngay trong chính câu trả lời của API — pages[0] chứa cả 737 món của vùng, kèm
+ * frequently_used_gifts / favourite_gifts / backfill_gifts đều RỖNG khi gọi mà không đăng nhập, và
+ * strategy_data ghi {"room_region":"VN","fug_qualification":false,"origin_fug":[],"sort_policy":"common"}.
+ * Nghĩa là hộp quà được ghép ở máy người xem từ lịch sử tặng quà của CHÍNH họ. Ta không đăng nhập bằng
+ * tài khoản người xem nên không API nào trả về hộp quà của họ được.
+ *
+ * Mắt chủ kênh là nguồn đáng tin nhất hiện có, dùng cho tới khi gom đủ bằng chứng người xem thật tặng
+ * (src/live/gift-evidence.js). Cập nhật: chụp lại hộp quà rồi sửa danh sách này.
+ */
+export const STREAMER_SEEN_GIFTS = [
+  'Birthday Cake', 'Freestyle', 'GG', 'Glow Stick', 'Heart Me', 'Ice Cream Cone', 'LIVE FEST 26',
+  'Love you so much', 'Mantap', 'Mate Melody', 'Mirwas Beat', 'Oldies', 'Pop', 'Rose', 'TikTok', 'Welcome Dallah',
+  'Wink wink', "You're awesome", 'Encore Ticket', 'Finger Heart', 'Ice cream', 'Love in Scent', 'Name shoutout',
+  'Okay', 'Overreact', 'Peach', 'Spinning Soccer', 'Divine Fingers', 'Drip Brewing', 'Friendship Necklace',
+  'I Like What I See', "I'm Yours", 'Journey Pass', 'Rosa', 'Shamrock', 'Slow motion', 'Bravo!',
+  'Kudos for My Star', 'Lyric Mail', 'G.O.A.T. Busker', 'little kisses', 'Perfume', 'Doughnut'
+];
 
 export const ENGLISH_TARGETS = {
   // Trang 1: Đại trà & Dễ chơi (hiện 20s) — quà 1 / 5 / 10 / 30 xu (Đồ vật đã gộp vào Tổng hợp)

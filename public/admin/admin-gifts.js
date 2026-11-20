@@ -44,10 +44,11 @@ export function setupGiftEditor({ $, socket, toast }) {
     if (!g) return el('span', 'badge warn', 'chưa chọn');
     const n = Number(g.senders) || 0;
     if (n >= DU_BANG_CHUNG) return el('span', 'badge', `✓ ${n} người đã tặng được`);
+    if (g.streamerSeen) return el('span', 'badge', n ? `✓ có trong hộp quà của bạn · ${n} người đã tặng` : '✓ có trong hộp quà của bạn');
     if (n > 0) return el('span', 'badge seen', `${n} người đã tặng — chưa đủ chắc`);
-    if (g.panel) return el('span', 'badge warn', '⚠ chưa ai tặng bao giờ (API bảo có)');
+    if (g.panel) return el('span', 'badge warn', '⚠ API bảo có, nhưng hộp quà bạn KHÔNG có');
     if (g.seen) return el('span', 'badge warn', '⚠ phòng mới nhận 1 lần');
-    return el('span', 'badge warn', '⚠ chưa ai tặng được món này');
+    return el('span', 'badge warn', '⚠ chưa xác nhận được ai tặng nổi');
   }
 
   function makeGiftBtn(giftId, onPick) {
@@ -176,7 +177,7 @@ export function setupGiftEditor({ $, socket, toast }) {
     const usedByRule = new Map(rules.map((r, i) => [r.giftId, i]));
     const onId = musicGifts.on?.id;
     const offId = musicGifts.off?.id;
-    const list = options.filter((g) => (all || Number(g.senders) > 0 || g.panel || g.seen) && (!q || g.name.toLowerCase().includes(q)));
+    const list = options.filter((g) => (all || Number(g.senders) > 0 || g.streamerSeen || g.panel || g.seen) && (!q || g.name.toLowerCase().includes(q)));
 
     let currentSelId = '';
     if (pickingFor === 'music-on') currentSelId = onId;

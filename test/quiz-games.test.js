@@ -262,10 +262,12 @@ test('english gifts: every slot shows a real VN gift at its REAL price (≤ 30 c
     assert.ok(x.gift.coins <= 30);
   }
   assert.equal(new Set(a.map((x) => x.gift.name)).size, a.length);
-  // mọi món phải có trong hộp quà mà người xem thấy (13/11 từng gán quà không có trong hộp quà → không ai tặng được)
+  // Mọi ô phải gán món CÓ TRONG HỘP QUÀ THẬT (STREAMER_SEEN_GIFTS — chủ kênh chụp màn hình xác nhận).
+  // KHÔNG chấp nhận cờ panel của API nữa: đo 21/11/2026 thấy API đánh dấu "ai cũng thấy" cho cả
+  // Tiny Blush và Curious Twinkle, trong khi hộp quà thật của chủ kênh không có món nào trong hai món đó.
   for (const x of a) {
-    const listed = VN_GIFTS_UP_TO_30.some((g) => g.name === x.gift.name && g.panel);
-    assert.ok(listed || STREAMER_SEEN_GIFTS.includes(x.gift.name), `${x.to}: ${x.gift.name} không có trong hộp quà TikTok`);
+    assert.ok(STREAMER_SEEN_GIFTS.includes(x.gift.name),
+      `${x.to}: ${x.gift.name} KHÔNG có trong hộp quà thật — người xem sẽ không tìm thấy để tặng`);
   }
   assert.equal(a.find((x) => x.to === 'easy').gift.name, 'Rose');
   const sets = loadEnglishSets();

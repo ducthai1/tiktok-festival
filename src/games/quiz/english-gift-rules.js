@@ -1,7 +1,7 @@
 // Luật quà tab tiếng Anh do chủ kênh chỉnh ở trang điều khiển (tab 🎁 Quà): [{ to, gift, questions, enabled }].
 // Máy chủ KHÔNG tin giá / ảnh trang điều khiển gửi lên: chỉ nhận id quà, rồi lấy tên + GIÁ THẬT + ảnh từ bảng quà TikTok
 // (tiktok-gifts-vn.js) hoặc quà thật phòng đã nhận. Lưu ở data/settings.json (englishGifts).
-import { ENGLISH_TARGETS, defaultQuestionsFor } from '../../../public/shared/english-sets.js';
+import { ENGLISH_TARGETS, STREAMER_SEEN_GIFTS, defaultQuestionsFor } from '../../../public/shared/english-sets.js';
 import { VN_GIFTS_UP_TO_30 } from '../../../public/shared/tiktok-gifts-vn.js';
 
 export const MAX_RULES = 40;
@@ -20,21 +20,25 @@ export const MAX_RULE_QUESTIONS = 200;
  */
 export function giftOptions(catalog = [], senders = {}) {
   const soNguoi = (id) => Math.max(0, Number(senders?.[String(id)]) || 0);
-  const out = VN_GIFTS_UP_TO_30.map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: g.image, panel: g.panel, pos: g.pos, seen: false, senders: soNguoi(g.id) }));
+  // chủ kênh tự nhìn hộp quà của mình rồi xác nhận — đáng tin hơn hẳn cờ panel của API
+  const daXacNhan = new Set(STREAMER_SEEN_GIFTS.map((n) => n.toLowerCase()));
+  const chuKenhThay = (name) => daXacNhan.has(String(name || '').toLowerCase());
+  const out = VN_GIFTS_UP_TO_30.map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: g.image, panel: g.panel, pos: g.pos, seen: false, senders: soNguoi(g.id), streamerSeen: chuKenhThay(g.name) }));
   const byId = new Map(out.map((g) => [g.id, g]));
   for (const c of catalog || []) {
     const id = String(c?.id || '');
     if (!/^\d+$/.test(id) || !(Number(c.coins) >= 1)) continue;
     if (byId.has(id)) byId.get(id).seen = true;
     else {
-      const g = { id, name: String(c.name || '').slice(0, 40), coins: Number(c.coins), image: c.image || '', panel: false, pos: 0, seen: true, senders: soNguoi(id) };
+      const g = { id, name: String(c.name || '').slice(0, 40), coins: Number(c.coins), image: c.image || '', panel: false, pos: 0, seen: true, senders: soNguoi(id), streamerSeen: chuKenhThay(c.name) };
       out.push(g);
       byId.set(id, g);
     }
   }
   // nhiều người thật tặng được nhất lên đầu (bằng chứng chắc chắn) → rồi mới tới cờ panel của API → phòng đã nhận → giá
-  return out.sort((a, b) => (b.senders - a.senders) || (b.panel - a.panel) || (a.panel ? a.pos - b.pos : 0)
-    || (b.seen - a.seen) || a.coins - b.coins || a.name.localeCompare(b.name));
+  // người thật tặng được nhiều nhất → chủ kênh xác nhận thấy tận mắt → cờ panel của API → phòng đã nhận → giá
+  return out.sort((a, b) => (b.senders - a.senders) || (b.streamerSeen - a.streamerSeen) || (b.panel - a.panel)
+    || (a.panel ? a.pos - b.pos : 0) || (b.seen - a.seen) || a.coins - b.coins || a.name.localeCompare(b.name));
 }
 
 /** Kiểm tra + chuẩn hoá quà Bật / Tắt nhạc nền. Không được trùng nhau và không được trùng với quà đổi đề tiếng Anh. */
