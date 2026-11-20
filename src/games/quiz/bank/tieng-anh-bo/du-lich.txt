@@ -37,7 +37,7 @@ TRAVEL BUDDY | Bạn đồng hành khi du lịch | 2 | TRAVEL COMPANION
 SOLO TRAVEL | Du lịch một mình | 2 | SOLO TRIP
 STAYCATION | Kỳ nghỉ tại nhà (gần nhà) | 3
 BUCKET LIST | Danh sách điều muốn làm trong đời | 2
-TRAVEL ADAPTER | Ổ chuyển đổi điện khi đi nước ngoài | 2 | PLUG ADAPTER
+TRAVEL ADAPTER | Cục chuyển chân cắm để sạc được ở ổ điện nước ngoài | 2 | PLUG ADAPTER, POWER ADAPTER
 CURRENCY EXCHANGE | Đổi tiền ngoại tệ | 2 | MONEY EXCHANGE
 CHECKPOINT | Chốt chặn giữa đường, qua đây phải dừng cho người ta xét giấy | 2
 TOLL | Khoản phí phải trả khi đi qua cầu hoặc đường cao tốc | 2
@@ -226,7 +226,7 @@ OLD QUARTER | Khu phố cổ lưu giữ nét xưa cổ kính | 2 | OLD TOWN
 CITADEL | Kinh thành hoặc hoàng thành thành trì phong kiến | 2 | IMPERIAL CITADEL
 MAUSOLEUM | Lăng tẩm tôn nghiêm an nghỉ của các bậc danh nhân | 2
 BAZAAR | Khu chợ phương đông truyền thống buôn bán sầm uất | 2 | SOUK
-CROSSING | Lối vạch trắng kẻ đường ưu tiên cho người đi bộ | 1 | PEDESTRIAN CROSSING
+CROSSING | Chỗ băng qua nói chung, có thể là qua đường, qua sông hay qua biên giới | 1
 CROSSROADS | Ngã tư đường phố giao nhau tấp nập | 1 | INTERSECTION
 ROUNDABOUT | Vòng xuyến ngã năm ngã sáu điều phối giao thông | 2 | TRAFFIC CIRCLE
 TRAFFIC LIGHT | Cột đèn tín hiệu giao thông ngã tư | 1 | TRAFFIC SIGNAL
@@ -237,7 +237,7 @@ DOWNTOWN | Khu trung tâm mua sắm tài chính thành phố | 1 | CITY CENTER
 SUBURB | Vùng ngoại ô yên tĩnh thoáng đãng | 2 | OUTSKIRTS
 ALLEY | Con ngõ nhỏ ngoằn ngoèo trong phố | 1 | LANE
 SIDEWALK | Vỉa hè lát gạch dành cho người đi bộ | 1 | PAVEMENT
-AVENUE | Đại lộ rợp bóng cây xanh rộng lớn | 2
+AVENUE | Phố thẳng dài hai hàng cây, ở Mỹ đánh số để tìm địa chỉ | 2
 SQUARE | Quảng trường trung tâm thành phố tụ họp đông người | 1 | PLAZA
 FOUNTAIN | Đài phun nước nghệ thuật nhảy múa | 1
 WATERFRONT | Khu phố bờ sông bờ hồ thoáng mát | 2 | RIVERSIDE
@@ -424,7 +424,7 @@ DURATION | Khoảng thời gian kéo dài | 2
 EXCURSION | Chuyến tham quan dã ngoại | 3
 INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3
 COMMUTER | Người ngày nào cũng bắt xe buýt hay tàu đi làm xa | 3
-BOULEVARD | Đại lộ rộng lớn | 2
+BOULEVARD | Con đường lớn có dải phân cách trồng cây chạy giữa, kiểu Pháp | 2
 CROSSWALK | Vạch sang đường cho người đi bộ | 1
 TIMEZONE | Múi giờ Trái Đất | 2
 DAYLIGHT | Ánh sáng ban ngày | 1
@@ -438,19 +438,13 @@ EQUINOX | Hiện tượng điểm phân (xuân phân hoặc thu phân ngày đê
 EMBASSY | Tòa đại sứ quán đại diện cơ quan ngoại giao ở nước bạn | 2
 CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập ra đường | 3
 VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt | 1
-STONEHENGE | Vòng tròn các khối cự thạch bí ẩn xếp từ thời tiền sử ở nước Anh | 3
-SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu Phi | 1
-AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất | 1
 PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | PACIFIC OCEAN
 ATLANTIC | Đại dương nằm giữa châu Mỹ với châu Âu và châu Phi | 2 | ATLANTIC OCEAN
-NILE | Dòng sông Nin huyền thoại nuôi dưỡng nền văn minh Ai Cập cổ | 2 | NILE RIVER
-ALPS | Dãy núi An-pơ hùng vĩ phủ đầy tuyết trắng trải qua các nước châu Âu | 2
 ANTARCTICA | Châu Nam Cực - lục địa băng giá lạnh nhất địa cầu nơi chim cánh cụt sống | 2
-GREENLAND | Hòn đảo lớn nhất thế giới phủ đầy băng tuyết gần Bắc Cực | 2
 EXPEDIA | Trang web đặt phòng vé du lịch trực tuyến nổi tiếng | 2 | TRAVEL SITE
 AIRBNB | Ứng dụng thuê căn hộ và phòng nghỉ homestay toàn cầu | 1
 TRIPADVISOR | Trang web đánh giá review khách sạn nhà hàng | 2
-ALL-INCLUSIVE | Gói tour trọn gói bao trọn phòng ăn uống giải trí | 2 | PACKAGE TOUR
+ALL-INCLUSIVE | Kiểu nghỉ dưỡng trả một lần, trong khu nghỉ ăn uống gì cũng không mất thêm | 2
 HALF BOARD | Gói phòng bao gồm bữa sáng và bữa tối | 2
 FULL BOARD | Gói phòng phục vụ đủ 3 bữa ăn mỗi ngày | 2
 BUFFET | Tiệc đứng tự chọn món ăn thỏa thích | 1 | SMORGASBORD
@@ -519,7 +513,6 @@ FANNY PACK | Túi bao tử đeo quanh hông giữ tiền hộ chiếu | 2 | WAIS
 NECK PILLOW | Gối kê cổ chữ U êm ái chống mỏi khi đi máy bay | 1 | TRAVEL PILLOW
 EYE MASK | Bịt mắt ngủ che ánh sáng chợp mắt | 1 | SLEEP MASK
 EARPLUGS | Nút bịt tai giảm tiếng ồn động cơ máy bay | 1 | EAR PLUGS
-POWER ADAPTER | Đầu chuyển đổi chân cắm điện du lịch quốc tế | 2
 ATOLL | Đảo san hô vòng bao quanh một đầm nước giữa biển | 3
 CRAG | Mỏm đá dựng đứng nhô ra khỏi sườn núi | 3
 RAVINE | Khe núi hẹp và sâu do nước xói mòn | 3
