@@ -452,57 +452,62 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 .quiz-body.fit3 .quiz-emoji { font-size: 64px; }
 
 /* ══ THẺ CHÀO FAN CLB (stage-hud.js: fx.fanClub + fx.fanLevel) ══
-   Người thường: thẻ xám trung tính ở trên. Fan: càng cấp cao khung càng sang, và luôn ghi rõ
-   "FAN CỦA KÊNH · CẤP N" để người xem khác thấy mà muốn vào CLB. 4 bậc: 1-2 đồng · 3-5 vàng ·
-   6-9 bạch kim · 10+ kim cương. */
-/* Fan: trả lại viền sáng CHẠY VÒNG, màu theo bậc */
+   Người thường: thẻ xám trung tính ở trên. Fan: huy hiệu CẤP chiếm chỗ trống bên phải thẻ, và mỗi
+   cấp một chất liệu riêng xịn dần — cấp 1 Đồng · 2 Bạc · 3 Vàng · 4 Lục Bảo · 5 Hồng Ngọc ·
+   6–9 Bạch Kim · 10+ Kim Cương. Hiệu ứng cũng tăng dần: trơn → ánh quét → nhấp nháy → viền chạy
+   → nền cầu vồng. Cấp của người đó nằm trên huy hiệu nên dòng chữ trên không nhắc lại.
+   Màu lấy qua ba biến để khỏi lặp luật: --fan-a (nền đậm), --fan-b (nền nhạt), --fan-ink (ánh kim). */
+#stage.theme-quiz #hud > #welcome.fan {
+  background: linear-gradient(120deg, var(--fan-a) 0%, var(--fan-b) 100%);
+  box-shadow: 0 0 26px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 12px 28px rgba(0, 0, 0, 0.5);
+}
 #stage.theme-quiz #hud > #welcome.fan::before { padding: 3px;
-  background: conic-gradient(from var(--spin), var(--line), var(--line-2), var(--line)); animation: spin 3s linear infinite; }
-#stage.theme-quiz #welcome.fan .kicker { font-weight: 900; letter-spacing: 2px; }
-#stage.theme-quiz #welcome.fan .welcome-avatars img, #stage.theme-quiz #welcome.fan .welcome-avatars .ava { border-color: #fff8e1; }
+  background: conic-gradient(from var(--spin), var(--fan-ink), var(--fan-b), var(--fan-ink)); animation: spin 5s linear infinite; }
+#stage.theme-quiz #welcome.fan .kicker { color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink);
+  text-shadow: 0 0 10px var(--fan-glow); letter-spacing: 2px; font-weight: 900; }
+#stage.theme-quiz #welcome.fan .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); }
+#stage.theme-quiz #welcome.fan .line { color: rgba(255, 255, 255, 0.86); -webkit-text-fill-color: rgba(255, 255, 255, 0.86); }
+#stage.theme-quiz #welcome.fan .welcome-avatars img, #stage.theme-quiz #welcome.fan .welcome-avatars .ava { border-color: var(--fan-ink); }
 
-/* Bậc 1 và 2 trước đây dùng NỀN SÁNG + CHỮ NÂU: trên màn hình tối nó thành một khối mù tạt
-   đục, không ra dáng fan club. Nay cùng ngôn ngữ với bậc bạch kim / kim cương — nền TỐI ấm,
-   viền kim loại sáng, chữ sáng, ánh hắt ra ngoài. */
+/* Huy hiệu cấp — chiếm khoảng trống bên phải thẻ */
+#stage.theme-quiz #welcome .fan-badge { flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  width: 92px; height: 78px; margin-left: auto; border-radius: 16px; line-height: 1;
+  background: linear-gradient(160deg, var(--fan-ink), var(--fan-b) 60%, var(--fan-a));
+  border: 2px solid rgba(255, 255, 255, 0.55); box-shadow: 0 0 18px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+#stage.theme-quiz #welcome .fan-badge[hidden] { display: none; }
+#stage.theme-quiz #welcome .fan-badge-top { font-size: 12px; font-weight: 900; letter-spacing: 3px; color: rgba(0, 0, 0, 0.62); }
+#stage.theme-quiz #welcome .fan-badge-num { font-size: 36px; font-weight: 900; color: #fff; text-shadow: 0 2px 5px rgba(0, 0, 0, 0.55); margin: 1px 0 2px; }
+#stage.theme-quiz #welcome .fan-badge-tier { font-size: 10px; font-weight: 900; letter-spacing: 1px; color: rgba(0, 0, 0, 0.68); }
 
-/* bậc 1 — ĐỒNG (cấp 1-2) */
-#stage.theme-quiz #hud > #welcome.fan-1 { --line: #ffcf9a; --line-2: #8a4b1d;
-  background: linear-gradient(120deg, #3a2114 0%, #5c3418 48%, #7a4a22 100%);
-  box-shadow: 0 0 24px rgba(214, 140, 70, 0.55), inset 0 1px 0 rgba(255, 210, 160, 0.3), 0 12px 28px rgba(0, 0, 0, 0.5); }
-#stage.theme-quiz #welcome.fan-1 .kicker { color: #ffcf9a; -webkit-text-fill-color: #ffcf9a; text-shadow: 0 0 10px rgba(255, 160, 80, 0.5); }
-#stage.theme-quiz #welcome.fan-1 .name { color: #fff6ec; -webkit-text-fill-color: #fff6ec; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55); }
-#stage.theme-quiz #welcome.fan-1 .line { color: #f3d9bf; -webkit-text-fill-color: #f3d9bf; }
-#stage.theme-quiz #welcome.fan-1 .welcome-avatars img, #stage.theme-quiz #welcome.fan-1 .welcome-avatars .ava { border-color: #ffcf9a; }
-
-/* bậc 2 — VÀNG (cấp 3-5): nền tối ánh vàng + vệt sáng quét */
-#stage.theme-quiz #hud > #welcome.fan-2 { --line: #ffe9a8; --line-2: #c9901f;
-  background: linear-gradient(120deg, #3b2c07 0%, #6b4e0c 46%, #9a7412 100%);
-  box-shadow: 0 0 32px rgba(255, 196, 60, 0.6), inset 0 1px 0 rgba(255, 236, 170, 0.35), 0 12px 30px rgba(0, 0, 0, 0.5); }
-#stage.theme-quiz #hud > #welcome.fan-2::after { display: block; }
-#stage.theme-quiz #welcome.fan-2 .kicker { color: #ffe066; -webkit-text-fill-color: #ffe066; text-shadow: 0 0 12px rgba(255, 200, 60, 0.6); }
-#stage.theme-quiz #welcome.fan-2 .name { color: #fffbe8; -webkit-text-fill-color: #fffbe8; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55); }
-#stage.theme-quiz #welcome.fan-2 .line { color: #f6e6b4; -webkit-text-fill-color: #f6e6b4; }
-#stage.theme-quiz #welcome.fan-2 .welcome-avatars img, #stage.theme-quiz #welcome.fan-2 .welcome-avatars .ava { border-color: #ffe066; }
-
-/* bậc 3 — BẠCH KIM (cấp 6-9): viền sáng chạy + ánh tím lạnh */
-#stage.theme-quiz #hud > #welcome.fan-3 { --line: #e6f3ff; --line-2: #7aa7ff;
-  background: linear-gradient(120deg, #4a63b8, #6f7fd8 45%, #9ad0ff);
-  box-shadow: 0 0 34px rgba(140, 180, 255, 0.9), 0 12px 30px rgba(0, 0, 0, 0.45);
-  animation: fan-pulse 1.8s ease-in-out infinite; }
+/* cấp 1 — ĐỒNG: trơn, ấm */
+#stage.theme-quiz #hud > #welcome.fan-1 { --fan-a: #3a2114; --fan-b: #8a4f22; --fan-ink: #ffb877; --fan-glow: rgba(214, 140, 70, 0.5); }
+/* cấp 2 — BẠC: kim loại lạnh, sáng hơn một bậc */
+#stage.theme-quiz #hud > #welcome.fan-2 { --fan-a: #23282f; --fan-b: #6b7784; --fan-ink: #e6edf5; --fan-glow: rgba(200, 220, 240, 0.5); }
+/* cấp 3 — VÀNG: thêm vệt sáng quét ngang */
+#stage.theme-quiz #hud > #welcome.fan-3 { --fan-a: #3b2c07; --fan-b: #9a7412; --fan-ink: #ffd95e; --fan-glow: rgba(255, 196, 60, 0.6); }
 #stage.theme-quiz #hud > #welcome.fan-3::after { display: block; }
-#stage.theme-quiz #welcome.fan-3 .kicker { color: #0d1b3c; -webkit-text-fill-color: #0d1b3c; }
-#stage.theme-quiz #welcome.fan-3 .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 6px rgba(20, 40, 110, 0.75); }
-#stage.theme-quiz #welcome.fan-3 .line { color: #eaf3ff; -webkit-text-fill-color: #eaf3ff; }
-
-/* bậc 4 — KIM CƯƠNG (cấp 10+): nền cầu vồng chạy, sáng nhất màn hình */
-#stage.theme-quiz #hud > #welcome.fan-4 { --line: #ffffff; --line-2: #ff4fa3;
-  background: linear-gradient(120deg, #ff4fa3, #ffd36b 30%, #36d6ff 60%, #b388ff);
-  background-size: 260% 100%; animation: fan-rainbow 4s linear infinite, fan-pulse 1.5s ease-in-out infinite;
-  box-shadow: 0 0 40px rgba(255, 150, 220, 0.95), 0 12px 30px rgba(0, 0, 0, 0.45); }
+/* cấp 4 — LỤC BẢO: vệt sáng + thở nhẹ */
+#stage.theme-quiz #hud > #welcome.fan-4 { --fan-a: #06302a; --fan-b: #0e7d63; --fan-ink: #5bf0bd; --fan-glow: rgba(70, 230, 180, 0.6);
+  animation: fan-pulse 2.4s ease-in-out infinite; }
 #stage.theme-quiz #hud > #welcome.fan-4::after { display: block; }
-#stage.theme-quiz #welcome.fan-4 .kicker { color: #2a0a24; -webkit-text-fill-color: #2a0a24; }
-#stage.theme-quiz #welcome.fan-4 .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 7px rgba(90, 0, 60, 0.8); }
-#stage.theme-quiz #welcome.fan-4 .line { color: #fff0fa; -webkit-text-fill-color: #fff0fa; }
+/* cấp 5 — HỒNG NGỌC: thở nhanh hơn, quầng sáng dày hơn */
+#stage.theme-quiz #hud > #welcome.fan-5 { --fan-a: #3a0618; --fan-b: #a81242; --fan-ink: #ff93b4; --fan-glow: rgba(255, 90, 140, 0.7);
+  animation: fan-pulse 1.9s ease-in-out infinite; }
+#stage.theme-quiz #hud > #welcome.fan-5::after { display: block; }
+/* cấp 6–9 — BẠCH KIM: viền chạy nhanh + ánh lạnh */
+#stage.theme-quiz #hud > #welcome.fan-6 { --fan-a: #111c3a; --fan-b: #3f5cae; --fan-ink: #cfe4ff; --fan-glow: rgba(150, 190, 255, 0.75);
+  animation: fan-pulse 1.6s ease-in-out infinite; }
+#stage.theme-quiz #hud > #welcome.fan-6::before { animation: spin 2.2s linear infinite; }
+#stage.theme-quiz #hud > #welcome.fan-6::after { display: block; }
+/* cấp 10+ — KIM CƯƠNG: nền cầu vồng chạy, sáng nhất màn hình */
+#stage.theme-quiz #hud > #welcome.fan-7 { --fan-a: #2a0a24; --fan-b: #7a1b5e; --fan-ink: #ffffff; --fan-glow: rgba(255, 150, 220, 0.9);
+  background: linear-gradient(120deg, #ff4fa3, #ffd36b 30%, #36d6ff 60%, #b388ff);
+  background-size: 260% 100%; animation: fan-rainbow 4s linear infinite, fan-pulse 1.5s ease-in-out infinite; }
+#stage.theme-quiz #hud > #welcome.fan-7::before { animation: spin 1.8s linear infinite; }
+#stage.theme-quiz #hud > #welcome.fan-7::after { display: block; }
+#stage.theme-quiz #welcome.fan-7 .kicker { color: #2a0a24; -webkit-text-fill-color: #2a0a24; text-shadow: none; }
+#stage.theme-quiz #welcome.fan-7 .fan-badge { background: linear-gradient(160deg, #fff, #ffd36b 45%, #ff4fa3); }
+#stage.theme-quiz #welcome.fan-7 .fan-badge-num { color: #2a0a24; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6); }
 
 @keyframes fan-rainbow { to { background-position: 260% 0; } }
 @keyframes fan-pulse { 50% { filter: brightness(1.12); } }

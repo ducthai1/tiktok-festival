@@ -1,6 +1,9 @@
 // Phần chữ 2D phủ trên cảnh 3D: tiêu đề, chỉ số, bảng xếp hạng, thông báo, chú thích quà.
 import { avatarNode } from './stage-labels.js';
 
+/** Tên bậc Fan CLB hiện trên huy hiệu — cấp 1–5 mỗi cấp một chất liệu, cấp 6+ gom hai bậc cao. */
+const FAN_TIERS = ['', 'ĐỒNG', 'BẠC', 'VÀNG', 'LỤC BẢO', 'HỒNG NGỌC', 'BẠCH KIM', 'KIM CƯƠNG'];
+
 const $ = (id) => document.getElementById(id);
 
 function el(tag, className, text) {
@@ -355,8 +358,16 @@ export function createHud() {
       // Fan CLB: thẻ xịn dần theo cấp (fan-1 đồng → fan-4 kim cương). Chào cả đoàn thì lấy cấp CAO NHẤT
       // trong đoàn, để một fan cấp cao không bị chìm trong thẻ thường.
       const level = Math.max(0, ...people.map((p) => (p.fanClub ? Math.max(1, Number(p.fanLevel) || 1) : 0)));
-      const band = level >= 10 ? 4 : level >= 6 ? 3 : level >= 3 ? 2 : level >= 1 ? 1 : 0;
+      // Cấp 1–5 mỗi cấp một kim loại / đá quý riêng (người xem thấy rõ mình đang lên hạng);
+      // từ cấp 6 gom thành hai bậc cao. Chào cả đoàn thì lấy cấp CAO NHẤT để fan xịn không bị chìm.
+      const band = level >= 10 ? 7 : level >= 6 ? 6 : Math.max(0, Math.min(5, level));
       root.className = `${group ? 'group' : ''}${band ? ` fan fan-${band}` : ''}`.trim();
+      const badge = root.querySelector('.fan-badge');
+      badge.hidden = !band;
+      if (band) {
+        badge.querySelector('.fan-badge-num').textContent = String(level);
+        badge.querySelector('.fan-badge-tier').textContent = FAN_TIERS[band];
+      }
       root.getAnimations?.().forEach((a) => a.cancel());
       const shown = people.slice(0, group ? 18 : 1);
       const avatars = shown.map((p, i) => {
@@ -366,9 +377,10 @@ export function createHud() {
       });
       if (people.length > shown.length) avatars.push(el('div', 'ava more', `+${people.length - shown.length}`));
       root.querySelector('.welcome-avatars').replaceChildren(...avatars);
+      // Cấp đã nằm ở huy hiệu bên phải rồi nên dòng trên không nhắc lại nữa, để chữ to và rõ.
       root.querySelector('.kicker').textContent = group
-        ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ` · CÓ FAN CẤP ${level}` : ' MỚI'}`
-        : band ? `👑 FAN CỦA KÊNH · CẤP ${level}` : '👋 CHÀO MỪNG';
+        ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ' · CÓ FAN CLB' : ' MỚI'}`
+        : band ? '👑 FAN CỦA KÊNH' : '👋 CHÀO MỪNG';
       root.querySelector('.name').textContent = group ? people.map((p) => p.nickname).join(' · ') : fx.nickname;
       root.querySelector('.line').textContent = line || 'vừa vào phòng!';
       root.hidden = false;

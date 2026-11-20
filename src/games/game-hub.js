@@ -61,6 +61,12 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
     if (event.type !== 'gift' || !event.user?.id) return [];
     const name = String(event.gift?.name || '').trim().toLowerCase();
     if (!FANCLUB_GIFT_IDS.has(String(event.gift?.id || '')) && !FANCLUB_GIFT_NAMES.has(name)) return [];
+    // ĐÃ LÀ MEMBER TỪ TRƯỚC → chỉ chúc mừng lần đầu thôi. Những lần tặng sau, món quà vẫn chạy
+    // tác dụng bình thường (đổi bộ đề…), không bày lại màn "vừa vào CLB".
+    // app.js đặt cờ này TRƯỚC khi fanclub-store học từ chính sự kiện này.
+    // (fanGreeted chỉ là chốt phụ trong phiên: nó mất khi đổi phòng / khởi động lại, nên một mình
+    //  nó không đủ — đó chính là lý do màn chúc mừng thỉnh thoảng hiện lại với fan cũ.)
+    if (event.user.alreadyFan === true) return [];
     if (fanGreeted.has(event.user.id)) return [];
     fanGreeted.add(event.user.id);
     if (!event.simulated) console.log(`[app] 💞 ${event.user.nickname} vào CLB người hâm mộ (${event.gift.name})`);

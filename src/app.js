@@ -303,6 +303,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     },
     onEvent(event) {
       followers.mark(event);
+      // Người này đã là Fan CLB TỪ TRƯỚC sự kiện này chưa? Phải hỏi TRƯỚC khi fanClubs.mark() học từ
+      // chính sự kiện này — không thì ai cũng hoá "fan cũ" và màn chúc mừng không bao giờ chạy.
+      // Đây là thứ phân biệt "vừa vào CLB" với "đã là member, nay tặng tiếp" (game-hub.js: fanClubJoin).
+      if (event.user) event.user.alreadyFan = fanClubs.has(event.user.id);
       fanClubs.mark(event);
       emitFx(hub.activeId(), hub.handleEvent(event));
       prefetchFollowThanks(event);
