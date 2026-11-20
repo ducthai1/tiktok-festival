@@ -30,10 +30,10 @@ SEA TURTLE | Rùa biển | 1
 TREE FROG | Ếch cây | 2
 BULLFROG | Con ễnh ương | 3
 CHIPMUNK | Con sóc chuột | 2
-HARE | Thỏ rừng | 2
+HARE | Thỏ rừng chân sau dài, không đào hang mà nằm ổ giữa đồng trống | 2 | CONEY
 WILD BOAR | Lợn rừng | 2 | BOAR
 FAWN | Nai con | 3
-ELK | Nai sừng tấm | 3
+ELK | Loài hươu lớn ở Bắc Mỹ, con đực gào vang gọi bạn tình mùa thu | 3 | WAPITI
 RED PANDA | Gấu trúc đỏ | 2
 SUN BEAR | Gấu chó | 3
 GRIZZLY | Gấu xám Bắc Mỹ | 3 | GRIZZLY BEAR
@@ -77,7 +77,7 @@ KING COBRA | Rắn hổ mang chúa | 3
 ANT COLONY | Đàn kiến (tổ kiến) | 2 | ANTHILL
 SCARAB | Bọ hung | 3 | DUNG BEETLE
 STICK INSECT | Bọ que | 3
-GLOWWORM | Đom đóm ấu trùng (sâu phát sáng) | 3
+GLOWWORM | Con cái không cánh nằm một chỗ dưới cỏ, phát sáng xanh liên tục | 3
 WATER STRIDER | Con gọng vó (nhện nước) | 3
 BADGER | Con lửng mõm nhọn lông khoang đen trắng, đào hang dưới đất | 1
 WEASEL | Con chồn nhỏ thân dài mềm, luồn hang săn chuột | 2
@@ -127,11 +127,11 @@ BITTERN | Chim vạc kêu ồm ộp trong đầm lau sậy | 2
 IBIS | Cò quăm mỏ cong xuống như lưỡi liềm | 2
 FLAMINGO | Chim hồng hạc co một chân, lông hồng vì ăn tôm | 2
 BUSTARD | Ô tác, loài chim nặng nhất mà vẫn bay được | 2
-MANDARIN | Vịt uyên ương lông sặc sỡ, biểu tượng của đôi lứa | 2
+MANDARIN DUCK | Vịt uyên ương lông sặc sỡ, biểu tượng của đôi lứa | 2 | MANDARIN
 CUCKOO | Chim tu hú đẻ nhờ trứng vào tổ của chim khác | 2
 KOEL | Chim tu hú châu Á kêu vang suốt mùa hè | 2
 ROADRUNNER | Chim sa mạc chạy bộ nhanh hơn là bay | 2
-SECRETARY | Chim chân cao châu Phi, giẫm chết rắn để ăn | 2
+SECRETARY BIRD | Chim chân cao châu Phi, giẫm chết rắn để ăn | 2 | SECRETARY
 WASP | Ong eo thắt, chích được nhiều lần mà không chết | 1
 HORNET | Ong bắp cày to, nọc rất độc, làm tổ trên cây | 2
 MOSQUITO | Côn trùng hút máu kêu vo ve, truyền sốt xuất huyết | 1
@@ -149,14 +149,14 @@ LEECH | Con đỉa bám vào da hút máu dưới ruộng nước | 2
 EARTHWORM | Giun đất làm tơi đất, mưa xong bò lên mặt đường | 2
 TERMITE | Con mối ăn rỗng cột gỗ, sống thành tổ lớn | 1
 HORSEFLY | Ruồi trâu to, chích trâu bò đau nhói | 2
-FIREFLY | Đom đóm phát sáng nhấp nháy trong đêm hè | 1
+FIREFLY | Con bọ bay lập loè nhấp nháy trong vườn đêm hè | 1
 STAG | Con hươu đực trưởng thành có bộ sừng lớn | 1
 DOE | Con hươu cái, không có sừng | 1
 BUCK | Con đực của hươu, nai hoặc thỏ | 1
-ROE | Giống hươu nhỏ ở châu Âu, mông có đốm trắng | 1
+ROE DEER | Giống hươu nhỏ ở châu Âu, mông có đốm trắng | 1 | ROE
 ANTELOPE | Linh dương sừng thẳng, phi nước đại trên thảo nguyên | 2
 WILDEBEEST | Linh dương đầu bò châu Phi, di cư thành đàn khổng lồ | 2
-MUSK | Hươu xạ đực tiết chất thơm dùng làm nước hoa | 2
+MUSK DEER | Hươu xạ đực tiết chất thơm dùng làm nước hoa | 2 | MUSK
 IMPALA | Linh dương châu Phi nhảy vọt rất cao khi bỏ chạy | 2
 ELAND | Linh dương to nhất châu Phi, sừng xoắn ốc | 2
 WARTHOG | Lợn rừng châu Phi mặt có bướu, răng nanh cong | 2
@@ -255,9 +255,9 @@ MONOTREME | Nhóm thú đẻ trứng duy nhất, gồm thú mỏ vịt và thú 
 PLACENTAL | Nhóm thú nuôi con trong bụng mẹ bằng nhau thai | 2
 DIURNAL | Kiếm ăn ban ngày và ngủ về đêm | 2
 CREPUSCULAR | Chỉ hoạt động lúc tranh tối tranh sáng sớm và chiều | 3
-ECTOTHERM | Động vật máu lạnh, thân nhiệt đổi theo môi trường | 3
-ENDOTHERM | Động vật máu nóng, tự giữ thân nhiệt ổn định | 3
-POIKILOTHERM | Loài có thân nhiệt lên xuống theo nhiệt độ xung quanh | 3
+ECTOTHERM | Loài phải phơi nắng hoặc nấp bóng râm vì nhiệt lấy từ bên ngoài | 3
+ENDOTHERM | Loài tự đốt thức ăn trong người để sinh ra nhiệt cho chính mình | 3
+POIKILOTHERM | Loài có thân nhiệt lúc cao lúc thấp, không giữ được một mức | 3
 HOMEOTHERM | Loài giữ thân nhiệt gần như không đổi suốt ngày đêm | 3
 PREDATION | Quan hệ một loài săn bắt và ăn thịt loài khác | 2
 SCAVENGER | Loài chuyên ăn xác chết do con khác bỏ lại | 2
@@ -282,9 +282,8 @@ EXOSKELETON | Bộ vỏ cứng bọc ngoài thân, phải lột mới lớn lên
 CHITIN | Chất tạo nên lớp vỏ cứng của côn trùng và vỏ tôm cua | 3
 SPIRACLE | Lỗ nhỏ hai bên thân côn trùng để thở | 3
 TRACHEA | Hệ ống dẫn khí đưa dưỡng khí vào khắp thân côn trùng | 2
-SIMPLE EYE | Mắt chỉ có một thấu kính, chỉ phân biệt sáng tối | 3
+SIMPLE EYE | Mắt chỉ có một thấu kính, chỉ phân biệt sáng tối | 3 | OCELLUS
 COMPOUND EYE | Mắt ghép từ hàng nghìn ô nhỏ, nhìn được gần như mọi hướng | 3
-OCELLUS | Mắt đơn li ti trên đỉnh đầu côn trùng, chỉ cảm nhận ánh sáng | 3
 SENSILLUM | Cơ quan cảm giác tí hon trên râu và chân côn trùng | 3
 CHEMORECEPTOR | Cơ quan nhận biết mùi và vị qua chất hoá học | 3
 PHOTORECEPTOR | Tế bào cảm nhận ánh sáng trong mắt | 3
@@ -303,9 +302,7 @@ CHEVROTAIN | Cheo cheo, loài guốc chẵn nhỏ nhất, chỉ to bằng con th
 TAKIN | Thú vùng Himalaya trông lai giữa dê và bò, lông vàng | 3
 OKAPI | Họ hàng hươu cao cổ, chân vằn như ngựa vằn, sống rừng Congo | 2
 QUAGGA | Phân loài ngựa vằn đã tuyệt chủng, chỉ vằn nửa thân trước | 2
-HYRAX | Thú nhỏ giống chuột lang nhưng họ hàng gần với voi | 2
-DASSIE | Tên gọi ở Nam Phi của loài thú nhỏ sống trong hốc đá | 2
-CONEY | Tên cũ chỉ con thỏ rừng | 1
+HYRAX | Thú nhỏ giống chuột lang nhưng họ hàng gần với voi | 2 | DASSIE
 PIKA | Thú nhỏ tai tròn họ thỏ, sống trong đá núi cao | 2
 CAIMAN | Cá sấu nhỏ ở Trung và Nam Mỹ | 2
 GAVIAL | Cá sấu sông Hằng mõm cực mảnh dài, chuyên bắt cá | 3

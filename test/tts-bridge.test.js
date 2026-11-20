@@ -11,6 +11,15 @@ const call = async (bridge, query) => {
   return res;
 };
 
+/** Chờ tới khi điều kiện đúng (tối đa 5 giây), thay cho việc chờ cứng một số mili giây. */
+const doi = async (dieuKien, loi) => {
+  for (let i = 0; i < 500; i += 1) {
+    if (dieuKien()) return;
+    await new Promise((r) => setTimeout(r, 10));
+  }
+  throw new Error(`quá 5 giây: ${loi}`);
+};
+
 test('/api/tts refuses dirty or overlong lines and answers 503 until the voice is installed', async () => {
   const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-'));
   const bridge = createTtsBridge({ dataDir, python: path.join(dataDir, 'no-python') });
@@ -67,10 +76,17 @@ test('a follow thank-you made ahead of time is served at once, without asking th
   const dataDir = fs.mkdtempSync(path.join(os.tmpdir(), 'tts-'));
   const bridge = createTtsBridge({ dataDir, python: process.execPath, port: voice.address().port });
   bridge.start();
-  for (let i = 0; i < 20 && !bridge.status().ready; i += 1) await new Promise((r) => setTimeout(r, 25));
+  await doi(() => bridge.status().ready, 'giọng đọc không sẵn sàng');
   const line = 'Cảm ơn Lan Anh, đã follow! Mời bạn lên sân khấu!';
   bridge.prefetch(line, 'Trúc Ly');
-  await new Promise((r) => setTimeout(r, 200));
+  // Chờ ĐÚNG ĐIỀU KIỆN chứ không chờ cứng vài trăm mili giây: máy bận thì bản thu
+  // chưa kịp ghi xong, lần gọi sau sẽ tạo lại và test trượt oan.
+  await doi(() => speaks === 1, 'chưa gọi tới giọng đọc lần nào');
+  const daGhiDem = () => {
+    try { return fs.readdirSync(path.join(dataDir, 'tts-cache')).some((n) => n.endsWith('.wav')); }
+    catch { return false; } // thư mục đệm chỉ được tạo khi có bản thu đầu tiên
+  };
+  await doi(daGhiDem, 'bản thu chưa được ghi vào đệm');
   assert.equal(speaks, 1);
   const res = await call(bridge, `text=${encodeURIComponent(line)}&voice=${encodeURIComponent('Trúc Ly')}`);
   assert.equal(res.code, 200);
