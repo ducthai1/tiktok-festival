@@ -4,7 +4,8 @@
 // hoa), mỗi 3.000 tim = xe bay một vòng; share = lên camera;
 // follow (lần đầu) = thẻ lớn + solo sân khấu + cánh neon + danh hiệu FAN CỨNG;
 // tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → XE BAY
-// (1–199 💎) → SOLO giữa sân khấu + khổng lồ (200–999) → DROP (1.000+) (mốc quà Sàn Nhảy: DANCE_TIER_MIN)
+// 6 bậc quà (mốc Sàn Nhảy: DANCE_TIER_MIN): 1–4 cánh · 5–19 solo ngắn · 20–98 XE BAY · 99–198 solo + pháo hoa
+// · 199–999 khổng lồ VIP · 1.000+ DROP · 5.000+ đại nhạc hội
 // (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { DANCE_TIER_MIN, giftTierIn } from '../../public/shared/gift-tiers.js';
@@ -35,8 +36,9 @@ const SHRINK_WORDS = ['nho lai', 'nho di', 'be lai'];
 const JUMP_MS = 1300;
 // Quà 1–199 💎 (cả khoảng đầu của Sàn Nhảy): XE BAY mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu.
 // Từ 200 💎 trở lên: solo sân khấu + khổng lồ + pháo hoa.
-export const RIDE_MIN_KC = 1;
-export const RIDE_MAX_KC = 199;
+// Xe bay là hiệu ứng của RIÊNG khoảng giữa (bậc 3), không phải mọi quà rẻ — có vậy mới thấy lên bậc.
+export const RIDE_MIN_KC = 20;
+export const RIDE_MAX_KC = 98;
 const RIDE_MS = 14500; // màn hình bay 14 s (cất cánh → một vòng → hạ cánh), dư nửa giây
 const WINGS_MS = 10 * 60 * 1000;
 export const LIKES_FOR_CAMERA = 500; // miễn phí: cánh + lên camera (user 05/11 chuyển bớt về free, trước là 1.000)

@@ -230,17 +230,22 @@ test('without a seed count the floor starts empty', () => {
   assert.equal(game.snapshot(0).dancers.length, 0);
 });
 
-test('a 1–199 diamond gift flies the giver around on a winged car; 200+ keeps the stage solo and fireworks', () => {
+// Sàn Nhảy tách lại 6 bậc (chủ kênh 21/11 "cho về cũ"), mốc bậc 3 hạ 30 → 20.
+// XE BAY là hiệu ứng của RIÊNG khoảng 20–98 💎 — quà rẻ hơn chỉ có cánh / solo ngắn, quà to hơn thì solo + pháo hoa.
+test('xe bay chỉ dành cho khoảng 20–98 💎; dưới thì không, trên thì solo + pháo hoa', () => {
   const game = createDanceHallGame();
-  for (const [n, kc] of [[1, 1], [2, 199]]) {
+  for (const [n, kc] of [[1, 20], [2, 98]]) {
     const fx = game.handleEvent(gift(n, kc), 0);
-    assert.equal(fx.find((f) => f.kind === 'gift').ride, true);
-    assert.ok(!kinds(fx).includes('fireworks'));
-    assert.ok(!fx.some((f) => f.kind === 'solo' && f.userId === `u${n}`));
+    assert.equal(fx.find((f) => f.kind === 'gift').ride, true, `${kc} 💎 phải được xe bay`);
     assert.equal(dancer(game, `u${n}`, 1000).move, 'ride');
     assert.notEqual(dancer(game, `u${n}`, 15000).move, 'ride'); // hạ cánh
   }
-  const big = game.handleEvent(gift(3, 200), 20000);
+  // quà rẻ hơn khoảng xe bay: không có xe
+  const re = game.handleEvent(gift(5, 5), 20000);
+  assert.equal(re.find((f) => f.kind === 'gift').ride, false, '5 💎 chưa tới mốc xe bay');
+
+  // quà to hơn khoảng xe bay: thôi xe, chuyển sang solo + pháo hoa
+  const big = game.handleEvent(gift(3, 199), 40000);
   assert.equal(big.find((f) => f.kind === 'gift').ride, false);
   assert.ok(kinds(big).includes('fireworks'));
   assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
@@ -285,7 +290,8 @@ test('free extras: "bay lên" lifts you one floor (max 2), "bây giờ" does not
 
 test('dance gift thresholds are lower than the other games', async () => {
   const { DANCE_TIER_MIN, giftTierIn, giftTier } = await import('../public/shared/gift-tiers.js');
-  assert.deepEqual([1, 30, 199, 200, 999, 1000, 4999, 5000].map((c) => giftTierIn(c, DANCE_TIER_MIN)),
-    [1, 1, 1, 4, 4, 5, 5, 6]);
+  // 6 bậc: 1–4 · 5–19 · 20–198 · 199–999 · 1.000–4.999 · ≥5.000
+  assert.deepEqual([1, 4, 5, 19, 20, 198, 199, 999, 1000, 4999, 5000].map((c) => giftTierIn(c, DANCE_TIER_MIN)),
+    [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6]);
   assert.deepEqual([1, 10, 99, 499].map(giftTier), [1, 2, 3, 4], 'game khác giữ mốc cũ, .map(giftTier) vẫn đúng');
 });

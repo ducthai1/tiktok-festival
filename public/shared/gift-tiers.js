@@ -10,10 +10,11 @@
 //   6   (≥ 20.000)      Tên lửa, Sư tử, Vũ trụ TikTok
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
-// Sàn Nhảy chỉ 3 khoảng rộng (user chốt 05/11: "1–200 thì được gì"): 1–199 → bậc 1 (xe bay + cánh), 200–999 → bậc 4
-// (solo + khổng lồ + pháo hoa), 1.000+ → bậc 5 (DROP; từ 5.000 thêm đại nhạc hội = bậc 6). Mốc lặp lại (200, 200, 200)
-// = bỏ qua bậc 2–3. Các game khác giữ TIER_MIN.
-export const DANCE_TIER_MIN = [1, 200, 200, 200, 1000, 5000];
+// Sàn Nhảy TÁCH LẠI 6 BẬC như trước commit 6a4b8b0 (chủ kênh 21/11: "cho về cũ") — bản 3 khoảng rộng
+// gộp bậc 2–3 bằng cách lặp mốc 200, nên quà rẻ nào cũng ra một hiệu ứng y hệt nhau, mất hẳn cảm giác lên bậc.
+// Mốc bậc 3 hạ 30 → 20 (chủ kênh 21/11): hộp quà TikTok VN chủ yếu 1–30 xu nên 30 là quá cao, hạ xuống
+// cho nhiều món chạm tới. Các game khác giữ TIER_MIN.
+export const DANCE_TIER_MIN = [1, 5, 20, 199, 1000, 5000];
 
 /** Khoảng giá (kc) của một bậc (theo bảng mốc `mins`), viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
 export function tierRangeLabel(tier) {
