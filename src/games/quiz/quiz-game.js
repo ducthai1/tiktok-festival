@@ -60,12 +60,17 @@ export const HINT_END_RATIO = 0.92; // gần hết giờ thì mở tới mức t
 /** Số ô LUÔN để trống tới cùng (gợi ý tự động không bao giờ mở hết đáp án). */
 export const hintMinHidden = (len) => (len <= 4 ? 1 : 2);
 
-/** Tới thời điểm `ratio` thì ĐƯỢC PHÉP lộ tối đa bao nhiêu ô trong tổng `len` ô. */
-export function hintTargetOpen(len, ratio) {
+/**
+ * Tới thời điểm `ratio` thì ĐƯỢC PHÉP lộ tối đa bao nhiêu ô trong tổng `len` ô.
+ * `free` = số ô đã cho sẵn lúc ra đề (chữ cái đầu). Những ô đó KHÔNG tính vào suất gợi ý,
+ * nếu không thì ô gợi ý đầu tiên bị đẩy lùi mãi về cuối giờ.
+ */
+export function hintTargetOpen(len, ratio, free = 0) {
   if (!(len > 0)) return 0;
-  const toiDa = Math.max(0, len - hintMinHidden(len));
+  const cho = Math.max(0, Math.min(len, free));
+  const toiDa = Math.max(0, len - hintMinHidden(len) - cho); // số ô gợi ý được phép mở
   const tien = Math.max(0, Math.min(1, (ratio - HINT_START_RATIO) / (HINT_END_RATIO - HINT_START_RATIO)));
-  return Math.floor(tien * toiDa);
+  return cho + Math.floor(tien * toiDa);
 }
 
 /**
@@ -174,6 +179,7 @@ export function createQuizGame({
   let guesses = [];
   let keyboard = {};
   let greens = new Set();
+  let freeRevealed = 0; // số ô cho sẵn lúc ra đề (chữ cái đầu)
   let countStart = 0; // lúc bắt đầu đếm ngược (sau 2 giây hiện đề)
   // Đề vừa đóng, vẫn nhận câu trả lời đến trễ: { until, accept, checkAnswer, qNumber, answer, won }
   let late = null;
@@ -298,6 +304,7 @@ export function createQuizGame({
     if (kind === 'text') {
       slots = q.math ? [] : letterSlots(q.answer);
       if (firstLetter && slots.length > 3) revealed.add(slots[0]);
+      freeRevealed = slots.filter((slot) => revealed.has(slot)).length; // chữ cho sẵn, không tính vào suất gợi ý
     }
     if (kind === 'abcd') {
       options = [q.right, ...q.wrong];
@@ -670,7 +677,7 @@ export function createQuizGame({
         const ratio = (now - countStart) / totalMs();
         if (autoHints && kind === 'text' && !q.math && slots.length) {
           const dangMo = slots.filter((slot) => revealed.has(slot)).length;
-          const nenMo = hintTargetOpen(slots.length, ratio);
+          const nenMo = hintTargetOpen(slots.length, ratio, freeRevealed);
           // quà đã mở nhiều hơn mức này rồi thì thôi, không mở thêm
           if (nenMo > dangMo) revealLetters(nenMo - dangMo, hintMinHidden(slots.length));
         }

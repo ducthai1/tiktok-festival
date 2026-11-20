@@ -100,15 +100,15 @@ test('mới vài người đúng thì KHÔNG chốt sớm — để người kh�
 test('gợi ý mở TỪNG Ô, rải đều — không nổ một phát gần full đáp án', () => {
   for (const len of [5, 8, 15]) {
     const mốc = [];
-    for (let r = 0; r <= 1.0001; r += 0.02) mốc.push(hintTargetOpen(len, r));
+    for (let r = 0; r <= 1.0001; r += 0.02) mốc.push(hintTargetOpen(len, r, 1)); // 1 ô cho sẵn
     // không bước nào nhảy quá 1 ô
     for (let i = 1; i < mốc.length; i += 1) {
       assert.ok(mốc[i] - mốc[i - 1] <= 1, `đáp án ${len} ô: nhảy ${mốc[i] - mốc[i - 1]} ô một lúc`);
     }
-    assert.equal(mốc[0], 0, 'đầu giờ chưa mở ô nào');
+    assert.equal(mốc[0], 1, 'đầu giờ chỉ có đúng chữ cái cho sẵn');
     assert.equal(mốc.at(-1), len - hintMinHidden(len), `hết giờ phải chừa đúng ${hintMinHidden(len)} ô`);
     // tới giữa giờ vẫn phải còn kín quá nửa
-    const giữaGiờ = hintTargetOpen(len, 0.5);
+    const giữaGiờ = hintTargetOpen(len, 0.5, 1);
     assert.ok(giữaGiờ <= Math.floor(len / 2), `nửa giờ đã mở ${giữaGiờ}/${len} ô — lộ quá nhanh`);
   }
 });
