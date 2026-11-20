@@ -1,62 +1,62 @@
 # Tiếng Anh · Vũ trụ, khoa học
-PHOTON | Hạt ánh sáng (quang tử) | 3
-NEUTRON | Hạt nơ-tron (không mang điện) | 2
+PHOTON | Hạt nhỏ nhất của ánh sáng, không có khối lượng | 3
+NEUTRON | Hạt nằm trong nhân nguyên tử nhưng không mang điện | 2
 PROTON | Hạt mang điện dương trong hạt nhân | 2
-ELECTRON | Hạt mang điện âm quanh hạt nhân | 2
-ELEMENT | Nguyên tố hóa học | 2 | CHEMICAL ELEMENT
-COMPOUND | Hợp chất (hóa học) | 2
-OSMOSIS | Hiện tượng thẩm thấu | 3
-MITOSIS | Nguyên phân (phân bào) | 3
-CHROMOSOME | Nhiễm sắc thể | 3
-FOSSIL | Hóa thạch | 1
-SPECTRUM | Quang phổ | 2
-MAGNETIC | Có từ tính (thuộc nam châm) | 2
-THERMAL | Thuộc về nhiệt | 2
-COMBUSTION | Sự đốt cháy (phản ứng cháy) | 2
-CRYSTALLIZE | Kết tinh | 3 | CRYSTALLISE
-CHLOROPHYLL | Chất diệp lục | 2
-HORMONE | Nội tiết tố | 2
-ENZYME | Enzim (chất xúc tác sinh học) | 2
-GRAVITATIONAL | Thuộc lực hấp dẫn | 3
-WAVELENGTH | Bước sóng | 3
-INFRARED | Tia hồng ngoại | 3
-ULTRAVIOLET | Tia cực tím | 2 | UV
-FRICTION | Lực ma sát | 2
-VELOCITY | Vận tốc | 2
-ACCELERATION | Gia tốc | 2
-MOMENTUM | Động lượng | 3
-DENSITY | Khối lượng riêng (mật độ) | 2
-PRESSURE | Áp suất | 2
-BUOYANCY | Lực đẩy nổi | 3
-REFRACTION | Hiện tượng khúc xạ | 3
-DIFFRACTION | Hiện tượng nhiễu xạ | 3
-INSULATOR | Chất cách điện | 2
-AMPERE | Đơn vị am-pe (cường độ dòng điện) | 2 | AMP
-NUCLEUS | Hạt nhân (nhân tế bào) | 3
-GENE | Gen di truyền | 2
-DNA | Phân tử ADN | 2
-CLONE | Bản sao vô tính (nhân bản) | 2
-STEM CELL | Tế bào gốc | 2
-MICROORGANISM | Vi sinh vật | 2 | MICROBE
-PREDATOR | Động vật săn mồi | 2
-PREY | Con mồi | 2
-CAMOUFLAGE | Ngụy trang | 2
-POLLINATION | Sự thụ phấn | 2
-GERMINATION | Sự nảy mầm | 2
-CARNIVORE | Động vật ăn thịt | 2
-HERBIVORE | Động vật ăn cỏ | 2
-OMNIVORE | Động vật ăn tạp | 2
-HABITAT LOSS | Mất môi trường sống | 2
-EXTINCTION | Sự tuyệt chủng | 2
-ROBOTICS | Ngành khoa học chế tạo và lập trình robot tự động hóa | 2
-QUANTUM | Ngành vật lý lượng tử nghiên cứu các hạt hạ nguyên tử siêu nhỏ | 3
-ATOM | Hạt nguyên tử - đơn vị cấu tạo cơ bản nhất của vật chất | 2
-MOLECULE | Một phân tử gồm nhiều nguyên tử liên kết lại với nhau | 2
-MICROSCOPE | Chiếc kính hiển vi dùng để phóng đại quan sát vi khuẩn siêu nhỏ | 2
-OXYGEN | Khí oxy rất cần thiết cho sự sống và hô hấp | 1
-HYDROGEN | Khí hydro nhẹ nhất trong bảng tuần hoàn | 2
-CARBON | Nguyên tố cacbon có trong mọi hợp chất hữu cơ | 2
-RADIATION | Bức xạ nhiệt hoặc bức xạ phóng xạ | 3
-EVOLUTION | Sự tiến hóa của các loài sinh vật qua thời gian | 2
-THERMODYNAMICS | Nhiệt động lực học trong vật lý | 3
-VOLTAGE | Điện áp hoặc hiệu điện thế | 2
+ELECTRON | Hạt mang điện âm chạy quanh hạt nhân | 2
+ELEMENT | Chất cơ bản không tách nhỏ hơn được, xếp trong bảng tuần hoàn | 2 | CHEMICAL ELEMENT
+COMPOUND | Chất tạo bởi hai nguyên tố trở lên gắn chặt với nhau | 2
+OSMOSIS | Nước tự thấm qua màng, chảy từ bên loãng sang bên đặc | 3
+MITOSIS | Kiểu phân chia cho ra hai tế bào con giống hệt tế bào mẹ | 3
+CHROMOSOME | Sợi mang gen nằm trong nhân tế bào, người có bốn mươi sáu sợi | 3
+FOSSIL | Xác sinh vật thời xưa hoá đá, còn in lại trong lớp đất | 1
+SPECTRUM | Dải bảy màu hiện ra khi tách ánh sáng trắng qua lăng kính | 2
+MAGNETIC | Tính từ chỉ vật hút được sắt, thuộc về nam châm | 2
+THERMAL | Tính từ chỉ thứ thuộc về nhiệt, như suối nước nóng hay áo giữ nhiệt | 2
+COMBUSTION | Phản ứng cháy sinh ra nhiệt khi một chất gặp khí trong không khí | 2
+CRYSTALLIZE | Chuyển sang dạng tinh thể có cạnh đều đặn, như đường hay muối lắng lại | 3 | CRYSTALLISE
+CHLOROPHYLL | Chất màu xanh lục trong lá, giúp cây hấp thụ ánh nắng | 2
+HORMONE | Chất do các tuyến trong cơ thể tiết ra để điều khiển hoạt động cơ quan | 2
+ENZYME | Chất xúc tác sinh học làm phản ứng trong cơ thể chạy nhanh hơn | 2
+GRAVITATIONAL | Tính từ chỉ thứ thuộc về lực hút giữa các vật có khối lượng | 3
+WAVELENGTH | Khoảng cách giữa hai đỉnh sóng liên tiếp | 3
+INFRARED | Tia nằm ngoài vùng đỏ, mắt không thấy nhưng da cảm được hơi nóng | 3
+ULTRAVIOLET | Tia nằm ngoài vùng tím, thủ phạm gây cháy nắng và đen da | 2 | UV
+FRICTION | Lực cản sinh ra khi hai bề mặt cọ xát vào nhau | 2
+VELOCITY | Tốc độ có kèm theo hướng chuyển động | 2
+ACCELERATION | Mức độ vận tốc tăng nhanh hay chậm dần theo thời gian | 2
+MOMENTUM | Đại lượng bằng khối lượng nhân vận tốc, vật càng nặng càng nhanh thì càng khó dừng | 3
+DENSITY | Khối lượng chứa trong một đơn vị thể tích, cho biết vật nặng hay nhẹ khi cùng cỡ | 2
+PRESSURE | Lực ép xuống trên mỗi đơn vị diện tích | 2
+BUOYANCY | Lực nước đẩy ngược lên làm vật nổi | 3
+REFRACTION | Hiện tượng ánh sáng bị bẻ gãy khi đi từ không khí vào nước | 3
+DIFFRACTION | Hiện tượng sóng loe rộng ra sau khi chui qua một khe hẹp | 3
+INSULATOR | Vật không cho dòng điện chạy qua, như nhựa hay cao su | 2
+AMPERE | Đơn vị đo cường độ dòng điện | 2
+NUCLEUS | Phần lõi ở chính giữa, của nguyên tử hoặc của tế bào | 3
+GENE | Đoạn mã quy định một đặc điểm, truyền từ bố mẹ sang con | 2
+DNA | Phân tử xoắn kép mang toàn bộ thông tin di truyền của cơ thể | 2
+CLONE | Cá thể sinh ra từ một cá thể khác, giống hệt về mặt di truyền | 2
+STEM CELL | Tế bào chưa định hình, có thể biến thành nhiều loại tế bào khác nhau | 2
+MICROORGANISM | Sinh vật nhỏ tới mức phải soi kính mới thấy được | 2 | MICROBE
+PREDATOR | Con vật đi săn và ăn thịt con vật khác | 2
+PREY | Con vật bị săn đuổi và bị ăn thịt | 2
+CAMOUFLAGE | Lối hoà lẫn màu với xung quanh cho kẻ khác không phát hiện ra | 2
+POLLINATION | Việc phấn hoa chuyển từ nhị sang nhuỵ để cây kết quả | 2
+GERMINATION | Việc hạt nứt vỏ và bắt đầu nhú mầm | 2
+CARNIVORE | Con vật chỉ ăn thịt, như hổ hay sư tử | 2
+HERBIVORE | Con vật chỉ ăn cỏ và lá cây, như trâu hay hươu | 2
+OMNIVORE | Con vật ăn được cả thịt lẫn rau, như lợn hay con người | 2
+HABITAT LOSS | Việc nơi ở tự nhiên của một loài bị phá mất | 2
+EXTINCTION | Việc một loài biến mất hoàn toàn, không còn con nào sống sót | 2
+ROBOTICS | Ngành chế tạo và lập trình máy tự động để thay người làm việc | 2
+QUANTUM | Lượng năng lượng nhỏ nhất không thể chia nhỏ hơn được nữa | 3
+ATOM | Đơn vị nhỏ nhất của một nguyên tố, gồm phần nhân và lớp vỏ | 2
+MOLECULE | Nhóm nhiều nguyên tử gắn với nhau thành một hạt chất | 2
+MICROSCOPE | Dụng cụ phóng to vật tí hon để nhìn thấy tế bào và vi khuẩn | 2
+OXYGEN | Chất khí ta hít vào để sống, chiếm một phần năm không khí | 1
+HYDROGEN | Nguyên tố nhẹ nhất, đứng đầu tiên trong bảng tuần hoàn | 2
+CARBON | Nguyên tố có trong mọi chất hữu cơ, than và kim cương đều làm từ nó | 2
+RADIATION | Năng lượng truyền đi trong không gian dưới dạng tia hoặc sóng | 3
+EVOLUTION | Việc các loài biến đổi dần qua rất nhiều đời để thích nghi | 2
+THERMODYNAMICS | Ngành vật lý nghiên cứu nhiệt chuyển thành công và ngược lại | 3
+VOLTAGE | Chênh lệch điện giữa hai đầu, chính là thứ đẩy dòng điện chạy | 2

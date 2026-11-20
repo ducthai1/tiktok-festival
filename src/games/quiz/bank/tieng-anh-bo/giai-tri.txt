@@ -202,7 +202,7 @@ DUET | Màn song ca ngọt ngào của hai ca sĩ | 1 | DUO
 ENCORE | Lời kêu gọi vỗ tay hát thêm bài nữa của khán giả | 2
 METRONOME | Máy đếm nhịp gõ phách giữ nhịp cho người học đàn | 2 | TEMPO TICKER
 TUNER | Máy lên dây đàn chỉnh đúng cao độ nốt | 2 | PITCH PIPE
-AMPLIFIER | Bộ amply khuếch đại âm thanh guitar điện | 2 | AMP
+AMPLIFIER | Thiết bị khuếch đại cho tiếng guitar điện kêu to lên | 2 | AMP
 SYNTHESIZER | Nhạc cụ bàn phím điện tử có khả năng tổng hợp và biến hóa mọi âm thanh | 2 | KEYBOARD SYNTH
 TAMBOURINE | Chiếc trống lắc tay có vòng chuông kim loại | 2 | JINGLE RING
 TRIANGLE | Nhạc cụ kẻng tam giác gõ leng keng | 2 | TRIANGLE BELL
