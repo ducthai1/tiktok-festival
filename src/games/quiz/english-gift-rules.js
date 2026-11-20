@@ -8,24 +8,33 @@ export const MAX_RULES = 40;
 export const MAX_RULE_QUESTIONS = 200;
 
 /**
- * Quà để chọn ở tab 🎁 Quà: bảng quà TikTok VN (giá thật; panel = ai cũng thấy trong hộp quà, pos = vị trí) + quà THẬT phòng đã
+ * Quà để chọn ở tab 🎁 Quà: bảng quà TikTok VN (giá thật; panel = cờ "ai cũng thấy" của API, pos = vị trí) + quà THẬT phòng đã
  * nhận (id số của TikTok — bỏ quà thử / quà mẫu). seen = phòng đã nhận món này ít nhất một lần.
+ *
+ * senders = SỐ NGƯỜI KHÁC NHAU đã thật sự tặng được món đó (gift-evidence.js). Đây là tín hiệu đáng tin duy nhất:
+ * cờ panel của API chỉ là mặc định chung của vùng, đo 21/11/2026 thấy lệch cả hai chiều so với hộp quà thật —
+ * có món API bảo ai cũng thấy mà chủ kênh không có, và ngược lại. Xem src/live/gift-evidence.js.
+ *
+ * @param {object[]} catalog quà thật phòng đã nhận
+ * @param {object} senders { [giftId]: số người khác nhau đã tặng } — giftEvidence.counts()
  */
-export function giftOptions(catalog = []) {
-  const out = VN_GIFTS_UP_TO_30.map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: g.image, panel: g.panel, pos: g.pos, seen: false }));
+export function giftOptions(catalog = [], senders = {}) {
+  const soNguoi = (id) => Math.max(0, Number(senders?.[String(id)]) || 0);
+  const out = VN_GIFTS_UP_TO_30.map((g) => ({ id: g.id, name: g.name, coins: g.coins, image: g.image, panel: g.panel, pos: g.pos, seen: false, senders: soNguoi(g.id) }));
   const byId = new Map(out.map((g) => [g.id, g]));
   for (const c of catalog || []) {
     const id = String(c?.id || '');
     if (!/^\d+$/.test(id) || !(Number(c.coins) >= 1)) continue;
     if (byId.has(id)) byId.get(id).seen = true;
     else {
-      const g = { id, name: String(c.name || '').slice(0, 40), coins: Number(c.coins), image: c.image || '', panel: false, pos: 0, seen: true };
+      const g = { id, name: String(c.name || '').slice(0, 40), coins: Number(c.coins), image: c.image || '', panel: false, pos: 0, seen: true, senders: soNguoi(id) };
       out.push(g);
       byId.set(id, g);
     }
   }
-  // ai cũng thấy (theo vị trí trong hộp quà) → phòng đã nhận → còn lại theo giá
-  return out.sort((a, b) => (b.panel - a.panel) || (a.panel ? a.pos - b.pos : 0) || (b.seen - a.seen) || a.coins - b.coins || a.name.localeCompare(b.name));
+  // nhiều người thật tặng được nhất lên đầu (bằng chứng chắc chắn) → rồi mới tới cờ panel của API → phòng đã nhận → giá
+  return out.sort((a, b) => (b.senders - a.senders) || (b.panel - a.panel) || (a.panel ? a.pos - b.pos : 0)
+    || (b.seen - a.seen) || a.coins - b.coins || a.name.localeCompare(b.name));
 }
 
 /** Kiểm tra + chuẩn hoá quà Bật / Tắt nhạc nền. Không được trùng nhau và không được trùng với quà đổi đề tiếng Anh. */

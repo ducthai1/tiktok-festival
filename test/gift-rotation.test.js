@@ -4,8 +4,20 @@ import { giftOptions, normalizeRules } from '../src/games/quiz/english-gift-rule
 import { CHEAP_MAX_COINS, CHEAP_TARGETS, FANCLUB_GIFT_ID, MAX_ROUNDS_AWAY, emptyRotation, hottestGift, rotateGifts }
   from '../src/games/quiz/gift-rotation.js';
 import { defaultEnglishRules, ORDER } from '../public/shared/english-sets.js';
+import { SAFE_MIN_SENDERS } from '../src/live/gift-evidence.js';
+import { VN_GIFTS_UP_TO_30 } from '../public/shared/tiktok-gifts-vn.js';
 
-const options = giftOptions([]);
+// Vòng xoay chỉ được dùng món ĐÃ CÓ BẰNG CHỨNG người xem tặng được (gift-evidence.js). Ở đây dựng
+// bằng chứng giả cho một rổ món trải đủ các mức giá, đúng những món có thật trong hộp quà chủ kênh.
+const CO_BANG_CHUNG = ['Rose', 'TikTok', "You're awesome", 'Ice Cream Cone', 'Finger Heart', 'Peach', 'Spinning Soccer',
+  'Name shoutout', 'Encore Ticket', 'Overreact', 'Love in Scent', 'Divine Fingers', 'Rosa', 'Friendship Necklace',
+  'I Like What I See', 'Journey Pass', 'Slow motion', 'Bravo!', 'Kudos for My Star', 'Lyric Mail', 'Perfume',
+  'G.O.A.T. Busker', 'Doughnut',
+  // món DƯ ra ở mỗi mức giá — hộp quà thật của chủ kênh có sẵn, cần để ô còn chỗ quay về đúng giá gốc
+  'Shamrock', "I'm Yours", 'Drip Brewing', 'little kisses', 'Okay', 'Ice cream'];
+const bangChung = Object.fromEntries(VN_GIFTS_UP_TO_30.filter((g) => CO_BANG_CHUNG.includes(g.name))
+  .map((g) => [g.id, SAFE_MIN_SENDERS]));
+const options = giftOptions([], bangChung);
 const base = () => defaultEnglishRules().filter((r) => r.enabled !== false);
 const seeded = (seq) => { let i = 0; return () => seq[i++ % seq.length]; };
 const ruleFor = (rules, to) => rules.find((r) => r.to === to);
@@ -91,16 +103,33 @@ test('hottestGift: lấy món nhiều lượt nhất, bỏ qua món 0 lượt', 
   assert.equal(hottestGift({}), null);
 });
 
-test('quà xoay vào phải là món người xem tìm được trong hộp quà', () => {
-  const findable = new Set(options.filter((g) => g.panel || g.seen).map((g) => String(g.id)));
+test('vòng xoay chỉ lấy món ĐÃ CÓ người xem thật tặng được', () => {
+  // Cờ panel của API TikTok không đáng tin (đo 21/11/2026 lệch cả hai chiều so với hộp quà thật),
+  // nên chỉ món có đủ SAFE_MIN_SENDERS người khác nhau tặng mới được xoay lên bảng.
+  const banDau = new Set(base().map((r) => String(r.gift.id)));
+  const coBangChung = new Set(options.filter((g) => g.senders >= SAFE_MIN_SENDERS).map((g) => String(g.id)));
   let rules = base();
   let state = emptyRotation();
   for (let round = 0; round < 6; round += 1) {
     ({ rules, state } = rotateGifts({ rules, options, counts: {}, state, random: seeded([0.17, 0.83, 0.5]) }));
     for (const r of rules) {
-      if (r.gift.id === FANCLUB_GIFT_ID) continue; // Heart Me nằm ngoài hộp quà chung, chủ kênh chủ động chọn
-      assert.ok(findable.has(String(r.gift.id)), `ô ${r.to} nhận món ngoài hộp quà: ${r.gift.name}`);
+      if (r.gift.id === FANCLUB_GIFT_ID) continue; // Heart Me: chủ kênh chủ động chọn, nằm ngoài hộp quà chung
+      if (banDau.has(String(r.gift.id))) continue; // món chủ kênh tự gán từ đầu thì giữ, vòng xoay không đụng
+      assert.ok(coBangChung.has(String(r.gift.id)),
+        `ô ${r.to} bị xoay vào món chưa ai tặng được bao giờ: ${r.gift.name}`);
     }
+  }
+});
+
+test('chưa có bằng chứng nào thì KHÔNG xoay — giữ nguyên bảng quà chủ kênh đã chọn', () => {
+  // Thà đứng yên còn hơn xoay vào món mà người xem mở hộp quà ra không có.
+  const khongBangChung = giftOptions([]);
+  const truoc = base();
+  const { rules } = rotateGifts({ rules: truoc, options: khongBangChung, counts: {}, state: emptyRotation(), random: () => 0.5 });
+  for (const r of rules) {
+    const cu = truoc.find((x) => x.to === r.to);
+    if (r.gift.id === FANCLUB_GIFT_ID && cu.gift.id !== FANCLUB_GIFT_ID) continue; // ô Heart Me vẫn được gán
+    assert.equal(r.gift.id, cu.gift.id, `ô ${r.to} bị đổi quà dù chưa có bằng chứng nào`);
   }
 });
 

@@ -18,6 +18,8 @@ import { MAX_MB, cleanYoutubeUrl, fetchYoutubeAudio } from './music/youtube-musi
 import { builtinTracks, createPlaylistStore } from './music/playlist-store.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createFanClubStore } from './live/fanclub-store.js';
+import { createGiftEvidence } from './live/gift-evidence.js';
+import { VN_GIFTS_UP_TO_30 } from '../public/shared/tiktok-gifts-vn.js';
 import { createRoomTracker } from './live/room-tracker.js';
 import { createProgressStore } from './games/quiz/progress-store.js';
 import { createTtsBridge, TTS_VOICES } from './tts/tts-bridge.js';
@@ -99,6 +101,9 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const rooms = createRoomTracker(path.join(dataDir, 'live-room.json')); // phòng live gần nhất → biết khi nào sang phòng mới
   const sessions = createSessionLog(path.join(dataDir, 'logs')); // mỗi buổi live một file log riêng, giữ lâu hơn log ngày
   sessions.setup();
+  // Ai THẬT SỰ tặng được món quà nào — tín hiệu duy nhất đáng tin để biết người xem có món đó trong
+  // hộp quà hay không (cờ panel của API TikTok không đúng với hộp quà thật: xem src/live/gift-evidence.js).
+  const giftEvidence = createGiftEvidence(dataDir);
   // số LƯỢT tặng từng món trong buổi live này (không tính kim cương) → biết món nào đang được chọn nhiều nhất.
   // Chỉ trong bộ nhớ, xoá khi sang phòng live mới: "đang hot" phải là hot của buổi này.
   let giftCounts = Object.create(null);
@@ -132,6 +137,17 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   const legendSource = () => [...giftCatalog, ...sampleGifts.filter((s) => !giftCatalog.some((g) => g.name === (s.realName || s.name)))];
   let giftTiers = tierRepresentatives(legendSource(), 3);
   hub.setGiftCatalog(giftCatalog);
+  // Nạp lịch sử quà đã nhận (data/gifts.log) vào kho bằng chứng: log chỉ ghi TÊN quà nên tra ngược ra
+  // id qua bảng quà VN + danh mục phòng. Nhờ vậy bảng quà có bằng chứng ngay, không phải gom lại từ số không.
+  {
+    const theoTen = new Map();
+    for (const g of [...VN_GIFTS_UP_TO_30, ...giftCatalog]) {
+      const ten = String(g.name || '').trim().toLowerCase();
+      if (ten && /^\d+$/.test(String(g.id))) theoTen.set(ten, { id: String(g.id), coins: Number(g.coins) || 0 });
+    }
+    const them = giftEvidence.seedFromLog(path.join(dataDir, 'gifts.log'), theoTen);
+    if (them) log.info('quà', `nạp ${them} bằng chứng tặng quà từ lịch sử gifts.log`);
+  }
   // thứ tự ô mặc định vừa đổi (vd TOEIC, IELTS lên trang 1) → bảng quà ĐÃ LƯU cũng xếp lại theo thứ tự mới, MỘT lần (giữ nguyên quà /
   // số câu chủ kênh chọn); sau đó chủ kênh vẫn tự đổi chỗ bằng ▲▼ ở tab 🎁 Quà (lưu lại thì không xếp nữa)
   if (settings.englishGifts?.length && settings.englishGiftsOrder !== ORDER_VERSION) {
@@ -146,7 +162,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   }
   // luật quà tab tiếng Anh đã chỉnh ở tab 🎁 Quà (chưa chỉnh → mặc định); quà đã lưu mà nay không còn trong bảng quà → mặc định
   try {
-    hub.setEnglishRules(settings.englishGifts?.length ? normalizeRules(settings.englishGifts, giftOptions(giftCatalog)) : defaultEnglishRules());
+    hub.setEnglishRules(settings.englishGifts?.length ? normalizeRules(settings.englishGifts, giftOptions(giftCatalog, giftEvidence.counts())) : defaultEnglishRules());
   } catch (error) {
     log.warn('admin', `luật quà tab tiếng Anh đã lưu không dùng được (${error.message}) → dùng bảng mặc định`);
     hub.setEnglishRules(defaultEnglishRules());
@@ -259,7 +275,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   function runGiftRotation() {
     rotateAt = Date.now() + rotateIntervalMs();
     try {
-      const options = giftOptions(giftCatalog);
+      const options = giftOptions(giftCatalog, giftEvidence.counts());
       const current = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
       const mg = settings.musicGifts || defaultMusicGifts();
       const exclude = mg && mg.enabled !== false ? [mg.on?.id, mg.off?.id].filter(Boolean) : [];
@@ -314,6 +330,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       if (event.type === 'gift' && !event.simulated && event.gift.diamondsEach > 0) {
         const gid = String(event.gift.id || '');
         if (gid) giftCounts[gid] = (giftCounts[gid] || 0) + (Number(event.gift.count) || 1);
+        giftEvidence.record(event); // người này tặng được → CHẮC CHẮN hộp quà của họ có món này
         const known = giftCatalog.find((g) => g.name === event.gift.name);
         // món mới, món nay mới có ảnh, hoặc giá TikTok báo khác giá đã lưu (giá thật thắng)
         if (!known || (!known.image && event.gift.pictureUrl) || known.coins !== event.gift.diamondsEach) {

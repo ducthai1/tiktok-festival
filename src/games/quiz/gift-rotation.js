@@ -12,6 +12,7 @@
 // Chỉ chọn quà người xem TÌM ĐƯỢC: món ai cũng thấy trong hộp quà (panel), hoặc phòng đã từng
 // nhận (seen). Riêng Heart Me nằm ngoài hộp quà chung nhưng chủ kênh chủ động chọn nên vẫn dùng.
 import { ENGLISH_TARGETS, ORDER } from '../../../public/shared/english-sets.js';
+import { SAFE_MIN_SENDERS } from '../../live/gift-evidence.js';
 
 /** 20 phút một vòng: đủ lâu để người xem kịp thấy và tặng, buổi 3 tiếng được ~9 vòng. */
 export const ROTATE_MS = 20 * 60 * 1000;
@@ -36,12 +37,21 @@ export const emptyRotation = () => ({ round: 0, at: 0, base: {}, away: {}, heart
  * và không lấy chính Heart Me — món đó để dành riêng cho ô hot.
  */
 /**
- * Quà được phép xoay vào: người xem phải tìm được (trong hộp quà chung, hoặc phòng đã nhận),
- * và không lấy chính Heart Me — món đó để dành riêng cho ô hot. Loại trừ các món quà đã dùng (vd quà Bật/Tắt nhạc).
+ * Quà được phép xoay vào: phải CÓ BẰNG CHỨNG người xem tặng được — tức là đã có ít nhất
+ * SAFE_MIN_SENDERS người KHÁC NHAU thật sự tặng món đó (gift-evidence.js).
+ *
+ * Trước 21/11/2026 chỗ này nhận cả `g.panel` (cờ của API TikTok) và `g.seen` (phòng từng nhận một
+ * lần). Cả hai đều yếu: cờ panel chỉ là mặc định chung của vùng, đo thực tế thấy lệch cả hai chiều
+ * so với hộp quà thật; còn `seen` một lần có thể chỉ là một người xem ở vùng khác tặng. Vòng xoay
+ * vì thế đẩy lên bảng những món nhiều người mở hộp quà ra không có.
+ *
+ * Chưa đủ bằng chứng thì danh sách này ngắn lại, và ô nào không còn món hợp lệ sẽ GIỮ NGUYÊN quà
+ * đang có (xem rotateGifts) — thà không xoay còn hơn xoay vào món không ai tặng được.
  */
 const pool = (options, exclude = []) => {
   const ex = new Set((exclude || []).map(String));
-  return options.filter((g) => (g.panel || g.seen) && String(g.id) !== FANCLUB_GIFT_ID && !ex.has(String(g.id)) && Number(g.coins) >= 1);
+  return options.filter((g) => Number(g.senders) >= SAFE_MIN_SENDERS
+    && String(g.id) !== FANCLUB_GIFT_ID && !ex.has(String(g.id)) && Number(g.coins) >= 1);
 };
 
 /** Món được tặng nhiều LƯỢT nhất buổi này. counts: { [giftId]: số lượt }. */
@@ -97,9 +107,12 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
 
   const taken = new Set();
   if (heartTo) taken.add(FANCLUB_GIFT_ID);
-  // ô đang tắt vẫn GIỮ món của nó: phải chiếm chỗ trước, không thì vòng này gán món đó cho ô khác
-  // và normalizeRules sẽ chặn vì "mỗi món quà chỉ một chế độ".
-  for (const r of rules) if (r.enabled === false || !ENGLISH_TARGETS[r.to]) taken.add(idOf(r));
+  // MỌI ô đều giữ chỗ món hiện tại của mình trước. Ô đang tắt thì giữ vĩnh viễn; ô đang bật chỉ nhả
+  // món cũ ra khi nó thật sự đổi được sang món khác. Thiếu chỗ giữ này thì ô nào không tìm được món
+  // hợp lệ sẽ quay về giữ món cũ, trong khi món đó vừa bị một ô phía trước chiếm mất → bảng trùng
+  // món và normalizeRules ném lỗi. Trước đây hiếm gặp vì danh sách quà còn rộng; từ 21/11/2026 chỉ
+  // lấy món có bằng chứng người xem tặng được nên danh sách ngắn hẳn, lỗi nổ ra thường xuyên.
+  for (const r of rules) taken.add(idOf(r));
   const changes = [];
   const out = rules.map((r) => {
     if (r.enabled === false || !ENGLISH_TARGETS[r.to]) return r; // ô tắt: giữ nguyên, không chiếm quà
@@ -111,6 +124,7 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
       next.heart = r.to;
       if (idOf(r) === FANCLUB_GIFT_ID) return r;
       changes.push({ to: r.to, label: ENGLISH_TARGETS[r.to].label, from: r.gift.name, name: heartGift.name, coins: heartGift.coins, fanclub: true });
+      taken.delete(idOf(r)); // đổi sang Heart Me rồi → nhả món cũ cho ô sau dùng
       return { ...r, gift: { id: heartGift.id, name: heartGift.name, coins: heartGift.coins, image: heartGift.image } };
     }
 
@@ -131,6 +145,7 @@ export function rotateGifts({ rules, options, counts = {}, state = emptyRotation
       return r;
     }
     const g = allowed[Math.floor(random() * allowed.length) % allowed.length];
+    taken.delete(idOf(r)); // đổi được rồi → nhả món cũ cho ô sau dùng
     taken.add(String(g.id));
     next.away[r.to] = Number(g.coins) === base ? 0 : (next.away[r.to] || 0) + 1;
     if (next.heart === r.to) next.heart = '';

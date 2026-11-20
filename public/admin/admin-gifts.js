@@ -32,11 +32,22 @@ export function setupGiftEditor({ $, socket, toast }) {
     $('gifts-status').textContent = text;
   }
 
+  // Bấy nhiêu người KHÁC NHAU tặng được thì coi là món ai cũng tìm thấy (src/live/gift-evidence.js).
+  const DU_BANG_CHUNG = 5;
+
+  /**
+   * Nhãn độ tin cậy của một món. Thứ tự ưu tiên theo mức CHẮC CHẮN, không theo cờ của TikTok:
+   * cờ panel chỉ là mặc định chung của vùng — đo 21/11/2026 thấy có món API bảo ai cũng thấy mà
+   * chính chủ kênh mở hộp quà ra không có, và ngược lại. Chỉ số người thật đã tặng mới đáng tin.
+   */
   function badgeFor(g) {
     if (!g) return el('span', 'badge warn', 'chưa chọn');
-    if (g.panel) return el('span', 'badge', `hộp quà #${g.pos}`);
-    if (g.seen) return el('span', 'badge seen', 'phòng đã nhận');
-    return el('span', 'badge warn', '⚠ không có trong hộp quà chung');
+    const n = Number(g.senders) || 0;
+    if (n >= DU_BANG_CHUNG) return el('span', 'badge', `✓ ${n} người đã tặng được`);
+    if (n > 0) return el('span', 'badge seen', `${n} người đã tặng — chưa đủ chắc`);
+    if (g.panel) return el('span', 'badge warn', '⚠ chưa ai tặng bao giờ (API bảo có)');
+    if (g.seen) return el('span', 'badge warn', '⚠ phòng mới nhận 1 lần');
+    return el('span', 'badge warn', '⚠ chưa ai tặng được món này');
   }
 
   function makeGiftBtn(giftId, onPick) {
@@ -165,7 +176,7 @@ export function setupGiftEditor({ $, socket, toast }) {
     const usedByRule = new Map(rules.map((r, i) => [r.giftId, i]));
     const onId = musicGifts.on?.id;
     const offId = musicGifts.off?.id;
-    const list = options.filter((g) => (all || g.panel || g.seen) && (!q || g.name.toLowerCase().includes(q)));
+    const list = options.filter((g) => (all || Number(g.senders) > 0 || g.panel || g.seen) && (!q || g.name.toLowerCase().includes(q)));
 
     let currentSelId = '';
     if (pickingFor === 'music-on') currentSelId = onId;
