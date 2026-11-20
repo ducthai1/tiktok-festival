@@ -11,7 +11,7 @@ GARDEN | Khu vườn | 1 | YARD, BACKYARD
 APARTMENT | Căn hộ chung cư | 1 | FLAT, CONDO, CONDOMINIUM
 STAIRS | Dãy bậc bước lên xuống giữa các tầng | 1 | STAIRWAY, STAIR, STEPS
 BALCONY | Ban công | 2
-GARAGE | Nhà để xe ô tô (ga-ra) | 2
+GARAGE | Gian sát nhà, mở cửa cuốn lên để cất ô tô vào | 2
 ROOF | Mái nhà | 2
 FENCE | Hàng rào | 2
 ELEVATOR | Thang máy | 2 | LIFT

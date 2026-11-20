@@ -275,13 +275,13 @@ RUNWAY | Đường băng bê tông cho máy bay cất hạ cánh | 2 | AIRSTRIP
 CONTROL TOWER | Đài kiểm soát không lưu chỉ huy sân bay | 2 | AIR TRAFFIC CONTROL
 RADAR | Hệ thống vô tuyến sóng phản xạ định vị máy bay và tàu thuyền từ xa | 2
 BICYCLE | Chiếc xe đạp hai bánh đạp dạo phố | 1
-MOTORBIKE | Chiếc xe máy xe mô tô hai bánh | 1 | MOTORCYCLE
+MOTORBIKE | Chiếc xe hai bánh có động cơ, phương tiện đi lại chính ở ta | 1 | MOTORCYCLE
 SCOOTER | Chiếc xe ga lướt êm phố xá | 1 | MOPED
-RICKSHAW | Xe ba bánh có người đạp phía sau chở khách | 2 | PEDICAB
+RICKSHAW | Xe hai bánh thời xưa do một người chạy bộ kéo càng phía trước | 2
 HORSE CARRIAGE | Cỗ xe do ngựa kéo chở khách dạo phố cổ | 2
 SLED | Chiếc xe trượt tuyết do đàn chó kéo | 2 | SLEDGE, SLEIGH
 SNOWMOBILE | Xe trượt tuyết có động cơ chạy trên băng tuyết | 2 | SKIDOO
-CANOE | Chiếc xuồng ca nô thon dài chèo bằng mái chèo | 2
+CANOE | Chiếc xuồng thon dài hở nóc, ngồi quỳ chèo bằng mái một đầu | 2
 KAYAK | Chiếc thuyền thể thao đáy kín thon hẹp chèo bằng mái đôi vượt thác | 2
 SPEEDBOAT | Ca nô cao tốc lướt như bay xé toạc mặt nước | 2 | MOTORBOAT
 HOVERCRAFT | Tàu đệm khí chạy lướt trên cả đất liền và mặt nước | 3
@@ -312,7 +312,7 @@ HELMET | Mũ bảo hiểm (đội khi đi xe máy) | 2 | CRASH HELMET
 TRAFFIC JAM | Kẹt xe, tắc đường | 3 | TRAFFIC CONGESTION, GRIDLOCK
 SEAT BELT | Dây vắt chéo ngực phải cài khi ngồi ô tô hoặc máy bay | 3 | SEATBELT, SAFETY BELT
 CYCLO | Xe ba bánh kiểu Việt Nam, khách ngồi trước người đạp | 3 | PEDICAB, CYCLE RICKSHAW, TRISHAW
-TRAVEL | Động từ chỉ việc đi tới một nơi xa | 1 | TRAVELING
+TRAVEL | Động từ chỉ việc đi tới một nơi xa | 1
 PHOTO | Bức ảnh chụp | 1 | PICTURE, PHOTOGRAPH, PIC
 TRIP | Chuyến đi ngắn rồi quay về | 2 | JOURNEY, TOUR
 ABROAD | Ở nước ngoài (đi nước ngoài) | 3 | OVERSEAS

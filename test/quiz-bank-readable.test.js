@@ -22,9 +22,15 @@ test('gợi ý không được chứa sẵn đáp án, kể cả dạng phiên �
     const dapAn = foldText(q.answer).replace(/[^a-z0-9]/g, '');
     const goiY = foldText(q.prompt || '');
     if (dapAn.length >= 4 && goiY.includes(dapAn)) { loi.push(`${q.answer} ← ${q.prompt}`); continue; }
-    // "calo" trong gợi ý của CALORIE, "oxy" của OXYGEN: chữ trong gợi ý là phần đầu của đáp án
-    for (const chu of goiY.split(/[^a-z0-9]+/)) {
-      if (chu.length >= 4 && dapAn.startsWith(chu)) { loi.push(`${q.answer} ← ${q.prompt}`); break; }
+    // "calo" trong gợi ý của CALORIE, "oxy" của OXYGEN: chữ trong gợi ý là phần đầu của đáp án.
+    // Phiên âm tiếng Việt hay tách thành nhiều chữ ("ca nô" ← CANOE, "mô tô" ← MOTORBIKE,
+    // "am-pe" ← AMPERE) nên phải ghép các chữ liền nhau lại rồi mới so.
+    const chu = goiY.split(/[^a-z0-9]+/).filter(Boolean);
+    for (let i = 0; i < chu.length; i += 1) {
+      for (let n = 1; n <= 3 && i + n <= chu.length; n += 1) {
+        const ghep = chu.slice(i, i + n).join('');
+        if (ghep.length >= 4 && dapAn.startsWith(ghep)) { loi.push(`${q.answer} ← ${q.prompt}`); i = chu.length; break; }
+      }
     }
   }
   assert.deepEqual(loi, [], `gợi ý lộ đáp án:\n${loi.join('\n')}`);
