@@ -340,7 +340,6 @@ LUNCH BREAK | Giờ nghỉ buổi trưa để ăn cơm | 1
 NOTEPAD | Tập giấy nhỏ để ghi nhanh vài dòng | 1
 PARCEL | Gói hàng bọc kín gửi qua bưu điện | 1
 WAREHOUSE WORKER | Người làm việc trong kho, xếp và lấy hàng | 1
-OPENING HOUR | Giờ cửa hàng bắt đầu mở cửa đón khách | 1 | OPENING HOURS
 CLOSING TIME | Giờ cửa hàng ngừng bán và đóng cửa | 1
 SHOP ASSISTANT | Nhân viên bán hàng đứng quầy tư vấn cho khách | 1
 QUEUE | Hàng người đứng nối đuôi nhau chờ tới lượt | 1

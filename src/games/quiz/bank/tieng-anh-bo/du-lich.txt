@@ -39,7 +39,7 @@ STAYCATION | Kỳ nghỉ tại nhà (gần nhà) | 3
 BUCKET LIST | Danh sách điều muốn làm trong đời | 2
 TRAVEL ADAPTER | Ổ chuyển đổi điện khi đi nước ngoài | 2 | PLUG ADAPTER
 CURRENCY EXCHANGE | Đổi tiền ngoại tệ | 2 | MONEY EXCHANGE
-CHECKPOINT | Trạm kiểm soát | 2
+CHECKPOINT | Chốt chặn giữa đường, qua đây phải dừng cho người ta xét giấy | 2
 TOLL | Khoản phí phải trả khi đi qua cầu hoặc đường cao tốc | 2
 SPEED LIMIT | Giới hạn tốc độ | 1
 FLYOVER | Cầu vượt | 2 | OVERPASS
@@ -57,44 +57,44 @@ LOCAL CUISINE | Ẩm thực địa phương | 2 | LOCAL FOOD
 STREET VENDOR | Người bán hàng rong | 2 | HAWKER
 BAMBOO BOAT | Thuyền thúng | 2 | BASKET BOAT
 SAND DUNES | Đồi cát | 2 | SAND DUNE
-LIMESTONE | Núi đá vôi | 3 | KARST
+LIMESTONE | Loại đá mềm màu xám tạo nên các hang động và vịnh Hạ Long | 3 | KARST
 NIGHTLIFE | Cuộc sống về đêm | 2
 ROOFTOP BAR | Quán đồ uống trên sân thượng tầng cao nhất ngắm toàn cảnh thành phố | 2 | ROOFTOP
 TOUR PACKAGE | Chuyến du lịch trọn gói gồm vé xe vé bay ăn ở do công ty lữ hành tổ chức | 2 | PACKAGE TOUR
 FREE TIME | Thời gian tự do | 1
 MEETING POINT | Điểm tập trung | 2
 ENTRANCE FEE | Phí vào cửa | 1 | ADMISSION FEE
-OPENING HOURS | Giờ mở cửa | 1
+OPENING HOURS | Khung giờ trong ngày mà cửa hàng mở đón khách | 1
 GUIDED TOUR | Chuyến tham quan có hướng dẫn | 2
 AUDIO GUIDE | Thuyết minh bằng máy nghe | 2
 TRAVEL ITINERARY | Lịch trình chuyến đi chi tiết | 3
 BACKPACKING | Du lịch bụi | 2
-COVE | Vịnh nhỏ ven biển | 3 | INLET
-QUAINT | Cổ kính và duyên dáng theo kiểu xưa cũ | 3
-RUSTIC | Mộc mạc, thôn quê | 3
-PASTORAL | Đơn sơ nông thôn | 3
-ISTHMUS | Dải đất nối hai vùng | 3
-TRIBUTARY | Sông nhánh | 3
-PORTAGE | Vận chuyển thuyền qua đất | 3
-ANCHORAGE | Nơi thả neo tàu | 3
-BADLANDS | Vùng đất cằn cỗi | 3
-WETLANDS | Vùng đất ngập nước | 3
+COVE | Vũng biển nhỏ khuất, bờ cong hình móng ngựa | 3 | INLET
+QUAINT | Tính từ khen một thị trấn nhỏ cổ kính, xinh xắn kiểu xưa | 3
+RUSTIC | Tính từ tả đồ vật hay nhà cửa thô mộc, đẽo gọt sơ sài kiểu nhà quê | 3
+PASTORAL | Tính từ tả khung cảnh đồng cỏ chăn thả êm đềm trong tranh, trong thơ | 3
+ISTHMUS | Eo đất hẹp nối hai mảng đất lớn, hai bên đều là biển | 3
+TRIBUTARY | Con sông nhỏ chảy vào nhập làm một với sông lớn | 3
+PORTAGE | Việc khiêng thuyền đi bộ qua đoạn cạn để xuống lại khúc sông sau | 3
+ANCHORAGE | Chỗ ngoài khơi đủ nông để buông neo, tàu chờ tới lượt vào cảng | 3
+BADLANDS | Vùng đất khô nứt nẻ, bị nước xói thành những rãnh sâu kỳ dị | 3
+WETLANDS | Vùng đất lúc nào cũng sũng nước, nơi cò vạc chim nước kiếm ăn | 3
 SWAMP | Đầm lầy | 3 | MARSHLAND
-HEATH | Vùng đất hoang mọc toàn cây bụi thấp ở Bắc Âu | 3
-MOOR | Đồng cỏ hoang | 3 | MOORLAND
-STEPPE | Bãi cỏ rộng lớn | 3 | GRASSLAND
-TAIGA | Rừng lạnh cao | 3
-THICKET | Bụi rậm rối | 3
-HINTERLAND | Vùng nội địa nằm sâu phía sau bờ biển hoặc thành phố | 3
-LOCALE | Địa điểm cụ thể | 3
-PROSPECT | Tầm nhìn trải rộng ra phía trước từ một chỗ đứng | 3
+HEATH | Vùng đất cát bỏ hoang thấp, phủ kín một loại cây bụi nở hoa tím | 3
+MOOR | Vùng cao nguyên lộng gió ở Anh, đất chua, chỉ có cỏ và thạch nam | 3 | MOORLAND
+STEPPE | Thảo nguyên khô mênh mông không một bóng cây, hay gặp ở Trung Á | 3 | GRASSLAND
+TAIGA | Rừng lá kim bạt ngàn ở vùng lạnh phương bắc, dưới chân là tuyết | 3
+THICKET | Đám cây bụi mọc chen chúc rậm rịt, không len chân vào nổi | 3
+HINTERLAND | Vùng quê nằm sâu phía sau, tiếp tế hàng cho cảng biển hay thành phố | 3
+LOCALE | Nơi chốn mà một câu chuyện hay một sự việc diễn ra | 3
+PROSPECT | Triển vọng, điều tốt đẹp có cơ hội xảy ra trong tương lai | 3
 BOUTIQUE | Cửa hàng nhỏ sành điệu | 3
-AMENITY | Tiện nghi dịch vụ | 3
+AMENITY | Tiện nghi khách sạn phục vụ thêm, như hồ bơi hay phòng gym | 3
 SOJOURN | Lưu trú tạm thời | 3 | STAY
-EXPANSE | Vùng đất rộng | 3
+EXPANSE | Khoảng mênh mông trải dài hút mắt, không thấy đâu là bờ | 3
 QUAY | Bờ kè xây dọc mép nước cho tàu cập vào bốc hàng | 3 | WHARF
-OUTBACK | Vùng nông thôn hẻo lánh | 3
-VISTA | Khung cảnh đẹp hiện ra ở cuối một lối nhìn hẹp | 3
+OUTBACK | Vùng hoang mạc đỏ mênh mông giữa lòng nước Úc | 3
+VISTA | Khung cảnh đẹp mở ra trước mắt khi vừa lên tới đỉnh dốc | 3
 PASSPORT | Cuốn hộ chiếu xuất nhập cảnh đi nước ngoài | 1 | TRAVEL PASSPORT
 VISA | Thị thực nhập cảnh vào một quốc gia | 1 | ENTRY VISA
 BOARDING PASS | Thẻ lên máy bay nhận tại quầy làm thủ tục | 2 | BOARDING CARD
@@ -204,12 +204,7 @@ DIALECT | Tiếng nói địa phương mang âm hưởng vùng miền | 2 | VERN
 CULTURE | Bản sắc văn hoá lâu đời truyền qua nhiều đời | 1
 HERITAGE | Di sản văn hoá vật thể hoặc phi vật thể | 2 | HISTORIC HERITAGE
 WONDER | Kỳ quan tráng lệ được vinh danh | 1 | WORLD WONDER
-COLOSSEUM | Đấu trường La Mã cổ kính ở thành Rome | 2 | AMPHITHEATER
-BIG BEN | Tháp đồng hồ nổi tiếng bên bờ sông Thames London | 1 | CLOCK TOWER
-EIFFEL TOWER | Công trình tháp sắt sừng sững biểu tượng của kinh đô ánh sáng Paris | 1
-TAJ MAHAL | Lăng mộ bằng đá cẩm thạch trắng kiệt tác biểu tượng tình yêu vĩnh cửu ở Ấn Độ | 2
 GREAT WALL | Vạn Lý Trường Thành xây dựng kiên cố trên núi | 1 | LONG WALL
-STATUE OF LIBERTY | Tượng Nữ thần Tự do tay giơ cao ngọn đuốc | 1
 OPERA HOUSE | Nhà hát vỏ sò độc đáo ở vịnh Sydney | 1 | SYDNEY OPERA
 CANAL | Kênh đào nhân tạo cho thuyền bè lưu thông | 2 | WATERWAY
 GONDOLA | Chiếc thuyền gỗ mũi cong lãng mạn ở Venice | 2
@@ -445,7 +440,6 @@ CURFEW | Quy định giờ giới nghiêm ban đêm không được tụ tập r
 VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt | 1
 STONEHENGE | Vòng tròn các khối cự thạch bí ẩn xếp từ thời tiền sử ở nước Anh | 3
 SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu Phi | 1
-EVEREST | Đỉnh núi tuyết cao nhất hành tinh trên dãy Himalaya | 1
 AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất | 1
 PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | PACIFIC OCEAN
 ATLANTIC | Đại dương nằm giữa châu Mỹ với châu Âu và châu Phi | 2 | ATLANTIC OCEAN
@@ -530,6 +524,5 @@ ATOLL | Đảo san hô vòng bao quanh một đầm nước giữa biển | 3
 CRAG | Mỏm đá dựng đứng nhô ra khỏi sườn núi | 3
 RAVINE | Khe núi hẹp và sâu do nước xói mòn | 3
 CAUSEWAY | Con đường đắp cao chạy xuyên qua vùng nước | 3
-BADWATER | Vùng trũng thấp nhất lục địa Bắc Mỹ, nước mặn không uống được | 3
 SCREE | Sườn dốc phủ đầy đá vụn trượt chân khi leo | 3
 MORAINE | Đống đất đá băng hà đẩy dồn lại rồi bỏ lại | 3

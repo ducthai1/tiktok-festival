@@ -37,13 +37,10 @@ RADIO TELESCOPE | Kính viễn vọng vô tuyến | 3
 OBSERVATORY | Đài quan sát thiên văn | 2 | OBSERVATORIES
 SOUTHERN CROSS | Chòm sao Nam Thập Tự | 2
 POLARIS | Sao Bắc Cực, gần như đứng yên chỉ hướng bắc suốt đêm | 2
-SIRIUS | Sao Thiên Lang, ngôi sao sáng nhất bầu trời đêm | 2
 BETELGEUSE | Sao khổng lồ đỏ ở vai chòm Lạp Hộ, sắp nổ siêu tân tinh | 2
 RIGEL | Sao xanh trắng rực rỡ ở chân chòm Lạp Hộ | 2
 ORION | Chòm sao Lạp Hộ, nhận ra nhờ ba ngôi thẳng hàng làm thắt lưng | 1
 LEO | Chòm sao Sư Tử | 1
-URSA MAJOR | Chòm sao Gấu Lớn | 2
-URSA MINOR | Chòm sao Gấu Nhỏ | 2
 CASSIOPEIA | Chòm sao Tiên Hậu, xếp thành hình chữ W | 2
 PEGASUS | Chòm sao Phi Mã, nhận ra nhờ hình vuông lớn trên trời | 2
 ANDROMEDA GALAXY | Thiên hà Tiên nữ | 2
@@ -138,7 +135,6 @@ SOLAR SAIL | Buồm năng lượng Mặt Trời | 3
 LIFE SUPPORT SYSTEM | Hệ thống duy trì sự sống | 2
 BIOSPHERE | Sinh quyển | 2
 ASTROBIOLOGY | Ngành nghiên cứu khả năng có sự sống ở nơi khác trong vũ trụ | 3
-SETI | Tìm kiếm trí tuệ ngoài hành tinh | 2
 ALIEN LIFE | Sự sống ngoài hành tinh | 1
 UFO | Vật thể bay không xác định | 1
 SCIENCE FICTION | Khoa học viễn tưởng | 1
