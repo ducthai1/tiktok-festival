@@ -14,6 +14,7 @@ import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createSessionLog } from './session-log.js';
 import { MAX_MB, cleanYoutubeUrl, fetchYoutubeAudio } from './music/youtube-music.js';
+import { builtinTracks, createPlaylistStore } from './music/playlist-store.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createFanClubStore } from './live/fanclub-store.js';
 import { createRoomTracker } from './live/room-tracker.js';
@@ -377,7 +378,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   let adminHandler = null;
   const handleAdmin = async (msg) => {
     adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, updateGameAudio, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
-      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation, answersLogger,
+      getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation,
+      playlist, pushPlaylist, builtinMusic: () => builtinTracks(builtinMusicDir), answersLogger,
       resetRotateTimer: () => { rotateAt = Date.now() + rotateIntervalMs(); } });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
     if (msg?.t && msg.t !== 'test' && msg.t !== 'auth') {
@@ -463,7 +465,11 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       }
       sockets.send(ws, { t: 'hello', role: ws.role, version, games: hub.list(), settings: publicSettings(), live: live.status(), giftTiers, sampleGifts });
       sockets.send(ws, { t: 'state', ...hub.snapshot() });
-      if (ws.role === 'admin') sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
+      sockets.send(ws, { t: 'musicList', tracks: playlist.playable() }); // danh sách nhạc nền đang bật, đúng thứ tự
+      if (ws.role === 'admin') {
+        sockets.send(ws, { t: 'adminInfo', provider: settings.provider, username: settings.username });
+        sockets.send(ws, { t: 'musicAdmin', items: playlist.all(), builtin: builtinTracks(builtinMusicDir) });
+      }
     }
   });
 
@@ -472,6 +478,14 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
 
   const MUSIC_MAX_BYTES = MAX_MB * 1024 * 1024; // thừa cho một bài nhạc nền
+  const musicDir = path.join(dataDir, 'music');
+  const builtinMusicDir = path.join(PUBLIC_DIR, 'assets', 'dance', 'music');
+  const playlist = createPlaylistStore(musicDir, builtinMusicDir);
+  /** Màn hình nhận danh sách bài ĐANG BẬT theo đúng thứ tự; trang điều khiển nhận cả bài đang tắt. */
+  const pushPlaylist = () => {
+    sockets.broadcast({ t: 'musicList', tracks: playlist.playable() });
+    sockets.broadcast({ t: 'musicAdmin', items: playlist.all(), builtin: builtinTracks(builtinMusicDir) }, { adminsOnly: true });
+  };
   let ytBusy = false; // một lượt tải YouTube tại một thời điểm — tránh hai lần tải ghi đè nhau
   const serveStatic = createStaticFileServer({ publicDir: PUBLIC_DIR, rootDir: ROOT_DIR });
   const tts = createTtsBridge({ dataDir });
@@ -530,11 +544,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       const rawName = fnHeader.replace(/[^a-z0-9._\-]/gi, '_');
       const ext = (rawName.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
       if (!EXT_OK.test(ext)) return reject(415, 'Định dạng không hỗ trợ (nhận .mp3 .ogg .wav .m4a .aac .flac .opus .webm)');
-      const musicDir = path.join(dataDir, 'music');
       fs.mkdirSync(musicDir, { recursive: true });
-      // xóa file custom cũ
-      try { for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f)); } catch { /**/ }
-      const dest = path.join(musicDir, `custom${ext}`);
+      const dest = path.join(musicDir, `.tai-${Date.now()}${ext}`); // tải vào file tạm, xong mới đưa vào danh sách
       const out = fs.createWriteStream(dest);
       // Chặn file quá lớn: một bản .wav dài có thể cả GB, tải lên giữa buổi live là nghẽn luôn server.
       // Trả lời 413 TRƯỚC rồi mới ngắt kết nối — ngắt trước thì trình duyệt không nhận được thông báo nào.
@@ -561,11 +572,17 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         if (tooBig) setImmediate(() => req.destroy()); // bỏ nốt phần còn lại, sau khi đã gửi xong câu trả lời
         return;
       }
-      log.info('music', `file nhạc custom đã lưu: custom${ext}`);
-      // thông báo stage cập nhật
-      sockets.broadcast({ t: 'teacherMusicFile', url: `/api/music-custom${ext}` });
+      let added;
+      try {
+        added = playlist.add({ kind: 'file', title: rawName.replace(/\.[^.]+$/, ''), srcFile: dest });
+      } catch (error) {
+        try { fs.unlinkSync(dest); } catch { /**/ }
+        return reject(400, error.message);
+      }
+      log.info('music', `thêm vào danh sách nhạc: "${added.title}" (tải lên, ${ext})`);
+      pushPlaylist();
       res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
-      return res.end(JSON.stringify({ ok: true, url: `/api/music-custom${ext}` }));
+      return res.end(JSON.stringify({ ok: true, item: added }));
     }
     // ── Lấy nhạc nền từ link YouTube (POST /api/music-youtube { url }) ────────
     if (req.method === 'POST' && urlPath === '/api/music-youtube') {
@@ -586,11 +603,12 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       if (ytBusy) return reject(409, 'Đang tải một bài khác — chờ xong đã');
       ytBusy = true;
       try {
-        const out = await fetchYoutubeAudio(link, path.join(dataDir, 'music'), { log: (line) => log.info('music', line) });
-        log.info('music', `đã lấy nhạc từ YouTube: "${out.title}" (${Math.round(out.bytes / 1048576 * 10) / 10} MB, ${out.ext})`);
-        sockets.broadcast({ t: 'teacherMusicFile', url: `/api/music-custom${out.ext}` });
+        const out = await fetchYoutubeAudio(link, musicDir, { log: (line) => log.info('music', line), keepName: true });
+        const added = playlist.add({ kind: 'youtube', title: out.title, srcFile: out.file });
+        log.info('music', `thêm vào danh sách nhạc: "${out.title}" (YouTube, ${Math.round(out.bytes / 1048576 * 10) / 10} MB)`);
+        pushPlaylist();
         res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
-        return res.end(JSON.stringify({ ok: true, url: `/api/music-custom${out.ext}`, title: out.title }));
+        return res.end(JSON.stringify({ ok: true, item: added }));
       } catch (error) {
         log.warn('music', `không lấy được nhạc YouTube: ${error.message}`);
         return reject(502, `Không tải được: ${error.message}`);
@@ -598,35 +616,19 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         ytBusy = false;
       }
     }
-    // ── Serve file nhạc custom ─────────────────────────────────────────────────
-    if (req.method === 'GET' && urlPath.startsWith('/api/music-custom')) {
-      const ext = urlPath.replace('/api/music-custom', '') || '.mp3';
-      const fpath = path.join(dataDir, 'music', `custom${ext}`);
-      if (!fs.existsSync(fpath)) return reject(404, 'Chưa có file nhạc custom');
-      const buf = fs.readFileSync(fpath);
-      const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac',
-        '.flac': 'audio/flac', '.opus': 'audio/ogg', '.webm': 'audio/webm' }[ext] || 'audio/mpeg';
-      res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'no-cache', 'Content-Length': String(buf.length), ...securityHeaders(port) });
-      return res.end(req.method === 'HEAD' ? undefined : buf);
-    }
-    // ── Truy vấn tên file nhạc custom hiện tại ────────────────────────────────
-    if (req.method === 'GET' && urlPath === '/api/music-info') {
-      const musicDir = path.join(dataDir, 'music');
-      let url = null;
-      try { const f = (fs.readdirSync(musicDir).find((f2) => /^custom\./i.test(f2))); if (f) url = `/api/music-custom${f.match(/\.[^.]+$/)[0]}`; } catch { /**/ }
-      res.writeHead(200, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', ...securityHeaders(port) });
-      return res.end(JSON.stringify({ url }));
-    }
-
-    // ── Xóa file nhạc custom ───────────────────────────────────────────────────
-    if (req.method === 'POST' && urlPath === '/api/music-clear') {
-      const tok = req.headers['x-admin-token'] || '';
-      if (!tokensEqual(adminToken, tok)) return reject(403, 'Forbidden');
-      const musicDir = path.join(dataDir, 'music');
-      try { for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f)); } catch { /**/ }
-      sockets.broadcast({ t: 'teacherMusicFile', url: null });
-      res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
-      return res.end(JSON.stringify({ ok: true }));
+    // ── Phát một bài trong danh sách (GET /api/music-file/<id>) ───────────────
+    if (req.method === 'GET' || req.method === 'HEAD') {
+      const hit = urlPath.match(/^\/api\/music-file\/([a-z0-9]{6,24})$/);
+      if (hit) {
+        const fpath = playlist.filePathOf(hit[1]);
+        if (!fpath || !fs.existsSync(fpath)) return reject(404, 'Không có bài này');
+        const ext = (fpath.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
+        const buf = fs.readFileSync(fpath);
+        const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac',
+          '.flac': 'audio/flac', '.opus': 'audio/ogg', '.webm': 'audio/webm' }[ext] || 'audio/mpeg';
+        res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'no-cache', 'Content-Length': String(buf.length), ...securityHeaders(port) });
+        return res.end(req.method === 'HEAD' ? undefined : buf);
+      }
     }
 
     if (req.method !== 'GET' && req.method !== 'HEAD') return reject(405, 'Method not allowed');

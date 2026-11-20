@@ -250,10 +250,27 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 ## Âm thanh riêng từng game · nhạc nền riêng
 
 - **Mỗi game một bộ âm thanh riêng** (`settings.gameAudio[<game>]`): bật/tắt hiệu ứng, âm lượng hiệu ứng, bật/tắt nhạc nền, âm lượng nhạc. Chỉnh ở tab 📺 **Màn hình & âm thanh** chỉ đổi **game đang chạy** — thẻ ghi rõ đang chỉnh game nào. Trước đây chỉ có một bộ chung nên chỉnh ở tab tiếng Anh là đè luôn Quán Bar / Sàn Nhảy. Game chưa chỉnh bao giờ thì dùng bộ chung cũ, không ai mất cài đặt.
-- **Nhạc nền riêng** (hộp 🎵 trong cùng tab, dùng cho **mọi** chủ đề mùa chứ không riêng 20/11):
-  - **Chọn file từ máy** — nhận `.mp3 .ogg .wav .m4a .aac .flac .opus .webm`, tối đa 80 MB. Nhận theo **đuôi file**, không theo `Content-Type` (trình duyệt đoán kiểu rất lung tung: `.m4a` có máy báo `video/mp4`, có máy báo `application/octet-stream` — trước đây đều bị chặn 415).
-  - **Dán link YouTube** → server tải phần tiếng về `data/music/custom.<đuôi>` bằng `yt-dlp` (môi trường Python riêng, tự cài lần đầu ~30 giây, ghim bản trong `tools/music/requirements-yt.txt`). Chỉ nhận link YouTube; mọi tham số thừa (danh sách phát, mốc thời gian, tracking) bị cắt. Không chuyển mã — luồng tiếng m4a/opus của YouTube trình duyệt OBS phát thẳng được, nên không cần ffmpeg.
-  - Nút ✕ xoá nhạc riêng, trở về nhạc tự tổng hợp.
+- **Danh sách nhạc nền** (hộp 🎵 trong cùng tab, dùng cho **mọi** chủ đề mùa chứ không riêng 20/11): một hàng đợi **có thứ tự**, màn hình phát lần lượt từ trên xuống rồi quay lại đầu. Trộn được cả ba nguồn:
+  | Nguồn | Thêm bằng cách |
+  |---|---|
+  | 🎼 Nhạc gốc | chọn trong ô thả xuống (các bài Mixkit đi kèm, `public/assets/dance/music/tracks.json`) — chỉ hiện bài máy này **đã có file** |
+  | ▶ YouTube | dán link rồi bấm **＋ Thêm từ YouTube** |
+  | 📂 File máy | **＋ Thêm file từ máy** — nhận `.mp3 .ogg .wav .m4a .aac .flac .opus .webm`, tối đa 80 MB |
+
+  Mỗi bài có: **dấu tích** bật/tắt (tắt = *để sang một bên*, bài vẫn nằm trong danh sách, chỉ không vào vòng phát), **▲▼** đổi thứ tự, **✕** xoá hẳn (xoá luôn file trên ổ; bài gốc thì giữ file lại), và bấm vào **tên** để đổi tên. Danh sách rỗng → màn hình dùng nhạc tự tổng hợp như cũ.
+
+  Lưu ở `data/music/playlist.json`, file nhạc là `data/music/<id>.<đuôi>`. Bài nào mất file (xoá tay) thì tự rụng khỏi danh sách lúc khởi động. Tối đa 60 bài.
+
+  **YouTube**: tải bằng `yt-dlp` trong môi trường Python riêng, tự cài lần đầu (~30 giây), ghim bản trong `tools/music/requirements-yt.txt`. Chỉ nhận link YouTube; mọi tham số thừa (danh sách phát, mốc thời gian, tracking) bị cắt. Không chuyển mã — luồng tiếng m4a/opus của YouTube trình duyệt OBS phát thẳng được, nên không cần ffmpeg. Nhận theo **đuôi file**, không theo `Content-Type` (trình duyệt đoán kiểu rất lung tung: `.m4a` có máy báo `video/mp4` — trước đây đều bị chặn 415).
+
+## Đổi game thì giữ lại gì
+
+| | Khi đổi sang game khác |
+|---|---|
+| 💎 Bảng xếp hạng phiên + sổ donate | **giữ** — chung cho mọi game |
+| Bảng điểm của game | **riêng từng game** — game nào giữ bảng của game đó, không mang sang game khác |
+| 📣 Đại sứ share | **riêng từng game** — như trên |
+| Âm thanh (hiệu ứng / nhạc / âm lượng) | **riêng từng game** (`settings.gameAudio`) |
 
 ## Các nút Xoá — mỗi nút chỉ xoá đúng bảng của nó
 

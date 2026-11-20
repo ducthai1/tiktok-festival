@@ -195,25 +195,33 @@
             <label class="slider">Âm lượng hiệu ứng <input type="range" id="set-volume" min="0" max="1" step="0.05"></label>
             <label class="toggle"><input type="checkbox" id="set-music"><span>Nhạc nền</span></label>
             <label class="slider">Âm lượng nhạc <input type="range" id="set-musicVolume" min="0" max="1" step="0.05"></label>
-            <!-- Nhạc nền riêng: file từ máy hoặc link YouTube. Dùng cho MỌI chủ đề mùa, không riêng 20/11. -->
-            <div id="teacher-music-box" class="teacher-music-box">
-              <div class="teacher-music-head">🎵 Nhạc nền riêng (thay nhạc tự tổng hợp)</div>
-              <div class="teacher-music-row">
-                <span id="teacher-music-name" class="teacher-music-name">🎼 Nhạc hộp nhạc tự tổng hợp (mặc định)</span>
-                <button type="button" id="teacher-music-clear" class="ghost" hidden title="Xoá nhạc riêng, trở về nhạc tổng hợp">✕</button>
+            <!-- DANH SÁCH NHẠC NỀN: xếp thứ tự xoay tua, trộn cả nhạc gốc, YouTube và file từ máy. -->
+            <div id="music-box" class="music-box">
+              <div class="row music-head wrap">
+                <b>🎵 Danh sách nhạc nền</b>
+                <span id="music-count" class="badge seen">0 bài</span>
+                <span class="muted small">Phát lần lượt từ trên xuống rồi quay lại đầu.</span>
               </div>
-              <div class="row wrap gap">
-                <label class="teacher-music-upload">
-                  <input type="file" id="teacher-music-file" accept=".mp3,.ogg,.wav,.m4a,.aac,.flac,.opus,.webm,audio/*" hidden>
-                  <button type="button" id="teacher-music-pick" class="ghost small">📂 Chọn file nhạc từ máy…</button>
-                </label>
+
+              <ol id="music-list" class="music-list"></ol>
+              <p id="music-empty" class="muted small">Chưa có bài nào — thêm bên dưới. Danh sách rỗng thì màn hình dùng nhạc tự tổng hợp như cũ.</p>
+
+              <div class="music-add">
+                <div class="row wrap gap">
+                  <input type="url" id="yt-music-url" class="yt-input" placeholder="Dán link YouTube rồi bấm Thêm"
+                    autocomplete="off" spellcheck="false">
+                  <button type="button" id="yt-music-get" class="ghost small">＋ Thêm từ YouTube</button>
+                </div>
+                <div class="row wrap gap">
+                  <label class="music-upload">
+                    <input type="file" id="teacher-music-file" accept=".mp3,.ogg,.wav,.m4a,.aac,.flac,.opus,.webm,audio/*" hidden>
+                    <button type="button" id="teacher-music-pick" class="ghost small">📂 Thêm file từ máy…</button>
+                  </label>
+                  <select id="builtin-pick" class="yt-input"></select>
+                  <button type="button" id="builtin-add" class="ghost small">＋ Thêm bài gốc</button>
+                </div>
+                <div id="teacher-music-status" class="teacher-music-status"></div>
               </div>
-              <div class="row wrap gap yt-row">
-                <input type="url" id="yt-music-url" class="yt-input" placeholder="…hoặc dán link YouTube vào đây rồi bấm Lấy nhạc"
-                  autocomplete="off" spellcheck="false">
-                <button type="button" id="yt-music-get" class="ghost small">▶ Lấy nhạc</button>
-              </div>
-              <div id="teacher-music-status" class="teacher-music-status"></div>
             </div>
             <label class="toggle"><input type="checkbox" id="set-legend"><span>Hiện bảng quà (các game hiệu ứng)</span></label>
           </div>

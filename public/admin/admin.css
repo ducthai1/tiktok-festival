@@ -413,6 +413,26 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
 .teacher-music-status.ok  { color: #81c784; }
 .teacher-music-status.err { color: #e57373; }
 
+/* ── Danh sách nhạc nền ── */
+.music-box { margin: 8px 0; padding: 10px 12px; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; background: rgba(255, 255, 255, 0.03); }
+.music-head { align-items: center; gap: 8px; margin-bottom: 6px; }
+.music-list { list-style: none; margin: 0 0 6px; padding: 0; display: flex; flex-direction: column; gap: 3px;
+  max-height: 290px; overflow-y: auto; counter-reset: bai; }
+.music-row { display: flex; align-items: center; gap: 8px; padding: 4px 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.05); font-size: 13px; }
+.music-row::before { counter-increment: bai; content: counter(bai); width: 18px; text-align: right; opacity: 0.5; font-variant-numeric: tabular-nums; }
+.music-row.off { opacity: 0.45; }
+.music-row.missing { background: rgba(255, 93, 108, 0.12); }
+.music-row input[type="checkbox"] { flex: none; accent-color: var(--ok, #3ddc84); }
+.music-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; cursor: text; }
+.music-name:hover { text-decoration: underline dotted; }
+.music-kind { flex: none; font-size: 11px; opacity: 0.65; }
+.music-btns { flex: none; display: flex; gap: 2px; }
+.music-btns button { min-width: 24px; padding: 1px 5px; line-height: 1.3; }
+.music-btns button[disabled] { opacity: 0.25; }
+.music-btns .danger { color: var(--bad, #ff5d6c); }
+.music-add { display: flex; flex-direction: column; gap: 6px; margin-top: 6px; padding-top: 8px; border-top: 1px dashed rgba(255, 255, 255, 0.12); }
+.music-add select.yt-input { flex: 1; min-width: 180px; }
+
 /* Ô dán link YouTube trong hộp nhạc nền riêng */
 .yt-row { margin-top: 6px; }
 .yt-input { flex: 1; min-width: 220px; padding: 6px 10px; border-radius: 9px; border: 1px solid var(--line, rgba(255, 255, 255, 0.18));

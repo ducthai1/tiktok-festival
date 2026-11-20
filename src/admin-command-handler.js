@@ -35,6 +35,7 @@ const clampRotateMinutes = (val) => {
 };
 
 export function createAdminCommandHandler({ hub, live, settings, updateSettings, updateGameAudio = () => {}, emitFx, pushState, getSampleGifts = () => undefined, sockets,
+  playlist = null, pushPlaylist = () => {}, builtinMusic = () => [],
   getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {}, answersLogger = null,
   resetRotateTimer = () => {} }) {
   /** Món được tặng nhiều LƯỢT nhất buổi live này → tab 🎁 Quà hiện ra để chủ kênh thấy món nào đang hot. */
@@ -87,7 +88,52 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     return out;
   };
 
+  // ── Danh sách nhạc nền (tab 📺 Màn hình & âm thanh) ─────────────────────────
+  // Dùng `trackId` chứ KHÔNG dùng `id`: live-socket-client.js tự gán msg.id = số thứ tự request
+  // để ghép câu trả lời, nên trường `id` của mình sẽ bị ghi đè mất.
+  const musicView = () => ({ items: playlist?.all() || [], builtin: builtinMusic() });
+  const musicDo = (fn) => {
+    if (!playlist) throw new Error('Chưa bật danh sách nhạc');
+    const out = fn();
+    pushPlaylist();
+    return { ...musicView(), ...out };
+  };
+
   const handlers = {
+    musicList() {
+      return musicView();
+    },
+    /** Bật / tắt một bài: tắt là để sang một bên, bài vẫn nằm trong danh sách. */
+    musicToggle(msg) {
+      return musicDo(() => {
+        const it = playlist.toggle(msg.trackId, msg.on);
+        return { message: it.enabled ? `Đã đưa "${it.title}" vào vòng phát` : `Đã để "${it.title}" sang một bên` };
+      });
+    },
+    /** Dời bài lên / xuống để sắp thứ tự xoay tua. */
+    musicMove(msg) {
+      return musicDo(() => {
+        playlist.move(msg.trackId, Number(msg.delta) || 0);
+        return { message: 'Đã đổi thứ tự' };
+      });
+    },
+    musicRename(msg) {
+      return musicDo(() => ({ message: `Đã đổi tên thành "${playlist.rename(msg.trackId, msg.title).title}"` }));
+    },
+    /** Xoá hẳn: bỏ khỏi danh sách và xoá file trên ổ (nhạc gốc thì giữ file). */
+    musicRemove(msg) {
+      return musicDo(() => ({ message: `Đã xoá "${playlist.remove(msg.trackId).title}"` }));
+    },
+    /** Thêm một bài NHẠC GỐC đi kèm vào danh sách. */
+    musicAddBuiltin(msg) {
+      return musicDo(() => {
+        const track = builtinMusic().find((t) => t.name === String(msg.name || ''));
+        if (!track) throw new Error('Không có bài gốc này');
+        if (!track.has) throw new Error(`Máy này chưa có file ${track.file} (xem public/assets/dance/music/NGUON-NHAC.txt)`);
+        const it = playlist.add({ kind: 'builtin', title: track.name, builtinFile: track.file });
+        return { message: `Đã thêm bài gốc "${it.title}"` };
+      });
+    },
     /** Danh sách quà để "bù quà" ở tab Điều khiển. */
     grantGifts() {
       return { gifts: grantableGifts() };

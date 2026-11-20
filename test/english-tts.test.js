@@ -72,7 +72,9 @@ test('english voice: question start prepares normal + slow clips in the same voi
   const dataDir = tmp();
   const tts = createEnglishTts({ dataDir, synthesize: synth });
   tts.prefetch('STRAWBERRY');
-  await new Promise((r) => setTimeout(r, 50));
+  // CHỜ ĐÚNG VIỆC chứ không chờ cứng 50ms: máy bận (chạy cả bộ test cùng lúc) là việc nền chưa kịp
+  // xong trong 50ms → test rớt oan. Lỗi này đã làm `npm run gate` đỏ vài lần dù code không sai.
+  for (let i = 0; i < 200 && calls.length < 2; i += 1) await new Promise((r) => setTimeout(r, 10));
   assert.deepEqual(calls.map((c) => c.rate), ['+0%', '-35%']);
   assert.equal(calls[0].voice, calls[1].voice);
   assert.equal(calls[0].voice, tts.voiceFor('STRAWBERRY'));

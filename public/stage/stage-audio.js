@@ -21,7 +21,10 @@ export function createStageAudio() {
   // hạ nhỏ tạm thời (thẻ quà lớn, giọng đọc) mà không đụng mức âm lượng cài đặt: nhạc nền + tiếng hiệu ứng, mỗi đường một nút
   const ducks = { music: { node: null, level: 1, until: 0 }, sfx: { node: null, level: 1, until: 0 } };
   let theme = '';
-  let customMusicUrl = null; // URL file nhạc custom (upload từ admin) — null = dùng nhạc tổng hợp
+  // DANH SÁCH NHẠC NỀN do chủ kênh xếp ở trang điều khiển (playlist-store.js): phát lần lượt từ
+  // trên xuống rồi quay lại đầu. Danh sách rỗng = dùng nhạc tổng hợp / nhạc gốc như cũ.
+  let playlist = []; // [{ id, title, url }]
+  let playAt = 0;
   let customAudio = null;   // HTMLAudioElement phát file custom
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền', ttsEnglish: true };
 
@@ -73,27 +76,30 @@ export function createStageAudio() {
     }
     const name = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme; // chủ đề mùa: mọi game phát nhạc của mùa đó
     // ── Phát file custom (do admin upload) nếu có ─────────────────────────────
-    // File nhạc riêng (upload hoặc lấy từ YouTube) được ưu tiên ở MỌI chủ đề mùa, không riêng 20/11.
-    if (customMusicUrl) {
+    // Danh sách nhạc của chủ kênh được ưu tiên ở MỌI chủ đề mùa, không riêng 20/11.
+    if (playlist.length) {
       music.stop();
       tracks.stop();
       if (!customAudio) {
         customAudio = new Audio();
-        customAudio.loop = true;
         customAudio.crossOrigin = 'anonymous';
-        // kết nối vào musicBus (hưởng volume + duck)
+        // hết bài thì sang bài kế; hết danh sách thì quay lại đầu
+        customAudio.addEventListener('ended', () => nextTrack(+1));
+        // bài hỏng (file mất, mã hoá lạ) thì bỏ qua, đừng để im lặng cả buổi
+        customAudio.addEventListener('error', () => { if (playlist.length > 1) nextTrack(+1); });
         ctx.createMediaElementSource(customAudio).connect(musicBus);
       }
       // LỖI CŨ: src chỉ được gán trong setCustomMusicUrl, mà lúc đó customAudio còn chưa tạo
       // (thẻ nhạc chỉ tạo ở đây) → phần tử Audio không có nguồn, play() rơi im lặng, nhạc không bao giờ kêu.
-      if (customAudio.getAttribute('src') !== customMusicUrl) {
-        customAudio.src = customMusicUrl;
+      const want = playlist[playAt % playlist.length];
+      if (customAudio.getAttribute('src') !== want.url) {
+        customAudio.src = want.url;
         customAudio.load();
       }
       if (customAudio.paused) customAudio.play().catch(() => {});
       return;
     }
-    // dừng custom audio nếu không dùng nữa
+    // dừng nhạc danh sách nếu không dùng nữa
     if (customAudio && !customAudio.paused) customAudio.pause();
     const currentTarget = name;
     tracks.available(name).then((has) => {
@@ -107,6 +113,17 @@ export function createStageAudio() {
         music.start(name);
       }
     });
+  }
+
+  /** Sang bài kế (hoặc bài trước nếu step âm); quay vòng khi hết danh sách. */
+  function nextTrack(step = 1) {
+    if (!playlist.length) return;
+    playAt = (playAt + step + playlist.length) % playlist.length;
+    if (customAudio) {
+      customAudio.src = playlist[playAt].url;
+      customAudio.load();
+      customAudio.play().catch(() => {});
+    }
   }
 
   function playCue(name, options = {}) {
@@ -211,16 +228,26 @@ export function createStageAudio() {
     },
     state: () => (ctx ? ctx.state : 'none'),
     specialKind: () => tracks?.specialKind() || '',
-    /** Đặt URL file nhạc riêng (null = trở về nhạc tổng hợp). Áp dụng cho mọi chủ đề mùa. */
-    setCustomMusicUrl(url) {
-      customMusicUrl = url || null;
-      if (customAudio && !url) {
-        customAudio.pause();
-        customAudio.removeAttribute('src');
-        customAudio.load();
+    /** Danh sách nhạc nền mới từ trang điều khiển (rỗng = trở về nhạc tổng hợp / nhạc gốc). */
+    setPlaylist(list) {
+      const next = Array.isArray(list) ? list.filter((t) => t && t.url) : [];
+      const playing = playlist[playAt % (playlist.length || 1)]?.url || '';
+      playlist = next;
+      // bài đang phát vẫn còn trong danh sách mới → phát tiếp từ đúng chỗ, không giật lại từ đầu
+      const stillThere = next.findIndex((t) => t.url === playing);
+      if (stillThere >= 0) playAt = stillThere;
+      else {
+        playAt = 0;
+        if (customAudio) {
+          customAudio.pause();
+          customAudio.removeAttribute('src');
+          customAudio.load();
+        }
       }
-      applyLevels(); // tự gán src + phát (hoặc trở về nhạc tổng hợp) theo đúng trạng thái hiện tại
       applyLevels();
-    }
+    },
+    /** Bỏ qua bài đang phát (nút ⏭ ở trang điều khiển). */
+    skipTrack: () => nextTrack(+1),
+    nowPlaying: () => (playlist.length ? playlist[playAt % playlist.length] : null)
   };
 }

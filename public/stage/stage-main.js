@@ -334,8 +334,6 @@ const socket = connectLiveSocket({
       if (!frontVersion) frontVersion = message.version;
       else if (frontVersion !== message.version) return location.reload();
       setTimeout(() => socket.send(stageInfo()), 5000); // đo FPS 5 giây đầu rồi báo
-      // kiểm tra file nhạc custom (teacher season)
-      fetch('/api/music-info').then((r) => r.json()).then((d) => { if (d.url) audio.setCustomMusicUrl(d.url); }).catch(() => {});
     }
     if (message.t === 'hello' || message.t === 'settings' || message.t === 'gifts') {
       settings = message.settings || settings;
@@ -367,9 +365,9 @@ const socket = connectLiveSocket({
     else if (message.t === 'reload') {
       location.reload();
     }
-    else if (message.t === 'teacherMusicFile') {
-      // admin upload file nhạc custom → stage chuyển sang phát file đó
-      audio.setCustomMusicUrl(message.url || null);
+    else if (message.t === 'musicList') {
+      // chủ kênh sửa danh sách nhạc nền ở trang điều khiển → màn hình phát theo đúng thứ tự mới
+      audio.setPlaylist(message.tracks || []);
     }
   }
 });
@@ -422,6 +420,7 @@ window.__stage = {
   probe: (id) => current?.probe?.(id) || null,
   cameraShot: () => current?.cameraShot?.() ?? -1,
   audioState: () => audio.state(),
+  musicNow: () => audio.nowPlaying(), // bài đang phát trong danh sách nhạc nền (null = dùng nhạc tổng hợp)
   audioLevel: () => audio.level(),
   musicSpecial: () => audio.specialKind(),
   playSound: (name) => audio.play(name),

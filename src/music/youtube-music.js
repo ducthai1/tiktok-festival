@@ -115,7 +115,7 @@ export async function setupYoutubeTool({ envDir = DEFAULT_YT_ENV, log = () => {}
  * Tải phần tiếng của một video YouTube về `musicDir/custom.<đuôi>` (xoá file custom cũ trước).
  * @returns {Promise<{ file: string, ext: string, title: string, bytes: number }>}
  */
-export async function fetchYoutubeAudio(rawUrl, musicDir, { envDir = DEFAULT_YT_ENV, log = () => {}, timeoutMs = 240000 } = {}) {
+export async function fetchYoutubeAudio(rawUrl, musicDir, { envDir = DEFAULT_YT_ENV, log = () => {}, timeoutMs = 240000, keepName = false } = {}) {
   const url = cleanYoutubeUrl(rawUrl);
   if (!url) throw new Error('Link không phải YouTube (hoặc thiếu mã video)');
   if (!youtubeToolInstalled(envDir)) {
@@ -145,8 +145,12 @@ export async function fetchYoutubeAudio(rawUrl, musicDir, { envDir = DEFAULT_YT_
       title = fs.readFileSync(titleFile, 'utf8').trim().split('\n')[0].slice(0, 120);
     } catch { /* không có tên thì thôi */ }
 
-    for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f));
-    const dest = path.join(musicDir, `custom${ext}`);
+    // keepName: để file ở tên tạm cho playlist-store tự đặt tên theo id của bài.
+    // Không keepName (cách cũ, một file duy nhất): ghi đè custom.<đuôi>.
+    const dest = keepName
+      ? path.join(musicDir, `.tai-${Date.now()}${ext}`)
+      : path.join(musicDir, `custom${ext}`);
+    if (!keepName) for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f));
     fs.renameSync(path.join(tmp, got), dest);
     return { file: dest, ext, title: title || 'Nhạc từ YouTube', bytes };
   } finally {

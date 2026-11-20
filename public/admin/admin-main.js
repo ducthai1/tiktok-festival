@@ -117,6 +117,7 @@ const socket = connectLiveSocket({
       $('provider').value = m.provider;
       if (m.username && !$('username').value) $('username').value = m.username;
     } else if (m.t === 'stages') renderStages(m);
+    else if (m.t === 'musicAdmin') window.__musicRender?.(m);
     else if (m.t === 'settings') applySettings(m.settings);
     else if (m.t === 'live') renderLive(m.status);
     else if (m.t === 'state') renderState(m);
@@ -968,14 +969,15 @@ $('clear-answers-btn')?.addEventListener('click', () => {
   if ($('answers-count')) $('answers-count').textContent = '0 mục';
 });
 
-// ── Nhạc tùy chỉnh 20/11 ────────────────────────────────────────────────────
+// ── DANH SÁCH NHẠC NỀN ───────────────────────────────────────────────────────
+// Một hàng đợi có thứ tự: nhạc gốc đi kèm + bài tải từ YouTube + file từ máy. Bật/tắt từng bài
+// (tắt = để sang một bên, vẫn giữ), ▲▼ đổi thứ tự xoay tua, ✕ xoá hẳn (xoá luôn file trên ổ).
 (function () {
+  const listEl = $('music-list');
+  if (!listEl) return;
+  const statusEl = $('teacher-music-status');
   const fileInput = $('teacher-music-file');
-  const pickBtn   = $('teacher-music-pick');
-  const clearBtn  = $('teacher-music-clear');
-  const nameEl    = $('teacher-music-name');
-  const statusEl  = $('teacher-music-status');
-  if (!fileInput || !pickBtn) return;
+  let builtinAll = [];
 
   function setStatus(msg, cls = '') {
     if (!statusEl) return;
@@ -983,18 +985,83 @@ $('clear-answers-btn')?.addEventListener('click', () => {
     statusEl.className = 'teacher-music-status' + (cls ? ' ' + cls : '');
   }
 
-  function setCustomName(name) {
-    if (nameEl) nameEl.textContent = name ? `🎵 ${name}` : '🎼 Nhạc hộp nhạc tự tổng hợp (mặc định)';
-    if (clearBtn) clearBtn.hidden = !name;
+  const KIND = { youtube: '▶ YouTube', file: '📂 File máy', builtin: '🎼 Nhạc gốc' };
+
+  function render({ items = [], builtin = [] } = {}) {
+    builtinAll = builtin;
+    const on = items.filter((i) => i.enabled && !i.missing).length;
+    $('music-count').textContent = `${items.length} bài · ${on} đang phát`;
+    $('music-empty').hidden = items.length > 0;
+
+    listEl.replaceChildren(...items.map((it, i) => {
+      const li = document.createElement('li');
+      li.className = `music-row${it.enabled ? '' : ' off'}${it.missing ? ' missing' : ''}`;
+
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      box.checked = it.enabled && !it.missing;
+      box.disabled = it.missing;
+      box.title = it.enabled ? 'Để sang một bên (không xoá)' : 'Đưa vào vòng phát';
+      box.addEventListener('change', () => run({ t: 'musicToggle', trackId: it.id, on: box.checked }));
+
+      const name = document.createElement('span');
+      name.className = 'music-name';
+      name.textContent = it.title;
+      name.title = 'Bấm để đổi tên';
+      name.addEventListener('click', () => {
+        const title = prompt('Tên bài:', it.title);
+        if (title && title.trim() && title !== it.title) run({ t: 'musicRename', trackId: it.id, title: title.trim() });
+      });
+
+      const tag = document.createElement('span');
+      tag.className = 'music-kind';
+      tag.textContent = it.missing ? '⚠ mất file' : KIND[it.kind] || it.kind;
+
+      const btns = document.createElement('span');
+      btns.className = 'music-btns';
+      for (const [label, delta, title, off] of [['▲', -1, 'Lên một bậc', i === 0], ['▼', +1, 'Xuống một bậc', i === items.length - 1]]) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'tiny ghost';
+        b.textContent = label;
+        b.title = title;
+        b.disabled = off;
+        b.addEventListener('click', () => run({ t: 'musicMove', trackId: it.id, delta }));
+        btns.append(b);
+      }
+      const del = document.createElement('button');
+      del.type = 'button';
+      del.className = 'tiny ghost danger';
+      del.textContent = '✕';
+      del.title = 'Xoá hẳn khỏi danh sách';
+      del.addEventListener('click', () => {
+        if (confirm(`Xoá hẳn "${it.title}"? Không muốn dùng tạm thì bỏ dấu tích thay vì xoá.`)) run({ t: 'musicRemove', trackId: it.id });
+      });
+      btns.append(del);
+
+      li.append(box, name, tag, btns);
+      return li;
+    }));
+
+    // chỉ cho chọn bài gốc CHƯA có trong danh sách và máy này có file
+    const already = new Set(items.filter((i) => i.kind === 'builtin').map((i) => i.title));
+    const pick = $('builtin-pick');
+    const usable = builtin.filter((t) => t.has && !already.has(t.name));
+    const missing = builtin.filter((t) => !t.has).length;
+    const options = usable.map((t) => new Option(t.name, t.name));
+    pick.replaceChildren(...(options.length ? options
+      : [new Option(missing ? `— máy này chưa tải ${missing} bài nhạc gốc —` : '— đã thêm hết nhạc gốc —', '')]));
+    $('builtin-add').disabled = !options.length;
   }
 
-  // kiểm tra file custom hiện tại khi admin load
-  fetch('/api/music-info').then((r) => r.json()).then((d) => {
-    if (d.url) setCustomName(decodeURIComponent(d.url.split('/').pop()));
-  }).catch(() => {});
+  window.__musicRender = render; // onMessage gọi vào khi server đẩy danh sách mới
 
-  pickBtn.addEventListener('click', () => fileInput.click());
+  $('builtin-add').addEventListener('click', () => {
+    const name = $('builtin-pick').value;
+    if (name) run({ t: 'musicAddBuiltin', name });
+  });
 
+  $('teacher-music-pick').addEventListener('click', () => fileInput.click());
   fileInput.addEventListener('change', async () => {
     const file = fileInput.files?.[0];
     if (!file) return;
@@ -1003,13 +1070,12 @@ $('clear-answers-btn')?.addEventListener('click', () => {
       const res = await fetch('/api/music-upload', {
         method: 'POST',
         headers: { 'Content-Type': file.type || 'audio/mpeg', 'x-admin-token': token, 'x-filename': encodeURIComponent(file.name) },
-        body: file,
+        body: file
       });
-      if (!res.ok) { const t = await res.text(); setStatus('❌ ' + t, 'err'); return; }
-      const d = await res.json();
-      setCustomName(file.name);
-      setStatus('✅ Đã tải lên & áp dụng vào màn hình', 'ok');
-      toast(`🎵 Nhạc "${file.name}" đã được áp dụng`);
+      const text = await res.text();
+      if (!res.ok) return setStatus('❌ ' + text, 'err');
+      setStatus(`✅ Đã thêm "${file.name}" vào cuối danh sách`, 'ok');
+      toast(`🎵 Đã thêm "${file.name}"`);
     } catch (err) {
       setStatus('❌ Lỗi: ' + err.message, 'err');
     } finally {
@@ -1017,12 +1083,11 @@ $('clear-answers-btn')?.addEventListener('click', () => {
     }
   });
 
-  // Dán link YouTube → server tải phần tiếng về rồi màn hình phát luôn.
   const ytInput = $('yt-music-url');
   const ytBtn = $('yt-music-get');
-  async function getFromYoutube() {
-    const url = (ytInput?.value || '').trim();
-    if (!url) { setStatus('Dán link YouTube vào ô bên cạnh đã', 'err'); return; }
+  async function addFromYoutube() {
+    const url = (ytInput.value || '').trim();
+    if (!url) return setStatus('Dán link YouTube vào ô bên cạnh đã', 'err');
     ytBtn.disabled = true;
     setStatus('⏳ Đang lấy nhạc từ YouTube… (lần đầu phải cài công cụ, có thể mất 30–60 giây)');
     try {
@@ -1032,11 +1097,10 @@ $('clear-answers-btn')?.addEventListener('click', () => {
         body: JSON.stringify({ url })
       });
       const text = await res.text();
-      if (!res.ok) { setStatus('❌ ' + text, 'err'); return; }
+      if (!res.ok) return setStatus('❌ ' + text, 'err');
       const d = JSON.parse(text);
-      setCustomName(d.title || 'Nhạc từ YouTube');
-      setStatus('✅ Đã lấy nhạc & áp dụng vào màn hình', 'ok');
-      toast(`🎵 "${d.title || 'Nhạc từ YouTube'}" đã được áp dụng`);
+      setStatus(`✅ Đã thêm "${d.item?.title || 'bài mới'}" vào cuối danh sách`, 'ok');
+      toast(`🎵 Đã thêm "${d.item?.title || 'bài mới'}"`);
       ytInput.value = '';
     } catch (err) {
       setStatus('❌ Lỗi: ' + err.message, 'err');
@@ -1044,15 +1108,6 @@ $('clear-answers-btn')?.addEventListener('click', () => {
       ytBtn.disabled = false;
     }
   }
-  ytBtn?.addEventListener('click', getFromYoutube);
-  ytInput?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); getFromYoutube(); } });
-
-  clearBtn?.addEventListener('click', async () => {
-    try {
-      // xóa file custom bằng endpoint, server tự broadcast về stage
-      const res = await fetch('/api/music-clear', { method: 'POST', headers: { 'x-admin-token': token } });
-      if (res.ok) { setCustomName(''); setStatus('Đã trở về nhạc tổng hợp mặc định', 'ok'); }
-      else setStatus('Không xóa được', 'err');
-    } catch { setStatus('Lỗi kết nối', 'err'); }
-  });
+  ytBtn.addEventListener('click', addFromYoutube);
+  ytInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); addFromYoutube(); } });
 })();
