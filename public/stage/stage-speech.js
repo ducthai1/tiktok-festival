@@ -30,6 +30,10 @@ export function createSpeech({ context, output, duck, options }) {
   let busy = false;
   let currentSource = null;
   let generation = 0;
+  // Mỗi lượt đọc có một "vé" riêng. Lượt CŨ (đã bị clear() huỷ) khi tỉnh dậy chỉ được nhả cờ `busy`
+  // nếu vé của nó vẫn là vé mới nhất — không thì nó nhả nhầm cờ của lượt đang đọc, lượt kế tiếp
+  // tưởng đang rảnh nên đọc chồng lên: ĐÓ LÀ LỖI "đọc hai lần / đọc hai lần nhưng cụt câu".
+  let runToken = 0;
 
   async function fetchClip(text) {
     try {
@@ -77,6 +81,12 @@ export function createSpeech({ context, output, duck, options }) {
     const ctx = context();
     const { offset, duration } = trim ? audibleRange(buffer) : { offset: 0, duration: buffer.duration };
     return new Promise((resolve) => {
+      // Chốt an toàn: còn nguồn tiếng cũ đang kêu thì dừng hẳn trước đã. Giọng vốn phát lần lượt,
+      // nên lúc này mà còn nguồn cũ nghĩa là đã lọt lỗi ở đâu đó — thà cắt còn hơn để hai giọng chồng nhau.
+      if (currentSource) {
+        try { currentSource.stop(); } catch { /* đã dừng rồi */ }
+        currentSource = null;
+      }
       const source = ctx.createBufferSource();
       currentSource = source;
       source.buffer = buffer;
@@ -112,16 +122,19 @@ export function createSpeech({ context, output, duck, options }) {
   async function next() {
     if (busy || !queue.length) return;
     busy = true;
+    const myToken = (runToken += 1);
     const currentGen = generation;
+    /** Chỉ lượt mới nhất mới được nhả cờ bận. */
+    const release = () => { if (runToken === myToken) busy = false; };
     const item = queue.shift();
     let buffer = await item.clip;
     if (generation !== currentGen) {
-      busy = false;
+      release();
       return;
     }
     if (buffer === LATE) buffer = await fetchClip(item.fallback); // câu có tên chưa kịp có → câu dự phòng (đã tạo sẵn)
     if (generation !== currentGen) {
-      busy = false;
+      release();
       return;
     }
     item.onStart?.();
@@ -133,8 +146,8 @@ export function createSpeech({ context, output, duck, options }) {
     } catch {
       // câu lỗi thì bỏ qua, đọc câu sau
     }
-    busy = false;
-    if (generation === currentGen) next();
+    release();
+    if (generation === currentGen && runToken === myToken) next();
   }
 
   return {
@@ -159,6 +172,7 @@ export function createSpeech({ context, output, duck, options }) {
     },
     clear() {
       generation += 1;
+      runToken += 1; // lượt đang chạy mất quyền nhả cờ bận
       for (const item of queue.splice(0)) item.onStart?.();
       if (currentSource) {
         try { currentSource.stop(); } catch {}
