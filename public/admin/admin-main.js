@@ -929,7 +929,7 @@ $('clear-answers-btn')?.addEventListener('click', () => {
     try {
       const res = await fetch('/api/music-upload', {
         method: 'POST',
-        headers: { 'Content-Type': file.type || 'audio/mpeg', 'x-admin-token': token, 'x-filename': file.name },
+        headers: { 'Content-Type': file.type || 'audio/mpeg', 'x-admin-token': token, 'x-filename': encodeURIComponent(file.name) },
         body: file,
       });
       if (!res.ok) { const t = await res.text(); setStatus('❌ ' + t, 'err'); return; }

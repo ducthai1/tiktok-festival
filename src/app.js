@@ -480,8 +480,10 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       const EXT_OK = /\.(mp3|ogg|wav|m4a|aac|flac)$/i;
       const MIME_OK = /^audio\//i;
       if (!MIME_OK.test(ct.split(';')[0].trim())) return reject(415, 'Chỉ chấp nhận file audio');
-      // lấy tên file từ header hoặc Content-Disposition
-      const rawName = (req.headers['x-filename'] || 'custom.mp3').replace(/[^a-z0-9._\-]/gi, '_');
+      // lấy tên file từ header (mã hoá URI đẻ tránh ký tự tiếng Việt ngoài ISO-8859-1)
+      let fnHeader = req.headers['x-filename'] || 'custom.mp3';
+      try { fnHeader = decodeURIComponent(fnHeader); } catch {}
+      const rawName = fnHeader.replace(/[^a-z0-9._\-]/gi, '_');
       const ext = (rawName.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
       if (!EXT_OK.test(ext)) return reject(415, 'Định dạng không hỗ trợ (.mp3 .ogg .wav .m4a)');
       const musicDir = path.join(dataDir, 'music');
