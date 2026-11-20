@@ -16,7 +16,7 @@ GALLANTRY | Cử chỉ lịch thiệp của đàn ông với phụ nữ, như m�
 POIGNANCY | Sự xúc động, buồn sâu sắc | 2
 SORROWFUL | Buồn bã, đau lòng | 2
 WISTFUL | Buồn nhẹ, luyến tiếc | 2
-SERENITY | Yên bình, tĩnh tại, bình an | 2
+SERENITY | Sự thanh thản trong lòng, không gì làm xao động nổi | 2
 JUBILANCE | Niềm vui ồn ào của cả đám đông đang reo hò ăn mừng | 2
 FELICITY | Danh từ trang trọng chỉ niềm hạnh phúc êm đềm, bền lâu | 2
 CONSTANCY | Sự không đổi, trung thành | 2

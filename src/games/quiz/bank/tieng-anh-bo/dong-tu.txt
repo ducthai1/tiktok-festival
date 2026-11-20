@@ -668,7 +668,7 @@ RESOURCEFUL | Tháo vát nhanh trí xoay xở giỏi | 3
 SERENE | Thanh thản yên bình thanh tịnh | 2
 SOPHISTICATED | Tinh vi tinh xảo hoặc sành điệu | 3
 STEADFAST | Kiên định vững vàng không lay chuyển | 3
-TRANQUIL | Thanh bình êm đềm tĩnh lặng | 2
+TRANQUIL | Tính từ tả khung cảnh lặng như tờ, không một tiếng động | 2
 VIGOROUS | Cường tráng sung sức khỏe mạnh | 2
 VIRTUE | Đức hạnh phẩm chất tốt đẹp | 2
 GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi | 1

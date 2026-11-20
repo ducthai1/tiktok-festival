@@ -1,18 +1,18 @@
 # Tiếng Anh · Cảm xúc, tính cách
 CHEERFUL | Tính từ vui tươi, rạng rỡ, luôn nở nụ cười yêu đời | 1
 SINCERE | Tính từ chân thành, thật lòng không chút dối gian | 2
-MODEST | Tính từ khiêm tốn, không thích khoe khoang bản thân | 2
+MODEST | Tính từ tả người giỏi mà không khoe, cũng dùng cho mức vừa phải | 2
 AMBITIOUS | Tính từ có hoài bão lớn, tham vọng vươn lên đỉnh cao | 2
 FRUSTRATED | Cảm giác bực bội, bất lực vì việc không theo ý muốn | 2
 MAGNANIMOUS | Đức tính đại lượng, cao thượng, tha thứ lỗi lầm cho kẻ khác | 3
 BENEVOLENT | Tấm lòng nhân từ, phúc hậu, bác ái thương yêu muôn loài | 3
-TRANQUILITY | Cảm giác tĩnh lặng, an yên thanh bình nơi tâm hồn | 3
+TRANQUILITY | Danh từ chỉ bầu không khí lặng lẽ yên ả của một nơi chốn | 3 | TRANQUILLITY
 SOLITUDE | Khoảng thời gian một mình thanh tịnh trong cô độc an nhiên | 3
 SCHADENFREUDE | Cảm giác hả hê, đắc ý bí mật trước nỗi bất hạnh của người khác | 3
 PULCHRITUDE | Vẻ đẹp hình thể diễm lệ, kiều diễm rạng ngời của người phụ nữ | 3
 GARRULOUS | Tính cách ba hoa, lắm lời huyên thuyên không dứt | 3
 GREEDY | Tham lam chỉ muốn giữ tất cả cho riêng mình | 2
-HUMBLE | Khiêm tốn nhã nhặn không khoe khoang | 2
+HUMBLE | Tính từ tả người biết mình còn kém, không tự cho là hơn ai | 2
 ARROGANT | Kiêu ngạo tự cao coi thường người khác | 2
 DISHONEST | Không trung thực lừa lọc gian manh | 2
 COURAGEOUS | Dũng cảm can trường đối mặt hiểm nguy | 2
@@ -21,7 +21,7 @@ IMPATIENT | Nóng vội thiếu kiên nhẫn không chờ đợi được | 2
 IMPENITENT | Không hối cải không ăn năn hối hận | 3
 SYMPATHETIC | Cảm thông đồng cảm với nỗi đau của người khác | 2
 AGGRESSIVE | Hung hăng hiếu chiến hay gây sự | 2
-COMPASSION | Lòng trắc ẩn | 2
+COMPASSION | Danh từ chỉ lòng thương xót muốn ra tay giúp người đang khổ | 2
 PERSEVERANCE | Sự kiên trì bền bỉ | 2 | PERSISTENCE
 DIPLOMATIC | Khéo léo, ngoại giao | 2 | TACTFUL
 ASSERTIVE | Quyết đoán (tự tin bày tỏ) | 2
@@ -33,7 +33,7 @@ CREATIVE | Sáng tạo (tính từ) | 1
 FRANK | Thẳng thắn | 2 | STRAIGHTFORWARD
 LOYAL | Trung thành | 1
 AWKWARD | Vụng về, ngượng ngùng | 2
-TIMID | Rụt rè | 2
+TIMID | Tính từ tả người nhát, nói năng khẽ khàng, dễ giật mình | 2
 DISCIPLINE | Tính kỷ luật | 2 | SELF-DISCIPLINE
 GRATITUDE | Lòng biết ơn | 2 | THANKFULNESS
 MINDFULNESS | Chánh niệm (sống tỉnh thức) | 2

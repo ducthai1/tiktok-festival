@@ -103,16 +103,16 @@ TOOTHACHE | Cơn đau răng nhức buốt phải đi nha sĩ | 2
 EMOTION | Cảm xúc tâm lý | 1
 CONFIDENCE | Sự tự tin, lòng tin | 2
 ENTHUSIASM | Sự nhiệt huyết, hào hứng | 3
-EXHAUSTED | Kiệt sức, mệt mỏi lả | 2
+EXHAUSTED | Tính từ tả người mệt rã rời, không nhấc nổi chân tay | 2
 PESSIMISTIC | Bi quan tiêu cực | 3
 RECOVERY | Sự hồi phục sức khỏe | 2
 WELLNESS | Sức khỏe toàn diện | 2
 EYELASH | Lông mi mắt | 2
 LUNGS | Cặp lá phổi hít thở | 2
 HOSPITALIZATION | Việc nhập viện điều trị | 3 | HOSPITALISATION
-DIAGNOSTIC | Việc chẩn đoán bệnh | 3
+DIAGNOSTIC | Tính từ chỉ thứ dùng để tìm ra bệnh, như xét nghiệm hay máy chiếu | 3
 PREVENTION | Việc phòng ngừa bệnh tật | 2
-EXHAUSTION | Sự kiệt sức, lả đi | 3
+EXHAUSTION | Danh từ chỉ tình trạng cạn sạch sức lực sau khi gắng quá sức | 3
 SATISFACTION | Sự hài lòng thỏa mãn | 2
 FRUSTRATION | Sự bực bội, bức bối | 3
 NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ | 3
