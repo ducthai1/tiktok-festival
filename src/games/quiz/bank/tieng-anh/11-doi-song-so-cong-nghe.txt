@@ -11,7 +11,7 @@ UNINSTALL | Việc gỡ bỏ một ứng dụng ra khỏi máy | 1
 DIGITAL FOOTPRINT | Toàn bộ dấu vết một người để lại trên mạng, xoá cũng khó sạch | 3
 CYBERBULLYING | Việc hùa nhau chửi bới làm nhục ai đó trên mạng | 2
 E-COMMERCE | Việc mua bán hàng hoá qua mạng, như Shopee hay Lazada | 2 | ECOMMERCE
-DIGITAL WALLET | Thứ app giữ tiền trong điện thoại để quét mã trả tiền | 2
+DIGITAL WALLET | Chỗ trong điện thoại lưu sẵn thẻ ngân hàng, chạm máy là trả xong | 2
 QR CODE | Ô vuông đen trắng lấm chấm, giơ máy lên quét là ra link hoặc chuyển tiền | 1
 FACIAL RECOGNITION | Công nghệ nhìn mặt là mở khoá được máy | 2 | FACE RECOGNITION
 CONTENT CREATOR | Người làm nghề sản xuất video và bài đăng để nuôi kênh | 1

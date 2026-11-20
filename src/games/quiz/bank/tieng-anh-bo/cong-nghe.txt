@@ -174,9 +174,9 @@ CRASH | Bị sập, bị treo (ứng dụng) | 2 | HANG
 DIGITAL | Kỹ thuật số | 2
 INVENT | Phát minh (động từ) | 2 | CREATE
 SATELLITE | Vệ tinh | 2
-E-WALLET | Ví điện tử viết tắt có gạch nối ở đầu | 2 | EWALLET
+E-WALLET | Ứng dụng giữ tiền trong máy, quét mã là trả được, như MoMo | 2 | EWALLET
 SPAM | Thư rác | 2 | JUNK MAIL, JUNK
-SCAM | Lừa đảo qua mạng | 2 | FRAUD
+SCAM | Trò lừa lấy tiền của người khác bằng chiêu dụ dỗ | 2 | FRAUD
 FREE TRIAL | Dùng thử miễn phí | 2
 VERSION | Phiên bản | 2
 FEATURE | Một tính năng cụ thể mà phần mềm cung cấp cho người dùng | 2
@@ -238,7 +238,7 @@ INTERNET OF THINGS | Mạng lưới kết nối vạn vật qua đường truy�
 NEURAL NETWORK | Mạng nơ-ron nhân tạo | 3
 QUANTUM COMPUTING | Điện toán lượng tử | 3
 VULNERABILITY | Lỗ hổng bảo mật | 3
-DATACENTER | Trung tâm dữ liệu | 2
+DATACENTER | Toà nhà chứa hàng nghìn máy chủ chạy suốt ngày đêm | 2 | DATA CENTER, DATA CENTRE
 REDUNDANCY | Sự dự phòng dữ liệu | 3
 SCALABILITY | Khả năng mở rộng hệ thống | 3
 THROUGHPUT | Băng thông thực tế, thông lượng | 3
@@ -259,8 +259,8 @@ DEPRECATED | Đã lỗi thời, không khuyến khích dùng | 3
 BACKWARD COMPATIBILITY | Tính tương thích ngược | 3
 IMMUTABLE | Không thể thay đổi | 3
 SERIALIZATION | Việc tuần tự hóa dữ liệu | 3 | SERIALISATION
-HYPERLINK | Tên đầy đủ mang tính kỹ thuật của đường dẫn bấm được | 1
-PHISHING | Tấn công lừa đảo qua mạng | 2
+HYPERLINK | Đoạn chữ xanh có gạch chân, bấm vào là nhảy sang trang khác | 1
+PHISHING | Trò giả làm ngân hàng gửi link dụ người ta khai mật khẩu | 2
 RANSOMWARE | Mã độc tống tiền | 3
 SPYWARE | Phần mềm gián điệp | 2
 ADWARE | Phần mềm quảng cáo độc hại | 2
