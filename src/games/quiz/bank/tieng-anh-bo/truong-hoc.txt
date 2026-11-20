@@ -54,12 +54,12 @@ LIBRARY CARD | Thẻ thư viện | 1
 STUDENT ID | Thẻ sinh viên | 1 | STUDENT CARD
 SCHOOLYARD | Sân trường | 1
 JOB SEEKER | Người tìm việc | 2 | JOB HUNTER
-REMOTE WORK | Cách nói thông dụng nhất về việc làm ở nhà thay vì lên công ty | 2 | WORK FROM HOME, WFH
+REMOTE WORK | Kiểu làm việc không cần tới văn phòng, ngồi đâu có mạng là làm | 2 | WORK FROM HOME, WFH
 SIDE HUSTLE | Nghề tay trái (việc làm thêm) | 3 | SIDE JOB
 PROBATION PERIOD | Khoảng thời gian thử việc ghi rõ trong hợp đồng lao động | 2
 DAY OFF | Ngày nghỉ | 1
 PAYDAY | Ngày lĩnh lương | 1 | PAY DAY
-RAISE | Sự tăng lương | 2 | PAY RISE, SALARY INCREASE
+RAISE | Việc sếp nâng mức lương lên cho nhân viên | 2 | PAY RISE, PAY RAISE, SALARY INCREASE
 BREAK ROOM | Phòng nghỉ giải lao | 2
 NAME CARD | Danh thiếp | 1 | BUSINESS CARD
 TEAM LEADER | Trưởng nhóm | 1 | TEAM LEAD
@@ -125,7 +125,7 @@ HAIRDRESSER | Thợ làm tóc cho nữ, gội nhuộm uốn sấy tạo kiểu |
 BOSS | Sếp | 1
 WORK | Động từ chỉ việc đi làm kiếm sống | 1
 BUSY | Bận rộn | 1
-CV | Viết tắt hai chữ cái của bản lý lịch xin việc | 2
+CV | Bản liệt kê học vấn và kinh nghiệm gửi kèm khi xin việc | 2 | CURRICULUM VITAE
 CAMERA | Máy ảnh | 1
 CALL | Bấm số gọi cho ai đó qua điện thoại | 1 | PHONE CALL
 WEBSITE | Trang web | 1 | WEB PAGE, SITE
@@ -164,7 +164,6 @@ WORKPLACE | Môi trường làm việc, nơi làm việc | 2
 PROFESSOR | Giáo sư đại học giảng dạy | 2
 TUTOR | Gia sư dạy kèm | 1
 LECTURER | Giảng viên đại học | 2
-CURRICULUM VITAE | Tên đầy đủ bằng tiếng Latin của bản lý lịch xin việc | 3
 TRAINEE | Người mới được công ty nhận vào để đào tạo nghề | 2
 SUPERVISOR | Người giám sát công việc | 2
 TRANSLATOR | Biên dịch viên | 2
@@ -214,7 +213,6 @@ MASTER | Bằng sau đại học học thêm một đến hai năm, cao hơn c�
 DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | PHD
 POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 3 | POSTDOC
 DISSERTATION | Luận án tiến sĩ dày, bảo vệ trước hội đồng khoa học | 3
-DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2 | DEFENCE
 ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2
 ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2
 EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3
@@ -223,7 +221,7 @@ ATTENDANCE | Sự có mặt điểm danh chuyên cần trên lớp | 1
 MENTOR | Người thầy cố vấn dày dặn kinh nghiệm dẫn dắt | 2
 PROTEGE | Học trò cưng đệ tử ruột được dìu dắt truyền nghề | 3
 APPRENTICE | Người học việc tập việc trong xưởng thủ công | 2
-VOCATIONAL | Trường dạy nghề hướng nghiệp thực hành | 3
+VOCATIONAL | Tính từ chỉ lối đào tạo cầm tay chỉ việc để ra làm nghề ngay | 3
 PROBATION | Giai đoạn thử thách, trong luật còn có nghĩa là án treo | 2
 RETIREMENT | Sự nghỉ hưu an hưởng tuổi già sau nhiều năm cống hiến | 2
 SEVERANCE | Khoản trợ cấp thôi việc chi trả khi chấm dứt hợp đồng | 3
@@ -233,7 +231,6 @@ REFERENCE | Thư của người cũ đứng ra xác nhận năng lực cho ứng
 COMMUTE | Quãng đường di chuyển hàng ngày từ nhà đến cơ quan làm việc | 2
 NIGHT SHIFT | Ca làm việc ca đêm từ tối đến rạng sáng hôm sau | 1
 DAY SHIFT | Ca làm việc ban ngày giờ hành chính | 1
-TELEWORK | Từ hành chính chỉ việc làm ngoài trụ sở cơ quan | 2
 FREELANCER | Người làm nghề tự do nhận việc theo từng dự án độc lập | 1
 CONSULTANT | Chuyên gia tư vấn chiến lược độc lập cho doanh nghiệp | 2
 BURNOUT | Tình trạng kiệt sức quá tải do làm việc căng thẳng kéo dài | 2
@@ -259,11 +256,10 @@ CHAIRPERSON | Chủ tọa người điều hành chính cuộc họp | 2
 QUORUM | Số lượng đại biểu tối thiểu cần có mặt để cuộc họp hợp lệ | 3
 BALLOT | Lá phiếu kín để bỏ phiếu bầu cử | 2
 VOTING | Việc bỏ phiếu biểu quyết lựa chọn phương án | 1
-TELECOMMUTING | Từ ghép với chuyện đi lại, nhấn vào việc thay chuyến đi làm bằng kết nối mạng | 3
+TELECOMMUTING | Việc thay chuyến đi làm hằng ngày bằng một đường truyền mạng | 3 | TELEWORK
 NOTICE PERIOD | Thời hạn báo trước trước khi chính thức nghỉ việc | 2
 PUNCH IN | Quẹt thẻ chấm công giờ vào làm việc | 2
 TIMESHEET | Bảng theo dõi chấm công số giờ làm việc trong tháng | 2
-BONUSES | Những khoản thưởng thêm ngoài lương, viết ở dạng số nhiều | 1
 PERK | Phúc lợi đặc quyền kèm theo công việc như xe đưa đón ăn trưa | 2
 PROVIDENT FUND | Quỹ hưu trí dự phòng được trích từ lương hàng tháng | 3
 AFFILIATE | Công ty liên kết hoặc đơn vị trực thuộc đối tác | 3
@@ -291,7 +287,7 @@ MOCK EXAM | Kỳ thi thử tổ chức trước kỳ thi thật | 2
 PASS MARK | Mức điểm tối thiểu để được coi là đỗ | 2
 ACADEMIC PROBATION | Diện bị cảnh cáo học vụ vì điểm quá thấp | 3
 CREDIT TRANSFER | Việc chuyển tín chỉ đã học sang trường khác | 3
-THESIS DEFENSE | Buổi đứng trước hội đồng trình bày luận văn | 3
+THESIS DEFENSE | Buổi đứng trước hội đồng trình bày và bảo vệ luận văn | 3 | THESIS DEFENCE
 PLAGIARISM CHECK | Việc rà soát bài viết xem có sao chép hay không | 3
 PEER ASSESSMENT | Việc sinh viên chấm bài lẫn nhau theo tiêu chí | 3
 LEARNING OUTCOME | Chuẩn đầu ra mà người học phải đạt sau môn học | 3
@@ -304,7 +300,7 @@ WITHDRAWAL | Việc rút khỏi một môn học giữa kỳ | 3
 ROLL BOOK | Sổ điểm danh giáo viên mang vào lớp | 2
 SEATING CHART | Sơ đồ chỗ ngồi của cả lớp | 2
 BACK ROW | Dãy bàn cuối lớp xa bảng nhất | 1
-TEACHERS DESK | Bàn giáo viên đặt trên bục | 1
+TEACHERS DESK | Bàn giáo viên đặt trên bục | 1 | TEACHER DESK
 PROJECTOR SCREEN | Tấm màn trắng kéo xuống để chiếu bài giảng | 2
 LAB COAT | Áo blouse trắng mặc khi làm thí nghiệm | 2
 SAFETY GOGGLES | Kính bảo hộ đeo khi làm thí nghiệm hoá | 2

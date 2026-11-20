@@ -113,7 +113,7 @@ CASH | Tiền mặt | 1
 CREDIT CARD | Thẻ tín dụng | 1
 PARTNER | Đối tác | 1
 EXPERIENCE | Kinh nghiệm | 1
-BONUS | Tiền thưởng | 1
+BONUS | Khoản tiền thưởng thêm ngoài lương cuối năm hoặc khi vượt chỉ tiêu | 1 | BONUSES
 PART-TIME | Bán thời gian | 1
 INTERN | Thực tập sinh | 1
 RENT | Tiền thuê (nhà, văn phòng) | 1 | RENTAL
@@ -130,7 +130,7 @@ INVESTOR | Nhà đầu tư | 2
 ACCOUNTANT | Kế toán viên | 2
 RECEPTIONIST | Nhân viên lễ tân | 2
 APPLICANT | Người vừa nộp hồ sơ xin việc, chưa qua vòng nào | 2
-RESUME | Bản tóm tắt kinh nghiệm làm việc 1-2 trang, cách người Mỹ gọi | 2
+RESUME | Bản tóm tắt kinh nghiệm làm việc gói gọn trong một hai trang giấy | 2
 HIRE | Tuyển dụng, thuê người | 2 | EMPLOY
 RESIGN | Xin nghỉ việc, từ chức | 2
 RETIRE | Nghỉ hưu | 2
