@@ -13,14 +13,14 @@
 #stage.theme-quiz #toasts { top: 892px !important; left: auto; right: 94px; width: 336px; max-height: 255px; overflow: hidden; z-index: 3; }
 /* thẻ chào: dải ngang gọn (ảnh trái, chữ phải) để bảng ĐẠI SỨ bên dưới luôn hiện */
 #stage.theme-quiz #hud > #welcome { top: 892px; left: 94px; width: 412px; height: 104px; min-height: 0; box-sizing: border-box; flex-direction: row;
-  justify-content: flex-start; align-items: center; text-align: left; padding: 10px 14px; gap: 12px; }
+  justify-content: flex-start; align-items: center; text-align: left; padding: 11px 18px; gap: 14px; }
 .deck-title { margin: 0 0 6px; padding: 0; font-size: 20px; font-weight: 800; color: #fff; text-align: center;
   text-shadow: 0 0 10px #7dff8a; letter-spacing: 1px; }
 #stage.theme-quiz #welcome .welcome-avatars { max-width: 150px; overflow: hidden; }
-#stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { width: 64px; height: 64px; border-width: 3px; }
+#stage.theme-quiz #welcome .welcome-avatars img, #stage.theme-quiz #welcome .welcome-avatars .ava { width: 60px; height: 60px; border-width: 3px; }
 #stage.theme-quiz #welcome .kicker { font-size: 14px; letter-spacing: 2px; }
-#stage.theme-quiz #welcome .name { font-size: 26px; -webkit-line-clamp: 1; }
-#stage.theme-quiz #welcome .line { margin-top: 2px; font-size: 16px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#stage.theme-quiz #welcome .name { font-size: 23px; -webkit-line-clamp: 1; }
+#stage.theme-quiz #welcome .line { margin-top: 2px; font-size: 15px; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 #stage.theme-quiz #welcome-ticker { left: 94px; top: 896px; transform: none; align-items: flex-start; width: 420px; }
 #stage.theme-quiz #thanks { left: 94px; bottom: 920px; width: 420px; }
 /* thẻ chào màu VÀNG, chữ nâu đậm (dễ đọc trên điện thoại). Trước đây tab đố vui không có màu viền chạy vòng (--line, stage-theme.css)
@@ -494,7 +494,7 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
    đứng ngang hàng với tên bên dưới (trước 14px nên lép hẳn so với tên 26px). */
 #stage.theme-quiz #welcome.fan .kicker { display: inline-block; font-size: 18px; line-height: 1.05;
   color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink); font-weight: 900; letter-spacing: 2.5px;
-  padding: 1px 10px; border-radius: 999px; margin-bottom: 0;
+  padding: 2px 13px 3px; border-radius: 999px; margin-bottom: 1px;
   background: linear-gradient(100deg, var(--fan-b2), transparent 85%);
   border: 1.5px solid var(--fan-ink);
   text-shadow: 0 0 14px var(--fan-glow), 0 1px 3px rgba(0, 0, 0, 0.9);
@@ -509,15 +509,15 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 /* Huy hiệu cấp — lấp khoảng trống bên phải. LÕI TỐI để chữ nổi bật, VIỀN kim loại sáng của bậc.
    (Bản trước để chữ đen trên mặt kim loại trung tính nên chìm nghỉm.) */
 #stage.theme-quiz #welcome .fan-badge { flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  width: 96px; height: 76px; margin-left: auto; border-radius: 16px; line-height: 1;
+  width: 92px; height: 70px; margin-left: auto; border-radius: 15px; line-height: 1; padding: 3px 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.72)),
               linear-gradient(160deg, var(--fan-ink), var(--fan-mid) 50%, var(--fan-deep));
   border: 2px solid var(--fan-ink);
   box-shadow: 0 0 18px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 4px 10px rgba(0, 0, 0, 0.5); }
 #stage.theme-quiz #welcome .fan-badge[hidden] { display: none; }
-#stage.theme-quiz #welcome .fan-badge-top { font-size: 14px; font-weight: 900; letter-spacing: 4px;
+#stage.theme-quiz #welcome .fan-badge-top { font-size: 13px; font-weight: 900; letter-spacing: 3px;
   color: var(--fan-ink); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
-#stage.theme-quiz #welcome .fan-badge-num { font-size: 46px; font-weight: 900; color: #fff; margin-top: 2px;
+#stage.theme-quiz #welcome .fan-badge-num { font-size: 40px; font-weight: 900; color: #fff; margin-top: 1px;
   text-shadow: 0 0 16px var(--fan-glow), 0 2px 4px rgba(0, 0, 0, 0.9); }
 
 /* cấp 1 — ĐỒNG */
