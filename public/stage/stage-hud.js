@@ -375,9 +375,11 @@ export function createHud() {
       if (people.length > shown.length) avatars.push(el('div', 'ava more', `+${people.length - shown.length}`));
       root.querySelector('.welcome-avatars').replaceChildren(...avatars);
       // Cấp đã nằm ở huy hiệu bên phải rồi nên dòng trên không nhắc lại nữa, để chữ to và rõ.
+      // Thẻ Fan: nhãn ngắn gọn "FAN MEMBER", CSS đặt nó nằm ngay bên phải tên (cùng một hàng)
+      // nên tên được to lại mà thẻ vẫn vừa chiều cao.
       root.querySelector('.kicker').textContent = group
-        ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ' · CÓ FAN CLB' : ' MỚI'}`
-        : band ? '👑 FAN CỦA KÊNH' : '👋 CHÀO MỪNG';
+        ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ' · CÓ FAN MEMBER' : ' MỚI'}`
+        : band ? 'FAN MEMBER' : '👋 CHÀO MỪNG';
       root.querySelector('.name').textContent = group ? people.map((p) => p.nickname).join(' · ') : fx.nickname;
       root.querySelector('.line').textContent = line || 'vừa vào phòng!';
       root.hidden = false;

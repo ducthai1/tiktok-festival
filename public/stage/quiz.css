@@ -490,12 +490,20 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 #stage.theme-quiz #hud > #welcome.fan::before { padding: 3px;
   background: conic-gradient(from var(--spin), var(--fan-ink), var(--fan-mid), var(--fan-ink), var(--fan-mid), var(--fan-ink));
   animation: spin 5s linear infinite; }
-/* "FAN CỦA KÊNH" là danh hiệu, không phải chú thích — cho nó thành NHÃN có khung, to và sáng,
-   đứng ngang hàng với tên bên dưới (trước 14px nên lép hẳn so với tên 26px). */
-#stage.theme-quiz #welcome.fan .kicker { display: inline-block; font-size: 18px; line-height: 1.05;
-  color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink); font-weight: 900; letter-spacing: 2.5px;
-  padding: 2px 13px 3px; border-radius: 999px; margin-bottom: 1px;
-  background: linear-gradient(100deg, var(--fan-b2), transparent 85%);
+/* Danh hiệu nằm NGAY BÊN PHẢI TÊN (cùng một hàng) chứ không phải một dòng riêng phía trên:
+   vừa tận dụng chiều ngang còn trống, vừa trả lại chiều cao cho tên to lên.
+   Xếp lại bằng flex + order nên không phải đổi cấu trúc HTML (các tab khác vẫn dùng thẻ này). */
+#stage.theme-quiz #welcome.fan:not(.group) .welcome-text { display: flex; flex-wrap: wrap; align-items: center; column-gap: 10px; }
+/* Chặn bề ngang tên = cả hàng trừ chỗ của badge: tên dài thì cắt bằng "…" chứ KHÔNG đẩy
+   badge rớt xuống dòng dưới (flex ưu tiên xuống hàng hơn là co phần tử lại). */
+#stage.theme-quiz #welcome.fan:not(.group) .name { order: 1; font-size: 26px; flex: 0 1 auto;
+  min-width: 0; max-width: calc(100% - 134px); } /* 134 = badge 122 + khoảng hở 10 + dư 2 */
+#stage.theme-quiz #welcome.fan:not(.group) .kicker { order: 2; flex: none; }
+#stage.theme-quiz #welcome.fan:not(.group) .line { order: 3; flex-basis: 100%; }
+#stage.theme-quiz #welcome.fan .kicker { display: inline-block; font-size: 13px; line-height: 1.05; white-space: nowrap;
+  color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink); font-weight: 900; letter-spacing: 1px;
+  padding: 3px 10px 4px; border-radius: 999px; margin-bottom: 0;
+  background: linear-gradient(100deg, var(--fan-b2), transparent 90%);
   border: 1.5px solid var(--fan-ink);
   text-shadow: 0 0 14px var(--fan-glow), 0 1px 3px rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 12px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.25); }
