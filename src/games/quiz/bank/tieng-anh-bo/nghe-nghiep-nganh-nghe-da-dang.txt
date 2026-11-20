@@ -84,7 +84,7 @@ TAX COLLECTOR | Nhân viên thu thuế | 2
 BOOKKEEPER | Người ghi chép sổ sách thu chi hằng ngày của doanh nghiệp | 1
 OFFICE MANAGER | Quản lý văn phòng | 2
 PERSONAL ASSISTANT | Trợ lý cá nhân | 2
-CAREER COUNSELOR | Tư vấn viên sự nghiệp | 2
+CAREER COUNSELOR | Tư vấn viên sự nghiệp | 2 | CAREER COUNSELLOR
 THERAPIST | Nhà trị liệu tâm lý | 2
 YOUTH WORKER | Nhân viên công tác xã hội chuyên làm việc với thanh thiếu niên | 2
 FUNDRAISER | Người quyên góp tiền từ thiện | 2
@@ -124,8 +124,8 @@ FREIGHT FORWARDER | Nhân viên chuyển tiếp hàng | 2
 RIGGER | Thợ lắp dây cáp và giàn treo để nâng vật nặng | 2
 SHIPWRIGHT | Thợ xây tàu gỗ | 2
 OUTFITTER | Người cung cấp trang bị cho chuyến đi săn hoặc thám hiểm | 2
-HARBOR MASTER | Người điều phối tàu ra vào và neo đậu trong cảng | 2
-HARBOR PILOT | Hoa tiêu cảng | 2
+HARBOR MASTER | Người điều phối tàu ra vào và neo đậu trong cảng | 2 | HARBOUR MASTER
+HARBOR PILOT | Hoa tiêu cảng | 2 | HARBOUR PILOT
 COMMERCIAL DIVER | Thợ lặn chuyên nghiệp | 2
 UNDERWATER WELDER | Thợ hàn dưới nước | 2
 SALVAGE EXPERT | Chuyên gia trục vớt tàu đắm và hàng hoá chìm | 2

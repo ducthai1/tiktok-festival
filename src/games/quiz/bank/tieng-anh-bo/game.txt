@@ -269,7 +269,7 @@ ROLE QUEUE | Hàng chờ chọn vai trò trước | 2 | POSITION SELECTION
 VOICE CHAT | Giao tiếp bằng giọng nói | 2
 KILL CAM | Camera xem lại cách bạn chết | 2 | DEATH FOOTAGE
 SPECTATOR MODE | Chế độ xem trận không chơi | 2 | OBSERVER MODE
-CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện | 2 | PERSONALIZATION
+CUSTOMIZATION | Tuỳ chỉnh nhân vật giao diện | 2 | PERSONALIZATION, CUSTOMISATION
 COSMETICS | Vật phẩm trang trí không ảnh hưởng | 2 | SKINS
 BATTLE PASS | Thẻ hạng nhân vật trả tiền | 2
 HARDCORE MODE | Chế độ khó tối đa một lần | 2 | IRONMAN MODE
@@ -304,7 +304,7 @@ ARCADE TOKEN | Đồng xu nhựa bỏ vào máy game thùng | 2
 CHARACTER SELECT | Màn hình chọn nhân vật trước khi vào trận | 1
 MAIN MENU | Bảng chọn đầu tiên hiện ra khi mở trò chơi | 1
 CREDITS | Danh sách người làm game chạy ở cuối | 1
-DIALOGUE BOX | Khung chữ hiện lời thoại nhân vật | 2
+DIALOGUE BOX | Khung chữ hiện lời thoại nhân vật | 2 | DIALOG BOX
 SUBQUEST | Nhiệm vụ nhỏ không bắt buộc làm | 2
 MINI BOSS | Con trùm nhỏ giữa chặng, dễ hơn trùm cuối | 2
 FINAL BOSS | Kẻ địch mạnh nhất phải hạ để phá đảo | 1

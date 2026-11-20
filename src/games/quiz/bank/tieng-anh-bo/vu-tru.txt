@@ -365,7 +365,7 @@ SAMPLE RETURN | Mang mẫu vật về Trái Đất | 2
 FLYBY | Chuyến bay lướt qua một thiên thể để chụp ảnh rồi đi tiếp, không dừng lại | 2
 OBSERVATION DECK | Tầng quan sát trên tàu vũ trụ | 2
 CONTROL ROOM | Phòng điều khiển tàu vũ trụ | 1
-COMMAND CENTER | Trung tâm chỉ huy | 1
+COMMAND CENTER | Trung tâm chỉ huy | 1 | COMMAND CENTRE
 MISSION CONTROL | Trung tâm kiểm soát sứ mệnh | 1
 MODULE | Mô-đun riêng lẻ của tàu | 1
 BOOSTER | Tầng tên lửa phụ gắn thêm để đẩy mạnh lúc cất cánh rồi tách ra | 2

@@ -102,8 +102,8 @@ PET GROOMER | Người tắm và tỉa lông cho chó mèo | 1
 DOG WALKER | Người được thuê dắt chó đi dạo mỗi ngày | 1
 BABYSITTER | Người trông trẻ vài giờ khi bố mẹ đi vắng | 1
 HOUSE SITTER | Người tới ở trông nhà hộ khi chủ đi vắng dài ngày | 2
-TUTOR CENTER | Trung tâm dạy kèm ngoài giờ cho học sinh | 1
-CALL CENTER AGENT | Nhân viên đeo tai nghe trả lời điện thoại khách hàng | 1
+TUTOR CENTER | Trung tâm dạy kèm ngoài giờ cho học sinh | 1 | TUTOR CENTRE
+CALL CENTER AGENT | Nhân viên đeo tai nghe trả lời điện thoại khách hàng | 1 | CALL CENTRE AGENT
 SURVEY TAKER | Người cầm bảng hỏi đi phỏng vấn lấy ý kiến | 1
 TICKET INSPECTOR | Người lên tàu kiểm tra vé của hành khách | 2
 QUALITY INSPECTOR | Người kiểm tra hàng trước khi cho xuất xưởng | 3

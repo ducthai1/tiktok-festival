@@ -357,7 +357,7 @@ IMPROVISATION | Việc diễn ứng biến không theo kịch bản | 3
 OUTTAKE | Cảnh quay bị cắt không dùng trong bản chiếu | 3
 DIRECTORS CUT | Bản dựng theo đúng ý đạo diễn, thường dài hơn | 3
 POST PRODUCTION | Giai đoạn dựng và chỉnh sửa sau khi quay xong | 3
-COLOR GRADING | Việc chỉnh màu cho cả bộ phim đồng nhất | 3
+COLOR GRADING | Việc chỉnh màu cho cả bộ phim đồng nhất | 3 | COLOUR GRADING
 FOLEY | Việc tạo tiếng động bằng đạo cụ trong phòng thu | 3
 SOUND MIXING | Việc trộn lời thoại, nhạc và tiếng động thành một | 3
 GREEN SCREEN | Phông xanh dùng thay nền bằng kỹ xảo | 2

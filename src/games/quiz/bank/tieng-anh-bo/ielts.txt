@@ -309,7 +309,7 @@ OMNIPRESENT | Hiện diện ở khắp muôn nơi bao trùm không gian | 3
 TRANSIENT | Tạm thời ngắn ngủi thoáng qua rồi biến mất | 3
 PERPETUAL | Vĩnh viễn không bao giờ ngừng lặp đi lặp lại | 3
 EVERLASTING | Bền lâu mãi mãi trường tồn cùng thời gian | 2
-AMBIGUITY | Sự mơ hồ đa nghĩa không rõ ràng | 3
+AMBIGUITY | Danh từ chỉ chỗ tối nghĩa trong câu chữ, hiểu kiểu nào cũng được | 3
 UNEQUIVOCAL | Rõ ràng dứt khoát không thể hiểu lầm | 3
 INDISPENSABLE | Không thể thiếu được, đóng vai trò sống còn | 3
 SUPERFLUOUS | Thừa thãi không cần thiết vượt mức đòi hỏi | 3
@@ -351,7 +351,7 @@ PUBLIC TRANSPORT | Xe buýt tàu điện chở chung nhiều người | 1
 TRAFFIC | Dòng xe cộ đi lại trên đường | 1
 RECYCLING | Việc gom rác đem tái chế thành đồ mới | 1
 READING | Việc đọc sách báo để mở mang hiểu biết | 1
-TRAVELLING | Việc đi đây đi đó tới những nơi mới | 1
+TRAVELLING | Việc đi đây đi đó tới những nơi mới | 1 | TRAVELING
 LANGUAGE | Hệ thống tiếng nói và chữ viết của một dân tộc | 1
 EXAM PRESSURE | Áp lực nặng nề trước mỗi kỳ thi | 1
 HOMEWORK LOAD | Lượng bài tập về nhà phải làm mỗi tối | 1
@@ -417,11 +417,11 @@ HOMELESSNESS | Tình trạng người không có chỗ ở phải ngủ ngoài �
 SOCIAL MOBILITY | Khả năng vươn lên tầng lớp cao hơn trong xã hội | 3
 EQUAL OPPORTUNITY | Việc ai cũng có cơ hội như nhau không phân biệt | 2
 GENDER GAP | Khoảng cách giữa nam và nữ về lương hoặc cơ hội | 3
-AGEING POPULATION | Tình trạng người già chiếm tỷ lệ ngày càng lớn | 3
+AGEING POPULATION | Tình trạng người già chiếm tỷ lệ ngày càng lớn | 3 | AGING POPULATION
 BIRTH RATE | Số trẻ sinh ra tính trên một nghìn dân | 2
 LIFE EXPECTANCY | Số năm trung bình một người được sống | 2
 RURAL EXODUS | Làn sóng người bỏ quê lên thành phố | 3
-COMMUNITY CENTRE | Nơi người dân trong khu tụ họp sinh hoạt chung | 2
+COMMUNITY CENTRE | Nơi người dân trong khu tụ họp sinh hoạt chung | 2 | COMMUNITY CENTER
 VOLUNTEERING | Việc bỏ thời gian làm không công giúp cộng đồng | 2
 CHARITABLE DONATION | Khoản tiền quyên góp cho tổ chức từ thiện | 2
 CROWDFUNDING | Việc gọi vốn từ nhiều người qua mạng | 2

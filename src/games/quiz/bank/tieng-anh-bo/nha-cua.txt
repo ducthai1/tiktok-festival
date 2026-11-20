@@ -75,7 +75,7 @@ STEEL | Thép | 3
 CERAMIC | Gốm sứ | 3 | PORCELAIN, CHINA
 ALUMINUM | Nhôm | 3 | ALUMINIUM
 BOOKCASE | Tủ đứng nhiều tầng chuyên để chứa sách | 1
-JEWELLERY | Đồ trang sức nói chung, viết theo kiểu Anh | 2
+JEWELLERY | Đồ trang sức nói chung, viết theo kiểu Anh | 2 | JEWELRY
 DISHWASHER | Máy rửa bát | 2
 TABLECLOTH | Khăn trải bàn | 2
 PILLOWCASE | Vỏ gối | 2

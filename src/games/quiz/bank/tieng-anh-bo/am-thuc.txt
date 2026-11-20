@@ -279,7 +279,7 @@ BEVERAGE | Đồ uống, thức uống nói chung | 3
 INGREDIENT | Nguyên liệu nấu ăn | 2
 WATERMELON | Dưa hấu đỏ | 1
 ASPARAGUS | Măng tây | 3
-LASAGNA | Mì đút lò xếp lớp Ý | 2
+LASAGNA | Mì đút lò xếp lớp Ý | 2 | LASAGNE
 MACARONI | Mì ống ngắn cong rỗng ruột, hay trộn phô mai | 2
 WAFFLE | Bánh tổ ong nướng nóng | 2
 BAGUETTE | Bánh mì Pháp dài | 2

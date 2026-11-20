@@ -27,7 +27,7 @@ BRIDESMAID | Phù dâu, người phụ nữ trong đám cưới | 3
 FIANCE | Chồng tương lai, hôn phu | 3
 HEARTTHROB | Người khiến trái tim rung động | 3
 NEWLYWED | Cặp vừa mới cưới, vợ chồng trẻ | 3
-MAID OF HONOR | Phù dâu danh dự | 3
+MAID OF HONOR | Phù dâu danh dự | 3 | MAID OF HONOUR
 BEST MAN | Phù rể, người đàn ông giúp chú rể | 3
 SERENADE | Hát tặng ai đó để bày tỏ tình cảm | 3
 SWOON | Ngất xỉu vì vui sướng hoặc yêu | 3
@@ -206,7 +206,7 @@ MAGNETISM | Sức hấp dẫn | 2
 FASCINATION | Sự mê hoặc | 2
 ENCHANTING | Quyến rũ, lôi cuốn | 2
 CAPTIVATING | Lôi cuốn, bắt mắt | 2
-ARDOR | Sự say đắm, nhiệt tình | 3
+ARDOR | Sự say đắm, nhiệt tình | 3 | ARDOUR
 BETROTHAL | Sự đúc kết hôn | 3
 CHAPERONE | Người đi kèm theo để giám sát | 3
 WOOING | Hành động tán tỉnh, chinh phục | 3

@@ -155,7 +155,7 @@ INNOVATE | Đổi mới sáng tạo | 3
 MAXIMIZE | Tối đa hóa | 2
 MINIMIZE | Tối thiểu hóa, giảm bớt | 2
 NAVIGATE | Định hướng, điều hướng | 3
-PRIORITIZE | Ưu tiên hàng đầu | 3
+PRIORITIZE | Ưu tiên hàng đầu | 3 | PRIORITISE
 SIMPLIFY | Đơn giản hóa vấn đề | 2
 TRANSFORM | Biến đổi hoàn toàn | 3
 UNDERTAKE | Đảm nhận nhiệm vụ | 3

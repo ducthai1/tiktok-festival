@@ -241,7 +241,7 @@ GO DOWN IN HISTORY | Đi vào lịch sử lưu danh muôn thuở | 1
 GOLDEN OPPORTUNITY | Cơ hội vàng cơ hội ngàn năm có một | 1
 GREASE SOMEONE S PALM | Đút lót hối lộ tiền dưới gầm bàn | 3
 GREEN LIGHT | Bật đèn xanh cho phép triển khai tiến hành | 1
-GREY AREA | Vùng xám ranh giới mập mờ khó phân xử | 2
+GREY AREA | Vùng xám ranh giới mập mờ khó phân xử | 2 | GRAY AREA
 HALF BAKED | Ý tưởng non nớt chưa chín chắn thiếu thực tế | 3
 HANDS DOWN | Chắc chắn không cần bàn cãi thắng dễ dàng | 2
 HARD NUT TO CRACK | Vấn đề hóc búa người khó nhằn | 2

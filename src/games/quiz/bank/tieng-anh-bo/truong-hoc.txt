@@ -322,7 +322,7 @@ STUDY HALL | Phòng tự học yên tĩnh giữa các tiết | 2
 TUTORIAL SESSION | Buổi học phụ đạo theo nhóm nhỏ | 3
 REMEDIAL CLASS | Lớp học bù dành cho học sinh yếu | 3
 GIFTED CLASS | Lớp chuyên dành cho học sinh giỏi | 3
-SCHOOL COUNSELOR | Người tư vấn tâm lý và hướng nghiệp cho học sinh | 2
+SCHOOL COUNSELOR | Người tư vấn tâm lý và hướng nghiệp cho học sinh | 2 | SCHOOL COUNSELLOR
 CAREER DAY | Ngày mời người đi làm tới kể về nghề của họ | 2
 SCHOOL TRIP | Chuyến đi chơi cả lớp do trường tổ chức | 1
 PERMISSION SLIP | Giấy xin phép phụ huynh ký cho con đi dã ngoại | 2
@@ -343,7 +343,7 @@ PEER PRESSURE | Áp lực làm theo bạn bè cho giống số đông | 2
 SCHOOL RULES | Bản nội quy học sinh phải tuân theo | 1
 MERIT POINT | Điểm thưởng cộng cho hành vi tốt | 2
 DEMERIT | Điểm trừ ghi lại khi vi phạm nội quy | 3
-HONOR ROLL | Bảng danh dự ghi tên học sinh xuất sắc | 3
+HONOR ROLL | Bảng danh dự ghi tên học sinh xuất sắc | 3 | HONOUR ROLL
 VALEDICTORY SPEECH | Bài phát biểu của thủ khoa trong lễ tốt nghiệp | 3
 CAP AND GOWN | Bộ mũ và áo choàng mặc ngày tốt nghiệp | 2
 DIPLOMA FRAME | Khung treo tấm bằng tốt nghiệp lên tường | 2
@@ -400,7 +400,7 @@ ATTENDANCE RATE | Tỷ lệ đi học đầy đủ của một học sinh | 2
 TRUANCY | Việc trốn học không có lý do | 3
 EXPEL | Việc đuổi học sinh khỏi trường vĩnh viễn | 3
 APOLOGY LETTER | Lá thư kiểm điểm học sinh viết khi mắc lỗi | 2
-BEHAVIOUR RECORD | Sổ ghi lại thái độ và hành vi của học sinh | 3
+BEHAVIOUR RECORD | Sổ ghi lại thái độ và hành vi của học sinh | 3 | BEHAVIOR RECORD
 GROUP PRESENTATION | Bài thuyết trình cả nhóm cùng đứng trình bày | 1
 POSTER PROJECT | Bài tập làm áp phích dán tường | 1
 SCIENCE FAIR | Hội chợ trưng bày các thí nghiệm học sinh làm | 2

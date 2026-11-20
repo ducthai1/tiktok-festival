@@ -243,7 +243,7 @@ REDUNDANCY | Sự dự phòng dữ liệu | 3
 SCALABILITY | Khả năng mở rộng hệ thống | 3
 THROUGHPUT | Băng thông thực tế, thông lượng | 3
 PROTOCOL | Giao thức kết nối | 2
-VIRTUALIZATION | Công nghệ ảo hóa | 3
+VIRTUALIZATION | Công nghệ ảo hóa | 3 | VIRTUALISATION
 MAINFRAME | Máy tính cỡ lớn siêu mạnh | 3
 MIDDLEWARE | Phần mềm trung gian | 3
 ARCHITECTURE | Kiến trúc hệ thống | 2
@@ -267,7 +267,7 @@ ADWARE | Phần mềm quảng cáo độc hại | 2
 BOTNET | Mạng máy tính ma | 3
 CLOUD NATIVE | Công nghệ dựa trên đám mây | 3
 MICROSERVICES | Kiểu kiến trúc chia hệ thống thành nhiều dịch vụ nhỏ, dạng số nhiều | 3
-CONTAINERIZATION | Việc đóng gói ứng dụng vào những gói chạy độc lập | 3
+CONTAINERIZATION | Việc đóng gói ứng dụng vào những gói chạy độc lập | 3 | CONTAINERISATION
 ORCHESTRATION | Sự điều phối hệ thống | 3
 DEVOPS | Quy trình phát triển và vận hành | 3
 AGILE | Quy trình phát triển linh hoạt | 2
@@ -409,7 +409,7 @@ KVM SWITCH | Hộp cho một bộ phím chuột điều khiển nhiều máy | 3
 KEYCAP | Nút nhựa rời lắp trên từng phím bàn phím cơ | 3
 DPI SETTING | Mức chỉnh độ nhạy của chuột | 3
 REFRESH RATE | Số lần màn hình làm mới hình mỗi giây | 2
-COLOR CALIBRATION | Việc chỉnh cho màu màn hình hiển thị chuẩn | 3
+COLOR CALIBRATION | Việc chỉnh cho màu màn hình hiển thị chuẩn | 3 | COLOUR CALIBRATION
 ASPECT RATIO | Tỷ lệ chiều ngang so với chiều dọc của hình | 2
 THUMBNAIL | Ảnh nhỏ xem trước của video hoặc tệp | 1
 WATERMARK | Dấu mờ in chìm lên ảnh để đánh dấu bản quyền | 2

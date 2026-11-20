@@ -93,7 +93,7 @@ LIVE BROADCAST | Truyền hình trực tiếp | 2 | LIVE STREAM
 TABLE | Bảng xếp hạng các đội theo điểm số | 2 | LEAGUE TABLE, RANKING
 TOP SCORER | Cầu thủ ghi nhiều bàn nhất cả giải | 2
 VAR | Công nghệ video hỗ trợ trọng tài | 2
-DEFENCE | Việc phòng ngự, viết theo kiểu Anh | 2 | DEFENDING
+DEFENCE | Việc phòng ngự, viết theo kiểu Anh | 2 | DEFENDING, DEFENSE
 CHANCE | Cơ hội ghi bàn | 2
 RIVAL | Đối thủ kình địch | 2 | RIVALS
 OPPONENT | Đội đối thủ | 2
@@ -125,7 +125,7 @@ BICYCLE KICK | Cú ngả người đạp hai chân như đạp xe để móc bó
 NUTMEG | Xâu kim (đi bóng qua háng) | 3
 COMEBACK | Màn lội ngược dòng | 3 | TURNAROUND, COME BACK
 UNDERDOG | Đội cửa dưới | 3
-FAVOURITE | Đội cửa trên (được đánh giá cao) | 3 | FAVOURITES, FAVORITES
+FAVOURITE | Đội cửa trên (được đánh giá cao) | 3 | FAVOURITES, FAVORITES, FAVORITE
 DIVE | Động từ chỉ việc ngã vờ để kiếm quả phạt | 3 | SIMULATION, FLOP
 SUSPENSION | Án treo giò | 3 | SUSPENDED
 RELEGATION | Xuống hạng | 3 | RELEGATED
@@ -160,7 +160,7 @@ BALLON D OR | Giải thưởng Quả bóng vàng | 2
 PLAYMAKER | Người dẫn dắt lối chơi | 2
 GOAL LINE | Đường biên ngang khung thành | 2
 SIX YARD BOX | Vòng cấm nhỏ 5m50 | 2
-CENTRE CIRCLE | Vòng tròn giữa sân | 1
+CENTRE CIRCLE | Vòng tròn giữa sân | 1 | CENTER CIRCLE
 FULL TIME | Hết giờ thi đấu chính thức | 1
 INJURY TIME | Phút bù giờ, cách gọi nhấn vào thời gian mất cho chấn thương | 1
 TRANSFER WINDOW | Thị trường chuyển nhượng | 3
@@ -212,7 +212,7 @@ SCOUT | Người đi các sân nhỏ tìm cầu thủ tiềm năng | 3
 STOMPING | Hành vi giẫm đạp thô bạo vào chân đối phương nhận thẻ phạt | 3
 DIVING | Hành vi ăn vạ bị trọng tài rút thẻ phạt | 2 | SIMULATION
 FLAG | Lá cờ hiệu màu vàng cam của trọng tài biên | 1
-CENTER SPOT | Điểm tròn giao bóng chính giữa tâm sân bóng | 2
+CENTER SPOT | Điểm tròn giao bóng chính giữa tâm sân bóng | 2 | CENTRE SPOT
 CROSSBAR SHOT | Cú sút dội xà ngang nảy ra đầy tiếc nuối | 3
 WOODWORK SHOT | Cú sút đập trúng cột dọc khung thành | 3
 CURLER | Cú sút cứa lòng hình quả chuối bóng xoáy cong vào góc xa | 3
@@ -307,7 +307,7 @@ WEAK FOOT | Chân không thuận của cầu thủ | 2
 STRONG FOOT | Chân thuận hay dùng để sút | 1
 LEFT WINGER | Cầu thủ chạy cánh trái | 1
 RIGHT WINGER | Cầu thủ chạy cánh phải | 1
-CENTRE BACK | Trung vệ chơi giữa hàng phòng ngự | 1
+CENTRE BACK | Trung vệ chơi giữa hàng phòng ngự | 1 | CENTER BACK
 FULL BACK | Hậu vệ biên chơi sát đường biên dọc | 2
 HOLDING MIDFIELDER | Tiền vệ trụ đứng chắn trước hàng thủ | 3
 ATTACKING MIDFIELDER | Tiền vệ công chơi ngay sau tiền đạo | 2
