@@ -490,17 +490,26 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 #stage.theme-quiz #hud > #welcome.fan::before { padding: 3px;
   background: conic-gradient(from var(--spin), var(--fan-ink), var(--fan-mid), var(--fan-ink), var(--fan-mid), var(--fan-ink));
   animation: spin 5s linear infinite; }
-#stage.theme-quiz #welcome.fan .kicker { color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink);
-  text-shadow: 0 0 12px var(--fan-glow), 0 1px 2px rgba(0, 0, 0, 0.8); letter-spacing: 2px; font-weight: 900; }
+/* "FAN CỦA KÊNH" là danh hiệu, không phải chú thích — cho nó thành NHÃN có khung, to và sáng,
+   đứng ngang hàng với tên bên dưới (trước 14px nên lép hẳn so với tên 26px). */
+#stage.theme-quiz #welcome.fan .kicker { display: inline-block; font-size: 18px; line-height: 1.05;
+  color: var(--fan-ink); -webkit-text-fill-color: var(--fan-ink); font-weight: 900; letter-spacing: 2.5px;
+  padding: 1px 10px; border-radius: 999px; margin-bottom: 0;
+  background: linear-gradient(100deg, var(--fan-b2), transparent 85%);
+  border: 1.5px solid var(--fan-ink);
+  text-shadow: 0 0 14px var(--fan-glow), 0 1px 3px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 12px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.25); }
 #stage.theme-quiz #welcome.fan .name { color: #fff; -webkit-text-fill-color: #fff; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); }
-#stage.theme-quiz #welcome.fan .line { color: rgba(255, 255, 255, 0.88); -webkit-text-fill-color: rgba(255, 255, 255, 0.88); }
+/* nhãn danh hiệu chiếm thêm chiều cao → bỏ khoảng hở của dòng dưới cho vừa đúng 100px thẻ */
+#stage.theme-quiz #welcome.fan .line { color: rgba(255, 255, 255, 0.88); -webkit-text-fill-color: rgba(255, 255, 255, 0.88);
+  margin-top: 0; }
 #stage.theme-quiz #welcome.fan .welcome-avatars img, #stage.theme-quiz #welcome.fan .welcome-avatars .ava {
   border-color: var(--fan-ink); box-shadow: 0 0 14px var(--fan-glow); }
 
 /* Huy hiệu cấp — lấp khoảng trống bên phải. LÕI TỐI để chữ nổi bật, VIỀN kim loại sáng của bậc.
    (Bản trước để chữ đen trên mặt kim loại trung tính nên chìm nghỉm.) */
 #stage.theme-quiz #welcome .fan-badge { flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  width: 96px; height: 80px; margin-left: auto; border-radius: 16px; line-height: 1;
+  width: 96px; height: 76px; margin-left: auto; border-radius: 16px; line-height: 1;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.72)),
               linear-gradient(160deg, var(--fan-ink), var(--fan-mid) 50%, var(--fan-deep));
   border: 2px solid var(--fan-ink);
