@@ -34,7 +34,7 @@ const clampRotateMinutes = (val) => {
   return Math.min(180, n);
 };
 
-export function createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts = () => undefined, sockets,
+export function createAdminCommandHandler({ hub, live, settings, updateSettings, updateGameAudio = () => {}, emitFx, pushState, getSampleGifts = () => undefined, sockets,
   getGiftCatalog = () => [], saveBackup = () => {}, getGiftCounts = () => ({}), rotateGiftsNow = () => {}, answersLogger = null,
   resetRotateTimer = () => {} }) {
   /** Món được tặng nhiều LƯỢT nhất buổi live này → tab 🎁 Quà hiện ra để chủ kênh thấy món nào đang hot. */
@@ -63,7 +63,35 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     targets: ORDER.map((to) => ({ to, icon: ENGLISH_TARGETS[to].icon, label: ENGLISH_TARGETS[to].label, kind: ENGLISH_TARGETS[to].kind,
       questions: defaultQuestionsFor(to) }))
   });
+  /**
+   * Quà có thể "bù" cho một người: quà mẫu + MỌI món đang gắn trên bảng quà tab tiếng Anh (kể cả ô Thường
+   * và các chủ đề) + quà thật phòng đã nhận. Trước đây chỉ có 21 quà mẫu nên không bù được những ô như
+   * ⚖️ Thường, 🏠 Nhà cửa… khi người xem tặng mà máy chủ lỡ mất.
+   */
+  const grantableGifts = () => {
+    const out = [];
+    const seen = new Set();
+    const add = (g, label) => {
+      const id = String(g?.id || '');
+      if (!id || seen.has(id) || !(Number(g.coins) >= 1)) return;
+      seen.add(id);
+      out.push({ id, name: String(g.name || '').slice(0, 40), coins: Number(g.coins), image: g.image || '', label: label || '' });
+    };
+    const rules = settings.englishGifts?.length ? settings.englishGifts : defaultEnglishRules();
+    for (const r of rules) {
+      const t = ENGLISH_TARGETS[r?.to];
+      if (t && r.gift) add(r.gift, `${t.icon} ${t.label}${r.enabled === false ? ' (đang tắt)' : ''}`);
+    }
+    for (const g of getSampleGifts() || []) add(g, 'quà mẫu');
+    for (const g of getGiftCatalog() || []) add(g, 'phòng đã nhận');
+    return out;
+  };
+
   const handlers = {
+    /** Danh sách quà để "bù quà" ở tab Điều khiển. */
+    grantGifts() {
+      return { gifts: grantableGifts() };
+    },
     englishGifts() {
       return englishGiftsView();
     },
@@ -132,6 +160,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     switch(msg) {
       hub.switchTo(String(msg.game));
+      // updateSettings cũng phát lại publicSettings() → âm thanh RIÊNG của game vừa chọn được áp ngay
       updateSettings({ activeGame: hub.activeId() });
       pushState(true);
       return { message: `Đã chuyển sang ${hub.list().find((g) => g.id === hub.activeId()).title}` };
@@ -153,7 +182,7 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     grant(msg) {
       const person = presentPeople(hub.snapshot().state).find((p) => p.id === String(msg.userId || ''));
       if (!person) throw new Error('Người này không còn trong game');
-      const gift = (getSampleGifts() || []).find((g) => g.id === String(msg.giftId || ''));
+      const gift = grantableGifts().find((g) => g.id === String(msg.giftId || ''));
       if (!gift) throw new Error('Quà không hợp lệ');
       const raw = {
         type: 'gift', id: `grant-${(testSeq += 1)}-${Date.now()}`,
@@ -175,10 +204,14 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
     },
     settings(msg) {
       const patch = {};
-      for (const key of ['tts', 'ttsWelcome', 'ttsEnglish', 'legend', 'sound', 'music']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
+      // Âm thanh đi vào bộ RIÊNG của game đang chạy (không đè game khác); còn lại là cài đặt chung.
+      const audio = {};
+      for (const key of ['sound', 'music']) if (typeof msg[key] === 'boolean') audio[key] = msg[key];
+      for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) audio[key] = Math.max(0, Math.min(1, msg[key]));
+      if (Object.keys(audio).length) updateGameAudio(audio);
+      for (const key of ['tts', 'ttsWelcome', 'ttsEnglish', 'legend']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
       if (isVoiceSetting(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice; // tên giọng hoặc "random"
       if (['', 'christmas', 'teacher'].includes(msg.season)) patch.season = msg.season; // chủ đề mùa: 🎄 Giáng sinh / 💐 20/11
-      for (const key of ['volume', 'musicVolume']) if (Number.isFinite(msg[key])) patch[key] = Math.max(0, Math.min(1, msg[key]));
       if (Number.isFinite(msg.welcomeTextAbove)) {
         patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));
         hub.setWelcomeThreshold(patch.welcomeTextAbove);
@@ -195,12 +228,18 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       pushState(true);
       return { message: 'Đã xoá dữ liệu phiên live trước — bắt đầu phiên mới' };
     },
+    // MỖI NÚT XOÁ CHỈ XOÁ ĐÚNG BẢNG CỦA NÓ. Trước đây nút này kéo theo cả điểm game, đại sứ share và
+    // danh sách đã chào — muốn xoá mỗi bảng kim cương thì mất sạch. Xoá tất cả đã có nút
+    // "Bắt đầu phiên live mới" (resetLive) rồi.
     resetSession() {
-      hub.resetSession();
-      // Cũng xoá luôn điểm số trong game hiện tại nếu đang ở game tính điểm
+      hub.resetBoard();
+      pushState(true);
+      return { message: 'Đã xoá bảng xếp hạng phiên (kim cương / like / chat)' };
+    },
+    resetScores() {
       try { hub.command(hub.snapshot().game, 'resetScores'); } catch {}
       pushState(true);
-      return { message: 'Đã xoá bảng xếp hạng phiên và điểm game' };
+      return { message: 'Đã xoá bảng điểm của game đang chạy' };
     },
     getAnswersLog(msg) {
       const max = Math.min(500, Math.max(10, Number(msg.limit) || 150));

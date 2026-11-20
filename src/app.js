@@ -13,6 +13,7 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createSessionLog } from './session-log.js';
+import { MAX_MB, cleanYoutubeUrl, fetchYoutubeAudio } from './music/youtube-music.js';
 import { createFollowerStore } from './live/follower-store.js';
 import { createFanClubStore } from './live/fanclub-store.js';
 import { createRoomTracker } from './live/room-tracker.js';
@@ -183,13 +184,30 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     fs.writeFileSync(path.join(dataDir, 'settings.json'), JSON.stringify(settings, null, 2));
     sockets.broadcast({ t: 'settings', settings: publicSettings() });
   };
+  // ÂM THANH RIÊNG TỪNG GAME. Trước đây chỉ có một bộ chung, nên chỉnh ở tab tiếng Anh là đè luôn
+  // cài đặt của Quán Bar / Sàn Nhảy. Nay mỗi game giữ bộ của mình trong settings.gameAudio[<game>];
+  // chưa chỉnh bao giờ thì rơi về bộ chung cũ (settings.sound/volume/music/musicVolume) nên không ai mất gì.
+  const AUDIO_KEYS = ['sound', 'volume', 'music', 'musicVolume'];
+  const audioFor = (game) => {
+    const base = { sound: settings.sound, volume: settings.volume, music: settings.music, musicVolume: settings.musicVolume };
+    const own = settings.gameAudio?.[game] || {};
+    for (const k of AUDIO_KEYS) if (own[k] !== undefined) base[k] = own[k];
+    return base;
+  };
   const publicSettings = () => ({
-    tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false, legend: settings.legend, sound: settings.sound, volume: settings.volume,
-    music: settings.music, musicVolume: settings.musicVolume,
+    tts: settings.tts, ttsWelcome: settings.ttsWelcome, ttsVoice: settings.ttsVoice, ttsEnglish: settings.ttsEnglish !== false,
+    legend: settings.legend, ...audioFor(hub.activeId()), audioGame: hub.activeId(),
     welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || '',
     obsAutoRefresh: settings.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true },
     musicGifts: settings.musicGifts || defaultMusicGifts()
   });
+  /** Chỉnh âm thanh ở trang điều khiển: ghi vào bộ RIÊNG của game đang chạy. */
+  const updateGameAudio = (patch) => {
+    const game = hub.activeId();
+    const gameAudio = { ...(settings.gameAudio || {}) };
+    gameAudio[game] = { ...audioFor(game), ...patch };
+    updateSettings({ gameAudio });
+  };
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
   };
@@ -358,7 +376,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   // tạo một lần, lúc có lệnh đầu tiên (cần `sockets` — tạo ngay bên dưới)
   let adminHandler = null;
   const handleAdmin = async (msg) => {
-    adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
+    adminHandler ??= createAdminCommandHandler({ hub, live, settings, updateSettings, updateGameAudio, emitFx, pushState, getSampleGifts: () => sampleGifts, sockets,
       getGiftCatalog: () => giftCatalog, saveBackup, getGiftCounts: () => giftCounts, rotateGiftsNow: runGiftRotation, answersLogger,
       resetRotateTimer: () => { rotateAt = Date.now() + rotateIntervalMs(); } });
     // nhật ký thao tác người vận hành (kết nối / ngắt / đổi game / lệnh…), không ghi token, không ghi từng lần bấm thử
@@ -453,6 +471,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     sockets.broadcast({ t: 'quizAnswerLog', entry }, { adminsOnly: true });
   });
 
+  const MUSIC_MAX_BYTES = MAX_MB * 1024 * 1024; // thừa cho một bài nhạc nền
+  let ytBusy = false; // một lượt tải YouTube tại một thời điểm — tránh hai lần tải ghi đè nhau
   const serveStatic = createStaticFileServer({ publicDir: PUBLIC_DIR, rootDir: ROOT_DIR });
   const tts = createTtsBridge({ dataDir });
   // giọng đọc chỉ bật ở server thật (main.js) — test không nạp model ~580 MB
@@ -476,29 +496,82 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     if (req.method === 'POST' && urlPath === '/api/music-upload') {
       const tok = req.headers['x-admin-token'] || '';
       if (!tokensEqual(adminToken, tok)) return reject(403, 'Forbidden');
-      const ct = req.headers['content-type'] || '';
-      const EXT_OK = /\.(mp3|ogg|wav|m4a|aac|flac)$/i;
-      const MIME_OK = /^audio\//i;
-      if (!MIME_OK.test(ct.split(';')[0].trim())) return reject(415, 'Chỉ chấp nhận file audio');
+      const EXT_OK = /\.(mp3|ogg|wav|m4a|aac|flac|opus|webm)$/i;
+      // Nhận theo ĐUÔI FILE, không theo Content-Type: trình duyệt đoán kiểu rất lung tung — .m4a có máy
+      // báo video/mp4, có máy báo application/octet-stream hoặc để trống → trước đây đều bị chặn 415.
       // lấy tên file từ header (mã hoá URI đẻ tránh ký tự tiếng Việt ngoài ISO-8859-1)
       let fnHeader = req.headers['x-filename'] || 'custom.mp3';
       try { fnHeader = decodeURIComponent(fnHeader); } catch {}
       const rawName = fnHeader.replace(/[^a-z0-9._\-]/gi, '_');
       const ext = (rawName.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
-      if (!EXT_OK.test(ext)) return reject(415, 'Định dạng không hỗ trợ (.mp3 .ogg .wav .m4a)');
+      if (!EXT_OK.test(ext)) return reject(415, 'Định dạng không hỗ trợ (nhận .mp3 .ogg .wav .m4a .aac .flac .opus .webm)');
       const musicDir = path.join(dataDir, 'music');
       fs.mkdirSync(musicDir, { recursive: true });
       // xóa file custom cũ
       try { for (const f of fs.readdirSync(musicDir)) if (/^custom\./i.test(f)) fs.unlinkSync(path.join(musicDir, f)); } catch { /**/ }
       const dest = path.join(musicDir, `custom${ext}`);
       const out = fs.createWriteStream(dest);
+      // Chặn file quá lớn: một bản .wav dài có thể cả GB, tải lên giữa buổi live là nghẽn luôn server.
+      // Trả lời 413 TRƯỚC rồi mới ngắt kết nối — ngắt trước thì trình duyệt không nhận được thông báo nào.
+      let got = 0;
+      let tooBig = false;
+      const done = new Promise((resolve) => {
+        req.on('data', (chunk) => {
+          got += chunk.length;
+          if (got <= MUSIC_MAX_BYTES || tooBig) return;
+          tooBig = true;
+          req.unpipe(out);
+          out.destroy();
+          resolve('big');
+        });
+        out.on('finish', () => resolve('ok'));
+        out.on('error', () => resolve('err'));
+        req.on('error', () => resolve('err'));
+      });
       req.pipe(out);
-      await new Promise((resolve, reject2) => { out.on('finish', resolve); out.on('error', reject2); req.on('error', reject2); });
+      const how = await done;
+      if (how !== 'ok') {
+        try { fs.unlinkSync(dest); } catch { /**/ }
+        reject(tooBig ? 413 : 400, tooBig ? `File quá lớn (tối đa ${MAX_MB} MB) — cắt ngắn bài hoặc dùng link YouTube` : 'Tải lên lỗi giữa chừng');
+        if (tooBig) setImmediate(() => req.destroy()); // bỏ nốt phần còn lại, sau khi đã gửi xong câu trả lời
+        return;
+      }
       log.info('music', `file nhạc custom đã lưu: custom${ext}`);
       // thông báo stage cập nhật
       sockets.broadcast({ t: 'teacherMusicFile', url: `/api/music-custom${ext}` });
       res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
       return res.end(JSON.stringify({ ok: true, url: `/api/music-custom${ext}` }));
+    }
+    // ── Lấy nhạc nền từ link YouTube (POST /api/music-youtube { url }) ────────
+    if (req.method === 'POST' && urlPath === '/api/music-youtube') {
+      const tok = req.headers['x-admin-token'] || '';
+      if (!tokensEqual(adminToken, tok)) return reject(403, 'Forbidden');
+      let body = '';
+      try {
+        for await (const chunk of req) {
+          body += chunk;
+          if (body.length > 4096) throw new Error('quá dài');
+        }
+      } catch {
+        return reject(400, 'Link không hợp lệ');
+      }
+      let link = '';
+      try { link = cleanYoutubeUrl(JSON.parse(body || '{}').url); } catch { link = ''; }
+      if (!link) return reject(400, `Link không phải YouTube. Dán dạng https://www.youtube.com/watch?v=… hoặc https://youtu.be/…`);
+      if (ytBusy) return reject(409, 'Đang tải một bài khác — chờ xong đã');
+      ytBusy = true;
+      try {
+        const out = await fetchYoutubeAudio(link, path.join(dataDir, 'music'), { log: (line) => log.info('music', line) });
+        log.info('music', `đã lấy nhạc từ YouTube: "${out.title}" (${Math.round(out.bytes / 1048576 * 10) / 10} MB, ${out.ext})`);
+        sockets.broadcast({ t: 'teacherMusicFile', url: `/api/music-custom${out.ext}` });
+        res.writeHead(200, { 'Content-Type': 'application/json', ...securityHeaders(port) });
+        return res.end(JSON.stringify({ ok: true, url: `/api/music-custom${out.ext}`, title: out.title }));
+      } catch (error) {
+        log.warn('music', `không lấy được nhạc YouTube: ${error.message}`);
+        return reject(502, `Không tải được: ${error.message}`);
+      } finally {
+        ytBusy = false;
+      }
     }
     // ── Serve file nhạc custom ─────────────────────────────────────────────────
     if (req.method === 'GET' && urlPath.startsWith('/api/music-custom')) {
@@ -506,7 +579,8 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       const fpath = path.join(dataDir, 'music', `custom${ext}`);
       if (!fs.existsSync(fpath)) return reject(404, 'Chưa có file nhạc custom');
       const buf = fs.readFileSync(fpath);
-      const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac', '.flac': 'audio/flac' }[ext] || 'audio/mpeg';
+      const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac',
+        '.flac': 'audio/flac', '.opus': 'audio/ogg', '.webm': 'audio/webm' }[ext] || 'audio/mpeg';
       res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'no-cache', 'Content-Length': String(buf.length), ...securityHeaders(port) });
       return res.end(req.method === 'HEAD' ? undefined : buf);
     }

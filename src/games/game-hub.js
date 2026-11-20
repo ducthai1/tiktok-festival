@@ -114,6 +114,10 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       const g = games.get(activeId);
       return g?.queuePriority?.(questions);
     },
+    /** Chỉ bảng xếp hạng phiên (kim cương / like / chat) + sổ donate. Không đụng điểm game, đại sứ, danh sách đã chào. */
+    resetBoard() {
+      board.reset();
+    },
     resetSession() {
       board.reset();
       welcome.reset();

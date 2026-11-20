@@ -412,3 +412,9 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
 }
 .teacher-music-status.ok  { color: #81c784; }
 .teacher-music-status.err { color: #e57373; }
+
+/* Ô dán link YouTube trong hộp nhạc nền riêng */
+.yt-row { margin-top: 6px; }
+.yt-input { flex: 1; min-width: 220px; padding: 6px 10px; border-radius: 9px; border: 1px solid var(--line, rgba(255, 255, 255, 0.18));
+  background: rgba(255, 255, 255, 0.05); color: inherit; font: inherit; font-size: 13px; }
+.yt-input::placeholder { opacity: 0.55; }

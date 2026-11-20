@@ -60,6 +60,7 @@ const socket = connectLiveSocket({
       authed = true;
       $('login').hidden = true;
       $('app').hidden = false;
+      loadGrantGifts(); // danh sách quà để bù — lấy từ bảng quà live, không chỉ quà mẫu
       if (currentTab === 'gifts') gifts.load();
       if (currentTab === 'board') loadAnswersLog();
     } else if (m.t === 'authFail') {
@@ -108,9 +109,22 @@ function showTab(name) {
   for (const b of $('tabs').children) b.classList.toggle('active', b.dataset.tab === name);
   for (const p of document.querySelectorAll('.tab-panel')) p.hidden = p.dataset.panel !== name;
   try { localStorage.setItem('adminTab', name); } catch { /* bỏ qua */ }
+  if (name === 'gifts') syncGiftsTab();
   if (name === 'gifts' && authed) gifts.load();
   if (name === 'board' && authed) loadAnswersLog();
 }
+// Tab 🎁 Quà: bảng quà đổi chế độ chỉ thuộc game Từ Vựng Tiếng Anh — ở game khác thì ẩn đi và nói rõ,
+// đừng để chủ kênh tưởng mình đang chỉnh game đang chạy. Khối "quà bật/tắt nhạc" là chung nên vẫn hiện.
+function syncGiftsTab() {
+  const isEnglish = activeGame === 'english';
+  if ($('gifts-english-card')) $('gifts-english-card').hidden = !isEnglish;
+  if ($('gifts-other-game')) $('gifts-other-game').hidden = isEnglish;
+  if ($('gifts-current-game')) {
+    $('gifts-current-game').textContent = `${GAME_ICONS[activeGame] || '🎮'} ${gameTitles.get(activeGame) || activeGame || 'game khác'}`;
+  }
+}
+if ($('gifts-goto-english')) $('gifts-goto-english').addEventListener('click', () => run({ t: 'switch', game: 'english' }));
+
 for (const b of $('tabs').children) b.addEventListener('click', () => showTab(b.dataset.tab));
 try { showTab(localStorage.getItem('adminTab') || 'live'); } catch { showTab('live'); }
 const demo = createDemoRunner({ socket, toast, setStatus: (text) => { $('demo-status').textContent = text; } });
@@ -148,7 +162,19 @@ function renderCommands() {
 
 // Danh sách người đang có mặt + nút "Tặng": chỉ vẽ lại khi danh sách đổi, để chọn quà không bị reset.
 let grantKey = '';
-$('grant-gift').replaceChildren(...SAMPLE_GIFTS.map((g) => new Option(`${g.emoji} ${g.name} · ${g.coins} xu · bậc ${giftTier(g.coins)}`, g.id)));
+// Danh sách quà để BÙ cho người xem: hỏi máy chủ để có đủ MỌI món đang gắn trên bảng quà live
+// (kể cả ô ⚖️ Thường và các chủ đề), không chỉ 21 quà mẫu. Hỏng mạng thì rơi về quà mẫu.
+function fillGrantGifts(gifts) {
+  const list = (gifts || []).map((g) => new Option(`${g.label ? `${g.label} — ` : ''}${g.name} · ${g.coins} 💎`, g.id));
+  if (list.length) $('grant-gift').replaceChildren(...list);
+}
+fillGrantGifts(SAMPLE_GIFTS.map((g) => ({ ...g, label: '' })));
+async function loadGrantGifts() {
+  try {
+    const reply = await socket.request({ t: 'grantGifts' });
+    if (reply?.ok) fillGrantGifts(reply.gifts);
+  } catch { /* giữ danh sách quà mẫu */ }
+}
 function renderGrantList(state) {
   const people = (state && Array.isArray(state.devotees) ? state.devotees
     : Object.values(state || {}).find((v) => Array.isArray(v) && v.length && v.every((p) => p && p.id && p.nickname))) || [];
@@ -286,6 +312,7 @@ function renderState(m) {
     for (const b of $('game-buttons').children) b.classList.toggle('active', b.dataset.game === activeGame);
     $('pill-game').textContent = `${GAME_ICONS[activeGame] || '🎮'} ${gameTitles.get(activeGame) || activeGame}`;
     renderCommands();
+    syncGiftsTab();
   }
   $('leaderboard').replaceChildren(...m.top.map((r) => {
     const li = document.createElement('li');
@@ -396,13 +423,14 @@ function applySettings(s) {
   $('set-volume').value = String(s.volume ?? 0.6);
   $('set-music').checked = s.music !== false;
   $('set-musicVolume').value = String(s.musicVolume ?? 0.35);
+  // ghi rõ bộ âm thanh đang chỉnh là của game nào
+  if ($('audio-game')) $('audio-game').textContent = `🎮 ${gameTitles.get(s.audioGame) || s.audioGame || 'game đang chạy'}`;
   // 🎄 chủ đề Giáng sinh: một nút đổi cả màn hình live + nhạc + trang điều khiển
   document.body.classList.toggle('xmas', s.season === 'christmas');
   document.body.classList.toggle('teacher', s.season === 'teacher');
   for (const b of document.querySelectorAll('#season-pick button')) b.setAttribute('aria-pressed', String(b.dataset.season === (s.season || '')));
-  // hiện/ẩn box nhạc teacher
-  const musicBox = $('teacher-music-box');
-  if (musicBox) musicBox.hidden = s.season !== 'teacher';
+  // Hộp nhạc nền riêng luôn hiện: trước đây chỉ hiện khi chủ đề là 20/11 nên ngoài mùa đó
+  // không có cách nào đổi nhạc. Nhạc riêng nay áp dụng cho mọi chủ đề.
   $('set-ttsWelcome').checked = s.ttsWelcome === true;
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
@@ -746,10 +774,13 @@ if ($('pip-scroll-up')) $('pip-scroll-up').addEventListener('click', () => { pip
 if ($('pip-scroll-down')) $('pip-scroll-down').addEventListener('click', () => { pipScrollOffset = Math.max(0, pipScrollOffset - 5); drawPipCanvas(); });
 if ($('pip-scroll-latest')) $('pip-scroll-latest').addEventListener('click', () => { pipScrollOffset = 0; drawPipCanvas(); });
 if ($('reset-session')) $('reset-session').addEventListener('click', () => {
-  if (confirm('Xoá bảng xếp hạng phiên (kim cương/like)?')) run({ t: 'resetSession' });
+  if (confirm('Chỉ xoá bảng xếp hạng phiên (kim cương / like / chat) + sổ donate.\nĐiểm game, đại sứ share và danh sách đã chào GIỮ NGUYÊN.')) run({ t: 'resetSession' });
+});
+if ($('reset-scores')) $('reset-scores').addEventListener('click', () => {
+  if (confirm('Chỉ xoá bảng điểm của game đang chạy. Bảng kim cương và đại sứ share GIỮ NGUYÊN.')) run({ t: 'resetScores' });
 });
 if ($('reset-ambassadors')) $('reset-ambassadors').addEventListener('click', () => {
-  if (confirm('Xoá bảng đại sứ share?')) run({ t: 'resetAmbassadors' });
+  if (confirm('Chỉ xoá bảng đại sứ share. Bảng kim cương và điểm game GIỮ NGUYÊN.')) run({ t: 'resetAmbassadors' });
 });
 if ($('disconnect')) $('disconnect').addEventListener('click', () => run({ t: 'disconnect' }));
 $('reset-live').addEventListener('click', () => {
@@ -943,6 +974,36 @@ $('clear-answers-btn')?.addEventListener('click', () => {
       fileInput.value = '';
     }
   });
+
+  // Dán link YouTube → server tải phần tiếng về rồi màn hình phát luôn.
+  const ytInput = $('yt-music-url');
+  const ytBtn = $('yt-music-get');
+  async function getFromYoutube() {
+    const url = (ytInput?.value || '').trim();
+    if (!url) { setStatus('Dán link YouTube vào ô bên cạnh đã', 'err'); return; }
+    ytBtn.disabled = true;
+    setStatus('⏳ Đang lấy nhạc từ YouTube… (lần đầu phải cài công cụ, có thể mất 30–60 giây)');
+    try {
+      const res = await fetch('/api/music-youtube', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-token': token },
+        body: JSON.stringify({ url })
+      });
+      const text = await res.text();
+      if (!res.ok) { setStatus('❌ ' + text, 'err'); return; }
+      const d = JSON.parse(text);
+      setCustomName(d.title || 'Nhạc từ YouTube');
+      setStatus('✅ Đã lấy nhạc & áp dụng vào màn hình', 'ok');
+      toast(`🎵 "${d.title || 'Nhạc từ YouTube'}" đã được áp dụng`);
+      ytInput.value = '';
+    } catch (err) {
+      setStatus('❌ Lỗi: ' + err.message, 'err');
+    } finally {
+      ytBtn.disabled = false;
+    }
+  }
+  ytBtn?.addEventListener('click', getFromYoutube);
+  ytInput?.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); getFromYoutube(); } });
 
   clearBtn?.addEventListener('click', async () => {
     try {

@@ -619,9 +619,8 @@ export function createQuizGame({
         const n = phase === 'question' ? giveHint(1) : 0;
         if (n) fx.push({ kind: 'toast', text: `💡 Gợi ý: ${hintLabel(n)}` });
       } else if (name === 'resetScores') {
-        scores.clear();
-        sharers.clear();
-        fx.push({ kind: 'toast', text: '🏆 Đã xoá bảng điểm và đại sứ' });
+        scores.clear(); // KHÔNG xoá đại sứ share: mỗi nút xoá chỉ xoá đúng bảng của nó
+        fx.push({ kind: 'toast', text: '🏆 Đã xoá bảng điểm' });
       } else if (name === 'resetAmbassadors') {
         sharers.clear();
         fx.push({ kind: 'toast', text: '↗ Đã xoá bảng đại sứ share' });

@@ -73,14 +73,22 @@ export function createStageAudio() {
     }
     const name = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme; // chủ đề mùa: mọi game phát nhạc của mùa đó
     // ── Phát file custom (do admin upload) nếu có ─────────────────────────────
-    if (opts.season === 'teacher' && customMusicUrl) {
+    // File nhạc riêng (upload hoặc lấy từ YouTube) được ưu tiên ở MỌI chủ đề mùa, không riêng 20/11.
+    if (customMusicUrl) {
       music.stop();
       tracks.stop();
       if (!customAudio) {
         customAudio = new Audio();
         customAudio.loop = true;
+        customAudio.crossOrigin = 'anonymous';
         // kết nối vào musicBus (hưởng volume + duck)
         ctx.createMediaElementSource(customAudio).connect(musicBus);
+      }
+      // LỖI CŨ: src chỉ được gán trong setCustomMusicUrl, mà lúc đó customAudio còn chưa tạo
+      // (thẻ nhạc chỉ tạo ở đây) → phần tử Audio không có nguồn, play() rơi im lặng, nhạc không bao giờ kêu.
+      if (customAudio.getAttribute('src') !== customMusicUrl) {
+        customAudio.src = customMusicUrl;
+        customAudio.load();
       }
       if (customAudio.paused) customAudio.play().catch(() => {});
       return;
@@ -203,21 +211,15 @@ export function createStageAudio() {
     },
     state: () => (ctx ? ctx.state : 'none'),
     specialKind: () => tracks?.specialKind() || '',
-    /** Đặt URL file nhạc custom cho season teacher (null = dùng nhạc tổng hợp). */
+    /** Đặt URL file nhạc riêng (null = trở về nhạc tổng hợp). Áp dụng cho mọi chủ đề mùa. */
     setCustomMusicUrl(url) {
       customMusicUrl = url || null;
-      if (customAudio) {
-        if (url) {
-          customAudio.src = url;
-          customAudio.load();
-          if (opts.sound && opts.music && opts.season === 'teacher' && ctx?.state === 'running') {
-            customAudio.play().catch(() => {});
-          }
-        } else {
-          customAudio.pause();
-          customAudio.src = '';
-        }
+      if (customAudio && !url) {
+        customAudio.pause();
+        customAudio.removeAttribute('src');
+        customAudio.load();
       }
+      applyLevels(); // tự gán src + phát (hoặc trở về nhạc tổng hợp) theo đúng trạng thái hiện tại
       applyLevels();
     }
   };

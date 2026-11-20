@@ -247,6 +247,23 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 - Chủ đề chùa và quẻ xăm dễ bị xem là nhạy cảm (tôn giáo gắn với tiền). Hãy cân nhắc cách nói chuyện và cách đặt tên.
 - Chỉ live trên tài khoản đã xác thực theo quy định hiện hành.
 
+## Âm thanh riêng từng game · nhạc nền riêng
+
+- **Mỗi game một bộ âm thanh riêng** (`settings.gameAudio[<game>]`): bật/tắt hiệu ứng, âm lượng hiệu ứng, bật/tắt nhạc nền, âm lượng nhạc. Chỉnh ở tab 📺 **Màn hình & âm thanh** chỉ đổi **game đang chạy** — thẻ ghi rõ đang chỉnh game nào. Trước đây chỉ có một bộ chung nên chỉnh ở tab tiếng Anh là đè luôn Quán Bar / Sàn Nhảy. Game chưa chỉnh bao giờ thì dùng bộ chung cũ, không ai mất cài đặt.
+- **Nhạc nền riêng** (hộp 🎵 trong cùng tab, dùng cho **mọi** chủ đề mùa chứ không riêng 20/11):
+  - **Chọn file từ máy** — nhận `.mp3 .ogg .wav .m4a .aac .flac .opus .webm`, tối đa 80 MB. Nhận theo **đuôi file**, không theo `Content-Type` (trình duyệt đoán kiểu rất lung tung: `.m4a` có máy báo `video/mp4`, có máy báo `application/octet-stream` — trước đây đều bị chặn 415).
+  - **Dán link YouTube** → server tải phần tiếng về `data/music/custom.<đuôi>` bằng `yt-dlp` (môi trường Python riêng, tự cài lần đầu ~30 giây, ghim bản trong `tools/music/requirements-yt.txt`). Chỉ nhận link YouTube; mọi tham số thừa (danh sách phát, mốc thời gian, tracking) bị cắt. Không chuyển mã — luồng tiếng m4a/opus của YouTube trình duyệt OBS phát thẳng được, nên không cần ffmpeg.
+  - Nút ✕ xoá nhạc riêng, trở về nhạc tự tổng hợp.
+
+## Các nút Xoá — mỗi nút chỉ xoá đúng bảng của nó
+
+| Nút | Xoá cái gì | KHÔNG đụng |
+|---|---|---|
+| **Xoá bảng 💎** (Bảng xếp hạng phiên) | bảng kim cương / like / chat + sổ donate | điểm game, đại sứ share, danh sách đã chào |
+| **Xoá điểm game** | bảng điểm của game đang chạy | bảng 💎, đại sứ share |
+| **Xoá** (📣 Đại sứ share) | chỉ bảng đại sứ share | bảng 💎, điểm game |
+| **🧹 Bắt đầu phiên live mới** | TẤT CẢ | — |
+
 ## Nhật ký (log) và xử lý sự cố mất dữ liệu live
 
 Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` (mỗi ngày một file, giữ 14 ngày; `data/` không lên git vì có tên người xem; token trang điều khiển bị che `***` trong file).

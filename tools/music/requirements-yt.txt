@@ -1,0 +1,5 @@
+# Lấy nhạc nền từ link YouTube (dán link ở tab 📺 Màn hình & âm thanh). Server tự cài lần đầu khi
+# chủ kênh dán link; cài vào môi trường Python RIÊNG, không đụng môi trường giọng đọc.
+# Ghim đúng phiên bản (chống gói bị chèn mã độc). YouTube đổi cách chặn → tải không được nữa thì
+# nâng số dưới lên bản mới, push, máy live pull + khởi động lại là tự cài lại.
+yt-dlp==2026.10.26
