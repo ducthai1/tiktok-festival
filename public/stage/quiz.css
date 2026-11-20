@@ -506,12 +506,10 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
   border: 2px solid var(--fan-ink);
   box-shadow: 0 0 18px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 4px 10px rgba(0, 0, 0, 0.5); }
 #stage.theme-quiz #welcome .fan-badge[hidden] { display: none; }
-#stage.theme-quiz #welcome .fan-badge-top { font-size: 12px; font-weight: 900; letter-spacing: 3px;
+#stage.theme-quiz #welcome .fan-badge-top { font-size: 14px; font-weight: 900; letter-spacing: 4px;
   color: var(--fan-ink); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
-#stage.theme-quiz #welcome .fan-badge-num { font-size: 38px; font-weight: 900; color: #fff; margin: 1px 0 3px;
-  text-shadow: 0 0 14px var(--fan-glow), 0 2px 4px rgba(0, 0, 0, 0.9); }
-#stage.theme-quiz #welcome .fan-badge-tier { font-size: 10px; font-weight: 900; letter-spacing: 1.2px;
-  color: var(--fan-ink); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
+#stage.theme-quiz #welcome .fan-badge-num { font-size: 46px; font-weight: 900; color: #fff; margin-top: 2px;
+  text-shadow: 0 0 16px var(--fan-glow), 0 2px 4px rgba(0, 0, 0, 0.9); }
 
 /* cấp 1 — ĐỒNG */
 #stage.theme-quiz #hud > #welcome.fan-1 { --fan-ink: #ffb877; --fan-mid: #b9682f; --fan-deep: #2b1a10; --fan-glow: rgba(255, 150, 80, 0.45);

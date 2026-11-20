@@ -1,8 +1,6 @@
 // Phần chữ 2D phủ trên cảnh 3D: tiêu đề, chỉ số, bảng xếp hạng, thông báo, chú thích quà.
 import { avatarNode } from './stage-labels.js';
 
-/** Tên bậc Fan CLB hiện trên huy hiệu — cấp 1–5 mỗi cấp một chất liệu, cấp 6+ gom hai bậc cao. */
-const FAN_TIERS = ['', 'ĐỒNG', 'BẠC', 'VÀNG', 'LỤC BẢO', 'HỒNG NGỌC', 'BẠCH KIM', 'KIM CƯƠNG'];
 
 const $ = (id) => document.getElementById(id);
 
@@ -364,10 +362,9 @@ export function createHud() {
       root.className = `${group ? 'group' : ''}${band ? ` fan fan-${band}` : ''}`.trim();
       const badge = root.querySelector('.fan-badge');
       badge.hidden = !band;
-      if (band) {
-        badge.querySelector('.fan-badge-num').textContent = String(level);
-        badge.querySelector('.fan-badge-tier').textContent = FAN_TIERS[band];
-      }
+      // Huy hiệu chỉ ghi CẤP + số: tên chất liệu (đồng / bạc / vàng…) không nói lên cấp mấy,
+      // người xem lướt qua phải hiểu ngay. Chất liệu đã thể hiện bằng MÀU của thẻ rồi.
+      if (band) badge.querySelector('.fan-badge-num').textContent = String(level);
       root.getAnimations?.().forEach((a) => a.cancel());
       const shown = people.slice(0, group ? 18 : 1);
       const avatars = shown.map((p, i) => {
