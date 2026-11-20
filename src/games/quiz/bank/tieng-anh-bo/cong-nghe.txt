@@ -247,7 +247,7 @@ VIRTUALIZATION | Công nghệ ảo hóa | 3 | VIRTUALISATION
 MAINFRAME | Máy tính cỡ lớn siêu mạnh | 3
 MIDDLEWARE | Phần mềm trung gian | 3
 ARCHITECTURE | Kiến trúc hệ thống | 2
-AUTHORIZATION | Việc cấp quyền truy cập | 3
+AUTHORIZATION | Việc cấp quyền truy cập | 3 | AUTHORISATION
 CRYPTOGRAPHY | Mật mã học | 3
 COMPUTING | Việc dùng máy tính để xử lý và tính toán nói chung | 1
 REFACTORING | Danh từ chỉ công việc dọn dẹp lại mã nguồn cho gọn | 3
@@ -258,7 +258,7 @@ POLYMORPHISM | Tính đa hình | 3
 DEPRECATED | Đã lỗi thời, không khuyến khích dùng | 3
 BACKWARD COMPATIBILITY | Tính tương thích ngược | 3
 IMMUTABLE | Không thể thay đổi | 3
-SERIALIZATION | Việc tuần tự hóa dữ liệu | 3
+SERIALIZATION | Việc tuần tự hóa dữ liệu | 3 | SERIALISATION
 HYPERLINK | Tên đầy đủ mang tính kỹ thuật của đường dẫn bấm được | 1
 PHISHING | Tấn công lừa đảo qua mạng | 2
 RANSOMWARE | Mã độc tống tiền | 3
@@ -357,7 +357,7 @@ PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính
 MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường | 3
 TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 2
 PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3
-TOKENIZATION | Việc cắt câu chữ thành từng mẩu nhỏ cho máy xử lý ngôn ngữ | 3
+TOKENIZATION | Việc cắt câu chữ thành từng mẩu nhỏ cho máy xử lý ngôn ngữ | 3 | TOKENISATION
 EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI | 3
 TOUCH ID | Cách mở khoá máy bằng vân tay | 1
 FACE ID | Cách mở khoá máy bằng khuôn mặt | 1

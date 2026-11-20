@@ -152,8 +152,8 @@ BOOST | Tăng cường, đẩy mạnh | 2
 DEMONSTRATE | Chứng minh, thể hiện rõ | 3
 ENCOURAGE | Khuyến khích, động viên | 2
 INNOVATE | Đổi mới sáng tạo | 3
-MAXIMIZE | Tối đa hóa | 2
-MINIMIZE | Tối thiểu hóa, giảm bớt | 2
+MAXIMIZE | Tối đa hóa | 2 | MAXIMISE
+MINIMIZE | Tối thiểu hóa, giảm bớt | 2 | MINIMISE
 NAVIGATE | Định hướng, điều hướng | 3
 PRIORITIZE | Ưu tiên hàng đầu | 3 | PRIORITISE
 SIMPLIFY | Đơn giản hóa vấn đề | 2
@@ -163,10 +163,10 @@ SERENDIPITY | Sự tình cờ may mắn tìm thấy điều tuyệt vời bất 
 EPHEMERAL | Tính chất phù du, sớm nở tối tàn, ngắn ngủi thoáng qua | 3
 RESILIENT | Tính từ chỉ người kiên cường, bất khuất, luôn gượng dậy sau vấp ngã | 3
 PRISTINE | Vẻ đẹp hoang sơ, nguyên bản thuần khiết chưa từng bị con người làm ô uế | 3
-HYPNOTIZE | Hành động dùng thuật thôi miên để đưa người khác vào giấc ngủ điều khiển | 3
+HYPNOTIZE | Hành động dùng thuật thôi miên để đưa người khác vào giấc ngủ điều khiển | 3 | HYPNOTISE
 PROCRASTINATE | Thói quen xấu hay trì hoãn, lần lữa công việc đến phút chót | 3
 PERSEVERE | Động từ kiên trì, bền chí theo đuổi đam mê vượt qua mọi trở ngại | 3
-MESMERIZING | Tính từ mê hoặc, quyến rũ khiến người xem không thể rời mắt | 3
+MESMERIZING | Tính từ mê hoặc, quyến rũ khiến người xem không thể rời mắt | 3 | MESMERISING
 INTRIGUING | Điều gì đó vô cùng kỳ thú, khơi gợi trí tò mò muốn tìm hiểu | 3
 RELENTLESS | Sự nỗ lực bền bỉ không ngừng nghỉ, quyết liệt không bao giờ từ bỏ | 3
 EXTRAORDINARY | Điều gì đó phi thường, xuất chúng, vượt xa mức bình thường | 2
@@ -182,7 +182,7 @@ MAGNIFICENT | Tính từ tráng lệ, nguy nga, lộng lẫy uy nghi | 2
 INVINCIBLE | Bất khả chiến bại, không thể bị đánh bại bởi bất kỳ ai | 2
 LUMINOUS | Tỏa sáng lấp lánh, rực rỡ phát ra ánh sáng trong đêm tối | 3
 MELODIOUS | Âm thanh êm dịu, du dương, ngọt ngào dễ nghe | 3
-GIGGLE | Cười khúc khích khúc khích e thẹn che miệng | 2
+GIGGLE | Cười khúc khích e thẹn, lấy tay che miệng | 2
 BLINK | Chớp mắt một cái để làm ẩm mắt | 1
 NOD | Hành động gật đầu nhẹ để đồng ý tán thành ý kiến | 1
 SHRUG | Hành động nhún hai vai tỏ vẻ không biết hoặc không quan tâm | 2
@@ -496,7 +496,7 @@ APPOINT | Bổ nhiệm vào một chức vụ | 2
 APPREHEND | Bắt giữ kẻ phạm tội hoặc lĩnh hội | 3
 APPROACH | Tiếp cận hoặc đến gần một mục tiêu | 2
 ASSEMBLE | Lắp ráp linh kiện hoặc tập hợp mọi người | 2
-AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2
+AUTHORIZE | Cấp phép hoặc ủy quyền chính thức | 2 | AUTHORISE
 BEWILDER | Làm hoang mang bối rối không hiểu chuyện gì | 3
 BLEND | Trộn lẫn hòa quyện nhiều thành phần | 2
 BROADEN | Mở rộng tầm mắt hoặc kiến thức | 2
@@ -556,7 +556,7 @@ GRIEVE | Đau buồn thương tiếc mất mát | 2
 GROWL | Gầm gừ tiếng gầm của dã thú | 1
 HALT | Dừng lại tạm ngừng chuyển động | 2
 HOVER | Bay lơ lửng một chỗ trên không | 2
-IMMOBILIZE | Làm bất động giữ chặt không cho cử động | 3
+IMMOBILIZE | Làm bất động giữ chặt không cho cử động | 3 | IMMOBILISE
 INCLINE | Nghiêng người hoặc có chiều hướng nghiêng về | 2
 INDULGE | Nuông chiều đam mê chiều theo sở thích | 3
 INHIBIT | Kìm hãm ngăn chặn sự phát triển | 3
@@ -580,7 +580,7 @@ MEDIATE | Làm trung gian hòa giải tranh chấp | 3
 MIMIC | Bắt chước nhại lại giọng nói | 2
 MINGLE | Hòa nhập giao lưu trong bữa tiệc | 2
 MODERATE | Tiết chế kiềm chế làm dịu bớt | 3
-NEUTRALIZE | Vô hiệu hóa hóa giải đòn đánh | 3
+NEUTRALIZE | Vô hiệu hóa hóa giải đòn đánh | 3 | NEUTRALISE
 NOURISH | Nuôi dưỡng tiếp tế chất dinh dưỡng | 2
 OBLIGE | Bắt buộc hoặc làm ơn giúp đỡ | 3
 OUTNUMBER | Đông hơn áp đảo về quân số | 3
@@ -616,7 +616,7 @@ SHINE | Chiếu sáng lấp lánh như Mặt Trời | 1
 SHOCK | Gây sốc kinh ngạc bàng hoàng | 1
 SOAR | Bay vút lên cao vút trên trời xanh | 2
 SPECIFY | Chỉ rõ ghi rõ chi tiết yêu cầu | 2
-STABILIZE | Làm ổn định giữ cân bằng tình hình | 2
+STABILIZE | Làm ổn định giữ cân bằng tình hình | 2 | STABILISE
 SUCCEED | Thành công đạt mục tiêu | 1
 SUPPRESS | Đàn áp trấn áp dẹp tan bạo loạn | 3
 SURROUND | Bao vây vây quanh bốn bề | 1

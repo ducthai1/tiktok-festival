@@ -73,7 +73,7 @@ SPRITE | Hình hai chiều nhân vật | 3 | 2D IMAGE
 TILESET | Bộ gạch lát xây dựng bản đồ | 3 | TILE COLLECTION
 ASSET | Tài nguyên hình ảnh âm thanh | 3
 RENDER | Vẽ tính toán hình ảnh | 3
-OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng | 3 | PERFORMANCE TUNING
+OPTIMIZATION | Tối ưu hóa tốc độ hiệu năng | 3 | PERFORMANCE TUNING, OPTIMISATION
 DEBUGGING | Gỡ rối tìm lỗi chương trình | 3 | FIXING BUGS
 SCRIPTING | Viết kịch bản code logic | 3 | CODE WRITING
 ENGINE | Động cơ công cụ xây dựng | 3 | TOOL
@@ -81,7 +81,7 @@ MEMORY LEAK | Rò rỉ bộ nhớ không giải phóng | 3 | MEMORY LOSS
 BANDWIDTH | Độ rộng băng thông truyền | 3 | NETWORK SPEED
 SERVER | Máy chủ lưu trữ dữ liệu | 3
 CLIENT | Phần mềm cài trên máy người chơi để nối vào máy chủ | 3 | PLAYER DEVICE
-SYNCHRONIZATION | Việc giữ cho dữ liệu các máy khớp nhau theo thời gian thực | 3
+SYNCHRONIZATION | Việc giữ cho dữ liệu các máy khớp nhau theo thời gian thực | 3 | SYNCHRONISATION
 MODDING | Chỉnh sửa game theo ý thích | 3 | GAME MODIFICATION
 MODDER | Người tự chỉnh sửa game thêm nội dung cho người khác tải | 3 | MOD CREATOR
 STREAMING | Phát trực tiếp gameplay online | 3

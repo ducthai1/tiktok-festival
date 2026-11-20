@@ -151,7 +151,7 @@ DUGOUT | Khu kỹ thuật (băng ghế huấn luyện viên) | 3
 CORNER KICK | Cú đá phạt thực hiện từ góc sân khi bóng ra hết biên ngang | 1
 FORWARD | Cầu thủ chơi tuyến trên nói chung, gồm cả chạy cánh | 1
 CHAMPIONSHIP | Giải tranh ngôi vô địch, cũng chỉ chính chức vô địch đó | 2
-EQUALIZE | Động từ chỉ việc ghi bàn kéo tỉ số về hoà | 3
+EQUALIZE | Động từ chỉ việc ghi bàn kéo tỉ số về hoà | 3 | EQUALISE
 PENALTY SHOOTOUT | Tên đầy đủ của loạt sút 11m quyết định đội đi tiếp | 2
 SPECTATOR | Một người ngồi xem trận đấu | 2
 OFFENCE | Hàng tấn công, viết theo kiểu Anh | 2 | OFFENSE

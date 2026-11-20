@@ -230,7 +230,7 @@ CLAIRVOYANT | Người nhìn thấy vô hình | 3 | PSYCHIC SEER
 PRECOGNITION | Khả năng biết trước | 3 | FOREKNOWLEDGE
 ECTOPLASM | Chất hữu linh phát xuất | 3 | SPIRITUAL MATTER
 MANIFESTATION | Sự biểu hiện xuất hiện | 2 | APPEARANCE
-MATERIALIZE | Hóa thân hiện ra | 2 | APPEAR, BECOME REAL
+MATERIALIZE | Hóa thân hiện ra | 2 | APPEAR, BECOME REAL, MATERIALISE
 INCORPOREAL | Không có hình thể | 3 | IMMATERIAL, BODILESS
 TRANSMUTATION | Sự biến hoá chất | 3 | TRANSFORMATION
 WHODUNIT | Truyện trinh thám đoán ai là hung thủ | 3

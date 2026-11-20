@@ -129,7 +129,7 @@ LUNAR ORBITER | Tàu quỹ đạo Mặt Trăng | 2
 ISS MODULE | Mô-đun Trạm Vũ Trụ Quốc tế | 2
 SPACE SHUTTLE | Loại tàu vũ trụ có cánh, hạ cánh như máy bay để dùng lại | 1
 SPACE EXPLORATION | Khám phá vũ trụ | 1
-COLONIZATION | Việc đưa người tới sống lâu dài ở một thiên thể khác | 1
+COLONIZATION | Việc đưa người tới sống lâu dài ở một thiên thể khác | 1 | COLONISATION
 SPACE MINING | Việc khai thác khoáng sản ngay trên thiên thể ngoài Trái Đất | 2
 ASTEROID MINING | Khai thác tiểu hành tinh | 2
 MARS COLONY | Khu định cư lâu dài của con người trên Sao Hỏa | 2

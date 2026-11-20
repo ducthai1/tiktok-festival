@@ -10,8 +10,8 @@ ENDEAR | Làm cho ai đó yêu quý mình | 1
 INTIMATE | Thân thiết, sâu sắc, riêng tư | 1
 FASCINATE | Mê hoặc, lôi cuốn sự chú ý | 2
 INFATUATED | Đang trong cơn say nắng mù quáng | 2
-IDOLIZE | Yêu quý như thần tượng | 2
-MESMERIZE | Mê hoặc, bắt buộc chú ý | 2
+IDOLIZE | Yêu quý như thần tượng | 2 | IDOLISE
+MESMERIZE | Mê hoặc, bắt buộc chú ý | 2 | MESMERISE
 GALLANTRY | Cử chỉ ga lăng lịch thiệp của người đàn ông với phụ nữ | 2
 POIGNANCY | Sự xúc động, buồn sâu sắc | 2
 SORROWFUL | Buồn bã, đau lòng | 2
@@ -225,7 +225,7 @@ LIGHTHEARTED | Vui vẻ, không suy nghĩ quá | 3
 VIVACIOUS | Sống động, vui tươi | 3
 GRACIOUS | Lịch sự, tốt bụng | 3
 TRANSFIXED | Đứng chết trân tại chỗ vì quá sửng sốt | 3
-MESMERIZED | Bị thôi miên như bị hút hồn, đứng ngẩn ra | 3
+MESMERIZED | Bị thôi miên như bị hút hồn, đứng ngẩn ra | 3 | MESMERISED
 FERVENT | Nồng nàn, say đắm | 3
 SENTIMENTAL | Tình cảm, lãng mạn | 3
 SENTIMENTALITY | Sự tình cảm, lãng mạn | 3

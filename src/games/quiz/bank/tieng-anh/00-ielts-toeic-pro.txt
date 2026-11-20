@@ -11,7 +11,7 @@ LEGISLATION | Pháp luật, hệ thống luật lệ | 3
 PROSPERITY | Danh từ: tình trạng giàu có, làm ăn phát đạt của một đất nước | 3
 RESILIENCE | Khả năng phục hồi, sự kiên cường | 3
 TRANSPARENCY | Tính minh bạch, rõ ràng | 3 | CLARITY
-UTILIZE | Tận dụng, sử dụng một cách hiệu quả | 3 | EMPLOY
+UTILIZE | Tận dụng, sử dụng một cách hiệu quả | 3 | EMPLOY, UTILISE
 ADVERSE | Bất lợi, đi ngược điều mình mong — nói về thời tiết, điều kiện, tác dụng phụ | 3 | NEGATIVE
 DISTORT | Bóp méo, xuyên tạc sự thật | 3 | MISREPRESENT
 INTRINSIC | Thuộc về bản chất, nội tại | 3
@@ -92,7 +92,7 @@ NOVICE | Người mới bắt đầu, chưa có kinh nghiệm | 3 | BEGINNER, LE
 OBLIGATION | Nghĩa vụ, bổn phận | 3
 OMISSION | Sự bỏ sót, sự bỏ qua | 3 | EXCLUSION
 ONEROUS | Nặng nề, nhọc nhằn (nhiệm vụ) | 3 | BURDENSOME
-OPTIMIZE | Tối ưu hóa, làm cho tốt nhất | 3
+OPTIMIZE | Tối ưu hóa, làm cho tốt nhất | 3 | OPTIMISE
 ORIENTATION | Buổi hướng dẫn ban đầu cho người mới, hoặc hướng mà một vật quay về | 3 | DIRECTION
 OUTCOME | Kết quả cuối cùng | 2 | RESULT
 OUTLOOK | Viễn cảnh, quan điểm nhìn nhận | 3
@@ -115,7 +115,7 @@ RELUCTANT | Miễn cưỡng, không sẵn lòng | 3 | UNWILLING, HESITANT
 REMUNERATION | Thù lao, tiền trả công | 3
 RESTRICTION | Luật lệ cấm bớt, không cho làm quá một mức nào đó | 3 | LIMIT
 RETENTION | Sự giữ lại, duy trì | 3 | HOLDING, KEEPING
-REVITALIZE | Thổi sức sống mới vào thứ đang tàn lụi — khu phố cũ, nền kinh tế | 3 | RENEW
+REVITALIZE | Thổi sức sống mới vào thứ đang tàn lụi — khu phố cũ, nền kinh tế | 3 | RENEW, REVITALISE
 RIGOROUS | Nghiêm ngặt, khắt khe | 3 | STRICT, THOROUGH
 ROBUST | Mạnh mẽ, vững chắc | 3 | STURDY
 SCARCE | Khan hiếm, ít có | 3 | LIMITED
@@ -131,7 +131,7 @@ SURPASS | Vượt trội hơn hẳn | 3
 SYNTHESIS | Sự tổng hợp, kết hợp lại | 3 | COMBINATION
 TERMINATE | Chấm dứt, kết thúc hợp đồng | 3 | END
 TOLERANCE | Sự khoan dung, sức chịu đựng | 3
-TRANSCEND | Vượt qua giới hạn | 3
+TRANSCEND | Vươn lên cao hơn hẳn khuôn khổ thông thường | 3
 TREMENDOUS | Lớn tới mức gây kinh ngạc — hay dùng để khen "tuyệt vời, phi thường" | 2
 UNDERMINE | Hủy hoại ngầm, làm suy yếu từ bên trong | 3
 UNSUBSTANTIATED | Lời cáo buộc nói ra mà chẳng có bằng chứng nào | 3 | UNPROVED, UNVERIFIED

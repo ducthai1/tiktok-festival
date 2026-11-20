@@ -27,7 +27,7 @@ THYROID | Tuyến giáp | 3
 SPLEEN | Lá lách | 3
 ARTERY | Động mạch | 3
 CARTILAGE | Sụn | 3
-TENDON | Gân | 3
+TENDON | Dải dai nối bắp thịt vào xương, đứt cái này là không co chân được | 3
 LIGAMENT | Dây chằng | 3
 EARDRUM | Màng nhĩ | 3
 RETINA | Võng mạc | 3
@@ -150,7 +150,7 @@ WOUND | Vết rách hở trên da do vật sắc gây ra | 2
 SCAR | Vết sẹo | 2
 BURN | Vết bỏng | 2
 LUNG | Một lá phổi, viết ở dạng số ít | 2
-LIVER | Gan | 2
+LIVER | Tạng lớn nhất trong bụng, lọc chất độc, rượu vào là nó chịu trận | 2
 KIDNEY | Thận | 2 | KIDNEYS
 SKELETON | Bộ xương | 2
 SKULL | Hộp sọ | 2
@@ -235,7 +235,7 @@ MEASLES | Bệnh sởi | 3
 FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS
 SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
 CARDIOLOGY | Khoa tim mạch | 3
-IMMUNIZATION | Chương trình gây miễn dịch cho cả cộng đồng | 3
+IMMUNIZATION | Chương trình gây miễn dịch cho cả cộng đồng | 3 | IMMUNISATION
 PEDIATRICS | Khoa nhi, y học trẻ em | 3
 PHYSICIAN | Bác sĩ nội khoa chữa bằng thuốc chứ không mổ | 2
 VACCINATION | Việc tiêm chế phẩm phòng bệnh cho một người | 2
@@ -270,7 +270,7 @@ PENICILLIN | Loại thuốc kháng sinh đầu tiên trên thế giới chiết 
 PRACTITIONER | Người hành nghề y nói chung, hay dùng trong cụm bác sĩ đa khoa | 3
 RESPIRATORY | Thuộc về hô hấp | 3
 SPECIALIST | Bác sĩ chỉ chuyên sâu một chuyên khoa | 2
-STERILIZATION | Sự tiệt trùng | 3
+STERILIZATION | Sự tiệt trùng | 3 | STERILISATION
 THERAPY | Một liệu pháp cụ thể, có thể không dùng thuốc | 2
 ULTRASOUND | Siêu âm | 2
 URINE | Nước tiểu | 2
