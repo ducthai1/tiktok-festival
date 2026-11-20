@@ -231,20 +231,8 @@ GREGORIAN CALENDAR | Lịch Gregory | 2
 JULIAN CALENDAR | Lịch Julius | 2
 SOLAR CALENDAR | Lịch dương | 1
 LUNISOLAR CALENDAR | Lịch âm-dương | 2
-THEORETICAL ASTRONOMY | Thiên văn lý thuyết | 2
-POSITIONAL ASTRONOMY | Thiên văn vị trí | 2
 ASTROMETRY | Đo vị trí sao | 2
 DISTANCE MODULUS | Đại lượng hiệu số giữa cấp sao biểu kiến và tuyệt đối để xác định cự ly vũ trụ | 3
-STANDARD DEVIATION | Đại lượng đo mức dao động của số liệu quanh giá trị trung bình | 2
-STATISTICAL ASTRONOMY | Thiên văn thống kê | 3
-PROBABILISTIC MODELS | Mô hình xác suất | 2
-SAMPLING TECHNIQUES | Kỹ thuật lấy mẫu | 2
-OBSERVATIONAL DATA | Dữ liệu quan sát | 1
-EMPIRICAL EVIDENCE | Bằng chứng thực nghiệm | 2
-HYPOTHESIS TESTING | Kiểm định giả thuyết | 2
-PEER REVIEW | Việc các nhà khoa học cùng ngành thẩm định bài báo trước khi đăng | 1
-SCIENTIFIC METHOD | Phương pháp khoa học | 1
-REPRODUCIBILITY | Khả năng lặp lại | 2
 LUNAR MARIA | Biển Mặt Trăng | 2
 MARE | Biển Mặt Trăng nơi dung nham | 2
 CRATER RIM | Mép miệng núi | 2
