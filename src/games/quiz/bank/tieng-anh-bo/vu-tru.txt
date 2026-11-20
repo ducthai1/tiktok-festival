@@ -189,8 +189,8 @@ ANOMALISTIC YEAR | Năm cận điểm: thời gian Trái Đất đi từ điểm
 DRACONIC YEAR | Năm giao điểm, chu kỳ liên quan tới mùa nhật thực | 3
 LEAP YEAR | Năm nhuận | 1
 COMMON YEAR | Năm thường | 2
-GREGORIAN CALENDAR | Lịch Gregory | 2
-JULIAN CALENDAR | Lịch Julius | 2
+GREGORIAN CALENDAR | Bộ lịch cả thế giới đang dùng, do một vị giáo hoàng ban hành | 2
+JULIAN CALENDAR | Bộ lịch cũ thời La Mã, dùng trước khi đổi sang lịch hiện nay | 2
 SOLAR CALENDAR | Lịch dương | 1
 LUNISOLAR CALENDAR | Lịch âm-dương | 2
 ASTROMETRY | Ngành đo chính xác vị trí và chuyển động của các ngôi sao trên bầu trời | 2

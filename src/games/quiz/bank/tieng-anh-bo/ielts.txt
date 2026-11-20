@@ -37,7 +37,7 @@ THEORY | Hệ thống giải thích đã qua kiểm chứng nhiều lần | 1
 TRANSITION | Sự chuyển tiếp | 2
 VALID | Hợp lệ (có giá trị) | 2
 WIDESPREAD | Trải rộng khắp một vùng hay nhiều nơi cùng lúc | 2
-ADVOCACY | Sự vận động ủng hộ | 3
+ADVOCACY | Danh từ chỉ cả quá trình vận động để người khác ủng hộ một việc | 3
 AFFLUENT | Giàu có, sung túc | 3 | WEALTHY
 AUTONOMY | Quyền tự chủ | 3
 BUREAUCRACY | Bộ máy quan liêu | 3
@@ -229,69 +229,69 @@ STIGMA | Định kiến, vết nhơ xã hội | 3 | DISGRACE
 DEPRIVATION | Sự thiếu thốn, tước đoạt | 3 | PRIVATION, HARDSHIP
 UNPRECEDENTED | Chưa từng có tiền lệ trước đây | 3
 SUBSTANTIAL | Lớn về khối lượng hoặc giá trị, nhiều một cách chắc chắn | 3
-FEASIBLE | Khả thi / có thể thực hiện được | 3
+FEASIBLE | Khả thi, có thể thực hiện được | 3
 DETRIMENTAL | Từ trang trọng chỉ gây hại nghiêm trọng về lâu dài | 3
 DOMINANT | Mạnh nhất, áp đảo và chi phối những cái còn lại | 3
-IMPLEMENT | Triển khai / thi hành chính sách | 3
-PERSISTENT | Kiên trì / dai dẳng | 3
-PROFOUND | Sâu sắc / tác động mạnh mẽ | 3
+IMPLEMENT | Triển khai, thi hành chính sách | 3
+PERSISTENT | Kiên trì, dai dẳng | 3
+PROFOUND | Sâu sắc, tác động mạnh mẽ | 3
 REVOLUTIONIZE | Làm thay đổi hoàn toàn cách một việc vẫn được làm xưa nay | 3 | REVOLUTIONISE
-VERSATILE | Đa năng / linh hoạt | 3
-DISCREPANCY | Sự khác biệt / sự lệch nhau | 3
-EQUIVALENT | Tương đương / giá trị như nhau | 3
-CONTEMPORARY | Hiện đại / đương đại | 3
+VERSATILE | Đa năng, linh hoạt | 3
+DISCREPANCY | Sự khác biệt, sự lệch nhau | 3
+EQUIVALENT | Tương đương, giá trị như nhau | 3
+CONTEMPORARY | Hiện đại, đương đại | 3
 DISPARITY | Khoảng cách chênh lệch rõ rệt giữa hai con số hay hai bên | 3
 MANDATORY | Bắt buộc tuân thủ | 3
-OBSOLETE | Lạc hậu / lỗi thời | 3
-PLAUSIBLE | Hợp lý / đáng tin | 3
-QUALITATIVE | Định tính / về mặt chất lượng | 3
-QUANTITATIVE | Định lượng / về mặt con số | 3
-RATIONAL | Hợp lý / trí tuệ | 3
+OBSOLETE | Lạc hậu, lỗi thời | 3
+PLAUSIBLE | Nghe thì có lý và đáng tin, nhưng chưa chắc đã đúng | 3
+QUALITATIVE | Định tính, về mặt chất lượng | 3
+QUANTITATIVE | Định lượng, về mặt con số | 3
+RATIONAL | Tính từ chỉ người suy xét bằng lý lẽ chứ không theo cảm tính | 3
 SOVEREIGNTY | Chủ quyền quốc gia | 3
-AMBIGUOUS | Mơ hồ / nhập nhằng | 3
-ANACHRONISTIC | Lỗi thời / sai thời đại | 3
-ARTICULATE | Ăn nói lưu loát / rõ ràng | 3
-COHERENT | Mạch lạc / chặt chẽ | 3
-CONSEQUENTIAL | Quan trọng / hệ trọng | 3
+AMBIGUOUS | Câu chữ hiểu được theo hai nghĩa, không rõ ý nào | 3
+ANACHRONISTIC | Lỗi thời, sai thời đại | 3
+ARTICULATE | Ăn nói lưu loát, rõ ràng | 3
+COHERENT | Mạch lạc, chặt chẽ | 3
+CONSEQUENTIAL | Quan trọng, hệ trọng | 3
 CUMULATIVE | Tích lũy dồn lại | 3
 DIVERSIFY | Đa dạng hóa | 3
 ELOQUENT | Có tài hùng biện | 3
 EMPIRICAL | Dựa trên kinh nghiệm thực tế | 3
-EQUIVOCAL | Lập lờ / nước đôi | 3
-EXEMPLARY | Gương mẫu / tiêu biểu | 3
-FALLACIOUS | Sai lầm / ngụy biện | 3
-HOMOGENEOUS | Đồng nhất / thuần nhất | 3
-INCENTIVE | Sự khuyến khích / khích lệ | 3
-INHERENT | Vốn có / nội tại | 3
-INTANGIBLE | Vô hình / không chạm được | 3
-METICULOUS | Tỉ mỉ / kỹ lưỡng | 3
+EQUIVOCAL | Lối trả lời cố tình nói nước đôi để khỏi phải nhận phe nào | 3
+EXEMPLARY | Gương mẫu, tiêu biểu | 3
+FALLACIOUS | Sai lầm, ngụy biện | 3
+HOMOGENEOUS | Đồng nhất, thuần nhất | 3
+INCENTIVE | Sự khuyến khích, khích lệ | 3
+INHERENT | Vốn có, nội tại | 3
+INTANGIBLE | Vô hình, không chạm được | 3
+METICULOUS | Tỉ mỉ, kỹ lưỡng | 3
 NEGLIGIBLE | Không đáng kể | 3
 OBJECTIVE | Khách quan | 2
-OBSCURE | Mờ mịt / khó hiểu | 3
+OBSCURE | Mờ mịt, khó hiểu | 3
 PARADOX | Nghịch lý | 3
-PRAGMATIC | Thực dụng / thực tế | 3
-REDUNDANT | Dư thừa / không cần thiết | 3
+PRAGMATIC | Thực dụng, thực tế | 3
+REDUNDANT | Dư thừa, không cần thiết | 3
 SPECULATIVE | Có tính suy đoán | 3
 SUBSEQUENT | Xảy ra sau đó | 3
-SUPERFICIAL | Hời hợt / nông cạn | 3
+SUPERFICIAL | Hời hợt, nông cạn | 3
 HYPNOTIC | Có tính thôi miên | 3
-TANGIBLE | Hữu hình / có thể chạm được | 3
-UBIQUITOUS | Phổ biến ở khắp mọi nơi | 3
-ZEALOUS | Hăng hái / nhiệt huyết | 3
-ADVOCATE | Ủng hộ / tán thành | 2
+TANGIBLE | Hữu hình, có thể chạm được | 3
+UBIQUITOUS | Tính từ chỉ thứ đâu cũng thấy, chỗ nào cũng có | 3
+ZEALOUS | Tính từ chỉ người lao vào làm hăng tới mức quá nhiệt | 3
+ADVOCATE | Động từ chỉ việc lên tiếng ủng hộ công khai cho một chủ trương | 2
 ALLEVIATE | Làm dịu bớt cơn đau hay nỗi khổ | 3
-COLLABORATE | Cộng tác / hợp tác | 2
-ENDEAVOR | Nỗ lực / cố gắng | 3
+COLLABORATE | Cộng tác, hợp tác | 2
+ENDEAVOR | Nỗ lực dồn sức làm một việc khó | 3 | ENDEAVOUR
 APPREHENSIVE | Cảm giác lo âu băn khoăn về một điều gì đó sắp xảy đến | 3
 LETHARGIC | Cảm giác uể oải, đờ đẫn, thiếu hụt toàn bộ năng lượng sống | 3
 QUINTESSENTIAL | Thuộc về phần tinh túy, điển hình hoàn hảo nhất của một phong cách | 3
-UBIQUITY | Sự hiện diện phổ biến ở khắp mọi nơi cùng lúc | 3
+UBIQUITY | Danh từ chỉ việc một thứ có mặt khắp nơi cùng lúc | 3
 VEHEMENT | Thái độ phản đối mãnh liệt kịch liệt khăng khăng | 3
 EPITOME | Hình mẫu thu nhỏ tiêu biểu nhất cho một đức tính cao đẹp | 3
 INNOCUOUS | Hoàn toàn vô hại, không gây ra bất cứ mối đe dọa nào | 3
 FASTIDIOUS | Tính cách kỹ tính, kén chọn, đòi hỏi mọi thứ phải hoàn hảo | 3
 COLLOQUIAL | Ngôn ngữ văn nói thân mật đời thường của người bản xứ | 3
-ZEAL | Lòng nhiệt thành, hăng hái cháy bỏng với một lý tưởng | 3
+ZEAL | Danh từ chỉ lòng nhiệt thành cháy bỏng với một lý tưởng | 3
 METAPHOR | Biện pháp tu từ ẩn dụ ví von trong văn học | 2
 SIMILE | Biện pháp so sánh ví von dùng chữ like hoặc as | 2
 HYPERBOLE | Phép nói quá khoa trương phóng đại trong văn học | 3

@@ -100,7 +100,7 @@ RING | Vòng trang sức đeo trên ngón tay | 1
 BOUQUET | Bó hoa xinh đẹp | 1
 ROMANTIC | Liên quan đến tình yêu và lãng mạn | 1
 IN LOVE | Trạng thái yêu ai đó | 1
-SWEETHEART | Người yêu, bạn trai/gái | 1
+SWEETHEART | Tiếng gọi âu yếm dành cho người thương | 1
 DARLING | Cách gọi thân thiết cho người yêu | 1
 DEAR | Cách gọi yêu thương | 1
 LOVER | Người yêu | 1
@@ -134,7 +134,7 @@ WIFE | Vợ, người phụ nữ đã kết hôn | 1
 HUSBAND | Chồng, người đàn ông đã kết hôn | 1
 MARRIED | Đã kết hôn | 1
 SINGLE | Độc thân, chưa kết hôn | 1
-DIVORCED | Ly dị, đã chia tay vợ/chồng | 1
+DIVORCED | Tính từ chỉ người đã ly hôn, không còn ràng buộc hôn nhân | 1
 ENGAGED | Đã đính hôn | 1
 DATING | Đang hẹn hò | 1
 RELATIONSHIP | Mối quan hệ giữa hai người | 1

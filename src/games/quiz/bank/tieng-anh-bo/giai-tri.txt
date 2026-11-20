@@ -92,7 +92,7 @@ BIOPIC | Phim tiểu sử nhân vật | 3 | BIOGRAPHY
 NOIR | Phim đen tối u uất | 3
 GOTHIC | Phong cách quái dị ảm đạm | 3
 PASTICHE | Tác phẩm ghép nhiều phong cách của người khác mà không chế giễu | 3 | IMITATION
-HOMAGE | Lời tôn vinh tác phẩm/tác giả | 3
+HOMAGE | Chi tiết cài vào phim để tỏ lòng kính trọng một tác phẩm đi trước | 3
 ALLUSION | Cách nhắc khéo tới tác phẩm khác mà không gọi tên | 3
 MOTIF | Chủ đề lặp lại trong tác phẩm | 3
 LEITMOTIF | Giai điệu lặp lại cho nhân vật | 3
@@ -103,7 +103,7 @@ TRAGIC FLAW | Khuyết điểm trong tính cách dẫn nhân vật chính tới 
 TRAGIC HERO | Nhân vật chính cao đẹp nhưng bị chính khuyết điểm của mình hại | 3
 ANTI-HERO | Nhân vật chính không toàn hảo | 3
 INGENUE | Nữ diễn viên trẻ và ngây thơ | 3
-INGENU | Nam diễn viên trẻ và ngây thơ | 3
+INGENUE | Vai nữ trẻ trong trắng ngây thơ trên sân khấu hay màn ảnh | 3 | INGENU
 AVANT GARDE | Phong cách tiên phong thử nghiệm | 3
 FINALE | Màn cuối hoành tráng khép lại cả chương trình | 3 | ENDING
 POETIC JUSTICE | Kết truyện trong đó kẻ ác bị báo ứng đúng cách nó gây ra | 3
@@ -262,7 +262,7 @@ YOUTUBE | Nền tảng chia sẻ video lớn nhất hành tinh | 1 | VIDEO PLATF
 TIKTOK | Mạng xã hội video ngắn nổi tiếng giới trẻ | 1 | SHORT VIDEO APP
 PODCAST | Chương trình âm thanh phát thanh chủ đề để nghe | 1 | AUDIO SHOW
 VLOGGER | Người làm video nhật ký đời sống chia sẻ lên mạng | 1
-GAMER | Game thủ đam mê chơi các trò chơi điện tử | 1 | PRO GAMER
+GAMER | Người mê chơi điện tử, cày ngày cày đêm | 1 | PRO GAMER
 COSPLAY | Trò hoá trang thành nhân vật truyện tranh game | 1 | COSTUME PLAY
 ANIME | Hoạt hình phong cách truyện tranh Nhật Bản | 1 | JAPANESE ANIMATION
 FANDOM | Cộng đồng những người cùng hâm mộ một thần tượng | 1

@@ -289,7 +289,7 @@ TOWER DIVE | Lao vào tháp đánh người | 3 | TOWER AGGRESSION
 PICK OFF | Cướp một người riêng rẻ | 3 | ISOLATION KILLS
 CUTSCENE | Cảnh điểm phim giữa trò chơi | 1 | MOVIE SCENE
 KEYBINDING | Ràng buộc phím tùy chỉnh | 1 | KEY MAPPING
-GAME PAD | Tay cầm có nút bấm để chơi game | 1
+GAME PAD | Tay cầm hai cần gạt và một rừng nút bấm | 1
 LOADING SCREEN | Màn hình chờ hiện ra trước khi vào trận | 1
 PLAYER NAME | Tên hiển thị của người chơi trong trò chơi | 1
 NEW GAME | Lựa chọn bắt đầu lại từ đầu câu chuyện | 1
@@ -387,7 +387,7 @@ REFUND POLICY | Quy định hoàn tiền nếu chơi chưa quá số giờ cho p
 EARLY ACCESS | Bản cho chơi sớm khi game còn đang làm dở | 2
 ROADMAP | Lộ trình các nội dung sẽ ra trong tương lai | 2
 DEV DIARY | Nhật ký nhà phát triển kể quá trình làm game | 3
-BETA KEY | Mã mời tham gia chơi thử bản beta | 2
+BETA KEY | Mã mời được chơi thử bản chưa phát hành chính thức | 2
 CLOSED BETA | Đợt thử nghiệm chỉ mời một số người | 3
 OPEN BETA | Đợt thử nghiệm ai cũng vào chơi được | 2
 SERVER WIPE | Việc xoá sạch dữ liệu máy chủ bắt đầu lại | 3

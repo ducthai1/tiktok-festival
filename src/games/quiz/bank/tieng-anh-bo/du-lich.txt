@@ -415,20 +415,20 @@ WISH | Lời chúc, điều ước | 2 | WISHES, BEST WISHES, GREETING, GREETING
 MID-AUTUMN | Tết Trung thu | 3 | MID-AUTUMN FESTIVAL, MOON FESTIVAL
 LUCKY MONEY | Tiền lì xì ngày Tết | 3 | RED ENVELOPE, RED ENVELOPES, RED PACKET
 LION DANCE | Múa lân | 3 | LION DANCING
-ACCOMMODATION | Chỗ ở / khách sạn lưu trú | 3
-RESERVATION | Đặt chỗ trước / đặt phòng | 2
+ACCOMMODATION | Chỗ ở, khách sạn lưu trú | 3
+RESERVATION | Đặt chỗ trước, đặt phòng | 2
 NEIGHBOURHOOD | Khu phố xóm giềng | 2 | NEIGHBORHOOD
 PEDESTRIAN | Người đi bộ trên đường | 3
 FORTNIGHT | Khoảng thời gian hai tuần (14 ngày) | 3
 MILLENNIUM | Thiên niên kỷ (1000 năm) | 3
-PUNCTUAL | Đúng giờ / không muộn | 2
-TEMPORARY | Tạm thời / không vĩnh viễn | 3
-PERMANENT | Lâu dài / vĩnh viễn | 3
-SCHEDULE | Thời gian biểu / lịch trình | 1
+PUNCTUAL | Đúng giờ, không muộn | 2
+TEMPORARY | Tạm thời, không vĩnh viễn | 3
+PERMANENT | Lâu dài, vĩnh viễn | 3
+SCHEDULE | Thời gian biểu, lịch trình | 1
 DURATION | Khoảng thời gian kéo dài | 2
 EXCURSION | Chuyến tham quan dã ngoại | 3
 INFRASTRUCTURE | Cơ sở hạ tầng đô thị | 3
-COMMUTER | Người đi làm hằng ngày bằng xe bus/tàu | 3
+COMMUTER | Người ngày nào cũng bắt xe buýt hay tàu đi làm xa | 3
 BOULEVARD | Đại lộ rộng lớn | 2
 CROSSWALK | Vạch sang đường cho người đi bộ | 1
 TIMEZONE | Múi giờ Trái Đất | 2
@@ -448,7 +448,7 @@ SAHARA | Vùng hoang mạc cát nhiệt đới lớn nhất hành tinh ở châu
 EVEREST | Đỉnh núi tuyết cao nhất hành tinh trên dãy Himalaya | 1
 AMAZON | Khu rừng mưa nhiệt đới nguyên sinh lớn nhất thế giới - lá phổi xanh của Trái Đất | 1
 PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | PACIFIC OCEAN
-ATLANTIC | Đại Tây Dương - đại dương ngăn cách châu Mỹ và châu Âu/châu Phi | 2 | ATLANTIC OCEAN
+ATLANTIC | Đại dương nằm giữa châu Mỹ với châu Âu và châu Phi | 2 | ATLANTIC OCEAN
 NILE | Dòng sông Nin huyền thoại nuôi dưỡng nền văn minh Ai Cập cổ | 2 | NILE RIVER
 ALPS | Dãy núi An-pơ hùng vĩ phủ đầy tuyết trắng trải qua các nước châu Âu | 2
 ANTARCTICA | Châu Nam Cực - lục địa băng giá lạnh nhất địa cầu nơi chim cánh cụt sống | 2

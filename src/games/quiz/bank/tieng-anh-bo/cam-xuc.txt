@@ -99,11 +99,11 @@ MAN | Người đàn ông | 1 | MEN, GUY
 WOMAN | Người phụ nữ | 1 | WOMEN, LADY
 ADULT | Người lớn | 2 | ADULTS, GROWN-UP, GROWNUP
 FEATHER | Lông vũ chim | 1
-TOOTHLYNE | Đau răng / nhức răng | 2
+TOOTHACHE | Cơn đau răng nhức buốt phải đi nha sĩ | 2
 EMOTION | Cảm xúc tâm lý | 1
-CONFIDENCE | Sự tự tin / lòng tin | 2
-ENTHUSIASM | Sự nhiệt huyết / hào hứng | 3
-EXHAUSTED | Kiệt sức / mệt mỏi lả | 2
+CONFIDENCE | Sự tự tin, lòng tin | 2
+ENTHUSIASM | Sự nhiệt huyết, hào hứng | 3
+EXHAUSTED | Kiệt sức, mệt mỏi lả | 2
 PESSIMISTIC | Bi quan tiêu cực | 3
 RECOVERY | Sự hồi phục sức khỏe | 2
 WELLNESS | Sức khỏe toàn diện | 2
@@ -112,9 +112,9 @@ LUNGS | Cặp lá phổi hít thở | 2
 HOSPITALIZATION | Việc nhập viện điều trị | 3 | HOSPITALISATION
 DIAGNOSTIC | Việc chẩn đoán bệnh | 3
 PREVENTION | Việc phòng ngừa bệnh tật | 2
-EXHAUSTION | Sự kiệt sức / lả đi | 3
+EXHAUSTION | Sự kiệt sức, lả đi | 3
 SATISFACTION | Sự hài lòng thỏa mãn | 2
-FRUSTRATION | Sự bực bội / bức bối | 3
+FRUSTRATION | Sự bực bội, bức bối | 3
 NOSTALGIA | Cảm giác bồi hồi hoài niệm về những kỷ niệm đẹp trong quá khứ | 3
 EUPHORIA | Cảm giác hưng phấn sung sướng tột cùng lâng lâng hạnh phúc | 3
 MELANCHOLY | Nỗi buồn man mác u sầu trầm lắng trong lòng | 3

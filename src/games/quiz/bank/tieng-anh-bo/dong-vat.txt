@@ -458,13 +458,13 @@ SOLAR ENERGY | Năng lượng mặt trời | 3 | SOLAR POWER
 PROTECT | Bảo vệ (môi trường) | 2
 EXTINCT | Tuyệt chủng | 3
 WILDFIRE | Cháy rừng | 3 | FOREST FIRE, BUSHFIRE
-PANTHER | Báo đen (họ mèo săn mồi sa mạc/rừng rậm) | 2 | BLACK PANTHER
+PANTHER | Con báo lông đen tuyền, rình mồi trong rừng rậm | 2 | BLACK PANTHER
 CHAMELEON | Tắc kè hoa (loài bò sát đổi màu theo môi trường) | 2
 SALMON | Cá hồi (loài cá bơi ngược dòng đẻ trứng) | 2
 AVALANCHE | Trận tuyết lở | 3
-GLACIER | Sông băng / khối băng vĩnh cửu | 3
+GLACIER | Sông băng, khối băng vĩnh cửu | 3
 RAINFOREST | Rừng nhiệt đới | 2
-HURRICANE | Cơn bão biển / siêu bão | 3
+HURRICANE | Cơn bão biển, siêu bão | 3
 ECOSYSTEM | Hệ sinh thái | 3
 BIODIVERSITY | Đa dạng sinh học | 3
 HIPPOPOTAMUS | Thú khổng lồ da trần, ngâm mình dưới sông châu Phi | 2 | HIPPO
@@ -481,7 +481,7 @@ GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất 
 OASIS | Ốc đảo tươi tốt có nước ngọt giữa sa mạc cát mênh mông | 2
 PENINSULA | Bán đảo có ba mặt giáp với biển | 3
 ARCHIPELAGO | Một quần đảo gồm nhiều đảo nhỏ tập hợp lại | 3
-TUNDRA | Vùng đài nguyên / đồng rêu băng giá quanh năm | 3
+TUNDRA | Vùng đài nguyên, đồng rêu băng giá quanh năm | 3
 EQUATOR | Đường xích đạo chia Trái Đất thành hai bán cầu | 2
 AURORA | Hiện tượng cực quang ánh sáng dải màu trên bầu trời cực | 3
 DUNE | Cồn cát cao nhấp nhô do gió thổi trên sa mạc | 2 | SAND DUNE

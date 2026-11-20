@@ -147,7 +147,7 @@ SLOGAN | Khẩu hiệu quảng cáo | 2 | TAGLINE
 COMPETITOR | Đối thủ cạnh tranh | 2
 SALES | Doanh số bán hàng | 2
 EQUIPMENT | Thiết bị, máy móc | 2 | MACHINERY
-PHOTOCOPY | Bản sao (bản photo) | 2
+PHOTOCOPY | Bản chụp lại y hệt tờ giấy gốc bằng máy văn phòng | 2
 BALANCE | Số dư tài khoản | 2
 PARTNERSHIP | Quan hệ đối tác lâu dài, cũng là loại hình công ty hợp danh | 2 | COOPERATION
 STRATEGY | Chiến lược | 2 | PLAN
@@ -206,9 +206,9 @@ AUDIT | Kiểm toán (kiểm tra tài chính) | 3 | AUDITING
 TRANSACTION | Giao dịch tài chính | 3 | DEAL
 COMPENSATION | Tiền đền bù, bồi thường | 3 | INDEMNITY, REPARATION
 NEGOTIATION | Sự thương lượng, đàm phán giữa hai bên | 3 | BARGAINING, NEGOTIATIONS
-STAKEHOLDER | Bên liên quan (trong dự án/doanh nghiệp) | 3 | INTERESTED PARTY
+STAKEHOLDER | Bên có quyền lợi dính líu tới kết quả của dự án | 3 | INTERESTED PARTY
 PORTFOLIO | Danh mục đầu tư | 3
-CORRESPONDENCE | Thư từ giao dịch nội bộ/đối ngoại | 3 | LETTERS, MAIL
+CORRESPONDENCE | Toàn bộ thư từ công văn trao đổi qua lại của công ty | 3 | LETTERS, MAIL
 COLLATERAL | Tài sản thế chấp (vay ngân hàng) | 3 | PLEDGE
 RECRUITMENT | Sự tuyển dụng nhân sự | 3 | RECRUITING, HIRING
 COMMISSION | Tiền hoa hồng (doanh số) | 2
@@ -220,9 +220,9 @@ INFLATION | Sự lạm phát | 3
 VACANCY | Chỗ trống chưa có người, cũng dùng cho phòng khách sạn còn trống | 2 | JOB VACANCY, OPENING
 ALLOWANCE | Tiền phụ cấp trả thêm ngoài lương như xăng xe, ăn trưa | 2
 ACCOMMODATE | Cung cấp chỗ ở hoặc đáp ứng nhu cầu | 3
-AMENDMENT | Sự sửa đổi / bổ sung hợp đồng | 3
+AMENDMENT | Sự sửa đổi, bổ sung hợp đồng | 3
 COMPLIANCE | Sự tuân thủ quy định | 3
-DELIBERATION | Sự cân nhắc / thảo luận kỹ | 3
+DELIBERATION | Sự cân nhắc, thảo luận kỹ | 3
 OUTSOURCING | Thuê ngoài dịch vụ | 3
 QUOTATION | Văn bản báo giá chính thức ghi rõ từng hạng mục | 2
 RESTRUCTURE | Tái cấu trúc doanh nghiệp | 3
@@ -240,17 +240,17 @@ COLLABORATION | Việc cùng nhau làm chung một dự án cụ thể | 2
 CONFIRMATION | Sự xác nhận | 2
 CONTRACTOR | Nhà thầu | 2
 CONVENTION | Đại hội lớn của một hiệp hội, cũng có nghĩa là thông lệ chung | 2
-DELEGATION | Đoàn đại biểu / sự ủy thác | 3
+DELEGATION | Đoàn đại biểu, sự ủy thác | 3
 DISTRIBUTION | Sự phân phối | 2
 EFFICIENCY | Danh từ chỉ mức làm được nhiều mà tốn ít nguồn lực | 2
-ELIGIBILITY | Đủ điều kiện / tư cách | 3
-ENTERPRISE | Doanh nghiệp / xí nghiệp | 3
-ESTABLISHMENT | Sự thành lập / cơ sở | 3
+ELIGIBILITY | Đủ điều kiện, tư cách | 3
+ENTERPRISE | Doanh nghiệp, xí nghiệp | 3
+ESTABLISHMENT | Sự thành lập, cơ sở | 3
 EVALUATION | Sự đánh giá | 2
-FACILITY | Cơ sở vật chất / tiện nghi | 2
+FACILITY | Cơ sở vật chất, tiện nghi | 2
 GUARANTEE | Lời cam đoan chắc chắn về chất lượng, sai thì hoàn tiền | 2
-IMPLEMENTATION | Sự thi hành / triển khai | 3
-INSPECTION | Sự thanh tra / kiểm tra | 3
+IMPLEMENTATION | Sự thi hành, triển khai | 3
+INSPECTION | Sự thanh tra, kiểm tra | 3
 MANAGEMENT | Ban lãnh đạo điều hành công ty, hoặc chính việc điều hành đó | 1
 OCCUPATION | Nghề nghiệp | 2
 OPPORTUNITY | Cơ hội | 1

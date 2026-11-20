@@ -38,7 +38,7 @@ CAP | Chiếc nón (mũ) lưỡi trai thể thao | 1 | BASEBALL CAP
 SHIRT | Chiếc áo sơ mi có cổ cài cúc | 1 | DRESS SHIRT
 T-SHIRT | Chiếc áo phông (áo thun) cộc tay | 1 | TEE
 PANTS | Quần dài, cách người Mỹ gọi | 1
-JEANS | Chiếc quần bò (quần jean) vải thô xanh | 1 | BLUE JEANS
+JEANS | Chiếc quần bò vải thô xanh, càng mặc càng bạc màu | 1 | BLUE JEANS
 SKIRT | Chiếc chân váy xếp ly của phụ nữ | 1
 JACKET | Chiếc áo khoác lửng mặc bên ngoài | 1
 COAT | Chiếc áo măng tô (áo khoác dài mùa đông) | 1 | OVERCOAT
@@ -108,7 +108,7 @@ BINOCULARS | Ống nhòm hai mắt nhìn xa phong cảnh | 2 | FIELD GLASSES
 TELESCOPE | Kính thiên văn quang học ngắm trăng sao | 2 | SPYGLASS
 CALCULATOR | Máy tính bỏ túi bấm phím cộng trừ nhân chia | 1 | POCKET CALCULATOR
 EARPHONES | Tai nghe có dây nhét vào lỗ tai | 1
-MICROPHONE | Cây micrô cầm tay hát karaoke | 1 | MIC
+MICROPHONE | Thứ cầm tay hứng giọng để hát karaoke cho to tiếng | 1 | MIC
 REMOTE CONTROL | Chiếc điều khiển từ xa tivi bấm kênh | 1 | REMOTE
 MOUSEPAD | Tấm lót chuột máy tính rê chuột mượt mà | 1 | MOUSE PAD
 TRIPOD | Giá ba chân đỡ máy ảnh chống rung | 2 | CAMERA STAND

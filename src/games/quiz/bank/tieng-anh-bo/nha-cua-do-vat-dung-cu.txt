@@ -2,7 +2,7 @@
 SCISSORS | Cây kéo dùng để cắt giấy và cắt vải | 1
 HAMMER | Cây búa đóng đinh bằng sắt có cán gỗ | 1
 SCREWDRIVER | Chiếc tua vít dùng để vặn ốc xoáy | 1
-WRENCH | Cái cờ lê / mỏ lết dùng để siết chặt đai ốc bù loong | 2 | SPANNER
+WRENCH | Cái cờ lê, mỏ lết dùng để siết chặt đai ốc bù loong | 2 | SPANNER
 PLIERS | Cái kìm mỏ nhọn dùng để kẹp và uốn dây thép | 2
 WHEELBARROW | Chiếc xe rùa một bánh đẩy cát sỏi trong công trình | 2
 TAPE MEASURE | Chiếc thước dây rút cuộn tròn đo chiều dài thợ may | 2

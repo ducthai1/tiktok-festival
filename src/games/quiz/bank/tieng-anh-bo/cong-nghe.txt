@@ -31,7 +31,7 @@ POP-UP | Cửa sổ bật lên | 2 | POPUP
 DRAG AND DROP | Kéo và thả | 2
 DOUBLE-CLICK | Nhấp đúp chuột | 1
 RIGHT-CLICK | Nhấp chuột phải | 1
-TOGGLE | Nút gạt bật/tắt | 3
+TOGGLE | Nút gạt qua gạt lại để bật rồi tắt một tính năng | 3
 DROPDOWN | Danh sách thả xuống | 3 | DROP-DOWN, DROPDOWN MENU
 CHECKBOX | Ô đánh dấu (tích chọn) | 2 | CHECK BOX, TICK BOX
 SLIDER | Thanh trượt (kéo để chỉnh) | 3
@@ -44,7 +44,7 @@ ZIP | Nén tệp | 2 | COMPRESS
 UNZIP | Giải nén tệp | 2 | DECOMPRESS
 SPREADSHEET | Bảng tính | 2
 WORD PROCESSOR | Trình soạn thảo văn bản | 3
-SLIDESHOW | Trình chiếu ảnh/slide | 2
+SLIDESHOW | Màn trình chiếu lần lượt từng tấm ảnh một | 2
 FONT | Phông chữ | 1 | TYPEFACE
 PIXEL | Điểm ảnh | 2
 SCREENSAVER | Hình chờ bảo vệ màn hình | 3
@@ -210,7 +210,7 @@ HARD DRIVE | Ổ cứng | 2 | HARD DISK, HDD
 POWER BANK | Sạc dự phòng | 1 | PORTABLE CHARGER
 SMARTWATCH | Đồng hồ thông minh | 1 | SMART WATCH
 EARBUDS | Cặp tai nghe không dây nhỏ xíu nhét vừa lỗ tai | 2
-GAME CONSOLE | Máy chuyên để chơi game, cắm vào ti vi hoặc cầm tay | 2
+GAME CONSOLE | Máy chuyên để chơi, cắm vào ti vi hoặc cầm tay, như PlayStation | 2
 VIDEO GAME | Trò chơi chạy trên máy tính hoặc máy chơi game | 1
 SEARCH | Tìm kiếm trên mạng | 1 | LOOK UP
 LINK | Chỗ bấm vào để nhảy sang trang khác | 2
@@ -221,8 +221,8 @@ CYBERSECURITY | An ninh mạng | 3
 CLOUD COMPUTING | Điện toán đám mây | 2
 BLOCKCHAIN | Công nghệ chuỗi khối | 3
 AUTOMATION | Tự động hóa quy trình | 3
-CRYPTOCURRENCY | Tiền mã hóa / tiền điện tử | 3
-FRAMEWORK | Bộ khung phần mềm / nền tảng | 3
+CRYPTOCURRENCY | Tiền mã hóa, tiền điện tử | 3
+FRAMEWORK | Bộ khung phần mềm, nền tảng | 3
 MICROPROCESSOR | Cả bộ xử lý thu gọn trong một con chip duy nhất | 3
 OPEN SOURCE | Mã nguồn mở | 2
 SEMICONDUCTOR | Vật liệu bán dẫn | 3
@@ -241,7 +241,7 @@ VULNERABILITY | Lỗ hổng bảo mật | 3
 DATACENTER | Trung tâm dữ liệu | 2
 REDUNDANCY | Sự dự phòng dữ liệu | 3
 SCALABILITY | Khả năng mở rộng hệ thống | 3
-THROUGHPUT | Băng thông thực tế / thông lượng | 3
+THROUGHPUT | Băng thông thực tế, thông lượng | 3
 PROTOCOL | Giao thức kết nối | 2
 VIRTUALIZATION | Công nghệ ảo hóa | 3
 MAINFRAME | Máy tính cỡ lớn siêu mạnh | 3
@@ -255,7 +255,7 @@ ABSTRACTION | Tính trừu tượng trong lập trình | 3
 ENCAPSULATION | Tính đóng gói dữ liệu | 3
 INHERITANCE | Tính kế thừa trong lập trình | 3
 POLYMORPHISM | Tính đa hình | 3
-DEPRECATED | Đã lỗi thời / không khuyến khích dùng | 3
+DEPRECATED | Đã lỗi thời, không khuyến khích dùng | 3
 BACKWARD COMPATIBILITY | Tính tương thích ngược | 3
 IMMUTABLE | Không thể thay đổi | 3
 SERIALIZATION | Việc tuần tự hóa dữ liệu | 3
@@ -357,7 +357,7 @@ PROOF OF CONCEPT | Bản thử nghiệm ý tưởng nhanh để kiểm tra tính
 MINIMUM VIABLE PRODUCT | Phiên bản tối giản đủ để thử nghiệm thị trường | 3
 TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 2
 PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3
-TOKENIZATION | Quá trình tách văn bản thành các đơn vị nhỏ token trong NLP | 3
+TOKENIZATION | Việc cắt câu chữ thành từng mẩu nhỏ cho máy xử lý ngôn ngữ | 3
 EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI | 3
 TOUCH ID | Cách mở khoá máy bằng vân tay | 1
 FACE ID | Cách mở khoá máy bằng khuôn mặt | 1

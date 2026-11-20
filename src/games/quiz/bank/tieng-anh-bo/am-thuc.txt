@@ -127,7 +127,7 @@ DURIAN | Quả sầu riêng | 3 | DURIANS
 LYCHEE | Quả vải (vải thiều) | 3 | LITCHI, LICHEE, LYCHEES
 LONGAN | Quả nhãn | 3 | LONGANS
 RAMBUTAN | Quả chôm chôm | 3 | RAMBUTANS
-MANGOSTEEN | Quả măng cụt | 3 | MANGOSTEENS
+MANGOSTEEN | Quả vỏ tím dày, bổ ra có các múi trắng ngọt thanh | 3 | MANGOSTEENS
 JACKFRUIT | Quả mít | 3
 POMELO | Quả múi to vỏ dày xanh, tách ra ăn tráng miệng | 3 | GRAPEFRUIT, POMELOS
 STAR FRUIT | Quả khế | 3 | CARAMBOLA
@@ -266,16 +266,16 @@ LUNCH | Bữa trưa | 1
 DINNER | Bữa tối | 1 | SUPPER
 MEAL | Bữa ăn | 1 | MEALS
 MENU | Thực đơn | 1 | MENUS
-SPAGHETTI | Mì Ý sốt cà chua / thịt băm | 1
-CROISSANT | Bánh sừng bò / bánh sừng trâu | 2
+SPAGHETTI | Mì Ý sốt cà chua, thịt băm | 1
+CROISSANT | Bánh sừng bò, bánh sừng trâu | 2
 PANCAKE | Bánh rán chảo ăn kèm mật ong | 1
-OATMEAL | Yến mạch / cháo yến mạch | 2
+OATMEAL | Yến mạch, cháo yến mạch | 2
 ESPRESSO | Cà phê đậm đặc | 2
 CAPPUCCINO | Cà phê bọt sữa Ý | 2
-MILKSHAKE | Sữa lắc trái cây / kem | 2
+MILKSHAKE | Sữa lắc trái cây, kem | 2
 BARBECUE | Tiệc nướng ngoài trời, thịt tẩm sốt nướng than | 1 | BBQ
 APPETIZER | Món nhỏ dọn đầu bữa cho đỡ đói trước món chính | 3
-BEVERAGE | Đồ uống / thức uống nói chung | 3
+BEVERAGE | Đồ uống, thức uống nói chung | 3
 INGREDIENT | Nguyên liệu nấu ăn | 2
 WATERMELON | Dưa hấu đỏ | 1
 ASPARAGUS | Măng tây | 3
@@ -290,14 +290,14 @@ BLUEBERRY | Quả việt quất | 2
 RASPBERRY | Quả mâm xôi | 2
 PERSIMMON | Quả hồng chín | 2
 NUTRIENT | Chất dinh dưỡng thực phẩm | 3
-CALORIE | Lượng calo năng lượng | 2
+CALORIE | Đơn vị đo năng lượng của thức ăn, người ăn kiêng hay đếm | 2
 TIRAMISU | Món bánh ngọt béo ngậy vị cà phê và cacao trứ danh của nước Ý | 1
 GUACAMOLE | Sốt bơ dầm nhuyễn trộn gia vị kiểu Mexico | 3
 TACO | Món bánh vỏ ngô giòn gập đôi kẹp thịt băm cay nổi tiếng của Mexico | 1 | TACOS
 BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico | 2 | BURRITOS
 SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản | 1
 WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản | 2
-VANILLA | Hương vani thơm ngọt ngào cho món bánh kem | 1
+VANILLA | Hương thơm ngọt lấy từ quả lan, vị kem trắng cơ bản nhất | 1
 CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm | 1 | CARAMEN
 COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng | 2 | CANDY FLOSS
 LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu | 1
@@ -374,7 +374,7 @@ BIRYANI | Món cơm trộn thơm lừng tẩm ướp nhiều loại thảo mộc
 TANDOORI | Món gà ướp gia vị đỏ nướng trong lò đất hình chum của Ấn Độ | 2
 SAMOSA | Bánh gối chiên hình tam giác vỏ giòn rụm nhân khoai tây và đậu của Ấn Độ | 2
 PHO | Món nước dùng xương bò thơm quế hồi, ăn với bánh sợi dẹt, đặc sản Hà Nội | 1
-BANH MI | Ổ bánh kẹp pate thịt chả rau dưa, đồ ăn sáng vỉa hè Việt Nam | 1
+BANH MI | Ổ ruột rỗng kẹp pate thịt chả rau dưa, bữa sáng vỉa hè Việt Nam | 1
 POUTINE | Món khoai tây chiên phủ phô mai cục và rưới đẫm xốt thịt nâu của Canada | 2
 GOULASH | Món canh thịt bò hầm đậm đà với bột ớt chuông paprika của Hungary | 3
 SCHNITZEL | Món thịt đập mỏng lăn bột chiên vàng giòn rụm của nước Áo | 2

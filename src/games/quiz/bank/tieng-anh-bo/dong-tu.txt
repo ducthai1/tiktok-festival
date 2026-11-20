@@ -133,28 +133,28 @@ RARE | Hiếm (tính từ) | 3 | UNCOMMON
 SMOOTH | Nhẵn, mịn (tính từ, vd mặt bàn nhẵn) | 3
 ROUGH | Thô ráp, sần sùi (tính từ) | 3 | COARSE
 ACCOMPLISH | Hoàn thành xuất sắc mục tiêu | 3
-ACCUMULATE | Tích lũy / gom góp dần | 3
-DETERMINE | Quyết tâm / xác định rõ | 2
-FASCINATING | Lôi cuốn / cực kỳ thú vị | 3
-HESITATE | Do dự / ngập ngừng | 2
+ACCUMULATE | Tích lũy, gom góp dần | 3
+DETERMINE | Quyết tâm, xác định rõ | 2
+FASCINATING | Lôi cuốn, cực kỳ thú vị | 3
+HESITATE | Do dự, ngập ngừng | 2
 IMPRESSIVE | Gây ấn tượng mạnh | 2
-MAINTAIN | Duy trì / giữ vững | 2
-OBVIOUS | Rõ ràng / hiển nhiên | 2
+MAINTAIN | Duy trì, giữ vững | 2
+OBVIOUS | Rõ ràng, hiển nhiên | 2
 PERSUADE | Thuyết phục người khác | 2
-STIMULATE | Kích thích / thúc đẩy | 3
-TOLERANT | Vị tha / nhẫn nại khoan dung | 3
-ULTIMATE | Cuối cùng / tối thượng | 3
-VALUABLE | Có giá trị cao / quý giá | 2
-WONDERFUL | Tuyệt vời / kỳ diệu | 1
+STIMULATE | Kích thích, thúc đẩy | 3
+TOLERANT | Vị tha, nhẫn nại khoan dung | 3
+ULTIMATE | Cuối cùng, tối thượng | 3
+VALUABLE | Có giá trị cao, quý giá | 2
+WONDERFUL | Tuyệt vời, kỳ diệu | 1
 ACCURATE | Chính xác tuyệt đối | 2
-APPRECIATE | Trân trọng / cảm kích | 2
-BOOST | Tăng cường / đẩy mạnh | 2
-DEMONSTRATE | Chứng minh / thể hiện rõ | 3
-ENCOURAGE | Khuyến khích / động viên | 2
+APPRECIATE | Trân trọng, cảm kích | 2
+BOOST | Tăng cường, đẩy mạnh | 2
+DEMONSTRATE | Chứng minh, thể hiện rõ | 3
+ENCOURAGE | Khuyến khích, động viên | 2
 INNOVATE | Đổi mới sáng tạo | 3
 MAXIMIZE | Tối đa hóa | 2
-MINIMIZE | Tối thiểu hóa / giảm bớt | 2
-NAVIGATE | Định hướng / điều hướng | 3
+MINIMIZE | Tối thiểu hóa, giảm bớt | 2
+NAVIGATE | Định hướng, điều hướng | 3
 PRIORITIZE | Ưu tiên hàng đầu | 3
 SIMPLIFY | Đơn giản hóa vấn đề | 2
 TRANSFORM | Biến đổi hoàn toàn | 3

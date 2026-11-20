@@ -236,13 +236,13 @@ FATIGUE | Mệt mỏi kéo dài | 3 | TIREDNESS
 SWEAT | Mồ hôi | 2 | SWEATING, PERSPIRATION
 CARDIOLOGY | Khoa tim mạch | 3
 IMMUNIZATION | Chương trình gây miễn dịch cho cả cộng đồng | 3
-PEDIATRICS | Khoa nhi / y học trẻ em | 3
+PEDIATRICS | Khoa nhi, y học trẻ em | 3
 PHYSICIAN | Bác sĩ nội khoa chữa bằng thuốc chứ không mổ | 2
 VACCINATION | Việc tiêm chế phẩm phòng bệnh cho một người | 2
 CHRONIC | Bệnh mãn tính dai dẳng | 3
-MALIGNANT | Khối u ác tính / nguy hiểm | 3
+MALIGNANT | Khối u ác tính, nguy hiểm | 3
 BENIGN | Khối u lành tính | 3
-PARALYSIS | Tình trạng liệt / mất cảm giác | 3
+PARALYSIS | Tình trạng liệt, mất cảm giác | 3
 TRANSPLANT | Ca ghép tạng nội tạng | 3
 CARDIAC | Thuộc về tim mạch | 3
 DERMATOLOGY | Khoa da liễu | 3
@@ -250,7 +250,7 @@ NEUROLOGY | Khoa thần kinh | 3
 ONCOLOGY | Khoa ung bướu | 3
 PATHOLOGY | Bệnh lý học | 3
 PSYCHIATRY | Khoa tâm thần | 3
-RADIOLOGY | Khoa chẩn đoán hình ảnh / X-quang | 3
+RADIOLOGY | Khoa chẩn đoán hình ảnh, X-quang | 3
 REHABILITATION | Phục hồi chức năng | 3
 SYNDROME | Hội chứng bệnh lý | 3
 ABDOMEN | Vùng bụng | 2
@@ -260,7 +260,7 @@ CHOLESTEROL | Chất mỡ trong máu | 2
 CONCUSSION | Sự chấn động não | 3
 DIZZINESS | Danh từ chỉ cơn choáng váng mất thăng bằng | 2
 GENETICS | Di truyền học | 3
-HEART ATTACK | Cơn đau tim / đột quỵ tim | 1
+HEART ATTACK | Cơn đau tim, đột quỵ tim | 1
 HEMOGLOBIN | Huyết sắc tố | 3
 INFLAMMATION | Sự viêm nhiễm | 3
 INTENSIVE CARE | Việc chăm sóc liên tục cho ca bệnh nguy kịch | 3

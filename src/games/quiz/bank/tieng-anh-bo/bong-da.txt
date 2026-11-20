@@ -177,7 +177,7 @@ HOME GROUND | Chính sân vận động mà đội lấy làm sân nhà | 1
 AWAY GAME | Trận cụ thể phải đi xa tới sân đối phương | 1
 AGGREGATE SCORE | Tổng tỷ số sau hai lượt | 3
 AWAY GOAL RULE | Luật bàn thắng sân khách | 3
-BOOKING | Nhận thẻ phạt (vàng/đỏ) | 2
+BOOKING | Việc trọng tài ghi tên cầu thủ vào sổ khi rút thẻ | 2
 SKIPPER | Tiếng lóng của báo chí Anh để gọi đội trưởng | 2
 BRACE | Ghi 2 bàn trong một trận | 3
 POACHER | Tiền đạo chớp thời cơ | 3

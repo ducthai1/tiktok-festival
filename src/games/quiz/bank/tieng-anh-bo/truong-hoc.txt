@@ -150,7 +150,7 @@ SPEND | Tiêu tiền (xài tiền) | 2
 CHANGE | Tiền thối, tiền thừa trả lại | 3
 DEBT | Món nợ | 3 | DEBTS
 SAVINGS | Tiền tiết kiệm | 3 | SAVING
-ASSIGNMENT | Bài tập được giao / nhiệm vụ | 2
+ASSIGNMENT | Bài tập được giao, nhiệm vụ | 2
 CERTIFICATE | Giấy chứng nhận đã hoàn thành một khoá học ngắn | 2
 DIPLOMA | Tấm bằng nhận được khi học xong một bậc học | 3
 INTERNSHIP | Kỳ thực tập của sinh viên | 2
@@ -160,7 +160,7 @@ PENSION | Tiền lương hưu | 3
 SEMINAR | Buổi học có diễn giả trình bày rồi cả nhóm cùng thảo luận | 3
 COMPETENCE | Đủ khả năng làm được việc ở mức yêu cầu | 3
 PROFICIENCY | Mức thành thạo cao, làm nhuần nhuyễn như dân chuyên | 3
-WORKPLACE | Môi trường làm việc / nơi làm việc | 2
+WORKPLACE | Môi trường làm việc, nơi làm việc | 2
 PROFESSOR | Giáo sư đại học giảng dạy | 2
 TUTOR | Gia sư dạy kèm | 1
 LECTURER | Giảng viên đại học | 2
