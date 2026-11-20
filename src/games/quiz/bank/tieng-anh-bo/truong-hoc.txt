@@ -150,7 +150,7 @@ SPEND | Tiêu tiền (xài tiền) | 2
 CHANGE | Tiền thối, tiền thừa trả lại | 3
 DEBT | Món nợ | 3 | DEBTS
 SAVINGS | Tiền tiết kiệm | 3 | SAVING
-ASSIGNMENT | Bài tập được giao, nhiệm vụ | 2
+ASSIGNMENT | Danh từ chỉ bài tập hay đầu việc được giao cho mình | 2
 CERTIFICATE | Giấy chứng nhận đã hoàn thành một khoá học ngắn | 2
 DIPLOMA | Tấm bằng nhận được khi học xong một bậc học | 3
 INTERNSHIP | Kỳ thực tập của sinh viên | 2

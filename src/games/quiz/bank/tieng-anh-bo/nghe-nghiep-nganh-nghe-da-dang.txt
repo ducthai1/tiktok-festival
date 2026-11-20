@@ -87,7 +87,7 @@ PERSONAL ASSISTANT | Trợ lý cá nhân | 2
 CAREER COUNSELOR | Tư vấn viên sự nghiệp | 2 | CAREER COUNSELLOR
 THERAPIST | Nhà trị liệu tâm lý | 2
 YOUTH WORKER | Nhân viên công tác xã hội chuyên làm việc với thanh thiếu niên | 2
-FUNDRAISER | Người quyên góp tiền từ thiện | 2
+FUNDRAISER | Người đứng ra kêu gọi, hoặc buổi tổ chức để gây quỹ | 2
 GRANT WRITER | Người viết đơn xin hỗ trợ | 2
 PRISON GUARD | Nhân viên canh giữ phạm nhân trong trại giam | 2
 PAROLE OFFICER | Viên chức phóng thích có điều kiện | 2

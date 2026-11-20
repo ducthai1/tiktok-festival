@@ -63,7 +63,7 @@ LOVE TRIANGLE | Mối tình tay ba | 3
 LOVEBIRDS | Đôi uyên ương quấn quýt bên nhau | 3
 HEARTSTRINGS | Những cảm xúc sâu kín nhất trong tim | 3
 LOVE AT FIRST SIGHT | Yêu từ cái nhìn đầu tiên | 3
-CANDLELIT DINNER | Bữa tối lãng mạn dưới ánh nến | 3
+CANDLELIT DINNER | Bữa tối chỉ thắp nến, tắt hết đèn cho thật tình tứ | 3
 PROMISE RING | Nhẫn hứa hẹn tặng người yêu trước khi đính hôn | 3
 LOCKET | Mặt dây chuyền mở ra được, đựng ảnh người thương | 3
 TWIN FLAME | Ngọn lửa song sinh, linh hồn đồng điệu | 3
@@ -285,7 +285,7 @@ SWIPE | Vuốt trái hoặc phải | 2
 UNMATCH | Hủy ghép cặp | 2
 RELATIONSHIP STATUS | Tình trạng quan hệ | 2
 COMMITTED | Cam kết, gắn bó sâu trong tình yêu | 2
-ROMANTIC DINNER | Bữa tối lãng mạn | 2
+ROMANTIC DINNER | Bữa tối hai người hẹn hò ở nhà hàng sang | 2
 ROMANTIC MOVIE | Phim lãng mạn | 2
 MARRIAGE PROPOSAL | Lời cầu hôn | 2
 NUPTIAL | Liên quan đến lễ cưới | 3

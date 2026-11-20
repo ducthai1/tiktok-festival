@@ -208,7 +208,7 @@ ARISE | Nảy sinh hoặc xuất hiện vấn đề bất ngờ | 2 | OCCUR
 ARREST | Bắt giữ nghi phạm tội phạm | 2
 ASCEND | Đi lên cao hoặc trèo lên bậc thang | 3
 ASSESS | Đánh giá mức độ hoặc thẩm định giá trị | 2
-ASSIGN | Phân công nhiệm vụ hoặc giao bài tập | 2 | ALLOT
+ASSIGN | Động từ chỉ việc giao đầu việc cho ai đó làm | 2 | ALLOT
 ASSUME | Giả định hoặc cho rằng điều gì là đúng | 2 | PRESUME
 ATTACH | Đính kèm tệp tin hoặc gắn chặt vào | 2 | APPEND
 ATTEMPT | Cố gắng hoặc nỗ lực thử làm điều khó | 2

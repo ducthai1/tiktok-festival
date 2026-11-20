@@ -89,7 +89,7 @@ BARK UP THE WRONG TREE | Nhắm sai đối tượng, đổ lỗi nhầm người
 THE LAST STRAW | Giọt nước tràn ly | 3
 HIT THE BOOKS | Thành ngữ vùi đầu vào học bài ôn thi chăm chỉ | 1
 COST AN ARM AND A LEG | Thành ngữ đắt đỏ tốn kém kinh khủng | 2
-BLESSING IN DISGUISE | Thành ngữ trong cái rủi có cái may | 3
+BLESSING IN DISGUISE | Thành ngữ chỉ chuyện tưởng xui, về sau mới biết là may | 3
 BURNING THE MIDNIGHT OIL | Thành ngữ thức khuya làm việc hoặc học bài | 2
 BURN THE BRIDGES | Thành ngữ chặt đứt mọi đường lui tuyệt giao | 2
 CRY OVER SPILT MILK | Thành ngữ tiếc nuối chuyện đã qua không cứu vãn được | 2
@@ -122,7 +122,7 @@ DEVIL S ADVOCATE | Thành ngữ người cố tình đưa ra ý kiến phản bi
 DO UNTO OTHERS | Thành ngữ kỷ sở bất dục vật thi ư nhân đối xử tốt với người khác | 3
 DON T PUT ALL EGGS | Thành ngữ đừng bỏ hết trứng vào một giỏ rủi ro | 2
 EASY DOES IT | Thành ngữ hãy làm thật từ tốn cẩn thận nhẹ tay | 2
-EVERY CLOUD HAS A SILVER | Thành ngữ trong cái rủi có cái may luôn có hy vọng | 2
+EVERY CLOUD HAS A SILVER LINING | Thành ngữ ý rằng chuyện xấu đến mấy cũng le lói một tia sáng | 2
 FIT AS A FIDDLE | Thành ngữ khỏe mạnh cường tráng sung sức | 2
 GO THE EXTRA MILE | Thành ngữ nỗ lực hơn cả mong đợi làm vượt trách nhiệm | 2
 GOOD THINGS COME | Thành ngữ quả ngọt sẽ đến với người biết kiên nhẫn | 2
@@ -196,7 +196,7 @@ BLOW OFF STEAM | Xả hơi giải tỏa bớt căng thẳng bực tức | 2
 BONE OF CONTENTION | Cội nguồn của cuộc tranh cãi bất đồng | 3
 BREAK EVEN | Hòa vốn không lỗ cũng không có lãi | 1
 BURNING QUESTION | Câu hỏi nóng hổi ai cũng muốn biết câu trả lời | 2
-BY AND LARGE | Nhìn chung xét về tổng thể | 2
+BY AND LARGE | Thành ngữ dùng để chốt lại: nói chung, xét cho cùng thì | 2
 CALL A SPADE A SPADE | Nói thẳng nói thật không kiêng nể tránh né | 3
 CATCH SOMEONE RED HANDED | Bắt quả tang tận tay khi đang làm việc xấu | 2
 CHERRY PICKING | Kén cá chọn canh chỉ chọn thứ tốt nhất | 2

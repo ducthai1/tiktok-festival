@@ -9,7 +9,7 @@ HERO | Nhân vật anh hùng chính | 1
 CHEST | Rương chứa vật phẩm thưởng | 1
 GEM | Ngọc quý đá quý | 1 | CRYSTAL
 RANK | Bậc xếp hạng leo dần khi thắng nhiều trận | 1 | PLACEMENT
-REWARD | Thứ nhận được sau khi hoàn thành nhiệm vụ | 1 | PRIZE
+REWARD | Vàng, đồ hay điểm kinh nghiệm trả cho người chơi khi xong việc | 1 | PRIZE
 ENDGAME | Giai đoạn cuối cùng trò chơi | 1 | FINAL STAGE
 TUTORIAL | Hướng dẫn cách chơi cơ bản | 1
 COMBO BREAKER | Đòn chen vào cắt đứt chuỗi liên hoàn của đối thủ | 1
@@ -240,10 +240,10 @@ JUNGLE CONTROL | Kiểm soát rừng tiêu diệt | 3
 DUEL | Một cuộc đơn đấu hai người riêng | 1 | ONE ON ONE
 FACTION | Phe nhóm lực lượng trong game | 1 | SIDE
 GUILD | Bang hội hoặc nhóm game thủ cùng | 1 | CLAN
-QUEST | Nhiệm vụ cần hoàn thành để nhận | 1
+QUEST | Chuyến đi làm một việc được giao, thường có cốt truyện riêng | 1
 CRAFT | Chế tạo vật phẩm từ nguyên liệu | 1
 SHOPKEEPER | Người bán hàng bán vật phẩm | 1 | SELLER
-QUEST GIVER | Người giao nhiệm vụ chính yêu | 1 | NPCQUESTER
+QUEST GIVER | Nhân vật đứng một chỗ giao nhiệm vụ cho người chơi | 1 | QUEST NPC
 RESPAWN TIMER | Thời gian chờ sinh lại sau chết | 1 | DEATH TIMER
 RANKINGS | Bảng xếp hạng người chơi top cao | 1 | CHART
 MATCHMAKING | Hệ thống ghép cặp người chơi cân | 1 | PAIRING SYSTEM
