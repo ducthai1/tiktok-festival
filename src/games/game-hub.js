@@ -31,6 +31,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
   let games = buildGames();
   let lastCatalog = null; // danh mục quà + luật quà tab tiếng Anh: dựng lại game (resetAll) thì gán lại
   let lastEnglishRules = null;
+  let lastLateMs = null; // độ trễ sóng live — dựng lại game (resetAll) thì gán lại
   const board = createSessionLeaderboard();
   const welcome = createWelcomeQueue({ textAbove: welcomeTextAbove });
   let activeId = games.has(startGame) ? startGame : 'bar';
@@ -91,6 +92,23 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       lastCatalog = catalog;
       for (const game of games.values()) game.setGiftCatalog?.(catalog);
     },
+    /** Độ trễ sóng live: mọi tab đố vui nhận câu trả lời đến trễ trong bấy nhiêu mili-giây. */
+    setLateMs(ms) {
+      lastLateMs = ms;
+      for (const game of games.values()) game.setLateMs?.(ms);
+    },
+    /** Gom thống kê "trả lời đúng nhưng về trễ" của mọi tab → biết độ trễ sóng thực tế. */
+    lateReport() {
+      let count = 0;
+      let total = 0;
+      for (const game of games.values()) {
+        const r = game.lateReport?.();
+        if (!r?.count) continue;
+        count += r.count;
+        total += r.count * r.avgMs;
+      }
+      return { count, avgMs: count ? Math.round(total / count) : 0 };
+    },
     setWelcomeThreshold(n) {
       welcome.setThreshold(n);
     },
@@ -138,6 +156,7 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
       games = buildGames();
       if (lastCatalog) for (const game of games.values()) game.setGiftCatalog?.(lastCatalog);
       if (lastEnglishRules) games.get('english')?.setEnglishRules?.(lastEnglishRules);
+    if (lastLateMs !== null) for (const game of games.values()) game.setLateMs?.(lastLateMs);
       board.reset();
       welcome.reset();
       roomDonations.clear();

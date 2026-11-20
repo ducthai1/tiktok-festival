@@ -1,37 +1,25 @@
 # Tiếng Anh · Vũ trụ
 STARLIGHT | Ánh sáng từ ngôi sao | 2
-MOONLIGHT | Ánh sáng mặt trăng | 1
+MOONLIGHT | Ánh sáng Mặt Trăng | 1
 MILKY WAY | Ngân Hà, dải Ngân Hà | 2
 BIG BANG | Vụ nổ lớn bắt đầu vũ trụ | 2
-ORBIT | Chuyển động vòng tròn xung quanh | 2
+ORBIT | Đường một thiên thể đi vòng quanh thiên thể khác | 2
 SPACE RACE | Cuộc đua vào vũ trụ | 2
-APOLLO | Chương trình đáp mặt trăng (NASA) | 2
-GEMINI | Chương trình tàu hai người (NASA) | 2
 SPACE STATION | Trạm không gian | 2
-LUNAR ECLIPSE | Nguyệt thực (bóng trái đất che mặt trăng) | 2
+LUNAR ECLIPSE | Nguyệt thực (bóng Trái Đất che Mặt Trăng) | 2
 ESCAPE VELOCITY | Vận tốc thoát khỏi hành tinh | 3
 DOPPLER EFFECT | Hiệu ứng biến đổi tần số sóng khi nguồn phát chuyển động lại gần hoặc ra xa | 3
 PARALLAX | Thị sai (cách đo khoảng cách sao) | 3
-REDSHIFT | Dịch đỏ | 3
-BLUESHIFT | Dịch xanh | 3
+REDSHIFT | Ánh sáng thiên thể ngả dần về phía đỏ vì nó đang chạy ra xa ta | 3
+BLUESHIFT | Ánh sáng thiên thể ngả dần về phía xanh vì nó đang lao về phía ta | 3
 OCCULTATION | Che phủ (một thiên thể che một thiên thể khác) | 3
 CONJUNCTION | Vị trí hai thiên thể trông như sát nhau trên bầu trời | 3
 OPPOSITION | Vị trí hành tinh nằm đối diện Mặt Trời khi nhìn từ Trái Đất | 3
-PERIGEE | Điểm gần nhất với trái đất | 3
-APOGEE | Điểm xa nhất từ trái đất | 3
-PERIHELION | Điểm gần nhất với mặt trời | 3
-APHELION | Điểm xa nhất từ mặt trời | 3
+PERIGEE | Điểm trên quỹ đạo gần Trái Đất nhất | 3
+APOGEE | Điểm trên quỹ đạo cách Trái Đất xa nhất | 3
+PERIHELION | Điểm trên quỹ đạo gần Mặt Trời nhất | 3
+APHELION | Điểm trên quỹ đạo cách Mặt Trời xa nhất | 3
 MARS ROVER | Xe tự hành lăn bánh khảo sát bề mặt Sao Hỏa | 2
-CURIOSITY | Tên xe tự hành khám phá Sao Hỏa | 2
-LUNA | Chương trình tàu mặt trăng Liên Xô | 2
-SPUTNIK | Vệ tinh nhân tạo đầu tiên (Liên Xô) | 2
-LAIKA | Chú chó đầu tiên bay vào vũ trụ | 2
-YURI GAGARIN | Người bay vào vũ trụ đầu tiên | 2
-NEIL ARMSTRONG | Người đi bộ trên mặt trăng đầu tiên | 1
-BUZZ ALDRIN | Người thứ hai đi bộ trên mặt trăng | 2
-JOHN GLENN | Người Mỹ đầu tiên bay trọn vòng quanh Trái Đất | 2
-ALAN SHEPARD | Người Mỹ đầu tiên được phóng lên không gian | 2
-VALENTINA TERESHKOVA | Phụ nữ bay vào vũ trụ đầu tiên | 2
 SPACE WALK | Bước đi ngoài tàu vũ trụ | 2 | SPACEWALK
 DOCKING | Gắn nối giữa hai tàu vũ trụ | 2
 RENDEZVOUS | Cuộc gặp trong không gian | 2
@@ -41,13 +29,12 @@ THRUSTER | Động cơ điều hướng | 2 | THRUSTERS
 FUEL TANK | Bình chứa nhiên liệu | 2
 TRAJECTORY | Quỹ đạo bay | 2 | TRAJECTORIES
 PROBE | Tàu thăm dò | 2 | PROBES
-ROVER | Xe khám phá | 2 | ROVERS
+ROVER | Xe tự hành chạy trên bề mặt hành tinh để khảo sát | 2 | ROVERS
 LANDER | Tàu đáp | 2 | LANDERS
 ORBITER | Tàu vệ tinh quỹ đạo | 2 | ORBITERS
 SPACE TELESCOPE | Kính thiên văn trong vũ trụ | 2
 RADIO TELESCOPE | Kính viễn vọng vô tuyến | 3
 OBSERVATORY | Đài quan sát thiên văn | 2 | OBSERVATORIES
-ARECIBO OBSERVATORY | Kính viễn vọng vô tuyến lòng chảo khổng lồ từng đặt tại Puerto Rico | 3
 SOUTHERN CROSS | Chòm sao Nam Thập Tự | 2
 POLARIS | Sao Bắc Cực, gần như đứng yên chỉ hướng bắc suốt đêm | 2
 SIRIUS | Sao Thiên Lang, ngôi sao sáng nhất bầu trời đêm | 2
@@ -64,20 +51,19 @@ HORSEHEAD NEBULA | Tinh vân Đầu Ngựa | 2
 CRAB NEBULA | Tinh vân Cua | 2
 ORION NEBULA | Vườn ươm sao sáng nằm ở thanh kiếm chòm Lạp Hộ | 2
 EAGLE NEBULA | Tinh vân Đại Bàng | 2
-PILLARS OF CREATION | Trụ Sáng Tạo | 3
 RING NEBULA | Tinh vân Vòng | 2
-PLANETARY NEBULA | Tinh vân hành tinh | 3
-EMISSION NEBULA | Tinh vân phát xạ | 3
-REFLECTION NEBULA | Tinh vân phản xạ | 3
-DARK NEBULA | Tinh vân tối | 3
-INTERSTELLAR | Giữa các ngôi sao | 3
+PLANETARY NEBULA | Lớp vỏ khí ngôi sao nhẹ thổi ra lúc hấp hối, trông tròn như một hành tinh | 3
+EMISSION NEBULA | Đám mây khí tự phát ra ánh sáng vì bị sao gần đó nung nóng | 3
+REFLECTION NEBULA | Đám mây bụi không tự sáng, chỉ hắt lại ánh sáng của sao bên cạnh | 3
+DARK NEBULA | Đám mây bụi dày đặc che khuất ánh sáng phía sau, hiện ra như vệt đen trên trời | 3
+INTERSTELLAR | Thuộc về khoảng không mênh mông nằm giữa các ngôi sao | 3
 INTERSTELLAR DUST | Bụi giữa các sao | 3
 INTERSTELLAR GAS | Khí giữa các sao | 3
 STAR CLUSTER | Cụm sao | 2
 GLOBULAR CLUSTER | Cụm sao cầu | 3
 OPEN CLUSTER | Cụm sao mở | 3
 STELLAR EVOLUTION | Tiến hóa ngôi sao | 3
-MAIN SEQUENCE | Dãy chính (loại sao) | 3
+MAIN SEQUENCE | Giai đoạn dài nhất đời một ngôi sao, lúc nó đang đốt hydro ở lõi | 3
 GIANT STAR | Sao khổng lồ | 2
 DWARF STAR | Sao lùn | 2
 RED GIANT | Sao khổng lồ đỏ | 2
@@ -92,22 +78,22 @@ WORMHOLE | Lỗ giun không-thời gian | 3
 GAMMA RAY BURST | Chớp nổ phóng năng lượng điện từ dữ dội và sáng chói nhất trong vũ trụ | 3
 GAMMA RAY | Bức xạ điện từ mang năng lượng cao nhất và bước sóng ngắn nhất | 3
 COSMIC RAY | Tia vũ trụ | 2
-SOLAR WIND | Gió mặt trời | 2
+SOLAR WIND | Gió Mặt Trời | 2
 MAGNETIC FIELD | Từ trường bao quanh một thiên thể hoặc nam châm | 2
 MAGNETOSPHERE | Từ quyển, vùng không gian bị từ trường hành tinh chi phối | 3
 IONOSPHERE | Tầng ion | 2
 SOUTHERN LIGHTS | Cực quang nam | 2
 EXOPLANET | Hành tinh ngoài hệ | 2 | EXOPLANETS
 HABITABLE ZONE | Vùng sinh sống | 2
-EARTH-LIKE PLANET | Hành tinh giống trái đất | 2
+EARTH-LIKE PLANET | Hành tinh giống Trái Đất | 2
 GOLDILOCKS ZONE | Khoảng cách vừa phải quanh một ngôi sao cho phép nước lỏng duy trì sự sống | 3
 PLANET EARTH | Hành tinh Trái Đất | 1
 TERRESTRIAL PLANET | Hành tinh đất đá | 2
 GAS GIANT | Hành tinh khí khổng lồ | 2
 ICE GIANT | Hành tinh băng khổng lồ | 2
 JOVIAN PLANET | Hành tinh giống Sao Mộc | 3
-PROXIMA CENTAURI | Sao gần trái đất nhất | 2
-ALPHA CENTAURI | Hệ sao gần trái đất nhất | 2
+PROXIMA CENTAURI | Sao gần Trái Đất nhất | 2
+ALPHA CENTAURI | Hệ sao gần Trái Đất nhất | 2
 VEGA | Sao Chức Nữ, đỉnh sáng của chòm Thiên Cầm | 2
 ALTAIR | Sao Ngưu Lang, nằm bên kia dải Ngân Hà so với Chức Nữ | 2
 DENEB | Sao Thiên Tân, đuôi của chòm Thiên Nga | 2
@@ -127,7 +113,7 @@ DARK MATTER | Vật chất tối | 2
 COSMIC INFLATION | Lạm phát vũ trụ | 3
 HUBBLE CONSTANT | Hằng số đo tốc độ giãn nở của vũ trụ theo khoảng cách | 3
 HUBBLE LAW | Định luật vật lý thiên văn xác định thiên hà càng ở xa thì vận tốc lùi xa càng lớn | 3
-EXPANSION OF UNIVERSE | Hiện tượng các thiên hà ngày càng rời xa nhau | 2
+COSMIC EXPANSION | Hiện tượng các thiên hà ngày càng rời xa nhau | 2
 BIG FREEZE | Kết thúc vũ trụ do lạnh | 3
 HEAT DEATH | Cái chết nhiệt | 3
 BIG RIP | Xé nát vũ trụ | 3
@@ -143,24 +129,17 @@ COSMOLOGICAL CONSTANT | Hằng số vũ trụ | 3
 GENERAL RELATIVITY | Thuyết tương đối rộng | 2
 SPECIAL RELATIVITY | Thuyết tương đối hẹp | 2
 SPACETIME | Không-thời gian | 2
-STEPHEN HAWKING | Nhà vật lý người Anh ngồi xe lăn, nghiên cứu hố đen | 2
 VENUS PROBE | Tàu thăm dò Sao Kim | 2
 MERCURY PROBE | Tàu thăm dò Sao Thủy | 2
 JUPITER PROBE | Tàu bay tới hành tinh lớn nhất Hệ Mặt Trời, nói chung | 2
 SATURN PROBE | Tàu bay tới hành tinh có vành đai, nói chung | 2
 CASSINI-HUYGENS | Tàu bay quanh Sao Thổ 13 năm và thả thiết bị xuống vệ tinh Titan | 2
-GALILEO | Tàu đầu tiên vào quỹ đạo Sao Mộc, thả một khối rơi xuống khí quyển | 1
 JUNO | Tàu đang bay vòng cực Sao Mộc đo từ trường và lõi hành tinh | 2
 NEW HORIZONS | Tàu thăm dò Sao Diêm Vương | 2
 DAWN MISSION | Chuyến tàu thám hiểm không gian khám phá tiểu hành tinh Vesta và hành tinh lùn Ceres | 2
-HAYABUSA | Sứ mệnh mang mẫu tiểu hành tinh | 2
-ROSETTA | Sứ mệnh theo dõi sao chổi | 2
 PHILAE | Tàu đáp sao chổi (Rosetta) | 2
-CHANG'E MISSION | Sứ mệnh mặt trăng Trung Quốc | 2
-LUNAR ORBITER | Tàu quỹ đạo mặt trăng | 2
+LUNAR ORBITER | Tàu quỹ đạo Mặt Trăng | 2
 VIKING LANDER | Tàu đáp Sao Hỏa | 2
-PATHFINDER | Tàu đáp Sao Hỏa đầu tiên | 2
-SOJOURNER | Xe đầu tiên trên Sao Hỏa | 1
 ZHURONG | Xe Trung Quốc trên Sao Hỏa | 2
 INGENUITY | Máy bay trên Sao Hỏa | 2
 ISS MODULE | Mô-đun Trạm Vũ Trụ Quốc tế | 2
@@ -169,7 +148,6 @@ STARLINER | Tàu vũ trụ Boeing | 2
 SOYUZ | Tàu vũ trụ Nga | 1
 ATLANTIS | Tàu con thoi mang tên con tàu nghiên cứu biển, bay chuyến cuối năm 2011 | 1
 CHALLENGER | Tàu con thoi nổ tung 73 giây sau khi rời bệ phóng năm 1986 | 1
-COLUMBIA | Tàu con thoi đầu tiên bay lên quỹ đạo năm 1981, vỡ khi hồi quyển 2003 | 1
 DISCOVERY | Tàu con thoi bay nhiều chuyến nhất, từng đưa kính Hubble lên quỹ đạo | 1
 ENDEAVOUR | Tàu con thoi đóng thay chiếc đã nổ, mang tên con tàu của thuyền trưởng Cook | 1
 SPACE SHUTTLE | Loại tàu vũ trụ có cánh, hạ cánh như máy bay để dùng lại | 1
@@ -177,11 +155,11 @@ SPACE EXPLORATION | Khám phá vũ trụ | 1
 COLONIZATION | Việc đưa người tới sống lâu dài ở một thiên thể khác | 1
 SPACE MINING | Khai thác tài nguyên vũ trụ | 2
 ASTEROID MINING | Khai thác tiểu hành tinh | 2
-MOON BASE | Căn cứ mặt trăng | 2
+MOON BASE | Căn cứ Mặt Trăng | 2
 MARS COLONY | Thuộc địa Sao Hỏa | 2
 TERRAFORM | Biến đổi hành tinh | 3
 SPACE ELEVATOR | Thang máy vũ trụ | 3
-SOLAR SAIL | Buồm năng lượng mặt trời | 3
+SOLAR SAIL | Buồm năng lượng Mặt Trời | 3
 HIBERNATION | Danh từ chỉ giai đoạn ngủ vùi qua mùa đông | 2
 LIFE SUPPORT SYSTEM | Hệ thống duy trì sự sống | 2
 BIOSPHERE | Sinh quyển | 2
@@ -211,8 +189,8 @@ PHOTOSPHERE | Quang quyển, lớp bề mặt phát ra ánh sáng ta nhìn thấ
 CHROMOSPHERE | Sắc quyển, lớp đỏ hồng nằm ngay trên quang quyển | 2
 CORONA | Vành khí quyển ngoài cùng của Mặt Trời, chỉ thấy khi nhật thực | 2
 PROMINENCE | Tai lửa vòng cung phun ra từ bề mặt Mặt Trời | 2
-SOLAR CYCLE | Chu kỳ mặt trời | 2
-MAUNDER MINIMUM | Thời kỳ vết đen mặt trời gần như biến mất hoàn toàn vào thế kỷ 17 | 3
+SOLAR CYCLE | Chu kỳ Mặt Trời | 2
+MAUNDER MINIMUM | Thời kỳ vết đen Mặt Trời gần như biến mất hoàn toàn vào thế kỷ 17 | 3
 LIGHT CURVE | Đường cong sáng | 2
 LAGRANGE POINT | Vị trí cân bằng trọng lực giữa hai thiên thể lớn giúp tàu vũ trụ giữ nguyên vị trí | 3
 ROCHE LIMIT | Khoảng cách gần nhất mà một vệ tinh có thể tiếp cận hành tinh mẹ trước khi bị lực thủy triều xé tan | 3
@@ -239,9 +217,9 @@ ANNULAR ECLIPSE | Nhật thực vành | 2
 LUNAR MONTH | Tháng âm lịch | 2
 SOLAR MONTH | Tháng dương lịch | 2
 SIDEREAL MONTH | Tháng sao | 2
-ANOMALISTIC MONTH | Tháng bất thường | 3
+ANOMALISTIC MONTH | Tháng cận điểm: thời gian Mặt Trăng đi hết một vòng tính từ điểm gần Trái Đất nhất | 3
 SIDEREAL DAY | Ngày sao | 2
-SOLAR DAY | Ngày mặt trời | 2
+SOLAR DAY | Ngày Mặt Trời | 2
 STELLAR DAY | Ngày thiên thể | 2
 TROPICAL YEAR | Năm chí tuyến, thời gian Mặt Trời trở lại điểm xuân phân | 2
 SIDEREAL YEAR | Năm sao | 2
@@ -253,17 +231,13 @@ GREGORIAN CALENDAR | Lịch Gregory | 2
 JULIAN CALENDAR | Lịch Julius | 2
 SOLAR CALENDAR | Lịch dương | 1
 LUNISOLAR CALENDAR | Lịch âm-dương | 2
-ANCIENT ASTRONOMER | Nhà thiên văn cổ đại | 2
-MODERN ASTRONOMER | Nhà thiên văn hiện đại | 2
 THEORETICAL ASTRONOMY | Thiên văn lý thuyết | 2
 POSITIONAL ASTRONOMY | Thiên văn vị trí | 2
 ASTROMETRY | Đo vị trí sao | 2
 DISTANCE MODULUS | Đại lượng hiệu số giữa cấp sao biểu kiến và tuyệt đối để xác định cự ly vũ trụ | 3
-STANDARD DEVIATIONS | Độ lệch chuẩn | 2
+STANDARD DEVIATION | Đại lượng đo mức dao động của số liệu quanh giá trị trung bình | 2
 STATISTICAL ASTRONOMY | Thiên văn thống kê | 3
 PROBABILISTIC MODELS | Mô hình xác suất | 2
-MONTE CARLO METHOD | Thuật toán thống kê giải quyết bài toán phức tạp bằng cách lấy mẫu ngẫu nhiên lặp lại | 3
-BAYESIAN STATISTICS | Trường phái thống kê tính toán xác suất có điều kiện dựa trên bằng chứng thu thập được | 3
 SAMPLING TECHNIQUES | Kỹ thuật lấy mẫu | 2
 OBSERVATIONAL DATA | Dữ liệu quan sát | 1
 EMPIRICAL EVIDENCE | Bằng chứng thực nghiệm | 2
@@ -271,12 +245,12 @@ HYPOTHESIS TESTING | Kiểm định giả thuyết | 2
 PEER REVIEW | Việc các nhà khoa học cùng ngành thẩm định bài báo trước khi đăng | 1
 SCIENTIFIC METHOD | Phương pháp khoa học | 1
 REPRODUCIBILITY | Khả năng lặp lại | 2
-LUNAR MARIA | Biển mặt trăng | 2
+LUNAR MARIA | Biển Mặt Trăng | 2
 MARE | Biển Mặt Trăng nơi dung nham | 2
 CRATER RIM | Mép miệng núi | 2
 CENTRAL PEAK | Đỉnh trung tâm | 2
 EJECTA | Vật chất bắn tung ra khi thiên thạch đâm xuống bề mặt | 2
-RIMWALL | Vách dựng đứng bao quanh miệng hố va chạm | 2
+CRATER WALL | Vách dựng đứng bao quanh miệng hố va chạm | 2
 TERRACE | Sườn thềm | 2
 QUASAR | Chuẩn tinh (thiên văn) | 3
 ASTEROID BELT | Vành đai tiểu hành tinh | 3
@@ -297,8 +271,8 @@ METEORITE | Mảnh đá còn sót lại rơi tới mặt đất | 3
 ASTRONOMY | Khoa học nghiên cứu các thiên thể vũ trụ | 2
 METEOR | Vệt sáng loé lên khi mảnh đá cháy trong khí quyển | 1
 COSMOS | Toàn thể vũ trụ nhìn như một hệ thống có trật tự | 2
-SUN | Mặt trời | 1
-MOON | Mặt trăng | 1
+SUN | Mặt Trời | 1
+MOON | Mặt Trăng | 1
 MERCURY | Hành tinh nhỏ nhất và gần Mặt Trời nhất | 1
 VENUS | Hành tinh nóng nhất trong Hệ Mặt Trời | 1
 MARS | Sao Hỏa hay hành tinh đỏ | 1
@@ -365,7 +339,6 @@ EVENT HORIZON | Ranh giới không thoát khỏi lỗ đen | 3
 WHITE HOLE | Hố trắng phát ra năng lượng | 3
 LUMINOSITY | Độ sáng thực tế của sao | 2
 SPECTRAL CLASS | Phân loại sao theo quang phổ | 2
-HERTZSPRUNG-RUSSELL | Biểu đồ so sánh sao | 3
 TRIPLE STAR | Ba sao quay quanh nhau | 2
 VARIABLE STAR | Sao sáng tối không ổn định | 2
 PLANETARY MASS | Khối lượng so sánh với hành tinh | 2
@@ -418,7 +391,6 @@ CHANDRA | Kính vũ trụ chuyên quan sát tia X | 3
 FERMI | Kính vũ trụ quan sát tia gamma từ không gian | 3
 QUASAR DISCOVERY | Dấu mốc khoa học khám phá ra các chuẩn tinh cực sáng ở tâm thiên hà xa xôi | 3
 DRAKE EQUATION | Phương trình ước tính sinh vật | 3
-BREAKTHROUGH LISTEN | Dự án tìm tín hiệu ngoài hành tinh | 3
 ARECIBO MESSAGE | Thông điệp gửi không gian năm 1974 | 3
 COSMIC MICROWAVE | Bức xạ nền vũ trụ | 3
 DARK ENERGY | Năng lượng tối đẩy vũ trụ | 2
@@ -454,10 +426,10 @@ IMPACT BASIN | Lõm lớn từ va chạm | 2
 LAVA FLOW | Dòng dung nham từ núi | 1
 TERRAIN | Địa hình bề mặt | 1
 DUST STORM | Bão bụi trên sao Hỏa | 1
-POLAR CAP | Bắc/Nam Cực lạnh trên sao | 1
+POLAR CAP | Mũ băng trắng phủ hai cực của một hành tinh | 1
 ICE DEPOSIT | Tích tụ băng dưới bề mặt | 2
 SUBSURFACE | Dưới bề mặt hành tinh | 2
-AURORA BOREALIS | Cực quang Bắc Bắc Cực | 2
+AURORA BOREALIS | Cực quang nhìn thấy ở vùng Bắc Cực, tên Latinh | 2
 AURORA AUSTRALIS | Cực quang ở Nam Cực | 2
 SOLAR ACTIVITY | Hoạt động Mặt Trời | 2
 SOLAR FLARE | Chớp sáng Mặt Trời mạnh | 2
@@ -468,18 +440,17 @@ FREQUENCY | Tần số sóng | 2
 SPEED OF LIGHT | Vận tốc ánh sáng | 2
 MASS | Khối lượng vật thể | 1
 FORCE | Lực vật lý | 1
-PRESSURE ALTITUDE | Cao độ tại vị trí | 2
-HELIUM | Heli khí nhẹ thứ 2 | 1
+PRESSURE ALTITUDE | Độ cao quy đổi ra từ áp suất không khí đo được | 2
+HELIUM | Khí nhẹ thứ nhì trong vũ trụ, bơm vào bóng bay là bay lên | 1
 ORBIT DECAY | Sự giảm quỹ đạo vệ tinh | 2
-LUNAR BASES | Các căn cứ trên Mặt Trăng | 2
-MOON CITY | Thành phố sinh sống Mặt Trăng | 2
-TERRAFORMING | Biến đổi hành tinh thành Trái Đất | 3
+LUNAR BASE | Căn cứ đặt lâu dài trên Mặt Trăng cho người ở và làm việc | 2
+TERRAFORMING | Cải tạo một hành tinh cho giống Trái Đất để người sống được | 3
 HABITAT MODULE | Khoang sinh sống trong tàu vũ trụ | 2
 LIFE SUPPORT | Hệ thống hỗ trợ sự sống | 2
 WATER RECYCLING | Tái chế nước sạch trên tàu | 2
 AIR PURIFICATION | Lọc sạch không khí trên tàu | 2
 WASTE MANAGEMENT | Quản lý chất thải | 1
-ISOLATION CHAMBER | Phòng cách ly khí áp | 2
+ISOLATION CHAMBER | Buồng kín tách hẳn khỏi bên ngoài để thử sức chịu đựng của phi hành gia | 2
 PRESSURE SUIT | Bộ quần áo chịu áp lực | 2
 THERMAL PROTECTION | Bảo vệ nhiệt khi vào khí quyển | 2
 HEAT SHIELD | Khiên chống nóng tàu vũ trụ | 2

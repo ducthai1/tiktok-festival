@@ -258,6 +258,11 @@ export function createAdminCommandHandler({ hub, live, settings, updateSettings,
       for (const key of ['tts', 'ttsWelcome', 'ttsEnglish', 'legend']) if (typeof msg[key] === 'boolean') patch[key] = msg[key];
       if (isVoiceSetting(msg.ttsVoice)) patch.ttsVoice = msg.ttsVoice; // tên giọng hoặc "random"
       if (['', 'christmas', 'teacher'].includes(msg.season)) patch.season = msg.season; // chủ đề mùa: 🎄 Giáng sinh / 💐 20/11
+      // Độ trễ sóng live: giữ đề vừa đóng sống thêm bấy nhiêu giây để nhận nốt câu trả lời đang trên đường về
+      if (Number.isFinite(msg.streamDelayMs)) {
+        patch.streamDelayMs = Math.max(0, Math.min(30000, Math.round(msg.streamDelayMs)));
+        hub.setLateMs(patch.streamDelayMs);
+      }
       if (Number.isFinite(msg.welcomeTextAbove)) {
         patch.welcomeTextAbove = Math.max(0, Math.min(1000000, Math.floor(msg.welcomeTextAbove)));
         hub.setWelcomeThreshold(patch.welcomeTextAbove);

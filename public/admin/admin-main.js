@@ -472,6 +472,9 @@ function applySettings(s) {
   $('set-ttsEnglish').checked = s.ttsEnglish !== false;
   if (s.ttsVoice) $('set-ttsVoice').value = s.ttsVoice;
   if (document.activeElement !== $('set-welcome-above')) $('set-welcome-above').value = String(s.welcomeTextAbove ?? 1000);
+  if ($('set-stream-delay') && document.activeElement !== $('set-stream-delay')) {
+    $('set-stream-delay').value = String(Math.round((s.streamDelayMs ?? 9000) / 1000));
+  }
 
   const auto = s.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true };
   if ($('set-obs-autorefresh')) $('set-obs-autorefresh').checked = auto.enabled !== false;
@@ -752,6 +755,10 @@ function appendLog(e) {
 for (const key of ['sound', 'music', 'tts', 'ttsWelcome', 'ttsEnglish', 'legend']) {
   $(`set-${key}`).addEventListener('change', (e) => run({ t: 'settings', [key]: e.target.checked }, 'Đã lưu'));
 }
+$('delay-form')?.addEventListener('submit', (e) => {
+  e.preventDefault();
+  run({ t: 'settings', streamDelayMs: Math.round((Number($('set-stream-delay').value) || 0) * 1000) }, 'Đã lưu độ trễ sóng');
+});
 $('welcome-form').addEventListener('submit', (e) => {
   e.preventDefault();
   run({ t: 'settings', welcomeTextAbove: Number($('set-welcome-above').value) || 0 }, 'Đã lưu ngưỡng');

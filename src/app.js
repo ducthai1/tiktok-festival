@@ -13,6 +13,7 @@ import { createStaticFileServer } from './http/static-file-server.js';
 import { createLiveConnectionManager } from './live/live-connection-manager.js';
 import { log } from './logger.js';
 import { createSessionLog } from './session-log.js';
+import { DEFAULT_LATE_MS } from './games/quiz/quiz-game.js';
 import { MAX_MB, cleanYoutubeUrl, fetchYoutubeAudio } from './music/youtube-music.js';
 import { builtinTracks, createPlaylistStore } from './music/playlist-store.js';
 import { createFollowerStore } from './live/follower-store.js';
@@ -200,6 +201,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     legend: settings.legend, ...audioFor(hub.activeId()), audioGame: hub.activeId(),
     welcomeTextAbove: settings.welcomeTextAbove, season: settings.season || '',
     obsAutoRefresh: settings.obsAutoRefresh || { enabled: true, intervalMs: 7200000, lagDetect: true },
+    streamDelayMs: Number.isFinite(settings.streamDelayMs) ? settings.streamDelayMs : DEFAULT_LATE_MS,
     musicGifts: settings.musicGifts || defaultMusicGifts()
   });
   /** Chỉnh âm thanh ở trang điều khiển: ghi vào bộ RIÊNG của game đang chạy. */
@@ -665,6 +667,18 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   });
   port = server.address().port;
 
+  hub.setLateMs(Number.isFinite(settings.streamDelayMs) ? settings.streamDelayMs : DEFAULT_LATE_MS);
+  // Mỗi 10 phút báo xem có bao nhiêu câu đúng về TRỄ và trễ trung bình bao lâu → biết đặt độ trễ sóng đúng chưa
+  let lastLateCount = 0;
+  const lateWatch = setInterval(() => {
+    const r = hub.lateReport();
+    if (r.count <= lastLateCount) return;
+    log.info('quiz', `${r.count - lastLateCount} câu trả lời ĐÚNG về sau khi đề đã đóng (trễ trung bình ${(r.avgMs / 1000).toFixed(1)} giây)`
+      + ` — nếu con số này lớn, tăng "Độ trễ sóng live" ở trang điều khiển`);
+    lastLateCount = r.count;
+  }, 600000);
+  lateWatch.unref?.();
+
   const timer = setInterval(() => {
     emitFx(hub.activeId(), hub.tick());
     pushState();
@@ -691,6 +705,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     async close() {
       saveBackup();
       clearInterval(timer);
+      clearInterval(lateWatch);
       clearInterval(warmFollow);
       followers.flush();
       englishProgress.flush();

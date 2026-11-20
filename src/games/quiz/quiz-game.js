@@ -12,6 +12,15 @@ export const POINTS = [10, 7, 5, 3, 3, 3]; // đúng 6 bạn nhanh nhất mới 
 const MAX_TRIES = 6; // mỗi người tối đa 6 lần đoán mỗi câu (chống dội bình luận)
 const FIRST_CORRECT_GRACE_MS = 5000; // có người đúng rồi thì chờ thêm 5 giây cho người khác rồi lật đáp án
 export const LEAD_IN_MS = 2000; // đề hiện rồi mới bắt đầu đếm ngược (người xem thấy đề trễ 1–2 giây)
+/**
+ * ĐỘ TRỄ SÓNG LIVE. Người xem KHÔNG thấy đề cùng lúc với máy chủ: màn hình OBS → mã hoá → TikTok →
+ * điện thoại người xem mất 5–15 giây, bình luận đi ngược lại cũng mất thêm vài giây. Vì vậy một câu
+ * trả lời ĐÚNG thường về tới máy chủ sau khi đề đã đóng — trước đây bị vứt thẳng, người xem thấy
+ * "gõ mãi không ăn". Nay giữ đề vừa đóng sống thêm bấy nhiêu mili-giây để nhận nốt.
+ * Chỉnh ở trang điều khiển (📺 Màn hình & âm thanh → Độ trễ sóng live).
+ */
+export const DEFAULT_LATE_MS = 9000;
+export const MAX_LATE_MS = 30000;
 
 /**
  * Tính thời gian đọc câu hỏi (giọng VieNeu / Edge TTS) để đồng hồ CHỜ ĐỌC XONG mới đếm ngược.
@@ -87,7 +96,8 @@ export function createQuizGame({
   onGift = null, onCommand = null, extraState = null, onRestore = null, onCatalog = null, pronounce = null, onPronounce = null,
   onRoomReset = null, // phòng live mới: tab tự xoá trạng thái riêng của phòng cũ (vd tab tiếng Anh: chế độ đề đang chạy)
   donors = null, // 👑 Bảng vàng (phiên live hiện tại) dùng chung mọi tab — game-hub.js → donor-ledger.js
-  answersLogger = null // 📋 Ghi log đáp án — answers-logger.js
+  answersLogger = null, // 📋 Ghi log đáp án — answers-logger.js
+  lateMs = DEFAULT_LATE_MS // cửa sổ nhận câu trả lời đến trễ vì độ trễ sóng live
 }) {
   const scores = new Map(); // id → { id, nickname, avatar, points, correct }
   const present = new Map(); // id → { id, nickname, avatar, at }
@@ -116,6 +126,9 @@ export function createQuizGame({
   let keyboard = {};
   let greens = new Set();
   let countStart = 0; // lúc bắt đầu đếm ngược (sau 2 giây hiện đề)
+  // Đề vừa đóng, vẫn nhận câu trả lời đến trễ: { until, accept, checkAnswer, qNumber, answer, won }
+  let late = null;
+  let lateStats = { count: 0, totalMs: 0 }; // để log biết độ trễ thực tế bao nhiêu
   let energy = 0;
   let goldenUnlocked = false; // vòng năng lượng này đã qua mốc ENERGY_GOLDEN chưa
   let goldenPending = false;
@@ -305,6 +318,11 @@ export function createQuizGame({
     }
     phase = 'reveal';
     phaseStart = now;
+    // Giữ đề vừa đóng "sống" thêm lateMs để nhận nốt câu trả lời đang trên đường về (độ trễ sóng live).
+    late = kind === 'text' && lateMs > 0 && q
+      ? { until: now + lateMs, accept: q.accept, checkAnswer: q.checkAnswer, qNumber, answer: q.answer,
+          won: new Set(winners.map((w) => w.id)), closedAt: now, slots: POINTS.length - winners.length }
+      : null;
     if (lightningIndex) finishLightningQuestion(fx);
     const answer = answerText();
     const top = winners[0];
@@ -345,6 +363,34 @@ export function createQuizGame({
     return q.answer;
   }
 
+  /** Câu bình luận có khớp đáp án của một đề không (dùng cho cả đề hiện tại lẫn đề vừa đóng). */
+  function matchesAnswer(target, comment) {
+    if (typeof target?.checkAnswer === 'function') return Boolean(target.checkAnswer(comment));
+    const said = foldText(comment);
+    if (!said) return false;
+    const compact = said.replace(/ /g, '');
+    return (target?.accept || []).some((a) => a === said || a.replace(/ /g, '') === compact);
+  }
+
+  /**
+   * Câu trả lời ĐÚNG nhưng về tới máy chủ sau khi đề đã đóng — do độ trễ sóng live, không phải lỗi
+   * người xem. Vẫn cộng điểm và báo lên màn hình, chỉ không chen vào bảng xếp hạng của câu đó nữa.
+   */
+  function onLateText(user, comment, now, fx) {
+    if (!late || now >= late.until) return false;
+    if (late.won.has(user.id) || late.slots <= 0) return false;
+    if (!matchesAnswer(late, comment)) return false;
+    late.won.add(user.id);
+    late.slots -= 1;
+    const points = POINTS[POINTS.length - 1] * mult(); // về trễ thì nhận mức điểm thấp nhất
+    addPoints(user, points);
+    lateStats.count += 1;
+    lateStats.totalMs += now - late.closedAt;
+    answersLogger?.logAnswer(late.qNumber, { user, comment, result: 'correct-late', points });
+    fx.push({ kind: 'quizCorrect', userId: user.id, nickname: user.nickname, avatar: user.avatar, rank: 0, points, late: true });
+    return true;
+  }
+
   // ---- trả lời ----
   function onText(user, comment, now, fx) {
     if (winners.length >= POINTS.length) {
@@ -361,18 +407,11 @@ export function createQuizGame({
       answersLogger?.logAnswer(qNumber, { user, comment, result: 'MAX_TRIES' });
       return;
     }
-    if (typeof q?.checkAnswer === 'function') {
-      if (!q.checkAnswer(comment)) {
-        answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
-        return;
-      }
-    } else {
-      const said = foldText(comment);
-      const compact = said.replace(/ /g, '');
-      if (!said || !q.accept.some((a) => a === said || a.replace(/ /g, '') === compact)) {
-        answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
-        return;
-      }
+    if (!matchesAnswer(q, comment)) {
+      // Sai với đề ĐANG hỏi → thử đề VỪA ĐÓNG: người xem đang nhìn đề cũ lúc gõ (độ trễ sóng live).
+      if (onLateText(user, comment, now, fx)) return;
+      answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
+      return;
     }
     const points = POINTS[winners.length] * mult();
     addPoints(user, points);
@@ -463,13 +502,23 @@ export function createQuizGame({
       else if (list) priorityQueue.push(list);
     },
     setGiftCatalog: (catalog) => onCatalog?.(catalog),
+    /** Độ trễ sóng live (ms) — trang điều khiển chỉnh. 0 = tắt hẳn việc nhận câu trả lời đến trễ. */
+    setLateMs(ms) {
+      lateMs = Math.max(0, Math.min(MAX_LATE_MS, Math.round(Number(ms) || 0)));
+    },
+    /** Thống kê câu trả lời đúng nhưng về trễ — để biết nên đặt độ trễ bao nhiêu. */
+    lateReport: () => ({ count: lateStats.count, avgMs: lateStats.count ? Math.round(lateStats.totalMs / lateStats.count) : 0 }),
     handleEvent(event, now = Date.now()) {
       const fx = [];
       clock = now;
       touch(event.user, now);
       if (event.type === 'chat') {
         const entry = feedEntry(event, now);
-        if (phase !== 'question' || paused) return fx;
+        if (phase !== 'question' || paused) {
+          // Đang hiện đáp án / tạm dừng: vẫn nhận nốt câu đúng đang trên đường về vì độ trễ sóng live
+          if (!paused && kind === 'text') onLateText(event.user, event.comment, now, fx);
+          return fx;
+        }
         const before = winners.length;
         if (kind === 'text') onText(event.user, event.comment, now, fx);
         else if (kind === 'abcd') onVote(event.user, event.comment, now);

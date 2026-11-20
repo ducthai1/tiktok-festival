@@ -242,6 +242,21 @@
         </div>
 
         <div class="card">
+          <div class="card-head"><h2>⏱ Độ trễ sóng live</h2></div>
+          <p class="muted small">Người xem <b>không</b> thấy đề cùng lúc với máy chủ: màn hình OBS → TikTok → điện thoại mất vài giây,
+            bình luận đi ngược lại mất thêm vài giây nữa. Vì vậy câu trả lời <b>đúng</b> hay về tới sau khi đề đã đóng —
+            trước đây bị vứt thẳng, người xem thấy "gõ mãi không ăn". Đặt số này bằng độ trễ thực tế thì những câu đó
+            <b>vẫn được tính điểm</b> (ở mức điểm thấp nhất).</p>
+          <form id="delay-form" class="row wrap">
+            <label class="field">Giữ đề vừa đóng thêm <input id="set-stream-delay" type="number" min="0" max="30" step="1"> giây để nhận nốt câu trả lời</label>
+            <button type="submit" class="ghost">Lưu</button>
+          </form>
+          <p class="muted small">Không biết đặt bao nhiêu? Cứ để <b>9 giây</b>, live một buổi rồi mở <code>data/logs/sessions/</code>
+            tìm dòng <code>[quiz] … câu trả lời ĐÚNG về sau khi đề đã đóng (trễ trung bình X giây)</code> — đặt theo đúng số đó.
+            Đặt <b>0</b> là tắt hẳn.</p>
+        </div>
+
+        <div class="card">
           <div class="card-head"><h2>Chào người mới vào phòng</h2></div>
           <form id="welcome-form" class="row wrap">
             <label class="field">Phòng trên <input id="set-welcome-above" type="number" min="0" max="1000000" step="100"> người xem thì chỉ hiện dòng chữ (không thẻ tên + nhân vật)</label>
