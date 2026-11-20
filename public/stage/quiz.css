@@ -459,9 +459,33 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
    Mỗi bậc khai 4 biến: --fan-ink (ánh kim sáng) · --fan-mid (thân kim loại) · --fan-deep (nền tối
    ngả màu bậc) · --fan-glow (quầng). Cấp 1 Đồng · 2 Bạc · 3 Vàng · 4 Lục Bảo · 5 Hồng Ngọc ·
    6–9 Bạch Kim · 10+ Kim Cương. Hiệu ứng tăng dần: viền chạy → vệt quét → thở → nền cầu vồng. */
+/* NỀN GIỮA THẺ — bốn lớp chồng lên nhau, ai cũng thấy ngay là bậc nào:
+     1. bụi lấp lánh (mấy chấm sáng nhỏ rải rác)
+     2. hai quầng sáng màu của bậc — một sau avatar, một sau huy hiệu — TRÔI qua lại
+     3. vân kim loại chải xéo (sọc mảnh, rất nhạt)
+     4. nền tối ngả màu bậc, giữ chữ luôn đọc được
+   Cấp càng cao quầng càng dày và trôi càng nhanh (--fan-bloom, --fan-drift). */
 #stage.theme-quiz #hud > #welcome.fan {
-  background: linear-gradient(120deg, var(--fan-deep) 0%, #17132c 58%, var(--fan-deep) 100%);
-  box-shadow: 0 0 26px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 12px 28px rgba(0, 0, 0, 0.55);
+  --fan-drift: 9s;
+  background:
+    radial-gradient(circle at 21% 26%, rgba(255, 255, 255, 0.85) 0 1.1px, transparent 2px),
+    radial-gradient(circle at 46% 74%, rgba(255, 255, 255, 0.6) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 63% 22%, rgba(255, 255, 255, 0.75) 0 1.1px, transparent 2px),
+    radial-gradient(circle at 78% 66%, rgba(255, 255, 255, 0.55) 0 1px, transparent 1.8px),
+    radial-gradient(56% 170% at 7% 50%, var(--fan-b1) 0%, transparent 72%),
+    radial-gradient(50% 160% at 95% 50%, var(--fan-b2) 0%, transparent 74%),
+    repeating-linear-gradient(114deg, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 10px),
+    linear-gradient(120deg, var(--fan-deep) 0%, #140f28 55%, var(--fan-deep) 100%);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 150% 150%, 150% 150%, auto, auto;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0% 50%, 100% 50%, 0 0, 0 0;
+  background-blend-mode: screen, screen, screen, screen, normal, normal, overlay, normal;
+  animation: fan-aurora var(--fan-drift) ease-in-out infinite;
+  box-shadow: 0 0 30px var(--fan-glow), inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+/* Quầng sáng trôi qua lại — thứ làm nền "sống" thay vì một mảng màu chết */
+@keyframes fan-aurora {
+  0%, 100% { background-position: 0 0, 0 0, 0 0, 0 0, 0% 50%, 100% 50%, 0 0, 0 0; }
+  50% { background-position: 0 0, 0 0, 0 0, 0 0, 38% 38%, 62% 64%, 0 0, 0 0; }
 }
 #stage.theme-quiz #hud > #welcome.fan::before { padding: 3px;
   background: conic-gradient(from var(--spin), var(--fan-ink), var(--fan-mid), var(--fan-ink), var(--fan-mid), var(--fan-ink));
@@ -490,29 +514,46 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
   color: var(--fan-ink); text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9); }
 
 /* cấp 1 — ĐỒNG */
-#stage.theme-quiz #hud > #welcome.fan-1 { --fan-ink: #ffb877; --fan-mid: #b9682f; --fan-deep: #2b1a10; --fan-glow: rgba(255, 150, 80, 0.45); }
+#stage.theme-quiz #hud > #welcome.fan-1 { --fan-ink: #ffb877; --fan-mid: #b9682f; --fan-deep: #2b1a10; --fan-glow: rgba(255, 150, 80, 0.45);
+  --fan-b1: rgba(255, 150, 70, 0.40); --fan-b2: rgba(185, 104, 47, 0.46); --fan-drift: 11s; }
 /* cấp 2 — BẠC */
-#stage.theme-quiz #hud > #welcome.fan-2 { --fan-ink: #eef4fb; --fan-mid: #8c9bad; --fan-deep: #1b2028; --fan-glow: rgba(215, 232, 250, 0.45); }
+#stage.theme-quiz #hud > #welcome.fan-2 { --fan-ink: #eef4fb; --fan-mid: #8c9bad; --fan-deep: #1b2028; --fan-glow: rgba(215, 232, 250, 0.45);
+  --fan-b1: rgba(205, 225, 250, 0.34); --fan-b2: rgba(120, 140, 170, 0.46); --fan-drift: 10s; }
 /* cấp 3 — VÀNG: thêm vệt sáng quét ngang */
-#stage.theme-quiz #hud > #welcome.fan-3 { --fan-ink: #ffd95e; --fan-mid: #c2941c; --fan-deep: #2b2209; --fan-glow: rgba(255, 205, 70, 0.5); }
+#stage.theme-quiz #hud > #welcome.fan-3 { --fan-ink: #ffd95e; --fan-mid: #c2941c; --fan-deep: #2b2209; --fan-glow: rgba(255, 205, 70, 0.5);
+  --fan-b1: rgba(255, 196, 60, 0.42); --fan-b2: rgba(194, 148, 28, 0.50); --fan-drift: 8s; }
 #stage.theme-quiz #hud > #welcome.fan-3::after { display: block; }
 /* cấp 4 — LỤC BẢO: vệt quét + thở nhẹ */
 #stage.theme-quiz #hud > #welcome.fan-4 { --fan-ink: #5bf0bd; --fan-mid: #0f9c78; --fan-deep: #06261f; --fan-glow: rgba(70, 235, 180, 0.5);
-  animation: fan-pulse 2.4s ease-in-out infinite; }
+  animation: fan-aurora var(--fan-drift) ease-in-out infinite, fan-pulse 2.4s ease-in-out infinite;
+  --fan-b1: rgba(50, 235, 175, 0.42); --fan-b2: rgba(15, 156, 120, 0.52); --fan-drift: 6.5s; }
 #stage.theme-quiz #hud > #welcome.fan-4::after { display: block; }
 /* cấp 5 — HỒNG NGỌC: thở nhanh hơn, quầng dày hơn */
 #stage.theme-quiz #hud > #welcome.fan-5 { --fan-ink: #ff9ab8; --fan-mid: #c01a4c; --fan-deep: #2f0715; --fan-glow: rgba(255, 90, 140, 0.6);
-  animation: fan-pulse 1.9s ease-in-out infinite; }
+  animation: fan-aurora var(--fan-drift) ease-in-out infinite, fan-pulse 1.9s ease-in-out infinite;
+  --fan-b1: rgba(255, 70, 130, 0.44); --fan-b2: rgba(192, 26, 76, 0.54); --fan-drift: 5.5s; }
 #stage.theme-quiz #hud > #welcome.fan-5::after { display: block; }
 /* cấp 6–9 — BẠCH KIM: viền chạy nhanh */
 #stage.theme-quiz #hud > #welcome.fan-6 { --fan-ink: #d6e8ff; --fan-mid: #4f6fc4; --fan-deep: #111a33; --fan-glow: rgba(150, 190, 255, 0.65);
-  animation: fan-pulse 1.6s ease-in-out infinite; }
+  animation: fan-aurora var(--fan-drift) ease-in-out infinite, fan-pulse 1.6s ease-in-out infinite;
+  --fan-b1: rgba(120, 175, 255, 0.46); --fan-b2: rgba(79, 111, 196, 0.56); --fan-drift: 4.5s; }
 #stage.theme-quiz #hud > #welcome.fan-6::before { animation: spin 2.2s linear infinite; }
 #stage.theme-quiz #hud > #welcome.fan-6::after { display: block; }
 /* cấp 10+ — KIM CƯƠNG: nền cầu vồng chạy, sáng nhất màn hình */
 #stage.theme-quiz #hud > #welcome.fan-7 { --fan-ink: #ffffff; --fan-mid: #ff6fb0; --fan-deep: #2a0a24; --fan-glow: rgba(255, 150, 220, 0.85);
-  background: linear-gradient(120deg, #ff4fa3, #ffd36b 30%, #36d6ff 60%, #b388ff);
-  background-size: 260% 100%; animation: fan-rainbow 4s linear infinite, fan-pulse 1.5s ease-in-out infinite; }
+  --fan-b1: rgba(255, 255, 255, 0.34); --fan-b2: rgba(255, 150, 220, 0.44); --fan-drift: 3.6s;
+  /* lớp cuối đổi thành cầu vồng chạy; ba lớp trên (bụi lấp lánh, quầng, vân kim loại) giữ nguyên */
+  background:
+    radial-gradient(circle at 21% 26%, rgba(255, 255, 255, 0.95) 0 1.3px, transparent 2.2px),
+    radial-gradient(circle at 46% 74%, rgba(255, 255, 255, 0.8) 0 1.1px, transparent 2px),
+    radial-gradient(circle at 63% 22%, rgba(255, 255, 255, 0.9) 0 1.3px, transparent 2.2px),
+    radial-gradient(circle at 78% 66%, rgba(255, 255, 255, 0.75) 0 1.1px, transparent 2px),
+    radial-gradient(56% 170% at 7% 50%, var(--fan-b1) 0%, transparent 72%),
+    radial-gradient(50% 160% at 95% 50%, var(--fan-b2) 0%, transparent 74%),
+    repeating-linear-gradient(114deg, rgba(255, 255, 255, 0.07) 0 2px, transparent 2px 10px),
+    linear-gradient(120deg, #ff4fa3, #ffd36b 30%, #36d6ff 60%, #b388ff);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%, 150% 150%, 150% 150%, auto, 260% 100%;
+  animation: fan-rainbow 4s linear infinite, fan-pulse 1.5s ease-in-out infinite; }
 #stage.theme-quiz #hud > #welcome.fan-7::before { animation: spin 1.8s linear infinite; }
 #stage.theme-quiz #hud > #welcome.fan-7::after { display: block; }
 /* nền cầu vồng sáng → chữ phải ĐẬM mới đọc được, kể cả tên */
@@ -520,7 +561,11 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 #stage.theme-quiz #welcome.fan-7 .name { color: #23061d; -webkit-text-fill-color: #23061d; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45); }
 #stage.theme-quiz #welcome.fan-7 .line { color: #3a0d30; -webkit-text-fill-color: #3a0d30; text-shadow: none; }
 
-@keyframes fan-rainbow { to { background-position: 260% 0; } }
+@keyframes fan-rainbow {
+  0% { background-position: 0 0, 0 0, 0 0, 0 0, 0% 50%, 100% 50%, 0 0, 0% 0; }
+  50% { background-position: 0 0, 0 0, 0 0, 0 0, 38% 38%, 62% 64%, 0 0, 130% 0; }
+  100% { background-position: 0 0, 0 0, 0 0, 0 0, 0% 50%, 100% 50%, 0 0, 260% 0; }
+}
 @keyframes fan-pulse { 50% { filter: brightness(1.12); } }
 
 /* 🎵 Thanh quà bật / tắt nhạc nền (sát dưới bảng thứ tự máy chủ nhận) */
