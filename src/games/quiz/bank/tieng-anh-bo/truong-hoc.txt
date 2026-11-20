@@ -214,7 +214,7 @@ MASTER | Bằng sau đại học học thêm một đến hai năm, cao hơn c�
 DOCTORATE | Học vị tiến sĩ cao quý nghiên cứu khoa học | 3 | PHD
 POSTDOCTORAL | Nghiên cứu sinh sau tiến sĩ tiếp tục làm đề tài khoa học | 3 | POSTDOC
 DISSERTATION | Luận án tiến sĩ dày, bảo vệ trước hội đồng khoa học | 3
-DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2
+DEFENSE | Buổi bảo vệ đồ án hoặc luận văn tốt nghiệp | 2 | DEFENCE
 ADMISSION | Sự trúng tuyển nhập học vào trường đại học | 2
 ENROLLMENT | Thủ tục ghi danh đăng ký nhập học chính thức | 2
 EXPULSION | Hình phạt đuổi học vĩnh viễn tước quyền học tập | 3

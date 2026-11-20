@@ -200,7 +200,7 @@ AFFORD | Có đủ khả năng chi trả tiền bạc mua sắm | 1
 AGGRAVATE | Làm trầm trọng thêm tình hình xấu | 3 | WORSEN
 ALTER | Thay đổi hoặc sửa đổi một chút kích thước | 2
 AMUSE | Làm cho ai đó bật cười vui vẻ | 2
-ANALYZE | Phân tích số liệu và dữ liệu chi tiết | 2
+ANALYZE | Phân tích số liệu và dữ liệu chi tiết | 2 | ANALYSE
 ANTICIPATE | Dự đoán trước và mong đợi điều sắp xảy ra | 2 | FORESEE
 APOLOGIZE | Nói lời xin lỗi chân thành với ai đó | 1 | SAY SORRY, APOLOGISE
 APPLAUD | Vỗ tay khen ngợi tán thưởng | 2 | CLAP
@@ -385,7 +385,7 @@ POUR | Rót nước đổ nước vào bình | 1
 PRAISE | Tán dương ca ngợi khen ngợi hết lời | 1 | COMMEND
 PRAY | Cầu nguyện chắp tay xin bình an | 1
 PREDICT | Dự đoán trước tương lai | 2
-PREFER | Thích hơn ưu tiên hơn | 1 | FAVOR
+PREFER | Thích hơn ưu tiên hơn | 1 | FAVOR, FAVOUR
 PRESERVE | Bảo quản gìn giữ nguyên vẹn | 2
 PRETEND | Giả vờ đóng kịch như thật | 1
 PREVENT | Ngăn chặn phòng ngừa rủi ro | 2
@@ -396,7 +396,7 @@ PROMOTE | Thăng chức hoặc quảng bá thương hiệu | 2 | ADVANCE
 PROVE | Chứng minh tính đúng đắn | 2
 PROVIDE | Cung cấp tiếp tế đồ dùng lương thực | 1
 PUBLISH | Xuất bản sách hoặc công bố công khai | 2
-PUNISH | Xử phạt trừng trị răn đe | 1 | PENALIZE
+PUNISH | Xử phạt trừng trị răn đe | 1 | PENALIZE, PENALISE
 PURSUE | Theo đuổi ước mơ đam mê | 2 | CHASE
 QUARREL | Cãi cọ xích mích lời qua tiếng lại | 2
 REACH | Vươn tới với tới hoặc chạm tới đích | 1 | ATTAIN
@@ -561,7 +561,7 @@ INCLINE | Nghiêng người hoặc có chiều hướng nghiêng về | 2
 INDULGE | Nuông chiều đam mê chiều theo sở thích | 3
 INHIBIT | Kìm hãm ngăn chặn sự phát triển | 3
 INITIATE | Khởi xướng đề xướng phong trào | 2
-INQUIRE | Hỏi thăm dò xét thông tin | 2
+INQUIRE | Hỏi thăm dò xét thông tin | 2 | ENQUIRE
 INSPECT | Thanh tra kiểm tra kỹ lưỡng | 2
 INSTILL | Truyền dẫn thấm nhuần tư tưởng đạo đức | 3
 INTEGRATE | Hội nhập tích hợp gắn kết | 2
@@ -604,7 +604,7 @@ REPEL | Đẩy lùi xua đuổi côn trùng kẻ thù | 2
 REPLENISH | Làm đầy lại bổ sung thêm kho dự trữ | 3
 REPRESS | Kìm nén cảm xúc trong lòng | 3
 REPRODUCE | Sinh sản hoặc tái tạo bản sao | 2
-RESEMBLE | Giống giống hệt với ai đó | 2
+RESEMBLE | Trông giống hệt một người nào đó | 2
 RESONATE | Cộng hưởng vang vọng âm thanh | 3
 RETRIEVE | Lấy lại truy xuất dữ liệu | 2
 REVERE | Tôn sùng sùng kính bậc vĩ nhân | 3
@@ -674,9 +674,8 @@ VIRTUE | Đức hạnh phẩm chất tốt đẹp | 2
 GIVE UP | Cụm động từ chỉ sự từ bỏ đầu hàng buông xuôi | 1
 LOOK FOR | Cụm động từ tìm kiếm thứ gì bị thất lạc | 1
 LOOK AFTER | Cụm động từ chăm sóc trông nom người thân | 1 | TAKE CARE OF
-TAKE OFF | Cụm động từ chỉ việc cởi bỏ giày dép hoặc áo khoác ra | 1
+TAKE OFF | Cụm động từ chỉ máy bay rời đường băng bay lên, hoặc cởi áo giày ra | 1
 PUT ON | Cụm động từ mặc quần áo hoặc đeo kính vào | 1
-TAKE OFF CLOTHES | Cụm động từ cởi quần áo cởi giày dép | 1
 TURN UP | Cụm động từ vặn to âm lượng hoặc xuất hiện bất ngờ | 2
 TURN DOWN | Cụm động từ vặn nhỏ âm lượng hoặc từ chối lời mời | 2
 GO ON | Cụm động từ tiếp tục diễn ra tiếp diễn | 1
@@ -685,7 +684,7 @@ RUN OUT OF | Cụm động từ hết cạn kiệt tiền hoặc xăng | 2
 CATCH UP WITH | Cụm động từ đuổi kịp bắt kịp người đi trước | 2
 KEEP UP WITH | Cụm động từ theo kịp duy trì cùng tốc độ | 2
 BREAK DOWN | Cụm động từ xe cộ máy móc bị hỏng hóc giữa đường | 2
-BREAK UP | Cụm động từ chỉ việc một đám đông tan rã giải tán | 1
+BREAK UP | Cụm động từ chỉ đôi yêu nhau chia tay, hoặc đám đông tan rã | 1
 COME ACROSS | Cụm động từ tình cờ bắt gặp một cuốn sách cũ | 2
 FIGURE OUT | Cụm động từ nghĩ ra tìm ra cách giải quyết vấn đề | 2
 GIVE IN | Cụm động từ nhượng bộ chịu thua trước sức ép | 2
@@ -739,7 +738,7 @@ PUDDLE | Vũng nước mưa nhỏ đọng trên đường sau cơn mưa | 2
 MIST | Làn sương mù mỏng manh giăng nhẹ buổi sớm mai | 2
 FROST | Băng giá sương muối phủ trắng cành cây mùa đông | 2
 DOWNPOUR | Cơn mưa rào trút nước như thác đổ | 2
-SHOWER RAIN | Cơn mưa rào thoảng qua chợt đến chợt đi | 2
+RAIN SHOWER | Cơn mưa rào thoảng qua chợt đến chợt đi | 2 | SHOWER
 HEATWAVE | Đợt nắng nóng gay gắt oi bức mùa hè | 2
 COLD SPELL | Đợt không khí lạnh rét căm căm tràn về | 2
 LEAP | Nhảy vọt qua con rãnh nhỏ bước nhảy xa | 2
@@ -755,5 +754,5 @@ SHARP | Sắc bén lưỡi dao con dao gọt hoa quả | 1
 BLUNT | Cùn lưỡi kéo cùn cắt không đứt | 2
 TIGHT | Chật chội bó sát bộ quần áo vừa may | 1
 LOOSE | Rộng thùng thình lỏng lẻo thoải mái | 1
-LIGHT WEIGHT | Nhẹ bẫng lông hồng bay phất phơ | 1
+LIGHTWEIGHT | Nhẹ bẫng như lông hồng, bay phất phơ | 1
 FIRM | Chắc chắn kiên cố đệm nằm không lún | 2

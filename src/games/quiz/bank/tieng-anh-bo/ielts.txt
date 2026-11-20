@@ -125,7 +125,6 @@ FOR EXAMPLE | Ví dụ như (từ nối) | 1 | FOR INSTANCE, SUCH AS
 RESOURCE | Tài nguyên | 2 | RESOURCES
 URBAN | Thuộc thành thị (tính từ) | 2
 RURAL | Thuộc nông thôn (tính từ) | 2
-ANALYSE | Phân tích | 2 | ANALYZE
 SIGNIFICANT | Đáng kể tới mức có ý nghĩa thống kê, đủ để chú ý | 2 | CONSIDERABLE
 PERCENTAGE | Tỷ lệ phần trăm | 2 | PERCENT
 APPROXIMATELY | Xấp xỉ, khoảng chừng | 2 | ABOUT, AROUND, ROUGHLY

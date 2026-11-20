@@ -93,7 +93,7 @@ LIVE BROADCAST | Truyền hình trực tiếp | 2 | LIVE STREAM
 TABLE | Bảng xếp hạng các đội theo điểm số | 2 | LEAGUE TABLE, RANKING
 TOP SCORER | Cầu thủ ghi nhiều bàn nhất cả giải | 2
 VAR | Công nghệ video hỗ trợ trọng tài | 2
-DEFENCE | Việc phòng ngự, viết theo kiểu Anh | 2 | DEFENDING, DEFENSE
+DEFENCE | Việc cả đội lùi về chặn đối phương ghi bàn | 2 | DEFENDING, DEFENSE
 CHANCE | Cơ hội ghi bàn | 2
 RIVAL | Đối thủ kình địch | 2 | RIVALS
 OPPONENT | Đội đối thủ | 2
