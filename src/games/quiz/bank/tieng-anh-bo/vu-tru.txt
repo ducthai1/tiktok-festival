@@ -81,17 +81,16 @@ COSMIC RAY | Tia vũ trụ | 2
 SOLAR WIND | Gió Mặt Trời | 2
 MAGNETIC FIELD | Từ trường bao quanh một thiên thể hoặc nam châm | 2
 MAGNETOSPHERE | Từ quyển, vùng không gian bị từ trường hành tinh chi phối | 3
-IONOSPHERE | Tầng ion | 2
-SOUTHERN LIGHTS | Cực quang nam | 2
-EXOPLANET | Hành tinh ngoài hệ | 2 | EXOPLANETS
-HABITABLE ZONE | Vùng sinh sống | 2
+IONOSPHERE | Tầng khí quyển cao bị Mặt Trời ion hoá, phản xạ sóng vô tuyến đi xa | 2
+EXOPLANET | Hành tinh quay quanh một ngôi sao khác, không thuộc Hệ Mặt Trời | 2 | EXOPLANETS
+HABITABLE ZONE | Dải quanh một ngôi sao đủ ấm để nước tồn tại ở thể lỏng | 2
 EARTH-LIKE PLANET | Hành tinh giống Trái Đất | 2
 GOLDILOCKS ZONE | Khoảng cách vừa phải quanh một ngôi sao cho phép nước lỏng duy trì sự sống | 3
 PLANET EARTH | Hành tinh Trái Đất | 1
 TERRESTRIAL PLANET | Hành tinh đất đá | 2
 GAS GIANT | Hành tinh khí khổng lồ | 2
 ICE GIANT | Hành tinh băng khổng lồ | 2
-JOVIAN PLANET | Hành tinh giống Sao Mộc | 3
+JOVIAN PLANET | Nhóm hành tinh khổng lồ toàn khí, cùng kiểu với Sao Mộc | 3
 PROXIMA CENTAURI | Sao gần Trái Đất nhất | 2
 ALPHA CENTAURI | Hệ sao gần Trái Đất nhất | 2
 VEGA | Sao Chức Nữ, đỉnh sáng của chòm Thiên Cầm | 2
@@ -104,72 +103,46 @@ REGULUS | Ngôi sao sáng nhất chòm Sư Tử, nằm ngay trên đường hoà
 ARCTURUS | Sao Đại Giác, ngôi sao cam sáng của chòm Mục Phu | 2
 CAPELLA | Sao Ngũ Xa, ngôi sao vàng sáng của chòm Ngự Phu | 2
 FOMALHAUT | Ngôi sao sáng cô độc ở phương nam, chòm Nam Ngư | 2
-VELA SUPERNOVA | Tàn dư siêu tân tinh khổng lồ phát sáng nằm trong chòm sao Thuyền Phàm | 3
-TYCHO SUPERNOVA | Vụ nổ siêu tân tinh do nhà thiên văn học người Đan Mạch ghi chép vào năm 1572 | 3
-KEPLER SUPERNOVA | Tàn dư vụ nổ sao sáng rực do nhà thiên văn học người Đức quan sát năm 1604 | 3
-GRAVITATIONAL LENSING | Thấu kính hấp dẫn | 3
+GRAVITATIONAL LENSING | Vật thể nặng bẻ cong ánh sáng đi ngang, phóng to ảnh thiên hà phía sau | 3
 EINSTEIN RING | Ảo ảnh vòng cung ánh sáng khép kín tạo ra bởi hiện tượng thấu kính hấp dẫn | 3
 DARK MATTER | Vật chất tối | 2
-COSMIC INFLATION | Lạm phát vũ trụ | 3
+COSMIC INFLATION | Giai đoạn vũ trụ phình ra cực nhanh ngay khoảnh khắc đầu tiên sau Vụ Nổ Lớn | 3
 HUBBLE CONSTANT | Hằng số đo tốc độ giãn nở của vũ trụ theo khoảng cách | 3
 HUBBLE LAW | Định luật vật lý thiên văn xác định thiên hà càng ở xa thì vận tốc lùi xa càng lớn | 3
 COSMIC EXPANSION | Hiện tượng các thiên hà ngày càng rời xa nhau | 2
-BIG FREEZE | Kết thúc vũ trụ do lạnh | 3
-HEAT DEATH | Cái chết nhiệt | 3
-BIG RIP | Xé nát vũ trụ | 3
-BIG CRUNCH | Sụp đổ vũ trụ | 3
+BIG FREEZE | Kịch bản vũ trụ cứ giãn mãi tới khi mọi thứ nguội ngắt và tắt hẳn | 3
+HEAT DEATH | Trạng thái cuối cùng khi năng lượng rải đều khắp nơi, không còn gì chuyển động được nữa | 3
+BIG RIP | Kịch bản vũ trụ giãn nhanh tới mức xé rách cả thiên hà, hành tinh rồi tới nguyên tử | 3
+BIG CRUNCH | Kịch bản vũ trụ ngừng giãn rồi co ngược lại, dồn hết về một điểm | 3
 MULTIVERSE | Đa vũ trụ | 2
 PARALLEL UNIVERSE | Vũ trụ song song | 2
-QUANTUM GRAVITY | Trọng lực lượng tử | 3
+QUANTUM GRAVITY | Ngành tìm cách gộp lực hấp dẫn với vật lý hạt rất nhỏ làm một | 3
 STRING THEORY | Lý thuyết dây | 3
 SUPERSYMMETRY | Siêu đối xứng | 3
 HIGGS BOSON | Hạt cơ bản giải thích nguồn gốc khối lượng của vật chất thường ví như hạt của Chúa | 3
-VACUUM ENERGY | Năng lượng chân không | 3
-COSMOLOGICAL CONSTANT | Hằng số vũ trụ | 3
+VACUUM ENERGY | Năng lượng vẫn còn sót trong khoảng không hoàn toàn trống rỗng | 3
+COSMOLOGICAL CONSTANT | Hằng số Einstein thêm vào phương trình để giải thích vũ trụ giãn nhanh dần | 3
 GENERAL RELATIVITY | Thuyết tương đối rộng | 2
 SPECIAL RELATIVITY | Thuyết tương đối hẹp | 2
 SPACETIME | Không-thời gian | 2
-VENUS PROBE | Tàu thăm dò Sao Kim | 2
-MERCURY PROBE | Tàu thăm dò Sao Thủy | 2
-JUPITER PROBE | Tàu bay tới hành tinh lớn nhất Hệ Mặt Trời, nói chung | 2
-SATURN PROBE | Tàu bay tới hành tinh có vành đai, nói chung | 2
-CASSINI-HUYGENS | Tàu bay quanh Sao Thổ 13 năm và thả thiết bị xuống vệ tinh Titan | 2
-JUNO | Tàu đang bay vòng cực Sao Mộc đo từ trường và lõi hành tinh | 2
-NEW HORIZONS | Tàu thăm dò Sao Diêm Vương | 2
-DAWN MISSION | Chuyến tàu thám hiểm không gian khám phá tiểu hành tinh Vesta và hành tinh lùn Ceres | 2
-PHILAE | Tàu đáp sao chổi (Rosetta) | 2
 LUNAR ORBITER | Tàu quỹ đạo Mặt Trăng | 2
-VIKING LANDER | Tàu đáp Sao Hỏa | 2
-ZHURONG | Xe Trung Quốc trên Sao Hỏa | 2
-INGENUITY | Máy bay trên Sao Hỏa | 2
 ISS MODULE | Mô-đun Trạm Vũ Trụ Quốc tế | 2
-DRAGON CAPSULE | Tàu vũ trụ SpaceX | 2
-STARLINER | Tàu vũ trụ Boeing | 2
-SOYUZ | Tàu vũ trụ Nga | 1
-ATLANTIS | Tàu con thoi mang tên con tàu nghiên cứu biển, bay chuyến cuối năm 2011 | 1
-CHALLENGER | Tàu con thoi nổ tung 73 giây sau khi rời bệ phóng năm 1986 | 1
-DISCOVERY | Tàu con thoi bay nhiều chuyến nhất, từng đưa kính Hubble lên quỹ đạo | 1
-ENDEAVOUR | Tàu con thoi đóng thay chiếc đã nổ, mang tên con tàu của thuyền trưởng Cook | 1
 SPACE SHUTTLE | Loại tàu vũ trụ có cánh, hạ cánh như máy bay để dùng lại | 1
 SPACE EXPLORATION | Khám phá vũ trụ | 1
 COLONIZATION | Việc đưa người tới sống lâu dài ở một thiên thể khác | 1
-SPACE MINING | Khai thác tài nguyên vũ trụ | 2
+SPACE MINING | Việc khai thác khoáng sản ngay trên thiên thể ngoài Trái Đất | 2
 ASTEROID MINING | Khai thác tiểu hành tinh | 2
-MOON BASE | Căn cứ Mặt Trăng | 2
-MARS COLONY | Thuộc địa Sao Hỏa | 2
-TERRAFORM | Biến đổi hành tinh | 3
+MARS COLONY | Khu định cư lâu dài của con người trên Sao Hỏa | 2
 SPACE ELEVATOR | Thang máy vũ trụ | 3
 SOLAR SAIL | Buồm năng lượng Mặt Trời | 3
-HIBERNATION | Danh từ chỉ giai đoạn ngủ vùi qua mùa đông | 2
 LIFE SUPPORT SYSTEM | Hệ thống duy trì sự sống | 2
 BIOSPHERE | Sinh quyển | 2
-ASTROBIOLOGY | Sinh vật học vũ trụ | 3
+ASTROBIOLOGY | Ngành nghiên cứu khả năng có sự sống ở nơi khác trong vũ trụ | 3
 SETI | Tìm kiếm trí tuệ ngoài hành tinh | 2
 ALIEN LIFE | Sự sống ngoài hành tinh | 1
 UFO | Vật thể bay không xác định | 1
 SCIENCE FICTION | Khoa học viễn tưởng | 1
 SPACE DEBRIS | Rác vũ trụ | 2
-SPACE JUNK | Rác không gian | 2
 ACCELEROMETER | Gia tốc kế | 2
 MAGNETOMETER | Từ kế | 2
 REFLECTING TELESCOPE | Kính phản xạ | 3
