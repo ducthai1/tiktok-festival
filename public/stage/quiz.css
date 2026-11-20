@@ -529,40 +529,6 @@ html.lite #stage.theme-quiz #hud > #board { background: rgba(8, 10, 22, 0.92); }
 #stage.theme-quiz #welcome .fan-badge-num { font-size: 40px; font-weight: 900; color: #fff; margin-top: 1px;
   text-shadow: 0 0 16px var(--fan-glow), 0 2px 4px rgba(0, 0, 0, 0.9); }
 
-/* ══ BẢN THỬ: huy hiệu kiểu HUY CHƯƠNG TRÒN CÓ RUY BĂNG ══
-   Bật bằng cách thêm class "medal" vào #welcome (stage-hud.js). Mặt huy chương là hình tròn có
-   vành răng cưa (conic-gradient) như mép đồng xu, dưới có hai dải ruy băng chéo.
-   Để cạnh bản hộp bo góc cho chủ kênh chọn. */
-#stage.theme-quiz #welcome.medal .fan-badge { position: relative; width: 58px; height: 58px; border-radius: 50%;
-  padding: 0; overflow: visible; margin-bottom: 13px; /* chừa chỗ cho ruy băng, thẻ cắt phần thò ra ngoài */
-  background:
-    radial-gradient(circle at 50% 38%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.74) 62%),
-    conic-gradient(var(--fan-ink) 0 6deg, var(--fan-mid) 6deg 12deg);
-  border: 3px solid var(--fan-ink);
-  box-shadow: 0 0 20px var(--fan-glow), inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 5px 12px rgba(0, 0, 0, 0.6); }
-/* hai dải ruy băng thò ra dưới mặt huy chương */
-#stage.theme-quiz #welcome.medal .fan-badge::before,
-#stage.theme-quiz #welcome.medal .fan-badge::after {
-  content: ""; position: absolute; bottom: -12px; width: 13px; height: 22px; z-index: -1;
-  background: linear-gradient(180deg, var(--fan-mid), var(--fan-deep));
-  box-shadow: inset 0 0 0 1.5px var(--fan-ink); }
-#stage.theme-quiz #welcome.medal .fan-badge::before { left: 10px; transform: rotate(15deg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%); }
-#stage.theme-quiz #welcome.medal .fan-badge::after { right: 10px; transform: rotate(-15deg);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 74%, 0 100%); }
-#stage.theme-quiz #welcome.medal .fan-badge-top { font-size: 10px; letter-spacing: 1.5px; margin-top: 7px; }
-#stage.theme-quiz #welcome.medal .fan-badge-num { font-size: 29px; margin-top: -2px; }
-
-/* BẢN THỬ 3: ĐỒNG XU TRÒN, không ruy băng — vừa khít thẻ 100px, vành răng cưa như mép xu thật */
-#stage.theme-quiz #welcome.coin .fan-badge { width: 72px; height: 72px; border-radius: 50%; padding: 0;
-  background:
-    radial-gradient(circle at 50% 36%, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.74) 64%),
-    conic-gradient(var(--fan-ink) 0 5deg, var(--fan-mid) 5deg 10deg);
-  border: 3px solid var(--fan-ink);
-  box-shadow: 0 0 20px var(--fan-glow), inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 5px 12px rgba(0, 0, 0, 0.6); }
-#stage.theme-quiz #welcome.coin .fan-badge-top { font-size: 11px; letter-spacing: 2px; margin-top: 9px; }
-#stage.theme-quiz #welcome.coin .fan-badge-num { font-size: 33px; margin-top: -2px; }
-
 /* cấp 1 — ĐỒNG */
 #stage.theme-quiz #hud > #welcome.fan-1 { --fan-ink: #ffb877; --fan-mid: #b9682f; --fan-deep: #2b1a10; --fan-glow: rgba(255, 150, 80, 0.45);
   --fan-b1: rgba(255, 150, 70, 0.40); --fan-b2: rgba(185, 104, 47, 0.46); --fan-drift: 11s; }
