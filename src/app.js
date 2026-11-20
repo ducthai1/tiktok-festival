@@ -486,9 +486,34 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
   }, 2000) : null;
   const server = http.createServer(async (req, res) => {
     const reject = (code, text) => {
+      if (res.headersSent || res.writableEnded) return undefined;
       res.writeHead(code, { 'Content-Type': 'text/plain; charset=utf-8', ...securityHeaders(port) });
-      res.end(text);
+      return res.end(text);
     };
+    // CHỐT AN TOÀN: không request nào được treo vô hạn.
+    // Handler là hàm async mà trước đây KHÔNG có try/catch — một lỗi ném ra giữa chừng thành
+    // unhandledRejection: server vẫn sống, nhưng res không bao giờ được end. Trình duyệt giữ luôn
+    // kết nối đó; mỗi nguồn chỉ được 6 kết nối HTTP/1.1 nên vài lần như vậy là cả tab đứng hình,
+    // quay vòng mãi không tải nổi gì nữa — phải mở tab mới. Nay: lỗi → 500, quá hạn → 503.
+    const t0 = Date.now();
+    res.setTimeout(20000, () => {
+      log.warn('http', `${req.method} ${(req.url || '').split('?')[0]} quá 20 giây chưa trả lời → cắt để không giữ kết nối của trình duyệt`);
+      reject(503, 'Server xử lý quá lâu');
+      res.destroy();
+    });
+    res.on('finish', () => {
+      const ms = Date.now() - t0;
+      if (ms > 3000) log.warn('http', `${req.method} ${(req.url || '').split('?')[0]} mất ${ms}ms (chậm)`);
+    });
+    try {
+      await handleRequest(req, res, reject);
+    } catch (error) {
+      log.error('http', `${req.method} ${(req.url || '').split('?')[0]} lỗi:`, error);
+      reject(500, 'Lỗi máy chủ');
+    }
+  });
+
+  async function handleRequest(req, res, reject) {
     if (!isAllowedHost(req.headers.host, port, config.allowLan)) return reject(403, 'Forbidden');
 
     // ── Upload nhạc nền 20/11 (POST /api/music-upload) ────────────────────────
@@ -609,9 +634,9 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       res.writeHead(302, { Location: '/admin', ...securityHeaders(port) });
       return res.end();
     }
-    if (urlPath === '/api/tts') return tts.handle(req, res, port);
+    if (urlPath === '/api/tts') return await tts.handle(req, res, port);
     if (urlPath === '/api/tts-en') {
-      if (englishTts) return englishTts.handle(req, res, port);
+      if (englishTts) return await englishTts.handle(req, res, port);
       return reject(503, 'Giọng tiếng Anh chỉ bật khi chạy npm start');
     }
     if (urlPath === '/api/health') {
@@ -627,7 +652,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
       ...securityHeaders(port, { framePreview: urlPath === '/stage' })
     });
     return res.end(req.method === 'HEAD' ? undefined : file.body);
-  });
+  }
   server.requestTimeout = 10000;
   server.headersTimeout = 5000;
   server.on('upgrade', sockets.handleUpgrade);

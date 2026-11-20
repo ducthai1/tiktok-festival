@@ -264,6 +264,15 @@ Phần bridge của `cherry9001/tiktok-live-bar` được dùng làm tham khảo
 | **Xoá** (📣 Đại sứ share) | chỉ bảng đại sứ share | bảng 💎, điểm game |
 | **🧹 Bắt đầu phiên live mới** | TẤT CẢ | — |
 
+## Trang điều khiển bị "đơ, xoay mãi" — đã sửa (20/11/2026)
+
+Triệu chứng: mở `/admin` cả buổi, thỉnh thoảng trang trắng / quay vòng mãi, phải mở tab mới dán lại token. Hai nguyên nhân, cả hai đều đã chứng minh được bằng thực nghiệm:
+
+1. **Server bỏ lửng request.** Handler HTTP là hàm `async` nhưng **không có `try/catch`**. Một lỗi ném ra giữa chừng (ổ đầy, quyền thư mục, lỗi fs nhất thời…) thành `unhandledRejection`: server vẫn chạy, nhưng `res` không bao giờ được `end()`. Trình duyệt giữ luôn kết nối đó, mà mỗi nguồn chỉ được **6 kết nối HTTP/1.1** → vài lần như vậy là cả tab đứng hình. Nay: lỗi → **500**, quá 20 giây chưa trả lời → **503** + cắt kết nối, và mọi request chậm hơn 3 giây đều ghi `[http] … mất Xms (chậm)` vào log. `/api/tts` và `/api/tts-en` trước đây được `return` mà **không `await`** nên lỗi bên trong cũng rơi vào đúng bẫy này — đã sửa. Test: `test/http-never-hangs.test.js`.
+2. **Trang điều khiển để trắng vĩnh viễn.** `#login` và `#app` đều bắt đầu `hidden`; nếu đã gửi token mà `authOk` không bao giờ về (socket rơi đúng lúc gửi, server đang khởi động lại…) thì **không có gì được hiện ra**. Nay có đồng hồ canh **6 giây**: không thấy `authOk` thì hiện lại ô token kèm băng báo lý do. Mất kết nối thì **giữ nguyên giao diện** + băng "đang tự nối lại" thay vì giấu hết đi.
+
+Gặp lại thì mở `data/logs/sessions/<buổi>.log` tìm `[http]` — nay mọi request chậm / bị cắt đều có dòng riêng.
+
 ## Nhật ký (log) và xử lý sự cố mất dữ liệu live
 
 Mọi dòng log có giờ máy và được ghi vào `data/logs/YYYY-MM-DD.log` (mỗi ngày một file, giữ 14 ngày; `data/` không lên git vì có tên người xem; token trang điều khiển bị che `***` trong file).

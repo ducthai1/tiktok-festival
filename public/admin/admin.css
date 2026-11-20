@@ -418,3 +418,9 @@ body.teacher .shell, body.teacher .login { position: relative; z-index: 1; }
 .yt-input { flex: 1; min-width: 220px; padding: 6px 10px; border-radius: 9px; border: 1px solid var(--line, rgba(255, 255, 255, 0.18));
   background: rgba(255, 255, 255, 0.05); color: inherit; font: inherit; font-size: 13px; }
 .yt-input::placeholder { opacity: 0.55; }
+
+/* Băng báo trạng thái kết nối: luôn thấy trang đang ở đâu, không bao giờ để trang trắng im lặng */
+.conn-banner { margin: 8px auto; max-width: 1400px; padding: 8px 14px; border-radius: 10px; font-size: 13px; font-weight: 700;
+  background: rgba(61, 220, 132, 0.14); color: var(--ok, #3ddc84); border: 1px solid rgba(61, 220, 132, 0.35); }
+.conn-banner.bad { background: rgba(255, 93, 108, 0.14); color: var(--bad, #ff5d6c); border-color: rgba(255, 93, 108, 0.4); }
+.conn-banner[hidden] { display: none; }

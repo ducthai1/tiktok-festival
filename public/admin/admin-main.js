@@ -45,27 +45,63 @@ function toast(text, bad = false) {
   el.timer = setTimeout(() => { el.hidden = true; }, 3500);
 }
 
+// TRANG KHÔNG BAO GIỜ ĐƯỢC ĐỂ TRẮNG.
+// #login và #app đều bắt đầu hidden: nếu đã gửi token mà authOk không bao giờ về (socket rơi đúng
+// lúc gửi, server đang khởi động lại, tin nhắn lạc...) thì trang trắng trơn, quay vòng mãi — chủ kênh
+// phải mở tab mới dán lại token. Nay có đồng hồ canh: 6 giây không có authOk thì hiện lại ô token
+// kèm nút thử lại, và lúc mất kết nối thì BÁO RÕ chứ không giấu hết giao diện đi.
+let authTimer = null;
+function waitForAuth() {
+  clearTimeout(authTimer);
+  authTimer = setTimeout(() => {
+    if (authed) return;
+    $('login').hidden = false;
+    $('app').hidden = true;
+    setConnBanner('Server chưa xác nhận token — thử lại hoặc dán lại token.', true);
+  }, 6000);
+}
+/** Băng báo trạng thái kết nối ở đầu trang (không che giao diện). */
+function setConnBanner(text, bad = false) {
+  const el = $('conn-banner');
+  if (!el) return;
+  el.textContent = text || '';
+  el.hidden = !text;
+  el.className = `conn-banner${bad ? ' bad' : ''}`;
+}
+
 const socket = connectLiveSocket({
   onOpen() {
     $('server-dot').classList.remove('off');
-    if (token) socket.send({ t: 'auth', token });
-    else $('login').hidden = false;
+    if (token) {
+      socket.send({ t: 'auth', token });
+      waitForAuth();
+    } else {
+      $('login').hidden = false;
+    }
   },
   onClose() {
     $('server-dot').classList.add('off');
     authed = false;
+    clearTimeout(authTimer);
+    // đã vào được rồi thì GIỮ giao diện, chỉ báo mất kết nối — ẩn hết đi là trang trắng
+    setConnBanner('⚠ Mất kết nối tới server — đang tự nối lại…', true);
   },
   onMessage(m) {
     if (m.t === 'authOk') {
       authed = true;
+      clearTimeout(authTimer);
+      setConnBanner('');
       $('login').hidden = true;
       $('app').hidden = false;
       loadGrantGifts(); // danh sách quà để bù — lấy từ bảng quà live, không chỉ quà mẫu
       if (currentTab === 'gifts') gifts.load();
       if (currentTab === 'board') loadAnswersLog();
     } else if (m.t === 'authFail') {
+      authed = false;
+      clearTimeout(authTimer);
       $('login').hidden = false;
       $('app').hidden = true;
+      setConnBanner('Token sai — dán lại token mới (in ở cửa sổ chạy server, hoặc file data/admin-token).', true);
       toast('Token sai', true);
     } else if (m.t === 'hello') {
       // server khởi động lại với code giao diện mới → tải lại trang (token vẫn giữ trong sessionStorage)
@@ -762,8 +798,14 @@ $('login-form').addEventListener('submit', (e) => {
   } catch {
     // trình duyệt chặn lưu trữ: vẫn dùng token trong bộ nhớ trang
   }
+  setConnBanner('Đang mở khoá…');
   socket.send({ t: 'auth', token });
+  waitForAuth();
 });
+
+// Móc để KIỂM TRA BẰNG MÁY (giống window.__stage của màn hình): dựng lại đúng cảnh "đã gửi token
+// mà authOk không về" rồi xem đồng hồ canh có cứu trang khỏi trắng không.
+window.__admin = { waitForAuth, setConnBanner, isAuthed: () => authed };
 
 const stageUrl = `${location.origin}/stage`;
 $('stage-url').textContent = stageUrl;
