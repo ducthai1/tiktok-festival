@@ -44,7 +44,7 @@ PORK BELLY | Thịt ba chỉ | 2
 CHICKEN BREAST | Ức gà | 1
 DRUMSTICK | Đùi gà | 2 | CHICKEN LEG
 CHICKEN WING | Cánh gà | 1 | CHICKEN WINGS
-LAMB | Thịt của con cừu non, mềm và ít mùi hơn cừu già | 2 | MUTTON
+LAMB | Thịt của con cừu non, mềm và ít mùi hơn cừu già | 2
 VEAL | Thịt bê | 3
 SCALLOP | Sò điệp | 2
 MUSSEL | Con vẹm (chem chép) | 3 | MUSSELS
@@ -72,7 +72,7 @@ SHRIMP PASTE | Mắm tôm | 2
 LARD | Mỡ lợn (mỡ nước) | 3
 MARGARINE | Bơ thực vật | 3
 JELLY | Thạch rau câu trong, rung rinh khi lắc | 1 | JELLO, GELATIN
-FLAN | Bánh caramen | 2 | CREME CARAMEL
+FLAN | Miếng bánh trứng sữa mềm mịn, mặt rưới lớp đường thắng nâu | 2 | CREME CARAMEL
 SPONGE CAKE | Bánh bông lan | 2
 RICE CAKE | Bánh gạo | 2
 HOT DOG | Bánh mì kẹp xúc xích | 1 | HOTDOG
@@ -197,7 +197,7 @@ PORRIDGE | Cháo (cháo gà, cháo trắng) | 3 | CONGEE, RICE PORRIDGE
 STICKY RICE | Xôi, gạo nếp | 3 | GLUTINOUS RICE
 BROKEN RICE | Cơm tấm | 3
 DUMPLING | Bánh sủi cảo (há cảo) | 3 | DUMPLINGS
-OMELETTE | Trứng tráng (đánh tan rồi chiên) | 3 | OMELETTES, OMELETS
+OMELETTE | Trứng đánh tan rồi chiên thành miếng dẹt, gập đôi lại | 3 | OMELETTES, OMELET, OMELETS
 COFFEE | Cà phê | 1
 BEER | Bia (đồ uống) | 1 | BEERS
 GREEN TEA | Trà xanh | 1
@@ -298,7 +298,7 @@ BURRITO | Bánh cuộn bột mì nướng nhân thịt và đậu của Mexico |
 SUSHI | Món cơm cuộn cá hồi và hải sản đặc trưng của Nhật Bản | 1
 WASABI | Mù tạt xanh cay nồng xộc lên mũi của Nhật Bản | 2
 VANILLA | Hương thơm ngọt lấy từ quả lan, vị kem trắng cơ bản nhất | 1
-CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm | 1 | CARAMEN
+CARAMEL | Đường thắng nấu chảy màu cánh gián ngọt đậm | 1
 COTTON CANDY | Kẹo bông gòn tơi xốp ngọt lịm tan trong miệng | 2 | CANDY FLOSS
 LOLLIPOP | Cây kẹo mút gắn trên que tròn nhiều màu | 1
 PRETZEL | Bánh quy xoắn nướng giòn rắc hạt muối của Đức | 2 | PRETZELS
@@ -348,7 +348,7 @@ CHURRO | Món bánh quẩy ngọt thanh dài phủ đường quế chấm sốt 
 PANNA COTTA | Món tráng miệng thạch kem sữa tươi nấu sánh mịn của nước Ý | 2
 PUDDING | Món bánh tráng miệng mềm mại núng nính rưới sốt caramen | 1
 TART | Món bánh nướng vỏ giòn có vành viền trũng chứa kem trứng hoặc trái cây | 1
-SUNDAE | Ly kem tươi nhiều tầng rưới sốt sô-cô-la và quả anh đào trên đỉnh | 1 | KEM SUNDAE
+SUNDAE | Ly kem tươi nhiều tầng rưới sốt sô-cô-la và quả anh đào trên đỉnh | 1
 LATTE | Ly cà phê chan nhiều sữa nóng, mặt trên vẽ hình bằng bọt sữa | 1
 MOCHA | Món cà phê thơm béo kết hợp espresso sữa đặc và sô-cô-la | 1
 AMERICANO | Thức uống pha loãng espresso với nước nóng để bớt độ đậm đặc | 1
