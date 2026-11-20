@@ -404,8 +404,8 @@ TORNADO | Lốc xoáy, vòi rồng | 2 | TWISTER, WHIRLWIND
 FLOOD | Lũ lụt | 2 | FLOODS
 DROUGHT | Hạn hán | 3
 SUNSHINE | Ánh nắng mặt trời | 1
-SUNRISE | Bình minh (lúc mặt trời mọc) | 2 | DAYBREAK
-SUNSET | Hoàng hôn (lúc mặt trời lặn) | 2 | SUNDOWN
+SUNRISE | Lúc mặt trời nhô lên khỏi đường chân trời buổi sớm | 2 | DAYBREAK
+SUNSET | Lúc mặt trời khuất xuống dưới đường chân trời buổi chiều | 2 | SUNDOWN
 RAINDROP | Giọt mưa | 2 | RAINDROPS
 SNOWFLAKE | Bông tuyết | 2 | SNOWFLAKES
 SNOWMAN | Người tuyết | 1 | SNOWMEN
@@ -471,7 +471,7 @@ DISASTER | Thảm họa thiên nhiên | 3
 FLOODING | Trận lũ lụt dâng cao | 2
 ATMOSPHERE | Bầu khí quyển Trái Đất | 3
 FORESTATION | Việc trồng rừng phủ xanh | 3
-TOUCAN | Loài chim nhiệt đới có chiếc mỏ rất to sặc sỡ rực rỡ | 3 | CHIM TOUCAN
+TOUCAN | Chim rừng nhiệt đới Nam Mỹ, mỏ to sặc sỡ gần bằng cả thân | 3
 FALCON | Chim ưng săn mồi liệng cánh thần tốc | 2
 STALACTITE | Khối thạch nhũ đá rủ từ trần hang động xuống | 3
 GEYSER | Mạch nước ngầm phun nước nóng tự nhiên lên mặt đất | 3
@@ -486,9 +486,9 @@ CANYON | Hẻm núi sâu thăm thẳm có vách đá dựng đứng | 2 | GORGE
 IGUANA | Loài kỳ nhông cự đà Nam Mỹ có mào gai dọc lưng | 2
 KOOKABURRA | Loài chim nước Úc có tiếng hót vang như tiếng người cười sảng khoái | 3
 PELICAN | Chim bồ nông có túi da lớn dưới mỏ dùng để xúc cá dưới nước | 2
-GAZELLE | Linh dương linh dương đồng cỏ nhảy thoăn thoắt né báo săn | 2
+GAZELLE | Linh dương nhỏ nhanh nhẹn, nhảy thoăn thoắt né báo săn | 2
 WHALE SHARK | Cá mập voi khổng lồ hiền lành ăn sinh vật phù du | 2
-VIPER | Loài rắn lục đuôi chuông mang nọc độc chết người | 2
+VIPER | Rắn lục đầu tam giác, nanh dài gập lại được trong miệng | 2
 COBRA | Rắn hổ mang bành phình cổ hung dữ mang nọc độc | 1
 PYTHON | Con trăn gấm khổng lồ cuộn tròn siết mồi | 1
 TADPOLE | Con nòng nọc bơi lội dưới nước trước khi mọc chân thành ếch | 2
@@ -513,11 +513,11 @@ SEAGULL | Mòng biển bay lượn kêu ríu rít ven bờ biển | 1
 HAWK | Diều hâu mắt tinh bay lượn săn gà chuột | 2
 RAVEN | Quạ đen cỡ lớn đuôi hình nêm, thông minh bậc nhất loài chim | 2
 MAGPIE | Chim ác là thích nhặt những vật lấp lánh | 3
-CANARY | Chim yến hót lông vàng rực rỡ tiếng hót véo von | 2
+CANARY | Chim cảnh lông vàng hót véo von, thợ mỏ xưa mang xuống hầm dò khí độc | 2
 PARAKEET | Vẹt yến phụng nhỏ xinh nuôi làm cảnh | 2
 COCKATOO | Vẹt mào Úc có chùm lông dựng đứng trên đầu | 3
 CRANE | Chim sếu đầu đỏ sải cánh bay lượn tuyệt đẹp | 2
-SWIFT | Chim yến làm tổ bằng dãi làm yến sào | 2
+SWIFT | Chim bay suốt ngày không đậu, nhả dãi làm tổ thành món yến sào | 2
 SWALLOW | Chim én báo hiệu mùa xuân về | 1
 GECKO | Loài thằn lằn có lớp đệm ngón chân dính hút leo trèo trên tường kính | 2
 SALAMANDER | Kỳ giông lưỡng cư có khả năng tái sinh chi bị đứt | 3

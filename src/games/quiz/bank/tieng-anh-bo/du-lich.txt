@@ -428,8 +428,8 @@ BOULEVARD | Con đường lớn có dải phân cách trồng cây chạy giữa
 CROSSWALK | Vạch sang đường cho người đi bộ | 1
 TIMEZONE | Múi giờ Trái Đất | 2
 DAYLIGHT | Ánh sáng ban ngày | 1
-DAWN | Bình minh hửng sáng | 2
-DUSK | Hoàng hôn chiều tà | 2
+DAWN | Khoảnh khắc trời vừa hửng sáng, trước khi mặt trời ló ra | 2
+DUSK | Khoảng tranh tối tranh sáng sau khi mặt trời đã lặn | 2
 WANDERLUST | Niềm khao khát cuồng nhiệt muốn đi du lịch chu du khắp thế giới | 3
 COMPASS | Chiếc la bàn định vị luôn có kim chỉ về hướng Bắc | 1
 HORIZON | Đường chân trời xa tít tắp nơi trời và biển gặp nhau | 2
