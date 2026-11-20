@@ -29,7 +29,7 @@ FINANCE | Tài chính | 1
 FREIGHT | Hàng hóa vận chuyển (cước) | 3
 GRANT | Khoản tài trợ cấp cho dự án nghiên cứu, không phải trả lại | 3
 HANDOUT | Tài liệu phát tay | 2
-HEADHUNTER | Người săn đầu người (tuyển dụng) | 3
+HEADHUNTER | Người chuyên đi lôi kéo nhân sự giỏi từ công ty khác về | 3
 INQUIRY | Yêu cầu thông tin | 2 | ENQUIRY
 JOB OPENING | Vị trí công ty đang đăng tuyển người mới | 2 | OPENING, JOB VACANCY
 LABOR | Nhân công (lao động) | 2 | LABOUR
@@ -47,7 +47,7 @@ PREMISES | Cơ sở, mặt bằng (công ty) | 3
 PREREQUISITE | Điều kiện tiên quyết | 3
 PROFITABLE | Có lãi | 2
 PROSPECTIVE | Tiềm năng (khách hàng tương lai) | 3
-RECOMMENDATION | Thư giới thiệu | 2
+RECOMMENDATION | Lời khuyên nên chọn thứ gì, hoặc lời tiến cử một người | 2
 REGISTRATION | Sự đăng ký | 2
 REMINDER | Lời nhắc | 1
 REPRESENTATIVE | Người đại diện | 2 | REP
@@ -138,7 +138,7 @@ WORKSHOP | Buổi hội thảo thực hành | 2
 CONFERENCE | Hội nghị nhiều diễn giả lên trình bày tham luận chuyên môn | 2
 PROPOSAL | Bản đề xuất | 2
 NEGOTIATE | Động từ chỉ việc thương lượng để đi tới thỏa thuận | 2
-APPROVE | Phê duyệt, chấp thuận | 2 | ACCEPT, AUTHORISE
+APPROVE | Phê duyệt, chấp thuận | 2 | ACCEPT, AUTHORISE, AUTHORIZE
 POSTPONE | Hoãn lại (cuộc họp) | 2 | RESCHEDULE
 WARRANTY | Cam kết sửa chữa miễn phí trong thời hạn ghi trên phiếu mua hàng | 2
 COMPLAINT | Lời phàn nàn, khiếu nại | 2
@@ -192,7 +192,7 @@ PRODUCTIVITY | Năng suất lao động | 3
 QUALIFICATION | Bằng cấp, trình độ | 3 | QUALIFICATIONS
 LOGISTICS | Hậu cần, kho vận | 3
 BROCHURE | Tập quảng cáo nhiều trang in đẹp giới thiệu sản phẩm | 3 | LEAFLET, PAMPHLET
-QUOTE | Mức giá người bán đưa ra khi khách hỏi, nói ngắn gọn | 3
+QUOTE | Mức giá người bán nói miệng cho khách khi được hỏi | 3
 LEASE | Hợp đồng thuê | 3 | RENTAL AGREEMENT
 TENANT | Người thuê nhà | 3 | RENTER
 RENOVATE | Sửa sang, cải tạo (toà nhà) | 3 | REFURBISH, REMODEL
@@ -255,7 +255,7 @@ MANAGEMENT | Ban lãnh đạo điều hành công ty, hoặc chính việc đi�
 OCCUPATION | Nghề nghiệp | 2
 OPPORTUNITY | Cơ hội | 1
 PARTICIPANT | Người tham gia | 2
-ACQUISITION | Thương vụ thâu tóm và mua lại một doanh nghiệp khác | 2
+ACQUISITION | Việc một công ty bỏ tiền mua lại công ty khác theo thoả thuận | 2
 COMMODITY | Hàng hóa thương mại thô trên thị trường giao dịch | 2
 DEFECTIVE | Sản phẩm bị lỗi hỏng hóc do trục trặc sản xuất | 2
 DISPATCH | Hành động gửi chuyển phát nhanh hàng hóa hoặc tài liệu quan trọng | 2
@@ -265,7 +265,7 @@ CLIENTELE | Tập hợp nhóm khách hàng quen thuộc trung thành của doanh
 ENDORSEMENT | Sự bảo chứng thương hiệu của người nổi tiếng cho sản phẩm | 2
 FEASIBILITY | Tính khả thi có thể thực hiện được của một dự án kinh doanh | 3
 DIVIDEND | Cổ tức chia tiền lãi cho các cổ đông công ty | 3
-TAKEOVER | Thương vụ thâu tóm mua đứt quyền kiểm soát công ty | 2
+TAKEOVER | Việc giành quyền kiểm soát một công ty, có khi bên kia không muốn | 2
 SUBSIDIARY | Công ty con trực thuộc tập đoàn mẹ | 3
 CORPORATION | Tập đoàn lớn có tư cách pháp nhân riêng và nhiều cổ đông | 2
 STARTUP | Công ty khởi nghiệp non trẻ đầy tiềm năng bứt phá | 1
@@ -340,7 +340,7 @@ LUNCH BREAK | Giờ nghỉ buổi trưa để ăn cơm | 1
 NOTEPAD | Tập giấy nhỏ để ghi nhanh vài dòng | 1
 PARCEL | Gói hàng bọc kín gửi qua bưu điện | 1
 WAREHOUSE WORKER | Người làm việc trong kho, xếp và lấy hàng | 1
-OPENING HOUR | Giờ cửa hàng bắt đầu mở cửa đón khách | 1
+OPENING HOUR | Giờ cửa hàng bắt đầu mở cửa đón khách | 1 | OPENING HOURS
 CLOSING TIME | Giờ cửa hàng ngừng bán và đóng cửa | 1
 SHOP ASSISTANT | Nhân viên bán hàng đứng quầy tư vấn cho khách | 1
 QUEUE | Hàng người đứng nối đuôi nhau chờ tới lượt | 1
