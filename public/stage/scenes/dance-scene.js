@@ -25,9 +25,10 @@ import { disposeObject } from './person-model.js';
 const MEDALS = ['🥇', '🥈', '🥉'];
 const RANK_TITLES = ['BÁ CHỦ SÀN', 'PHÚ HỘ', 'ĐẠI GIA']; // danh hiệu khung vàng trên đầu Top 1-2-3
 // quà từ 200 💎 (một lượt) là "quà lớn": độc chiếm sân khấu — giữ bao lâu (ms, tính từ lúc giọng cảm ơn bắt đầu) theo bậc
-const BIG_GIFT_KC = 99; // từ 99 💎 là quà lớn: thẻ giữa màn + độc chiếm sân khấu (về mốc cũ, chủ kênh 21/11)
-const BIG_HOLD_MS = { 3: 6000, 4: 9000, 5: 12000, 6: 20000 };
-const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥', 6: '🌌 ĐẠI NHẠC HỘI 🌌' };
+const BIG_GIFT_KC = 50; // từ 50 💎 (bậc khổng lồ VIP) là quà lớn: thẻ giữa màn + độc chiếm sân khấu
+const BIG_HOLD_MS = { 3: 6000, 4: 8000, 5: 11000, 6: 15000, 7: 20000 };
+const TIER_TITLES = { 1: '💖 FAN MỚI 💖', 2: 'SOLO', 3: '★ SOLO SÂN KHẤU ★', 4: '👑 VIP SOLO 👑', 5: '🔥 SIÊU SAO 🔥',
+  6: '💥 BÙNG NỔ 💥', 7: '🌌 ĐẠI NHẠC HỘI 🌌' };
 const RECENT_MS = 12000;
 const DJ_INFO = { id: '__dj', dj: true, look: 0, slot: -1, move: '' }; // DJ đứng bàn mix trên sân khấu (không phải người xem)
 const FACE_EMOJI = { happy: '😊', grin: '😁', wink: '😉', cool: '😎', love: '😍', laugh: '😂', surprise: '😮', tongue: '😜',
@@ -240,12 +241,12 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
     legend: [],
     giftList: [
       ['Rose', '1–4', '🦋 Có cánh + lên hình'],
-      ['Finger Heart', '5–19', '🎈 Bay cao + solo ngắn'],
-      ['Doughnut', '20–98', '🚗 Xe bay chạy vòng'],
-      ['Cap', '99–198', '🎤 Solo + pháo hoa'],
-      ['Sunglasses', '199–999', '👑 Khổng lồ VIP'],
-      ['Galaxy', '1.000–4.999', '🎆 Pháo hoa + DROP'],
-      ['Sports Car', '5.000+', '🌌 Đại nhạc hội']
+      ['Finger Heart', '5–9', '🎈 Bay cao + solo ngắn'],
+      ['Doughnut', '10–19', '🚗 Xe bay chạy vòng'],
+      ['Cap', '20–49', '🎤 Solo + pháo hoa'],
+      ['Sunglasses', '50–99', '👑 Khổng lồ VIP'],
+      ['Galaxy', '100–199', '💥 Pháo hoa + DROP'],
+      ['Sports Car', '200+', '🌌 Đại nhạc hội']
     ],
     update(snapshot) {
       state = snapshot.state;
@@ -325,7 +326,7 @@ export function createDanceScene({ hud, labels, audio, pipeline, sheets }) {
         else {
           const cue = fx.ride ? () => sounds.rideCheer() : () => sounds.gift(fx.tier); // xe bay: kèn tiệc + hò reo (động cơ riêng)
           const m = { userId: fx.userId, line: thankLine(fx), effects: [() => { cue(); bigGift.show(fx); }] };
-          openBatch(big ? stage.big({ ...m, holdMs: BIG_HOLD_MS[Math.min(6, fx.tier)] || 6000 }) : stage.now(m));
+          openBatch(big ? stage.big({ ...m, holdMs: BIG_HOLD_MS[Math.min(7, fx.tier)] || 6000 }) : stage.now(m));
           if (!big && fx.tier === 1 && !fx.ride) glance(fx.userId); // xe bay đã có camera bám theo xe
         }
       } else if (fx.kind === 'fountains') {

@@ -10,11 +10,12 @@
 //   6   (≥ 20.000)      Tên lửa, Sư tử, Vũ trụ TikTok
 
 export const TIER_MIN = [1, 10, 99, 499, 5000, 20000];
-// Sàn Nhảy TÁCH LẠI 6 BẬC như trước commit 6a4b8b0 (chủ kênh 21/11: "cho về cũ") — bản 3 khoảng rộng
-// gộp bậc 2–3 bằng cách lặp mốc 200, nên quà rẻ nào cũng ra một hiệu ứng y hệt nhau, mất hẳn cảm giác lên bậc.
-// Mốc bậc 3 hạ 30 → 20 (chủ kênh 21/11): hộp quà TikTok VN chủ yếu 1–30 xu nên 30 là quá cao, hạ xuống
-// cho nhiều món chạm tới. Các game khác giữ TIER_MIN.
-export const DANCE_TIER_MIN = [1, 5, 20, 199, 1000, 5000];
+// Sàn Nhảy: 7 BẬC, dồn chi tiết vào vùng quà RẺ (chủ kênh 21/11: "5 hạng mục đầu cao nhất 100 kc thôi,
+// sau đó 200"). Hộp quà TikTok VN chủ yếu 1–30 xu nên mốc cũ (199 / 1.000 / 5.000) gần như không ai chạm tới
+// — cả buổi live chỉ hai ba bậc đầu chạy. Nay năm bậc đầu nằm trọn dưới 100 xu, hai bậc cuối 100 và 200.
+//   1–4 · 5–9 · 10–19 · 20–49 · 50–99 · 100–199 · ≥200
+// Các game khác giữ TIER_MIN.
+export const DANCE_TIER_MIN = [1, 5, 10, 20, 50, 100, 200];
 
 /** Khoảng giá (kc) của một bậc (theo bảng mốc `mins`), viết gọn cho bảng chú thích: "1–9", "499–4,9K", "20K+". */
 export function tierRangeLabel(tier) {
@@ -96,7 +97,7 @@ export function giftEmoji(name) {
 // + hình dễ nhận ra ở cỡ nhỏ + quà cố định lâu năm của TikTok (bảng quà VN có, không phải quà sự kiện/vùng khác).
 // Bậc 1 giữ Hoa hồng (1 xu) — món tiêu biểu nhất của phiên tặng quà. Bậc 6 không có mốc trên → Sư tử, hình rõ nhất.
 // Tinh vân Rosa (15.000) gần mốc bậc 5 hơn nhưng nhỏ lại trông như bông hồng bậc 1 → dùng Chim ưng.
-const LEGEND_PICK = { 1: 'Rose', 2: 'Doughnut', 3: 'Corgi', 4: 'Private Jet', 5: 'Falcon', 6: 'Lion' };
+const LEGEND_PICK = { 1: 'Rose', 2: 'Doughnut', 3: 'Corgi', 4: 'Private Jet', 5: 'Falcon', 6: 'Lion', 7: 'Lion' };
 const PICK_BY_EN = new Map(SAMPLE_GIFTS.map((g) => [g.en.toLowerCase(), g]));
 const isPick = (g, tier) => {
   const pick = PICK_BY_EN.get(String(LEGEND_PICK[tier]).toLowerCase());

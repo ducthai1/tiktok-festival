@@ -4,8 +4,9 @@
 // hoa), mỗi 3.000 tim = xe bay một vòng; share = lên camera;
 // follow (lần đầu) = thẻ lớn + solo sân khấu + cánh neon + danh hiệu FAN CỨNG;
 // tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → XE BAY
-// 6 bậc quà (mốc Sàn Nhảy: DANCE_TIER_MIN): 1–4 cánh · 5–19 solo ngắn · 20–98 XE BAY · 99–198 solo + pháo hoa
-// · 199–999 khổng lồ VIP · 1.000+ DROP · 5.000+ đại nhạc hội
+// 7 bậc quà (mốc Sàn Nhảy: DANCE_TIER_MIN), dồn chi tiết vào vùng quà rẻ cho hợp hộp quà TikTok VN:
+// 1–4 cánh · 5–9 bay cao + solo ngắn · 10–19 XE BAY · 20–49 solo + pháo hoa · 50–99 khổng lồ VIP
+// · 100–199 pháo hoa + DROP · ≥200 đại nhạc hội
 // (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { DANCE_TIER_MIN, giftTierIn } from '../../public/shared/gift-tiers.js';
@@ -36,9 +37,9 @@ const SHRINK_WORDS = ['nho lai', 'nho di', 'be lai'];
 const JUMP_MS = 1300;
 // Quà 1–199 💎 (cả khoảng đầu của Sàn Nhảy): XE BAY mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu.
 // Từ 200 💎 trở lên: solo sân khấu + khổng lồ + pháo hoa.
-// Xe bay là hiệu ứng của RIÊNG khoảng giữa (bậc 3), không phải mọi quà rẻ — có vậy mới thấy lên bậc.
-export const RIDE_MIN_KC = 20;
-export const RIDE_MAX_KC = 98;
+// Xe bay là hiệu ứng của RIÊNG bậc 3, không phải mọi quà rẻ — có vậy mới thấy lên bậc.
+export const RIDE_MIN_KC = 10;
+export const RIDE_MAX_KC = 19;
 const RIDE_MS = 14500; // màn hình bay 14 s (cất cánh → một vòng → hạ cánh), dư nửa giây
 const WINGS_MS = 10 * 60 * 1000;
 export const LIKES_FOR_CAMERA = 500; // miễn phí: cánh + lên camera (user 05/11 chuyển bớt về free, trước là 1.000)
@@ -72,7 +73,7 @@ export function faceForComment(text) {
 }
 
 // Bậc quà → thời gian solo (ms). Bậc 1 không solo (chỉ hào quang + nhảy bung).
-const SOLO_MS_BY_TIER = [0, 5000, 9000, 12000, 15000, 20000];
+const SOLO_MS_BY_TIER = [0, 5000, 9000, 12000, 15000, 18000, 22000]; // theo bậc 1..7
 
 export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}) {
   const dancers = new Map();
@@ -233,13 +234,13 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
       d.level = Math.min(5, d.level + 1);
       d.levelUntil = now + LEVEL_MS;
     }
-    if (tier >= 4) {
+    if (tier >= 5) { // từ 50 💎: khổng lồ VIP
       d.giantUntil = now + GIANT_MS;
       fx.push({ kind: 'fountains', userId: d.id });
     }
-    if (tier >= 3) fx.push({ kind: 'fireworks', power: [1, 2, 3, 6][tier - 3] });
+    if (tier >= 4) fx.push({ kind: 'fireworks', power: [1, 2, 3, 6][tier - 4] }); // từ 20 💎
     if (tier >= 2) enqueueSolo(d.id, tier, SOLO_MS_BY_TIER[tier - 1] * (1 + Math.min(gift.count - 1, 4) * 0.15), now);
-    if (tier >= 5) startDrop(now, fx);
+    if (tier >= 6) startDrop(now, fx); // từ 100 💎
     else addHype(gift.diamonds * 10, now, fx);
   }
 

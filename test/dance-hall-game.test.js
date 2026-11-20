@@ -78,18 +78,19 @@ test('likes fill the hype meter and a full meter drops the beat for everyone', (
   assert.ok(snap.dancers.every((d) => d.move === 'hype'));
 });
 
-test('a rose gives an aura and a ride but no solo; 200+ gets a solo on stage, best gift first', () => {
+test('quà 1 💎 chỉ có hào quang, chưa có solo; quà lớn thì solo + khổng lồ, món to nhất lên trước', () => {
   const game = createDanceHallGame();
   const fx = game.handleEvent(gift(1, 1), 0);
   assert.ok(!kinds(fx).includes('solo'));
   assert.equal(dancer(game, 'u1').aura, true);
   assert.equal(game.snapshot().solo, null);
-  const first = game.handleEvent(gift(2, 299), 0); // 200–999: solo + khổng lồ
+  const first = game.handleEvent(gift(2, 299), 0); // ≥200: bậc cao nhất — solo + khổng lồ
   assert.ok(kinds(first).includes('solo'));
   assert.equal(dancer(game, 'u2').giant, true);
-  game.handleEvent(gift(3, 250), 100); // cùng khoảng vào hàng chờ
-  game.handleEvent(gift(4, 1500), 200); // 1.000+ chen lên trước
-  const after = game.tick(12000 + 1);
+  // 299 và 1500 nay CÙNG bậc 7 (≥200) nên không so được thứ tự — dùng bậc 5 vs bậc 7 cho rõ
+  game.handleEvent(gift(3, 60), 100); // bậc 5 vào hàng chờ
+  game.handleEvent(gift(4, 250), 200); // bậc 7 chen lên trước bậc 5
+  const after = game.tick(22000 + 1); // solo bậc 7 dài 22 giây
   const next = after.find((f) => f.kind === 'solo');
   assert.equal(next.userId, 'u4');
   assert.ok(kinds(after).includes('soloEnd'));
@@ -232,9 +233,9 @@ test('without a seed count the floor starts empty', () => {
 
 // Sàn Nhảy tách lại 6 bậc (chủ kênh 21/11 "cho về cũ"), mốc bậc 3 hạ 30 → 20.
 // XE BAY là hiệu ứng của RIÊNG khoảng 20–98 💎 — quà rẻ hơn chỉ có cánh / solo ngắn, quà to hơn thì solo + pháo hoa.
-test('xe bay chỉ dành cho khoảng 20–98 💎; dưới thì không, trên thì solo + pháo hoa', () => {
+test('xe bay chỉ dành cho khoảng 10–19 💎; dưới thì không, trên thì solo + pháo hoa', () => {
   const game = createDanceHallGame();
-  for (const [n, kc] of [[1, 20], [2, 98]]) {
+  for (const [n, kc] of [[1, 10], [2, 19]]) {
     const fx = game.handleEvent(gift(n, kc), 0);
     assert.equal(fx.find((f) => f.kind === 'gift').ride, true, `${kc} 💎 phải được xe bay`);
     assert.equal(dancer(game, `u${n}`, 1000).move, 'ride');
@@ -245,7 +246,7 @@ test('xe bay chỉ dành cho khoảng 20–98 💎; dưới thì không, trên t
   assert.equal(re.find((f) => f.kind === 'gift').ride, false, '5 💎 chưa tới mốc xe bay');
 
   // quà to hơn khoảng xe bay: thôi xe, chuyển sang solo + pháo hoa
-  const big = game.handleEvent(gift(3, 199), 40000);
+  const big = game.handleEvent(gift(3, 20), 40000);
   assert.equal(big.find((f) => f.kind === 'gift').ride, false);
   assert.ok(kinds(big).includes('fireworks'));
   assert.ok(big.some((f) => f.kind === 'solo' && f.userId === 'u3'));
@@ -290,8 +291,8 @@ test('free extras: "bay lên" lifts you one floor (max 2), "bây giờ" does not
 
 test('dance gift thresholds are lower than the other games', async () => {
   const { DANCE_TIER_MIN, giftTierIn, giftTier } = await import('../public/shared/gift-tiers.js');
-  // 6 bậc: 1–4 · 5–19 · 20–198 · 199–999 · 1.000–4.999 · ≥5.000
-  assert.deepEqual([1, 4, 5, 19, 20, 198, 199, 999, 1000, 4999, 5000].map((c) => giftTierIn(c, DANCE_TIER_MIN)),
-    [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6]);
+  // 7 bậc, dồn chi tiết vào vùng quà rẻ: 1–4 · 5–9 · 10–19 · 20–49 · 50–99 · 100–199 · ≥200
+  assert.deepEqual([1, 4, 5, 9, 10, 19, 20, 49, 50, 99, 100, 199, 200, 5000].map((c) => giftTierIn(c, DANCE_TIER_MIN)),
+    [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7]);
   assert.deepEqual([1, 10, 99, 499].map(giftTier), [1, 2, 3, 4], 'game khác giữ mốc cũ, .map(giftTier) vẫn đúng');
 });
