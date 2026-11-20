@@ -1,50 +1,50 @@
 # Tiếng Anh · Nghệ thuật, giải trí
-FRESCO | Tranh vẽ trên tường vữa ướt | 3
-ABSTRACT | Trừu tượng (phong cách hội họa) | 2
-MURAL | Bích họa (tranh tường) | 2
-COMPOSITION | Bố cục (tác phẩm) | 2
-IMPROVISE | Ứng tác, ngẫu hứng | 2
-INSTRUMENTAL | Bản nhạc không lời | 2
-MONOLOGUE | Độc thoại (trên sân khấu) | 2 | MONOLOG
-REHEARSE | Tập dượt (trước buổi diễn) | 2 | REHEARSAL
-PLAYWRIGHT | Nhà viết kịch | 3
-NARRATIVE | Lối kể chuyện (câu chuyện) | 2
-FICTION | Truyện hư cấu | 1
-ANTHOLOGY | Tuyển tập (văn, thơ) | 3
-CARICATURE | Tranh biếm họa | 3
-TYPOGRAPHY | Nghệ thuật sắp chữ (thiết kế chữ) | 3
-PAINTING | Bức tranh vẽ | 1
-BRUSHSTROKE | Nét cọ | 2
-PIGMENT | Chất màu (bột màu) | 2
-SYMMETRY | Sự đối xứng | 2
-SILHOUETTE | Hình bóng (bóng đen trên nền sáng) | 2
-MONOCHROME | Đơn sắc (một màu) | 2
-VIVID | Sống động, rực rỡ | 2
-THEATRICAL | Mang tính sân khấu (kịch tính) | 2
-RECITAL | Buổi độc tấu (biểu diễn đơn) | 2
-OVERTURE | Khúc dạo đầu (nhạc mở màn) | 3
-VIRTUOSO | Nghệ sĩ bậc thầy (điêu luyện) | 3
-REPERTOIRE | Các tiết mục sở trường | 3
-ACOUSTIC GUITAR | Cây đàn sáu dây thùng gỗ mộc không dùng điện | 1
-PERCUSSION | Bộ gõ (nhạc cụ) | 2
-BRASS | Bộ kèn đồng | 2
-WOODWIND | Bộ kèn gỗ (nhạc cụ hơi bằng gỗ) | 2
-STRINGS | Bộ dây (nhạc cụ dây) | 2
-TROMBONE | Kèn trôm-bôn (kèn có cần trượt) | 3
-HARPSICHORD | Đàn clavecin cổ (giống piano) | 3
-SKETCH | Bản vẽ phác thảo chì nhanh | 1
-CANVAS | Khung vải toan dùng để vẽ tranh sơn dầu | 2
-EASEL | Giá đỡ ba chân để đặt tranh vẽ | 3
-PALETTE | Khay pha màu vẽ của họa sĩ | 2
-WATERCOLOR | Màu nước dùng trong hội họa | 2 | WATERCOLOUR
-OIL PAINTING | Tranh sơn dầu nghệ thuật | 2
-POTTERY | Nghệ thuật làm đồ gốm sứ thủ công | 2
-CERAMICS | Đồ gốm nung men sứ mỹ nghệ | 2
-ORIGAMI | Nghệ thuật gấp giấy truyền thống của Nhật Bản | 1
-MOSAIC | Tranh ghép từ nhiều mảnh gốm đá nhỏ | 3
-GRAFFITI | Nghệ thuật vẽ tranh đường phố bằng bình xịt sơn | 1
-HARMONY | Sự hòa âm nhịp nhàng trong bản nhạc | 2
-ACOUSTIC | Nhạc mộc hoặc cây đàn ghi ta mộc không cắm điện | 2
-INSTRUMENT | Nhạc cụ âm nhạc nói chung | 1
-DRUM | Cái trống gõ tạo nhịp điệu rộn ràng | 1
-CYMBAL | Chiếc chũm chọe bằng đồng trong bộ trống | 2
+FRESCO | Tranh vẽ thẳng lên tường khi lớp vữa còn ướt, màu ngấm vào tường luôn | 3
+ABSTRACT | Phong cách vẽ không tả vật có thật, chỉ còn hình khối và màu sắc | 2
+MURAL | Bức tranh khổ lớn vẽ phủ kín cả mặt tường một toà nhà | 2
+COMPOSITION | Cách sắp xếp các mảng trong một bức tranh cho cân mắt | 2
+IMPROVISE | Diễn hoặc chơi nhạc tại chỗ, không theo bản tập trước | 2
+INSTRUMENTAL | Bản nhạc chỉ có tiếng đàn, không ai hát câu nào | 2
+MONOLOGUE | Màn một diễn viên đứng nói một mình trên sân khấu | 2 | MONOLOG
+REHEARSE | Tập đi tập lại cho thuộc trước đêm diễn chính thức | 2 | REHEARSAL
+PLAYWRIGHT | Người viết ra kịch bản cho sân khấu | 3
+NARRATIVE | Mạch chuyện được kể ra trong một cuốn sách hay bộ phim | 2
+FICTION | Loại truyện do nhà văn bịa ra, không có thật | 1
+ANTHOLOGY | Cuốn sách gom nhiều truyện hoặc nhiều bài thơ của nhiều người | 3
+CARICATURE | Tranh vẽ phóng đại nét mặt cho buồn cười để châm biếm ai đó | 3
+TYPOGRAPHY | Nghề chọn kiểu chữ và xếp chữ sao cho đẹp mắt | 3
+PAINTING | Bức tranh do hoạ sĩ vẽ ra | 1
+BRUSHSTROKE | Một vệt cọ quét lên mặt tranh | 2
+PIGMENT | Bột màu, thứ tạo ra màu cho sơn và cho mực | 2
+SYMMETRY | Tính chất hai nửa giống hệt nhau qua một trục ở giữa | 2
+SILHOUETTE | Hình in đen kịt của một người nổi lên trên nền sáng | 2
+MONOCHROME | Tranh hoặc ảnh chỉ dùng đúng một màu, đậm nhạt khác nhau | 2
+VIVID | Tính từ chỉ màu sắc rực rỡ, hình ảnh hiện lên rõ mồn một | 2
+THEATRICAL | Tính từ chỉ điệu bộ làm quá lên như đang diễn trên sân khấu | 2
+RECITAL | Buổi diễn chỉ có đúng một nghệ sĩ chơi từ đầu tới cuối | 2
+OVERTURE | Đoạn nhạc dạo mở màn, chơi trước khi vở opera bắt đầu | 3
+VIRTUOSO | Người chơi nhạc cụ giỏi tới mức điêu luyện bậc thầy | 3
+REPERTOIRE | Vốn tiết mục một nghệ sĩ đã thuộc và sẵn sàng đem ra diễn | 3
+ACOUSTIC GUITAR | Cây đàn sáu dây có thùng gỗ rỗng, gảy lên là kêu, khỏi cắm điện | 1
+PERCUSSION | Nhóm nhạc cụ phải gõ hoặc đập mới kêu, như trống và chuông | 2
+BRASS | Nhóm kèn làm bằng đồng, thổi hơi vào như kèn trumpet | 2
+WOODWIND | Nhóm nhạc cụ hơi làm bằng gỗ, như sáo và clarinet | 2
+STRINGS | Nhóm nhạc cụ kéo bằng vĩ, gồm violin và cello trong dàn giao hưởng | 2
+TROMBONE | Kèn đồng có một ống trượt ra trượt vào để đổi nốt | 3
+HARPSICHORD | Đàn phím thời cổ, phím gảy dây chứ không gõ dây như dương cầm | 3
+SKETCH | Bản vẽ nhanh bằng chì, mới phác nét chưa tô gì | 1
+CANVAS | Tấm vải toan căng trên khung để hoạ sĩ vẽ sơn dầu lên | 2
+EASEL | Cái giá ba chân dựng đứng để đặt tranh lúc vẽ | 3
+PALETTE | Cái khay hoạ sĩ cầm tay để pha trộn các màu | 2
+WATERCOLOR | Loại màu pha với nước, vẽ ra trong và nhẹ | 2 | WATERCOLOUR
+OIL PAINTING | Tranh vẽ bằng màu pha dầu, lâu khô và dày màu | 2
+POTTERY | Nghề nặn đất sét trên bàn xoay rồi nung thành nồi, bình, chum | 2
+CERAMICS | Ngành vật liệu nung ở nhiệt độ cao, làm ra gạch men, sứ và đồ cách điện | 2
+ORIGAMI | Nghệ thuật gấp giấy thành hình thú, truyền thống của Nhật Bản | 1
+MOSAIC | Bức tranh ghép lại từ hàng nghìn mảnh đá hoặc gốm vỡ nhỏ | 3
+GRAFFITI | Tranh xịt sơn lên tường ngoài phố, thường là chữ to nhiều màu | 1
+HARMONY | Nhiều nốt vang cùng lúc mà nghe thuận tai, không chỏi nhau | 2
+ACOUSTIC | Tính từ chỉ lối chơi mộc, hát với đàn thùng chứ không qua loa điện | 2
+INSTRUMENT | Thứ dùng để chơi ra âm nhạc, như đàn, trống hay kèn | 1
+DRUM | Cái trống, gõ vào mặt da để giữ nhịp cho cả bài | 1
+CYMBAL | Chiếc chũm choẹ bằng đồng dẹt, đập vào là xoảng một tiếng | 2
