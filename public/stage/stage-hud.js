@@ -379,7 +379,7 @@ export function createHud() {
       // nên tên được to lại mà thẻ vẫn vừa chiều cao.
       root.querySelector('.kicker').textContent = group
         ? `${band ? '👑' : '🎉'} CHÀO MỪNG ${people.length} BẠN${band ? ' · CÓ FAN MEMBER' : ' MỚI'}`
-        : band ? 'FAN MEMBER' : '👋 CHÀO MỪNG';
+        : band ? '👑 FAN MEMBER' : '👋 CHÀO MỪNG';
       root.querySelector('.name').textContent = group ? people.map((p) => p.nickname).join(' · ') : fx.nickname;
       root.querySelector('.line').textContent = line || 'vừa vào phòng!';
       root.hidden = false;
