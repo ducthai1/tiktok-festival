@@ -38,6 +38,37 @@ export function estimateSpeechLeadIn(speechText) {
   return Math.max(LEAD_IN_MS, speechMs);
 }
 export const LATE_MS = 1500; // hết giờ vẫn nhận bình luận gửi kịp nhưng tới chậm
+/**
+ * THỜI GIAN MỖI CÂU TÍNH THEO ĐÁP ÁN, không để một con số chết cho mọi câu.
+ * Đáp án dài hoặc nhiều chữ thì phải gõ lâu hơn; bậc khó hơn thì phải nghĩ lâu hơn.
+ * (Trước đây mọi câu đều 20 giây: từ 3 chữ cái thì thừa, từ 20 chữ cái thì gõ không kịp.)
+ */
+export const TIME_REF_CHARS = 8; // đáp án "cỡ trung bình" — giờ gốc của tab ứng với độ dài này
+export const TIME_PER_CHAR_MS = 700; // mỗi chữ cái dài/ngắn hơn mức trung bình
+export const TIME_PER_EXTRA_WORD_MS = 1500; // mỗi chữ rời thêm (dấu cách khó gõ hơn chữ cái)
+export const TIME_PER_LEVEL_MS = 2500; // bậc 2 thêm ngần này, bậc 3 thêm gấp đôi
+export const TIME_MIN_MS = 12000;
+export const TIME_MAX_MS = 35000;
+/** Số người trả lời ĐÚNG thì chốt câu luôn cho mượt — chỉ 6 người đầu có điểm nên không thiệt ai. */
+export const END_AFTER_CORRECT = 10;
+
+/**
+ * Thời gian cho một câu gõ chữ. Neo vào giờ gốc của tab (`baseMs`) rồi cộng/trừ quanh đó theo
+ * độ dài đáp án và bậc khó — nhờ vậy mỗi tab vẫn giữ nhịp riêng (Lớp Học Chữ chậm hơn tab tiếng Anh),
+ * chỉ là câu dài thì rộng giờ ra, câu ngắn thì co lại.
+ */
+export function questionTimeMs(answer, level = 1, baseMs = 20000) {
+  const text = String(answer || '').trim();
+  if (!text) return Math.max(TIME_MIN_MS, Math.min(TIME_MAX_MS, baseMs));
+  const chars = text.replace(/\s+/g, '').length;
+  const extraWords = Math.max(0, text.split(/\s+/).filter(Boolean).length - 1);
+  const step = Math.max(0, (Number(level) || 1) - 1);
+  const ms = baseMs
+    + (chars - TIME_REF_CHARS) * TIME_PER_CHAR_MS
+    + extraWords * TIME_PER_EXTRA_WORD_MS
+    + step * TIME_PER_LEVEL_MS;
+  return Math.round(Math.max(TIME_MIN_MS, Math.min(TIME_MAX_MS, ms)) / 500) * 500;
+}
 export const ENERGY_GOLDEN = 200;
 export const ENERGY_LIGHTNING = 400;
 export const FOLLOW_POINTS = 3;
@@ -112,6 +143,9 @@ export function createQuizGame({
   let qNumber = 0;
   // theo từng câu
   let winners = [];
+  // MỌI người trả lời đúng câu này (kể cả ngoài top 6). Trước đây đủ 6 người là thôi dò luôn,
+  // nên người thứ 7 gõ đúng vẫn bị ghi là SAI và màn hình không hề biết phòng đang trả lời rất tốt.
+  let correctIds = new Set();
   let tries = new Map();
   let firstCorrectAt = 0;
   let revealed = new Set(); // chữ đã lộ (text) / ô đã lộ (wordle)
@@ -151,7 +185,14 @@ export function createQuizGame({
   let clock = 0; // giờ của sự kiện / nhịp đang xử lý (đồng hồ của engine, không phải Date.now — test chạy đồng hồ giả)
   let hintsByGifts = 0;
 
-  const totalMs = () => (kind === 'abcd' ? ABCD_MS[q?.level] || 15000 : q?.timeMs || questionMs);
+  // abcd: giờ theo bậc như cũ · wordle: giờ cố định của tab · còn lại: tính theo đáp án.
+  // q.timeMs (câu đặc biệt tự đặt giờ) luôn thắng.
+  const totalMs = () => {
+    if (q?.timeMs) return q.timeMs;
+    if (kind === 'abcd') return ABCD_MS[q?.level] || 15000;
+    if (kind === 'text' && q?.answer) return questionTimeMs(q.answer, q.level, questionMs);
+    return questionMs;
+  };
   // Luyện nghe (q.listen): đọc từ lúc ra đề, đọc CHẬM sau ~7 giây, đọc lại giữa giờ (live trễ / người vào giữa chừng vẫn nghe kịp)
   let listenAt = []; // [{ at: ms kể từ lúc ra đề, slow }] — tính theo phaseStart nên tạm dừng không làm lệch
 
@@ -217,6 +258,7 @@ export function createQuizGame({
     phase = 'question';
     phaseStart = now;
     winners = [];
+    correctIds = new Set();
     tries = new Map();
     firstCorrectAt = 0;
     revealed = new Set();
@@ -321,7 +363,7 @@ export function createQuizGame({
     // Giữ đề vừa đóng "sống" thêm lateMs để nhận nốt câu trả lời đang trên đường về (độ trễ sóng live).
     late = kind === 'text' && lateMs > 0 && q
       ? { until: now + lateMs, accept: q.accept, checkAnswer: q.checkAnswer, qNumber, answer: q.answer,
-          won: new Set(winners.map((w) => w.id)), closedAt: now, slots: POINTS.length - winners.length }
+          won: new Set(correctIds), closedAt: now, slots: POINTS.length - winners.length }
       : null;
     if (lightningIndex) finishLightningQuestion(fx);
     const answer = answerText();
@@ -336,7 +378,7 @@ export function createQuizGame({
     const neededRevealMs = (english.answerEn ? (english.answerEnSlow ? 3500 : 1800) : 0) + (speech ? estimateSpeechLeadIn(speech) : 0) + 800;
     const durationMs = Math.max(revealMs, neededRevealMs);
     phaseEnd = now + (lightningIndex && lightningIndex < LIGHTNING_QUESTIONS ? LIGHTNING_REVEAL_MS : durationMs);
-    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 6), correctCount: winners.length, speech, ...english });
+    fx.push({ kind: 'quizReveal', answer, winners: winners.slice(0, 6), correctCount: correctIds.size || winners.length, speech, ...english });
   }
 
   /** Tim / share nạp thanh năng lượng; qua mốc thì xếp câu vàng / vòng chớp nhoáng. */
@@ -393,11 +435,7 @@ export function createQuizGame({
 
   // ---- trả lời ----
   function onText(user, comment, now, fx) {
-    if (winners.length >= POINTS.length) {
-      answersLogger?.logAnswer(qNumber, { user, comment, result: 'CAP_REACHED' });
-      return; // Chỉ 6 bạn nhanh nhất mới được điểm
-    }
-    if (winners.some((w) => w.id === user.id)) {
+    if (correctIds.has(user.id)) {
       answersLogger?.logAnswer(qNumber, { user, comment, result: 'ALREADY_WON' });
       return;
     }
@@ -413,10 +451,18 @@ export function createQuizGame({
       answersLogger?.logAnswer(qNumber, { user, comment, result: 'WRONG' });
       return;
     }
+    correctIds.add(user.id);
+    if (!firstCorrectAt) firstCorrectAt = now;
+    // Ngoài top 6 thì KHÔNG có điểm, nhưng vẫn ghi nhận là đúng và vẫn hiện tên — phòng trả lời
+    // tốt thì cứ chốt câu sớm cho mượt, không bắt cả phòng ngồi chờ hết giờ.
+    if (winners.length >= POINTS.length) {
+      answersLogger?.logAnswer(qNumber, { user, comment, result: 'correct-no-slot', rank: correctIds.size });
+      fx.push({ kind: 'quizCorrect', userId: user.id, nickname: user.nickname, avatar: user.avatar, rank: 0, points: 0, extra: true });
+      return;
+    }
     const points = POINTS[winners.length] * mult();
     addPoints(user, points);
     winners.push({ id: user.id, nickname: user.nickname, avatar: user.avatar, points, ms: now - phaseStart });
-    if (!firstCorrectAt) firstCorrectAt = now;
     const rank = winners.length;
     answersLogger?.logAnswer(qNumber, { user, comment, result: 'correct', rank, points });
     fx.push({ kind: 'quizCorrect', userId: user.id, nickname: user.nickname, avatar: user.avatar, rank, points });
@@ -619,10 +665,13 @@ export function createQuizGame({
             revealLetters(slots.length, slots.length <= 4 ? 1 : 1 + Math.floor(random() * 2));
           }
         }
-        // Chỉ cho phép kết thúc sớm khi bảng top (6 người) đã kín và đã qua 5s kể từ câu đúng đầu tiên
-        // Nếu mới có 1-5 người đúng thì để thời gian chạy tiếp cho mọi người kịp gõ đáp án
-        const graceOver = kind === 'text' && firstCorrectAt && winners.length >= 6 && now - firstCorrectAt >= FIRST_CORRECT_GRACE_MS;
-        if (now >= phaseEnd + LATE_MS || graceOver) reveal(now, fx);
+        // Kết thúc sớm khi:
+        //  · đủ END_AFTER_CORRECT người đúng → phòng đang bắt bài rất tốt, chốt luôn cho mượt
+        //  · hoặc bảng top (6 người) đã kín VÀ đã qua 5 giây kể từ câu đúng đầu tiên
+        // Mới 1–5 người đúng thì để đồng hồ chạy tiếp cho người khác kịp gõ.
+        const đủĐông = kind === 'text' && correctIds.size >= END_AFTER_CORRECT;
+        const graceOver = kind === 'text' && firstCorrectAt && winners.length >= POINTS.length && now - firstCorrectAt >= FIRST_CORRECT_GRACE_MS;
+        if (now >= phaseEnd + LATE_MS || đủĐông || graceOver) reveal(now, fx);
       } else if (phase === 'reveal' && now >= phaseEnd) startQuestion(now, fx);
       return fx;
     },
@@ -745,7 +794,7 @@ export function createQuizGame({
         totalMs: q ? (lightningIndex ? LIGHTNING_MS : totalMs()) : 0,
         answer: phase === 'reveal' ? answerText() : '',
         winners: winners.slice(0, 6).map((w) => ({ id: w.id, nickname: w.nickname, avatar: w.avatar, points: w.points, follower: followers.has(w.id) })),
-        correctCount: winners.length,
+        correctCount: correctIds.size || winners.length, // kể cả người đúng ngoài top 6
         board,
         allScores: [...scores.values()].map((r) => ({ id: r.id, nickname: r.nickname, avatar: r.avatar, points: r.points, correct: r.correct || 0, bolts: r.bolts || 0, at: r.at || 0 })),
         golden,

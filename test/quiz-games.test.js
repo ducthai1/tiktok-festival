@@ -8,8 +8,7 @@ import {
   createTieredDeck, loadChoiceQuestions, loadEnglishSets, loadClassroomQuestions, loadEmojiQuestions, loadEnglishQuestions, loadFlagQuestions, loadWordleWords, makeMathQuestion
 } from '../src/games/quiz/quiz-bank.js';
 import {
-  createQuizGame, ENERGY_GOLDEN, ENERGY_LIGHTNING, FOLLOW_GOAL, FOLLOW_POINTS, POINTS, SHARE_ENERGY, SHARE_ENERGY_MAX_PER_USER, scoreWordle
-} from '../src/games/quiz/quiz-game.js';
+  createQuizGame, ENERGY_GOLDEN, ENERGY_LIGHTNING, FOLLOW_GOAL, FOLLOW_POINTS, POINTS, SHARE_ENERGY, SHARE_ENERGY_MAX_PER_USER, scoreWordle, questionTimeMs } from '../src/games/quiz/quiz-game.js';
 import { foldText } from '../public/shared/profanity-filter.js';
 import { createFollowerStore } from '../src/live/follower-store.js';
 import { normalizeConnectorEvent } from '../src/live/normalize-tiktok-connector.js';
@@ -100,7 +99,12 @@ test('quiz text: accent-free answers count, 6 fastest get 10/7/5/3/3/3, reveal 5
   game.handleEvent(chat(9, 'ngủ say'), 100); // sai
   const scored = [1, 2, 3, 4, 5, 6].map((n) => game.handleEvent(chat(n, n % 2 ? 'ngu nuong' : 'NGỦ NƯỚNG!!'), 200 + n));
   assert.deepEqual(scored.map((fx) => fx[0].points), POINTS);
-  assert.equal(game.handleEvent(chat(7, 'ngu nuong'), 210).length, 0); // chỉ 6 bạn nhanh nhất, người thứ 7 không được điểm
+  // Người thứ 7 trả lời ĐÚNG: vẫn được ghi nhận và hiện tên, nhưng không có điểm (chỉ 6 bạn nhanh nhất có điểm).
+  // Trước đây đủ 6 người là thôi dò luôn nên người thứ 7 bị ghi là SAI — chủ kênh yêu cầu đổi 20/11/2026.
+  const thu7 = game.handleEvent(chat(7, 'ngu nuong'), 210);
+  assert.equal(thu7[0].kind, 'quizCorrect');
+  assert.equal(thu7[0].points, 0);
+  assert.equal(thu7[0].extra, true);
   assert.equal(game.handleEvent(chat(1, 'ngu nuong'), 300).length, 0); // đã đúng thì không cộng lần hai
   assert.equal(game.snapshot(1000).answer, ''); // chưa lật đáp án khi còn đang hỏi
   assert.equal(game.tick(4000).length, 0);
@@ -159,28 +163,32 @@ test('quiz A/B/C/D: first vote counts, fastest correct voters scored at reveal, 
 });
 
 test('quiz timing: the clock waits 2 s for the live delay, and answers arriving 1.5 s after time-up still count', () => {
-  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo'), textQ('Chó')), questionMs: 10000 });
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(textQ('Mèo'), textQ('Chó')) });
   game.tick(0);
+  // Giờ mỗi câu tính theo độ dài đáp án + bậc khó (questionTimeMs), không còn một con số chết
+  const tong = questionTimeMs('Mèo', 1, 25000); // tab không truyền questionMs → mặc định 25s
+  assert.equal(game.snapshot(0).totalMs, tong);
   assert.equal(game.snapshot(1000).leadIn, true);
-  assert.equal(game.snapshot(1000).msLeft, 10000); // đồng hồ đứng ở mức đầy trong 2 giây đầu
-  assert.equal(game.snapshot(7000).msLeft, 5000);
-  assert.equal(game.tick(12500).length, 0); // hết giờ ở 12 s nhưng còn nhận thêm
-  assert.equal(game.handleEvent(chat(1, 'meo'), 13000)[0].kind, 'quizCorrect');
-  assert.ok(kinds(game.tick(13600)).includes('quizReveal'));
+  assert.equal(game.snapshot(1000).msLeft, tong); // đồng hồ đứng ở mức đầy trong 2 giây đầu
+  assert.equal(game.snapshot(7000).msLeft, tong - 5000);
+  assert.equal(game.tick(2000 + tong + 500).length, 0); // hết giờ nhưng còn nhận thêm 1,5 giây
+  assert.equal(game.handleEvent(chat(1, 'meo'), 2000 + tong + 1000)[0].kind, 'quizCorrect');
+  assert.ok(kinds(game.tick(2000 + tong + 1600)).includes('quizReveal'));
 });
 
 test('quiz timing: long question text waits for TTS reading to finish before countdown starts', () => {
   const longPrompt = 'Câu Vàng, nhân đôi điểm! Con hà mã tiếng Anh là gì?';
   const q = { kind: 'text', category: 'Tiếng Anh', answer: 'HIPPO', prompt: longPrompt, accept: ['hippo'] };
-  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(q), questionMs: 20000 });
+  const game = createQuizGame({ id: 't', title: 'T', deck: fixedDeck(q) });
   game.tick(0);
+  const tong = questionTimeMs('HIPPO', 1, 25000);
   // Câu dài 12 từ + dấu phẩy/chấm/hỏi: leadIn kéo dài ~4 giây để đọc xong
   assert.equal(game.snapshot(1000).leadIn, true);
   assert.equal(game.snapshot(2500).leadIn, true);
-  assert.equal(game.snapshot(2500).msLeft, 20000); // vẫn giữ nguyên 20s đầy
+  assert.equal(game.snapshot(2500).msLeft, tong); // vẫn giữ nguyên thời gian đầy
   // Sau khi đọc xong (~4s): đồng hồ mới bắt đầu đếm ngược
   assert.equal(game.snapshot(4500).leadIn, false);
-  assert.ok(game.snapshot(4500).msLeft < 20000);
+  assert.ok(game.snapshot(4500).msLeft < tong);
 });
 
 test('quiz energy: 200 hearts make the next question golden (x2), 400 start a 3-question lightning round with a bonus', () => {
