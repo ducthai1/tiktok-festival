@@ -8,26 +8,25 @@ SKATEBOARD | Chiếc ván trượt có bốn bánh xe lướt trên đường ph
 SURFING | Môn thể thao lướt sóng biển cưỡi trên những con sóng lớn | 1
 TRIATHLON | Cuộc thi ba môn phối hợp gồm bơi lội, đạp xe và chạy bộ | 3
 ROWING | Môn chèo thuyền đồng đội nhịp nhàng trên mặt hồ | 2
-SNOWBOARD | Môn trượt tuyết bằng ván trượt đơn trên sườn núi phủ tuyết | 2
-BOXING | Môn đấm bốc / quyền anh so găng đối kháng trên sàn đài | 1
+SNOWBOARD | Tấm ván rộng đứng hai chân lên để lao xuống sườn núi tuyết | 2 | SNOWBOARDING
+BOXING | Môn hai người đeo găng to lên đài so găng từng hiệp | 1
 WRESTLING | Môn đấu vật tranh tài sức mạnh ghì đè đối thủ xuống thảm | 2
 DUMBBELL | Cặp quả tạ tay nhỏ tập cơ bắp tay trong phòng gym | 2
 BARBELL | Thanh đòn tạ dài lắp bánh tạ hai đầu để gánh tạ | 2
 TREADMILL | Chiếc máy chạy bộ điện trong phòng tập thể hình | 2
 CALISTHENICS | Bộ môn tập thể hình đường phố dùng chính trọng lượng cơ thể | 3
-AEROBICS | Môn thể dục nhịp điệu aerobic vận động theo tiếng nhạc sôi động | 2
+AEROBICS | Môn thể dục nhún nhảy theo tiếng nhạc sôi động cho ra mồ hôi | 2
 PODIUM | Bục vinh quang có ba bậc để các vận động viên đứng nhận giải | 2
 ATHLETE | Một vận động viên thể thao chuyên nghiệp rèn luyện thi đấu | 2
 BOWLING | Trò chơi ném bóng gỗ làm đổ các ki gỗ | 1
-BILLIARDS | Trò chơi bi-a dùng cơ chọc bi trên bàn nỉ | 1 | BIDA, POOL
+BILLIARDS | Trò dùng gậy dài chọc cho bi lăn vào lỗ trên bàn phủ nỉ xanh | 1 | BIDA, POOL
 CRICKET | Môn bóng gậy rất được yêu thích tại Anh và Ấn Độ | 2
 RUGBY | Môn bóng bầu dục tranh cướp bóng quyết liệt | 2
 HOCKEY | Môn khúc côn cầu chơi trên sân cỏ hoặc sân băng | 2
-SKATING | Trượt băng hoặc trượt pa-tin | 1
-SKIING | Môn trượt tuyết trên các sườn núi dốc | 1
-SNOWBOARDING | Môn lướt ván trên nền tuyết trắng | 2
+SKATING | Môn lướt đi bằng giày có lưỡi sắt trên mặt băng | 1
+SKIING | Môn lao xuống dốc tuyết với hai tấm ván dài và hai cây gậy | 1
 WINDSURFING | Môn lướt ván buồm trên biển | 2
-KAYAKING | Môn chèo thuyền kayak vượt ghềnh thác | 2
+KAYAKING | Môn chèo thuyền nhỏ một chỗ ngồi, cầm mái chèo hai đầu vượt thác | 2
 CYCLING | Môn thể thao đua xe đạp đường trường | 1
 EQUESTRIAN | Môn thể thao cưỡi ngựa nghệ thuật | 3
 BODYBUILDING | Môn thể hình rèn luyện cơ bắp săn chắc | 2
