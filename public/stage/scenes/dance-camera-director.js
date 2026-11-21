@@ -75,15 +75,16 @@ export function createCameraDirector(camera) {
         fov = THREE.MathUtils.lerp(48, 42, t);
         break;
       }
-      case 'tamMat': // LƯỚT NGANG TẦM MẮT: máy ngang đầu nhân vật (cao ~1 m), sát hàng đầu, trượt chậm từ bên này sang bên kia
-        wantPos.set(sweep * 0.6, THREE.MathUtils.lerp(1.9, 1.7, t), front + 2.6);
-        wantLook.set(sweep * 0.7, 0.8, front - 2.0);
-        fov = THREE.MathUtils.lerp(40, 38, t);
+      case 'tamMat': // LƯỚT NGANG TẦM MẮT: máy ngang đầu nhân vật , ngay trước hàng đầu, trượt chậm từ bên này sang bên kia
+        // (chụp thử 21/11: đặt sát front+2,6 m thì một sticker hàng đầu che nửa khung — lùi ra 5,6 m)
+        wantPos.set(sweep * 0.6, THREE.MathUtils.lerp(2.4, 2.2, t), front + 5.6);
+        wantLook.set(sweep * 0.7, 1.2, front - 2.5);
+        fov = THREE.MathUtils.lerp(42, 40, t);
         break;
       case 'gocThap': // GÓC THẤP NGƯỚC LÊN: máy sát sàn, đẩy chậm vào đám đông, ngước lên thấy đèn sân khấu phía sau
-        wantPos.set(mirrored * 0.3, THREE.MathUtils.lerp(1.0, 1.3, t), THREE.MathUtils.lerp(front + 4.2, front + 2.6, t));
-        wantLook.set(mirrored * 0.3, 1.6, middle);
-        fov = THREE.MathUtils.lerp(44, 38, t);
+        wantPos.set(mirrored * 0.3, THREE.MathUtils.lerp(1.5, 1.7, t), THREE.MathUtils.lerp(front + 6.8, front + 5.2, t));
+        wantLook.set(mirrored * 0.3, 2.0, middle);
+        fov = THREE.MathUtils.lerp(46, 42, t);
         break;
       case 'bucTop': // lướt ngang trước bục Top 1-2-3 trên sân khấu
         wantPos.lerpVectors(target.set(-side * 2.4, 4.4, podium.z + 7.6), wantPos.set(side * 2.4, 3.9, podium.z + 6.4), t);
