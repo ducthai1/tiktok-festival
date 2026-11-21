@@ -25,6 +25,13 @@ export function createDonorLedger() {
       Object.assign(row, fresh);
       cache = null;
     },
+    /**
+     * 💎 một người đã tặng trong phiên live này, cộng ở MỌI game. Chủ kênh chốt: "kim cương tính chung hết cho các
+     * game" — nên Sàn Nhảy (bục Top 1-2-3) và Quán Bar (ghế VIP) hỏi ở đây, không tự đếm riêng nữa.
+     */
+    diamondsOf(user) {
+      return rows.get(keyOf(user))?.diamonds || 0;
+    },
     top(n = 3) {
       cache ??= [...rows.values()].sort((a, b) => b.diamonds - a.diamonds).slice(0, 10)
         .map((r) => ({ id: r.id || r.key, nickname: r.nickname || r.key, avatar: r.avatar, diamonds: r.diamonds }));

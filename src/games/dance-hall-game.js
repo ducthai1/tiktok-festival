@@ -6,8 +6,7 @@
 // tim làm đầy thanh ĐỘ QUẨY → DROP (cả sàn bùng nổ). Quà nhỏ nhất đã có huy hiệu cánh xanh. Quà: hào quang → bay lên → XE BAY
 // 7 bậc quà (mốc Sàn Nhảy: DANCE_TIER_MIN), dồn chi tiết vào vùng quà rẻ cho hợp hộp quà TikTok VN:
 // 1–4 cánh · 5–9 bay cao + solo ngắn · 10–19 XE BAY · 20–49 solo + pháo hoa · 50–99 khổng lồ VIP
-// · 100–199 pháo hoa + DROP · ≥200 đại nhạc hội
-// (camera tiến sát) → khổng lồ VIP → pháo hoa + DROP → đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
+// · 100–199 pháo hoa + DROP · ≥200 đại nhạc hội. Top 1-2-3 đứng bục trên sân khấu.
 import { containsPhrase, createCooldown, foldText, isCleanForDisplay } from './text-match.js';
 import { DANCE_TIER_MIN, giftTierIn } from '../../public/shared/gift-tiers.js';
 import { DANCE_FILL_ORDER, DANCE_SLOTS } from '../../public/shared/dance-floor-layout.js';
@@ -35,9 +34,8 @@ const JUMP_WORDS = ['nhay', 'nhay di', 'nhay 1 cai', 'nhay mot cai', 'jump'];
 const GROW_WORDS = ['to len', 'to ra', 'lon len'];
 const SHRINK_WORDS = ['nho lai', 'nho di', 'be lai'];
 const JUMP_MS = 1300;
-// Quà 1–199 💎 (cả khoảng đầu của Sàn Nhảy): XE BAY mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu.
-// Từ 200 💎 trở lên: solo sân khấu + khổng lồ + pháo hoa.
-// Xe bay là hiệu ứng của RIÊNG bậc 3, không phải mọi quà rẻ — có vậy mới thấy lên bậc.
+// XE BAY (mọc cánh chở người tặng bay một vòng quanh sàn + sân khấu) là hiệu ứng của RIÊNG bậc 3 (10–19 💎),
+// không phải mọi quà rẻ — có vậy mới thấy lên bậc.
 export const RIDE_MIN_KC = 10;
 export const RIDE_MAX_KC = 19;
 const RIDE_MS = 14500; // màn hình bay 14 s (cất cánh → một vòng → hạ cánh), dư nửa giây
@@ -75,7 +73,13 @@ export function faceForComment(text) {
 // Bậc quà → thời gian solo (ms). Bậc 1 không solo (chỉ hào quang + nhảy bung).
 const SOLO_MS_BY_TIER = [0, 5000, 9000, 12000, 15000, 18000, 22000]; // theo bậc 1..7
 
-export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}) {
+/**
+ * @param {object} opts
+ * @param {{ diamondsOf(user): number } | null} opts.donors sổ 💎 CHUNG của phiên live (game-hub.js, donor-ledger.js).
+ *   Chủ kênh chốt "kim cương tính chung hết cho các game": bục Top 1-2-3 xếp theo tổng 💎 tặng ở MỌI game trong
+ *   phiên này, không chỉ phần tặng lúc đang ở Sàn Nhảy. Không truyền (test chạy riêng game) thì tự đếm trong game.
+ */
+export function createDanceHallGame({ random = Math.random, seedCount = 0, donors = null } = {}) {
   const dancers = new Map();
   const seedCrowd = createSeedCrowd({ random, target: seedCount });
   const spenders = new Map(); // kc theo người trong phiên → Top 1-2-3 lên bục
@@ -88,8 +92,12 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
   let queue = []; // [{ id, tier, ms }]
   const followed = new Set(); // ai đã nhận gói follow trong phiên
 
+  /** 💎 một người đã tặng: sổ chung của phiên nếu có, không thì phần tự đếm trong game. */
+  const diamondsOf = (d) => (donors ? donors.diamondsOf({ id: d.id, uniqueId: d.key }) : spenders.get(d.id) || 0);
+
   function ranks() {
-    const top = [...spenders.entries()].filter(([id]) => dancers.has(id)).sort((a, b) => b[1] - a[1]).slice(0, 3);
+    const top = [...dancers.values()].map((d) => [d.id, diamondsOf(d)]).filter(([, kc]) => kc > 0)
+      .sort((a, b) => b[1] - a[1]).slice(0, 3);
     return new Map(top.map(([id], i) => [id, i + 1]));
   }
 
@@ -154,7 +162,10 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
       if (slot < 0) slot = freeSlot();
       if (slot < 0 && canEvict) slot = evictIdlest(now, fx, canEvict === 'lurkers');
       if (slot < 0) return null;
-      d = { id: user.id, slot, look: 0, engaged: false, seed, // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look joinedAt: now, hypeUntil: 0, waveUntil: 0,
+      // look 0: nhân vật theo ô (8 ô quanh luôn khác nhau); "đổi nv" tăng look.
+      // (Chú thích này từng nằm cùng dòng với code nên nuốt mất joinedAt / hypeUntil / waveUntil — ba trường đó
+      //  thành undefined. Chưa hỏng gì vì chỉ bị so sánh `now < x`, nhưng ai làm toán với chúng sẽ ra NaN.)
+      d = { id: user.id, key: String(user.uniqueId || user.id), slot, look: 0, engaged: false, seed, joinedAt: now, hypeUntil: 0, waveUntil: 0,
         jumpUntil: 0, rideUntil: 0, size: 1, likes: 0, wingsUntil: 0, fanUntil: 0,
         face: '', faceUntil: 0, auraUntil: 0, level: 0, levelUntil: 0, giantUntil: 0 };
       dancers.set(user.id, d);
@@ -219,7 +230,13 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
     const ride = gift.diamondsEach >= RIDE_MIN_KC && gift.diamondsEach <= RIDE_MAX_KC;
     fx.push({ kind: 'gift', userId: user.id, nickname: user.nickname, giftName: gift.name, giftPicture: gift.pictureUrl,
       count: gift.count, diamonds: gift.diamonds, tier, ride });
-    if (!d) return;
+    if (!d) {
+      // Không còn chỗ đứng (sàn kín toàn người được giữ chỗ: Top 3, đang/chờ solo, khổng lồ VIP). Trước đây thoát
+      // luôn ở đây → món 100+ 💎 của người đó KHÔNG nổ DROP, không cộng độ quẩy. Hiệu ứng chung của cả sàn vẫn phải có.
+      if (tier >= 6) startDrop(now, fx);
+      else addHype(gift.diamonds * 10, now, fx);
+      return;
+    }
     d.auraUntil = Math.max(d.auraUntil, now) + Math.min(120000, 20000 * tier);
     d.wingsUntil = Math.max(d.wingsUntil, now) + WINGS_MS; // huy hiệu + cánh
     d.hypeUntil = now + HYPE_MS;
@@ -357,6 +374,20 @@ export function createDanceHallGame({ random = Math.random, seedCount = 0 } = {}
       seedCrowd.act(seedsOnFloor(), now, { hype: HYPE_MS, jump: JUMP_MS, wave: WAVE_MS, face: FACE_MS });
       advanceSolo(now, fx);
       return fx;
+    },
+    /**
+     * Sang buổi live mới (game-hub gọi cho mọi game). Trước 21/11/2026 Sàn Nhảy không có hàm này nên người trên sàn,
+     * bục Top 1-2-3, danh sách đã follow, độ quẩy… của buổi trước sống sang buổi sau cho tới khi khởi động lại server.
+     * Người ảo (đám đông mồi) tự đứng lại ở nhịp tick kế tiếp.
+     */
+    resetRoom() {
+      dancers.clear();
+      spenders.clear();
+      followed.clear();
+      queue = [];
+      solo = null;
+      hype = 0;
+      dropUntil = 0;
     },
     command(name, now = Date.now()) {
       const fx = [];

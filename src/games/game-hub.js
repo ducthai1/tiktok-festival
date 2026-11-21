@@ -23,8 +23,8 @@ export function createGameHub({ startGame = 'boss', random = Math.random, welcom
   const buildGames = () => new Map([
     ['boss', createBossRaidGame({ random })],
     ['temple', createTempleGame({ random })],
-    ['bar', createBarClubGame({ random })],
-    ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET })],
+    ['bar', createBarClubGame({ random, donors })], // ghế VIP theo 💎 chung của phiên
+    ['dance', createDanceHallGame({ random, seedCount: SEED_TARGET, donors })], // bục Top 1-2-3 theo 💎 chung của phiên
     ['swim', createSwimPushGame()],
     ...createQuizGames({ random, englishProgress, onEnglishAnswer, englishListenReady, donors, dataDir, answersLogger }).map((g) => [g.id, g])
   ]);

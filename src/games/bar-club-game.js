@@ -19,15 +19,25 @@ const CHEERS_WORDS = ['cung ly', 'nang ly', 'cheers', 'zo', 'dzo', 'yo', 'mot ha
 const DRINK_BY_TIER = ['beer', 'cocktail', 'champagne', 'tower', 'party', 'party'];
 export const drinkForGift = (coinsEach) => DRINK_BY_TIER[giftTier(coinsEach) - 1];
 
-export function createBarClubGame({ random = Math.random } = {}) {
+/**
+ * @param {object} opts
+ * @param {{ diamondsOf(user): number } | null} opts.donors sổ 💎 CHUNG của phiên live (game-hub.js, donor-ledger.js) —
+ *   ghế VIP xếp theo tổng 💎 tặng ở MỌI game trong phiên này. Không truyền (test chạy riêng game) thì tự đếm.
+ */
+export function createBarClubGame({ random = Math.random, donors = null } = {}) {
   const patrons = new Map();
   const spenders = new Map(); // diamonds theo người trong phiên, để giữ ghế cho khách VIP
   const chatVibeCooldown = createCooldown(5000);
   let vibe = 0;
   let partyUntil = 0;
 
+  const diamondsOf = (p) => (donors ? donors.diamondsOf({ id: p.id, uniqueId: p.key }) : spenders.get(p.id) || 0);
+
+  // Top 3 tặng nhiều 💎 nhất TRONG NHỮNG NGƯỜI ĐANG NGỒI QUÁN. Trước đây xếp trên cả người đã rời quán: ba người tặng
+  // nhiều nhất mà đã đi hết thì không còn ai trong quán mang VIP, dù người tặng nhiều thứ tư vẫn đang ngồi đó.
   function vipIds() {
-    return new Set([...spenders.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => id));
+    return new Set([...patrons.values()].map((p) => [p.id, diamondsOf(p)]).filter(([, kc]) => kc > 0)
+      .sort((a, b) => b[1] - a[1]).slice(0, 3).map(([id]) => id));
   }
 
   function freeSeat() {
@@ -57,7 +67,7 @@ export function createBarClubGame({ random = Math.random } = {}) {
       let seat = freeSeat();
       if (seat < 0 && canEvict) seat = evictIdlest(fx, canEvict === 'lurkers');
       if (seat < 0) return null;
-      patron = { id: user.id, seat, joinedAt: now, engaged: false, drink: '', drinkUntil: 0, danceUntil: 0, cheersUntil: 0 };
+      patron = { id: user.id, key: String(user.uniqueId || user.id), seat, joinedAt: now, engaged: false, drink: '', drinkUntil: 0, danceUntil: 0, cheersUntil: 0 };
       patrons.set(user.id, patron);
       fx.push({ kind: 'join', userId: user.id, nickname: user.nickname });
     }
@@ -138,6 +148,13 @@ export function createBarClubGame({ random = Math.random } = {}) {
         } else if (p.drink && now > p.drinkUntil) p.drink = '';
       }
       return fx;
+    },
+    /** Sang buổi live mới: khách, ghế VIP, độ quẩy của buổi trước không được sống sang buổi sau. */
+    resetRoom() {
+      patrons.clear();
+      spenders.clear();
+      vibe = 0;
+      partyUntil = 0;
     },
     command(name, now = Date.now()) {
       const fx = [];

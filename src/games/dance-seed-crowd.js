@@ -44,7 +44,7 @@ export function createSeedCrowd({ random = Math.random, target = 0 } = {}) {
       for (let i = 0; i < Math.ceil(seeds.length / 10); i += 1) {
         const d = seeds[Math.floor(random() * seeds.length)];
         const roll = random();
-        if (roll < 0.4) d.hypeUntil = now + ms.hype; // không "đi vòng": màn bay vòng giờ là quà 99–199 💎
+        if (roll < 0.4) d.hypeUntil = now + ms.hype; // không "đi vòng": màn bay vòng là của quà bậc 3 (10–19 💎)
         else if (roll < 0.62) d.jumpUntil = now + ms.jump;
         else if (roll < 0.75) d.waveUntil = now + ms.wave;
         else {

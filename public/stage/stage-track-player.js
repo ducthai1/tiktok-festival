@@ -101,7 +101,15 @@ export function createTrackPlayer(ctx, out) {
     main.gain.gain.linearRampToValueAtTime(1, ctx.currentTime + 0.25);
   }
   main.audio.addEventListener('ended', next);
-  main.audio.addEventListener('error', () => setTimeout(next, 1000));
+  // Bài lỗi thì bỏ qua sang bài kế — nhưng chờ LÂU DẦN nếu lỗi liên tiếp (1, 2, 4… tối đa 60 giây). Trước đây luôn
+  // chờ đúng 1 giây: máy chưa tải nhạc (file .mp3 không lên git) thì MỌI bài đều lỗi và màn hình gõ server mỗi giây,
+  // mãi không dừng — chạy thử 21/11/2026 thấy mỗi bài bị thử lại ~19 lần trong nửa phút. Phát được là về lại 1 giây.
+  let loiLienTiep = 0;
+  main.audio.addEventListener('playing', () => { loiLienTiep = 0; });
+  main.audio.addEventListener('error', () => {
+    loiLienTiep += 1;
+    setTimeout(next, Math.min(60000, 1000 * 2 ** (loiLienTiep - 1)));
+  });
 
   function fade(gainNode, to) {
     const t = ctx.currentTime;
