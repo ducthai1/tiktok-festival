@@ -90,7 +90,11 @@ function loadSettings(dataDir) {
   }
 }
 
-export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false, englishSynth = null } = {}) {
+/** Không request nào được treo quá mốc này (chốt chống treo — xem chỗ res.setTimeout). Test hạ xuống cho nhanh. */
+export const HTTP_HANG_MS = 20000;
+
+export async function startApp(config, { dataDir = DATA_DIR, providerFactories, tickMs = 100, voice = false, englishSynth = null,
+  httpHangMs = HTTP_HANG_MS } = {}) {
   fs.mkdirSync(dataDir, { recursive: true });
   const adminToken = loadOrCreateAdminToken(dataDir, {
     onRotate: () => log.warn('admin', 'ĐÃ ĐỔI token trang điều khiển (token cũ bị lộ, không dùng được nữa) — mở link mới in khi khởi động')
@@ -533,14 +537,16 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     // kết nối đó; mỗi nguồn chỉ được 6 kết nối HTTP/1.1 nên vài lần như vậy là cả tab đứng hình,
     // quay vòng mãi không tải nổi gì nữa — phải mở tab mới. Nay: lỗi → 500, quá hạn → 503.
     const t0 = Date.now();
-    res.setTimeout(20000, () => {
-      log.warn('http', `${req.method} ${(req.url || '').split('?')[0]} quá 20 giây chưa trả lời → cắt để không giữ kết nối của trình duyệt`);
+    res.setTimeout(httpHangMs, () => {
+      log.warn('http', `${req.method} ${(req.url || '').split('?')[0]} quá ${Math.round(httpHangMs / 1000)} giây chưa trả lời → cắt để không giữ kết nối của trình duyệt`);
       reject(503, 'Server xử lý quá lâu');
       res.destroy();
     });
     res.on('finish', () => {
       const ms = Date.now() - t0;
-      if (ms > 3000) log.warn('http', `${req.method} ${(req.url || '').split('?')[0]} mất ${ms}ms (chậm)`);
+      const duongDan = (req.url || '').split('?')[0];
+      // file nhạc truyền theo nhịp phát của trình duyệt: lâu là đúng thiết kế, không phải server chậm
+      if (ms > 3000 && !duongDan.startsWith('/api/music-file/')) log.warn('http', `${req.method} ${duongDan} mất ${ms}ms (chậm)`);
     });
     try {
       await handleRequest(req, res, reject);
@@ -646,11 +652,40 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
         const fpath = playlist.filePathOf(hit[1]);
         if (!fpath || !fs.existsSync(fpath)) return reject(404, 'Không có bài này');
         const ext = (fpath.match(/\.[^.]+$/) || ['.mp3'])[0].toLowerCase();
-        const buf = fs.readFileSync(fpath);
         const mime = { '.mp3': 'audio/mpeg', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.m4a': 'audio/mp4', '.aac': 'audio/aac',
           '.flac': 'audio/flac', '.opus': 'audio/ogg', '.webm': 'audio/webm' }[ext] || 'audio/mpeg';
-        res.writeHead(200, { 'Content-Type': mime, 'Cache-Control': 'no-cache', 'Content-Length': String(buf.length), ...securityHeaders(port) });
-        return res.end(req.method === 'HEAD' ? undefined : buf);
+        // Thẻ <audio> tải DẦN trong lúc phát và tự ngừng đọc khi đã đệm đủ — nên kết nối này đúng là phải
+        // sống lâu và có lúc đứng yên. Chốt 20 giây chống treo ở trên chỉ dành cho handler quên trả lời;
+        // ở đây server ĐÃ trả lời, đang truyền file. Live 21/11/2026: bài YouTube 55,5 MB bị chốt đó cắt
+        // 89/89 lần trong một buổi sáng (tải 20 giây, đứng 20 giây, bị cắt), nhạc đứt rồi tải lại liên tục.
+        res.setTimeout(0);
+        const size = fs.statSync(fpath).size;
+        const headers = { 'Content-Type': mime, 'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache', ...securityHeaders(port) };
+        // Hỗ trợ Range: trình duyệt xin từng đoạn bằng những request ngắn thay vì giữ một kết nối cả tiếng,
+        // và tua được. Trước đây readFileSync cả file vào RAM mỗi lần xin — 55 MB, chặn luôn cả server.
+        const m = /^bytes=(\d*)-(\d*)$/.exec(String(req.headers.range || '').trim());
+        let start = 0;
+        let end = size - 1;
+        if (m && (m[1] || m[2])) {
+          if (m[1]) {
+            start = Number(m[1]);
+            if (m[2]) end = Math.min(Number(m[2]), size - 1);
+          } else {
+            start = Math.max(0, size - Number(m[2])); // "bytes=-500": 500 byte cuối
+          }
+          if (!(start <= end && start < size)) {
+            res.writeHead(416, { 'Content-Range': `bytes */${size}`, ...securityHeaders(port) });
+            return res.end();
+          }
+          res.writeHead(206, { ...headers, 'Content-Range': `bytes ${start}-${end}/${size}`, 'Content-Length': String(end - start + 1) });
+        } else {
+          res.writeHead(200, { ...headers, 'Content-Length': String(size) });
+        }
+        if (req.method === 'HEAD') return res.end();
+        const stream = fs.createReadStream(fpath, { start, end });
+        stream.on('error', () => res.destroy());
+        res.on('close', () => stream.destroy()); // người xem đóng tab / chuyển bài → thôi đọc ổ đĩa
+        return stream.pipe(res);
       }
     }
 

@@ -72,6 +72,10 @@ export function createStageAudio() {
     if (!wanted()) {
       music.stop();
       tracks.stop();
+      // Dừng HẲN trình phát danh sách nhạc. Trước đây nhánh này thoát luôn mà quên nó: tiếng thì câm (gain
+      // về 0) nhưng file vẫn tải ngầm cả buổi — live 21/11/2026 sau khi tắt nhạc lúc 07:22 màn hình vẫn xin
+      // file nhạc đều đặn tới 10:16. Bật lại thì nhánh phát danh sách bên dưới play() tiếp từ chỗ đang dừng.
+      if (customAudio && !customAudio.paused) customAudio.pause();
       return;
     }
     const name = { christmas: 'xmas', teacher: 'teacher' }[opts.season] || theme; // chủ đề mùa: mọi game phát nhạc của mùa đó
