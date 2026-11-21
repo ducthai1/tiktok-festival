@@ -6,6 +6,7 @@ data/*
 data-*/
 .env
 *.log
+*.zip
 
 # ảnh thô tải về để xử lý + asset có giấy phép không cho phát hành công khai (Mixamo): chỉ để trên máy
 art-inbox/
