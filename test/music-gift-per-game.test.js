@@ -74,3 +74,33 @@ test('quà BẬT nhạc cũng phải thắng bộ âm thanh riêng của game', 
 
   assert.equal(caiDatCuoi()?.music, true, 'người xem đã trả tiền bật nhạc thì nhạc phải bật');
 });
+
+// Chủ kênh chốt 21/11/2026: nhạc nền "game nào ra game đó" — quà tắt nhạc tặng lúc đang ở game Tiếng Anh
+// KHÔNG được làm Quán Bar câm theo. Bản sửa 963ff03 ghi thêm music vào bộ CHUNG, mà game nào chưa có bộ
+// riêng thì lại đọc bộ chung → quà tắt nhạc ở một game lan sang mọi game chưa từng chỉnh âm thanh.
+test('quà TẮT nhạc ở game này KHÔNG được làm game khác câm theo', async (t) => {
+  const { ws, tin, caiDatCuoi, doi, tangQua } = await dungPhong(t); // đang ở game Tiếng Anh
+
+  tangQua('19445', 'Name shoutout'); // quà TẮT nhạc
+  await doi(() => caiDatCuoi()?.music === false);
+  assert.equal(caiDatCuoi()?.music, false, 'game Tiếng Anh phải câm');
+
+  const truoc = tin.length;
+  ws.send(JSON.stringify({ t: 'switch', game: 'bar' })); // sang Quán Bar — chưa ai chỉnh âm thanh ở đó
+  await doi(() => tin.slice(truoc).some((m) => m.t === 'settings' && m.settings?.audioGame === 'bar'));
+  const bar = tin.slice(truoc).filter((m) => m.t === 'settings' && m.settings?.audioGame === 'bar').at(-1)?.settings;
+  assert.equal(bar?.music, true, 'Quán Bar bị câm theo dù quà tắt nhạc được tặng ở game Tiếng Anh');
+});
+
+test('chủ kênh tắt nhạc ở game này cũng KHÔNG được làm game khác câm theo', async (t) => {
+  const { ws, tin, caiDatCuoi, doi } = await dungPhong(t);
+
+  ws.send(JSON.stringify({ t: 'settings', music: false })); // tắt ở tab Tiếng Anh
+  await doi(() => caiDatCuoi()?.music === false);
+
+  const truoc = tin.length;
+  ws.send(JSON.stringify({ t: 'switch', game: 'bar' }));
+  await doi(() => tin.slice(truoc).some((m) => m.t === 'settings' && m.settings?.audioGame === 'bar'));
+  const bar = tin.slice(truoc).filter((m) => m.t === 'settings' && m.settings?.audioGame === 'bar').at(-1)?.settings;
+  assert.equal(bar?.music, true, 'tắt nhạc ở tab Tiếng Anh đè luôn sang Quán Bar — đúng lỗi bộ âm thanh riêng sinh ra để chữa');
+});

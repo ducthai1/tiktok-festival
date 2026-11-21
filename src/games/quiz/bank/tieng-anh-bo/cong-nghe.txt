@@ -359,8 +359,6 @@ TECH STACK | Bộ công nghệ được chọn để xây dựng ứng dụng | 
 PSEUDOCODE | Mã giả dùng ngôn ngữ tự nhiên mô tả thuật toán trước khi code | 3
 TOKENIZATION | Việc cắt câu chữ thành từng mẩu nhỏ cho máy xử lý ngôn ngữ | 3 | TOKENISATION
 EMBEDDING | Biểu diễn từ ngữ hoặc dữ liệu dưới dạng vector số học trong AI | 3
-TOUCH ID | Cách mở khoá máy bằng vân tay | 1
-FACE ID | Cách mở khoá máy bằng khuôn mặt | 1
 TWO FACTOR | Lớp bảo mật thứ hai ngoài mật khẩu | 2
 PASSWORD MANAGER | Phần mềm nhớ hộ toàn bộ mật khẩu | 2
 AUTOFILL | Tính năng tự điền sẵn thông tin vào biểu mẫu | 2
@@ -388,7 +386,6 @@ DEEP LINK | Đường dẫn mở thẳng vào một mục bên trong ứng dụn
 QR SCANNER | Tính năng dùng camera đọc mã vuông | 1
 NFC | Công nghệ chạm hai thiết bị gần nhau để truyền dữ liệu | 2
 TETHERING | Việc chia mạng từ điện thoại cho máy khác dùng | 2
-AIRDROP | Cách gửi file không dây giữa hai máy Apple | 2
 SYNC FOLDER | Thư mục tự đồng bộ lên đám mây | 2
 VERSION HISTORY | Danh sách các bản cũ của tài liệu có thể khôi phục | 2
 TRASH BIN | Nơi chứa file đã xoá trước khi xoá hẳn | 1

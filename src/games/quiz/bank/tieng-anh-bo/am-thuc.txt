@@ -71,7 +71,7 @@ OYSTER SAUCE | Dầu hào | 2
 SHRIMP PASTE | Mắm tôm | 2
 LARD | Mỡ lợn (mỡ nước) | 3
 MARGARINE | Bơ thực vật | 3
-JELLY | Thạch rau câu trong, rung rinh khi lắc | 1 | JELLO, GELATIN
+JELLY | Thạch rau câu trong, rung rinh khi lắc | 1 | GELATIN
 FLAN | Miếng bánh trứng sữa mềm mịn, mặt rưới lớp đường thắng nâu | 2 | CREME CARAMEL
 SPONGE CAKE | Bánh bông lan | 2
 RICE CAKE | Bánh gạo | 2

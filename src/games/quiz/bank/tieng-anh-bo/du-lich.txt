@@ -280,7 +280,7 @@ SCOOTER | Chiếc xe ga lướt êm phố xá | 1 | MOPED
 RICKSHAW | Xe hai bánh thời xưa do một người chạy bộ kéo càng phía trước | 2
 HORSE CARRIAGE | Cỗ xe do ngựa kéo chở khách dạo phố cổ | 2
 SLED | Chiếc xe trượt tuyết do đàn chó kéo | 2 | SLEDGE, SLEIGH
-SNOWMOBILE | Xe trượt tuyết có động cơ chạy trên băng tuyết | 2 | SKIDOO
+SNOWMOBILE | Xe trượt tuyết có động cơ chạy trên băng tuyết | 2
 CANOE | Chiếc xuồng thon dài hở nóc, ngồi quỳ chèo bằng mái một đầu | 2
 KAYAK | Chiếc thuyền thể thao đáy kín thon hẹp chèo bằng mái đôi vượt thác | 2
 SPEEDBOAT | Ca nô cao tốc lướt như bay xé toạc mặt nước | 2 | MOTORBOAT
@@ -441,9 +441,6 @@ VILLA | Căn biệt thự sân vườn cao cấp có hồ bơi riêng biệt | 1
 PACIFIC | Thái Bình Dương - đại dương mênh mông lớn nhất và sâu nhất hành tinh | 2 | PACIFIC OCEAN
 ATLANTIC | Đại dương nằm giữa châu Mỹ với châu Âu và châu Phi | 2 | ATLANTIC OCEAN
 ANTARCTICA | Châu Nam Cực - lục địa băng giá lạnh nhất địa cầu nơi chim cánh cụt sống | 2
-EXPEDIA | Trang web đặt phòng vé du lịch trực tuyến nổi tiếng | 2 | TRAVEL SITE
-AIRBNB | Ứng dụng thuê căn hộ và phòng nghỉ homestay toàn cầu | 1
-TRIPADVISOR | Trang web đánh giá review khách sạn nhà hàng | 2
 ALL-INCLUSIVE | Kiểu nghỉ dưỡng trả một lần, trong khu nghỉ ăn uống gì cũng không mất thêm | 2
 HALF BOARD | Gói phòng bao gồm bữa sáng và bữa tối | 2
 FULL BOARD | Gói phòng phục vụ đủ 3 bữa ăn mỗi ngày | 2

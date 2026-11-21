@@ -224,12 +224,18 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     streamDelayMs: Number.isFinite(settings.streamDelayMs) ? settings.streamDelayMs : DEFAULT_LATE_MS,
     musicGifts: settings.musicGifts || defaultMusicGifts()
   });
-  /** Chỉnh âm thanh ở trang điều khiển: ghi vào bộ RIÊNG của game đang chạy. */
+  /**
+   * Chỉnh âm thanh (trang điều khiển HOẶC quà bật/tắt nhạc): ghi vào bộ RIÊNG của game đang chạy, và CHỈ bộ đó.
+   * Chủ kênh chốt 21/11/2026: "game nào ra game đó". Không được ghi vào bộ chung (settings.sound/music/…):
+   * game nào chưa từng chỉnh âm thanh thì đọc bộ chung (audioFor), nên ghi vào đó là tắt nhạc ở game Tiếng
+   * Anh làm Quán Bar câm theo. 963ff03 từng thêm ghi bộ chung khi sửa quà tắt nhạc — gỡ lại ở đây; quà tắt
+   * nhạc vẫn ăn vì nó đi qua chính hàm này, ghi vào bộ riêng của game đang chạy.
+   */
   const updateGameAudio = (patch) => {
     const game = hub.activeId();
     const gameAudio = { ...(settings.gameAudio || {}) };
     gameAudio[game] = { ...audioFor(game), ...patch };
-    updateSettings({ ...patch, gameAudio });
+    updateSettings({ gameAudio });
   };
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });

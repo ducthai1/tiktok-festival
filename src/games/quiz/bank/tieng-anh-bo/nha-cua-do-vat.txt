@@ -246,7 +246,7 @@ LUNCH BOX | Hộp cơm nhiều ngăn mang đi làm ăn trưa | 1 | BENTO BOX
 PLASTIC WRAP | Cuộn màng bọc thức ăn trong suốt bảo quản lạnh | 1 | CLING FILM, SARAN WRAP
 ALUMINIUM FOIL | Cuộn giấy bạc bọc cá nướng lò thơm nức | 2 | TIN FOIL
 ZIPLOCK BAG | Túi zip miết mép chống ẩm bảo quản hạt khô | 1 | ZIP BAG
-TUPPERWARE | Bộ hộp nhựa bảo quản thực phẩm trong tủ lạnh | 1 | FOOD CONTAINER
+FOOD CONTAINER | Bộ hộp nhựa có nắp đậy, bảo quản thức ăn trong tủ lạnh | 1
 ICE TRAY | Khay nhựa đổ nước làm đá viên tủ lạnh | 1 | ICE CUBE TRAY
 MATCHBOX | Bao diêm quẹt lửa hình hộp chữ nhật nhỏ | 1 | MATCH BOX
 INCENSE STICK | Cây nhang (nén hương) trầm thắp trên bàn thờ | 2 | JOSS STICK
@@ -295,7 +295,7 @@ DOORSTOP | Cái chặn cửa | 3 | DOOR STOPPER
 LATCH | Chốt cửa | 3
 HINGE | Bản lề | 3
 THUMBTACK | Đinh ghim (đinh bấm) | 2 | DRAWING PIN, PUSHPIN
-STICKY NOTE | Tập giấy ghi việc nhỏ nhắn có mép keo tự dính tạm thời | 1 | POST-IT, STICKY NOTES
+STICKY NOTE | Tập giấy ghi việc nhỏ nhắn có mép keo tự dính tạm thời | 1 | STICKY NOTES
 HIGHLIGHTER | Bút dạ quang | 1
 MARKER | Bút lông (bút dạ) | 1 | FELT-TIP PEN
 CRAYON | Bút sáp màu | 1 | CRAYONS

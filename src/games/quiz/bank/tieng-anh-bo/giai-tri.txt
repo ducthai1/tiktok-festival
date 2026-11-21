@@ -158,8 +158,6 @@ AUTOGRAPH | Chữ ký tay nắn nót của người nổi tiếng tặng fan | 2
 PAPARAZZI | Cánh săn ảnh lùng sục đời tư ngôi sao | 2 | PHOTO HUNTERS
 RED CARPET | Thảm đỏ trải sàn đón dàn sao sải bước | 1
 AWARD | Giải thưởng danh dự trao tặng cho tài năng | 1 | PRIZE
-OSCAR | Bức tượng hiệp sĩ mạ vàng danh giá bậc nhất của Viện Hàn lâm Điện ảnh nước Mỹ | 1 | ACADEMY AWARD
-GRAMMY | Giải thưởng hình chiếc máy hát bằng vàng tôn vinh thành tựu âm nhạc | 1 | GRAMMY AWARD
 MISSION | Nhiệm vụ vượt thử thách trong game | 1
 SHOW | Chương trình biểu diễn nghệ thuật giải trí | 1
 EPISODE | Một tập phát sóng của bộ phim truyền hình | 1 | CHAPTER
@@ -256,10 +254,6 @@ SPOTLIGHT | Chiếc đèn rọi sân khấu chiếu ánh sáng vào nghệ sĩ b
 CARNIVAL | Lễ hội hóa trang đường phố rực rỡ sắc màu và âm nhạc | 2
 APPLAUSE | Tiếng vỗ tay rộn rã tán thưởng của cả khán phòng | 2
 SCREENPLAY | Tập kịch bản chi tiết của bộ phim điện ảnh | 3
-NETFLIX | Dịch vụ xem phim trực tuyến phổ biến nhất thế giới | 1 | STREAMING SERVICE
-SPOTIFY | Ứng dụng nghe nhạc trực tuyến hàng đầu | 1 | MUSIC APP
-YOUTUBE | Nền tảng chia sẻ video lớn nhất hành tinh | 1 | VIDEO PLATFORM
-TIKTOK | Mạng xã hội video ngắn nổi tiếng giới trẻ | 1 | SHORT VIDEO APP
 PODCAST | Chương trình âm thanh phát thanh chủ đề để nghe | 1 | AUDIO SHOW
 VLOGGER | Người làm video nhật ký đời sống chia sẻ lên mạng | 1
 GAMER | Người mê chơi điện tử, cày ngày cày đêm | 1 | PRO GAMER
