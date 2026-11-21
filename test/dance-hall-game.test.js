@@ -138,20 +138,27 @@ test('watchers leave after 5 quiet minutes, people who took part after 10', () =
   assert.deepEqual(leftAt(10.1), ['u2']);
 });
 
-test('neighbouring dancers never share a character and the floor is mostly Chinese meme stickers', async () => {
+test('sàn đa dạng: người cạnh nhau không cùng nhóm nhân vật, không nhóm nào chiếm quá 8 % sàn (gấu trúc từng chiếm nửa sàn)', async () => {
   const fs = await import('node:fs');
   const { buildPool, characterForSlot } = await import('../public/stage/scenes/dance-roster.js');
   const sheets = JSON.parse(fs.readFileSync(new URL('../public/assets/dance/sheets.json', import.meta.url), 'utf8'));
   const pool = buildPool(sheets);
-  const ids = Array.from({ length: DANCE_SLOTS }, (_, s) => characterForSlot(pool, s, 0).id);
+  const chars = Array.from({ length: DANCE_SLOTS }, (_, s) => characterForSlot(pool, s, 0));
+  const family = (c) => c.family || c.id;
   for (let s = 0; s < DANCE_SLOTS; s += 1) {
     const p = slotPosition(s);
     for (let t = s + 1; t < DANCE_SLOTS; t += 1) {
       const q = slotPosition(t);
-      if (Math.abs(p.x - q.x) < 0.9 && Math.abs(p.z - q.z) < 0.7) assert.notEqual(ids[s], ids[t], `ô ${s} và ${t} trùng nhân vật`);
+      if (Math.abs(p.x - q.x) < 0.9 && Math.abs(p.z - q.z) < 0.7) assert.notEqual(family(chars[s]), family(chars[t]), `ô ${s} và ${t} cùng nhóm nhân vật`);
     }
   }
-  assert.ok(ids.filter((id) => !id.startsWith('nv')).length / DANCE_SLOTS > 0.7);
+  const count = {};
+  for (const c of chars) count[family(c)] = (count[family(c)] || 0) + 1;
+  const [top, n] = Object.entries(count).sort((a, b) => b[1] - a[1])[0];
+  assert.ok(n / DANCE_SLOTS <= 0.08, `nhóm ${top} chiếm ${n}/${DANCE_SLOTS} ô`);
+  const china = chars.filter((c) => /^(bqb-|meme-mushroom)/.test(c.id)).length / DANCE_SLOTS;
+  assert.ok(china < 0.2, `meme Trung Quốc (gấu trúc / huaji / nấm) vẫn chiếm ${Math.round(china * 100)} % sàn`);
+  assert.ok(Object.keys(count).length >= 40, 'sàn phải có nhiều nhóm nhân vật khác nhau');
 });
 
 test('a handful of dancers spread over the whole floor instead of huddling in the middle', async () => {

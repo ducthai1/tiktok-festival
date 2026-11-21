@@ -24,22 +24,42 @@ export const ROSTER = [
   { id: 'nv15', name: 'Nữ Vương', ...trio('nv15-nu-vuong-quat-lanh', 'nv15-nu-vuong') }
 ];
 
-// Kho nhân vật: chibi Việt lặp 3 lần (~1/7 sàn) + MỌI sticker meme có trong sheets.json — thêm ảnh vào sheets.json là có trong kho.
+// Kho nhân vật chia đều theo NHÓM. Trước đây mỗi ẢNH là một suất: riêng gấu trúc meme Trung Quốc (bqb-panda) có 171/342
+// ảnh nên chiếm nửa sàn, cộng mặt cười huaji + nấm là ~3/4 — chủ kênh 21/11/2026: "nhân vật Trung Quốc đông quá, bị một
+// màu, cứ ra mãi một nhân vật". Giờ MỖI NHÓM một suất như nhau (mỗi chibi Việt, mỗi sticker lẻ, cả nhóm gấu trúc, cả nhóm
+// huaji, cả nhóm nấm); trong nhóm vẫn đổi ảnh theo Ô nên không ai giống hệt ai. Thêm ảnh vào sheets.json là có trong kho.
 const MEME_PREFIXES = ['meme-', 'cherry-', 'bqb-', 'ob-'];
+const familyOf = (key) => key.replace(/[-_]?\d+$/, '');
+
 export function buildPool(sheets) {
   const chibi = ROSTER.filter((c) => sheets[c.crowd]);
-  const memes = Object.keys(sheets).filter((k) => sheets[k].kind === 'crowd' && MEME_PREFIXES.some((pre) => k.startsWith(pre)))
-    .map((k) => ({ id: k, name: 'Meme', crowd: k }));
-  return [...chibi, ...memes, ...chibi, ...chibi];
+  const families = new Map(); // nhóm → các ảnh
+  for (const k of Object.keys(sheets)) {
+    if (sheets[k].kind !== 'crowd' || !MEME_PREFIXES.some((pre) => k.startsWith(pre))) continue;
+    const name = familyOf(k);
+    if (!families.has(name)) families.set(name, []);
+    families.get(name).push(k);
+  }
+  const single = [];
+  const big = [];
+  for (const [name, keys] of families) {
+    if (keys.length === 1) single.push({ id: keys[0], name: 'Meme', crowd: keys[0] });
+    else big.push({ id: name, name: 'Meme', crowd: keys[0], variants: keys });
+  }
+  return [...chibi, ...big, ...single];
 }
 
 const gcd = (a, b) => (b ? gcd(b, a % b) : a);
-/** Nhân vật theo Ô trên sàn: bước nhảy nguyên tố cùng nhau với cỡ kho → 8 ô xung quanh luôn là nhân vật khác nhau
- *  (kho lớn hơn số ô nên gần như cả sàn không ai trùng ai); "đổi nv" (look +1…) dịch sang nhân vật khác. */
+/** Nhân vật theo Ô trên sàn: bước nhảy nguyên tố cùng nhau với cỡ kho → các ô xung quanh luôn là nhân vật khác nhau;
+ *  "đổi nv" (look +1…) dịch sang nhân vật khác. Nhóm nhiều ảnh thì chọn ảnh trong nhóm theo Ô. */
 export function characterForSlot(pool, slot, look) {
   const stride = [37, 41, 43, 47, 53, 59, 61].find((q) => gcd(q, pool.length) === 1) || 1;
   const i = (((Math.max(0, slot) * stride + (look || 0) * 11) % pool.length) + pool.length) % pool.length;
-  return pool[i];
+  const c = pool[i];
+  if (!c.variants) return c;
+  const n = c.variants.length;
+  const key = c.variants[(((Math.max(0, slot) * 31 + (look || 0) * 7) % n) + n) % n];
+  return { id: key, family: c.id, name: c.name, crowd: key };
 }
 
 /** Ảnh dùng cho trạng thái: 'crowd' | 'xung' | 'spot' (thiếu thì lùi về bản thấp hơn). */
