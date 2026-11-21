@@ -225,7 +225,7 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
     const game = hub.activeId();
     const gameAudio = { ...(settings.gameAudio || {}) };
     gameAudio[game] = { ...audioFor(game), ...patch };
-    updateSettings({ gameAudio });
+    updateSettings({ ...patch, gameAudio });
   };
   const emitFx = (game, list) => {
     if (list.length) sockets.broadcast({ t: 'fx', game, list });
@@ -357,11 +357,11 @@ export async function startApp(config, { dataDir = DATA_DIR, providerFactories, 
           const isOff = (offId && gid === offId) || (offName && gname === offName);
 
           if (isOn) {
-            updateSettings({ music: true });
+            updateGameAudio({ music: true });
             emitFx(hub.activeId(), [{ kind: 'toast', text: `🎵 @${event.user?.nickname || 'Khách'} tặng ${event.gift?.name || mg.on?.name || 'quà'} → BẬT NHẠC NỀN! 🔊` }]);
             log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → BẬT NHẠC NỀN`);
           } else if (isOff) {
-            updateSettings({ music: false });
+            updateGameAudio({ music: false });
             emitFx(hub.activeId(), [{ kind: 'toast', text: `🔇 @${event.user?.nickname} tặng ${event.gift?.name || mg.off?.name || 'quà'} → TẮT NHẠC NỀN! 🛑` }]);
             log.info('music', `@${event.user?.nickname} tặng ${event.gift?.name} (${event.gift?.diamondsEach} xu) → TẮT NHẠC NỀN`);
           }
