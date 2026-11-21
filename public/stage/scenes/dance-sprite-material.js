@@ -10,10 +10,15 @@ export function hashText(text) {
   return h >>> 0;
 }
 
-/** Một vòng animation dài bao nhiêu phách (≥1) với tốc độ gốc của ảnh động. */
+// Chủ kênh 21/11/2026: "tốc độ quẩy nhanh lên tí nữa". Mọi ảnh động nhảy nhanh hơn tốc độ gốc 25 %, rồi làm tròn tới
+// NỬA phách (trước: tròn tới cả phách, tối thiểu 1) — vòng nhảy vẫn khép đúng nhịp nhạc, chỉ dày hơn.
+export const DANCE_SPEED = 1.25;
+
+/** Một vòng animation dài bao nhiêu phách (bội của 0,5, ≥0,5) ở tốc độ gốc × DANCE_SPEED. */
 export function loopBeatsFor(meta) {
   const seconds = meta.frames / (meta.fps || 8);
-  return Math.max(1, Math.round(seconds / (60 / BPM)));
+  const beats = seconds / (60 / BPM) / DANCE_SPEED;
+  return Math.max(0.5, Math.round(beats * 2) / 2);
 }
 
 /** Tấm phẳng cao 1 (đáy ở y=0), rộng theo tỉ lệ khung: dùng cho InstancedMesh, mỗi bản sao = một người. */
