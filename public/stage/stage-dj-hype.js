@@ -37,8 +37,11 @@ export function createDjHype(ctx, { input, output, play, quietUntil, groove, act
   input.connect(bass).connect(glue).connect(trim).connect(pump).connect(wetPath).connect(output);
   input.connect(dryPath).connect(output);
 
-  let scheduledUntil = 0; // giờ (ctx) của phách cuối đã đặt lịch "bơm"
-  let plannedPhrase = ''; // câu nhạc đã đặt khoảnh khắc (bpm:phách)
+  // Nhịp giờ được tự nghe và chỉnh dần trong bài (stage-beat-follow.js) ⇒ BPM / giờ của cùng một phách xê dịch vài ms
+  // giữa hai lần hỏi. Đánh dấu theo SỐ THỨ TỰ phách / câu (trước: theo giờ + "bpm:phách") để không bơm hai lần một phách
+  // hay hô hai lần một câu khi nhịp vừa được chỉnh.
+  let pumpedBeat = -Infinity; // phách cuối đã đặt lịch "bơm"
+  let plannedPhrase = -1; // câu nhạc đã đặt khoảnh khắc
   let lastBeat = 0;
   let moment = 0;
 
@@ -78,27 +81,30 @@ export function createDjHype(ctx, { input, output, play, quietUntil, groove, act
     }
     const g = boosted ? groove() : null;
     if (!g || !Number.isFinite(g.beat) || !g.bpm) {
-      scheduledUntil = now;
+      pumpedBeat = -Infinity;
+      plannedPhrase = -1;
       return;
     }
     const spb = 60 / g.bpm;
-    if (g.beat < lastBeat - 1) scheduledUntil = now; // sang bài mới
+    if (g.beat < lastBeat - 1) { // sang bài mới / phát lại từ đầu
+      pumpedBeat = -Infinity;
+      plannedPhrase = -1;
+    }
     lastBeat = g.beat;
     // "bơm" theo phách: hụt xuống đúng lúc phách vào rồi dâng lại trong nửa phách
     for (let k = Math.ceil(g.beat + 1e-6); ; k += 1) {
       const t = now + (k - g.beat) * spb;
       if (t > now + LOOKAHEAD_S) break;
-      if (t <= scheduledUntil + 0.01) continue;
+      if (k <= pumpedBeat) continue;
       pump.gain.setValueAtTime(1 - PUMP_DEPTH, t);
       pump.gain.linearRampToValueAtTime(1, t + spb * 0.55);
-      scheduledUntil = t;
+      pumpedBeat = k;
     }
     // khoảnh khắc đầu câu 16 ô: đặt lịch trước ~2 phách (đủ chỗ cho tiếng vút lên / nhát cắt)
     const phrase = nextPhraseBeat(g.beat);
-    const key = `${g.bpm}:${phrase}`;
     const lead = (phrase - g.beat) * spb;
-    if (key !== plannedPhrase && lead <= spb * 2 + LOOKAHEAD_S && lead > spb) {
-      plannedPhrase = key;
+    if (phrase !== plannedPhrase && lead <= spb * 2 + LOOKAHEAD_S && lead > spb) {
+      plannedPhrase = phrase;
       planMoment(now + lead, spb);
     }
   }

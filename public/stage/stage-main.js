@@ -444,6 +444,7 @@ window.__stage = {
   audioState: () => audio.state(),
   musicNow: () => audio.nowPlaying(), // bài đang phát trong danh sách nhạc nền (null = dùng nhạc tổng hợp)
   audioLevel: () => audio.level(),
+  musicBeat: () => audio.beatInfo(), // nhịp đang bám: nguồn (custom / tracks), BPM, đã tự nghe chưa, lần đo gần nhất
   musicSpecial: () => audio.specialKind(),
   playSound: (name) => audio.play(name),
   // Chỉ để chụp ảnh kiểm tra: phát hiệu ứng ngay trên màn hình này, không qua server.

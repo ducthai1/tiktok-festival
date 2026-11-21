@@ -4,7 +4,10 @@
 // - Bài thường: trộn ngẫu nhiên, hết vòng mới lặp lại.
 // - Bài "special" (vip / star / festival / drop) KHÔNG phát xoay vòng — chỉ vang lên lúc quà lớn / DROP: chuyển mượt
 //   (crossfade) sang đúng ĐOẠN SUNG NHẤT của bài (`hot`, đo sẵn), hết lượt thì chuyển mượt về bài đang phát dở.
-// beat() theo đúng bài đang nghe (BPM + nhịp đầu đo sẵn) để nhân vật + đèn nhảy khớp nhạc.
+// beat() theo đúng bài đang nghe để nhân vật + đèn nhảy khớp nhạc: bài thường lấy BPM + nhịp đầu đo sẵn làm điểm xuất
+// phát rồi tự nghe để chỉnh (stage-beat-follow.js — số đo sẵn lệch tới 1,45 BPM ở vài bài); nhạc quà lớn dùng số đo sẵn.
+import { createBeatFollower } from './stage-beat-follow.js';
+
 const PLAYLISTS = { dance: '/static/assets/dance/music/' };
 const FADE_S = 0.6;
 
@@ -38,8 +41,9 @@ function deck(ctx, out) {
   const audio = new Audio();
   audio.preload = 'auto';
   const gain = ctx.createGain();
-  ctx.createMediaElementSource(audio).connect(gain).connect(out);
-  return { audio, gain, track: null };
+  const source = ctx.createMediaElementSource(audio);
+  source.connect(gain).connect(out);
+  return { audio, gain, source, track: null };
 }
 
 export function createTrackPlayer(ctx, out) {
@@ -129,6 +133,11 @@ export function createTrackPlayer(ctx, out) {
   }
 
   const beatOf = (d) => ((d.audio.currentTime - d.track.firstBeat) * d.track.bpm) / 60;
+  const follow = createBeatFollower(ctx, main.source, main.audio, {
+    key: () => main.track?.url || '',
+    seed: () => main.track && { bpm: main.track.bpm, firstBeat: main.track.firstBeat }
+  });
+  const mainBeat = () => follow.beat() ?? beatOf(main);
 
   return {
     /** Có danh sách nhạc file cho game này không (tải tracks.json lần đầu). */
@@ -184,12 +193,13 @@ export function createTrackPlayer(ctx, out) {
     },
     specialKind: () => special?.kind || '',
     /** Phách + nhịp/phút của bài THƯỜNG đang phát (null khi đang nhạc quà lớn / dừng) — lớp DJ bám theo. */
-    groove: () => (special || !main.track || main.audio.paused ? null : { beat: beatOf(main), bpm: main.track.bpm }),
+    groove: () => (special || !main.track || main.audio.paused ? null : { beat: mainBeat(), bpm: follow.bpm() ?? main.track.bpm }),
     playing: () => (special ? !extra.audio.paused : Boolean(main.track) && !main.audio.paused),
     beat() {
       if (special && extra.track && !extra.audio.paused) return beatOf(extra);
       if (!main.track || main.audio.paused) return null;
-      return beatOf(main);
-    }
+      return mainBeat();
+    },
+    beatInfo: () => (special ? { special: true } : follow.info())
   };
 }

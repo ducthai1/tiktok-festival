@@ -7,6 +7,7 @@ import { createSpeech } from './stage-speech.js';
 import { isCleanForDisplay } from '../shared/profanity-filter.js';
 import { createSynth } from './stage-sfx.js';
 import { createDjHype } from './stage-dj-hype.js';
+import { createBeatFollower } from './stage-beat-follow.js';
 
 export function createStageAudio() {
   let ctx = null;
@@ -26,6 +27,7 @@ export function createStageAudio() {
   let playlist = []; // [{ id, title, url }]
   let playAt = 0;
   let customAudio = null;   // HTMLAudioElement phát file custom
+  let customBeat = null; // bám nhịp bài custom đang phát (stage-beat-follow.js) — nhân vật nhảy đúng phách bài YouTube
   const opts = { sound: true, volume: 0.6, music: true, musicVolume: 0.35, tts: false, ttsWelcome: false, ttsVoice: 'Ngọc Huyền', ttsEnglish: true };
 
   function audio() {
@@ -91,7 +93,9 @@ export function createStageAudio() {
         customAudio.addEventListener('ended', () => nextTrack(+1));
         // bài hỏng (file mất, mã hoá lạ) thì bỏ qua, đừng để im lặng cả buổi
         customAudio.addEventListener('error', () => { if (playlist.length > 1) nextTrack(+1); });
-        ctx.createMediaElementSource(customAudio).connect(musicBus);
+        const customSource = ctx.createMediaElementSource(customAudio);
+        customSource.connect(musicBus);
+        customBeat = createBeatFollower(ctx, customSource, customAudio, { key: () => customAudio.getAttribute('src') || '' });
       }
       // LỖI CŨ: src chỉ được gán trong setCustomMusicUrl, mà lúc đó customAudio còn chưa tạo
       // (thẻ nhạc chỉ tạo ở đây) → phần tử Audio không có nguồn, play() rơi im lặng, nhạc không bao giờ kêu.
@@ -187,8 +191,13 @@ export function createStageAudio() {
     // Phách của nhạc nền đang phát (null khi tắt tiếng / chưa có nhạc) — cảnh tự đếm nhịp riêng khi null.
     beat() {
       if (!music || ctx?.state !== 'running') return null;
+      // Danh sách nhạc của chủ kênh: theo nhịp đo được của chính bài đang phát. Trước đây không có nhịp nào cho các bài
+      // này nên cảnh đếm theo đồng hồ giả 128 BPM — lệch bài đang nghe. ~8 giây đầu chưa khoá được thì vẫn như cũ.
+      if (playlist.length && customAudio && !customAudio.paused) return customBeat?.beat() ?? null;
       return tracks.playing() ? tracks.beat() : music.beat();
     },
+    /** Để kiểm tra: nhịp đang bám (nguồn, BPM, đã tự nghe chưa, lần đo gần nhất). */
+    beatInfo: () => (playlist.length && customAudio ? { source: 'custom', ...customBeat?.info() } : { source: 'tracks', ...tracks?.beatInfo() }),
     /** onStart: gọi lúc giọng BẮT ĐẦU đọc — hoặc ngay nếu không đọc (tắt giọng / câu bẩn) — để hiệu ứng chạy làm nền. */
     speak(text, channel = 'story', { onStart, fallback, waitMs } = {}) {
       const allowed = channel === 'welcome' ? opts.ttsWelcome : opts.tts;
